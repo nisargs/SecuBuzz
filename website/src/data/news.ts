@@ -11,6 +11,76 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "telegram-android-code-execution-via-voice-call-52f55d",
+    "title": "Telegram Android Code Execution via Voice Call",
+    "summary": "A flaw in Telegram for Android allows attackers to execute code on a victim’s phone when the user answers a voice call, requiring only a standard Telegram account. The vulnerability, present in all versions prior to 12.10.4, was disclosed by NebuSec and linked to CVE-2026-118610. Telegram released a patch in version 12.10.4; users should update immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
+    "publishedAt": "2026-10-29T11:39:18.000Z",
+    "cves": [
+      "CVE-2026-118610"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "telegram-android-code-execution-via-voice-call",
+      "article-52f55d",
+      "52f55d"
+    ]
+  },
+  {
+    "slug": "ai-transforming-security-operations-centers-7dae87",
+    "title": "AI Transforming Security Operations Centers",
+    "summary": "Artificial intelligence is increasingly automating core security analyst tasks such as alert investigation, evidence collection, activity correlation, and response execution. As these capabilities mature, SOCs will reorganize workflows and roles to integrate AI-driven processes. The trend signals a shift toward more efficient, technology‑centric security operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html",
+    "publishedAt": "2026-10-29T11:33:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-transforming-security-operations-centers",
+      "article-7dae87",
+      "7dae87"
+    ]
+  },
+  {
+    "slug": "26-400-cloud-credentials-exposed-on-gitee-4624a7",
+    "title": "26,400 Cloud Credentials Exposed on Gitee",
+    "summary": "A researcher uncovered 26,400 active cloud and AI service credentials embedded in public Gitee repositories, allowing unauthorized access to cloud resources. The credentials were valid when tested, exposing developers’ accounts to potential exploitation. Users should immediately rotate exposed keys and enforce secret management best practices.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html",
+    "publishedAt": "2026-10-29T11:33:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "26-400-cloud-credentials-exposed-on-gitee",
+      "article-4624a7",
+      "4624a7"
+    ]
+  },
+  {
+    "slug": "inj3ctor3-malware-targets-freepbx-sip-credentials-4d8584",
+    "title": "INJ3CTOR3 Malware Targets FreePBX SIP Credentials",
+    "summary": "Hackers deployed INJ3CTOR3 malware against FreePBX servers, extracting SIP trunk passwords, database credentials, and mail relay logins. The tool harvests configuration files, enabling persistent fraud even after system rebuilds, and extends damage beyond the compromised host. FreePBX has issued a patch; administrators should update firmware and enforce credential rotation immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-attack-freepbx-servers/",
+    "publishedAt": "2026-10-29T11:09:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "inj3ctor3-malware-targets-freepbx-sip-credentials",
+      "article-4d8584",
+      "4d8584"
+    ]
+  },
+  {
     "slug": "dhs-personnel-records-leak-exposes-ice-operations-7d88db",
     "title": "DHS Personnel Records Leak Exposes ICE Operations",
     "summary": "A data breach exposed records of over 41,000 Department of Homeland Security employees and contractors, revealing contact details, assignments, and links to undercover ICE operations. The leak, distributed publicly, provides an internal view of teams and reporting lines, potentially enabling targeted espionage or social engineering. DHS should immediately revoke compromised credentials, conduct a forensic audit, and notify affected personnel.",
@@ -45,6 +115,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "keystone-wallets-key-theft-recall-5e44c0",
+    "title": "Keystone Wallets Key Theft Recall",
+    "summary": "Keystone hardware wallets suffered key theft via compromised firmware, exposing private keys to attackers. The flaw originates from insecure bootloader validation, allowing malicious firmware to be installed during manufacturing, leading to credential compromise. Keystone has issued a recall and firmware update; users must replace devices and apply the new secure bootloader patch.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/keystone-to-destroy-18-835-hardware-wallets-after-hacke",
+    "publishedAt": "2026-10-29T00:50:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "keystone-wallets-key-theft-recall",
+      "article-5e44c0",
+      "5e44c0"
+    ]
+  },
+  {
     "slug": "cisa-adds-cve-2026-111497-to-known-exploited-vulne-1aa209",
     "title": "CISA Adds CVE‑2026‑111497 to Known Exploited Vulnerabilities Catalog; AWS and Cisco Issue Patches for Brotli RCE",
     "summary": "CISA added CVE‑2026‑111497, a Brotli decompression flaw, to its Known Exploited Vulnerabilities catalog, affecting Google services. The flaw permits remote code execution or memory disclosure by exploiting improper input validation, enabling attackers to run arbitrary code. AWS and Cisco have issued patches for affected services, urging customers to update immediately to mitigate exploitation.",
@@ -68,20 +155,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisco-patches-ssl-vpn-dos-in-asa-and-ftd-2f6ce2",
-    "title": "Cisco Patches SSL VPN DoS in ASA and FTD",
-    "summary": "A logic error in the Remote Access SSL VPN service of Cisco Secure Firewall ASA and FTD software allows an unauthenticated remote attacker to trigger a device reload. The flaw occurs when secondary authentication is configured on a tunnel group, and exploitation requires sending a crafted request during VPN connection, resulting in a denial of service condition.",
+    "slug": "cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re-2f6ce2",
+    "title": "Cisco ASA/FTD SSL VPN DoS Vulnerability Patches Released",
+    "summary": "Cisco ASA and FTD firewalls suffered a denial‑of‑service flaw that crashes SSL VPN devices, affecting access for many enterprises. The logic error, triggered by a crafted request during VPN connection when secondary authentication is enabled, forces a device reload and disrupts services. Cisco released patches and advised administrators to update or apply mitigations to prevent crashes, ensuring continued VPN availability.",
     "category": "Vulnerability",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "Cisco PSIRT",
     "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Tunnel+Denial+of+Service+Vulnerability%26vs_k%3D1",
     "publishedAt": "2026-10-28T23:15:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/"
+      }
+    ],
     "aliases": [
-      "cisco-patches-ssl-vpn-dos-in-asa-and-ftd",
+      "cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re",
       "article-2f6ce2",
-      "2f6ce2"
+      "2f6ce2",
+      "cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-released"
     ]
   },
   {
@@ -408,6 +501,40 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-157-released-for-android-5c6d27",
+    "title": "Chrome 157 Released for Android",
+    "summary": "Chrome 157 (157.0.8103.30) has been rolled out to a small percentage of Android users, with full availability expected on Google Play in the coming days. The update focuses on stability and performance enhancements, with detailed changes documented in the Git log. Users encountering issues should file bugs through the provided channels.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_01511209741.html",
+    "publishedAt": "2026-10-28T17:06:56.273Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-157-released-for-android",
+      "article-5c6d27",
+      "5c6d27"
+    ]
+  },
+  {
+    "slug": "sony-isp-breach-exposes-2-5-million-records-1edde0",
+    "title": "Sony ISP Breach Exposes 2.5 Million Records",
+    "summary": "Sony Network Communications confirmed a breach that exposed approximately 2.5 million customer records, including personal data of current and former users. The compromise involved unauthorized access to Sony ISP subsidiary databases, potentially allowing attackers to harvest sensitive information. Sony has advised affected customers to monitor accounts and change credentials while deploying additional security controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
+    "publishedAt": "2026-10-28T16:45:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sony-isp-breach-exposes-2-5-million-records",
+      "article-1edde0",
+      "1edde0"
+    ]
+  },
+  {
     "slug": "clickfix-social-engineering-campaign-observed-in-t-57dd7e",
     "title": "ClickFix Social Engineering Campaign Observed in the Wild",
     "summary": "A new ClickFix social engineering campaign is actively targeting users through deceptive instructions that trick victims into executing malicious commands. The attack vector relies on convincing users to manually run PowerShell or similar commands, bypassing traditional malware delivery mechanisms. Security teams should monitor for anomalous command-line execution patterns and reinforce user awareness training against instruction-based lures.",
@@ -423,6 +550,26 @@ export const news: NewsBrief[] = [
       "article-57dd7e",
       "57dd7e",
       "clickfix-social-engineering-campaign-observed-in-the-wild"
+    ]
+  },
+  {
+    "slug": "volt-typhoon-employs-silent-train-zero-day-framewo-e7d5a3",
+    "title": "Volt Typhoon Employs Silent Train Zero-Day Framework",
+    "summary": "Chinese state-sponsored group Volt Typhoon has deployed the Silent Train framework, leveraging rotating device chains to deliver zero-day attacks against high-value targets. The framework exploits a vulnerability identified as CVE-2024-39717, enabling attackers to pivot across compromised devices. Security teams should monitor for anomalous device activity and apply mitigations for the referenced CVE.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
+    "publishedAt": "2026-10-28T16:00:00.000Z",
+    "cves": [
+      "CVE-2024-39717"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "volt-typhoon-employs-silent-train-zero-day-framewo",
+      "article-e7d5a3",
+      "e7d5a3",
+      "volt-typhoon-employs-silent-train-zero-day-framework"
     ]
   },
   {
@@ -751,6 +898,45 @@ export const news: NewsBrief[] = [
       "article-44b9df",
       "44b9df",
       "kroll-breach-analysis-reveals-data-stored-by-unknown-third-p"
+    ]
+  },
+  {
+    "slug": "valkey-remote-code-execution-via-numeric-truncatio-6f3c9f",
+    "title": "Valkey Remote Code Execution via Numeric Truncation",
+    "summary": "Valkey clusterCreatePublishMsgBlock numeric truncation flaw permits authenticated remote attackers to execute arbitrary code on affected installations. The vulnerability, identified as CVE-2026-104351, scores CVSS 8.8, enabling remote code execution without privilege escalation. Valkey has released a patch; security teams should apply the update immediately in all affected environments to mitigate exploitation today.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-833/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-104351"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "valkey-remote-code-execution-via-numeric-truncatio",
+      "article-6f3c9f",
+      "6f3c9f",
+      "valkey-remote-code-execution-via-numeric-truncation"
+    ]
+  },
+  {
+    "slug": "apple-macos-coretext-out-of-bounds-read-disclosure-6f3c9e",
+    "title": "Apple macOS CoreText Out-of-Bounds Read Disclosure",
+    "summary": "Apple macOS CoreText GDEF LigCaretList out-of-bounds read flaw allows remote attackers to disclose sensitive information on affected systems. The vulnerability, CVE-2026-112656, scores CVSS 3.3 and requires user interaction, such as opening a malicious file or visiting a malicious page. Apple has issued an update; users should install the latest macOS release to eliminate the information disclosure risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-831/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-112656"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apple-macos-coretext-out-of-bounds-read-disclosure",
+      "article-6f3c9e",
+      "6f3c9e"
     ]
   },
   {
@@ -6336,189 +6522,6 @@ export const news: NewsBrief[] = [
       "article-eacd25",
       "eacd25",
       "devguard-consolidates-vulnerability-findings-into-a-single-d"
-    ]
-  },
-  {
-    "slug": "adversaries-deploy-autonomous-ai-agents-in-cyber-c-2b7377",
-    "title": "Adversaries Deploy Autonomous AI Agents in Cyber Campaigns",
-    "summary": "CrowdStrike identified new agentic AI campaigns targeting enterprise networks via malicious code injection. The campaigns leverage machine learning models to generate polymorphic payloads, enabling stealthy persistence and lateral movement. Security teams should monitor for anomalous process behavior and apply the latest endpoint protection updates to mitigate these threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
-    "publishedAt": "2026-10-21T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "adversaries-deploy-autonomous-ai-agents-in-cyber-c",
-      "article-2b7377",
-      "2b7377",
-      "adversaries-deploy-autonomous-ai-agents-in-cyber-campaigns"
-    ]
-  },
-  {
-    "slug": "ai-adoption-in-socs-requires-vigilance-against-sha-25fa17",
-    "title": "AI Adoption in SOCs Requires Vigilance Against Shadow AI and Permission Misconfigurations",
-    "summary": "AI integration in security operations centers introduces shadow AI risks and loose permission configurations that attackers can exploit. The discussion highlights how large language models assist in vulnerability analysis, SIEM rule creation, and packet metadata analysis, potentially accelerating detection workflows. Security teams should audit AI-driven permissions and monitor for anomalous model behavior to mitigate misuse.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/bringing-ai-into-the-soc-video/",
-    "publishedAt": "2026-10-21T04:30:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-adoption-in-socs-requires-vigilance-against-sha",
-      "article-25fa17",
-      "25fa17",
-      "ai-adoption-in-socs-requires-vigilance-against-shadow-ai-and"
-    ]
-  },
-  {
-    "slug": "accenture-dragos-and-sans-announce-10m-program-to-6babad",
-    "title": "Accenture, Dragos, and SANS Announce $10M Program to Fortify Small U.S. Utilities",
-    "summary": "The $10M initiative targets up to 500 small utilities, providing free security tools, equipment, deployment assistance, and training. The program aims to strengthen operational technology defenses across the U.S. utilities sector by delivering comprehensive cybersecurity resources. Participants should engage with the offered tools and training modules to enhance their security posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/accenture-dragos-sans-launch-10m-initiative-to-defend-small-us-utilities/",
-    "publishedAt": "2026-10-21T04:22:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "accenture-dragos-and-sans-announce-10m-program-to",
-      "article-6babad",
-      "6babad",
-      "accenture-dragos-and-sans-announce-10m-program-to-fortify-sm"
-    ]
-  },
-  {
-    "slug": "teamupdraft-website-breach-compromises-updraftcent-1477c4",
-    "title": "TeamUpdraft Website Breach Compromises UpdraftCentral Keys",
-    "summary": "A threat actor breached TeamUpdraft’s website, compromising UpdraftCentral keys that can send commands to connected WordPress sites. The stolen keys enable remote execution of arbitrary commands on any linked site, threatening site integrity and data confidentiality. TeamUpdraft advises revoking keys, updating to the latest plugin, and monitoring logs for unauthorized activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
-    "publishedAt": "2026-10-21T01:01:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "teamupdraft-website-breach-compromises-updraftcent",
-      "article-1477c4",
-      "1477c4",
-      "teamupdraft-website-breach-compromises-updraftcentral-keys"
-    ]
-  },
-  {
-    "slug": "wiz-launches-native-runtime-protection-for-gke-6ae1e3",
-    "title": "Wiz Launches Native Runtime Protection for GKE",
-    "summary": "Wiz has released a native runtime protection add‑on for Google Kubernetes Engine, enabling one‑click deployment of the Wiz Runtime Sensor. The add‑on automates credential management and delivers kernel‑level eBPF threat detection across GKE fleets, improving visibility and response to container‑level attacks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/wiz-sensor-on-gke-1-click-runtime-protection-now-native",
-    "publishedAt": "2026-10-20T22:02:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-launches-native-runtime-protection-for-gke",
-      "article-6ae1e3",
-      "6ae1e3"
-    ]
-  },
-  {
-    "slug": "ex-openai-engineer-detained-over-conference-room-b-74d2ab",
-    "title": "Ex‑OpenAI Engineer Detained Over Conference Room Bugging",
-    "summary": "A judge ordered the detention of Abdulrahman Alfozan after his arrest for allegedly bugging an OpenAI conference room. The case involves allegations of covert surveillance linked to Saudi ties. No technical vulnerability or data breach is reported; the matter is a legal enforcement action.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties",
-    "publishedAt": "2026-10-20T19:16:49.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html"
-      }
-    ],
-    "aliases": [
-      "ex-openai-engineer-detained-over-conference-room-b",
-      "article-74d2ab",
-      "74d2ab",
-      "ex-openai-engineer-detained-over-conference-room-bugging"
-    ]
-  },
-  {
-    "slug": "23andme-successor-settles-california-over-cybersec-2fdd8d",
-    "title": "23andMe Successor Settles California Over Cybersecurity Failings",
-    "summary": "California Attorney General Rob Bonta announced a $6 million settlement with 23andMe’s successor to resolve allegations that the company failed to protect customer data before a 2023 breach. The settlement addresses claims of inadequate security controls and data protection practices.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/23andme-california-data-breach-settlement",
-    "publishedAt": "2026-10-20T18:32:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "23andme-successor-settles-california-over-cybersec",
-      "article-2fdd8d",
-      "2fdd8d",
-      "23andme-successor-settles-california-over-cybersecurity-fail"
-    ]
-  },
-  {
-    "slug": "nigerian-national-sentenced-for-tax-business-hacks-34ca54",
-    "title": "Nigerian National Sentenced for Tax Business Hacks",
-    "summary": "A Nigerian national was sentenced to eight years for collaborating with a group that hacked tax preparation businesses, extracting customer data and executing multi‑million dollar fraud schemes. The case highlights the ongoing threat of credential theft and data exfiltration in the tax industry.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/nigerian-given-8-year-sentenc-tax-hacks",
-    "publishedAt": "2026-10-20T17:14:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nigerian-national-sentenced-for-tax-business-hacks",
-      "article-34ca54",
-      "34ca54"
-    ]
-  },
-  {
-    "slug": "threat-intelligence-enhances-soc-analyst-efficienc-69a30a",
-    "title": "Threat Intelligence Enhances SOC Analyst Efficiency",
-    "summary": "The article outlines three methods by which threat intelligence streamlines SOC analyst workflows, emphasizing the need for visibility beyond internal environments. It discusses leveraging historical data, automated correlation, and contextual alerts to improve detection and investigation processes for American SOC teams.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/3-ways-threat-intelligence-makes-life-easier-for-american-soc-analysts/",
-    "publishedAt": "2026-10-20T16:26:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threat-intelligence-enhances-soc-analyst-efficienc",
-      "article-69a30a",
-      "69a30a",
-      "threat-intelligence-enhances-soc-analyst-efficiency"
-    ]
-  },
-  {
-    "slug": "us-agencies-publish-ten-voluntary-practices-for-ro-7dcaf6",
-    "title": "US Agencies Publish Ten Voluntary Practices for Rogue AI Agent Incidents",
-    "summary": "NIST, CISA and NSA released ten voluntary practices to prepare for, detect, respond to, recover from, and report incidents involving rogue AI agents. The guidance outlines steps for incident response teams to mitigate potential AI‑driven threats and improve coordination among federal agencies.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
-    "publishedAt": "2026-10-20T15:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-agencies-publish-ten-voluntary-practices-for-ro",
-      "article-7dcaf6",
-      "7dcaf6",
-      "us-agencies-publish-ten-voluntary-practices-for-rogue-ai-age"
     ]
   }
 ];

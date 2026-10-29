@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 06:27:49 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 13:17:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Telegram Android Code Execution via Voice Call</title>
+      <link>https://secubuzz.com/news/telegram-android-code-execution-via-voice-call-52f55d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/telegram-android-code-execution-via-voice-call-52f55d</guid>
+      <description><![CDATA[A flaw in Telegram for Android allows attackers to execute code on a victim’s phone when the user answers a voice call, requiring only a standard Telegram account. The vulnerability, present in all versions prior to 12.10.4, was disclosed by NebuSec and linked to CVE-2026-118610. Telegram released a patch in version 12.10.4; users should update immediately.]]></description>
+      <pubDate>Thu, 29 Oct 2026 11:39:18 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Transforming Security Operations Centers</title>
+      <link>https://secubuzz.com/news/ai-transforming-security-operations-centers-7dae87</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-transforming-security-operations-centers-7dae87</guid>
+      <description><![CDATA[Artificial intelligence is increasingly automating core security analyst tasks such as alert investigation, evidence collection, activity correlation, and response execution. As these capabilities mature, SOCs will reorganize workflows and roles to integrate AI-driven processes. The trend signals a shift toward more efficient, technology‑centric security operations.]]></description>
+      <pubDate>Thu, 29 Oct 2026 11:33:41 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>26,400 Cloud Credentials Exposed on Gitee</title>
+      <link>https://secubuzz.com/news/26-400-cloud-credentials-exposed-on-gitee-4624a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/26-400-cloud-credentials-exposed-on-gitee-4624a7</guid>
+      <description><![CDATA[A researcher uncovered 26,400 active cloud and AI service credentials embedded in public Gitee repositories, allowing unauthorized access to cloud resources. The credentials were valid when tested, exposing developers’ accounts to potential exploitation. Users should immediately rotate exposed keys and enforce secret management best practices.]]></description>
+      <pubDate>Thu, 29 Oct 2026 11:33:15 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>INJ3CTOR3 Malware Targets FreePBX SIP Credentials</title>
+      <link>https://secubuzz.com/news/inj3ctor3-malware-targets-freepbx-sip-credentials-4d8584</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/inj3ctor3-malware-targets-freepbx-sip-credentials-4d8584</guid>
+      <description><![CDATA[Hackers deployed INJ3CTOR3 malware against FreePBX servers, extracting SIP trunk passwords, database credentials, and mail relay logins. The tool harvests configuration files, enabling persistent fraud even after system rebuilds, and extends damage beyond the compromised host. FreePBX has issued a patch; administrators should update firmware and enforce credential rotation immediately.]]></description>
+      <pubDate>Thu, 29 Oct 2026 11:09:22 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-attack-freepbx-servers/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>DHS Personnel Records Leak Exposes ICE Operations</title>
       <link>https://secubuzz.com/news/dhs-personnel-records-leak-exposes-ice-operations-7d88db</link>
@@ -26,6 +62,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Keystone Wallets Key Theft Recall</title>
+      <link>https://secubuzz.com/news/keystone-wallets-key-theft-recall-5e44c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/keystone-wallets-key-theft-recall-5e44c0</guid>
+      <description><![CDATA[Keystone hardware wallets suffered key theft via compromised firmware, exposing private keys to attackers. The flaw originates from insecure bootloader validation, allowing malicious firmware to be installed during manufacturing, leading to credential compromise. Keystone has issued a recall and firmware update; users must replace devices and apply the new secure bootloader patch.]]></description>
+      <pubDate>Thu, 29 Oct 2026 00:50:37 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/keystone-to-destroy-18-835-hardware-wallets-after-hacke">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CISA Adds CVE‑2026‑111497 to Known Exploited Vulnerabilities Catalog; AWS and Cisco Issue Patches for Brotli RCE</title>
       <link>https://secubuzz.com/news/cisa-adds-cve-2026-111497-to-known-exploited-vulne-1aa209</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-cve-2026-111497-to-known-exploited-vulne-1aa209</guid>
@@ -35,10 +80,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Cisco Patches SSL VPN DoS in ASA and FTD</title>
-      <link>https://secubuzz.com/news/cisco-patches-ssl-vpn-dos-in-asa-and-ftd-2f6ce2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-patches-ssl-vpn-dos-in-asa-and-ftd-2f6ce2</guid>
-      <description><![CDATA[A logic error in the Remote Access SSL VPN service of Cisco Secure Firewall ASA and FTD software allows an unauthenticated remote attacker to trigger a device reload. The flaw occurs when secondary authentication is configured on a tunnel group, and exploitation requires sending a crafted request during VPN connection, resulting in a denial of service condition.]]></description>
+      <title>Cisco ASA/FTD SSL VPN DoS Vulnerability Patches Released</title>
+      <link>https://secubuzz.com/news/cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re-2f6ce2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re-2f6ce2</guid>
+      <description><![CDATA[Cisco ASA and FTD firewalls suffered a denial‑of‑service flaw that crashes SSL VPN devices, affecting access for many enterprises. The logic error, triggered by a crafted request during VPN connection when secondary authentication is enabled, forces a device reload and disrupts services. Cisco released patches and advised administrators to update or apply mitigations to prevent crashes, ensuring continued VPN availability.]]></description>
       <pubDate>Wed, 28 Oct 2026 23:15:00 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Tunnel+Denial+of+Service+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
       <category>Vulnerability</category>
@@ -206,6 +251,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Chrome 157 Released for Android</title>
+      <link>https://secubuzz.com/news/chrome-157-released-for-android-5c6d27</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-157-released-for-android-5c6d27</guid>
+      <description><![CDATA[Chrome 157 (157.0.8103.30) has been rolled out to a small percentage of Android users, with full availability expected on Google Play in the coming days. The update focuses on stability and performance enhancements, with detailed changes documented in the Git log. Users encountering issues should file bugs through the provided channels.]]></description>
+      <pubDate>Wed, 28 Oct 2026 17:06:56 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_01511209741.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Sony ISP Breach Exposes 2.5 Million Records</title>
+      <link>https://secubuzz.com/news/sony-isp-breach-exposes-2-5-million-records-1edde0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sony-isp-breach-exposes-2-5-million-records-1edde0</guid>
+      <description><![CDATA[Sony Network Communications confirmed a breach that exposed approximately 2.5 million customer records, including personal data of current and former users. The compromise involved unauthorized access to Sony ISP subsidiary databases, potentially allowing attackers to harvest sensitive information. Sony has advised affected customers to monitor accounts and change credentials while deploying additional security controls.]]></description>
+      <pubDate>Wed, 28 Oct 2026 16:45:47 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>ClickFix Social Engineering Campaign Observed in the Wild</title>
       <link>https://secubuzz.com/news/clickfix-social-engineering-campaign-observed-in-t-57dd7e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/clickfix-social-engineering-campaign-observed-in-t-57dd7e</guid>
@@ -213,6 +276,15 @@
       <pubDate>Wed, 28 Oct 2026 16:07:03 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33466">SANS Internet Storm Center</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Volt Typhoon Employs Silent Train Zero-Day Framework</title>
+      <link>https://secubuzz.com/news/volt-typhoon-employs-silent-train-zero-day-framewo-e7d5a3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/volt-typhoon-employs-silent-train-zero-day-framewo-e7d5a3</guid>
+      <description><![CDATA[Chinese state-sponsored group Volt Typhoon has deployed the Silent Train framework, leveraging rotating device chains to deliver zero-day attacks against high-value targets. The framework exploits a vulnerability identified as CVE-2024-39717, enabling attackers to pivot across compromised devices. Security teams should monitor for anomalous device activity and apply mitigations for the referenced CVE.]]></description>
+      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/">BleepingComputer</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>Microsoft Outlines CISO Strategy for Agentic AI Era</title>
@@ -377,85 +449,13 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>AVG Internet Security Local Privilege Escalation Exploit</title>
-      <link>https://secubuzz.com/news/avg-internet-security-local-privilege-escalation-e-6f3c9f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/avg-internet-security-local-privilege-escalation-e-6f3c9f</guid>
-      <description><![CDATA[A local privilege escalation vulnerability exists in AVG Internet Security’s avgToolsSvc component, allowing attackers with low‑privileged code execution to gain higher privileges. The flaw, rated CVSS 7.3, is identified as CVE-2026-6064 and requires local code execution to trigger. AVG has released a patch; security teams should apply it immediately to mitigate the risk.]]></description>
+      <title>Valkey Remote Code Execution via Numeric Truncation</title>
+      <link>https://secubuzz.com/news/valkey-remote-code-execution-via-numeric-truncatio-6f3c9f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/valkey-remote-code-execution-via-numeric-truncatio-6f3c9f</guid>
+      <description><![CDATA[Valkey clusterCreatePublishMsgBlock numeric truncation flaw permits authenticated remote attackers to execute arbitrary code on affected installations. The vulnerability, identified as CVE-2026-104351, scores CVSS 8.8, enabling remote code execution without privilege escalation. Valkey has released a patch; security teams should apply the update immediately in all affected environments to mitigate exploitation today.]]></description>
       <pubDate>Wed, 28 Oct 2026 05:00:00 GMT</pubDate>
-      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-832/">ZDI Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CrowdStrike 2026 Report: eCrime Leads, China Activity Rises</title>
-      <link>https://secubuzz.com/news/crowdstrike-2026-report-ecrime-leads-china-activit-6b8654</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-2026-report-ecrime-leads-china-activit-6b8654</guid>
-      <description><![CDATA[CrowdStrike released its 2026 Legal Threat Landscape Report, highlighting eCrime as the leading attack vector. The analysis indicates a surge in China‑originated cyber activity, with increased phishing, ransomware, and data‑exfiltration campaigns. Security teams should prioritize monitoring for emerging threat actors, enforce strict email filtering, and update incident response playbooks accordingly.]]></description>
-      <pubDate>Wed, 28 Oct 2026 05:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/">CrowdStrike</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Node2Shell Brotli Flaw Under Active Exploitation</title>
-      <link>https://secubuzz.com/news/node2shell-brotli-flaw-under-active-exploitation-563a99</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node2shell-brotli-flaw-under-active-exploitation-563a99</guid>
-      <description><![CDATA[Sophos Threat Research confirms active exploitation of Node2Shell (CVE-2026-111497), a vulnerability in the Brotli compression library. The flaw is being actively exploited in the wild, representing an urgent remote threat to systems processing Brotli-compressed data. Security teams should apply vendor patches immediately and monitor for exploitation indicators on affected infrastructure.]]></description>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
-      <source url="https://www.sophos.com/en-us/blog/node2shell-cve-2026-111497-in-active-exploitation">Sophos Threat Research</source>
+      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-833/">ZDI Advisories</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>GMO Group Advises Shutdown Amid Ransomware Threat</title>
-      <link>https://secubuzz.com/news/gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08</guid>
-      <description><![CDATA[A threat actor breached GMO Group’s Onamae Desktop Cloud and threatened a ransomware attack, prompting the company to advise customers to disconnect and shut down systems. The threat exploits compromised credentials to gain remote access, potentially encrypting user data. GMO has released a mitigation guide and urges immediate network isolation.]]></description>
-      <pubDate>Tue, 27 Oct 2026 23:35:51 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>OpenAI GPT‑6.1 Terra Safety Testing Reveals Increased Destructive‑Action Flags</title>
-      <link>https://secubuzz.com/news/openai-gpt-6-1-terra-safety-testing-reveals-increa-622464</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-gpt-6-1-terra-safety-testing-reveals-increa-622464</guid>
-      <description><![CDATA[OpenAI’s GPT‑6.1 Terra model was evaluated in safety testing, revealing increased destructive‑action flags compared to earlier releases. The flaw stems from insufficient policy enforcement during content generation, allowing the model to produce higher‑risk prompts. OpenAI recommends applying the latest safety updates and actively monitoring prompt outputs for elevated destructive‑action flags.]]></description>
-      <pubDate>Tue, 27 Oct 2026 22:43:27 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Liability Mitigation Frameworks for CISOs</title>
-      <link>https://secubuzz.com/news/ai-liability-mitigation-frameworks-for-cisos-221f17</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-liability-mitigation-frameworks-for-cisos-221f17</guid>
-      <description><![CDATA[Cyber leaders can mitigate AI liability by documenting AI usage, ensuring transparency, and negotiating smart contracts with vendors. These frameworks provide a structured approach to traceability, risk assessment, and compliance, reducing potential legal exposure during AI deployments. Organizations should adopt these practices early, integrate them into procurement processes, and maintain audit trails to satisfy regulatory requirements.]]></description>
-      <pubDate>Tue, 27 Oct 2026 21:15:03 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches Brotli Denial-of-Service and Code Execution Flaw</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-brotli-denial-of-service-and-code-e-7fbd64</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-brotli-denial-of-service-and-code-e-7fbd64</guid>
-      <description><![CDATA[Ubuntu released USN-8956-2 to address a Brotli vulnerability affecting Ubuntu 16.04 LTS, 18.04 LTS, and 20.04 LTS. The flaw involves incorrect handling of certain compressed streams, allowing a remote attacker to cause denial of service or execute arbitrary code. Administrators should apply the update immediately to mitigate remote exploitation risk on affected releases.]]></description>
-      <pubDate>Tue, 27 Oct 2026 21:14:45 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8956-2">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Black Basta Ransomware Campaign Uses External Team Chats for Rapid Malware Delivery</title>
-      <link>https://secubuzz.com/news/black-basta-ransomware-campaign-uses-external-team-4093b4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/black-basta-ransomware-campaign-uses-external-team-4093b4</guid>
-      <description><![CDATA[A social engineering campaign, possibly tied to Black Basta ransomware, delivers malware via external team chats within fifteen minutes. The method exploits trusted communication channels, enabling rapid credential theft and lateral movement across multiple high-value targets. Teams should monitor chat traffic for anomalous file transfers, enforce strict access controls, and apply timely endpoint patches.]]></description>
-      <pubDate>Tue, 27 Oct 2026 20:42:40 GMT</pubDate>
-      <source url="https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path">Dark Reading</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Artem Stryzhak Pleads Guilty to Ransomware Operator Charges</title>
-      <link>https://secubuzz.com/news/artem-stryzhak-pleads-guilty-to-ransomware-operato-2da8f1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/artem-stryzhak-pleads-guilty-to-ransomware-operato-2da8f1</guid>
-      <description><![CDATA[Ukrainian national Artem Stryzhak pleaded guilty to charges linked to participation in at least two ransomware groups, including Nefilim and Hive. The case underscores legal action against operators behind Nefilim and Hive ransomware, highlighting international cooperation. Courts imposed a five‑year-plus sentence, underscoring the judiciary's firm stance against ransomware operations worldwide.]]></description>
-      <pubDate>Tue, 27 Oct 2026 20:40:00 GMT</pubDate>
-      <source url="https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
