@@ -39,6 +39,32 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:92871",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92871",
+    "title": "Red Hat Tomcat Security Update Released",
+    "headline": "Red Hat Tomcat Security Update Released",
+    "summary": "Red Hat issued a security update for Tomcat on Enterprise Linux 9.2 for SAP Solutions, addressing multiple vulnerabilities identified in the advisory. The update mitigates potential remote code execution and privilege escalation risks, though no specific CVE identifiers are listed. Security teams should apply the update immediately to maintain system integrity.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T22:26:17.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:92871",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:92870",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92870",
+    "title": "Red Hat Tomcat Update for EL 9.6 Extended Support",
+    "headline": "Red Hat Tomcat Update for EL 9.6 Extended Support",
+    "summary": "Red Hat released a Tomcat security patch for Enterprise Linux 9.6 Extended Update Support, covering several critical flaws that could allow remote attackers to execute code. The advisory references CVSS scores but does not list CVE IDs. Applying the update is essential to prevent exploitation of these vulnerabilities.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T22:25:53.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:92870",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
     "title": "Hugging Face Models Hijack GPUs for Mining",
@@ -62,6 +88,19 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-29T21:47:25.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_090381616.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_090381616.html",
+    "title": "Chrome 156 for Android Released",
+    "headline": "Chrome 156 for Android Released",
+    "summary": "Google released Chrome 156 for Android, aligning with desktop security fixes and including stability improvements. The update is available via Google Play and contains the same security patches as the corresponding desktop releases unless otherwise noted. Users should update to maintain protection against known vulnerabilities.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-29T21:38:02.025Z",
+    "url": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_090381616.html",
     "additionalSources": []
   },
   {
@@ -4669,45 +4708,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-21T13:52:23.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/webmcp-commerce/",
-    "sourceUrl": "https://blog.cloudflare.com/webmcp-commerce/",
-    "title": "Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts",
-    "headline": "Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts",
-    "summary": "Commerce.com and Cloudflare have enabled AI agents to interact with storefronts via WebMCP across nearly 100,000 domains, providing real shopping tools. The deployment leverages Cloudflare’s edge infrastructure to activate the feature globally while preserving individual merchant control over configuration and data access.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-21T13:00:00.000Z",
-    "url": "https://blog.cloudflare.com/webmcp-commerce/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
-    "title": "Legacy Windows Executable Exploited in ClickFix Phishing Wave",
-    "headline": "Legacy Windows Executable Exploited in ClickFix Phishing Wave",
-    "summary": "A modern ClickFix attack leverages the legacy Windows 'finger' utility to trigger a CAPTCHA that installs the Lumma stealer via malicious Google search results. The exploitation chain abuses the finger command’s ability to execute arbitrary code, enabling credential theft and persistent malware installation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-21T13:00:00.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap",
-    "title": "Fake Amazon Music x YouTube Deal Traps Creators into Google Login",
-    "headline": "Fake Amazon Music x YouTube Deal Traps Creators into Google Login",
-    "summary": "Fake Amazon Music x YouTube deal lures creators into a Google login trap. Attackers use a convincing creator portal that displays YouTube videos and metrics to trick users into entering Google credentials, enabling credential theft. Security teams should verify official Amazon and YouTube communications, avoid unknown portals, and enable two‑factor authentication on Google accounts.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-21T12:45:00.000Z",
-    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap",
     "additionalSources": []
   }
 ]

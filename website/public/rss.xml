@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 22:58:13 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 23:22:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Binance Investigates $5.8B Crypto Theft</title>
@@ -35,6 +35,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Tomcat Security Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-tomcat-security-update-released-37d993</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-tomcat-security-update-released-37d993</guid>
+      <description><![CDATA[Red Hat issued a security update for Tomcat on Enterprise Linux 9.2 for SAP Solutions, addressing multiple vulnerabilities identified in the advisory. The update mitigates potential remote code execution and privilege escalation risks, though no specific CVE identifiers are listed. Security teams should apply the update immediately to maintain system integrity.]]></description>
+      <pubDate>Thu, 29 Oct 2026 22:26:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92871">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Tomcat Update for EL 9.6 Extended Support</title>
+      <link>https://secubuzz.com/news/red-hat-tomcat-update-for-el-9-6-extended-support-37d993</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-tomcat-update-for-el-9-6-extended-support-37d993</guid>
+      <description><![CDATA[Red Hat released a Tomcat security patch for Enterprise Linux 9.6 Extended Update Support, covering several critical flaws that could allow remote attackers to execute code. The advisory references CVSS scores but does not list CVE IDs. Applying the update is essential to prevent exploitation of these vulnerabilities.]]></description>
+      <pubDate>Thu, 29 Oct 2026 22:25:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92870">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Hugging Face Models Hijack GPUs for Mining</title>
       <link>https://secubuzz.com/news/hugging-face-models-hijack-gpus-for-mining-40cea6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hugging-face-models-hijack-gpus-for-mining-40cea6</guid>
@@ -51,6 +69,15 @@
       <pubDate>Thu, 29 Oct 2026 21:47:25 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Chrome 156 for Android Released</title>
+      <link>https://secubuzz.com/news/chrome-156-for-android-released-b3588a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-156-for-android-released-b3588a</guid>
+      <description><![CDATA[Google released Chrome 156 for Android, aligning with desktop security fixes and including stability improvements. The update is available via Google Play and contains the same security patches as the corresponding desktop releases unless otherwise noted. Users should update to maintain protection against known vulnerabilities.]]></description>
+      <pubDate>Thu, 29 Oct 2026 21:38:02 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_090381616.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>Anthropic‑Themed Phishing Emails Evade Leading Email Gateways</title>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/">BleepingComputer</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Microsoft Outlines CISO Strategy for Agentic AI Era</title>
-      <link>https://secubuzz.com/news/microsoft-outlines-ciso-strategy-for-agentic-ai-er-2412d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-outlines-ciso-strategy-for-agentic-ai-er-2412d7</guid>
-      <description><![CDATA[Microsoft published guidance for CISOs navigating the agentic AI era, identifying two core priorities: enabling innovation through identity and data guardrails, and modernizing defense against AI-powered threats. The advisory, authored by Aarti Borkar, frames the evolving security leadership role around balancing AI adoption with protective controls.]]></description>
-      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AWS SDK for pandas Athena Result Tampering Flaw</title>
-      <link>https://secubuzz.com/news/aws-sdk-for-pandas-athena-result-tampering-flaw-4f8e24</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-sdk-for-pandas-athena-result-tampering-flaw-4f8e24</guid>
-      <description><![CDATA[AWS disclosed CVE-2026-118029 in the awswrangler library, where unverified ownership of the default Athena query result location permits data tampering. A remote user can read query results and alter returned data sets by pre-creating an S3 bucket at the default destination, bypassing ownership checks. Teams should upgrade awswrangler and verify S3 bucket ownership for Athena result destinations.]]></description>
-      <pubDate>Wed, 28 Oct 2026 15:40:38 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-153-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Adoption in SOC Outpaces Expectations</title>
-      <link>https://secubuzz.com/news/ai-adoption-in-soc-outpaces-expectations-2bc3ae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-adoption-in-soc-outpaces-expectations-2bc3ae</guid>
-      <description><![CDATA[A Help Net Security analysis reports that security teams are adopting AI-driven automation in the SOC faster than industry observers anticipated. The author notes that compliance obligations, previously assumed to slow AI integration, have not impeded deployment pace. The finding suggests SOC operators are increasingly trusting AI to execute operational actions within security workflows.]]></description>
-      <pubDate>Wed, 28 Oct 2026 15:25:01 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/28/exaforce-trust-in-ai-security/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

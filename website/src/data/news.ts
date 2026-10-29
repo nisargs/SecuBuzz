@@ -62,6 +62,40 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-tomcat-security-update-released-37d993",
+    "title": "Red Hat Tomcat Security Update Released",
+    "summary": "Red Hat issued a security update for Tomcat on Enterprise Linux 9.2 for SAP Solutions, addressing multiple vulnerabilities identified in the advisory. The update mitigates potential remote code execution and privilege escalation risks, though no specific CVE identifiers are listed. Security teams should apply the update immediately to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92871",
+    "publishedAt": "2026-10-29T22:26:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-tomcat-security-update-released",
+      "article-37d993",
+      "37d993"
+    ]
+  },
+  {
+    "slug": "red-hat-tomcat-update-for-el-9-6-extended-support-37d993",
+    "title": "Red Hat Tomcat Update for EL 9.6 Extended Support",
+    "summary": "Red Hat released a Tomcat security patch for Enterprise Linux 9.6 Extended Update Support, covering several critical flaws that could allow remote attackers to execute code. The advisory references CVSS scores but does not list CVE IDs. Applying the update is essential to prevent exploitation of these vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92870",
+    "publishedAt": "2026-10-29T22:25:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-tomcat-update-for-el-9-6-extended-support",
+      "article-37d993",
+      "37d993"
+    ]
+  },
+  {
     "slug": "hugging-face-models-hijack-gpus-for-mining-40cea6",
     "title": "Hugging Face Models Hijack GPUs for Mining",
     "summary": "A crypto‑mining campaign targeting Hugging Face models has resurfaced, hijacking GPU servers and installing backdoors after model downloads. The malware exploits insecure model hosting to inject mining code, affecting over 28,000 downloads. Security teams should block suspicious model traffic and apply host‑based intrusion detection to detect and remove the backdoor.",
@@ -94,6 +128,23 @@ export const news: NewsBrief[] = [
       "article-499595",
       "499595",
       "polymarket-trading-suspended-after-crypto-draining-breach"
+    ]
+  },
+  {
+    "slug": "chrome-156-for-android-released-b3588a",
+    "title": "Chrome 156 for Android Released",
+    "summary": "Google released Chrome 156 for Android, aligning with desktop security fixes and including stability improvements. The update is available via Google Play and contains the same security patches as the corresponding desktop releases unless otherwise noted. Users should update to maintain protection against known vulnerabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_090381616.html",
+    "publishedAt": "2026-10-29T21:38:02.025Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-156-for-android-released",
+      "article-b3588a",
+      "b3588a"
     ]
   },
   {
@@ -6460,60 +6511,6 @@ export const news: NewsBrief[] = [
       "article-6a71bb",
       "6a71bb",
       "nvidia-introduces-openshell-architecture-to-contain-ai-agent"
-    ]
-  },
-  {
-    "slug": "commerce-com-and-cloudflare-enable-ai-agents-acros-4dc4ea",
-    "title": "Commerce.com and Cloudflare Enable AI Agents Across 100,000 Storefronts",
-    "summary": "Commerce.com and Cloudflare have enabled AI agents to interact with storefronts via WebMCP across nearly 100,000 domains, providing real shopping tools. The deployment leverages Cloudflare’s edge infrastructure to activate the feature globally while preserving individual merchant control over configuration and data access.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/webmcp-commerce/",
-    "publishedAt": "2026-10-21T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "commerce-com-and-cloudflare-enable-ai-agents-acros",
-      "article-4dc4ea",
-      "4dc4ea",
-      "commerce-com-and-cloudflare-enable-ai-agents-across-100-000-"
-    ]
-  },
-  {
-    "slug": "legacy-windows-executable-exploited-in-clickfix-ph-1ea2d9",
-    "title": "Legacy Windows Executable Exploited in ClickFix Phishing Wave",
-    "summary": "A modern ClickFix attack leverages the legacy Windows 'finger' utility to trigger a CAPTCHA that installs the Lumma stealer via malicious Google search results. The exploitation chain abuses the finger command’s ability to execute arbitrary code, enabling credential theft and persistent malware installation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
-    "publishedAt": "2026-10-21T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "legacy-windows-executable-exploited-in-clickfix-ph",
-      "article-1ea2d9",
-      "1ea2d9",
-      "legacy-windows-executable-exploited-in-clickfix-phishing-wav"
-    ]
-  },
-  {
-    "slug": "fake-amazon-music-x-youtube-deal-traps-creators-in-458852",
-    "title": "Fake Amazon Music x YouTube Deal Traps Creators into Google Login",
-    "summary": "Fake Amazon Music x YouTube deal lures creators into a Google login trap. Attackers use a convincing creator portal that displays YouTube videos and metrics to trick users into entering Google credentials, enabling credential theft. Security teams should verify official Amazon and YouTube communications, avoid unknown portals, and enable two‑factor authentication on Google accounts.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/10/fake-amazon-music-x-youtube-deal-lures-creators-into-a-google-login-trap",
-    "publishedAt": "2026-10-21T12:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-amazon-music-x-youtube-deal-traps-creators-in",
-      "article-458852",
-      "458852",
-      "fake-amazon-music-x-youtube-deal-traps-creators-into-google-"
     ]
   }
 ];
