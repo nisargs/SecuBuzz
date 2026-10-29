@@ -1725,7 +1725,8 @@ async function requestGemini(candidates) {
     throw new Error("Gemini returned 0 valid article objects.");
   }
 
-  await sleep(1500);
+  // 6.0s delay guarantees instantaneous rate stays <= 7.5 RPM, well below Gemini 2.5 Flash 10 RPM ceiling
+  await sleep(6000);
   return articles;
 }
 
