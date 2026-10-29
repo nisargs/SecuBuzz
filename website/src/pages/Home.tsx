@@ -9,6 +9,7 @@ import { AppCta } from '../components/AppCta';
 import { QrModal } from '../components/QrModal';
 import { WhatsNewModal } from '../components/WhatsNewModal';
 import { homeReasons } from '../data/site';
+import { THREAT_FEEDS_COUNT } from '../data/sources';
 import { useLiveNews } from '../data/useLiveNews';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { daysSince, daysUntil } from '../utils/date';
@@ -32,7 +33,7 @@ export function Home() {
     <>
       <Seo
         title="SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar"
-        description="Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking with EPSS scores. Privacy-first, zero third-party trackers, fast triage, 48 curated threat feeds and vendor PSIRTs."
+        description={`Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking with EPSS scores. Privacy-first, zero third-party trackers, fast triage, ${THREAT_FEEDS_COUNT} curated threat feeds and vendor PSIRTs.`}
         canonicalPath="/"
         jsonLd={{
           '@context': 'https://schema.org',
@@ -74,6 +75,15 @@ export function Home() {
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
               SecuBuzz condenses the day’s cybersecurity reporting and official vendor PSIRT advisories across Red Hat, Cisco, Microsoft, Palo Alto, Oracle, and AWS into source-linked 60-word briefs, pushing new Known Exploited Vulnerabilities to your Android phone with remediation deadlines.
             </p>
+            <div className="mt-2.5">
+              <Link
+                to="/sources"
+                className="group inline-flex items-center gap-1 font-mono text-xs text-accent transition-colors hover:text-accent/80"
+              >
+                <span>See all {THREAT_FEEDS_COUNT} monitored sources &amp; vendor PSIRTs</span>
+                <span className="transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+              </Link>
+            </div>
             <div className="mt-9 flex flex-wrap items-center gap-5">
               <PlayStoreButton size="lg" source="home_hero" />
               <Link
@@ -127,7 +137,7 @@ export function Home() {
           </div>
           <div className="divide-y divide-line">
             {latest.map((b) =>
-            <NewsBriefItem key={b.slug} brief={b} />
+              <NewsBriefItem key={b.slug} brief={b} />
             )}
           </div>
         </div>
@@ -142,7 +152,7 @@ export function Home() {
             </div>
             <ul className="divide-y divide-line">
               {recentKev.map((a) =>
-              <AdvisoryListItem key={a.cve} advisory={a} />
+                <AdvisoryListItem key={a.cve} advisory={a} />
               )}
             </ul>
             <Link
@@ -162,7 +172,7 @@ export function Home() {
           </h2>
           <dl className="divide-y divide-line border-y border-line">
             {homeReasons.map((r) =>
-            <div key={r.title} className="grid gap-2 py-6 md:grid-cols-[220px_1fr] md:gap-8">
+              <div key={r.title} className="grid gap-2 py-6 md:grid-cols-[220px_1fr] md:gap-8">
                 <dt className="font-medium text-ink">{r.title}</dt>
                 <dd className="text-[15px] leading-relaxed text-muted">{r.body}</dd>
               </div>
@@ -174,6 +184,6 @@ export function Home() {
       <AppCta />
       <QrModal isOpen={showHeroQr} onClose={() => setShowHeroQr(false)} source="home_hero_qr" />
       <WhatsNewModal isOpen={showWhatsNew} onClose={() => setShowWhatsNew(false)} />
-    </>);
-
+    </>
+  );
 }

@@ -480,7 +480,29 @@ export const advisories: Advisory[] = ${JSON.stringify(combined, null, 2)};
   }
 }
 
+async function verifySourcesParity() {
+  try {
+    const ingestFile = path.join(rootDir, 'scripts', 'ingest.mjs');
+    const sourcesFile = path.join(rootDir, 'website', 'src', 'data', 'sources.ts');
+    if (!fs.existsSync(ingestFile) || !fs.existsSync(sourcesFile)) return;
+    const ingestCode = fs.readFileSync(ingestFile, 'utf8');
+    const feedsBlock = ingestCode.split('const FEEDS = [')[1]?.split('];')[0];
+    if (!feedsBlock) return;
+    const ingestFeeds = [...feedsBlock.matchAll(/name:\s*["']([^"']+)["']/g)].map(m => m[1]);
+    const sourcesCode = fs.readFileSync(sourcesFile, 'utf8');
+    const sourcesFeeds = [...sourcesCode.matchAll(/name:\s*["']([^"']+)["']/g)].map(m => m[1]);
+    const missing = ingestFeeds.filter(f => !sourcesFeeds.includes(f));
+    if (missing.length > 0) {
+      console.warn('[PARITY WARNING] Missing feeds in sources.ts: ' + missing.join(', '));
+    } else {
+      console.log('Verified sources parity: all ' + ingestFeeds.length + ' hourly feeds + ASB are cataloged in website/src/data/sources.ts');
+    }
+  } catch (err) {
+    console.warn('Could not verify sources parity:', err);
+  }
+}
 async function main() {
+  await verifySourcesParity();
   await syncNews();
   await syncAdvisories();
 }

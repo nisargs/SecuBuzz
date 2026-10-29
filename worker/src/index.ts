@@ -368,6 +368,7 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
     '/data-privacy',
     '/account-deletion',
     '/publishers',
+    '/sources',
     '/contact',
   ]);
 

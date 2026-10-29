@@ -20,44 +20,44 @@ export const footerNav = [
       { label: 'RSS Feed', to: '/rss.xml', external: true },
     ],
   },
-{
-  heading: 'Company',
-  links: [
-  { label: 'About', to: '/about' },
-  { label: 'Support SecuBuzz', to: '/support?src=footer_nav', external: true },
-  { label: 'For Publishers', to: '/publishers' },
-  { label: 'Contact', to: '/contact' }]
-
-},
-{
-  heading: 'Legal',
-  links: [
-  { label: 'Privacy Policy', to: '/privacy' },
-  { label: 'Terms of Service', to: '/terms' },
-  { label: 'Account Deletion', to: '/account-deletion' }]
-
-}];
-
+  {
+    heading: 'Company',
+    links: [
+      { label: 'About', to: '/about' },
+      { label: 'Support SecuBuzz', to: '/support?src=footer_nav', external: true },
+      { label: 'Sources', to: '/sources' },
+      { label: 'For Publishers', to: '/publishers' },
+      { label: 'Contact', to: '/contact' },
+    ],
+  },
+  {
+    heading: 'Legal',
+    links: [
+      { label: 'Privacy Policy', to: '/privacy' },
+      { label: 'Terms of Service', to: '/terms' },
+      { label: 'Account Deletion', to: '/account-deletion' },
+    ],
+  },
+];
 
 export const homeReasons = [
   {
     title: 'Read the whole feed before stand-up',
-    body: 'Every brief is capped at 60 words. A full day of coverage takes about five minutes, not fifty open tabs.'
+    body: 'Every brief is capped at 60 words. A full day of coverage takes about five minutes, not fifty open tabs.',
   },
   {
     title: 'Official vendor PSIRTs, not just news blogs',
-    body: 'Direct ingestion from Red Hat RHSA, Microsoft MSRC, Cisco PSIRT, Palo Alto, Oracle, and AWS ensures sysadmins catch critical patch releases before secondary media reports them.'
+    body: 'Direct ingestion from Red Hat RHSA, Microsoft MSRC, Cisco PSIRT, Palo Alto, Oracle, and AWS ensures sysadmins catch critical patch releases before secondary media reports them.',
   },
   {
     title: 'Every claim traces back to a source',
-    body: 'Briefs link to the original reporting and vendor advisories, so you can verify before you escalate.'
+    body: 'Briefs link to the original reporting and vendor advisories, so you can verify before you escalate.',
   },
   {
     title: 'KEV alerts that carry the deadline',
-    body: 'When CISA adds a CVE to the Known Exploited Vulnerabilities catalog, you get a push with the vendor, product and remediation due date.'
-  }
+    body: 'When CISA adds a CVE to the Known Exploited Vulnerabilities catalog, you get a push with the vendor, product and remediation due date.',
+  },
 ];
-
 
 export const appFeatures = [
   { title: '60-word briefs', body: 'Swipe through the day’s security news in concise cards you can finish in under 15 seconds.' },
@@ -138,19 +138,18 @@ export const aboutPrinciples = [
   },
 ];
 
-
 export const contactTopics = [
-'General question',
-'Press inquiry',
-'Bug report',
-'Publisher partnership',
-'Corrections'] as
-const;
+  'General question',
+  'Press inquiry',
+  'Bug report',
+  'Publisher partnership',
+  'Corrections',
+] as const;
 
 export const publisherFocusAreas = [
-'Threat intelligence',
-'Vulnerability research',
-'Industry news',
-'Policy & compliance',
-'Vendor advisories'] as
-const;
+  'Threat intelligence',
+  'Vulnerability research',
+  'Industry news',
+  'Policy & compliance',
+  'Vendor advisories',
+] as const;

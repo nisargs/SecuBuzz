@@ -9,6 +9,7 @@ import { Advisories } from './pages/Advisories';
 import { AdvisoryDetail } from './pages/AdvisoryDetail';
 import { Download } from './pages/Download';
 import { Publishers } from './pages/Publishers';
+import { Sources } from './pages/Sources';
 import { Privacy } from './pages/Privacy';
 import { Terms } from './pages/Terms';
 import { AccountDeletion } from './pages/AccountDeletion';
@@ -42,6 +43,7 @@ export function App() {
             <Route path="/advisories/:slug" element={<AdvisoryDetail />} />
             <Route path="/download" element={<Download />} />
             <Route path="/publishers" element={<Publishers />} />
+            <Route path="/sources" element={<Sources />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/account-deletion" element={<AccountDeletion />} />

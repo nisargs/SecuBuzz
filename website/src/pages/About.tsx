@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppCta } from '../components/AppCta';
 import { aboutPrinciples } from '../data/site';
+import { THREAT_FEEDS_COUNT } from '../data/sources';
 import { Seo } from '../components/Seo';
 
 export function About() {
@@ -50,8 +51,14 @@ export function About() {
           </p>
           <p>
             We built SecuBuzz to cut straight to what matters. Our automated intelligence pipeline ingests
-            coverage from 48 authoritative security publications and vendor PSIRTs, the CISA Known Exploited Vulnerabilities (KEV)
-            catalog, and the GitHub Security Advisory Database hourly around the clock, distilling complex developments into objective, 60-word briefs with direct links to primary sources.
+            coverage from{' '}
+            <Link
+              to="/sources"
+              className="font-medium text-ink underline decoration-line underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+            >
+              {THREAT_FEEDS_COUNT} authoritative security publications and vendor PSIRTs
+            </Link>
+            , the CISA Known Exploited Vulnerabilities (KEV) catalog, and the GitHub Security Advisory Database hourly around the clock, distilling complex developments into objective, 60-word briefs with direct links to primary sources.
           </p>
           <p>
             SecuBuzz is engineered with a strict <strong className="text-ink">privacy-first architecture</strong>: no user accounts, no trackers,

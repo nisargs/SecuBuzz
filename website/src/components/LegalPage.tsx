@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import type { LegalSection } from '../data/legal';
 import { PageIntro } from './PageIntro';
 import { Seo } from './Seo';
@@ -30,52 +31,44 @@ export function LegalPage({ title, updated, sections, canonicalPath, description
           <div className="sticky top-24">
             <p className="text-sm font-semibold text-ink">On this page</p>
             <ol className="mt-4 space-y-2.5 border-l border-line">
-              {sections.map((s) =>
-              <li key={s.id}>
+              {sections.map((s) => (
+                <li key={s.id}>
                   <a
-                  href={`#${s.id}`}
-                  className="-ml-px block border-l border-transparent pl-4 text-sm text-muted transition-colors duration-150 ease-out hover:border-accent hover:text-ink">
-                  
+                    href={`#${s.id}`}
+                    className="-ml-px block border-l border-transparent pl-4 text-sm text-muted transition-colors duration-150 ease-out hover:border-accent hover:text-ink"
+                  >
                     {s.heading}
                   </a>
                 </li>
-              )}
+              ))}
             </ol>
           </div>
         </nav>
         <div className="max-w-[76ch]">
-          {sections.map((s) =>
-          <section key={s.id} id={s.id} className="scroll-mt-24 border-b border-line py-8 first:pt-0 last:border-0">
+          {sections.map((s) => (
+            <section key={s.id} id={s.id} className="scroll-mt-24 border-b border-line py-8 first:pt-0 last:border-0">
               <h2 className="text-xl font-semibold tracking-tight text-ink">{s.heading}</h2>
               <div className="mt-3 space-y-3">
-                {s.body.map((p, i) =>
-              <p key={i} className="text-[15px] leading-relaxed text-muted">
+                {s.body.map((p, i) => (
+                  <p key={i} className="text-[15px] leading-relaxed text-muted">
                     {p}
                   </p>
-              )}
+                ))}
               </div>
-              {s.sourcesList && s.sourcesList.length > 0 && (
-                <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-2.5 pt-2 sm:grid-cols-2 lg:grid-cols-3">
-                  {s.sourcesList.map((source, idx) => (
-                    <div key={source.name} className="text-[13px] leading-snug">
-                      <a
-                        href={source.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group text-muted transition-colors duration-150 ease-out hover:text-accent"
-                      >
-                        <span className="font-medium text-ink transition-colors duration-150 ease-out group-hover:text-accent">{source.name}</span>{' '}
-                        <span className="font-mono text-xs text-subtle transition-colors duration-150 ease-out group-hover:text-accent/80">({source.domain})</span>
-                        {idx < s.sourcesList!.length - 1 ? ',' : ''}
-                      </a>
-                    </div>
-                  ))}
+              {s.linkAction && (
+                <div className="mt-4 pt-1">
+                  <Link
+                    to={s.linkAction.to}
+                    className="inline-flex items-center gap-1.5 font-medium text-accent transition-colors hover:underline"
+                  >
+                    {s.linkAction.label}
+                  </Link>
                 </div>
               )}
             </section>
-          )}
+          ))}
         </div>
       </div>
-    </>);
-
+    </>
+  );
 }

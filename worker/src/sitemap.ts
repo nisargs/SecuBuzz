@@ -62,6 +62,7 @@ export function generateSitemapXml(
     { loc: 'https://secubuzz.com/advisories', priority: '0.9', changefreq: 'daily' },
     { loc: 'https://secubuzz.com/download', priority: '0.9', changefreq: 'monthly' },
     { loc: 'https://secubuzz.com/publishers', priority: '0.8', changefreq: 'monthly' },
+    { loc: 'https://secubuzz.com/sources', priority: '0.8', changefreq: 'weekly' },
     { loc: 'https://secubuzz.com/privacy', priority: '0.8', changefreq: 'monthly' },
     { loc: 'https://secubuzz.com/terms', priority: '0.8', changefreq: 'monthly' },
     { loc: 'https://secubuzz.com/contact', priority: '0.7', changefreq: 'monthly' },
@@ -350,6 +351,16 @@ export function injectMetaTags(
   } else if (pathname === '/download') {
     title = 'Download SecuBuzz for Android · Quick Cybersecurity News';
     description = 'Download SecuBuzz for Android. Fast 60-word cybersecurity briefs and CISA zero-day alerts. Available globally on Google Play.';
+  } else if (pathname === '/sources') {
+    title = 'Monitored Sources & Vendor PSIRT Directory · SecuBuzz';
+    description = 'Explore the 48 authoritative security newsrooms, vendor PSIRTs, supply chain monitors, and vulnerability databases indexed by SecuBuzz.';
+    jsonLdObj = {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'SecuBuzz Monitored Threat Intelligence Sources',
+      url: 'https://secubuzz.com/sources',
+      description,
+    };
   } else if (pathname === '/publishers') {
     title = 'For Publishers & Security Researchers · SecuBuzz';
     description = 'How SecuBuzz attributes and links to cybersecurity publishers, researchers, and reporters. Concise 60-word briefs pointing readers directly to original reporting.';
