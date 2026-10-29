@@ -20,6 +20,15 @@
 - **Explicit Deployment Approval Gate:** Develop, verify types and logic locally, present the verified changes to the user, and ONLY execute an OTA update or production release when the user explicitly tests, confirms, and instructs to ship.
 - **Save EAS Build Quotas:** NEVER trigger an EAS cloud build for UI, layout, or JavaScript testing. Full builds are ONLY needed for native config, plugins, or permissions.
 - **OTA vs. Native Module Invariant (Zero-Unlinked-Native Mandate):** NEVER introduce, install, or statically import any new native library package in an OTA update (`eas update`) if that package was not compiled into the current production native `.aab` binary installed on user devices. An OTA update can ONLY deliver pure JS/assets. Any optional native features must use `requireOptionalNativeModule` with a safe JS fallback (e.g. `Linking.openURL`), and static imports of new native modules must strictly wait for a full native release build (e.g. v1.1.0+).
+- **Live Systems No-Destruction Invariant:**
+  - SecuBuzz has live users. The website, the API, the push fleet, and the feed are production. These rules are absolute.
+  - **Never delete Cloudflare resources.** Not the `secubuzz-push` worker, not D1 `secubuzz-push-db`, not R2 buckets (`secubuzz-feed`), not KV namespaces, not cron triggers. If a resource must be replaced, build the replacement next to it, verify it serves traffic, then cut over. Delete last, never delete first.
+  - **Never run destructive database commands on D1.** No `DROP TABLE`, no `DROP DATABASE`, no `DELETE` without a `WHERE` clause, no migrations that remove columns holding live data. Migrations only add.
+  - **Never delete R2 objects outside the normal ingest rotation.** The 350 brief cap is the only deletion path. Never empty a bucket.
+  - **Never delete the GitHub repo, never force push to main, never delete the main branch.**
+  - **Never touch the Google Play listing, signing keys, EAS projects, or the secubuzz.com domain and DNS.**
+  - **Snapshot before you migrate.** Any change touching D1 schema or R2 data starts with a backup.
+  - **When in doubt, stop and ask.** Any command that destroys data or takes the site or app offline needs explicit user confirmation first. Destruction is never the default.
 
 ## 3. Threat Severity Classification (Objective Criteria)
 - Grounded strictly in CVSS 3.1/4.0 and CISA KEV framework:
