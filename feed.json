@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+    "title": "Polymarket Trading Suspended After Crypto‑Draining Breach",
+    "headline": "Polymarket Trading Suspended After Crypto‑Draining Breach",
+    "summary": "Polymarket halted trading after attackers compromised a third‑party service to deploy a cryptocurrency‑draining JavaScript payload. The flaw allowed unauthorized extraction of user funds, with approximately $2.5 million traced to a suspected attacker wallet. Red Hat issued a patch and advised users to monitor account balances and revoke compromised API keys.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-29T21:47:25.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
+    "title": "Anthropic‑Themed Phishing Emails Evade Leading Email Gateways",
+    "headline": "Anthropic‑Themed Phishing Emails Evade Leading Email Gateways",
+    "summary": "Phishing campaigns themed around Anthropic are bypassing several top secure email gateway products. The emails contain obvious red flags yet still reach inboxes, indicating gaps in current threat detection rules. Security teams should update gateway signatures and enable advanced threat protection to counter these deceptive messages.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-29T21:21:56.000Z",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
     "sourceUrl": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
     "title": "Claude AI Chains Exploits Across Major Browsers and OSes",
@@ -4683,36 +4709,5 @@
     "publishedAt": "2026-10-21T11:37:57.000Z",
     "url": "https://www.malwarebytes.com/blog/bugs/2026/10/signal-bug-could-let-someone-keep-listening-after-you-hang-up",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
-    "title": "WEIS Archive Releases 25 Years of Research Papers",
-    "headline": "WEIS Archive Releases 25 Years of Research Papers",
-    "summary": "The Workshop on Economics and Information Security (WEIS) has released an archive containing all papers from its 25-year history, providing a comprehensive resource for researchers. The collection includes foundational essays, such as a 2002 analysis of the economics of information security, offering insights into the field’s evolution. Users can access the archive to study historical security economics literature.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-21T11:02:22.000Z",
-    "url": "https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/",
-    "sourceUrl": "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/",
-    "title": "US DHS Orders Removal of DeepSeek AI from Federal Systems",
-    "headline": "US DHS Orders Removal of DeepSeek AI from Federal Systems",
-    "summary": "The U.S. Department of Homeland Security ordered removal of DeepSeek AI products from federal systems, prompting China to defend the technology. The directive targets DeepSeek and any third‑party services built with its models, citing concerns over potential espionage and data leakage. Affected agencies must purge DeepSeek components, replace them with vetted alternatives, and document compliance to meet federal security requirements.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-21T10:54:49.000Z",
-    "url": "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html"
-      }
-    ]
   }
 ]
