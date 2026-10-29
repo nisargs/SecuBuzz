@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 06:00:12 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 06:27:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>DHS Personnel Records Leak Exposes ICE Operations</title>
+      <link>https://secubuzz.com/news/dhs-personnel-records-leak-exposes-ice-operations-7d88db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dhs-personnel-records-leak-exposes-ice-operations-7d88db</guid>
+      <description><![CDATA[A data breach exposed records of over 41,000 Department of Homeland Security employees and contractors, revealing contact details, assignments, and links to undercover ICE operations. The leak, distributed publicly, provides an internal view of teams and reporting lines, potentially enabling targeted espionage or social engineering. DHS should immediately revoke compromised credentials, conduct a forensic audit, and notify affected personnel.]]></description>
+      <pubDate>Thu, 29 Oct 2026 03:13:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/dhs-data-leak/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Cisco SD-WAN Controller Authentication Bypass</title>
       <link>https://secubuzz.com/news/cisco-sd-wan-controller-authentication-bypass-78eefb</link>
@@ -368,6 +377,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>AVG Internet Security Local Privilege Escalation Exploit</title>
+      <link>https://secubuzz.com/news/avg-internet-security-local-privilege-escalation-e-6f3c9f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/avg-internet-security-local-privilege-escalation-e-6f3c9f</guid>
+      <description><![CDATA[A local privilege escalation vulnerability exists in AVG Internet Security’s avgToolsSvc component, allowing attackers with low‑privileged code execution to gain higher privileges. The flaw, rated CVSS 7.3, is identified as CVE-2026-6064 and requires local code execution to trigger. AVG has released a patch; security teams should apply it immediately to mitigate the risk.]]></description>
+      <pubDate>Wed, 28 Oct 2026 05:00:00 GMT</pubDate>
+      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-832/">ZDI Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CrowdStrike 2026 Report: eCrime Leads, China Activity Rises</title>
       <link>https://secubuzz.com/news/crowdstrike-2026-report-ecrime-leads-china-activit-6b8654</link>
       <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-2026-report-ecrime-leads-china-activit-6b8654</guid>
@@ -438,24 +456,6 @@
       <pubDate>Tue, 27 Oct 2026 20:40:00 GMT</pubDate>
       <source url="https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison">The Record</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>US DOJ Indicts Malaysian National in Madagascar Scam Operation</title>
-      <link>https://secubuzz.com/news/us-doj-indicts-malaysian-national-in-madagascar-sc-7387bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-doj-indicts-malaysian-national-in-madagascar-sc-7387bf</guid>
-      <description><![CDATA[The U.S. Department of Justice indicted a Malaysian national involved in a scam center operation that targeted victims in Madagascar. The indictment also covers four other foreign nationals and highlights the expanding global reach of scam center industries across multiple jurisdictions. Law enforcement agencies should monitor cross-border scam operations and coordinate international investigations to disrupt similar illicit networks.]]></description>
-      <pubDate>Tue, 27 Oct 2026 19:30:00 GMT</pubDate>
-      <source url="https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Distrusts eMudhra Certificates in Out-of-Band Update</title>
-      <link>https://secubuzz.com/news/microsoft-distrusts-emudhra-certificates-in-out-of-13cec4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-distrusts-emudhra-certificates-in-out-of-13cec4</guid>
-      <description><![CDATA[Microsoft released out‑of‑band Windows updates to remove trust in certificates issued by the compromised eMudhra certificate authority, protecting systems that do not receive automatic certificate trust updates. The flaw stems from compromised CA keys that enabled attackers to actively issue fraudulent certificates, creating a potential man‑in‑the‑middle risk for TLS connections. Apply the update via Windows Update immediately.]]></description>
-      <pubDate>Tue, 27 Oct 2026 18:20:28 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

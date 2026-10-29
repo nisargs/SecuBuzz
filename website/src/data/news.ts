@@ -11,6 +11,23 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "dhs-personnel-records-leak-exposes-ice-operations-7d88db",
+    "title": "DHS Personnel Records Leak Exposes ICE Operations",
+    "summary": "A data breach exposed records of over 41,000 Department of Homeland Security employees and contractors, revealing contact details, assignments, and links to undercover ICE operations. The leak, distributed publicly, provides an internal view of teams and reporting lines, potentially enabling targeted espionage or social engineering. DHS should immediately revoke compromised credentials, conduct a forensic audit, and notify affected personnel.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/dhs-data-leak/",
+    "publishedAt": "2026-10-29T03:13:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dhs-personnel-records-leak-exposes-ice-operations",
+      "article-7d88db",
+      "7d88db"
+    ]
+  },
+  {
     "slug": "cisco-sd-wan-controller-authentication-bypass-78eefb",
     "title": "Cisco SD-WAN Controller Authentication Bypass",
     "summary": "A flaw in Cisco Catalyst SD‑WAN Controller’s peering authentication permits unauthenticated remote attackers to bypass login and gain administrative privileges. The defect stems from a broken authentication mechanism that accepts crafted requests, enabling attackers to log in as a high‑privileged non‑root user and manipulate NETCONF network configurations. Cisco has issued a patch; administrators should apply the update immediately.",
@@ -734,6 +751,26 @@ export const news: NewsBrief[] = [
       "article-44b9df",
       "44b9df",
       "kroll-breach-analysis-reveals-data-stored-by-unknown-third-p"
+    ]
+  },
+  {
+    "slug": "avg-internet-security-local-privilege-escalation-e-6f3c9f",
+    "title": "AVG Internet Security Local Privilege Escalation Exploit",
+    "summary": "A local privilege escalation vulnerability exists in AVG Internet Security’s avgToolsSvc component, allowing attackers with low‑privileged code execution to gain higher privileges. The flaw, rated CVSS 7.3, is identified as CVE-2026-6064 and requires local code execution to trigger. AVG has released a patch; security teams should apply it immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-832/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-6064"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "avg-internet-security-local-privilege-escalation-e",
+      "article-6f3c9f",
+      "6f3c9f",
+      "avg-internet-security-local-privilege-escalation-exploit"
     ]
   },
   {
@@ -6482,46 +6519,6 @@ export const news: NewsBrief[] = [
       "article-7dcaf6",
       "7dcaf6",
       "us-agencies-publish-ten-voluntary-practices-for-rogue-ai-age"
-    ]
-  },
-  {
-    "slug": "ai-complicates-software-development-security-2691c8",
-    "title": "AI Complicates Software Development Security",
-    "summary": "Artificial Intelligence introduces new security challenges in the software development lifecycle. A Dark Reading roundtable highlighted that enhanced identity visibility, collaborative practices, and reduced testing costs can mitigate these risks, providing CISOs with actionable strategies to address AI‑related vulnerabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-    "publishedAt": "2026-10-20T15:35:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-complicates-software-development-security",
-      "article-2691c8",
-      "2691c8"
-    ]
-  },
-  {
-    "slug": "fbi-investigates-cybersecurity-executive-s-role-in-8118ff",
-    "title": "FBI Investigates Cybersecurity Executive’s Role in ShinyHunters Extortion Website",
-    "summary": "Federal investigators allege a cybersecurity executive at a U.S. consulting firm aided ShinyHunters in operating an extortion website that pressured hacked companies into paying ransom demands. The site allegedly facilitated ransomware demands for stolen data, raising concerns about trusted advisors turning to criminal support.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
-    "publishedAt": "2026-10-20T15:09:27.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Krebs on Security",
-        "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
-      }
-    ],
-    "aliases": [
-      "fbi-investigates-cybersecurity-executive-s-role-in",
-      "article-8118ff",
-      "8118ff",
-      "fbi-investigates-cybersecurity-executive-s-role-in-shinyhunt"
     ]
   }
 ];

@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://cybersecuritynews.com/dhs-data-leak/",
+    "sourceUrl": "https://cybersecuritynews.com/dhs-data-leak/",
+    "title": "DHS Personnel Records Leak Exposes ICE Operations",
+    "headline": "DHS Personnel Records Leak Exposes ICE Operations",
+    "summary": "A data breach exposed records of over 41,000 Department of Homeland Security employees and contractors, revealing contact details, assignments, and links to undercover ICE operations. The leak, distributed publicly, provides an internal view of teams and reporting lines, potentially enabling targeted espionage or social engineering. DHS should immediately revoke compromised credentials, conduct a forensic audit, and notify affected personnel.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-29T03:13:31.000Z",
+    "url": "https://cybersecuritynews.com/dhs-data-leak/",
+    "additionalSources": []
+  },
+  {
     "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Catalyst+SD-WAN+Controller+Authentication+Bypass+Vulnerability%26vs_k%3D1",
     "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Catalyst+SD-WAN+Controller+Authentication+Bypass+Vulnerability%26vs_k%3D1",
     "title": "Cisco SD-WAN Controller Authentication Bypass",
@@ -525,6 +538,19 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-28T05:00:19.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/28/kroll-third-party-data-breaches-insurance-claims-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-832/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-832/",
+    "title": "AVG Internet Security Local Privilege Escalation Exploit",
+    "headline": "AVG Internet Security Local Privilege Escalation Exploit",
+    "summary": "A local privilege escalation vulnerability exists in AVG Internet Security’s avgToolsSvc component, allowing attackers with low‑privileged code execution to gain higher privileges. The flaw, rated CVSS 7.3, is identified as CVE-2026-6064 and requires local code execution to trigger. AVG has released a patch; security teams should apply it immediately to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-832/",
     "additionalSources": []
   },
   {
@@ -4682,36 +4708,5 @@
     "publishedAt": "2026-10-20T15:45:00.000Z",
     "url": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-    "sourceUrl": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-    "title": "AI Complicates Software Development Security",
-    "headline": "AI Complicates Software Development Security",
-    "summary": "Artificial Intelligence introduces new security challenges in the software development lifecycle. A Dark Reading roundtable highlighted that enhanced identity visibility, collaborative practices, and reduced testing costs can mitigate these risks, providing CISOs with actionable strategies to address AI‑related vulnerabilities.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-20T15:35:45.000Z",
-    "url": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
-    "sourceUrl": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
-    "title": "FBI Investigates Cybersecurity Executive’s Role in ShinyHunters Extortion Website",
-    "headline": "FBI Investigates Cybersecurity Executive’s Role in ShinyHunters Extortion Website",
-    "summary": "Federal investigators allege a cybersecurity executive at a U.S. consulting firm aided ShinyHunters in operating an extortion website that pressured hacked companies into paying ransom demands. The site allegedly facilitated ransomware demands for stolen data, raising concerns about trusted advisors turning to criminal support.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-20T15:09:27.000Z",
-    "url": "https://cybersecuritynews.com/fbi-suspects-cybersecurity-executive-shinyhunters/",
-    "additionalSources": [
-      {
-        "source": "Krebs on Security",
-        "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/"
-      }
-    ]
   }
 ]
