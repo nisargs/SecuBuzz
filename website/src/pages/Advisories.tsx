@@ -146,9 +146,39 @@ export function Advisories() {
     const q = query.trim().toLowerCase();
     return advisories
       .filter((a) => matchesBase(a, q) && matchesSource(a, sourceFilter) && matchesSeverity(a, severityFilter))
-      .sort((a, b) =>
-        sort === 'added' ? b.dateAdded.localeCompare(a.dateAdded) : a.dueDate.localeCompare(b.dueDate)
-      );
+      .sort((a, b) => {
+        if (sort === 'added') {
+          return b.dateAdded.localeCompare(a.dateAdded);
+        }
+
+        // Soonest due sorting:
+        const daysA = daysUntil(a.dueDate);
+        const daysB = daysUntil(b.dueDate);
+        const hasDateA = !Number.isNaN(daysA);
+        const hasDateB = !Number.isNaN(daysB);
+
+        // Entries without a due date are placed at the bottom, ordered by newest added
+        if (!hasDateA && !hasDateB) {
+          return b.dateAdded.localeCompare(a.dateAdded);
+        }
+        if (!hasDateA) return 1;
+        if (!hasDateB) return -1;
+
+        const isUpcomingA = daysA >= 0;
+        const isUpcomingB = daysB >= 0;
+
+        // Upcoming/open deadlines come before past-due deadlines
+        if (isUpcomingA && !isUpcomingB) return -1;
+        if (!isUpcomingA && isUpcomingB) return 1;
+
+        if (isUpcomingA && isUpcomingB) {
+          // Soonest deadline first (ascending by dueDate)
+          return a.dueDate.localeCompare(b.dueDate);
+        }
+
+        // Past-due deadlines: most recently due first (descending by dueDate)
+        return b.dueDate.localeCompare(a.dueDate);
+      });
   }, [advisories, query, sourceFilter, severityFilter, dueThisWeekOnly, vendorFilter, sort]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
