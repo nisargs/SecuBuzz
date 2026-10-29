@@ -1367,7 +1367,9 @@ export default {
   },
 
   // ---------------------------------------------------------------------------
-  // CRON TRIGGER HANDLER (Fires every 4 hours with 0-second latency)
+  // CRON TRIGGER HANDLER (Fires at :42 past every hour)
+  // Acts as a precision zero-cost fallback: checks if GitHub dropped the :17 run,
+  // and ONLY triggers out-of-band workflow_dispatch if GitHub missed it.
   // ---------------------------------------------------------------------------
   async scheduled(
     event: { cron: string },
@@ -1376,36 +1378,79 @@ export default {
   ): Promise<void> {
     const token = env.GITHUB_PAT;
     if (!token) {
-      console.warn('[Cron Trigger] GITHUB_PAT is missing. Ingestion not triggered.');
+      console.warn('[Cron Watchdog] GITHUB_PAT is missing. Fallback dispatch unavailable.');
       return;
     }
 
-    console.log(`[Cron Trigger] Dispatching SecuBuzz feed ingestion at ${new Date().toISOString()}...`);
+    const checkAndDispatch = async () => {
+      try {
+        console.log(`[Cron Watchdog] Checking GitHub Actions run status at ${new Date().toISOString()}...`);
 
-    const dispatchPromise = fetch(
-      'https://api.github.com/repos/nisargs/SecuBuzz/actions/workflows/ingest.yml/dispatches',
-      {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Accept': 'application/vnd.github+json',
-          'User-Agent': 'SecuBuzz-Cloudflare-Cron',
-        },
-        body: JSON.stringify({ ref: 'main' }),
-      }
-    )
-      .then(async (res) => {
-        if (res.status === 204) {
-          console.log('[Cron Trigger] Successfully dispatched GitHub ingestion workflow!');
+        // Check recent runs of ingest.yml to see if GitHub's :17 cron executed
+        const runsRes = await fetch(
+          'https://api.github.com/repos/nisargs/SecuBuzz/actions/workflows/ingest.yml/runs?per_page=3',
+          {
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Accept': 'application/vnd.github+json',
+              'User-Agent': 'SecuBuzz-Cloudflare-Watchdog',
+            },
+          }
+        );
+
+        if (runsRes.ok) {
+          const data: any = await runsRes.json();
+          const runs: any[] = data.workflow_runs || [];
+
+          // 1. If an ingest workflow is already active or queued, do nothing
+          const hasActive = runs.some((r: any) => r.status === 'in_progress' || r.status === 'queued');
+          if (hasActive) {
+            console.log('[Cron Watchdog] Ingest is currently in progress or queued. Skipping fallback dispatch.');
+            return;
+          }
+
+          // 2. If a run started within the last 40 minutes, GitHub ran on schedule
+          const latestRun = runs[0];
+          if (latestRun && latestRun.created_at) {
+            const runTime = Date.parse(latestRun.created_at);
+            const ageMinutes = (Date.now() - runTime) / (1000 * 60);
+
+            if (ageMinutes < 40) {
+              console.log(`[Cron Watchdog] GitHub Actions ran on schedule (${ageMinutes.toFixed(1)}m ago). No miss detected.`);
+              return;
+            }
+          }
         } else {
-          const text = await res.text();
-          console.error(`[Cron Trigger] GitHub returned HTTP ${res.status}: ${text}`);
+          console.warn(`[Cron Watchdog] Failed to query GitHub runs API (${runsRes.status}).`);
         }
-      })
-      .catch((err) => {
-        console.error('[Cron Trigger] Network error calling GitHub API:', err);
-      });
 
-    ctx.waitUntil(dispatchPromise);
+        // 3. GitHub missed its :17 hourly run! Trigger fallback dispatch
+        console.log('🚨 [Cron Watchdog] GitHub Actions missed the :17 run! Triggering fallback dispatch...');
+
+        const dispatchRes = await fetch(
+          'https://api.github.com/repos/nisargs/SecuBuzz/actions/workflows/ingest.yml/dispatches',
+          {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Accept': 'application/vnd.github+json',
+              'User-Agent': 'SecuBuzz-Cloudflare-Watchdog',
+            },
+            body: JSON.stringify({ ref: 'main' }),
+          }
+        );
+
+        if (dispatchRes.status === 204) {
+          console.log('✅ [Cron Watchdog] Fallback ingestion workflow successfully dispatched on GitHub!');
+        } else {
+          const errText = await dispatchRes.text();
+          console.error(`[Cron Watchdog] GitHub dispatch returned HTTP ${dispatchRes.status}: ${errText}`);
+        }
+      } catch (err: any) {
+        console.error('[Cron Watchdog] Network error during watchdog check/dispatch:', err);
+      }
+    };
+
+    ctx.waitUntil(checkAndDispatch());
   },
 };
