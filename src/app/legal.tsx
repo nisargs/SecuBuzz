@@ -20,6 +20,7 @@ type LegalItemRowProps = {
   onPress: () => void;
   accentColor: string;
   colors: ReturnType<typeof useTheme>['colors'];
+  rightIcon?: keyof typeof Ionicons.glyphMap;
 };
 
 function LegalItemRow({
@@ -29,6 +30,7 @@ function LegalItemRow({
   onPress,
   accentColor,
   colors,
+  rightIcon = 'chevron-forward',
 }: LegalItemRowProps) {
   return (
     <Pressable
@@ -65,8 +67,8 @@ function LegalItemRow({
       </View>
 
       <Ionicons
-        name="chevron-forward"
-        size={19}
+        name={rightIcon}
+        size={rightIcon === 'open-outline' ? 18 : 19}
         color={colors.textMuted}
       />
     </Pressable>
@@ -165,7 +167,20 @@ export default function LegalPrivacyScreen() {
             icon="trash-bin-outline"
             title="Account Deletion Info"
             subtitle="SecuBuzz is zero-account; verify deletion policy"
+            rightIcon="open-outline"
             onPress={() => void Linking.openURL('https://secubuzz.com/account-deletion')}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          <LegalItemRow
+            icon="list-outline"
+            title="Monitored Sources Directory"
+            subtitle="Public catalog of 48 newsrooms & vendor bulletins"
+            rightIcon="open-outline"
+            onPress={() => void Linking.openURL('https://secubuzz.com/sources')}
             accentColor={accentColor}
             colors={colors}
           />
@@ -176,6 +191,7 @@ export default function LegalPrivacyScreen() {
             icon="newspaper-outline"
             title="Publisher Policy"
             subtitle="48-hour content removal commitment & syndication"
+            rightIcon="open-outline"
             onPress={() => void Linking.openURL('https://secubuzz.com/publishers')}
             accentColor={accentColor}
             colors={colors}

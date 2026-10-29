@@ -31,6 +31,7 @@ type ParentOptionProps = {
   onPress: () => void;
   accentColor: string;
   colors: ReturnType<typeof useTheme>['colors'];
+  rightIcon?: keyof typeof Ionicons.glyphMap;
 };
 
 function ParentOptionRow({
@@ -41,6 +42,7 @@ function ParentOptionRow({
   onPress,
   accentColor,
   colors,
+  rightIcon = 'chevron-forward',
 }: ParentOptionProps) {
   return (
     <Pressable
@@ -94,8 +96,8 @@ function ParentOptionRow({
       </View>
 
       <Ionicons
-        name="chevron-forward"
-        size={20}
+        name={rightIcon}
+        size={rightIcon === 'open-outline' ? 18 : 20}
         color={colors.textMuted}
       />
     </Pressable>
@@ -278,7 +280,21 @@ export default function SettingsScreen() {
 
           <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-          {/* 3. ABOUT & SUPPORT */}
+          {/* 3. MONITORED SOURCES */}
+          <ParentOptionRow
+            icon="list-outline"
+            title="Monitored Sources"
+            subtitle="48 curated feeds, vendor PSIRTs & databases"
+            badge="48"
+            rightIcon="open-outline"
+            onPress={() => void Linking.openURL('https://secubuzz.com/sources')}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          {/* 4. ABOUT & SUPPORT */}
           <ParentOptionRow
             icon="information-circle-outline"
             title="About & Support"
@@ -290,7 +306,7 @@ export default function SettingsScreen() {
 
           <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-          {/* 4. LEGAL & PRIVACY */}
+          {/* 5. LEGAL & PRIVACY */}
           <ParentOptionRow
             icon="shield-checkmark-outline"
             title="Legal & Privacy"
@@ -302,7 +318,7 @@ export default function SettingsScreen() {
 
           <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-          {/* 5. DATA & STORAGE */}
+          {/* 6. DATA & STORAGE */}
           <ParentOptionRow
             icon="server-outline"
             title="Data & Storage"

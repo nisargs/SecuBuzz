@@ -24,6 +24,7 @@ type SubItemRowProps = {
   onPress: () => void;
   accentColor: string;
   colors: ReturnType<typeof useTheme>['colors'];
+  rightIcon?: keyof typeof Ionicons.glyphMap;
 };
 
 function SubItemRow({
@@ -33,6 +34,7 @@ function SubItemRow({
   onPress,
   accentColor,
   colors,
+  rightIcon = 'chevron-forward',
 }: SubItemRowProps) {
   return (
     <Pressable
@@ -69,8 +71,8 @@ function SubItemRow({
       </View>
 
       <Ionicons
-        name="chevron-forward"
-        size={19}
+        name={rightIcon}
+        size={rightIcon === 'open-outline' ? 18 : 19}
         color={colors.textMuted}
       />
     </Pressable>
@@ -171,6 +173,18 @@ export default function AboutSupportScreen() {
             title="About SecuBuzz"
             subtitle={`Version ${Constants.expoConfig?.version ?? '1.0.3'}, data pipeline & mission`}
             onPress={() => router.push('/about')}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+          <SubItemRow
+            icon="list-outline"
+            title="Monitored Sources & Feeds"
+            subtitle="All 48 indexed feeds, vendor PSIRTs & databases"
+            rightIcon="open-outline"
+            onPress={() => void Linking.openURL('https://secubuzz.com/sources')}
             accentColor={accentColor}
             colors={colors}
           />
