@@ -46,7 +46,7 @@ export const homeReasons = [
   },
   {
     title: 'Official vendor PSIRTs, not just news blogs',
-    body: 'Direct ingestion from Red Hat RHSA, Microsoft MSRC, Cisco PSIRT, Palo Alto, and AWS ensures sysadmins catch critical patch releases before secondary media reports them.'
+    body: 'Direct ingestion from Red Hat RHSA, Microsoft MSRC, Cisco PSIRT, Palo Alto, Oracle, and AWS ensures sysadmins catch critical patch releases before secondary media reports them.'
   },
   {
     title: 'Every claim traces back to a source',
