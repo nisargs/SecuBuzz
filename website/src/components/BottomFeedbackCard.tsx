@@ -27,7 +27,7 @@ export function BottomFeedbackCard() {
   return (
     <aside
       aria-label="Feedback and suggestions"
-      className="fixed bottom-5 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center pointer-events-none"
+      className="fixed bottom-5 left-1/2 -translate-x-1/2 sm:left-auto sm:right-6 sm:translate-x-0 z-40 flex flex-col items-center sm:items-end pointer-events-none"
     >
       <div className="pointer-events-auto">
         <AnimatePresence mode="wait" initial={false}>

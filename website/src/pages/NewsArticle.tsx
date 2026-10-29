@@ -8,7 +8,7 @@ import { DueStatus } from '../components/DueStatus';
 import { AppCta } from '../components/AppCta';
 import { Seo } from '../components/Seo';
 import { NotFound } from './NotFound';
-import { clockTime, isValidDate, shortDate, timeAgo } from '../utils/date';
+import { clockTimeUTC, isValidDate, shortDateUTC, timeAgo } from '../utils/date';
 import { wordCount } from '../utils/text';
 import { isVendorPsirt } from '../utils/psirt';
 
@@ -90,7 +90,7 @@ export function NewsArticle() {
       brief.summary,
       '',
       `• *Severity:* ${brief.severity || 'Medium'}`,
-      `• *Published:* ${shortDate(brief.publishedAt)}`,
+      `• *Published:* ${shortDateUTC(brief.publishedAt)}`,
       `• *Source:* ${brief.source || 'SecuBuzz'}`,
       `• *Read 60-word brief:* ${canonicalUrl}`,
     ].join('\n');
@@ -179,7 +179,7 @@ export function NewsArticle() {
               )}
               <span className="text-subtle">·</span>
               <time dateTime={brief.publishedAt} className="text-muted">
-                {`${shortDate(brief.publishedAt)}, ${clockTime(brief.publishedAt)} UTC`}
+                {`${shortDateUTC(brief.publishedAt)}, ${clockTimeUTC(brief.publishedAt)} UTC`}
               </time>
               <span className="text-subtle">({timeAgo(brief.publishedAt)})</span>
             </div>

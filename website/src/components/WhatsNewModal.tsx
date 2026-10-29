@@ -36,8 +36,8 @@ const RELEASES: ReleaseItem[] = [
         desc: 'Added pure true-black OLED mode (#000000) for mobile battery saving alongside Dark and Slate.',
       },
       {
-        title: '1,810 Tracked Advisories',
-        desc: 'Unified catalog tracking 1,760 CISA KEV active zero-days and 50 GitHub ecosystem security advisories.',
+        title: '1,812+ Tracked Advisories',
+        desc: 'Unified catalog tracking 1,762+ CISA KEV active zero-days and 50 GitHub ecosystem security advisories.',
       },
       {
         title: 'Dynamic Text Scaling',

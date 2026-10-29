@@ -84,29 +84,30 @@ export function Advisories() {
     );
   };
 
-  // Telemetry counts matching mobile app 1:1 (faceted counts)
-  const severityCounts = useMemo(() => {
+  // Telemetry counts matching query & base filters (harmonized without asymmetrical cross-zeroing)
+  const baseAdvisories = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const candidate = advisories.filter((a) => matchesBase(a, q) && matchesSource(a, sourceFilter));
+    return advisories.filter((a) => matchesBase(a, q));
+  }, [advisories, vendorFilter, dueThisWeekOnly, query]);
+
+  const severityCounts = useMemo(() => {
     return {
-      all: candidate.length,
-      critical: candidate.filter((a) => matchesSeverity(a, 'CRITICAL')).length,
-      high: candidate.filter((a) => matchesSeverity(a, 'HIGH')).length,
-      medium: candidate.filter((a) => matchesSeverity(a, 'MEDIUM')).length,
-      low: candidate.filter((a) => matchesSeverity(a, 'LOW')).length,
-      ransomware: candidate.filter((a) => matchesSeverity(a, 'RANSOMWARE')).length,
+      all: baseAdvisories.length,
+      critical: baseAdvisories.filter((a) => matchesSeverity(a, 'CRITICAL')).length,
+      high: baseAdvisories.filter((a) => matchesSeverity(a, 'HIGH')).length,
+      medium: baseAdvisories.filter((a) => matchesSeverity(a, 'MEDIUM')).length,
+      low: baseAdvisories.filter((a) => matchesSeverity(a, 'LOW')).length,
+      ransomware: baseAdvisories.filter((a) => matchesSeverity(a, 'RANSOMWARE')).length,
     };
-  }, [advisories, sourceFilter, vendorFilter, dueThisWeekOnly, query]);
+  }, [baseAdvisories]);
 
   const sourceCounts = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    const candidate = advisories.filter((a) => matchesBase(a, q) && matchesSeverity(a, severityFilter));
     return {
-      all: candidate.length,
-      cisa: candidate.filter((a) => matchesSource(a, 'CISA')).length,
-      github: candidate.filter((a) => matchesSource(a, 'GITHUB')).length,
+      all: baseAdvisories.length,
+      cisa: baseAdvisories.filter((a) => matchesSource(a, 'CISA')).length,
+      github: baseAdvisories.filter((a) => matchesSource(a, 'GITHUB')).length,
     };
-  }, [advisories, severityFilter, vendorFilter, dueThisWeekOnly, query]);
+  }, [baseAdvisories]);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();

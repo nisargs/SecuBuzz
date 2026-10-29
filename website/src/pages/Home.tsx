@@ -21,11 +21,12 @@ export function Home() {
   const { news } = useLiveNews();
   const { advisories } = useLiveAdvisories();
   const latest = news.slice(0, 4);
-  const recentKev = advisories.slice(0, 5);
-  const addedThisWeek = advisories.filter((a) => daysSince(a.dateAdded) <= 7).length;
-  const nextDue = [...advisories].
-  filter((a) => daysUntil(a.dueDate) >= 0).
-  sort((a, b) => a.dueDate.localeCompare(b.dueDate))[0];
+  const cisaAdvisories = advisories.filter((a) => a.source !== 'GITHUB' && Boolean(a.dueDate));
+  const recentKev = cisaAdvisories.slice(0, 5);
+  const addedThisWeek = cisaAdvisories.filter((a) => daysSince(a.dateAdded) <= 7).length;
+  const nextDue = [...cisaAdvisories]
+    .filter((a) => daysUntil(a.dueDate) >= 0)
+    .sort((a, b) => a.dueDate.localeCompare(b.dueDate))[0];
 
   return (
     <>

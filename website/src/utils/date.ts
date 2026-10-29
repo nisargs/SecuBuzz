@@ -61,10 +61,33 @@ export function shortDate(iso?: string | null): string {
   }
 }
 
+export function shortDateUTC(iso?: string | null): string {
+  if (!iso || !isValidDate(iso)) return '—';
+  try {
+    const d = new Date(iso);
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return `${months[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
+  } catch {
+    return '—';
+  }
+}
+
 export function clockTime(iso: string): string {
   try {
     if (!isValidDate(iso)) return '';
     return format(parseISO(iso), 'HH:mm');
+  } catch {
+    return '';
+  }
+}
+
+export function clockTimeUTC(iso: string): string {
+  try {
+    if (!isValidDate(iso)) return '';
+    const d = new Date(iso);
+    const hours = String(d.getUTCHours()).padStart(2, '0');
+    const minutes = String(d.getUTCMinutes()).padStart(2, '0');
+    return `${hours}:${minutes}`;
   } catch {
     return '';
   }

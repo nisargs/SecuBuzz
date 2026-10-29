@@ -5,10 +5,10 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Oct 2026 23:19:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 00:56:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Cisco SD‑WAN Controller Authentication Bypass</title>
+      <title>Cisco SD-WAN Controller Authentication Bypass</title>
       <link>https://secubuzz.com/news/cisco-sd-wan-controller-authentication-bypass-78eefb</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisco-sd-wan-controller-authentication-bypass-78eefb</guid>
       <description><![CDATA[A flaw in Cisco Catalyst SD‑WAN Controller’s peering authentication permits unauthenticated remote attackers to bypass login and gain administrative privileges. The defect stems from a broken authentication mechanism that accepts crafted requests, enabling attackers to log in as a high‑privileged non‑root user and manipulate NETCONF network configurations. Cisco has issued a patch; administrators should apply the update immediately.]]></description>
@@ -23,6 +23,240 @@
       <description><![CDATA[Node.js released fixes for multiple high‑impact vulnerabilities affecting Cisco products, including CVE-2026-111497, an out‑of‑bounds write in the Brotli decoder that could lead to remote code execution. Additional flaws, CVE-2026-105482, CVE-2026-105483, and CVE-2026-106069, compromise DNS resolution and TLS hostname validation, enabling traffic interception. Cisco should apply the Node.js patches and verify TLS configurations.]]></description>
       <pubDate>Thu, 29 Oct 2026 00:36:45 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1">Cisco PSIRT</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Cisco Patches SSL VPN DoS in ASA and FTD</title>
+      <link>https://secubuzz.com/news/cisco-patches-ssl-vpn-dos-in-asa-and-ftd-2f6ce2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-patches-ssl-vpn-dos-in-asa-and-ftd-2f6ce2</guid>
+      <description><![CDATA[A logic error in the Remote Access SSL VPN service of Cisco Secure Firewall ASA and FTD software allows an unauthenticated remote attacker to trigger a device reload. The flaw occurs when secondary authentication is configured on a tunnel group, and exploitation requires sending a crafted request during VPN connection, resulting in a denial of service condition.]]></description>
+      <pubDate>Wed, 28 Oct 2026 23:15:00 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Tunnel+Denial+of+Service+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>UAT-11473 Exploits Cisco SD-WAN Auth Bypass</title>
+      <link>https://secubuzz.com/news/uat-11473-exploits-cisco-sd-wan-auth-bypass-373777</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uat-11473-exploits-cisco-sd-wan-auth-bypass-373777</guid>
+      <description><![CDATA[Cisco Talos identified UAT-11473, a sophisticated APT group, exploiting CVE-2026-20127, an authentication bypass vulnerability in Cisco SD-WAN Catalyst Controller instances to gain unauthorized access. The group deployed KeyDrift malware on compromised systems after bypassing authentication controls. Organizations running Cisco SD-WAN Catalyst Controllers should verify patch status for CVE-2026-20127 and hunt for KeyDrift indicators.]]></description>
+      <pubDate>Wed, 28 Oct 2026 21:32:02 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/uat-11473-keydrift/">Cisco Talos</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Federal Court Rules West Virginia Data Shield Law Unconstitutional</title>
+      <link>https://secubuzz.com/news/federal-court-rules-west-virginia-data-shield-law-7fd6e6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/federal-court-rules-west-virginia-data-shield-law-7fd6e6</guid>
+      <description><![CDATA[A federal appellate court panel ruled West Virginia's Daniel's Law, which shielded personal data of police and public officials, unconstitutional. The decision removes the legal barrier preventing public disclosure of personal information held by state agencies regarding law enforcement personnel. The ruling enables public records requests targeting personal data of public safety officials in West Virginia.]]></description>
+      <pubDate>Wed, 28 Oct 2026 20:50:00 GMT</pubDate>
+      <source url="https://therecord.media/west-virginia-daniels-law-struck-down-appellate-court">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Law Enforcement Seizes Virtualine Bulletproof Hosting Domain</title>
+      <link>https://secubuzz.com/news/law-enforcement-seizes-virtualine-bulletproof-host-8c1e6f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/law-enforcement-seizes-virtualine-bulletproof-host-8c1e6f</guid>
+      <description><![CDATA[U.S. law enforcement seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. The service provided infrastructure to ransomware operators and other cybercriminals seeking to evade takedown efforts. The seizure disrupts a known channel for illicit hosting but does not eliminate the underlying criminal operations.]]></description>
+      <pubDate>Wed, 28 Oct 2026 20:47:22 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Japan Airlines Confirms Customer Data Theft Incident</title>
+      <link>https://secubuzz.com/news/japan-airlines-confirms-customer-data-theft-incide-482a55</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/japan-airlines-confirms-customer-data-theft-incide-482a55</guid>
+      <description><![CDATA[Japan Airlines confirmed a data breach in which hackers stole passport numbers, frequent flyer numbers, email addresses, and phone numbers for approximately 2,000 customers. The incident occurred amid a broader wave of cyber incidents affecting Japanese organizations. Affected individuals face identity theft risk from exposed government-issued identifiers and personal contact details.]]></description>
+      <pubDate>Wed, 28 Oct 2026 20:33:00 GMT</pubDate>
+      <source url="https://therecord.media/japan-airlines-warns-of-breach-country-grapples-with-incidents">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Cisco Pre-Announces November Advisories for Three Products</title>
+      <link>https://secubuzz.com/news/cisco-pre-announces-november-advisories-for-three-76d307</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-pre-announces-november-advisories-for-three-76d307</guid>
+      <description><![CDATA[Cisco PSIRT will publish security advisories on November 4, 2026, addressing vulnerabilities in Identity Services Engine, UCS Central Software, and Unified Communications Manager. The advisories include fixed software releases, and no further security-hardening advisories are planned before January 20, 2027. Cisco recommends customers upgrade to the fixed versions specified in the advisories to remediate the disclosed flaws.]]></description>
+      <pubDate>Wed, 28 Oct 2026 20:00:00 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+November+4%2C+2026%2C+Security+Advisories%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ChromeOS Stable Patch Fixes Critical FileAPI Flaw</title>
+      <link>https://secubuzz.com/news/chromeos-stable-patch-fixes-critical-fileapi-flaw-60e267</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-stable-patch-fixes-critical-fileapi-flaw-60e267</guid>
+      <description><![CDATA[Google released ChromeOS Stable channel update 16836.30.0, patching multiple vulnerabilities including a critical improper input validation flaw in FileAPI. CVE-2026-118331 carries a critical severity rating, while five additional high-severity flaws span use-after-free and input validation issues across Animation, Compositing, UI, and ReadingList components. Users should update to browser version 156.0.8078.77 to remediate all disclosed defects.]]></description>
+      <pubDate>Wed, 28 Oct 2026 19:45:30 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-chromeos_01748991111.html">Google Chrome Releases</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>GhostAction Pivots to Developer Endpoints and Cloud</title>
+      <link>https://secubuzz.com/news/ghostaction-pivots-to-developer-endpoints-and-clou-d1cd75</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ghostaction-pivots-to-developer-endpoints-and-clou-d1cd75</guid>
+      <description><![CDATA[The GhostAction cybercrime group's supply chain attack campaign has fizzled, with the outfit shifting its operational focus toward developer endpoints and cloud access infrastructure. The group's persistent presence on GitHub signals an intent to target software development workflows and cloud-connected environments as new attack vectors.]]></description>
+      <pubDate>Wed, 28 Oct 2026 19:39:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Discord Opens Public Server Messages to Search Engines</title>
+      <link>https://secubuzz.com/news/discord-opens-public-server-messages-to-search-eng-24cc09</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/discord-opens-public-server-messages-to-search-eng-24cc09</guid>
+      <description><![CDATA[Discord will permit search engines to index discussions within Discoverable Servers, making those messages accessible on the open web to users outside the platform without requiring an account or invitation. This policy change expands the public surface of server communications previously confined to the Discord ecosystem.]]></description>
+      <pubDate>Wed, 28 Oct 2026 18:44:16 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Volt Typhoon Leverages Silent Train for Zero-Days</title>
+      <link>https://secubuzz.com/news/volt-typhoon-leverages-silent-train-for-zero-days-371e09</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/volt-typhoon-leverages-silent-train-for-zero-days-371e09</guid>
+      <description><![CDATA[The China-nexus espionage group Volt Typhoon operated a covert access network dubbed Silent Train to execute four zero-day exploitation campaigns for strategic access. Lumen Technologies Black Lotus Labs identified the network in late 2023, noting it uses rotating chains of compromised SOHO, IoT, and enterprise infrastructure.]]></description>
+      <pubDate>Wed, 28 Oct 2026 18:08:33 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Red Hat Patches mrtg on RHEL 9.4 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-patches-mrtg-on-rhel-9-4-sap-37d9b1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-mrtg-on-rhel-9-4-sap-37d9b1</guid>
+      <description><![CDATA[Red Hat released a security update for the mrtg monitoring package on Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. The update addresses vulnerabilities rated as Important by Red Hat Product Security, with specific CVSS scores available through referenced CVE links. Administrators should apply the RHSA-2026:92051 patch to remediate the identified flaws in their mrtg installations.]]></description>
+      <pubDate>Wed, 28 Oct 2026 18:00:13 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92051">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Unit 42 Maps Retail Holiday Threat Landscape</title>
+      <link>https://secubuzz.com/news/unit-42-maps-retail-holiday-threat-landscape-2a5d72</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-maps-retail-holiday-threat-landscape-2a5d72</guid>
+      <description><![CDATA[Unit 42 published an analysis of peak shopping season cyber threats targeting retail operations, covering ransomware campaigns and AI-powered attack vectors. The report outlines defensive strategies to protect customer trust and operational continuity during high-volume holiday periods. Security teams should review the guidance to align holiday-season incident response plans with emerging threat patterns.]]></description>
+      <pubDate>Wed, 28 Oct 2026 18:00:10 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/">Unit 42</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Ships JBoss EAP 8.1.9 Security Fix</title>
+      <link>https://secubuzz.com/news/red-hat-ships-jboss-eap-8-1-9-security-fix-37d9b1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-ships-jboss-eap-8-1-9-security-fix-37d9b1</guid>
+      <description><![CDATA[Red Hat released a security update for JBoss Enterprise Application Platform 8.1.9 on Red Hat Enterprise Linux 9. The update addresses vulnerabilities rated as Important by Red Hat Product Security, with specific CVSS scores available through referenced CVE links. Administrators should apply the RHSA-2026:92056 patch to remediate the identified flaws in their JBoss EAP deployments.]]></description>
+      <pubDate>Wed, 28 Oct 2026 17:56:23 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92056">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OffSec Releases Free PHP2Shell Exploitation Lab</title>
+      <link>https://secubuzz.com/news/offsec-releases-free-php2shell-exploitation-lab-17a67c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/offsec-releases-free-php2shell-exploitation-lab-17a67c</guid>
+      <description><![CDATA[OffSec released a free interactive lab in Proving Grounds Play enabling security practitioners to examine and defend against the critical PHP2Shell vulnerabilities, including CVE-2026-109618. The lab provides hands-on exploitation scenarios for the PHP2Shell flaw family, which researchers classify as critical severity, as AI-assisted research reshapes vulnerability discovery workflows.]]></description>
+      <pubDate>Wed, 28 Oct 2026 17:54:27 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Zero-Click Telegram Sticker Flaw Enables iOS Code Execution</title>
+      <link>https://secubuzz.com/news/zero-click-telegram-sticker-flaw-enables-ios-code-2356c5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-telegram-sticker-flaw-enables-ios-code-2356c5</guid>
+      <description><![CDATA[Security researcher Saifeldeen Aziz disclosed new zero-click vulnerabilities in Telegram stickers that bypass server-side validation checks. He chained the flaws to achieve arbitrary code execution on iOS devices, demonstrating a complete attack path without user interaction. The research was scheduled for presentation at OffensiveCon in Tokyo on October 28, 2026]]></description>
+      <pubDate>Wed, 28 Oct 2026 17:15:58 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/0-click-flaw-in-telegram-stickers/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GitHub Ships npm Package Firewall for Pre-Install Scanning</title>
+      <link>https://secubuzz.com/news/github-ships-npm-package-firewall-for-pre-install-3a9011</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-ships-npm-package-firewall-for-pre-install-3a9011</guid>
+      <description><![CDATA[GitHub announced a package firewall that evaluates npm packages against enterprise policy before installation, blocking known malware, critical vulnerabilities, and brand-new versions. The checks execute before a package reaches a developer laptop, build pipeline, or coding agent. Any developer can enable the firewall by pointing npm at it, part of four security additions addressing AI-accelerated software development]]></description>
+      <pubDate>Wed, 28 Oct 2026 17:09:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/28/github-package-firewall-npm/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Google Enables One-Tap Installs for Approved Third-Party Stores</title>
+      <link>https://secubuzz.com/news/google-enables-one-tap-installs-for-approved-third-14b753</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-enables-one-tap-installs-for-approved-third-14b753</guid>
+      <description><![CDATA[Google is enabling approved third-party Android app stores outside the U.S. to offer one-tap installs and background updates, bypassing confirmation screens. Stores must pass identity checks and submit their full catalog and every update to Google for ongoing malware scanning. The feature becomes available to qualifying stores starting December 1, expanding sideloading while retaining centralized security review.]]></description>
+      <pubDate>Wed, 28 Oct 2026 17:08:09 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ClickFix Social Engineering Campaign Observed in the Wild</title>
+      <link>https://secubuzz.com/news/clickfix-social-engineering-campaign-observed-in-t-57dd7e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-social-engineering-campaign-observed-in-t-57dd7e</guid>
+      <description><![CDATA[A new ClickFix social engineering campaign is actively targeting users through deceptive instructions that trick victims into executing malicious commands. The attack vector relies on convincing users to manually run PowerShell or similar commands, bypassing traditional malware delivery mechanisms. Security teams should monitor for anomalous command-line execution patterns and reinforce user awareness training against instruction-based lures.]]></description>
+      <pubDate>Wed, 28 Oct 2026 16:07:03 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33466">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Outlines CISO Strategy for Agentic AI Era</title>
+      <link>https://secubuzz.com/news/microsoft-outlines-ciso-strategy-for-agentic-ai-er-2412d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-outlines-ciso-strategy-for-agentic-ai-er-2412d7</guid>
+      <description><![CDATA[Microsoft published guidance for CISOs navigating the agentic AI era, identifying two core priorities: enabling innovation through identity and data guardrails, and modernizing defense against AI-powered threats. The advisory, authored by Aarti Borkar, frames the evolving security leadership role around balancing AI adoption with protective controls.]]></description>
+      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/">Microsoft Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AWS SDK for pandas Athena Result Tampering Flaw</title>
+      <link>https://secubuzz.com/news/aws-sdk-for-pandas-athena-result-tampering-flaw-4f8e24</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-sdk-for-pandas-athena-result-tampering-flaw-4f8e24</guid>
+      <description><![CDATA[AWS disclosed CVE-2026-118029 in the awswrangler library, where unverified ownership of the default Athena query result location permits data tampering. A remote user can read query results and alter returned data sets by pre-creating an S3 bucket at the default destination, bypassing ownership checks. Teams should upgrade awswrangler and verify S3 bucket ownership for Athena result destinations.]]></description>
+      <pubDate>Wed, 28 Oct 2026 15:40:38 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-153-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>AI Adoption in SOC Outpaces Expectations</title>
+      <link>https://secubuzz.com/news/ai-adoption-in-soc-outpaces-expectations-2bc3ae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-adoption-in-soc-outpaces-expectations-2bc3ae</guid>
+      <description><![CDATA[A Help Net Security analysis reports that security teams are adopting AI-driven automation in the SOC faster than industry observers anticipated. The author notes that compliance obligations, previously assumed to slow AI integration, have not impeded deployment pace. The finding suggests SOC operators are increasingly trusting AI to execute operational actions within security workflows.]]></description>
+      <pubDate>Wed, 28 Oct 2026 15:25:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/28/exaforce-trust-in-ai-security/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Nefilim Ransomware Affiliate Sentenced to 70 Months</title>
+      <link>https://secubuzz.com/news/nefilim-ransomware-affiliate-sentenced-to-70-month-211c3a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nefilim-ransomware-affiliate-sentenced-to-70-month-211c3a</guid>
+      <description><![CDATA[Artem Stryzhak, identified as a Ukrainian Hive and Nefilim ransomware affiliate, was sentenced to 70 months in US federal prison. He pleaded guilty to using Nefilim ransomware in attacks against victims. The prosecution represents a continued law enforcement effort targeting ransomware operators linked to the Hive ecosystem.]]></description>
+      <pubDate>Wed, 28 Oct 2026 15:05:06 GMT</pubDate>
+      <source url="https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/">SecurityWeek</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>AI Bot Impersonation Used for Credential Scanning</title>
+      <link>https://secubuzz.com/news/ai-bot-impersonation-used-for-credential-scanning-5eded3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-bot-impersonation-used-for-credential-scanning-5eded3</guid>
+      <description><![CDATA[A threat actor is scanning for exposed credentials by impersonating AI agents from OpenAI, Anthropic, Meta, and other vendors. The attacker leverages trusted AI company bot identities to probe for publicly accessible data and evade detection. Security teams should monitor anomalous bot user-agent strings and restrict public access to sensitive endpoints to counter this reconnaissance.]]></description>
+      <pubDate>Wed, 28 Oct 2026 14:37:52 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Windows Imaging Component Information Disclosure Patched</title>
+      <link>https://secubuzz.com/news/windows-imaging-component-information-disclosure-p-745d86</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-imaging-component-information-disclosure-p-745d86</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-62740, an information disclosure vulnerability in the Windows Imaging Component affecting supported editions of Microsoft Office. The flaw allows unauthorized access to sensitive data through improper handling of image processing operations. Microsoft recommends customers install the latest security updates across all affected Office editions to remediate the issue.]]></description>
+      <pubDate>Wed, 28 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Banks Block Third-Party AI Agents From Accounts</title>
+      <link>https://secubuzz.com/news/banks-block-third-party-ai-agents-from-accounts-669fa8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/banks-block-third-party-ai-agents-from-accounts-669fa8</guid>
+      <description><![CDATA[Banks are blocking third-party AI agents from accessing customer accounts, citing security risks to account integrity. The concern centers on unauthorized access and potential misuse of customer financial data by external AI systems. Financial institutions are implementing access restrictions to mitigate risks posed by autonomous third-party agents interacting with banking platforms.]]></description>
+      <pubDate>Wed, 28 Oct 2026 13:38:59 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/10/banks-are-blocking-ai-agents-from-customer-accounts">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CISA Flags Actively Exploited VMware and Linux Flaws</title>
+      <link>https://secubuzz.com/news/cisa-flags-actively-exploited-vmware-and-linux-fla-50dc05</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-flags-actively-exploited-vmware-and-linux-fla-50dc05</guid>
+      <description><![CDATA[CISA added CVE-2026-41709 (Broadcom VMware ESX insufficient logging) and CVE-2026-46300 (Linux kernel missing variable initialization) to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. Both flaws represent frequent attack vectors for malicious actors targeting federal enterprise infrastructure. BOD 26-04 mandates FCEB agencies prioritize rapid remediation of KEV-listed vulnerabilities on publicly exposed assets.]]></description>
+      <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</source>
       <category>CVE</category>
     </item>
     <item>
@@ -42,6 +276,15 @@
       <pubDate>Wed, 28 Oct 2026 11:15:51 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Chrome and Firefox Patch Serious Security Flaws</title>
+      <link>https://secubuzz.com/news/chrome-and-firefox-patch-serious-security-flaws-2bca28</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-and-firefox-patch-serious-security-flaws-2bca28</guid>
+      <description><![CDATA[Google and Mozilla released security updates for Chrome and Firefox on October 27, 2026, addressing serious security flaws in both browsers. The patches remediate vulnerabilities that could be exploited to compromise user sessions or execute malicious code within the browser environment. Users should install the updates immediately to close the exposure window and reduce attack surface.]]></description>
+      <pubDate>Wed, 28 Oct 2026 11:13:06 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/10/chrome-and-firefox-updates-fix-serious-security-flaws-install-them-now">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Researchers Study Fraudulent North Korean IT Workers</title>
@@ -116,6 +359,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Node2Shell Brotli Flaw Under Active Exploitation</title>
+      <link>https://secubuzz.com/news/node2shell-brotli-flaw-under-active-exploitation-563a99</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node2shell-brotli-flaw-under-active-exploitation-563a99</guid>
+      <description><![CDATA[Sophos Threat Research confirms active exploitation of Node2Shell (CVE-2026-111497), a vulnerability in the Brotli compression library. The flaw is being actively exploited in the wild, representing an urgent remote threat to systems processing Brotli-compressed data. Security teams should apply vendor patches immediately and monitor for exploitation indicators on affected infrastructure.]]></description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <source url="https://www.sophos.com/en-us/blog/node2shell-cve-2026-111497-in-active-exploitation">Sophos Threat Research</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>GMO Group Advises Shutdown Amid Ransomware Threat</title>
       <link>https://secubuzz.com/news/gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08</link>
       <guid isPermaLink="true">https://secubuzz.com/news/gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08</guid>
@@ -141,6 +393,15 @@
       <pubDate>Tue, 27 Oct 2026 21:15:03 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability">Dark Reading</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Ubuntu Patches Brotli Denial-of-Service and Code Execution Flaw</title>
+      <link>https://secubuzz.com/news/ubuntu-patches-brotli-denial-of-service-and-code-e-7fbd64</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-brotli-denial-of-service-and-code-e-7fbd64</guid>
+      <description><![CDATA[Ubuntu released USN-8956-2 to address a Brotli vulnerability affecting Ubuntu 16.04 LTS, 18.04 LTS, and 20.04 LTS. The flaw involves incorrect handling of certain compressed streams, allowing a remote attacker to cause denial of service or execute arbitrary code. Administrators should apply the update immediately to mitigate remote exploitation risk on affected releases.]]></description>
+      <pubDate>Tue, 27 Oct 2026 21:14:45 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8956-2">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Black Basta Ransomware Campaign Uses External Team Chats for Rapid Malware Delivery</title>
@@ -195,267 +456,6 @@
       <pubDate>Tue, 27 Oct 2026 17:59:35 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:90272">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CVE‑2026‑111497: Out‑of‑Bounds Write in Brotli Library</title>
-      <link>https://secubuzz.com/news/cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb</guid>
-      <description><![CDATA[CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.]]></description>
-      <pubDate>Tue, 27 Oct 2026 17:38:51 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/">Help Net Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Oracle PeopleSoft SSRF Exploit CVE-2026-35273</title>
-      <link>https://secubuzz.com/news/oracle-peoplesoft-ssrf-exploit-cve-2026-35273-6873a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/oracle-peoplesoft-ssrf-exploit-cve-2026-35273-6873a1</guid>
-      <description><![CDATA[Oracle PeopleSoft’s CVE‑2026‑35273 SSRF flaw lets attackers forge internal requests that bypass validateClient checks. The vulnerability supports remote code execution with a CVSS of 9.2, and ShinyHunters has confirmed widespread exploitation. Oracle issued a critical patch; teams should apply it immediately and disable external request capabilities as a temporary mitigation.]]></description>
-      <pubDate>Tue, 27 Oct 2026 16:39:07 GMT</pubDate>
-      <source url="https://www.thezdi.com/blog/2026/10/20/cve-2026-35273-ssrf-to-rce-in-oracle-peoplesoft">Zero Day Initiative</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Authd Identity Validation Flaw Exposes Local Accounts</title>
-      <link>https://secubuzz.com/news/ubuntu-authd-identity-validation-flaw-exposes-loca-7fbd60</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-authd-identity-validation-flaw-exposes-loca-7fbd60</guid>
-      <description><![CDATA[Authd in Ubuntu failed to validate user identities when matching accounts from identity providers, allowing an attacker to impersonate another user and access local files. The flaw stems from improper identity verification logic, potentially enabling unauthorized access to sensitive data. Ubuntu has released a patch; administrators should update authd immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 27 Oct 2026 16:23:37 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8957-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Warp Breach Exposes Agent Logs and Telemetry Data</title>
-      <link>https://secubuzz.com/news/warp-breach-exposes-agent-logs-and-telemetry-data-6ed322</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/warp-breach-exposes-agent-logs-and-telemetry-data-6ed322</guid>
-      <description><![CDATA[A breach exposed Warp agentic development environment users’ decision logs and telemetry data after a third‑party vendor was compromised. The compromise leveraged unauthorized access to the vendor’s infrastructure, allowing attackers to retrieve sensitive operational telemetry and user interaction records. Warp has issued a security advisory and recommends affected users apply the vendor’s latest patch and monitor account activity for anomalies.]]></description>
-      <pubDate>Tue, 27 Oct 2026 16:15:39 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Top Five Cybersecurity Scams Targeting U.S. Voters</title>
-      <link>https://secubuzz.com/news/top-five-cybersecurity-scams-targeting-u-s-voters-ebdb8b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-five-cybersecurity-scams-targeting-u-s-voters-ebdb8b</guid>
-      <description><![CDATA[Five election‑related scam campaigns target voters with deceptive messages that prompt registration, donations, surveys, or merchandise purchases. These phishing attempts exploit social engineering tactics, embedding malicious links or payment requests that can compromise personal data and financial information. Security teams should verify sender authenticity, use link scanners, and educate users to avoid clicking or providing credentials on suspicious election communications.]]></description>
-      <pubDate>Tue, 27 Oct 2026 15:36:09 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/scams/2026/10/five-election-scams-to-watch-out-for">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft .NET Elevation of Privilege Vulnerability CVE‑2026‑70161</title>
-      <link>https://secubuzz.com/news/microsoft-net-elevation-of-privilege-vulnerability-74506d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-net-elevation-of-privilege-vulnerability-74506d</guid>
-      <description><![CDATA[Microsoft .NET framework contains an elevation of privilege flaw identified as CVE‑2026‑70161 that allows local users to gain higher privileges on affected systems. The vulnerability exploits improper access control checks during component initialization, enabling attackers to execute privileged code without authentication. Microsoft has released a patch in the latest security update; administrators should apply it immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 27 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70161">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>GoAhead TLS Flaw Enables Session Decryption with Revoked Client Certificates</title>
-      <link>https://secubuzz.com/news/goahead-tls-flaw-enables-session-decryption-with-r-3e2958</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/goahead-tls-flaw-enables-session-decryption-with-r-3e2958</guid>
-      <description><![CDATA[GoAhead embedded web servers using OpenSSL mutual‑TLS load a certificate revocation list but never enable revocation checking, allowing revoked client certificates to authenticate on affected installations. The flaw permits attackers to decrypt TLS sessions and bypass authentication controls, exposing sensitive data and enabling credential theft without requiring privileged access. Patch is available from GoAhead.]]></description>
-      <pubDate>Tue, 27 Oct 2026 13:59:48 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Denver Health Plan Breach Exposes 238,000 Records via Leaked Key</title>
-      <link>https://secubuzz.com/news/denver-health-plan-breach-exposes-238-000-records-474ada</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/denver-health-plan-breach-exposes-238-000-records-474ada</guid>
-      <description><![CDATA[A leaked SquareML access key potentially exposed a database containing personal and health information of 238,000 Denver Health Plan members. The breach resulted from accidental key disclosure, allowing unauthenticated read access to sensitive records, including medical histories and contact details. Immediate remediation requires revoking the compromised key, rotating all credentials, and auditing access controls to prevent recurrence.]]></description>
-      <pubDate>Tue, 27 Oct 2026 13:30:28 GMT</pubDate>
-      <source url="https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>PHP2Shell Exploitation Attempts Fail in Observed Attacks</title>
-      <link>https://secubuzz.com/news/php2shell-exploitation-attempts-fail-in-observed-a-5582d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php2shell-exploitation-attempts-fail-in-observed-a-5582d7</guid>
-      <description><![CDATA[PHP2Shell, a PHP-based web shell, has been targeted for exploitation attempts, but no successful attacks have been reported to date. The vulnerability, identified as CVE-2026-109618, remains unexploited, with attackers lacking a working exploit or privileges to achieve remote code execution. Security teams should apply the vendor’s patch, update PHP to the latest stable release, and monitor for anomalous shell activity.]]></description>
-      <pubDate>Tue, 27 Oct 2026 13:21:45 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/php2shell-exploitation-so-far">Wiz Research</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Yoba Malware Distributed via Signed AI Tool Binaries</title>
-      <link>https://secubuzz.com/news/yoba-malware-distributed-via-signed-ai-tool-binari-7e8a7a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yoba-malware-distributed-via-signed-ai-tool-binari-7e8a7a</guid>
-      <description><![CDATA[A campaign leverages signed ChatGPT and Claude binaries to deliver the Yoba malware chain through fake GitHub projects masquerading as AI desktop applications. The attackers embed malicious code in these binaries, exploiting trust in signed software to execute payloads on victim systems. Security teams should verify signatures, monitor for anomalous binaries, and apply updated endpoint protection rules.]]></description>
-      <pubDate>Tue, 27 Oct 2026 13:03:27 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/">Check Point Research</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Launches PHP Capture the Flag Challenge for WAF Testing</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-php-capture-the-flag-challenge-3764d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-php-capture-the-flag-challenge-3764d5</guid>
-      <description><![CDATA[Cloudflare has introduced a PHP Capture the Flag challenge integrated with its Bug Bounty program to evaluate the effectiveness of its Web Application Firewall. Researchers are invited to bypass the WAF defenses and capture the flag, providing insights into potential weaknesses. Participants should follow the challenge guidelines and report findings through the official bug bounty portal.]]></description>
-      <pubDate>Tue, 27 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/php-ctf/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cloudflare Radar Records Widespread Internet Outages in Q3 2026</title>
-      <link>https://secubuzz.com/news/cloudflare-radar-records-widespread-internet-outag-67c23b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-radar-records-widespread-internet-outag-67c23b</guid>
-      <description><![CDATA[Cloudflare Radar recorded widespread internet outages during Q3 2026, with power failures, natural disasters, and government shutdowns disrupting global connectivity. These events caused significant traffic degradation and service unavailability across multiple regions, highlighting the fragility of critical infrastructure. Operators should enhance redundancy, monitor power supplies, and coordinate with authorities to mitigate future disruptions.]]></description>
-      <pubDate>Tue, 27 Oct 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/q3-2026-internet-disruption-summary/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Technologies Reshape Human Intimacy, Creating New Exploitation Vectors</title>
-      <link>https://secubuzz.com/news/ai-technologies-reshape-human-intimacy-creating-ne-7d6a7c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-technologies-reshape-human-intimacy-creating-ne-7d6a7c</guid>
-      <description><![CDATA[The report highlights how AI technologies are reshaping human intimacy, blurring authenticity and enabling new exploitation vectors. AI models produce persuasive content that can deceive users, creating opportunities for social engineering and privacy breaches across digital platforms. Security teams should monitor AI-generated material, enforce verification protocols, and educate users to mitigate manipulation risks.]]></description>
-      <pubDate>Tue, 27 Oct 2026 12:40:00 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/10/artificial-intimacy-love-and-lies-in-the-age-of-ai">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>PHP and Node.js Flaws Threaten Trusted Websites</title>
-      <link>https://secubuzz.com/news/php-and-node-js-flaws-threaten-trusted-websites-19c656</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-and-node-js-flaws-threaten-trusted-websites-19c656</guid>
-      <description><![CDATA[PHP and Node.js flaws, hacked sites, fake updates, and rogue certificates can risk users on trusted websites. The vulnerabilities arise from insecure server configurations and certificate mismanagement, enabling credential theft and man‑in‑the‑middle attacks; no specific CVE cited. Users should verify site certificates, avoid downloading unverified updates, and keep PHP/Node.js environments patched.]]></description>
-      <pubDate>Tue, 27 Oct 2026 12:22:37 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/10/the-webs-having-a-rough-week-heres-how-to-browse-safely">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Authenticator Flaw Enables Token Theft</title>
-      <link>https://secubuzz.com/news/microsoft-authenticator-flaw-enables-token-theft-1cfe87</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-authenticator-flaw-enables-token-theft-1cfe87</guid>
-      <description><![CDATA[Microsoft Authenticator for Android had a flaw allowing permissionless malicious apps to impersonate trusted Microsoft apps and harvest work account sign‑in tokens. The vulnerability, tracked as CVE‑2026‑80097, exploits the app’s lack of permission checks, enabling credential theft without user interaction; a public PoC demonstrated the exploit. Microsoft released Authenticator 6.2606.4246, and users must update immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 27 Oct 2026 12:09:50 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>EPICS Base Integer Overflow Vulnerability (CVE-2026-114595) Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/epics-base-integer-overflow-vulnerability-cve-2026-41cb8a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/epics-base-integer-overflow-vulnerability-cve-2026-41cb8a</guid>
-      <description><![CDATA[An integer overflow in EPICS Base release 7.0.10 and prior allows an attacker to cause memory corruption, potentially leading to arbitrary code execution or denial‑of‑service. The flaw arises from improper handling of network request lengths, resulting in incorrect memory allocation and type confusion. EPICS has released a patch; operators should update to the latest release and monitor for anomalous activity.]]></description>
-      <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Samsung TVs May Listen via Connected Soundbars</title>
-      <link>https://secubuzz.com/news/samsung-tvs-may-listen-via-connected-soundbars-5a742a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/samsung-tvs-may-listen-via-connected-soundbars-5a742a</guid>
-      <description><![CDATA[A vulnerability in Samsung TVs lacking built‑in microphones allows connected soundbars or Bluetooth microphones to capture audio, enabling covert listening. The flaw exploits the TV’s audio‑routing firmware, permitting unauthorized audio streams to bypass user‑controlled privacy settings without requiring network access. Samsung released a firmware update disabling external microphone routing; users should apply it.]]></description>
-      <pubDate>Tue, 27 Oct 2026 10:44:40 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/privacy/2026/10/samsung-tvs-without-mics-may-listen-through-soundbars-researcher-says">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apple Backports Zero‑Day Patch for Older iOS Devices</title>
-      <link>https://secubuzz.com/news/apple-backports-zero-day-patch-for-older-ios-devic-118c92</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-backports-zero-day-patch-for-older-ios-devic-118c92</guid>
-      <description><![CDATA[Apple has backported security patches to older iPhones and iPads, addressing a zero‑day bug exploited in sophisticated targeted attacks on iOS devices. CVE-2026-86950 allows remote code execution via a malformed graphics request, actively exploited. Apple has issued a firmware update for affected devices; security teams should install the patch immediately to eliminate the exploitation vector.]]></description>
-      <pubDate>Tue, 27 Oct 2026 10:36:12 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ryan Fetterman Discusses Practical Detection Engineering</title>
-      <link>https://secubuzz.com/news/ryan-fetterman-discusses-practical-detection-engin-1e450e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ryan-fetterman-discusses-practical-detection-engin-1e450e</guid>
-      <description><![CDATA[Ryan Fetterman, a federal SOC analyst, outlines practical detection engineering techniques and career guidance for blue teams. He emphasizes hands‑on monitoring, threat hunting, and iterative hypothesis testing as core skills. Fetterman advises balancing workload with continuous learning to prevent burnout, advocating structured playbooks and automated alert tuning for sustainable security operations.]]></description>
-      <pubDate>Tue, 27 Oct 2026 10:00:21 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/from-federal-socs-to-talos-ryan-fetterman-on-practical-security-research/">Cisco Talos</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Maritime Coalition Unveils Open Threat Database for Port Infrastructure</title>
-      <link>https://secubuzz.com/news/maritime-coalition-unveils-open-threat-database-fo-694cac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/maritime-coalition-unveils-open-threat-database-fo-694cac</guid>
-      <description><![CDATA[The Maritime Coalition has released a free vulnerability database cataloging nearly 30,000 IT and OT weaknesses affecting ship and port systems, including 37 maritime‑specific products. The database aggregates known flaws to aid operators in prioritizing security controls and patching schedules. Users can access the repository online to download vulnerability lists and mitigation guidance.]]></description>
-      <pubDate>Tue, 27 Oct 2026 07:14:27 GMT</pubDate>
-      <source url="https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Project Zero Compares Fuzzilli and BigSleep on V8</title>
-      <link>https://secubuzz.com/news/google-project-zero-compares-fuzzilli-and-bigsleep-75f539</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-project-zero-compares-fuzzilli-and-bigsleep-75f539</guid>
-      <description><![CDATA[Google Project Zero compared the generative JavaScript engine fuzzer Fuzzilli with the LLM-based bug finder BigSleep against Chrome’s V8 engine. Over six months, BigSleep reported 45 vulnerabilities versus Fuzzilli’s 37, with an estimated 60% overlap in discovered bugs. The study demonstrates that LLMs and fuzzers uncover distinct flaw sets, underscoring their complementary roles in vulnerability discovery.]]></description>
-      <pubDate>Tue, 27 Oct 2026 07:00:00 GMT</pubDate>
-      <source url="https://projectzero.google/2026/10/fuzzing-v-AI.html">Google Project Zero</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses</title>
-      <link>https://secubuzz.com/news/attackers-hijack-dahua-ip-cameras-in-ukraine-using-185083</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-hijack-dahua-ip-cameras-in-ukraine-using-185083</guid>
-      <description><![CDATA[Attackers exploited weak authentication and P2P access controls on Dahua IP cameras and DVRs in Ukraine, enabling unauthorized remote viewing, configuration changes, and creation of third‑party accounts. The vulnerability allows remote attackers to bypass device security, potentially exposing sensitive surveillance feeds and compromising operational integrity. Operators should disable P2P features, enforce strong passwords, and apply vendor firmware updates immediately.]]></description>
-      <pubDate>Tue, 27 Oct 2026 06:34:47 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Security Startups Expected to Merge into Larger Platforms</title>
-      <link>https://secubuzz.com/news/ai-security-startups-expected-to-merge-into-larger-2149ac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-security-startups-expected-to-merge-into-larger-2149ac</guid>
-      <description><![CDATA[The interview discusses how AI security startups will consolidate into larger platform offerings within the cybersecurity ecosystem. Key categories expected to survive include core threat detection, while others may become platform features as vendors merge. Investors should focus on Q3 funding trends, Israel’s venture share, and foundational controls before agent deployment to mitigate integration risks.]]></description>
-      <pubDate>Tue, 27 Oct 2026 06:30:01 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/27/jonathan-care-kuppingercole-analysts-ai-security-market/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Authenticator Android Flaw Enables Rogue Apps to Steal Work Accounts</title>
-      <link>https://secubuzz.com/news/microsoft-authenticator-android-flaw-enables-rogue-1f8218</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-authenticator-android-flaw-enables-rogue-1f8218</guid>
-      <description><![CDATA[A flaw in Microsoft Authenticator on Android allows any local app to silently hijack a user’s work account without permissions. The vulnerability bypasses the broker mechanism used by Teams and Outlook, enabling credential theft without user interaction or elevated privileges. Microsoft has released an update that patches the flaw; administrators should upgrade Authenticator immediately and enforce app permission restrictions.]]></description>
-      <pubDate>Tue, 27 Oct 2026 06:14:22 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/27/microsoft-authenticator-vulnerability-patchedcve-2026-80097/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CVE-2026-111497 Brotli Vulnerability Affects Palo Alto Networks Products</title>
-      <link>https://secubuzz.com/news/cve-2026-111497-brotli-vulnerability-affects-palo-4fd0b0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-111497-brotli-vulnerability-affects-palo-4fd0b0</guid>
-      <description><![CDATA[A critical Brotli compression flaw, CVE-2026-111497, compromises Palo Alto Networks devices via unauthenticated remote code execution. The vulnerability, rated CVSS 9.5, allows attackers to inject malicious payloads into network traffic, potentially bypassing security controls. Palo Alto Networks has released a patch; administrators must apply the update immediately to mitigate exploitation.]]></description>
-      <pubDate>Tue, 27 Oct 2026 05:40:00 GMT</pubDate>
-      <source url="https://security.paloaltonetworks.com/CVE-2026-111497">Palo Alto Networks PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ZDI-26-811: MailEnable parseObjectResponse XML External Entity Processing Information Disclosure Vulnerability</title>
-      <link>https://secubuzz.com/news/zdi-26-811-mailenable-parseobjectresponse-xml-exte-6f3c97</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zdi-26-811-mailenable-parseobjectresponse-xml-exte-6f3c97</guid>
-      <description><![CDATA[A remote XML External Entity processing flaw in MailEnable’s parseObjectResponse component allows authenticated attackers to read sensitive data from affected installations. The vulnerability, identified as CVE-2026-114552, carries a CVSS score of 6.5 and requires valid credentials for exploitation. MailEnable has released a patch; administrators should apply the update immediately to mitigate the disclosure risk.]]></description>
-      <pubDate>Tue, 27 Oct 2026 05:00:00 GMT</pubDate>
-      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-811/">ZDI Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ZDI-26-810: MailEnable Auth Cleartext Storage Information Disclosure Vulnerability</title>
-      <link>https://secubuzz.com/news/zdi-26-810-mailenable-auth-cleartext-storage-infor-6f3c97</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zdi-26-810-mailenable-auth-cleartext-storage-infor-6f3c97</guid>
-      <description><![CDATA[An unauthenticated information disclosure flaw in MailEnable’s authentication module permits attackers to read stored cleartext credentials from affected systems. The issue, referenced as CVE-2026-114551, has a CVSS score of 5.9 and does not require prior authentication. MailEnable has issued a patch; security teams should update promptly to prevent credential exposure.]]></description>
-      <pubDate>Tue, 27 Oct 2026 05:00:00 GMT</pubDate>
-      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-810/">ZDI Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Enterprise Linux 8.6 rhc Client Security Update Addresses Critical Flaw</title>
-      <link>https://secubuzz.com/news/red-hat-enterprise-linux-8-6-rhc-client-security-u-37da80</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-enterprise-linux-8-6-rhc-client-security-u-37da80</guid>
-      <description><![CDATA[An update for the Red Hat Enterprise Linux 8.6 rhc client fixes a security flaw in Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. Red Hat Product Security rates the issue as Important, with a CVSS base score listed in the CVE references, but no public exploit.]]></description>
-      <pubDate>Tue, 27 Oct 2026 04:35:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:90725">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ChromeOS LTS-150 Update Addresses Multiple CVEs</title>
-      <link>https://secubuzz.com/news/chromeos-lts-150-update-addresses-multiple-cves-732b9d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-lts-150-update-addresses-multiple-cves-732b9d</guid>
-      <description><![CDATA[ChromeOS LTS-150 version 150.0.7871.287 is being rolled out, addressing several CVEs including CVE-2026-103629, CVE-2026-110166, CVE-2026-113279, and CVE-2026-110138. The vulnerabilities involve integer overflows, buffer overflows, memory corruption, and use‑after‑free conditions across Skia, Animation, Accessibility, Payments, Core, Compositing, Video, and ShapeDetection components. Users should install the update promptly to mitigate the identified security flaws.]]></description>
-      <pubDate>Tue, 27 Oct 2026 02:10:25 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/10/long-term-support-channel-update-for_0661547040.html">Google Chrome Releases</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
