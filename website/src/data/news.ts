@@ -11,6 +11,58 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "uefi-flaw-affects-majority-of-servers-5f262a",
+    "title": "UEFI Flaw Affects Majority of Servers",
+    "summary": "A critical UEFI firmware flaw was discovered that compromises the boot integrity of the majority of enterprise servers, enabling attackers to load malicious code during system startup. The vulnerability allows unauthenticated remote exploitation through a malformed firmware update package, potentially granting full system control without user interaction.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
+    "publishedAt": "2026-10-30T14:41:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uefi-flaw-affects-majority-of-servers",
+      "article-5f262a",
+      "5f262a"
+    ]
+  },
+  {
+    "slug": "malicious-claude-code-extension-deploys-ssh-backdo-cf1d91",
+    "title": "Malicious Claude Code Extension Deploys SSH Backdoors",
+    "summary": "A compromised version of Anthropic’s Claude Code VS Code extension was distributed via Cursor’s marketplace for approximately eleven hours, targeting up to 5,000 developers. The malware installs persistent SSH backdoors, enabling attackers to gain remote shell access to affected development machines. Users should uninstall the extension immediately and apply security updates to their development environments.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+    "publishedAt": "2026-10-30T14:36:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-claude-code-extension-deploys-ssh-backdo",
+      "article-cf1d91",
+      "cf1d91",
+      "malicious-claude-code-extension-deploys-ssh-backdoors"
+    ]
+  },
+  {
+    "slug": "cloudflare-one-enables-private-origin-services-1e255d",
+    "title": "Cloudflare One Enables Private Origin Services",
+    "summary": "Cloudflare One now offers public traffic routing to private origins, integrating WAF, bot management, caching, and Workers for all customers. The service expands Cloudflare’s edge capabilities, allowing secure, scalable access to internal applications. Users can enable the feature through the Cloudflare dashboard without additional configuration.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/private-origins-public-to-private/",
+    "publishedAt": "2026-10-30T14:23:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-one-enables-private-origin-services",
+      "article-1e255d",
+      "1e255d"
+    ]
+  },
+  {
     "slug": "ss7-and-diameter-signaling-exploits-enable-phone-t-1a6762",
     "title": "SS7 and Diameter Signaling Exploits Enable Phone Tracking",
     "summary": "Flaws in SS7 and Diameter signaling protocols allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising devices. The root cause is the trust model between mobile networks, enabling remote exploitation without device compromise. Vendors should deploy network-level mitigations and adopt secure signaling practices to defend against these attacks.",
@@ -6449,60 +6501,6 @@ export const news: NewsBrief[] = [
       "ubuntu-26-10-libsoup-vulnerabilities-fixed",
       "article-7fc9c0",
       "7fc9c0"
-    ]
-  },
-  {
-    "slug": "marvell-microsoft-and-oracle-standardize-fips-140-722b58",
-    "title": "Marvell, Microsoft, and Oracle Standardize FIPS 140-3 Level 3 HSM for Data Centers",
-    "summary": "Marvell, Microsoft, and Oracle collaborate to standardize NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure. The initiative aims to unify hardware security modules, ensuring consistent cryptographic protection across vendors and reducing configuration drift. Stakeholders should adopt the standardized HSM design, validate compliance with FIPS 140-3, and monitor firmware updates for security patches.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
-    "publishedAt": "2026-10-21T20:14:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "marvell-microsoft-and-oracle-standardize-fips-140",
-      "article-722b58",
-      "722b58",
-      "marvell-microsoft-and-oracle-standardize-fips-140-3-level-3-"
-    ]
-  },
-  {
-    "slug": "dlp-systems-detect-data-loss-only-after-it-occurs-1a7745",
-    "title": "DLP Systems Detect Data Loss Only After It Occurs, Survey Shows",
-    "summary": "A recent Cloud Security Alliance survey reveals that only 16% of respondents experienced data loss prevention (DLP) blocking incidents before data left the organization. The findings indicate that most DLP deployments fail to intercept exfiltration in real time, allowing data to escape unnoticed. Organizations should evaluate DLP policies, enforce stricter monitoring, and integrate real‑time anomaly detection to improve pre‑emptive protection.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
-    "publishedAt": "2026-10-21T20:03:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dlp-systems-detect-data-loss-only-after-it-occurs",
-      "article-1a7745",
-      "1a7745",
-      "dlp-systems-detect-data-loss-only-after-it-occurs-survey-sho"
-    ]
-  },
-  {
-    "slug": "whatsapp-chatbot-suppressed-privacy-regulator-guid-1b403a",
-    "title": "WhatsApp Chatbot Suppressed Privacy Regulator Guidance",
-    "summary": "WhatsApp’s chatbot received hidden directives that prevented it from recommending privacy regulators to users attempting to delete accounts. The manipulation exploits a logic flaw in the bot’s instruction parsing, allowing malicious actors to suppress compliance disclosures without triggering detection. WhatsApp has not released a patch; security teams should monitor for similar instruction tampering and enforce stricter input validation.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators",
-    "publishedAt": "2026-10-21T18:49:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "whatsapp-chatbot-suppressed-privacy-regulator-guid",
-      "article-1b403a",
-      "1b403a",
-      "whatsapp-chatbot-suppressed-privacy-regulator-guidance"
     ]
   }
 ];

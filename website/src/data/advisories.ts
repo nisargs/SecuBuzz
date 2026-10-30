@@ -2,6 +2,80 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-119284",
+    "slug": "cve-2026-119284",
+    "vendor": "Pip",
+    "product": "joserfc",
+    "name": "joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "joserfc 1.7.4 defines compact-JWS header, payload, and signature limits, but calls value.split(b\".\") before validating them. Python bytes.split() copies the attacker-controlled segments, so the current guard allocates roughly one complete payload before rejecting it.",
+    "requiredAction": "Upgrade joserfc to version 1.7.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9pg5-8c7x-5hfx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119284"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119283",
+    "slug": "cve-2026-119283",
+    "vendor": "Pip",
+    "product": "joserfc",
+    "name": "joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "joserfc.jwe.decrypt_json(), the library's public parser for JWE General JSON Serialization, accepts an attacker-controlled recipients array of unbounded length and performs one full private-key decryption operation (decrypt_cek) for every recipient present in the input, with no cap on recipient count.",
+    "requiredAction": "Upgrade joserfc to version 1.7.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jpxq-7h8p-2q76"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119283"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-f3fj-9625-rv3m",
+    "slug": "ghsa-f3fj-9625-rv3m",
+    "vendor": "Go",
+    "product": "soft-serve · charmbracelet",
+    "name": "charmbracelet/soft-serve: Race in `SetPrivate` leaves a private repository readable by unauthenticated users",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "Soft Serve cached repository records in memory with no expiry, and trusted the cached record for every access check. SetPrivate cleared the cached record before it saved the new visibility, and not afterwards. A request that arrived between the two read the old, public record from the database and cached it after the change was saved.",
+    "requiredAction": "Upgrade soft-serve · charmbracelet to version 0.12.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f3fj-9625-rv3m"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-fgxm-5hvv-x4vh",
     "slug": "ghsa-fgxm-5hvv-x4vh",
     "vendor": "Go",
@@ -1291,84 +1365,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115919"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115917",
-    "slug": "cve-2026-115917",
-    "vendor": "Pip",
-    "product": "vllm",
-    "name": "vLLM: Permissive default CORS origins allow cross-origin requests to the vLLM HTTP server",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 3.4,
-    "severity": "Low",
-    "cwe": "CWE-942",
-    "ransomware": false,
-    "description": "The OpenAI-compatible server registers Starlette CORSMiddleware with allowed_origins defaulting to [\"*\"], and performs no authentication unless --api-key (or VLLM_API_KEY) is configured. A web page on any origin can send requests to a vLLM server that the victim's browser can reach (for example localhost or an internal/VPN address) and read the responses.",
-    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vvpg-rrww-wpmh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115917"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115913",
-    "slug": "cve-2026-115913",
-    "vendor": "Pip",
-    "product": "vllm",
-    "name": "vLLM: Phi-4 multimodal audio encoder materializes and retains full attention matrices: a single max-length audio OOM-crashes the vLLM engine",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "The Phi-4 multimodal audio encoder (phi4mm_audio.py / phi4mm_utils.py) runs its conformer attention in eager mode by default: the official HF config of microsoft/Phi-4-multimodal-instruct does not set use_pt_scaled_dot_product_attention, so the default False applies (phi4mm_audio.py:166, :876; phi4mm_utils.py:1669).",
-    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8397-8qf6-f2gm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115913"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115914",
-    "slug": "cve-2026-115914",
-    "vendor": "Pip",
-    "product": "vllm",
-    "name": "vLLM DeepSeek-OCR image processing vulnerable to denial of service",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-617",
-    "ransomware": false,
-    "description": "Any vLLM deployment serving a model of the DeepSeek-OCR family — deepseek-ai/DeepSeek-OCR, deepseek-ai/DeepSeek-OCR-2, or baidu/Unlimited-OCR (whose UnlimitedOCRForCausalLM subclasses DeepseekOCRForCausalLM) — can be killed by a single unauthenticated chat request carrying an ordinary, schema-valid PNG image, under completely default server configuration.",
-    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gq5q-89c7-vhvx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115914"
       }
     ],
     "source": "GITHUB"
