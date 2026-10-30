@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 21:45:12 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 22:44:25 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Anthropic Exploits Kernel Root on MPTCP Servers</title>
@@ -33,6 +33,33 @@
       <pubDate>Fri, 30 Oct 2026 19:24:14 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93077">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Resolve Retailer Card Data Compromised</title>
+      <link>https://secubuzz.com/news/resolve-retailer-card-data-compromised-4250d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/resolve-retailer-card-data-compromised-4250d4</guid>
+      <description><![CDATA[A hack exposed customer payment card numbers at Resolve, a fashion retailer targeting Millennials and Gen Z. Attackers accessed stored card data through an undisclosed vulnerability in the retailer’s payment processing system, potentially allowing credential theft. Resolve has notified affected customers and is coordinating with payment processors to mitigate further exposure.]]></description>
+      <pubDate>Fri, 30 Oct 2026 19:00:00 GMT</pubDate>
+      <source url="https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ChromeOS Dev Channel Updated to 16868.5.0</title>
+      <link>https://secubuzz.com/news/chromeos-dev-channel-updated-to-16868-5-0-7a43a5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-dev-channel-updated-to-16868-5-0-7a43a5</guid>
+      <description><![CDATA[Google released ChromeOS Dev channel update to OS version 16868.5.0, including Browser 158.0.8127.5, for most ChromeOS devices. The update addresses multiple stability and security issues identified in the previous build, ensuring improved kernel and application integrity. Users on Dev channel should apply the update immediately to maintain system security posture.]]></description>
+      <pubDate>Fri, 30 Oct 2026 18:49:40 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/10/dev-channel-update-for-chromeos_0448562495.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CVE-2026-119117 Exposes AWS Credentials in Logs</title>
+      <link>https://secubuzz.com/news/cve-2026-119117-exposes-aws-credentials-in-logs-59cb37</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119117-exposes-aws-credentials-in-logs-59cb37</guid>
+      <description><![CDATA[CVE-2026-119117 allows local users to retrieve AWS credentials from logs and process arguments in Amazon Kinesis Producer Library for Java before 1.0.8 when DEBUG logging is enabled. The flaw enables credential disclosure through log files and command-line arguments, compromising application security. AWS recommends upgrading to version 1.0.8 or later to remediate.]]></description>
+      <pubDate>Fri, 30 Oct 2026 18:18:40 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Arctic Wolf Releases 2026 Agentic Security Operations Report</title>
@@ -428,33 +455,6 @@
       <description><![CDATA[Hackers deployed INJ3CTOR3 malware against FreePBX servers, extracting SIP trunk passwords, database credentials, and mail relay logins. The tool harvests configuration files, enabling persistent fraud even after system rebuilds, and extends damage beyond the compromised host. FreePBX has issued a patch; administrators should update firmware and enforce credential rotation immediately.]]></description>
       <pubDate>Thu, 29 Oct 2026 11:09:22 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-attack-freepbx-servers/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>DHS Personnel Records Leak Exposes ICE Operations</title>
-      <link>https://secubuzz.com/news/dhs-personnel-records-leak-exposes-ice-operations-7d88db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dhs-personnel-records-leak-exposes-ice-operations-7d88db</guid>
-      <description><![CDATA[A data breach exposed records of over 41,000 Department of Homeland Security employees and contractors, revealing contact details, assignments, and links to undercover ICE operations. The leak, distributed publicly, provides an internal view of teams and reporting lines, potentially enabling targeted espionage or social engineering. DHS should immediately revoke compromised credentials, conduct a forensic audit, and notify affected personnel.]]></description>
-      <pubDate>Thu, 29 Oct 2026 03:13:31 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/dhs-data-leak/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cisco SD‑WAN Controllers Vulnerability (CVE‑2026‑20127) Allows Authentication Bypass and Potential KeyDrift Deployment</title>
-      <link>https://secubuzz.com/news/cisco-sd-wan-controllers-vulnerability-cve-2026-20-78eefb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-sd-wan-controllers-vulnerability-cve-2026-20-78eefb</guid>
-      <description><![CDATA[Cisco SD‑WAN Controllers suffered an authentication‑bypass flaw (CVE‑2026‑20127) that let attackers gain privileged access. The defect allowed unauthenticated remote requests to bypass login, enabling manipulation of NETCONF configurations and potential deployment of the KeyDrift malware framework. Cisco issued an out‑of‑band patch; administrators should apply it immediately and monitor controller logs for signs of compromise.]]></description>
-      <pubDate>Thu, 29 Oct 2026 01:54:35 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Catalyst+SD-WAN+Controller+Authentication+Bypass+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Keystone Wallets Key Theft Recall</title>
-      <link>https://secubuzz.com/news/keystone-wallets-key-theft-recall-5e44c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/keystone-wallets-key-theft-recall-5e44c0</guid>
-      <description><![CDATA[Keystone hardware wallets suffered key theft via compromised firmware, exposing private keys to attackers. The flaw originates from insecure bootloader validation, allowing malicious firmware to be installed during manufacturing, leading to credential compromise. Keystone has issued a recall and firmware update; users must replace devices and apply the new secure bootloader patch.]]></description>
-      <pubDate>Thu, 29 Oct 2026 00:50:37 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/keystone-to-destroy-18-835-hardware-wallets-after-hacke">CyberNews AI</source>
       <category>Vulnerability</category>
     </item>
   </channel>

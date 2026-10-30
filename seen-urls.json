@@ -3200,5 +3200,9 @@
   "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
   "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
   "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor",
-  "https://access.redhat.com/errata/RHSA-2026:93077"
+  "https://access.redhat.com/errata/RHSA-2026:93077",
+  "https://socket.dev/blog/threat-intel-campaign-impact",
+  "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+  "https://chromereleases.googleblog.com/2026/10/dev-channel-update-for-chromeos_0448562495.html",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/"
 ]

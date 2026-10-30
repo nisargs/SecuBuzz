@@ -39,6 +39,45 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+    "sourceUrl": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+    "title": "Resolve Retailer Card Data Compromised",
+    "headline": "Resolve Retailer Card Data Compromised",
+    "summary": "A hack exposed customer payment card numbers at Resolve, a fashion retailer targeting Millennials and Gen Z. Attackers accessed stored card data through an undisclosed vulnerability in the retailer’s payment processing system, potentially allowing credential theft. Resolve has notified affected customers and is coordinating with payment processors to mitigate further exposure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-30T19:00:00.000Z",
+    "url": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+    "additionalSources": []
+  },
+  {
+    "id": "https://chromereleases.googleblog.com/2026/10/dev-channel-update-for-chromeos_0448562495.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/dev-channel-update-for-chromeos_0448562495.html",
+    "title": "ChromeOS Dev Channel Updated to 16868.5.0",
+    "headline": "ChromeOS Dev Channel Updated to 16868.5.0",
+    "summary": "Google released ChromeOS Dev channel update to OS version 16868.5.0, including Browser 158.0.8127.5, for most ChromeOS devices. The update addresses multiple stability and security issues identified in the previous build, ensuring improved kernel and application integrity. Users on Dev channel should apply the update immediately to maintain system security posture.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-30T18:49:40.728Z",
+    "url": "https://chromereleases.googleblog.com/2026/10/dev-channel-update-for-chromeos_0448562495.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/",
+    "title": "CVE-2026-119117 Exposes AWS Credentials in Logs",
+    "headline": "CVE-2026-119117 Exposes AWS Credentials in Logs",
+    "summary": "CVE-2026-119117 allows local users to retrieve AWS credentials from logs and process arguments in Amazon Kinesis Producer Library for Java before 1.0.8 when DEBUG logging is enabled. The flaw enables credential disclosure through log files and command-line arguments, compromising application security. AWS recommends upgrading to version 1.0.8 or later to remediate.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-10-30T18:18:40.000Z",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/",
+    "additionalSources": []
+  },
+  {
     "id": "https://arcticwolf.com/resources/report-au/agentic-security-operations-report/",
     "sourceUrl": "https://arcticwolf.com/resources/report-au/agentic-security-operations-report/",
     "title": "Arctic Wolf Releases 2026 Agentic Security Operations Report",
@@ -4660,44 +4699,5 @@
         "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/abstract-links-automated-response-actions-directly-to-siem-detection-rules/"
       }
     ]
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/10/woman-faces-years-in-prison-over-a-cash-app-account-she-says-she-never-opened",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/woman-faces-years-in-prison-over-a-cash-app-account-she-says-she-never-opened",
-    "title": "Cash App Account Created with Stolen Identity Leads to Prison Sentence",
-    "headline": "Cash App Account Created with Stolen Identity Leads to Prison Sentence",
-    "summary": "A woman faces up to six years in prison after a Cash App account was opened using her stolen identity. The incident illustrates credential theft via social engineering, with attackers creating an unauthorized account to access financial services. Cash App has not released a patch, but users should enable two‑factor authentication and monitor account activity for unauthorized changes.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-22T11:27:07.000Z",
-    "url": "https://www.malwarebytes.com/blog/news/2026/10/woman-faces-years-in-prison-over-a-cash-app-account-she-says-she-never-opened",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/",
-    "title": "Broadcom Launches Arcot Scam Defense for 3‑D Secure Authentication",
-    "headline": "Broadcom Launches Arcot Scam Defense for 3‑D Secure Authentication",
-    "summary": "Broadcom announced Arcot Scam Defense, a feature of Arcot that blocks social engineering fraud during card‑not‑present transactions. The solution targets AI‑enhanced fraud attempts by intercepting malicious interactions before they reach the payment system. Financial institutions can enable the feature to strengthen 3‑D Secure authentication against evolving scam tactics.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-22T11:18:09.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/atlassian-security-update/",
-    "sourceUrl": "https://cybersecuritynews.com/atlassian-security-update/",
-    "title": "Atlassian Issues Security Patch for 176 Vulnerabilities in Jira and Confluence",
-    "headline": "Atlassian Issues Security Patch for 176 Vulnerabilities in Jira and Confluence",
-    "summary": "Atlassian’s October 2026 bulletin addresses 176 flaw entries across Jira, Confluence, Bamboo, Bitbucket, and Crowd, including 162 high‑severity and 14 critical third‑party issues. The update fixes vulnerabilities that could allow remote code execution or privilege escalation in these collaboration tools. Customers are urged to apply the latest releases immediately to eliminate exploitable weaknesses.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-22T10:12:18.000Z",
-    "url": "https://cybersecuritynews.com/atlassian-security-update/",
-    "additionalSources": []
   }
 ]

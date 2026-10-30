@@ -65,6 +65,59 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "resolve-retailer-card-data-compromised-4250d4",
+    "title": "Resolve Retailer Card Data Compromised",
+    "summary": "A hack exposed customer payment card numbers at Resolve, a fashion retailer targeting Millennials and Gen Z. Attackers accessed stored card data through an undisclosed vulnerability in the retailer’s payment processing system, potentially allowing credential theft. Resolve has notified affected customers and is coordinating with payment processors to mitigate further exposure.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+    "publishedAt": "2026-10-30T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "resolve-retailer-card-data-compromised",
+      "article-4250d4",
+      "4250d4"
+    ]
+  },
+  {
+    "slug": "chromeos-dev-channel-updated-to-16868-5-0-7a43a5",
+    "title": "ChromeOS Dev Channel Updated to 16868.5.0",
+    "summary": "Google released ChromeOS Dev channel update to OS version 16868.5.0, including Browser 158.0.8127.5, for most ChromeOS devices. The update addresses multiple stability and security issues identified in the previous build, ensuring improved kernel and application integrity. Users on Dev channel should apply the update immediately to maintain system security posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/dev-channel-update-for-chromeos_0448562495.html",
+    "publishedAt": "2026-10-30T18:49:40.728Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-dev-channel-updated-to-16868-5-0",
+      "article-7a43a5",
+      "7a43a5"
+    ]
+  },
+  {
+    "slug": "cve-2026-119117-exposes-aws-credentials-in-logs-59cb37",
+    "title": "CVE-2026-119117 Exposes AWS Credentials in Logs",
+    "summary": "CVE-2026-119117 allows local users to retrieve AWS credentials from logs and process arguments in Amazon Kinesis Producer Library for Java before 1.0.8 when DEBUG logging is enabled. The flaw enables credential disclosure through log files and command-line arguments, compromising application security. AWS recommends upgrading to version 1.0.8 or later to remediate.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/",
+    "publishedAt": "2026-10-30T18:18:40.000Z",
+    "cves": [
+      "CVE-2026-119117"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-119117-exposes-aws-credentials-in-logs",
+      "article-59cb37",
+      "59cb37"
+    ]
+  },
+  {
     "slug": "arctic-wolf-releases-2026-agentic-security-operati-678c5e",
     "title": "Arctic Wolf Releases 2026 Agentic Security Operations Report",
     "summary": "The 2026 Agentic Security Operations Report outlines how agentic AI collaborates with expert analysts to accelerate security investigations. It details operational efficiencies gained through AI-driven threat detection and response workflows. The report is available for download from Arctic Wolf’s website, offering insights into future security operation trends.",
@@ -6437,60 +6490,6 @@ export const news: NewsBrief[] = [
       "article-6c8dee",
       "6c8dee",
       "sentinelone-introduces-singularity-agentic-detection-and-res"
-    ]
-  },
-  {
-    "slug": "cash-app-account-created-with-stolen-identity-lead-20ee7d",
-    "title": "Cash App Account Created with Stolen Identity Leads to Prison Sentence",
-    "summary": "A woman faces up to six years in prison after a Cash App account was opened using her stolen identity. The incident illustrates credential theft via social engineering, with attackers creating an unauthorized account to access financial services. Cash App has not released a patch, but users should enable two‑factor authentication and monitor account activity for unauthorized changes.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/woman-faces-years-in-prison-over-a-cash-app-account-she-says-she-never-opened",
-    "publishedAt": "2026-10-22T11:27:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cash-app-account-created-with-stolen-identity-lead",
-      "article-20ee7d",
-      "20ee7d",
-      "cash-app-account-created-with-stolen-identity-leads-to-priso"
-    ]
-  },
-  {
-    "slug": "broadcom-launches-arcot-scam-defense-for-3-d-secur-451a36",
-    "title": "Broadcom Launches Arcot Scam Defense for 3‑D Secure Authentication",
-    "summary": "Broadcom announced Arcot Scam Defense, a feature of Arcot that blocks social engineering fraud during card‑not‑present transactions. The solution targets AI‑enhanced fraud attempts by intercepting malicious interactions before they reach the payment system. Financial institutions can enable the feature to strengthen 3‑D Secure authentication against evolving scam tactics.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/broadcom-arcot-scam-defense/",
-    "publishedAt": "2026-10-22T11:18:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "broadcom-launches-arcot-scam-defense-for-3-d-secur",
-      "article-451a36",
-      "451a36",
-      "broadcom-launches-arcot-scam-defense-for-3-d-secure-authenti"
-    ]
-  },
-  {
-    "slug": "atlassian-issues-security-patch-for-176-vulnerabil-59fd7a",
-    "title": "Atlassian Issues Security Patch for 176 Vulnerabilities in Jira and Confluence",
-    "summary": "Atlassian’s October 2026 bulletin addresses 176 flaw entries across Jira, Confluence, Bamboo, Bitbucket, and Crowd, including 162 high‑severity and 14 critical third‑party issues. The update fixes vulnerabilities that could allow remote code execution or privilege escalation in these collaboration tools. Customers are urged to apply the latest releases immediately to eliminate exploitable weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/atlassian-security-update/",
-    "publishedAt": "2026-10-22T10:12:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "atlassian-issues-security-patch-for-176-vulnerabil",
-      "article-59fd7a",
-      "59fd7a",
-      "atlassian-issues-security-patch-for-176-vulnerabilities-in-j"
     ]
   }
 ];
