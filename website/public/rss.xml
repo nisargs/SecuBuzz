@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 17:45:42 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 18:43:21 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Arctic Wolf Releases 2026 Agentic Security Operations Report</title>
+      <link>https://secubuzz.com/news/arctic-wolf-releases-2026-agentic-security-operati-678c5e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-releases-2026-agentic-security-operati-678c5e</guid>
+      <description><![CDATA[The 2026 Agentic Security Operations Report outlines how agentic AI collaborates with expert analysts to accelerate security investigations. It details operational efficiencies gained through AI-driven threat detection and response workflows. The report is available for download from Arctic Wolf’s website, offering insights into future security operation trends.]]></description>
+      <pubDate>Fri, 30 Oct 2026 17:23:28 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/report-au/agentic-security-operations-report/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical IPA Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-ipa-security-update-37d93d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-ipa-security-update-37d93d</guid>
+      <description><![CDATA[Red Hat released a critical security update for the IPA component on Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple high‑severity vulnerabilities that could allow remote code execution or privilege escalation. Red Hat recommends immediate application of the patch to mitigate potential exploitation.]]></description>
+      <pubDate>Fri, 30 Oct 2026 17:04:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93071">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>UEFI Flaw Affects Majority of Servers</title>
       <link>https://secubuzz.com/news/uefi-flaw-affects-majority-of-servers-5f262a</link>
@@ -71,6 +89,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Microsoft Edge Elevation of Privilege CVE Fixed</title>
+      <link>https://secubuzz.com/news/microsoft-edge-elevation-of-privilege-cve-fixed-745a62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-elevation-of-privilege-cve-fixed-745a62</guid>
+      <description><![CDATA[Microsoft Edge (Chromium-based) suffered an elevation of privilege flaw identified as CVE-2026-69446, exploitable via local user context. The vulnerability allowed a local attacker to gain higher privileges by manipulating internal privilege checks, with a CVSS score of 7.8, but no public exploit was reported.]]></description>
+      <pubDate>Fri, 30 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69446">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Kairos Botnet Exploits Passwordless Telnet on Linux</title>
       <link>https://secubuzz.com/news/kairos-botnet-exploits-passwordless-telnet-on-linu-44a6df</link>
       <guid isPermaLink="true">https://secubuzz.com/news/kairos-botnet-exploits-passwordless-telnet-on-linu-44a6df</guid>
@@ -105,6 +132,15 @@
       <pubDate>Fri, 30 Oct 2026 13:00:32 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/">BleepingComputer</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>UK Introduces Four Age‑Verification Methods</title>
+      <link>https://secubuzz.com/news/uk-introduces-four-age-verification-methods-3393c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-introduces-four-age-verification-methods-3393c8</guid>
+      <description><![CDATA[The UK government announced four age‑verification methods to enforce the under‑16 social media ban, including photo ID, bank checks, face scans, and other options. Ofcom outlined these options to ensure compliance with the new regulatory framework, aiming to prevent under‑age access to online platforms.]]></description>
+      <pubDate>Fri, 30 Oct 2026 13:00:02 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/10/photo-id-bank-checks-face-scan-the-uks-age-check-options">Malwarebytes Labs</source>
+      <category>General</category>
     </item>
     <item>
       <title>GitLab CVE-2026-97229 Enables Remote Code Execution on Alpine</title>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 21:32:02 GMT</pubDate>
       <source url="https://blog.talosintelligence.com/uat-11473-keydrift/">Cisco Talos</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Federal Court Rules West Virginia Data Shield Law Unconstitutional</title>
-      <link>https://secubuzz.com/news/federal-court-rules-west-virginia-data-shield-law-7fd6e6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/federal-court-rules-west-virginia-data-shield-law-7fd6e6</guid>
-      <description><![CDATA[A federal appellate court panel ruled West Virginia's Daniel's Law, which shielded personal data of police and public officials, unconstitutional. The decision removes the legal barrier preventing public disclosure of personal information held by state agencies regarding law enforcement personnel. The ruling enables public records requests targeting personal data of public safety officials in West Virginia.]]></description>
-      <pubDate>Wed, 28 Oct 2026 20:50:00 GMT</pubDate>
-      <source url="https://therecord.media/west-virginia-daniels-law-struck-down-appellate-court">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Law Enforcement Seizes Virtualine Bulletproof Hosting Domain</title>
-      <link>https://secubuzz.com/news/law-enforcement-seizes-virtualine-bulletproof-host-8c1e6f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/law-enforcement-seizes-virtualine-bulletproof-host-8c1e6f</guid>
-      <description><![CDATA[U.S. law enforcement seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. The service provided infrastructure to ransomware operators and other cybercriminals seeking to evade takedown efforts. The seizure disrupts a known channel for illicit hosting but does not eliminate the underlying criminal operations.]]></description>
-      <pubDate>Wed, 28 Oct 2026 20:47:22 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Japan Airlines Confirms Customer Data Theft Incident</title>
-      <link>https://secubuzz.com/news/japan-airlines-confirms-customer-data-theft-incide-482a55</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/japan-airlines-confirms-customer-data-theft-incide-482a55</guid>
-      <description><![CDATA[Japan Airlines confirmed a data breach in which hackers stole passport numbers, frequent flyer numbers, email addresses, and phone numbers for approximately 2,000 customers. The incident occurred amid a broader wave of cyber incidents affecting Japanese organizations. Affected individuals face identity theft risk from exposed government-issued identifiers and personal contact details.]]></description>
-      <pubDate>Wed, 28 Oct 2026 20:33:00 GMT</pubDate>
-      <source url="https://therecord.media/japan-airlines-warns-of-breach-country-grapples-with-incidents">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cisco Pre-Announces November Advisories for Three Products</title>
-      <link>https://secubuzz.com/news/cisco-pre-announces-november-advisories-for-three-76d307</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-pre-announces-november-advisories-for-three-76d307</guid>
-      <description><![CDATA[Cisco PSIRT will publish security advisories on November 4, 2026, addressing vulnerabilities in Identity Services Engine, UCS Central Software, and Unified Communications Manager. The advisories include fixed software releases, and no further security-hardening advisories are planned before January 20, 2027. Cisco recommends customers upgrade to the fixed versions specified in the advisories to remediate the disclosed flaws.]]></description>
-      <pubDate>Wed, 28 Oct 2026 20:00:00 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+November+4%2C+2026%2C+Security+Advisories%26vs_k%3D1">Cisco PSIRT</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

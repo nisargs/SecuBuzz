@@ -11,6 +11,41 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "arctic-wolf-releases-2026-agentic-security-operati-678c5e",
+    "title": "Arctic Wolf Releases 2026 Agentic Security Operations Report",
+    "summary": "The 2026 Agentic Security Operations Report outlines how agentic AI collaborates with expert analysts to accelerate security investigations. It details operational efficiencies gained through AI-driven threat detection and response workflows. The report is available for download from Arctic Wolf’s website, offering insights into future security operation trends.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/report-au/agentic-security-operations-report/",
+    "publishedAt": "2026-10-30T17:23:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arctic-wolf-releases-2026-agentic-security-operati",
+      "article-678c5e",
+      "678c5e",
+      "arctic-wolf-releases-2026-agentic-security-operations-report"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-ipa-security-update-37d93d",
+    "title": "Red Hat Issues Critical IPA Security Update",
+    "summary": "Red Hat released a critical security update for the IPA component on Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple high‑severity vulnerabilities that could allow remote code execution or privilege escalation. Red Hat recommends immediate application of the patch to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93071",
+    "publishedAt": "2026-10-30T17:04:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-ipa-security-update",
+      "article-37d93d",
+      "37d93d"
+    ]
+  },
+  {
     "slug": "uefi-flaw-affects-majority-of-servers-5f262a",
     "title": "UEFI Flaw Affects Majority of Servers",
     "summary": "A critical UEFI firmware flaw was discovered that compromises the boot integrity of the majority of enterprise servers, enabling attackers to load malicious code during system startup. The vulnerability allows unauthenticated remote exploitation through a malformed firmware update package, potentially granting full system control without user interaction.",
@@ -132,6 +167,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-edge-elevation-of-privilege-cve-fixed-745a62",
+    "title": "Microsoft Edge Elevation of Privilege CVE Fixed",
+    "summary": "Microsoft Edge (Chromium-based) suffered an elevation of privilege flaw identified as CVE-2026-69446, exploitable via local user context. The vulnerability allowed a local attacker to gain higher privileges by manipulating internal privilege checks, with a CVSS score of 7.8, but no public exploit was reported.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69446",
+    "publishedAt": "2026-10-30T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-69446"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-elevation-of-privilege-cve-fixed",
+      "article-745a62",
+      "745a62"
+    ]
+  },
+  {
     "slug": "kairos-botnet-exploits-passwordless-telnet-on-linu-44a6df",
     "title": "Kairos Botnet Exploits Passwordless Telnet on Linux",
     "summary": "The Kairos botnet spreads to Linux devices by exploiting Telnet services that allow root login without passwords. The flaw enables remote code execution, allowing attackers to install a Go‑based DDoS agent. Administrators must disable Telnet, enforce strong authentication, and apply timely security patches to prevent infection.",
@@ -198,6 +252,23 @@ export const news: NewsBrief[] = [
       "gitlab-cve-2026-97229-exploited-in-wild",
       "article-6a6bed",
       "6a6bed"
+    ]
+  },
+  {
+    "slug": "uk-introduces-four-age-verification-methods-3393c8",
+    "title": "UK Introduces Four Age‑Verification Methods",
+    "summary": "The UK government announced four age‑verification methods to enforce the under‑16 social media ban, including photo ID, bank checks, face scans, and other options. Ofcom outlined these options to ensure compliance with the new regulatory framework, aiming to prevent under‑age access to online platforms.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/photo-id-bank-checks-face-scan-the-uks-age-check-options",
+    "publishedAt": "2026-10-30T13:00:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-introduces-four-age-verification-methods",
+      "article-3393c8",
+      "3393c8"
     ]
   },
   {
@@ -6421,76 +6492,6 @@ export const news: NewsBrief[] = [
       "article-316c85",
       "316c85",
       "hackers-exploit-siemens-software-center-dll-side-loading-fla"
-    ]
-  },
-  {
-    "slug": "oracle-releases-patch-for-1-200-vulnerabilities-10-80c479",
-    "title": "Oracle Releases Patch for 1,200+ Vulnerabilities, 100 Critical, in Fusion Middleware",
-    "summary": "Oracle disclosed a patch update addressing over 1,200 vulnerabilities, including 100 rated critical, affecting Oracle Fusion Middleware via CPU-based exploits. The flaw set includes multiple remote code execution paths triggered by malformed CPU instructions, leading to potential system compromise. Oracle has released patches for all affected products; security teams should apply the updates immediately and verify configuration compliance.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
-    "publishedAt": "2026-10-22T07:38:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-releases-patch-for-1-200-vulnerabilities-10",
-      "article-80c479",
-      "80c479",
-      "oracle-releases-patch-for-1-200-vulnerabilities-100-critical"
-    ]
-  },
-  {
-    "slug": "imperial-college-researchers-expose-speech-to-text-6b71c1",
-    "title": "Imperial College Researchers Expose Speech‑to‑Text Model Manipulation",
-    "summary": "Researchers at Imperial College London discovered that attackers can tamper with speech‑to‑text models during fine‑tuning to produce pre‑selected malicious outputs for a chosen speaker. The manipulation forces AI agents to transcribe a request for $5,000, which sandboxed banking systems then execute, demonstrating a covert credential‑less exploitation vector. Defenders should restrict fine‑tuning access and monitor outputs for anomalous requests.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/research-speech-model-backdoor/",
-    "publishedAt": "2026-10-22T05:00:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "imperial-college-researchers-expose-speech-to-text",
-      "article-6b71c1",
-      "6b71c1",
-      "imperial-college-researchers-expose-speech-to-text-model-man"
-    ]
-  },
-  {
-    "slug": "uae-transitions-50-of-gov-t-services-to-agentic-ai-67f591",
-    "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
-    "summary": "UAE transitioning 50% of government services to agentic AI, aiming to build security foundation. The shift involves integrating AI-driven automation into public service delivery, potentially exposing new attack surfaces but no specific flaw cited. Security teams should monitor AI integration, enforce robust access controls, and conduct continuous risk assessments ongoing.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
-    "publishedAt": "2026-10-22T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uae-transitions-50-of-gov-t-services-to-agentic-ai",
-      "article-67f591",
-      "67f591"
-    ]
-  },
-  {
-    "slug": "ai-coding-boom-exposes-cracks-in-cloud-development-52a630",
-    "title": "AI Coding Boom Exposes Cracks in Cloud Development",
-    "summary": "Developers report bugs, testing delays, and disruptions in shared cloud environments as AI increases code volume, per LocalStack’s 2026 State of AI in Cloud Development report. The surge, with 65% of teams generating twice as much code and 32% five times more, amplifies testing workloads and resource contention.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/localstack-ai-code-testing-report/",
-    "publishedAt": "2026-10-22T04:30:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-coding-boom-exposes-cracks-in-cloud-development",
-      "article-52a630",
-      "52a630"
     ]
   }
 ];
