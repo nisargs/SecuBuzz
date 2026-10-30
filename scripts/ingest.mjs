@@ -2446,38 +2446,101 @@ for (const candidate of newCandidates) {
 }
 
 /*
- * Sort chronologically: newest articles first.
+ * THREAT-AWARE PRIORITY SCORING & ANTI-STARVATION SELECTION
+ */
+function calculateCandidatePriority(candidate) {
+  const title = (candidate.title || '').toLowerCase();
+  const desc = (candidate.description || '').toLowerCase();
+  const text = `${title} ${desc}`;
+
+  let score = 10; // Baseline score for valid cybersecurity stories
+
+  // Tier 1 (+50): Active in-the-wild zero-days, RCE, kernel, auth bypass, CVSS 9/10, hardware implants
+  if (
+    /actively exploit|in the wild|under attack|zero-?day|0-?day|kernel|remote code execution|\brce\b|auth(?:orization|entication)? bypass|privilege escalation|cvss (?:9|10)|supply chain|hardware implant/i.test(text)
+  ) {
+    score += 50;
+  }
+
+  // Tier 2 (+25): Known CVEs, critical/high flaws, ransomware, breaches, backdoors, malware
+  if (
+    /cve-202\d-\d+|\bflaw\b|\bvulnerabilit(?:y|ies)\b|\bbreach\b|\bransomware\b|\bbackdoor\b|\bmalware\b|\bexploit\b|\bhackers?\b/i.test(text)
+  ) {
+    score += 25;
+  }
+
+  // Demote opinion pieces, advice, surveys, or podcasts that bypass initial filter
+  if (
+    /survey|report reveals|webinar|how to|why urgent|opinions?|predictions?|podcast/i.test(title)
+  ) {
+    score -= 15;
+  }
+
+  return score;
+}
+
+for (const candidate of filteredCandidates) {
+  candidate.priorityScore = calculateCandidatePriority(candidate);
+}
+
+/*
+ * Sort primarily by Threat Priority Score (descending),
+ * then chronologically by publication time (newest first).
  */
 filteredCandidates.sort((a, b) => {
+  if (b.priorityScore !== a.priorityScore) {
+    return b.priorityScore - a.priorityScore;
+  }
   const timeA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
   const timeB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
   return (Number.isFinite(timeB) ? timeB : 0) - (Number.isFinite(timeA) ? timeA : 0);
 });
 
 /*
- * Ensure multi-source diversity: cap at 2 articles per source in first pass,
- * then fill remaining capacity up to MAX_NEW_CANDIDATES.
+ * Multi-Source Diversity with Anti-Starvation Backlog Drain:
+ * - Pass 1: Allocate up to 30 candidates from high-priority & breaking items (newest first),
+ *   allowing up to 5 for high-volume newsrooms on critical days, 2-3 for others.
+ * - Pass 2: Fill the remaining slots up to MAX_NEW_CANDIDATES (up to 10 slots) with the OLDEST
+ *   unseen valid candidates (FIFO backlog drain) so older stories never starve.
  */
 const sourceCounts = new Map();
-const diversifiedCandidates = [];
-const remainingPool = [];
+const selectedCandidates = [];
+const deferredPool = [];
 
 for (const candidate of filteredCandidates) {
   const currentCount = sourceCounts.get(candidate.source) || 0;
-  // Primary breaking newsrooms (The Hacker News, BleepingComputer) publish high volumes;
-  // allocate up to 4 candidates in first pass so multi-threat breaking days are not starved.
   const isHighVolumeSource = candidate.source === 'The Hacker News' || candidate.source === 'BleepingComputer';
-  const maxPerSource = isHighVolumeSource ? 4 : 2;
-  if (currentCount < maxPerSource) {
-    diversifiedCandidates.push(candidate);
+  const isHighThreat = candidate.priorityScore >= 60;
+  const maxPerSource = isHighThreat ? (isHighVolumeSource ? 5 : 3) : (isHighVolumeSource ? 4 : 2);
+
+  if (currentCount < maxPerSource && selectedCandidates.length < 30) {
+    selectedCandidates.push(candidate);
     sourceCounts.set(candidate.source, currentCount + 1);
   } else {
-    remainingPool.push(candidate);
+    deferredPool.push(candidate);
   }
 }
 
-const candidatePool = [...diversifiedCandidates, ...remainingPool];
-const selectedCandidates = candidatePool.slice(0, MAX_NEW_CANDIDATES);
+// Pass 2 (Anti-Starvation Drain): Sort deferred pool OLDEST UNSEEN FIRST
+deferredPool.sort((a, b) => {
+  if (b.priorityScore >= 60 && a.priorityScore < 60) return 1;
+  if (a.priorityScore >= 60 && b.priorityScore < 60) return -1;
+  const timeA = a.publishedAt ? new Date(a.publishedAt).getTime() : 0;
+  const timeB = b.publishedAt ? new Date(b.publishedAt).getTime() : 0;
+  return (Number.isFinite(timeA) ? timeA : 0) - (Number.isFinite(timeB) ? timeB : 0);
+});
+
+for (const candidate of deferredPool) {
+  if (selectedCandidates.length >= MAX_NEW_CANDIDATES) break;
+  const currentCount = sourceCounts.get(candidate.source) || 0;
+  const isHighVolumeSource = candidate.source === 'The Hacker News' || candidate.source === 'BleepingComputer';
+  const maxBacklogPerSource = isHighVolumeSource ? 7 : 4;
+
+  if (currentCount < maxBacklogPerSource) {
+    selectedCandidates.push(candidate);
+    sourceCounts.set(candidate.source, currentCount + 1);
+  }
+}
 
 console.log(
   `Selected ${selectedCandidates.length} candidates for processing.`,
