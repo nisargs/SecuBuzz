@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 03:44:04 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 04:44:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ISC Stormcast Released for Friday 30 Oct 2026</title>
+      <link>https://secubuzz.com/news/isc-stormcast-released-for-friday-30-oct-2026-57dd7e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-released-for-friday-30-oct-2026-57dd7e</guid>
+      <description><![CDATA[ISC released its Friday 30 October 2026 stormcast, summarizing global threat activity. The briefing covered emerging malware campaigns, phishing trends, and infrastructure attacks observed during the week, offering analysts a consolidated view of the threat landscape. Subscribers can access the full podcast and related threat data via the ISC website for immediate situational awareness.]]></description>
+      <pubDate>Fri, 30 Oct 2026 03:30:17 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33472">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Binance Investigates $5.8B Crypto Theft</title>
       <link>https://secubuzz.com/news/binance-investigates-5-8b-crypto-theft-93b9d9</link>
@@ -447,15 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 16:07:03 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33466">SANS Internet Storm Center</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Volt Typhoon Employs Silent Train Zero-Day Framework</title>
-      <link>https://secubuzz.com/news/volt-typhoon-employs-silent-train-zero-day-framewo-e7d5a3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/volt-typhoon-employs-silent-train-zero-day-framewo-e7d5a3</guid>
-      <description><![CDATA[Chinese state-sponsored group Volt Typhoon has deployed the Silent Train framework, leveraging rotating device chains to deliver zero-day attacks against high-value targets. The framework exploits a vulnerability identified as CVE-2024-39717, enabling attackers to pivot across compromised devices. Security teams should monitor for anomalous device activity and apply mitigations for the referenced CVE.]]></description>
-      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/">BleepingComputer</source>
-      <category>Nation State</category>
     </item>
   </channel>
 </rss>

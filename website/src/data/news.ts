@@ -11,6 +11,23 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "isc-stormcast-released-for-friday-30-oct-2026-57dd7e",
+    "title": "ISC Stormcast Released for Friday 30 Oct 2026",
+    "summary": "ISC released its Friday 30 October 2026 stormcast, summarizing global threat activity. The briefing covered emerging malware campaigns, phishing trends, and infrastructure attacks observed during the week, offering analysts a consolidated view of the threat landscape. Subscribers can access the full podcast and related threat data via the ISC website for immediate situational awareness.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33472",
+    "publishedAt": "2026-10-30T03:30:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-released-for-friday-30-oct-2026",
+      "article-57dd7e",
+      "57dd7e"
+    ]
+  },
+  {
     "slug": "binance-investigates-5-8b-crypto-theft-93b9d9",
     "title": "Binance Investigates $5.8B Crypto Theft",
     "summary": "Binance is investigating a potential breach that may have stolen up to $5.8 billion in digital assets, potentially the largest crypto hack ever. The incident involved unauthorized access to user wallets and exchange infrastructure, with attackers exploiting unknown vulnerabilities or credential compromise. Binance has issued a statement and is working with law enforcement to contain the breach and recover assets.",
@@ -6493,24 +6510,6 @@ export const news: NewsBrief[] = [
       "clickfix-exploits-leveraging-ai-installers-surge",
       "article-341ff6",
       "341ff6"
-    ]
-  },
-  {
-    "slug": "nvidia-introduces-openshell-architecture-to-contai-6a71bb",
-    "title": "NVIDIA Introduces OpenShell Architecture to Contain AI Agents",
-    "summary": "NVIDIA’s OpenShell Reference Architecture targets AI agents operating across enterprise infrastructure and local systems, integrating security software with dedicated hardware to enforce operational boundaries. The design enables businesses to monitor agent behavior and halt activities that exceed predefined limits, mitigating potential misuse. NVIDIA recommends deploying the architecture to maintain control over AI workloads and safeguard infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/21/nvidia-openshell-reference-architecture/",
-    "publishedAt": "2026-10-21T13:52:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-introduces-openshell-architecture-to-contai",
-      "article-6a71bb",
-      "6a71bb",
-      "nvidia-introduces-openshell-architecture-to-contain-ai-agent"
     ]
   }
 ];
