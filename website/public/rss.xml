@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 04:44:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 05:45:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Scammers Rebuild Fake Shopping Sites Rapidly</title>
+      <link>https://secubuzz.com/news/scammers-rebuild-fake-shopping-sites-rapidly-3347c6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scammers-rebuild-fake-shopping-sites-rapidly-3347c6</guid>
+      <description><![CDATA[Scammers rapidly rebuild counterfeit .shop domains after takedowns, deploying identical HTML, JavaScript, and payment forms to harvest card data. The operation targets retail and ticketing sites, funneling captured credentials to a single collection backend. Security teams should monitor domain registrations and block traffic to known malicious IPs to mitigate card‑number theft.]]></description>
+      <pubDate>Fri, 30 Oct 2026 05:30:26 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>ISC Stormcast Released for Friday 30 Oct 2026</title>
       <link>https://secubuzz.com/news/isc-stormcast-released-for-friday-30-oct-2026-57dd7e</link>
@@ -447,15 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 16:45:47 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>ClickFix Social Engineering Campaign Observed in the Wild</title>
-      <link>https://secubuzz.com/news/clickfix-social-engineering-campaign-observed-in-t-57dd7e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-social-engineering-campaign-observed-in-t-57dd7e</guid>
-      <description><![CDATA[A new ClickFix social engineering campaign is actively targeting users through deceptive instructions that trick victims into executing malicious commands. The attack vector relies on convincing users to manually run PowerShell or similar commands, bypassing traditional malware delivery mechanisms. Security teams should monitor for anomalous command-line execution patterns and reinforce user awareness training against instruction-based lures.]]></description>
-      <pubDate>Wed, 28 Oct 2026 16:07:03 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33466">SANS Internet Storm Center</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

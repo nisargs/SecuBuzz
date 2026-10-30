@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
+    "title": "Scammers Rebuild Fake Shopping Sites Rapidly",
+    "headline": "Scammers Rebuild Fake Shopping Sites Rapidly",
+    "summary": "Scammers rapidly rebuild counterfeit .shop domains after takedowns, deploying identical HTML, JavaScript, and payment forms to harvest card data. The operation targets retail and ticketing sites, funneling captured credentials to a single collection backend. Security teams should monitor domain registrations and block traffic to known malicious IPs to mitigate card‑number theft.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-30T05:30:26.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
+    "additionalSources": []
+  },
+  {
     "id": "https://isc.sans.edu/diary/rss/33472",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33472",
     "title": "ISC Stormcast Released for Friday 30 Oct 2026",
@@ -4695,19 +4708,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-21T15:00:00.000Z",
     "url": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
-    "title": "ClickFix Exploits Leveraging AI Installers Surge",
-    "headline": "ClickFix Exploits Leveraging AI Installers Surge",
-    "summary": "ClickFix attacks are increasing as criminals deploy fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. The technique bypasses traditional defenses by mimicking legitimate AI tools, creating high user trust and reducing detection. Security teams should block suspicious AI installer downloads, enforce application whitelisting, and monitor chatbot traffic for anomalous behavior.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-21T14:00:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
     "additionalSources": []
   }
 ]

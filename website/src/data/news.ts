@@ -11,6 +11,23 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "scammers-rebuild-fake-shopping-sites-rapidly-3347c6",
+    "title": "Scammers Rebuild Fake Shopping Sites Rapidly",
+    "summary": "Scammers rapidly rebuild counterfeit .shop domains after takedowns, deploying identical HTML, JavaScript, and payment forms to harvest card data. The operation targets retail and ticketing sites, funneling captured credentials to a single collection backend. Security teams should monitor domain registrations and block traffic to known malicious IPs to mitigate card‑number theft.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
+    "publishedAt": "2026-10-30T05:30:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "scammers-rebuild-fake-shopping-sites-rapidly",
+      "article-3347c6",
+      "3347c6"
+    ]
+  },
+  {
     "slug": "isc-stormcast-released-for-friday-30-oct-2026-57dd7e",
     "title": "ISC Stormcast Released for Friday 30 Oct 2026",
     "summary": "ISC released its Friday 30 October 2026 stormcast, summarizing global threat activity. The briefing covered emerging malware campaigns, phishing trends, and infrastructure attacks observed during the week, offering analysts a consolidated view of the threat landscape. Subscribers can access the full podcast and related threat data via the ISC website for immediate situational awareness.",
@@ -6493,23 +6510,6 @@ export const news: NewsBrief[] = [
       "context-bombs-reduce-ai-attack-success-by-91",
       "article-20f53f",
       "20f53f"
-    ]
-  },
-  {
-    "slug": "clickfix-exploits-leveraging-ai-installers-surge-341ff6",
-    "title": "ClickFix Exploits Leveraging AI Installers Surge",
-    "summary": "ClickFix attacks are increasing as criminals deploy fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. The technique bypasses traditional defenses by mimicking legitimate AI tools, creating high user trust and reducing detection. Security teams should block suspicious AI installer downloads, enforce application whitelisting, and monitor chatbot traffic for anomalous behavior.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
-    "publishedAt": "2026-10-21T14:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "clickfix-exploits-leveraging-ai-installers-surge",
-      "article-341ff6",
-      "341ff6"
     ]
   }
 ];
