@@ -52,6 +52,760 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-118761",
+    "slug": "cve-2026-118761",
+    "vendor": "Go",
+    "product": "pipelines · kubeflow",
+    "name": "Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-409",
+    "ransomware": false,
+    "description": "The Kubeflow Pipelines API server decompresses uploaded pipeline archives without adequately bounding expanded data in affected versions. A small ZIP or gzip-compressed tar archive can consume disproportionately large amounts of memory while the server locates or reads the pipeline file, potentially exhausting API-server resources and interrupting service.",
+    "requiredAction": "Upgrade pipelines · kubeflow to version 0.0.0-20260831164314-ba9ae72cc860 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8fmv-6rg5-5924"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118761"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118759",
+    "slug": "cve-2026-118759",
+    "vendor": "Go",
+    "product": "pipelines · kubeflow",
+    "name": "Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "The Kubeflow Pipelines API server's GET /apis/v1alpha1/runs/{run_id}/nodes/{node_id}/log handler retrieves logs without authorizing the caller against the selected run. A caller who can reach the backend and knows a victim run ID and a suitable pod or node identifier can read live or archived logs using the API server's permissions.",
+    "requiredAction": "Upgrade pipelines · kubeflow to version 0.0.0-20260904182349-be4723e33727 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wg5q-x4j9-qm54"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118759"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119203",
+    "slug": "cve-2026-119203",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires opening an incomplete file without a trailer. This has been fixed in pypdf==6.21.4. If you cannot upgrade yet, consider applying the changes from PR #4289.",
+    "requiredAction": "Upgrade pypdf to version 6.21.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5849-834g-hvw5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119203"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119204",
+    "slug": "cve-2026-119204",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf has possible large memory usage when parsing page tree",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the page tree with many shared resources. This has been fixed in pypdf==6.21.4. If you cannot upgrade yet, consider applying the changes from PR #4290.",
+    "requiredAction": "Upgrade pypdf to version 6.21.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cggf-277g-3q54"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119204"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119205",
+    "slug": "cve-2026-119205",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf has possible infinite loop when cloning dictionaries",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires cloning/duplicating a DictionaryObject. This has been fixed in pypdf==6.21.4. If you cannot upgrade yet, consider applying the changes from PR #4288.",
+    "requiredAction": "Upgrade pypdf to version 6.21.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mfr5-77xh-9j7h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119205"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118772",
+    "slug": "cve-2026-118772",
+    "vendor": "npm",
+    "product": "joi",
+    "name": "joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "Joi.string().email({ multiple: true }) takes quadratic time to split a value that contains a long run of whitespace. One request with 100 KB of spaces blocks the Node.js event loop for several seconds, which causes a denial of service.",
+    "requiredAction": "Upgrade joi to version 17.13.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4528-x5fx-h6hg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118772"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119202",
+    "slug": "cve-2026-119202",
+    "vendor": "npm",
+    "product": "@hapi/content",
+    "name": "@hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "Content.disposition() takes quadratic time when a Content-Disposition parameter contains a long token without =. One unauthenticated multipart request can block the Node.js event loop for several minutes.",
+    "requiredAction": "Upgrade @hapi/content to version 6.0.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8494-f6mr-cjpv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119202"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118764",
+    "slug": "cve-2026-118764",
+    "vendor": "npm",
+    "product": "minimatch",
+    "name": "minimatch has potential denial of service via globparts amplification",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-405",
+    "ransomware": false,
+    "description": "minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel >= 2. researcher: Reid Downing (b1nv0id) files: - src/index.ts: 690-770 - src/index.ts: 780-796 issue: input-controlled growth of globParts during first-phase preprocessing, followed by quadratic second-phase processing.",
+    "requiredAction": "Upgrade minimatch to version 11.0.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118764"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118773",
+    "slug": "cve-2026-118773",
+    "vendor": "npm",
+    "product": "glob",
+    "name": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "In glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background. The root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal.timeout() to bound glob traversal cost can still incur filesystem I/O and CPU work after the request has already been rejected.",
+    "requiredAction": "Upgrade glob to version 14.0.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118773"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-116672",
+    "slug": "cve-2026-116672",
+    "vendor": "Pip",
+    "product": "Authlib",
+    "name": "Authlib RFC 7592 examples omit registration-access-token client binding",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-639",
+    "ransomware": false,
+    "description": "RFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a registration_access_token issued specifically to that client at registration time.",
+    "requiredAction": "Upgrade Authlib to version 1.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c73q-w75p-j82v"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116672"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119206",
+    "slug": "cve-2026-119206",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf has possible long runtimes when retrieving page labels",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large runtimes. This requires retrieving the page labels of a file. This has been fixed in pypdf==6.21.3. If you cannot upgrade yet, consider applying the changes from PR #4251.",
+    "requiredAction": "Upgrade pypdf to version 6.21.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-42gh-23hr-vphw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119206"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119207",
+    "slug": "cve-2026-119207",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf has possible large memory usage for exceptions in strict mode",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires loading an invalid dictionary. This has been fixed in pypdf==6.21.3. If you cannot upgrade yet, consider applying the changes from PR #4265.",
+    "requiredAction": "Upgrade pypdf to version 6.21.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4vqv-7265-gm2w"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119207"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119208",
+    "slug": "cve-2026-119208",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf has possible long runtimes/large memory usage for encrypted PDF files",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large runtimes/memory usage. This requires accessing the page count of an encrypted PDF file, which itself declares a wrong /Count value. This has been fixed in pypdf==6.21.3. If you cannot upgrade yet, consider applying the changes from PR #4270.",
+    "requiredAction": "Upgrade pypdf to version 6.21.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-62m5-6wh8-28x7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119208"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119209",
+    "slug": "cve-2026-119209",
+    "vendor": "Pip",
+    "product": "pypdf",
+    "name": "pypdf has possible large memory usage when parsing cross-reference streams",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires opening a file with cross-reference streams. This has been fixed in pypdf==6.21.3. If you cannot upgrade yet, consider applying the changes from PR #4269.",
+    "requiredAction": "Upgrade pypdf to version 6.21.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x3rh-gjgm-fmqc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119209"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119196",
+    "slug": "cve-2026-119196",
+    "vendor": "Pip",
+    "product": "pyasn1",
+    "name": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "In pyasn1 through 0.6.4, decoding a constructed BIT STRING with many fragments repeatedly shifts and copies the entire value accumulated so far. For fixed-size fragments, CPU time grows quadratically with the encoded input size.",
+    "requiredAction": "Upgrade pyasn1 to version 0.6.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2qm8-x737-gmw5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119196"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119197",
+    "slug": "cve-2026-119197",
+    "vendor": "Pip",
+    "product": "pyasn1",
+    "name": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "In pyasn1 0.6.4 and earlier, decoding a binary-encoded ASN.1 REAL with a large mantissa can consume CPU time quadratic in the mantissa length. The BER, CER, and DER decoders all use the affected RealPayloadDecoder. An application is exposed when it passes attacker-controlled ASN.1 containing a REAL value to one of these decoders, either without an asn1Spec or with a schema that includes REAL.",
+    "requiredAction": "Upgrade pyasn1 to version 0.6.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mm57-4v3p-rchx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119197"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119195",
+    "slug": "cve-2026-119195",
+    "vendor": "Pip",
+    "product": "pyasn1",
+    "name": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "In pyasn1 0.6.4 and earlier, decoding a constructed OCTET STRING or character string made of many fragments can spend disproportionate CPU time repeatedly copying the accumulated value. A separate indefinite-length ANY path has the same problem while collecting the encoded components.",
+    "requiredAction": "Upgrade pyasn1 to version 0.6.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9m75-vc3g-4x39"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119195"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119194",
+    "slug": "cve-2026-119194",
+    "vendor": "Pip",
+    "product": "pyasn1",
+    "name": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "When an application decodes attacker-controlled BER, CER, or DER data without an ASN.1 schema, a container with many distinct long tag IDs can cause quadratic CPU use. Repeated inputs can exhaust CPU and reduce service availability.",
+    "requiredAction": "Upgrade pyasn1 to version 0.6.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fm9c-5rcf-2q5p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119194"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118775",
+    "slug": "cve-2026-118775",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: ASN.1 OID first arc truncation in asn1.oidToDer",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-190",
+    "ransomware": false,
+    "description": "asn1.oidToDer() did not range-check the first two arcs of an OID string, so an OID such as 0.42.840.113549.1.1.1 or 4294977127.18.840.113549.1.1.1 was encoded as the DER of a different OID (here rsaEncryption, 1.2.840.113549.1.1.1). This is an incomplete fix of CVE-2025-66030. Fixed in node-forge 1.4.1.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4642-5mcj-2rqw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118775"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118777",
+    "slug": "cve-2026-118777",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 4.8,
+    "severity": "Medium",
+    "cwe": "CWE-1321",
+    "ransomware": false,
+    "description": "The forge.http client stored cookies from Set-Cookie response headers in a plain object keyed by cookie name and path. A malicious server could use the cookie name proto to add properties to Object.prototype, use inherited names such as constructor to add properties to Object, and send an empty cookie value to delete Object.prototype properties. Fixed in node-forge 1.4.1.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6wvx-3r32-xmcg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118777"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118778",
+    "slug": "cve-2026-118778",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: TLS client crash when the server sends no certificate",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-476",
+    "ransomware": false,
+    "description": "The forge TLS client's check for a missing server certificate read the wrong property and never ran. A malicious TLS server, or an on-path attacker who removes the server's Certificate message, can make connection.process() throw a TypeError, which crashes applications that use the forge TLS client. Fixed in node-forge 1.4.1.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-525v-9gp9-w22h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118778"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118779",
+    "slug": "cve-2026-118779",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: Regular expression denial of service in PEM decoding (pem.decode)",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "pem.decode(), which every node-forge API that parses PEM input uses, split messages with a regular expression that takes polynomial time on input without a matching END line, and parsed encapsulated headers with regular expressions that take quadratic time on long header lines.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7wch-p9px-956x"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118779"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118781",
+    "slug": "cve-2026-118781",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891)",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 2.9,
+    "severity": "Low",
+    "cwe": "CWE-835",
+    "ransomware": false,
+    "description": "BigInteger.prototype.modInverse() in node-forge's bundled jsbn library enters an infinite loop when the value or the modulus is negative, for example when a negative public exponent is passed to forge.pki.rsa.generateKeyPair(). This is an incomplete fix of CVE-2026-33891 (GHSA-5m6q-g25r-mvwx), which handled only a zero value. Fixed in node-forge 1.4.1.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h6cr-wjv9-3cpp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118781"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118780",
+    "slug": "cve-2026-118780",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-295",
+    "ransomware": false,
+    "description": "When a CA store created by pki.createCaStore() holds two or more certificates with the same subject name, pki.verifyCertificateChain() permanently removes those certificates from the store while trying each one as the issuer. A peer can send any certificate that names that subject as its issuer to make all later verifications against those CA certificates fail. Fixed in node-forge 1.4.1.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4487-j8r4-4g2f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118780"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119186",
+    "slug": "cve-2026-119186",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: AES-GCM authentication bypass via unvalidated tagLength option",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-354",
+    "ransomware": false,
+    "description": "The AES-GCM mode in forge.cipher does not validate the tagLength option passed to start(). With a tagLength of 0 or a value that converts to 0 (such as null, false, '' or '0'), the authentication tag is empty, and decipher.finish() returns true for any ciphertext and additional data when the supplied tag is empty or missing. Fixed in node-forge 1.4.1.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5cwg-6vw7-rj6p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119186"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118782",
+    "slug": "cve-2026-118782",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-354",
+    "ransomware": false,
+    "description": "forge.pkcs12.pkcs12FromAsn1() accepts a PKCS#12 MAC iteration count of zero (or less) from the input, and the PKCS#12 key derivation function then returns a constant key that does not depend on the password or salt.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jc66-7q78-782g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118782"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119188",
+    "slug": "cve-2026-119188",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "A connection created with forge.tls.createConnection() throws an uncaught TypeError from process() when it receives a record of another content type while waiting for the rest of a handshake message that was split across records. A peer can trigger this with 18 bytes before the handshake, without authentication, which terminates Node.js processes that use the documented socket wiring.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8hrf-8g6f-7xwp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119188"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119187",
+    "slug": "cve-2026-119187",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: Denial of service in TLS record processing via call stack exhaustion",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "Connections created with forge.tls.createConnection() processed received TLS records recursively, one stack level per record. A peer can send one chunk of thousands of small records, such as heartbeat records, which are accepted before the handshake, and process() throws RangeError: Maximum call stack size exceeded, which terminates Node.js processes that use the documented socket wiring.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hqq3-7jhf-c5jx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119187"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119190",
+    "slug": "cve-2026-119190",
+    "vendor": "npm",
+    "product": "node-forge",
+    "name": "Forge: X.509 basicConstraints bypass in verifyCertificateChain() via deprecated extension OIDs 2.5.29.10 and 2.5.29.13",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.4,
+    "severity": "High",
+    "cwe": "CWE-295",
+    "ransomware": false,
+    "description": "node-forge parses certificate extensions with the deprecated OIDs 2.5.29.10 and 2.5.29.13 as basicConstraints, and forge.pki.verifyCertificateChain() used the first extension with that name. A certificate with a forged deprecated-OID extension (cA TRUE) before its genuine basicConstraints extension (cA FALSE) is accepted as a CA certificate, and the same technique can hide a pathLenConstraint.",
+    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5x38-2vff-x55p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119190"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-119193",
     "slug": "cve-2026-119193",
     "vendor": "Composer",
@@ -598,490 +1352,6 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
-    "cve": "GHSA-7wpf-ch8f-5f4x",
-    "slug": "ghsa-7wpf-ch8f-5f4x",
-    "vendor": "npm",
-    "product": "signalk-server",
-    "name": "signalk-server has SSRF via absolute signalk.appIcon URL in the app store icon fetcher",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 4.2,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "The app store icon code (dist/appstore/icon-probe.js around line 200 and icon-bytes.js around line 138) resolves a plugin's declared signalk.appIcon. Relative paths are pinned to the CDN, but an absolute http(s) URL is used as-is: the server fetches it, follows redirects, and stores any image/* response as the plugin's icon, which is then served to the admin UI. Unrelated to GHSA-q59x-jc9f-gfqf.",
-    "requiredAction": "Upgrade signalk-server to version 2.34.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7wpf-ch8f-5f4x"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-4xm8-rg9h-jhq2",
-    "slug": "ghsa-4xm8-rg9h-jhq2",
-    "vendor": "npm",
-    "product": "signalk-server",
-    "name": "Signal K resources API path traversal can disclose the JWT signing secret and enable remote code execution",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 9.8,
-    "severity": "Critical",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "Path traversal in the Signal K resources and applicationData APIs lets an unauthenticated or low-privileged user read, write and delete files outside the storage root. Reading <config>/security.json discloses the JWT signing secret, enabling admin token forgery and remote code execution.",
-    "requiredAction": "Upgrade signalk-server to version 2.34.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4xm8-rg9h-jhq2"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-hff9-5pqw-6w9f",
-    "slug": "ghsa-hff9-5pqw-6w9f",
-    "vendor": "Go",
-    "product": "imgproxy (v3) · imgproxy",
-    "name": "imgproxy has integer overflow in imgproxy ICO loader that causes denial of service and may permit remote code execution",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 9.8,
-    "severity": "Critical",
-    "cwe": "CWE-122",
-    "ransomware": false,
-    "description": "The ICO loader allocates data_size + BMP_FILE_HEADER_LEN bytes after reading a 32-bit attacker-controlled data_size. For data_size > UINT32_MAX - BMP_FILE_HEADER_LEN, the addition wraps before allocation. imgproxy then writes the ICO prefix and reads up to the original declared size starting 14 bytes into the undersized allocation.",
-    "requiredAction": "Upgrade imgproxy (v3) · imgproxy to version 4.0.16 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hff9-5pqw-6w9f"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-494m-4556-wf5p",
-    "slug": "ghsa-494m-4556-wf5p",
-    "vendor": "Go",
-    "product": "imgproxy (v3) · imgproxy",
-    "name": "imgproxy has out-of-bounds heap read/write in ICO loader BMP header reconstruction that allows unauthenticated remote worker crash",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-125",
-    "ransomware": false,
-    "description": "Out-of-bounds heap write in imgproxy's ICO loader (vips/icoload.c): when the ICO entry's image data buffer is small, the loader's BMP-header-reconstruction writes land past the allocation, corrupting the size field of the following heap chunk. The worker then aborts deterministically (glibc munmap_chunk(): invalid pointer → SIGABRT → Go panic, exit code 2).",
-    "requiredAction": "Upgrade imgproxy (v3) · imgproxy to version 4.0.17 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-494m-4556-wf5p"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-mmq5-xm89-9pfg",
-    "slug": "ghsa-mmq5-xm89-9pfg",
-    "vendor": "Go",
-    "product": "imgproxy (v3) · imgproxy",
-    "name": "imgproxy has unbounded memory allocation in ICO loader that allows unauthenticated memory-exhaustion DoS via crafted data_size field",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "Unbounded and unvalidated memory allocation in imgproxy's ICO loader (vips/icoload.c). An attacker-controlled data_size field (u32) from the ICO directory entry is passed directly to VIPS_MALLOC without any bounds check, so a single crafted 23-byte ICO file makes an imgproxy worker attempt a ~4GB allocation.",
-    "requiredAction": "Upgrade imgproxy (v3) · imgproxy to version 4.0.16 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mmq5-xm89-9pfg"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-2wrx-84qj-4pcg",
-    "slug": "ghsa-2wrx-84qj-4pcg",
-    "vendor": "Go",
-    "product": "torrent · anacrolix",
-    "name": "anacrolix torrent has unbounded recursion in the bencode decoder that causes stack-overflow crash and CPU-exhaustion DoS",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "anacrolix/torrent's bencode decoder (bencode/) applies no limit on the nesting depth of nested dictionaries and lists. Two distinct denial-of-service mechanisms follow from that single root cause, both reachable from a single crafted .torrent file or from metadata obtained from a peer on a magnet-link/v2 download: 1. Stack-overflow process crash.",
-    "requiredAction": "Upgrade torrent · anacrolix to version 1.61.1-0.20260911233437-76452a2c8a2f or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2wrx-84qj-4pcg"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-96634",
-    "slug": "cve-2026-96634",
-    "vendor": "Composer",
-    "product": "adminneo-org/adminneo",
-    "name": "AdminNeo SQLite: multi_query Incorrect Check of Function Return Value RCE",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-74",
-    "ransomware": false,
-    "description": "This vulnerability is a patch bypass that exploits catastrophic backtracking in a regular expression used to filter ATTACH statements in AdminNeo's SQLite functionality. The original vulnerability (CVE-2021-43008) allowed authenticated users to create PHP files through SQLite ATTACH statements, achieving remote code execution.",
-    "requiredAction": "Upgrade adminneo-org/adminneo to version 5.5.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p96f-p2p2-2g3h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96634"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-96633",
-    "slug": "cve-2026-96633",
-    "vendor": "Composer",
-    "product": "adminneo-org/adminneo",
-    "name": "AdminNeo SQLite Database-List Drop Arbitrary File Deletion",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-73",
-    "ransomware": false,
-    "description": "AdminNeo allows an authenticated SQLite-mode user to delete arbitrary files writable by the PHP process through the database-list drop action. The SQLite driver validates file extensions when creating or renaming databases, but the database-list drop path passes submitted db[] values directly to unlink(). Originally reported by @slpoiuewalspoid-dotcom in Adminer:",
-    "requiredAction": "Upgrade adminneo-org/adminneo to version 5.5.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6vfx-w7q3-42gq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96633"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-96631",
-    "slug": "cve-2026-96631",
-    "vendor": "Composer",
-    "product": "adminneo-org/adminneo",
-    "name": "AdminNeo has Cookie Attribute Injection via Unsanitized X-Forwarded-Prefix in Set-Cookie Headers",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "AdminNeo versions 4.6.0 through at least 5.5.0 are vulnerable to cookie attribute injection via the X-Forwarded-Prefix HTTP header.",
-    "requiredAction": "Upgrade adminneo-org/adminneo to version 5.5.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-79wv-8rh2-9vp2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96631"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-96632",
-    "slug": "cve-2026-96632",
-    "vendor": "Composer",
-    "product": "adminneo-org/adminneo",
-    "name": "AdminNeo Vulnerable to XSS via Rogue MySQL Server Version String (CSP Nonce Bypass)",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "AdminNeo inserts the database server's version string into a <script> tag that carries a valid CSP nonce, without any sanitization. A rogue database server can return a crafted version string that breaks out of the JavaScript context and executes arbitrary code. Because the script tag already has a valid nonce, the browser's Content Security Policy does not block execution.",
-    "requiredAction": "Upgrade adminneo-org/adminneo to version 5.5.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rx7m-wxwq-vxr9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96632"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-96630",
-    "slug": "cve-2026-96630",
-    "vendor": "Composer",
-    "product": "adminneo-org/adminneo",
-    "name": "AdminNeo: RCE via SQLite VACUUM INTO (ATTACH Blocklist Bypass)",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.2,
-    "severity": "High",
-    "cwe": "—",
-    "ransomware": false,
-    "description": "Adminer blocks ATTACH queries for SQLite to prevent arbitrary file creation. However, VACUUM INTO is not blocked and achieves the same result: writing a database file containing attacker-controlled PHP code to any path with any extension. An authenticated SQLite user can write a web shell to the web root and execute commands. Originally reported in Adminer: GHSA-q4f2-39gr-45jh",
-    "requiredAction": "Upgrade adminneo-org/adminneo to version 5.5.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q5mp-gfjf-cf2j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96630"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-96629",
-    "slug": "cve-2026-96629",
-    "vendor": "Composer",
-    "product": "adminneo-org/adminneo",
-    "name": "AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 6.8,
-    "severity": "Medium",
-    "cwe": "CWE-330",
-    "ransomware": false,
-    "description": "AdminNeo's CSRF protection uses a BREACH-resistant XOR masking scheme, but the implementation transmits both the XOR mask and the masked value in every token. This allows any observer who sees a single CSRF token (via network sniffing, log files, Referrer header, or XSS) to instantly recover the session secret and forge unlimited valid CSRF tokens.",
-    "requiredAction": "Upgrade adminneo-org/adminneo to version 5.5.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wm25-49w3-5qrg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96629"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-54442",
-    "slug": "cve-2026-54442",
-    "vendor": "Java (Maven)",
-    "product": "gov.nsa.emissary:emissary",
-    "name": "NationalSecurityAgency/emissary has an incomplete fix for CVE-2026-35571",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 4.8,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "The URL validation regex ^(https?:/)?/.* added to emissary's NavAction.java allows protocol-relative URLs (//evil.com/...) and single-slash scheme variants (http:/evil.com) to bypass validation, enabling SSRF and open redirect attacks.",
-    "requiredAction": "Upgrade gov.nsa.emissary:emissary to version 8.51.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c6q7-wqw2-h65w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54442"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-5xjx-3w67-w9x9",
-    "slug": "ghsa-5xjx-3w67-w9x9",
-    "vendor": "Actions",
-    "product": "pypa/gh-action-pypi-publish",
-    "name": "pypi-publish action revocation of CA in the chain that Sigstore uses in Trusted Publishing and Digital Attestations for PyPI",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 9.3,
-    "severity": "Critical",
-    "cwe": "CWE-295",
-    "ransomware": false,
-    "description": "The [pypi-publish action][pypi-publish] versions before 1.14.2 used to bundle the emSign root CA trust store certificate through the certifi distribution. It has since been removed through the bundle and the new version no longer includes them. [pypi-publish]:",
-    "requiredAction": "Upgrade pypa/gh-action-pypi-publish to version 1.14.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5xjx-3w67-w9x9"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-59978",
-    "slug": "cve-2026-59978",
-    "vendor": "Composer",
-    "product": "adminneo-org/adminneo",
-    "name": "AdminNeo: version-cache array injection causes persistent denial of service",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "AdminNeo v5.4.1 gets the latest version from GitHub API in a browser JavaScript function. Version number is then sent by POST request to ?script=version. This endpoint lacks origin validation and accepts POST data from any source. An attacker can POST version[] parameter which PHP converts to an array.",
-    "requiredAction": "Upgrade adminneo-org/adminneo to version 5.5.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jm85-8cpp-9cjc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59978"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119284",
-    "slug": "cve-2026-119284",
-    "vendor": "Pip",
-    "product": "joserfc",
-    "name": "joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "joserfc 1.7.4 defines compact-JWS header, payload, and signature limits, but calls value.split(b\".\") before validating them. Python bytes.split() copies the attacker-controlled segments, so the current guard allocates roughly one complete payload before rejecting it.",
-    "requiredAction": "Upgrade joserfc to version 1.7.6 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9pg5-8c7x-5hfx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119284"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119283",
-    "slug": "cve-2026-119283",
-    "vendor": "Pip",
-    "product": "joserfc",
-    "name": "joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "joserfc.jwe.decrypt_json(), the library's public parser for JWE General JSON Serialization, accepts an attacker-controlled recipients array of unbounded length and performs one full private-key decryption operation (decrypt_cek) for every recipient present in the input, with no cap on recipient count.",
-    "requiredAction": "Upgrade joserfc to version 1.7.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jpxq-7h8p-2q76"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119283"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-f3fj-9625-rv3m",
-    "slug": "ghsa-f3fj-9625-rv3m",
-    "vendor": "Go",
-    "product": "soft-serve · charmbracelet",
-    "name": "charmbracelet/soft-serve: Race in `SetPrivate` leaves a private repository readable by unauthenticated users",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-362",
-    "ransomware": false,
-    "description": "Soft Serve cached repository records in memory with no expiry, and trusted the cached record for every access check. SetPrivate cleared the cached record before it saved the new visibility, and not afterwards. A request that arrived between the two read the old, public record from the database and cached it after the change was saved.",
-    "requiredAction": "Upgrade soft-serve · charmbracelet to version 0.12.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f3fj-9625-rv3m"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-fgxm-5hvv-x4vh",
-    "slug": "ghsa-fgxm-5hvv-x4vh",
-    "vendor": "Go",
-    "product": "soft-serve · charmbracelet",
-    "name": "charmbracelet/soft-serve HTTP responses disclose the existence and names of private repositories",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-203",
-    "ransomware": false,
-    "description": "Soft Serve answers Go's ?go-get=1 requests by walking up the requested path until it finds a repository, then rendering that repository's name and clone URL into a go-import meta tag. The walk checked that each candidate repository existed, but never that the caller could read it.",
-    "requiredAction": "Upgrade soft-serve · charmbracelet to version 0.12.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fgxm-5hvv-x4vh"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119282",
-    "slug": "cve-2026-119282",
-    "vendor": "npm",
-    "product": "@nx/maven",
-    "name": "@nx/maven and @nx/gradle have OS command injection via nx.json plugin options",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.3,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "@nx/maven and @nx/gradle spawn their project-graph analyzers through a shell and interpolate plugin options read from nx.json straight into the command line. Because a shell parses the whole line, an option value containing shell syntax is executed as a command by any nx command that constructs the project graph.",
-    "requiredAction": "Upgrade @nx/maven to version 22.7.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qm8w-vx34-5j9j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119282"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
     "cve": "CVE-2026-97229",
     "slug": "cve-2026-97229",
     "vendor": "GitLab",
@@ -1130,236 +1400,6 @@ export const advisories: Advisory[] = [
       }
     ],
     "source": "CISA KEV"
-  },
-  {
-    "cve": "CVE-2026-118664",
-    "slug": "cve-2026-118664",
-    "vendor": "npm",
-    "product": "decode-uri-component",
-    "name": "decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "decodeUriComponent() takes quadratic time on malformed input that has many distinct percent-encoded runs. A single unauthenticated request of about 224 KB can block the Node.js event loop for about 20 seconds. Version 0.5.0, the release that fixed CVE-2026-45822, is affected.",
-    "requiredAction": "Upgrade decode-uri-component to version 0.5.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qr28-fpjm-wq7f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118664"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-vpp8-g58w-m8mp",
-    "slug": "ghsa-vpp8-g58w-m8mp",
-    "vendor": "Pip",
-    "product": "Twisted",
-    "name": "Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An uncontrolled-resource-consumption vulnerability (CWE-400) in the Twisted HTTP/2 server lets any unauthenticated remote client exhaust server CPU over a single connection. A client that sends a request header block with END_STREAM and then immediately resets the stream makes the server route and render the request before it processes the reset.",
-    "requiredAction": "Upgrade Twisted to version 26.10.0rc1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vpp8-g58w-m8mp"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115907",
-    "slug": "cve-2026-115907",
-    "vendor": "Rust (Cargo)",
-    "product": "zip",
-    "name": "zip: legacy Shrink/Reduce/Implode decoder: denial of service from attacker-controlled ZIP64 uncompressed size",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "A malicious 149-byte ZIP archive can cause a denial of service in applications that enable legacy-zip and use ZipArchive::extract(). An attacker-controlled ZIP64 uncompressed size triggers a capacity overflow panic in the Shrink decoder in optimized builds, potentially terminating the affected process.",
-    "requiredAction": "Upgrade zip to version 9.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9hj8-73fh-9963"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115907"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115908",
-    "slug": "cve-2026-115908",
-    "vendor": "Rust (Cargo)",
-    "product": "zip",
-    "name": "zip: Arbitrary file write outside the extraction directory, because ZipArchive::extract validates symlink targets lexically. ",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "- Verified version: zip 9.0.0-pre3 - Affected versions: 7.2.0 and later - Precondition: The attacker knows (or can guess) the absolute path of the extraction destination The validation applied to symlinks is purely lexical. As a result, an attacker can write arbitrary files outside the extraction directory through a symlink.",
-    "requiredAction": "Upgrade zip to version 9.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hjqx-j4rw-g7xv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115908"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115906",
-    "slug": "cve-2026-115906",
-    "vendor": "Rust (Cargo)",
-    "product": "zip",
-    "name": "zip: AES Entry HMAC Authentication Bypass on Premature EOF",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-354",
-    "ransomware": false,
-    "description": "An AES-encrypted (AE-x) entry's authentication code is verified only when the reader's byte counter lands exactly on zero. If the bounded entry reader reaches the archive's actual EOF before the attacker-controlled, header-declared compressed_size, the counter remains positive, the HMAC is never read or compared, and the truncated, unauthenticated plaintext is returned as a clean end of stream.",
-    "requiredAction": "Upgrade zip to version 9.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8hxf-qr8p-62x4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115906"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115909",
-    "slug": "cve-2026-115909",
-    "vendor": "Rust (Cargo)",
-    "product": "zip",
-    "name": "zip: Unbounded Symlink-Target Handling Can Abort Or Exhaust Memory During Extraction",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "The symbolic-link branch of ZipArchive::extract_internal() allocates a buffer using an attacker-declared size before reading any entry data. A 112-byte archive terminates the extracting process with SIGABRT through this infallible allocation.",
-    "requiredAction": "Upgrade zip to version 9.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-q7v9-x93c-xqv3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115909"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118662",
-    "slug": "cve-2026-118662",
-    "vendor": "npm",
-    "product": "vite",
-    "name": "Vite: `server.fs.deny` bypassed with queries",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-180",
-    "ransomware": false,
-    "description": "The contents of files that are specified by server.fs.deny can be returned to the browser. This is the same as",
-    "requiredAction": "Upgrade vite to version 6.4.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8g5g-mxqh-grgj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118662"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63414",
-    "slug": "cve-2026-63414",
-    "vendor": "RubyGems",
-    "product": "shopify_app",
-    "name": "Shopify App: Token exchange shop context confusion may allow cross-shop authorization bypass in affected apps",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 7.6,
-    "severity": "High",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "In token-exchange authenticated controllers, shopify_app exposes shop context through helpers such as current_shopify_domain. Prior to the fix, current_shopify_domain could resolve to the sanitized shop query parameter instead of the shop identity derived from the verified Shopify ID token or active Shopify session.",
-    "requiredAction": "Upgrade shopify_app to version 23.0.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6j52-38f8-qhxr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63414"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-62290",
-    "slug": "cve-2026-62290",
-    "vendor": "Go",
-    "product": "cert-manager · cert-manager",
-    "name": "cert-manager: Direct ACME Challenge resources can bypass Issuer DNS01 solver policy and use ClusterIssuer DNS credentials",
-    "dateAdded": "2026-10-29",
-    "dueDate": "",
-    "cvss": 7.3,
-    "severity": "High",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "Challenge resources under acme.cert-manager.io can be created directly by namespace users. On create, cert-manager performs no admission validation tying the Challenge to an Order, an owner reference, or an Issuer-selected solver. The ACME Challenge controller then reconciles the direct resource and uses Challenge.spec.solver as the DNS01 provider configuration.",
-    "requiredAction": "Upgrade cert-manager · cert-manager to version 1.19.6 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8rvj-mm4h-c258"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62290"
-      }
-    ],
-    "source": "GITHUB"
   },
   {
     "cve": "CVE-2026-41709",
