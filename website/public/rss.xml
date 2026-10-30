@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 15:44:33 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 16:45:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>UEFI Flaw Affects Majority of Servers</title>
@@ -26,6 +26,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Syrian Hacker Sentenced for Western Attacks</title>
+      <link>https://secubuzz.com/news/syrian-hacker-sentenced-for-western-attacks-5ca85b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/syrian-hacker-sentenced-for-western-attacks-5ca85b</guid>
+      <description><![CDATA[A Syrian hacker, known as “Th3Pr0,” was sentenced to 42 months in federal prison for orchestrating attacks on Western targets. The conspiracy was coordinated by aides of former President Bashar al‑Assad, linking the individual to state‑backed operations. The conviction underscores the legal consequences for actors involved in state‑sponsored cybercrime.]]></description>
+      <pubDate>Fri, 30 Oct 2026 14:24:00 GMT</pubDate>
+      <source url="https://therecord.media/syrian-electronic-army-hacker-sentenced-three-years">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Cloudflare One Enables Private Origin Services</title>
       <link>https://secubuzz.com/news/cloudflare-one-enables-private-origin-services-1e255d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-one-enables-private-origin-services-1e255d</guid>
@@ -33,6 +42,24 @@
       <pubDate>Fri, 30 Oct 2026 14:23:43 GMT</pubDate>
       <source url="https://blog.cloudflare.com/private-origins-public-to-private/">Cloudflare Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Legacy Software Still Threatens Millions</title>
+      <link>https://secubuzz.com/news/legacy-software-still-threatens-millions-6ba4cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/legacy-software-still-threatens-millions-6ba4cc</guid>
+      <description><![CDATA[A security firm patched a decade‑old application to prevent its takeover by attackers exploiting abandoned domains. The patch addresses vulnerabilities that could allow remote code execution on millions of machines still running the obsolete software. Security teams should update or decommission the legacy application to mitigate this risk.]]></description>
+      <pubDate>Fri, 30 Oct 2026 14:10:37 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>WordPress Core RCE Draws 63,000 Attack Attempts</title>
+      <link>https://secubuzz.com/news/wordpress-core-rce-draws-63-000-attack-attempts-3f24c9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wordpress-core-rce-draws-63-000-attack-attempts-3f24c9</guid>
+      <description><![CDATA[A high‑severity remote code execution flaw in WordPress Core versions 4.7 through 7.1.3 attracted nearly 63,000 exploitation attempts within 24 hours of patch release. The vulnerability, lacking a CVE ID, scores 8.1 on CVSS and allows unauthenticated attackers to execute arbitrary code. WordPress users must apply the latest security patch to eliminate the threat.]]></description>
+      <pubDate>Fri, 30 Oct 2026 14:08:14 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>SS7 and Diameter Signaling Exploits Enable Phone Tracking</title>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 20:00:00 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+November+4%2C+2026%2C+Security+Advisories%26vs_k%3D1">Cisco PSIRT</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Early Stable Update Released</title>
-      <link>https://secubuzz.com/news/chrome-early-stable-update-released-671bb3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-early-stable-update-released-671bb3</guid>
-      <description><![CDATA[Google Chrome’s Stable channel received an early update to version 157.0.8103.26/27 for Windows, with Mac following shortly. The update includes bug fixes and performance improvements, as detailed in the release log. Users are encouraged to install the update via the browser’s update mechanism to maintain security and stability.]]></description>
-      <pubDate>Wed, 28 Oct 2026 19:57:13 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/10/early-stable-update-for-desktop_01255863767.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ChromeOS Stable Patch Fixes Critical FileAPI Flaw</title>
-      <link>https://secubuzz.com/news/chromeos-stable-patch-fixes-critical-fileapi-flaw-60e267</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-stable-patch-fixes-critical-fileapi-flaw-60e267</guid>
-      <description><![CDATA[Google released ChromeOS Stable channel update 16836.30.0, patching multiple vulnerabilities including a critical improper input validation flaw in FileAPI. CVE-2026-118331 carries a critical severity rating, while five additional high-severity flaws span use-after-free and input validation issues across Animation, Compositing, UI, and ReadingList components. Users should update to browser version 156.0.8078.77 to remediate all disclosed defects.]]></description>
-      <pubDate>Wed, 28 Oct 2026 19:45:30 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-chromeos_01748991111.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AWS Agent Tool Masking Bypass CVE-2026-115415</title>
-      <link>https://secubuzz.com/news/aws-agent-tool-masking-bypass-cve-2026-115415-5142fc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-agent-tool-masking-bypass-cve-2026-115415-5142fc</guid>
-      <description><![CDATA[CVE-2026-115415 allows an LLM to bypass environment variable masking in Strands Agents Tools, exposing cloud credentials and API keys. The flaw occurs when a crafted prompt instructs the tool to disable masking, returning sensitive data without operator consent. AWS recommends applying the latest patch and disabling automatic tool invocation until remediation is applied.]]></description>
-      <pubDate>Wed, 28 Oct 2026 19:39:08 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

@@ -26,6 +26,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/syrian-electronic-army-hacker-sentenced-three-years",
+    "sourceUrl": "https://therecord.media/syrian-electronic-army-hacker-sentenced-three-years",
+    "title": "Syrian Hacker Sentenced for Western Attacks",
+    "headline": "Syrian Hacker Sentenced for Western Attacks",
+    "summary": "A Syrian hacker, known as “Th3Pr0,” was sentenced to 42 months in federal prison for orchestrating attacks on Western targets. The conspiracy was coordinated by aides of former President Bashar al‑Assad, linking the individual to state‑backed operations. The conviction underscores the legal consequences for actors involved in state‑sponsored cybercrime.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-30T14:24:00.000Z",
+    "url": "https://therecord.media/syrian-electronic-army-hacker-sentenced-three-years",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/private-origins-public-to-private/",
     "sourceUrl": "https://blog.cloudflare.com/private-origins-public-to-private/",
     "title": "Cloudflare One Enables Private Origin Services",
@@ -36,6 +49,32 @@
     "source": "Cloudflare Security",
     "publishedAt": "2026-10-30T14:23:43.000Z",
     "url": "https://blog.cloudflare.com/private-origins-public-to-private/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
+    "sourceUrl": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
+    "title": "Legacy Software Still Threatens Millions",
+    "headline": "Legacy Software Still Threatens Millions",
+    "summary": "A security firm patched a decade‑old application to prevent its takeover by attackers exploiting abandoned domains. The patch addresses vulnerabilities that could allow remote code execution on millions of machines still running the obsolete software. Security teams should update or decommission the legacy application to mitigate this risk.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-30T14:10:37.000Z",
+    "url": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+    "title": "WordPress Core RCE Draws 63,000 Attack Attempts",
+    "headline": "WordPress Core RCE Draws 63,000 Attack Attempts",
+    "summary": "A high‑severity remote code execution flaw in WordPress Core versions 4.7 through 7.1.3 attracted nearly 63,000 exploitation attempts within 24 hours of patch release. The vulnerability, lacking a CVE ID, scores 8.1 on CVSS and allows unauthenticated attackers to execute arbitrary code. WordPress users must apply the latest security patch to eliminate the threat.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-30T14:08:14.000Z",
+    "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
     "additionalSources": []
   },
   {
@@ -4659,50 +4698,6 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-22T04:30:38.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/22/localstack-ai-code-testing-report/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/",
-    "title": "AI Agent Observability Lags Behind Hallucination Rates",
-    "headline": "AI Agent Observability Lags Behind Hallucination Rates",
-    "summary": "AI agents are increasingly used to diagnose system failures, yet 62% of IT professionals lack reliable metrics to validate their conclusions. The root cause is the agents’ propensity for hallucinations, leading to inaccurate root‑cause analysis and alert tuning. Organizations should implement independent verification workflows and monitor agent outputs to mitigate misdiagnosis.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-22T04:00:14.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/22/ai-agent-observability-report/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
-    "title": "Chrome Adds Permission Prompt for Insecure HTTP Connections",
-    "headline": "Chrome Adds Permission Prompt for Insecure HTTP Connections",
-    "summary": "Google Chrome now prompts users before establishing insecure HTTP connections, extending the Safe Browsing Enhanced Protection feature to all users. This update reduces risk from malware, phishing, and eavesdropping that can exploit unencrypted HTTP traffic. Teams should audit internal services for legacy HTTP endpoints and enforce HTTPS to maintain the protection.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-21T22:30:30.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/"
-      }
-    ]
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8890-2",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8890-2",
-    "title": "Ubuntu 26.10 libsoup Vulnerabilities Fixed",
-    "headline": "Ubuntu 26.10 libsoup Vulnerabilities Fixed",
-    "summary": "A remote attacker could exploit libsoup’s improper handling of HTTP/2 requests, HTTPS proxy connections, and chunked HTTP requests to cause denial of service, obtain sensitive information, or bypass security controls. The flaws, identified as CVE-2026-4271, CVE-2026-5119, and CVE-2026-63xx, affect Ubuntu 22.04, 24.04, and 26.04 LTS releases. Ubuntu has released patches for libsoup3 in 26.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-10-21T21:36:06.000Z",
-    "url": "https://ubuntu.com/security/notices/USN-8890-2",
     "additionalSources": []
   }
 ]
