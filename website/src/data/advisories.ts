@@ -52,6 +52,32 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-59978",
+    "slug": "cve-2026-59978",
+    "vendor": "Composer",
+    "product": "adminneo-org/adminneo",
+    "name": "AdminNeo: version-cache array injection causes persistent denial of service",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "AdminNeo v5.4.1 gets the latest version from GitHub API in a browser JavaScript function. Version number is then sent by POST request to ?script=version. This endpoint lacks origin validation and accepts POST data from any source. An attacker can POST version[] parameter which PHP converts to an array.",
+    "requiredAction": "Upgrade adminneo-org/adminneo to version 5.5.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jm85-8cpp-9cjc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59978"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-119284",
     "slug": "cve-2026-119284",
     "vendor": "Pip",
@@ -1389,32 +1415,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115921"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115919",
-    "slug": "cve-2026-115919",
-    "vendor": "Pip",
-    "product": "onnx",
-    "name": "ONNX: Out-of-Bounds Read in RNN/GRU/LSTM Shape Inference (Old Opsets, Missing Rank Check)",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 6.2,
-    "severity": "Medium",
-    "cwe": "CWE-125",
-    "ransomware": false,
-    "description": "ONNX shape inference performed an out-of-bounds read when processing a malformed RNN, GRU, or LSTM node from opsets 1–6 whose first input had a rank other than three. RNNShapeInference_opset1_to_6() checked whether the input shape was present but accessed dim(0) and dim(1) without first checking its rank.",
-    "requiredAction": "Upgrade onnx to version 1.22.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-48m4-24cq-37qf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115919"
       }
     ],
     "source": "GITHUB"
