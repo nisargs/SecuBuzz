@@ -11,6 +11,57 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-kernel-rt-security-update-37d93d",
+    "title": "Red Hat Releases Kernel‑RT Security Update",
+    "summary": "Red Hat issued a kernel‑rt update for Enterprise Linux 9.2 SAP Solutions, addressing multiple security issues. The patch mitigates vulnerabilities with CVSS scores ranging from moderate to high, as detailed in the referenced CVE entries. Red Hat recommends immediate installation of the update to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93047",
+    "publishedAt": "2026-10-30T13:08:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-rt-security-update",
+      "article-37d93d",
+      "37d93d"
+    ]
+  },
+  {
+    "slug": "syrian-hacker-sentenced-for-white-house-hoax-3abddc",
+    "title": "Syrian Hacker Sentenced for White House Hoax",
+    "summary": "A Syrian national, Ahmad Umar Agha, was convicted for orchestrating a fake White House explosion report via a hijacked Twitter account. The deception triggered a $136 billion market decline and was part of a broader Assad regime hacking conspiracy. A federal court sentenced him to 42 months imprisonment.",
+    "category": "Breach",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/syrian-hacker-sentenced-42-months-prison/",
+    "publishedAt": "2026-10-30T13:00:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "syrian-hacker-sentenced-for-white-house-hoax",
+      "article-3abddc",
+      "3abddc"
+    ]
+  },
+  {
+    "slug": "gitlab-cve-2026-97229-exploited-in-wild-6a6bed",
+    "title": "GitLab CVE‑2026‑97229 Exploited in Wild",
+    "summary": "CISA confirmed active exploitation of GitLab’s CVE‑2026‑97229, a maximum‑severity flaw patched earlier this month. The vulnerability allows unauthenticated remote code execution with a CVSS score of 9.8, enabling attackers to compromise affected instances. GitLab urges users to apply the latest patch immediately to prevent further compromise.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
+    "publishedAt": "2026-10-30T13:00:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-cve-2026-97229-exploited-in-wild",
+      "article-6a6bed",
+      "6a6bed"
+    ]
+  },
+  {
     "slug": "gitlab-cve-2026-97229-enables-remote-code-executio-b910c8",
     "title": "GitLab CVE-2026-97229 Enables Remote Code Execution on Alpine",
     "summary": "A vulnerability in GitLab, identified as CVE-2026-97229, permits unauthenticated attackers to execute arbitrary code on servers running Alpine Linux. The flaw originates from improper input validation in GitLab’s authentication module, enabling remote code execution with a CVSS score of 10.0. GitLab has released an urgent patch; administrators must update immediately to mitigate exploitation.",
@@ -6457,60 +6508,6 @@ export const news: NewsBrief[] = [
       "article-133e1b",
       "133e1b",
       "russian-actors-target-u-s-democratic-lawmakers-ahead-of-midt"
-    ]
-  },
-  {
-    "slug": "arrakis-security-report-reveals-dormant-ai-agents-a25eaa",
-    "title": "Arrakis Security Report Reveals Dormant AI Agents Retain Valid Credentials",
-    "summary": "Arrakis Security’s 2026 Autonomous Agents Threat Report shows 76% of AI agents have been inactive for 60 days, yet their credentials remain valid and triggers still fire. Dormant agents can be reactivated by attackers, enabling credential reuse and unauthorized access to connected services. Teams should audit credentials, enforce rotation, and monitor trigger activity to mitigate exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/",
-    "publishedAt": "2026-10-21T17:05:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arrakis-security-report-reveals-dormant-ai-agents",
-      "article-a25eaa",
-      "a25eaa",
-      "arrakis-security-report-reveals-dormant-ai-agents-retain-val"
-    ]
-  },
-  {
-    "slug": "fake-ai-tools-distribute-malware-and-steal-credent-4b00b1",
-    "title": "Fake AI Tools Distribute Malware and Steal Credentials",
-    "summary": "Attackers distribute malicious applications masquerading as legitimate AI tools to steal credentials and deliver malware into corporate environments. The flaw exploits users' trust in AI platforms, enabling credential theft and lateral movement; no specific CVE, but exploitation requires user interaction. Security teams should verify tool provenance, enforce least privilege, and monitor for anomalous credential usage.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/the-ai-adoption-blind-spot-how-fake-ai-tools-put-enterprises-at-risk/",
-    "publishedAt": "2026-10-21T16:53:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-ai-tools-distribute-malware-and-steal-credent",
-      "article-4b00b1",
-      "4b00b1",
-      "fake-ai-tools-distribute-malware-and-steal-credentials"
-    ]
-  },
-  {
-    "slug": "hackers-use-ai-enabled-browsers-to-create-thousand-1e7f59",
-    "title": "Hackers Use AI‑Enabled Browsers to Create Thousands of Fake Accounts",
-    "summary": "Hackers use AI‑enabled antidetect browsers to create thousands of fake online accounts, each appearing as a distinct user, device, or location. The method lets a single operator run large social‑media networks that evade standard detection heuristics and attribution. Teams should monitor anomalous account creation, enforce device fingerprinting, and deploy behavioral analytics to block synthetic profiles.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-powered-browsers/",
-    "publishedAt": "2026-10-21T15:54:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-ai-enabled-browsers-to-create-thousand",
-      "article-1e7f59",
-      "1e7f59",
-      "hackers-use-ai-enabled-browsers-to-create-thousands-of-fake-"
     ]
   }
 ];

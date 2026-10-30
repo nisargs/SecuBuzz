@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 13:07:03 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 13:30:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Kernel‑RT Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-security-update-37d93d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-security-update-37d93d</guid>
+      <description><![CDATA[Red Hat issued a kernel‑rt update for Enterprise Linux 9.2 SAP Solutions, addressing multiple security issues. The patch mitigates vulnerabilities with CVSS scores ranging from moderate to high, as detailed in the referenced CVE entries. Red Hat recommends immediate installation of the update to maintain system integrity.]]></description>
+      <pubDate>Fri, 30 Oct 2026 13:08:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93047">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Syrian Hacker Sentenced for White House Hoax</title>
+      <link>https://secubuzz.com/news/syrian-hacker-sentenced-for-white-house-hoax-3abddc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/syrian-hacker-sentenced-for-white-house-hoax-3abddc</guid>
+      <description><![CDATA[A Syrian national, Ahmad Umar Agha, was convicted for orchestrating a fake White House explosion report via a hijacked Twitter account. The deception triggered a $136 billion market decline and was part of a broader Assad regime hacking conspiracy. A federal court sentenced him to 42 months imprisonment.]]></description>
+      <pubDate>Fri, 30 Oct 2026 13:00:40 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/30/syrian-hacker-sentenced-42-months-prison/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>GitLab CVE‑2026‑97229 Exploited in Wild</title>
+      <link>https://secubuzz.com/news/gitlab-cve-2026-97229-exploited-in-wild-6a6bed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-cve-2026-97229-exploited-in-wild-6a6bed</guid>
+      <description><![CDATA[CISA confirmed active exploitation of GitLab’s CVE‑2026‑97229, a maximum‑severity flaw patched earlier this month. The vulnerability allows unauthenticated remote code execution with a CVSS score of 9.8, enabling attackers to compromise affected instances. GitLab urges users to apply the latest patch immediately to prevent further compromise.]]></description>
+      <pubDate>Fri, 30 Oct 2026 13:00:32 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/">BleepingComputer</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>GitLab CVE-2026-97229 Enables Remote Code Execution on Alpine</title>
       <link>https://secubuzz.com/news/gitlab-cve-2026-97229-enables-remote-code-executio-b910c8</link>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 18:00:10 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/">Unit 42</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Ships JBoss EAP 8.1.9 Security Fix</title>
-      <link>https://secubuzz.com/news/red-hat-ships-jboss-eap-8-1-9-security-fix-37d9b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-ships-jboss-eap-8-1-9-security-fix-37d9b1</guid>
-      <description><![CDATA[Red Hat released a security update for JBoss Enterprise Application Platform 8.1.9 on Red Hat Enterprise Linux 9. The update addresses vulnerabilities rated as Important by Red Hat Product Security, with specific CVSS scores available through referenced CVE links. Administrators should apply the RHSA-2026:92056 patch to remediate the identified flaws in their JBoss EAP deployments.]]></description>
-      <pubDate>Wed, 28 Oct 2026 17:56:23 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:92056">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OffSec Releases Free PHP2Shell Exploitation Lab</title>
-      <link>https://secubuzz.com/news/offsec-releases-free-php2shell-exploitation-lab-17a67c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/offsec-releases-free-php2shell-exploitation-lab-17a67c</guid>
-      <description><![CDATA[OffSec released a free interactive lab in Proving Grounds Play enabling security practitioners to examine and defend against the critical PHP2Shell vulnerabilities, including CVE-2026-109618. The lab provides hands-on exploitation scenarios for the PHP2Shell flaw family, which researchers classify as critical severity, as AI-assisted research reshapes vulnerability discovery workflows.]]></description>
-      <pubDate>Wed, 28 Oct 2026 17:54:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Zero-Click Telegram Sticker Flaw Enables iOS Code Execution</title>
-      <link>https://secubuzz.com/news/zero-click-telegram-sticker-flaw-enables-ios-code-2356c5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zero-click-telegram-sticker-flaw-enables-ios-code-2356c5</guid>
-      <description><![CDATA[Security researcher Saifeldeen Aziz disclosed new zero-click vulnerabilities in Telegram stickers that bypass server-side validation checks. He chained the flaws to achieve arbitrary code execution on iOS devices, demonstrating a complete attack path without user interaction. The research was scheduled for presentation at OffensiveCon in Tokyo on October 28, 2026]]></description>
-      <pubDate>Wed, 28 Oct 2026 17:15:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/0-click-flaw-in-telegram-stickers/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

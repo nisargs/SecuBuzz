@@ -2539,5 +2539,8 @@
   "https://access.redhat.com/errata/RHSA-2026:88349",
   "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
   "https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/",
-  "https://cybersecuritynews.com/unauthorized-openai-codex/"
+  "https://cybersecuritynews.com/unauthorized-openai-codex/",
+  "https://access.redhat.com/errata/RHSA-2026:93047",
+  "https://www.helpnetsecurity.com/2026/10/30/syrian-hacker-sentenced-42-months-prison/",
+  "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/"
 ]
