@@ -5,6 +5,7 @@ import { SiteFooter } from './SiteFooter';
 import { ErrorBoundary } from './ErrorBoundary';
 import { SmartAppBanner } from './SmartAppBanner';
 import { BottomFeedbackCard } from './BottomFeedbackCard';
+import { FloatingAppToast } from './FloatingAppToast';
 
 export function Layout() {
   const { pathname } = useLocation();
@@ -30,5 +31,6 @@ export function Layout() {
       </main>
       <SiteFooter />
       <BottomFeedbackCard />
+      <FloatingAppToast />
     </div>);
 }

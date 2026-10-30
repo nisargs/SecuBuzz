@@ -27,7 +27,7 @@ export function BottomFeedbackCard() {
   return (
     <aside
       aria-label="Feedback and suggestions"
-      className="fixed bottom-5 left-1/2 -translate-x-1/2 sm:left-auto sm:right-6 sm:translate-x-0 z-40 flex flex-col items-center sm:items-end pointer-events-none"
+      className="fixed bottom-5 left-4 sm:left-6 z-40 flex flex-col items-start pointer-events-none"
     >
       <div className="pointer-events-auto">
         <AnimatePresence mode="wait" initial={false}>
@@ -63,7 +63,7 @@ export function BottomFeedbackCard() {
                   Finding Secu<span className="text-accent">Buzz</span> helpful?
                 </h4>
                 <p className="mt-1 text-xs text-muted leading-relaxed">
-                  Send a quick note directly to the developer. We read every email and build based on user signal.
+                  Send a quick note directly to the developer. I read every email and build based on user signal.
                 </p>
 
                 <div className="mt-4 space-y-2.5">
