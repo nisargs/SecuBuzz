@@ -1,5 +1,44 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+    "title": "Anthropic Exploits Kernel Root on MPTCP Servers",
+    "headline": "Anthropic Exploits Kernel Root on MPTCP Servers",
+    "summary": "A critical Linux kernel flaw enables unauthenticated attackers to execute commands as root on servers running Multipath TCP listeners. The vulnerability, identified as CVE-2026-98432, permits remote code execution without authentication, exposing critical infrastructure to full system compromise. Red Hat and other vendors have released patches; administrators must apply updates immediately to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-30T21:09:46.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
+    "sourceUrl": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
+    "title": "DOJ Calls for Privacy Ombudsman on Character.AI Sales",
+    "headline": "DOJ Calls for Privacy Ombudsman on Character.AI Sales",
+    "summary": "The DOJ’s Executive Office for U.S. Trustees has raised privacy concerns regarding the potential sale of Character.AI chat data. The agency seeks a consumer privacy ombudsman to advise courts on data regulation and sale terms. This initiative reflects growing scrutiny of AI data handling practices.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-10-30T20:45:00.000Z",
+    "url": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93077",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93077",
+    "title": "Red Hat Releases Critical Pillow Update for RHEL8",
+    "headline": "Red Hat Releases Critical Pillow Update for RHEL8",
+    "summary": "Red Hat has issued a critical security update for python‑pillow on RHEL 8, addressing multiple vulnerabilities that could allow remote code execution. The update carries a high CVSS base score and is available through the RHSA-2026:93077 advisory. Administrators must install the patch promptly to secure image processing services.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-30T19:24:14.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:93077",
+    "additionalSources": []
+  },
+  {
     "id": "https://arcticwolf.com/resources/report-au/agentic-security-operations-report/",
     "sourceUrl": "https://arcticwolf.com/resources/report-au/agentic-security-operations-report/",
     "title": "Arctic Wolf Releases 2026 Agentic Security Operations Report",
@@ -41,15 +80,20 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
-    "title": "Malicious Claude Code Extension Deploys SSH Backdoors",
-    "headline": "Malicious Claude Code Extension Deploys SSH Backdoors",
-    "summary": "A compromised version of Anthropic’s Claude Code VS Code extension was distributed via Cursor’s marketplace for approximately eleven hours, targeting up to 5,000 developers. The malware installs persistent SSH backdoors, enabling attackers to gain remote shell access to affected development machines. Users should uninstall the extension immediately and apply security updates to their development environments.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
+    "title": "Malicious Claude Extension Distributed via Cursor Marketplace Compromises Developers",
+    "headline": "Malicious Claude Extension Distributed via Cursor Marketplace Compromises Developers",
+    "summary": "A malicious version of Anthropic’s Claude Code extension was distributed through Cursor’s marketplace, targeting up to 5,000 developers. The Trojanized extension allowed attackers to inject malicious code and install persistent SSH backdoors, compromising development workspaces and source repositories. Users must uninstall the extension immediately, disable it, and apply vendor patches to prevent exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
     "publishedAt": "2026-10-30T14:36:54.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor"
+      }
+    ]
   },
   {
     "id": "https://therecord.media/syrian-electronic-army-hacker-sentenced-three-years",
@@ -4655,49 +4699,5 @@
     "publishedAt": "2026-10-22T10:12:18.000Z",
     "url": "https://cybersecuritynews.com/atlassian-security-update/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/privacy/2026/10/delivery-bots-accused-of-illegally-scanning-customers",
-    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/delivery-bots-accused-of-illegally-scanning-customers",
-    "title": "Delivery Robots Illegally Scan Customers’ Faces",
-    "headline": "Delivery Robots Illegally Scan Customers’ Faces",
-    "summary": "Delivery robots captured customers’ facial data without consent, linking scans to names and addresses for AI training. The flaw stems from unauthorized biometric data collection and lack of user permission controls, exposing personal identifiers to third parties. Users should verify robot privacy settings, and vendors must implement explicit consent mechanisms and data protection policies.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-22T09:39:23.000Z",
-    "url": "https://www.malwarebytes.com/blog/privacy/2026/10/delivery-bots-accused-of-illegally-scanning-customers",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source/",
-    "title": "Open-Source Projects Drop Security Controls, Exposing Unauthenticated Functionality",
-    "headline": "Open-Source Projects Drop Security Controls, Exposing Unauthenticated Functionality",
-    "summary": "Anthropic’s Frontier Red Team identified 493 instances where open-source projects enabled complex features for unauthenticated users, even when disabled or unnecessary. The root cause is missing access controls and premature code execution before security checks, increasing attack surface. Developers should audit configuration defaults, enforce least privilege, and move security checks earlier in the execution flow.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-22T09:10:55.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/22/anthropic-attack-surface-reduction-open-source/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/siemens-software-center-flaw-exploited/",
-    "sourceUrl": "https://cybersecuritynews.com/siemens-software-center-flaw-exploited/",
-    "title": "Hackers Exploit Siemens Software Center DLL Side-Loading Flaw",
-    "headline": "Hackers Exploit Siemens Software Center DLL Side-Loading Flaw",
-    "summary": "Hackers are exploiting a DLL side-loading flaw in Siemens Software Center to run malware through a trusted, signed application. Tracked as CVE-2026-110936, the weakness affects versions before 4.0.9.8 and enables unauthenticated remote code execution via malicious DLL injection. Siemens has released a patch that will be applied the next time the application starts; security teams should update immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-22T08:29:16.000Z",
-    "url": "https://cybersecuritynews.com/siemens-software-center-flaw-exploited/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/"
-      }
-    ]
   }
 ]

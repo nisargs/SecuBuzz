@@ -52,6 +52,28 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "GHSA-5xjx-3w67-w9x9",
+    "slug": "ghsa-5xjx-3w67-w9x9",
+    "vendor": "Actions",
+    "product": "pypa/gh-action-pypi-publish",
+    "name": "pypi-publish action revocation of CA in the chain that Sigstore uses in Trusted Publishing and Digital Attestations for PyPI",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-295",
+    "ransomware": false,
+    "description": "The [pypi-publish action][pypi-publish] versions before 1.14.2 used to bundle the emSign root CA trust store certificate through the certifi distribution. It has since been removed through the bundle and the new version no longer includes them. [pypi-publish]:",
+    "requiredAction": "Upgrade pypa/gh-action-pypi-publish to version 1.14.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5xjx-3w67-w9x9"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-59978",
     "slug": "cve-2026-59978",
     "vendor": "Composer",
@@ -1389,32 +1411,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115922"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115921",
-    "slug": "cve-2026-115921",
-    "vendor": "Pip",
-    "product": "onnx",
-    "name": "ONNX: Null Pointer Dereference in ScanInferenceFunction Due to Missing Required Attribute",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 6.2,
-    "severity": "Medium",
-    "cwe": "CWE-195",
-    "ransomware": false,
-    "description": "ONNX shape inference did not safely validate the required Scan num_scan_inputs attribute. Two malformed values could terminate or disrupt the process: 1. If the attribute was missing, ctx.getAttribute(\"num_scan_inputs\") returned null and was dereferenced. 2.",
-    "requiredAction": "Upgrade onnx to version 1.22.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m4pr-6v3c-6fgr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115921"
       }
     ],
     "source": "GITHUB"

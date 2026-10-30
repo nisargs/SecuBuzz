@@ -2554,5 +2554,9 @@
   "https://arcticwolf.com/resources/report-au/agentic-security-operations-report/",
   "https://access.redhat.com/errata/RHSA-2026:93071",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69446",
-  "https://www.malwarebytes.com/blog/news/2026/10/photo-id-bank-checks-face-scan-the-uks-age-check-options"
+  "https://www.malwarebytes.com/blog/news/2026/10/photo-id-bank-checks-face-scan-the-uks-age-check-options",
+  "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+  "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
+  "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor",
+  "https://access.redhat.com/errata/RHSA-2026:93077"
 ]

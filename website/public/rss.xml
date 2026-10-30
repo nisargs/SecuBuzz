@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 20:07:24 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 21:45:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Anthropic Exploits Kernel Root on MPTCP Servers</title>
+      <link>https://secubuzz.com/news/anthropic-exploits-kernel-root-on-mptcp-servers-636780</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-exploits-kernel-root-on-mptcp-servers-636780</guid>
+      <description><![CDATA[A critical Linux kernel flaw enables unauthenticated attackers to execute commands as root on servers running Multipath TCP listeners. The vulnerability, identified as CVE-2026-98432, permits remote code execution without authentication, exposing critical infrastructure to full system compromise. Red Hat and other vendors have released patches; administrators must apply updates immediately to mitigate exploitation.]]></description>
+      <pubDate>Fri, 30 Oct 2026 21:09:46 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/">BleepingComputer</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>DOJ Calls for Privacy Ombudsman on Character.AI Sales</title>
+      <link>https://secubuzz.com/news/doj-calls-for-privacy-ombudsman-on-character-ai-sa-2d5396</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/doj-calls-for-privacy-ombudsman-on-character-ai-sa-2d5396</guid>
+      <description><![CDATA[The DOJ’s Executive Office for U.S. Trustees has raised privacy concerns regarding the potential sale of Character.AI chat data. The agency seeks a consumer privacy ombudsman to advise courts on data regulation and sale terms. This initiative reflects growing scrutiny of AI data handling practices.]]></description>
+      <pubDate>Fri, 30 Oct 2026 20:45:00 GMT</pubDate>
+      <source url="https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Pillow Update for RHEL8</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-pillow-update-for-rhel8-37d93d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-pillow-update-for-rhel8-37d93d</guid>
+      <description><![CDATA[Red Hat has issued a critical security update for python‑pillow on RHEL 8, addressing multiple vulnerabilities that could allow remote code execution. The update carries a high CVSS base score and is available through the RHSA-2026:93077 advisory. Administrators must install the patch promptly to secure image processing services.]]></description>
+      <pubDate>Fri, 30 Oct 2026 19:24:14 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93077">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Arctic Wolf Releases 2026 Agentic Security Operations Report</title>
       <link>https://secubuzz.com/news/arctic-wolf-releases-2026-agentic-security-operati-678c5e</link>
@@ -35,13 +62,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Malicious Claude Code Extension Deploys SSH Backdoors</title>
-      <link>https://secubuzz.com/news/malicious-claude-code-extension-deploys-ssh-backdo-cf1d91</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-claude-code-extension-deploys-ssh-backdo-cf1d91</guid>
-      <description><![CDATA[A compromised version of Anthropic’s Claude Code VS Code extension was distributed via Cursor’s marketplace for approximately eleven hours, targeting up to 5,000 developers. The malware installs persistent SSH backdoors, enabling attackers to gain remote shell access to affected development machines. Users should uninstall the extension immediately and apply security updates to their development environments.]]></description>
+      <title>Malicious Claude Extension Distributed via Cursor Marketplace Compromises Developers</title>
+      <link>https://secubuzz.com/news/malicious-claude-extension-distributed-via-cursor-cf1d91</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-claude-extension-distributed-via-cursor-cf1d91</guid>
+      <description><![CDATA[A malicious version of Anthropic’s Claude Code extension was distributed through Cursor’s marketplace, targeting up to 5,000 developers. The Trojanized extension allowed attackers to inject malicious code and install persistent SSH backdoors, compromising development workspaces and source repositories. Users must uninstall the extension immediately, disable it, and apply vendor patches to prevent exploitation.]]></description>
       <pubDate>Fri, 30 Oct 2026 14:36:54 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/">BleepingComputer</source>
-      <category>Breach</category>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Syrian Hacker Sentenced for Western Attacks</title>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 29 Oct 2026 00:50:37 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/keystone-to-destroy-18-835-hardware-wallets-after-hacke">CyberNews AI</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Adds CVE‑2026‑111497 to Known Exploited Vulnerabilities Catalog; AWS and Cisco Issue Patches for Brotli RCE</title>
-      <link>https://secubuzz.com/news/cisa-adds-cve-2026-111497-to-known-exploited-vulne-1aa209</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-cve-2026-111497-to-known-exploited-vulne-1aa209</guid>
-      <description><![CDATA[CISA added CVE‑2026‑111497, a Brotli decompression flaw, to its Known Exploited Vulnerabilities catalog, affecting Google services. The flaw permits remote code execution or memory disclosure by exploiting improper input validation, enabling attackers to run arbitrary code. AWS and Cisco have issued patches for affected services, urging customers to update immediately to mitigate exploitation.]]></description>
-      <pubDate>Thu, 29 Oct 2026 00:36:45 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1">Cisco PSIRT</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco ASA/FTD SSL VPN DoS Vulnerability Patches Released</title>
-      <link>https://secubuzz.com/news/cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re-2f6ce2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re-2f6ce2</guid>
-      <description><![CDATA[Cisco ASA and FTD firewalls suffered a denial‑of‑service flaw that crashes SSL VPN devices, affecting access for many enterprises. The logic error, triggered by a crafted request during VPN connection when secondary authentication is enabled, forces a device reload and disrupts services. Cisco released patches and advised administrators to update or apply mitigations to prevent crashes, ensuring continued VPN availability.]]></description>
-      <pubDate>Wed, 28 Oct 2026 23:15:00 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Tunnel+Denial+of+Service+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>UAT-11473 Exploits Cisco SD-WAN Auth Bypass</title>
-      <link>https://secubuzz.com/news/uat-11473-exploits-cisco-sd-wan-auth-bypass-373777</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uat-11473-exploits-cisco-sd-wan-auth-bypass-373777</guid>
-      <description><![CDATA[Cisco Talos identified UAT-11473, a sophisticated APT group, exploiting CVE-2026-20127, an authentication bypass vulnerability in Cisco SD-WAN Catalyst Controller instances to gain unauthorized access. The group deployed KeyDrift malware on compromised systems after bypassing authentication controls. Organizations running Cisco SD-WAN Catalyst Controllers should verify patch status for CVE-2026-20127 and hunt for KeyDrift indicators.]]></description>
-      <pubDate>Wed, 28 Oct 2026 21:32:02 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/uat-11473-keydrift/">Cisco Talos</source>
-      <category>Nation State</category>
     </item>
   </channel>
 </rss>
