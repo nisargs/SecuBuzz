@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
+    "title": "SS7 and Diameter Signaling Exploits Enable Phone Tracking",
+    "headline": "SS7 and Diameter Signaling Exploits Enable Phone Tracking",
+    "summary": "Flaws in SS7 and Diameter signaling protocols allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising devices. The root cause is the trust model between mobile networks, enabling remote exploitation without device compromise. Vendors should deploy network-level mitigations and adopt secure signaling practices to defend against these attacks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-30T14:00:10.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-exploit-passwordless-telnet/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-passwordless-telnet/",
+    "title": "Kairos Botnet Exploits Passwordless Telnet on Linux",
+    "headline": "Kairos Botnet Exploits Passwordless Telnet on Linux",
+    "summary": "The Kairos botnet spreads to Linux devices by exploiting Telnet services that allow root login without passwords. The flaw enables remote code execution, allowing attackers to install a Go‑based DDoS agent. Administrators must disable Telnet, enforce strong authentication, and apply timely security patches to prevent infection.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-30T13:22:22.000Z",
+    "url": "https://cybersecuritynews.com/hackers-exploit-passwordless-telnet/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93047",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93047",
     "title": "Red Hat Releases Kernel‑RT Security Update",
@@ -4677,37 +4703,6 @@
     "source": "Malwarebytes Labs",
     "publishedAt": "2026-10-21T18:49:04.000Z",
     "url": "https://www.malwarebytes.com/blog/news/2026/10/whatsapp-chatbot-privacy-regulators",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
-    "title": "Plex Media Server Vulnerabilities Exploited in Plex2Shell Attacks",
-    "headline": "Plex Media Server Vulnerabilities Exploited in Plex2Shell Attacks",
-    "summary": "Attackers chain four Plex Media Server vulnerabilities via Plex2Shell to breach servers. The flaw chain allows remote code execution without authentication, exploiting memory corruption and privilege escalation, with active exploitation in the wild. Plex has released patches; administrators should apply the latest update and disable remote access until remediation immediately.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-21T18:34:42.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/plex2shell-how-to-detect-patch-plex-media-server-rce"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party",
-    "sourceUrl": "https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party",
-    "title": "Russian Actors Target U.S. Democratic Lawmakers Ahead of Midterms",
-    "headline": "Russian Actors Target U.S. Democratic Lawmakers Ahead of Midterms",
-    "summary": "Russian actors are reportedly targeting U.S. Democratic lawmakers to undermine party cohesion ahead of midterms. The threat assessment indicates no evidence of direct election infrastructure compromise, but signals intent to influence political discourse through cyber operations. Lawmakers should monitor for phishing, social engineering, and insider threat indicators, and coordinate with federal agencies for threat intelligence sharing.",
-    "category": "NATION_STATE",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-21T18:28:00.000Z",
-    "url": "https://therecord.media/democrat-lawmakers-say-russia-is-aiming-to-undermine-party",
     "additionalSources": []
   }
 ]

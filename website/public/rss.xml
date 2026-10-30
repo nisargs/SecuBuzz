@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 13:30:40 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 14:44:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SS7 and Diameter Signaling Exploits Enable Phone Tracking</title>
+      <link>https://secubuzz.com/news/ss7-and-diameter-signaling-exploits-enable-phone-t-1a6762</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ss7-and-diameter-signaling-exploits-enable-phone-t-1a6762</guid>
+      <description><![CDATA[Flaws in SS7 and Diameter signaling protocols allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising devices. The root cause is the trust model between mobile networks, enabling remote exploitation without device compromise. Vendors should deploy network-level mitigations and adopt secure signaling practices to defend against these attacks.]]></description>
+      <pubDate>Fri, 30 Oct 2026 14:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Kairos Botnet Exploits Passwordless Telnet on Linux</title>
+      <link>https://secubuzz.com/news/kairos-botnet-exploits-passwordless-telnet-on-linu-44a6df</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kairos-botnet-exploits-passwordless-telnet-on-linu-44a6df</guid>
+      <description><![CDATA[The Kairos botnet spreads to Linux devices by exploiting Telnet services that allow root login without passwords. The flaw enables remote code execution, allowing attackers to install a Go‑based DDoS agent. Administrators must disable Telnet, enforce strong authentication, and apply timely security patches to prevent infection.]]></description>
+      <pubDate>Fri, 30 Oct 2026 13:22:22 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-exploit-passwordless-telnet/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Releases Kernel‑RT Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-security-update-37d93d</link>
@@ -438,24 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 18:08:33 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html">The Hacker News</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Red Hat Patches mrtg on RHEL 9.4 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-patches-mrtg-on-rhel-9-4-sap-37d9b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-mrtg-on-rhel-9-4-sap-37d9b1</guid>
-      <description><![CDATA[Red Hat released a security update for the mrtg monitoring package on Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. The update addresses vulnerabilities rated as Important by Red Hat Product Security, with specific CVSS scores available through referenced CVE links. Administrators should apply the RHSA-2026:92051 patch to remediate the identified flaws in their mrtg installations.]]></description>
-      <pubDate>Wed, 28 Oct 2026 18:00:13 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:92051">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Unit 42 Maps Retail Holiday Threat Landscape</title>
-      <link>https://secubuzz.com/news/unit-42-maps-retail-holiday-threat-landscape-2a5d72</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-maps-retail-holiday-threat-landscape-2a5d72</guid>
-      <description><![CDATA[Unit 42 published an analysis of peak shopping season cyber threats targeting retail operations, covering ransomware campaigns and AI-powered attack vectors. The report outlines defensive strategies to protect customer trust and operational continuity during high-volume holiday periods. Security teams should review the guidance to align holiday-season incident response plans with emerging threat patterns.]]></description>
-      <pubDate>Wed, 28 Oct 2026 18:00:10 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/">Unit 42</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

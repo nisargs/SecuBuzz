@@ -2,6 +2,54 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "GHSA-fgxm-5hvv-x4vh",
+    "slug": "ghsa-fgxm-5hvv-x4vh",
+    "vendor": "Go",
+    "product": "soft-serve · charmbracelet",
+    "name": "charmbracelet/soft-serve HTTP responses disclose the existence and names of private repositories",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-203",
+    "ransomware": false,
+    "description": "Soft Serve answers Go's ?go-get=1 requests by walking up the requested path until it finds a repository, then rendering that repository's name and clone URL into a go-import meta tag. The walk checked that each candidate repository existed, but never that the caller could read it.",
+    "requiredAction": "Upgrade soft-serve · charmbracelet to version 0.12.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fgxm-5hvv-x4vh"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-119282",
+    "slug": "cve-2026-119282",
+    "vendor": "npm",
+    "product": "@nx/maven",
+    "name": "@nx/maven and @nx/gradle have OS command injection via nx.json plugin options",
+    "dateAdded": "2026-10-30",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "@nx/maven and @nx/gradle spawn their project-graph analyzers through a shell and interpolate plugin options read from nx.json straight into the command line. Because a shell parses the whole line, an option value containing shell syntax is executed as a command by any nx command that constructs the project graph.",
+    "requiredAction": "Upgrade @nx/maven to version 22.7.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qm8w-vx34-5j9j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119282"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-97229",
     "slug": "cve-2026-97229",
     "vendor": "GitLab",
@@ -1321,58 +1369,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115914"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115915",
-    "slug": "cve-2026-115915",
-    "vendor": "Pip",
-    "product": "vllm",
-    "name": "vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 8.1,
-    "severity": "High",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "In vLLM 0.30.0, ImageMediaIO passes attacker-controlled image bytes to Pillow's format autodetection without restricting the accepted formats; the request's MIME label does not constrain decoder selection. An EPS payload labeled image/png reached the host's Ghostscript executable.",
-    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h3rc-j82p-2c3h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115915"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115912",
-    "slug": "cve-2026-115912",
-    "vendor": "Pip",
-    "product": "vllm",
-    "name": "vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled",
-    "dateAdded": "2026-10-28",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-502",
-    "ransomware": false,
-    "description": "When --mm-processor-cache-type shm is enabled, vLLM's multimodal SHM cache represents a cached item with an address and monotonic_id pair and treats that pair as authority to dereference shared memory in the worker.",
-    "requiredAction": "Upgrade vllm to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6757-hggm-hp2w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115912"
       }
     ],
     "source": "GITHUB"
