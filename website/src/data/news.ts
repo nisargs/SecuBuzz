@@ -45,6 +45,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-java-21-openjdk-for-rhel-37e504",
+    "title": "Red Hat Updates java‑21‑openjdk for RHEL",
+    "summary": "Red Hat released a security update for java‑21‑openjdk on RHEL 8, RHEL 9.4, 9.6, and 9, addressing multiple vulnerabilities identified by CVE references. The update mitigates memory corruption and privilege escalation flaws that could allow local attackers to execute arbitrary code. Red Hat recommends applying the update immediately to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88349",
+    "publishedAt": "2026-10-30T00:33:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-java-21-openjdk-for-rhel",
+      "article-37e504",
+      "37e504"
+    ]
+  },
+  {
     "slug": "binance-investigates-5-8b-crypto-theft-93b9d9",
     "title": "Binance Investigates $5.8B Crypto Theft",
     "summary": "Binance is investigating a potential breach that may have stolen up to $5.8 billion in digital assets, potentially the largest crypto hack ever. The incident involved unauthorized access to user wallets and exchange infrastructure, with attackers exploiting unknown vulnerabilities or credential compromise. Binance has issued a statement and is working with law enforcement to contain the breach and recover assets.",
@@ -6493,23 +6510,6 @@ export const news: NewsBrief[] = [
       "article-123072",
       "123072",
       "php-core-vulnerabilities-enable-full-server-control-exploite"
-    ]
-  },
-  {
-    "slug": "context-bombs-reduce-ai-attack-success-by-91-20f53f",
-    "title": "Context Bombs Reduce AI Attack Success by 91%",
-    "summary": "Deceptive prompts, termed 'Context Bombs,' were introduced to mislead AI agents into pursuing fake targets, reducing attack success rates. Testing showed a 91% drop in successful attacks and a 23-fold increase in the cost required for a successful exploit. Security teams should incorporate context bombs into prompt engineering workflows and validate agent outputs to mitigate deceptive attack vectors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
-    "publishedAt": "2026-10-21T15:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "context-bombs-reduce-ai-attack-success-by-91",
-      "article-20f53f",
-      "20f53f"
     ]
   }
 ];

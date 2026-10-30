@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 06:23:41 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 07:45:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Scammers Rebuild Fake Shopping Sites Rapidly</title>
@@ -24,6 +24,15 @@
       <pubDate>Fri, 30 Oct 2026 03:30:17 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33472">SANS Internet Storm Center</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Updates java‑21‑openjdk for RHEL</title>
+      <link>https://secubuzz.com/news/red-hat-updates-java-21-openjdk-for-rhel-37e504</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-java-21-openjdk-for-rhel-37e504</guid>
+      <description><![CDATA[Red Hat released a security update for java‑21‑openjdk on RHEL 8, RHEL 9.4, 9.6, and 9, addressing multiple vulnerabilities identified by CVE references. The update mitigates memory corruption and privilege escalation flaws that could allow local attackers to execute arbitrary code. Red Hat recommends applying the update immediately to maintain system integrity.]]></description>
+      <pubDate>Fri, 30 Oct 2026 00:33:04 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:88349">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Binance Investigates $5.8B Crypto Theft</title>
@@ -447,15 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 17:06:56 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_01511209741.html">Google Chrome Releases</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Sony ISP Breach Exposes 2.5 Million Records</title>
-      <link>https://secubuzz.com/news/sony-isp-breach-exposes-2-5-million-records-1edde0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sony-isp-breach-exposes-2-5-million-records-1edde0</guid>
-      <description><![CDATA[Sony Network Communications confirmed a breach that exposed approximately 2.5 million customer records, including personal data of current and former users. The compromise involved unauthorized access to Sony ISP subsidiary databases, potentially allowing attackers to harvest sensitive information. Sony has advised affected customers to monitor accounts and change credentials while deploying additional security controls.]]></description>
-      <pubDate>Wed, 28 Oct 2026 16:45:47 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
