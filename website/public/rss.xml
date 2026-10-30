@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 08:44:19 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 09:44:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GitLab CVE-2026-97229 Enables Remote Code Execution on Alpine</title>
+      <link>https://secubuzz.com/news/gitlab-cve-2026-97229-enables-remote-code-executio-b910c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-cve-2026-97229-enables-remote-code-executio-b910c8</guid>
+      <description><![CDATA[A vulnerability in GitLab, identified as CVE-2026-97229, permits unauthenticated attackers to execute arbitrary code on servers running Alpine Linux. The flaw originates from improper input validation in GitLab’s authentication module, enabling remote code execution with a CVSS score of 10.0. GitLab has released an urgent patch; administrators must update immediately to mitigate exploitation.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:32:27 GMT</pubDate>
+      <source url="https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>GLM-5.3 Demonstrates Offensive Cyber Capabilities</title>
+      <link>https://secubuzz.com/news/glm-5-3-demonstrates-offensive-cyber-capabilities-753263</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/glm-5-3-demonstrates-offensive-cyber-capabilities-753263</guid>
+      <description><![CDATA[Open-weight AI model GLM-5.3 was evaluated against 13 offensive cyber scenarios using CyScenarioBench. The model completed three scenarios, successfully planning and executing multi‑stage attacks within simulated networks. The assessment highlights the model’s potential for adversarial use, underscoring the need for careful monitoring of open‑weight LLM deployments.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:23:25 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Grey‑Market Relay Hijacks OpenAI Codex and Claude Tools</title>
+      <link>https://secubuzz.com/news/grey-market-relay-hijacks-openai-codex-and-claude-4f9bb1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/grey-market-relay-hijacks-openai-codex-and-claude-4f9bb1</guid>
+      <description><![CDATA[A clandestine relay service installs OpenAI Codex and Anthropic Claude on corporate machines, redirecting all prompts, files, and tokens through controlled servers. The manipulation disables sandbox protections and exfiltrates enterprise data. Security teams should audit AI tool configurations, enforce strict network segmentation, and monitor outbound traffic for anomalous patterns.]]></description>
+      <pubDate>Fri, 30 Oct 2026 08:50:24 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/unauthorized-openai-codex/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Scammers Rebuild Fake Shopping Sites Rapidly</title>
       <link>https://secubuzz.com/news/scammers-rebuild-fake-shopping-sites-rapidly-3347c6</link>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 28 Oct 2026 17:15:58 GMT</pubDate>
       <source url="https://cybersecuritynews.com/0-click-flaw-in-telegram-stickers/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GitHub Ships npm Package Firewall for Pre-Install Scanning</title>
-      <link>https://secubuzz.com/news/github-ships-npm-package-firewall-for-pre-install-3a9011</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-ships-npm-package-firewall-for-pre-install-3a9011</guid>
-      <description><![CDATA[GitHub announced a package firewall that evaluates npm packages against enterprise policy before installation, blocking known malware, critical vulnerabilities, and brand-new versions. The checks execute before a package reaches a developer laptop, build pipeline, or coding agent. Any developer can enable the firewall by pointing npm at it, part of four security additions addressing AI-accelerated software development]]></description>
-      <pubDate>Wed, 28 Oct 2026 17:09:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/28/github-package-firewall-npm/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Enables One-Tap Installs for Approved Third-Party Stores</title>
-      <link>https://secubuzz.com/news/google-enables-one-tap-installs-for-approved-third-14b753</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-enables-one-tap-installs-for-approved-third-14b753</guid>
-      <description><![CDATA[Google is enabling approved third-party Android app stores outside the U.S. to offer one-tap installs and background updates, bypassing confirmation screens. Stores must pass identity checks and submit their full catalog and every update to Google for ongoing malware scanning. The feature becomes available to qualifying stores starting December 1, expanding sideloading while retaining centralized security review.]]></description>
-      <pubDate>Wed, 28 Oct 2026 17:08:09 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome 157 Released for Android</title>
-      <link>https://secubuzz.com/news/chrome-157-released-for-android-5c6d27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-157-released-for-android-5c6d27</guid>
-      <description><![CDATA[Chrome 157 (157.0.8103.30) has been rolled out to a small percentage of Android users, with full availability expected on Google Play in the coming days. The update focuses on stability and performance enhancements, with detailed changes documented in the Git log. Users encountering issues should file bugs through the provided channels.]]></description>
-      <pubDate>Wed, 28 Oct 2026 17:06:56 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_01511209741.html">Google Chrome Releases</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,44 @@
 [
   {
+    "id": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
+    "sourceUrl": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
+    "title": "GitLab CVE-2026-97229 Enables Remote Code Execution on Alpine",
+    "headline": "GitLab CVE-2026-97229 Enables Remote Code Execution on Alpine",
+    "summary": "A vulnerability in GitLab, identified as CVE-2026-97229, permits unauthenticated attackers to execute arbitrary code on servers running Alpine Linux. The flaw originates from improper input validation in GitLab’s authentication module, enabling remote code execution with a CVSS score of 10.0. GitLab has released an urgent patch; administrators must update immediately to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-30T09:32:27.000Z",
+    "url": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/",
+    "title": "GLM-5.3 Demonstrates Offensive Cyber Capabilities",
+    "headline": "GLM-5.3 Demonstrates Offensive Cyber Capabilities",
+    "summary": "Open-weight AI model GLM-5.3 was evaluated against 13 offensive cyber scenarios using CyScenarioBench. The model completed three scenarios, successfully planning and executing multi‑stage attacks within simulated networks. The assessment highlights the model’s potential for adversarial use, underscoring the need for careful monitoring of open‑weight LLM deployments.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-30T09:23:25.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/unauthorized-openai-codex/",
+    "sourceUrl": "https://cybersecuritynews.com/unauthorized-openai-codex/",
+    "title": "Grey‑Market Relay Hijacks OpenAI Codex and Claude Tools",
+    "headline": "Grey‑Market Relay Hijacks OpenAI Codex and Claude Tools",
+    "summary": "A clandestine relay service installs OpenAI Codex and Anthropic Claude on corporate machines, redirecting all prompts, files, and tokens through controlled servers. The manipulation disables sandbox protections and exfiltrates enterprise data. Security teams should audit AI tool configurations, enforce strict network segmentation, and monitor outbound traffic for anomalous patterns.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-30T08:50:24.000Z",
+    "url": "https://cybersecuritynews.com/unauthorized-openai-codex/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
     "title": "Scammers Rebuild Fake Shopping Sites Rapidly",
@@ -4669,45 +4708,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-21T15:54:49.000Z",
     "url": "https://cybersecuritynews.com/hackers-use-ai-powered-browsers/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/hackers-use-gentlemen-ransomware/",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-gentlemen-ransomware/",
-    "title": "Gentlemen Ransomware Disables Windows Defender and Destroying Backups",
-    "headline": "Gentlemen Ransomware Disables Windows Defender and Destroying Backups",
-    "summary": "The Gentlemen ransomware targets Windows systems, disabling Microsoft Defender real‑time protection, adding broad exclusions, stopping backup services, and deleting Volume Shadow Copies. The malware exploits privilege escalation and service manipulation to weaken defenses, encrypt files, and increase recovery complexity, with active exploitation reported in the wild. Apply patches, enable Defender, restore Shadow Copies, and monitor services.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-21T15:30:43.000Z",
-    "url": "https://cybersecuritynews.com/hackers-use-gentlemen-ransomware/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
-    "title": "Survey Reveals Executives Feel Untouchable Amid Digital‑Physical Security Blending",
-    "headline": "Survey Reveals Executives Feel Untouchable Amid Digital‑Physical Security Blending",
-    "summary": "Survey reveals that 80% of security and wealth professionals believe cybersecurity and physical security are inseparable, indicating executives feel untouchable. The study highlights a perception that digital exposure can translate into tangible physical threats, raising concerns about executive protection strategies. Organizations should integrate cyber and physical risk assessments, update incident response plans, and conduct training to mitigate emerging hybrid threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-21T15:29:09.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
-    "additionalSources": []
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
-    "sourceUrl": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
-    "title": "PHP Core Vulnerabilities Enable Full Server Control, Exploited in Wild",
-    "headline": "PHP Core Vulnerabilities Enable Full Server Control, Exploited in Wild",
-    "summary": "A pair of critical PHP core vulnerabilities allow attackers to seize full control over affected servers, leading to widespread site outages and 404 errors across the web. The flaws enable remote code execution through malformed input, with active exploits already in the wild, causing significant operational impact.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Krebs on Security",
-    "publishedAt": "2026-10-21T15:26:07.000Z",
-    "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
     "additionalSources": []
   }
 ]
