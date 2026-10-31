@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 12:46:55 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 13:46:18 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Chainalysis Data Breach Exposes Customer Details</title>
+      <link>https://secubuzz.com/news/chainalysis-data-breach-exposes-customer-details-3eab49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-data-breach-exposes-customer-details-3eab49</guid>
+      <description><![CDATA[Chainalysis, a blockchain analytics firm, suffered a data breach after attackers used offensive agentic techniques to access internal systems and tools. The breach exposed customer names, email addresses, user IDs, and organizational roles, compromising sensitive personal information. Chainalysis has disclosed the incident and is investigating the extent of the compromise; affected customers should monitor for suspicious activity.]]></description>
+      <pubDate>Sat, 31 Oct 2026 12:50:09 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Chainalysis Reports Internal Tool Breach Exposing Customer Identities</title>
       <link>https://secubuzz.com/news/chainalysis-reports-internal-tool-breach-exposing-470746</link>
@@ -24,6 +33,15 @@
       <pubDate>Sat, 31 Oct 2026 11:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/">SecurityWeek</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Malicious Claude Code Extension Installs SSH Backdoor</title>
+      <link>https://secubuzz.com/news/malicious-claude-code-extension-installs-ssh-backd-20ebc5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-claude-code-extension-installs-ssh-backd-20ebc5</guid>
+      <description><![CDATA[Cursor confirmed that malicious Claude Code extension packages were available in the VS Code Marketplace for about 11 hours, targeting Windows and macOS users. The altered packages attempted to install an SSH backdoor, providing attackers with persistent remote access once installed. Cursor recommends users uninstall the affected extensions immediately and update to the latest verified versions to mitigate the threat.]]></description>
+      <pubDate>Sat, 31 Oct 2026 10:41:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/malicious-claude-code-extension-with-cursor/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Attackers Chain Three Ivanti Flaws for Root Access</title>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 30 Oct 2026 12:04:13 GMT</pubDate>
       <source url="https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Adds Two Ivanti Vulnerabilities to KEV Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-two-ivanti-vulnerabilities-to-kev-catalo-65b7a3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-two-ivanti-vulnerabilities-to-kev-catalo-65b7a3</guid>
-      <description><![CDATA[CISA added two actively exploited Ivanti Connect Secure vulnerabilities, CVE‑2026‑111357 and CVE‑2026‑118527, to its Known Exploited Vulnerabilities catalog. CVE‑2026‑111357 permits unauthenticated access to critical functions, while CVE‑2026‑118527 allows attackers to predict session identifiers, both enabling potential credential theft or session hijacking. Federal agencies must prioritize patching or applying mitigations per BOD 26‑04 to reduce exposure to these high‑risk flaws.]]></description>
-      <pubDate>Fri, 30 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Hackers Leak 41,000 DHS Employee Data</title>
-      <link>https://secubuzz.com/news/hackers-leak-41-000-dhs-employee-data-369d27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-leak-41-000-dhs-employee-data-369d27</guid>
-      <description><![CDATA[A hacker group claims to have exfiltrated personal data of 41,000 DHS employees, including contact details and group memberships. The leak exposes sensitive employee information that could facilitate social engineering or insider threat attacks. Security teams should verify compromised accounts, enforce MFA, and conduct a comprehensive audit of exposed data to mitigate exploitation.]]></description>
-      <pubDate>Fri, 30 Oct 2026 11:33:12 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/hackers-steal-and-publish-data-on-41000-homeland-security-workers">Malwarebytes Labs</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+    "title": "Chainalysis Data Breach Exposes Customer Details",
+    "headline": "Chainalysis Data Breach Exposes Customer Details",
+    "summary": "Chainalysis, a blockchain analytics firm, suffered a data breach after attackers used offensive agentic techniques to access internal systems and tools. The breach exposed customer names, email addresses, user IDs, and organizational roles, compromising sensitive personal information. Chainalysis has disclosed the incident and is investigating the extent of the compromise; affected customers should monitor for suspicious activity.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-10-31T12:50:09.000Z",
+    "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
     "sourceUrl": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
     "title": "Chainalysis Reports Internal Tool Breach Exposing Customer Identities",
@@ -23,6 +36,19 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-31T11:00:00.000Z",
     "url": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/malicious-claude-code-extension-with-cursor/",
+    "sourceUrl": "https://cybersecuritynews.com/malicious-claude-code-extension-with-cursor/",
+    "title": "Malicious Claude Code Extension Installs SSH Backdoor",
+    "headline": "Malicious Claude Code Extension Installs SSH Backdoor",
+    "summary": "Cursor confirmed that malicious Claude Code extension packages were available in the VS Code Marketplace for about 11 hours, targeting Windows and macOS users. The altered packages attempted to install an SSH backdoor, providing attackers with persistent remote access once installed. Cursor recommends users uninstall the affected extensions immediately and update to the latest verified versions to mitigate the threat.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-31T10:41:18.000Z",
+    "url": "https://cybersecuritynews.com/malicious-claude-code-extension-with-cursor/",
     "additionalSources": []
   },
   {
@@ -750,6 +776,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+    "title": "Trojanized Claude Code Extension Installs Persistent SSH Backdoor",
+    "headline": "Trojanized Claude Code Extension Installs Persistent SSH Backdoor",
+    "summary": "Researchers disclosed a trojanized Claude Code extension distributed via the Cursor Marketplace as version 2.1.313, attempting to install a persistent SSH backdoor on affected systems. The malicious update was published under the extension's legitimate publisher identity, enabling attackers to maintain persistent access. Cursor temporarily shut down the marketplace following the disclosure.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-30T08:55:47.000Z",
+    "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/unauthorized-openai-codex/",
     "sourceUrl": "https://cybersecuritynews.com/unauthorized-openai-codex/",
     "title": "Grey‑Market Relay Hijacks OpenAI Codex and Claude Tools",
@@ -760,6 +799,19 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-30T08:50:24.000Z",
     "url": "https://cybersecuritynews.com/unauthorized-openai-codex/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
+    "sourceUrl": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
+    "title": "TeamViewer Integer Overflow Enables Arbitrary Code Execution",
+    "headline": "TeamViewer Integer Overflow Enables Arbitrary Code Execution",
+    "summary": "An integer overflow vulnerability tracked as CVE-2026-111585 could allow malicious hosts to execute arbitrary code on viewer systems during remote support sessions. The flaw affects TeamViewer's remote access infrastructure and enables takeover of support technician machines. Organizations using affected TeamViewer versions should apply vendor patches immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-30T08:44:49.000Z",
+    "url": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
     "additionalSources": []
   },
   {
@@ -802,6 +854,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/10/30/cisco-talos-it-help-desk-vishing/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/cisco-talos-it-help-desk-vishing/",
+    "title": "Fake IT Help Desk Calls Lead to Ransomware Infections",
+    "headline": "Fake IT Help Desk Calls Lead to Ransomware Infections",
+    "summary": "Attackers posing as IT help desk staff contacted employees by phone, email and Microsoft Teams in Q3 2026, leveraging known employee names and email addresses to establish remote access sessions. In one engagement, the resulting access led to a ransomware deployment. Cisco Talos Incident Response documented multiple such campaigns across several engagements.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-30T06:30:26.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/30/cisco-talos-it-help-desk-vishing/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
     "title": "Scammers Rebuild Fake Shopping Sites Rapidly",
@@ -812,6 +877,19 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-30T05:30:26.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/10/30/bitdefender-smart-tvs-vulnerabilities-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/bitdefender-smart-tvs-vulnerabilities-report/",
+    "title": "Smart TVs Harbor Unpatched Security Flaws and Tracking Capabilities",
+    "headline": "Smart TVs Harbor Unpatched Security Flaws and Tracking Capabilities",
+    "summary": "Bitdefender's 2026 IoT Security Landscape Report found smart TVs and connected plugs represented significant shares of recorded household device vulnerabilities, with televisions at 22.7% and smart plugs at 22.4%. Analysis covered approximately 10.4 million protected home routers between January and September 2026. Household electronics can remain in use for five to ten years, extending exposure to unpatched flaws.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-10-30T05:00:27.000Z",
+    "url": "https://www.helpnetsecurity.com/2026/10/30/bitdefender-smart-tvs-vulnerabilities-report/",
     "additionalSources": []
   },
   {
@@ -2178,6 +2256,32 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-28T05:00:19.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/28/kroll-third-party-data-breaches-insurance-claims-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-813/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-813/",
+    "title": "Ultralytics Check_det_dataset Remote Code Execution",
+    "headline": "Ultralytics Check_det_dataset Remote Code Execution",
+    "summary": "A remote code execution flaw in Ultralytics’ check_det_dataset function lets attackers inject malicious code via code injection. Identified as CVE-2026-118614, the vulnerability has a CVSS score of 7.8 and needs user interaction, such as visiting a malicious page or opening a malicious file, to exploit. No patch has been released yet; security teams should monitor vendor advisories for updates.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-813/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-812/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-812/",
+    "title": "Ultralytics Torch_load Deserialization RCE",
+    "headline": "Ultralytics Torch_load Deserialization RCE",
+    "summary": "A remote code execution vulnerability in Ultralytics’ torch_load function permits attackers to inject malicious code via deserialization. The flaw, CVE-2026-118613, scores 7.8 on CVSS and requires user interaction, such as opening a malicious file or visiting a malicious page, to exploit. No patch has been issued; teams should watch vendor advisories for remediation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-812/",
     "additionalSources": []
   },
   {
@@ -4547,110 +4651,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-23T14:23:37.000Z",
     "url": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/multiple-waves-of-ddos-attacks-caused-in-north-korea/",
-    "sourceUrl": "https://cybersecuritynews.com/multiple-waves-of-ddos-attacks-caused-in-north-korea/",
-    "title": "North Korea’s State Websites Hit by Multi‑Country DDoS Floods",
-    "headline": "North Korea’s State Websites Hit by Multi‑Country DDoS Floods",
-    "summary": "Multiple waves of DDoS attacks originating from Vietnam, the Philippines, Venezuela, and other nations disrupted North Korea’s public internet services, taking major state websites offline. The floods began at 02:01 UTC on October 20, overwhelming the country’s bandwidth and rendering sites unreachable. Network operators should deploy rate limiting, scrubbing services, and traffic anomaly detection to defend against such volumetric assaults.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T14:22:35.000Z",
-    "url": "https://cybersecuritynews.com/multiple-waves-of-ddos-attacks-caused-in-north-korea/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
-    "sourceUrl": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
-    "title": "Node.js Brotli Decoder RCE Exploit (CVE‑2026‑111497)",
-    "headline": "Node.js Brotli Decoder RCE Exploit (CVE‑2026‑111497)",
-    "summary": "A high‑severity memory flaw in Node.js’s Brotli decoder (CVE‑2026‑111497) allows attackers to execute code via specially crafted Brotli‑compressed data. Researchers demonstrated a working Node2Shell exploit that achieves remote code execution without authentication, exposing enterprise applications to immediate risk. Red Hat and Node.js maintainers have released patches; administrators should apply the latest Node.js update and monitor for anomalous Brotli traffic.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T14:11:40.000Z",
-    "url": "https://cybersecuritynews.com/new-node2shell-node-js-rce-exploit/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
-    "title": "AI Agent Manipulation via Malicious Inputs Exploits Legitimate Permissions",
-    "headline": "AI Agent Manipulation via Malicious Inputs Exploits Legitimate Permissions",
-    "summary": "AI agents can be manipulated through malicious emails, websites, and plugins to execute commands, steal data, or delete files using their legitimate permissions. The flaw arises from insufficient input validation and lack of runtime control enforcement, enabling attackers to hijack agent operations. Gen Digital recommends implementing Agent Trust Hub skill verification, secure connectivity, and runtime controls to mitigate this risk.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-23T14:00:10.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
-    "title": "CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege",
-    "headline": "CVE-2026-102208: Windows Win32 Kernel Subsystem Elevation of Privilege",
-    "summary": "CVE-2026-102208 is an elevation of privilege flaw in Windows Win32 Kernel Subsystem affecting all Windows versions. The flaw allows local attackers to gain SYSTEM privileges via malformed input, with CVSS 8.5, and a public PoC exists. Microsoft released a patch in the latest cumulative update; administrators should apply it immediately and enforce least privilege.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-23T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102208",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
-    "title": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
-    "headline": "CVE‑2026‑83862: Windows Network Load Balancing RCE Exploit Adjusted CVSS",
-    "summary": "CVE‑2026‑83862 is a Windows Network Load Balancing Remote Code Execution vulnerability with a CVSS base score of 8.8 after an attack vector adjustment to Adjacent. The flaw requires Layer 2 adjacency and allows authenticated attackers to execute arbitrary code on affected systems. Microsoft has released a patch; customers should install the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-23T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83862",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk",
-    "title": "Caribbean Cyber Threats Amplify Global Risk",
-    "headline": "Caribbean Cyber Threats Amplify Global Risk",
-    "summary": "Caribbean cyber threats are escalating, demonstrating how regional exploit activity can amplify global risk. The lack of robust security assurance allows attackers to accelerate exploitation, increasing the likelihood of cross-border compromise. Stakeholders should strengthen threat intelligence sharing, enforce rigorous vulnerability management, and adopt proactive security frameworks to mitigate cascading impacts.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-23T14:00:00.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/why-caribbean-threats-cascade-global-cyber-risk",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88693",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88693",
-    "title": "Red Hat PHP Security Update for RHEL 7 ELS",
-    "headline": "Red Hat PHP Security Update for RHEL 7 ELS",
-    "summary": "An update for PHP is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support, addressing multiple security issues identified in the product. The update carries an Important security impact rating, with CVSS base scores listed in the CVE references for each vulnerability. Red Hat recommends applying the patch immediately to mitigate potential exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T13:54:13.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88693",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
-    "title": "Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed",
-    "headline": "Enterprise Firewalls and VPNs Breached, 70,000 Credentials Exposed",
-    "summary": "Hackers breached exposed Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls, accessing over 70,000 credentials across multiple organizations worldwide. The attack leveraged misconfigured network edge devices, allowing attackers to enumerate and exfiltrate stored credentials. Immediate patching of firewall firmware, tightening of VPN authentication, and network segmentation are required to remediate the breach.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-23T13:50:56.000Z",
-    "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
     "additionalSources": []
   }
 ]
