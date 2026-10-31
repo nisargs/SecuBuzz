@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 13:46:18 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 14:45:25 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Chainalysis Data Breach Exposes Customer Details</title>
@@ -278,6 +278,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>North Korea Group Steals Credentials, Injects Malware into GitHub</title>
+      <link>https://secubuzz.com/news/north-korea-group-steals-credentials-injects-malwa-63ada6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-group-steals-credentials-injects-malwa-63ada6</guid>
+      <description><![CDATA[North Korea-aligned group DeceptiveDevelopment stole developer credentials to modify code in public and private GitHub repositories between April and September 2026. The compromised accounts enabled injection of malicious payloads into trusted software packages, creating new supply‑chain entry points for attackers. Security teams should enforce multi‑factor authentication, monitor repository activity, and apply the latest security patches to mitigate credential misuse.]]></description>
+      <pubDate>Fri, 30 Oct 2026 15:15:02 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/north-korean-hackers-2/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>APT Group Uses NetamLoader to Target Asian Government Windows</title>
+      <link>https://secubuzz.com/news/apt-group-uses-netamloader-to-target-asian-governm-6eb5ab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apt-group-uses-netamloader-to-target-asian-governm-6eb5ab</guid>
+      <description><![CDATA[An unnamed APT group deployed NetamLoader, a malware framework, inside Windows 10 update packages used exclusively by Asian government agencies. The loader leverages trusted software binaries to execute payloads, bypassing standard update verification and enabling persistent footholds on target systems. Defenders should validate update signatures, isolate critical infrastructure, and apply the latest Windows security patches to prevent exploitation.]]></description>
+      <pubDate>Fri, 30 Oct 2026 15:02:03 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/netamloader-malware/">Cyber Security News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
       <title>UEFI Flaw Affects Majority of Servers</title>
       <link>https://secubuzz.com/news/uefi-flaw-affects-majority-of-servers-5f262a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/uefi-flaw-affects-majority-of-servers-5f262a</guid>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 30 Oct 2026 13:00:02 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/10/photo-id-bank-checks-face-scan-the-uks-age-check-options">Malwarebytes Labs</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Trezor Alerts on Hardware Implant in CryptoBilis Wallets</title>
-      <link>https://secubuzz.com/news/trezor-alerts-on-hardware-implant-in-cryptobilis-w-5bae48</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trezor-alerts-on-hardware-implant-in-cryptobilis-w-5bae48</guid>
-      <description><![CDATA[Trezor Safe 5 wallets from CryptoBilis reportedly include an extra circuit board that sends recovery phrases over mobile networks. The implant risks credential theft, exposing users to unauthorized access of crypto holdings, though Trezor has not examined it. Owners should move funds to new wallets with fresh recovery phrases and monitor for suspicious activity.]]></description>
-      <pubDate>Fri, 30 Oct 2026 12:21:56 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>WordPress Race Condition Enables Unauthenticated Remote Code Execution</title>
-      <link>https://secubuzz.com/news/wordpress-race-condition-enables-unauthenticated-r-2df166</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wordpress-race-condition-enables-unauthenticated-r-2df166</guid>
-      <description><![CDATA[WordPress hosts a high‑severity unauthenticated race condition that can lead to remote code execution on vulnerable installations. Threat actors are actively attempting to exploit the flaw, but no confirmed in‑the‑wild exploitation has been reported. Site owners should apply the latest security patch and monitor for anomalous activity until a vendor fix is released.]]></description>
-      <pubDate>Fri, 30 Oct 2026 12:04:13 GMT</pubDate>
-      <source url="https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

@@ -562,6 +562,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "north-korea-group-steals-credentials-injects-malwa-63ada6",
+    "title": "North Korea Group Steals Credentials, Injects Malware into GitHub",
+    "summary": "North Korea-aligned group DeceptiveDevelopment stole developer credentials to modify code in public and private GitHub repositories between April and September 2026. The compromised accounts enabled injection of malicious payloads into trusted software packages, creating new supply‑chain entry points for attackers. Security teams should enforce multi‑factor authentication, monitor repository activity, and apply the latest security patches to mitigate credential misuse.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers-2/",
+    "publishedAt": "2026-10-30T15:15:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korea-group-steals-credentials-injects-malwa",
+      "article-63ada6",
+      "63ada6",
+      "north-korea-group-steals-credentials-injects-malware-into-gi"
+    ]
+  },
+  {
+    "slug": "apt-group-uses-netamloader-to-target-asian-governm-6eb5ab",
+    "title": "APT Group Uses NetamLoader to Target Asian Government Windows",
+    "summary": "An unnamed APT group deployed NetamLoader, a malware framework, inside Windows 10 update packages used exclusively by Asian government agencies. The loader leverages trusted software binaries to execute payloads, bypassing standard update verification and enabling persistent footholds on target systems. Defenders should validate update signatures, isolate critical infrastructure, and apply the latest Windows security patches to prevent exploitation.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/netamloader-malware/",
+    "publishedAt": "2026-10-30T15:02:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apt-group-uses-netamloader-to-target-asian-governm",
+      "article-6eb5ab",
+      "6eb5ab",
+      "apt-group-uses-netamloader-to-target-asian-government-window"
+    ]
+  },
+  {
     "slug": "uefi-flaw-affects-majority-of-servers-5f262a",
     "title": "UEFI Flaw Affects Majority of Servers",
     "summary": "A critical UEFI firmware flaw was discovered that compromises the boot integrity of the majority of enterprise servers, enabling attackers to load malicious code during system startup. The vulnerability allows unauthenticated remote exploitation through a malformed firmware update package, potentially granting full system control without user interaction.",
@@ -907,6 +943,29 @@ export const news: NewsBrief[] = [
       "article-5bae48",
       "5bae48",
       "trezor-alerts-on-hardware-implant-in-cryptobilis-wallets"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-python-botocore-patch-for-cve-2026-37d93d",
+    "title": "Red Hat Issues Python‑Botocore Patch for CVE‑2026‑98432",
+    "summary": "Red Hat released a security update for its python‑botocore library, addressing CVE‑2026‑98432, a flaw that could allow remote code execution on OpenStack Platform instances. The vulnerability stems from improper validation of AWS credential files, enabling attackers to run arbitrary commands on affected nodes. Administrators should apply the RHSA‑2026:93044 or RHSA‑2026:93045 patch immediately and review IAM policies to limit credential exposure.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93045",
+    "publishedAt": "2026-10-30T12:13:02.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93044"
+      }
+    ],
+    "aliases": [
+      "red-hat-issues-python-botocore-patch-for-cve-2026",
+      "article-37d93d",
+      "37d93d",
+      "red-hat-issues-python-botocore-patch-for-cve-2026-98432"
     ]
   },
   {
@@ -1742,6 +1801,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-c-2787b0",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "summary": "CISA has added CVE-2026-97229, a GitLab Community and Enterprise Edition integer overflow vulnerability, and CVE-2026-76418, a Cisco Secure Firewall ASA Software unchecked return value flaw, to its Known Exploited Vulnerabilities Catalog based on evidence of active exploitation. Both vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-29T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-97229",
+      "CVE-2026-76418"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-two-known-exploited-vulnerabilities-to-c",
+      "article-2787b0",
+      "2787b0",
+      "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
+    ]
+  },
+  {
     "slug": "siemens-mendix-saml-module-authentication-bypass-c-41caa1",
     "title": "Siemens Mendix SAML Module Authentication Bypass CVE",
     "summary": "Siemens disclosed an authentication bypass in its Mendix SAML module, allowing unauthenticated attackers to replay valid SAML assertions and gain unauthorized access. The flaw, identified as CVE-2026-89209, has a CVSS score of 6.8 and could expose critical manufacturing and IT infrastructure worldwide. Siemens released updated versions for Mendix 9, 10, and 11; users should upgrade immediately to mitigate the vulnerability.",
@@ -1867,6 +1947,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-fixes-flaw-targeting-older-iphone-and-ipad-m-175dcf",
+    "title": "Apple Fixes Flaw Targeting Older iPhone and iPad Models",
+    "summary": "Apple has patched a security flaw exploited in targeted attacks against iPhone XS, XS Max, XR, and seventh-generation iPad devices. The vulnerability affects older hardware models that may lack current security protections. Users should update to the latest iOS or iPadOS release to apply the fix and mitigate the attack vector.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/have-an-older-iphone-or-ipad-apple-has-a-security-update-for-you",
+    "publishedAt": "2026-10-29T11:03:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-fixes-flaw-targeting-older-iphone-and-ipad-m",
+      "article-175dcf",
+      "175dcf",
+      "apple-fixes-flaw-targeting-older-iphone-and-ipad-models"
+    ]
+  },
+  {
     "slug": "cisco-asa-vpn-flaw-exploited-in-wild-787c51",
     "title": "Cisco ASA VPN Flaw Exploited in Wild",
     "summary": "Cisco released patches for a high-severity flaw in ASA and FTD VPN software, tracked as CVE-2026-76418, which attackers exploited in the wild. The vulnerability, rated 8.6 on CVSS, permits unauthenticated remote attackers to crash firewalls, potentially disrupting network connectivity. Cisco issued emergency patches; administrators should apply them immediately and monitor firewall logs for abnormal activity.",
@@ -1900,6 +1998,24 @@ export const news: NewsBrief[] = [
       "nik-c2-ai-enabled-command-and-control-framework",
       "article-3a1543",
       "3a1543"
+    ]
+  },
+  {
+    "slug": "amatera-infostealer-analysis-spread-and-operation-4c2069",
+    "title": "Amatera Infostealer Analysis: Spread and Operation Methods",
+    "summary": "ESET identifies Amatera as the top infostealer detections in Latin America during H1 2026, demonstrating professionalized cybercrime distribution methods. The malware spreads through documented infection chains targeting unsuspecting users across the region. Organizations should implement endpoint detection and response controls to identify and block Amatera infections before credential theft occurs.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/malware/amatera-how-prolific-infostealer-works-spreads/",
+    "publishedAt": "2026-10-29T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amatera-infostealer-analysis-spread-and-operation",
+      "article-4c2069",
+      "4c2069",
+      "amatera-infostealer-analysis-spread-and-operation-methods"
     ]
   },
   {
@@ -6356,116 +6472,6 @@ export const news: NewsBrief[] = [
       "article-37e4f5",
       "37e4f5",
       "red-hat-releases-php-security-update-for-rhel-9-6-eus"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-php-security-update-for-rhel-9-4-37e4f5",
-    "title": "Red Hat Releases PHP Security Update for RHEL 9.4 SAP",
-    "summary": "Red Hat issued a PHP security update for Enterprise Linux 9.4 SAP Solutions, addressing multiple vulnerabilities with an Important impact rating. The update mitigates code execution risks by patching identified flaws referenced in CVE links. Users should apply the update immediately to maintain system integrity and prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88725",
-    "publishedAt": "2026-10-23T15:23:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-php-security-update-for-rhel-9-4",
-      "article-37e4f5",
-      "37e4f5",
-      "red-hat-releases-php-security-update-for-rhel-9-4-sap"
-    ]
-  },
-  {
-    "slug": "whatsapp-may-stop-working-without-registered-sim-u-25a338",
-    "title": "WhatsApp May Stop Working Without Registered SIM Under New Rules",
-    "summary": "WhatsApp users in India may lose service if their device lacks a registered SIM, per new government regulations effective January 1, 2027. The rule requires all messaging accounts to be linked to a registered SIM, impacting secondary phones, tablets, and other devices without active SIMs. Compliance deadlines are set for December 31, 2026, after which non‑compliant accounts will be disabled.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/whatsapp-stop-working-without-registered-sim/",
-    "publishedAt": "2026-10-23T15:20:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "whatsapp-may-stop-working-without-registered-sim-u",
-      "article-25a338",
-      "25a338",
-      "whatsapp-may-stop-working-without-registered-sim-under-new-r"
-    ]
-  },
-  {
-    "slug": "critical-okta-access-gateway-flaw-lets-attackers-w-302b8e",
-    "title": "Critical Okta Access Gateway Flaw Lets Attackers With Admin Access Execute System Commands",
-    "summary": "A critical flaw in Okta Access Gateway lets authenticated administrators run arbitrary system commands via the Admin Console, enabling remote code execution. CVE-2026-115547 arises from weak input validation and has a CVSS v3.1 score of 9.1, indicating high exploitability. Okta released a patch for versions before 2026.10.2; apply it immediately to disable command execution.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/okta-access-gateway-flaw/",
-    "publishedAt": "2026-10-23T15:19:23.000Z",
-    "cves": [
-      "CVE-2026-115547"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-okta-access-gateway-flaw-lets-attackers-w",
-      "article-302b8e",
-      "302b8e",
-      "critical-okta-access-gateway-flaw-lets-attackers-with-admin-"
-    ]
-  },
-  {
-    "slug": "hpe-aruba-networking-flaws-enable-full-device-take-2478d1",
-    "title": "HPE Aruba Networking Flaws Enable Full Device Takeover",
-    "summary": "Hewlett Packard Enterprise disclosed critical vulnerabilities in Aruba Networking AOS-8 and AOS-10 that allow attackers to gain full control of Mobility Conductors, Controllers, Gateways, and access points without authentication. The flaws enable remote code execution and compromise network infrastructure, posing a high‑risk threat to enterprise deployments. HPE has released patches; administrators must apply them immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hpe-warns-aruba-networking-flaws/",
-    "publishedAt": "2026-10-23T14:53:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hpe-aruba-networking-flaws-enable-full-device-take",
-      "article-2478d1",
-      "2478d1",
-      "hpe-aruba-networking-flaws-enable-full-device-takeover"
-    ]
-  },
-  {
-    "slug": "capcom-customer-data-breach-exposes-11-8-million-r-17005a",
-    "title": "Capcom Customer Data Breach Exposes 11.8 Million Records",
-    "summary": "Capcom’s CAPCOM ID service suffered unauthorized access, exposing 11,774,247 customer records including email addresses and account activity. The breach involved credential compromise and unauthorized password changes on 196 accounts, indicating active credential theft. Capcom has reset affected passwords and will notify customers, urging immediate password updates and monitoring for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/capcom-confirmed-customer-records-exposed/",
-    "publishedAt": "2026-10-23T14:37:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "capcom-customer-data-breach-exposes-11-8-million-r",
-      "article-17005a",
-      "17005a",
-      "capcom-customer-data-breach-exposes-11-8-million-records"
-    ]
-  },
-  {
-    "slug": "apt28-targets-nato-defense-firms-via-compromised-s-648e98",
-    "title": "APT28 Targets NATO Defense Firms via Compromised Systems",
-    "summary": "APT28 targeted NATO defense firms via compromised systems, exploiting weak authentication and privileged accounts. The attack leveraged stolen credentials and lateral movement, causing unauthorized access to sensitive data and disrupting operational workflows. Security teams should enforce MFA, monitor for anomalous activity, apply vendor patches, and conduct thorough access reviews immediately.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
-    "publishedAt": "2026-10-23T14:23:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apt28-targets-nato-defense-firms-via-compromised-s",
-      "article-648e98",
-      "648e98",
-      "apt28-targets-nato-defense-firms-via-compromised-systems"
     ]
   }
 ];
