@@ -2840,6 +2840,45 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "alpine-ilx-f511-framework-service-rce-vulnerabilit-6f3c9b",
+    "title": "Alpine iLX-F511 Framework Service RCE Vulnerability",
+    "summary": "Network-adjacent attackers can execute arbitrary code on Alpine iLX-F511 devices without authentication via an exposed dangerous function in the framework service. CVE-2026-118606 has a CVSS score of 8.8 and allows unauthenticated remote code execution affecting enterprise infrastructure. Organizations should apply vendor patches immediately to remediate this vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-824/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118606"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "alpine-ilx-f511-framework-service-rce-vulnerabilit",
+      "article-6f3c9b",
+      "6f3c9b",
+      "alpine-ilx-f511-framework-service-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "alpine-ilx-f511-bluetooth-buffer-overflow-rce-6f3c9b",
+    "title": "Alpine iLX-F511 Bluetooth Buffer Overflow RCE",
+    "summary": "An attacker with Bluetooth pairing capability can execute arbitrary code on Alpine iLX-F511 devices through a stack-based buffer overflow in the prh_sdp_service_search_decode function. CVE-2026-118605 carries a CVSS score of 8.0 and requires prior Bluetooth device pairing to exploit. Security teams must update firmware to block this attack vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-823/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118605"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "alpine-ilx-f511-bluetooth-buffer-overflow-rce",
+      "article-6f3c9b",
+      "6f3c9b"
+    ]
+  },
+  {
     "slug": "alpine-ilx-f511-buffer-overflow-enables-remote-cod-6f3c9b",
     "title": "Alpine iLX-F511 Buffer Overflow Enables Remote Code Execution",
     "summary": "A stack-based buffer overflow in Alpine iLX-F511's Android Auto Connection Handler allows physically present attackers to execute arbitrary code. The flaw, identified as 'CVE-2026-118609', has a CVSS score of 6.8 and does not require authentication, enabling local privilege escalation. Security teams should apply the vendor's patch or disable the vulnerable component to mitigate the risk.",
@@ -6441,49 +6480,6 @@ export const news: NewsBrief[] = [
       "article-7fdadf",
       "7fdadf",
       "microsoft-s-project-perception-deploys-guardian-agents-amid-"
-    ]
-  },
-  {
-    "slug": "php-warns-of-new-rce-risk-cve-2026-115560-no-emerg-2a3bb1",
-    "title": "PHP Warns of New RCE Risk CVE-2026-115560, No Emergency Fix Issued",
-    "summary": "PHP has identified a new remote code execution vulnerability, CVE-2026-115560, affecting web applications configured in an unusual way. The flaw is considered unlikely to be exploited, and PHP has not released an emergency patch, instead recommending disabling a specific feature to mitigate risk. Users should review configuration settings and apply any available updates to reduce exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
-    "publishedAt": "2026-10-23T11:25:43.000Z",
-    "cves": [
-      "CVE-2026-115560"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "php-warns-of-new-rce-risk-cve-2026-115560-no-emerg",
-      "article-2a3bb1",
-      "2a3bb1",
-      "php-warns-of-new-rce-risk-cve-2026-115560-no-emergency-fix-i"
-    ]
-  },
-  {
-    "slug": "sandworm-executes-destructive-wiping-attack-on-ukr-5fff35",
-    "title": "Sandworm Executes Destructive Wiping Attack on Ukrainian Logistics Company via Spear-Phishing Backdoor",
-    "summary": "Sandworm, a Russian state-sponsored group, launched a destructive wiping attack on a Ukrainian logistics company via a spear-phishing email that delivered the UAC-0099 backdoor. The Earth Sirrush backdoor granted attackers initial access, enabling deployment of destructive payloads that caused irreversible data loss and system shutdowns. ESET recommends applying the latest updates and disabling unused services.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
-    "publishedAt": "2026-10-23T11:11:23.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "ESET WeLiveSecurity",
-        "sourceUrl": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/"
-      }
-    ],
-    "aliases": [
-      "sandworm-executes-destructive-wiping-attack-on-ukr",
-      "article-5fff35",
-      "5fff35",
-      "sandworm-executes-destructive-wiping-attack-on-ukrainian-log"
     ]
   }
 ];

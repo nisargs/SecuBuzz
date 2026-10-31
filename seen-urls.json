@@ -3289,5 +3289,7 @@
   "http://www.zerodayinitiative.com/advisories/ZDI-26-826/",
   "http://www.zerodayinitiative.com/advisories/ZDI-26-825/",
   "https://ubuntu.com/security/notices/USN-8958-1",
-  "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/"
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-824/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-823/"
 ]

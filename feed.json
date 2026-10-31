@@ -2064,6 +2064,32 @@
     "additionalSources": []
   },
   {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-824/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-824/",
+    "title": "Alpine iLX-F511 Framework Service RCE Vulnerability",
+    "headline": "Alpine iLX-F511 Framework Service RCE Vulnerability",
+    "summary": "Network-adjacent attackers can execute arbitrary code on Alpine iLX-F511 devices without authentication via an exposed dangerous function in the framework service. CVE-2026-118606 has a CVSS score of 8.8 and allows unauthenticated remote code execution affecting enterprise infrastructure. Organizations should apply vendor patches immediately to remediate this vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-824/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-823/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-823/",
+    "title": "Alpine iLX-F511 Bluetooth Buffer Overflow RCE",
+    "headline": "Alpine iLX-F511 Bluetooth Buffer Overflow RCE",
+    "summary": "An attacker with Bluetooth pairing capability can execute arbitrary code on Alpine iLX-F511 devices through a stack-based buffer overflow in the prh_sdp_service_search_decode function. CVE-2026-118605 carries a CVSS score of 8.0 and requires prior Bluetooth device pairing to exploit. Security teams must update firmware to block this attack vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-823/",
+    "additionalSources": []
+  },
+  {
     "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-827/",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-827/",
     "title": "Alpine iLX-F511 Buffer Overflow Enables Remote Code Execution",
@@ -4649,36 +4675,5 @@
     "publishedAt": "2026-10-23T11:38:28.000Z",
     "url": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
     "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
-    "title": "PHP Warns of New RCE Risk CVE-2026-115560, No Emergency Fix Issued",
-    "headline": "PHP Warns of New RCE Risk CVE-2026-115560, No Emergency Fix Issued",
-    "summary": "PHP has identified a new remote code execution vulnerability, CVE-2026-115560, affecting web applications configured in an unusual way. The flaw is considered unlikely to be exploited, and PHP has not released an emergency patch, instead recommending disabling a specific feature to mitigate risk. Users should review configuration settings and apply any available updates to reduce exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-23T11:25:43.000Z",
-    "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
-    "title": "Sandworm Executes Destructive Wiping Attack on Ukrainian Logistics Company via Spear-Phishing Backdoor",
-    "headline": "Sandworm Executes Destructive Wiping Attack on Ukrainian Logistics Company via Spear-Phishing Backdoor",
-    "summary": "Sandworm, a Russian state-sponsored group, launched a destructive wiping attack on a Ukrainian logistics company via a spear-phishing email that delivered the UAC-0099 backdoor. The Earth Sirrush backdoor granted attackers initial access, enabling deployment of destructive payloads that caused irreversible data loss and system shutdowns. ESET recommends applying the latest updates and disabling unused services.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-23T11:11:23.000Z",
-    "url": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
-    "additionalSources": [
-      {
-        "source": "ESET WeLiveSecurity",
-        "sourceUrl": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/"
-      }
-    ]
   }
 ]
