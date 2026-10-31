@@ -71,7 +71,7 @@ function rotateGeminiApiKey() {
 }
 
 const GEMINI_API_KEY = getGeminiApiKey();
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.8-flash";
 
 const OPENROUTER_API_URL =
   "https://openrouter.ai/api/v1/chat/completions";
@@ -1402,9 +1402,7 @@ async function requestGroq(
     "Sending selected candidates in ONE Groq request...",
   );
 
-  const candidateModels = [GROQ_MODEL, "llama-3.3-70b-versatile"].filter(
-    (m, idx, arr) => arr.indexOf(m) === idx,
-  );
+  const candidateModels = [GROQ_MODEL];
 
   for (
     let attempt = 0;
@@ -1448,12 +1446,6 @@ async function requestGroq(
                 content: prompt,
               },
             ],
-
-            response_format: {
-              type: "json_object",
-            },
-
-            reasoning_format: "hidden",
 
             temperature: 0.2,
 
@@ -1575,10 +1567,7 @@ async function requestGroq(
         payload?.error?.message ||
         `Groq request failed with HTTP ${response.status}.`;
 
-      if (response.status === 400 && currentModel !== "llama-3.1-8b-instant" && attempt < MAX_RATE_LIMIT_RETRIES) {
-        console.warn(`[Groq] ${currentModel} returned 400 (${message}). Retrying with llama-3.1-8b-instant...`);
-        continue;
-      }
+
 
       throw new Error(
         message,
@@ -1726,84 +1715,86 @@ async function requestGroq(
 // -----------------------------------------------------------------------------
 
 async function requestGemini(candidates) {
-  if (!GEMINI_API_KEY) {
+  if (!getGeminiApiKey()) {
     throw new Error("GEMINI_API_KEY is not configured.");
   }
 
   const prompt = buildBatchPrompt(candidates);
   console.log(`Sending batch to Gemini AI fallback (${GEMINI_MODEL})...`);
 
-  const modelsToTry = [GEMINI_MODEL, "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash", "gemini-3.8-flash", "gemini-3.5-flash"].filter(
-    (m, idx, arr) => arr.indexOf(m) === idx,
-  );
-
+  const modelsToTry = ["gemini-3.8-flash", "gemini-3.5-flash"];
   let lastError = null;
 
   for (const model of modelsToTry) {
-    try {
-      const currentKey = getGeminiApiKey();
-      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(currentKey)}`;
-      const response = await fetch(nativeUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-goog-api-key": currentKey,
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text:
-                    "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Return ONLY valid JSON adhering to the requested schema. Do not provide markdown code blocks, explanations, or reasoning.\n\n" +
-                    prompt,
-                },
-              ],
-            },
-          ],
-          generationConfig: {
-            responseMimeType: "application/json",
-            temperature: 0.2,
-            maxOutputTokens: MAX_COMPLETION_TOKENS,
+    for (let keyAttempt = 0; keyAttempt < Math.max(1, GEMINI_API_KEYS.length); keyAttempt++) {
+      try {
+        const currentKey = getGeminiApiKey();
+        const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(currentKey)}`;
+        const response = await fetch(nativeUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-goog-api-key": currentKey,
           },
-        }),
-        signal: AbortSignal.timeout(20000),
-      });
+          body: JSON.stringify({
+            contents: [
+              {
+                parts: [
+                  {
+                    text:
+                      "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Return ONLY valid JSON adhering to the requested schema. Do not provide markdown code blocks, explanations, or reasoning.\n\n" +
+                      prompt,
+                  },
+                ],
+              },
+            ],
+            generationConfig: {
+              responseMimeType: "application/json",
+              temperature: 0.2,
+              maxOutputTokens: MAX_COMPLETION_TOKENS,
+            },
+          }),
+          signal: AbortSignal.timeout(45000),
+        });
 
-      if (!response.ok) {
-        const errText = await response.text();
-        console.warn(`[Gemini Native] ${model} HTTP ${response.status}: ${truncateText(errText, 300)}`);
-        if (response.status === 429 && rotateGeminiApiKey()) continue;
-        lastError = new Error(`Gemini ${model} failed with HTTP ${response.status}: ${truncateText(errText, 150)}`);
-        continue;
+        if (!response.ok) {
+          const errText = await response.text();
+          console.warn(`[Gemini Native] ${model} HTTP ${response.status}: ${truncateText(errText, 300)}`);
+          if (response.status === 429 && rotateGeminiApiKey()) {
+            console.log(`[Gemini Native] Retrying ${model} with rotated key...`);
+            continue;
+          }
+          lastError = new Error(`Gemini ${model} failed with HTTP ${response.status}: ${truncateText(errText, 150)}`);
+          break;
+        }
+
+        const payload = await response.json();
+        const content = payload?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+        if (!content.trim()) {
+          console.warn(`[Gemini Native] ${model} returned an empty content response.`);
+          break;
+        }
+
+        const parsed = safeJsonParse(content);
+        if (!parsed) {
+          console.warn(`[Gemini Native] Could not parse ${model} content as JSON: ${truncateText(content, 200)}`);
+          break;
+        }
+
+        const articles = extractArticleArray(parsed);
+        console.log(`Gemini (${model}) returned ${articles.length} article results.`);
+        if (!articles || articles.length === 0) {
+          console.warn(`[Gemini Native] ${model} returned 0 valid article objects.`);
+          break;
+        }
+
+        await sleep(6000);
+        return articles;
+      } catch (err) {
+        console.warn(`[Gemini Native] ${model} error: ${err.message}`);
+        lastError = err;
+        break;
       }
-
-      const payload = await response.json();
-      const content = payload?.candidates?.[0]?.content?.parts?.[0]?.text || "";
-      if (!content.trim()) {
-        console.warn(`[Gemini Native] ${model} returned an empty content response.`);
-        continue;
-      }
-
-      const parsed = safeJsonParse(content);
-      if (!parsed) {
-        console.warn(`[Gemini Native] Could not parse ${model} content as JSON: ${truncateText(content, 200)}`);
-        continue;
-      }
-
-      const articles = extractArticleArray(parsed);
-      console.log(`Gemini (${model}) returned ${articles.length} article results.`);
-      if (!articles || articles.length === 0) {
-        console.warn(`[Gemini Native] ${model} returned 0 valid article objects.`);
-        continue;
-      }
-
-      // 6.0s delay guarantees instantaneous rate stays <= 7.5 RPM, well below Gemini 10 RPM ceiling
-      await sleep(6000);
-      return articles;
-    } catch (err) {
-      console.warn(`[Gemini Native] ${model} error: ${err.message}`);
-      lastError = err;
     }
   }
 
@@ -2189,7 +2180,7 @@ async function requestGeminiContextComparison(storyA, storyB, prompt) {
             maxOutputTokens: 1200,
           },
         }),
-        signal: AbortSignal.timeout(30000),
+        signal: AbortSignal.timeout(45000),
       });
 
       if (!response.ok) {
