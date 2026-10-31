@@ -661,25 +661,52 @@ function safeJsonParse(text) {
   return null;
 }
 
-function extractArticleArray(value) {
-  if (!value) {
-    return [];
-  }
+function extractArticlesWithRegex(text) {
+  if (!text || typeof text !== "string") return [];
+  const articles = [];
+  const blockRegex = /\{[^{}]*?"headline"[\s\S]*?"summary"[\s\S]*?\}/g;
+  let match;
+  while ((match = blockRegex.exec(text)) !== null) {
+    const block = match[0];
+    const headlineMatch = block.match(/"headline"\s*:\s*"([\s\S]*?)(?<!\\)"/);
+    const summaryMatch = block.match(/"summary"\s*:\s*"([\s\S]*?)(?<!\\)"/);
+    const categoryMatch = block.match(/"category"\s*:\s*"([\s\S]*?)(?<!\\)"/);
+    const severityMatch = block.match(/"severity"\s*:\s*"([\s\S]*?)(?<!\\)"/);
 
-  if (Array.isArray(value)) {
-    return value;
-  }
+    const headline = headlineMatch ? headlineMatch[1] : null;
+    const summary = summaryMatch ? summaryMatch[1] : null;
 
-  if (typeof value === "object") {
-    if (Array.isArray(value.articles)) return value.articles;
-    if (Array.isArray(value.items)) return value.items;
-    if (Array.isArray(value.data)) return value.data;
-    if (value.output && typeof value.output === "object" && Array.isArray(value.output.articles)) {
-      return value.output.articles;
+    if (headline && summary) {
+      articles.push({
+        headline: headline.replace(/\\"/g, '"').replace(/\s+/g, " ").trim(),
+        summary: summary.replace(/\\"/g, '"').replace(/\s+/g, " ").trim(),
+        category: categoryMatch ? normaliseCategory(categoryMatch[1]) : "GENERAL",
+        severity: severityMatch ? severityMatch[1].trim().toUpperCase() : "MEDIUM",
+      });
     }
-    // Single article recovery
-    if (value.headline && value.summary) {
-      return [value];
+  }
+  return articles;
+}
+
+function extractArticleArray(value, rawText = "") {
+  if (value) {
+    if (Array.isArray(value) && value.length > 0) return value;
+    if (typeof value === "object") {
+      if (Array.isArray(value.articles) && value.articles.length > 0) return value.articles;
+      if (Array.isArray(value.items) && value.items.length > 0) return value.items;
+      if (Array.isArray(value.data) && value.data.length > 0) return value.data;
+      if (value.output && typeof value.output === "object" && Array.isArray(value.output.articles) && value.output.articles.length > 0) {
+        return value.output.articles;
+      }
+      if (value.headline && value.summary) return [value];
+    }
+  }
+
+  if (rawText && typeof rawText === "string") {
+    const recovered = extractArticlesWithRegex(rawText);
+    if (recovered.length > 0) {
+      console.log(`[Parser Recovery] Rescued ${recovered.length} articles via regex field extraction!`);
+      return recovered;
     }
   }
 
@@ -1042,12 +1069,14 @@ IMPORTANT RULES:
 - Do not use Markdown.
 - Do not use bullet points inside summaries.
 - Do not use ellipses.
-- LENGTH & STRUCTURE REQUIREMENT (STRICT):
-  * Every summary MUST be strictly between 50 and 60 words in length (hard ceiling of 60 words). Never write under 50 words and NEVER exceed 60 words. Briefs over 60 words will be rejected.
-  * Structure the brief as exactly 3 dense, informative sentences:
+- LENGTH & STRUCTURE REQUIREMENT:
+  * Write exactly 3 concise, information-dense sentences (approximately 50 to 60 words total).
+  * Write clean, continuous prose. Do not output word numbers, annotations, or metadata.
+  * Structure the 3 sentences:
     - Sentence 1 (Incident & Target): State the vulnerability, active threat, or breach incident, identifying the affected vendor, software/hardware product, and attack vector.
     - Sentence 2 (Technical Flaw & Impact): Detail the root cause mechanism, CVE identifier or severity score (if mentioned), exploitability status (active zero-day, public PoC, or credential theft), and operational impact.
     - Sentence 3 (Action & Remediation): Specify the vendor patch availability, recommended firmware upgrade, workaround, or defensive mitigations required for security teams.
+  * Use single quotes for quoted terms inside text (never unescaped double quotes).
 - ANTI-AI SLOP & TECHNICAL TONE (STRICT): Write like a senior cybersecurity intelligence analyst. NEVER use AI cliches or filler words ("delve", "tapestry", "in today's digital landscape", "in an era where", "serves as a stark reminder", "it is critical to note", "underscores the importance", "beacon", "testament", "crucial", "pivotal", "paramount"). Avoid generic closing platitudes ("organizations must remain vigilant", "highlighting the need for proactive security"). Require explicit attribution for studies or survey claims (e.g. "According to a report by..."). Avoid sensationalist or overclaiming verbs like "escaped" or "masterminded" — state technical facts and root causes directly. Avoid dramatic throat-clearing; lead directly with the technical subject (e.g. "Attackers are exploiting...", "A newly disclosed flaw in...", "Microsoft released a patch for...").
 - If there is not enough information for a reliable summary, omit that article.
 - The "index" must exactly match the supplied article index.
@@ -1449,8 +1478,7 @@ async function requestGroq(
 
             temperature: 0.2,
 
-            max_completion_tokens:
-              MAX_COMPLETION_TOKENS,
+            max_completion_tokens: 4096,
 
             stream: false,
           }),
@@ -1609,9 +1637,11 @@ async function requestGroq(
     const choice =
       payload.choices[0];
 
-    const content =
-      choice?.message?.content ||
-      "";
+    let content = choice?.message?.content || "";
+    if (!content.trim() && choice?.message?.reasoning) {
+      console.log("[Groq] Extracting completion from reasoning field...");
+      content = choice.message.reasoning;
+    }
 
     console.log(
       `Groq finish reason: ${
@@ -1636,34 +1666,14 @@ async function requestGroq(
       "Parsing Groq JSON response...",
     );
 
-    const parsed =
-      safeJsonParse(
-        content,
-      );
+    const parsed = safeJsonParse(content);
+    const articles = extractArticleArray(parsed, content);
 
-    if (!parsed) {
-      console.log(
-        "Could not parse Groq content as JSON.",
-      );
-
-      console.log(
-        "Response preview:",
-      );
-
-      console.log(
-        content.slice(
-          0,
-          4000,
-        ),
-      );
-
+    if (!articles || articles.length === 0) {
+      console.log("Could not parse Groq content as JSON or extract articles via regex.");
+      console.log("Response preview:", content.slice(0, 1000));
       return [];
     }
-
-    const articles =
-      extractArticleArray(
-        parsed,
-      );
 
     console.log(
       `Groq returned ${articles.length} article results.`,
@@ -1781,7 +1791,7 @@ async function requestGemini(candidates) {
           break;
         }
 
-        const articles = extractArticleArray(parsed);
+        const articles = extractArticleArray(parsed, content);
         console.log(`Gemini (${model}) returned ${articles.length} article results.`);
         if (!articles || articles.length === 0) {
           console.warn(`[Gemini Native] ${model} returned 0 valid article objects.`);
@@ -1838,7 +1848,7 @@ async function requestOpenRouter(candidates) {
       temperature: 0.2,
       max_tokens: MAX_COMPLETION_TOKENS,
     }),
-    signal: AbortSignal.timeout(20000),
+    signal: AbortSignal.timeout(60000),
   });
 
   const responseText = await response.text();
@@ -1874,7 +1884,7 @@ async function requestOpenRouter(candidates) {
     throw new Error("Could not parse OpenRouter content as JSON.");
   }
 
-  const articles = extractArticleArray(parsed);
+  const articles = extractArticleArray(parsed, content);
   console.log(`OpenRouter returned ${articles.length} article results.`);
   if (!articles || articles.length === 0) {
     throw new Error("OpenRouter returned 0 valid article objects.");
