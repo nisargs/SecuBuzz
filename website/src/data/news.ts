@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gitlab-patches-critical-unauthenticated-rce-flaw-72c186",
+    "title": "GitLab Patches Critical Unauthenticated RCE Flaw",
+    "summary": "GitLab published a security advisory on 21 October 2026 addressing a critical vulnerability in GitLab Community and Enterprise Editions that allows unauthenticated arbitrary code execution on affected servers. The flaw enables remote attackers to compromise internet-facing GitLab instances without credentials, posing severe operational risk to source code repositories and CI/CD pipelines.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CERT-EU Security Advisories",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-019/",
+    "publishedAt": "2026-10-31T05:48:08.535Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-patches-critical-unauthenticated-rce-flaw",
+      "article-72c186",
+      "72c186"
+    ]
+  },
+  {
+    "slug": "php-unauthenticated-rce-vulnerabilities-pushed-in-72c186",
+    "title": "PHP Unauthenticated RCE Vulnerabilities Pushed in Oct 2026",
+    "summary": "PHP disclosed two critical vulnerabilities enabling unauthenticated remote code execution in versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35, with public PoCs circulating. Both flaws allow attackers to run arbitrary code without credentials, and active exploitation is suspected from emerging PoCs. PHP patched on 21 October 2026; admins should upgrade to the latest releases and monitor for exploitation attempts.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CERT-EU Security Advisories",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-018/",
+    "publishedAt": "2026-10-31T05:44:58.809Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php-unauthenticated-rce-vulnerabilities-pushed-in",
+      "article-72c186",
+      "72c186",
+      "php-unauthenticated-rce-vulnerabilities-pushed-in-oct-2026"
+    ]
+  },
+  {
+    "slug": "citrix-netscaler-exposed-to-critical-rce-vulnerabi-72c186",
+    "title": "Citrix NetScaler Exposed to Critical RCE Vulnerabilities",
+    "summary": "Citrix NetScaler ADC and Gateway suffered eight vulnerabilities, including two critical unauthenticated RCE flaws confirmed in the wild, with CVE-2026-88779 cited as a representative case. The flaws permit attackers to execute arbitrary code on exposed devices without authentication, potentially compromising all internet‑exposed NetScaler instances. Citrix released patches; security teams must apply updates immediately and conduct compromise assessments on exposed systems.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CERT-EU Security Advisories",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-014/",
+    "publishedAt": "2026-10-31T05:44:58.809Z",
+    "cves": [
+      "CVE-2026-88779"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-netscaler-exposed-to-critical-rce-vulnerabi",
+      "article-72c186",
+      "72c186",
+      "citrix-netscaler-exposed-to-critical-rce-vulnerabilities"
+    ]
+  },
+  {
     "slug": "sap-patches-critical-kernel-and-netweaver-flaws-72c186",
     "title": "SAP Patches Critical Kernel and NetWeaver Flaws",
     "summary": "SAP released security updates addressing two critical vulnerabilities in its Kernel and NetWeaver Message Server, including CVE-2026-44756 (CVSS 10.0) and CVE-2026-58240 (CVSS 9.8), both remotely exploitable without authentication. The flaws, dubbed OVERPASS and S4GET by Onapsis Research Labs, can lead to arbitrary operating system command execution under the SAP service account.",
@@ -346,6 +401,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-patch-for-ansible-platform-vulner-37d93d",
+    "title": "Red Hat Releases Patch for Ansible Platform Vulnerability",
+    "summary": "Red Hat released a security update for Ansible Automation Platform 2.4 to address CVE‑2026‑98432. The flaw, rated Important by Product Security, could allow attackers to exploit configuration handling weaknesses, potentially enabling unauthorized code execution. Red Hat has published the patch; administrators should apply it immediately to mitigate the critical risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93065",
+    "publishedAt": "2026-10-30T14:02:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-patch-for-ansible-platform-vulner",
+      "article-37d93d",
+      "37d93d",
+      "red-hat-releases-patch-for-ansible-platform-vulnerability"
+    ]
+  },
+  {
     "slug": "ss7-and-diameter-signaling-exploits-enable-phone-t-1a6762",
     "title": "SS7 and Diameter Signaling Exploits Enable Phone Tracking",
     "summary": "Flaws in SS7 and Diameter signaling protocols allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising devices. The root cause is the trust model between mobile networks, enabling remote exploitation without device compromise. Vendors should deploy network-level mitigations and adopt secure signaling practices to defend against these attacks.",
@@ -565,6 +638,58 @@ export const news: NewsBrief[] = [
       "article-2df166",
       "2df166",
       "wordpress-race-condition-enables-unauthenticated-remote-code"
+    ]
+  },
+  {
+    "slug": "cisa-adds-two-ivanti-vulnerabilities-to-kev-catalo-65b7a3",
+    "title": "CISA Adds Two Ivanti Vulnerabilities to KEV Catalog",
+    "summary": "CISA added two actively exploited Ivanti Connect Secure vulnerabilities, CVE‑2026‑111357 and CVE‑2026‑118527, to its Known Exploited Vulnerabilities catalog. CVE‑2026‑111357 permits unauthenticated access to critical functions, while CVE‑2026‑118527 allows attackers to predict session identifiers, both enabling potential credential theft or session hijacking. Federal agencies must prioritize patching or applying mitigations per BOD 26‑04 to reduce exposure to these high‑risk flaws.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-10-30T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-two-ivanti-vulnerabilities-to-kev-catalo",
+      "article-65b7a3",
+      "65b7a3",
+      "cisa-adds-two-ivanti-vulnerabilities-to-kev-catalog"
+    ]
+  },
+  {
+    "slug": "hackers-leak-41-000-dhs-employee-data-369d27",
+    "title": "Hackers Leak 41,000 DHS Employee Data",
+    "summary": "A hacker group claims to have exfiltrated personal data of 41,000 DHS employees, including contact details and group memberships. The leak exposes sensitive employee information that could facilitate social engineering or insider threat attacks. Security teams should verify compromised accounts, enforce MFA, and conduct a comprehensive audit of exposed data to mitigate exploitation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/hackers-steal-and-publish-data-on-41000-homeland-security-workers",
+    "publishedAt": "2026-10-30T11:33:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-leak-41-000-dhs-employee-data",
+      "article-369d27",
+      "369d27"
+    ]
+  },
+  {
+    "slug": "claude-code-extension-poisoned-with-ssh-backdoor-42b2ec",
+    "title": "Claude Code Extension Poisoned with SSH Backdoor",
+    "summary": "Researchers found a tampered build of Anthropic’s Claude Code extension, v2.1.313, on Open VSX that contained a persistent SSH backdoor. The malicious package, absent from Microsoft’s Visual Studio Marketplace, allowed attackers to maintain remote access via the embedded SSH service. Security teams should remove the compromised extension, verify integrity, and monitor for unauthorized SSH connections to prevent lateral movement.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/",
+    "publishedAt": "2026-10-30T11:15:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-code-extension-poisoned-with-ssh-backdoor",
+      "article-42b2ec",
+      "42b2ec"
     ]
   },
   {
@@ -1974,6 +2099,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "oracle-probes-for-cve-2026-101767-rce-flaw-8e6c6f",
+    "title": "Oracle Probes for CVE-2026-101767 RCE Flaw",
+    "summary": "Threat actors probe Oracle E-Business Suite for the recently patched CVE-2026-101767, a critical unauthenticated RCE flaw in the Application Object Library. Scored 9.8 on CVSS, the flaw lets attackers bypass authentication and execute arbitrary code, potentially compromising all EBS instances. Oracle patched last week; teams should apply the update immediately and monitor for exploitation attempts.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+    "publishedAt": "2026-10-28T12:48:03.000Z",
+    "cves": [
+      "CVE-2026-101767"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "oracle-probes-for-cve-2026-101767-rce-flaw",
+      "article-8e6c6f",
+      "8e6c6f"
+    ]
+  },
+  {
     "slug": "cisa-flags-actively-exploited-vmware-and-linux-fla-50dc05",
     "title": "CISA Flags Actively Exploited VMware and Linux Flaws",
     "summary": "CISA added CVE-2026-41709 (Broadcom VMware ESX insufficient logging) and CVE-2026-46300 (Linux kernel missing variable initialization) to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. Both flaws represent frequent attack vectors for malicious actors targeting federal enterprise infrastructure. BOD 26-04 mandates FCEB agencies prioritize rapid remediation of KEV-listed vulnerabilities on publicly exposed assets.",
@@ -2101,6 +2245,24 @@ export const news: NewsBrief[] = [
       "article-3ce2ad",
       "3ce2ad",
       "long-hidden-flaws-patched-in-epics-research-facility-control"
+    ]
+  },
+  {
+    "slug": "cybersecurity-black-week-highlights-php-flaw-and-k-100aad",
+    "title": "Cybersecurity Black Week Highlights PHP Flaw and Kernel Leak",
+    "summary": "Cybersecurity Black Week featured a critical PHP flaw, leaked Linux kernel reports, and a poisoned LiteLLM release within a single week. The PHP vulnerability threatened unauthenticated remote code execution, while the other incidents largely produced noise without confirmed exploitation. Teams should patch PHP, monitor kernel advisories, and verify third‑party release integrity to mitigate risks.",
+    "category": "General",
+    "severity": "CRITICAL",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/business-security/lessons-cybersecurity-black-week/",
+    "publishedAt": "2026-10-28T10:33:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cybersecurity-black-week-highlights-php-flaw-and-k",
+      "article-100aad",
+      "100aad",
+      "cybersecurity-black-week-highlights-php-flaw-and-kernel-leak"
     ]
   },
   {
@@ -2589,6 +2751,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "aokigahara-stealer-targets-developer-keyrings-and-25ead6",
+    "title": "Aokigahara Stealer Targets Developer Keyrings and AI Assistants",
+    "summary": "The Aokigahara infostealer expands traditional data theft tactics by targeting developer keyrings and AI assistant sessions, exposing sensitive business data and infrastructure from a single compromised endpoint. Its focus on AI tools and developer credentials represents an evolution in infostealer capabilities, enabling broader access to cloud environments and proprietary codebases.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
+    "publishedAt": "2026-10-27T16:47:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aokigahara-stealer-targets-developer-keyrings-and",
+      "article-25ead6",
+      "25ead6",
+      "aokigahara-stealer-targets-developer-keyrings-and-ai-assista"
+    ]
+  },
+  {
     "slug": "oracle-peoplesoft-ssrf-exploit-cve-2026-35273-6873a1",
     "title": "Oracle PeopleSoft SSRF Exploit CVE-2026-35273",
     "summary": "Oracle PeopleSoft’s CVE‑2026‑35273 SSRF flaw lets attackers forge internal requests that bypass validateClient checks. The vulnerability supports remote code execution with a CVSS of 9.2, and ShinyHunters has confirmed widespread exploitation. Oracle issued a critical patch; teams should apply it immediately and disable external request capabilities as a temporary mitigation.",
@@ -3011,6 +3191,41 @@ export const news: NewsBrief[] = [
       "article-1e450e",
       "1e450e",
       "ryan-fetterman-discusses-practical-detection-engineering"
+    ]
+  },
+  {
+    "slug": "australia-disrupts-amadey-malware-backend-180k-dev-4db04f",
+    "title": "Australia Disrupts Amadey Malware Backend, 180K Devices Affected",
+    "summary": "The Australian Signals Directorate (ASD) successfully infiltrated and severed access to the backend infrastructure of the Amadey malware, disrupting operations affecting approximately 180,000 infected computers worldwide. The criminal operator lost the ability to command and control compromised endpoints, preventing further data theft or malicious payload delivery.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+    "publishedAt": "2026-10-27T09:33:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "australia-disrupts-amadey-malware-backend-180k-dev",
+      "article-4db04f",
+      "4db04f",
+      "australia-disrupts-amadey-malware-backend-180k-devices-affec"
+    ]
+  },
+  {
+    "slug": "openai-compaction-feature-exposes-hidden-reasoning-7e5761",
+    "title": "OpenAI Compaction Feature Exposes Hidden Reasoning",
+    "summary": "Security researchers from Xint demonstrated that OpenAI's compaction feature, designed to shrink long conversations for storage efficiency, can be abused to extract a model's hidden reasoning in plain text. The technique bypasses OpenAI's normal encryption of internal reasoning chains, allowing unauthorized access to proprietary model logic and intermediate problem-solving steps.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
+    "publishedAt": "2026-10-27T08:22:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-compaction-feature-exposes-hidden-reasoning",
+      "article-7e5761",
+      "7e5761"
     ]
   },
   {
@@ -6243,227 +6458,6 @@ export const news: NewsBrief[] = [
       "article-1fc672",
       "1fc672",
       "cve-2026-115419-strands-agents-sdk-a2a-server-data-disclosur"
-    ]
-  },
-  {
-    "slug": "zlib-heap-buffer-overflow-vulnerability-in-non-blo-7fbd6b",
-    "title": "zlib Heap Buffer Overflow Vulnerability in Non-Blocking Write Operations",
-    "summary": "A zlib heap buffer overflow flaw in non-blocking write operations could allow attackers to trigger denial of service or arbitrary code execution. The vulnerability arises from incorrect handling of write buffers, potentially enabling arbitrary code execution; no CVE is cited, and exploitation remains theoretical with no public PoC reported.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8954-1",
-    "publishedAt": "2026-10-22T19:54:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zlib-heap-buffer-overflow-vulnerability-in-non-blo",
-      "article-7fbd6b",
-      "7fbd6b",
-      "zlib-heap-buffer-overflow-vulnerability-in-non-blocking-writ"
-    ]
-  },
-  {
-    "slug": "eu-supermarkets-hit-by-outdated-refrigerator-firmw-666457",
-    "title": "EU Supermarkets Hit by Outdated Refrigerator Firmware",
-    "summary": "An outdated OT firmware controlling refrigeration systems in EU supermarkets enabled attackers to compromise HVAC controls, causing millions of euros in losses. The flaw stemmed from third‑party firmware management lacking timely updates, allowing unauthorized manipulation of temperature settings. Vendors should immediately deploy the latest firmware patches and enforce strict update policies to mitigate further exposure.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
-    "publishedAt": "2026-10-22T19:30:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-supermarkets-hit-by-outdated-refrigerator-firmw",
-      "article-666457",
-      "666457",
-      "eu-supermarkets-hit-by-outdated-refrigerator-firmware"
-    ]
-  },
-  {
-    "slug": "litellm-release-pipeline-compromised-with-maliciou-1cce02",
-    "title": "LiteLLM Release Pipeline Compromised with Malicious Docker Images",
-    "summary": "Hackers infiltrated the LiteLLM project's release pipeline, injecting malicious Docker images into the PyPI distribution. The compromised images contain an info‑stealer that harvests credentials, secrets, and environment variables, and the attack demonstrates a supply‑chain compromise with active exploitation. LiteLLM issued a security advisory, urging users to verify image signatures, update to the latest patched version, and monitor for credential exfiltration.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
-    "publishedAt": "2026-10-22T19:12:51.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html"
-      }
-    ],
-    "aliases": [
-      "litellm-release-pipeline-compromised-with-maliciou",
-      "article-1cce02",
-      "1cce02",
-      "litellm-release-pipeline-compromised-with-malicious-docker-i"
-    ]
-  },
-  {
-    "slug": "cisco-snort-3-smtp-mime-decoder-denial-of-service-5db29d",
-    "title": "Cisco Snort 3 SMTP MIME Decoder Denial‑of‑Service Vulnerability",
-    "summary": "Cisco’s Snort 3 SMTP MIME Decoder allows unauthenticated remote attackers to cause a denial‑of‑service by restarting the detection engine when parsing crafted SMTP packets. The flaw results from missing error checks on MIME header fields, enabling malformed packets to destabilize the engine without authentication. Cisco released patches that fix the issue; apply them immediately as no workaround exists.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-mime-vulns-bkXjcKkt?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+SMTP+MIME+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-10-22T19:03:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-snort-3-smtp-mime-decoder-denial-of-service",
-      "article-5db29d",
-      "5db29d",
-      "cisco-snort-3-smtp-mime-decoder-denial-of-service-vulnerabil"
-    ]
-  },
-  {
-    "slug": "cisco-snort-3-releases-hardening-fix-for-cve-2026-a602c6",
-    "title": "Cisco Snort 3 Releases Hardening Fix for CVE-2026-20043 Out-of-Bounds Write",
-    "summary": "Cisco’s Snort 3 software hardening release addresses CVE-2026-20043, an out-of-bounds write flaw identified during internal testing. The vulnerability, classified as CWE-787, could allow memory corruption if exploited, though no active exploitation has been reported. Cisco has issued a patch; users should update to the latest Snort 3 release to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-snort3-ybgmhTQe?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Security+Hardening+Release%3A+October+2026%26vs_k%3D1",
-    "publishedAt": "2026-10-22T19:03:30.000Z",
-    "cves": [
-      "CVE-2026-20043"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-snort-3-releases-hardening-fix-for-cve-2026",
-      "article-a602c6",
-      "a602c6",
-      "cisco-snort-3-releases-hardening-fix-for-cve-2026-20043-out-"
-    ]
-  },
-  {
-    "slug": "cisco-snort-3-detection-engine-denial-of-service-v-2f6531",
-    "title": "Cisco Snort 3 Detection Engine Denial of Service Vulnerabilities",
-    "summary": "Multiple Cisco products contain vulnerabilities in the Snort 3 Detection Engine that permit an unauthenticated remote attacker to trigger a restart, causing a denial of service. The root cause is a flaw in the engine’s handling of malformed detection rules, leading to an unhandled exception and crash.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-misc-dos-6mB22qAK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerabilities%26vs_k%3D1",
-    "publishedAt": "2026-10-22T19:03:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-snort-3-detection-engine-denial-of-service-v",
-      "article-2f6531",
-      "2f6531",
-      "cisco-snort-3-detection-engine-denial-of-service-vulnerabili"
-    ]
-  },
-  {
-    "slug": "cisco-snort-3-gre-tunnel-denial-of-service-vulnera-1671e2",
-    "title": "Cisco Snort 3 GRE Tunnel Denial of Service Vulnerability",
-    "summary": "A flaw in Cisco Snort 3’s GRE tunnel decapsulation allows unauthenticated remote attackers to send crafted GRE payloads, triggering an unexpected engine restart. The improper handling of nested GRE traffic can cause a denial of service or bypass, depending on device configuration. Cisco has issued software updates; administrators should apply the patch promptly to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gre-JNpMHrTv?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Generic+Routing+Encapsulation+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-10-22T19:03:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-snort-3-gre-tunnel-denial-of-service-vulnera",
-      "article-1671e2",
-      "1671e2",
-      "cisco-snort-3-gre-tunnel-denial-of-service-vulnerability"
-    ]
-  },
-  {
-    "slug": "cisco-snort-3-detection-engine-denial-of-service-v-3a3654",
-    "title": "Cisco Snort 3 Detection Engine Denial of Service Vulnerability",
-    "summary": "A logic flaw in Cisco’s Snort 3 Detection Engine lets an unauthenticated remote attacker trigger a denial of service by sending crafted GTP extension headers in a fragmented UDP datagram. The flaw causes an infinite loop, halting packet processing and disrupting monitoring. Cisco released updates that fix the issue; security teams should apply the patch or use the available workaround.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-gtpcodec-dos-Rmecfepz?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-10-22T19:03:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-snort-3-detection-engine-denial-of-service-v",
-      "article-3a3654",
-      "3a3654",
-      "cisco-snort-3-detection-engine-denial-of-service-vulnerabili"
-    ]
-  },
-  {
-    "slug": "cisco-snort-3-vba-decompression-engine-buffer-over-4dad9f",
-    "title": "Cisco Snort 3 VBA Decompression Engine Buffer Overflow Causes Denial of Service",
-    "summary": "Improper range checking in the Snort 3 Visual Basic for Applications decompression engine permits an unauthenticated remote attacker to send crafted VBA data, triggering a stack overflow that restarts the detection engine. The flaw enables denial of service on targeted devices without authentication, impacting network security operations. Cisco has issued software updates and a workaround to resolve the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-snort3-vba-bufdos-jAuFdvn9?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DMultiple+Cisco+Products+Snort+3+Visual+Basic+for+Applications+Buffer+Overflow+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-10-22T19:03:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-snort-3-vba-decompression-engine-buffer-over",
-      "article-4dad9f",
-      "4dad9f",
-      "cisco-snort-3-vba-decompression-engine-buffer-overflow-cause"
-    ]
-  },
-  {
-    "slug": "cve-2026-115414-os-command-injection-in-aws-sam-cl-1e119a",
-    "title": "CVE‑2026‑115414: OS Command Injection in AWS SAM CLI Terraform Hook",
-    "summary": "An OS command injection flaw (CVE‑2026‑115414) in AWS SAM CLI’s Terraform hook allows an attacker controlling the Terraform configuration to execute arbitrary commands as the build user on the host. The vulnerability arises from unsanitized interpolation of Terraform resource addresses into a generated Makefile recipe, enabling remote code execution. AWS has released a patch for all affected versions (≥1.63.0).",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-145-aws/",
-    "publishedAt": "2026-10-22T18:50:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-115414-os-command-injection-in-aws-sam-cl",
-      "article-1e119a",
-      "1e119a",
-      "cve-2026-115414-os-command-injection-in-aws-sam-cli-terrafor"
-    ]
-  },
-  {
-    "slug": "critical-php-vulnerabilities-identified-61e462",
-    "title": "Critical PHP Vulnerabilities Identified",
-    "summary": "Critical vulnerabilities have been discovered in PHP, exposing affected web applications to potential remote code execution via malformed input. The flaw allows attackers to inject arbitrary code, leading to full system compromise and data exfiltration. Immediate patching of the latest PHP release and disabling vulnerable extensions is mandatory.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/i-had-plans-for-that-second/",
-    "publishedAt": "2026-10-22T18:04:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-php-vulnerabilities-identified",
-      "article-61e462",
-      "61e462"
-    ]
-  },
-  {
-    "slug": "github-bug-bounty-highlights-researcher-r31n-40465c",
-    "title": "GitHub Bug Bounty Highlights Researcher @r31n",
-    "summary": "The GitHub Bug Bounty team highlighted researcher @r31n during Cybersecurity Awareness Month, detailing their research methodology and preferred bug categories. The post emphasizes how active bug hunting refines security expertise, showcasing real-world exploitation techniques and defensive insights. Security teams can adopt similar iterative testing practices to uncover latent vulnerabilities before external discovery.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "GitHub Security Blog",
-    "sourceUrl": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
-    "publishedAt": "2026-10-22T17:21:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-bug-bounty-highlights-researcher-r31n",
-      "article-40465c",
-      "40465c"
     ]
   }
 ];
