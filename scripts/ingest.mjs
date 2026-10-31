@@ -24,16 +24,54 @@ const PUSH_ADMIN_SECRET = process.env.PUSH_ADMIN_SECRET;
 const GROQ_API_URL =
   "https://api.groq.com/openai/v1/chat/completions";
 
-const GROQ_API_KEY = (process.env.GROQ_API_KEY || "").trim().replace(/^["']|["']$/g, "");
+const GROQ_API_KEYS = [
+  process.env.GROQ_API_KEY,
+  process.env.GROQ_API_KEY_2,
+  process.env.GROQ_API_KEY_3,
+].map(k => (k || "").trim().replace(/^["']|["']$/g, "")).filter(Boolean);
 
+let currentGroqKeyIdx = 0;
+function getGroqApiKey() {
+  if (GROQ_API_KEYS.length === 0) return "";
+  return GROQ_API_KEYS[currentGroqKeyIdx % GROQ_API_KEYS.length];
+}
+function rotateGroqApiKey() {
+  if (GROQ_API_KEYS.length > 1) {
+    currentGroqKeyIdx = (currentGroqKeyIdx + 1) % GROQ_API_KEYS.length;
+    console.log(`[Groq Key Pool] Rotated to key #${currentGroqKeyIdx + 1} (${GROQ_API_KEYS.length} available)`);
+    return true;
+  }
+  return false;
+}
+
+const GROQ_API_KEY = getGroqApiKey();
 const GROQ_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-20b";
 
 const GEMINI_API_URL =
   "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
 
-const GEMINI_API_KEY = (process.env.GEMINI_API_KEY || "").trim().replace(/^["']|["']$/g, "");
+const GEMINI_API_KEYS = [
+  process.env.GEMINI_API_KEY,
+  process.env.GEMINI_API_KEY_2,
+  process.env.GEMINI_API_KEY_3,
+].map(k => (k || "").trim().replace(/^["']|["']$/g, "")).filter(Boolean);
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.8-flash";
+let currentGeminiKeyIdx = 0;
+function getGeminiApiKey() {
+  if (GEMINI_API_KEYS.length === 0) return "";
+  return GEMINI_API_KEYS[currentGeminiKeyIdx % GEMINI_API_KEYS.length];
+}
+function rotateGeminiApiKey() {
+  if (GEMINI_API_KEYS.length > 1) {
+    currentGeminiKeyIdx = (currentGeminiKeyIdx + 1) % GEMINI_API_KEYS.length;
+    console.log(`[Gemini Key Pool] Rotated to key #${currentGeminiKeyIdx + 1} (${GEMINI_API_KEYS.length} available)`);
+    return true;
+  }
+  return false;
+}
+
+const GEMINI_API_KEY = getGeminiApiKey();
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 const OPENROUTER_API_URL =
   "https://openrouter.ai/api/v1/chat/completions";
@@ -555,40 +593,68 @@ function safeJsonParse(text) {
 
   const trimmed = text.trim();
 
+  // 1. Direct standard parse
   try {
     return JSON.parse(trimmed);
   } catch {
     // Continue.
   }
 
-  const withoutFence = trimmed
-    .replace(/^```json\s*/i, "")
-    .replace(/^```\s*/i, "")
-    .replace(/\s*```$/i, "")
+  // 2. Strip code fences and leading/trailing conversational text
+  const clean = trimmed
+    .replace(/^[\s\S]*?```(?:json)?\s*/i, "")
+    .replace(/\s*```[\s\S]*$/, "")
     .trim();
 
   try {
-    return JSON.parse(withoutFence);
+    return JSON.parse(clean);
   } catch {
     // Continue.
   }
 
-  const firstBrace = withoutFence.indexOf("{");
-  const lastBrace = withoutFence.lastIndexOf("}");
+  // 3. Array extraction (if content is enclosed in [...] or starts with [)
+  const firstBracket = clean.indexOf("[");
+  const lastBracket = clean.lastIndexOf("]");
+  const firstBrace = clean.indexOf("{");
+  const lastBrace = clean.lastIndexOf("}");
 
-  if (
-    firstBrace >= 0 &&
-    lastBrace > firstBrace
-  ) {
-    const candidate = withoutFence.slice(
-      firstBrace,
-      lastBrace + 1,
-    );
-
+  if (firstBracket >= 0 && (firstBrace === -1 || firstBracket < firstBrace) && lastBracket > firstBracket) {
     try {
-      return JSON.parse(candidate);
+      return JSON.parse(clean.slice(firstBracket, lastBracket + 1));
     } catch {
-      return null;
+      // Continue.
+    }
+  }
+
+  // 4. Object extraction (if content is enclosed in {...})
+  if (firstBrace >= 0 && lastBrace > firstBrace) {
+    try {
+      return JSON.parse(clean.slice(firstBrace, lastBrace + 1));
+    } catch {
+      // Continue.
+    }
+  }
+
+  // 5. Clean trailing commas before } or ]
+  try {
+    const noTrailing = clean.replace(/,\s*([}\]])/g, "$1");
+    return JSON.parse(noTrailing);
+  } catch {
+    // Continue.
+  }
+
+  // 6. Truncation repair: if the model hit max tokens and got cut off mid-batch,
+  // recover all completed article objects up to the last closing brace '}'!
+  if (firstBrace >= 0) {
+    const candidate = clean.slice(firstBrace);
+    const lastObjEnd = candidate.lastIndexOf("}");
+    if (lastObjEnd > 0) {
+      const repaired = candidate.slice(0, lastObjEnd + 1).replace(/,\s*$/, "") + "\n  ]\n}";
+      try {
+        return JSON.parse(repaired);
+      } catch {
+        // Continue.
+      }
     }
   }
 
@@ -604,20 +670,17 @@ function extractArticleArray(value) {
     return value;
   }
 
-  if (
-    typeof value === "object" &&
-    Array.isArray(value.articles)
-  ) {
-    return value.articles;
-  }
-
-  if (
-    typeof value === "object" &&
-    value.output &&
-    typeof value.output === "object" &&
-    Array.isArray(value.output.articles)
-  ) {
-    return value.output.articles;
+  if (typeof value === "object") {
+    if (Array.isArray(value.articles)) return value.articles;
+    if (Array.isArray(value.items)) return value.items;
+    if (Array.isArray(value.data)) return value.data;
+    if (value.output && typeof value.output === "object" && Array.isArray(value.output.articles)) {
+      return value.output.articles;
+    }
+    // Single article recovery
+    if (value.headline && value.summary) {
+      return [value];
+    }
   }
 
   return [];
@@ -1339,7 +1402,7 @@ async function requestGroq(
     "Sending selected candidates in ONE Groq request...",
   );
 
-  const candidateModels = [GROQ_MODEL, "llama-3.1-8b-instant"].filter(
+  const candidateModels = [GROQ_MODEL, "llama-3.3-70b-versatile"].filter(
     (m, idx, arr) => arr.indexOf(m) === idx,
   );
 
@@ -1362,7 +1425,7 @@ async function requestGroq(
 
           headers: {
             Authorization:
-              `Bearer ${GROQ_API_KEY}`,
+              `Bearer ${getGroqApiKey()}`,
 
             "Content-Type":
               "application/json",
@@ -1427,6 +1490,9 @@ async function requestGroq(
      * 429 = rate limit.
      */
     if (response.status === 429) {
+      if (rotateGroqApiKey()) {
+        continue;
+      }
       const retryAfter =
         response.headers.get(
           "retry-after",
@@ -1667,7 +1733,7 @@ async function requestGemini(candidates) {
   const prompt = buildBatchPrompt(candidates);
   console.log(`Sending batch to Gemini AI fallback (${GEMINI_MODEL})...`);
 
-  const modelsToTry = [GEMINI_MODEL, "gemini-3.8-flash", "gemini-3.5-flash", "gemini-3.0-flash"].filter(
+  const modelsToTry = [GEMINI_MODEL, "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash", "gemini-3.8-flash", "gemini-3.5-flash"].filter(
     (m, idx, arr) => arr.indexOf(m) === idx,
   );
 
@@ -1675,12 +1741,13 @@ async function requestGemini(candidates) {
 
   for (const model of modelsToTry) {
     try {
-      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`;
+      const currentKey = getGeminiApiKey();
+      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(currentKey)}`;
       const response = await fetch(nativeUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-goog-api-key": GEMINI_API_KEY,
+          "x-goog-api-key": currentKey,
         },
         body: JSON.stringify({
           contents: [
@@ -1706,6 +1773,7 @@ async function requestGemini(candidates) {
       if (!response.ok) {
         const errText = await response.text();
         console.warn(`[Gemini Native] ${model} HTTP ${response.status}: ${truncateText(errText, 300)}`);
+        if (response.status === 429 && rotateGeminiApiKey()) continue;
         lastError = new Error(`Gemini ${model} failed with HTTP ${response.status}: ${truncateText(errText, 150)}`);
         continue;
       }
@@ -2097,12 +2165,13 @@ async function requestGeminiContextComparison(storyA, storyB, prompt) {
   let lastError = null;
   for (const model of candidateModels) {
     try {
-      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`;
+      const currentKey = getGeminiApiKey();
+      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(currentKey)}`;
       const response = await fetch(nativeUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-goog-api-key": GEMINI_API_KEY,
+          "x-goog-api-key": currentKey,
         },
         body: JSON.stringify({
           contents: [
