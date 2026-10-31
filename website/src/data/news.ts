@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gitlab-releases-emergency-fixes-for-critical-serve-72c186",
+    "title": "GitLab Releases Emergency Fixes for Critical Server-Side RCE",
+    "summary": "GitLab addressed a critical unauthenticated remote code execution vulnerability across self-managed GitLab CE and EE instances in versions 19.4.2, 19.3.4, and 19.2.8. The flaw allows arbitrary code execution on the server without prior authentication, posing a significant risk to internet-facing deployments. CERT-EU urges administrators to upgrade immediately, prioritizing externally accessible instances to mitigate exposure.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CERT-EU Security Advisories",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-016/",
+    "publishedAt": "2026-10-31T20:44:17.390Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-releases-emergency-fixes-for-critical-serve",
+      "article-72c186",
+      "72c186",
+      "gitlab-releases-emergency-fixes-for-critical-server-side-rce"
+    ]
+  },
+  {
+    "slug": "cisco-distributes-patch-for-critical-amp-rce-vulne-72c186",
+    "title": "Cisco Distributes Patch for Critical AMP RCE Vulnerability",
+    "summary": "An unauthenticated remote attacker could exploit a critical vulnerability in Cisco Secure Email Gateway's Advanced Malware Protection feature to write arbitrary files and execute commands with root privileges on the underlying operating system. Active exploitation of this vulnerability is currently confirmed in the wild, making it an urgent threat to internet-facing appliances.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CERT-EU Security Advisories",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-017/",
+    "publishedAt": "2026-10-31T20:44:17.389Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-distributes-patch-for-critical-amp-rce-vulne",
+      "article-72c186",
+      "72c186",
+      "cisco-distributes-patch-for-critical-amp-rce-vulnerability"
+    ]
+  },
+  {
     "slug": "northflank-breach-exposes-customers-ai-api-keys-429626",
     "title": "Northflank Breach Exposes Customers' AI API Keys",
     "summary": "Northflank, a cloud hosting platform, suffered a breach exposing customers' AI API keys and related secrets. The incident allowed attackers to retrieve and abuse stored credentials, potentially enabling unauthorized API calls and data exfiltration. Northflank urged users to rotate credentials, monitor activity, and investigate the attack vector to mitigate further risk.",
@@ -25,6 +61,26 @@ export const news: NewsBrief[] = [
       "northflank-breach-exposes-customers-ai-api-keys",
       "article-429626",
       "429626"
+    ]
+  },
+  {
+    "slug": "android-sms-crash-flaw-cve-2026-58882-requires-imm-7384e0",
+    "title": "Android SMS Crash Flaw CVE-2026-58882 Requires Immediate Patching",
+    "summary": "A critical vulnerability designated CVE-2026-58882 affects enterprise Android environments through an SMS crash flaw that enables exploitation by threat actors. Organizations should deploy detection rules to identify active exploitation attempts and apply vendor patches promptly to prevent operational disruption. Patching should be prioritized based on exposure to enterprise-grade mobile devices.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/new-android-sms-of-death-exploit-can-remotely-crash-unp",
+    "publishedAt": "2026-10-31T17:26:57.000Z",
+    "cves": [
+      "CVE-2026-58882"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "android-sms-crash-flaw-cve-2026-58882-requires-imm",
+      "article-7384e0",
+      "7384e0",
+      "android-sms-crash-flaw-cve-2026-58882-requires-immediate-pat"
     ]
   },
   {
@@ -45,6 +101,23 @@ export const news: NewsBrief[] = [
       "article-4075bb",
       "4075bb",
       "android-sms-of-death-poc-enables-remote-phone-crash"
+    ]
+  },
+  {
+    "slug": "reddit-shifts-to-logged-in-service-model-5cc4b9",
+    "title": "Reddit Shifts to Logged-In Service Model",
+    "summary": "Reddit announced a gradual transition to a logged-in service model, restricting content access behind user accounts. This policy shift aims to combat unauthorized scraping and bot activity across the platform. The change represents a structural modification to Reddit's public-facing architecture, requiring users to authenticate for broader content access.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+    "publishedAt": "2026-10-31T14:05:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "reddit-shifts-to-logged-in-service-model",
+      "article-5cc4b9",
+      "5cc4b9"
     ]
   },
   {
@@ -6370,80 +6443,6 @@ export const news: NewsBrief[] = [
       "article-159657",
       "159657",
       "blackx-uefi-bootkit-leverages-baton-drop-flaw-to-defeat-secu"
-    ]
-  },
-  {
-    "slug": "brotli-decoder-memory-corruption-enables-rce-in-no-164f62",
-    "title": "Brotli Decoder Memory Corruption Enables RCE in Node.js, Bun, Python, and Envoy",
-    "summary": "A memory-corruption flaw in Google’s Brotli decoder, identified as CVE-2026-111497, allows crafted Brotli-compressed data to overwrite memory beyond a buffer in Node.js, Bun, Python Brotli packages, and Envoy proxies. The vulnerability enables remote code execution through buffer overflow, potentially compromising any process handling untrusted Brotli streams.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-    "publishedAt": "2026-10-24T11:09:29.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "brotli-decoder-memory-corruption-enables-rce-in-no",
-      "article-164f62",
-      "164f62",
-      "brotli-decoder-memory-corruption-enables-rce-in-node-js-bun-"
-    ]
-  },
-  {
-    "slug": "litellm-master-key-leak-enables-github-token-theft-4b2854",
-    "title": "LiteLLM Master Key Leak Enables GitHub Token Theft and Release Hijacking",
-    "summary": "A publicly exposed LiteLLM Agent Platform master key was committed to a GitHub repository, allowing attackers to push a malicious Python package and hijack the release pipeline. The flaw stems from accidental exposure of privileged credentials in a configuration file, enabling credential theft and unauthorized code deployment.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
-    "publishedAt": "2026-10-24T11:03:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-master-key-leak-enables-github-token-theft",
-      "article-4b2854",
-      "4b2854",
-      "litellm-master-key-leak-enables-github-token-theft-and-relea"
-    ]
-  },
-  {
-    "slug": "google-updates-privacy-policy-to-allow-ai-features-14d194",
-    "title": "Google Updates Privacy Policy to Allow AI Features to Use Gmail and Photos Data for Targeted Ads",
-    "summary": "Google updated its privacy policy to clarify that data from Gmail and Photos can be accessed by AI features in Search or Gemini for targeted advertising. The policy states that users may opt‑in to allow these services to read activity from other Google accounts, enabling cross‑service ad targeting in the future. Review the terms and adjust data handling practices.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
-    "publishedAt": "2026-10-24T10:36:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-updates-privacy-policy-to-allow-ai-features",
-      "article-14d194",
-      "14d194",
-      "google-updates-privacy-policy-to-allow-ai-features-to-use-gm"
-    ]
-  },
-  {
-    "slug": "researchers-push-over-2-million-updates-to-disable-6bf1dd",
-    "title": "Researchers Push Over 2 Million Updates to Disable Popcorn Time Updater That Could Fuel a Botnet",
-    "summary": "Researchers pushed over 2 million updates to disable a background updater in the abandoned Time4Popcorn app, preventing potential remote takeover. The updater could have allowed unauthorized remote code execution if left enabled, enabling an outsider to hijack the system. Eye Security recommends installing the update immediately and removing Time4Popcorn to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
-    "publishedAt": "2026-10-24T09:04:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researchers-push-over-2-million-updates-to-disable",
-      "article-6bf1dd",
-      "6bf1dd",
-      "researchers-push-over-2-million-updates-to-disable-popcorn-t"
     ]
   }
 ];
