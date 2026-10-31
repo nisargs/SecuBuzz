@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "northflank-breach-exposes-customers-ai-api-keys-429626",
+    "title": "Northflank Breach Exposes Customers' AI API Keys",
+    "summary": "Northflank, a cloud hosting platform, suffered a breach exposing customers' AI API keys and related secrets. The incident allowed attackers to retrieve and abuse stored credentials, potentially enabling unauthorized API calls and data exfiltration. Northflank urged users to rotate credentials, monitor activity, and investigate the attack vector to mitigate further risk.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "publishedAt": "2026-10-31T18:01:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "northflank-breach-exposes-customers-ai-api-keys",
+      "article-429626",
+      "429626"
+    ]
+  },
+  {
+    "slug": "android-sms-of-death-poc-enables-remote-phone-cras-4075bb",
+    "title": "Android SMS of Death PoC Enables Remote Phone Crash",
+    "summary": "A proof‑of‑concept exploit for CVE-2026-58882, dubbed 'SMS of Death', lets attackers remotely crash unpatched Android phones via crafted text messages. The flaw lies in SMS handling, causing a denial‑of‑service that can reboot devices, but it does not grant code execution. Google released a patch in the latest security update; users should install it promptly and monitor for suspicious SMS activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+    "publishedAt": "2026-10-31T15:35:11.000Z",
+    "cves": [
+      "CVE-2026-58882"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "android-sms-of-death-poc-enables-remote-phone-cras",
+      "article-4075bb",
+      "4075bb",
+      "android-sms-of-death-poc-enables-remote-phone-crash"
+    ]
+  },
+  {
+    "slug": "chromium-svg-input-validation-flaw-cve-2026-118304-1fe91c",
+    "title": "Chromium SVG Input Validation Flaw CVE-2026-118304",
+    "summary": "Chromium's SVG parser contains an improper input validation flaw identified as CVE-2026-118304. The vulnerability allows malformed SVG files to trigger unexpected behavior, potentially leading to memory corruption or denial‑of‑service, though no active exploitation has been reported. Google released a patch in the latest Chrome update; users should upgrade to the newest version to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118304",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118304"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-svg-input-validation-flaw-cve-2026-118304",
+      "article-1fe91c",
+      "1fe91c"
+    ]
+  },
+  {
+    "slug": "chromium-video-use-after-free-cve-2026-118313-1fe91c",
+    "title": "Chromium Video Use-After-Free CVE-2026-118313",
+    "summary": "Chromium's video subsystem contains a use‑after‑free flaw identified as CVE-2026-118313. The defect can lead to memory corruption or denial‑of‑service when processing malformed video streams, but no active exploitation has been observed. Google released a patch in the latest Chrome update; users should upgrade to the newest version to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118313",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118313"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-video-use-after-free-cve-2026-118313",
+      "article-1fe91c",
+      "1fe91c"
+    ]
+  },
+  {
     "slug": "chainalysis-data-breach-exposes-customer-details-3eab49",
     "title": "Chainalysis Data Breach Exposes Customer Details",
     "summary": "Chainalysis, a blockchain analytics firm, suffered a data breach after attackers used offensive agentic techniques to access internal systems and tools. The breach exposed customer names, email addresses, user IDs, and organizational roles, compromising sensitive personal information. Chainalysis has disclosed the incident and is investigating the extent of the compromise; affected customers should monitor for suspicious activity.",
@@ -1575,6 +1650,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-pcre2-security-update-37d990",
+    "title": "Red Hat Issues pcre2 Security Update",
+    "summary": "Red Hat has issued a security update for the pcre2 regular expression library on RHEL 8.4 Advanced Mission Critical and Extended Update Support channels. The update addresses multiple vulnerabilities with CVSS scores listed in the advisory, though no specific CVE identifiers are named. Red Hat recommends applying the patch immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92901",
+    "publishedAt": "2026-10-29T23:42:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-pcre2-security-update",
+      "article-37d990",
+      "37d990"
+    ]
+  },
+  {
     "slug": "patch-vpn-flaw-cve-2026-97229-18d6a1",
     "title": "Patch VPN Flaw CVE-2026-97229",
     "summary": "CVE-2026-97229 is a vulnerability in VPN software that could allow attackers to compromise enterprise environments. Root‑cause telemetry indicates a flaw in authentication handling, potentially enabling unauthenticated code execution. Red Hat recommends applying the vendor patch immediately to mitigate the risk and prevent potential exploitation across all affected systems globally today.",
@@ -1608,6 +1700,23 @@ export const news: NewsBrief[] = [
       "cisco-sd-wan-zero-day-cve-2026-20127-exploit",
       "article-7856fc",
       "7856fc"
+    ]
+  },
+  {
+    "slug": "external-teams-chats-anchor-malware-delivery-663274",
+    "title": "External Teams Chats Anchor Malware Delivery",
+    "summary": "Security researchers have identified a new malware delivery vector called External Teams Chats Anchor 15‑Minute, which leverages compromised chat platforms to distribute malicious payloads. The mechanism exploits user trust and bypasses standard endpoint detection by embedding code within seemingly legitimate chat messages. Analysts recommend reviewing telemetry, deploying detection rules, and applying any available patches to block this threat.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/external-teams-chats-anchor-15-minute-malware-delivery",
+    "publishedAt": "2026-10-29T23:21:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "external-teams-chats-anchor-malware-delivery",
+      "article-663274",
+      "663274"
     ]
   },
   {
@@ -1748,6 +1857,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-updates-desktop-stable-channel-4d2089",
+    "title": "Chrome Updates Desktop Stable Channel",
+    "summary": "Google Chrome released a stable channel update for Windows, Mac, and Linux that includes 21 security fixes, among them CVE‑2026‑76024, a critical memory‑corruption flaw in MediaStream, and CVE‑2026‑76025, a high‑severity use‑after‑free in FileSystem. These vulnerabilities could allow attackers to execute code or crash the browser via media or filesystem inputs. Users should install the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+    "publishedAt": "2026-10-29T21:26:20.252Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-updates-desktop-stable-channel",
+      "article-4d2089",
+      "4d2089"
+    ]
+  },
+  {
     "slug": "anthropic-themed-phishing-emails-evade-leading-ema-6ab67d",
     "title": "Anthropic‑Themed Phishing Emails Evade Leading Email Gateways",
     "summary": "Phishing campaigns themed around Anthropic are bypassing several top secure email gateway products. The emails contain obvious red flags yet still reach inboxes, indicating gaps in current threat detection rules. Security teams should update gateway signatures and enable advanced threat protection to counter these deceptive messages.",
@@ -1763,6 +1889,23 @@ export const news: NewsBrief[] = [
       "article-6ab67d",
       "6ab67d",
       "anthropic-themed-phishing-emails-evade-leading-email-gateway"
+    ]
+  },
+  {
+    "slug": "threatsday-highlights-firewall-flaws-and-trojans-706edd",
+    "title": "ThreatsDay Highlights Firewall Flaws and Trojans",
+    "summary": "ThreatsDay lists 26 incidents, including critical firewall flaws exposing network perimeters, rented banking trojans harvesting credentials, weaponized PDFs exploiting parsing bugs, and OAuth token theft. These events combine advanced exploitation with misconfigurations, enabling attackers to gain unauthorized access or exfiltrate data. Teams should patch firewalls, update software, and monitor token usage to mitigate risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+    "publishedAt": "2026-10-29T19:11:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threatsday-highlights-firewall-flaws-and-trojans",
+      "article-706edd",
+      "706edd"
     ]
   },
   {
@@ -6314,165 +6457,6 @@ export const news: NewsBrief[] = [
       "rhsa-2026-88834-important-php-8-2-security-update",
       "article-37e4f1",
       "37e4f1"
-    ]
-  },
-  {
-    "slug": "microsoft-teams-to-add-ai-powered-phishing-detecti-5ee80e",
-    "title": "Microsoft Teams to Add AI‑Powered Phishing Detection",
-    "summary": "Microsoft announced that Teams will incorporate AI‑powered, context‑aware phishing detection in messages beginning early November 2026. The feature leverages machine learning models trained on historical phishing campaigns to flag suspicious links and attachments before users interact. Microsoft will release the update through the Teams app channel, and administrators should monitor rollout logs for any false positives.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
-    "publishedAt": "2026-10-23T18:54:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-teams-to-add-ai-powered-phishing-detecti",
-      "article-5ee80e",
-      "5ee80e",
-      "microsoft-teams-to-add-ai-powered-phishing-detection"
-    ]
-  },
-  {
-    "slug": "blackx-uefi-bootkit-bypasses-secure-boot-on-patche-1cafe3",
-    "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
-    "summary": "BlackX, a UEFI bootkit, bypasses Secure Boot on patched Windows systems lacking revocation lists, targeting diplomatic organizations in Tajikistan, Uzbekistan, and Turkmenistan. The bootkit exploits a firmware-level privilege escalation flaw that remains active, enabling attackers to load malicious code before OS authentication, potentially compromising system integrity and confidentiality. Apply the Microsoft firmware patch and update revocation lists immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
-    "publishedAt": "2026-10-23T18:50:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "blackx-uefi-bootkit-bypasses-secure-boot-on-patche",
-      "article-1cafe3",
-      "1cafe3",
-      "blackx-uefi-bootkit-bypasses-secure-boot-on-patched-windows-"
-    ]
-  },
-  {
-    "slug": "cloudflare-enhances-range-request-handling-to-redu-aaedf1",
-    "title": "Cloudflare Enhances Range Request Handling to Reduce Origin Bandwidth Waste",
-    "summary": "Cloudflare’s Pingora cache architecture was updated to handle large file range requests more efficiently, targeting origin bandwidth waste on small requests. The change addresses naive byte-range caching that previously consumed gigabytes of origin bandwidth, reducing latency and bandwidth usage. No patch required; the update is deployed in Cloudflare’s infrastructure, improving performance for all users.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/origin-range-requests/",
-    "publishedAt": "2026-10-23T18:22:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-enhances-range-request-handling-to-redu",
-      "article-aaedf1",
-      "aaedf1",
-      "cloudflare-enhances-range-request-handling-to-reduce-origin-"
-    ]
-  },
-  {
-    "slug": "litellm-1-107-0-supply-chain-compromise-via-python-3513cb",
-    "title": "LiteLLM 1.107.0 Supply‑Chain Compromise via Python Startup Hooks",
-    "summary": "A supply‑chain compromise in LiteLLM 1.107.0 leveraged Python startup hooks to exfiltrate credentials and load remote code. The flaw allows attackers to inject malicious modules during interpreter initialization, bypassing standard package verification and enabling credential theft without user interaction. Microsoft recommends updating to the patched LiteLLM release and disabling startup hooks as a mitigation until a vendor patch is issued.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
-    "publishedAt": "2026-10-23T18:12:19.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/"
-      },
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack"
-      }
-    ],
-    "aliases": [
-      "litellm-1-107-0-supply-chain-compromise-via-python",
-      "article-3513cb",
-      "3513cb",
-      "litellm-1-107-0-supply-chain-compromise-via-python-startup-h"
-    ]
-  },
-  {
-    "slug": "cloudflare-launches-geokey-manager-to-enforce-post-5eab96",
-    "title": "Cloudflare Launches GeoKey Manager to Enforce Post‑Quantum Geographic Key Isolation",
-    "summary": "Cloudflare introduced a post‑quantum GeoKey Manager that isolates decryption keys by geographic region, preventing harvest‑now‑decrypt‑later attacks. The solution rewrites the cryptography stack to enforce strict data sovereignty, ensuring keys cannot be extracted from one region and used elsewhere. The feature is available in Cloudflare’s current product offering; users should enable GeoKey Manager to maintain compliance with regional data‑protection regulations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
-    "publishedAt": "2026-10-23T18:06:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-launches-geokey-manager-to-enforce-post",
-      "article-5eab96",
-      "5eab96",
-      "cloudflare-launches-geokey-manager-to-enforce-post-quantum-g"
-    ]
-  },
-  {
-    "slug": "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-re-69b84c",
-    "title": "Ruby Releases 4.0.9, 3.4.12, 3.3.13 to Fix Onigmo Regex Bugs Behind GitLab RCE Flaws",
-    "summary": "Ruby released 4.0.9, 3.4.12, and 3.3.13 to address three Onigmo regex engine bugs that enabled memory corruption during pattern compilation. These defects underpinned four critical GitLab RCE vulnerabilities, allowing crafted patterns to execute arbitrary code on GitLab servers without authentication. GitLab has applied patches, and Ruby advises users to upgrade to the fixed releases and monitor for anomalous regex activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
-    "publishedAt": "2026-10-23T17:54:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-re",
-      "article-69b84c",
-      "69b84c",
-      "ruby-releases-4-0-9-3-4-12-3-3-13-to-fix-onigmo-regex-bugs-b"
-    ]
-  },
-  {
-    "slug": "ransomware-affiliates-deploy-ai-driven-intrusion-e-6dc9f4",
-    "title": "Ransomware Affiliates Deploy AI-Driven Intrusion Ecosystem",
-    "summary": "Cybersecurity researchers uncovered an AI‑driven intrusion ecosystem operated by affiliates of the INC and The Gentlemen ransomware groups, centered on an Autonomous Red Team Kill Chain Framework called Phantom. The framework enables automated intrusion and data‑extortion operations, leveraging AI agents to orchestrate attacks across multiple targets.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
-    "publishedAt": "2026-10-23T17:50:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-affiliates-deploy-ai-driven-intrusion-e",
-      "article-6dc9f4",
-      "6dc9f4",
-      "ransomware-affiliates-deploy-ai-driven-intrusion-ecosystem"
-    ]
-  },
-  {
-    "slug": "cve-2026-85788-exploits-awslabs-mysql-mcp-server-s-470efb",
-    "title": "CVE-2026-85788 Exploits awslabs mysql-mcp-server SQL Validation Flaw",
-    "summary": "CVE-2026-85788 exposes a flaw in the awslabs mysql-mcp-server SQL validation component, allowing attackers to bypass input restrictions and execute arbitrary SQL commands. The vulnerability arises from incomplete input sanitization, enabling unauthorized data manipulation without authentication. AWS has released a patch; administrators should apply the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-103-aws/",
-    "publishedAt": "2026-10-23T17:44:25.000Z",
-    "cves": [
-      "CVE-2026-85788"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-85788-exploits-awslabs-mysql-mcp-server-s",
-      "article-470efb",
-      "470efb",
-      "cve-2026-85788-exploits-awslabs-mysql-mcp-server-sql-validat"
     ]
   }
 ];
