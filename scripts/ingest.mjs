@@ -2,6 +2,11 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
+import {
+  extractFallbackBrief,
+  buildFallbackArticle,
+  normalizeTimestamp,
+} from "./extractive_fallback.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -912,14 +917,15 @@ function validateAiArticle(
       `${headline} ${summary} ${candidate.title || ""} ${candidate.content || candidate.description || ""}`,
     ),
     source: candidate.source,
-    publishedAt: candidate.publishedAt
-      ? (() => {
-          const parsed = new Date(candidate.publishedAt);
-          return Number.isNaN(parsed.getTime())
-            ? new Date().toISOString()
-            : parsed.toISOString();
-        })()
-      : new Date().toISOString(),
+    ...(() => {
+      const ts = normalizeTimestamp(candidate.publishedAt);
+      return {
+        publishedAt: ts.publishedAt,
+        ingestedAt: ts.ingestedAt,
+        isPublishedTimeUnknown: ts.isPublishedTimeUnknown,
+        isFutureSkew: ts.isFutureSkew,
+      };
+    })(),
     url: sourceUrl,
   };
 }
@@ -2789,6 +2795,7 @@ for (
     );
 
   let rawResults = [];
+  let aiThrew = false;
 
   try {
     rawResults =
@@ -2802,38 +2809,104 @@ for (
         ? error.message
         : error,
     );
-
-    /*
-     * IMPORTANT:
-     *
-     * Failed articles are NOT added to seenUrls.
-     *
-     * Sleep 6s to avoid hammering APIs if rate-limited.
-     */
-    await sleep(6000);
-    continue;
+    aiThrew = true;
   }
 
   const validArticles = [];
 
-  for (const rawArticle of rawResults) {
-    const article =
-      validateAiArticle(
-        rawArticle,
-        candidateMap,
+  if (!aiThrew && Array.isArray(rawResults) && rawResults.length > 0) {
+    for (const rawArticle of rawResults) {
+      const article =
+        validateAiArticle(
+          rawArticle,
+          candidateMap,
+        );
+
+      if (!article) {
+        console.log(
+          "Ignoring invalid AI article result.",
+        );
+
+        continue;
+      }
+
+      validArticles.push(
+        article,
+      );
+    }
+  }
+
+  /*
+   * TIER 2 EMERGENCY EXTRACTIVE FALLBACK TRIGGER
+   *
+   * Fires ONLY when:
+   * 1. All AI providers threw an exception for the batch; OR
+   * 2. The AI request completed but produced zero valid articles.
+   *
+   * NEVER triggers if AI produced one or more valid articles.
+   */
+  if (aiThrew || validArticles.length === 0) {
+    console.warn(
+      `[Fallback Trigger] AI tier produced 0 valid articles (${aiThrew ? "AI Error" : "0 Valid Articles"}). Attempting Tier 2 Extractive Fallback...`,
+    );
+
+    const fallbackArticles = [];
+
+    for (const candidate of indexedBatch) {
+      const normalizedUrl = normaliseUrl(candidate.url);
+      if (seenUrls.has(normalizedUrl)) {
+        continue;
+      }
+
+      const fallback = extractFallbackBrief(
+        candidate.title,
+        candidate.description || "",
+        candidate.url || "",
+        candidate.content || candidate.contentEncoded || "",
       );
 
-    if (!article) {
-      console.log(
-        "Ignoring invalid AI article result.",
-      );
+      if (fallback.status === "ACCEPTED") {
+        console.log(
+          `[Extractive Fallback] Rescued article: "${fallback.headline}" (${fallback.wordCount} words | [${fallback.category} / ${fallback.severity}])`,
+        );
 
-      continue;
+        const article = buildFallbackArticle(
+          candidate,
+          fallback,
+          normaliseUrl,
+          extractCvesFromText,
+        );
+
+        fallbackArticles.push(article);
+      } else {
+        console.log(
+          `[Extractive Fallback] Preserved for retry: "${String(candidate.title || "Untitled article").slice(0, 50)}..." (${fallback.reason})`,
+        );
+      }
     }
 
-    validArticles.push(
-      article,
-    );
+    if (fallbackArticles.length > 0) {
+      console.log(
+        `[Extractive Fallback] Rescued ${fallbackArticles.length} of ${indexedBatch.length} articles via pure code.`,
+      );
+
+      validArticles.push(...fallbackArticles);
+
+      for (const article of fallbackArticles) {
+        seenUrls.add(
+          normaliseUrl(
+            article.sourceUrl,
+          ),
+        );
+      }
+
+      generatedArticles.push(
+        ...fallbackArticles,
+      );
+    }
+
+    await sleep(3000);
+    continue;
   }
 
   console.log(
@@ -3122,9 +3195,9 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
       return false;
     }
     const ageMs = now - pubTime;
-    if (ageMs > MAX_PUSH_AGE_MS || ageMs < -3600000) {
+    if (ageMs > MAX_PUSH_AGE_MS || ageMs < 0) {
       console.log(
-        `[Push Filter] Skipping "${article.headline}": Published ${(ageMs / (1000 * 3600)).toFixed(1)}h ago (strictly exceeds 24h push threshold).`,
+        `[Push Filter] Skipping "${article.headline}": Published ${(ageMs / (1000 * 3600)).toFixed(1)}h ago (strictly exceeds 24h push threshold or is in the future).`,
       );
       return false;
     }
