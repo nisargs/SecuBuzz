@@ -966,6 +966,32 @@
     "additionalSources": []
   },
   {
+    "id": "https://ubuntu.com/security/notices/USN-8958-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8958-1",
+    "title": "Ubuntu patches .NET Blazor and Brotli vulnerabilities",
+    "headline": "Ubuntu patches .NET Blazor and Brotli vulnerabilities",
+    "summary": "USN-8958-1 fixes multiple .NET vulnerabilities affecting dotnet10 and dotnet11. CVE-2026-102870 addresses improper escaping in the Blazor WebAssembly debug proxy allowing arbitrary code execution. CVE-2026-111497 fixes Brotli decompression library issues causing denial of service or arbitrary code execution. CVE-2026-114148 addresses improper file ownership handling enabling local privilege escalation.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-10-29T17:02:55.000Z",
+    "url": "https://ubuntu.com/security/notices/USN-8958-1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/",
+    "title": "AWS Private CA Connector authorization flaw enables cert issuance",
+    "headline": "AWS Private CA Connector authorization flaw enables cert issuance",
+    "summary": "CVE-2026-119115 is an incorrect authorization issue in issuer resolution within AWS Private CA Connector for Kubernetes. An authenticated user with namespace-scoped approval policy could obtain certificates signed by a cluster-scoped issuer they are not authorized to use. Affected versions include aws-privateca-issuer before v1.10.1 and the EKS add-on before v1.10.1-eksbuild.1.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-10-29T16:45:45.000Z",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/google-says-gemini-4-carbon-leads-in-finding-exploiting-and-fixing-vulnerabilities/",
     "sourceUrl": "https://www.securityweek.com/google-says-gemini-4-carbon-leads-in-finding-exploiting-and-fixing-vulnerabilities/",
     "title": "Google Showcases Gemini 4 Carbon Cybersecurity Model",
@@ -4652,46 +4678,6 @@
       {
         "source": "ESET WeLiveSecurity",
         "sourceUrl": "https://www.welivesecurity.com/en/eset-research/mythicratatoskr-yggdrasil-enabled-backdoor-deployed-uac0099-sandworm-collaboration/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
-    "title": "eMudhra TLS Certificates Compromised by Weak Private Keys",
-    "headline": "eMudhra TLS Certificates Compromised by Weak Private Keys",
-    "summary": "eMudhra Limited’s eight TLS certificates contain private keys with only 3 to 8 bits of entropy, far below the 384‑bit standard for NIST P‑384 elliptic curve keys. The flaw arises from inadequate key generation, allowing trivial brute‑force recovery of the private keys. Immediate action requires revoking the compromised certificates, issuing new keys with full entropy, and enforcing strict key‑generation policies.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-23T11:04:22.000Z",
-    "url": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/godaddy-revoking-tls-certificates/"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
-    "sourceUrl": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
-    "title": "Chinese Threat Actors Weaponize Artex AI Tool in ConnectWise Intrusions",
-    "headline": "Chinese Threat Actors Weaponize Artex AI Tool in ConnectWise Intrusions",
-    "summary": "China APT leveraged the AI pentest tool Artex to target ConnectWise installations, compromising hundreds of organizations and achieving privileged access in some environments. The attack chain exploited automated credential discovery and lateral movement within the ConnectWise platform, enabling attackers to elevate privileges to operator level. ConnectWise has released a patch and recommends disabling the affected modules immediately.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-23T10:31:16.000Z",
-    "url": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/china-cyber-connectwise-ai"
       }
     ]
   }
