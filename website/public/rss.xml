@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 07:51:02 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 08:51:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>F5 BIG-IP APM Vulnerability Exposed to Active Exploitation</title>
@@ -53,6 +53,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>ChatGPT Share Link Enables Session Code Execution</title>
+      <link>https://secubuzz.com/news/chatgpt-share-link-enables-session-code-execution-7dc981</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-share-link-enables-session-code-execution-7dc981</guid>
+      <description><![CDATA[A malicious ChatGPT share link can execute attacker code within a logged‑in session, granting the attacker read access to private conversations. The flaw stems from insufficient isolation of shared session data, allowing injected scripts to run with the user's privileges. OpenAI fixed the issue eight days after the researchers reported it, issuing a patch and rating the vulnerability as P1.]]></description>
+      <pubDate>Sat, 31 Oct 2026 05:33:41 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Linux Kernel TCP Use-After-Free CVE Exploitable</title>
       <link>https://secubuzz.com/news/linux-kernel-tcp-use-after-free-cve-exploitable-7f55d5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-tcp-use-after-free-cve-exploitable-7f55d5</guid>
@@ -60,6 +69,15 @@
       <pubDate>Sat, 31 Oct 2026 05:21:05 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Google Unveils Gemini 4 Carbon AI for Security</title>
+      <link>https://secubuzz.com/news/google-unveils-gemini-4-carbon-ai-for-security-120a94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-unveils-gemini-4-carbon-ai-for-security-120a94</guid>
+      <description><![CDATA[Google has launched Gemini 4 Carbon, an AI model designed to identify software vulnerabilities, assess exploitation potential, and generate remediation suggestions. The model builds on Gemini 4 Argon, extending capabilities to security and coding tasks that previously required days of effort. Access will be limited to selected cyber defenders initially, with broader availability expected after further testing and refinement.]]></description>
+      <pubDate>Sat, 31 Oct 2026 04:48:15 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/google-launches-gemini-4-carbon/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>SAP Patches Critical Kernel and NetWeaver Flaws</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Red Hat released a kernel update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications, addressing multiple security vulnerabilities. The advisory lists several CVEs with CVSS base scores, but the update is classified as Important, indicating a high risk of exploitation.]]></description>
       <pubDate>Fri, 30 Oct 2026 07:39:36 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:92997">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Adds GitLab RCE and Cisco DoS to KEV</title>
-      <link>https://secubuzz.com/news/cisa-adds-gitlab-rce-and-cisco-dos-to-kev-aae9db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-gitlab-rce-and-cisco-dos-to-kev-aae9db</guid>
-      <description><![CDATA[CISA added two actively exploited flaws to its KEV list: GitLab RCE CVE‑2026‑97229 and a Cisco firewall DoS. The GitLab flaw, CVSS 10.0, permits arbitrary code execution via an integer overflow in repository handling. Patches are available; administrators should update affected systems immediately, monitor for exploitation, and verify that firewall configurations are hardened.]]></description>
-      <pubDate>Fri, 30 Oct 2026 07:27:05 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHEL 9.2 Kernel Update Addresses Important Vulnerabilities</title>
-      <link>https://secubuzz.com/news/rhel-9-2-kernel-update-addresses-important-vulnera-37d98f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhel-9-2-kernel-update-addresses-important-vulnera-37d98f</guid>
-      <description><![CDATA[Red Hat released a kernel update for RHEL 9.2 Update Services for SAP Solutions, fixing multiple security bugs. The advisory lists several CVEs with CVSS base scores, but the update is classified as Important, indicating a high exploitation risk. Administrators should apply the kernel patch promptly and verify that all affected components are updated to mitigate potential threats.]]></description>
-      <pubDate>Fri, 30 Oct 2026 06:37:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:92993">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

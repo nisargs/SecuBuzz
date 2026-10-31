@@ -65,6 +65,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+    "title": "ChatGPT Share Link Enables Session Code Execution",
+    "headline": "ChatGPT Share Link Enables Session Code Execution",
+    "summary": "A malicious ChatGPT share link can execute attacker code within a logged‑in session, granting the attacker read access to private conversations. The flaw stems from insufficient isolation of shared session data, allowing injected scripts to run with the user's privileges. OpenAI fixed the issue eight days after the researchers reported it, issuing a patch and rating the vulnerability as P1.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-31T05:33:41.000Z",
+    "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
     "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
     "title": "Linux Kernel TCP Use-After-Free CVE Exploitable",
@@ -75,6 +88,19 @@
     "source": "AWS Security Bulletins",
     "publishedAt": "2026-10-31T05:21:05.000Z",
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/google-launches-gemini-4-carbon/",
+    "sourceUrl": "https://cybersecuritynews.com/google-launches-gemini-4-carbon/",
+    "title": "Google Unveils Gemini 4 Carbon AI for Security",
+    "headline": "Google Unveils Gemini 4 Carbon AI for Security",
+    "summary": "Google has launched Gemini 4 Carbon, an AI model designed to identify software vulnerabilities, assess exploitation potential, and generate remediation suggestions. The model builds on Gemini 4 Argon, extending capabilities to security and coding tasks that previously required days of effort. Access will be limited to selected cyber defenders initially, with broader availability expected after further testing and refinement.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-31T04:48:15.000Z",
+    "url": "https://cybersecuritynews.com/google-launches-gemini-4-carbon/",
     "additionalSources": []
   },
   {
@@ -1161,6 +1187,19 @@
     "additionalSources": []
   },
   {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-834/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-834/",
+    "title": "Linux Kernel Integer Underflow Enables Local Privilege Escalation",
+    "headline": "Linux Kernel Integer Underflow Enables Local Privilege Escalation",
+    "summary": "An integer underflow in the Linux Kernel IPv6 AH routing header permits privilege escalation on affected installations. The flaw, CVE-2026-80844, scores CVSS 8.8 and requires low‑privileged code execution to trigger, potentially allowing attackers to gain root privileges. Kernel maintainers have released a patch; administrators should update to the latest kernel version or apply the vendor‑supplied fix to eliminate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-834/",
+    "additionalSources": []
+  },
+  {
     "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-837/",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-837/",
     "title": "Linux Kernel XFRM Use-After-Free Exploit",
@@ -1348,6 +1387,19 @@
     "source": "CyberNews AI",
     "publishedAt": "2026-10-29T00:49:43.000Z",
     "url": "https://cybernewsai.com/blog/anthropic-s-unreleased-ai-model-chains-flaws-into-worki",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
+    "sourceUrl": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
+    "title": "PHP2Shell Exploit CVE-2026-109618 Enables RCE",
+    "headline": "PHP2Shell Exploit CVE-2026-109618 Enables RCE",
+    "summary": "PHP2Shell vulnerability, CVE-2026-109618, permits remote code execution on government servers, allowing attackers to run arbitrary commands. The flaw originates from insecure handling of PHP session tokens, enabling unauthenticated users to inject malicious code via crafted requests. A vendor patch has been released; administrators should apply it immediately and deploy detection rules to identify exploitation attempts.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T00:49:09.000Z",
+    "url": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
     "additionalSources": []
   },
   {
@@ -1785,15 +1837,23 @@
   {
     "id": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
     "sourceUrl": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-    "title": "Oracle Probes for CVE-2026-101767 RCE Flaw",
-    "headline": "Oracle Probes for CVE-2026-101767 RCE Flaw",
-    "summary": "Threat actors probe Oracle E-Business Suite for the recently patched CVE-2026-101767, a critical unauthenticated RCE flaw in the Application Object Library. Scored 9.8 on CVSS, the flaw lets attackers bypass authentication and execute arbitrary code, potentially compromising all EBS instances. Oracle patched last week; teams should apply the update immediately and monitor for exploitation attempts.",
-    "category": "CVE",
+    "title": "Oracle E-Business Suite CVE-2026-101767 RCE Vulnerability",
+    "headline": "Oracle E-Business Suite CVE-2026-101767 RCE Vulnerability",
+    "summary": "Oracle E-Business Suite suffers CVE-2026-101767, a critical unauthenticated remote code execution flaw in the Application Object Library. Scored 9.8 on CVSS, the flaw allows attackers to bypass authentication and execute arbitrary code, potentially compromising all EBS instances. Oracle patched last week; teams should apply the update immediately and monitor for exploitation attempts.",
+    "category": "VULNERABILITY",
     "severity": "CRITICAL",
     "source": "The Hacker News",
     "publishedAt": "2026-10-28T12:48:03.000Z",
     "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/hackers-target-critical-oracle-e-business-suite-rce-fla"
+      }
+    ],
+    "cves": [
+      "CVE-2026-101767"
+    ]
   },
   {
     "id": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
@@ -1962,6 +2022,19 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-28T05:00:19.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/28/kroll-third-party-data-breaches-insurance-claims-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-828/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-828/",
+    "title": "Alpine iLX-F511 Android Auto Service RCE via Stack Overflow",
+    "headline": "Alpine iLX-F511 Android Auto Service RCE via Stack Overflow",
+    "summary": "A stack‑based buffer overflow in the Alpine iLX‑F511 Android Auto Service allows attackers to execute arbitrary code without authentication. The vulnerability, CVE-2026-118610, scores CVSS 8.8 and can be exploited remotely, granting full device control. Patches are available from Alpine; users should update firmware to the latest release or apply the vendor‑supplied fix.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-828/",
     "additionalSources": []
   },
   {
@@ -4625,71 +4698,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-23T09:36:00.000Z",
     "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/sbi-notifies-customers-with-cyber-incident/",
-    "sourceUrl": "https://cybersecuritynews.com/sbi-notifies-customers-with-cyber-incident/",
-    "title": "SBI Notifies Customers After Personal Data Exposure",
-    "headline": "SBI Notifies Customers After Personal Data Exposure",
-    "summary": "State Bank of India notified customers after a cyber incident that exposed personal information found on the dark web. Investigators are examining the suspected leak, while the bank confirmed that account balances and funds remain secure. Customers should monitor account activity and change passwords, and the bank has issued email and WhatsApp alerts to affected users.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T09:20:41.000Z",
-    "url": "https://cybersecuritynews.com/sbi-notifies-customers-with-cyber-incident/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/best-email-encryption-services/",
-    "sourceUrl": "https://cybersecuritynews.com/best-email-encryption-services/",
-    "title": "Top 10 Email Encryption Services Ranked for 2026",
-    "headline": "Top 10 Email Encryption Services Ranked for 2026",
-    "summary": "The article ranks ten email encryption services for 2026, evaluating sender-side automation and recipient experience. It assesses policy integration, DLP triggers, one-click protection, and usability metrics, highlighting services that balance strong cryptography with user convenience. Security teams should review the rankings to select solutions that meet compliance requirements and streamline secure communication workflows.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T08:22:52.000Z",
-    "url": "https://cybersecuritynews.com/best-email-encryption-services/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
-    "title": "Hackers Hijack Exposed AI Models to Launch Cyberattacks",
-    "headline": "Hackers Hijack Exposed AI Models to Launch Cyberattacks",
-    "summary": "Hackers hijack publicly exposed AI models to orchestrate cyberattacks, forcing model owners to pay for the computing resources used. The method uses the model’s inference API, sending the attacker’s prompt to a decoy and then employing the output to plan break‑ins. Symantec’s honeypot captured the instruction set, allowing defenders to block hijacked model traffic and enforce authentication on AI services.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-23T08:21:48.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01042930971.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01042930971.html",
-    "title": "Chrome Stable 156 Released for iOS",
-    "headline": "Chrome Stable 156 Released for iOS",
-    "summary": "Google Chrome has released Stable 156 (156.0.8078.54) for iOS, adding stability and performance improvements to the browser. The update is available on the App Store within hours and includes a full list of changes in the Git log. Users are advised to install the new version to benefit from the latest enhancements.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-23T08:13:33.029Z",
-    "url": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01042930971.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
-    "sourceUrl": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
-    "title": "Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products",
-    "headline": "Atlassian Releases Patch for 75 Vulnerabilities in Data Center and Server Products",
-    "summary": "Atlassian’s October bulletin lists 75 vulnerabilities affecting Data Center and Server products, including 14 critical‑severity issues located in third‑party components. The flaws enable authenticated remote code execution and privilege escalation when users access affected services. Atlassian has issued patches for all affected components; administrators should apply the updates immediately to mitigate exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-23T07:54:47.000Z",
-    "url": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
     "additionalSources": []
   }
 ]
