@@ -1325,6 +1325,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:92869",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92869",
+    "title": "Red Hat Issues Tomcat Security Update",
+    "headline": "Red Hat Issues Tomcat Security Update",
+    "summary": "Tomcat on Red Hat Enterprise Linux 8 receives an important security update. The update addresses unspecified vulnerabilities rated Important by Red Hat Product Security, with CVSS scores available via CVE links. Red Hat has released the update; users should apply the Tomcat package update to mitigate the identified flaws immediately.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T23:41:43.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:92869",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/cisa-adds-two-known-exploited-vulnerabilities-to-catalo",
     "sourceUrl": "https://cybernewsai.com/blog/cisa-adds-two-known-exploited-vulnerabilities-to-catalo",
     "title": "Patch VPN Flaw CVE-2026-97229",
@@ -1556,6 +1569,19 @@
     "source": "AWS Security Bulletins",
     "publishedAt": "2026-10-29T16:45:45.000Z",
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
+    "title": "AI Desktop Apps Used to Deploy Crypto Miners",
+    "headline": "AI Desktop Apps Used to Deploy Crypto Miners",
+    "summary": "Threat actors deliver malicious loaders and cryptocurrency miners disguised as AI desktop applications for Anthropic Claude and OpenAI ChatGPT. The Yoba campaign uses fake GitHub projects claiming to be GPT-5.6 Sol, GPT-6 Astra, and Claude Opus to host miner malware. Security teams should verify AI app authenticity, avoid untrusted downloads, and monitor for unauthorized miner processes.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-29T15:20:29.000Z",
+    "url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
     "additionalSources": []
   },
   {
@@ -1881,6 +1907,19 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-29T06:22:33.000Z",
     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33470",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33470",
+    "title": "Deploy Local Ghidra Server for Malware Analysis Lab",
+    "headline": "Deploy Local Ghidra Server for Malware Analysis Lab",
+    "summary": "Building a malware analysis lab benefits from a local Ghidra server and virtualization snapshots. Snapshots enable clean investigations, but VM changes vanish unless data is stored externally, so analysts must preserve critical artifacts outside the VM. Teams should deploy a dedicated Ghidra server, manage snapshots, and back up artifacts to external storage to preserve integrity.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-29T06:17:41.000Z",
+    "url": "https://isc.sans.edu/diary/rss/33470",
     "additionalSources": []
   },
   {
@@ -4583,45 +4622,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-25T06:54:29.000Z",
     "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://security.paloaltonetworks.com/CVE-2026-109618",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-109618",
-    "title": "CVE-2026-109618 and CVE-2026-109619 Impact Palo Alto Networks Products",
-    "headline": "CVE-2026-109618 and CVE-2026-109619 Impact Palo Alto Networks Products",
-    "summary": "Palo Alto Networks products are affected by two critical PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, which allow authenticated remote code execution. The flaws arise from improper input validation in the PHP interpreter, enabling attackers to inject malicious code and gain full control over affected devices. Palo Alto Networks has issued patches; administrators should apply the latest updates immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Palo Alto Networks PSIRT",
-    "publishedAt": "2026-10-25T05:25:00.000Z",
-    "url": "https://security.paloaltonetworks.com/CVE-2026-109618",
-    "additionalSources": []
-  },
-  {
-    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-107-aws/",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-107-aws/",
-    "title": "AWS Systems Manager Agent SSRF Vulnerability Patched",
-    "headline": "AWS Systems Manager Agent SSRF Vulnerability Patched",
-    "summary": "AWS issued a security bulletin for CVE-2026-89049, a server-side request forgery flaw in the Session Manager port forwarding functionality of AWS Systems Manager Agent. The vulnerability allows an attacker to craft requests that bypass intended network boundaries through the port forwarding mechanism. AWS recommends updating the Systems Manager Agent to the latest patched version to remediate the exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "publishedAt": "2026-10-25T03:13:38.000Z",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-107-aws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
-    "title": "BlackX UEFI Bootkit Leverages Baton Drop Flaw to Defeat Secure Boot",
-    "headline": "BlackX UEFI Bootkit Leverages Baton Drop Flaw to Defeat Secure Boot",
-    "summary": "BlackX, a UEFI bootkit used in an espionage campaign, leveraged the Baton Drop flaw to bypass Secure Boot and load a malicious driver that interferes with Kaspersky and Avast security solutions. The root cause is a privilege escalation vulnerability in the UEFI firmware that allows unsigned code execution. A vendor patch and firmware update are required to mitigate the threat.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-24T14:17:32.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
     "additionalSources": []
   }
 ]
