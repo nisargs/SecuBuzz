@@ -1589,6 +1589,32 @@
     "additionalSources": []
   },
   {
+    "id": "https://arcticwolf.com/resources/report-uk/agentic-security-operations-report-2026/",
+    "sourceUrl": "https://arcticwolf.com/resources/report-uk/agentic-security-operations-report-2026/",
+    "title": "Arctic Wolf 2026 Agentic Security Operations Report",
+    "headline": "Arctic Wolf 2026 Agentic Security Operations Report",
+    "summary": "Arctic Wolf released its 2026 Agentic Security Operations Report, outlining how agentic AI collaborates with analysts to accelerate security investigations. The report details improvements in threat detection, alert triage, and response times, emphasizing the synergy between human expertise and automated analysis. Readers are encouraged to download the full report for insights on integrating agentic AI into existing SOC workflows.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "publishedAt": "2026-10-27T13:00:47.000Z",
+    "url": "https://arcticwolf.com/resources/report-uk/agentic-security-operations-report-2026/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.huntress.com/blog/camera-management-software-compromise-malware",
+    "sourceUrl": "https://www.huntress.com/blog/camera-management-software-compromise-malware",
+    "title": "Camera Management Software Compromised, Malware Deployed",
+    "headline": "Camera Management Software Compromised, Malware Deployed",
+    "summary": "Attackers compromised a camera management platform, enabling malware deployment, persistence, and command‑and‑control beaconing. The exploitation chain leveraged a software flaw that allowed remote code execution, with attackers establishing a foothold and maintaining persistence through privileged backdoors. Security teams should apply vendor patches, enforce least‑privilege access, and monitor for anomalous outbound traffic to mitigate further compromise.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Huntress",
+    "publishedAt": "2026-10-27T13:00:00.000Z",
+    "url": "https://www.huntress.com/blog/camera-management-software-compromise-malware",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.cloudflare.com/php-ctf/",
     "sourceUrl": "https://blog.cloudflare.com/php-ctf/",
     "title": "Cloudflare Launches PHP Capture the Flag Challenge for WAF Testing",
@@ -1613,6 +1639,24 @@
     "publishedAt": "2026-10-27T13:00:00.000Z",
     "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
     "additionalSources": []
+  },
+  {
+    "id": "https://arcticwolf.com/resources/press-releases/arctic-wolf-2026-agentic-security-operations-report-reveals-ai-now-resolves-the-majority-of-security-investigations-in-its-agentic-soc/",
+    "sourceUrl": "https://arcticwolf.com/resources/press-releases/arctic-wolf-2026-agentic-security-operations-report-reveals-ai-now-resolves-the-majority-of-security-investigations-in-its-agentic-soc/",
+    "title": "Arctic Wolf Report Shows Agentic AI Resolves Most Security Investigations",
+    "headline": "Arctic Wolf Report Shows Agentic AI Resolves Most Security Investigations",
+    "summary": "Arctic Wolf published its 2026 Agentic Security Operations Report detailing artificial intelligence integration in SOC workflows. The report reveals agentic AI now resolves 60% of security investigations, significantly reducing alert fatigue and threat response times. Organizations are advised to implement AI-driven triage alongside mandatory human analyst oversight to maximize overall operational efficiency.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "publishedAt": "2026-10-27T12:58:30.000Z",
+    "url": "https://arcticwolf.com/resources/press-releases/arctic-wolf-2026-agentic-security-operations-report-reveals-ai-now-resolves-the-majority-of-security-investigations-in-its-agentic-soc/",
+    "additionalSources": [
+      {
+        "source": "Arctic Wolf",
+        "sourceUrl": "https://arcticwolf.com/resources/report/2026-agentic-security-operations-report/"
+      }
+    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/ai/2026/10/artificial-intimacy-love-and-lies-in-the-age-of-ai",
@@ -4655,49 +4699,5 @@
     "publishedAt": "2026-10-22T12:00:00.000Z",
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
-    "title": "Database Privilege Escalation Vulnerability in Siemens WinCC (CVE-2026-59241)",
-    "headline": "Database Privilege Escalation Vulnerability in Siemens WinCC (CVE-2026-59241)",
-    "summary": "A database privilege escalation vulnerability in Siemens WinCC versions V7.5, V8.0, and V8.1 permits an authenticated database user to execute arbitrary commands on the host system. The flaw carries a CVSS score of 8.8 and is identified as CVE-2026-59241, exposing critical infrastructure sectors to potential compromise. Siemens has released patched versions and recommends updating immediately or applying vendor‑issued mitigations.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "publishedAt": "2026-10-22T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/",
-    "title": "XTIUM Expands XTAI with Centralized AI Governance and Cost Management",
-    "headline": "XTIUM Expands XTAI with Centralized AI Governance and Cost Management",
-    "summary": "XTIUM released an updated XTAI platform, adding an orchestrator that consolidates managed AI services, voice, custom agents, networks, and cloud resources. The new governance layer enables enterprises to monitor, control, and scale AI applications beyond pilot stages, improving operational oversight and cost efficiency. Adoption requires integrating the XTAI Orchestrator into existing AI workflows.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-22T11:41:02.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/22/xtium-xtai-orchestrator/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/22/sentinelone-singularity-agentic-detection-and-response/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/sentinelone-singularity-agentic-detection-and-response/",
-    "title": "SentinelOne Introduces Singularity Agentic Detection and Response",
-    "headline": "SentinelOne Introduces Singularity Agentic Detection and Response",
-    "summary": "SentinelOne unveiled Singularity Agentic Detection and Response, a runtime solution that identifies AI agents, enforces allowed actions, and monitors behavior to detect malicious activity in real time. The platform integrates behavioral prevention, detection, and response capabilities directly on the Singularity Platform. Customers can deploy the new offering to gain visibility and governance over AI agent activity.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-22T11:27:36.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/22/sentinelone-singularity-agentic-detection-and-response/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/20/abstract-links-automated-response-actions-directly-to-siem-detection-rules/"
-      }
-    ]
   }
 ]
