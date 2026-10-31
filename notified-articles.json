@@ -2727,5 +2727,20 @@
   "https://access.redhat.com/errata/RHSA-2026:92492",
   "http://www.zerodayinitiative.com/advisories/ZDI-26-847/",
   "http://www.zerodayinitiative.com/advisories/ZDI-26-846/",
-  "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso"
+  "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso",
+  "https://access.redhat.com/errata/RHSA-2026:90500",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-157-aws/",
+  "https://access.redhat.com/errata/RHSA-2026:92899",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-844/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-840/",
+  "https://www.sophos.com/en-us/blog/ai-used-in-aur0ra-ransomware-testing-and-execution",
+  "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-3-released/",
+  "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+  "https://cert.europa.eu/publications/security-advisories/2026-010/",
+  "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+  "https://blog.cloudflare.com/emudhra-patching/",
+  "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
+  "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/",
+  "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
+  "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html"
 ]

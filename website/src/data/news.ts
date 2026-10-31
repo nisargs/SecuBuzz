@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-90500-important-java-17-openjdk-security-37da88",
+    "title": "RHSA-2026:90500: Important: java-17-openjdk security update for RHEL 9",
+    "summary": "An update for java-17-openjdk is now available for Red Hat Enterprise Linux 9.2 Extended Update Support, Red Hat Enterprise Linux 9.4 Extended Update Support, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90500",
+    "publishedAt": "2026-10-31T22:50:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-90500-important-java-17-openjdk-security",
+      "article-37da88",
+      "37da88",
+      "rhsa-2026-90500-important-java-17-openjdk-security-update-fo"
+    ]
+  },
+  {
     "slug": "check-point-critical-vulnerabilities-in-vpn-and-fi-72c186",
     "title": "Check Point Critical Vulnerabilities in VPN and Firewall Products",
     "summary": "Check Point released emergency security updates addressing two critical vulnerabilities affecting Security Gateway, Security Management Server, and Spark Firewall deployments configured for Remote Access VPN or Site-to-Site VPN. Both vulnerabilities carry a CVSS score of 9.8 and could allow an unauthenticated remote attacker to execute arbitrary code on affected appliances.",
@@ -473,6 +491,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cloudflare-reports-18-2-million-network-layer-ddos-3aae89",
+    "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+    "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+    "publishedAt": "2026-10-31T04:56:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-reports-18-2-million-network-layer-ddos",
+      "article-3aae89",
+      "3aae89",
+      "cloudflare-reports-18-2-million-network-layer-ddos-attacks-i"
+    ]
+  },
+  {
     "slug": "google-unveils-gemini-4-carbon-ai-for-security-120a94",
     "title": "Google Unveils Gemini 4 Carbon AI for Security",
     "summary": "Google has launched Gemini 4 Carbon, an AI model designed to identify software vulnerabilities, assess exploitation potential, and generate remediation suggestions. The model builds on Gemini 4 Argon, extending capabilities to security and coding tasks that previously required days of effort. Access will be limited to selected cyber defenders initially, with broader availability expected after further testing and refinement.",
@@ -788,6 +824,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "4-real-tracking-exploitation-and-patching-of-emudh-1763b0",
+    "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+    "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/emudhra-patching/",
+    "publishedAt": "2026-10-30T17:38:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "4-real-tracking-exploitation-and-patching-of-emudh",
+      "article-1763b0",
+      "1763b0",
+      "4-real-tracking-exploitation-and-patching-of-emudhra-s-weak-"
+    ]
+  },
+  {
     "slug": "arctic-wolf-releases-2026-agentic-security-operati-678c5e",
     "title": "Arctic Wolf Releases 2026 Agentic Security Operations Report",
     "summary": "The 2026 Agentic Security Operations Report outlines how agentic AI collaborates with expert analysts to accelerate security investigations. It details operational efficiencies gained through AI-driven threat detection and response workflows. The report is available for download from Arctic Wolf’s website, offering insights into future security operation trends.",
@@ -841,6 +895,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cve-2026-119116-and-cve-2026-119148-issues-in-aws-566186",
+    "title": "CVE-2026-119116 and CVE-2026-119148 - Issues in AWS Nitro Enclaves SDK for C",
+    "summary": "Bulletin ID: 2026-157-AWS Publication Date: 10/30/2026 09:00 AM PDT Description: We identified CVE-2026-119116, a use-after-free in the SetClient command handler of the kmstool-enclave example application, where an application that executes on the parent EC2 instance could send crafted messages over vsock to corrupt heap memory inside the enclave and execute arbitrary code within it.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-157-aws/",
+    "publishedAt": "2026-10-30T16:34:46.000Z",
+    "cves": [
+      "CVE-2026-119116",
+      "CVE-2026-119148"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-119116-and-cve-2026-119148-issues-in-aws",
+      "article-566186",
+      "566186",
+      "cve-2026-119116-and-cve-2026-119148-issues-in-aws-nitro-encl"
+    ]
+  },
+  {
     "slug": "florida-education-dept-data-leak-affects-4-9-milli-22155c",
     "title": "Florida Education Dept Data Leak Affects 4.9 Million SSNs",
     "summary": "The Florida Department of Education disclosed a data breach affecting the Florida Student Financial Aid website, exposing the Social Security numbers of approximately 4.9 million individuals. The breach occurred on October 19, 2026, when unauthorized access was gained to the state's financial aid portal. Affected residents should monitor for identity theft and consider credit monitoring services.",
@@ -856,6 +931,24 @@ export const news: NewsBrief[] = [
       "article-22155c",
       "22155c",
       "florida-education-dept-data-leak-affects-4-9-million-ssns"
+    ]
+  },
+  {
+    "slug": "aftermarket-car-head-units-found-carrying-pre-inst-414dd6",
+    "title": "Aftermarket Car Head Units Found Carrying Pre-Installed Bloatware",
+    "summary": "An analysis of cheap aftermarket automotive head units revealed pre-installed bloatware and background spyware. The devices contained background voice assistants using WebView components, location tracking, and unexpected call recording capabilities that silently consume processing resources. Vehicle owners using third-party Android head units should monitor network traffic and audit installed system packages.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
+    "publishedAt": "2026-10-30T15:20:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aftermarket-car-head-units-found-carrying-pre-inst",
+      "article-414dd6",
+      "414dd6",
+      "aftermarket-car-head-units-found-carrying-pre-installed-bloa"
     ]
   },
   {
@@ -894,6 +987,24 @@ export const news: NewsBrief[] = [
       "article-63ada6",
       "63ada6",
       "north-korea-group-steals-credentials-injects-malware-into-gi"
+    ]
+  },
+  {
+    "slug": "php2shell-attacks-target-palo-alto-firewalls-and-w-a12cb3",
+    "title": "PHP2Shell Attacks Target Palo Alto Firewalls and WordPress",
+    "summary": "Threat actors are launching PHP2Shell attacks targeting critical PHP flaws across more than 22.6 million exposed internet instances. The ongoing campaign successfully rooted Palo Alto Networks firewalls during exploitation attempts while failing against targeted WordPress installations. Administrators must immediately audit exposed PHP applications and apply relevant security updates to prevent unauthorized root system compromise.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/",
+    "publishedAt": "2026-10-30T15:09:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-attacks-target-palo-alto-firewalls-and-w",
+      "article-a12cb3",
+      "a12cb3",
+      "php2shell-attacks-target-palo-alto-firewalls-and-wordpress"
     ]
   },
   {
@@ -1854,6 +1965,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-pcre2-security-update-for-rhel-8-6-37d993",
+    "title": "Red Hat Issues pcre2 Security Update for RHEL 8.6",
+    "summary": "Red Hat released a security update for the pcre2 library on RHEL 8.6, addressing multiple vulnerabilities. The vulnerabilities carry a CVSS base score indicating an Important impact, but no public exploit or PoC is reported. Security teams should apply the update immediately to mitigate potential critical remote code execution risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92899",
+    "publishedAt": "2026-10-29T23:44:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-pcre2-security-update-for-rhel-8-6",
+      "article-37d993",
+      "37d993"
+    ]
+  },
+  {
     "slug": "red-hat-issues-pcre2-security-update-37d990",
     "title": "Red Hat Issues pcre2 Security Update",
     "summary": "Red Hat has issued a security update for the pcre2 regular expression library on RHEL 8.4 Advanced Mission Critical and Extended Update Support channels. The update addresses multiple vulnerabilities with CVSS scores listed in the advisory, though no specific CVE identifiers are named. Red Hat recommends applying the patch immediately to mitigate potential exploitation.",
@@ -2750,6 +2878,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mlflow-get-artifacts-ssrf-exposes-sensitive-inform-6f3ca2",
+    "title": "MLflow get-artifacts SSRF Exposes Sensitive Information",
+    "summary": "A Server‑Side Request Forgery flaw in MLflow’s get‑artifacts endpoint allows remote attackers to read sensitive data without authentication. The vulnerability, identified as CVE‑2026‑118628, has a CVSS score of 8.2, indicating a high‑risk exposure that can be exploited remotely. MLflow maintainers have released a patch; administrators should update the platform immediately to prevent data leakage.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-844/",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mlflow-get-artifacts-ssrf-exposes-sensitive-inform",
+      "article-6f3ca2",
+      "6f3ca2",
+      "mlflow-get-artifacts-ssrf-exposes-sensitive-information"
+    ]
+  },
+  {
+    "slug": "mlflow-tracking-server-jobs-expose-data-without-au-6f3ca2",
+    "title": "MLflow Tracking Server Jobs Expose Data Without Authorization",
+    "summary": "A missing authorization check in MLflow’s Tracking Server Jobs endpoint permits authenticated attackers to read sensitive information. The flaw, catalogued as CVE‑2026‑118624, carries a CVSS score of 5.4, indicating a moderate risk that requires user credentials to exploit. MLflow developers have issued a patch; users should apply it promptly to eliminate the data disclosure vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-840/",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mlflow-tracking-server-jobs-expose-data-without-au",
+      "article-6f3ca2",
+      "6f3ca2",
+      "mlflow-tracking-server-jobs-expose-data-without-authorizatio"
+    ]
+  },
+  {
     "slug": "mlflow-ai-gateway-ssrf-exposes-information-6f3ca3",
     "title": "MLflow AI Gateway SSRF Exposes Information",
     "summary": "A server‑side request forgery flaw in MLflow AI Gateway allows authenticated attackers to trigger arbitrary outbound requests. CVE‑2026‑71211 carries a CVSS score of 7.7, indicating a high‑severity vulnerability that could lead to information disclosure if exploited. MLflow recommends applying the vendor‑issued patch or disabling the affected feature; no public exploit is known.",
@@ -3163,6 +3327,44 @@ export const news: NewsBrief[] = [
       "article-1aa209",
       "1aa209",
       "cisa-adds-cve-2026-111497-to-known-exploited-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "gold-ogre-employs-ai-for-aur0ra-ransomware-operati-737a86",
+    "title": "GOLD OGRE Employs AI for Aur0ra Ransomware Operations",
+    "summary": "The GOLD OGRE threat group has integrated artificial intelligence into its Aur0ra ransomware toolkit to streamline testing and execution. This AI‑driven approach enhances automation of payload delivery, obfuscation, and command‑and‑control orchestration, potentially increasing deployment speed. Security teams should monitor for Aur0ra signatures and employ AI‑based detection to mitigate evolving ransomware threats.",
+    "category": "Ransomware",
+    "severity": "LOW",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/ai-used-in-aur0ra-ransomware-testing-and-execution",
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gold-ogre-employs-ai-for-aur0ra-ransomware-operati",
+      "article-737a86",
+      "737a86",
+      "gold-ogre-employs-ai-for-aur0ra-ransomware-operations"
+    ]
+  },
+  {
+    "slug": "gitlab-patch-release-and-security-update-19-5-3-19-db7b6d",
+    "title": "GitLab Patch Release and Security Update: 19.5.3, 19.4.5, 19.3.7, 19.2.10, 19.1.10, 19.0.11, 18.11.14",
+    "summary": "GitLab.com is already running the patched version. These versions address CVE-2026-111943 , along with additional unrelated bug fixes. Security update CVE-2026-111943 - GitLab has removed trust for compromised eMudhra Intermediate CA Certificates for GitLab CE/EE For GitLab CE/EE, GitLab has removed trust for eight eMudhra intermediate CA certificates whose private keys have been compromised.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "GitLab Security Releases",
+    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-3-released/",
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "cves": [
+      "CVE-2026-111943"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-patch-release-and-security-update-19-5-3-19",
+      "article-db7b6d",
+      "db7b6d",
+      "gitlab-patch-release-and-security-update-19-5-3-19-4-5-19-3-"
     ]
   },
   {
@@ -3809,6 +4011,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "critical-16-year-old-uefi-flaw-can-run-code-before-711272",
+    "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+    "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. An attacker who can reach the machine (Corroborated Threat Intelligence: Associated CVE is CVE-2026-97631).",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+    "publishedAt": "2026-10-28T11:50:00.000Z",
+    "cves": [
+      "CVE-2026-97631"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-16-year-old-uefi-flaw-can-run-code-before",
+      "article-711272",
+      "711272",
+      "critical-16-year-old-uefi-flaw-can-run-code-before-secure-bo"
+    ]
+  },
+  {
+    "slug": "integrating-ai-with-wazuh-optimizes-security-opera-15d6b2",
+    "title": "Integrating AI with Wazuh Optimizes Security Operations Workflows",
+    "summary": "Organizations are adopting AI-driven technologies alongside platforms like Wazuh to streamline security operations center workflows. The integration automates repetitive tasks, identifies hidden data patterns across massive datasets, and accelerates threat detection decisions. Security teams should evaluate AI-powered analysis tools to balance operational efficiency against evolving automated attacker capabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+    "publishedAt": "2026-10-28T11:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "integrating-ai-with-wazuh-optimizes-security-opera",
+      "article-15d6b2",
+      "15d6b2",
+      "integrating-ai-with-wazuh-optimizes-security-operations-work"
+    ]
+  },
+  {
     "slug": "adobe-issues-patches-for-eight-critical-campaign-c-533abd",
     "title": "Adobe Issues Patches for Eight Critical Campaign Classic Vulnerabilities Including CVE-2026-104351",
     "summary": "Adobe released patches for eight critical Campaign Classic vulnerabilities, including CVE-2026-104351, a code injection flaw that could enable arbitrary code execution. The flaw carries a CVSS score of 9.9, indicating a high‑risk remote code execution vector that could bypass security features and elevate privileges. Adobe has issued the updates; users should apply patches immediately and verify installation to mitigate exploitation.",
@@ -4003,6 +4243,26 @@ export const news: NewsBrief[] = [
       "article-688222",
       "688222",
       "gmo-internet-offers-1m-bounty-for-fx-cloud-breach-attacker"
+    ]
+  },
+  {
+    "slug": "tailscale-patches-ssh-flaws-granting-unauthorized-6624a8",
+    "title": "Tailscale Patches SSH Flaws Granting Unauthorized Root Access",
+    "summary": "Tailscale patched a security vulnerability in its built-in SSH server tracked under identifier CVE-2026-111585. The flaw stems from improper handling of forwarded network connections within background processes operating with elevated root privileges across interconnected systems. Security teams should upgrade Tailscale deployments to version 1.104.4 or higher to prevent attackers from accessing restricted server files.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
+    "publishedAt": "2026-10-28T06:20:37.000Z",
+    "cves": [
+      "CVE-2026-111585"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "tailscale-patches-ssh-flaws-granting-unauthorized",
+      "article-6624a8",
+      "6624a8",
+      "tailscale-patches-ssh-flaws-granting-unauthorized-root-acces"
     ]
   },
   {
@@ -6174,260 +6434,6 @@ export const news: NewsBrief[] = [
       "article-37e47c",
       "37e47c",
       "red-hat-rhc-update-mitigates-remote-code-execution-risk"
-    ]
-  },
-  {
-    "slug": "kali-linux-2026-3-ships-with-six-new-security-tool-25aadd",
-    "title": "Kali Linux 2026.3 Ships with Six New Security Tools",
-    "summary": "Kali Linux 2026.3 has been released, adding six new hacking tools and updated desktop environment. The update includes refreshed build scripts and other minor improvements, expanding the distribution’s toolkit for penetration testers. Users should download the new image from the official Kali website and verify checksums to ensure integrity and compatibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
-    "publishedAt": "2026-10-26T10:26:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kali-linux-2026-3-ships-with-six-new-security-tool",
-      "article-25aadd",
-      "25aadd",
-      "kali-linux-2026-3-ships-with-six-new-security-tools"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-delve-security-update-for-rhel-10-37e47c",
-    "title": "Red Hat Releases Delve Security Update for RHEL 10.0 EUS",
-    "summary": "A security update for delve on Red Hat Enterprise Linux 10.0 Extended Update Support addresses multiple vulnerabilities. The vulnerabilities carry CVSS scores detailed in the CVE references, indicating moderate to high risk, but no active exploitation reported. Red Hat has released a patch; administrators should apply the update immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89884",
-    "publishedAt": "2026-10-26T09:56:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-delve-security-update-for-rhel-10",
-      "article-37e47c",
-      "37e47c",
-      "red-hat-releases-delve-security-update-for-rhel-10-0-eus"
-    ]
-  },
-  {
-    "slug": "top-10-sensitive-data-discovery-tools-for-2026-hig-28d2d0",
-    "title": "Top 10 Sensitive Data Discovery Tools for 2026 Highlighted",
-    "summary": "The article lists the top ten sensitive data discovery tools for 2026, noting increased shadow data in SaaS, warehouses, and AI pipelines. It stresses that discovery must map data to identity to meet legal ownership requirements, as classification alone is insufficient. Readers should assess tools based on scoring metrics and integration with existing governance frameworks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-data-discovery-tools/",
-    "publishedAt": "2026-10-26T09:46:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-sensitive-data-discovery-tools-for-2026-hig",
-      "article-28d2d0",
-      "28d2d0",
-      "top-10-sensitive-data-discovery-tools-for-2026-highlighted"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-flatpak-security-update-for-rhel-9-37e47c",
-    "title": "Red Hat Issues Flatpak Security Update for RHEL 9",
-    "summary": "A security update for flatpak on Red Hat Enterprise Linux 9 addresses several vulnerabilities. The vulnerabilities have CVSS scores listed in the CVE references, suggesting moderate to high risk, with no confirmed active exploitation. Red Hat has issued a patch; users should install the update promptly to prevent potential compromise.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89850",
-    "publishedAt": "2026-10-26T09:41:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-flatpak-security-update-for-rhel-9",
-      "article-37e47c",
-      "37e47c"
-    ]
-  },
-  {
-    "slug": "php2shell-rce-vulnerabilities-exploited-in-the-wil-3d2d87",
-    "title": "PHP2Shell RCE Vulnerabilities Exploited in the Wild",
-    "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively known as PHP2Shell, have been exploited in the wild against PHP applications via remote code execution. Unauthenticated attackers can run arbitrary code with web‑server privileges, enabling full system compromise. PHP releases a patch; administrators should update to the latest version or apply the vendor’s advisory to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-    "publishedAt": "2026-10-26T09:19:57.000Z",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "php2shell-rce-vulnerabilities-exploited-in-the-wil",
-      "article-3d2d87",
-      "3d2d87",
-      "php2shell-rce-vulnerabilities-exploited-in-the-wild"
-    ]
-  },
-  {
-    "slug": "microsoft-365-token-replay-campaign-compromises-97-780f2c",
-    "title": "Microsoft 365 Token‑Replay Campaign Compromises 97 Accounts at 79 Organizations",
-    "summary": "A Microsoft 365 token‑replay campaign captured sign‑in sessions via an adversary‑in‑the‑middle relay and replayed stolen tokens to access 97 accounts across 79 organizations. The flaw allows attackers to hijack authenticated sessions without credential theft, enabling persistent access to email and collaboration services. Microsoft has released a patch and recommends disabling legacy authentication methods immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
-    "publishedAt": "2026-10-26T08:35:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-365-token-replay-campaign-compromises-97",
-      "article-780f2c",
-      "780f2c",
-      "microsoft-365-token-replay-campaign-compromises-97-accounts-"
-    ]
-  },
-  {
-    "slug": "witness-open-source-framework-for-verifying-softwa-29a24e",
-    "title": "Witness: Open‑Source Framework for Verifying Software Build Provenance",
-    "summary": "Witness is an open‑source command‑line tool that records and signs build processes, enabling teams to verify the provenance of compiled binaries before shipping. By capturing the exact commands, inputs, and environment, Witness provides a tamper‑evident audit trail that can be validated against a policy, reducing supply‑chain risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/witness-open-source-software-supply-chain-tool/",
-    "publishedAt": "2026-10-26T07:00:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "witness-open-source-framework-for-verifying-softwa",
-      "article-29a24e",
-      "29a24e",
-      "witness-open-source-framework-for-verifying-software-build-p"
-    ]
-  },
-  {
-    "slug": "node-js-brotli-decoder-out-of-bounds-write-enables-3bcda9",
-    "title": "Node.js Brotli Decoder Out-of-Bounds Write Enables Remote Code Execution",
-    "summary": "A critical out-of-bounds write flaw in Node.js Brotli decoder permits remote code execution on Node.js 26.x, 24.x, and 22.x releases. Identified as CVE-2026-111497, the flaw scores 9.8 CVSSv3, enabling unauthenticated remote exploitation. Apply the latest Node.js security patch or upgrade to a supported version; disabling Brotli compression is a temporary fix.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-187",
-    "publishedAt": "2026-10-26T07:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "node-js-brotli-decoder-out-of-bounds-write-enables",
-      "article-3bcda9",
-      "3bcda9",
-      "node-js-brotli-decoder-out-of-bounds-write-enables-remote-co"
-    ]
-  },
-  {
-    "slug": "red-hat-python-3-9-update-addresses-multiple-vulne-37e480",
-    "title": "Red Hat Python 3.9 Update Addresses Multiple Vulnerabilities",
-    "summary": "An update for python3.9 on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities identified by Red Hat Product Security. The update mitigates flaws that could allow attackers to execute arbitrary code or elevate privileges, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the latest python3.9 package to ensure protection.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89742",
-    "publishedAt": "2026-10-26T04:45:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-python-3-9-update-addresses-multiple-vulne",
-      "article-37e480",
-      "37e480",
-      "red-hat-python-3-9-update-addresses-multiple-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "red-hat-bind9-18-update-mitigates-security-flaws-37e480",
-    "title": "Red Hat Bind9.18 Update Mitigates Security Flaws",
-    "summary": "An update for bind9.18 on Red Hat Enterprise Linux 9.8 Extended Update Support addresses security vulnerabilities that could enable remote code execution or privilege escalation. The advisory references CVSS base scores for each flaw, indicating moderate risk levels. Red Hat advises installing the bind9.18 update to eliminate the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89746",
-    "publishedAt": "2026-10-26T04:40:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-bind9-18-update-mitigates-security-flaws",
-      "article-37e480",
-      "37e480"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-security-update-for-container-too-37e480",
-    "title": "Red Hat Releases Security Update for container-tools:rhel8",
-    "summary": "An update for the container-tools:rhel8 module on Red Hat Enterprise Linux 8 addresses multiple security issues identified by Red Hat Product Security. The update mitigates vulnerabilities with a CVSS base score that classifies them as Important, indicating potential for significant impact if exploited. Red Hat has issued a patch that must be applied immediately to prevent exploitation of these flaws.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89760",
-    "publishedAt": "2026-10-26T04:35:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-security-update-for-container-too",
-      "article-37e480",
-      "37e480",
-      "red-hat-releases-security-update-for-container-tools-rhel8"
-    ]
-  },
-  {
-    "slug": "reddit-r-opensource-bans-ai-projects-and-solo-deve-1f923d",
-    "title": "Reddit r/opensource Bans AI Projects and Solo Developers",
-    "summary": "Reddit moderators of r/opensource have prohibited any project that uses AI, is AI-generated, or is intended for AI, requiring projects to be at least one year old, OSI licensed, and have a community with three or more contributors. The ban also mandates that the poster’s Reddit account must be at least one year old.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/reddit-r-opensource-ai-ban/",
-    "publishedAt": "2026-10-26T04:30:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "reddit-r-opensource-bans-ai-projects-and-solo-deve",
-      "article-1f923d",
-      "1f923d",
-      "reddit-r-opensource-bans-ai-projects-and-solo-developers"
-    ]
-  },
-  {
-    "slug": "google-releases-elephant-goldfish-model-plugin-to-22409e",
-    "title": "Google Releases Elephant‑Goldfish Model Plugin to Detect AI Coding Errors",
-    "summary": "Google has open‑source the Elephant‑Goldfish Model (EGM) plugin, an internal tool that forces an AI coding agent to draft and defend a design document before coding. The plugin then presents the document to fresh AI sessions that have never seen the design conversation, prompting them to identify flaws. The release highlights Google’s effort to mitigate reliability risks in AI‑driven development.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/google-elephant-goldfish-model-plugin/",
-    "publishedAt": "2026-10-26T04:25:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-elephant-goldfish-model-plugin-to",
-      "article-22409e",
-      "22409e",
-      "google-releases-elephant-goldfish-model-plugin-to-detect-ai-"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-security-patch-for-xorg-x11-server-37e480",
-    "title": "Red Hat Issues Security Patch for xorg-x11-server",
-    "summary": "Red Hat has released a security update for the xorg-x11-server package on Red Hat Enterprise Linux 8 to remediate identified vulnerabilities. The vulnerabilities carry a CVSS base score that classifies them as Important, suggesting a high likelihood of exploitation in the wild. Applying the provided patch is essential to eliminate the risk posed by these security flaws.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89747",
-    "publishedAt": "2026-10-26T03:59:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-security-patch-for-xorg-x11-server",
-      "article-37e480",
-      "37e480"
     ]
   }
 ];

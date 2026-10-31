@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 22:46:21 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 23:29:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:90500: Important: java-17-openjdk security update for RHEL 9</title>
+      <link>https://secubuzz.com/news/rhsa-2026-90500-important-java-17-openjdk-security-37da88</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-90500-important-java-17-openjdk-security-37da88</guid>
+      <description><![CDATA[An update for java-17-openjdk is now available for Red Hat Enterprise Linux 9.2 Extended Update Support, Red Hat Enterprise Linux 9.4 Extended Update Support, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Sat, 31 Oct 2026 22:50:24 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:90500">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Check Point Critical Vulnerabilities in VPN and Firewall Products</title>
       <link>https://secubuzz.com/news/check-point-critical-vulnerabilities-in-vpn-and-fi-72c186</link>
@@ -233,6 +242,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%</title>
+      <link>https://secubuzz.com/news/cloudflare-reports-18-2-million-network-layer-ddos-3aae89</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-reports-18-2-million-network-layer-ddos-3aae89</guid>
+      <description><![CDATA[Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026.]]></description>
+      <pubDate>Sat, 31 Oct 2026 04:56:12 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Google Unveils Gemini 4 Carbon AI for Security</title>
       <link>https://secubuzz.com/news/google-unveils-gemini-4-carbon-ai-for-security-120a94</link>
       <guid isPermaLink="true">https://secubuzz.com/news/google-unveils-gemini-4-carbon-ai-for-security-120a94</guid>
@@ -386,6 +404,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>4 real? Tracking exploitation and patching of eMudhra’s weak keys</title>
+      <link>https://secubuzz.com/news/4-real-tracking-exploitation-and-patching-of-emudh-1763b0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/4-real-tracking-exploitation-and-patching-of-emudh-1763b0</guid>
+      <description><![CDATA[Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.]]></description>
+      <pubDate>Fri, 30 Oct 2026 17:38:50 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/emudhra-patching/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Arctic Wolf Releases 2026 Agentic Security Operations Report</title>
       <link>https://secubuzz.com/news/arctic-wolf-releases-2026-agentic-security-operati-678c5e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-releases-2026-agentic-security-operati-678c5e</guid>
@@ -413,6 +440,15 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>CVE-2026-119116 and CVE-2026-119148 - Issues in AWS Nitro Enclaves SDK for C</title>
+      <link>https://secubuzz.com/news/cve-2026-119116-and-cve-2026-119148-issues-in-aws-566186</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119116-and-cve-2026-119148-issues-in-aws-566186</guid>
+      <description><![CDATA[Bulletin ID: 2026-157-AWS Publication Date: 10/30/2026 09:00 AM PDT Description: We identified CVE-2026-119116, a use-after-free in the SetClient command handler of the kmstool-enclave example application, where an application that executes on the parent EC2 instance could send crafted messages over vsock to corrupt heap memory inside the enclave and execute arbitrary code within it.]]></description>
+      <pubDate>Fri, 30 Oct 2026 16:34:46 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-157-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Florida Education Dept Data Leak Affects 4.9 Million SSNs</title>
       <link>https://secubuzz.com/news/florida-education-dept-data-leak-affects-4-9-milli-22155c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/florida-education-dept-data-leak-affects-4-9-milli-22155c</guid>
@@ -420,42 +456,6 @@
       <pubDate>Fri, 30 Oct 2026 15:54:00 GMT</pubDate>
       <source url="https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>TeamViewer Host Can Crash Viewer via CVE-2026-111585</title>
-      <link>https://secubuzz.com/news/teamviewer-host-can-crash-viewer-via-cve-2026-1115-1bf323</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/teamviewer-host-can-crash-viewer-via-cve-2026-1115-1bf323</guid>
-      <description><![CDATA[A flaw in TeamViewer allows a compromised host to attack the viewer computer during a remote session. The vulnerability, CVE-2026-111585, lets the host crash the viewer's TeamViewer client and, on some platforms, run arbitrary code, enabling remote code execution. TeamViewer has released a patch; users should update to the latest version to mitigate the risk.]]></description>
-      <pubDate>Fri, 30 Oct 2026 15:17:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>North Korea Group Steals Credentials, Injects Malware into GitHub</title>
-      <link>https://secubuzz.com/news/north-korea-group-steals-credentials-injects-malwa-63ada6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-group-steals-credentials-injects-malwa-63ada6</guid>
-      <description><![CDATA[North Korea-aligned group DeceptiveDevelopment stole developer credentials to modify code in public and private GitHub repositories between April and September 2026. The compromised accounts enabled injection of malicious payloads into trusted software packages, creating new supply‑chain entry points for attackers. Security teams should enforce multi‑factor authentication, monitor repository activity, and apply the latest security patches to mitigate credential misuse.]]></description>
-      <pubDate>Fri, 30 Oct 2026 15:15:02 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/north-korean-hackers-2/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>APT Group Uses NetamLoader to Target Asian Government Windows</title>
-      <link>https://secubuzz.com/news/apt-group-uses-netamloader-to-target-asian-governm-6eb5ab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apt-group-uses-netamloader-to-target-asian-governm-6eb5ab</guid>
-      <description><![CDATA[An unnamed APT group deployed NetamLoader, a malware framework, inside Windows 10 update packages used exclusively by Asian government agencies. The loader leverages trusted software binaries to execute payloads, bypassing standard update verification and enabling persistent footholds on target systems. Defenders should validate update signatures, isolate critical infrastructure, and apply the latest Windows security patches to prevent exploitation.]]></description>
-      <pubDate>Fri, 30 Oct 2026 15:02:03 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/netamloader-malware/">Cyber Security News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>UEFI Flaw Affects Majority of Servers</title>
-      <link>https://secubuzz.com/news/uefi-flaw-affects-majority-of-servers-5f262a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uefi-flaw-affects-majority-of-servers-5f262a</guid>
-      <description><![CDATA[A critical UEFI firmware flaw was discovered that compromises the boot integrity of the majority of enterprise servers, enabling attackers to load malicious code during system startup. The vulnerability allows unauthenticated remote exploitation through a malformed firmware update package, potentially granting full system control without user interaction.]]></description>
-      <pubDate>Fri, 30 Oct 2026 14:41:35 GMT</pubDate>
-      <source url="https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/">SecurityWeek</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
