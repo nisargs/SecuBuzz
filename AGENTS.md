@@ -101,6 +101,31 @@
     - Push Freshness Invariant: Push broadcasts are strictly limited to articles published within the last 24 hours (`<= 24h`).
     - Severity Floor: Prioritized by severity weight (CRITICAL > HIGH > MEDIUM > LOW, max 2 per cycle) so users receive fresh dispatches while relying on in-app preferences to filter.
     - CISA KEV Freshness & Tap Routing: CISA zero-day alerts are strictly limited to CVEs added within 72 hours (`<= 72h`), and carry full advisory payload metadata (`articleId`, `headline`, `summary`, `articleUrl`) wired to `handleNotificationResponse` so tapping an advisory notification directly opens the advisory details screen.
+  - **Tier 2 Deterministic Extractive NLP Fallback Engine (`scripts/extractive_fallback.mjs`):**
+    - **Architecture & Trigger**: Zero-cost, pure-code emergency airbag running strictly when all primary AI providers (Groq, Gemini, OpenRouter) throw exceptions or return 0 valid articles for an ingestion batch. Dormant during normal AI operations; has 0 external API calls and 0 cloud dependencies.
+    - **Quality Gates & Boolean Rejections**:
+      - Word count floor: minimum 28 words across complete grammatical sentences (`REJECTED_TOO_SHORT`). Rejects RSS teaser stubs.
+      - Sentence integrity: rejects trailing truncation (`...`, `…`, trailing punctuation `[-—–:,;]`) with `REJECTED_BROKEN_SENTENCE`.
+      - Terminal punctuation: must cleanly terminate with `[.?!]`.
+      - Dangling clause filter: rejects trailing prepositions and conjunctions via `DANGLING_TAIL_REGEX` (`REJECTED_DANGLING_TAIL`).
+      - RSS marketing & syndication boilerplate filter (`REJECTED_RSS_BOILERPLATE`).
+      - Security event requirement: strictly requires explicit cyber flaw, incident, or patch terms via `SECURITY_EVENT_REGEX`. Generic legal/crime words (`arrest`, `sentenced`, `prison`, `indicted`) in isolation are rejected with `REJECTED_NO_SECURITY_EVENT`.
+      - Identifiable subject/entity validation: `hasIdentifiableEntity()` requires explicit CVE/advisory IDs (`CVE-\d{4}-\d+`, `GHSA`, `RHSA`, `USN`, `VMSA`, `ZDI`), controlled dictionary matches (`CYBER_ENTITY_REGEX`), or structured corporate/industry attribution patterns (`firm`, `company`, `platform`, `vendor`). Generic capitalized words alone are rejected with `REJECTED_NO_AFFECTED_ENTITY`. Legitimate advisories without vendor names pass on CVE alone.
+      - Tabular dump detection: `isTabularData()` rejects raw CVE tables, score dumps, and version listings (`REJECTED_TABULAR_DATA`).
+    - **Sentence Density Scoring & Document Order Invariant**:
+      - `scoreSentence()` scores candidates across 4 intelligence dimensions: Flaw/Event (+3), Affected Entity (+3), Exploitation/Impact (+2), Remediation/Patch (+2), plus news lede bonus (+1.5 / +0.8).
+      - Selects top-scoring sentences up to word ceiling (65 words, max 3 sentences).
+      - **Document Order Invariant**: Re-sorts selected candidates by `originalIndex` before assembly, strictly preserving original narrative flow.
+    - **Stateless CTA & Tail Cleaning**:
+      - `stripCtaTail()` strips CTA/navigation patterns without `/g` statefulness bugs.
+      - Zero punctuation synthesis: never appends `.` to chopped clauses. Discards incomplete clauses cleanly (`return ''`); rejects with `REJECTED_BROKEN_SENTENCE` if no complete sentences remain.
+    - **Objective Threat Classification**:
+      - Uncoupled CISA KEV from automatic `CRITICAL` in `classifyThreat()`.
+      - `CRITICAL` requires explicit critical indicators (CVSS $\ge 9.0$, unauthenticated RCE, zero-day on perimeter/server/kernel, critical advisory alert, emergency directive). KEV without critical indicators lands in `HIGH` (or `MEDIUM` if lower severity context applies).
+    - **Timestamp Integrity & Push Guard**:
+      - `normalizeTimestamp()` eliminates recency fabrication (`new Date().toISOString()`). Missing or invalid dates remain `null` with `isPublishedTimeUnknown: true`. Future dates exceeding 10m tolerance are rejected with `isFutureSkew: true`. `ingestedAt` tracks system ingestion time separately.
+      - Push notification filter requires `ageMs >= 0`, rejecting future-dated articles.
+    - **Retry Preservation**: Rejected candidates are NEVER added to `seenUrls`, preserving them for retry on subsequent hourly AI runs.
 
 ## 6. Native `.aab` Releases & Production Updates
 - **Release v1.0.3 (Version Code 9 / OTA Active `01a189cd-0d01-7024-baa2-e2376ae06852` / Group `8019e07a-515f-4db4-a3d4-c7faf2b4ead6`):**

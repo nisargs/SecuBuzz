@@ -30,6 +30,8 @@ graph TD
     TRI_AI -->|1. Groq: Llama 3.3 / GPT-OSS 20B| GHA
     TRI_AI -->|2. Gemini 2.5 Flash Fallback| GHA
     TRI_AI -->|3. OpenRouter Free Fallback| GHA
+    TRI_AI -.->|All AI Exhausted / Outage| EXT_FB[Tier 2 Extractive NLP Fallback Engine]
+    EXT_FB -->|Deterministic Pure-Code Briefs| GHA
     GHA -->|Upload feed.json & news.ts| R2[Cloudflare R2 Bucket & Web App]
     GHA -->|Broadcast Alerts| EXPO[Expo Push API]
     EXPO -->|FCM Push Notifications| APP[SecuBuzz Android App]
@@ -59,7 +61,7 @@ graph TD
 | **Cloudflare Worker** (`secubuzz-push`) | API routing, token registry, install tracking & edge caching | 100,000 req/day | ~1,200–3,500 req/day | **96.5% buffer remaining** |
 | **Cloudflare D1** (`secubuzz-push-db`) | Serverless SQLite database for push tokens & click analytics | 5,000,000 reads / 100k writes/day | < 50,000 reads / < 50 writes/day | **99.0% database headroom** |
 | **Cloudflare R2** (`secubuzz-feed`) | Object storage hosting `feed.json` (~280 KB) | 10 GB storage / 1,000,000 writes/mo | ~30 MB storage / 720 writes/mo | **99.9% free buffer** |
-| **Multi-Engine AI Pipeline** | Summarizing raw RSS feeds into 60-word briefs | Groq (1,000 req/day / 200k TPD), Gemini 2.5 Flash (250 req/day / 10 RPM), OpenRouter emergency failover (50 req/day) | ~10–22 batches/day split 50/50 | **95.6%+ API headroom** |
+| **Multi-Engine AI & Extractive Fallback** | Summarizing raw RSS feeds into 60-word briefs with pure-code Tier 2 emergency fallback | Groq, Gemini 2.5 Flash, OpenRouter emergency failover + deterministic NLP engine | ~10–22 batches/day split 50/50; 0 dropped batches on AI outage | **100% resilient ($0.00)** |
 | **GitHub Actions** | Automated CI cron running `scripts/ingest.mjs` hourly | 2,000 min/mo | ~350 min/month (~25s per run) | **82.5% free buffer** |
 | **Expo Push Service** | FCM push relay to registered Android devices | Unlimited | Batched in chunks of 100 | **100% free** |
 
