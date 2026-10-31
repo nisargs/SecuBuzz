@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "f5-big-ip-apm-vulnerability-exposed-to-active-expl-72c186",
+    "title": "F5 BIG-IP APM Vulnerability Exposed to Active Exploitation",
+    "summary": "F5 disclosed a critical flaw in its BIG‑IP APM product that has been actively exploited in the wild. The vulnerability allows attackers to bypass authentication controls, potentially gaining unauthorized administrative access to network devices. F5 has released a patch; security teams must apply it immediately and verify configuration hardening to prevent further exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CERT-EU Security Advisories",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-013/",
+    "publishedAt": "2026-10-31T06:43:54.965Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "f5-big-ip-apm-vulnerability-exposed-to-active-expl",
+      "article-72c186",
+      "72c186",
+      "f5-big-ip-apm-vulnerability-exposed-to-active-exploitation"
+    ]
+  },
+  {
     "slug": "gitlab-patches-critical-unauthenticated-rce-flaw-72c186",
     "title": "GitLab Patches Critical Unauthenticated RCE Flaw",
     "summary": "GitLab published a security advisory on 21 October 2026 addressing a critical vulnerability in GitLab Community and Enterprise Editions that allows unauthenticated arbitrary code execution on affected servers. The flaw enables remote attackers to compromise internet-facing GitLab instances without credentials, posing severe operational risk to source code repositories and CI/CD pipelines.",
@@ -924,10 +942,10 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cve-2026-97229-enables-rce-in-gitlab-ci-e142f3",
-    "title": "CVE-2026-97229 Enables RCE in GitLab CI",
-    "summary": "CVE-2026-97229 exposes a remote code execution flaw in GitLab CI, allowing attackers to run arbitrary commands on runners. The flaw arises from improper handling of user‑supplied configuration files, with a CVSS score of 9.2 and public proof‑of‑concept exploits. GitLab released an urgent patch; admins should update to the latest version and disable legacy CI features until the fix is applied.",
-    "category": "CVE",
+    "slug": "alpine-linux-attempts-exploit-cve-2026-97229-on-gi-e142f3",
+    "title": "Alpine Linux Attempts Exploit CVE-2026-97229 on GitLab",
+    "summary": "An attacker attempted to exploit CVE-2026-97229, a CVSS 10.0 GitLab flaw, on the Alpine Linux project's own GitLab server. The vulnerability permits remote code execution via a crafted regular expression in CI configuration files, but Alpine reported no evidence of successful exploitation. GitLab has already released a patch; Alpine advises applying the fix and monitoring logs for anomalous CI activity.",
+    "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/attacker-tried-to-exploit-alpine-linux-s-gitlab-via-cvs",
@@ -935,11 +953,57 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-97229"
     ],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
+      }
+    ],
+    "aliases": [
+      "alpine-linux-attempts-exploit-cve-2026-97229-on-gi",
+      "article-e142f3",
+      "e142f3",
+      "alpine-linux-attempts-exploit-cve-2026-97229-on-gitlab"
+    ]
+  },
+  {
+    "slug": "linux-kernel-tcp-rce-cve-2026-98432-requires-immed-24ddca",
+    "title": "Linux Kernel TCP RCE CVE-2026-98432 Requires Immediate Patch",
+    "summary": "A critical remote code execution flaw in the Linux kernel’s TCP stack, identified as CVE-2026-98432, has been publicly disclosed. The vulnerability exploits improper handling of MPTCP segments, enabling attackers to execute arbitrary code with kernel privileges. Administrators should verify MPTCP configuration, deploy the latest kernel update, and monitor for anomalous network traffic to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/linux-kernel-tcp-flaw-with-9-8-cvss-score-affects-ubunt",
+    "publishedAt": "2026-10-30T00:08:18.000Z",
+    "cves": [
+      "CVE-2026-98432"
+    ],
     "additionalSources": [],
     "aliases": [
-      "cve-2026-97229-enables-rce-in-gitlab-ci",
-      "article-e142f3",
-      "e142f3"
+      "linux-kernel-tcp-rce-cve-2026-98432-requires-immed",
+      "article-24ddca",
+      "24ddca",
+      "linux-kernel-tcp-rce-cve-2026-98432-requires-immediate-patch"
+    ]
+  },
+  {
+    "slug": "siemens-mendix-saml-bypass-cve-2026-89209-demands-2183a8",
+    "title": "Siemens Mendix SAML Bypass CVE-2026-89209 Demands Patch",
+    "summary": "Siemens Mendix exposes a SAML authentication bypass flaw, identified as CVE-2026-89209, that can allow attackers to impersonate users. The vulnerability permits replay of valid SAML assertions, granting unauthorized access to protected resources without credential verification. Security teams should audit SSO logs, enforce assertion replay protection, and apply vendor patches to eliminate the bypass.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/siemens-mendix-saml-module",
+    "publishedAt": "2026-10-29T23:51:05.000Z",
+    "cves": [
+      "CVE-2026-89209"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-mendix-saml-bypass-cve-2026-89209-demands",
+      "article-2183a8",
+      "2183a8",
+      "siemens-mendix-saml-bypass-cve-2026-89209-demands-patch"
     ]
   },
   {
@@ -1395,6 +1459,84 @@ export const news: NewsBrief[] = [
       "nik-c2-ai-enabled-command-and-control-framework",
       "article-3a1543",
       "3a1543"
+    ]
+  },
+  {
+    "slug": "warp-panda-exploits-cve-2026-41709-on-vmware-esx-3c537f",
+    "title": "Warp Panda Exploits CVE-2026-41709 on VMware ESX",
+    "summary": "Warp Panda weaponized CVE-2026-41709, a zero‑day flaw in Broadcom VMware ESX, to obscure audit trails in U.S. legal sector attacks. The vulnerability permits manipulation or deletion of system logs, enabling stealthy persistence, and has been confirmed active in the wild. CISA catalogued the flaw in its KEV list; VMware issued a patch, and teams should apply the update.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+    "publishedAt": "2026-10-29T06:22:33.000Z",
+    "cves": [
+      "CVE-2026-41709"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "warp-panda-exploits-cve-2026-41709-on-vmware-esx",
+      "article-3c537f",
+      "3c537f"
+    ]
+  },
+  {
+    "slug": "mlflow-tracking-server-privilege-escalation-cve-20-6f3ca2",
+    "title": "MLflow Tracking Server Privilege Escalation CVE-2026-118625",
+    "summary": "A missing authorization flaw in MLflow Tracking Server, identified as CVE-2026-118625, allows authenticated remote attackers to elevate privileges. The vulnerability requires valid credentials but grants full system access, and no public exploit has been reported. MLflow has released an update; administrators should apply the patch and enforce least‑privilege access controls.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-841/",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118625"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "mlflow-tracking-server-privilege-escalation-cve-20",
+      "article-6f3ca2",
+      "6f3ca2",
+      "mlflow-tracking-server-privilege-escalation-cve-2026-118625"
+    ]
+  },
+  {
+    "slug": "mlflow-rce-via-cve-2026-118623-deserialization-6f3c9f",
+    "title": "MLflow RCE via CVE-2026-118623 Deserialization",
+    "summary": "MLflow's PickleEvaluationArtifact deserialization flaw, CVE-2026-118623, permits remote code execution when a user opens a malicious file or visits a crafted page. The vulnerability has a CVSS score of 7.8, and no public exploit has been disclosed. MLflow has issued a patch; users should update immediately and avoid opening untrusted artifacts.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-839/",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118623"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "mlflow-rce-via-cve-2026-118623-deserialization",
+      "article-6f3c9f",
+      "6f3c9f"
+    ]
+  },
+  {
+    "slug": "freebsd-kernel-tty-race-enables-local-privilege-es-6f3c9f",
+    "title": "FreeBSD Kernel TTY Race Enables Local Privilege Escalation",
+    "summary": "A race condition in the FreeBSD kernel’s TTY subsystem permits local attackers to elevate privileges on affected installations. The flaw requires initial execution of low‑privileged code, has a CVSS score of 7.8, and is identified as CVE-2026-58093. Security teams should apply the vendor‑issued patch or update to the kernel to mitigate the privilege escalation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-838/",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-58093"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "freebsd-kernel-tty-race-enables-local-privilege-es",
+      "article-6f3c9f",
+      "6f3c9f",
+      "freebsd-kernel-tty-race-enables-local-privilege-escalation"
     ]
   },
   {
@@ -6331,133 +6473,6 @@ export const news: NewsBrief[] = [
       "state-bank-of-india-breach-leaks-customer-pii-data",
       "article-7ed967",
       "7ed967"
-    ]
-  },
-  {
-    "slug": "critical-unpatched-linux-kernel-flaws-accidentally-544a4d",
-    "title": "Critical Unpatched Linux Kernel Flaws Accidentally Disclosed on Public List",
-    "summary": "Critical unpatched Linux kernel flaws were inadvertently disclosed on public mailing lists, revealing remote code execution vectors targeting the KSMBD file server. Both vulnerabilities carry CVSS 9.0 scores, enabling attackers to gain arbitrary code execution without authentication, though no wild exploitation has been reported. Trend Micro’s Zero Day Initiative recommends applying patches and monitoring kernel update channels to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/linux-kernel-flaws-accidentally-disclosed/",
-    "publishedAt": "2026-10-23T02:09:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-unpatched-linux-kernel-flaws-accidentally",
-      "article-544a4d",
-      "544a4d",
-      "critical-unpatched-linux-kernel-flaws-accidentally-disclosed"
-    ]
-  },
-  {
-    "slug": "aspm-in-the-ai-era-part-2-prioritize-exploitable-r-5291d5",
-    "title": "ASPM in the AI Era Part 2: Prioritize Exploitable Risks with Code-to-Cloud Context",
-    "summary": "ASPM in the AI Era Part 2 presents a framework that prioritizes exploitable risks by merging code, infrastructure, and runtime context. This integration shortens triage times and focuses security teams on high-impact vulnerabilities. Implementing the model requires aligning threat feeds, automating context aggregation, and updating risk assessments for cloud workloads.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk",
-    "publishedAt": "2026-10-22T22:51:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aspm-in-the-ai-era-part-2-prioritize-exploitable-r",
-      "article-5291d5",
-      "5291d5",
-      "aspm-in-the-ai-era-part-2-prioritize-exploitable-risks-with-"
-    ]
-  },
-  {
-    "slug": "railway-warns-developers-to-rotate-secrets-after-s-57cfde",
-    "title": "Railway Warns Developers to Rotate Secrets After Suspicious Activity",
-    "summary": "Railway detected suspicious activity on its cloud platform that stores customer environment variables, urging developers to rotate secrets. The anomaly suggests possible unauthorized access to configuration data, though no exfiltration has been confirmed by the platform. Railway recommends enforcing secret rotation, enabling multi‑factor authentication, and auditing access logs for irregular activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
-    "publishedAt": "2026-10-22T21:25:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "railway-warns-developers-to-rotate-secrets-after-s",
-      "article-57cfde",
-      "57cfde",
-      "railway-warns-developers-to-rotate-secrets-after-suspicious-"
-    ]
-  },
-  {
-    "slug": "google-chrome-beta-157-0-8103-15-released-for-desk-1f511d",
-    "title": "Google Chrome Beta 157.0.8103.15 Released for Desktop",
-    "summary": "Google released Chrome Beta 157.0.8103.15 for Windows, macOS, and Linux, updating the desktop channel. The update includes a partial list of changes documented in the Git log and offers guidance for users considering channel switches. Users are encouraged to file bugs for new issues and consult the community help forum for support.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-desktop-update_02146026170.html",
-    "publishedAt": "2026-10-22T20:43:32.954Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-chrome-beta-157-0-8103-15-released-for-desk",
-      "article-1f511d",
-      "1f511d",
-      "google-chrome-beta-157-0-8103-15-released-for-desktop"
-    ]
-  },
-  {
-    "slug": "google-chrome-early-stable-update-for-desktop-123465",
-    "title": "Google Chrome Early Stable Update for Desktop",
-    "summary": "Google Chrome released an early stable update for Windows, version 157.0.8103.15/.16, with a forthcoming Mac release for a small user subset. The update includes multiple bug fixes and performance improvements, detailed in the release log. Users are encouraged to monitor the community forum for issue reporting and to consider switching release channels if desired.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/early-stable-update-for-desktop_02123641300.html",
-    "publishedAt": "2026-10-22T20:33:11.637Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-chrome-early-stable-update-for-desktop",
-      "article-123465",
-      "123465"
-    ]
-  },
-  {
-    "slug": "federal-agents-seize-texas-laptop-farms-linked-to-632e59",
-    "title": "Federal Agents Seize Texas Laptop Farms Linked to Espionage",
-    "summary": "Federal agents seized multiple illicit laptop farms in Texas, targeting stolen hardware used for espionage. The operation, part of broader efforts to dismantle North Korean state-sponsored infrastructure, involved coordinated raids and seizure of devices linked to data exfiltration. Law enforcement released a statement urging vendors to secure supply chains and report suspicious hardware acquisitions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
-    "publishedAt": "2026-10-22T20:33:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "federal-agents-seize-texas-laptop-farms-linked-to",
-      "article-632e59",
-      "632e59",
-      "federal-agents-seize-texas-laptop-farms-linked-to-espionage"
-    ]
-  },
-  {
-    "slug": "cve-2026-115419-strands-agents-sdk-a2a-server-data-1fc672",
-    "title": "CVE-2026-115419: Strands Agents SDK A2A Server Data Disclosure",
-    "summary": "CVE-2026-115419 exposes the Strands Agents SDK A2A server to unintended data disclosure, allowing an authenticated remote user to access another caller’s conversation history in multi‑tenant deployments. The flaw stems from improper isolation of conversation state between callers, enabling unauthorized influence of model behavior.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-146-aws/",
-    "publishedAt": "2026-10-22T20:07:11.000Z",
-    "cves": [
-      "CVE-2026-115419"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-115419-strands-agents-sdk-a2a-server-data",
-      "article-1fc672",
-      "1fc672",
-      "cve-2026-115419-strands-agents-sdk-a2a-server-data-disclosur"
     ]
   }
 ];
