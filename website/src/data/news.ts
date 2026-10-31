@@ -562,6 +562,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "florida-education-dept-data-leak-affects-4-9-milli-22155c",
+    "title": "Florida Education Dept Data Leak Affects 4.9 Million SSNs",
+    "summary": "The Florida Department of Education disclosed a data breach affecting the Florida Student Financial Aid website, exposing the Social Security numbers of approximately 4.9 million individuals. The breach occurred on October 19, 2026, when unauthorized access was gained to the state's financial aid portal. Affected residents should monitor for identity theft and consider credit monitoring services.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+    "publishedAt": "2026-10-30T15:54:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "florida-education-dept-data-leak-affects-4-9-milli",
+      "article-22155c",
+      "22155c",
+      "florida-education-dept-data-leak-affects-4-9-million-ssns"
+    ]
+  },
+  {
     "slug": "teamviewer-host-can-crash-viewer-via-cve-2026-1115-1bf323",
     "title": "TeamViewer Host Can Crash Viewer via CVE-2026-111585",
     "summary": "A flaw in TeamViewer allows a compromised host to attack the viewer computer during a remote session. The vulnerability, CVE-2026-111585, lets the host crash the viewer's TeamViewer client and, on some platforms, run arbitrary code, enabling remote code execution. TeamViewer has released a patch; users should update to the latest version to mitigate the risk.",
@@ -989,6 +1007,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-openstack-on-openshift-patches-python-boto-37d93d",
+    "title": "Red Hat OpenStack on OpenShift Patches python-botocore Vulnerability",
+    "summary": "Red Hat released an update for python-botocore addressing CVE-2026-98432 in Red Hat OpenStack Services on OpenShift 18.0 (Antelope). The vulnerability carries an Important security impact rating with a CVSS base score available from the CVE link in the advisory references. Organizations running affected OpenStack components should apply the updated package immediately to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93046",
+    "publishedAt": "2026-10-30T12:12:08.000Z",
+    "cves": [
+      "CVE-2026-98432"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-openstack-on-openshift-patches-python-boto",
+      "article-37d93d",
+      "37d93d",
+      "red-hat-openstack-on-openshift-patches-python-botocore-vulne"
+    ]
+  },
+  {
+    "slug": "red-hat-openstack-platform-13-patches-python-botoc-37d93d",
+    "title": "Red Hat OpenStack Platform 13 Patches python-botocore Vulnerability",
+    "summary": "Red Hat issued a python-botocore update addressing CVE-2026-98432 in Red Hat OpenStack Platform 13 (Queens). The advisory rates this as Important with a CVSS base score available from the CVE references section. Administrators of affected OpenStack deployments should apply the patched package promptly to reduce exposure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93043",
+    "publishedAt": "2026-10-30T12:11:52.000Z",
+    "cves": [
+      "CVE-2026-98432"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-openstack-platform-13-patches-python-botoc",
+      "article-37d93d",
+      "37d93d",
+      "red-hat-openstack-platform-13-patches-python-botocore-vulner"
+    ]
+  },
+  {
     "slug": "wordpress-race-condition-enables-unauthenticated-r-2df166",
     "title": "WordPress Race Condition Enables Unauthenticated Remote Code Execution",
     "summary": "WordPress hosts a high‑severity unauthenticated race condition that can lead to remote code execution on vulnerable installations. Threat actors are actively attempting to exploit the flaw, but no confirmed in‑the‑wild exploitation has been reported. Site owners should apply the latest security patch and monitor for anomalous activity until a vendor fix is released.",
@@ -1075,6 +1133,24 @@ export const news: NewsBrief[] = [
       "drupal-commerce-core-exploit-targets-online-stores",
       "article-510c02",
       "510c02"
+    ]
+  },
+  {
+    "slug": "syrian-hacker-sentenced-for-fake-tweet-market-mani-3ca8a6",
+    "title": "Syrian Hacker Sentenced for Fake Tweet Market Manipulation Scheme",
+    "summary": "A U.S. federal court sentenced Ahmad Umar Agha, known online as Th3Pr0, to 42 months in prison for orchestrating a hacking conspiracy that targeted Western news outlets via fake tweets. The scheme was organized by members of Bashar al-Assad's inner circle, including commanders of Syria's General Intelligence Directorate.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+    "publishedAt": "2026-10-30T10:40:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "syrian-hacker-sentenced-for-fake-tweet-market-mani",
+      "article-3ca8a6",
+      "3ca8a6",
+      "syrian-hacker-sentenced-for-fake-tweet-market-manipulation-s"
     ]
   },
   {
@@ -3224,6 +3300,26 @@ export const news: NewsBrief[] = [
       "article-130710",
       "130710",
       "interpol-s-operation-serengeti-nets-1-462-arrests-and-105m-r"
+    ]
+  },
+  {
+    "slug": "adobe-commerce-polyshell-breaches-stores-via-brotl-106c58",
+    "title": "Adobe Commerce PolyShell Breaches Stores via Brotli Exploit",
+    "summary": "CISA added CVE-2026-111497 (CVSS 9.2) and a Brotli decoder vulnerability to its Known Exploited Vulnerabilities catalog, citing active exploitation evidence against Adobe Commerce and Magento deployments. The unchecked return value flaw enables attackers to execute arbitrary code within affected storefronts, compromising hundreds of e-commerce installations.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+    "publishedAt": "2026-10-28T05:42:26.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-commerce-polyshell-breaches-stores-via-brotl",
+      "article-106c58",
+      "106c58",
+      "adobe-commerce-polyshell-breaches-stores-via-brotli-exploit"
     ]
   },
   {
@@ -6381,98 +6477,6 @@ export const news: NewsBrief[] = [
       "article-5ca1da",
       "5ca1da",
       "ai-generated-attack-campaigns-target-hundreds-of-sites"
-    ]
-  },
-  {
-    "slug": "php-discloses-two-critical-level-rce-flaws-5e83e1",
-    "title": "PHP Discloses Two Critical‑Level RCE Flaws",
-    "summary": "PHP has disclosed two critical‑level remote code execution vulnerabilities that allow attackers to execute arbitrary code on affected servers. The flaws stem from improper input validation in the core engine, with public proof‑of‑concept exploits demonstrating full system compromise. Immediate application of the vendor‑issued patches and disabling remote execution features are mandatory to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8",
-    "publishedAt": "2026-10-23T17:18:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-discloses-two-critical-level-rce-flaws",
-      "article-5e83e1",
-      "5e83e1"
-    ]
-  },
-  {
-    "slug": "microsoft-announces-end-of-support-for-windows-ser-72cd91",
-    "title": "Microsoft Announces End of Support for Windows Server 2016",
-    "summary": "Microsoft announced Windows Server 2016 will reach end of support in January 2027, ceasing security updates. This end‑of‑life status means no further patches, exposing systems to unpatched vulnerabilities and potential exploitation. Organizations should upgrade to supported versions or apply extended support if available, and monitor for new advisories.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
-    "publishedAt": "2026-10-23T17:05:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-announces-end-of-support-for-windows-ser",
-      "article-72cd91",
-      "72cd91",
-      "microsoft-announces-end-of-support-for-windows-server-2016"
-    ]
-  },
-  {
-    "slug": "quest-diagnostics-breach-exposes-patient-records-v-1fdcce",
-    "title": "Quest Diagnostics Breach Exposes Patient Records via Quanum LSM System",
-    "summary": "Quest Diagnostics disclosed a breach exposing patient records after unauthorized access to its Quanum LSM system. The attacker leveraged compromised credentials to read sensitive medical data, potentially compromising privacy and regulatory compliance. Quest should conduct forensic analysis, notify affected patients, reset credentials, and strengthen access controls, implementing multi‑factor authentication immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
-    "publishedAt": "2026-10-23T16:40:07.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion"
-      }
-    ],
-    "aliases": [
-      "quest-diagnostics-breach-exposes-patient-records-v",
-      "article-1fdcce",
-      "1fdcce",
-      "quest-diagnostics-breach-exposes-patient-records-via-quanum-"
-    ]
-  },
-  {
-    "slug": "chrome-dev-channel-updated-to-158-0-8117-2-7f02c8",
-    "title": "Chrome Dev Channel Updated to 158.0.8117.2",
-    "summary": "Chrome Dev channel received update 158.0.8117.2 for Windows, macOS, and Linux, adding bug fixes and performance enhancements. No security flaw was disclosed, but the release addresses several stability issues reported in the Git log. Users should install the update through Chrome Update or switch channels, and report new problems via the bug filing system.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01159222561.html",
-    "publishedAt": "2026-10-23T16:28:33.571Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-dev-channel-updated-to-158-0-8117-2",
-      "article-7f02c8",
-      "7f02c8"
-    ]
-  },
-  {
-    "slug": "emudhra-intermediate-ca-private-keys-compromised-710aae",
-    "title": "eMudhra Intermediate CA Private Keys Compromised",
-    "summary": "A critical compromise of eMudhra intermediate certificates was discovered, exposing eight private keys due to a key generation ceremony flaw that permits brute‑force acquisition within seconds. The flaw allows attackers to forge certificates for any domain, potentially enabling man‑in‑the‑middle attacks and undermining trust chains. Cisco recommends disabling affected CAs and applying vendor‑issued mitigations immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
-    "publishedAt": "2026-10-23T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emudhra-intermediate-ca-private-keys-compromised",
-      "article-710aae",
-      "710aae"
     ]
   }
 ];

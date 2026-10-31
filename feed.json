@@ -402,6 +402,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+    "sourceUrl": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+    "title": "Florida Education Dept Data Leak Affects 4.9 Million SSNs",
+    "headline": "Florida Education Dept Data Leak Affects 4.9 Million SSNs",
+    "summary": "The Florida Department of Education disclosed a data breach affecting the Florida Student Financial Aid website, exposing the Social Security numbers of approximately 4.9 million individuals. The breach occurred on October 19, 2026, when unauthorized access was gained to the state's financial aid portal. Affected residents should monitor for identity theft and consider credit monitoring services.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-10-30T15:54:00.000Z",
+    "url": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
     "sourceUrl": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
     "title": "TeamViewer Host Can Crash Viewer via CVE-2026-111585",
@@ -719,6 +732,32 @@
     ]
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93046",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93046",
+    "title": "Red Hat OpenStack on OpenShift Patches python-botocore Vulnerability",
+    "headline": "Red Hat OpenStack on OpenShift Patches python-botocore Vulnerability",
+    "summary": "Red Hat released an update for python-botocore addressing CVE-2026-98432 in Red Hat OpenStack Services on OpenShift 18.0 (Antelope). The vulnerability carries an Important security impact rating with a CVSS base score available from the CVE link in the advisory references. Organizations running affected OpenStack components should apply the updated package immediately to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-30T12:12:08.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:93046",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93043",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93043",
+    "title": "Red Hat OpenStack Platform 13 Patches python-botocore Vulnerability",
+    "headline": "Red Hat OpenStack Platform 13 Patches python-botocore Vulnerability",
+    "summary": "Red Hat issued a python-botocore update addressing CVE-2026-98432 in Red Hat OpenStack Platform 13 (Queens). The advisory rates this as Important with a CVSS base score available from the CVE references section. Administrators of affected OpenStack deployments should apply the patched package promptly to reduce exposure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-30T12:11:52.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:93043",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
     "sourceUrl": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
     "title": "WordPress Race Condition Enables Unauthenticated Remote Code Execution",
@@ -781,6 +820,19 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-30T11:07:11.000Z",
     "url": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+    "title": "Syrian Hacker Sentenced for Fake Tweet Market Manipulation Scheme",
+    "headline": "Syrian Hacker Sentenced for Fake Tweet Market Manipulation Scheme",
+    "summary": "A U.S. federal court sentenced Ahmad Umar Agha, known online as Th3Pr0, to 42 months in prison for orchestrating a hacking conspiracy that targeted Western news outlets via fake tweets. The scheme was organized by members of Bashar al-Assad's inner circle, including commanders of Syria's General Intelligence Directorate.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-30T10:40:45.000Z",
+    "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
     "additionalSources": []
   },
   {
@@ -2342,6 +2394,19 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-28T06:00:00.000Z",
     "url": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+    "title": "Adobe Commerce PolyShell Breaches Stores via Brotli Exploit",
+    "headline": "Adobe Commerce PolyShell Breaches Stores via Brotli Exploit",
+    "summary": "CISA added CVE-2026-111497 (CVSS 9.2) and a Brotli decoder vulnerability to its Known Exploited Vulnerabilities catalog, citing active exploitation evidence against Adobe Commerce and Magento deployments. The unchecked return value flaw enables attackers to execute arbitrary code within affected storefronts, compromising hundreds of e-commerce installations.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-28T05:42:26.000Z",
+    "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
     "additionalSources": []
   },
   {
@@ -4589,76 +4654,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-23T17:26:59.000Z",
     "url": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8",
-    "title": "PHP Discloses Two Critical‑Level RCE Flaws",
-    "headline": "PHP Discloses Two Critical‑Level RCE Flaws",
-    "summary": "PHP has disclosed two critical‑level remote code execution vulnerabilities that allow attackers to execute arbitrary code on affected servers. The flaws stem from improper input validation in the core engine, with public proof‑of‑concept exploits demonstrating full system compromise. Immediate application of the vendor‑issued patches and disabling remote execution features are mandatory to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SentinelOne",
-    "publishedAt": "2026-10-23T17:18:43.000Z",
-    "url": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-43-8",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
-    "title": "Microsoft Announces End of Support for Windows Server 2016",
-    "headline": "Microsoft Announces End of Support for Windows Server 2016",
-    "summary": "Microsoft announced Windows Server 2016 will reach end of support in January 2027, ceasing security updates. This end‑of‑life status means no further patches, exposing systems to unpatched vulnerabilities and potential exploitation. Organizations should upgrade to supported versions or apply extended support if available, and monitor for new advisories.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-23T17:05:07.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
-    "title": "Quest Diagnostics Breach Exposes Patient Records via Quanum LSM System",
-    "headline": "Quest Diagnostics Breach Exposes Patient Records via Quanum LSM System",
-    "summary": "Quest Diagnostics disclosed a breach exposing patient records after unauthorized access to its Quanum LSM system. The attacker leveraged compromised credentials to read sensitive medical data, potentially compromising privacy and regulatory compliance. Quest should conduct forensic analysis, notify affected patients, reset credentials, and strengthen access controls, implementing multi‑factor authentication immediately.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-23T16:40:07.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/quest-diagnostics-network-intrusion"
-      }
-    ]
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01159222561.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01159222561.html",
-    "title": "Chrome Dev Channel Updated to 158.0.8117.2",
-    "headline": "Chrome Dev Channel Updated to 158.0.8117.2",
-    "summary": "Chrome Dev channel received update 158.0.8117.2 for Windows, macOS, and Linux, adding bug fixes and performance enhancements. No security flaw was disclosed, but the release addresses several stability issues reported in the Git log. Users should install the update through Chrome Update or switch channels, and report new problems via the bug filing system.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-23T16:28:33.571Z",
-    "url": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01159222561.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
-    "title": "eMudhra Intermediate CA Private Keys Compromised",
-    "headline": "eMudhra Intermediate CA Private Keys Compromised",
-    "summary": "A critical compromise of eMudhra intermediate certificates was discovered, exposing eight private keys due to a key generation ceremony flaw that permits brute‑force acquisition within seconds. The flaw allows attackers to forge certificates for any domain, potentially enabling man‑in‑the‑middle attacks and undermining trust chains. Cisco recommends disabling affected CAs and applying vendor‑issued mitigations immediately.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "publishedAt": "2026-10-23T16:00:00.000Z",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
     "additionalSources": []
   }
 ]
