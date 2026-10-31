@@ -402,6 +402,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+    "title": "TeamViewer Host Can Crash Viewer via CVE-2026-111585",
+    "headline": "TeamViewer Host Can Crash Viewer via CVE-2026-111585",
+    "summary": "A flaw in TeamViewer allows a compromised host to attack the viewer computer during a remote session. The vulnerability, CVE-2026-111585, lets the host crash the viewer's TeamViewer client and, on some platforms, run arbitrary code, enabling remote code execution. TeamViewer has released a patch; users should update to the latest version to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-30T15:17:28.000Z",
+    "url": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/north-korean-hackers-2/",
     "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers-2/",
     "title": "North Korea Group Steals Credentials, Injects Malware into GitHub",
@@ -937,6 +950,19 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-30T05:00:27.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/30/bitdefender-smart-tvs-vulnerabilities-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+    "title": "Binance Breach Hits $6.3B Assets, $3B Frozen",
+    "headline": "Binance Breach Hits $6.3B Assets, $3B Frozen",
+    "summary": "Binance disclosed a security incident that affected about $6.3 billion of assets, with roughly $3 billion frozen on‑chain. The breach involved unauthorized access to user balances, though the specific exploit remains undisclosed; Tether and Circle froze related USDT and USDC. Binance is investigating the root cause and advises affected users to monitor accounts and await further updates.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-30T04:14:59.000Z",
+    "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
     "additionalSources": []
   },
   {
@@ -4633,32 +4659,6 @@
     "source": "Cisco PSIRT",
     "publishedAt": "2026-10-23T16:00:00.000Z",
     "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Informational+for+Emergency+Distrust+of+eMudhra+Root+and+Intermediate+Certificate+Authorities%26vs_k%3D1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-    "title": "PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability",
-    "headline": "PHP Releases Mitigation for CVE‑2026‑115560 RCE Vulnerability",
-    "summary": "PHP disclosed a new remote code execution vulnerability, CVE‑2026‑115560, impacting systems with non‑default configurations. The flaw permits arbitrary code execution, with no patch available and active exploitation status unknown. PHP recommends disabling vulnerable features, monitoring logs, and applying the forthcoming vendor patch as soon as it is released.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-23T15:38:05.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88720",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88720",
-    "title": "Red Hat Releases PHP Security Update for RHEL 9.6 EUS",
-    "headline": "Red Hat Releases PHP Security Update for RHEL 9.6 EUS",
-    "summary": "Red Hat Enterprise Linux 9.6 Extended Update Support released RHSA‑2026:88720 to patch multiple PHP security flaws impacting web services. The patches cover vulnerabilities rated Important by Red Hat Product Security, with CVSS scores linked via CVE references, though no active exploitation has been observed. Apply the update immediately to eliminate potential remote code execution risks and maintain PHP integrity.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T15:23:46.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88720",
     "additionalSources": []
   }
 ]
