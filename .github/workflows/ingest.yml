@@ -20,7 +20,7 @@ jobs:
   ingest:
     name: Ingest Cybersecurity News
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     env:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}

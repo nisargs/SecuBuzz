@@ -664,22 +664,22 @@ function safeJsonParse(text) {
 function extractArticlesWithRegex(text) {
   if (!text || typeof text !== "string") return [];
   const articles = [];
-  const blockRegex = /\{[^{}]*?"headline"[\s\S]*?"summary"[\s\S]*?\}/g;
+  const blockRegex = /\{[^{}]*?"headline"[\s\S]*?(?:\}(?![\s\S]*?\{)|$)/g;
   let match;
   while ((match = blockRegex.exec(text)) !== null) {
     const block = match[0];
-    const headlineMatch = block.match(/"headline"\s*:\s*"([\s\S]*?)(?<!\\)"/);
-    const summaryMatch = block.match(/"summary"\s*:\s*"([\s\S]*?)(?<!\\)"/);
-    const categoryMatch = block.match(/"category"\s*:\s*"([\s\S]*?)(?<!\\)"/);
-    const severityMatch = block.match(/"severity"\s*:\s*"([\s\S]*?)(?<!\\)"/);
+    const headlineMatch = block.match(/"headline"\s*:\s*"([\s\S]*?)(?:(?<!\\)"|$)/);
+    const summaryMatch = block.match(/"summary"\s*:\s*"([\s\S]*?)(?:(?<!\\)"|$)/);
+    const categoryMatch = block.match(/"category"\s*:\s*"([\s\S]*?)(?:(?<!\\)"|$)/);
+    const severityMatch = block.match(/"severity"\s*:\s*"([\s\S]*?)(?:(?<!\\)"|$)/);
 
-    const headline = headlineMatch ? headlineMatch[1] : null;
-    const summary = summaryMatch ? summaryMatch[1] : null;
+    const headline = headlineMatch ? headlineMatch[1].trim() : null;
+    const summary = summaryMatch ? summaryMatch[1].trim() : null;
 
-    if (headline && summary) {
+    if (headline && summary && headline.length > 5 && summary.length > 20) {
       articles.push({
-        headline: headline.replace(/\\"/g, '"').replace(/\s+/g, " ").trim(),
-        summary: summary.replace(/\\"/g, '"').replace(/\s+/g, " ").trim(),
+        headline: headline.replace(/\\"/g, '"').replace(/\s+/g, " "),
+        summary: summary.replace(/\\"/g, '"').replace(/\s+/g, " "),
         category: categoryMatch ? normaliseCategory(categoryMatch[1]) : "GENERAL",
         severity: severityMatch ? severityMatch[1].trim().toUpperCase() : "MEDIUM",
       });
@@ -1313,6 +1313,11 @@ async function waitBetweenRequests(
       `Remaining TPM is below ${MIN_REMAINING_TOKENS_BEFORE_WAIT}.`,
     );
 
+    if (rotateGroqApiKey()) {
+      console.log(`[Groq Key Pool] Rotated to fresh key on low TPM (${remainingTokens} left) - continuing without sleep!`);
+      return;
+    }
+
     const resetSec = parseSeconds(resetTokensHeader);
     if (resetSec > 60) {
       throw new Error(
@@ -1595,7 +1600,10 @@ async function requestGroq(
         payload?.error?.message ||
         `Groq request failed with HTTP ${response.status}.`;
 
-
+      if (rotateGroqApiKey()) {
+        console.warn(`[Groq Key Pool] Request failed with HTTP ${response.status} (${message}). Rotated to next key, retrying...`);
+        continue;
+      }
 
       throw new Error(
         message,
@@ -1764,7 +1772,7 @@ async function requestGemini(candidates) {
               maxOutputTokens: MAX_COMPLETION_TOKENS,
             },
           }),
-          signal: AbortSignal.timeout(45000),
+          signal: AbortSignal.timeout(15000),
         });
 
         if (!response.ok) {
@@ -1900,6 +1908,7 @@ async function requestOpenRouter(candidates) {
 
 function getRotatedEngines() {
   const primaryPool = [];
+  // Groq is fast (3-4s per batch) and stable with key pooling - prioritize as lead
   if (GROQ_API_KEY) {
     primaryPool.push({ name: `Groq (${GROQ_MODEL})`, run: requestGroq });
   }
@@ -1909,13 +1918,7 @@ function getRotatedEngines() {
 
   if (primaryPool.length === 0 && (!OPENROUTER_API_KEY || openRouterPermanentlyFailed)) return [];
 
-  // Alternates hourly lead 50/50 between Groq and Gemini (12 hours each per day)
-  let rotated = [];
-  if (primaryPool.length > 0) {
-    const currentHour = new Date().getUTCHours();
-    const leadIndex = currentHour % primaryPool.length;
-    rotated = [...primaryPool.slice(leadIndex), ...primaryPool.slice(0, leadIndex)];
-  }
+  let rotated = [...primaryPool];
 
   // OpenRouter is kept strictly as the last-resort failover engine
   // to protect its unfunded 50 req/day free tier from being tripped by routine lead hours
@@ -2105,7 +2108,7 @@ async function requestGroqContextComparison(storyA, storyB, prompt) {
       const response = await fetch(GROQ_API_URL, {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${GROQ_API_KEY}`,
+          Authorization: `Bearer ${getGroqApiKey()}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -2190,7 +2193,7 @@ async function requestGeminiContextComparison(storyA, storyB, prompt) {
             maxOutputTokens: 1200,
           },
         }),
-        signal: AbortSignal.timeout(45000),
+        signal: AbortSignal.timeout(15000),
       });
 
       if (!response.ok) {
