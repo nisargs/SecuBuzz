@@ -11,6 +11,23 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "syrian-hacker-sentenced-to-42-months-in-us-court-b95c46",
+    "title": "Syrian Hacker Sentenced to 42 Months in US Court",
+    "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro‑Assad attacks on media, businesses, and government entities. The attacks leveraged compromised credentials and distributed denial‑of‑service tactics to disrupt communications and compromise sensitive data across multiple sectors. The sentencing underscores the importance of international cooperation and reinforces the need for robust cyber‑defense measures to deter state‑backed actors.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
+    "publishedAt": "2026-10-31T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "syrian-hacker-sentenced-to-42-months-in-us-court",
+      "article-b95c46",
+      "b95c46"
+    ]
+  },
+  {
     "slug": "attackers-chain-three-ivanti-flaws-for-root-access-d58862",
     "title": "Attackers Chain Three Ivanti Flaws for Root Access",
     "summary": "Attackers chained three vulnerabilities in Ivanti Connect Secure to gain unauthenticated root access. The flaws include 'CVE-2026-111357', a missing authentication bug with CVSS 8.8, and two other undisclosed weaknesses exploited in the wild, enabling privilege escalation without credentials. CISA added the issues to its KEV catalog; Ivanti has released patches, and security teams should apply them immediately.",
@@ -214,6 +231,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "teamviewer-issues-patch-for-remote-code-flaw-366034",
+    "title": "TeamViewer Issues Patch for Remote Code Flaw",
+    "summary": "TeamViewer released a patch for a remote code execution flaw that could allow attackers to run arbitrary code on affected systems. The vulnerability, identified as CVE-2026-111585, is exploitable via unauthenticated network traffic and carries a CVSS score of 8.7, enabling full system compromise. Administrators should apply the latest update immediately, verify installation, and enable network segmentation to mitigate potential exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/teamviewer-flaw-could-let-malicious-hosts-take-over-sup",
+    "publishedAt": "2026-10-31T03:02:01.000Z",
+    "cves": [
+      "CVE-2026-111585"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "teamviewer-issues-patch-for-remote-code-flaw",
+      "article-366034",
+      "366034"
+    ]
+  },
+  {
     "slug": "polymarket-supply-chain-flaw-cve-2026-97229-detect-7660bd",
     "title": "Polymarket Supply Chain Flaw CVE-2026-97229 Detected",
     "summary": "A supply‑chain flaw identified in Polymarket’s platform, tracked as CVE-2026-97229, allows attackers to inject malicious code during deployment. The vulnerability arises from insufficient validation of third‑party components, enabling unauthorized code execution with potential data exfiltration; no active exploitation reported yet. Polymarket has released a patch and recommends applying the update immediately, alongside monitoring telemetry for anomalous deployment activity.",
@@ -231,6 +267,41 @@ export const news: NewsBrief[] = [
       "article-7660bd",
       "7660bd",
       "polymarket-supply-chain-flaw-cve-2026-97229-detected"
+    ]
+  },
+  {
+    "slug": "malicious-claude-code-extension-hosts-persistent-s-485406",
+    "title": "Malicious Claude Code Extension Hosts Persistent SSH Backdoor",
+    "summary": "Microsoft identified a malicious Claude Code‑branded extension that installs a persistent SSH backdoor on compromised systems. The backdoor opens port 22, enabling attackers to gain remote shell access, exfiltrate data, and maintain persistence across reboots. Microsoft recommends scanning for the extension, removing it, applying security updates, and monitoring SSH logs for unauthorized activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
+    "publishedAt": "2026-10-31T01:02:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-claude-code-extension-hosts-persistent-s",
+      "article-485406",
+      "485406",
+      "malicious-claude-code-extension-hosts-persistent-ssh-backdoo"
+    ]
+  },
+  {
+    "slug": "drupal-commerce-auth-bypass-vulnerability-1ec811",
+    "title": "Drupal Commerce Auth Bypass Vulnerability",
+    "summary": "An authentication bypass flaw in Drupal Commerce Core, identified as CVE‑2026‑118539, allows attackers to gain privileged access without valid credentials. The vulnerability exploits a logic error in the authentication flow, enabling unauthorized users to elevate privileges and access restricted resources. A patch is available; administrators should apply it immediately and monitor logs for suspicious authentication attempts.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/hackers-actively-exploit-highly-critical-drupal-commerc",
+    "publishedAt": "2026-10-30T23:38:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "drupal-commerce-auth-bypass-vulnerability",
+      "article-1ec811",
+      "1ec811"
     ]
   },
   {
@@ -363,6 +434,23 @@ export const news: NewsBrief[] = [
       "cve-2026-119117-exposes-aws-credentials-in-logs",
       "article-59cb37",
       "59cb37"
+    ]
+  },
+  {
+    "slug": "bind9-18-update-addresses-multiple-security-flaws-37d93d",
+    "title": "Bind9.18 Update Addresses Multiple Security Flaws",
+    "summary": "Red Hat released an important security update for bind9.18 on Enterprise Linux 9, addressing several critical vulnerabilities. The update mitigates flaws that could allow unauthenticated attackers to execute arbitrary code or cause denial of service, with CVSS scores ranging from 7.5 to 9.0. Administrators should apply the RHSA-2026:93072 update immediately, verify installation, and monitor DNS traffic for anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93072",
+    "publishedAt": "2026-10-30T17:44:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bind9-18-update-addresses-multiple-security-flaws",
+      "article-37d93d",
+      "37d93d"
     ]
   },
   {
@@ -2892,6 +2980,60 @@ export const news: NewsBrief[] = [
       "article-44b9df",
       "44b9df",
       "kroll-breach-analysis-reveals-data-stored-by-unknown-third-p"
+    ]
+  },
+  {
+    "slug": "alpine-ilx-f511-ssh-hard-coded-credentials-rce-vul-6f3c98",
+    "title": "Alpine iLX-F511 SSH Hard-Coded Credentials RCE Vulnerability",
+    "summary": "A zero‑day flaw in Alpine iLX‑F511 SSH service permits network‑adjacent attackers to run arbitrary code without authentication. The vulnerability, identified as CVE‑2026‑118601, carries a CVSS score of 6.3 and exploits hard‑coded credentials in the SSH daemon. A vendor‑issued patch is available; security teams should apply the update immediately to eliminate the RCE risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-819/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "alpine-ilx-f511-ssh-hard-coded-credentials-rce-vul",
+      "article-6f3c98",
+      "6f3c98",
+      "alpine-ilx-f511-ssh-hard-coded-credentials-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "ultralytics-google-drive-path-traversal-rce-vulner-6f3c98",
+    "title": "Ultralytics Google Drive Path Traversal RCE Vulnerability",
+    "summary": "A zero‑day path‑traversal flaw in Ultralytics Google Drive integration enables remote code execution when a user opens a malicious file. The vulnerability, CVE‑2026‑118619, scores 8.8 on CVSS and requires user interaction, making it a high‑severity threat for exposed systems. A patch is available; deploy it promptly and disable the vulnerable feature until remediation is complete.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-818/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ultralytics-google-drive-path-traversal-rce-vulner",
+      "article-6f3c98",
+      "6f3c98",
+      "ultralytics-google-drive-path-traversal-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "ultralytics-parse-model-code-injection-rce-vulnera-6f3c98",
+    "title": "Ultralytics parse_model Code Injection RCE Vulnerability",
+    "summary": "A zero‑day code injection flaw in Ultralytics parse_model function permits remote code execution when a user opens a crafted file. The vulnerability, CVE‑2026‑118618, carries a CVSS score of 7.8 and requires user interaction, classifying it as a high‑severity threat. A patch is available; apply it immediately and disable parse_model until the fix is deployed.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-817/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ultralytics-parse-model-code-injection-rce-vulnera",
+      "article-6f3c98",
+      "6f3c98",
+      "ultralytics-parse-model-code-injection-rce-vulnerability"
     ]
   },
   {
@@ -6315,166 +6457,6 @@ export const news: NewsBrief[] = [
       "article-717256",
       "717256",
       "cyber-insurers-shift-from-risk-transfer-to-active-cyber-defe"
-    ]
-  },
-  {
-    "slug": "uk-proposes-14-year-prison-terms-for-undersea-cabl-216515",
-    "title": "UK Proposes 14‑Year Prison Terms for Undersea Cable Sabotage",
-    "summary": "The United Kingdom is proposing amendments to the Submarine Telegraph Act 1885 to increase penalties for deliberate undersea cable sabotage. The revised law would raise the maximum fine to £1,000 and extend imprisonment to fourteen years, replacing the current five‑year limit. The proposal reflects growing concerns over hybrid threats targeting critical infrastructure and aims to deter future sabotage incidents.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/uk-undersea-cables-sabotage-new-sentencing-guidelines",
-    "publishedAt": "2026-10-23T13:26:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/uk-undersea-cable-sabotage-sentences/"
-      }
-    ],
-    "aliases": [
-      "uk-proposes-14-year-prison-terms-for-undersea-cabl",
-      "article-216515",
-      "216515",
-      "uk-proposes-14-year-prison-terms-for-undersea-cable-sabotage"
-    ]
-  },
-  {
-    "slug": "red-hat-ca-certificates-critical-update-for-rhel-9-37e4fc",
-    "title": "Red Hat ca-certificates Critical Update for RHEL 9.6 EUS",
-    "summary": "A critical vulnerability in ca-certificates affects Red Hat Enterprise Linux 9.6 Extended Update Support, enabling potential exploitation via certificate validation flaws. The root cause involves improper handling of certificate chains, with a CVSS base score indicating high risk and active exploitation potential. Red Hat has released a patch; administrators must apply the update immediately to mitigate the threat.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88563",
-    "publishedAt": "2026-10-23T13:24:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-ca-certificates-critical-update-for-rhel-9",
-      "article-37e4fc",
-      "37e4fc",
-      "red-hat-ca-certificates-critical-update-for-rhel-9-6-eus"
-    ]
-  },
-  {
-    "slug": "capcom-warns-of-phishing-after-11-7-million-record-905773",
-    "title": "Capcom Warns of Phishing After 11.7 Million Records Exposed",
-    "summary": "Capcom disclosed that 11.7 million user records, including email addresses, were exposed, potentially enabling targeted phishing attacks against CAPCOM ID holders. The breach also involved unauthorized password changes on 196 accounts, indicating credential manipulation that could facilitate credential stuffing or account takeover. Capcom urges users to reset passwords immediately, enable two‑factor authentication, and is investigating the leak source.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/resident-evil-maker-capcom-warns-of-phishing-after-11-7-million-records-exposed",
-    "publishedAt": "2026-10-23T13:07:52.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/"
-      },
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/capcom-id-data-breach-11-million-records-exposed/"
-      }
-    ],
-    "aliases": [
-      "capcom-warns-of-phishing-after-11-7-million-record",
-      "article-905773",
-      "905773",
-      "capcom-warns-of-phishing-after-11-7-million-records-exposed"
-    ]
-  },
-  {
-    "slug": "infostealer-targets-ai-development-tools-for-crede-5671d3",
-    "title": "Infostealer Targets AI Development Tools for Credential Theft",
-    "summary": "A new infostealer malware targets AI development tools, harvesting browser passwords, session cookies, and cryptocurrency wallets. The threat collects credentials for Claude, ChatGPT Desktop, Codex, Cursor, Windsurf, GitHub Copilot, and local development files, expanding its scope beyond traditional credential theft. Security teams should block known download URLs, enforce least‑privilege access, and monitor anomalous credential exfiltration to mitigate this evolving threat.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/infostealer-riding-the-ai-train/",
-    "publishedAt": "2026-10-23T13:00:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "infostealer-targets-ai-development-tools-for-crede",
-      "article-5671d3",
-      "5671d3",
-      "infostealer-targets-ai-development-tools-for-credential-thef"
-    ]
-  },
-  {
-    "slug": "hpe-releases-patches-for-eight-high-severity-aruba-156206",
-    "title": "HPE Releases Patches for Eight High‑Severity ArubaOS RCE and Auth Bypass Flaws",
-    "summary": "Hewlett Packard Enterprise disclosed eight high‑severity ArubaOS flaws enabling authentication bypass and remote code execution via the Aruba Operating System. The vulnerabilities stem from improper input validation in privileged configuration interfaces, allowing attackers to inject malicious commands and gain full administrative control. HPE released patches for all affected versions; security teams should apply the updates immediately and verify configuration integrity.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws/",
-    "publishedAt": "2026-10-23T12:48:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hpe-releases-patches-for-eight-high-severity-aruba",
-      "article-156206",
-      "156206",
-      "hpe-releases-patches-for-eight-high-severity-arubaos-rce-and"
-    ]
-  },
-  {
-    "slug": "mirai-botnet-operators-exploit-php2shell-aslr-bypa-249a64",
-    "title": "Mirai Botnet Operators Exploit PHP2Shell ASLR Bypass (CVE-2026-109618)",
-    "summary": "Researchers linked Mirai botnet operators to PHP2Shell attacks, revealing an ASLR bypass that could facilitate remote code execution on vulnerable servers. The flaw, identified as CVE-2026-109618, exploits a stack corruption vulnerability in PHP’s internal memory handling, but no successful exploitation has been observed. Administrators should update PHP to the latest release and enable ASLR mitigation features to prevent potential exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
-    "publishedAt": "2026-10-23T12:45:52.000Z",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mirai-botnet-operators-exploit-php2shell-aslr-bypa",
-      "article-249a64",
-      "249a64",
-      "mirai-botnet-operators-exploit-php2shell-aslr-bypass-cve-202"
-    ]
-  },
-  {
-    "slug": "red-hat-ca-certificates-critical-update-for-rhel-8-37e4f8",
-    "title": "Red Hat ca-certificates Critical Update for RHEL 8.6 AMSC and ELS",
-    "summary": "A critical flaw in ca-certificates compromises Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On, allowing attackers to bypass certificate validation. The vulnerability’s root cause is a logic error in chain verification, with a CVSS score reflecting severe risk and potential in‑the‑wild exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88668",
-    "publishedAt": "2026-10-23T12:20:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-ca-certificates-critical-update-for-rhel-8",
-      "article-37e4f8",
-      "37e4f8",
-      "red-hat-ca-certificates-critical-update-for-rhel-8-6-amsc-an"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-ca-certificates-update-f-37e4f8",
-    "title": "Red Hat releases critical ca-certificates update for Enterprise Linux 8.4",
-    "summary": "Red Hat released a critical ca-certificates update for Enterprise Linux 8.4 Advanced Mission Critical Update Support, fixing multiple certificate validation flaws. The patch addresses several high‑severity memory corruption bugs with CVSS scores above 9.0, eliminating remote code execution risk. Apply the latest ca-certificates package immediately to secure all affected systems.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88669",
-    "publishedAt": "2026-10-23T12:16:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-ca-certificates-update-f",
-      "article-37e4f8",
-      "37e4f8",
-      "red-hat-releases-critical-ca-certificates-update-for-enterpr"
     ]
   }
 ];
