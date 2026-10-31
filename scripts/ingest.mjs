@@ -33,7 +33,7 @@ const GEMINI_API_URL =
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-1.5-flash";
 
 const OPENROUTER_API_URL =
   "https://openrouter.ai/api/v1/chat/completions";
@@ -1358,17 +1358,7 @@ async function requestGroq(
              * GPT-OSS 20B supports Groq Structured Outputs.
              */
             response_format: {
-              type: "json_schema",
-
-              json_schema: {
-                name:
-                  "secubuzz_articles",
-
-                strict: true,
-
-                schema:
-                  GROQ_RESPONSE_SCHEMA,
-              },
+              type: "json_object",
             },
 
             /*
