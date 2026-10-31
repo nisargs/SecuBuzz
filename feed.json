@@ -1044,6 +1044,32 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybernewsai.com/blog/cisco-patches-actively-exploited-asa-and-ftd-vpn-flaw-c",
+    "sourceUrl": "https://cybernewsai.com/blog/cisco-patches-actively-exploited-asa-and-ftd-vpn-flaw-c",
+    "title": "Patch VPN Flaw CVE-2026-76418",
+    "headline": "Patch VPN Flaw CVE-2026-76418",
+    "summary": "CVE-2026-76418 is a vulnerability in VPN software that could allow attackers to compromise enterprise environments. Root‑cause telemetry indicates a flaw in authentication handling, potentially enabling unauthenticated code execution. Red Hat recommends applying the vendor patch immediately to mitigate the risk and prevent potential exploitation across all affected systems globally today.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-30T01:36:46.000Z",
+    "url": "https://cybernewsai.com/blog/cisco-patches-actively-exploited-asa-and-ftd-vpn-flaw-c",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:92907",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92907",
+    "title": "Curl Update Addresses Moderate Security Issue",
+    "headline": "Curl Update Addresses Moderate Security Issue",
+    "summary": "Red Hat Enterprise Linux 9 users face a moderate security flaw in curl that could allow attackers to exploit the library. The flaw, identified by Red Hat Product Security, carries a CVSS base score that reflects moderate risk but lacks active exploitation evidence. A security update is available; administrators should apply the patch promptly to eliminate the vulnerability.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-30T01:23:52.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:92907",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:88349",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88349",
     "title": "Red Hat Updates java‑21‑openjdk for RHEL",
@@ -1054,6 +1080,19 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-30T00:33:04.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:88349",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:92323",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92323",
+    "title": "Expat Update Mitigates Important Security Flaw",
+    "headline": "Expat Update Mitigates Important Security Flaw",
+    "summary": "Red Hat Enterprise Linux 8 users must address a critical flaw in the expat XML parser that could enable attackers to execute arbitrary code. Red Hat Product Security rates the issue as Important, indicating a high CVSS score and potential for remote code execution without authentication. The vendor has released a patch; system administrators should apply it to prevent exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-30T00:21:15.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:92323",
     "additionalSources": []
   },
   {
@@ -1101,6 +1140,19 @@
     "source": "CyberNews AI",
     "publishedAt": "2026-10-29T23:51:05.000Z",
     "url": "https://cybernewsai.com/blog/siemens-mendix-saml-module",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/cisa-adds-two-known-exploited-vulnerabilities-to-catalo",
+    "sourceUrl": "https://cybernewsai.com/blog/cisa-adds-two-known-exploited-vulnerabilities-to-catalo",
+    "title": "Patch VPN Flaw CVE-2026-97229",
+    "headline": "Patch VPN Flaw CVE-2026-97229",
+    "summary": "CVE-2026-97229 is a vulnerability in VPN software that could allow attackers to compromise enterprise environments. Root‑cause telemetry indicates a flaw in authentication handling, potentially enabling unauthenticated code execution. Red Hat recommends applying the vendor patch immediately to mitigate the risk and prevent potential exploitation across all affected systems globally today.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T23:41:16.000Z",
+    "url": "https://cybernewsai.com/blog/cisa-adds-two-known-exploited-vulnerabilities-to-catalo",
     "additionalSources": []
   },
   {
@@ -4602,58 +4654,6 @@
     "source": "AWS Security Bulletins",
     "publishedAt": "2026-10-23T17:44:25.000Z",
     "url": "https://aws.amazon.com/security/security-bulletins/2026-103-aws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-102-aws/",
-    "title": "CVE-2026-84942: Stored XSS via Vega Expression Bypass in OpenSearch Dashboards",
-    "headline": "CVE-2026-84942: Stored XSS via Vega Expression Bypass in OpenSearch Dashboards",
-    "summary": "A stored cross‑site scripting vulnerability in OpenSearch Dashboards allows attackers to inject malicious Vega expressions that bypass input sanitization. CVE‑2026‑84942 exploits a parser logic bug, enabling unauthenticated script execution that can hijack user sessions. An official patch is available from Elastic; administrators should update OpenSearch Dashboards immediately and review input validation settings to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "publishedAt": "2026-10-23T17:43:59.000Z",
-    "url": "https://aws.amazon.com/security/security-bulletins/2026-102-aws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-101-aws/",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/2026-101-aws/",
-    "title": "CVE-2026-85787 Allows Data Modification Beyond Read-Only Scope in awslabs postgres-mcp-server",
-    "headline": "CVE-2026-85787 Allows Data Modification Beyond Read-Only Scope in awslabs postgres-mcp-server",
-    "summary": "CVE-2026-85787 reveals that the Amazon awslabs postgres-mcp-server SQL validation component fails to enforce disallowed input checks, permitting data modifications beyond the intended read-only scope. The root cause is an incomplete list of prohibited inputs, leading to potential unauthorized data alteration. AWS has issued a fix; users must update the server to prevent exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "publishedAt": "2026-10-23T17:43:25.000Z",
-    "url": "https://aws.amazon.com/security/security-bulletins/2026-101-aws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/fcc-bans-devices-huawei-surveillance-chips",
-    "sourceUrl": "https://therecord.media/fcc-bans-devices-huawei-surveillance-chips",
-    "title": "FCC Bans Two Devices Containing Huawei-Linked Surveillance Chips",
-    "headline": "FCC Bans Two Devices Containing Huawei-Linked Surveillance Chips",
-    "summary": "The FCC has banned the import and sale of a wireless video transmitter and a dashboard camera that contain surveillance chips manufactured by Huawei subsidiary HiSilicon. The devices were identified as part of a broader effort to restrict the use of Chinese-made hardware in critical security applications, citing national security concerns. The ban applies to all U.S. importers and distributors.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-23T17:28:00.000Z",
-    "url": "https://therecord.media/fcc-bans-devices-huawei-surveillance-chips",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
-    "title": "AI‑Generated Attack Campaigns Target Hundreds of Sites",
-    "headline": "AI‑Generated Attack Campaigns Target Hundreds of Sites",
-    "summary": "AI tools are producing large‑scale attack campaigns that target 105 websites using open‑weight models, while public models have achieved full domain control for $12. The attacks exploit automated credential stuffing and domain takeover vectors, causing widespread service disruptions. Vendors should monitor for anomalous login patterns and enforce multi‑factor authentication to mitigate these low‑cost attacks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-23T17:26:59.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
     "additionalSources": []
   }
 ]
