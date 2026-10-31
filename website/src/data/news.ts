@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "attackers-chain-three-ivanti-flaws-for-root-access-d58862",
+    "title": "Attackers Chain Three Ivanti Flaws for Root Access",
+    "summary": "Attackers chained three vulnerabilities in Ivanti Connect Secure to gain unauthenticated root access. The flaws include 'CVE-2026-111357', a missing authentication bug with CVSS 8.8, and two other undisclosed weaknesses exploited in the wild, enabling privilege escalation without credentials. CISA added the issues to its KEV catalog; Ivanti has released patches, and security teams should apply them immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+    "publishedAt": "2026-10-31T08:27:43.000Z",
+    "cves": [
+      "CVE-2026-111357"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-chain-three-ivanti-flaws-for-root-access",
+      "article-d58862",
+      "d58862"
+    ]
+  },
+  {
     "slug": "f5-big-ip-apm-vulnerability-exposed-to-active-expl-72c186",
     "title": "F5 BIG-IP APM Vulnerability Exposed to Active Exploitation",
     "summary": "F5 disclosed a critical flaw in its BIG‑IP APM product that has been actively exploited in the wild. The vulnerability allows attackers to bypass authentication controls, potentially gaining unauthorized administrative access to network devices. F5 has released a patch; security teams must apply it immediately and verify configuration hardening to prevent further exploitation.",
@@ -2776,6 +2795,66 @@ export const news: NewsBrief[] = [
       "article-44b9df",
       "44b9df",
       "kroll-breach-analysis-reveals-data-stored-by-unknown-third-p"
+    ]
+  },
+  {
+    "slug": "alpine-ilx-f511-buffer-overflow-enables-remote-cod-6f3c9b",
+    "title": "Alpine iLX-F511 Buffer Overflow Enables Remote Code Execution",
+    "summary": "A stack-based buffer overflow in Alpine iLX-F511's Android Auto Connection Handler allows physically present attackers to execute arbitrary code. The flaw, identified as 'CVE-2026-118609', has a CVSS score of 6.8 and does not require authentication, enabling local privilege escalation. Security teams should apply the vendor's patch or disable the vulnerable component to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-827/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118609"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "alpine-ilx-f511-buffer-overflow-enables-remote-cod",
+      "article-6f3c9b",
+      "6f3c9b",
+      "alpine-ilx-f511-buffer-overflow-enables-remote-code-executio"
+    ]
+  },
+  {
+    "slug": "alpine-ilx-f511-bluetooth-read-leak-exposes-sensit-6f3c9b",
+    "title": "Alpine iLX-F511 Bluetooth Read Leak Exposes Sensitive Data",
+    "summary": "An out-of-bounds read in Alpine iLX-F511's libanwbtstack.so allows network-adjacent attackers to disclose sensitive information in affected installations. The vulnerability, 'CVE-2026-118608', requires pairing a malicious Bluetooth device and has a CVSS score of 3.5, indicating low exploitation risk. Security teams should update the firmware or block Bluetooth pairing to prevent data leakage.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-826/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118608"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "alpine-ilx-f511-bluetooth-read-leak-exposes-sensit",
+      "article-6f3c9b",
+      "6f3c9b",
+      "alpine-ilx-f511-bluetooth-read-leak-exposes-sensitive-data"
+    ]
+  },
+  {
+    "slug": "alpine-ilx-f511-diagapp-command-injection-enables-6f3c9b",
+    "title": "Alpine iLX-F511 diagapp Command Injection Enables Code Execution",
+    "summary": "A command injection flaw in Alpine iLX-F511's diagapp permits physically present attackers to run arbitrary commands in affected devices. The vulnerability, identified as 'CVE-2026-118607', has a CVSS score of 6.8 and does not require authentication, allowing local privilege escalation. Apply the vendor's patch or disable diagapp to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-825/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118607"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "alpine-ilx-f511-diagapp-command-injection-enables",
+      "article-6f3c9b",
+      "6f3c9b",
+      "alpine-ilx-f511-diagapp-command-injection-enables-code-execu"
     ]
   },
   {
@@ -6413,84 +6492,6 @@ export const news: NewsBrief[] = [
       "article-21b8af",
       "21b8af",
       "chinese-threat-actors-weaponize-artex-ai-tool-in-connectwise"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-release-for-friday-october-23rd-2026-57dd7d",
-    "title": "ISC Stormcast Release for Friday, October 23rd, 2026",
-    "summary": "The SANS Internet Storm Center released its weekly ISC Stormcast for Friday, October 23rd, 2026, providing a curated overview of emerging cyber threats and trends observed during the week. The report aggregates real‑time alerts, malware activity, and vulnerability disclosures from global threat feeds. Security teams can use the summary to prioritize defensive measures and update threat intelligence repositories.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/33448",
-    "publishedAt": "2026-10-23T10:25:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-release-for-friday-october-23rd-2026",
-      "article-57dd7d",
-      "57dd7d"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-php-security-update-for-rhel-10-0-37e4fc",
-    "title": "Red Hat releases PHP security update for RHEL 10.0 EUS",
-    "summary": "Red Hat released a security update for PHP on Enterprise Linux 10.0 Extended Update Support, addressing a flaw that could allow unauthorized code execution. The flaw, rated Important by Red Hat Product Security, carries a CVSS base score listed in the CVE references. Users should apply the update immediately to mitigate potential exploitation; no workaround is provided.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88561",
-    "publishedAt": "2026-10-23T10:00:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-php-security-update-for-rhel-10-0",
-      "article-37e4fc",
-      "37e4fc",
-      "red-hat-releases-php-security-update-for-rhel-10-0-eus"
-    ]
-  },
-  {
-    "slug": "attackers-exploit-third-arista-vco-zero-day-in-fou-7f0770",
-    "title": "Attackers Exploit Third Arista VCO Zero-Day in Four Months",
-    "summary": "Attackers have exploited a third‑party Arista VCO zero‑day SQL injection flaw, gaining privileged internal functionality and operator privileges across multiple deployments. The critical vulnerability allows unauthenticated remote code execution via crafted SQL queries and has been actively leveraged in the wild for over four months. Arista has issued a patch; security teams should apply it immediately and disable exposed interfaces.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
-    "publishedAt": "2026-10-23T09:58:34.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
-      }
-    ],
-    "aliases": [
-      "attackers-exploit-third-arista-vco-zero-day-in-fou",
-      "article-7f0770",
-      "7f0770",
-      "attackers-exploit-third-arista-vco-zero-day-in-four-months"
-    ]
-  },
-  {
-    "slug": "critical-flaw-in-pillow-image-library-enables-os-c-334e72",
-    "title": "Critical Flaw in Pillow Image Library Enables OS Command Execution",
-    "summary": "A critical flaw in Pillow lets attackers execute OS commands by crafting an EPS image that specifies a file name. The vulnerability, CVE-2026-112900, occurs because Pillow passes the file name directly to Ghostscript without validation, enabling remote code execution. Pillow released patch 10.4.0; users should upgrade immediately or disable EPS support to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
-    "publishedAt": "2026-10-23T09:36:00.000Z",
-    "cves": [
-      "CVE-2026-112900"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-flaw-in-pillow-image-library-enables-os-c",
-      "article-334e72",
-      "334e72",
-      "critical-flaw-in-pillow-image-library-enables-os-command-exe"
     ]
   }
 ];

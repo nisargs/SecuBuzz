@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 08:51:49 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 09:46:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Attackers Chain Three Ivanti Flaws for Root Access</title>
+      <link>https://secubuzz.com/news/attackers-chain-three-ivanti-flaws-for-root-access-d58862</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-chain-three-ivanti-flaws-for-root-access-d58862</guid>
+      <description><![CDATA[Attackers chained three vulnerabilities in Ivanti Connect Secure to gain unauthenticated root access. The flaws include 'CVE-2026-111357', a missing authentication bug with CVSS 8.8, and two other undisclosed weaknesses exploited in the wild, enabling privilege escalation without credentials. CISA added the issues to its KEV catalog; Ivanti has released patches, and security teams should apply them immediately.]]></description>
+      <pubDate>Sat, 31 Oct 2026 08:27:43 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>F5 BIG-IP APM Vulnerability Exposed to Active Exploitation</title>
       <link>https://secubuzz.com/news/f5-big-ip-apm-vulnerability-exposed-to-active-expl-72c186</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[A clandestine relay service installs OpenAI Codex and Anthropic Claude on corporate machines, redirecting all prompts, files, and tokens through controlled servers. The manipulation disables sandbox protections and exfiltrates enterprise data. Security teams should audit AI tool configurations, enforce strict network segmentation, and monitor outbound traffic for anomalous patterns.]]></description>
       <pubDate>Fri, 30 Oct 2026 08:50:24 GMT</pubDate>
       <source url="https://cybersecuritynews.com/unauthorized-openai-codex/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHEL 8.8 Kernel Update Addresses Important Vulnerabilities</title>
-      <link>https://secubuzz.com/news/rhel-8-8-kernel-update-addresses-important-vulnera-37d98f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhel-8-8-kernel-update-addresses-important-vulnera-37d98f</guid>
-      <description><![CDATA[Red Hat released a kernel update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications, addressing multiple security vulnerabilities. The advisory lists several CVEs with CVSS base scores, but the update is classified as Important, indicating a high risk of exploitation.]]></description>
-      <pubDate>Fri, 30 Oct 2026 07:39:36 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:92997">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
