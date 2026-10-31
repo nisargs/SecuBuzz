@@ -874,26 +874,36 @@ async function fetchFeed(feed) {
     `Fetching: ${feed.url}`,
   );
 
-  const response = await fetch(
-    feed.url,
-    {
-      headers: {
-        "User-Agent":
-          "SecuBuzz/1.0 RSS Reader",
-        Accept:
-          "application/rss+xml, application/xml, text/xml, */*",
+  const controller = new AbortController();
+  const timer = setTimeout(() => {
+    controller.abort(new Error(`Timeout fetching ${feed.name} after 12s`));
+  }, 12000);
+
+  let xml = "";
+  try {
+    const response = await fetch(
+      feed.url,
+      {
+        headers: {
+          "User-Agent":
+            "SecuBuzz/1.0 RSS Reader",
+          Accept:
+            "application/rss+xml, application/xml, text/xml, */*",
+        },
+        signal: controller.signal,
       },
-      signal: AbortSignal.timeout(12000),
-    },
-  );
-
-  if (!response.ok) {
-    throw new Error(
-      `HTTP ${response.status} ${response.statusText}`,
     );
-  }
 
-  const xml = await response.text();
+    if (!response.ok) {
+      throw new Error(
+        `HTTP ${response.status} ${response.statusText}`,
+      );
+    }
+
+    xml = await response.text();
+  } finally {
+    clearTimeout(timer);
+  }
 
   const items = extractRssItems(xml)
     .slice(0, ITEMS_PER_FEED)
@@ -1389,7 +1399,7 @@ async function requestGroq(
 
             stream: false,
           }),
-          signal: AbortSignal.timeout(45000),
+          signal: AbortSignal.timeout(20000),
         },
       );
     } catch (error) {
@@ -1690,7 +1700,7 @@ async function requestGemini(candidates) {
             maxOutputTokens: MAX_COMPLETION_TOKENS,
           },
         }),
-        signal: AbortSignal.timeout(45000),
+        signal: AbortSignal.timeout(20000),
       });
 
       if (!response.ok) {
@@ -1769,7 +1779,7 @@ async function requestOpenRouter(candidates) {
       temperature: 0.2,
       max_tokens: MAX_COMPLETION_TOKENS,
     }),
-    signal: AbortSignal.timeout(45000),
+    signal: AbortSignal.timeout(20000),
   });
 
   const responseText = await response.text();
