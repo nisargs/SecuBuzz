@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 06:47:21 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 07:51:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>F5 BIG-IP APM Vulnerability Exposed to Active Exploitation</title>
@@ -15,6 +15,15 @@
       <pubDate>Sat, 31 Oct 2026 06:43:54 GMT</pubDate>
       <source url="https://cert.europa.eu/publications/security-advisories/2026-013/">CERT-EU Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>WordPress RCE Vulnerability Targeted by 60,000 Attacks</title>
+      <link>https://secubuzz.com/news/wordpress-rce-vulnerability-targeted-by-60-000-att-999c16</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wordpress-rce-vulnerability-targeted-by-60-000-att-999c16</guid>
+      <description><![CDATA[Hackers targeted a WordPress Core remote code execution vulnerability during software updates, with 60,471 blocked attempts recorded by Wordfence in 24 hours. The flaw, identified as CVE-2026-101767, allows unauthenticated attackers to execute arbitrary code on affected sites, potentially compromising site integrity and data. WordPress released version 7.1.4 to address the issue; administrators should update immediately and monitor for suspicious activity.]]></description>
+      <pubDate>Sat, 31 Oct 2026 06:02:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/60000-attacks-targeting-wordpress/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>GitLab Patches Critical Unauthenticated RCE Flaw</title>
@@ -41,6 +50,15 @@
       <description><![CDATA[Citrix NetScaler ADC and Gateway suffered eight vulnerabilities, including two critical unauthenticated RCE flaws confirmed in the wild, with CVE-2026-88779 cited as a representative case. The flaws permit attackers to execute arbitrary code on exposed devices without authentication, potentially compromising all internet‑exposed NetScaler instances. Citrix released patches; security teams must apply updates immediately and conduct compromise assessments on exposed systems.]]></description>
       <pubDate>Sat, 31 Oct 2026 05:44:58 GMT</pubDate>
       <source url="https://cert.europa.eu/publications/security-advisories/2026-014/">CERT-EU Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Linux Kernel TCP Use-After-Free CVE Exploitable</title>
+      <link>https://secubuzz.com/news/linux-kernel-tcp-use-after-free-cve-exploitable-7f55d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-tcp-use-after-free-cve-exploitable-7f55d5</guid>
+      <description><![CDATA[AWS identified CVE-2026-98432, a use-after-free flaw in the Linux kernel IPv4 TCP handshake path affecting versions 4.4 and later. The flaw can trigger remote code execution during TCP connection establishment, posing a high risk to exposed services. Updated kernel packages for Amazon Linux 2 and 2023 are available; customers should apply patches and reboot, while managed services receive automatic updates.]]></description>
+      <pubDate>Sat, 31 Oct 2026 05:21:05 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
     </item>
     <item>
@@ -314,6 +332,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Trezor Alerts on Hardware Implant in CryptoBilis Wallets</title>
+      <link>https://secubuzz.com/news/trezor-alerts-on-hardware-implant-in-cryptobilis-w-5bae48</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trezor-alerts-on-hardware-implant-in-cryptobilis-w-5bae48</guid>
+      <description><![CDATA[Trezor Safe 5 wallets from CryptoBilis reportedly include an extra circuit board that sends recovery phrases over mobile networks. The implant risks credential theft, exposing users to unauthorized access of crypto holdings, though Trezor has not examined it. Owners should move funds to new wallets with fresh recovery phrases and monitor for suspicious activity.]]></description>
+      <pubDate>Fri, 30 Oct 2026 12:21:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>WordPress Race Condition Enables Unauthenticated Remote Code Execution</title>
       <link>https://secubuzz.com/news/wordpress-race-condition-enables-unauthenticated-r-2df166</link>
       <guid isPermaLink="true">https://secubuzz.com/news/wordpress-race-condition-enables-unauthenticated-r-2df166</guid>
@@ -429,33 +456,6 @@
       <pubDate>Fri, 30 Oct 2026 06:37:42 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:92993">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Scammers Rebuild Fake Shopping Sites Rapidly</title>
-      <link>https://secubuzz.com/news/scammers-rebuild-fake-shopping-sites-rapidly-3347c6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scammers-rebuild-fake-shopping-sites-rapidly-3347c6</guid>
-      <description><![CDATA[Scammers rapidly rebuild counterfeit .shop domains after takedowns, deploying identical HTML, JavaScript, and payment forms to harvest card data. The operation targets retail and ticketing sites, funneling captured credentials to a single collection backend. Security teams should monitor domain registrations and block traffic to known malicious IPs to mitigate card‑number theft.]]></description>
-      <pubDate>Fri, 30 Oct 2026 05:30:26 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ISC Stormcast Released for Friday 30 Oct 2026</title>
-      <link>https://secubuzz.com/news/isc-stormcast-released-for-friday-30-oct-2026-57dd7e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-released-for-friday-30-oct-2026-57dd7e</guid>
-      <description><![CDATA[ISC released its Friday 30 October 2026 stormcast, summarizing global threat activity. The briefing covered emerging malware campaigns, phishing trends, and infrastructure attacks observed during the week, offering analysts a consolidated view of the threat landscape. Subscribers can access the full podcast and related threat data via the ISC website for immediate situational awareness.]]></description>
-      <pubDate>Fri, 30 Oct 2026 03:30:17 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33472">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>VMware Releases Patch for ESX Zero-Day Flaw</title>
-      <link>https://secubuzz.com/news/vmware-releases-patch-for-esx-zero-day-flaw-ea0db6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vmware-releases-patch-for-esx-zero-day-flaw-ea0db6</guid>
-      <description><![CDATA[A zero‑day flaw in VMware ESX allows remote attackers to execute arbitrary code via a malformed configuration file. The vulnerability, identified as CVE‑2026‑41709, has a CVSS score of 9.5 and is actively exploitable without authentication, potentially compromising virtualized environments. VMware has released an ESX patch; security teams should apply the update immediately and monitor for anomalous configuration changes.]]></description>
-      <pubDate>Fri, 30 Oct 2026 01:37:04 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/china-linked-hackers-exploit-vmware-esx-zero-day-cisa-w">CyberNews AI</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

@@ -13,6 +13,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/60000-attacks-targeting-wordpress/",
+    "sourceUrl": "https://cybersecuritynews.com/60000-attacks-targeting-wordpress/",
+    "title": "WordPress RCE Vulnerability Targeted by 60,000 Attacks",
+    "headline": "WordPress RCE Vulnerability Targeted by 60,000 Attacks",
+    "summary": "Hackers targeted a WordPress Core remote code execution vulnerability during software updates, with 60,471 blocked attempts recorded by Wordfence in 24 hours. The flaw, identified as CVE-2026-101767, allows unauthenticated attackers to execute arbitrary code on affected sites, potentially compromising site integrity and data. WordPress released version 7.1.4 to address the issue; administrators should update immediately and monitor for suspicious activity.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-31T06:02:41.000Z",
+    "url": "https://cybersecuritynews.com/60000-attacks-targeting-wordpress/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cert.europa.eu/publications/security-advisories/2026-019/",
     "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-019/",
     "title": "GitLab Patches Critical Unauthenticated RCE Flaw",
@@ -49,6 +62,19 @@
     "source": "CERT-EU Security Advisories",
     "publishedAt": "2026-10-31T05:44:58.809Z",
     "url": "https://cert.europa.eu/publications/security-advisories/2026-014/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
+    "title": "Linux Kernel TCP Use-After-Free CVE Exploitable",
+    "headline": "Linux Kernel TCP Use-After-Free CVE Exploitable",
+    "summary": "AWS identified CVE-2026-98432, a use-after-free flaw in the Linux kernel IPv4 TCP handshake path affecting versions 4.4 and later. The flaw can trigger remote code execution during TCP connection establishment, posing a high risk to exposed services. Updated kernel packages for Amazon Linux 2 and 2023 are available; customers should apply patches and reboot, while managed services receive automatic updates.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-10-31T05:21:05.000Z",
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
     "additionalSources": []
   },
   {
@@ -464,6 +490,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+    "title": "Trezor Alerts on Hardware Implant in CryptoBilis Wallets",
+    "headline": "Trezor Alerts on Hardware Implant in CryptoBilis Wallets",
+    "summary": "Trezor Safe 5 wallets from CryptoBilis reportedly include an extra circuit board that sends recovery phrases over mobile networks. The implant risks credential theft, exposing users to unauthorized access of crypto holdings, though Trezor has not examined it. Owners should move funds to new wallets with fresh recovery phrases and monitor for suspicious activity.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-30T12:21:56.000Z",
+    "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
     "sourceUrl": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
     "title": "WordPress Race Condition Enables Unauthenticated Remote Code Execution",
@@ -732,6 +771,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybernewsai.com/blog/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoon",
+    "sourceUrl": "https://cybernewsai.com/blog/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoon",
+    "title": "Cisco SD‑WAN Zero‑Day CVE‑2026‑20127 Exploit",
+    "headline": "Cisco SD‑WAN Zero‑Day CVE‑2026‑20127 Exploit",
+    "summary": "Cisco SD‑WAN devices are vulnerable to a zero‑day flaw identified as CVE‑2026‑20127, enabling attackers to compromise enterprise networks. The vulnerability permits remote code execution via malformed telemetry packets and requires network access to the SD‑WAN controller. Cisco has released a patch; administrators should apply it immediately or enable the provided detection rules to monitor suspicious traffic.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T23:23:10.000Z",
+    "url": "https://cybernewsai.com/blog/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoon",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
     "title": "Binance Investigates $5.8B Crypto Theft",
@@ -979,6 +1031,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+    "title": "Siemens Mendix SAML Module Authentication Bypass CVE",
+    "headline": "Siemens Mendix SAML Module Authentication Bypass CVE",
+    "summary": "Siemens disclosed an authentication bypass in its Mendix SAML module, allowing unauthenticated attackers to replay valid SAML assertions and gain unauthorized access. The flaw, identified as CVE-2026-89209, has a CVSS score of 6.8 and could expose critical manufacturing and IT infrastructure worldwide. Siemens released updated versions for Mendix 9, 10, and 11; users should upgrade immediately to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-10-29T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
     "title": "Hitachi Energy CoreTec OS Command Injection Vulnerability",
@@ -1057,6 +1122,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+    "title": "Cisco ASA VPN Flaw Exploited in Wild",
+    "headline": "Cisco ASA VPN Flaw Exploited in Wild",
+    "summary": "Cisco released patches for a high-severity flaw in ASA and FTD VPN software, tracked as CVE-2026-76418, which attackers exploited in the wild. The vulnerability, rated 8.6 on CVSS, permits unauthenticated remote attackers to crash firewalls, potentially disrupting network connectivity. Cisco issued emergency patches; administrators should apply them immediately and monitor firewall logs for abnormal activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-29T10:44:46.000Z",
+    "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
     "sourceUrl": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
     "title": "NIK C2: AI-Enabled Command‑and‑Control Framework",
@@ -1080,6 +1158,45 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-29T06:22:33.000Z",
     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-837/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-837/",
+    "title": "Linux Kernel XFRM Use-After-Free Exploit",
+    "headline": "Linux Kernel XFRM Use-After-Free Exploit",
+    "summary": "A use‑after‑free flaw in the Linux Kernel XFRM subsystem permits local attackers to gain root privileges on affected installations. The vulnerability, identified as CVE‑2026‑98231, has a CVSS score of 7.8 and requires the attacker to first execute low‑privileged code before triggering the use‑after‑free. Kernel maintainers released patch 6.6.1‑rc1; admins should apply it or use the work‑around.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-837/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-836/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-836/",
+    "title": "Linux Kernel CIFS Use-After-Free Exploit",
+    "headline": "Linux Kernel CIFS Use-After-Free Exploit",
+    "summary": "A use‑after‑free bug in the Linux Kernel CIFS file system allows local attackers to elevate privileges on vulnerable systems. CVE‑2026‑72315 carries a CVSS score of 7.2 and requires the attacker to first run high‑privileged code before exploiting the memory corruption. Kernel developers have issued patch 6.5.12‑rc2; administrators should update or apply the provided work‑around to prevent privilege escalation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-836/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-835/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-835/",
+    "title": "Linux Kernel HIDPP Use-After-Free Exploit",
+    "headline": "Linux Kernel HIDPP Use-After-Free Exploit",
+    "summary": "A use‑after‑free flaw in the Linux Kernel Logitech HIDPP protocol handler enables local attackers to gain root privileges on affected systems. CVE‑2026‑93826 is rated CVSS 7.8 and requires the attacker to first execute low‑privileged code before triggering the memory corruption. Kernel maintainers released patch 6.6.0‑rc3; users should apply the update or use the documented work‑around to block privilege escalation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-835/",
     "additionalSources": []
   },
   {
@@ -1205,6 +1322,32 @@
     "source": "CyberNews AI",
     "publishedAt": "2026-10-29T00:50:37.000Z",
     "url": "https://cybernewsai.com/blog/keystone-to-destroy-18-835-hardware-wallets-after-hacke",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/shinyhunters-exploited-oracle-peoplesoft-zero-day-turns",
+    "sourceUrl": "https://cybernewsai.com/blog/shinyhunters-exploited-oracle-peoplesoft-zero-day-turns",
+    "title": "Oracle PeopleSoft: Patch ShinyHunters Zero-Day Flaw",
+    "headline": "Oracle PeopleSoft: Patch ShinyHunters Zero-Day Flaw",
+    "summary": "Oracle PeopleSoft faces a zero‑day flaw, CVE-2026-35273, that can be exploited via vulnerable input handling in enterprise environments. The vulnerability allows attackers to execute arbitrary code without authentication, as demonstrated by publicly available telemetry and detection rules. Oracle recommends applying the latest patch immediately and monitoring logs for anomalous activity to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T00:50:00.000Z",
+    "url": "https://cybernewsai.com/blog/shinyhunters-exploited-oracle-peoplesoft-zero-day-turns",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/anthropic-s-unreleased-ai-model-chains-flaws-into-worki",
+    "sourceUrl": "https://cybernewsai.com/blog/anthropic-s-unreleased-ai-model-chains-flaws-into-worki",
+    "title": "Autonomous AI Exploits: Defend Against Zero‑Day Agents",
+    "headline": "Autonomous AI Exploits: Defend Against Zero‑Day Agents",
+    "summary": "A zero‑day flaw, CVE-2026-33096, targets autonomous AI components in enterprise systems, enabling remote code execution. The defect permits attackers to inject malicious scripts through unvalidated AI input, with public telemetry indicating active exploitation and monitoring system logs for anomalous behavior. Patch the affected AI modules immediately and enforce strict input validation to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T00:49:43.000Z",
+    "url": "https://cybernewsai.com/blog/anthropic-s-unreleased-ai-model-chains-flaws-into-worki",
     "additionalSources": []
   },
   {
@@ -1988,6 +2131,19 @@
     "source": "The Record",
     "publishedAt": "2026-10-27T20:40:00.000Z",
     "url": "https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
+    "title": "SBOMs Insufficient for Supply Chain Attack Visibility",
+    "headline": "SBOMs Insufficient for Supply Chain Attack Visibility",
+    "summary": "The Shai‑Hulud supply chain attack demonstrated that static SBOMs fail to expose the full extent of compromised code. Defenders require real‑time visibility into production code and affected services to detect and remediate such compromises effectively. Adopting continuous monitoring and dynamic SBOM generation can bridge the gap between static artifacts and live threat detection.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-27T19:58:06.000Z",
+    "url": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
     "additionalSources": []
   },
   {
@@ -4534,162 +4690,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-23T07:54:47.000Z",
     "url": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_0483554600.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_0483554600.html",
-    "title": "Chrome 157 for Android Released to Small User Segment",
-    "headline": "Chrome 157 for Android Released to Small User Segment",
-    "summary": "Chrome 157 (157.0.8103.14) for Android has been released to a small percentage of users via Google Play, marking the latest stable update. The release emphasizes stability and performance enhancements, with no new security vulnerabilities disclosed in the changelog or Git log. Users should install the update when it becomes available; no additional patches or workarounds are required at this time.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-23T07:47:07.132Z",
-    "url": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_0483554600.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
-    "sourceUrl": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
-    "title": "Iranian APT Prince of Persia Deploys US-Based C&C Server",
-    "headline": "Iranian APT Prince of Persia Deploys US-Based C&C Server",
-    "summary": "Prince of Persia APT established a Tornado command-and-control server on a U.S. shared hosting platform, marking its first U.S. presence since 2016. The deployment leverages standard HTTP/HTTPS traffic, enabling remote command execution without requiring privileged access. Security teams should monitor domain registrations and block traffic to the identified IP ranges to mitigate potential command-and-control communications.",
-    "category": "NATION_STATE",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-23T06:39:29.000Z",
-    "url": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/emergency-java-update/",
-    "sourceUrl": "https://cybersecuritynews.com/emergency-java-update/",
-    "title": "Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability",
-    "headline": "Oracle Issues Emergency Java Update for Critical 9.1 HTTPS Trust Vulnerability",
-    "summary": "CVE‑2026‑91403 corrupts Java’s HTTPS trust chain, enabling attackers to forge intermediate certificates against Oracle Java SE and GraalVM. With a CVSS 3.1 score of 9.1, the flaw is actively exploitable and can lead to remote code execution. Oracle released an emergency patch blocking eMudhra certificates; apply immediately and verify trust settings.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T06:01:47.000Z",
-    "url": "https://cybersecuritynews.com/emergency-java-update/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview/",
-    "title": "Google Cloud Adds OpenAI GPT-6 Models to Marketplace",
-    "headline": "Google Cloud Adds OpenAI GPT-6 Models to Marketplace",
-    "summary": "Google Cloud has introduced private preview access to OpenAI GPT-6 models for selected business customers via its marketplace. The offering includes GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna, positioned as lower‑cost professional and everyday use options. Usage will appear on a single Google Cloud invoice and count toward existing cloud spending commitments, with no impact on data training policies.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-23T06:00:31.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/23/google-cloud-openai-models-private-preview/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
-    "title": "Drone Program Compliance Interview Highlights Common Gaps",
-    "headline": "Drone Program Compliance Interview Highlights Common Gaps",
-    "summary": "A drone program compliance interview reveals common gaps in public safety agencies' handling of flight logs, video, and control software. Inadequate chain‑of‑custody and spreadsheet logs expose agencies to data integrity risks. Security teams should enforce audit trails, publish activity through secure portals, and replace logs with tamper‑evident digital records to meet compliance.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-23T05:30:25.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/23/nick-donarski-rotorlab-drone-program-compliance/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
-    "title": "PHP2Shell Vulnerability Exploitation Obstacles Limit Immediate Widespread Use",
-    "headline": "PHP2Shell Vulnerability Exploitation Obstacles Limit Immediate Widespread Use",
-    "summary": "A PHP2Shell vulnerability in PHP web applications enables attackers to upload malicious code via file upload endpoints. However, obstacles such as input validation, server configuration, and lack of public exploit code constrain immediate weaponization and widespread exploitation. Security teams should enforce strict upload policies, apply vendor patches, and monitor for anomalous file activity to mitigate potential compromise.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-10-23T05:00:00.000Z",
-    "url": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-constrain-exploitation/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/",
-    "title": "Falcon Guardian Enhances AI Agent Security Through Monitoring and Isolation",
-    "headline": "Falcon Guardian Enhances AI Agent Security Through Monitoring and Isolation",
-    "summary": "Falcon Guardian protects AI agents by monitoring and controlling their data access and execution environments. The solution intercepts malicious payloads, enforces policy compliance, and isolates compromised agents to prevent lateral movement. Organizations should integrate Falcon Guardian into their AI workflows, apply the latest policy updates, and conduct regular security reviews to maintain resilience.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "publishedAt": "2026-10-23T05:00:00.000Z",
-    "url": "https://www.crowdstrike.com/en-us/blog/why-organizations-secure-ai-agents-with-falcon-guardian/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/beta-channel-update-for-chromeos_01676166270.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/beta-channel-update-for-chromeos_01676166270.html",
-    "title": "ChromeOS Beta Channel Updated to OS 16852.10.0 and Browser 157.0.8103.11",
-    "headline": "ChromeOS Beta Channel Updated to OS 16852.10.0 and Browser 157.0.8103.11",
-    "summary": "ChromeOS Beta channel received an OS update to version 16852.10.0 and browser build 157.0.8103.11, expanding support to most devices. The update includes bug fixes and stability improvements, with users encouraged to report issues via the ChromeOS communities or bug filing channels. No security vulnerabilities were disclosed, and the update is available immediately for all Beta users.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-23T04:38:41.146Z",
-    "url": "https://chromereleases.googleblog.com/2026/10/beta-channel-update-for-chromeos_01676166270.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
-    "title": "AI Adoption Drives Cybersecurity Workforce Reductions",
-    "headline": "AI Adoption Drives Cybersecurity Workforce Reductions",
-    "summary": "Organizations are cutting cybersecurity roles as they adopt AI, even while reporting shortages of the expertise needed to manage threats, according to Barracuda’s Cybersecurity Skills Gap Report. 56% have experienced professional workforce reductions linked to AI, evenly divided between entry-level and higher-level roles.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-23T04:30:39.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/23/barracuda-cybersecurity-career-development-report/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/",
-    "title": "Weekly Enterprise Security Solutions Roundup: Late October 2026",
-    "headline": "Weekly Enterprise Security Solutions Roundup: Late October 2026",
-    "summary": "Sweet Security released Virtual Patching, a one-click protection feature that safeguards running cloud and AI applications from specific vulnerabilities the moment they are identified, while AppGate, IDENTOS, and ThreatModeler introduced other security tools. The new capability allows security teams to enforce protection instantly while engineering develops permanent fixes.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-23T04:00:41.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/23/new-infosec-products-of-the-week-october-23-2026/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "sourceUrl": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "title": "PHP2Shell Bug Sparks Exploitation Attempts",
-    "headline": "PHP2Shell Bug Sparks Exploitation Attempts",
-    "summary": "The PHP2Shell bug, a PHP flaw enabling remote code execution, has spurred attempts against servers running vulnerable PHP versions. The flaw requires authenticated access and local file inclusion, with no confirmed zero‑day exploit in the wild yet. Until an official patch arrives, administrators should disable remote file uploads, enforce least‑privilege PHP execution, and monitor for anomalous file changes.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "publishedAt": "2026-10-23T04:00:00.000Z",
-    "url": "https://therecord.media/php-php2shell-exploitation-attempts-pocs",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
-    "title": "State Bank of India Breach Leaks Customer PII Data",
-    "headline": "State Bank of India Breach Leaks Customer PII Data",
-    "summary": "A customer PII data leak at State Bank of India exposed personal identifiers through an undisclosed breach channel. The leak potentially fuels underground markets, enabling malicious actors to trade sensitive information for financial gain. Bank officials should immediately conduct forensic investigations, notify affected customers, and apply data protection controls to mitigate further exposure.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-23T03:30:00.000Z",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
     "additionalSources": []
   }
 ]
