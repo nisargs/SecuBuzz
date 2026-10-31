@@ -1416,6 +1416,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:92492",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92492",
+    "title": "Red Hat Issues .NET 8.0 Security Update for RHEL9",
+    "headline": "Red Hat Issues .NET 8.0 Security Update for RHEL9",
+    "summary": "Red Hat released a .NET 8.0 update for Red Enterprise Linux 9, addressing multiple security bugs and enhancements. The advisory lists several CVEs with CVSS base scores, indicating high‑severity flaws that could allow remote code execution if exploited. Red Hat recommends applying the update immediately; no work‑arounds are provided, and the patch is available through the standard RHEL update channels.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T22:56:52.000Z",
+    "url": "https://access.redhat.com/errata/RHSA-2026:92492",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
     "title": "Binance Investigates $5.8B Crypto Theft",
@@ -1975,6 +1988,32 @@
     "additionalSources": []
   },
   {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-847/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-847/",
+    "title": "MLflow AI Gateway SSRF Exposes Information",
+    "headline": "MLflow AI Gateway SSRF Exposes Information",
+    "summary": "A server‑side request forgery flaw in MLflow AI Gateway allows authenticated attackers to trigger arbitrary outbound requests. CVE‑2026‑71211 carries a CVSS score of 7.7, indicating a high‑severity vulnerability that could lead to information disclosure if exploited. MLflow recommends applying the vendor‑issued patch or disabling the affected feature; no public exploit is known.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-847/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-846/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-846/",
+    "title": "MLflow Webhook SSRF Vulnerability Exposes Data",
+    "headline": "MLflow Webhook SSRF Vulnerability Exposes Data",
+    "summary": "An authenticated server‑side request forgery flaw in MLflow Webhook permits attackers to initiate arbitrary outbound requests. CVE‑2026‑64849 has a CVSS score of 6.8, classifying it as a medium‑severity vulnerability that could lead to information disclosure. MLflow advises applying the patch or disabling the webhook feature; no exploit has been reported.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-846/",
+    "additionalSources": []
+  },
+  {
     "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-834/",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-834/",
     "title": "Linux Kernel Integer Underflow Enables Local Privilege Escalation",
@@ -2201,6 +2240,19 @@
     "source": "CyberNews AI",
     "publishedAt": "2026-10-29T00:49:09.000Z",
     "url": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso",
+    "sourceUrl": "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso",
+    "title": "Microsoft Edge Sandbox Escape Vulnerability CVE‑2026‑45492",
+    "headline": "Microsoft Edge Sandbox Escape Vulnerability CVE‑2026‑45492",
+    "summary": "A sandbox escape flaw in Microsoft Edge, identified as CVE‑2026‑45492, allows attackers to break out of the browser process on affected enterprise systems. The vulnerability is a high‑severity flaw that could enable remote code execution if exploited, though no public exploit is currently documented. Microsoft urges users to apply the latest security update immediately; no workaround is available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T00:49:03.000Z",
+    "url": "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso",
     "additionalSources": []
   },
   {
@@ -4570,58 +4622,6 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-26T03:59:28.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:89747",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
-    "sourceUrl": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
-    "title": "Critical PHP2Shell Flaws Exploited in Bitcoin Challenge",
-    "headline": "Critical PHP2Shell Flaws Exploited in Bitcoin Challenge",
-    "summary": "A researcher exploited two critical PHP flaws to access a test server during a public Bitcoin challenge, demonstrating the vulnerabilities’ impact on web application security. The flaws allowed unauthenticated remote code execution, evidenced by the successful 19.28‑hour run and subsequent PoC release. A vendor patch is pending; security teams should monitor for updates and apply mitigations once available.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-26T03:41:52.000Z",
-    "url": "https://cybersecuritynews.com/php2shell-flaws-exploited/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
-    "sourceUrl": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
-    "title": "Gheist Attempts to Abuse Stolen GitHub Tokens via Secret‑Dumping Workflows",
-    "headline": "Gheist Attempts to Abuse Stolen GitHub Tokens via Secret‑Dumping Workflows",
-    "summary": "Gheist attempts to abuse stolen GitHub tokens by planting secret‑dumping workflows across reachable repositories. The attack exploits GitHub’s workflow permissions model, enabling credential exfiltration without a command‑and‑control server, and has been partially mitigated by recent platform security updates. Security teams should enforce least‑privilege workflow permissions, rotate compromised tokens, and apply GitHub’s security patches to block further Gheist deployments.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-25T17:55:33.000Z",
-    "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
-    "title": "Tailscale SSH Flaws Enable Root Escalation Across Network",
-    "headline": "Tailscale SSH Flaws Enable Root Escalation Across Network",
-    "summary": "A single compromised device on a Tailscale network can be leveraged to gain root access to other servers via SSH port forwarding, provided the target is permitted by the network’s access rules. The flaw allows an attacker to execute arbitrary commands on reachable hosts, potentially compromising critical infrastructure.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-25T17:44:09.000Z",
-    "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-    "title": "PHP2Shell Vulnerabilities Exploited Against European Government Entity",
-    "headline": "PHP2Shell Vulnerabilities Exploited Against European Government Entity",
-    "summary": "Threat actors exploited PHP2Shell flaws identified as CVE-2026-109618 and CVE-2026-109619 to compromise a European government system, retrieving password hashes and multi‑factor credentials within two hours. The vulnerabilities enable remote code execution through unsanitized input in PHP applications, allowing attackers to elevate privileges and exfiltrate data.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-25T17:19:46.000Z",
-    "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
     "additionalSources": []
   }
 ]

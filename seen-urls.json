@@ -3376,5 +3376,9 @@
   "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
   "https://www.crowdstrike.com/en-us/blog/when-ai-guardrails-expose-vulnerabilities/",
   "https://cert.europa.eu/publications/security-advisories/2026-015/",
-  "https://cert.europa.eu/publications/security-advisories/2026-012/"
+  "https://cert.europa.eu/publications/security-advisories/2026-012/",
+  "https://access.redhat.com/errata/RHSA-2026:92492",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-847/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-846/",
+  "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso"
 ]
