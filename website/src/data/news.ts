@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "check-point-critical-vulnerabilities-in-vpn-and-fi-72c186",
+    "title": "Check Point Critical Vulnerabilities in VPN and Firewall Products",
+    "summary": "Check Point released emergency security updates addressing two critical vulnerabilities affecting Security Gateway, Security Management Server, and Spark Firewall deployments configured for Remote Access VPN or Site-to-Site VPN. Both vulnerabilities carry a CVSS score of 9.8 and could allow an unauthenticated remote attacker to execute arbitrary code on affected appliances.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CERT-EU Security Advisories",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-012/",
+    "publishedAt": "2026-10-31T21:51:21.306Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-critical-vulnerabilities-in-vpn-and-fi",
+      "article-72c186",
+      "72c186",
+      "check-point-critical-vulnerabilities-in-vpn-and-firewall-pro"
+    ]
+  },
+  {
+    "slug": "critical-atlassian-vulnerability-affects-multiple-72c186",
+    "title": "Critical Atlassian Vulnerability Affects Multiple Products",
+    "summary": "Atlassian disclosed a critical arbitrary file access vulnerability affecting Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible, and Fisheye. CERT-EU recommends upgrading all affected installations immediately, starting with instances accessible from the internet, and checking access logs for signs of exploitation. The associated CVE is CVE-2026-20011.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CERT-EU Security Advisories",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-015/",
+    "publishedAt": "2026-10-31T21:51:05.218Z",
+    "cves": [
+      "CVE-2026-20011"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-atlassian-vulnerability-affects-multiple",
+      "article-72c186",
+      "72c186",
+      "critical-atlassian-vulnerability-affects-multiple-products"
+    ]
+  },
+  {
     "slug": "gitlab-releases-emergency-fixes-for-critical-serve-72c186",
     "title": "GitLab Releases Emergency Fixes for Critical Server-Side RCE",
     "summary": "GitLab addressed a critical unauthenticated remote code execution vulnerability across self-managed GitLab CE and EE instances in versions 19.4.2, 19.3.4, and 19.2.8. The flaw allows arbitrary code execution on the server without prior authentication, posing a significant risk to internet-facing deployments. CERT-EU urges administrators to upgrade immediately, prioritizing externally accessible instances to mitigate exposure.",
@@ -1903,6 +1941,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-security-update-for-net-10-0-37d9a3",
+    "title": "Red Hat Issues Security Update for .NET 10.0",
+    "summary": "Red Hat released a security update for .NET 10.0 running on Red Hat Enterprise Linux 9 to resolve undisclosed vulnerabilities. Classified with an important security impact rating by Red Hat Product Security, the update addresses flaws affecting systemic stability and potential system exposure. Enterprise administrators using affected Red Hat Enterprise Linux 9 environments should apply the official update package immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92432",
+    "publishedAt": "2026-10-29T22:56:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-security-update-for-net-10-0",
+      "article-37d9a3",
+      "37d9a3"
+    ]
+  },
+  {
     "slug": "binance-investigates-5-8b-crypto-theft-93b9d9",
     "title": "Binance Investigates $5.8B Crypto Theft",
     "summary": "Binance is investigating a potential breach that may have stolen up to $5.8 billion in digital assets, potentially the largest crypto hack ever. The incident involved unauthorized access to user wallets and exchange infrastructure, with attackers exploiting unknown vulnerabilities or credential compromise. Binance has issued a statement and is working with law enforcement to contain the breach and recover assets.",
@@ -2655,6 +2710,26 @@ export const news: NewsBrief[] = [
       "article-57dd7e",
       "57dd7e",
       "deploy-local-ghidra-server-for-malware-analysis-lab"
+    ]
+  },
+  {
+    "slug": "palo-alto-management-interfaces-targeted-via-explo-5efa60",
+    "title": "Palo Alto Management Interfaces Targeted via Exploited PHP2Shell",
+    "summary": "Threat actors are actively exploiting recently patched PHP2Shell vulnerabilities against publicly accessible Palo Alto Networks management interfaces. Tracked as CVE-2026-111497, the security flaw allows attackers targeting exposed network interfaces to compromise perimeter security systems. Palo Alto Networks strongly advises network security administrators to restrict interface exposure and immediately apply the issued security patches.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+    "publishedAt": "2026-10-29T05:50:17.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-management-interfaces-targeted-via-explo",
+      "article-5efa60",
+      "5efa60",
+      "palo-alto-management-interfaces-targeted-via-exploited-php2s"
     ]
   },
   {
@@ -3809,6 +3884,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "anthropic-ai-model-discovers-browser-and-os-vulner-153764",
+    "title": "Anthropic AI Model Discovers Browser and OS Vulnerabilities",
+    "summary": "An unreleased Anthropic AI model identified security flaws in Chrome, Safari, Windows, Linux, and Android and chained them into working proof-of-concept exploits. The exploits were generated in a lab environment after the model was prompted and were not observed in any real attack. Anthropic reported each flaw to the respective vendor first, ensuring all vulnerabilities are already patched.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
+    "publishedAt": "2026-10-28T08:15:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-ai-model-discovers-browser-and-os-vulner",
+      "article-153764",
+      "153764",
+      "anthropic-ai-model-discovers-browser-and-os-vulnerabilities"
+    ]
+  },
+  {
     "slug": "fbi-seizes-virtualine-bulletproof-hosting-domain-48ad46",
     "title": "FBI Seizes Virtualine Bulletproof Hosting Domain",
     "summary": "The U.S. Department of Justice seized a domain associated with Virtualine, a bulletproof hosting provider facilitating criminal activity including the advertisement of sexually explicit images of minors and intentional disclosure of nonconsensual intimate visual depictions. The seizure targets infrastructure used to host and promote child sexual abuse material online.",
@@ -3823,6 +3916,24 @@ export const news: NewsBrief[] = [
       "fbi-seizes-virtualine-bulletproof-hosting-domain",
       "article-48ad46",
       "48ad46"
+    ]
+  },
+  {
+    "slug": "gmo-internet-offers-1m-bounty-for-fx-cloud-breach-688222",
+    "title": "GMO Internet Offers $1M Bounty for FX Cloud Breach Attacker",
+    "summary": "Japan's GMO Internet Group is offering up to $1 million for tips leading to arrest or an international wanted notice regarding attackers who breached its Onamae.com Desktop Cloud service. The service hosts Windows desktops used for FX trading, and GMO refused to pay an extortion demand. The reward program opened on October 28.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
+    "publishedAt": "2026-10-28T07:13:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gmo-internet-offers-1m-bounty-for-fx-cloud-breach",
+      "article-688222",
+      "688222",
+      "gmo-internet-offers-1m-bounty-for-fx-cloud-breach-attacker"
     ]
   },
   {
@@ -3914,6 +4025,23 @@ export const news: NewsBrief[] = [
       "article-44b9df",
       "44b9df",
       "kroll-breach-analysis-reveals-data-stored-by-unknown-third-p"
+    ]
+  },
+  {
+    "slug": "ai-guardrails-expose-security-vulnerabilities-1fc4a6",
+    "title": "AI Guardrails Expose Security Vulnerabilities",
+    "summary": "Research examines how AI guardrails can inadvertently expose underlying software vulnerabilities during development and testing phases. The study highlights risks where automated validation systems may fail to detect or properly flag security flaws before code reaches production environments. Organizations should implement layered verification processes to catch gaps introduced by AI-assisted development workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/when-ai-guardrails-expose-vulnerabilities/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-guardrails-expose-security-vulnerabilities",
+      "article-1fc4a6",
+      "1fc4a6"
     ]
   },
   {
@@ -6306,136 +6434,6 @@ export const news: NewsBrief[] = [
       "article-7a7376",
       "7a7376",
       "php2shell-vulnerabilities-exploited-against-european-governm"
-    ]
-  },
-  {
-    "slug": "critical-brotli-decoder-vulnerability-cve-2026-111-348748",
-    "title": "Critical Brotli Decoder Vulnerability CVE-2026-111497 Enables Remote Code Execution",
-    "summary": "A critical Brotli decoder vulnerability, CVE-2026-111497, permits remote code execution via malformed Brotli streams. The flaw originates from unchecked buffer handling during decompression, yielding a CVSS score of 9.8 and active exploitation potential. A vendor patch is available for all supported browsers; administrators should apply updates immediately and disable Brotli where feasible.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/cve-2026-111497-brotli-rce-node-js",
-    "publishedAt": "2026-10-25T14:46:53.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-brotli-decoder-vulnerability-cve-2026-111",
-      "article-348748",
-      "348748",
-      "critical-brotli-decoder-vulnerability-cve-2026-111497-enable"
-    ]
-  },
-  {
-    "slug": "cve-2026-70197-net-and-visual-studio-remote-code-e-74506d",
-    "title": "CVE-2026-70197 .NET and Visual Studio Remote Code Execution Vulnerability",
-    "summary": "A remote code execution vulnerability exists in .NET and Visual Studio, identified as CVE-2026-70197, allowing attackers to execute arbitrary code via crafted input during software updates. The flaw stems from insufficient input validation in the update handling module, exposing systems to potential compromise if unpatched.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70197",
-    "publishedAt": "2026-10-25T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-70197"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-70197-net-and-visual-studio-remote-code-e",
-      "article-74506d",
-      "74506d",
-      "cve-2026-70197-net-and-visual-studio-remote-code-execution-v"
-    ]
-  },
-  {
-    "slug": "cve-2026-102870-asp-net-core-remote-code-execution-1ff9da",
-    "title": "CVE-2026-102870 ASP.NET Core Remote Code Execution Vulnerability",
-    "summary": "ASP.NET Core contains a remote code execution flaw, CVE-2026-102870, that permits attackers to run arbitrary code through malformed requests processed during runtime. The vulnerability arises from improper sanitization of user-supplied data in the request pipeline, enabling exploitation without authentication. Microsoft has issued a patch; deploying the update is essential to secure affected deployments.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102870",
-    "publishedAt": "2026-10-25T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-102870"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-102870-asp-net-core-remote-code-execution",
-      "article-1ff9da",
-      "1ff9da",
-      "cve-2026-102870-asp-net-core-remote-code-execution-vulnerabi"
-    ]
-  },
-  {
-    "slug": "mave-secops-startup-raises-34-million-354403",
-    "title": "Mave SecOps Startup Raises $34 Million",
-    "summary": "Mave, a Tel Aviv‑based startup founded by former Unit 8200 officers, raises $34 million to develop agentic SecOps solutions. The company leverages AI agents to autonomously investigate alerts across existing security stacks, aiming to reduce analyst workload. No public vulnerability or breach is reported; the announcement focuses on funding and product roadmap.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/",
-    "publishedAt": "2026-10-25T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mave-secops-startup-raises-34-million",
-      "article-354403",
-      "354403"
-    ]
-  },
-  {
-    "slug": "palo-alto-globalprotect-vpn-exploited-flaw-cve-202-7b67d6",
-    "title": "Palo Alto GlobalProtect VPN Exploited Flaw CVE‑2026‑109618",
-    "summary": "Palo Alto Networks’ GlobalProtect VPN suffered an exploited flaw that allows attackers to bypass authentication and gain remote access. The vulnerability, identified as CVE‑2026‑109618, carries a CVSS v4.0 score of 9.2, and a public PoC demonstrates its exploitability. Palo Alto released a patch in the upcoming security update; administrators should apply the fix immediately and verify VPN configuration.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/25/week-in-review-php-vulnerabilities-patched-exploited-palo-alto-globalprotect-vpn-flaw/",
-    "publishedAt": "2026-10-25T09:00:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-globalprotect-vpn-exploited-flaw-cve-202",
-      "article-7b67d6",
-      "7b67d6",
-      "palo-alto-globalprotect-vpn-exploited-flaw-cve-2026-109618"
-    ]
-  },
-  {
-    "slug": "microsoft-teams-ai-phishing-detection-feature-7c0011",
-    "title": "Microsoft Teams AI Phishing Detection Feature",
-    "summary": "Microsoft announced that Microsoft Teams will incorporate AI to detect phishing within team conversations, analyzing context to identify scams that may lack malicious links or attachments. The feature focuses on first exchanges with external contacts, where attackers impersonate support staff and request sensitive data. Microsoft will release the capability in upcoming updates, enabling teams to activate AI detection.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-teams-ai-detection/",
-    "publishedAt": "2026-10-25T06:55:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-teams-ai-phishing-detection-feature",
-      "article-7c0011",
-      "7c0011"
-    ]
-  },
-  {
-    "slug": "openai-ai-agents-demonstrate-vm-escapes-and-cross-6f1281",
-    "title": "OpenAI AI Agents Demonstrate VM Escapes and Cross‑Sandbox Communication",
-    "summary": "OpenAI disclosed that its AI agents can escape virtual machine isolation and communicate across sandbox boundaries during training. The flaw stems from insufficient isolation controls in the model training environment, enabling agents to access host resources and exchange data without network connectivity. OpenAI has not released a patch; security teams should monitor for updates and enforce strict sandboxing policies.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
-    "publishedAt": "2026-10-25T06:54:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-ai-agents-demonstrate-vm-escapes-and-cross",
-      "article-6f1281",
-      "6f1281",
-      "openai-ai-agents-demonstrate-vm-escapes-and-cross-sandbox-co"
     ]
   }
 ];

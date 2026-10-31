@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 21:44:44 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 21:52:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Check Point Critical Vulnerabilities in VPN and Firewall Products</title>
+      <link>https://secubuzz.com/news/check-point-critical-vulnerabilities-in-vpn-and-fi-72c186</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/check-point-critical-vulnerabilities-in-vpn-and-fi-72c186</guid>
+      <description><![CDATA[Check Point released emergency security updates addressing two critical vulnerabilities affecting Security Gateway, Security Management Server, and Spark Firewall deployments configured for Remote Access VPN or Site-to-Site VPN. Both vulnerabilities carry a CVSS score of 9.8 and could allow an unauthenticated remote attacker to execute arbitrary code on affected appliances.]]></description>
+      <pubDate>Sat, 31 Oct 2026 21:51:21 GMT</pubDate>
+      <source url="https://cert.europa.eu/publications/security-advisories/2026-012/">CERT-EU Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Critical Atlassian Vulnerability Affects Multiple Products</title>
+      <link>https://secubuzz.com/news/critical-atlassian-vulnerability-affects-multiple-72c186</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-atlassian-vulnerability-affects-multiple-72c186</guid>
+      <description><![CDATA[Atlassian disclosed a critical arbitrary file access vulnerability affecting Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible, and Fisheye. CERT-EU recommends upgrading all affected installations immediately, starting with instances accessible from the internet, and checking access logs for signs of exploitation. The associated CVE is CVE-2026-20011.]]></description>
+      <pubDate>Sat, 31 Oct 2026 21:51:05 GMT</pubDate>
+      <source url="https://cert.europa.eu/publications/security-advisories/2026-015/">CERT-EU Security Advisories</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>GitLab Releases Emergency Fixes for Critical Server-Side RCE</title>
       <link>https://secubuzz.com/news/gitlab-releases-emergency-fixes-for-critical-serve-72c186</link>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 30 Oct 2026 14:41:35 GMT</pubDate>
       <source url="https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Malicious Claude Extension Distributed via Cursor Marketplace Compromises Developers</title>
-      <link>https://secubuzz.com/news/malicious-claude-extension-distributed-via-cursor-cf1d91</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-claude-extension-distributed-via-cursor-cf1d91</guid>
-      <description><![CDATA[A malicious version of Anthropic’s Claude Code extension was distributed through Cursor’s marketplace, targeting up to 5,000 developers. The Trojanized extension allowed attackers to inject malicious code and install persistent SSH backdoors, compromising development workspaces and source repositories. Users must uninstall the extension immediately, disable it, and apply vendor patches to prevent exploitation.]]></description>
-      <pubDate>Fri, 30 Oct 2026 14:36:54 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Syrian Hacker Sentenced for Western Attacks</title>
-      <link>https://secubuzz.com/news/syrian-hacker-sentenced-for-western-attacks-5ca85b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/syrian-hacker-sentenced-for-western-attacks-5ca85b</guid>
-      <description><![CDATA[A Syrian hacker, known as “Th3Pr0,” was sentenced to 42 months in federal prison for orchestrating attacks on Western targets. The conspiracy was coordinated by aides of former President Bashar al‑Assad, linking the individual to state‑backed operations. The conviction underscores the legal consequences for actors involved in state‑sponsored cybercrime.]]></description>
-      <pubDate>Fri, 30 Oct 2026 14:24:00 GMT</pubDate>
-      <source url="https://therecord.media/syrian-electronic-army-hacker-sentenced-three-years">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
