@@ -33,7 +33,7 @@ const GEMINI_API_URL =
 
 const GEMINI_API_KEY = (process.env.GEMINI_API_KEY || "").trim().replace(/^["']|["']$/g, "");
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.8-flash";
 
 const OPENROUTER_API_URL =
   "https://openrouter.ai/api/v1/chat/completions";
@@ -1329,7 +1329,7 @@ async function requestGroq(
     "Sending selected candidates in ONE Groq request...",
   );
 
-  const candidateModels = [GROQ_MODEL, "llama-3.3-70b-versatile", "llama-3.1-8b-instant"].filter(
+  const candidateModels = [GROQ_MODEL, "llama-3.1-8b-instant"].filter(
     (m, idx, arr) => arr.indexOf(m) === idx,
   );
 
@@ -1379,6 +1379,8 @@ async function requestGroq(
             response_format: {
               type: "json_object",
             },
+
+            reasoning_format: "hidden",
 
             temperature: 0.2,
 
@@ -1497,8 +1499,8 @@ async function requestGroq(
         payload?.error?.message ||
         `Groq request failed with HTTP ${response.status}.`;
 
-      if (response.status === 400 && currentModel !== "llama-3.3-70b-versatile" && attempt < MAX_RATE_LIMIT_RETRIES) {
-        console.warn(`[Groq] ${currentModel} returned 400 (${message}). Retrying with llama-3.3-70b-versatile...`);
+      if (response.status === 400 && currentModel !== "llama-3.1-8b-instant" && attempt < MAX_RATE_LIMIT_RETRIES) {
+        console.warn(`[Groq] ${currentModel} returned 400 (${message}). Retrying with llama-3.1-8b-instant...`);
         continue;
       }
 
@@ -1655,7 +1657,7 @@ async function requestGemini(candidates) {
   const prompt = buildBatchPrompt(candidates);
   console.log(`Sending batch to Gemini AI fallback (${GEMINI_MODEL})...`);
 
-  const modelsToTry = [GEMINI_MODEL, "gemini-2.5-flash", "gemini-1.5-flash", "gemini-2.0-flash"].filter(
+  const modelsToTry = [GEMINI_MODEL, "gemini-3.8-flash", "gemini-3.5-flash", "gemini-3.0-flash"].filter(
     (m, idx, arr) => arr.indexOf(m) === idx,
   );
 
@@ -2014,7 +2016,7 @@ function extractSubjectAnchors(title, summary) {
 async function requestGroqContextComparison(storyA, storyB, prompt) {
   if (!GROQ_API_KEY) throw new Error("GROQ_API_KEY not configured");
 
-  const candidateModels = [GROQ_MODEL, "llama-3.3-70b-versatile", "llama-3.1-8b-instant"].filter(
+  const candidateModels = [GROQ_MODEL, "llama-3.1-8b-instant"].filter(
     (m, idx, arr) => arr.indexOf(m) === idx,
   );
 
@@ -2037,6 +2039,7 @@ async function requestGroqContextComparison(storyA, storyB, prompt) {
             { role: 'user', content: prompt }
           ],
           response_format: { type: 'json_object' },
+          reasoning_format: 'hidden',
           temperature: 0.1,
           max_completion_tokens: 1200
         }),
@@ -2077,7 +2080,7 @@ async function requestGroqContextComparison(storyA, storyB, prompt) {
 async function requestGeminiContextComparison(storyA, storyB, prompt) {
   if (!GEMINI_API_KEY) throw new Error("GEMINI_API_KEY not configured");
 
-  const candidateModels = [GEMINI_MODEL, "gemini-2.5-flash", "gemini-1.5-flash", "gemini-2.0-flash"].filter(
+  const candidateModels = [GEMINI_MODEL, "gemini-3.8-flash", "gemini-3.5-flash", "gemini-3.0-flash"].filter(
     (m, idx, arr) => arr.indexOf(m) === idx,
   );
 
