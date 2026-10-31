@@ -130,6 +130,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/teamviewer-security-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/teamviewer-security-flaw/",
+    "title": "TeamViewer Vulnerability Enables Remote Code Execution",
+    "headline": "TeamViewer Vulnerability Enables Remote Code Execution",
+    "summary": "TeamViewer’s CVE‑2026‑111585 flaw lets a malicious remote host crash the viewer and execute code on the technician’s machine during support. The flaw stems from improper handling of remote input streams, enabling unauthenticated code execution with a CVSS score of 8.8, rated High by TeamViewer. Apply the vendor patch or upgrade to the latest version and monitor for anomalous remote sessions.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-10-31T04:37:14.000Z",
+    "url": "https://cybersecuritynews.com/teamviewer-security-flaw/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply",
     "sourceUrl": "https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply",
     "title": "Polymarket Supply Chain Flaw CVE-2026-97229 Detected",
@@ -1429,6 +1442,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybernewsai.com/blog/adobe-fixes-8-critical-campaign-classic-flaws-allowing",
+    "sourceUrl": "https://cybernewsai.com/blog/adobe-fixes-8-critical-campaign-classic-flaws-allowing",
+    "title": "Adobe Campaign Classic RCE Vulnerability Requires Immediate Patch",
+    "headline": "Adobe Campaign Classic RCE Vulnerability Requires Immediate Patch",
+    "summary": "Adobe Campaign Classic suffers an RCE flaw that allows attackers to execute arbitrary code on affected servers. The vulnerability, CVE‑2026‑104351, is highlighted as a critical threat but lacks a publicly disclosed CVSS score or exploit details. Adobe recommends applying the latest security patch immediately and reviewing detection rules to monitor for suspicious activity.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T00:49:29.000Z",
+    "url": "https://cybernewsai.com/blog/adobe-fixes-8-critical-campaign-classic-flaws-allowing",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
     "sourceUrl": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
     "title": "PHP2Shell Exploit CVE-2026-109618 Enables RCE",
@@ -1439,6 +1465,19 @@
     "source": "CyberNews AI",
     "publishedAt": "2026-10-29T00:49:09.000Z",
     "url": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/volt-typhoon-used-covert-silent-train-network-in-four-z",
+    "sourceUrl": "https://cybernewsai.com/blog/volt-typhoon-used-covert-silent-train-network-in-four-z",
+    "title": "Volt Typhoon Zero-Day C2 Exploit CVE-2024-39717",
+    "headline": "Volt Typhoon Zero-Day C2 Exploit CVE-2024-39717",
+    "summary": "Volt Typhoon’s zero‑day C2 flaw, CVE‑2024‑39717, lets attackers hijack enterprise traffic and exfiltrate data. The flaw stems from improper validation of encrypted C2 packets, enabling unauthenticated remote code execution with a CVSS score of 9.2, and has been observed in the wild. Patches are available from vendors; security teams should apply updates and enable the provided detection rules immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T00:48:33.000Z",
+    "url": "https://cybernewsai.com/blog/volt-typhoon-used-covert-silent-train-network-in-four-z",
     "additionalSources": []
   },
   {
@@ -2061,6 +2100,45 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-28T05:00:19.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/28/kroll-third-party-data-breaches-insurance-claims-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-822/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-822/",
+    "title": "Alpine iLX‑F511 Buffer Overflow Enables Physical RCE",
+    "headline": "Alpine iLX‑F511 Buffer Overflow Enables Physical RCE",
+    "summary": "A stack‑based buffer overflow in Alpine iLX‑F511 Framework Service lets physically present attackers execute arbitrary code without authentication. CVE‑2026‑118604 carries a CVSS of 6.8, enabling remote code execution that could compromise device integrity and network traffic. Alpine released a patch addressing the overflow; apply it immediately and disable unused services to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-822/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-821/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-821/",
+    "title": "Alpine iLX‑F511 vCard Overflow Enables Bluetooth RCE",
+    "headline": "Alpine iLX‑F511 vCard Overflow Enables Bluetooth RCE",
+    "summary": "A stack‑based buffer overflow in Alpine iLX‑F511 vCard parsing lets attackers run arbitrary code via a malicious Bluetooth connection. CVE‑2026‑118603 scores 8.0 on CVSS, requires user interaction, and permits remote code execution that could compromise device control. Alpine released a patch for the vCard flaw; apply it promptly and disable Bluetooth services when unnecessary to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-821/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-820/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-820/",
+    "title": "Alpine iLX‑F511 Privilege Escalation via Fiv.System",
+    "headline": "Alpine iLX‑F511 Privilege Escalation via Fiv.System",
+    "summary": "A local privilege escalation flaw in Alpine iLX‑F511 Fiv.System allows attackers who have low‑privileged code execution to gain higher privileges. The vulnerability, CVE‑2026‑118602, carries a CVSS score of 7.8 and can compromise device control and data integrity if exploited. Alpine has issued a patch addressing the privilege escalation; apply it immediately and restrict local code execution privileges to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-820/",
     "additionalSources": []
   },
   {
@@ -4587,93 +4665,6 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-23T12:16:38.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:88669",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-    "title": "CISA Adds CVE-2026-110447 to Known Exploited Vulnerabilities Catalog",
-    "headline": "CISA Adds CVE-2026-110447 to Known Exploited Vulnerabilities Catalog",
-    "summary": "CISA has identified an active exploitation of CVE-2026-110447, a command‑injection flaw in Collabora Online’s built‑in CODE Server, targeting publicly exposed federal assets. The vulnerability permits unauthenticated remote code execution with full control over the host, and a public PoC demonstrates its feasibility. CISA urges federal agencies to apply the vendor patch immediately and to enforce BOD 26‑04 risk‑based update policies.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-23T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-    "additionalSources": [
-      {
-        "source": "CISA",
-        "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog"
-      }
-    ],
-    "cves": [
-      "CVE-2026-110447",
-      "CVE-2026-114625"
-    ]
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-android-update_01679408792.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-android-update_01679408792.html",
-    "title": "Chrome Dev 158 Released for Android",
-    "headline": "Chrome Dev 158 Released for Android",
-    "summary": "Chrome Dev 158 (158.0.8117.0) for Android has been released to Google Play, extending the developer channel for the browser. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates linked separately. Users reporting new issues should file bugs through official channels; no security patches or critical fixes are included.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-23T11:58:32.749Z",
-    "url": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-android-update_01679408792.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88662",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88662",
-    "title": "Red Hat ca-certificates Critical Security Update Released",
-    "headline": "Red Hat ca-certificates Critical Security Update Released",
-    "summary": "Red Hat Enterprise Linux 8.8 users face a critical vulnerability in the ca-certificates package, impacting SSL/TLS trust chains. The flaw allows attackers to subvert certificate validation, potentially enabling man‑in‑the‑middle attacks; a CVSS score of 9.8 reflects its high exploitability. Red Hat has issued an immediate patch; administrators must apply the update to restore secure certificate handling.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T11:50:45.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88662",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
-    "title": "Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay",
-    "headline": "Microsoft 365 Accounts Compromised at 79 Organizations via Session Replay",
-    "summary": "An attacker replayed stolen Microsoft 365 sign‑in sessions to access email accounts at 79 organizations, bypassing password authentication. The campaign, spanning July 14 to September 22, 2026, involved 497 successful sign‑ins and over 200,000 failed attempts, with attackers deploying hidden inbox rules to conceal activity.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-23T11:45:12.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88659",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88659",
-    "title": "Red Hat Releases PHP Security Update for RHEL 9.2 SAP Solutions",
-    "headline": "Red Hat Releases PHP Security Update for RHEL 9.2 SAP Solutions",
-    "summary": "A PHP security update has been issued for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, addressing multiple vulnerabilities with an Important impact rating. The update mitigates unspecified code execution flaws that could be triggered by misconfigured PHP installations. Red Hat has made the patch available through the standard update channels, and users should apply it immediately.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T11:44:40.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88659",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
-    "title": "Microsoft’s Project Perception Deploys Guardian Agents Amid AI Insider Threat Concerns",
-    "headline": "Microsoft’s Project Perception Deploys Guardian Agents Amid AI Insider Threat Concerns",
-    "summary": "Microsoft’s Project Perception introduces Guardian Agents to monitor and contain anomalous AI agents within its unified security stack. Experts caution that deploying agents to police other agents could amplify risk rather than mitigate it, highlighting challenges in autonomous threat containment. Security teams should evaluate the trade‑offs of AI‑driven containment and consider layered defenses to prevent escalation.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-23T11:38:28.000Z",
-    "url": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
     "additionalSources": []
   }
 ]
