@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 03:53:51 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 04:49:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SAP Patches Critical Kernel and NetWeaver Flaws</title>
+      <link>https://secubuzz.com/news/sap-patches-critical-kernel-and-netweaver-flaws-72c186</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-patches-critical-kernel-and-netweaver-flaws-72c186</guid>
+      <description><![CDATA[SAP released security updates addressing two critical vulnerabilities in its Kernel and NetWeaver Message Server, including CVE-2026-44756 (CVSS 10.0) and CVE-2026-58240 (CVSS 9.8), both remotely exploitable without authentication. The flaws, dubbed OVERPASS and S4GET by Onapsis Research Labs, can lead to arbitrary operating system command execution under the SAP service account.]]></description>
+      <pubDate>Sat, 31 Oct 2026 04:45:29 GMT</pubDate>
+      <source url="https://cert.europa.eu/publications/security-advisories/2026-011/">CERT-EU Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Polymarket Supply Chain Flaw CVE-2026-97229 Detected</title>
+      <link>https://secubuzz.com/news/polymarket-supply-chain-flaw-cve-2026-97229-detect-7660bd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/polymarket-supply-chain-flaw-cve-2026-97229-detect-7660bd</guid>
+      <description><![CDATA[A supply‑chain flaw identified in Polymarket’s platform, tracked as CVE-2026-97229, allows attackers to inject malicious code during deployment. The vulnerability arises from insufficient validation of third‑party components, enabling unauthorized code execution with potential data exfiltration; no active exploitation reported yet. Polymarket has released a patch and recommends applying the update immediately, alongside monitoring telemetry for anomalous deployment activity.]]></description>
+      <pubDate>Sat, 31 Oct 2026 02:01:13 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>WordPress RCE Flaw Sparks 63,000 Attack Attempts</title>
       <link>https://secubuzz.com/news/wordpress-rce-flaw-sparks-63-000-attack-attempts-7e216d</link>
@@ -17,13 +35,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>CVE-2026-98432: Linux Kernel Flaw Enables Unauthenticated Remote Root Access</title>
-      <link>https://secubuzz.com/news/cve-2026-98432-linux-kernel-flaw-enables-unauthent-636780</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-98432-linux-kernel-flaw-enables-unauthent-636780</guid>
-      <description><![CDATA[A critical Linux kernel vulnerability (CVE-2026-98432) allows unauthenticated attackers to gain root access via crafted kernel modules exploiting improper parameter validation. The flaw affects systems running Multipath TCP listeners and enables remote code execution with kernel privileges. Red Hat and other vendors have released patches requiring immediate deployment to prevent full system compromise.]]></description>
+      <title>CVE‑2026‑98432: Linux Kernel TCP Flaw Grants Unauthenticated Root RCE</title>
+      <link>https://secubuzz.com/news/cve-2026-98432-linux-kernel-tcp-flaw-grants-unauth-636780</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-98432-linux-kernel-tcp-flaw-grants-unauth-636780</guid>
+      <description><![CDATA[A critical Linux kernel vulnerability (CVE‑2026‑98432) lets unauthenticated attackers execute arbitrary code as root via flawed TCP handling. The flaw, rated CVSS 9.8/10, affects systems using Multipath TCP listeners and can be triggered without credentials. Vendors including Red Hat have released patches; immediate deployment is required to prevent full system compromise.]]></description>
       <pubDate>Fri, 30 Oct 2026 21:09:46 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/">BleepingComputer</source>
-      <category>CVE</category>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>DOJ Calls for Privacy Ombudsman on Character.AI Sales</title>
@@ -161,6 +179,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Microsoft Patches Visual Studio Spoofing Flaw</title>
+      <link>https://secubuzz.com/news/microsoft-patches-visual-studio-spoofing-flaw-1fe923</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-visual-studio-spoofing-flaw-1fe923</guid>
+      <description><![CDATA[CVE-2026-118147 is a spoofing vulnerability in Microsoft Visual Studio caused by improper certificate validation, enabling unauthorized network-based spoofing attacks. The flaw allows an attacker to bypass certificate trust mechanisms, potentially leading to man-in-the-middle or impersonation scenarios during development or deployment workflows.]]></description>
+      <pubDate>Fri, 30 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Outlook CVE-2026-70125 Allows Remote Code Execution</title>
       <link>https://secubuzz.com/news/microsoft-outlook-cve-2026-70125-allows-remote-cod-74506e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-outlook-cve-2026-70125-allows-remote-cod-74506e</guid>
@@ -186,6 +213,15 @@
       <pubDate>Fri, 30 Oct 2026 13:56:01 GMT</pubDate>
       <source url="https://cybersecuritynews.com/critical-drupal-commerce-vulnerability/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>FBI Seizes Domain of Bulletproof Host Virtualine</title>
+      <link>https://secubuzz.com/news/fbi-seizes-domain-of-bulletproof-host-virtualine-5c9d3e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-domain-of-bulletproof-host-virtualine-5c9d3e</guid>
+      <description><![CDATA[The FBI seized the domain of Virtualine, a bulletproof hosting provider that facilitated hack-for-hire services, ransomware operations, and infostealer infrastructure while accepting cryptocurrency payments. The takedown disrupted backend infrastructure used by multiple cybercriminal groups to launch attacks and host malicious payloads.]]></description>
+      <pubDate>Fri, 30 Oct 2026 13:36:12 GMT</pubDate>
+      <source url="https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/">SecurityWeek</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Kairos Botnet Exploits Passwordless Telnet on Linux</title>
@@ -260,6 +296,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>$2M+ Funds Stolen from Polymarket Traders</title>
+      <link>https://secubuzz.com/news/2m-funds-stolen-from-polymarket-traders-410533</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2m-funds-stolen-from-polymarket-traders-410533</guid>
+      <description><![CDATA[Polymarket traders lost over $2 million after a supply‑chain attack hijacked authenticated sessions via a malicious website‑monitoring tool. The attacker leveraged the compromised tool to inject code that redirected users’ funds to external wallets, exploiting Polymarket’s session management weaknesses. Polymarket has issued a security advisory, urging users to change passwords, enable two‑factor authentication, and monitor account activity for unauthorized transfers.]]></description>
+      <pubDate>Fri, 30 Oct 2026 09:41:36 GMT</pubDate>
+      <source url="https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>GitLab CVE-2026-97229 Enables Remote Code Execution on Alpine</title>
       <link>https://secubuzz.com/news/gitlab-cve-2026-97229-enables-remote-code-executio-b910c8</link>
       <guid isPermaLink="true">https://secubuzz.com/news/gitlab-cve-2026-97229-enables-remote-code-executio-b910c8</guid>
@@ -332,6 +377,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>VMware Releases Patch for ESX Zero-Day Flaw</title>
+      <link>https://secubuzz.com/news/vmware-releases-patch-for-esx-zero-day-flaw-ea0db6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vmware-releases-patch-for-esx-zero-day-flaw-ea0db6</guid>
+      <description><![CDATA[A zero‑day flaw in VMware ESX allows remote attackers to execute arbitrary code via a malformed configuration file. The vulnerability, identified as CVE‑2026‑41709, has a CVSS score of 9.5 and is actively exploitable without authentication, potentially compromising virtualized environments. VMware has released an ESX patch; security teams should apply the update immediately and monitor for anomalous configuration changes.]]></description>
+      <pubDate>Fri, 30 Oct 2026 01:37:04 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/china-linked-hackers-exploit-vmware-esx-zero-day-cisa-w">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Red Hat Updates java‑21‑openjdk for RHEL</title>
       <link>https://secubuzz.com/news/red-hat-updates-java-21-openjdk-for-rhel-37e504</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-java-21-openjdk-for-rhel-37e504</guid>
@@ -339,6 +393,15 @@
       <pubDate>Fri, 30 Oct 2026 00:33:04 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:88349">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CVE-2026-97229 Enables RCE in GitLab CI</title>
+      <link>https://secubuzz.com/news/cve-2026-97229-enables-rce-in-gitlab-ci-e142f3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-97229-enables-rce-in-gitlab-ci-e142f3</guid>
+      <description><![CDATA[CVE-2026-97229 exposes a remote code execution flaw in GitLab CI, allowing attackers to run arbitrary commands on runners. The flaw arises from improper handling of user‑supplied configuration files, with a CVSS score of 9.2 and public proof‑of‑concept exploits. GitLab released an urgent patch; admins should update to the latest version and disable legacy CI features until the fix is applied.]]></description>
+      <pubDate>Fri, 30 Oct 2026 00:15:33 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/attacker-tried-to-exploit-alpine-linux-s-gitlab-via-cvs">CyberNews AI</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Binance Investigates $5.8B Crypto Theft</title>
@@ -393,69 +456,6 @@
       <pubDate>Thu, 29 Oct 2026 22:09:24 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Polymarket Trading Suspended After Crypto‑Draining Breach</title>
-      <link>https://secubuzz.com/news/polymarket-trading-suspended-after-crypto-draining-499595</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/polymarket-trading-suspended-after-crypto-draining-499595</guid>
-      <description><![CDATA[Polymarket halted trading after attackers compromised a third‑party service to deploy a cryptocurrency‑draining JavaScript payload. The flaw allowed unauthorized extraction of user funds, with approximately $2.5 million traced to a suspected attacker wallet. Red Hat issued a patch and advised users to monitor account balances and revoke compromised API keys.]]></description>
-      <pubDate>Thu, 29 Oct 2026 21:47:25 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Chrome 156 for Android Released</title>
-      <link>https://secubuzz.com/news/chrome-156-for-android-released-b3588a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-156-for-android-released-b3588a</guid>
-      <description><![CDATA[Google released Chrome 156 for Android, aligning with desktop security fixes and including stability improvements. The update is available via Google Play and contains the same security patches as the corresponding desktop releases unless otherwise noted. Users should update to maintain protection against known vulnerabilities.]]></description>
-      <pubDate>Thu, 29 Oct 2026 21:38:02 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_090381616.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Anthropic‑Themed Phishing Emails Evade Leading Email Gateways</title>
-      <link>https://secubuzz.com/news/anthropic-themed-phishing-emails-evade-leading-ema-6ab67d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-themed-phishing-emails-evade-leading-ema-6ab67d</guid>
-      <description><![CDATA[Phishing campaigns themed around Anthropic are bypassing several top secure email gateway products. The emails contain obvious red flags yet still reach inboxes, indicating gaps in current threat detection rules. Security teams should update gateway signatures and enable advanced threat protection to counter these deceptive messages.]]></description>
-      <pubDate>Thu, 29 Oct 2026 21:21:56 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Claude AI Chains Exploits Across Major Browsers and OSes</title>
-      <link>https://secubuzz.com/news/claude-ai-chains-exploits-across-major-browsers-an-11f7cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-chains-exploits-across-major-browsers-an-11f7cd</guid>
-      <description><![CDATA[An unreleased version of Anthropic’s Claude model has discovered and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux. The model demonstrates active exploitation potential, revealing zero‑day weaknesses that bypass standard security controls. Vendors should review recent advisories and deploy mitigations; security teams must monitor for related attack patterns.]]></description>
-      <pubDate>Thu, 29 Oct 2026 18:15:59 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ad Fraud Report Shows AI Cloaking Declines, iOS Exploits Rise</title>
-      <link>https://secubuzz.com/news/ad-fraud-report-shows-ai-cloaking-declines-ios-exp-7962fd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ad-fraud-report-shows-ai-cloaking-declines-ios-exp-7962fd</guid>
-      <description><![CDATA[The State of Ad Fraud 2026 report reveals that 52% of schemes use AI as cloaking, yet iOS exploits and Messenger phishing are gaining traction. Analysis covers 1.2 million campaigns across eight platforms, highlighting shifting tactics in malicious advertising. Stakeholders should review platform safeguards and update verification processes accordingly.]]></description>
-      <pubDate>Thu, 29 Oct 2026 17:26:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/state-of-ad-fraud-2026-52-of-schemes-use-ai-as-cloaking-loses-ground-to-ios-exploits-and-messenger-phishing/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Showcases Gemini 4 Carbon Cybersecurity Model</title>
-      <link>https://secubuzz.com/news/google-showcases-gemini-4-carbon-cybersecurity-mod-8eaa07</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-showcases-gemini-4-carbon-cybersecurity-mod-8eaa07</guid>
-      <description><![CDATA[Google introduced the Gemini 4 Carbon model, achieving 88.2% on SEC-bench Pro, targeting vetted cyber defenders through its Fairwind Program. The model leverages advanced AI to detect and mitigate threats, providing automated analysis and threat intelligence. Users must integrate the model via the Fairwind Program to access its capabilities and stay updated on security enhancements.]]></description>
-      <pubDate>Thu, 29 Oct 2026 15:01:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-says-gemini-4-carbon-leads-in-finding-exploiting-and-fixing-vulnerabilities/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>US Voting Machines Face AI‑Driven Security Gaps</title>
-      <link>https://secubuzz.com/news/us-voting-machines-face-ai-driven-security-gaps-162724</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-voting-machines-face-ai-driven-security-gaps-162724</guid>
-      <description><![CDATA[Unpatched voting machines and QR‑coded ballots expose U.S. elections to AI‑driven influence campaigns, creating significant integrity risks. The lack of verification mechanisms allows adversaries to manipulate ballot data and inject malicious code, potentially compromising election outcomes. Election officials should enforce patch management, validate QR codes, and deploy AI‑based anomaly detection to mitigate these threats.]]></description>
-      <pubDate>Thu, 29 Oct 2026 15:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/how-secure-are-us-elections-voting-machine-risks-and-the-growing-threat-of-ai/">SecurityWeek</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

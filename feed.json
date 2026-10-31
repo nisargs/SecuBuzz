@@ -1,5 +1,31 @@
 [
   {
+    "id": "https://cert.europa.eu/publications/security-advisories/2026-011/",
+    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-011/",
+    "title": "SAP Patches Critical Kernel and NetWeaver Flaws",
+    "headline": "SAP Patches Critical Kernel and NetWeaver Flaws",
+    "summary": "SAP released security updates addressing two critical vulnerabilities in its Kernel and NetWeaver Message Server, including CVE-2026-44756 (CVSS 10.0) and CVE-2026-58240 (CVSS 9.8), both remotely exploitable without authentication. The flaws, dubbed OVERPASS and S4GET by Onapsis Research Labs, can lead to arbitrary operating system command execution under the SAP service account.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CERT-EU Security Advisories",
+    "publishedAt": "2026-10-31T04:45:29.392Z",
+    "url": "https://cert.europa.eu/publications/security-advisories/2026-011/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply",
+    "sourceUrl": "https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply",
+    "title": "Polymarket Supply Chain Flaw CVE-2026-97229 Detected",
+    "headline": "Polymarket Supply Chain Flaw CVE-2026-97229 Detected",
+    "summary": "A supply‑chain flaw identified in Polymarket’s platform, tracked as CVE-2026-97229, allows attackers to inject malicious code during deployment. The vulnerability arises from insufficient validation of third‑party components, enabling unauthorized code execution with potential data exfiltration; no active exploitation reported yet. Polymarket has released a patch and recommends applying the update immediately, alongside monitoring telemetry for anomalous deployment activity.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-31T02:01:13.000Z",
+    "url": "https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/wordpress-rce-flaw-draws-nearly-63-000-attack-attempts",
     "sourceUrl": "https://cybernewsai.com/blog/wordpress-rce-flaw-draws-nearly-63-000-attack-attempts",
     "title": "WordPress RCE Flaw Sparks 63,000 Attack Attempts",
@@ -15,10 +41,10 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
-    "title": "CVE-2026-98432: Linux Kernel Flaw Enables Unauthenticated Remote Root Access",
-    "headline": "CVE-2026-98432: Linux Kernel Flaw Enables Unauthenticated Remote Root Access",
-    "summary": "A critical Linux kernel vulnerability (CVE-2026-98432) allows unauthenticated attackers to gain root access via crafted kernel modules exploiting improper parameter validation. The flaw affects systems running Multipath TCP listeners and enables remote code execution with kernel privileges. Red Hat and other vendors have released patches requiring immediate deployment to prevent full system compromise.",
-    "category": "CVE",
+    "title": "CVE‑2026‑98432: Linux Kernel TCP Flaw Grants Unauthenticated Root RCE",
+    "headline": "CVE‑2026‑98432: Linux Kernel TCP Flaw Grants Unauthenticated Root RCE",
+    "summary": "A critical Linux kernel vulnerability (CVE‑2026‑98432) lets unauthenticated attackers execute arbitrary code as root via flawed TCP handling. The flaw, rated CVSS 9.8/10, affects systems using Multipath TCP listeners and can be triggered without credentials. Vendors including Red Hat have released patches; immediate deployment is required to prevent full system compromise.",
+    "category": "VULNERABILITY",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
     "publishedAt": "2026-10-30T21:09:46.000Z",
@@ -27,6 +53,10 @@
       {
         "source": "CyberNews AI",
         "sourceUrl": "https://cybernewsai.com/blog/critical-linux-kernel-flaw-allows-remote-root-attacks-o"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html"
       }
     ],
     "cves": [
@@ -234,6 +264,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147",
+    "title": "Microsoft Patches Visual Studio Spoofing Flaw",
+    "headline": "Microsoft Patches Visual Studio Spoofing Flaw",
+    "summary": "CVE-2026-118147 is a spoofing vulnerability in Microsoft Visual Studio caused by improper certificate validation, enabling unauthorized network-based spoofing attacks. The flaw allows an attacker to bypass certificate trust mechanisms, potentially leading to man-in-the-middle or impersonation scenarios during development or deployment workflows.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-30T14:00:00.000Z",
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147",
+    "additionalSources": []
+  },
+  {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
     "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
     "title": "Microsoft Outlook CVE-2026-70125 Allows Remote Code Execution",
@@ -276,6 +319,19 @@
         "sourceUrl": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html"
       }
     ]
+  },
+  {
+    "id": "https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/",
+    "sourceUrl": "https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/",
+    "title": "FBI Seizes Domain of Bulletproof Host Virtualine",
+    "headline": "FBI Seizes Domain of Bulletproof Host Virtualine",
+    "summary": "The FBI seized the domain of Virtualine, a bulletproof hosting provider that facilitated hack-for-hire services, ransomware operations, and infostealer infrastructure while accepting cryptocurrency payments. The takedown disrupted backend infrastructure used by multiple cybercriminal groups to launch attacks and host malicious payloads.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-30T13:36:12.000Z",
+    "url": "https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/",
+    "additionalSources": []
   },
   {
     "id": "https://cybersecuritynews.com/hackers-exploit-passwordless-telnet/",
@@ -379,6 +435,19 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-30T10:16:07.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
+    "sourceUrl": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
+    "title": "$2M+ Funds Stolen from Polymarket Traders",
+    "headline": "$2M+ Funds Stolen from Polymarket Traders",
+    "summary": "Polymarket traders lost over $2 million after a supply‑chain attack hijacked authenticated sessions via a malicious website‑monitoring tool. The attacker leveraged the compromised tool to inject code that redirected users’ funds to external wallets, exploiting Polymarket’s session management weaknesses. Polymarket has issued a security advisory, urging users to change passwords, enable two‑factor authentication, and monitor account activity for unauthorized transfers.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-10-30T09:41:36.000Z",
+    "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
     "additionalSources": []
   },
   {
@@ -486,6 +555,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybernewsai.com/blog/china-linked-hackers-exploit-vmware-esx-zero-day-cisa-w",
+    "sourceUrl": "https://cybernewsai.com/blog/china-linked-hackers-exploit-vmware-esx-zero-day-cisa-w",
+    "title": "VMware Releases Patch for ESX Zero-Day Flaw",
+    "headline": "VMware Releases Patch for ESX Zero-Day Flaw",
+    "summary": "A zero‑day flaw in VMware ESX allows remote attackers to execute arbitrary code via a malformed configuration file. The vulnerability, identified as CVE‑2026‑41709, has a CVSS score of 9.5 and is actively exploitable without authentication, potentially compromising virtualized environments. VMware has released an ESX patch; security teams should apply the update immediately and monitor for anomalous configuration changes.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-30T01:37:04.000Z",
+    "url": "https://cybernewsai.com/blog/china-linked-hackers-exploit-vmware-esx-zero-day-cisa-w",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:88349",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88349",
     "title": "Red Hat Updates java‑21‑openjdk for RHEL",
@@ -496,6 +578,19 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-30T00:33:04.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:88349",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/attacker-tried-to-exploit-alpine-linux-s-gitlab-via-cvs",
+    "sourceUrl": "https://cybernewsai.com/blog/attacker-tried-to-exploit-alpine-linux-s-gitlab-via-cvs",
+    "title": "CVE-2026-97229 Enables RCE in GitLab CI",
+    "headline": "CVE-2026-97229 Enables RCE in GitLab CI",
+    "summary": "CVE-2026-97229 exposes a remote code execution flaw in GitLab CI, allowing attackers to run arbitrary commands on runners. The flaw arises from improper handling of user‑supplied configuration files, with a CVSS score of 9.2 and public proof‑of‑concept exploits. GitLab released an urgent patch; admins should update to the latest version and disable legacy CI features until the fix is applied.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-30T00:15:33.000Z",
+    "url": "https://cybernewsai.com/blog/attacker-tried-to-exploit-alpine-linux-s-gitlab-via-cvs",
     "additionalSources": []
   },
   {
@@ -746,6 +841,32 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+    "title": "Hitachi Energy CoreTec OS Command Injection Vulnerability",
+    "headline": "Hitachi Energy CoreTec OS Command Injection Vulnerability",
+    "summary": "Hitachi Energy’s CoreTec product suffers an OS command injection flaw, CVE‑2026‑13162, triggered by improper neutralization of special elements. The CVSS 8.8 vulnerability allows attackers to run arbitrary commands, threatening confidentiality, integrity, and availability of the energy system. Hitachi recommends applying the vendor firmware update and following the CSAF immediate actions to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-29T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+    "title": "Hitachi Energy TRO600 RCE Vulnerability",
+    "headline": "Hitachi Energy TRO600 RCE Vulnerability",
+    "summary": "Hitachi Energy’s TRO600 series is vulnerable to a remote code execution flaw, CVE‑2026‑10756, caused by missing authentication for critical functions. The CVSS 7.5 vulnerability permits attackers to execute arbitrary code and disclose sensitive information, potentially compromising the energy control infrastructure. Security teams should apply the vendor‑issued firmware patch and enforce endpoint communication restrictions as outlined in the CSAF actions.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-10-29T12:00:00.000Z",
+    "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
     "sourceUrl": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
     "title": "Telegram Android Code Execution via Voice Call",
@@ -795,6 +916,58 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-29T11:09:22.000Z",
     "url": "https://cybersecuritynews.com/hackers-attack-freepbx-servers/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
+    "sourceUrl": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
+    "title": "NIK C2: AI-Enabled Command‑and‑Control Framework",
+    "headline": "NIK C2: AI-Enabled Command‑and‑Control Framework",
+    "summary": "Cisco Talos identified a new AI‑enabled command‑and‑control framework named NIK C2 operating in the wild. NIK C2 uses machine‑learning models to generate obfuscated command payloads, enabling dynamic evasion of signature‑based detection systems. Security teams should update endpoint detection rules, block known C2 domains, and monitor for anomalous outbound traffic patterns associated with NIK C2.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "publishedAt": "2026-10-29T10:00:00.000Z",
+    "url": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-845/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-845/",
+    "title": "MLflow Statsmodels Deserialization RCE Vulnerability",
+    "headline": "MLflow Statsmodels Deserialization RCE Vulnerability",
+    "summary": "A deserialization flaw in MLflow’s Statsmodels _load_model function permits remote attackers to execute arbitrary code on affected installations. The vulnerability requires user interaction, visiting a malicious page or opening a crafted file, and carries a CVSS score of 7.8, indicating high severity. A patch addressing CVE-2024-37052 is available; administrators should update MLflow immediately or apply the workaround to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-845/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-843/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-843/",
+    "title": "MLflow SHAP Deserialization RCE Vulnerability",
+    "headline": "MLflow SHAP Deserialization RCE Vulnerability",
+    "summary": "A deserialization flaw in MLflow’s SHAP load_explainer function allows remote attackers to execute arbitrary code on affected installations. The flaw requires user interaction, visiting a page or opening a file, and has a CVSS score of 7.8, indicating high severity. A patch addressing CVE-2026-118627 is available; administrators should update MLflow immediately or apply the workaround to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-843/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-842/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-842/",
+    "title": "MLflow Tracking Server Privilege Escalation Vulnerability",
+    "headline": "MLflow Tracking Server Privilege Escalation Vulnerability",
+    "summary": "A missing authorization flaw in MLflow’s Tracking Server permits authenticated attackers to elevate privileges on affected installations. The vulnerability requires valid credentials, has a CVSS score of 5.4, and allows attackers to gain higher-level access within the MLflow environment. A patch addressing CVE-2026-118626 is available; administrators should update MLflow or apply the vendor‑issued workaround to prevent privilege escalation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-842/",
     "additionalSources": []
   },
   {
@@ -1160,6 +1333,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+    "title": "AI‑Assisted PHP2Shell Breaches U.S. Government Network",
+    "headline": "AI‑Assisted PHP2Shell Breaches U.S. Government Network",
+    "summary": "An AI‑assisted attack by a China‑nexus threat actor exploited PHP2Shell vulnerabilities to breach exposed U.S. Government‑affiliated systems. The operation, observed on October 25, 2026, combined PHP2Shell with a kernel privilege‑escalation exploit to gain root access on 25 servers. Security teams should isolate affected servers, apply the latest PHP2Shell patches, and conduct a comprehensive kernel hardening review to prevent further exploitation.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-28T16:02:45.000Z",
+    "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
     "title": "Volt Typhoon Employs Silent Train Zero-Day Framework",
@@ -1420,6 +1606,19 @@
     "additionalSources": []
   },
   {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-829/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-829/",
+    "title": "ZDI Discloses Zero-Day RCE in Alpine iLX-F511",
+    "headline": "ZDI Discloses Zero-Day RCE in Alpine iLX-F511",
+    "summary": "A zero-day heap-based buffer overflow vulnerability in the Alpine iLX-F511 Bluetooth OBEX packet handler allows physically present attackers to execute arbitrary code without authentication. Tracked as CVE-2026-118611 and demonstrated at Pwn2Own, the flaw carries a CVSS score of 6.8. Users should monitor vendor advisories for firmware updates and restrict physical access to affected devices until patches are available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-829/",
+    "additionalSources": []
+  },
+  {
     "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-830/",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-830/",
     "title": "Apple Safari RCE via jsToWasm Type Confusion",
@@ -1576,6 +1775,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://chromereleases.googleblog.com/2026/10/beta-channel-update-for-chromeos_0669100502.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/beta-channel-update-for-chromeos_0669100502.html",
+    "title": "ChromeOS Beta Updated to OS 16852.15.0",
+    "headline": "ChromeOS Beta Updated to OS 16852.15.0",
+    "summary": "ChromeOS Beta channel received an OS update to version 16852.15.0, including Browser 157.0.8103.23, for most devices. The update aims to improve system stability and performance, with users encouraged to report issues via the ChromeOS communities. Administrators should monitor release notes and ensure devices are updated to maintain compatibility with new features.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-27T19:39:25.377Z",
+    "url": "https://chromereleases.googleblog.com/2026/10/beta-channel-update-for-chromeos_0669100502.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar",
     "sourceUrl": "https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar",
     "title": "US DOJ Indicts Malaysian National in Madagascar Scam Operation",
@@ -1586,6 +1798,19 @@
     "source": "The Record",
     "publishedAt": "2026-10-27T19:30:00.000Z",
     "url": "https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar",
+    "additionalSources": []
+  },
+  {
+    "id": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01149650302.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01149650302.html",
+    "title": "Chrome iOS Stable 157 Released",
+    "headline": "Chrome iOS Stable 157 Released",
+    "summary": "Google released Chrome Stable 157 for iOS, version 157.0.8103.24, which will appear on the App Store within hours. The update focuses on stability and performance improvements, with a full list of changes available in the Git log. Users encountering new issues should file bugs through the provided channels to aid future releases.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-10-27T19:28:32.782Z",
+    "url": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01149650302.html",
     "additionalSources": []
   },
   {
@@ -1628,6 +1853,19 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
+    "title": "AI Threatens Core Cybersecurity Skills",
+    "headline": "AI Threatens Core Cybersecurity Skills",
+    "summary": "Nathan Hamiel warns that AI could erode core cybersecurity skills, likening technical expertise to outdated navigation tools. The article argues that automated systems may replace tasks such as threat hunting, incident response, and security monitoring, potentially leaving professionals without hands‑on experience. Organizations should invest in continuous training and maintain human oversight to preserve essential security capabilities amid AI adoption.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-27T17:43:07.000Z",
+    "url": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/",
     "title": "CVE‑2026‑111497: Out‑of‑Bounds Write in Brotli Library",
@@ -1638,6 +1876,19 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-27T17:38:51.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://socket.dev/blog/firefox-wallet-impersonators",
+    "sourceUrl": "https://socket.dev/blog/firefox-wallet-impersonators",
+    "title": "Firefox Extensions Mimic Wallets to Steal Secrets",
+    "headline": "Firefox Extensions Mimic Wallets to Steal Secrets",
+    "summary": "Malicious Firefox extensions impersonating Phantom, Jupiter, and Bitget wallets have been found, tricking users into revealing recovery phrases and private keys. The extensions spoof the wallet UI and one fetches its payload remotely, enabling credential exfiltration without user awareness. Security teams should audit installed extensions, remove any that mimic wallet names, and enforce strict vetting to prevent credential theft.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Socket.dev",
+    "publishedAt": "2026-10-27T17:28:33.184Z",
+    "url": "https://socket.dev/blog/firefox-wallet-impersonators",
     "additionalSources": []
   },
   {
@@ -4436,267 +4687,6 @@
     "source": "GitHub Security Blog",
     "publishedAt": "2026-10-22T17:21:30.000Z",
     "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
-    "title": "Unit 42 Explores Contemporary OAuth Attack Landscape",
-    "headline": "Unit 42 Explores Contemporary OAuth Attack Landscape",
-    "summary": "Unit 42 examines contemporary OAuth attacks, highlighting credential theft, token misuse, and phishing vectors targeting OAuth implementations. The analysis identifies redirect URI manipulation, insecure client secrets, and insufficient scope validation as common exploitation techniques. Security teams should enforce redirect URI whitelisting, rotate client secrets, implement scope checks, and monitor anomalous token usage to mitigate risks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "publishedAt": "2026-10-22T17:00:25.000Z",
-    "url": "https://unit42.paloaltonetworks.com/current-landscape-oauth-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty",
-    "title": "Meta Ordered to Pay $25 Billion for Misleading Privacy Claims",
-    "headline": "Meta Ordered to Pay $25 Billion for Misleading Privacy Claims",
-    "summary": "Meta faces a $25 billion penalty after regulators determined the company misled users about who could access their personal information on Facebook. The ruling underscores the importance of transparent privacy disclosures and compliance with data protection regulations. Facebook must update its privacy policies, enhance user consent mechanisms, and implement audit controls to avoid future violations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-22T16:59:22.000Z",
-    "url": "https://www.malwarebytes.com/blog/news/2026/10/facebooks-misleading-privacy-claims-land-meta-a-25-billion-penalty",
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html"
-      }
-    ]
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-android-update_02061041745.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-android-update_02061041745.html",
-    "title": "Chrome Beta 157 Released for Android",
-    "headline": "Chrome Beta 157 Released for Android",
-    "summary": "Chrome Beta 157 (157.0.8103.14) for Android has been released, making the new build available through Google Play. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-22T15:58:32.486Z",
-    "url": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-android-update_02061041745.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
-    "title": "Microsoft Restores Exchange Web Services API for Legacy Applications",
-    "headline": "Microsoft Restores Exchange Web Services API for Legacy Applications",
-    "summary": "Microsoft has announced that IT administrators can re‑enable the retired Exchange Web Services (EWS) API in Exchange Online to restore functionality for legacy EWS applications. The change addresses the deprecation that caused EWS apps to fail after the API was disabled in a recent update. Administrators should apply the new configuration settings immediately to prevent application downtime.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-22T15:49:32.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8953-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8953-1",
-    "title": "OpenVPN Certificate Subject Field Vulnerability Exposes User Impersonation Risk",
-    "headline": "OpenVPN Certificate Subject Field Vulnerability Exposes User Impersonation Risk",
-    "summary": "OpenVPN was found to mishandle certificate subject fields, allowing a remote authenticated user to impersonate other users. The flaw stems from improper validation of subject names, creating a potential for credential spoofing without requiring elevated privileges. A vendor patch is available in the latest OpenVPN release; administrators should update immediately and verify certificate handling.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-10-22T15:38:41.000Z",
-    "url": "https://ubuntu.com/security/notices/USN-8953-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-ios-update_01220496618.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-ios-update_01220496618.html",
-    "title": "Chrome Beta 157 Released for iOS",
-    "headline": "Chrome Beta 157 Released for iOS",
-    "summary": "Chrome Beta 157 (157.0.8103.13) for iOS has been released, becoming available on the App Store shortly. The update lists changes in the Git log, with feature details on the Chromium blog and web platform updates. Users encountering new issues should file bugs through the Chrome Release Team channels; no immediate security patches or firmware upgrades are required.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-22T15:13:32.971Z",
-    "url": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-ios-update_01220496618.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/claude-security-continuous-scans/",
-    "sourceUrl": "https://cybersecuritynews.com/claude-security-continuous-scans/",
-    "title": "Claude Security Enhances Continuous Repository Scanning",
-    "headline": "Claude Security Enhances Continuous Repository Scanning",
-    "summary": "Anthropic updated Claude Security to continuously scan connected code repositories for new flaws, eliminating the need for manual scan initiation. The service now tracks reported vulnerabilities, marks them fixed when changes are detected, and reopens them if the issue returns. This enhancement improves continuous integration pipelines, reduces manual oversight, and ensures timely remediation of newly discovered security issues.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-22T14:40:43.000Z",
-    "url": "https://cybersecuritynews.com/claude-security-continuous-scans/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/10/22/claude-security-continuous-scanning-update/"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/a-new-extortion-gang/",
-    "sourceUrl": "https://cybersecuritynews.com/a-new-extortion-gang/",
-    "title": "ScarlettGroup Threatens Data Leaks with Dark Web Naming and Countdown Timers",
-    "headline": "ScarlettGroup Threatens Data Leaks with Dark Web Naming and Countdown Timers",
-    "summary": "ScarlettGroup, a newly observed extortion gang, is naming companies on a dark web leak site and using countdown timers to threaten the release of allegedly stolen data. The operation applies public pressure before breach claims are independently verified, creating reputational risk and potential regulatory scrutiny.",
-    "category": "RANSOMWARE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-22T14:40:34.000Z",
-    "url": "https://cybersecuritynews.com/a-new-extortion-gang/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
-    "sourceUrl": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
-    "title": "Corey Thuen Announces Hiring Hackers for 'Evil Bit' Project",
-    "headline": "Corey Thuen Announces Hiring Hackers for 'Evil Bit' Project",
-    "summary": "Corey Thuen publicly announced hiring hackers for a project he calls 'the evil bit,' framing it as an adversarial initiative. The statement, shared on SecurityWeek, highlights a controversial approach to offensive security that raises ethical and legal questions for the industry. No specific vulnerability or exploit is disclosed, and no patch or mitigation is required at this time.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-22T14:31:34.000Z",
-    "url": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage",
-    "title": "Insurers Split on Covering Agentic AI Risks",
-    "headline": "Insurers Split on Covering Agentic AI Risks",
-    "summary": "Insurers are divided over whether to cover agentic AI risks, with some offering specialized policies while others quietly exclude coverage. This split leaves enterprises unknowingly exposed to potential AI‑driven losses, as policy gaps may not trigger claims for automated decision‑making incidents. Insurers should clarify coverage terms, and organizations must review policies to ensure AI‑related liabilities are addressed before deployment.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-22T14:21:22.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/scams/2026/10/scammers-are-finding-new-ways-to-target-your-phone-here-are-5-ways-to-protect-yourself",
-    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/10/scammers-are-finding-new-ways-to-target-your-phone-here-are-5-ways-to-protect-yourself",
-    "title": "Scammers Target Mobile Users with Deceptive Tactics",
-    "headline": "Scammers Target Mobile Users with Deceptive Tactics",
-    "summary": "Scammers are exploiting mobile users by targeting phones through deceptive tactics that bypass standard warning systems. The trend shows that one in three people ignore scam alerts, enabling attackers to harvest personal data and credentials via social engineering and malicious apps. Security teams should enforce app store vetting, enable two‑factor authentication, and educate users about phishing indicators.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-22T14:14:26.000Z",
-    "url": "https://www.malwarebytes.com/blog/scams/2026/10/scammers-are-finding-new-ways-to-target-your-phone-here-are-5-ways-to-protect-yourself",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "title": "Machine‑Speed Credential Theft Enables Rapid Data Exfiltration",
-    "headline": "Machine‑Speed Credential Theft Enables Rapid Data Exfiltration",
-    "summary": "Attackers now exploit machine‑speed attacks, stealing GitHub tokens and MFA credentials within minutes to exfiltrate data before defenders react. Exaforce analysis shows malicious AI installers and phishing vectors accelerate credential theft, underscoring the need for rapid detection and automated containment. Security teams should implement real‑time credential monitoring, enforce MFA, and deploy AI‑based anomaly detection to halt exfiltration before it escalates.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-22T14:02:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
-    "title": "CVE-2026-110063: Azure VM Inspector Elevation of Privilege Vulnerability",
-    "headline": "CVE-2026-110063: Azure VM Inspector Elevation of Privilege Vulnerability",
-    "summary": "CVE-2026-110063 exposes an improper link resolution flaw in Azure Virtual Machines’ VM Inspector, enabling attackers to elevate privileges across the network. The vulnerability permits unauthorized file access via link following, bypassing access controls and potentially granting full administrative rights to compromised hosts. Microsoft released a patch correcting link resolution; administrators should apply it immediately to stop privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-110063",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
-    "title": "Microsoft PowerShell CVE-2026-96251 Remote Code Execution Vulnerability",
-    "headline": "Microsoft PowerShell CVE-2026-96251 Remote Code Execution Vulnerability",
-    "summary": "A remote code execution flaw exists in Microsoft PowerShell, identified as CVE-2026-96251, affecting the command execution engine. The vulnerability allows attackers to run arbitrary code via crafted PowerShell commands, with a CVSS score of 8.3 and no active exploitation reported. Microsoft has released a patch; users should apply the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96251",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
-    "title": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
-    "headline": "CVE-2026-96185 Microsoft Exchange Online Remote Code Execution Vulnerability",
-    "summary": "A stack‑based buffer overflow in Microsoft Exchange Online enables an authorized attacker to execute code over a network. The flaw, identified as CVE‑2026‑96185, permits remote code execution without additional privileges and has been confirmed active in the wild. Microsoft has released a patch for Exchange Online; administrators should apply the update immediately and monitor for anomalous activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96185",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
-    "title": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
-    "headline": "CVE-2026-83938 Azure Kubernetes Configuration Service Elevation of Privilege Vulnerability",
-    "summary": "A missing authentication check in Azure Kubernetes Configuration Service allows an unauthorized attacker to elevate privileges over a network. The vulnerability, CVE‑2026‑83938, enables privilege escalation without credentials and has a public proof‑of‑concept exploit. Microsoft has issued a patch; users should update the configuration service immediately and enforce strict access controls.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83938",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
-    "title": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
-    "headline": "CVE-2026-108456 Azure AI Foundry Elevation of Privilege Vulnerability",
-    "summary": "CVE-2026-108456 reveals a server‑side request forgery flaw in Azure AI Foundry that lets an authenticated attacker elevate privileges across the network. The flaw stems from inadequate validation of outbound requests, enabling privilege escalation without extra credentials and is actively exploitable. Microsoft issued a patch correcting the validation logic; apply the update immediately and disabling external request endpoints as temporary measure.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108456",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
-    "title": "CVE-2026-97785: AAD App Proxy Elevation of Privilege Vulnerability",
-    "headline": "CVE-2026-97785: AAD App Proxy Elevation of Privilege Vulnerability",
-    "summary": "An improper authentication flaw in Microsoft Azure Active Directory App Proxy permits an unauthorized attacker to elevate privileges across the network. The vulnerability allows bypassing standard access controls, enabling attackers to gain higher-level permissions without valid credentials. Microsoft has released a patch; administrators should apply the update immediately to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-97785",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
-    "title": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
-    "headline": "CVE-2026-105014 Azure Pipelines Remote Code Execution Vulnerability",
-    "summary": "Improper neutralization of special elements used in a command in Azure Pipelines allows an unauthorized attacker to execute code over a network. The flaw enables command injection without authentication, exposing enterprise pipelines to remote code execution. Microsoft has released a patch; users should apply the update immediately to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-22T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105014",
     "additionalSources": []
   }
 ]
