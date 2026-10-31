@@ -1,5 +1,18 @@
 [
   {
+    "id": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+    "sourceUrl": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+    "title": "Chainalysis Reports Internal Tool Breach Exposing Customer Identities",
+    "headline": "Chainalysis Reports Internal Tool Breach Exposing Customer Identities",
+    "summary": "Chainalysis said an external actor accessed internal tools and exposed non‑sensitive customer identity data, without compromising credentials or session tokens. The incident involved unauthorized internal access but did not result in credential theft or sensitive data leakage. Chainalysis has added monitoring and access controls and is conducting a full forensic investigation.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-10-31T12:01:56.000Z",
+    "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
     "sourceUrl": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
     "title": "Syrian Hacker Sentenced to 42 Months in US Court",
@@ -2165,6 +2178,45 @@
     "source": "Help Net Security",
     "publishedAt": "2026-10-28T05:00:19.000Z",
     "url": "https://www.helpnetsecurity.com/2026/10/28/kroll-third-party-data-breaches-insurance-claims-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-816/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-816/",
+    "title": "Ultralytics Deserialization Vulnerability Enables Remote Code Execution",
+    "headline": "Ultralytics Deserialization Vulnerability Enables Remote Code Execution",
+    "summary": "A deserialization flaw in Ultralytics’ load_dataset_cache_file lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118617 carries a CVSS score of 7.8 and requires user interaction but grants full system compromise if exploited. Ultralytics released a patch updating load_dataset_cache_file; administrators should apply it immediately or disable the function to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-816/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-815/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-815/",
+    "title": "Ultralytics parse_model Injection Allows Remote Code Execution",
+    "headline": "Ultralytics parse_model Injection Allows Remote Code Execution",
+    "summary": "A code injection flaw in Ultralytics’ parse_model lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118616 has a CVSS score of 7.8, requires user interaction, and provides full system compromise if exploited. Ultralytics issued a patch for parse_model; administrators should apply it promptly or disable the function to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-815/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-814/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-814/",
+    "title": "Ultralytics torch_safe_load Injection Enables Remote Code Execution",
+    "headline": "Ultralytics torch_safe_load Injection Enables Remote Code Execution",
+    "summary": "A command injection flaw in Ultralytics’ torch_safe_load lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118615 carries a CVSS score of 7.8, requires user interaction, and grants full system compromise if exploited. Ultralytics released a patch updating torch_safe_load; administrators should apply it immediately or disable the function to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-814/",
     "additionalSources": []
   },
   {
@@ -4599,58 +4651,6 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-23T13:50:56.000Z",
     "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:88687",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88687",
-    "title": "Red Hat Kernel Update for Enterprise Linux 10.0 EUS",
-    "headline": "Red Hat Kernel Update for Enterprise Linux 10.0 EUS",
-    "summary": "Red Hat Enterprise Linux 10.0 Extended Update Support received a kernel security update addressing multiple vulnerabilities that could enable privilege escalation or denial of service. The update carries an Important security impact rating, with CVSS scores available via the referenced CVE links, indicating moderate to high severity.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-23T13:49:18.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:88687",
-    "additionalSources": []
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33450",
-    "sourceUrl": "https://isc.sans.edu/diary/33450",
-    "title": "Critical PHP Vulnerability CVE-2026-109618 Enables Remote Code Execution",
-    "headline": "Critical PHP Vulnerability CVE-2026-109618 Enables Remote Code Execution",
-    "summary": "A critical PHP vulnerability, CVE-2026-109618, enables remote code execution via malformed input. The flaw allows unauthenticated attackers to execute arbitrary code with the privileges of the web server, and a public PoC demonstrates the exploitability. A patch is available from the PHP team; administrators should update to the latest release immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-10-23T13:43:20.000Z",
-    "url": "https://isc.sans.edu/diary/33450",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/stealc-malware/",
-    "sourceUrl": "https://cybersecuritynews.com/stealc-malware/",
-    "title": "StealC Returns with Stadia RAT for Password Theft and Remote Control",
-    "headline": "StealC Returns with Stadia RAT for Password Theft and Remote Control",
-    "summary": "The StealC operator has reintroduced its malware as Stadia, a Windows remote access trojan that steals passwords and secretly controls victim PCs. The RAT expands beyond credential theft, allowing attackers to execute commands, browse files, manage processes, and load additional malicious payloads. Security teams should monitor for unusual remote control activity and apply endpoint protection updates.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-23T13:40:19.000Z",
-    "url": "https://cybersecuritynews.com/stealc-malware/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
-    "title": "Cyber Insurers Shift from Risk Transfer to Active Cyber Defense",
-    "headline": "Cyber Insurers Shift from Risk Transfer to Active Cyber Defense",
-    "summary": "Cyber insurers now face direct cybersecurity responsibilities as AI, social engineering, and cloud risks grow, shifting focus from pure risk transfer to active threat mitigation. This trend forces carriers to expand underwriting models, integrate technical assessments, and deploy defensive controls, while maintaining traditional actuarial pricing. Insurers are investing in cyber expertise, threat intelligence, and incident response to meet regulatory expectations.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-23T13:30:00.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
     "additionalSources": []
   }
 ]

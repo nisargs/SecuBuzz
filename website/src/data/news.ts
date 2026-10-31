@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "chainalysis-reports-internal-tool-breach-exposing-470746",
+    "title": "Chainalysis Reports Internal Tool Breach Exposing Customer Identities",
+    "summary": "Chainalysis said an external actor accessed internal tools and exposed non‑sensitive customer identity data, without compromising credentials or session tokens. The incident involved unauthorized internal access but did not result in credential theft or sensitive data leakage. Chainalysis has added monitoring and access controls and is conducting a full forensic investigation.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+    "publishedAt": "2026-10-31T12:01:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chainalysis-reports-internal-tool-breach-exposing",
+      "article-470746",
+      "470746",
+      "chainalysis-reports-internal-tool-breach-exposing-customer-i"
+    ]
+  },
+  {
     "slug": "syrian-hacker-sentenced-to-42-months-in-us-court-b95c46",
     "title": "Syrian Hacker Sentenced to 42 Months in US Court",
     "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro‑Assad attacks on media, businesses, and government entities. The attacks leveraged compromised credentials and distributed denial‑of‑service tactics to disrupt communications and compromise sensitive data across multiple sectors. The sentencing underscores the importance of international cooperation and reinforces the need for robust cyber‑defense measures to deter state‑backed actors.",
@@ -2980,6 +2998,66 @@ export const news: NewsBrief[] = [
       "article-44b9df",
       "44b9df",
       "kroll-breach-analysis-reveals-data-stored-by-unknown-third-p"
+    ]
+  },
+  {
+    "slug": "ultralytics-deserialization-vulnerability-enables-6f3c97",
+    "title": "Ultralytics Deserialization Vulnerability Enables Remote Code Execution",
+    "summary": "A deserialization flaw in Ultralytics’ load_dataset_cache_file lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118617 carries a CVSS score of 7.8 and requires user interaction but grants full system compromise if exploited. Ultralytics released a patch updating load_dataset_cache_file; administrators should apply it immediately or disable the function to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-816/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118617"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ultralytics-deserialization-vulnerability-enables",
+      "article-6f3c97",
+      "6f3c97",
+      "ultralytics-deserialization-vulnerability-enables-remote-cod"
+    ]
+  },
+  {
+    "slug": "ultralytics-parse-model-injection-allows-remote-co-6f3c97",
+    "title": "Ultralytics parse_model Injection Allows Remote Code Execution",
+    "summary": "A code injection flaw in Ultralytics’ parse_model lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118616 has a CVSS score of 7.8, requires user interaction, and provides full system compromise if exploited. Ultralytics issued a patch for parse_model; administrators should apply it promptly or disable the function to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-815/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118616"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ultralytics-parse-model-injection-allows-remote-co",
+      "article-6f3c97",
+      "6f3c97",
+      "ultralytics-parse-model-injection-allows-remote-code-executi"
+    ]
+  },
+  {
+    "slug": "ultralytics-torch-safe-load-injection-enables-remo-6f3c97",
+    "title": "Ultralytics torch_safe_load Injection Enables Remote Code Execution",
+    "summary": "A command injection flaw in Ultralytics’ torch_safe_load lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118615 carries a CVSS score of 7.8, requires user interaction, and grants full system compromise if exploited. Ultralytics released a patch updating torch_safe_load; administrators should apply it immediately or disable the function to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-814/",
+    "publishedAt": "2026-10-28T05:00:00.000Z",
+    "cves": [
+      "CVE-2026-118615"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ultralytics-torch-safe-load-injection-enables-remo",
+      "article-6f3c97",
+      "6f3c97",
+      "ultralytics-torch-safe-load-injection-enables-remote-code-ex"
     ]
   },
   {
@@ -6383,80 +6461,6 @@ export const news: NewsBrief[] = [
       "article-1f7b9d",
       "1f7b9d",
       "enterprise-firewalls-and-vpns-breached-70-000-credentials-ex"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-for-enterprise-linux-10-0-eu-37e4f8",
-    "title": "Red Hat Kernel Update for Enterprise Linux 10.0 EUS",
-    "summary": "Red Hat Enterprise Linux 10.0 Extended Update Support received a kernel security update addressing multiple vulnerabilities that could enable privilege escalation or denial of service. The update carries an Important security impact rating, with CVSS scores available via the referenced CVE links, indicating moderate to high severity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88687",
-    "publishedAt": "2026-10-23T13:49:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-for-enterprise-linux-10-0-eu",
-      "article-37e4f8",
-      "37e4f8",
-      "red-hat-kernel-update-for-enterprise-linux-10-0-eus"
-    ]
-  },
-  {
-    "slug": "critical-php-vulnerability-cve-2026-109618-enables-57dd7e",
-    "title": "Critical PHP Vulnerability CVE-2026-109618 Enables Remote Code Execution",
-    "summary": "A critical PHP vulnerability, CVE-2026-109618, enables remote code execution via malformed input. The flaw allows unauthenticated attackers to execute arbitrary code with the privileges of the web server, and a public PoC demonstrates the exploitability. A patch is available from the PHP team; administrators should update to the latest release immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/33450",
-    "publishedAt": "2026-10-23T13:43:20.000Z",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-php-vulnerability-cve-2026-109618-enables",
-      "article-57dd7e",
-      "57dd7e",
-      "critical-php-vulnerability-cve-2026-109618-enables-remote-co"
-    ]
-  },
-  {
-    "slug": "stealc-returns-with-stadia-rat-for-password-theft-5e33ee",
-    "title": "StealC Returns with Stadia RAT for Password Theft and Remote Control",
-    "summary": "The StealC operator has reintroduced its malware as Stadia, a Windows remote access trojan that steals passwords and secretly controls victim PCs. The RAT expands beyond credential theft, allowing attackers to execute commands, browse files, manage processes, and load additional malicious payloads. Security teams should monitor for unusual remote control activity and apply endpoint protection updates.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/stealc-malware/",
-    "publishedAt": "2026-10-23T13:40:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "stealc-returns-with-stadia-rat-for-password-theft",
-      "article-5e33ee",
-      "5e33ee",
-      "stealc-returns-with-stadia-rat-for-password-theft-and-remote"
-    ]
-  },
-  {
-    "slug": "cyber-insurers-shift-from-risk-transfer-to-active-717256",
-    "title": "Cyber Insurers Shift from Risk Transfer to Active Cyber Defense",
-    "summary": "Cyber insurers now face direct cybersecurity responsibilities as AI, social engineering, and cloud risks grow, shifting focus from pure risk transfer to active threat mitigation. This trend forces carriers to expand underwriting models, integrate technical assessments, and deploy defensive controls, while maintaining traditional actuarial pricing. Insurers are investing in cyber expertise, threat intelligence, and incident response to meet regulatory expectations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
-    "publishedAt": "2026-10-23T13:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyber-insurers-shift-from-risk-transfer-to-active",
-      "article-717256",
-      "717256",
-      "cyber-insurers-shift-from-risk-transfer-to-active-cyber-defe"
     ]
   }
 ];

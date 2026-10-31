@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 11:46:03 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 12:46:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Chainalysis Reports Internal Tool Breach Exposing Customer Identities</title>
+      <link>https://secubuzz.com/news/chainalysis-reports-internal-tool-breach-exposing-470746</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-reports-internal-tool-breach-exposing-470746</guid>
+      <description><![CDATA[Chainalysis said an external actor accessed internal tools and exposed non‑sensitive customer identity data, without compromising credentials or session tokens. The incident involved unauthorized internal access but did not result in credential theft or sensitive data leakage. Chainalysis has added monitoring and access controls and is conducting a full forensic investigation.]]></description>
+      <pubDate>Sat, 31 Oct 2026 12:01:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Syrian Hacker Sentenced to 42 Months in US Court</title>
       <link>https://secubuzz.com/news/syrian-hacker-sentenced-to-42-months-in-us-court-b95c46</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 30 Oct 2026 11:33:12 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/data-breaches/2026/10/hackers-steal-and-publish-data-on-41000-homeland-security-workers">Malwarebytes Labs</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Claude Code Extension Poisoned with SSH Backdoor</title>
-      <link>https://secubuzz.com/news/claude-code-extension-poisoned-with-ssh-backdoor-42b2ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-extension-poisoned-with-ssh-backdoor-42b2ec</guid>
-      <description><![CDATA[Researchers found a tampered build of Anthropic’s Claude Code extension, v2.1.313, on Open VSX that contained a persistent SSH backdoor. The malicious package, absent from Microsoft’s Visual Studio Marketplace, allowed attackers to maintain remote access via the embedded SSH service. Security teams should remove the compromised extension, verify integrity, and monitor for unauthorized SSH connections to prevent lateral movement.]]></description>
-      <pubDate>Fri, 30 Oct 2026 11:15:26 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
