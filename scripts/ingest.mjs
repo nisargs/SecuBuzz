@@ -24,23 +24,25 @@ const PUSH_ADMIN_SECRET = process.env.PUSH_ADMIN_SECRET;
 const GROQ_API_URL =
   "https://api.groq.com/openai/v1/chat/completions";
 
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const GROQ_API_KEY = (process.env.GROQ_API_KEY || "").trim().replace(/^["']|["']$/g, "");
 
 const GROQ_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-20b";
 
 const GEMINI_API_URL =
   "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GEMINI_API_KEY = (process.env.GEMINI_API_KEY || "").trim().replace(/^["']|["']$/g, "");
 
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-1.5-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 const OPENROUTER_API_URL =
   "https://openrouter.ai/api/v1/chat/completions";
 
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+const OPENROUTER_API_KEY = (process.env.OPENROUTER_API_KEY || "").trim().replace(/^["']|["']$/g, "");
 
 const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || "openrouter/free";
+
+let openRouterPermanentlyFailed = false;
 
 /*
  * ---------------------------------------------------------------------------
@@ -61,7 +63,7 @@ const MAX_FEED_ARTICLES = 350;
 
 const DESCRIPTION_MAX_LENGTH = 900;
 
-const MAX_COMPLETION_TOKENS = 1200;
+const MAX_COMPLETION_TOKENS = 2500;
 
 /*
  * Minimum delay between successful AI requests.
@@ -1013,7 +1015,20 @@ BREACH, RANSOMWARE, CVE, VULNERABILITY, NATION_STATE, GENERAL
 Allowed severities:
 LOW, MEDIUM, HIGH, CRITICAL
 
-Return ONLY the JSON structure required by the schema.
+OUTPUT FORMAT (STRICT):
+You must return a valid JSON object containing an "articles" array matching this exact schema:
+{
+  "articles": [
+    {
+      "index": 0,
+      "headline": "Concise Original Headline Under 10 Words",
+      "summary": "Exact 50 to 60 word technical intelligence brief written as 3 dense sentences detailing incident, root cause, and mitigation.",
+      "category": "BREACH | RANSOMWARE | CVE | VULNERABILITY | NATION_STATE | GENERAL",
+      "severity": "LOW | MEDIUM | HIGH | CRITICAL"
+    }
+  ]
+}
+Return ONLY the raw JSON object. Do not include markdown code fences or conversational text.
 
 Input articles:
 
@@ -1301,6 +1316,10 @@ const GROQ_RESPONSE_SCHEMA = {
 async function requestGroq(
   candidates,
 ) {
+  if (!GROQ_API_KEY) {
+    throw new Error("GROQ_API_KEY is not configured.");
+  }
+
   const prompt =
     buildBatchPrompt(
       candidates,
@@ -1310,11 +1329,16 @@ async function requestGroq(
     "Sending selected candidates in ONE Groq request...",
   );
 
+  const candidateModels = [GROQ_MODEL, "llama-3.3-70b-versatile", "llama-3.1-8b-instant"].filter(
+    (m, idx, arr) => arr.indexOf(m) === idx,
+  );
+
   for (
     let attempt = 0;
     attempt <= MAX_RATE_LIMIT_RETRIES;
     attempt++
   ) {
+    const currentModel = candidateModels[Math.min(attempt, candidateModels.length - 1)];
     const requestStart =
       Date.now();
 
@@ -1335,14 +1359,14 @@ async function requestGroq(
           },
 
           body: JSON.stringify({
-            model: GROQ_MODEL,
+            model: currentModel,
 
             messages: [
               {
                 role: "system",
 
                 content:
-                  "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Follow the supplied JSON schema exactly. Do not provide explanations or reasoning.",
+                  "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Return a valid JSON object matching the requested schema with an 'articles' array. Do not output markdown code blocks or reasoning.",
               },
 
               {
@@ -1352,20 +1376,9 @@ async function requestGroq(
               },
             ],
 
-            /*
-             * Strict JSON Schema.
-             *
-             * GPT-OSS 20B supports Groq Structured Outputs.
-             */
             response_format: {
               type: "json_object",
             },
-
-            /*
-             * Keep model reasoning low because
-             * we only need a simple editorial transformation.
-             */
-            reasoning_effort: "low",
 
             temperature: 0.2,
 
@@ -1391,7 +1404,7 @@ async function requestGroq(
       Date.now() - requestStart;
 
     console.log(
-      `Groq request duration: ${duration} ms`,
+      `Groq request duration: ${duration} ms (model: ${currentModel})`,
     );
 
     console.log(
@@ -1429,9 +1442,6 @@ async function requestGroq(
         }
         await waitForRateLimitReset(response);
       } else {
-        /*
-         * Exponential backoff fallback.
-         */
         const fallbackSeconds =
           Math.min(
             5 * 2 ** attempt,
@@ -1486,6 +1496,11 @@ async function requestGroq(
       const message =
         payload?.error?.message ||
         `Groq request failed with HTTP ${response.status}.`;
+
+      if (response.status === 400 && currentModel !== "llama-3.3-70b-versatile" && attempt < MAX_RATE_LIMIT_RETRIES) {
+        console.warn(`[Groq] ${currentModel} returned 400 (${message}). Retrying with llama-3.3-70b-versatile...`);
+        continue;
+      }
 
       throw new Error(
         message,
@@ -1640,22 +1655,28 @@ async function requestGemini(candidates) {
   const prompt = buildBatchPrompt(candidates);
   console.log(`Sending batch to Gemini AI fallback (${GEMINI_MODEL})...`);
 
-  let content = "";
+  const modelsToTry = [GEMINI_MODEL, "gemini-2.5-flash", "gemini-1.5-flash", "gemini-2.0-flash"].filter(
+    (m, idx, arr) => arr.indexOf(m) === idx,
+  );
 
-  // 1. If key is standard Google AI Studio (AIzaSy...), prefer Google native generateContent
-  if (GEMINI_API_KEY.startsWith("AIzaSy")) {
+  let lastError = null;
+
+  for (const model of modelsToTry) {
     try {
-      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`;
       const response = await fetch(nativeUrl, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": GEMINI_API_KEY,
+        },
         body: JSON.stringify({
           contents: [
             {
               parts: [
                 {
                   text:
-                    "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Follow the requested JSON format exactly. Do not provide markdown code blocks, explanations, or reasoning.\n\n" +
+                    "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Return ONLY valid JSON adhering to the requested schema. Do not provide markdown code blocks, explanations, or reasoning.\n\n" +
                     prompt,
                 },
               ],
@@ -1670,86 +1691,43 @@ async function requestGemini(candidates) {
         signal: AbortSignal.timeout(45000),
       });
 
-      if (response.ok) {
-        const payload = await response.json();
-        content = payload?.candidates?.[0]?.content?.parts?.[0]?.text || "";
-      } else {
+      if (!response.ok) {
         const errText = await response.text();
-        console.warn(`[Gemini Native] HTTP ${response.status}: ${truncateText(errText, 200)}`);
+        console.warn(`[Gemini Native] ${model} HTTP ${response.status}: ${truncateText(errText, 300)}`);
+        lastError = new Error(`Gemini ${model} failed with HTTP ${response.status}: ${truncateText(errText, 150)}`);
+        continue;
       }
-    } catch (nativeErr) {
-      console.warn(`[Gemini Native] error: ${nativeErr.message}`);
+
+      const payload = await response.json();
+      const content = payload?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      if (!content.trim()) {
+        console.warn(`[Gemini Native] ${model} returned an empty content response.`);
+        continue;
+      }
+
+      const parsed = safeJsonParse(content);
+      if (!parsed) {
+        console.warn(`[Gemini Native] Could not parse ${model} content as JSON: ${truncateText(content, 200)}`);
+        continue;
+      }
+
+      const articles = extractArticleArray(parsed);
+      console.log(`Gemini (${model}) returned ${articles.length} article results.`);
+      if (!articles || articles.length === 0) {
+        console.warn(`[Gemini Native] ${model} returned 0 valid article objects.`);
+        continue;
+      }
+
+      // 6.0s delay guarantees instantaneous rate stays <= 7.5 RPM, well below Gemini 10 RPM ceiling
+      await sleep(6000);
+      return articles;
+    } catch (err) {
+      console.warn(`[Gemini Native] ${model} error: ${err.message}`);
+      lastError = err;
     }
   }
 
-  // 2. OpenAI-compatible endpoint fallback
-  if (!content.trim()) {
-    const response = await fetch(GEMINI_API_URL, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${GEMINI_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: GEMINI_MODEL,
-        messages: [
-          {
-            role: "system",
-            content:
-              "You are an authoritative cybersecurity intelligence editor. Summarize each news item into an exact 50-60 word technical brief using 3 high-density sentences. Follow the requested JSON format exactly. Do not provide markdown code blocks, explanations, or reasoning.",
-          },
-          {
-            role: "user",
-            content: prompt,
-          },
-        ],
-        response_format: { type: "json_object" },
-        temperature: 0.2,
-        max_tokens: MAX_COMPLETION_TOKENS,
-      }),
-      signal: AbortSignal.timeout(45000),
-    });
-
-    const responseText = await response.text();
-    let payload = null;
-
-    try {
-      payload = JSON.parse(responseText);
-    } catch {
-      throw new Error(
-        `Gemini returned non-JSON HTTP response: ${truncateText(responseText, 500)}`,
-      );
-    }
-
-    if (!response.ok) {
-      throw new Error(
-        payload?.error?.message ||
-          `Gemini request failed with HTTP ${response.status}`,
-      );
-    }
-
-    const choice = payload?.choices?.[0];
-    content = choice?.message?.content || "";
-  }
-
-  if (!content.trim()) {
-    throw new Error("Gemini returned an empty content response.");
-  }
-
-  const parsed = safeJsonParse(content);
-  if (!parsed) {
-    throw new Error("Could not parse Gemini content as JSON.");
-  }
-
-  const articles = extractArticleArray(parsed);
-  console.log(`Gemini returned ${articles.length} article results.`);
-  if (!articles || articles.length === 0) {
-    throw new Error("Gemini returned 0 valid article objects.");
-  }
-
-  // 6.0s delay guarantees instantaneous rate stays <= 7.5 RPM, well below Gemini 2.5 Flash 10 RPM ceiling
-  await sleep(6000);
-  return articles;
+  throw lastError || new Error("All Gemini models failed to generate content.");
 }
 
 // -----------------------------------------------------------------------------
@@ -1804,6 +1782,10 @@ async function requestOpenRouter(candidates) {
   }
 
   if (!response.ok) {
+    if (response.status === 401 || payload?.error?.message?.includes("User not found")) {
+      openRouterPermanentlyFailed = true;
+      console.warn("[OpenRouter] Invalid credentials (HTTP 401 / User not found). Deactivating OpenRouter for this run.");
+    }
     throw new Error(
       payload?.error?.message ||
         `OpenRouter request failed with HTTP ${response.status}`,
@@ -1844,7 +1826,7 @@ function getRotatedEngines() {
     primaryPool.push({ name: `Gemini (${GEMINI_MODEL})`, run: requestGemini });
   }
 
-  if (primaryPool.length === 0 && !OPENROUTER_API_KEY) return [];
+  if (primaryPool.length === 0 && (!OPENROUTER_API_KEY || openRouterPermanentlyFailed)) return [];
 
   // Alternates hourly lead 50/50 between Groq and Gemini (12 hours each per day)
   let rotated = [];
@@ -1856,7 +1838,7 @@ function getRotatedEngines() {
 
   // OpenRouter is kept strictly as the last-resort failover engine
   // to protect its unfunded 50 req/day free tier from being tripped by routine lead hours
-  if (OPENROUTER_API_KEY) {
+  if (OPENROUTER_API_KEY && !openRouterPermanentlyFailed) {
     rotated.push({ name: `OpenRouter (${OPENROUTER_MODEL})`, run: requestOpenRouter });
   }
 
@@ -2032,92 +2014,124 @@ function extractSubjectAnchors(title, summary) {
 async function requestGroqContextComparison(storyA, storyB, prompt) {
   if (!GROQ_API_KEY) throw new Error("GROQ_API_KEY not configured");
 
-  const response = await fetch(GROQ_API_URL, {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${GROQ_API_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      model: GROQ_MODEL,
-      messages: [
-        {
-          role: 'system',
-          content: 'You are an authoritative cybersecurity intelligence editor. Return valid JSON adhering strictly to the requested schema.'
+  const candidateModels = [GROQ_MODEL, "llama-3.3-70b-versatile", "llama-3.1-8b-instant"].filter(
+    (m, idx, arr) => arr.indexOf(m) === idx,
+  );
+
+  let lastError = null;
+  for (const model of candidateModels) {
+    try {
+      const response = await fetch(GROQ_API_URL, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${GROQ_API_KEY}`,
+          'Content-Type': 'application/json'
         },
-        { role: 'user', content: prompt }
-      ],
-      response_format: { type: 'json_object' },
-      reasoning_effort: 'low',
-      temperature: 0.1,
-      max_tokens: 1200
-    })
-  });
+        body: JSON.stringify({
+          model,
+          messages: [
+            {
+              role: 'system',
+              content: 'You are an authoritative cybersecurity intelligence editor. Return valid JSON adhering strictly to the requested schema.'
+            },
+            { role: 'user', content: prompt }
+          ],
+          response_format: { type: 'json_object' },
+          temperature: 0.1,
+          max_completion_tokens: 1200
+        }),
+        signal: AbortSignal.timeout(30000)
+      });
 
-  const text = await response.text();
-  let payload = null;
-  try {
-    payload = JSON.parse(text);
-  } catch {
-    throw new Error(`Groq returned non-JSON: ${truncateText(text, 200)}`);
+      const text = await response.text();
+      let payload = null;
+      try {
+        payload = JSON.parse(text);
+      } catch {
+        lastError = new Error(`Groq returned non-JSON: ${truncateText(text, 200)}`);
+        continue;
+      }
+
+      if (!response.ok) {
+        lastError = new Error(payload?.error?.message || `Groq HTTP ${response.status}`);
+        continue;
+      }
+
+      const content = payload?.choices?.[0]?.message?.content || '';
+      const parsed = safeJsonParse(content);
+      if (!parsed) {
+        lastError = new Error("Could not parse Groq context comparison response as JSON");
+        continue;
+      }
+
+      await sleep(2500);
+      return parsed;
+    } catch (err) {
+      lastError = err;
+    }
   }
 
-  if (!response.ok) {
-    throw new Error(payload?.error?.message || `Groq HTTP ${response.status}`);
-  }
-
-  const content = payload?.choices?.[0]?.message?.content || '';
-  const parsed = safeJsonParse(content);
-  if (!parsed) throw new Error("Could not parse Groq context comparison response as JSON");
-
-  // Spacing delay: keeps Groq token usage and RPM spaced during deduplication
-  await sleep(2500);
-  return parsed;
+  throw lastError || new Error("All Groq models failed for context comparison.");
 }
 
 async function requestGeminiContextComparison(storyA, storyB, prompt) {
   if (!GEMINI_API_KEY) throw new Error("GEMINI_API_KEY not configured");
 
-  const response = await fetch(GEMINI_API_URL, {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${GEMINI_API_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      model: GEMINI_MODEL,
-      messages: [
-        {
-          role: 'system',
-          content: 'You are an authoritative cybersecurity intelligence editor. Return valid JSON adhering strictly to the requested schema.'
+  const candidateModels = [GEMINI_MODEL, "gemini-2.5-flash", "gemini-1.5-flash", "gemini-2.0-flash"].filter(
+    (m, idx, arr) => arr.indexOf(m) === idx,
+  );
+
+  let lastError = null;
+  for (const model of candidateModels) {
+    try {
+      const nativeUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`;
+      const response = await fetch(nativeUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": GEMINI_API_KEY,
         },
-        { role: 'user', content: prompt }
-      ],
-      response_format: { type: 'json_object' },
-      temperature: 0.1,
-      max_completion_tokens: 1200
-    })
-  });
+        body: JSON.stringify({
+          contents: [
+            {
+              parts: [
+                {
+                  text: prompt,
+                },
+              ],
+            },
+          ],
+          generationConfig: {
+            responseMimeType: "application/json",
+            temperature: 0.1,
+            maxOutputTokens: 1200,
+          },
+        }),
+        signal: AbortSignal.timeout(30000),
+      });
 
-  const text = await response.text();
-  let payload = null;
-  try {
-    payload = JSON.parse(text);
-  } catch {
-    throw new Error(`Gemini returned non-JSON: ${truncateText(text, 200)}`);
+      if (!response.ok) {
+        const errText = await response.text();
+        lastError = new Error(`Gemini ${model} comparison HTTP ${response.status}: ${truncateText(errText, 150)}`);
+        continue;
+      }
+
+      const payload = await response.json();
+      const content = payload?.candidates?.[0]?.content?.parts?.[0]?.text || "";
+      const parsed = safeJsonParse(content);
+      if (!parsed) {
+        lastError = new Error(`Could not parse Gemini ${model} comparison response as JSON`);
+        continue;
+      }
+
+      await sleep(6000);
+      return parsed;
+    } catch (err) {
+      lastError = err;
+    }
   }
 
-  if (!response.ok) {
-    throw new Error(payload?.error?.message || `Gemini HTTP ${response.status}`);
-  }
-
-  const content = payload?.choices?.[0]?.message?.content || '';
-  const parsed = safeJsonParse(content);
-  if (!parsed) throw new Error("Could not parse Gemini context comparison response as JSON");
-
-  // Pacing delay: guarantees Gemini comparison requests strictly respect the 10 RPM ceiling
-  await sleep(6000);
-  return parsed;
+  throw lastError || new Error("All Gemini models failed for context comparison.");
 }
 
 async function requestOpenRouterContextComparison(storyA, storyB, prompt) {
