@@ -186,6 +186,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-svg-use-after-free-cve-2026-118308-af2a1f21",
+    "title": "Chromium SVG Use-After-Free CVE-2026-118308",
+    "summary": "A use‑after‑free flaw in Chromium’s SVG engine, CVE‑2026‑118308, can be triggered by crafted SVG files in Microsoft Edge (Chromium‑based). The flaw allows arbitrary memory access that could lead to code execution, but no public exploit has been released. Google and Microsoft have patched the issue in recent Chrome releases; users should upgrade to the latest Chromium build.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118308"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-svg-use-after-free-cve-2026-118308",
+      "article-af2a1f21",
+      "af2a1f21",
+      "chromium-svg-use-after-free-cve-2026-118308-1fe91c"
+    ]
+  },
+  {
+    "slug": "chromium-views-input-validation-cve-2026-118310-bcb67e7c",
+    "title": "Chromium Views Input Validation CVE-2026-118310",
+    "summary": "Chromium’s Views component has an improper input validation flaw, CVE‑2026‑118310, triggered by malformed view data in Microsoft Edge (Chromium‑based). The flaw could enable memory corruption or code execution, but no public exploit has been disclosed. Google and Microsoft patched the issue in recent Chrome releases; users should upgrade to the latest Chromium build.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118310"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-views-input-validation-cve-2026-118310",
+      "article-bcb67e7c",
+      "bcb67e7c",
+      "chromium-views-input-validation-cve-2026-118310-1fe91c"
+    ]
+  },
+  {
     "slug": "chromium-improper-input-validation-in-v8-cve-2026-9ea55134",
     "title": "Chromium Improper Input Validation in V8 (CVE-2026-118316)",
     "summary": "CVE-2026-118316 reveals an improper input validation flaw in Chromium’s V8 engine, affecting Microsoft Edge. The flaw could allow crafted input to trigger arbitrary code execution, though no public exploit is known. Users should install the latest Chromium-based update, and vendors should review Chrome release notes for mitigation in production globally.",
@@ -1230,6 +1270,24 @@ export const news: NewsBrief[] = [
       "article-ba1f00a4",
       "ba1f00a4",
       "help-desk-impersonation-enables-ad-cs-abuse-27f822"
+    ]
+  },
+  {
+    "slug": "trezor-safe-5-hardware-implant-warning-1e6a73b4",
+    "title": "Trezor Safe 5 Hardware Implant Warning",
+    "summary": "Trezor warned that a Trezor Safe 5 sold by reseller CryptoBilis in Southeast Asia may contain a suspected crypto‑theft implant. The implant could extract private keys and authorize unauthorized transfers, representing a device‑level breach that could compromise stored cryptocurrencies. Trezor recommends verifying firmware authenticity, applying the latest firmware update, and monitoring for anomalous transaction activity to mitigate theft.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
+    "publishedAt": "2026-10-30T15:58:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trezor-safe-5-hardware-implant-warning",
+      "article-1e6a73b4",
+      "1e6a73b4",
+      "trezor-safe-5-hardware-implant-warning-6a9779"
     ]
   },
   {
@@ -2778,6 +2836,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-tomcat-security-update-rhsa-2026-92863-2f7ed757",
+    "title": "Red Hat Tomcat Security Update RHSA-2026-92863",
+    "summary": "Red Hat released an important update for Apache Tomcat on RHEL 10.0 EUS, addressing multiple security issues identified in the RHSA‑2026‑92863 advisory. The advisory rates the update as Important, with CVSS base scores available for each referenced CVE, indicating medium‑to‑high severity vulnerabilities. Administrators should apply the Tomcat update immediately to mitigate the identified flaws and maintain system security.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92863",
+    "publishedAt": "2026-10-29T22:17:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-tomcat-security-update-rhsa-2026-92863",
+      "article-2f7ed757",
+      "2f7ed757",
+      "red-hat-tomcat-security-update-rhsa-2026-92863-37d993"
+    ]
+  },
+  {
     "slug": "hugging-face-models-hijack-gpus-for-mining-c9bef434",
     "title": "Hugging Face Models Hijack GPUs for Mining",
     "summary": "A crypto‑mining campaign targeting Hugging Face models has resurfaced, hijacking GPU servers and installing backdoors after model downloads. The malware exploits insecure model hosting to inject mining code, affecting over 28,000 downloads. Security teams should block suspicious model traffic and apply host‑based intrusion detection to detect and remove the backdoor.",
@@ -2870,6 +2946,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hokuriku-telecommunications-deploys-arctic-wolf-ma-448a5b8d",
+    "title": "Hokuriku Telecommunications Deploys Arctic Wolf Managed EDR",
+    "summary": "Hokuriku Telecommunications Network deployed Arctic Wolf managed endpoint detection and response services to establish continuous enterprise threat monitoring. The operational deployment integrated twenty-four-seven system oversight to reduce administrative overhead while enhancing corporate defensive security capabilities. Organizations seeking optimized security operations should evaluate managed detection solutions to maintain continuous endpoint visibility and minimize incident response latency.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/datasheet-jp/htnet/",
+    "publishedAt": "2026-10-29T20:57:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hokuriku-telecommunications-deploys-arctic-wolf-ma",
+      "article-448a5b8d",
+      "448a5b8d",
+      "hokuriku-telecommunications-deploys-arctic-wolf-ma-5e7cd7",
+      "hokuriku-telecommunications-deploys-arctic-wolf-managed-edr"
+    ]
+  },
+  {
     "slug": "threatsday-highlights-firewall-flaws-and-trojans-2c557b1c",
     "title": "ThreatsDay Highlights Firewall Flaws and Trojans",
     "summary": "ThreatsDay lists 26 incidents, including critical firewall flaws exposing network perimeters, rented banking trojans harvesting credentials, weaponized PDFs exploiting parsing bugs, and OAuth token theft. These events combine advanced exploitation with misconfigurations, enabling attackers to gain unauthorized access or exfiltrate data. Teams should patch firewalls, update software, and monitor token usage to mitigate risks.",
@@ -2904,6 +2999,25 @@ export const news: NewsBrief[] = [
       "734f0d76",
       "claude-ai-chains-exploits-across-major-browsers-an-11f7cd",
       "claude-ai-chains-exploits-across-major-browsers-and-oses"
+    ]
+  },
+  {
+    "slug": "cisco-talos-analyzes-php-and-node-js-security-tren-0676a8ce",
+    "title": "Cisco Talos Analyzes PHP and Node.js Security Trends",
+    "summary": "Cisco Talos released a Threat Source newsletter examining recent security discussions surrounding PHP and Node.js ecosystem developments. The intelligence overview details shifting threat landscapes and developer community responses to emerging application vulnerabilities across both runtime environments. Defensive teams should monitor ongoing software environment disclosures and review language-specific component updates to maintain application security.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/a-quiet-week-in-infosec/",
+    "publishedAt": "2026-10-29T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-talos-analyzes-php-and-node-js-security-tren",
+      "article-0676a8ce",
+      "0676a8ce",
+      "cisco-talos-analyzes-php-and-node-js-security-tren-1263ff",
+      "cisco-talos-analyzes-php-and-node-js-security-trends"
     ]
   },
   {
@@ -2986,6 +3100,25 @@ export const news: NewsBrief[] = [
       "77cf8b47",
       "opencode-user-faces-harassment-following-ai-loopho-22e2c2",
       "opencode-user-faces-harassment-following-ai-loophole-disclos"
+    ]
+  },
+  {
+    "slug": "microsoft-tracks-ai-adoption-by-north-korean-threa-08648ac9",
+    "title": "Microsoft Tracks AI Adoption by North Korean Threat Actors",
+    "summary": "Microsoft Threat Intelligence identified North Korean nation-state threat actors incorporating artificial intelligence tools into their operational attack chains. Cyber espionage groups leverage artificial intelligence technology to accelerate attack execution speeds and increase operational efficiency across target environments. Security teams should analyze adversary tradecraft shifts, implement advanced threat hunting telemetry, and enforce strict monitoring around corporate artificial intelligence usage.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+    "publishedAt": "2026-10-29T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-tracks-ai-adoption-by-north-korean-threa",
+      "article-08648ac9",
+      "08648ac9",
+      "microsoft-tracks-ai-adoption-by-north-korean-threa-47996f",
+      "microsoft-tracks-ai-adoption-by-north-korean-threat-actors"
     ]
   },
   {
@@ -3388,6 +3521,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-relay-disables-security-in-openai-codex-claude-f498c143",
+    "title": "AI Relay Disables Security in OpenAI Codex, Claude",
+    "summary": "An unnamed AI relay delivers OpenAI Codex and Anthropic Claude to regions lacking official access, but with security features disabled. Turning off sandboxing and monitoring exposes users to code injection, data exfiltration, and unauthorized execution, though no attacks have been confirmed. Defenders should verify AI service provenance, enforce local sandboxing, and apply extra security controls to mitigate compromised code.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes",
+    "publishedAt": "2026-10-29T10:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-relay-disables-security-in-openai-codex-claude",
+      "article-f498c143",
+      "f498c143",
+      "ai-relay-disables-security-in-openai-codex-claude-18e3c2"
+    ]
+  },
+  {
     "slug": "nik-c2-ai-enabled-command-and-control-framework-738aa85a",
     "title": "NIK C2: AI-Enabled Command‑and‑Control Framework",
     "summary": "Cisco Talos identified a new AI‑enabled command‑and‑control framework named NIK C2 operating in the wild. NIK C2 uses machine‑learning models to generate obfuscated command payloads, enabling dynamic evasion of signature‑based detection systems. Security teams should update endpoint detection rules, block known C2 domains, and monitor for anomalous outbound traffic patterns associated with NIK C2.",
@@ -3522,6 +3673,43 @@ export const news: NewsBrief[] = [
       "d9e69f4a",
       "palo-alto-management-interfaces-targeted-via-explo-5efa60",
       "palo-alto-management-interfaces-targeted-via-exploited-php2s"
+    ]
+  },
+  {
+    "slug": "vapor-panda-deploys-ai-driven-artex-for-espionage-2fe61e19",
+    "title": "VAPOR PANDA Deploys AI‑Driven ARTEX for Espionage",
+    "summary": "VAPOR PANDA, a threat actor, is using the AI‑driven ARTEX framework to expand a global espionage campaign. ARTEX automates data exfiltration and obfuscation, enabling large‑scale credential theft and surveillance across multiple industries, though no confirmed breaches are reported. Security teams should monitor for ARTEX signatures, enforce strict access controls, and deploy AI‑based detection to mitigate potential espionage.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vapor-panda-deploys-ai-driven-artex-for-espionage",
+      "article-2fe61e19",
+      "2fe61e19",
+      "vapor-panda-deploys-ai-driven-artex-for-espionage-33d641"
+    ]
+  },
+  {
+    "slug": "prompt-injection-techniques-enable-agent-planning-b934d3c0",
+    "title": "Prompt Injection Techniques Enable Agent‑Planning Attacks",
+    "summary": "New prompt injection methods now allow attackers to manipulate AI agents into planning and executing malicious actions. These techniques bypass input sanitization, enabling instruction injection that can lead to data access or violations, though no widespread exploitation has been reported. Defenders should update AI platform safeguards, enforce strict prompt validation, and monitor for anomalous agent behavior to mitigate potential attacks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/new-prompt-injection-techniques-cover-agent-planning-attacks/",
+    "publishedAt": "2026-10-29T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "prompt-injection-techniques-enable-agent-planning",
+      "article-b934d3c0",
+      "b934d3c0",
+      "prompt-injection-techniques-enable-agent-planning-57196e",
+      "prompt-injection-techniques-enable-agent-planning-attacks"
     ]
   },
   {
@@ -3855,6 +4043,46 @@ export const news: NewsBrief[] = [
       "article-8a5dcbd8",
       "8a5dcbd8",
       "keystone-wallets-key-theft-recall-5e44c0"
+    ]
+  },
+  {
+    "slug": "microsoft-authenticator-android-leak-patch-57050d40",
+    "title": "Microsoft Authenticator Android Leak Patch",
+    "summary": "Microsoft Authenticator for Android work accounts contains CVE-2026-80097, enabling credential leakage in enterprise environments. The flaw stems from improper input validation in the authentication flow, a CVSS 8.1 issue exploitable without user interaction. Microsoft released a patch; apply the latest Authenticator version today and monitor telemetry for anomalous authentication attempts.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/microsoft-authenticator-flaw-let-permissionless-android",
+    "publishedAt": "2026-10-29T00:50:30.000Z",
+    "cves": [
+      "CVE-2026-80097"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-authenticator-android-leak-patch",
+      "article-57050d40",
+      "57050d40",
+      "microsoft-authenticator-android-leak-patch-b2618f"
+    ]
+  },
+  {
+    "slug": "apple-coregraphics-memory-flaw-patch-5bf9a0e7",
+    "title": "Apple CoreGraphics Memory Flaw Patch",
+    "summary": "Apple CoreGraphics on iOS contains CVE-2026-86950, a memory corruption flaw that can lead to arbitrary code execution. The vulnerability arises from unchecked pointer arithmetic in the graphics rendering pipeline, a CVSS 8.5 issue exploitable without user interaction. Apple has issued a patch; update iOS to the latest version today and enable CoreGraphics telemetry to detect anomalous rendering activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/apple-backports-fix-for-exploited-coregraphics-flaw-to",
+    "publishedAt": "2026-10-29T00:50:25.000Z",
+    "cves": [
+      "CVE-2026-86950"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apple-coregraphics-memory-flaw-patch",
+      "article-5bf9a0e7",
+      "5bf9a0e7",
+      "apple-coregraphics-memory-flaw-patch-6497ef"
     ]
   },
   {
@@ -6539,241 +6767,6 @@ export const news: NewsBrief[] = [
       "3bedd6fd",
       "zdi-26-811-mailenable-parseobjectresponse-xml-exte-6f3c97",
       "zdi-26-811-mailenable-parseobjectresponse-xml-external-entit"
-    ]
-  },
-  {
-    "slug": "zdi-26-810-mailenable-auth-cleartext-storage-infor-b5258d55",
-    "title": "ZDI-26-810: MailEnable Auth Cleartext Storage Information Disclosure Vulnerability",
-    "summary": "An unauthenticated information disclosure flaw in MailEnable’s authentication module permits attackers to read stored cleartext credentials from affected systems. The issue, referenced as CVE-2026-114551, has a CVSS score of 5.9 and does not require prior authentication. MailEnable has issued a patch; security teams should update promptly to prevent credential exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-810/",
-    "publishedAt": "2026-10-27T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-114551"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-810-mailenable-auth-cleartext-storage-infor",
-      "article-b5258d55",
-      "b5258d55",
-      "zdi-26-810-mailenable-auth-cleartext-storage-infor-6f3c97",
-      "zdi-26-810-mailenable-auth-cleartext-storage-information-dis"
-    ]
-  },
-  {
-    "slug": "red-hat-enterprise-linux-8-6-rhc-client-security-u-370b894b",
-    "title": "Red Hat Enterprise Linux 8.6 rhc Client Security Update Addresses Critical Flaw",
-    "summary": "An update for the Red Hat Enterprise Linux 8.6 rhc client fixes a security flaw in Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. Red Hat Product Security rates the issue as Important, with a CVSS base score listed in the CVE references, but no public exploit.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90725",
-    "publishedAt": "2026-10-27T04:35:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-enterprise-linux-8-6-rhc-client-security-u",
-      "article-370b894b",
-      "370b894b",
-      "red-hat-enterprise-linux-8-6-rhc-client-security-u-37da80",
-      "red-hat-enterprise-linux-8-6-rhc-client-security-update-addr"
-    ]
-  },
-  {
-    "slug": "chromeos-lts-150-update-addresses-multiple-cves-9b0b324b",
-    "title": "ChromeOS LTS-150 Update Addresses Multiple CVEs",
-    "summary": "ChromeOS LTS-150 version 150.0.7871.287 is being rolled out, addressing several CVEs including CVE-2026-103629, CVE-2026-110166, CVE-2026-113279, and CVE-2026-110138. The vulnerabilities involve integer overflows, buffer overflows, memory corruption, and use‑after‑free conditions across Skia, Animation, Accessibility, Payments, Core, Compositing, Video, and ShapeDetection components. Users should install the update promptly to mitigate the identified security flaws.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/long-term-support-channel-update-for_0661547040.html",
-    "publishedAt": "2026-10-27T02:10:25.437Z",
-    "cves": [
-      "CVE-2026-103629",
-      "CVE-2026-110166",
-      "CVE-2026-113279",
-      "CVE-2026-110138"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-lts-150-update-addresses-multiple-cves",
-      "article-9b0b324b",
-      "9b0b324b",
-      "chromeos-lts-150-update-addresses-multiple-cves-732b9d"
-    ]
-  },
-  {
-    "slug": "apple-releases-patch-for-cve-2026-109618-and-303-o-dccb9c82",
-    "title": "Apple Releases Patch for CVE-2026-109618 and 303 Other Vulnerabilities",
-    "summary": "Apple issued a patch update covering 304 vulnerabilities, including CVE-2026-109618, as part of its October 2026 security release. The update addresses a range of issues across macOS and iOS platforms, though specific technical details are not disclosed. Users are advised to apply the latest update to ensure protection against the identified weaknesses.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/33458",
-    "publishedAt": "2026-10-27T02:09:55.000Z",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-patch-for-cve-2026-109618-and-303-o",
-      "article-dccb9c82",
-      "dccb9c82",
-      "apple-releases-patch-for-cve-2026-109618-and-303-o-57dd7e",
-      "apple-releases-patch-for-cve-2026-109618-and-303-other-vulne"
-    ]
-  },
-  {
-    "slug": "penetration-tester-arrested-for-artex-ai-breach-of-3aadda82",
-    "title": "Penetration Tester Arrested for ARTEX AI Breach of 90 South Korean Organizations",
-    "summary": "A penetration tester weaponized the ARTEX AI framework to breach 90 South Korean organizations, leading to seven arrests. The breach leveraged ARTEX AI’s automated credential harvesting and lateral movement, exfiltrating sensitive data and demanding ransom from. Security teams should rotate credentials, enable multi‑factor authentication, and monitor AI‑driven anomalies to mitigate similar attacks in 2026.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/seoul-police-arrest-pentester-over-82m-artex-ai-breach",
-    "publishedAt": "2026-10-27T00:59:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "penetration-tester-arrested-for-artex-ai-breach-of",
-      "article-3aadda82",
-      "3aadda82",
-      "penetration-tester-arrested-for-artex-ai-breach-of-58f8a2",
-      "penetration-tester-arrested-for-artex-ai-breach-of-90-south-"
-    ]
-  },
-  {
-    "slug": "cve-2026-111497-enables-remote-code-execution-in-p-a19a0975",
-    "title": "CVE-2026-111497 Enables Remote Code Execution in PHP Windows Packages",
-    "summary": "CVE-2026-111497 permits remote code execution in PHP Windows packages via Brotli auto‑decompression triggered by cURL and Guzzle. The CVSS 9.2 flaw allows unauthenticated attackers to run arbitrary code on affected servers, threatening web applications. PHP released a patch for the Windows build; apply it immediately or disable Brotli decompression as a workaround.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-111497-php-windows-brotli-memory-corruption-patch-guide",
-    "publishedAt": "2026-10-27T00:59:11.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-111497-enables-remote-code-execution-in-p",
-      "article-a19a0975",
-      "a19a0975",
-      "cve-2026-111497-enables-remote-code-execution-in-p-2b6599",
-      "cve-2026-111497-enables-remote-code-execution-in-php-windows"
-    ]
-  },
-  {
-    "slug": "magento-cms-skimmer-exploit-compromises-953-stores-04c458d4",
-    "title": "Magento CMS Skimmer Exploit Compromises 953 Stores",
-    "summary": "Attackers exploited a flaw in Magento CMS, injecting JavaScript skimmers via cms_block poisoning and PolyShell RCE, compromising over 953 e‑commerce stores. The flaw allows arbitrary code execution via cms_block, enabling PolyShell payloads; the exploit is actively used in the wild with no public PoC. Magento has released a patch; administrators should apply the latest update and disable unused cms_block modules.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/magento-cms-skimmer-how-to-detect-block-953-store-attack",
-    "publishedAt": "2026-10-27T00:58:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "magento-cms-skimmer-exploit-compromises-953-stores",
-      "article-04c458d4",
-      "04c458d4",
-      "magento-cms-skimmer-exploit-compromises-953-stores-7aa7f5"
-    ]
-  },
-  {
-    "slug": "fragmented-ai-security-benchmarks-fail-to-capture-560242ce",
-    "title": "Fragmented AI Security Benchmarks Fail to Capture Real‑World Threats",
-    "summary": "The proliferation of AI security benchmarks creates fragmented evaluation landscapes, with each metric focusing on distinct aspects of model robustness. Because benchmarks target isolated variables, they fail to capture real‑world attack vectors, underscoring the need for integrated testing against proprietary codebases. Security teams should supplement benchmark results with internal penetration tests and continuous monitoring to ensure comprehensive AI model protection.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
-    "publishedAt": "2026-10-27T00:26:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fragmented-ai-security-benchmarks-fail-to-capture",
-      "article-560242ce",
-      "560242ce",
-      "fragmented-ai-security-benchmarks-fail-to-capture-6eb353",
-      "fragmented-ai-security-benchmarks-fail-to-capture-real-world"
-    ]
-  },
-  {
-    "slug": "flaw-in-ignition-component-of-rhel-9-4-sap-solutio-59b158a0",
-    "title": "Flaw in Ignition Component of RHEL 9.4 SAP Solutions Enables Local Privilege Escalation",
-    "summary": "A flaw in the ignition component of Red Hat Enterprise Linux 9.4 SAP Solutions permits local privilege escalation. The issue stems from improper input validation; CVSS scores 7.0‑8.5 and a public PoC confirm exploitability, making it a high‑risk vulnerability. Red Hat released an update; apply the patch immediately to remediate the vulnerability today.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90518",
-    "publishedAt": "2026-10-27T00:05:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "flaw-in-ignition-component-of-rhel-9-4-sap-solutio",
-      "article-59b158a0",
-      "59b158a0",
-      "flaw-in-ignition-component-of-rhel-9-4-sap-solutio-37da88",
-      "flaw-in-ignition-component-of-rhel-9-4-sap-solutions-enables"
-    ]
-  },
-  {
-    "slug": "university-of-copenhagen-data-breach-exposes-525-0-a2bdf36f",
-    "title": "University of Copenhagen Data Breach Exposes 525,000 Personal Records",
-    "summary": "Hackers accessed a test environment at the University of Copenhagen, exposing personal data of 525,000 individuals. The breach involved unauthorized entry into a non-production system, revealing names, addresses, and student IDs. The university has notified affected parties and is conducting a forensic investigation, urging users to monitor for identity theft.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
-    "publishedAt": "2026-10-26T22:20:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "university-of-copenhagen-data-breach-exposes-525-0",
-      "article-a2bdf36f",
-      "a2bdf36f",
-      "university-of-copenhagen-data-breach-exposes-525-0-59b7e3",
-      "university-of-copenhagen-data-breach-exposes-525-000-persona"
-    ]
-  },
-  {
-    "slug": "cloudflare-workers-ai-glm-5-3-kv-cache-exposure-6c61b78a",
-    "title": "Cloudflare Workers AI GLM‑5.3 KV Cache Exposure",
-    "summary": "A configuration mismatch in Cloudflare Workers AI’s GLM‑5.3 model exposed KV cache pages across requests via an SGLang bug. The flaw allowed unauthenticated readers to retrieve sensitive session data, creating a cross‑request information disclosure with potential credential leakage. Cloudflare released a patch correcting the SGLang configuration and recommends updating to the latest Workers AI runtime to mitigate the exposure.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-    "publishedAt": "2026-10-26T22:01:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-workers-ai-glm-5-3-kv-cache-exposure",
-      "article-6c61b78a",
-      "6c61b78a",
-      "cloudflare-workers-ai-glm-5-3-kv-cache-exposure-5ff437"
-    ]
-  },
-  {
-    "slug": "nvidia-executive-urges-cisos-to-own-ai-risks-6b5e3559",
-    "title": "Nvidia Executive Urges CISOs to Own AI Risks",
-    "summary": "Nvidia security executive Mark Weatherford emphasized that CISOs must guide business leaders in evaluating AI benefits and risks. The briefing highlighted that organizations deploying AI must retain ownership of associated security responsibilities and risk mitigation. No vendor patch or technical fix is required; the focus remains on governance and risk management practices.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
-    "publishedAt": "2026-10-26T21:44:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-executive-urges-cisos-to-own-ai-risks",
-      "article-6b5e3559",
-      "6b5e3559",
-      "nvidia-executive-urges-cisos-to-own-ai-risks-1d1431"
     ]
   }
 ];
