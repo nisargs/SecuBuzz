@@ -73,7 +73,7 @@ export function VendorSelect({ value, onChange, vendors, totalCount }: VendorSel
         onClick={() => setIsOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`inline-flex h-8 min-w-[160px] max-w-[220px] items-center justify-between gap-1.5 rounded-md border border-line bg-surface px-2.5 text-xs text-ink transition-colors hover:border-subtle/60 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent/20 ${
+        className={`inline-flex h-8 min-w-[160px] max-w-[220px] items-center justify-between gap-1.5 rounded-md border border-line bg-surface px-2.5 font-sans text-xs font-normal text-ink transition-colors hover:border-subtle/60 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent/20 ${
           isOpen ? 'border-accent ring-1 ring-accent/20' : ''
         }`}
       >

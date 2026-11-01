@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeftIcon, ArrowUpRightIcon, ShieldAlertIcon, ActivityIcon, CopyIcon, CheckIcon, Share2Icon } from 'lucide-react';
+import { ArrowLeftIcon, ArrowUpRightIcon, ShieldAlertIcon, ActivityIcon, CopyIcon, CheckIcon, Share2Icon, Bookmark } from 'lucide-react';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
+import { useMyStack } from '../data/useMyStack';
 import { useLiveNews } from '../data/useLiveNews';
 import { SeverityBadge } from '../components/SeverityBadge';
 import { AppCta } from '../components/AppCta';
@@ -37,6 +38,7 @@ export function AdvisoryDetail() {
   const { slug } = useParams();
   const { advisories, loading: loadingAdv } = useLiveAdvisories();
   const { news } = useLiveNews();
+  const myStack = useMyStack();
 
   const isCveSlug = /^cve-\d{4}-\d+$/i.test(slug || '');
   const cveCode = isCveSlug ? (slug || '').toUpperCase() : '';
@@ -324,6 +326,18 @@ export function AdvisoryDetail() {
                     Copy Link
                   </>
                 )}
+              </button>
+              <button
+                type="button"
+                onClick={() => myStack.toggleWatchCve(advisory.cve)}
+                className={`inline-flex items-center gap-1.5 rounded border px-2.5 py-1 font-mono text-xs font-medium transition-colors duration-150 ease-out cursor-pointer ${
+                  myStack.isWatchingCve(advisory.cve)
+                    ? 'border-accent/60 bg-accent/15 text-accent hover:border-critical hover:text-critical'
+                    : 'border-line bg-surface text-ink hover:border-accent hover:text-accent'
+                }`}
+                title={myStack.isWatchingCve(advisory.cve) ? 'Remove CVE from Watchlist' : 'Watch this CVE in My Stack'}>
+                <Bookmark className={`h-3.5 w-3.5 ${myStack.isWatchingCve(advisory.cve) ? 'fill-accent' : ''}`} />
+                <span>{myStack.isWatchingCve(advisory.cve) ? 'Watching CVE' : 'Watch CVE'}</span>
               </button>
             </div>
           </div>

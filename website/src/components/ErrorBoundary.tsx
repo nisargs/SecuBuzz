@@ -32,6 +32,11 @@ export class ErrorBoundary extends Component<Props, State> {
           <p className="mt-2 text-sm text-muted">
             The error has been safely caught. You can return to the previous screen or reload.
           </p>
+          {this.state.error && (
+            <pre className="mt-4 mx-auto max-w-2xl text-left bg-surface border border-critical/40 p-3 rounded text-[11px] font-mono text-critical overflow-auto max-h-48 whitespace-pre-wrap">
+              {String(this.state.error.stack || this.state.error.message || this.state.error)}
+            </pre>
+          )}
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             <button
               type="button"

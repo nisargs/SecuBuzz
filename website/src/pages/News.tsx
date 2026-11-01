@@ -2,6 +2,8 @@ import React, { useMemo, useState } from 'react';
 import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { NewsBriefItem } from '../components/NewsBriefItem';
+import { MyStackSidebar } from '../components/MyStackSidebar';
+import { useMyStack } from '../data/useMyStack';
 import { VendorSelect } from '../components/VendorSelect';
 import { newsCategories } from '../data/news';
 import { useLiveNews } from '../data/useLiveNews';
@@ -21,11 +23,18 @@ export function News() {
   const [vendorFilter, setVendorFilter] = useState<string>('ALL');
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
+  const [stackFilterActive, setStackFilterActive] = useState(false);
   const { news } = useLiveNews();
+  const myStack = useMyStack();
+
+  const stackMatchCount = useMemo(() => {
+    return news.filter((b) => myStack.matchesBrief(b)).length;
+  }, [news, myStack]);
 
   const severityCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
+      if (stackFilterActive && !myStack.matchesBrief(b)) return false;
       if (filter !== 'All' && b.category !== filter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
@@ -51,11 +60,12 @@ export function News() {
       }
     }
     return counts;
-  }, [news, filter, sourceFilter, vendorFilter, query]);
+  }, [news, filter, sourceFilter, vendorFilter, stackFilterActive, myStack, query]);
 
   const categoryCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
+      if (stackFilterActive && !myStack.matchesBrief(b)) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
@@ -77,7 +87,7 @@ export function News() {
       }
     }
     return counts;
-  }, [news, severityFilter, sourceFilter, vendorFilter, query]);
+  }, [news, severityFilter, sourceFilter, vendorFilter, stackFilterActive, myStack, query]);
 
   const sourceCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -111,6 +121,7 @@ export function News() {
   const vendorCounts = useMemo(() => {
     const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
+      if (stackFilterActive && !myStack.matchesBrief(b)) return false;
       if (filter !== 'All' && b.category !== filter) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
@@ -131,7 +142,7 @@ export function News() {
       counts[v] = (counts[v] || 0) + 1;
     }
     return counts;
-  }, [news, filter, severityFilter, sourceFilter, query]);
+  }, [news, filter, severityFilter, sourceFilter, stackFilterActive, myStack, query]);
 
   const sortedVendors = useMemo(() => {
     const pool = sourceFilter === 'PSIRT'
@@ -153,6 +164,7 @@ export function News() {
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     return news.filter((b) => {
+      if (stackFilterActive && !myStack.matchesBrief(b)) return false;
       if (filter !== 'All' && b.category !== filter) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
@@ -165,7 +177,7 @@ export function News() {
         b.cves.some((c) => c.toLowerCase().includes(q))
       );
     });
-  }, [news, filter, severityFilter, sourceFilter, vendorFilter, query]);
+  }, [news, filter, severityFilter, sourceFilter, vendorFilter, stackFilterActive, myStack, query]);
 
   const sortedCategories = useMemo(() => {
     return [...newsCategories].sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
@@ -233,7 +245,7 @@ export function News() {
                     setFilter(e.target.value as Filter);
                     setPage(1);
                   }}
-                  className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
+                  className="h-8 rounded-md border border-line bg-surface px-2.5 font-sans text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
                   <option value="All">All Categories ({categoryCounts.All ?? news.length})</option>
                   {sortedCategories.map((c) => (
                     <option key={c} value={c}>
@@ -255,9 +267,11 @@ export function News() {
                   totalCount={vendorCounts.ALL ?? news.length}
                 />
               </div>
+
+
             </div>
 
-            {(filter !== 'All' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || vendorFilter !== 'ALL' || query) && (
+            {(filter !== 'All' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || vendorFilter !== 'ALL' || stackFilterActive || query) && (
               <button
                 type="button"
                 onClick={() => {
@@ -265,6 +279,7 @@ export function News() {
                   setSeverityFilter('ALL');
                   setSourceFilter('ALL');
                   setVendorFilter('ALL');
+                  setStackFilterActive(false);
                   setQuery('');
                   setPage(1);
                 }}
@@ -274,8 +289,8 @@ export function News() {
             )}
           </div>
 
-          {/* Row 2: Threat Severity (Left) + Feed Source (Right) */}
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
+          {/* Row 2: Threat Severity + Sources + My Stack (Tight Left-Aligned Layout) */}
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             {/* Threat Severity Chips */}
             <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
               <button
@@ -284,7 +299,7 @@ export function News() {
                   setSeverityFilter('ALL');
                   setPage(1);
                 }}
-                className={`rounded px-2 py-0.5 text-xs transition-colors ${
+                className={`rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
                   severityFilter === 'ALL'
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent border border-line'
@@ -297,7 +312,7 @@ export function News() {
                   setSeverityFilter('CRITICAL');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
                   severityFilter === 'CRITICAL'
                     ? 'bg-critical/10 font-medium text-critical border border-critical/50'
                     : 'text-muted hover:text-critical border border-line'
@@ -311,7 +326,7 @@ export function News() {
                   setSeverityFilter('HIGH');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
                   severityFilter === 'HIGH'
                     ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
                     : 'text-muted hover:text-amber-500 border border-line'
@@ -325,7 +340,7 @@ export function News() {
                   setSeverityFilter('MEDIUM');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
                   severityFilter === 'MEDIUM'
                     ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
                     : 'text-muted hover:text-[#4CC9F0] border border-line'
@@ -339,7 +354,7 @@ export function News() {
                   setSeverityFilter('LOW');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
                   severityFilter === 'LOW'
                     ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
                     : 'text-muted hover:text-ink border border-line'
@@ -349,31 +364,55 @@ export function News() {
               </button>
             </div>
 
-            {/* Feed Source Segment */}
+            {/* Subtle Vertical Divider */}
+            <div className="hidden sm:block h-3.5 w-px bg-line/80 shrink-0" aria-hidden="true" />
+
+            {/* Feed Source Segment + My Stack (Beside Vendor PSIRT, Zero Emojis) */}
             <div className="flex items-center gap-1 overflow-x-auto pb-0.5 shrink-0">
               <button
                 type="button"
                 onClick={() => {
                   setSourceFilter('ALL');
                   setVendorFilter('ALL');
+                  setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`rounded px-2 py-0.5 text-xs transition-colors ${
-                  sourceFilter === 'ALL'
+                className={`rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                  sourceFilter === 'ALL' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent border border-line'
                 }`}>
                 All Sources ({sourceCounts.ALL})
               </button>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setSourceFilter('ALL');
+                  setVendorFilter('ALL');
+                  setStackFilterActive(!stackFilterActive);
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                  stackFilterActive
+                    ? 'bg-accent/20 font-medium text-accent border border-accent/60'
+                    : 'text-muted hover:text-accent border border-line'
+                }`}
+                title="Filter feed to your monitored enterprise stack & watched CVEs">
+                <span>My Stack</span>
+                <span className="font-mono text-[10px] opacity-80">({stackMatchCount})</span>
+              </button>
+
               <button
                 type="button"
                 onClick={() => {
                   setSourceFilter('PSIRT');
                   setVendorFilter('ALL');
+                  setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
-                  sourceFilter === 'PSIRT'
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                  sourceFilter === 'PSIRT' && !stackFilterActive
                     ? 'bg-cyan-500/20 font-medium text-cyan-400 border border-cyan-500/50'
                     : 'text-muted hover:text-cyan-400 border border-line'
                 }`}>
@@ -384,10 +423,11 @@ export function News() {
                 onClick={() => {
                   setSourceFilter('MEDIA');
                   setVendorFilter('ALL');
+                  setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors ${
-                  sourceFilter === 'MEDIA'
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                  sourceFilter === 'MEDIA' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent border border-line'
                 }`}>
@@ -397,7 +437,9 @@ export function News() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between py-2 font-mono text-xs text-subtle" aria-live="polite">
+        <div className="mt-2 grid gap-10 lg:grid-cols-[1fr_360px]">
+          <div className="min-w-0">
+<div className="flex items-center justify-between py-2 font-mono text-xs text-subtle" aria-live="polite">
           <p>
             {results.length === 0
               ? '0 briefs'
@@ -425,6 +467,8 @@ export function News() {
                     setFilter(cat);
                     setPage(1);
                   }}
+                  isWatchingCve={myStack.isWatchingCve}
+                  onToggleWatchCve={myStack.toggleWatchCve}
                 />
               ))}
             </div>
@@ -497,14 +541,23 @@ export function News() {
           </>
         ) : (
           <div className="py-20 text-center">
-            <p className="text-lg font-medium text-ink">No briefs match that search</p>
-            <p className="mt-2 text-muted">Try a different keyword, or clear the filters.</p>
+            <p className="text-lg font-medium text-ink">
+              {stackFilterActive && !myStack.hasConfiguredStack
+                ? 'Your stack is unconfigured'
+                : 'No briefs match that search'}
+            </p>
+            <p className="mt-2 text-muted">
+              {stackFilterActive && !myStack.hasConfiguredStack
+                ? 'Select your enterprise vendors or pin CVEs in the sidebar on the right.'
+                : 'Try a different keyword, or clear the filters.'}
+            </p>
             <button
               type="button"
               onClick={() => {
                 setQuery('');
                 setFilter('All');
                 setSeverityFilter('ALL');
+                setStackFilterActive(false);
                 setPage(1);
               }}
               className="mt-6 rounded-md border border-line px-4 py-2 text-sm text-ink transition-colors duration-150 ease-out hover:bg-surface">
@@ -512,7 +565,33 @@ export function News() {
             </button>
           </div>
         )}
-      </div>
+      
+          </div>
+
+          <aside aria-label="My Stack and Watchlist" className="hidden lg:block pt-2">
+            <div className="lg:sticky lg:top-36">
+              <MyStackSidebar
+                selectedVendors={myStack.selectedVendors}
+                watchedCves={myStack.watchedCves}
+                toggleVendor={myStack.toggleVendor}
+                removeVendor={myStack.removeVendor}
+                clearVendors={myStack.clearVendors}
+                toggleWatchCve={myStack.toggleWatchCve}
+                removeWatchCve={myStack.removeWatchCve}
+                clearCves={myStack.clearCves}
+                clearStack={myStack.clearStack}
+                matchCount={stackMatchCount}
+                isStackFilterActive={stackFilterActive}
+                onToggleStackFilter={() => {
+                  setSourceFilter('ALL');
+                  setVendorFilter('ALL');
+                  setStackFilterActive(!stackFilterActive);
+                  setPage(1);
+                }}
+              />
+            </div>
+          </aside>
+        </div></div>
     </>
   );
 }

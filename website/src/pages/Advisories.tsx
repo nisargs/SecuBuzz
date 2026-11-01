@@ -1,7 +1,11 @@
+import { Link } from 'react-router-dom';
 import React, { useMemo, useState } from 'react';
 import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { AdvisoryTable } from '../components/AdvisoryTable';
+import { useMyStack, POPULAR_VENDORS } from '../data/useMyStack';
+import { useLiveNews } from '../data/useLiveNews';
+import { getVendorFromSource } from '../utils/psirt';
 import { VendorSelect } from '../components/VendorSelect';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { daysUntil } from '../utils/date';
@@ -22,7 +26,67 @@ export function Advisories() {
   const [vendorFilter, setVendorFilter] = useState('ALL');
   const [sort, setSort] = useState<SortKey>('added');
   const [page, setPage] = useState(1);
-  const { advisories } = useLiveAdvisories();
+  const [stackFilterActive, setStackFilterActive] = useState(false);
+  const { advisories: catalogAdvisories } = useLiveAdvisories();
+  const { news } = useLiveNews();
+  const myStack = useMyStack();
+
+  const advisories = useMemo(() => {
+    const existingCves = new Set(catalogAdvisories.map((a) => a.cve.toUpperCase()));
+    const missingWatchedCves = myStack.watchedCves.filter((cve) => !existingCves.has(cve.toUpperCase()));
+
+    if (missingWatchedCves.length === 0) {
+      return catalogAdvisories;
+    }
+
+    const synthesized: Advisory[] = [];
+    for (const cve of missingWatchedCves) {
+      const brief = news.find(
+        (b) =>
+          b.cves?.some((c) => c.toUpperCase() === cve.toUpperCase()) ||
+          (b.title + ' ' + b.summary).toUpperCase().includes(cve.toUpperCase())
+      );
+
+      const matchedVendor = brief
+        ? POPULAR_VENDORS.find(
+            (v) =>
+              new RegExp(`\\b${v}\\b`, 'i').test(brief.title) ||
+              new RegExp(`\\b${v}\\b`, 'i').test(brief.summary)
+          ) || (brief.source ? getVendorFromSource(brief.source) : 'Software Vendor')
+        : 'Software Vendor';
+
+      const matchedProduct = brief
+        ? (brief.summary.match(/affecting ([^.]+)/i)?.[1]?.split(',')[0]?.trim() || brief.title.split(' ')[0])
+        : 'Affected Software';
+
+      synthesized.push({
+        cve,
+        slug: cve.toLowerCase(),
+        vendor: matchedVendor,
+        product: matchedProduct,
+        name: brief?.title || `${cve} Vulnerability Intelligence`,
+        dateAdded: brief?.publishedAt ? brief.publishedAt.slice(0, 10) : new Date().toISOString().slice(0, 10),
+        dueDate: '—',
+        severity: brief?.severity === 'CRITICAL' ? 'Critical' : brief?.severity === 'HIGH' ? 'High' : 'Medium',
+        cwe: '—',
+        ransomware: false,
+        description: brief?.summary || `Monitored CVE on your Watchlist. Active threat intelligence tracking.`,
+        requiredAction: 'Apply latest official vendor security updates or mitigations.',
+        references: [
+          { label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${cve}` },
+          { label: 'MITRE CVE Record', url: `https://cve.mitre.org/cgi-bin/cvename.cgi?name=${cve}` },
+          ...(brief ? [{ label: `${brief.source} Report`, url: brief.sourceUrl }] : []),
+        ],
+        source: 'Emerging (News)' as any,
+      });
+    }
+
+    return [...synthesized, ...catalogAdvisories];
+  }, [catalogAdvisories, myStack.watchedCves, news]);
+
+  const stackMatchCount = useMemo(() => {
+    return advisories.filter((a) => myStack.matchesAdvisory(a)).length;
+  }, [advisories, myStack]);
 
   const openCount = advisories.filter(
     (a) => a.dueDate && /^\d{4}-\d{2}-\d{2}$/.test(a.dueDate) && daysUntil(a.dueDate) >= 0
@@ -52,6 +116,7 @@ export function Advisories() {
   };
 
   const matchesBase = (a: Advisory, q: string) => {
+    if (stackFilterActive && !myStack.matchesAdvisory(a)) return false;
     if (dueThisWeekOnly) {
       const d = daysUntil(a.dueDate);
       if (d < 0 || d > 7) return false;
@@ -69,7 +134,7 @@ export function Advisories() {
   const severityCandidates = useMemo(() => {
     const q = query.trim().toLowerCase();
     return advisories.filter((a) => matchesBase(a, q) && matchesSource(a, sourceFilter));
-  }, [advisories, vendorFilter, dueThisWeekOnly, query, sourceFilter]);
+  }, [advisories, vendorFilter, dueThisWeekOnly, query, sourceFilter, stackFilterActive, myStack]);
 
   const severityCounts = useMemo(() => {
     return {
@@ -85,7 +150,20 @@ export function Advisories() {
   // 2. Advisory Source counts: scoped to active Severity, vendor, due date, and query
   const sourceCandidates = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return advisories.filter((a) => matchesBase(a, q) && matchesSeverity(a, severityFilter));
+    return advisories.filter((a) => {
+      if (dueThisWeekOnly) {
+        const d = daysUntil(a.dueDate);
+        if (d < 0 || d > 7) return false;
+      }
+      if (vendorFilter !== 'ALL' && a.vendor.toLowerCase() !== vendorFilter.toLowerCase()) {
+        return false;
+      }
+      if (!matchesSeverity(a, severityFilter)) return false;
+      if (!q) return true;
+      return [a.cve, a.vendor, a.product, a.name, a.description].some((v) =>
+        (v || '').toLowerCase().includes(q)
+      );
+    });
   }, [advisories, vendorFilter, dueThisWeekOnly, query, severityFilter]);
 
   const sourceCounts = useMemo(() => {
@@ -100,6 +178,7 @@ export function Advisories() {
   const vendorCandidates = useMemo(() => {
     const q = query.trim().toLowerCase();
     return advisories.filter((a) => {
+      if (stackFilterActive && !myStack.matchesAdvisory(a)) return false;
       if (dueThisWeekOnly) {
         const d = daysUntil(a.dueDate);
         if (d < 0 || d > 7) return false;
@@ -111,7 +190,7 @@ export function Advisories() {
         (v || '').toLowerCase().includes(q)
       );
     });
-  }, [advisories, sourceFilter, severityFilter, dueThisWeekOnly, query]);
+  }, [advisories, sourceFilter, severityFilter, dueThisWeekOnly, query, stackFilterActive, myStack]);
 
   const sortedVendors = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -130,6 +209,7 @@ export function Advisories() {
   const dueThisWeekCount = useMemo(() => {
     const q = query.trim().toLowerCase();
     return advisories.filter((a) => {
+      if (stackFilterActive && !myStack.matchesAdvisory(a)) return false;
       if (!a.dueDate || !/^\d{4}-\d{2}-\d{2}$/.test(a.dueDate)) return false;
       const d = daysUntil(a.dueDate);
       if (d < 0 || d > 7) return false;
@@ -141,7 +221,7 @@ export function Advisories() {
         (v || '').toLowerCase().includes(q)
       );
     }).length;
-  }, [advisories, vendorFilter, sourceFilter, severityFilter, query]);
+  }, [advisories, vendorFilter, sourceFilter, severityFilter, query, stackFilterActive, myStack]);
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     return advisories
@@ -179,7 +259,7 @@ export function Advisories() {
         // Past-due deadlines: most recently due first (descending by dueDate)
         return b.dueDate.localeCompare(a.dueDate);
       });
-  }, [advisories, query, sourceFilter, severityFilter, dueThisWeekOnly, vendorFilter, sort]);
+  }, [advisories, query, sourceFilter, severityFilter, dueThisWeekOnly, vendorFilter, sort, stackFilterActive, myStack]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
@@ -282,7 +362,7 @@ export function Advisories() {
                 </select>
               </label>
 
-              {(vendorFilter !== 'ALL' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || dueThisWeekOnly || query) && (
+              {(vendorFilter !== 'ALL' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || stackFilterActive || dueThisWeekOnly || query) && (
                 <button
                   type="button"
                   onClick={() => {
@@ -291,6 +371,7 @@ export function Advisories() {
                     setSeverityFilter('ALL');
                     setSourceFilter('ALL');
                     setDueThisWeekOnly(false);
+                    setStackFilterActive(false);
                     setPage(1);
                   }}
                   className="rounded border border-line bg-surface px-2 py-0.5 text-xs text-accent hover:border-accent transition-colors duration-150">
@@ -389,42 +470,64 @@ export function Advisories() {
               </button>
             </div>
 
-            {/* Advisory Source Segment */}
+            {/* Advisory Source Segment + My Stack */}
             <div className="flex items-center gap-1 overflow-x-auto pb-0.5 shrink-0">
               <button
                 type="button"
                 onClick={() => {
                   setSourceFilter('ALL');
+                  setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
-                  sourceFilter === 'ALL'
+                className={`rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
+                  sourceFilter === 'ALL' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent hover:bg-surface border border-line'
                 }`}>
                 All Sources ({sourceCounts.all})
               </button>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setSourceFilter('ALL');
+                  setStackFilterActive(!stackFilterActive);
+                  setPage(1);
+                }}
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
+                  stackFilterActive
+                    ? 'bg-accent/20 font-medium text-accent border border-accent/60'
+                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
+                }`}
+                title="Filter to advisories matching your monitored enterprise stack & watched CVEs">
+                <span>My Stack</span>
+                <span className="font-mono text-[10px] opacity-80">({stackMatchCount})</span>
+              </button>
+
               <button
                 type="button"
                 onClick={() => {
                   setSourceFilter('CISA');
+                  setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
-                  sourceFilter === 'CISA'
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
+                  sourceFilter === 'CISA' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent hover:bg-surface border border-line'
                 }`}>
                 CISA KEV Zero-Days ({sourceCounts.cisa})
               </button>
+
               <button
                 type="button"
                 onClick={() => {
                   setSourceFilter('GITHUB');
+                  setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
-                  sourceFilter === 'GITHUB'
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
+                  sourceFilter === 'GITHUB' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent hover:bg-surface border border-line'
                 }`}>
@@ -433,6 +536,8 @@ export function Advisories() {
             </div>
           </div>
         </div>
+
+        
 
         <div className="py-2 flex items-center justify-between text-xs font-mono text-subtle" aria-live="polite">
           <p>
@@ -449,7 +554,7 @@ export function Advisories() {
 
         {results.length > 0 ? (
           <>
-            <AdvisoryTable items={paginatedAdvisories} />
+            <AdvisoryTable items={paginatedAdvisories} isWatchingCve={myStack.isWatchingCve} onToggleWatchCve={myStack.toggleWatchCve} />
 
             {totalPages > 1 && (
               <nav aria-label="Pagination" className="mt-8 flex items-center justify-between border-t border-line pt-5">
@@ -519,8 +624,24 @@ export function Advisories() {
           </>
         ) : (
           <div className="rounded-lg border border-line py-16 text-center">
-            <p className="font-medium text-ink">No advisories match</p>
-            <p className="mt-1.5 text-sm text-muted">Check the CVE format (e.g. CVE-2026-20417) or clear filters.</p>
+            <p className="font-medium text-ink">
+              {stackFilterActive && !myStack.hasConfiguredStack
+                ? 'Your stack is unconfigured'
+                : 'No advisories match'}
+            </p>
+            <p className="mt-1.5 text-sm text-muted">
+              {stackFilterActive && !myStack.hasConfiguredStack ? (
+                <>
+                  Pin CVEs directly with the bookmark icon in the table or configure vendors on the{' '}
+                  <Link to="/news" className="text-accent underline underline-offset-2 hover:text-accent/80">
+                    News workstation
+                  </Link>
+                  .
+                </>
+              ) : (
+                'Check the CVE format (e.g. CVE-2026-20417) or clear filters.'
+              )}
+            </p>
           </div>
         )}
 

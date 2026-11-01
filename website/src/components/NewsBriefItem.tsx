@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRightIcon } from 'lucide-react';
+import { ArrowUpRightIcon, Bookmark } from 'lucide-react';
 import type { NewsBrief, NewsCategory, NewsSeverity } from '../types/news';
 import { timeAgo } from '../utils/date';
 import { isVendorPsirt } from '../utils/psirt';
@@ -9,6 +9,8 @@ interface NewsBriefItemProps {
   brief: NewsBrief;
   onSelectSeverity?: (severity: NewsSeverity) => void;
   onSelectCategory?: (category: NewsCategory) => void;
+  isWatchingCve?: (cve: string) => boolean;
+  onToggleWatchCve?: (cve: string) => void;
 }
 
 const severityStyles: Record<string, { dot: string; badge: string }> = {
@@ -30,11 +32,23 @@ const severityStyles: Record<string, { dot: string; badge: string }> = {
   },
 };
 
-export function NewsBriefItem({ brief, onSelectSeverity, onSelectCategory }: NewsBriefItemProps) {
+export function NewsBriefItem({
+  brief,
+  onSelectSeverity,
+  onSelectCategory,
+  isWatchingCve,
+  onToggleWatchCve,
+}: NewsBriefItemProps) {
   const isCritical = brief.severity === 'CRITICAL';
 
   return (
-    <article className={`grid gap-3 py-7 md:grid-cols-[140px_1fr] md:gap-8 ${isCritical ? 'relative before:absolute before:-left-3 before:top-6 before:bottom-6 before:w-0.5 before:bg-critical before:rounded-full md:before:-left-4' : ''}`}>
+    <article
+      className={`grid gap-3 py-7 md:grid-cols-[140px_1fr] md:gap-8 ${
+        isCritical
+          ? 'relative before:absolute before:-left-3 before:top-6 before:bottom-6 before:w-0.5 before:bg-critical before:rounded-full md:before:-left-4'
+          : ''
+      }`}
+    >
       <div className="flex flex-wrap items-center gap-2 font-mono text-xs md:flex-col md:items-start md:gap-1.5 md:pt-1">
         {onSelectCategory ? (
           <button
@@ -85,18 +99,21 @@ export function NewsBriefItem({ brief, onSelectSeverity, onSelectCategory }: New
         <h3 className="text-xl font-semibold leading-snug tracking-tight text-ink">
           <Link
             to={`/news/${brief.slug}`}
-            className="transition-colors duration-150 ease-out hover:text-accent">
+            className="transition-colors duration-150 ease-out hover:text-accent"
+          >
             {brief.title}
           </Link>
         </h3>
-        <p className="mt-2.5 max-w-[68ch] text-[15px] leading-relaxed text-muted">{brief.summary}</p>
+        <p className="mt-2.5 max-w-[68ch] text-[15px] leading-relaxed text-muted">
+          {brief.summary}
+        </p>
         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs">
           <a
             href={brief.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-muted transition-colors duration-150 ease-out hover:text-accent">
-            
+            className="inline-flex items-center gap-1 text-muted transition-colors duration-150 ease-out hover:text-accent"
+          >
             {brief.source}
             <ArrowUpRightIcon className="h-3.5 w-3.5" aria-hidden="true" />
           </a>
@@ -109,24 +126,54 @@ export function NewsBriefItem({ brief, onSelectSeverity, onSelectCategory }: New
                   href={s.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-0.5 text-muted transition-colors duration-150 ease-out hover:text-accent">
+                  className="inline-flex items-center gap-0.5 text-muted transition-colors duration-150 ease-out hover:text-accent"
+                >
                   {s.source}
                   <ArrowUpRightIcon className="h-3 w-3" aria-hidden="true" />
                 </a>
               ))}
             </div>
           )}
-          {brief.cves.map((cve) =>
-          <Link
-            key={cve}
-            to={`/advisories/${cve.toLowerCase()}`}
-            className="rounded border border-line px-1.5 py-0.5 font-mono text-[11px] text-muted transition-colors duration-150 ease-out hover:border-accent/60 hover:text-ink">
-            
-              {cve}
-            </Link>
-          )}
+          {brief.cves.map((cve) => {
+            const isPinned = isWatchingCve?.(cve);
+            return (
+              <div
+                key={cve}
+                className={`inline-flex items-center rounded border font-mono text-[11px] transition-colors duration-150 ${
+                  isPinned
+                    ? 'border-accent bg-accent/10 text-accent'
+                    : 'border-line text-muted hover:border-accent/60'
+                }`}
+              >
+                <Link
+                  to={`/advisories/${cve.toLowerCase()}`}
+                  className="px-1.5 py-0.5 hover:text-ink transition-colors"
+                >
+                  {cve}
+                </Link>
+                {onToggleWatchCve && (
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      onToggleWatchCve(cve);
+                    }}
+                    title={isPinned ? `Remove ${cve} from Watchlist` : `Pin ${cve} to Watchlist`}
+                    className={`px-1 py-0.5 border-l border-inherit transition-colors ${
+                      isPinned
+                        ? 'text-accent hover:text-critical'
+                        : 'text-subtle hover:text-accent'
+                    }`}
+                  >
+                    <Bookmark className={`h-2.5 w-2.5 ${isPinned ? 'fill-accent' : ''}`} />
+                  </button>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
-    </article>);
-
+    </article>
+  );
 }
