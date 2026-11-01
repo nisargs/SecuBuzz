@@ -177,6 +177,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-improper-svg-validation-flaw-1fe91c",
+    "title": "Chromium Improper SVG Validation Flaw",
+    "summary": "Chromium’s SVG parser has an improper input validation flaw, CVE-2026-118315, that can be triggered by malicious SVG files in Microsoft Edge. The issue stems from insufficient sanitization of SVG attributes, potentially enabling cross‑site scripting or code execution when an attacker supplies crafted content.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118315"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-improper-svg-validation-flaw",
+      "article-1fe91c",
+      "1fe91c"
+    ]
+  },
+  {
+    "slug": "chromium-paint-memory-corruption-flaw-1fe91c",
+    "title": "Chromium Paint Memory Corruption Flaw",
+    "summary": "Chromium’s Paint component contains a memory corruption flaw, CVE-2026-118312, that can be triggered by malicious image files in Microsoft Edge. It stems from improper bounds checking during image decoding, which may allow arbitrary code execution. Edge users should install the latest Chromium‑based update; the patch is bundled with Google Chrome releases, as documented in the official blog.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118312"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-paint-memory-corruption-flaw",
+      "article-1fe91c",
+      "1fe91c"
+    ]
+  },
+  {
     "slug": "edge-affected-by-cve-2026-118311-media-memory-corr-1fe91c",
     "title": "Edge Affected by CVE-2026-118311 Media Memory Corruption",
     "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium’s Media component, identified as CVE-2026-118311. The flaw could allow arbitrary code execution when processing a crafted media stream, though no public exploit has been released. Microsoft advises installing the latest Chromium update, which includes the patch, and keeping Edge current to mitigate the vulnerability.",
@@ -322,6 +360,23 @@ export const news: NewsBrief[] = [
       "syrian-hacker-sentenced-to-42-months-in-us-court",
       "article-b95c46",
       "b95c46"
+    ]
+  },
+  {
+    "slug": "yara-x-1-22-1-releases-two-bug-fixes-57dd7e",
+    "title": "YARA‑X 1.22.1 Releases Two Bug Fixes",
+    "summary": "YARA‑X 1.22.1 release addresses two bugs in the open‑source malware detection tool. The issues involved incorrect pattern‑matching logic and memory handling, which could have caused false positives or crashes; no exploitation was reported. Users should update to 1.22.1 to apply the fixes, with no further mitigations required in production environments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33474",
+    "publishedAt": "2026-10-31T10:48:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yara-x-1-22-1-releases-two-bug-fixes",
+      "article-57dd7e",
+      "57dd7e"
     ]
   },
   {
@@ -581,6 +636,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-warns-iphone-users-of-mercenary-spyware-1ea2c9",
+    "title": "Apple Warns iPhone Users of Mercenary Spyware",
+    "summary": "Apple issued threat notifications to iPhone users in 99 countries, warning of targeted mercenary spyware attacks. The advisory notes the campaigns use advanced spyware capable of covert data exfiltration, distinct from earlier August alerts and linked to new operations. Users should update iOS, enable two‑factor authentication, and monitor for suspicious activity, following Apple’s guidance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/apple-warns-iphone-users/",
+    "publishedAt": "2026-10-31T03:54:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-warns-iphone-users-of-mercenary-spyware",
+      "article-1ea2c9",
+      "1ea2c9"
+    ]
+  },
+  {
     "slug": "teamviewer-issues-patch-for-remote-code-flaw-366034",
     "title": "TeamViewer Issues Patch for Remote Code Flaw",
     "summary": "TeamViewer released a patch for a remote code execution flaw that could allow attackers to run arbitrary code on affected systems. The vulnerability, identified as CVE-2026-111585, is exploitable via unauthenticated network traffic and carries a CVSS score of 8.7, enabling full system compromise. Administrators should apply the latest update immediately, verify installation, and enable network segmentation to mitigate potential exploitation.",
@@ -597,6 +669,24 @@ export const news: NewsBrief[] = [
       "teamviewer-issues-patch-for-remote-code-flaw",
       "article-366034",
       "366034"
+    ]
+  },
+  {
+    "slug": "chainalysis-breach-exposes-customer-account-detail-6b98e6",
+    "title": "Chainalysis Breach Exposes Customer Account Details",
+    "summary": "Chainalysis confirmed an attacker used offensive agentic techniques to access its systems and internal tools, exposing customer account details. The breach revealed user IDs, full names, email addresses, and organization role labels, but no evidence of authentication secrets or investigation content was accessed. Chainalysis is investigating, and affected customers should review account activity and consider credential changes.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/chainalysis-confirms-cyberattack/",
+    "publishedAt": "2026-10-31T02:49:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chainalysis-breach-exposes-customer-account-detail",
+      "article-6b98e6",
+      "6b98e6",
+      "chainalysis-breach-exposes-customer-account-details"
     ]
   },
   {
@@ -638,6 +728,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mitigating-cve-2026-97229-flaw-in-enterprise-alpin-200ef8",
+    "title": "Mitigating CVE-2026-97229 Flaw in Enterprise Alpine Linux Systems",
+    "summary": "GitLab issued a threat brief regarding CVE-2026-97229 affecting Alpine Linux deployments within enterprise environments. The critical security vulnerability allows potential system exploitation through compromised telemetry and underlying distribution components. Security teams must hunt for threats using custom detection rules, analyze root-cause telemetry, and immediately apply vendor-provided software patches.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/max-severity-gitlab-vulnerability-exploited-against-alp",
+    "publishedAt": "2026-10-30T23:38:29.000Z",
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "mitigating-cve-2026-97229-flaw-in-enterprise-alpin",
+      "article-200ef8",
+      "200ef8",
+      "mitigating-cve-2026-97229-flaw-in-enterprise-alpine-linux-sy"
+    ]
+  },
+  {
     "slug": "drupal-commerce-auth-bypass-vulnerability-1ec811",
     "title": "Drupal Commerce Auth Bypass Vulnerability",
     "summary": "An authentication bypass flaw in Drupal Commerce Core, identified as CVE‑2026‑118539, allows attackers to gain privileged access without valid credentials. The vulnerability exploits a logic error in the authentication flow, enabling unauthorized users to elevate privileges and access restricted resources. A patch is available; administrators should apply it immediately and monitor logs for suspicious authentication attempts.",
@@ -652,6 +762,24 @@ export const news: NewsBrief[] = [
       "drupal-commerce-auth-bypass-vulnerability",
       "article-1ec811",
       "1ec811"
+    ]
+  },
+  {
+    "slug": "ai-platforms-face-large-scale-llmjacking-in-black-3c2ac2",
+    "title": "AI Platforms Face Large‑Scale LLMJacking in Black October",
+    "summary": "A series of agentic attacks on AI developer platforms has led to LLMJacking incidents during the “Black October” period. Attackers exploit platform APIs and model training pipelines to hijack language models, redirecting outputs and injecting malicious code; no specific vulnerability ID is cited. Platform operators should enforce API access controls, monitor model usage, and apply security hardening to mitigate LLMJacking.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+    "publishedAt": "2026-10-30T22:51:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-platforms-face-large-scale-llmjacking-in-black",
+      "article-3c2ac2",
+      "3c2ac2",
+      "ai-platforms-face-large-scale-llmjacking-in-black-october"
     ]
   },
   {
@@ -714,6 +842,23 @@ export const news: NewsBrief[] = [
       "article-2d5396",
       "2d5396",
       "doj-calls-for-privacy-ombudsman-on-character-ai-sales"
+    ]
+  },
+  {
+    "slug": "operation-blackout-dismantles-scam-centers-30f84c",
+    "title": "Operation Blackout Dismantles Scam Centers",
+    "summary": "Operation Blackout targeted and dismantled multiple scam centers across the internet, seizing servers and financial assets. Investigators uncovered coordinated phishing, credential‑stealing, and money‑laundering tactics employed by the operators, revealing a sophisticated supply chain. The operation demonstrates the effectiveness of joint law‑enforcement and threat‑intelligence collaboration, encouraging similar actions worldwide in the digital economy.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
+    "publishedAt": "2026-10-30T19:46:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "operation-blackout-dismantles-scam-centers",
+      "article-30f84c",
+      "30f84c"
     ]
   },
   {
@@ -842,6 +987,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "php2shell-fragnesia-node2shell-vulnerabilities-exp-5e83e5",
+    "title": "PHP2SHELL, Fragnesia, Node2Shell Vulnerabilities Exposed",
+    "summary": "PHP2SHELL’s complex code stalls mass exploitation, yet attackers chain it with Fragnesia to gain root on firewalls. A silent Brotli update failed to patch a critical flaw, leaving Node2Shell active and exposing servers to remote code execution. Apply the latest Brotli patch, upgrade PHP2SHELL, and monitor firewall logs for privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-44-8",
+    "publishedAt": "2026-10-30T17:29:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-fragnesia-node2shell-vulnerabilities-exp",
+      "article-5e83e5",
+      "5e83e5",
+      "php2shell-fragnesia-node2shell-vulnerabilities-exposed"
+    ]
+  },
+  {
     "slug": "arctic-wolf-releases-2026-agentic-security-operati-678c5e",
     "title": "Arctic Wolf Releases 2026 Agentic Security Operations Report",
     "summary": "The 2026 Agentic Security Operations Report outlines how agentic AI collaborates with expert analysts to accelerate security investigations. It details operational efficiencies gained through AI-driven threat detection and response workflows. The report is available for download from Arctic Wolf’s website, offering insights into future security operation trends.",
@@ -913,6 +1076,23 @@ export const news: NewsBrief[] = [
       "article-566186",
       "566186",
       "cve-2026-119116-and-cve-2026-119148-issues-in-aws-nitro-encl"
+    ]
+  },
+  {
+    "slug": "help-desk-impersonation-enables-ad-cs-abuse-27f822",
+    "title": "Help Desk Impersonation Enables AD CS Abuse",
+    "summary": "Microsoft’s investigation found help‑desk impersonation enabled attackers to gain remote access and run malicious code via authentication relay and Kerberos. Attackers then abused Active Directory Certificate Services, issuing rogue certificates that facilitated lateral movement across the network. Teams should enforce MFA for help‑desk accounts, disable authentication relay, monitor AD CS logs, and apply patches to stop this path.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
+    "publishedAt": "2026-10-30T16:11:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "help-desk-impersonation-enables-ad-cs-abuse",
+      "article-27f822",
+      "27f822"
     ]
   },
   {
@@ -1356,6 +1536,41 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "bedrock-data-automates-exposure-remediation-via-ow-2d8375",
+    "title": "Bedrock Data Automates Exposure Remediation Via Owners",
+    "summary": "Bedrock Data launches AI-driven remediation that routes data exposure tickets directly to dataset owners via Jira or ServiceNow integration. Owners receive contextual fix instructions, and Bedrock automatically validates remediation upon ticket closure, reopening tickets if exposures remain unaddressed. This workflow federation eliminates manual triage, ensuring continuous verification of data security posture across the enterprise.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/bedrock-data-ai-assisted-remediation/",
+    "publishedAt": "2026-10-30T12:39:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bedrock-data-automates-exposure-remediation-via-ow",
+      "article-2d8375",
+      "2d8375",
+      "bedrock-data-automates-exposure-remediation-via-owners"
+    ]
+  },
+  {
+    "slug": "binance-suffers-record-6-3-billion-crypto-theft-11c547",
+    "title": "Binance Suffers Record $6.3 Billion Crypto Theft",
+    "summary": "Attackers stole approximately $6.3 billion in cryptocurrency from Binance, marking the largest crypto theft on record. The breach compromised Binance's hot wallet infrastructure, enabling unauthorized transfer of assets across multiple blockchain networks. Binance has suspended withdrawals and initiated forensic investigation while coordinating with law enforcement to trace stolen funds.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/binance-hit-by-largest-ever-crypto-theft-with-6-3-billion-stolen",
+    "publishedAt": "2026-10-30T12:24:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-suffers-record-6-3-billion-crypto-theft",
+      "article-11c547",
+      "11c547"
+    ]
+  },
+  {
     "slug": "trezor-alerts-on-hardware-implant-in-cryptobilis-w-5bae48",
     "title": "Trezor Alerts on Hardware Implant in CryptoBilis Wallets",
     "summary": "Trezor Safe 5 wallets from CryptoBilis reportedly include an extra circuit board that sends recovery phrases over mobile networks. The implant risks credential theft, exposing users to unauthorized access of crypto holdings, though Trezor has not examined it. Owners should move funds to new wallets with fresh recovery phrases and monitor for suspicious activity.",
@@ -1371,6 +1586,23 @@ export const news: NewsBrief[] = [
       "article-5bae48",
       "5bae48",
       "trezor-alerts-on-hardware-implant-in-cryptobilis-wallets"
+    ]
+  },
+  {
+    "slug": "google-releases-chrome-dev-159-for-android-2f83d9",
+    "title": "Google Releases Chrome Dev 159 for Android",
+    "summary": "Google publishes Chrome Dev 159 (159.0.8130.0) for Android via Google Play with incremental feature updates. The release includes partial changes from the Git log and new web platform capabilities documented on the Chromium blog. No security fixes are highlighted; users should monitor stable channel updates for vulnerability patches.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-android-update_0754174154.html",
+    "publishedAt": "2026-10-30T12:13:32.558Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-chrome-dev-159-for-android",
+      "article-2f83d9",
+      "2f83d9"
     ]
   },
   {
@@ -1487,6 +1719,24 @@ export const news: NewsBrief[] = [
       "hackers-leak-41-000-dhs-employee-data",
       "article-369d27",
       "369d27"
+    ]
+  },
+  {
+    "slug": "microsoft-resolves-vpn-failures-from-september-upd-5d388b",
+    "title": "Microsoft Resolves VPN Failures From September Updates",
+    "summary": "Microsoft releases a fix for Always On VPN connection failures introduced by the September 2026 Windows 11 security updates. The regression disrupted enterprise remote access by breaking tunnel establishment after credential authentication. Administrators should deploy the out-of-band update immediately to restore VPN functionality across affected endpoints.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/",
+    "publishedAt": "2026-10-30T11:20:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-resolves-vpn-failures-from-september-upd",
+      "article-5d388b",
+      "5d388b",
+      "microsoft-resolves-vpn-failures-from-september-updates"
     ]
   },
   {
@@ -2103,6 +2353,23 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "net-9-0-security-update-released-37d9a3",
+    "title": ".NET 9.0 Security Update Released",
+    "summary": ".NET 9.0 receives a security update for RHEL 9, addressing vulnerabilities in RHSA-2026:92429. The advisory rates the update as Important, reflecting a CVSS score that necessitates prompt remediation. Red Hat recommends installing the update via the package manager; it is available in the latest RHEL 9 repositories and provides critical fixes.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92429",
+    "publishedAt": "2026-10-29T22:54:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "net-9-0-security-update-released",
+      "article-37d9a3",
+      "37d9a3"
+    ]
+  },
+  {
     "slug": "binance-investigates-5-8b-crypto-theft-93b9d9",
     "title": "Binance Investigates $5.8B Crypto Theft",
     "summary": "Binance is investigating a potential breach that may have stolen up to $5.8 billion in digital assets, potentially the largest crypto hack ever. The incident involved unauthorized access to user wallets and exchange infrastructure, with attackers exploiting unknown vulnerabilities or credential compromise. Binance has issued a statement and is working with law enforcement to contain the breach and recover assets.",
@@ -2117,6 +2384,23 @@ export const news: NewsBrief[] = [
       "binance-investigates-5-8b-crypto-theft",
       "article-93b9d9",
       "93b9d9"
+    ]
+  },
+  {
+    "slug": "net-11-0-security-update-released-37d99f",
+    "title": ".NET 11.0 Security Update Released",
+    "summary": ".NET 11.0 receives a security update for RHEL 8, covering vulnerabilities listed in RHSA-2026:92511. The advisory marks the update as Important, indicating a CVSS score that requires timely patching to prevent exploitation. Red Hat advises applying the update through the package manager; the patch is present in the current RHEL 8 repositories.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92511",
+    "publishedAt": "2026-10-29T22:45:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "net-11-0-security-update-released",
+      "article-37d99f",
+      "37d99f"
     ]
   },
   {
@@ -6144,296 +6428,6 @@ export const news: NewsBrief[] = [
       "article-7fbd64",
       "7fbd64",
       "brotli-decompression-flaw-enables-remote-denial-of-service-a"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-multiple-nginx-rce-and-dos-flaws-7fbd68",
-    "title": "Ubuntu Patches Multiple nginx RCE and DoS Flaws",
-    "summary": "Ubuntu released USN-8955-1 addressing multiple nginx vulnerabilities including CVE-2026-15176, CVE-2026-93479, and CVE-2026-95101. The flaws involve incorrect handling of alias directives with rewrite rules and map regex matching, enabling remote unauthenticated attackers to trigger denial of service or execute arbitrary code, while CVE-2026-95101 permits data injection into proxied HTTP/3 requests on Ubuntu 26.04 LTS and 26.10.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8955-1",
-    "publishedAt": "2026-10-26T15:34:05.000Z",
-    "cves": [
-      "CVE-2026-15176",
-      "CVE-2026-93479",
-      "CVE-2026-95101"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-multiple-nginx-rce-and-dos-flaws",
-      "article-7fbd68",
-      "7fbd68"
-    ]
-  },
-  {
-    "slug": "eset-details-two-critical-php-vulnerabilities-65a2c4",
-    "title": "ESET Details Two Critical PHP Vulnerabilities",
-    "summary": "ESET published guidance on two critical PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, affecting PHP-based web applications. The flaws are classified as critical severity, posing significant risk to unpatched PHP deployments exposed to the internet. Website owners and IT teams should apply vendor patches and review PHP configurations to mitigate exploitation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/videos/php2shell-what-know-two-critical-php-flaws/",
-    "publishedAt": "2026-10-26T13:25:00.000Z",
-    "cves": [
-      "CVE-2026-109618",
-      "CVE-2026-109619"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "eset-details-two-critical-php-vulnerabilities",
-      "article-65a2c4",
-      "65a2c4"
-    ]
-  },
-  {
-    "slug": "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wa-4343c9",
-    "title": "Kali Linux 2026.3 Release Adds Kernel 7.1.5 and Wardriving Support for TicWatch Pro 3",
-    "summary": "Kali Linux 2026.3 release includes kernel 7.1.5 and wardriving support for TicWatch Pro 3. The update overhauls public build scripts, enabling containerized builds with Docker or Podman, and maintains compatibility with older script pipelines. Users should review and adjust pipeline scripts accordingly and test builds in container environments to ensure functionality.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/kali-linux-2026-3-released/",
-    "publishedAt": "2026-10-26T13:24:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wa",
-      "article-4343c9",
-      "4343c9",
-      "kali-linux-2026-3-release-adds-kernel-7-1-5-and-wardriving-s"
-    ]
-  },
-  {
-    "slug": "github-actions-residual-attack-surface-persists-po-687789",
-    "title": "GitHub Actions Residual Attack Surface Persists Post-2026 Changes",
-    "summary": "Wiz Research identified residual attack surface in GitHub Actions following the platform's 2026 pull_request_target security changes. While updated configurations reduce untrusted code execution feasibility, certain misconfigured workflows remain exploitable by malicious actors. Security teams should audit existing workflows for residual pull_request_target exposure and restrict permissions on untrusted event triggers.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/github-actions-security-pwn-request-reckoning",
-    "publishedAt": "2026-10-26T13:24:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-actions-residual-attack-surface-persists-po",
-      "article-687789",
-      "687789",
-      "github-actions-residual-attack-surface-persists-post-2026-ch"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-security-update-for-git-lfs-on-rhel-37e479",
-    "title": "Red Hat Issues Security Update for git-lfs on RHEL 8.6",
-    "summary": "Red Hat released a security update for git-lfs targeting RHEL 8.6 Advanced Mission Critical and Extended Update Support. The update addresses unspecified vulnerabilities with an Important impact rating and a CVSS base score available via CVE links, indicating potential security risk. Administrators should apply the patch immediately and verify functionality to mitigate exposure.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89926",
-    "publishedAt": "2026-10-26T13:24:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-security-update-for-git-lfs-on-rhel",
-      "article-37e479",
-      "37e479",
-      "red-hat-issues-security-update-for-git-lfs-on-rhel-8-6"
-    ]
-  },
-  {
-    "slug": "ai-driven-phishing-risk-from-employee-data-sharing-6144cf",
-    "title": "AI-Driven Phishing Risk from Employee Data Sharing",
-    "summary": "Employees pasting company data into AI tools create a risk vector for AI-generated phishing attacks. The concern was highlighted by 209 security professionals surveyed by O’Reilly, with only a quarter identifying it as a top threat. Security teams should enforce strict data handling policies and monitor AI tool usage to mitigate this risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/26/ai-tools-security-worry-survey/",
-    "publishedAt": "2026-10-26T13:16:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-driven-phishing-risk-from-employee-data-sharing",
-      "article-6144cf",
-      "6144cf"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-libreswan-security-updat-37e479",
-    "title": "Red Hat Releases Critical Libreswan Security Update",
-    "summary": "Red Hat released an important security update for libreswan on RHEL10 to address a critical vulnerability that could enable remote code execution via malformed packets. The flaw carries a CVSS score of 8.5 and is publicly documented. Apply the RHSA-2026:89923 patch or upgrade to the latest libreswan version to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89923",
-    "publishedAt": "2026-10-26T12:52:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-libreswan-security-updat",
-      "article-37e479",
-      "37e479",
-      "red-hat-releases-critical-libreswan-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-security-update-for-rhc-client-in-e-37e479",
-    "title": "Red Hat Issues Security Update for rhc Client in Enterprise Linux 9.2 SAP Services",
-    "summary": "Red Hat released an important security update for the rhc client used in Enterprise Linux 9.2 Update Services for SAP Solutions, addressing vulnerabilities that could allow privilege escalation or code execution. The update contains patches for several CVEs, though specific identifiers are not listed in the advisory. Red Hat recommends applying the rhc update immediately to mitigate the exposed weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89915",
-    "publishedAt": "2026-10-26T12:22:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-security-update-for-rhc-client-in-e",
-      "article-37e479",
-      "37e479",
-      "red-hat-issues-security-update-for-rhc-client-in-enterprise-"
-    ]
-  },
-  {
-    "slug": "litellm-supply-chain-attack-via-exposed-key-54e511",
-    "title": "LiteLLM Supply‑Chain Attack via Exposed Key",
-    "summary": "A key accidentally exposed in May enabled a supply‑chain attack that targeted tens of thousands of LiteLLM users. The flaw allowed attackers to inject malicious code into the open‑source framework, compromising user credentials and data integrity without requiring additional authentication. LiteLLM has released a patch and recommends users update to the latest version and revoke any exposed keys immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/litellm-hackers-ai-malware",
-    "publishedAt": "2026-10-26T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "litellm-supply-chain-attack-via-exposed-key",
-      "article-54e511",
-      "54e511"
-    ]
-  },
-  {
-    "slug": "wasmtime-flaws-enable-webassembly-sandbox-escape-o-c567a2",
-    "title": "Wasmtime Flaws Enable WebAssembly Sandbox Escape on ARM64",
-    "summary": "Two critical flaws in the Wasmtime WebAssembly runtime could allow a malicious module to escape its sandbox on vulnerable ARM64 builds. The vulnerabilities require a compromised Wasmtime build and enable arbitrary code execution, presenting a high‑severity risk to applications embedding the runtime. Fixed releases are available; upgrade to the latest Wasmtime version and audit embedded ARM64 builds.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
-    "publishedAt": "2026-10-26T11:52:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wasmtime-flaws-enable-webassembly-sandbox-escape-o",
-      "article-c567a2",
-      "c567a2",
-      "wasmtime-flaws-enable-webassembly-sandbox-escape-on-arm64"
-    ]
-  },
-  {
-    "slug": "nfc-relay-attacks-drain-over-400-000-from-bank-acc-f7a333",
-    "title": "NFC Relay Attacks Drain Over $400,000 From Bank Accounts",
-    "summary": "NFC relay attacks drained over $400,000 from bank accounts by persuading victims to install a malicious app and scan their credit cards. Attackers exploited the NFC relay vulnerability, enabling unauthorized access to banking credentials through the installed app. Dutch Police arrested two suspects; victims should monitor accounts and report unauthorized transactions.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/",
-    "publishedAt": "2026-10-26T11:47:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nfc-relay-attacks-drain-over-400-000-from-bank-acc",
-      "article-f7a333",
-      "f7a333",
-      "nfc-relay-attacks-drain-over-400-000-from-bank-accounts"
-    ]
-  },
-  {
-    "slug": "quest-diagnostics-breach-exposes-patient-records-6242fd",
-    "title": "Quest Diagnostics Breach Exposes Patient Records",
-    "summary": "Quest Diagnostics suffered a breach exposing personal information and patient records. The incident involved unauthorized access to the company’s database, compromising sensitive health data, though specific exploit details are not disclosed. Patients should review their records, monitor for identity theft, and follow Quest’s guidance for remediation and notify relevant authorities if suspicious activity is detected.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/patient-records-exposed-in-quest-breach-what-you-need-to-know",
-    "publishedAt": "2026-10-26T11:34:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "quest-diagnostics-breach-exposes-patient-records",
-      "article-6242fd",
-      "6242fd"
-    ]
-  },
-  {
-    "slug": "soc-alert-overload-hinders-attack-visibility-ndr-o-f13606",
-    "title": "SOC Alert Overload Hinders Attack Visibility, NDR Offers Solution",
-    "summary": "SOC teams confront a deluge of alerts that rarely disclose how an intrusion began, a challenge detailed in the article. Network detection and response platforms aggregate these alerts into a unified timeline, enabling defenders to trace attack progression. Security teams should adopt NDR solutions and integrate them with SIEMs to achieve comprehensive visibility and faster incident response.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
-    "publishedAt": "2026-10-26T11:23:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "soc-alert-overload-hinders-attack-visibility-ndr-o",
-      "article-f13606",
-      "f13606",
-      "soc-alert-overload-hinders-attack-visibility-ndr-offers-solu"
-    ]
-  },
-  {
-    "slug": "qwen3-coder-model-embeds-geopolitical-bias-in-gene-7260dd",
-    "title": "Qwen3-Coder Model Embeds Geopolitical Bias in Generated Code",
-    "summary": "Researchers demonstrated that Qwen3-Coder's model weights contain geopolitical alignment triggers that degrade the security of generated code based on target audience. Prompting the model for a US defense contractor increases the likelihood of producing vulnerable applications by 19 percent compared to a Chinese defense contractor. Removing the model's CCP alignment from its weights eliminates the bias entirely.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
-    "publishedAt": "2026-10-26T11:03:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qwen3-coder-model-embeds-geopolitical-bias-in-gene",
-      "article-7260dd",
-      "7260dd",
-      "qwen3-coder-model-embeds-geopolitical-bias-in-generated-code"
-    ]
-  },
-  {
-    "slug": "red-hat-delve-update-addresses-medium-severity-vul-37e47c",
-    "title": "Red Hat Delve Update Addresses Medium‑Severity Vulnerability",
-    "summary": "An update for the delve component in Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions addresses a security flaw that could allow unauthorized code execution via malformed input. The vulnerability’s CVSS base score is documented in the referenced CVE links, indicating a medium‑severity risk. Red Hat has released a patch; administrators should apply it immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89888",
-    "publishedAt": "2026-10-26T10:36:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-delve-update-addresses-medium-severity-vul",
-      "article-37e47c",
-      "37e47c",
-      "red-hat-delve-update-addresses-medium-severity-vulnerability"
-    ]
-  },
-  {
-    "slug": "red-hat-rhc-update-mitigates-remote-code-execution-37e47c",
-    "title": "Red Hat rhc Update Mitigates Remote Code Execution Risk",
-    "summary": "An update for the rhc client in Red Hat Enterprise Linux 10.0 Extended Update Support mitigates a security vulnerability that could enable remote code execution through improperly validated configuration data. The CVSS base score for the flaw is provided in the CVE references, reflecting a medium‑severity assessment. Red Hat has issued a patch; users must install it promptly.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89892",
-    "publishedAt": "2026-10-26T10:34:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-rhc-update-mitigates-remote-code-execution",
-      "article-37e47c",
-      "37e47c",
-      "red-hat-rhc-update-mitigates-remote-code-execution-risk"
     ]
   }
 ];

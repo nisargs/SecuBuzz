@@ -2742,5 +2742,21 @@
   "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
   "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/",
   "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
-  "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html"
+  "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312",
+  "https://access.redhat.com/errata/RHSA-2026:92429",
+  "https://access.redhat.com/errata/RHSA-2026:92511",
+  "https://cybernewsai.com/blog/max-severity-gitlab-vulnerability-exploited-against-alp",
+  "https://isc.sans.edu/diary/rss/33474",
+  "https://cybersecuritynews.com/apple-warns-iphone-users/",
+  "https://cybersecuritynews.com/chainalysis-confirms-cyberattack/",
+  "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+  "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
+  "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-44-8",
+  "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
+  "https://www.helpnetsecurity.com/2026/10/30/bedrock-data-ai-assisted-remediation/",
+  "https://www.malwarebytes.com/blog/news/2026/10/binance-hit-by-largest-ever-crypto-theft-with-6-3-billion-stolen",
+  "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-android-update_0754174154.html",
+  "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/"
 ]
