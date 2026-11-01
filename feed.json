@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93413",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93413",
+    "title": "Kernel Update for RHEL 10 Addresses Multiple Vulnerabilities",
+    "headline": "Kernel Update for RHEL 10 Addresses Multiple Vulnerabilities",
+    "summary": "Red Hat released a kernel update for Enterprise Linux 10 to fix multiple kernel vulnerabilities that could compromise system integrity. The vulnerabilities, rated Important by Red Product Security, have CVSS base scores accessible through CVE links, suggesting moderate to high risk. Apply the kernel patch promptly per Red Hat’s instructions to prevent privilege escalation or denial-of-service attacks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-01T22:16:35.000Z",
+    "ingestedAt": "2026-11-01T23:40:28.827Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93413",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93414",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93414",
     "title": "Red Hat Releases Critical Kernel Security Update",
@@ -13,6 +29,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:93414",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93415",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93415",
+    "title": "Kernel‑rt Update for RHEL 8 Fixes Critical Flaws",
+    "headline": "Kernel‑rt Update for RHEL 8 Fixes Critical Flaws",
+    "summary": "Red Hat issued a kernel‑rt update for Enterprise Linux 8 to fix critical kernel vulnerabilities that could enable remote code execution. The flaws, rated Critical by Red Product Security, have CVSS base scores linked to CVE references, indicating exploitability and compromise risk. Apply the kernel‑rt patch immediately per Red Hat’s guidance to prevent privilege escalation and preserve real‑time kernel stability.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-01T20:52:03.000Z",
+    "ingestedAt": "2026-11-01T23:40:28.827Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93415",
     "additionalSources": []
   },
   {
@@ -2951,15 +2983,20 @@
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:92993",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92993",
-    "title": "RHEL 9.2 Kernel Update Addresses Important Vulnerabilities",
-    "headline": "RHEL 9.2 Kernel Update Addresses Important Vulnerabilities",
-    "summary": "Red Hat released a kernel update for RHEL 9.2 Update Services for SAP Solutions, fixing multiple security bugs. The advisory lists several CVEs with CVSS base scores, but the update is classified as Important, indicating a high exploitation risk. Administrators should apply the kernel patch promptly and verify that all affected components are updated to mitigate potential threats.",
+    "title": "Kernel Update for RHEL 9 Fixes Important Vulnerabilities",
+    "headline": "Kernel Update for RHEL 9 Fixes Important Vulnerabilities",
+    "summary": "Red Hat released a kernel update for Enterprise Linux 9 to fix multiple kernel vulnerabilities that could compromise system integrity. The vulnerabilities, rated Important by Red Product Security, carry CVSS base scores accessible through CVE links, suggesting moderate to high risk. Apply the kernel patch promptly per Red Hat’s instructions to prevent privilege escalation or denial-of-service attacks.",
     "category": "VULNERABILITY",
     "severity": "HIGH",
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-30T06:37:42.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:92993",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93412"
+      }
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/10/30/cisco-talos-it-help-desk-vishing/",
@@ -5182,35 +5219,6 @@
     "source": "CyberNews AI",
     "publishedAt": "2026-10-29T00:49:03.000Z",
     "url": "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/google-to-allow-one-tap-android-app-installs-from-appro",
-    "sourceUrl": "https://cybernewsai.com/blog/google-to-allow-one-tap-android-app-installs-from-appro",
-    "title": "Google One-Tap Android Installation Feature Poses Security Risks",
-    "headline": "Google One-Tap Android Installation Feature Poses Security Risks",
-    "summary": "Security researchers issued an intelligence alert highlighting security risks within Google One-Tap Android application installation mechanisms. Telemetry analysis indicates that flaw mechanisms could allow unauthorized application deployment or verification bypasses on targeted mobile devices. Administrators and users should deploy published patches immediately and implement recommended detection rules to hunt for malicious telemetry.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-29T00:48:57.000Z",
-    "ingestedAt": "2026-11-01T07:43:39.459Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybernewsai.com/blog/google-to-allow-one-tap-android-app-installs-from-appro",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/volt-typhoon-used-covert-silent-train-network-in-four-z",
-    "sourceUrl": "https://cybernewsai.com/blog/volt-typhoon-used-covert-silent-train-network-in-four-z",
-    "title": "Volt Typhoon Zero-Day C2 Exploit CVE-2024-39717",
-    "headline": "Volt Typhoon Zero-Day C2 Exploit CVE-2024-39717",
-    "summary": "Volt Typhoon’s zero‑day C2 flaw, CVE‑2024‑39717, lets attackers hijack enterprise traffic and exfiltrate data. The flaw stems from improper validation of encrypted C2 packets, enabling unauthenticated remote code execution with a CVSS score of 9.2, and has been observed in the wild. Patches are available from vendors; security teams should apply updates and enable the provided detection rules immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-29T00:48:33.000Z",
-    "url": "https://cybernewsai.com/blog/volt-typhoon-used-covert-silent-train-network-in-four-z",
     "additionalSources": []
   }
 ]
