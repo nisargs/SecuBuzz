@@ -3447,5 +3447,20 @@
   "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
   "https://www.darkreading.com/cyber-risk/threat-modeling-4-simple-questions",
   "https://access.redhat.com/errata/RHSA-2026:91223",
-  "https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever"
+  "https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319",
+  "https://access.redhat.com/errata/RHSA-2026:92861",
+  "https://cybernewsai.com/blog/goahead-tls-flaws-allow-revoked-client-certificates-and",
+  "https://cybernewsai.com/blog/adobe-commerce-polyshell-attacks-breach-hundreds-of-sto",
+  "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
+  "https://www.securityweek.com/passkeys-are-better-than-passwords-but-they-are-not-enough/",
+  "https://www.helpnetsecurity.com/2026/10/30/shufti-know-your-agent-kya/",
+  "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+  "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
+  "https://socket.dev/blog/searchjacked",
+  "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
+  "https://access.redhat.com/errata/RHSA-2026:91719",
+  "https://access.redhat.com/errata/RHSA-2026:92621",
+  "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era"
 ]

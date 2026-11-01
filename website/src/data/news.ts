@@ -186,6 +186,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-filesystem-memory-corruption-cve-2026-118-69e77aef",
+    "title": "Chromium FileSystem Memory Corruption CVE-2026-118306",
+    "summary": "CVE‑2026‑118306 is a memory corruption flaw in Chromium’s FileSystem module that can corrupt data when Edge processes malformed paths. The bug arises from unchecked buffer handling during file metadata parsing, allowing local privilege escalation. Microsoft released an update that incorporates Chrome’s patch; users should install the latest Edge or apply the Chromium update to mitigate.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118306"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-filesystem-memory-corruption-cve-2026-118",
+      "article-69e77aef",
+      "69e77aef",
+      "chromium-filesystem-memory-corruption-cve-2026-118-1fe91c",
+      "chromium-filesystem-memory-corruption-cve-2026-118306"
+    ]
+  },
+  {
+    "slug": "chromium-skia-memory-corruption-cve-2026-118319-8d3fe687",
+    "title": "Chromium Skia Memory Corruption CVE-2026-118319",
+    "summary": "CVE‑2026‑118319 is a memory corruption flaw in Chromium’s Skia library that can corrupt rendering data when Edge processes malformed images. The defect originates from unchecked bounds checks during image decoding, potentially enabling local privilege escalation. Microsoft incorporated Chrome’s patch in an Edge update; users should install the latest version or apply the Chromium update.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118319"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-skia-memory-corruption-cve-2026-118319",
+      "article-8d3fe687",
+      "8d3fe687",
+      "chromium-skia-memory-corruption-cve-2026-118319-1fe91c"
+    ]
+  },
+  {
     "slug": "chromium-memory-corruption-cve-2026-118305-fixed-94a29281",
     "title": "Chromium Memory Corruption CVE-2026-118305 Fixed",
     "summary": "A memory corruption flaw (CVE-2026-118305) in Chromium's Turbolev component can be triggered by malformed input during rendering. The vulnerability allows local code execution if an attacker supplies crafted data, but no active exploitation has been reported. Microsoft Edge users should install the latest Chromium update, and Chrome users can apply the patch released in the 2026 update cycle.",
@@ -1351,6 +1392,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "italy-faces-diverse-cyber-threat-landscape-ad209944",
+    "title": "Italy Faces Diverse Cyber Threat Landscape",
+    "summary": "Researchers note Italy faces a uniquely diverse cyber threat landscape compared to other nations. The absence of a clear causal explanation points to local socio-economic factors, regulatory differences, and threat actor preferences. Security teams should perform localized threat intelligence and tailor controls to address the specific attack vectors prevalent in Italy.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
+    "publishedAt": "2026-10-30T15:39:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "italy-faces-diverse-cyber-threat-landscape",
+      "article-ad209944",
+      "ad209944",
+      "italy-faces-diverse-cyber-threat-landscape-701901"
+    ]
+  },
+  {
     "slug": "malicious-chrome-extensions-exfiltrate-13-4m-users-96d3f2d3",
     "title": "Malicious Chrome Extensions Exfiltrate 13.4M Users' Search Queries",
     "summary": "Malicious Chrome extensions hijacked search queries from 13.4 million users, routing them to attacker‑controlled servers. The compromise leveraged the extensions’ permission to access browser search data, enabling passive eavesdropping without user interaction. Users should remove the 319 identified extensions and update Chrome to the latest stable release to mitigate the threat.",
@@ -1675,6 +1734,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "passkeys-offer-better-security-but-leave-gaps-dd1e1807",
+    "title": "Passkeys Offer Better Security But Leave Gaps",
+    "summary": "Attackers will shift from targeting authenticators to exploiting surrounding infrastructure as organizations adopt passkeys. Threat actors may abuse legitimate authentication flows, session tokens, or API integrations that passkeys enable. Organizations must layer additional controls such as device attestation, anomaly detection, and zero-trust boundaries around authenticator deployments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/passkeys-are-better-than-passwords-but-they-are-not-enough/",
+    "publishedAt": "2026-10-30T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "passkeys-offer-better-security-but-leave-gaps",
+      "article-dd1e1807",
+      "dd1e1807",
+      "passkeys-offer-better-security-but-leave-gaps-6fe8d3"
+    ]
+  },
+  {
     "slug": "microsoft-patches-visual-studio-spoofing-flaw-e6bbe5bd",
     "title": "Microsoft Patches Visual Studio Spoofing Flaw",
     "summary": "CVE-2026-118147 is a spoofing vulnerability in Microsoft Visual Studio caused by improper certificate validation, enabling unauthorized network-based spoofing attacks. The flaw allows an attacker to bypass certificate trust mechanisms, potentially leading to man-in-the-middle or impersonation scenarios during development or deployment workflows.",
@@ -1868,6 +1945,24 @@ export const news: NewsBrief[] = [
       "article-c5a9a6a1",
       "c5a9a6a1",
       "uk-introduces-four-age-verification-methods-3393c8"
+    ]
+  },
+  {
+    "slug": "shufti-launches-ai-agent-verification-solution-17c64adc",
+    "title": "Shufti Launches AI Agent Verification Solution",
+    "summary": "Shufti introduced Know Your Agent (KYA), a verification platform that ties autonomous AI agent actions to verified owners and permissions. The solution addresses agentic commerce scenarios where AI agents open accounts, place orders, and move funds on behalf of individuals. Businesses can confirm agent authenticity, accountability, and approval scope before processing requests.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/shufti-know-your-agent-kya/",
+    "publishedAt": "2026-10-30T12:53:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "shufti-launches-ai-agent-verification-solution",
+      "article-17c64adc",
+      "17c64adc",
+      "shufti-launches-ai-agent-verification-solution-7e4768"
     ]
   },
   {
@@ -2217,6 +2312,25 @@ export const news: NewsBrief[] = [
       "article-723435de",
       "723435de",
       "glm-5-3-demonstrates-offensive-cyber-capabilities-753263"
+    ]
+  },
+  {
+    "slug": "binance-traces-6-3-billion-crypto-theft-to-comprom-64335db0",
+    "title": "Binance Traces $6.3 Billion Crypto Theft to Compromised Laptop",
+    "summary": "Binance traced a massive cryptocurrency theft totaling approximately $6.3 billion to a compromised DevOps engineer's laptop. The endpoint intrusion enabled unauthorized access to sensitive internal operational assets, resulting in unprecedented financial losses for the exchange. Security teams must enforce strict endpoint detection, zero-trust privileged access management, and robust multi-factor authentication across all developer hardware.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+    "publishedAt": "2026-10-30T09:18:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-traces-6-3-billion-crypto-theft-to-comprom",
+      "article-64335db0",
+      "64335db0",
+      "binance-traces-6-3-billion-crypto-theft-to-comprom-60fca1",
+      "binance-traces-6-3-billion-crypto-theft-to-compromised-lapto"
     ]
   },
   {
@@ -3061,6 +3175,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-satellite-6-19-critical-security-update-18219665",
+    "title": "Red Hat Satellite 6.19 Critical Security Update",
+    "summary": "Red Hat issued a critical update for Satellite 6.19, fixing high‑severity flaws that could enable unauthorized changes. The advisory cites CVEs with CVSS scores above 7.0, indicating remote code execution or privilege escalation. Apply the Satellite 6.19 patch or upgrade to the latest release immediately to mitigate the critical risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92861",
+    "publishedAt": "2026-10-29T21:37:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-19-critical-security-update",
+      "article-18219665",
+      "18219665",
+      "red-hat-satellite-6-19-critical-security-update-37d993"
+    ]
+  },
+  {
     "slug": "chrome-updates-desktop-stable-channel-1c8f2e2a",
     "title": "Chrome Updates Desktop Stable Channel",
     "summary": "Google Chrome released a stable channel update for Windows, Mac, and Linux that includes 21 security fixes, among them CVE‑2026‑76024, a critical memory‑corruption flaw in MediaStream, and CVE‑2026‑76025, a high‑severity use‑after‑free in FileSystem. These vulnerabilities could allow attackers to execute code or crash the browser via media or filesystem inputs. Users should install the update immediately to mitigate the risk.",
@@ -3114,6 +3246,65 @@ export const news: NewsBrief[] = [
       "448a5b8d",
       "hokuriku-telecommunications-deploys-arctic-wolf-ma-5e7cd7",
       "hokuriku-telecommunications-deploys-arctic-wolf-managed-edr"
+    ]
+  },
+  {
+    "slug": "reporters-notebook-video-series-discusses-ai-cyber-a08f348c",
+    "title": "Reporters Notebook Video Series Discusses AI Cybersecurity Training Trends",
+    "summary": "The Reporters' Notebook video series published a discussion examining emerging workforce training trends during Cybersecurity Awareness Month. The coverage highlights integrating artificial intelligence into educational programs to inform next-generation staff about evolving threat vectors and operational risks. Organizations can utilize these strategic training concepts to enhance internal cybersecurity awareness initiatives across modern digital environments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
+    "publishedAt": "2026-10-29T20:15:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "reporters-notebook-video-series-discusses-ai-cyber",
+      "article-a08f348c",
+      "a08f348c",
+      "reporters-notebook-video-series-discusses-ai-cyber-377b1f",
+      "reporters-notebook-video-series-discusses-ai-cybersecurity-t"
+    ]
+  },
+  {
+    "slug": "red-hat-patches-security-flaw-in-ansible-automatio-49453b6e",
+    "title": "Red Hat Patches Security Flaw in Ansible Automation Platform",
+    "summary": "Red Hat published a security update addressing vulnerabilities in Red Hat Ansible Automation Platform 2.6. The release resolves CVE-2026-98432, an Important-rated flaw evaluated via the Common Vulnerability Scoring System that risks operational automation workflows. System administrators should apply the latest product security and bug fix updates across affected enterprise environments.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92621",
+    "publishedAt": "2026-10-29T19:58:31.000Z",
+    "cves": [
+      "CVE-2026-98432"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-patches-security-flaw-in-ansible-automatio",
+      "article-49453b6e",
+      "49453b6e",
+      "red-hat-patches-security-flaw-in-ansible-automatio-37d99b",
+      "red-hat-patches-security-flaw-in-ansible-automation-platform"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-security-update-for-ignition-util-390afb7a",
+    "title": "Red Hat Releases Security Update for Ignition Utility",
+    "summary": "Red Hat released an important security advisory for the ignition package on Red Hat Enterprise Linux 9.8 Extended Update Support. The update addresses security flaws evaluated under the Common Vulnerability Scoring System that impact system provisioning integrity. Security teams managing affected Red Hat Enterprise Linux installations should immediately deploy the updated ignition packages.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91719",
+    "publishedAt": "2026-10-29T19:58:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-security-update-for-ignition-util",
+      "article-390afb7a",
+      "390afb7a",
+      "red-hat-releases-security-update-for-ignition-util-37da0c",
+      "red-hat-releases-security-update-for-ignition-utility"
     ]
   },
   {
@@ -3746,6 +3937,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "github-introduces-npm-package-firewall-preview-9110d00f",
+    "title": "GitHub Introduces npm Package Firewall Preview",
+    "summary": "GitHub announced a new package firewall preview for npm that inspects metadata requests and package downloads for malicious activity during installation. The feature acts as an install-time policy gate to block suspicious packages before they execute. This defensive tool is currently limited to the npm ecosystem and available in public preview.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
+    "publishedAt": "2026-10-29T10:26:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-introduces-npm-package-firewall-preview",
+      "article-9110d00f",
+      "9110d00f",
+      "github-introduces-npm-package-firewall-preview-422c27"
+    ]
+  },
+  {
     "slug": "ai-relay-disables-security-in-openai-codex-claude-f498c143",
     "title": "AI Relay Disables Security in OpenAI Codex, Claude",
     "summary": "An unnamed AI relay delivers OpenAI Codex and Anthropic Claude to regions lacking official access, but with security features disabled. Turning off sandboxing and monitoring exposes users to code injection, data exfiltration, and unauthorized execution, though no attacks have been confirmed. Defenders should verify AI service provenance, enforce local sandboxing, and apply extra security controls to mitigate compromised code.",
@@ -4229,6 +4438,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hidden-browser-extensions-hijack-searches-for-mill-9bdcffad",
+    "title": "Hidden Browser Extensions Hijack Searches for Millions",
+    "summary": "Intango LTD has distributed 111 browser extensions that secretly hijack search queries for approximately 2.187 million users. These extensions redirect search traffic without user consent, enabling data theft and affiliate fraud. Security researchers have flagged this campaign as a significant threat to user privacy and browsing integrity.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/searchjacked",
+    "publishedAt": "2026-10-29T02:01:54.540Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hidden-browser-extensions-hijack-searches-for-mill",
+      "article-9bdcffad",
+      "9bdcffad",
+      "hidden-browser-extensions-hijack-searches-for-mill-751d74",
+      "hidden-browser-extensions-hijack-searches-for-millions"
+    ]
+  },
+  {
     "slug": "cisco-sd-wan-controllers-vulnerability-cve-2026-20-8caf9d97",
     "title": "Cisco SD‑WAN Controllers Vulnerability (CVE‑2026‑20127) Allows Authentication Bypass and Potential KeyDrift Deployment",
     "summary": "Cisco SD‑WAN Controllers suffered an authentication‑bypass flaw (CVE‑2026‑20127) that let attackers gain privileged access. The defect allowed unauthenticated remote requests to bypass login, enabling manipulation of NETCONF configurations and potential deployment of the KeyDrift malware framework. Cisco issued an out‑of‑band patch; administrators should apply it immediately and monitor controller logs for signs of compromise.",
@@ -4308,6 +4536,48 @@ export const news: NewsBrief[] = [
       "article-5bf9a0e7",
       "5bf9a0e7",
       "apple-coregraphics-memory-flaw-patch-6497ef"
+    ]
+  },
+  {
+    "slug": "goahead-tls-certificate-bypass-vulnerability-explo-633eb5c2",
+    "title": "GoAhead TLS Certificate Bypass Vulnerability Exploited",
+    "summary": "GoAhead Web Server (CVE-2026-115881) has a TLS certificate bypass that lets attackers forge certificates. The flaw arises from improper certificate chain validation during TLS handshake, enabling unauthenticated remote code execution with a CVSS score of 9.8, and has been exploited. GoAhead has released a patch; security teams should apply it immediately and enforce certificate pinning to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/goahead-tls-flaws-allow-revoked-client-certificates-and",
+    "publishedAt": "2026-10-29T00:50:17.000Z",
+    "cves": [
+      "CVE-2026-115881"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "goahead-tls-certificate-bypass-vulnerability-explo",
+      "article-633eb5c2",
+      "633eb5c2",
+      "goahead-tls-certificate-bypass-vulnerability-explo-3ff4b1",
+      "goahead-tls-certificate-bypass-vulnerability-exploited"
+    ]
+  },
+  {
+    "slug": "adobe-commerce-polyshell-exploit-enables-store-att-ce225383",
+    "title": "Adobe Commerce PolyShell Exploit Enables Store Attacks",
+    "summary": "Adobe Commerce's PolyShell flaw (CVE-2026-111497) lets attackers run arbitrary code in the store front, threatening customer data. The vulnerability arises from insufficient input validation in the product import module, enabling remote code execution with a CVSS score of 9.5, and has been exploited. Adobe released a patch; teams should apply it immediately and monitor import activity to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/adobe-commerce-polyshell-attacks-breach-hundreds-of-sto",
+    "publishedAt": "2026-10-29T00:50:05.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-commerce-polyshell-exploit-enables-store-att",
+      "article-ce225383",
+      "ce225383",
+      "adobe-commerce-polyshell-exploit-enables-store-att-469e12",
+      "adobe-commerce-polyshell-exploit-enables-store-attacks"
     ]
   },
   {
@@ -4892,6 +5162,25 @@ export const news: NewsBrief[] = [
       "article-5bc9d71f",
       "5bc9d71f",
       "sony-isp-breach-exposes-2-5-million-records-1edde0"
+    ]
+  },
+  {
+    "slug": "logic-flaws-alone-cracked-microsoft-edge-in-pwn2ow-774728a6",
+    "title": "Logic Flaws Alone Cracked Microsoft Edge in Pwn2Own Win",
+    "summary": "A chain of logic flaws, without memory corruption, can escape Microsoft Edge's sandbox via a malicious web page, running code outside the browser on Windows. Orange Tsai of DEVCORE published the full exploit chain on October 28 after it won $175,000 at Pwn2Own Berlin in May. Microsoft patched the Edge vulnerabilities the day after the contest.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
+    "publishedAt": "2026-10-28T16:23:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "logic-flaws-alone-cracked-microsoft-edge-in-pwn2ow",
+      "article-774728a6",
+      "774728a6",
+      "logic-flaws-alone-cracked-microsoft-edge-in-pwn2ow-196b3c",
+      "logic-flaws-alone-cracked-microsoft-edge-in-pwn2own-win"
     ]
   },
   {
@@ -6464,302 +6753,6 @@ export const news: NewsBrief[] = [
       "9c8c8149",
       "microsoft-net-elevation-of-privilege-vulnerability-74506d",
       "microsoft-net-elevation-of-privilege-vulnerability-cve-2026-"
-    ]
-  },
-  {
-    "slug": "goahead-tls-flaw-enables-session-decryption-with-r-2b50e13c",
-    "title": "GoAhead TLS Flaw Enables Session Decryption with Revoked Client Certificates",
-    "summary": "GoAhead embedded web servers using OpenSSL mutual‑TLS load a certificate revocation list but never enable revocation checking, allowing revoked client certificates to authenticate on affected installations. The flaw permits attackers to decrypt TLS sessions and bypass authentication controls, exposing sensitive data and enabling credential theft without requiring privileged access. Patch is available from GoAhead.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
-    "publishedAt": "2026-10-27T13:59:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "goahead-tls-flaw-enables-session-decryption-with-r",
-      "article-2b50e13c",
-      "2b50e13c",
-      "goahead-tls-flaw-enables-session-decryption-with-r-3e2958",
-      "goahead-tls-flaw-enables-session-decryption-with-revoked-cli"
-    ]
-  },
-  {
-    "slug": "denver-health-plan-breach-exposes-238-000-records-97aea417",
-    "title": "Denver Health Plan Breach Exposes 238,000 Records via Leaked Key",
-    "summary": "A leaked SquareML access key potentially exposed a database containing personal and health information of 238,000 Denver Health Plan members. The breach resulted from accidental key disclosure, allowing unauthenticated read access to sensitive records, including medical histories and contact details. Immediate remediation requires revoking the compromised key, rotating all credentials, and auditing access controls to prevent recurrence.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/",
-    "publishedAt": "2026-10-27T13:30:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "denver-health-plan-breach-exposes-238-000-records",
-      "article-97aea417",
-      "97aea417",
-      "denver-health-plan-breach-exposes-238-000-records-474ada",
-      "denver-health-plan-breach-exposes-238-000-records-via-leaked"
-    ]
-  },
-  {
-    "slug": "php2shell-exploitation-attempts-fail-in-observed-a-801a3475",
-    "title": "PHP2Shell Exploitation Attempts Fail in Observed Attacks",
-    "summary": "PHP2Shell, a PHP-based web shell, has been targeted for exploitation attempts, but no successful attacks have been reported to date. The vulnerability, identified as CVE-2026-109618, remains unexploited, with attackers lacking a working exploit or privileges to achieve remote code execution. Security teams should apply the vendor’s patch, update PHP to the latest stable release, and monitor for anomalous shell activity.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/php2shell-exploitation-so-far",
-    "publishedAt": "2026-10-27T13:21:45.000Z",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "php2shell-exploitation-attempts-fail-in-observed-a",
-      "article-801a3475",
-      "801a3475",
-      "php2shell-exploitation-attempts-fail-in-observed-a-5582d7",
-      "php2shell-exploitation-attempts-fail-in-observed-attacks"
-    ]
-  },
-  {
-    "slug": "yoba-malware-distributed-via-signed-ai-tool-binari-05f26298",
-    "title": "Yoba Malware Distributed via Signed AI Tool Binaries",
-    "summary": "A campaign leverages signed ChatGPT and Claude binaries to deliver the Yoba malware chain through fake GitHub projects masquerading as AI desktop applications. The attackers embed malicious code in these binaries, exploiting trust in signed software to execute payloads on victim systems. Security teams should verify signatures, monitor for anomalous binaries, and apply updated endpoint protection rules.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/",
-    "publishedAt": "2026-10-27T13:03:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yoba-malware-distributed-via-signed-ai-tool-binari",
-      "article-05f26298",
-      "05f26298",
-      "yoba-malware-distributed-via-signed-ai-tool-binari-7e8a7a",
-      "yoba-malware-distributed-via-signed-ai-tool-binaries"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-2026-agentic-security-operations-repor-7efaad4b",
-    "title": "Arctic Wolf 2026 Agentic Security Operations Report",
-    "summary": "Arctic Wolf released its 2026 Agentic Security Operations Report, outlining how agentic AI collaborates with analysts to accelerate security investigations. The report details improvements in threat detection, alert triage, and response times, emphasizing the synergy between human expertise and automated analysis. Readers are encouraged to download the full report for insights on integrating agentic AI into existing SOC workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/report-uk/agentic-security-operations-report-2026/",
-    "publishedAt": "2026-10-27T13:00:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-2026-agentic-security-operations-repor",
-      "article-7efaad4b",
-      "7efaad4b",
-      "arctic-wolf-2026-agentic-security-operations-repor-610053",
-      "arctic-wolf-2026-agentic-security-operations-report"
-    ]
-  },
-  {
-    "slug": "camera-management-software-compromised-malware-dep-28f21a70",
-    "title": "Camera Management Software Compromised, Malware Deployed",
-    "summary": "Attackers compromised a camera management platform, enabling malware deployment, persistence, and command‑and‑control beaconing. The exploitation chain leveraged a software flaw that allowed remote code execution, with attackers establishing a foothold and maintaining persistence through privileged backdoors. Security teams should apply vendor patches, enforce least‑privilege access, and monitor for anomalous outbound traffic to mitigate further compromise.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/camera-management-software-compromise-malware",
-    "publishedAt": "2026-10-27T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "camera-management-software-compromised-malware-dep",
-      "article-28f21a70",
-      "28f21a70",
-      "camera-management-software-compromised-malware-dep-b2477a",
-      "camera-management-software-compromised-malware-deployed"
-    ]
-  },
-  {
-    "slug": "cloudflare-launches-php-capture-the-flag-challenge-14a69202",
-    "title": "Cloudflare Launches PHP Capture the Flag Challenge for WAF Testing",
-    "summary": "Cloudflare has introduced a PHP Capture the Flag challenge integrated with its Bug Bounty program to evaluate the effectiveness of its Web Application Firewall. Researchers are invited to bypass the WAF defenses and capture the flag, providing insights into potential weaknesses. Participants should follow the challenge guidelines and report findings through the official bug bounty portal.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/php-ctf/",
-    "publishedAt": "2026-10-27T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-launches-php-capture-the-flag-challenge",
-      "article-14a69202",
-      "14a69202",
-      "cloudflare-launches-php-capture-the-flag-challenge-3764d5",
-      "cloudflare-launches-php-capture-the-flag-challenge-for-waf-t"
-    ]
-  },
-  {
-    "slug": "cloudflare-radar-records-widespread-internet-outag-7d1f13cf",
-    "title": "Cloudflare Radar Records Widespread Internet Outages in Q3 2026",
-    "summary": "Cloudflare Radar recorded widespread internet outages during Q3 2026, with power failures, natural disasters, and government shutdowns disrupting global connectivity. These events caused significant traffic degradation and service unavailability across multiple regions, highlighting the fragility of critical infrastructure. Operators should enhance redundancy, monitor power supplies, and coordinate with authorities to mitigate future disruptions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/",
-    "publishedAt": "2026-10-27T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-radar-records-widespread-internet-outag",
-      "article-7d1f13cf",
-      "7d1f13cf",
-      "cloudflare-radar-records-widespread-internet-outag-67c23b",
-      "cloudflare-radar-records-widespread-internet-outages-in-q3-2"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-report-shows-agentic-ai-resolves-most-dc032be6",
-    "title": "Arctic Wolf Report Shows Agentic AI Resolves Most Security Investigations",
-    "summary": "Arctic Wolf published its 2026 Agentic Security Operations Report detailing artificial intelligence integration in SOC workflows. The report reveals agentic AI now resolves 60% of security investigations, significantly reducing alert fatigue and threat response times. Organizations are advised to implement AI-driven triage alongside mandatory human analyst oversight to maximize overall operational efficiency.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/press-releases/arctic-wolf-2026-agentic-security-operations-report-reveals-ai-now-resolves-the-majority-of-security-investigations-in-its-agentic-soc/",
-    "publishedAt": "2026-10-27T12:58:30.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Arctic Wolf",
-        "sourceUrl": "https://arcticwolf.com/resources/report/2026-agentic-security-operations-report/"
-      }
-    ],
-    "aliases": [
-      "arctic-wolf-report-shows-agentic-ai-resolves-most",
-      "article-dc032be6",
-      "dc032be6",
-      "arctic-wolf-report-shows-agentic-ai-resolves-most-bf5d28",
-      "arctic-wolf-report-shows-agentic-ai-resolves-most-security-i"
-    ]
-  },
-  {
-    "slug": "ai-technologies-reshape-human-intimacy-creating-ne-1e131fc4",
-    "title": "AI Technologies Reshape Human Intimacy, Creating New Exploitation Vectors",
-    "summary": "The report highlights how AI technologies are reshaping human intimacy, blurring authenticity and enabling new exploitation vectors. AI models produce persuasive content that can deceive users, creating opportunities for social engineering and privacy breaches across digital platforms. Security teams should monitor AI-generated material, enforce verification protocols, and educate users to mitigate manipulation risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/artificial-intimacy-love-and-lies-in-the-age-of-ai",
-    "publishedAt": "2026-10-27T12:40:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-technologies-reshape-human-intimacy-creating-ne",
-      "article-1e131fc4",
-      "1e131fc4",
-      "ai-technologies-reshape-human-intimacy-creating-ne-7d6a7c",
-      "ai-technologies-reshape-human-intimacy-creating-new-exploita"
-    ]
-  },
-  {
-    "slug": "php-and-node-js-flaws-threaten-trusted-websites-28af3f16",
-    "title": "PHP and Node.js Flaws Threaten Trusted Websites",
-    "summary": "PHP and Node.js flaws, hacked sites, fake updates, and rogue certificates can risk users on trusted websites. The vulnerabilities arise from insecure server configurations and certificate mismanagement, enabling credential theft and man‑in‑the‑middle attacks; no specific CVE cited. Users should verify site certificates, avoid downloading unverified updates, and keep PHP/Node.js environments patched.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/the-webs-having-a-rough-week-heres-how-to-browse-safely",
-    "publishedAt": "2026-10-27T12:22:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php-and-node-js-flaws-threaten-trusted-websites",
-      "article-28af3f16",
-      "28af3f16",
-      "php-and-node-js-flaws-threaten-trusted-websites-19c656"
-    ]
-  },
-  {
-    "slug": "microsoft-authenticator-flaw-enables-token-theft-01065de7",
-    "title": "Microsoft Authenticator Flaw Enables Token Theft",
-    "summary": "Microsoft Authenticator for Android had a flaw allowing permissionless malicious apps to impersonate trusted Microsoft apps and harvest work account sign‑in tokens. The vulnerability, tracked as CVE‑2026‑80097, exploits the app’s lack of permission checks, enabling credential theft without user interaction; a public PoC demonstrated the exploit. Microsoft released Authenticator 6.2606.4246, and users must update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
-    "publishedAt": "2026-10-27T12:09:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-authenticator-flaw-enables-token-theft",
-      "article-01065de7",
-      "01065de7",
-      "microsoft-authenticator-flaw-enables-token-theft-1cfe87"
-    ]
-  },
-  {
-    "slug": "mitsubishi-electric-patches-multiple-ics-product-v-8c430eaa",
-    "title": "Mitsubishi Electric Patches Multiple ICS Product Vulnerabilities",
-    "summary": "CISA issued a CSAF advisory for multiple vulnerabilities in Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, and related industrial products enabling arbitrary code execution and authentication bypass. The flaws (CVE-2023-4863, CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) permit remote code execution, credential bypass, and arbitrary operations leading to data tampering, destruction, and denial-of-service conditions. Affected versions include GENESIS64 and ICONICS Suite 10.97 and up",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
-    "publishedAt": "2026-10-27T12:00:00.000Z",
-    "cves": [
-      "CVE-2023-4863",
-      "CVE-2026-16436",
-      "CVE-2026-16437",
-      "CVE-2026-16438"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mitsubishi-electric-patches-multiple-ics-product-v",
-      "article-8c430eaa",
-      "8c430eaa",
-      "mitsubishi-electric-patches-multiple-ics-product-v-41cb8a",
-      "mitsubishi-electric-patches-multiple-ics-product-vulnerabili"
-    ]
-  },
-  {
-    "slug": "epics-base-integer-overflow-vulnerability-cve-2026-bf698472",
-    "title": "EPICS Base Integer Overflow Vulnerability (CVE-2026-114595) Enables Remote Code Execution",
-    "summary": "An integer overflow in EPICS Base release 7.0.10 and prior allows an attacker to cause memory corruption, potentially leading to arbitrary code execution or denial‑of‑service. The flaw arises from improper handling of network request lengths, resulting in incorrect memory allocation and type confusion. EPICS has released a patch; operators should update to the latest release and monitor for anomalous activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
-    "publishedAt": "2026-10-27T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-114595"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "epics-base-integer-overflow-vulnerability-cve-2026",
-      "article-bf698472",
-      "bf698472",
-      "epics-base-integer-overflow-vulnerability-cve-2026-41cb8a",
-      "epics-base-integer-overflow-vulnerability-cve-2026-114595-en"
-    ]
-  },
-  {
-    "slug": "research-proves-ai-models-can-hide-backdoors-6584d38b",
-    "title": "Research Proves AI Models Can Hide Backdoors",
-    "summary": "Researchers demonstrated that AI models can embed encrypted neural networks within host weights, executing only upon a secret trigger. The proof-of-concept, implemented in PyTorch, uses digital lockers to make hidden circuits provably hard to elicit under cryptographic assumptions even with full weight access. The work extends prior hiding techniques from fixed strings to arbitrary computations",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
-    "publishedAt": "2026-10-27T11:01:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "research-proves-ai-models-can-hide-backdoors",
-      "article-6584d38b",
-      "6584d38b",
-      "research-proves-ai-models-can-hide-backdoors-21fd94"
     ]
   }
 ];
