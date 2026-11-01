@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-critical-kernel-security-update-c7553cc9",
+    "title": "Red Hat Releases Critical Kernel Security Update",
+    "summary": "Red Hat released a kernel update for RHEL 8, fixing critical vulnerabilities that could enable privilege escalation or remote code execution. The advisory lists kernel flaws with CVSS scores but omits CVE IDs; exploitation requires no authentication. Red Hat urges users to apply the update immediately and consult the CVE links for detailed severity information.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93414",
+    "publishedAt": "2026-11-01T21:39:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-kernel-security-update",
+      "article-c7553cc9",
+      "c7553cc9",
+      "red-hat-releases-critical-kernel-security-update-37d92f"
+    ]
+  },
+  {
+    "slug": "microsoft-teams-detect-esc1-help-desk-threat-8e2abe05",
+    "title": "Microsoft Teams: Detect ESC1 Help Desk Threat",
+    "summary": "Microsoft Teams users face a new ESC1 Help Desk threat that can compromise accounts via malicious support interactions. The threat exploits social engineering tactics, leveraging deceptive help desk communications to gain credential access; no software vulnerability is required. Security teams should review telemetry, deploy detection rules, and apply the latest Teams patches to mitigate the risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/from-help-desk-impersonation-to-ad-cs-abuse-investigati",
+    "publishedAt": "2026-11-01T17:43:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-teams-detect-esc1-help-desk-threat",
+      "article-8e2abe05",
+      "8e2abe05",
+      "microsoft-teams-detect-esc1-help-desk-threat-4b2815"
+    ]
+  },
+  {
+    "slug": "binance-detect-devops-laptop-takeover-threat-acdd1b42",
+    "title": "Binance: Detect DevOps Laptop Takeover Threat",
+    "summary": "Binance faces a DevOps laptop takeover threat that can grant attackers persistent access to critical infrastructure. The attack leverages credential theft and lateral movement via compromised laptops, exploiting weak endpoint security; no software vulnerability is cited. Teams should monitor telemetry, enforce strict endpoint controls, and apply the latest security patches to prevent exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/binance-links-6-3-billion-crypto-theft-to-compromised-d",
+    "publishedAt": "2026-11-01T17:41:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-detect-devops-laptop-takeover-threat",
+      "article-acdd1b42",
+      "acdd1b42",
+      "binance-detect-devops-laptop-takeover-threat-4e8474"
+    ]
+  },
+  {
     "slug": "gitee-repos-detecting-exposed-cloud-and-ai-credent-40426d79",
     "title": "Gitee Repos: Detecting Exposed Cloud and AI Credentials",
     "summary": "An alert warns that Gitee repositories may expose cloud and AI credentials through publicly accessible code. The flaw arises from repositories lacking secret scanning, allowing attackers to harvest API keys and tokens, potentially granting unauthorized access to cloud and AI platforms. Gitee recommends enabling secret scanning, restricting repository visibility, and rotating exposed credentials immediately.",
@@ -6720,70 +6774,6 @@ export const news: NewsBrief[] = [
       "article-42256aaf",
       "42256aaf",
       "volt-typhoon-zero-day-c2-exploit-cve-2024-39717-70440f"
-    ]
-  },
-  {
-    "slug": "cisa-adds-cve-2026-111497-to-known-exploited-vulne-a10bee41",
-    "title": "CISA Adds CVE‑2026‑111497 to Known Exploited Vulnerabilities Catalog; AWS and Cisco Issue Patches for Brotli RCE",
-    "summary": "CISA added CVE‑2026‑111497, a Brotli decompression flaw, to its Known Exploited Vulnerabilities catalog, affecting Google services. The flaw permits remote code execution or memory disclosure by exploiting improper input validation, enabling attackers to run arbitrary code. AWS and Cisco have issued patches for affected services, urging customers to update immediately to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
-    "publishedAt": "2026-10-29T00:36:45.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "AWS Security Bulletins",
-        "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-155-aws/"
-      }
-    ],
-    "aliases": [
-      "cisa-adds-cve-2026-111497-to-known-exploited-vulne",
-      "article-a10bee41",
-      "a10bee41",
-      "cisa-adds-cve-2026-111497-to-known-exploited-vulne-1aa209",
-      "cisa-adds-cve-2026-111497-to-known-exploited-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "gold-ogre-employs-ai-for-aur0ra-ransomware-operati-f8462f8f",
-    "title": "GOLD OGRE Employs AI for Aur0ra Ransomware Operations",
-    "summary": "The GOLD OGRE threat group has integrated artificial intelligence into its Aur0ra ransomware toolkit to streamline testing and execution. This AI‑driven approach enhances automation of payload delivery, obfuscation, and command‑and‑control orchestration, potentially increasing deployment speed. Security teams should monitor for Aur0ra signatures and employ AI‑based detection to mitigate evolving ransomware threats.",
-    "category": "Ransomware",
-    "severity": "LOW",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/ai-used-in-aur0ra-ransomware-testing-and-execution",
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gold-ogre-employs-ai-for-aur0ra-ransomware-operati",
-      "article-f8462f8f",
-      "f8462f8f",
-      "gold-ogre-employs-ai-for-aur0ra-ransomware-operati-737a86",
-      "gold-ogre-employs-ai-for-aur0ra-ransomware-operations"
-    ]
-  },
-  {
-    "slug": "gitlab-patch-release-and-security-update-19-5-3-19-670c027f",
-    "title": "GitLab Patch Release and Security Update: 19.5.3, 19.4.5, 19.3.7, 19.2.10, 19.1.10, 19.0.11, 18.11.14",
-    "summary": "GitLab.com is already running the patched version. These versions address CVE-2026-111943 , along with additional unrelated bug fixes. Security update CVE-2026-111943 - GitLab has removed trust for compromised eMudhra Intermediate CA Certificates for GitLab CE/EE For GitLab CE/EE, GitLab has removed trust for eight eMudhra intermediate CA certificates whose private keys have been compromised.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "GitLab Security Releases",
-    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-3-released/",
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-111943"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-patch-release-and-security-update-19-5-3-19",
-      "article-670c027f",
-      "670c027f",
-      "gitlab-patch-release-and-security-update-19-5-3-19-db7b6d",
-      "gitlab-patch-release-and-security-update-19-5-3-19-4-5-19-3-"
     ]
   }
 ];
