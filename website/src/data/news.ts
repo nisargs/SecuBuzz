@@ -355,6 +355,90 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-edge-fixes-chromium-compositing-vulnerab-fc04bcc2",
+    "title": "Microsoft Edge Fixes Chromium Compositing Vulnerability",
+    "summary": "Microsoft released updates for Chromium-based Microsoft Edge to address a security vulnerability originating in upstream Google Chrome. The flaw, tracked as CVE-2026-118346, stems from a use-after-free weakness within the Compositing component. Security teams should apply upstream Chromium security patches and update Microsoft Edge to the latest release to mitigate risks.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118346",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118346"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-fixes-chromium-compositing-vulnerab",
+      "article-fc04bcc2",
+      "fc04bcc2",
+      "microsoft-edge-fixes-chromium-compositing-vulnerab-1fe91b",
+      "microsoft-edge-fixes-chromium-compositing-vulnerability"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-patches-chromium-filesystem-vulnera-7dfd9ce5",
+    "title": "Microsoft Edge Patches Chromium FileSystem Vulnerability",
+    "summary": "Microsoft updated its Chromium-based Edge browser to address a security flaw originally identified and assigned by Google Chrome. Identified as CVE-2026-118347, the vulnerability is caused by a use-after-free memory safety defect inside the FileSystem component. Administrators are advised to update Microsoft Edge to the latest release and review Google Chrome releases for mitigation details.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118347",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118347"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-patches-chromium-filesystem-vulnera",
+      "article-7dfd9ce5",
+      "7dfd9ce5",
+      "microsoft-edge-patches-chromium-filesystem-vulnera-1fe91b",
+      "microsoft-edge-patches-chromium-filesystem-vulnerability"
+    ]
+  },
+  {
+    "slug": "microsoft-patches-skia-input-validation-flaw-in-ed-1614807e",
+    "title": "Microsoft Patches Skia Input Validation Flaw in Edge",
+    "summary": "Microsoft issued security updates for Microsoft Edge after Google assigned a vulnerability affecting shared Chromium components. Designated as CVE-2026-118348, the technical flaw involves improper input validation existing within the Skia graphics rendering engine. Organizations should deploy the latest Microsoft Edge browser builds and consult Google Chrome advisory notes to verify defensive updates.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118348",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118348"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patches-skia-input-validation-flaw-in-ed",
+      "article-1614807e",
+      "1614807e",
+      "microsoft-patches-skia-input-validation-flaw-in-ed-1fe91b",
+      "microsoft-patches-skia-input-validation-flaw-in-edge"
+    ]
+  },
+  {
+    "slug": "chromium-payments-memory-corruption-cve-2026-11834-ea72b36d",
+    "title": "Chromium Payments Memory Corruption CVE-2026-118349",
+    "summary": "A memory corruption flaw in Chromium’s Payments module, CVE-2026-118349, could allow attackers to execute arbitrary code via crafted payment data. The flaw stems from improper bounds checking during payment data parsing, enabling a buffer overflow that may allow remote code execution. Microsoft Edge users should update to the latest Chromium-based release, as the patch is integrated.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118349",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118349"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-payments-memory-corruption-cve-2026-11834",
+      "article-ea72b36d",
+      "ea72b36d",
+      "chromium-payments-memory-corruption-cve-2026-11834-1fe91b",
+      "chromium-payments-memory-corruption-cve-2026-118349"
+    ]
+  },
+  {
     "slug": "chromium-out-of-bounds-write-cve-2026-118342-fixed-f8a08b34",
     "title": "Chromium Out-of-Bounds Write CVE-2026-118342 Fixed",
     "summary": "An out-of-bounds write flaw, CVE-2026-118342, was discovered in Chromium's Editing module, affecting Microsoft Edge (Chromium-based) browsers. The vulnerability allows memory corruption during text editing operations, potentially enabling arbitrary code execution if exploited, though no active exploitation reports exist. Microsoft Edge incorporates the Chromium patch, and users should update to the latest release via the Chrome update channel.",
@@ -3721,21 +3805,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "openai-doubles-chatgpt-pro-limits-after-backlash-d28d9343",
-    "title": "OpenAI Doubles ChatGPT Pro Limits After Backlash",
-    "summary": "OpenAI doubled ChatGPT Pro usage limits, reversing a planned 50% cut that drew user backlash. OpenAI confirmed that the $100, $200, and $500 Pro tiers, plus Business Premium, will keep their current limits, and Dots usage stays independent. Users are advised to review updated terms and adjust usage expectations accordingly, while OpenAI continues to monitor community feedback.",
+    "slug": "openai-expands-chatgpt-pro-usage-limits-and-integr-c2e269c9",
+    "title": "OpenAI Expands ChatGPT Pro Usage Limits and Integrates Work Features",
+    "summary": "OpenAI doubled ChatGPT Pro usage limits for all paid tiers, keeping Business Premium unchanged. The update merges ChatGPT Work features into the standard chat interface and consolidates resource allocations across ChatGPT and Codex. Admins should review new terms, adjust usage expectations, and monitor dashboards daily to stay within updated thresholds.",
     "category": "General",
     "severity": "LOW",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
     "publishedAt": "2026-10-29T23:35:52.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/"
+      }
+    ],
     "aliases": [
-      "openai-doubles-chatgpt-pro-limits-after-backlash",
-      "article-d28d9343",
-      "d28d9343",
-      "openai-doubles-chatgpt-pro-limits-after-backlash-1a0442"
+      "openai-expands-chatgpt-pro-usage-limits-and-integr",
+      "article-c2e269c9",
+      "c2e269c9",
+      "openai-expands-chatgpt-pro-usage-limits-and-integr-1a0442",
+      "openai-expands-chatgpt-pro-usage-limits-and-integrates-work-"
     ]
   },
   {
@@ -6646,84 +6736,6 @@ export const news: NewsBrief[] = [
       "774728a6",
       "logic-flaws-alone-cracked-microsoft-edge-in-pwn2ow-196b3c",
       "logic-flaws-alone-cracked-microsoft-edge-in-pwn2own-win"
-    ]
-  },
-  {
-    "slug": "clickfix-social-engineering-campaign-observed-in-t-4b0466d2",
-    "title": "ClickFix Social Engineering Campaign Observed in the Wild",
-    "summary": "A new ClickFix social engineering campaign is actively targeting users through deceptive instructions that trick victims into executing malicious commands. The attack vector relies on convincing users to manually run PowerShell or similar commands, bypassing traditional malware delivery mechanisms. Security teams should monitor for anomalous command-line execution patterns and reinforce user awareness training against instruction-based lures.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33466",
-    "publishedAt": "2026-10-28T16:07:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "clickfix-social-engineering-campaign-observed-in-t",
-      "article-4b0466d2",
-      "4b0466d2",
-      "clickfix-social-engineering-campaign-observed-in-t-57dd7e",
-      "clickfix-social-engineering-campaign-observed-in-the-wild"
-    ]
-  },
-  {
-    "slug": "ai-assisted-php2shell-breaches-u-s-government-netw-0e0ab1df",
-    "title": "AI‑Assisted PHP2Shell Breaches U.S. Government Network",
-    "summary": "An AI‑assisted attack by a China‑nexus threat actor exploited PHP2Shell vulnerabilities to breach exposed U.S. Government‑affiliated systems. The operation, observed on October 25, 2026, combined PHP2Shell with a kernel privilege‑escalation exploit to gain root access on 25 servers. Security teams should isolate affected servers, apply the latest PHP2Shell patches, and conduct a comprehensive kernel hardening review to prevent further exploitation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
-    "publishedAt": "2026-10-28T16:02:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-assisted-php2shell-breaches-u-s-government-netw",
-      "article-0e0ab1df",
-      "0e0ab1df",
-      "ai-assisted-php2shell-breaches-u-s-government-netw-86a45a",
-      "ai-assisted-php2shell-breaches-u-s-government-network"
-    ]
-  },
-  {
-    "slug": "attackers-abuse-mdm-platforms-to-deploy-rogue-rmm-d3eaa391",
-    "title": "Attackers Abuse MDM Platforms to Deploy Rogue RMM Tools",
-    "summary": "Threat research reveals attackers are abusing legitimate Mobile Device Management (MDM) platforms to target managed enterprise endpoints. Adversaries exploit MDM architecture administrative permissions to deploy rogue Remote Monitoring and Management (RMM) software, establishing stealthy remote access and persistence. Security teams should audit enrolled MDM devices and monitor endpoint management environments for unauthorized RMM deployment tools.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/attackers-turn-mdm-into-remote-access",
-    "publishedAt": "2026-10-28T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-abuse-mdm-platforms-to-deploy-rogue-rmm",
-      "article-d3eaa391",
-      "d3eaa391",
-      "attackers-abuse-mdm-platforms-to-deploy-rogue-rmm-c02702",
-      "attackers-abuse-mdm-platforms-to-deploy-rogue-rmm-tools"
-    ]
-  },
-  {
-    "slug": "volt-typhoon-employs-silent-train-zero-day-framewo-a751cf0e",
-    "title": "Volt Typhoon Employs Silent Train Zero-Day Framework",
-    "summary": "Chinese state-sponsored group Volt Typhoon has deployed the Silent Train framework, leveraging rotating device chains to deliver zero-day attacks against high-value targets. The framework exploits a vulnerability identified as CVE-2024-39717, enabling attackers to pivot across compromised devices. Security teams should monitor for anomalous device activity and apply mitigations for the referenced CVE.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
-    "publishedAt": "2026-10-28T16:00:00.000Z",
-    "cves": [
-      "CVE-2024-39717"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "volt-typhoon-employs-silent-train-zero-day-framewo",
-      "article-a751cf0e",
-      "a751cf0e",
-      "volt-typhoon-employs-silent-train-zero-day-framewo-e7d5a3",
-      "volt-typhoon-employs-silent-train-zero-day-framework"
     ]
   }
 ];

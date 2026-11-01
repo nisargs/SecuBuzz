@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 13:43:33 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 14:20:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Northstar Security Raises $7M to Map Risk Combinations</title>
@@ -168,6 +168,42 @@
       <pubDate>Sat, 31 Oct 2026 14:05:15 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Fixes Chromium Compositing Vulnerability</title>
+      <link>https://secubuzz.com/news/microsoft-edge-fixes-chromium-compositing-vulnerab-fc04bcc2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-fixes-chromium-compositing-vulnerab-fc04bcc2</guid>
+      <description><![CDATA[Microsoft released updates for Chromium-based Microsoft Edge to address a security vulnerability originating in upstream Google Chrome. The flaw, tracked as CVE-2026-118346, stems from a use-after-free weakness within the Compositing component. Security teams should apply upstream Chromium security patches and update Microsoft Edge to the latest release to mitigate risks.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118346">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Patches Chromium FileSystem Vulnerability</title>
+      <link>https://secubuzz.com/news/microsoft-edge-patches-chromium-filesystem-vulnera-7dfd9ce5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-patches-chromium-filesystem-vulnera-7dfd9ce5</guid>
+      <description><![CDATA[Microsoft updated its Chromium-based Edge browser to address a security flaw originally identified and assigned by Google Chrome. Identified as CVE-2026-118347, the vulnerability is caused by a use-after-free memory safety defect inside the FileSystem component. Administrators are advised to update Microsoft Edge to the latest release and review Google Chrome releases for mitigation details.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118347">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Patches Skia Input Validation Flaw in Edge</title>
+      <link>https://secubuzz.com/news/microsoft-patches-skia-input-validation-flaw-in-ed-1614807e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-skia-input-validation-flaw-in-ed-1614807e</guid>
+      <description><![CDATA[Microsoft issued security updates for Microsoft Edge after Google assigned a vulnerability affecting shared Chromium components. Designated as CVE-2026-118348, the technical flaw involves improper input validation existing within the Skia graphics rendering engine. Organizations should deploy the latest Microsoft Edge browser builds and consult Google Chrome advisory notes to verify defensive updates.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118348">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Payments Memory Corruption CVE-2026-118349</title>
+      <link>https://secubuzz.com/news/chromium-payments-memory-corruption-cve-2026-11834-ea72b36d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-payments-memory-corruption-cve-2026-11834-ea72b36d</guid>
+      <description><![CDATA[A memory corruption flaw in Chromium’s Payments module, CVE-2026-118349, could allow attackers to execute arbitrary code via crafted payment data. The flaw stems from improper bounds checking during payment data parsing, enabling a buffer overflow that may allow remote code execution. Microsoft Edge users should update to the latest Chromium-based release, as the patch is integrated.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118349">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Chromium Out-of-Bounds Write CVE-2026-118342 Fixed</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[CVE-2026-118316 reveals an improper input validation flaw in Chromium’s V8 engine, affecting Microsoft Edge. The flaw could allow crafted input to trigger arbitrary code execution, though no public exploit is known. Users should install the latest Chromium-based update, and vendors should review Chrome release notes for mitigation in production globally.]]></description>
       <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118316">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Improper Access Control in V8 (CVE-2026-118318)</title>
-      <link>https://secubuzz.com/news/chromium-improper-access-control-in-v8-cve-2026-11-89e6ff99</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-improper-access-control-in-v8-cve-2026-11-89e6ff99</guid>
-      <description><![CDATA[CVE-2026-118318 exposes an improper access control flaw in Chromium’s V8 engine, impacting Microsoft Edge. The vulnerability could permit unauthorized execution of JavaScript code if an attacker supplies crafted input, but no public exploit exists today. Apply the latest Chromium-based update, and monitor Chrome release notes for vendor‑issued mitigation guidance globally.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118318">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Improper SVG Validation Flaw</title>
-      <link>https://secubuzz.com/news/chromium-improper-svg-validation-flaw-fa3eba7b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-improper-svg-validation-flaw-fa3eba7b</guid>
-      <description><![CDATA[Chromium’s SVG parser has an improper input validation flaw, CVE-2026-118315, that can be triggered by malicious SVG files in Microsoft Edge. The issue stems from insufficient sanitization of SVG attributes, potentially enabling cross‑site scripting or code execution when an attacker supplies crafted content.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Paint Memory Corruption Flaw</title>
-      <link>https://secubuzz.com/news/chromium-paint-memory-corruption-flaw-cb8f041f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-paint-memory-corruption-flaw-cb8f041f</guid>
-      <description><![CDATA[Chromium’s Paint component contains a memory corruption flaw, CVE-2026-118312, that can be triggered by malicious image files in Microsoft Edge. It stems from improper bounds checking during image decoding, which may allow arbitrary code execution. Edge users should install the latest Chromium‑based update; the patch is bundled with Google Chrome releases, as documented in the official blog.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Edge Affected by CVE-2026-118311 Media Memory Corruption</title>
-      <link>https://secubuzz.com/news/edge-affected-by-cve-2026-118311-media-memory-corr-05972fde</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/edge-affected-by-cve-2026-118311-media-memory-corr-05972fde</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium’s Media component, identified as CVE-2026-118311. The flaw could allow arbitrary code execution when processing a crafted media stream, though no public exploit has been released. Microsoft advises installing the latest Chromium update, which includes the patch, and keeping Edge current to mitigate the vulnerability.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118311">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
