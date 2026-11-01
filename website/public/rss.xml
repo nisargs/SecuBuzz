@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 10:47:47 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 11:44:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Northstar Security Raises $7M to Map Risk Combinations</title>
+      <link>https://secubuzz.com/news/northstar-security-raises-7m-to-map-risk-combinati-7389d5f3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/northstar-security-raises-7m-to-map-risk-combinati-7389d5f3</guid>
+      <description><![CDATA[Northstar Security has secured $7 million to develop a platform that maps identities, assets, and vulnerabilities to identify toxic risk combinations. The solution employs AI agents that scan for interdependencies and automatically suggest remediation steps for high‑impact combinations. Security teams can integrate the platform into existing workflows to proactively mitigate compound vulnerabilities before exploitation.]]></description>
+      <pubDate>Sun, 01 Nov 2026 11:15:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Binance Theft Highlights Impact of Brotli CVE-2026-111497</title>
+      <link>https://secubuzz.com/news/binance-theft-highlights-impact-of-brotli-cve-2026-859d27d6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-theft-highlights-impact-of-brotli-cve-2026-859d27d6</guid>
+      <description><![CDATA[Binance suffered a $6.3 billion theft, while the Brotli compression flaw CVE‑2026‑111497 exposed vulnerabilities in multiple web applications. The CVE allows attackers to inject malicious payloads during decompression, potentially leading to remote code execution on affected servers. Patches are available from the Brotli maintainers; administrators should update libraries and audit decompression usage to mitigate risk.]]></description>
+      <pubDate>Sun, 01 Nov 2026 09:00:00 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Canonical LXD, MicroCloud Vulnerability Enables Client Impersonation</title>
+      <link>https://secubuzz.com/news/canonical-lxd-microcloud-vulnerability-enables-cli-e8c6cd66</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/canonical-lxd-microcloud-vulnerability-enables-cli-e8c6cd66</guid>
+      <description><![CDATA[A CVSS 10.0 flaw in Canonical’s LXD and MicroCloud lets attackers authenticate as trusted clients without the client’s private key. The attack requires network reach to the HTTPS API and the target’s public certificate, enabling full cluster and VM access. Canonical released a patch revoking the vulnerable flow; admins should apply it immediately and limit API exposure.]]></description>
+      <pubDate>Sun, 01 Nov 2026 08:51:31 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Polymarket Traders Lose $2.7M to Hijacked Script</title>
+      <link>https://secubuzz.com/news/polymarket-traders-lose-2-7m-to-hijacked-script-298b84a8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/polymarket-traders-lose-2-7m-to-hijacked-script-298b84a8</guid>
+      <description><![CDATA[Polymarket suffered a $2.7 million theft after attackers hijacked a third‑party DebugBear script that replaced a legitimate page‑speed script on the site. The malicious code exfiltrated signed‑in traders’ positions and redirected their funds to attacker-controlled wallets, totaling approximately $2.64 million in crypto. Polymarket is refunding affected wallets and recommends users verify script integrity and monitor account activity for anomalies.]]></description>
+      <pubDate>Sun, 01 Nov 2026 07:25:40 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>FBI Attributes Record Binance Crypto Heist to North Korea</title>
+      <link>https://secubuzz.com/news/fbi-attributes-record-binance-crypto-heist-to-nort-73478968</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-attributes-record-binance-crypto-heist-to-nort-73478968</guid>
+      <description><![CDATA[Federal agencies attributed a $6.43 billion cryptocurrency theft from Binance to North Korean state-sponsored threat group TraderTraitor. Also tracked as Jade Sleet and UNC4899, the elite hacking group targeted virtual asset infrastructure to execute the record heist. The FBI, Secret Service, and IRS-CI disclosed the joint attribution to help financial institutions track and block illicit transactions.]]></description>
+      <pubDate>Sun, 01 Nov 2026 07:03:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>NetamLoader Targets Asian Government Windows 10 via .NET Injection</title>
+      <link>https://secubuzz.com/news/netamloader-targets-asian-government-windows-10-vi-84864ee0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/netamloader-targets-asian-government-windows-10-vi-84864ee0</guid>
+      <description><![CDATA[NetamLoader malware launched a sophisticated chain against a custom Windows 10 build used by Asian governments via an undocumented .NET loader. It injects malicious assemblies, granting attackers system‑level code execution that can compromise classified data and disrupt operations. Apply vendor patches, enforce least‑privilege .NET policies, and monitor for anomalous assembly loading.]]></description>
+      <pubDate>Sun, 01 Nov 2026 07:02:58 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/netamloader-malware-targets-government.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>North Korean Hackers Stole $6B from Binance</title>
       <link>https://secubuzz.com/news/north-korean-hackers-stole-6b-from-binance-c5f668e2</link>
@@ -105,6 +159,42 @@
       <pubDate>Sat, 31 Oct 2026 14:05:15 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Chromium Use‑After‑Free CVE‑2026‑118330 Exploited in Browser</title>
+      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-118330-exploited-79e20c5b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-118330-exploited-79e20c5b</guid>
+      <description><![CDATA[A use‑after‑free flaw, CVE‑2026‑118330, was discovered in Chromium’s rendering engine, allowing attackers to execute arbitrary code within the browser context. The vulnerability is exploitable via crafted web content, and a public PoC demonstrates remote code execution with no authentication required. Microsoft Edge and Google Chrome have released patches; users should update to the latest browser versions and enable automatic updates.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118330">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Missing Authorization CVE‑2026‑118333 in Video</title>
+      <link>https://secubuzz.com/news/chromium-missing-authorization-cve-2026-118333-in-81b42519</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-missing-authorization-cve-2026-118333-in-81b42519</guid>
+      <description><![CDATA[CVE‑2026‑118333 exposes a missing authorization check in Chromium’s video handling code, permitting attackers to access protected media streams. The flaw can be triggered by a crafted HTML page and may lead to unauthorized data disclosure without user interaction. Google Chrome and Microsoft Edge have issued patches; users should update browsers and disable untrusted video sources.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118333">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Edge Addresses Headless Input Validation CVE-2026-118336</title>
+      <link>https://secubuzz.com/news/edge-addresses-headless-input-validation-cve-2026-cbddabca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-headless-input-validation-cve-2026-cbddabca</guid>
+      <description><![CDATA[CVE-2026-118336 reveals an improper input validation flaw in Chromium’s headless mode, which Microsoft Edge (Chromium‑based) adopts. The flaw allows malformed input to bypass sanitization, potentially enabling arbitrary code execution or denial‑of‑service when headless browsers process untrusted data. Microsoft Edge will integrate the Chromium patch in its release; security teams should upgrade to Edge build or apply the Chrome patch.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118336">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Edge Fixes Forms Access Control CVE-2026-118337</title>
+      <link>https://secubuzz.com/news/edge-fixes-forms-access-control-cve-2026-118337-222c6390</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/edge-fixes-forms-access-control-cve-2026-118337-222c6390</guid>
+      <description><![CDATA[CVE-2026-118337 exposes an improper access control flaw in Chromium’s Forms component, which Microsoft Edge (Chromium‑based) incorporates. The vulnerability permits unauthorized manipulation of form data, potentially allowing attackers to inject malicious payloads or bypass authentication checks during form submission. Microsoft Edge will apply the Chromium patch in its release; security teams should update to Edge build or apply the Chrome patch.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118337">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Chromium CVE-2026-118335 Improper Input Validation</title>
@@ -366,96 +456,6 @@
       <pubDate>Sat, 31 Oct 2026 10:52:53 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33476">SANS Internet Storm Center</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>YARA‑X 1.22.1 Releases Two Bug Fixes</title>
-      <link>https://secubuzz.com/news/yara-x-1-22-1-releases-two-bug-fixes-a7436a1d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yara-x-1-22-1-releases-two-bug-fixes-a7436a1d</guid>
-      <description><![CDATA[YARA‑X 1.22.1 release addresses two bugs in the open‑source malware detection tool. The issues involved incorrect pattern‑matching logic and memory handling, which could have caused false positives or crashes; no exploitation was reported. Users should update to 1.22.1 to apply the fixes, with no further mitigations required in production environments.]]></description>
-      <pubDate>Sat, 31 Oct 2026 10:48:17 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33474">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Malicious Claude Code Extension Installs SSH Backdoor</title>
-      <link>https://secubuzz.com/news/malicious-claude-code-extension-installs-ssh-backd-8b6376d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-claude-code-extension-installs-ssh-backd-8b6376d3</guid>
-      <description><![CDATA[Cursor confirmed that malicious Claude Code extension packages were available in the VS Code Marketplace for about 11 hours, targeting Windows and macOS users. The altered packages attempted to install an SSH backdoor, providing attackers with persistent remote access once installed. Cursor recommends users uninstall the affected extensions immediately and update to the latest verified versions to mitigate the threat.]]></description>
-      <pubDate>Sat, 31 Oct 2026 10:41:18 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/malicious-claude-code-extension-with-cursor/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Attackers Chain Three Ivanti Flaws for Root Access</title>
-      <link>https://secubuzz.com/news/attackers-chain-three-ivanti-flaws-for-root-access-12c47b93</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-chain-three-ivanti-flaws-for-root-access-12c47b93</guid>
-      <description><![CDATA[Attackers chained three vulnerabilities in Ivanti Connect Secure to gain unauthenticated root access. The flaws include 'CVE-2026-111357', a missing authentication bug with CVSS 8.8, and two other undisclosed weaknesses exploited in the wild, enabling privilege escalation without credentials. CISA added the issues to its KEV catalog; Ivanti has released patches, and security teams should apply them immediately.]]></description>
-      <pubDate>Sat, 31 Oct 2026 08:27:43 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Google Reports Brotli Decoder Buffer Overflow Flaw</title>
-      <link>https://secubuzz.com/news/google-reports-brotli-decoder-buffer-overflow-flaw-40230ea2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-reports-brotli-decoder-buffer-overflow-flaw-40230ea2</guid>
-      <description><![CDATA[Google disclosed a buffer overflow flaw tracked as CVE-2026-111497 affecting the standard Brotli data compression decoder library. The memory corruption flaw stems from improper input parsing during data decompression, potentially causing application crashes or remote code execution. Developers and system integrators utilizing the Brotli decoder must monitor vendor security bulletins and update to patched software releases.]]></description>
-      <pubDate>Sat, 31 Oct 2026 08:13:53 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>F5 BIG-IP APM Vulnerability Exposed to Active Exploitation</title>
-      <link>https://secubuzz.com/news/f5-big-ip-apm-vulnerability-exposed-to-active-expl-ed983094</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/f5-big-ip-apm-vulnerability-exposed-to-active-expl-ed983094</guid>
-      <description><![CDATA[F5 disclosed a critical flaw in its BIG‑IP APM product that has been actively exploited in the wild. The vulnerability allows attackers to bypass authentication controls, potentially gaining unauthorized administrative access to network devices. F5 has released a patch; security teams must apply it immediately and verify configuration hardening to prevent further exploitation.]]></description>
-      <pubDate>Sat, 31 Oct 2026 06:43:54 GMT</pubDate>
-      <source url="https://cert.europa.eu/publications/security-advisories/2026-013/">CERT-EU Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>WordPress RCE Vulnerability Targeted by 60,000 Attacks</title>
-      <link>https://secubuzz.com/news/wordpress-rce-vulnerability-targeted-by-60-000-att-996dc8bd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wordpress-rce-vulnerability-targeted-by-60-000-att-996dc8bd</guid>
-      <description><![CDATA[Hackers targeted a WordPress Core remote code execution vulnerability during software updates, with 60,471 blocked attempts recorded by Wordfence in 24 hours. The flaw, identified as CVE-2026-101767, allows unauthenticated attackers to execute arbitrary code on affected sites, potentially compromising site integrity and data. WordPress released version 7.1.4 to address the issue; administrators should update immediately and monitor for suspicious activity.]]></description>
-      <pubDate>Sat, 31 Oct 2026 06:02:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/60000-attacks-targeting-wordpress/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>GitLab Patches Critical Unauthenticated RCE Flaw</title>
-      <link>https://secubuzz.com/news/gitlab-patches-critical-unauthenticated-rce-flaw-1a9e8997</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-patches-critical-unauthenticated-rce-flaw-1a9e8997</guid>
-      <description><![CDATA[GitLab published a security advisory on 21 October 2026 addressing a critical vulnerability in GitLab Community and Enterprise Editions that allows unauthenticated arbitrary code execution on affected servers. The flaw enables remote attackers to compromise internet-facing GitLab instances without credentials, posing severe operational risk to source code repositories and CI/CD pipelines.]]></description>
-      <pubDate>Sat, 31 Oct 2026 05:48:08 GMT</pubDate>
-      <source url="https://cert.europa.eu/publications/security-advisories/2026-019/">CERT-EU Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>PHP Unauthenticated RCE Vulnerabilities Pushed in Oct 2026</title>
-      <link>https://secubuzz.com/news/php-unauthenticated-rce-vulnerabilities-pushed-in-3d9fb2a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/php-unauthenticated-rce-vulnerabilities-pushed-in-3d9fb2a2</guid>
-      <description><![CDATA[PHP disclosed two critical vulnerabilities enabling unauthenticated remote code execution in versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35, with public PoCs circulating. Both flaws allow attackers to run arbitrary code without credentials, and active exploitation is suspected from emerging PoCs. PHP patched on 21 October 2026; admins should upgrade to the latest releases and monitor for exploitation attempts.]]></description>
-      <pubDate>Sat, 31 Oct 2026 05:44:58 GMT</pubDate>
-      <source url="https://cert.europa.eu/publications/security-advisories/2026-018/">CERT-EU Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler Exposed to Critical RCE Vulnerabilities</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-exposed-to-critical-rce-vulnerabi-9f60c631</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-exposed-to-critical-rce-vulnerabi-9f60c631</guid>
-      <description><![CDATA[Citrix NetScaler ADC and Gateway suffered eight vulnerabilities, including two critical unauthenticated RCE flaws confirmed in the wild, with CVE-2026-88779 cited as a representative case. The flaws permit attackers to execute arbitrary code on exposed devices without authentication, potentially compromising all internet‑exposed NetScaler instances. Citrix released patches; security teams must apply updates immediately and conduct compromise assessments on exposed systems.]]></description>
-      <pubDate>Sat, 31 Oct 2026 05:44:58 GMT</pubDate>
-      <source url="https://cert.europa.eu/publications/security-advisories/2026-014/">CERT-EU Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ChatGPT Share Link Enables Session Code Execution</title>
-      <link>https://secubuzz.com/news/chatgpt-share-link-enables-session-code-execution-773891e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-share-link-enables-session-code-execution-773891e7</guid>
-      <description><![CDATA[A malicious ChatGPT share link can execute attacker code within a logged‑in session, granting the attacker read access to private conversations. The flaw stems from insufficient isolation of shared session data, allowing injected scripts to run with the user's privileges. OpenAI fixed the issue eight days after the researchers reported it, issuing a patch and rating the vulnerability as P1.]]></description>
-      <pubDate>Sat, 31 Oct 2026 05:33:41 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

@@ -11,6 +11,121 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "northstar-security-raises-7m-to-map-risk-combinati-7389d5f3",
+    "title": "Northstar Security Raises $7M to Map Risk Combinations",
+    "summary": "Northstar Security has secured $7 million to develop a platform that maps identities, assets, and vulnerabilities to identify toxic risk combinations. The solution employs AI agents that scan for interdependencies and automatically suggest remediation steps for high‑impact combinations. Security teams can integrate the platform into existing workflows to proactively mitigate compound vulnerabilities before exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/",
+    "publishedAt": "2026-11-01T11:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "northstar-security-raises-7m-to-map-risk-combinati",
+      "article-7389d5f3",
+      "7389d5f3",
+      "northstar-security-raises-7m-to-map-risk-combinati-366aec",
+      "northstar-security-raises-7m-to-map-risk-combinations"
+    ]
+  },
+  {
+    "slug": "binance-theft-highlights-impact-of-brotli-cve-2026-859d27d6",
+    "title": "Binance Theft Highlights Impact of Brotli CVE-2026-111497",
+    "summary": "Binance suffered a $6.3 billion theft, while the Brotli compression flaw CVE‑2026‑111497 exposed vulnerabilities in multiple web applications. The CVE allows attackers to inject malicious payloads during decompression, potentially leading to remote code execution on affected servers. Patches are available from the Brotli maintainers; administrators should update libraries and audit decompression usage to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/",
+    "publishedAt": "2026-11-01T09:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "binance-theft-highlights-impact-of-brotli-cve-2026",
+      "article-859d27d6",
+      "859d27d6",
+      "binance-theft-highlights-impact-of-brotli-cve-2026-3fe244",
+      "binance-theft-highlights-impact-of-brotli-cve-2026-111497"
+    ]
+  },
+  {
+    "slug": "canonical-lxd-microcloud-vulnerability-enables-cli-e8c6cd66",
+    "title": "Canonical LXD, MicroCloud Vulnerability Enables Client Impersonation",
+    "summary": "A CVSS 10.0 flaw in Canonical’s LXD and MicroCloud lets attackers authenticate as trusted clients without the client’s private key. The attack requires network reach to the HTTPS API and the target’s public certificate, enabling full cluster and VM access. Canonical released a patch revoking the vulnerable flow; admins should apply it immediately and limit API exposure.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+    "publishedAt": "2026-11-01T08:51:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "canonical-lxd-microcloud-vulnerability-enables-cli",
+      "article-e8c6cd66",
+      "e8c6cd66",
+      "canonical-lxd-microcloud-vulnerability-enables-cli-3cb92d",
+      "canonical-lxd-microcloud-vulnerability-enables-client-impers"
+    ]
+  },
+  {
+    "slug": "polymarket-traders-lose-2-7m-to-hijacked-script-298b84a8",
+    "title": "Polymarket Traders Lose $2.7M to Hijacked Script",
+    "summary": "Polymarket suffered a $2.7 million theft after attackers hijacked a third‑party DebugBear script that replaced a legitimate page‑speed script on the site. The malicious code exfiltrated signed‑in traders’ positions and redirected their funds to attacker-controlled wallets, totaling approximately $2.64 million in crypto. Polymarket is refunding affected wallets and recommends users verify script integrity and monitor account activity for anomalies.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+    "publishedAt": "2026-11-01T07:25:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "polymarket-traders-lose-2-7m-to-hijacked-script",
+      "article-298b84a8",
+      "298b84a8",
+      "polymarket-traders-lose-2-7m-to-hijacked-script-358abf"
+    ]
+  },
+  {
+    "slug": "fbi-attributes-record-binance-crypto-heist-to-nort-73478968",
+    "title": "FBI Attributes Record Binance Crypto Heist to North Korea",
+    "summary": "Federal agencies attributed a $6.43 billion cryptocurrency theft from Binance to North Korean state-sponsored threat group TraderTraitor. Also tracked as Jade Sleet and UNC4899, the elite hacking group targeted virtual asset infrastructure to execute the record heist. The FBI, Secret Service, and IRS-CI disclosed the joint attribution to help financial institutions track and block illicit transactions.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+    "publishedAt": "2026-11-01T07:03:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-attributes-record-binance-crypto-heist-to-nort",
+      "article-73478968",
+      "73478968",
+      "fbi-attributes-record-binance-crypto-heist-to-nort-5fcbe3",
+      "fbi-attributes-record-binance-crypto-heist-to-north-korea"
+    ]
+  },
+  {
+    "slug": "netamloader-targets-asian-government-windows-10-vi-84864ee0",
+    "title": "NetamLoader Targets Asian Government Windows 10 via .NET Injection",
+    "summary": "NetamLoader malware launched a sophisticated chain against a custom Windows 10 build used by Asian governments via an undocumented .NET loader. It injects malicious assemblies, granting attackers system‑level code execution that can compromise classified data and disrupt operations. Apply vendor patches, enforce least‑privilege .NET policies, and monitor for anomalous assembly loading.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+    "publishedAt": "2026-11-01T07:02:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "netamloader-targets-asian-government-windows-10-vi",
+      "article-84864ee0",
+      "84864ee0",
+      "netamloader-targets-asian-government-windows-10-vi-9428bb",
+      "netamloader-targets-asian-government-windows-10-via-net-inje"
+    ]
+  },
+  {
     "slug": "north-korean-hackers-stole-6b-from-binance-c5f668e2",
     "title": "North Korean Hackers Stole $6B from Binance",
     "summary": "FBI confirmed North Korean hackers stole over $6 billion in virtual assets from Binance on October 29, 2026. The operation, dubbed 'TraderTraitor', links the theft to a series of attacks on digital asset platforms attributed to the same group. Security teams should monitor for related credential theft and apply multi‑factor authentication to mitigate further compromise.",
@@ -219,6 +334,85 @@ export const news: NewsBrief[] = [
       "article-7bc6ac66",
       "7bc6ac66",
       "reddit-shifts-to-logged-in-service-model-5cc4b9"
+    ]
+  },
+  {
+    "slug": "chromium-use-after-free-cve-2026-118330-exploited-79e20c5b",
+    "title": "Chromium Use‑After‑Free CVE‑2026‑118330 Exploited in Browser",
+    "summary": "A use‑after‑free flaw, CVE‑2026‑118330, was discovered in Chromium’s rendering engine, allowing attackers to execute arbitrary code within the browser context. The vulnerability is exploitable via crafted web content, and a public PoC demonstrates remote code execution with no authentication required. Microsoft Edge and Google Chrome have released patches; users should update to the latest browser versions and enable automatic updates.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118330",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-118330-exploited",
+      "article-79e20c5b",
+      "79e20c5b",
+      "chromium-use-after-free-cve-2026-118330-exploited-1fe91c",
+      "chromium-use-after-free-cve-2026-118330-exploited-in-browser"
+    ]
+  },
+  {
+    "slug": "chromium-missing-authorization-cve-2026-118333-in-81b42519",
+    "title": "Chromium Missing Authorization CVE‑2026‑118333 in Video",
+    "summary": "CVE‑2026‑118333 exposes a missing authorization check in Chromium’s video handling code, permitting attackers to access protected media streams. The flaw can be triggered by a crafted HTML page and may lead to unauthorized data disclosure without user interaction. Google Chrome and Microsoft Edge have issued patches; users should update browsers and disable untrusted video sources.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118333",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-missing-authorization-cve-2026-118333-in",
+      "article-81b42519",
+      "81b42519",
+      "chromium-missing-authorization-cve-2026-118333-in-1fe91c",
+      "chromium-missing-authorization-cve-2026-118333-in-video"
+    ]
+  },
+  {
+    "slug": "edge-addresses-headless-input-validation-cve-2026-cbddabca",
+    "title": "Edge Addresses Headless Input Validation CVE-2026-118336",
+    "summary": "CVE-2026-118336 reveals an improper input validation flaw in Chromium’s headless mode, which Microsoft Edge (Chromium‑based) adopts. The flaw allows malformed input to bypass sanitization, potentially enabling arbitrary code execution or denial‑of‑service when headless browsers process untrusted data. Microsoft Edge will integrate the Chromium patch in its release; security teams should upgrade to Edge build or apply the Chrome patch.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118336",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118336"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "edge-addresses-headless-input-validation-cve-2026",
+      "article-cbddabca",
+      "cbddabca",
+      "edge-addresses-headless-input-validation-cve-2026-1fe91c",
+      "edge-addresses-headless-input-validation-cve-2026-118336"
+    ]
+  },
+  {
+    "slug": "edge-fixes-forms-access-control-cve-2026-118337-222c6390",
+    "title": "Edge Fixes Forms Access Control CVE-2026-118337",
+    "summary": "CVE-2026-118337 exposes an improper access control flaw in Chromium’s Forms component, which Microsoft Edge (Chromium‑based) incorporates. The vulnerability permits unauthorized manipulation of form data, potentially allowing attackers to inject malicious payloads or bypass authentication checks during form submission. Microsoft Edge will apply the Chromium patch in its release; security teams should update to Edge build or apply the Chrome patch.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118337",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118337"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "edge-fixes-forms-access-control-cve-2026-118337",
+      "article-222c6390",
+      "222c6390",
+      "edge-fixes-forms-access-control-cve-2026-118337-1fe91c"
     ]
   },
   {
@@ -6538,198 +6732,6 @@ export const news: NewsBrief[] = [
       "e6b404e2",
       "fbi-seizes-domain-of-hosting-provider-allegedly-fa-57e04e",
       "fbi-seizes-domain-of-hosting-provider-allegedly-facilitating"
-    ]
-  },
-  {
-    "slug": "critical-16-year-old-uefi-flaw-can-run-code-before-4a2b480c",
-    "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
-    "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. An attacker who can reach the machine (Corroborated Threat Intelligence: Associated CVE is CVE-2026-97631).",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
-    "publishedAt": "2026-10-28T11:50:00.000Z",
-    "cves": [
-      "CVE-2026-97631"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-16-year-old-uefi-flaw-can-run-code-before",
-      "article-4a2b480c",
-      "4a2b480c",
-      "critical-16-year-old-uefi-flaw-can-run-code-before-711272",
-      "critical-16-year-old-uefi-flaw-can-run-code-before-secure-bo"
-    ]
-  },
-  {
-    "slug": "integrating-ai-with-wazuh-optimizes-security-opera-027e2a9e",
-    "title": "Integrating AI with Wazuh Optimizes Security Operations Workflows",
-    "summary": "Organizations are adopting AI-driven technologies alongside platforms like Wazuh to streamline security operations center workflows. The integration automates repetitive tasks, identifies hidden data patterns across massive datasets, and accelerates threat detection decisions. Security teams should evaluate AI-powered analysis tools to balance operational efficiency against evolving automated attacker capabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
-    "publishedAt": "2026-10-28T11:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "integrating-ai-with-wazuh-optimizes-security-opera",
-      "article-027e2a9e",
-      "027e2a9e",
-      "integrating-ai-with-wazuh-optimizes-security-opera-15d6b2",
-      "integrating-ai-with-wazuh-optimizes-security-operations-work"
-    ]
-  },
-  {
-    "slug": "adobe-issues-patches-for-eight-critical-campaign-c-09e7f0fe",
-    "title": "Adobe Issues Patches for Eight Critical Campaign Classic Vulnerabilities Including CVE-2026-104351",
-    "summary": "Adobe released patches for eight critical Campaign Classic vulnerabilities, including CVE-2026-104351, a code injection flaw that could enable arbitrary code execution. The flaw carries a CVSS score of 9.9, indicating a high‑risk remote code execution vector that could bypass security features and elevate privileges. Adobe has issued the updates; users should apply patches immediately and verify installation to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
-    "publishedAt": "2026-10-28T11:15:51.000Z",
-    "cves": [
-      "CVE-2026-104351"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "adobe-issues-patches-for-eight-critical-campaign-c",
-      "article-09e7f0fe",
-      "09e7f0fe",
-      "adobe-issues-patches-for-eight-critical-campaign-c-533abd",
-      "adobe-issues-patches-for-eight-critical-campaign-classic-vul"
-    ]
-  },
-  {
-    "slug": "chrome-and-firefox-patch-serious-security-flaws-e75f1614",
-    "title": "Chrome and Firefox Patch Serious Security Flaws",
-    "summary": "Google and Mozilla released security updates for Chrome and Firefox on October 27, 2026, addressing serious security flaws in both browsers. The patches remediate vulnerabilities that could be exploited to compromise user sessions or execute malicious code within the browser environment. Users should install the updates immediately to close the exposure window and reduce attack surface.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/chrome-and-firefox-updates-fix-serious-security-flaws-install-them-now",
-    "publishedAt": "2026-10-28T11:13:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-and-firefox-patch-serious-security-flaws",
-      "article-e75f1614",
-      "e75f1614",
-      "chrome-and-firefox-patch-serious-security-flaws-2bca28"
-    ]
-  },
-  {
-    "slug": "researchers-study-fraudulent-north-korean-it-worke-cc14fde4",
-    "title": "Researchers Study Fraudulent North Korean IT Workers",
-    "summary": "Researchers established a fictitious startup to observe fraudulent North Korean IT workers across the global talent market. The operation aimed to identify recruitment tactics, credential misuse, insider threat patterns, and potential supply‑chain risks within the tech sector. Findings will guide security teams in tightening background checks, detecting deceptive hiring, and reinforcing vendor vetting procedures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/studying-fraudulent-north-korean-it-workers.html",
-    "publishedAt": "2026-10-28T11:05:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researchers-study-fraudulent-north-korean-it-worke",
-      "article-cc14fde4",
-      "cc14fde4",
-      "researchers-study-fraudulent-north-korean-it-worke-365efa",
-      "researchers-study-fraudulent-north-korean-it-workers"
-    ]
-  },
-  {
-    "slug": "hackers-compromise-camera-management-software-to-d-e77828b7",
-    "title": "Hackers Compromise Camera Management Software to Deploy Malware on Windows Computers",
-    "summary": "Hackers compromised a camera management application to deploy malware on Windows PCs, leveraging a legitimate Microsoft program to execute malicious code and maintain persistence. The attack chain exploited the software’s Windows authentication integration, enabling attackers to bypass security controls and execute code remotely. Apply vendor patches and limit camera software privileges immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/camera-management-software/",
-    "publishedAt": "2026-10-28T11:03:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-compromise-camera-management-software-to-d",
-      "article-e77828b7",
-      "e77828b7",
-      "hackers-compromise-camera-management-software-to-d-50255f",
-      "hackers-compromise-camera-management-software-to-deploy-malw"
-    ]
-  },
-  {
-    "slug": "long-hidden-flaws-patched-in-epics-research-facili-845ce373",
-    "title": "Long-Hidden Flaws Patched in EPICS Research Facility Control Software",
-    "summary": "Four previously undisclosed EPICS Base flaws were identified in research facility control software used by particle accelerators and fusion laboratories. The vulnerabilities could allow attackers to crash critical control processes, potentially disrupting experimental operations, but no evidence of exploitation was reported. Patches have been released by the EPICS project; operators should update their systems promptly to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/long-hidden-flaws-patched-in-epics-research-facility-control-software/",
-    "publishedAt": "2026-10-28T10:48:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "long-hidden-flaws-patched-in-epics-research-facili",
-      "article-845ce373",
-      "845ce373",
-      "long-hidden-flaws-patched-in-epics-research-facili-3ce2ad",
-      "long-hidden-flaws-patched-in-epics-research-facility-control"
-    ]
-  },
-  {
-    "slug": "cybersecurity-black-week-highlights-php-flaw-and-k-d3d63364",
-    "title": "Cybersecurity Black Week Highlights PHP Flaw and Kernel Leak",
-    "summary": "Cybersecurity Black Week featured a critical PHP flaw, leaked Linux kernel reports, and a poisoned LiteLLM release within a single week. The PHP vulnerability threatened unauthenticated remote code execution, while the other incidents largely produced noise without confirmed exploitation. Teams should patch PHP, monitor kernel advisories, and verify third‑party release integrity to mitigate risks.",
-    "category": "General",
-    "severity": "CRITICAL",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/business-security/lessons-cybersecurity-black-week/",
-    "publishedAt": "2026-10-28T10:33:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cybersecurity-black-week-highlights-php-flaw-and-k",
-      "article-d3d63364",
-      "d3d63364",
-      "cybersecurity-black-week-highlights-php-flaw-and-k-100aad",
-      "cybersecurity-black-week-highlights-php-flaw-and-kernel-leak"
-    ]
-  },
-  {
-    "slug": "skyw4lker-phishing-campaign-targets-american-organ-eab4b813",
-    "title": "Skyw4lker Phishing Campaign Targets American Organizations",
-    "summary": "Skyw4lker is a device code phishing campaign that targets American organizations by exploiting legitimate cloud services and authentication mechanisms to gain corporate account access. The attack bypasses traditional credential theft, leveraging trusted workflows and leaving fewer obvious signs, which hampers detection. Security teams should monitor anomalous device code requests, enforce multi‑factor authentication, and apply vendor patches to mitigate this vector.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
-    "publishedAt": "2026-10-28T10:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "skyw4lker-phishing-campaign-targets-american-organ",
-      "article-eab4b813",
-      "eab4b813",
-      "skyw4lker-phishing-campaign-targets-american-organ-4e2af0",
-      "skyw4lker-phishing-campaign-targets-american-organizations"
-    ]
-  },
-  {
-    "slug": "eset-apt-activity-report-q2-q3-2026-b9deeaa7",
-    "title": "ESET APT Activity Report Q2-Q3 2026",
-    "summary": "ESET Research published an overview of activities of selected APT groups investigated in Q2 2026 and Q3 2026, tracking nation-state espionage campaigns and persistent threat actor operations. The report documents adversary tactics, techniques, and procedures observed during the reporting periods without disclosing specific group names or technical details.",
-    "category": "Nation State",
-    "severity": "MEDIUM",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/eset-apt-activity-report-q2-2026-q3-2026/",
-    "publishedAt": "2026-10-28T09:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eset-apt-activity-report-q2-q3-2026",
-      "article-b9deeaa7",
-      "b9deeaa7",
-      "eset-apt-activity-report-q2-q3-2026-7e07af"
     ]
   }
 ];
