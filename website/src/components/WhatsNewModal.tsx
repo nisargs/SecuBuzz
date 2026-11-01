@@ -32,12 +32,12 @@ const RELEASES: ReleaseItem[] = [
         desc: 'Pin critical vulnerabilities directly from feed cards or table rows, or enter custom CVEs to monitor patch status across news briefs and advisories.',
       },
       {
-        title: 'Targeted Push Notifications',
-        desc: 'Filter incoming background dispatches strictly to stories and advisories affecting your configured enterprise vendors or watched CVEs, regardless of severity.',
+        title: 'Targeted App Push Notifications',
+        desc: 'Filter incoming dispatches in the mobile app strictly to stories and advisories affecting your configured enterprise vendors or watched CVEs, regardless of severity.',
       },
       {
         title: 'Harmonized Multi-Source Telemetry',
-        desc: 'Unified real-time counters and filter indicators across all 350 briefs and 1,816 advisories.',
+        desc: 'Unified real-time counters and filter indicators across news briefs and advisories.',
       },
     ],
   },
