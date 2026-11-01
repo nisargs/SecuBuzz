@@ -11,6 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "telegram-android-rce-fix-for-cve-2026-111105-e8fd46ba",
+    "title": "Telegram Android RCE Fix for CVE-2026-111105",
+    "summary": "Telegram Android users face a remote code execution flaw in voice call handling, identified as CVE-2026-111105, in enterprise environments. The flaw stems from unchecked packet validation, allowing unauthenticated attackers to run arbitrary code; no public exploit yet. Telegram released an Android patch; apply it immediately and monitor call traffic for anomalies.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/telegram-android-flaw-lets-attackers-run-code-when-user",
+    "publishedAt": "2026-11-01T17:39:07.000Z",
+    "cves": [
+      "CVE-2026-111105"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "telegram-android-rce-fix-for-cve-2026-111105",
+      "article-e8fd46ba",
+      "e8fd46ba",
+      "telegram-android-rce-fix-for-cve-2026-111105-4004d9"
+    ]
+  },
+  {
+    "slug": "lxd-privilege-escalation-fix-for-cve-2026-112816-4ea267e0",
+    "title": "LXD Privilege Escalation Fix for CVE-2026-112816",
+    "summary": "LXD containers can be exploited for privilege escalation via CVE-2026-112816, affecting host systems running the container engine. The flaw originates from improper validation of container configuration files, allowing attackers to gain root access without authentication; no public exploit confirmed. Apply the vendor patch immediately and audit container configurations for anomalous privilege assignments.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonat",
+    "publishedAt": "2026-11-01T17:34:54.000Z",
+    "cves": [
+      "CVE-2026-112816"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "lxd-privilege-escalation-fix-for-cve-2026-112816",
+      "article-4ea267e0",
+      "4ea267e0",
+      "lxd-privilege-escalation-fix-for-cve-2026-112816-e20997"
+    ]
+  },
+  {
     "slug": "police-bust-cyber-syndicate-operators-16d63d38",
     "title": "Police Bust Cyber Syndicate Operators",
     "summary": "Law enforcement agencies dismantled the Cyber Syndicate, arresting key operators involved in coordinated cybercrime. Court filings detail the group’s use of phishing, credential theft, and ransomware delivery tactics, with profiles indicating a structured, financially motivated operation. Security teams should review the disclosed defensive controls, including multi‑factor authentication, email filtering, and endpoint detection, to mitigate similar threats.",
@@ -370,6 +410,26 @@ export const news: NewsBrief[] = [
       "article-7bc6ac66",
       "7bc6ac66",
       "reddit-shifts-to-logged-in-service-model-5cc4b9"
+    ]
+  },
+  {
+    "slug": "chromium-use-after-free-cve-2026-118356-fixed-cdc718b3",
+    "title": "Chromium Use-After-Free CVE-2026-118356 Fixed",
+    "summary": "Chromium's WTF parser contains a use-after-free vulnerability, CVE-2026-118356, that could allow attackers to execute arbitrary code during web page rendering. The flaw arises from improper reference counting of DOM nodes, enabling memory corruption without authentication; no public exploit is known. Microsoft Edge and Chrome have released patches; update browsers immediately and enable automatic updates to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118356",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118356"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-118356-fixed",
+      "article-cdc718b3",
+      "cdc718b3",
+      "chromium-use-after-free-cve-2026-118356-fixed-1fe91b"
     ]
   },
   {
@@ -2254,21 +2314,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "trezor-safe-5-hardware-implant-warning-1e6a73b4",
-    "title": "Trezor Safe 5 Hardware Implant Warning",
-    "summary": "Trezor warned that a Trezor Safe 5 sold by reseller CryptoBilis in Southeast Asia may contain a suspected crypto‑theft implant. The implant could extract private keys and authorize unauthorized transfers, representing a device‑level breach that could compromise stored cryptocurrencies. Trezor recommends verifying firmware authenticity, applying the latest firmware update, and monitoring for anomalous transaction activity to mitigate theft.",
+    "slug": "trezor-warns-of-hardware-implant-on-devices-sold-b-cf09c239",
+    "title": "Trezor Warns of Hardware Implant on Devices Sold by CryptoBilis",
+    "summary": "Trezor warned users about compromised Trezor Safe 5 hardware wallets distributed by reseller CryptoBilis in Southeast Asia. A malicious hardware implant exfiltrates private keys during transaction signing, enabling unauthorized cryptocurrency transfers without user interaction. Affected users must verify firmware authenticity, update to official signed releases, and monitor accounts for anomalous activity.",
     "category": "Breach",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
     "publishedAt": "2026-10-30T15:58:20.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/trezor-warns-of-suspected-hardware-implant-in-one-of-it"
+      }
+    ],
     "aliases": [
-      "trezor-safe-5-hardware-implant-warning",
-      "article-1e6a73b4",
-      "1e6a73b4",
-      "trezor-safe-5-hardware-implant-warning-6a9779"
+      "trezor-warns-of-hardware-implant-on-devices-sold-b",
+      "article-cf09c239",
+      "cf09c239",
+      "trezor-warns-of-hardware-implant-on-devices-sold-b-6a9779",
+      "trezor-warns-of-hardware-implant-on-devices-sold-by-cryptobi"
     ]
   },
   {
@@ -6136,9 +6202,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "adobe-commerce-polyshell-exploit-enables-store-att-ce225383",
-    "title": "Adobe Commerce PolyShell Exploit Enables Store Attacks",
-    "summary": "Adobe Commerce's PolyShell flaw (CVE-2026-111497) lets attackers run arbitrary code in the store front, threatening customer data. The vulnerability arises from insufficient input validation in the product import module, enabling remote code execution with a CVSS score of 9.5, and has been exploited. Adobe released a patch; teams should apply it immediately and monitor import activity to mitigate the risk.",
+    "slug": "adobe-commerce-polyshell-vulnerability-enables-rem-194ab27d",
+    "title": "Adobe Commerce PolyShell Vulnerability Enables Remote Code Execution",
+    "summary": "Adobe Commerce's PolyShell vulnerability (CVE-2026-111497) allows attackers to execute arbitrary code on the storefront, jeopardizing customer data. The flaw stems from insufficient input validation in the product import module, enabling remote code execution with a CVSS score of 9.5. Adobe has released a patch; security teams should apply it immediately and monitor import activity to mitigate the risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CyberNews AI",
@@ -6147,13 +6213,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-111497"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/adobe-how-to-patch-critical-rce-vulnerabilities"
+      }
+    ],
     "aliases": [
-      "adobe-commerce-polyshell-exploit-enables-store-att",
-      "article-ce225383",
-      "ce225383",
-      "adobe-commerce-polyshell-exploit-enables-store-att-469e12",
-      "adobe-commerce-polyshell-exploit-enables-store-attacks"
+      "adobe-commerce-polyshell-vulnerability-enables-rem",
+      "article-194ab27d",
+      "194ab27d",
+      "adobe-commerce-polyshell-vulnerability-enables-rem-469e12",
+      "adobe-commerce-polyshell-vulnerability-enables-remote-code-e"
     ]
   },
   {
@@ -6684,62 +6755,6 @@ export const news: NewsBrief[] = [
       "article-f0180ad3",
       "f0180ad3",
       "red-hat-patches-mrtg-on-rhel-9-4-sap-37d9b1"
-    ]
-  },
-  {
-    "slug": "unit-42-maps-retail-holiday-threat-landscape-e7778fb8",
-    "title": "Unit 42 Maps Retail Holiday Threat Landscape",
-    "summary": "Unit 42 published an analysis of peak shopping season cyber threats targeting retail operations, covering ransomware campaigns and AI-powered attack vectors. The report outlines defensive strategies to protect customer trust and operational continuity during high-volume holiday periods. Security teams should review the guidance to align holiday-season incident response plans with emerging threat patterns.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
-    "publishedAt": "2026-10-28T18:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unit-42-maps-retail-holiday-threat-landscape",
-      "article-e7778fb8",
-      "e7778fb8",
-      "unit-42-maps-retail-holiday-threat-landscape-2a5d72"
-    ]
-  },
-  {
-    "slug": "red-hat-ships-jboss-eap-8-1-9-security-fix-0c890591",
-    "title": "Red Hat Ships JBoss EAP 8.1.9 Security Fix",
-    "summary": "Red Hat released a security update for JBoss Enterprise Application Platform 8.1.9 on Red Hat Enterprise Linux 9. The update addresses vulnerabilities rated as Important by Red Hat Product Security, with specific CVSS scores available through referenced CVE links. Administrators should apply the RHSA-2026:92056 patch to remediate the identified flaws in their JBoss EAP deployments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92056",
-    "publishedAt": "2026-10-28T17:56:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-ships-jboss-eap-8-1-9-security-fix",
-      "article-0c890591",
-      "0c890591",
-      "red-hat-ships-jboss-eap-8-1-9-security-fix-37d9b1"
-    ]
-  },
-  {
-    "slug": "offsec-releases-free-php2shell-exploitation-lab-286af9f9",
-    "title": "OffSec Releases Free PHP2Shell Exploitation Lab",
-    "summary": "OffSec released a free interactive lab in Proving Grounds Play enabling security practitioners to examine and defend against the critical PHP2Shell vulnerabilities, including CVE-2026-109618. The lab provides hands-on exploitation scenarios for the PHP2Shell flaw family, which researchers classify as critical severity, as AI-assisted research reshapes vulnerability discovery workflows.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
-    "publishedAt": "2026-10-28T17:54:27.000Z",
-    "cves": [
-      "CVE-2026-109618"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "offsec-releases-free-php2shell-exploitation-lab",
-      "article-286af9f9",
-      "286af9f9",
-      "offsec-releases-free-php2shell-exploitation-lab-17a67c"
     ]
   }
 ];
