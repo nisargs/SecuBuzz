@@ -186,6 +186,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "edge-addresses-cve-2026-118327-media-memory-corrup-dea10119",
+    "title": "Edge Addresses CVE-2026-118327 Media Memory Corruption",
+    "summary": "Microsoft Edge (Chromium-based) mitigates a memory corruption flaw in Chromium’s Media component, identified as CVE-2026-118327. The vulnerability arises from improper handling of media buffer boundaries, potentially allowing local code execution if exploited within a privileged process. Red Hat and Microsoft have released patch updates; users should install the latest Chromium-based Edge release to eliminate the flaw.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118327",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118327"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "edge-addresses-cve-2026-118327-media-memory-corrup",
+      "article-dea10119",
+      "dea10119",
+      "edge-addresses-cve-2026-118327-media-memory-corrup-1fe91c",
+      "edge-addresses-cve-2026-118327-media-memory-corruption"
+    ]
+  },
+  {
+    "slug": "edge-fixes-cve-2026-118332-compositing-input-valid-510f55c4",
+    "title": "Edge Fixes CVE-2026-118332 Compositing Input Validation",
+    "summary": "Microsoft Edge (Chromium-based) addresses a flaw in Chromium’s Compositing module, identified as CVE-2026-118332. The defect stems from inadequate input validation of compositor messages, which could lead to memory corruption and local privilege escalation. Microsoft has released a patch; users should update to the latest Chromium-based Edge to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118332",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118332"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "edge-fixes-cve-2026-118332-compositing-input-valid",
+      "article-510f55c4",
+      "510f55c4",
+      "edge-fixes-cve-2026-118332-compositing-input-valid-1fe91c",
+      "edge-fixes-cve-2026-118332-compositing-input-validation"
+    ]
+  },
+  {
     "slug": "edge-patch-addresses-angle-memory-corruption-cve-2-7b7f1bd7",
     "title": "Edge Patch Addresses ANGLE Memory Corruption CVE-2026-118322",
     "summary": "Microsoft Edge (Chromium-based) is affected by CVE-2026-118322, a memory corruption flaw in Chromium’s ANGLE component. The bug can corrupt rendering memory, potentially enabling arbitrary code execution, though no public exploit is known. Microsoft has patched the issue in its Chromium base; users should update to the latest Edge release or apply the Chrome patch.",
@@ -1024,6 +1066,24 @@ export const news: NewsBrief[] = [
       "a923c8f0",
       "malicious-claude-code-extension-hosts-persistent-s-485406",
       "malicious-claude-code-extension-hosts-persistent-ssh-backdoo"
+    ]
+  },
+  {
+    "slug": "claude-code-detects-trojanized-browser-extension-e87792fc",
+    "title": "Claude Code Detects Trojanized Browser Extension",
+    "summary": "A Trojanized browser extension has been identified by the Claude Code detection tool. The malicious extension injects code into user sessions, potentially exfiltrating data or executing arbitrary commands. Security teams should deploy the latest detection rules and apply the recommended patch to block the extension.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/official-claude-code-extension-on-cursor-marketplace-tr",
+    "publishedAt": "2026-10-30T23:51:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-code-detects-trojanized-browser-extension",
+      "article-e87792fc",
+      "e87792fc",
+      "claude-code-detects-trojanized-browser-extension-21ab0d"
     ]
   },
   {
@@ -3477,6 +3537,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-cjose-security-update-for-rhel9-9c715486",
+    "title": "Red Hat Releases cjose Security Update for RHEL9",
+    "summary": "Red Hat Enterprise Linux 9 users receive a security update for the cjose library, addressing multiple vulnerabilities discovered in the cryptographic component. Red Hat Product Security rates the update as Important, indicating a high likelihood of exploitation if left unpatched. Administrators should apply the RHSA-2026:90812 update immediately to mitigate potential security risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90812",
+    "publishedAt": "2026-10-29T21:34:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-cjose-security-update-for-rhel9",
+      "article-9c715486",
+      "9c715486",
+      "red-hat-releases-cjose-security-update-for-rhel9-37da7d"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-grafana-security-update-for-rhel9-a5904cdb",
+    "title": "Red Hat Issues Grafana Security Update for RHEL9",
+    "summary": "Red Hat Enterprise Linux 9 receives a security update for the Grafana monitoring platform, addressing several vulnerabilities. The update is rated Moderate by Red Hat Product Security, indicating a lower exploitation risk compared to Important fixes, but still requires timely patching. Users should apply RHSA-2026:90811 promptly to maintain system integrity and prevent potential compromise.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90811",
+    "publishedAt": "2026-10-29T21:33:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-grafana-security-update-for-rhel9",
+      "article-a5904cdb",
+      "a5904cdb",
+      "red-hat-issues-grafana-security-update-for-rhel9-37da7d"
+    ]
+  },
+  {
     "slug": "chrome-updates-desktop-stable-channel-1c8f2e2a",
     "title": "Chrome Updates Desktop Stable Channel",
     "summary": "Google Chrome released a stable channel update for Windows, Mac, and Linux that includes 21 security fixes, among them CVE‑2026‑76024, a critical memory‑corruption flaw in MediaStream, and CVE‑2026‑76025, a high‑severity use‑after‑free in FileSystem. These vulnerabilities could allow attackers to execute code or crash the browser via media or filesystem inputs. Users should install the update immediately to mitigate the risk.",
@@ -3549,6 +3645,43 @@ export const news: NewsBrief[] = [
       "a08f348c",
       "reporters-notebook-video-series-discusses-ai-cyber-377b1f",
       "reporters-notebook-video-series-discusses-ai-cybersecurity-t"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-92615-important-aspell-security-update-5b76caa1",
+    "title": "RHSA-2026:92615: Important: aspell security update",
+    "summary": "An update for aspell is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92615",
+    "publishedAt": "2026-10-29T20:03:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-92615-important-aspell-security-update",
+      "article-5b76caa1",
+      "5b76caa1",
+      "rhsa-2026-92615-important-aspell-security-update-37d99b"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-92438-important-net-10-0-security-bug-fi-4e3305cd",
+    "title": "RHSA-2026:92438: Important: .NET 10.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 10.0 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92438",
+    "publishedAt": "2026-10-29T20:03:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-92438-important-net-10-0-security-bug-fi",
+      "article-4e3305cd",
+      "4e3305cd",
+      "rhsa-2026-92438-important-net-10-0-security-bug-fi-37d9a3",
+      "rhsa-2026-92438-important-net-10-0-security-bug-fix-and-enha"
     ]
   },
   {
@@ -3681,6 +3814,24 @@ export const news: NewsBrief[] = [
       "article-2c557b1c",
       "2c557b1c",
       "threatsday-highlights-firewall-flaws-and-trojans-706edd"
+    ]
+  },
+  {
+    "slug": "ghostaction-wave-fails-attackers-persist-on-github-5905ed27",
+    "title": "GhostAction Wave Fails, Attackers Persist on GitHub",
+    "summary": "A GhostAction hacking wave targeting GitHub repositories has failed to deliver payloads but remains active. The wave exploits misconfigured access controls and leverages social engineering to gain initial foothold, posing a moderate risk of credential compromise. Security teams should review root‑cause telemetry, apply detection rules, and patch vulnerable configurations to mitigate future attempts.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/ghostaction-hacking-wave-fizzles-but-attackers-lurk-on",
+    "publishedAt": "2026-10-29T18:47:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostaction-wave-fails-attackers-persist-on-github",
+      "article-5905ed27",
+      "5905ed27",
+      "ghostaction-wave-fails-attackers-persist-on-github-35bbe6"
     ]
   },
   {
@@ -6600,163 +6751,6 @@ export const news: NewsBrief[] = [
       "90bd004a",
       "alpine-ilx-f511-android-auto-service-rce-via-stack-6f3c9b",
       "alpine-ilx-f511-android-auto-service-rce-via-stack-overflow"
-    ]
-  },
-  {
-    "slug": "zdi-discloses-zero-day-rce-in-alpine-ilx-f511-6cfc6f0f",
-    "title": "ZDI Discloses Zero-Day RCE in Alpine iLX-F511",
-    "summary": "A zero-day heap-based buffer overflow vulnerability in the Alpine iLX-F511 Bluetooth OBEX packet handler allows physically present attackers to execute arbitrary code without authentication. Tracked as CVE-2026-118611 and demonstrated at Pwn2Own, the flaw carries a CVSS score of 6.8. Users should monitor vendor advisories for firmware updates and restrict physical access to affected devices until patches are available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-829/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118611"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-discloses-zero-day-rce-in-alpine-ilx-f511",
-      "article-6cfc6f0f",
-      "6cfc6f0f",
-      "zdi-discloses-zero-day-rce-in-alpine-ilx-f511-6f3c9c"
-    ]
-  },
-  {
-    "slug": "apple-safari-rce-via-jstowasm-type-confusion-22001fcf",
-    "title": "Apple Safari RCE via jsToWasm Type Confusion",
-    "summary": "A type‑confusion flaw in Safari’s jsToWasm entry point permits remote code execution when a user visits a malicious page. The vulnerability, CVE‑2026‑86974, scores CVSS 8.8 and requires user interaction to trigger, allowing attackers to run arbitrary code on affected browsers. Apple has issued an update that patches the flaw; security teams should install the latest Safari version immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-830/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-safari-rce-via-jstowasm-type-confusion",
-      "article-22001fcf",
-      "22001fcf",
-      "apple-safari-rce-via-jstowasm-type-confusion-6f3c9e"
-    ]
-  },
-  {
-    "slug": "valkey-remote-code-execution-via-numeric-truncatio-954a6711",
-    "title": "Valkey Remote Code Execution via Numeric Truncation",
-    "summary": "Valkey clusterCreatePublishMsgBlock numeric truncation flaw permits authenticated remote attackers to execute arbitrary code on affected installations. The vulnerability, identified as CVE-2026-104351, scores CVSS 8.8, enabling remote code execution without privilege escalation. Valkey has released a patch; security teams should apply the update immediately in all affected environments to mitigate exploitation today.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-833/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-104351"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "valkey-remote-code-execution-via-numeric-truncatio",
-      "article-954a6711",
-      "954a6711",
-      "valkey-remote-code-execution-via-numeric-truncatio-6f3c9f",
-      "valkey-remote-code-execution-via-numeric-truncation"
-    ]
-  },
-  {
-    "slug": "apple-macos-coretext-out-of-bounds-read-disclosure-dd5682f7",
-    "title": "Apple macOS CoreText Out-of-Bounds Read Disclosure",
-    "summary": "Apple macOS CoreText GDEF LigCaretList out-of-bounds read flaw allows remote attackers to disclose sensitive information on affected systems. The vulnerability, CVE-2026-112656, scores CVSS 3.3 and requires user interaction, such as opening a malicious file or visiting a malicious page. Apple has issued an update; users should install the latest macOS release to eliminate the information disclosure risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-831/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-112656"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apple-macos-coretext-out-of-bounds-read-disclosure",
-      "article-dd5682f7",
-      "dd5682f7",
-      "apple-macos-coretext-out-of-bounds-read-disclosure-6f3c9e"
-    ]
-  },
-  {
-    "slug": "avg-internet-security-local-privilege-escalation-e-c6b6f97c",
-    "title": "AVG Internet Security Local Privilege Escalation Exploit",
-    "summary": "A local privilege escalation vulnerability exists in AVG Internet Security’s avgToolsSvc component, allowing attackers with low‑privileged code execution to gain higher privileges. The flaw, rated CVSS 7.3, is identified as CVE-2026-6064 and requires local code execution to trigger. AVG has released a patch; security teams should apply it immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-832/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-6064"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "avg-internet-security-local-privilege-escalation-e",
-      "article-c6b6f97c",
-      "c6b6f97c",
-      "avg-internet-security-local-privilege-escalation-e-6f3c9f",
-      "avg-internet-security-local-privilege-escalation-exploit"
-    ]
-  },
-  {
-    "slug": "crowdstrike-2026-report-ecrime-leads-china-activit-6e49cb97",
-    "title": "CrowdStrike 2026 Report: eCrime Leads, China Activity Rises",
-    "summary": "CrowdStrike released its 2026 Legal Threat Landscape Report, highlighting eCrime as the leading attack vector. The analysis indicates a surge in China‑originated cyber activity, with increased phishing, ransomware, and data‑exfiltration campaigns. Security teams should prioritize monitoring for emerging threat actors, enforce strict email filtering, and update incident response playbooks accordingly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-legal-threat-landscape-report/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-2026-report-ecrime-leads-china-activit",
-      "article-6e49cb97",
-      "6e49cb97",
-      "crowdstrike-2026-report-ecrime-leads-china-activit-6b8654",
-      "crowdstrike-2026-report-ecrime-leads-china-activity-rises"
-    ]
-  },
-  {
-    "slug": "node2shell-brotli-flaw-under-active-exploitation-3b1eae84",
-    "title": "Node2Shell Brotli Flaw Under Active Exploitation",
-    "summary": "Sophos Threat Research confirms active exploitation of Node2Shell (CVE-2026-111497), a vulnerability in the Brotli compression library. The flaw is being actively exploited in the wild, representing an urgent remote threat to systems processing Brotli-compressed data. Security teams should apply vendor patches immediately and monitor for exploitation indicators on affected infrastructure.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/node2shell-cve-2026-111497-in-active-exploitation",
-    "publishedAt": "2026-10-28T00:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "node2shell-brotli-flaw-under-active-exploitation",
-      "article-3b1eae84",
-      "3b1eae84",
-      "node2shell-brotli-flaw-under-active-exploitation-563a99"
-    ]
-  },
-  {
-    "slug": "gmo-group-advises-shutdown-amid-ransomware-threat-78c63a8d",
-    "title": "GMO Group Advises Shutdown Amid Ransomware Threat",
-    "summary": "A threat actor breached GMO Group’s Onamae Desktop Cloud and threatened a ransomware attack, prompting the company to advise customers to disconnect and shut down systems. The threat exploits compromised credentials to gain remote access, potentially encrypting user data. GMO has released a mitigation guide and urges immediate network isolation.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
-    "publishedAt": "2026-10-27T23:35:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gmo-group-advises-shutdown-amid-ransomware-threat",
-      "article-78c63a8d",
-      "78c63a8d",
-      "gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08"
     ]
   }
 ];
