@@ -116,4 +116,4 @@ Architected and developed by **Nisarg Soni** (Security Operations Analyst & Secu
 
 ## 📄 License
 
-SecuBuzz is open-source software licensed under the [MIT License](LICENSE.txt).
+Copyright © 2026 SecuBuzz. All rights reserved. Proprietary software. See [LICENSE.txt](LICENSE.txt) for details.
