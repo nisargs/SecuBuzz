@@ -211,6 +211,30 @@
       1. *Direct Verification Link (`verificationUrl`)*: Optional schema field in `feed.json` extracted at ingest time when an article explicitly cites an official leak checking portal, breach search tool, or remediation hub. Rendered on article detail screens as `[ 🔍 Verify Incident / Leak Checker ↗ ]`.
       2. *Discovery Vector Micro-Intel (`discoveryVector`)*: Optional 1-sentence root-cause/discovery vector (max 15–25 words, e.g. *"Discovered by researcher Bob Diachenko via an unprotected Elasticsearch cluster"*). Strictly rejected separate 100-word explainer articles to protect the 60-word brand identity, prevent AI slop/hallucinations on early breaking news, and eliminate extra token costs.
       3. *Zero-Cost Mandate*: Single-pass extraction in `scripts/ingest.mjs` (falls back to `null` if unconfirmed); zero manual maintenance.
+  - **P1: Global Cybersecurity Events & Summits Directory (`secubuzz.com/events`) (Parked for Future Activation)**:
+    - **Concept**: A dedicated, evergreen global calendar of cybersecurity conferences, summits, and CFPs (DEF CON, Black Hat, RSA Conference, BSides global network, FIRST, CanSecWest, AWS re:Inforce, etc.).
+    - **Legal & Trademark Invariant**:
+      - Factual data (event name, dates, city/country, format, official registration URL) is non-copyrightable (*Feist v. Rural*).
+      - Event names are protected under **nominative fair use** to identify the event and link directly to official organizers.
+      - Zero scraping of proprietary editorial text or competitor directories; strictly maintain an independent factual index.
+    - **Clean Data Sourcing Architecture**:
+      1. *Core 60 Flagship Catalog*: Curated registry of recurring annual tier-1 conferences.
+      2. *Open-Source Community Calendars*: Ingest public MIT/CC0 conference datasets via GitHub Actions.
+      3. *Public iCal / ICS Calendar Feeds*: Direct automated ingest of open `.ics` feeds from BSides Worldwide, OWASP, and FIRST.org.
+      4. *Inbound "Submit Your Event" Channel*: Self-service submission for global conference organizers seeking exposure.
+    - **Storage & Runtime Architecture**:
+      - Serialized into `events.json` stored in Cloudflare R2 right next to `feed.json`.
+      - Zero cloud cost ($0.00 overhead), served statically via Cloudflare edge.
+      - Web page: `secubuzz.com/events` with region filters (North America, Europe, APAC, LatAm, Middle East, Virtual) and format toggle (In-Person / Virtual).
+      - Mobile screen: Calendar list with 1-tap "Add to Google Calendar" button.
+  - **P1: B2B Monetization Roadmap (Parked for Post-Growth Phase)**:
+    - *Ko-fi Invariant*: Ko-fi tip jars do not convert in cybersecurity because enterprise professionals do not donate personal money for work tools on corporate laptops.
+    - *Future B2B Value Vectors*:
+      1. *SecuBuzz Pro / "My Stack Pager" ($5/mo)*: Custom threat paging for user-specified tech stacks.
+      2. *SOC Webhook Dispatcher ($19–$29/mo)*: Automated real-time feed pipe directly into internal company Slack / Microsoft Teams channels (already validated by recurring Microsoft Teams web readers in edge telemetry).
+      3. *GitHub Sponsors*: Tech-standard alternative to Ko-fi for open-source developer/corporate contributions.
+  - **P1: Cloud Credit Avoidance Invariant (Zero Billing Cliffs)**:
+    - Deliberately skipped temporary cloud credits (e.g. 90-day $300 Google Cloud promo) to protect SecuBuzz's permanent $0.00/month infrastructure guarantee and prevent recurring payment cliffs on Day 91.
   - **P1: Structured Threat Timeline**: Visual lifecycle (`Disclosed → PoC → Exploit → CISA KEV → Patch`) indicating what changed.
   - **P1: Authoritative NVD Vector Integration**: Pull CVSS v3.1/v4.0 vector strings directly from NIST NVD API.
   - **P2: Cloudflare Monetization Gateway (Agent & Scraper Micropayments)**:
