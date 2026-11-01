@@ -186,6 +186,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-memory-corruption-cve-2026-118305-fixed-94a29281",
+    "title": "Chromium Memory Corruption CVE-2026-118305 Fixed",
+    "summary": "A memory corruption flaw (CVE-2026-118305) in Chromium's Turbolev component can be triggered by malformed input during rendering. The vulnerability allows local code execution if an attacker supplies crafted data, but no active exploitation has been reported. Microsoft Edge users should install the latest Chromium update, and Chrome users can apply the patch released in the 2026 update cycle.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118305",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118305"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-memory-corruption-cve-2026-118305-fixed",
+      "article-94a29281",
+      "94a29281",
+      "chromium-memory-corruption-cve-2026-118305-fixed-1fe91c"
+    ]
+  },
+  {
+    "slug": "chromium-paint-use-after-free-cve-2026-118307-fixe-8c1c5b1c",
+    "title": "Chromium Paint Use-After-Free CVE-2026-118307 Fixed",
+    "summary": "A use-after-free flaw (CVE-2026-118307) in Chromium's Paint engine can be triggered by maliciously crafted graphics files. The defect may lead to arbitrary code execution if an attacker supplies a specially crafted image, though no public exploits are known. Edge and Chrome users should apply the latest Chromium patch, which resolves the use-after-free vulnerability in the Paint module.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118307",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118307"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-paint-use-after-free-cve-2026-118307-fixe",
+      "article-8c1c5b1c",
+      "8c1c5b1c",
+      "chromium-paint-use-after-free-cve-2026-118307-fixe-1fe91c",
+      "chromium-paint-use-after-free-cve-2026-118307-fixed"
+    ]
+  },
+  {
     "slug": "chromium-svg-use-after-free-cve-2026-118308-af2a1f21",
     "title": "Chromium SVG Use-After-Free CVE-2026-118308",
     "summary": "A use‑after‑free flaw in Chromium’s SVG engine, CVE‑2026‑118308, can be triggered by crafted SVG files in Microsoft Edge (Chromium‑based). The flaw allows arbitrary memory access that could lead to code execution, but no public exploit has been released. Google and Microsoft have patched the issue in recent Chrome releases; users should upgrade to the latest Chromium build.",
@@ -1310,6 +1351,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "malicious-chrome-extensions-exfiltrate-13-4m-users-96d3f2d3",
+    "title": "Malicious Chrome Extensions Exfiltrate 13.4M Users' Search Queries",
+    "summary": "Malicious Chrome extensions hijacked search queries from 13.4 million users, routing them to attacker‑controlled servers. The compromise leveraged the extensions’ permission to access browser search data, enabling passive eavesdropping without user interaction. Users should remove the 319 identified extensions and update Chrome to the latest stable release to mitigate the threat.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/fake-pdf-and-search-tools-hijacked-searches-for-13-4-million-chrome-users",
+    "publishedAt": "2026-10-30T15:25:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-chrome-extensions-exfiltrate-13-4m-users",
+      "article-96d3f2d3",
+      "96d3f2d3",
+      "malicious-chrome-extensions-exfiltrate-13-4m-users-1a74d7",
+      "malicious-chrome-extensions-exfiltrate-13-4m-users-search-qu"
+    ]
+  },
+  {
     "slug": "aftermarket-car-head-units-found-carrying-pre-inst-52c1d71e",
     "title": "Aftermarket Car Head Units Found Carrying Pre-Installed Bloatware",
     "summary": "An analysis of cheap aftermarket automotive head units revealed pre-installed bloatware and background spyware. The devices contained background voice assistants using WebView components, location tracking, and unexpected call recording capabilities that silently consume processing resources. Vehicle owners using third-party Android head units should monitor network traffic and audit installed system packages.",
@@ -1388,6 +1448,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "adaptive-ai-assisted-attacks-escalate-threat-respo-60ea91e7",
+    "title": "Adaptive AI‑Assisted Attacks Escalate Threat Response Speed",
+    "summary": "Adaptive attacks can change tactics rapidly, leveraging AI to probe environments, learn responses, and chain subsequent actions while the attack is ongoing. Anthropic’s 2026 analysis examined 832 accounts, illustrating how quickly AI‑driven operations can pivot techniques and exploit discovered weaknesses. Security teams must adopt continuous monitoring, adaptive defenses, and AI‑aware threat intelligence to keep pace with evolving attack vectors.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/when-threats-dont-wait-security-cant-either/",
+    "publishedAt": "2026-10-30T15:08:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adaptive-ai-assisted-attacks-escalate-threat-respo",
+      "article-60ea91e7",
+      "60ea91e7",
+      "adaptive-ai-assisted-attacks-escalate-threat-respo-dc9897",
+      "adaptive-ai-assisted-attacks-escalate-threat-response-speed"
+    ]
+  },
+  {
+    "slug": "php2shell-disclosure-highlights-need-for-cyber-rea-ee5542ae",
+    "title": "PHP2Shell Disclosure Highlights Need for Cyber Readiness",
+    "summary": "The month’s coverage included the PHP2Shell vulnerability disclosure, underscoring the importance of robust web application security. Other notable incidents highlighted the need for comprehensive cyber‑readiness plans, prompting organizations to reassess defensive postures. Stakeholders are advised to review incident response frameworks, update patch management schedules, and conduct regular threat modeling exercises.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/videos/month-security-tony-anscombe-october-2026/",
+    "publishedAt": "2026-10-30T15:03:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "php2shell-disclosure-highlights-need-for-cyber-rea",
+      "article-ee5542ae",
+      "ee5542ae",
+      "php2shell-disclosure-highlights-need-for-cyber-rea-158449",
+      "php2shell-disclosure-highlights-need-for-cyber-readiness"
+    ]
+  },
+  {
     "slug": "apt-group-uses-netamloader-to-target-asian-governm-31757c96",
     "title": "APT Group Uses NetamLoader to Target Asian Government Windows",
     "summary": "An unnamed APT group deployed NetamLoader, a malware framework, inside Windows 10 update packages used exclusively by Asian government agencies. The loader leverages trusted software binaries to execute payloads, bypassing standard update verification and enabling persistent footholds on target systems. Defenders should validate update signatures, isolate critical infrastructure, and apply the latest Windows security patches to prevent exploitation.",
@@ -1404,6 +1502,24 @@ export const news: NewsBrief[] = [
       "31757c96",
       "apt-group-uses-netamloader-to-target-asian-governm-6eb5ab",
       "apt-group-uses-netamloader-to-target-asian-government-window"
+    ]
+  },
+  {
+    "slug": "chrome-dev-channel-updated-to-159-0-8130-0-7c7757a1",
+    "title": "Chrome Dev Channel Updated to 159.0.8130.0",
+    "summary": "Google released a new Chrome Dev channel build, version 159.0.8130.0, for Windows, macOS, and Linux platforms. The update includes bug fixes and performance improvements, with a partial list of changes available in the Git log. Users are encouraged to switch to the Dev channel or report new issues via the community help forum to aid further testing.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01100896752.html",
+    "publishedAt": "2026-10-30T14:58:33.169Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-dev-channel-updated-to-159-0-8130-0",
+      "article-7c7757a1",
+      "7c7757a1",
+      "chrome-dev-channel-updated-to-159-0-8130-0-55ca2c"
     ]
   },
   {
@@ -2891,6 +3007,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-java-21-openjdk-update-for-rhel-10-5e13e447",
+    "title": "Red Hat Java 21 OpenJDK Update for RHEL 10",
+    "summary": "Red Hat released a security update for java‑21‑openjdk on RHEL 10, addressing multiple critical vulnerabilities. The advisory lists several CVEs with CVSS scores, but the update is rated as Important by Red Hat Product Security. Users should apply the latest java‑21‑openjdk package via yum or dnf to mitigate the identified flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90504",
+    "publishedAt": "2026-10-29T21:42:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-java-21-openjdk-update-for-rhel-10",
+      "article-5e13e447",
+      "5e13e447",
+      "red-hat-java-21-openjdk-update-for-rhel-10-37da88"
+    ]
+  },
+  {
     "slug": "chrome-156-for-android-released-363b7ad1",
     "title": "Chrome 156 for Android Released",
     "summary": "Google released Chrome 156 for Android, aligning with desktop security fixes and including stability improvements. The update is available via Google Play and contains the same security patches as the corresponding desktop releases unless otherwise noted. Users should update to maintain protection against known vulnerabilities.",
@@ -2906,6 +3040,24 @@ export const news: NewsBrief[] = [
       "article-363b7ad1",
       "363b7ad1",
       "chrome-156-for-android-released-b3588a"
+    ]
+  },
+  {
+    "slug": "red-hat-satellite-6-17-security-update-released-647a61b0",
+    "title": "Red Hat Satellite 6.17 Security Update Released",
+    "summary": "Red Hat issued a security update for Satellite 6.17, fixing several high‑severity vulnerabilities. The advisory references multiple CVEs with CVSS scores, and the update is classified as Important by Red Hat Product Security. Administrators should install the latest Satellite 6.17 package via yum or dnf to address the reported flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92859",
+    "publishedAt": "2026-10-29T21:37:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-17-security-update-released",
+      "article-647a61b0",
+      "647a61b0",
+      "red-hat-satellite-6-17-security-update-released-37d993"
     ]
   },
   {
@@ -2962,6 +3114,42 @@ export const news: NewsBrief[] = [
       "448a5b8d",
       "hokuriku-telecommunications-deploys-arctic-wolf-ma-5e7cd7",
       "hokuriku-telecommunications-deploys-arctic-wolf-managed-edr"
+    ]
+  },
+  {
+    "slug": "ctf-competitions-gain-critical-importance-e015205d",
+    "title": "CTF Competitions Gain Critical Importance",
+    "summary": "Artificial intelligence reduces early‑career learning opportunities, prompting the cybersecurity community to emphasize capture‑the‑flag competitions as a practical training alternative. CTF events provide hands‑on experience, allowing participants to practice exploitation, defensive techniques, and teamwork in realistic, time‑bound scenarios. Organizations can leverage CTFs to identify skill gaps, foster talent pipelines, and strengthen overall security posture through continuous learning.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever",
+    "publishedAt": "2026-10-29T19:56:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ctf-competitions-gain-critical-importance",
+      "article-e015205d",
+      "e015205d",
+      "ctf-competitions-gain-critical-importance-56afc6"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-libxtst-security-update-8213ab03",
+    "title": "Red Hat Issues Important libXtst Security Update",
+    "summary": "Red Hat released an Important security update for the libXtst library on Enterprise Linux 9. The advisory references a CVSS base score for each vulnerability, indicating a high‑severity flaw that could allow privilege escalation or denial of service. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify patch installation via rpm or yum.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91223",
+    "publishedAt": "2026-10-29T19:53:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-libxtst-security-update",
+      "article-8213ab03",
+      "8213ab03",
+      "red-hat-issues-important-libxtst-security-update-37da1f"
     ]
   },
   {
@@ -3119,6 +3307,24 @@ export const news: NewsBrief[] = [
       "08648ac9",
       "microsoft-tracks-ai-adoption-by-north-korean-threa-47996f",
       "microsoft-tracks-ai-adoption-by-north-korean-threat-actors"
+    ]
+  },
+  {
+    "slug": "four-question-white-board-threat-modeling-ad54bac2",
+    "title": "Four‑Question White‑Board Threat Modeling",
+    "summary": "CISOs can employ a concise four‑question exercise to construct threat models directly on a white board. The method emphasizes cost‑effective analysis, requiring minimal resources while still identifying critical attack vectors and potential mitigations. Adopting this white‑board approach streamlines risk assessment, supports strategic security planning, and reduces the need for expensive tooling.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/threat-modeling-4-simple-questions",
+    "publishedAt": "2026-10-29T15:44:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "four-question-white-board-threat-modeling",
+      "article-ad54bac2",
+      "ad54bac2",
+      "four-question-white-board-threat-modeling-5d78e7"
     ]
   },
   {
@@ -3325,6 +3531,25 @@ export const news: NewsBrief[] = [
       "9ab9f7c2",
       "google-gemini-4-carbon-tops-vulnerability-benchmar-5da6c8",
       "google-gemini-4-carbon-tops-vulnerability-benchmarks"
+    ]
+  },
+  {
+    "slug": "cloudflare-ddos-threat-report-2026-q3-more-swarms-c7202268",
+    "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+    "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
+    "publishedAt": "2026-10-29T12:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-ddos-threat-report-2026-q3-more-swarms",
+      "article-c7202268",
+      "c7202268",
+      "cloudflare-ddos-threat-report-2026-q3-more-swarms-7a6550",
+      "cloudflare-ddos-threat-report-2026-q3-more-swarms-fewer-gian"
     ]
   },
   {
@@ -6535,238 +6760,6 @@ export const news: NewsBrief[] = [
       "article-6584d38b",
       "6584d38b",
       "research-proves-ai-models-can-hide-backdoors-21fd94"
-    ]
-  },
-  {
-    "slug": "samsung-tvs-may-listen-via-connected-soundbars-e82317a5",
-    "title": "Samsung TVs May Listen via Connected Soundbars",
-    "summary": "A vulnerability in Samsung TVs lacking built‑in microphones allows connected soundbars or Bluetooth microphones to capture audio, enabling covert listening. The flaw exploits the TV’s audio‑routing firmware, permitting unauthorized audio streams to bypass user‑controlled privacy settings without requiring network access. Samsung released a firmware update disabling external microphone routing; users should apply it.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/samsung-tvs-without-mics-may-listen-through-soundbars-researcher-says",
-    "publishedAt": "2026-10-27T10:44:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "samsung-tvs-may-listen-via-connected-soundbars",
-      "article-e82317a5",
-      "e82317a5",
-      "samsung-tvs-may-listen-via-connected-soundbars-5a742a"
-    ]
-  },
-  {
-    "slug": "apple-backports-zero-day-patch-for-older-ios-devic-3150c522",
-    "title": "Apple Backports Zero‑Day Patch for Older iOS Devices",
-    "summary": "Apple has backported security patches to older iPhones and iPads, addressing a zero‑day bug exploited in sophisticated targeted attacks on iOS devices. CVE-2026-86950 allows remote code execution via a malformed graphics request, actively exploited. Apple has issued a firmware update for affected devices; security teams should install the patch immediately to eliminate the exploitation vector.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
-    "publishedAt": "2026-10-27T10:36:12.000Z",
-    "cves": [
-      "CVE-2026-86950"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apple-backports-zero-day-patch-for-older-ios-devic",
-      "article-3150c522",
-      "3150c522",
-      "apple-backports-zero-day-patch-for-older-ios-devic-118c92",
-      "apple-backports-zero-day-patch-for-older-ios-devices"
-    ]
-  },
-  {
-    "slug": "ryan-fetterman-discusses-practical-detection-engin-cc4d37a5",
-    "title": "Ryan Fetterman Discusses Practical Detection Engineering",
-    "summary": "Ryan Fetterman, a federal SOC analyst, outlines practical detection engineering techniques and career guidance for blue teams. He emphasizes hands‑on monitoring, threat hunting, and iterative hypothesis testing as core skills. Fetterman advises balancing workload with continuous learning to prevent burnout, advocating structured playbooks and automated alert tuning for sustainable security operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/from-federal-socs-to-talos-ryan-fetterman-on-practical-security-research/",
-    "publishedAt": "2026-10-27T10:00:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ryan-fetterman-discusses-practical-detection-engin",
-      "article-cc4d37a5",
-      "cc4d37a5",
-      "ryan-fetterman-discusses-practical-detection-engin-1e450e",
-      "ryan-fetterman-discusses-practical-detection-engineering"
-    ]
-  },
-  {
-    "slug": "australia-disrupts-amadey-malware-backend-180k-dev-23834048",
-    "title": "Australia Disrupts Amadey Malware Backend, 180K Devices Affected",
-    "summary": "The Australian Signals Directorate (ASD) successfully infiltrated and severed access to the backend infrastructure of the Amadey malware, disrupting operations affecting approximately 180,000 infected computers worldwide. The criminal operator lost the ability to command and control compromised endpoints, preventing further data theft or malicious payload delivery.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
-    "publishedAt": "2026-10-27T09:33:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "australia-disrupts-amadey-malware-backend-180k-dev",
-      "article-23834048",
-      "23834048",
-      "australia-disrupts-amadey-malware-backend-180k-dev-4db04f",
-      "australia-disrupts-amadey-malware-backend-180k-devices-affec"
-    ]
-  },
-  {
-    "slug": "openai-compaction-feature-exposes-hidden-reasoning-4fe4013e",
-    "title": "OpenAI Compaction Feature Exposes Hidden Reasoning",
-    "summary": "Security researchers from Xint demonstrated that OpenAI's compaction feature, designed to shrink long conversations for storage efficiency, can be abused to extract a model's hidden reasoning in plain text. The technique bypasses OpenAI's normal encryption of internal reasoning chains, allowing unauthorized access to proprietary model logic and intermediate problem-solving steps.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
-    "publishedAt": "2026-10-27T08:22:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-compaction-feature-exposes-hidden-reasoning",
-      "article-4fe4013e",
-      "4fe4013e",
-      "openai-compaction-feature-exposes-hidden-reasoning-7e5761"
-    ]
-  },
-  {
-    "slug": "maritime-coalition-unveils-open-threat-database-fo-a8661e4d",
-    "title": "Maritime Coalition Unveils Open Threat Database for Port Infrastructure",
-    "summary": "The Maritime Coalition has released a free vulnerability database cataloging nearly 30,000 IT and OT weaknesses affecting ship and port systems, including 37 maritime‑specific products. The database aggregates known flaws to aid operators in prioritizing security controls and patching schedules. Users can access the repository online to download vulnerability lists and mitigation guidance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/",
-    "publishedAt": "2026-10-27T07:14:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "maritime-coalition-unveils-open-threat-database-fo",
-      "article-a8661e4d",
-      "a8661e4d",
-      "maritime-coalition-unveils-open-threat-database-fo-694cac",
-      "maritime-coalition-unveils-open-threat-database-for-port-inf"
-    ]
-  },
-  {
-    "slug": "google-project-zero-compares-fuzzilli-and-bigsleep-41d50001",
-    "title": "Google Project Zero Compares Fuzzilli and BigSleep on V8",
-    "summary": "Google Project Zero compared the generative JavaScript engine fuzzer Fuzzilli with the LLM-based bug finder BigSleep against Chrome’s V8 engine. Over six months, BigSleep reported 45 vulnerabilities versus Fuzzilli’s 37, with an estimated 60% overlap in discovered bugs. The study demonstrates that LLMs and fuzzers uncover distinct flaw sets, underscoring their complementary roles in vulnerability discovery.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Project Zero",
-    "sourceUrl": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
-    "publishedAt": "2026-10-27T07:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-project-zero-compares-fuzzilli-and-bigsleep",
-      "article-41d50001",
-      "41d50001",
-      "google-project-zero-compares-fuzzilli-and-bigsleep-75f539",
-      "google-project-zero-compares-fuzzilli-and-bigsleep-on-v8"
-    ]
-  },
-  {
-    "slug": "attackers-hijack-dahua-ip-cameras-in-ukraine-using-b286fff5",
-    "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
-    "summary": "Attackers exploited weak authentication and P2P access controls on Dahua IP cameras and DVRs in Ukraine, enabling unauthorized remote viewing, configuration changes, and creation of third‑party accounts. The vulnerability allows remote attackers to bypass device security, potentially exposing sensitive surveillance feeds and compromising operational integrity. Operators should disable P2P features, enforce strong passwords, and apply vendor firmware updates immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
-    "publishedAt": "2026-10-27T06:34:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-hijack-dahua-ip-cameras-in-ukraine-using",
-      "article-b286fff5",
-      "b286fff5",
-      "attackers-hijack-dahua-ip-cameras-in-ukraine-using-185083",
-      "attackers-hijack-dahua-ip-cameras-in-ukraine-using-p2p-acces"
-    ]
-  },
-  {
-    "slug": "ai-security-startups-expected-to-merge-into-larger-528ef6d5",
-    "title": "AI Security Startups Expected to Merge into Larger Platforms",
-    "summary": "The interview discusses how AI security startups will consolidate into larger platform offerings within the cybersecurity ecosystem. Key categories expected to survive include core threat detection, while others may become platform features as vendors merge. Investors should focus on Q3 funding trends, Israel’s venture share, and foundational controls before agent deployment to mitigate integration risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/27/jonathan-care-kuppingercole-analysts-ai-security-market/",
-    "publishedAt": "2026-10-27T06:30:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-security-startups-expected-to-merge-into-larger",
-      "article-528ef6d5",
-      "528ef6d5",
-      "ai-security-startups-expected-to-merge-into-larger-2149ac",
-      "ai-security-startups-expected-to-merge-into-larger-platforms"
-    ]
-  },
-  {
-    "slug": "microsoft-authenticator-android-flaw-enables-rogue-ac5b9edf",
-    "title": "Microsoft Authenticator Android Flaw Enables Rogue Apps to Steal Work Accounts",
-    "summary": "A flaw in Microsoft Authenticator on Android allows any local app to silently hijack a user’s work account without permissions. The vulnerability bypasses the broker mechanism used by Teams and Outlook, enabling credential theft without user interaction or elevated privileges. Microsoft has released an update that patches the flaw; administrators should upgrade Authenticator immediately and enforce app permission restrictions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/27/microsoft-authenticator-vulnerability-patchedcve-2026-80097/",
-    "publishedAt": "2026-10-27T06:14:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-authenticator-android-flaw-enables-rogue",
-      "article-ac5b9edf",
-      "ac5b9edf",
-      "microsoft-authenticator-android-flaw-enables-rogue-1f8218",
-      "microsoft-authenticator-android-flaw-enables-rogue-apps-to-s"
-    ]
-  },
-  {
-    "slug": "cve-2026-111497-brotli-vulnerability-affects-palo-8f3faf73",
-    "title": "CVE-2026-111497 Brotli Vulnerability Affects Palo Alto Networks Products",
-    "summary": "A critical Brotli compression flaw, CVE-2026-111497, compromises Palo Alto Networks devices via unauthenticated remote code execution. The vulnerability, rated CVSS 9.5, allows attackers to inject malicious payloads into network traffic, potentially bypassing security controls. Palo Alto Networks has released a patch; administrators must apply the update immediately to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Palo Alto Networks PSIRT",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-111497",
-    "publishedAt": "2026-10-27T05:40:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-111497-brotli-vulnerability-affects-palo",
-      "article-8f3faf73",
-      "8f3faf73",
-      "cve-2026-111497-brotli-vulnerability-affects-palo-4fd0b0",
-      "cve-2026-111497-brotli-vulnerability-affects-palo-alto-netwo"
-    ]
-  },
-  {
-    "slug": "zdi-26-811-mailenable-parseobjectresponse-xml-exte-3bedd6fd",
-    "title": "ZDI-26-811: MailEnable parseObjectResponse XML External Entity Processing Information Disclosure Vulnerability",
-    "summary": "A remote XML External Entity processing flaw in MailEnable’s parseObjectResponse component allows authenticated attackers to read sensitive data from affected installations. The vulnerability, identified as CVE-2026-114552, carries a CVSS score of 6.5 and requires valid credentials for exploitation. MailEnable has released a patch; administrators should apply the update immediately to mitigate the disclosure risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-811/",
-    "publishedAt": "2026-10-27T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-114552"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-811-mailenable-parseobjectresponse-xml-exte",
-      "article-3bedd6fd",
-      "3bedd6fd",
-      "zdi-26-811-mailenable-parseobjectresponse-xml-exte-6f3c97",
-      "zdi-26-811-mailenable-parseobjectresponse-xml-external-entit"
     ]
   }
 ];
