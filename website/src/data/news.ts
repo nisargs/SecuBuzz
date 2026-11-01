@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "north-korean-hackers-stole-6b-from-binance-c5f668e2",
+    "title": "North Korean Hackers Stole $6B from Binance",
+    "summary": "FBI confirmed North Korean hackers stole over $6 billion in virtual assets from Binance on October 29, 2026. The operation, dubbed 'TraderTraitor', links the theft to a series of attacks on digital asset platforms attributed to the same group. Security teams should monitor for related credential theft and apply multi‑factor authentication to mitigate further compromise.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fbi-confirms-north-korean-hackers/",
+    "publishedAt": "2026-11-01T05:48:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korean-hackers-stole-6b-from-binance",
+      "article-c5f668e2",
+      "c5f668e2",
+      "north-korean-hackers-stole-6b-from-binance-6afeb6"
+    ]
+  },
+  {
+    "slug": "wave-of-attacks-hits-php-binance-ai-tools-89104227",
+    "title": "Wave of Attacks Hits PHP, Binance, AI Tools",
+    "summary": "October saw a surge of cyberattacks targeting PHP, Binance, LiteLLM, and other high‑profile entities, including government records and grocery chains. The attacks exploited multiple vulnerabilities, with Binance reporting billions of unauthorized transactions, PHP issuing emergency patches, and a malicious LiteLLM release exposing developer credentials. Affected vendors released emergency fixes; security teams should apply patches promptly and monitor for credential compromise.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
+    "publishedAt": "2026-11-01T05:24:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wave-of-attacks-hits-php-binance-ai-tools",
+      "article-89104227",
+      "89104227",
+      "wave-of-attacks-hits-php-binance-ai-tools-47c5c5"
+    ]
+  },
+  {
     "slug": "rhsa-2026-90500-important-java-17-openjdk-security-6e4abd59",
     "title": "RHSA-2026:90500: Important: java-17-openjdk security update for RHEL 9",
     "summary": "An update for java-17-openjdk is now available for Red Hat Enterprise Linux 9.2 Extended Update Support, Red Hat Enterprise Linux 9.4 Extended Update Support, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important.",
@@ -183,6 +219,27 @@ export const news: NewsBrief[] = [
       "article-7bc6ac66",
       "7bc6ac66",
       "reddit-shifts-to-logged-in-service-model-5cc4b9"
+    ]
+  },
+  {
+    "slug": "chromium-fileapi-improper-input-validation-cve-202-83f47097",
+    "title": "Chromium FileAPI Improper Input Validation CVE-2026-118331",
+    "summary": "Chromium's FileAPI suffers from improper input validation, identified as CVE-2026-118331. The flaw allows attackers to supply malformed input that may lead to memory corruption or denial of service, though no active exploitation has been reported. Microsoft Edge, built on Chromium, incorporates the fix; users should update to the latest release to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118331",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118331"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-fileapi-improper-input-validation-cve-202",
+      "article-83f47097",
+      "83f47097",
+      "chromium-fileapi-improper-input-validation-cve-202-1fe91c",
+      "chromium-fileapi-improper-input-validation-cve-2026-118331"
     ]
   },
   {
@@ -3688,6 +3745,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-libx11-security-update-2140e0e2",
+    "title": "Red Hat Issues libX11 Security Update",
+    "summary": "Red Hat released a security update for libX11 on RHEL 9.8 EUS, addressing multiple vulnerabilities. The flaws carry an Important impact rating, with CVSS base scores via CVE links, indicating high severity and potential privilege escalation. Red Hat recommends applying the update immediately; no work‑arounds are published, and users should verify installation on affected systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91365",
+    "publishedAt": "2026-10-29T21:23:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libx11-security-update",
+      "article-2140e0e2",
+      "2140e0e2",
+      "red-hat-issues-libx11-security-update-37da1a"
+    ]
+  },
+  {
     "slug": "anthropic-themed-phishing-emails-evade-leading-ema-20b86650",
     "title": "Anthropic‑Themed Phishing Emails Evade Leading Email Gateways",
     "summary": "Phishing campaigns themed around Anthropic are bypassing several top secure email gateway products. The emails contain obvious red flags yet still reach inboxes, indicating gaps in current threat detection rules. Security teams should update gateway signatures and enable advanced threat protection to counter these deceptive messages.",
@@ -3723,6 +3798,25 @@ export const news: NewsBrief[] = [
       "448a5b8d",
       "hokuriku-telecommunications-deploys-arctic-wolf-ma-5e7cd7",
       "hokuriku-telecommunications-deploys-arctic-wolf-managed-edr"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-92798-important-perl-xml-libxml-security-a888d300",
+    "title": "RHSA-2026:92798: Important: perl-XML-LibXML security update",
+    "summary": "An update for perl-XML-LibXML is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92798",
+    "publishedAt": "2026-10-29T20:36:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-92798-important-perl-xml-libxml-security",
+      "article-a888d300",
+      "a888d300",
+      "rhsa-2026-92798-important-perl-xml-libxml-security-37d997",
+      "rhsa-2026-92798-important-perl-xml-libxml-security-update"
     ]
   },
   {
@@ -4048,6 +4142,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-releases-xcode-27-2-update-cc34ede3",
+    "title": "Apple Releases Xcode 27.2 Update",
+    "summary": "Apple released Xcode 27.2 (27B52) update for developers via the Apple Developer portal. Release notes list bug fixes, performance improvements, and no security vulnerabilities are disclosed in the current release. Security teams should review the notes, verify compatibility with existing toolchains, and monitor for any post‑release issues that may affect build pipelines.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=10292026a",
+    "publishedAt": "2026-10-29T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-xcode-27-2-update",
+      "article-cc34ede3",
+      "cc34ede3",
+      "apple-releases-xcode-27-2-update-72e60f"
+    ]
+  },
+  {
     "slug": "aws-private-ca-connector-authorization-flaw-enable-5dc6d510",
     "title": "AWS Private CA Connector authorization flaw enables cert issuance",
     "summary": "CVE-2026-119115 is an incorrect authorization issue in issuer resolution within AWS Private CA Connector for Kubernetes. An authenticated user with namespace-scoped approval policy could obtain certificates signed by a cluster-scoped issuer they are not authorized to use. Affected versions include aws-privateca-issuer before v1.10.1 and the EKS add-on before v1.10.1-eksbuild.1.",
@@ -4141,6 +4253,24 @@ export const news: NewsBrief[] = [
       "article-ad54bac2",
       "ad54bac2",
       "four-question-white-board-threat-modeling-5d78e7"
+    ]
+  },
+  {
+    "slug": "google-launches-chrome-beta-158-for-ios-acc7920d",
+    "title": "Google Launches Chrome Beta 158 for iOS",
+    "summary": "Google released Chrome Beta 158 (158.0.8127.4) for iOS, slated for App Store availability soon. The update includes a partial list of changes documented in the Git log, but no security patches are highlighted. Users and security teams should monitor the release notes, report any new issues via the bug‑tracking system, and verify compatibility with existing iOS deployments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-ios-update_01177603964.html",
+    "publishedAt": "2026-10-29T15:28:32.899Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-launches-chrome-beta-158-for-ios",
+      "article-acc7920d",
+      "acc7920d",
+      "google-launches-chrome-beta-158-for-ios-51d3f3"
     ]
   },
   {
@@ -4309,6 +4439,44 @@ export const news: NewsBrief[] = [
       "article-fd2610be",
       "fd2610be",
       "cohere-model-generates-malicious-shell-command-5a0df4"
+    ]
+  },
+  {
+    "slug": "malicious-firefox-extensions-steal-crypto-wallet-k-8dcc6b36",
+    "title": "Malicious Firefox Extensions Steal Crypto Wallet Keys",
+    "summary": "Malicious Firefox extensions masquerading as Phantom, Jupiter, and Bitget have been distributed to users. These extensions harvest crypto wallet recovery phrases and private keys, enabling attackers to access and transfer users' digital assets. Security teams should remove the compromised add‑ons immediately, enforce extension whitelisting, and advise users to reset wallet credentials.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/malicious-firefox-extensions-impersonate-popular-crypto-wallets",
+    "publishedAt": "2026-10-29T14:06:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-firefox-extensions-steal-crypto-wallet-k",
+      "article-8dcc6b36",
+      "8dcc6b36",
+      "malicious-firefox-extensions-steal-crypto-wallet-k-74023f",
+      "malicious-firefox-extensions-steal-crypto-wallet-keys"
+    ]
+  },
+  {
+    "slug": "siem-pricing-models-still-unsustainable-huntress-s-d0066942",
+    "title": "SIEM Pricing Models Still Unsustainable, Huntress Says",
+    "summary": "Huntress argues that SIEM solutions are still viable, but their high pricing models are unsustainable. The article outlines the need to transition from legacy pricing, highlights AI integration opportunities, and proposes a cost‑effective logging strategy. Security teams should evaluate current SIEM spend, explore AI‑driven alternatives, and adopt modular logging solutions to reduce overhead.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/reports-that-siem-is-dead-are-exaggerated",
+    "publishedAt": "2026-10-29T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siem-pricing-models-still-unsustainable-huntress-s",
+      "article-d0066942",
+      "d0066942",
+      "siem-pricing-models-still-unsustainable-huntress-s-7f8892",
+      "siem-pricing-models-still-unsustainable-huntress-says"
     ]
   },
   {
@@ -5247,6 +5415,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fbi-shutters-virtualine-bulletproof-hosting-platfo-66ac030f",
+    "title": "FBI Shutters Virtualine Bulletproof Hosting Platform",
+    "summary": "The Federal Bureau of Investigation seized infrastructure belonging to bulletproof hosting provider Virtualine to dismantle malicious operations. Telemetry and court findings indicate Virtualine provided bulletproof hosting services to conceal threat actor profiles and illegal activities from law enforcement. Security teams should review defensive controls and monitor networks for residual indicators associated with the seized threat infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/fbi-seizes-virtualine-domain-over-alleged-criminal-host",
+    "publishedAt": "2026-10-29T00:49:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-shutters-virtualine-bulletproof-hosting-platfo",
+      "article-66ac030f",
+      "66ac030f",
+      "fbi-shutters-virtualine-bulletproof-hosting-platfo-788c14",
+      "fbi-shutters-virtualine-bulletproof-hosting-platform"
+    ]
+  },
+  {
     "slug": "autonomous-ai-exploits-defend-against-zero-day-age-edd44767",
     "title": "Autonomous AI Exploits: Defend Against Zero‑Day Agents",
     "summary": "A zero‑day flaw, CVE-2026-33096, targets autonomous AI components in enterprise systems, enabling remote code execution. The defect permits attackers to inject malicious scripts through unvalidated AI input, with public telemetry indicating active exploitation and monitoring system logs for anomalous behavior. Patch the affected AI modules immediately and enforce strict input validation to prevent exploitation.",
@@ -5341,6 +5528,25 @@ export const news: NewsBrief[] = [
       "9314dd4a",
       "microsoft-edge-sandbox-escape-vulnerability-cve-20-3ca3c0",
       "microsoft-edge-sandbox-escape-vulnerability-cve-2026-45492"
+    ]
+  },
+  {
+    "slug": "google-one-tap-android-installation-feature-poses-d8756375",
+    "title": "Google One-Tap Android Installation Feature Poses Security Risks",
+    "summary": "Security researchers issued an intelligence alert highlighting security risks within Google One-Tap Android application installation mechanisms. Telemetry analysis indicates that flaw mechanisms could allow unauthorized application deployment or verification bypasses on targeted mobile devices. Administrators and users should deploy published patches immediately and implement recommended detection rules to hunt for malicious telemetry.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/google-to-allow-one-tap-android-app-installs-from-appro",
+    "publishedAt": "2026-10-29T00:48:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-one-tap-android-installation-feature-poses",
+      "article-d8756375",
+      "d8756375",
+      "google-one-tap-android-installation-feature-poses-891d61",
+      "google-one-tap-android-installation-feature-poses-security-r"
     ]
   },
   {
@@ -6525,223 +6731,6 @@ export const news: NewsBrief[] = [
       "86831fb1",
       "nist-roadmap-to-retire-quantum-vulnerable-encrypti-6711e9",
       "nist-roadmap-to-retire-quantum-vulnerable-encryption"
-    ]
-  },
-  {
-    "slug": "kroll-breach-analysis-reveals-data-stored-by-unkno-bd8434e1",
-    "title": "Kroll Breach Analysis Reveals Data Stored by Unknown Third‑Party Vendors",
-    "summary": "Kroll’s 2026 breach analysis shows that nearly 70% of affected individuals had their data stored by obscure third‑party vendors. The supply‑chain compromise exposed customer records across multiple organizations, yet no specific CVE or exploit was reported. Firms should audit external data handlers, enforce strict access controls, and deploy continuous monitoring to prevent similar breaches.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/28/kroll-third-party-data-breaches-insurance-claims-report/",
-    "publishedAt": "2026-10-28T05:00:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kroll-breach-analysis-reveals-data-stored-by-unkno",
-      "article-bd8434e1",
-      "bd8434e1",
-      "kroll-breach-analysis-reveals-data-stored-by-unkno-44b9df",
-      "kroll-breach-analysis-reveals-data-stored-by-unknown-third-p"
-    ]
-  },
-  {
-    "slug": "ai-guardrails-expose-security-vulnerabilities-7bed3277",
-    "title": "AI Guardrails Expose Security Vulnerabilities",
-    "summary": "Research examines how AI guardrails can inadvertently expose underlying software vulnerabilities during development and testing phases. The study highlights risks where automated validation systems may fail to detect or properly flag security flaws before code reaches production environments. Organizations should implement layered verification processes to catch gaps introduced by AI-assisted development workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/when-ai-guardrails-expose-vulnerabilities/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-guardrails-expose-security-vulnerabilities",
-      "article-7bed3277",
-      "7bed3277",
-      "ai-guardrails-expose-security-vulnerabilities-1fc4a6"
-    ]
-  },
-  {
-    "slug": "ultralytics-check-det-dataset-remote-code-executio-bb8f7e8a",
-    "title": "Ultralytics Check_det_dataset Remote Code Execution",
-    "summary": "A remote code execution flaw in Ultralytics’ check_det_dataset function lets attackers inject malicious code via code injection. Identified as CVE-2026-118614, the vulnerability has a CVSS score of 7.8 and needs user interaction, such as visiting a malicious page or opening a malicious file, to exploit. No patch has been released yet; security teams should monitor vendor advisories for updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-813/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118614"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ultralytics-check-det-dataset-remote-code-executio",
-      "article-bb8f7e8a",
-      "bb8f7e8a",
-      "ultralytics-check-det-dataset-remote-code-executio-6f3c97",
-      "ultralytics-check-det-dataset-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "ultralytics-torch-load-deserialization-rce-a2bae356",
-    "title": "Ultralytics Torch_load Deserialization RCE",
-    "summary": "A remote code execution vulnerability in Ultralytics’ torch_load function permits attackers to inject malicious code via deserialization. The flaw, CVE-2026-118613, scores 7.8 on CVSS and requires user interaction, such as opening a malicious file or visiting a malicious page, to exploit. No patch has been issued; teams should watch vendor advisories for remediation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-812/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118613"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ultralytics-torch-load-deserialization-rce",
-      "article-a2bae356",
-      "a2bae356",
-      "ultralytics-torch-load-deserialization-rce-6f3c97"
-    ]
-  },
-  {
-    "slug": "ultralytics-deserialization-vulnerability-enables-35abe077",
-    "title": "Ultralytics Deserialization Vulnerability Enables Remote Code Execution",
-    "summary": "A deserialization flaw in Ultralytics’ load_dataset_cache_file lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118617 carries a CVSS score of 7.8 and requires user interaction but grants full system compromise if exploited. Ultralytics released a patch updating load_dataset_cache_file; administrators should apply it immediately or disable the function to mitigate risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-816/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118617"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ultralytics-deserialization-vulnerability-enables",
-      "article-35abe077",
-      "35abe077",
-      "ultralytics-deserialization-vulnerability-enables-6f3c97",
-      "ultralytics-deserialization-vulnerability-enables-remote-cod"
-    ]
-  },
-  {
-    "slug": "ultralytics-parse-model-injection-allows-remote-co-42e88271",
-    "title": "Ultralytics parse_model Injection Allows Remote Code Execution",
-    "summary": "A code injection flaw in Ultralytics’ parse_model lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118616 has a CVSS score of 7.8, requires user interaction, and provides full system compromise if exploited. Ultralytics issued a patch for parse_model; administrators should apply it promptly or disable the function to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-815/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118616"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ultralytics-parse-model-injection-allows-remote-co",
-      "article-42e88271",
-      "42e88271",
-      "ultralytics-parse-model-injection-allows-remote-co-6f3c97",
-      "ultralytics-parse-model-injection-allows-remote-code-executi"
-    ]
-  },
-  {
-    "slug": "ultralytics-torch-safe-load-injection-enables-remo-f8f85cb6",
-    "title": "Ultralytics torch_safe_load Injection Enables Remote Code Execution",
-    "summary": "A command injection flaw in Ultralytics’ torch_safe_load lets remote attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-118615 carries a CVSS score of 7.8, requires user interaction, and grants full system compromise if exploited. Ultralytics released a patch updating torch_safe_load; administrators should apply it immediately or disable the function to mitigate risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-814/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118615"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ultralytics-torch-safe-load-injection-enables-remo",
-      "article-f8f85cb6",
-      "f8f85cb6",
-      "ultralytics-torch-safe-load-injection-enables-remo-6f3c97",
-      "ultralytics-torch-safe-load-injection-enables-remote-code-ex"
-    ]
-  },
-  {
-    "slug": "alpine-ilx-f511-ssh-hard-coded-credentials-rce-vul-7abe170a",
-    "title": "Alpine iLX-F511 SSH Hard-Coded Credentials RCE Vulnerability",
-    "summary": "A zero‑day flaw in Alpine iLX‑F511 SSH service permits network‑adjacent attackers to run arbitrary code without authentication. The vulnerability, identified as CVE‑2026‑118601, carries a CVSS score of 6.3 and exploits hard‑coded credentials in the SSH daemon. A vendor‑issued patch is available; security teams should apply the update immediately to eliminate the RCE risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-819/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "alpine-ilx-f511-ssh-hard-coded-credentials-rce-vul",
-      "article-7abe170a",
-      "7abe170a",
-      "alpine-ilx-f511-ssh-hard-coded-credentials-rce-vul-6f3c98",
-      "alpine-ilx-f511-ssh-hard-coded-credentials-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "ultralytics-google-drive-path-traversal-rce-vulner-cdc2dd87",
-    "title": "Ultralytics Google Drive Path Traversal RCE Vulnerability",
-    "summary": "A zero‑day path‑traversal flaw in Ultralytics Google Drive integration enables remote code execution when a user opens a malicious file. The vulnerability, CVE‑2026‑118619, scores 8.8 on CVSS and requires user interaction, making it a high‑severity threat for exposed systems. A patch is available; deploy it promptly and disable the vulnerable feature until remediation is complete.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-818/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ultralytics-google-drive-path-traversal-rce-vulner",
-      "article-cdc2dd87",
-      "cdc2dd87",
-      "ultralytics-google-drive-path-traversal-rce-vulner-6f3c98",
-      "ultralytics-google-drive-path-traversal-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "ultralytics-parse-model-code-injection-rce-vulnera-55d42197",
-    "title": "Ultralytics parse_model Code Injection RCE Vulnerability",
-    "summary": "A zero‑day code injection flaw in Ultralytics parse_model function permits remote code execution when a user opens a crafted file. The vulnerability, CVE‑2026‑118618, carries a CVSS score of 7.8 and requires user interaction, classifying it as a high‑severity threat. A patch is available; apply it immediately and disable parse_model until the fix is deployed.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-817/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ultralytics-parse-model-code-injection-rce-vulnera",
-      "article-55d42197",
-      "55d42197",
-      "ultralytics-parse-model-code-injection-rce-vulnera-6f3c98",
-      "ultralytics-parse-model-code-injection-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "alpine-ilx-f511-buffer-overflow-enables-physical-r-00797b47",
-    "title": "Alpine iLX‑F511 Buffer Overflow Enables Physical RCE",
-    "summary": "A stack‑based buffer overflow in Alpine iLX‑F511 Framework Service lets physically present attackers execute arbitrary code without authentication. CVE‑2026‑118604 carries a CVSS of 6.8, enabling remote code execution that could compromise device integrity and network traffic. Alpine released a patch addressing the overflow; apply it immediately and disable unused services to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-822/",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "alpine-ilx-f511-buffer-overflow-enables-physical-r",
-      "article-00797b47",
-      "00797b47",
-      "alpine-ilx-f511-buffer-overflow-enables-physical-r-6f3c9b",
-      "alpine-ilx-f511-buffer-overflow-enables-physical-rce"
     ]
   }
 ];
