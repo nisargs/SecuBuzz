@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 12:44:17 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 13:43:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Northstar Security Raises $7M to Map Risk Combinations</title>
@@ -168,6 +168,42 @@
       <pubDate>Sat, 31 Oct 2026 14:05:15 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Chromium Out-of-Bounds Write CVE-2026-118342 Fixed</title>
+      <link>https://secubuzz.com/news/chromium-out-of-bounds-write-cve-2026-118342-fixed-f8a08b34</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-out-of-bounds-write-cve-2026-118342-fixed-f8a08b34</guid>
+      <description><![CDATA[An out-of-bounds write flaw, CVE-2026-118342, was discovered in Chromium's Editing module, affecting Microsoft Edge (Chromium-based) browsers. The vulnerability allows memory corruption during text editing operations, potentially enabling arbitrary code execution if exploited, though no active exploitation reports exist. Microsoft Edge incorporates the Chromium patch, and users should update to the latest release via the Chrome update channel.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118342">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Improper Input Validation CVE-2026-118343 Resolved</title>
+      <link>https://secubuzz.com/news/chromium-improper-input-validation-cve-2026-118343-07261882</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-improper-input-validation-cve-2026-118343-07261882</guid>
+      <description><![CDATA[An improper input validation flaw, CVE-2026-118343, was identified in Chromium's ReadingList component, impacting Microsoft Edge (Chromium-based) browsers. The defect permits malformed list entries to bypass sanitization, potentially leading to memory corruption or denial-of-service if exploited, though no exploitation evidence is reported. Microsoft Edge includes the Chromium patch; users should install the latest update via the Chrome update channel.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118343">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Use-After-Free CVE-2026-118344 Fixed</title>
+      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-118344-fixed-7b8a0d93</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-118344-fixed-7b8a0d93</guid>
+      <description><![CDATA[A use-after-free vulnerability, CVE-2026-118344, was discovered in Chromium's Layout engine, affecting Microsoft Edge (Chromium-based) browsers. The flaw allows an attacker to trigger memory corruption during layout rendering, potentially enabling arbitrary code execution if exploited, though no active exploitation reports exist. Microsoft Edge incorporates the Chromium patch; users should update to the latest release via the Chrome update channel.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118344">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium PDFium Use-After-Free CVE-2026-118345</title>
+      <link>https://secubuzz.com/news/chromium-pdfium-use-after-free-cve-2026-118345-2d630412</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-pdfium-use-after-free-cve-2026-118345-2d630412</guid>
+      <description><![CDATA[A use‑after‑free flaw in Chromium’s PDFium engine, CVE‑2026‑118345, corrupts memory when parsing malicious PDFs, potentially enabling arbitrary code execution. The bug triggers on freed memory access, but no active exploitation has been observed. Microsoft Edge users receive the fix via Chromium updates; the patch is listed in Google Chrome release notes.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118345">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Chromium Animation Use‑After‑Free CVE‑2026‑118338</title>
@@ -420,42 +456,6 @@
       <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118311">Microsoft MSRC</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Edge Affected by CVE-2026-118317 HTML Memory Corruption</title>
-      <link>https://secubuzz.com/news/edge-affected-by-cve-2026-118317-html-memory-corru-d43c05a8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/edge-affected-by-cve-2026-118317-html-memory-corru-d43c05a8</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) is impacted by a memory corruption flaw in Chromium’s HTML component, identified as CVE-2026-118317. The vulnerability could enable arbitrary code execution when rendering a malicious HTML payload, but no public exploit has been disclosed. Microsoft recommends applying the latest Chromium update that contains the patch and ensuring Edge remains up‑to‑date to mitigate the issue.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118317">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium SVG Input Validation Flaw CVE-2026-118304</title>
-      <link>https://secubuzz.com/news/chromium-svg-input-validation-flaw-cve-2026-118304-95421beb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-svg-input-validation-flaw-cve-2026-118304-95421beb</guid>
-      <description><![CDATA[Chromium's SVG parser contains an improper input validation flaw identified as CVE-2026-118304. The vulnerability allows malformed SVG files to trigger unexpected behavior, potentially leading to memory corruption or denial‑of‑service, though no active exploitation has been reported. Google released a patch in the latest Chrome update; users should upgrade to the newest version to mitigate the risk.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118304">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Video Use-After-Free CVE-2026-118313</title>
-      <link>https://secubuzz.com/news/chromium-video-use-after-free-cve-2026-118313-3720cdf2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-video-use-after-free-cve-2026-118313-3720cdf2</guid>
-      <description><![CDATA[Chromium's video subsystem contains a use‑after‑free flaw identified as CVE-2026-118313. The defect can lead to memory corruption or denial‑of‑service when processing malformed video streams, but no active exploitation has been observed. Google released a patch in the latest Chrome update; users should upgrade to the newest version to mitigate the vulnerability.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118313">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Beginners Learn Cybersecurity Amid AI Report Overload</title>
-      <link>https://secubuzz.com/news/beginners-learn-cybersecurity-amid-ai-report-overl-774171d1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/beginners-learn-cybersecurity-amid-ai-report-overl-774171d1</guid>
-      <description><![CDATA[AI‑generated vulnerability reports are flooding bug bounty programs, complicating entry for aspiring security researchers. TryHackMe outlines practical skill‑building steps, responsible AI use, and reproducible testing methods to help novices produce credible findings. These resources aim to streamline the learning curve and ensure submissions meet program standards without relying on unverified AI outputs.]]></description>
-      <pubDate>Sat, 31 Oct 2026 13:10:19 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

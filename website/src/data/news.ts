@@ -355,6 +355,87 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-out-of-bounds-write-cve-2026-118342-fixed-f8a08b34",
+    "title": "Chromium Out-of-Bounds Write CVE-2026-118342 Fixed",
+    "summary": "An out-of-bounds write flaw, CVE-2026-118342, was discovered in Chromium's Editing module, affecting Microsoft Edge (Chromium-based) browsers. The vulnerability allows memory corruption during text editing operations, potentially enabling arbitrary code execution if exploited, though no active exploitation reports exist. Microsoft Edge incorporates the Chromium patch, and users should update to the latest release via the Chrome update channel.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118342",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118342"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-out-of-bounds-write-cve-2026-118342-fixed",
+      "article-f8a08b34",
+      "f8a08b34",
+      "chromium-out-of-bounds-write-cve-2026-118342-fixed-1fe91b"
+    ]
+  },
+  {
+    "slug": "chromium-improper-input-validation-cve-2026-118343-07261882",
+    "title": "Chromium Improper Input Validation CVE-2026-118343 Resolved",
+    "summary": "An improper input validation flaw, CVE-2026-118343, was identified in Chromium's ReadingList component, impacting Microsoft Edge (Chromium-based) browsers. The defect permits malformed list entries to bypass sanitization, potentially leading to memory corruption or denial-of-service if exploited, though no exploitation evidence is reported. Microsoft Edge includes the Chromium patch; users should install the latest update via the Chrome update channel.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118343",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118343"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-improper-input-validation-cve-2026-118343",
+      "article-07261882",
+      "07261882",
+      "chromium-improper-input-validation-cve-2026-118343-1fe91b",
+      "chromium-improper-input-validation-cve-2026-118343-resolved"
+    ]
+  },
+  {
+    "slug": "chromium-use-after-free-cve-2026-118344-fixed-7b8a0d93",
+    "title": "Chromium Use-After-Free CVE-2026-118344 Fixed",
+    "summary": "A use-after-free vulnerability, CVE-2026-118344, was discovered in Chromium's Layout engine, affecting Microsoft Edge (Chromium-based) browsers. The flaw allows an attacker to trigger memory corruption during layout rendering, potentially enabling arbitrary code execution if exploited, though no active exploitation reports exist. Microsoft Edge incorporates the Chromium patch; users should update to the latest release via the Chrome update channel.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118344",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118344"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-118344-fixed",
+      "article-7b8a0d93",
+      "7b8a0d93",
+      "chromium-use-after-free-cve-2026-118344-fixed-1fe91b"
+    ]
+  },
+  {
+    "slug": "chromium-pdfium-use-after-free-cve-2026-118345-2d630412",
+    "title": "Chromium PDFium Use-After-Free CVE-2026-118345",
+    "summary": "A use‑after‑free flaw in Chromium’s PDFium engine, CVE‑2026‑118345, corrupts memory when parsing malicious PDFs, potentially enabling arbitrary code execution. The bug triggers on freed memory access, but no active exploitation has been observed. Microsoft Edge users receive the fix via Chromium updates; the patch is listed in Google Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118345",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118345"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-pdfium-use-after-free-cve-2026-118345",
+      "article-2d630412",
+      "2d630412",
+      "chromium-pdfium-use-after-free-cve-2026-118345-1fe91b"
+    ]
+  },
+  {
     "slug": "chromium-animation-use-after-free-cve-2026-118338-0c3951e1",
     "title": "Chromium Animation Use‑After‑Free CVE‑2026‑118338",
     "summary": "A use‑after‑free flaw, CVE‑2026‑118338, exists in Chromium’s animation subsystem and can be triggered by malicious content in Microsoft Edge. The defect permits memory corruption that could lead to arbitrary code execution, but no active exploitation has been observed. Microsoft Edge includes the Chromium patch; users should update to Edge or apply the Chrome release to mitigate the risk.",
@@ -1878,6 +1959,24 @@ export const news: NewsBrief[] = [
       "article-2c38b719",
       "2c38b719",
       "red-hat-issues-critical-ipa-security-update-37d93d"
+    ]
+  },
+  {
+    "slug": "app-store-connect-release-notes-updated-09a0915f",
+    "title": "App Store Connect Release Notes Updated",
+    "summary": "Apple released an update to App Store Connect, as indicated by the new release notes. The update likely includes platform enhancements and bug fixes, though specific changes are not disclosed in the brief. Users should review the release notes and apply any recommended configuration changes to maintain compatibility and monitor for any reported issues.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=10302026a",
+    "publishedAt": "2026-10-30T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "app-store-connect-release-notes-updated",
+      "article-09a0915f",
+      "09a0915f",
+      "app-store-connect-release-notes-updated-678f52"
     ]
   },
   {
@@ -6625,101 +6724,6 @@ export const news: NewsBrief[] = [
       "a751cf0e",
       "volt-typhoon-employs-silent-train-zero-day-framewo-e7d5a3",
       "volt-typhoon-employs-silent-train-zero-day-framework"
-    ]
-  },
-  {
-    "slug": "microsoft-outlines-ciso-strategy-for-agentic-ai-er-5861cec4",
-    "title": "Microsoft Outlines CISO Strategy for Agentic AI Era",
-    "summary": "Microsoft published guidance for CISOs navigating the agentic AI era, identifying two core priorities: enabling innovation through identity and data guardrails, and modernizing defense against AI-powered threats. The advisory, authored by Aarti Borkar, frames the evolving security leadership role around balancing AI adoption with protective controls.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
-    "publishedAt": "2026-10-28T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-outlines-ciso-strategy-for-agentic-ai-er",
-      "article-5861cec4",
-      "5861cec4",
-      "microsoft-outlines-ciso-strategy-for-agentic-ai-er-2412d7",
-      "microsoft-outlines-ciso-strategy-for-agentic-ai-era"
-    ]
-  },
-  {
-    "slug": "aws-sdk-for-pandas-athena-result-tampering-flaw-9cc94e71",
-    "title": "AWS SDK for pandas Athena Result Tampering Flaw",
-    "summary": "AWS disclosed CVE-2026-118029 in the awswrangler library, where unverified ownership of the default Athena query result location permits data tampering. A remote user can read query results and alter returned data sets by pre-creating an S3 bucket at the default destination, bypassing ownership checks. Teams should upgrade awswrangler and verify S3 bucket ownership for Athena result destinations.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-153-aws/",
-    "publishedAt": "2026-10-28T15:40:38.000Z",
-    "cves": [
-      "CVE-2026-118029"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-sdk-for-pandas-athena-result-tampering-flaw",
-      "article-9cc94e71",
-      "9cc94e71",
-      "aws-sdk-for-pandas-athena-result-tampering-flaw-4f8e24"
-    ]
-  },
-  {
-    "slug": "healthcare-ai-adoption-outpaces-cybersecurity-prot-61674ffe",
-    "title": "Healthcare AI Adoption Outpaces Cybersecurity Protocols in Hospitals",
-    "summary": "Healthcare organizations are rapidly integrating artificial intelligence technologies into critical operational workflows, including patient intake forms and diagnostic cancer screenings. Rapid deployment across life-and-death medical environments has introduced operational security risks, as defensive cybersecurity controls lag behind implementation rates. Healthcare security teams must evaluate deployment vulnerabilities and institute baseline security controls before integrating artificial intelligence tools into clinical environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-root-hospital-corridors-raised-security-stakes",
-    "publishedAt": "2026-10-28T15:29:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "healthcare-ai-adoption-outpaces-cybersecurity-prot",
-      "article-61674ffe",
-      "61674ffe",
-      "healthcare-ai-adoption-outpaces-cybersecurity-prot-c2cd6d",
-      "healthcare-ai-adoption-outpaces-cybersecurity-protocols-in-h"
-    ]
-  },
-  {
-    "slug": "ai-adoption-in-soc-outpaces-expectations-70080574",
-    "title": "AI Adoption in SOC Outpaces Expectations",
-    "summary": "A Help Net Security analysis reports that security teams are adopting AI-driven automation in the SOC faster than industry observers anticipated. The author notes that compliance obligations, previously assumed to slow AI integration, have not impeded deployment pace. The finding suggests SOC operators are increasingly trusting AI to execute operational actions within security workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/28/exaforce-trust-in-ai-security/",
-    "publishedAt": "2026-10-28T15:25:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-adoption-in-soc-outpaces-expectations",
-      "article-70080574",
-      "70080574",
-      "ai-adoption-in-soc-outpaces-expectations-2bc3ae"
-    ]
-  },
-  {
-    "slug": "nefilim-ransomware-affiliate-sentenced-to-70-month-acd1a556",
-    "title": "Nefilim Ransomware Affiliate Sentenced to 70 Months",
-    "summary": "Artem Stryzhak, identified as a Ukrainian Hive and Nefilim ransomware affiliate, was sentenced to 70 months in US federal prison. He pleaded guilty to using Nefilim ransomware in attacks against victims. The prosecution represents a continued law enforcement effort targeting ransomware operators linked to the Hive ecosystem.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
-    "publishedAt": "2026-10-28T15:05:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nefilim-ransomware-affiliate-sentenced-to-70-month",
-      "article-acd1a556",
-      "acd1a556",
-      "nefilim-ransomware-affiliate-sentenced-to-70-month-211c3a",
-      "nefilim-ransomware-affiliate-sentenced-to-70-months"
     ]
   }
 ];
