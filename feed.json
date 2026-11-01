@@ -265,6 +265,38 @@
     "additionalSources": []
   },
   {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118352",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118352",
+    "title": "Chromium Memory Corruption CVE‑2026‑118352 Fixed",
+    "headline": "Chromium Memory Corruption CVE‑2026‑118352 Fixed",
+    "summary": "A memory corruption flaw (CVE‑2026‑118352) in Chromium’s cache handling can corrupt data when the browser processes malicious content. The out‑of‑bounds write could enable local code execution, but no public exploit is known. Microsoft Edge, built on Chromium, applies the same fix; users should update to the latest release or apply the Chrome patch.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "ingestedAt": "2026-11-01T15:43:38.532Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118352",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118353",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118353",
+    "title": "Chromium Use‑After‑Free CVE‑2026‑118353 Fixed",
+    "headline": "Chromium Use‑After‑Free CVE‑2026‑118353 Fixed",
+    "summary": "A use‑after‑free flaw (CVE‑2026‑118353) in Chromium’s Paint component can corrupt memory when rendering malicious images. The vulnerability could lead to local code execution, but no active exploitation has been reported. Microsoft Edge incorporates the same patch; users should update to the latest recent Edge release or apply the Chrome update.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "ingestedAt": "2026-11-01T15:43:38.532Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118353",
+    "additionalSources": []
+  },
+  {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118346",
     "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118346",
     "title": "Microsoft Edge Fixes Chromium Compositing Vulnerability",
@@ -2730,8 +2762,8 @@
     "sourceUrl": "https://cybernewsai.com/blog/attacker-tried-to-exploit-alpine-linux-s-gitlab-via-cvs",
     "title": "Alpine Linux Attempts Exploit CVE-2026-97229 on GitLab",
     "headline": "Alpine Linux Attempts Exploit CVE-2026-97229 on GitLab",
-    "summary": "An attacker attempted to exploit CVE-2026-97229, a CVSS 10.0 GitLab flaw, on the Alpine Linux project's own GitLab server. The vulnerability permits remote code execution via a crafted regular expression in CI configuration files, but Alpine reported no evidence of successful exploitation. GitLab has already released a patch; Alpine advises applying the fix and monitoring logs for anomalous CI activity.",
-    "category": "VULNERABILITY",
+    "summary": "Alpine Linux's development infrastructure faced an attempted exploitation of CVE-2026-97229 on its GitLab server on October 20-21. The flaw, a CVSS 10.0 remote code execution via a crafted regex in CI configuration files, could have allowed attackers to run arbitrary code. Alpine responded by rebuilding GitLab, resetting passwords, applying the official patch, and monitoring logs for anomalous CI activity.",
+    "category": "CVE",
     "severity": "CRITICAL",
     "source": "CyberNews AI",
     "publishedAt": "2026-10-30T00:15:33.000Z",
@@ -2740,6 +2772,10 @@
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/"
       }
     ],
     "cves": [
@@ -5080,35 +5116,6 @@
     "source": "Google Chrome Releases",
     "publishedAt": "2026-10-28T17:06:56.273Z",
     "url": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_01511209741.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
-    "title": "Sony ISP Breach Exposes 2.5 Million Records",
-    "headline": "Sony ISP Breach Exposes 2.5 Million Records",
-    "summary": "Sony Network Communications confirmed a breach that exposed approximately 2.5 million customer records, including personal data of current and former users. The compromise involved unauthorized access to Sony ISP subsidiary databases, potentially allowing attackers to harvest sensitive information. Sony has advised affected customers to monitor accounts and change credentials while deploying additional security controls.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-28T16:45:47.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
-    "title": "Logic Flaws Alone Cracked Microsoft Edge in Pwn2Own Win",
-    "headline": "Logic Flaws Alone Cracked Microsoft Edge in Pwn2Own Win",
-    "summary": "A chain of logic flaws, without memory corruption, can escape Microsoft Edge's sandbox via a malicious web page, running code outside the browser on Windows. Orange Tsai of DEVCORE published the full exploit chain on October 28 after it won $175,000 at Pwn2Own Berlin in May. Microsoft patched the Edge vulnerabilities the day after the contest.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-28T16:23:34.000Z",
-    "ingestedAt": "2026-11-01T04:44:50.546Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
     "additionalSources": []
   }
 ]
