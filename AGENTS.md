@@ -128,7 +128,7 @@
     - **Retry Preservation**: Rejected candidates are NEVER added to `seenUrls`, preserving them for retry on subsequent hourly AI runs.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.3 (Version Code 9 / OTA Active `01a189cd-0d01-7024-baa2-e2376ae06852` / Group `8019e07a-515f-4db4-a3d4-c7faf2b4ead6`):**
+- **Release v1.0.3 (Version Code 9 / OTA Active `01a194ca-1a2a-74cc-a9fc-b93d7ef7fd9b` / Group `b41ed095-de0a-4027-9548-ea1e2b4e104f` / Worker `0ae6ffd6-7ab7-48cb-897d-8a0d62587fab`):**
   - **Bookmark Persistence & Data Loss Prevention (`SavedArticlesContext.tsx`)**:
     - Replaced strict uppercase validators (`isArticleSeverity`, `isArticleCategory`) with permissive normalizers (`normalizeSeverity`, `normalizeCategory`), preventing Title Case advisories (e.g. `'Critical'`, `'High'`) from failing parsing.
     - Zero-overwrite startup safety: removed destructive `AsyncStorage.setItem(..., [])` overwrite on anomaly.
