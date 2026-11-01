@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 08:46:22 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 10:47:47 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>North Korean Hackers Stole $6B from Binance</title>
@@ -105,6 +105,24 @@
       <pubDate>Sat, 31 Oct 2026 14:05:15 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-118335 Improper Input Validation</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-118335-improper-input-validation-ffc95d36</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-118335-improper-input-validation-ffc95d36</guid>
+      <description><![CDATA[Chromium vulnerability CVE-2026-118335 allows improper input validation in metrics, potentially enabling attackers to inject malicious data. The flaw could lead to denial-of-service or information disclosure if exploited in a web context, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the corresponding patch from Google Chrome Releases.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118335">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium ANGLE Improper Input Validation CVE-2026-118329</title>
+      <link>https://secubuzz.com/news/chromium-angle-improper-input-validation-cve-2026-5de03e63</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-angle-improper-input-validation-cve-2026-5de03e63</guid>
+      <description><![CDATA[A CVE-2026-118329 flaw in Chromium’s ANGLE component allows improper input validation. The flaw permits malformed graphics data to bypass validation, potentially enabling memory corruption; CVSS score is 7.8, and a public PoC exists. Microsoft Edge users should install the latest Chromium update, and Chrome users can refer to Google Chrome Releases for patch details.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118329">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Chromium FileAPI Improper Input Validation CVE-2026-118331</title>
@@ -438,24 +456,6 @@
       <pubDate>Sat, 31 Oct 2026 05:33:41 GMT</pubDate>
       <source url="https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux Kernel TCP Use-After-Free CVE Exploitable</title>
-      <link>https://secubuzz.com/news/linux-kernel-tcp-use-after-free-cve-exploitable-40df4bc5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-tcp-use-after-free-cve-exploitable-40df4bc5</guid>
-      <description><![CDATA[AWS identified CVE-2026-98432, a use-after-free flaw in the Linux kernel IPv4 TCP handshake path affecting versions 4.4 and later. The flaw can trigger remote code execution during TCP connection establishment, posing a high risk to exposed services. Updated kernel packages for Amazon Linux 2 and 2023 are available; customers should apply patches and reboot, while managed services receive automatic updates.]]></description>
-      <pubDate>Sat, 31 Oct 2026 05:21:05 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%</title>
-      <link>https://secubuzz.com/news/cloudflare-reports-18-2-million-network-layer-ddos-dca31904</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-reports-18-2-million-network-layer-ddos-dca31904</guid>
-      <description><![CDATA[Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026.]]></description>
-      <pubDate>Sat, 31 Oct 2026 04:56:12 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html">The Hacker News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -222,6 +222,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-cve-2026-118335-improper-input-validation-ffc95d36",
+    "title": "Chromium CVE-2026-118335 Improper Input Validation",
+    "summary": "Chromium vulnerability CVE-2026-118335 allows improper input validation in metrics, potentially enabling attackers to inject malicious data. The flaw could lead to denial-of-service or information disclosure if exploited in a web context, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the corresponding patch from Google Chrome Releases.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118335",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118335"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-118335-improper-input-validation",
+      "article-ffc95d36",
+      "ffc95d36",
+      "chromium-cve-2026-118335-improper-input-validation-1fe91c"
+    ]
+  },
+  {
+    "slug": "chromium-angle-improper-input-validation-cve-2026-5de03e63",
+    "title": "Chromium ANGLE Improper Input Validation CVE-2026-118329",
+    "summary": "A CVE-2026-118329 flaw in Chromium’s ANGLE component allows improper input validation. The flaw permits malformed graphics data to bypass validation, potentially enabling memory corruption; CVSS score is 7.8, and a public PoC exists. Microsoft Edge users should install the latest Chromium update, and Chrome users can refer to Google Chrome Releases for patch details.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118329",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118329"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-angle-improper-input-validation-cve-2026",
+      "article-5de03e63",
+      "5de03e63",
+      "chromium-angle-improper-input-validation-cve-2026-1fe91c",
+      "chromium-angle-improper-input-validation-cve-2026-118329"
+    ]
+  },
+  {
     "slug": "chromium-fileapi-improper-input-validation-cve-202-83f47097",
     "title": "Chromium FileAPI Improper Input Validation CVE-2026-118331",
     "summary": "Chromium's FileAPI suffers from improper input validation, identified as CVE-2026-118331. The flaw allows attackers to supply malformed input that may lead to memory corruption or denial of service, though no active exploitation has been reported. Microsoft Edge, built on Chromium, incorporates the fix; users should update to the latest release to mitigate the risk.",
@@ -1165,6 +1206,24 @@ export const news: NewsBrief[] = [
       "article-5b555493",
       "5b555493",
       "fbi-seizes-virtualine-domain-33e3c7"
+    ]
+  },
+  {
+    "slug": "alert-fake-help-desk-calls-threaten-users-54126f80",
+    "title": "Alert: Fake Help Desk Calls Threaten Users",
+    "summary": "An alert warns of fake help desk calls posing as legitimate support. Attackers use social engineering to trick users into revealing credentials or installing malware. Security teams should monitor call patterns, enforce verification procedures, apply vendor patches, conduct employee training, and review logs for anomalies daily comprehensively regularly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/fake-it-help-desk-callers-got-by-on-little-more-than-na",
+    "publishedAt": "2026-10-31T02:00:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "alert-fake-help-desk-calls-threaten-users",
+      "article-54126f80",
+      "54126f80",
+      "alert-fake-help-desk-calls-threaten-users-3cd2a7"
     ]
   },
   {
@@ -3104,6 +3163,24 @@ export const news: NewsBrief[] = [
       "fba3a799",
       "linux-kernel-tcp-rce-cve-2026-98432-requires-immed-24ddca",
       "linux-kernel-tcp-rce-cve-2026-98432-requires-immediate-patch"
+    ]
+  },
+  {
+    "slug": "talos-report-rising-it-help-desk-vishing-26032eea",
+    "title": "Talos Report: Rising IT Help Desk Vishing",
+    "summary": "Cisco Talos Q3 incident report documents a rise in IT help desk vishing targeting organizations via remote monitoring and management tools. Attackers exploit RMM software to gain voice channel access, enabling credential theft and phishing. Security teams should audit RMM configurations, enforce strict identity verification, and strengthen voice security controls to mitigate the threat.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/ir-trends-q3-2026-actors-impersonate-it-help-desks-in-v",
+    "publishedAt": "2026-10-30T00:01:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "talos-report-rising-it-help-desk-vishing",
+      "article-26032eea",
+      "26032eea",
+      "talos-report-rising-it-help-desk-vishing-1993db"
     ]
   },
   {
@@ -5393,6 +5470,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cyberstrikeai-threats-44-agent-autonomous-attacks-b35a7933",
+    "title": "CyberStrikeAI Threats 44-Agent Autonomous Attacks",
+    "summary": "CyberStrikeAI orchestrates 44 autonomous agents that launch coordinated attacks across multiple vectors, including phishing, ransomware, and supply chain compromise. The agents exploit zero-day vulnerabilities and credential reuse to pivot within victim environments, causing widespread disruption and data exfiltration. Security teams should analyze telemetry, deploy detection rules, and apply vendor patches or mitigations to neutralize the threat before exploitation.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cyberstrikeai-uses-44-ai-agents-to-automate-hacking-ope",
+    "publishedAt": "2026-10-29T00:50:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyberstrikeai-threats-44-agent-autonomous-attacks",
+      "article-b35a7933",
+      "b35a7933",
+      "cyberstrikeai-threats-44-agent-autonomous-attacks-2dd8d0"
+    ]
+  },
+  {
     "slug": "adobe-commerce-polyshell-exploit-enables-store-att-ce225383",
     "title": "Adobe Commerce PolyShell Exploit Enables Store Attacks",
     "summary": "Adobe Commerce's PolyShell flaw (CVE-2026-111497) lets attackers run arbitrary code in the store front, threatening customer data. The vulnerability arises from insufficient input validation in the product import module, enabling remote code execution with a CVSS score of 9.5, and has been exploited. Adobe released a patch; teams should apply it immediately and monitor import activity to mitigate the risk.",
@@ -5492,6 +5587,24 @@ export const news: NewsBrief[] = [
       "edd44767",
       "autonomous-ai-exploits-defend-against-zero-day-age-48c497",
       "autonomous-ai-exploits-defend-against-zero-day-agents"
+    ]
+  },
+  {
+    "slug": "skyw4lker-phishing-targets-device-code-abuse-7fdae391",
+    "title": "Skyw4lker Phishing Targets Device Code Abuse",
+    "summary": "Skyw4lker phishing campaign targets device code abuse via malicious links embedded in seemingly legitimate emails. Attackers embed malicious payloads that exploit device code execution vulnerabilities, enabling credential theft and lateral movement across corporate networks. Security teams should deploy detection rules, review telemetry logs, and apply vendor patches or mitigations to block payload execution.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/american-organizations-under-attack-skyw4lker-device-co",
+    "publishedAt": "2026-10-29T00:49:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "skyw4lker-phishing-targets-device-code-abuse",
+      "article-7fdae391",
+      "7fdae391",
+      "skyw4lker-phishing-targets-device-code-abuse-4a91e9"
     ]
   },
   {
@@ -6617,120 +6730,6 @@ export const news: NewsBrief[] = [
       "article-b9deeaa7",
       "b9deeaa7",
       "eset-apt-activity-report-q2-q3-2026-7e07af"
-    ]
-  },
-  {
-    "slug": "anthropic-ai-model-discovers-browser-and-os-vulner-d17156b7",
-    "title": "Anthropic AI Model Discovers Browser and OS Vulnerabilities",
-    "summary": "An unreleased Anthropic AI model identified security flaws in Chrome, Safari, Windows, Linux, and Android and chained them into working proof-of-concept exploits. The exploits were generated in a lab environment after the model was prompted and were not observed in any real attack. Anthropic reported each flaw to the respective vendor first, ensuring all vulnerabilities are already patched.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
-    "publishedAt": "2026-10-28T08:15:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-ai-model-discovers-browser-and-os-vulner",
-      "article-d17156b7",
-      "d17156b7",
-      "anthropic-ai-model-discovers-browser-and-os-vulner-153764",
-      "anthropic-ai-model-discovers-browser-and-os-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "fbi-seizes-virtualine-bulletproof-hosting-domain-673bfa5d",
-    "title": "FBI Seizes Virtualine Bulletproof Hosting Domain",
-    "summary": "The U.S. Department of Justice seized a domain associated with Virtualine, a bulletproof hosting provider facilitating criminal activity including the advertisement of sexually explicit images of minors and intentional disclosure of nonconsensual intimate visual depictions. The seizure targets infrastructure used to host and promote child sexual abuse material online.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
-    "publishedAt": "2026-10-28T07:37:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-virtualine-bulletproof-hosting-domain",
-      "article-673bfa5d",
-      "673bfa5d",
-      "fbi-seizes-virtualine-bulletproof-hosting-domain-48ad46"
-    ]
-  },
-  {
-    "slug": "gmo-internet-offers-1m-bounty-for-fx-cloud-breach-c412143f",
-    "title": "GMO Internet Offers $1M Bounty for FX Cloud Breach Attacker",
-    "summary": "Japan's GMO Internet Group is offering up to $1 million for tips leading to arrest or an international wanted notice regarding attackers who breached its Onamae.com Desktop Cloud service. The service hosts Windows desktops used for FX trading, and GMO refused to pay an extortion demand. The reward program opened on October 28.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
-    "publishedAt": "2026-10-28T07:13:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gmo-internet-offers-1m-bounty-for-fx-cloud-breach",
-      "article-c412143f",
-      "c412143f",
-      "gmo-internet-offers-1m-bounty-for-fx-cloud-breach-688222",
-      "gmo-internet-offers-1m-bounty-for-fx-cloud-breach-attacker"
-    ]
-  },
-  {
-    "slug": "tailscale-patches-ssh-flaws-granting-unauthorized-fec240fa",
-    "title": "Tailscale Patches SSH Flaws Granting Unauthorized Root Access",
-    "summary": "Tailscale patched a security vulnerability in its built-in SSH server tracked under identifier CVE-2026-111585. The flaw stems from improper handling of forwarded network connections within background processes operating with elevated root privileges across interconnected systems. Security teams should upgrade Tailscale deployments to version 1.104.4 or higher to prevent attackers from accessing restricted server files.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html",
-    "publishedAt": "2026-10-28T06:20:37.000Z",
-    "cves": [
-      "CVE-2026-111585"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "tailscale-patches-ssh-flaws-granting-unauthorized",
-      "article-fec240fa",
-      "fec240fa",
-      "tailscale-patches-ssh-flaws-granting-unauthorized-6624a8",
-      "tailscale-patches-ssh-flaws-granting-unauthorized-root-acces"
-    ]
-  },
-  {
-    "slug": "oracle-peoplesoft-zero-day-is-three-chained-flaws-7178f5b5",
-    "title": "Oracle PeopleSoft Zero-Day Is Three Chained Flaws",
-    "summary": "Oracle PeopleSoft suffered a zero‑day exploit comprising three chained SSRF flaws that let attackers reach an internal management interface via the trusted loopback address. The flaws, CVE‑2026‑35273, were patched by Oracle in June, yet the exploit persisted until May. Teams should apply the June patch immediately and confirm internal interfaces are no longer reachable externally.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
-    "publishedAt": "2026-10-28T06:04:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-peoplesoft-zero-day-is-three-chained-flaws",
-      "article-7178f5b5",
-      "7178f5b5",
-      "oracle-peoplesoft-zero-day-is-three-chained-flaws-773949"
-    ]
-  },
-  {
-    "slug": "interpol-s-operation-serengeti-nets-1-462-arrests-88906cac",
-    "title": "Interpol’s Operation Serengeti Nets 1,462 Arrests and $105M Recovery",
-    "summary": "Interpol's Operation Serengeti, now in its third iteration, resulted in 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds. The crackdown demonstrates international cooperation against cybercrime syndicates that funnel illicit proceeds into global financial systems. Law enforcement agencies should continue joint investigations, share threat intelligence, and enforce asset forfeiture to disrupt future operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
-    "publishedAt": "2026-10-28T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "interpol-s-operation-serengeti-nets-1-462-arrests",
-      "article-88906cac",
-      "88906cac",
-      "interpol-s-operation-serengeti-nets-1-462-arrests-130710",
-      "interpol-s-operation-serengeti-nets-1-462-arrests-and-105m-r"
     ]
   }
 ];
