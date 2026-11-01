@@ -2246,6 +2246,25 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybernewsai.com/blog/adobe-veeam-juniper-networks-patch-critical-vulnerabili",
+    "sourceUrl": "https://cybernewsai.com/blog/adobe-veeam-juniper-networks-patch-critical-vulnerabili",
+    "title": "Adobe, Veeam, Juniper: How to Detect & Patch Critical Flaws",
+    "headline": "Adobe, Veeam, Juniper: How to Detect & Patch Critical Flaws",
+    "summary": "Critical multi-vendor security advisory for Adobe, Veeam, and Juniper. Review root-cause telemetry, hunt via Sigma rules, and apply security hotfixes today. (Corroborated Threat Intelligence: Associated CVE is CVE-2026-97229).",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-30T00:25:05.000Z",
+    "ingestedAt": "2026-11-01T08:44:41.525Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:92323",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92323",
     "title": "Expat Update Mitigates Important Security Flaw",
@@ -2816,6 +2835,23 @@
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:91056",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:91580",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91580",
+    "title": "RHSA-2026:91580: Important: webkit2gtk3 security update",
+    "headline": "RHSA-2026:91580: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T21:23:10.000Z",
+    "ingestedAt": "2026-11-01T08:44:07.872Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:91365",
@@ -4998,32 +5034,6 @@
     "source": "Dark Reading",
     "publishedAt": "2026-10-28T06:00:00.000Z",
     "url": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-    "title": "Adobe Commerce PolyShell Breaches Stores via Brotli Exploit",
-    "headline": "Adobe Commerce PolyShell Breaches Stores via Brotli Exploit",
-    "summary": "CISA added CVE-2026-111497 (CVSS 9.2) and a Brotli decoder vulnerability to its Known Exploited Vulnerabilities catalog, citing active exploitation evidence against Adobe Commerce and Magento deployments. The unchecked return value flaw enables attackers to execute arbitrary code within affected storefronts, compromising hundreds of e-commerce installations.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-28T05:42:26.000Z",
-    "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/28/nist-post-quantum-cryptography-migration-roadmap/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/28/nist-post-quantum-cryptography-migration-roadmap/",
-    "title": "NIST Roadmap to Retire Quantum‑Vulnerable Encryption",
-    "headline": "NIST Roadmap to Retire Quantum‑Vulnerable Encryption",
-    "summary": "NIST released a roadmap to retire quantum‑vulnerable encryption, targeting sensitive federal systems with earlier deadlines. The plan identifies legacy cryptographic algorithms that are susceptible to quantum attacks and outlines transition milestones, but no specific CVE is cited. Organizations should begin migrating to post‑quantum algorithms per NIST IR 8547, applying recommended updates and monitoring compliance.",
-    "category": "VULNERABILITY",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-28T05:30:29.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/28/nist-post-quantum-cryptography-migration-roadmap/",
     "additionalSources": []
   }
 ]

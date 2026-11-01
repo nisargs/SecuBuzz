@@ -3021,6 +3021,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "adobe-veeam-juniper-how-to-detect-patch-critical-f-e4a555d1",
+    "title": "Adobe, Veeam, Juniper: How to Detect & Patch Critical Flaws",
+    "summary": "Critical multi-vendor security advisory for Adobe, Veeam, and Juniper. Review root-cause telemetry, hunt via Sigma rules, and apply security hotfixes today. (Corroborated Threat Intelligence: Associated CVE is CVE-2026-97229).",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/adobe-veeam-juniper-networks-patch-critical-vulnerabili",
+    "publishedAt": "2026-10-30T00:25:05.000Z",
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-veeam-juniper-how-to-detect-patch-critical-f",
+      "article-e4a555d1",
+      "e4a555d1",
+      "adobe-veeam-juniper-how-to-detect-patch-critical-f-568a47",
+      "adobe-veeam-juniper-how-to-detect-patch-critical-flaws"
+    ]
+  },
+  {
     "slug": "expat-update-mitigates-important-security-flaw-e9c81b3d",
     "title": "Expat Update Mitigates Important Security Flaw",
     "summary": "Red Hat Enterprise Linux 8 users must address a critical flaw in the expat XML parser that could enable attackers to execute arbitrary code. Red Hat Product Security rates the issue as Important, indicating a high CVSS score and potential for remote code execution without authentication. The vendor has released a patch; system administrators should apply it to prevent exploitation.",
@@ -3742,6 +3763,25 @@ export const news: NewsBrief[] = [
       "article-a159aa60",
       "a159aa60",
       "rhel9-libxi-moderate-security-update-37da26"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-91580-important-webkit2gtk3-security-upd-145e4a43",
+    "title": "RHSA-2026:91580: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91580",
+    "publishedAt": "2026-10-29T21:23:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-91580-important-webkit2gtk3-security-upd",
+      "article-145e4a43",
+      "145e4a43",
+      "rhsa-2026-91580-important-webkit2gtk3-security-upd-37da13",
+      "rhsa-2026-91580-important-webkit2gtk3-security-update"
     ]
   },
   {
@@ -6691,46 +6731,6 @@ export const news: NewsBrief[] = [
       "88906cac",
       "interpol-s-operation-serengeti-nets-1-462-arrests-130710",
       "interpol-s-operation-serengeti-nets-1-462-arrests-and-105m-r"
-    ]
-  },
-  {
-    "slug": "adobe-commerce-polyshell-breaches-stores-via-brotl-aafb7276",
-    "title": "Adobe Commerce PolyShell Breaches Stores via Brotli Exploit",
-    "summary": "CISA added CVE-2026-111497 (CVSS 9.2) and a Brotli decoder vulnerability to its Known Exploited Vulnerabilities catalog, citing active exploitation evidence against Adobe Commerce and Magento deployments. The unchecked return value flaw enables attackers to execute arbitrary code within affected storefronts, compromising hundreds of e-commerce installations.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-    "publishedAt": "2026-10-28T05:42:26.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "adobe-commerce-polyshell-breaches-stores-via-brotl",
-      "article-aafb7276",
-      "aafb7276",
-      "adobe-commerce-polyshell-breaches-stores-via-brotl-106c58",
-      "adobe-commerce-polyshell-breaches-stores-via-brotli-exploit"
-    ]
-  },
-  {
-    "slug": "nist-roadmap-to-retire-quantum-vulnerable-encrypti-86831fb1",
-    "title": "NIST Roadmap to Retire Quantum‑Vulnerable Encryption",
-    "summary": "NIST released a roadmap to retire quantum‑vulnerable encryption, targeting sensitive federal systems with earlier deadlines. The plan identifies legacy cryptographic algorithms that are susceptible to quantum attacks and outlines transition milestones, but no specific CVE is cited. Organizations should begin migrating to post‑quantum algorithms per NIST IR 8547, applying recommended updates and monitoring compliance.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/28/nist-post-quantum-cryptography-migration-roadmap/",
-    "publishedAt": "2026-10-28T05:30:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nist-roadmap-to-retire-quantum-vulnerable-encrypti",
-      "article-86831fb1",
-      "86831fb1",
-      "nist-roadmap-to-retire-quantum-vulnerable-encrypti-6711e9",
-      "nist-roadmap-to-retire-quantum-vulnerable-encryption"
     ]
   }
 ];
