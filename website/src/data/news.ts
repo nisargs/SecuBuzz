@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "police-bust-cyber-syndicate-operators-16d63d38",
+    "title": "Police Bust Cyber Syndicate Operators",
+    "summary": "Law enforcement agencies dismantled the Cyber Syndicate, arresting key operators involved in coordinated cybercrime. Court filings detail the group’s use of phishing, credential theft, and ransomware delivery tactics, with profiles indicating a structured, financially motivated operation. Security teams should review the disclosed defensive controls, including multi‑factor authentication, email filtering, and endpoint detection, to mitigate similar threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/fbi-links-north-korea-s-tradertraitor-to-record-6-43-bi",
+    "publishedAt": "2026-11-01T15:31:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "police-bust-cyber-syndicate-operators",
+      "article-16d63d38",
+      "16d63d38",
+      "police-bust-cyber-syndicate-operators-2f48de"
+    ]
+  },
+  {
     "slug": "northstar-security-raises-7m-to-map-risk-combinati-7389d5f3",
     "title": "Northstar Security Raises $7M to Map Risk Combinations",
     "summary": "Northstar Security has secured $7 million to develop a platform that maps identities, assets, and vulnerabilities to identify toxic risk combinations. The solution employs AI agents that scan for interdependencies and automatically suggest remediation steps for high‑impact combinations. Security teams can integrate the platform into existing workflows to proactively mitigate compound vulnerabilities before exploitation.",
@@ -352,6 +370,83 @@ export const news: NewsBrief[] = [
       "article-7bc6ac66",
       "7bc6ac66",
       "reddit-shifts-to-logged-in-service-model-5cc4b9"
+    ]
+  },
+  {
+    "slug": "edge-addresses-cve-2026-118350-use-after-free-8f6c0f2a",
+    "title": "Edge Addresses CVE‑2026‑118350 Use‑After‑Free",
+    "summary": "A use‑after‑free flaw in Chromium’s Turbolev component, CVE‑2026‑118350, can corrupt memory during image rendering. The defect stems from improper handling of freed memory in image decoding, potentially enabling code execution if exploited; no public exploit is known. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118350",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "edge-addresses-cve-2026-118350-use-after-free",
+      "article-8f6c0f2a",
+      "8f6c0f2a",
+      "edge-addresses-cve-2026-118350-use-after-free-1fe91b"
+    ]
+  },
+  {
+    "slug": "edge-addresses-cve-2026-118351-skia-memory-corrupt-674334b9",
+    "title": "Edge Addresses CVE‑2026‑118351 Skia Memory Corruption",
+    "summary": "A memory corruption vulnerability in Chromium’s Skia graphics library, CVE‑2026‑118351, can affect rendering of web content. The flaw arises from improper bounds checking during image processing, potentially allowing arbitrary code execution if exploited; no public exploit is documented. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118351",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "edge-addresses-cve-2026-118351-skia-memory-corrupt",
+      "article-674334b9",
+      "674334b9",
+      "edge-addresses-cve-2026-118351-skia-memory-corrupt-1fe91b",
+      "edge-addresses-cve-2026-118351-skia-memory-corruption"
+    ]
+  },
+  {
+    "slug": "edge-addresses-cve-2026-118354-skia-input-validati-5adcb943",
+    "title": "Edge Addresses CVE‑2026‑118354 Skia Input Validation",
+    "summary": "An improper input validation flaw in Chromium’s Skia library, CVE‑2026‑118354, can lead to memory corruption during image rendering. The vulnerability arises from unchecked bounds on image data, potentially enabling arbitrary code execution if exploited; no public exploit is reported. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118354",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "edge-addresses-cve-2026-118354-skia-input-validati",
+      "article-5adcb943",
+      "5adcb943",
+      "edge-addresses-cve-2026-118354-skia-input-validati-1fe91b",
+      "edge-addresses-cve-2026-118354-skia-input-validation"
+    ]
+  },
+  {
+    "slug": "chromium-improper-input-validation-vulnerability-c-f6e32aa1",
+    "title": "Chromium Improper Input Validation Vulnerability CVE-2026-118355",
+    "summary": "A CVE-2026-118355 flaw in Chromium’s command parsing lets attackers supply malformed input that bypasses validation. The flaw stems from input validation in command, enabling execution if exploited; no public PoC yet, CVSS 8.7 signals high risk. Microsoft recommends updating to Edge release that incorporates the Chromium patch; monitor Google Chrome releases for the fix.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118355",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118355"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-improper-input-validation-vulnerability-c",
+      "article-f6e32aa1",
+      "f6e32aa1",
+      "chromium-improper-input-validation-vulnerability-c-1fe91b",
+      "chromium-improper-input-validation-vulnerability-cve-2026-11"
     ]
   },
   {
@@ -6645,100 +6740,6 @@ export const news: NewsBrief[] = [
       "article-286af9f9",
       "286af9f9",
       "offsec-releases-free-php2shell-exploitation-lab-17a67c"
-    ]
-  },
-  {
-    "slug": "google-advances-chrome-158-desktop-update-to-beta-de6c7048",
-    "title": "Google Advances Chrome 158 Desktop Update to Beta Channel",
-    "summary": "Google released Chrome 158.0.8127.2 to the Beta channel for Windows, Mac, and Linux platforms. The update incorporates routine under-the-hood performance optimizations, stability adjustments, and introductory software features across desktop environments. Users can switch release channels or submit bug reports through the Chromium community help forum and Git log documentation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-desktop-update_088570753.html",
-    "publishedAt": "2026-10-28T17:28:33.476Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-advances-chrome-158-desktop-update-to-beta",
-      "article-de6c7048",
-      "de6c7048",
-      "google-advances-chrome-158-desktop-update-to-beta-5426e3",
-      "google-advances-chrome-158-desktop-update-to-beta-channel"
-    ]
-  },
-  {
-    "slug": "zero-click-telegram-sticker-flaw-enables-ios-code-2443f557",
-    "title": "Zero-Click Telegram Sticker Flaw Enables iOS Code Execution",
-    "summary": "Security researcher Saifeldeen Aziz disclosed new zero-click vulnerabilities in Telegram stickers that bypass server-side validation checks. He chained the flaws to achieve arbitrary code execution on iOS devices, demonstrating a complete attack path without user interaction. The research was scheduled for presentation at OffensiveCon in Tokyo on October 28, 2026",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/0-click-flaw-in-telegram-stickers/",
-    "publishedAt": "2026-10-28T17:15:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zero-click-telegram-sticker-flaw-enables-ios-code",
-      "article-2443f557",
-      "2443f557",
-      "zero-click-telegram-sticker-flaw-enables-ios-code-2356c5",
-      "zero-click-telegram-sticker-flaw-enables-ios-code-execution"
-    ]
-  },
-  {
-    "slug": "github-ships-npm-package-firewall-for-pre-install-c6ff4160",
-    "title": "GitHub Ships npm Package Firewall for Pre-Install Scanning",
-    "summary": "GitHub announced a package firewall that evaluates npm packages against enterprise policy before installation, blocking known malware, critical vulnerabilities, and brand-new versions. The checks execute before a package reaches a developer laptop, build pipeline, or coding agent. Any developer can enable the firewall by pointing npm at it, part of four security additions addressing AI-accelerated software development",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/28/github-package-firewall-npm/",
-    "publishedAt": "2026-10-28T17:09:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-ships-npm-package-firewall-for-pre-install",
-      "article-c6ff4160",
-      "c6ff4160",
-      "github-ships-npm-package-firewall-for-pre-install-3a9011",
-      "github-ships-npm-package-firewall-for-pre-install-scanning"
-    ]
-  },
-  {
-    "slug": "google-enables-one-tap-installs-for-approved-third-9f0a3f98",
-    "title": "Google Enables One-Tap Installs for Approved Third-Party Stores",
-    "summary": "Google is enabling approved third-party Android app stores outside the U.S. to offer one-tap installs and background updates, bypassing confirmation screens. Stores must pass identity checks and submit their full catalog and every update to Google for ongoing malware scanning. The feature becomes available to qualifying stores starting December 1, expanding sideloading while retaining centralized security review.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
-    "publishedAt": "2026-10-28T17:08:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-enables-one-tap-installs-for-approved-third",
-      "article-9f0a3f98",
-      "9f0a3f98",
-      "google-enables-one-tap-installs-for-approved-third-14b753",
-      "google-enables-one-tap-installs-for-approved-third-party-sto"
-    ]
-  },
-  {
-    "slug": "chrome-157-released-for-android-247641ef",
-    "title": "Chrome 157 Released for Android",
-    "summary": "Chrome 157 (157.0.8103.30) has been rolled out to a small percentage of Android users, with full availability expected on Google Play in the coming days. The update focuses on stability and performance enhancements, with detailed changes documented in the Git log. Users encountering issues should file bugs through the provided channels.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_01511209741.html",
-    "publishedAt": "2026-10-28T17:06:56.273Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-157-released-for-android",
-      "article-247641ef",
-      "247641ef",
-      "chrome-157-released-for-android-5c6d27"
     ]
   }
 ];

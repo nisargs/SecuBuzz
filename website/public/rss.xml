@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 15:44:32 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 16:20:03 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Police Bust Cyber Syndicate Operators</title>
+      <link>https://secubuzz.com/news/police-bust-cyber-syndicate-operators-16d63d38</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/police-bust-cyber-syndicate-operators-16d63d38</guid>
+      <description><![CDATA[Law enforcement agencies dismantled the Cyber Syndicate, arresting key operators involved in coordinated cybercrime. Court filings detail the group’s use of phishing, credential theft, and ransomware delivery tactics, with profiles indicating a structured, financially motivated operation. Security teams should review the disclosed defensive controls, including multi‑factor authentication, email filtering, and endpoint detection, to mitigate similar threats.]]></description>
+      <pubDate>Sun, 01 Nov 2026 15:31:35 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/fbi-links-north-korea-s-tradertraitor-to-record-6-43-bi">CyberNews AI</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Northstar Security Raises $7M to Map Risk Combinations</title>
       <link>https://secubuzz.com/news/northstar-security-raises-7m-to-map-risk-combinati-7389d5f3</link>
@@ -168,6 +177,42 @@
       <pubDate>Sat, 31 Oct 2026 14:05:15 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Edge Addresses CVE‑2026‑118350 Use‑After‑Free</title>
+      <link>https://secubuzz.com/news/edge-addresses-cve-2026-118350-use-after-free-8f6c0f2a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-cve-2026-118350-use-after-free-8f6c0f2a</guid>
+      <description><![CDATA[A use‑after‑free flaw in Chromium’s Turbolev component, CVE‑2026‑118350, can corrupt memory during image rendering. The defect stems from improper handling of freed memory in image decoding, potentially enabling code execution if exploited; no public exploit is known. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118350">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Edge Addresses CVE‑2026‑118351 Skia Memory Corruption</title>
+      <link>https://secubuzz.com/news/edge-addresses-cve-2026-118351-skia-memory-corrupt-674334b9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-cve-2026-118351-skia-memory-corrupt-674334b9</guid>
+      <description><![CDATA[A memory corruption vulnerability in Chromium’s Skia graphics library, CVE‑2026‑118351, can affect rendering of web content. The flaw arises from improper bounds checking during image processing, potentially allowing arbitrary code execution if exploited; no public exploit is documented. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118351">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Edge Addresses CVE‑2026‑118354 Skia Input Validation</title>
+      <link>https://secubuzz.com/news/edge-addresses-cve-2026-118354-skia-input-validati-5adcb943</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-cve-2026-118354-skia-input-validati-5adcb943</guid>
+      <description><![CDATA[An improper input validation flaw in Chromium’s Skia library, CVE‑2026‑118354, can lead to memory corruption during image rendering. The vulnerability arises from unchecked bounds on image data, potentially enabling arbitrary code execution if exploited; no public exploit is reported. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118354">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Improper Input Validation Vulnerability CVE-2026-118355</title>
+      <link>https://secubuzz.com/news/chromium-improper-input-validation-vulnerability-c-f6e32aa1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-improper-input-validation-vulnerability-c-f6e32aa1</guid>
+      <description><![CDATA[A CVE-2026-118355 flaw in Chromium’s command parsing lets attackers supply malformed input that bypasses validation. The flaw stems from input validation in command, enabling execution if exploited; no public PoC yet, CVSS 8.7 signals high risk. Microsoft recommends updating to Edge release that incorporates the Chromium patch; monitor Google Chrome releases for the fix.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118355">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Chromium Memory Corruption CVE‑2026‑118352 Fixed</title>
@@ -410,51 +455,6 @@
       <description><![CDATA[Microsoft Edge (Chromium-based) is affected by CVE-2026-118328, an improper input validation flaw in Chromium’s WebRTC. The defect allows malformed data to bypass checks, potentially causing memory corruption or denial of service, though no active exploitation has been reported. Microsoft has fixed the issue in its Chromium base; users should update to the latest Edge release or apply the Chrome patch.]]></description>
       <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118328">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium FileSystem Memory Corruption CVE-2026-118306</title>
-      <link>https://secubuzz.com/news/chromium-filesystem-memory-corruption-cve-2026-118-69e77aef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-filesystem-memory-corruption-cve-2026-118-69e77aef</guid>
-      <description><![CDATA[CVE‑2026‑118306 is a memory corruption flaw in Chromium’s FileSystem module that can corrupt data when Edge processes malformed paths. The bug arises from unchecked buffer handling during file metadata parsing, allowing local privilege escalation. Microsoft released an update that incorporates Chrome’s patch; users should install the latest Edge or apply the Chromium update to mitigate.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Skia Memory Corruption CVE-2026-118319</title>
-      <link>https://secubuzz.com/news/chromium-skia-memory-corruption-cve-2026-118319-8d3fe687</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-skia-memory-corruption-cve-2026-118319-8d3fe687</guid>
-      <description><![CDATA[CVE‑2026‑118319 is a memory corruption flaw in Chromium’s Skia library that can corrupt rendering data when Edge processes malformed images. The defect originates from unchecked bounds checks during image decoding, potentially enabling local privilege escalation. Microsoft incorporated Chrome’s patch in an Edge update; users should install the latest version or apply the Chromium update.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Memory Corruption CVE-2026-118305 Fixed</title>
-      <link>https://secubuzz.com/news/chromium-memory-corruption-cve-2026-118305-fixed-94a29281</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-memory-corruption-cve-2026-118305-fixed-94a29281</guid>
-      <description><![CDATA[A memory corruption flaw (CVE-2026-118305) in Chromium's Turbolev component can be triggered by malformed input during rendering. The vulnerability allows local code execution if an attacker supplies crafted data, but no active exploitation has been reported. Microsoft Edge users should install the latest Chromium update, and Chrome users can apply the patch released in the 2026 update cycle.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118305">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Paint Use-After-Free CVE-2026-118307 Fixed</title>
-      <link>https://secubuzz.com/news/chromium-paint-use-after-free-cve-2026-118307-fixe-8c1c5b1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-paint-use-after-free-cve-2026-118307-fixe-8c1c5b1c</guid>
-      <description><![CDATA[A use-after-free flaw (CVE-2026-118307) in Chromium's Paint engine can be triggered by maliciously crafted graphics files. The defect may lead to arbitrary code execution if an attacker supplies a specially crafted image, though no public exploits are known. Edge and Chrome users should apply the latest Chromium patch, which resolves the use-after-free vulnerability in the Paint module.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118307">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium SVG Use-After-Free CVE-2026-118308</title>
-      <link>https://secubuzz.com/news/chromium-svg-use-after-free-cve-2026-118308-af2a1f21</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-svg-use-after-free-cve-2026-118308-af2a1f21</guid>
-      <description><![CDATA[A use‑after‑free flaw in Chromium’s SVG engine, CVE‑2026‑118308, can be triggered by crafted SVG files in Microsoft Edge (Chromium‑based). The flaw allows arbitrary memory access that could lead to code execution, but no public exploit has been released. Google and Microsoft have patched the issue in recent Chrome releases; users should upgrade to the latest Chromium build.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
