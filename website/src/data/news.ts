@@ -31,6 +31,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "netamloader-detecting-net-injection-on-gov-windows-2edf26ac",
+    "title": "NetamLoader: Detecting .NET Injection on Gov Windows 10",
+    "summary": "NetamLoader is a malicious loader that injects .NET assemblies into legitimate Windows 10 processes on government systems. The loader exploits the Windows Runtime API to bypass code‑signing checks, enabling stealthy persistence and credential theft. Defenders should monitor for anomalous .NET process creation, enforce application whitelisting, and apply the latest security updates to block the loader.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/netamloader-malware-targets-government-windows-10-syste",
+    "publishedAt": "2026-11-01T17:35:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "netamloader-detecting-net-injection-on-gov-windows",
+      "article-2edf26ac",
+      "2edf26ac",
+      "netamloader-detecting-net-injection-on-gov-windows-7d931f",
+      "netamloader-detecting-net-injection-on-gov-windows-10"
+    ]
+  },
+  {
     "slug": "lxd-privilege-escalation-fix-for-cve-2026-112816-4ea267e0",
     "title": "LXD Privilege Escalation Fix for CVE-2026-112816",
     "summary": "LXD containers can be exploited for privilege escalation via CVE-2026-112816, affecting host systems running the container engine. The flaw originates from improper validation of container configuration files, allowing attackers to gain root access without authentication; no public exploit confirmed. Apply the vendor patch immediately and audit container configurations for anomalous privilege assignments.",
@@ -48,6 +67,43 @@ export const news: NewsBrief[] = [
       "article-4ea267e0",
       "4ea267e0",
       "lxd-privilege-escalation-fix-for-cve-2026-112816-e20997"
+    ]
+  },
+  {
+    "slug": "volta-stealer-detecting-and-blocking-ai-driven-mal-8de8d981",
+    "title": "VOLTA Stealer: Detecting and Blocking AI‑Driven Malware",
+    "summary": "The VOLTA Stealer malware leverages AI techniques to obfuscate its payload and evade traditional signature‑based defenses. It injects malicious code into legitimate processes, harvests credentials, and exfiltrates data via encrypted channels, posing a high‑risk threat to enterprise networks. Security teams should deploy behavioral analytics, enable application whitelisting, and apply vendor‑issued patches to mitigate the malware’s spread.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/volta-stealer-how-to-detect-block-ai-driven-malware",
+    "publishedAt": "2026-11-01T16:30:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "volta-stealer-detecting-and-blocking-ai-driven-mal",
+      "article-8de8d981",
+      "8de8d981",
+      "volta-stealer-detecting-and-blocking-ai-driven-mal-529ce0",
+      "volta-stealer-detecting-and-blocking-ai-driven-malware"
+    ]
+  },
+  {
+    "slug": "syrian-hacker-sentenced-42-months-for-136b-tweet-cf99d81a",
+    "title": "Syrian Hacker Sentenced 42 Months for $136B Tweet",
+    "summary": "A Syrian hacker received a 42‑month prison sentence for orchestrating a $136 billion Twitter account takeover. The case involved credential stuffing and social engineering that enabled unauthorized access to high‑profile accounts, compromising user data. Law enforcement agencies highlighted the need for stronger global multi‑factor authentication and monitoring of privileged account activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/syrian-hacker-sentenced-to-42-months-over-136b-ap-tweet",
+    "publishedAt": "2026-11-01T16:30:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "syrian-hacker-sentenced-42-months-for-136b-tweet",
+      "article-cf99d81a",
+      "cf99d81a",
+      "syrian-hacker-sentenced-42-months-for-136b-tweet-4346df"
     ]
   },
   {
@@ -3328,21 +3384,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-leak-41-000-dhs-employee-data-755082fa",
-    "title": "Hackers Leak 41,000 DHS Employee Data",
-    "summary": "A hacker group claims to have exfiltrated personal data of 41,000 DHS employees, including contact details and group memberships. The leak exposes sensitive employee information that could facilitate social engineering or insider threat attacks. Security teams should verify compromised accounts, enforce MFA, and conduct a comprehensive audit of exposed data to mitigate exploitation.",
+    "slug": "41-000-dhs-staff-records-exposed-in-audit-data-bre-01bb9a3c",
+    "title": "41,000 DHS Staff Records Exposed in Audit Data Breach",
+    "summary": "A DHS audit data breach exposed 41,000 staff records, including personal identifiers and employment details. The leak resulted from misconfigured audit logs and insufficient access controls, enabling unauthorized extraction of sensitive personnel data. Security teams should review audit configurations, enforce least‑privilege access, apply vendor‑issued patches, and verify compromised accounts to mitigate future exposure.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "Malwarebytes Labs",
     "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/hackers-steal-and-publish-data-on-41000-homeland-security-workers",
     "publishedAt": "2026-10-30T11:33:12.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/dhs-breach-audit-41-000-leaked-staff-records"
+      }
+    ],
     "aliases": [
-      "hackers-leak-41-000-dhs-employee-data",
-      "article-755082fa",
-      "755082fa",
-      "hackers-leak-41-000-dhs-employee-data-369d27"
+      "41-000-dhs-staff-records-exposed-in-audit-data-bre",
+      "article-01bb9a3c",
+      "01bb9a3c",
+      "41-000-dhs-staff-records-exposed-in-audit-data-bre-369d27",
+      "41-000-dhs-staff-records-exposed-in-audit-data-breach"
     ]
   },
   {
@@ -6714,63 +6776,6 @@ export const news: NewsBrief[] = [
       "article-9299a900",
       "9299a900",
       "uat-11473-exploits-cisco-sd-wan-auth-bypass-373777"
-    ]
-  },
-  {
-    "slug": "federal-court-rules-west-virginia-data-shield-law-7d59d450",
-    "title": "Federal Court Rules West Virginia Data Shield Law Unconstitutional",
-    "summary": "A federal appellate court panel ruled West Virginia's Daniel's Law, which shielded personal data of police and public officials, unconstitutional. The decision removes the legal barrier preventing public disclosure of personal information held by state agencies regarding law enforcement personnel. The ruling enables public records requests targeting personal data of public safety officials in West Virginia.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/west-virginia-daniels-law-struck-down-appellate-court",
-    "publishedAt": "2026-10-28T20:50:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "federal-court-rules-west-virginia-data-shield-law",
-      "article-7d59d450",
-      "7d59d450",
-      "federal-court-rules-west-virginia-data-shield-law-7fd6e6",
-      "federal-court-rules-west-virginia-data-shield-law-unconstitu"
-    ]
-  },
-  {
-    "slug": "law-enforcement-seizes-virtualine-bulletproof-host-4d6ec002",
-    "title": "Law Enforcement Seizes Virtualine Bulletproof Hosting Domain",
-    "summary": "U.S. law enforcement seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. The service provided infrastructure to ransomware operators and other cybercriminals seeking to evade takedown efforts. The seizure disrupts a known channel for illicit hosting but does not eliminate the underlying criminal operations.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
-    "publishedAt": "2026-10-28T20:47:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "law-enforcement-seizes-virtualine-bulletproof-host",
-      "article-4d6ec002",
-      "4d6ec002",
-      "law-enforcement-seizes-virtualine-bulletproof-host-8c1e6f",
-      "law-enforcement-seizes-virtualine-bulletproof-hosting-domain"
-    ]
-  },
-  {
-    "slug": "japan-airlines-confirms-customer-data-theft-incide-9bfa590b",
-    "title": "Japan Airlines Confirms Customer Data Theft Incident",
-    "summary": "Japan Airlines confirmed a data breach in which hackers stole passport numbers, frequent flyer numbers, email addresses, and phone numbers for approximately 2,000 customers. The incident occurred amid a broader wave of cyber incidents affecting Japanese organizations. Affected individuals face identity theft risk from exposed government-issued identifiers and personal contact details.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/japan-airlines-warns-of-breach-country-grapples-with-incidents",
-    "publishedAt": "2026-10-28T20:33:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "japan-airlines-confirms-customer-data-theft-incide",
-      "article-9bfa590b",
-      "9bfa590b",
-      "japan-airlines-confirms-customer-data-theft-incide-482a55",
-      "japan-airlines-confirms-customer-data-theft-incident"
     ]
   }
 ];
