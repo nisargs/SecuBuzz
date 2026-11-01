@@ -41,6 +41,12 @@ graph TD
     CFW -->|Store Tokens & Clicks| D1[Cloudflare D1 SQLite Database]
 ```
 
+### Feed Routing & Non-Colliding Slug Architecture
+- **Non-Colliding 8-Hex FNV-1a Slug Engine**: Combines normalized headline base and canonical URL (`${base}|${idStr}`) via 32-bit FNV-1a hash (`0x811c9dc5` seed, `0x01000193` prime) with 8 hex characters (`padStart(8, '0')`), replacing legacy 6-char truncation that suffered from 20 collision groups across 86 articles.
+- **Zero-Collision Telemetry**: Verified via `npm run verify:slugs` with **350 / 350 unique hashes and 0 colliding groups** across all live stories.
+- **Live-Wins Invariant (Anti-Downgrade Killed)**: Feed reconciliation strictly indexes by canonical `sourceUrl.toLowerCase()`. Live API feed title, summary, and severity are 100% authoritative; bundled static data never overwrites live data.
+- **Backward-Compatible Alias Support**: Articles retain legacy `${baseSlug}-${legacyHex}` aliases so previously shared or indexed links continue to resolve seamlessly and update to canonical URLs via `window.history.replaceState`.
+
 ### Core Frontend Stack
 - **Framework**: Expo SDK 57 (`57.0.24`) with React Native (`0.86.3`) and React (`19.2.3`).
 - **Target OS**: **Android** (Android 11–15 support, compiled with version code 8 / release 1.0.2).

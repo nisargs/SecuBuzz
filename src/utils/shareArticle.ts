@@ -5,16 +5,28 @@ import type { Article } from '../models/article';
  * Opens native share sheet for a cybersecurity news brief.
  * Formats headline, 60-word summary, original source link, and SecuBuzz attribution.
  */
+function createSlug(headline: string = '', id: string = ''): string {
+  const base = (headline || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .slice(0, 50)
+    .replace(/^-+|-+$/g, '');
+
+  const idStr = (id || headline || '').trim();
+  const entropy = `${base}|${idStr}`;
+
+  let hash = 0x811c9dc5;
+  for (let i = 0; i < entropy.length; i++) {
+    hash ^= entropy.charCodeAt(i);
+    hash = Math.imul(hash, 0x01000193);
+  }
+  const hex = (hash >>> 0).toString(16).padStart(8, '0');
+  return base ? `${base}-${hex}` : `article-${hex}`;
+}
+
 export async function shareArticle(article: Article): Promise<void> {
   try {
-    const slug = article.headline
-      ? article.headline
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, '-')
-          .replace(/^-+|-+$/g, '')
-          .slice(0, 60)
-          .replace(/-+$/, '')
-      : '';
+    const slug = (article as any).slug || createSlug(article.headline, article.id);
     const webUrl = slug ? `https://secubuzz.com/news/${slug}` : 'https://secubuzz.com';
 
     const message = [

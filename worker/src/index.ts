@@ -178,9 +178,19 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
 
     const slug = art.slug || createSlug(title, art.id || sourceUrl || title);
     const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
-    const hex = slug.slice(-6);
+    const hex = slug.match(/-([a-f0-9]{8})$/)?.[1] || slug.slice(-8);
+
+    // Compute legacy 6-char hex for backward-compatible routing
+    let legacyHash = 0;
+    const idStr = art.id || sourceUrl || title;
+    for (let i = 0; i < idStr.length; i++) {
+      legacyHash = (legacyHash << 5) - legacyHash + idStr.charCodeAt(i);
+      legacyHash |= 0;
+    }
+    const legacyHex = Math.abs(legacyHash).toString(16).padStart(6, '0').slice(0, 6);
 
     const aliases: string[] = [baseSlug, `article-${hex}`, hex];
+    if (baseSlug) aliases.push(`${baseSlug}-${legacyHex}`);
     if (art.id && !aliases.includes(art.id.toLowerCase())) {
       aliases.push(art.id.toLowerCase());
     }
@@ -386,7 +396,7 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
       if (artSlug === slug) return true;
       if (a.aliases && a.aliases.some((al: string) => al.toLowerCase() === slug)) return true;
       const base = headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
-      if (base && (slug === base || slug.startsWith(base) || base.startsWith(slug))) return true;
+      if (base && slug === base) return true;
       return false;
     });
     if (inFeed) return true;
@@ -790,7 +800,7 @@ export default {
             if (artSlug === reqSlug) return false; // Already canonical, proceed to serve
             if (a.aliases && a.aliases.some((al: string) => al.toLowerCase() === reqSlug)) return true;
             const base = headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
-            if (base && (reqSlug === base || reqSlug.startsWith(base) || base.startsWith(reqSlug))) return true;
+            if (base && reqSlug === base) return true;
             return false;
           });
           if (matchedArt) {

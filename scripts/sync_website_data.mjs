@@ -65,13 +65,15 @@ function createSlug(headline = '', id = '') {
     .slice(0, 50)
     .replace(/^-+|-+$/g, '');
 
-  let hash = 0;
-  const idStr = id || headline || '';
-  for (let i = 0; i < idStr.length; i++) {
-    hash = (hash << 5) - hash + idStr.charCodeAt(i);
-    hash |= 0;
+  const idStr = (id || headline || '').trim();
+  const entropy = `${base}|${idStr}`;
+
+  let hash = 0x811c9dc5;
+  for (let i = 0; i < entropy.length; i++) {
+    hash ^= entropy.charCodeAt(i);
+    hash = Math.imul(hash, 0x01000193);
   }
-  const hex = Math.abs(hash).toString(16).padStart(6, '0').slice(0, 6);
+  const hex = (hash >>> 0).toString(16).padStart(8, '0');
   return base ? `${base}-${hex}` : `article-${hex}`;
 }
 
@@ -176,9 +178,19 @@ async function syncNews() {
 
     const slug = art.slug || createSlug(title, art.id || art.sourceUrl || art.url || title);
     const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
-    const hex = slug.slice(-6);
+    const hex = slug.match(/-([a-f0-9]{8})$/)?.[1] || slug.slice(-8);
+
+    // Compute legacy 6-char hex for backward-compatible routing of historical links
+    let legacyHash = 0;
+    const idStr = art.id || art.sourceUrl || art.url || title;
+    for (let i = 0; i < idStr.length; i++) {
+      legacyHash = (legacyHash << 5) - legacyHash + idStr.charCodeAt(i);
+      legacyHash |= 0;
+    }
+    const legacyHex = Math.abs(legacyHash).toString(16).padStart(6, '0').slice(0, 6);
 
     const aliases = [baseSlug, `article-${hex}`, hex];
+    if (baseSlug) aliases.push(`${baseSlug}-${legacyHex}`);
     if (rawSlug && rawSlug !== slug && !aliases.includes(rawSlug)) {
       aliases.push(rawSlug);
     }

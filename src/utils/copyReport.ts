@@ -13,13 +13,15 @@ function createSlug(headline: string = '', id: string = ''): string {
     .slice(0, 50)
     .replace(/^-+|-+$/g, '');
 
-  let hash = 0;
-  const idStr = id || headline || '';
-  for (let i = 0; i < idStr.length; i++) {
-    hash = (hash << 5) - hash + idStr.charCodeAt(i);
-    hash |= 0;
+  const idStr = (id || headline || '').trim();
+  const entropy = `${base}|${idStr}`;
+
+  let hash = 0x811c9dc5;
+  for (let i = 0; i < entropy.length; i++) {
+    hash ^= entropy.charCodeAt(i);
+    hash = Math.imul(hash, 0x01000193);
   }
-  const hex = Math.abs(hash).toString(16).padStart(6, '0').slice(0, 6);
+  const hex = (hash >>> 0).toString(16).padStart(8, '0');
   return base ? `${base}-${hex}` : `article-${hex}`;
 }
 

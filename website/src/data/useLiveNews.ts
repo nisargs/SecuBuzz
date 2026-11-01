@@ -26,13 +26,15 @@ export function createSlug(headline: string = '', id: string = ''): string {
     .slice(0, 50)
     .replace(/^-+|-+$/g, '');
 
-  let hash = 0;
-  const idStr = id || headline || '';
-  for (let i = 0; i < idStr.length; i++) {
-    hash = (hash << 5) - hash + idStr.charCodeAt(i);
-    hash |= 0;
+  const idStr = (id || headline || '').trim();
+  const entropy = `${base}|${idStr}`;
+
+  let hash = 0x811c9dc5;
+  for (let i = 0; i < entropy.length; i++) {
+    hash ^= entropy.charCodeAt(i);
+    hash = Math.imul(hash, 0x01000193);
   }
-  const hex = Math.abs(hash).toString(16).padStart(6, '0').slice(0, 6);
+  const hex = (hash >>> 0).toString(16).padStart(8, '0');
   return base ? `${base}-${hex}` : `article-${hex}`;
 }
 
@@ -94,9 +96,19 @@ function transformFeed(feed: any[]): NewsBrief[] {
 
     const slug = art.slug || createSlug(title, art.id || art.sourceUrl || art.url || title);
     const baseSlug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
-    const hex = slug.slice(-6);
+    const hex = slug.match(/-([a-f0-9]{8})$/)?.[1] || slug.slice(-8);
+
+    // Compute legacy 6-char hex for backward-compatible routing of historical links
+    let legacyHash = 0;
+    const idStr = art.id || art.sourceUrl || art.url || title;
+    for (let i = 0; i < idStr.length; i++) {
+      legacyHash = (legacyHash << 5) - legacyHash + idStr.charCodeAt(i);
+      legacyHash |= 0;
+    }
+    const legacyHex = Math.abs(legacyHash).toString(16).padStart(6, '0').slice(0, 6);
 
     const aliases = [baseSlug, `article-${hex}`, hex];
+    if (baseSlug) aliases.push(`${baseSlug}-${legacyHex}`);
     if (rawSlug && rawSlug !== slug && !aliases.includes(rawSlug)) {
       aliases.push(rawSlug);
     }
@@ -126,71 +138,39 @@ function transformFeed(feed: any[]): NewsBrief[] {
   return deduped;
 }
 
-const SEVERITY_WEIGHT: Record<string, number> = {
-  CRITICAL: 4,
-  HIGH: 3,
-  MEDIUM: 2,
-  LOW: 1,
-};
-
 function reconcileLiveFeed(liveFeed: NewsBrief[], baseNews: NewsBrief[]): NewsBrief[] {
-  const baseByHex = new Map<string, NewsBrief>();
   const baseByUrl = new Map<string, NewsBrief>();
 
   for (const b of baseNews) {
-    const hex = b.slug.match(/([a-f0-9]{6})$/)?.[1];
-    if (hex) baseByHex.set(hex.toLowerCase(), b);
     if (b.sourceUrl) baseByUrl.set(b.sourceUrl.toLowerCase(), b);
   }
 
   const reconciled = liveFeed.map((incoming) => {
-    const hex = incoming.slug.match(/([a-f0-9]{6})$/)?.[1];
-    const match = (hex && baseByHex.get(hex.toLowerCase())) ||
-                  (incoming.sourceUrl && baseByUrl.get(incoming.sourceUrl.toLowerCase()));
+    const match = incoming.sourceUrl ? baseByUrl.get(incoming.sourceUrl.toLowerCase()) : undefined;
 
     if (!match) return incoming;
 
-    // 1. Anti-downgrade: Never downgrade severity (e.g. CRITICAL to HIGH during feed lag)
-    const incomingWeight = (incoming.severity && SEVERITY_WEIGHT[incoming.severity]) || 0;
-    const matchWeight = (match.severity && SEVERITY_WEIGHT[match.severity]) || 0;
-    const finalSeverity = matchWeight > incomingWeight ? match.severity : incoming.severity;
-
-    // 2. Canonical slug preservation: Keep CVE-enriched canonical slug
-    let finalSlug = incoming.slug;
+    // Live API data always wins, no exceptions. Anti-downgrade override is completely removed.
+    // Preserve legacy aliases and enriched CVE references.
     const finalAliases = Array.from(new Set([...(incoming.aliases || []), ...(match.aliases || [])]));
-    if (match.slug && match.slug !== incoming.slug) {
-      const matchHasCve = /cve-\d{4}-\d+/i.test(match.slug);
-      const incomingHasCve = /cve-\d{4}-\d+/i.test(incoming.slug);
-      if (matchHasCve && !incomingHasCve) {
-        finalSlug = match.slug;
-        if (!finalAliases.includes(incoming.slug)) finalAliases.push(incoming.slug);
-      } else {
-        if (!finalAliases.includes(match.slug)) finalAliases.push(match.slug);
-      }
+    if (match.slug && match.slug !== incoming.slug && !finalAliases.includes(match.slug)) {
+      finalAliases.push(match.slug);
     }
 
-    // 3. Preserve enriched CVEs
     const finalCves = Array.from(new Set([...(incoming.cves || []), ...(match.cves || [])]));
 
     return {
       ...incoming,
-      slug: finalSlug,
-      severity: finalSeverity,
       cves: finalCves,
       aliases: finalAliases,
-      title: matchWeight > incomingWeight ? match.title : incoming.title,
-      summary: matchWeight > incomingWeight ? match.summary : incoming.summary,
     };
   });
 
   // Preserve any baseNews items that might not have reached R2 yet
   for (const b of baseNews) {
-    const hex = b.slug.match(/([a-f0-9]{6})$/)?.[1];
-    const exists = reconciled.some(r => {
-      const rHex = r.slug.match(/([a-f0-9]{6})$/)?.[1];
-      return (hex && rHex && hex.toLowerCase() === rHex.toLowerCase()) ||
-             (r.sourceUrl && b.sourceUrl && r.sourceUrl.toLowerCase() === b.sourceUrl.toLowerCase());
-    });
+    const exists = reconciled.some(r =>
+      r.sourceUrl && b.sourceUrl && r.sourceUrl.toLowerCase() === b.sourceUrl.toLowerCase()
+    );
     if (!exists) {
       reconciled.push(b);
     }

@@ -19,39 +19,28 @@ export function NewsArticle() {
   const { news, loading } = useLiveNews();
   const { advisories } = useLiveAdvisories();
 
-  // Match current slug or alias from deduplicated stories
+  // Match current slug or alias from deduplicated stories (exact matching to eliminate hash collisions)
   const brief = news.find((b) => {
     if (!slug) return false;
     const target = slug.toLowerCase();
     const s = b.slug.toLowerCase();
     if (s === target) return true;
     if (b.aliases?.some(a => a.toLowerCase() === target)) return true;
-
-    // Match by unique 6-character hex hash suffix (e.g. 12e68d)
-    const targetHex = target.match(/([a-f0-9]{6})$/)?.[1];
-    if (targetHex) {
-      const sHex = s.match(/([a-f0-9]{6})$/)?.[1];
-      if (sHex === targetHex) return true;
-      if (b.aliases?.some(a => a.toLowerCase().endsWith(targetHex))) return true;
-    }
+    if (b.sourceUrl && b.sourceUrl.toLowerCase() === target) return true;
 
     const base = b.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
-    if (base && (target === base || target.startsWith(base) || base.startsWith(target))) return true;
-    return s.startsWith(target) || target.startsWith(s);
+    if (base && target === base) return true;
+    return false;
   });
 
-  // Keep browser address bar in sync with canonical slug if accessed via a short or legacy alias (e.g. /news/12e68d or /news/article-12e68d)
+  // Keep browser address bar in sync with canonical slug if accessed via a legacy or short alias
   useEffect(() => {
     if (!brief || !slug) return;
     const currentSlug = slug.toLowerCase();
     const canonicalSlug = brief.slug.toLowerCase();
     if (currentSlug === canonicalSlug) return;
 
-    // Only rewrite if user accessed via a non-descriptive short alias
-    const isShortAlias = currentSlug.length <= 15 || /^article-[a-f0-9]{6}$/.test(currentSlug);
-    if (isShortAlias) {
-      window.history.replaceState(null, '', `/news/${brief.slug}`);
-    }
+    window.history.replaceState(null, '', `/news/${brief.slug}`);
   }, [brief, slug]);
 
   if (!brief) {
