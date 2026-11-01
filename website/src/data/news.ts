@@ -70,6 +70,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "aur0ra-ransomware-employs-ai-exploitation-94670f36",
+    "title": "Aur0ra Ransomware Employs AI Exploitation",
+    "summary": "Aur0ra ransomware leverages AI-driven tactics to identify and exploit vulnerable systems. The malware’s adaptive techniques enable it to bypass standard defenses, potentially leading to data encryption and extortion. Security teams should deploy the latest vendor patches, enable AI‑based detection rules, and isolate affected hosts immediately and monitor for lateral movement.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/aur0ra-ransomware-ai-driven-exploitation-tactics",
+    "publishedAt": "2026-11-01T16:28:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aur0ra-ransomware-employs-ai-exploitation",
+      "article-94670f36",
+      "94670f36",
+      "aur0ra-ransomware-employs-ai-exploitation-aa79e6"
+    ]
+  },
+  {
+    "slug": "block-1-200-fake-store-domains-d7a01b51",
+    "title": "Block 1,200 Fake Store Domains",
+    "summary": "Law enforcement reports over 1,200 look‑alike domains used to host fake web stores targeting consumers. These domains mimic legitimate retailers, enabling phishing, credential theft, and fraudulent transactions. Security teams should block these domains, monitor for new look‑alike registrations, and apply defensive controls to maintain protection daily.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/fake-web-stores-how-to-block-1-200-look-alike-domain-sc",
+    "publishedAt": "2026-11-01T16:26:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "block-1-200-fake-store-domains",
+      "article-d7a01b51",
+      "d7a01b51",
+      "block-1-200-fake-store-domains-498eb2"
+    ]
+  },
+  {
     "slug": "chainalysis-audit-leak-exposes-customer-data-db5b1944",
     "title": "Chainalysis Audit Leak Exposes Customer Data",
     "summary": "Chainalysis suffered a breach that exposed audit records containing sensitive customer data, including personal identifiers and transaction histories. The compromise resulted from insufficient access controls on the audit database, allowing attackers to download large volumes of data without detection. Chainalysis has applied a patch to strengthen database permissions, enabled multi‑factor authentication, and notified affected customers.",
@@ -390,21 +426,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "northflank-breach-exposes-customers-ai-api-keys-a63585f2",
-    "title": "Northflank Breach Exposes Customers' AI API Keys",
-    "summary": "Northflank, a cloud hosting platform, suffered a breach exposing customers' AI API keys and related secrets. The incident allowed attackers to retrieve and abuse stored credentials, potentially enabling unauthorized API calls and data exfiltration. Northflank urged users to rotate credentials, monitor activity, and investigate the attack vector to mitigate further risk.",
+    "slug": "northflank-breach-exposes-ai-api-keys-f3edff12",
+    "title": "Northflank Breach Exposes AI API Keys",
+    "summary": "Northflank, a cloud hosting platform, suffered a breach that exposed its AI API key store, compromising customer credentials. The unauthorized access allowed attackers to retrieve and potentially abuse stored keys, enabling unauthorized API calls and data exfiltration. Northflank urged users to rotate credentials, monitor activity, and investigate the attack vector to mitigate further risk.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
     "publishedAt": "2026-10-31T18:01:12.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/northflank-security-breach-leads-to-abuse-of-customers"
+      }
+    ],
     "aliases": [
-      "northflank-breach-exposes-customers-ai-api-keys",
-      "article-a63585f2",
-      "a63585f2",
-      "northflank-breach-exposes-customers-ai-api-keys-429626"
+      "northflank-breach-exposes-ai-api-keys",
+      "article-f3edff12",
+      "f3edff12",
+      "northflank-breach-exposes-ai-api-keys-429626"
     ]
   },
   {
@@ -3777,21 +3818,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "binance-breach-hits-6-3b-assets-3b-frozen-a3d1f43d",
-    "title": "Binance Breach Hits $6.3B Assets, $3B Frozen",
-    "summary": "Binance disclosed a security incident that affected about $6.3 billion of assets, with roughly $3 billion frozen on‑chain. The breach involved unauthorized access to user balances, though the specific exploit remains undisclosed; Tether and Circle froze related USDT and USDC. Binance is investigating the root cause and advises affected users to monitor accounts and await further updates.",
+    "slug": "binance-breach-exposes-6-3b-assets-freezes-3b-3486d51e",
+    "title": "Binance Breach Exposes $6.3B Assets, Freezes $3B",
+    "summary": "Binance suffered a security breach that exposed approximately $6.3 billion in assets and froze about $3 billion on‑chain. The incident involved unauthorized access to user balances, with Tether and Circle freezing related USDT and USDC tokens. Binance is investigating the root cause, tightening access controls, and advising users to monitor accounts while awaiting further updates.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
     "publishedAt": "2026-10-30T04:14:59.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/binance-suffers-security-breach-affecting-6-3-billion-i"
+      }
+    ],
     "aliases": [
-      "binance-breach-hits-6-3b-assets-3b-frozen",
-      "article-a3d1f43d",
-      "a3d1f43d",
-      "binance-breach-hits-6-3b-assets-3b-frozen-35768a"
+      "binance-breach-exposes-6-3b-assets-freezes-3b",
+      "article-3486d51e",
+      "3486d51e",
+      "binance-breach-exposes-6-3b-assets-freezes-3b-35768a"
     ]
   },
   {
@@ -6725,43 +6771,6 @@ export const news: NewsBrief[] = [
       "9bfa590b",
       "japan-airlines-confirms-customer-data-theft-incide-482a55",
       "japan-airlines-confirms-customer-data-theft-incident"
-    ]
-  },
-  {
-    "slug": "cisco-pre-announces-november-advisories-for-three-0198e7bf",
-    "title": "Cisco Pre-Announces November Advisories for Three Products",
-    "summary": "Cisco PSIRT will publish security advisories on November 4, 2026, addressing vulnerabilities in Identity Services Engine, UCS Central Software, and Unified Communications Manager. The advisories include fixed software releases, and no further security-hardening advisories are planned before January 20, 2027. Cisco recommends customers upgrade to the fixed versions specified in the advisories to remediate the disclosed flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-notice-I8z3n6lK?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Advance+Notification+for+Publication+of+November+4%2C+2026%2C+Security+Advisories%26vs_k%3D1",
-    "publishedAt": "2026-10-28T20:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-pre-announces-november-advisories-for-three",
-      "article-0198e7bf",
-      "0198e7bf",
-      "cisco-pre-announces-november-advisories-for-three-76d307",
-      "cisco-pre-announces-november-advisories-for-three-products"
-    ]
-  },
-  {
-    "slug": "chrome-early-stable-update-released-9a88de92",
-    "title": "Chrome Early Stable Update Released",
-    "summary": "Google Chrome’s Stable channel received an early update to version 157.0.8103.26/27 for Windows, with Mac following shortly. The update includes bug fixes and performance improvements, as detailed in the release log. Users are encouraged to install the update via the browser’s update mechanism to maintain security and stability.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/early-stable-update-for-desktop_01255863767.html",
-    "publishedAt": "2026-10-28T19:57:13.619Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-early-stable-update-released",
-      "article-9a88de92",
-      "9a88de92",
-      "chrome-early-stable-update-released-671bb3"
     ]
   }
 ];
