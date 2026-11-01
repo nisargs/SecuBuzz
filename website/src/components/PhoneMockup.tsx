@@ -27,6 +27,14 @@ const SCREENS: ScreenItem[] = [
     alt: 'SecuBuzz 1,814 Active Threat Advisories Radar'
   },
   {
+    id: 'mystack',
+    tabName: 'My Stack',
+    label: 'Custom Triage',
+    tag: 'Watchlist',
+    image: '/4.jpg',
+    alt: 'SecuBuzz My Stack & CVE Watchlist Filter'
+  },
+  {
     id: 'saved',
     tabName: 'Bookmarks',
     label: 'Saved Stories',
@@ -116,7 +124,7 @@ export function PhoneMockup() {
         </div>
       </div>
 
-      {/* Interactive 3-Screen Showcase Controller */}
+      {/* Interactive 4-Screen Showcase Controller */}
       <div className="mt-3.5 flex flex-col items-center gap-2">
         <div
           role="tablist"
@@ -132,7 +140,7 @@ export function PhoneMockup() {
                 role="tab"
                 aria-selected={isActive}
                 onClick={() => handleTabClick(idx)}
-                className={`group relative flex-1 rounded-lg px-2 py-1.5 text-center transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`group relative flex-1 rounded-lg px-1.5 py-1.5 text-center transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   isActive
                     ? 'bg-surface-elevated text-ink font-medium shadow-sm'
                     : 'text-muted hover:bg-surface-elevated/40 hover:text-ink'
