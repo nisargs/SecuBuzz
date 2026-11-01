@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gitee-repos-detecting-exposed-cloud-and-ai-credent-40426d79",
+    "title": "Gitee Repos: Detecting Exposed Cloud and AI Credentials",
+    "summary": "An alert warns that Gitee repositories may expose cloud and AI credentials through publicly accessible code. The flaw arises from repositories lacking secret scanning, allowing attackers to harvest API keys and tokens, potentially granting unauthorized access to cloud and AI platforms. Gitee recommends enabling secret scanning, restricting repository visibility, and rotating exposed credentials immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/26-400-valid-cloud-and-ai-credentials-found-exposed-in",
+    "publishedAt": "2026-11-01T17:39:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitee-repos-detecting-exposed-cloud-and-ai-credent",
+      "article-40426d79",
+      "40426d79",
+      "gitee-repos-detecting-exposed-cloud-and-ai-credent-e4d0c3",
+      "gitee-repos-detecting-exposed-cloud-and-ai-credentials"
+    ]
+  },
+  {
     "slug": "telegram-android-rce-fix-for-cve-2026-111105-e8fd46ba",
     "title": "Telegram Android RCE Fix for CVE-2026-111105",
     "summary": "Telegram Android users face a remote code execution flaw in voice call handling, identified as CVE-2026-111105, in enterprise environments. The flaw stems from unchecked packet validation, allowing unauthenticated attackers to run arbitrary code; no public exploit yet. Telegram released an Android patch; apply it immediately and monitor call traffic for anomalies.",
@@ -28,6 +47,24 @@ export const news: NewsBrief[] = [
       "article-e8fd46ba",
       "e8fd46ba",
       "telegram-android-rce-fix-for-cve-2026-111105-4004d9"
+    ]
+  },
+  {
+    "slug": "chatgpt-session-hijack-flaw-requires-patch-11072ecb",
+    "title": "ChatGPT Session Hijack Flaw Requires Patch",
+    "summary": "A session hijack vulnerability in ChatGPT lets attackers hijack user sessions if they acquire a valid session cookie. The flaw arises from insufficient binding of session tokens to IP addresses and missing secure cookie flags, permitting credential theft. OpenAI released a patch enforcing secure cookie attributes and IP binding, and advises users to clear cookies and enable two‑factor authentication.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/a-shared-chatgpt-link-could-run-attacker-code-in-your-s",
+    "publishedAt": "2026-11-01T17:36:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chatgpt-session-hijack-flaw-requires-patch",
+      "article-11072ecb",
+      "11072ecb",
+      "chatgpt-session-hijack-flaw-requires-patch-10e4fa"
     ]
   },
   {
@@ -311,22 +348,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fbi-attributes-record-binance-crypto-heist-to-nort-73478968",
-    "title": "FBI Attributes Record Binance Crypto Heist to North Korea",
-    "summary": "Federal agencies attributed a $6.43 billion cryptocurrency theft from Binance to North Korean state-sponsored threat group TraderTraitor. Also tracked as Jade Sleet and UNC4899, the elite hacking group targeted virtual asset infrastructure to execute the record heist. The FBI, Secret Service, and IRS-CI disclosed the joint attribution to help financial institutions track and block illicit transactions.",
-    "category": "Nation State",
-    "severity": "HIGH",
+    "slug": "fbi-links-binance-heist-to-north-korean-hackers-80b96de3",
+    "title": "FBI Links Binance Heist to North Korean Hackers",
+    "summary": "The FBI confirmed that North Korean state-sponsored hackers known as TraderTraitor executed a $6.3 billion cryptocurrency theft from Binance. The attack leveraged compromised API keys and privileged credentials to move millions of USDT and other tokens, creating the largest recorded crypto heist. Binance has tightened API key management and urged exchanges to enforce multi‑factor authentication and monitor anomalous transfer activity.",
+    "category": "Breach",
+    "severity": "CRITICAL",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
     "publishedAt": "2026-11-01T07:03:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/"
+      }
+    ],
     "aliases": [
-      "fbi-attributes-record-binance-crypto-heist-to-nort",
-      "article-73478968",
-      "73478968",
-      "fbi-attributes-record-binance-crypto-heist-to-nort-5fcbe3",
-      "fbi-attributes-record-binance-crypto-heist-to-north-korea"
+      "fbi-links-binance-heist-to-north-korean-hackers",
+      "article-80b96de3",
+      "80b96de3",
+      "fbi-links-binance-heist-to-north-korean-hackers-5fcbe3"
     ]
   },
   {
@@ -2898,22 +2939,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ss7-and-diameter-signaling-exploits-enable-phone-t-502f31c6",
-    "title": "SS7 and Diameter Signaling Exploits Enable Phone Tracking",
-    "summary": "Flaws in SS7 and Diameter signaling protocols allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising devices. The root cause is the trust model between mobile networks, enabling remote exploitation without device compromise. Vendors should deploy network-level mitigations and adopt secure signaling practices to defend against these attacks.",
+    "slug": "ss7-and-diameter-protocol-flaws-enable-phone-track-5d7d284a",
+    "title": "SS7 and Diameter Protocol Flaws Enable Phone Tracking and Call Interception",
+    "summary": "SS7 and Diameter signaling protocol flaws exposed phone numbers, location data, and call logs to attackers worldwide. The vulnerabilities stem from insufficient authentication and trust models, allowing remote spoofing, call interception, SMS verification hijacking, and subscriber impersonation without device compromise. Telecom operators must deploy SIGTRAN TLS, enforce message integrity checks, and adopt secure signaling practices to mitigate the attacks.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
     "publishedAt": "2026-10-30T14:00:10.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/ss7-and-diameter-attacks-how-signaling-flaws-expose-you"
+      }
+    ],
     "aliases": [
-      "ss7-and-diameter-signaling-exploits-enable-phone-t",
-      "article-502f31c6",
-      "502f31c6",
-      "ss7-and-diameter-signaling-exploits-enable-phone-t-1a6762",
-      "ss7-and-diameter-signaling-exploits-enable-phone-tracking"
+      "ss7-and-diameter-protocol-flaws-enable-phone-track",
+      "article-5d7d284a",
+      "5d7d284a",
+      "ss7-and-diameter-protocol-flaws-enable-phone-track-1a6762",
+      "ss7-and-diameter-protocol-flaws-enable-phone-tracking-and-ca"
     ]
   },
   {
@@ -5316,21 +5362,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ai-desktop-apps-used-to-deploy-crypto-miners-de2f49cb",
-    "title": "AI Desktop Apps Used to Deploy Crypto Miners",
-    "summary": "Threat actors deliver malicious loaders and cryptocurrency miners disguised as AI desktop applications for Anthropic Claude and OpenAI ChatGPT. The Yoba campaign uses fake GitHub projects claiming to be GPT-5.6 Sol, GPT-6 Astra, and Claude Opus to host miner malware. Security teams should verify AI app authenticity, avoid untrusted downloads, and monitor for unauthorized miner processes.",
+    "slug": "yoba-campaign-distributes-fake-ai-apps-to-deploy-c-7b8ca3f9",
+    "title": "Yoba Campaign Distributes Fake AI Apps to Deploy Cryptocurrency Miners",
+    "summary": "The Yoba threat campaign has released counterfeit AI applications that embed cryptocurrency miners on infected devices. These binaries use authentic signing certificates and fake GitHub projects to bypass app store checks, enabling stealthy persistence and high‑volume mining. Security teams should revoke compromised certificates, block distribution channels, verify AI app authenticity, and monitor CPU usage for anomalous mining activity.",
     "category": "General",
-    "severity": "LOW",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
     "publishedAt": "2026-10-29T15:20:29.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/fake-chatgpt-and-claude-apps-abuse-signed-executables-t"
+      }
+    ],
     "aliases": [
-      "ai-desktop-apps-used-to-deploy-crypto-miners",
-      "article-de2f49cb",
-      "de2f49cb",
-      "ai-desktop-apps-used-to-deploy-crypto-miners-61c787"
+      "yoba-campaign-distributes-fake-ai-apps-to-deploy-c",
+      "article-7b8ca3f9",
+      "7b8ca3f9",
+      "yoba-campaign-distributes-fake-ai-apps-to-deploy-c-61c787",
+      "yoba-campaign-distributes-fake-ai-apps-to-deploy-cryptocurre"
     ]
   },
   {
@@ -6732,50 +6784,6 @@ export const news: NewsBrief[] = [
       "670c027f",
       "gitlab-patch-release-and-security-update-19-5-3-19-db7b6d",
       "gitlab-patch-release-and-security-update-19-5-3-19-4-5-19-3-"
-    ]
-  },
-  {
-    "slug": "cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re-1a1f30b8",
-    "title": "Cisco ASA/FTD SSL VPN DoS Vulnerability Patches Released",
-    "summary": "Cisco ASA and FTD firewalls suffered a denial‑of‑service flaw that crashes SSL VPN devices, affecting access for many enterprises. The logic error, triggered by a crafted request during VPN connection when secondary authentication is enabled, forces a device reload and disrupts services. Cisco released patches and advised administrators to update or apply mitigations to prevent crashes, ensuring continued VPN availability.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Firewall+Adaptive+Security+Appliance+and+Secure+Firewall+Threat+Defense+Software+Remote+Access+SSL+VPN+Tunnel+Denial+of+Service+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-10-28T23:15:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-firewall-zero-day-exploited-to-crash-ssl-vpn-devices/"
-      }
-    ],
-    "aliases": [
-      "cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re",
-      "article-1a1f30b8",
-      "1a1f30b8",
-      "cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-re-2f6ce2",
-      "cisco-asa-ftd-ssl-vpn-dos-vulnerability-patches-released"
-    ]
-  },
-  {
-    "slug": "uat-11473-exploits-cisco-sd-wan-auth-bypass-9299a900",
-    "title": "UAT-11473 Exploits Cisco SD-WAN Auth Bypass",
-    "summary": "Cisco Talos identified UAT-11473, a sophisticated APT group, exploiting CVE-2026-20127, an authentication bypass vulnerability in Cisco SD-WAN Catalyst Controller instances to gain unauthorized access. The group deployed KeyDrift malware on compromised systems after bypassing authentication controls. Organizations running Cisco SD-WAN Catalyst Controllers should verify patch status for CVE-2026-20127 and hunt for KeyDrift indicators.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/uat-11473-keydrift/",
-    "publishedAt": "2026-10-28T21:32:02.000Z",
-    "cves": [
-      "CVE-2026-20127"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "uat-11473-exploits-cisco-sd-wan-auth-bypass",
-      "article-9299a900",
-      "9299a900",
-      "uat-11473-exploits-cisco-sd-wan-auth-bypass-373777"
     ]
   }
 ];
