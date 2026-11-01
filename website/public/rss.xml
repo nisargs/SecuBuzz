@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 17:44:27 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 18:44:30 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Telegram Android RCE Fix for CVE-2026-111105</title>
@@ -24,6 +24,33 @@
       <pubDate>Sun, 01 Nov 2026 17:34:54 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonat">CyberNews AI</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>GitHub Supply Chain Attack Detection for 61 Repositories</title>
+      <link>https://secubuzz.com/news/github-supply-chain-attack-detection-for-61-reposi-737e1f61</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-supply-chain-attack-detection-for-61-reposi-737e1f61</guid>
+      <description><![CDATA[GitHub identified a series of supply chain attacks targeting 61 repositories, enabling malicious code injection into open-source projects. The attacks exploit compromised contributor credentials and insecure merge workflows, allowing attackers to embed backdoors that persist across forks. Security teams should review audit logs, enforce two-factor authentication, and apply the provided patch or workflow restrictions to eliminate the threat.]]></description>
+      <pubDate>Sun, 01 Nov 2026 16:29:33 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/github-issues-detect-61-repo-supply-chain-attacks">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Chainalysis Audit Leak Exposes Customer Data</title>
+      <link>https://secubuzz.com/news/chainalysis-audit-leak-exposes-customer-data-db5b1944</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-audit-leak-exposes-customer-data-db5b1944</guid>
+      <description><![CDATA[Chainalysis suffered a breach that exposed audit records containing sensitive customer data, including personal identifiers and transaction histories. The compromise resulted from insufficient access controls on the audit database, allowing attackers to download large volumes of data without detection. Chainalysis has applied a patch to strengthen database permissions, enabled multi‑factor authentication, and notified affected customers.]]></description>
+      <pubDate>Sun, 01 Nov 2026 16:25:18 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/chainalysis-breach-audit-leaked-customer-data">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>FBI Links DPRK Hackers to $6.43B Heist</title>
+      <link>https://secubuzz.com/news/fbi-links-dprk-hackers-to-6-43b-heist-a1677651</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-links-dprk-hackers-to-6-43b-heist-a1677651</guid>
+      <description><![CDATA[The FBI has linked a North Korean hacking group to a $6.43 billion cyber heist that targeted financial institutions. Investigators attribute the breach to credential theft and exploitation of weak multi‑factor authentication, enabling unauthorized transfers of over $6 billion. Law enforcement recommends tightening MFA, monitoring for anomalous transfers, and conducting forensic analysis of compromised accounts.]]></description>
+      <pubDate>Sun, 01 Nov 2026 15:31:35 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/tradertraitor-fbi-links-dprk-hackers-to-6-43b-heist">CyberNews AI</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Police Bust Cyber Syndicate Operators</title>
@@ -195,6 +222,33 @@
       <pubDate>Sat, 31 Oct 2026 14:05:15 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Chromium Use-After-Free CVE-2026-118357 in FileSystem</title>
+      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-118357-in-filesys-97dcff30</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-118357-in-filesys-97dcff30</guid>
+      <description><![CDATA[Chromium’s FileSystem module contains a use-after-free flaw (CVE-2026-118357) that can lead to arbitrary code execution on affected browsers. The vulnerability arises when the browser frees a file handle before completing pending operations, allowing attackers to trigger memory corruption. Microsoft Edge and Chrome have released patches; users should update to the latest version or apply the vendor’s hotfix.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118357">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium WebAudio Memory Corruption CVE-2026-118358</title>
+      <link>https://secubuzz.com/news/chromium-webaudio-memory-corruption-cve-2026-11835-9a63abf5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-webaudio-memory-corruption-cve-2026-11835-9a63abf5</guid>
+      <description><![CDATA[Chromium’s WebAudio engine contains a memory corruption flaw (CVE-2026-118358) that can enable arbitrary code execution in affected browsers. The bug occurs when the audio context processes malformed audio data, leading to out-of-bounds writes that attackers can exploit. Chrome and Microsoft Edge have issued patches; users should update to the latest release or apply the vendor’s hotfix to prevent exploitation.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118358">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium V8 Memory Corruption Flaw CVE-2026-118359</title>
+      <link>https://secubuzz.com/news/chromium-v8-memory-corruption-flaw-cve-2026-118359-de0fc468</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-v8-memory-corruption-flaw-cve-2026-118359-de0fc468</guid>
+      <description><![CDATA[CVE-2026-118359 is a memory corruption flaw in Chromium’s V8 engine triggered by JavaScript, affecting Microsoft Edge and browsers. The flaw arises from unchecked buffer handling in script parsing, enabling remote code execution with a CVSS of 8.2; no public exploit. Microsoft recommends installing the latest Edge update, and Google advises applying the newest Chrome patch from the Chrome Releases blog.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118359">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Chromium Use-After-Free CVE-2026-118356 Fixed</title>
@@ -401,60 +455,6 @@
       <description><![CDATA[CVE-2026-118337 exposes an improper access control flaw in Chromium’s Forms component, which Microsoft Edge (Chromium‑based) incorporates. The vulnerability permits unauthorized manipulation of form data, potentially allowing attackers to inject malicious payloads or bypass authentication checks during form submission. Microsoft Edge will apply the Chromium patch in its release; security teams should update to Edge build or apply the Chrome patch.]]></description>
       <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118337">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium CVE-2026-118335 Improper Input Validation</title>
-      <link>https://secubuzz.com/news/chromium-cve-2026-118335-improper-input-validation-ffc95d36</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-118335-improper-input-validation-ffc95d36</guid>
-      <description><![CDATA[Chromium vulnerability CVE-2026-118335 allows improper input validation in metrics, potentially enabling attackers to inject malicious data. The flaw could lead to denial-of-service or information disclosure if exploited in a web context, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the corresponding patch from Google Chrome Releases.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118335">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium ANGLE Improper Input Validation CVE-2026-118329</title>
-      <link>https://secubuzz.com/news/chromium-angle-improper-input-validation-cve-2026-5de03e63</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-angle-improper-input-validation-cve-2026-5de03e63</guid>
-      <description><![CDATA[A CVE-2026-118329 flaw in Chromium’s ANGLE component allows improper input validation. The flaw permits malformed graphics data to bypass validation, potentially enabling memory corruption; CVSS score is 7.8, and a public PoC exists. Microsoft Edge users should install the latest Chromium update, and Chrome users can refer to Google Chrome Releases for patch details.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118329">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium FileAPI Improper Input Validation CVE-2026-118331</title>
-      <link>https://secubuzz.com/news/chromium-fileapi-improper-input-validation-cve-202-83f47097</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-fileapi-improper-input-validation-cve-202-83f47097</guid>
-      <description><![CDATA[Chromium's FileAPI suffers from improper input validation, identified as CVE-2026-118331. The flaw allows attackers to supply malformed input that may lead to memory corruption or denial of service, though no active exploitation has been reported. Microsoft Edge, built on Chromium, incorporates the fix; users should update to the latest release to mitigate the risk.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118331">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium V8 Memory Corruption CVE-2026-118320</title>
-      <link>https://secubuzz.com/news/chromium-v8-memory-corruption-cve-2026-118320-cdcf9e39</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-v8-memory-corruption-cve-2026-118320-cdcf9e39</guid>
-      <description><![CDATA[A memory corruption flaw, CVE-2026-118320, exists in Chromium's V8 engine. The defect allows arbitrary memory corruption during JavaScript execution, potentially enabling remote code execution if exploited; no public exploit is confirmed. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release or apply the Chrome patch referenced by Google.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118320">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium ImageCapture Use-After-Free CVE-2026-118334</title>
-      <link>https://secubuzz.com/news/chromium-imagecapture-use-after-free-cve-2026-1183-6888447f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-imagecapture-use-after-free-cve-2026-1183-6888447f</guid>
-      <description><![CDATA[A use-after-free vulnerability, CVE-2026-118334, exists in Chromium's ImageCapture API. The flaw can corrupt memory during image capture operations, potentially allowing arbitrary code execution if an attacker controls the API; no public exploit is reported. Microsoft Edge includes the Chromium patch; users should update to the latest Edge or apply the Chrome update referenced by Google.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118334">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Edge Addresses CVE-2026-118327 Media Memory Corruption</title>
-      <link>https://secubuzz.com/news/edge-addresses-cve-2026-118327-media-memory-corrup-dea10119</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-cve-2026-118327-media-memory-corrup-dea10119</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) mitigates a memory corruption flaw in Chromium’s Media component, identified as CVE-2026-118327. The vulnerability arises from improper handling of media buffer boundaries, potentially allowing local code execution if exploited within a privileged process. Red Hat and Microsoft have released patch updates; users should install the latest Chromium-based Edge release to eliminate the flaw.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118327">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>

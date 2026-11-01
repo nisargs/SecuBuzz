@@ -51,6 +51,61 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "github-supply-chain-attack-detection-for-61-reposi-737e1f61",
+    "title": "GitHub Supply Chain Attack Detection for 61 Repositories",
+    "summary": "GitHub identified a series of supply chain attacks targeting 61 repositories, enabling malicious code injection into open-source projects. The attacks exploit compromised contributor credentials and insecure merge workflows, allowing attackers to embed backdoors that persist across forks. Security teams should review audit logs, enforce two-factor authentication, and apply the provided patch or workflow restrictions to eliminate the threat.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/github-issues-detect-61-repo-supply-chain-attacks",
+    "publishedAt": "2026-11-01T16:29:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-supply-chain-attack-detection-for-61-reposi",
+      "article-737e1f61",
+      "737e1f61",
+      "github-supply-chain-attack-detection-for-61-reposi-34c3aa",
+      "github-supply-chain-attack-detection-for-61-repositories"
+    ]
+  },
+  {
+    "slug": "chainalysis-audit-leak-exposes-customer-data-db5b1944",
+    "title": "Chainalysis Audit Leak Exposes Customer Data",
+    "summary": "Chainalysis suffered a breach that exposed audit records containing sensitive customer data, including personal identifiers and transaction histories. The compromise resulted from insufficient access controls on the audit database, allowing attackers to download large volumes of data without detection. Chainalysis has applied a patch to strengthen database permissions, enabled multi‑factor authentication, and notified affected customers.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/chainalysis-breach-audit-leaked-customer-data",
+    "publishedAt": "2026-11-01T16:25:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chainalysis-audit-leak-exposes-customer-data",
+      "article-db5b1944",
+      "db5b1944",
+      "chainalysis-audit-leak-exposes-customer-data-18cd19"
+    ]
+  },
+  {
+    "slug": "fbi-links-dprk-hackers-to-6-43b-heist-a1677651",
+    "title": "FBI Links DPRK Hackers to $6.43B Heist",
+    "summary": "The FBI has linked a North Korean hacking group to a $6.43 billion cyber heist that targeted financial institutions. Investigators attribute the breach to credential theft and exploitation of weak multi‑factor authentication, enabling unauthorized transfers of over $6 billion. Law enforcement recommends tightening MFA, monitoring for anomalous transfers, and conducting forensic analysis of compromised accounts.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/tradertraitor-fbi-links-dprk-hackers-to-6-43b-heist",
+    "publishedAt": "2026-11-01T15:31:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-links-dprk-hackers-to-6-43b-heist",
+      "article-a1677651",
+      "a1677651",
+      "fbi-links-dprk-hackers-to-6-43b-heist-4cdaad"
+    ]
+  },
+  {
     "slug": "police-bust-cyber-syndicate-operators-16d63d38",
     "title": "Police Bust Cyber Syndicate Operators",
     "summary": "Law enforcement agencies dismantled the Cyber Syndicate, arresting key operators involved in coordinated cybercrime. Court filings detail the group’s use of phishing, credential theft, and ransomware delivery tactics, with profiles indicating a structured, financially motivated operation. Security teams should review the disclosed defensive controls, including multi‑factor authentication, email filtering, and endpoint detection, to mitigate similar threats.",
@@ -410,6 +465,68 @@ export const news: NewsBrief[] = [
       "article-7bc6ac66",
       "7bc6ac66",
       "reddit-shifts-to-logged-in-service-model-5cc4b9"
+    ]
+  },
+  {
+    "slug": "chromium-use-after-free-cve-2026-118357-in-filesys-97dcff30",
+    "title": "Chromium Use-After-Free CVE-2026-118357 in FileSystem",
+    "summary": "Chromium’s FileSystem module contains a use-after-free flaw (CVE-2026-118357) that can lead to arbitrary code execution on affected browsers. The vulnerability arises when the browser frees a file handle before completing pending operations, allowing attackers to trigger memory corruption. Microsoft Edge and Chrome have released patches; users should update to the latest version or apply the vendor’s hotfix.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118357",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118357"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-118357-in-filesys",
+      "article-97dcff30",
+      "97dcff30",
+      "chromium-use-after-free-cve-2026-118357-in-filesys-1fe91b",
+      "chromium-use-after-free-cve-2026-118357-in-filesystem"
+    ]
+  },
+  {
+    "slug": "chromium-webaudio-memory-corruption-cve-2026-11835-9a63abf5",
+    "title": "Chromium WebAudio Memory Corruption CVE-2026-118358",
+    "summary": "Chromium’s WebAudio engine contains a memory corruption flaw (CVE-2026-118358) that can enable arbitrary code execution in affected browsers. The bug occurs when the audio context processes malformed audio data, leading to out-of-bounds writes that attackers can exploit. Chrome and Microsoft Edge have issued patches; users should update to the latest release or apply the vendor’s hotfix to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118358",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118358"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-webaudio-memory-corruption-cve-2026-11835",
+      "article-9a63abf5",
+      "9a63abf5",
+      "chromium-webaudio-memory-corruption-cve-2026-11835-1fe91b",
+      "chromium-webaudio-memory-corruption-cve-2026-118358"
+    ]
+  },
+  {
+    "slug": "chromium-v8-memory-corruption-flaw-cve-2026-118359-de0fc468",
+    "title": "Chromium V8 Memory Corruption Flaw CVE-2026-118359",
+    "summary": "CVE-2026-118359 is a memory corruption flaw in Chromium’s V8 engine triggered by JavaScript, affecting Microsoft Edge and browsers. The flaw arises from unchecked buffer handling in script parsing, enabling remote code execution with a CVSS of 8.2; no public exploit. Microsoft recommends installing the latest Edge update, and Google advises applying the newest Chrome patch from the Chrome Releases blog.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118359",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118359"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-v8-memory-corruption-flaw-cve-2026-118359",
+      "article-de0fc468",
+      "de0fc468",
+      "chromium-v8-memory-corruption-flaw-cve-2026-118359-1fe91b"
     ]
   },
   {
@@ -1506,23 +1623,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-reports-brotli-decoder-buffer-overflow-flaw-40230ea2",
-    "title": "Google Reports Brotli Decoder Buffer Overflow Flaw",
-    "summary": "Google disclosed a buffer overflow flaw tracked as CVE-2026-111497 affecting the standard Brotli data compression decoder library. The memory corruption flaw stems from improper input parsing during data decompression, potentially causing application crashes or remote code execution. Developers and system integrators utilizing the Brotli decoder must monitor vendor security bulletins and update to patched software releases.",
+    "slug": "node-js-and-google-address-critical-cve-2026-11149-5a41a94c",
+    "title": "Node.js and Google Address Critical CVE‑2026‑111497 in Brotli Decoder",
+    "summary": "A critical remote code execution flaw (CVE‑2026‑111497) was discovered in the Brotli decompression library used by Node.js and other software. The vulnerability arises from improper bounds checking during decompression, allowing attackers to corrupt memory and execute arbitrary code without authentication. Security teams should immediately apply the Node.js hotfix or update to the latest patched Brotli library to mitigate the risk.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "Microsoft MSRC",
     "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
     "publishedAt": "2026-10-31T08:13:53.000Z",
-    "cves": [
-      "CVE-2026-111497"
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/node-js-how-to-patch-brotli-decoder-cve-2026-111497-rce"
+      }
     ],
-    "additionalSources": [],
     "aliases": [
-      "google-reports-brotli-decoder-buffer-overflow-flaw",
-      "article-40230ea2",
-      "40230ea2",
-      "google-reports-brotli-decoder-buffer-overflow-flaw-1fec46"
+      "node-js-and-google-address-critical-cve-2026-11149",
+      "article-5a41a94c",
+      "5a41a94c",
+      "node-js-and-google-address-critical-cve-2026-11149-1fec46",
+      "node-js-and-google-address-critical-cve-2026-111497-in-brotl"
     ]
   },
   {
@@ -6641,120 +6762,6 @@ export const news: NewsBrief[] = [
       "article-9a88de92",
       "9a88de92",
       "chrome-early-stable-update-released-671bb3"
-    ]
-  },
-  {
-    "slug": "chromeos-stable-patch-fixes-critical-fileapi-flaw-5a28c9f3",
-    "title": "ChromeOS Stable Patch Fixes Critical FileAPI Flaw",
-    "summary": "Google released ChromeOS Stable channel update 16836.30.0, patching multiple vulnerabilities including a critical improper input validation flaw in FileAPI. CVE-2026-118331 carries a critical severity rating, while five additional high-severity flaws span use-after-free and input validation issues across Animation, Compositing, UI, and ReadingList components. Users should update to browser version 156.0.8078.77 to remediate all disclosed defects.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-chromeos_01748991111.html",
-    "publishedAt": "2026-10-28T19:45:30.211Z",
-    "cves": [
-      "CVE-2026-118331"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-stable-patch-fixes-critical-fileapi-flaw",
-      "article-5a28c9f3",
-      "5a28c9f3",
-      "chromeos-stable-patch-fixes-critical-fileapi-flaw-60e267"
-    ]
-  },
-  {
-    "slug": "aws-agent-tool-masking-bypass-cve-2026-115415-212892d7",
-    "title": "AWS Agent Tool Masking Bypass CVE-2026-115415",
-    "summary": "CVE-2026-115415 allows an LLM to bypass environment variable masking in Strands Agents Tools, exposing cloud credentials and API keys. The flaw occurs when a crafted prompt instructs the tool to disable masking, returning sensitive data without operator consent. AWS recommends applying the latest patch and disabling automatic tool invocation until remediation is applied.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/",
-    "publishedAt": "2026-10-28T19:39:08.000Z",
-    "cves": [
-      "CVE-2026-115415"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-agent-tool-masking-bypass-cve-2026-115415",
-      "article-212892d7",
-      "212892d7",
-      "aws-agent-tool-masking-bypass-cve-2026-115415-5142fc"
-    ]
-  },
-  {
-    "slug": "ghostaction-pivots-to-developer-endpoints-and-clou-9633e61e",
-    "title": "GhostAction Pivots to Developer Endpoints and Cloud",
-    "summary": "The GhostAction cybercrime group's supply chain attack campaign has fizzled, with the outfit shifting its operational focus toward developer endpoints and cloud access infrastructure. The group's persistent presence on GitHub signals an intent to target software development workflows and cloud-connected environments as new attack vectors.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
-    "publishedAt": "2026-10-28T19:39:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostaction-pivots-to-developer-endpoints-and-clou",
-      "article-9633e61e",
-      "9633e61e",
-      "ghostaction-pivots-to-developer-endpoints-and-clou-d1cd75",
-      "ghostaction-pivots-to-developer-endpoints-and-cloud"
-    ]
-  },
-  {
-    "slug": "discord-opens-public-server-messages-to-search-eng-774d0078",
-    "title": "Discord Opens Public Server Messages to Search Engines",
-    "summary": "Discord will permit search engines to index discussions within Discoverable Servers, making those messages accessible on the open web to users outside the platform without requiring an account or invitation. This policy change expands the public surface of server communications previously confined to the Discord ecosystem.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
-    "publishedAt": "2026-10-28T18:44:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "discord-opens-public-server-messages-to-search-eng",
-      "article-774d0078",
-      "774d0078",
-      "discord-opens-public-server-messages-to-search-eng-24cc09",
-      "discord-opens-public-server-messages-to-search-engines"
-    ]
-  },
-  {
-    "slug": "volt-typhoon-leverages-silent-train-for-zero-days-c03bdc82",
-    "title": "Volt Typhoon Leverages Silent Train for Zero-Days",
-    "summary": "The China-nexus espionage group Volt Typhoon operated a covert access network dubbed Silent Train to execute four zero-day exploitation campaigns for strategic access. Lumen Technologies Black Lotus Labs identified the network in late 2023, noting it uses rotating chains of compromised SOHO, IoT, and enterprise infrastructure.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
-    "publishedAt": "2026-10-28T18:08:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "volt-typhoon-leverages-silent-train-for-zero-days",
-      "article-c03bdc82",
-      "c03bdc82",
-      "volt-typhoon-leverages-silent-train-for-zero-days-371e09"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-mrtg-on-rhel-9-4-sap-f0180ad3",
-    "title": "Red Hat Patches mrtg on RHEL 9.4 SAP",
-    "summary": "Red Hat released a security update for the mrtg monitoring package on Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. The update addresses vulnerabilities rated as Important by Red Hat Product Security, with specific CVSS scores available through referenced CVE links. Administrators should apply the RHSA-2026:92051 patch to remediate the identified flaws in their mrtg installations.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92051",
-    "publishedAt": "2026-10-28T18:00:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-mrtg-on-rhel-9-4-sap",
-      "article-f0180ad3",
-      "f0180ad3",
-      "red-hat-patches-mrtg-on-rhel-9-4-sap-37d9b1"
     ]
   }
 ];
