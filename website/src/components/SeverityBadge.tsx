@@ -11,7 +11,8 @@ const toneClass: Record<Severity, string> = {
   Critical: 'text-critical border-critical/40 bg-critical/10',
   High: 'text-high border-high/40 bg-high/10',
   Medium: 'text-medium border-medium/40 bg-medium/10',
-  Low: 'text-low border-low/40 bg-low/10'
+  Low: 'text-low border-low/40 bg-low/10',
+  Unknown: 'text-subtle border-line bg-surface-elevated/40'
 };
 
 export function SeverityBadge({ severity, cvss }: SeverityBadgeProps) {

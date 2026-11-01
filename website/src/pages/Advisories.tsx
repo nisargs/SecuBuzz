@@ -56,8 +56,8 @@ export function Advisories() {
         : 'Software Vendor';
 
       const matchedProduct = brief
-        ? (brief.summary.match(/affecting ([^.]+)/i)?.[1]?.split(',')[0]?.trim() || brief.title.split(' ')[0])
-        : 'Affected Software';
+        ? (brief.summary.match(/affecting ([^.]+)/i)?.[1]?.split(',')[0]?.trim() || 'Unknown')
+        : 'Unknown';
 
       synthesized.push({
         cve,
@@ -65,9 +65,19 @@ export function Advisories() {
         vendor: matchedVendor,
         product: matchedProduct,
         name: brief?.title || `${cve} Vulnerability Intelligence`,
-        dateAdded: brief?.publishedAt ? brief.publishedAt.slice(0, 10) : new Date().toISOString().slice(0, 10),
+        dateAdded: brief?.publishedAt ? brief.publishedAt.slice(0, 10) : 'Unknown',
         dueDate: '—',
-        severity: brief?.severity === 'CRITICAL' ? 'Critical' : brief?.severity === 'HIGH' ? 'High' : 'Medium',
+        severity: brief
+          ? brief.severity === 'CRITICAL'
+            ? 'Critical'
+            : brief.severity === 'HIGH'
+            ? 'High'
+            : brief.severity === 'LOW'
+            ? 'Low'
+            : brief.severity === 'MEDIUM'
+            ? 'Medium'
+            : 'Unknown'
+          : 'Unknown',
         cwe: '—',
         ransomware: false,
         description: brief?.summary || `Monitored CVE on your Watchlist. Active threat intelligence tracking.`,
