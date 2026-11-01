@@ -2837,5 +2837,13 @@
   "https://cybernewsai.com/blog/official-claude-code-extension-on-cursor-marketplace-tr",
   "https://cybernewsai.com/blog/ghostaction-hacking-wave-fizzles-but-attackers-lurk-on",
   "https://access.redhat.com/errata/RHSA-2026:92438",
-  "https://access.redhat.com/errata/RHSA-2026:92615"
+  "https://access.redhat.com/errata/RHSA-2026:92615",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118320",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118334",
+  "https://access.redhat.com/errata/RHSA-2026:91057",
+  "https://access.redhat.com/errata/RHSA-2026:91056",
+  "https://cybernewsai.com/blog/tailscale-patches-ssh-flaws-that-could-let-hacked-devic",
+  "https://access.redhat.com/errata/RHSA-2026:92590",
+  "https://access.redhat.com/errata/RHSA-2026:92800",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497"
 ]

@@ -121,6 +121,38 @@
     "additionalSources": []
   },
   {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118320",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118320",
+    "title": "Chromium V8 Memory Corruption CVE-2026-118320",
+    "headline": "Chromium V8 Memory Corruption CVE-2026-118320",
+    "summary": "A memory corruption flaw, CVE-2026-118320, exists in Chromium's V8 engine. The defect allows arbitrary memory corruption during JavaScript execution, potentially enabling remote code execution if exploited; no public exploit is confirmed. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release or apply the Chrome patch referenced by Google.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "ingestedAt": "2026-11-01T06:46:23.294Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118320",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118334",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118334",
+    "title": "Chromium ImageCapture Use-After-Free CVE-2026-118334",
+    "headline": "Chromium ImageCapture Use-After-Free CVE-2026-118334",
+    "summary": "A use-after-free vulnerability, CVE-2026-118334, exists in Chromium's ImageCapture API. The flaw can corrupt memory during image capture operations, potentially allowing arbitrary code execution if an attacker controls the API; no public exploit is reported. Microsoft Edge includes the Chromium patch; users should update to the latest Edge or apply the Chrome update referenced by Google.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "ingestedAt": "2026-11-01T06:46:23.294Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118334",
+    "additionalSources": []
+  },
+  {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118327",
     "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118327",
     "title": "Edge Addresses CVE-2026-118327 Media Memory Corruption",
@@ -520,6 +552,22 @@
     "source": "The Hacker News",
     "publishedAt": "2026-10-31T08:27:43.000Z",
     "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
+    "title": "Google Reports Brotli Decoder Buffer Overflow Flaw",
+    "headline": "Google Reports Brotli Decoder Buffer Overflow Flaw",
+    "summary": "Google disclosed a buffer overflow flaw tracked as CVE-2026-111497 affecting the standard Brotli data compression decoder library. The memory corruption flaw stems from improper input parsing during data decompression, potentially causing application crashes or remote code execution. Developers and system integrators utilizing the Brotli decoder must monitor vendor security bulletins and update to patched software releases.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T08:13:53.000Z",
+    "ingestedAt": "2026-11-01T06:48:01.741Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
     "additionalSources": []
   },
   {
@@ -2677,6 +2725,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:91057",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91057",
+    "title": "RHEL9 libXrender Important Security Update",
+    "headline": "RHEL9 libXrender Important Security Update",
+    "summary": "Red Hat released an Important security update for libXrender on RHEL 9. The update addresses one or more vulnerabilities that could allow memory corruption or privilege escalation; CVSS scores are available via the referenced CVE links. Users should install the RHSA-2026:91057 update immediately on all RHEL 9 systems to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T21:31:45.000Z",
+    "ingestedAt": "2026-11-01T06:46:23.295Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:91057",
+    "additionalSources": []
+  },
+  {
     "id": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
     "sourceUrl": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
     "title": "Chrome Updates Desktop Stable Channel",
@@ -2687,6 +2751,22 @@
     "source": "Google Chrome Releases",
     "publishedAt": "2026-10-29T21:26:20.252Z",
     "url": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:91056",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91056",
+    "title": "RHEL9 libXi Moderate Security Update",
+    "headline": "RHEL9 libXi Moderate Security Update",
+    "summary": "Red Hat issued a Moderate security update for libXi on RHEL 9. The patch fixes vulnerabilities that could lead to memory corruption or privilege escalation; CVSS scores are provided via the CVE links in the advisory. Administrators should apply the RHSA-2026:91056 update to all affected RHEL 9 hosts and derivatives to ensure protection.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T21:23:21.000Z",
+    "ingestedAt": "2026-11-01T06:46:23.295Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:91056",
     "additionalSources": []
   },
   {
@@ -2719,6 +2799,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:92800",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92800",
+    "title": "Red Hat Patches perl-XML-LibXML in RHEL 8.6",
+    "headline": "Red Hat Patches perl-XML-LibXML in RHEL 8.6",
+    "summary": "Red Hat released a security update addressing security flaws within the perl-XML-LibXML package for Red Hat Enterprise Linux 8.6 systems. Red Hat Product Security rated the underlying vulnerability as Important based on Common Vulnerability Scoring System metrics affecting mission-critical deployment environments. Administrators using Advanced Mission Critical Update Support or Extended Update Support Long-Life Add-On packages should apply the patch immediately.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T20:35:45.000Z",
+    "ingestedAt": "2026-11-01T06:48:01.741Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:92800",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
     "sourceUrl": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
     "title": "Reporters Notebook Video Series Discusses AI Cybersecurity Training Trends",
@@ -2733,6 +2829,23 @@
     "isFutureSkew": false,
     "url": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:92590",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92590",
+    "title": "RHSA-2026:92590: Important: httpd security update",
+    "headline": "RHSA-2026:92590: Important: httpd security update",
+    "summary": "An update for httpd is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-10-29T20:08:24.000Z",
+    "ingestedAt": "2026-11-01T06:47:26.785Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:92615",
@@ -3800,6 +3913,25 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybernewsai.com/blog/tailscale-patches-ssh-flaws-that-could-let-hacked-devic",
+    "sourceUrl": "https://cybernewsai.com/blog/tailscale-patches-ssh-flaws-that-could-let-hacked-devic",
+    "title": "Tailscale SSH Flaws: How to Detect & Patch Root Forwarding Flaws",
+    "headline": "Tailscale SSH Flaws: How to Detect & Patch Root Forwarding Flaws",
+    "summary": "Critical security intelligence alert regarding Tailscale SSH Flaws: How to Detect &. Review root-cause telemetry, hunt via detection rules, and patch today. (Corroborated Threat Intelligence: Associated CVE is CVE-2026-97229).",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-10-29T00:49:54.000Z",
+    "ingestedAt": "2026-11-01T06:47:26.784Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-97229"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://cybernewsai.com/blog/anthropic-s-unreleased-ai-model-chains-flaws-into-worki",
     "sourceUrl": "https://cybernewsai.com/blog/anthropic-s-unreleased-ai-model-chains-flaws-into-worki",
     "title": "Autonomous AI Exploits: Defend Against Zero‑Day Agents",
@@ -4858,110 +4990,6 @@
     "source": "ZDI Advisories",
     "publishedAt": "2026-10-28T05:00:00.000Z",
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-822/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-821/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-821/",
-    "title": "Alpine iLX‑F511 vCard Overflow Enables Bluetooth RCE",
-    "headline": "Alpine iLX‑F511 vCard Overflow Enables Bluetooth RCE",
-    "summary": "A stack‑based buffer overflow in Alpine iLX‑F511 vCard parsing lets attackers run arbitrary code via a malicious Bluetooth connection. CVE‑2026‑118603 scores 8.0 on CVSS, requires user interaction, and permits remote code execution that could compromise device control. Alpine released a patch for the vCard flaw; apply it promptly and disable Bluetooth services when unnecessary to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-821/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-820/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-820/",
-    "title": "Alpine iLX‑F511 Privilege Escalation via Fiv.System",
-    "headline": "Alpine iLX‑F511 Privilege Escalation via Fiv.System",
-    "summary": "A local privilege escalation flaw in Alpine iLX‑F511 Fiv.System allows attackers who have low‑privileged code execution to gain higher privileges. The vulnerability, CVE‑2026‑118602, carries a CVSS score of 7.8 and can compromise device control and data integrity if exploited. Alpine has issued a patch addressing the privilege escalation; apply it immediately and restrict local code execution privileges to mitigate risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-820/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-824/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-824/",
-    "title": "Alpine iLX-F511 Framework Service RCE Vulnerability",
-    "headline": "Alpine iLX-F511 Framework Service RCE Vulnerability",
-    "summary": "Network-adjacent attackers can execute arbitrary code on Alpine iLX-F511 devices without authentication via an exposed dangerous function in the framework service. CVE-2026-118606 has a CVSS score of 8.8 and allows unauthenticated remote code execution affecting enterprise infrastructure. Organizations should apply vendor patches immediately to remediate this vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-824/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-823/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-823/",
-    "title": "Alpine iLX-F511 Bluetooth Buffer Overflow RCE",
-    "headline": "Alpine iLX-F511 Bluetooth Buffer Overflow RCE",
-    "summary": "An attacker with Bluetooth pairing capability can execute arbitrary code on Alpine iLX-F511 devices through a stack-based buffer overflow in the prh_sdp_service_search_decode function. CVE-2026-118605 carries a CVSS score of 8.0 and requires prior Bluetooth device pairing to exploit. Security teams must update firmware to block this attack vector.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-823/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-827/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-827/",
-    "title": "Alpine iLX-F511 Buffer Overflow Enables Remote Code Execution",
-    "headline": "Alpine iLX-F511 Buffer Overflow Enables Remote Code Execution",
-    "summary": "A stack-based buffer overflow in Alpine iLX-F511's Android Auto Connection Handler allows physically present attackers to execute arbitrary code. The flaw, identified as 'CVE-2026-118609', has a CVSS score of 6.8 and does not require authentication, enabling local privilege escalation. Security teams should apply the vendor's patch or disable the vulnerable component to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-827/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-826/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-826/",
-    "title": "Alpine iLX-F511 Bluetooth Read Leak Exposes Sensitive Data",
-    "headline": "Alpine iLX-F511 Bluetooth Read Leak Exposes Sensitive Data",
-    "summary": "An out-of-bounds read in Alpine iLX-F511's libanwbtstack.so allows network-adjacent attackers to disclose sensitive information in affected installations. The vulnerability, 'CVE-2026-118608', requires pairing a malicious Bluetooth device and has a CVSS score of 3.5, indicating low exploitation risk. Security teams should update the firmware or block Bluetooth pairing to prevent data leakage.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-826/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-825/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-825/",
-    "title": "Alpine iLX-F511 diagapp Command Injection Enables Code Execution",
-    "headline": "Alpine iLX-F511 diagapp Command Injection Enables Code Execution",
-    "summary": "A command injection flaw in Alpine iLX-F511's diagapp permits physically present attackers to run arbitrary commands in affected devices. The vulnerability, identified as 'CVE-2026-118607', has a CVSS score of 6.8 and does not require authentication, allowing local privilege escalation. Apply the vendor's patch or disable diagapp to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-825/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-828/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-828/",
-    "title": "Alpine iLX-F511 Android Auto Service RCE via Stack Overflow",
-    "headline": "Alpine iLX-F511 Android Auto Service RCE via Stack Overflow",
-    "summary": "A stack‑based buffer overflow in the Alpine iLX‑F511 Android Auto Service allows attackers to execute arbitrary code without authentication. The vulnerability, CVE-2026-118610, scores CVSS 8.8 and can be exploited remotely, granting full device control. Patches are available from Alpine; users should update firmware to the latest release or apply the vendor‑supplied fix.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-10-28T05:00:00.000Z",
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-828/",
     "additionalSources": []
   }
 ]
