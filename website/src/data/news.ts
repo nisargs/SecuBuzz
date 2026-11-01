@@ -186,6 +186,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "edge-patch-addresses-angle-memory-corruption-cve-2-7b7f1bd7",
+    "title": "Edge Patch Addresses ANGLE Memory Corruption CVE-2026-118322",
+    "summary": "Microsoft Edge (Chromium-based) is affected by CVE-2026-118322, a memory corruption flaw in Chromium’s ANGLE component. The bug can corrupt rendering memory, potentially enabling arbitrary code execution, though no public exploit is known. Microsoft has patched the issue in its Chromium base; users should update to the latest Edge release or apply the Chrome patch.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118322",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118322"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "edge-patch-addresses-angle-memory-corruption-cve-2",
+      "article-7b7f1bd7",
+      "7b7f1bd7",
+      "edge-patch-addresses-angle-memory-corruption-cve-2-1fe91c",
+      "edge-patch-addresses-angle-memory-corruption-cve-2026-118322"
+    ]
+  },
+  {
+    "slug": "edge-patch-fixes-webrtc-input-validation-cve-2026-38e0d67b",
+    "title": "Edge Patch Fixes WebRTC Input Validation CVE-2026-118328",
+    "summary": "Microsoft Edge (Chromium-based) is affected by CVE-2026-118328, an improper input validation flaw in Chromium’s WebRTC. The defect allows malformed data to bypass checks, potentially causing memory corruption or denial of service, though no active exploitation has been reported. Microsoft has fixed the issue in its Chromium base; users should update to the latest Edge release or apply the Chrome patch.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118328",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "cves": [
+      "CVE-2026-118328"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "edge-patch-fixes-webrtc-input-validation-cve-2026",
+      "article-38e0d67b",
+      "38e0d67b",
+      "edge-patch-fixes-webrtc-input-validation-cve-2026-1fe91c",
+      "edge-patch-fixes-webrtc-input-validation-cve-2026-118328"
+    ]
+  },
+  {
     "slug": "chromium-filesystem-memory-corruption-cve-2026-118-69e77aef",
     "title": "Chromium FileSystem Memory Corruption CVE-2026-118306",
     "summary": "CVE‑2026‑118306 is a memory corruption flaw in Chromium’s FileSystem module that can corrupt data when Edge processes malformed paths. The bug arises from unchecked buffer handling during file metadata parsing, allowing local privilege escalation. Microsoft released an update that incorporates Chrome’s patch; users should install the latest Edge or apply the Chromium update to mitigate.",
@@ -945,6 +987,24 @@ export const news: NewsBrief[] = [
       "400539ae",
       "polymarket-supply-chain-flaw-cve-2026-97229-detect-7660bd",
       "polymarket-supply-chain-flaw-cve-2026-97229-detected"
+    ]
+  },
+  {
+    "slug": "fbi-seizes-virtualine-domain-5b555493",
+    "title": "FBI Seizes Virtualine Domain",
+    "summary": "The FBI has seized the domain associated with the Virtualine threat actor, disrupting its public command and control infrastructure. Court filings detail Virtualine’s use of compromised credentials and phishing campaigns to compromise corporate networks. Security teams should block the domain, monitor for related indicators, and review credential hygiene practices online.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/bulletproof-host-virtualine-loses-its-domain-to-fbi-sei",
+    "publishedAt": "2026-10-31T02:00:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-seizes-virtualine-domain",
+      "article-5b555493",
+      "5b555493",
+      "fbi-seizes-virtualine-domain-33e3c7"
     ]
   },
   {
@@ -1948,6 +2008,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "wiz-releases-ai-threat-readiness-survey-benchmark-f3db63f7",
+    "title": "Wiz Releases AI Threat Readiness Survey Benchmark Report",
+    "summary": "Wiz Research published its AI Threat Readiness Survey Report detailing emerging risk vectors within enterprise cloud AI environments. According to a report by Wiz Research, organizational benchmarks highlight expanding shadow AI deployments, orchestration risks, and defensive requirements against automated AI threats. The findings emphasize adopting proactive security controls and implementing AI-against-AI defensive strategies across enterprise infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026",
+    "publishedAt": "2026-10-30T12:57:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-releases-ai-threat-readiness-survey-benchmark",
+      "article-f3db63f7",
+      "f3db63f7",
+      "wiz-releases-ai-threat-readiness-survey-benchmark-46c9fe",
+      "wiz-releases-ai-threat-readiness-survey-benchmark-report"
+    ]
+  },
+  {
     "slug": "shufti-launches-ai-agent-verification-solution-17c64adc",
     "title": "Shufti Launches AI Agent Verification Solution",
     "summary": "Shufti introduced Know Your Agent (KYA), a verification platform that ties autonomous AI agent actions to verified owners and permissions. The solution addresses agentic commerce scenarios where AI agents open accounts, place orders, and move funds on behalf of individuals. Businesses can confirm agent authenticity, accountability, and approval scope before processing requests.",
@@ -1963,6 +2042,25 @@ export const news: NewsBrief[] = [
       "article-17c64adc",
       "17c64adc",
       "shufti-launches-ai-agent-verification-solution-7e4768"
+    ]
+  },
+  {
+    "slug": "gchq-lacks-accountability-for-thousands-of-storage-15ae3b71",
+    "title": "GCHQ Lacks Accountability for Thousands of Storage Devices",
+    "summary": "The Investigatory Powers Commissioner’s Office reported that GCHQ cannot account for thousands of data storage devices, raising concerns about oversight. The annual report highlighted delays in the agency’s investigation, with IPCO expressing disappointment over the time taken to resolve the issue. Stakeholders are urged to strengthen device tracking protocols and implement stricter audit controls to prevent future lapses.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/gchq-cannot-account-for-thousands-of-data-devices",
+    "publishedAt": "2026-10-30T12:52:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gchq-lacks-accountability-for-thousands-of-storage",
+      "article-15ae3b71",
+      "15ae3b71",
+      "gchq-lacks-accountability-for-thousands-of-storage-539dd1",
+      "gchq-lacks-accountability-for-thousands-of-storage-devices"
     ]
   },
   {
@@ -2144,6 +2242,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "framework-addresses-remediation-delays-for-urgent-9c00e60b",
+    "title": "Framework Addresses Remediation Delays for Urgent Security Fixes",
+    "summary": "Enterprise security teams face operational remediation friction when resolving urgent security alerts across production application environments. Implementation delays occur due to practical availability concerns that configuration changes, IPS protections, or endpoint policies could disrupt legitimate traffic and services. Organizations are advised to implement an 'Observe, Prove, Act, Confirm' operational framework to validate proposed patches before deployment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
+    "publishedAt": "2026-10-30T11:58:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "framework-addresses-remediation-delays-for-urgent",
+      "article-9c00e60b",
+      "9c00e60b",
+      "framework-addresses-remediation-delays-for-urgent-107a87",
+      "framework-addresses-remediation-delays-for-urgent-security-f"
+    ]
+  },
+  {
     "slug": "hackers-leak-41-000-dhs-employee-data-755082fa",
     "title": "Hackers Leak 41,000 DHS Employee Data",
     "summary": "A hacker group claims to have exfiltrated personal data of 41,000 DHS employees, including contact details and group memberships. The leak exposes sensitive employee information that could facilitate social engineering or insider threat attacks. Security teams should verify compromised accounts, enforce MFA, and conduct a comprehensive audit of exposed data to mitigate exploitation.",
@@ -2297,6 +2414,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cursor-removes-malicious-claude-code-extension-2de91ea3",
+    "title": "Cursor Removes Malicious Claude Code Extension",
+    "summary": "Cursor removed a malicious Claude Code 2.1.313 extension from its marketplace, halting its distribution. The extension contained code designed to exfiltrate data, and Socket examined registry records confirming its presence on user systems. Cursor has removed the add‑on and recommends users uninstall any copies; no additional patch is required immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/claude-code-extension-compromise",
+    "publishedAt": "2026-10-30T09:26:06.050Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cursor-removes-malicious-claude-code-extension",
+      "article-2de91ea3",
+      "2de91ea3",
+      "cursor-removes-malicious-claude-code-extension-389ff0"
+    ]
+  },
+  {
     "slug": "glm-5-3-demonstrates-offensive-cyber-capabilities-723435de",
     "title": "GLM-5.3 Demonstrates Offensive Cyber Capabilities",
     "summary": "Open-weight AI model GLM-5.3 was evaluated against 13 offensive cyber scenarios using CyScenarioBench. The model completed three scenarios, successfully planning and executing multi‑stage attacks within simulated networks. The assessment highlights the model’s potential for adversarial use, underscoring the need for careful monitoring of open‑weight LLM deployments.",
@@ -2412,6 +2547,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "belarus-aligns-with-russia-s-frostyneighbor-apt-d4f6e9e3",
+    "title": "Belarus Aligns with Russia's FrostyNeighbor APT",
+    "summary": "The FrostyNeighbor APT launched a destructive attack in Ukraine, prompting concerns about Belarus aligning with Russian cyber objectives. The operation exploited known vulnerabilities in Ukrainian infrastructure, enabling lateral movement and data exfiltration, though no public exploit details were disclosed. Security teams should monitor for FrostyNeighbor signatures, apply relevant patches, and strengthen perimeter defenses against similar APT campaigns.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
+    "publishedAt": "2026-10-30T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "belarus-aligns-with-russia-s-frostyneighbor-apt",
+      "article-d4f6e9e3",
+      "d4f6e9e3",
+      "belarus-aligns-with-russia-s-frostyneighbor-apt-727e9e"
+    ]
+  },
+  {
     "slug": "rhel-8-8-kernel-update-addresses-important-vulnera-0cd2a0c4",
     "title": "RHEL 8.8 Kernel Update Addresses Important Vulnerabilities",
     "summary": "Red Hat released a kernel update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications, addressing multiple security vulnerabilities. The advisory lists several CVEs with CVSS base scores, but the update is classified as Important, indicating a high risk of exploitation.",
@@ -2487,6 +2640,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gartner-introduces-integrated-security-operations-5429a29a",
+    "title": "Gartner Introduces Integrated Security Operations Center (ISOC)",
+    "summary": "Gartner has defined the Integrated Security Operations Center (ISOC) category to address gaps left by traditional SIEM solutions. The shift reflects that SIEMs alone cannot collect data, support investigations, or manage incidents effectively in today’s evolving threat landscape. Organizations should evaluate ISOC offerings, integrate them with existing SIEMs, and adopt modular architectures to improve detection and response capabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/stellar-cyber-integrated-security-operations-center/",
+    "publishedAt": "2026-10-30T06:00:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gartner-introduces-integrated-security-operations",
+      "article-5429a29a",
+      "5429a29a",
+      "gartner-introduces-integrated-security-operations-1d54dc",
+      "gartner-introduces-integrated-security-operations-center-iso"
+    ]
+  },
+  {
     "slug": "scammers-rebuild-fake-shopping-sites-rapidly-f5fca8b8",
     "title": "Scammers Rebuild Fake Shopping Sites Rapidly",
     "summary": "Scammers rapidly rebuild counterfeit .shop domains after takedowns, deploying identical HTML, JavaScript, and payment forms to harvest card data. The operation targets retail and ticketing sites, funneling captured credentials to a single collection backend. Security teams should monitor domain registrations and block traffic to known malicious IPs to mitigate card‑number theft.",
@@ -2521,6 +2693,43 @@ export const news: NewsBrief[] = [
       "0cf9fa7e",
       "smart-tvs-harbor-unpatched-security-flaws-and-trac-74f264",
       "smart-tvs-harbor-unpatched-security-flaws-and-tracking-capab"
+    ]
+  },
+  {
+    "slug": "crowdstrike-expands-overwatch-to-ai-and-google-clo-c0b3c5d1",
+    "title": "CrowdStrike Expands OverWatch to AI and Google Cloud",
+    "summary": "CrowdStrike has broadened its Falcon Adversary OverWatch threat‑hunting service to cover AI workloads and Google Cloud environments. The expansion enables continuous monitoring of cloud-native AI applications, detecting anomalous behavior and potential adversary activity in real time. Security teams should integrate OverWatch into their cloud security posture, configure relevant sensors, and review alerts for emerging threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-threat-hunting-across-ai-and-google-cloud/",
+    "publishedAt": "2026-10-30T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-expands-overwatch-to-ai-and-google-clo",
+      "article-c0b3c5d1",
+      "c0b3c5d1",
+      "crowdstrike-expands-overwatch-to-ai-and-google-clo-758048",
+      "crowdstrike-expands-overwatch-to-ai-and-google-cloud"
+    ]
+  },
+  {
+    "slug": "falcon-next-gen-siem-offers-intelligence-advantage-ac733279",
+    "title": "Falcon Next-Gen SIEM Offers Intelligence Advantage",
+    "summary": "CrowdStrike releases Falcon Next‑Gen SIEM, a cloud‑native platform that merges threat intelligence feeds with automated analytics. The solution applies machine learning to correlate logs from endpoints, cloud services, and network devices, detecting anomalous activity while filtering false positives. Deployment requires no on‑prem hardware; organizations use pre‑built playbooks and integrate the SIEM with existing SOC workflows for continuous monitoring and response.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/build-intelligence-advantage-with-falcon-next-gen-siem/",
+    "publishedAt": "2026-10-30T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "falcon-next-gen-siem-offers-intelligence-advantage",
+      "article-ac733279",
+      "ac733279",
+      "falcon-next-gen-siem-offers-intelligence-advantage-6dbd10"
     ]
   },
   {
@@ -2699,6 +2908,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "malicious-claude-code-extension-found-in-cursor-ma-d06b3869",
+    "title": "Malicious Claude Code Extension Found in Cursor Marketplace",
+    "summary": "Sophos Threat Research uncovered a malicious Claude Code extension in the Cursor marketplace that installs without user consent. The add‑on injects malicious scripts into web pages, harvesting credentials and redirecting traffic to phishing sites. Defenders should block the extension’s domain, uninstall the add‑on from affected devices, and enforce stricter marketplace vetting to block future releases.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/malicious-claude-code-extension-distributed-through-cursor-marketplace",
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-claude-code-extension-found-in-cursor-ma",
+      "article-d06b3869",
+      "d06b3869",
+      "malicious-claude-code-extension-found-in-cursor-ma-4941b9",
+      "malicious-claude-code-extension-found-in-cursor-marketplace"
+    ]
+  },
+  {
     "slug": "siemens-mendix-saml-bypass-cve-2026-89209-demands-a7a696cf",
     "title": "Siemens Mendix SAML Bypass CVE-2026-89209 Demands Patch",
     "summary": "Siemens Mendix exposes a SAML authentication bypass flaw, identified as CVE-2026-89209, that can allow attackers to impersonate users. The vulnerability permits replay of valid SAML assertions, granting unauthorized access to protected resources without credential verification. Security teams should audit SSO logs, enforce assertion replay protection, and apply vendor patches to eliminate the bypass.",
@@ -2809,6 +3037,24 @@ export const news: NewsBrief[] = [
       "article-86a8c22e",
       "86a8c22e",
       "nik-c2-detect-and-block-ai-driven-ransomware-c2-78f61c"
+    ]
+  },
+  {
+    "slug": "openai-doubles-chatgpt-pro-limits-after-backlash-d28d9343",
+    "title": "OpenAI Doubles ChatGPT Pro Limits After Backlash",
+    "summary": "OpenAI doubled ChatGPT Pro usage limits, reversing a planned 50% cut that drew user backlash. OpenAI confirmed that the $100, $200, and $500 Pro tiers, plus Business Premium, will keep their current limits, and Dots usage stays independent. Users are advised to review updated terms and adjust usage expectations accordingly, while OpenAI continues to monitor community feedback.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
+    "publishedAt": "2026-10-29T23:35:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-doubles-chatgpt-pro-limits-after-backlash",
+      "article-d28d9343",
+      "d28d9343",
+      "openai-doubles-chatgpt-pro-limits-after-backlash-1a0442"
     ]
   },
   {
@@ -3193,6 +3439,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-satellite-6-16-eus-update-addresses-critic-2de42fef",
+    "title": "Red Hat Satellite 6.16 EUS Update Addresses Critical Vulnerabilities",
+    "summary": "Red Hat Satellite 6.16 EUS received a security update addressing vulnerabilities in RHSA-2026:92858. The advisory rates the impact as Important and references CVE links for each flaw, though specific CVE IDs are not listed. Red Hat recommends applying the update immediately; users should install the latest Satellite packages or apply the provided patches to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92858",
+    "publishedAt": "2026-10-29T21:37:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-16-eus-update-addresses-critic",
+      "article-2de42fef",
+      "2de42fef",
+      "red-hat-satellite-6-16-eus-update-addresses-critic-37d993",
+      "red-hat-satellite-6-16-eus-update-addresses-critical-vulnera"
+    ]
+  },
+  {
+    "slug": "red-hat-satellite-6-18-update-fixes-critical-vulne-9b7f7a0d",
+    "title": "Red Hat Satellite 6.18 Update Fixes Critical Vulnerabilities",
+    "summary": "Red Hat Satellite 6.18 has received a security update covering vulnerabilities listed in the RHSA-2026:92860 advisory. The advisory assigns an Important impact rating and provides CVE references for each flaw, though specific CVE IDs are not disclosed. Red Hat advises users to apply the update immediately by installing the latest Satellite packages or applying the supplied patches.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92860",
+    "publishedAt": "2026-10-29T21:37:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-18-update-fixes-critical-vulne",
+      "article-9b7f7a0d",
+      "9b7f7a0d",
+      "red-hat-satellite-6-18-update-fixes-critical-vulne-37d993",
+      "red-hat-satellite-6-18-update-fixes-critical-vulnerabilities"
+    ]
+  },
+  {
     "slug": "chrome-updates-desktop-stable-channel-1c8f2e2a",
     "title": "Chrome Updates Desktop Stable Channel",
     "summary": "Google Chrome released a stable channel update for Windows, Mac, and Linux that includes 21 security fixes, among them CVE‑2026‑76024, a critical memory‑corruption flaw in MediaStream, and CVE‑2026‑76025, a high‑severity use‑after‑free in FileSystem. These vulnerabilities could allow attackers to execute code or crash the browser via media or filesystem inputs. Users should install the update immediately to mitigate the risk.",
@@ -3265,6 +3549,44 @@ export const news: NewsBrief[] = [
       "a08f348c",
       "reporters-notebook-video-series-discusses-ai-cyber-377b1f",
       "reporters-notebook-video-series-discusses-ai-cybersecurity-t"
+    ]
+  },
+  {
+    "slug": "red-hat-patches-multiple-kpatch-packages-in-rhel-9-441f674e",
+    "title": "Red Hat Patches Multiple kpatch Packages in RHEL 9.2 Update",
+    "summary": "Red Hat released security updates for multiple kpatch packages affecting Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, rated Important by Product Security. Each vulnerability carries a separate CVSS base score available via linked CVE references. Organizations running affected SAP-specific services should apply these patches promptly to mitigate the disclosed security impact.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92629",
+    "publishedAt": "2026-10-29T20:01:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-patches-multiple-kpatch-packages-in-rhel-9",
+      "article-441f674e",
+      "441f674e",
+      "red-hat-patches-multiple-kpatch-packages-in-rhel-9-37d99b",
+      "red-hat-patches-multiple-kpatch-packages-in-rhel-9-2-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-92677-important-dnsmasq-security-bug-fix-750b7e26",
+    "title": "RHSA-2026:92677: Important: dnsmasq security, bug fix, and enhancement update",
+    "summary": "An update for dnsmasq is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92677",
+    "publishedAt": "2026-10-29T19:59:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-92677-important-dnsmasq-security-bug-fix",
+      "article-750b7e26",
+      "750b7e26",
+      "rhsa-2026-92677-important-dnsmasq-security-bug-fix-37d99b",
+      "rhsa-2026-92677-important-dnsmasq-security-bug-fix-and-enhan"
     ]
   },
   {
@@ -3479,6 +3801,25 @@ export const news: NewsBrief[] = [
       "77cf8b47",
       "opencode-user-faces-harassment-following-ai-loopho-22e2c2",
       "opencode-user-faces-harassment-following-ai-loophole-disclos"
+    ]
+  },
+  {
+    "slug": "microsoft-recognized-as-enterprise-endpoint-securi-d7a270ec",
+    "title": "Microsoft Recognized as Enterprise Endpoint Security Leader by IDC",
+    "summary": "Research firm IDC named Microsoft as a Leader in the 2026 IDC MarketScape assessment for enterprise modern endpoint security solutions. The vendor assessment evaluates Microsoft enterprise endpoint security product capabilities and market positioning across modern corporate infrastructure environments. Organizations evaluating endpoint protection tools can review the published IDC report details regarding Microsoft security platform performance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/",
+    "publishedAt": "2026-10-29T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-recognized-as-enterprise-endpoint-securi",
+      "article-d7a270ec",
+      "d7a270ec",
+      "microsoft-recognized-as-enterprise-endpoint-securi-4afcb4",
+      "microsoft-recognized-as-enterprise-endpoint-security-leader-"
     ]
   },
   {
@@ -4641,6 +4982,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "uefi-firmware-flaw-enables-pre-boot-code-attacks-80f09207",
+    "title": "UEFI Firmware Flaw Enables Pre‑Boot Code Attacks",
+    "summary": "A UEFI firmware flaw (CVE‑2026‑97631) lets attackers inject malicious code before OS boot, targeting enterprise systems. The flaw stems from inadequate validation of signed firmware images, enabling unauthorized code execution without user interaction. Vendor patches are available; apply firmware updates and enable UEFI secure boot to mitigate the critical risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/critical-16-year-old-uefi-flaw-can-run-code-before-secu",
+    "publishedAt": "2026-10-29T00:49:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uefi-firmware-flaw-enables-pre-boot-code-attacks",
+      "article-80f09207",
+      "80f09207",
+      "uefi-firmware-flaw-enables-pre-boot-code-attacks-174404"
+    ]
+  },
+  {
     "slug": "php2shell-exploit-cve-2026-109618-enables-rce-ac243ccf",
     "title": "PHP2Shell Exploit CVE-2026-109618 Enables RCE",
     "summary": "PHP2Shell vulnerability, CVE-2026-109618, permits remote code execution on government servers, allowing attackers to run arbitrary commands. The flaw originates from insecure handling of PHP session tokens, enabling unauthenticated users to inject malicious code via crafted requests. A vendor patch has been released; administrators should apply it immediately and deploy detection rules to identify exploitation attempts.",
@@ -5072,6 +5431,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "google-advances-chrome-158-desktop-update-to-beta-de6c7048",
+    "title": "Google Advances Chrome 158 Desktop Update to Beta Channel",
+    "summary": "Google released Chrome 158.0.8127.2 to the Beta channel for Windows, Mac, and Linux platforms. The update incorporates routine under-the-hood performance optimizations, stability adjustments, and introductory software features across desktop environments. Users can switch release channels or submit bug reports through the Chromium community help forum and Git log documentation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-desktop-update_088570753.html",
+    "publishedAt": "2026-10-28T17:28:33.476Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-advances-chrome-158-desktop-update-to-beta",
+      "article-de6c7048",
+      "de6c7048",
+      "google-advances-chrome-158-desktop-update-to-beta-5426e3",
+      "google-advances-chrome-158-desktop-update-to-beta-channel"
+    ]
+  },
+  {
     "slug": "zero-click-telegram-sticker-flaw-enables-ios-code-2443f557",
     "title": "Zero-Click Telegram Sticker Flaw Enables iOS Code Execution",
     "summary": "Security researcher Saifeldeen Aziz disclosed new zero-click vulnerabilities in Telegram stickers that bypass server-side validation checks. He chained the flaws to achieve arbitrary code execution on iOS devices, demonstrating a complete attack path without user interaction. The research was scheduled for presentation at OffensiveCon in Tokyo on October 28, 2026",
@@ -5219,6 +5597,25 @@ export const news: NewsBrief[] = [
       "0e0ab1df",
       "ai-assisted-php2shell-breaches-u-s-government-netw-86a45a",
       "ai-assisted-php2shell-breaches-u-s-government-network"
+    ]
+  },
+  {
+    "slug": "attackers-abuse-mdm-platforms-to-deploy-rogue-rmm-d3eaa391",
+    "title": "Attackers Abuse MDM Platforms to Deploy Rogue RMM Tools",
+    "summary": "Threat research reveals attackers are abusing legitimate Mobile Device Management (MDM) platforms to target managed enterprise endpoints. Adversaries exploit MDM architecture administrative permissions to deploy rogue Remote Monitoring and Management (RMM) software, establishing stealthy remote access and persistence. Security teams should audit enrolled MDM devices and monitor endpoint management environments for unauthorized RMM deployment tools.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/attackers-turn-mdm-into-remote-access",
+    "publishedAt": "2026-10-28T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-abuse-mdm-platforms-to-deploy-rogue-rmm",
+      "article-d3eaa391",
+      "d3eaa391",
+      "attackers-abuse-mdm-platforms-to-deploy-rogue-rmm-c02702",
+      "attackers-abuse-mdm-platforms-to-deploy-rogue-rmm-tools"
     ]
   },
   {
@@ -6360,399 +6757,6 @@ export const news: NewsBrief[] = [
       "article-78c63a8d",
       "78c63a8d",
       "gmo-group-advises-shutdown-amid-ransomware-threat-6b8c08"
-    ]
-  },
-  {
-    "slug": "openai-gpt-6-1-terra-safety-testing-reveals-increa-9cf8a476",
-    "title": "OpenAI GPT‑6.1 Terra Safety Testing Reveals Increased Destructive‑Action Flags",
-    "summary": "OpenAI’s GPT‑6.1 Terra model was evaluated in safety testing, revealing increased destructive‑action flags compared to earlier releases. The flaw stems from insufficient policy enforcement during content generation, allowing the model to produce higher‑risk prompts. OpenAI recommends applying the latest safety updates and actively monitoring prompt outputs for elevated destructive‑action flags.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
-    "publishedAt": "2026-10-27T22:43:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-gpt-6-1-terra-safety-testing-reveals-increa",
-      "article-9cf8a476",
-      "9cf8a476",
-      "openai-gpt-6-1-terra-safety-testing-reveals-increa-622464",
-      "openai-gpt-6-1-terra-safety-testing-reveals-increased-destru"
-    ]
-  },
-  {
-    "slug": "ai-liability-mitigation-frameworks-for-cisos-8352e277",
-    "title": "AI Liability Mitigation Frameworks for CISOs",
-    "summary": "Cyber leaders can mitigate AI liability by documenting AI usage, ensuring transparency, and negotiating smart contracts with vendors. These frameworks provide a structured approach to traceability, risk assessment, and compliance, reducing potential legal exposure during AI deployments. Organizations should adopt these practices early, integrate them into procurement processes, and maintain audit trails to satisfy regulatory requirements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
-    "publishedAt": "2026-10-27T21:15:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-liability-mitigation-frameworks-for-cisos",
-      "article-8352e277",
-      "8352e277",
-      "ai-liability-mitigation-frameworks-for-cisos-221f17"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-brotli-denial-of-service-and-code-e-103deba7",
-    "title": "Ubuntu Patches Brotli Denial-of-Service and Code Execution Flaw",
-    "summary": "Ubuntu released USN-8956-2 to address a Brotli vulnerability affecting Ubuntu 16.04 LTS, 18.04 LTS, and 20.04 LTS. The flaw involves incorrect handling of certain compressed streams, allowing a remote attacker to cause denial of service or execute arbitrary code. Administrators should apply the update immediately to mitigate remote exploitation risk on affected releases.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8956-2",
-    "publishedAt": "2026-10-27T21:14:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-brotli-denial-of-service-and-code-e",
-      "article-103deba7",
-      "103deba7",
-      "ubuntu-patches-brotli-denial-of-service-and-code-e-7fbd64",
-      "ubuntu-patches-brotli-denial-of-service-and-code-execution-f"
-    ]
-  },
-  {
-    "slug": "black-basta-ransomware-campaign-uses-external-team-719ca616",
-    "title": "Black Basta Ransomware Campaign Uses External Team Chats for Rapid Malware Delivery",
-    "summary": "A social engineering campaign, possibly tied to Black Basta ransomware, delivers malware via external team chats within fifteen minutes. The method exploits trusted communication channels, enabling rapid credential theft and lateral movement across multiple high-value targets. Teams should monitor chat traffic for anomalous file transfers, enforce strict access controls, and apply timely endpoint patches.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
-    "publishedAt": "2026-10-27T20:42:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "black-basta-ransomware-campaign-uses-external-team",
-      "article-719ca616",
-      "719ca616",
-      "black-basta-ransomware-campaign-uses-external-team-4093b4",
-      "black-basta-ransomware-campaign-uses-external-team-chats-for"
-    ]
-  },
-  {
-    "slug": "artem-stryzhak-pleads-guilty-to-ransomware-operato-52c71075",
-    "title": "Artem Stryzhak Pleads Guilty to Ransomware Operator Charges",
-    "summary": "Ukrainian national Artem Stryzhak pleaded guilty to charges linked to participation in at least two ransomware groups, including Nefilim and Hive. The case underscores legal action against operators behind Nefilim and Hive ransomware, highlighting international cooperation. Courts imposed a five‑year-plus sentence, underscoring the judiciary's firm stance against ransomware operations worldwide.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison",
-    "publishedAt": "2026-10-27T20:40:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "artem-stryzhak-pleads-guilty-to-ransomware-operato",
-      "article-52c71075",
-      "52c71075",
-      "artem-stryzhak-pleads-guilty-to-ransomware-operato-2da8f1",
-      "artem-stryzhak-pleads-guilty-to-ransomware-operator-charges"
-    ]
-  },
-  {
-    "slug": "sboms-insufficient-for-supply-chain-attack-visibil-6fdc05ef",
-    "title": "SBOMs Insufficient for Supply Chain Attack Visibility",
-    "summary": "The Shai‑Hulud supply chain attack demonstrated that static SBOMs fail to expose the full extent of compromised code. Defenders require real‑time visibility into production code and affected services to detect and remediate such compromises effectively. Adopting continuous monitoring and dynamic SBOM generation can bridge the gap between static artifacts and live threat detection.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
-    "publishedAt": "2026-10-27T19:58:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sboms-insufficient-for-supply-chain-attack-visibil",
-      "article-6fdc05ef",
-      "6fdc05ef",
-      "sboms-insufficient-for-supply-chain-attack-visibil-1a4870",
-      "sboms-insufficient-for-supply-chain-attack-visibility"
-    ]
-  },
-  {
-    "slug": "chromeos-beta-updated-to-os-16852-15-0-bb4a6fd1",
-    "title": "ChromeOS Beta Updated to OS 16852.15.0",
-    "summary": "ChromeOS Beta channel received an OS update to version 16852.15.0, including Browser 157.0.8103.23, for most devices. The update aims to improve system stability and performance, with users encouraged to report issues via the ChromeOS communities. Administrators should monitor release notes and ensure devices are updated to maintain compatibility with new features.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/beta-channel-update-for-chromeos_0669100502.html",
-    "publishedAt": "2026-10-27T19:39:25.377Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-beta-updated-to-os-16852-15-0",
-      "article-bb4a6fd1",
-      "bb4a6fd1",
-      "chromeos-beta-updated-to-os-16852-15-0-3bfeed"
-    ]
-  },
-  {
-    "slug": "us-doj-indicts-malaysian-national-in-madagascar-sc-31cb0ed9",
-    "title": "US DOJ Indicts Malaysian National in Madagascar Scam Operation",
-    "summary": "The U.S. Department of Justice indicted a Malaysian national involved in a scam center operation that targeted victims in Madagascar. The indictment also covers four other foreign nationals and highlights the expanding global reach of scam center industries across multiple jurisdictions. Law enforcement agencies should monitor cross-border scam operations and coordinate international investigations to disrupt similar illicit networks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/malaysian-national-indicted-after-scam-centers-raid-madagascar",
-    "publishedAt": "2026-10-27T19:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-doj-indicts-malaysian-national-in-madagascar-sc",
-      "article-31cb0ed9",
-      "31cb0ed9",
-      "us-doj-indicts-malaysian-national-in-madagascar-sc-7387bf",
-      "us-doj-indicts-malaysian-national-in-madagascar-scam-operati"
-    ]
-  },
-  {
-    "slug": "chrome-ios-stable-157-released-5d268281",
-    "title": "Chrome iOS Stable 157 Released",
-    "summary": "Google released Chrome Stable 157 for iOS, version 157.0.8103.24, which will appear on the App Store within hours. The update focuses on stability and performance improvements, with a full list of changes available in the Git log. Users encountering new issues should file bugs through the provided channels to aid future releases.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01149650302.html",
-    "publishedAt": "2026-10-27T19:28:32.782Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-ios-stable-157-released",
-      "article-5d268281",
-      "5d268281",
-      "chrome-ios-stable-157-released-23db61"
-    ]
-  },
-  {
-    "slug": "microsoft-distrusts-emudhra-certificates-in-out-of-a0e84723",
-    "title": "Microsoft Distrusts eMudhra Certificates in Out-of-Band Update",
-    "summary": "Microsoft released out‑of‑band Windows updates to remove trust in certificates issued by the compromised eMudhra certificate authority, protecting systems that do not receive automatic certificate trust updates. The flaw stems from compromised CA keys that enabled attackers to actively issue fraudulent certificates, creating a potential man‑in‑the‑middle risk for TLS connections. Apply the update via Windows Update immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/",
-    "publishedAt": "2026-10-27T18:20:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-distrusts-emudhra-certificates-in-out-of",
-      "article-a0e84723",
-      "a0e84723",
-      "microsoft-distrusts-emudhra-certificates-in-out-of-13cec4",
-      "microsoft-distrusts-emudhra-certificates-in-out-of-band-upda"
-    ]
-  },
-  {
-    "slug": "red-hat-openshift-container-platform-4-16-74-secur-0f0983b4",
-    "title": "Red Hat OpenShift Container Platform 4.16.74 Security Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.16.74, addressing multiple bugs and adding enhancements that impact the platform’s security posture. The update includes a security fix for an unspecified vulnerability, with Red Hat Product Security rating the impact as Important and providing CVSS scores via referenced CVE links. Users should apply the 4.16.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:89714",
-    "publishedAt": "2026-10-27T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-openshift-container-platform-4-16-74-secur",
-      "article-0f0983b4",
-      "0f0983b4",
-      "red-hat-openshift-container-platform-4-16-74-secur-37e481",
-      "red-hat-openshift-container-platform-4-16-74-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-update-for-openshift-con-48d029b1",
-    "title": "Red Hat Releases Critical Update for OpenShift Container Platform 4.12.102",
-    "summary": "Red Hat released a critical security update for OpenShift Container Platform 4.12.102, addressing multiple bugs that could compromise container workloads. The update carries a security impact rated Critical, with CVSS base scores available for each vulnerability referenced in the advisory. Users should apply the 4.12.102 release immediately to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90272",
-    "publishedAt": "2026-10-27T17:59:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-update-for-openshift-con",
-      "article-48d029b1",
-      "48d029b1",
-      "red-hat-releases-critical-update-for-openshift-con-37da92",
-      "red-hat-releases-critical-update-for-openshift-container-pla"
-    ]
-  },
-  {
-    "slug": "ai-threatens-core-cybersecurity-skills-c2c3b4b7",
-    "title": "AI Threatens Core Cybersecurity Skills",
-    "summary": "Nathan Hamiel warns that AI could erode core cybersecurity skills, likening technical expertise to outdated navigation tools. The article argues that automated systems may replace tasks such as threat hunting, incident response, and security monitoring, potentially leaving professionals without hands‑on experience. Organizations should invest in continuous training and maintain human oversight to preserve essential security capabilities amid AI adoption.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
-    "publishedAt": "2026-10-27T17:43:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-threatens-core-cybersecurity-skills",
-      "article-c2c3b4b7",
-      "c2c3b4b7",
-      "ai-threatens-core-cybersecurity-skills-78cb52"
-    ]
-  },
-  {
-    "slug": "cve-2026-111497-out-of-bounds-write-in-brotli-libr-57fa030f",
-    "title": "CVE‑2026‑111497: Out‑of‑Bounds Write in Brotli Library",
-    "summary": "CVE‑2026‑111497 is a remotely exploitable out‑of‑bounds write flaw in Google’s Brotli compression library that affects any application decompressing Brotli data via node:zlib. The flaw, also known as Node2Shell, allows attackers to corrupt process memory, potentially causing crashes or leaking sensitive data, and a PoC exists. Google and Node.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/27/node2shell-broccoli2shell-vulnerability-cve-2026-111497/",
-    "publishedAt": "2026-10-27T17:38:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-111497-out-of-bounds-write-in-brotli-libr",
-      "article-57fa030f",
-      "57fa030f",
-      "cve-2026-111497-out-of-bounds-write-in-brotli-libr-58bbdb",
-      "cve-2026-111497-out-of-bounds-write-in-brotli-library"
-    ]
-  },
-  {
-    "slug": "firefox-extensions-mimic-wallets-to-steal-secrets-ab3d7019",
-    "title": "Firefox Extensions Mimic Wallets to Steal Secrets",
-    "summary": "Malicious Firefox extensions impersonating Phantom, Jupiter, and Bitget wallets have been found, tricking users into revealing recovery phrases and private keys. The extensions spoof the wallet UI and one fetches its payload remotely, enabling credential exfiltration without user awareness. Security teams should audit installed extensions, remove any that mimic wallet names, and enforce strict vetting to prevent credential theft.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/firefox-wallet-impersonators",
-    "publishedAt": "2026-10-27T17:28:33.184Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "firefox-extensions-mimic-wallets-to-steal-secrets",
-      "article-ab3d7019",
-      "ab3d7019",
-      "firefox-extensions-mimic-wallets-to-steal-secrets-126ab1"
-    ]
-  },
-  {
-    "slug": "aokigahara-stealer-targets-developer-keyrings-and-7e30edc2",
-    "title": "Aokigahara Stealer Targets Developer Keyrings and AI Assistants",
-    "summary": "The Aokigahara infostealer expands traditional data theft tactics by targeting developer keyrings and AI assistant sessions, exposing sensitive business data and infrastructure from a single compromised endpoint. Its focus on AI tools and developer credentials represents an evolution in infostealer capabilities, enabling broader access to cloud environments and proprietary codebases.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
-    "publishedAt": "2026-10-27T16:47:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aokigahara-stealer-targets-developer-keyrings-and",
-      "article-7e30edc2",
-      "7e30edc2",
-      "aokigahara-stealer-targets-developer-keyrings-and-25ead6",
-      "aokigahara-stealer-targets-developer-keyrings-and-ai-assista"
-    ]
-  },
-  {
-    "slug": "oracle-peoplesoft-ssrf-exploit-cve-2026-35273-36e1fcc7",
-    "title": "Oracle PeopleSoft SSRF Exploit CVE-2026-35273",
-    "summary": "Oracle PeopleSoft’s CVE‑2026‑35273 SSRF flaw lets attackers forge internal requests that bypass validateClient checks. The vulnerability supports remote code execution with a CVSS of 9.2, and ShinyHunters has confirmed widespread exploitation. Oracle issued a critical patch; teams should apply it immediately and disable external request capabilities as a temporary mitigation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Zero Day Initiative",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/10/20/cve-2026-35273-ssrf-to-rce-in-oracle-peoplesoft",
-    "publishedAt": "2026-10-27T16:39:07.000Z",
-    "cves": [
-      "CVE-2026-35273"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-peoplesoft-ssrf-exploit-cve-2026-35273",
-      "article-36e1fcc7",
-      "36e1fcc7",
-      "oracle-peoplesoft-ssrf-exploit-cve-2026-35273-6873a1"
-    ]
-  },
-  {
-    "slug": "ubuntu-authd-identity-validation-flaw-exposes-loca-68655a5c",
-    "title": "Ubuntu Authd Identity Validation Flaw Exposes Local Accounts",
-    "summary": "Authd in Ubuntu failed to validate user identities when matching accounts from identity providers, allowing an attacker to impersonate another user and access local files. The flaw stems from improper identity verification logic, potentially enabling unauthorized access to sensitive data. Ubuntu has released a patch; administrators should update authd immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8957-1",
-    "publishedAt": "2026-10-27T16:23:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-authd-identity-validation-flaw-exposes-loca",
-      "article-68655a5c",
-      "68655a5c",
-      "ubuntu-authd-identity-validation-flaw-exposes-loca-7fbd60",
-      "ubuntu-authd-identity-validation-flaw-exposes-local-accounts"
-    ]
-  },
-  {
-    "slug": "warp-breach-exposes-agent-logs-and-telemetry-data-ae3afee5",
-    "title": "Warp Breach Exposes Agent Logs and Telemetry Data",
-    "summary": "A breach exposed Warp agentic development environment users’ decision logs and telemetry data after a third‑party vendor was compromised. The compromise leveraged unauthorized access to the vendor’s infrastructure, allowing attackers to retrieve sensitive operational telemetry and user interaction records. Warp has issued a security advisory and recommends affected users apply the vendor’s latest patch and monitor account activity for anomalies.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
-    "publishedAt": "2026-10-27T16:15:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "warp-breach-exposes-agent-logs-and-telemetry-data",
-      "article-ae3afee5",
-      "ae3afee5",
-      "warp-breach-exposes-agent-logs-and-telemetry-data-6ed322"
-    ]
-  },
-  {
-    "slug": "top-five-cybersecurity-scams-targeting-u-s-voters-54bb5778",
-    "title": "Top Five Cybersecurity Scams Targeting U.S. Voters",
-    "summary": "Five election‑related scam campaigns target voters with deceptive messages that prompt registration, donations, surveys, or merchandise purchases. These phishing attempts exploit social engineering tactics, embedding malicious links or payment requests that can compromise personal data and financial information. Security teams should verify sender authenticity, use link scanners, and educate users to avoid clicking or providing credentials on suspicious election communications.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/10/five-election-scams-to-watch-out-for",
-    "publishedAt": "2026-10-27T15:36:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-five-cybersecurity-scams-targeting-u-s-voters",
-      "article-54bb5778",
-      "54bb5778",
-      "top-five-cybersecurity-scams-targeting-u-s-voters-ebdb8b"
-    ]
-  },
-  {
-    "slug": "microsoft-net-elevation-of-privilege-vulnerability-9c8c8149",
-    "title": "Microsoft .NET Elevation of Privilege Vulnerability CVE‑2026‑70161",
-    "summary": "Microsoft .NET framework contains an elevation of privilege flaw identified as CVE‑2026‑70161 that allows local users to gain higher privileges on affected systems. The vulnerability exploits improper access control checks during component initialization, enabling attackers to execute privileged code without authentication. Microsoft has released a patch in the latest security update; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70161",
-    "publishedAt": "2026-10-27T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-net-elevation-of-privilege-vulnerability",
-      "article-9c8c8149",
-      "9c8c8149",
-      "microsoft-net-elevation-of-privilege-vulnerability-74506d",
-      "microsoft-net-elevation-of-privilege-vulnerability-cve-2026-"
     ]
   }
 ];
