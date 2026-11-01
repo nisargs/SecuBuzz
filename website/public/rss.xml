@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 11:44:56 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 12:44:17 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Northstar Security Raises $7M to Map Risk Combinations</title>
@@ -14,6 +14,15 @@
       <description><![CDATA[Northstar Security has secured $7 million to develop a platform that maps identities, assets, and vulnerabilities to identify toxic risk combinations. The solution employs AI agents that scan for interdependencies and automatically suggest remediation steps for high‑impact combinations. Security teams can integrate the platform into existing workflows to proactively mitigate compound vulnerabilities before exploitation.]]></description>
       <pubDate>Sun, 01 Nov 2026 11:15:00 GMT</pubDate>
       <source url="https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>OneNote Embedded File Extraction</title>
+      <link>https://secubuzz.com/news/onenote-embedded-file-extraction-5586c7f9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/onenote-embedded-file-extraction-5586c7f9</guid>
+      <description><![CDATA[An analyst extracted embedded files from OneNote (.one) documents using a custom extraction process. The method parses the OneNote file structure to locate and retrieve embedded attachments, which may contain executable payloads. Security teams should scan extracted files for malware and carefully validate the integrity of OneNote documents before use.]]></description>
+      <pubDate>Sun, 01 Nov 2026 09:12:23 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33478">SANS Internet Storm Center</source>
       <category>General</category>
     </item>
     <item>
@@ -159,6 +168,42 @@
       <pubDate>Sat, 31 Oct 2026 14:05:15 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Chromium Animation Use‑After‑Free CVE‑2026‑118338</title>
+      <link>https://secubuzz.com/news/chromium-animation-use-after-free-cve-2026-118338-0c3951e1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-animation-use-after-free-cve-2026-118338-0c3951e1</guid>
+      <description><![CDATA[A use‑after‑free flaw, CVE‑2026‑118338, exists in Chromium’s animation subsystem and can be triggered by malicious content in Microsoft Edge. The defect permits memory corruption that could lead to arbitrary code execution, but no active exploitation has been observed. Microsoft Edge includes the Chromium patch; users should update to Edge or apply the Chrome release to mitigate the risk.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118338">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Animation Use‑After‑Free CVE‑2026‑118339</title>
+      <link>https://secubuzz.com/news/chromium-animation-use-after-free-cve-2026-118339-3bea7cd1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-animation-use-after-free-cve-2026-118339-3bea7cd1</guid>
+      <description><![CDATA[A use‑after‑free flaw, CVE‑2026‑118339, exists in Chromium’s animation subsystem and can be triggered by malicious content in Microsoft Edge. The defect permits memory corruption that could lead to arbitrary code execution, but no active exploitation has been observed. Microsoft Edge includes the Chromium patch; users should update to Edge or apply the Chrome release to mitigate the risk.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118339">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Skia Memory Corruption CVE-2026-118340</title>
+      <link>https://secubuzz.com/news/chromium-skia-memory-corruption-cve-2026-118340-dce46e63</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-skia-memory-corruption-cve-2026-118340-dce46e63</guid>
+      <description><![CDATA[Microsoft identified a memory corruption flaw in Chromium's Skia graphics library, assigned CVE-2026-118340. The vulnerability could allow attackers to corrupt memory during rendering, potentially leading to arbitrary code execution if exploited, especially in contexts where untrusted content is processed. Microsoft Edge users should apply the latest Chromium-based updates, as released by Google Chrome, to mitigate the risk.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118340">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Use-After-Free CVE-2026-118341</title>
+      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-118341-8f11c104</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-118341-8f11c104</guid>
+      <description><![CDATA[Microsoft identified a use-after-free flaw in Chromium's modularization component, assigned CVE-2026-118341. The defect could allow attackers to execute arbitrary code by freeing memory prematurely during module loading, potentially compromising the browser. Microsoft Edge users should install the latest Chromium-based updates, as distributed by Google Chrome, to address the vulnerability.]]></description>
+      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118341">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Chromium Use‑After‑Free CVE‑2026‑118330 Exploited in Browser</title>
@@ -410,51 +455,6 @@
       <description><![CDATA[AI‑generated vulnerability reports are flooding bug bounty programs, complicating entry for aspiring security researchers. TryHackMe outlines practical skill‑building steps, responsible AI use, and reproducible testing methods to help novices produce credible findings. These resources aim to streamline the learning curve and ensure submissions meet program standards without relying on unverified AI outputs.]]></description>
       <pubDate>Sat, 31 Oct 2026 13:10:19 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chainalysis Data Breach Exposes Customer Details</title>
-      <link>https://secubuzz.com/news/chainalysis-data-breach-exposes-customer-details-81386881</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-data-breach-exposes-customer-details-81386881</guid>
-      <description><![CDATA[Chainalysis, a blockchain analytics firm, suffered a data breach after attackers used offensive agentic techniques to access internal systems and tools. The breach exposed customer names, email addresses, user IDs, and organizational roles, compromising sensitive personal information. Chainalysis has disclosed the incident and is investigating the extent of the compromise; affected customers should monitor for suspicious activity.]]></description>
-      <pubDate>Sat, 31 Oct 2026 12:50:09 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Chainalysis Reports Internal Tool Breach Exposing Customer Identities</title>
-      <link>https://secubuzz.com/news/chainalysis-reports-internal-tool-breach-exposing-36f74ac8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-reports-internal-tool-breach-exposing-36f74ac8</guid>
-      <description><![CDATA[Chainalysis said an external actor accessed internal tools and exposed non‑sensitive customer identity data, without compromising credentials or session tokens. The incident involved unauthorized internal access but did not result in credential theft or sensitive data leakage. Chainalysis has added monitoring and access controls and is conducting a full forensic investigation.]]></description>
-      <pubDate>Sat, 31 Oct 2026 12:01:56 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI-Driven VOLTA Infostealer Prioritizes Victims</title>
-      <link>https://secubuzz.com/news/ai-driven-volta-infostealer-prioritizes-victims-e9159e27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-driven-volta-infostealer-prioritizes-victims-e9159e27</guid>
-      <description><![CDATA[The VOLTA infostealer is a self‑deleting malware that harvests credentials, session data, and cryptocurrency wallets from infected hosts. After collection, the malware uses large language models to profile victims and rank their most valuable assets, enabling attackers to focus on high‑value targets. Security teams should deploy endpoint detection and response solutions, monitor for credential exfiltration, and isolate compromised systems promptly.]]></description>
-      <pubDate>Sat, 31 Oct 2026 12:00:00 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/">Cisco Talos</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Syrian Hacker Sentenced to 42 Months in US Court</title>
-      <link>https://secubuzz.com/news/syrian-hacker-sentenced-to-42-months-in-us-court-a2c80476</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/syrian-hacker-sentenced-to-42-months-in-us-court-a2c80476</guid>
-      <description><![CDATA[A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro‑Assad attacks on media, businesses, and government entities. The attacks leveraged compromised credentials and distributed denial‑of‑service tactics to disrupt communications and compromise sensitive data across multiple sectors. The sentencing underscores the importance of international cooperation and reinforces the need for robust cyber‑defense measures to deter state‑backed actors.]]></description>
-      <pubDate>Sat, 31 Oct 2026 11:00:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Wireshark 5.0.0rc1 Release</title>
-      <link>https://secubuzz.com/news/wireshark-5-0-0rc1-release-adbfdb21</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wireshark-5-0-0rc1-release-adbfdb21</guid>
-      <description><![CDATA[Wireshark released the 5.0.0 release candidate, introducing new features and bug fixes for network protocol analysis. The candidate includes updated dissectors for emerging protocols, improved performance, and several security patches addressing previously reported vulnerabilities. Users should download the latest release candidate, test compatibility with existing workflows, and upgrade to the stable 5.0.0 version when available.]]></description>
-      <pubDate>Sat, 31 Oct 2026 10:52:53 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33476">SANS Internet Storm Center</source>
       <category>General</category>
     </item>
   </channel>

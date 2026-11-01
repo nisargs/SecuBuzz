@@ -16,6 +16,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://isc.sans.edu/diary/rss/33478",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33478",
+    "title": "OneNote Embedded File Extraction",
+    "headline": "OneNote Embedded File Extraction",
+    "summary": "An analyst extracted embedded files from OneNote (.one) documents using a custom extraction process. The method parses the OneNote file structure to locate and retrieve embedded attachments, which may contain executable payloads. Security teams should scan extracted files for malware and carefully validate the integrity of OneNote documents before use.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-01T09:12:23.000Z",
+    "ingestedAt": "2026-11-01T12:43:09.903Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33478",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/",
     "title": "Binance Theft Highlights Impact of Brotli CVE-2026-111497",
@@ -246,6 +262,70 @@
     "source": "BleepingComputer",
     "publishedAt": "2026-10-31T14:05:15.000Z",
     "url": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118338",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118338",
+    "title": "Chromium Animation Use‑After‑Free CVE‑2026‑118338",
+    "headline": "Chromium Animation Use‑After‑Free CVE‑2026‑118338",
+    "summary": "A use‑after‑free flaw, CVE‑2026‑118338, exists in Chromium’s animation subsystem and can be triggered by malicious content in Microsoft Edge. The defect permits memory corruption that could lead to arbitrary code execution, but no active exploitation has been observed. Microsoft Edge includes the Chromium patch; users should update to Edge or apply the Chrome release to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "ingestedAt": "2026-11-01T12:43:09.902Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118338",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118339",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118339",
+    "title": "Chromium Animation Use‑After‑Free CVE‑2026‑118339",
+    "headline": "Chromium Animation Use‑After‑Free CVE‑2026‑118339",
+    "summary": "A use‑after‑free flaw, CVE‑2026‑118339, exists in Chromium’s animation subsystem and can be triggered by malicious content in Microsoft Edge. The defect permits memory corruption that could lead to arbitrary code execution, but no active exploitation has been observed. Microsoft Edge includes the Chromium patch; users should update to Edge or apply the Chrome release to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "ingestedAt": "2026-11-01T12:43:09.903Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118339",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118340",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118340",
+    "title": "Chromium Skia Memory Corruption CVE-2026-118340",
+    "headline": "Chromium Skia Memory Corruption CVE-2026-118340",
+    "summary": "Microsoft identified a memory corruption flaw in Chromium's Skia graphics library, assigned CVE-2026-118340. The vulnerability could allow attackers to corrupt memory during rendering, potentially leading to arbitrary code execution if exploited, especially in contexts where untrusted content is processed. Microsoft Edge users should apply the latest Chromium-based updates, as released by Google Chrome, to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "ingestedAt": "2026-11-01T12:43:13.866Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118340",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118341",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118341",
+    "title": "Chromium Use-After-Free CVE-2026-118341",
+    "headline": "Chromium Use-After-Free CVE-2026-118341",
+    "summary": "Microsoft identified a use-after-free flaw in Chromium's modularization component, assigned CVE-2026-118341. The defect could allow attackers to execute arbitrary code by freeing memory prematurely during module loading, potentially compromising the browser. Microsoft Edge users should install the latest Chromium-based updates, as distributed by Google Chrome, to address the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-10-31T14:00:00.000Z",
+    "ingestedAt": "2026-11-01T12:43:13.866Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118341",
     "additionalSources": []
   },
   {
@@ -2344,6 +2424,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agent-graph-shows-how-agents-act-on-endpoint/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agent-graph-shows-how-agents-act-on-endpoint/",
+    "title": "CrowdStrike Visualizes Agent Endpoint Actions",
+    "headline": "CrowdStrike Visualizes Agent Endpoint Actions",
+    "summary": "CrowdStrike released a visual graph illustrating how its endpoint agents interact with system components. The diagram maps agent processes, data flows, and command execution paths, providing visibility into detection and response workflows. Security teams can use the graph to validate agent behavior and troubleshoot deployment anomalies to improve incident response.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-10-30T05:00:00.000Z",
+    "ingestedAt": "2026-11-01T12:43:13.866Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agent-graph-shows-how-agents-act-on-endpoint/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-threat-hunting-across-ai-and-google-cloud/",
     "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-threat-hunting-across-ai-and-google-cloud/",
     "title": "CrowdStrike Expands OverWatch to AI and Google Cloud",
@@ -4191,6 +4287,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://isc.sans.edu/diary/rss/33468",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33468",
+    "title": "ISC Stormcast Podcast Released for Oct 29",
+    "headline": "ISC Stormcast Podcast Released for Oct 29",
+    "summary": "The SANS Internet Storm Center published its Thursday Stormcast podcast for October 29, 2026, offering a curated overview of that day's threat landscape. The episode is distributed under a Creative Commons Attribution-Noncommercial 3.0 United States License, allowing free sharing with attribution. Listeners can access the recording via the ISC website to stay informed on emerging threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-10-29T03:10:12.000Z",
+    "ingestedAt": "2026-11-01T12:43:13.866Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33468",
+    "additionalSources": []
+  },
+  {
     "id": "https://socket.dev/blog/searchjacked",
     "sourceUrl": "https://socket.dev/blog/searchjacked",
     "title": "Hidden Browser Extensions Hijack Searches for Millions",
@@ -4971,105 +5083,6 @@
     "source": "SecurityWeek",
     "publishedAt": "2026-10-28T15:05:06.000Z",
     "url": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-    "title": "AI Bot Impersonation Used for Credential Scanning",
-    "headline": "AI Bot Impersonation Used for Credential Scanning",
-    "summary": "A threat actor is scanning for exposed credentials by impersonating AI agents from OpenAI, Anthropic, Meta, and other vendors. The attacker leverages trusted AI company bot identities to probe for publicly accessible data and evade detection. Security teams should monitor anomalous bot user-agent strings and restrict public access to sensitive endpoints to counter this reconnaissance.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-28T14:37:52.000Z",
-    "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740",
-    "title": "Windows Imaging Component Information Disclosure Patched",
-    "headline": "Windows Imaging Component Information Disclosure Patched",
-    "summary": "Microsoft disclosed CVE-2026-62740, an information disclosure vulnerability in the Windows Imaging Component affecting supported editions of Microsoft Office. The flaw allows unauthorized access to sensitive data through improper handling of image processing operations. Microsoft recommends customers install the latest security updates across all affected Office editions to remediate the issue.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-28T14:00:00.000Z",
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62740",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-android-update_01647815535.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-android-update_01647815535.html",
-    "title": "Chrome Beta 158 Released for Android",
-    "headline": "Chrome Beta 158 Released for Android",
-    "summary": "Google released Chrome Beta 158 (158.0.8127.2) for Android on Google Play, introducing new features and web platform updates alongside bug fixes. The update includes partial changes documented in the Git log and Chromium blog entries, representing routine browser maintenance rather than a security vulnerability disclosure.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-28T13:58:32.488Z",
-    "url": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-android-update_01647815535.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/ai/2026/10/banks-are-blocking-ai-agents-from-customer-accounts",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/10/banks-are-blocking-ai-agents-from-customer-accounts",
-    "title": "Banks Block Third-Party AI Agents From Accounts",
-    "headline": "Banks Block Third-Party AI Agents From Accounts",
-    "summary": "Banks are blocking third-party AI agents from accessing customer accounts, citing security risks to account integrity. The concern centers on unauthorized access and potential misuse of customer financial data by external AI systems. Financial institutions are implementing access restrictions to mitigate risks posed by autonomous third-party agents interacting with banking platforms.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-28T13:38:59.000Z",
-    "url": "https://www.malwarebytes.com/blog/ai/2026/10/banks-are-blocking-ai-agents-from-customer-accounts",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-    "title": "Oracle E-Business Suite CVE-2026-101767 RCE Vulnerability",
-    "headline": "Oracle E-Business Suite CVE-2026-101767 RCE Vulnerability",
-    "summary": "Oracle E-Business Suite suffers CVE-2026-101767, a critical unauthenticated remote code execution flaw in the Application Object Library. Scored 9.8 on CVSS, the flaw allows attackers to bypass authentication and execute arbitrary code, potentially compromising all EBS instances. Oracle patched last week; teams should apply the update immediately and monitor for exploitation attempts.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-28T12:48:03.000Z",
-    "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/hackers-target-critical-oracle-e-business-suite-rce-fla"
-      }
-    ],
-    "cves": [
-      "CVE-2026-101767"
-    ]
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "title": "CISA Flags Actively Exploited VMware and Linux Flaws",
-    "headline": "CISA Flags Actively Exploited VMware and Linux Flaws",
-    "summary": "CISA added CVE-2026-41709 (Broadcom VMware ESX insufficient logging) and CVE-2026-46300 (Linux kernel missing variable initialization) to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. Both flaws represent frequent attack vectors for malicious actors targeting federal enterprise infrastructure. BOD 26-04 mandates FCEB agencies prioritize rapid remediation of KEV-listed vulnerabilities on publicly exposed assets.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-28T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/fbi-seizure-csam-virtualine",
-    "sourceUrl": "https://therecord.media/fbi-seizure-csam-virtualine",
-    "title": "FBI Seizes Domain of Hosting Provider Allegedly Facilitating Child Abuse and Money Laundering",
-    "headline": "FBI Seizes Domain of Hosting Provider Allegedly Facilitating Child Abuse and Money Laundering",
-    "summary": "The FBI seized the domain of a bullet‑proof hosting provider that allegedly facilitated child sexual abuse material distribution and money laundering. The operation targeted the provider’s infrastructure, disrupting its services and preventing further criminal activity through its hosting network. No public patch is required; security teams should monitor for related domain registrations and enforce strict domain registration policies.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-28T12:00:00.000Z",
-    "url": "https://therecord.media/fbi-seizure-csam-virtualine",
     "additionalSources": []
   }
 ]
