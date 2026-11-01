@@ -17,7 +17,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme } from '../context/ThemeContext';
 import { spacing } from '../theme/theme';
 
-export const WALKTHROUGH_STORAGE_KEY = '@secubuzz_walkthrough_v1_0_2';
+import { WHATS_NEW_STORAGE_KEY, CURRENT_RELEASE_VERSION } from './WhatsNewModal';
+
+export const WALKTHROUGH_STORAGE_KEY = '@secubuzz_walkthrough_v1_0_4';
 
 interface OnboardingSlide {
   step: string;
@@ -53,15 +55,15 @@ const SLIDES: OnboardingSlide[] = [
     ],
   },
   {
-    step: 'STEP 3 OF 4 · DISCOVERY & FILTERS',
-    title: 'Live Search & Smart Filters',
+    step: 'STEP 3 OF 4 · ENTERPRISE TRIAGE & STACK',
+    title: 'My Stack & CVE Watchlist',
     subtitle:
-      'Find exactly what affects your stack in seconds. Search by vendor, product, or CVE ID, and filter intelligence across specialized categories and severity levels.',
-    icon: 'search-outline',
+      'Curate your organization\'s infrastructure footprint and watch critical CVEs across 16+ enterprise vendors. Instantly isolate the threats that directly impact your production environment.',
+    icon: 'layers-outline',
     highlights: [
-      'Search any CVE, vendor, software product, or keyword',
-      'Filter by category: Ransomware, Breaches, Malware, Cloud',
-      'Filter by threat severity: Critical, High, Medium, Low',
+      'Track 16+ enterprise vendors (Cisco, Fortinet, Microsoft, AWS, etc.)',
+      'Pin critical CVEs to your watchlist across news briefs and advisories',
+      'Filter feeds and push notifications strictly to your configured stack',
     ],
   },
   {
@@ -92,6 +94,7 @@ export function OnboardingModal({ visible, onClose }: OnboardingModalProps) {
   async function handleComplete() {
     try {
       await AsyncStorage.setItem(WALKTHROUGH_STORAGE_KEY, 'true');
+      await AsyncStorage.setItem(WHATS_NEW_STORAGE_KEY, CURRENT_RELEASE_VERSION);
     } catch {
       // ignore storage failure
     }

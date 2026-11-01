@@ -18,9 +18,32 @@ interface ReleaseItem {
 
 const RELEASES: ReleaseItem[] = [
   {
+    version: 'v1.0.4',
+    date: 'November 2026',
+    badge: 'LATEST',
+    tagline: 'My Stack Triage Hub, CVE Watchlist & Targeted Push Notifications',
+    highlights: [
+      {
+        title: 'Enterprise My Stack Hub',
+        desc: 'Curate your organization\'s infrastructure footprint across 16+ enterprise vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS) to isolate relevant threats in one click.',
+      },
+      {
+        title: 'CVE Watchlist & Pinning',
+        desc: 'Pin critical vulnerabilities directly from feed cards or table rows, or enter custom CVEs to monitor patch status across news briefs and advisories.',
+      },
+      {
+        title: 'Targeted Push Notifications',
+        desc: 'Filter incoming background dispatches strictly to stories and advisories affecting your configured enterprise vendors or watched CVEs, regardless of severity.',
+      },
+      {
+        title: 'Harmonized Multi-Source Telemetry',
+        desc: 'Unified real-time counters and filter indicators across all 350 briefs and 1,816 advisories.',
+      },
+    ],
+  },
+  {
     version: 'v1.0.3',
     date: 'October 2026',
-    badge: 'LATEST',
     tagline: 'Enterprise Vendor PSIRT Radar, EPSS Telemetry & AMOLED Theme',
     highlights: [
       {

@@ -83,7 +83,7 @@ export function MyStackSidebar({
                 e.stopPropagation();
                 clearStack();
               }}
-              className="text-[11px] font-mono text-subtle hover:text-ink transition-colors cursor-pointer whitespace-nowrap focus:outline-none"
+              className="text-[11px] font-mono text-subtle hover:text-accent transition-colors cursor-pointer whitespace-nowrap focus:outline-none"
             >
               Clear all
             </button>

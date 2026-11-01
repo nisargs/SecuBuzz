@@ -6,6 +6,7 @@ import {
   FlatList,
   Pressable,
   RefreshControl,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -26,6 +27,7 @@ import {
 } from '../../components/FilterModal';
 import { isVendorPsirt } from '../../utils/psirt';
 import { OnboardingModal, WALKTHROUGH_STORAGE_KEY } from '../../components/OnboardingModal';
+import { WhatsNewModal, WHATS_NEW_STORAGE_KEY, CURRENT_RELEASE_VERSION } from '../../components/WhatsNewModal';
 import {
   EmptyState,
   ErrorState,
@@ -34,6 +36,7 @@ import {
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useArticles } from '../../hooks/useArticles';
 import { useTheme } from '../../context/ThemeContext';
+import { useMyStack } from '../../context/MyStackContext';
 import {
   ARTICLE_CATEGORIES,
   type Article,
@@ -78,6 +81,7 @@ function formatHeaderDate(date: Date): string {
 
 export default function FeedScreen() {
   const { colors, isDark, accentColor } = useTheme();
+  const myStack = useMyStack();
   const { state, load } = useArticles();
 
   const {
@@ -94,6 +98,7 @@ export default function FeedScreen() {
   const [sourceFilter, setSourceFilter] =
     useState<SourceFilter>('ALL');
 
+  const [whatsNewOpen, setWhatsNewOpen] = useState(false);
   const [filterModalOpen, setFilterModalOpen] =
     useState(false);
 
@@ -102,9 +107,20 @@ export default function FeedScreen() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      void AsyncStorage.getItem(WALKTHROUGH_STORAGE_KEY).then((seen) => {
-        if (!seen) {
-          setWalkthroughOpen(true);
+      void AsyncStorage.getItem(WHATS_NEW_STORAGE_KEY).then((whatsNewSeen) => {
+        if (whatsNewSeen !== CURRENT_RELEASE_VERSION) {
+          setWhatsNewOpen(true);
+        } else {
+          void AsyncStorage.multiGet([
+            WALKTHROUGH_STORAGE_KEY,
+            '@secubuzz_walkthrough_v1_0_2',
+            '@secubuzz_walkthrough_completed',
+          ]).then((entries) => {
+            const hasSeen = entries.some(([_, val]) => val === 'true');
+            if (!hasSeen) {
+              setWalkthroughOpen(true);
+            }
+          });
         }
       });
     }, 400);
@@ -243,6 +259,7 @@ export default function FeedScreen() {
     const query = searchQuery.trim().toLowerCase();
     const candidateArticles = articles.filter((a) => {
       if (filter !== 'ALL' && a.category !== filter) return false;
+      if (sourceFilter === 'MY_STACK' && !myStack.matchesArticle(a)) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(a.sourceName)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(a.sourceName)) return false;
       if (!query) return true;
@@ -271,12 +288,13 @@ export default function FeedScreen() {
       }
     });
     return counts;
-  }, [articles, filter, sourceFilter, searchQuery]);
+  }, [articles, filter, sourceFilter, searchQuery, myStack]);
 
   const categoryCounts = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
     const candidateArticles = articles.filter((a) => {
       if (severityFilter !== 'ALL' && a.severity !== severityFilter) return false;
+      if (sourceFilter === 'MY_STACK' && !myStack.matchesArticle(a)) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(a.sourceName)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(a.sourceName)) return false;
       if (!query) return true;
@@ -302,7 +320,7 @@ export default function FeedScreen() {
       }
     });
     return counts;
-  }, [articles, severityFilter, sourceFilter, searchQuery]);
+  }, [articles, severityFilter, sourceFilter, searchQuery, myStack]);
 
   const sourceCounts = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
@@ -324,10 +342,14 @@ export default function FeedScreen() {
 
     const counts: Record<string, number> = {
       ALL: candidateArticles.length,
+      MY_STACK: 0,
       PSIRT: 0,
       MEDIA: 0,
     };
     candidateArticles.forEach((a) => {
+      if (myStack.matchesArticle(a)) {
+        counts.MY_STACK++;
+      }
       if (isVendorPsirt(a.sourceName)) {
         counts.PSIRT++;
       } else {
@@ -335,7 +357,7 @@ export default function FeedScreen() {
       }
     });
     return counts;
-  }, [articles, filter, severityFilter, searchQuery]);
+  }, [articles, filter, severityFilter, searchQuery, myStack]);
 
   /*
    * Multi-dimensional filtering:
@@ -356,7 +378,11 @@ export default function FeedScreen() {
       );
     }
 
-    if (sourceFilter === 'PSIRT') {
+    if (sourceFilter === 'MY_STACK') {
+      result = result.filter(
+        (article) => myStack.matchesArticle(article),
+      );
+    } else if (sourceFilter === 'PSIRT') {
       result = result.filter(
         (article) => isVendorPsirt(article.sourceName),
       );
@@ -890,7 +916,7 @@ export default function FeedScreen() {
         </View>
       </View>
 
-      {/* ACTIVE FILTER BANNER */}
+            {/* ACTIVE FILTER BANNER */}
       {isAnyFilterActive ? (
         <View
           style={[
@@ -918,7 +944,9 @@ export default function FeedScreen() {
                   fontFamily: 'Exo_700Bold',
                 }}
               >
-                {sourceFilter === 'PSIRT'
+                {sourceFilter === 'MY_STACK'
+                  ? 'My Stack'
+                  : sourceFilter === 'PSIRT'
                   ? 'Vendor PSIRT'
                   : sourceFilter === 'MEDIA'
                   ? 'Media & Research'
@@ -1116,6 +1144,10 @@ export default function FeedScreen() {
                     onSelectSeverity={(sev) => {
                       setSeverityFilter(sev);
                     }}
+                    onSearchCve={(cve: string) => {
+                      setSearchOpen(true);
+                      setSearchQuery(cve);
+                    }}
                     onSelectCategory={(cat) => {
                       setFilter(cat);
                     }}
@@ -1274,6 +1306,11 @@ export default function FeedScreen() {
         visible={walkthroughOpen}
         onClose={() => setWalkthroughOpen(false)}
       />
+
+      <WhatsNewModal
+        visible={whatsNewOpen}
+        onClose={() => setWhatsNewOpen(false)}
+      />
     </SafeAreaView>
   );
 }
@@ -1424,6 +1461,7 @@ const styles = StyleSheet.create({
     color: BLUE,
     fontFamily: 'Exo_600SemiBold',
   },
+  
 
   progressTrack: {
     height: 2.5,
@@ -1549,4 +1587,5 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'Exo_600SemiBold',
   },
+  
 });

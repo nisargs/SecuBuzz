@@ -8,10 +8,12 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TextInput,
   View,
 } from 'react-native';
 
 import { useTheme } from '../context/ThemeContext';
+import { useMyStack, POPULAR_VENDORS, normalizeCve } from '../context/MyStackContext';
 import {
   ARTICLE_CATEGORIES,
   type Article,
@@ -20,7 +22,7 @@ import {
 import { spacing } from '../theme/theme';
 
 export type SeverityFilter = 'ALL' | NonNullable<Article['severity']>;
-export type SourceFilter = 'ALL' | 'PSIRT' | 'MEDIA';
+export type SourceFilter = 'ALL' | 'MY_STACK' | 'PSIRT' | 'MEDIA';
 
 const SEVERITIES: NonNullable<Article['severity']>[] = [
   'CRITICAL',
@@ -70,6 +72,23 @@ export function FilterModal({
   sourceCounts,
 }: FilterModalProps) {
   const { colors, isDark, accentColor, severityColors } = useTheme();
+  const myStack = useMyStack();
+  const [cveInput, setCveInput] = useState('');
+  const [cveError, setCveError] = useState('');
+
+  const handleAddCve = () => {
+    const trimmed = cveInput.trim();
+    if (!trimmed) return;
+    const normalized = normalizeCve(trimmed);
+    if (!/^CVE-\d{4}-\d{4,7}$/.test(normalized)) {
+      setCveError('Format: CVE-YYYY-NNNN');
+      return;
+    }
+    myStack.addWatchCve(normalized);
+    onSelectSource?.('MY_STACK');
+    setCveInput('');
+    setCveError('');
+  };
 
   const isAnyFilterActive =
     selectedCategory !== 'ALL' ||
@@ -358,8 +377,7 @@ export function FilterModal({
                           },
                         ]}
                       >
-                        {formatCategoryLabel(cat)}
-                        {cat !== 'ALL' ? ` (${count})` : ''}
+                        {formatCategoryLabel(cat)} ({count})
                       </Text>
                     </Pressable>
                   );
@@ -421,6 +439,42 @@ export function FilterModal({
                     ]}
                   >
                     All Sources ({sourceCounts?.ALL ?? totalArticlesCount})
+                  </Text>
+                </Pressable>
+
+                {/* MY STACK */}
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => onSelectSource?.('MY_STACK')}
+                  style={[
+                    styles.severityChip,
+                    {
+                      borderColor: colors.border,
+                      backgroundColor:
+                        selectedSource === 'MY_STACK'
+                          ? isDark
+                            ? `${accentColor}20`
+                            : `${accentColor}15`
+                          : isDark
+                          ? colors.background
+                          : colors.surface,
+                    },
+                    selectedSource === 'MY_STACK' && {
+                      borderColor: accentColor,
+                    },
+                  ]}
+                >
+                  <Text
+                    style={[
+                      styles.chipText,
+                      { color: colors.textSecondary },
+                      selectedSource === 'MY_STACK' && {
+                        color: accentColor,
+                        fontWeight: '700',
+                      },
+                    ]}
+                  >
+                    My Stack ({sourceCounts?.MY_STACK ?? 0})
                   </Text>
                 </Pressable>
 
@@ -495,6 +549,211 @@ export function FilterModal({
                     Media & Research ({sourceCounts?.MEDIA ?? 0})
                   </Text>
                 </Pressable>
+              </View>
+            </View>
+
+            {/* MY STACK & WATCHLIST SECTION */}
+            <View style={styles.section}>
+              <View style={styles.sectionHeader}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                  <Text style={[styles.sectionTitle, { color: colors.textSecondary }]}>
+                    MY STACK & WATCHLIST
+                  </Text>
+                  {myStack.selectedVendors.length > 0 || myStack.watchedCves.length > 0 ? (
+                    <View
+                      style={{
+                        paddingHorizontal: 6,
+                        paddingVertical: 1,
+                        borderRadius: 999,
+                        backgroundColor: `${accentColor}20`,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontSize: 10,
+                          fontWeight: '700',
+                          color: accentColor,
+                        }}
+                      >
+                        {myStack.selectedVendors.length + myStack.watchedCves.length}
+                      </Text>
+                    </View>
+                  ) : null}
+                </View>
+                {(myStack.selectedVendors.length > 0 || myStack.watchedCves.length > 0) && (
+                  <Pressable
+                    hitSlop={6}
+                    onPress={() => {
+                      myStack.clearStack();
+                      if (selectedSource === 'MY_STACK') {
+                        onSelectSource?.('ALL');
+                      }
+                    }}
+                  >
+                    <Text style={[styles.resetSectionText, { color: accentColor }]}>
+                      Clear Stack
+                    </Text>
+                  </Pressable>
+                )}
+              </View>
+
+              <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 10 }}>
+                Select enterprise vendors or pin CVEs to filter dispatches:
+              </Text>
+
+              {/* Vendors Wrap */}
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                {POPULAR_VENDORS.map((v) => {
+                  const isSelected = myStack.isVendorSelected(v);
+                  return (
+                    <Pressable
+                      key={v}
+                      accessibilityRole="button"
+                      onPress={() => {
+                        const willBeSelected = !isSelected;
+                        myStack.toggleVendor(v);
+                        if (willBeSelected) {
+                          onSelectSource?.('MY_STACK');
+                        }
+                      }}
+                      style={[
+                        styles.severityChip,
+                        {
+                          borderColor: colors.border,
+                          backgroundColor: isSelected
+                            ? isDark
+                              ? `${accentColor}25`
+                              : `${accentColor}18`
+                            : isDark
+                            ? colors.background
+                            : colors.surface,
+                        },
+                        isSelected && {
+                          borderColor: accentColor,
+                        },
+                      ]}
+                    >
+                      <Text
+                        style={[
+                          styles.chipText,
+                          { color: colors.textSecondary },
+                          isSelected && {
+                            color: accentColor,
+                            fontWeight: '700',
+                          },
+                        ]}
+                      >
+                        {isSelected ? v : `+ ${v}`}
+                      </Text>
+                    </Pressable>
+                  );
+                })}
+              </View>
+
+              {/* CVE WATCHLIST SECTION (Always visible) */}
+              <View style={{ marginTop: 16, paddingTop: 14, borderTopWidth: 1, borderTopColor: colors.border }}>
+                <View style={styles.sectionHeader}>
+                  <Text style={[styles.sectionTitle, { color: colors.textSecondary }]}>
+                    CVE WATCHLIST ({myStack.watchedCves.length})
+                  </Text>
+                  {myStack.watchedCves.length > 0 && (
+                    <Pressable
+                      hitSlop={6}
+                      onPress={() => {
+                        myStack.clearCves();
+                        if (myStack.selectedVendors.length === 0 && selectedSource === 'MY_STACK') {
+                          onSelectSource?.('ALL');
+                        }
+                      }}
+                    >
+                      <Text style={[styles.resetSectionText, { color: accentColor }]}>
+                        Clear
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
+
+                {myStack.watchedCves.length > 0 ? (
+                  <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginBottom: 10 }}>
+                    {myStack.watchedCves.map((cve) => (
+                      <Pressable
+                        key={cve}
+                        accessibilityRole="button"
+                        onPress={() => myStack.removeWatchCve(cve)}
+                        style={[
+                          styles.severityChip,
+                          {
+                            borderColor: `${accentColor}66`,
+                            backgroundColor: `${accentColor}15`,
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: 4,
+                          },
+                        ]}
+                      >
+                        <Ionicons name="pin" size={11} color={accentColor} />
+                        <Text style={[styles.chipText, { color: accentColor, fontWeight: '700' }]}>
+                          {cve}
+                        </Text>
+                        <Ionicons name="close" size={12} color={accentColor} />
+                      </Pressable>
+                    ))}
+                  </View>
+                ) : (
+                  <Text style={{ fontSize: 12, color: colors.textMuted, marginBottom: 10 }}>
+                    No CVEs currently pinned. Add CVEs below or pin them directly from stories & advisories.
+                  </Text>
+                )}
+
+                {/* Quick Add CVE Input */}
+                <View style={{ flexDirection: 'row', gap: 8, alignItems: 'center' }}>
+                  <TextInput
+                    value={cveInput}
+                    onChangeText={(val: string) => {
+                      setCveInput(val);
+                      if (cveError) setCveError('');
+                    }}
+                    placeholder="e.g. CVE-2026-111497"
+                    placeholderTextColor={colors.textMuted}
+                    autoCapitalize="characters"
+                    autoCorrect={false}
+                    style={{
+                      flex: 1,
+                      height: 38,
+                      borderWidth: 1,
+                      borderColor: cveError ? '#EF4444' : colors.border,
+                      borderRadius: 8,
+                      paddingHorizontal: 10,
+                      color: colors.textPrimary,
+                      backgroundColor: isDark ? colors.background : colors.surface,
+                      fontFamily: 'Exo_600SemiBold',
+                      fontSize: 13,
+                    }}
+                  />
+                  <Pressable
+                    accessibilityRole="button"
+                    onPress={handleAddCve}
+                    style={{
+                      height: 38,
+                      paddingHorizontal: 14,
+                      borderRadius: 8,
+                      borderWidth: 1,
+                      borderColor: accentColor,
+                      backgroundColor: `${accentColor}20`,
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Text style={{ color: accentColor, fontWeight: '700', fontSize: 13 }}>
+                      Watch
+                    </Text>
+                  </Pressable>
+                </View>
+                {cveError ? (
+                  <Text style={{ color: '#EF4444', fontSize: 11, marginTop: 4 }}>
+                    {cveError}
+                  </Text>
+                ) : null}
               </View>
             </View>
           </ScrollView>

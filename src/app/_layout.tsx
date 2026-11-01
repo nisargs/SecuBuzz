@@ -10,6 +10,7 @@ import Constants from 'expo-constants';
 import { ThemeProvider, useTheme } from '../context/ThemeContext';
 import { getArticleRepository } from '../data/getArticleRepository';
 import { SavedArticlesProvider } from '../context/SavedArticlesContext';
+import { MyStackProvider } from '../context/MyStackContext';
 import {
   isExpoGo,
   registerForPushNotificationsAsync,
@@ -140,7 +141,7 @@ export default function RootLayout() {
                 articleId,
                 category: typeof data?.category === 'string' ? data.category : undefined,
                 severity: typeof data?.severity === 'string' ? data.severity : undefined,
-                appVersion: Constants.expoConfig?.version ?? '1.0.3',
+                appVersion: Constants.expoConfig?.version ?? '1.0.4',
                 platform: Platform.OS,
               }),
             }).catch(() => {});
@@ -231,7 +232,9 @@ export default function RootLayout() {
   return (
     <ThemeProvider>
       <SavedArticlesProvider>
-        <RootNavigator />
+        <MyStackProvider>
+          <RootNavigator />
+        </MyStackProvider>
       </SavedArticlesProvider>
     </ThemeProvider>
   );

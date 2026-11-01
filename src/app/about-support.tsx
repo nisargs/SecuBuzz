@@ -4,6 +4,7 @@ import { router } from 'expo-router';
 import Constants from 'expo-constants';
 import { useState } from 'react';
 import {
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -13,12 +14,15 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { OnboardingModal } from '../components/OnboardingModal';
+import { WhatsNewModal } from '../components/WhatsNewModal';
 import { useTheme } from '../context/ThemeContext';
 import { spacing } from '../theme/theme';
 import { requestStoreReview } from '../utils/storeReview';
 
 type SubItemRowProps = {
-  icon: keyof typeof Ionicons.glyphMap;
+  icon?: keyof typeof Ionicons.glyphMap;
+  customIcon?: React.ReactNode;
+  badge?: string;
   title: string;
   subtitle: string;
   onPress: () => void;
@@ -29,6 +33,8 @@ type SubItemRowProps = {
 
 function SubItemRow({
   icon,
+  customIcon,
+  badge,
   title,
   subtitle,
   onPress,
@@ -54,17 +60,38 @@ function SubItemRow({
           },
         ]}
       >
-        <Ionicons
-          name={icon}
-          size={20}
-          color={accentColor}
-        />
+        {customIcon ? (
+          customIcon
+        ) : icon ? (
+          <Ionicons
+            name={icon}
+            size={20}
+            color={accentColor}
+          />
+        ) : null}
       </View>
 
       <View style={styles.rowContent}>
-        <Text style={[styles.rowTitle, { color: colors.textPrimary }]}>
-          {title}
-        </Text>
+        <View style={styles.rowTitleWrap}>
+          <Text style={[styles.rowTitle, { color: colors.textPrimary }]}>
+            {title}
+          </Text>
+          {badge ? (
+            <View
+              style={[
+                styles.badgeWrap,
+                {
+                  backgroundColor: `${accentColor}1A`,
+                  borderColor: `${accentColor}44`,
+                },
+              ]}
+            >
+              <Text style={[styles.badgeText, { color: accentColor }]}>
+                {badge}
+              </Text>
+            </View>
+          ) : null}
+        </View>
         <Text style={[styles.rowSubtitle, { color: colors.textMuted }]}>
           {subtitle}
         </Text>
@@ -82,6 +109,7 @@ function SubItemRow({
 export default function AboutSupportScreen() {
   const { colors, accentColor } = useTheme();
   const [walkthroughOpen, setWalkthroughOpen] = useState(false);
+  const [whatsNewOpen, setWhatsNewOpen] = useState(false);
 
   return (
     <SafeAreaView
@@ -125,6 +153,42 @@ export default function AboutSupportScreen() {
           Find documentation, provide product feedback, review third-party open-source components, and reach the engineering team.
         </Text>
 
+        {/* WHAT'S NEW IN V1.0.4 PILL BANNER (MATCHING WEBSITE) */}
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="What's New in v1.0.4 · My Stack & CVE Watchlist"
+          onPress={() => setWhatsNewOpen(true)}
+          style={({ pressed }) => [
+            styles.whatsNewPill,
+            {
+              borderColor: `${accentColor}44`,
+              backgroundColor: `${accentColor}12`,
+            },
+            pressed && styles.whatsNewPillPressed,
+          ]}
+        >
+          <View style={styles.pillDotContainer}>
+            <View style={[styles.pillOuterPulse, { backgroundColor: `${accentColor}33`, borderColor: `${accentColor}66` }]} />
+            <View style={[styles.pillInnerDot, { backgroundColor: accentColor }]} />
+          </View>
+          <Text style={[styles.pillTitle, { color: accentColor }]}>
+            What's New in v1.0.4
+          </Text>
+          <Text style={[styles.pillDotSeparator, { color: colors.textMuted }]}>·</Text>
+          <Text
+            style={[styles.pillTagline, { color: colors.textPrimary }]}
+            numberOfLines={1}
+          >
+            My Stack & CVE Watchlist
+          </Text>
+          <Ionicons
+            name="arrow-forward"
+            size={12}
+            color={accentColor}
+            style={styles.pillArrow}
+          />
+        </Pressable>
+
         {/* CHILD OPTIONS CARD */}
         <View
           style={[
@@ -135,6 +199,23 @@ export default function AboutSupportScreen() {
             },
           ]}
         >
+          <SubItemRow
+            customIcon={
+              <View style={styles.dotIconBox}>
+                <View style={[styles.dotOuterGlow, { backgroundColor: `${accentColor}33`, borderColor: `${accentColor}60` }]} />
+                <View style={[styles.dotSolidCore, { backgroundColor: accentColor }]} />
+              </View>
+            }
+            badge="LATEST"
+            title="What's New in v1.0.4"
+            subtitle="Release notes, My Stack & CVE Watchlist guide"
+            onPress={() => setWhatsNewOpen(true)}
+            accentColor={accentColor}
+            colors={colors}
+          />
+
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
           <SubItemRow
             icon="compass-outline"
             title="Quick Start Walkthrough"
@@ -171,7 +252,7 @@ export default function AboutSupportScreen() {
           <SubItemRow
             icon="information-circle-outline"
             title="About SecuBuzz"
-            subtitle={`Version ${Constants.expoConfig?.version ?? '1.0.3'}, data pipeline & mission`}
+            subtitle={`Version ${Constants.expoConfig?.version ?? '1.0.4'}, data pipeline & mission`}
             onPress={() => router.push('/about')}
             accentColor={accentColor}
             colors={colors}
@@ -239,6 +320,11 @@ export default function AboutSupportScreen() {
         visible={walkthroughOpen}
         onClose={() => setWalkthroughOpen(false)}
       />
+
+      <WhatsNewModal
+        visible={whatsNewOpen}
+        onClose={() => setWhatsNewOpen(false)}
+      />
     </SafeAreaView>
   );
 }
@@ -295,7 +381,66 @@ const styles = StyleSheet.create({
     fontFamily: 'Exo_400Regular',
     fontSize: 14,
     lineHeight: 21,
-    marginBottom: 24,
+    marginBottom: 16,
+  },
+
+  whatsNewPill: {
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    paddingHorizontal: 13,
+    paddingVertical: 7,
+    borderRadius: 9999,
+    borderWidth: 1,
+    marginBottom: 20,
+    maxWidth: '100%',
+  },
+
+  whatsNewPillPressed: {
+    opacity: 0.75,
+    transform: [{ scale: 0.985 }],
+  },
+
+  pillDotContainer: {
+    width: 10,
+    height: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  pillOuterPulse: {
+    position: 'absolute',
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    borderWidth: 1,
+  },
+
+  pillInnerDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+  },
+
+  pillTitle: {
+    fontFamily: Platform.select({ ios: 'Menlo', default: 'monospace' }),
+    fontSize: 12,
+    fontWeight: '700',
+  },
+
+  pillDotSeparator: {
+    fontSize: 12,
+  },
+
+  pillTagline: {
+    fontFamily: Platform.select({ ios: 'Menlo', default: 'monospace' }),
+    fontSize: 12,
+    flexShrink: 1,
+  },
+
+  pillArrow: {
+    marginLeft: 2,
   },
 
   card: {
@@ -328,10 +473,51 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
+  rowTitleWrap: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 3,
+  },
+
+  badgeWrap: {
+    paddingHorizontal: 6,
+    paddingVertical: 1.5,
+    borderRadius: 4,
+    borderWidth: 1,
+  },
+
+  badgeText: {
+    fontFamily: Platform.select({ ios: 'Menlo', default: 'monospace' }),
+    fontSize: 9.5,
+    fontWeight: '700',
+    letterSpacing: 0.5,
+  },
+
+  dotIconBox: {
+    width: 20,
+    height: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  dotOuterGlow: {
+    position: 'absolute',
+    width: 16,
+    height: 16,
+    borderRadius: 8,
+    borderWidth: 1.5,
+  },
+
+  dotSolidCore: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+  },
+
   rowTitle: {
     fontFamily: 'Exo_600SemiBold',
     fontSize: 14.5,
-    marginBottom: 3,
   },
 
   rowSubtitle: {

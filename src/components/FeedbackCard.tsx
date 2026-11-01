@@ -51,7 +51,7 @@ export function FeedbackCard({ onDismiss, onAdvanceToNext, context = 'news' }: F
     const email = 'support@secubuzz.com';
     const subject = encodeURIComponent('[SecuBuzz App] Bug Report');
     const body = encodeURIComponent(
-      `Hello SecuBuzz team,\n\nI noticed an issue or bug in version ${Constants.expoConfig?.version ?? '1.0.3'}:\n\nDetails:\n\n`
+      `Hello SecuBuzz team,\n\nI noticed an issue or bug in version ${Constants.expoConfig?.version ?? '1.0.4'}:\n\nDetails:\n\n`
     );
     try {
       await Linking.openURL(`mailto:${email}?subject=${subject}&body=${body}`);

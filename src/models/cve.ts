@@ -1,4 +1,4 @@
-export type AdvisorySource = 'CISA KEV' | 'GITHUB' | 'NVD';
+export type AdvisorySource = 'CISA KEV' | 'GITHUB' | 'NVD' | 'Emerging (News)';
 
 export type AdvisorySeverity = 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
 
@@ -26,6 +26,6 @@ export type CveAdvisory = {
 };
 
 
-export type AdvisorySourceFilter = 'ALL' | 'CISA' | 'GITHUB';
+export type AdvisorySourceFilter = 'ALL' | 'MY_STACK' | 'CISA' | 'GITHUB';
 export type AdvisorySeverityFilter = 'ALL' | AdvisorySeverity | 'RANSOMWARE';
 export type AdvisoryEpssFilter = 'ALL' | 'CRITICAL_90' | 'HIGH_50' | 'LOW_50';

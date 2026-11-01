@@ -61,9 +61,9 @@ export function Home() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
                 </span>
-                <span className="font-semibold">What's New in v1.0.3</span>
+                <span className="font-semibold">What's New in v1.0.4</span>
                 <span className="text-subtle">·</span>
-                <span className="text-ink transition-colors group-hover:text-accent">Vendor Radar, EPSS & AMOLED</span>
+                <span className="text-ink transition-colors group-hover:text-accent">My Stack & CVE Watchlist</span>
                 <ArrowRightIcon className="h-3 w-3 text-subtle transition-transform duration-150 ease-out group-hover:translate-x-0.5 group-hover:text-accent" aria-hidden="true" />
               </button>
             </div>

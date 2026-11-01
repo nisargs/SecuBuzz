@@ -33,7 +33,7 @@ const STORAGE_KEY_PERMISSION_REQUESTED = '@secubuzz_push_permission_requested';
 const STORAGE_KEY_LAST_REGISTERED = '@secubuzz_push_token_last_registered';
 const STORAGE_KEY_PREFERENCES = '@secubuzz_notification_preferences';
 
-export type SeverityThreshold = 'ALL' | 'HIGH_CRITICAL' | 'CRITICAL_ONLY';
+export type SeverityThreshold = 'ALL' | 'HIGH_CRITICAL' | 'CRITICAL_ONLY' | 'MY_STACK_ONLY';
 
 export interface NotificationPreferences {
   newsBriefs: boolean;
@@ -110,26 +110,28 @@ if (!isExpoGo) {
             const notifType = String(data?.type || '').toLowerCase();
             const notifSeverity = String(data?.severity || '').toUpperCase();
 
-            // Check content type filters
-            if (notifType === 'brief' && !prefs.newsBriefs) {
-              return {
-                shouldPlaySound: false,
-                shouldSetBadge: false,
-                shouldShowBanner: false,
-                shouldShowList: false,
-              };
-            }
+            // Check content type filters (bypassed for MY_STACK_ONLY to ensure full coverage across briefs & advisories)
+            if (prefs.severityThreshold !== 'MY_STACK_ONLY') {
+              if (notifType === 'brief' && !prefs.newsBriefs) {
+                return {
+                  shouldPlaySound: false,
+                  shouldSetBadge: false,
+                  shouldShowBanner: false,
+                  shouldShowList: false,
+                };
+              }
 
-            if (
-              (notifType === 'advisory' || notifType === 'cve') &&
-              !prefs.threatAdvisories
-            ) {
-              return {
-                shouldPlaySound: false,
-                shouldSetBadge: false,
-                shouldShowBanner: false,
-                shouldShowList: false,
-              };
+              if (
+                (notifType === 'advisory' || notifType === 'cve') &&
+                !prefs.threatAdvisories
+              ) {
+                return {
+                  shouldPlaySound: false,
+                  shouldSetBadge: false,
+                  shouldShowBanner: false,
+                  shouldShowList: false,
+                };
+              }
             }
 
             // Check severity threshold filter
@@ -156,6 +158,59 @@ if (!isExpoGo) {
                 shouldShowBanner: false,
                 shouldShowList: false,
               };
+            }
+
+            if (prefs.severityThreshold === 'MY_STACK_ONLY') {
+              try {
+                const [savedVendorsRaw, savedCvesRaw] = await Promise.all([
+                  AsyncStorage.getItem('secubuzz_my_stack_vendors_v1'),
+                  AsyncStorage.getItem('secubuzz_cve_watchlist_v1'),
+                ]);
+                const vendors: string[] = savedVendorsRaw ? JSON.parse(savedVendorsRaw) : [];
+                const cves: string[] = savedCvesRaw ? JSON.parse(savedCvesRaw) : [];
+
+                if (vendors.length === 0 && cves.length === 0) {
+                  return {
+                    shouldPlaySound: false,
+                    shouldSetBadge: false,
+                    shouldShowBanner: false,
+                    shouldShowList: false,
+                  };
+                }
+
+                const incomingCve = String(data?.cveID || data?.cve || '').toUpperCase();
+                const titleText = String(notification.request.content.title || '').toUpperCase();
+                const bodyText = String(notification.request.content.body || '').toUpperCase();
+                const vendorProject = String(data?.vendorProject || data?.vendor || '').toLowerCase();
+                const product = String(data?.product || '').toLowerCase();
+
+                let matched = false;
+                if (cves.length > 0) {
+                  if (incomingCve && cves.some((c) => incomingCve.includes(c) || c.includes(incomingCve))) {
+                    matched = true;
+                  } else if (cves.some((c) => titleText.includes(c) || bodyText.includes(c))) {
+                    matched = true;
+                  }
+                }
+
+                if (!matched && vendors.length > 0) {
+                  const combined = [titleText, bodyText, vendorProject, product].join(' ').toLowerCase();
+                  if (vendors.some((v) => combined.includes(v.toLowerCase()))) {
+                    matched = true;
+                  }
+                }
+
+                if (!matched) {
+                  return {
+                    shouldPlaySound: false,
+                    shouldSetBadge: false,
+                    shouldShowBanner: false,
+                    shouldShowList: false,
+                  };
+                }
+              } catch {
+                // Ignore parsing errors and fall through
+              }
             }
 
             return {

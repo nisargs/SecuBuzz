@@ -210,17 +210,20 @@ export default function NotificationsScreen() {
           ALERT CHANNELS
         </Text>
 
-        <View
-          style={[
-            styles.channelsCard,
-            {
-              backgroundColor: colors.surface,
-              borderColor: colors.border,
-            },
-          ]}
-        >
-          {/* News Briefs Toggle */}
-          <View style={styles.channelRow}>
+        {preferences.severityThreshold === 'MY_STACK_ONLY' ? (
+          <View
+            style={[
+              styles.channelsCard,
+              {
+                backgroundColor: colors.surface,
+                borderColor: `${accentColor}55`,
+                padding: 16,
+                flexDirection: 'row',
+                alignItems: 'center',
+                gap: 12,
+              },
+            ]}
+          >
             <View
               style={[
                 styles.channelIconWrap,
@@ -228,67 +231,101 @@ export default function NotificationsScreen() {
               ]}
             >
               <Ionicons
-                name="newspaper-outline"
+                name="layers-outline"
                 size={20}
                 color={accentColor}
               />
             </View>
-            <View style={styles.channelTextWrap}>
+            <View style={{ flex: 1 }}>
               <Text style={[styles.channelTitle, { color: colors.textPrimary }]}>
-                News Briefs
+                Full Stack Intelligence Active
               </Text>
-              <Text style={[styles.channelDesc, { color: colors.textSecondary }]}>
-                Daily cybersecurity intelligence, data breaches, and incident analysis.
+              <Text style={[styles.channelDesc, { color: colors.textSecondary, marginTop: 3, lineHeight: 18 }]}>
+                Both news briefs and threat advisories are automatically monitored for your configured vendors & watched CVEs.
               </Text>
             </View>
-            <Switch
-              value={preferences.newsBriefs}
-              onValueChange={(val) => handleUpdatePreference('newsBriefs', val)}
-              trackColor={{
-                false: isDark ? '#334155' : '#cbd5e1',
-                true: `${accentColor}88`,
-              }}
-              thumbColor={preferences.newsBriefs ? accentColor : '#94a3b8'}
-            />
           </View>
-
-          <View style={[styles.divider, { backgroundColor: colors.border }]} />
-
-          {/* Threat Advisories Toggle */}
-          <View style={styles.channelRow}>
-            <View
-              style={[
-                styles.channelIconWrap,
-                { backgroundColor: `${severityColors.CRITICAL.primary}18` },
-              ]}
-            >
-              <Ionicons
-                name="shield-checkmark-outline"
-                size={20}
-                color={severityColors.CRITICAL.primary}
+        ) : (
+          <View
+            style={[
+              styles.channelsCard,
+              {
+                backgroundColor: colors.surface,
+                borderColor: colors.border,
+              },
+            ]}
+          >
+            {/* News Briefs Toggle */}
+            <View style={styles.channelRow}>
+              <View
+                style={[
+                  styles.channelIconWrap,
+                  { backgroundColor: `${accentColor}18` },
+                ]}
+              >
+                <Ionicons
+                  name="newspaper-outline"
+                  size={20}
+                  color={accentColor}
+                />
+              </View>
+              <View style={styles.channelTextWrap}>
+                <Text style={[styles.channelTitle, { color: colors.textPrimary }]}>
+                  News Briefs
+                </Text>
+                <Text style={[styles.channelDesc, { color: colors.textSecondary }]}>
+                  Daily cybersecurity intelligence, data breaches, and incident analysis.
+                </Text>
+              </View>
+              <Switch
+                value={preferences.newsBriefs}
+                onValueChange={(val) => handleUpdatePreference('newsBriefs', val)}
+                trackColor={{
+                  false: isDark ? '#334155' : '#cbd5e1',
+                  true: `${accentColor}88`,
+                }}
+                thumbColor={preferences.newsBriefs ? accentColor : '#94a3b8'}
               />
             </View>
-            <View style={styles.channelTextWrap}>
-              <Text style={[styles.channelTitle, { color: colors.textPrimary }]}>
-                Threat Advisories & Zero-Days
-              </Text>
-              <Text style={[styles.channelDesc, { color: colors.textSecondary }]}>
-                CISA KEV emergency directives, active in-the-wild zero-days, and CVEs.
-              </Text>
+
+            <View style={[styles.divider, { backgroundColor: colors.border }]} />
+
+            {/* Threat Advisories Toggle */}
+            <View style={styles.channelRow}>
+              <View
+                style={[
+                  styles.channelIconWrap,
+                  { backgroundColor: `${severityColors.CRITICAL.primary}18` },
+                ]}
+              >
+                <Ionicons
+                  name="shield-checkmark-outline"
+                  size={20}
+                  color={severityColors.CRITICAL.primary}
+                />
+              </View>
+              <View style={styles.channelTextWrap}>
+                <Text style={[styles.channelTitle, { color: colors.textPrimary }]}>
+                  Threat Advisories & Zero-Days
+                </Text>
+                <Text style={[styles.channelDesc, { color: colors.textSecondary }]}>
+                  CISA KEV emergency directives, active in-the-wild zero-days, and CVEs.
+                </Text>
+              </View>
+              <Switch
+                value={preferences.threatAdvisories}
+                onValueChange={(val) =>
+                  handleUpdatePreference('threatAdvisories', val)
+                }
+                trackColor={{
+                  false: isDark ? '#334155' : '#cbd5e1',
+                  true: `${accentColor}88`,
+                }}
+                thumbColor={preferences.threatAdvisories ? accentColor : '#94a3b8'}
+              />
             </View>
-            <Switch
-              value={preferences.threatAdvisories}
-              onValueChange={(val) =>
-                handleUpdatePreference('threatAdvisories', val)
-              }
-              trackColor={{
-                false: isDark ? '#334155' : '#cbd5e1',
-                true: `${accentColor}88`,
-              }}
-              thumbColor={preferences.threatAdvisories ? accentColor : '#94a3b8'}
-            />
           </View>
-        </View>
+        )}
 
         {/* SEVERITY THRESHOLD SELECTOR */}
         <Text style={[styles.sectionSubtitle, { color: colors.textMuted }]}>
@@ -299,6 +336,59 @@ export default function NotificationsScreen() {
         </Text>
 
         <View style={styles.thresholdList}>
+          {/* My Stack & Watchlist Only */}
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Select My Stack and Watchlist Only threshold"
+            onPress={() =>
+              handleUpdatePreference('severityThreshold', 'MY_STACK_ONLY')
+            }
+            style={[
+              styles.thresholdCard,
+              {
+                backgroundColor: colors.surface,
+                borderColor:
+                  preferences.severityThreshold === 'MY_STACK_ONLY'
+                    ? accentColor
+                    : colors.border,
+              },
+              preferences.severityThreshold === 'MY_STACK_ONLY' &&
+                styles.thresholdCardActive,
+            ]}
+          >
+            <View style={styles.thresholdHeader}>
+              <View style={styles.thresholdTitleRow}>
+                <View
+                  style={[
+                    styles.severityDot,
+                    { backgroundColor: accentColor },
+                  ]}
+                />
+                <Text
+                  style={[styles.thresholdTitle, { color: colors.textPrimary }]}
+                >
+                  My Stack & Watchlist Only
+                </Text>
+              </View>
+              <Ionicons
+                name={
+                  preferences.severityThreshold === 'MY_STACK_ONLY'
+                    ? 'radio-button-on'
+                    : 'radio-button-off'
+                }
+                size={19}
+                color={
+                  preferences.severityThreshold === 'MY_STACK_ONLY'
+                    ? accentColor
+                    : colors.textMuted
+                }
+              />
+            </View>
+            <Text style={[styles.thresholdDesc, { color: colors.textSecondary }]}>
+              Only receive push notifications when an active threat or zero-day advisory matches your selected enterprise vendors or pinned CVEs.
+            </Text>
+          </Pressable>
+
           {/* Critical Only */}
           <Pressable
             accessibilityRole="button"
@@ -385,18 +475,7 @@ export default function NotificationsScreen() {
                 >
                   High & Critical
                 </Text>
-                <View
-                  style={[
-                    styles.recBadge,
-                    { backgroundColor: `${accentColor}22` },
-                  ]}
-                >
-                  <Text
-                    style={[styles.recBadgeText, { color: accentColor }]}
-                  >
-                    BEST
-                  </Text>
-                </View>
+                
               </View>
               <Ionicons
                 name={

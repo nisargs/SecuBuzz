@@ -4,6 +4,7 @@ import { router } from 'expo-router';
 import * as Linking from 'expo-linking';
 import Constants from 'expo-constants';
 import { WALKTHROUGH_STORAGE_KEY } from '../../components/OnboardingModal';
+import { WHATS_NEW_STORAGE_KEY } from '../../components/WhatsNewModal';
 import { useCallback, useEffect, useState } from 'react';
 import {
   Alert,
@@ -189,6 +190,7 @@ export default function SettingsScreen() {
                 'cached-articles',
                 '@secubuzz_advisories_v3',
                 '@secubuzz_advisories_v2',
+                WHATS_NEW_STORAGE_KEY,
                 WALKTHROUGH_STORAGE_KEY,
                 '@secubuzz_walkthrough_completed',
               ]);
@@ -280,25 +282,11 @@ export default function SettingsScreen() {
 
           <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-          {/* 3. MONITORED SOURCES */}
-          <ParentOptionRow
-            icon="list-outline"
-            title="Monitored Sources"
-            subtitle="48 curated feeds, vendor PSIRTs & databases"
-            badge="48"
-            rightIcon="open-outline"
-            onPress={() => void Linking.openURL('https://secubuzz.com/sources')}
-            accentColor={accentColor}
-            colors={colors}
-          />
-
-          <View style={[styles.divider, { backgroundColor: colors.border }]} />
-
-          {/* 4. ABOUT & SUPPORT */}
+          {/* 3. ABOUT & SUPPORT */}
           <ParentOptionRow
             icon="information-circle-outline"
             title="About & Support"
-            subtitle={`Feedback, v${Constants.expoConfig?.version ?? '1.0.3'} & licenses`}
+            subtitle={`Feedback, v${Constants.expoConfig?.version ?? '1.0.4'} & licenses`}
             onPress={() => router.push('/about-support')}
             accentColor={accentColor}
             colors={colors}
@@ -306,7 +294,7 @@ export default function SettingsScreen() {
 
           <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-          {/* 5. LEGAL & PRIVACY */}
+          {/* 4. LEGAL & PRIVACY */}
           <ParentOptionRow
             icon="shield-checkmark-outline"
             title="Legal & Privacy"
@@ -318,7 +306,7 @@ export default function SettingsScreen() {
 
           <View style={[styles.divider, { backgroundColor: colors.border }]} />
 
-          {/* 6. DATA & STORAGE */}
+          {/* 5. DATA & STORAGE */}
           <ParentOptionRow
             icon="server-outline"
             title="Data & Storage"
@@ -333,7 +321,7 @@ export default function SettingsScreen() {
         {/* BOTTOM ATTRIBUTION */}
         <View style={styles.footer}>
           <Text style={[styles.footerText, { color: colors.textMuted }]}>
-            SecuBuzz Intelligence · Version {Constants.expoConfig?.version ?? '1.0.3'}
+            SecuBuzz Intelligence · Version {Constants.expoConfig?.version ?? '1.0.4'}
           </Text>
           <Pressable
             accessibilityRole="link"

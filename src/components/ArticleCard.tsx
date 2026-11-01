@@ -1,6 +1,9 @@
 import { Ionicons } from '@expo/vector-icons';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import {
+  Clipboard,
+  Linking,
+  Modal,
   Platform,
   Pressable,
   StyleSheet,
@@ -9,6 +12,7 @@ import {
 } from 'react-native';
 
 import { useTheme } from '../context/ThemeContext';
+import { useMyStack, normalizeCve, POPULAR_VENDORS } from '../context/MyStackContext';
 import type { Article } from '../models/article';
 import { colors, severityColors, spacing } from '../theme/theme';
 
@@ -16,6 +20,7 @@ const BLUE = colors.accent;
 import { copyArticleToClipboard } from '../utils/copyReport';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
 import { isVendorPsirt } from '../utils/psirt';
+import { haptics } from '../utils/haptics';
 import { openArticle } from '../utils/openArticle';
 import { shareArticle } from '../utils/shareArticle';
 import { wordCount } from '../utils/wordCount';
@@ -26,6 +31,7 @@ type ArticleCardProps = {
   onToggleSaved: (articleOrId: string | Article) => void;
   onSelectSeverity?: (severity: NonNullable<Article['severity']>) => void;
   onSelectCategory?: (category: Article['category']) => void;
+  onSearchCve?: (cve: string) => void;
 };
 
 function formatCategory(
@@ -42,16 +48,137 @@ function formatCategory(
   return category;
 }
 
+
+// Sorted popular vendors for regex matching (longest names first)
+const SORTED_VENDORS = [
+  'Palo Alto Networks',
+  'Check Point',
+  'SonicWall',
+  'Atlassian',
+  'Fortinet',
+  'Microsoft',
+  'Citrix',
+  'GitLab',
+  'Oracle',
+  'VMware',
+  'Cisco',
+  'Ivanti',
+  'Apple',
+  'Google',
+  'Red Hat',
+  'AWS',
+];
+
+const ENTITY_REGEX = new RegExp(
+  `(CVE-\\d{4}-\\d{4,7}|\\b(?:${SORTED_VENDORS.join('|')})\\b)`,
+  'gi'
+);
+
+type ActiveEntity =
+  | { type: 'cve'; value: string }
+  | { type: 'vendor'; value: string };
+
+function renderSummaryWithEntities(
+  text: string,
+  onPressEntity: (entity: ActiveEntity) => void,
+  textColor: string
+) {
+  const parts = text.split(ENTITY_REGEX);
+  if (parts.length === 1) return text;
+
+  return parts.map((part, index) => {
+    if (/^CVE-\d{4}-\d{4,7}$/i.test(part)) {
+      const normalized = normalizeCve(part);
+      return (
+        <Text
+          key={index}
+          onPress={() => onPressEntity({ type: 'cve', value: normalized })}
+          suppressHighlighting={false}
+          style={{
+            color: textColor,
+            textDecorationLine: 'underline',
+          }}
+        >
+          {part}
+        </Text>
+      );
+    }
+
+    const matchedVendor = POPULAR_VENDORS.find(
+      (v) => v.toLowerCase() === part.toLowerCase()
+    );
+    if (matchedVendor) {
+      return (
+        <Text
+          key={index}
+          onPress={() => onPressEntity({ type: 'vendor', value: matchedVendor })}
+          suppressHighlighting={false}
+          style={{
+            color: textColor,
+            textDecorationLine: 'underline',
+          }}
+        >
+          {part}
+        </Text>
+      );
+    }
+
+    return part;
+  });
+}
+
 export function ArticleCard({
   article,
   isSaved,
   onToggleSaved,
   onSelectSeverity,
   onSelectCategory,
+  onSearchCve,
 }: ArticleCardProps) {
   const { colors, isDark, accentColor, severityColors, fontScaleMultiplier } = useTheme();
   const [opening, setOpening] = useState(false);
   const [copied, setCopied] = useState(false);
+  const { isWatchingCve, toggleWatchCve, isVendorSelected, toggleVendor, showToast } = useMyStack();
+  const [activeEntity, setActiveEntity] = useState<ActiveEntity | null>(null);
+  const [actionFeedback, setActionFeedback] = useState<string | null>(null);
+
+  const handleEntityPress = (entity: ActiveEntity) => {
+    haptics.selection();
+    setActionFeedback(null);
+    setActiveEntity(entity);
+  };
+
+  const handleToggleEntity = () => {
+    if (!activeEntity || actionFeedback) return;
+    const isCve = activeEntity.type === 'cve';
+    const isCurrentlyActive = isCve
+      ? isWatchingCve(activeEntity.value)
+      : isVendorSelected(activeEntity.value);
+
+    const feedbackText = isCve
+      ? isCurrentlyActive
+        ? `Removed ${activeEntity.value} from Watchlist`
+        : `Pinned ${activeEntity.value} to Watchlist`
+      : isCurrentlyActive
+        ? `Removed ${activeEntity.value} from My Stack`
+        : `Added ${activeEntity.value} to My Stack`;
+
+    haptics.notificationSuccess();
+    setActionFeedback(feedbackText);
+
+    if (isCve) {
+      toggleWatchCve(activeEntity.value);
+    } else {
+      toggleVendor(activeEntity.value);
+    }
+
+    showToast(feedbackText);
+
+    setTimeout(() => {
+      setActiveEntity(null);
+      setActionFeedback(null);
+    }, 380);
+  };
 
   function handleCopy() {
     copyArticleToClipboard(article);
@@ -242,7 +369,7 @@ export function ArticleCard({
         ]}
         numberOfLines={4}
       >
-        {article.headline}
+        {renderSummaryWithEntities(article.headline, handleEntityPress, colors.textPrimary)}
       </Text>
 
       {/* DIVIDER */}
@@ -269,7 +396,7 @@ export function ArticleCard({
             },
           ]}
         >
-          {article.summary}
+          {renderSummaryWithEntities(article.summary, handleEntityPress, colors.textSecondary)}
         </Text>
 
         {wordCount(article.summary) > 0 ? (
@@ -311,6 +438,137 @@ export function ArticleCard({
           />
         </Pressable>
       </View>
+      {/* INTERACTIVE ENTITY ACTION SHEET (2 OPTIONS ONLY) */}
+      <Modal
+        visible={Boolean(activeEntity)}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setActiveEntity(null)}
+      >
+        <Pressable
+          style={styles.modalOverlay}
+          onPress={() => setActiveEntity(null)}
+        >
+          <Pressable
+            style={[
+              styles.modalCard,
+              {
+                backgroundColor: colors.surface,
+                borderColor: colors.border,
+              },
+            ]}
+            onPress={(e) => e.stopPropagation()}
+          >
+            {/* Header */}
+            <View style={styles.modalHeader}>
+              <View style={{ flex: 1 }}>
+                <Text style={[styles.modalEyebrow, { color: accentColor }]}>
+                  {activeEntity?.type === 'cve' ? 'CVE TARGET' : 'ENTERPRISE VENDOR'}
+                </Text>
+                <Text style={[styles.modalCveTitle, { color: colors.textPrimary }]}>
+                  {activeEntity?.value}
+                </Text>
+              </View>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Close"
+                hitSlop={8}
+                onPress={() => setActiveEntity(null)}
+                style={styles.modalCloseButton}
+              >
+                <Ionicons name="close" size={20} color={colors.textSecondary} />
+              </Pressable>
+            </View>
+
+            {/* Option 1: Add to / Remove from Watchlist or Stack */}
+            <Pressable
+              accessibilityRole="button"
+              onPress={handleToggleEntity}
+              style={[
+                styles.modalActionButton,
+                {
+                  borderColor: actionFeedback ? accentColor : colors.border,
+                  backgroundColor: actionFeedback
+                    ? `${accentColor}25`
+                    : activeEntity?.type === 'cve'
+                      ? isWatchingCve(activeEntity.value)
+                        ? `${accentColor}18`
+                        : isDark ? colors.background : colors.surface
+                      : isVendorSelected(activeEntity?.value || '')
+                      ? `${accentColor}18`
+                      : isDark ? colors.background : colors.surface,
+                },
+              ]}
+            >
+              <Ionicons
+                name={
+                  actionFeedback
+                    ? 'checkmark-circle'
+                    : activeEntity?.type === 'cve'
+                      ? isWatchingCve(activeEntity.value) ? 'pin' : 'pin-outline'
+                      : isVendorSelected(activeEntity?.value || '') ? 'layers' : 'layers-outline'
+                }
+                size={18}
+                color={
+                  actionFeedback
+                    ? accentColor
+                    : activeEntity?.type === 'cve'
+                      ? isWatchingCve(activeEntity.value) ? accentColor : colors.textPrimary
+                      : isVendorSelected(activeEntity?.value || '') ? accentColor : colors.textPrimary
+                }
+              />
+              <Text
+                style={[
+                  styles.modalActionText,
+                  {
+                    color:
+                      actionFeedback
+                        ? accentColor
+                        : activeEntity?.type === 'cve'
+                          ? isWatchingCve(activeEntity.value) ? accentColor : colors.textPrimary
+                          : isVendorSelected(activeEntity?.value || '') ? accentColor : colors.textPrimary,
+                    fontWeight: '700',
+                  },
+                ]}
+              >
+                {actionFeedback ||
+                  (activeEntity?.type === 'cve'
+                    ? isWatchingCve(activeEntity.value)
+                      ? 'Remove from CVE Watchlist'
+                      : 'Add to CVE Watchlist'
+                    : isVendorSelected(activeEntity?.value || '')
+                    ? 'Remove from My Stack'
+                    : 'Add to My Stack')}
+              </Text>
+            </Pressable>
+
+            {/* Option 2: Filter Feed by this CVE or Vendor */}
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => {
+                if (!activeEntity) return;
+                const valueToFilter = activeEntity.value;
+                setActiveEntity(null);
+                onSearchCve?.(valueToFilter);
+              }}
+              style={[
+                styles.modalActionButton,
+                {
+                  borderColor: colors.border,
+                  backgroundColor: isDark ? colors.background : colors.surface,
+                },
+              ]}
+            >
+              <Ionicons name="filter-outline" size={18} color={accentColor} />
+              <Text style={[styles.modalActionText, { color: colors.textPrimary }]}>
+                {activeEntity?.type === 'cve'
+                  ? 'Filter Feed by this CVE'
+                  : 'Filter Feed by this Vendor'}
+              </Text>
+            </Pressable>
+          </Pressable>
+        </Pressable>
+      </Modal>
     </View>
   );
 }
@@ -463,5 +721,53 @@ const styles = StyleSheet.create({
     letterSpacing: 0.9,
     flex: 1,
     paddingRight: 10,
+  },
+
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.65)',
+    justifyContent: 'flex-end',
+  },
+  modalCard: {
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderWidth: 1,
+    paddingHorizontal: 20,
+    paddingTop: 18,
+    paddingBottom: Platform.OS === 'ios' ? 36 : 24,
+    gap: 10,
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    marginBottom: 6,
+  },
+  modalEyebrow: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 10.5,
+    letterSpacing: 1.5,
+    marginBottom: 2,
+  },
+  modalCveTitle: {
+    fontFamily: 'Exo_700Bold',
+    fontSize: 20,
+    letterSpacing: 0.5,
+  },
+  modalCloseButton: {
+    padding: 4,
+  },
+  modalActionButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    borderRadius: 12,
+    borderWidth: 1,
+  },
+  modalActionText: {
+    fontFamily: 'Exo_600SemiBold',
+    fontSize: 14.5,
   },
 });

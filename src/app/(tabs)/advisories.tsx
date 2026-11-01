@@ -27,6 +27,10 @@ import {
 } from '../../components/ScreenStates';
 import { useSavedArticles } from '../../context/SavedArticlesContext';
 import { useTheme } from '../../context/ThemeContext';
+import { useMyStack, POPULAR_VENDORS } from '../../context/MyStackContext';
+import { getVendorFromSource } from '../../utils/psirt';
+import { getArticleRepository } from '../../data/getArticleRepository';
+import type { Article } from '../../models/article';
 import type {
   AdvisoryEpssFilter,
   AdvisorySeverityFilter,
@@ -50,9 +54,20 @@ function formatHeaderDate(date: Date): string {
 
 export default function AdvisoriesScreen() {
   const { colors, isDark, accentColor, severityColors } = useTheme();
+  const myStack = useMyStack();
   const { isSaved, toggleSaved } = useSavedArticles();
 
   const [advisories, setAdvisories] = useState<CveAdvisory[]>([]);
+  const [cachedNews, setCachedNews] = useState<Article[]>([]);
+
+  useEffect(() => {
+    void getArticleRepository()
+      .getArticles()
+      .then((items) => {
+        if (items && items.length > 0) setCachedNews(items);
+      })
+      .catch(() => {});
+  }, []);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
 
@@ -262,6 +277,7 @@ export default function AdvisoriesScreen() {
   }, [advisories, loadAdvisories, triggerUpToDateBanner]);
 
   const matchesSource = (item: CveAdvisory, source: AdvisorySourceFilter) => {
+    if (source === 'MY_STACK') return myStack.matchesAdvisory(item);
     if (source === 'CISA') return item.source === 'CISA KEV';
     if (source === 'GITHUB') return item.source === 'GITHUB';
     return true;
@@ -308,10 +324,69 @@ export default function AdvisoriesScreen() {
     return text.includes(query);
   };
 
+  // Synthesize watched CVEs that may not be in CISA KEV (e.g. from news briefs)
+  const allAdvisories: CveAdvisory[] = useMemo(() => {
+    const existingCves = new Set(advisories.map((a) => a.cveID.toUpperCase()));
+    const missingWatchedCves = myStack.watchedCves.filter(
+      (cve) => !existingCves.has(cve.toUpperCase()),
+    );
+
+    if (missingWatchedCves.length === 0) {
+      return advisories;
+    }
+
+    const synthesized: CveAdvisory[] = [];
+    for (const cve of missingWatchedCves) {
+      const brief = cachedNews.find((b) =>
+        (b.headline + ' ' + b.summary).toUpperCase().includes(cve.toUpperCase()),
+      );
+
+      const matchedVendor = brief
+        ? POPULAR_VENDORS.find(
+            (v) =>
+              new RegExp(`\\b${v}\\b`, 'i').test(brief.headline) ||
+              new RegExp(`\\b${v}\\b`, 'i').test(brief.summary),
+          ) || (brief.sourceName ? getVendorFromSource(brief.sourceName) : 'Software Vendor')
+        : 'Software Vendor';
+
+      const matchedProduct = brief
+        ? (brief.summary.match(/affecting ([^.]+)/i)?.[1]?.split(',')[0]?.trim() ||
+            brief.headline.split(' ')[0])
+        : 'Affected Software';
+
+      synthesized.push({
+        id: `watched-${cve.toLowerCase()}`,
+        cveID: cve,
+        vendorProject: matchedVendor,
+        product: matchedProduct,
+        vulnerabilityName: brief?.headline || `${cve} Vulnerability Intelligence`,
+        dateAdded: brief?.publishedAt
+          ? brief.publishedAt.slice(0, 10)
+          : new Date().toISOString().slice(0, 10),
+        dueDate: '—',
+        severity:
+          brief?.severity === 'CRITICAL'
+            ? 'CRITICAL'
+            : brief?.severity === 'HIGH'
+            ? 'HIGH'
+            : 'MEDIUM',
+        shortDescription:
+          brief?.summary ||
+          `Monitored CVE on your Watchlist. Active threat intelligence tracking.`,
+        requiredAction:
+          'Apply latest official vendor security updates or mitigations.',
+        url: brief?.sourceUrl || `https://nvd.nist.gov/vuln/detail/${cve}`,
+        source: 'Emerging (News)',
+      });
+    }
+
+    return [...synthesized, ...advisories];
+  }, [advisories, myStack.watchedCves, cachedNews]);
+
   // Dynamic faceted counts for AdvisoryFilterModal
   const severityCounts = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
-    const candidateAdvisories = advisories.filter(
+    const candidateAdvisories = allAdvisories.filter(
       (item) =>
         matchesSource(item, sourceFilter) &&
         matchesEpss(item, epssFilter) &&
@@ -335,11 +410,11 @@ export default function AdvisoriesScreen() {
       if (item.severity === 'LOW') counts.LOW++;
     });
     return counts;
-  }, [advisories, sourceFilter, epssFilter, searchQuery]);
+  }, [allAdvisories, sourceFilter, epssFilter, searchQuery, myStack]);
 
   const sourceCounts = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
-    const candidateAdvisories = advisories.filter(
+    const candidateAdvisories = allAdvisories.filter(
       (item) =>
         matchesSeverity(item, severityFilter) &&
         matchesEpss(item, epssFilter) &&
@@ -347,20 +422,22 @@ export default function AdvisoriesScreen() {
     );
     const counts: Record<string, number> = {
       ALL: candidateAdvisories.length,
+      MY_STACK: 0,
       CISA: 0,
       GITHUB: 0,
     };
     candidateAdvisories.forEach((item) => {
+      if (myStack.matchesAdvisory(item)) counts.MY_STACK++;
       if (item.source === 'CISA KEV') counts.CISA++;
       if (item.source === 'GITHUB') counts.GITHUB++;
     });
     return counts;
-  }, [advisories, severityFilter, epssFilter, searchQuery]);
+  }, [allAdvisories, severityFilter, epssFilter, searchQuery, myStack]);
 
   // EPSS likelihood counts
   const epssCounts = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
-    const candidateAdvisories = advisories.filter(
+    const candidateAdvisories = allAdvisories.filter(
       (item) =>
         matchesSource(item, sourceFilter) &&
         matchesSeverity(item, severityFilter) &&
@@ -385,19 +462,19 @@ export default function AdvisoriesScreen() {
       }
     });
     return counts;
-  }, [advisories, sourceFilter, severityFilter, searchQuery]);
+  }, [allAdvisories, sourceFilter, severityFilter, searchQuery, myStack]);
 
   // Filtered Advisories
   const filteredAdvisories = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
-    return advisories.filter(
+    return allAdvisories.filter(
       (item) =>
         matchesSource(item, sourceFilter) &&
         matchesSeverity(item, severityFilter) &&
         matchesEpss(item, epssFilter) &&
         matchesSearch(item, query),
     );
-  }, [advisories, sourceFilter, severityFilter, epssFilter, searchQuery]);
+  }, [allAdvisories, sourceFilter, severityFilter, epssFilter, searchQuery, myStack]);
 
   // Progressive batch loading
   const visibleAdvisories = useMemo(
@@ -764,7 +841,9 @@ export default function AdvisoriesScreen() {
               >
                 {severityFilter !== 'ALL' ? severityFilter : ''}
                 {severityFilter !== 'ALL' && (sourceFilter !== 'ALL' || epssFilter !== 'ALL') ? ' · ' : ''}
-                {sourceFilter === 'CISA'
+                {sourceFilter === 'MY_STACK'
+                  ? 'My Stack'
+                  : sourceFilter === 'CISA'
                   ? 'CISA KEV'
                   : sourceFilter === 'GITHUB'
                   ? 'GitHub Ecosystem'
@@ -930,6 +1009,10 @@ export default function AdvisoriesScreen() {
                     onSelectSource={(src) =>
                       setSourceFilter(src === 'CISA KEV' ? 'CISA' : 'GITHUB')
                     }
+                    onSearchCve={(cveOrVendor: string) => {
+                      setSearchOpen(true);
+                      setSearchQuery(cveOrVendor);
+                    }}
                   />
                 )}
               </View>
@@ -1229,4 +1312,5 @@ const styles = StyleSheet.create({
     fontFamily: 'Exo_600SemiBold',
     letterSpacing: 0.3,
   },
+  
 });
