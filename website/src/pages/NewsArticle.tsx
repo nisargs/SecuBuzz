@@ -11,6 +11,7 @@ import { NotFound } from './NotFound';
 import { clockTimeUTC, isValidDate, shortDateUTC, timeAgo } from '../utils/date';
 import { wordCount } from '../utils/text';
 import { isVendorPsirt } from '../utils/psirt';
+import type { AdditionalSource } from '../types/news';
 
 export function NewsArticle() {
   const { slug } = useParams();
@@ -285,12 +286,12 @@ export function NewsArticle() {
             {brief.additionalSources && brief.additionalSources.length > 0 && (
               <div className="mt-6 rounded-lg border border-line p-5">
                 <p className="text-xs font-medium uppercase tracking-wider text-subtle">
-                  {brief.additionalSources.some((s) => s.source.toLowerCase() !== brief.source.toLowerCase())
+                  {brief.additionalSources.some((s: AdditionalSource) => s.source.toLowerCase() !== brief.source.toLowerCase())
                     ? 'Also reported by'
                     : 'Related coverage'}
                 </p>
                 <ul className="mt-3 divide-y divide-line">
-                  {brief.additionalSources.map((s) => {
+                  {brief.additionalSources.map((s: AdditionalSource) => {
                     const isSamePublisher = s.source.toLowerCase() === brief.source.toLowerCase();
                     return (
                       <li key={s.sourceUrl} className="flex items-center justify-between py-2.5 first:pt-0 last:pb-0">

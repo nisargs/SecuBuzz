@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { NewsBriefItem } from '../components/NewsBriefItem';
@@ -7,7 +7,7 @@ import { useMyStack } from '../data/useMyStack';
 import { VendorSelect } from '../components/VendorSelect';
 import { newsCategories } from '../data/news';
 import { useLiveNews } from '../data/useLiveNews';
-import type { NewsCategory, NewsSeverity } from '../types/news';
+import type { NewsBrief, NewsCategory, NewsSeverity } from '../types/news';
 import { Seo } from '../components/Seo';
 import { isVendorPsirt, getVendorFromSource } from '../utils/psirt';
 
