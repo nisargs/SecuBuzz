@@ -128,6 +128,15 @@
     - **Retry Preservation**: Rejected candidates are NEVER added to `seenUrls`, preserving them for retry on subsequent hourly AI runs.
 
 ## 6. Native `.aab` Releases & Production Updates
+- **Release v1.0.4 (Version Code 10 - In Google Play Review as of Nov 1, 2026):**
+  - **My Stack Triage Hub & CVE Watchlist**:
+    - Enterprise vendor filtering across 16+ enterprise IT/security vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS, Red Hat, Ivanti, Citrix, etc.).
+    - In-Story Entity Intelligence: Tappable CVE and vendor chips in headlines and summaries across news and advisories with direct triage, feed filtering, and watchlist pinning.
+    - Targeted Push Notifications: Added user preference toggle to restrict alerts strictly to configured stack vendors and watched CVEs.
+    - Unified What's New modal and What's New indicator across website and mobile app.
+  - **PENDING ACTION ITEM FOR NEXT ACTIVE CHAT**:
+    - 1. **Mobile OTA Update**: Prompt user to apply the 3 CVE stub synthesis fixes (unknown severity, explicit unknown dateAdded, unknown product fallback) to mobile (`src/app/(tabs)/advisories.tsx`, `src/models/cve.ts`, `src/theme/theme.ts`) and ship via pure-JS OTA update (`eas update --branch production`) once Google Play approves v1.0.4.
+    - 2. **GitHub Repository Visibility**: Remind user to switch repo back to Private in GitHub **Settings** → **Danger Zone** → **Change repository visibility** → **Make private** (per Rule 0).
 - **Release v1.0.3 (Version Code 9 / OTA Active `01a194ca-1a2a-74cc-a9fc-b93d7ef7fd9b` / Group `b41ed095-de0a-4027-9548-ea1e2b4e104f` / Worker `0ae6ffd6-7ab7-48cb-897d-8a0d62587fab`):**
   - **Bookmark Persistence & Data Loss Prevention (`SavedArticlesContext.tsx`)**:
     - Replaced strict uppercase validators (`isArticleSeverity`, `isArticleCategory`) with permissive normalizers (`normalizeSeverity`, `normalizeCategory`), preventing Title Case advisories (e.g. `'Critical'`, `'High'`) from failing parsing.
