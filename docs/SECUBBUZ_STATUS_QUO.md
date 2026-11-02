@@ -290,3 +290,16 @@ To uphold our **Zero-Silent-Failure Mandate**, SecuBuzz runs a 3-layer automated
 | **SecuBuzz Pro** | **$2.99 / mo**<br>or **$24.99 / yr**<br>*(or $49.99 Lifetime)* | • **Targeted Stack Push Alerts** (alerts only for your enterprise vendors)<br>• **1-Tap SOC / Executive Triage Brief** copy & export<br>• **Threat Lifecycle Timelines**<br>• **Advanced Historical D1 Vault Search** |
 | **SecuBuzz Team** *(Future B2B)* | **$9.99 / mo** | • Outbound Slack / Discord / Teams Webhook alerts<br>• Multi-user stack sharing |
 | **Cloudflare Monetization Gateway** | **Per-Request Micropayment** | • Paywall third-party commercial AI bots, LLM crawlers, and automated MCP consumers querying `secubuzz.com` feeds. |
+
+---
+
+## 10. Planned Architectural Roadmap (v1.1.0)
+
+1. **Expo SDK 58 Migration**:
+   - Release v1.1.0 will upgrade to React Native 0.88 / Expo SDK 58 once Expo Go 58 completes rollout on Google Play.
+   - Unlocks native Android home screen widgets (`expo-widgets`), prebuilt `expo-modules-core` (50% faster Android build times), and `expo-notifications` `largeIcon` drawer branding.
+2. **Official Red Hat Security Data API Enrichment**:
+   - **Goal**: Enrich Red Hat errata (`access.redhat.com/errata/RHSA-*`) with authoritative CVE identifiers directly from Red Hat's official Security Data API / CSAF endpoints.
+   - **Context**: Red Hat's RSS feed (`rhsa.rss`) omits CVE IDs from its XML description. By pre-enriching candidates with the official API, the AI summarizer will embed explicit, tappable CVE chips in the brief, enabling direct triage and tracking for users monitoring those vulnerabilities in **CVE Watchlist**.
+   - **Implementation Rule**: Keep pure-code isolation, preserving the core ingestion code freeze on `scripts/ingest.mjs`.
+

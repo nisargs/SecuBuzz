@@ -122,3 +122,15 @@ graph TD
     J --> K["Cloudflare R2 Bucket + secubuzz.com/feed.json"]
     J --> L["Zero-Stale Push Broadcast: Max 2 / cycle, <= 24h old"]
 ```
+
+---
+
+## 5. Architectural Roadmap: Official Red Hat Security Data API Enrichment (v1.1.0)
+
+- **Identified Gap**: Red Hat's official RSS feed (`https://access.redhat.com/security/data/metrics/rhsa.rss`) omits all CVE identifiers from its RSS XML `<description>` (e.g. *RHSA-2026:85930* lists only package names and a generic template pointing readers to the web References section).
+- **User Impact**: While enterprise users with `Red Hat` in **My Stack** receive these updates, users monitoring specific CVEs (e.g., `CVE-2026-97689`, `CVE-2026-97687`) in **CVE Watchlist** miss automatic matching because the brief's text lacks explicit CVE tokens.
+- **Approved Strategy (v1.1.0)**:
+  - **Zero-Scrape Official API**: Utilize Red Hat's official Security Data API / CSAF endpoints (`access.redhat.com/hydra/rest/securitydata/cvrf/{RHSA_ID}.json`) as an isolated pre-enrichment step for incoming RHSA candidates.
+  - **Payload Injection**: Automatically inject the authoritative CVE list into the candidate's description before AI summarization, ensuring Groq/Gemini renders interactive, tappable CVE chips for seamless Watchlist triage.
+  - **Pipeline Safety**: Maintain code freeze on `scripts/ingest.mjs`; implement as a modular pre-processor or dedicated PSIRT sync harness.
+
