@@ -49,6 +49,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "binance-breach-shows-single-laptop-compromise-caus-614a7acd",
+    "title": "Binance Breach Shows Single Laptop Compromise Causes Billions Lost",
+    "summary": "Attackers exploited a single compromised laptop within Binance's network to exfiltrate over one billion dollars, demonstrating how weak system separation and inadequate access controls can cascade into systemic financial loss. The incident highlights the critical need for robust network segmentation and least-privilege enforcement across enterprise infrastructure.",
+    "category": "Breach",
+    "severity": "CRITICAL",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+    "publishedAt": "2026-11-02T22:27:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-breach-shows-single-laptop-compromise-caus",
+      "article-614a7acd",
+      "614a7acd",
+      "binance-breach-shows-single-laptop-compromise-caus-16e9fc",
+      "binance-breach-shows-single-laptop-compromise-causes-billion"
+    ]
+  },
+  {
     "slug": "red-hat-ansible-automation-platform-2-5-security-u-b8a34741",
     "title": "Red Hat Ansible Automation Platform 2.5 Security Update",
     "summary": "Red Hat released an important security and bug fix update for Ansible Automation Platform 2.5. The update addresses multiple vulnerabilities with a security impact rated as Important, and each CVE’s CVSS base score is provided in the references. Administrators should apply the update promptly to mitigate the identified issues and consult the CVE links for detailed patch information.",
@@ -83,6 +102,27 @@ export const news: NewsBrief[] = [
       "article-e35b03c3",
       "e35b03c3",
       "red-hat-ansible-2-6-security-update-released-37d8c6"
+    ]
+  },
+  {
+    "slug": "aws-mcp-server-path-traversal-vulnerability-cve-20-ff621880",
+    "title": "AWS MCP Server Path Traversal Vulnerability CVE-2026-116635",
+    "summary": "CVE-2026-116635 is an unauthenticated path traversal flaw in the deployment status component of the AWS Serverless MCP Server that allows read or write access to JSON files outside the intended directory when write permissions are enabled. This vulnerability enables potential information disclosure and file manipulation by actors who can influence the MCP agent.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-164-aws/",
+    "publishedAt": "2026-11-02T21:43:24.000Z",
+    "cves": [
+      "CVE-2026-116635"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-mcp-server-path-traversal-vulnerability-cve-20",
+      "article-ff621880",
+      "ff621880",
+      "aws-mcp-server-path-traversal-vulnerability-cve-20-79d6c7",
+      "aws-mcp-server-path-traversal-vulnerability-cve-2026-116635"
     ]
   },
   {
@@ -142,6 +182,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-satellite-client-update-addresses-multiple-10764dda",
+    "title": "Red Hat Satellite Client Update Addresses Multiple Security Issues",
+    "summary": "Red Hat Satellite Client packages have been updated to fix several security vulnerabilities rated as Important, addressing bugs in the Satellite 6 client component. The Common Vulnerability Scoring System base score is available for each individual vulnerability through linked CVE references. Administrators should apply these updates promptly to maintain security posture across managed Satellite environments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94063",
+    "publishedAt": "2026-11-02T20:07:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-client-update-addresses-multiple",
+      "article-10764dda",
+      "10764dda",
+      "red-hat-satellite-client-update-addresses-multiple-37d8c9",
+      "red-hat-satellite-client-update-addresses-multiple-security-"
+    ]
+  },
+  {
     "slug": "byod-gang-claims-michigan-state-cyber-incident-b5f8dee4",
     "title": "BYOD Gang Claims Michigan State Cyber Incident",
     "summary": "The BYOD ransomware gang claimed responsibility for a cyber incident that triggered campus‑wide security measures at Michigan State University. The gang, known for a recent hospital attack, claimed the incident via a post aligning with the MSU timeline. Security teams should verify the claim, isolate affected systems, and apply the gang’s ransomware signatures to mitigate further compromise.",
@@ -178,6 +237,25 @@ export const news: NewsBrief[] = [
       "beeb1c33",
       "cve-2026-120497-stored-cross-site-scripting-in-the-7b8ba0",
       "cve-2026-120497-stored-cross-site-scripting-in-the-html-repo"
+    ]
+  },
+  {
+    "slug": "red-hat-openstack-platform-13-security-update-reso-3d071354",
+    "title": "Red Hat OpenStack Platform 13 Security Update Resolves Critical Issues",
+    "summary": "Updated Red Hat OpenStack Platform 13.0 packages resolve multiple security vulnerabilities rated as Important, addressing issues in the OpenStack platform for RHEL 7 environments. Each vulnerability carries a CVSS base score accessible via linked CVE references in the advisory. System administrators should apply these patches immediately to mitigate the disclosed security weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94039",
+    "publishedAt": "2026-11-02T19:17:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-openstack-platform-13-security-update-reso",
+      "article-3d071354",
+      "3d071354",
+      "red-hat-openstack-platform-13-security-update-reso-37d8c9",
+      "red-hat-openstack-platform-13-security-update-resolves-criti"
     ]
   },
   {
@@ -539,6 +617,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-qt5-qtbase-security-update-released-a6698434",
+    "title": "Red Hat Qt5 Qtbase Security Update Released",
+    "summary": "Red Hat has released an update for qt5-qtbase addressing multiple vulnerabilities rated Important severity under RHSA-2026:93924. Each vulnerability carries a publicly available CVSS base score accessible through CVE references in the advisory. Security teams should apply the update promptly to mitigate disclosed weaknesses in the Qt5 cross-platform application framework.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93924",
+    "publishedAt": "2026-11-02T15:41:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-qt5-qtbase-security-update-released",
+      "article-a6698434",
+      "a6698434",
+      "red-hat-qt5-qtbase-security-update-released-37d91c"
+    ]
+  },
+  {
+    "slug": "red-hat-perl-5-32-security-update-released-fe942fb9",
+    "title": "Red Hat Perl 5.32 Security Update Released",
+    "summary": "Red Hat has released an update for the perl:5.32 module addressing multiple vulnerabilities rated Moderate severity under RHSA-2026:85917. Each vulnerability carries a publicly available CVSS base score accessible through CVE references in the advisory. Security teams should apply the update promptly to mitigate disclosed weaknesses in the Perl scripting language runtime.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:85917",
+    "publishedAt": "2026-11-02T15:37:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-perl-5-32-security-update-released",
+      "article-fe942fb9",
+      "fe942fb9",
+      "red-hat-perl-5-32-security-update-released-37e64a"
+    ]
+  },
+  {
     "slug": "red-hat-issues-security-update-for-python-urllib3-ab89bc86",
     "title": "Red Hat Issues Security Update for python‑urllib3",
     "summary": "Red Hat released a security update for python‑urllib3 on RHEL 10, fixing multiple library vulnerabilities. The update is rated Important, with CVSS base scores linked to CVE entries, though no exploitation has been observed. Apply the patch immediately and review the CVSS scores for each CVE to gauge residual risk.",
@@ -853,6 +967,24 @@ export const news: NewsBrief[] = [
       "article-458b4f3e",
       "458b4f3e",
       "applebee-s-app-hardcoded-password-exposes-data-18134c"
+    ]
+  },
+  {
+    "slug": "paprat-cyber-espionage-campaign-targets-south-asia-002967dc",
+    "title": "PapRAT Cyber-Espionage Campaign Targets South Asia",
+    "summary": "A known India-linked threat group is conducting cyber-espionage campaigns against organizations in South Asia using three distinct attack chains that leverage legitimate Windows functionality. The campaign employs multiple chained techniques to establish persistence and exfiltrate sensitive information from targeted entities. Organizations in the region should implement enhanced endpoint monitoring and network segmentation to detect anomalous lateral movement.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
+    "publishedAt": "2026-11-02T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "paprat-cyber-espionage-campaign-targets-south-asia",
+      "article-002967dc",
+      "002967dc",
+      "paprat-cyber-espionage-campaign-targets-south-asia-7bea52"
     ]
   },
   {
@@ -9396,149 +9528,6 @@ export const news: NewsBrief[] = [
       "633eb5c2",
       "goahead-tls-certificate-bypass-vulnerability-explo-3ff4b1",
       "goahead-tls-certificate-bypass-vulnerability-exploited"
-    ]
-  },
-  {
-    "slug": "cyberstrikeai-threats-44-agent-autonomous-attacks-b35a7933",
-    "title": "CyberStrikeAI Threats 44-Agent Autonomous Attacks",
-    "summary": "CyberStrikeAI orchestrates 44 autonomous agents that launch coordinated attacks across multiple vectors, including phishing, ransomware, and supply chain compromise. The agents exploit zero-day vulnerabilities and credential reuse to pivot within victim environments, causing widespread disruption and data exfiltration. Security teams should analyze telemetry, deploy detection rules, and apply vendor patches or mitigations to neutralize the threat before exploitation.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cyberstrikeai-uses-44-ai-agents-to-automate-hacking-ope",
-    "publishedAt": "2026-10-29T00:50:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyberstrikeai-threats-44-agent-autonomous-attacks",
-      "article-b35a7933",
-      "b35a7933",
-      "cyberstrikeai-threats-44-agent-autonomous-attacks-2dd8d0"
-    ]
-  },
-  {
-    "slug": "adobe-commerce-polyshell-vulnerability-enables-rem-194ab27d",
-    "title": "Adobe Commerce PolyShell Vulnerability Enables Remote Code Execution",
-    "summary": "Adobe Commerce's PolyShell vulnerability (CVE-2026-111497) allows attackers to execute arbitrary code on the storefront, jeopardizing customer data. The flaw stems from insufficient input validation in the product import module, enabling remote code execution with a CVSS score of 9.5. Adobe has released a patch; security teams should apply it immediately and monitor import activity to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/adobe-commerce-polyshell-attacks-breach-hundreds-of-sto",
-    "publishedAt": "2026-10-29T00:50:05.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/adobe-how-to-patch-critical-rce-vulnerabilities"
-      }
-    ],
-    "aliases": [
-      "adobe-commerce-polyshell-vulnerability-enables-rem",
-      "article-194ab27d",
-      "194ab27d",
-      "adobe-commerce-polyshell-vulnerability-enables-rem-469e12",
-      "adobe-commerce-polyshell-vulnerability-enables-remote-code-e"
-    ]
-  },
-  {
-    "slug": "oracle-peoplesoft-patch-shinyhunters-zero-day-flaw-0b33d881",
-    "title": "Oracle PeopleSoft: Patch ShinyHunters Zero-Day Flaw",
-    "summary": "Oracle PeopleSoft faces a zero‑day flaw, CVE-2026-35273, that can be exploited via vulnerable input handling in enterprise environments. The vulnerability allows attackers to execute arbitrary code without authentication, as demonstrated by publicly available telemetry and detection rules. Oracle recommends applying the latest patch immediately and monitoring logs for anomalous activity to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/shinyhunters-exploited-oracle-peoplesoft-zero-day-turns",
-    "publishedAt": "2026-10-29T00:50:00.000Z",
-    "cves": [
-      "CVE-2026-35273"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "oracle-peoplesoft-patch-shinyhunters-zero-day-flaw",
-      "article-0b33d881",
-      "0b33d881",
-      "oracle-peoplesoft-patch-shinyhunters-zero-day-flaw-3182b7"
-    ]
-  },
-  {
-    "slug": "tailscale-ssh-flaws-how-to-detect-patch-root-forwa-6adfc002",
-    "title": "Tailscale SSH Flaws: How to Detect & Patch Root Forwarding Flaws",
-    "summary": "Critical security intelligence alert regarding Tailscale SSH Flaws: How to Detect &. Review root-cause telemetry, hunt via detection rules, and patch today. (Corroborated Threat Intelligence: Associated CVE is CVE-2026-97229).",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/tailscale-patches-ssh-flaws-that-could-let-hacked-devic",
-    "publishedAt": "2026-10-29T00:49:54.000Z",
-    "cves": [
-      "CVE-2026-97229"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "tailscale-ssh-flaws-how-to-detect-patch-root-forwa",
-      "article-6adfc002",
-      "6adfc002",
-      "tailscale-ssh-flaws-how-to-detect-patch-root-forwa-646943",
-      "tailscale-ssh-flaws-how-to-detect-patch-root-forwarding-flaw"
-    ]
-  },
-  {
-    "slug": "fbi-shutters-virtualine-bulletproof-hosting-platfo-66ac030f",
-    "title": "FBI Shutters Virtualine Bulletproof Hosting Platform",
-    "summary": "The Federal Bureau of Investigation seized infrastructure belonging to bulletproof hosting provider Virtualine to dismantle malicious operations. Telemetry and court findings indicate Virtualine provided bulletproof hosting services to conceal threat actor profiles and illegal activities from law enforcement. Security teams should review defensive controls and monitor networks for residual indicators associated with the seized threat infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fbi-seizes-virtualine-domain-over-alleged-criminal-host",
-    "publishedAt": "2026-10-29T00:49:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-shutters-virtualine-bulletproof-hosting-platfo",
-      "article-66ac030f",
-      "66ac030f",
-      "fbi-shutters-virtualine-bulletproof-hosting-platfo-788c14",
-      "fbi-shutters-virtualine-bulletproof-hosting-platform"
-    ]
-  },
-  {
-    "slug": "autonomous-ai-exploits-defend-against-zero-day-age-edd44767",
-    "title": "Autonomous AI Exploits: Defend Against Zero‑Day Agents",
-    "summary": "A zero‑day flaw, CVE-2026-33096, targets autonomous AI components in enterprise systems, enabling remote code execution. The defect permits attackers to inject malicious scripts through unvalidated AI input, with public telemetry indicating active exploitation and monitoring system logs for anomalous behavior. Patch the affected AI modules immediately and enforce strict input validation to prevent exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/anthropic-s-unreleased-ai-model-chains-flaws-into-worki",
-    "publishedAt": "2026-10-29T00:49:43.000Z",
-    "cves": [
-      "CVE-2026-33096"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "autonomous-ai-exploits-defend-against-zero-day-age",
-      "article-edd44767",
-      "edd44767",
-      "autonomous-ai-exploits-defend-against-zero-day-age-48c497",
-      "autonomous-ai-exploits-defend-against-zero-day-agents"
-    ]
-  },
-  {
-    "slug": "skyw4lker-phishing-targets-device-code-abuse-7fdae391",
-    "title": "Skyw4lker Phishing Targets Device Code Abuse",
-    "summary": "Skyw4lker phishing campaign targets device code abuse via malicious links embedded in seemingly legitimate emails. Attackers embed malicious payloads that exploit device code execution vulnerabilities, enabling credential theft and lateral movement across corporate networks. Security teams should deploy detection rules, review telemetry logs, and apply vendor patches or mitigations to block payload execution.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/american-organizations-under-attack-skyw4lker-device-co",
-    "publishedAt": "2026-10-29T00:49:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "skyw4lker-phishing-targets-device-code-abuse",
-      "article-7fdae391",
-      "7fdae391",
-      "skyw4lker-phishing-targets-device-code-abuse-4a91e9"
     ]
   }
 ];

@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 23:44:36 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 23:55:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Red Hat Releases Critical Kernel Update for RHEL 9.4</title>
@@ -26,6 +26,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Binance Breach Shows Single Laptop Compromise Causes Billions Lost</title>
+      <link>https://secubuzz.com/news/binance-breach-shows-single-laptop-compromise-caus-614a7acd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-breach-shows-single-laptop-compromise-caus-614a7acd</guid>
+      <description><![CDATA[Attackers exploited a single compromised laptop within Binance's network to exfiltrate over one billion dollars, demonstrating how weak system separation and inadequate access controls can cascade into systemic financial loss. The incident highlights the critical need for robust network segmentation and least-privilege enforcement across enterprise infrastructure.]]></description>
+      <pubDate>Mon, 02 Nov 2026 22:27:24 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths">Dark Reading</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Red Hat Ansible Automation Platform 2.5 Security Update</title>
       <link>https://secubuzz.com/news/red-hat-ansible-automation-platform-2-5-security-u-b8a34741</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-ansible-automation-platform-2-5-security-u-b8a34741</guid>
@@ -42,6 +51,15 @@
       <pubDate>Mon, 02 Nov 2026 22:18:50 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94101">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AWS MCP Server Path Traversal Vulnerability CVE-2026-116635</title>
+      <link>https://secubuzz.com/news/aws-mcp-server-path-traversal-vulnerability-cve-20-ff621880</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-mcp-server-path-traversal-vulnerability-cve-20-ff621880</guid>
+      <description><![CDATA[CVE-2026-116635 is an unauthenticated path traversal flaw in the deployment status component of the AWS Serverless MCP Server that allows read or write access to JSON files outside the intended directory when write permissions are enabled. This vulnerability enables potential information disclosure and file manipulation by actors who can influence the MCP agent.]]></description>
+      <pubDate>Mon, 02 Nov 2026 21:43:24 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-164-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Brazilian Exchange Reports $46M Crypto Theft</title>
@@ -71,6 +89,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Satellite Client Update Addresses Multiple Security Issues</title>
+      <link>https://secubuzz.com/news/red-hat-satellite-client-update-addresses-multiple-10764dda</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-client-update-addresses-multiple-10764dda</guid>
+      <description><![CDATA[Red Hat Satellite Client packages have been updated to fix several security vulnerabilities rated as Important, addressing bugs in the Satellite 6 client component. The Common Vulnerability Scoring System base score is available for each individual vulnerability through linked CVE references. Administrators should apply these updates promptly to maintain security posture across managed Satellite environments.]]></description>
+      <pubDate>Mon, 02 Nov 2026 20:07:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94063">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>BYOD Gang Claims Michigan State Cyber Incident</title>
       <link>https://secubuzz.com/news/byod-gang-claims-michigan-state-cyber-incident-b5f8dee4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/byod-gang-claims-michigan-state-cyber-incident-b5f8dee4</guid>
@@ -87,6 +114,15 @@
       <pubDate>Mon, 02 Nov 2026 19:19:50 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat OpenStack Platform 13 Security Update Resolves Critical Issues</title>
+      <link>https://secubuzz.com/news/red-hat-openstack-platform-13-security-update-reso-3d071354</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-openstack-platform-13-security-update-reso-3d071354</guid>
+      <description><![CDATA[Updated Red Hat OpenStack Platform 13.0 packages resolve multiple security vulnerabilities rated as Important, addressing issues in the OpenStack platform for RHEL 7 environments. Each vulnerability carries a CVSS base score accessible via linked CVE references in the advisory. System administrators should apply these patches immediately to mitigate the disclosed security weaknesses.]]></description>
+      <pubDate>Mon, 02 Nov 2026 19:17:15 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94039">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Sageworks Outage After Suspected Cyberattack</title>
@@ -260,6 +296,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Qt5 Qtbase Security Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-qt5-qtbase-security-update-released-a6698434</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-qt5-qtbase-security-update-released-a6698434</guid>
+      <description><![CDATA[Red Hat has released an update for qt5-qtbase addressing multiple vulnerabilities rated Important severity under RHSA-2026:93924. Each vulnerability carries a publicly available CVSS base score accessible through CVE references in the advisory. Security teams should apply the update promptly to mitigate disclosed weaknesses in the Qt5 cross-platform application framework.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:41:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93924">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Perl 5.32 Security Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-perl-5-32-security-update-released-fe942fb9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-perl-5-32-security-update-released-fe942fb9</guid>
+      <description><![CDATA[Red Hat has released an update for the perl:5.32 module addressing multiple vulnerabilities rated Moderate severity under RHSA-2026:85917. Each vulnerability carries a publicly available CVSS base score accessible through CVE references in the advisory. Security teams should apply the update promptly to mitigate disclosed weaknesses in the Perl scripting language runtime.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:37:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:85917">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Issues Security Update for python‑urllib3</title>
       <link>https://secubuzz.com/news/red-hat-issues-security-update-for-python-urllib3-ab89bc86</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-update-for-python-urllib3-ab89bc86</guid>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 14:24:43 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade">Malwarebytes Labs</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Applebee’s App Hardcoded Password Exposes Data</title>
-      <link>https://secubuzz.com/news/applebee-s-app-hardcoded-password-exposes-data-458b4f3e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/applebee-s-app-hardcoded-password-exposes-data-458b4f3e</guid>
-      <description><![CDATA[A researcher discovered a hard‑coded password within the Applebee’s mobile application, allowing unauthorized access to customer data. The embedded credential bypasses authentication, exposing personal information without user interaction; no public exploit reported, but the flaw could enable credential theft. Applebee’s should remove the hard‑coded password, deploy a patched app version, and enforce secure credential storage best practices.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:22:43 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/applebees-customer-data-exposed-by-password-left-in-app">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Cuts DNS Build Time and Memory</title>
-      <link>https://secubuzz.com/news/cloudflare-cuts-dns-build-time-and-memory-9dd40191</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-cuts-dns-build-time-and-memory-9dd40191</guid>
-      <description><![CDATA[Cloudflare introduced a planner that selects minimal safe DNS zone rebuilds, targeting large zones with millions of records. The planner reduces full rebuilds by 40%, cuts peak memory usage by 85%, and halves overall build delay, improving resource efficiency. The change is implemented via zone setting adjustments and is available to all Cloudflare customers.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/dns-targeted-zone-builds/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft fixes Smart App Control broken by October Windows update</title>
-      <link>https://secubuzz.com/news/microsoft-fixes-smart-app-control-broken-by-octobe-a301ddae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-fixes-smart-app-control-broken-by-octobe-a301ddae</guid>
-      <description><![CDATA[Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update.]]></description>
-      <pubDate>Mon, 02 Nov 2026 13:57:29 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Could Exploit iPhone BootROM Flaws to Compromise Cryptocurrency Wallet Security</title>
-      <link>https://secubuzz.com/news/hackers-could-exploit-iphone-bootrom-flaws-to-comp-59226233</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-could-exploit-iphone-bootrom-flaws-to-comp-59226233</guid>
-      <description><![CDATA[Older iPhones used to store cryptocurrency seed phrases could expose owners to physical attacks that airplane mode cannot stop. OneKey founder Yishi has warned that wiping an aging iPhone and keeping it offline does not make it a secure cold wallet. The concern involves BootROM flaws that let attackers run code before iOS starts.]]></description>
-      <pubDate>Mon, 02 Nov 2026 13:43:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-iphone-bootrom-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases libxml2 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-libxml2-security-update-7978e9e6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxml2-security-update-7978e9e6</guid>
-      <description><![CDATA[Red Hat released a libxml2 security update for Enterprise Linux 7, fixing several XML parsing flaws. The vulnerabilities allow denial of service or remote code execution via malformed XML, with CVSS scores up to 8.9. Apply the RHSA-2026:93791 patch immediately and verify libxml2 is updated to the latest release on all affected systems.]]></description>
-      <pubDate>Mon, 02 Nov 2026 13:36:29 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93791">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Revolve Breach Exposes 180,000 Customer Records</title>
-      <link>https://secubuzz.com/news/revolve-breach-exposes-180-000-customer-records-7ac2ba1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/revolve-breach-exposes-180-000-customer-records-7ac2ba1c</guid>
-      <description><![CDATA[Hackers breached Revolve’s online shopping platform, compromising personal and payment card data of at least 180,000 customers. The attack exploited insufficient authentication controls, allowing attackers to retrieve stored credentials and transaction details, potentially enabling fraud. Revolve should enforce multi‑factor authentication, patch access controls, and notify affected users while conducting a full forensic investigation.]]></description>
-      <pubDate>Mon, 02 Nov 2026 13:35:21 GMT</pubDate>
-      <source url="https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
