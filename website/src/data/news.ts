@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-93464-moderate-podman-security-update-c54f492c",
+    "title": "RHSA-2026:93464: Moderate: podman security update",
+    "summary": "An update for podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93464",
+    "publishedAt": "2026-11-02T04:14:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93464-moderate-podman-security-update",
+      "article-c54f492c",
+      "c54f492c",
+      "rhsa-2026-93464-moderate-podman-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-93471-important-perl-yaml-1-24-security-d3a09504",
+    "title": "RHSA-2026:93471: Important: perl-YAML:1.24 security update",
+    "summary": "An update for the perl-YAML:1.24 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93471",
+    "publishedAt": "2026-11-02T03:52:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93471-important-perl-yaml-1-24-security",
+      "article-d3a09504",
+      "d3a09504",
+      "rhsa-2026-93471-important-perl-yaml-1-24-security-37d92e",
+      "rhsa-2026-93471-important-perl-yaml-1-24-security-update"
+    ]
+  },
+  {
     "slug": "rhsa-2026-93472-important-nginx-security-update-64b5712c",
     "title": "RHSA-2026:93472: Important: nginx security update",
     "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -44,6 +81,42 @@ export const news: NewsBrief[] = [
       "article-6eef3a87",
       "6eef3a87",
       "rhsa-2026-93455-important-net-8-0-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-libxml2-with-important-fix-9e7aeae0",
+    "title": "Red Hat Updates libxml2 with Important Fix",
+    "summary": "Red Hat issued an important update for libxml2 in RHEL 8.4, addressing a vulnerability that could allow XML parsing exploits. The defect, with a moderate CVSS score, permits attackers to trigger buffer overflows during XML processing, potentially leading to code execution. Red Hat advises installing the patch promptly and reviewing the CVE links for full remediation guidance.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93473",
+    "publishedAt": "2026-11-02T03:27:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-libxml2-with-important-fix",
+      "article-9e7aeae0",
+      "9e7aeae0",
+      "red-hat-updates-libxml2-with-important-fix-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-idm-client-update-e25b3871",
+    "title": "Red Hat Releases Critical idm:client Update",
+    "summary": "Red Hat released a critical update for the idm:client module in RHEL 8.4, fixing a vulnerability that could allow unauthorized identity access. The flaw, rated with a high CVSS score, permits exploitation of client authentication, potentially enabling privilege escalation. Red Hat recommends applying the patch immediately and verifying the CVE references to ensure mitigation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93452",
+    "publishedAt": "2026-11-02T03:27:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-idm-client-update",
+      "article-e25b3871",
+      "e25b3871",
+      "red-hat-releases-critical-idm-client-update-37d92e"
     ]
   },
   {
