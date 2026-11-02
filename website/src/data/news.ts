@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-93472-important-nginx-security-update-64b5712c",
+    "title": "RHSA-2026:93472: Important: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93472",
+    "publishedAt": "2026-11-02T03:38:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93472-important-nginx-security-update",
+      "article-64b5712c",
+      "64b5712c",
+      "rhsa-2026-93472-important-nginx-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-93455-important-net-8-0-security-update-6eef3a87",
+    "title": "RHSA-2026:93455: Important: .NET 8.0 security update",
+    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93455",
+    "publishedAt": "2026-11-02T03:38:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93455-important-net-8-0-security-update",
+      "article-6eef3a87",
+      "6eef3a87",
+      "rhsa-2026-93455-important-net-8-0-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "perl-xml-libxml-security-update-for-rhel-8-4-relea-09109957",
+    "title": "perl-XML-LibXML Security Update for RHEL 8.4 Released",
+    "summary": "An update for perl-XML-LibXML on RHEL 8.4 addresses multiple security vulnerabilities. The vulnerabilities were identified by Red Hat Product Security and rated as Important, with no public exploit reported in the wild. The update is available for RHEL 8.4 via the package manager and should be applied promptly to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93470",
+    "publishedAt": "2026-11-02T03:27:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "perl-xml-libxml-security-update-for-rhel-8-4-relea",
+      "article-09109957",
+      "09109957",
+      "perl-xml-libxml-security-update-for-rhel-8-4-relea-37d92e",
+      "perl-xml-libxml-security-update-for-rhel-8-4-released"
+    ]
+  },
+  {
+    "slug": "thunderbird-security-update-for-rhel-9-released-32ba1ab4",
+    "title": "Thunderbird Security Update for RHEL 9 Released",
+    "summary": "An update for Thunderbird on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities. The vulnerabilities were identified by Red Hat Product Security and rated as Important, but no public exploit is known. The update is available through RHEL 9's package manager and should be applied immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93443",
+    "publishedAt": "2026-11-02T03:03:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "thunderbird-security-update-for-rhel-9-released",
+      "article-32ba1ab4",
+      "32ba1ab4",
+      "thunderbird-security-update-for-rhel-9-released-37d92e"
+    ]
+  },
+  {
     "slug": "red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94",
     "title": "Red Hat Updates Jackson Packages for RHEL 9.4",
     "summary": "Red Hat released a security update for jackson-annotations, jackson-core, jackson-databind, jackson-jaxrs-providers, and jackson-modules-base on RHEL 9.4 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could enable remote code execution or unauthorized data disclosure via malformed JSON payloads. Red Hat recommends applying the update promptly; no workarounds are available, and users should confirm package versions after installation.",

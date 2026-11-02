@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 02:44:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 03:48:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:93472: Important: nginx security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93472-important-nginx-security-update-64b5712c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93472-important-nginx-security-update-64b5712c</guid>
+      <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:38:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93472">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93455: Important: .NET 8.0 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93455-important-net-8-0-security-update-6eef3a87</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93455-important-net-8-0-security-update-6eef3a87</guid>
+      <description><![CDATA[An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:38:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93455">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>perl-XML-LibXML Security Update for RHEL 8.4 Released</title>
+      <link>https://secubuzz.com/news/perl-xml-libxml-security-update-for-rhel-8-4-relea-09109957</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/perl-xml-libxml-security-update-for-rhel-8-4-relea-09109957</guid>
+      <description><![CDATA[An update for perl-XML-LibXML on RHEL 8.4 addresses multiple security vulnerabilities. The vulnerabilities were identified by Red Hat Product Security and rated as Important, with no public exploit reported in the wild. The update is available for RHEL 8.4 via the package manager and should be applied promptly to prevent exploitation.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:27:11 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93470">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Thunderbird Security Update for RHEL 9 Released</title>
+      <link>https://secubuzz.com/news/thunderbird-security-update-for-rhel-9-released-32ba1ab4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/thunderbird-security-update-for-rhel-9-released-32ba1ab4</guid>
+      <description><![CDATA[An update for Thunderbird on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities. The vulnerabilities were identified by Red Hat Product Security and rated as Important, but no public exploit is known. The update is available through RHEL 9's package manager and should be applied immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:03:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93443">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Updates Jackson Packages for RHEL 9.4</title>
       <link>https://secubuzz.com/news/red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94</link>
@@ -419,42 +455,6 @@
       <description><![CDATA[A memory corruption vulnerability in Chromium’s Skia graphics library, CVE‑2026‑118351, can affect rendering of web content. The flaw arises from improper bounds checking during image processing, potentially allowing arbitrary code execution if exploited; no public exploit is documented. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.]]></description>
       <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118351">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Edge Addresses CVE‑2026‑118354 Skia Input Validation</title>
-      <link>https://secubuzz.com/news/edge-addresses-cve-2026-118354-skia-input-validati-5adcb943</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-cve-2026-118354-skia-input-validati-5adcb943</guid>
-      <description><![CDATA[An improper input validation flaw in Chromium’s Skia library, CVE‑2026‑118354, can lead to memory corruption during image rendering. The vulnerability arises from unchecked bounds on image data, potentially enabling arbitrary code execution if exploited; no public exploit is reported. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118354">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Improper Input Validation Vulnerability CVE-2026-118355</title>
-      <link>https://secubuzz.com/news/chromium-improper-input-validation-vulnerability-c-f6e32aa1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-improper-input-validation-vulnerability-c-f6e32aa1</guid>
-      <description><![CDATA[A CVE-2026-118355 flaw in Chromium’s command parsing lets attackers supply malformed input that bypasses validation. The flaw stems from input validation in command, enabling execution if exploited; no public PoC yet, CVSS 8.7 signals high risk. Microsoft recommends updating to Edge release that incorporates the Chromium patch; monitor Google Chrome releases for the fix.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118355">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Memory Corruption CVE‑2026‑118352 Fixed</title>
-      <link>https://secubuzz.com/news/chromium-memory-corruption-cve-2026-118352-fixed-a42f61b5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-memory-corruption-cve-2026-118352-fixed-a42f61b5</guid>
-      <description><![CDATA[A memory corruption flaw (CVE‑2026‑118352) in Chromium’s cache handling can corrupt data when the browser processes malicious content. The out‑of‑bounds write could enable local code execution, but no public exploit is known. Microsoft Edge, built on Chromium, applies the same fix; users should update to the latest release or apply the Chrome patch.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118352">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Use‑After‑Free CVE‑2026‑118353 Fixed</title>
-      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-118353-fixed-d8977633</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-118353-fixed-d8977633</guid>
-      <description><![CDATA[A use‑after‑free flaw (CVE‑2026‑118353) in Chromium’s Paint component can corrupt memory when rendering malicious images. The vulnerability could lead to local code execution, but no active exploitation has been reported. Microsoft Edge incorporates the same patch; users should update to the latest recent Edge release or apply the Chrome update.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118353">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
