@@ -11,6 +11,102 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-119301-improper-neutralization-of-quoting-e5e16cbd",
+    "title": "CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas",
+    "summary": "Bulletin ID: 2026-161-AWS Publication Date: 11/02/2026 08:30 AM PST Description: We are aware of CVE-2026-119301 in the Apache Iceberg write component, where improper neutralization of quoting syntax in SQL identifier construction could allow an authenticated user with permission to modify AWS Glue Data Catalog metadata to read any table that a separate, more privileged principal can access and write to the table that principal is updating via a crafted column name.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/",
+    "publishedAt": "2026-11-02T16:40:57.000Z",
+    "cves": [
+      "CVE-2026-119301"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-119301-improper-neutralization-of-quoting",
+      "article-e5e16cbd",
+      "e5e16cbd",
+      "cve-2026-119301-improper-neutralization-of-quoting-7ef551",
+      "cve-2026-119301-improper-neutralization-of-quoting-syntax-in"
+    ]
+  },
+  {
+    "slug": "google-shuts-down-xcpe-botnet-servers-a49bc00f",
+    "title": "Google shuts down XCPE botnet servers",
+    "summary": "Google shut down servers powering the XCPE backdoor embedded in Android TV set‑top box firmware, affecting over 1.3 million devices. The flaw, introduced by Videostrong Technology, enabled attackers to gain remote control and facilitate ad‑fraud traffic, exposing users to data exfiltration. Google’s Threat Intelligence Group disabled the command‑and‑control infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
+    "publishedAt": "2026-11-02T15:50:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-shuts-down-xcpe-botnet-servers",
+      "article-a49bc00f",
+      "a49bc00f",
+      "google-shuts-down-xcpe-botnet-servers-4d4016"
+    ]
+  },
+  {
+    "slug": "google-disrupts-1-3-million-android-botnet-d67c9b36",
+    "title": "Google disrupts 1.3 million Android botnet",
+    "summary": "Google dismantled the command‑and‑control servers of a 1.3 million‑device Android botnet that used a backdoor in TV set‑top box firmware. Videostrong Technology embedded the backdoor, enabling criminals to use the devices for ad‑fraud and traffic tunneling, exposing users to unauthorized data flows. Google’s Threat Intelligence Group disabled the infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "publishedAt": "2026-11-02T15:50:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-disrupts-1-3-million-android-botnet",
+      "article-d67c9b36",
+      "d67c9b36",
+      "google-disrupts-1-3-million-android-botnet-481d68"
+    ]
+  },
+  {
+    "slug": "btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907",
+    "title": "BTCPay Server Hot Wallet Theft on Outdated Instances",
+    "summary": "BTCPay Server users running legacy versions have been targeted for hot wallet thefts by hackers in recent attacks. The flaw allows attackers to exploit unpatched code, draining stored cryptocurrency and compromising user funds. Maintainers urge immediate upgrade to the latest release and recommend disabling hot wallets on older instances to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "publishedAt": "2026-11-02T15:03:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "btcpay-server-hot-wallet-theft-on-outdated-instanc",
+      "article-c7edb907",
+      "c7edb907",
+      "btcpay-server-hot-wallet-theft-on-outdated-instanc-177321",
+      "btcpay-server-hot-wallet-theft-on-outdated-instances"
+    ]
+  },
+  {
+    "slug": "linux-mutipath-tcp-vulnerability-cve-2026-98432-ac28de13",
+    "title": "Linux Mutipath TCP Vulnerability CVE-2026-98432",
+    "summary": "A new vulnerability in Linux's Mutipath TCP implementation, identified as CVE-2026-98432, was disclosed following the RFC 8684 option's introduction in 2020. The flaw permits attackers to manipulate TCP option parsing, potentially leading to denial‑of‑service or memory corruption, though no active exploitation has been reported. Linux distributions should apply the vendor‑supplied patch or update kernel to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33482",
+    "publishedAt": "2026-11-02T14:52:05.000Z",
+    "cves": [
+      "CVE-2026-98432"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-mutipath-tcp-vulnerability-cve-2026-98432",
+      "article-ac28de13",
+      "ac28de13",
+      "linux-mutipath-tcp-vulnerability-cve-2026-98432-57dd7e"
+    ]
+  },
+  {
     "slug": "microsoft-fixes-smart-app-control-broken-by-octobe-a301ddae",
     "title": "Microsoft fixes Smart App Control broken by October Windows update",
     "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update.",
@@ -5029,24 +5125,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-openstack-platform-13-patches-python-botoc-2a06f8ed",
-    "title": "Red Hat OpenStack Platform 13 Patches python-botocore Vulnerability",
-    "summary": "Red Hat issued a python-botocore update addressing CVE-2026-98432 in Red Hat OpenStack Platform 13 (Queens). The advisory rates this as Important with a CVSS base score available from the CVE references section. Administrators of affected OpenStack deployments should apply the patched package promptly to reduce exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
+    "slug": "linux-kernel-rce-cve-2026-98432-f3fe08c4",
+    "title": "Linux kernel RCE CVE-2026-98432",
+    "summary": "CVSSv3 Score: 9.8 CVE-2026-98432:ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it. Note that the SYNACK timer itself is not an issue: it holds a reference on its request socket, and inet_csk_reqsk_queue_drop() calls timer_delete_sync() before the child can be freed. This will be addressed in a separate patch.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93043",
     "publishedAt": "2026-10-30T12:11:52.000Z",
     "cves": [
       "CVE-2026-98432"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Fortinet FortiGuard PSIRT",
+        "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-188"
+      }
+    ],
     "aliases": [
-      "red-hat-openstack-platform-13-patches-python-botoc",
-      "article-2a06f8ed",
-      "2a06f8ed",
-      "red-hat-openstack-platform-13-patches-python-botoc-37d93d",
-      "red-hat-openstack-platform-13-patches-python-botocore-vulner"
+      "linux-kernel-rce-cve-2026-98432",
+      "article-f3fe08c4",
+      "f3fe08c4",
+      "linux-kernel-rce-cve-2026-98432-37d93d"
     ]
   },
   {

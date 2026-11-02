@@ -1,5 +1,88 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/",
+    "title": "CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas",
+    "headline": "CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas",
+    "summary": "Bulletin ID: 2026-161-AWS Publication Date: 11/02/2026 08:30 AM PST Description: We are aware of CVE-2026-119301 in the Apache Iceberg write component, where improper neutralization of quoting syntax in SQL identifier construction could allow an authenticated user with permission to modify AWS Glue Data Catalog metadata to read any table that a separate, more privileged principal can access and write to the table that principal is updating via a crafted column name.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-02T16:40:57.000Z",
+    "ingestedAt": "2026-11-02T16:43:39.142Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-119301"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
+    "title": "Google shuts down XCPE botnet servers",
+    "headline": "Google shuts down XCPE botnet servers",
+    "summary": "Google shut down servers powering the XCPE backdoor embedded in Android TV set‑top box firmware, affecting over 1.3 million devices. The flaw, introduced by Videostrong Technology, enabled attackers to gain remote control and facilitate ad‑fraud traffic, exposing users to data exfiltration. Google’s Threat Intelligence Group disabled the command‑and‑control infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-02T15:50:46.000Z",
+    "ingestedAt": "2026-11-02T16:43:46.875Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "title": "Google disrupts 1.3 million Android botnet",
+    "headline": "Google disrupts 1.3 million Android botnet",
+    "summary": "Google dismantled the command‑and‑control servers of a 1.3 million‑device Android botnet that used a backdoor in TV set‑top box firmware. Videostrong Technology embedded the backdoor, enabling criminals to use the devices for ad‑fraud and traffic tunneling, exposing users to unauthorized data flows. Google’s Threat Intelligence Group disabled the infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-02T15:50:26.000Z",
+    "ingestedAt": "2026-11-02T16:43:46.876Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "title": "BTCPay Server Hot Wallet Theft on Outdated Instances",
+    "headline": "BTCPay Server Hot Wallet Theft on Outdated Instances",
+    "summary": "BTCPay Server users running legacy versions have been targeted for hot wallet thefts by hackers in recent attacks. The flaw allows attackers to exploit unpatched code, draining stored cryptocurrency and compromising user funds. Maintainers urge immediate upgrade to the latest release and recommend disabling hot wallets on older instances to mitigate risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-02T15:03:07.000Z",
+    "ingestedAt": "2026-11-02T16:43:46.876Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33482",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33482",
+    "title": "Linux Mutipath TCP Vulnerability CVE-2026-98432",
+    "headline": "Linux Mutipath TCP Vulnerability CVE-2026-98432",
+    "summary": "A new vulnerability in Linux's Mutipath TCP implementation, identified as CVE-2026-98432, was disclosed following the RFC 8684 option's introduction in 2020. The flaw permits attackers to manipulate TCP option parsing, potentially leading to denial‑of‑service or memory corruption, though no active exploitation has been reported. Linux distributions should apply the vendor‑supplied patch or update kernel to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-02T14:52:05.000Z",
+    "ingestedAt": "2026-11-02T16:43:46.876Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33482",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
     "title": "Microsoft fixes Smart App Control broken by October Windows update",
@@ -4081,15 +4164,23 @@
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:93043",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93043",
-    "title": "Red Hat OpenStack Platform 13 Patches python-botocore Vulnerability",
-    "headline": "Red Hat OpenStack Platform 13 Patches python-botocore Vulnerability",
-    "summary": "Red Hat issued a python-botocore update addressing CVE-2026-98432 in Red Hat OpenStack Platform 13 (Queens). The advisory rates this as Important with a CVSS base score available from the CVE references section. Administrators of affected OpenStack deployments should apply the patched package promptly to reduce exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
+    "title": "Linux kernel RCE CVE-2026-98432",
+    "headline": "Linux kernel RCE CVE-2026-98432",
+    "summary": "CVSSv3 Score: 9.8 CVE-2026-98432:ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it. Note that the SYNACK timer itself is not an issue: it holds a reference on its request socket, and inet_csk_reqsk_queue_drop() calls timer_delete_sync() before the child can be freed. This will be addressed in a separate patch.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-10-30T12:11:52.000Z",
     "url": "https://access.redhat.com/errata/RHSA-2026:93043",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Fortinet FortiGuard PSIRT",
+        "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-188"
+      }
+    ],
+    "cves": [
+      "CVE-2026-98432"
+    ]
   },
   {
     "id": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",

@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 15:45:54 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 16:45:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas</title>
+      <link>https://secubuzz.com/news/cve-2026-119301-improper-neutralization-of-quoting-e5e16cbd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119301-improper-neutralization-of-quoting-e5e16cbd</guid>
+      <description><![CDATA[Bulletin ID: 2026-161-AWS Publication Date: 11/02/2026 08:30 AM PST Description: We are aware of CVE-2026-119301 in the Apache Iceberg write component, where improper neutralization of quoting syntax in SQL identifier construction could allow an authenticated user with permission to modify AWS Glue Data Catalog metadata to read any table that a separate, more privileged principal can access and write to the table that principal is updating via a crafted column name.]]></description>
+      <pubDate>Mon, 02 Nov 2026 16:40:57 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Google shuts down XCPE botnet servers</title>
+      <link>https://secubuzz.com/news/google-shuts-down-xcpe-botnet-servers-a49bc00f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-shuts-down-xcpe-botnet-servers-a49bc00f</guid>
+      <description><![CDATA[Google shut down servers powering the XCPE backdoor embedded in Android TV set‑top box firmware, affecting over 1.3 million devices. The flaw, introduced by Videostrong Technology, enabled attackers to gain remote control and facilitate ad‑fraud traffic, exposing users to data exfiltration. Google’s Threat Intelligence Group disabled the command‑and‑control infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:50:46 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google disrupts 1.3 million Android botnet</title>
+      <link>https://secubuzz.com/news/google-disrupts-1-3-million-android-botnet-d67c9b36</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-disrupts-1-3-million-android-botnet-d67c9b36</guid>
+      <description><![CDATA[Google dismantled the command‑and‑control servers of a 1.3 million‑device Android botnet that used a backdoor in TV set‑top box firmware. Videostrong Technology embedded the backdoor, enabling criminals to use the devices for ad‑fraud and traffic tunneling, exposing users to unauthorized data flows. Google’s Threat Intelligence Group disabled the infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:50:26 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/google-disrupts-13-million-device.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>BTCPay Server Hot Wallet Theft on Outdated Instances</title>
+      <link>https://secubuzz.com/news/btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907</guid>
+      <description><![CDATA[BTCPay Server users running legacy versions have been targeted for hot wallet thefts by hackers in recent attacks. The flaw allows attackers to exploit unpatched code, draining stored cryptocurrency and compromising user funds. Maintainers urge immediate upgrade to the latest release and recommend disabling hot wallets on older instances to mitigate risk.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:03:07 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Linux Mutipath TCP Vulnerability CVE-2026-98432</title>
+      <link>https://secubuzz.com/news/linux-mutipath-tcp-vulnerability-cve-2026-98432-ac28de13</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-mutipath-tcp-vulnerability-cve-2026-98432-ac28de13</guid>
+      <description><![CDATA[A new vulnerability in Linux's Mutipath TCP implementation, identified as CVE-2026-98432, was disclosed following the RFC 8684 option's introduction in 2020. The flaw permits attackers to manipulate TCP option parsing, potentially leading to denial‑of‑service or memory corruption, though no active exploitation has been reported. Linux distributions should apply the vendor‑supplied patch or update kernel to mitigate the vulnerability.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:52:05 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33482">SANS Internet Storm Center</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Microsoft fixes Smart App Control broken by October Windows update</title>
       <link>https://secubuzz.com/news/microsoft-fixes-smart-app-control-broken-by-octobe-a301ddae</link>
@@ -411,51 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 05:30:29 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93467">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates .NET 9.0 for RHEL 9.6</title>
-      <link>https://secubuzz.com/news/red-hat-updates-net-9-0-for-rhel-9-6-ed05000d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-net-9-0-for-rhel-9-6-ed05000d</guid>
-      <description><![CDATA[Red Hat released a .NET 9.0 security update for RHEL 9.6 Extended Update Support. The update fixes several vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to address the identified weaknesses, following Red Hat’s installation guidance today.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:28:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93459">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Enterprise Linux 9.6 curl Update Addresses Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-enterprise-linux-9-6-curl-update-addresses-vul-e53c2a3d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-9-6-curl-update-addresses-vul-e53c2a3d</guid>
-      <description><![CDATA[Red Enterprise Linux 9.6 EUS users receive a curl security update addressing multiple vulnerabilities. The update fixes issues identified by Red Hat Product Security, with CVSS scores listed in the CVE references, indicating moderate to high impact. Apply RHSA-2026:93454 immediately to mitigate the weaknesses and review the CVE links for severity details.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:15:07 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93454">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues util-linux Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-util-linux-security-update-97de88a9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-util-linux-security-update-97de88a9</guid>
-      <description><![CDATA[Red Hat released a security update for util‑linux on RHEL 10. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to mitigate the identified weaknesses, following Red Hat’s installation guidance in the vendor documentation today.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:15:07 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93461">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Enterprise Linux 8.8 freerdp Update Fixes Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-enterprise-linux-8-8-freerdp-update-fixes-vuln-c192ba27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-8-8-freerdp-update-fixes-vuln-c192ba27</guid>
-      <description><![CDATA[Red Enterprise Linux 8.8 SAP and Telecom users receive a freerdp security update addressing multiple vulnerabilities. The update corrects issues identified by Red Hat Product Security, with CVSS scores in the CVE references indicating moderate to high impact. Apply RHSA-2026:93537 promptly to mitigate the weaknesses and consult the CVE links for severity details.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:03:17 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93537">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Aur0ra Ransomware Uses AI Agents for Network Infiltration</title>
-      <link>https://secubuzz.com/news/aur0ra-ransomware-uses-ai-agents-for-network-infil-9e9edf30</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aur0ra-ransomware-uses-ai-agents-for-network-infil-9e9edf30</guid>
-      <description><![CDATA[Aur0ra ransomware, tracked as GOLD OGRE, uses AI agents to traverse networks, harvest credentials, and gain domain administrator rights. Sophos uncovered Cursor AI artifacts that supplied attackers with VPN logins, proxy access, and target objectives, enabling automated network mapping. Defenders should detect anomalous AI activity, enforce strict VPN controls, and rotate credentials rapidly to counter the threat.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:00:46 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/aur0ra-ransomware-ai-agents/">Help Net Security</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>
