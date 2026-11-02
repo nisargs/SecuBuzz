@@ -843,12 +843,21 @@ export default {
         }
 
         // 2. Query D1
-        const row = await env.DB.prepare(
+        let row = await env.DB.prepare(
           `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
            FROM articles
-           WHERE slug = ? OR aliases_json LIKE ?
+           WHERE slug = ?
            LIMIT 1;`
-        ).bind(reqSlug, `%"${reqSlug}"%`).first<any>();
+        ).bind(reqSlug).first<any>();
+
+        if (!row) {
+          row = await env.DB.prepare(
+            `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+             FROM articles, json_each(articles.aliases_json)
+             WHERE json_each.value = ?
+             LIMIT 1;`
+          ).bind(reqSlug).first<any>();
+        }
 
         if (row) {
           const article = {
@@ -955,7 +964,13 @@ export default {
 
       // Dynamic Sitemap for Search Engines
       if (url.pathname === '/sitemap.xml') {
-        const [articles, cisa] = await Promise.all([getArticles(), getKevAdvisories()]);
+        const [cisa, d1Articles] = await Promise.all([
+          getKevAdvisories(),
+          env.DB
+            ? env.DB.prepare('SELECT slug, title, published_at as publishedAt FROM articles ORDER BY published_at DESC LIMIT 5000;').all<any>().then(r => r.results || []).catch(() => [])
+            : Promise.resolve([])
+        ]);
+        const articles = d1Articles.length > 0 ? (d1Articles as any[]) : await getArticles();
         const advisories = [...cisa, ...(GITHUB_ADVISORIES as any)];
         const sitemapXml = generateSitemapXml(articles, advisories);
         return new Response(sitemapXml, {
@@ -1482,9 +1497,15 @@ export default {
 
             if (!inFeed && env.DB) {
               try {
-                const row = await env.DB.prepare(
-                  'SELECT * FROM articles WHERE slug = ? OR aliases_json LIKE ? LIMIT 1'
-                ).bind(slug, `%"${slug}"%`).first<any>();
+                let row = await env.DB.prepare(
+                  'SELECT * FROM articles WHERE slug = ? LIMIT 1'
+                ).bind(slug).first<any>();
+
+                if (!row) {
+                  row = await env.DB.prepare(
+                    'SELECT articles.* FROM articles, json_each(articles.aliases_json) WHERE json_each.value = ? LIMIT 1'
+                  ).bind(slug).first<any>();
+                }
 
                 if (row) {
                   isArchivedMatch = true;
