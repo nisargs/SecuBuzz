@@ -825,31 +825,38 @@ export default function ArticleDetailScreen() {
         {article.additionalSources && article.additionalSources.length > 0 && (
           <View style={styles.additionalSourcesContainer}>
             <Text style={[styles.additionalSourcesLabel, { color: colors.textMuted }]}>
-              ALSO REPORTED BY
+              {article.additionalSources.some(
+                (s) => (s.sourceName || '').toLowerCase() !== (article.sourceName || '').toLowerCase()
+              )
+                ? 'ALSO REPORTED BY'
+                : 'RELATED COVERAGE'}
             </Text>
             <View style={styles.additionalSourcesList}>
-              {article.additionalSources.map((src, idx) => (
-                <Pressable
-                  key={idx}
-                  accessibilityRole="link"
-                  accessibilityLabel={`Read coverage on ${src.sourceName}`}
-                  onPress={() => {
-                    void openArticle(src.sourceUrl);
-                  }}
-                  style={({ pressed }) => [
-                    styles.additionalSourceChip,
-                    {
-                      borderColor: colors.border,
-                      backgroundColor: isDark
-                        ? 'rgba(255, 255, 255, 0.04)'
-                        : 'rgba(0, 0, 0, 0.03)',
-                    },
-                    pressed && { opacity: 0.7 },
-                  ]}
-                >
-                  <Text style={[styles.additionalSourceText, { color: colors.textPrimary }]}>
-                    {src.sourceName}
-                  </Text>
+              {article.additionalSources.map((src, idx) => {
+                const isSamePublisher =
+                  (src.sourceName || '').toLowerCase() === (article.sourceName || '').toLowerCase();
+                return (
+                  <Pressable
+                    key={idx}
+                    accessibilityRole="link"
+                    accessibilityLabel={`Read coverage on ${src.sourceName}`}
+                    onPress={() => {
+                      void openArticle(src.sourceUrl);
+                    }}
+                    style={({ pressed }) => [
+                      styles.additionalSourceChip,
+                      {
+                        borderColor: colors.border,
+                        backgroundColor: isDark
+                          ? 'rgba(255, 255, 255, 0.04)'
+                          : 'rgba(0, 0, 0, 0.03)',
+                      },
+                      pressed && { opacity: 0.7 },
+                    ]}
+                  >
+                    <Text style={[styles.additionalSourceText, { color: colors.textPrimary }]}>
+                      {isSamePublisher ? `${src.sourceName} (Follow-up)` : src.sourceName}
+                    </Text>
                   <Ionicons
                     name="arrow-forward"
                     size={11}
@@ -857,7 +864,8 @@ export default function ArticleDetailScreen() {
                     style={{ marginLeft: 4 }}
                   />
                 </Pressable>
-              ))}
+                );
+              })}
             </View>
           </View>
         )}

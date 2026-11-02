@@ -119,19 +119,26 @@ export function NewsBriefItem({
           </a>
           {brief.additionalSources && brief.additionalSources.length > 0 && (
             <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-subtle">
-              <span>Also reported by:</span>
-              {brief.additionalSources.map((s) => (
-                <a
-                  key={s.sourceUrl}
-                  href={s.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-0.5 text-muted transition-colors duration-150 ease-out hover:text-accent"
-                >
-                  {s.source}
-                  <ArrowUpRightIcon className="h-3 w-3" aria-hidden="true" />
-                </a>
-              ))}
+              <span>
+                {brief.additionalSources.some((s) => s.source.toLowerCase() !== brief.source.toLowerCase())
+                  ? 'Also reported by:'
+                  : 'Related:'}
+              </span>
+              {brief.additionalSources.map((s) => {
+                const isSamePublisher = s.source.toLowerCase() === brief.source.toLowerCase();
+                return (
+                  <a
+                    key={s.sourceUrl}
+                    href={s.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-0.5 text-muted transition-colors duration-150 ease-out hover:text-accent"
+                  >
+                    {isSamePublisher ? `${s.source} (Follow-up)` : s.source}
+                    <ArrowUpRightIcon className="h-3 w-3" aria-hidden="true" />
+                  </a>
+                );
+              })}
             </div>
           )}
           {brief.cves.map((cve) => {

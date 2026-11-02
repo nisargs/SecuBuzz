@@ -29,7 +29,7 @@ const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/chat/co
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-const MAX_FEED_ARTICLES = 350;
+const MAX_FEED_ARTICLES = 500;
 
 // Command line args
 const args = process.argv.slice(2);

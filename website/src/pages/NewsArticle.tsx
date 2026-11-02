@@ -245,21 +245,28 @@ export function NewsArticle() {
             {brief.additionalSources && brief.additionalSources.length > 0 && (
               <div className="mt-6 rounded-lg border border-line p-5">
                 <p className="text-xs font-medium uppercase tracking-wider text-subtle">
-                  Also reported by
+                  {brief.additionalSources.some((s) => s.source.toLowerCase() !== brief.source.toLowerCase())
+                    ? 'Also reported by'
+                    : 'Related coverage'}
                 </p>
                 <ul className="mt-3 divide-y divide-line">
-                  {brief.additionalSources.map((s) => (
-                    <li key={s.sourceUrl} className="flex items-center justify-between py-2.5 first:pt-0 last:pb-0">
-                      <span className="text-sm font-medium text-ink">{s.source}</span>
-                      <a
-                        href={s.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs text-accent hover:underline">
-                        View source <ArrowUpRightIcon className="h-3.5 w-3.5" aria-hidden="true" />
-                      </a>
-                    </li>
-                  ))}
+                  {brief.additionalSources.map((s) => {
+                    const isSamePublisher = s.source.toLowerCase() === brief.source.toLowerCase();
+                    return (
+                      <li key={s.sourceUrl} className="flex items-center justify-between py-2.5 first:pt-0 last:pb-0">
+                        <span className="text-sm font-medium text-ink">
+                          {isSamePublisher ? `${s.source} (Follow-up)` : s.source}
+                        </span>
+                        <a
+                          href={s.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-xs text-accent hover:underline">
+                          View source <ArrowUpRightIcon className="h-3.5 w-3.5" aria-hidden="true" />
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
