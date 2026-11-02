@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94",
+    "title": "Red Hat Updates Jackson Packages for RHEL 9.4",
+    "summary": "Red Hat released a security update for jackson-annotations, jackson-core, jackson-databind, jackson-jaxrs-providers, and jackson-modules-base on RHEL 9.4 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could enable remote code execution or unauthorized data disclosure via malformed JSON payloads. Red Hat recommends applying the update promptly; no workarounds are available, and users should confirm package versions after installation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93444",
+    "publishedAt": "2026-11-02T02:39:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-jackson-packages-for-rhel-9-4",
+      "article-4a46af94",
+      "4a46af94",
+      "red-hat-updates-jackson-packages-for-rhel-9-4-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-libsoup-security-update-for-rhel-9-672da2ea",
+    "title": "Red Hat Issues libsoup Security Update for RHEL 9.2",
+    "summary": "Red Hat released a libsoup update on RHEL 9.2 Update Services for SAP Solutions, fixing a flaw that could allow remote code execution via malformed HTTP requests. The flaw is rated Important with a high CVSS score, and a public PoC demonstrates remote code execution. Red Hat has published the patch; administrators should apply it immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93447",
+    "publishedAt": "2026-11-02T02:37:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libsoup-security-update-for-rhel-9",
+      "article-672da2ea",
+      "672da2ea",
+      "red-hat-issues-libsoup-security-update-for-rhel-9-37d92e",
+      "red-hat-issues-libsoup-security-update-for-rhel-9-2"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-libsoup-update-for-rhel-9-4-9fd8bf8c",
+    "title": "Red Hat Issues libsoup Update for RHEL 9.4",
+    "summary": "Red Hat released a security update for libsoup on RHEL 9.4 Update Services for SAP Solutions, addressing several vulnerabilities. The vulnerabilities could allow attackers to execute arbitrary code or cause denial of service through crafted HTTP requests. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify libsoup version after patching.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93445",
+    "publishedAt": "2026-11-02T02:30:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libsoup-update-for-rhel-9-4",
+      "article-9fd8bf8c",
+      "9fd8bf8c",
+      "red-hat-issues-libsoup-update-for-rhel-9-4-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-kernel-rt-update-for-rhel-8-04dc1c11",
+    "title": "Red Hat Issues Kernel-rt Update for RHEL 8",
+    "summary": "Red Hat released a kernel-rt security update for RHEL 8, addressing multiple vulnerabilities referenced via CVE links. The update mitigates potential kernel-level exploits that could allow privilege escalation or denial of service, both of which could compromise system integrity. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify kernel version post-update.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93437",
+    "publishedAt": "2026-11-02T01:51:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kernel-rt-update-for-rhel-8",
+      "article-04dc1c11",
+      "04dc1c11",
+      "red-hat-issues-kernel-rt-update-for-rhel-8-37d92e"
+    ]
+  },
+  {
     "slug": "kernel-update-for-rhel-10-addresses-multiple-vulne-ebd3b60f",
     "title": "Kernel Update for RHEL 10 Addresses Multiple Vulnerabilities",
     "summary": "Red Hat released a kernel update for Enterprise Linux 10 to fix multiple kernel vulnerabilities that could compromise system integrity. The vulnerabilities, rated Important by Red Product Security, have CVSS base scores accessible through CVE links, suggesting moderate to high risk. Apply the kernel patch promptly per Red Hat’s instructions to prevent privilege escalation or denial-of-service attacks.",
