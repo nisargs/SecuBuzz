@@ -11,6 +11,100 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-postgresql-16-security-update-9536fbdb",
+    "title": "Red Hat Releases PostgreSQL 16 Security Update",
+    "summary": "Red Hat released a security update for PostgreSQL 16 on RHEL 9.6 EUS, fixing vulnerabilities that could enable unauthorized data access or denial of service. The advisory cites several CVE identifiers with CVSS scores ranging from moderate to high, yet no exploitation has been reported. Apply the PostgreSQL update promptly and verify database configurations per Red Hat’s security recommendations.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93460",
+    "publishedAt": "2026-11-02T05:33:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-postgresql-16-security-update",
+      "article-9536fbdb",
+      "9536fbdb",
+      "red-hat-releases-postgresql-16-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "trust-onion-introduces-rotating-codeword-caller-ve-1370a317",
+    "title": "Trust Onion Introduces Rotating Codeword Caller Verification",
+    "summary": "Trust Onion provides a free app that gives trusted groups three rotating codewords to verify caller identity during voice or text. It also supports signed selfies, message integrity checks, and callback verification, and runs on macOS, iOS, and Android. Users can set rotation schedules and embed the verification into existing communication workflows, boosting trust without extra infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/",
+    "publishedAt": "2026-11-02T05:30:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trust-onion-introduces-rotating-codeword-caller-ve",
+      "article-1370a317",
+      "1370a317",
+      "trust-onion-introduces-rotating-codeword-caller-ve-a9e73d",
+      "trust-onion-introduces-rotating-codeword-caller-verification"
+    ]
+  },
+  {
+    "slug": "aur0ra-ransomware-uses-ai-agents-for-network-infil-9e9edf30",
+    "title": "Aur0ra Ransomware Uses AI Agents for Network Infiltration",
+    "summary": "Aur0ra ransomware, tracked as GOLD OGRE, uses AI agents to traverse networks, harvest credentials, and gain domain administrator rights. Sophos uncovered Cursor AI artifacts that supplied attackers with VPN logins, proxy access, and target objectives, enabling automated network mapping. Defenders should detect anomalous AI activity, enforce strict VPN controls, and rotate credentials rapidly to counter the threat.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/aur0ra-ransomware-ai-agents/",
+    "publishedAt": "2026-11-02T05:00:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aur0ra-ransomware-uses-ai-agents-for-network-infil",
+      "article-9e9edf30",
+      "9e9edf30",
+      "aur0ra-ransomware-uses-ai-agents-for-network-infil-77251b",
+      "aur0ra-ransomware-uses-ai-agents-for-network-infiltration"
+    ]
+  },
+  {
+    "slug": "tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03",
+    "title": "TightVNC Pre‑Auth RCE Enables Code Execution on Windows",
+    "summary": "A pre‑authentication RCE flaw in TightVNC Viewer 2.8.88 x64 lets attackers run code on Windows PCs before password prompts. The flaw corrupts viewer memory when a malicious VNC server sends crafted screen data, enabling arbitrary code execution; PoC confirms the vulnerability. Update to the latest TightVNC release or apply vendor patches, and disable remote connections until a fix is issued.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/tightvnc-pre-auth-rce-vulnerability/",
+    "publishedAt": "2026-11-02T04:26:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tightvnc-pre-auth-rce-enables-code-execution-on-wi",
+      "article-3d877a03",
+      "3d877a03",
+      "tightvnc-pre-auth-rce-enables-code-execution-on-wi-3c46d5",
+      "tightvnc-pre-auth-rce-enables-code-execution-on-windows"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-github-actions-for-ci-cd-secrets-t-a6188030",
+    "title": "Hackers Exploit GitHub Actions for CI/CD Secrets Theft",
+    "summary": "Hackers used command injection in GitHub Actions to target 61 public repositories via malicious issues, PRs, and comments. Injected commands executed in two workflow runs, allowing attackers to exfiltrate CI/CD secrets. GitHub should tighten workflow permissions, and users must audit PRs for suspicious commands; disabling workflow execution for untrusted PRs mitigates the flaw.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-target-61-github-repositories/",
+    "publishedAt": "2026-11-02T04:21:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-github-actions-for-ci-cd-secrets-t",
+      "article-a6188030",
+      "a6188030",
+      "hackers-exploit-github-actions-for-ci-cd-secrets-t-5fa7d4",
+      "hackers-exploit-github-actions-for-ci-cd-secrets-theft"
+    ]
+  },
+  {
     "slug": "rhsa-2026-93464-moderate-podman-security-update-c54f492c",
     "title": "RHSA-2026:93464: Moderate: podman security update",
     "summary": "An update for podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -26,6 +120,42 @@ export const news: NewsBrief[] = [
       "article-c54f492c",
       "c54f492c",
       "rhsa-2026-93464-moderate-podman-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "btcpay-servers-targeted-hot-wallets-drained-7e228faa",
+    "title": "BTCPay Servers Targeted: Hot Wallets Drained",
+    "summary": "BTCPay Server operators received reports that attackers drained Bitcoin hot wallets on its servers, compromising merchant funds. The incident prompted the open‑source payment processor to urge operators to shut down installations immediately and keep them offline during investigation. BTCPay recommends applying the latest security patches and verifying wallet configurations to prevent further unauthorized withdrawals.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/btcpay-server-warns/",
+    "publishedAt": "2026-11-02T04:04:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "btcpay-servers-targeted-hot-wallets-drained",
+      "article-7e228faa",
+      "7e228faa",
+      "btcpay-servers-targeted-hot-wallets-drained-27f00c"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-kernel-security-update-for-rhel-8-7fa41efe",
+    "title": "Red Hat Issues Kernel Security Update for RHEL 8",
+    "summary": "Red Hat released an important kernel security update for RHEL 8, addressing vulnerabilities that could enable privilege escalation or denial of service. The advisory cites multiple CVE identifiers with CVSS scores ranging from moderate to high, though no active exploitation has been observed. Apply the kernel update promptly and verify system integrity following Red Hat’s upgrade guidelines.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93436",
+    "publishedAt": "2026-11-02T03:57:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kernel-security-update-for-rhel-8",
+      "article-7fa41efe",
+      "7fa41efe",
+      "red-hat-issues-kernel-security-update-for-rhel-8-37d92e"
     ]
   },
   {
@@ -157,6 +287,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "lxd-incus-certificate-validation-flaw-enables-remo-99c45be4",
+    "title": "LXD/Incus Certificate Validation Flaw Enables Remote Control",
+    "summary": "A critical certificate validation flaw in LXD and Incus lets attackers bypass HTTPS management authentication and seize control of clusters and VMs. The flaw allows unauthenticated access without passwords, stolen keys, or user interaction, exposing Linux hosts to full administrative takeover. Canonical and Red Hat have released patches; operators should upgrade LXD/Incus to the latest version and enforce certificate validation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/certificate-validation-flaw-in-lxd-and-incus/",
+    "publishedAt": "2026-11-02T02:45:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "lxd-incus-certificate-validation-flaw-enables-remo",
+      "article-99c45be4",
+      "99c45be4",
+      "lxd-incus-certificate-validation-flaw-enables-remo-58736f",
+      "lxd-incus-certificate-validation-flaw-enables-remote-control"
+    ]
+  },
+  {
     "slug": "red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94",
     "title": "Red Hat Updates Jackson Packages for RHEL 9.4",
     "summary": "Red Hat released a security update for jackson-annotations, jackson-core, jackson-databind, jackson-jaxrs-providers, and jackson-modules-base on RHEL 9.4 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could enable remote code execution or unauthorized data disclosure via malformed JSON payloads. Red Hat recommends applying the update promptly; no workarounds are available, and users should confirm package versions after installation.",
@@ -209,6 +358,43 @@ export const news: NewsBrief[] = [
       "article-9fd8bf8c",
       "9fd8bf8c",
       "red-hat-issues-libsoup-update-for-rhel-9-4-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-python-jwt-for-rhel-8-8e81bf09",
+    "title": "Red Hat Updates python‑jwt for RHEL 8",
+    "summary": "Red Hat released a security update for python‑jwt on RHEL 8, addressing a vulnerability that could affect application security. The advisory notes an Important security impact and references CVE links for each vulnerability, though no specific CVE ID is listed. Operators should apply the RHSA-2026:93440 update immediately to mitigate the risk, as the patch is available via RHEL update channels.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93440",
+    "publishedAt": "2026-11-02T02:03:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-python-jwt-for-rhel-8",
+      "article-8e81bf09",
+      "8e81bf09",
+      "red-hat-updates-python-jwt-for-rhel-8-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-webkit2gtk3-security-upd-ccab73dc",
+    "title": "Red Hat Releases Critical WebKit2GTK3 Security Update",
+    "summary": "Red Hat released a critical update for webkit2gtk3 on RHEL 8.8 Update Services for SAP Solutions and RHEL 8.8 Telecommunications. The patch fixes multiple high‑severity vulnerabilities with CVSS scores that meet critical thresholds, with CVE references provided in the advisory. Administrators must apply the update promptly and confirm webkit2gtk3 is patched to prevent remote code execution.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93435",
+    "publishedAt": "2026-11-02T01:55:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-webkit2gtk3-security-upd",
+      "article-ccab73dc",
+      "ccab73dc",
+      "red-hat-releases-critical-webkit2gtk3-security-upd-37d92e",
+      "red-hat-releases-critical-webkit2gtk3-security-update"
     ]
   },
   {

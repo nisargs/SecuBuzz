@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 04:46:41 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 05:49:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases PostgreSQL 16 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-postgresql-16-security-update-9536fbdb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-postgresql-16-security-update-9536fbdb</guid>
+      <description><![CDATA[Red Hat released a security update for PostgreSQL 16 on RHEL 9.6 EUS, fixing vulnerabilities that could enable unauthorized data access or denial of service. The advisory cites several CVE identifiers with CVSS scores ranging from moderate to high, yet no exploitation has been reported. Apply the PostgreSQL update promptly and verify database configurations per Red Hat’s security recommendations.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:33:54 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93460">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Trust Onion Introduces Rotating Codeword Caller Verification</title>
+      <link>https://secubuzz.com/news/trust-onion-introduces-rotating-codeword-caller-ve-1370a317</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trust-onion-introduces-rotating-codeword-caller-ve-1370a317</guid>
+      <description><![CDATA[Trust Onion provides a free app that gives trusted groups three rotating codewords to verify caller identity during voice or text. It also supports signed selfies, message integrity checks, and callback verification, and runs on macOS, iOS, and Android. Users can set rotation schedules and embed the verification into existing communication workflows, boosting trust without extra infrastructure.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:30:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Aur0ra Ransomware Uses AI Agents for Network Infiltration</title>
+      <link>https://secubuzz.com/news/aur0ra-ransomware-uses-ai-agents-for-network-infil-9e9edf30</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aur0ra-ransomware-uses-ai-agents-for-network-infil-9e9edf30</guid>
+      <description><![CDATA[Aur0ra ransomware, tracked as GOLD OGRE, uses AI agents to traverse networks, harvest credentials, and gain domain administrator rights. Sophos uncovered Cursor AI artifacts that supplied attackers with VPN logins, proxy access, and target objectives, enabling automated network mapping. Defenders should detect anomalous AI activity, enforce strict VPN controls, and rotate credentials rapidly to counter the threat.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:00:46 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/aur0ra-ransomware-ai-agents/">Help Net Security</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>TightVNC Pre‑Auth RCE Enables Code Execution on Windows</title>
+      <link>https://secubuzz.com/news/tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03</guid>
+      <description><![CDATA[A pre‑authentication RCE flaw in TightVNC Viewer 2.8.88 x64 lets attackers run code on Windows PCs before password prompts. The flaw corrupts viewer memory when a malicious VNC server sends crafted screen data, enabling arbitrary code execution; PoC confirms the vulnerability. Update to the latest TightVNC release or apply vendor patches, and disable remote connections until a fix is issued.]]></description>
+      <pubDate>Mon, 02 Nov 2026 04:26:12 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/tightvnc-pre-auth-rce-vulnerability/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Exploit GitHub Actions for CI/CD Secrets Theft</title>
+      <link>https://secubuzz.com/news/hackers-exploit-github-actions-for-ci-cd-secrets-t-a6188030</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-github-actions-for-ci-cd-secrets-t-a6188030</guid>
+      <description><![CDATA[Hackers used command injection in GitHub Actions to target 61 public repositories via malicious issues, PRs, and comments. Injected commands executed in two workflow runs, allowing attackers to exfiltrate CI/CD secrets. GitHub should tighten workflow permissions, and users must audit PRs for suspicious commands; disabling workflow execution for untrusted PRs mitigates the flaw.]]></description>
+      <pubDate>Mon, 02 Nov 2026 04:21:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-target-61-github-repositories/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:93464: Moderate: podman security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-93464-moderate-podman-security-update-c54f492c</link>
@@ -14,6 +59,24 @@
       <description><![CDATA[An update for podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Mon, 02 Nov 2026 04:14:49 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93464">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>BTCPay Servers Targeted: Hot Wallets Drained</title>
+      <link>https://secubuzz.com/news/btcpay-servers-targeted-hot-wallets-drained-7e228faa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/btcpay-servers-targeted-hot-wallets-drained-7e228faa</guid>
+      <description><![CDATA[BTCPay Server operators received reports that attackers drained Bitcoin hot wallets on its servers, compromising merchant funds. The incident prompted the open‑source payment processor to urge operators to shut down installations immediately and keep them offline during investigation. BTCPay recommends applying the latest security patches and verifying wallet configurations to prevent further unauthorized withdrawals.]]></description>
+      <pubDate>Mon, 02 Nov 2026 04:04:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/btcpay-server-warns/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Kernel Security Update for RHEL 8</title>
+      <link>https://secubuzz.com/news/red-hat-issues-kernel-security-update-for-rhel-8-7fa41efe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-security-update-for-rhel-8-7fa41efe</guid>
+      <description><![CDATA[Red Hat released an important kernel security update for RHEL 8, addressing vulnerabilities that could enable privilege escalation or denial of service. The advisory cites multiple CVE identifiers with CVSS scores ranging from moderate to high, though no active exploitation has been observed. Apply the kernel update promptly and verify system integrity following Red Hat’s upgrade guidelines.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:57:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93436">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -80,6 +143,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>LXD/Incus Certificate Validation Flaw Enables Remote Control</title>
+      <link>https://secubuzz.com/news/lxd-incus-certificate-validation-flaw-enables-remo-99c45be4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/lxd-incus-certificate-validation-flaw-enables-remo-99c45be4</guid>
+      <description><![CDATA[A critical certificate validation flaw in LXD and Incus lets attackers bypass HTTPS management authentication and seize control of clusters and VMs. The flaw allows unauthenticated access without passwords, stolen keys, or user interaction, exposing Linux hosts to full administrative takeover. Canonical and Red Hat have released patches; operators should upgrade LXD/Incus to the latest version and enforce certificate validation.]]></description>
+      <pubDate>Mon, 02 Nov 2026 02:45:51 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/certificate-validation-flaw-in-lxd-and-incus/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Updates Jackson Packages for RHEL 9.4</title>
       <link>https://secubuzz.com/news/red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94</guid>
@@ -104,6 +176,24 @@
       <description><![CDATA[Red Hat released a security update for libsoup on RHEL 9.4 Update Services for SAP Solutions, addressing several vulnerabilities. The vulnerabilities could allow attackers to execute arbitrary code or cause denial of service through crafted HTTP requests. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify libsoup version after patching.]]></description>
       <pubDate>Mon, 02 Nov 2026 02:30:55 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93445">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates python‑jwt for RHEL 8</title>
+      <link>https://secubuzz.com/news/red-hat-updates-python-jwt-for-rhel-8-8e81bf09</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-python-jwt-for-rhel-8-8e81bf09</guid>
+      <description><![CDATA[Red Hat released a security update for python‑jwt on RHEL 8, addressing a vulnerability that could affect application security. The advisory notes an Important security impact and references CVE links for each vulnerability, though no specific CVE ID is listed. Operators should apply the RHSA-2026:93440 update immediately to mitigate the risk, as the patch is available via RHEL update channels.]]></description>
+      <pubDate>Mon, 02 Nov 2026 02:03:24 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93440">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical WebKit2GTK3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-webkit2gtk3-security-upd-ccab73dc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-webkit2gtk3-security-upd-ccab73dc</guid>
+      <description><![CDATA[Red Hat released a critical update for webkit2gtk3 on RHEL 8.8 Update Services for SAP Solutions and RHEL 8.8 Telecommunications. The patch fixes multiple high‑severity vulnerabilities with CVSS scores that meet critical thresholds, with CVE references provided in the advisory. Administrators must apply the update promptly and confirm webkit2gtk3 is patched to prevent remote code execution.]]></description>
+      <pubDate>Mon, 02 Nov 2026 01:55:44 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93435">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -366,96 +456,6 @@
       <pubDate>Sat, 31 Oct 2026 22:50:24 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:90500">Red Hat Security Advisories</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Check Point Critical Vulnerabilities in VPN and Firewall Products</title>
-      <link>https://secubuzz.com/news/check-point-critical-vulnerabilities-in-vpn-and-fi-83375896</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/check-point-critical-vulnerabilities-in-vpn-and-fi-83375896</guid>
-      <description><![CDATA[Check Point released emergency security updates addressing two critical vulnerabilities affecting Security Gateway, Security Management Server, and Spark Firewall deployments configured for Remote Access VPN or Site-to-Site VPN. Both vulnerabilities carry a CVSS score of 9.8 and could allow an unauthenticated remote attacker to execute arbitrary code on affected appliances.]]></description>
-      <pubDate>Sat, 31 Oct 2026 21:51:21 GMT</pubDate>
-      <source url="https://cert.europa.eu/publications/security-advisories/2026-012/">CERT-EU Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical Atlassian Vulnerability Affects Multiple Products</title>
-      <link>https://secubuzz.com/news/critical-atlassian-vulnerability-affects-multiple-be15e60d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-atlassian-vulnerability-affects-multiple-be15e60d</guid>
-      <description><![CDATA[Atlassian disclosed a critical arbitrary file access vulnerability affecting Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible, and Fisheye. CERT-EU recommends upgrading all affected installations immediately, starting with instances accessible from the internet, and checking access logs for signs of exploitation. The associated CVE is CVE-2026-20011.]]></description>
-      <pubDate>Sat, 31 Oct 2026 21:51:05 GMT</pubDate>
-      <source url="https://cert.europa.eu/publications/security-advisories/2026-015/">CERT-EU Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>GitLab Releases Emergency Fixes for Critical Server-Side RCE</title>
-      <link>https://secubuzz.com/news/gitlab-releases-emergency-fixes-for-critical-serve-7e35509f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-releases-emergency-fixes-for-critical-serve-7e35509f</guid>
-      <description><![CDATA[GitLab addressed a critical unauthenticated remote code execution vulnerability across self-managed GitLab CE and EE instances in versions 19.4.2, 19.3.4, and 19.2.8. The flaw allows arbitrary code execution on the server without prior authentication, posing a significant risk to internet-facing deployments. CERT-EU urges administrators to upgrade immediately, prioritizing externally accessible instances to mitigate exposure.]]></description>
-      <pubDate>Sat, 31 Oct 2026 20:44:17 GMT</pubDate>
-      <source url="https://cert.europa.eu/publications/security-advisories/2026-016/">CERT-EU Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco Distributes Patch for Critical AMP RCE Vulnerability</title>
-      <link>https://secubuzz.com/news/cisco-distributes-patch-for-critical-amp-rce-vulne-2642e9f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-distributes-patch-for-critical-amp-rce-vulne-2642e9f6</guid>
-      <description><![CDATA[An unauthenticated remote attacker could exploit a critical vulnerability in Cisco Secure Email Gateway's Advanced Malware Protection feature to write arbitrary files and execute commands with root privileges on the underlying operating system. Active exploitation of this vulnerability is currently confirmed in the wild, making it an urgent threat to internet-facing appliances.]]></description>
-      <pubDate>Sat, 31 Oct 2026 20:44:17 GMT</pubDate>
-      <source url="https://cert.europa.eu/publications/security-advisories/2026-017/">CERT-EU Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Northflank Breach Exposes AI API Keys</title>
-      <link>https://secubuzz.com/news/northflank-breach-exposes-ai-api-keys-f3edff12</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/northflank-breach-exposes-ai-api-keys-f3edff12</guid>
-      <description><![CDATA[Northflank, a cloud hosting platform, suffered a breach that exposed its AI API key store, compromising customer credentials. The unauthorized access allowed attackers to retrieve and potentially abuse stored keys, enabling unauthorized API calls and data exfiltration. Northflank urged users to rotate credentials, monitor activity, and investigate the attack vector to mitigate further risk.]]></description>
-      <pubDate>Sat, 31 Oct 2026 18:01:12 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Android SMS Crash Flaw CVE-2026-58882 Requires Immediate Patching</title>
-      <link>https://secubuzz.com/news/android-sms-crash-flaw-cve-2026-58882-requires-imm-41b9791a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/android-sms-crash-flaw-cve-2026-58882-requires-imm-41b9791a</guid>
-      <description><![CDATA[A critical vulnerability designated CVE-2026-58882 affects enterprise Android environments through an SMS crash flaw that enables exploitation by threat actors. Organizations should deploy detection rules to identify active exploitation attempts and apply vendor patches promptly to prevent operational disruption. Patching should be prioritized based on exposure to enterprise-grade mobile devices.]]></description>
-      <pubDate>Sat, 31 Oct 2026 17:26:57 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/new-android-sms-of-death-exploit-can-remotely-crash-unp">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Android SMS of Death PoC Enables Remote Phone Crash</title>
-      <link>https://secubuzz.com/news/android-sms-of-death-poc-enables-remote-phone-cras-2e9c2f5b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/android-sms-of-death-poc-enables-remote-phone-cras-2e9c2f5b</guid>
-      <description><![CDATA[A proof‑of‑concept exploit for CVE-2026-58882, dubbed 'SMS of Death', lets attackers remotely crash unpatched Android phones via crafted text messages. The flaw lies in SMS handling, causing a denial‑of‑service that can reboot devices, but it does not grant code execution. Google released a patch in the latest security update; users should install it promptly and monitor for suspicious SMS activity.]]></description>
-      <pubDate>Sat, 31 Oct 2026 15:35:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Reddit Shifts to Logged-In Service Model</title>
-      <link>https://secubuzz.com/news/reddit-shifts-to-logged-in-service-model-7bc6ac66</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/reddit-shifts-to-logged-in-service-model-7bc6ac66</guid>
-      <description><![CDATA[Reddit announced a gradual transition to a logged-in service model, restricting content access behind user accounts. This policy shift aims to combat unauthorized scraping and bot activity across the platform. The change represents a structural modification to Reddit's public-facing architecture, requiring users to authenticate for broader content access.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:05:15 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chromium Use-After-Free CVE-2026-118357 in FileSystem</title>
-      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-118357-in-filesys-97dcff30</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-118357-in-filesys-97dcff30</guid>
-      <description><![CDATA[Chromium’s FileSystem module contains a use-after-free flaw (CVE-2026-118357) that can lead to arbitrary code execution on affected browsers. The vulnerability arises when the browser frees a file handle before completing pending operations, allowing attackers to trigger memory corruption. Microsoft Edge and Chrome have released patches; users should update to the latest version or apply the vendor’s hotfix.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118357">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium WebAudio Memory Corruption CVE-2026-118358</title>
-      <link>https://secubuzz.com/news/chromium-webaudio-memory-corruption-cve-2026-11835-9a63abf5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-webaudio-memory-corruption-cve-2026-11835-9a63abf5</guid>
-      <description><![CDATA[Chromium’s WebAudio engine contains a memory corruption flaw (CVE-2026-118358) that can enable arbitrary code execution in affected browsers. The bug occurs when the audio context processes malformed audio data, leading to out-of-bounds writes that attackers can exploit. Chrome and Microsoft Edge have issued patches; users should update to the latest release or apply the vendor’s hotfix to prevent exploitation.]]></description>
-      <pubDate>Sat, 31 Oct 2026 14:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118358">Microsoft MSRC</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

@@ -3596,5 +3596,15 @@
   "https://access.redhat.com/errata/RHSA-2026:93464",
   "https://access.redhat.com/errata/RHSA-2026:93471",
   "https://access.redhat.com/errata/RHSA-2026:93452",
-  "https://access.redhat.com/errata/RHSA-2026:93473"
+  "https://access.redhat.com/errata/RHSA-2026:93473",
+  "https://cybersecuritynews.com/tightvnc-pre-auth-rce-vulnerability/",
+  "https://access.redhat.com/errata/RHSA-2026:93436",
+  "https://access.redhat.com/errata/RHSA-2026:93460",
+  "https://www.helpnetsecurity.com/2026/11/02/aur0ra-ransomware-ai-agents/",
+  "https://cybersecuritynews.com/hackers-target-61-github-repositories/",
+  "https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/",
+  "https://access.redhat.com/errata/RHSA-2026:93435",
+  "https://access.redhat.com/errata/RHSA-2026:93440",
+  "https://cybersecuritynews.com/certificate-validation-flaw-in-lxd-and-incus/",
+  "https://cybersecuritynews.com/btcpay-server-warns/"
 ]
