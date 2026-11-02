@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-fixes-smart-app-control-broken-by-octobe-a301ddae",
+    "title": "Microsoft fixes Smart App Control broken by October Windows update",
+    "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
+    "publishedAt": "2026-11-02T13:57:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-fixes-smart-app-control-broken-by-octobe",
+      "article-a301ddae",
+      "a301ddae",
+      "microsoft-fixes-smart-app-control-broken-by-octobe-12ac4c",
+      "microsoft-fixes-smart-app-control-broken-by-october-windows-"
+    ]
+  },
+  {
+    "slug": "hackers-could-exploit-iphone-bootrom-flaws-to-comp-59226233",
+    "title": "Hackers Could Exploit iPhone BootROM Flaws to Compromise Cryptocurrency Wallet Security",
+    "summary": "Older iPhones used to store cryptocurrency seed phrases could expose owners to physical attacks that airplane mode cannot stop. OneKey founder Yishi has warned that wiping an aging iPhone and keeping it offline does not make it a secure cold wallet. The concern involves BootROM flaws that let attackers run code before iOS starts.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-iphone-bootrom-flaws/",
+    "publishedAt": "2026-11-02T13:43:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-could-exploit-iphone-bootrom-flaws-to-comp",
+      "article-59226233",
+      "59226233",
+      "hackers-could-exploit-iphone-bootrom-flaws-to-comp-21336a",
+      "hackers-could-exploit-iphone-bootrom-flaws-to-compromise-cry"
+    ]
+  },
+  {
     "slug": "red-hat-releases-libxml2-security-update-7978e9e6",
     "title": "Red Hat Releases libxml2 Security Update",
     "summary": "Red Hat released a libxml2 security update for Enterprise Linux 7, fixing several XML parsing flaws. The vulnerabilities allow denial of service or remote code execution via malformed XML, with CVSS scores up to 8.9. Apply the RHSA-2026:93791 patch immediately and verify libxml2 is updated to the latest release on all affected systems.",
@@ -44,6 +82,24 @@ export const news: NewsBrief[] = [
       "article-7ac2ba1c",
       "7ac2ba1c",
       "revolve-breach-exposes-180-000-customer-records-6c2710"
+    ]
+  },
+  {
+    "slug": "wiz-releases-red-and-blue-agents-for-soc-teams-5c8130c4",
+    "title": "Wiz Releases Red and Blue Agents for SOC Teams",
+    "summary": "Wiz Research introduced Red and Blue Agents to enhance SOC capabilities, offering pre-breach alerts and rapid threat investigation. The Red Agent validates potential breaches before they occur, while the Blue Agent analyzes active threats at machine speed, leveraging AI to detect anomalies. The agents are available for deployment immediately, with documentation and integration guides provided by Wiz for security teams.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/soc-alerts-red-and-blue-agents",
+    "publishedAt": "2026-11-02T13:13:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-releases-red-and-blue-agents-for-soc-teams",
+      "article-5c8130c4",
+      "5c8130c4",
+      "wiz-releases-red-and-blue-agents-for-soc-teams-49829f"
     ]
   },
   {
@@ -192,6 +248,45 @@ export const news: NewsBrief[] = [
       "article-82ead697",
       "82ead697",
       "ai-bug-discovery-rate-surges-3-of-critical-bugs-21d0f9"
+    ]
+  },
+  {
+    "slug": "langflow-unauthenticated-rce-flaws-exposed-e5963d00",
+    "title": "Langflow Unauthenticated RCE Flaws Exposed",
+    "summary": "Langflow contains two critical unauthenticated RCE flaws that allow attackers to bypass authentication and execute arbitrary code. IBM identified the vulnerabilities across releases 1.0.0 to 1.12.8, assigning CVE-2026-111357, and noted no public exploit yet. Users should upgrade to version 1.13.0 immediately, as the patch resolves both flaws and restores authentication controls.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+    "publishedAt": "2026-11-02T11:50:00.000Z",
+    "cves": [
+      "CVE-2026-111357"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "langflow-unauthenticated-rce-flaws-exposed",
+      "article-e5963d00",
+      "e5963d00",
+      "langflow-unauthenticated-rce-flaws-exposed-312ed6"
+    ]
+  },
+  {
+    "slug": "chainalysis-breach-via-offensive-agentic-technique-946c8397",
+    "title": "Chainalysis Breach via Offensive Agentic Techniques",
+    "summary": "Chainalysis experienced a security incident where external attackers employed offensive agentic techniques to access internal systems and tools. IBM reported no evidence of unauthorized data exfiltration or compromise of investigative data, though the breach exposed internal infrastructure. The company is investigating the incident and has implemented additional monitoring and access controls to prevent future intrusions.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/chainalysis-breached-using-offensive-agentic-techniques/",
+    "publishedAt": "2026-11-02T11:40:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chainalysis-breach-via-offensive-agentic-technique",
+      "article-946c8397",
+      "946c8397",
+      "chainalysis-breach-via-offensive-agentic-technique-cb35db",
+      "chainalysis-breach-via-offensive-agentic-techniques"
     ]
   },
   {

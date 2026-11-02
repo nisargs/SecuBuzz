@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 13:46:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 14:45:53 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft fixes Smart App Control broken by October Windows update</title>
+      <link>https://secubuzz.com/news/microsoft-fixes-smart-app-control-broken-by-octobe-a301ddae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-fixes-smart-app-control-broken-by-octobe-a301ddae</guid>
+      <description><![CDATA[Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update.]]></description>
+      <pubDate>Mon, 02 Nov 2026 13:57:29 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Hackers Could Exploit iPhone BootROM Flaws to Compromise Cryptocurrency Wallet Security</title>
+      <link>https://secubuzz.com/news/hackers-could-exploit-iphone-bootrom-flaws-to-comp-59226233</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-could-exploit-iphone-bootrom-flaws-to-comp-59226233</guid>
+      <description><![CDATA[Older iPhones used to store cryptocurrency seed phrases could expose owners to physical attacks that airplane mode cannot stop. OneKey founder Yishi has warned that wiping an aging iPhone and keeping it offline does not make it a secure cold wallet. The concern involves BootROM flaws that let attackers run code before iOS starts.]]></description>
+      <pubDate>Mon, 02 Nov 2026 13:43:27 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-exploit-iphone-bootrom-flaws/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Releases libxml2 Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-libxml2-security-update-7978e9e6</link>
@@ -24,6 +42,15 @@
       <pubDate>Mon, 02 Nov 2026 13:35:21 GMT</pubDate>
       <source url="https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Wiz Releases Red and Blue Agents for SOC Teams</title>
+      <link>https://secubuzz.com/news/wiz-releases-red-and-blue-agents-for-soc-teams-5c8130c4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-releases-red-and-blue-agents-for-soc-teams-5c8130c4</guid>
+      <description><![CDATA[Wiz Research introduced Red and Blue Agents to enhance SOC capabilities, offering pre-breach alerts and rapid threat investigation. The Red Agent validates potential breaches before they occur, while the Blue Agent analyzes active threats at machine speed, leveraging AI to detect anomalies. The agents are available for deployment immediately, with documentation and integration guides provided by Wiz for security teams.]]></description>
+      <pubDate>Mon, 02 Nov 2026 13:13:46 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/soc-alerts-red-and-blue-agents">Wiz Research</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Releases libsoup Security Update</title>
@@ -96,6 +123,24 @@
       <pubDate>Mon, 02 Nov 2026 12:02:34 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html">Schneier on Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Langflow Unauthenticated RCE Flaws Exposed</title>
+      <link>https://secubuzz.com/news/langflow-unauthenticated-rce-flaws-exposed-e5963d00</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/langflow-unauthenticated-rce-flaws-exposed-e5963d00</guid>
+      <description><![CDATA[Langflow contains two critical unauthenticated RCE flaws that allow attackers to bypass authentication and execute arbitrary code. IBM identified the vulnerabilities across releases 1.0.0 to 1.12.8, assigning CVE-2026-111357, and noted no public exploit yet. Users should upgrade to version 1.13.0 immediately, as the patch resolves both flaws and restores authentication controls.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:50:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chainalysis Breach via Offensive Agentic Techniques</title>
+      <link>https://secubuzz.com/news/chainalysis-breach-via-offensive-agentic-technique-946c8397</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-breach-via-offensive-agentic-technique-946c8397</guid>
+      <description><![CDATA[Chainalysis experienced a security incident where external attackers employed offensive agentic techniques to access internal systems and tools. IBM reported no evidence of unauthorized data exfiltration or compromise of investigative data, though the breach exposed internal infrastructure. The company is investigating the incident and has implemented additional monitoring and access controls to prevent future intrusions.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:40:19 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/chainalysis-breached-using-offensive-agentic-techniques/">Help Net Security</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Prophet Security Survey Evaluates SOC AI Adoption Trends</title>
@@ -411,51 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 05:00:46 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/02/aur0ra-ransomware-ai-agents/">Help Net Security</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Tomcat Security Update for RHEL 9.8</title>
-      <link>https://secubuzz.com/news/red-hat-releases-tomcat-security-update-for-rhel-9-11e05504</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-tomcat-security-update-for-rhel-9-11e05504</guid>
-      <description><![CDATA[Red Hat issued a security update for Apache Tomcat on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities. The flaws involve improper input validation in the servlet container, potentially allowing remote code execution with elevated privileges. Apply the provided Tomcat patch immediately and review server configurations to enforce strict access controls.]]></description>
-      <pubDate>Mon, 02 Nov 2026 04:44:02 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93469">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases FreeRDP Security Update for RHEL 8.4</title>
-      <link>https://secubuzz.com/news/red-hat-releases-freerdp-security-update-for-rhel-2ebe81f7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-freerdp-security-update-for-rhel-2ebe81f7</guid>
-      <description><![CDATA[Red Hat released a security update for FreeRDP on RHEL 8.4 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The vulnerabilities stem from buffer overflows in the RDP protocol handling, enabling attackers to execute arbitrary code remotely. Apply the FreeRDP patch immediately and enforce network segmentation to limit RDP exposure.]]></description>
-      <pubDate>Mon, 02 Nov 2026 04:43:36 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93538">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Nginx on RHEL 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-updates-nginx-on-rhel-9-4-59bea493</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-nginx-on-rhel-9-4-59bea493</guid>
-      <description><![CDATA[Red Hat released an important‑severity security update for nginx on RHEL 9.4 for SAP Solutions. The update fixes one or more vulnerabilities referenced by CVE links, but no specific CVE ID is disclosed. Administrators should apply the patch to prevent potential exploitation of the web server component and mitigate denial of service or remote code execution risks.]]></description>
-      <pubDate>Mon, 02 Nov 2026 04:38:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93468">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues .NET 8.0 Update for RHEL 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-issues-net-8-0-update-for-rhel-9-4-fa65bc85</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-net-8-0-update-for-rhel-9-4-fa65bc85</guid>
-      <description><![CDATA[Red Hat released a security update for .NET 8.0 on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The patch fixes several CVE‑identified flaws that could enable remote code execution or privilege escalation, with CVSS scores up to 9.0. Red Hat advises applying the update immediately via the provided RPMs or the Customer Portal to secure affected systems.]]></description>
-      <pubDate>Mon, 02 Nov 2026 04:37:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93456">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>TightVNC Pre‑Auth RCE Enables Code Execution on Windows</title>
-      <link>https://secubuzz.com/news/tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03</guid>
-      <description><![CDATA[A pre‑authentication RCE flaw in TightVNC Viewer 2.8.88 x64 lets attackers run code on Windows PCs before password prompts. The flaw corrupts viewer memory when a malicious VNC server sends crafted screen data, enabling arbitrary code execution; PoC confirms the vulnerability. Update to the latest TightVNC release or apply vendor patches, and disable remote connections until a fix is issued.]]></description>
-      <pubDate>Mon, 02 Nov 2026 04:26:12 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/tightvnc-pre-auth-rce-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
