@@ -1,5 +1,41 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/",
+    "title": "CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows",
+    "headline": "CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows",
+    "summary": "We identified CVE-2026-120497, where stored cross-site scripting (XSS) in the HTML report generator in the aidlc-traceability CLI could allow an actor who can modify a project's AI-DLC artifact files to execute arbitrary script in the browser of a user who opens a generated HTML traceability report via crafted artifact titles or descriptions.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-02T19:19:50.000Z",
+    "ingestedAt": "2026-11-02T19:43:10.687Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-120497"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93925",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93925",
+    "title": "RHSA-2026:93925: Important: bind security, bug fix, and enhancement update",
+    "headline": "RHSA-2026:93925: Important: bind security, bug fix, and enhancement update",
+    "summary": "An update for bind is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T18:25:12.000Z",
+    "ingestedAt": "2026-11-02T19:43:10.689Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
     "title": "Google dismantles 1.3M-device XCPE Android botnet",
@@ -630,6 +666,39 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93592",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93592",
+    "title": "RHSA-2026:93592: Important: freerdp security update",
+    "headline": "RHSA-2026:93592: Important: freerdp security update",
+    "summary": "An update for freerdp is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T11:03:22.000Z",
+    "ingestedAt": "2026-11-02T19:44:41.322Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-impersonate-ai-bots/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-impersonate-ai-bots/",
+    "title": "Hackers Impersonate AI Bots to Hunt Credentials",
+    "headline": "Hackers Impersonate AI Bots to Hunt Credentials",
+    "summary": "Attackers are impersonating ChatGPT, Claude, and Perplexity AI bots to scan websites for passwords, API keys, and cloud credentials. The campaign leverages familiar AI service names to bypass trust mechanisms and test whether organizations grant access based on perceived legitimacy. This social engineering technique targets credential theft at scale.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-02T11:01:28.000Z",
+    "ingestedAt": "2026-11-02T19:44:37.636Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/hackers-impersonate-ai-bots/",
     "additionalSources": []
   },
   {

@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 18:46:25 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 19:45:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows</title>
+      <link>https://secubuzz.com/news/cve-2026-120497-stored-cross-site-scripting-in-the-beeb1c33</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-120497-stored-cross-site-scripting-in-the-beeb1c33</guid>
+      <description><![CDATA[We identified CVE-2026-120497, where stored cross-site scripting (XSS) in the HTML report generator in the aidlc-traceability CLI could allow an actor who can modify a project's AI-DLC artifact files to execute arbitrary script in the browser of a user who opens a generated HTML traceability report via crafted artifact titles or descriptions.]]></description>
+      <pubDate>Mon, 02 Nov 2026 19:19:50 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93925: Important: bind security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93925-important-bind-security-bug-fix-an-b53a47be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93925-important-bind-security-bug-fix-an-b53a47be</guid>
+      <description><![CDATA[An update for bind is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 18:25:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93925">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Google dismantles 1.3M-device XCPE Android botnet</title>
       <link>https://secubuzz.com/news/google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd</link>
@@ -359,6 +377,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>RHSA-2026:93592: Important: freerdp security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93592-important-freerdp-security-update-4c834942</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93592-important-freerdp-security-update-4c834942</guid>
+      <description><![CDATA[An update for freerdp is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:03:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93592">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Impersonate AI Bots to Hunt Credentials</title>
+      <link>https://secubuzz.com/news/hackers-impersonate-ai-bots-to-hunt-credentials-cf7804e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-impersonate-ai-bots-to-hunt-credentials-cf7804e2</guid>
+      <description><![CDATA[Attackers are impersonating ChatGPT, Claude, and Perplexity AI bots to scan websites for passwords, API keys, and cloud credentials. The campaign leverages familiar AI service names to bypass trust mechanisms and test whether organizations grant access based on perceived legitimacy. This social engineering technique targets credential theft at scale.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:01:28 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-impersonate-ai-bots/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Government Linux Servers Targeted in SysGoRAT Espionage Campaign</title>
       <link>https://secubuzz.com/news/government-linux-servers-targeted-in-sysgorat-espi-b00f8861</link>
       <guid isPermaLink="true">https://secubuzz.com/news/government-linux-servers-targeted-in-sysgorat-espi-b00f8861</guid>
@@ -419,42 +455,6 @@
       <description><![CDATA[Red Hat released a security update for GIMP on RHEL 9.2 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could allow local privilege escalation or denial of service; CVSS scores are listed in the referenced CVE links. Users should apply the update immediately and verify that the affected packages are upgraded to the patched versions.]]></description>
       <pubDate>Mon, 02 Nov 2026 09:58:04 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93589">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Managed SIEM Services: Cost, Tuning, and Ownership Models</title>
-      <link>https://secubuzz.com/news/managed-siem-services-cost-tuning-and-ownership-mo-fa0bacaf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/managed-siem-services-cost-tuning-and-ownership-mo-fa0bacaf</guid>
-      <description><![CDATA[The article reviews managed SIEM services, noting that the license costs half the total while the unstaffed half—tuning, content, and triage—often causes failures. It explains managed services supply discipline, offering three ownership models: platform‑managed, operator‑managed, and shared‑ownership, ensuring tuning and threat detection. The ranking evaluates ten vendors on cost, ownership, and operational effectiveness to help organizations choose a SIEM partner.]]></description>
-      <pubDate>Mon, 02 Nov 2026 09:39:56 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-managed-siem-services/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cyber Security News Ranks Top SOC Service Providers</title>
-      <link>https://secubuzz.com/news/cyber-security-news-ranks-top-soc-service-provider-39fb8ae4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyber-security-news-ranks-top-soc-service-provider-39fb8ae4</guid>
-      <description><![CDATA[Cyber Security News published a technical vendor evaluation ranking the top SOC-as-a-Service providers for mid-market and enterprise organizations. The 2026 market evaluation categorizes security providers into specialized concierge models, scalable detection engineering platforms, and bring-your-own-stack operators. Security leaders can utilize these detailed industry benchmarks to solve internal analyst staffing constraints and maintain continuous operational monitoring.]]></description>
-      <pubDate>Mon, 02 Nov 2026 09:36:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-soc-as-a-service/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ivanti patches two more Connect Secure zero-days chained in attacks</title>
-      <link>https://secubuzz.com/news/ivanti-patches-two-more-connect-secure-zero-days-c-9d5b4621</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-patches-two-more-connect-secure-zero-days-c-9d5b4621</guid>
-      <description><![CDATA[Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...] (Corroborated Threat Intelligence: Associated CVE is CVE-2026-111357).]]></description>
-      <pubDate>Mon, 02 Nov 2026 09:33:26 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>DebugBear DNS Hijack Affects Polymarket Customer</title>
-      <link>https://secubuzz.com/news/debugbear-dns-hijack-affects-polymarket-customer-5fcecb17</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/debugbear-dns-hijack-affects-polymarket-customer-5fcecb17</guid>
-      <description><![CDATA[DebugBear says its DNS records were hijacked via its registrar, targeting a single Polymarket customer. The compromised DNS redirected traffic to malicious endpoints, enabling attackers to intercept or alter user transactions on Polymarket. Polymarket refunded $3.9 million to affected traders; teams should verify DNS settings, lock registrar accounts, and monitor zone changes.]]></description>
-      <pubDate>Mon, 02 Nov 2026 09:33:15 GMT</pubDate>
-      <source url="https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
   </channel>
