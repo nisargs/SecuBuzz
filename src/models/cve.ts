@@ -1,6 +1,6 @@
 export type AdvisorySource = 'CISA KEV' | 'GITHUB' | 'NVD' | 'Emerging (News)';
 
-export type AdvisorySeverity = 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';
+export type AdvisorySeverity = 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'UNKNOWN';
 
 export type CveAdvisory = {
   id: string;

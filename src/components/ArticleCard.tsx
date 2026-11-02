@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 
 import { useTheme } from '../context/ThemeContext';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useMyStack, normalizeCve, POPULAR_VENDORS } from '../context/MyStackContext';
 import type { Article } from '../models/article';
 import { colors, severityColors, spacing } from '../theme/theme';
@@ -136,6 +137,7 @@ export function ArticleCard({
   onSearchCve,
 }: ArticleCardProps) {
   const { colors, isDark, accentColor, severityColors, fontScaleMultiplier } = useTheme();
+  const insets = useSafeAreaInsets();
   const [opening, setOpening] = useState(false);
   const [copied, setCopied] = useState(false);
   const { isWatchingCve, toggleWatchCve, isVendorSelected, toggleVendor, showToast } = useMyStack();
@@ -455,6 +457,7 @@ export function ArticleCard({
               {
                 backgroundColor: colors.surface,
                 borderColor: colors.border,
+                paddingBottom: Math.max(insets.bottom, 20) + 16,
               },
             ]}
             onPress={(e) => e.stopPropagation()}

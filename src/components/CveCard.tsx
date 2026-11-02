@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 
 import { useTheme } from '../context/ThemeContext';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useMyStack, normalizeCve, POPULAR_VENDORS } from '../context/MyStackContext';
 import type { AdvisorySeverity, AdvisorySource, CveAdvisory } from '../models/cve';
 import { fetchEpssScore } from '../services/epssService';
@@ -145,6 +146,7 @@ export function CveCard({
   onSearchCve,
 }: CveCardProps) {
   const { colors, isDark, accentColor, severityColors, fontScaleMultiplier } = useTheme();
+  const insets = useSafeAreaInsets();
   const { isWatchingCve, toggleWatchCve, isVendorSelected, toggleVendor, showToast } = useMyStack();
   const [activeEntity, setActiveEntity] = useState<ActiveEntity | null>(null);
   const [actionFeedback, setActionFeedback] = useState<string | null>(null);
@@ -699,6 +701,7 @@ export function CveCard({
               {
                 backgroundColor: colors.surface,
                 borderColor: colors.border,
+                paddingBottom: Math.max(insets.bottom, 20) + 16,
               },
             ]}
             onPress={(e) => e.stopPropagation()}
@@ -871,6 +874,7 @@ export function CveCard({
               {
                 backgroundColor: colors.surface,
                 borderColor: colors.border,
+                paddingBottom: Math.max(insets.bottom, 20) + 16,
               },
             ]}
             onPress={(e) => e.stopPropagation()}

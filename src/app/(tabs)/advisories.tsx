@@ -350,9 +350,8 @@ export default function AdvisoriesScreen() {
         : 'Software Vendor';
 
       const matchedProduct = brief
-        ? (brief.summary.match(/affecting ([^.]+)/i)?.[1]?.split(',')[0]?.trim() ||
-            brief.headline.split(' ')[0])
-        : 'Affected Software';
+        ? (brief.summary.match(/affecting ([^.]+)/i)?.[1]?.split(',')[0]?.trim() || 'Unknown')
+        : 'Unknown';
 
       synthesized.push({
         id: `watched-${cve.toLowerCase()}`,
@@ -362,14 +361,19 @@ export default function AdvisoriesScreen() {
         vulnerabilityName: brief?.headline || `${cve} Vulnerability Intelligence`,
         dateAdded: brief?.publishedAt
           ? brief.publishedAt.slice(0, 10)
-          : new Date().toISOString().slice(0, 10),
+          : 'Unknown',
         dueDate: '—',
-        severity:
-          brief?.severity === 'CRITICAL'
+        severity: brief
+          ? brief.severity === 'CRITICAL'
             ? 'CRITICAL'
-            : brief?.severity === 'HIGH'
+            : brief.severity === 'HIGH'
             ? 'HIGH'
-            : 'MEDIUM',
+            : brief.severity === 'LOW'
+            ? 'LOW'
+            : brief.severity === 'MEDIUM'
+            ? 'MEDIUM'
+            : 'UNKNOWN'
+          : 'UNKNOWN',
         shortDescription:
           brief?.summary ||
           `Monitored CVE on your Watchlist. Active threat intelligence tracking.`,

@@ -163,6 +163,11 @@ export const severityColorsDark = {
     surface: 'rgba(148, 163, 184, 0.10)',
     border: 'rgba(148, 163, 184, 0.2)',
   },
+  UNKNOWN: {
+    primary: '#64748B',
+    surface: 'rgba(100, 116, 139, 0.10)',
+    border: 'rgba(100, 116, 139, 0.2)',
+  },
 } as const;
 
 /**
@@ -185,6 +190,11 @@ export const severityColorsLight = {
     border: '#BAE6FD',
   },
   LOW: {
+    primary: '#64748B',
+    surface: '#F1F5F9',
+    border: '#CBD5E1',
+  },
+  UNKNOWN: {
     primary: '#64748B',
     surface: '#F1F5F9',
     border: '#CBD5E1',

@@ -42,7 +42,7 @@ export type SeverityColorConfig = {
 };
 
 export type SeverityColorMap = Record<
-  'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW',
+  'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'UNKNOWN',
   SeverityColorConfig
 >;
 
