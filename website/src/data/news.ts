@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "chainalysis-breach-via-ai-driven-attack-d196dbe1",
+    "title": "Chainalysis Breach via AI-Driven Attack",
+    "summary": "Chainalysis suffered a data breach after attackers used AI‑driven offensive agentic techniques to infiltrate its internal systems and tools. The attack exploited automated reconnaissance and credential‑guessing capabilities, granting unauthorized access to proprietary data; no public exploit code is reported. Chainalysis has disclosed the incident and is conducting forensics; security teams should review access controls, monitor anomalies, and apply vendor patches.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
+    "publishedAt": "2026-11-02T10:27:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chainalysis-breach-via-ai-driven-attack",
+      "article-d196dbe1",
+      "d196dbe1",
+      "chainalysis-breach-via-ai-driven-attack-642816"
+    ]
+  },
+  {
+    "slug": "fbi-links-6b-binance-heist-to-north-korea-ac6b5964",
+    "title": "FBI Links $6B Binance Heist to North Korea",
+    "summary": "The FBI confirmed that North Korea was responsible for a $6 billion theft of virtual assets from Binance on October 29, 2026. The attack exploited compromised wallet addresses, allowing attackers to siphon funds from Binance’s transaction network. Binance and the crypto industry are urged to block TraderTraitor‑linked transactions, enhance wallet monitoring, and tighten KYC procedures to prevent repeat incidents.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/",
+    "publishedAt": "2026-11-02T10:12:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-links-6b-binance-heist-to-north-korea",
+      "article-ac6b5964",
+      "ac6b5964",
+      "fbi-links-6b-binance-heist-to-north-korea-383878"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-gimp-security-update-61833136",
+    "title": "Red Hat Issues GIMP Security Update",
+    "summary": "Red Hat released a security update for GIMP on RHEL 9.2 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could allow local privilege escalation or denial of service; CVSS scores are listed in the referenced CVE links. Users should apply the update immediately and verify that the affected packages are upgraded to the patched versions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93589",
+    "publishedAt": "2026-11-02T09:58:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-gimp-security-update",
+      "article-61833136",
+      "61833136",
+      "red-hat-issues-gimp-security-update-37d92a"
+    ]
+  },
+  {
     "slug": "ivanti-patches-two-more-connect-secure-zero-days-c-9d5b4621",
     "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
     "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...] (Corroborated Threat Intelligence: Associated CVE is CVE-2026-111357).",
@@ -29,6 +83,24 @@ export const news: NewsBrief[] = [
       "9d5b4621",
       "ivanti-patches-two-more-connect-secure-zero-days-c-64858f",
       "ivanti-patches-two-more-connect-secure-zero-days-chained-in-"
+    ]
+  },
+  {
+    "slug": "debugbear-dns-hijack-affects-polymarket-customer-5fcecb17",
+    "title": "DebugBear DNS Hijack Affects Polymarket Customer",
+    "summary": "DebugBear says its DNS records were hijacked via its registrar, targeting a single Polymarket customer. The compromised DNS redirected traffic to malicious endpoints, enabling attackers to intercept or alter user transactions on Polymarket. Polymarket refunded $3.9 million to affected traders; teams should verify DNS settings, lock registrar accounts, and monitor zone changes.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
+    "publishedAt": "2026-11-02T09:33:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "debugbear-dns-hijack-affects-polymarket-customer",
+      "article-5fcecb17",
+      "5fcecb17",
+      "debugbear-dns-hijack-affects-polymarket-customer-431e74"
     ]
   },
   {
@@ -70,6 +142,61 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-libsoup3-security-update-77e459f8",
+    "title": "Red Hat Issues Libsoup3 Security Update",
+    "summary": "Red Hat released a security update for libsoup3 on RHEL 10.0 Extended Update Support. The patch mitigates several vulnerabilities that could lead to remote code execution or denial of service; CVSS scores are provided via CVE references. Affected users should install the update promptly and confirm that the libsoup3 package is at the patched version.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93583",
+    "publishedAt": "2026-11-02T09:00:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libsoup3-security-update",
+      "article-77e459f8",
+      "77e459f8",
+      "red-hat-issues-libsoup3-security-update-37d92a"
+    ]
+  },
+  {
+    "slug": "fbi-links-600-addresses-to-north-korean-binance-th-4ea7b26c",
+    "title": "FBI Links 600+ Addresses to North Korean Binance Theft",
+    "summary": "FBI linked over 600 addresses to a $6 billion Binance theft attributed to North Korean group TraderTraitor. Attackers siphoned funds from Binance’s exchange and laundered them through a complex wallet chain to obscure the trail. Binance issued a security advisory urging users to enable two‑factor authentication and monitor activity while law enforcement pursues the laundering network.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+    "publishedAt": "2026-11-02T08:40:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-links-600-addresses-to-north-korean-binance-th",
+      "article-4ea7b26c",
+      "4ea7b26c",
+      "fbi-links-600-addresses-to-north-korean-binance-th-3dac18",
+      "fbi-links-600-addresses-to-north-korean-binance-theft"
+    ]
+  },
+  {
+    "slug": "reddit-moves-to-mandatory-logins-5653ba47",
+    "title": "Reddit Moves to Mandatory Logins",
+    "summary": "Reddit announced a shift to mandatory logins for its platform to limit public discussion access. The change aims to curb unauthorized data scraping by AI bots and support improved recommendations and advertising. Users will need to create or sign in to an account to view content, and the policy aligns with evolving safety rules.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/reddit-plans-mandatory-logins/",
+    "publishedAt": "2026-11-02T08:35:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "reddit-moves-to-mandatory-logins",
+      "article-5653ba47",
+      "5653ba47",
+      "reddit-moves-to-mandatory-logins-1cc82f"
+    ]
+  },
+  {
     "slug": "hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23",
     "title": "Hackers Use ARTEX AI Agents to Automate Active Directory Attacks, Kerberoasting, and Lateral Movement",
     "summary": "Hackers are now using an open-source AI tool called ARTEX to run large parts of a network break-in on their own. The tool can map a Windows network, steal service account passwords, and try to spread to domain controllers with very little human help.",
@@ -107,6 +234,25 @@ export const news: NewsBrief[] = [
       "cd86462c",
       "beyondtrust-vulnerability-faces-fresh-exploitation-e8841b",
       "beyondtrust-vulnerability-faces-fresh-exploitation-probes-ma"
+    ]
+  },
+  {
+    "slug": "volta-infostealer-harvests-gmail-discord-uses-ai-p-3cf735be",
+    "title": "VOLTA Infostealer Harvests Gmail, Discord, Uses AI Profiling",
+    "summary": "A new Windows infostealer named VOLTA captures Gmail, Discord, and other login sessions, surpassing basic credential theft. It forwards the loot to an AI model that analyzes the data and produces a detailed victim value report, revealing advanced profiling. Security teams should block VOLTA’s download URLs, monitor outbound traffic to AI endpoints, and enforce multi‑factor authentication on affected services.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/volta-malware-steals-gmail/",
+    "publishedAt": "2026-11-02T07:33:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "volta-infostealer-harvests-gmail-discord-uses-ai-p",
+      "article-3cf735be",
+      "3cf735be",
+      "volta-infostealer-harvests-gmail-discord-uses-ai-p-209f2b",
+      "volta-infostealer-harvests-gmail-discord-uses-ai-profiling"
     ]
   },
   {
@@ -388,6 +534,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-nginx-on-rhel-9-4-59bea493",
+    "title": "Red Hat Updates Nginx on RHEL 9.4",
+    "summary": "Red Hat released an important‑severity security update for nginx on RHEL 9.4 for SAP Solutions. The update fixes one or more vulnerabilities referenced by CVE links, but no specific CVE ID is disclosed. Administrators should apply the patch to prevent potential exploitation of the web server component and mitigate denial of service or remote code execution risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93468",
+    "publishedAt": "2026-11-02T04:38:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-nginx-on-rhel-9-4",
+      "article-59bea493",
+      "59bea493",
+      "red-hat-updates-nginx-on-rhel-9-4-37d92e"
+    ]
+  },
+  {
     "slug": "tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03",
     "title": "TightVNC Pre‑Auth RCE Enables Code Execution on Windows",
     "summary": "A pre‑authentication RCE flaw in TightVNC Viewer 2.8.88 x64 lets attackers run code on Windows PCs before password prompts. The flaw corrupts viewer memory when a malicious VNC server sends crafted screen data, enabling arbitrary code execution; PoC confirms the vulnerability. Update to the latest TightVNC release or apply vendor patches, and disable remote connections until a fix is issued.",
@@ -496,6 +660,24 @@ export const news: NewsBrief[] = [
       "d3a09504",
       "rhsa-2026-93471-important-perl-yaml-1-24-security-37d92e",
       "rhsa-2026-93471-important-perl-yaml-1-24-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-pipewire-on-rhel-10-f43ad8cd",
+    "title": "Red Hat Updates Pipewire on RHEL 10",
+    "summary": "Red Hat released a moderate‑severity security update for pipewire on RHEL 10. The update addresses one or more vulnerabilities referenced by CVE links, though no specific CVE ID is listed, potentially allowing local privilege escalation or denial of service. Users should apply the patch to mitigate potential exploitation of the affected component.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93442",
+    "publishedAt": "2026-11-02T03:48:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-pipewire-on-rhel-10",
+      "article-f43ad8cd",
+      "f43ad8cd",
+      "red-hat-updates-pipewire-on-rhel-10-37d92e"
     ]
   },
   {
@@ -936,6 +1118,24 @@ export const news: NewsBrief[] = [
       "article-04dc1c11",
       "04dc1c11",
       "red-hat-issues-kernel-rt-update-for-rhel-8-37d92e"
+    ]
+  },
+  {
+    "slug": "tradertraitor-blamed-for-6-3b-binance-theft-48ab283f",
+    "title": "TraderTraitor Blamed for $6.3B Binance Theft",
+    "summary": "The FBI and Secret Service blame North Korean hackers, TraderTraitor, for a $6.3 billion theft from Binance. The theft involved exfiltrating virtual assets through compromised wallet addresses, exposing Binance’s transaction system to large‑scale fraud. Binance and partners are urged to block TraderTraitor‑linked transactions, strengthen wallet monitoring, and enforce stricter KYC controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/fbi-blames-tradertraitor-for-binance-hack",
+    "publishedAt": "2026-11-02T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tradertraitor-blamed-for-6-3b-binance-theft",
+      "article-48ab283f",
+      "48ab283f",
+      "tradertraitor-blamed-for-6-3b-binance-theft-556b0a"
     ]
   },
   {

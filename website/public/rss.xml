@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 09:46:56 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 10:46:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Chainalysis Breach via AI-Driven Attack</title>
+      <link>https://secubuzz.com/news/chainalysis-breach-via-ai-driven-attack-d196dbe1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-breach-via-ai-driven-attack-d196dbe1</guid>
+      <description><![CDATA[Chainalysis suffered a data breach after attackers used AI‑driven offensive agentic techniques to infiltrate its internal systems and tools. The attack exploited automated reconnaissance and credential‑guessing capabilities, granting unauthorized access to proprietary data; no public exploit code is reported. Chainalysis has disclosed the incident and is conducting forensics; security teams should review access controls, monitor anomalies, and apply vendor patches.]]></description>
+      <pubDate>Mon, 02 Nov 2026 10:27:49 GMT</pubDate>
+      <source url="https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>FBI Links $6B Binance Heist to North Korea</title>
+      <link>https://secubuzz.com/news/fbi-links-6b-binance-heist-to-north-korea-ac6b5964</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-links-6b-binance-heist-to-north-korea-ac6b5964</guid>
+      <description><![CDATA[The FBI confirmed that North Korea was responsible for a $6 billion theft of virtual assets from Binance on October 29, 2026. The attack exploited compromised wallet addresses, allowing attackers to siphon funds from Binance’s transaction network. Binance and the crypto industry are urged to block TraderTraitor‑linked transactions, enhance wallet monitoring, and tighten KYC procedures to prevent repeat incidents.]]></description>
+      <pubDate>Mon, 02 Nov 2026 10:12:51 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Issues GIMP Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-gimp-security-update-61833136</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-gimp-security-update-61833136</guid>
+      <description><![CDATA[Red Hat released a security update for GIMP on RHEL 9.2 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could allow local privilege escalation or denial of service; CVSS scores are listed in the referenced CVE links. Users should apply the update immediately and verify that the affected packages are upgraded to the patched versions.]]></description>
+      <pubDate>Mon, 02 Nov 2026 09:58:04 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93589">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Ivanti patches two more Connect Secure zero-days chained in attacks</title>
       <link>https://secubuzz.com/news/ivanti-patches-two-more-connect-secure-zero-days-c-9d5b4621</link>
@@ -15,6 +42,15 @@
       <pubDate>Mon, 02 Nov 2026 09:33:26 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/">BleepingComputer</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>DebugBear DNS Hijack Affects Polymarket Customer</title>
+      <link>https://secubuzz.com/news/debugbear-dns-hijack-affects-polymarket-customer-5fcecb17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/debugbear-dns-hijack-affects-polymarket-customer-5fcecb17</guid>
+      <description><![CDATA[DebugBear says its DNS records were hijacked via its registrar, targeting a single Polymarket customer. The compromised DNS redirected traffic to malicious endpoints, enabling attackers to intercept or alter user transactions on Polymarket. Polymarket refunded $3.9 million to affected traders; teams should verify DNS settings, lock registrar accounts, and monitor zone changes.]]></description>
+      <pubDate>Mon, 02 Nov 2026 09:33:15 GMT</pubDate>
+      <source url="https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/">SecurityWeek</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>RHSA-2026:93586: Important: perl-HTTP-Daemon security update</title>
@@ -35,6 +71,33 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Libsoup3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-libsoup3-security-update-77e459f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libsoup3-security-update-77e459f8</guid>
+      <description><![CDATA[Red Hat released a security update for libsoup3 on RHEL 10.0 Extended Update Support. The patch mitigates several vulnerabilities that could lead to remote code execution or denial of service; CVSS scores are provided via CVE references. Affected users should install the update promptly and confirm that the libsoup3 package is at the patched version.]]></description>
+      <pubDate>Mon, 02 Nov 2026 09:00:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93583">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>FBI Links 600+ Addresses to North Korean Binance Theft</title>
+      <link>https://secubuzz.com/news/fbi-links-600-addresses-to-north-korean-binance-th-4ea7b26c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-links-600-addresses-to-north-korean-binance-th-4ea7b26c</guid>
+      <description><![CDATA[FBI linked over 600 addresses to a $6 billion Binance theft attributed to North Korean group TraderTraitor. Attackers siphoned funds from Binance’s exchange and laundered them through a complex wallet chain to obscure the trail. Binance issued a security advisory urging users to enable two‑factor authentication and monitor activity while law enforcement pursues the laundering network.]]></description>
+      <pubDate>Mon, 02 Nov 2026 08:40:36 GMT</pubDate>
+      <source url="https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Reddit Moves to Mandatory Logins</title>
+      <link>https://secubuzz.com/news/reddit-moves-to-mandatory-logins-5653ba47</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/reddit-moves-to-mandatory-logins-5653ba47</guid>
+      <description><![CDATA[Reddit announced a shift to mandatory logins for its platform to limit public discussion access. The change aims to curb unauthorized data scraping by AI bots and support improved recommendations and advertising. Users will need to create or sign in to an account to view content, and the policy aligns with evolving safety rules.]]></description>
+      <pubDate>Mon, 02 Nov 2026 08:35:42 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/reddit-plans-mandatory-logins/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Hackers Use ARTEX AI Agents to Automate Active Directory Attacks, Kerberoasting, and Lateral Movement</title>
       <link>https://secubuzz.com/news/hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23</guid>
@@ -51,6 +114,15 @@
       <pubDate>Mon, 02 Nov 2026 08:01:35 GMT</pubDate>
       <source url="https://cybersecuritynews.com/critical-beyondtrust-vulnerability/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>VOLTA Infostealer Harvests Gmail, Discord, Uses AI Profiling</title>
+      <link>https://secubuzz.com/news/volta-infostealer-harvests-gmail-discord-uses-ai-p-3cf735be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/volta-infostealer-harvests-gmail-discord-uses-ai-p-3cf735be</guid>
+      <description><![CDATA[A new Windows infostealer named VOLTA captures Gmail, Discord, and other login sessions, surpassing basic credential theft. It forwards the loot to an AI model that analyzes the data and produces a detailed victim value report, revealing advanced profiling. Security teams should block VOLTA’s download URLs, monitor outbound traffic to AI endpoints, and enforce multi‑factor authentication on affected services.]]></description>
+      <pubDate>Mon, 02 Nov 2026 07:33:50 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/volta-malware-steals-gmail/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>DeepSeek Releases Super-Agent Coding Tool</title>
@@ -188,6 +260,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Updates Nginx on RHEL 9.4</title>
+      <link>https://secubuzz.com/news/red-hat-updates-nginx-on-rhel-9-4-59bea493</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-nginx-on-rhel-9-4-59bea493</guid>
+      <description><![CDATA[Red Hat released an important‑severity security update for nginx on RHEL 9.4 for SAP Solutions. The update fixes one or more vulnerabilities referenced by CVE links, but no specific CVE ID is disclosed. Administrators should apply the patch to prevent potential exploitation of the web server component and mitigate denial of service or remote code execution risks.]]></description>
+      <pubDate>Mon, 02 Nov 2026 04:38:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93468">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>TightVNC Pre‑Auth RCE Enables Code Execution on Windows</title>
       <link>https://secubuzz.com/news/tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03</link>
       <guid isPermaLink="true">https://secubuzz.com/news/tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03</guid>
@@ -239,6 +320,15 @@
       <description><![CDATA[An update for the perl-YAML:1.24 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Mon, 02 Nov 2026 03:52:24 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93471">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates Pipewire on RHEL 10</title>
+      <link>https://secubuzz.com/news/red-hat-updates-pipewire-on-rhel-10-f43ad8cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-pipewire-on-rhel-10-f43ad8cd</guid>
+      <description><![CDATA[Red Hat released a moderate‑severity security update for pipewire on RHEL 10. The update addresses one or more vulnerabilities referenced by CVE links, though no specific CVE ID is listed, potentially allowing local privilege escalation or denial of service. Users should apply the patch to mitigate potential exploitation of the affected component.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:48:07 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93442">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -365,96 +455,6 @@
       <description><![CDATA[A critical certificate validation flaw in LXD and Incus lets attackers bypass HTTPS management authentication and seize control of clusters and VMs. The flaw allows unauthenticated access without passwords, stolen keys, or user interaction, exposing Linux hosts to full administrative takeover. Canonical and Red Hat have released patches; operators should upgrade LXD/Incus to the latest version and enforce certificate validation.]]></description>
       <pubDate>Mon, 02 Nov 2026 02:45:51 GMT</pubDate>
       <source url="https://cybersecuritynews.com/certificate-validation-flaw-in-lxd-and-incus/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Moderate Update for libkcapi</title>
-      <link>https://secubuzz.com/news/red-hat-issues-moderate-update-for-libkcapi-330cca79</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-moderate-update-for-libkcapi-330cca79</guid>
-      <description><![CDATA[A moderate‑severity vulnerability in libkcapi affects Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and the Telecommunications Update Service. Red Hat Product Security rates the flaw moderate, with a CVSS base score listed in the CVE references but no public exploit. Apply the libkcapi update via RHEL 8.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:41:02 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93453">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Jackson Packages for RHEL 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94</guid>
-      <description><![CDATA[Red Hat released a security update for jackson-annotations, jackson-core, jackson-databind, jackson-jaxrs-providers, and jackson-modules-base on RHEL 9.4 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could enable remote code execution or unauthorized data disclosure via malformed JSON payloads. Red Hat recommends applying the update promptly; no workarounds are available, and users should confirm package versions after installation.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:39:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93444">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues libsoup Security Update for RHEL 9.2</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libsoup-security-update-for-rhel-9-672da2ea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libsoup-security-update-for-rhel-9-672da2ea</guid>
-      <description><![CDATA[Red Hat released a libsoup update on RHEL 9.2 Update Services for SAP Solutions, fixing a flaw that could allow remote code execution via malformed HTTP requests. The flaw is rated Important with a high CVSS score, and a public PoC demonstrates remote code execution. Red Hat has published the patch; administrators should apply it immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:37:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93447">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important libXtst Update for RHEL 9.2 SAP</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-libxtst-update-for-rhel-9-c562358a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libxtst-update-for-rhel-9-c562358a</guid>
-      <description><![CDATA[Red Hat issued an Important security update for libXtst on RHEL 9.2 Update Services for SAP Solutions, addressing flaws that could allow privilege escalation or denial of service. The advisory cites CVSS base scores for each vulnerability, but no explicit CVE identifiers are provided. Customers should install the latest libXtst package immediately to protect against the disclosed weaknesses.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:37:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93449">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues libsoup Update for RHEL 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libsoup-update-for-rhel-9-4-9fd8bf8c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libsoup-update-for-rhel-9-4-9fd8bf8c</guid>
-      <description><![CDATA[Red Hat released a security update for libsoup on RHEL 9.4 Update Services for SAP Solutions, addressing several vulnerabilities. The vulnerabilities could allow attackers to execute arbitrary code or cause denial of service through crafted HTTP requests. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify libsoup version after patching.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:30:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93445">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important libXtst Update for RHEL 10.0</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-libxtst-update-for-rhel-1-c05c27a5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libxtst-update-for-rhel-1-c05c27a5</guid>
-      <description><![CDATA[Red Hat released an Important security update for libXtst on RHEL 10.0 Extended Update Support, fixing vulnerabilities that could enable privilege escalation or denial of service. The advisory references CVSS base scores for each flaw, though no specific CVE identifiers are listed. Apply the latest libXtst package immediately to mitigate the disclosed weaknesses.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:26:30 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93448">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates python‑jwt for RHEL 8</title>
-      <link>https://secubuzz.com/news/red-hat-updates-python-jwt-for-rhel-8-8e81bf09</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-python-jwt-for-rhel-8-8e81bf09</guid>
-      <description><![CDATA[Red Hat released a security update for python‑jwt on RHEL 8, addressing a vulnerability that could affect application security. The advisory notes an Important security impact and references CVE links for each vulnerability, though no specific CVE ID is listed. Operators should apply the RHSA-2026:93440 update immediately to mitigate the risk, as the patch is available via RHEL update channels.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:03:24 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93440">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ISC Stormcast Podcast – Nov 2, 2026</title>
-      <link>https://secubuzz.com/news/isc-stormcast-podcast-nov-2-2026-b8998b3b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-nov-2-2026-b8998b3b</guid>
-      <description><![CDATA[The SANS Internet Storm Center released the ISC Stormcast podcast for Monday, November 2, 2026, providing a curated overview of the week’s most significant cyber events. The episode, available at https://isc.sans.edu/podcastdetail/10160, covers emerging threats, vulnerability trends, and defensive best practices discussed by industry experts. Listeners can download or stream the recording under a Creative Commons Attribution-Noncommercial 3.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:00:03 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33480">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical WebKit2GTK3 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-webkit2gtk3-security-upd-ccab73dc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-webkit2gtk3-security-upd-ccab73dc</guid>
-      <description><![CDATA[Red Hat released a critical update for webkit2gtk3 on RHEL 8.8 Update Services for SAP Solutions and RHEL 8.8 Telecommunications. The patch fixes multiple high‑severity vulnerabilities with CVSS scores that meet critical thresholds, with CVE references provided in the advisory. Administrators must apply the update promptly and confirm webkit2gtk3 is patched to prevent remote code execution.]]></description>
-      <pubDate>Mon, 02 Nov 2026 01:55:44 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93435">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Kernel-rt Update for RHEL 8</title>
-      <link>https://secubuzz.com/news/red-hat-issues-kernel-rt-update-for-rhel-8-04dc1c11</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-rt-update-for-rhel-8-04dc1c11</guid>
-      <description><![CDATA[Red Hat released a kernel-rt security update for RHEL 8, addressing multiple vulnerabilities referenced via CVE links. The update mitigates potential kernel-level exploits that could allow privilege escalation or denial of service, both of which could compromise system integrity. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify kernel version post-update.]]></description>
-      <pubDate>Mon, 02 Nov 2026 01:51:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93437">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
