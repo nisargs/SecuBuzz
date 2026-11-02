@@ -23,6 +23,29 @@ export function News() {
   const [vendorFilter, setVendorFilter] = useState<string>('ALL');
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
+  const [archiveResults, setArchiveResults] = useState<NewsBrief[]>([]);
+  const [archiveLoading, setArchiveLoading] = useState(false);
+  const [archiveSearched, setArchiveSearched] = useState(false);
+
+  useEffect(() => {
+    setArchiveResults([]);
+    setArchiveSearched(false);
+  }, [query]);
+
+  const handleSearchArchive = useCallback(() => {
+    if (!query.trim()) return;
+    setArchiveLoading(true);
+    setArchiveSearched(true);
+    fetch(`/api/news/search?q=${encodeURIComponent(query.trim())}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data?.results) {
+          setArchiveResults(data.results);
+        }
+      })
+      .catch((err) => console.error('Archive search failed:', err))
+      .finally(() => setArchiveLoading(false));
+  }, [query]);
   const [stackFilterActive, setStackFilterActive] = useState(false);
   const { news } = useLiveNews();
   const myStack = useMyStack();
@@ -549,8 +572,46 @@ export function News() {
             <p className="mt-2 text-muted">
               {stackFilterActive && !myStack.hasConfiguredStack
                 ? 'Select your enterprise vendors or pin CVEs in the sidebar on the right.'
-                : 'Try a different keyword, or clear the filters.'}
+                : 'Try a different keyword, clear the filters, or search the historical archive.'}
             </p>
+
+            {query.trim().length >= 2 && !stackFilterActive && (
+              <div className="mt-6 flex flex-col items-center w-full">
+                {!archiveSearched ? (
+                  <button
+                    type="button"
+                    onClick={handleSearchArchive}
+                    disabled={archiveLoading}
+                    className="inline-flex items-center gap-2 rounded-md border border-accent/40 bg-accent/10 px-4 py-2 text-sm font-medium text-accent hover:bg-accent/20 transition-colors cursor-pointer">
+                    {archiveLoading ? 'Searching archive...' : `Search Historical Archive for "${query}"`}
+                  </button>
+                ) : archiveLoading ? (
+                  <p className="text-sm font-mono text-muted">Searching historical archive...</p>
+                ) : archiveResults.length > 0 ? (
+                  <div className="w-full text-left mt-8">
+                    <div className="flex items-center gap-2 mb-4 border-b border-line pb-2">
+                      <span className="inline-flex items-center rounded border border-line bg-surface-elevated/40 px-2 py-0.5 text-xs font-mono font-medium text-accent">
+                        HISTORICAL ARCHIVE ({archiveResults.length})
+                      </span>
+                      <span className="text-xs text-subtle">Permanent Threat Intelligence Archive</span>
+                    </div>
+                    <div className="space-y-3">
+                      {archiveResults.map((brief) => (
+                        <NewsBriefItem
+                          key={brief.slug}
+                          brief={brief}
+                          isWatchingCve={myStack.isWatchingCve}
+                          onToggleWatchCve={myStack.toggleWatchCve}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-sm text-subtle mt-2">No archived stories found matching "${query}".</p>
+                )}
+              </div>
+            )}
+
             <button
               type="button"
               onClick={() => {
@@ -560,7 +621,7 @@ export function News() {
                 setStackFilterActive(false);
                 setPage(1);
               }}
-              className="mt-6 rounded-md border border-line px-4 py-2 text-sm text-ink transition-colors duration-150 ease-out hover:bg-surface">
+              className="mt-6 rounded-md border border-line px-4 py-2 text-sm text-ink transition-colors duration-150 ease-out hover:bg-surface cursor-pointer">
               Clear filters
             </button>
           </div>

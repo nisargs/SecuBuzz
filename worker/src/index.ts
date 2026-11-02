@@ -782,6 +782,145 @@ export default {
         });
       }
 
+      // API: Search archived news in D1
+      if (url.pathname === '/api/news/search') {
+        const q = (url.searchParams.get('q') || '').trim();
+        if (!q) {
+          return jsonResponse({ count: 0, results: [] });
+        }
+        const term = `%${q}%`;
+        const { results } = await env.DB.prepare(
+          `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+           FROM articles
+           WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ?
+           ORDER BY published_at DESC
+           LIMIT 50;`
+        ).bind(term, term, term).all();
+
+        const formatted = (results || []).map((r: any) => ({
+          slug: r.slug,
+          title: r.title,
+          headline: r.title,
+          summary: r.summary,
+          category: r.category,
+          severity: r.severity,
+          source: r.source,
+          sourceName: r.source,
+          sourceUrl: r.source_url,
+          url: r.source_url,
+          publishedAt: r.published_at,
+          cves: JSON.parse(r.cves_json || '[]'),
+          additionalSources: JSON.parse(r.additional_sources_json || '[]'),
+          aliases: JSON.parse(r.aliases_json || '[]'),
+        }));
+
+        return jsonResponse({ count: formatted.length, results: formatted }, 200, {
+          'Cache-Control': 'public, max-age=60, s-maxage=300',
+        });
+      }
+
+      // API: Get single news article by slug (checks active feed then D1 archive)
+      if (url.pathname.startsWith('/api/news/')) {
+        const reqSlug = url.pathname.replace(/^\/api\/news\//, '').replace(/\/+$/, '').toLowerCase();
+        if (!reqSlug) return errorResponse('Missing slug', 400);
+
+        // 1. Check in-memory / active feed
+        const articles = await getArticles();
+        const inFeed = articles.find(a => {
+          const headline = a.headline || a.title || '';
+          const articleId = a.id || a.sourceUrl || a.url || headline;
+          const artSlug = (a.slug || createSlug(headline, articleId)).toLowerCase();
+          if (artSlug === reqSlug) return true;
+          if (a.aliases && a.aliases.some((al: string) => al.toLowerCase() === reqSlug)) return true;
+          const base = headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+          return base && reqSlug === base;
+        });
+
+        if (inFeed) {
+          return jsonResponse({ article: inFeed }, 200, {
+            'Cache-Control': 'public, max-age=300, s-maxage=600',
+          });
+        }
+
+        // 2. Query D1
+        const row = await env.DB.prepare(
+          `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+           FROM articles
+           WHERE slug = ? OR aliases_json LIKE ?
+           LIMIT 1;`
+        ).bind(reqSlug, `%"${reqSlug}"%`).first<any>();
+
+        if (row) {
+          const article = {
+            slug: row.slug,
+            title: row.title,
+            headline: row.title,
+            summary: row.summary,
+            category: row.category,
+            severity: row.severity,
+            source: row.source,
+            sourceName: row.source,
+            sourceUrl: row.source_url,
+            url: row.source_url,
+            publishedAt: row.published_at,
+            cves: JSON.parse(row.cves_json || '[]'),
+            additionalSources: JSON.parse(row.additional_sources_json || '[]'),
+            aliases: JSON.parse(row.aliases_json || '[]'),
+          };
+          return jsonResponse({ article }, 200, {
+            'Cache-Control': 'public, max-age=3600, s-maxage=86400',
+          });
+        }
+
+        return errorResponse('Article not found', 404);
+      }
+
+      // API: Ingestion Hook to Archive Synthesized Stories
+      if (url.pathname === '/api/articles/archive' && request.method === 'POST') {
+        if (!isAuthorized(request, env)) {
+          return errorResponse('Unauthorized', 401);
+        }
+
+        let body: any;
+        try {
+          body = await request.json();
+        } catch {
+          return errorResponse('Invalid JSON body', 400);
+        }
+
+        const { articles } = body ?? {};
+        if (!Array.isArray(articles) || articles.length === 0) {
+          return jsonResponse({ success: true, count: 0, message: 'No articles provided' });
+        }
+
+        const statements = articles.map((a: any) => {
+          const title = a.title || a.headline || '';
+          const id = a.id || a.sourceUrl || a.url || title;
+          const slug = a.slug || createSlug(title, id);
+          const summary = a.summary || '';
+          const category = a.category || 'GENERAL';
+          const severity = a.severity || 'LOW';
+          const source = a.source || a.sourceName || '';
+          const sourceUrl = a.sourceUrl || a.url || '';
+          const publishedAt = a.publishedAt || (a.pubDate ? new Date(a.pubDate).toISOString() : new Date().toISOString());
+          const cvesJson = JSON.stringify(a.cves || []);
+          const additionalSourcesJson = JSON.stringify(a.additionalSources || []);
+          const aliasesJson = JSON.stringify(a.aliases || []);
+
+          return env.DB.prepare(
+            `INSERT OR REPLACE INTO articles (slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);`
+          ).bind(slug, title, summary, category, severity, source, sourceUrl, publishedAt, cvesJson, additionalSourcesJson, aliasesJson);
+        });
+
+        for (let i = 0; i < statements.length; i += 100) {
+          const chunk = statements.slice(i, i + 100);
+          await env.DB.batch(chunk);
+        }
+
+        return jsonResponse({ success: true, count: articles.length });
+      }
+
       // Redirect legacy .html URLs to clean SPA paths
       if (url.pathname.endsWith('.html') && url.pathname !== '/index.html') {
         const cleanPath = url.pathname.replace(/\.html$/, '');
@@ -1324,7 +1463,56 @@ export default {
           const rawHtml = await assetRes.text();
           const [articles, cisaAdv] = await Promise.all([getArticles(), getKevAdvisories()]);
           const advisories = [...cisaAdv, ...GITHUB_ADVISORIES];
-          const isRouteValid = isKnownSpaRoute(url.pathname, articles, advisories);
+
+          let articleListForMeta = articles;
+          let isArchivedMatch = false;
+
+          if (url.pathname.startsWith('/news/')) {
+            const rawSlug = url.pathname.replace(/^\/news\//, '').replace(/\/+$/, '').toLowerCase();
+            const slug = decodeURIComponent(rawSlug).replace(/\.html?$/i, '');
+            const inFeed = articles.some(a => {
+              const headline = a.headline || a.title || '';
+              const articleId = a.id || a.sourceUrl || a.url || headline;
+              const artSlug = (a.slug || createSlug(headline, articleId)).toLowerCase();
+              if (artSlug === slug) return true;
+              if (a.aliases && a.aliases.some((al: string) => al.toLowerCase() === slug)) return true;
+              const base = headline.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 50).replace(/^-+|-+$/g, '');
+              return base && slug === base;
+            });
+
+            if (!inFeed && env.DB) {
+              try {
+                const row = await env.DB.prepare(
+                  'SELECT * FROM articles WHERE slug = ? OR aliases_json LIKE ? LIMIT 1'
+                ).bind(slug, `%"${slug}"%`).first<any>();
+
+                if (row) {
+                  isArchivedMatch = true;
+                  const archivedArt: ArticleItem = {
+                    slug: row.slug,
+                    title: row.title,
+                    headline: row.title,
+                    summary: row.summary,
+                    category: row.category,
+                    severity: row.severity,
+                    source: row.source,
+                    sourceName: row.source,
+                    sourceUrl: row.source_url,
+                    url: row.source_url,
+                    publishedAt: row.published_at,
+                    cves: JSON.parse(row.cves_json || '[]'),
+                    additionalSources: JSON.parse(row.additional_sources_json || '[]'),
+                    aliases: JSON.parse(row.aliases_json || '[]'),
+                  };
+                  articleListForMeta = [archivedArt, ...articles];
+                }
+              } catch (e) {
+                console.error('Error querying D1 for archived article meta:', e);
+              }
+            }
+          }
+
+          const isRouteValid = isArchivedMatch || isKnownSpaRoute(url.pathname, articles, advisories);
 
           if (!isRouteValid) {
             let notFoundHtml = rawHtml;
@@ -1344,7 +1532,7 @@ export default {
 
           let enrichedHtml = rawHtml;
           try {
-            enrichedHtml = injectMetaTags(rawHtml, url.pathname, articles, advisories);
+            enrichedHtml = injectMetaTags(rawHtml, url.pathname, articleListForMeta, advisories);
           } catch (metaErr) {
             console.error('Failed to inject meta tags for path:', url.pathname, metaErr);
           }

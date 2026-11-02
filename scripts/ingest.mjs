@@ -3114,6 +3114,31 @@ await writeJsonFile(
 );
 
 // -----------------------------------------------------------------------------
+// CLOUDFLARE D1 PERMANENT THREAT INTELLIGENCE ARCHIVE
+// -----------------------------------------------------------------------------
+
+if (uniqueGeneratedArticles.length > 0 && PUSH_ADMIN_SECRET) {
+  try {
+    const archiveUrl = PUSH_TOKEN_API_URL.replace(/\/api\/push-tokens$/, '/api/articles/archive');
+    const resp = await fetch(archiveUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-admin-key": PUSH_ADMIN_SECRET,
+      },
+      body: JSON.stringify({ articles: uniqueGeneratedArticles }),
+    });
+    if (resp.ok) {
+      console.log(`[Archive] Successfully synced ${uniqueGeneratedArticles.length} new articles to Cloudflare D1 permanent archive.`);
+    } else {
+      console.warn(`[Archive] Warning: Cloudflare D1 archive sync returned HTTP ${resp.status}`);
+    }
+  } catch (err) {
+    console.warn(`[Archive] Warning: Failed to sync archive to D1: ${err.message}`);
+  }
+}
+
+// -----------------------------------------------------------------------------
 // PUSH NOTIFICATIONS BROADCAST & USER PREFERENCE FILTERING
 // -----------------------------------------------------------------------------
 

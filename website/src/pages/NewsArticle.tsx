@@ -18,9 +18,11 @@ export function NewsArticle() {
   const [copiedSlack, setCopiedSlack] = useState(false);
   const { news, loading } = useLiveNews();
   const { advisories } = useLiveAdvisories();
+  const [archivedBrief, setArchivedBrief] = useState<any | null>(null);
+  const [archiveLoading, setArchiveLoading] = useState(false);
 
   // Match current slug or alias from deduplicated stories (exact matching to eliminate hash collisions)
-  const brief = news.find((b) => {
+  const briefFromFeed = news.find((b) => {
     if (!slug) return false;
     const target = slug.toLowerCase();
     const s = b.slug.toLowerCase();
@@ -33,6 +35,44 @@ export function NewsArticle() {
     return false;
   });
 
+  // If not found in active feed, fetch from permanent D1 archive
+  useEffect(() => {
+    if (briefFromFeed || loading || !slug) return;
+    let isMounted = true;
+    setArchiveLoading(true);
+
+    fetch(`/api/news/${encodeURIComponent(slug)}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (isMounted && data?.article) {
+          const a = data.article;
+          setArchivedBrief({
+            slug: a.slug,
+            title: a.title || a.headline,
+            summary: a.summary,
+            category: a.category,
+            severity: a.severity,
+            source: a.source || a.sourceName,
+            sourceUrl: a.sourceUrl || a.url,
+            publishedAt: a.publishedAt,
+            cves: a.cves || [],
+            additionalSources: a.additionalSources || [],
+            aliases: a.aliases || [],
+          });
+        }
+      })
+      .catch((err) => console.error('Failed to load archived article:', err))
+      .finally(() => {
+        if (isMounted) setArchiveLoading(false);
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [briefFromFeed, loading, slug]);
+
+  const brief = briefFromFeed || archivedBrief;
+
   // Keep browser address bar in sync with canonical slug if accessed via a legacy or short alias
   useEffect(() => {
     if (!brief || !slug) return;
@@ -44,7 +84,7 @@ export function NewsArticle() {
   }, [brief, slug]);
 
   if (!brief) {
-    if (loading) {
+    if (loading || archiveLoading) {
       return (
         <div className="mx-auto max-w-site px-5 py-24 text-center">
           <p className="text-sm font-mono text-muted">Retrieving intelligence brief...</p>

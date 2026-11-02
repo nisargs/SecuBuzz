@@ -66,3 +66,23 @@ CREATE TABLE IF NOT EXISTS notification_opens (
 CREATE INDEX IF NOT EXISTS idx_notification_opens_date ON notification_opens(opened_at);
 CREATE INDEX IF NOT EXISTS idx_notification_opens_article ON notification_opens(article_id);
 
+
+-- Permanent Threat Intelligence Archive (Guarantees zero-404 and historical search)
+CREATE TABLE IF NOT EXISTS articles (
+  slug TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  summary TEXT NOT NULL,
+  category TEXT,
+  severity TEXT,
+  source TEXT,
+  source_url TEXT,
+  published_at TEXT,
+  cves_json TEXT,
+  additional_sources_json TEXT,
+  aliases_json TEXT,
+  created_at TEXT DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_articles_published_at ON articles(published_at);
+CREATE INDEX IF NOT EXISTS idx_articles_category ON articles(category);
+CREATE INDEX IF NOT EXISTS idx_articles_severity ON articles(severity);
