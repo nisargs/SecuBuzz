@@ -127,14 +127,14 @@
     - **Retry Preservation**: Rejected candidates are NEVER added to `seenUrls`, preserving them for retry on subsequent hourly AI runs.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.4 (Version Code 10 - In Google Play Review as of Nov 1, 2026):**
+- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a199f0-4af4-785b-abda-7291bc213f13` / Group `b730e004-e8a2-4d70-9353-892607b5bec9`):**
   - **My Stack Triage Hub & CVE Watchlist**:
     - Enterprise vendor filtering across 16+ enterprise IT/security vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS, Red Hat, Ivanti, Citrix, etc.).
     - In-Story Entity Intelligence: Tappable CVE and vendor chips in headlines and summaries across news and advisories with direct triage, feed filtering, and watchlist pinning.
     - Targeted Push Notifications: Added user preference toggle to restrict alerts strictly to configured stack vendors and watched CVEs.
     - Unified What's New modal and What's New indicator across website and mobile app.
-  - **PENDING ACTION ITEM FOR NEXT ACTIVE CHAT**:
-    - 1. **Mobile OTA Update**: Prompt user to apply the 3 CVE stub synthesis fixes (unknown severity, explicit unknown dateAdded, unknown product fallback) to mobile (`src/app/(tabs)/advisories.tsx`, `src/models/cve.ts`, `src/theme/theme.ts`) and ship via pure-JS OTA update (`eas update --branch production`) once Google Play approves v1.0.4.
+  - **Completed (Nov 1, 2026)**:
+    - 1. **Mobile OTA Update**: Shipped group `b730e004-e8a2-4d70-9353-892607b5bec9` / update ID `01a199f0-4af4-785b-abda-7291bc213f13` (safe area entity modals + CVE stub synthesis).
     - 2. **Repository Visibility**: Verified switched back to Private (Completed Nov 1, 2026).
 - **Release v1.0.3 (Version Code 9 / OTA Active `01a194ca-1a2a-74cc-a9fc-b93d7ef7fd9b` / Group `b41ed095-de0a-4027-9548-ea1e2b4e104f` / Worker `0ae6ffd6-7ab7-48cb-897d-8a0d62587fab`):**
   - **Bookmark Persistence & Data Loss Prevention (`SavedArticlesContext.tsx`)**:
