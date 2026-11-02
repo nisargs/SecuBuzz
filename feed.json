@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+    "title": "VOLTA Infostealer Leverages LLMs to Rank Victims",
+    "headline": "VOLTA Infostealer Leverages LLMs to Rank Victims",
+    "summary": "A new infostealer, VOLTA-AUTODOXER, harvests credentials and browser cookies from Chromium-based browsers, Outlook profiles, and Slack workspaces. The malware employs language models such as Claude, Gemini, and Kimi to evaluate stolen data and prioritize victims by financial value. Security teams should deploy endpoint detection and response solutions, block known VOLTA download domains, and enforce multi‑factor authentication to mitigate credential theft.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-02T05:51:07.000Z",
+    "ingestedAt": "2026-11-02T06:20:22.628Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93460",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93460",
     "title": "Red Hat Releases PostgreSQL 16 Security Update",
@@ -16,6 +32,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93457",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93457",
+    "title": ".NET 8.0 Update Addresses Important Security Issues",
+    "headline": ".NET 8.0 Update Addresses Important Security Issues",
+    "summary": "Red Hat released a security update for .NET 8.0 on Enterprise Linux 9.6 Extended Update Support to address multiple vulnerabilities. The update is rated Important by Red Hat Product Security, and each vulnerability’s CVSS base score is listed in the references. Administrators should apply the patch immediately, verify the CVSS scores, and monitor for any related exploitation attempts.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T05:32:35.000Z",
+    "ingestedAt": "2026-11-02T06:20:22.628Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93457",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/",
     "title": "Trust Onion Introduces Rotating Codeword Caller Verification",
@@ -29,6 +61,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93467",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93467",
+    "title": "nginx Update Fixes Important Security Vulnerabilities",
+    "headline": "nginx Update Fixes Important Security Vulnerabilities",
+    "summary": "Red Hat issued a security update for nginx on Enterprise Linux 9.6 Extended Update Support to remediate several vulnerabilities. The update carries an Important impact rating, and each affected CVE’s CVSS base score is provided in the references section. Operators should install the patch, review the CVSS scores, and ensure nginx is not exposed to untrusted networks.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T05:30:29.000Z",
+    "ingestedAt": "2026-11-02T06:20:22.628Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93467",
     "additionalSources": []
   },
   {
@@ -292,6 +340,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93449",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93449",
+    "title": "Red Hat Issues Important libXtst Update for RHEL 9.2 SAP",
+    "headline": "Red Hat Issues Important libXtst Update for RHEL 9.2 SAP",
+    "summary": "Red Hat issued an Important security update for libXtst on RHEL 9.2 Update Services for SAP Solutions, addressing flaws that could allow privilege escalation or denial of service. The advisory cites CVSS base scores for each vulnerability, but no explicit CVE identifiers are provided. Customers should install the latest libXtst package immediately to protect against the disclosed weaknesses.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T02:37:06.000Z",
+    "ingestedAt": "2026-11-02T06:20:30.863Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93449",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93445",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93445",
     "title": "Red Hat Issues libsoup Update for RHEL 9.4",
@@ -308,6 +372,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93448",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93448",
+    "title": "Red Hat Issues Important libXtst Update for RHEL 10.0",
+    "headline": "Red Hat Issues Important libXtst Update for RHEL 10.0",
+    "summary": "Red Hat released an Important security update for libXtst on RHEL 10.0 Extended Update Support, fixing vulnerabilities that could enable privilege escalation or denial of service. The advisory references CVSS base scores for each flaw, though no specific CVE identifiers are listed. Apply the latest libXtst package immediately to mitigate the disclosed weaknesses.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T02:26:30.000Z",
+    "ingestedAt": "2026-11-02T06:20:30.863Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93448",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93440",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93440",
     "title": "Red Hat Updates python‑jwt for RHEL 8",
@@ -321,6 +401,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:93440",
+    "additionalSources": []
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33480",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33480",
+    "title": "ISC Stormcast Podcast – Nov 2, 2026",
+    "headline": "ISC Stormcast Podcast – Nov 2, 2026",
+    "summary": "The SANS Internet Storm Center released the ISC Stormcast podcast for Monday, November 2, 2026, providing a curated overview of the week’s most significant cyber events. The episode, available at https://isc.sans.edu/podcastdetail/10160, covers emerging threats, vulnerability trends, and defensive best practices discussed by industry experts. Listeners can download or stream the recording under a Creative Commons Attribution-Noncommercial 3.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-02T02:00:03.000Z",
+    "ingestedAt": "2026-11-02T06:20:30.863Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33480",
     "additionalSources": []
   },
   {

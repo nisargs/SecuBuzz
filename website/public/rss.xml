@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 05:49:02 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 06:22:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>VOLTA Infostealer Leverages LLMs to Rank Victims</title>
+      <link>https://secubuzz.com/news/volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1</guid>
+      <description><![CDATA[A new infostealer, VOLTA-AUTODOXER, harvests credentials and browser cookies from Chromium-based browsers, Outlook profiles, and Slack workspaces. The malware employs language models such as Claude, Gemini, and Kimi to evaluate stolen data and prioritize victims by financial value. Security teams should deploy endpoint detection and response solutions, block known VOLTA download domains, and enforce multi‑factor authentication to mitigate credential theft.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:51:07 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Red Hat Releases PostgreSQL 16 Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-postgresql-16-security-update-9536fbdb</link>
@@ -17,6 +26,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>.NET 8.0 Update Addresses Important Security Issues</title>
+      <link>https://secubuzz.com/news/net-8-0-update-addresses-important-security-issue-9930d43d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/net-8-0-update-addresses-important-security-issue-9930d43d</guid>
+      <description><![CDATA[Red Hat released a security update for .NET 8.0 on Enterprise Linux 9.6 Extended Update Support to address multiple vulnerabilities. The update is rated Important by Red Hat Product Security, and each vulnerability’s CVSS base score is listed in the references. Administrators should apply the patch immediately, verify the CVSS scores, and monitor for any related exploitation attempts.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:32:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93457">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Trust Onion Introduces Rotating Codeword Caller Verification</title>
       <link>https://secubuzz.com/news/trust-onion-introduces-rotating-codeword-caller-ve-1370a317</link>
       <guid isPermaLink="true">https://secubuzz.com/news/trust-onion-introduces-rotating-codeword-caller-ve-1370a317</guid>
@@ -24,6 +42,15 @@
       <pubDate>Mon, 02 Nov 2026 05:30:38 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>nginx Update Fixes Important Security Vulnerabilities</title>
+      <link>https://secubuzz.com/news/nginx-update-fixes-important-security-vulnerabilit-302ab5d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nginx-update-fixes-important-security-vulnerabilit-302ab5d8</guid>
+      <description><![CDATA[Red Hat issued a security update for nginx on Enterprise Linux 9.6 Extended Update Support to remediate several vulnerabilities. The update carries an Important impact rating, and each affected CVE’s CVSS base score is provided in the references section. Operators should install the patch, review the CVSS scores, and ensure nginx is not exposed to untrusted networks.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:30:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93467">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Aur0ra Ransomware Uses AI Agents for Network Infiltration</title>
@@ -170,12 +197,30 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Important libXtst Update for RHEL 9.2 SAP</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-libxtst-update-for-rhel-9-c562358a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libxtst-update-for-rhel-9-c562358a</guid>
+      <description><![CDATA[Red Hat issued an Important security update for libXtst on RHEL 9.2 Update Services for SAP Solutions, addressing flaws that could allow privilege escalation or denial of service. The advisory cites CVSS base scores for each vulnerability, but no explicit CVE identifiers are provided. Customers should install the latest libXtst package immediately to protect against the disclosed weaknesses.]]></description>
+      <pubDate>Mon, 02 Nov 2026 02:37:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93449">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Issues libsoup Update for RHEL 9.4</title>
       <link>https://secubuzz.com/news/red-hat-issues-libsoup-update-for-rhel-9-4-9fd8bf8c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libsoup-update-for-rhel-9-4-9fd8bf8c</guid>
       <description><![CDATA[Red Hat released a security update for libsoup on RHEL 9.4 Update Services for SAP Solutions, addressing several vulnerabilities. The vulnerabilities could allow attackers to execute arbitrary code or cause denial of service through crafted HTTP requests. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify libsoup version after patching.]]></description>
       <pubDate>Mon, 02 Nov 2026 02:30:55 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93445">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important libXtst Update for RHEL 10.0</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-libxtst-update-for-rhel-1-c05c27a5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-libxtst-update-for-rhel-1-c05c27a5</guid>
+      <description><![CDATA[Red Hat released an Important security update for libXtst on RHEL 10.0 Extended Update Support, fixing vulnerabilities that could enable privilege escalation or denial of service. The advisory references CVSS base scores for each flaw, though no specific CVE identifiers are listed. Apply the latest libXtst package immediately to mitigate the disclosed weaknesses.]]></description>
+      <pubDate>Mon, 02 Nov 2026 02:26:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93448">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -186,6 +231,15 @@
       <pubDate>Mon, 02 Nov 2026 02:03:24 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93440">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ISC Stormcast Podcast – Nov 2, 2026</title>
+      <link>https://secubuzz.com/news/isc-stormcast-podcast-nov-2-2026-b8998b3b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-nov-2-2026-b8998b3b</guid>
+      <description><![CDATA[The SANS Internet Storm Center released the ISC Stormcast podcast for Monday, November 2, 2026, providing a curated overview of the week’s most significant cyber events. The episode, available at https://isc.sans.edu/podcastdetail/10160, covers emerging threats, vulnerability trends, and defensive best practices discussed by industry experts. Listeners can download or stream the recording under a Creative Commons Attribution-Noncommercial 3.]]></description>
+      <pubDate>Mon, 02 Nov 2026 02:00:03 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33480">SANS Internet Storm Center</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Releases Critical WebKit2GTK3 Security Update</title>
@@ -402,60 +456,6 @@
       <pubDate>Sun, 01 Nov 2026 08:51:31 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Polymarket Traders Lose $2.7M to Hijacked Script</title>
-      <link>https://secubuzz.com/news/polymarket-traders-lose-2-7m-to-hijacked-script-298b84a8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/polymarket-traders-lose-2-7m-to-hijacked-script-298b84a8</guid>
-      <description><![CDATA[Polymarket suffered a $2.7 million theft after attackers hijacked a third‑party DebugBear script that replaced a legitimate page‑speed script on the site. The malicious code exfiltrated signed‑in traders’ positions and redirected their funds to attacker-controlled wallets, totaling approximately $2.64 million in crypto. Polymarket is refunding affected wallets and recommends users verify script integrity and monitor account activity for anomalies.]]></description>
-      <pubDate>Sun, 01 Nov 2026 07:25:40 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>FBI Links Binance Heist to North Korean Hackers</title>
-      <link>https://secubuzz.com/news/fbi-links-binance-heist-to-north-korean-hackers-80b96de3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-links-binance-heist-to-north-korean-hackers-80b96de3</guid>
-      <description><![CDATA[The FBI confirmed that North Korean state-sponsored hackers known as TraderTraitor executed a $6.3 billion cryptocurrency theft from Binance. The attack leveraged compromised API keys and privileged credentials to move millions of USDT and other tokens, creating the largest recorded crypto heist. Binance has tightened API key management and urged exchanges to enforce multi‑factor authentication and monitor anomalous transfer activity.]]></description>
-      <pubDate>Sun, 01 Nov 2026 07:03:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>NetamLoader Targets Asian Government Windows 10 via .NET Injection</title>
-      <link>https://secubuzz.com/news/netamloader-targets-asian-government-windows-10-vi-84864ee0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/netamloader-targets-asian-government-windows-10-vi-84864ee0</guid>
-      <description><![CDATA[NetamLoader malware launched a sophisticated chain against a custom Windows 10 build used by Asian governments via an undocumented .NET loader. It injects malicious assemblies, granting attackers system‑level code execution that can compromise classified data and disrupt operations. Apply vendor patches, enforce least‑privilege .NET policies, and monitor for anomalous assembly loading.]]></description>
-      <pubDate>Sun, 01 Nov 2026 07:02:58 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/netamloader-malware-targets-government.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>North Korean Hackers Stole $6B from Binance</title>
-      <link>https://secubuzz.com/news/north-korean-hackers-stole-6b-from-binance-c5f668e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-stole-6b-from-binance-c5f668e2</guid>
-      <description><![CDATA[FBI confirmed North Korean hackers stole over $6 billion in virtual assets from Binance on October 29, 2026. The operation, dubbed 'TraderTraitor', links the theft to a series of attacks on digital asset platforms attributed to the same group. Security teams should monitor for related credential theft and apply multi‑factor authentication to mitigate further compromise.]]></description>
-      <pubDate>Sun, 01 Nov 2026 05:48:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fbi-confirms-north-korean-hackers/">Cyber Security News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Wave of Attacks Hits PHP, Binance, AI Tools</title>
-      <link>https://secubuzz.com/news/wave-of-attacks-hits-php-binance-ai-tools-89104227</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wave-of-attacks-hits-php-binance-ai-tools-89104227</guid>
-      <description><![CDATA[October saw a surge of cyberattacks targeting PHP, Binance, LiteLLM, and other high‑profile entities, including government records and grocery chains. The attacks exploited multiple vulnerabilities, with Binance reporting billions of unauthorized transactions, PHP issuing emergency patches, and a malicious LiteLLM release exposing developer credentials. Affected vendors released emergency fixes; security teams should apply patches promptly and monitor for credential compromise.]]></description>
-      <pubDate>Sun, 01 Nov 2026 05:24:22 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hacktober-cyberattack-wave/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:90500: Important: java-17-openjdk security update for RHEL 9</title>
-      <link>https://secubuzz.com/news/rhsa-2026-90500-important-java-17-openjdk-security-6e4abd59</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-90500-important-java-17-openjdk-security-6e4abd59</guid>
-      <description><![CDATA[An update for java-17-openjdk is now available for Red Hat Enterprise Linux 9.2 Extended Update Support, Red Hat Enterprise Linux 9.4 Extended Update Support, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Sat, 31 Oct 2026 22:50:24 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:90500">Red Hat Security Advisories</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
