@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 21:44:48 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 22:44:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Ansible Automation Platform 2.5 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-ansible-automation-platform-2-5-security-u-b8a34741</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-ansible-automation-platform-2-5-security-u-b8a34741</guid>
+      <description><![CDATA[Red Hat released an important security and bug fix update for Ansible Automation Platform 2.5. The update addresses multiple vulnerabilities with a security impact rated as Important, and each CVE’s CVSS base score is provided in the references. Administrators should apply the update promptly to mitigate the identified issues and consult the CVE links for detailed patch information.]]></description>
+      <pubDate>Mon, 02 Nov 2026 22:20:11 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94100">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Ansible 2.6 Security Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-ansible-2-6-security-update-released-e35b03c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-ansible-2-6-security-update-released-e35b03c3</guid>
+      <description><![CDATA[Red Hat released a security update for Ansible Automation Platform 2.6 to fix multiple vulnerabilities in its automation modules. The patch fixes issues rated Important on the CVSS scale, as listed in the CVE references, stopping privilege escalation. Red Hat urges users to apply the update immediately and confirm the new version via the product security portal.]]></description>
+      <pubDate>Mon, 02 Nov 2026 22:18:50 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94101">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Chinese Hackers Deploy ARTEX AI Against 200 Organizations</title>
       <link>https://secubuzz.com/news/chinese-hackers-deploy-artex-ai-against-200-organi-fb186eba</link>
@@ -215,6 +233,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Security Update for python‑urllib3</title>
+      <link>https://secubuzz.com/news/red-hat-issues-security-update-for-python-urllib3-ab89bc86</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-update-for-python-urllib3-ab89bc86</guid>
+      <description><![CDATA[Red Hat released a security update for python‑urllib3 on RHEL 10, fixing multiple library vulnerabilities. The update is rated Important, with CVSS base scores linked to CVE entries, though no exploitation has been observed. Apply the patch immediately and review the CVSS scores for each CVE to gauge residual risk.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:37:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:85930">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Kernel Update for RHEL 10.2</title>
       <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-2-978cf2ac</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-2-978cf2ac</guid>
@@ -303,6 +330,15 @@
       <pubDate>Mon, 02 Nov 2026 14:30:00 GMT</pubDate>
       <source url="https://therecord.media/ukraine-hackers-russia-alert-system">The Record</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>RHSA-2026:92363: Important: firefox security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-92363-important-firefox-security-update-1991f863</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-92363-important-firefox-security-update-1991f863</guid>
+      <description><![CDATA[An update for firefox is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:28:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92363">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hackers alter supermarket refrigeration temperatures remotely</title>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 12:48:28 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93668">Red Hat Security Advisories</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Trezor Alerts Possible Seed‑Stealing Implant in Safe 5</title>
-      <link>https://secubuzz.com/news/trezor-alerts-possible-seed-stealing-implant-in-sa-53d8f55a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trezor-alerts-possible-seed-stealing-implant-in-sa-53d8f55a</guid>
-      <description><![CDATA[Trezor warned that Safe 5 wallets sold by reseller CryptoBilis may contain a hidden implant that steals the device’s recovery phrase. The implant could compromise the seed, enabling attackers to access stored cryptocurrency funds, though no confirmed exploitation has been reported. Trezor advises users to verify device authenticity, update firmware to the latest version, and avoid purchasing from unverified resellers.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:48:04 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/trezor-hardware-wallet-implant-cryptobilis/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93617: Important: opentelemetry-collector security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93617-important-opentelemetry-collector-08a99efe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93617-important-opentelemetry-collector-08a99efe</guid>
-      <description><![CDATA[An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:47:38 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93617">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GitLab Servers Exposed to Active RCE Exploitation</title>
-      <link>https://secubuzz.com/news/gitlab-servers-exposed-to-active-rce-exploitation-ddd8d18c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-servers-exposed-to-active-rce-exploitation-ddd8d18c</guid>
-      <description><![CDATA[A maximum‑severity flaw in GitLab’s web interface remains unpatched on more than 1,000 Internet‑exposed servers, enabling remote code execution. The vulnerability permits unauthenticated RCE via crafted HTTP requests, and active exploits have been observed, allowing attackers to run arbitrary code. GitLab urges administrators to apply the latest patch, disable exposed services, and verify current releases to mitigate the risk.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:47:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel-RT Bug Fix for RHEL 8</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-bug-fix-for-rhel-8-a484d2f3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-bug-fix-for-rhel-8-a484d2f3</guid>
-      <description><![CDATA[Red Hat issued a kernel-rt update for Red Enterprise Linux 8 to address a critical bug. The update resolves a kernel-rt race condition that could allow local privilege escalation, though no public exploit has been reported. Customers should apply the RHSA-2026:93670 package immediately to mitigate potential privilege escalation risks system.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:37:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93670">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

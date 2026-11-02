@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-ansible-automation-platform-2-5-security-u-b8a34741",
+    "title": "Red Hat Ansible Automation Platform 2.5 Security Update",
+    "summary": "Red Hat released an important security and bug fix update for Ansible Automation Platform 2.5. The update addresses multiple vulnerabilities with a security impact rated as Important, and each CVE’s CVSS base score is provided in the references. Administrators should apply the update promptly to mitigate the identified issues and consult the CVE links for detailed patch information.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94100",
+    "publishedAt": "2026-11-02T22:20:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-ansible-automation-platform-2-5-security-u",
+      "article-b8a34741",
+      "b8a34741",
+      "red-hat-ansible-automation-platform-2-5-security-u-37d8c6",
+      "red-hat-ansible-automation-platform-2-5-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-ansible-2-6-security-update-released-e35b03c3",
+    "title": "Red Hat Ansible 2.6 Security Update Released",
+    "summary": "Red Hat released a security update for Ansible Automation Platform 2.6 to fix multiple vulnerabilities in its automation modules. The patch fixes issues rated Important on the CVSS scale, as listed in the CVE references, stopping privilege escalation. Red Hat urges users to apply the update immediately and confirm the new version via the product security portal.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94101",
+    "publishedAt": "2026-11-02T22:18:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-ansible-2-6-security-update-released",
+      "article-e35b03c3",
+      "e35b03c3",
+      "red-hat-ansible-2-6-security-update-released-37d8c6"
+    ]
+  },
+  {
     "slug": "chinese-hackers-deploy-artex-ai-against-200-organi-fb186eba",
     "title": "Chinese Hackers Deploy ARTEX AI Against 200 Organizations",
     "summary": "Chinese hackers used the open‑source ARTEX AI framework to launch automated attacks on more than 200 organizations across 14 countries. ARTEX orchestrates multi‑agent reconnaissance and credential harvesting, enabling rapid, low‑interaction exploitation without a specific CVE. Security teams should monitor for ARTEX activity, block known command‑and‑control endpoints, and enforce strict credential hygiene.",
@@ -446,6 +483,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-security-update-for-python-urllib3-ab89bc86",
+    "title": "Red Hat Issues Security Update for python‑urllib3",
+    "summary": "Red Hat released a security update for python‑urllib3 on RHEL 10, fixing multiple library vulnerabilities. The update is rated Important, with CVSS base scores linked to CVE entries, though no exploitation has been observed. Apply the patch immediately and review the CVSS scores for each CVE to gauge residual risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:85930",
+    "publishedAt": "2026-11-02T15:37:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-security-update-for-python-urllib3",
+      "article-ab89bc86",
+      "ab89bc86",
+      "red-hat-issues-security-update-for-python-urllib3-37e64a"
+    ]
+  },
+  {
     "slug": "red-hat-kernel-update-for-rhel-10-2-978cf2ac",
     "title": "Red Hat Kernel Update for RHEL 10.2",
     "summary": "A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 10.2 Extended Update Support, targeting the Linux kernel. The patch covers moderate‑severity flaws linked to CVE entries, with CVSS scores reflecting a moderate risk level. Red Hat advises installing the update promptly for mitigating potential critical kernel exploitation today.",
@@ -632,6 +687,24 @@ export const news: NewsBrief[] = [
       "70d679f8",
       "hackers-hijack-emergency-apps-with-fake-nuclear-al-94cca2",
       "hackers-hijack-emergency-apps-with-fake-nuclear-alerts"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-92363-important-firefox-security-update-1991f863",
+    "title": "RHSA-2026:92363: Important: firefox security update",
+    "summary": "An update for firefox is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92363",
+    "publishedAt": "2026-11-02T14:28:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-92363-important-firefox-security-update",
+      "article-1991f863",
+      "1991f863",
+      "rhsa-2026-92363-important-firefox-security-update-37d9a6"
     ]
   },
   {
@@ -1729,6 +1802,63 @@ export const news: NewsBrief[] = [
       "article-13f4fb13",
       "13f4fb13",
       "byoky-launches-open-source-ai-api-key-wallet-4ec313"
+    ]
+  },
+  {
+    "slug": "microsoft-qlib-mlflowrecorder-deserialization-rce-28728857",
+    "title": "Microsoft Qlib MLflowRecorder Deserialization RCE Vulnerability",
+    "summary": "A deserialization flaw in Microsoft Qlib's MLflowRecorder permits remote code execution on affected installations. The flaw requires user interaction, such as visiting a malicious page or opening a crafted file, and has a CVSS score of 7.8, indicating high severity. Microsoft has assigned a CVSS rating of 7.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-850/",
+    "publishedAt": "2026-11-02T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-qlib-mlflowrecorder-deserialization-rce",
+      "article-28728857",
+      "28728857",
+      "microsoft-qlib-mlflowrecorder-deserialization-rce-6f3ca6",
+      "microsoft-qlib-mlflowrecorder-deserialization-rce-vulnerabil"
+    ]
+  },
+  {
+    "slug": "microsoft-qlib-restrictedunpickler-deserialization-7fb53b05",
+    "title": "Microsoft Qlib RestrictedUnpickler Deserialization RCE Vulnerability",
+    "summary": "A deserialization flaw in Microsoft Qlib's RestrictedUnpickler permits remote code execution on affected installations. The flaw requires user interaction, such as visiting a malicious page or opening a crafted file, and has a CVSS score of 7.8, indicating high severity. Microsoft has assigned a CVSS rating of 7.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-849/",
+    "publishedAt": "2026-11-02T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-qlib-restrictedunpickler-deserialization",
+      "article-7fb53b05",
+      "7fb53b05",
+      "microsoft-qlib-restrictedunpickler-deserialization-6f3ca3",
+      "microsoft-qlib-restrictedunpickler-deserialization-rce-vulne"
+    ]
+  },
+  {
+    "slug": "microsoft-qlib-staticdataloader-deserialization-rc-15d55021",
+    "title": "Microsoft Qlib StaticDataLoader Deserialization RCE Vulnerability",
+    "summary": "A deserialization flaw in Microsoft Qlib's StaticDataLoader permits remote code execution on affected installations. The flaw requires user interaction, such as visiting a malicious page or opening a crafted file, and has a CVSS score of 7.8, indicating high severity. Microsoft has assigned a CVSS rating of 7.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-848/",
+    "publishedAt": "2026-11-02T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-qlib-staticdataloader-deserialization-rc",
+      "article-15d55021",
+      "15d55021",
+      "microsoft-qlib-staticdataloader-deserialization-rc-6f3ca3",
+      "microsoft-qlib-staticdataloader-deserialization-rce-vulnerab"
     ]
   },
   {
