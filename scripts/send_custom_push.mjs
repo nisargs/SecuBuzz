@@ -1,5 +1,11 @@
 import fs from 'fs';
 import path from 'path';
+import { execSync } from 'child_process';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ROOT_DIR = path.resolve(__dirname, '..');
 
 /**
  * Custom Broadcast Push Notification Tool for SecuBuzz
@@ -8,28 +14,24 @@ import path from 'path';
  *   node scripts/send_custom_push.mjs --title "Title" --body "Message" --send
  */
 
-function getOauthToken() {
-  const p = path.join(process.env.APPDATA, 'xdg.config', '.wrangler', 'config', 'default.toml');
-  if (!fs.existsSync(p)) return null;
-  const content = fs.readFileSync(p, 'utf8');
-  const match = content.match(/oauth_token\s*=\s*["']([^"']+)["']/);
-  return match ? match[1] : null;
-}
-
-async function queryD1(token, accountTag, databaseId, sql) {
-  const res = await fetch(`https://api.cloudflare.com/client/v4/accounts/${accountTag}/d1/database/${databaseId}/query`, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ sql })
-  });
-  const data = await res.json();
-  return data.result;
+function getActiveTokens() {
+  try {
+    const raw = execSync(
+      `npx --prefix worker wrangler d1 execute secubuzz-push-db --remote --command "SELECT token, app_version, platform FROM push_tokens WHERE is_active = 1;" --json`,
+      { cwd: ROOT_DIR, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }
+    );
+    const parsed = JSON.parse(raw);
+    return parsed?.[0]?.results || [];
+  } catch (err) {
+    console.error('Failed to query active push tokens via Wrangler D1:', err.message);
+    return [];
+  }
 }
 
 async function main() {
   const args = process.argv.slice(2);
   const isSend = args.includes('--send');
-  
+
   const titleIdx = args.indexOf('--title');
   const bodyIdx = args.indexOf('--body');
   const urlIdx = args.indexOf('--url');
@@ -48,18 +50,7 @@ async function main() {
   console.log(`  Link:    ${linkUrl || '(Opens directly to News briefs tab)'}`);
   console.log(`  Mode:    ${isSend ? '🚨 LIVE BROADCAST (Will buzz devices)' : '🛡️ DRY-RUN PREVIEW (No devices messaged)'}\n`);
 
-  const token = getOauthToken();
-  if (!token) {
-    console.error('Error: Cloudflare OAuth token not found.');
-    process.exit(1);
-  }
-
-  const accountTag = '36eb47dcba495d7d872a2647755f6bde';
-  const d1Id = '13e7169f-7237-46a3-97fd-d0e4762b94e2';
-
-  const d1Res = await queryD1(token, accountTag, d1Id, `SELECT token, app_version, platform FROM push_tokens WHERE is_active = 1;`);
-  const activeTokens = d1Res?.[0]?.results || [];
-
+  const activeTokens = getActiveTokens();
   console.log(`Active Device Fleet: ${activeTokens.length} devices ready to receive.`);
 
   if (!isSend) {
@@ -80,7 +71,7 @@ async function main() {
     headline: title,
     summary: body,
     category: 'CVE',
-    severity: 'HIGH'
+    severity: 'HIGH',
   };
 
   if (linkUrl) {
@@ -88,72 +79,66 @@ async function main() {
     dataPayload.articleUrl = linkUrl;
   }
 
-  const messages = activeTokens.map(d => ({
-    to: d.token,
+  const messages = activeTokens.map((item) => ({
+    to: item.token,
     sound: 'default',
-    title,
-    body,
-    channelId: 'secubuzz-briefs',
+    title: title,
+    body: body,
+    data: dataPayload,
     priority: 'high',
-    data: dataPayload
+    channelId: 'threat-alerts',
   }));
 
-  // Chunk in batches of 100
+  // Chunk into 100 per Expo request
   const CHUNK_SIZE = 100;
   let sentCount = 0;
-  let successCount = 0;
   let errorCount = 0;
-  const invalidTokens = [];
 
   for (let i = 0; i < messages.length; i += CHUNK_SIZE) {
     const chunk = messages.slice(i, i + CHUNK_SIZE);
-    const pushRes = await fetch('https://exp.host/--/api/v2/push/send', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Accept-Encoding': 'gzip, deflate',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(chunk)
-    });
-    const result = await pushRes.json();
-    sentCount += chunk.length;
+    try {
+      const response = await fetch('https://exp.host/--/api/v2/push/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+          'Accept-Encoding': 'gzip, deflate',
+        },
+        body: JSON.stringify(chunk),
+      });
 
-    if (Array.isArray(result?.data)) {
-      result.data.forEach((ticket, idx) => {
-        if (ticket.status === 'ok') {
-          successCount++;
+      if (!response.ok) {
+        console.error(`HTTP error from Expo: ${response.status} ${response.statusText}`);
+        errorCount += chunk.length;
+        continue;
+      }
+
+      const result = await response.json();
+      const tickets = result.data || [];
+
+      for (const t of tickets) {
+        if (t.status === 'ok') {
+          sentCount++;
         } else {
           errorCount++;
-          if (ticket.details?.error === 'DeviceNotRegistered') {
-            invalidTokens.push(chunk[idx].to);
+          if (t.details?.error) {
+            console.warn(`  Device error: ${t.details.error}`);
           }
-          console.warn(`Device ${chunk[idx].to} push error:`, ticket.message || ticket.details);
         }
-      });
+      }
+    } catch (e) {
+      console.error(`Network error sending batch: ${e.message}`);
+      errorCount += chunk.length;
     }
-
-    console.log(`Batch ${Math.floor(i / CHUNK_SIZE) + 1}: Sent ${chunk.length} messages. Status: ${pushRes.status}`);
   }
 
-  console.log(`\n✅ Broadcast complete!`);
-  console.log(`   Total devices targeted: ${sentCount}`);
-  console.log(`   Tickets OK:             ${successCount}`);
-  if (errorCount > 0) {
-    console.log(`   Tickets Error:          ${errorCount}`);
-  }
-
-  if (invalidTokens.length > 0) {
-    console.log(`\nDeactivating ${invalidTokens.length} unregistered device tokens in Cloudflare D1...`);
-    const placeholders = invalidTokens.map(() => '?').join(', ');
-    await queryD1(
-      token,
-      accountTag,
-      d1Id,
-      `UPDATE push_tokens SET is_active = 0 WHERE token IN (${placeholders});`
-    );
-    console.log(`Deactivated ${invalidTokens.length} dead tokens.`);
-  }
+  console.log('\n========================================================');
+  console.log('📊 BROADCAST SUMMARY');
+  console.log('========================================================');
+  console.log(`  Total Active Devices:  ${activeTokens.length}`);
+  console.log(`  Successfully Sent:     ${sentCount}`);
+  console.log(`  Failed / Errors:       ${errorCount}`);
+  console.log('========================================================\n');
 }
 
 main().catch(console.error);
