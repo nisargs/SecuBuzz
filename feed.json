@@ -1,5 +1,53 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+    "title": "Chinese Hackers Deploy ARTEX AI Against 200 Organizations",
+    "headline": "Chinese Hackers Deploy ARTEX AI Against 200 Organizations",
+    "summary": "Chinese hackers used the open‑source ARTEX AI framework to launch automated attacks on more than 200 organizations across 14 countries. ARTEX orchestrates multi‑agent reconnaissance and credential harvesting, enabling rapid, low‑interaction exploitation without a specific CVE. Security teams should monitor for ARTEX activity, block known command‑and‑control endpoints, and enforce strict credential hygiene.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-02T21:40:14.000Z",
+    "ingestedAt": "2026-11-02T21:43:18.844Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
+    "title": "Microsoft Security Blog Analyzes Real‑World Exploitation Patterns",
+    "headline": "Microsoft Security Blog Analyzes Real‑World Exploitation Patterns",
+    "summary": "Microsoft Security blog analyzes real‑world exploitation, showing that a small subset of high‑impact CVEs accounts for most attacks. The analysis quantifies exploitation likelihood, exposure, and blast radius, guiding defenders to prioritize patches for vulnerabilities with the greatest operational risk. The post recommends data‑driven prioritization frameworks and continuous monitoring to reduce exposure to actively exploited flaws.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "publishedAt": "2026-11-02T20:20:59.000Z",
+    "ingestedAt": "2026-11-02T21:43:18.845Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
+    "sourceUrl": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
+    "title": "BYOD Gang Claims Michigan State Cyber Incident",
+    "headline": "BYOD Gang Claims Michigan State Cyber Incident",
+    "summary": "The BYOD ransomware gang claimed responsibility for a cyber incident that triggered campus‑wide security measures at Michigan State University. The gang, known for a recent hospital attack, claimed the incident via a post aligning with the MSU timeline. Security teams should verify the claim, isolate affected systems, and apply the gang’s ransomware signatures to mitigate further compromise.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-11-02T19:54:00.000Z",
+    "ingestedAt": "2026-11-02T21:43:18.845Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
+    "additionalSources": []
+  },
+  {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/",
     "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/",
     "title": "CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows",
@@ -52,6 +100,22 @@
     "isFallback": true
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93978",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93978",
+    "title": "Red Hat Issues Important Ghostscript Update for RHEL8",
+    "headline": "Red Hat Issues Important Ghostscript Update for RHEL8",
+    "summary": "Red Hat released an Important security update for Ghostscript on Red Hat Enterprise Linux 8, addressing a critical flaw. The advisory references multiple CVEs with CVSS base scores, indicating a high‑severity vulnerability that could allow remote code execution if exploited. Users should apply the RHSA‑2026:93978 update immediately or upgrade to the latest Ghostscript package to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T18:18:43.000Z",
+    "ingestedAt": "2026-11-02T21:43:18.845Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93978",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
     "title": "Google dismantles 1.3M-device XCPE Android botnet",
@@ -65,6 +129,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93902",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93902",
+    "title": "Red Hat releases Quarkus 3.33.4.SP2 security update",
+    "headline": "Red Hat releases Quarkus 3.33.4.SP2 security update",
+    "summary": "Red Hat released a security update for its Quarkus 3.33.4.SP2 build, addressing a flaw that could impact application integrity. The flaw, rated as Important, is documented with a CVSS base score, though the specific CVE identifier is not disclosed in the advisory. Red Hat recommends applying the Quarkus 3.33.4.SP2 update immediately to eliminate the vulnerability; no workarounds are listed.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T18:07:42.000Z",
+    "ingestedAt": "2026-11-02T21:43:28.241Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93902",
     "additionalSources": []
   },
   {
@@ -97,6 +177,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/synology-warns-of-c3rb3r-ransomware-attacks-targeting-n",
+    "sourceUrl": "https://cybernewsai.com/blog/synology-warns-of-c3rb3r-ransomware-attacks-targeting-n",
+    "title": "Synology AI-Driven Attack Detection and Mitigation",
+    "headline": "Synology AI-Driven Attack Detection and Mitigation",
+    "summary": "Synology issued a critical alert for AI-driven attacks targeting its NAS devices, prompting immediate detection measures. The advisory recommends reviewing root-cause telemetry, applying detection rules, and deploying the latest security patch to mitigate exploitation of the underlying vulnerability. Security teams should implement the provided rules and update firmware to close the attack surface.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-02T17:25:20.000Z",
+    "ingestedAt": "2026-11-02T21:43:58.792Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybernewsai.com/blog/synology-warns-of-c3rb3r-ransomware-attacks-targeting-n",
     "additionalSources": []
   },
   {
@@ -228,6 +324,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/guardz-brings-palo-alto-networks-prisma-browser-protection-to-small-businesses/",
+    "sourceUrl": "https://cybersecuritynews.com/guardz-brings-palo-alto-networks-prisma-browser-protection-to-small-businesses/",
+    "title": "Guardz integrates Palo Alto Prisma Browser for SMBs",
+    "headline": "Guardz integrates Palo Alto Prisma Browser for SMBs",
+    "summary": "Guardz announced integration of Palo Alto Networks Prisma Browser for Business, extending browser protection to small‑business managed service providers. The partnership combines Prisma Browser’s threat detection with Guardz’s email, identity, and endpoint security, enabling unified incident response. Deployers should integrate the new solution via Guardz’s platform and verify policy alignment to maintain consistent security posture.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-02T15:53:23.000Z",
+    "ingestedAt": "2026-11-02T21:43:28.241Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/guardz-brings-palo-alto-networks-prisma-browser-protection-to-small-businesses/",
     "additionalSources": []
   },
   {
@@ -423,6 +535,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+    "title": "Hackers alter supermarket refrigeration temperatures remotely",
+    "headline": "Hackers alter supermarket refrigeration temperatures remotely",
+    "summary": "Hackers remotely altered temperature settings on refrigeration units in multiple European supermarket chains, disrupting cold storage operations. The attack exploited a misconfiguration in the refrigeration control software, allowing unauthorized remote command execution without authentication. Supermarket operators should update firmware to the latest vendor release and enforce network segmentation to prevent similar remote manipulation.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-02T14:28:39.000Z",
+    "ingestedAt": "2026-11-02T21:43:28.241Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
     "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
     "title": "Fake Review Trade Sells Five‑Star Ratings",
@@ -436,6 +564,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
+    "additionalSources": []
+  },
+  {
+    "id": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+    "sourceUrl": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+    "title": "Cloudflare Cuts DNS Build Time and Memory",
+    "headline": "Cloudflare Cuts DNS Build Time and Memory",
+    "summary": "Cloudflare introduced a planner that selects minimal safe DNS zone rebuilds, targeting large zones with millions of records. The planner reduces full rebuilds by 40%, cuts peak memory usage by 85%, and halves overall build delay, improving resource efficiency. The change is implemented via zone setting adjustments and is available to all Cloudflare customers.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "publishedAt": "2026-11-02T14:00:00.000Z",
+    "ingestedAt": "2026-11-02T21:43:58.792Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
     "additionalSources": []
   },
   {
@@ -518,6 +662,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93780",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93780",
+    "title": "Red Hat Issues Security Updates for Python-JWT Library",
+    "headline": "Red Hat Issues Security Updates for Python-JWT Library",
+    "summary": "Red Hat released a security update for the python-jwt package across extended support versions of Red Hat Enterprise Linux 8.6. Red Hat Product Security rated the underlying vulnerability as Important, though specific exploitation vectors were not publicly detailed in the advisory. System administrators should apply the provided patches to affected Red Hat Enterprise Linux Advanced Mission Critical Support systems.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T13:13:57.000Z",
+    "ingestedAt": "2026-11-02T21:44:14.944Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93780",
     "additionalSources": []
   },
   {
@@ -701,6 +861,22 @@
     "isFallback": true
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93610",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93610",
+    "title": "Red Hat Releases Important Bind Security Update",
+    "headline": "Red Hat Releases Important Bind Security Update",
+    "summary": "Red Hat issued an Important security update for the BIND DNS server on RHEL 9, addressing multiple vulnerabilities. The advisory references CVE identifiers with CVSS base scores, indicating the severity of each flaw, and recommends applying the update to mitigate potential exploitation. Customers should download and install the RHSA-2026:93610 package to secure their DNS infrastructure.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T12:14:48.000Z",
+    "ingestedAt": "2026-11-02T21:43:58.792Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93610",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93624",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93624",
     "title": "Red Hat Issues Important Update for python‑jwt Library",
@@ -828,6 +1004,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/02/chainalysis-breached-using-offensive-agentic-techniques/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/fake-billing-notices/",
+    "sourceUrl": "https://cybersecuritynews.com/fake-billing-notices/",
+    "title": "Phishers mimic OpenAI to steal cards and OTPs",
+    "headline": "Phishers mimic OpenAI to steal cards and OTPs",
+    "summary": "Phishers impersonated OpenAI in billing emails, directing victims to payment pages that harvest credit card details and one‑time passwords. The campaign combines convincing subscription warnings with a live operator who can request a verification code, enabling unauthorized payment approval. Security teams should block the sender domain, educate users on legitimate OpenAI communications, and enforce multi‑factor authentication for payment portals.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-02T11:31:33.000Z",
+    "ingestedAt": "2026-11-02T21:43:28.241Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/fake-billing-notices/",
     "additionalSources": []
   },
   {
@@ -3937,6 +4129,22 @@
     "cves": [
       "CVE-2026-98432"
     ]
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next",
+    "title": "Investors Discuss Emerging Cybersecurity Startups",
+    "headline": "Investors Discuss Emerging Cybersecurity Startups",
+    "summary": "The DataTribe Challenge revealed investor preferences for emerging cybersecurity startups, highlighting key market trends. Participants evaluated new ventures across threat detection, cloud security, and AI-driven defense, indicating which sectors attract capital. The findings suggest investors prioritize solutions that address evolving attack vectors, global regulatory compliance, and automation of security operations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-10-30T21:08:25.000Z",
+    "ingestedAt": "2026-11-02T21:43:58.792Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next",
+    "additionalSources": []
   },
   {
     "id": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",

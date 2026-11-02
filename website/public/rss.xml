@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 20:45:07 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 21:44:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Chinese Hackers Deploy ARTEX AI Against 200 Organizations</title>
+      <link>https://secubuzz.com/news/chinese-hackers-deploy-artex-ai-against-200-organi-fb186eba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chinese-hackers-deploy-artex-ai-against-200-organi-fb186eba</guid>
+      <description><![CDATA[Chinese hackers used the open‑source ARTEX AI framework to launch automated attacks on more than 200 organizations across 14 countries. ARTEX orchestrates multi‑agent reconnaissance and credential harvesting, enabling rapid, low‑interaction exploitation without a specific CVE. Security teams should monitor for ARTEX activity, block known command‑and‑control endpoints, and enforce strict credential hygiene.]]></description>
+      <pubDate>Mon, 02 Nov 2026 21:40:14 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/">BleepingComputer</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Microsoft Security Blog Analyzes Real‑World Exploitation Patterns</title>
+      <link>https://secubuzz.com/news/microsoft-security-blog-analyzes-real-world-exploi-748027d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-security-blog-analyzes-real-world-exploi-748027d4</guid>
+      <description><![CDATA[Microsoft Security blog analyzes real‑world exploitation, showing that a small subset of high‑impact CVEs accounts for most attacks. The analysis quantifies exploitation likelihood, exposure, and blast radius, guiding defenders to prioritize patches for vulnerabilities with the greatest operational risk. The post recommends data‑driven prioritization frameworks and continuous monitoring to reduce exposure to actively exploited flaws.]]></description>
+      <pubDate>Mon, 02 Nov 2026 20:20:59 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/">Microsoft Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>BYOD Gang Claims Michigan State Cyber Incident</title>
+      <link>https://secubuzz.com/news/byod-gang-claims-michigan-state-cyber-incident-b5f8dee4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/byod-gang-claims-michigan-state-cyber-incident-b5f8dee4</guid>
+      <description><![CDATA[The BYOD ransomware gang claimed responsibility for a cyber incident that triggered campus‑wide security measures at Michigan State University. The gang, known for a recent hospital attack, claimed the incident via a post aligning with the MSU timeline. Security teams should verify the claim, isolate affected systems, and apply the gang’s ransomware signatures to mitigate further compromise.]]></description>
+      <pubDate>Mon, 02 Nov 2026 19:54:00 GMT</pubDate>
+      <source url="https://therecord.media/michigan-state-university-byod-gang-cyber-incident">The Record</source>
+      <category>Ransomware</category>
+    </item>
     <item>
       <title>CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows</title>
       <link>https://secubuzz.com/news/cve-2026-120497-stored-cross-site-scripting-in-the-beeb1c33</link>
@@ -35,6 +62,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Important Ghostscript Update for RHEL8</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-ghostscript-update-for-rh-f2e94468</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-ghostscript-update-for-rh-f2e94468</guid>
+      <description><![CDATA[Red Hat released an Important security update for Ghostscript on Red Hat Enterprise Linux 8, addressing a critical flaw. The advisory references multiple CVEs with CVSS base scores, indicating a high‑severity vulnerability that could allow remote code execution if exploited. Users should apply the RHSA‑2026:93978 update immediately or upgrade to the latest Ghostscript package to mitigate the risk.]]></description>
+      <pubDate>Mon, 02 Nov 2026 18:18:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93978">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Google dismantles 1.3M-device XCPE Android botnet</title>
       <link>https://secubuzz.com/news/google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd</guid>
@@ -42,6 +78,15 @@
       <pubDate>Mon, 02 Nov 2026 18:16:34 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat releases Quarkus 3.33.4.SP2 security update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-quarkus-3-33-4-sp2-security-updat-401bf2ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-quarkus-3-33-4-sp2-security-updat-401bf2ff</guid>
+      <description><![CDATA[Red Hat released a security update for its Quarkus 3.33.4.SP2 build, addressing a flaw that could impact application integrity. The flaw, rated as Important, is documented with a CVSS base score, though the specific CVE identifier is not disclosed in the advisory. Red Hat recommends applying the Quarkus 3.33.4.SP2 update immediately to eliminate the vulnerability; no workarounds are listed.]]></description>
+      <pubDate>Mon, 02 Nov 2026 18:07:42 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93902">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Mercado Bitcoin Breach Involves $40M Suspicious Transfers</title>
@@ -60,6 +105,15 @@
       <pubDate>Mon, 02 Nov 2026 17:41:34 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Synology AI-Driven Attack Detection and Mitigation</title>
+      <link>https://secubuzz.com/news/synology-ai-driven-attack-detection-and-mitigation-4281090b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/synology-ai-driven-attack-detection-and-mitigation-4281090b</guid>
+      <description><![CDATA[Synology issued a critical alert for AI-driven attacks targeting its NAS devices, prompting immediate detection measures. The advisory recommends reviewing root-cause telemetry, applying detection rules, and deploying the latest security patch to mitigate exploitation of the underlying vulnerability. Security teams should implement the provided rules and update firmware to close the attack surface.]]></description>
+      <pubDate>Mon, 02 Nov 2026 17:25:20 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/synology-warns-of-c3rb3r-ransomware-attacks-targeting-n">CyberNews AI</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Kernel Update for RHEL 9.8</title>
@@ -132,6 +186,15 @@
       <pubDate>Mon, 02 Nov 2026 15:57:23 GMT</pubDate>
       <source url="https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/">Check Point Research</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Guardz integrates Palo Alto Prisma Browser for SMBs</title>
+      <link>https://secubuzz.com/news/guardz-integrates-palo-alto-prisma-browser-for-smb-b62903fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/guardz-integrates-palo-alto-prisma-browser-for-smb-b62903fa</guid>
+      <description><![CDATA[Guardz announced integration of Palo Alto Networks Prisma Browser for Business, extending browser protection to small‑business managed service providers. The partnership combines Prisma Browser’s threat detection with Guardz’s email, identity, and endpoint security, enabling unified incident response. Deployers should integrate the new solution via Guardz’s platform and verify policy alignment to maintain consistent security posture.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:53:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/guardz-brings-palo-alto-networks-prisma-browser-protection-to-small-businesses/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Google shuts down XCPE botnet servers</title>
@@ -242,12 +305,30 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>Hackers alter supermarket refrigeration temperatures remotely</title>
+      <link>https://secubuzz.com/news/hackers-alter-supermarket-refrigeration-temperatur-5ff3d83b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-alter-supermarket-refrigeration-temperatur-5ff3d83b</guid>
+      <description><![CDATA[Hackers remotely altered temperature settings on refrigeration units in multiple European supermarket chains, disrupting cold storage operations. The attack exploited a misconfiguration in the refrigeration control software, allowing unauthorized remote command execution without authentication. Supermarket operators should update firmware to the latest vendor release and enforce network segmentation to prevent similar remote manipulation.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:28:39 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Fake Review Trade Sells Five‑Star Ratings</title>
       <link>https://secubuzz.com/news/fake-review-trade-sells-five-star-ratings-86b51d06</link>
       <guid isPermaLink="true">https://secubuzz.com/news/fake-review-trade-sells-five-star-ratings-86b51d06</guid>
       <description><![CDATA[Underground operators sell five‑star reviews for up to $1,100, offering to erase negative feedback from online platforms. The scheme exploits reputation‑management systems, enabling malicious actors to manipulate consumer perception and undermine trust in digital marketplaces. Businesses should verify review authenticity, enforce platform moderation policies, and monitor for suspicious bulk review activity to mitigate reputational damage.]]></description>
       <pubDate>Mon, 02 Nov 2026 14:24:43 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cloudflare Cuts DNS Build Time and Memory</title>
+      <link>https://secubuzz.com/news/cloudflare-cuts-dns-build-time-and-memory-9dd40191</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-cuts-dns-build-time-and-memory-9dd40191</guid>
+      <description><![CDATA[Cloudflare introduced a planner that selects minimal safe DNS zone rebuilds, targeting large zones with millions of records. The planner reduces full rebuilds by 40%, cuts peak memory usage by 85%, and halves overall build delay, improving resource efficiency. The change is implemented via zone setting adjustments and is available to all Cloudflare customers.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/dns-targeted-zone-builds/">Cloudflare Security</source>
       <category>General</category>
     </item>
     <item>
@@ -294,6 +375,15 @@
       <pubDate>Mon, 02 Nov 2026 13:25:11 GMT</pubDate>
       <source url="https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/">SecurityWeek</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Security Updates for Python-JWT Library</title>
+      <link>https://secubuzz.com/news/red-hat-issues-security-updates-for-python-jwt-lib-c3916b71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-updates-for-python-jwt-lib-c3916b71</guid>
+      <description><![CDATA[Red Hat released a security update for the python-jwt package across extended support versions of Red Hat Enterprise Linux 8.6. Red Hat Product Security rated the underlying vulnerability as Important, though specific exploitation vectors were not publicly detailed in the advisory. System administrators should apply the provided patches to affected Red Hat Enterprise Linux Advanced Mission Critical Support systems.]]></description>
+      <pubDate>Mon, 02 Nov 2026 13:13:57 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93780">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Wiz Releases Red and Blue Agents for SOC Teams</title>
@@ -366,96 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 12:37:41 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93670">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Teams Messages Used to Steal Remote Access</title>
-      <link>https://secubuzz.com/news/teams-messages-used-to-steal-remote-access-050081a6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/teams-messages-used-to-steal-remote-access-050081a6</guid>
-      <description><![CDATA[Hackers leveraged Microsoft Teams messages and voice calls to impersonate IT support, convincing employees to grant remote‑desktop permissions. The social‑engineering vector bypassed authentication, allowing attackers to move laterally into corporate networks and access privileged accounts without exploiting software flaws. Security teams should enforce MFA, verify support requests, and monitor remote‑access logs, while Microsoft recommends disabling remote‑access connections for non‑essential users.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:33:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsoft-teams-messages/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:92221: Important: flatpak security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-92221-important-flatpak-security-update-a8c51d25</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-92221-important-flatpak-security-update-a8c51d25</guid>
-      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:33:26 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:92221">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93627: Important: wireshark security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93627-important-wireshark-security-updat-4af7f3fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93627-important-wireshark-security-updat-4af7f3fb</guid>
-      <description><![CDATA[An update for wireshark is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:21:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93627">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important Update for python‑jwt Library</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-update-for-python-jwt-lib-76be2095</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-update-for-python-jwt-lib-76be2095</guid>
-      <description><![CDATA[Red Hat released an Important security update for python‑jwt on RHEL 8.8 Update Services for SAP Solutions and Telecommunications. The update fixes vulnerabilities in python‑jwt, with CVSS base scores available via referenced CVE links, and is rated Important by Red Hat Product Security. Apply the patch through the RHEL 8.8 Update Services channel to mitigate potential exploitation of the library.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:02:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93624">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Bug Discovery Rate Surges 3% of Critical Bugs</title>
-      <link>https://secubuzz.com/news/ai-bug-discovery-rate-surges-3-of-critical-bugs-82ead697</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-bug-discovery-rate-surges-3-of-critical-bugs-82ead697</guid>
-      <description><![CDATA[A recent analysis shows 3% of all recorded critical bugs were found last month, potentially adding 100,000 new vulnerabilities this year. This pace would increase the all‑time total by about 26%, expanding the threat landscape through AI‑assisted discovery. Security teams should monitor feeds and adjust patch cycles to match the accelerated discovery rate.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:02:34 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Northflank Breach Exposes AI API Keys</title>
-      <link>https://secubuzz.com/news/northflank-breach-exposes-ai-api-keys-53145069</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/northflank-breach-exposes-ai-api-keys-53145069</guid>
-      <description><![CDATA[Northflank reported a security incident that exposed AI API keys, allowing attackers to access platform workloads and misuse environment variables. The breach did not confirm an entry point or attacker identity, but leaked credentials could grant privileged access to global settings and secret groups. Northflank urges customers to rotate all secrets, update variables, and enable MFA to mitigate credential misuse.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:02:20 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/northflank-security-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93626: Important: python-jwt security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93626-important-python-jwt-security-upda-be651efb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93626-important-python-jwt-security-upda-be651efb</guid>
-      <description><![CDATA[An update for python-jwt is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:58:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93626">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2023-21768 WinSock Privilege Escalation PoC</title>
-      <link>https://secubuzz.com/news/cve-2023-21768-winsock-privilege-escalation-poc-b0b5680c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2023-21768-winsock-privilege-escalation-poc-b0b5680c</guid>
-      <description><![CDATA[A public proof‑of‑concept exploit demonstrates local privilege escalation via the Windows Ancillary Function Driver for WinSock, targeting CVE-2023-21768. The PoC shows attackers with local access can obtain SYSTEM privileges on vulnerable Windows 11 22H2 systems, a flaw patched in January 2023. Microsoft recommends installing the January 2023 security update and applying the latest Windows patches to mitigate the vulnerability.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:57:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/poc-for-windows-winsock-ancillary-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Langflow Unauthenticated RCE Flaws Exposed</title>
-      <link>https://secubuzz.com/news/langflow-unauthenticated-rce-flaws-exposed-e5963d00</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/langflow-unauthenticated-rce-flaws-exposed-e5963d00</guid>
-      <description><![CDATA[Langflow contains two critical unauthenticated RCE flaws that allow attackers to bypass authentication and execute arbitrary code. IBM identified the vulnerabilities across releases 1.0.0 to 1.12.8, assigning CVE-2026-111357, and noted no public exploit yet. Users should upgrade to version 1.13.0 immediately, as the patch resolves both flaws and restores authentication controls.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:50:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Patched Synology NAS Vulnerabilities to Deploy C3RB3R Ransomware and Encrypt Files</title>
-      <link>https://secubuzz.com/news/hackers-exploit-patched-synology-nas-vulnerabiliti-9b10c473</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-patched-synology-nas-vulnerabiliti-9b10c473</guid>
-      <description><![CDATA[Synology NAS devices are facing C3RB3R ransomware attacks linked to 2024 security flaws, prompting the company to urge users to update outdated DiskStation Manager versions and packages. The warning followed reports from the 360 Security Team and Solar Emergency Response Team on October 29.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:49:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/synology-nas-vulnerabilities-c3rb3r-ransomware/">Cyber Security News</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>
