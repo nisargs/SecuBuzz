@@ -1,9 +1,8 @@
 # SecuBuzz Architectural Rules & Persistent Memory
 
-## 0. MANDATORY NOVEMBER 1st REMINDER: SWITCH REPO BACK TO PRIVATE
+## 0. REPOSITORY VISIBILITY: RESTORED TO PRIVATE (COMPLETED NOV 1, 2026)
 - **Status**: The repository visibility was temporarily made **Public** on October 25, 2026, to bridge the remaining 6 days of October after reaching the 2,000 GitHub Actions free runner minutes quota.
-- **Action Required on November 1, 2026**: When the user opens and speaks in chat in November, **IMMEDIATELY PROMPT AND REMIND THE USER** in the response to switch the repository visibility back from **Public** to **Private** in GitHub repository **Settings** → **Danger Zone** → **Change repository visibility** → **Make private**.
-- **Reminder Protocol Invariant**: When the user asks for a reminder, deliver it directly in chat during their next active conversation. Do NOT schedule background timers or cron pings that fire at random off-hours when the user is not actively at their desk.
+- **Completed**: Confirmed on November 1, 2026, that the repository visibility was switched back to **Private**. Do NOT prompt the user again.
 - **Runner Quota Invariant**: The ingestion pipeline runs hourly (`cron: "17 * * * *"` = 24 runs/day = ~720-1,080 minutes/month, consuming ~36-54% of the 2,000 free monthly allowance). The watchdog workflow is dialed to 6-hour intervals (`cron: "37 */6 * * *"` = 120 minutes/month), keeping total automated consumption safely below 1,200 minutes (leaving an 800+ minute buffer).
 
 ## 1. Expo SDK 57 Standards
@@ -136,7 +135,7 @@
     - Unified What's New modal and What's New indicator across website and mobile app.
   - **PENDING ACTION ITEM FOR NEXT ACTIVE CHAT**:
     - 1. **Mobile OTA Update**: Prompt user to apply the 3 CVE stub synthesis fixes (unknown severity, explicit unknown dateAdded, unknown product fallback) to mobile (`src/app/(tabs)/advisories.tsx`, `src/models/cve.ts`, `src/theme/theme.ts`) and ship via pure-JS OTA update (`eas update --branch production`) once Google Play approves v1.0.4.
-    - 2. **GitHub Repository Visibility**: Remind user to switch repo back to Private in GitHub **Settings** → **Danger Zone** → **Change repository visibility** → **Make private** (per Rule 0).
+    - 2. **Repository Visibility**: Verified switched back to Private (Completed Nov 1, 2026).
 - **Release v1.0.3 (Version Code 9 / OTA Active `01a194ca-1a2a-74cc-a9fc-b93d7ef7fd9b` / Group `b41ed095-de0a-4027-9548-ea1e2b4e104f` / Worker `0ae6ffd6-7ab7-48cb-897d-8a0d62587fab`):**
   - **Bookmark Persistence & Data Loss Prevention (`SavedArticlesContext.tsx`)**:
     - Replaced strict uppercase validators (`isArticleSeverity`, `isArticleCategory`) with permissive normalizers (`normalizeSeverity`, `normalizeCategory`), preventing Title Case advisories (e.g. `'Critical'`, `'High'`) from failing parsing.
