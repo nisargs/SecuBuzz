@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 16:45:06 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 17:11:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas</title>
@@ -233,6 +233,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Hackers Use CyberStrikeAI Agents to Automate Windows Domain Takeovers and Credential Theft</title>
+      <link>https://secubuzz.com/news/hackers-use-cyberstrikeai-agents-to-automate-windo-d471d7a9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-cyberstrikeai-agents-to-automate-windo-d471d7a9</guid>
+      <description><![CDATA[Hackers are now using an AI-driven command framework called CyberStrikeAI to break into Windows networks and take over entire domains. Education organizations in Africa and Latin America were among the confirmed victims. The tool lets a language model decide which commands to run, so the operator no longer types each step by hand.]]></description>
+      <pubDate>Mon, 02 Nov 2026 10:34:24 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-cyberstrikeai-agents-2/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Chainalysis Breach via AI-Driven Attack</title>
       <link>https://secubuzz.com/news/chainalysis-breach-via-ai-driven-attack-d196dbe1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-breach-via-ai-driven-attack-d196dbe1</guid>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 05:30:38 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>nginx Update Fixes Important Security Vulnerabilities</title>
-      <link>https://secubuzz.com/news/nginx-update-fixes-important-security-vulnerabilit-302ab5d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nginx-update-fixes-important-security-vulnerabilit-302ab5d8</guid>
-      <description><![CDATA[Red Hat issued a security update for nginx on Enterprise Linux 9.6 Extended Update Support to remediate several vulnerabilities. The update carries an Important impact rating, and each affected CVE’s CVSS base score is provided in the references section. Operators should install the patch, review the CVSS scores, and ensure nginx is not exposed to untrusted networks.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:30:29 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93467">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

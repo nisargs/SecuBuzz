@@ -480,6 +480,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-use-cyberstrikeai-agents-to-automate-windo-d471d7a9",
+    "title": "Hackers Use CyberStrikeAI Agents to Automate Windows Domain Takeovers and Credential Theft",
+    "summary": "Hackers are now using an AI-driven command framework called CyberStrikeAI to break into Windows networks and take over entire domains. Education organizations in Africa and Latin America were among the confirmed victims. The tool lets a language model decide which commands to run, so the operator no longer types each step by hand.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-cyberstrikeai-agents-2/",
+    "publishedAt": "2026-11-02T10:34:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-cyberstrikeai-agents-to-automate-windo",
+      "article-d471d7a9",
+      "d471d7a9",
+      "hackers-use-cyberstrikeai-agents-to-automate-windo-65a62a",
+      "hackers-use-cyberstrikeai-agents-to-automate-windows-domain-"
+    ]
+  },
+  {
     "slug": "chainalysis-breach-via-ai-driven-attack-d196dbe1",
     "title": "Chainalysis Breach via AI-Driven Attack",
     "summary": "Chainalysis suffered a data breach after attackers used AI‑driven offensive agentic techniques to infiltrate its internal systems and tools. The attack exploited automated reconnaissance and credential‑guessing capabilities, granting unauthorized access to proprietary data; no public exploit code is reported. Chainalysis has disclosed the incident and is conducting forensics; security teams should review access controls, monitor anomalies, and apply vendor patches.",
