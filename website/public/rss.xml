@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 22:44:56 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 23:44:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Critical Kernel Update for RHEL 9.4</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-9-70b22e22</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-9-70b22e22</guid>
+      <description><![CDATA[Red Hat released a kernel update for RHEL 9.4 Update Services for SAP Solutions, fixing a critical flaw that could enable privilege escalation or denial of service. The advisory lists multiple CVEs with CVSS base scores, but no single CVE is named in the text. Apply the new kernel package via standard RHEL repositories immediately to mitigate the risk.]]></description>
+      <pubDate>Mon, 02 Nov 2026 23:24:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94109">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Unit 42 Highlights Cyberespionage, Extortion, AI Adoption</title>
+      <link>https://secubuzz.com/news/unit-42-highlights-cyberespionage-extortion-ai-ado-599c6f89</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-highlights-cyberespionage-extortion-ai-ado-599c6f89</guid>
+      <description><![CDATA[Unit 42 released a threat intelligence brief covering recent cyberespionage campaigns, financial extortion incidents, and AI‑driven offensive tactics. The report notes adversaries use AI to automate phishing, accelerate malware development, and enhance data exfiltration while extortion actors target financial institutions. Security teams should monitor AI‑driven threat indicators, update detection rules, and review supply‑chain controls to mitigate evolving risks.]]></description>
+      <pubDate>Mon, 02 Nov 2026 23:00:45 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/">Unit 42</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Ansible Automation Platform 2.5 Security Update</title>
       <link>https://secubuzz.com/news/red-hat-ansible-automation-platform-2-5-security-u-b8a34741</link>
@@ -24,6 +42,15 @@
       <pubDate>Mon, 02 Nov 2026 22:18:50 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94101">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Brazilian Exchange Reports $46M Crypto Theft</title>
+      <link>https://secubuzz.com/news/brazilian-exchange-reports-46m-crypto-theft-59c13561</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/brazilian-exchange-reports-46m-crypto-theft-59c13561</guid>
+      <description><![CDATA[Mercado Bitcoin confirmed a cyberattack that enabled attackers to transfer more than $46 million in cryptocurrency from user wallets. The breach exploited a vulnerability in the exchange’s wallet management system, allowing unauthorized access to private keys and transaction signing. Mercado Bitcoin has issued a patch, updated key‑management protocols, and advised users to change passwords and enable two‑factor authentication.]]></description>
+      <pubDate>Mon, 02 Nov 2026 21:42:00 GMT</pubDate>
+      <source url="https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Chinese Hackers Deploy ARTEX AI Against 200 Organizations</title>
@@ -323,6 +350,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Apple Issues Global Spyware Warning</title>
+      <link>https://secubuzz.com/news/apple-issues-global-spyware-warning-d2c05b97</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-issues-global-spyware-warning-d2c05b97</guid>
+      <description><![CDATA[Apple notified users in 99 countries about the presence of mercenary spyware targeting their devices. The company emphasized the spyware’s extreme cost, sophistication, and worldwide reach, labeling it among the most advanced digital threats. Apple recommends users update to the latest iOS, install security patches, and monitor for unusual device activity.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:42:00 GMT</pubDate>
+      <source url="https://therecord.media/apple-warns-users-99-countries-mercenary-spyware">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Hackers Hijack Emergency Apps with Fake Nuclear Alerts</title>
       <link>https://secubuzz.com/news/hackers-hijack-emergency-apps-with-fake-nuclear-al-70d679f8</link>
       <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-emergency-apps-with-fake-nuclear-al-70d679f8</guid>
@@ -350,6 +386,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>European Supermarkets Hit by Refrigeration Unit Attacks</title>
+      <link>https://secubuzz.com/news/european-supermarkets-hit-by-refrigeration-unit-at-28d75eb9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/european-supermarkets-hit-by-refrigeration-unit-at-28d75eb9</guid>
+      <description><![CDATA[Attackers remotely reconfigured refrigeration units in Belgian, Luxembourg, and Swedish supermarkets, switching evaporators to defrost mode. The exploit leveraged a flaw in the units’ firmware that allowed unauthorized remote command execution, causing food spoilage. Manufacturers have released firmware updates, and supermarkets should apply patches, isolate affected devices, and monitor for anomalous control traffic.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:28:25 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Fake Review Trade Sells Five‑Star Ratings</title>
       <link>https://secubuzz.com/news/fake-review-trade-sells-five-star-ratings-86b51d06</link>
       <guid isPermaLink="true">https://secubuzz.com/news/fake-review-trade-sells-five-star-ratings-86b51d06</guid>
@@ -357,6 +402,15 @@
       <pubDate>Mon, 02 Nov 2026 14:24:43 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade">Malwarebytes Labs</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Applebee’s App Hardcoded Password Exposes Data</title>
+      <link>https://secubuzz.com/news/applebee-s-app-hardcoded-password-exposes-data-458b4f3e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/applebee-s-app-hardcoded-password-exposes-data-458b4f3e</guid>
+      <description><![CDATA[A researcher discovered a hard‑coded password within the Applebee’s mobile application, allowing unauthorized access to customer data. The embedded credential bypasses authentication, exposing personal information without user interaction; no public exploit reported, but the flaw could enable credential theft. Applebee’s should remove the hard‑coded password, deploy a patched app version, and enforce secure credential storage best practices.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:22:43 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/applebees-customer-data-exposed-by-password-left-in-app">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Cloudflare Cuts DNS Build Time and Memory</title>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 13:35:21 GMT</pubDate>
       <source url="https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/">SecurityWeek</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Google Offers $250k Root-in-Cloud Bounty</title>
-      <link>https://secubuzz.com/news/google-offers-250k-root-in-cloud-bounty-bf501a4b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-offers-250k-root-in-cloud-bounty-bf501a4b</guid>
-      <description><![CDATA[Google announced a root‑in‑cloud bug bounty program offering $250,000 for researchers who demonstrate full administrative control over a cloud environment. The reward targets architectural research exposing critical cloud infrastructure weaknesses, encouraging discovery of vulnerabilities that could enable enterprise‑wide compromise. The program is a policy initiative; no specific vulnerability is disclosed, and participants must follow Google’s disclosure guidelines.]]></description>
-      <pubDate>Mon, 02 Nov 2026 13:25:11 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Security Updates for Python-JWT Library</title>
-      <link>https://secubuzz.com/news/red-hat-issues-security-updates-for-python-jwt-lib-c3916b71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-updates-for-python-jwt-lib-c3916b71</guid>
-      <description><![CDATA[Red Hat released a security update for the python-jwt package across extended support versions of Red Hat Enterprise Linux 8.6. Red Hat Product Security rated the underlying vulnerability as Important, though specific exploitation vectors were not publicly detailed in the advisory. System administrators should apply the provided patches to affected Red Hat Enterprise Linux Advanced Mission Critical Support systems.]]></description>
-      <pubDate>Mon, 02 Nov 2026 13:13:57 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93780">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Wiz Releases Red and Blue Agents for SOC Teams</title>
-      <link>https://secubuzz.com/news/wiz-releases-red-and-blue-agents-for-soc-teams-5c8130c4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-releases-red-and-blue-agents-for-soc-teams-5c8130c4</guid>
-      <description><![CDATA[Wiz Research introduced Red and Blue Agents to enhance SOC capabilities, offering pre-breach alerts and rapid threat investigation. The Red Agent validates potential breaches before they occur, while the Blue Agent analyzes active threats at machine speed, leveraging AI to detect anomalies. The agents are available for deployment immediately, with documentation and integration guides provided by Wiz for security teams.]]></description>
-      <pubDate>Mon, 02 Nov 2026 13:13:46 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/soc-alerts-red-and-blue-agents">Wiz Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Kernel Update for NVIDIA RHEL 10</title>
-      <link>https://secubuzz.com/news/red-hat-kernel-update-for-nvidia-rhel-10-70b4ae29</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-nvidia-rhel-10-70b4ae29</guid>
-      <description><![CDATA[A kernel security update addresses vulnerabilities in NVIDIA‑enabled Red Hat Enterprise Linux 10, targeting the Linux kernel. The patch mitigates important‑severity flaws, each referenced by CVE identifiers, with CVSS scores indicating a high risk. Red Hat recommends applying the update immediately in order to prevent exploitation of the kernel vulnerabilities.]]></description>
-      <pubDate>Mon, 02 Nov 2026 13:03:08 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93775">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases libsoup Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-libsoup-security-update-54b4ed49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libsoup-security-update-54b4ed49</guid>
-      <description><![CDATA[Red Hat issued a libsoup security update for Enterprise Linux 8.6, addressing multiple vulnerabilities. The flaws enable denial of service or remote code execution through malformed HTTP requests, with CVSS scores up to 8.9. Apply the RHSA-2026:93716 patch immediately and ensure libsoup is updated to the latest version on all affected systems.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:50:08 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93716">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93668: Important: pki-core:10.6 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93668-important-pki-core-10-6-security-u-407748e3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93668-important-pki-core-10-6-security-u-407748e3</guid>
-      <description><![CDATA[An update for the pki-core:10.6 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Mon, 02 Nov 2026 12:48:28 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93668">Red Hat Security Advisories</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

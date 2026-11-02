@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:94109",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94109",
+    "title": "Red Hat Releases Critical Kernel Update for RHEL 9.4",
+    "headline": "Red Hat Releases Critical Kernel Update for RHEL 9.4",
+    "summary": "Red Hat released a kernel update for RHEL 9.4 Update Services for SAP Solutions, fixing a critical flaw that could enable privilege escalation or denial of service. The advisory lists multiple CVEs with CVSS base scores, but no single CVE is named in the text. Apply the new kernel package via standard RHEL repositories immediately to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T23:24:00.000Z",
+    "ingestedAt": "2026-11-02T23:43:11.715Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:94109",
+    "additionalSources": []
+  },
+  {
+    "id": "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/",
+    "title": "Unit 42 Highlights Cyberespionage, Extortion, AI Adoption",
+    "headline": "Unit 42 Highlights Cyberespionage, Extortion, AI Adoption",
+    "summary": "Unit 42 released a threat intelligence brief covering recent cyberespionage campaigns, financial extortion incidents, and AI‑driven offensive tactics. The report notes adversaries use AI to automate phishing, accelerate malware development, and enhance data exfiltration while extortion actors target financial institutions. Security teams should monitor AI‑driven threat indicators, update detection rules, and review supply‑chain controls to mitigate evolving risks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "publishedAt": "2026-11-02T23:00:45.000Z",
+    "ingestedAt": "2026-11-02T23:43:21.489Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:94100",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94100",
     "title": "Red Hat Ansible Automation Platform 2.5 Security Update",
@@ -29,6 +61,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:94101",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
+    "sourceUrl": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
+    "title": "Brazilian Exchange Reports $46M Crypto Theft",
+    "headline": "Brazilian Exchange Reports $46M Crypto Theft",
+    "summary": "Mercado Bitcoin confirmed a cyberattack that enabled attackers to transfer more than $46 million in cryptocurrency from user wallets. The breach exploited a vulnerability in the exchange’s wallet management system, allowing unauthorized access to private keys and transaction signing. Mercado Bitcoin has issued a patch, updated key‑management protocols, and advised users to change passwords and enable two‑factor authentication.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-11-02T21:42:00.000Z",
+    "ingestedAt": "2026-11-02T23:43:21.489Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
     "additionalSources": []
   },
   {
@@ -567,6 +615,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/apple-warns-users-99-countries-mercenary-spyware",
+    "sourceUrl": "https://therecord.media/apple-warns-users-99-countries-mercenary-spyware",
+    "title": "Apple Issues Global Spyware Warning",
+    "headline": "Apple Issues Global Spyware Warning",
+    "summary": "Apple notified users in 99 countries about the presence of mercenary spyware targeting their devices. The company emphasized the spyware’s extreme cost, sophistication, and worldwide reach, labeling it among the most advanced digital threats. Apple recommends users update to the latest iOS, install security patches, and monitor for unusual device activity.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-11-02T14:42:00.000Z",
+    "ingestedAt": "2026-11-02T23:43:21.489Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/apple-warns-users-99-countries-mercenary-spyware",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/ukraine-hackers-russia-alert-system",
     "sourceUrl": "https://therecord.media/ukraine-hackers-russia-alert-system",
     "title": "Hackers Hijack Emergency Apps with Fake Nuclear Alerts",
@@ -616,6 +680,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/",
+    "title": "European Supermarkets Hit by Refrigeration Unit Attacks",
+    "headline": "European Supermarkets Hit by Refrigeration Unit Attacks",
+    "summary": "Attackers remotely reconfigured refrigeration units in Belgian, Luxembourg, and Swedish supermarkets, switching evaporators to defrost mode. The exploit leveraged a flaw in the units’ firmware that allowed unauthorized remote command execution, causing food spoilage. Manufacturers have released firmware updates, and supermarkets should apply patches, isolate affected devices, and monitor for anomalous control traffic.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-02T14:28:25.000Z",
+    "ingestedAt": "2026-11-02T23:43:21.489Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
     "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
     "title": "Fake Review Trade Sells Five‑Star Ratings",
@@ -629,6 +709,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/news/2026/11/applebees-customer-data-exposed-by-password-left-in-app",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/applebees-customer-data-exposed-by-password-left-in-app",
+    "title": "Applebee’s App Hardcoded Password Exposes Data",
+    "headline": "Applebee’s App Hardcoded Password Exposes Data",
+    "summary": "A researcher discovered a hard‑coded password within the Applebee’s mobile application, allowing unauthorized access to customer data. The embedded credential bypasses authentication, exposing personal information without user interaction; no public exploit reported, but the flaw could enable credential theft. Applebee’s should remove the hard‑coded password, deploy a patched app version, and enforce secure credential storage best practices.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-11-02T14:22:43.000Z",
+    "ingestedAt": "2026-11-02T23:43:26.466Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.malwarebytes.com/blog/news/2026/11/applebees-customer-data-exposed-by-password-left-in-app",
     "additionalSources": []
   },
   {
@@ -7585,61 +7681,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/american-organizations-under-attack-skyw4lker-device-co",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/adobe-fixes-8-critical-campaign-classic-flaws-allowing",
-    "sourceUrl": "https://cybernewsai.com/blog/adobe-fixes-8-critical-campaign-classic-flaws-allowing",
-    "title": "Adobe Campaign Classic RCE Vulnerability Requires Immediate Patch",
-    "headline": "Adobe Campaign Classic RCE Vulnerability Requires Immediate Patch",
-    "summary": "Adobe Campaign Classic suffers an RCE flaw that allows attackers to execute arbitrary code on affected servers. The vulnerability, CVE‑2026‑104351, is highlighted as a critical threat but lacks a publicly disclosed CVSS score or exploit details. Adobe recommends applying the latest security patch immediately and reviewing detection rules to monitor for suspicious activity.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-29T00:49:29.000Z",
-    "url": "https://cybernewsai.com/blog/adobe-fixes-8-critical-campaign-classic-flaws-allowing",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/critical-16-year-old-uefi-flaw-can-run-code-before-secu",
-    "sourceUrl": "https://cybernewsai.com/blog/critical-16-year-old-uefi-flaw-can-run-code-before-secu",
-    "title": "UEFI Firmware Flaw Enables Pre‑Boot Code Attacks",
-    "headline": "UEFI Firmware Flaw Enables Pre‑Boot Code Attacks",
-    "summary": "A UEFI firmware flaw (CVE‑2026‑97631) lets attackers inject malicious code before OS boot, targeting enterprise systems. The flaw stems from inadequate validation of signed firmware images, enabling unauthorized code execution without user interaction. Vendor patches are available; apply firmware updates and enable UEFI secure boot to mitigate the critical risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-29T00:49:23.000Z",
-    "ingestedAt": "2026-11-01T05:43:12.937Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybernewsai.com/blog/critical-16-year-old-uefi-flaw-can-run-code-before-secu",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
-    "sourceUrl": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
-    "title": "PHP2Shell Exploit CVE-2026-109618 Enables RCE",
-    "headline": "PHP2Shell Exploit CVE-2026-109618 Enables RCE",
-    "summary": "PHP2Shell vulnerability, CVE-2026-109618, permits remote code execution on government servers, allowing attackers to run arbitrary commands. The flaw originates from insecure handling of PHP session tokens, enabling unauthenticated users to inject malicious code via crafted requests. A vendor patch has been released; administrators should apply it immediately and deploy detection rules to identify exploitation attempts.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-29T00:49:09.000Z",
-    "url": "https://cybernewsai.com/blog/php2shell-attack-roots-25-servers-breaches-u-s-governme",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso",
-    "sourceUrl": "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso",
-    "title": "Microsoft Edge Sandbox Escape Vulnerability CVE‑2026‑45492",
-    "headline": "Microsoft Edge Sandbox Escape Vulnerability CVE‑2026‑45492",
-    "summary": "A sandbox escape flaw in Microsoft Edge, identified as CVE‑2026‑45492, allows attackers to break out of the browser process on affected enterprise systems. The vulnerability is a high‑severity flaw that could enable remote code execution if exploited, though no public exploit is currently documented. Microsoft urges users to apply the latest security update immediately; no workaround is available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-29T00:49:03.000Z",
-    "url": "https://cybernewsai.com/blog/researcher-reveals-how-logic-bugs-alone-cracked-microso",
     "additionalSources": []
   }
 ]
