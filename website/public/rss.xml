@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 19:45:34 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 20:45:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows</title>
@@ -15,6 +15,15 @@
       <pubDate>Mon, 02 Nov 2026 19:19:50 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Sageworks Outage After Suspected Cyberattack</title>
+      <link>https://secubuzz.com/news/sageworks-outage-after-suspected-cyberattack-c2c17ebc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sageworks-outage-after-suspected-cyberattack-c2c17ebc</guid>
+      <description><![CDATA[Abrigo’s Sageworks risk‑management platform experienced an outage after detecting irregular activity, prompting a temporary shutdown of borrower‑facing services. The incident was attributed to a suspected cyberattack, though no data exfiltration or credential compromise has been confirmed. Abrigo has restored core functionality but is maintaining heightened monitoring and will evaluate the root cause before fully reopening borrower interfaces.]]></description>
+      <pubDate>Mon, 02 Nov 2026 19:00:45 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/">BleepingComputer</source>
+      <category>General</category>
     </item>
     <item>
       <title>RHSA-2026:93925: Important: bind security, bug fix, and enhancement update</title>
@@ -62,6 +71,33 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Polymarket to Refund $3.9M After Compromise</title>
+      <link>https://secubuzz.com/news/polymarket-to-refund-3-9m-after-compromise-2962b7ad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/polymarket-to-refund-3-9m-after-compromise-2962b7ad</guid>
+      <description><![CDATA[Polymarket announced it will reimburse users $3.9 million following a site compromise that disrupted services and caused financial losses. The incident involved unauthorized access to the platform, though no evidence of data exfiltration or credential theft has been disclosed. Polymarket is conducting a post‑mortem, tightening security controls, and urging users to monitor accounts for suspicious activity.]]></description>
+      <pubDate>Mon, 02 Nov 2026 17:05:20 GMT</pubDate>
+      <source url="https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Threat Hunting Explained: Purpose and Process</title>
+      <link>https://secubuzz.com/news/threat-hunting-explained-purpose-and-process-435b2e14</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threat-hunting-explained-purpose-and-process-435b2e14</guid>
+      <description><![CDATA[Threat hunting is a proactive security practice that identifies hidden threats within an organization. Huntress explains the process, emphasizing human‑led detection to uncover anomalies automation may miss, and outlines key methodologies such as hypothesis‑driven investigation and data correlation. Security teams should adopt structured threat‑hunting frameworks and integrate continuous monitoring to improve detection coverage.]]></description>
+      <pubDate>Mon, 02 Nov 2026 17:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/what-is-threat-hunting">Huntress</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Weekly Recap: CVEs, DDoS, Phishing, Spyware</title>
+      <link>https://secubuzz.com/news/weekly-recap-cves-ddos-phishing-spyware-f77a2525</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/weekly-recap-cves-ddos-phishing-spyware-f77a2525</guid>
+      <description><![CDATA[The recap covers critical CVEs, a Linux DDoS botnet, device‑code phishing, and Android spyware incidents. Attackers used low‑effort vectors such as fake support calls, trusted extensions, shared links, and devices without passwords to achieve serious damage. Defenders should patch CVEs promptly, monitor botnet traffic, and enforce device authentication to reduce exposure.]]></description>
+      <pubDate>Mon, 02 Nov 2026 16:57:56 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas</title>
       <link>https://secubuzz.com/news/cve-2026-119301-improper-neutralization-of-quoting-e5e16cbd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119301-improper-neutralization-of-quoting-e5e16cbd</guid>
@@ -87,6 +123,15 @@
       <pubDate>Mon, 02 Nov 2026 15:58:08 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/02/cisa-to-federal-agencies-remediate-exploited-ivanti-connect-secure-vulnerabilities-cve-2026-111357-cve-2026-118527/">Help Net Security</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Binance Breach: $6.3B Digital Asset Theft</title>
+      <link>https://secubuzz.com/news/binance-breach-6-3b-digital-asset-theft-bf27e3db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-breach-6-3b-digital-asset-theft-bf27e3db</guid>
+      <description><![CDATA[Binance suffered a cyberattack that stole roughly $6.3 billion in digital assets by compromising a DevOps engineer’s laptop and exploiting internal wallet infrastructure. The breach exposed privileged credentials and enabled attackers to move laterally within the exchange’s environment, bypassing existing security controls. Binance has applied patches, revoked compromised accounts, and is conducting a forensic investigation to prevent future incidents.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:57:23 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/">Check Point Research</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Google shuts down XCPE botnet servers</title>
@@ -123,6 +168,15 @@
       <pubDate>Mon, 02 Nov 2026 15:03:07 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Carriers Retain Call Logs for Years, Raising Privacy Risks</title>
+      <link>https://secubuzz.com/news/carriers-retain-call-logs-for-years-raising-privac-dee89ba1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/carriers-retain-call-logs-for-years-raising-privac-dee89ba1</guid>
+      <description><![CDATA[Carriers can retain call and text metadata for years, exposing customers’ relationships, locations, and routines if breached. Cape’s service reduces exposure by automatically deleting call records, limiting the metadata carriers can store. Organizations should review carrier retention policies and adopt comprehensive solutions that enforce strictly timely deletion to safeguard privacy.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/">BleepingComputer</source>
+      <category>General</category>
     </item>
     <item>
       <title>37 Cybersecurity Deals Announced in October</title>
@@ -233,6 +287,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Google Offers $250k Root-in-Cloud Bounty</title>
+      <link>https://secubuzz.com/news/google-offers-250k-root-in-cloud-bounty-bf501a4b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-offers-250k-root-in-cloud-bounty-bf501a4b</guid>
+      <description><![CDATA[Google announced a root‑in‑cloud bug bounty program offering $250,000 for researchers who demonstrate full administrative control over a cloud environment. The reward targets architectural research exposing critical cloud infrastructure weaknesses, encouraging discovery of vulnerabilities that could enable enterprise‑wide compromise. The program is a policy initiative; no specific vulnerability is disclosed, and participants must follow Google’s disclosure guidelines.]]></description>
+      <pubDate>Mon, 02 Nov 2026 13:25:11 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Wiz Releases Red and Blue Agents for SOC Teams</title>
       <link>https://secubuzz.com/news/wiz-releases-red-and-blue-agents-for-soc-teams-5c8130c4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/wiz-releases-red-and-blue-agents-for-soc-teams-5c8130c4</guid>
@@ -269,6 +332,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Trezor Alerts Possible Seed‑Stealing Implant in Safe 5</title>
+      <link>https://secubuzz.com/news/trezor-alerts-possible-seed-stealing-implant-in-sa-53d8f55a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trezor-alerts-possible-seed-stealing-implant-in-sa-53d8f55a</guid>
+      <description><![CDATA[Trezor warned that Safe 5 wallets sold by reseller CryptoBilis may contain a hidden implant that steals the device’s recovery phrase. The implant could compromise the seed, enabling attackers to access stored cryptocurrency funds, though no confirmed exploitation has been reported. Trezor advises users to verify device authenticity, update firmware to the latest version, and avoid purchasing from unverified resellers.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:48:04 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/trezor-hardware-wallet-implant-cryptobilis/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>RHSA-2026:93617: Important: opentelemetry-collector security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-93617-important-opentelemetry-collector-08a99efe</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93617-important-opentelemetry-collector-08a99efe</guid>
@@ -285,6 +357,24 @@
       <pubDate>Mon, 02 Nov 2026 12:47:00 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel-RT Bug Fix for RHEL 8</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-bug-fix-for-rhel-8-a484d2f3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-bug-fix-for-rhel-8-a484d2f3</guid>
+      <description><![CDATA[Red Hat issued a kernel-rt update for Red Enterprise Linux 8 to address a critical bug. The update resolves a kernel-rt race condition that could allow local privilege escalation, though no public exploit has been reported. Customers should apply the RHSA-2026:93670 package immediately to mitigate potential privilege escalation risks system.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:37:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93670">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Teams Messages Used to Steal Remote Access</title>
+      <link>https://secubuzz.com/news/teams-messages-used-to-steal-remote-access-050081a6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/teams-messages-used-to-steal-remote-access-050081a6</guid>
+      <description><![CDATA[Hackers leveraged Microsoft Teams messages and voice calls to impersonate IT support, convincing employees to grant remote‑desktop permissions. The social‑engineering vector bypassed authentication, allowing attackers to move laterally into corporate networks and access privileged accounts without exploiting software flaws. Security teams should enforce MFA, verify support requests, and monitor remote‑access logs, while Microsoft recommends disabling remote‑access connections for non‑essential users.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:33:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-teams-messages/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>RHSA-2026:92221: Important: flatpak security update</title>
@@ -323,6 +413,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Northflank Breach Exposes AI API Keys</title>
+      <link>https://secubuzz.com/news/northflank-breach-exposes-ai-api-keys-53145069</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/northflank-breach-exposes-ai-api-keys-53145069</guid>
+      <description><![CDATA[Northflank reported a security incident that exposed AI API keys, allowing attackers to access platform workloads and misuse environment variables. The breach did not confirm an entry point or attacker identity, but leaked credentials could grant privileged access to global settings and secret groups. Northflank urges customers to rotate all secrets, update variables, and enable MFA to mitigate credential misuse.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:02:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/northflank-security-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93626: Important: python-jwt security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93626-important-python-jwt-security-upda-be651efb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93626-important-python-jwt-security-upda-be651efb</guid>
+      <description><![CDATA[An update for python-jwt is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:58:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93626">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>CVE-2023-21768 WinSock Privilege Escalation PoC</title>
       <link>https://secubuzz.com/news/cve-2023-21768-winsock-privilege-escalation-poc-b0b5680c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2023-21768-winsock-privilege-escalation-poc-b0b5680c</guid>
@@ -341,121 +449,13 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Chainalysis Breach via Offensive Agentic Techniques</title>
-      <link>https://secubuzz.com/news/chainalysis-breach-via-offensive-agentic-technique-946c8397</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-breach-via-offensive-agentic-technique-946c8397</guid>
-      <description><![CDATA[Chainalysis experienced a security incident where external attackers employed offensive agentic techniques to access internal systems and tools. IBM reported no evidence of unauthorized data exfiltration or compromise of investigative data, though the breach exposed internal infrastructure. The company is investigating the incident and has implemented additional monitoring and access controls to prevent future intrusions.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:40:19 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/chainalysis-breached-using-offensive-agentic-techniques/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Prophet Security Survey Evaluates SOC AI Adoption Trends</title>
-      <link>https://secubuzz.com/news/prophet-security-survey-evaluates-soc-ai-adoption-c9669de4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/prophet-security-survey-evaluates-soc-ai-adoption-c9669de4</guid>
-      <description><![CDATA[Prophet Security published its State of AI in Security Operations 2026 survey of over 250 security leaders and practitioners. The report reveals that 40 percent of security teams deploy AI daily, 56 percent are testing implementation, and only 4 percent lack adoption plans. Security operations centers must evaluate structural readiness and operational maturity before deploying AI agents across workflows.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:30:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Synology Alerts on C3RB3R Ransomware Attacks</title>
-      <link>https://secubuzz.com/news/synology-alerts-on-c3rb3r-ransomware-attacks-d3641584</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/synology-alerts-on-c3rb3r-ransomware-attacks-d3641584</guid>
-      <description><![CDATA[Synology warned customers of a surge in C3RB3R ransomware attacks on its NAS devices. The malware encrypts stored data and demands payment, exploiting unpatched firmware vulnerabilities without a cited CVE. Synology urges immediate firmware updates, disabling remote management, and backing up data to mitigate the threat and monitoring for unauthorized access.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:28:42 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/">BleepingComputer</source>
+      <title>Hackers Exploit Patched Synology NAS Vulnerabilities to Deploy C3RB3R Ransomware and Encrypt Files</title>
+      <link>https://secubuzz.com/news/hackers-exploit-patched-synology-nas-vulnerabiliti-9b10c473</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-patched-synology-nas-vulnerabiliti-9b10c473</guid>
+      <description><![CDATA[Synology NAS devices are facing C3RB3R ransomware attacks linked to 2024 security flaws, prompting the company to urge users to update outdated DiskStation Manager versions and packages. The warning followed reports from the 360 Security Team and Solar Emergency Response Team on October 29.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:49:58 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/synology-nas-vulnerabilities-c3rb3r-ransomware/">Cyber Security News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Threat Actors Impersonate IT Support on Microsoft Teams</title>
-      <link>https://secubuzz.com/news/threat-actors-impersonate-it-support-on-microsoft-052d7de6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threat-actors-impersonate-it-support-on-microsoft-052d7de6</guid>
-      <description><![CDATA[Threat actors impersonated IT support personnel on Microsoft Teams to trick employees into granting remote access to corporate workstations. Attackers exploited misconfigured Active Directory Certificate Services settings to mint authentication certificates for privileged accounts, including a domain controller, resulting in data theft. Organizations should restrict certificate templates, enforce strict social engineering defenses, and audit Active Directory Certificate Services misconfigurations.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:08:45 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93592: Important: freerdp security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93592-important-freerdp-security-update-4c834942</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93592-important-freerdp-security-update-4c834942</guid>
-      <description><![CDATA[An update for freerdp is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:03:22 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93592">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Impersonate AI Bots to Hunt Credentials</title>
-      <link>https://secubuzz.com/news/hackers-impersonate-ai-bots-to-hunt-credentials-cf7804e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-impersonate-ai-bots-to-hunt-credentials-cf7804e2</guid>
-      <description><![CDATA[Attackers are impersonating ChatGPT, Claude, and Perplexity AI bots to scan websites for passwords, API keys, and cloud credentials. The campaign leverages familiar AI service names to bypass trust mechanisms and test whether organizations grant access based on perceived legitimacy. This social engineering technique targets credential theft at scale.]]></description>
-      <pubDate>Mon, 02 Nov 2026 11:01:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-impersonate-ai-bots/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Government Linux Servers Targeted in SysGoRAT Espionage Campaign</title>
-      <link>https://secubuzz.com/news/government-linux-servers-targeted-in-sysgorat-espi-b00f8861</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/government-linux-servers-targeted-in-sysgorat-espi-b00f8861</guid>
-      <description><![CDATA[Palo Alto Networks Unit 42 discovered a cyber espionage campaign targeting Linux servers across government and state-affiliated entities. Tracked as cluster CL-UNK-1211, the attackers deployed SysGoRAT malware alongside suspected AI-generated scripts to conduct unauthorized operational reconnaissance and control. Defenders must inspect Linux infrastructure for unauthorized background processes, monitor script executions, and implement strict host-based access controls.]]></description>
-      <pubDate>Mon, 02 Nov 2026 10:49:59 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html">The Hacker News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>CyberStrikeAI Breach Guidance Released for Exposure Verification</title>
-      <link>https://secubuzz.com/news/cyberstrikeai-breach-guidance-released-for-exposur-02d0faa5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyberstrikeai-breach-guidance-released-for-exposur-02d0faa5</guid>
-      <description><![CDATA[Security researchers issued an intelligence alert detailing a recent data breach affecting CyberStrikeAI systems and telemetry infrastructure. The incident exposes internal operational telemetry, creating potential operational risks and requiring immediate root-cause telemetry analysis to hunt for exposure. Incident response teams should review root-cause telemetry, deploy recommended detection rules, and apply necessary patches immediately.]]></description>
-      <pubDate>Mon, 02 Nov 2026 10:45:45 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cyberstrikeai-in-the-wild-the-use-of-ai-in-real-world-a">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Hackers Use CyberStrikeAI Agents to Automate Windows Domain Takeovers and Credential Theft</title>
-      <link>https://secubuzz.com/news/hackers-use-cyberstrikeai-agents-to-automate-windo-d471d7a9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-cyberstrikeai-agents-to-automate-windo-d471d7a9</guid>
-      <description><![CDATA[Hackers are now using an AI-driven command framework called CyberStrikeAI to break into Windows networks and take over entire domains. Education organizations in Africa and Latin America were among the confirmed victims. The tool lets a language model decide which commands to run, so the operator no longer types each step by hand.]]></description>
-      <pubDate>Mon, 02 Nov 2026 10:34:24 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-cyberstrikeai-agents-2/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chainalysis Breach via AI-Driven Attack</title>
-      <link>https://secubuzz.com/news/chainalysis-breach-via-ai-driven-attack-d196dbe1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-breach-via-ai-driven-attack-d196dbe1</guid>
-      <description><![CDATA[Chainalysis suffered a data breach after attackers used AI‑driven offensive agentic techniques to infiltrate its internal systems and tools. The attack exploited automated reconnaissance and credential‑guessing capabilities, granting unauthorized access to proprietary data; no public exploit code is reported. Chainalysis has disclosed the incident and is conducting forensics; security teams should review access controls, monitor anomalies, and apply vendor patches.]]></description>
-      <pubDate>Mon, 02 Nov 2026 10:27:49 GMT</pubDate>
-      <source url="https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Releases freerdp Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-freerdp-security-update-098ea92e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-freerdp-security-update-098ea92e</guid>
-      <description><![CDATA[Red Hat issued an important security update for the freerdp client on Enterprise Linux 7. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the references, potentially preventing remote code execution or privilege escalation. Customers should apply the freerdp update immediately and review the CVE references for detailed impact.]]></description>
-      <pubDate>Mon, 02 Nov 2026 10:22:59 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93559">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FBI Links $6B Binance Heist to North Korea</title>
-      <link>https://secubuzz.com/news/fbi-links-6b-binance-heist-to-north-korea-ac6b5964</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-links-6b-binance-heist-to-north-korea-ac6b5964</guid>
-      <description><![CDATA[The FBI confirmed that North Korea was responsible for a $6 billion theft of virtual assets from Binance on October 29, 2026. The attack exploited compromised wallet addresses, allowing attackers to siphon funds from Binance’s transaction network. Binance and the crypto industry are urged to block TraderTraitor‑linked transactions, enhance wallet monitoring, and tighten KYC procedures to prevent repeat incidents.]]></description>
-      <pubDate>Mon, 02 Nov 2026 10:12:51 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Issues GIMP Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-gimp-security-update-61833136</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-gimp-security-update-61833136</guid>
-      <description><![CDATA[Red Hat released a security update for GIMP on RHEL 9.2 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could allow local privilege escalation or denial of service; CVSS scores are listed in the referenced CVE links. Users should apply the update immediately and verify that the affected packages are upgraded to the patched versions.]]></description>
-      <pubDate>Mon, 02 Nov 2026 09:58:04 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93589">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

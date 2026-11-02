@@ -19,6 +19,22 @@
     "isFallback": true
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+    "title": "Sageworks Outage After Suspected Cyberattack",
+    "headline": "Sageworks Outage After Suspected Cyberattack",
+    "summary": "Abrigo’s Sageworks risk‑management platform experienced an outage after detecting irregular activity, prompting a temporary shutdown of borrower‑facing services. The incident was attributed to a suspected cyberattack, though no data exfiltration or credential compromise has been confirmed. Abrigo has restored core functionality but is maintaining heightened monitoring and will evaluate the root cause before fully reopening borrower interfaces.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-02T19:00:45.000Z",
+    "ingestedAt": "2026-11-02T20:43:19.965Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93925",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93925",
     "title": "RHSA-2026:93925: Important: bind security, bug fix, and enhancement update",
@@ -100,6 +116,54 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise",
+    "sourceUrl": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise",
+    "title": "Polymarket to Refund $3.9M After Compromise",
+    "headline": "Polymarket to Refund $3.9M After Compromise",
+    "summary": "Polymarket announced it will reimburse users $3.9 million following a site compromise that disrupted services and caused financial losses. The incident involved unauthorized access to the platform, though no evidence of data exfiltration or credential theft has been disclosed. Polymarket is conducting a post‑mortem, tightening security controls, and urging users to monitor accounts for suspicious activity.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-11-02T17:05:20.000Z",
+    "ingestedAt": "2026-11-02T20:43:19.965Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.huntress.com/blog/what-is-threat-hunting",
+    "sourceUrl": "https://www.huntress.com/blog/what-is-threat-hunting",
+    "title": "Threat Hunting Explained: Purpose and Process",
+    "headline": "Threat Hunting Explained: Purpose and Process",
+    "summary": "Threat hunting is a proactive security practice that identifies hidden threats within an organization. Huntress explains the process, emphasizing human‑led detection to uncover anomalies automation may miss, and outlines key methodologies such as hypothesis‑driven investigation and data correlation. Security teams should adopt structured threat‑hunting frameworks and integrate continuous monitoring to improve detection coverage.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Huntress",
+    "publishedAt": "2026-11-02T17:00:00.000Z",
+    "ingestedAt": "2026-11-02T20:43:28.716Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.huntress.com/blog/what-is-threat-hunting",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+    "title": "Weekly Recap: CVEs, DDoS, Phishing, Spyware",
+    "headline": "Weekly Recap: CVEs, DDoS, Phishing, Spyware",
+    "summary": "The recap covers critical CVEs, a Linux DDoS botnet, device‑code phishing, and Android spyware incidents. Attackers used low‑effort vectors such as fake support calls, trusted extensions, shared links, and devices without passwords to achieve serious damage. Defenders should patch CVEs promptly, monitor botnet traffic, and enforce device authentication to reduce exposure.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-02T16:57:56.000Z",
+    "ingestedAt": "2026-11-02T20:43:28.716Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/",
     "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/",
     "title": "CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas",
@@ -148,6 +212,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/02/cisa-to-federal-agencies-remediate-exploited-ivanti-connect-secure-vulnerabilities-cve-2026-111357-cve-2026-118527/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/",
+    "sourceUrl": "https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/",
+    "title": "Binance Breach: $6.3B Digital Asset Theft",
+    "headline": "Binance Breach: $6.3B Digital Asset Theft",
+    "summary": "Binance suffered a cyberattack that stole roughly $6.3 billion in digital assets by compromising a DevOps engineer’s laptop and exploiting internal wallet infrastructure. The breach exposed privileged credentials and enabled attackers to move laterally within the exchange’s environment, bypassing existing security controls. Binance has applied patches, revoked compromised accounts, and is conducting a forensic investigation to prevent future incidents.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "publishedAt": "2026-11-02T15:57:23.000Z",
+    "ingestedAt": "2026-11-02T20:43:28.716Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/",
     "additionalSources": []
   },
   {
@@ -212,6 +292,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+    "title": "Carriers Retain Call Logs for Years, Raising Privacy Risks",
+    "headline": "Carriers Retain Call Logs for Years, Raising Privacy Risks",
+    "summary": "Carriers can retain call and text metadata for years, exposing customers’ relationships, locations, and routines if breached. Cape’s service reduces exposure by automatically deleting call records, limiting the metadata carriers can store. Organizations should review carrier retention policies and adopt comprehensive solutions that enforce strictly timely deletion to safeguard privacy.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-02T15:01:11.000Z",
+    "ingestedAt": "2026-11-02T20:43:28.716Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
     "additionalSources": []
   },
   {
@@ -409,6 +505,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
+    "sourceUrl": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
+    "title": "Google Offers $250k Root-in-Cloud Bounty",
+    "headline": "Google Offers $250k Root-in-Cloud Bounty",
+    "summary": "Google announced a root‑in‑cloud bug bounty program offering $250,000 for researchers who demonstrate full administrative control over a cloud environment. The reward targets architectural research exposing critical cloud infrastructure weaknesses, encouraging discovery of vulnerabilities that could enable enterprise‑wide compromise. The program is a policy initiative; no specific vulnerability is disclosed, and participants must follow Google’s disclosure guidelines.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-02T13:25:11.000Z",
+    "ingestedAt": "2026-11-02T20:43:39.629Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.wiz.io/blog/soc-alerts-red-and-blue-agents",
     "sourceUrl": "https://www.wiz.io/blog/soc-alerts-red-and-blue-agents",
     "title": "Wiz Releases Red and Blue Agents for SOC Teams",
@@ -474,6 +586,22 @@
     "isFallback": true
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/02/trezor-hardware-wallet-implant-cryptobilis/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/trezor-hardware-wallet-implant-cryptobilis/",
+    "title": "Trezor Alerts Possible Seed‑Stealing Implant in Safe 5",
+    "headline": "Trezor Alerts Possible Seed‑Stealing Implant in Safe 5",
+    "summary": "Trezor warned that Safe 5 wallets sold by reseller CryptoBilis may contain a hidden implant that steals the device’s recovery phrase. The implant could compromise the seed, enabling attackers to access stored cryptocurrency funds, though no confirmed exploitation has been reported. Trezor advises users to verify device authenticity, update firmware to the latest version, and avoid purchasing from unverified resellers.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-02T12:48:04.000Z",
+    "ingestedAt": "2026-11-02T20:43:39.629Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/02/trezor-hardware-wallet-implant-cryptobilis/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93617",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93617",
     "title": "RHSA-2026:93617: Important: opentelemetry-collector security update",
@@ -504,6 +632,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93670",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93670",
+    "title": "Red Hat Releases Kernel-RT Bug Fix for RHEL 8",
+    "headline": "Red Hat Releases Kernel-RT Bug Fix for RHEL 8",
+    "summary": "Red Hat issued a kernel-rt update for Red Enterprise Linux 8 to address a critical bug. The update resolves a kernel-rt race condition that could allow local privilege escalation, though no public exploit has been reported. Customers should apply the RHSA-2026:93670 package immediately to mitigate potential privilege escalation risks system.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T12:37:41.000Z",
+    "ingestedAt": "2026-11-02T20:43:15.885Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93670",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/microsoft-teams-messages/",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-teams-messages/",
+    "title": "Teams Messages Used to Steal Remote Access",
+    "headline": "Teams Messages Used to Steal Remote Access",
+    "summary": "Hackers leveraged Microsoft Teams messages and voice calls to impersonate IT support, convincing employees to grant remote‑desktop permissions. The social‑engineering vector bypassed authentication, allowing attackers to move laterally into corporate networks and access privileged accounts without exploiting software flaws. Security teams should enforce MFA, verify support requests, and monitor remote‑access logs, while Microsoft recommends disabling remote‑access connections for non‑essential users.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-02T12:33:55.000Z",
+    "ingestedAt": "2026-11-02T20:43:19.965Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/microsoft-teams-messages/",
     "additionalSources": []
   },
   {
@@ -573,6 +733,39 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/northflank-security-breach/",
+    "sourceUrl": "https://cybersecuritynews.com/northflank-security-breach/",
+    "title": "Northflank Breach Exposes AI API Keys",
+    "headline": "Northflank Breach Exposes AI API Keys",
+    "summary": "Northflank reported a security incident that exposed AI API keys, allowing attackers to access platform workloads and misuse environment variables. The breach did not confirm an entry point or attacker identity, but leaked credentials could grant privileged access to global settings and secret groups. Northflank urges customers to rotate all secrets, update variables, and enable MFA to mitigate credential misuse.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-02T12:02:20.000Z",
+    "ingestedAt": "2026-11-02T20:43:19.965Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/northflank-security-breach/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93626",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93626",
+    "title": "RHSA-2026:93626: Important: python-jwt security update",
+    "headline": "RHSA-2026:93626: Important: python-jwt security update",
+    "summary": "An update for python-jwt is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T11:58:00.000Z",
+    "ingestedAt": "2026-11-02T20:44:26.479Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://cybersecuritynews.com/poc-for-windows-winsock-ancillary-vulnerability/",
     "sourceUrl": "https://cybersecuritynews.com/poc-for-windows-winsock-ancillary-vulnerability/",
     "title": "CVE-2023-21768 WinSock Privilege Escalation PoC",
@@ -603,6 +796,23 @@
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
     "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/synology-nas-vulnerabilities-c3rb3r-ransomware/",
+    "sourceUrl": "https://cybersecuritynews.com/synology-nas-vulnerabilities-c3rb3r-ransomware/",
+    "title": "Hackers Exploit Patched Synology NAS Vulnerabilities to Deploy C3RB3R Ransomware and Encrypt Files",
+    "headline": "Hackers Exploit Patched Synology NAS Vulnerabilities to Deploy C3RB3R Ransomware and Encrypt Files",
+    "summary": "Synology NAS devices are facing C3RB3R ransomware attacks linked to 2024 security flaws, prompting the company to urge users to update outdated DiskStation Manager versions and packages. The warning followed reports from the 360 Security Team and Solar Emergency Response Team on October 29.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-02T11:49:58.000Z",
+    "ingestedAt": "2026-11-02T20:44:26.478Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/02/chainalysis-breached-using-offensive-agentic-techniques/",
@@ -700,6 +910,23 @@
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/hackers-impersonate-ai-bots/",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93596",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93596",
+    "title": "RHSA-2026:93596: Important: opentelemetry-collector security update",
+    "headline": "RHSA-2026:93596: Important: opentelemetry-collector security update",
+    "summary": "An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T10:54:20.000Z",
+    "ingestedAt": "2026-11-02T20:44:07.678Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
@@ -997,6 +1224,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-october-26-november-1-2",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-october-26-november-1-2",
+    "title": "Weekly Security Highlights: Oct 26–Nov 1",
+    "headline": "Weekly Security Highlights: Oct 26–Nov 1",
+    "summary": "The article provides a weekly roundup of the latest cybersecurity topics discussed between October 26 and November 1, 2026. It covers a range of subjects, from emerging threats and vulnerability disclosures to industry trends and ongoing defensive best practices. Readers can use the summary to stay informed about recent developments in the security landscape.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-11-02T08:01:00.000Z",
+    "ingestedAt": "2026-11-02T20:43:39.629Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-october-26-november-1-2",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/volta-malware-steals-gmail/",
     "sourceUrl": "https://cybersecuritynews.com/volta-malware-steals-gmail/",
     "title": "VOLTA Infostealer Harvests Gmail, Discord, Uses AI Profiling",
@@ -1058,6 +1301,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/02/byoky-open-source-ai-api-key-wallet/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/five-lessons-from-agentworks-hackathon/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/five-lessons-from-agentworks-hackathon/",
+    "title": "AgentWorks Hackathon Yields 5 Security Agent Lessons",
+    "headline": "AgentWorks Hackathon Yields 5 Security Agent Lessons",
+    "summary": "The article examines five lessons learned from the AgentWorks Hackathon that illustrate best practices for building effective security agents. It highlights design principles such as modular architecture, real‑time threat detection, secure communication, and continuous integration testing. The insights aim to guide developers in creating robust, scalable agents that can adapt to evolving threat landscapes.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-11-02T06:00:00.000Z",
+    "ingestedAt": "2026-11-02T20:43:39.629Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.crowdstrike.com/en-us/blog/five-lessons-from-agentworks-hackathon/",
     "additionalSources": []
   },
   {
