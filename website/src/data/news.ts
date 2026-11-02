@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "synology-alerts-on-c3rb3r-ransomware-attacks-d3641584",
+    "title": "Synology Alerts on C3RB3R Ransomware Attacks",
+    "summary": "Synology warned customers of a surge in C3RB3R ransomware attacks on its NAS devices. The malware encrypts stored data and demands payment, exploiting unpatched firmware vulnerabilities without a cited CVE. Synology urges immediate firmware updates, disabling remote management, and backing up data to mitigate the threat and monitoring for unauthorized access.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+    "publishedAt": "2026-11-02T11:28:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "synology-alerts-on-c3rb3r-ransomware-attacks",
+      "article-d3641584",
+      "d3641584",
+      "synology-alerts-on-c3rb3r-ransomware-attacks-755df0"
+    ]
+  },
+  {
+    "slug": "threat-actors-impersonate-it-support-on-microsoft-052d7de6",
+    "title": "Threat Actors Impersonate IT Support on Microsoft Teams",
+    "summary": "Threat actors impersonated IT support personnel on Microsoft Teams to trick employees into granting remote access to corporate workstations. Attackers exploited misconfigured Active Directory Certificate Services settings to mint authentication certificates for privileged accounts, including a domain controller, resulting in data theft. Organizations should restrict certificate templates, enforce strict social engineering defenses, and audit Active Directory Certificate Services misconfigurations.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+    "publishedAt": "2026-11-02T11:08:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threat-actors-impersonate-it-support-on-microsoft",
+      "article-052d7de6",
+      "052d7de6",
+      "threat-actors-impersonate-it-support-on-microsoft-7ecd75",
+      "threat-actors-impersonate-it-support-on-microsoft-teams"
+    ]
+  },
+  {
+    "slug": "government-linux-servers-targeted-in-sysgorat-espi-b00f8861",
+    "title": "Government Linux Servers Targeted in SysGoRAT Espionage Campaign",
+    "summary": "Palo Alto Networks Unit 42 discovered a cyber espionage campaign targeting Linux servers across government and state-affiliated entities. Tracked as cluster CL-UNK-1211, the attackers deployed SysGoRAT malware alongside suspected AI-generated scripts to conduct unauthorized operational reconnaissance and control. Defenders must inspect Linux infrastructure for unauthorized background processes, monitor script executions, and implement strict host-based access controls.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+    "publishedAt": "2026-11-02T10:49:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "government-linux-servers-targeted-in-sysgorat-espi",
+      "article-b00f8861",
+      "b00f8861",
+      "government-linux-servers-targeted-in-sysgorat-espi-27781a",
+      "government-linux-servers-targeted-in-sysgorat-espionage-camp"
+    ]
+  },
+  {
+    "slug": "cyberstrikeai-breach-guidance-released-for-exposur-02d0faa5",
+    "title": "CyberStrikeAI Breach Guidance Released for Exposure Verification",
+    "summary": "Security researchers issued an intelligence alert detailing a recent data breach affecting CyberStrikeAI systems and telemetry infrastructure. The incident exposes internal operational telemetry, creating potential operational risks and requiring immediate root-cause telemetry analysis to hunt for exposure. Incident response teams should review root-cause telemetry, deploy recommended detection rules, and apply necessary patches immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cyberstrikeai-in-the-wild-the-use-of-ai-in-real-world-a",
+    "publishedAt": "2026-11-02T10:45:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyberstrikeai-breach-guidance-released-for-exposur",
+      "article-02d0faa5",
+      "02d0faa5",
+      "cyberstrikeai-breach-guidance-released-for-exposur-32913a",
+      "cyberstrikeai-breach-guidance-released-for-exposure-verifica"
+    ]
+  },
+  {
     "slug": "chainalysis-breach-via-ai-driven-attack-d196dbe1",
     "title": "Chainalysis Breach via AI-Driven Attack",
     "summary": "Chainalysis suffered a data breach after attackers used AI‑driven offensive agentic techniques to infiltrate its internal systems and tools. The attack exploited automated reconnaissance and credential‑guessing capabilities, granting unauthorized access to proprietary data; no public exploit code is reported. Chainalysis has disclosed the incident and is conducting forensics; security teams should review access controls, monitor anomalies, and apply vendor patches.",
@@ -26,6 +101,24 @@ export const news: NewsBrief[] = [
       "article-d196dbe1",
       "d196dbe1",
       "chainalysis-breach-via-ai-driven-attack-642816"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-freerdp-security-update-098ea92e",
+    "title": "Red Hat Releases freerdp Security Update",
+    "summary": "Red Hat issued an important security update for the freerdp client on Enterprise Linux 7. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the references, potentially preventing remote code execution or privilege escalation. Customers should apply the freerdp update immediately and review the CVE references for detailed impact.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93559",
+    "publishedAt": "2026-11-02T10:22:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-freerdp-security-update",
+      "article-098ea92e",
+      "098ea92e",
+      "red-hat-releases-freerdp-security-update-37d92a"
     ]
   },
   {
@@ -310,6 +403,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-freerdp-security-update-for-rhel-25ad2aab",
+    "title": "Red Hat Releases FreeRDP Security Update for RHEL",
+    "summary": "Red Hat issued an important security update for the freerdp package on Red Hat Enterprise Linux 8.6 systems. The update addresses security flaws rated as important that could impact remote desktop protocol client connections and system stability. System administrators should apply the patch via Red Hat Enterprise Linux 8.6 update channels to mitigate potential risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93549",
+    "publishedAt": "2026-11-02T05:58:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-freerdp-security-update-for-rhel",
+      "article-25ad2aab",
+      "25ad2aab",
+      "red-hat-releases-freerdp-security-update-for-rhel-37d92a"
+    ]
+  },
+  {
     "slug": "volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1",
     "title": "VOLTA Infostealer Leverages LLMs to Rank Victims",
     "summary": "A new infostealer, VOLTA-AUTODOXER, harvests credentials and browser cookies from Chromium-based browsers, Outlook profiles, and Slack workspaces. The malware employs language models such as Claude, Gemini, and Kimi to evaluate stolen data and prioritize victims by financial value. Security teams should deploy endpoint detection and response solutions, block known VOLTA download domains, and enforce multi‑factor authentication to mitigate credential theft.",
@@ -549,6 +660,24 @@ export const news: NewsBrief[] = [
       "article-59bea493",
       "59bea493",
       "red-hat-updates-nginx-on-rhel-9-4-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-net-8-0-update-for-rhel-9-4-fa65bc85",
+    "title": "Red Hat Issues .NET 8.0 Update for RHEL 9.4",
+    "summary": "Red Hat released a security update for .NET 8.0 on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The patch fixes several CVE‑identified flaws that could enable remote code execution or privilege escalation, with CVSS scores up to 9.0. Red Hat advises applying the update immediately via the provided RPMs or the Customer Portal to secure affected systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93456",
+    "publishedAt": "2026-11-02T04:37:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-net-8-0-update-for-rhel-9-4",
+      "article-fa65bc85",
+      "fa65bc85",
+      "red-hat-issues-net-8-0-update-for-rhel-9-4-37d92e"
     ]
   },
   {
@@ -2941,22 +3070,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "malicious-claude-code-extension-installs-ssh-backd-8b6376d3",
-    "title": "Malicious Claude Code Extension Installs SSH Backdoor",
-    "summary": "Cursor confirmed that malicious Claude Code extension packages were available in the VS Code Marketplace for about 11 hours, targeting Windows and macOS users. The altered packages attempted to install an SSH backdoor, providing attackers with persistent remote access once installed. Cursor recommends users uninstall the affected extensions immediately and update to the latest verified versions to mitigate the threat.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
+    "slug": "cursor-supply-chain-attack-serves-malicious-claude-1ac76498",
+    "title": "Cursor Supply Chain Attack Serves Malicious Claude Extension",
+    "summary": "A malicious Claude Code extension was delivered through a Cursor supply chain attack, targeting users of the Cursor platform. The extension performed host reconnaissance and attempted to establish a reverse SSH tunnel, enabling potential remote access if successful, though no confirmed exploitation is reported. Users should remove the extension, update to Cursor version, and monitor for unauthorized SSH connections.",
+    "category": "Breach",
+    "severity": "MEDIUM",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/malicious-claude-code-extension-with-cursor/",
     "publishedAt": "2026-10-31T10:41:18.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/"
+      }
+    ],
     "aliases": [
-      "malicious-claude-code-extension-installs-ssh-backd",
-      "article-8b6376d3",
-      "8b6376d3",
-      "malicious-claude-code-extension-installs-ssh-backd-20ebc5",
-      "malicious-claude-code-extension-installs-ssh-backdoor"
+      "cursor-supply-chain-attack-serves-malicious-claude",
+      "article-1ac76498",
+      "1ac76498",
+      "cursor-supply-chain-attack-serves-malicious-claude-20ebc5",
+      "cursor-supply-chain-attack-serves-malicious-claude-extension"
     ]
   },
   {

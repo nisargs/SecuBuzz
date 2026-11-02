@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 10:46:23 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 11:46:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Synology Alerts on C3RB3R Ransomware Attacks</title>
+      <link>https://secubuzz.com/news/synology-alerts-on-c3rb3r-ransomware-attacks-d3641584</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/synology-alerts-on-c3rb3r-ransomware-attacks-d3641584</guid>
+      <description><![CDATA[Synology warned customers of a surge in C3RB3R ransomware attacks on its NAS devices. The malware encrypts stored data and demands payment, exploiting unpatched firmware vulnerabilities without a cited CVE. Synology urges immediate firmware updates, disabling remote management, and backing up data to mitigate the threat and monitoring for unauthorized access.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:28:42 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Threat Actors Impersonate IT Support on Microsoft Teams</title>
+      <link>https://secubuzz.com/news/threat-actors-impersonate-it-support-on-microsoft-052d7de6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threat-actors-impersonate-it-support-on-microsoft-052d7de6</guid>
+      <description><![CDATA[Threat actors impersonated IT support personnel on Microsoft Teams to trick employees into granting remote access to corporate workstations. Attackers exploited misconfigured Active Directory Certificate Services settings to mint authentication certificates for privileged accounts, including a domain controller, resulting in data theft. Organizations should restrict certificate templates, enforce strict social engineering defenses, and audit Active Directory Certificate Services misconfigurations.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:08:45 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Government Linux Servers Targeted in SysGoRAT Espionage Campaign</title>
+      <link>https://secubuzz.com/news/government-linux-servers-targeted-in-sysgorat-espi-b00f8861</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/government-linux-servers-targeted-in-sysgorat-espi-b00f8861</guid>
+      <description><![CDATA[Palo Alto Networks Unit 42 discovered a cyber espionage campaign targeting Linux servers across government and state-affiliated entities. Tracked as cluster CL-UNK-1211, the attackers deployed SysGoRAT malware alongside suspected AI-generated scripts to conduct unauthorized operational reconnaissance and control. Defenders must inspect Linux infrastructure for unauthorized background processes, monitor script executions, and implement strict host-based access controls.]]></description>
+      <pubDate>Mon, 02 Nov 2026 10:49:59 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>CyberStrikeAI Breach Guidance Released for Exposure Verification</title>
+      <link>https://secubuzz.com/news/cyberstrikeai-breach-guidance-released-for-exposur-02d0faa5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyberstrikeai-breach-guidance-released-for-exposur-02d0faa5</guid>
+      <description><![CDATA[Security researchers issued an intelligence alert detailing a recent data breach affecting CyberStrikeAI systems and telemetry infrastructure. The incident exposes internal operational telemetry, creating potential operational risks and requiring immediate root-cause telemetry analysis to hunt for exposure. Incident response teams should review root-cause telemetry, deploy recommended detection rules, and apply necessary patches immediately.]]></description>
+      <pubDate>Mon, 02 Nov 2026 10:45:45 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cyberstrikeai-in-the-wild-the-use-of-ai-in-real-world-a">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Chainalysis Breach via AI-Driven Attack</title>
       <link>https://secubuzz.com/news/chainalysis-breach-via-ai-driven-attack-d196dbe1</link>
@@ -15,6 +51,15 @@
       <pubDate>Mon, 02 Nov 2026 10:27:49 GMT</pubDate>
       <source url="https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases freerdp Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-freerdp-security-update-098ea92e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-freerdp-security-update-098ea92e</guid>
+      <description><![CDATA[Red Hat issued an important security update for the freerdp client on Enterprise Linux 7. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the references, potentially preventing remote code execution or privilege escalation. Customers should apply the freerdp update immediately and review the CVE references for detailed impact.]]></description>
+      <pubDate>Mon, 02 Nov 2026 10:22:59 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93559">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>FBI Links $6B Binance Heist to North Korea</title>
@@ -152,6 +197,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Releases FreeRDP Security Update for RHEL</title>
+      <link>https://secubuzz.com/news/red-hat-releases-freerdp-security-update-for-rhel-25ad2aab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-freerdp-security-update-for-rhel-25ad2aab</guid>
+      <description><![CDATA[Red Hat issued an important security update for the freerdp package on Red Hat Enterprise Linux 8.6 systems. The update addresses security flaws rated as important that could impact remote desktop protocol client connections and system stability. System administrators should apply the patch via Red Hat Enterprise Linux 8.6 update channels to mitigate potential risks.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:58:37 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93549">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>VOLTA Infostealer Leverages LLMs to Rank Victims</title>
       <link>https://secubuzz.com/news/volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1</guid>
@@ -266,6 +320,15 @@
       <description><![CDATA[Red Hat released an important‑severity security update for nginx on RHEL 9.4 for SAP Solutions. The update fixes one or more vulnerabilities referenced by CVE links, but no specific CVE ID is disclosed. Administrators should apply the patch to prevent potential exploitation of the web server component and mitigate denial of service or remote code execution risks.]]></description>
       <pubDate>Mon, 02 Nov 2026 04:38:56 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93468">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues .NET 8.0 Update for RHEL 9.4</title>
+      <link>https://secubuzz.com/news/red-hat-issues-net-8-0-update-for-rhel-9-4-fa65bc85</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-net-8-0-update-for-rhel-9-4-fa65bc85</guid>
+      <description><![CDATA[Red Hat released a security update for .NET 8.0 on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The patch fixes several CVE‑identified flaws that could enable remote code execution or privilege escalation, with CVSS scores up to 9.0. Red Hat advises applying the update immediately via the provided RPMs or the Customer Portal to secure affected systems.]]></description>
+      <pubDate>Mon, 02 Nov 2026 04:37:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93456">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -392,69 +455,6 @@
       <description><![CDATA[Red Hat released a libxml2 security update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service. The update fixes multiple libxml2 vulnerabilities, each assigned a CVE and rated Important, with CVSS scores indicating high risk. Red Hat recommends installing RHSA-2026:93463 immediately; users can verify patch status via the CVE links, no workarounds needed.]]></description>
       <pubDate>Mon, 02 Nov 2026 03:36:06 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93463">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Enterprise Linux 9.6 libXtst Update Addresses Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-enterprise-linux-9-6-libxtst-update-addresses-7f95f7d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-9-6-libxtst-update-addresses-7f95f7d3</guid>
-      <description><![CDATA[Red Enterprise Linux 9.6 EUS users receive a libXtst security update addressing multiple vulnerabilities. The update fixes issues identified by Red Hat Product Security, with CVSS scores in the CVE references indicating moderate to high impact. Apply RHSA-2026:93450 immediately to mitigate the weaknesses and review the CVE links for severity details.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:35:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93450">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important Update for libsoup</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-update-for-libsoup-90d9b9f2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-update-for-libsoup-90d9b9f2</guid>
-      <description><![CDATA[A high‑severity vulnerability in libsoup affects Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rates the flaw important, with a CVSS base score listed in the CVE references but no public exploit. Security teams should install the libsoup update available for RHEL 7 Extended Lifecycle Support to mitigate the risk.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:33:36 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93465">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates libxml2 with Important Fix</title>
-      <link>https://secubuzz.com/news/red-hat-updates-libxml2-with-important-fix-9e7aeae0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-libxml2-with-important-fix-9e7aeae0</guid>
-      <description><![CDATA[Red Hat issued an important update for libxml2 in RHEL 8.4, addressing a vulnerability that could allow XML parsing exploits. The defect, with a moderate CVSS score, permits attackers to trigger buffer overflows during XML processing, potentially leading to code execution. Red Hat advises installing the patch promptly and reviewing the CVE links for full remediation guidance.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:27:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93473">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical idm:client Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-idm-client-update-e25b3871</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-idm-client-update-e25b3871</guid>
-      <description><![CDATA[Red Hat released a critical update for the idm:client module in RHEL 8.4, fixing a vulnerability that could allow unauthorized identity access. The flaw, rated with a high CVSS score, permits exploitation of client authentication, potentially enabling privilege escalation. Red Hat recommends applying the patch immediately and verifying the CVE references to ensure mitigation.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:27:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93452">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>perl-XML-LibXML Security Update for RHEL 8.4 Released</title>
-      <link>https://secubuzz.com/news/perl-xml-libxml-security-update-for-rhel-8-4-relea-09109957</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/perl-xml-libxml-security-update-for-rhel-8-4-relea-09109957</guid>
-      <description><![CDATA[An update for perl-XML-LibXML on RHEL 8.4 addresses multiple security vulnerabilities. The vulnerabilities were identified by Red Hat Product Security and rated as Important, with no public exploit reported in the wild. The update is available for RHEL 8.4 via the package manager and should be applied promptly to prevent exploitation.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:27:11 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93470">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Thunderbird Security Update for RHEL 9 Released</title>
-      <link>https://secubuzz.com/news/thunderbird-security-update-for-rhel-9-released-32ba1ab4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/thunderbird-security-update-for-rhel-9-released-32ba1ab4</guid>
-      <description><![CDATA[An update for Thunderbird on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities. The vulnerabilities were identified by Red Hat Product Security and rated as Important, but no public exploit is known. The update is available through RHEL 9's package manager and should be applied immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:03:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93443">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>LXD/Incus Certificate Validation Flaw Enables Remote Control</title>
-      <link>https://secubuzz.com/news/lxd-incus-certificate-validation-flaw-enables-remo-99c45be4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/lxd-incus-certificate-validation-flaw-enables-remo-99c45be4</guid>
-      <description><![CDATA[A critical certificate validation flaw in LXD and Incus lets attackers bypass HTTPS management authentication and seize control of clusters and VMs. The flaw allows unauthenticated access without passwords, stolen keys, or user interaction, exposing Linux hosts to full administrative takeover. Canonical and Red Hat have released patches; operators should upgrade LXD/Incus to the latest version and enforce certificate validation.]]></description>
-      <pubDate>Mon, 02 Nov 2026 02:45:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/certificate-validation-flaw-in-lxd-and-incus/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
   </channel>
