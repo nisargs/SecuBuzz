@@ -11,6 +11,82 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd",
+    "title": "Google dismantles 1.3M-device XCPE Android botnet",
+    "summary": "Google and industry partners dismantled the XCPE malware botnet that infected more than 1.3 million Android TV streaming boxes. The botnet was seeded by the manufacturer’s firmware, which embedded malicious code to monetize cybercrime, enabling remote command and control.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+    "publishedAt": "2026-11-02T18:16:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-dismantles-1-3m-device-xcpe-android-botnet",
+      "article-cdb83fcd",
+      "cdb83fcd",
+      "google-dismantles-1-3m-device-xcpe-android-botnet-668192"
+    ]
+  },
+  {
+    "slug": "mercado-bitcoin-breach-involves-40m-suspicious-tra-6c73a023",
+    "title": "Mercado Bitcoin Breach Involves $40M Suspicious Transfers",
+    "summary": "Brazilian cryptocurrency exchange Mercado Bitcoin detected a security incident that halted deposits and withdrawals on November 2, 2026. Security firm Hypernative identified more than $40 million in suspicious transfers across at least ten blockchains, indicating potential credential theft or compromised wallet access.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/mercado-bitcoin-suffers-cyberattack/",
+    "publishedAt": "2026-11-02T17:54:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mercado-bitcoin-breach-involves-40m-suspicious-tra",
+      "article-6c73a023",
+      "6c73a023",
+      "mercado-bitcoin-breach-involves-40m-suspicious-tra-3be776",
+      "mercado-bitcoin-breach-involves-40m-suspicious-transfers"
+    ]
+  },
+  {
+    "slug": "amazon-vew-exposes-template-injection-vulnerabilit-0116f358",
+    "title": "Amazon VEW Exposes Template Injection Vulnerability CVE-2026-119085",
+    "summary": "Amazon Virtual Engineering Workbench (VEW) suffers a template injection flaw (CVE‑2026‑119085) in its publishing component. The flaw allows an authenticated third party to inject malicious template code, enabling arbitrary code execution with the publishing Lambda’s IAM role permissions. Amazon has released a patch covering all affected commits before c146486; users should update VEW or apply the workaround to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/",
+    "publishedAt": "2026-11-02T17:41:34.000Z",
+    "cves": [
+      "CVE-2026-119085"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "amazon-vew-exposes-template-injection-vulnerabilit",
+      "article-0116f358",
+      "0116f358",
+      "amazon-vew-exposes-template-injection-vulnerabilit-7d4079",
+      "amazon-vew-exposes-template-injection-vulnerability-cve-2026"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-for-rhel-9-8-7e223b0b",
+    "title": "Red Hat Kernel Update for RHEL 9.8",
+    "summary": "A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 9.8 Extended Update Support, affecting the Linux kernel component. The update mitigates moderate‑severity flaws, each identified by CVE references, and the CVSS base score indicates a moderate impact. Red Hat recommends applying the patch immediately to prevent exploitation of the kernel vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93930",
+    "publishedAt": "2026-11-02T17:18:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-for-rhel-9-8",
+      "article-7e223b0b",
+      "7e223b0b",
+      "red-hat-kernel-update-for-rhel-9-8-37d91c"
+    ]
+  },
+  {
     "slug": "cve-2026-119301-improper-neutralization-of-quoting-e5e16cbd",
     "title": "CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas",
     "summary": "Bulletin ID: 2026-161-AWS Publication Date: 11/02/2026 08:30 AM PST Description: We are aware of CVE-2026-119301 in the Apache Iceberg write component, where improper neutralization of quoting syntax in SQL identifier construction could allow an authenticated user with permission to modify AWS Glue Data Catalog metadata to read any table that a separate, more privileged principal can access and write to the table that principal is updating via a crafted column name.",
@@ -29,6 +105,47 @@ export const news: NewsBrief[] = [
       "e5e16cbd",
       "cve-2026-119301-improper-neutralization-of-quoting-7ef551",
       "cve-2026-119301-improper-neutralization-of-quoting-syntax-in"
+    ]
+  },
+  {
+    "slug": "rosstat-breach-claimed-by-belarusian-and-ukrainian-68dcbaff",
+    "title": "Rosstat Breach Claimed by Belarusian and Ukrainian Hackers",
+    "summary": "Russia’s federal statistics agency Rosstat confirmed a cyberattack claimed by a Belarusian‑Ukrainian hacker alliance. The attackers reportedly exfiltrated significant large volumes of sensitive government data, potentially compromising national statistical records. Rosstat has not released details of the breach scope, but security teams should assess data integrity and implement enhanced monitoring.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/hackers-ukraine-belarus-russia",
+    "publishedAt": "2026-11-02T16:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rosstat-breach-claimed-by-belarusian-and-ukrainian",
+      "article-68dcbaff",
+      "68dcbaff",
+      "rosstat-breach-claimed-by-belarusian-and-ukrainian-2ddae6",
+      "rosstat-breach-claimed-by-belarusian-and-ukrainian-hackers"
+    ]
+  },
+  {
+    "slug": "cisa-adds-two-ivanti-connect-secure-vulnerabilitie-1fe9f424",
+    "title": "CISA Adds Two Ivanti Connect Secure Vulnerabilities",
+    "summary": "CISA listed two Ivanti Connect Secure flaws as known exploited vulnerabilities, signaling active attacks against the VPN product. CVE-2026-111357 allows local authenticated privilege escalation through a missing authentication check, while CVE-2026-118527 permits remote authenticated file upload via predictable identifier generation. Ivanti has released patches; federal agencies should apply them promptly and verify configuration changes to close the exploitation vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/cisa-to-federal-agencies-remediate-exploited-ivanti-connect-secure-vulnerabilities-cve-2026-111357-cve-2026-118527/",
+    "publishedAt": "2026-11-02T15:58:08.000Z",
+    "cves": [
+      "CVE-2026-111357",
+      "CVE-2026-118527"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-two-ivanti-connect-secure-vulnerabilitie",
+      "article-1fe9f424",
+      "1fe9f424",
+      "cisa-adds-two-ivanti-connect-secure-vulnerabilitie-cd397f",
+      "cisa-adds-two-ivanti-connect-secure-vulnerabilities"
     ]
   },
   {
@@ -68,6 +185,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-kernel-update-for-rhel-10-2-978cf2ac",
+    "title": "Red Hat Kernel Update for RHEL 10.2",
+    "summary": "A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 10.2 Extended Update Support, targeting the Linux kernel. The patch covers moderate‑severity flaws linked to CVE entries, with CVSS scores reflecting a moderate risk level. Red Hat advises installing the update promptly for mitigating potential critical kernel exploitation today.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93911",
+    "publishedAt": "2026-11-02T15:37:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-for-rhel-10-2",
+      "article-978cf2ac",
+      "978cf2ac",
+      "red-hat-kernel-update-for-rhel-10-2-37d91c"
+    ]
+  },
+  {
     "slug": "btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907",
     "title": "BTCPay Server Hot Wallet Theft on Outdated Instances",
     "summary": "BTCPay Server users running legacy versions have been targeted for hot wallet thefts by hackers in recent attacks. The flaw allows attackers to exploit unpatched code, draining stored cryptocurrency and compromising user funds. Maintainers urge immediate upgrade to the latest release and recommend disabling hot wallets on older instances to mitigate risk.",
@@ -84,6 +219,43 @@ export const news: NewsBrief[] = [
       "c7edb907",
       "btcpay-server-hot-wallet-theft-on-outdated-instanc-177321",
       "btcpay-server-hot-wallet-theft-on-outdated-instances"
+    ]
+  },
+  {
+    "slug": "37-cybersecurity-deals-announced-in-october-ada8c04c",
+    "title": "37 Cybersecurity Deals Announced in October",
+    "summary": "In October 2026, cybersecurity firms Absolute Security, Aikido, Anthropic, Cohere, Hex‑Rays, and Proofpoint announced 37 mergers and acquisitions, signaling accelerated consolidation in the sector. The deals span AI, threat‑intelligence, reverse‑engineering, and email‑security domains, potentially reshaping vendor portfolios and customer integration strategies. Security teams should assess integration risks, update supply‑chain controls, and monitor for overlapping capabilities post‑merger.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
+    "publishedAt": "2026-11-02T15:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "37-cybersecurity-deals-announced-in-october",
+      "article-ada8c04c",
+      "ada8c04c",
+      "37-cybersecurity-deals-announced-in-october-383e0a"
+    ]
+  },
+  {
+    "slug": "digital-defense-report-overlooks-microsoft-bug-thr-e30f533a",
+    "title": "Digital Defense Report Overlooks Microsoft Bug Threats",
+    "summary": "The Digital Defense Report labels government agencies as primary AI attack targets while omitting the exploitation of Microsoft software bugs against them. This oversight obscures the threat vector, as attackers leverage known Microsoft vulnerabilities to gain privileged access to agency networks. Security teams should prioritize patching Microsoft products, monitor for exploitation signatures, and incorporate threat models into AI risk assessments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
+    "publishedAt": "2026-11-02T15:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "digital-defense-report-overlooks-microsoft-bug-thr",
+      "article-e30f533a",
+      "e30f533a",
+      "digital-defense-report-overlooks-microsoft-bug-thr-47db31",
+      "digital-defense-report-overlooks-microsoft-bug-threats"
     ]
   },
   {
@@ -104,6 +276,100 @@ export const news: NewsBrief[] = [
       "article-ac28de13",
       "ac28de13",
       "linux-mutipath-tcp-vulnerability-cve-2026-98432-57dd7e"
+    ]
+  },
+  {
+    "slug": "new-windows-infostealer-uses-ai-to-rank-stolen-dat-fcc119c0",
+    "title": "New Windows Infostealer Uses AI to Rank Stolen Data",
+    "summary": "Cisco Talos identified a new Windows infostealer, VOLTA-AUTODOXER, that forwards stolen data to an AI model for value ranking. The malware harvests credentials and asset details, then relies on the AI engine to prioritize targets, enabling focused attacks. Security teams should block the malware’s download, monitor outbound AI traffic, and apply updated endpoint protection signatures.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/ai-powered-infostealer-volta-victim-profiling/",
+    "publishedAt": "2026-11-02T14:47:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "new-windows-infostealer-uses-ai-to-rank-stolen-dat",
+      "article-fcc119c0",
+      "fcc119c0",
+      "new-windows-infostealer-uses-ai-to-rank-stolen-dat-343bed",
+      "new-windows-infostealer-uses-ai-to-rank-stolen-data"
+    ]
+  },
+  {
+    "slug": "darkblinders-compromises-israeli-target-iraqi-clou-e2fc4f90",
+    "title": "DarkBlinders Compromises Israeli Target, Iraqi Cloud",
+    "summary": "Between August and October 2026, the DarkBlinders group compromised an Israeli individual and infiltrated a Kurdistan Region of Iraq government cloud environment. The campaign leveraged spear‑phishing, credential theft, and cloud misconfigurations to gain privileged access, exposing sensitive data and operational controls. Affected organizations should enforce MFA, audit cloud permissions, apply timely patches, and conduct forensic investigations to assess data exfiltration.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+    "publishedAt": "2026-11-02T14:46:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "darkblinders-compromises-israeli-target-iraqi-clou",
+      "article-e2fc4f90",
+      "e2fc4f90",
+      "darkblinders-compromises-israeli-target-iraqi-clou-49dd3f",
+      "darkblinders-compromises-israeli-target-iraqi-cloud"
+    ]
+  },
+  {
+    "slug": "florida-student-aid-site-breach-exposes-4-9-millio-8dc7783a",
+    "title": "Florida Student Aid Site Breach Exposes 4.9 Million SSNs",
+    "summary": "The Florida Department of Education’s student aid website was breached, exposing SSNs and other personal data of approximately 4.9 million individuals. An unspecified web application flaw allowed unauthenticated attackers to retrieve sensitive records. The department notified users, issued an advisory, and is collaborating with law enforcement to investigate and remediate.",
+    "category": "Breach",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
+    "publishedAt": "2026-11-02T14:44:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "florida-student-aid-site-breach-exposes-4-9-millio",
+      "article-8dc7783a",
+      "8dc7783a",
+      "florida-student-aid-site-breach-exposes-4-9-millio-6ea42e",
+      "florida-student-aid-site-breach-exposes-4-9-million-ssns"
+    ]
+  },
+  {
+    "slug": "hackers-hijack-emergency-apps-with-fake-nuclear-al-70d679f8",
+    "title": "Hackers Hijack Emergency Apps with Fake Nuclear Alerts",
+    "summary": "Russian and Ukrainian hacking groups compromised popular air raid alert systems, injecting false nuclear attack warnings into the apps. The attacks exploited vulnerabilities in the apps’ authentication and update mechanisms, enabling attackers to push malicious payloads without user interaction. Security teams should harden authentication, verify update sources, and monitor for anomalous notifications to mitigate the sabotage.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ukraine-hackers-russia-alert-system",
+    "publishedAt": "2026-11-02T14:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hijack-emergency-apps-with-fake-nuclear-al",
+      "article-70d679f8",
+      "70d679f8",
+      "hackers-hijack-emergency-apps-with-fake-nuclear-al-94cca2",
+      "hackers-hijack-emergency-apps-with-fake-nuclear-alerts"
+    ]
+  },
+  {
+    "slug": "fake-review-trade-sells-five-star-ratings-86b51d06",
+    "title": "Fake Review Trade Sells Five‑Star Ratings",
+    "summary": "Underground operators sell five‑star reviews for up to $1,100, offering to erase negative feedback from online platforms. The scheme exploits reputation‑management systems, enabling malicious actors to manipulate consumer perception and undermine trust in digital marketplaces. Businesses should verify review authenticity, enforce platform moderation policies, and monitor for suspicious bulk review activity to mitigate reputational damage.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
+    "publishedAt": "2026-11-02T14:24:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-review-trade-sells-five-star-ratings",
+      "article-86b51d06",
+      "86b51d06",
+      "fake-review-trade-sells-five-star-ratings-60dab1"
     ]
   },
   {
@@ -196,6 +462,24 @@ export const news: NewsBrief[] = [
       "article-5c8130c4",
       "5c8130c4",
       "wiz-releases-red-and-blue-agents-for-soc-teams-49829f"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-for-nvidia-rhel-10-70b4ae29",
+    "title": "Red Hat Kernel Update for NVIDIA RHEL 10",
+    "summary": "A kernel security update addresses vulnerabilities in NVIDIA‑enabled Red Hat Enterprise Linux 10, targeting the Linux kernel. The patch mitigates important‑severity flaws, each referenced by CVE identifiers, with CVSS scores indicating a high risk. Red Hat recommends applying the update immediately in order to prevent exploitation of the kernel vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93775",
+    "publishedAt": "2026-11-02T13:03:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-for-nvidia-rhel-10",
+      "article-70b4ae29",
+      "70b4ae29",
+      "red-hat-kernel-update-for-nvidia-rhel-10-37d923"
     ]
   },
   {
@@ -344,6 +628,26 @@ export const news: NewsBrief[] = [
       "article-82ead697",
       "82ead697",
       "ai-bug-discovery-rate-surges-3-of-critical-bugs-21d0f9"
+    ]
+  },
+  {
+    "slug": "cve-2023-21768-winsock-privilege-escalation-poc-b0b5680c",
+    "title": "CVE-2023-21768 WinSock Privilege Escalation PoC",
+    "summary": "A public proof‑of‑concept exploit demonstrates local privilege escalation via the Windows Ancillary Function Driver for WinSock, targeting CVE-2023-21768. The PoC shows attackers with local access can obtain SYSTEM privileges on vulnerable Windows 11 22H2 systems, a flaw patched in January 2023. Microsoft recommends installing the January 2023 security update and applying the latest Windows patches to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/poc-for-windows-winsock-ancillary-vulnerability/",
+    "publishedAt": "2026-11-02T11:57:41.000Z",
+    "cves": [
+      "CVE-2023-21768"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2023-21768-winsock-privilege-escalation-poc",
+      "article-b0b5680c",
+      "b0b5680c",
+      "cve-2023-21768-winsock-privilege-escalation-poc-79befd"
     ]
   },
   {

@@ -2,6 +2,54 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "GHSA-j656-3hf2-fvjc",
+    "slug": "ghsa-j656-3hf2-fvjc",
+    "vendor": "npm",
+    "product": "@bytebase/dbhub",
+    "name": "DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation",
+    "dateAdded": "2026-11-02",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-436",
+    "ransomware": false,
+    "description": "The read-only mode can be bypassed on the MySQL and MariaDB connectors. In read-only mode a caller can still execute arbitrary write and DDL statements (for example DROP TABLE), which defeats the protection that read-only mode is meant to provide when a database is exposed to an AI agent.",
+    "requiredAction": "Upgrade @bytebase/dbhub to version 0.22.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j656-3hf2-fvjc"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62374",
+    "slug": "cve-2026-62374",
+    "vendor": "npm",
+    "product": "@sd-jwt/decode",
+    "name": "SD JWT JS: Tampered disclosures silently dropped instead of rejected",
+    "dateAdded": "2026-11-02",
+    "dueDate": "",
+    "cvss": 7.1,
+    "severity": "High",
+    "cwe": "CWE-176",
+    "ransomware": false,
+    "description": "When one Disclosure in an SD-JWT presentation is tampered so its digest no longer matches the Issuer-signed _sd array, @sd-jwt/decode 0.19.0 does not reject the presentation. It silently drops the unmatched Disclosure and returns a reduced claim set, reporting success. The Issuer signature is untouched and valid. This is a downgrade/omission primitive.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f9j6-8p6x-r9j6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62374"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-118527",
     "slug": "cve-2026-118527",
     "vendor": "Ivanti",
@@ -1295,58 +1343,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118669"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116677",
-    "slug": "cve-2026-116677",
-    "vendor": "Pip",
-    "product": "openwisp-controller",
-    "name": "OpenWISP Controller CA CRL REST API does not scope requests to managed organizations",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "The authenticated REST API endpoint for downloading a CA Certificate Revocation List resolves the requested CA without applying the organization-scoped queryset used by the rest of the PKI API. An organization manager with CA view permission can request another organization's sequential CA ID and receive that CA's CRL.",
-    "requiredAction": "Upgrade openwisp-controller to version 1.3.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9gh4-xw24-9xh5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116677"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119285",
-    "slug": "cve-2026-119285",
-    "vendor": "Go",
-    "product": "fiber (v2) · gofiber",
-    "name": "Fiber: CORS wildcard origins matched without a dot boundary, allowing credentialed cross-origin reads",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-346",
-    "ransomware": false,
-    "description": "In v2.52.1 and v2.52.2 the CORS middleware matched a wildcard origin such as by suffix only, without a dot boundary and without comparing the scheme. Any origin whose host ends with the base domain, for example or was reflected in Access-Control-Allow-Origin, together with Access-Control-Allow-Credentials: true when AllowCredentials` is enabled.",
-    "requiredAction": "Upgrade fiber (v2) · gofiber to version 2.52.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-g5jq-qmqr-qrwf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119285"
       }
     ],
     "source": "GITHUB"

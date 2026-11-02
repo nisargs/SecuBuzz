@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 17:11:15 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 18:46:25 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google dismantles 1.3M-device XCPE Android botnet</title>
+      <link>https://secubuzz.com/news/google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd</guid>
+      <description><![CDATA[Google and industry partners dismantled the XCPE malware botnet that infected more than 1.3 million Android TV streaming boxes. The botnet was seeded by the manufacturer’s firmware, which embedded malicious code to monetize cybercrime, enabling remote command and control.]]></description>
+      <pubDate>Mon, 02 Nov 2026 18:16:34 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Mercado Bitcoin Breach Involves $40M Suspicious Transfers</title>
+      <link>https://secubuzz.com/news/mercado-bitcoin-breach-involves-40m-suspicious-tra-6c73a023</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mercado-bitcoin-breach-involves-40m-suspicious-tra-6c73a023</guid>
+      <description><![CDATA[Brazilian cryptocurrency exchange Mercado Bitcoin detected a security incident that halted deposits and withdrawals on November 2, 2026. Security firm Hypernative identified more than $40 million in suspicious transfers across at least ten blockchains, indicating potential credential theft or compromised wallet access.]]></description>
+      <pubDate>Mon, 02 Nov 2026 17:54:22 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/mercado-bitcoin-suffers-cyberattack/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Amazon VEW Exposes Template Injection Vulnerability CVE-2026-119085</title>
+      <link>https://secubuzz.com/news/amazon-vew-exposes-template-injection-vulnerabilit-0116f358</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/amazon-vew-exposes-template-injection-vulnerabilit-0116f358</guid>
+      <description><![CDATA[Amazon Virtual Engineering Workbench (VEW) suffers a template injection flaw (CVE‑2026‑119085) in its publishing component. The flaw allows an authenticated third party to inject malicious template code, enabling arbitrary code execution with the publishing Lambda’s IAM role permissions. Amazon has released a patch covering all affected commits before c146486; users should update VEW or apply the workaround to mitigate exploitation.]]></description>
+      <pubDate>Mon, 02 Nov 2026 17:41:34 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel Update for RHEL 9.8</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-9-8-7e223b0b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-9-8-7e223b0b</guid>
+      <description><![CDATA[A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 9.8 Extended Update Support, affecting the Linux kernel component. The update mitigates moderate‑severity flaws, each identified by CVE references, and the CVSS base score indicates a moderate impact. Red Hat recommends applying the patch immediately to prevent exploitation of the kernel vulnerabilities.]]></description>
+      <pubDate>Mon, 02 Nov 2026 17:18:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93930">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas</title>
       <link>https://secubuzz.com/news/cve-2026-119301-improper-neutralization-of-quoting-e5e16cbd</link>
@@ -14,6 +50,24 @@
       <description><![CDATA[Bulletin ID: 2026-161-AWS Publication Date: 11/02/2026 08:30 AM PST Description: We are aware of CVE-2026-119301 in the Apache Iceberg write component, where improper neutralization of quoting syntax in SQL identifier construction could allow an authenticated user with permission to modify AWS Glue Data Catalog metadata to read any table that a separate, more privileged principal can access and write to the table that principal is updating via a crafted column name.]]></description>
       <pubDate>Mon, 02 Nov 2026 16:40:57 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Rosstat Breach Claimed by Belarusian and Ukrainian Hackers</title>
+      <link>https://secubuzz.com/news/rosstat-breach-claimed-by-belarusian-and-ukrainian-68dcbaff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rosstat-breach-claimed-by-belarusian-and-ukrainian-68dcbaff</guid>
+      <description><![CDATA[Russia’s federal statistics agency Rosstat confirmed a cyberattack claimed by a Belarusian‑Ukrainian hacker alliance. The attackers reportedly exfiltrated significant large volumes of sensitive government data, potentially compromising national statistical records. Rosstat has not released details of the breach scope, but security teams should assess data integrity and implement enhanced monitoring.]]></description>
+      <pubDate>Mon, 02 Nov 2026 16:30:00 GMT</pubDate>
+      <source url="https://therecord.media/hackers-ukraine-belarus-russia">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>CISA Adds Two Ivanti Connect Secure Vulnerabilities</title>
+      <link>https://secubuzz.com/news/cisa-adds-two-ivanti-connect-secure-vulnerabilitie-1fe9f424</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-two-ivanti-connect-secure-vulnerabilitie-1fe9f424</guid>
+      <description><![CDATA[CISA listed two Ivanti Connect Secure flaws as known exploited vulnerabilities, signaling active attacks against the VPN product. CVE-2026-111357 allows local authenticated privilege escalation through a missing authentication check, while CVE-2026-118527 permits remote authenticated file upload via predictable identifier generation. Ivanti has released patches; federal agencies should apply them promptly and verify configuration changes to close the exploitation vector.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:58:08 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/cisa-to-federal-agencies-remediate-exploited-ivanti-connect-secure-vulnerabilities-cve-2026-111357-cve-2026-118527/">Help Net Security</source>
       <category>CVE</category>
     </item>
     <item>
@@ -35,6 +89,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Kernel Update for RHEL 10.2</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-2-978cf2ac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-2-978cf2ac</guid>
+      <description><![CDATA[A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 10.2 Extended Update Support, targeting the Linux kernel. The patch covers moderate‑severity flaws linked to CVE entries, with CVSS scores reflecting a moderate risk level. Red Hat advises installing the update promptly for mitigating potential critical kernel exploitation today.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:37:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93911">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>BTCPay Server Hot Wallet Theft on Outdated Instances</title>
       <link>https://secubuzz.com/news/btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907</link>
       <guid isPermaLink="true">https://secubuzz.com/news/btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907</guid>
@@ -44,6 +107,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>37 Cybersecurity Deals Announced in October</title>
+      <link>https://secubuzz.com/news/37-cybersecurity-deals-announced-in-october-ada8c04c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/37-cybersecurity-deals-announced-in-october-ada8c04c</guid>
+      <description><![CDATA[In October 2026, cybersecurity firms Absolute Security, Aikido, Anthropic, Cohere, Hex‑Rays, and Proofpoint announced 37 mergers and acquisitions, signaling accelerated consolidation in the sector. The deals span AI, threat‑intelligence, reverse‑engineering, and email‑security domains, potentially reshaping vendor portfolios and customer integration strategies. Security teams should assess integration risks, update supply‑chain controls, and monitor for overlapping capabilities post‑merger.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:01:11 GMT</pubDate>
+      <source url="https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Digital Defense Report Overlooks Microsoft Bug Threats</title>
+      <link>https://secubuzz.com/news/digital-defense-report-overlooks-microsoft-bug-thr-e30f533a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/digital-defense-report-overlooks-microsoft-bug-thr-e30f533a</guid>
+      <description><![CDATA[The Digital Defense Report labels government agencies as primary AI attack targets while omitting the exploitation of Microsoft software bugs against them. This oversight obscures the threat vector, as attackers leverage known Microsoft vulnerabilities to gain privileged access to agency networks. Security teams should prioritize patching Microsoft products, monitor for exploitation signatures, and incorporate threat models into AI risk assessments.]]></description>
+      <pubDate>Mon, 02 Nov 2026 15:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Linux Mutipath TCP Vulnerability CVE-2026-98432</title>
       <link>https://secubuzz.com/news/linux-mutipath-tcp-vulnerability-cve-2026-98432-ac28de13</link>
       <guid isPermaLink="true">https://secubuzz.com/news/linux-mutipath-tcp-vulnerability-cve-2026-98432-ac28de13</guid>
@@ -51,6 +132,51 @@
       <pubDate>Mon, 02 Nov 2026 14:52:05 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33482">SANS Internet Storm Center</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>New Windows Infostealer Uses AI to Rank Stolen Data</title>
+      <link>https://secubuzz.com/news/new-windows-infostealer-uses-ai-to-rank-stolen-dat-fcc119c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-windows-infostealer-uses-ai-to-rank-stolen-dat-fcc119c0</guid>
+      <description><![CDATA[Cisco Talos identified a new Windows infostealer, VOLTA-AUTODOXER, that forwards stolen data to an AI model for value ranking. The malware harvests credentials and asset details, then relies on the AI engine to prioritize targets, enabling focused attacks. Security teams should block the malware’s download, monitor outbound AI traffic, and apply updated endpoint protection signatures.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:47:57 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/ai-powered-infostealer-volta-victim-profiling/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>DarkBlinders Compromises Israeli Target, Iraqi Cloud</title>
+      <link>https://secubuzz.com/news/darkblinders-compromises-israeli-target-iraqi-clou-e2fc4f90</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/darkblinders-compromises-israeli-target-iraqi-clou-e2fc4f90</guid>
+      <description><![CDATA[Between August and October 2026, the DarkBlinders group compromised an Israeli individual and infiltrated a Kurdistan Region of Iraq government cloud environment. The campaign leveraged spear‑phishing, credential theft, and cloud misconfigurations to gain privileged access, exposing sensitive data and operational controls. Affected organizations should enforce MFA, audit cloud permissions, apply timely patches, and conduct forensic investigations to assess data exfiltration.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:46:05 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Florida Student Aid Site Breach Exposes 4.9 Million SSNs</title>
+      <link>https://secubuzz.com/news/florida-student-aid-site-breach-exposes-4-9-millio-8dc7783a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/florida-student-aid-site-breach-exposes-4-9-millio-8dc7783a</guid>
+      <description><![CDATA[The Florida Department of Education’s student aid website was breached, exposing SSNs and other personal data of approximately 4.9 million individuals. An unspecified web application flaw allowed unauthenticated attackers to retrieve sensitive records. The department notified users, issued an advisory, and is collaborating with law enforcement to investigate and remediate.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:44:18 GMT</pubDate>
+      <source url="https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Hijack Emergency Apps with Fake Nuclear Alerts</title>
+      <link>https://secubuzz.com/news/hackers-hijack-emergency-apps-with-fake-nuclear-al-70d679f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-emergency-apps-with-fake-nuclear-al-70d679f8</guid>
+      <description><![CDATA[Russian and Ukrainian hacking groups compromised popular air raid alert systems, injecting false nuclear attack warnings into the apps. The attacks exploited vulnerabilities in the apps’ authentication and update mechanisms, enabling attackers to push malicious payloads without user interaction. Security teams should harden authentication, verify update sources, and monitor for anomalous notifications to mitigate the sabotage.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:30:00 GMT</pubDate>
+      <source url="https://therecord.media/ukraine-hackers-russia-alert-system">The Record</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Fake Review Trade Sells Five‑Star Ratings</title>
+      <link>https://secubuzz.com/news/fake-review-trade-sells-five-star-ratings-86b51d06</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-review-trade-sells-five-star-ratings-86b51d06</guid>
+      <description><![CDATA[Underground operators sell five‑star reviews for up to $1,100, offering to erase negative feedback from online platforms. The scheme exploits reputation‑management systems, enabling malicious actors to manipulate consumer perception and undermine trust in digital marketplaces. Businesses should verify review authenticity, enforce platform moderation policies, and monitor for suspicious bulk review activity to mitigate reputational damage.]]></description>
+      <pubDate>Mon, 02 Nov 2026 14:24:43 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade">Malwarebytes Labs</source>
+      <category>General</category>
     </item>
     <item>
       <title>Microsoft fixes Smart App Control broken by October Windows update</title>
@@ -96,6 +222,15 @@
       <pubDate>Mon, 02 Nov 2026 13:13:46 GMT</pubDate>
       <source url="https://www.wiz.io/blog/soc-alerts-red-and-blue-agents">Wiz Research</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel Update for NVIDIA RHEL 10</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-for-nvidia-rhel-10-70b4ae29</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-nvidia-rhel-10-70b4ae29</guid>
+      <description><![CDATA[A kernel security update addresses vulnerabilities in NVIDIA‑enabled Red Hat Enterprise Linux 10, targeting the Linux kernel. The patch mitigates important‑severity flaws, each referenced by CVE identifiers, with CVSS scores indicating a high risk. Red Hat recommends applying the update immediately in order to prevent exploitation of the kernel vulnerabilities.]]></description>
+      <pubDate>Mon, 02 Nov 2026 13:03:08 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93775">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Releases libsoup Security Update</title>
@@ -168,6 +303,15 @@
       <pubDate>Mon, 02 Nov 2026 12:02:34 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html">Schneier on Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>CVE-2023-21768 WinSock Privilege Escalation PoC</title>
+      <link>https://secubuzz.com/news/cve-2023-21768-winsock-privilege-escalation-poc-b0b5680c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2023-21768-winsock-privilege-escalation-poc-b0b5680c</guid>
+      <description><![CDATA[A public proof‑of‑concept exploit demonstrates local privilege escalation via the Windows Ancillary Function Driver for WinSock, targeting CVE-2023-21768. The PoC shows attackers with local access can obtain SYSTEM privileges on vulnerable Windows 11 22H2 systems, a flaw patched in January 2023. Microsoft recommends installing the January 2023 security update and applying the latest Windows patches to mitigate the vulnerability.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:57:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/poc-for-windows-winsock-ancillary-vulnerability/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Langflow Unauthenticated RCE Flaws Exposed</title>
@@ -312,150 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 09:33:15 GMT</pubDate>
       <source url="https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93586: Important: perl-HTTP-Daemon security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93586-important-perl-http-daemon-securit-e6ea8474</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93586-important-perl-http-daemon-securit-e6ea8474</guid>
-      <description><![CDATA[An update for perl-HTTP-Daemon is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 09:30:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93586">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93585: Important: perl-HTTP-Daemon security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93585-important-perl-http-daemon-securit-c8c07b84</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93585-important-perl-http-daemon-securit-c8c07b84</guid>
-      <description><![CDATA[An update for perl-HTTP-Daemon is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 09:30:50 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93585">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Libsoup3 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libsoup3-security-update-77e459f8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libsoup3-security-update-77e459f8</guid>
-      <description><![CDATA[Red Hat released a security update for libsoup3 on RHEL 10.0 Extended Update Support. The patch mitigates several vulnerabilities that could lead to remote code execution or denial of service; CVSS scores are provided via CVE references. Affected users should install the update promptly and confirm that the libsoup3 package is at the patched version.]]></description>
-      <pubDate>Mon, 02 Nov 2026 09:00:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93583">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>FBI Links 600+ Addresses to North Korean Binance Theft</title>
-      <link>https://secubuzz.com/news/fbi-links-600-addresses-to-north-korean-binance-th-4ea7b26c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-links-600-addresses-to-north-korean-binance-th-4ea7b26c</guid>
-      <description><![CDATA[FBI linked over 600 addresses to a $6 billion Binance theft attributed to North Korean group TraderTraitor. Attackers siphoned funds from Binance’s exchange and laundered them through a complex wallet chain to obscure the trail. Binance issued a security advisory urging users to enable two‑factor authentication and monitor activity while law enforcement pursues the laundering network.]]></description>
-      <pubDate>Mon, 02 Nov 2026 08:40:36 GMT</pubDate>
-      <source url="https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Reddit Moves to Mandatory Logins</title>
-      <link>https://secubuzz.com/news/reddit-moves-to-mandatory-logins-5653ba47</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/reddit-moves-to-mandatory-logins-5653ba47</guid>
-      <description><![CDATA[Reddit announced a shift to mandatory logins for its platform to limit public discussion access. The change aims to curb unauthorized data scraping by AI bots and support improved recommendations and advertising. Users will need to create or sign in to an account to view content, and the policy aligns with evolving safety rules.]]></description>
-      <pubDate>Mon, 02 Nov 2026 08:35:42 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/reddit-plans-mandatory-logins/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Use ARTEX AI Agents to Automate Active Directory Attacks, Kerberoasting, and Lateral Movement</title>
-      <link>https://secubuzz.com/news/hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23</guid>
-      <description><![CDATA[Hackers are now using an open-source AI tool called ARTEX to run large parts of a network break-in on their own. The tool can map a Windows network, steal service account passwords, and try to spread to domain controllers with very little human help.]]></description>
-      <pubDate>Mon, 02 Nov 2026 08:23:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-artex-ai-agents/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>BeyondTrust vulnerability faces fresh exploitation probes, mass scanning</title>
-      <link>https://secubuzz.com/news/beyondtrust-vulnerability-faces-fresh-exploitation-cd86462c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/beyondtrust-vulnerability-faces-fresh-exploitation-cd86462c</guid>
-      <description><![CDATA[Attackers are probing CVE-2026-102764 against BeyondTrust Remote Support appliances in the United States and Europe. The flaw, CVE-2026-102764, is a critical privilege escalation in Remote Support that could allow unauthenticated remote code execution and spread beyond targeted espionage. BeyondTrust has issued an out-of-band patch; apply it immediately and monitor for scanning activity.]]></description>
-      <pubDate>Mon, 02 Nov 2026 08:01:35 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-beyondtrust-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>VOLTA Infostealer Harvests Gmail, Discord, Uses AI Profiling</title>
-      <link>https://secubuzz.com/news/volta-infostealer-harvests-gmail-discord-uses-ai-p-3cf735be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/volta-infostealer-harvests-gmail-discord-uses-ai-p-3cf735be</guid>
-      <description><![CDATA[A new Windows infostealer named VOLTA captures Gmail, Discord, and other login sessions, surpassing basic credential theft. It forwards the loot to an AI model that analyzes the data and produces a detailed victim value report, revealing advanced profiling. Security teams should block VOLTA’s download URLs, monitor outbound traffic to AI endpoints, and enforce multi‑factor authentication on affected services.]]></description>
-      <pubDate>Mon, 02 Nov 2026 07:33:50 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/volta-malware-steals-gmail/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>DeepSeek Releases Super-Agent Coding Tool</title>
-      <link>https://secubuzz.com/news/deepseek-releases-super-agent-coding-tool-d4a951b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/deepseek-releases-super-agent-coding-tool-d4a951b1</guid>
-      <description><![CDATA[DeepSeek unveiled dsh-superagent, a research prototype that automates coding tasks on GitHub repositories. The agent activates when an authorized user requests work or a team rule matches, and it can be invoked by mentioning the agent in chat or GitHub scopes. Developers can integrate the prototype into collaborative workflows, but should review its permissions and usage policies before deployment.]]></description>
-      <pubDate>Mon, 02 Nov 2026 07:09:55 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/deepseek-dsh-superagent/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Agent Command Policy: First Ten Lines</title>
-      <link>https://secubuzz.com/news/ai-agent-command-policy-first-ten-lines-6be8061f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-command-policy-first-ten-lines-6be8061f</guid>
-      <description><![CDATA[Vinay Thakker, KloudStax CTO, outlines a command policy framework for AI coding agents. The policy emphasizes running agents under distinct identities, attaching the user’s identity when acting on their behalf, and correcting credential proxy misuse. Thakker also recommends the first ten lines of a policy and measures to prevent data exfiltration via package installs.]]></description>
-      <pubDate>Mon, 02 Nov 2026 06:30:36 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Byoky Launches Open-Source AI API Key Wallet</title>
-      <link>https://secubuzz.com/news/byoky-launches-open-source-ai-api-key-wallet-13f4fb13</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/byoky-launches-open-source-ai-api-key-wallet-13f4fb13</guid>
-      <description><![CDATA[Byoky introduces an open‑source wallet for storing AI API keys on Chrome, Firefox, iOS, and Android. The wallet encrypts keys locally, and forwards calls to providers, returning session tokens while keeping keys secure. Users install the extension or mobile app, configure provider credentials, and rely on Byoky to keep keys isolated from applications.]]></description>
-      <pubDate>Mon, 02 Nov 2026 06:00:33 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/byoky-open-source-ai-api-key-wallet/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases FreeRDP Security Update for RHEL</title>
-      <link>https://secubuzz.com/news/red-hat-releases-freerdp-security-update-for-rhel-25ad2aab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-freerdp-security-update-for-rhel-25ad2aab</guid>
-      <description><![CDATA[Red Hat issued an important security update for the freerdp package on Red Hat Enterprise Linux 8.6 systems. The update addresses security flaws rated as important that could impact remote desktop protocol client connections and system stability. System administrators should apply the patch via Red Hat Enterprise Linux 8.6 update channels to mitigate potential risks.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:58:37 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93549">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>VOLTA Infostealer Leverages LLMs to Rank Victims</title>
-      <link>https://secubuzz.com/news/volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1</guid>
-      <description><![CDATA[A new infostealer, VOLTA-AUTODOXER, harvests credentials and browser cookies from Chromium-based browsers, Outlook profiles, and Slack workspaces. The malware employs language models such as Claude, Gemini, and Kimi to evaluate stolen data and prioritize victims by financial value. Security teams should deploy endpoint detection and response solutions, block known VOLTA download domains, and enforce multi‑factor authentication to mitigate credential theft.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:51:07 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Releases PostgreSQL 16 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-postgresql-16-security-update-9536fbdb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-postgresql-16-security-update-9536fbdb</guid>
-      <description><![CDATA[Red Hat released a security update for PostgreSQL 16 on RHEL 9.6 EUS, fixing vulnerabilities that could enable unauthorized data access or denial of service. The advisory cites several CVE identifiers with CVSS scores ranging from moderate to high, yet no exploitation has been reported. Apply the PostgreSQL update promptly and verify database configurations per Red Hat’s security recommendations.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:33:54 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93460">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>.NET 8.0 Update Addresses Important Security Issues</title>
-      <link>https://secubuzz.com/news/net-8-0-update-addresses-important-security-issue-9930d43d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/net-8-0-update-addresses-important-security-issue-9930d43d</guid>
-      <description><![CDATA[Red Hat released a security update for .NET 8.0 on Enterprise Linux 9.6 Extended Update Support to address multiple vulnerabilities. The update is rated Important by Red Hat Product Security, and each vulnerability’s CVSS base score is listed in the references. Administrators should apply the patch immediately, verify the CVSS scores, and monitor for any related exploitation attempts.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:32:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93457">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Trust Onion Introduces Rotating Codeword Caller Verification</title>
-      <link>https://secubuzz.com/news/trust-onion-introduces-rotating-codeword-caller-ve-1370a317</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trust-onion-introduces-rotating-codeword-caller-ve-1370a317</guid>
-      <description><![CDATA[Trust Onion provides a free app that gives trusted groups three rotating codewords to verify caller identity during voice or text. It also supports signed selfies, message integrity checks, and callback verification, and runs on macOS, iOS, and Android. Users can set rotation schedules and embed the verification into existing communication workflows, boosting trust without extra infrastructure.]]></description>
-      <pubDate>Mon, 02 Nov 2026 05:30:38 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
