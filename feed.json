@@ -208,6 +208,38 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93469",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93469",
+    "title": "Red Hat Releases Tomcat Security Update for RHEL 9.8",
+    "headline": "Red Hat Releases Tomcat Security Update for RHEL 9.8",
+    "summary": "Red Hat issued a security update for Apache Tomcat on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities. The flaws involve improper input validation in the servlet container, potentially allowing remote code execution with elevated privileges. Apply the provided Tomcat patch immediately and review server configurations to enforce strict access controls.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T04:44:02.000Z",
+    "ingestedAt": "2026-11-02T08:43:21.726Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93469",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93538",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93538",
+    "title": "Red Hat Releases FreeRDP Security Update for RHEL 8.4",
+    "headline": "Red Hat Releases FreeRDP Security Update for RHEL 8.4",
+    "summary": "Red Hat released a security update for FreeRDP on RHEL 8.4 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The vulnerabilities stem from buffer overflows in the RDP protocol handling, enabling attackers to execute arbitrary code remotely. Apply the FreeRDP patch immediately and enforce network segmentation to limit RDP exposure.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T04:43:36.000Z",
+    "ingestedAt": "2026-11-02T08:43:21.726Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93538",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/tightvnc-pre-auth-rce-vulnerability/",
     "sourceUrl": "https://cybersecuritynews.com/tightvnc-pre-auth-rce-vulnerability/",
     "title": "TightVNC Pre‑Auth RCE Enables Code Execution on Windows",
@@ -338,6 +370,38 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93466",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93466",
+    "title": "Red Hat Patches Libsoup Flaws in RHEL 8.8",
+    "headline": "Red Hat Patches Libsoup Flaws in RHEL 8.8",
+    "summary": "Red Hat issued a security patch addressing vulnerabilities in the libsoup HTTP library on Enterprise Linux 8.8 specialized server distributions. Red Hat Product Security assigned an Important severity rating due to potential security risks impacting SAP Solutions and Telecommunications Update Service builds. Infrastructure operators managing RHEL 8.8 SAP and Telecommunications deployments should install available package updates to patch affected systems.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T03:37:11.000Z",
+    "ingestedAt": "2026-11-02T08:44:00.339Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93466",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93446",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93446",
+    "title": "Red Hat Issues Important Security Update for Libsoup",
+    "headline": "Red Hat Issues Important Security Update for Libsoup",
+    "summary": "Red Hat released a security update for the libsoup HTTP client library affecting Red Hat Enterprise Linux 9.6 Extended Update Support systems. Product security teams classified the underlying vulnerability as Important, indicating significant potential impact across impacted enterprise Linux environments. Administrators using affected Extended Update Support deployments should apply the latest package updates immediately to secure HTTP client functionality.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T03:37:01.000Z",
+    "ingestedAt": "2026-11-02T08:44:00.339Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93446",
+    "additionalSources": []
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:93463",
@@ -2078,15 +2142,24 @@
   {
     "id": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
     "sourceUrl": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-    "title": "Attackers Chain Three Ivanti Flaws for Root Access",
-    "headline": "Attackers Chain Three Ivanti Flaws for Root Access",
-    "summary": "Attackers chained three vulnerabilities in Ivanti Connect Secure to gain unauthenticated root access. The flaws include 'CVE-2026-111357', a missing authentication bug with CVSS 8.8, and two other undisclosed weaknesses exploited in the wild, enabling privilege escalation without credentials. CISA added the issues to its KEV catalog; Ivanti has released patches, and security teams should apply them immediately.",
+    "title": "Ivanti Patches Actively Exploited Connect Secure Zero-Day Flaws",
+    "headline": "Ivanti Patches Actively Exploited Connect Secure Zero-Day Flaws",
+    "summary": "Threat actors chained zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to execute unauthenticated attacks in the wild. Centered around CVE-2026-111357, the exploit chain bypasses authentication mechanisms, granting remote attackers arbitrary code execution and full root server compromise. CISA added the actively exploited flaws to its KEV catalog; administrators must immediately apply Ivanti's emergency security patches.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "The Hacker News",
     "publishedAt": "2026-10-31T08:27:43.000Z",
     "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-111357",
+      "CVE-2026-118527"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
