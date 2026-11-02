@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 06:22:31 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 06:46:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Agent Command Policy: First Ten Lines</title>
+      <link>https://secubuzz.com/news/ai-agent-command-policy-first-ten-lines-6be8061f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-command-policy-first-ten-lines-6be8061f</guid>
+      <description><![CDATA[Vinay Thakker, KloudStax CTO, outlines a command policy framework for AI coding agents. The policy emphasizes running agents under distinct identities, attaching the user’s identity when acting on their behalf, and correcting credential proxy misuse. Thakker also recommends the first ten lines of a policy and measures to prevent data exfiltration via package installs.]]></description>
+      <pubDate>Mon, 02 Nov 2026 06:30:36 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Byoky Launches Open-Source AI API Key Wallet</title>
+      <link>https://secubuzz.com/news/byoky-launches-open-source-ai-api-key-wallet-13f4fb13</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/byoky-launches-open-source-ai-api-key-wallet-13f4fb13</guid>
+      <description><![CDATA[Byoky introduces an open‑source wallet for storing AI API keys on Chrome, Firefox, iOS, and Android. The wallet encrypts keys locally, and forwards calls to providers, returning session tokens while keeping keys secure. Users install the extension or mobile app, configure provider credentials, and rely on Byoky to keep keys isolated from applications.]]></description>
+      <pubDate>Mon, 02 Nov 2026 06:00:33 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/02/byoky-open-source-ai-api-key-wallet/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>VOLTA Infostealer Leverages LLMs to Rank Victims</title>
       <link>https://secubuzz.com/news/volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1</link>
@@ -50,6 +68,24 @@
       <description><![CDATA[Red Hat issued a security update for nginx on Enterprise Linux 9.6 Extended Update Support to remediate several vulnerabilities. The update carries an Important impact rating, and each affected CVE’s CVSS base score is provided in the references section. Operators should install the patch, review the CVSS scores, and ensure nginx is not exposed to untrusted networks.]]></description>
       <pubDate>Mon, 02 Nov 2026 05:30:29 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93467">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates .NET 9.0 for RHEL 9.6</title>
+      <link>https://secubuzz.com/news/red-hat-updates-net-9-0-for-rhel-9-6-ed05000d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-net-9-0-for-rhel-9-6-ed05000d</guid>
+      <description><![CDATA[Red Hat released a .NET 9.0 security update for RHEL 9.6 Extended Update Support. The update fixes several vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to address the identified weaknesses, following Red Hat’s installation guidance today.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:28:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93459">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues util-linux Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-util-linux-security-update-97de88a9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-util-linux-security-update-97de88a9</guid>
+      <description><![CDATA[Red Hat released a security update for util‑linux on RHEL 10. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to mitigate the identified weaknesses, following Red Hat’s installation guidance in the vendor documentation today.]]></description>
+      <pubDate>Mon, 02 Nov 2026 05:15:07 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93461">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -134,6 +170,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Important Update for libsoup</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-update-for-libsoup-90d9b9f2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-update-for-libsoup-90d9b9f2</guid>
+      <description><![CDATA[A high‑severity vulnerability in libsoup affects Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rates the flaw important, with a CVSS base score listed in the CVE references but no public exploit. Security teams should install the libsoup update available for RHEL 7 Extended Lifecycle Support to mitigate the risk.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:33:36 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93465">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Updates libxml2 with Important Fix</title>
       <link>https://secubuzz.com/news/red-hat-updates-libxml2-with-important-fix-9e7aeae0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-libxml2-with-important-fix-9e7aeae0</guid>
@@ -176,6 +221,15 @@
       <description><![CDATA[A critical certificate validation flaw in LXD and Incus lets attackers bypass HTTPS management authentication and seize control of clusters and VMs. The flaw allows unauthenticated access without passwords, stolen keys, or user interaction, exposing Linux hosts to full administrative takeover. Canonical and Red Hat have released patches; operators should upgrade LXD/Incus to the latest version and enforce certificate validation.]]></description>
       <pubDate>Mon, 02 Nov 2026 02:45:51 GMT</pubDate>
       <source url="https://cybersecuritynews.com/certificate-validation-flaw-in-lxd-and-incus/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Moderate Update for libkcapi</title>
+      <link>https://secubuzz.com/news/red-hat-issues-moderate-update-for-libkcapi-330cca79</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-moderate-update-for-libkcapi-330cca79</guid>
+      <description><![CDATA[A moderate‑severity vulnerability in libkcapi affects Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and the Telecommunications Update Service. Red Hat Product Security rates the flaw moderate, with a CVSS base score listed in the CVE references but no public exploit. Apply the libkcapi update via RHEL 8.]]></description>
+      <pubDate>Mon, 02 Nov 2026 02:41:02 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93453">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Sun, 01 Nov 2026 16:25:18 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/chainalysis-breach-audit-leaked-customer-data">CyberNews AI</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>FBI Links DPRK Hackers to $6.43B Heist</title>
-      <link>https://secubuzz.com/news/fbi-links-dprk-hackers-to-6-43b-heist-a1677651</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-links-dprk-hackers-to-6-43b-heist-a1677651</guid>
-      <description><![CDATA[The FBI has linked a North Korean hacking group to a $6.43 billion cyber heist that targeted financial institutions. Investigators attribute the breach to credential theft and exploitation of weak multi‑factor authentication, enabling unauthorized transfers of over $6 billion. Law enforcement recommends tightening MFA, monitoring for anomalous transfers, and conducting forensic analysis of compromised accounts.]]></description>
-      <pubDate>Sun, 01 Nov 2026 15:31:35 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/tradertraitor-fbi-links-dprk-hackers-to-6-43b-heist">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Police Bust Cyber Syndicate Operators</title>
-      <link>https://secubuzz.com/news/police-bust-cyber-syndicate-operators-16d63d38</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/police-bust-cyber-syndicate-operators-16d63d38</guid>
-      <description><![CDATA[Law enforcement agencies dismantled the Cyber Syndicate, arresting key operators involved in coordinated cybercrime. Court filings detail the group’s use of phishing, credential theft, and ransomware delivery tactics, with profiles indicating a structured, financially motivated operation. Security teams should review the disclosed defensive controls, including multi‑factor authentication, email filtering, and endpoint detection, to mitigate similar threats.]]></description>
-      <pubDate>Sun, 01 Nov 2026 15:31:35 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/fbi-links-north-korea-s-tradertraitor-to-record-6-43-bi">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Northstar Security Raises $7M to Map Risk Combinations</title>
-      <link>https://secubuzz.com/news/northstar-security-raises-7m-to-map-risk-combinati-7389d5f3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/northstar-security-raises-7m-to-map-risk-combinati-7389d5f3</guid>
-      <description><![CDATA[Northstar Security has secured $7 million to develop a platform that maps identities, assets, and vulnerabilities to identify toxic risk combinations. The solution employs AI agents that scan for interdependencies and automatically suggest remediation steps for high‑impact combinations. Security teams can integrate the platform into existing workflows to proactively mitigate compound vulnerabilities before exploitation.]]></description>
-      <pubDate>Sun, 01 Nov 2026 11:15:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OneNote Embedded File Extraction</title>
-      <link>https://secubuzz.com/news/onenote-embedded-file-extraction-5586c7f9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/onenote-embedded-file-extraction-5586c7f9</guid>
-      <description><![CDATA[An analyst extracted embedded files from OneNote (.one) documents using a custom extraction process. The method parses the OneNote file structure to locate and retrieve embedded attachments, which may contain executable payloads. Security teams should scan extracted files for malware and carefully validate the integrity of OneNote documents before use.]]></description>
-      <pubDate>Sun, 01 Nov 2026 09:12:23 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33478">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Binance Theft Highlights Impact of Brotli CVE-2026-111497</title>
-      <link>https://secubuzz.com/news/binance-theft-highlights-impact-of-brotli-cve-2026-859d27d6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binance-theft-highlights-impact-of-brotli-cve-2026-859d27d6</guid>
-      <description><![CDATA[Binance suffered a $6.3 billion theft, while the Brotli compression flaw CVE‑2026‑111497 exposed vulnerabilities in multiple web applications. The CVE allows attackers to inject malicious payloads during decompression, potentially leading to remote code execution on affected servers. Patches are available from the Brotli maintainers; administrators should update libraries and audit decompression usage to mitigate risk.]]></description>
-      <pubDate>Sun, 01 Nov 2026 09:00:00 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/">Help Net Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Canonical LXD, MicroCloud Vulnerability Enables Client Impersonation</title>
-      <link>https://secubuzz.com/news/canonical-lxd-microcloud-vulnerability-enables-cli-e8c6cd66</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/canonical-lxd-microcloud-vulnerability-enables-cli-e8c6cd66</guid>
-      <description><![CDATA[A CVSS 10.0 flaw in Canonical’s LXD and MicroCloud lets attackers authenticate as trusted clients without the client’s private key. The attack requires network reach to the HTTPS API and the target’s public certificate, enabling full cluster and VM access. Canonical released a patch revoking the vulnerable flow; admins should apply it immediately and limit API exposure.]]></description>
-      <pubDate>Sun, 01 Nov 2026 08:51:31 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html">The Hacker News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

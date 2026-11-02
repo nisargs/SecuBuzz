@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/",
+    "title": "AI Agent Command Policy: First Ten Lines",
+    "headline": "AI Agent Command Policy: First Ten Lines",
+    "summary": "Vinay Thakker, KloudStax CTO, outlines a command policy framework for AI coding agents. The policy emphasizes running agents under distinct identities, attaching the user’s identity when acting on their behalf, and correcting credential proxy misuse. Thakker also recommends the first ten lines of a policy and measures to prevent data exfiltration via package installs.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-02T06:30:36.000Z",
+    "ingestedAt": "2026-11-02T06:44:55.432Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/02/byoky-open-source-ai-api-key-wallet/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/byoky-open-source-ai-api-key-wallet/",
+    "title": "Byoky Launches Open-Source AI API Key Wallet",
+    "headline": "Byoky Launches Open-Source AI API Key Wallet",
+    "summary": "Byoky introduces an open‑source wallet for storing AI API keys on Chrome, Firefox, iOS, and Android. The wallet encrypts keys locally, and forwards calls to providers, returning session tokens while keeping keys secure. Users install the extension or mobile app, configure provider credentials, and rely on Byoky to keep keys isolated from applications.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-02T06:00:33.000Z",
+    "ingestedAt": "2026-11-02T06:44:55.432Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/02/byoky-open-source-ai-api-key-wallet/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
     "sourceUrl": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
     "title": "VOLTA Infostealer Leverages LLMs to Rank Victims",
@@ -77,6 +109,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:93467",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93459",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93459",
+    "title": "Red Hat Updates .NET 9.0 for RHEL 9.6",
+    "headline": "Red Hat Updates .NET 9.0 for RHEL 9.6",
+    "summary": "Red Hat released a .NET 9.0 security update for RHEL 9.6 Extended Update Support. The update fixes several vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to address the identified weaknesses, following Red Hat’s installation guidance today.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T05:28:49.000Z",
+    "ingestedAt": "2026-11-02T06:44:55.432Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93459",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93461",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93461",
+    "title": "Red Hat Issues util-linux Security Update",
+    "headline": "Red Hat Issues util-linux Security Update",
+    "summary": "Red Hat released a security update for util‑linux on RHEL 10. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to mitigate the identified weaknesses, following Red Hat’s installation guidance in the vendor documentation today.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T05:15:07.000Z",
+    "ingestedAt": "2026-11-02T06:44:55.432Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93461",
     "additionalSources": []
   },
   {
@@ -228,6 +292,22 @@
     "isFallback": true
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93465",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93465",
+    "title": "Red Hat Issues Important Update for libsoup",
+    "headline": "Red Hat Issues Important Update for libsoup",
+    "summary": "A high‑severity vulnerability in libsoup affects Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rates the flaw important, with a CVSS base score listed in the CVE references but no public exploit. Security teams should install the libsoup update available for RHEL 7 Extended Lifecycle Support to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T03:33:36.000Z",
+    "ingestedAt": "2026-11-02T06:45:04.047Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93465",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93473",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93473",
     "title": "Red Hat Updates libxml2 with Important Fix",
@@ -305,6 +385,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/certificate-validation-flaw-in-lxd-and-incus/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93453",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93453",
+    "title": "Red Hat Issues Moderate Update for libkcapi",
+    "headline": "Red Hat Issues Moderate Update for libkcapi",
+    "summary": "A moderate‑severity vulnerability in libkcapi affects Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and the Telecommunications Update Service. Red Hat Product Security rates the flaw moderate, with a CVSS base score listed in the CVE references but no public exploit. Apply the libkcapi update via RHEL 8.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T02:41:02.000Z",
+    "ingestedAt": "2026-11-02T06:45:04.047Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93453",
     "additionalSources": []
   },
   {

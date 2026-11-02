@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-agent-command-policy-first-ten-lines-6be8061f",
+    "title": "AI Agent Command Policy: First Ten Lines",
+    "summary": "Vinay Thakker, KloudStax CTO, outlines a command policy framework for AI coding agents. The policy emphasizes running agents under distinct identities, attaching the user’s identity when acting on their behalf, and correcting credential proxy misuse. Thakker also recommends the first ten lines of a policy and measures to prevent data exfiltration via package installs.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/",
+    "publishedAt": "2026-11-02T06:30:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agent-command-policy-first-ten-lines",
+      "article-6be8061f",
+      "6be8061f",
+      "ai-agent-command-policy-first-ten-lines-485002"
+    ]
+  },
+  {
+    "slug": "byoky-launches-open-source-ai-api-key-wallet-13f4fb13",
+    "title": "Byoky Launches Open-Source AI API Key Wallet",
+    "summary": "Byoky introduces an open‑source wallet for storing AI API keys on Chrome, Firefox, iOS, and Android. The wallet encrypts keys locally, and forwards calls to providers, returning session tokens while keeping keys secure. Users install the extension or mobile app, configure provider credentials, and rely on Byoky to keep keys isolated from applications.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/byoky-open-source-ai-api-key-wallet/",
+    "publishedAt": "2026-11-02T06:00:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "byoky-launches-open-source-ai-api-key-wallet",
+      "article-13f4fb13",
+      "13f4fb13",
+      "byoky-launches-open-source-ai-api-key-wallet-4ec313"
+    ]
+  },
+  {
     "slug": "volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1",
     "title": "VOLTA Infostealer Leverages LLMs to Rank Victims",
     "summary": "A new infostealer, VOLTA-AUTODOXER, harvests credentials and browser cookies from Chromium-based browsers, Outlook profiles, and Slack workspaces. The malware employs language models such as Claude, Gemini, and Kimi to evaluate stolen data and prioritize victims by financial value. Security teams should deploy endpoint detection and response solutions, block known VOLTA download domains, and enforce multi‑factor authentication to mitigate credential theft.",
@@ -101,6 +137,42 @@ export const news: NewsBrief[] = [
       "302ab5d8",
       "nginx-update-fixes-important-security-vulnerabilit-37d92e",
       "nginx-update-fixes-important-security-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-net-9-0-for-rhel-9-6-ed05000d",
+    "title": "Red Hat Updates .NET 9.0 for RHEL 9.6",
+    "summary": "Red Hat released a .NET 9.0 security update for RHEL 9.6 Extended Update Support. The update fixes several vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to address the identified weaknesses, following Red Hat’s installation guidance today.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93459",
+    "publishedAt": "2026-11-02T05:28:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-net-9-0-for-rhel-9-6",
+      "article-ed05000d",
+      "ed05000d",
+      "red-hat-updates-net-9-0-for-rhel-9-6-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-util-linux-security-update-97de88a9",
+    "title": "Red Hat Issues util-linux Security Update",
+    "summary": "Red Hat released a security update for util‑linux on RHEL 10. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to mitigate the identified weaknesses, following Red Hat’s installation guidance in the vendor documentation today.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93461",
+    "publishedAt": "2026-11-02T05:15:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-util-linux-security-update",
+      "article-97de88a9",
+      "97de88a9",
+      "red-hat-issues-util-linux-security-update-37d92e"
     ]
   },
   {
@@ -270,6 +342,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-important-update-for-libsoup-90d9b9f2",
+    "title": "Red Hat Issues Important Update for libsoup",
+    "summary": "A high‑severity vulnerability in libsoup affects Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rates the flaw important, with a CVSS base score listed in the CVE references but no public exploit. Security teams should install the libsoup update available for RHEL 7 Extended Lifecycle Support to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93465",
+    "publishedAt": "2026-11-02T03:33:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-update-for-libsoup",
+      "article-90d9b9f2",
+      "90d9b9f2",
+      "red-hat-issues-important-update-for-libsoup-37d92e"
+    ]
+  },
+  {
     "slug": "red-hat-updates-libxml2-with-important-fix-9e7aeae0",
     "title": "Red Hat Updates libxml2 with Important Fix",
     "summary": "Red Hat issued an important update for libxml2 in RHEL 8.4, addressing a vulnerability that could allow XML parsing exploits. The defect, with a moderate CVSS score, permits attackers to trigger buffer overflows during XML processing, potentially leading to code execution. Red Hat advises installing the patch promptly and reviewing the CVE links for full remediation guidance.",
@@ -359,6 +449,24 @@ export const news: NewsBrief[] = [
       "99c45be4",
       "lxd-incus-certificate-validation-flaw-enables-remo-58736f",
       "lxd-incus-certificate-validation-flaw-enables-remote-control"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-moderate-update-for-libkcapi-330cca79",
+    "title": "Red Hat Issues Moderate Update for libkcapi",
+    "summary": "A moderate‑severity vulnerability in libkcapi affects Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and the Telecommunications Update Service. Red Hat Product Security rates the flaw moderate, with a CVSS base score listed in the CVE references but no public exploit. Apply the libkcapi update via RHEL 8.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93453",
+    "publishedAt": "2026-11-02T02:41:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-moderate-update-for-libkcapi",
+      "article-330cca79",
+      "330cca79",
+      "red-hat-issues-moderate-update-for-libkcapi-37d92e"
     ]
   },
   {
