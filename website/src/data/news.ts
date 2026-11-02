@@ -11,6 +11,116 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-libxml2-security-update-7978e9e6",
+    "title": "Red Hat Releases libxml2 Security Update",
+    "summary": "Red Hat released a libxml2 security update for Enterprise Linux 7, fixing several XML parsing flaws. The vulnerabilities allow denial of service or remote code execution via malformed XML, with CVSS scores up to 8.9. Apply the RHSA-2026:93791 patch immediately and verify libxml2 is updated to the latest release on all affected systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93791",
+    "publishedAt": "2026-11-02T13:36:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-libxml2-security-update",
+      "article-7978e9e6",
+      "7978e9e6",
+      "red-hat-releases-libxml2-security-update-37d922"
+    ]
+  },
+  {
+    "slug": "revolve-breach-exposes-180-000-customer-records-7ac2ba1c",
+    "title": "Revolve Breach Exposes 180,000 Customer Records",
+    "summary": "Hackers breached Revolve’s online shopping platform, compromising personal and payment card data of at least 180,000 customers. The attack exploited insufficient authentication controls, allowing attackers to retrieve stored credentials and transaction details, potentially enabling fraud. Revolve should enforce multi‑factor authentication, patch access controls, and notify affected users while conducting a full forensic investigation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
+    "publishedAt": "2026-11-02T13:35:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "revolve-breach-exposes-180-000-customer-records",
+      "article-7ac2ba1c",
+      "7ac2ba1c",
+      "revolve-breach-exposes-180-000-customer-records-6c2710"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-libsoup-security-update-54b4ed49",
+    "title": "Red Hat Releases libsoup Security Update",
+    "summary": "Red Hat issued a libsoup security update for Enterprise Linux 8.6, addressing multiple vulnerabilities. The flaws enable denial of service or remote code execution through malformed HTTP requests, with CVSS scores up to 8.9. Apply the RHSA-2026:93716 patch immediately and ensure libsoup is updated to the latest version on all affected systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93716",
+    "publishedAt": "2026-11-02T12:50:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-libsoup-security-update",
+      "article-54b4ed49",
+      "54b4ed49",
+      "red-hat-releases-libsoup-security-update-37d923"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-93668-important-pki-core-10-6-security-u-407748e3",
+    "title": "RHSA-2026:93668: Important: pki-core:10.6 security update",
+    "summary": "An update for the pki-core:10.6 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93668",
+    "publishedAt": "2026-11-02T12:48:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93668-important-pki-core-10-6-security-u",
+      "article-407748e3",
+      "407748e3",
+      "rhsa-2026-93668-important-pki-core-10-6-security-u-37d926",
+      "rhsa-2026-93668-important-pki-core-10-6-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-93617-important-opentelemetry-collector-08a99efe",
+    "title": "RHSA-2026:93617: Important: opentelemetry-collector security update",
+    "summary": "An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93617",
+    "publishedAt": "2026-11-02T12:47:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93617-important-opentelemetry-collector",
+      "article-08a99efe",
+      "08a99efe",
+      "rhsa-2026-93617-important-opentelemetry-collector-37d927",
+      "rhsa-2026-93617-important-opentelemetry-collector-security-u"
+    ]
+  },
+  {
+    "slug": "gitlab-servers-exposed-to-active-rce-exploitation-ddd8d18c",
+    "title": "GitLab Servers Exposed to Active RCE Exploitation",
+    "summary": "A maximum‑severity flaw in GitLab’s web interface remains unpatched on more than 1,000 Internet‑exposed servers, enabling remote code execution. The vulnerability permits unauthenticated RCE via crafted HTTP requests, and active exploits have been observed, allowing attackers to run arbitrary code. GitLab urges administrators to apply the latest patch, disable exposed services, and verify current releases to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+    "publishedAt": "2026-11-02T12:47:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-servers-exposed-to-active-rce-exploitation",
+      "article-ddd8d18c",
+      "ddd8d18c",
+      "gitlab-servers-exposed-to-active-rce-exploitation-1f01b0"
+    ]
+  },
+  {
     "slug": "rhsa-2026-92221-important-flatpak-security-update-a8c51d25",
     "title": "RHSA-2026:92221: Important: flatpak security update",
     "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -64,6 +174,43 @@ export const news: NewsBrief[] = [
       "76be2095",
       "red-hat-issues-important-update-for-python-jwt-lib-37d927",
       "red-hat-issues-important-update-for-python-jwt-library"
+    ]
+  },
+  {
+    "slug": "ai-bug-discovery-rate-surges-3-of-critical-bugs-82ead697",
+    "title": "AI Bug Discovery Rate Surges 3% of Critical Bugs",
+    "summary": "A recent analysis shows 3% of all recorded critical bugs were found last month, potentially adding 100,000 new vulnerabilities this year. This pace would increase the all‑time total by about 26%, expanding the threat landscape through AI‑assisted discovery. Security teams should monitor feeds and adjust patch cycles to match the accelerated discovery rate.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
+    "publishedAt": "2026-11-02T12:02:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-bug-discovery-rate-surges-3-of-critical-bugs",
+      "article-82ead697",
+      "82ead697",
+      "ai-bug-discovery-rate-surges-3-of-critical-bugs-21d0f9"
+    ]
+  },
+  {
+    "slug": "prophet-security-survey-evaluates-soc-ai-adoption-c9669de4",
+    "title": "Prophet Security Survey Evaluates SOC AI Adoption Trends",
+    "summary": "Prophet Security published its State of AI in Security Operations 2026 survey of over 250 security leaders and practitioners. The report reveals that 40 percent of security teams deploy AI daily, 56 percent are testing implementation, and only 4 percent lack adoption plans. Security operations centers must evaluate structural readiness and operational maturity before deploying AI agents across workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+    "publishedAt": "2026-11-02T11:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "prophet-security-survey-evaluates-soc-ai-adoption",
+      "article-c9669de4",
+      "c9669de4",
+      "prophet-security-survey-evaluates-soc-ai-adoption-7be76b",
+      "prophet-security-survey-evaluates-soc-ai-adoption-trends"
     ]
   },
   {
@@ -230,6 +377,25 @@ export const news: NewsBrief[] = [
       "fa0bacaf",
       "managed-siem-services-cost-tuning-and-ownership-mo-2ce517",
       "managed-siem-services-cost-tuning-and-ownership-models"
+    ]
+  },
+  {
+    "slug": "cyber-security-news-ranks-top-soc-service-provider-39fb8ae4",
+    "title": "Cyber Security News Ranks Top SOC Service Providers",
+    "summary": "Cyber Security News published a technical vendor evaluation ranking the top SOC-as-a-Service providers for mid-market and enterprise organizations. The 2026 market evaluation categorizes security providers into specialized concierge models, scalable detection engineering platforms, and bring-your-own-stack operators. Security leaders can utilize these detailed industry benchmarks to solve internal analyst staffing constraints and maintain continuous operational monitoring.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-soc-as-a-service/",
+    "publishedAt": "2026-11-02T09:36:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyber-security-news-ranks-top-soc-service-provider",
+      "article-39fb8ae4",
+      "39fb8ae4",
+      "cyber-security-news-ranks-top-soc-service-provider-547a42",
+      "cyber-security-news-ranks-top-soc-service-providers"
     ]
   },
   {
@@ -991,24 +1157,6 @@ export const news: NewsBrief[] = [
       "6d2e5d83",
       "red-hat-issues-important-security-update-for-libso-37d92e",
       "red-hat-issues-important-security-update-for-libsoup"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-libxml2-security-update-464d70a2",
-    "title": "Red Hat Releases libxml2 Security Update",
-    "summary": "Red Hat released a libxml2 security update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service. The update fixes multiple libxml2 vulnerabilities, each assigned a CVE and rated Important, with CVSS scores indicating high risk. Red Hat recommends installing RHSA-2026:93463 immediately; users can verify patch status via the CVE links, no workarounds needed.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93463",
-    "publishedAt": "2026-11-02T03:36:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-libxml2-security-update",
-      "article-464d70a2",
-      "464d70a2",
-      "red-hat-releases-libxml2-security-update-37d92e"
     ]
   },
   {

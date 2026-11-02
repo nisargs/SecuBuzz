@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 12:47:21 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 13:46:57 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases libxml2 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-libxml2-security-update-7978e9e6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxml2-security-update-7978e9e6</guid>
+      <description><![CDATA[Red Hat released a libxml2 security update for Enterprise Linux 7, fixing several XML parsing flaws. The vulnerabilities allow denial of service or remote code execution via malformed XML, with CVSS scores up to 8.9. Apply the RHSA-2026:93791 patch immediately and verify libxml2 is updated to the latest release on all affected systems.]]></description>
+      <pubDate>Mon, 02 Nov 2026 13:36:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93791">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Revolve Breach Exposes 180,000 Customer Records</title>
+      <link>https://secubuzz.com/news/revolve-breach-exposes-180-000-customer-records-7ac2ba1c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/revolve-breach-exposes-180-000-customer-records-7ac2ba1c</guid>
+      <description><![CDATA[Hackers breached Revolve’s online shopping platform, compromising personal and payment card data of at least 180,000 customers. The attack exploited insufficient authentication controls, allowing attackers to retrieve stored credentials and transaction details, potentially enabling fraud. Revolve should enforce multi‑factor authentication, patch access controls, and notify affected users while conducting a full forensic investigation.]]></description>
+      <pubDate>Mon, 02 Nov 2026 13:35:21 GMT</pubDate>
+      <source url="https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases libsoup Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-libsoup-security-update-54b4ed49</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libsoup-security-update-54b4ed49</guid>
+      <description><![CDATA[Red Hat issued a libsoup security update for Enterprise Linux 8.6, addressing multiple vulnerabilities. The flaws enable denial of service or remote code execution through malformed HTTP requests, with CVSS scores up to 8.9. Apply the RHSA-2026:93716 patch immediately and ensure libsoup is updated to the latest version on all affected systems.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:50:08 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93716">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93668: Important: pki-core:10.6 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93668-important-pki-core-10-6-security-u-407748e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93668-important-pki-core-10-6-security-u-407748e3</guid>
+      <description><![CDATA[An update for the pki-core:10.6 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:48:28 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93668">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93617: Important: opentelemetry-collector security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93617-important-opentelemetry-collector-08a99efe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93617-important-opentelemetry-collector-08a99efe</guid>
+      <description><![CDATA[An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:47:38 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93617">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GitLab Servers Exposed to Active RCE Exploitation</title>
+      <link>https://secubuzz.com/news/gitlab-servers-exposed-to-active-rce-exploitation-ddd8d18c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-servers-exposed-to-active-rce-exploitation-ddd8d18c</guid>
+      <description><![CDATA[A maximum‑severity flaw in GitLab’s web interface remains unpatched on more than 1,000 Internet‑exposed servers, enabling remote code execution. The vulnerability permits unauthenticated RCE via crafted HTTP requests, and active exploits have been observed, allowing attackers to run arbitrary code. GitLab urges administrators to apply the latest patch, disable exposed services, and verify current releases to mitigate the risk.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:47:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:92221: Important: flatpak security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-92221-important-flatpak-security-update-a8c51d25</link>
@@ -33,6 +87,24 @@
       <pubDate>Mon, 02 Nov 2026 12:02:40 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93624">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Bug Discovery Rate Surges 3% of Critical Bugs</title>
+      <link>https://secubuzz.com/news/ai-bug-discovery-rate-surges-3-of-critical-bugs-82ead697</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-bug-discovery-rate-surges-3-of-critical-bugs-82ead697</guid>
+      <description><![CDATA[A recent analysis shows 3% of all recorded critical bugs were found last month, potentially adding 100,000 new vulnerabilities this year. This pace would increase the all‑time total by about 26%, expanding the threat landscape through AI‑assisted discovery. Security teams should monitor feeds and adjust patch cycles to match the accelerated discovery rate.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:02:34 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html">Schneier on Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Prophet Security Survey Evaluates SOC AI Adoption Trends</title>
+      <link>https://secubuzz.com/news/prophet-security-survey-evaluates-soc-ai-adoption-c9669de4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/prophet-security-survey-evaluates-soc-ai-adoption-c9669de4</guid>
+      <description><![CDATA[Prophet Security published its State of AI in Security Operations 2026 survey of over 250 security leaders and practitioners. The report reveals that 40 percent of security teams deploy AI daily, 56 percent are testing implementation, and only 4 percent lack adoption plans. Security operations centers must evaluate structural readiness and operational maturity before deploying AI agents across workflows.]]></description>
+      <pubDate>Mon, 02 Nov 2026 11:30:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html">The Hacker News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Synology Alerts on C3RB3R Ransomware Attacks</title>
@@ -113,6 +185,15 @@
       <description><![CDATA[The article reviews managed SIEM services, noting that the license costs half the total while the unstaffed half—tuning, content, and triage—often causes failures. It explains managed services supply discipline, offering three ownership models: platform‑managed, operator‑managed, and shared‑ownership, ensuring tuning and threat detection. The ranking evaluates ten vendors on cost, ownership, and operational effectiveness to help organizations choose a SIEM partner.]]></description>
       <pubDate>Mon, 02 Nov 2026 09:39:56 GMT</pubDate>
       <source url="https://cybersecuritynews.com/best-managed-siem-services/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cyber Security News Ranks Top SOC Service Providers</title>
+      <link>https://secubuzz.com/news/cyber-security-news-ranks-top-soc-service-provider-39fb8ae4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyber-security-news-ranks-top-soc-service-provider-39fb8ae4</guid>
+      <description><![CDATA[Cyber Security News published a technical vendor evaluation ranking the top SOC-as-a-Service providers for mid-market and enterprise organizations. The 2026 market evaluation categorizes security providers into specialized concierge models, scalable detection engineering platforms, and bring-your-own-stack operators. Security leaders can utilize these detailed industry benchmarks to solve internal analyst staffing constraints and maintain continuous operational monitoring.]]></description>
+      <pubDate>Mon, 02 Nov 2026 09:36:54 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-soc-as-a-service/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -374,87 +455,6 @@
       <description><![CDATA[A pre‑authentication RCE flaw in TightVNC Viewer 2.8.88 x64 lets attackers run code on Windows PCs before password prompts. The flaw corrupts viewer memory when a malicious VNC server sends crafted screen data, enabling arbitrary code execution; PoC confirms the vulnerability. Update to the latest TightVNC release or apply vendor patches, and disable remote connections until a fix is issued.]]></description>
       <pubDate>Mon, 02 Nov 2026 04:26:12 GMT</pubDate>
       <source url="https://cybersecuritynews.com/tightvnc-pre-auth-rce-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Exploit GitHub Actions for CI/CD Secrets Theft</title>
-      <link>https://secubuzz.com/news/hackers-exploit-github-actions-for-ci-cd-secrets-t-a6188030</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-github-actions-for-ci-cd-secrets-t-a6188030</guid>
-      <description><![CDATA[Hackers used command injection in GitHub Actions to target 61 public repositories via malicious issues, PRs, and comments. Injected commands executed in two workflow runs, allowing attackers to exfiltrate CI/CD secrets. GitHub should tighten workflow permissions, and users must audit PRs for suspicious commands; disabling workflow execution for untrusted PRs mitigates the flaw.]]></description>
-      <pubDate>Mon, 02 Nov 2026 04:21:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-target-61-github-repositories/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93464: Moderate: podman security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93464-moderate-podman-security-update-c54f492c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93464-moderate-podman-security-update-c54f492c</guid>
-      <description><![CDATA[An update for podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 04:14:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93464">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>BTCPay Servers Targeted: Hot Wallets Drained</title>
-      <link>https://secubuzz.com/news/btcpay-servers-targeted-hot-wallets-drained-7e228faa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/btcpay-servers-targeted-hot-wallets-drained-7e228faa</guid>
-      <description><![CDATA[BTCPay Server operators received reports that attackers drained Bitcoin hot wallets on its servers, compromising merchant funds. The incident prompted the open‑source payment processor to urge operators to shut down installations immediately and keep them offline during investigation. BTCPay recommends applying the latest security patches and verifying wallet configurations to prevent further unauthorized withdrawals.]]></description>
-      <pubDate>Mon, 02 Nov 2026 04:04:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/btcpay-server-warns/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Kernel Security Update for RHEL 8</title>
-      <link>https://secubuzz.com/news/red-hat-issues-kernel-security-update-for-rhel-8-7fa41efe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-security-update-for-rhel-8-7fa41efe</guid>
-      <description><![CDATA[Red Hat released an important kernel security update for RHEL 8, addressing vulnerabilities that could enable privilege escalation or denial of service. The advisory cites multiple CVE identifiers with CVSS scores ranging from moderate to high, though no active exploitation has been observed. Apply the kernel update promptly and verify system integrity following Red Hat’s upgrade guidelines.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:57:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93436">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93471: Important: perl-YAML:1.24 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93471-important-perl-yaml-1-24-security-d3a09504</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93471-important-perl-yaml-1-24-security-d3a09504</guid>
-      <description><![CDATA[An update for the perl-YAML:1.24 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:52:24 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93471">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Pipewire on RHEL 10</title>
-      <link>https://secubuzz.com/news/red-hat-updates-pipewire-on-rhel-10-f43ad8cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-pipewire-on-rhel-10-f43ad8cd</guid>
-      <description><![CDATA[Red Hat released a moderate‑severity security update for pipewire on RHEL 10. The update addresses one or more vulnerabilities referenced by CVE links, though no specific CVE ID is listed, potentially allowing local privilege escalation or denial of service. Users should apply the patch to mitigate potential exploitation of the affected component.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:48:07 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93442">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93458: Important: .NET 9.0 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93458-important-net-9-0-security-update-7ecd4944</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93458-important-net-9-0-security-update-7ecd4944</guid>
-      <description><![CDATA[An update for .NET 9.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:38:57 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93458">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93472: Important: nginx security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93472-important-nginx-security-update-64b5712c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93472-important-nginx-security-update-64b5712c</guid>
-      <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:38:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93472">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93455: Important: .NET 8.0 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93455-important-net-8-0-security-update-6eef3a87</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93455-important-net-8-0-security-update-6eef3a87</guid>
-      <description><![CDATA[An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:38:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93455">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
