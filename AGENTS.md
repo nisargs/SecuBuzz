@@ -23,7 +23,7 @@
   - SecuBuzz has live users. The website, the API, the push fleet, and the feed are production. These rules are absolute.
   - **Never delete Cloudflare resources.** Not the `secubuzz-push` worker, not D1 `secubuzz-push-db`, not R2 buckets (`secubuzz-data` / `secubuzz-feed`), not KV namespaces, not cron triggers. If a resource must be replaced, build the replacement next to it, verify it serves traffic, then cut over. Delete last, never delete first.
   - **Never run destructive database commands on D1.** No `DROP TABLE`, no `DROP DATABASE`, no `DELETE` without a `WHERE` clause, no migrations that remove columns holding live data. Migrations only add.
-  - **Never delete R2 objects outside the normal ingest rotation.** The 350 brief cap is the only deletion path. Never empty a bucket.
+  - **Never delete R2 objects outside the normal ingest rotation.** The 500 brief cap is the only deletion path. Never empty a bucket.
   - **Never delete the GitHub repo, never force push to main, never delete the main branch.**
   - **Never touch the Google Play listing, signing keys, EAS projects, or the secubuzz.com domain and DNS.**
   - **Snapshot before you migrate.** Any change touching D1 schema or R2 data starts with a backup.
@@ -69,7 +69,7 @@
 - **Desktop QR Conversion & Video Assets:**
   - High-res QR code (`/qr.png`) pointing directly to Google Play Store deployed to bridge the desktop-to-mobile conversion gap for corporate PC readers (89.8% of web traffic). Rendered on `/download` and via desktop helper triggers.
   - Product walkthrough video deployed at `/secubuzz-landscape.mp4` (with HTTP 301 redirect from legacy `/brag.mp4` in Cloudflare Worker).
-- **Feed System:** `scripts/ingest.mjs` retains up to 350 articles (~7–10 days of security intelligence across 43 curated sources: 29 media/research publications + 14 official vendor PSIRT & advisory feeds, documented in `docs/FEEDS_AND_SOURCES.md`), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient multi-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` with OpenRouter emergency fallback), alternating lead duties 50/50 between Groq and Gemini (12 hours each: `currentHour % 2`) with instant failover on HTTP 429/5xx.
+- **Feed System:** `scripts/ingest.mjs` retains up to 500 articles (~10–14 days of security intelligence across 43 curated sources: 29 media/research publications + 14 official vendor PSIRT & advisory feeds, documented in `docs/FEEDS_AND_SOURCES.md`, with automatic sync to Cloudflare D1 permanent archive), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient multi-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` with OpenRouter emergency fallback), alternating lead duties 50/50 between Groq and Gemini (12 hours each: `currentHour % 2`) with instant failover on HTTP 429/5xx.
 - **INGESTION PIPELINE CODE FREEZE (PERMANENT INVARIANT):**
   - **DO NOT TOUCH OR MODIFY `scripts/ingest.mjs` EVER:** The ingestion pipeline is mathematically calibrated, balanced, and locked. Let it run completely autonomously to ingest, summarize, and publish new stories and advisories. Never alter its constants or flow.
   - **Calibrated Ingestion Constants:**
@@ -340,7 +340,7 @@
       6. *Support & Ko-fi Clicks*: Breakdown of `/support` clicks by source (`footer_card`, `about_page`, `download_page`, `footer_nav`), unique clickers, repeat clicks, country, and recent referral stream.
 - **Authoritative Inventory Counts:**
   - **Advisories count:** Exactly **1,806 active advisories** (1,756 live CISA KEV + 50 GitHub Advisories). Kept strictly consistent across mobile app (`1,806 active`) and website (`1,806 active advisories`).
-  - **News feed count:** Up to **350 articles** (~7–10 days of rolling intelligence across 27 verified threat feeds).
+  - **News feed count:** Up to **500 active articles** (~10–14 days of rolling intelligence across 43 verified threat feeds), backed by permanent Cloudflare D1 historical archive storing **1,356+ unique articles** with live search and zero 404s.
 - **100% Free Tier ($0.00 Cost Guarantee):**
   - AI Summarization: Tri-engine architecture (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback). Primary Groq free tier ceiling is 8,000 TPM, 30 RPM, 14,400 RPD; backup Google Gemini free tier offers 1,000,000 TPM, 15 RPM, 1,500 RPD. Ingestion runs every 1 hour, batching 2 articles with a 5s backoff and automated fallback. Adding feeds or increasing feed size respects these ceilings and never incurs costs.
   - Cloudflare: Worker (100k req/day free), R2 (10GB / 1M writes free), D1 (5M reads / 100k writes free).
