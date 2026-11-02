@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/02/deepseek-dsh-superagent/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/deepseek-dsh-superagent/",
+    "title": "DeepSeek Releases Super-Agent Coding Tool",
+    "headline": "DeepSeek Releases Super-Agent Coding Tool",
+    "summary": "DeepSeek unveiled dsh-superagent, a research prototype that automates coding tasks on GitHub repositories. The agent activates when an authorized user requests work or a team rule matches, and it can be invoked by mentioning the agent in chat or GitHub scopes. Developers can integrate the prototype into collaborative workflows, but should review its permissions and usage policies before deployment.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-02T07:09:55.000Z",
+    "ingestedAt": "2026-11-02T07:43:47.126Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/02/deepseek-dsh-superagent/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/",
     "title": "AI Agent Command Policy: First Ten Lines",
@@ -128,6 +144,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93454",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93454",
+    "title": "Red Enterprise Linux 9.6 curl Update Addresses Vulnerabilities",
+    "headline": "Red Enterprise Linux 9.6 curl Update Addresses Vulnerabilities",
+    "summary": "Red Enterprise Linux 9.6 EUS users receive a curl security update addressing multiple vulnerabilities. The update fixes issues identified by Red Hat Product Security, with CVSS scores listed in the CVE references, indicating moderate to high impact. Apply RHSA-2026:93454 immediately to mitigate the weaknesses and review the CVE links for severity details.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T05:15:07.000Z",
+    "ingestedAt": "2026-11-02T07:43:47.126Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93454",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:93461",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93461",
     "title": "Red Hat Issues util-linux Security Update",
@@ -141,6 +173,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:93461",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93537",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93537",
+    "title": "Red Enterprise Linux 8.8 freerdp Update Fixes Vulnerabilities",
+    "headline": "Red Enterprise Linux 8.8 freerdp Update Fixes Vulnerabilities",
+    "summary": "Red Enterprise Linux 8.8 SAP and Telecom users receive a freerdp security update addressing multiple vulnerabilities. The update corrects issues identified by Red Hat Product Security, with CVSS scores in the CVE references indicating moderate to high impact. Apply RHSA-2026:93537 promptly to mitigate the weaknesses and consult the CVE links for severity details.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T05:03:17.000Z",
+    "ingestedAt": "2026-11-02T07:43:47.126Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93537",
     "additionalSources": []
   },
   {
@@ -290,6 +338,38 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93463",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93463",
+    "title": "Red Hat Releases libxml2 Security Update",
+    "headline": "Red Hat Releases libxml2 Security Update",
+    "summary": "Red Hat released a libxml2 security update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service. The update fixes multiple libxml2 vulnerabilities, each assigned a CVE and rated Important, with CVSS scores indicating high risk. Red Hat recommends installing RHSA-2026:93463 immediately; users can verify patch status via the CVE links, no workarounds needed.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T03:36:06.000Z",
+    "ingestedAt": "2026-11-02T07:43:54.062Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93463",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93450",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93450",
+    "title": "Red Enterprise Linux 9.6 libXtst Update Addresses Vulnerabilities",
+    "headline": "Red Enterprise Linux 9.6 libXtst Update Addresses Vulnerabilities",
+    "summary": "Red Enterprise Linux 9.6 EUS users receive a libXtst security update addressing multiple vulnerabilities. The update fixes issues identified by Red Hat Product Security, with CVSS scores in the CVE references indicating moderate to high impact. Apply RHSA-2026:93450 immediately to mitigate the weaknesses and review the CVE links for severity details.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-02T03:35:46.000Z",
+    "ingestedAt": "2026-11-02T07:43:47.126Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93450",
+    "additionalSources": []
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:93465",

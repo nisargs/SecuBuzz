@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "deepseek-releases-super-agent-coding-tool-d4a951b1",
+    "title": "DeepSeek Releases Super-Agent Coding Tool",
+    "summary": "DeepSeek unveiled dsh-superagent, a research prototype that automates coding tasks on GitHub repositories. The agent activates when an authorized user requests work or a team rule matches, and it can be invoked by mentioning the agent in chat or GitHub scopes. Developers can integrate the prototype into collaborative workflows, but should review its permissions and usage policies before deployment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/deepseek-dsh-superagent/",
+    "publishedAt": "2026-11-02T07:09:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "deepseek-releases-super-agent-coding-tool",
+      "article-d4a951b1",
+      "d4a951b1",
+      "deepseek-releases-super-agent-coding-tool-1b328b"
+    ]
+  },
+  {
     "slug": "ai-agent-command-policy-first-ten-lines-6be8061f",
     "title": "AI Agent Command Policy: First Ten Lines",
     "summary": "Vinay Thakker, KloudStax CTO, outlines a command policy framework for AI coding agents. The policy emphasizes running agents under distinct identities, attaching the user’s identity when acting on their behalf, and correcting credential proxy misuse. Thakker also recommends the first ten lines of a policy and measures to prevent data exfiltration via package installs.",
@@ -158,6 +176,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-enterprise-linux-9-6-curl-update-addresses-vul-e53c2a3d",
+    "title": "Red Enterprise Linux 9.6 curl Update Addresses Vulnerabilities",
+    "summary": "Red Enterprise Linux 9.6 EUS users receive a curl security update addressing multiple vulnerabilities. The update fixes issues identified by Red Hat Product Security, with CVSS scores listed in the CVE references, indicating moderate to high impact. Apply RHSA-2026:93454 immediately to mitigate the weaknesses and review the CVE links for severity details.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93454",
+    "publishedAt": "2026-11-02T05:15:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-enterprise-linux-9-6-curl-update-addresses-vul",
+      "article-e53c2a3d",
+      "e53c2a3d",
+      "red-enterprise-linux-9-6-curl-update-addresses-vul-37d92e",
+      "red-enterprise-linux-9-6-curl-update-addresses-vulnerabiliti"
+    ]
+  },
+  {
     "slug": "red-hat-issues-util-linux-security-update-97de88a9",
     "title": "Red Hat Issues util-linux Security Update",
     "summary": "Red Hat released a security update for util‑linux on RHEL 10. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to mitigate the identified weaknesses, following Red Hat’s installation guidance in the vendor documentation today.",
@@ -173,6 +210,25 @@ export const news: NewsBrief[] = [
       "article-97de88a9",
       "97de88a9",
       "red-hat-issues-util-linux-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "red-enterprise-linux-8-8-freerdp-update-fixes-vuln-c192ba27",
+    "title": "Red Enterprise Linux 8.8 freerdp Update Fixes Vulnerabilities",
+    "summary": "Red Enterprise Linux 8.8 SAP and Telecom users receive a freerdp security update addressing multiple vulnerabilities. The update corrects issues identified by Red Hat Product Security, with CVSS scores in the CVE references indicating moderate to high impact. Apply RHSA-2026:93537 promptly to mitigate the weaknesses and consult the CVE links for severity details.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93537",
+    "publishedAt": "2026-11-02T05:03:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-enterprise-linux-8-8-freerdp-update-fixes-vuln",
+      "article-c192ba27",
+      "c192ba27",
+      "red-enterprise-linux-8-8-freerdp-update-fixes-vuln-37d92a",
+      "red-enterprise-linux-8-8-freerdp-update-fixes-vulnerabilitie"
     ]
   },
   {
@@ -339,6 +395,43 @@ export const news: NewsBrief[] = [
       "article-6eef3a87",
       "6eef3a87",
       "rhsa-2026-93455-important-net-8-0-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-libxml2-security-update-464d70a2",
+    "title": "Red Hat Releases libxml2 Security Update",
+    "summary": "Red Hat released a libxml2 security update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service. The update fixes multiple libxml2 vulnerabilities, each assigned a CVE and rated Important, with CVSS scores indicating high risk. Red Hat recommends installing RHSA-2026:93463 immediately; users can verify patch status via the CVE links, no workarounds needed.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93463",
+    "publishedAt": "2026-11-02T03:36:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-libxml2-security-update",
+      "article-464d70a2",
+      "464d70a2",
+      "red-hat-releases-libxml2-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "red-enterprise-linux-9-6-libxtst-update-addresses-7f95f7d3",
+    "title": "Red Enterprise Linux 9.6 libXtst Update Addresses Vulnerabilities",
+    "summary": "Red Enterprise Linux 9.6 EUS users receive a libXtst security update addressing multiple vulnerabilities. The update fixes issues identified by Red Hat Product Security, with CVSS scores in the CVE references indicating moderate to high impact. Apply RHSA-2026:93450 immediately to mitigate the weaknesses and review the CVE links for severity details.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93450",
+    "publishedAt": "2026-11-02T03:35:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-enterprise-linux-9-6-libxtst-update-addresses",
+      "article-7f95f7d3",
+      "7f95f7d3",
+      "red-enterprise-linux-9-6-libxtst-update-addresses-37d92e",
+      "red-enterprise-linux-9-6-libxtst-update-addresses-vulnerabil"
     ]
   },
   {
