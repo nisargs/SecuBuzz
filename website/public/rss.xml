@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 11:46:23 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 12:47:21 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:92221: Important: flatpak security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-92221-important-flatpak-security-update-a8c51d25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-92221-important-flatpak-security-update-a8c51d25</guid>
+      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:33:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92221">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93627: Important: wireshark security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93627-important-wireshark-security-updat-4af7f3fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93627-important-wireshark-security-updat-4af7f3fb</guid>
+      <description><![CDATA[An update for wireshark is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:21:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93627">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important Update for python‑jwt Library</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-update-for-python-jwt-lib-76be2095</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-update-for-python-jwt-lib-76be2095</guid>
+      <description><![CDATA[Red Hat released an Important security update for python‑jwt on RHEL 8.8 Update Services for SAP Solutions and Telecommunications. The update fixes vulnerabilities in python‑jwt, with CVSS base scores available via referenced CVE links, and is rated Important by Red Hat Product Security. Apply the patch through the RHEL 8.8 Update Services channel to mitigate potential exploitation of the library.]]></description>
+      <pubDate>Mon, 02 Nov 2026 12:02:40 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93624">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Synology Alerts on C3RB3R Ransomware Attacks</title>
       <link>https://secubuzz.com/news/synology-alerts-on-c3rb3r-ransomware-attacks-d3641584</link>
@@ -78,6 +105,15 @@
       <pubDate>Mon, 02 Nov 2026 09:58:04 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93589">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Managed SIEM Services: Cost, Tuning, and Ownership Models</title>
+      <link>https://secubuzz.com/news/managed-siem-services-cost-tuning-and-ownership-mo-fa0bacaf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/managed-siem-services-cost-tuning-and-ownership-mo-fa0bacaf</guid>
+      <description><![CDATA[The article reviews managed SIEM services, noting that the license costs half the total while the unstaffed half—tuning, content, and triage—often causes failures. It explains managed services supply discipline, offering three ownership models: platform‑managed, operator‑managed, and shared‑ownership, ensuring tuning and threat detection. The ranking evaluates ten vendors on cost, ownership, and operational effectiveness to help organizations choose a SIEM partner.]]></description>
+      <pubDate>Mon, 02 Nov 2026 09:39:56 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-managed-siem-services/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Ivanti patches two more Connect Secure zero-days chained in attacks</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Mon, 02 Nov 2026 03:38:12 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93455">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93451: Important: libXtst security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93451-important-libxtst-security-update-f6921eba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93451-important-libxtst-security-update-f6921eba</guid>
-      <description><![CDATA[An update for libXtst is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:37:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93451">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Patches Libsoup Flaws in RHEL 8.8</title>
-      <link>https://secubuzz.com/news/red-hat-patches-libsoup-flaws-in-rhel-8-8-0d35cbdc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-libsoup-flaws-in-rhel-8-8-0d35cbdc</guid>
-      <description><![CDATA[Red Hat issued a security patch addressing vulnerabilities in the libsoup HTTP library on Enterprise Linux 8.8 specialized server distributions. Red Hat Product Security assigned an Important severity rating due to potential security risks impacting SAP Solutions and Telecommunications Update Service builds. Infrastructure operators managing RHEL 8.8 SAP and Telecommunications deployments should install available package updates to patch affected systems.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:37:11 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93466">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important Security Update for Libsoup</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-security-update-for-libso-6d2e5d83</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-security-update-for-libso-6d2e5d83</guid>
-      <description><![CDATA[Red Hat released a security update for the libsoup HTTP client library affecting Red Hat Enterprise Linux 9.6 Extended Update Support systems. Product security teams classified the underlying vulnerability as Important, indicating significant potential impact across impacted enterprise Linux environments. Administrators using affected Extended Update Support deployments should apply the latest package updates immediately to secure HTTP client functionality.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:37:01 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93446">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases libxml2 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-libxml2-security-update-464d70a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-libxml2-security-update-464d70a2</guid>
-      <description><![CDATA[Red Hat released a libxml2 security update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service. The update fixes multiple libxml2 vulnerabilities, each assigned a CVE and rated Important, with CVSS scores indicating high risk. Red Hat recommends installing RHSA-2026:93463 immediately; users can verify patch status via the CVE links, no workarounds needed.]]></description>
-      <pubDate>Mon, 02 Nov 2026 03:36:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93463">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

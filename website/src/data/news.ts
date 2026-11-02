@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-92221-important-flatpak-security-update-a8c51d25",
+    "title": "RHSA-2026:92221: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92221",
+    "publishedAt": "2026-11-02T12:33:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-92221-important-flatpak-security-update",
+      "article-a8c51d25",
+      "a8c51d25",
+      "rhsa-2026-92221-important-flatpak-security-update-37d9aa"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-93627-important-wireshark-security-updat-4af7f3fb",
+    "title": "RHSA-2026:93627: Important: wireshark security update",
+    "summary": "An update for wireshark is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93627",
+    "publishedAt": "2026-11-02T12:21:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93627-important-wireshark-security-updat",
+      "article-4af7f3fb",
+      "4af7f3fb",
+      "rhsa-2026-93627-important-wireshark-security-updat-37d927",
+      "rhsa-2026-93627-important-wireshark-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-update-for-python-jwt-lib-76be2095",
+    "title": "Red Hat Issues Important Update for python‑jwt Library",
+    "summary": "Red Hat released an Important security update for python‑jwt on RHEL 8.8 Update Services for SAP Solutions and Telecommunications. The update fixes vulnerabilities in python‑jwt, with CVSS base scores available via referenced CVE links, and is rated Important by Red Hat Product Security. Apply the patch through the RHEL 8.8 Update Services channel to mitigate potential exploitation of the library.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93624",
+    "publishedAt": "2026-11-02T12:02:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-update-for-python-jwt-lib",
+      "article-76be2095",
+      "76be2095",
+      "red-hat-issues-important-update-for-python-jwt-lib-37d927",
+      "red-hat-issues-important-update-for-python-jwt-library"
+    ]
+  },
+  {
     "slug": "synology-alerts-on-c3rb3r-ransomware-attacks-d3641584",
     "title": "Synology Alerts on C3RB3R Ransomware Attacks",
     "summary": "Synology warned customers of a surge in C3RB3R ransomware attacks on its NAS devices. The malware encrypts stored data and demands payment, exploiting unpatched firmware vulnerabilities without a cited CVE. Synology urges immediate firmware updates, disabling remote management, and backing up data to mitigate the threat and monitoring for unauthorized access.",
@@ -155,6 +211,25 @@ export const news: NewsBrief[] = [
       "article-61833136",
       "61833136",
       "red-hat-issues-gimp-security-update-37d92a"
+    ]
+  },
+  {
+    "slug": "managed-siem-services-cost-tuning-and-ownership-mo-fa0bacaf",
+    "title": "Managed SIEM Services: Cost, Tuning, and Ownership Models",
+    "summary": "The article reviews managed SIEM services, noting that the license costs half the total while the unstaffed half—tuning, content, and triage—often causes failures. It explains managed services supply discipline, offering three ownership models: platform‑managed, operator‑managed, and shared‑ownership, ensuring tuning and threat detection. The ranking evaluates ten vendors on cost, ownership, and operational effectiveness to help organizations choose a SIEM partner.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-managed-siem-services/",
+    "publishedAt": "2026-11-02T09:39:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "managed-siem-services-cost-tuning-and-ownership-mo",
+      "article-fa0bacaf",
+      "fa0bacaf",
+      "managed-siem-services-cost-tuning-and-ownership-mo-2ce517",
+      "managed-siem-services-cost-tuning-and-ownership-models"
     ]
   },
   {
