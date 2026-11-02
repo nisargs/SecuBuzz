@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 08:48:16 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 09:46:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ivanti patches two more Connect Secure zero-days chained in attacks</title>
+      <link>https://secubuzz.com/news/ivanti-patches-two-more-connect-secure-zero-days-c-9d5b4621</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-patches-two-more-connect-secure-zero-days-c-9d5b4621</guid>
+      <description><![CDATA[Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...] (Corroborated Threat Intelligence: Associated CVE is CVE-2026-111357).]]></description>
+      <pubDate>Mon, 02 Nov 2026 09:33:26 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/">BleepingComputer</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93586: Important: perl-HTTP-Daemon security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93586-important-perl-http-daemon-securit-e6ea8474</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93586-important-perl-http-daemon-securit-e6ea8474</guid>
+      <description><![CDATA[An update for perl-HTTP-Daemon is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 09:30:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93586">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93585: Important: perl-HTTP-Daemon security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93585-important-perl-http-daemon-securit-c8c07b84</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93585-important-perl-http-daemon-securit-c8c07b84</guid>
+      <description><![CDATA[An update for perl-HTTP-Daemon is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 09:30:50 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93585">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Use ARTEX AI Agents to Automate Active Directory Attacks, Kerberoasting, and Lateral Movement</title>
+      <link>https://secubuzz.com/news/hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23</guid>
+      <description><![CDATA[Hackers are now using an open-source AI tool called ARTEX to run large parts of a network break-in on their own. The tool can map a Windows network, steal service account passwords, and try to spread to domain controllers with very little human help.]]></description>
+      <pubDate>Mon, 02 Nov 2026 08:23:36 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-artex-ai-agents/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>BeyondTrust vulnerability faces fresh exploitation probes, mass scanning</title>
+      <link>https://secubuzz.com/news/beyondtrust-vulnerability-faces-fresh-exploitation-cd86462c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/beyondtrust-vulnerability-faces-fresh-exploitation-cd86462c</guid>
+      <description><![CDATA[Attackers are probing CVE-2026-102764 against BeyondTrust Remote Support appliances in the United States and Europe. The flaw, CVE-2026-102764, is a critical privilege escalation in Remote Support that could allow unauthenticated remote code execution and spread beyond targeted espionage. BeyondTrust has issued an out-of-band patch; apply it immediately and monitor for scanning activity.]]></description>
+      <pubDate>Mon, 02 Nov 2026 08:01:35 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-beyondtrust-vulnerability/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>DeepSeek Releases Super-Agent Coding Tool</title>
       <link>https://secubuzz.com/news/deepseek-releases-super-agent-coding-tool-d4a951b1</link>
@@ -197,6 +242,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:93458: Important: .NET 9.0 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93458-important-net-9-0-security-update-7ecd4944</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93458-important-net-9-0-security-update-7ecd4944</guid>
+      <description><![CDATA[An update for .NET 9.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:38:57 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93458">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>RHSA-2026:93472: Important: nginx security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-93472-important-nginx-security-update-64b5712c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93472-important-nginx-security-update-64b5712c</guid>
@@ -212,6 +266,15 @@
       <description><![CDATA[An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Mon, 02 Nov 2026 03:38:12 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93455">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:93451: Important: libXtst security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-93451-important-libxtst-security-update-f6921eba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93451-important-libxtst-security-update-f6921eba</guid>
+      <description><![CDATA[An update for libXtst is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 02 Nov 2026 03:37:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93451">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 01:51:41 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93437">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Kernel Update for RHEL 10 Addresses Multiple Vulnerabilities</title>
-      <link>https://secubuzz.com/news/kernel-update-for-rhel-10-addresses-multiple-vulne-ebd3b60f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kernel-update-for-rhel-10-addresses-multiple-vulne-ebd3b60f</guid>
-      <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 10 to fix multiple kernel vulnerabilities that could compromise system integrity. The vulnerabilities, rated Important by Red Product Security, have CVSS base scores accessible through CVE links, suggesting moderate to high risk. Apply the kernel patch promptly per Red Hat’s instructions to prevent privilege escalation or denial-of-service attacks.]]></description>
-      <pubDate>Sun, 01 Nov 2026 22:16:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93413">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical Kernel Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-security-update-c7553cc9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kernel-security-update-c7553cc9</guid>
-      <description><![CDATA[Red Hat released a kernel update for RHEL 8, fixing critical vulnerabilities that could enable privilege escalation or remote code execution. The advisory lists kernel flaws with CVSS scores but omits CVE IDs; exploitation requires no authentication. Red Hat urges users to apply the update immediately and consult the CVE links for detailed severity information.]]></description>
-      <pubDate>Sun, 01 Nov 2026 21:39:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93414">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Kernel‑rt Update for RHEL 8 Fixes Critical Flaws</title>
-      <link>https://secubuzz.com/news/kernel-rt-update-for-rhel-8-fixes-critical-flaws-25934d50</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kernel-rt-update-for-rhel-8-fixes-critical-flaws-25934d50</guid>
-      <description><![CDATA[Red Hat issued a kernel‑rt update for Enterprise Linux 8 to fix critical kernel vulnerabilities that could enable remote code execution. The flaws, rated Critical by Red Product Security, have CVSS base scores linked to CVE references, indicating exploitability and compromise risk. Apply the kernel‑rt patch immediately per Red Hat’s guidance to prevent privilege escalation and preserve real‑time kernel stability.]]></description>
-      <pubDate>Sun, 01 Nov 2026 20:52:03 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93415">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Teams: Detect ESC1 Help Desk Threat</title>
-      <link>https://secubuzz.com/news/microsoft-teams-detect-esc1-help-desk-threat-8e2abe05</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-teams-detect-esc1-help-desk-threat-8e2abe05</guid>
-      <description><![CDATA[Microsoft Teams users face a new ESC1 Help Desk threat that can compromise accounts via malicious support interactions. The threat exploits social engineering tactics, leveraging deceptive help desk communications to gain credential access; no software vulnerability is required. Security teams should review telemetry, deploy detection rules, and apply the latest Teams patches to mitigate the risk.]]></description>
-      <pubDate>Sun, 01 Nov 2026 17:43:00 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/from-help-desk-impersonation-to-ad-cs-abuse-investigati">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Binance: Detect DevOps Laptop Takeover Threat</title>
-      <link>https://secubuzz.com/news/binance-detect-devops-laptop-takeover-threat-acdd1b42</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binance-detect-devops-laptop-takeover-threat-acdd1b42</guid>
-      <description><![CDATA[Binance faces a DevOps laptop takeover threat that can grant attackers persistent access to critical infrastructure. The attack leverages credential theft and lateral movement via compromised laptops, exploiting weak endpoint security; no software vulnerability is cited. Teams should monitor telemetry, enforce strict endpoint controls, and apply the latest security patches to prevent exploitation.]]></description>
-      <pubDate>Sun, 01 Nov 2026 17:41:50 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/binance-links-6-3-billion-crypto-theft-to-compromised-d">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Gitee Repos: Detecting Exposed Cloud and AI Credentials</title>
-      <link>https://secubuzz.com/news/gitee-repos-detecting-exposed-cloud-and-ai-credent-40426d79</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gitee-repos-detecting-exposed-cloud-and-ai-credent-40426d79</guid>
-      <description><![CDATA[An alert warns that Gitee repositories may expose cloud and AI credentials through publicly accessible code. The flaw arises from repositories lacking secret scanning, allowing attackers to harvest API keys and tokens, potentially granting unauthorized access to cloud and AI platforms. Gitee recommends enabling secret scanning, restricting repository visibility, and rotating exposed credentials immediately.]]></description>
-      <pubDate>Sun, 01 Nov 2026 17:39:50 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/26-400-valid-cloud-and-ai-credentials-found-exposed-in">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Telegram Android RCE Fix for CVE-2026-111105</title>
-      <link>https://secubuzz.com/news/telegram-android-rce-fix-for-cve-2026-111105-e8fd46ba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/telegram-android-rce-fix-for-cve-2026-111105-e8fd46ba</guid>
-      <description><![CDATA[Telegram Android users face a remote code execution flaw in voice call handling, identified as CVE-2026-111105, in enterprise environments. The flaw stems from unchecked packet validation, allowing unauthenticated attackers to run arbitrary code; no public exploit yet. Telegram released an Android patch; apply it immediately and monitor call traffic for anomalies.]]></description>
-      <pubDate>Sun, 01 Nov 2026 17:39:07 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/telegram-android-flaw-lets-attackers-run-code-when-user">CyberNews AI</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

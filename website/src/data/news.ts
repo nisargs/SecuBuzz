@@ -11,6 +11,105 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ivanti-patches-two-more-connect-secure-zero-days-c-9d5b4621",
+    "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+    "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...] (Corroborated Threat Intelligence: Associated CVE is CVE-2026-111357).",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+    "publishedAt": "2026-11-02T09:33:26.000Z",
+    "cves": [
+      "CVE-2026-111357"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ivanti-patches-two-more-connect-secure-zero-days-c",
+      "article-9d5b4621",
+      "9d5b4621",
+      "ivanti-patches-two-more-connect-secure-zero-days-c-64858f",
+      "ivanti-patches-two-more-connect-secure-zero-days-chained-in-"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-93586-important-perl-http-daemon-securit-e6ea8474",
+    "title": "RHSA-2026:93586: Important: perl-HTTP-Daemon security update",
+    "summary": "An update for perl-HTTP-Daemon is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93586",
+    "publishedAt": "2026-11-02T09:30:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93586-important-perl-http-daemon-securit",
+      "article-e6ea8474",
+      "e6ea8474",
+      "rhsa-2026-93586-important-perl-http-daemon-securit-37d92a",
+      "rhsa-2026-93586-important-perl-http-daemon-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-93585-important-perl-http-daemon-securit-c8c07b84",
+    "title": "RHSA-2026:93585: Important: perl-HTTP-Daemon security update",
+    "summary": "An update for perl-HTTP-Daemon is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93585",
+    "publishedAt": "2026-11-02T09:30:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93585-important-perl-http-daemon-securit",
+      "article-c8c07b84",
+      "c8c07b84",
+      "rhsa-2026-93585-important-perl-http-daemon-securit-37d92a",
+      "rhsa-2026-93585-important-perl-http-daemon-security-update"
+    ]
+  },
+  {
+    "slug": "hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23",
+    "title": "Hackers Use ARTEX AI Agents to Automate Active Directory Attacks, Kerberoasting, and Lateral Movement",
+    "summary": "Hackers are now using an open-source AI tool called ARTEX to run large parts of a network break-in on their own. The tool can map a Windows network, steal service account passwords, and try to spread to domain controllers with very little human help.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-artex-ai-agents/",
+    "publishedAt": "2026-11-02T08:23:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-artex-ai-agents-to-automate-active-dir",
+      "article-e965ed23",
+      "e965ed23",
+      "hackers-use-artex-ai-agents-to-automate-active-dir-1598b4",
+      "hackers-use-artex-ai-agents-to-automate-active-directory-att"
+    ]
+  },
+  {
+    "slug": "beyondtrust-vulnerability-faces-fresh-exploitation-cd86462c",
+    "title": "BeyondTrust vulnerability faces fresh exploitation probes, mass scanning",
+    "summary": "Attackers are probing CVE-2026-102764 against BeyondTrust Remote Support appliances in the United States and Europe. The flaw, CVE-2026-102764, is a critical privilege escalation in Remote Support that could allow unauthenticated remote code execution and spread beyond targeted espionage. BeyondTrust has issued an out-of-band patch; apply it immediately and monitor for scanning activity.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-beyondtrust-vulnerability/",
+    "publishedAt": "2026-11-02T08:01:35.000Z",
+    "cves": [
+      "CVE-2026-102764"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "beyondtrust-vulnerability-faces-fresh-exploitation",
+      "article-cd86462c",
+      "cd86462c",
+      "beyondtrust-vulnerability-faces-fresh-exploitation-e8841b",
+      "beyondtrust-vulnerability-faces-fresh-exploitation-probes-ma"
+    ]
+  },
+  {
     "slug": "deepseek-releases-super-agent-coding-tool-d4a951b1",
     "title": "DeepSeek Releases Super-Agent Coding Tool",
     "summary": "DeepSeek unveiled dsh-superagent, a research prototype that automates coding tasks on GitHub repositories. The agent activates when an authorized user requests work or a team rule matches, and it can be invoked by mentioning the agent in chat or GitHub scopes. Developers can integrate the prototype into collaborative workflows, but should review its permissions and usage policies before deployment.",
@@ -400,6 +499,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-93458-important-net-9-0-security-update-7ecd4944",
+    "title": "RHSA-2026:93458: Important: .NET 9.0 security update",
+    "summary": "An update for .NET 9.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93458",
+    "publishedAt": "2026-11-02T03:38:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93458-important-net-9-0-security-update",
+      "article-7ecd4944",
+      "7ecd4944",
+      "rhsa-2026-93458-important-net-9-0-security-update-37d92e"
+    ]
+  },
+  {
     "slug": "rhsa-2026-93472-important-nginx-security-update-64b5712c",
     "title": "RHSA-2026:93472: Important: nginx security update",
     "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -433,6 +550,24 @@ export const news: NewsBrief[] = [
       "article-6eef3a87",
       "6eef3a87",
       "rhsa-2026-93455-important-net-8-0-security-update-37d92e"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-93451-important-libxtst-security-update-f6921eba",
+    "title": "RHSA-2026:93451: Important: libXtst security update",
+    "summary": "An update for libXtst is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93451",
+    "publishedAt": "2026-11-02T03:37:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-93451-important-libxtst-security-update",
+      "article-f6921eba",
+      "f6921eba",
+      "rhsa-2026-93451-important-libxtst-security-update-37d92e"
     ]
   },
   {
