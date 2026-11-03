@@ -2,6 +2,76 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "GHSA-9ppr-wfw9-xvr2",
+    "slug": "ghsa-9ppr-wfw9-xvr2",
+    "vendor": "Go",
+    "product": "netfoil · tinfoil-factory",
+    "name": "Netfoil doesn't decrement TTL",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 0,
+    "severity": "Medium",
+    "cwe": "CWE-672",
+    "ransomware": false,
+    "description": "TTL was not decremented, so stale records would continue to be served.",
+    "requiredAction": "Upgrade netfoil · tinfoil-factory to version 0.6.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9ppr-wfw9-xvr2"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62848",
+    "slug": "cve-2026-62848",
+    "vendor": ".NET (NuGet)",
+    "product": "Metalama.Framework",
+    "name": "Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-502",
+    "ransomware": false,
+    "description": "Metalama uses a local named-pipe channel to communicate between its Visual Studio processes — the Visual Studio UI process (devenv), the out-of-process Roslyn code-analysis process, and the CodeLens process. This channel deserialized messages from the pipe without restricting which CLR types could be instantiated.",
+    "requiredAction": "Upgrade Metalama.Framework to version 2026.1.19 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h26j-4vp7-x9w2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62848"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-m3qr-fvp4-78xj",
+    "slug": "ghsa-m3qr-fvp4-78xj",
+    "vendor": "Go",
+    "product": "arc · basekick-labs",
+    "name": "Arc has unauthenticated application log disclosure via `/api/v1/logs`",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 0,
+    "severity": "Low",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "Arc exposes GET /api/v1/logs without authentication even when authentication is enabled by default. The route is registered before the global Fiber authentication middleware, and the handler returns recent buffered application logs without performing its own authorization check.",
+    "requiredAction": "Upgrade arc · basekick-labs to version 0.0.0-20260615165136-bb7d9761ad98 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m3qr-fvp4-78xj"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-j656-3hf2-fvjc",
     "slug": "ghsa-j656-3hf2-fvjc",
     "vendor": "npm",
@@ -1265,84 +1335,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116696"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116773",
-    "slug": "cve-2026-116773",
-    "vendor": "Rust (Cargo)",
-    "product": "russh",
-    "name": "russh's SSH client is susceptible to unbounded allocations via EXT_INFO packets",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "All evidence, reproduction steps, and scripts in the report were verified against a real running instance. Nothing is fabricated or synthetic; every verdict is backed by captured output from an actual deployment.",
-    "requiredAction": "Upgrade russh to version 0.65 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4p9f-7p9m-5vfg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116773"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119286",
-    "slug": "cve-2026-119286",
-    "vendor": "Pip",
-    "product": "graphql-core",
-    "name": "GraphQL-core has denial of service via memory leak in aborted validations",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "When a validation was aborted because the document contained more errors than allowed by max_errors (100 by default), validate() raised a single module-level ValidationAbortedError instance. Python appends the frames of every raise to the existing traceback of an exception that is raised again, so every aborted validation extended the traceback of this shared error.",
-    "requiredAction": "Upgrade graphql-core to version 3.3.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mpqx-q82w-9x46"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119286"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118669",
-    "slug": "cve-2026-118669",
-    "vendor": "Pip",
-    "product": "oauthlib",
-    "name": "OAuthLib: Token grants can use attacker-supplied client_id for authorization after authenticating a different client",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 8.4,
-    "severity": "High",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "OAuthlib's token grant handlers can authenticate one client while authorizing the grant type and requested scopes using a different, attacker-supplied client_id from the request body. In affected token grant flows, authenticate_client(request) sets request.client to the authenticated client object, but OAuthlib does not require request.client_id to match request.client.client_id.",
-    "requiredAction": "Upgrade oauthlib to version 4.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7984-qgvg-3j9c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118669"
       }
     ],
     "source": "GITHUB"

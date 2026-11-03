@@ -11,6 +11,157 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-critical-kernel-security-update-70923a38",
+    "title": "Red Hat Issues Critical Kernel Security Update",
+    "summary": "Red Hat released a kernel security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing several high‑impact kernel flaws. The update is rated Critical by Product Security, with CVSS scores linked to CVE references, implying potential unauthenticated remote code execution. Administrators should apply the patch promptly to mitigate exploitation risks and preserve system integrity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94623",
+    "publishedAt": "2026-11-03T16:26:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-kernel-security-update",
+      "article-70923a38",
+      "70923a38",
+      "red-hat-issues-critical-kernel-security-update-37d8b3"
+    ]
+  },
+  {
+    "slug": "hackers-use-ai-agents-to-launch-3am-ransomware-att-6c373d14",
+    "title": "Hackers Use AI Agents to Launch 3AM Ransomware Attacks Against UK School Networks",
+    "summary": "A ransomware affiliate has hit a group of UK schools with a mix of human control and AI-style automation. The attackers used built-in Windows tools, stolen backup passwords and fake admin accounts to spread across the school network, then encrypted about 37 machines.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-agents-2/",
+    "publishedAt": "2026-11-03T15:55:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-ai-agents-to-launch-3am-ransomware-att",
+      "article-6c373d14",
+      "6c373d14",
+      "hackers-use-ai-agents-to-launch-3am-ransomware-att-ceebd3",
+      "hackers-use-ai-agents-to-launch-3am-ransomware-attacks-again"
+    ]
+  },
+  {
+    "slug": "hackers-raise-supermarket-freezers-to-50-c-114500b3",
+    "title": "Hackers Raise Supermarket Freezers to 50°C",
+    "summary": "Hackers targeted supermarket refrigeration systems in at least ten European countries, manipulating temperature controls to raise freezers to 50°C. The attack forced retailers to remove chilled and frozen goods, exposing the vulnerability of connected HVAC equipment and threatening the food supply chain. Operators should isolate affected systems, apply vendor firmware updates, and enforce stricter access controls to prevent further sabotage.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/supermarket-refrigeration-systems-across-europe/",
+    "publishedAt": "2026-11-03T15:51:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-raise-supermarket-freezers-to-50-c",
+      "article-114500b3",
+      "114500b3",
+      "hackers-raise-supermarket-freezers-to-50-c-47fd09"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-kernel-security-update-20d26e92",
+    "title": "Red Hat Issues Important Kernel Security Update",
+    "summary": "Red Hat released a kernel security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing CVE-2026-64832. The vulnerability is rated Important by Product Security, with a CVSS score linked to the CVE reference, indicating potential kernel exploitation. Administrators should apply the patch promptly to mitigate the risk and maintain kernel integrity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94596",
+    "publishedAt": "2026-11-03T15:43:54.000Z",
+    "cves": [
+      "CVE-2026-64832"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-kernel-security-update",
+      "article-20d26e92",
+      "20d26e92",
+      "red-hat-issues-important-kernel-security-update-37d8b5"
+    ]
+  },
+  {
+    "slug": "cpguard-update-channel-compromised-backdoor-deploy-700611b8",
+    "title": "cPGuard Update Channel Compromised, Backdoor Deployed",
+    "summary": "An attacker hijacked the cPGuard update channel on November 2, delivering a malicious script that installed a backdoor on customers’ Linux servers. The backdoor harvested password hashes and other sensitive files, and the attacker subsequently exfiltrated portions of the collected data. cPGuard released version 5.88.25 and later with a patched update mechanism; users should upgrade immediately and verify update integrity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
+    "publishedAt": "2026-11-03T15:16:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cpguard-update-channel-compromised-backdoor-deploy",
+      "article-700611b8",
+      "700611b8",
+      "cpguard-update-channel-compromised-backdoor-deploy-715c30",
+      "cpguard-update-channel-compromised-backdoor-deployed"
+    ]
+  },
+  {
+    "slug": "barracuda-issues-root-privilege-vulnerability-aler-e7b80cea",
+    "title": "Barracuda Issues Root‑Privilege Vulnerability Alerts",
+    "summary": "Barracuda Networks warned that two undisclosed vulnerabilities in its device firmware can grant attackers root‑level command execution. The flaws allow local or remote attackers to bypass authentication and run arbitrary code with full system privileges. Barracuda released firmware patches for affected devices; administrators should apply the updates and enforce strict access controls.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
+    "publishedAt": "2026-11-03T15:06:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-issues-root-privilege-vulnerability-aler",
+      "article-e7b80cea",
+      "e7b80cea",
+      "barracuda-issues-root-privilege-vulnerability-aler-305835",
+      "barracuda-issues-root-privilege-vulnerability-alerts"
+    ]
+  },
+  {
+    "slug": "frontline-education-breach-exposes-1-3-million-rec-4bdd1929",
+    "title": "Frontline Education Breach Exposes 1.3 Million Records",
+    "summary": "Hackers exploited a flaw in third‑party software used by Frontline Education, compromising personal data of staff and students. The vulnerability enabled unauthorized extraction of names, addresses, and academic details, affecting more than 1.3 million individuals. Frontline Education has notified affected parties, coordinated with the vendor to patch the flaw, and urged MFA enforcement.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/",
+    "publishedAt": "2026-11-03T14:32:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "frontline-education-breach-exposes-1-3-million-rec",
+      "article-4bdd1929",
+      "4bdd1929",
+      "frontline-education-breach-exposes-1-3-million-rec-5bc8ce",
+      "frontline-education-breach-exposes-1-3-million-records"
+    ]
+  },
+  {
+    "slug": "videostrong-deploys-backdoor-in-1-3-million-androi-04cc5652",
+    "title": "Videostrong Deploys Backdoor in 1.3 Million Android TV Boxes",
+    "summary": "Videostrong embedded a hidden backdoor in more than 1.3 million Android set‑top boxes, creating a covert botnet. The flaw allowed remote command execution without authentication, enabling attackers to issue arbitrary instructions and exfiltrate data from compromised devices. Affected manufacturers should release firmware updates to remove the backdoor, and security teams must monitor device traffic for anomalous outbound connections.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/11/a-hidden-backdoor-put-1-3-million-tv-boxes-to-work-for-criminals",
+    "publishedAt": "2026-11-03T14:11:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "videostrong-deploys-backdoor-in-1-3-million-androi",
+      "article-04cc5652",
+      "04cc5652",
+      "videostrong-deploys-backdoor-in-1-3-million-androi-5a95a9",
+      "videostrong-deploys-backdoor-in-1-3-million-android-tv-boxes"
+    ]
+  },
+  {
     "slug": "novee-puts-forgotten-internet-facing-assets-throug-a6d4771e",
     "title": "Novee puts forgotten internet-facing assets through penetration testing",
     "summary": "Novee’s External Surface Testing is a new capability in its AI penetration testing platform that helps security teams discover internet-facing assets and validate exploitable vulnerabilities. It tests newly disclosed CVEs and findings imported from third-party external attack surface management (EASM) tools. “Attackers don’t limit themselves to the applications you’re already testing.",
@@ -27,6 +178,25 @@ export const news: NewsBrief[] = [
       "a6d4771e",
       "novee-puts-forgotten-internet-facing-assets-throug-744519",
       "novee-puts-forgotten-internet-facing-assets-through-penetrat"
+    ]
+  },
+  {
+    "slug": "cloudflare-launches-zero-wire-for-vulnerability-tr-51d37c94",
+    "title": "Cloudflare Launches Zero Wire for Vulnerability Triage",
+    "summary": "Cloudflare introduced Zero Wire, a platform that aggregates plain‑language briefings with real‑time attack telemetry to aid security teams. Zero Wire enables faster triage of critical CVEs by providing remediation steps and contextual threat data alongside Cloudflare Radar insights. Security teams can integrate Zero Wire into their workflow to prioritize patches and adjust defenses based on up‑to‑date telemetry.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/zero-wire/",
+    "publishedAt": "2026-11-03T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-launches-zero-wire-for-vulnerability-tr",
+      "article-51d37c94",
+      "51d37c94",
+      "cloudflare-launches-zero-wire-for-vulnerability-tr-294392",
+      "cloudflare-launches-zero-wire-for-vulnerability-triage"
     ]
   },
   {
@@ -63,6 +233,43 @@ export const news: NewsBrief[] = [
       "article-0bf1865c",
       "0bf1865c",
       "3am-affiliate-uses-ai-like-loops-in-school-attack-464267"
+    ]
+  },
+  {
+    "slug": "assured-launches-cleanroom-scan-for-backup-hygiene-74bace0e",
+    "title": "Assured Launches CleanRoom SCAN for Backup Hygiene",
+    "summary": "Assured Data Protection introduced CleanRoom SCAN, a managed service that independently scans isolated backup copies using multiple security engines. The service detects malware and indicators of compromise before restoration, reducing the risk of reinfecting production environments during recovery. Organizations should adopt CleanRoom SCAN to validate backup integrity and apply remediation before deploying recovered data.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/assured-data-protection-cleanroom-scan/",
+    "publishedAt": "2026-11-03T13:59:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "assured-launches-cleanroom-scan-for-backup-hygiene",
+      "article-74bace0e",
+      "74bace0e",
+      "assured-launches-cleanroom-scan-for-backup-hygiene-370f22"
+    ]
+  },
+  {
+    "slug": "artex-ai-automates-enterprise-attacks-at-machine-s-839c89b6",
+    "title": "ARTEX AI Automates Enterprise Attacks at Machine Speed",
+    "summary": "Attackers employ the ARTEX AI framework to accelerate credential‑based attacks, enabling rapid cloud privilege escalation, lateral movement, and data exfiltration. Recent campaigns demonstrate the framework’s ability to automate complex intrusion stages in minutes, raising concerns for organizations relying on traditional detection methods. Defenders should adopt AI‑aware monitoring, enforce strict credential hygiene, and update detection rules to counter ARTEX‑driven attacks.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/artex-ai-automate-enterprise-attacks/",
+    "publishedAt": "2026-11-03T13:58:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "artex-ai-automates-enterprise-attacks-at-machine-s",
+      "article-839c89b6",
+      "839c89b6",
+      "artex-ai-automates-enterprise-attacks-at-machine-s-39a79b",
+      "artex-ai-automates-enterprise-attacks-at-machine-speed"
     ]
   },
   {
@@ -143,6 +350,25 @@ export const news: NewsBrief[] = [
       "article-82ba4250",
       "82ba4250",
       "wiz-green-agent-speeds-critical-risk-resolution-69c0e9"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-kernel-patch-for-cve-202-7e418930",
+    "title": "Red Hat Releases Critical Kernel Patch for CVE‑2026‑64832",
+    "summary": "Red Hat issued a kernel update for RHEL 10.0 Extended Update Support to address CVE‑2026‑64832, a critical security flaw. The vulnerability is a kernel‑level bug that could allow unauthenticated attackers to gain elevated privileges, with a CVSS base score indicating critical impact. Red Hat has released the patch; administrators should apply the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94508",
+    "publishedAt": "2026-11-03T12:39:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-kernel-patch-for-cve-202",
+      "article-7e418930",
+      "7e418930",
+      "red-hat-releases-critical-kernel-patch-for-cve-202-37d8b6",
+      "red-hat-releases-critical-kernel-patch-for-cve-2026-64832"
     ]
   },
   {
@@ -267,6 +493,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "subnet-solutions-powersystem-center-dc5c2e21",
+    "title": "Subnet Solutions PowerSYSTEM Center",
+    "summary": "The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 PowerSYSTEM Center 2024 >=6.0.x| PowerSYSTEM Center 2026 >=7.0.x| CVSS Vendor Equipment v3 9 Subnet Solutions PowerSYSTEM Center 2 Vulnerabilities Incorrect Authorization, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Canada Vulnerabilities Expand All + CVE-2026-63017 Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+    "publishedAt": "2026-11-03T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-63017"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "subnet-solutions-powersystem-center",
+      "article-dc5c2e21",
+      "dc5c2e21",
+      "subnet-solutions-powersystem-center-41c85b"
+    ]
+  },
+  {
     "slug": "revolve-card-data-stolen-1-5-million-affected-37f2effe",
     "title": "Revolve Card Data Stolen, 1.5 Million Affected",
     "summary": "Revolve reported that attackers accessed and exfiltrated stored card details from its payment platform, potentially compromising up to 1.5 million users. The breach involved credential theft and data‑stealing malware, but no evidence of active exploitation of a zero‑day vulnerability was disclosed. Users should monitor statements, change passwords, and enable two‑factor authentication, while Revolve has issued a patch and security advisory.",
@@ -282,6 +528,24 @@ export const news: NewsBrief[] = [
       "article-37f2effe",
       "37f2effe",
       "revolve-card-data-stolen-1-5-million-affected-743409"
+    ]
+  },
+  {
+    "slug": "red-hat-patches-kernel-tcp-rce-cve-2026-98432-99de3560",
+    "title": "Red Hat Patches Kernel TCP RCE CVE‑2026‑98432",
+    "summary": "Red Hat released kernel patches for RHEL 8, 9, and 10 to fix CVE‑2026‑98432, a use‑after‑free flaw in the IPv4 TCP code. The flaw enables remote, unauthenticated attackers to execute arbitrary code with a CVSS score of 9.8, posing a critical threat. Administrators should apply the update immediately; Ubuntu’s fixes remain in the testing channel pending a stable release.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+    "publishedAt": "2026-11-03T11:23:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-patches-kernel-tcp-rce-cve-2026-98432",
+      "article-99de3560",
+      "99de3560",
+      "red-hat-patches-kernel-tcp-rce-cve-2026-98432-728c1b"
     ]
   },
   {
@@ -303,6 +567,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "kernel-race-condition-exploits-cause-dos-cve-2022-da40416e",
+    "title": "Kernel Race Condition Exploits Cause DoS CVE‑2022‑1205",
+    "summary": "Duoming Zhou identified race conditions in the AX.25 amateur radio protocol within the Linux kernel, creating CVE‑2022‑1205, a use‑after‑free flaw. The vulnerability permits local attackers to trigger a denial‑of‑service crash, potentially compromising system stability. Red Hat and other vendors have released kernel updates correcting the flaw across multiple subsystems; administrators should apply the patch promptly.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8961-1",
+    "publishedAt": "2026-11-03T11:05:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kernel-race-condition-exploits-cause-dos-cve-2022",
+      "article-da40416e",
+      "da40416e",
+      "kernel-race-condition-exploits-cause-dos-cve-2022-7fbd02",
+      "kernel-race-condition-exploits-cause-dos-cve-2022-1205"
+    ]
+  },
+  {
+    "slug": "kernel-clock-driver-null-dereference-cve-2022-3114-d1d8373f",
+    "title": "Kernel Clock Driver Null Dereference CVE‑2022‑3114",
+    "summary": "Duoming Zhou uncovered race conditions in the AX.25 protocol and a null pointer dereference in the i.MX clock driver, creating CVE‑2022‑1205 and CVE‑2022‑3114, both local use‑after‑free flaws. Each vulnerability allows local attackers to trigger a denial‑of‑service crash, potentially destabilizing affected systems. Kernel updates correcting these flaws across multiple architectures have been released; administrators should apply the patches promptly.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8963-1",
+    "publishedAt": "2026-11-03T11:04:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kernel-clock-driver-null-dereference-cve-2022-3114",
+      "article-d1d8373f",
+      "d1d8373f",
+      "kernel-clock-driver-null-dereference-cve-2022-3114-7fbcfb"
+    ]
+  },
+  {
     "slug": "linux-kernel-subsystems-vulnerabilities-patching-u-78ae618d",
     "title": "Linux Kernel Subsystems Vulnerabilities Patching Update",
     "summary": "Linux kernel subsystems like USB gadget drivers and memory management contain flaws that could let attackers compromise a system. Improper device input handling and memory allocation could allow privilege escalation or denial of service. Ubuntu released a kernel update patching all affected subsystems; administrators should apply it promptly to mitigate the risk.",
@@ -319,6 +620,45 @@ export const news: NewsBrief[] = [
       "78ae618d",
       "linux-kernel-subsystems-vulnerabilities-patching-u-7fbd59",
       "linux-kernel-subsystems-vulnerabilities-patching-update"
+    ]
+  },
+  {
+    "slug": "linux-kernel-bluetooth-use-after-free-vulnerabilit-82a11cdb",
+    "title": "Linux Kernel Bluetooth Use-After-Free Vulnerabilities Fixed",
+    "summary": "A use‑after‑free flaw in the Linux kernel Bluetooth subsystem (CVE‑2021‑3640) allows a local attacker to trigger a denial‑of‑service or potentially execute arbitrary code. Another CVE‑2022‑49058 flaw in the kernel’s file‑system infrastructure also permits local privilege escalation or denial‑of‑service. Ubuntu released kernel updates that patch both vulnerabilities; administrators should apply the latest kernel version immediately to mitigate the risks.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8968-1",
+    "publishedAt": "2026-11-03T11:03:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-bluetooth-use-after-free-vulnerabilit",
+      "article-82a11cdb",
+      "82a11cdb",
+      "linux-kernel-bluetooth-use-after-free-vulnerabilit-7fbce8",
+      "linux-kernel-bluetooth-use-after-free-vulnerabilities-fixed"
+    ]
+  },
+  {
+    "slug": "usn-8967-1-linux-kernel-aws-vulnerability-b5a0eb08",
+    "title": "USN-8967-1: Linux kernel (AWS) vulnerability",
+    "summary": "Jürgen Groß discovered that the Xen network backend driver in the Linux kernel did not adequately limit the amount of queued packets when a guest did not process them. An attacker in a guest VM can use this to cause a denial of service (excessive kernel memory consumption) in the network backend domain. The vulnerability is tracked as CVE-2026-98432.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8967-1",
+    "publishedAt": "2026-11-03T11:03:11.000Z",
+    "cves": [
+      "CVE-2026-98432"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-8967-1-linux-kernel-aws-vulnerability",
+      "article-b5a0eb08",
+      "b5a0eb08",
+      "usn-8967-1-linux-kernel-aws-vulnerability-7fbcec"
     ]
   },
   {
@@ -563,6 +903,27 @@ export const news: NewsBrief[] = [
       "a88e7321",
       "google-dismantles-xcpe-botnet-of-1-3m-android-devi-1979c1",
       "google-dismantles-xcpe-botnet-of-1-3m-android-devices"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94438-critical-kernel-security-bug-fix-a-302ed0b3",
+    "title": "RHSA-2026:94438: Critical: kernel security, bug fix, and enhancement update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. The vulnerability is tracked as CVE-2026-64832.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94438",
+    "publishedAt": "2026-11-03T09:20:58.000Z",
+    "cves": [
+      "CVE-2026-64832"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94438-critical-kernel-security-bug-fix-a",
+      "article-302ed0b3",
+      "302ed0b3",
+      "rhsa-2026-94438-critical-kernel-security-bug-fix-a-37d8ba",
+      "rhsa-2026-94438-critical-kernel-security-bug-fix-and-enhance"
     ]
   },
   {
@@ -1033,6 +1394,24 @@ export const news: NewsBrief[] = [
       "article-695c947a",
       "695c947a",
       "cybersecurity-architect-jobs-open-in-portugal-4ce3e7"
+    ]
+  },
+  {
+    "slug": "composer-2-11-introduces-dependency-cooldowns-60b8e0f7",
+    "title": "Composer 2.11 Introduces Dependency Cooldowns",
+    "summary": "Composer 2.11 adds a dependency cooldown mechanism that delays the adoption of new package releases to mitigate supply‑chain risk. The cooldown feature allows maintainers to postpone updates for a configurable period, ensuring critical security patches can be vetted before widespread deployment. Users should upgrade to Composer 2.11 and configure cooldown settings to balance security and release velocity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/composer-dependency-cooldowns",
+    "publishedAt": "2026-11-03T04:23:21.154Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "composer-2-11-introduces-dependency-cooldowns",
+      "article-60b8e0f7",
+      "60b8e0f7",
+      "composer-2-11-introduces-dependency-cooldowns-95b4be"
     ]
   },
   {
@@ -9153,380 +9532,6 @@ export const news: NewsBrief[] = [
       "article-a159aa60",
       "a159aa60",
       "rhel9-libxi-moderate-security-update-37da26"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-91580-important-webkit2gtk3-security-upd-145e4a43",
-    "title": "RHSA-2026:91580: Important: webkit2gtk3 security update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91580",
-    "publishedAt": "2026-10-29T21:23:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-91580-important-webkit2gtk3-security-upd",
-      "article-145e4a43",
-      "145e4a43",
-      "rhsa-2026-91580-important-webkit2gtk3-security-upd-37da13",
-      "rhsa-2026-91580-important-webkit2gtk3-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libx11-security-update-2140e0e2",
-    "title": "Red Hat Issues libX11 Security Update",
-    "summary": "Red Hat released a security update for libX11 on RHEL 9.8 EUS, addressing multiple vulnerabilities. The flaws carry an Important impact rating, with CVSS base scores via CVE links, indicating high severity and potential privilege escalation. Red Hat recommends applying the update immediately; no work‑arounds are published, and users should verify installation on affected systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91365",
-    "publishedAt": "2026-10-29T21:23:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libx11-security-update",
-      "article-2140e0e2",
-      "2140e0e2",
-      "red-hat-issues-libx11-security-update-37da1a"
-    ]
-  },
-  {
-    "slug": "anthropic-themed-phishing-emails-evade-leading-ema-20b86650",
-    "title": "Anthropic‑Themed Phishing Emails Evade Leading Email Gateways",
-    "summary": "Phishing campaigns themed around Anthropic are bypassing several top secure email gateway products. The emails contain obvious red flags yet still reach inboxes, indicating gaps in current threat detection rules. Security teams should update gateway signatures and enable advanced threat protection to counter these deceptive messages.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
-    "publishedAt": "2026-10-29T21:21:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-themed-phishing-emails-evade-leading-ema",
-      "article-20b86650",
-      "20b86650",
-      "anthropic-themed-phishing-emails-evade-leading-ema-6ab67d",
-      "anthropic-themed-phishing-emails-evade-leading-email-gateway"
-    ]
-  },
-  {
-    "slug": "hokuriku-telecommunications-deploys-arctic-wolf-ma-448a5b8d",
-    "title": "Hokuriku Telecommunications Deploys Arctic Wolf Managed EDR",
-    "summary": "Hokuriku Telecommunications Network deployed Arctic Wolf managed endpoint detection and response services to establish continuous enterprise threat monitoring. The operational deployment integrated twenty-four-seven system oversight to reduce administrative overhead while enhancing corporate defensive security capabilities. Organizations seeking optimized security operations should evaluate managed detection solutions to maintain continuous endpoint visibility and minimize incident response latency.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/datasheet-jp/htnet/",
-    "publishedAt": "2026-10-29T20:57:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hokuriku-telecommunications-deploys-arctic-wolf-ma",
-      "article-448a5b8d",
-      "448a5b8d",
-      "hokuriku-telecommunications-deploys-arctic-wolf-ma-5e7cd7",
-      "hokuriku-telecommunications-deploys-arctic-wolf-managed-edr"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-92798-important-perl-xml-libxml-security-a888d300",
-    "title": "RHSA-2026:92798: Important: perl-XML-LibXML security update",
-    "summary": "An update for perl-XML-LibXML is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92798",
-    "publishedAt": "2026-10-29T20:36:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-92798-important-perl-xml-libxml-security",
-      "article-a888d300",
-      "a888d300",
-      "rhsa-2026-92798-important-perl-xml-libxml-security-37d997",
-      "rhsa-2026-92798-important-perl-xml-libxml-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-perl-xml-libxml-in-rhel-8-6-2cfbed5d",
-    "title": "Red Hat Patches perl-XML-LibXML in RHEL 8.6",
-    "summary": "Red Hat released a security update addressing security flaws within the perl-XML-LibXML package for Red Hat Enterprise Linux 8.6 systems. Red Hat Product Security rated the underlying vulnerability as Important based on Common Vulnerability Scoring System metrics affecting mission-critical deployment environments. Administrators using Advanced Mission Critical Update Support or Extended Update Support Long-Life Add-On packages should apply the patch immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92800",
-    "publishedAt": "2026-10-29T20:35:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-perl-xml-libxml-in-rhel-8-6",
-      "article-2cfbed5d",
-      "2cfbed5d",
-      "red-hat-patches-perl-xml-libxml-in-rhel-8-6-37d994"
-    ]
-  },
-  {
-    "slug": "reporters-notebook-video-series-discusses-ai-cyber-a08f348c",
-    "title": "Reporters Notebook Video Series Discusses AI Cybersecurity Training Trends",
-    "summary": "The Reporters' Notebook video series published a discussion examining emerging workforce training trends during Cybersecurity Awareness Month. The coverage highlights integrating artificial intelligence into educational programs to inform next-generation staff about evolving threat vectors and operational risks. Organizations can utilize these strategic training concepts to enhance internal cybersecurity awareness initiatives across modern digital environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
-    "publishedAt": "2026-10-29T20:15:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "reporters-notebook-video-series-discusses-ai-cyber",
-      "article-a08f348c",
-      "a08f348c",
-      "reporters-notebook-video-series-discusses-ai-cyber-377b1f",
-      "reporters-notebook-video-series-discusses-ai-cybersecurity-t"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-92590-important-httpd-security-update-ada23d58",
-    "title": "RHSA-2026:92590: Important: httpd security update",
-    "summary": "An update for httpd is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92590",
-    "publishedAt": "2026-10-29T20:08:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-92590-important-httpd-security-update",
-      "article-ada23d58",
-      "ada23d58",
-      "rhsa-2026-92590-important-httpd-security-update-37d99e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-92615-important-aspell-security-update-5b76caa1",
-    "title": "RHSA-2026:92615: Important: aspell security update",
-    "summary": "An update for aspell is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92615",
-    "publishedAt": "2026-10-29T20:03:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-92615-important-aspell-security-update",
-      "article-5b76caa1",
-      "5b76caa1",
-      "rhsa-2026-92615-important-aspell-security-update-37d99b"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-92438-important-net-10-0-security-bug-fi-4e3305cd",
-    "title": "RHSA-2026:92438: Important: .NET 10.0 security, bug fix, and enhancement update",
-    "summary": "An update for .NET 10.0 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92438",
-    "publishedAt": "2026-10-29T20:03:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-92438-important-net-10-0-security-bug-fi",
-      "article-4e3305cd",
-      "4e3305cd",
-      "rhsa-2026-92438-important-net-10-0-security-bug-fi-37d9a3",
-      "rhsa-2026-92438-important-net-10-0-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-multiple-kpatch-packages-in-rhel-9-441f674e",
-    "title": "Red Hat Patches Multiple kpatch Packages in RHEL 9.2 Update",
-    "summary": "Red Hat released security updates for multiple kpatch packages affecting Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions, rated Important by Product Security. Each vulnerability carries a separate CVSS base score available via linked CVE references. Organizations running affected SAP-specific services should apply these patches promptly to mitigate the disclosed security impact.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92629",
-    "publishedAt": "2026-10-29T20:01:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-multiple-kpatch-packages-in-rhel-9",
-      "article-441f674e",
-      "441f674e",
-      "red-hat-patches-multiple-kpatch-packages-in-rhel-9-37d99b",
-      "red-hat-patches-multiple-kpatch-packages-in-rhel-9-2-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-92677-important-dnsmasq-security-bug-fix-750b7e26",
-    "title": "RHSA-2026:92677: Important: dnsmasq security, bug fix, and enhancement update",
-    "summary": "An update for dnsmasq is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92677",
-    "publishedAt": "2026-10-29T19:59:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-92677-important-dnsmasq-security-bug-fix",
-      "article-750b7e26",
-      "750b7e26",
-      "rhsa-2026-92677-important-dnsmasq-security-bug-fix-37d99b",
-      "rhsa-2026-92677-important-dnsmasq-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-security-flaw-in-ansible-automatio-49453b6e",
-    "title": "Red Hat Patches Security Flaw in Ansible Automation Platform",
-    "summary": "Red Hat published a security update addressing vulnerabilities in Red Hat Ansible Automation Platform 2.6. The release resolves CVE-2026-98432, an Important-rated flaw evaluated via the Common Vulnerability Scoring System that risks operational automation workflows. System administrators should apply the latest product security and bug fix updates across affected enterprise environments.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92621",
-    "publishedAt": "2026-10-29T19:58:31.000Z",
-    "cves": [
-      "CVE-2026-98432"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-security-flaw-in-ansible-automatio",
-      "article-49453b6e",
-      "49453b6e",
-      "red-hat-patches-security-flaw-in-ansible-automatio-37d99b",
-      "red-hat-patches-security-flaw-in-ansible-automation-platform"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-security-update-for-ignition-util-390afb7a",
-    "title": "Red Hat Releases Security Update for Ignition Utility",
-    "summary": "Red Hat released an important security advisory for the ignition package on Red Hat Enterprise Linux 9.8 Extended Update Support. The update addresses security flaws evaluated under the Common Vulnerability Scoring System that impact system provisioning integrity. Security teams managing affected Red Hat Enterprise Linux installations should immediately deploy the updated ignition packages.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91719",
-    "publishedAt": "2026-10-29T19:58:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-security-update-for-ignition-util",
-      "article-390afb7a",
-      "390afb7a",
-      "red-hat-releases-security-update-for-ignition-util-37da0c",
-      "red-hat-releases-security-update-for-ignition-utility"
-    ]
-  },
-  {
-    "slug": "ctf-competitions-gain-critical-importance-e015205d",
-    "title": "CTF Competitions Gain Critical Importance",
-    "summary": "Artificial intelligence reduces early‑career learning opportunities, prompting the cybersecurity community to emphasize capture‑the‑flag competitions as a practical training alternative. CTF events provide hands‑on experience, allowing participants to practice exploitation, defensive techniques, and teamwork in realistic, time‑bound scenarios. Organizations can leverage CTFs to identify skill gaps, foster talent pipelines, and strengthen overall security posture through continuous learning.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever",
-    "publishedAt": "2026-10-29T19:56:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ctf-competitions-gain-critical-importance",
-      "article-e015205d",
-      "e015205d",
-      "ctf-competitions-gain-critical-importance-56afc6"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-libxtst-security-update-8213ab03",
-    "title": "Red Hat Issues Important libXtst Security Update",
-    "summary": "Red Hat released an Important security update for the libXtst library on Enterprise Linux 9. The advisory references a CVSS base score for each vulnerability, indicating a high‑severity flaw that could allow privilege escalation or denial of service. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify patch installation via rpm or yum.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91223",
-    "publishedAt": "2026-10-29T19:53:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-libxtst-security-update",
-      "article-8213ab03",
-      "8213ab03",
-      "red-hat-issues-important-libxtst-security-update-37da1f"
-    ]
-  },
-  {
-    "slug": "threatsday-highlights-firewall-flaws-and-trojans-2c557b1c",
-    "title": "ThreatsDay Highlights Firewall Flaws and Trojans",
-    "summary": "ThreatsDay lists 26 incidents, including critical firewall flaws exposing network perimeters, rented banking trojans harvesting credentials, weaponized PDFs exploiting parsing bugs, and OAuth token theft. These events combine advanced exploitation with misconfigurations, enabling attackers to gain unauthorized access or exfiltrate data. Teams should patch firewalls, update software, and monitor token usage to mitigate risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
-    "publishedAt": "2026-10-29T19:11:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threatsday-highlights-firewall-flaws-and-trojans",
-      "article-2c557b1c",
-      "2c557b1c",
-      "threatsday-highlights-firewall-flaws-and-trojans-706edd"
-    ]
-  },
-  {
-    "slug": "ghostaction-wave-fails-attackers-persist-on-github-5905ed27",
-    "title": "GhostAction Wave Fails, Attackers Persist on GitHub",
-    "summary": "A GhostAction hacking wave targeting GitHub repositories has failed to deliver payloads but remains active. The wave exploits misconfigured access controls and leverages social engineering to gain initial foothold, posing a moderate risk of credential compromise. Security teams should review root‑cause telemetry, apply detection rules, and patch vulnerable configurations to mitigate future attempts.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ghostaction-hacking-wave-fizzles-but-attackers-lurk-on",
-    "publishedAt": "2026-10-29T18:47:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostaction-wave-fails-attackers-persist-on-github",
-      "article-5905ed27",
-      "5905ed27",
-      "ghostaction-wave-fails-attackers-persist-on-github-35bbe6"
-    ]
-  },
-  {
-    "slug": "claude-ai-chains-exploits-across-major-browsers-an-734f0d76",
-    "title": "Claude AI Chains Exploits Across Major Browsers and OSes",
-    "summary": "An unreleased version of Anthropic’s Claude model has discovered and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux. The model demonstrates active exploitation potential, revealing zero‑day weaknesses that bypass standard security controls. Vendors should review recent advisories and deploy mitigations; security teams must monitor for related attack patterns.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
-    "publishedAt": "2026-10-29T18:15:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-ai-chains-exploits-across-major-browsers-an",
-      "article-734f0d76",
-      "734f0d76",
-      "claude-ai-chains-exploits-across-major-browsers-an-11f7cd",
-      "claude-ai-chains-exploits-across-major-browsers-and-oses"
-    ]
-  },
-  {
-    "slug": "cisco-talos-analyzes-php-and-node-js-security-tren-0676a8ce",
-    "title": "Cisco Talos Analyzes PHP and Node.js Security Trends",
-    "summary": "Cisco Talos released a Threat Source newsletter examining recent security discussions surrounding PHP and Node.js ecosystem developments. The intelligence overview details shifting threat landscapes and developer community responses to emerging application vulnerabilities across both runtime environments. Defensive teams should monitor ongoing software environment disclosures and review language-specific component updates to maintain application security.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/a-quiet-week-in-infosec/",
-    "publishedAt": "2026-10-29T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-talos-analyzes-php-and-node-js-security-tren",
-      "article-0676a8ce",
-      "0676a8ce",
-      "cisco-talos-analyzes-php-and-node-js-security-tren-1263ff",
-      "cisco-talos-analyzes-php-and-node-js-security-trends"
     ]
   }
 ];

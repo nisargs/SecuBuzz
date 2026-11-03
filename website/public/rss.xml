@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 15:21:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 16:52:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Critical Kernel Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-kernel-security-update-70923a38</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-kernel-security-update-70923a38</guid>
+      <description><![CDATA[Red Hat released a kernel security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing several high‑impact kernel flaws. The update is rated Critical by Product Security, with CVSS scores linked to CVE references, implying potential unauthenticated remote code execution. Administrators should apply the patch promptly to mitigate exploitation risks and preserve system integrity.]]></description>
+      <pubDate>Tue, 03 Nov 2026 16:26:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94623">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Use AI Agents to Launch 3AM Ransomware Attacks Against UK School Networks</title>
+      <link>https://secubuzz.com/news/hackers-use-ai-agents-to-launch-3am-ransomware-att-6c373d14</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-ai-agents-to-launch-3am-ransomware-att-6c373d14</guid>
+      <description><![CDATA[A ransomware affiliate has hit a group of UK schools with a mix of human control and AI-style automation. The attackers used built-in Windows tools, stolen backup passwords and fake admin accounts to spread across the school network, then encrypted about 37 machines.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:55:08 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-ai-agents-2/">Cyber Security News</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Hackers Raise Supermarket Freezers to 50°C</title>
+      <link>https://secubuzz.com/news/hackers-raise-supermarket-freezers-to-50-c-114500b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-raise-supermarket-freezers-to-50-c-114500b3</guid>
+      <description><![CDATA[Hackers targeted supermarket refrigeration systems in at least ten European countries, manipulating temperature controls to raise freezers to 50°C. The attack forced retailers to remove chilled and frozen goods, exposing the vulnerability of connected HVAC equipment and threatening the food supply chain. Operators should isolate affected systems, apply vendor firmware updates, and enforce stricter access controls to prevent further sabotage.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:51:08 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/supermarket-refrigeration-systems-across-europe/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important Kernel Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-kernel-security-update-20d26e92</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-kernel-security-update-20d26e92</guid>
+      <description><![CDATA[Red Hat released a kernel security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing CVE-2026-64832. The vulnerability is rated Important by Product Security, with a CVSS score linked to the CVE reference, indicating potential kernel exploitation. Administrators should apply the patch promptly to mitigate the risk and maintain kernel integrity.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:43:54 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94596">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>cPGuard Update Channel Compromised, Backdoor Deployed</title>
+      <link>https://secubuzz.com/news/cpguard-update-channel-compromised-backdoor-deploy-700611b8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cpguard-update-channel-compromised-backdoor-deploy-700611b8</guid>
+      <description><![CDATA[An attacker hijacked the cPGuard update channel on November 2, delivering a malicious script that installed a backdoor on customers’ Linux servers. The backdoor harvested password hashes and other sensitive files, and the attacker subsequently exfiltrated portions of the collected data. cPGuard released version 5.88.25 and later with a patched update mechanism; users should upgrade immediately and verify update integrity.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:16:32 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Barracuda Issues Root‑Privilege Vulnerability Alerts</title>
+      <link>https://secubuzz.com/news/barracuda-issues-root-privilege-vulnerability-aler-e7b80cea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-issues-root-privilege-vulnerability-aler-e7b80cea</guid>
+      <description><![CDATA[Barracuda Networks warned that two undisclosed vulnerabilities in its device firmware can grant attackers root‑level command execution. The flaws allow local or remote attackers to bypass authentication and run arbitrary code with full system privileges. Barracuda released firmware patches for affected devices; administrators should apply the updates and enforce strict access controls.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:06:16 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Frontline Education Breach Exposes 1.3 Million Records</title>
+      <link>https://secubuzz.com/news/frontline-education-breach-exposes-1-3-million-rec-4bdd1929</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/frontline-education-breach-exposes-1-3-million-rec-4bdd1929</guid>
+      <description><![CDATA[Hackers exploited a flaw in third‑party software used by Frontline Education, compromising personal data of staff and students. The vulnerability enabled unauthorized extraction of names, addresses, and academic details, affecting more than 1.3 million individuals. Frontline Education has notified affected parties, coordinated with the vendor to patch the flaw, and urged MFA enforcement.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:32:38 GMT</pubDate>
+      <source url="https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Videostrong Deploys Backdoor in 1.3 Million Android TV Boxes</title>
+      <link>https://secubuzz.com/news/videostrong-deploys-backdoor-in-1-3-million-androi-04cc5652</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/videostrong-deploys-backdoor-in-1-3-million-androi-04cc5652</guid>
+      <description><![CDATA[Videostrong embedded a hidden backdoor in more than 1.3 million Android set‑top boxes, creating a covert botnet. The flaw allowed remote command execution without authentication, enabling attackers to issue arbitrary instructions and exfiltrate data from compromised devices. Affected manufacturers should release firmware updates to remove the backdoor, and security teams must monitor device traffic for anomalous outbound connections.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:11:25 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/mobile/2026/11/a-hidden-backdoor-put-1-3-million-tv-boxes-to-work-for-criminals">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Novee puts forgotten internet-facing assets through penetration testing</title>
       <link>https://secubuzz.com/news/novee-puts-forgotten-internet-facing-assets-throug-a6d4771e</link>
@@ -14,6 +86,15 @@
       <description><![CDATA[Novee’s External Surface Testing is a new capability in its AI penetration testing platform that helps security teams discover internet-facing assets and validate exploitable vulnerabilities. It tests newly disclosed CVEs and findings imported from third-party external attack surface management (EASM) tools. “Attackers don’t limit themselves to the applications you’re already testing.]]></description>
       <pubDate>Tue, 03 Nov 2026 14:00:26 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/03/novee-external-surface-testing/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cloudflare Launches Zero Wire for Vulnerability Triage</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-zero-wire-for-vulnerability-tr-51d37c94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-zero-wire-for-vulnerability-tr-51d37c94</guid>
+      <description><![CDATA[Cloudflare introduced Zero Wire, a platform that aggregates plain‑language briefings with real‑time attack telemetry to aid security teams. Zero Wire enables faster triage of critical CVEs by providing remediation steps and contextual threat data alongside Cloudflare Radar insights. Security teams can integrate Zero Wire into their workflow to prioritize patches and adjust defenses based on up‑to‑date telemetry.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/zero-wire/">Cloudflare Security</source>
       <category>General</category>
     </item>
     <item>
@@ -33,6 +114,24 @@
       <pubDate>Tue, 03 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack">Dark Reading</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Assured Launches CleanRoom SCAN for Backup Hygiene</title>
+      <link>https://secubuzz.com/news/assured-launches-cleanroom-scan-for-backup-hygiene-74bace0e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/assured-launches-cleanroom-scan-for-backup-hygiene-74bace0e</guid>
+      <description><![CDATA[Assured Data Protection introduced CleanRoom SCAN, a managed service that independently scans isolated backup copies using multiple security engines. The service detects malware and indicators of compromise before restoration, reducing the risk of reinfecting production environments during recovery. Organizations should adopt CleanRoom SCAN to validate backup integrity and apply remediation before deploying recovered data.]]></description>
+      <pubDate>Tue, 03 Nov 2026 13:59:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/assured-data-protection-cleanroom-scan/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ARTEX AI Automates Enterprise Attacks at Machine Speed</title>
+      <link>https://secubuzz.com/news/artex-ai-automates-enterprise-attacks-at-machine-s-839c89b6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/artex-ai-automates-enterprise-attacks-at-machine-s-839c89b6</guid>
+      <description><![CDATA[Attackers employ the ARTEX AI framework to accelerate credential‑based attacks, enabling rapid cloud privilege escalation, lateral movement, and data exfiltration. Recent campaigns demonstrate the framework’s ability to automate complex intrusion stages in minutes, raising concerns for organizations relying on traditional detection methods. Defenders should adopt AI‑aware monitoring, enforce strict credential hygiene, and update detection rules to counter ARTEX‑driven attacks.]]></description>
+      <pubDate>Tue, 03 Nov 2026 13:58:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/artex-ai-automate-enterprise-attacks/">Cyber Security News</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>Russia-Linked Spies Target Ukrainian War Crimes Data</title>
@@ -69,6 +168,15 @@
       <pubDate>Tue, 03 Nov 2026 13:00:00 GMT</pubDate>
       <source url="https://www.wiz.io/blog/green-agent-agentic-remediation">Wiz Research</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Kernel Patch for CVE‑2026‑64832</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-patch-for-cve-202-7e418930</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kernel-patch-for-cve-202-7e418930</guid>
+      <description><![CDATA[Red Hat issued a kernel update for RHEL 10.0 Extended Update Support to address CVE‑2026‑64832, a critical security flaw. The vulnerability is a kernel‑level bug that could allow unauthenticated attackers to gain elevated privileges, with a CVSS base score indicating critical impact. Red Hat has released the patch; administrators should apply the update immediately to mitigate the risk.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:39:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94508">Red Hat Security Advisories</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>AI Agents Accelerate China‑Linked Espionage Attacks</title>
@@ -125,6 +233,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Subnet Solutions PowerSYSTEM Center</title>
+      <link>https://secubuzz.com/news/subnet-solutions-powersystem-center-dc5c2e21</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/subnet-solutions-powersystem-center-dc5c2e21</guid>
+      <description><![CDATA[The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 PowerSYSTEM Center 2024 >=6.0.x| PowerSYSTEM Center 2026 >=7.0.x| CVSS Vendor Equipment v3 9 Subnet Solutions PowerSYSTEM Center 2 Vulnerabilities Incorrect Authorization, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Canada Vulnerabilities Expand All + CVE-2026-63017 Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01">CISA</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Revolve Card Data Stolen, 1.5 Million Affected</title>
       <link>https://secubuzz.com/news/revolve-card-data-stolen-1-5-million-affected-37f2effe</link>
       <guid isPermaLink="true">https://secubuzz.com/news/revolve-card-data-stolen-1-5-million-affected-37f2effe</guid>
@@ -132,6 +249,15 @@
       <pubDate>Tue, 03 Nov 2026 11:26:44 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/revolve-card-breach-1-5-million-people-may-be-affected">Malwarebytes Labs</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Patches Kernel TCP RCE CVE‑2026‑98432</title>
+      <link>https://secubuzz.com/news/red-hat-patches-kernel-tcp-rce-cve-2026-98432-99de3560</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-kernel-tcp-rce-cve-2026-98432-99de3560</guid>
+      <description><![CDATA[Red Hat released kernel patches for RHEL 8, 9, and 10 to fix CVE‑2026‑98432, a use‑after‑free flaw in the IPv4 TCP code. The flaw enables remote, unauthenticated attackers to execute arbitrary code with a CVSS score of 9.8, posing a critical threat. Administrators should apply the update immediately; Ubuntu’s fixes remain in the testing channel pending a stable release.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:23:53 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html">The Hacker News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Exposure Prioritization Framework Explained</title>
@@ -143,6 +269,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Kernel Race Condition Exploits Cause DoS CVE‑2022‑1205</title>
+      <link>https://secubuzz.com/news/kernel-race-condition-exploits-cause-dos-cve-2022-da40416e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kernel-race-condition-exploits-cause-dos-cve-2022-da40416e</guid>
+      <description><![CDATA[Duoming Zhou identified race conditions in the AX.25 amateur radio protocol within the Linux kernel, creating CVE‑2022‑1205, a use‑after‑free flaw. The vulnerability permits local attackers to trigger a denial‑of‑service crash, potentially compromising system stability. Red Hat and other vendors have released kernel updates correcting the flaw across multiple subsystems; administrators should apply the patch promptly.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:05:15 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8961-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Kernel Clock Driver Null Dereference CVE‑2022‑3114</title>
+      <link>https://secubuzz.com/news/kernel-clock-driver-null-dereference-cve-2022-3114-d1d8373f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kernel-clock-driver-null-dereference-cve-2022-3114-d1d8373f</guid>
+      <description><![CDATA[Duoming Zhou uncovered race conditions in the AX.25 protocol and a null pointer dereference in the i.MX clock driver, creating CVE‑2022‑1205 and CVE‑2022‑3114, both local use‑after‑free flaws. Each vulnerability allows local attackers to trigger a denial‑of‑service crash, potentially destabilizing affected systems. Kernel updates correcting these flaws across multiple architectures have been released; administrators should apply the patches promptly.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:04:01 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8963-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Linux Kernel Subsystems Vulnerabilities Patching Update</title>
       <link>https://secubuzz.com/news/linux-kernel-subsystems-vulnerabilities-patching-u-78ae618d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-subsystems-vulnerabilities-patching-u-78ae618d</guid>
@@ -150,6 +294,24 @@
       <pubDate>Tue, 03 Nov 2026 11:03:44 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8959-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Linux Kernel Bluetooth Use-After-Free Vulnerabilities Fixed</title>
+      <link>https://secubuzz.com/news/linux-kernel-bluetooth-use-after-free-vulnerabilit-82a11cdb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-bluetooth-use-after-free-vulnerabilit-82a11cdb</guid>
+      <description><![CDATA[A use‑after‑free flaw in the Linux kernel Bluetooth subsystem (CVE‑2021‑3640) allows a local attacker to trigger a denial‑of‑service or potentially execute arbitrary code. Another CVE‑2022‑49058 flaw in the kernel’s file‑system infrastructure also permits local privilege escalation or denial‑of‑service. Ubuntu released kernel updates that patch both vulnerabilities; administrators should apply the latest kernel version immediately to mitigate the risks.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:03:23 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8968-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>USN-8967-1: Linux kernel (AWS) vulnerability</title>
+      <link>https://secubuzz.com/news/usn-8967-1-linux-kernel-aws-vulnerability-b5a0eb08</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-8967-1-linux-kernel-aws-vulnerability-b5a0eb08</guid>
+      <description><![CDATA[Jürgen Groß discovered that the Xen network backend driver in the Linux kernel did not adequately limit the amount of queued packets when a guest did not process them. An attacker in a guest VM can use this to cause a denial of service (excessive kernel memory consumption) in the network backend domain. The vulnerability is tracked as CVE-2026-98432.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:03:11 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8967-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Ubuntu Patches Linux Kernel SCSI NFS Flaws</title>
@@ -269,6 +431,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>RHSA-2026:94438: Critical: kernel security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-94438-critical-kernel-security-bug-fix-a-302ed0b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94438-critical-kernel-security-bug-fix-a-302ed0b3</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. The vulnerability is tracked as CVE-2026-64832.]]></description>
+      <pubDate>Tue, 03 Nov 2026 09:20:58 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94438">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>RHSA-2026:94449: Important: libXtst security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-94449-important-libxtst-security-update-5901ed76</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94449-important-libxtst-security-update-5901ed76</guid>
@@ -285,177 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 08:58:59 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/03/openai-bigger-bug-bounty-rewards/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>NATO Exercise Integrates AI Agents into Cyber Training</title>
-      <link>https://secubuzz.com/news/nato-exercise-integrates-ai-agents-into-cyber-trai-b8ca9838</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nato-exercise-integrates-ai-agents-into-cyber-trai-b8ca9838</guid>
-      <description><![CDATA[NATO’s Crossed Swords exercise in Estonia integrated AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The exercise aimed to evaluate AI‑driven decision support and autonomous response capabilities within a realistic threat environment. Participants will assess integration challenges, command‑control workflows, and potential adversarial manipulation of AI agents.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:49:03 GMT</pubDate>
-      <source url="https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Pipewire Update Addresses Moderate Security Flaw in RHEL 9.6</title>
-      <link>https://secubuzz.com/news/pipewire-update-addresses-moderate-security-flaw-i-2fe8608c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pipewire-update-addresses-moderate-security-flaw-i-2fe8608c</guid>
-      <description><![CDATA[A moderate update for Pipewire on Red Hat Enterprise Linux 9.6 EUS addresses a vulnerability in the multimedia framework. The flaw permits unauthorized manipulation of audio and video streams, potentially enabling privilege escalation or denial of service, and is rated moderate by Red Hat Product Security. Red Hat recommends applying the RHSA‑2026:94437 update immediately; no additional workarounds are required.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:33:01 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94437">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Gnutls Update Mitigates Moderate Vulnerability in RHEL 6</title>
-      <link>https://secubuzz.com/news/gnutls-update-mitigates-moderate-vulnerability-in-8eb72348</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gnutls-update-mitigates-moderate-vulnerability-in-8eb72348</guid>
-      <description><![CDATA[A moderate update for Gnutls on Red Hat Enterprise Linux 6 EXTENSION addresses a vulnerability in the TLS library. The flaw allows unauthorized manipulation of cryptographic parameters, potentially enabling downgrade attacks or denial of service, and is rated moderate by Red Hat Product Security. Red Hat recommends applying the RHSA‑2026:94442 update immediately; no additional workarounds are required.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:26:48 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94442">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CrowdStrike Secures AI Agents Inside Claude Cowork</title>
-      <link>https://secubuzz.com/news/crowdstrike-secures-ai-agents-inside-claude-cowork-cc93930b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-secures-ai-agents-inside-claude-cowork-cc93930b</guid>
-      <description><![CDATA[CrowdStrike announced that it has secured AI agents inside the Claude Cowork environment, reinforcing internal security controls. The move addresses potential insider threat vectors by isolating AI workloads and limiting lateral movement within the platform. Security teams should verify agent isolation policies, monitor access logs, and update internal threat models to reflect the new containment strategy.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork/">CrowdStrike</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CrowdStrike Acquires Fiddler for AI Observability</title>
-      <link>https://secubuzz.com/news/crowdstrike-acquires-fiddler-for-ai-observability-980e493b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-acquires-fiddler-for-ai-observability-980e493b</guid>
-      <description><![CDATA[CrowdStrike announced the acquisition of Fiddler to enhance Falcon Observe with AI agent observability capabilities. The deal expands CrowdStrike’s telemetry stack, enabling deeper visibility into autonomous agent behavior and performance metrics. Security teams should integrate the new observability modules to monitor AI workloads and detect anomalous activity and ensure compliance with data privacy regulations.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-fiddler/">CrowdStrike</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CrowdStrike Expands AI Security Across Cloud and Endpoint</title>
-      <link>https://secubuzz.com/news/crowdstrike-expands-ai-security-across-cloud-and-e-1c48ce46</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-expands-ai-security-across-cloud-and-e-1c48ce46</guid>
-      <description><![CDATA[CrowdStrike announced an expansion of its AI‑driven security capabilities from endpoint to cloud environments. The update introduces new AI models that analyze telemetry across the Falcon platform, aiming to detect threats earlier and reduce false positives. No immediate patch is required; organizations should enable the new AI modules via the Falcon console and monitor for improved detection metrics.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-advances-ai-security-and-safety-falcon-guardian/">CrowdStrike</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Kill Switch Enables Control Over Rogue Agents</title>
-      <link>https://secubuzz.com/news/ai-kill-switch-enables-control-over-rogue-agents-8c084db0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-kill-switch-enables-control-over-rogue-agents-8c084db0</guid>
-      <description><![CDATA[CrowdStrike unveiled an AI Kill Switch feature that allows administrators to halt rogue AI agents within the Falcon platform. The kill switch monitors agent behavior, triggers a safe shutdown, and logs the event for forensic analysis. Deploying the feature requires enabling the kill switch policy in the Falcon console and updating agent firmware to the latest version.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-introduces-ai-kill-switch/">CrowdStrike</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CrowdStrike Acquires Dreadnode for AI Security Testing</title>
-      <link>https://secubuzz.com/news/crowdstrike-acquires-dreadnode-for-ai-security-tes-9463faaf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-acquires-dreadnode-for-ai-security-tes-9463faaf</guid>
-      <description><![CDATA[CrowdStrike announced the acquisition of Dreadnode, a company specializing in automated AI security testing. The deal aims to integrate Dreadnode’s testing framework into the Falcon platform, expanding AI‑driven threat detection capabilities. No immediate action is required; organizations should monitor Falcon updates for the new testing modules and adjust policies accordingly.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-dreadnode/">CrowdStrike</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Supermarket Fridge Controllers Targeted in European IoT Attacks</title>
-      <link>https://secubuzz.com/news/supermarket-fridge-controllers-targeted-in-europea-a35c838e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/supermarket-fridge-controllers-targeted-in-europea-a35c838e</guid>
-      <description><![CDATA[Attackers tampered with internet‑exposed refrigeration controllers at over 100 European supermarkets, targeting IoT devices in Belgium, Sweden, and Ireland. The exploitation enabled unauthorized control of temperature settings, potentially compromising food safety and inventory, and was facilitated by a known firmware vulnerability. Supermarkets should apply vendor firmware updates immediately and restrict network access to refrigeration systems to mitigate further compromise.]]></description>
-      <pubDate>Tue, 03 Nov 2026 07:43:24 GMT</pubDate>
-      <source url="https://www.securityweek.com/over-100-european-stores-hit-as-supermarket-fridge-attacks-resume/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Synology Ransomware Exploits Patched DSM Vulnerability</title>
-      <link>https://secubuzz.com/news/synology-ransomware-exploits-patched-dsm-vulnerabi-79b25dd4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/synology-ransomware-exploits-patched-dsm-vulnerabi-79b25dd4</guid>
-      <description><![CDATA[Synology reports ransomware attacks targeting NAS devices that exploit a vulnerability patched in December 2024. Attackers leveraged the flaw to encrypt data on outdated DSM versions, demanding ransom payments from affected customers, and disabling backup functionality. Synology urges users to update DSM immediately; no additional mitigations are necessary beyond the patch, and backups should be verified.]]></description>
-      <pubDate>Tue, 03 Nov 2026 07:43:07 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html">The Hacker News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Europe Supermarkets Hit by Refrigeration Cyberattacks</title>
-      <link>https://secubuzz.com/news/europe-supermarkets-hit-by-refrigeration-cyberatta-6b367a70</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/europe-supermarkets-hit-by-refrigeration-cyberatta-6b367a70</guid>
-      <description><![CDATA[Attackers remotely altered refrigeration control settings at supermarkets in Belgium, Sweden, Estonia, and other European countries, warming fridges and freezers overnight. The flaw in Danfoss controllers allowed unauthenticated remote configuration changes, causing food spoilage and inventory losses. Danfoss issued a firmware update and recommends disabling remote access until the patch is applied to prevent further disruptions.]]></description>
-      <pubDate>Tue, 03 Nov 2026 07:27:07 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>DarkBlinders Breach Iraqi Cloud, Steal 1GB Data</title>
-      <link>https://secubuzz.com/news/darkblinders-breach-iraqi-cloud-steal-1gb-data-7722d4db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/darkblinders-breach-iraqi-cloud-steal-1gb-data-7722d4db</guid>
-      <description><![CDATA[DarkBlinders breached a government cloud in Iraq’s Kurdistan Region, exfiltrating over 1GB of data and compromising an Israeli security official. The attackers leveraged undisclosed misconfigurations or vulnerabilities to gain unauthorized access, sustaining the intrusion from August to October 2026. No vendor patch applies; defenders should tighten cloud IAM, monitor outbound traffic, and perform forensic analysis to detect similar breaches.]]></description>
-      <pubDate>Tue, 03 Nov 2026 07:25:07 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/iran-linked-darkblinders-hackers/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Hackers Deploy PapRAT via VHDX and WebDAV Links</title>
-      <link>https://secubuzz.com/news/hackers-deploy-paprat-via-vhdx-and-webdav-links-544374d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-deploy-paprat-via-vhdx-and-webdav-links-544374d8</guid>
-      <description><![CDATA[A suspected espionage group delivers the PapRAT remote access trojan to Windows systems using malicious VHDX disk images and WebDAV links. The campaign embeds the payload in innocuous shortcut files and remote web folders, evading detection by antivirus signatures. Security teams should block inbound WebDAV traffic, quarantine suspicious VHDX files, and enforce strict email attachment policies to mitigate infection.]]></description>
-      <pubDate>Tue, 03 Nov 2026 06:44:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-malicious-vhdx-files/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Human Hackers Outperform AI in Business Logic Assessment</title>
-      <link>https://secubuzz.com/news/human-hackers-outperform-ai-in-business-logic-asse-f8d053d9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/human-hackers-outperform-ai-in-business-logic-asse-f8d053d9</guid>
-      <description><![CDATA[Kara Sprague, HackerOne CEO, said AI finds bugs fast, but humans better assess business impact and prioritize. She noted medium‑severity findings often pay less, and AI‑assisted reports need human triage to filter spam and ensure relevance. HackerOne blends AI detection with human judgment to enhance security outcomes and reward alignment.]]></description>
-      <pubDate>Tue, 03 Nov 2026 06:30:36 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/kara-sprague-hackerone-ai-bug-bounty/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>BYDFi Revamp Unifies Rewards Hub, Offers 8,100 USDT</title>
-      <link>https://secubuzz.com/news/bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt-3bb753eb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt-3bb753eb</guid>
-      <description><![CDATA[BYDFi’s platform upgrade consolidates campaigns, tasks, and reward claims into a single Rewards Hub, letting new users claim welcome rewards up to 8,100 USDT. The security perspective frames the onboarding window where an account shifts from empty to active, highlighting potential credential exposure. Users should verify account activity, enable MFA, and monitor for suspicious transactions during the initial claim period.]]></description>
-      <pubDate>Tue, 03 Nov 2026 06:03:30 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/bydfis-up-to-8100-usdt-welcome-rewards-a-security-first-guide-for-new-users/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Sweet Virtual Patching Mitigates HTTP2Shell RCE</title>
-      <link>https://secubuzz.com/news/sweet-virtual-patching-mitigates-http2shell-rce-abf28543</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sweet-virtual-patching-mitigates-http2shell-rce-abf28543</guid>
-      <description><![CDATA[HTTP2Shell (CVE-2026-111497) is a remote code execution flaw in Brotli used by Node.js, Bun, Envoy, Python, discovered by OpenAI agents. The flaw lets attackers inject malformed Brotli streams, triggering a decoder crash that enables unauthenticated code execution with a CVSS of 9.8.]]></description>
-      <pubDate>Tue, 03 Nov 2026 06:00:18 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/">Help Net Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical Kernel Update for RHEL 8.8</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-8-b0d5010b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-8-b0d5010b</guid>
-      <description><![CDATA[Red Hat released a critical kernel update for RHEL 8.8 SAP and Telecom services, fixing multiple CVEs. The patch addresses unauthenticated remote code execution flaws with CVSS scores up to 9.0, protecting kernel integrity. Administrators should apply the update via Red Hat Update Manager or yum to maintain compliance and security.]]></description>
-      <pubDate>Tue, 03 Nov 2026 05:53:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94303">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Coding Agents Deploy Unpatched MCP Servers</title>
-      <link>https://secubuzz.com/news/ai-coding-agents-deploy-unpatched-mcp-servers-bcd9096a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-coding-agents-deploy-unpatched-mcp-servers-bcd9096a</guid>
-      <description><![CDATA[Glow Labs found AI coding agents installing deprecated MCP servers on developer machines when prompted to set up a GitHub MCP. The agents pick from repositories that will never be patched, creating a MCPhantom pattern that exposes systems to unpatched vulnerabilities. Developers should vet MCP packages, avoid deprecated repositories, and apply controls to detect and remediate unpatched servers.]]></description>
-      <pubDate>Tue, 03 Nov 2026 05:45:53 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/mcphantom-deprecated-mcp-servers/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Siemens IoT2050 Exploited for Remote Code Execution</title>
-      <link>https://secubuzz.com/news/siemens-iot2050-exploited-for-remote-code-executio-062391f1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-iot2050-exploited-for-remote-code-executio-062391f1</guid>
-      <description><![CDATA[Attackers are exploiting a missing authentication flaw in Siemens SIMATIC IoT2050 Advanced devices, allowing remote code execution. The flaw, CVE-2026-58115, carries a CVSS score of 10.0 and permits unauthenticated attackers to run arbitrary code, potentially compromising device control and network integrity. Siemens has released an out‑of‑band patch; administrators should apply the update immediately and disable exposed management interfaces.]]></description>
-      <pubDate>Tue, 03 Nov 2026 05:34:41 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
