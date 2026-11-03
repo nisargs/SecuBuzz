@@ -1,5 +1,69 @@
 [
   {
+    "id": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
+    "title": "European Fridge Attacks Highlight Cold‑Chain Security Risks",
+    "headline": "European Fridge Attacks Highlight Cold‑Chain Security Risks",
+    "summary": "Recent attacks on European refrigerators exposed vulnerabilities in their internet connectivity and remote access controls. The incidents demonstrate that temperature‑controlled infrastructure, such as industrial refrigeration, can be compromised through inadequate security practices, potentially disrupting critical supply chains. Operators should enforce network segmentation, secure remote access, and regular firmware updates to mitigate these risks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-03T22:16:49.000Z",
+    "ingestedAt": "2026-11-03T22:43:30.189Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+    "title": "Germany Seizes Crime‑as‑a‑Service Fraud Platform",
+    "headline": "Germany Seizes Crime‑as‑a‑Service Fraud Platform",
+    "summary": "German police, in a multinational operation, dismantled a crime‑as‑a‑service outfit that provided fraudulent trading platforms to investment scammers. The investigation uncovered a network that enabled scammers to create and host deceptive brokerage sites, facilitating large‑scale financial fraud. Authorities seized the infrastructure and are prosecuting the operators, underscoring the threat posed by such service‑based fraud ecosystems.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-03T21:57:12.000Z",
+    "ingestedAt": "2026-11-03T22:43:30.190Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+    "additionalSources": []
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/",
+    "title": "CVE-2026-119084: Amazon Redshift JDBC Driver RCE via Class Loading",
+    "headline": "CVE-2026-119084: Amazon Redshift JDBC Driver RCE via Class Loading",
+    "summary": "CVE-2026-119084 allows remote code execution in Amazon Redshift JDBC Driver versions prior to 2.3.0 when parsing JDBC URLs or AWS credential profiles. The flaw lets an attacker load and run arbitrary classes, bypassing authentication and compromising the host. Amazon released driver 2.3.0 and later, which removes the unsafe loading path; teams should upgrade or apply the patch.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-03T21:32:29.000Z",
+    "ingestedAt": "2026-11-03T22:43:15.782Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+    "title": "WorkOS Breach via ARTEX AI Exposes Customer Data",
+    "headline": "WorkOS Breach via ARTEX AI Exposes Customer Data",
+    "summary": "WorkOS reported an attacker used the ARTEX AI module to breach its sales app and access business contact records and customer communications. The breach exploited a privilege‑escalation flaw in the AI integration, granting unauthorized read access to sensitive data without authentication. WorkOS applied a patch limiting AI module permissions and advises customers to review access controls and monitor activity.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-03T21:28:44.000Z",
+    "ingestedAt": "2026-11-03T22:43:27.086Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council",
     "sourceUrl": "https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council",
     "title": "Gorbag APT Self‑Deleting Malware Detection Guide",
@@ -783,9 +847,9 @@
   {
     "id": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
     "sourceUrl": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
-    "title": "cPGuard Update Channel Compromised, Backdoor Deployed",
-    "headline": "cPGuard Update Channel Compromised, Backdoor Deployed",
-    "summary": "An attacker hijacked the cPGuard update channel on November 2, delivering a malicious script that installed a backdoor on customers’ Linux servers. The backdoor harvested password hashes and other sensitive files, and the attacker subsequently exfiltrated portions of the collected data. cPGuard released version 5.88.25 and later with a patched update mechanism; users should upgrade immediately and verify update integrity.",
+    "title": "cPGuard Update Hijacked to Deploy Backdoor and Steal Data",
+    "headline": "cPGuard Update Hijacked to Deploy Backdoor and Steal Data",
+    "summary": "Attackers hijacked the cPGuard web security suite autoupdate mechanism to push a malicious backdoor and data‑stealing script to customers. The compromise exploited the update infrastructure’s lack of integrity verification, enabling remote code execution and credential exfiltration without user interaction. cPGuard has released a patched update signing process and recommends customers validate update signatures and apply the new firmware immediately.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -794,7 +858,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/"
+      }
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
@@ -1143,6 +1212,46 @@
     "additionalSources": []
   },
   {
+    "id": "https://research.checkpoint.com/2026/free-the-model-sell-the-gateway-prompt-adware-hidden-in-jailbreak-bundles/",
+    "sourceUrl": "https://research.checkpoint.com/2026/free-the-model-sell-the-gateway-prompt-adware-hidden-in-jailbreak-bundles/",
+    "title": "Cobalt Strike Server Compromises Chinese Users' PCs",
+    "headline": "Cobalt Strike Server Compromises Chinese Users' PCs",
+    "summary": "A misconfigured webserver operated by a threat actor running Cobalt Strike exposed an open server that logged compromises of private computers belonging to Chinese-speaking users. The insecure configuration allowed attackers to execute arbitrary code, exfiltrate credentials, and access sensitive files. Teams should secure the server, enforce strict access controls, and monitor logs for anomalous activity.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "publishedAt": "2026-11-03T13:57:04.000Z",
+    "ingestedAt": "2026-11-03T22:43:35.771Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://research.checkpoint.com/2026/free-the-model-sell-the-gateway-prompt-adware-hidden-in-jailbreak-bundles/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:93618",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93618",
+    "title": "Red Hat Releases JBoss 7.0.3 Update to Fix Critical CVE‑2026‑98432 Remote Code Execution Vulnerability",
+    "headline": "Red Hat Releases JBoss 7.0.3 Update to Fix Critical CVE‑2026‑98432 Remote Code Execution Vulnerability",
+    "summary": "Red Hat released a JBoss Web Server 7.0.3 update for RHEL 8, 9, 10, and Windows Server to fix the critical CVE‑2026‑98432 remote code execution flaw. The flaw let unauthenticated attackers parse malicious HTTP requests and run arbitrary code with system privileges, risking full server compromise. Admins should apply the patch immediately, confirm mitigation, and monitor for anomalous activity.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-03T13:52:32.000Z",
+    "ingestedAt": "2026-11-03T22:43:27.086Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:93618",
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93622"
+      }
+    ],
+    "cves": [
+      "CVE-2026-98432"
+    ]
+  },
+  {
     "id": "https://therecord.media/russia-dismantles-vasygrek-infrastructure-detains-three",
     "sourceUrl": "https://therecord.media/russia-dismantles-vasygrek-infrastructure-detains-three",
     "title": "Russia Disrupts VasyGrek Cybercrime Group",
@@ -1293,6 +1402,25 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:94485",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94485",
+    "title": "RHSA-2026:94485: Moderate: cockpit security, bug fix, and enhancement update",
+    "headline": "RHSA-2026:94485: Moderate: cockpit security, bug fix, and enhancement update",
+    "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-03T12:31:40.000Z",
+    "ingestedAt": "2026-11-03T22:43:54.611Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:94477",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94477",
     "title": "Red Hat Releases Kernel Critical Update",
@@ -1378,6 +1506,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "title": "CISA Adds CVE-2026-119977 to KEV Catalog",
+    "headline": "CISA Adds CVE-2026-119977 to KEV Catalog",
+    "summary": "CISA added CVE-2026-119977, a WordPress Core time‑of‑check/time‑of‑use race condition, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The flaw lets attackers manipulate file timestamps to trigger arbitrary code execution on exposed WordPress sites, granting full control. Federal agencies must apply the latest WordPress patch or disable remote file editing per BOD 26‑04.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-03T12:00:00.000Z",
+    "ingestedAt": "2026-11-03T22:43:30.189Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
     "additionalSources": []
   },
   {
@@ -1658,6 +1802,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/ai-could-accelerate-ransomware/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:94488",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94488",
+    "title": "Red Hat Fixes Multiple CVEs in RHEL AI 3.5",
+    "headline": "Red Hat Fixes Multiple CVEs in RHEL AI 3.5",
+    "summary": "Red Hat released a security update for RHEL AI 3.5 that addresses six critical CVEs affecting the ffmpeg runtime. The vulnerabilities, identified as CVE-2026-64832, CVE-2026-64833, CVE-2026-70628, CVE-2026-75142, CVE-2026-75144, and CVE-2026-75146, could allow attackers to execute arbitrary code or cause denial of service. Users should apply the RHSA-2026:94488 update immediately to mitigate potential exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-03T10:49:20.000Z",
+    "ingestedAt": "2026-11-03T22:43:35.771Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:94488",
     "additionalSources": []
   },
   {
@@ -2162,6 +2322,70 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-867/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-867/",
+    "title": "Cisco Snort RCE via sf_unfold_header OOB Write",
+    "headline": "Cisco Snort RCE via sf_unfold_header OOB Write",
+    "summary": "CVE-2026-20043 exploits an out‑of‑bounds write in Cisco Snort's sf_unfold_header, enabling remote code execution without authentication. The vulnerability carries a CVSS score of 9.8, indicating a critical risk to network intrusion detection systems. Cisco has issued a patch in the latest Snort release; administrators should update immediately to mitigate the exploit.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "ingestedAt": "2026-11-03T22:43:15.783Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-867/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-866/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-866/",
+    "title": "Quest Foglight RCE via renderTemplateString SSTI",
+    "headline": "Quest Foglight RCE via renderTemplateString SSTI",
+    "summary": "CVE-2026-92196 permits remote code execution in Quest Foglight for Databases via a server‑side template injection in renderTemplateString. The flaw requires authentication and has a CVSS score of 7.2, allowing attackers to run arbitrary code on the database server. Quest released a patch in the latest Foglight version; users should upgrade or apply the vendor‑issued fix to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "ingestedAt": "2026-11-03T22:43:15.783Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-866/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-865/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-865/",
+    "title": "Quest Foglight LPE via Incorrect Permission Assignment",
+    "headline": "Quest Foglight LPE via Incorrect Permission Assignment",
+    "summary": "CVE-2026-92200 enables local privilege escalation in Quest Foglight for Databases through incorrect permission assignment. The vulnerability has a CVSS score of 7.8 and requires the attacker to first execute low‑privileged code on the target system. Quest has issued a patch in the current Foglight release; administrators should apply the update to eliminate the privilege escalation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "ingestedAt": "2026-11-03T22:43:15.783Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-865/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-863/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-863/",
+    "title": "Quest Foglight LPE via Hardcoded Encryption Key",
+    "headline": "Quest Foglight LPE via Hardcoded Encryption Key",
+    "summary": "A privilege escalation flaw in Quest Foglight for Databases' EncryptionUtil allows attackers to gain elevated rights on affected installations. The vulnerability stems from a hardcoded encryption key that permits unauthorized code execution, and is rated CVSS 7.8 under CVE-2026-92199. Administrators should apply the vendor's patch or upgrade to a version that removes the hardcoded key to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "ingestedAt": "2026-11-03T22:43:35.771Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-863/",
     "additionalSources": []
   },
   {
@@ -7772,202 +7996,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-android-update_0754174154.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:93045",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93045",
-    "title": "Red Hat Issues Python‑Botocore Patch for CVE‑2026‑98432",
-    "headline": "Red Hat Issues Python‑Botocore Patch for CVE‑2026‑98432",
-    "summary": "Red Hat released a security update for its python‑botocore library, addressing CVE‑2026‑98432, a flaw that could allow remote code execution on OpenStack Platform instances. The vulnerability stems from improper validation of AWS credential files, enabling attackers to run arbitrary commands on affected nodes. Administrators should apply the RHSA‑2026:93044 or RHSA‑2026:93045 patch immediately and review IAM policies to limit credential exposure.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-30T12:13:02.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:93045",
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93044"
-      }
-    ],
-    "cves": [
-      "CVE-2026-98432"
-    ]
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:93046",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93046",
-    "title": "Red Hat OpenStack on OpenShift Patches python-botocore Vulnerability",
-    "headline": "Red Hat OpenStack on OpenShift Patches python-botocore Vulnerability",
-    "summary": "Red Hat released an update for python-botocore addressing CVE-2026-98432 in Red Hat OpenStack Services on OpenShift 18.0 (Antelope). The vulnerability carries an Important security impact rating with a CVSS base score available from the CVE link in the advisory references. Organizations running affected OpenStack components should apply the updated package immediately to mitigate risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-30T12:12:08.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:93046",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:93043",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93043",
-    "title": "Linux kernel RCE CVE-2026-98432",
-    "headline": "Linux kernel RCE CVE-2026-98432",
-    "summary": "CVSSv3 Score: 9.8 CVE-2026-98432:ipv4: free inet_opt and ireq_opt after an RCU grace period tcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the child socket (newinet->inet_opt) without copying it. Note that the SYNACK timer itself is not an issue: it holds a reference on its request socket, and inet_csk_reqsk_queue_drop() calls timer_delete_sync() before the child can be freed. This will be addressed in a separate patch.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-30T12:11:52.000Z",
-    "url": "https://access.redhat.com/errata/RHSA-2026:93043",
-    "additionalSources": [
-      {
-        "source": "Fortinet FortiGuard PSIRT",
-        "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-188"
-      }
-    ],
-    "cves": [
-      "CVE-2026-98432"
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
-    "sourceUrl": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
-    "title": "WordPress Race Condition Enables Unauthenticated Remote Code Execution",
-    "headline": "WordPress Race Condition Enables Unauthenticated Remote Code Execution",
-    "summary": "WordPress hosts a high‑severity unauthenticated race condition that can lead to remote code execution on vulnerable installations. Threat actors are actively attempting to exploit the flaw, but no confirmed in‑the‑wild exploitation has been reported. Site owners should apply the latest security patch and monitor for anomalous activity until a vendor fix is released.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-30T12:04:13.000Z",
-    "url": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "title": "CISA Adds Two Ivanti Vulnerabilities to KEV Catalog",
-    "headline": "CISA Adds Two Ivanti Vulnerabilities to KEV Catalog",
-    "summary": "CISA added two actively exploited Ivanti Connect Secure vulnerabilities, CVE‑2026‑111357 and CVE‑2026‑118527, to its Known Exploited Vulnerabilities catalog. CVE‑2026‑111357 permits unauthenticated access to critical functions, while CVE‑2026‑118527 allows attackers to predict session identifiers, both enabling potential credential theft or session hijacking. Federal agencies must prioritize patching or applying mitigations per BOD 26‑04 to reduce exposure to these high‑risk flaws.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "publishedAt": "2026-10-30T12:00:00.000Z",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
-    "title": "Framework Addresses Remediation Delays for Urgent Security Fixes",
-    "headline": "Framework Addresses Remediation Delays for Urgent Security Fixes",
-    "summary": "Enterprise security teams face operational remediation friction when resolving urgent security alerts across production application environments. Implementation delays occur due to practical availability concerns that configuration changes, IPS protections, or endpoint policies could disrupt legitimate traffic and services. Organizations are advised to implement an 'Observe, Prove, Act, Confirm' operational framework to validate proposed patches before deployment.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-30T11:58:53.000Z",
-    "ingestedAt": "2026-11-01T05:44:02.310Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/data-breaches/2026/10/hackers-steal-and-publish-data-on-41000-homeland-security-workers",
-    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/hackers-steal-and-publish-data-on-41000-homeland-security-workers",
-    "title": "41,000 DHS Staff Records Exposed in Audit Data Breach",
-    "headline": "41,000 DHS Staff Records Exposed in Audit Data Breach",
-    "summary": "A DHS audit data breach exposed 41,000 staff records, including personal identifiers and employment details. The leak resulted from misconfigured audit logs and insufficient access controls, enabling unauthorized extraction of sensitive personnel data. Security teams should review audit configurations, enforce least‑privilege access, apply vendor‑issued patches, and verify compromised accounts to mitigate future exposure.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-30T11:33:12.000Z",
-    "url": "https://www.malwarebytes.com/blog/data-breaches/2026/10/hackers-steal-and-publish-data-on-41000-homeland-security-workers",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/dhs-breach-audit-41-000-leaked-staff-records"
-      }
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/",
-    "title": "Microsoft Resolves VPN Failures From September Updates",
-    "headline": "Microsoft Resolves VPN Failures From September Updates",
-    "summary": "Microsoft releases a fix for Always On VPN connection failures introduced by the September 2026 Windows 11 security updates. The regression disrupted enterprise remote access by breaking tunnel establishment after credential authentication. Administrators should deploy the out-of-band update immediately to restore VPN functionality across affected endpoints.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-30T11:20:26.000Z",
-    "ingestedAt": "2026-11-01T00:46:43.897Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/",
-    "title": "Claude Code Extension Poisoned with SSH Backdoor",
-    "headline": "Claude Code Extension Poisoned with SSH Backdoor",
-    "summary": "Researchers found a tampered build of Anthropic’s Claude Code extension, v2.1.313, on Open VSX that contained a persistent SSH backdoor. The malicious package, absent from Microsoft’s Visual Studio Marketplace, allowed attackers to maintain remote access via the embedded SSH service. Security teams should remove the compromised extension, verify integrity, and monitor for unauthorized SSH connections to prevent lateral movement.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-30T11:15:26.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
-    "sourceUrl": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
-    "title": "Drupal Commerce Core Exploit Targets Online Stores",
-    "headline": "Drupal Commerce Core Exploit Targets Online Stores",
-    "summary": "Drupal Commerce Core access bypass, identified as CVE-2026-118539, is actively exploited against online stores. The flaw permits unauthenticated attackers to place low‑cost orders, causing financial loss and inventory mismanagement. Drupal urges immediate patch deployment and order audit; until then, disable the Commerce module or restrict order creation and verify transaction logs.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-30T11:07:11.000Z",
-    "url": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
-    "title": "Syrian Hacker Sentenced for Fake Tweet Market Manipulation Scheme",
-    "headline": "Syrian Hacker Sentenced for Fake Tweet Market Manipulation Scheme",
-    "summary": "A U.S. federal court sentenced Ahmad Umar Agha, known online as Th3Pr0, to 42 months in prison for orchestrating a hacking conspiracy that targeted Western news outlets via fake tweets. The scheme was organized by members of Bashar al-Assad's inner circle, including commanders of Syria's General Intelligence Directorate.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-30T10:40:45.000Z",
-    "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
-    "title": "Drupal Alerts on Commerce Core Exploit",
-    "headline": "Drupal Alerts on Commerce Core Exploit",
-    "summary": "Drupal warns that the Commerce Core access bypass, CVE-2026-118539, is being exploited in the wild. The vulnerability allows unauthenticated attackers to create low‑cost orders, undermining revenue and inventory integrity. Administrators must apply the latest patch immediately and audit existing orders; disabling the module is a temporary workaround and review transaction logs.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-30T10:16:07.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-critical-commerce-core-flaw-exploited-in-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
-    "sourceUrl": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
-    "title": "$2M+ Funds Stolen from Polymarket Traders",
-    "headline": "$2M+ Funds Stolen from Polymarket Traders",
-    "summary": "Polymarket traders lost over $2 million after a supply‑chain attack hijacked authenticated sessions via a malicious website‑monitoring tool. The attacker leveraged the compromised tool to inject code that redirected users’ funds to external wallets, exploiting Polymarket’s session management weaknesses. Polymarket has issued a security advisory, urging users to change passwords, enable two‑factor authentication, and monitor account activity for unauthorized transfers.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-30T09:41:36.000Z",
-    "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
     "additionalSources": []
   }
 ]

@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 21:09:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 22:44:54 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>European Fridge Attacks Highlight Cold‑Chain Security Risks</title>
+      <link>https://secubuzz.com/news/european-fridge-attacks-highlight-cold-chain-secur-f6aee072</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/european-fridge-attacks-highlight-cold-chain-secur-f6aee072</guid>
+      <description><![CDATA[Recent attacks on European refrigerators exposed vulnerabilities in their internet connectivity and remote access controls. The incidents demonstrate that temperature‑controlled infrastructure, such as industrial refrigeration, can be compromised through inadequate security practices, potentially disrupting critical supply chains. Operators should enforce network segmentation, secure remote access, and regular firmware updates to mitigate these risks.]]></description>
+      <pubDate>Tue, 03 Nov 2026 22:16:49 GMT</pubDate>
+      <source url="https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Germany Seizes Crime‑as‑a‑Service Fraud Platform</title>
+      <link>https://secubuzz.com/news/germany-seizes-crime-as-a-service-fraud-platform-86b772dd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/germany-seizes-crime-as-a-service-fraud-platform-86b772dd</guid>
+      <description><![CDATA[German police, in a multinational operation, dismantled a crime‑as‑a‑service outfit that provided fraudulent trading platforms to investment scammers. The investigation uncovered a network that enabled scammers to create and host deceptive brokerage sites, facilitating large‑scale financial fraud. Authorities seized the infrastructure and are prosecuting the operators, underscoring the threat posed by such service‑based fraud ecosystems.]]></description>
+      <pubDate>Tue, 03 Nov 2026 21:57:12 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CVE-2026-119084: Amazon Redshift JDBC Driver RCE via Class Loading</title>
+      <link>https://secubuzz.com/news/cve-2026-119084-amazon-redshift-jdbc-driver-rce-vi-174b5bcc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119084-amazon-redshift-jdbc-driver-rce-vi-174b5bcc</guid>
+      <description><![CDATA[CVE-2026-119084 allows remote code execution in Amazon Redshift JDBC Driver versions prior to 2.3.0 when parsing JDBC URLs or AWS credential profiles. The flaw lets an attacker load and run arbitrary classes, bypassing authentication and compromising the host. Amazon released driver 2.3.0 and later, which removes the unsafe loading path; teams should upgrade or apply the patch.]]></description>
+      <pubDate>Tue, 03 Nov 2026 21:32:29 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>WorkOS Breach via ARTEX AI Exposes Customer Data</title>
+      <link>https://secubuzz.com/news/workos-breach-via-artex-ai-exposes-customer-data-c386cd67</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/workos-breach-via-artex-ai-exposes-customer-data-c386cd67</guid>
+      <description><![CDATA[WorkOS reported an attacker used the ARTEX AI module to breach its sales app and access business contact records and customer communications. The breach exploited a privilege‑escalation flaw in the AI integration, granting unauthorized read access to sensitive data without authentication. WorkOS applied a patch limiting AI module permissions and advises customers to review access controls and monitor activity.]]></description>
+      <pubDate>Tue, 03 Nov 2026 21:28:44 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Gorbag APT Self‑Deleting Malware Detection Guide</title>
       <link>https://secubuzz.com/news/gorbag-apt-self-deleting-malware-detection-guide-217b96d7</link>
@@ -420,42 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 15:38:20 GMT</pubDate>
       <source url="https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats">Dark Reading</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>LLMjacking Thrives as Cybercriminal Cloud Resale</title>
-      <link>https://secubuzz.com/news/llmjacking-thrives-as-cybercriminal-cloud-resale-29360372</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/llmjacking-thrives-as-cybercriminal-cloud-resale-29360372</guid>
-      <description><![CDATA[The article reports that cybercriminals resell cloud access to large language models, with some victims paying up to $1 million before access was revoked. Attackers exploit stolen or misconfigured API keys to inflate cloud usage, causing significant financial damage. Organizations should enforce strict key‑management controls, monitor usage anomalies, and rotate credentials regularly to counter LLMjacking.]]></description>
-      <pubDate>Tue, 03 Nov 2026 15:35:50 GMT</pubDate>
-      <source url="https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Hijack Emergency Alert Apps in Ukraine and Russia for Fake Nuclear Warnings</title>
-      <link>https://secubuzz.com/news/hackers-hijack-emergency-alert-apps-in-ukraine-and-63a53231</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-emergency-alert-apps-in-ukraine-and-63a53231</guid>
-      <description><![CDATA[Attackers compromised emergency alert applications in Ukraine and Russia to distribute false nuclear strike warnings during wartime operations on November 1-2. The incidents disrupted trusted public safety channels by injecting fabricated radiation and chemical threat alerts. Officials confirmed the breaches did not disable broader warning systems but represented a significant interference with critical communication infrastructure.]]></description>
-      <pubDate>Tue, 03 Nov 2026 15:34:02 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-hijack-emergency-alert-apps/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>cPGuard Update Channel Compromised, Backdoor Deployed</title>
-      <link>https://secubuzz.com/news/cpguard-update-channel-compromised-backdoor-deploy-700611b8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cpguard-update-channel-compromised-backdoor-deploy-700611b8</guid>
-      <description><![CDATA[An attacker hijacked the cPGuard update channel on November 2, delivering a malicious script that installed a backdoor on customers’ Linux servers. The backdoor harvested password hashes and other sensitive files, and the attacker subsequently exfiltrated portions of the collected data. cPGuard released version 5.88.25 and later with a patched update mechanism; users should upgrade immediately and verify update integrity.]]></description>
-      <pubDate>Tue, 03 Nov 2026 15:16:32 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Barracuda Issues Root‑Privilege Vulnerability Alerts</title>
-      <link>https://secubuzz.com/news/barracuda-issues-root-privilege-vulnerability-aler-e7b80cea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-issues-root-privilege-vulnerability-aler-e7b80cea</guid>
-      <description><![CDATA[Barracuda Networks warned that two undisclosed vulnerabilities in its device firmware can grant attackers root‑level command execution. The flaws allow local or remote attackers to bypass authentication and run arbitrary code with full system privileges. Barracuda released firmware patches for affected devices; administrators should apply the updates and enforce strict access controls.]]></description>
-      <pubDate>Tue, 03 Nov 2026 15:06:16 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
