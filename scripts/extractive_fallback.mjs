@@ -98,10 +98,21 @@ export function cleanHtml(raw) {
     .replace(/\s+/g, ' ')
     .trim();
 
-  // Step 4: Clean trailing RSS continuation brackets (e.g. "[...]" in BleepingComputer)
-  text = text.replace(/\s*\[(?:\.\.\.|…|\s)+\]\s*$/g, '');
+  // Step 4: Clean continuation brackets anywhere in text (e.g. "[...]" or "[…]" or "(...)")
+  text = text.replace(/[\[\(](?:\.\.\.|…|\s)+[\]\)]/g, '');
 
-  return text.trim();
+  // Step 5: Convert internal corroboration tags into clean grammatical sentences
+  text = text.replace(
+    /\s*(?:([.?!]))?\s*\((?:Corroborated Threat Intelligence:\s*)?Associated (?:CVE is|CVEs are)\s*([^)]+)\)\.?/gi,
+    (match, punct, cveList) => {
+      const cleanList = cveList.trim();
+      const isPlural = cleanList.includes(',') || cleanList.includes(' and ');
+      const prefix = punct ? `${punct} ` : '. ';
+      return `${prefix}${isPlural ? 'The vulnerabilities are tracked as' : 'The vulnerability is tracked as'} ${cleanList}.`;
+    }
+  );
+
+  return text.replace(/\.{2,}/g, '.').replace(/\s+/g, ' ').trim();
 }
 
 // -----------------------------------------------------------------------------
@@ -637,7 +648,7 @@ export function buildFallbackArticle(candidate, fallbackResult, normaliseUrlFn, 
     ingestedAt,
     isPublishedTimeUnknown,
     isFutureSkew,
-    cves: typeof extractCvesFn === 'function' ? extractCvesFn(`${fallbackResult.headline} ${fallbackResult.summary}`) : [],
+    cves: typeof extractCvesFn === 'function' ? extractCvesFn(`${fallbackResult.headline} ${fallbackResult.summary} ${candidate.description || ''}`) : [],
     additionalSources: [],
     isFallback: true,
   };

@@ -18,6 +18,8 @@
  */
 
 import {
+  cleanHtml,
+  buildFallbackArticle,
   extractFallbackBrief,
   validateExtractiveBrief,
   classifyThreat,
@@ -239,6 +241,41 @@ async function runHardeningSuite() {
   }
 
   // ---------------------------------------------------------------------------
+  // TEST 11: Prompt/Meta-Tag Leakage & Continuation Bracket Sanitization
+  // ---------------------------------------------------------------------------
+  console.log('\n--- TEST 11: Prompt/Meta-Tag Leakage & Continuation Bracket Sanitization ---');
+  {
+    const rawIvantiDesc = 'Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...] (Corroborated Threat Intelligence: Associated CVE is CVE-2026-111357).';
+    const cleaned = cleanHtml(rawIvantiDesc);
+
+    assert(!cleaned.includes('[...]'), 'Continuation bracket [...] completely removed');
+    assert(!cleaned.includes('Corroborated Threat Intelligence'), 'Internal corroboration tag removed from prose');
+    assert(cleaned.includes('The vulnerability is tracked as CVE-2026-111357.'), 'Corroboration converted into natural English prose');
+
+    // Test full extraction and article build
+    const candTitle = 'Ivanti patches two more Connect Secure zero-days chained in attacks';
+    const res = extractFallbackBrief(candTitle, rawIvantiDesc, 'https://example.com/ivanti');
+    assert(res.status === 'ACCEPTED', 'Ivanti fallback brief accepted');
+    assert(res.wordCount >= 28, `Word count meets floor: ${res.wordCount} words`);
+    assert(res.summary.includes('The vulnerability is tracked as CVE-2026-111357.'), 'Clean prose preserved in final summary');
+
+    const article = buildFallbackArticle(
+      { url: 'https://example.com/ivanti', title: candTitle, description: rawIvantiDesc, publishedAt: '2026-11-02T09:33:43.000Z', sourceName: 'BleepingComputer' },
+      res,
+      u => u,
+      text => [...new Set((text.match(/CVE-\d{4}-\d+/gi) || []).map(c => c.toUpperCase()))]
+    );
+    assert(article.cves.includes('CVE-2026-111357'), 'Corroborated CVE retained in article.cves');
+
+    // Plural test
+    const pluralDesc = 'Flaws in Cisco routers allow arbitrary code execution. [...] (Corroborated Threat Intelligence: Associated CVEs are CVE-2026-1001, CVE-2026-1002).';
+    const cleanPlural = cleanHtml(pluralDesc);
+    assert(cleanPlural.includes('The vulnerabilities are tracked as CVE-2026-1001, CVE-2026-1002.'), 'Plural corroboration converted into natural prose');
+
+    passed++;
+  }
+
+  // ---------------------------------------------------------------------------
   // BONUS VERIFICATION: Sentence Density Scoring & Order Preservation
   // ---------------------------------------------------------------------------
   console.log('\n--- BONUS VERIFICATION: Sentence Density Scoring & Document Order ---');
@@ -267,7 +304,7 @@ async function runHardeningSuite() {
   }
 
   console.log('\n========================================================================');
-  console.log(`📊 HARDENING TEST RESULTS: ${passed}/10 MANDATORY REGRESSIONS PASSED`);
+  console.log(`📊 HARDENING TEST RESULTS: ${passed}/11 MANDATORY REGRESSIONS PASSED`);
   console.log('========================================================================\n');
 }
 

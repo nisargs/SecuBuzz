@@ -200,8 +200,24 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
       }
     }
 
+    let summary = (art.summary || '').trim();
+    if (summary.includes('Corroborated Threat Intelligence') || /[\[\(](?:\.\.\.|…|\s)+[\]\)]/.test(summary)) {
+      summary = summary.replace(/[\[\(](?:\.\.\.|…|\s)+[\]\)]/g, '');
+      summary = summary.replace(
+        /\s*(?:([.?!]))?\s*\((?:Corroborated Threat Intelligence:\s*)?Associated (?:CVE is|CVEs are)\s*([^)]+)\)\.?/gi,
+        (match: string, punct: string, cveList: string) => {
+          const cleanList = cveList.trim();
+          const isPlural = cleanList.includes(',') || cleanList.includes(' and ');
+          const prefix = punct ? `${punct} ` : '. ';
+          return `${prefix}${isPlural ? 'The vulnerabilities are tracked as' : 'The vulnerability is tracked as'} ${cleanList}.`;
+        }
+      );
+      summary = summary.replace(/\.{2,}/g, '.').replace(/\s+/g, ' ').trim();
+    }
+
     deduped.push({
       ...art,
+      summary,
       slug,
       aliases,
       additionalSources: Array.isArray(art.additionalSources) ? art.additionalSources : []
