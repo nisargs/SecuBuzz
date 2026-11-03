@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useCallback } from 'react';
 import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { AdvisoryTable } from '../components/AdvisoryTable';
@@ -30,6 +30,20 @@ export function Advisories() {
   const { advisories: catalogAdvisories } = useLiveAdvisories();
   const { news } = useLiveNews();
   const myStack = useMyStack();
+
+  const handleToggleWatchCve = useCallback((cve: string) => {
+    const isPinned = myStack.isWatchingCve(cve);
+    myStack.toggleWatchCve(cve);
+    if (!isPinned) {
+      setStackFilterActive(true);
+      setPage(1);
+    } else {
+      if (myStack.watchedCves.length <= 1 && myStack.selectedVendors.length === 0) {
+        setStackFilterActive(false);
+        setPage(1);
+      }
+    }
+  }, [myStack]);
 
   const advisories = useMemo(() => {
     const existingCves = new Set(catalogAdvisories.map((a) => a.cve.toUpperCase()));
@@ -564,7 +578,7 @@ export function Advisories() {
 
         {results.length > 0 ? (
           <>
-            <AdvisoryTable items={paginatedAdvisories} isWatchingCve={myStack.isWatchingCve} onToggleWatchCve={myStack.toggleWatchCve} />
+            <AdvisoryTable items={paginatedAdvisories} isWatchingCve={myStack.isWatchingCve} onToggleWatchCve={handleToggleWatchCve} />
 
             {totalPages > 1 && (
               <nav aria-label="Pagination" className="mt-8 flex items-center justify-between border-t border-line pt-5">
