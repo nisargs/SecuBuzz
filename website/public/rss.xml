@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 09:45:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 10:44:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Adobe Commerce Zero-Day Enables PSK Agent RAT Deployment</title>
+      <link>https://secubuzz.com/news/adobe-commerce-zero-day-enables-psk-agent-rat-depl-3b9d53a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adobe-commerce-zero-day-enables-psk-agent-rat-depl-3b9d53a7</guid>
+      <description><![CDATA[Attackers exploited the StyleSmuggler flaw in Adobe Commerce and Magento to install the PSK Agent RAT on e‑commerce servers via remote code execution. The CVE‑2026‑75650 vulnerability allows persistent command execution, traffic tunneling, and survives server restarts, presenting a high‑severity remote access threat. Adobe has released an out‑of‑band patch; administrators should apply the update immediately and monitor for unauthorized processes.]]></description>
+      <pubDate>Tue, 03 Nov 2026 10:03:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/adobe-commerce-zero-day/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Gorbag APT Targets Ukrainian Courts with Self‑Deleting Malware</title>
+      <link>https://secubuzz.com/news/gorbag-apt-targets-ukrainian-courts-with-self-dele-1cd007d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gorbag-apt-targets-ukrainian-courts-with-self-dele-1cd007d4</guid>
+      <description><![CDATA[The Gorbag APT group, aligned with Russia, has breached Ukrainian court and city council systems since February 2025 via spearphishing attachments delivering a self‑deleting stealer. The malware exfiltrates credentials and sensitive data before erasing its traces, complicating detection and response. Teams should enforce MFA, monitor outbound traffic, and apply the latest patches to mitigate Gorbag’s tactics.]]></description>
+      <pubDate>Tue, 03 Nov 2026 10:00:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/">Help Net Security</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Cogent Security Highlights PHP2Shell Vulnerability Impact</title>
+      <link>https://secubuzz.com/news/cogent-security-highlights-php2shell-vulnerability-6a9d6960</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cogent-security-highlights-php2shell-vulnerability-6a9d6960</guid>
+      <description><![CDATA[Cogent Security reported that PHP2Shell, disclosed on October 21, exposed two critical flaws that had persisted in PHP for over a decade. The flaws enable remote code execution and privilege escalation, posing a high‑severity risk for web apps using the affected PHP version. Admins should upgrade to the latest PHP release, apply patches, and use AI‑driven monitoring to detect exploitation.]]></description>
+      <pubDate>Tue, 03 Nov 2026 09:59:11 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cogent-security-makes-the-fortune-cyber-60-for-a-second-year-with-a-plan-to-run-cyber-defense-like-a-factory/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>cPGuard Update Channel Hijacked, Backdoor Deployed</title>
+      <link>https://secubuzz.com/news/cpguard-update-channel-hijacked-backdoor-deployed-25db363b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cpguard-update-channel-hijacked-backdoor-deployed-25db363b</guid>
+      <description><![CDATA[An attacker compromised the update channel for cPGuard, a Linux hosting security tool, and pushed a malicious script that installed a backdoor and exfiltrated sensitive files. OPSSHIELD confirmed the attacker retrieved stolen data and advised administrators to upgrade to version 5.88.25 or newer immediately. Security teams should verify update signatures, apply the latest patch, and monitor for unauthorized backdoor activity.]]></description>
+      <pubDate>Tue, 03 Nov 2026 09:53:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cpguard-supply-chain-attack/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>UK Anticipates AI Cyberattacks on Critical Infrastructure by 2028</title>
+      <link>https://secubuzz.com/news/uk-anticipates-ai-cyberattacks-on-critical-infrast-15a1cf1e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-anticipates-ai-cyberattacks-on-critical-infrast-15a1cf1e</guid>
+      <description><![CDATA[UK cyber chief warned that by 2028, state actors like China and Russia will target critical infrastructure with AI attacks. The warning underscores the rise of machine‑learning‑driven intrusion, phishing, and sabotage against essential services. Teams should adopt robust AI‑aware defenses, conduct threat modeling, and coordinate with government agencies for preparedness.]]></description>
+      <pubDate>Tue, 03 Nov 2026 09:49:12 GMT</pubDate>
+      <source url="https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Stolen Cloud Credentials Fuel AI Billing Spikes</title>
+      <link>https://secubuzz.com/news/stolen-cloud-credentials-fuel-ai-billing-spikes-5b583e27</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/stolen-cloud-credentials-fuel-ai-billing-spikes-5b583e27</guid>
+      <description><![CDATA[Criminals compromised corporate cloud accounts to run AI models, generating excessive API requests and billing spikes. The attacks, dubbed LLMJacking, have produced daily charges exceeding $100,000 and cumulative bills up to $1 million, as identified by GTIG and Mandiant. Organizations should enforce strict credential hygiene, enable multi‑factor authentication, and monitor anomalous API usage to mitigate future incidents.]]></description>
+      <pubDate>Tue, 03 Nov 2026 09:39:05 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/llmjacking-stolen-ai-access-cloud-bills/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Google Dismantles XCPE Botnet of 1.3M Android Devices</title>
       <link>https://secubuzz.com/news/google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321</link>
@@ -23,6 +77,15 @@
       <description><![CDATA[An update for libXtst is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
       <pubDate>Tue, 03 Nov 2026 09:03:41 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94449">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>OpenAI Boosts Bug Bounty Payouts to $172,000</title>
+      <link>https://secubuzz.com/news/openai-boosts-bug-bounty-payouts-to-172-000-c78b0629</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-boosts-bug-bounty-payouts-to-172-000-c78b0629</guid>
+      <description><![CDATA[OpenAI has increased its bug bounty program, raising the maximum payout for critical findings to $172,000 and adding bonus incentives for high‑quality reports. The program now offers quadrupled midpoints for medium, high, and critical categories, encouraging researchers to disclose vulnerabilities responsibly. Security teams should review OpenAI’s updated bounty guidelines and ensure their own systems are regularly tested for similar vulnerabilities.]]></description>
+      <pubDate>Tue, 03 Nov 2026 08:58:59 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/openai-bigger-bug-bounty-rewards/">Help Net Security</source>
       <category>General</category>
     </item>
     <item>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 19:54:00 GMT</pubDate>
       <source url="https://therecord.media/michigan-state-university-byod-gang-cyber-incident">The Record</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows</title>
-      <link>https://secubuzz.com/news/cve-2026-120497-stored-cross-site-scripting-in-the-beeb1c33</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-120497-stored-cross-site-scripting-in-the-beeb1c33</guid>
-      <description><![CDATA[We identified CVE-2026-120497, where stored cross-site scripting (XSS) in the HTML report generator in the aidlc-traceability CLI could allow an actor who can modify a project's AI-DLC artifact files to execute arbitrary script in the browser of a user who opens a generated HTML traceability report via crafted artifact titles or descriptions.]]></description>
-      <pubDate>Mon, 02 Nov 2026 19:19:50 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat OpenStack Platform 13 Security Update Resolves Critical Issues</title>
-      <link>https://secubuzz.com/news/red-hat-openstack-platform-13-security-update-reso-3d071354</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-openstack-platform-13-security-update-reso-3d071354</guid>
-      <description><![CDATA[Updated Red Hat OpenStack Platform 13.0 packages resolve multiple security vulnerabilities rated as Important, addressing issues in the OpenStack platform for RHEL 7 environments. Each vulnerability carries a CVSS base score accessible via linked CVE references in the advisory. System administrators should apply these patches immediately to mitigate the disclosed security weaknesses.]]></description>
-      <pubDate>Mon, 02 Nov 2026 19:17:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94039">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Sageworks Outage After Suspected Cyberattack</title>
-      <link>https://secubuzz.com/news/sageworks-outage-after-suspected-cyberattack-c2c17ebc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sageworks-outage-after-suspected-cyberattack-c2c17ebc</guid>
-      <description><![CDATA[Abrigo’s Sageworks risk‑management platform experienced an outage after detecting irregular activity, prompting a temporary shutdown of borrower‑facing services. The incident was attributed to a suspected cyberattack, though no data exfiltration or credential compromise has been confirmed. Abrigo has restored core functionality but is maintaining heightened monitoring and will evaluate the root cause before fully reopening borrower interfaces.]]></description>
-      <pubDate>Mon, 02 Nov 2026 19:00:45 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Bind9.16 Update Addresses Security Flaws</title>
-      <link>https://secubuzz.com/news/bind9-16-update-addresses-security-flaws-550f8eb2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bind9-16-update-addresses-security-flaws-550f8eb2</guid>
-      <description><![CDATA[Red Hat released a security update for bind9.16 on RHEL 8, addressing multiple DNS server vulnerabilities. The update mitigates flaws that could allow attackers to execute code or cause denial of service, as indicated by CVSS scores linked in the advisory. Red Hat recommends applying the patch via standard RHEL update channels; no work‑arounds are provided.]]></description>
-      <pubDate>Mon, 02 Nov 2026 18:59:36 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94011">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:93925: Important: bind security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-93925-important-bind-security-bug-fix-an-b53a47be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93925-important-bind-security-bug-fix-an-b53a47be</guid>
-      <description><![CDATA[An update for bind is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 18:25:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93925">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important Ghostscript Update for RHEL8</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-ghostscript-update-for-rh-f2e94468</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-ghostscript-update-for-rh-f2e94468</guid>
-      <description><![CDATA[Red Hat released an Important security update for Ghostscript on Red Hat Enterprise Linux 8, addressing a critical flaw. The advisory references multiple CVEs with CVSS base scores, indicating a high‑severity vulnerability that could allow remote code execution if exploited. Users should apply the RHSA‑2026:93978 update immediately or upgrade to the latest Ghostscript package to mitigate the risk.]]></description>
-      <pubDate>Mon, 02 Nov 2026 18:18:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93978">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Dismantles 1.3‑Million‑Device Android TV Botnet</title>
-      <link>https://secubuzz.com/news/google-dismantles-1-3-million-device-android-tv-bo-548e3a98</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-1-3-million-device-android-tv-bo-548e3a98</guid>
-      <description><![CDATA[Google and partners dismantled a 1.3‑million‑device Android TV botnet that targeted Videostrong XCPE firmware. The flaw allowed remote code execution and enabled malicious firmware to serve as a command‑and‑control hub for data exfiltration. Google issued a device‑wide removal directive, banned the vendor, and urged security teams to update firmware and monitor for residual signatures.]]></description>
-      <pubDate>Mon, 02 Nov 2026 18:16:34 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

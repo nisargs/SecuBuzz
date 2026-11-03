@@ -11,6 +11,118 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "adobe-commerce-zero-day-enables-psk-agent-rat-depl-3b9d53a7",
+    "title": "Adobe Commerce Zero-Day Enables PSK Agent RAT Deployment",
+    "summary": "Attackers exploited the StyleSmuggler flaw in Adobe Commerce and Magento to install the PSK Agent RAT on e‑commerce servers via remote code execution. The CVE‑2026‑75650 vulnerability allows persistent command execution, traffic tunneling, and survives server restarts, presenting a high‑severity remote access threat. Adobe has released an out‑of‑band patch; administrators should apply the update immediately and monitor for unauthorized processes.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/adobe-commerce-zero-day/",
+    "publishedAt": "2026-11-03T10:03:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-commerce-zero-day-enables-psk-agent-rat-depl",
+      "article-3b9d53a7",
+      "3b9d53a7",
+      "adobe-commerce-zero-day-enables-psk-agent-rat-depl-1411a7",
+      "adobe-commerce-zero-day-enables-psk-agent-rat-deployment"
+    ]
+  },
+  {
+    "slug": "gorbag-apt-targets-ukrainian-courts-with-self-dele-1cd007d4",
+    "title": "Gorbag APT Targets Ukrainian Courts with Self‑Deleting Malware",
+    "summary": "The Gorbag APT group, aligned with Russia, has breached Ukrainian court and city council systems since February 2025 via spearphishing attachments delivering a self‑deleting stealer. The malware exfiltrates credentials and sensitive data before erasing its traces, complicating detection and response. Teams should enforce MFA, monitor outbound traffic, and apply the latest patches to mitigate Gorbag’s tactics.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/",
+    "publishedAt": "2026-11-03T10:00:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gorbag-apt-targets-ukrainian-courts-with-self-dele",
+      "article-1cd007d4",
+      "1cd007d4",
+      "gorbag-apt-targets-ukrainian-courts-with-self-dele-7cf37f",
+      "gorbag-apt-targets-ukrainian-courts-with-self-deleting-malwa"
+    ]
+  },
+  {
+    "slug": "cogent-security-highlights-php2shell-vulnerability-6a9d6960",
+    "title": "Cogent Security Highlights PHP2Shell Vulnerability Impact",
+    "summary": "Cogent Security reported that PHP2Shell, disclosed on October 21, exposed two critical flaws that had persisted in PHP for over a decade. The flaws enable remote code execution and privilege escalation, posing a high‑severity risk for web apps using the affected PHP version. Admins should upgrade to the latest PHP release, apply patches, and use AI‑driven monitoring to detect exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cogent-security-makes-the-fortune-cyber-60-for-a-second-year-with-a-plan-to-run-cyber-defense-like-a-factory/",
+    "publishedAt": "2026-11-03T09:59:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cogent-security-highlights-php2shell-vulnerability",
+      "article-6a9d6960",
+      "6a9d6960",
+      "cogent-security-highlights-php2shell-vulnerability-19b788",
+      "cogent-security-highlights-php2shell-vulnerability-impact"
+    ]
+  },
+  {
+    "slug": "cpguard-update-channel-hijacked-backdoor-deployed-25db363b",
+    "title": "cPGuard Update Channel Hijacked, Backdoor Deployed",
+    "summary": "An attacker compromised the update channel for cPGuard, a Linux hosting security tool, and pushed a malicious script that installed a backdoor and exfiltrated sensitive files. OPSSHIELD confirmed the attacker retrieved stolen data and advised administrators to upgrade to version 5.88.25 or newer immediately. Security teams should verify update signatures, apply the latest patch, and monitor for unauthorized backdoor activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cpguard-supply-chain-attack/",
+    "publishedAt": "2026-11-03T09:53:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cpguard-update-channel-hijacked-backdoor-deployed",
+      "article-25db363b",
+      "25db363b",
+      "cpguard-update-channel-hijacked-backdoor-deployed-7e2df3"
+    ]
+  },
+  {
+    "slug": "uk-anticipates-ai-cyberattacks-on-critical-infrast-15a1cf1e",
+    "title": "UK Anticipates AI Cyberattacks on Critical Infrastructure by 2028",
+    "summary": "UK cyber chief warned that by 2028, state actors like China and Russia will target critical infrastructure with AI attacks. The warning underscores the rise of machine‑learning‑driven intrusion, phishing, and sabotage against essential services. Teams should adopt robust AI‑aware defenses, conduct threat modeling, and coordinate with government agencies for preparedness.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/",
+    "publishedAt": "2026-11-03T09:49:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-anticipates-ai-cyberattacks-on-critical-infrast",
+      "article-15a1cf1e",
+      "15a1cf1e",
+      "uk-anticipates-ai-cyberattacks-on-critical-infrast-7579d0",
+      "uk-anticipates-ai-cyberattacks-on-critical-infrastructure-by"
+    ]
+  },
+  {
+    "slug": "stolen-cloud-credentials-fuel-ai-billing-spikes-5b583e27",
+    "title": "Stolen Cloud Credentials Fuel AI Billing Spikes",
+    "summary": "Criminals compromised corporate cloud accounts to run AI models, generating excessive API requests and billing spikes. The attacks, dubbed LLMJacking, have produced daily charges exceeding $100,000 and cumulative bills up to $1 million, as identified by GTIG and Mandiant. Organizations should enforce strict credential hygiene, enable multi‑factor authentication, and monitor anomalous API usage to mitigate future incidents.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/llmjacking-stolen-ai-access-cloud-bills/",
+    "publishedAt": "2026-11-03T09:39:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "stolen-cloud-credentials-fuel-ai-billing-spikes",
+      "article-5b583e27",
+      "5b583e27",
+      "stolen-cloud-credentials-fuel-ai-billing-spikes-5d4531"
+    ]
+  },
+  {
     "slug": "google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321",
     "title": "Google Dismantles XCPE Botnet of 1.3M Android Devices",
     "summary": "Google dismantled the XCPE botnet that infected 1.3 million Android devices, operated by OEM/ODM Videostrong Technology for financial gain. The botnet used compromised apps to exfiltrate data and deliver malware, but no public exploit or CVE was disclosed. Google removed command‑and‑control servers and pushed device cleanup, and teams should update firmware and enforce stricter app vetting.",
@@ -45,6 +157,24 @@ export const news: NewsBrief[] = [
       "article-5901ed76",
       "5901ed76",
       "rhsa-2026-94449-important-libxtst-security-update-37d8ba"
+    ]
+  },
+  {
+    "slug": "openai-boosts-bug-bounty-payouts-to-172-000-c78b0629",
+    "title": "OpenAI Boosts Bug Bounty Payouts to $172,000",
+    "summary": "OpenAI has increased its bug bounty program, raising the maximum payout for critical findings to $172,000 and adding bonus incentives for high‑quality reports. The program now offers quadrupled midpoints for medium, high, and critical categories, encouraging researchers to disclose vulnerabilities responsibly. Security teams should review OpenAI’s updated bounty guidelines and ensure their own systems are regularly tested for similar vulnerabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/openai-bigger-bug-bounty-rewards/",
+    "publishedAt": "2026-11-03T08:58:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-boosts-bug-bounty-payouts-to-172-000",
+      "article-c78b0629",
+      "c78b0629",
+      "openai-boosts-bug-bounty-payouts-to-172-000-644cbd"
     ]
   },
   {
@@ -1357,22 +1487,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907",
-    "title": "BTCPay Server Hot Wallet Theft on Outdated Instances",
-    "summary": "BTCPay Server users running legacy versions have been targeted for hot wallet thefts by hackers in recent attacks. The flaw allows attackers to exploit unpatched code, draining stored cryptocurrency and compromising user funds. Maintainers urge immediate upgrade to the latest release and recommend disabling hot wallets on older instances to mitigate risk.",
+    "slug": "btcpay-server-hot-wallet-theft-exploited-by-vulner-ae0d7285",
+    "title": "BTCPay Server Hot Wallet Theft Exploited by Vulnerability in Versions 2.4.1 and Earlier",
+    "summary": "BTCPay Server 2.4.1 and earlier users suffered hot wallet theft as attackers exploited a flaw in the open‑source payment platform. The vulnerability stems from insufficient access controls that allow unauthorized transaction signing, draining Bitcoin and Litecoin from hot wallets. Users must upgrade to the latest BTCPay Server release, audit wallet permissions, and enforce strict access policies to mitigate risk.",
     "category": "Vulnerability",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
     "publishedAt": "2026-11-02T15:03:07.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html"
+      }
+    ],
     "aliases": [
-      "btcpay-server-hot-wallet-theft-on-outdated-instanc",
-      "article-c7edb907",
-      "c7edb907",
-      "btcpay-server-hot-wallet-theft-on-outdated-instanc-177321",
-      "btcpay-server-hot-wallet-theft-on-outdated-instances"
+      "btcpay-server-hot-wallet-theft-exploited-by-vulner",
+      "article-ae0d7285",
+      "ae0d7285",
+      "btcpay-server-hot-wallet-theft-exploited-by-vulner-177321",
+      "btcpay-server-hot-wallet-theft-exploited-by-vulnerability-in"
     ]
   },
   {
@@ -9387,142 +9522,6 @@ export const news: NewsBrief[] = [
       "c7202268",
       "cloudflare-ddos-threat-report-2026-q3-more-swarms-7a6550",
       "cloudflare-ddos-threat-report-2026-q3-more-swarms-fewer-gian"
-    ]
-  },
-  {
-    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-c-5aeb6417",
-    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-    "summary": "CISA has added CVE-2026-97229, a GitLab Community and Enterprise Edition integer overflow vulnerability, and CVE-2026-76418, a Cisco Secure Firewall ASA Software unchecked return value flaw, to its Known Exploited Vulnerabilities Catalog based on evidence of active exploitation. Both vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-10-29T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-97229",
-      "CVE-2026-76418"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-two-known-exploited-vulnerabilities-to-c",
-      "article-5aeb6417",
-      "5aeb6417",
-      "cisa-adds-two-known-exploited-vulnerabilities-to-c-2787b0",
-      "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
-    ]
-  },
-  {
-    "slug": "siemens-mendix-saml-module-authentication-bypass-c-def93a10",
-    "title": "Siemens Mendix SAML Module Authentication Bypass CVE",
-    "summary": "Siemens disclosed an authentication bypass in its Mendix SAML module, allowing unauthenticated attackers to replay valid SAML assertions and gain unauthorized access. The flaw, identified as CVE-2026-89209, has a CVSS score of 6.8 and could expose critical manufacturing and IT infrastructure worldwide. Siemens released updated versions for Mendix 9, 10, and 11; users should upgrade immediately to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
-    "publishedAt": "2026-10-29T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-89209"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-mendix-saml-module-authentication-bypass-c",
-      "article-def93a10",
-      "def93a10",
-      "siemens-mendix-saml-module-authentication-bypass-c-41caa1",
-      "siemens-mendix-saml-module-authentication-bypass-cve"
-    ]
-  },
-  {
-    "slug": "hitachi-energy-coretec-os-command-injection-vulner-0418d818",
-    "title": "Hitachi Energy CoreTec OS Command Injection Vulnerability",
-    "summary": "Hitachi Energy’s CoreTec product suffers an OS command injection flaw, CVE‑2026‑13162, triggered by improper neutralization of special elements. The CVSS 8.8 vulnerability allows attackers to run arbitrary commands, threatening confidentiality, integrity, and availability of the energy system. Hitachi recommends applying the vendor firmware update and following the CSAF immediate actions to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
-    "publishedAt": "2026-10-29T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hitachi-energy-coretec-os-command-injection-vulner",
-      "article-0418d818",
-      "0418d818",
-      "hitachi-energy-coretec-os-command-injection-vulner-41caa1",
-      "hitachi-energy-coretec-os-command-injection-vulnerability"
-    ]
-  },
-  {
-    "slug": "hitachi-energy-tro600-rce-vulnerability-62d09793",
-    "title": "Hitachi Energy TRO600 RCE Vulnerability",
-    "summary": "Hitachi Energy’s TRO600 series is vulnerable to a remote code execution flaw, CVE‑2026‑10756, caused by missing authentication for critical functions. The CVSS 7.5 vulnerability permits attackers to execute arbitrary code and disclose sensitive information, potentially compromising the energy control infrastructure. Security teams should apply the vendor‑issued firmware patch and enforce endpoint communication restrictions as outlined in the CSAF actions.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
-    "publishedAt": "2026-10-29T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hitachi-energy-tro600-rce-vulnerability",
-      "article-62d09793",
-      "62d09793",
-      "hitachi-energy-tro600-rce-vulnerability-41caa1"
-    ]
-  },
-  {
-    "slug": "telegram-android-code-execution-via-voice-call-dac65abd",
-    "title": "Telegram Android Code Execution via Voice Call",
-    "summary": "A flaw in Telegram for Android allows attackers to execute code on a victim’s phone when the user answers a voice call, requiring only a standard Telegram account. The vulnerability, present in all versions prior to 12.10.4, was disclosed by NebuSec and linked to CVE-2026-118610. Telegram released a patch in version 12.10.4; users should update immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
-    "publishedAt": "2026-10-29T11:39:18.000Z",
-    "cves": [
-      "CVE-2026-118610"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "telegram-android-code-execution-via-voice-call",
-      "article-dac65abd",
-      "dac65abd",
-      "telegram-android-code-execution-via-voice-call-52f55d"
-    ]
-  },
-  {
-    "slug": "ai-transforming-security-operations-centers-e8940606",
-    "title": "AI Transforming Security Operations Centers",
-    "summary": "Artificial intelligence is increasingly automating core security analyst tasks such as alert investigation, evidence collection, activity correlation, and response execution. As these capabilities mature, SOCs will reorganize workflows and roles to integrate AI-driven processes. The trend signals a shift toward more efficient, technology‑centric security operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html",
-    "publishedAt": "2026-10-29T11:33:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-transforming-security-operations-centers",
-      "article-e8940606",
-      "e8940606",
-      "ai-transforming-security-operations-centers-7dae87"
-    ]
-  },
-  {
-    "slug": "26-400-cloud-credentials-exposed-on-gitee-cfff15ab",
-    "title": "26,400 Cloud Credentials Exposed on Gitee",
-    "summary": "A researcher uncovered 26,400 active cloud and AI service credentials embedded in public Gitee repositories, allowing unauthorized access to cloud resources. The credentials were valid when tested, exposing developers’ accounts to potential exploitation. Users should immediately rotate exposed keys and enforce secret management best practices.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html",
-    "publishedAt": "2026-10-29T11:33:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "26-400-cloud-credentials-exposed-on-gitee",
-      "article-cfff15ab",
-      "cfff15ab",
-      "26-400-cloud-credentials-exposed-on-gitee-4624a7"
     ]
   }
 ];
