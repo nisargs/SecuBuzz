@@ -224,7 +224,7 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
     });
   }
 
-  return deduped.slice(0, 350);
+  return deduped.slice(0, 500);
 }
 
 let cachedArticles: ArticleItem[] | null = null;
