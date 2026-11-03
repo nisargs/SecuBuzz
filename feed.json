@@ -103,6 +103,22 @@
     "isFallback": true
   },
   {
+    "id": "https://www.wiz.io/blog/green-agent-agentic-remediation",
+    "sourceUrl": "https://www.wiz.io/blog/green-agent-agentic-remediation",
+    "title": "Wiz Green Agent Speeds Critical Risk Resolution",
+    "headline": "Wiz Green Agent Speeds Critical Risk Resolution",
+    "summary": "Wiz Green Agent, an agentic remediation tool, deployed by Fireblocks, Rogo, and project44 to address cross-team blockers in critical risk resolution. The platform automates remediation workflows, reducing manual coordination overhead and accelerating mean-time-to-remediate for high-severity findings. Organizations can adopt similar agentic approaches to streamline vulnerability management and eliminate operational bottlenecks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "publishedAt": "2026-11-03T13:00:00.000Z",
+    "ingestedAt": "2026-11-03T15:19:44.033Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.wiz.io/blog/green-agent-agentic-remediation",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/",
     "title": "AI Agents Accelerate China‑Linked Espionage Attacks",
@@ -252,6 +268,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-8959-1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-8964-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8964-1",
+    "title": "Ubuntu Patches Linux Kernel SCSI NFS Flaws",
+    "headline": "Ubuntu Patches Linux Kernel SCSI NFS Flaws",
+    "summary": "Ubuntu released USN-8964-1 patching Linux kernel vulnerabilities in SCSI and NFS subsystems allowing system compromise. The flaws, CVE-2022-49082 and CVE-2025-39730, permit memory corruption or privilege escalation via local or network file share access. Administrators must apply kernel updates via standard Ubuntu channels to mitigate exploitation risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-03T11:02:41.000Z",
+    "ingestedAt": "2026-11-03T15:19:44.033Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-8964-1",
     "additionalSources": []
   },
   {
@@ -7816,32 +7848,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://blog.talosintelligence.com/a-quiet-week-in-infosec/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/state-of-ad-fraud-2026-52-of-schemes-use-ai-as-cloaking-loses-ground-to-ios-exploits-and-messenger-phishing/",
-    "sourceUrl": "https://cybersecuritynews.com/state-of-ad-fraud-2026-52-of-schemes-use-ai-as-cloaking-loses-ground-to-ios-exploits-and-messenger-phishing/",
-    "title": "Ad Fraud Report Shows AI Cloaking Declines, iOS Exploits Rise",
-    "headline": "Ad Fraud Report Shows AI Cloaking Declines, iOS Exploits Rise",
-    "summary": "The State of Ad Fraud 2026 report reveals that 52% of schemes use AI as cloaking, yet iOS exploits and Messenger phishing are gaining traction. Analysis covers 1.2 million campaigns across eight platforms, highlighting shifting tactics in malicious advertising. Stakeholders should review platform safeguards and update verification processes accordingly.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-29T17:26:36.000Z",
-    "url": "https://cybersecuritynews.com/state-of-ad-fraud-2026-52-of-schemes-use-ai-as-cloaking-loses-ground-to-ios-exploits-and-messenger-phishing/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8958-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8958-1",
-    "title": "Ubuntu patches .NET Blazor and Brotli vulnerabilities",
-    "headline": "Ubuntu patches .NET Blazor and Brotli vulnerabilities",
-    "summary": "USN-8958-1 fixes multiple .NET vulnerabilities affecting dotnet10 and dotnet11. CVE-2026-102870 addresses improper escaping in the Blazor WebAssembly debug proxy allowing arbitrary code execution. CVE-2026-111497 fixes Brotli decompression library issues causing denial of service or arbitrary code execution. CVE-2026-114148 addresses improper file ownership handling enabling local privilege escalation.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-10-29T17:02:55.000Z",
-    "url": "https://ubuntu.com/security/notices/USN-8958-1",
     "additionalSources": []
   }
 ]

@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 14:47:23 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 15:21:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Novee puts forgotten internet-facing assets through penetration testing</title>
@@ -59,6 +59,15 @@
       <description><![CDATA[A security researcher has found a way to run any command with root rights on the navigation unit in a 2014 Renault Latitude. The unit is a TomTom Carminat LIVE head unit that runs a custom system built on Linux 2.6.28.10.]]></description>
       <pubDate>Tue, 03 Nov 2026 13:10:24 GMT</pubDate>
       <source url="https://cybersecuritynews.com/renault-cars/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Wiz Green Agent Speeds Critical Risk Resolution</title>
+      <link>https://secubuzz.com/news/wiz-green-agent-speeds-critical-risk-resolution-82ba4250</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wiz-green-agent-speeds-critical-risk-resolution-82ba4250</guid>
+      <description><![CDATA[Wiz Green Agent, an agentic remediation tool, deployed by Fireblocks, Rogo, and project44 to address cross-team blockers in critical risk resolution. The platform automates remediation workflows, reducing manual coordination overhead and accelerating mean-time-to-remediate for high-severity findings. Organizations can adopt similar agentic approaches to streamline vulnerability management and eliminate operational bottlenecks.]]></description>
+      <pubDate>Tue, 03 Nov 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/green-agent-agentic-remediation">Wiz Research</source>
       <category>General</category>
     </item>
     <item>
@@ -141,6 +150,15 @@
       <pubDate>Tue, 03 Nov 2026 11:03:44 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8959-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ubuntu Patches Linux Kernel SCSI NFS Flaws</title>
+      <link>https://secubuzz.com/news/ubuntu-patches-linux-kernel-scsi-nfs-flaws-ce91eeae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-linux-kernel-scsi-nfs-flaws-ce91eeae</guid>
+      <description><![CDATA[Ubuntu released USN-8964-1 patching Linux kernel vulnerabilities in SCSI and NFS subsystems allowing system compromise. The flaws, CVE-2022-49082 and CVE-2025-39730, permit memory corruption or privilege escalation via local or network file share access. Administrators must apply kernel updates via standard Ubuntu channels to mitigate exploitation risk.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:02:41 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8964-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Gorbag Exploits WinRAR Flaw for Data Theft</title>
@@ -438,24 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 05:34:41 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>CryptoPayment Plugin Vulnerability Enables Remote File Deletion</title>
-      <link>https://secubuzz.com/news/cryptopayment-plugin-vulnerability-enables-remote-384f31b0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cryptopayment-plugin-vulnerability-enables-remote-384f31b0</guid>
-      <description><![CDATA[Threat actors target an unpatched flaw in the CryptoPayment Gateway WordPress plugin, enabling unauthenticated remote file deletion. The vulnerability, CVE-2026-81648, scores CVSS 10.0 and could allow attackers to remove arbitrary files and exfiltrate wallet credentials. Site owners should apply the vendor patch immediately and restrict plugin access to authenticated users.]]></description>
-      <pubDate>Tue, 03 Nov 2026 05:34:37 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/attackers-target-unpatched.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Fireperf Released as Open-Source Firewall Testing Tool</title>
-      <link>https://secubuzz.com/news/fireperf-released-as-open-source-firewall-testing-cd77d728</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fireperf-released-as-open-source-firewall-testing-cd77d728</guid>
-      <description><![CDATA[The IPFire project has launched fireperf, an open‑source measurement tool that opens connections at a fixed rate to evaluate firewall and router performance. Fireperf mimics iperf3 by reporting per‑connection actions, allowing administrators to assess stateful device behavior under sustained traffic. The tool is free software, suitable for developers, testers, and network engineers seeking to benchmark firewall throughput and latency.]]></description>
-      <pubDate>Tue, 03 Nov 2026 05:30:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/fireperf-open-source-network-testing-tool/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
