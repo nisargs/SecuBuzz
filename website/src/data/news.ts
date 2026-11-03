@@ -11,6 +11,101 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "pipewire-update-addresses-moderate-security-flaw-i-2fe8608c",
+    "title": "Pipewire Update Addresses Moderate Security Flaw in RHEL 9.6",
+    "summary": "A moderate update for Pipewire on Red Hat Enterprise Linux 9.6 EUS addresses a vulnerability in the multimedia framework. The flaw permits unauthorized manipulation of audio and video streams, potentially enabling privilege escalation or denial of service, and is rated moderate by Red Hat Product Security. Red Hat recommends applying the RHSA‑2026:94437 update immediately; no additional workarounds are required.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94437",
+    "publishedAt": "2026-11-03T08:33:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pipewire-update-addresses-moderate-security-flaw-i",
+      "article-2fe8608c",
+      "2fe8608c",
+      "pipewire-update-addresses-moderate-security-flaw-i-37d8ba",
+      "pipewire-update-addresses-moderate-security-flaw-in-rhel-9-6"
+    ]
+  },
+  {
+    "slug": "gnutls-update-mitigates-moderate-vulnerability-in-8eb72348",
+    "title": "Gnutls Update Mitigates Moderate Vulnerability in RHEL 6",
+    "summary": "A moderate update for Gnutls on Red Hat Enterprise Linux 6 EXTENSION addresses a vulnerability in the TLS library. The flaw allows unauthorized manipulation of cryptographic parameters, potentially enabling downgrade attacks or denial of service, and is rated moderate by Red Hat Product Security. Red Hat recommends applying the RHSA‑2026:94442 update immediately; no additional workarounds are required.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94442",
+    "publishedAt": "2026-11-03T08:26:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gnutls-update-mitigates-moderate-vulnerability-in",
+      "article-8eb72348",
+      "8eb72348",
+      "gnutls-update-mitigates-moderate-vulnerability-in-37d8ba",
+      "gnutls-update-mitigates-moderate-vulnerability-in-rhel-6"
+    ]
+  },
+  {
+    "slug": "supermarket-fridge-controllers-targeted-in-europea-a35c838e",
+    "title": "Supermarket Fridge Controllers Targeted in European IoT Attacks",
+    "summary": "Attackers tampered with internet‑exposed refrigeration controllers at over 100 European supermarkets, targeting IoT devices in Belgium, Sweden, and Ireland. The exploitation enabled unauthorized control of temperature settings, potentially compromising food safety and inventory, and was facilitated by a known firmware vulnerability. Supermarkets should apply vendor firmware updates immediately and restrict network access to refrigeration systems to mitigate further compromise.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/over-100-european-stores-hit-as-supermarket-fridge-attacks-resume/",
+    "publishedAt": "2026-11-03T07:43:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "supermarket-fridge-controllers-targeted-in-europea",
+      "article-a35c838e",
+      "a35c838e",
+      "supermarket-fridge-controllers-targeted-in-europea-64e68a",
+      "supermarket-fridge-controllers-targeted-in-european-iot-atta"
+    ]
+  },
+  {
+    "slug": "synology-ransomware-exploits-patched-dsm-vulnerabi-79b25dd4",
+    "title": "Synology Ransomware Exploits Patched DSM Vulnerability",
+    "summary": "Synology reports ransomware attacks targeting NAS devices that exploit a vulnerability patched in December 2024. Attackers leveraged the flaw to encrypt data on outdated DSM versions, demanding ransom payments from affected customers, and disabling backup functionality. Synology urges users to update DSM immediately; no additional mitigations are necessary beyond the patch, and backups should be verified.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
+    "publishedAt": "2026-11-03T07:43:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "synology-ransomware-exploits-patched-dsm-vulnerabi",
+      "article-79b25dd4",
+      "79b25dd4",
+      "synology-ransomware-exploits-patched-dsm-vulnerabi-3f59d6",
+      "synology-ransomware-exploits-patched-dsm-vulnerability"
+    ]
+  },
+  {
+    "slug": "europe-supermarkets-hit-by-refrigeration-cyberatta-6b367a70",
+    "title": "Europe Supermarkets Hit by Refrigeration Cyberattacks",
+    "summary": "Attackers remotely altered refrigeration control settings at supermarkets in Belgium, Sweden, Estonia, and other European countries, warming fridges and freezers overnight. The flaw in Danfoss controllers allowed unauthenticated remote configuration changes, causing food spoilage and inventory losses. Danfoss issued a firmware update and recommends disabling remote access until the patch is applied to prevent further disruptions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
+    "publishedAt": "2026-11-03T07:27:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "europe-supermarkets-hit-by-refrigeration-cyberatta",
+      "article-6b367a70",
+      "6b367a70",
+      "europe-supermarkets-hit-by-refrigeration-cyberatta-263d71",
+      "europe-supermarkets-hit-by-refrigeration-cyberattacks"
+    ]
+  },
+  {
     "slug": "human-hackers-outperform-ai-in-business-logic-asse-f8d053d9",
     "title": "Human Hackers Outperform AI in Business Logic Assessment",
     "summary": "Kara Sprague, HackerOne CEO, said AI finds bugs fast, but humans better assess business impact and prioritize. She noted medium‑severity findings often pay less, and AI‑assisted reports need human triage to filter spam and ensure relevance. HackerOne blends AI detection with human judgment to enhance security outcomes and reward alignment.",
@@ -9426,103 +9521,6 @@ export const news: NewsBrief[] = [
       "e82905c9",
       "amatera-infostealer-analysis-spread-and-operation-4c2069",
       "amatera-infostealer-analysis-spread-and-operation-methods"
-    ]
-  },
-  {
-    "slug": "warp-panda-exploits-cve-2026-41709-on-vmware-esx-9d60cceb",
-    "title": "Warp Panda Exploits CVE-2026-41709 on VMware ESX",
-    "summary": "Warp Panda weaponized CVE-2026-41709, a zero‑day flaw in Broadcom VMware ESX, to obscure audit trails in U.S. legal sector attacks. The vulnerability permits manipulation or deletion of system logs, enabling stealthy persistence, and has been confirmed active in the wild. CISA catalogued the flaw in its KEV list; VMware issued a patch, and teams should apply the update.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
-    "publishedAt": "2026-10-29T06:22:33.000Z",
-    "cves": [
-      "CVE-2026-41709"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "warp-panda-exploits-cve-2026-41709-on-vmware-esx",
-      "article-9d60cceb",
-      "9d60cceb",
-      "warp-panda-exploits-cve-2026-41709-on-vmware-esx-3c537f"
-    ]
-  },
-  {
-    "slug": "deploy-local-ghidra-server-for-malware-analysis-la-947d1c8f",
-    "title": "Deploy Local Ghidra Server for Malware Analysis Lab",
-    "summary": "Building a malware analysis lab benefits from a local Ghidra server and virtualization snapshots. Snapshots enable clean investigations, but VM changes vanish unless data is stored externally, so analysts must preserve critical artifacts outside the VM. Teams should deploy a dedicated Ghidra server, manage snapshots, and back up artifacts to external storage to preserve integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33470",
-    "publishedAt": "2026-10-29T06:17:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deploy-local-ghidra-server-for-malware-analysis-la",
-      "article-947d1c8f",
-      "947d1c8f",
-      "deploy-local-ghidra-server-for-malware-analysis-la-57dd7e",
-      "deploy-local-ghidra-server-for-malware-analysis-lab"
-    ]
-  },
-  {
-    "slug": "palo-alto-management-interfaces-targeted-via-explo-d9e69f4a",
-    "title": "Palo Alto Management Interfaces Targeted via Exploited PHP2Shell",
-    "summary": "Threat actors are actively exploiting recently patched PHP2Shell vulnerabilities against publicly accessible Palo Alto Networks management interfaces. Tracked as CVE-2026-111497, the security flaw allows attackers targeting exposed network interfaces to compromise perimeter security systems. Palo Alto Networks strongly advises network security administrators to restrict interface exposure and immediately apply the issued security patches.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
-    "publishedAt": "2026-10-29T05:50:17.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "palo-alto-management-interfaces-targeted-via-explo",
-      "article-d9e69f4a",
-      "d9e69f4a",
-      "palo-alto-management-interfaces-targeted-via-explo-5efa60",
-      "palo-alto-management-interfaces-targeted-via-exploited-php2s"
-    ]
-  },
-  {
-    "slug": "vapor-panda-deploys-ai-driven-artex-for-espionage-2fe61e19",
-    "title": "VAPOR PANDA Deploys AI‑Driven ARTEX for Espionage",
-    "summary": "VAPOR PANDA, a threat actor, is using the AI‑driven ARTEX framework to expand a global espionage campaign. ARTEX automates data exfiltration and obfuscation, enabling large‑scale credential theft and surveillance across multiple industries, though no confirmed breaches are reported. Security teams should monitor for ARTEX signatures, enforce strict access controls, and deploy AI‑based detection to mitigate potential espionage.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vapor-panda-deploys-ai-driven-artex-for-espionage",
-      "article-2fe61e19",
-      "2fe61e19",
-      "vapor-panda-deploys-ai-driven-artex-for-espionage-33d641"
-    ]
-  },
-  {
-    "slug": "prompt-injection-techniques-enable-agent-planning-b934d3c0",
-    "title": "Prompt Injection Techniques Enable Agent‑Planning Attacks",
-    "summary": "New prompt injection methods now allow attackers to manipulate AI agents into planning and executing malicious actions. These techniques bypass input sanitization, enabling instruction injection that can lead to data access or violations, though no widespread exploitation has been reported. Defenders should update AI platform safeguards, enforce strict prompt validation, and monitor for anomalous agent behavior to mitigate potential attacks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/new-prompt-injection-techniques-cover-agent-planning-attacks/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "prompt-injection-techniques-enable-agent-planning",
-      "article-b934d3c0",
-      "b934d3c0",
-      "prompt-injection-techniques-enable-agent-planning-57196e",
-      "prompt-injection-techniques-enable-agent-planning-attacks"
     ]
   }
 ];
