@@ -11,21 +11,120 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "police-seize-100-servers-in-scam-crackdown-11b48a48",
-    "title": "Police Seize 100+ Servers in Scam Crackdown",
-    "summary": "European law enforcement seized more than 100 servers linked to an unnamed company suspected of hosting fraudulent trading sites for criminal gangs. The operation targeted infrastructure that facilitated money‑laundering and market manipulation, exposing sensitive financial data and undermining market integrity. Authorities arrested seven suspects and seized the servers, disrupting the scam network and preventing further illicit trading activity.",
+    "slug": "novee-puts-forgotten-internet-facing-assets-throug-a6d4771e",
+    "title": "Novee puts forgotten internet-facing assets through penetration testing",
+    "summary": "Novee’s External Surface Testing is a new capability in its AI penetration testing platform that helps security teams discover internet-facing assets and validate exploitable vulnerabilities. It tests newly disclosed CVEs and findings imported from third-party external attack surface management (EASM) tools. “Attackers don’t limit themselves to the applications you’re already testing.",
     "category": "General",
-    "severity": "LOW",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/novee-external-surface-testing/",
+    "publishedAt": "2026-11-03T14:00:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "novee-puts-forgotten-internet-facing-assets-throug",
+      "article-a6d4771e",
+      "a6d4771e",
+      "novee-puts-forgotten-internet-facing-assets-throug-744519",
+      "novee-puts-forgotten-internet-facing-assets-through-penetrat"
+    ]
+  },
+  {
+    "slug": "3am-ransomware-hits-uk-school-estate-8aa1b577",
+    "title": "3AM Ransomware Hits UK School Estate",
+    "summary": "A 3AM ransomware affiliate targeted a UK school estate, encrypting about 37 of nearly 50 machines accessed from an unmanaged host. The attack leveraged an unpatched remote execution flaw in the host’s management software, enabling credential theft and lateral movement across the network. Administrators should apply the vendor’s latest patch, enforce least‑privilege access, and isolate backups to prevent further spread.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
+    "publishedAt": "2026-11-03T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "3am-ransomware-hits-uk-school-estate",
+      "article-8aa1b577",
+      "8aa1b577",
+      "3am-ransomware-hits-uk-school-estate-634a83"
+    ]
+  },
+  {
+    "slug": "3am-affiliate-uses-ai-like-loops-in-school-attack-0bf1865c",
+    "title": "3AM Affiliate Uses AI‑Like Loops in School Attack",
+    "summary": "Investigators found a 3AM ransomware affiliate used an AI‑like model to generate and refine attack commands during a breach of a European school network. The model’s iterative loops enabled real‑time payload adaptation, yet researchers found no evidence of full automation. Teams should monitor command logs, enforce privilege limits, and apply current ransomware defenses.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
+    "publishedAt": "2026-11-03T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "3am-affiliate-uses-ai-like-loops-in-school-attack",
+      "article-0bf1865c",
+      "0bf1865c",
+      "3am-affiliate-uses-ai-like-loops-in-school-attack-464267"
+    ]
+  },
+  {
+    "slug": "russia-linked-spies-target-ukrainian-war-crimes-da-4e03054c",
+    "title": "Russia-Linked Spies Target Ukrainian War Crimes Data",
+    "summary": "Russian‑linked actors deployed simple malware to exfiltrate sensitive documents and login credentials from Ukrainian war‑crimes investigators and military aid entities. The attacks relied on credential theft rather than a zero‑day flaw, limiting impact to compromised accounts and confidential records. Teams should enforce MFA, monitor anomalous logins, and apply vendor patches to prevent further exfiltration.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russia-linked-cyber-spies-target-ukraine-war-support",
+    "publishedAt": "2026-11-03T13:39:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russia-linked-spies-target-ukrainian-war-crimes-da",
+      "article-4e03054c",
+      "4e03054c",
+      "russia-linked-spies-target-ukrainian-war-crimes-da-25e6be",
+      "russia-linked-spies-target-ukrainian-war-crimes-data"
+    ]
+  },
+  {
+    "slug": "police-seize-100-servers-in-european-investment-fr-e35b024b",
+    "title": "Police Seize 100+ Servers in European Investment Fraud Crackdown",
+    "summary": "European authorities conducted a coordinated operation that seized more than 100 servers used by a fraudulent investment network targeting online trading platform users. The sites prevented victims from withdrawing profits, defrauding them of over four million euros and exposing sensitive financial data. Police arrested seven suspects and dismantled the infrastructure, ending the scam and protecting market integrity.",
+    "category": "General",
+    "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
     "publishedAt": "2026-11-03T13:33:49.000Z",
     "cves": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/investment-fraud-network-servers-seized/"
+      }
+    ],
+    "aliases": [
+      "police-seize-100-servers-in-european-investment-fr",
+      "article-e35b024b",
+      "e35b024b",
+      "police-seize-100-servers-in-european-investment-fr-1658c5",
+      "police-seize-100-servers-in-european-investment-fraud-crackd"
+    ]
+  },
+  {
+    "slug": "renault-car-s-15-year-old-linux-navigation-softwar-4b21261a",
+    "title": "Renault Car’s 15-Year-Old Linux Navigation Software Hacked to Execute Arbitrary Root Commands",
+    "summary": "A security researcher has found a way to run any command with root rights on the navigation unit in a 2014 Renault Latitude. The unit is a TomTom Carminat LIVE head unit that runs a custom system built on Linux 2.6.28.10.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/renault-cars/",
+    "publishedAt": "2026-11-03T13:10:24.000Z",
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "police-seize-100-servers-in-scam-crackdown",
-      "article-11b48a48",
-      "11b48a48",
-      "police-seize-100-servers-in-scam-crackdown-1658c5"
+      "renault-car-s-15-year-old-linux-navigation-softwar",
+      "article-4b21261a",
+      "4b21261a",
+      "renault-car-s-15-year-old-linux-navigation-softwar-44ed41",
+      "renault-car-s-15-year-old-linux-navigation-software-hacked-t"
     ]
   },
   {
@@ -132,6 +231,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-discovers-vulnerabilities-in-legal-systems-d9484d0b",
+    "title": "AI Discovers Vulnerabilities in Legal Systems",
+    "summary": "The article argues that advanced AI can identify logical flaws in legal texts, treating statutes as code susceptible to exploitation. These vulnerabilities arise from ambiguous language or inconsistent provisions, allowing AI‑driven analysis to surface potential loopholes that courts may overlook. The piece calls for legal scholars to adopt formal verification techniques and for lawmakers to review statutes for machine‑readable consistency.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
+    "publishedAt": "2026-11-03T12:01:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-discovers-vulnerabilities-in-legal-systems",
+      "article-d9484d0b",
+      "d9484d0b",
+      "ai-discovers-vulnerabilities-in-legal-systems-7af64a"
+    ]
+  },
+  {
+    "slug": "revolve-card-data-stolen-1-5-million-affected-37f2effe",
+    "title": "Revolve Card Data Stolen, 1.5 Million Affected",
+    "summary": "Revolve reported that attackers accessed and exfiltrated stored card details from its payment platform, potentially compromising up to 1.5 million users. The breach involved credential theft and data‑stealing malware, but no evidence of active exploitation of a zero‑day vulnerability was disclosed. Users should monitor statements, change passwords, and enable two‑factor authentication, while Revolve has issued a patch and security advisory.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/revolve-card-breach-1-5-million-people-may-be-affected",
+    "publishedAt": "2026-11-03T11:26:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "revolve-card-data-stolen-1-5-million-affected",
+      "article-37f2effe",
+      "37f2effe",
+      "revolve-card-data-stolen-1-5-million-affected-743409"
+    ]
+  },
+  {
     "slug": "exposure-prioritization-framework-explained-36cbb380",
     "title": "Exposure Prioritization Framework Explained",
     "summary": "The report explains how organizations prioritize vulnerability remediation, noting that most exposures are treated as urgent despite low exploitation rates. Gartner data shows fewer than 10% of vulnerabilities are actually exploited, yet teams focus on low‑risk exposures, leaving higher‑risk ones unaddressed. Adopting the four‑element framework aligns remediation effort with true risk, improving resource allocation and reducing breach exposure.",
@@ -166,6 +301,24 @@ export const news: NewsBrief[] = [
       "78ae618d",
       "linux-kernel-subsystems-vulnerabilities-patching-u-7fbd59",
       "linux-kernel-subsystems-vulnerabilities-patching-update"
+    ]
+  },
+  {
+    "slug": "gorbag-exploits-winrar-flaw-for-data-theft-d7ba2ddb",
+    "title": "Gorbag Exploits WinRAR Flaw for Data Theft",
+    "summary": "Gorbag exploited a WinRAR flaw to deploy simple information‑stealing malware against Ukrainian law enforcement, justice, and defense entities. The vulnerability enabled arbitrary code execution via a crafted archive, but no zero‑day status was confirmed, limiting the attack to a known flaw. Teams should patch WinRAR to the latest release and monitor for suspicious archive extraction.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
+    "publishedAt": "2026-11-03T11:00:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gorbag-exploits-winrar-flaw-for-data-theft",
+      "article-d7ba2ddb",
+      "d7ba2ddb",
+      "gorbag-exploits-winrar-flaw-for-data-theft-bb3727"
     ]
   },
   {
@@ -9377,166 +9530,6 @@ export const news: NewsBrief[] = [
       "e049046e",
       "ubuntu-patches-net-blazor-and-brotli-vulnerabiliti-7fbd5c",
       "ubuntu-patches-net-blazor-and-brotli-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "apple-releases-xcode-27-2-update-cc34ede3",
-    "title": "Apple Releases Xcode 27.2 Update",
-    "summary": "Apple released Xcode 27.2 (27B52) update for developers via the Apple Developer portal. Release notes list bug fixes, performance improvements, and no security vulnerabilities are disclosed in the current release. Security teams should review the notes, verify compatibility with existing toolchains, and monitor for any post‑release issues that may affect build pipelines.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=10292026a",
-    "publishedAt": "2026-10-29T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-xcode-27-2-update",
-      "article-cc34ede3",
-      "cc34ede3",
-      "apple-releases-xcode-27-2-update-72e60f"
-    ]
-  },
-  {
-    "slug": "aws-private-ca-connector-authorization-flaw-enable-5dc6d510",
-    "title": "AWS Private CA Connector authorization flaw enables cert issuance",
-    "summary": "CVE-2026-119115 is an incorrect authorization issue in issuer resolution within AWS Private CA Connector for Kubernetes. An authenticated user with namespace-scoped approval policy could obtain certificates signed by a cluster-scoped issuer they are not authorized to use. Affected versions include aws-privateca-issuer before v1.10.1 and the EKS add-on before v1.10.1-eksbuild.1.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/",
-    "publishedAt": "2026-10-29T16:45:45.000Z",
-    "cves": [
-      "CVE-2026-119115"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-private-ca-connector-authorization-flaw-enable",
-      "article-5dc6d510",
-      "5dc6d510",
-      "aws-private-ca-connector-authorization-flaw-enable-54acae",
-      "aws-private-ca-connector-authorization-flaw-enables-cert-iss"
-    ]
-  },
-  {
-    "slug": "opencode-user-faces-harassment-following-ai-loopho-77cf8b47",
-    "title": "OpenCode User Faces Harassment Following AI Loophole Disclosure",
-    "summary": "An OpenCode user experienced online harassment on a now-deleted GitHub thread after disclosing a free AI usage loophole. The incident stems from the reporter detailing a logic flaw that permitted unauthorized, unbilled access to artificial intelligence processing models. GitHub thread administrators subsequently removed the hostile community discussion to mitigate targeted harassment against the reporting individual.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/opencode-free-usage-bypass",
-    "publishedAt": "2026-10-29T16:20:11.979Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "opencode-user-faces-harassment-following-ai-loopho",
-      "article-77cf8b47",
-      "77cf8b47",
-      "opencode-user-faces-harassment-following-ai-loopho-22e2c2",
-      "opencode-user-faces-harassment-following-ai-loophole-disclos"
-    ]
-  },
-  {
-    "slug": "microsoft-recognized-as-enterprise-endpoint-securi-d7a270ec",
-    "title": "Microsoft Recognized as Enterprise Endpoint Security Leader by IDC",
-    "summary": "Research firm IDC named Microsoft as a Leader in the 2026 IDC MarketScape assessment for enterprise modern endpoint security solutions. The vendor assessment evaluates Microsoft enterprise endpoint security product capabilities and market positioning across modern corporate infrastructure environments. Organizations evaluating endpoint protection tools can review the published IDC report details regarding Microsoft security platform performance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/",
-    "publishedAt": "2026-10-29T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-recognized-as-enterprise-endpoint-securi",
-      "article-d7a270ec",
-      "d7a270ec",
-      "microsoft-recognized-as-enterprise-endpoint-securi-4afcb4",
-      "microsoft-recognized-as-enterprise-endpoint-security-leader-"
-    ]
-  },
-  {
-    "slug": "microsoft-tracks-ai-adoption-by-north-korean-threa-08648ac9",
-    "title": "Microsoft Tracks AI Adoption by North Korean Threat Actors",
-    "summary": "Microsoft Threat Intelligence identified North Korean nation-state threat actors incorporating artificial intelligence tools into their operational attack chains. Cyber espionage groups leverage artificial intelligence technology to accelerate attack execution speeds and increase operational efficiency across target environments. Security teams should analyze adversary tradecraft shifts, implement advanced threat hunting telemetry, and enforce strict monitoring around corporate artificial intelligence usage.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
-    "publishedAt": "2026-10-29T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-tracks-ai-adoption-by-north-korean-threa",
-      "article-08648ac9",
-      "08648ac9",
-      "microsoft-tracks-ai-adoption-by-north-korean-threa-47996f",
-      "microsoft-tracks-ai-adoption-by-north-korean-threat-actors"
-    ]
-  },
-  {
-    "slug": "four-question-white-board-threat-modeling-ad54bac2",
-    "title": "Four‑Question White‑Board Threat Modeling",
-    "summary": "CISOs can employ a concise four‑question exercise to construct threat models directly on a white board. The method emphasizes cost‑effective analysis, requiring minimal resources while still identifying critical attack vectors and potential mitigations. Adopting this white‑board approach streamlines risk assessment, supports strategic security planning, and reduces the need for expensive tooling.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/threat-modeling-4-simple-questions",
-    "publishedAt": "2026-10-29T15:44:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "four-question-white-board-threat-modeling",
-      "article-ad54bac2",
-      "ad54bac2",
-      "four-question-white-board-threat-modeling-5d78e7"
-    ]
-  },
-  {
-    "slug": "google-launches-chrome-beta-158-for-ios-acc7920d",
-    "title": "Google Launches Chrome Beta 158 for iOS",
-    "summary": "Google released Chrome Beta 158 (158.0.8127.4) for iOS, slated for App Store availability soon. The update includes a partial list of changes documented in the Git log, but no security patches are highlighted. Users and security teams should monitor the release notes, report any new issues via the bug‑tracking system, and verify compatibility with existing iOS deployments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-beta-for-ios-update_01177603964.html",
-    "publishedAt": "2026-10-29T15:28:32.899Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-launches-chrome-beta-158-for-ios",
-      "article-acc7920d",
-      "acc7920d",
-      "google-launches-chrome-beta-158-for-ios-51d3f3"
-    ]
-  },
-  {
-    "slug": "yoba-malware-campaign-uses-fake-ai-apps-to-deploy-ce4960fb",
-    "title": "Yoba Malware Campaign Uses Fake AI Apps to Deploy Cryptocurrency Miners on Windows",
-    "summary": "Hackers leveraged signed ChatGPT and Claude apps to distribute Yoba malware, targeting Windows users via counterfeit AI downloads. The campaign used legitimate signing certificates and GitHub-hosted libraries to embed a stealthy cryptocurrency miner, bypassing app store checks. Security teams should revoke compromised certificates, block distribution channels, verify AI app authenticity, and monitor CPU usage for mining activity.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
-    "publishedAt": "2026-10-29T15:20:29.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/fake-chatgpt-and-claude-apps-abuse-signed-executables-t"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-abuse-signed-chatgpt/"
-      }
-    ],
-    "aliases": [
-      "yoba-malware-campaign-uses-fake-ai-apps-to-deploy",
-      "article-ce4960fb",
-      "ce4960fb",
-      "yoba-malware-campaign-uses-fake-ai-apps-to-deploy-61c787",
-      "yoba-malware-campaign-uses-fake-ai-apps-to-deploy-cryptocurr"
     ]
   }
 ];

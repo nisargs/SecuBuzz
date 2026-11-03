@@ -5,15 +5,60 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 13:45:22 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 14:47:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Police Seize 100+ Servers in Scam Crackdown</title>
-      <link>https://secubuzz.com/news/police-seize-100-servers-in-scam-crackdown-11b48a48</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/police-seize-100-servers-in-scam-crackdown-11b48a48</guid>
-      <description><![CDATA[European law enforcement seized more than 100 servers linked to an unnamed company suspected of hosting fraudulent trading sites for criminal gangs. The operation targeted infrastructure that facilitated money‑laundering and market manipulation, exposing sensitive financial data and undermining market integrity. Authorities arrested seven suspects and seized the servers, disrupting the scam network and preventing further illicit trading activity.]]></description>
+      <title>Novee puts forgotten internet-facing assets through penetration testing</title>
+      <link>https://secubuzz.com/news/novee-puts-forgotten-internet-facing-assets-throug-a6d4771e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/novee-puts-forgotten-internet-facing-assets-throug-a6d4771e</guid>
+      <description><![CDATA[Novee’s External Surface Testing is a new capability in its AI penetration testing platform that helps security teams discover internet-facing assets and validate exploitable vulnerabilities. It tests newly disclosed CVEs and findings imported from third-party external attack surface management (EASM) tools. “Attackers don’t limit themselves to the applications you’re already testing.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:00:26 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/novee-external-surface-testing/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>3AM Ransomware Hits UK School Estate</title>
+      <link>https://secubuzz.com/news/3am-ransomware-hits-uk-school-estate-8aa1b577</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/3am-ransomware-hits-uk-school-estate-8aa1b577</guid>
+      <description><![CDATA[A 3AM ransomware affiliate targeted a UK school estate, encrypting about 37 of nearly 50 machines accessed from an unmanaged host. The attack leveraged an unpatched remote execution flaw in the host’s management software, enabling credential theft and lateral movement across the network. Administrators should apply the vendor’s latest patch, enforce least‑privilege access, and isolate backups to prevent further spread.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/">BleepingComputer</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>3AM Affiliate Uses AI‑Like Loops in School Attack</title>
+      <link>https://secubuzz.com/news/3am-affiliate-uses-ai-like-loops-in-school-attack-0bf1865c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/3am-affiliate-uses-ai-like-loops-in-school-attack-0bf1865c</guid>
+      <description><![CDATA[Investigators found a 3AM ransomware affiliate used an AI‑like model to generate and refine attack commands during a breach of a European school network. The model’s iterative loops enabled real‑time payload adaptation, yet researchers found no evidence of full automation. Teams should monitor command logs, enforce privilege limits, and apply current ransomware defenses.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack">Dark Reading</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Russia-Linked Spies Target Ukrainian War Crimes Data</title>
+      <link>https://secubuzz.com/news/russia-linked-spies-target-ukrainian-war-crimes-da-4e03054c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russia-linked-spies-target-ukrainian-war-crimes-da-4e03054c</guid>
+      <description><![CDATA[Russian‑linked actors deployed simple malware to exfiltrate sensitive documents and login credentials from Ukrainian war‑crimes investigators and military aid entities. The attacks relied on credential theft rather than a zero‑day flaw, limiting impact to compromised accounts and confidential records. Teams should enforce MFA, monitor anomalous logins, and apply vendor patches to prevent further exfiltration.]]></description>
+      <pubDate>Tue, 03 Nov 2026 13:39:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-linked-cyber-spies-target-ukraine-war-support">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Police Seize 100+ Servers in European Investment Fraud Crackdown</title>
+      <link>https://secubuzz.com/news/police-seize-100-servers-in-european-investment-fr-e35b024b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/police-seize-100-servers-in-european-investment-fr-e35b024b</guid>
+      <description><![CDATA[European authorities conducted a coordinated operation that seized more than 100 servers used by a fraudulent investment network targeting online trading platform users. The sites prevented victims from withdrawing profits, defrauding them of over four million euros and exposing sensitive financial data. Police arrested seven suspects and dismantled the infrastructure, ending the scam and protecting market integrity.]]></description>
       <pubDate>Tue, 03 Nov 2026 13:33:49 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Renault Car’s 15-Year-Old Linux Navigation Software Hacked to Execute Arbitrary Root Commands</title>
+      <link>https://secubuzz.com/news/renault-car-s-15-year-old-linux-navigation-softwar-4b21261a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/renault-car-s-15-year-old-linux-navigation-softwar-4b21261a</guid>
+      <description><![CDATA[A security researcher has found a way to run any command with root rights on the navigation unit in a 2014 Renault Latitude. The unit is a TomTom Carminat LIVE head unit that runs a custom system built on Linux 2.6.28.10.]]></description>
+      <pubDate>Tue, 03 Nov 2026 13:10:24 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/renault-cars/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -62,6 +107,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>AI Discovers Vulnerabilities in Legal Systems</title>
+      <link>https://secubuzz.com/news/ai-discovers-vulnerabilities-in-legal-systems-d9484d0b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-discovers-vulnerabilities-in-legal-systems-d9484d0b</guid>
+      <description><![CDATA[The article argues that advanced AI can identify logical flaws in legal texts, treating statutes as code susceptible to exploitation. These vulnerabilities arise from ambiguous language or inconsistent provisions, allowing AI‑driven analysis to surface potential loopholes that courts may overlook. The piece calls for legal scholars to adopt formal verification techniques and for lawmakers to review statutes for machine‑readable consistency.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:01:00 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html">Schneier on Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Revolve Card Data Stolen, 1.5 Million Affected</title>
+      <link>https://secubuzz.com/news/revolve-card-data-stolen-1-5-million-affected-37f2effe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/revolve-card-data-stolen-1-5-million-affected-37f2effe</guid>
+      <description><![CDATA[Revolve reported that attackers accessed and exfiltrated stored card details from its payment platform, potentially compromising up to 1.5 million users. The breach involved credential theft and data‑stealing malware, but no evidence of active exploitation of a zero‑day vulnerability was disclosed. Users should monitor statements, change passwords, and enable two‑factor authentication, while Revolve has issued a patch and security advisory.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:26:44 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/revolve-card-breach-1-5-million-people-may-be-affected">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Exposure Prioritization Framework Explained</title>
       <link>https://secubuzz.com/news/exposure-prioritization-framework-explained-36cbb380</link>
       <guid isPermaLink="true">https://secubuzz.com/news/exposure-prioritization-framework-explained-36cbb380</guid>
@@ -77,6 +140,15 @@
       <description><![CDATA[Linux kernel subsystems like USB gadget drivers and memory management contain flaws that could let attackers compromise a system. Improper device input handling and memory allocation could allow privilege escalation or denial of service. Ubuntu released a kernel update patching all affected subsystems; administrators should apply it promptly to mitigate the risk.]]></description>
       <pubDate>Tue, 03 Nov 2026 11:03:44 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8959-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Gorbag Exploits WinRAR Flaw for Data Theft</title>
+      <link>https://secubuzz.com/news/gorbag-exploits-winrar-flaw-for-data-theft-d7ba2ddb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gorbag-exploits-winrar-flaw-for-data-theft-d7ba2ddb</guid>
+      <description><![CDATA[Gorbag exploited a WinRAR flaw to deploy simple information‑stealing malware against Ukrainian law enforcement, justice, and defense entities. The vulnerability enabled arbitrary code execution via a crafted archive, but no zero‑day status was confirmed, limiting the attack to a known flaw. Teams should patch WinRAR to the latest release and monitor for suspicious archive extraction.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:00:45 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -384,78 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 05:30:59 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/03/fireperf-open-source-network-testing-tool/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>OpenAI Initiates Security Sprint with External Researchers</title>
-      <link>https://secubuzz.com/news/openai-initiates-security-sprint-with-external-res-fe8b1526</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-initiates-security-sprint-with-external-res-fe8b1526</guid>
-      <description><![CDATA[OpenAI announced a new security sprint on November 2, inviting external researchers to collaborate with internal teams on vulnerability discovery and remediation. The program partners with Cathedral Systems and offers increased bug bounty rewards to incentivize reporting of serious flaws across OpenAI’s platforms. Security teams should monitor the sprint’s findings and apply patches promptly to maintain platform integrity.]]></description>
-      <pubDate>Tue, 03 Nov 2026 05:17:26 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/openai-security-sprint/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cybersecurity Architect Jobs Open in Portugal</title>
-      <link>https://secubuzz.com/news/cybersecurity-architect-jobs-open-in-portugal-695c947a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-architect-jobs-open-in-portugal-695c947a</guid>
-      <description><![CDATA[Planck Technologies is recruiting a Cyber Security Architect in Portugal to design security architectures for telecom, platform, and cloud environments. The role requires defining frameworks, assessing risks, conducting threat modeling, and embedding security into deployments while maintaining documentation. Candidates should have experience with governance, transformation projects, and technical reviews to support customer workshops.]]></description>
-      <pubDate>Tue, 03 Nov 2026 05:00:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/cybersecurity-jobs-available-right-now-november-3-2026/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Anthropic Adds EDR Monitoring to Claude Cowork</title>
-      <link>https://secubuzz.com/news/anthropic-adds-edr-monitoring-to-claude-cowork-0bd9b67a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-adds-edr-monitoring-to-claude-cowork-0bd9b67a</guid>
-      <description><![CDATA[Anthropic introduced a beta integration that allows businesses to run endpoint detection and response sensors inside Claude Cowork’s local virtual machine. The feature addresses a monitoring gap where security software cannot see shell commands and code executed within Cowork’s isolated environment. Security teams can now forward Cowork activity to existing EDR solutions, enhancing visibility of hidden AI agent operations.]]></description>
-      <pubDate>Tue, 03 Nov 2026 04:18:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/anthropic-enables-edr-monitoring/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Bind9.18 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-bind9-18-security-update-5e50442b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-bind9-18-security-update-5e50442b</guid>
-      <description><![CDATA[Red Hat released a security update for bind9.18 on RHEL 9.6 EUS, addressing multiple vulnerabilities. The update mitigates bugs identified by Red Hat Product Security, with CVSS base scores available via CVE links, though no specific CVE IDs are named. Security teams should apply the bind9.18 update immediately to eliminate the identified flaws.]]></description>
-      <pubDate>Tue, 03 Nov 2026 03:58:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94278">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Bind9.16 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-bind9-16-security-update-5cce6130</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-bind9-16-security-update-5cce6130</guid>
-      <description><![CDATA[Red Hat released a security update for bind9.16 on RHEL 8.6 AMCS and EUS Long‑Life Add‑On, addressing multiple vulnerabilities. The update contains fixes with CVSS base scores linked via CVE references, though no individual CVE identifiers are specified. Apply the bind9.16 patch promptly to close the identified critical security gaps.]]></description>
-      <pubDate>Tue, 03 Nov 2026 03:54:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94277">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>WorkOS Breach Exposes Customer Slack Data via ARTEX AI</title>
-      <link>https://secubuzz.com/news/workos-breach-exposes-customer-slack-data-via-arte-1bec1a93</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/workos-breach-exposes-customer-slack-data-via-arte-1bec1a93</guid>
-      <description><![CDATA[Hackers leveraged the ARTEX AI framework to breach WorkOS's sales application, exposing customer contact information and Slack conversation records. The incident, detected on October 30, 2026, involved reconnaissance and exploitation attempts, but no evidence of credential theft or ransomware was reported. WorkOS issued a security bulletin on November 2 and recommends applying the patch and strengthening monitoring for unauthorized access.]]></description>
-      <pubDate>Tue, 03 Nov 2026 03:43:36 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/workos-data-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>ISC Stormcast Broadcast Scheduled for Nov 3, 2026</title>
-      <link>https://secubuzz.com/news/isc-stormcast-broadcast-scheduled-for-nov-3-2026-38cd315b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-broadcast-scheduled-for-nov-3-2026-38cd315b</guid>
-      <description><![CDATA[ISC releases its weekly Stormcast briefing for Tuesday, November 3, 2026, covering the latest threat landscape and incident responses. The session will review recent high-profile exploits, emerging malware trends, and defensive best practices for security teams. Listeners can stream the podcast via the ISC website or download the episode for offline review.]]></description>
-      <pubDate>Tue, 03 Nov 2026 02:00:02 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33484">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Bind Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-1e96ff18</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-bind-security-update-1e96ff18</guid>
-      <description><![CDATA[Red Hat issued a security update for the BIND DNS server on Enterprise Linux 10.0 Extended Update Support. The patch addresses multiple vulnerabilities with CVSS scores detailed in the referenced CVE links, mitigating potential remote code execution and denial‑of‑service risks. Administrators should apply the RHSA‑2026:94115 update promptly to secure DNS operations.]]></description>
-      <pubDate>Tue, 03 Nov 2026 01:25:02 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94115">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
