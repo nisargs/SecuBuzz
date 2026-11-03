@@ -3876,5 +3876,18 @@
   "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
   "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
   "https://access.redhat.com/errata/RHSA-2026:94490",
-  "https://ubuntu.com/security/notices/USN-8969-1"
+  "https://ubuntu.com/security/notices/USN-8969-1",
+  "https://www.sentinelone.com/blog/stopping-node2shell-sentinelone-protects-customers-from-brotli-based-RCE/",
+  "https://socket.dev/blog/hardening-github-actions-against-outside-threats",
+  "https://cybernewsai.com/blog/harvard-university-data-breach-exposed-info-of-851-000",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-152-aws/",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-167-aws/",
+  "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+  "https://ubuntu.com/security/notices/USN-8994-1",
+  "https://ubuntu.com/security/notices/USN-8993-1",
+  "https://access.redhat.com/errata/RHSA-2026:92286",
+  "https://access.redhat.com/errata/RHSA-2026:94567",
+  "https://access.redhat.com/errata/RHSA-2026:94482",
+  "https://ubuntu.com/security/notices/USN-8984-1",
+  "https://ubuntu.com/security/notices/USN-8985-1"
 ]

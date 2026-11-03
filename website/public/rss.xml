@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 18:46:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 19:46:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Harvard Exposes 851,000 Emails in Breach</title>
+      <link>https://secubuzz.com/news/harvard-exposes-851-000-emails-in-breach-9b7ceb07</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/harvard-exposes-851-000-emails-in-breach-9b7ceb07</guid>
+      <description><![CDATA[A breach at Harvard exposed 851,000 email addresses, compromising user credentials and potentially enabling phishing attacks. The incident involved unauthorized access to the university’s audit database, revealing sensitive contact information and internal email addresses. Security teams should review root‑cause telemetry, deploy detection rules, and apply patches immediately to prevent further exposure and mitigate credential theft.]]></description>
+      <pubDate>Tue, 03 Nov 2026 19:50:00 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/harvard-university-data-breach-exposed-info-of-851-000">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>AWS OAuth Audience Validation Bypass CVE-2026-115413</title>
+      <link>https://secubuzz.com/news/aws-oauth-audience-validation-bypass-cve-2026-1154-c45c948e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-oauth-audience-validation-bypass-cve-2026-1154-c45c948e</guid>
+      <description><![CDATA[AWS discovered a flaw in the MCP Server OAuth that bypasses token audience validation, allowing misuse of tokens issued for other services. CVE-2026-115413 enables attackers to gain unauthorized access to protected resources by manipulating the audience claim in a valid token. AWS has issued a patch; administrators should update the MCP Server and enforce strict audience checks to prevent exploitation.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:58:52 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-152-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>AWS Amplify XSS in maplibre-gl-js-amplify Popup Rendering CVE-2026-121652</title>
+      <link>https://secubuzz.com/news/aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re-e1d9033d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re-e1d9033d</guid>
+      <description><![CDATA[AWS identified a stored cross‑site scripting flaw in the Amplify maplibre‑gl‑js‑amplify library that affects popup and geofence‑control rendering. The vulnerability, CVE-2026-121652, allows attackers to inject malicious scripts into map popups, potentially stealing user data or hijacking sessions. AWS recommends updating to the latest library version and sanitizing user input in popup content to mitigate the XSS risk.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:54:53 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-167-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>CVE-2026-119922 - Babelfish for PostgreSQL Privilege Escalation</title>
       <link>https://secubuzz.com/news/cve-2026-119922-babelfish-for-postgresql-privilege-6e897223</link>
@@ -15,6 +42,15 @@
       <pubDate>Tue, 03 Nov 2026 18:26:54 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-165-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Chainstack Breach Exposes Customer Data and Password Hashes</title>
+      <link>https://secubuzz.com/news/chainstack-breach-exposes-customer-data-and-passwo-5790daba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chainstack-breach-exposes-customer-data-and-passwo-5790daba</guid>
+      <description><![CDATA[Chainstack, a blockchain infrastructure provider, suffered a breach that granted an unauthorized party access to parts of its production systems. The intrusion is linked to a large‑scale AI‑powered attack campaign, potentially allowing exfiltration of customer data and password hashes. Chainstack has disclosed the incident, is investigating, patching vulnerabilities, and notifying affected customers.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:16:19 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/chainstack-reports-production-systems.html">The Hacker News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>RHSA-2026:94629: Important: dpdk security update</title>
@@ -44,6 +80,51 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Secure GitHub Actions Against Supply Chain Threats</title>
+      <link>https://secubuzz.com/news/secure-github-actions-against-supply-chain-threats-0ac64a7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/secure-github-actions-against-supply-chain-threats-0ac64a7d</guid>
+      <description><![CDATA[This guide tackles supply‑chain threats to GitHub Actions, covering malicious pull requests, credential theft, dependency risks, and release pipeline vulnerabilities. It explains how insecure workflow configurations and unverified third‑party actions enable attackers to inject malicious code or exfiltrate secrets. The article recommends restricting workflow permissions, using signed actions, scanning dependencies, and monitoring pipeline activity to mitigate risks.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:41:44 GMT</pubDate>
+      <source url="https://socket.dev/blog/hardening-github-actions-against-outside-threats">Socket.dev</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Ubuntu libvips Vulnerabilities Exploit Integer Overflows</title>
+      <link>https://secubuzz.com/news/ubuntu-libvips-vulnerabilities-exploit-integer-ove-7579da09</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-libvips-vulnerabilities-exploit-integer-ove-7579da09</guid>
+      <description><![CDATA[Ubuntu users face multiple libvips vulnerabilities that allow attackers to exploit integer overflows during PDF and GIF processing. CVE-2025-59933 and CVE-2026-33327 trigger crashes or potential arbitrary code execution on affected Ubuntu releases, with CVSS scores indicating high severity. Canonical recommends applying the latest libvips updates via package manager or installing the security patches released in USN-8994-1.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:39:43 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8994-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>SOGo Vulnerability Enables Password Reset Token Theft</title>
+      <link>https://secubuzz.com/news/sogo-vulnerability-enables-password-reset-token-th-6b28e205</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sogo-vulnerability-enables-password-reset-token-th-6b28e205</guid>
+      <description><![CDATA[SOGo, an open‑source groupware server, contains a flaw that uses client‑supplied Origin headers in password reset link construction. A remote attacker can exploit this to harvest password reset tokens and hijack user accounts, potentially compromising sensitive data. Administrators should update to the latest SOGo release or apply the security patch provided in USN-8993-1 to mitigate the risk.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:38:49 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8993-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-8985-1: Net::EasyTCP vulnerability</title>
+      <link>https://secubuzz.com/news/usn-8985-1-net-easytcp-vulnerability-6d448c3f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-8985-1-net-easytcp-vulnerability-6d448c3f</guid>
+      <description><![CDATA[It was discovered that Net::EasyTCP used the built-in Perl rand() function to generate encryption keys when no strong randomization module was present. An attacker could possibly use this issue to predict the keys and obtain sensitive information.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:36:13 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8985-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-8984-1: jabberd2 vulnerability</title>
+      <link>https://secubuzz.com/news/usn-8984-1-jabberd2-vulnerability-841bcc94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-8984-1-jabberd2-vulnerability-841bcc94</guid>
+      <description><![CDATA[It was discovered that jabberd2 allowed SASL ANONYMOUS authentication even when it was not enabled in the configuration. A remote attacker could possibly use this issue to bypass authentication.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:35:55 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8984-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Trojanized Inno Installers Deliver Monetization Payloads</title>
       <link>https://secubuzz.com/news/trojanized-inno-installers-deliver-monetization-pa-605b70fb</link>
       <guid isPermaLink="true">https://secubuzz.com/news/trojanized-inno-installers-deliver-monetization-pa-605b70fb</guid>
@@ -69,6 +150,15 @@
       <pubDate>Tue, 03 Nov 2026 17:05:12 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Email+Gateway+SQL+Injection+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues OpenShift 4.21.41 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-openshift-4-21-41-security-update-b6f5b2a1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openshift-4-21-41-security-update-b6f5b2a1</guid>
+      <description><![CDATA[Red Hat released OpenShift Container Platform 4.21.41, addressing several security issues affecting the platform. CVE-2026-43871, identified in the release, poses a high‑severity risk that could allow unauthorized access or privilege escalation within container workloads. Users should upgrade to the 4.21.41 image or apply the patch immediately to mitigate the vulnerability.]]></description>
+      <pubDate>Tue, 03 Nov 2026 16:58:13 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:92286">Red Hat Security Advisories</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Binance Discloses $6.43 Billion Theft via Social Engineering and Tampered Homebrew</title>
@@ -215,6 +305,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>RHSA-2026:94567: Important: libXtst security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-94567-important-libxtst-security-update-a67dab1c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94567-important-libxtst-security-update-a67dab1c</guid>
+      <description><![CDATA[An update for libXtst is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:53:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94567">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>USN-8973-1: libmspack vulnerability</title>
       <link>https://secubuzz.com/news/usn-8973-1-libmspack-vulnerability-5f9e846e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/usn-8973-1-libmspack-vulnerability-5f9e846e</guid>
@@ -357,105 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 13:33:49 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/">BleepingComputer</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Renault Car’s 15-Year-Old Linux Navigation Software Hacked to Execute Arbitrary Root Commands</title>
-      <link>https://secubuzz.com/news/renault-car-s-15-year-old-linux-navigation-softwar-4b21261a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/renault-car-s-15-year-old-linux-navigation-softwar-4b21261a</guid>
-      <description><![CDATA[A security researcher has found a way to run any command with root rights on the navigation unit in a 2014 Renault Latitude. The unit is a TomTom Carminat LIVE head unit that runs a custom system built on Linux 2.6.28.10.]]></description>
-      <pubDate>Tue, 03 Nov 2026 13:10:24 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/renault-cars/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Wiz Green Agent Speeds Critical Risk Resolution</title>
-      <link>https://secubuzz.com/news/wiz-green-agent-speeds-critical-risk-resolution-82ba4250</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-green-agent-speeds-critical-risk-resolution-82ba4250</guid>
-      <description><![CDATA[Wiz Green Agent, an agentic remediation tool, deployed by Fireblocks, Rogo, and project44 to address cross-team blockers in critical risk resolution. The platform automates remediation workflows, reducing manual coordination overhead and accelerating mean-time-to-remediate for high-severity findings. Organizations can adopt similar agentic approaches to streamline vulnerability management and eliminate operational bottlenecks.]]></description>
-      <pubDate>Tue, 03 Nov 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/green-agent-agentic-remediation">Wiz Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical Kernel Patch for CVE‑2026‑64832</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-patch-for-cve-202-7e418930</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kernel-patch-for-cve-202-7e418930</guid>
-      <description><![CDATA[Red Hat issued a kernel update for RHEL 10.0 Extended Update Support to address CVE‑2026‑64832, a critical security flaw. The vulnerability is a kernel‑level bug that could allow unauthenticated attackers to gain elevated privileges, with a CVSS base score indicating critical impact. Red Hat has released the patch; administrators should apply the update immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:39:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94508">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Agents Accelerate China‑Linked Espionage Attacks</title>
-      <link>https://secubuzz.com/news/ai-agents-accelerate-china-linked-espionage-attack-575023df</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-accelerate-china-linked-espionage-attack-575023df</guid>
-      <description><![CDATA[A China‑linked espionage group deployed AI agents to compromise over 200 organizations in 11 days, according to CrowdStrike. The attackers leveraged large language models to autonomously select commands, enabling rapid, low‑interaction phishing and credential‑stealing campaigns across diverse sectors. Security teams should enforce multi‑factor authentication, monitor for anomalous credential usage, and deploy AI‑driven threat detection to mitigate automated attack vectors.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:31:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/">Help Net Security</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Microsoft Study Links 78% of Exploits to System Takeover</title>
-      <link>https://secubuzz.com/news/microsoft-study-links-78-of-exploits-to-system-tak-5fb80576</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-study-links-78-of-exploits-to-system-tak-5fb80576</guid>
-      <description><![CDATA[Microsoft’s research identifies that 78% of real-world exploits target vulnerabilities enabling system takeover or privilege escalation. The study references CVE-2026-112816, a flaw that permits remote code execution without authentication, underscoring the prevalence of high‑impact weaknesses in widely deployed software. Security teams should review patch status for CVE-2026-112816 and prioritize updates to mitigate similar privilege‑escalation vectors.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:31:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Critical Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-critical-update-e05ca4e6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-critical-update-e05ca4e6</guid>
-      <description><![CDATA[Red Hat released a critical kernel update for Enterprise Linux 9.2 SAP, fixing vulnerabilities that could enable privilege escalation. The patch addresses CVE‑2026‑43871, a flaw rated critical by Red Hat, with no known active exploitation. Apply the update immediately; no workarounds exist, and monitor kernel activity for anomalies in all environments.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:29:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94477">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Android November 2026 Update Fixes 200+ Vulnerabilities</title>
-      <link>https://secubuzz.com/news/android-november-2026-update-fixes-200-vulnerabili-92d171cf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/android-november-2026-update-fixes-200-vulnerabili-92d171cf</guid>
-      <description><![CDATA[Android’s November 2026 update patches over 200 flaws, including a critical framework bug that allows remote code execution without user interaction. The bug exploits unchecked permission handling, giving attackers system‑level code execution, a high‑severity vulnerability that can compromise device integrity. Install the update immediately and verify framework component patching to block exploitation.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:21:49 GMT</pubDate>
-      <source url="https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Node-RED Authentication Flaw (CVE-2026-58115) Used to Deploy Linux Bots and Backdoors</title>
-      <link>https://secubuzz.com/news/node-red-authentication-flaw-cve-2026-58115-used-t-5a30be60</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-red-authentication-flaw-cve-2026-58115-used-t-5a30be60</guid>
-      <description><![CDATA[Attackers exploited Node‑RED’s authentication flaw (CVE‑2026‑58115) to gain remote code execution on unprotected industrial control servers. The flaw allowed attackers to deploy Linux bots and webshells, enabling arbitrary command execution and persistent backdoors. Node‑RED released a patch; users must update immediately and restrict flow editor access to mitigate the threat.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:10:19 GMT</pubDate>
-      <source url="https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Leakers$ Hijack Billboard Software to Display Porn</title>
-      <link>https://secubuzz.com/news/leakers-hijack-billboard-software-to-display-porn-869233ee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/leakers-hijack-billboard-software-to-display-porn-869233ee</guid>
-      <description><![CDATA[The hacking group Leakers$ gained unauthorized access to remote management software controlling public billboards and used it to display pornographic content. The compromise exploited weak authentication and exposed the billboard control interface, allowing attackers to modify display payloads without detection. Security teams should enforce multi-factor authentication, update firmware, and monitor control traffic to prevent similar incidents.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:01:55 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Discovers Vulnerabilities in Legal Systems</title>
-      <link>https://secubuzz.com/news/ai-discovers-vulnerabilities-in-legal-systems-d9484d0b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-discovers-vulnerabilities-in-legal-systems-d9484d0b</guid>
-      <description><![CDATA[The article argues that advanced AI can identify logical flaws in legal texts, treating statutes as code susceptible to exploitation. These vulnerabilities arise from ambiguous language or inconsistent provisions, allowing AI‑driven analysis to surface potential loopholes that courts may overlook. The piece calls for legal scholars to adopt formal verification techniques and for lawmakers to review statutes for machine‑readable consistency.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:01:00 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Subnet Solutions PowerSYSTEM Center</title>
-      <link>https://secubuzz.com/news/subnet-solutions-powersystem-center-dc5c2e21</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/subnet-solutions-powersystem-center-dc5c2e21</guid>
-      <description><![CDATA[The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 PowerSYSTEM Center 2024 >=6.0.x| PowerSYSTEM Center 2026 >=7.0.x| CVSS Vendor Equipment v3 9 Subnet Solutions PowerSYSTEM Center 2 Vulnerabilities Incorrect Authorization, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Canada Vulnerabilities Expand All + CVE-2026-63017 Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators.]]></description>
-      <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01">CISA</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

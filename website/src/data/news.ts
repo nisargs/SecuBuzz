@@ -11,6 +11,66 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "harvard-exposes-851-000-emails-in-breach-9b7ceb07",
+    "title": "Harvard Exposes 851,000 Emails in Breach",
+    "summary": "A breach at Harvard exposed 851,000 email addresses, compromising user credentials and potentially enabling phishing attacks. The incident involved unauthorized access to the university’s audit database, revealing sensitive contact information and internal email addresses. Security teams should review root‑cause telemetry, deploy detection rules, and apply patches immediately to prevent further exposure and mitigate credential theft.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/harvard-university-data-breach-exposed-info-of-851-000",
+    "publishedAt": "2026-11-03T19:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "harvard-exposes-851-000-emails-in-breach",
+      "article-9b7ceb07",
+      "9b7ceb07",
+      "harvard-exposes-851-000-emails-in-breach-4b3b06"
+    ]
+  },
+  {
+    "slug": "aws-oauth-audience-validation-bypass-cve-2026-1154-c45c948e",
+    "title": "AWS OAuth Audience Validation Bypass CVE-2026-115413",
+    "summary": "AWS discovered a flaw in the MCP Server OAuth that bypasses token audience validation, allowing misuse of tokens issued for other services. CVE-2026-115413 enables attackers to gain unauthorized access to protected resources by manipulating the audience claim in a valid token. AWS has issued a patch; administrators should update the MCP Server and enforce strict audience checks to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-152-aws/",
+    "publishedAt": "2026-11-03T18:58:52.000Z",
+    "cves": [
+      "CVE-2026-115413"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-oauth-audience-validation-bypass-cve-2026-1154",
+      "article-c45c948e",
+      "c45c948e",
+      "aws-oauth-audience-validation-bypass-cve-2026-1154-4dd94b",
+      "aws-oauth-audience-validation-bypass-cve-2026-115413"
+    ]
+  },
+  {
+    "slug": "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re-e1d9033d",
+    "title": "AWS Amplify XSS in maplibre-gl-js-amplify Popup Rendering CVE-2026-121652",
+    "summary": "AWS identified a stored cross‑site scripting flaw in the Amplify maplibre‑gl‑js‑amplify library that affects popup and geofence‑control rendering. The vulnerability, CVE-2026-121652, allows attackers to inject malicious scripts into map popups, potentially stealing user data or hijacking sessions. AWS recommends updating to the latest library version and sanitizing user input in popup content to mitigate the XSS risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-167-aws/",
+    "publishedAt": "2026-11-03T18:54:53.000Z",
+    "cves": [
+      "CVE-2026-121652"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re",
+      "article-e1d9033d",
+      "e1d9033d",
+      "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re-74b83e",
+      "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-rendering-cv"
+    ]
+  },
+  {
     "slug": "cve-2026-119922-babelfish-for-postgresql-privilege-6e897223",
     "title": "CVE-2026-119922 - Babelfish for PostgreSQL Privilege Escalation",
     "summary": "Bulletin ID: 2026-165-AWS Publication Date: 11/03/2026 10:00 AM PST Description: Improper access control in the Babelfish for PostgreSQL extension versions 1.2-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 allows remote authenticated users to elevate their privileges. We recommend you upgrade to Babelfish for PostgreSQL extension versions Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
@@ -29,6 +89,25 @@ export const news: NewsBrief[] = [
       "6e897223",
       "cve-2026-119922-babelfish-for-postgresql-privilege-7821ef",
       "cve-2026-119922-babelfish-for-postgresql-privilege-escalatio"
+    ]
+  },
+  {
+    "slug": "chainstack-breach-exposes-customer-data-and-passwo-5790daba",
+    "title": "Chainstack Breach Exposes Customer Data and Password Hashes",
+    "summary": "Chainstack, a blockchain infrastructure provider, suffered a breach that granted an unauthorized party access to parts of its production systems. The intrusion is linked to a large‑scale AI‑powered attack campaign, potentially allowing exfiltration of customer data and password hashes. Chainstack has disclosed the incident, is investigating, patching vulnerabilities, and notifying affected customers.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+    "publishedAt": "2026-11-03T18:16:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chainstack-breach-exposes-customer-data-and-passwo",
+      "article-5790daba",
+      "5790daba",
+      "chainstack-breach-exposes-customer-data-and-passwo-1376aa",
+      "chainstack-breach-exposes-customer-data-and-password-hashes"
     ]
   },
   {
@@ -91,6 +170,101 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "secure-github-actions-against-supply-chain-threats-0ac64a7d",
+    "title": "Secure GitHub Actions Against Supply Chain Threats",
+    "summary": "This guide tackles supply‑chain threats to GitHub Actions, covering malicious pull requests, credential theft, dependency risks, and release pipeline vulnerabilities. It explains how insecure workflow configurations and unverified third‑party actions enable attackers to inject malicious code or exfiltrate secrets. The article recommends restricting workflow permissions, using signed actions, scanning dependencies, and monitoring pipeline activity to mitigate risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/hardening-github-actions-against-outside-threats",
+    "publishedAt": "2026-11-03T17:41:44.155Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "secure-github-actions-against-supply-chain-threats",
+      "article-0ac64a7d",
+      "0ac64a7d",
+      "secure-github-actions-against-supply-chain-threats-4eba51"
+    ]
+  },
+  {
+    "slug": "ubuntu-libvips-vulnerabilities-exploit-integer-ove-7579da09",
+    "title": "Ubuntu libvips Vulnerabilities Exploit Integer Overflows",
+    "summary": "Ubuntu users face multiple libvips vulnerabilities that allow attackers to exploit integer overflows during PDF and GIF processing. CVE-2025-59933 and CVE-2026-33327 trigger crashes or potential arbitrary code execution on affected Ubuntu releases, with CVSS scores indicating high severity. Canonical recommends applying the latest libvips updates via package manager or installing the security patches released in USN-8994-1.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8994-1",
+    "publishedAt": "2026-11-03T17:39:43.000Z",
+    "cves": [
+      "CVE-2025-59933",
+      "CVE-2026-33327"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-libvips-vulnerabilities-exploit-integer-ove",
+      "article-7579da09",
+      "7579da09",
+      "ubuntu-libvips-vulnerabilities-exploit-integer-ove-7fbb9a",
+      "ubuntu-libvips-vulnerabilities-exploit-integer-overflows"
+    ]
+  },
+  {
+    "slug": "sogo-vulnerability-enables-password-reset-token-th-6b28e205",
+    "title": "SOGo Vulnerability Enables Password Reset Token Theft",
+    "summary": "SOGo, an open‑source groupware server, contains a flaw that uses client‑supplied Origin headers in password reset link construction. A remote attacker can exploit this to harvest password reset tokens and hijack user accounts, potentially compromising sensitive data. Administrators should update to the latest SOGo release or apply the security patch provided in USN-8993-1 to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8993-1",
+    "publishedAt": "2026-11-03T17:38:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sogo-vulnerability-enables-password-reset-token-th",
+      "article-6b28e205",
+      "6b28e205",
+      "sogo-vulnerability-enables-password-reset-token-th-7fbb9e",
+      "sogo-vulnerability-enables-password-reset-token-theft"
+    ]
+  },
+  {
+    "slug": "usn-8985-1-net-easytcp-vulnerability-6d448c3f",
+    "title": "USN-8985-1: Net::EasyTCP vulnerability",
+    "summary": "It was discovered that Net::EasyTCP used the built-in Perl rand() function to generate encryption keys when no strong randomization module was present. An attacker could possibly use this issue to predict the keys and obtain sensitive information.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8985-1",
+    "publishedAt": "2026-11-03T17:36:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-8985-1-net-easytcp-vulnerability",
+      "article-6d448c3f",
+      "6d448c3f",
+      "usn-8985-1-net-easytcp-vulnerability-7fbc0b"
+    ]
+  },
+  {
+    "slug": "usn-8984-1-jabberd2-vulnerability-841bcc94",
+    "title": "USN-8984-1: jabberd2 vulnerability",
+    "summary": "It was discovered that jabberd2 allowed SASL ANONYMOUS authentication even when it was not enabled in the configuration. A remote attacker could possibly use this issue to bypass authentication.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8984-1",
+    "publishedAt": "2026-11-03T17:35:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-8984-1-jabberd2-vulnerability",
+      "article-841bcc94",
+      "841bcc94",
+      "usn-8984-1-jabberd2-vulnerability-7fbc0e"
+    ]
+  },
+  {
     "slug": "trojanized-inno-installers-deliver-monetization-pa-605b70fb",
     "title": "Trojanized Inno Installers Deliver Monetization Payloads",
     "summary": "Microsoft Threat Intelligence identified a fake‑download campaign that distributes trojanized Inno installers to users. The installers embed monetization offers, enabling attackers to generate revenue through click‑throughs and ad fraud while remaining undetected during the installation process. Security teams should block known malicious installer URLs, employ application whitelisting, and monitor installer execution for anomalous behavior.",
@@ -144,6 +318,26 @@ export const news: NewsBrief[] = [
       "article-804fca82",
       "804fca82",
       "cisco-email-gateway-vulnerability-enables-root-rce-27f659"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-openshift-4-21-41-security-update-b6f5b2a1",
+    "title": "Red Hat Issues OpenShift 4.21.41 Security Update",
+    "summary": "Red Hat released OpenShift Container Platform 4.21.41, addressing several security issues affecting the platform. CVE-2026-43871, identified in the release, poses a high‑severity risk that could allow unauthorized access or privilege escalation within container workloads. Users should upgrade to the 4.21.41 image or apply the patch immediately to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92286",
+    "publishedAt": "2026-11-03T16:58:13.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-openshift-4-21-41-security-update",
+      "article-b6f5b2a1",
+      "b6f5b2a1",
+      "red-hat-issues-openshift-4-21-41-security-update-37d9aa"
     ]
   },
   {
@@ -441,6 +635,26 @@ export const news: NewsBrief[] = [
       "f0d63030",
       "gartner-forecasts-soc-engineers-outnumber-analysts-7325b6",
       "gartner-forecasts-soc-engineers-outnumber-analysts-by-2028"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94567-important-libxtst-security-update-a67dab1c",
+    "title": "RHSA-2026:94567: Important: libXtst security update",
+    "summary": "An update for libXtst is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94567",
+    "publishedAt": "2026-11-03T14:53:47.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94567-important-libxtst-security-update",
+      "article-a67dab1c",
+      "a67dab1c",
+      "rhsa-2026-94567-important-libxtst-security-update-37d8b6"
     ]
   },
   {
@@ -967,6 +1181,26 @@ export const news: NewsBrief[] = [
       "article-dc5c2e21",
       "dc5c2e21",
       "subnet-solutions-powersystem-center-41c85b"
+    ]
+  },
+  {
+    "slug": "libxtst-security-update-for-rhel-03338511",
+    "title": "libXtst Security Update for RHEL",
+    "summary": "Red Hat issued an important security update for libXtst affecting RHEL 8.4 Advanced Mission Critical and Extended Update Support. The associated CVE-2026-43871 requires local access to exploit, with a CVSS base score available from the referenced CVE link. System administrators should apply the patch promptly.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94482",
+    "publishedAt": "2026-11-03T11:44:40.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "libxtst-security-update-for-rhel",
+      "article-03338511",
+      "03338511",
+      "libxtst-security-update-for-rhel-37d8b9"
     ]
   },
   {
@@ -9312,249 +9546,6 @@ export const news: NewsBrief[] = [
       "e4a555d1",
       "adobe-veeam-juniper-how-to-detect-patch-critical-f-568a47",
       "adobe-veeam-juniper-how-to-detect-patch-critical-flaws"
-    ]
-  },
-  {
-    "slug": "expat-update-mitigates-important-security-flaw-e9c81b3d",
-    "title": "Expat Update Mitigates Important Security Flaw",
-    "summary": "Red Hat Enterprise Linux 8 users must address a critical flaw in the expat XML parser that could enable attackers to execute arbitrary code. Red Hat Product Security rates the issue as Important, indicating a high CVSS score and potential for remote code execution without authentication. The vendor has released a patch; system administrators should apply it to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92323",
-    "publishedAt": "2026-10-30T00:21:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "expat-update-mitigates-important-security-flaw",
-      "article-e9c81b3d",
-      "e9c81b3d",
-      "expat-update-mitigates-important-security-flaw-37d9a7"
-    ]
-  },
-  {
-    "slug": "alpine-linux-attempts-exploit-cve-2026-97229-on-gi-b8faa4e6",
-    "title": "Alpine Linux Attempts Exploit CVE-2026-97229 on GitLab",
-    "summary": "Alpine Linux's development infrastructure faced an attempted exploitation of CVE-2026-97229 on its GitLab server on October 20-21. The flaw, a CVSS 10.0 remote code execution via a crafted regex in CI configuration files, could have allowed attackers to run arbitrary code. Alpine responded by rebuilding GitLab, resetting passwords, applying the official patch, and monitoring logs for anomalous CI activity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/attacker-tried-to-exploit-alpine-linux-s-gitlab-via-cvs",
-    "publishedAt": "2026-10-30T00:15:33.000Z",
-    "cves": [
-      "CVE-2026-97229"
-    ],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/"
-      }
-    ],
-    "aliases": [
-      "alpine-linux-attempts-exploit-cve-2026-97229-on-gi",
-      "article-b8faa4e6",
-      "b8faa4e6",
-      "alpine-linux-attempts-exploit-cve-2026-97229-on-gi-e142f3",
-      "alpine-linux-attempts-exploit-cve-2026-97229-on-gitlab"
-    ]
-  },
-  {
-    "slug": "linux-kernel-tcp-rce-cve-2026-98432-requires-immed-fba3a799",
-    "title": "Linux Kernel TCP RCE CVE-2026-98432 Requires Immediate Patch",
-    "summary": "A critical remote code execution flaw in the Linux kernel’s TCP stack, identified as CVE-2026-98432, has been publicly disclosed. The vulnerability exploits improper handling of MPTCP segments, enabling attackers to execute arbitrary code with kernel privileges. Administrators should verify MPTCP configuration, deploy the latest kernel update, and monitor for anomalous network traffic to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/linux-kernel-tcp-flaw-with-9-8-cvss-score-affects-ubunt",
-    "publishedAt": "2026-10-30T00:08:18.000Z",
-    "cves": [
-      "CVE-2026-98432"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-tcp-rce-cve-2026-98432-requires-immed",
-      "article-fba3a799",
-      "fba3a799",
-      "linux-kernel-tcp-rce-cve-2026-98432-requires-immed-24ddca",
-      "linux-kernel-tcp-rce-cve-2026-98432-requires-immediate-patch"
-    ]
-  },
-  {
-    "slug": "talos-report-rising-it-help-desk-vishing-26032eea",
-    "title": "Talos Report: Rising IT Help Desk Vishing",
-    "summary": "Cisco Talos Q3 incident report documents a rise in IT help desk vishing targeting organizations via remote monitoring and management tools. Attackers exploit RMM software to gain voice channel access, enabling credential theft and phishing. Security teams should audit RMM configurations, enforce strict identity verification, and strengthen voice security controls to mitigate the threat.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ir-trends-q3-2026-actors-impersonate-it-help-desks-in-v",
-    "publishedAt": "2026-10-30T00:01:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "talos-report-rising-it-help-desk-vishing",
-      "article-26032eea",
-      "26032eea",
-      "talos-report-rising-it-help-desk-vishing-1993db"
-    ]
-  },
-  {
-    "slug": "malicious-claude-code-extension-found-in-cursor-ma-d06b3869",
-    "title": "Malicious Claude Code Extension Found in Cursor Marketplace",
-    "summary": "Sophos Threat Research uncovered a malicious Claude Code extension in the Cursor marketplace that installs without user consent. The add‑on injects malicious scripts into web pages, harvesting credentials and redirecting traffic to phishing sites. Defenders should block the extension’s domain, uninstall the add‑on from affected devices, and enforce stricter marketplace vetting to block future releases.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/malicious-claude-code-extension-distributed-through-cursor-marketplace",
-    "publishedAt": "2026-10-30T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-claude-code-extension-found-in-cursor-ma",
-      "article-d06b3869",
-      "d06b3869",
-      "malicious-claude-code-extension-found-in-cursor-ma-4941b9",
-      "malicious-claude-code-extension-found-in-cursor-marketplace"
-    ]
-  },
-  {
-    "slug": "siemens-mendix-saml-bypass-cve-2026-89209-demands-a7a696cf",
-    "title": "Siemens Mendix SAML Bypass CVE-2026-89209 Demands Patch",
-    "summary": "Siemens Mendix exposes a SAML authentication bypass flaw, identified as CVE-2026-89209, that can allow attackers to impersonate users. The vulnerability permits replay of valid SAML assertions, granting unauthorized access to protected resources without credential verification. Security teams should audit SSO logs, enforce assertion replay protection, and apply vendor patches to eliminate the bypass.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/siemens-mendix-saml-module",
-    "publishedAt": "2026-10-29T23:51:05.000Z",
-    "cves": [
-      "CVE-2026-89209"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-mendix-saml-bypass-cve-2026-89209-demands",
-      "article-a7a696cf",
-      "a7a696cf",
-      "siemens-mendix-saml-bypass-cve-2026-89209-demands-2183a8",
-      "siemens-mendix-saml-bypass-cve-2026-89209-demands-patch"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-pcre2-security-update-for-rhel-8-6-4ba5f082",
-    "title": "Red Hat Issues pcre2 Security Update for RHEL 8.6",
-    "summary": "Red Hat released a security update for the pcre2 library on RHEL 8.6, addressing multiple vulnerabilities. The vulnerabilities carry a CVSS base score indicating an Important impact, but no public exploit or PoC is reported. Security teams should apply the update immediately to mitigate potential critical remote code execution risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92899",
-    "publishedAt": "2026-10-29T23:44:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-pcre2-security-update-for-rhel-8-6",
-      "article-4ba5f082",
-      "4ba5f082",
-      "red-hat-issues-pcre2-security-update-for-rhel-8-6-37d993"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-pcre2-security-update-913d4f1a",
-    "title": "Red Hat Issues pcre2 Security Update",
-    "summary": "Red Hat has issued a security update for the pcre2 regular expression library on RHEL 8.4 Advanced Mission Critical and Extended Update Support channels. The update addresses multiple vulnerabilities with CVSS scores listed in the advisory, though no specific CVE identifiers are named. Red Hat recommends applying the patch immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92901",
-    "publishedAt": "2026-10-29T23:42:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-pcre2-security-update",
-      "article-913d4f1a",
-      "913d4f1a",
-      "red-hat-issues-pcre2-security-update-37d990"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-tomcat-security-update-fceb7681",
-    "title": "Red Hat Issues Tomcat Security Update",
-    "summary": "Tomcat on Red Hat Enterprise Linux 8 receives an important security update. The update addresses unspecified vulnerabilities rated Important by Red Hat Product Security, with CVSS scores available via CVE links. Red Hat has released the update; users should apply the Tomcat package update to mitigate the identified flaws immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92869",
-    "publishedAt": "2026-10-29T23:41:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-tomcat-security-update",
-      "article-fceb7681",
-      "fceb7681",
-      "red-hat-issues-tomcat-security-update-37d993"
-    ]
-  },
-  {
-    "slug": "patch-vpn-flaw-cve-2026-97229-fb01c180",
-    "title": "Patch VPN Flaw CVE-2026-97229",
-    "summary": "CVE-2026-97229 is a vulnerability in VPN software that could allow attackers to compromise enterprise environments. Root‑cause telemetry indicates a flaw in authentication handling, potentially enabling unauthenticated code execution. Red Hat recommends applying the vendor patch immediately to mitigate the risk and prevent potential exploitation across all affected systems globally today.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisa-adds-two-known-exploited-vulnerabilities-to-catalo",
-    "publishedAt": "2026-10-29T23:41:16.000Z",
-    "cves": [
-      "CVE-2026-97229"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "patch-vpn-flaw-cve-2026-97229",
-      "article-fb01c180",
-      "fb01c180",
-      "patch-vpn-flaw-cve-2026-97229-18d6a1"
-    ]
-  },
-  {
-    "slug": "nik-c2-detect-and-block-ai-driven-ransomware-c2-86a8c22e",
-    "title": "NIK C2 Detect and Block AI-Driven Ransomware C2",
-    "summary": "NIK C2 is an AI‑integrated command and control framework used by ransomware operators. The framework leverages machine‑learning models to evade detection, enabling attackers to coordinate payload delivery and data exfiltration across compromised hosts. Security teams should deploy Sigma rules to detect C2 traffic, block identified endpoints, and apply containment controls immediately.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/nik-c2-the-new-ai-enabled-command-and-control-framework",
-    "publishedAt": "2026-10-29T23:37:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nik-c2-detect-and-block-ai-driven-ransomware-c2",
-      "article-86a8c22e",
-      "86a8c22e",
-      "nik-c2-detect-and-block-ai-driven-ransomware-c2-78f61c"
-    ]
-  },
-  {
-    "slug": "openai-expands-chatgpt-pro-usage-limits-and-integr-c2e269c9",
-    "title": "OpenAI Expands ChatGPT Pro Usage Limits and Integrates Work Features",
-    "summary": "OpenAI doubled ChatGPT Pro usage limits for all paid tiers, keeping Business Premium unchanged. The update merges ChatGPT Work features into the standard chat interface and consolidates resource allocations across ChatGPT and Codex. Admins should review new terms, adjust usage expectations, and monitor dashboards daily to stay within updated thresholds.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
-    "publishedAt": "2026-10-29T23:35:52.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/"
-      }
-    ],
-    "aliases": [
-      "openai-expands-chatgpt-pro-usage-limits-and-integr",
-      "article-c2e269c9",
-      "c2e269c9",
-      "openai-expands-chatgpt-pro-usage-limits-and-integr-1a0442",
-      "openai-expands-chatgpt-pro-usage-limits-and-integrates-work-"
     ]
   }
 ];
