@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 03:43:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 04:44:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Anthropic Adds EDR Monitoring to Claude Cowork</title>
+      <link>https://secubuzz.com/news/anthropic-adds-edr-monitoring-to-claude-cowork-0bd9b67a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-adds-edr-monitoring-to-claude-cowork-0bd9b67a</guid>
+      <description><![CDATA[Anthropic introduced a beta integration that allows businesses to run endpoint detection and response sensors inside Claude Cowork’s local virtual machine. The feature addresses a monitoring gap where security software cannot see shell commands and code executed within Cowork’s isolated environment. Security teams can now forward Cowork activity to existing EDR solutions, enhancing visibility of hidden AI agent operations.]]></description>
+      <pubDate>Tue, 03 Nov 2026 04:18:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/anthropic-enables-edr-monitoring/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Bind9.18 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-bind9-18-security-update-5e50442b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-bind9-18-security-update-5e50442b</guid>
+      <description><![CDATA[Red Hat released a security update for bind9.18 on RHEL 9.6 EUS, addressing multiple vulnerabilities. The update mitigates bugs identified by Red Hat Product Security, with CVSS base scores available via CVE links, though no specific CVE IDs are named. Security teams should apply the bind9.18 update immediately to eliminate the identified flaws.]]></description>
+      <pubDate>Tue, 03 Nov 2026 03:58:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94278">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Bind9.16 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-bind9-16-security-update-5cce6130</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-bind9-16-security-update-5cce6130</guid>
+      <description><![CDATA[Red Hat released a security update for bind9.16 on RHEL 8.6 AMCS and EUS Long‑Life Add‑On, addressing multiple vulnerabilities. The update contains fixes with CVSS base scores linked via CVE references, though no individual CVE identifiers are specified. Apply the bind9.16 patch promptly to close the identified critical security gaps.]]></description>
+      <pubDate>Tue, 03 Nov 2026 03:54:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94277">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>WorkOS Breach Exposes Customer Slack Data via ARTEX AI</title>
+      <link>https://secubuzz.com/news/workos-breach-exposes-customer-slack-data-via-arte-1bec1a93</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/workos-breach-exposes-customer-slack-data-via-arte-1bec1a93</guid>
+      <description><![CDATA[Hackers leveraged the ARTEX AI framework to breach WorkOS's sales application, exposing customer contact information and Slack conversation records. The incident, detected on October 30, 2026, involved reconnaissance and exploitation attempts, but no evidence of credential theft or ransomware was reported. WorkOS issued a security bulletin on November 2 and recommends applying the patch and strengthening monitoring for unauthorized access.]]></description>
+      <pubDate>Tue, 03 Nov 2026 03:43:36 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/workos-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ISC Stormcast Broadcast Scheduled for Nov 3, 2026</title>
+      <link>https://secubuzz.com/news/isc-stormcast-broadcast-scheduled-for-nov-3-2026-38cd315b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-broadcast-scheduled-for-nov-3-2026-38cd315b</guid>
+      <description><![CDATA[ISC releases its weekly Stormcast briefing for Tuesday, November 3, 2026, covering the latest threat landscape and incident responses. The session will review recent high-profile exploits, emerging malware trends, and defensive best practices for security teams. Listeners can stream the podcast via the ISC website or download the episode for offline review.]]></description>
+      <pubDate>Tue, 03 Nov 2026 02:00:02 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33484">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Releases Bind Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-1e96ff18</link>
@@ -411,51 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 15:01:11 GMT</pubDate>
       <source url="https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/">SecurityWeek</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Digital Defense Report Overlooks Microsoft Bug Threats</title>
-      <link>https://secubuzz.com/news/digital-defense-report-overlooks-microsoft-bug-thr-e30f533a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/digital-defense-report-overlooks-microsoft-bug-thr-e30f533a</guid>
-      <description><![CDATA[The Digital Defense Report labels government agencies as primary AI attack targets while omitting the exploitation of Microsoft software bugs against them. This oversight obscures the threat vector, as attackers leverage known Microsoft vulnerabilities to gain privileged access to agency networks. Security teams should prioritize patching Microsoft products, monitor for exploitation signatures, and incorporate threat models into AI risk assessments.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Linux Mutipath TCP Vulnerability CVE-2026-98432</title>
-      <link>https://secubuzz.com/news/linux-mutipath-tcp-vulnerability-cve-2026-98432-ac28de13</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-mutipath-tcp-vulnerability-cve-2026-98432-ac28de13</guid>
-      <description><![CDATA[A new vulnerability in Linux's Mutipath TCP implementation, identified as CVE-2026-98432, was disclosed following the RFC 8684 option's introduction in 2020. The flaw permits attackers to manipulate TCP option parsing, potentially leading to denial‑of‑service or memory corruption, though no active exploitation has been reported. Linux distributions should apply the vendor‑supplied patch or update kernel to mitigate the vulnerability.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:52:05 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33482">SANS Internet Storm Center</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>New Windows Infostealer Uses AI to Rank Stolen Data</title>
-      <link>https://secubuzz.com/news/new-windows-infostealer-uses-ai-to-rank-stolen-dat-fcc119c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/new-windows-infostealer-uses-ai-to-rank-stolen-dat-fcc119c0</guid>
-      <description><![CDATA[Cisco Talos identified a new Windows infostealer, VOLTA-AUTODOXER, that forwards stolen data to an AI model for value ranking. The malware harvests credentials and asset details, then relies on the AI engine to prioritize targets, enabling focused attacks. Security teams should block the malware’s download, monitor outbound AI traffic, and apply updated endpoint protection signatures.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:47:57 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/ai-powered-infostealer-volta-victim-profiling/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>DarkBlinders Compromises Israeli Target, Iraqi Cloud</title>
-      <link>https://secubuzz.com/news/darkblinders-compromises-israeli-target-iraqi-clou-e2fc4f90</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/darkblinders-compromises-israeli-target-iraqi-clou-e2fc4f90</guid>
-      <description><![CDATA[Between August and October 2026, the DarkBlinders group compromised an Israeli individual and infiltrated a Kurdistan Region of Iraq government cloud environment. The campaign leveraged spear‑phishing, credential theft, and cloud misconfigurations to gain privileged access, exposing sensitive data and operational controls. Affected organizations should enforce MFA, audit cloud permissions, apply timely patches, and conduct forensic investigations to assess data exfiltration.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:46:05 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html">The Hacker News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Florida Student Aid Site Breach Exposes 4.9 Million SSNs</title>
-      <link>https://secubuzz.com/news/florida-student-aid-site-breach-exposes-4-9-millio-8dc7783a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/florida-student-aid-site-breach-exposes-4-9-millio-8dc7783a</guid>
-      <description><![CDATA[The Florida Department of Education’s student aid website was breached, exposing SSNs and other personal data of approximately 4.9 million individuals. An unspecified web application flaw allowed unauthenticated attackers to retrieve sensitive records. The department notified users, issued an advisory, and is collaborating with law enforcement to investigate and remediate.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:44:18 GMT</pubDate>
-      <source url="https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

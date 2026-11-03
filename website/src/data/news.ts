@@ -11,6 +11,97 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "anthropic-adds-edr-monitoring-to-claude-cowork-0bd9b67a",
+    "title": "Anthropic Adds EDR Monitoring to Claude Cowork",
+    "summary": "Anthropic introduced a beta integration that allows businesses to run endpoint detection and response sensors inside Claude Cowork’s local virtual machine. The feature addresses a monitoring gap where security software cannot see shell commands and code executed within Cowork’s isolated environment. Security teams can now forward Cowork activity to existing EDR solutions, enhancing visibility of hidden AI agent operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/anthropic-enables-edr-monitoring/",
+    "publishedAt": "2026-11-03T04:18:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-adds-edr-monitoring-to-claude-cowork",
+      "article-0bd9b67a",
+      "0bd9b67a",
+      "anthropic-adds-edr-monitoring-to-claude-cowork-3b0cda"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-bind9-18-security-update-5e50442b",
+    "title": "Red Hat Issues Bind9.18 Security Update",
+    "summary": "Red Hat released a security update for bind9.18 on RHEL 9.6 EUS, addressing multiple vulnerabilities. The update mitigates bugs identified by Red Hat Product Security, with CVSS base scores available via CVE links, though no specific CVE IDs are named. Security teams should apply the bind9.18 update immediately to eliminate the identified flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94278",
+    "publishedAt": "2026-11-03T03:58:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-bind9-18-security-update",
+      "article-5e50442b",
+      "5e50442b",
+      "red-hat-issues-bind9-18-security-update-37d8c1"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-bind9-16-security-update-5cce6130",
+    "title": "Red Hat Issues Bind9.16 Security Update",
+    "summary": "Red Hat released a security update for bind9.16 on RHEL 8.6 AMCS and EUS Long‑Life Add‑On, addressing multiple vulnerabilities. The update contains fixes with CVSS base scores linked via CVE references, though no individual CVE identifiers are specified. Apply the bind9.16 patch promptly to close the identified critical security gaps.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94277",
+    "publishedAt": "2026-11-03T03:54:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-bind9-16-security-update",
+      "article-5cce6130",
+      "5cce6130",
+      "red-hat-issues-bind9-16-security-update-37d8c1"
+    ]
+  },
+  {
+    "slug": "workos-breach-exposes-customer-slack-data-via-arte-1bec1a93",
+    "title": "WorkOS Breach Exposes Customer Slack Data via ARTEX AI",
+    "summary": "Hackers leveraged the ARTEX AI framework to breach WorkOS's sales application, exposing customer contact information and Slack conversation records. The incident, detected on October 30, 2026, involved reconnaissance and exploitation attempts, but no evidence of credential theft or ransomware was reported. WorkOS issued a security bulletin on November 2 and recommends applying the patch and strengthening monitoring for unauthorized access.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/workos-data-breach/",
+    "publishedAt": "2026-11-03T03:43:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "workos-breach-exposes-customer-slack-data-via-arte",
+      "article-1bec1a93",
+      "1bec1a93",
+      "workos-breach-exposes-customer-slack-data-via-arte-66ca17",
+      "workos-breach-exposes-customer-slack-data-via-artex-ai"
+    ]
+  },
+  {
+    "slug": "isc-stormcast-broadcast-scheduled-for-nov-3-2026-38cd315b",
+    "title": "ISC Stormcast Broadcast Scheduled for Nov 3, 2026",
+    "summary": "ISC releases its weekly Stormcast briefing for Tuesday, November 3, 2026, covering the latest threat landscape and incident responses. The session will review recent high-profile exploits, emerging malware trends, and defensive best practices for security teams. Listeners can stream the podcast via the ISC website or download the episode for offline review.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33484",
+    "publishedAt": "2026-11-03T02:00:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-broadcast-scheduled-for-nov-3-2026",
+      "article-38cd315b",
+      "38cd315b",
+      "isc-stormcast-broadcast-scheduled-for-nov-3-2026-57dd7e"
+    ]
+  },
+  {
     "slug": "red-hat-releases-bind-security-update-1e96ff18",
     "title": "Red Hat Releases Bind Security Update",
     "summary": "Red Hat issued a security update for the BIND DNS server on Enterprise Linux 10.0 Extended Update Support. The patch addresses multiple vulnerabilities with CVSS scores detailed in the referenced CVE links, mitigating potential remote code execution and denial‑of‑service risks. Administrators should apply the RHSA‑2026:94115 update promptly to secure DNS operations.",
@@ -9432,104 +9523,6 @@ export const news: NewsBrief[] = [
       "0a2a9150",
       "freebsd-kernel-tty-race-enables-local-privilege-es-6f3c9f",
       "freebsd-kernel-tty-race-enables-local-privilege-escalation"
-    ]
-  },
-  {
-    "slug": "mlflow-statsmodels-deserialization-rce-vulnerabili-ad2778c5",
-    "title": "MLflow Statsmodels Deserialization RCE Vulnerability",
-    "summary": "A deserialization flaw in MLflow’s Statsmodels _load_model function permits remote attackers to execute arbitrary code on affected installations. The vulnerability requires user interaction, visiting a malicious page or opening a crafted file, and carries a CVSS score of 7.8, indicating high severity. A patch addressing CVE-2024-37052 is available; administrators should update MLflow immediately or apply the workaround to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-845/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [
-      "CVE-2024-37052"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-statsmodels-deserialization-rce-vulnerabili",
-      "article-ad2778c5",
-      "ad2778c5",
-      "mlflow-statsmodels-deserialization-rce-vulnerabili-6f3ca3",
-      "mlflow-statsmodels-deserialization-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "mlflow-shap-deserialization-rce-vulnerability-f5ceaab5",
-    "title": "MLflow SHAP Deserialization RCE Vulnerability",
-    "summary": "A deserialization flaw in MLflow’s SHAP load_explainer function allows remote attackers to execute arbitrary code on affected installations. The flaw requires user interaction, visiting a page or opening a file, and has a CVSS score of 7.8, indicating high severity. A patch addressing CVE-2026-118627 is available; administrators should update MLflow immediately or apply the workaround to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-843/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118627"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-shap-deserialization-rce-vulnerability",
-      "article-f5ceaab5",
-      "f5ceaab5",
-      "mlflow-shap-deserialization-rce-vulnerability-6f3ca2"
-    ]
-  },
-  {
-    "slug": "mlflow-tracking-server-privilege-escalation-vulner-312af668",
-    "title": "MLflow Tracking Server Privilege Escalation Vulnerability",
-    "summary": "A missing authorization flaw in MLflow’s Tracking Server permits authenticated attackers to elevate privileges on affected installations. The vulnerability requires valid credentials, has a CVSS score of 5.4, and allows attackers to gain higher-level access within the MLflow environment. A patch addressing CVE-2026-118626 is available; administrators should update MLflow or apply the vendor‑issued workaround to prevent privilege escalation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-842/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118626"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-tracking-server-privilege-escalation-vulner",
-      "article-312af668",
-      "312af668",
-      "mlflow-tracking-server-privilege-escalation-vulner-6f3ca2",
-      "mlflow-tracking-server-privilege-escalation-vulnerability"
-    ]
-  },
-  {
-    "slug": "dhs-personnel-records-leak-exposes-ice-operations-3b04ae13",
-    "title": "DHS Personnel Records Leak Exposes ICE Operations",
-    "summary": "A data breach exposed records of over 41,000 Department of Homeland Security employees and contractors, revealing contact details, assignments, and links to undercover ICE operations. The leak, distributed publicly, provides an internal view of teams and reporting lines, potentially enabling targeted espionage or social engineering. DHS should immediately revoke compromised credentials, conduct a forensic audit, and notify affected personnel.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/dhs-data-leak/",
-    "publishedAt": "2026-10-29T03:13:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dhs-personnel-records-leak-exposes-ice-operations",
-      "article-3b04ae13",
-      "3b04ae13",
-      "dhs-personnel-records-leak-exposes-ice-operations-7d88db"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-released-for-oct-29-a6302ff4",
-    "title": "ISC Stormcast Podcast Released for Oct 29",
-    "summary": "The SANS Internet Storm Center published its Thursday Stormcast podcast for October 29, 2026, offering a curated overview of that day's threat landscape. The episode is distributed under a Creative Commons Attribution-Noncommercial 3.0 United States License, allowing free sharing with attribution. Listeners can access the recording via the ISC website to stay informed on emerging threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33468",
-    "publishedAt": "2026-10-29T03:10:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-released-for-oct-29",
-      "article-a6302ff4",
-      "a6302ff4",
-      "isc-stormcast-podcast-released-for-oct-29-57dd7e"
     ]
   }
 ];
