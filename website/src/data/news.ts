@@ -1495,6 +1495,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fence-agents-critical-security-update-a1b77c45",
+    "title": "Fence-Agents Critical Security Update",
+    "summary": "Red Hat released a critical security update for the fence-agents component on RHEL 9.6 Extended Update Support, addressing a high‑impact vulnerability. The update mitigates an unauthenticated remote code execution flaw that could allow attackers to gain system control, though no CVE ID is publicly disclosed. Administrators should apply the fence-agents patch immediately to prevent exploitation of the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94523",
+    "publishedAt": "2026-11-03T13:40:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fence-agents-critical-security-update",
+      "article-a1b77c45",
+      "a1b77c45",
+      "fence-agents-critical-security-update-37d8b6"
+    ]
+  },
+  {
     "slug": "russia-linked-spies-target-ukrainian-war-crimes-da-4e03054c",
     "title": "Russia-Linked Spies Target Ukrainian War Crimes Data",
     "summary": "Russian‑linked actors deployed simple malware to exfiltrate sensitive documents and login credentials from Ukrainian war‑crimes investigators and military aid entities. The attacks relied on credential theft rather than a zero‑day flaw, limiting impact to compromised accounts and confidential records. Teams should enforce MFA, monitor anomalous logins, and apply vendor patches to prevent further exfiltration.",
@@ -1557,6 +1575,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-freerdp-patch-for-cve-2026-43871-e753d104",
+    "title": "Red Hat Releases freerdp Patch for CVE-2026-43871",
+    "summary": "A CVE-2026-43871 flaw in Red Hat Enterprise Linux 10.2 freerdp allows remote attackers to exploit a security vulnerability. Red Hat rates it as Important, with a CVSS base score indicating moderate to high risk, yet no active exploitation has been seen. Red Hat has issued a freerdp update; administrators should apply it promptly to mitigate the flaw.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94514",
+    "publishedAt": "2026-11-03T13:05:30.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-freerdp-patch-for-cve-2026-43871",
+      "article-e753d104",
+      "e753d104",
+      "red-hat-releases-freerdp-patch-for-cve-2026-43871-37d8b6"
+    ]
+  },
+  {
     "slug": "wiz-green-agent-speeds-critical-risk-resolution-82ba4250",
     "title": "Wiz Green Agent Speeds Critical Risk Resolution",
     "summary": "Wiz Green Agent, an agentic remediation tool, deployed by Fireblocks, Rogo, and project44 to address cross-team blockers in critical risk resolution. The platform automates remediation workflows, reducing manual coordination overhead and accelerating mean-time-to-remediate for high-severity findings. Organizations can adopt similar agentic approaches to streamline vulnerability management and eliminate operational bottlenecks.",
@@ -1572,6 +1610,25 @@ export const news: NewsBrief[] = [
       "article-82ba4250",
       "82ba4250",
       "wiz-green-agent-speeds-critical-risk-resolution-69c0e9"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94500-critical-fence-agents-security-upd-074f3073",
+    "title": "RHSA-2026:94500: Critical: fence-agents security update",
+    "summary": "An update for fence-agents is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94500",
+    "publishedAt": "2026-11-03T12:47:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94500-critical-fence-agents-security-upd",
+      "article-074f3073",
+      "074f3073",
+      "rhsa-2026-94500-critical-fence-agents-security-upd-37d8b7",
+      "rhsa-2026-94500-critical-fence-agents-security-update"
     ]
   },
   {
@@ -2700,6 +2757,88 @@ export const news: NewsBrief[] = [
       "article-abf28543",
       "abf28543",
       "sweet-virtual-patching-mitigates-http2shell-rce-40222c"
+    ]
+  },
+  {
+    "slug": "quest-foglight-rce-via-external-file-path-control-392990f9",
+    "title": "Quest Foglight RCE via External File Path Control",
+    "summary": "A remote code execution flaw in Quest Foglight for Databases lets attackers write arbitrary file paths via writeTopologySectionToFile, bypassing authentication. The flaw, CVE-2026-92189, scores 9.8 on CVSS, enabling unauthenticated RCE that can compromise system integrity. Quest has issued a critical patch; administrators should apply it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-861/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92189"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-rce-via-external-file-path-control",
+      "article-392990f9",
+      "392990f9",
+      "quest-foglight-rce-via-external-file-path-control-6f3caa"
+    ]
+  },
+  {
+    "slug": "quest-foglight-rce-via-unzipfile-directory-travers-790f56da",
+    "title": "Quest Foglight RCE via unzipFile Directory Traversal",
+    "summary": "An authenticated remote code execution vulnerability in Quest Foglight for Databases allows attackers to traverse directories through the unzipFile function. The flaw, CVE-2026-92197, has a CVSS score of 8.8 and requires valid credentials to exploit, potentially enabling full system compromise. Quest has released a patch; administrators should update affected installations promptly to eliminate the exploitation vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-860/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92197"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-rce-via-unzipfile-directory-travers",
+      "article-790f56da",
+      "790f56da",
+      "quest-foglight-rce-via-unzipfile-directory-travers-6f3caa",
+      "quest-foglight-rce-via-unzipfile-directory-traversal"
+    ]
+  },
+  {
+    "slug": "quest-foglight-rce-via-runscript-authorization-fla-d10aed00",
+    "title": "Quest Foglight RCE via runScript Authorization Flaw",
+    "summary": "A remote code execution flaw in Quest Foglight for Databases permits attackers with valid credentials to execute arbitrary scripts through the runScript interface. The vulnerability, CVE-2026-92191, scores 8.8 on CVSS and requires authentication, enabling attackers to compromise system processes. Quest has issued a patch; affected users should apply it immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-859/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92191"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-rce-via-runscript-authorization-fla",
+      "article-d10aed00",
+      "d10aed00",
+      "quest-foglight-rce-via-runscript-authorization-fla-6f3ca7",
+      "quest-foglight-rce-via-runscript-authorization-flaw"
+    ]
+  },
+  {
+    "slug": "quest-foglight-patch-addresses-cve-2026-92186-rce-d77c8ad6",
+    "title": "Quest Foglight Patch Addresses CVE-2026-92186 RCE",
+    "summary": "A CVE-2026-92186 flaw in Quest Foglight for Databases permits authenticated remote attackers to exploit a directory traversal vulnerability and execute arbitrary code. The vulnerability carries a CVSS score of 8.8, indicating high risk, and requires valid credentials to trigger the remote code execution. Quest has released a patch; administrators should apply the update immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-858/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92186"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-patch-addresses-cve-2026-92186-rce",
+      "article-d77c8ad6",
+      "d77c8ad6",
+      "quest-foglight-patch-addresses-cve-2026-92186-rce-6f3ca7"
     ]
   },
   {
@@ -9408,136 +9547,6 @@ export const news: NewsBrief[] = [
       "article-c5a9a6a1",
       "c5a9a6a1",
       "uk-introduces-four-age-verification-methods-3393c8"
-    ]
-  },
-  {
-    "slug": "wiz-releases-ai-threat-readiness-survey-benchmark-f3db63f7",
-    "title": "Wiz Releases AI Threat Readiness Survey Benchmark Report",
-    "summary": "Wiz Research published its AI Threat Readiness Survey Report detailing emerging risk vectors within enterprise cloud AI environments. According to a report by Wiz Research, organizational benchmarks highlight expanding shadow AI deployments, orchestration risks, and defensive requirements against automated AI threats. The findings emphasize adopting proactive security controls and implementing AI-against-AI defensive strategies across enterprise infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026",
-    "publishedAt": "2026-10-30T12:57:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-releases-ai-threat-readiness-survey-benchmark",
-      "article-f3db63f7",
-      "f3db63f7",
-      "wiz-releases-ai-threat-readiness-survey-benchmark-46c9fe",
-      "wiz-releases-ai-threat-readiness-survey-benchmark-report"
-    ]
-  },
-  {
-    "slug": "shufti-launches-ai-agent-verification-solution-17c64adc",
-    "title": "Shufti Launches AI Agent Verification Solution",
-    "summary": "Shufti introduced Know Your Agent (KYA), a verification platform that ties autonomous AI agent actions to verified owners and permissions. The solution addresses agentic commerce scenarios where AI agents open accounts, place orders, and move funds on behalf of individuals. Businesses can confirm agent authenticity, accountability, and approval scope before processing requests.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/shufti-know-your-agent-kya/",
-    "publishedAt": "2026-10-30T12:53:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "shufti-launches-ai-agent-verification-solution",
-      "article-17c64adc",
-      "17c64adc",
-      "shufti-launches-ai-agent-verification-solution-7e4768"
-    ]
-  },
-  {
-    "slug": "gchq-lacks-accountability-for-thousands-of-storage-15ae3b71",
-    "title": "GCHQ Lacks Accountability for Thousands of Storage Devices",
-    "summary": "The Investigatory Powers Commissioner’s Office reported that GCHQ cannot account for thousands of data storage devices, raising concerns about oversight. The annual report highlighted delays in the agency’s investigation, with IPCO expressing disappointment over the time taken to resolve the issue. Stakeholders are urged to strengthen device tracking protocols and implement stricter audit controls to prevent future lapses.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/gchq-cannot-account-for-thousands-of-data-devices",
-    "publishedAt": "2026-10-30T12:52:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gchq-lacks-accountability-for-thousands-of-storage",
-      "article-15ae3b71",
-      "15ae3b71",
-      "gchq-lacks-accountability-for-thousands-of-storage-539dd1",
-      "gchq-lacks-accountability-for-thousands-of-storage-devices"
-    ]
-  },
-  {
-    "slug": "bedrock-data-automates-exposure-remediation-via-ow-6380405d",
-    "title": "Bedrock Data Automates Exposure Remediation Via Owners",
-    "summary": "Bedrock Data launches AI-driven remediation that routes data exposure tickets directly to dataset owners via Jira or ServiceNow integration. Owners receive contextual fix instructions, and Bedrock automatically validates remediation upon ticket closure, reopening tickets if exposures remain unaddressed. This workflow federation eliminates manual triage, ensuring continuous verification of data security posture across the enterprise.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/bedrock-data-ai-assisted-remediation/",
-    "publishedAt": "2026-10-30T12:39:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bedrock-data-automates-exposure-remediation-via-ow",
-      "article-6380405d",
-      "6380405d",
-      "bedrock-data-automates-exposure-remediation-via-ow-2d8375",
-      "bedrock-data-automates-exposure-remediation-via-owners"
-    ]
-  },
-  {
-    "slug": "binance-suffers-record-6-3-billion-crypto-theft-cc356329",
-    "title": "Binance Suffers Record $6.3 Billion Crypto Theft",
-    "summary": "Attackers stole approximately $6.3 billion in cryptocurrency from Binance, marking the largest crypto theft on record. The breach compromised Binance's hot wallet infrastructure, enabling unauthorized transfer of assets across multiple blockchain networks. Binance has suspended withdrawals and initiated forensic investigation while coordinating with law enforcement to trace stolen funds.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/binance-hit-by-largest-ever-crypto-theft-with-6-3-billion-stolen",
-    "publishedAt": "2026-10-30T12:24:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-suffers-record-6-3-billion-crypto-theft",
-      "article-cc356329",
-      "cc356329",
-      "binance-suffers-record-6-3-billion-crypto-theft-11c547"
-    ]
-  },
-  {
-    "slug": "trezor-alerts-on-hardware-implant-in-cryptobilis-w-81b8f00a",
-    "title": "Trezor Alerts on Hardware Implant in CryptoBilis Wallets",
-    "summary": "Trezor Safe 5 wallets from CryptoBilis reportedly include an extra circuit board that sends recovery phrases over mobile networks. The implant risks credential theft, exposing users to unauthorized access of crypto holdings, though Trezor has not examined it. Owners should move funds to new wallets with fresh recovery phrases and monitor for suspicious activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
-    "publishedAt": "2026-10-30T12:21:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trezor-alerts-on-hardware-implant-in-cryptobilis-w",
-      "article-81b8f00a",
-      "81b8f00a",
-      "trezor-alerts-on-hardware-implant-in-cryptobilis-w-5bae48",
-      "trezor-alerts-on-hardware-implant-in-cryptobilis-wallets"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-dev-159-for-android-eb444ad3",
-    "title": "Google Releases Chrome Dev 159 for Android",
-    "summary": "Google publishes Chrome Dev 159 (159.0.8130.0) for Android via Google Play with incremental feature updates. The release includes partial changes from the Git log and new web platform capabilities documented on the Chromium blog. No security fixes are highlighted; users should monitor stable channel updates for vulnerability patches.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-android-update_0754174154.html",
-    "publishedAt": "2026-10-30T12:13:32.558Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-chrome-dev-159-for-android",
-      "article-eb444ad3",
-      "eb444ad3",
-      "google-releases-chrome-dev-159-for-android-2f83d9"
     ]
   }
 ];
