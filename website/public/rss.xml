@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 19:46:37 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 20:46:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Gorbag APT Self‑Deleting Malware Detection Guide</title>
+      <link>https://secubuzz.com/news/gorbag-apt-self-deleting-malware-detection-guide-217b96d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gorbag-apt-self-deleting-malware-detection-guide-217b96d7</guid>
+      <description><![CDATA[Gorbag APT has deployed self‑deleting malware delivered via spearphishing campaigns targeting corporate email users. The malware erases its own code after execution, evading traditional signature‑based detection and allowing attackers to maintain persistence without leaving forensic footprints. Security teams should monitor for anomalous email attachments, enable advanced threat protection, and apply the latest email gateway updates to block known Gorbag indicators.]]></description>
+      <pubDate>Tue, 03 Nov 2026 20:50:35 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council">CyberNews AI</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Python-dns Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-python-dns-security-update-b6e4bbd6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-python-dns-security-update-b6e4bbd6</guid>
+      <description><![CDATA[Red Hat released a security update for python‑dns on RHEL 8, addressing CVE‑2026‑43871. The flaw, rated Important, allows improper input handling that could lead to arbitrary code execution or denial of service, with a CVSS base score in the 7‑8 range. Red Hat has published the patch; administrators should apply it immediately to mitigate the risk.]]></description>
+      <pubDate>Tue, 03 Nov 2026 20:32:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94749">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Binance Breach via Fake Job Interview</title>
+      <link>https://secubuzz.com/news/binance-breach-via-fake-job-interview-b6f03f26</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-breach-via-fake-job-interview-b6f03f26</guid>
+      <description><![CDATA[Binance disclosed that North Korean hackers used a fake job interview to trick an employee into installing malware, compromising wallet infrastructure. The malware enabled credential theft and privileged access, allowing attackers to siphon roughly $6.34 billion in digital assets. Binance has secured its systems and is investigating; teams should review vetting procedures and monitor wallet activity.]]></description>
+      <pubDate>Tue, 03 Nov 2026 20:05:50 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Harvard Exposes 851,000 Emails in Breach</title>
       <link>https://secubuzz.com/news/harvard-exposes-851-000-emails-in-breach-9b7ceb07</link>
@@ -15,6 +42,15 @@
       <pubDate>Tue, 03 Nov 2026 19:50:00 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/harvard-university-data-breach-exposed-info-of-851-000">CyberNews AI</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Google Removes X.CPE Botnet from Android TV Boxes</title>
+      <link>https://secubuzz.com/news/google-removes-x-cpe-botnet-from-android-tv-boxes-ad747b86</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-removes-x-cpe-botnet-from-android-tv-boxes-ad747b86</guid>
+      <description><![CDATA[Google announced the dismantlement of the X.CPE botnet, which primarily infected Android TV set‑top boxes and other Android‑based IoT devices. The botnet leveraged compromised firmware updates to distribute malware, enabling attackers to harvest device credentials and exfiltrate data from connected services.]]></description>
+      <pubDate>Tue, 03 Nov 2026 19:48:00 GMT</pubDate>
+      <source url="https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes">The Record</source>
+      <category>General</category>
     </item>
     <item>
       <title>AWS OAuth Audience Validation Bypass CVE-2026-115413</title>
@@ -33,6 +69,60 @@
       <pubDate>Tue, 03 Nov 2026 18:54:53 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-167-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>LLMjacking Drives $1M Cloud AI Billing Fraud</title>
+      <link>https://secubuzz.com/news/llmjacking-drives-1m-cloud-ai-billing-fraud-2aad2aed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/llmjacking-drives-1m-cloud-ai-billing-fraud-2aad2aed</guid>
+      <description><![CDATA[Large language model hijacking attacks, called LLMjacking, are generating fraudulent cloud AI charges against Google Cloud customers. Attackers trigger high‑volume inference requests via unauthorized API calls, costing firms over $100,000 daily and totaling $1 million in billed usage. Customers should audit billing logs, revoke compromised keys, enable usage limits, and monitor for anomalous request patterns to mitigate further costs.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:51:04 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Chrome Extended Stable Update 156.0.8078.88 Released</title>
+      <link>https://secubuzz.com/news/chrome-extended-stable-update-156-0-8078-88-releas-96f8a50a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-update-156-0-8078-88-releas-96f8a50a</guid>
+      <description><![CDATA[Google Chrome’s Extended Stable channel received update 156.0.8078.88 for Windows and macOS, rolling out over the next weeks. The update includes multiple security fixes for previously reported vulnerabilities, though no CVE identifiers are listed. Users should install the update promptly to maintain protection against known exploits and review the Chrome release log for details.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:47:14 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Europol Seizes 100 Servers for Fake Trading Scam</title>
+      <link>https://secubuzz.com/news/europol-seizes-100-servers-for-fake-trading-scam-5942a559</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/europol-seizes-100-servers-for-fake-trading-scam-5942a559</guid>
+      <description><![CDATA[Europol seized 100 servers linked to a fake trading website scam targeting unsuspecting users. The operation uncovered threat actor profiles and court findings, indicating a coordinated phishing and credential theft campaign, though no direct exploitation of software vulnerabilities was reported. Law enforcement recommends monitoring for similar domain registrations and implementing stricter domain validation controls to mitigate future fraud.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:47:13 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/police-seizes-over-100-servers-in-investment-scam-crack">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>mSecure Advises Password and 2FA Reset After Suspicious Activity</title>
+      <link>https://secubuzz.com/news/msecure-advises-password-and-2fa-reset-after-suspi-21661f78</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/msecure-advises-password-and-2fa-reset-after-suspi-21661f78</guid>
+      <description><![CDATA[mSecure password manager users received an email warning of suspicious activity linked to the app, prompting immediate credential changes. The alert indicates potential unauthorized access to stored passwords, 2FA tokens, and passkeys, though no data exfiltration has been confirmed. Users should change all passwords, reset 2FA, remove passkeys, and review account activity logs to mitigate potential compromise.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:46:38 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>3AM Ransomware AI‑Driven School Attack Detection</title>
+      <link>https://secubuzz.com/news/3am-ransomware-ai-driven-school-attack-detection-f4c7db26</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/3am-ransomware-ai-driven-school-attack-detection-f4c7db26</guid>
+      <description><![CDATA[3AM ransomware has launched AI‑driven attacks against school estate systems, encrypting critical data and demanding ransom. The malware leverages machine‑learning models to evade detection, targeting backup files and exploiting unpatched vulnerabilities for lateral movement. Apply the latest ransomware protection rules, patch vulnerable assets, isolate affected networks, and monitor for lateral movement to prevent further spread.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:45:12 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai">CyberNews AI</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Apple Warns German Lawmakers of Spyware Targeting</title>
+      <link>https://secubuzz.com/news/apple-warns-german-lawmakers-of-spyware-targeting-51916cf9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-warns-german-lawmakers-of-spyware-targeting-51916cf9</guid>
+      <description><![CDATA[Apple warned several German lawmakers and foreign policy staff about spyware targeting them in 99 countries. The spyware exploits zero‑day vulnerabilities in iOS and macOS to covertly capture communications, with no public evidence of data exfiltration yet. Affected users should install the latest iOS and macOS updates, enable two‑factor authentication, and monitor network traffic for anomalies to mitigate espionage risk.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:44:00 GMT</pubDate>
+      <source url="https://therecord.media/german-officials-among-apple-spyware-warning-recipients">The Record</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>CVE-2026-119922 - Babelfish for PostgreSQL Privilege Escalation</title>
@@ -104,6 +194,42 @@
       <description><![CDATA[SOGo, an open‑source groupware server, contains a flaw that uses client‑supplied Origin headers in password reset link construction. A remote attacker can exploit this to harvest password reset tokens and hijack user accounts, potentially compromising sensitive data. Administrators should update to the latest SOGo release or apply the security patch provided in USN-8993-1 to mitigate the risk.]]></description>
       <pubDate>Tue, 03 Nov 2026 17:38:49 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8993-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Shapelib Shpsort Double Free Vulnerability</title>
+      <link>https://secubuzz.com/news/shapelib-shpsort-double-free-vulnerability-51438691</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/shapelib-shpsort-double-free-vulnerability-51438691</guid>
+      <description><![CDATA[Ubuntu identified a double‑free flaw in the shpsort utility of Shapelib, a library used for handling shapefile data. Improper input validation can trigger a double free, potentially leading to denial of service or arbitrary code execution if an attacker supplies crafted data. Ubuntu recommends applying the latest Shapelib update or patching the library to eliminate the vulnerability.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:38:38 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8992-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>rxvt‑Unicode Escape Sequence Vulnerability</title>
+      <link>https://secubuzz.com/news/rxvt-unicode-escape-sequence-vulnerability-3f6d84e9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rxvt-unicode-escape-sequence-vulnerability-3f6d84e9</guid>
+      <description><![CDATA[Ubuntu discovered that rxvt‑unicode mishandles specific escape sequences, creating a potential code execution vector in terminal sessions. When a user renders specially crafted text, the flaw can trigger arbitrary code execution, posing a risk to any system with exposed terminals. Ubuntu advises installing the latest rxvt‑unicode update or applying the provided patch to mitigate the vulnerability.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:37:49 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8991-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>libuser GECOS Field Validation Vulnerabilities</title>
+      <link>https://secubuzz.com/news/libuser-gecos-field-validation-vulnerabilities-adc6ae5d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/libuser-gecos-field-validation-vulnerabilities-adc6ae5d</guid>
+      <description><![CDATA[Two libuser vulnerabilities were disclosed affecting user information handling: CVE-2015-3245 allows local attackers to corrupt the passwd file via improper GECOS field validation, resulting in denial of service; CVE-2015-3246 permits privilege escalation through inconsistent passwd file modification during updates. Both require local access and impact system authentication integrity. Users should apply the updated libuser package to resolve these issues.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:36:51 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8987-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Swift Mailer Remote Code Execution Vulnerability</title>
+      <link>https://secubuzz.com/news/swift-mailer-remote-code-execution-vulnerability-ac8066f5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/swift-mailer-remote-code-execution-vulnerability-ac8066f5</guid>
+      <description><![CDATA[A remote code execution vulnerability was discovered in Swift Mailer due to improper sanitization of email addresses in the mail transport layer. An unauthenticated attacker could exploit this flaw by passing extra parameters to the underlying mail command. The vendor issued a security update to remediate the issue and prevent arbitrary code execution from remote locations.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:36:26 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8986-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -314,6 +440,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Red Hat Releases raptor2 Update for CVE-2026-43871</title>
+      <link>https://secubuzz.com/news/red-hat-releases-raptor2-update-for-cve-2026-43871-66f6a31c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-raptor2-update-for-cve-2026-43871-66f6a31c</guid>
+      <description><![CDATA[Red Hat issued a security update for the raptor2 component on Red Enterprise Linux 8, addressing a vulnerability identified as CVE‑2026‑43871. The flaw allows unauthenticated attackers to exploit a buffer overflow in raptor2, potentially achieving remote code execution with a CVSS score of 8.5. Red Hat recommends applying the latest raptor2 patch immediately; no work‑arounds are available.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:43:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94519">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>USN-8973-1: libmspack vulnerability</title>
       <link>https://secubuzz.com/news/usn-8973-1-libmspack-vulnerability-5f9e846e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/usn-8973-1-libmspack-vulnerability-5f9e846e</guid>
@@ -321,141 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 14:42:47 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8973-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel‑rt Critical Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-critical-update-dd99d353</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-critical-update-dd99d353</guid>
-      <description><![CDATA[Red Hat issued a critical kernel‑rt update for Enterprise Linux 9.2 SAP, addressing vulnerabilities that could allow privilege escalation. The update mitigates CVE‑2026‑43871, a flaw with a CVSS score that Red Hat rates as critical, though no active exploitation is reported. Deploy the patch immediately; no workarounds are available, and monitor for kernel‑level anomalies.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:34:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94558">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>HAProxy Vulnerabilities Allow Denial of Service via HTTP/2 and HTTP/1.1</title>
-      <link>https://secubuzz.com/news/haproxy-vulnerabilities-allow-denial-of-service-vi-416fa8af</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/haproxy-vulnerabilities-allow-denial-of-service-vi-416fa8af</guid>
-      <description><![CDATA[Two CVEs affecting HAProxy were disclosed: CVE-2026-110353 and CVE-2026-110354, both involving incorrect handling of truncated HTTP/2 PING frames and certain HTTP/1.1 chunked requests respectively. A remote attacker could trigger excessive CPU consumption leading to denial of service without authentication. The vulnerabilities require no exploitation confirmation beyond the advisory description.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:33:21 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8972-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Frontline Education Breach Exposes 1.3 Million Records</title>
-      <link>https://secubuzz.com/news/frontline-education-breach-exposes-1-3-million-rec-4bdd1929</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/frontline-education-breach-exposes-1-3-million-rec-4bdd1929</guid>
-      <description><![CDATA[Hackers exploited a flaw in third‑party software used by Frontline Education, compromising personal data of staff and students. The vulnerability enabled unauthorized extraction of names, addresses, and academic details, affecting more than 1.3 million individuals. Frontline Education has notified affected parties, coordinated with the vendor to patch the flaw, and urged MFA enforcement.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:32:38 GMT</pubDate>
-      <source url="https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>GNOME Shell Vulnerability Allows DoS and Information Disclosure from Remote Icons</title>
-      <link>https://secubuzz.com/news/gnome-shell-vulnerability-allows-dos-and-informati-f13ad83a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gnome-shell-vulnerability-allows-dos-and-informati-f13ad83a</guid>
-      <description><![CDATA[A vulnerability was discovered in GNOME Shell where improper validation of icon dimensions from remote search providers could cause crashes or expose sensitive memory information. The flaw requires no authentication and affects desktop environments processing untrusted icon data. The advisory describes a denial of service vector combined with potential information disclosure from improperly validated remote icon sources.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:13:50 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8971-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Videostrong Deploys Backdoor in 1.3 Million Android TV Boxes</title>
-      <link>https://secubuzz.com/news/videostrong-deploys-backdoor-in-1-3-million-androi-04cc5652</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/videostrong-deploys-backdoor-in-1-3-million-androi-04cc5652</guid>
-      <description><![CDATA[Videostrong embedded a hidden backdoor in more than 1.3 million Android set‑top boxes, creating a covert botnet. The flaw allowed remote command execution without authentication, enabling attackers to issue arbitrary instructions and exfiltrate data from compromised devices. Affected manufacturers should release firmware updates to remove the backdoor, and security teams must monitor device traffic for anomalous outbound connections.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:11:25 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/mobile/2026/11/a-hidden-backdoor-put-1-3-million-tv-boxes-to-work-for-criminals">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-8970-1: GVfs vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-8970-1-gvfs-vulnerabilities-1242a7ca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-8970-1-gvfs-vulnerabilities-1242a7ca</guid>
-      <description><![CDATA[A remote attacker could possibly use this issue to obtain sensitive information. (CVE-2026-84267) It was discovered that GVfs did not properly validate the size of replies from an AFP server. A remote attacker could possibly use this issue to cause a denial of service. (CVE-2026-84269) It was discovered that GVfs did not properly validate the size of data returned by an MTP device.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:06:15 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8970-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Novee puts forgotten internet-facing assets through penetration testing</title>
-      <link>https://secubuzz.com/news/novee-puts-forgotten-internet-facing-assets-throug-a6d4771e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/novee-puts-forgotten-internet-facing-assets-throug-a6d4771e</guid>
-      <description><![CDATA[Novee’s External Surface Testing is a new capability in its AI penetration testing platform that helps security teams discover internet-facing assets and validate exploitable vulnerabilities. It tests newly disclosed CVEs and findings imported from third-party external attack surface management (EASM) tools. “Attackers don’t limit themselves to the applications you’re already testing.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:00:26 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/novee-external-surface-testing/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cloudflare Launches Zero Wire for Vulnerability Triage</title>
-      <link>https://secubuzz.com/news/cloudflare-launches-zero-wire-for-vulnerability-tr-51d37c94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-zero-wire-for-vulnerability-tr-51d37c94</guid>
-      <description><![CDATA[Cloudflare introduced Zero Wire, a platform that aggregates plain‑language briefings with real‑time attack telemetry to aid security teams. Zero Wire enables faster triage of critical CVEs by providing remediation steps and contextual threat data alongside Cloudflare Radar insights. Security teams can integrate Zero Wire into their workflow to prioritize patches and adjust defenses based on up‑to‑date telemetry.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/zero-wire/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>3AM Ransomware Hits UK School Estate</title>
-      <link>https://secubuzz.com/news/3am-ransomware-hits-uk-school-estate-8aa1b577</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/3am-ransomware-hits-uk-school-estate-8aa1b577</guid>
-      <description><![CDATA[A 3AM ransomware affiliate targeted a UK school estate, encrypting about 37 of nearly 50 machines accessed from an unmanaged host. The attack leveraged an unpatched remote execution flaw in the host’s management software, enabling credential theft and lateral movement across the network. Administrators should apply the vendor’s latest patch, enforce least‑privilege access, and isolate backups to prevent further spread.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/">BleepingComputer</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>3AM Affiliate Uses AI‑Like Loops in School Attack</title>
-      <link>https://secubuzz.com/news/3am-affiliate-uses-ai-like-loops-in-school-attack-0bf1865c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/3am-affiliate-uses-ai-like-loops-in-school-attack-0bf1865c</guid>
-      <description><![CDATA[Investigators found a 3AM ransomware affiliate used an AI‑like model to generate and refine attack commands during a breach of a European school network. The model’s iterative loops enabled real‑time payload adaptation, yet researchers found no evidence of full automation. Teams should monitor command logs, enforce privilege limits, and apply current ransomware defenses.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack">Dark Reading</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Assured Launches CleanRoom SCAN for Backup Hygiene</title>
-      <link>https://secubuzz.com/news/assured-launches-cleanroom-scan-for-backup-hygiene-74bace0e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/assured-launches-cleanroom-scan-for-backup-hygiene-74bace0e</guid>
-      <description><![CDATA[Assured Data Protection introduced CleanRoom SCAN, a managed service that independently scans isolated backup copies using multiple security engines. The service detects malware and indicators of compromise before restoration, reducing the risk of reinfecting production environments during recovery. Organizations should adopt CleanRoom SCAN to validate backup integrity and apply remediation before deploying recovered data.]]></description>
-      <pubDate>Tue, 03 Nov 2026 13:59:38 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/assured-data-protection-cleanroom-scan/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ARTEX AI Automates Enterprise Attacks at Machine Speed</title>
-      <link>https://secubuzz.com/news/artex-ai-automates-enterprise-attacks-at-machine-s-839c89b6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/artex-ai-automates-enterprise-attacks-at-machine-s-839c89b6</guid>
-      <description><![CDATA[Attackers employ the ARTEX AI framework to accelerate credential‑based attacks, enabling rapid cloud privilege escalation, lateral movement, and data exfiltration. Recent campaigns demonstrate the framework’s ability to automate complex intrusion stages in minutes, raising concerns for organizations relying on traditional detection methods. Defenders should adopt AI‑aware monitoring, enforce strict credential hygiene, and update detection rules to counter ARTEX‑driven attacks.]]></description>
-      <pubDate>Tue, 03 Nov 2026 13:58:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/artex-ai-automate-enterprise-attacks/">Cyber Security News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Bind DNS Multiple Denial-of-Service Vulnerabilities Patched</title>
-      <link>https://secubuzz.com/news/bind-dns-multiple-denial-of-service-vulnerabilitie-bb884879</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/bind-dns-multiple-denial-of-service-vulnerabilitie-bb884879</guid>
-      <description><![CDATA[It was discovered that Bind incorrectly handled certain DNS messages with repeated singleton records such as SOA, CNAME, or DNAME records. A remote attacker could possibly use this issue to cause Bind to use excessive memory, leading to a denial of service. This issue only affected Ubuntu 26.10. (CVE-2026-75029). It was discovered that Bind incorrectly handled cached DNSSEC proofs.]]></description>
-      <pubDate>Tue, 03 Nov 2026 13:45:46 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8969-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Russia-Linked Spies Target Ukrainian War Crimes Data</title>
-      <link>https://secubuzz.com/news/russia-linked-spies-target-ukrainian-war-crimes-da-4e03054c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russia-linked-spies-target-ukrainian-war-crimes-da-4e03054c</guid>
-      <description><![CDATA[Russian‑linked actors deployed simple malware to exfiltrate sensitive documents and login credentials from Ukrainian war‑crimes investigators and military aid entities. The attacks relied on credential theft rather than a zero‑day flaw, limiting impact to compromised accounts and confidential records. Teams should enforce MFA, monitor anomalous logins, and apply vendor patches to prevent further exfiltration.]]></description>
-      <pubDate>Tue, 03 Nov 2026 13:39:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-linked-cyber-spies-target-ukraine-war-support">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Police Seize 100+ Servers in European Investment Fraud Crackdown</title>
-      <link>https://secubuzz.com/news/police-seize-100-servers-in-european-investment-fr-e35b024b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/police-seize-100-servers-in-european-investment-fr-e35b024b</guid>
-      <description><![CDATA[European authorities conducted a coordinated operation that seized more than 100 servers used by a fraudulent investment network targeting online trading platform users. The sites prevented victims from withdrawing profits, defrauding them of over four million euros and exposing sensitive financial data. Police arrested seven suspects and dismantled the infrastructure, ending the scam and protecting market integrity.]]></description>
-      <pubDate>Tue, 03 Nov 2026 13:33:49 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

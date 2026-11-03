@@ -11,6 +11,60 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "gorbag-apt-self-deleting-malware-detection-guide-217b96d7",
+    "title": "Gorbag APT Self‑Deleting Malware Detection Guide",
+    "summary": "Gorbag APT has deployed self‑deleting malware delivered via spearphishing campaigns targeting corporate email users. The malware erases its own code after execution, evading traditional signature‑based detection and allowing attackers to maintain persistence without leaving forensic footprints. Security teams should monitor for anomalous email attachments, enable advanced threat protection, and apply the latest email gateway updates to block known Gorbag indicators.",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council",
+    "publishedAt": "2026-11-03T20:50:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gorbag-apt-self-deleting-malware-detection-guide",
+      "article-217b96d7",
+      "217b96d7",
+      "gorbag-apt-self-deleting-malware-detection-guide-51f68e"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-python-dns-security-update-b6e4bbd6",
+    "title": "Red Hat Releases Python-dns Security Update",
+    "summary": "Red Hat released a security update for python‑dns on RHEL 8, addressing CVE‑2026‑43871. The flaw, rated Important, allows improper input handling that could lead to arbitrary code execution or denial of service, with a CVSS base score in the 7‑8 range. Red Hat has published the patch; administrators should apply it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94749",
+    "publishedAt": "2026-11-03T20:32:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-python-dns-security-update",
+      "article-b6e4bbd6",
+      "b6e4bbd6",
+      "red-hat-releases-python-dns-security-update-37d8ae"
+    ]
+  },
+  {
+    "slug": "binance-breach-via-fake-job-interview-b6f03f26",
+    "title": "Binance Breach via Fake Job Interview",
+    "summary": "Binance disclosed that North Korean hackers used a fake job interview to trick an employee into installing malware, compromising wallet infrastructure. The malware enabled credential theft and privileged access, allowing attackers to siphon roughly $6.34 billion in digital assets. Binance has secured its systems and is investigating; teams should review vetting procedures and monitor wallet activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+    "publishedAt": "2026-11-03T20:05:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-breach-via-fake-job-interview",
+      "article-b6f03f26",
+      "b6f03f26",
+      "binance-breach-via-fake-job-interview-5121c6"
+    ]
+  },
+  {
     "slug": "harvard-exposes-851-000-emails-in-breach-9b7ceb07",
     "title": "Harvard Exposes 851,000 Emails in Breach",
     "summary": "A breach at Harvard exposed 851,000 email addresses, compromising user credentials and potentially enabling phishing attacks. The incident involved unauthorized access to the university’s audit database, revealing sensitive contact information and internal email addresses. Security teams should review root‑cause telemetry, deploy detection rules, and apply patches immediately to prevent further exposure and mitigate credential theft.",
@@ -26,6 +80,24 @@ export const news: NewsBrief[] = [
       "article-9b7ceb07",
       "9b7ceb07",
       "harvard-exposes-851-000-emails-in-breach-4b3b06"
+    ]
+  },
+  {
+    "slug": "google-removes-x-cpe-botnet-from-android-tv-boxes-ad747b86",
+    "title": "Google Removes X.CPE Botnet from Android TV Boxes",
+    "summary": "Google announced the dismantlement of the X.CPE botnet, which primarily infected Android TV set‑top boxes and other Android‑based IoT devices. The botnet leveraged compromised firmware updates to distribute malware, enabling attackers to harvest device credentials and exfiltrate data from connected services.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes",
+    "publishedAt": "2026-11-03T19:48:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-removes-x-cpe-botnet-from-android-tv-boxes",
+      "article-ad747b86",
+      "ad747b86",
+      "google-removes-x-cpe-botnet-from-android-tv-boxes-4e4f2c"
     ]
   },
   {
@@ -68,6 +140,116 @@ export const news: NewsBrief[] = [
       "e1d9033d",
       "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re-74b83e",
       "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-rendering-cv"
+    ]
+  },
+  {
+    "slug": "llmjacking-drives-1m-cloud-ai-billing-fraud-2aad2aed",
+    "title": "LLMjacking Drives $1M Cloud AI Billing Fraud",
+    "summary": "Large language model hijacking attacks, called LLMjacking, are generating fraudulent cloud AI charges against Google Cloud customers. Attackers trigger high‑volume inference requests via unauthorized API calls, costing firms over $100,000 daily and totaling $1 million in billed usage. Customers should audit billing logs, revoke compromised keys, enable usage limits, and monitor for anomalous request patterns to mitigate further costs.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
+    "publishedAt": "2026-11-03T18:51:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "llmjacking-drives-1m-cloud-ai-billing-fraud",
+      "article-2aad2aed",
+      "2aad2aed",
+      "llmjacking-drives-1m-cloud-ai-billing-fraud-3be83d"
+    ]
+  },
+  {
+    "slug": "chrome-extended-stable-update-156-0-8078-88-releas-96f8a50a",
+    "title": "Chrome Extended Stable Update 156.0.8078.88 Released",
+    "summary": "Google Chrome’s Extended Stable channel received update 156.0.8078.88 for Windows and macOS, rolling out over the next weeks. The update includes multiple security fixes for previously reported vulnerabilities, though no CVE identifiers are listed. Users should install the update promptly to maintain protection against known exploits and review the Chrome release log for details.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop.html",
+    "publishedAt": "2026-11-03T18:47:14.028Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-extended-stable-update-156-0-8078-88-releas",
+      "article-96f8a50a",
+      "96f8a50a",
+      "chrome-extended-stable-update-156-0-8078-88-releas-649d4c",
+      "chrome-extended-stable-update-156-0-8078-88-released"
+    ]
+  },
+  {
+    "slug": "europol-seizes-100-servers-for-fake-trading-scam-5942a559",
+    "title": "Europol Seizes 100 Servers for Fake Trading Scam",
+    "summary": "Europol seized 100 servers linked to a fake trading website scam targeting unsuspecting users. The operation uncovered threat actor profiles and court findings, indicating a coordinated phishing and credential theft campaign, though no direct exploitation of software vulnerabilities was reported. Law enforcement recommends monitoring for similar domain registrations and implementing stricter domain validation controls to mitigate future fraud.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/police-seizes-over-100-servers-in-investment-scam-crack",
+    "publishedAt": "2026-11-03T18:47:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "europol-seizes-100-servers-for-fake-trading-scam",
+      "article-5942a559",
+      "5942a559",
+      "europol-seizes-100-servers-for-fake-trading-scam-785955"
+    ]
+  },
+  {
+    "slug": "msecure-advises-password-and-2fa-reset-after-suspi-21661f78",
+    "title": "mSecure Advises Password and 2FA Reset After Suspicious Activity",
+    "summary": "mSecure password manager users received an email warning of suspicious activity linked to the app, prompting immediate credential changes. The alert indicates potential unauthorized access to stored passwords, 2FA tokens, and passkeys, though no data exfiltration has been confirmed. Users should change all passwords, reset 2FA, remove passkeys, and review account activity logs to mitigate potential compromise.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+    "publishedAt": "2026-11-03T18:46:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "msecure-advises-password-and-2fa-reset-after-suspi",
+      "article-21661f78",
+      "21661f78",
+      "msecure-advises-password-and-2fa-reset-after-suspi-fd9126",
+      "msecure-advises-password-and-2fa-reset-after-suspicious-acti"
+    ]
+  },
+  {
+    "slug": "3am-ransomware-ai-driven-school-attack-detection-f4c7db26",
+    "title": "3AM Ransomware AI‑Driven School Attack Detection",
+    "summary": "3AM ransomware has launched AI‑driven attacks against school estate systems, encrypting critical data and demanding ransom. The malware leverages machine‑learning models to evade detection, targeting backup files and exploiting unpatched vulnerabilities for lateral movement. Apply the latest ransomware protection rules, patch vulnerable assets, isolate affected networks, and monitor for lateral movement to prevent further spread.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai",
+    "publishedAt": "2026-11-03T18:45:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "3am-ransomware-ai-driven-school-attack-detection",
+      "article-f4c7db26",
+      "f4c7db26",
+      "3am-ransomware-ai-driven-school-attack-detection-627225"
+    ]
+  },
+  {
+    "slug": "apple-warns-german-lawmakers-of-spyware-targeting-51916cf9",
+    "title": "Apple Warns German Lawmakers of Spyware Targeting",
+    "summary": "Apple warned several German lawmakers and foreign policy staff about spyware targeting them in 99 countries. The spyware exploits zero‑day vulnerabilities in iOS and macOS to covertly capture communications, with no public evidence of data exfiltration yet. Affected users should install the latest iOS and macOS updates, enable two‑factor authentication, and monitor network traffic for anomalies to mitigate espionage risk.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/german-officials-among-apple-spyware-warning-recipients",
+    "publishedAt": "2026-11-03T18:44:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-warns-german-lawmakers-of-spyware-targeting",
+      "article-51916cf9",
+      "51916cf9",
+      "apple-warns-german-lawmakers-of-spyware-targeting-1f6330"
     ]
   },
   {
@@ -226,6 +408,81 @@ export const news: NewsBrief[] = [
       "6b28e205",
       "sogo-vulnerability-enables-password-reset-token-th-7fbb9e",
       "sogo-vulnerability-enables-password-reset-token-theft"
+    ]
+  },
+  {
+    "slug": "shapelib-shpsort-double-free-vulnerability-51438691",
+    "title": "Shapelib Shpsort Double Free Vulnerability",
+    "summary": "Ubuntu identified a double‑free flaw in the shpsort utility of Shapelib, a library used for handling shapefile data. Improper input validation can trigger a double free, potentially leading to denial of service or arbitrary code execution if an attacker supplies crafted data. Ubuntu recommends applying the latest Shapelib update or patching the library to eliminate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8992-1",
+    "publishedAt": "2026-11-03T17:38:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "shapelib-shpsort-double-free-vulnerability",
+      "article-51438691",
+      "51438691",
+      "shapelib-shpsort-double-free-vulnerability-7fbba1"
+    ]
+  },
+  {
+    "slug": "rxvt-unicode-escape-sequence-vulnerability-3f6d84e9",
+    "title": "rxvt‑Unicode Escape Sequence Vulnerability",
+    "summary": "Ubuntu discovered that rxvt‑unicode mishandles specific escape sequences, creating a potential code execution vector in terminal sessions. When a user renders specially crafted text, the flaw can trigger arbitrary code execution, posing a risk to any system with exposed terminals. Ubuntu advises installing the latest rxvt‑unicode update or applying the provided patch to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8991-1",
+    "publishedAt": "2026-11-03T17:37:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rxvt-unicode-escape-sequence-vulnerability",
+      "article-3f6d84e9",
+      "3f6d84e9",
+      "rxvt-unicode-escape-sequence-vulnerability-7fbba5"
+    ]
+  },
+  {
+    "slug": "libuser-gecos-field-validation-vulnerabilities-adc6ae5d",
+    "title": "libuser GECOS Field Validation Vulnerabilities",
+    "summary": "Two libuser vulnerabilities were disclosed affecting user information handling: CVE-2015-3245 allows local attackers to corrupt the passwd file via improper GECOS field validation, resulting in denial of service; CVE-2015-3246 permits privilege escalation through inconsistent passwd file modification during updates. Both require local access and impact system authentication integrity. Users should apply the updated libuser package to resolve these issues.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8987-1",
+    "publishedAt": "2026-11-03T17:36:51.000Z",
+    "cves": [
+      "CVE-2015-3245",
+      "CVE-2015-3246"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "libuser-gecos-field-validation-vulnerabilities",
+      "article-adc6ae5d",
+      "adc6ae5d",
+      "libuser-gecos-field-validation-vulnerabilities-7fbc03"
+    ]
+  },
+  {
+    "slug": "swift-mailer-remote-code-execution-vulnerability-ac8066f5",
+    "title": "Swift Mailer Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability was discovered in Swift Mailer due to improper sanitization of email addresses in the mail transport layer. An unauthenticated attacker could exploit this flaw by passing extra parameters to the underlying mail command. The vendor issued a security update to remediate the issue and prevent arbitrary code execution from remote locations.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8986-1",
+    "publishedAt": "2026-11-03T17:36:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "swift-mailer-remote-code-execution-vulnerability",
+      "article-ac8066f5",
+      "ac8066f5",
+      "swift-mailer-remote-code-execution-vulnerability-7fbc07"
     ]
   },
   {
@@ -658,6 +915,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-raptor2-update-for-cve-2026-43871-66f6a31c",
+    "title": "Red Hat Releases raptor2 Update for CVE-2026-43871",
+    "summary": "Red Hat issued a security update for the raptor2 component on Red Enterprise Linux 8, addressing a vulnerability identified as CVE‑2026‑43871. The flaw allows unauthenticated attackers to exploit a buffer overflow in raptor2, potentially achieving remote code execution with a CVSS score of 8.5. Red Hat recommends applying the latest raptor2 patch immediately; no work‑arounds are available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94519",
+    "publishedAt": "2026-11-03T14:43:47.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-raptor2-update-for-cve-2026-43871",
+      "article-66f6a31c",
+      "66f6a31c",
+      "red-hat-releases-raptor2-update-for-cve-2026-43871-37d8b6"
+    ]
+  },
+  {
     "slug": "usn-8973-1-libmspack-vulnerability-5f9e846e",
     "title": "USN-8973-1: libmspack vulnerability",
     "summary": "It was discovered that libmspack did not properly initialize pointers when handling errors while reading KWAJ archive headers. An attacker could possibly use this issue to cause libmspack to crash, resulting in a denial of service, or execute arbitrary code.",
@@ -902,6 +1179,24 @@ export const news: NewsBrief[] = [
       "839c89b6",
       "artex-ai-automates-enterprise-attacks-at-machine-s-39a79b",
       "artex-ai-automates-enterprise-attacks-at-machine-speed"
+    ]
+  },
+  {
+    "slug": "russia-disrupts-vasygrek-cybercrime-group-205abde7",
+    "title": "Russia Disrupts VasyGrek Cybercrime Group",
+    "summary": "Russia's Interior Ministry dismantled the infrastructure of the VasyGrek cybercrime group following a joint investigation with cybersecurity firm Kaspersky. Three suspects were detained as part of the operation targeting the organized criminal network. The enforcement action represents a significant disruption to the group's operational capacity and financial infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russia-dismantles-vasygrek-infrastructure-detains-three",
+    "publishedAt": "2026-11-03T13:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russia-disrupts-vasygrek-cybercrime-group",
+      "article-205abde7",
+      "205abde7",
+      "russia-disrupts-vasygrek-cybercrime-group-28c6e2"
     ]
   },
   {
@@ -1181,6 +1476,27 @@ export const news: NewsBrief[] = [
       "article-dc5c2e21",
       "dc5c2e21",
       "subnet-solutions-powersystem-center-41c85b"
+    ]
+  },
+  {
+    "slug": "rhel-ai-3-4-rpm-runtime-cve-fixes-630247ed",
+    "title": "RHEL AI 3.4 RPM Runtime CVE Fixes",
+    "summary": "Red Hat released an important security update addressing two RPM runtime vulnerabilities in RHEL AI 3.4, identified as CVE-2026-43871 and CVE-2026-55969. These flaws impact the RPM runtime component of the RHEL AI platform, requiring immediate patching to prevent exploitation. Administrators should apply the updated RPM packages to mitigate the disclosed vulnerabilities.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94503",
+    "publishedAt": "2026-11-03T11:52:45.000Z",
+    "cves": [
+      "CVE-2026-43871",
+      "CVE-2026-55969"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhel-ai-3-4-rpm-runtime-cve-fixes",
+      "article-630247ed",
+      "630247ed",
+      "rhel-ai-3-4-rpm-runtime-cve-fixes-37d8b7"
     ]
   },
   {
@@ -9219,333 +9535,6 @@ export const news: NewsBrief[] = [
       "article-d4f6e9e3",
       "d4f6e9e3",
       "belarus-aligns-with-russia-s-frostyneighbor-apt-727e9e"
-    ]
-  },
-  {
-    "slug": "rhel-8-8-kernel-update-addresses-important-vulnera-0cd2a0c4",
-    "title": "RHEL 8.8 Kernel Update Addresses Important Vulnerabilities",
-    "summary": "Red Hat released a kernel update for RHEL 8.8 Update Services for SAP Solutions and Telecommunications, addressing multiple security vulnerabilities. The advisory lists several CVEs with CVSS base scores, but the update is classified as Important, indicating a high risk of exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92997",
-    "publishedAt": "2026-10-30T07:39:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel-8-8-kernel-update-addresses-important-vulnera",
-      "article-0cd2a0c4",
-      "0cd2a0c4",
-      "rhel-8-8-kernel-update-addresses-important-vulnera-37d98f",
-      "rhel-8-8-kernel-update-addresses-important-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "cisa-adds-gitlab-rce-and-cisco-dos-to-kev-24be889d",
-    "title": "CISA Adds GitLab RCE and Cisco DoS to KEV",
-    "summary": "CISA added two actively exploited flaws to its KEV list: GitLab RCE CVE‑2026‑97229 and a Cisco firewall DoS. The GitLab flaw, CVSS 10.0, permits arbitrary code execution via an integer overflow in repository handling. Patches are available; administrators should update affected systems immediately, monitor for exploitation, and verify that firewall configurations are hardened.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
-    "publishedAt": "2026-10-30T07:27:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-gitlab-rce-and-cisco-dos-to-kev",
-      "article-24be889d",
-      "24be889d",
-      "cisa-adds-gitlab-rce-and-cisco-dos-to-kev-aae9db"
-    ]
-  },
-  {
-    "slug": "kernel-update-for-rhel-9-fixes-important-vulnerabi-73ef6dfa",
-    "title": "Kernel Update for RHEL 9 Fixes Important Vulnerabilities",
-    "summary": "Red Hat released a kernel update for Enterprise Linux 9 to fix multiple kernel vulnerabilities that could compromise system integrity. The vulnerabilities, rated Important by Red Product Security, carry CVSS base scores accessible through CVE links, suggesting moderate to high risk. Apply the kernel patch promptly per Red Hat’s instructions to prevent privilege escalation or denial-of-service attacks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92993",
-    "publishedAt": "2026-10-30T06:37:42.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93412"
-      }
-    ],
-    "aliases": [
-      "kernel-update-for-rhel-9-fixes-important-vulnerabi",
-      "article-73ef6dfa",
-      "73ef6dfa",
-      "kernel-update-for-rhel-9-fixes-important-vulnerabi-37d98f",
-      "kernel-update-for-rhel-9-fixes-important-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "fake-it-help-desk-calls-lead-to-ransomware-infecti-255d6db4",
-    "title": "Fake IT Help Desk Calls Lead to Ransomware Infections",
-    "summary": "Attackers posing as IT help desk staff contacted employees by phone, email and Microsoft Teams in Q3 2026, leveraging known employee names and email addresses to establish remote access sessions. In one engagement, the resulting access led to a ransomware deployment. Cisco Talos Incident Response documented multiple such campaigns across several engagements.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/cisco-talos-it-help-desk-vishing/",
-    "publishedAt": "2026-10-30T06:30:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-it-help-desk-calls-lead-to-ransomware-infecti",
-      "article-255d6db4",
-      "255d6db4",
-      "fake-it-help-desk-calls-lead-to-ransomware-infecti-3c2c80",
-      "fake-it-help-desk-calls-lead-to-ransomware-infections"
-    ]
-  },
-  {
-    "slug": "gartner-introduces-integrated-security-operations-5429a29a",
-    "title": "Gartner Introduces Integrated Security Operations Center (ISOC)",
-    "summary": "Gartner has defined the Integrated Security Operations Center (ISOC) category to address gaps left by traditional SIEM solutions. The shift reflects that SIEMs alone cannot collect data, support investigations, or manage incidents effectively in today’s evolving threat landscape. Organizations should evaluate ISOC offerings, integrate them with existing SIEMs, and adopt modular architectures to improve detection and response capabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/stellar-cyber-integrated-security-operations-center/",
-    "publishedAt": "2026-10-30T06:00:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gartner-introduces-integrated-security-operations",
-      "article-5429a29a",
-      "5429a29a",
-      "gartner-introduces-integrated-security-operations-1d54dc",
-      "gartner-introduces-integrated-security-operations-center-iso"
-    ]
-  },
-  {
-    "slug": "scammers-rebuild-fake-shopping-sites-rapidly-f5fca8b8",
-    "title": "Scammers Rebuild Fake Shopping Sites Rapidly",
-    "summary": "Scammers rapidly rebuild counterfeit .shop domains after takedowns, deploying identical HTML, JavaScript, and payment forms to harvest card data. The operation targets retail and ticketing sites, funneling captured credentials to a single collection backend. Security teams should monitor domain registrations and block traffic to known malicious IPs to mitigate card‑number theft.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/akamai-fake-account-abuse-report/",
-    "publishedAt": "2026-10-30T05:30:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "scammers-rebuild-fake-shopping-sites-rapidly",
-      "article-f5fca8b8",
-      "f5fca8b8",
-      "scammers-rebuild-fake-shopping-sites-rapidly-3347c6"
-    ]
-  },
-  {
-    "slug": "smart-tvs-harbor-unpatched-security-flaws-and-trac-0cf9fa7e",
-    "title": "Smart TVs Harbor Unpatched Security Flaws and Tracking Capabilities",
-    "summary": "Bitdefender's 2026 IoT Security Landscape Report found smart TVs and connected plugs represented significant shares of recorded household device vulnerabilities, with televisions at 22.7% and smart plugs at 22.4%. Analysis covered approximately 10.4 million protected home routers between January and September 2026. Household electronics can remain in use for five to ten years, extending exposure to unpatched flaws.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/bitdefender-smart-tvs-vulnerabilities-report/",
-    "publishedAt": "2026-10-30T05:00:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "smart-tvs-harbor-unpatched-security-flaws-and-trac",
-      "article-0cf9fa7e",
-      "0cf9fa7e",
-      "smart-tvs-harbor-unpatched-security-flaws-and-trac-74f264",
-      "smart-tvs-harbor-unpatched-security-flaws-and-tracking-capab"
-    ]
-  },
-  {
-    "slug": "crowdstrike-visualizes-agent-endpoint-actions-fd151a5e",
-    "title": "CrowdStrike Visualizes Agent Endpoint Actions",
-    "summary": "CrowdStrike released a visual graph illustrating how its endpoint agents interact with system components. The diagram maps agent processes, data flows, and command execution paths, providing visibility into detection and response workflows. Security teams can use the graph to validate agent behavior and troubleshoot deployment anomalies to improve incident response.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agent-graph-shows-how-agents-act-on-endpoint/",
-    "publishedAt": "2026-10-30T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-visualizes-agent-endpoint-actions",
-      "article-fd151a5e",
-      "fd151a5e",
-      "crowdstrike-visualizes-agent-endpoint-actions-8fcf1a"
-    ]
-  },
-  {
-    "slug": "crowdstrike-expands-overwatch-to-ai-and-google-clo-c0b3c5d1",
-    "title": "CrowdStrike Expands OverWatch to AI and Google Cloud",
-    "summary": "CrowdStrike has broadened its Falcon Adversary OverWatch threat‑hunting service to cover AI workloads and Google Cloud environments. The expansion enables continuous monitoring of cloud-native AI applications, detecting anomalous behavior and potential adversary activity in real time. Security teams should integrate OverWatch into their cloud security posture, configure relevant sensors, and review alerts for emerging threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-threat-hunting-across-ai-and-google-cloud/",
-    "publishedAt": "2026-10-30T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-expands-overwatch-to-ai-and-google-clo",
-      "article-c0b3c5d1",
-      "c0b3c5d1",
-      "crowdstrike-expands-overwatch-to-ai-and-google-clo-758048",
-      "crowdstrike-expands-overwatch-to-ai-and-google-cloud"
-    ]
-  },
-  {
-    "slug": "falcon-next-gen-siem-offers-intelligence-advantage-ac733279",
-    "title": "Falcon Next-Gen SIEM Offers Intelligence Advantage",
-    "summary": "CrowdStrike releases Falcon Next‑Gen SIEM, a cloud‑native platform that merges threat intelligence feeds with automated analytics. The solution applies machine learning to correlate logs from endpoints, cloud services, and network devices, detecting anomalous activity while filtering false positives. Deployment requires no on‑prem hardware; organizations use pre‑built playbooks and integrate the SIEM with existing SOC workflows for continuous monitoring and response.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/build-intelligence-advantage-with-falcon-next-gen-siem/",
-    "publishedAt": "2026-10-30T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "falcon-next-gen-siem-offers-intelligence-advantage",
-      "article-ac733279",
-      "ac733279",
-      "falcon-next-gen-siem-offers-intelligence-advantage-6dbd10"
-    ]
-  },
-  {
-    "slug": "binance-breach-exposes-6-3b-assets-freezes-3b-3486d51e",
-    "title": "Binance Breach Exposes $6.3B Assets, Freezes $3B",
-    "summary": "Binance suffered a security breach that exposed approximately $6.3 billion in assets and froze about $3 billion on‑chain. The incident involved unauthorized access to user balances, with Tether and Circle freezing related USDT and USDC tokens. Binance is investigating the root cause, tightening access controls, and advising users to monitor accounts while awaiting further updates.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
-    "publishedAt": "2026-10-30T04:14:59.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/binance-suffers-security-breach-affecting-6-3-billion-i"
-      }
-    ],
-    "aliases": [
-      "binance-breach-exposes-6-3b-assets-freezes-3b",
-      "article-3486d51e",
-      "3486d51e",
-      "binance-breach-exposes-6-3b-assets-freezes-3b-35768a"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-released-for-friday-30-oct-2026-faea5f45",
-    "title": "ISC Stormcast Released for Friday 30 Oct 2026",
-    "summary": "ISC released its Friday 30 October 2026 stormcast, summarizing global threat activity. The briefing covered emerging malware campaigns, phishing trends, and infrastructure attacks observed during the week, offering analysts a consolidated view of the threat landscape. Subscribers can access the full podcast and related threat data via the ISC website for immediate situational awareness.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33472",
-    "publishedAt": "2026-10-30T03:30:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-released-for-friday-30-oct-2026",
-      "article-faea5f45",
-      "faea5f45",
-      "isc-stormcast-released-for-friday-30-oct-2026-57dd7e"
-    ]
-  },
-  {
-    "slug": "vmware-releases-patch-for-esx-zero-day-flaw-875f99b1",
-    "title": "VMware Releases Patch for ESX Zero-Day Flaw",
-    "summary": "A zero‑day flaw in VMware ESX allows remote attackers to execute arbitrary code via a malformed configuration file. The vulnerability, identified as CVE‑2026‑41709, has a CVSS score of 9.5 and is actively exploitable without authentication, potentially compromising virtualized environments. VMware has released an ESX patch; security teams should apply the update immediately and monitor for anomalous configuration changes.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/china-linked-hackers-exploit-vmware-esx-zero-day-cisa-w",
-    "publishedAt": "2026-10-30T01:37:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vmware-releases-patch-for-esx-zero-day-flaw",
-      "article-875f99b1",
-      "875f99b1",
-      "vmware-releases-patch-for-esx-zero-day-flaw-ea0db6"
-    ]
-  },
-  {
-    "slug": "patch-vpn-flaw-cve-2026-76418-1b1ea998",
-    "title": "Patch VPN Flaw CVE-2026-76418",
-    "summary": "CVE-2026-76418 is a vulnerability in VPN software that could allow attackers to compromise enterprise environments. Root‑cause telemetry indicates a flaw in authentication handling, potentially enabling unauthenticated code execution. Red Hat recommends applying the vendor patch immediately to mitigate the risk and prevent potential exploitation across all affected systems globally today.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisco-patches-actively-exploited-asa-and-ftd-vpn-flaw-c",
-    "publishedAt": "2026-10-30T01:36:46.000Z",
-    "cves": [
-      "CVE-2026-76418"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "patch-vpn-flaw-cve-2026-76418",
-      "article-1b1ea998",
-      "1b1ea998",
-      "patch-vpn-flaw-cve-2026-76418-55ba3e"
-    ]
-  },
-  {
-    "slug": "curl-update-addresses-moderate-security-issue-fbd53bf6",
-    "title": "Curl Update Addresses Moderate Security Issue",
-    "summary": "Red Hat Enterprise Linux 9 users face a moderate security flaw in curl that could allow attackers to exploit the library. The flaw, identified by Red Hat Product Security, carries a CVSS base score that reflects moderate risk but lacks active exploitation evidence. A security update is available; administrators should apply the patch promptly to eliminate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92907",
-    "publishedAt": "2026-10-30T01:23:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "curl-update-addresses-moderate-security-issue",
-      "article-fbd53bf6",
-      "fbd53bf6",
-      "curl-update-addresses-moderate-security-issue-37d990"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-java-21-openjdk-for-rhel-9869e43a",
-    "title": "Red Hat Updates java‑21‑openjdk for RHEL",
-    "summary": "Red Hat released a security update for java‑21‑openjdk on RHEL 8, RHEL 9.4, 9.6, and 9, addressing multiple vulnerabilities identified by CVE references. The update mitigates memory corruption and privilege escalation flaws that could allow local attackers to execute arbitrary code. Red Hat recommends applying the update immediately to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:88349",
-    "publishedAt": "2026-10-30T00:33:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-java-21-openjdk-for-rhel",
-      "article-9869e43a",
-      "9869e43a",
-      "red-hat-updates-java-21-openjdk-for-rhel-37e504"
-    ]
-  },
-  {
-    "slug": "adobe-veeam-juniper-how-to-detect-patch-critical-f-e4a555d1",
-    "title": "Adobe, Veeam, Juniper: How to Detect & Patch Critical Flaws",
-    "summary": "Critical multi-vendor security advisory for Adobe, Veeam, and Juniper. Review root-cause telemetry, hunt via Sigma rules, and apply security hotfixes today. (Corroborated Threat Intelligence: Associated CVE is CVE-2026-97229).",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/adobe-veeam-juniper-networks-patch-critical-vulnerabili",
-    "publishedAt": "2026-10-30T00:25:05.000Z",
-    "cves": [
-      "CVE-2026-97229"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "adobe-veeam-juniper-how-to-detect-patch-critical-f",
-      "article-e4a555d1",
-      "e4a555d1",
-      "adobe-veeam-juniper-how-to-detect-patch-critical-f-568a47",
-      "adobe-veeam-juniper-how-to-detect-patch-critical-flaws"
     ]
   }
 ];

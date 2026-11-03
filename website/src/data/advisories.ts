@@ -2,6 +2,32 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-115878",
+    "slug": "cve-2026-115878",
+    "vendor": "Pip",
+    "product": "stanza",
+    "name": "Stanza: RCE via pickle deserialization in the lemmatizer",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "Loading an attacker-supplied lemma .pt runs arbitrary code as the loading user. Since 1.14.0 the lemmatizer stores pos_dict as a gzip-compressed pickle in the checkpoint's dicts field (a bytes value). torch.load(weights_only=True) treats bytes as a primitive and passes it through unexamined, so its allowlist never sees the inner stream.",
+    "requiredAction": "Upgrade stanza to version 1.15.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gh9r-c94j-cmp5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115878"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-44267",
     "slug": "cve-2026-44267",
     "vendor": "npm",
@@ -1305,32 +1331,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119280"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119210",
-    "slug": "cve-2026-119210",
-    "vendor": "Java (Maven)",
-    "product": "org.mariadb.jdbc:mariadb-java-client",
-    "name": "MariaDB Connector/J: LOAD DATA LOCAL INFILE file check could be satisfied by text inside quoted identifiers, letting a malicious server read client files",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "MariaDB Connector/J checked a server's LOAD DATA LOCAL INFILE file request by searching the text of the command it had sent for LOAD DATA LOCAL INFILE '<file>'. The search also matched inside quoted identifiers, string literals and comments, so text returned by the server and re-used in a later query could satisfy it. A rogue or MitM server can read any file the client JVM can read.",
-    "requiredAction": "Upgrade org.mariadb.jdbc:mariadb-java-client to version 3.3.7 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fhx5-2xqw-2cgm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119210"
       }
     ],
     "source": "GITHUB"
