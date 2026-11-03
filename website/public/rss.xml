@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2026 23:55:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:45:14 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>UK Warns of Rising Cyberattack Scale</title>
+      <link>https://secubuzz.com/news/uk-warns-of-rising-cyberattack-scale-1e42a351</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/uk-warns-of-rising-cyberattack-scale-1e42a351</guid>
+      <description><![CDATA[The UK National Cyber Security Centre chief warned of an unprecedented rise in cyberattacks expected in the coming months. He cited long‑tolerated vulnerabilities now being discovered and exploited at a scale previously unimaginable, stressing the need for stronger defenses. The NCSC will publish its annual report with recommendations, urging organizations to adopt proactive security measures and update legacy systems.]]></description>
+      <pubDate>Tue, 03 Nov 2026 00:01:00 GMT</pubDate>
+      <source url="https://therecord.media/uk-ncsc-predicts-rise-cyberattacks-coming-months">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Releases Critical Kernel Update for RHEL 9.4</title>
       <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-9-70b22e22</link>
@@ -24,6 +33,15 @@
       <pubDate>Mon, 02 Nov 2026 23:00:45 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/">Unit 42</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Updates Camel 4.18 for Quarkus Security</title>
+      <link>https://secubuzz.com/news/red-hat-updates-camel-4-18-for-quarkus-security-768da2e4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-camel-4-18-for-quarkus-security-768da2e4</guid>
+      <description><![CDATA[Red Hat issued an important security update for its build of Apache Camel 4.18 bundled with Quarkus 3.33.4.SP2, addressing security issues. The patch resolves flaws that could enable remote code execution via malformed Camel routes, though no public exploit or CVE is currently documented. Customers should apply the update immediately to maintain product security; no additional mitigations are required.]]></description>
+      <pubDate>Mon, 02 Nov 2026 22:41:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93980">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Binance Breach Shows Single Laptop Compromise Causes Billions Lost</title>
@@ -134,6 +152,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Bind9.16 Update Addresses Security Flaws</title>
+      <link>https://secubuzz.com/news/bind9-16-update-addresses-security-flaws-550f8eb2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bind9-16-update-addresses-security-flaws-550f8eb2</guid>
+      <description><![CDATA[Red Hat released a security update for bind9.16 on RHEL 8, addressing multiple DNS server vulnerabilities. The update mitigates flaws that could allow attackers to execute code or cause denial of service, as indicated by CVSS scores linked in the advisory. Red Hat recommends applying the patch via standard RHEL update channels; no work‑arounds are provided.]]></description>
+      <pubDate>Mon, 02 Nov 2026 18:59:36 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94011">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>RHSA-2026:93925: Important: bind security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-93925-important-bind-security-bug-fix-an-b53a47be</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-93925-important-bind-security-bug-fix-an-b53a47be</guid>
@@ -167,6 +194,24 @@
       <description><![CDATA[Red Hat released a security update for its Quarkus 3.33.4.SP2 build, addressing a flaw that could impact application integrity. The flaw, rated as Important, is documented with a CVSS base score, though the specific CVE identifier is not disclosed in the advisory. Red Hat recommends applying the Quarkus 3.33.4.SP2 update immediately to eliminate the vulnerability; no workarounds are listed.]]></description>
       <pubDate>Mon, 02 Nov 2026 18:07:42 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:93902">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Quarkus 3.27.6.SP2 Update Addresses Security Issues</title>
+      <link>https://secubuzz.com/news/quarkus-3-27-6-sp2-update-addresses-security-issue-0488b5e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/quarkus-3-27-6-sp2-update-addresses-security-issue-0488b5e3</guid>
+      <description><![CDATA[Red Hat released a security update for its Quarkus 3.27.6.SP2 build on RHEL, targeting multiple framework vulnerabilities. The patch addresses flaws that could enable remote code execution or privilege escalation, with CVSS scores linked in the advisory. Red Hat advises applying the update through standard RHEL channels; no work‑arounds are documented.]]></description>
+      <pubDate>Mon, 02 Nov 2026 18:07:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93908">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GIMP Update Fixes Security Vulnerabilities</title>
+      <link>https://secubuzz.com/news/gimp-update-fixes-security-vulnerabilities-e2e62731</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gimp-update-fixes-security-vulnerabilities-e2e62731</guid>
+      <description><![CDATA[Red Hat released a security update for GIMP on RHEL 9.8 EUS, addressing multiple image‑editing software vulnerabilities. The patch mitigates flaws that could allow remote attackers to execute code or cause denial of service, as indicated by CVSS scores linked in the advisory. Red Hat recommends applying the update via standard RHEL update channels; no work‑arounds are provided.]]></description>
+      <pubDate>Mon, 02 Nov 2026 17:58:42 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:93975">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -410,51 +455,6 @@
       <description><![CDATA[Apple notified users in 99 countries about the presence of mercenary spyware targeting their devices. The company emphasized the spyware’s extreme cost, sophistication, and worldwide reach, labeling it among the most advanced digital threats. Apple recommends users update to the latest iOS, install security patches, and monitor for unusual device activity.]]></description>
       <pubDate>Mon, 02 Nov 2026 14:42:00 GMT</pubDate>
       <source url="https://therecord.media/apple-warns-users-99-countries-mercenary-spyware">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Hijack Emergency Apps with Fake Nuclear Alerts</title>
-      <link>https://secubuzz.com/news/hackers-hijack-emergency-apps-with-fake-nuclear-al-70d679f8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-emergency-apps-with-fake-nuclear-al-70d679f8</guid>
-      <description><![CDATA[Russian and Ukrainian hacking groups compromised popular air raid alert systems, injecting false nuclear attack warnings into the apps. The attacks exploited vulnerabilities in the apps’ authentication and update mechanisms, enabling attackers to push malicious payloads without user interaction. Security teams should harden authentication, verify update sources, and monitor for anomalous notifications to mitigate the sabotage.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:30:00 GMT</pubDate>
-      <source url="https://therecord.media/ukraine-hackers-russia-alert-system">The Record</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>RHSA-2026:92363: Important: firefox security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-92363-important-firefox-security-update-1991f863</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-92363-important-firefox-security-update-1991f863</guid>
-      <description><![CDATA[An update for firefox is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:28:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:92363">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers alter supermarket refrigeration temperatures remotely</title>
-      <link>https://secubuzz.com/news/hackers-alter-supermarket-refrigeration-temperatur-5ff3d83b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-alter-supermarket-refrigeration-temperatur-5ff3d83b</guid>
-      <description><![CDATA[Hackers remotely altered temperature settings on refrigeration units in multiple European supermarket chains, disrupting cold storage operations. The attack exploited a misconfiguration in the refrigeration control software, allowing unauthorized remote command execution without authentication. Supermarket operators should update firmware to the latest vendor release and enforce network segmentation to prevent similar remote manipulation.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:28:39 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>European Supermarkets Hit by Refrigeration Unit Attacks</title>
-      <link>https://secubuzz.com/news/european-supermarkets-hit-by-refrigeration-unit-at-28d75eb9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/european-supermarkets-hit-by-refrigeration-unit-at-28d75eb9</guid>
-      <description><![CDATA[Attackers remotely reconfigured refrigeration units in Belgian, Luxembourg, and Swedish supermarkets, switching evaporators to defrost mode. The exploit leveraged a flaw in the units’ firmware that allowed unauthorized remote command execution, causing food spoilage. Manufacturers have released firmware updates, and supermarkets should apply patches, isolate affected devices, and monitor for anomalous control traffic.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:28:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fake Review Trade Sells Five‑Star Ratings</title>
-      <link>https://secubuzz.com/news/fake-review-trade-sells-five-star-ratings-86b51d06</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-review-trade-sells-five-star-ratings-86b51d06</guid>
-      <description><![CDATA[Underground operators sell five‑star reviews for up to $1,100, offering to erase negative feedback from online platforms. The scheme exploits reputation‑management systems, enabling malicious actors to manipulate consumer perception and undermine trust in digital marketplaces. Businesses should verify review authenticity, enforce platform moderation policies, and monitor for suspicious bulk review activity to mitigate reputational damage.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:24:43 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade">Malwarebytes Labs</source>
       <category>General</category>
     </item>
   </channel>

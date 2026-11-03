@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "uk-warns-of-rising-cyberattack-scale-1e42a351",
+    "title": "UK Warns of Rising Cyberattack Scale",
+    "summary": "The UK National Cyber Security Centre chief warned of an unprecedented rise in cyberattacks expected in the coming months. He cited long‑tolerated vulnerabilities now being discovered and exploited at a scale previously unimaginable, stressing the need for stronger defenses. The NCSC will publish its annual report with recommendations, urging organizations to adopt proactive security measures and update legacy systems.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/uk-ncsc-predicts-rise-cyberattacks-coming-months",
+    "publishedAt": "2026-11-03T00:01:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "uk-warns-of-rising-cyberattack-scale",
+      "article-1e42a351",
+      "1e42a351",
+      "uk-warns-of-rising-cyberattack-scale-2864e4"
+    ]
+  },
+  {
     "slug": "red-hat-releases-critical-kernel-update-for-rhel-9-70b22e22",
     "title": "Red Hat Releases Critical Kernel Update for RHEL 9.4",
     "summary": "Red Hat released a kernel update for RHEL 9.4 Update Services for SAP Solutions, fixing a critical flaw that could enable privilege escalation or denial of service. The advisory lists multiple CVEs with CVSS base scores, but no single CVE is named in the text. Apply the new kernel package via standard RHEL repositories immediately to mitigate the risk.",
@@ -46,6 +64,24 @@ export const news: NewsBrief[] = [
       "599c6f89",
       "unit-42-highlights-cyberespionage-extortion-ai-ado-ceb4eb",
       "unit-42-highlights-cyberespionage-extortion-ai-adoption"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-camel-4-18-for-quarkus-security-768da2e4",
+    "title": "Red Hat Updates Camel 4.18 for Quarkus Security",
+    "summary": "Red Hat issued an important security update for its build of Apache Camel 4.18 bundled with Quarkus 3.33.4.SP2, addressing security issues. The patch resolves flaws that could enable remote code execution via malformed Camel routes, though no public exploit or CVE is currently documented. Customers should apply the update immediately to maintain product security; no additional mitigations are required.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93980",
+    "publishedAt": "2026-11-02T22:41:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-camel-4-18-for-quarkus-security",
+      "article-768da2e4",
+      "768da2e4",
+      "red-hat-updates-camel-4-18-for-quarkus-security-37d91b"
     ]
   },
   {
@@ -277,6 +313,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "bind9-16-update-addresses-security-flaws-550f8eb2",
+    "title": "Bind9.16 Update Addresses Security Flaws",
+    "summary": "Red Hat released a security update for bind9.16 on RHEL 8, addressing multiple DNS server vulnerabilities. The update mitigates flaws that could allow attackers to execute code or cause denial of service, as indicated by CVSS scores linked in the advisory. Red Hat recommends applying the patch via standard RHEL update channels; no work‑arounds are provided.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94011",
+    "publishedAt": "2026-11-02T18:59:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bind9-16-update-addresses-security-flaws",
+      "article-550f8eb2",
+      "550f8eb2",
+      "bind9-16-update-addresses-security-flaws-37d8c9"
+    ]
+  },
+  {
     "slug": "rhsa-2026-93925-important-bind-security-bug-fix-an-b53a47be",
     "title": "RHSA-2026:93925: Important: bind security, bug fix, and enhancement update",
     "summary": "An update for bind is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -349,6 +403,43 @@ export const news: NewsBrief[] = [
       "401bf2ff",
       "red-hat-releases-quarkus-3-33-4-sp2-security-updat-37d91c",
       "red-hat-releases-quarkus-3-33-4-sp2-security-update"
+    ]
+  },
+  {
+    "slug": "quarkus-3-27-6-sp2-update-addresses-security-issue-0488b5e3",
+    "title": "Quarkus 3.27.6.SP2 Update Addresses Security Issues",
+    "summary": "Red Hat released a security update for its Quarkus 3.27.6.SP2 build on RHEL, targeting multiple framework vulnerabilities. The patch addresses flaws that could enable remote code execution or privilege escalation, with CVSS scores linked in the advisory. Red Hat advises applying the update through standard RHEL channels; no work‑arounds are documented.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93908",
+    "publishedAt": "2026-11-02T18:07:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quarkus-3-27-6-sp2-update-addresses-security-issue",
+      "article-0488b5e3",
+      "0488b5e3",
+      "quarkus-3-27-6-sp2-update-addresses-security-issue-37d91c",
+      "quarkus-3-27-6-sp2-update-addresses-security-issues"
+    ]
+  },
+  {
+    "slug": "gimp-update-fixes-security-vulnerabilities-e2e62731",
+    "title": "GIMP Update Fixes Security Vulnerabilities",
+    "summary": "Red Hat released a security update for GIMP on RHEL 9.8 EUS, addressing multiple image‑editing software vulnerabilities. The patch mitigates flaws that could allow remote attackers to execute code or cause denial of service, as indicated by CVSS scores linked in the advisory. Red Hat recommends applying the update via standard RHEL update channels; no work‑arounds are provided.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93975",
+    "publishedAt": "2026-11-02T17:58:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gimp-update-fixes-security-vulnerabilities",
+      "article-e2e62731",
+      "e2e62731",
+      "gimp-update-fixes-security-vulnerabilities-37d91b"
     ]
   },
   {
@@ -9425,109 +9516,6 @@ export const news: NewsBrief[] = [
       "9bdcffad",
       "hidden-browser-extensions-hijack-searches-for-mill-751d74",
       "hidden-browser-extensions-hijack-searches-for-millions"
-    ]
-  },
-  {
-    "slug": "cisco-sd-wan-controllers-vulnerability-cve-2026-20-8caf9d97",
-    "title": "Cisco SD‑WAN Controllers Vulnerability (CVE‑2026‑20127) Allows Authentication Bypass and Potential KeyDrift Deployment",
-    "summary": "Cisco SD‑WAN Controllers suffered an authentication‑bypass flaw (CVE‑2026‑20127) that let attackers gain privileged access. The defect allowed unauthenticated remote requests to bypass login, enabling manipulation of NETCONF configurations and potential deployment of the KeyDrift malware framework. Cisco issued an out‑of‑band patch; administrators should apply it immediately and monitor controller logs for signs of compromise.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-rpa-EHchtZk?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Catalyst+SD-WAN+Controller+Authentication+Bypass+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-10-29T01:54:35.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/"
-      }
-    ],
-    "aliases": [
-      "cisco-sd-wan-controllers-vulnerability-cve-2026-20",
-      "article-8caf9d97",
-      "8caf9d97",
-      "cisco-sd-wan-controllers-vulnerability-cve-2026-20-78eefb",
-      "cisco-sd-wan-controllers-vulnerability-cve-2026-20127-allows"
-    ]
-  },
-  {
-    "slug": "keystone-wallets-key-theft-recall-8a5dcbd8",
-    "title": "Keystone Wallets Key Theft Recall",
-    "summary": "Keystone hardware wallets suffered key theft via compromised firmware, exposing private keys to attackers. The flaw originates from insecure bootloader validation, allowing malicious firmware to be installed during manufacturing, leading to credential compromise. Keystone has issued a recall and firmware update; users must replace devices and apply the new secure bootloader patch.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/keystone-to-destroy-18-835-hardware-wallets-after-hacke",
-    "publishedAt": "2026-10-29T00:50:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "keystone-wallets-key-theft-recall",
-      "article-8a5dcbd8",
-      "8a5dcbd8",
-      "keystone-wallets-key-theft-recall-5e44c0"
-    ]
-  },
-  {
-    "slug": "microsoft-authenticator-android-leak-patch-57050d40",
-    "title": "Microsoft Authenticator Android Leak Patch",
-    "summary": "Microsoft Authenticator for Android work accounts contains CVE-2026-80097, enabling credential leakage in enterprise environments. The flaw stems from improper input validation in the authentication flow, a CVSS 8.1 issue exploitable without user interaction. Microsoft released a patch; apply the latest Authenticator version today and monitor telemetry for anomalous authentication attempts.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/microsoft-authenticator-flaw-let-permissionless-android",
-    "publishedAt": "2026-10-29T00:50:30.000Z",
-    "cves": [
-      "CVE-2026-80097"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-authenticator-android-leak-patch",
-      "article-57050d40",
-      "57050d40",
-      "microsoft-authenticator-android-leak-patch-b2618f"
-    ]
-  },
-  {
-    "slug": "apple-coregraphics-memory-flaw-patch-5bf9a0e7",
-    "title": "Apple CoreGraphics Memory Flaw Patch",
-    "summary": "Apple CoreGraphics on iOS contains CVE-2026-86950, a memory corruption flaw that can lead to arbitrary code execution. The vulnerability arises from unchecked pointer arithmetic in the graphics rendering pipeline, a CVSS 8.5 issue exploitable without user interaction. Apple has issued a patch; update iOS to the latest version today and enable CoreGraphics telemetry to detect anomalous rendering activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/apple-backports-fix-for-exploited-coregraphics-flaw-to",
-    "publishedAt": "2026-10-29T00:50:25.000Z",
-    "cves": [
-      "CVE-2026-86950"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apple-coregraphics-memory-flaw-patch",
-      "article-5bf9a0e7",
-      "5bf9a0e7",
-      "apple-coregraphics-memory-flaw-patch-6497ef"
-    ]
-  },
-  {
-    "slug": "goahead-tls-certificate-bypass-vulnerability-explo-633eb5c2",
-    "title": "GoAhead TLS Certificate Bypass Vulnerability Exploited",
-    "summary": "GoAhead Web Server (CVE-2026-115881) has a TLS certificate bypass that lets attackers forge certificates. The flaw arises from improper certificate chain validation during TLS handshake, enabling unauthenticated remote code execution with a CVSS score of 9.8, and has been exploited. GoAhead has released a patch; security teams should apply it immediately and enforce certificate pinning to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/goahead-tls-flaws-allow-revoked-client-certificates-and",
-    "publishedAt": "2026-10-29T00:50:17.000Z",
-    "cves": [
-      "CVE-2026-115881"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "goahead-tls-certificate-bypass-vulnerability-explo",
-      "article-633eb5c2",
-      "633eb5c2",
-      "goahead-tls-certificate-bypass-vulnerability-explo-3ff4b1",
-      "goahead-tls-certificate-bypass-vulnerability-exploited"
     ]
   }
 ];
