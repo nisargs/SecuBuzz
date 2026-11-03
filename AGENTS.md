@@ -127,7 +127,12 @@
     - **Retry Preservation**: Rejected candidates are NEVER added to `seenUrls`, preserving them for retry on subsequent hourly AI runs.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a199f0-4af4-785b-abda-7291bc213f13` / Group `b730e004-e8a2-4d70-9353-892607b5bec9`):**
+- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a19f15-a1ef-74e1-b1bd-c9f65a3e9271` / Group `af00a700-1db5-4edb-8a95-8c84de403d2f` / Worker `fbbf7aed-6454-4e93-8227-a5feae9378cb`):**
+  - **Server-Side My Stack & CVE Watchlist Push Targeting (Nov 2, 2026)**:
+    - **Zero-Leakage On-Call Pager Mode**: Eliminates background push leakage where Android OS bypassed foreground handlers. The ingestion dispatcher evaluates stories server-side against the device's selected enterprise vendors and watched CVEs before delivering FCM messages.
+    - **Real-Time Client Stack Sync**: Mobile app automatically synchronizes stack modifications (adding, deselecting, or clearing vendors/CVEs) to Cloudflare D1 with zero account friction.
+    - **Silent Pager Safety**: Devices with `MY_STACK_ONLY` and 0 selections receive strictly 0 notifications.
+    - **Zero Data Loss Guarantee**: Existing user selections stored in local `AsyncStorage` are 100% preserved and automatically hydrated/synced on first launch.
   - **My Stack Triage Hub & CVE Watchlist**:
     - Enterprise vendor filtering across 16+ enterprise IT/security vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS, Red Hat, Ivanti, Citrix, etc.).
     - In-Story Entity Intelligence: Tappable CVE and vendor chips in headlines and summaries across news and advisories with direct triage, feed filtering, and watchlist pinning.
