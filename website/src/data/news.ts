@@ -29,6 +29,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-157-update-contains-critical-dawn-buffer-ov-0e495a62",
+    "title": "Chrome 157 Update Contains Critical Dawn Buffer Overflow",
+    "summary": "Google Chrome promoted version 157 to the stable channel, delivering 213 security fixes, including a Dawn buffer overflow. CVE-2026-121156 allows attackers to execute arbitrary code via malformed graphics data, enabling remote code execution with high privilege. Users should install the update immediately; the patch is distributed via the standard channel, with no workarounds needed.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
+    "publishedAt": "2026-11-03T20:38:18.791Z",
+    "cves": [
+      "CVE-2026-121156"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-157-update-contains-critical-dawn-buffer-ov",
+      "article-0e495a62",
+      "0e495a62",
+      "chrome-157-update-contains-critical-dawn-buffer-ov-5db12d",
+      "chrome-157-update-contains-critical-dawn-buffer-overflow"
+    ]
+  },
+  {
     "slug": "red-hat-releases-python-dns-security-update-b6e4bbd6",
     "title": "Red Hat Releases Python-dns Security Update",
     "summary": "Red Hat released a security update for python‑dns on RHEL 8, addressing CVE‑2026‑43871. The flaw, rated Important, allows improper input handling that could lead to arbitrary code execution or denial of service, with a CVSS base score in the 7‑8 range. Red Hat has published the patch; administrators should apply it immediately to mitigate the risk.",
@@ -98,6 +119,24 @@ export const news: NewsBrief[] = [
       "article-ad747b86",
       "ad747b86",
       "google-removes-x-cpe-botnet-from-android-tv-boxes-4e4f2c"
+    ]
+  },
+  {
+    "slug": "google-releases-chrome-stable-157-for-ios-a28f686b",
+    "title": "Google Releases Chrome Stable 157 for iOS",
+    "summary": "Google released Chrome Stable 157 (157.0.8103.37) for iOS, marking the latest iteration of its mobile browser. The update focuses on stability and performance improvements, incorporating minor bug fixes and optimizations without any new security patches. The new build will be available on the App Store within hours, allowing users to upgrade their browsers promptly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update.html",
+    "publishedAt": "2026-11-03T19:13:32.969Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-chrome-stable-157-for-ios",
+      "article-a28f686b",
+      "a28f686b",
+      "google-releases-chrome-stable-157-for-ios-364d39"
     ]
   },
   {
@@ -444,6 +483,43 @@ export const news: NewsBrief[] = [
       "article-3f6d84e9",
       "3f6d84e9",
       "rxvt-unicode-escape-sequence-vulnerability-7fbba5"
+    ]
+  },
+  {
+    "slug": "sprockets-server-vulnerability-allows-remote-file-0e0e69ff",
+    "title": "Sprockets Server Vulnerability Allows Remote File Access",
+    "summary": "A flaw in the Sprockets server’s request handling permits specially crafted requests to bypass directory restrictions when deployed in production. The vulnerability could enable a remote attacker to read files outside the application’s root directory, potentially exposing sensitive data. A patch is available in the latest Sprockets release; administrators should upgrade promptly to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8990-1",
+    "publishedAt": "2026-11-03T17:37:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sprockets-server-vulnerability-allows-remote-file",
+      "article-0e0e69ff",
+      "0e0e69ff",
+      "sprockets-server-vulnerability-allows-remote-file-7fbba9",
+      "sprockets-server-vulnerability-allows-remote-file-access"
+    ]
+  },
+  {
+    "slug": "relax-and-recover-generates-world-readable-initrd-595c58e7",
+    "title": "Relax‑and‑Recover Generates World‑Readable Initrd",
+    "summary": "The Relax‑and‑Recover tool creates an initrd with world‑readable permissions when GRUB_RESCUE is enabled, exposing kernel and configuration data. A local attacker could read the initrd to retrieve sensitive information such as passwords or cryptographic keys. Updating to the latest Relax‑and‑Recover version removes the permission issue; administrators should apply the patch immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8988-1",
+    "publishedAt": "2026-11-03T17:37:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "relax-and-recover-generates-world-readable-initrd",
+      "article-595c58e7",
+      "595c58e7",
+      "relax-and-recover-generates-world-readable-initrd-7fbbff"
     ]
   },
   {
@@ -895,6 +971,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hudu-adds-huntress-integration-for-security-contex-ac864972",
+    "title": "Hudu Adds Huntress Integration for Security Context",
+    "summary": "Hudu launched a Huntress integration that imports organizations, agents, memberships, and identities into its IT documentation platform. The connector uses the Huntress API to sync security context data, keeping teams’ threat visibility current within Hudu. Admins set up the integration via Hudu’s settings panel and view imported data in the new security context section.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/hudu-huntress-integration",
+    "publishedAt": "2026-11-03T15:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hudu-adds-huntress-integration-for-security-contex",
+      "article-ac864972",
+      "ac864972",
+      "hudu-adds-huntress-integration-for-security-contex-313b4b",
+      "hudu-adds-huntress-integration-for-security-context"
+    ]
+  },
+  {
     "slug": "rhsa-2026-94567-important-libxtst-security-update-a67dab1c",
     "title": "RHSA-2026:94567: Important: libXtst security update",
     "summary": "An update for libXtst is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
@@ -971,6 +1066,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "freerdp-update-addresses-cve-2026-43871-bb30d75f",
+    "title": "Freerdp Update Addresses CVE-2026-43871",
+    "summary": "Red Hat released a security update for freerdp on RHEL 8, addressing a flaw identified as CVE-2026-43871. The vulnerability, rated Important by Red Hat Product Security, could allow remote code execution or privilege escalation via malformed RDP packets. Administrators should apply the freerdp update immediately; no additional workarounds are required.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94510",
+    "publishedAt": "2026-11-03T14:34:41.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "freerdp-update-addresses-cve-2026-43871",
+      "article-bb30d75f",
+      "bb30d75f",
+      "freerdp-update-addresses-cve-2026-43871-37d8b6"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-fence-agents-update-2e66fbda",
+    "title": "Red Hat Issues Critical Fence‑Agents Update",
+    "summary": "Red Hat issued a critical fence‑agents update for RHEL 9.4 Update Services for SAP Solutions, fixing vulnerabilities that could allow remote code execution. The advisory cites CVE links with CVSS scores, but no specific CVE ID; the flaw is improper input validation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94557",
+    "publishedAt": "2026-11-03T14:33:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-fence-agents-update",
+      "article-2e66fbda",
+      "2e66fbda",
+      "red-hat-issues-critical-fence-agents-update-37d8b6"
+    ]
+  },
+  {
     "slug": "haproxy-vulnerabilities-allow-denial-of-service-vi-416fa8af",
     "title": "HAProxy Vulnerabilities Allow Denial of Service via HTTP/2 and HTTP/1.1",
     "summary": "Two CVEs affecting HAProxy were disclosed: CVE-2026-110353 and CVE-2026-110354, both involving incorrect handling of truncated HTTP/2 PING frames and certain HTTP/1.1 chunked requests respectively. A remote attacker could trigger excessive CPU consumption leading to denial of service without authentication. The vulnerabilities require no exploitation confirmation beyond the advisory description.",
@@ -1028,6 +1161,24 @@ export const news: NewsBrief[] = [
       "f13ad83a",
       "gnome-shell-vulnerability-allows-dos-and-informati-7fbc8e",
       "gnome-shell-vulnerability-allows-dos-and-information-disclos"
+    ]
+  },
+  {
+    "slug": "crowdstrike-buys-ai-firms-fiddler-dreadnode-d817239b",
+    "title": "CrowdStrike Buys AI Firms Fiddler, Dreadnode",
+    "summary": "CrowdStrike announced a $495 million purchase of AI firms Fiddler and Dreadnode to boost Falcon with AI agent observability and automated testing. The acquisition will merge Fiddler’s monitoring tools and Dreadnode’s testing framework into CrowdStrike’s threat detection stack. Customers should watch for feature updates and integration milestones that may affect Falcon deployments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/",
+    "publishedAt": "2026-11-03T14:12:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-buys-ai-firms-fiddler-dreadnode",
+      "article-d817239b",
+      "d817239b",
+      "crowdstrike-buys-ai-firms-fiddler-dreadnode-19333c"
     ]
   },
   {
@@ -1476,6 +1627,25 @@ export const news: NewsBrief[] = [
       "article-dc5c2e21",
       "dc5c2e21",
       "subnet-solutions-powersystem-center-41c85b"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94501-critical-fence-agents-security-upd-baaa948f",
+    "title": "RHSA-2026:94501: Critical: fence-agents security update",
+    "summary": "An update for fence-agents is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94501",
+    "publishedAt": "2026-11-03T11:57:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94501-critical-fence-agents-security-upd",
+      "article-baaa948f",
+      "baaa948f",
+      "rhsa-2026-94501-critical-fence-agents-security-upd-37d8b7",
+      "rhsa-2026-94501-critical-fence-agents-security-update"
     ]
   },
   {
@@ -9363,178 +9533,6 @@ export const news: NewsBrief[] = [
       "article-f156ad7b",
       "f156ad7b",
       "2m-funds-stolen-from-polymarket-traders-410533"
-    ]
-  },
-  {
-    "slug": "gitlab-cve-2026-97229-enables-remote-code-executio-15274a35",
-    "title": "GitLab CVE-2026-97229 Enables Remote Code Execution on Alpine",
-    "summary": "A vulnerability in GitLab, identified as CVE-2026-97229, permits unauthenticated attackers to execute arbitrary code on servers running Alpine Linux. The flaw originates from improper input validation in GitLab’s authentication module, enabling remote code execution with a CVSS score of 10.0. GitLab has released an urgent patch; administrators must update immediately to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
-    "publishedAt": "2026-10-30T09:32:27.000Z",
-    "cves": [
-      "CVE-2026-97229"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-cve-2026-97229-enables-remote-code-executio",
-      "article-15274a35",
-      "15274a35",
-      "gitlab-cve-2026-97229-enables-remote-code-executio-b910c8",
-      "gitlab-cve-2026-97229-enables-remote-code-execution-on-alpin"
-    ]
-  },
-  {
-    "slug": "cursor-removes-malicious-claude-code-extension-2de91ea3",
-    "title": "Cursor Removes Malicious Claude Code Extension",
-    "summary": "Cursor removed a malicious Claude Code 2.1.313 extension from its marketplace, halting its distribution. The extension contained code designed to exfiltrate data, and Socket examined registry records confirming its presence on user systems. Cursor has removed the add‑on and recommends users uninstall any copies; no additional patch is required immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/claude-code-extension-compromise",
-    "publishedAt": "2026-10-30T09:26:06.050Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cursor-removes-malicious-claude-code-extension",
-      "article-2de91ea3",
-      "2de91ea3",
-      "cursor-removes-malicious-claude-code-extension-389ff0"
-    ]
-  },
-  {
-    "slug": "glm-5-3-demonstrates-offensive-cyber-capabilities-723435de",
-    "title": "GLM-5.3 Demonstrates Offensive Cyber Capabilities",
-    "summary": "Open-weight AI model GLM-5.3 was evaluated against 13 offensive cyber scenarios using CyScenarioBench. The model completed three scenarios, successfully planning and executing multi‑stage attacks within simulated networks. The assessment highlights the model’s potential for adversarial use, underscoring the need for careful monitoring of open‑weight LLM deployments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/",
-    "publishedAt": "2026-10-30T09:23:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "glm-5-3-demonstrates-offensive-cyber-capabilities",
-      "article-723435de",
-      "723435de",
-      "glm-5-3-demonstrates-offensive-cyber-capabilities-753263"
-    ]
-  },
-  {
-    "slug": "binance-traces-6-3-billion-crypto-theft-to-comprom-64335db0",
-    "title": "Binance Traces $6.3 Billion Crypto Theft to Compromised Laptop",
-    "summary": "Binance traced a massive cryptocurrency theft totaling approximately $6.3 billion to a compromised DevOps engineer's laptop. The endpoint intrusion enabled unauthorized access to sensitive internal operational assets, resulting in unprecedented financial losses for the exchange. Security teams must enforce strict endpoint detection, zero-trust privileged access management, and robust multi-factor authentication across all developer hardware.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
-    "publishedAt": "2026-10-30T09:18:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-traces-6-3-billion-crypto-theft-to-comprom",
-      "article-64335db0",
-      "64335db0",
-      "binance-traces-6-3-billion-crypto-theft-to-comprom-60fca1",
-      "binance-traces-6-3-billion-crypto-theft-to-compromised-lapto"
-    ]
-  },
-  {
-    "slug": "trojanized-claude-code-extension-installs-persiste-dd467b8c",
-    "title": "Trojanized Claude Code Extension Installs Persistent SSH Backdoor",
-    "summary": "Researchers disclosed a trojanized Claude Code extension distributed via the Cursor Marketplace as version 2.1.313, attempting to install a persistent SSH backdoor on affected systems. The malicious update was published under the extension's legitimate publisher identity, enabling attackers to maintain persistent access. Cursor temporarily shut down the marketplace following the disclosure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
-    "publishedAt": "2026-10-30T08:55:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trojanized-claude-code-extension-installs-persiste",
-      "article-dd467b8c",
-      "dd467b8c",
-      "trojanized-claude-code-extension-installs-persiste-72ff83",
-      "trojanized-claude-code-extension-installs-persistent-ssh-bac"
-    ]
-  },
-  {
-    "slug": "grey-market-relay-hijacks-openai-codex-and-claude-96930302",
-    "title": "Grey‑Market Relay Hijacks OpenAI Codex and Claude Tools",
-    "summary": "A clandestine relay service installs OpenAI Codex and Anthropic Claude on corporate machines, redirecting all prompts, files, and tokens through controlled servers. The manipulation disables sandbox protections and exfiltrates enterprise data. Security teams should audit AI tool configurations, enforce strict network segmentation, and monitor outbound traffic for anomalous patterns.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/unauthorized-openai-codex/",
-    "publishedAt": "2026-10-30T08:50:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "grey-market-relay-hijacks-openai-codex-and-claude",
-      "article-96930302",
-      "96930302",
-      "grey-market-relay-hijacks-openai-codex-and-claude-4f9bb1",
-      "grey-market-relay-hijacks-openai-codex-and-claude-tools"
-    ]
-  },
-  {
-    "slug": "teamviewer-integer-overflow-enables-arbitrary-code-bc207326",
-    "title": "TeamViewer Integer Overflow Enables Arbitrary Code Execution",
-    "summary": "An integer overflow vulnerability tracked as CVE-2026-111585 could allow malicious hosts to execute arbitrary code on viewer systems during remote support sessions. The flaw affects TeamViewer's remote access infrastructure and enables takeover of support technician machines. Organizations using affected TeamViewer versions should apply vendor patches immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
-    "publishedAt": "2026-10-30T08:44:49.000Z",
-    "cves": [
-      "CVE-2026-111585"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "teamviewer-integer-overflow-enables-arbitrary-code",
-      "article-bc207326",
-      "bc207326",
-      "teamviewer-integer-overflow-enables-arbitrary-code-175269",
-      "teamviewer-integer-overflow-enables-arbitrary-code-execution"
-    ]
-  },
-  {
-    "slug": "binance-hit-by-6-3-billion-theft-in-what-could-be-838e3e85",
-    "title": "Binance hit by $6.3 billion theft in what could be the biggest crypto heist on record",
-    "summary": "About $6.3 billion in cryptocurrency was stolen from Binance in what might be the biggest crypto hack in history. “Binance’s initial investigation suggests that the security incident may involve a compromised DevOps engineer’s laptop, which allowed an attacker to gain access to a service container and submit unauthorized withdrawal transactions,” the exchange said in a security update published early on October 30.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/binance-crypto-hack/",
-    "publishedAt": "2026-10-30T08:26:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-hit-by-6-3-billion-theft-in-what-could-be",
-      "article-838e3e85",
-      "838e3e85",
-      "binance-hit-by-6-3-billion-theft-in-what-could-be-2a86be",
-      "binance-hit-by-6-3-billion-theft-in-what-could-be-the-bigges"
-    ]
-  },
-  {
-    "slug": "belarus-aligns-with-russia-s-frostyneighbor-apt-d4f6e9e3",
-    "title": "Belarus Aligns with Russia's FrostyNeighbor APT",
-    "summary": "The FrostyNeighbor APT launched a destructive attack in Ukraine, prompting concerns about Belarus aligning with Russian cyber objectives. The operation exploited known vulnerabilities in Ukrainian infrastructure, enabling lateral movement and data exfiltration, though no public exploit details were disclosed. Security teams should monitor for FrostyNeighbor signatures, apply relevant patches, and strengthen perimeter defenses against similar APT campaigns.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
-    "publishedAt": "2026-10-30T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "belarus-aligns-with-russia-s-frostyneighbor-apt",
-      "article-d4f6e9e3",
-      "d4f6e9e3",
-      "belarus-aligns-with-russia-s-frostyneighbor-apt-727e9e"
     ]
   }
 ];

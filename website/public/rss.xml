@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 20:46:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 21:09:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Gorbag APT Self‑Deleting Malware Detection Guide</title>
@@ -15,6 +15,15 @@
       <pubDate>Tue, 03 Nov 2026 20:50:35 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council">CyberNews AI</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Chrome 157 Update Contains Critical Dawn Buffer Overflow</title>
+      <link>https://secubuzz.com/news/chrome-157-update-contains-critical-dawn-buffer-ov-0e495a62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-157-update-contains-critical-dawn-buffer-ov-0e495a62</guid>
+      <description><![CDATA[Google Chrome promoted version 157 to the stable channel, delivering 213 security fixes, including a Dawn buffer overflow. CVE-2026-121156 allows attackers to execute arbitrary code via malformed graphics data, enabling remote code execution with high privilege. Users should install the update immediately; the patch is distributed via the standard channel, with no workarounds needed.]]></description>
+      <pubDate>Tue, 03 Nov 2026 20:38:18 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html">Google Chrome Releases</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Red Hat Releases Python-dns Security Update</title>
@@ -50,6 +59,15 @@
       <description><![CDATA[Google announced the dismantlement of the X.CPE botnet, which primarily infected Android TV set‑top boxes and other Android‑based IoT devices. The botnet leveraged compromised firmware updates to distribute malware, enabling attackers to harvest device credentials and exfiltrate data from connected services.]]></description>
       <pubDate>Tue, 03 Nov 2026 19:48:00 GMT</pubDate>
       <source url="https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Google Releases Chrome Stable 157 for iOS</title>
+      <link>https://secubuzz.com/news/google-releases-chrome-stable-157-for-ios-a28f686b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-chrome-stable-157-for-ios-a28f686b</guid>
+      <description><![CDATA[Google released Chrome Stable 157 (157.0.8103.37) for iOS, marking the latest iteration of its mobile browser. The update focuses on stability and performance improvements, incorporating minor bug fixes and optimizations without any new security patches. The new build will be available on the App Store within hours, allowing users to upgrade their browsers promptly.]]></description>
+      <pubDate>Tue, 03 Nov 2026 19:13:32 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update.html">Google Chrome Releases</source>
       <category>General</category>
     </item>
     <item>
@@ -212,6 +230,24 @@
       <description><![CDATA[Ubuntu discovered that rxvt‑unicode mishandles specific escape sequences, creating a potential code execution vector in terminal sessions. When a user renders specially crafted text, the flaw can trigger arbitrary code execution, posing a risk to any system with exposed terminals. Ubuntu advises installing the latest rxvt‑unicode update or applying the provided patch to mitigate the vulnerability.]]></description>
       <pubDate>Tue, 03 Nov 2026 17:37:49 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8991-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Sprockets Server Vulnerability Allows Remote File Access</title>
+      <link>https://secubuzz.com/news/sprockets-server-vulnerability-allows-remote-file-0e0e69ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sprockets-server-vulnerability-allows-remote-file-0e0e69ff</guid>
+      <description><![CDATA[A flaw in the Sprockets server’s request handling permits specially crafted requests to bypass directory restrictions when deployed in production. The vulnerability could enable a remote attacker to read files outside the application’s root directory, potentially exposing sensitive data. A patch is available in the latest Sprockets release; administrators should upgrade promptly to mitigate the risk.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:37:22 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8990-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Relax‑and‑Recover Generates World‑Readable Initrd</title>
+      <link>https://secubuzz.com/news/relax-and-recover-generates-world-readable-initrd-595c58e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/relax-and-recover-generates-world-readable-initrd-595c58e7</guid>
+      <description><![CDATA[The Relax‑and‑Recover tool creates an initrd with world‑readable permissions when GRUB_RESCUE is enabled, exposing kernel and configuration data. A local attacker could read the initrd to retrieve sensitive information such as passwords or cryptographic keys. Updating to the latest Relax‑and‑Recover version removes the permission issue; administrators should apply the patch immediately.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:37:16 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8988-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -419,42 +455,6 @@
       <description><![CDATA[Barracuda Networks warned that two undisclosed vulnerabilities in its device firmware can grant attackers root‑level command execution. The flaws allow local or remote attackers to bypass authentication and run arbitrary code with full system privileges. Barracuda released firmware patches for affected devices; administrators should apply the updates and enforce strict access controls.]]></description>
       <pubDate>Tue, 03 Nov 2026 15:06:16 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Gartner Forecasts SOC Engineers Outnumber Analysts by 2028</title>
-      <link>https://secubuzz.com/news/gartner-forecasts-soc-engineers-outnumber-analysts-f0d63030</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gartner-forecasts-soc-engineers-outnumber-analysts-f0d63030</guid>
-      <description><![CDATA[Gartner predicts that security operations centers will employ 50% more engineers than analysts by 2028 as AI agents automate routine alert handling. The report examines how AI reshapes SOC roles, shifting responsibilities from analysts to detection engineering, threat hunting, and exposure management. Security teams should plan for increased engineering capacity and invest in AI‑driven tooling to support evolving SOC workflows.]]></description>
-      <pubDate>Tue, 03 Nov 2026 15:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:94567: Important: libXtst security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-94567-important-libxtst-security-update-a67dab1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94567-important-libxtst-security-update-a67dab1c</guid>
-      <description><![CDATA[An update for libXtst is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:53:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94567">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases raptor2 Update for CVE-2026-43871</title>
-      <link>https://secubuzz.com/news/red-hat-releases-raptor2-update-for-cve-2026-43871-66f6a31c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-raptor2-update-for-cve-2026-43871-66f6a31c</guid>
-      <description><![CDATA[Red Hat issued a security update for the raptor2 component on Red Enterprise Linux 8, addressing a vulnerability identified as CVE‑2026‑43871. The flaw allows unauthenticated attackers to exploit a buffer overflow in raptor2, potentially achieving remote code execution with a CVSS score of 8.5. Red Hat recommends applying the latest raptor2 patch immediately; no work‑arounds are available.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:43:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94519">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-8973-1: libmspack vulnerability</title>
-      <link>https://secubuzz.com/news/usn-8973-1-libmspack-vulnerability-5f9e846e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-8973-1-libmspack-vulnerability-5f9e846e</guid>
-      <description><![CDATA[It was discovered that libmspack did not properly initialize pointers when handling errors while reading KWAJ archive headers. An attacker could possibly use this issue to cause libmspack to crash, resulting in a denial of service, or execute arbitrary code.]]></description>
-      <pubDate>Tue, 03 Nov 2026 14:42:47 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8973-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>
