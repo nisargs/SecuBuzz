@@ -423,6 +423,8 @@ export async function syncTokenWithBackendAsync(
   token?: string | null,
   force = false,
   prefsOverride?: NotificationPreferences,
+  selectedVendorsOverride?: string[],
+  watchedCvesOverride?: string[],
 ): Promise<boolean> {
   try {
     const resolvedToken = token || (await AsyncStorage.getItem(STORAGE_KEY_TOKEN));
@@ -444,6 +446,27 @@ export async function syncTokenWithBackendAsync(
     const appVersion = Constants.expoConfig?.version ?? '1.0.0';
     const prefs = prefsOverride || (await getNotificationPreferencesAsync());
 
+    // Resolve current stack & watched CVEs from overrides or local storage
+    let finalVendors = selectedVendorsOverride;
+    let finalCves = watchedCvesOverride;
+
+    if (!finalVendors || !finalCves) {
+      try {
+        const [savedVendorsRaw, savedCvesRaw] = await Promise.all([
+          finalVendors ? Promise.resolve(null) : AsyncStorage.getItem('secubuzz_my_stack_vendors_v1'),
+          finalCves ? Promise.resolve(null) : AsyncStorage.getItem('secubuzz_cve_watchlist_v1'),
+        ]);
+        if (!finalVendors && savedVendorsRaw) {
+          finalVendors = JSON.parse(savedVendorsRaw);
+        }
+        if (!finalCves && savedCvesRaw) {
+          finalCves = JSON.parse(savedCvesRaw);
+        }
+      } catch {
+        // Fallback to empty arrays if storage read fails
+      }
+    }
+
     const response = await fetch(DEFAULT_API_URL, {
       method: 'POST',
       headers: {
@@ -456,6 +479,8 @@ export async function syncTokenWithBackendAsync(
         newsBriefs: prefs.newsBriefs,
         threatAdvisories: prefs.threatAdvisories,
         severityThreshold: prefs.severityThreshold,
+        selectedVendors: Array.isArray(finalVendors) ? finalVendors : [],
+        watchedCves: Array.isArray(finalCves) ? finalCves : [],
       }),
     });
 

@@ -23,6 +23,7 @@ import type { CveAdvisory } from '../models/cve';
 import { useTheme } from './ThemeContext';
 import { haptics } from '../utils/haptics';
 import { getVendorFromSource } from '../utils/psirt';
+import { syncTokenWithBackendAsync } from '../services/notificationService';
 
 const VENDORS_STORAGE_KEY = 'secubuzz_my_stack_vendors_v1';
 const CVES_STORAGE_KEY = 'secubuzz_cve_watchlist_v1';
@@ -200,6 +201,19 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
       console.warn('SecuBuzz: Failed to save CVE Watchlist:', err);
     }
   }, [watchedCves, isHydrated]);
+
+  // 4. Automatically sync updated stack to Cloudflare D1 push registry (debounced 500ms)
+  const syncTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => {
+    if (!isHydrated) return;
+    if (syncTimerRef.current) clearTimeout(syncTimerRef.current);
+    syncTimerRef.current = setTimeout(() => {
+      void syncTokenWithBackendAsync(null, true, undefined, selectedVendors, watchedCves);
+    }, 500);
+    return () => {
+      if (syncTimerRef.current) clearTimeout(syncTimerRef.current);
+    };
+  }, [selectedVendors, watchedCves, isHydrated]);
 
   const toggleVendor = useCallback((vendorName: string) => {
     const trimmed = vendorName.trim();

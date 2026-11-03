@@ -3142,7 +3142,7 @@ if (uniqueGeneratedArticles.length > 0 && PUSH_ADMIN_SECRET) {
 // PUSH NOTIFICATIONS BROADCAST & USER PREFERENCE FILTERING
 // -----------------------------------------------------------------------------
 
-function shouldDeliverNotification(device, channelType, severity) {
+function shouldDeliverNotification(device, channelType, severity, item) {
   if (!device || !device.token) return false;
 
   // If device is missing explicit boolean flags (legacy shape), fallback to HIGH/CRITICAL default
@@ -3165,6 +3165,41 @@ function shouldDeliverNotification(device, channelType, severity) {
   }
   if (threshold === "HIGH_CRITICAL") {
     return severity === "CRITICAL" || severity === "HIGH";
+  }
+  if (threshold === "MY_STACK_ONLY") {
+    if (!item) return false;
+    const vendors = Array.isArray(device.selectedVendors) ? device.selectedVendors : [];
+    const cves = Array.isArray(device.watchedCves) ? device.watchedCves : [];
+    if (vendors.length === 0 && cves.length === 0) {
+      return false; // User configured MY_STACK_ONLY but has 0 vendors and 0 CVEs selected
+    }
+
+    // A. Match watched CVEs
+    const headline = String(item.headline || item.vulnerabilityName || "").toUpperCase();
+    const summary = String(item.summary || item.shortDescription || "").toUpperCase();
+    const cveId = String(item.cveID || item.cve || "").toUpperCase();
+
+    if (cves.length > 0) {
+      for (const watched of cves) {
+        const wNorm = watched.toUpperCase();
+        if (cveId && (cveId.includes(wNorm) || wNorm.includes(cveId))) return true;
+        if (headline.includes(wNorm) || summary.includes(wNorm)) return true;
+      }
+    }
+
+    // B. Match selected enterprise vendors
+    if (vendors.length > 0) {
+      const vendorProject = String(item.vendorProject || item.vendor || item.source || "").toLowerCase();
+      const product = String(item.product || "").toLowerCase();
+      const combined = [headline, summary, vendorProject, product].join(" ").toLowerCase();
+
+      for (const vendor of vendors) {
+        const vLower = vendor.toLowerCase();
+        if (combined.includes(vLower)) return true;
+      }
+    }
+
+    return false;
   }
   // "ALL"
   return true;
@@ -3302,7 +3337,7 @@ async function sendPushNotificationsForNewArticles(newArticles, activeFeed) {
 
     const severity = (article.severity || "HIGH").toUpperCase();
     const targetedDevices = devices.filter((d) =>
-      shouldDeliverNotification(d, "brief", severity),
+      shouldDeliverNotification(d, "brief", severity, article),
     );
 
     if (targetedDevices.length === 0) {
@@ -3572,7 +3607,7 @@ async function checkAndBroadcastCisaKevZeroDays() {
       const severity = isRansomware ? "CRITICAL" : "HIGH";
 
       const targetedDevices = devices.filter((d) =>
-        shouldDeliverNotification(d, "advisory", severity),
+        shouldDeliverNotification(d, "advisory", severity, cve),
       );
 
       if (targetedDevices.length === 0) {

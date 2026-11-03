@@ -1080,6 +1080,8 @@ export default {
           newsBriefs,
           threatAdvisories,
           severityThreshold,
+          selectedVendors,
+          watchedCves,
         } = body ?? {};
 
         if (!isValidExpoPushToken(token)) {
@@ -1093,23 +1095,33 @@ export default {
 
         const hasNews = typeof newsBriefs === 'boolean';
         const hasAdv = typeof threatAdvisories === 'boolean';
-        const hasSev = typeof severityThreshold === 'string' && ['ALL', 'HIGH_CRITICAL', 'CRITICAL_ONLY'].includes(severityThreshold);
+        const hasSev = typeof severityThreshold === 'string' && ['ALL', 'HIGH_CRITICAL', 'CRITICAL_ONLY', 'MY_STACK_ONLY'].includes(severityThreshold);
+        const hasVendors = Array.isArray(selectedVendors);
+        const hasCves = Array.isArray(watchedCves);
 
         const newsVal = hasNews ? (newsBriefs ? 1 : 0) : 1;
         const advVal = hasAdv ? (threatAdvisories ? 1 : 0) : 1;
         const sevVal = hasSev ? severityThreshold : 'HIGH_CRITICAL';
+        const safeVendors = hasVendors
+          ? JSON.stringify(selectedVendors.filter((v) => typeof v === 'string').slice(0, 50))
+          : '[]';
+        const safeCves = hasCves
+          ? JSON.stringify(watchedCves.filter((c) => typeof c === 'string').slice(0, 100))
+          : '[]';
 
         // Idempotent UPSERT into Cloudflare D1 with user alert preferences
         await env.DB.prepare(
-          `INSERT INTO push_tokens (token, platform, app_version, created_at, last_seen_at, is_active, news_briefs, threat_advisories, severity_threshold)
-           VALUES (?, ?, ?, ?, ?, 1, ?, ?, ?)
+          `INSERT INTO push_tokens (token, platform, app_version, created_at, last_seen_at, is_active, news_briefs, threat_advisories, severity_threshold, selected_vendors, watched_cves)
+           VALUES (?, ?, ?, ?, ?, 1, ?, ?, ?, ?, ?)
            ON CONFLICT(token) DO UPDATE SET
              last_seen_at = excluded.last_seen_at,
              app_version = excluded.app_version,
              is_active = 1,
              news_briefs = CASE WHEN ? THEN excluded.news_briefs ELSE push_tokens.news_briefs END,
              threat_advisories = CASE WHEN ? THEN excluded.threat_advisories ELSE push_tokens.threat_advisories END,
-             severity_threshold = CASE WHEN ? THEN excluded.severity_threshold ELSE push_tokens.severity_threshold END;`
+             severity_threshold = CASE WHEN ? THEN excluded.severity_threshold ELSE push_tokens.severity_threshold END,
+             selected_vendors = CASE WHEN ? THEN excluded.selected_vendors ELSE push_tokens.selected_vendors END,
+             watched_cves = CASE WHEN ? THEN excluded.watched_cves ELSE push_tokens.watched_cves END;`
         )
           .bind(
             token,
@@ -1120,9 +1132,13 @@ export default {
             newsVal,
             advVal,
             sevVal,
+            safeVendors,
+            safeCves,
             hasNews ? 1 : 0,
             hasAdv ? 1 : 0,
-            hasSev ? 1 : 0
+            hasSev ? 1 : 0,
+            hasVendors ? 1 : 0,
+            hasCves ? 1 : 0
           )
           .run();
 
@@ -1133,6 +1149,8 @@ export default {
             newsBriefs: hasNews ? newsBriefs : true,
             threatAdvisories: hasAdv ? threatAdvisories : true,
             severityThreshold: sevVal,
+            selectedVendors: hasVendors ? selectedVendors : [],
+            watchedCves: hasCves ? watchedCves : [],
           },
         });
       }
@@ -1150,7 +1168,7 @@ export default {
         const filterType = (url.searchParams.get('type') || '').toLowerCase();
         const filterSeverity = (url.searchParams.get('severity') || '').toUpperCase();
 
-        let query = `SELECT token, news_briefs, threat_advisories, severity_threshold FROM push_tokens WHERE is_active = 1`;
+        let query = `SELECT token, news_briefs, threat_advisories, severity_threshold, selected_vendors, watched_cves FROM push_tokens WHERE is_active = 1`;
 
         if (filterType === 'brief') {
           query += ` AND news_briefs = 1`;
@@ -1173,15 +1191,30 @@ export default {
           news_briefs: number;
           threat_advisories: number;
           severity_threshold: string;
+          selected_vendors: string;
+          watched_cves: string;
         }>();
 
         const tokens = (results ?? []).map((row) => row.token);
-        const devices = (results ?? []).map((row) => ({
-          token: row.token,
-          newsBriefs: row.news_briefs === 1,
-          threatAdvisories: row.threat_advisories === 1,
-          severityThreshold: row.severity_threshold || 'HIGH_CRITICAL',
-        }));
+        const devices = (results ?? []).map((row) => {
+          let selectedVendors = [];
+          let watchedCves = [];
+          try {
+            if (row.selected_vendors) selectedVendors = JSON.parse(row.selected_vendors);
+          } catch {}
+          try {
+            if (row.watched_cves) watchedCves = JSON.parse(row.watched_cves);
+          } catch {}
+
+          return {
+            token: row.token,
+            newsBriefs: row.news_briefs === 1,
+            threatAdvisories: row.threat_advisories === 1,
+            severityThreshold: row.severity_threshold || 'HIGH_CRITICAL',
+            selectedVendors,
+            watchedCves,
+          };
+        });
 
         return jsonResponse({
           success: true,
