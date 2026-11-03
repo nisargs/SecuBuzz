@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 04:44:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 05:48:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Siemens IoT2050 Exploited for Remote Code Execution</title>
+      <link>https://secubuzz.com/news/siemens-iot2050-exploited-for-remote-code-executio-062391f1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-iot2050-exploited-for-remote-code-executio-062391f1</guid>
+      <description><![CDATA[Attackers are exploiting a missing authentication flaw in Siemens SIMATIC IoT2050 Advanced devices, allowing remote code execution. The flaw, CVE-2026-58115, carries a CVSS score of 10.0 and permits unauthenticated attackers to run arbitrary code, potentially compromising device control and network integrity. Siemens has released an out‑of‑band patch; administrators should apply the update immediately and disable exposed management interfaces.]]></description>
+      <pubDate>Tue, 03 Nov 2026 05:34:41 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CryptoPayment Plugin Vulnerability Enables Remote File Deletion</title>
+      <link>https://secubuzz.com/news/cryptopayment-plugin-vulnerability-enables-remote-384f31b0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cryptopayment-plugin-vulnerability-enables-remote-384f31b0</guid>
+      <description><![CDATA[Threat actors target an unpatched flaw in the CryptoPayment Gateway WordPress plugin, enabling unauthenticated remote file deletion. The vulnerability, CVE-2026-81648, scores CVSS 10.0 and could allow attackers to remove arbitrary files and exfiltrate wallet credentials. Site owners should apply the vendor patch immediately and restrict plugin access to authenticated users.]]></description>
+      <pubDate>Tue, 03 Nov 2026 05:34:37 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/attackers-target-unpatched.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Fireperf Released as Open-Source Firewall Testing Tool</title>
+      <link>https://secubuzz.com/news/fireperf-released-as-open-source-firewall-testing-cd77d728</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fireperf-released-as-open-source-firewall-testing-cd77d728</guid>
+      <description><![CDATA[The IPFire project has launched fireperf, an open‑source measurement tool that opens connections at a fixed rate to evaluate firewall and router performance. Fireperf mimics iperf3 by reporting per‑connection actions, allowing administrators to assess stateful device behavior under sustained traffic. The tool is free software, suitable for developers, testers, and network engineers seeking to benchmark firewall throughput and latency.]]></description>
+      <pubDate>Tue, 03 Nov 2026 05:30:59 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/fireperf-open-source-network-testing-tool/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cybersecurity Architect Jobs Open in Portugal</title>
+      <link>https://secubuzz.com/news/cybersecurity-architect-jobs-open-in-portugal-695c947a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cybersecurity-architect-jobs-open-in-portugal-695c947a</guid>
+      <description><![CDATA[Planck Technologies is recruiting a Cyber Security Architect in Portugal to design security architectures for telecom, platform, and cloud environments. The role requires defining frameworks, assessing risks, conducting threat modeling, and embedding security into deployments while maintaining documentation. Candidates should have experience with governance, transformation projects, and technical reviews to support customer workshops.]]></description>
+      <pubDate>Tue, 03 Nov 2026 05:00:25 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/cybersecurity-jobs-available-right-now-november-3-2026/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Anthropic Adds EDR Monitoring to Claude Cowork</title>
       <link>https://secubuzz.com/news/anthropic-adds-edr-monitoring-to-claude-cowork-0bd9b67a</link>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 15:37:49 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:85930">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Kernel Update for RHEL 10.2</title>
-      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-2-978cf2ac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-10-2-978cf2ac</guid>
-      <description><![CDATA[A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 10.2 Extended Update Support, targeting the Linux kernel. The patch covers moderate‑severity flaws linked to CVE entries, with CVSS scores reflecting a moderate risk level. Red Hat advises installing the update promptly for mitigating potential critical kernel exploitation today.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:37:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93911">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>BTCPay Server Hot Wallet Theft on Outdated Instances</title>
-      <link>https://secubuzz.com/news/btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/btcpay-server-hot-wallet-theft-on-outdated-instanc-c7edb907</guid>
-      <description><![CDATA[BTCPay Server users running legacy versions have been targeted for hot wallet thefts by hackers in recent attacks. The flaw allows attackers to exploit unpatched code, draining stored cryptocurrency and compromising user funds. Maintainers urge immediate upgrade to the latest release and recommend disabling hot wallets on older instances to mitigate risk.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:03:07 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Carriers Retain Call Logs for Years, Raising Privacy Risks</title>
-      <link>https://secubuzz.com/news/carriers-retain-call-logs-for-years-raising-privac-dee89ba1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/carriers-retain-call-logs-for-years-raising-privac-dee89ba1</guid>
-      <description><![CDATA[Carriers can retain call and text metadata for years, exposing customers’ relationships, locations, and routines if breached. Cape’s service reduces exposure by automatically deleting call records, limiting the metadata carriers can store. Organizations should review carrier retention policies and adopt comprehensive solutions that enforce strictly timely deletion to safeguard privacy.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>37 Cybersecurity Deals Announced in October</title>
-      <link>https://secubuzz.com/news/37-cybersecurity-deals-announced-in-october-ada8c04c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/37-cybersecurity-deals-announced-in-october-ada8c04c</guid>
-      <description><![CDATA[In October 2026, cybersecurity firms Absolute Security, Aikido, Anthropic, Cohere, Hex‑Rays, and Proofpoint announced 37 mergers and acquisitions, signaling accelerated consolidation in the sector. The deals span AI, threat‑intelligence, reverse‑engineering, and email‑security domains, potentially reshaping vendor portfolios and customer integration strategies. Security teams should assess integration risks, update supply‑chain controls, and monitor for overlapping capabilities post‑merger.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:01:11 GMT</pubDate>
-      <source url="https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/">SecurityWeek</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

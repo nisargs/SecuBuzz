@@ -11,6 +11,85 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "siemens-iot2050-exploited-for-remote-code-executio-062391f1",
+    "title": "Siemens IoT2050 Exploited for Remote Code Execution",
+    "summary": "Attackers are exploiting a missing authentication flaw in Siemens SIMATIC IoT2050 Advanced devices, allowing remote code execution. The flaw, CVE-2026-58115, carries a CVSS score of 10.0 and permits unauthenticated attackers to run arbitrary code, potentially compromising device control and network integrity. Siemens has released an out‑of‑band patch; administrators should apply the update immediately and disable exposed management interfaces.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+    "publishedAt": "2026-11-03T05:34:41.000Z",
+    "cves": [
+      "CVE-2026-58115"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-iot2050-exploited-for-remote-code-executio",
+      "article-062391f1",
+      "062391f1",
+      "siemens-iot2050-exploited-for-remote-code-executio-1fe1a1",
+      "siemens-iot2050-exploited-for-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "cryptopayment-plugin-vulnerability-enables-remote-384f31b0",
+    "title": "CryptoPayment Plugin Vulnerability Enables Remote File Deletion",
+    "summary": "Threat actors target an unpatched flaw in the CryptoPayment Gateway WordPress plugin, enabling unauthenticated remote file deletion. The vulnerability, CVE-2026-81648, scores CVSS 10.0 and could allow attackers to remove arbitrary files and exfiltrate wallet credentials. Site owners should apply the vendor patch immediately and restrict plugin access to authenticated users.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+    "publishedAt": "2026-11-03T05:34:37.000Z",
+    "cves": [
+      "CVE-2026-81648"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cryptopayment-plugin-vulnerability-enables-remote",
+      "article-384f31b0",
+      "384f31b0",
+      "cryptopayment-plugin-vulnerability-enables-remote-11c86d",
+      "cryptopayment-plugin-vulnerability-enables-remote-file-delet"
+    ]
+  },
+  {
+    "slug": "fireperf-released-as-open-source-firewall-testing-cd77d728",
+    "title": "Fireperf Released as Open-Source Firewall Testing Tool",
+    "summary": "The IPFire project has launched fireperf, an open‑source measurement tool that opens connections at a fixed rate to evaluate firewall and router performance. Fireperf mimics iperf3 by reporting per‑connection actions, allowing administrators to assess stateful device behavior under sustained traffic. The tool is free software, suitable for developers, testers, and network engineers seeking to benchmark firewall throughput and latency.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/fireperf-open-source-network-testing-tool/",
+    "publishedAt": "2026-11-03T05:30:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fireperf-released-as-open-source-firewall-testing",
+      "article-cd77d728",
+      "cd77d728",
+      "fireperf-released-as-open-source-firewall-testing-2a5758",
+      "fireperf-released-as-open-source-firewall-testing-tool"
+    ]
+  },
+  {
+    "slug": "cybersecurity-architect-jobs-open-in-portugal-695c947a",
+    "title": "Cybersecurity Architect Jobs Open in Portugal",
+    "summary": "Planck Technologies is recruiting a Cyber Security Architect in Portugal to design security architectures for telecom, platform, and cloud environments. The role requires defining frameworks, assessing risks, conducting threat modeling, and embedding security into deployments while maintaining documentation. Candidates should have experience with governance, transformation projects, and technical reviews to support customer workshops.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/cybersecurity-jobs-available-right-now-november-3-2026/",
+    "publishedAt": "2026-11-03T05:00:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cybersecurity-architect-jobs-open-in-portugal",
+      "article-695c947a",
+      "695c947a",
+      "cybersecurity-architect-jobs-open-in-portugal-4ce3e7"
+    ]
+  },
+  {
     "slug": "anthropic-adds-edr-monitoring-to-claude-cowork-0bd9b67a",
     "title": "Anthropic Adds EDR Monitoring to Claude Cowork",
     "summary": "Anthropic introduced a beta integration that allows businesses to run endpoint detection and response sensors inside Claude Cowork’s local virtual machine. The feature addresses a monitoring gap where security software cannot see shell commands and code executed within Cowork’s isolated environment. Security teams can now forward Cowork activity to existing EDR solutions, enhancing visibility of hidden AI agent operations.",
@@ -9443,86 +9522,6 @@ export const news: NewsBrief[] = [
       "article-f38eed91",
       "f38eed91",
       "linux-kernel-cifs-use-after-free-exploit-6f3c9f"
-    ]
-  },
-  {
-    "slug": "linux-kernel-hidpp-use-after-free-exploit-f4366f08",
-    "title": "Linux Kernel HIDPP Use-After-Free Exploit",
-    "summary": "A use‑after‑free flaw in the Linux Kernel Logitech HIDPP protocol handler enables local attackers to gain root privileges on affected systems. CVE‑2026‑93826 is rated CVSS 7.8 and requires the attacker to first execute low‑privileged code before triggering the memory corruption. Kernel maintainers released patch 6.6.0‑rc3; users should apply the update or use the documented work‑around to block privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-835/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-hidpp-use-after-free-exploit",
-      "article-f4366f08",
-      "f4366f08",
-      "linux-kernel-hidpp-use-after-free-exploit-6f3c9f"
-    ]
-  },
-  {
-    "slug": "mlflow-tracking-server-privilege-escalation-cve-20-21b1093e",
-    "title": "MLflow Tracking Server Privilege Escalation CVE-2026-118625",
-    "summary": "A missing authorization flaw in MLflow Tracking Server, identified as CVE-2026-118625, allows authenticated remote attackers to elevate privileges. The vulnerability requires valid credentials but grants full system access, and no public exploit has been reported. MLflow has released an update; administrators should apply the patch and enforce least‑privilege access controls.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-841/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118625"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-tracking-server-privilege-escalation-cve-20",
-      "article-21b1093e",
-      "21b1093e",
-      "mlflow-tracking-server-privilege-escalation-cve-20-6f3ca2",
-      "mlflow-tracking-server-privilege-escalation-cve-2026-118625"
-    ]
-  },
-  {
-    "slug": "mlflow-rce-via-cve-2026-118623-deserialization-38d9a607",
-    "title": "MLflow RCE via CVE-2026-118623 Deserialization",
-    "summary": "MLflow's PickleEvaluationArtifact deserialization flaw, CVE-2026-118623, permits remote code execution when a user opens a malicious file or visits a crafted page. The vulnerability has a CVSS score of 7.8, and no public exploit has been disclosed. MLflow has issued a patch; users should update immediately and avoid opening untrusted artifacts.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-839/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-118623"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-rce-via-cve-2026-118623-deserialization",
-      "article-38d9a607",
-      "38d9a607",
-      "mlflow-rce-via-cve-2026-118623-deserialization-6f3c9f"
-    ]
-  },
-  {
-    "slug": "freebsd-kernel-tty-race-enables-local-privilege-es-0a2a9150",
-    "title": "FreeBSD Kernel TTY Race Enables Local Privilege Escalation",
-    "summary": "A race condition in the FreeBSD kernel’s TTY subsystem permits local attackers to elevate privileges on affected installations. The flaw requires initial execution of low‑privileged code, has a CVSS score of 7.8, and is identified as CVE-2026-58093. Security teams should apply the vendor‑issued patch or update to the kernel to mitigate the privilege escalation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-838/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-58093"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "freebsd-kernel-tty-race-enables-local-privilege-es",
-      "article-0a2a9150",
-      "0a2a9150",
-      "freebsd-kernel-tty-race-enables-local-privilege-es-6f3c9f",
-      "freebsd-kernel-tty-race-enables-local-privilege-escalation"
     ]
   }
 ];
