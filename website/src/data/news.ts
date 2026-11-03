@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "harvard-breach-exposes-851-000-alumni-accounts-62b371b9",
+    "title": "Harvard Breach Exposes 851,000 Alumni Accounts",
+    "summary": "Hackers accessed Harvard University's Alumni Affairs and Development systems in November 2025, compromising over 850,000 email addresses. The breach exposed personal identifiers and contact data, creating a high‑risk exposure for alumni and potential phishing vectors, with no credential theft reported.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
+    "publishedAt": "2026-11-03T10:53:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "harvard-breach-exposes-851-000-alumni-accounts",
+      "article-62b371b9",
+      "62b371b9",
+      "harvard-breach-exposes-851-000-alumni-accounts-76cbec"
+    ]
+  },
+  {
     "slug": "adobe-commerce-zero-day-enables-psk-agent-rat-depl-3b9d53a7",
     "title": "Adobe Commerce Zero-Day Enables PSK Agent RAT Deployment",
     "summary": "Attackers exploited the StyleSmuggler flaw in Adobe Commerce and Magento to install the PSK Agent RAT on e‑commerce servers via remote code execution. The CVE‑2026‑75650 vulnerability allows persistent command execution, traffic tunneling, and survives server restarts, presenting a high‑severity remote access threat. Adobe has released an out‑of‑band patch; administrators should apply the update immediately and monitor for unauthorized processes.",
@@ -123,6 +141,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "crowdstrike-deloitte-ai-partnership-expands-enterp-c3812401",
+    "title": "CrowdStrike-Deloitte AI Partnership Expands Enterprise Threat Detection",
+    "summary": "CrowdStrike and Deloitte announced an expanded AI security partnership at Fal.Con Europe, integrating Falcon IQ into Deloitte Spain’s advisory services. The alliance links business risk decisions with threat detection and response, focusing on identifying practical security challenges for enterprises. Security teams should evaluate the integration to enhance risk‑aware threat detection workflows and incorporate Falcon IQ analytics into operational playbooks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-and-deloitte-expand-ai-security/",
+    "publishedAt": "2026-11-03T09:34:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-deloitte-ai-partnership-expands-enterp",
+      "article-c3812401",
+      "c3812401",
+      "crowdstrike-deloitte-ai-partnership-expands-enterp-3c3cb7",
+      "crowdstrike-deloitte-ai-partnership-expands-enterprise-threa"
+    ]
+  },
+  {
     "slug": "google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321",
     "title": "Google Dismantles XCPE Botnet of 1.3M Android Devices",
     "summary": "Google dismantled the XCPE botnet that infected 1.3 million Android devices, operated by OEM/ODM Videostrong Technology for financial gain. The botnet used compromised apps to exfiltrate data and deliver malware, but no public exploit or CVE was disclosed. Google removed command‑and‑control servers and pushed device cleanup, and teams should update firmware and enforce stricter app vetting.",
@@ -232,6 +269,24 @@ export const news: NewsBrief[] = [
       "8eb72348",
       "gnutls-update-mitigates-moderate-vulnerability-in-37d8ba",
       "gnutls-update-mitigates-moderate-vulnerability-in-rhel-6"
+    ]
+  },
+  {
+    "slug": "crowdstrike-secures-ai-agents-inside-claude-cowork-cc93930b",
+    "title": "CrowdStrike Secures AI Agents Inside Claude Cowork",
+    "summary": "CrowdStrike announced that it has secured AI agents inside the Claude Cowork environment, reinforcing internal security controls. The move addresses potential insider threat vectors by isolating AI workloads and limiting lateral movement within the platform. Security teams should verify agent isolation policies, monitor access logs, and update internal threat models to reflect the new containment strategy.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork/",
+    "publishedAt": "2026-11-03T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-secures-ai-agents-inside-claude-cowork",
+      "article-cc93930b",
+      "cc93930b",
+      "crowdstrike-secures-ai-agents-inside-claude-cowork-36df18"
     ]
   },
   {
@@ -9465,63 +9520,6 @@ export const news: NewsBrief[] = [
       "d0066942",
       "siem-pricing-models-still-unsustainable-huntress-s-7f8892",
       "siem-pricing-models-still-unsustainable-huntress-says"
-    ]
-  },
-  {
-    "slug": "help-desk-vishing-drives-rising-ransomware-in-q3-2-cb6fa6a0",
-    "title": "Help Desk Vishing Drives Rising Ransomware in Q3 2026",
-    "summary": "Actors impersonate IT help desks in vishing attacks, targeting finance and public administration as ransomware activity rises. Phishing remains the primary initial access method, with increasing ransomware and pre‑ransomware cases, indicating credential theft via social engineering. Security teams should enforce MFA, validate help desk requests, and monitor vishing indicators to curb credential theft and ransomware.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/ir-trends-q3-2026/",
-    "publishedAt": "2026-10-29T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "help-desk-vishing-drives-rising-ransomware-in-q3-2",
-      "article-cb6fa6a0",
-      "cb6fa6a0",
-      "help-desk-vishing-drives-rising-ransomware-in-q3-2-5b15f9",
-      "help-desk-vishing-drives-rising-ransomware-in-q3-2026"
-    ]
-  },
-  {
-    "slug": "google-gemini-4-carbon-tops-vulnerability-benchmar-9ab9f7c2",
-    "title": "Google Gemini 4 Carbon Tops Vulnerability Benchmarks",
-    "summary": "Google unveiled Gemini 4 Carbon, a frontier model that excels in cybersecurity tasks, leading benchmarks for vulnerability discovery and exploitation. It scored 88.2% on SEC‑bench Pro for discovery and 54.8% on ExploitGym for exploitation, showcasing advanced code analysis. Security teams can leverage Gemini 4 Carbon to accelerate vulnerability research, but must validate findings with traditional tools to ensure accuracy.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
-    "publishedAt": "2026-10-29T13:42:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-gemini-4-carbon-tops-vulnerability-benchmar",
-      "article-9ab9f7c2",
-      "9ab9f7c2",
-      "google-gemini-4-carbon-tops-vulnerability-benchmar-5da6c8",
-      "google-gemini-4-carbon-tops-vulnerability-benchmarks"
-    ]
-  },
-  {
-    "slug": "cloudflare-ddos-threat-report-2026-q3-more-swarms-c7202268",
-    "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-    "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-    "publishedAt": "2026-10-29T12:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-ddos-threat-report-2026-q3-more-swarms",
-      "article-c7202268",
-      "c7202268",
-      "cloudflare-ddos-threat-report-2026-q3-more-swarms-7a6550",
-      "cloudflare-ddos-threat-report-2026-q3-more-swarms-fewer-gian"
     ]
   }
 ];

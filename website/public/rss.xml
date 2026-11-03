@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 10:44:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 11:18:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Harvard Breach Exposes 851,000 Alumni Accounts</title>
+      <link>https://secubuzz.com/news/harvard-breach-exposes-851-000-alumni-accounts-62b371b9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/harvard-breach-exposes-851-000-alumni-accounts-62b371b9</guid>
+      <description><![CDATA[Hackers accessed Harvard University's Alumni Affairs and Development systems in November 2025, compromising over 850,000 email addresses. The breach exposed personal identifiers and contact data, creating a high‑risk exposure for alumni and potential phishing vectors, with no credential theft reported.]]></description>
+      <pubDate>Tue, 03 Nov 2026 10:53:25 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Adobe Commerce Zero-Day Enables PSK Agent RAT Deployment</title>
       <link>https://secubuzz.com/news/adobe-commerce-zero-day-enables-psk-agent-rat-depl-3b9d53a7</link>
@@ -62,6 +71,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>CrowdStrike-Deloitte AI Partnership Expands Enterprise Threat Detection</title>
+      <link>https://secubuzz.com/news/crowdstrike-deloitte-ai-partnership-expands-enterp-c3812401</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-deloitte-ai-partnership-expands-enterp-c3812401</guid>
+      <description><![CDATA[CrowdStrike and Deloitte announced an expanded AI security partnership at Fal.Con Europe, integrating Falcon IQ into Deloitte Spain’s advisory services. The alliance links business risk decisions with threat detection and response, focusing on identifying practical security challenges for enterprises. Security teams should evaluate the integration to enhance risk‑aware threat detection workflows and incorporate Falcon IQ analytics into operational playbooks.]]></description>
+      <pubDate>Tue, 03 Nov 2026 09:34:45 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/crowdstrike-and-deloitte-expand-ai-security/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Google Dismantles XCPE Botnet of 1.3M Android Devices</title>
       <link>https://secubuzz.com/news/google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321</link>
       <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321</guid>
@@ -114,6 +132,15 @@
       <pubDate>Tue, 03 Nov 2026 08:26:48 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94442">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CrowdStrike Secures AI Agents Inside Claude Cowork</title>
+      <link>https://secubuzz.com/news/crowdstrike-secures-ai-agents-inside-claude-cowork-cc93930b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-secures-ai-agents-inside-claude-cowork-cc93930b</guid>
+      <description><![CDATA[CrowdStrike announced that it has secured AI agents inside the Claude Cowork environment, reinforcing internal security controls. The move addresses potential insider threat vectors by isolating AI workloads and limiting lateral movement within the platform. Security teams should verify agent isolation policies, monitor access logs, and update internal threat models to reflect the new containment strategy.]]></description>
+      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork/">CrowdStrike</source>
+      <category>General</category>
     </item>
     <item>
       <title>CrowdStrike Acquires Fiddler for AI Observability</title>
@@ -429,33 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 21:40:14 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/">BleepingComputer</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Microsoft Security Blog Analyzes Real‑World Exploitation Patterns</title>
-      <link>https://secubuzz.com/news/microsoft-security-blog-analyzes-real-world-exploi-748027d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-security-blog-analyzes-real-world-exploi-748027d4</guid>
-      <description><![CDATA[Microsoft Security blog analyzes real‑world exploitation, showing that a small subset of high‑impact CVEs accounts for most attacks. The analysis quantifies exploitation likelihood, exposure, and blast radius, guiding defenders to prioritize patches for vulnerabilities with the greatest operational risk. The post recommends data‑driven prioritization frameworks and continuous monitoring to reduce exposure to actively exploited flaws.]]></description>
-      <pubDate>Mon, 02 Nov 2026 20:20:59 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Satellite Client Update Addresses Multiple Security Issues</title>
-      <link>https://secubuzz.com/news/red-hat-satellite-client-update-addresses-multiple-10764dda</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-client-update-addresses-multiple-10764dda</guid>
-      <description><![CDATA[Red Hat Satellite Client packages have been updated to fix several security vulnerabilities rated as Important, addressing bugs in the Satellite 6 client component. The Common Vulnerability Scoring System base score is available for each individual vulnerability through linked CVE references. Administrators should apply these updates promptly to maintain security posture across managed Satellite environments.]]></description>
-      <pubDate>Mon, 02 Nov 2026 20:07:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94063">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>BYOD Gang Claims Michigan State Cyber Incident</title>
-      <link>https://secubuzz.com/news/byod-gang-claims-michigan-state-cyber-incident-b5f8dee4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/byod-gang-claims-michigan-state-cyber-incident-b5f8dee4</guid>
-      <description><![CDATA[The BYOD ransomware gang claimed responsibility for a cyber incident that triggered campus‑wide security measures at Michigan State University. The gang, known for a recent hospital attack, claimed the incident via a post aligning with the MSU timeline. Security teams should verify the claim, isolate affected systems, and apply the gang’s ransomware signatures to mitigate further compromise.]]></description>
-      <pubDate>Mon, 02 Nov 2026 19:54:00 GMT</pubDate>
-      <source url="https://therecord.media/michigan-state-university-byod-gang-cyber-incident">The Record</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

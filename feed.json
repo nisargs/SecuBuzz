@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
+    "title": "Harvard Breach Exposes 851,000 Alumni Accounts",
+    "headline": "Harvard Breach Exposes 851,000 Alumni Accounts",
+    "summary": "Hackers accessed Harvard University's Alumni Affairs and Development systems in November 2025, compromising over 850,000 email addresses. The breach exposed personal identifiers and contact data, creating a high‑risk exposure for alumni and potential phishing vectors, with no credential theft reported.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-03T10:53:25.000Z",
+    "ingestedAt": "2026-11-03T11:17:34.581Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/adobe-commerce-zero-day/",
     "sourceUrl": "https://cybersecuritynews.com/adobe-commerce-zero-day/",
     "title": "Adobe Commerce Zero-Day Enables PSK Agent RAT Deployment",
@@ -93,6 +109,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/03/llmjacking-stolen-ai-access-cloud-bills/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/crowdstrike-and-deloitte-expand-ai-security/",
+    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-and-deloitte-expand-ai-security/",
+    "title": "CrowdStrike-Deloitte AI Partnership Expands Enterprise Threat Detection",
+    "headline": "CrowdStrike-Deloitte AI Partnership Expands Enterprise Threat Detection",
+    "summary": "CrowdStrike and Deloitte announced an expanded AI security partnership at Fal.Con Europe, integrating Falcon IQ into Deloitte Spain’s advisory services. The alliance links business risk decisions with threat detection and response, focusing on identifying practical security challenges for enterprises. Security teams should evaluate the integration to enhance risk‑aware threat detection workflows and incorporate Falcon IQ analytics into operational playbooks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-03T09:34:45.000Z",
+    "ingestedAt": "2026-11-03T11:17:34.581Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/crowdstrike-and-deloitte-expand-ai-security/",
     "additionalSources": []
   },
   {
@@ -190,6 +222,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:94442",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork/",
+    "title": "CrowdStrike Secures AI Agents Inside Claude Cowork",
+    "headline": "CrowdStrike Secures AI Agents Inside Claude Cowork",
+    "summary": "CrowdStrike announced that it has secured AI agents inside the Claude Cowork environment, reinforcing internal security controls. The move addresses potential insider threat vectors by isolating AI workloads and limiting lateral movement within the platform. Security teams should verify agent isolation policies, monitor access logs, and update internal threat models to reflect the new containment strategy.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-11-03T08:00:00.000Z",
+    "ingestedAt": "2026-11-03T11:17:34.581Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-secures-ai-agents-inside-claude-cowork/",
     "additionalSources": []
   },
   {
@@ -7750,48 +7798,5 @@
     "isFutureSkew": false,
     "url": "https://www.huntress.com/blog/reports-that-siem-is-dead-are-exaggerated",
     "additionalSources": []
-  },
-  {
-    "id": "https://blog.talosintelligence.com/ir-trends-q3-2026/",
-    "sourceUrl": "https://blog.talosintelligence.com/ir-trends-q3-2026/",
-    "title": "Help Desk Vishing Drives Rising Ransomware in Q3 2026",
-    "headline": "Help Desk Vishing Drives Rising Ransomware in Q3 2026",
-    "summary": "Actors impersonate IT help desks in vishing attacks, targeting finance and public administration as ransomware activity rises. Phishing remains the primary initial access method, with increasing ransomware and pre‑ransomware cases, indicating credential theft via social engineering. Security teams should enforce MFA, validate help desk requests, and monitor vishing indicators to curb credential theft and ransomware.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cisco Talos",
-    "publishedAt": "2026-10-29T14:00:00.000Z",
-    "url": "https://blog.talosintelligence.com/ir-trends-q3-2026/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
-    "title": "Google Gemini 4 Carbon Tops Vulnerability Benchmarks",
-    "headline": "Google Gemini 4 Carbon Tops Vulnerability Benchmarks",
-    "summary": "Google unveiled Gemini 4 Carbon, a frontier model that excels in cybersecurity tasks, leading benchmarks for vulnerability discovery and exploitation. It scored 88.2% on SEC‑bench Pro for discovery and 54.8% on ExploitGym for exploitation, showcasing advanced code analysis. Security teams can leverage Gemini 4 Carbon to accelerate vulnerability research, but must validate findings with traditional tools to ensure accuracy.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-29T13:42:40.000Z",
-    "url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-    "sourceUrl": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/",
-    "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-    "headline": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-    "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-10-29T12:55:00.000Z",
-    "ingestedAt": "2026-11-01T03:46:28.194Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]
