@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openai-deploys-continuous-security-testing-on-pand-42884314",
+    "title": "OpenAI Deploys Continuous Security Testing on Pando Git",
+    "summary": "OpenAI built Pando, a new Git backend, using Codex agents over 10 weeks while maintaining engineering work. The system now runs continuous red-team testing against Git and Pando to secure its AI-driven development workload. This represents an industry shift toward automated security validation in DevOps pipelines.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openai-builds-pando-git-infrastructure/",
+    "publishedAt": "2026-11-03T17:15:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-deploys-continuous-security-testing-on-pand",
+      "article-42884314",
+      "42884314",
+      "openai-deploys-continuous-security-testing-on-pand-188f15",
+      "openai-deploys-continuous-security-testing-on-pando-git"
+    ]
+  },
+  {
+    "slug": "cisco-email-gateway-vulnerability-enables-root-rce-804fca82",
+    "title": "Cisco Email Gateway Vulnerability Enables Root RCE",
+    "summary": "A SQL injection flaw in Cisco AsyncOS email parsing lets unauthenticated attackers run arbitrary OS commands with root privileges on Secure Email Gateway devices. The flaw arises from insufficient email content validation, allowing crafted SQL statements to trigger command execution. Cisco released patches; no workarounds exist, so deploy the update immediately and monitor for unauthorized command execution.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Email+Gateway+SQL+Injection+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-11-03T17:05:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-email-gateway-vulnerability-enables-root-rce",
+      "article-804fca82",
+      "804fca82",
+      "cisco-email-gateway-vulnerability-enables-root-rce-27f659"
+    ]
+  },
+  {
+    "slug": "north-korean-hackers-abuse-internal-ai-tool-and-fa-884953e5",
+    "title": "North Korean Hackers Abuse Internal AI Tool and Fake Job Interviews in $6.34 Billion Binance Heist",
+    "summary": "North Korean hackers used a fake job interview, a poisoned coding task, and a hijacked internal AI tool to reach Binance’s wallet systems. The FBI says the North Korean group it calls “TraderTraitor” stole more than $6 billion in digital assets on 29 October 2026.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-job-interviews-binance-heist/",
+    "publishedAt": "2026-11-03T16:39:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korean-hackers-abuse-internal-ai-tool-and-fa",
+      "article-884953e5",
+      "884953e5",
+      "north-korean-hackers-abuse-internal-ai-tool-and-fa-776dd8",
+      "north-korean-hackers-abuse-internal-ai-tool-and-fake-job-int"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-kernel-security-update-70923a38",
     "title": "Red Hat Issues Critical Kernel Security Update",
     "summary": "Red Hat released a kernel security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing several high‑impact kernel flaws. The update is rated Critical by Product Security, with CVSS scores linked to CVE references, implying potential unauthenticated remote code execution. Administrators should apply the patch promptly to mitigate exploitation risks and preserve system integrity.",
@@ -26,6 +82,42 @@ export const news: NewsBrief[] = [
       "article-70923a38",
       "70923a38",
       "red-hat-issues-critical-kernel-security-update-37d8b3"
+    ]
+  },
+  {
+    "slug": "msecure-urges-users-to-secure-stored-login-data-09ea03d0",
+    "title": "mSecure Urges Users to Secure Stored Login Data",
+    "summary": "mSeven Software detected suspicious activity affecting mSecure password manager customers. The company urged current and former users to immediately protect stored passwords, two-factor authentication methods, and passkeys. This warning extends beyond routine password reset notices. Organizations should enforce credential rotation and review account access logs for unauthorized sessions.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/msecure-security-incident/",
+    "publishedAt": "2026-11-03T16:21:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "msecure-urges-users-to-secure-stored-login-data",
+      "article-09ea03d0",
+      "09ea03d0",
+      "msecure-urges-users-to-secure-stored-login-data-3b2f1c"
+    ]
+  },
+  {
+    "slug": "barracuda-vulnerabilities-chain-to-root-access-60b95613",
+    "title": "Barracuda Vulnerabilities Chain to Root Access",
+    "summary": "Barracuda disclosed two vulnerabilities that, when chained, allow an attacker to bypass authorization and gain root on affected devices. The pre‑authentication bypass and command injection flaws, identified as CVE‑2026‑116606 with a CVSS score of 9.3, enable unauthenticated remote code execution. Apply the vendor‑issued patch immediately; no workarounds exist, and monitor for privilege escalation anomalies.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+    "publishedAt": "2026-11-03T15:59:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-vulnerabilities-chain-to-root-access",
+      "article-60b95613",
+      "60b95613",
+      "barracuda-vulnerabilities-chain-to-root-access-5c1e49"
     ]
   },
   {
@@ -124,6 +216,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-8973-1-libmspack-vulnerability-5f9e846e",
+    "title": "USN-8973-1: libmspack vulnerability",
+    "summary": "It was discovered that libmspack did not properly initialize pointers when handling errors while reading KWAJ archive headers. An attacker could possibly use this issue to cause libmspack to crash, resulting in a denial of service, or execute arbitrary code.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8973-1",
+    "publishedAt": "2026-11-03T14:42:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-8973-1-libmspack-vulnerability",
+      "article-5f9e846e",
+      "5f9e846e",
+      "usn-8973-1-libmspack-vulnerability-7fbc86"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-rt-critical-update-dd99d353",
+    "title": "Red Hat Releases Kernel‑rt Critical Update",
+    "summary": "Red Hat issued a critical kernel‑rt update for Enterprise Linux 9.2 SAP, addressing vulnerabilities that could allow privilege escalation. The update mitigates CVE‑2026‑43871, a flaw with a CVSS score that Red Hat rates as critical, though no active exploitation is reported. Deploy the patch immediately; no workarounds are available, and monitor for kernel‑level anomalies.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94558",
+    "publishedAt": "2026-11-03T14:34:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-rt-critical-update",
+      "article-dd99d353",
+      "dd99d353",
+      "red-hat-releases-kernel-rt-critical-update-37d8b6"
+    ]
+  },
+  {
     "slug": "frontline-education-breach-exposes-1-3-million-rec-4bdd1929",
     "title": "Frontline Education Breach Exposes 1.3 Million Records",
     "summary": "Hackers exploited a flaw in third‑party software used by Frontline Education, compromising personal data of staff and students. The vulnerability enabled unauthorized extraction of names, addresses, and academic details, affecting more than 1.3 million individuals. Frontline Education has notified affected parties, coordinated with the vendor to patch the flaw, and urged MFA enforcement.",
@@ -159,6 +287,27 @@ export const news: NewsBrief[] = [
       "04cc5652",
       "videostrong-deploys-backdoor-in-1-3-million-androi-5a95a9",
       "videostrong-deploys-backdoor-in-1-3-million-android-tv-boxes"
+    ]
+  },
+  {
+    "slug": "usn-8970-1-gvfs-vulnerabilities-1242a7ca",
+    "title": "USN-8970-1: GVfs vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to obtain sensitive information. (CVE-2026-84267) It was discovered that GVfs did not properly validate the size of replies from an AFP server. A remote attacker could possibly use this issue to cause a denial of service. (CVE-2026-84269) It was discovered that GVfs did not properly validate the size of data returned by an MTP device.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8970-1",
+    "publishedAt": "2026-11-03T14:06:15.000Z",
+    "cves": [
+      "CVE-2026-84267",
+      "CVE-2026-84269"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-8970-1-gvfs-vulnerabilities",
+      "article-1242a7ca",
+      "1242a7ca",
+      "usn-8970-1-gvfs-vulnerabilities-7fbc92"
     ]
   },
   {
@@ -409,6 +558,24 @@ export const news: NewsBrief[] = [
       "5fb80576",
       "microsoft-study-links-78-of-exploits-to-system-tak-7a8ee3",
       "microsoft-study-links-78-of-exploits-to-system-takeover"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-critical-update-e05ca4e6",
+    "title": "Red Hat Releases Kernel Critical Update",
+    "summary": "Red Hat released a critical kernel update for Enterprise Linux 9.2 SAP, fixing vulnerabilities that could enable privilege escalation. The patch addresses CVE‑2026‑43871, a flaw rated critical by Red Hat, with no known active exploitation. Apply the update immediately; no workarounds exist, and monitor kernel activity for anomalies in all environments.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94477",
+    "publishedAt": "2026-11-03T12:29:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-critical-update",
+      "article-e05ca4e6",
+      "e05ca4e6",
+      "red-hat-releases-kernel-critical-update-37d8b9"
     ]
   },
   {
@@ -982,6 +1149,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-94443-important-python3-security-update-6c65896b",
+    "title": "RHSA-2026:94443: Important: python3 security update",
+    "summary": "An update for python3 is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94443",
+    "publishedAt": "2026-11-03T08:41:02.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94443-important-python3-security-update",
+      "article-6c65896b",
+      "6c65896b",
+      "rhsa-2026-94443-important-python3-security-update-37d8ba"
+    ]
+  },
+  {
     "slug": "pipewire-update-addresses-moderate-security-flaw-i-2fe8608c",
     "title": "Pipewire Update Addresses Moderate Security Flaw in RHEL 9.6",
     "summary": "A moderate update for Pipewire on Red Hat Enterprise Linux 9.6 EUS addresses a vulnerability in the multimedia framework. The flaw permits unauthorized manipulation of audio and video streams, potentially enabling privilege escalation or denial of service, and is rated moderate by Red Hat Product Security. Red Hat recommends applying the RHSA‑2026:94437 update immediately; no additional workarounds are required.",
@@ -998,6 +1185,24 @@ export const news: NewsBrief[] = [
       "2fe8608c",
       "pipewire-update-addresses-moderate-security-flaw-i-37d8ba",
       "pipewire-update-addresses-moderate-security-flaw-in-rhel-9-6"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94436-moderate-pipewire-security-update-8b46d4e4",
+    "title": "RHSA-2026:94436: Moderate: pipewire security update",
+    "summary": "An update for pipewire is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94436",
+    "publishedAt": "2026-11-03T08:26:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94436-moderate-pipewire-security-update",
+      "article-8b46d4e4",
+      "8b46d4e4",
+      "rhsa-2026-94436-moderate-pipewire-security-update-37d8ba"
     ]
   },
   {
@@ -9332,206 +9537,6 @@ export const news: NewsBrief[] = [
       "47fe9ff2",
       "polymarket-trading-suspended-after-crypto-draining-499595",
       "polymarket-trading-suspended-after-crypto-draining-breach"
-    ]
-  },
-  {
-    "slug": "red-hat-java-21-openjdk-update-for-rhel-10-5e13e447",
-    "title": "Red Hat Java 21 OpenJDK Update for RHEL 10",
-    "summary": "Red Hat released a security update for java‑21‑openjdk on RHEL 10, addressing multiple critical vulnerabilities. The advisory lists several CVEs with CVSS scores, but the update is rated as Important by Red Hat Product Security. Users should apply the latest java‑21‑openjdk package via yum or dnf to mitigate the identified flaws.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90504",
-    "publishedAt": "2026-10-29T21:42:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-java-21-openjdk-update-for-rhel-10",
-      "article-5e13e447",
-      "5e13e447",
-      "red-hat-java-21-openjdk-update-for-rhel-10-37da88"
-    ]
-  },
-  {
-    "slug": "chrome-156-for-android-released-363b7ad1",
-    "title": "Chrome 156 for Android Released",
-    "summary": "Google released Chrome 156 for Android, aligning with desktop security fixes and including stability improvements. The update is available via Google Play and contains the same security patches as the corresponding desktop releases unless otherwise noted. Users should update to maintain protection against known vulnerabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_090381616.html",
-    "publishedAt": "2026-10-29T21:38:02.025Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-156-for-android-released",
-      "article-363b7ad1",
-      "363b7ad1",
-      "chrome-156-for-android-released-b3588a"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-17-security-update-released-647a61b0",
-    "title": "Red Hat Satellite 6.17 Security Update Released",
-    "summary": "Red Hat issued a security update for Satellite 6.17, fixing several high‑severity vulnerabilities. The advisory references multiple CVEs with CVSS scores, and the update is classified as Important by Red Hat Product Security. Administrators should install the latest Satellite 6.17 package via yum or dnf to address the reported flaws.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92859",
-    "publishedAt": "2026-10-29T21:37:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-17-security-update-released",
-      "article-647a61b0",
-      "647a61b0",
-      "red-hat-satellite-6-17-security-update-released-37d993"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-19-critical-security-update-18219665",
-    "title": "Red Hat Satellite 6.19 Critical Security Update",
-    "summary": "Red Hat issued a critical update for Satellite 6.19, fixing high‑severity flaws that could enable unauthorized changes. The advisory cites CVEs with CVSS scores above 7.0, indicating remote code execution or privilege escalation. Apply the Satellite 6.19 patch or upgrade to the latest release immediately to mitigate the critical risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92861",
-    "publishedAt": "2026-10-29T21:37:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-19-critical-security-update",
-      "article-18219665",
-      "18219665",
-      "red-hat-satellite-6-19-critical-security-update-37d993"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-16-eus-update-addresses-critic-2de42fef",
-    "title": "Red Hat Satellite 6.16 EUS Update Addresses Critical Vulnerabilities",
-    "summary": "Red Hat Satellite 6.16 EUS received a security update addressing vulnerabilities in RHSA-2026:92858. The advisory rates the impact as Important and references CVE links for each flaw, though specific CVE IDs are not listed. Red Hat recommends applying the update immediately; users should install the latest Satellite packages or apply the provided patches to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92858",
-    "publishedAt": "2026-10-29T21:37:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-16-eus-update-addresses-critic",
-      "article-2de42fef",
-      "2de42fef",
-      "red-hat-satellite-6-16-eus-update-addresses-critic-37d993",
-      "red-hat-satellite-6-16-eus-update-addresses-critical-vulnera"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-18-update-fixes-critical-vulne-9b7f7a0d",
-    "title": "Red Hat Satellite 6.18 Update Fixes Critical Vulnerabilities",
-    "summary": "Red Hat Satellite 6.18 has received a security update covering vulnerabilities listed in the RHSA-2026:92860 advisory. The advisory assigns an Important impact rating and provides CVE references for each flaw, though specific CVE IDs are not disclosed. Red Hat advises users to apply the update immediately by installing the latest Satellite packages or applying the supplied patches.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92860",
-    "publishedAt": "2026-10-29T21:37:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-18-update-fixes-critical-vulne",
-      "article-9b7f7a0d",
-      "9b7f7a0d",
-      "red-hat-satellite-6-18-update-fixes-critical-vulne-37d993",
-      "red-hat-satellite-6-18-update-fixes-critical-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-cjose-security-update-for-rhel9-9c715486",
-    "title": "Red Hat Releases cjose Security Update for RHEL9",
-    "summary": "Red Hat Enterprise Linux 9 users receive a security update for the cjose library, addressing multiple vulnerabilities discovered in the cryptographic component. Red Hat Product Security rates the update as Important, indicating a high likelihood of exploitation if left unpatched. Administrators should apply the RHSA-2026:90812 update immediately to mitigate potential security risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90812",
-    "publishedAt": "2026-10-29T21:34:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-cjose-security-update-for-rhel9",
-      "article-9c715486",
-      "9c715486",
-      "red-hat-releases-cjose-security-update-for-rhel9-37da7d"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-grafana-security-update-for-rhel9-a5904cdb",
-    "title": "Red Hat Issues Grafana Security Update for RHEL9",
-    "summary": "Red Hat Enterprise Linux 9 receives a security update for the Grafana monitoring platform, addressing several vulnerabilities. The update is rated Moderate by Red Hat Product Security, indicating a lower exploitation risk compared to Important fixes, but still requires timely patching. Users should apply RHSA-2026:90811 promptly to maintain system integrity and prevent potential compromise.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90811",
-    "publishedAt": "2026-10-29T21:33:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-grafana-security-update-for-rhel9",
-      "article-a5904cdb",
-      "a5904cdb",
-      "red-hat-issues-grafana-security-update-for-rhel9-37da7d"
-    ]
-  },
-  {
-    "slug": "rhel9-libxrender-important-security-update-8a940e4b",
-    "title": "RHEL9 libXrender Important Security Update",
-    "summary": "Red Hat released an Important security update for libXrender on RHEL 9. The update addresses one or more vulnerabilities that could allow memory corruption or privilege escalation; CVSS scores are available via the referenced CVE links. Users should install the RHSA-2026:91057 update immediately on all RHEL 9 systems to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91057",
-    "publishedAt": "2026-10-29T21:31:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel9-libxrender-important-security-update",
-      "article-8a940e4b",
-      "8a940e4b",
-      "rhel9-libxrender-important-security-update-37da26"
-    ]
-  },
-  {
-    "slug": "chrome-updates-desktop-stable-channel-1c8f2e2a",
-    "title": "Chrome Updates Desktop Stable Channel",
-    "summary": "Google Chrome released a stable channel update for Windows, Mac, and Linux that includes 21 security fixes, among them CVE‑2026‑76024, a critical memory‑corruption flaw in MediaStream, and CVE‑2026‑76025, a high‑severity use‑after‑free in FileSystem. These vulnerabilities could allow attackers to execute code or crash the browser via media or filesystem inputs. Users should install the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html",
-    "publishedAt": "2026-10-29T21:26:20.252Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-updates-desktop-stable-channel",
-      "article-1c8f2e2a",
-      "1c8f2e2a",
-      "chrome-updates-desktop-stable-channel-4d2089"
-    ]
-  },
-  {
-    "slug": "rhel9-libxi-moderate-security-update-a159aa60",
-    "title": "RHEL9 libXi Moderate Security Update",
-    "summary": "Red Hat issued a Moderate security update for libXi on RHEL 9. The patch fixes vulnerabilities that could lead to memory corruption or privilege escalation; CVSS scores are provided via the CVE links in the advisory. Administrators should apply the RHSA-2026:91056 update to all affected RHEL 9 hosts and derivatives to ensure protection.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:91056",
-    "publishedAt": "2026-10-29T21:23:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel9-libxi-moderate-security-update",
-      "article-a159aa60",
-      "a159aa60",
-      "rhel9-libxi-moderate-security-update-37da26"
     ]
   }
 ];

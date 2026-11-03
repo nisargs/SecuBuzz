@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 16:52:11 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 17:45:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenAI Deploys Continuous Security Testing on Pando Git</title>
+      <link>https://secubuzz.com/news/openai-deploys-continuous-security-testing-on-pand-42884314</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-deploys-continuous-security-testing-on-pand-42884314</guid>
+      <description><![CDATA[OpenAI built Pando, a new Git backend, using Codex agents over 10 weeks while maintaining engineering work. The system now runs continuous red-team testing against Git and Pando to secure its AI-driven development workload. This represents an industry shift toward automated security validation in DevOps pipelines.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:15:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openai-builds-pando-git-infrastructure/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cisco Email Gateway Vulnerability Enables Root RCE</title>
+      <link>https://secubuzz.com/news/cisco-email-gateway-vulnerability-enables-root-rce-804fca82</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-email-gateway-vulnerability-enables-root-rce-804fca82</guid>
+      <description><![CDATA[A SQL injection flaw in Cisco AsyncOS email parsing lets unauthenticated attackers run arbitrary OS commands with root privileges on Secure Email Gateway devices. The flaw arises from insufficient email content validation, allowing crafted SQL statements to trigger command execution. Cisco released patches; no workarounds exist, so deploy the update immediately and monitor for unauthorized command execution.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:05:12 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Email+Gateway+SQL+Injection+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>North Korean Hackers Abuse Internal AI Tool and Fake Job Interviews in $6.34 Billion Binance Heist</title>
+      <link>https://secubuzz.com/news/north-korean-hackers-abuse-internal-ai-tool-and-fa-884953e5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-abuse-internal-ai-tool-and-fa-884953e5</guid>
+      <description><![CDATA[North Korean hackers used a fake job interview, a poisoned coding task, and a hijacked internal AI tool to reach Binance’s wallet systems. The FBI says the North Korean group it calls “TraderTraitor” stole more than $6 billion in digital assets on 29 October 2026.]]></description>
+      <pubDate>Tue, 03 Nov 2026 16:39:33 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-job-interviews-binance-heist/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Issues Critical Kernel Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-kernel-security-update-70923a38</link>
@@ -15,6 +42,24 @@
       <pubDate>Tue, 03 Nov 2026 16:26:10 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94623">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>mSecure Urges Users to Secure Stored Login Data</title>
+      <link>https://secubuzz.com/news/msecure-urges-users-to-secure-stored-login-data-09ea03d0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/msecure-urges-users-to-secure-stored-login-data-09ea03d0</guid>
+      <description><![CDATA[mSeven Software detected suspicious activity affecting mSecure password manager customers. The company urged current and former users to immediately protect stored passwords, two-factor authentication methods, and passkeys. This warning extends beyond routine password reset notices. Organizations should enforce credential rotation and review account access logs for unauthorized sessions.]]></description>
+      <pubDate>Tue, 03 Nov 2026 16:21:27 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/msecure-security-incident/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Barracuda Vulnerabilities Chain to Root Access</title>
+      <link>https://secubuzz.com/news/barracuda-vulnerabilities-chain-to-root-access-60b95613</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-vulnerabilities-chain-to-root-access-60b95613</guid>
+      <description><![CDATA[Barracuda disclosed two vulnerabilities that, when chained, allow an attacker to bypass authorization and gain root on affected devices. The pre‑authentication bypass and command injection flaws, identified as CVE‑2026‑116606 with a CVSS score of 9.3, enable unauthenticated remote code execution. Apply the vendor‑issued patch immediately; no workarounds exist, and monitor for privilege escalation anomalies.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:59:19 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html">The Hacker News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Hackers Use AI Agents to Launch 3AM Ransomware Attacks Against UK School Networks</title>
@@ -62,6 +107,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>USN-8973-1: libmspack vulnerability</title>
+      <link>https://secubuzz.com/news/usn-8973-1-libmspack-vulnerability-5f9e846e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-8973-1-libmspack-vulnerability-5f9e846e</guid>
+      <description><![CDATA[It was discovered that libmspack did not properly initialize pointers when handling errors while reading KWAJ archive headers. An attacker could possibly use this issue to cause libmspack to crash, resulting in a denial of service, or execute arbitrary code.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:42:47 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8973-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel‑rt Critical Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-critical-update-dd99d353</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-critical-update-dd99d353</guid>
+      <description><![CDATA[Red Hat issued a critical kernel‑rt update for Enterprise Linux 9.2 SAP, addressing vulnerabilities that could allow privilege escalation. The update mitigates CVE‑2026‑43871, a flaw with a CVSS score that Red Hat rates as critical, though no active exploitation is reported. Deploy the patch immediately; no workarounds are available, and monitor for kernel‑level anomalies.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:34:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94558">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Frontline Education Breach Exposes 1.3 Million Records</title>
       <link>https://secubuzz.com/news/frontline-education-breach-exposes-1-3-million-rec-4bdd1929</link>
       <guid isPermaLink="true">https://secubuzz.com/news/frontline-education-breach-exposes-1-3-million-rec-4bdd1929</guid>
@@ -78,6 +141,15 @@
       <pubDate>Tue, 03 Nov 2026 14:11:25 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/mobile/2026/11/a-hidden-backdoor-put-1-3-million-tv-boxes-to-work-for-criminals">Malwarebytes Labs</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-8970-1: GVfs vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-8970-1-gvfs-vulnerabilities-1242a7ca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-8970-1-gvfs-vulnerabilities-1242a7ca</guid>
+      <description><![CDATA[A remote attacker could possibly use this issue to obtain sensitive information. (CVE-2026-84267) It was discovered that GVfs did not properly validate the size of replies from an AFP server. A remote attacker could possibly use this issue to cause a denial of service. (CVE-2026-84269) It was discovered that GVfs did not properly validate the size of data returned by an MTP device.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:06:15 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8970-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Novee puts forgotten internet-facing assets through penetration testing</title>
@@ -194,6 +266,15 @@
       <description><![CDATA[Microsoft’s research identifies that 78% of real-world exploits target vulnerabilities enabling system takeover or privilege escalation. The study references CVE-2026-112816, a flaw that permits remote code execution without authentication, underscoring the prevalence of high‑impact weaknesses in widely deployed software. Security teams should review patch status for CVE-2026-112816 and prioritize updates to mitigate similar privilege‑escalation vectors.]]></description>
       <pubDate>Tue, 03 Nov 2026 12:31:55 GMT</pubDate>
       <source url="https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Critical Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-critical-update-e05ca4e6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-critical-update-e05ca4e6</guid>
+      <description><![CDATA[Red Hat released a critical kernel update for Enterprise Linux 9.2 SAP, fixing vulnerabilities that could enable privilege escalation. The patch addresses CVE‑2026‑43871, a flaw rated critical by Red Hat, with no known active exploitation. Apply the update immediately; no workarounds exist, and monitor kernel activity for anomalies in all environments.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:29:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94477">Red Hat Security Advisories</source>
       <category>CVE</category>
     </item>
     <item>
@@ -375,87 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 10:00:14 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/">Help Net Security</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Cogent Security Highlights PHP2Shell Vulnerability Impact</title>
-      <link>https://secubuzz.com/news/cogent-security-highlights-php2shell-vulnerability-6a9d6960</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cogent-security-highlights-php2shell-vulnerability-6a9d6960</guid>
-      <description><![CDATA[Cogent Security reported that PHP2Shell, disclosed on October 21, exposed two critical flaws that had persisted in PHP for over a decade. The flaws enable remote code execution and privilege escalation, posing a high‑severity risk for web apps using the affected PHP version. Admins should upgrade to the latest PHP release, apply patches, and use AI‑driven monitoring to detect exploitation.]]></description>
-      <pubDate>Tue, 03 Nov 2026 09:59:11 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/cogent-security-makes-the-fortune-cyber-60-for-a-second-year-with-a-plan-to-run-cyber-defense-like-a-factory/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>cPGuard Update Channel Hijacked, Backdoor Deployed</title>
-      <link>https://secubuzz.com/news/cpguard-update-channel-hijacked-backdoor-deployed-25db363b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cpguard-update-channel-hijacked-backdoor-deployed-25db363b</guid>
-      <description><![CDATA[An attacker compromised the update channel for cPGuard, a Linux hosting security tool, and pushed a malicious script that installed a backdoor and exfiltrated sensitive files. OPSSHIELD confirmed the attacker retrieved stolen data and advised administrators to upgrade to version 5.88.25 or newer immediately. Security teams should verify update signatures, apply the latest patch, and monitor for unauthorized backdoor activity.]]></description>
-      <pubDate>Tue, 03 Nov 2026 09:53:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/cpguard-supply-chain-attack/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>UK Anticipates AI Cyberattacks on Critical Infrastructure by 2028</title>
-      <link>https://secubuzz.com/news/uk-anticipates-ai-cyberattacks-on-critical-infrast-15a1cf1e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-anticipates-ai-cyberattacks-on-critical-infrast-15a1cf1e</guid>
-      <description><![CDATA[UK cyber chief warned that by 2028, state actors like China and Russia will target critical infrastructure with AI attacks. The warning underscores the rise of machine‑learning‑driven intrusion, phishing, and sabotage against essential services. Teams should adopt robust AI‑aware defenses, conduct threat modeling, and coordinate with government agencies for preparedness.]]></description>
-      <pubDate>Tue, 03 Nov 2026 09:49:12 GMT</pubDate>
-      <source url="https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Stolen Cloud Credentials Fuel AI Billing Spikes</title>
-      <link>https://secubuzz.com/news/stolen-cloud-credentials-fuel-ai-billing-spikes-5b583e27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/stolen-cloud-credentials-fuel-ai-billing-spikes-5b583e27</guid>
-      <description><![CDATA[Criminals compromised corporate cloud accounts to run AI models, generating excessive API requests and billing spikes. The attacks, dubbed LLMJacking, have produced daily charges exceeding $100,000 and cumulative bills up to $1 million, as identified by GTIG and Mandiant. Organizations should enforce strict credential hygiene, enable multi‑factor authentication, and monitor anomalous API usage to mitigate future incidents.]]></description>
-      <pubDate>Tue, 03 Nov 2026 09:39:05 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/llmjacking-stolen-ai-access-cloud-bills/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CrowdStrike-Deloitte AI Partnership Expands Enterprise Threat Detection</title>
-      <link>https://secubuzz.com/news/crowdstrike-deloitte-ai-partnership-expands-enterp-c3812401</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-deloitte-ai-partnership-expands-enterp-c3812401</guid>
-      <description><![CDATA[CrowdStrike and Deloitte announced an expanded AI security partnership at Fal.Con Europe, integrating Falcon IQ into Deloitte Spain’s advisory services. The alliance links business risk decisions with threat detection and response, focusing on identifying practical security challenges for enterprises. Security teams should evaluate the integration to enhance risk‑aware threat detection workflows and incorporate Falcon IQ analytics into operational playbooks.]]></description>
-      <pubDate>Tue, 03 Nov 2026 09:34:45 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/crowdstrike-and-deloitte-expand-ai-security/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Dismantles XCPE Botnet of 1.3M Android Devices</title>
-      <link>https://secubuzz.com/news/google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321</guid>
-      <description><![CDATA[Google dismantled the XCPE botnet that infected 1.3 million Android devices, operated by OEM/ODM Videostrong Technology for financial gain. The botnet used compromised apps to exfiltrate data and deliver malware, but no public exploit or CVE was disclosed. Google removed command‑and‑control servers and pushed device cleanup, and teams should update firmware and enforce stricter app vetting.]]></description>
-      <pubDate>Tue, 03 Nov 2026 09:22:09 GMT</pubDate>
-      <source url="https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:94438: Critical: kernel security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-94438-critical-kernel-security-bug-fix-a-302ed0b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94438-critical-kernel-security-bug-fix-a-302ed0b3</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. The vulnerability is tracked as CVE-2026-64832.]]></description>
-      <pubDate>Tue, 03 Nov 2026 09:20:58 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94438">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:94449: Important: libXtst security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-94449-important-libxtst-security-update-5901ed76</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94449-important-libxtst-security-update-5901ed76</guid>
-      <description><![CDATA[An update for libXtst is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Tue, 03 Nov 2026 09:03:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94449">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenAI Boosts Bug Bounty Payouts to $172,000</title>
-      <link>https://secubuzz.com/news/openai-boosts-bug-bounty-payouts-to-172-000-c78b0629</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-boosts-bug-bounty-payouts-to-172-000-c78b0629</guid>
-      <description><![CDATA[OpenAI has increased its bug bounty program, raising the maximum payout for critical findings to $172,000 and adding bonus incentives for high‑quality reports. The program now offers quadrupled midpoints for medium, high, and critical categories, encouraging researchers to disclose vulnerabilities responsibly. Security teams should review OpenAI’s updated bounty guidelines and ensure their own systems are regularly tested for similar vulnerabilities.]]></description>
-      <pubDate>Tue, 03 Nov 2026 08:58:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/openai-bigger-bug-bounty-rewards/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -2,6 +2,80 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "GHSA-p3jp-9v83-76w9",
+    "slug": "ghsa-p3jp-9v83-76w9",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.DotNet.ILCompiler",
+    "name": "Microsoft Security Advisory CVE-2026-111497 - .NET Brotli Decoder Out-of-bounds Write Vulnerability",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-787",
+    "ransomware": false,
+    "description": "A buffer overflow vulnerability exists in the Brotli decompression library used by .NET. This vulnerability may allow an unauthenticated attacker to read or corrupt process memory. This could lead to information disclosure, denial of service, or elevation of privilege. ASP.NET Core and HttpClient do not automatically decompress Brotli data in their default configurations.",
+    "requiredAction": "Upgrade Microsoft.DotNet.ILCompiler to version 8.0.33 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p3jp-9v83-76w9"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62331",
+    "slug": "cve-2026-62331",
+    "vendor": "Go",
+    "product": "praktor · mtzanidakis",
+    "name": "praktor: Path traversal in Telegram file uploads allows writing outside the agent workspace uploads/ directory (stored instruction injection)",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "A remote Telegram user can write files to arbitrary paths inside an agent's persistent workspace volume (praktor-wk-<workspace>, mounted at /workspace/agent), escaping the documented uploads/ directory.",
+    "requiredAction": "Upgrade praktor · mtzanidakis to version 0.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-48v2-6jcm-fc99"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62331"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-11800",
+    "slug": "cve-2026-11800",
+    "vendor": "Java (Maven)",
+    "product": "org.keycloak:keycloak-services",
+    "name": "Keycloak has authentication bypass via jwt algorithm confusion",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 8.1,
+    "severity": "High",
+    "cwe": "CWE-347",
+    "ransomware": false,
+    "description": "A flaw was found in Keycloak. This JWT algorithm confusion vulnerability in the JWT Authorization Grant flow allows an attacker with valid client credentials to bypass signature verification. By forging an assertion, the attacker can create unauthorized access tokens.",
+    "requiredAction": "Upgrade org.keycloak:keycloak-services to version 26.6.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j97h-3f8r-mrjr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11800"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-9ppr-wfw9-xvr2",
     "slug": "ghsa-9ppr-wfw9-xvr2",
     "vendor": "Go",
@@ -1257,84 +1331,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116794"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116775",
-    "slug": "cve-2026-116775",
-    "vendor": "Rust (Cargo)",
-    "product": "pageant",
-    "name": "pageant: unbounded frame buffering on peer-controlled 4-byte length prefix (memory-exhaustion DoS)",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "pageant::PageantStream reads a 4-byte big-endian length prefix from its input stream and buffers until len + 4 bytes are available, without ever validating len.",
-    "requiredAction": "Upgrade pageant to version 0.2.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-662x-8wvj-2276"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116775"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116774",
-    "slug": "cve-2026-116774",
-    "vendor": "Rust (Cargo)",
-    "product": "russh",
-    "name": "russh: peer-declared zero maximum packet size permanently stalls channel writes (silent AsyncWrite hang)",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "A peer can advertise maximum packet size = 0 in its channel-open message (CHANNEL_OPEN when attacking a server, CHANNEL_OPEN_CONFIRMATION when attacking a client). russh accepts the value without validation and copies it into the channel write state, where it caps the size of every outgoing data chunk.",
-    "requiredAction": "Upgrade russh to version 0.65 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fw5c-8223-6h42"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116774"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116696",
-    "slug": "cve-2026-116696",
-    "vendor": "Rust (Cargo)",
-    "product": "russh",
-    "name": "russh's SSH agent server is susceptible to unbound allocations via repeated SSH_AGENT_CONSTRAIN_CONFIRM messages",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 3.3,
-    "severity": "Low",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "All evidence, reproduction steps, and scripts in the report were verified against a real running instance. Nothing is fabricated or synthetic; every verdict is backed by captured output from an actual deployment.",
-    "requiredAction": "Upgrade russh to version 0.65.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9wfm-jcj8-jfv9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116696"
       }
     ],
     "source": "GITHUB"
