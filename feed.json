@@ -590,9 +590,9 @@
   {
     "id": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
-    "title": "Google shuts down XCPE botnet servers",
-    "headline": "Google shuts down XCPE botnet servers",
-    "summary": "Google shut down servers powering the XCPE backdoor embedded in Android TV set‑top box firmware, affecting over 1.3 million devices. The flaw, introduced by Videostrong Technology, enabled attackers to gain remote control and facilitate ad‑fraud traffic, exposing users to data exfiltration. Google’s Threat Intelligence Group disabled the command‑and‑control infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.",
+    "title": "Google Dismantles 1.3M Android TV Botnet",
+    "headline": "Google Dismantles 1.3M Android TV Botnet",
+    "summary": "Google dismantled a 1.3‑million‑device Android TV botnet that shipped with malicious firmware from Videostrong Technology. The embedded backdoor enabled remote command execution, allowing attackers to monetize traffic for ad‑fraud and exfiltrate data. Google’s Threat Intelligence Group disabled the command‑and‑control servers, banned Videostrong, and urged vendors to remove the compromised firmware.",
     "category": "VULNERABILITY",
     "severity": "HIGH",
     "source": "Help Net Security",
@@ -601,7 +601,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Krebs on Security",
+        "sourceUrl": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/"
+      }
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",

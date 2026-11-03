@@ -696,21 +696,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-shuts-down-xcpe-botnet-servers-a49bc00f",
-    "title": "Google shuts down XCPE botnet servers",
-    "summary": "Google shut down servers powering the XCPE backdoor embedded in Android TV set‑top box firmware, affecting over 1.3 million devices. The flaw, introduced by Videostrong Technology, enabled attackers to gain remote control and facilitate ad‑fraud traffic, exposing users to data exfiltration. Google’s Threat Intelligence Group disabled the command‑and‑control infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.",
+    "slug": "google-dismantles-1-3m-android-tv-botnet-24d3cd71",
+    "title": "Google Dismantles 1.3M Android TV Botnet",
+    "summary": "Google dismantled a 1.3‑million‑device Android TV botnet that shipped with malicious firmware from Videostrong Technology. The embedded backdoor enabled remote command execution, allowing attackers to monetize traffic for ad‑fraud and exfiltrate data. Google’s Threat Intelligence Group disabled the command‑and‑control servers, banned Videostrong, and urged vendors to remove the compromised firmware.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/",
     "publishedAt": "2026-11-02T15:50:46.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Krebs on Security",
+        "sourceUrl": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/"
+      }
+    ],
     "aliases": [
-      "google-shuts-down-xcpe-botnet-servers",
-      "article-a49bc00f",
-      "a49bc00f",
-      "google-shuts-down-xcpe-botnet-servers-4d4016"
+      "google-dismantles-1-3m-android-tv-botnet",
+      "article-24d3cd71",
+      "24d3cd71",
+      "google-dismantles-1-3m-android-tv-botnet-4d4016"
     ]
   },
   {
