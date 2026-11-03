@@ -50,6 +50,78 @@ export function News() {
   const { news } = useLiveNews();
   const myStack = useMyStack();
 
+  const handleToggleVendor = useCallback((vendor: string) => {
+    const isSelected = myStack.selectedVendors.some(
+      (v) => v.toLowerCase() === vendor.toLowerCase()
+    );
+    myStack.toggleVendor(vendor);
+    if (!isSelected) {
+      setStackFilterActive(true);
+      setSourceFilter('ALL');
+      setVendorFilter('ALL');
+      setPage(1);
+    } else {
+      if (myStack.selectedVendors.length <= 1 && myStack.watchedCves.length === 0) {
+        setStackFilterActive(false);
+        setPage(1);
+      }
+    }
+  }, [myStack]);
+
+  const handleRemoveVendor = useCallback((vendor: string) => {
+    myStack.removeVendor(vendor);
+    if (myStack.selectedVendors.length <= 1 && myStack.watchedCves.length === 0) {
+      setStackFilterActive(false);
+      setPage(1);
+    }
+  }, [myStack]);
+
+  const handleClearVendors = useCallback(() => {
+    myStack.clearVendors();
+    if (myStack.watchedCves.length === 0) {
+      setStackFilterActive(false);
+      setPage(1);
+    }
+  }, [myStack]);
+
+  const handleToggleWatchCve = useCallback((cve: string) => {
+    const isPinned = myStack.isWatchingCve(cve);
+    myStack.toggleWatchCve(cve);
+    if (!isPinned) {
+      setStackFilterActive(true);
+      setSourceFilter('ALL');
+      setVendorFilter('ALL');
+      setPage(1);
+    } else {
+      if (myStack.watchedCves.length <= 1 && myStack.selectedVendors.length === 0) {
+        setStackFilterActive(false);
+        setPage(1);
+      }
+    }
+  }, [myStack]);
+
+  const handleRemoveWatchCve = useCallback((cve: string) => {
+    myStack.removeWatchCve(cve);
+    if (myStack.watchedCves.length <= 1 && myStack.selectedVendors.length === 0) {
+      setStackFilterActive(false);
+      setPage(1);
+    }
+  }, [myStack]);
+
+  const handleClearCves = useCallback(() => {
+    myStack.clearCves();
+    if (myStack.selectedVendors.length === 0) {
+      setStackFilterActive(false);
+      setPage(1);
+    }
+  }, [myStack]);
+
+  const handleClearStack = useCallback(() => {
+    myStack.clearStack();
+    setStackFilterActive(false);
+    setPage(1);
+  }, [myStack]);
+
   const stackMatchCount = useMemo(() => {
     return news.filter((b) => myStack.matchesBrief(b)).length;
   }, [news, myStack]);
@@ -491,7 +563,7 @@ export function News() {
                     setPage(1);
                   }}
                   isWatchingCve={myStack.isWatchingCve}
-                  onToggleWatchCve={myStack.toggleWatchCve}
+                  onToggleWatchCve={handleToggleWatchCve}
                 />
               ))}
             </div>
@@ -601,7 +673,7 @@ export function News() {
                           key={brief.slug}
                           brief={brief}
                           isWatchingCve={myStack.isWatchingCve}
-                          onToggleWatchCve={myStack.toggleWatchCve}
+                          onToggleWatchCve={handleToggleWatchCve}
                         />
                       ))}
                     </div>
@@ -634,13 +706,13 @@ export function News() {
               <MyStackSidebar
                 selectedVendors={myStack.selectedVendors}
                 watchedCves={myStack.watchedCves}
-                toggleVendor={myStack.toggleVendor}
-                removeVendor={myStack.removeVendor}
-                clearVendors={myStack.clearVendors}
-                toggleWatchCve={myStack.toggleWatchCve}
-                removeWatchCve={myStack.removeWatchCve}
-                clearCves={myStack.clearCves}
-                clearStack={myStack.clearStack}
+                toggleVendor={handleToggleVendor}
+                removeVendor={handleRemoveVendor}
+                clearVendors={handleClearVendors}
+                toggleWatchCve={handleToggleWatchCve}
+                removeWatchCve={handleRemoveWatchCve}
+                clearCves={handleClearCves}
+                clearStack={handleClearStack}
                 matchCount={stackMatchCount}
                 isStackFilterActive={stackFilterActive}
                 onToggleStackFilter={() => {
