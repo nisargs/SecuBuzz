@@ -389,7 +389,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "google-dismantles-1-3-million-device-android-tv-bo-548e3a98",
     "title": "Google Dismantles 1.3‑Million‑Device Android TV Botnet",
-    "summary": "Google and partners dismantled a 1.3‑million‑device Android TV botnet that exploited firmware vulnerabilities in the XCPE hardware. The malware seeded malicious code into the firmware, enabling remote command‑and‑control via residential proxies and facilitating data exfiltration across compromised boxes. Security teams should audit firmware, sever C2 links, and isolate affected devices to prevent further global compromise.",
+    "summary": "Google and partners dismantled a 1.3‑million‑device Android TV botnet that targeted Videostrong XCPE firmware. The flaw allowed remote code execution and enabled malicious firmware to serve as a command‑and‑control hub for data exfiltration. Google issued a device‑wide removal directive, banned the vendor, and urged security teams to update firmware and monitor for residual signatures.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -400,6 +400,10 @@ export const news: NewsBrief[] = [
       {
         "source": "CyberNews AI",
         "sourceUrl": "https://cybernewsai.com/blog/google-disrupts-1-3-million-device-android-botnet-says"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/google-dismantles-xcpe-botnet/"
       }
     ],
     "aliases": [
