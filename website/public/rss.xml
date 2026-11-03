@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 12:45:31 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 13:45:22 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Police Seize 100+ Servers in Scam Crackdown</title>
+      <link>https://secubuzz.com/news/police-seize-100-servers-in-scam-crackdown-11b48a48</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/police-seize-100-servers-in-scam-crackdown-11b48a48</guid>
+      <description><![CDATA[European law enforcement seized more than 100 servers linked to an unnamed company suspected of hosting fraudulent trading sites for criminal gangs. The operation targeted infrastructure that facilitated money‑laundering and market manipulation, exposing sensitive financial data and undermining market integrity. Authorities arrested seven suspects and seized the servers, disrupting the scam network and preventing further illicit trading activity.]]></description>
+      <pubDate>Tue, 03 Nov 2026 13:33:49 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Agents Accelerate China‑Linked Espionage Attacks</title>
+      <link>https://secubuzz.com/news/ai-agents-accelerate-china-linked-espionage-attack-575023df</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-accelerate-china-linked-espionage-attack-575023df</guid>
+      <description><![CDATA[A China‑linked espionage group deployed AI agents to compromise over 200 organizations in 11 days, according to CrowdStrike. The attackers leveraged large language models to autonomously select commands, enabling rapid, low‑interaction phishing and credential‑stealing campaigns across diverse sectors. Security teams should enforce multi‑factor authentication, monitor for anomalous credential usage, and deploy AI‑driven threat detection to mitigate automated attack vectors.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:31:59 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/">Help Net Security</source>
+      <category>Nation State</category>
+    </item>
     <item>
       <title>Microsoft Study Links 78% of Exploits to System Takeover</title>
       <link>https://secubuzz.com/news/microsoft-study-links-78-of-exploits-to-system-tak-5fb80576</link>
@@ -26,13 +44,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Node-RED Flaw Used to Deploy Bots and Webshells</title>
-      <link>https://secubuzz.com/news/node-red-flaw-used-to-deploy-bots-and-webshells-fd0ce182</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-red-flaw-used-to-deploy-bots-and-webshells-fd0ce182</guid>
-      <description><![CDATA[A critical flaw in Node-RED was exploited by attackers from a single IP to deploy Linux bots and webshells. The vulnerability allows remote code execution through malformed flow definitions, enabling attackers to execute arbitrary commands on the host. Node-RED developers released an update fixing the issue; users should upgrade immediately and restrict flow editor access.]]></description>
+      <title>Node-RED Authentication Flaw (CVE-2026-58115) Used to Deploy Linux Bots and Backdoors</title>
+      <link>https://secubuzz.com/news/node-red-authentication-flaw-cve-2026-58115-used-t-5a30be60</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-red-authentication-flaw-cve-2026-58115-used-t-5a30be60</guid>
+      <description><![CDATA[Attackers exploited Node‑RED’s authentication flaw (CVE‑2026‑58115) to gain remote code execution on unprotected industrial control servers. The flaw allowed attackers to deploy Linux bots and webshells, enabling arbitrary command execution and persistent backdoors. Node‑RED released a patch; users must update immediately and restrict flow editor access to mitigate the threat.]]></description>
       <pubDate>Tue, 03 Nov 2026 12:10:19 GMT</pubDate>
       <source url="https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/">SecurityWeek</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>Leakers$ Hijack Billboard Software to Display Porn</title>
@@ -42,6 +60,15 @@
       <pubDate>Tue, 03 Nov 2026 12:01:55 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy">Malwarebytes Labs</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Exposure Prioritization Framework Explained</title>
+      <link>https://secubuzz.com/news/exposure-prioritization-framework-explained-36cbb380</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/exposure-prioritization-framework-explained-36cbb380</guid>
+      <description><![CDATA[The report explains how organizations prioritize vulnerability remediation, noting that most exposures are treated as urgent despite low exploitation rates. Gartner data shows fewer than 10% of vulnerabilities are actually exploited, yet teams focus on low‑risk exposures, leaving higher‑risk ones unaddressed. Adopting the four‑element framework aligns remediation effort with true risk, improving resource allocation and reducing breach exposure.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:18:20 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/the-4-elements-of-exposure.html">The Hacker News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Linux Kernel Subsystems Vulnerabilities Patching Update</title>
@@ -429,33 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 01:25:02 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94115">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>UK Warns of Rising Cyberattack Scale</title>
-      <link>https://secubuzz.com/news/uk-warns-of-rising-cyberattack-scale-1e42a351</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-warns-of-rising-cyberattack-scale-1e42a351</guid>
-      <description><![CDATA[The UK National Cyber Security Centre chief warned of an unprecedented rise in cyberattacks expected in the coming months. He cited long‑tolerated vulnerabilities now being discovered and exploited at a scale previously unimaginable, stressing the need for stronger defenses. The NCSC will publish its annual report with recommendations, urging organizations to adopt proactive security measures and update legacy systems.]]></description>
-      <pubDate>Tue, 03 Nov 2026 00:01:00 GMT</pubDate>
-      <source url="https://therecord.media/uk-ncsc-predicts-rise-cyberattacks-coming-months">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical Kernel Update for RHEL 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-9-70b22e22</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-9-70b22e22</guid>
-      <description><![CDATA[Red Hat released a kernel update for RHEL 9.4 Update Services for SAP Solutions, fixing a critical flaw that could enable privilege escalation or denial of service. The advisory lists multiple CVEs with CVSS base scores, but no single CVE is named in the text. Apply the new kernel package via standard RHEL repositories immediately to mitigate the risk.]]></description>
-      <pubDate>Mon, 02 Nov 2026 23:24:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94109">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Unit 42 Highlights Cyberespionage, Extortion, AI Adoption</title>
-      <link>https://secubuzz.com/news/unit-42-highlights-cyberespionage-extortion-ai-ado-599c6f89</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-highlights-cyberespionage-extortion-ai-ado-599c6f89</guid>
-      <description><![CDATA[Unit 42 released a threat intelligence brief covering recent cyberespionage campaigns, financial extortion incidents, and AI‑driven offensive tactics. The report notes adversaries use AI to automate phishing, accelerate malware development, and enhance data exfiltration while extortion actors target financial institutions. Security teams should monitor AI‑driven threat indicators, update detection rules, and review supply‑chain controls to mitigate evolving risks.]]></description>
-      <pubDate>Mon, 02 Nov 2026 23:00:45 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/">Unit 42</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

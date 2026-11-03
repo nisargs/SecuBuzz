@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
+    "title": "Police Seize 100+ Servers in Scam Crackdown",
+    "headline": "Police Seize 100+ Servers in Scam Crackdown",
+    "summary": "European law enforcement seized more than 100 servers linked to an unnamed company suspected of hosting fraudulent trading sites for criminal gangs. The operation targeted infrastructure that facilitated money‑laundering and market manipulation, exposing sensitive financial data and undermining market integrity. Authorities arrested seven suspects and seized the servers, disrupting the scam network and preventing further illicit trading activity.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-03T13:33:49.000Z",
+    "ingestedAt": "2026-11-03T13:44:54.582Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/",
+    "title": "AI Agents Accelerate China‑Linked Espionage Attacks",
+    "headline": "AI Agents Accelerate China‑Linked Espionage Attacks",
+    "summary": "A China‑linked espionage group deployed AI agents to compromise over 200 organizations in 11 days, according to CrowdStrike. The attackers leveraged large language models to autonomously select commands, enabling rapid, low‑interaction phishing and credential‑stealing campaigns across diverse sectors. Security teams should enforce multi‑factor authentication, monitor for anomalous credential usage, and deploy AI‑driven threat detection to mitigate automated attack vectors.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-03T12:31:59.000Z",
+    "ingestedAt": "2026-11-03T13:44:54.582Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/",
     "sourceUrl": "https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/",
     "title": "Microsoft Study Links 78% of Exploits to System Takeover",
@@ -34,18 +66,26 @@
   {
     "id": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
     "sourceUrl": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
-    "title": "Node-RED Flaw Used to Deploy Bots and Webshells",
-    "headline": "Node-RED Flaw Used to Deploy Bots and Webshells",
-    "summary": "A critical flaw in Node-RED was exploited by attackers from a single IP to deploy Linux bots and webshells. The vulnerability allows remote code execution through malformed flow definitions, enabling attackers to execute arbitrary commands on the host. Node-RED developers released an update fixing the issue; users should upgrade immediately and restrict flow editor access.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
+    "title": "Node-RED Authentication Flaw (CVE-2026-58115) Used to Deploy Linux Bots and Backdoors",
+    "headline": "Node-RED Authentication Flaw (CVE-2026-58115) Used to Deploy Linux Bots and Backdoors",
+    "summary": "Attackers exploited Node‑RED’s authentication flaw (CVE‑2026‑58115) to gain remote code execution on unprotected industrial control servers. The flaw allowed attackers to deploy Linux bots and webshells, enabling arbitrary command execution and persistent backdoors. Node‑RED released a patch; users must update immediately and restrict flow editor access to mitigate the threat.",
+    "category": "CVE",
+    "severity": "CRITICAL",
     "source": "SecurityWeek",
     "publishedAt": "2026-11-03T12:10:19.000Z",
     "ingestedAt": "2026-11-03T12:43:23.481Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/node-red-cve-2026-58115-exploitation/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-58115"
+    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy",
@@ -61,6 +101,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+    "title": "Exposure Prioritization Framework Explained",
+    "headline": "Exposure Prioritization Framework Explained",
+    "summary": "The report explains how organizations prioritize vulnerability remediation, noting that most exposures are treated as urgent despite low exploitation rates. Gartner data shows fewer than 10% of vulnerabilities are actually exploited, yet teams focus on low‑risk exposures, leaving higher‑risk ones unaddressed. Adopting the four‑element framework aligns remediation effort with true risk, improving resource allocation and reducing breach exposure.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-03T11:18:20.000Z",
+    "ingestedAt": "2026-11-03T13:44:54.581Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
     "additionalSources": []
   },
   {
@@ -7783,44 +7839,5 @@
         "sourceUrl": "https://cybersecuritynews.com/hackers-abuse-signed-chatgpt/"
       }
     ]
-  },
-  {
-    "id": "https://www.securityweek.com/google-says-gemini-4-carbon-leads-in-finding-exploiting-and-fixing-vulnerabilities/",
-    "sourceUrl": "https://www.securityweek.com/google-says-gemini-4-carbon-leads-in-finding-exploiting-and-fixing-vulnerabilities/",
-    "title": "Google Showcases Gemini 4 Carbon Cybersecurity Model",
-    "headline": "Google Showcases Gemini 4 Carbon Cybersecurity Model",
-    "summary": "Google introduced the Gemini 4 Carbon model, achieving 88.2% on SEC-bench Pro, targeting vetted cyber defenders through its Fairwind Program. The model leverages advanced AI to detect and mitigate threats, providing automated analysis and threat intelligence. Users must integrate the model via the Fairwind Program to access its capabilities and stay updated on security enhancements.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-29T15:01:00.000Z",
-    "url": "https://www.securityweek.com/google-says-gemini-4-carbon-leads-in-finding-exploiting-and-fixing-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/how-secure-are-us-elections-voting-machine-risks-and-the-growing-threat-of-ai/",
-    "sourceUrl": "https://www.securityweek.com/how-secure-are-us-elections-voting-machine-risks-and-the-growing-threat-of-ai/",
-    "title": "US Voting Machines Face AI‑Driven Security Gaps",
-    "headline": "US Voting Machines Face AI‑Driven Security Gaps",
-    "summary": "Unpatched voting machines and QR‑coded ballots expose U.S. elections to AI‑driven influence campaigns, creating significant integrity risks. The lack of verification mechanisms allows adversaries to manipulate ballot data and inject malicious code, potentially compromising election outcomes. Election officials should enforce patch management, validate QR codes, and deploy AI‑based anomaly detection to mitigate these threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-29T15:00:00.000Z",
-    "url": "https://www.securityweek.com/how-secure-are-us-elections-voting-machine-risks-and-the-growing-threat-of-ai/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/nist-post-quantum-cryptography-guidance/",
-    "sourceUrl": "https://cybersecuritynews.com/nist-post-quantum-cryptography-guidance/",
-    "title": "NIST Releases Post‑Quantum Cryptography Transition Guidance",
-    "headline": "NIST Releases Post‑Quantum Cryptography Transition Guidance",
-    "summary": "NIST published a guidance document outlining migration paths to quantum‑resistant cryptographic standards for federal agencies and technology providers. The report identifies vulnerable legacy algorithms, recommends replacements, and sets migration timelines to ensure continuity of secure communications. Implementing the guidance requires updating cryptographic libraries, revising key management processes, and conducting compatibility testing.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-29T14:55:18.000Z",
-    "url": "https://cybersecuritynews.com/nist-post-quantum-cryptography-guidance/",
-    "additionalSources": []
   }
 ]
