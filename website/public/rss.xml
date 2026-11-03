@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 17:45:51 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 18:46:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-119922 - Babelfish for PostgreSQL Privilege Escalation</title>
+      <link>https://secubuzz.com/news/cve-2026-119922-babelfish-for-postgresql-privilege-6e897223</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119922-babelfish-for-postgresql-privilege-6e897223</guid>
+      <description><![CDATA[Bulletin ID: 2026-165-AWS Publication Date: 11/03/2026 10:00 AM PST Description: Improper access control in the Babelfish for PostgreSQL extension versions 1.2-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 allows remote authenticated users to elevate their privileges. We recommend you upgrade to Babelfish for PostgreSQL extension versions Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:26:54 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-165-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:94629: Important: dpdk security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-94629-important-dpdk-security-update-b0b12e73</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94629-important-dpdk-security-update-b0b12e73</guid>
+      <description><![CDATA[An update for dpdk is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.]]></description>
+      <pubDate>Tue, 03 Nov 2026 18:13:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94629">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:94630: Important: dpdk security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-94630-important-dpdk-security-update-c8053797</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94630-important-dpdk-security-update-c8053797</guid>
+      <description><![CDATA[An update for dpdk is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:54:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94630">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Europe‑wide Fridge Control Attacks Spoil Grocery Stock</title>
+      <link>https://secubuzz.com/news/europe-wide-fridge-control-attacks-spoil-grocery-s-6f1889d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/europe-wide-fridge-control-attacks-spoil-grocery-s-6f1889d7</guid>
+      <description><![CDATA[Supermarket and grocery refrigerator controls across Europe were compromised, marking a second wave of attacks that defrosted fridges and spoiled inventory. Unidentified actors exploited a remote control vulnerability in IoT refrigeration systems, enabling unauthorized temperature manipulation and causing significant product loss. Operators should apply vendor firmware updates, enforce network segmentation, and monitor anomalous temperature changes to mitigate future incidents.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:43:00 GMT</pubDate>
+      <source url="https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks">The Record</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Trojanized Inno Installers Deliver Monetization Payloads</title>
+      <link>https://secubuzz.com/news/trojanized-inno-installers-deliver-monetization-pa-605b70fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trojanized-inno-installers-deliver-monetization-pa-605b70fb</guid>
+      <description><![CDATA[Microsoft Threat Intelligence identified a fake‑download campaign that distributes trojanized Inno installers to users. The installers embed monetization offers, enabling attackers to generate revenue through click‑throughs and ad fraud while remaining undetected during the installation process. Security teams should block known malicious installer URLs, employ application whitelisting, and monitor installer execution for anomalous behavior.]]></description>
+      <pubDate>Tue, 03 Nov 2026 17:32:47 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/">Microsoft Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>OpenAI Deploys Continuous Security Testing on Pando Git</title>
       <link>https://secubuzz.com/news/openai-deploys-continuous-security-testing-on-pand-42884314</link>
@@ -24,6 +69,24 @@
       <pubDate>Tue, 03 Nov 2026 17:05:12 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Email+Gateway+SQL+Injection+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Binance Discloses $6.43 Billion Theft via Social Engineering and Tampered Homebrew</title>
+      <link>https://secubuzz.com/news/binance-discloses-6-43-billion-theft-via-social-en-32a7dbb8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-discloses-6-43-billion-theft-via-social-en-32a7dbb8</guid>
+      <description><![CDATA[Binance disclosed a multi-stage campaign resulting in a record $6.43 billion asset theft, combining tampered Homebrew installations with recruitment-themed social engineering targeting two engineers. The attack bypassed standard security controls through supply chain manipulation and targeted personnel rather than infrastructure directly. Binance stated the incident was not a single phishing event but a coordinated campaign requiring comprehensive forensic investigation.]]></description>
+      <pubDate>Tue, 03 Nov 2026 16:55:58 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Binance Reports $6.3B Theft in Months‑Long Campaign</title>
+      <link>https://secubuzz.com/news/binance-reports-6-3b-theft-in-months-long-campaign-d871ab44</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-reports-6-3b-theft-in-months-long-campaign-d871ab44</guid>
+      <description><![CDATA[Binance disclosed a $6.3 billion cryptocurrency theft executed over several months by attackers linked to North Korea. The campaign leveraged social engineering, including fake recruitment interviews, to compromise accounts and siphon funds, resulting in a massive loss of digital assets. Binance has tightened account verification, implemented stricter monitoring, and urged users to enable multi‑factor authentication to prevent future breaches.]]></description>
+      <pubDate>Tue, 03 Nov 2026 16:42:00 GMT</pubDate>
+      <source url="https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>North Korean Hackers Abuse Internal AI Tool and Fake Job Interviews in $6.34 Billion Binance Heist</title>
@@ -89,6 +152,42 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Google Warns of LLMjacking Costing Enterprises $1M</title>
+      <link>https://secubuzz.com/news/google-warns-of-llmjacking-costing-enterprises-1m-ee7f0014</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-warns-of-llmjacking-costing-enterprises-1m-ee7f0014</guid>
+      <description><![CDATA[Google warned that threat actors hijack enterprise LLM access via phishing, code leaks, misconfigurations, or exposed client-side code. LLMjacking exploits stolen API keys to consume expensive compute resources, generating up to $1 million in unauthorized cloud charges. Google recommends rotating API keys, enforcing strict key‑management policies, and monitoring usage anomalies to mitigate LLMjacking.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:41:53 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Practical Cyber Awareness Tips for Modern Threats</title>
+      <link>https://secubuzz.com/news/practical-cyber-awareness-tips-for-modern-threats-da182336</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/practical-cyber-awareness-tips-for-modern-threats-da182336</guid>
+      <description><![CDATA[The article outlines nine practical cyber awareness practices designed to align with the current threat landscape. Techniques include safer search habits, stronger login security, enhanced executive protection, and other habits that reduce enterprise risk. Security teams should adopt these measures to strengthen user behavior and mitigate evolving ongoing attack vectors.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:38:20 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>LLMjacking Thrives as Cybercriminal Cloud Resale</title>
+      <link>https://secubuzz.com/news/llmjacking-thrives-as-cybercriminal-cloud-resale-29360372</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/llmjacking-thrives-as-cybercriminal-cloud-resale-29360372</guid>
+      <description><![CDATA[The article reports that cybercriminals resell cloud access to large language models, with some victims paying up to $1 million before access was revoked. Attackers exploit stolen or misconfigured API keys to inflate cloud usage, causing significant financial damage. Organizations should enforce strict key‑management controls, monitor usage anomalies, and rotate credentials regularly to counter LLMjacking.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:35:50 GMT</pubDate>
+      <source url="https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Hackers Hijack Emergency Alert Apps in Ukraine and Russia for Fake Nuclear Warnings</title>
+      <link>https://secubuzz.com/news/hackers-hijack-emergency-alert-apps-in-ukraine-and-63a53231</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hijack-emergency-alert-apps-in-ukraine-and-63a53231</guid>
+      <description><![CDATA[Attackers compromised emergency alert applications in Ukraine and Russia to distribute false nuclear strike warnings during wartime operations on November 1-2. The incidents disrupted trusted public safety channels by injecting fabricated radiation and chemical threat alerts. Officials confirmed the breaches did not disable broader warning systems but represented a significant interference with critical communication infrastructure.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:34:02 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-hijack-emergency-alert-apps/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>cPGuard Update Channel Compromised, Backdoor Deployed</title>
       <link>https://secubuzz.com/news/cpguard-update-channel-compromised-backdoor-deploy-700611b8</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cpguard-update-channel-compromised-backdoor-deploy-700611b8</guid>
@@ -105,6 +204,15 @@
       <pubDate>Tue, 03 Nov 2026 15:06:16 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Gartner Forecasts SOC Engineers Outnumber Analysts by 2028</title>
+      <link>https://secubuzz.com/news/gartner-forecasts-soc-engineers-outnumber-analysts-f0d63030</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gartner-forecasts-soc-engineers-outnumber-analysts-f0d63030</guid>
+      <description><![CDATA[Gartner predicts that security operations centers will employ 50% more engineers than analysts by 2028 as AI agents automate routine alert handling. The report examines how AI reshapes SOC roles, shifting responsibilities from analysts to detection engineering, threat hunting, and exposure management. Security teams should plan for increased engineering capacity and invest in AI‑driven tooling to support evolving SOC workflows.]]></description>
+      <pubDate>Tue, 03 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/">BleepingComputer</source>
+      <category>General</category>
     </item>
     <item>
       <title>USN-8973-1: libmspack vulnerability</title>
@@ -125,6 +233,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>HAProxy Vulnerabilities Allow Denial of Service via HTTP/2 and HTTP/1.1</title>
+      <link>https://secubuzz.com/news/haproxy-vulnerabilities-allow-denial-of-service-vi-416fa8af</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/haproxy-vulnerabilities-allow-denial-of-service-vi-416fa8af</guid>
+      <description><![CDATA[Two CVEs affecting HAProxy were disclosed: CVE-2026-110353 and CVE-2026-110354, both involving incorrect handling of truncated HTTP/2 PING frames and certain HTTP/1.1 chunked requests respectively. A remote attacker could trigger excessive CPU consumption leading to denial of service without authentication. The vulnerabilities require no exploitation confirmation beyond the advisory description.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:33:21 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8972-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Frontline Education Breach Exposes 1.3 Million Records</title>
       <link>https://secubuzz.com/news/frontline-education-breach-exposes-1-3-million-rec-4bdd1929</link>
       <guid isPermaLink="true">https://secubuzz.com/news/frontline-education-breach-exposes-1-3-million-rec-4bdd1929</guid>
@@ -132,6 +249,15 @@
       <pubDate>Tue, 03 Nov 2026 14:32:38 GMT</pubDate>
       <source url="https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>GNOME Shell Vulnerability Allows DoS and Information Disclosure from Remote Icons</title>
+      <link>https://secubuzz.com/news/gnome-shell-vulnerability-allows-dos-and-informati-f13ad83a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gnome-shell-vulnerability-allows-dos-and-informati-f13ad83a</guid>
+      <description><![CDATA[A vulnerability was discovered in GNOME Shell where improper validation of icon dimensions from remote search providers could cause crashes or expose sensitive memory information. The flaw requires no authentication and affects desktop environments processing untrusted icon data. The advisory describes a denial of service vector combined with potential information disclosure from improperly validated remote icon sources.]]></description>
+      <pubDate>Tue, 03 Nov 2026 14:13:50 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8971-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Videostrong Deploys Backdoor in 1.3 Million Android TV Boxes</title>
@@ -204,6 +330,15 @@
       <pubDate>Tue, 03 Nov 2026 13:58:16 GMT</pubDate>
       <source url="https://cybersecuritynews.com/artex-ai-automate-enterprise-attacks/">Cyber Security News</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Bind DNS Multiple Denial-of-Service Vulnerabilities Patched</title>
+      <link>https://secubuzz.com/news/bind-dns-multiple-denial-of-service-vulnerabilitie-bb884879</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bind-dns-multiple-denial-of-service-vulnerabilitie-bb884879</guid>
+      <description><![CDATA[It was discovered that Bind incorrectly handled certain DNS messages with repeated singleton records such as SOA, CNAME, or DNAME records. A remote attacker could possibly use this issue to cause Bind to use excessive memory, leading to a denial of service. This issue only affected Ubuntu 26.10. (CVE-2026-75029). It was discovered that Bind incorrectly handled cached DNSSEC proofs.]]></description>
+      <pubDate>Tue, 03 Nov 2026 13:45:46 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8969-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Russia-Linked Spies Target Ukrainian War Crimes Data</title>
@@ -321,141 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
       <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01">CISA</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Revolve Card Data Stolen, 1.5 Million Affected</title>
-      <link>https://secubuzz.com/news/revolve-card-data-stolen-1-5-million-affected-37f2effe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/revolve-card-data-stolen-1-5-million-affected-37f2effe</guid>
-      <description><![CDATA[Revolve reported that attackers accessed and exfiltrated stored card details from its payment platform, potentially compromising up to 1.5 million users. The breach involved credential theft and data‑stealing malware, but no evidence of active exploitation of a zero‑day vulnerability was disclosed. Users should monitor statements, change passwords, and enable two‑factor authentication, while Revolve has issued a patch and security advisory.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:26:44 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/revolve-card-breach-1-5-million-people-may-be-affected">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Patches Kernel TCP RCE CVE‑2026‑98432</title>
-      <link>https://secubuzz.com/news/red-hat-patches-kernel-tcp-rce-cve-2026-98432-99de3560</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-kernel-tcp-rce-cve-2026-98432-99de3560</guid>
-      <description><![CDATA[Red Hat released kernel patches for RHEL 8, 9, and 10 to fix CVE‑2026‑98432, a use‑after‑free flaw in the IPv4 TCP code. The flaw enables remote, unauthenticated attackers to execute arbitrary code with a CVSS score of 9.8, posing a critical threat. Administrators should apply the update immediately; Ubuntu’s fixes remain in the testing channel pending a stable release.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:23:53 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Exposure Prioritization Framework Explained</title>
-      <link>https://secubuzz.com/news/exposure-prioritization-framework-explained-36cbb380</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/exposure-prioritization-framework-explained-36cbb380</guid>
-      <description><![CDATA[The report explains how organizations prioritize vulnerability remediation, noting that most exposures are treated as urgent despite low exploitation rates. Gartner data shows fewer than 10% of vulnerabilities are actually exploited, yet teams focus on low‑risk exposures, leaving higher‑risk ones unaddressed. Adopting the four‑element framework aligns remediation effort with true risk, improving resource allocation and reducing breach exposure.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:18:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/the-4-elements-of-exposure.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Kernel Race Condition Exploits Cause DoS CVE‑2022‑1205</title>
-      <link>https://secubuzz.com/news/kernel-race-condition-exploits-cause-dos-cve-2022-da40416e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kernel-race-condition-exploits-cause-dos-cve-2022-da40416e</guid>
-      <description><![CDATA[Duoming Zhou identified race conditions in the AX.25 amateur radio protocol within the Linux kernel, creating CVE‑2022‑1205, a use‑after‑free flaw. The vulnerability permits local attackers to trigger a denial‑of‑service crash, potentially compromising system stability. Red Hat and other vendors have released kernel updates correcting the flaw across multiple subsystems; administrators should apply the patch promptly.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:05:15 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8961-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Kernel Clock Driver Null Dereference CVE‑2022‑3114</title>
-      <link>https://secubuzz.com/news/kernel-clock-driver-null-dereference-cve-2022-3114-d1d8373f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kernel-clock-driver-null-dereference-cve-2022-3114-d1d8373f</guid>
-      <description><![CDATA[Duoming Zhou uncovered race conditions in the AX.25 protocol and a null pointer dereference in the i.MX clock driver, creating CVE‑2022‑1205 and CVE‑2022‑3114, both local use‑after‑free flaws. Each vulnerability allows local attackers to trigger a denial‑of‑service crash, potentially destabilizing affected systems. Kernel updates correcting these flaws across multiple architectures have been released; administrators should apply the patches promptly.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:04:01 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8963-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Linux Kernel Subsystems Vulnerabilities Patching Update</title>
-      <link>https://secubuzz.com/news/linux-kernel-subsystems-vulnerabilities-patching-u-78ae618d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-subsystems-vulnerabilities-patching-u-78ae618d</guid>
-      <description><![CDATA[Linux kernel subsystems like USB gadget drivers and memory management contain flaws that could let attackers compromise a system. Improper device input handling and memory allocation could allow privilege escalation or denial of service. Ubuntu released a kernel update patching all affected subsystems; administrators should apply it promptly to mitigate the risk.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:03:44 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8959-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux Kernel Bluetooth Use-After-Free Vulnerabilities Fixed</title>
-      <link>https://secubuzz.com/news/linux-kernel-bluetooth-use-after-free-vulnerabilit-82a11cdb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-bluetooth-use-after-free-vulnerabilit-82a11cdb</guid>
-      <description><![CDATA[A use‑after‑free flaw in the Linux kernel Bluetooth subsystem (CVE‑2021‑3640) allows a local attacker to trigger a denial‑of‑service or potentially execute arbitrary code. Another CVE‑2022‑49058 flaw in the kernel’s file‑system infrastructure also permits local privilege escalation or denial‑of‑service. Ubuntu released kernel updates that patch both vulnerabilities; administrators should apply the latest kernel version immediately to mitigate the risks.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:03:23 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8968-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>USN-8967-1: Linux kernel (AWS) vulnerability</title>
-      <link>https://secubuzz.com/news/usn-8967-1-linux-kernel-aws-vulnerability-b5a0eb08</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-8967-1-linux-kernel-aws-vulnerability-b5a0eb08</guid>
-      <description><![CDATA[Jürgen Groß discovered that the Xen network backend driver in the Linux kernel did not adequately limit the amount of queued packets when a guest did not process them. An attacker in a guest VM can use this to cause a denial of service (excessive kernel memory consumption) in the network backend domain. The vulnerability is tracked as CVE-2026-98432.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:03:11 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8967-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches Linux Kernel SCSI NFS Flaws</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-linux-kernel-scsi-nfs-flaws-ce91eeae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-linux-kernel-scsi-nfs-flaws-ce91eeae</guid>
-      <description><![CDATA[Ubuntu released USN-8964-1 patching Linux kernel vulnerabilities in SCSI and NFS subsystems allowing system compromise. The flaws, CVE-2022-49082 and CVE-2025-39730, permit memory corruption or privilege escalation via local or network file share access. Administrators must apply kernel updates via standard Ubuntu channels to mitigate exploitation risk.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:02:41 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8964-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Gorbag Exploits WinRAR Flaw for Data Theft</title>
-      <link>https://secubuzz.com/news/gorbag-exploits-winrar-flaw-for-data-theft-d7ba2ddb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gorbag-exploits-winrar-flaw-for-data-theft-d7ba2ddb</guid>
-      <description><![CDATA[Gorbag exploited a WinRAR flaw to deploy simple information‑stealing malware against Ukrainian law enforcement, justice, and defense entities. The vulnerability enabled arbitrary code execution via a crafted archive, but no zero‑day status was confirmed, limiting the attack to a known flaw. Teams should patch WinRAR to the latest release and monitor for suspicious archive extraction.]]></description>
-      <pubDate>Tue, 03 Nov 2026 11:00:45 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Harvard Breach Exposes 851,000 Alumni Accounts</title>
-      <link>https://secubuzz.com/news/harvard-breach-exposes-851-000-alumni-accounts-62b371b9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/harvard-breach-exposes-851-000-alumni-accounts-62b371b9</guid>
-      <description><![CDATA[Hackers accessed Harvard University's Alumni Affairs and Development systems in November 2025, compromising over 850,000 email addresses. The breach exposed personal identifiers and contact data, creating a high‑risk exposure for alumni and potential phishing vectors, with no credential theft reported.]]></description>
-      <pubDate>Tue, 03 Nov 2026 10:53:25 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>NCSC Warns AI Accelerates Ransomware on Critical Infrastructure</title>
-      <link>https://secubuzz.com/news/ncsc-warns-ai-accelerates-ransomware-on-critical-i-e6aa1c94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ncsc-warns-ai-accelerates-ransomware-on-critical-i-e6aa1c94</guid>
-      <description><![CDATA[The UK National Cyber Security Centre warned that AI is enabling ransomware actors to launch attacks on critical infrastructure more quickly and cheaply. Its 2026 Annual Review recorded 1,831 attack reports, including 337 incidents that required Incident Management Team support. The NCSC urges organizations to adopt AI‑aware defenses, such as threat detection and response playbooks, to mitigate accelerated ransomware risks.]]></description>
-      <pubDate>Tue, 03 Nov 2026 10:50:40 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ai-could-accelerate-ransomware/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ARES Platform Automates 66 Red Team Attack Modules</title>
-      <link>https://secubuzz.com/news/ares-platform-automates-66-red-team-attack-modules-411e83c2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ares-platform-automates-66-red-team-attack-modules-411e83c2</guid>
-      <description><![CDATA[The open‑core ARES platform provides red teams with 66 active modules to simulate attacks against Active Directory and cloud environments. Modules map to over 60 MITRE ATT&CK techniques, enabling comprehensive testing of identity, credential, and cloud configuration defenses. Developed by Mafifrizi and released on GitHub, the tool is free to use and can be integrated into existing penetration‑testing workflows.]]></description>
-      <pubDate>Tue, 03 Nov 2026 10:39:29 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ares-ai-red-team-platform/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Adobe Commerce Zero-Day Enables PSK Agent RAT Deployment</title>
-      <link>https://secubuzz.com/news/adobe-commerce-zero-day-enables-psk-agent-rat-depl-3b9d53a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/adobe-commerce-zero-day-enables-psk-agent-rat-depl-3b9d53a7</guid>
-      <description><![CDATA[Attackers exploited the StyleSmuggler flaw in Adobe Commerce and Magento to install the PSK Agent RAT on e‑commerce servers via remote code execution. The CVE‑2026‑75650 vulnerability allows persistent command execution, traffic tunneling, and survives server restarts, presenting a high‑severity remote access threat. Adobe has released an out‑of‑band patch; administrators should apply the update immediately and monitor for unauthorized processes.]]></description>
-      <pubDate>Tue, 03 Nov 2026 10:03:57 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/adobe-commerce-zero-day/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Gorbag APT Targets Ukrainian Courts with Self‑Deleting Malware</title>
-      <link>https://secubuzz.com/news/gorbag-apt-targets-ukrainian-courts-with-self-dele-1cd007d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gorbag-apt-targets-ukrainian-courts-with-self-dele-1cd007d4</guid>
-      <description><![CDATA[The Gorbag APT group, aligned with Russia, has breached Ukrainian court and city council systems since February 2025 via spearphishing attachments delivering a self‑deleting stealer. The malware exfiltrates credentials and sensitive data before erasing its traces, complicating detection and response. Teams should enforce MFA, monitor outbound traffic, and apply the latest patches to mitigate Gorbag’s tactics.]]></description>
-      <pubDate>Tue, 03 Nov 2026 10:00:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/">Help Net Security</source>
-      <category>Nation State</category>
     </item>
   </channel>
 </rss>

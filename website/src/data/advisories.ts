@@ -2,6 +2,84 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-44267",
+    "slug": "cve-2026-44267",
+    "vendor": "npm",
+    "product": "@enspirit/elo",
+    "name": "Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "An unauthenticated attacker who controls a string passed to any Elo JavaScript-emission path — defaultFormats.elo.parse(), the bin/elo CLI, or the live browser playground at elo-lang.org/try — can execute arbitrary code in the host JavaScript runtime.",
+    "requiredAction": "Upgrade @enspirit/elo to version 1.0.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-33r5-xmm8-v6x5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44267"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-44266",
+    "slug": "cve-2026-44266",
+    "vendor": "npm",
+    "product": "@enspirit/elo",
+    "name": "Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "Elo's Ruby backend emits attacker-controlled text into Ruby double-quoted strings without escaping the # character. Because # begins Ruby's interpolation sequences — #{expr}, #@ivar, #@@cvar, #$gvar — and any expression wrapped in #{...} may use backticks for shell execution, an Elo program that contains a crafted string literal or a labelled subtype constraint compiles to Ruby that evaluates...",
+    "requiredAction": "Upgrade @enspirit/elo to version 1.0.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7w38-ggh5-v542"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44266"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-44265",
+    "slug": "cve-2026-44265",
+    "vendor": "npm",
+    "product": "@enspirit/elo",
+    "name": "Elo backends have code injection via unvalidated emission of programmatic AST fields",
+    "dateAdded": "2026-11-03",
+    "dueDate": "",
+    "cvss": 7.4,
+    "severity": "High",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "Elo's programmatic AST API accepts arbitrary values in many node fields without runtime type or syntax validation. Each backend's emit stage interpolates those values straight into the generated source with no escape pass.",
+    "requiredAction": "Upgrade @enspirit/elo to version 1.0.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x9rp-7wh3-2rj5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44265"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-p3jp-9v83-76w9",
     "slug": "ghsa-p3jp-9v83-76w9",
     "vendor": ".NET (NuGet)",
@@ -1253,84 +1331,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119210"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119281",
-    "slug": "cve-2026-119281",
-    "vendor": "Java (Maven)",
-    "product": "org.mariadb.jdbc:mariadb-java-client",
-    "name": "MariaDB Connector/J: Server could switch character_set_results away from UTF-8 without the client noticing",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-838",
-    "ransomware": false,
-    "description": "MariaDB Connector/J decodes every result as UTF-8 and guards character_set_client against a change to another charset, but did not guard character_set_results, and relied on the server's global session_track_system_variables list to be told about charset changes at all.",
-    "requiredAction": "Upgrade org.mariadb.jdbc:mariadb-java-client to version 3.3.7 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-grfq-r75j-rw9x"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119281"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116689",
-    "slug": "cve-2026-116689",
-    "vendor": "npm",
-    "product": "follow-redirects",
-    "name": "follow-redirects: Cross-realm sensitiveHeaders arrays are discarded and custom credentials can follow redirects",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-201",
-    "ransomware": false,
-    "description": "follow-redirects 1.16.0 and 1.16.1 validate the documented sensitiveHeaders option with instanceof Array. An array created in another JavaScript realm is silently replaced with an empty list, so a caller-declared custom credential header can be forwarded to an attacker-controlled cross-origin redirect destination.",
-    "requiredAction": "Upgrade follow-redirects to version 1.16.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mrwp-f3q8-3g9p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116689"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116794",
-    "slug": "cve-2026-116794",
-    "vendor": "Rust (Cargo)",
-    "product": "russh",
-    "name": "russh: Agent server never calls `Agent::confirm`, so keys added with the confirm constraint (`ssh-add -c`) sign without confirmation",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 8.3,
-    "severity": "High",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "The agent server in russh::keys::agent::server never calls Agent::confirm before signing with a key that was added with the confirm constraint. That constraint is SSH_AGENT_CONSTRAIN_CONFIRM (RFC 9987 §5.2.7.2), which is what ssh-add -c sends. The call was replaced by a hard-coded true in 3e04597 (\"Native async traits encore\", #455), first released in 0.50.0-beta.12.",
-    "requiredAction": "Upgrade russh to version 0.65 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vp5q-ff62-jwqv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116794"
       }
     ],
     "source": "GITHUB"

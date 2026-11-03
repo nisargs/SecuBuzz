@@ -11,6 +11,105 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-119922-babelfish-for-postgresql-privilege-6e897223",
+    "title": "CVE-2026-119922 - Babelfish for PostgreSQL Privilege Escalation",
+    "summary": "Bulletin ID: 2026-165-AWS Publication Date: 11/03/2026 10:00 AM PST Description: Improper access control in the Babelfish for PostgreSQL extension versions 1.2-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 allows remote authenticated users to elevate their privileges. We recommend you upgrade to Babelfish for PostgreSQL extension versions Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-165-aws/",
+    "publishedAt": "2026-11-03T18:26:54.000Z",
+    "cves": [
+      "CVE-2026-119922"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-119922-babelfish-for-postgresql-privilege",
+      "article-6e897223",
+      "6e897223",
+      "cve-2026-119922-babelfish-for-postgresql-privilege-7821ef",
+      "cve-2026-119922-babelfish-for-postgresql-privilege-escalatio"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94629-important-dpdk-security-update-b0b12e73",
+    "title": "RHSA-2026:94629: Important: dpdk security update",
+    "summary": "An update for dpdk is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94629",
+    "publishedAt": "2026-11-03T18:13:22.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94629-important-dpdk-security-update",
+      "article-b0b12e73",
+      "b0b12e73",
+      "rhsa-2026-94629-important-dpdk-security-update-37d8b2"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94630-important-dpdk-security-update-c8053797",
+    "title": "RHSA-2026:94630: Important: dpdk security update",
+    "summary": "An update for dpdk is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94630",
+    "publishedAt": "2026-11-03T17:54:39.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94630-important-dpdk-security-update",
+      "article-c8053797",
+      "c8053797",
+      "rhsa-2026-94630-important-dpdk-security-update-37d8b2"
+    ]
+  },
+  {
+    "slug": "europe-wide-fridge-control-attacks-spoil-grocery-s-6f1889d7",
+    "title": "Europe‑wide Fridge Control Attacks Spoil Grocery Stock",
+    "summary": "Supermarket and grocery refrigerator controls across Europe were compromised, marking a second wave of attacks that defrosted fridges and spoiled inventory. Unidentified actors exploited a remote control vulnerability in IoT refrigeration systems, enabling unauthorized temperature manipulation and causing significant product loss. Operators should apply vendor firmware updates, enforce network segmentation, and monitor anomalous temperature changes to mitigate future incidents.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks",
+    "publishedAt": "2026-11-03T17:43:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "europe-wide-fridge-control-attacks-spoil-grocery-s",
+      "article-6f1889d7",
+      "6f1889d7",
+      "europe-wide-fridge-control-attacks-spoil-grocery-s-42810f",
+      "europe-wide-fridge-control-attacks-spoil-grocery-stock"
+    ]
+  },
+  {
+    "slug": "trojanized-inno-installers-deliver-monetization-pa-605b70fb",
+    "title": "Trojanized Inno Installers Deliver Monetization Payloads",
+    "summary": "Microsoft Threat Intelligence identified a fake‑download campaign that distributes trojanized Inno installers to users. The installers embed monetization offers, enabling attackers to generate revenue through click‑throughs and ad fraud while remaining undetected during the installation process. Security teams should block known malicious installer URLs, employ application whitelisting, and monitor installer execution for anomalous behavior.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
+    "publishedAt": "2026-11-03T17:32:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trojanized-inno-installers-deliver-monetization-pa",
+      "article-605b70fb",
+      "605b70fb",
+      "trojanized-inno-installers-deliver-monetization-pa-3b9711",
+      "trojanized-inno-installers-deliver-monetization-payloads"
+    ]
+  },
+  {
     "slug": "openai-deploys-continuous-security-testing-on-pand-42884314",
     "title": "OpenAI Deploys Continuous Security Testing on Pando Git",
     "summary": "OpenAI built Pando, a new Git backend, using Codex agents over 10 weeks while maintaining engineering work. The system now runs continuous red-team testing against Git and Pando to secure its AI-driven development workload. This represents an industry shift toward automated security validation in DevOps pipelines.",
@@ -45,6 +144,43 @@ export const news: NewsBrief[] = [
       "article-804fca82",
       "804fca82",
       "cisco-email-gateway-vulnerability-enables-root-rce-27f659"
+    ]
+  },
+  {
+    "slug": "binance-discloses-6-43-billion-theft-via-social-en-32a7dbb8",
+    "title": "Binance Discloses $6.43 Billion Theft via Social Engineering and Tampered Homebrew",
+    "summary": "Binance disclosed a multi-stage campaign resulting in a record $6.43 billion asset theft, combining tampered Homebrew installations with recruitment-themed social engineering targeting two engineers. The attack bypassed standard security controls through supply chain manipulation and targeted personnel rather than infrastructure directly. Binance stated the incident was not a single phishing event but a coordinated campaign requiring comprehensive forensic investigation.",
+    "category": "Breach",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+    "publishedAt": "2026-11-03T16:55:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-discloses-6-43-billion-theft-via-social-en",
+      "article-32a7dbb8",
+      "32a7dbb8",
+      "binance-discloses-6-43-billion-theft-via-social-en-5314da",
+      "binance-discloses-6-43-billion-theft-via-social-engineering-"
+    ]
+  },
+  {
+    "slug": "binance-reports-6-3b-theft-in-months-long-campaign-d871ab44",
+    "title": "Binance Reports $6.3B Theft in Months‑Long Campaign",
+    "summary": "Binance disclosed a $6.3 billion cryptocurrency theft executed over several months by attackers linked to North Korea. The campaign leveraged social engineering, including fake recruitment interviews, to compromise accounts and siphon funds, resulting in a massive loss of digital assets. Binance has tightened account verification, implemented stricter monitoring, and urged users to enable multi‑factor authentication to prevent future breaches.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea",
+    "publishedAt": "2026-11-03T16:42:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-reports-6-3b-theft-in-months-long-campaign",
+      "article-d871ab44",
+      "d871ab44",
+      "binance-reports-6-3b-theft-in-months-long-campaign-1bf56b"
     ]
   },
   {
@@ -178,6 +314,79 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "google-warns-of-llmjacking-costing-enterprises-1m-ee7f0014",
+    "title": "Google Warns of LLMjacking Costing Enterprises $1M",
+    "summary": "Google warned that threat actors hijack enterprise LLM access via phishing, code leaks, misconfigurations, or exposed client-side code. LLMjacking exploits stolen API keys to consume expensive compute resources, generating up to $1 million in unauthorized cloud charges. Google recommends rotating API keys, enforcing strict key‑management policies, and monitoring usage anomalies to mitigate LLMjacking.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+    "publishedAt": "2026-11-03T15:41:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-warns-of-llmjacking-costing-enterprises-1m",
+      "article-ee7f0014",
+      "ee7f0014",
+      "google-warns-of-llmjacking-costing-enterprises-1m-76467c"
+    ]
+  },
+  {
+    "slug": "practical-cyber-awareness-tips-for-modern-threats-da182336",
+    "title": "Practical Cyber Awareness Tips for Modern Threats",
+    "summary": "The article outlines nine practical cyber awareness practices designed to align with the current threat landscape. Techniques include safer search habits, stronger login security, enhanced executive protection, and other habits that reduce enterprise risk. Security teams should adopt these measures to strengthen user behavior and mitigate evolving ongoing attack vectors.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
+    "publishedAt": "2026-11-03T15:38:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "practical-cyber-awareness-tips-for-modern-threats",
+      "article-da182336",
+      "da182336",
+      "practical-cyber-awareness-tips-for-modern-threats-65034f"
+    ]
+  },
+  {
+    "slug": "llmjacking-thrives-as-cybercriminal-cloud-resale-29360372",
+    "title": "LLMjacking Thrives as Cybercriminal Cloud Resale",
+    "summary": "The article reports that cybercriminals resell cloud access to large language models, with some victims paying up to $1 million before access was revoked. Attackers exploit stolen or misconfigured API keys to inflate cloud usage, causing significant financial damage. Organizations should enforce strict key‑management controls, monitor usage anomalies, and rotate credentials regularly to counter LLMjacking.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
+    "publishedAt": "2026-11-03T15:35:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "llmjacking-thrives-as-cybercriminal-cloud-resale",
+      "article-29360372",
+      "29360372",
+      "llmjacking-thrives-as-cybercriminal-cloud-resale-1a4ef1"
+    ]
+  },
+  {
+    "slug": "hackers-hijack-emergency-alert-apps-in-ukraine-and-63a53231",
+    "title": "Hackers Hijack Emergency Alert Apps in Ukraine and Russia for Fake Nuclear Warnings",
+    "summary": "Attackers compromised emergency alert applications in Ukraine and Russia to distribute false nuclear strike warnings during wartime operations on November 1-2. The incidents disrupted trusted public safety channels by injecting fabricated radiation and chemical threat alerts. Officials confirmed the breaches did not disable broader warning systems but represented a significant interference with critical communication infrastructure.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-emergency-alert-apps/",
+    "publishedAt": "2026-11-03T15:34:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hijack-emergency-alert-apps-in-ukraine-and",
+      "article-63a53231",
+      "63a53231",
+      "hackers-hijack-emergency-alert-apps-in-ukraine-and-5eecf7",
+      "hackers-hijack-emergency-alert-apps-in-ukraine-and-russia-fo"
+    ]
+  },
+  {
     "slug": "cpguard-update-channel-compromised-backdoor-deploy-700611b8",
     "title": "cPGuard Update Channel Compromised, Backdoor Deployed",
     "summary": "An attacker hijacked the cPGuard update channel on November 2, delivering a malicious script that installed a backdoor on customers’ Linux servers. The backdoor harvested password hashes and other sensitive files, and the attacker subsequently exfiltrated portions of the collected data. cPGuard released version 5.88.25 and later with a patched update mechanism; users should upgrade immediately and verify update integrity.",
@@ -213,6 +422,25 @@ export const news: NewsBrief[] = [
       "e7b80cea",
       "barracuda-issues-root-privilege-vulnerability-aler-305835",
       "barracuda-issues-root-privilege-vulnerability-alerts"
+    ]
+  },
+  {
+    "slug": "gartner-forecasts-soc-engineers-outnumber-analysts-f0d63030",
+    "title": "Gartner Forecasts SOC Engineers Outnumber Analysts by 2028",
+    "summary": "Gartner predicts that security operations centers will employ 50% more engineers than analysts by 2028 as AI agents automate routine alert handling. The report examines how AI reshapes SOC roles, shifting responsibilities from analysts to detection engineering, threat hunting, and exposure management. Security teams should plan for increased engineering capacity and invest in AI‑driven tooling to support evolving SOC workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
+    "publishedAt": "2026-11-03T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gartner-forecasts-soc-engineers-outnumber-analysts",
+      "article-f0d63030",
+      "f0d63030",
+      "gartner-forecasts-soc-engineers-outnumber-analysts-7325b6",
+      "gartner-forecasts-soc-engineers-outnumber-analysts-by-2028"
     ]
   },
   {
@@ -252,6 +480,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "haproxy-vulnerabilities-allow-denial-of-service-vi-416fa8af",
+    "title": "HAProxy Vulnerabilities Allow Denial of Service via HTTP/2 and HTTP/1.1",
+    "summary": "Two CVEs affecting HAProxy were disclosed: CVE-2026-110353 and CVE-2026-110354, both involving incorrect handling of truncated HTTP/2 PING frames and certain HTTP/1.1 chunked requests respectively. A remote attacker could trigger excessive CPU consumption leading to denial of service without authentication. The vulnerabilities require no exploitation confirmation beyond the advisory description.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8972-1",
+    "publishedAt": "2026-11-03T14:33:21.000Z",
+    "cves": [
+      "CVE-2026-110353",
+      "CVE-2026-110354"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "haproxy-vulnerabilities-allow-denial-of-service-vi",
+      "article-416fa8af",
+      "416fa8af",
+      "haproxy-vulnerabilities-allow-denial-of-service-vi-7fbc8a",
+      "haproxy-vulnerabilities-allow-denial-of-service-via-http-2-a"
+    ]
+  },
+  {
     "slug": "frontline-education-breach-exposes-1-3-million-rec-4bdd1929",
     "title": "Frontline Education Breach Exposes 1.3 Million Records",
     "summary": "Hackers exploited a flaw in third‑party software used by Frontline Education, compromising personal data of staff and students. The vulnerability enabled unauthorized extraction of names, addresses, and academic details, affecting more than 1.3 million individuals. Frontline Education has notified affected parties, coordinated with the vendor to patch the flaw, and urged MFA enforcement.",
@@ -268,6 +518,25 @@ export const news: NewsBrief[] = [
       "4bdd1929",
       "frontline-education-breach-exposes-1-3-million-rec-5bc8ce",
       "frontline-education-breach-exposes-1-3-million-records"
+    ]
+  },
+  {
+    "slug": "gnome-shell-vulnerability-allows-dos-and-informati-f13ad83a",
+    "title": "GNOME Shell Vulnerability Allows DoS and Information Disclosure from Remote Icons",
+    "summary": "A vulnerability was discovered in GNOME Shell where improper validation of icon dimensions from remote search providers could cause crashes or expose sensitive memory information. The flaw requires no authentication and affects desktop environments processing untrusted icon data. The advisory describes a denial of service vector combined with potential information disclosure from improperly validated remote icon sources.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8971-1",
+    "publishedAt": "2026-11-03T14:13:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gnome-shell-vulnerability-allows-dos-and-informati",
+      "article-f13ad83a",
+      "f13ad83a",
+      "gnome-shell-vulnerability-allows-dos-and-informati-7fbc8e",
+      "gnome-shell-vulnerability-allows-dos-and-information-disclos"
     ]
   },
   {
@@ -419,6 +688,27 @@ export const news: NewsBrief[] = [
       "839c89b6",
       "artex-ai-automates-enterprise-attacks-at-machine-s-39a79b",
       "artex-ai-automates-enterprise-attacks-at-machine-speed"
+    ]
+  },
+  {
+    "slug": "bind-dns-multiple-denial-of-service-vulnerabilitie-bb884879",
+    "title": "Bind DNS Multiple Denial-of-Service Vulnerabilities Patched",
+    "summary": "It was discovered that Bind incorrectly handled certain DNS messages with repeated singleton records such as SOA, CNAME, or DNAME records. A remote attacker could possibly use this issue to cause Bind to use excessive memory, leading to a denial of service. This issue only affected Ubuntu 26.10. (CVE-2026-75029). It was discovered that Bind incorrectly handled cached DNSSEC proofs.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8969-1",
+    "publishedAt": "2026-11-03T13:45:46.000Z",
+    "cves": [
+      "CVE-2026-75029"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "bind-dns-multiple-denial-of-service-vulnerabilitie",
+      "article-bb884879",
+      "bb884879",
+      "bind-dns-multiple-denial-of-service-vulnerabilitie-7fbce4",
+      "bind-dns-multiple-denial-of-service-vulnerabilities-patched"
     ]
   },
   {
@@ -731,6 +1021,25 @@ export const news: NewsBrief[] = [
       "article-36cbb380",
       "36cbb380",
       "exposure-prioritization-framework-explained-44e845"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-pipewire-for-moderate-security-imp-0108f945",
+    "title": "Red Hat Updates pipewire for Moderate Security Impact",
+    "summary": "An update for pipewire is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System base score is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94490",
+    "publishedAt": "2026-11-03T11:15:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-pipewire-for-moderate-security-imp",
+      "article-0108f945",
+      "0108f945",
+      "red-hat-updates-pipewire-for-moderate-security-imp-37d8b9",
+      "red-hat-updates-pipewire-for-moderate-security-impact"
     ]
   },
   {
@@ -1222,6 +1531,24 @@ export const news: NewsBrief[] = [
       "8eb72348",
       "gnutls-update-mitigates-moderate-vulnerability-in-37d8ba",
       "gnutls-update-mitigates-moderate-vulnerability-in-rhel-6"
+    ]
+  },
+  {
+    "slug": "toy-dog-traces-scam-sites-to-kremlin-money-trail-1520a49a",
+    "title": "Toy Dog Traces Scam Sites to Kremlin Money Trail",
+    "summary": "A $30 AI toy dog prompted Mastercard to discover over 250 scam sites linked by a common money trail. The trail shows that minimal card charges funnel into ransomware payouts, revealing a coordinated financial pathway exploited by attackers. Security teams can disrupt this chain by monitoring low‑value transactions and blocking identified payment routes, as outlined in Mastercard’s guidance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/declassified-money-train-episode-four",
+    "publishedAt": "2026-11-03T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "toy-dog-traces-scam-sites-to-kremlin-money-trail",
+      "article-1520a49a",
+      "1520a49a",
+      "toy-dog-traces-scam-sites-to-kremlin-money-trail-2bb088"
     ]
   },
   {
@@ -9228,315 +9555,6 @@ export const news: NewsBrief[] = [
       "c2e269c9",
       "openai-expands-chatgpt-pro-usage-limits-and-integr-1a0442",
       "openai-expands-chatgpt-pro-usage-limits-and-integrates-work-"
-    ]
-  },
-  {
-    "slug": "cisco-sd-wan-zero-day-cve-2026-20127-exploit-a4821dec",
-    "title": "Cisco SD‑WAN Zero‑Day CVE‑2026‑20127 Exploit",
-    "summary": "Cisco SD‑WAN devices are vulnerable to a zero‑day flaw identified as CVE‑2026‑20127, enabling attackers to compromise enterprise networks. The vulnerability permits remote code execution via malformed telemetry packets and requires network access to the SD‑WAN controller. Cisco has released a patch; administrators should apply it immediately or enable the provided detection rules to monitor suspicious traffic.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoon",
-    "publishedAt": "2026-10-29T23:23:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-sd-wan-zero-day-cve-2026-20127-exploit",
-      "article-a4821dec",
-      "a4821dec",
-      "cisco-sd-wan-zero-day-cve-2026-20127-exploit-7856fc"
-    ]
-  },
-  {
-    "slug": "cve-2026-101767-detect-and-patch-early-probing-aad82b38",
-    "title": "CVE-2026-101767 Detect and Patch Early Probing",
-    "summary": "CVE-2026-101767 is a vulnerability that allows attackers to probe enterprise systems for exploitation opportunities. The flaw permits unauthenticated remote code execution via a malformed input in the target application, potentially granting attackers full system compromise; a public PoC demonstrates the exploitability. Apply the vendor’s patch immediately, enable detection rules to monitor probing activity, and verify remediation through telemetry.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/hackers-start-probing-fresh-oracle-ebs-vulnerability",
-    "publishedAt": "2026-10-29T23:22:56.000Z",
-    "cves": [
-      "CVE-2026-101767"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-101767-detect-and-patch-early-probing",
-      "article-aad82b38",
-      "aad82b38",
-      "cve-2026-101767-detect-and-patch-early-probing-bbaed9"
-    ]
-  },
-  {
-    "slug": "external-teams-chats-anchor-malware-delivery-a6c35035",
-    "title": "External Teams Chats Anchor Malware Delivery",
-    "summary": "Security researchers have identified a new malware delivery vector called External Teams Chats Anchor 15‑Minute, which leverages compromised chat platforms to distribute malicious payloads. The mechanism exploits user trust and bypasses standard endpoint detection by embedding code within seemingly legitimate chat messages. Analysts recommend reviewing telemetry, deploying detection rules, and applying any available patches to block this threat.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/external-teams-chats-anchor-15-minute-malware-delivery",
-    "publishedAt": "2026-10-29T23:21:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "external-teams-chats-anchor-malware-delivery",
-      "article-a6c35035",
-      "a6c35035",
-      "external-teams-chats-anchor-malware-delivery-663274"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-security-update-for-net-10-0-9f66a46f",
-    "title": "Red Hat Issues Security Update for .NET 10.0",
-    "summary": "Red Hat released a security update for .NET 10.0 running on Red Hat Enterprise Linux 9 to resolve undisclosed vulnerabilities. Classified with an important security impact rating by Red Hat Product Security, the update addresses flaws affecting systemic stability and potential system exposure. Enterprise administrators using affected Red Hat Enterprise Linux 9 environments should apply the official update package immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92432",
-    "publishedAt": "2026-10-29T22:56:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-security-update-for-net-10-0",
-      "article-9f66a46f",
-      "9f66a46f",
-      "red-hat-issues-security-update-for-net-10-0-37d9a3"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-net-8-0-security-update-for-rhel9-b63839c9",
-    "title": "Red Hat Issues .NET 8.0 Security Update for RHEL9",
-    "summary": "Red Hat released a .NET 8.0 update for Red Enterprise Linux 9, addressing multiple security bugs and enhancements. The advisory lists several CVEs with CVSS base scores, indicating high‑severity flaws that could allow remote code execution if exploited. Red Hat recommends applying the update immediately; no work‑arounds are provided, and the patch is available through the standard RHEL update channels.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92492",
-    "publishedAt": "2026-10-29T22:56:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-net-8-0-security-update-for-rhel9",
-      "article-b63839c9",
-      "b63839c9",
-      "red-hat-issues-net-8-0-security-update-for-rhel9-37d9a2"
-    ]
-  },
-  {
-    "slug": "net-9-0-security-update-released-09f1179e",
-    "title": ".NET 9.0 Security Update Released",
-    "summary": ".NET 9.0 receives a security update for RHEL 9, addressing vulnerabilities in RHSA-2026:92429. The advisory rates the update as Important, reflecting a CVSS score that necessitates prompt remediation. Red Hat recommends installing the update via the package manager; it is available in the latest RHEL 9 repositories and provides critical fixes.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92429",
-    "publishedAt": "2026-10-29T22:54:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "net-9-0-security-update-released",
-      "article-09f1179e",
-      "09f1179e",
-      "net-9-0-security-update-released-37d9a3"
-    ]
-  },
-  {
-    "slug": "binance-investigates-5-8b-crypto-theft-179f07ad",
-    "title": "Binance Investigates $5.8B Crypto Theft",
-    "summary": "Binance is investigating a potential breach that may have stolen up to $5.8 billion in digital assets, potentially the largest crypto hack ever. The incident involved unauthorized access to user wallets and exchange infrastructure, with attackers exploiting unknown vulnerabilities or credential compromise. Binance has issued a statement and is working with law enforcement to contain the breach and recover assets.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
-    "publishedAt": "2026-10-29T22:45:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-investigates-5-8b-crypto-theft",
-      "article-179f07ad",
-      "179f07ad",
-      "binance-investigates-5-8b-crypto-theft-93b9d9"
-    ]
-  },
-  {
-    "slug": "net-11-0-security-update-released-0f8a77ed",
-    "title": ".NET 11.0 Security Update Released",
-    "summary": ".NET 11.0 receives a security update for RHEL 8, covering vulnerabilities listed in RHSA-2026:92511. The advisory marks the update as Important, indicating a CVSS score that requires timely patching to prevent exploitation. Red Hat advises applying the update through the package manager; the patch is present in the current RHEL 8 repositories.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92511",
-    "publishedAt": "2026-10-29T22:45:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "net-11-0-security-update-released",
-      "article-0f8a77ed",
-      "0f8a77ed",
-      "net-11-0-security-update-released-37d99f"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-pillow-security-patch-3760b2ec",
-    "title": "Red Hat Releases Pillow Security Patch",
-    "summary": "Red Hat released an update for the python‑pillow package on RHEL 8 to address a critical security flaw. The vulnerability allows local privilege escalation through malformed image processing, with a CVSS score of 7.8. The patch is available via the standard update channel; administrators should apply it immediately to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92639",
-    "publishedAt": "2026-10-29T22:42:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-pillow-security-patch",
-      "article-3760b2ec",
-      "3760b2ec",
-      "red-hat-releases-pillow-security-patch-37d99b"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-node-js-24-for-rhel-9-f69832e0",
-    "title": "Red Hat Updates Node.js 24 for RHEL 9",
-    "summary": "Red Hat issued a security update for the nodejs:24 module on RHEL 9, fixing a flaw that could enable remote code execution via crafted JavaScript payloads. The vulnerability carries a CVSS score of 7.5 and is publicly documented. Users should install the update through the package manager to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92378",
-    "publishedAt": "2026-10-29T22:34:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-node-js-24-for-rhel-9",
-      "article-f69832e0",
-      "f69832e0",
-      "red-hat-updates-node-js-24-for-rhel-9-37d9a6"
-    ]
-  },
-  {
-    "slug": "tomcat-security-update-for-rhel-9-4-sap-solutions-8b742d2b",
-    "title": "Tomcat Security Update for RHEL 9.4 SAP Solutions",
-    "summary": "Red Hat released an important security update for Tomcat on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The advisory references several CVE identifiers, each with a CVSS base score indicating significant risk, though no exploitation details are disclosed. Customers should apply the Tomcat update immediately and review the CVE links for detailed impact and patch information.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92872",
-    "publishedAt": "2026-10-29T22:27:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tomcat-security-update-for-rhel-9-4-sap-solutions",
-      "article-8b742d2b",
-      "8b742d2b",
-      "tomcat-security-update-for-rhel-9-4-sap-solutions-37d993"
-    ]
-  },
-  {
-    "slug": "red-hat-tomcat-security-update-released-1c18c1ff",
-    "title": "Red Hat Tomcat Security Update Released",
-    "summary": "Red Hat issued a security update for Tomcat on Enterprise Linux 9.2 for SAP Solutions, addressing multiple vulnerabilities identified in the advisory. The update mitigates potential remote code execution and privilege escalation risks, though no specific CVE identifiers are listed. Security teams should apply the update immediately to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92871",
-    "publishedAt": "2026-10-29T22:26:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-tomcat-security-update-released",
-      "article-1c18c1ff",
-      "1c18c1ff",
-      "red-hat-tomcat-security-update-released-37d993"
-    ]
-  },
-  {
-    "slug": "red-hat-tomcat-update-for-el-9-6-extended-support-ac511cc6",
-    "title": "Red Hat Tomcat Update for EL 9.6 Extended Support",
-    "summary": "Red Hat released a Tomcat security patch for Enterprise Linux 9.6 Extended Update Support, covering several critical flaws that could allow remote attackers to execute code. The advisory references CVSS scores but does not list CVE IDs. Applying the update is essential to prevent exploitation of these vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92870",
-    "publishedAt": "2026-10-29T22:25:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-tomcat-update-for-el-9-6-extended-support",
-      "article-ac511cc6",
-      "ac511cc6",
-      "red-hat-tomcat-update-for-el-9-6-extended-support-37d993"
-    ]
-  },
-  {
-    "slug": "httpd-2-4-security-update-for-rhel-8-487b7969",
-    "title": "httpd 2.4 Security Update for RHEL 8",
-    "summary": "Red Hat issued an important security update for the httpd:2.4 module on RHEL 8, fixing several critical bugs. The advisory lists multiple CVE references, each with a CVSS base score that denotes high severity, but no exploitation evidence is provided. Users should install the httpd update promptly and consult the CVE links for detailed vulnerability information and patch guidance.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92616",
-    "publishedAt": "2026-10-29T22:20:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "httpd-2-4-security-update-for-rhel-8",
-      "article-487b7969",
-      "487b7969",
-      "httpd-2-4-security-update-for-rhel-8-37d99b"
-    ]
-  },
-  {
-    "slug": "red-hat-tomcat-security-update-rhsa-2026-92863-2f7ed757",
-    "title": "Red Hat Tomcat Security Update RHSA-2026-92863",
-    "summary": "Red Hat released an important update for Apache Tomcat on RHEL 10.0 EUS, addressing multiple security issues identified in the RHSA‑2026‑92863 advisory. The advisory rates the update as Important, with CVSS base scores available for each referenced CVE, indicating medium‑to‑high severity vulnerabilities. Administrators should apply the Tomcat update immediately to mitigate the identified flaws and maintain system security.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92863",
-    "publishedAt": "2026-10-29T22:17:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-tomcat-security-update-rhsa-2026-92863",
-      "article-2f7ed757",
-      "2f7ed757",
-      "red-hat-tomcat-security-update-rhsa-2026-92863-37d993"
-    ]
-  },
-  {
-    "slug": "hugging-face-models-hijack-gpus-for-mining-c9bef434",
-    "title": "Hugging Face Models Hijack GPUs for Mining",
-    "summary": "A crypto‑mining campaign targeting Hugging Face models has resurfaced, hijacking GPU servers and installing backdoors after model downloads. The malware exploits insecure model hosting to inject mining code, affecting over 28,000 downloads. Security teams should block suspicious model traffic and apply host‑based intrusion detection to detect and remove the backdoor.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
-    "publishedAt": "2026-10-29T22:09:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hugging-face-models-hijack-gpus-for-mining",
-      "article-c9bef434",
-      "c9bef434",
-      "hugging-face-models-hijack-gpus-for-mining-40cea6"
-    ]
-  },
-  {
-    "slug": "polymarket-trading-suspended-after-crypto-draining-47fe9ff2",
-    "title": "Polymarket Trading Suspended After Crypto‑Draining Breach",
-    "summary": "Polymarket halted trading after attackers compromised a third‑party service to deploy a cryptocurrency‑draining JavaScript payload. The flaw allowed unauthorized extraction of user funds, with approximately $2.5 million traced to a suspected attacker wallet. Red Hat issued a patch and advised users to monitor account balances and revoke compromised API keys.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
-    "publishedAt": "2026-10-29T21:47:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "polymarket-trading-suspended-after-crypto-draining",
-      "article-47fe9ff2",
-      "47fe9ff2",
-      "polymarket-trading-suspended-after-crypto-draining-499595",
-      "polymarket-trading-suspended-after-crypto-draining-breach"
     ]
   }
 ];
