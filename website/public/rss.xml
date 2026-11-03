@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 08:44:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 09:45:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Dismantles XCPE Botnet of 1.3M Android Devices</title>
+      <link>https://secubuzz.com/news/google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321</guid>
+      <description><![CDATA[Google dismantled the XCPE botnet that infected 1.3 million Android devices, operated by OEM/ODM Videostrong Technology for financial gain. The botnet used compromised apps to exfiltrate data and deliver malware, but no public exploit or CVE was disclosed. Google removed command‑and‑control servers and pushed device cleanup, and teams should update firmware and enforce stricter app vetting.]]></description>
+      <pubDate>Tue, 03 Nov 2026 09:22:09 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:94449: Important: libXtst security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-94449-important-libxtst-security-update-5901ed76</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94449-important-libxtst-security-update-5901ed76</guid>
+      <description><![CDATA[An update for libXtst is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Tue, 03 Nov 2026 09:03:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94449">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>NATO Exercise Integrates AI Agents into Cyber Training</title>
+      <link>https://secubuzz.com/news/nato-exercise-integrates-ai-agents-into-cyber-trai-b8ca9838</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nato-exercise-integrates-ai-agents-into-cyber-trai-b8ca9838</guid>
+      <description><![CDATA[NATO’s Crossed Swords exercise in Estonia integrated AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The exercise aimed to evaluate AI‑driven decision support and autonomous response capabilities within a realistic threat environment. Participants will assess integration challenges, command‑control workflows, and potential adversarial manipulation of AI agents.]]></description>
+      <pubDate>Tue, 03 Nov 2026 08:49:03 GMT</pubDate>
+      <source url="https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/">SecurityWeek</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Pipewire Update Addresses Moderate Security Flaw in RHEL 9.6</title>
       <link>https://secubuzz.com/news/pipewire-update-addresses-moderate-security-flaw-i-2fe8608c</link>
@@ -24,6 +51,42 @@
       <pubDate>Tue, 03 Nov 2026 08:26:48 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94442">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CrowdStrike Acquires Fiddler for AI Observability</title>
+      <link>https://secubuzz.com/news/crowdstrike-acquires-fiddler-for-ai-observability-980e493b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-acquires-fiddler-for-ai-observability-980e493b</guid>
+      <description><![CDATA[CrowdStrike announced the acquisition of Fiddler to enhance Falcon Observe with AI agent observability capabilities. The deal expands CrowdStrike’s telemetry stack, enabling deeper visibility into autonomous agent behavior and performance metrics. Security teams should integrate the new observability modules to monitor AI workloads and detect anomalous activity and ensure compliance with data privacy regulations.]]></description>
+      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-fiddler/">CrowdStrike</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CrowdStrike Expands AI Security Across Cloud and Endpoint</title>
+      <link>https://secubuzz.com/news/crowdstrike-expands-ai-security-across-cloud-and-e-1c48ce46</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-expands-ai-security-across-cloud-and-e-1c48ce46</guid>
+      <description><![CDATA[CrowdStrike announced an expansion of its AI‑driven security capabilities from endpoint to cloud environments. The update introduces new AI models that analyze telemetry across the Falcon platform, aiming to detect threats earlier and reduce false positives. No immediate patch is required; organizations should enable the new AI modules via the Falcon console and monitor for improved detection metrics.]]></description>
+      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-advances-ai-security-and-safety-falcon-guardian/">CrowdStrike</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Kill Switch Enables Control Over Rogue Agents</title>
+      <link>https://secubuzz.com/news/ai-kill-switch-enables-control-over-rogue-agents-8c084db0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-kill-switch-enables-control-over-rogue-agents-8c084db0</guid>
+      <description><![CDATA[CrowdStrike unveiled an AI Kill Switch feature that allows administrators to halt rogue AI agents within the Falcon platform. The kill switch monitors agent behavior, triggers a safe shutdown, and logs the event for forensic analysis. Deploying the feature requires enabling the kill switch policy in the Falcon console and updating agent firmware to the latest version.]]></description>
+      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-introduces-ai-kill-switch/">CrowdStrike</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CrowdStrike Acquires Dreadnode for AI Security Testing</title>
+      <link>https://secubuzz.com/news/crowdstrike-acquires-dreadnode-for-ai-security-tes-9463faaf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/crowdstrike-acquires-dreadnode-for-ai-security-tes-9463faaf</guid>
+      <description><![CDATA[CrowdStrike announced the acquisition of Dreadnode, a company specializing in automated AI security testing. The deal aims to integrate Dreadnode’s testing framework into the Falcon platform, expanding AI‑driven threat detection capabilities. No immediate action is required; organizations should monitor Falcon updates for the new testing modules and adjust policies accordingly.]]></description>
+      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-dreadnode/">CrowdStrike</source>
+      <category>General</category>
     </item>
     <item>
       <title>Supermarket Fridge Controllers Targeted in European IoT Attacks</title>
@@ -50,6 +113,24 @@
       <description><![CDATA[Attackers remotely altered refrigeration control settings at supermarkets in Belgium, Sweden, Estonia, and other European countries, warming fridges and freezers overnight. The flaw in Danfoss controllers allowed unauthenticated remote configuration changes, causing food spoilage and inventory losses. Danfoss issued a firmware update and recommends disabling remote access until the patch is applied to prevent further disruptions.]]></description>
       <pubDate>Tue, 03 Nov 2026 07:27:07 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>DarkBlinders Breach Iraqi Cloud, Steal 1GB Data</title>
+      <link>https://secubuzz.com/news/darkblinders-breach-iraqi-cloud-steal-1gb-data-7722d4db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/darkblinders-breach-iraqi-cloud-steal-1gb-data-7722d4db</guid>
+      <description><![CDATA[DarkBlinders breached a government cloud in Iraq’s Kurdistan Region, exfiltrating over 1GB of data and compromising an Israeli security official. The attackers leveraged undisclosed misconfigurations or vulnerabilities to gain unauthorized access, sustaining the intrusion from August to October 2026. No vendor patch applies; defenders should tighten cloud IAM, monitor outbound traffic, and perform forensic analysis to detect similar breaches.]]></description>
+      <pubDate>Tue, 03 Nov 2026 07:25:07 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/iran-linked-darkblinders-hackers/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Deploy PapRAT via VHDX and WebDAV Links</title>
+      <link>https://secubuzz.com/news/hackers-deploy-paprat-via-vhdx-and-webdav-links-544374d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-deploy-paprat-via-vhdx-and-webdav-links-544374d8</guid>
+      <description><![CDATA[A suspected espionage group delivers the PapRAT remote access trojan to Windows systems using malicious VHDX disk images and WebDAV links. The campaign embeds the payload in innocuous shortcut files and remote web folders, evading detection by antivirus signatures. Security teams should block inbound WebDAV traffic, quarantine suspicious VHDX files, and enforce strict email attachment policies to mitigate infection.]]></description>
+      <pubDate>Tue, 03 Nov 2026 06:44:36 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-malicious-vhdx-files/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -375,87 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 18:16:34 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat releases Quarkus 3.33.4.SP2 security update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-quarkus-3-33-4-sp2-security-updat-401bf2ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-quarkus-3-33-4-sp2-security-updat-401bf2ff</guid>
-      <description><![CDATA[Red Hat released a security update for its Quarkus 3.33.4.SP2 build, addressing a flaw that could impact application integrity. The flaw, rated as Important, is documented with a CVSS base score, though the specific CVE identifier is not disclosed in the advisory. Red Hat recommends applying the Quarkus 3.33.4.SP2 update immediately to eliminate the vulnerability; no workarounds are listed.]]></description>
-      <pubDate>Mon, 02 Nov 2026 18:07:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93902">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Quarkus 3.27.6.SP2 Update Addresses Security Issues</title>
-      <link>https://secubuzz.com/news/quarkus-3-27-6-sp2-update-addresses-security-issue-0488b5e3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/quarkus-3-27-6-sp2-update-addresses-security-issue-0488b5e3</guid>
-      <description><![CDATA[Red Hat released a security update for its Quarkus 3.27.6.SP2 build on RHEL, targeting multiple framework vulnerabilities. The patch addresses flaws that could enable remote code execution or privilege escalation, with CVSS scores linked in the advisory. Red Hat advises applying the update through standard RHEL channels; no work‑arounds are documented.]]></description>
-      <pubDate>Mon, 02 Nov 2026 18:07:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93908">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GIMP Update Fixes Security Vulnerabilities</title>
-      <link>https://secubuzz.com/news/gimp-update-fixes-security-vulnerabilities-e2e62731</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gimp-update-fixes-security-vulnerabilities-e2e62731</guid>
-      <description><![CDATA[Red Hat released a security update for GIMP on RHEL 9.8 EUS, addressing multiple image‑editing software vulnerabilities. The patch mitigates flaws that could allow remote attackers to execute code or cause denial of service, as indicated by CVSS scores linked in the advisory. Red Hat recommends applying the update via standard RHEL update channels; no work‑arounds are provided.]]></description>
-      <pubDate>Mon, 02 Nov 2026 17:58:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93975">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Mercado Bitcoin Breach Involves $40M Suspicious Transfers</title>
-      <link>https://secubuzz.com/news/mercado-bitcoin-breach-involves-40m-suspicious-tra-6c73a023</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mercado-bitcoin-breach-involves-40m-suspicious-tra-6c73a023</guid>
-      <description><![CDATA[Brazilian cryptocurrency exchange Mercado Bitcoin detected a security incident that halted deposits and withdrawals on November 2, 2026. Security firm Hypernative identified more than $40 million in suspicious transfers across at least ten blockchains, indicating potential credential theft or compromised wallet access.]]></description>
-      <pubDate>Mon, 02 Nov 2026 17:54:22 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/mercado-bitcoin-suffers-cyberattack/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Amazon VEW Exposes Template Injection Vulnerability CVE-2026-119085</title>
-      <link>https://secubuzz.com/news/amazon-vew-exposes-template-injection-vulnerabilit-0116f358</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/amazon-vew-exposes-template-injection-vulnerabilit-0116f358</guid>
-      <description><![CDATA[Amazon Virtual Engineering Workbench (VEW) suffers a template injection flaw (CVE‑2026‑119085) in its publishing component. The flaw allows an authenticated third party to inject malicious template code, enabling arbitrary code execution with the publishing Lambda’s IAM role permissions. Amazon has released a patch covering all affected commits before c146486; users should update VEW or apply the workaround to mitigate exploitation.]]></description>
-      <pubDate>Mon, 02 Nov 2026 17:41:34 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Synology AI-Driven Attack Detection and Mitigation</title>
-      <link>https://secubuzz.com/news/synology-ai-driven-attack-detection-and-mitigation-4281090b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/synology-ai-driven-attack-detection-and-mitigation-4281090b</guid>
-      <description><![CDATA[Synology issued a critical alert for AI-driven attacks targeting its NAS devices, prompting immediate detection measures. The advisory recommends reviewing root-cause telemetry, applying detection rules, and deploying the latest security patch to mitigate exploitation of the underlying vulnerability. Security teams should implement the provided rules and update firmware to close the attack surface.]]></description>
-      <pubDate>Mon, 02 Nov 2026 17:25:20 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/synology-warns-of-c3rb3r-ransomware-attacks-targeting-n">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Kernel Update for RHEL 9.8</title>
-      <link>https://secubuzz.com/news/red-hat-kernel-update-for-rhel-9-8-7e223b0b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-for-rhel-9-8-7e223b0b</guid>
-      <description><![CDATA[A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 9.8 Extended Update Support, affecting the Linux kernel component. The update mitigates moderate‑severity flaws, each identified by CVE references, and the CVSS base score indicates a moderate impact. Red Hat recommends applying the patch immediately to prevent exploitation of the kernel vulnerabilities.]]></description>
-      <pubDate>Mon, 02 Nov 2026 17:18:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93930">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Polymarket to Refund $3.9M After Compromise</title>
-      <link>https://secubuzz.com/news/polymarket-to-refund-3-9m-after-compromise-2962b7ad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/polymarket-to-refund-3-9m-after-compromise-2962b7ad</guid>
-      <description><![CDATA[Polymarket announced it will reimburse users $3.9 million following a site compromise that disrupted services and caused financial losses. The incident involved unauthorized access to the platform, though no evidence of data exfiltration or credential theft has been disclosed. Polymarket is conducting a post‑mortem, tightening security controls, and urging users to monitor accounts for suspicious activity.]]></description>
-      <pubDate>Mon, 02 Nov 2026 17:05:20 GMT</pubDate>
-      <source url="https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Threat Hunting Explained: Purpose and Process</title>
-      <link>https://secubuzz.com/news/threat-hunting-explained-purpose-and-process-435b2e14</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threat-hunting-explained-purpose-and-process-435b2e14</guid>
-      <description><![CDATA[Threat hunting is a proactive security practice that identifies hidden threats within an organization. Huntress explains the process, emphasizing human‑led detection to uncover anomalies automation may miss, and outlines key methodologies such as hypothesis‑driven investigation and data correlation. Security teams should adopt structured threat‑hunting frameworks and integrate continuous monitoring to improve detection coverage.]]></description>
-      <pubDate>Mon, 02 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://www.huntress.com/blog/what-is-threat-hunting">Huntress</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

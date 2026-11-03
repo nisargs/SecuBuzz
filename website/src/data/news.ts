@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321",
+    "title": "Google Dismantles XCPE Botnet of 1.3M Android Devices",
+    "summary": "Google dismantled the XCPE botnet that infected 1.3 million Android devices, operated by OEM/ODM Videostrong Technology for financial gain. The botnet used compromised apps to exfiltrate data and deliver malware, but no public exploit or CVE was disclosed. Google removed command‑and‑control servers and pushed device cleanup, and teams should update firmware and enforce stricter app vetting.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/",
+    "publishedAt": "2026-11-03T09:22:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-dismantles-xcpe-botnet-of-1-3m-android-devi",
+      "article-a88e7321",
+      "a88e7321",
+      "google-dismantles-xcpe-botnet-of-1-3m-android-devi-1979c1",
+      "google-dismantles-xcpe-botnet-of-1-3m-android-devices"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94449-important-libxtst-security-update-5901ed76",
+    "title": "RHSA-2026:94449: Important: libXtst security update",
+    "summary": "An update for libXtst is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94449",
+    "publishedAt": "2026-11-03T09:03:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94449-important-libxtst-security-update",
+      "article-5901ed76",
+      "5901ed76",
+      "rhsa-2026-94449-important-libxtst-security-update-37d8ba"
+    ]
+  },
+  {
+    "slug": "nato-exercise-integrates-ai-agents-into-cyber-trai-b8ca9838",
+    "title": "NATO Exercise Integrates AI Agents into Cyber Training",
+    "summary": "NATO’s Crossed Swords exercise in Estonia integrated AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The exercise aimed to evaluate AI‑driven decision support and autonomous response capabilities within a realistic threat environment. Participants will assess integration challenges, command‑control workflows, and potential adversarial manipulation of AI agents.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/",
+    "publishedAt": "2026-11-03T08:49:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nato-exercise-integrates-ai-agents-into-cyber-trai",
+      "article-b8ca9838",
+      "b8ca9838",
+      "nato-exercise-integrates-ai-agents-into-cyber-trai-211b8b",
+      "nato-exercise-integrates-ai-agents-into-cyber-training"
+    ]
+  },
+  {
     "slug": "pipewire-update-addresses-moderate-security-flaw-i-2fe8608c",
     "title": "Pipewire Update Addresses Moderate Security Flaw in RHEL 9.6",
     "summary": "A moderate update for Pipewire on Red Hat Enterprise Linux 9.6 EUS addresses a vulnerability in the multimedia framework. The flaw permits unauthorized manipulation of audio and video streams, potentially enabling privilege escalation or denial of service, and is rated moderate by Red Hat Product Security. Red Hat recommends applying the RHSA‑2026:94437 update immediately; no additional workarounds are required.",
@@ -46,6 +102,80 @@ export const news: NewsBrief[] = [
       "8eb72348",
       "gnutls-update-mitigates-moderate-vulnerability-in-37d8ba",
       "gnutls-update-mitigates-moderate-vulnerability-in-rhel-6"
+    ]
+  },
+  {
+    "slug": "crowdstrike-acquires-fiddler-for-ai-observability-980e493b",
+    "title": "CrowdStrike Acquires Fiddler for AI Observability",
+    "summary": "CrowdStrike announced the acquisition of Fiddler to enhance Falcon Observe with AI agent observability capabilities. The deal expands CrowdStrike’s telemetry stack, enabling deeper visibility into autonomous agent behavior and performance metrics. Security teams should integrate the new observability modules to monitor AI workloads and detect anomalous activity and ensure compliance with data privacy regulations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-fiddler/",
+    "publishedAt": "2026-11-03T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-acquires-fiddler-for-ai-observability",
+      "article-980e493b",
+      "980e493b",
+      "crowdstrike-acquires-fiddler-for-ai-observability-414b13"
+    ]
+  },
+  {
+    "slug": "crowdstrike-expands-ai-security-across-cloud-and-e-1c48ce46",
+    "title": "CrowdStrike Expands AI Security Across Cloud and Endpoint",
+    "summary": "CrowdStrike announced an expansion of its AI‑driven security capabilities from endpoint to cloud environments. The update introduces new AI models that analyze telemetry across the Falcon platform, aiming to detect threats earlier and reduce false positives. No immediate patch is required; organizations should enable the new AI modules via the Falcon console and monitor for improved detection metrics.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-advances-ai-security-and-safety-falcon-guardian/",
+    "publishedAt": "2026-11-03T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-expands-ai-security-across-cloud-and-e",
+      "article-1c48ce46",
+      "1c48ce46",
+      "crowdstrike-expands-ai-security-across-cloud-and-e-48571f",
+      "crowdstrike-expands-ai-security-across-cloud-and-endpoint"
+    ]
+  },
+  {
+    "slug": "ai-kill-switch-enables-control-over-rogue-agents-8c084db0",
+    "title": "AI Kill Switch Enables Control Over Rogue Agents",
+    "summary": "CrowdStrike unveiled an AI Kill Switch feature that allows administrators to halt rogue AI agents within the Falcon platform. The kill switch monitors agent behavior, triggers a safe shutdown, and logs the event for forensic analysis. Deploying the feature requires enabling the kill switch policy in the Falcon console and updating agent firmware to the latest version.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-introduces-ai-kill-switch/",
+    "publishedAt": "2026-11-03T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-kill-switch-enables-control-over-rogue-agents",
+      "article-8c084db0",
+      "8c084db0",
+      "ai-kill-switch-enables-control-over-rogue-agents-4380f3"
+    ]
+  },
+  {
+    "slug": "crowdstrike-acquires-dreadnode-for-ai-security-tes-9463faaf",
+    "title": "CrowdStrike Acquires Dreadnode for AI Security Testing",
+    "summary": "CrowdStrike announced the acquisition of Dreadnode, a company specializing in automated AI security testing. The deal aims to integrate Dreadnode’s testing framework into the Falcon platform, expanding AI‑driven threat detection capabilities. No immediate action is required; organizations should monitor Falcon updates for the new testing modules and adjust policies accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-dreadnode/",
+    "publishedAt": "2026-11-03T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-acquires-dreadnode-for-ai-security-tes",
+      "article-9463faaf",
+      "9463faaf",
+      "crowdstrike-acquires-dreadnode-for-ai-security-tes-24ae26",
+      "crowdstrike-acquires-dreadnode-for-ai-security-testing"
     ]
   },
   {
@@ -103,6 +233,42 @@ export const news: NewsBrief[] = [
       "6b367a70",
       "europe-supermarkets-hit-by-refrigeration-cyberatta-263d71",
       "europe-supermarkets-hit-by-refrigeration-cyberattacks"
+    ]
+  },
+  {
+    "slug": "darkblinders-breach-iraqi-cloud-steal-1gb-data-7722d4db",
+    "title": "DarkBlinders Breach Iraqi Cloud, Steal 1GB Data",
+    "summary": "DarkBlinders breached a government cloud in Iraq’s Kurdistan Region, exfiltrating over 1GB of data and compromising an Israeli security official. The attackers leveraged undisclosed misconfigurations or vulnerabilities to gain unauthorized access, sustaining the intrusion from August to October 2026. No vendor patch applies; defenders should tighten cloud IAM, monitor outbound traffic, and perform forensic analysis to detect similar breaches.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/iran-linked-darkblinders-hackers/",
+    "publishedAt": "2026-11-03T07:25:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "darkblinders-breach-iraqi-cloud-steal-1gb-data",
+      "article-7722d4db",
+      "7722d4db",
+      "darkblinders-breach-iraqi-cloud-steal-1gb-data-6a8dbc"
+    ]
+  },
+  {
+    "slug": "hackers-deploy-paprat-via-vhdx-and-webdav-links-544374d8",
+    "title": "Hackers Deploy PapRAT via VHDX and WebDAV Links",
+    "summary": "A suspected espionage group delivers the PapRAT remote access trojan to Windows systems using malicious VHDX disk images and WebDAV links. The campaign embeds the payload in innocuous shortcut files and remote web folders, evading detection by antivirus signatures. Security teams should block inbound WebDAV traffic, quarantine suspicious VHDX files, and enforce strict email attachment policies to mitigate infection.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-malicious-vhdx-files/",
+    "publishedAt": "2026-11-03T06:44:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-deploy-paprat-via-vhdx-and-webdav-links",
+      "article-544374d8",
+      "544374d8",
+      "hackers-deploy-paprat-via-vhdx-and-webdav-links-1049ca"
     ]
   },
   {
@@ -1266,23 +1432,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "linux-mutipath-tcp-vulnerability-cve-2026-98432-ac28de13",
-    "title": "Linux Mutipath TCP Vulnerability CVE-2026-98432",
-    "summary": "A new vulnerability in Linux's Mutipath TCP implementation, identified as CVE-2026-98432, was disclosed following the RFC 8684 option's introduction in 2020. The flaw permits attackers to manipulate TCP option parsing, potentially leading to denial‑of‑service or memory corruption, though no active exploitation has been reported. Linux distributions should apply the vendor‑supplied patch or update kernel to mitigate the vulnerability.",
+    "slug": "ubuntu-releases-fixes-for-cve-2026-98432-a-kernel-925b2527",
+    "title": "Ubuntu Releases Fixes for CVE-2026-98432, a Kernel RCE Vulnerability",
+    "summary": "Ubuntu has released kernel patches for CVE-2026-98432, a critical Linux kernel flaw that enables remote attackers to execute commands as root without authentication. The vulnerability stems from improper handling of Mutipath TCP options, potentially causing memory corruption and denial‑of‑service. Users of Ubuntu 22.04 LTS and newer should apply the proposed updates immediately to mitigate the risk.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33482",
     "publishedAt": "2026-11-02T14:52:05.000Z",
     "cves": [
       "CVE-2026-98432"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/linux-kernel-rce-flaw-ubuntu-fixes/"
+      }
+    ],
     "aliases": [
-      "linux-mutipath-tcp-vulnerability-cve-2026-98432",
-      "article-ac28de13",
-      "ac28de13",
-      "linux-mutipath-tcp-vulnerability-cve-2026-98432-57dd7e"
+      "ubuntu-releases-fixes-for-cve-2026-98432-a-kernel",
+      "article-925b2527",
+      "925b2527",
+      "ubuntu-releases-fixes-for-cve-2026-98432-a-kernel-57dd7e",
+      "ubuntu-releases-fixes-for-cve-2026-98432-a-kernel-rce-vulner"
     ]
   },
   {
@@ -9351,176 +9523,6 @@ export const news: NewsBrief[] = [
       "article-cfff15ab",
       "cfff15ab",
       "26-400-cloud-credentials-exposed-on-gitee-4624a7"
-    ]
-  },
-  {
-    "slug": "inj3ctor3-malware-targets-freepbx-sip-credentials-f563740c",
-    "title": "INJ3CTOR3 Malware Targets FreePBX SIP Credentials",
-    "summary": "Hackers deployed INJ3CTOR3 malware against FreePBX servers, extracting SIP trunk passwords, database credentials, and mail relay logins. The tool harvests configuration files, enabling persistent fraud even after system rebuilds, and extends damage beyond the compromised host. FreePBX has issued a patch; administrators should update firmware and enforce credential rotation immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-attack-freepbx-servers/",
-    "publishedAt": "2026-10-29T11:09:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "inj3ctor3-malware-targets-freepbx-sip-credentials",
-      "article-f563740c",
-      "f563740c",
-      "inj3ctor3-malware-targets-freepbx-sip-credentials-4d8584"
-    ]
-  },
-  {
-    "slug": "apple-fixes-flaw-targeting-older-iphone-and-ipad-m-42a88a15",
-    "title": "Apple Fixes Flaw Targeting Older iPhone and iPad Models",
-    "summary": "Apple has patched a security flaw exploited in targeted attacks against iPhone XS, XS Max, XR, and seventh-generation iPad devices. The vulnerability affects older hardware models that may lack current security protections. Users should update to the latest iOS or iPadOS release to apply the fix and mitigate the attack vector.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/have-an-older-iphone-or-ipad-apple-has-a-security-update-for-you",
-    "publishedAt": "2026-10-29T11:03:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-fixes-flaw-targeting-older-iphone-and-ipad-m",
-      "article-42a88a15",
-      "42a88a15",
-      "apple-fixes-flaw-targeting-older-iphone-and-ipad-m-175dcf",
-      "apple-fixes-flaw-targeting-older-iphone-and-ipad-models"
-    ]
-  },
-  {
-    "slug": "cisco-asa-vpn-flaw-exploited-in-wild-8dbeb31c",
-    "title": "Cisco ASA VPN Flaw Exploited in Wild",
-    "summary": "Cisco released patches for a high-severity flaw in ASA and FTD VPN software, tracked as CVE-2026-76418, which attackers exploited in the wild. The vulnerability, rated 8.6 on CVSS, permits unauthenticated remote attackers to crash firewalls, potentially disrupting network connectivity. Cisco issued emergency patches; administrators should apply them immediately and monitor firewall logs for abnormal activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-    "publishedAt": "2026-10-29T10:44:46.000Z",
-    "cves": [
-      "CVE-2026-76418"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-asa-vpn-flaw-exploited-in-wild",
-      "article-8dbeb31c",
-      "8dbeb31c",
-      "cisco-asa-vpn-flaw-exploited-in-wild-787c51"
-    ]
-  },
-  {
-    "slug": "github-introduces-npm-package-firewall-preview-9110d00f",
-    "title": "GitHub Introduces npm Package Firewall Preview",
-    "summary": "GitHub announced a new package firewall preview for npm that inspects metadata requests and package downloads for malicious activity during installation. The feature acts as an install-time policy gate to block suspicious packages before they execute. This defensive tool is currently limited to the npm ecosystem and available in public preview.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
-    "publishedAt": "2026-10-29T10:26:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-introduces-npm-package-firewall-preview",
-      "article-9110d00f",
-      "9110d00f",
-      "github-introduces-npm-package-firewall-preview-422c27"
-    ]
-  },
-  {
-    "slug": "ai-relay-disables-security-in-openai-codex-claude-f498c143",
-    "title": "AI Relay Disables Security in OpenAI Codex, Claude",
-    "summary": "An unnamed AI relay delivers OpenAI Codex and Anthropic Claude to regions lacking official access, but with security features disabled. Turning off sandboxing and monitoring exposes users to code injection, data exfiltration, and unauthorized execution, though no attacks have been confirmed. Defenders should verify AI service provenance, enforce local sandboxing, and apply extra security controls to mitigate compromised code.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes",
-    "publishedAt": "2026-10-29T10:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-relay-disables-security-in-openai-codex-claude",
-      "article-f498c143",
-      "f498c143",
-      "ai-relay-disables-security-in-openai-codex-claude-18e3c2"
-    ]
-  },
-  {
-    "slug": "nik-c2-ai-enabled-command-and-control-framework-738aa85a",
-    "title": "NIK C2: AI-Enabled Command‑and‑Control Framework",
-    "summary": "Cisco Talos identified a new AI‑enabled command‑and‑control framework named NIK C2 operating in the wild. NIK C2 uses machine‑learning models to generate obfuscated command payloads, enabling dynamic evasion of signature‑based detection systems. Security teams should update endpoint detection rules, block known C2 domains, and monitor for anomalous outbound traffic patterns associated with NIK C2.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
-    "publishedAt": "2026-10-29T10:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nik-c2-ai-enabled-command-and-control-framework",
-      "article-738aa85a",
-      "738aa85a",
-      "nik-c2-ai-enabled-command-and-control-framework-3a1543"
-    ]
-  },
-  {
-    "slug": "cisco-sd-wan-flaw-used-to-deploy-key-stealing-malw-fa6f4575",
-    "title": "Cisco SD‑WAN Flaw Used to Deploy Key‑Stealing Malware",
-    "summary": "Hackers exploited CVE-2026-97229, a critical flaw in Cisco Catalyst SD‑WAN, to plant KeyDrift malware that copies encryption keys. The malware captures keys used to encrypt inter‑site traffic and stores them for later exfiltration, enabling attackers to decrypt communications. Cisco released a patch in February; organizations must apply the update immediately and verify SD‑WAN configurations to mitigate key theft.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
-    "publishedAt": "2026-10-29T08:24:22.000Z",
-    "cves": [
-      "CVE-2026-97229"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-sd-wan-flaw-used-to-deploy-key-stealing-malw",
-      "article-fa6f4575",
-      "fa6f4575",
-      "cisco-sd-wan-flaw-used-to-deploy-key-stealing-malw-6dac31",
-      "cisco-sd-wan-flaw-used-to-deploy-key-stealing-malware"
-    ]
-  },
-  {
-    "slug": "italy-faces-unexplained-surge-in-cyber-vulnerabili-c8bf3e36",
-    "title": "Italy Faces Unexplained Surge in Cyber Vulnerabilities",
-    "summary": "Researchers observe a higher prevalence of cyber vulnerabilities in Italy compared to other regions, with no clear underlying cause identified. The anomaly suggests regional differences in threat actor tactics, supply chain security, or defensive posture, but further analysis is required. Security teams should review local threat intelligence feeds, assess supply chain risk, and strengthen defensive controls to address potential gaps.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
-    "publishedAt": "2026-10-29T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "italy-faces-unexplained-surge-in-cyber-vulnerabili",
-      "article-c8bf3e36",
-      "c8bf3e36",
-      "italy-faces-unexplained-surge-in-cyber-vulnerabili-7d8f1e",
-      "italy-faces-unexplained-surge-in-cyber-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "amatera-infostealer-analysis-spread-and-operation-e82905c9",
-    "title": "Amatera Infostealer Analysis: Spread and Operation Methods",
-    "summary": "ESET identifies Amatera as the top infostealer detections in Latin America during H1 2026, demonstrating professionalized cybercrime distribution methods. The malware spreads through documented infection chains targeting unsuspecting users across the region. Organizations should implement endpoint detection and response controls to identify and block Amatera infections before credential theft occurs.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/malware/amatera-how-prolific-infostealer-works-spreads/",
-    "publishedAt": "2026-10-29T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "amatera-infostealer-analysis-spread-and-operation",
-      "article-e82905c9",
-      "e82905c9",
-      "amatera-infostealer-analysis-spread-and-operation-4c2069",
-      "amatera-infostealer-analysis-spread-and-operation-methods"
     ]
   }
 ];
