@@ -306,3 +306,14 @@ To uphold our **Zero-Silent-Failure Mandate**, SecuBuzz runs a 3-layer automated
    - **Context**: Red Hat's RSS feed (`rhsa.rss`) omits CVE IDs from its XML description. By pre-enriching candidates with the official API, the AI summarizer will embed explicit, tappable CVE chips in the brief, enabling direct triage and tracking for users monitoring those vulnerabilities in **CVE Watchlist**.
    - **Implementation Rule**: Keep pure-code isolation, preserving the core ingestion code freeze on `scripts/ingest.mjs`.
 
+3. **Mobile In-App Historical Archive Search (Cloudflare D1 Vault)**:
+   - **Context**: The mobile app searches the active 500-article rolling window (~5 days) with 0ms in-memory filtering. For stories older than 5 days, local results return 0.
+   - **Architectural Comparison**:
+     | Approach | Phone Storage Used | User Experience | Risk |
+     | :--- | :---: | :--- | :--- |
+     | **Kick to Website (Browser)** | 0 KB | ⚠️ Clunky (leaves the app, opens Chrome) | Frustrates users, looks unfinished |
+     | **In-App Cloud Archive Search** | 0 KB | ⭐️ Polished & Native (stays in app, 1-tap bookmarks) | None — fast, sleek, professional |
+   - **Senior Engineering Recommendation**: Keep users inside the native app. It makes SecuBuzz feel like a premium, top-tier cybersecurity utility, while costing zero device storage (0 KB permanent storage; ~15 KB transient JSON in RAM).
+   - **Implementation Pattern**: When local search returns 0 matching briefs, render an inline action card: `[ 🔍 Search Cloud Archive for "<query>" ]`. Tapping it queries the live Cloudflare Worker endpoint `GET /api/news/search?q=...` directly, rendering the archived briefs into native swipeable cards with 1-tap bookmarks and incident copying intact.
+
+
