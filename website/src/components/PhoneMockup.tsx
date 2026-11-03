@@ -21,10 +21,10 @@ const SCREENS: ScreenItem[] = [
   {
     id: 'advisories',
     tabName: 'Advisories',
-    label: '1,814 Advisories',
+    label: '1,816 Advisories',
     tag: 'CISA KEV',
     image: '/2.jpg',
-    alt: 'SecuBuzz 1,814 Active Threat Advisories Radar'
+    alt: 'SecuBuzz 1,816 Active Threat Advisories Radar'
   },
   {
     id: 'mystack',
