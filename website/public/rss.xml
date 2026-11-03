@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 05:48:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 06:45:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Human Hackers Outperform AI in Business Logic Assessment</title>
+      <link>https://secubuzz.com/news/human-hackers-outperform-ai-in-business-logic-asse-f8d053d9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/human-hackers-outperform-ai-in-business-logic-asse-f8d053d9</guid>
+      <description><![CDATA[Kara Sprague, HackerOne CEO, said AI finds bugs fast, but humans better assess business impact and prioritize. She noted medium‑severity findings often pay less, and AI‑assisted reports need human triage to filter spam and ensure relevance. HackerOne blends AI detection with human judgment to enhance security outcomes and reward alignment.]]></description>
+      <pubDate>Tue, 03 Nov 2026 06:30:36 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/kara-sprague-hackerone-ai-bug-bounty/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>BYDFi Revamp Unifies Rewards Hub, Offers 8,100 USDT</title>
+      <link>https://secubuzz.com/news/bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt-3bb753eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt-3bb753eb</guid>
+      <description><![CDATA[BYDFi’s platform upgrade consolidates campaigns, tasks, and reward claims into a single Rewards Hub, letting new users claim welcome rewards up to 8,100 USDT. The security perspective frames the onboarding window where an account shifts from empty to active, highlighting potential credential exposure. Users should verify account activity, enable MFA, and monitor for suspicious transactions during the initial claim period.]]></description>
+      <pubDate>Tue, 03 Nov 2026 06:03:30 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/bydfis-up-to-8100-usdt-welcome-rewards-a-security-first-guide-for-new-users/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Sweet Virtual Patching Mitigates HTTP2Shell RCE</title>
+      <link>https://secubuzz.com/news/sweet-virtual-patching-mitigates-http2shell-rce-abf28543</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sweet-virtual-patching-mitigates-http2shell-rce-abf28543</guid>
+      <description><![CDATA[HTTP2Shell (CVE-2026-111497) is a remote code execution flaw in Brotli used by Node.js, Bun, Envoy, Python, discovered by OpenAI agents. The flaw lets attackers inject malformed Brotli streams, triggering a decoder crash that enables unauthenticated code execution with a CVSS of 9.8.]]></description>
+      <pubDate>Tue, 03 Nov 2026 06:00:18 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Kernel Update for RHEL 8.8</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-8-b0d5010b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-kernel-update-for-rhel-8-b0d5010b</guid>
+      <description><![CDATA[Red Hat released a critical kernel update for RHEL 8.8 SAP and Telecom services, fixing multiple CVEs. The patch addresses unauthenticated remote code execution flaws with CVSS scores up to 9.0, protecting kernel integrity. Administrators should apply the update via Red Hat Update Manager or yum to maintain compliance and security.]]></description>
+      <pubDate>Tue, 03 Nov 2026 05:53:15 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94303">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Coding Agents Deploy Unpatched MCP Servers</title>
+      <link>https://secubuzz.com/news/ai-coding-agents-deploy-unpatched-mcp-servers-bcd9096a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-coding-agents-deploy-unpatched-mcp-servers-bcd9096a</guid>
+      <description><![CDATA[Glow Labs found AI coding agents installing deprecated MCP servers on developer machines when prompted to set up a GitHub MCP. The agents pick from repositories that will never be patched, creating a MCPhantom pattern that exposes systems to unpatched vulnerabilities. Developers should vet MCP packages, avoid deprecated repositories, and apply controls to detect and remediate unpatched servers.]]></description>
+      <pubDate>Tue, 03 Nov 2026 05:45:53 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/03/mcphantom-deprecated-mcp-servers/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Siemens IoT2050 Exploited for Remote Code Execution</title>
       <link>https://secubuzz.com/news/siemens-iot2050-exploited-for-remote-code-executio-062391f1</link>
@@ -32,6 +77,15 @@
       <description><![CDATA[The IPFire project has launched fireperf, an open‑source measurement tool that opens connections at a fixed rate to evaluate firewall and router performance. Fireperf mimics iperf3 by reporting per‑connection actions, allowing administrators to assess stateful device behavior under sustained traffic. The tool is free software, suitable for developers, testers, and network engineers seeking to benchmark firewall throughput and latency.]]></description>
       <pubDate>Tue, 03 Nov 2026 05:30:59 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/03/fireperf-open-source-network-testing-tool/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>OpenAI Initiates Security Sprint with External Researchers</title>
+      <link>https://secubuzz.com/news/openai-initiates-security-sprint-with-external-res-fe8b1526</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-initiates-security-sprint-with-external-res-fe8b1526</guid>
+      <description><![CDATA[OpenAI announced a new security sprint on November 2, inviting external researchers to collaborate with internal teams on vulnerability discovery and remediation. The program partners with Cathedral Systems and offers increased bug bounty rewards to incentivize reporting of serious flaws across OpenAI’s platforms. Security teams should monitor the sprint’s findings and apply patches promptly to maintain platform integrity.]]></description>
+      <pubDate>Tue, 03 Nov 2026 05:17:26 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openai-security-sprint/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 15:57:23 GMT</pubDate>
       <source url="https://research.checkpoint.com/2026/2nd-november-threat-intelligence-report/">Check Point Research</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Guardz integrates Palo Alto Prisma Browser for SMBs</title>
-      <link>https://secubuzz.com/news/guardz-integrates-palo-alto-prisma-browser-for-smb-b62903fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/guardz-integrates-palo-alto-prisma-browser-for-smb-b62903fa</guid>
-      <description><![CDATA[Guardz announced integration of Palo Alto Networks Prisma Browser for Business, extending browser protection to small‑business managed service providers. The partnership combines Prisma Browser’s threat detection with Guardz’s email, identity, and endpoint security, enabling unified incident response. Deployers should integrate the new solution via Guardz’s platform and verify policy alignment to maintain consistent security posture.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:53:23 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/guardz-brings-palo-alto-networks-prisma-browser-protection-to-small-businesses/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Dismantles 1.3M Android TV Botnet</title>
-      <link>https://secubuzz.com/news/google-dismantles-1-3m-android-tv-botnet-24d3cd71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-1-3m-android-tv-botnet-24d3cd71</guid>
-      <description><![CDATA[Google dismantled a 1.3‑million‑device Android TV botnet that shipped with malicious firmware from Videostrong Technology. The embedded backdoor enabled remote command execution, allowing attackers to monetize traffic for ad‑fraud and exfiltrate data. Google’s Threat Intelligence Group disabled the command‑and‑control servers, banned Videostrong, and urged vendors to remove the compromised firmware.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:50:46 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/02/xcpe-botnet-android-backdoor/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google disrupts 1.3 million Android botnet</title>
-      <link>https://secubuzz.com/news/google-disrupts-1-3-million-android-botnet-d67c9b36</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-disrupts-1-3-million-android-botnet-d67c9b36</guid>
-      <description><![CDATA[Google dismantled the command‑and‑control servers of a 1.3 million‑device Android botnet that used a backdoor in TV set‑top box firmware. Videostrong Technology embedded the backdoor, enabling criminals to use the devices for ad‑fraud and traffic tunneling, exposing users to unauthorized data flows. Google’s Threat Intelligence Group disabled the infrastructure and banned Videostrong, urging vendors to remove the compromised firmware.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:50:26 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/google-disrupts-13-million-device.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Qt5 Qtbase Security Update Released</title>
-      <link>https://secubuzz.com/news/red-hat-qt5-qtbase-security-update-released-a6698434</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-qt5-qtbase-security-update-released-a6698434</guid>
-      <description><![CDATA[Red Hat has released an update for qt5-qtbase addressing multiple vulnerabilities rated Important severity under RHSA-2026:93924. Each vulnerability carries a publicly available CVSS base score accessible through CVE references in the advisory. Security teams should apply the update promptly to mitigate disclosed weaknesses in the Qt5 cross-platform application framework.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:41:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93924">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Perl 5.32 Security Update Released</title>
-      <link>https://secubuzz.com/news/red-hat-perl-5-32-security-update-released-fe942fb9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-perl-5-32-security-update-released-fe942fb9</guid>
-      <description><![CDATA[Red Hat has released an update for the perl:5.32 module addressing multiple vulnerabilities rated Moderate severity under RHSA-2026:85917. Each vulnerability carries a publicly available CVSS base score accessible through CVE references in the advisory. Security teams should apply the update promptly to mitigate disclosed weaknesses in the Perl scripting language runtime.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:37:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:85917">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Security Update for python‑urllib3</title>
-      <link>https://secubuzz.com/news/red-hat-issues-security-update-for-python-urllib3-ab89bc86</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-update-for-python-urllib3-ab89bc86</guid>
-      <description><![CDATA[Red Hat released a security update for python‑urllib3 on RHEL 10, fixing multiple library vulnerabilities. The update is rated Important, with CVSS base scores linked to CVE entries, though no exploitation has been observed. Apply the patch immediately and review the CVSS scores for each CVE to gauge residual risk.]]></description>
-      <pubDate>Mon, 02 Nov 2026 15:37:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:85930">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

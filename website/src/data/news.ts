@@ -11,6 +11,100 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "human-hackers-outperform-ai-in-business-logic-asse-f8d053d9",
+    "title": "Human Hackers Outperform AI in Business Logic Assessment",
+    "summary": "Kara Sprague, HackerOne CEO, said AI finds bugs fast, but humans better assess business impact and prioritize. She noted medium‑severity findings often pay less, and AI‑assisted reports need human triage to filter spam and ensure relevance. HackerOne blends AI detection with human judgment to enhance security outcomes and reward alignment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/kara-sprague-hackerone-ai-bug-bounty/",
+    "publishedAt": "2026-11-03T06:30:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "human-hackers-outperform-ai-in-business-logic-asse",
+      "article-f8d053d9",
+      "f8d053d9",
+      "human-hackers-outperform-ai-in-business-logic-asse-433d13",
+      "human-hackers-outperform-ai-in-business-logic-assessment"
+    ]
+  },
+  {
+    "slug": "bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt-3bb753eb",
+    "title": "BYDFi Revamp Unifies Rewards Hub, Offers 8,100 USDT",
+    "summary": "BYDFi’s platform upgrade consolidates campaigns, tasks, and reward claims into a single Rewards Hub, letting new users claim welcome rewards up to 8,100 USDT. The security perspective frames the onboarding window where an account shifts from empty to active, highlighting potential credential exposure. Users should verify account activity, enable MFA, and monitor for suspicious transactions during the initial claim period.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/bydfis-up-to-8100-usdt-welcome-rewards-a-security-first-guide-for-new-users/",
+    "publishedAt": "2026-11-03T06:03:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt",
+      "article-3bb753eb",
+      "3bb753eb",
+      "bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt-621df1"
+    ]
+  },
+  {
+    "slug": "sweet-virtual-patching-mitigates-http2shell-rce-abf28543",
+    "title": "Sweet Virtual Patching Mitigates HTTP2Shell RCE",
+    "summary": "HTTP2Shell (CVE-2026-111497) is a remote code execution flaw in Brotli used by Node.js, Bun, Envoy, Python, discovered by OpenAI agents. The flaw lets attackers inject malformed Brotli streams, triggering a decoder crash that enables unauthenticated code execution with a CVSS of 9.8.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/",
+    "publishedAt": "2026-11-03T06:00:18.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "sweet-virtual-patching-mitigates-http2shell-rce",
+      "article-abf28543",
+      "abf28543",
+      "sweet-virtual-patching-mitigates-http2shell-rce-40222c"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-kernel-update-for-rhel-8-b0d5010b",
+    "title": "Red Hat Releases Critical Kernel Update for RHEL 8.8",
+    "summary": "Red Hat released a critical kernel update for RHEL 8.8 SAP and Telecom services, fixing multiple CVEs. The patch addresses unauthenticated remote code execution flaws with CVSS scores up to 9.0, protecting kernel integrity. Administrators should apply the update via Red Hat Update Manager or yum to maintain compliance and security.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94303",
+    "publishedAt": "2026-11-03T05:53:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-kernel-update-for-rhel-8",
+      "article-b0d5010b",
+      "b0d5010b",
+      "red-hat-releases-critical-kernel-update-for-rhel-8-37d8be",
+      "red-hat-releases-critical-kernel-update-for-rhel-8-8"
+    ]
+  },
+  {
+    "slug": "ai-coding-agents-deploy-unpatched-mcp-servers-bcd9096a",
+    "title": "AI Coding Agents Deploy Unpatched MCP Servers",
+    "summary": "Glow Labs found AI coding agents installing deprecated MCP servers on developer machines when prompted to set up a GitHub MCP. The agents pick from repositories that will never be patched, creating a MCPhantom pattern that exposes systems to unpatched vulnerabilities. Developers should vet MCP packages, avoid deprecated repositories, and apply controls to detect and remediate unpatched servers.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/mcphantom-deprecated-mcp-servers/",
+    "publishedAt": "2026-11-03T05:45:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-coding-agents-deploy-unpatched-mcp-servers",
+      "article-bcd9096a",
+      "bcd9096a",
+      "ai-coding-agents-deploy-unpatched-mcp-servers-1dca0b"
+    ]
+  },
+  {
     "slug": "siemens-iot2050-exploited-for-remote-code-executio-062391f1",
     "title": "Siemens IoT2050 Exploited for Remote Code Execution",
     "summary": "Attackers are exploiting a missing authentication flaw in Siemens SIMATIC IoT2050 Advanced devices, allowing remote code execution. The flaw, CVE-2026-58115, carries a CVSS score of 10.0 and permits unauthenticated attackers to run arbitrary code, potentially compromising device control and network integrity. Siemens has released an out‑of‑band patch; administrators should apply the update immediately and disable exposed management interfaces.",
@@ -69,6 +163,25 @@ export const news: NewsBrief[] = [
       "cd77d728",
       "fireperf-released-as-open-source-firewall-testing-2a5758",
       "fireperf-released-as-open-source-firewall-testing-tool"
+    ]
+  },
+  {
+    "slug": "openai-initiates-security-sprint-with-external-res-fe8b1526",
+    "title": "OpenAI Initiates Security Sprint with External Researchers",
+    "summary": "OpenAI announced a new security sprint on November 2, inviting external researchers to collaborate with internal teams on vulnerability discovery and remediation. The program partners with Cathedral Systems and offers increased bug bounty rewards to incentivize reporting of serious flaws across OpenAI’s platforms. Security teams should monitor the sprint’s findings and apply patches promptly to maintain platform integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openai-security-sprint/",
+    "publishedAt": "2026-11-03T05:17:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-initiates-security-sprint-with-external-res",
+      "article-fe8b1526",
+      "fe8b1526",
+      "openai-initiates-security-sprint-with-external-res-483311",
+      "openai-initiates-security-sprint-with-external-researchers"
     ]
   },
   {
@@ -2038,6 +2151,25 @@ export const news: NewsBrief[] = [
       "article-61833136",
       "61833136",
       "red-hat-issues-gimp-security-update-37d92a"
+    ]
+  },
+  {
+    "slug": "trusted-vendors-should-guide-smbs-through-onboardi-7fe5f15f",
+    "title": "Trusted Vendors Should Guide SMBs Through Onboarding",
+    "summary": "SMBs require guided onboarding and supervised protection to optimize their security investments. The article emphasizes that vendors should provide clear onboarding processes and ongoing oversight to reduce confusion and ensure consistent security posture. Organizations should adopt vendor-led training, continuous monitoring, and proactive risk assessments to maintain effective defenses and protect critical assets.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/business-security/when-confusion-reigns-trusted-vendors-guide-smb-customers/",
+    "publishedAt": "2026-11-02T09:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trusted-vendors-should-guide-smbs-through-onboardi",
+      "article-7fe5f15f",
+      "7fe5f15f",
+      "trusted-vendors-should-guide-smbs-through-onboardi-6a51e0",
+      "trusted-vendors-should-guide-smbs-through-onboarding"
     ]
   },
   {
@@ -9391,137 +9523,6 @@ export const news: NewsBrief[] = [
       "b934d3c0",
       "prompt-injection-techniques-enable-agent-planning-57196e",
       "prompt-injection-techniques-enable-agent-planning-attacks"
-    ]
-  },
-  {
-    "slug": "mlflow-get-artifacts-ssrf-exposes-sensitive-inform-0f17275e",
-    "title": "MLflow get-artifacts SSRF Exposes Sensitive Information",
-    "summary": "A Server‑Side Request Forgery flaw in MLflow’s get‑artifacts endpoint allows remote attackers to read sensitive data without authentication. The vulnerability, identified as CVE‑2026‑118628, has a CVSS score of 8.2, indicating a high‑risk exposure that can be exploited remotely. MLflow maintainers have released a patch; administrators should update the platform immediately to prevent data leakage.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-844/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-get-artifacts-ssrf-exposes-sensitive-inform",
-      "article-0f17275e",
-      "0f17275e",
-      "mlflow-get-artifacts-ssrf-exposes-sensitive-inform-6f3ca2",
-      "mlflow-get-artifacts-ssrf-exposes-sensitive-information"
-    ]
-  },
-  {
-    "slug": "mlflow-tracking-server-jobs-expose-data-without-au-389ffcf8",
-    "title": "MLflow Tracking Server Jobs Expose Data Without Authorization",
-    "summary": "A missing authorization check in MLflow’s Tracking Server Jobs endpoint permits authenticated attackers to read sensitive information. The flaw, catalogued as CVE‑2026‑118624, carries a CVSS score of 5.4, indicating a moderate risk that requires user credentials to exploit. MLflow developers have issued a patch; users should apply it promptly to eliminate the data disclosure vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-840/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-tracking-server-jobs-expose-data-without-au",
-      "article-389ffcf8",
-      "389ffcf8",
-      "mlflow-tracking-server-jobs-expose-data-without-au-6f3ca2",
-      "mlflow-tracking-server-jobs-expose-data-without-authorizatio"
-    ]
-  },
-  {
-    "slug": "mlflow-ai-gateway-ssrf-exposes-information-1d8acae4",
-    "title": "MLflow AI Gateway SSRF Exposes Information",
-    "summary": "A server‑side request forgery flaw in MLflow AI Gateway allows authenticated attackers to trigger arbitrary outbound requests. CVE‑2026‑71211 carries a CVSS score of 7.7, indicating a high‑severity vulnerability that could lead to information disclosure if exploited. MLflow recommends applying the vendor‑issued patch or disabling the affected feature; no public exploit is known.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-847/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-ai-gateway-ssrf-exposes-information",
-      "article-1d8acae4",
-      "1d8acae4",
-      "mlflow-ai-gateway-ssrf-exposes-information-6f3ca3"
-    ]
-  },
-  {
-    "slug": "mlflow-webhook-ssrf-vulnerability-exposes-data-cab327e4",
-    "title": "MLflow Webhook SSRF Vulnerability Exposes Data",
-    "summary": "An authenticated server‑side request forgery flaw in MLflow Webhook permits attackers to initiate arbitrary outbound requests. CVE‑2026‑64849 has a CVSS score of 6.8, classifying it as a medium‑severity vulnerability that could lead to information disclosure. MLflow advises applying the patch or disabling the webhook feature; no exploit has been reported.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-846/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mlflow-webhook-ssrf-vulnerability-exposes-data",
-      "article-cab327e4",
-      "cab327e4",
-      "mlflow-webhook-ssrf-vulnerability-exposes-data-6f3ca3"
-    ]
-  },
-  {
-    "slug": "linux-kernel-integer-underflow-enables-local-privi-32258931",
-    "title": "Linux Kernel Integer Underflow Enables Local Privilege Escalation",
-    "summary": "An integer underflow in the Linux Kernel IPv6 AH routing header permits privilege escalation on affected installations. The flaw, CVE-2026-80844, scores CVSS 8.8 and requires low‑privileged code execution to trigger, potentially allowing attackers to gain root privileges. Kernel maintainers have released a patch; administrators should update to the latest kernel version or apply the vendor‑supplied fix to eliminate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-834/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [
-      "CVE-2026-80844"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-integer-underflow-enables-local-privi",
-      "article-32258931",
-      "32258931",
-      "linux-kernel-integer-underflow-enables-local-privi-6f3c9f",
-      "linux-kernel-integer-underflow-enables-local-privilege-escal"
-    ]
-  },
-  {
-    "slug": "linux-kernel-xfrm-use-after-free-exploit-5ff6032c",
-    "title": "Linux Kernel XFRM Use-After-Free Exploit",
-    "summary": "A use‑after‑free flaw in the Linux Kernel XFRM subsystem permits local attackers to gain root privileges on affected installations. The vulnerability, identified as CVE‑2026‑98231, has a CVSS score of 7.8 and requires the attacker to first execute low‑privileged code before triggering the use‑after‑free. Kernel maintainers released patch 6.6.1‑rc1; admins should apply it or use the work‑around.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-837/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-xfrm-use-after-free-exploit",
-      "article-5ff6032c",
-      "5ff6032c",
-      "linux-kernel-xfrm-use-after-free-exploit-6f3c9f"
-    ]
-  },
-  {
-    "slug": "linux-kernel-cifs-use-after-free-exploit-f38eed91",
-    "title": "Linux Kernel CIFS Use-After-Free Exploit",
-    "summary": "A use‑after‑free bug in the Linux Kernel CIFS file system allows local attackers to elevate privileges on vulnerable systems. CVE‑2026‑72315 carries a CVSS score of 7.2 and requires the attacker to first run high‑privileged code before exploiting the memory corruption. Kernel developers have issued patch 6.5.12‑rc2; administrators should update or apply the provided work‑around to prevent privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-836/",
-    "publishedAt": "2026-10-29T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-cifs-use-after-free-exploit",
-      "article-f38eed91",
-      "f38eed91",
-      "linux-kernel-cifs-use-after-free-exploit-6f3c9f"
     ]
   }
 ];
