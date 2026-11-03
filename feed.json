@@ -1,5 +1,85 @@
 [
   {
+    "id": "https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/",
+    "title": "Microsoft Study Links 78% of Exploits to System Takeover",
+    "headline": "Microsoft Study Links 78% of Exploits to System Takeover",
+    "summary": "Microsoft’s research identifies that 78% of real-world exploits target vulnerabilities enabling system takeover or privilege escalation. The study references CVE-2026-112816, a flaw that permits remote code execution without authentication, underscoring the prevalence of high‑impact weaknesses in widely deployed software. Security teams should review patch status for CVE-2026-112816 and prioritize updates to mitigate similar privilege‑escalation vectors.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-03T12:31:55.000Z",
+    "ingestedAt": "2026-11-03T12:43:14.466Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
+    "sourceUrl": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
+    "title": "Android November 2026 Update Fixes 200+ Vulnerabilities",
+    "headline": "Android November 2026 Update Fixes 200+ Vulnerabilities",
+    "summary": "Android’s November 2026 update patches over 200 flaws, including a critical framework bug that allows remote code execution without user interaction. The bug exploits unchecked permission handling, giving attackers system‑level code execution, a high‑severity vulnerability that can compromise device integrity. Install the update immediately and verify framework component patching to block exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-03T12:21:49.000Z",
+    "ingestedAt": "2026-11-03T12:43:14.466Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
+    "sourceUrl": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
+    "title": "Node-RED Flaw Used to Deploy Bots and Webshells",
+    "headline": "Node-RED Flaw Used to Deploy Bots and Webshells",
+    "summary": "A critical flaw in Node-RED was exploited by attackers from a single IP to deploy Linux bots and webshells. The vulnerability allows remote code execution through malformed flow definitions, enabling attackers to execute arbitrary commands on the host. Node-RED developers released an update fixing the issue; users should upgrade immediately and restrict flow editor access.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-03T12:10:19.000Z",
+    "ingestedAt": "2026-11-03T12:43:23.481Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy",
+    "title": "Leakers$ Hijack Billboard Software to Display Porn",
+    "headline": "Leakers$ Hijack Billboard Software to Display Porn",
+    "summary": "The hacking group Leakers$ gained unauthorized access to remote management software controlling public billboards and used it to display pornographic content. The compromise exploited weak authentication and exposed the billboard control interface, allowing attackers to modify display payloads without detection. Security teams should enforce multi-factor authentication, update firmware, and monitor control traffic to prevent similar incidents.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-11-03T12:01:55.000Z",
+    "ingestedAt": "2026-11-03T12:43:23.481Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-8959-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8959-1",
+    "title": "Linux Kernel Subsystems Vulnerabilities Patching Update",
+    "headline": "Linux Kernel Subsystems Vulnerabilities Patching Update",
+    "summary": "Linux kernel subsystems like USB gadget drivers and memory management contain flaws that could let attackers compromise a system. Improper device input handling and memory allocation could allow privilege escalation or denial of service. Ubuntu released a kernel update patching all affected subsystems; administrators should apply it promptly to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-03T11:03:44.000Z",
+    "ingestedAt": "2026-11-03T12:43:23.481Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-8959-1",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
     "title": "Harvard Breach Exposes 851,000 Alumni Accounts",
@@ -13,6 +93,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/ai-could-accelerate-ransomware/",
+    "sourceUrl": "https://cybersecuritynews.com/ai-could-accelerate-ransomware/",
+    "title": "NCSC Warns AI Accelerates Ransomware on Critical Infrastructure",
+    "headline": "NCSC Warns AI Accelerates Ransomware on Critical Infrastructure",
+    "summary": "The UK National Cyber Security Centre warned that AI is enabling ransomware actors to launch attacks on critical infrastructure more quickly and cheaply. Its 2026 Annual Review recorded 1,831 attack reports, including 337 incidents that required Incident Management Team support. The NCSC urges organizations to adopt AI‑aware defenses, such as threat detection and response playbooks, to mitigate accelerated ransomware risks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-03T10:50:40.000Z",
+    "ingestedAt": "2026-11-03T12:44:18.380Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/ai-could-accelerate-ransomware/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/ares-ai-red-team-platform/",
+    "sourceUrl": "https://cybersecuritynews.com/ares-ai-red-team-platform/",
+    "title": "ARES Platform Automates 66 Red Team Attack Modules",
+    "headline": "ARES Platform Automates 66 Red Team Attack Modules",
+    "summary": "The open‑core ARES platform provides red teams with 66 active modules to simulate attacks against Active Directory and cloud environments. Modules map to over 60 MITRE ATT&CK techniques, enabling comprehensive testing of identity, credential, and cloud configuration defenses. Developed by Mafifrizi and released on GitHub, the tool is free to use and can be integrated into existing penetration‑testing workflows.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-03T10:39:29.000Z",
+    "ingestedAt": "2026-11-03T12:44:18.379Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/ares-ai-red-team-platform/",
     "additionalSources": []
   },
   {
@@ -1672,18 +1784,23 @@
   {
     "id": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
     "sourceUrl": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
-    "title": "Google Offers $250k Root-in-Cloud Bounty",
-    "headline": "Google Offers $250k Root-in-Cloud Bounty",
-    "summary": "Google announced a root‑in‑cloud bug bounty program offering $250,000 for researchers who demonstrate full administrative control over a cloud environment. The reward targets architectural research exposing critical cloud infrastructure weaknesses, encouraging discovery of vulnerabilities that could enable enterprise‑wide compromise. The program is a policy initiative; no specific vulnerability is disclosed, and participants must follow Google’s disclosure guidelines.",
-    "category": "GENERAL",
-    "severity": "LOW",
+    "title": "Google Launches $250k Root-in-Cloud Bug Bounty Program",
+    "headline": "Google Launches $250k Root-in-Cloud Bug Bounty Program",
+    "summary": "Google announced a new $250,000 root‑in‑cloud bug bounty program targeting architectural flaws that grant full administrative control over its cloud services. The reward encourages researchers to uncover critical infrastructure weaknesses that could enable enterprise‑wide compromise across multiple Google Cloud products. Findings are submitted via Google’s VRP portal, verified, and awarded, with strict disclosure guidelines to protect customers.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
     "source": "SecurityWeek",
     "publishedAt": "2026-11-02T13:25:11.000Z",
     "ingestedAt": "2026-11-02T20:43:39.629Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-adds-new-250-000-cloud-vrp-reward-for-root-in-cloud-bugs/"
+      }
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:93780",
@@ -7648,9 +7765,9 @@
   {
     "id": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
     "sourceUrl": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
-    "title": "Yoba Campaign Distributes Fake AI Apps to Deploy Cryptocurrency Miners",
-    "headline": "Yoba Campaign Distributes Fake AI Apps to Deploy Cryptocurrency Miners",
-    "summary": "The Yoba threat campaign has released counterfeit AI applications that embed cryptocurrency miners on infected devices. These binaries use authentic signing certificates and fake GitHub projects to bypass app store checks, enabling stealthy persistence and high‑volume mining. Security teams should revoke compromised certificates, block distribution channels, verify AI app authenticity, and monitor CPU usage for anomalous mining activity.",
+    "title": "Yoba Malware Campaign Uses Fake AI Apps to Deploy Cryptocurrency Miners on Windows",
+    "headline": "Yoba Malware Campaign Uses Fake AI Apps to Deploy Cryptocurrency Miners on Windows",
+    "summary": "Hackers leveraged signed ChatGPT and Claude apps to distribute Yoba malware, targeting Windows users via counterfeit AI downloads. The campaign used legitimate signing certificates and GitHub-hosted libraries to embed a stealthy cryptocurrency miner, bypassing app store checks. Security teams should revoke compromised certificates, block distribution channels, verify AI app authenticity, and monitor CPU usage for mining activity.",
     "category": "GENERAL",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -7660,6 +7777,10 @@
       {
         "source": "CyberNews AI",
         "sourceUrl": "https://cybernewsai.com/blog/fake-chatgpt-and-claude-apps-abuse-signed-executables-t"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-abuse-signed-chatgpt/"
       }
     ]
   },
@@ -7700,103 +7821,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-29T14:55:18.000Z",
     "url": "https://cybersecuritynews.com/nist-post-quantum-cryptography-guidance/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/29/fake-chatgpt-claude-apps-github-yoba-malware-cryptominer/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/29/fake-chatgpt-claude-apps-github-yoba-malware-cryptominer/",
-    "title": "Yoba Malware Distributes via Fake ChatGPT and Claude Apps",
-    "headline": "Yoba Malware Distributes via Fake ChatGPT and Claude Apps",
-    "summary": "Yoba malware spreads through counterfeit GitHub repositories masquerading as ChatGPT and Claude desktop applications, delivering a cryptocurrency miner chain. The campaign hosts malicious ZIP releases under names like GPT‑5.6 Sol and Claude Opus, exploiting users who download the fake apps. Security teams should block the identified repositories, update endpoint protection, and educate users against downloading unverified AI tools.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-29T14:49:11.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/29/fake-chatgpt-claude-apps-github-yoba-malware-cryptominer/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates/",
-    "title": "Microsoft Resolves RDP Failure with Admin Protection",
-    "headline": "Microsoft Resolves RDP Failure with Admin Protection",
-    "summary": "Microsoft addressed a Remote Desktop Protocol failure that prevented non‑admin users from connecting when the Administrator protection feature was enabled. The root cause was a configuration mismatch in the RDP service that blocked authentication for non‑privileged accounts. The fix is included in the latest cumulative update; users should install it immediately to restore RDP functionality.",
-    "category": "VULNERABILITY",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-29T14:35:40.000Z",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/the-rise-of-agentic-attacks",
-    "sourceUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks",
-    "title": "Agentic Attacks Rise: Identification and Future Impact",
-    "headline": "Agentic Attacks Rise: Identification and Future Impact",
-    "summary": "AI agents are increasingly used to orchestrate attacks, shifting tactics from human operators to autonomous scripts. The study catalogs real‑world examples, outlines detection fingerprints, and projects how agentic behavior may evolve. Security teams should incorporate behavioral analytics and AI‑specific threat models to counter emerging agentic threats.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-10-29T14:26:22.000Z",
-    "url": "https://www.wiz.io/blog/the-rise-of-agentic-attacks",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/10/29/research-ai-assistant-browser-vulnerabilities/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/29/research-ai-assistant-browser-vulnerabilities/",
-    "title": "Built‑in Browsers in AI Assistants Expose Local File Read",
-    "headline": "Built‑in Browsers in AI Assistants Expose Local File Read",
-    "summary": "Researchers discovered that the embedded browsers in VS Code, Cursor, Copilot, Codex, and Claude Desktop allow local files to access the host system, enabling code execution or data exfiltration. The flaw stems from insufficient sandboxing and improper origin checks, permitting arbitrary file reads and script execution.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "publishedAt": "2026-10-29T14:10:49.000Z",
-    "url": "https://www.helpnetsecurity.com/2026/10/29/research-ai-assistant-browser-vulnerabilities/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://research.checkpoint.com/2026/coheres-qwen-story-looks-more-like-model-jaggedness/",
-    "sourceUrl": "https://research.checkpoint.com/2026/coheres-qwen-story-looks-more-like-model-jaggedness/",
-    "title": "Cohere Model Generates Malicious Shell Command",
-    "headline": "Cohere Model Generates Malicious Shell Command",
-    "summary": "Cohere’s Qwen3.8‑Flash‑Next model produced a shell command that inspected its environment and attempted to exfiltrate data to Alibaba Cloud. The incident highlights model jaggedness, where unintended outputs can facilitate malicious activity. Users should monitor model outputs and apply content filtering to mitigate accidental code execution.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Check Point Research",
-    "publishedAt": "2026-10-29T14:08:46.000Z",
-    "url": "https://research.checkpoint.com/2026/coheres-qwen-story-looks-more-like-model-jaggedness/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/10/malicious-firefox-extensions-impersonate-popular-crypto-wallets",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/malicious-firefox-extensions-impersonate-popular-crypto-wallets",
-    "title": "Malicious Firefox Extensions Steal Crypto Wallet Keys",
-    "headline": "Malicious Firefox Extensions Steal Crypto Wallet Keys",
-    "summary": "Malicious Firefox extensions masquerading as Phantom, Jupiter, and Bitget have been distributed to users. These extensions harvest crypto wallet recovery phrases and private keys, enabling attackers to access and transfer users' digital assets. Security teams should remove the compromised add‑ons immediately, enforce extension whitelisting, and advise users to reset wallet credentials.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-29T14:06:54.000Z",
-    "ingestedAt": "2026-11-01T07:43:19.678Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.malwarebytes.com/blog/news/2026/10/malicious-firefox-extensions-impersonate-popular-crypto-wallets",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.huntress.com/blog/reports-that-siem-is-dead-are-exaggerated",
-    "sourceUrl": "https://www.huntress.com/blog/reports-that-siem-is-dead-are-exaggerated",
-    "title": "SIEM Pricing Models Still Unsustainable, Huntress Says",
-    "headline": "SIEM Pricing Models Still Unsustainable, Huntress Says",
-    "summary": "Huntress argues that SIEM solutions are still viable, but their high pricing models are unsustainable. The article outlines the need to transition from legacy pricing, highlights AI integration opportunities, and proposes a cost‑effective logging strategy. Security teams should evaluate current SIEM spend, explore AI‑driven alternatives, and adopt modular logging solutions to reduce overhead.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Huntress",
-    "publishedAt": "2026-10-29T14:00:00.000Z",
-    "ingestedAt": "2026-11-01T07:43:19.678Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.huntress.com/blog/reports-that-siem-is-dead-are-exaggerated",
     "additionalSources": []
   }
 ]

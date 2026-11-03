@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 11:18:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 12:45:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Study Links 78% of Exploits to System Takeover</title>
+      <link>https://secubuzz.com/news/microsoft-study-links-78-of-exploits-to-system-tak-5fb80576</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-study-links-78-of-exploits-to-system-tak-5fb80576</guid>
+      <description><![CDATA[Microsoft’s research identifies that 78% of real-world exploits target vulnerabilities enabling system takeover or privilege escalation. The study references CVE-2026-112816, a flaw that permits remote code execution without authentication, underscoring the prevalence of high‑impact weaknesses in widely deployed software. Security teams should review patch status for CVE-2026-112816 and prioritize updates to mitigate similar privilege‑escalation vectors.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:31:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Android November 2026 Update Fixes 200+ Vulnerabilities</title>
+      <link>https://secubuzz.com/news/android-november-2026-update-fixes-200-vulnerabili-92d171cf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/android-november-2026-update-fixes-200-vulnerabili-92d171cf</guid>
+      <description><![CDATA[Android’s November 2026 update patches over 200 flaws, including a critical framework bug that allows remote code execution without user interaction. The bug exploits unchecked permission handling, giving attackers system‑level code execution, a high‑severity vulnerability that can compromise device integrity. Install the update immediately and verify framework component patching to block exploitation.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:21:49 GMT</pubDate>
+      <source url="https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Node-RED Flaw Used to Deploy Bots and Webshells</title>
+      <link>https://secubuzz.com/news/node-red-flaw-used-to-deploy-bots-and-webshells-fd0ce182</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-red-flaw-used-to-deploy-bots-and-webshells-fd0ce182</guid>
+      <description><![CDATA[A critical flaw in Node-RED was exploited by attackers from a single IP to deploy Linux bots and webshells. The vulnerability allows remote code execution through malformed flow definitions, enabling attackers to execute arbitrary commands on the host. Node-RED developers released an update fixing the issue; users should upgrade immediately and restrict flow editor access.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:10:19 GMT</pubDate>
+      <source url="https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Leakers$ Hijack Billboard Software to Display Porn</title>
+      <link>https://secubuzz.com/news/leakers-hijack-billboard-software-to-display-porn-869233ee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/leakers-hijack-billboard-software-to-display-porn-869233ee</guid>
+      <description><![CDATA[The hacking group Leakers$ gained unauthorized access to remote management software controlling public billboards and used it to display pornographic content. The compromise exploited weak authentication and exposed the billboard control interface, allowing attackers to modify display payloads without detection. Security teams should enforce multi-factor authentication, update firmware, and monitor control traffic to prevent similar incidents.]]></description>
+      <pubDate>Tue, 03 Nov 2026 12:01:55 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Linux Kernel Subsystems Vulnerabilities Patching Update</title>
+      <link>https://secubuzz.com/news/linux-kernel-subsystems-vulnerabilities-patching-u-78ae618d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-subsystems-vulnerabilities-patching-u-78ae618d</guid>
+      <description><![CDATA[Linux kernel subsystems like USB gadget drivers and memory management contain flaws that could let attackers compromise a system. Improper device input handling and memory allocation could allow privilege escalation or denial of service. Ubuntu released a kernel update patching all affected subsystems; administrators should apply it promptly to mitigate the risk.]]></description>
+      <pubDate>Tue, 03 Nov 2026 11:03:44 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8959-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Harvard Breach Exposes 851,000 Alumni Accounts</title>
       <link>https://secubuzz.com/news/harvard-breach-exposes-851-000-alumni-accounts-62b371b9</link>
@@ -15,6 +60,24 @@
       <pubDate>Tue, 03 Nov 2026 10:53:25 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>NCSC Warns AI Accelerates Ransomware on Critical Infrastructure</title>
+      <link>https://secubuzz.com/news/ncsc-warns-ai-accelerates-ransomware-on-critical-i-e6aa1c94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ncsc-warns-ai-accelerates-ransomware-on-critical-i-e6aa1c94</guid>
+      <description><![CDATA[The UK National Cyber Security Centre warned that AI is enabling ransomware actors to launch attacks on critical infrastructure more quickly and cheaply. Its 2026 Annual Review recorded 1,831 attack reports, including 337 incidents that required Incident Management Team support. The NCSC urges organizations to adopt AI‑aware defenses, such as threat detection and response playbooks, to mitigate accelerated ransomware risks.]]></description>
+      <pubDate>Tue, 03 Nov 2026 10:50:40 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ai-could-accelerate-ransomware/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ARES Platform Automates 66 Red Team Attack Modules</title>
+      <link>https://secubuzz.com/news/ares-platform-automates-66-red-team-attack-modules-411e83c2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ares-platform-automates-66-red-team-attack-modules-411e83c2</guid>
+      <description><![CDATA[The open‑core ARES platform provides red teams with 66 active modules to simulate attacks against Active Directory and cloud environments. Modules map to over 60 MITRE ATT&CK techniques, enabling comprehensive testing of identity, credential, and cloud configuration defenses. Developed by Mafifrizi and released on GitHub, the tool is free to use and can be integrated into existing penetration‑testing workflows.]]></description>
+      <pubDate>Tue, 03 Nov 2026 10:39:29 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ares-ai-red-team-platform/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Adobe Commerce Zero-Day Enables PSK Agent RAT Deployment</title>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 23:00:45 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/">Unit 42</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Camel 4.18 for Quarkus Security</title>
-      <link>https://secubuzz.com/news/red-hat-updates-camel-4-18-for-quarkus-security-768da2e4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-camel-4-18-for-quarkus-security-768da2e4</guid>
-      <description><![CDATA[Red Hat issued an important security update for its build of Apache Camel 4.18 bundled with Quarkus 3.33.4.SP2, addressing security issues. The patch resolves flaws that could enable remote code execution via malformed Camel routes, though no public exploit or CVE is currently documented. Customers should apply the update immediately to maintain product security; no additional mitigations are required.]]></description>
-      <pubDate>Mon, 02 Nov 2026 22:41:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:93980">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Binance Breach Shows Single Laptop Compromise Causes Billions Lost</title>
-      <link>https://secubuzz.com/news/binance-breach-shows-single-laptop-compromise-caus-614a7acd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binance-breach-shows-single-laptop-compromise-caus-614a7acd</guid>
-      <description><![CDATA[Attackers exploited a single compromised laptop within Binance's network to exfiltrate over one billion dollars, demonstrating how weak system separation and inadequate access controls can cascade into systemic financial loss. The incident highlights the critical need for robust network segmentation and least-privilege enforcement across enterprise infrastructure.]]></description>
-      <pubDate>Mon, 02 Nov 2026 22:27:24 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Ansible Automation Platform 2.5 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-ansible-automation-platform-2-5-security-u-b8a34741</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-ansible-automation-platform-2-5-security-u-b8a34741</guid>
-      <description><![CDATA[Red Hat released an important security and bug fix update for Ansible Automation Platform 2.5. The update addresses multiple vulnerabilities with a security impact rated as Important, and each CVE’s CVSS base score is provided in the references. Administrators should apply the update promptly to mitigate the identified issues and consult the CVE links for detailed patch information.]]></description>
-      <pubDate>Mon, 02 Nov 2026 22:20:11 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94100">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Ansible 2.6 Security Update Released</title>
-      <link>https://secubuzz.com/news/red-hat-ansible-2-6-security-update-released-e35b03c3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-ansible-2-6-security-update-released-e35b03c3</guid>
-      <description><![CDATA[Red Hat released a security update for Ansible Automation Platform 2.6 to fix multiple vulnerabilities in its automation modules. The patch fixes issues rated Important on the CVSS scale, as listed in the CVE references, stopping privilege escalation. Red Hat urges users to apply the update immediately and confirm the new version via the product security portal.]]></description>
-      <pubDate>Mon, 02 Nov 2026 22:18:50 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94101">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AWS MCP Server Path Traversal Vulnerability CVE-2026-116635</title>
-      <link>https://secubuzz.com/news/aws-mcp-server-path-traversal-vulnerability-cve-20-ff621880</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-mcp-server-path-traversal-vulnerability-cve-20-ff621880</guid>
-      <description><![CDATA[CVE-2026-116635 is an unauthenticated path traversal flaw in the deployment status component of the AWS Serverless MCP Server that allows read or write access to JSON files outside the intended directory when write permissions are enabled. This vulnerability enables potential information disclosure and file manipulation by actors who can influence the MCP agent.]]></description>
-      <pubDate>Mon, 02 Nov 2026 21:43:24 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-164-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Brazilian Exchange Reports $46M Crypto Theft</title>
-      <link>https://secubuzz.com/news/brazilian-exchange-reports-46m-crypto-theft-59c13561</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/brazilian-exchange-reports-46m-crypto-theft-59c13561</guid>
-      <description><![CDATA[Mercado Bitcoin confirmed a cyberattack that enabled attackers to transfer more than $46 million in cryptocurrency from user wallets. The breach exploited a vulnerability in the exchange’s wallet management system, allowing unauthorized access to private keys and transaction signing. Mercado Bitcoin has issued a patch, updated key‑management protocols, and advised users to change passwords and enable two‑factor authentication.]]></description>
-      <pubDate>Mon, 02 Nov 2026 21:42:00 GMT</pubDate>
-      <source url="https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Chinese Hackers Deploy ARTEX AI Against 200 Organizations</title>
-      <link>https://secubuzz.com/news/chinese-hackers-deploy-artex-ai-against-200-organi-fb186eba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chinese-hackers-deploy-artex-ai-against-200-organi-fb186eba</guid>
-      <description><![CDATA[Chinese hackers used the open‑source ARTEX AI framework to launch automated attacks on more than 200 organizations across 14 countries. ARTEX orchestrates multi‑agent reconnaissance and credential harvesting, enabling rapid, low‑interaction exploitation without a specific CVE. Security teams should monitor for ARTEX activity, block known command‑and‑control endpoints, and enforce strict credential hygiene.]]></description>
-      <pubDate>Mon, 02 Nov 2026 21:40:14 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/">BleepingComputer</source>
-      <category>Nation State</category>
     </item>
   </channel>
 </rss>
