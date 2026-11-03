@@ -125,9 +125,15 @@
       - `normalizeTimestamp()` eliminates recency fabrication (`new Date().toISOString()`). Missing or invalid dates remain `null` with `isPublishedTimeUnknown: true`. Future dates exceeding 10m tolerance are rejected with `isFutureSkew: true`. `ingestedAt` tracks system ingestion time separately.
       - Push notification filter requires `ageMs >= 0`, rejecting future-dated articles.
     - **Retry Preservation**: Rejected candidates are NEVER added to `seenUrls`, preserving them for retry on subsequent hourly AI runs.
+    - **Prompt Leakage & Continuation Bracket Sanitization (Nov 2, 2026)**:
+      - Global bracket cleaning: `/[\\[\\(](?:\\.\\.\\.|…|\\s)+[\\]\\)]/g` strips RSS continuation stubs (`[...]`, `[…]\, `(...)`) anywhere in candidate text (not just at string end).
+      - Natural prose transformation: Rewrites internal corroboration metadata `(Corroborated Threat Intelligence: Associated CVE is <CVE>)` into fluent, grammatical English sentences (`The vulnerability is tracked as <CVE>.`, plural: `The vulnerabilities are tracked as <CVE1>, <CVE2>.`) with strict punctuation and spacing preservation.
+      - Description CVE extraction: `buildFallbackArticle` scans headline, summary, and candidate description, permanently indexing corroborated CVEs in `article.cves` for My Stack watchlist matching.
+      - Edge feed sanitization: `worker/src/index.ts:deduplicateFeed` sanitizes incoming and cached R2 feed briefs on the fly.
+      - D1 database alignment: Cleaned all 4 historical rows in D1 `articles` table with prompt leakage (0 rows remaining).
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a19f15-a1ef-74e1-b1bd-c9f65a3e9271` / Group `af00a700-1db5-4edb-8a95-8c84de403d2f` / Worker `fbbf7aed-6454-4e93-8227-a5feae9378cb`):**
+- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a19f15-a1ef-74e1-b1bd-c9f65a3e9271` / Group `af00a700-1db5-4edb-8a95-8c84de403d2f` / Worker `24683136-c90c-4a94-8b42-67fd5b47232d`):**
   - **Server-Side My Stack & CVE Watchlist Push Targeting (Nov 2, 2026)**:
     - **Zero-Leakage On-Call Pager Mode**: Eliminates background push leakage where Android OS bypassed foreground handlers. The ingestion dispatcher evaluates stories server-side against the device's selected enterprise vendors and watched CVEs before delivering FCM messages.
     - **Real-Time Client Stack Sync**: Mobile app automatically synchronizes stack modifications (adding, deselecting, or clearing vendors/CVEs) to Cloudflare D1 with zero account friction.

@@ -19,7 +19,9 @@
   5. **Real-Time Threat Telemetry**: Dedicated tracking of active zero-days and emergency directives from the **CISA Known Exploited Vulnerabilities (KEV)** catalog and GitHub Security Advisory Database.
   6. **EPSS Exploit Prediction Integration**: Enriches static CVSS vulnerability scores with daily FIRST.org Exploit Prediction Scoring System (EPSS) probabilities and percentile rankings.
   7. **Anti-AI / Executive Aesthetic**: Clean, dark-mode, sober UI without garish neon gradients or emoji clutter (`🚨⚠️`).
-  8. **100% Free Operation ($0.00 Overhead)**: Engineered entirely on top-tier free cloud tiers with $0.00 monthly infrastructure overhead.
+  8. **Zero-Leakage Server-Side Push Pager**: Evaluates alerts server-side against configured My Stack enterprise vendors and watched CVEs before FCM dispatch, with instant client sync and zero account friction.
+  9. **Hardened Extractive Fallback Engine**: Pure-code Tier 2 deterministic NLP airbag with automatic prompt tag sanitization, continuation bracket stripping, and 100% factual fidelity when cloud AI APIs experience outages.
+  10. **100% Free Operation ($0.00 Overhead)**: Engineered entirely on top-tier free cloud tiers with $0.00 monthly infrastructure overhead.
 
 ---
 
@@ -59,8 +61,9 @@ graph TD
 - **Framework**: Expo SDK 57 (`57.0.26`) with React Native (`0.86.3`) and React (`19.2.3`).
 - **Target OS**: **Android** (Android 11–15 support, compiled with version code 10 / release 1.0.4).
 - **Active Production OTA Update**:
-  - Group ID: `b730e004-e8a2-4d70-9353-892607b5bec9`
-  - Android Update ID: `01a199f0-4af4-785b-abda-7291bc213f13`
+  - Group ID: `af00a700-1db5-4edb-8a95-8c84de403d2f`
+  - Android Update ID: `01a19f15-a1ef-74e1-b1bd-c9f65a3e9271`
+  - Cloudflare Worker Version: `24683136-c90c-4a94-8b42-67fd5b47232d`
   - Runtime version: `1.0.4`
 - **Routing**: Expo Router v57 (file-based navigation with typed routes).
 - **Language**: TypeScript 6.0 (`strict: true`, zero type errors).
