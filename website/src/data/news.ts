@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-bind-security-update-1e96ff18",
+    "title": "Red Hat Releases Bind Security Update",
+    "summary": "Red Hat issued a security update for the BIND DNS server on Enterprise Linux 10.0 Extended Update Support. The patch addresses multiple vulnerabilities with CVSS scores detailed in the referenced CVE links, mitigating potential remote code execution and denial‑of‑service risks. Administrators should apply the RHSA‑2026:94115 update promptly to secure DNS operations.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94115",
+    "publishedAt": "2026-11-03T01:25:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-bind-security-update",
+      "article-1e96ff18",
+      "1e96ff18",
+      "red-hat-releases-bind-security-update-37d8c5"
+    ]
+  },
+  {
     "slug": "uk-warns-of-rising-cyberattack-scale-1e42a351",
     "title": "UK Warns of Rising Cyberattack Scale",
     "summary": "The UK National Cyber Security Centre chief warned of an unprecedented rise in cyberattacks expected in the coming months. He cited long‑tolerated vulnerabilities now being discovered and exploited at a scale previously unimaginable, stressing the need for stronger defenses. The NCSC will publish its annual report with recommendations, urging organizations to adopt proactive security measures and update legacy systems.",
@@ -369,21 +387,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd",
-    "title": "Google dismantles 1.3M-device XCPE Android botnet",
-    "summary": "Google and industry partners dismantled the XCPE malware botnet that infected more than 1.3 million Android TV streaming boxes. The botnet was seeded by the manufacturer’s firmware, which embedded malicious code to monetize cybercrime, enabling remote command and control.",
-    "category": "General",
-    "severity": "LOW",
+    "slug": "google-dismantles-1-3-million-device-android-tv-bo-548e3a98",
+    "title": "Google Dismantles 1.3‑Million‑Device Android TV Botnet",
+    "summary": "Google and partners dismantled a 1.3‑million‑device Android TV botnet that exploited firmware vulnerabilities in the XCPE hardware. The malware seeded malicious code into the firmware, enabling remote command‑and‑control via residential proxies and facilitating data exfiltration across compromised boxes. Security teams should audit firmware, sever C2 links, and isolate affected devices to prevent further global compromise.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
     "publishedAt": "2026-11-02T18:16:34.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/google-disrupts-1-3-million-device-android-botnet-says"
+      }
+    ],
     "aliases": [
-      "google-dismantles-1-3m-device-xcpe-android-botnet",
-      "article-cdb83fcd",
-      "cdb83fcd",
-      "google-dismantles-1-3m-device-xcpe-android-botnet-668192"
+      "google-dismantles-1-3-million-device-android-tv-bo",
+      "article-548e3a98",
+      "548e3a98",
+      "google-dismantles-1-3-million-device-android-tv-bo-668192",
+      "google-dismantles-1-3-million-device-android-tv-botnet"
     ]
   },
   {
@@ -9497,25 +9521,6 @@ export const news: NewsBrief[] = [
       "article-a6302ff4",
       "a6302ff4",
       "isc-stormcast-podcast-released-for-oct-29-57dd7e"
-    ]
-  },
-  {
-    "slug": "hidden-browser-extensions-hijack-searches-for-mill-9bdcffad",
-    "title": "Hidden Browser Extensions Hijack Searches for Millions",
-    "summary": "Intango LTD has distributed 111 browser extensions that secretly hijack search queries for approximately 2.187 million users. These extensions redirect search traffic without user consent, enabling data theft and affiliate fraud. Security researchers have flagged this campaign as a significant threat to user privacy and browsing integrity.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/searchjacked",
-    "publishedAt": "2026-10-29T02:01:54.540Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hidden-browser-extensions-hijack-searches-for-mill",
-      "article-9bdcffad",
-      "9bdcffad",
-      "hidden-browser-extensions-hijack-searches-for-mill-751d74",
-      "hidden-browser-extensions-hijack-searches-for-millions"
     ]
   }
 ];

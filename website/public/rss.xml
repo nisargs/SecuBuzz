@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:45:14 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 01:45:36 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Bind Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-1e96ff18</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-bind-security-update-1e96ff18</guid>
+      <description><![CDATA[Red Hat issued a security update for the BIND DNS server on Enterprise Linux 10.0 Extended Update Support. The patch addresses multiple vulnerabilities with CVSS scores detailed in the referenced CVE links, mitigating potential remote code execution and denial‑of‑service risks. Administrators should apply the RHSA‑2026:94115 update promptly to secure DNS operations.]]></description>
+      <pubDate>Tue, 03 Nov 2026 01:25:02 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94115">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>UK Warns of Rising Cyberattack Scale</title>
       <link>https://secubuzz.com/news/uk-warns-of-rising-cyberattack-scale-1e42a351</link>
@@ -179,13 +188,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Google dismantles 1.3M-device XCPE Android botnet</title>
-      <link>https://secubuzz.com/news/google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-1-3m-device-xcpe-android-botnet-cdb83fcd</guid>
-      <description><![CDATA[Google and industry partners dismantled the XCPE malware botnet that infected more than 1.3 million Android TV streaming boxes. The botnet was seeded by the manufacturer’s firmware, which embedded malicious code to monetize cybercrime, enabling remote command and control.]]></description>
+      <title>Google Dismantles 1.3‑Million‑Device Android TV Botnet</title>
+      <link>https://secubuzz.com/news/google-dismantles-1-3-million-device-android-tv-bo-548e3a98</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-dismantles-1-3-million-device-android-tv-bo-548e3a98</guid>
+      <description><![CDATA[Google and partners dismantled a 1.3‑million‑device Android TV botnet that exploited firmware vulnerabilities in the XCPE hardware. The malware seeded malicious code into the firmware, enabling remote command‑and‑control via residential proxies and facilitating data exfiltration across compromised boxes. Security teams should audit firmware, sever C2 links, and isolate affected devices to prevent further global compromise.]]></description>
       <pubDate>Mon, 02 Nov 2026 18:16:34 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/">BleepingComputer</source>
-      <category>General</category>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat releases Quarkus 3.33.4.SP2 security update</title>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 02 Nov 2026 14:44:18 GMT</pubDate>
       <source url="https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/">SecurityWeek</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Apple Issues Global Spyware Warning</title>
-      <link>https://secubuzz.com/news/apple-issues-global-spyware-warning-d2c05b97</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-issues-global-spyware-warning-d2c05b97</guid>
-      <description><![CDATA[Apple notified users in 99 countries about the presence of mercenary spyware targeting their devices. The company emphasized the spyware’s extreme cost, sophistication, and worldwide reach, labeling it among the most advanced digital threats. Apple recommends users update to the latest iOS, install security patches, and monitor for unusual device activity.]]></description>
-      <pubDate>Mon, 02 Nov 2026 14:42:00 GMT</pubDate>
-      <source url="https://therecord.media/apple-warns-users-99-countries-mercenary-spyware">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
