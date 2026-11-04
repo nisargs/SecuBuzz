@@ -578,26 +578,6 @@ export function Advisories() {
           )}
         </div>
 
-        {stackFilterActive && (
-          <div className="mb-3 flex items-center justify-between rounded-md border border-accent/40 bg-accent/10 px-3 py-2 text-xs">
-            <div className="flex items-center gap-2 text-ink">
-              <span className="font-semibold text-accent">Active Filter:</span>
-              <span className="text-muted">
-                Showing advisories matching your My Stack & CVE Watchlist ({stackMatchCount} {stackMatchCount === 1 ? 'match' : 'matches'})
-              </span>
-            </div>
-            <button
-              type="button"
-              onClick={() => {
-                setStackFilterActive(false);
-                setPage(1);
-              }}
-              className="font-medium text-accent hover:text-ink hover:underline cursor-pointer">
-              Show All Advisories
-            </button>
-          </div>
-        )}
-
         {results.length > 0 ? (
           <>
             <AdvisoryTable items={paginatedAdvisories} isWatchingCve={myStack.isWatchingCve} onToggleWatchCve={handleToggleWatchCve} />
