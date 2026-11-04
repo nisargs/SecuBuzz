@@ -1,5 +1,24 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+    "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+    "headline": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+    "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that Debian, Ubuntu, and APT's developers published on November 4. The vulnerability is tracked as CVE-2026-109518.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-04T17:00:46.000Z",
+    "ingestedAt": "2026-11-04T17:43:07.883Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-109518"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:95194",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95194",
     "title": "RHSA-2026:95194: Important: webkit2gtk3 security update",
@@ -8182,22 +8201,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118330",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118333",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118333",
-    "title": "Chromium Missing Authorization CVE‑2026‑118333 in Video",
-    "headline": "Chromium Missing Authorization CVE‑2026‑118333 in Video",
-    "summary": "CVE‑2026‑118333 exposes a missing authorization check in Chromium’s video handling code, permitting attackers to access protected media streams. The flaw can be triggered by a crafted HTML page and may lead to unauthorized data disclosure without user interaction. Google Chrome and Microsoft Edge have issued patches; users should update browsers and disable untrusted video sources.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "ingestedAt": "2026-11-01T11:43:18.095Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118333",
     "additionalSources": []
   }
 ]

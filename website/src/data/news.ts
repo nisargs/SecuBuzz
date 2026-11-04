@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swa-2637acfc",
+    "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+    "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that Debian, Ubuntu, and APT's developers published on November 4. The vulnerability is tracked as CVE-2026-109518.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+    "publishedAt": "2026-11-04T17:00:46.000Z",
+    "cves": [
+      "CVE-2026-109518"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swa",
+      "article-2637acfc",
+      "2637acfc",
+      "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swa-784038",
+      "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified"
+    ]
+  },
+  {
     "slug": "rhsa-2026-95194-important-webkit2gtk3-security-upd-2e3087a7",
     "title": "RHSA-2026:95194: Important: webkit2gtk3 security update",
     "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
@@ -9422,25 +9443,6 @@ export const news: NewsBrief[] = [
       "79e20c5b",
       "chromium-use-after-free-cve-2026-118330-exploited-1fe91c",
       "chromium-use-after-free-cve-2026-118330-exploited-in-browser"
-    ]
-  },
-  {
-    "slug": "chromium-missing-authorization-cve-2026-118333-in-81b42519",
-    "title": "Chromium Missing Authorization CVE‑2026‑118333 in Video",
-    "summary": "CVE‑2026‑118333 exposes a missing authorization check in Chromium’s video handling code, permitting attackers to access protected media streams. The flaw can be triggered by a crafted HTML page and may lead to unauthorized data disclosure without user interaction. Google Chrome and Microsoft Edge have issued patches; users should update browsers and disable untrusted video sources.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118333",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-missing-authorization-cve-2026-118333-in",
-      "article-81b42519",
-      "81b42519",
-      "chromium-missing-authorization-cve-2026-118333-in-1fe91c",
-      "chromium-missing-authorization-cve-2026-118333-in-video"
     ]
   }
 ];

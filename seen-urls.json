@@ -4050,5 +4050,6 @@
   "https://therecord.media/russia-cyberattack-beget-cloud",
   "https://blog.cloudflare.com/personal-agents-visibility-control/",
   "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/",
-  "https://access.redhat.com/errata/RHSA-2026:95242"
+  "https://access.redhat.com/errata/RHSA-2026:95242",
+  "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html"
 ]

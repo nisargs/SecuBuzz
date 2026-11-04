@@ -2,6 +2,58 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-55098",
+    "slug": "cve-2026-55098",
+    "vendor": "Go",
+    "product": "arc · basekick-labs",
+    "name": "Arc: DuckDB I/O aliases bypass database RBAC after CVE-2026-47735",
+    "dateAdded": "2026-11-04",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "The fix for CVE-2026-47735 (released 2026.06.1) is incomplete. It added a DuckDB sandbox (SET GLOBAL allowed_directories=[<storage root>]; SET GLOBAL enable_external_access=false) and an Arc SQL-layer denylist of the literal functions read_parquet( and arc_partition_agg(.",
+    "requiredAction": "Upgrade arc · basekick-labs to version 0.0.0-20260610131716-5dc8f53b70a3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-93cm-2v4m-c56c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55098"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-93363",
+    "slug": "cve-2026-93363",
+    "vendor": "npm",
+    "product": "@payloadcms/storage-vercel-blob",
+    "name": "@payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter",
+    "dateAdded": "2026-11-04",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "In affected configurations, client upload access does not consistently align with the associated collection’s access configuration. You are affected if: - You use client uploads with @payloadcms/storage-vercel-blob. - Authenticated users can access the client-upload route. Applications that do not enable client uploads are not affected.",
+    "requiredAction": "Upgrade @payloadcms/storage-vercel-blob to version 3.90.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mc8m-rr6c-r5qr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93363"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-113787",
     "slug": "cve-2026-113787",
     "vendor": "npm",
@@ -1304,58 +1356,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118763"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119276",
-    "slug": "cve-2026-119276",
-    "vendor": "Java (Maven)",
-    "product": "org.mariadb.jdbc:mariadb-java-client",
-    "name": "MariaDB Connector/J: Rogue server can drive large heap allocations from server-declared lengths in OK packets",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-130",
-    "ransomware": false,
-    "description": "MariaDB Connector/J sized heap allocations from lengths declared by the server in OK packets before checking that those lengths fit in the packet. A rogue or MitM server can make the client allocate megabytes from a packet of a few bytes.",
-    "requiredAction": "Upgrade org.mariadb.jdbc:mariadb-java-client to version 3.3.7 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h599-m3w5-9m7x"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119276"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119279",
-    "slug": "cve-2026-119279",
-    "vendor": "Java (Maven)",
-    "product": "org.mariadb.jdbc:mariadb-java-client",
-    "name": "MariaDB Connector/J: Length-encoded integers larger than Integer.MAX_VALUE were truncated before being used as lengths",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-130",
-    "ransomware": false,
-    "description": "MariaDB Connector/J narrowed 8-byte length-encoded integers received from the server to int without validation. A rogue or MitM server can send a value above Integer.MAX_VALUE whose truncation becomes a negative or arbitrary length.",
-    "requiredAction": "Upgrade org.mariadb.jdbc:mariadb-java-client to version 3.3.7 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-797x-p4mc-jwpm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119279"
       }
     ],
     "source": "GITHUB"
