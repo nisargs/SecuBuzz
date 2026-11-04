@@ -2384,6 +2384,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "russia-aligned-gorbag-group-targets-frontline-ukra-76702641",
+    "title": "Russia-Aligned Gorbag Group Targets Frontline Ukrainian Entities",
+    "summary": "ESET researchers identified Gorbag, a Russia-aligned cyber espionage group targeting Ukrainian organizations located near the front line. The threat actors deploy simple infostealer malware to systematically harvest sensitive data and intelligence from compromised systems. Security teams monitoring affected regional networks should implement robust infostealer detection mechanisms and restrict sensitive data egress.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/gorbag-orcs-border-harvesting-intelligence-ukraine/",
+    "publishedAt": "2026-11-03T09:50:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russia-aligned-gorbag-group-targets-frontline-ukra",
+      "article-76702641",
+      "76702641",
+      "russia-aligned-gorbag-group-targets-frontline-ukra-62b7ab",
+      "russia-aligned-gorbag-group-targets-frontline-ukrainian-enti"
+    ]
+  },
+  {
     "slug": "uk-anticipates-ai-cyberattacks-on-critical-infrast-15a1cf1e",
     "title": "UK Anticipates AI Cyberattacks on Critical Infrastructure by 2028",
     "summary": "UK cyber chief warned that by 2028, state actors like China and Russia will target critical infrastructure with AI attacks. The warning underscores the rise of machine‑learning‑driven intrusion, phishing, and sabotage against essential services. Teams should adopt robust AI‑aware defenses, conduct threat modeling, and coordinate with government agencies for preparedness.",
@@ -2871,6 +2890,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "quest-foglight-xml-external-entity-disclosure-vuln-ab171ef5",
+    "title": "Quest Foglight XML External Entity Disclosure Vulnerability",
+    "summary": "A remote information‑disclosure flaw in Quest Foglight for Databases’ AbstractParser lets attackers read sensitive data via XML External Entity processing. CVE-2026-92185 carries a CVSS 7.2 score, requires no authentication, and can expose configuration files and internal credentials. Quest has issued a patch disabling external entity processing; administrators should apply it immediately to stop data leakage.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-862/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92185"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-xml-external-entity-disclosure-vuln",
+      "article-ab171ef5",
+      "ab171ef5",
+      "quest-foglight-xml-external-entity-disclosure-vuln-6f3caa",
+      "quest-foglight-xml-external-entity-disclosure-vulnerability"
+    ]
+  },
+  {
+    "slug": "quest-foglight-fileservlet-path-disclosure-vulnera-ba64caed",
+    "title": "Quest Foglight FileServlet Path Disclosure Vulnerability",
+    "summary": "An authenticated information‑disclosure flaw in Quest Foglight for Databases’ FileServlet component allows attackers to read arbitrary file paths. CVE-2026-92193 has a CVSS 6.5 rating, requires valid credentials, and can reveal internal configuration and log files. Quest released a patch that restricts file path access; administrators should apply the update to prevent data exposure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-853/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92193"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-fileservlet-path-disclosure-vulnera",
+      "article-ba64caed",
+      "ba64caed",
+      "quest-foglight-fileservlet-path-disclosure-vulnera-6f3ca6",
+      "quest-foglight-fileservlet-path-disclosure-vulnerability"
+    ]
+  },
+  {
     "slug": "quest-foglight-rce-via-directory-traversal-27a78179",
     "title": "Quest Foglight RCE via Directory Traversal",
     "summary": "A remote code execution flaw in Quest Foglight for Databases allows authenticated attackers to traverse directories and execute arbitrary code. The vulnerability, identified as CVE-2026-92187, scores CVSS 8.8 and requires valid credentials; exploitation can compromise database servers and expose sensitive data. Quest has released a patch; administrators should apply the update immediately and restrict network access to Foglight management interfaces.",
@@ -2926,25 +2987,6 @@ export const news: NewsBrief[] = [
       "article-85a7e7de",
       "85a7e7de",
       "windows-aero-theme-denial-of-service-vulnerability-6f3caa"
-    ]
-  },
-  {
-    "slug": "quest-foglight-xml-external-entity-disclosure-vuln-8b25f71f",
-    "title": "Quest Foglight XML External Entity Disclosure Vulnerability",
-    "summary": "A remote XML External Entity flaw in Quest Foglight for Databases lets attackers trigger arbitrary server‑side requests without authentication. The flaw, CVE‑2026‑92198, scores 8.2 CVSS and can disclose internal data by fetching internal or external URLs. Quest released a patch; administrators should update to the latest version to eliminate the XXE risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-864/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-xml-external-entity-disclosure-vuln",
-      "article-8b25f71f",
-      "8b25f71f",
-      "quest-foglight-xml-external-entity-disclosure-vuln-6f3caa",
-      "quest-foglight-xml-external-entity-disclosure-vulnerability"
     ]
   },
   {
@@ -9442,66 +9484,6 @@ export const news: NewsBrief[] = [
       "article-b554d363",
       "b554d363",
       "uefi-flaw-affects-majority-of-servers-5f262a"
-    ]
-  },
-  {
-    "slug": "malicious-claude-extension-distributed-via-cursor-72c5f29c",
-    "title": "Malicious Claude Extension Distributed via Cursor Marketplace Compromises Developers",
-    "summary": "A malicious version of Anthropic’s Claude Code extension was distributed through Cursor’s marketplace, targeting up to 5,000 developers. The Trojanized extension allowed attackers to inject malicious code and install persistent SSH backdoors, compromising development workspaces and source repositories. Users must uninstall the extension immediately, disable it, and apply vendor patches to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
-    "publishedAt": "2026-10-30T14:36:54.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor"
-      }
-    ],
-    "aliases": [
-      "malicious-claude-extension-distributed-via-cursor",
-      "article-72c5f29c",
-      "72c5f29c",
-      "malicious-claude-extension-distributed-via-cursor-cf1d91",
-      "malicious-claude-extension-distributed-via-cursor-marketplac"
-    ]
-  },
-  {
-    "slug": "syrian-hacker-sentenced-for-western-attacks-d5645311",
-    "title": "Syrian Hacker Sentenced for Western Attacks",
-    "summary": "A Syrian hacker, known as “Th3Pr0,” was sentenced to 42 months in federal prison for orchestrating attacks on Western targets. The conspiracy was coordinated by aides of former President Bashar al‑Assad, linking the individual to state‑backed operations. The conviction underscores the legal consequences for actors involved in state‑sponsored cybercrime.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/syrian-electronic-army-hacker-sentenced-three-years",
-    "publishedAt": "2026-10-30T14:24:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "syrian-hacker-sentenced-for-western-attacks",
-      "article-d5645311",
-      "d5645311",
-      "syrian-hacker-sentenced-for-western-attacks-5ca85b"
-    ]
-  },
-  {
-    "slug": "cloudflare-one-enables-private-origin-services-e78fa7e4",
-    "title": "Cloudflare One Enables Private Origin Services",
-    "summary": "Cloudflare One now offers public traffic routing to private origins, integrating WAF, bot management, caching, and Workers for all customers. The service expands Cloudflare’s edge capabilities, allowing secure, scalable access to internal applications. Users can enable the feature through the Cloudflare dashboard without additional configuration.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/private-origins-public-to-private/",
-    "publishedAt": "2026-10-30T14:23:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-one-enables-private-origin-services",
-      "article-e78fa7e4",
-      "e78fa7e4",
-      "cloudflare-one-enables-private-origin-services-1e255d"
     ]
   }
 ];
