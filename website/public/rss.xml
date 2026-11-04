@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 02:43:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 03:43:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>French Blood Freezers Hijacked, Temperature Raised to 110°C</title>
+      <link>https://secubuzz.com/news/french-blood-freezers-hijacked-temperature-raised-57d71c23</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/french-blood-freezers-hijacked-temperature-raised-57d71c23</guid>
+      <description><![CDATA[Hackers altered temperature settings on French Blood Establishment freezers, raising from −30°C to 110°C, targeting the cooling service provider Coolworld. The attack exploited remote access to the refrigeration control system, potentially compromising stored plasma and endangering patient transfusions. Security teams should verify firmware integrity, isolate affected units, and coordinate with Coolworld to patch control interfaces.]]></description>
+      <pubDate>Wed, 04 Nov 2026 02:35:39 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/french-blood-plasma-freezers-hacked/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>69GB Philippine Government Data Exfiltrated</title>
       <link>https://secubuzz.com/news/69gb-philippine-government-data-exfiltrated-35c7c0ec</link>
@@ -447,15 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 16:42:00 GMT</pubDate>
       <source url="https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>North Korean Hackers Abuse Internal AI Tool and Fake Job Interviews in $6.34 Billion Binance Heist</title>
-      <link>https://secubuzz.com/news/north-korean-hackers-abuse-internal-ai-tool-and-fa-884953e5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-abuse-internal-ai-tool-and-fa-884953e5</guid>
-      <description><![CDATA[North Korean hackers used a fake job interview, a poisoned coding task, and a hijacked internal AI tool to reach Binance’s wallet systems. The FBI says the North Korean group it calls “TraderTraitor” stole more than $6 billion in digital assets on 29 October 2026.]]></description>
-      <pubDate>Tue, 03 Nov 2026 16:39:33 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-job-interviews-binance-heist/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

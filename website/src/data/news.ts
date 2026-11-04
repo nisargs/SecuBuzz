@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "french-blood-freezers-hijacked-temperature-raised-57d71c23",
+    "title": "French Blood Freezers Hijacked, Temperature Raised to 110°C",
+    "summary": "Hackers altered temperature settings on French Blood Establishment freezers, raising from −30°C to 110°C, targeting the cooling service provider Coolworld. The attack exploited remote access to the refrigeration control system, potentially compromising stored plasma and endangering patient transfusions. Security teams should verify firmware integrity, isolate affected units, and coordinate with Coolworld to patch control interfaces.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/french-blood-plasma-freezers-hacked/",
+    "publishedAt": "2026-11-04T02:35:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "french-blood-freezers-hijacked-temperature-raised",
+      "article-57d71c23",
+      "57d71c23",
+      "french-blood-freezers-hijacked-temperature-raised-17257b",
+      "french-blood-freezers-hijacked-temperature-raised-to-110-c"
+    ]
+  },
+  {
     "slug": "69gb-philippine-government-data-exfiltrated-35c7c0ec",
     "title": "69GB Philippine Government Data Exfiltrated",
     "summary": "An unknown operator exfiltrated 69GB of SQL Server backups from the Philippine Overseas Employment Administration in under 30 minutes, confirming a data breach. The breach likely exploited misconfigured database permissions, enabling unauthorized access to sensitive migrant worker records. The agency has not released a patch; security teams should enforce least‑privilege access, audit logs, and monitor for anomalous data transfers.",
@@ -9466,24 +9485,6 @@ export const news: NewsBrief[] = [
       "31757c96",
       "apt-group-uses-netamloader-to-target-asian-governm-6eb5ab",
       "apt-group-uses-netamloader-to-target-asian-government-window"
-    ]
-  },
-  {
-    "slug": "chrome-dev-channel-updated-to-159-0-8130-0-7c7757a1",
-    "title": "Chrome Dev Channel Updated to 159.0.8130.0",
-    "summary": "Google released a new Chrome Dev channel build, version 159.0.8130.0, for Windows, macOS, and Linux platforms. The update includes bug fixes and performance improvements, with a partial list of changes available in the Git log. Users are encouraged to switch to the Dev channel or report new issues via the community help forum to aid further testing.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01100896752.html",
-    "publishedAt": "2026-10-30T14:58:33.169Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-dev-channel-updated-to-159-0-8130-0",
-      "article-7c7757a1",
-      "7c7757a1",
-      "chrome-dev-channel-updated-to-159-0-8130-0-55ca2c"
     ]
   }
 ];

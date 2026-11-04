@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/french-blood-plasma-freezers-hacked/",
+    "sourceUrl": "https://cybersecuritynews.com/french-blood-plasma-freezers-hacked/",
+    "title": "French Blood Freezers Hijacked, Temperature Raised to 110°C",
+    "headline": "French Blood Freezers Hijacked, Temperature Raised to 110°C",
+    "summary": "Hackers altered temperature settings on French Blood Establishment freezers, raising from −30°C to 110°C, targeting the cooling service provider Coolworld. The attack exploited remote access to the refrigeration control system, potentially compromising stored plasma and endangering patient transfusions. Security teams should verify firmware integrity, isolate affected units, and coordinate with Coolworld to patch control interfaces.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T02:35:39.000Z",
+    "ingestedAt": "2026-11-04T03:43:04.768Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/french-blood-plasma-freezers-hacked/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
     "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
     "title": "69GB Philippine Government Data Exfiltrated",
@@ -8023,22 +8039,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-30T15:02:03.000Z",
     "url": "https://cybersecuritynews.com/netamloader-malware/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01100896752.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01100896752.html",
-    "title": "Chrome Dev Channel Updated to 159.0.8130.0",
-    "headline": "Chrome Dev Channel Updated to 159.0.8130.0",
-    "summary": "Google released a new Chrome Dev channel build, version 159.0.8130.0, for Windows, macOS, and Linux platforms. The update includes bug fixes and performance improvements, with a partial list of changes available in the Git log. Users are encouraged to switch to the Dev channel or report new issues via the community help forum to aid further testing.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-10-30T14:58:33.169Z",
-    "ingestedAt": "2026-11-01T03:43:24.213Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01100896752.html",
     "additionalSources": []
   }
 ]
