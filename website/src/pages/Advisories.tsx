@@ -406,9 +406,9 @@ export function Advisories() {
           </div>
 
           {/* Row 2: Severity & Impact (Left) + Advisory Source (Right) */}
-          <div className="flex flex-wrap items-center gap-2 pt-1 border-t border-line/40">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
             {/* Severity & Impact Chips */}
-            <div className="flex flex-wrap items-center gap-1">
+            <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
               <button
                 type="button"
                 onClick={() => {
@@ -494,10 +494,8 @@ export function Advisories() {
               </button>
             </div>
 
-            <div className="hidden sm:block h-4 w-px bg-line/80 mx-0.5" />
-
             {/* Advisory Source Segment + My Stack */}
-            <div className="flex flex-wrap items-center gap-1">
+            <div className="flex items-center gap-1 overflow-x-auto pb-0.5 shrink-0">
               <button
                 type="button"
                 onClick={() => {
