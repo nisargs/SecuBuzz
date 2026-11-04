@@ -46,9 +46,30 @@ export function News() {
       .catch((err) => console.error('Archive search failed:', err))
       .finally(() => setArchiveLoading(false));
   }, [query]);
-  const [stackFilterActive, setStackFilterActive] = useState(false);
+  const [stackFilterActive, setStackFilterActive] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('secubuzz_news_stack_filter_active_v1');
+      return saved === 'true';
+    } catch {
+      return false;
+    }
+  });
   const { news } = useLiveNews();
   const myStack = useMyStack();
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('secubuzz_news_stack_filter_active_v1', String(stackFilterActive));
+    } catch {
+      // Ignore in private browsing
+    }
+  }, [stackFilterActive]);
+
+  useEffect(() => {
+    if (!myStack.hasConfiguredStack && stackFilterActive) {
+      setStackFilterActive(false);
+    }
+  }, [myStack.hasConfiguredStack, stackFilterActive]);
 
   const handleToggleVendor = useCallback((vendor: string) => {
     const isSelected = myStack.selectedVendors.some(

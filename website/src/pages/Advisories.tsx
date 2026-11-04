@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import React, { useMemo, useState, useCallback } from 'react';
+import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { AdvisoryTable } from '../components/AdvisoryTable';
@@ -26,10 +26,31 @@ export function Advisories() {
   const [vendorFilter, setVendorFilter] = useState('ALL');
   const [sort, setSort] = useState<SortKey>('added');
   const [page, setPage] = useState(1);
-  const [stackFilterActive, setStackFilterActive] = useState(false);
+  const [stackFilterActive, setStackFilterActive] = useState<boolean>(() => {
+    try {
+      const saved = localStorage.getItem('secubuzz_advisories_stack_filter_active_v1');
+      return saved === 'true';
+    } catch {
+      return false;
+    }
+  });
   const { advisories: catalogAdvisories } = useLiveAdvisories();
   const { news } = useLiveNews();
   const myStack = useMyStack();
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('secubuzz_advisories_stack_filter_active_v1', String(stackFilterActive));
+    } catch {
+      // Ignore in private browsing
+    }
+  }, [stackFilterActive]);
+
+  useEffect(() => {
+    if (!myStack.hasConfiguredStack && stackFilterActive) {
+      setStackFilterActive(false);
+    }
+  }, [myStack.hasConfiguredStack, stackFilterActive]);
 
   const handleToggleWatchCve = useCallback((cve: string) => {
     const isPinned = myStack.isWatchingCve(cve);
