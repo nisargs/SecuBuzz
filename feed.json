@@ -1,5 +1,24 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/",
+    "title": "CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard",
+    "headline": "CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard",
+    "summary": "Bulletin ID: 2026-169-AWS Publication Date: 11/04/2026 11:30 AM PST Description: We identified CVE-2026-122192, an issue in Firecracker v0.23.0 through v1.16.1 that, under certain host memory conditions, can let a root user in a guest read or modify memory of the Firecracker process.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-04T19:40:33.000Z",
+    "ingestedAt": "2026-11-04T19:59:52.005Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-122192"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop.html",
     "sourceUrl": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop.html",
     "title": "Chrome 158.0.8127.18/.19 Stable Desktop Update",
@@ -34,18 +53,23 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
-    "title": "Cyberattack Disrupts Blood Storage Refrigeration in France",
-    "headline": "Cyberattack Disrupts Blood Storage Refrigeration in France",
-    "summary": "A cyberattack targeted a refrigeration equipment provider serving France's national blood service, raising temperature and defrost settings at three facilities. The incident threatens stored blood products through equipment disruption rather than direct data exfiltration. Defensive monitoring of critical infrastructure SCADA systems remains essential to prevent similar operational disruptions.",
+    "title": "French Blood Establishment Cold Room Cyberattack",
+    "headline": "French Blood Establishment Cold Room Cyberattack",
+    "summary": "A cyberattack targeted a refrigeration equipment provider serving the French Blood Establishment, causing temperature anomalies in three national blood bank cold rooms. Monitoring systems detected deviations and allowed operators to reverse parameter changes before any blood product was compromised. The incident did not compromise patient data or blood inventory.",
     "category": "BREACH",
-    "severity": "HIGH",
+    "severity": "LOW",
     "source": "BleepingComputer",
     "publishedAt": "2026-11-04T18:02:56.000Z",
     "ingestedAt": "2026-11-04T19:43:44.844Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/cyberattack-hits-french-blood-banks/"
+      }
+    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/data-breaches/2026/11/msecure-tells-users-to-change-passwords-but-wont-say-why",
@@ -499,6 +523,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/04/isc2-cissp-exam-prep-webinar/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/isc2-cissp-exam-prep-webinar/",
+    "title": "ISC2 CISSP Exam Prep Live Q&A Session",
+    "headline": "ISC2 CISSP Exam Prep Live Q&A Session",
+    "summary": "ISC2 is hosting a live Q&A session on November 6, 2026 at 7:00pm CET to help candidates prepare for the CISSP exam. A panel of experts will cover exam domains, foundational cybersecurity knowledge, vendor-neutral certification value, and training resources. This is an educational event with no security implications.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-04T14:00:31.000Z",
+    "ingestedAt": "2026-11-04T20:01:19.796Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/04/isc2-cissp-exam-prep-webinar/",
+    "additionalSources": []
+  },
+  {
     "id": "https://therecord.media/russia-cyberattack-beget-cloud",
     "sourceUrl": "https://therecord.media/russia-cyberattack-beget-cloud",
     "title": "Beget Cloud Data Wiped in Russian Hosting Attack",
@@ -548,6 +588,38 @@
     "isFallback": true
   },
   {
+    "id": "https://cybersecuritynews.com/scammers-use-microsoft-azure/",
+    "sourceUrl": "https://cybersecuritynews.com/scammers-use-microsoft-azure/",
+    "title": "Fake Windows Alerts Hosted on Azure Target 80 Organizations",
+    "headline": "Fake Windows Alerts Hosted on Azure Target 80 Organizations",
+    "summary": "Scammers are hosting fake Windows security alert landing pages on Microsoft Azure to pressure users into calling fraudulent support numbers. Between March and October 2026, the same fake support kit reached users at 80 organizations, with new pages appearing daily as of November 2. This campaign relies entirely on social engineering rather than technical exploitation.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T13:52:13.000Z",
+    "ingestedAt": "2026-11-04T20:01:19.796Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/scammers-use-microsoft-azure/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/france-cyberattack-blood-refrigeration",
+    "sourceUrl": "https://therecord.media/france-cyberattack-blood-refrigeration",
+    "title": "Europe-Wide Cyberattacks Alter Blood Refrigeration Controls",
+    "headline": "Europe-Wide Cyberattacks Alter Blood Refrigeration Controls",
+    "summary": "A wave of cyberattacks targeting refrigeration equipment providers across Europe altered temperature controls at three French national blood service sites this week. Monitoring systems detected and reversed the parameter changes in time, preventing potential damage to stored blood products. No direct compromise of blood inventory or patient data occurred.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-11-04T13:45:00.000Z",
+    "ingestedAt": "2026-11-04T20:01:19.796Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/france-cyberattack-blood-refrigeration",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:95088",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95088",
     "title": "Red Hat Issues dnsmasq Patch for CVE-2026-43871 on RHEL 9.2 and 9.4",
@@ -589,6 +661,22 @@
     ],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://cybersecuritynews.com/credit-mutuel-arkea-confirms-cyberattack/",
+    "sourceUrl": "https://cybersecuritynews.com/credit-mutuel-arkea-confirms-cyberattack/",
+    "title": "Crédit Mutuel Arkéa Confirms Cyberattack Linked to $133M Theft",
+    "headline": "Crédit Mutuel Arkéa Confirms Cyberattack Linked to $133M Theft",
+    "summary": "A cyberattack on French bank Crédit Mutuel Arkéa enabled fraudulent transactions, the bank confirmed. The breach exploited weaknesses to manipulate payment systems, but the bank reports containment and no confirmed loss of customer assets; linked to reported $133 million cryptocurrency theft. Crédit Mutuel Arkéa notified regulators, is restoring operations, and stresses the need for stronger transaction monitoring and security controls.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T13:29:39.000Z",
+    "ingestedAt": "2026-11-04T20:01:08.141Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/credit-mutuel-arkea-confirms-cyberattack/",
+    "additionalSources": []
   },
   {
     "id": "https://isc.sans.edu/diary/rss/33488",
@@ -8126,86 +8214,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118351",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118354",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118354",
-    "title": "Edge Addresses CVE‑2026‑118354 Skia Input Validation",
-    "headline": "Edge Addresses CVE‑2026‑118354 Skia Input Validation",
-    "summary": "An improper input validation flaw in Chromium’s Skia library, CVE‑2026‑118354, can lead to memory corruption during image rendering. The vulnerability arises from unchecked bounds on image data, potentially enabling arbitrary code execution if exploited; no public exploit is reported. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "ingestedAt": "2026-11-01T16:18:35.107Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118354",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118355",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118355",
-    "title": "Chromium Improper Input Validation Vulnerability CVE-2026-118355",
-    "headline": "Chromium Improper Input Validation Vulnerability CVE-2026-118355",
-    "summary": "A CVE-2026-118355 flaw in Chromium’s command parsing lets attackers supply malformed input that bypasses validation. The flaw stems from input validation in command, enabling execution if exploited; no public PoC yet, CVSS 8.7 signals high risk. Microsoft recommends updating to Edge release that incorporates the Chromium patch; monitor Google Chrome releases for the fix.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "ingestedAt": "2026-11-01T16:18:43.465Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118355",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118352",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118352",
-    "title": "Chromium Memory Corruption CVE‑2026‑118352 Fixed",
-    "headline": "Chromium Memory Corruption CVE‑2026‑118352 Fixed",
-    "summary": "A memory corruption flaw (CVE‑2026‑118352) in Chromium’s cache handling can corrupt data when the browser processes malicious content. The out‑of‑bounds write could enable local code execution, but no public exploit is known. Microsoft Edge, built on Chromium, applies the same fix; users should update to the latest release or apply the Chrome patch.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "ingestedAt": "2026-11-01T15:43:38.532Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118352",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118353",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118353",
-    "title": "Chromium Use‑After‑Free CVE‑2026‑118353 Fixed",
-    "headline": "Chromium Use‑After‑Free CVE‑2026‑118353 Fixed",
-    "summary": "A use‑after‑free flaw (CVE‑2026‑118353) in Chromium’s Paint component can corrupt memory when rendering malicious images. The vulnerability could lead to local code execution, but no active exploitation has been reported. Microsoft Edge incorporates the same patch; users should update to the latest recent Edge release or apply the Chrome update.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "ingestedAt": "2026-11-01T15:43:38.532Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118353",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118346",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118346",
-    "title": "Microsoft Edge Fixes Chromium Compositing Vulnerability",
-    "headline": "Microsoft Edge Fixes Chromium Compositing Vulnerability",
-    "summary": "Microsoft released updates for Chromium-based Microsoft Edge to address a security vulnerability originating in upstream Google Chrome. The flaw, tracked as CVE-2026-118346, stems from a use-after-free weakness within the Compositing component. Security teams should apply upstream Chromium security patches and update Microsoft Edge to the latest release to mitigate risks.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "ingestedAt": "2026-11-01T14:20:24.367Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118346",
     "additionalSources": []
   }
 ]
