@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, X, Bookmark, Check, ChevronDown } from 'lucide-react';
-import { POPULAR_VENDORS, normalizeCve } from '../data/useMyStack';
+import { POPULAR_VENDORS, normalizeCve, isValidVulnerabilityId } from '../data/useMyStack';
 
 interface MyStackSidebarProps {
   selectedVendors: string[];
@@ -41,8 +41,8 @@ export function MyStackSidebar({
     e.preventDefault();
     const normalized = normalizeCve(cveInput);
     if (!normalized) return;
-    if (!/^CVE-\d{4}-\d{4,7}$/.test(normalized)) {
-      setCveError('Format: CVE-YYYY-NNNN');
+    if (!isValidVulnerabilityId(normalized)) {
+      setCveError('Format: CVE-YYYY-NNNN or GHSA-xxxx-xxxx-xxxx');
       return;
     }
     setCveError('');
@@ -227,7 +227,7 @@ export function MyStackSidebar({
                 setCveInput(e.target.value);
                 if (cveError) setCveError('');
               }}
-              placeholder="e.g. CVE-2026-111497"
+              placeholder="e.g. CVE-2026-111497 or GHSA-..."
               className="h-7 w-full rounded border border-line bg-surface px-2 text-xs font-mono text-ink placeholder:text-subtle focus:border-accent focus:outline-none"
             />
             <button

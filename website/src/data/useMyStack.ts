@@ -25,6 +25,11 @@ export const POPULAR_VENDORS = [
   'VMware',
 ] as const;
 
+export function isValidVulnerabilityId(raw: string): boolean {
+  const norm = normalizeCve(raw);
+  return /^CVE-\d{4}-\d{4,7}$/.test(norm) || /^GHSA-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(norm);
+}
+
 export function normalizeCve(raw: string): string {
   let normalized = (raw || '')
     .replace(/[\u2010\u2011\u2012\u2013\u2014\u2015\u2212]/g, '-')
@@ -102,7 +107,7 @@ export function useMyStack() {
 
   const toggleWatchCve = useCallback((rawCve: string) => {
     const normalized = normalizeCve(rawCve);
-    if (!/^CVE-\d{4}-\d{4,7}$/.test(normalized)) return;
+    if (!isValidVulnerabilityId(normalized)) return;
     setWatchedCves((prev) => {
       if (prev.includes(normalized)) {
         return prev.filter((c) => c !== normalized);
@@ -113,7 +118,7 @@ export function useMyStack() {
 
   const addWatchCve = useCallback((rawCve: string) => {
     const normalized = normalizeCve(rawCve);
-    if (!/^CVE-\d{4}-\d{4,7}$/.test(normalized)) return;
+    if (!isValidVulnerabilityId(normalized)) return;
     setWatchedCves((prev) => {
       if (prev.includes(normalized)) return prev;
       return [...prev, normalized];
@@ -161,13 +166,18 @@ export function useMyStack() {
         return false;
       }
 
-      // 1. CVE Watchlist match
-      if (watchedCves.length > 0 && brief.cves && brief.cves.length > 0) {
-        const hasWatchedCve = brief.cves.some((c) => {
-          const norm = normalizeCve(c);
-          return watchedCves.includes(norm);
-        });
-        if (hasWatchedCve) return true;
+      // 1. CVE / Advisory Watchlist match
+      if (watchedCves.length > 0) {
+        if (brief.cves && brief.cves.length > 0) {
+          const hasWatchedCve = brief.cves.some((c) => {
+            const norm = normalizeCve(c);
+            return watchedCves.includes(norm);
+          });
+          if (hasWatchedCve) return true;
+        }
+
+        const textToSearch = (brief.title + ' ' + brief.summary).toUpperCase();
+        if (watchedCves.some((w) => textToSearch.includes(w))) return true;
       }
 
       // 2. Vendor match
@@ -198,10 +208,15 @@ export function useMyStack() {
         return false;
       }
 
-      // 1. CVE Watchlist match
-      if (watchedCves.length > 0 && advisory.cve) {
-        const norm = normalizeCve(advisory.cve);
-        if (watchedCves.includes(norm)) return true;
+      // 1. CVE / Advisory Watchlist match
+      if (watchedCves.length > 0) {
+        if (advisory.cve) {
+          const norm = normalizeCve(advisory.cve);
+          if (watchedCves.includes(norm)) return true;
+        }
+
+        const textToSearch = ((advisory.name || '') + ' ' + (advisory.description || '')).toUpperCase();
+        if (watchedCves.some((w) => textToSearch.includes(w))) return true;
       }
 
       // 2. Vendor match
@@ -245,5 +260,6 @@ export function useMyStack() {
     matchesBrief,
     matchesAdvisory,
     hasConfiguredStack,
+    isValidVulnerabilityId,
   };
 }

@@ -19,7 +19,7 @@ export function AdvisoryTable({ items, isWatchingCve, onToggleWatchCve }: Adviso
         <table className="w-full min-w-[980px] text-left text-sm">
           <thead className="bg-surface text-xs text-subtle">
             <tr>
-              <th scope="col" className="w-[140px] whitespace-nowrap px-4 py-3 font-medium">CVE</th>
+              <th scope="col" className="w-[155px] whitespace-nowrap px-4 py-3 font-medium">Advisory · CVE</th>
               <th scope="col" className="w-[180px] max-w-[180px] px-4 py-3 font-medium">Vendor · Product</th>
               <th scope="col" className="min-w-[260px] px-4 py-3 font-medium">Description</th>
               <th scope="col" className="w-[110px] whitespace-nowrap px-4 py-3 font-medium">Severity</th>
@@ -31,29 +31,36 @@ export function AdvisoryTable({ items, isWatchingCve, onToggleWatchCve }: Adviso
           <tbody className="divide-y divide-line">
             {items.map((a) => (
               <tr key={a.cve} className="group relative transition-colors duration-150 ease-out hover:bg-surface">
-                <td className="w-[140px] whitespace-nowrap px-4 py-3.5 align-top">
-                  <div className="flex items-center gap-1.5">
-                    <Link
-                      to={`/advisories/${a.slug}`}
-                      className="font-mono font-medium text-ink transition-colors duration-150 ease-out after:absolute after:inset-0 group-hover:text-accent">
-                      {a.cve}
-                    </Link>
-                    {onToggleWatchCve && (
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          onToggleWatchCve(a.cve);
-                        }}
-                        title={isWatchingCve?.(a.cve) ? `Remove ${a.cve} from Watchlist` : `Watch ${a.cve}`}
-                        className={`relative z-10 p-0.5 rounded transition-colors ${
-                          isWatchingCve?.(a.cve)
-                            ? 'text-accent hover:text-critical'
-                            : 'text-subtle/40 hover:text-accent group-hover:text-subtle'
-                        }`}>
-                        <Bookmark className={`h-3 w-3 ${isWatchingCve?.(a.cve) ? 'fill-accent' : ''}`} />
-                      </button>
+                <td className="w-[155px] whitespace-nowrap px-4 py-3.5 align-top">
+                  <div className="flex flex-col">
+                    <div className="flex items-center gap-1.5">
+                      <Link
+                        to={`/advisories/${a.slug}`}
+                        className="font-mono font-medium text-ink transition-colors duration-150 ease-out after:absolute after:inset-0 group-hover:text-accent">
+                        {a.cve}
+                      </Link>
+                      {onToggleWatchCve && (
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            onToggleWatchCve(a.cve);
+                          }}
+                          title={isWatchingCve?.(a.cve) ? `Remove ${a.cve} from Watchlist` : `Watch ${a.cve}`}
+                          className={`relative z-10 p-0.5 rounded transition-colors ${
+                            isWatchingCve?.(a.cve)
+                              ? 'text-accent hover:text-critical'
+                              : 'text-subtle/40 hover:text-accent group-hover:text-subtle'
+                          }`}>
+                          <Bookmark className={`h-3 w-3 ${isWatchingCve?.(a.cve) ? 'fill-accent' : ''}`} />
+                        </button>
+                      )}
+                    </div>
+                    {a.cve.startsWith('GHSA-') && a.name?.match(/CVE-\d{4}-\d{4,7}/i) && (
+                      <span className="font-mono text-[11px] text-accent font-medium mt-0.5 tracking-tight">
+                        {a.name.match(/CVE-\d{4}-\d{4,7}/i)?.[0].toUpperCase()}
+                      </span>
                     )}
                   </div>
                 </td>
@@ -97,28 +104,35 @@ export function AdvisoryTable({ items, isWatchingCve, onToggleWatchCve }: Adviso
         {items.map((a) => (
           <li key={a.cve} className="relative py-4 group">
             <div className="flex items-center justify-between gap-3">
-              <div className="flex items-center gap-1.5">
-                <Link
-                  to={`/advisories/${a.slug}`}
-                  className="font-mono font-medium text-ink after:absolute after:inset-0 group-hover:text-accent">
-                  {a.cve}
-                </Link>
-                {onToggleWatchCve && (
-                  <button
-                    type="button"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      onToggleWatchCve(a.cve);
-                    }}
-                    title={isWatchingCve?.(a.cve) ? `Remove ${a.cve} from Watchlist` : `Watch ${a.cve}`}
-                    className={`relative z-10 p-1 rounded transition-colors ${
-                      isWatchingCve?.(a.cve)
-                        ? 'text-accent hover:text-critical'
-                        : 'text-subtle/50 hover:text-accent'
-                    }`}>
-                    <Bookmark className={`h-3 w-3 ${isWatchingCve?.(a.cve) ? 'fill-accent' : ''}`} />
-                  </button>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1.5">
+                  <Link
+                    to={`/advisories/${a.slug}`}
+                    className="font-mono font-medium text-ink after:absolute after:inset-0 group-hover:text-accent">
+                    {a.cve}
+                  </Link>
+                  {onToggleWatchCve && (
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        onToggleWatchCve(a.cve);
+                      }}
+                      title={isWatchingCve?.(a.cve) ? `Remove ${a.cve} from Watchlist` : `Watch ${a.cve}`}
+                      className={`relative z-10 p-1 rounded transition-colors ${
+                        isWatchingCve?.(a.cve)
+                          ? 'text-accent hover:text-critical'
+                          : 'text-subtle/50 hover:text-accent'
+                      }`}>
+                      <Bookmark className={`h-3 w-3 ${isWatchingCve?.(a.cve) ? 'fill-accent' : ''}`} />
+                    </button>
+                  )}
+                </div>
+                {a.cve.startsWith('GHSA-') && a.name?.match(/CVE-\d{4}-\d{4,7}/i) && (
+                  <span className="font-mono text-[11px] text-accent font-medium mt-0.5 tracking-tight">
+                    {a.name.match(/CVE-\d{4}-\d{4,7}/i)?.[0].toUpperCase()}
+                  </span>
                 )}
               </div>
               <SeverityBadge severity={a.severity} cvss={a.cvss} />
