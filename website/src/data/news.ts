@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-detects-trojanized-installers-delivering-f34da954",
+    "title": "Microsoft Detects Trojanized Installers Delivering Monetization Payloads",
+    "summary": "Microsoft has identified a supply‑chain threat where installers are trojanized to deliver monetization payloads. The malicious installers exploit legitimate distribution channels, embedding code that redirects users to advertising or payment services. Microsoft recommends verifying installer signatures, monitoring for anomalous outbound traffic, and applying the latest security patches to mitigate the threat.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/fake-download-campaign-uses-trojanized-installers-to-de",
+    "publishedAt": "2026-11-04T01:30:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-detects-trojanized-installers-delivering",
+      "article-f34da954",
+      "f34da954",
+      "microsoft-detects-trojanized-installers-delivering-6444e7",
+      "microsoft-detects-trojanized-installers-delivering-monetizat"
+    ]
+  },
+  {
+    "slug": "workos-artex-ai-internal-sales-app-breach-9d11b39f",
+    "title": "WorkOS ARTEX AI Internal Sales App Breach",
+    "summary": "An internal sales application at WorkOS: ARTEX AI suffered a breach exposing sensitive customer data. The incident involved unauthorized access to the application, potentially compromising sales records and personal information, though the extent of data loss remains unquantified. Security teams should review telemetry, deploy detection rules, and apply the latest patch to mitigate further exposure.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/workos-says-attacker-used-artex-ai-to-breach-internal-s",
+    "publishedAt": "2026-11-04T01:23:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "workos-artex-ai-internal-sales-app-breach",
+      "article-9d11b39f",
+      "9d11b39f",
+      "workos-artex-ai-internal-sales-app-breach-5e8986"
+    ]
+  },
+  {
+    "slug": "cpguard-update-channel-backdoor-steals-password-ha-8d7f792d",
+    "title": "cPGuard Update Channel Backdoor Steals Password Hashes",
+    "summary": "A backdoor in cPGuard’s update channel enabled attackers to steal password hashes and gain unauthorized system access. The compromise involved malicious code delivered during legitimate updates, allowing credential theft and potential lateral movement within affected networks. Administrators should audit update mechanisms, apply the latest security patch, and monitor for anomalous credential usage.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cpguard-update-channel-hijacked-to-backdoor-linux-serve",
+    "publishedAt": "2026-11-04T01:22:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cpguard-update-channel-backdoor-steals-password-ha",
+      "article-8d7f792d",
+      "8d7f792d",
+      "cpguard-update-channel-backdoor-steals-password-ha-321089",
+      "cpguard-update-channel-backdoor-steals-password-hashes"
+    ]
+  },
+  {
+    "slug": "google-releases-chrome-157-for-android-b625cf27",
+    "title": "Google Releases Chrome 157 for Android",
+    "summary": "Google released Chrome 157 (157.0.8103.38) for Android, adding stability and performance improvements while carrying the same security fixes as the desktop releases. The update does not introduce new vulnerabilities and does not change the browser’s threat surface. Android users can install it via Google Play within days, and developers should file bugs through the Chrome tracker for any new issues.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update.html",
+    "publishedAt": "2026-11-03T23:13:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-chrome-157-for-android",
+      "article-b625cf27",
+      "b625cf27",
+      "google-releases-chrome-157-for-android-3ab5d1"
+    ]
+  },
+  {
     "slug": "european-fridge-attacks-highlight-cold-chain-secur-f6aee072",
     "title": "European Fridge Attacks Highlight Cold‑Chain Security Risks",
     "summary": "Recent attacks on European refrigerators exposed vulnerabilities in their internet connectivity and remote access controls. The incidents demonstrate that temperature‑controlled infrastructure, such as industrial refrigeration, can be compromised through inadequate security practices, potentially disrupting critical supply chains. Operators should enforce network segmentation, secure remote access, and regular firmware updates to mitigate these risks.",
@@ -2794,6 +2868,83 @@ export const news: NewsBrief[] = [
       "article-abf28543",
       "abf28543",
       "sweet-virtual-patching-mitigates-http2shell-rce-40222c"
+    ]
+  },
+  {
+    "slug": "quest-foglight-rce-via-directory-traversal-27a78179",
+    "title": "Quest Foglight RCE via Directory Traversal",
+    "summary": "A remote code execution flaw in Quest Foglight for Databases allows authenticated attackers to traverse directories and execute arbitrary code. The vulnerability, identified as CVE-2026-92187, scores CVSS 8.8 and requires valid credentials; exploitation can compromise database servers and expose sensitive data. Quest has released a patch; administrators should apply the update immediately and restrict network access to Foglight management interfaces.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-852/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92187"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-rce-via-directory-traversal",
+      "article-27a78179",
+      "27a78179",
+      "quest-foglight-rce-via-directory-traversal-6f3ca6"
+    ]
+  },
+  {
+    "slug": "quest-foglight-rce-via-untrusted-deserialization-9c4e31d0",
+    "title": "Quest Foglight RCE via Untrusted Deserialization",
+    "summary": "An unauthenticated remote code execution vulnerability in Quest Foglight for Databases enables attackers to exploit deserialization of untrusted data. The flaw, CVE-2026-92190, carries a CVSS score of 9.8 and permits arbitrary code execution on database servers, potentially compromising all stored data. Quest has issued a patch; security teams must apply it immediately and disable remote RMI services if possible.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-851/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92190"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-rce-via-untrusted-deserialization",
+      "article-9c4e31d0",
+      "9c4e31d0",
+      "quest-foglight-rce-via-untrusted-deserialization-6f3ca6"
+    ]
+  },
+  {
+    "slug": "windows-aero-theme-denial-of-service-vulnerability-85a7e7de",
+    "title": "Windows Aero Theme Denial‑of‑Service Vulnerability",
+    "summary": "A local denial‑of‑service flaw in Microsoft Windows Aero Theme lets attackers crash the system when the theme processes an error condition. The flaw requires low‑privileged code execution and carries a CVSS score of 4.7, indicating moderate impact but no remote code execution. Microsoft has released a patch in the cumulative update; users should apply it promptly to avoid service interruptions.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-868/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-aero-theme-denial-of-service-vulnerability",
+      "article-85a7e7de",
+      "85a7e7de",
+      "windows-aero-theme-denial-of-service-vulnerability-6f3caa"
+    ]
+  },
+  {
+    "slug": "quest-foglight-xml-external-entity-disclosure-vuln-8b25f71f",
+    "title": "Quest Foglight XML External Entity Disclosure Vulnerability",
+    "summary": "A remote XML External Entity flaw in Quest Foglight for Databases lets attackers trigger arbitrary server‑side requests without authentication. The flaw, CVE‑2026‑92198, scores 8.2 CVSS and can disclose internal data by fetching internal or external URLs. Quest released a patch; administrators should update to the latest version to eliminate the XXE risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-864/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-xml-external-entity-disclosure-vuln",
+      "article-8b25f71f",
+      "8b25f71f",
+      "quest-foglight-xml-external-entity-disclosure-vuln-6f3caa",
+      "quest-foglight-xml-external-entity-disclosure-vulnerability"
     ]
   },
   {
@@ -9351,164 +9502,6 @@ export const news: NewsBrief[] = [
       "article-e78fa7e4",
       "e78fa7e4",
       "cloudflare-one-enables-private-origin-services-1e255d"
-    ]
-  },
-  {
-    "slug": "legacy-software-still-threatens-millions-4a2e328d",
-    "title": "Legacy Software Still Threatens Millions",
-    "summary": "A security firm patched a decade‑old application to prevent its takeover by attackers exploiting abandoned domains. The patch addresses vulnerabilities that could allow remote code execution on millions of machines still running the obsolete software. Security teams should update or decommission the legacy application to mitigate this risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
-    "publishedAt": "2026-10-30T14:10:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "legacy-software-still-threatens-millions",
-      "article-4a2e328d",
-      "4a2e328d",
-      "legacy-software-still-threatens-millions-6ba4cc"
-    ]
-  },
-  {
-    "slug": "wordpress-core-rce-draws-63-000-attack-attempts-b09e5f0e",
-    "title": "WordPress Core RCE Draws 63,000 Attack Attempts",
-    "summary": "A high‑severity remote code execution flaw in WordPress Core versions 4.7 through 7.1.3 attracted nearly 63,000 exploitation attempts within 24 hours of patch release. The vulnerability, lacking a CVE ID, scores 8.1 on CVSS and allows unauthenticated attackers to execute arbitrary code. WordPress users must apply the latest security patch to eliminate the threat.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
-    "publishedAt": "2026-10-30T14:08:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wordpress-core-rce-draws-63-000-attack-attempts",
-      "article-b09e5f0e",
-      "b09e5f0e",
-      "wordpress-core-rce-draws-63-000-attack-attempts-3f24c9"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-patch-for-ansible-platform-vulner-267017f7",
-    "title": "Red Hat Releases Patch for Ansible Platform Vulnerability",
-    "summary": "Red Hat released a security update for Ansible Automation Platform 2.4 to address CVE‑2026‑98432. The flaw, rated Important by Product Security, could allow attackers to exploit configuration handling weaknesses, potentially enabling unauthorized code execution. Red Hat has published the patch; administrators should apply it immediately to mitigate the critical risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93065",
-    "publishedAt": "2026-10-30T14:02:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-patch-for-ansible-platform-vulner",
-      "article-267017f7",
-      "267017f7",
-      "red-hat-releases-patch-for-ansible-platform-vulner-37d93d",
-      "red-hat-releases-patch-for-ansible-platform-vulnerability"
-    ]
-  },
-  {
-    "slug": "ss7-and-diameter-protocol-flaws-enable-phone-track-5d7d284a",
-    "title": "SS7 and Diameter Protocol Flaws Enable Phone Tracking and Call Interception",
-    "summary": "SS7 and Diameter signaling protocol flaws exposed phone numbers, location data, and call logs to attackers worldwide. The vulnerabilities stem from insufficient authentication and trust models, allowing remote spoofing, call interception, SMS verification hijacking, and subscriber impersonation without device compromise. Telecom operators must deploy SIGTRAN TLS, enforce message integrity checks, and adopt secure signaling practices to mitigate the attacks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
-    "publishedAt": "2026-10-30T14:00:10.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/ss7-and-diameter-attacks-how-signaling-flaws-expose-you"
-      }
-    ],
-    "aliases": [
-      "ss7-and-diameter-protocol-flaws-enable-phone-track",
-      "article-5d7d284a",
-      "5d7d284a",
-      "ss7-and-diameter-protocol-flaws-enable-phone-track-1a6762",
-      "ss7-and-diameter-protocol-flaws-enable-phone-tracking-and-ca"
-    ]
-  },
-  {
-    "slug": "passkeys-offer-better-security-but-leave-gaps-dd1e1807",
-    "title": "Passkeys Offer Better Security But Leave Gaps",
-    "summary": "Attackers will shift from targeting authenticators to exploiting surrounding infrastructure as organizations adopt passkeys. Threat actors may abuse legitimate authentication flows, session tokens, or API integrations that passkeys enable. Organizations must layer additional controls such as device attestation, anomaly detection, and zero-trust boundaries around authenticator deployments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/passkeys-are-better-than-passwords-but-they-are-not-enough/",
-    "publishedAt": "2026-10-30T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "passkeys-offer-better-security-but-leave-gaps",
-      "article-dd1e1807",
-      "dd1e1807",
-      "passkeys-offer-better-security-but-leave-gaps-6fe8d3"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-visual-studio-spoofing-flaw-e6bbe5bd",
-    "title": "Microsoft Patches Visual Studio Spoofing Flaw",
-    "summary": "CVE-2026-118147 is a spoofing vulnerability in Microsoft Visual Studio caused by improper certificate validation, enabling unauthorized network-based spoofing attacks. The flaw allows an attacker to bypass certificate trust mechanisms, potentially leading to man-in-the-middle or impersonation scenarios during development or deployment workflows.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118147",
-    "publishedAt": "2026-10-30T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118147"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patches-visual-studio-spoofing-flaw",
-      "article-e6bbe5bd",
-      "e6bbe5bd",
-      "microsoft-patches-visual-studio-spoofing-flaw-1fe923"
-    ]
-  },
-  {
-    "slug": "microsoft-outlook-cve-2026-70125-allows-remote-cod-1331f6b1",
-    "title": "Microsoft Outlook CVE-2026-70125 Allows Remote Code Execution",
-    "summary": "CVE-2026-70125 exposes a remote code execution vulnerability in Microsoft Office Outlook, enabling attackers to execute arbitrary code via crafted email attachments. The flaw arises from improper handling of MIME parts during message parsing, allowing unauthenticated users to trigger privileged code execution.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125",
-    "publishedAt": "2026-10-30T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-70125"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-outlook-cve-2026-70125-allows-remote-cod",
-      "article-1331f6b1",
-      "1331f6b1",
-      "microsoft-outlook-cve-2026-70125-allows-remote-cod-74506e",
-      "microsoft-outlook-cve-2026-70125-allows-remote-code-executio"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-elevation-of-privilege-cve-fixed-0c47b86e",
-    "title": "Microsoft Edge Elevation of Privilege CVE Fixed",
-    "summary": "Microsoft Edge (Chromium-based) suffered an elevation of privilege flaw identified as CVE-2026-69446, exploitable via local user context. The vulnerability allowed a local attacker to gain higher privileges by manipulating internal privilege checks, with a CVSS score of 7.8, but no public exploit was reported.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69446",
-    "publishedAt": "2026-10-30T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-69446"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-elevation-of-privilege-cve-fixed",
-      "article-0c47b86e",
-      "0c47b86e",
-      "microsoft-edge-elevation-of-privilege-cve-fixed-745a62"
     ]
   }
 ];

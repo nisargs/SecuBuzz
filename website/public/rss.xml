@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 00:45:19 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 01:31:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Detects Trojanized Installers Delivering Monetization Payloads</title>
+      <link>https://secubuzz.com/news/microsoft-detects-trojanized-installers-delivering-f34da954</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-detects-trojanized-installers-delivering-f34da954</guid>
+      <description><![CDATA[Microsoft has identified a supply‑chain threat where installers are trojanized to deliver monetization payloads. The malicious installers exploit legitimate distribution channels, embedding code that redirects users to advertising or payment services. Microsoft recommends verifying installer signatures, monitoring for anomalous outbound traffic, and applying the latest security patches to mitigate the threat.]]></description>
+      <pubDate>Wed, 04 Nov 2026 01:30:51 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/fake-download-campaign-uses-trojanized-installers-to-de">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>WorkOS ARTEX AI Internal Sales App Breach</title>
+      <link>https://secubuzz.com/news/workos-artex-ai-internal-sales-app-breach-9d11b39f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/workos-artex-ai-internal-sales-app-breach-9d11b39f</guid>
+      <description><![CDATA[An internal sales application at WorkOS: ARTEX AI suffered a breach exposing sensitive customer data. The incident involved unauthorized access to the application, potentially compromising sales records and personal information, though the extent of data loss remains unquantified. Security teams should review telemetry, deploy detection rules, and apply the latest patch to mitigate further exposure.]]></description>
+      <pubDate>Wed, 04 Nov 2026 01:23:16 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/workos-says-attacker-used-artex-ai-to-breach-internal-s">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>cPGuard Update Channel Backdoor Steals Password Hashes</title>
+      <link>https://secubuzz.com/news/cpguard-update-channel-backdoor-steals-password-ha-8d7f792d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cpguard-update-channel-backdoor-steals-password-ha-8d7f792d</guid>
+      <description><![CDATA[A backdoor in cPGuard’s update channel enabled attackers to steal password hashes and gain unauthorized system access. The compromise involved malicious code delivered during legitimate updates, allowing credential theft and potential lateral movement within affected networks. Administrators should audit update mechanisms, apply the latest security patch, and monitor for anomalous credential usage.]]></description>
+      <pubDate>Wed, 04 Nov 2026 01:22:58 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cpguard-update-channel-hijacked-to-backdoor-linux-serve">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Google Releases Chrome 157 for Android</title>
+      <link>https://secubuzz.com/news/google-releases-chrome-157-for-android-b625cf27</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-chrome-157-for-android-b625cf27</guid>
+      <description><![CDATA[Google released Chrome 157 (157.0.8103.38) for Android, adding stability and performance improvements while carrying the same security fixes as the desktop releases. The update does not introduce new vulnerabilities and does not change the browser’s threat surface. Android users can install it via Google Play within days, and developers should file bugs through the Chrome tracker for any new issues.]]></description>
+      <pubDate>Tue, 03 Nov 2026 23:13:00 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
     <item>
       <title>European Fridge Attacks Highlight Cold‑Chain Security Risks</title>
       <link>https://secubuzz.com/news/european-fridge-attacks-highlight-cold-chain-secur-f6aee072</link>
@@ -419,42 +455,6 @@
       <description><![CDATA[Red Hat released a kernel security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing several high‑impact kernel flaws. The update is rated Critical by Product Security, with CVSS scores linked to CVE references, implying potential unauthenticated remote code execution. Administrators should apply the patch promptly to mitigate exploitation risks and preserve system integrity.]]></description>
       <pubDate>Tue, 03 Nov 2026 16:26:10 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94623">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>mSecure Urges Users to Secure Stored Login Data</title>
-      <link>https://secubuzz.com/news/msecure-urges-users-to-secure-stored-login-data-09ea03d0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/msecure-urges-users-to-secure-stored-login-data-09ea03d0</guid>
-      <description><![CDATA[mSeven Software detected suspicious activity affecting mSecure password manager customers. The company urged current and former users to immediately protect stored passwords, two-factor authentication methods, and passkeys. This warning extends beyond routine password reset notices. Organizations should enforce credential rotation and review account access logs for unauthorized sessions.]]></description>
-      <pubDate>Tue, 03 Nov 2026 16:21:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/msecure-security-incident/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Barracuda Vulnerabilities Chain to Root Access</title>
-      <link>https://secubuzz.com/news/barracuda-vulnerabilities-chain-to-root-access-60b95613</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-vulnerabilities-chain-to-root-access-60b95613</guid>
-      <description><![CDATA[Barracuda disclosed two vulnerabilities that, when chained, allow an attacker to bypass authorization and gain root on affected devices. The pre‑authentication bypass and command injection flaws, identified as CVE‑2026‑116606 with a CVSS score of 9.3, enable unauthenticated remote code execution. Apply the vendor‑issued patch immediately; no workarounds exist, and monitor for privilege escalation anomalies.]]></description>
-      <pubDate>Tue, 03 Nov 2026 15:59:19 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Hackers Use AI Agents to Launch 3AM Ransomware Attacks Against UK School Networks</title>
-      <link>https://secubuzz.com/news/hackers-use-ai-agents-to-launch-3am-ransomware-att-6c373d14</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-ai-agents-to-launch-3am-ransomware-att-6c373d14</guid>
-      <description><![CDATA[A ransomware affiliate has hit a group of UK schools with a mix of human control and AI-style automation. The attackers used built-in Windows tools, stolen backup passwords and fake admin accounts to spread across the school network, then encrypted about 37 machines.]]></description>
-      <pubDate>Tue, 03 Nov 2026 15:55:08 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-ai-agents-2/">Cyber Security News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Hackers Raise Supermarket Freezers to 50°C</title>
-      <link>https://secubuzz.com/news/hackers-raise-supermarket-freezers-to-50-c-114500b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-raise-supermarket-freezers-to-50-c-114500b3</guid>
-      <description><![CDATA[Hackers targeted supermarket refrigeration systems in at least ten European countries, manipulating temperature controls to raise freezers to 50°C. The attack forced retailers to remove chilled and frozen goods, exposing the vulnerability of connected HVAC equipment and threatening the food supply chain. Operators should isolate affected systems, apply vendor firmware updates, and enforce stricter access controls to prevent further sabotage.]]></description>
-      <pubDate>Tue, 03 Nov 2026 15:51:08 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/supermarket-refrigeration-systems-across-europe/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
   </channel>
