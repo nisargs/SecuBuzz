@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/04/anthropic-flashprove-provable-inference/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/anthropic-flashprove-provable-inference/",
+    "title": "Anthropic Releases FlashProve for Verifiable Model Inference",
+    "headline": "Anthropic Releases FlashProve for Verifiable Model Inference",
+    "summary": "Anthropic released FlashProve, a prototype that generates cryptographic proofs for specific language model responses. The system uses a prover and two verifiers to produce formal proofs, enabling verification of model outputs. The code, proofs, and protocol specification are available on GitHub under Apache 2.0, allowing developers to integrate verification into their workflows.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-04T04:36:14.000Z",
+    "ingestedAt": "2026-11-04T04:43:08.655Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/04/anthropic-flashprove-provable-inference/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/french-blood-plasma-freezers-hacked/",
     "sourceUrl": "https://cybersecuritynews.com/french-blood-plasma-freezers-hacked/",
     "title": "French Blood Freezers Hijacked, Temperature Raised to 110°C",
@@ -8026,19 +8042,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.welivesecurity.com/en/videos/month-security-tony-anscombe-october-2026/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/netamloader-malware/",
-    "sourceUrl": "https://cybersecuritynews.com/netamloader-malware/",
-    "title": "APT Group Uses NetamLoader to Target Asian Government Windows",
-    "headline": "APT Group Uses NetamLoader to Target Asian Government Windows",
-    "summary": "An unnamed APT group deployed NetamLoader, a malware framework, inside Windows 10 update packages used exclusively by Asian government agencies. The loader leverages trusted software binaries to execute payloads, bypassing standard update verification and enabling persistent footholds on target systems. Defenders should validate update signatures, isolate critical infrastructure, and apply the latest Windows security patches to prevent exploitation.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-30T15:02:03.000Z",
-    "url": "https://cybersecuritynews.com/netamloader-malware/",
     "additionalSources": []
   }
 ]

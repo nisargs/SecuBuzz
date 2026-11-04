@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "anthropic-releases-flashprove-for-verifiable-model-0c1d002e",
+    "title": "Anthropic Releases FlashProve for Verifiable Model Inference",
+    "summary": "Anthropic released FlashProve, a prototype that generates cryptographic proofs for specific language model responses. The system uses a prover and two verifiers to produce formal proofs, enabling verification of model outputs. The code, proofs, and protocol specification are available on GitHub under Apache 2.0, allowing developers to integrate verification into their workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/anthropic-flashprove-provable-inference/",
+    "publishedAt": "2026-11-04T04:36:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-releases-flashprove-for-verifiable-model",
+      "article-0c1d002e",
+      "0c1d002e",
+      "anthropic-releases-flashprove-for-verifiable-model-6bf6b1",
+      "anthropic-releases-flashprove-for-verifiable-model-inference"
+    ]
+  },
+  {
     "slug": "french-blood-freezers-hijacked-temperature-raised-57d71c23",
     "title": "French Blood Freezers Hijacked, Temperature Raised to 110°C",
     "summary": "Hackers altered temperature settings on French Blood Establishment freezers, raising from −30°C to 110°C, targeting the cooling service provider Coolworld. The attack exploited remote access to the refrigeration control system, potentially compromising stored plasma and endangering patient transfusions. Security teams should verify firmware integrity, isolate affected units, and coordinate with Coolworld to patch control interfaces.",
@@ -9466,25 +9485,6 @@ export const news: NewsBrief[] = [
       "ee5542ae",
       "php2shell-disclosure-highlights-need-for-cyber-rea-158449",
       "php2shell-disclosure-highlights-need-for-cyber-readiness"
-    ]
-  },
-  {
-    "slug": "apt-group-uses-netamloader-to-target-asian-governm-31757c96",
-    "title": "APT Group Uses NetamLoader to Target Asian Government Windows",
-    "summary": "An unnamed APT group deployed NetamLoader, a malware framework, inside Windows 10 update packages used exclusively by Asian government agencies. The loader leverages trusted software binaries to execute payloads, bypassing standard update verification and enabling persistent footholds on target systems. Defenders should validate update signatures, isolate critical infrastructure, and apply the latest Windows security patches to prevent exploitation.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/netamloader-malware/",
-    "publishedAt": "2026-10-30T15:02:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apt-group-uses-netamloader-to-target-asian-governm",
-      "article-31757c96",
-      "31757c96",
-      "apt-group-uses-netamloader-to-target-asian-governm-6eb5ab",
-      "apt-group-uses-netamloader-to-target-asian-government-window"
     ]
   }
 ];

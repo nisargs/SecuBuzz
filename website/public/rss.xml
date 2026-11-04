@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 03:43:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 04:43:37 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Anthropic Releases FlashProve for Verifiable Model Inference</title>
+      <link>https://secubuzz.com/news/anthropic-releases-flashprove-for-verifiable-model-0c1d002e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-flashprove-for-verifiable-model-0c1d002e</guid>
+      <description><![CDATA[Anthropic released FlashProve, a prototype that generates cryptographic proofs for specific language model responses. The system uses a prover and two verifiers to produce formal proofs, enabling verification of model outputs. The code, proofs, and protocol specification are available on GitHub under Apache 2.0, allowing developers to integrate verification into their workflows.]]></description>
+      <pubDate>Wed, 04 Nov 2026 04:36:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/04/anthropic-flashprove-provable-inference/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>French Blood Freezers Hijacked, Temperature Raised to 110°C</title>
       <link>https://secubuzz.com/news/french-blood-freezers-hijacked-temperature-raised-57d71c23</link>
@@ -447,15 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 16:43:34 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94533">Red Hat Security Advisories</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Binance Reports $6.3B Theft in Months‑Long Campaign</title>
-      <link>https://secubuzz.com/news/binance-reports-6-3b-theft-in-months-long-campaign-d871ab44</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binance-reports-6-3b-theft-in-months-long-campaign-d871ab44</guid>
-      <description><![CDATA[Binance disclosed a $6.3 billion cryptocurrency theft executed over several months by attackers linked to North Korea. The campaign leveraged social engineering, including fake recruitment interviews, to compromise accounts and siphon funds, resulting in a massive loss of digital assets. Binance has tightened account verification, implemented stricter monitoring, and urged users to enable multi‑factor authentication to prevent future breaches.]]></description>
-      <pubDate>Tue, 03 Nov 2026 16:42:00 GMT</pubDate>
-      <source url="https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea">The Record</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
