@@ -4094,5 +4094,12 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
   "https://ubuntu.com/security/notices/USN-8999-1",
   "https://cybersecuritynews.com/gorbag-hackers-exploit-winrar-vulnerability/",
-  "https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing"
+  "https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing",
+  "https://access.redhat.com/errata/RHSA-2026:95100",
+  "https://access.redhat.com/errata/RHSA-2026:95272",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119261",
+  "https://cybersecuritynews.com/critical-barracuda-security-flaws/",
+  "https://access.redhat.com/errata/RHSA-2026:95064",
+  "https://access.redhat.com/errata/RHSA-2026:95086"
 ]

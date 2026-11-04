@@ -164,6 +164,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-osbuild-composer-security-update-bc9f002f",
+    "title": "Red Hat releases osbuild-composer security update",
+    "summary": "Red Hat issued a security update for osbuild-composer on RHEL 9, addressing multiple vulnerabilities identified in the build system. The update carries an Important impact rating, with CVSS scores available via CVE links, but no active exploitation has been reported. Red Hat recommends applying the patch immediately and reviewing build configurations to mitigate potential privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95272",
+    "publishedAt": "2026-11-04T18:20:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-osbuild-composer-security-update",
+      "article-bc9f002f",
+      "bc9f002f",
+      "red-hat-releases-osbuild-composer-security-update-37d84d"
+    ]
+  },
+  {
     "slug": "soc-leaders-face-evolving-operational-challenges-i-21f7e140",
     "title": "SOC Leaders Face Evolving Operational Challenges in 2027",
     "summary": "Security Operations Center and managed security service provider teams face mounting operational pressure from evolving attack techniques, rising alert volumes, and budget constraints. Complex threat environments and persistent staffing shortages hinder effective detection and investigation capabilities across enterprise environments. Security leaders must prioritize threat intelligence integration to enhance detection capabilities and streamline investigation workflows.",
@@ -459,6 +477,46 @@ export const news: NewsBrief[] = [
       "dd20b5eb",
       "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
       "msecure-users-urged-to-reset-passwords-after-breach"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-cve-2026-118309-a0636b28",
+    "title": "Microsoft Edge addresses Chromium CVE-2026-118309",
+    "summary": "Microsoft Edge (Chromium-based) incorporates a fix for CVE-2026-118309, a reference resolution flaw discovered in Chromium. The vulnerability allowed attackers to manipulate internal references, potentially leading to memory corruption or denial of service, but no public exploits have been disclosed. Edge users should install the latest update via Windows Update or the Microsoft Edge installer to ensure the patch is applied.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118309"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-cve-2026-118309",
+      "article-a0636b28",
+      "a0636b28",
+      "microsoft-edge-addresses-chromium-cve-2026-118309-1fe91c"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-cve-2026-119261-5ac699d0",
+    "title": "Microsoft Edge addresses Chromium CVE-2026-119261",
+    "summary": "Microsoft Edge (Chromium-based) includes a patch for CVE-2026-119261, an improper input validation flaw in Chromium. The flaw could allow attackers to supply crafted input that bypasses sanitization, potentially enabling arbitrary code execution, though no active exploits are known. Users should apply the latest Microsoft Edge update via Windows Update or the standalone installer to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119261",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119261"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-cve-2026-119261",
+      "article-5ac699d0",
+      "5ac699d0",
+      "microsoft-edge-addresses-chromium-cve-2026-119261-1fe8ab"
     ]
   },
   {
@@ -1182,6 +1240,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-95086-important-tesseract-security-updat-cc8229db",
+    "title": "RHSA-2026:95086: Important: tesseract security update",
+    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95086",
+    "publishedAt": "2026-11-04T13:12:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95086-important-tesseract-security-updat",
+      "article-cc8229db",
+      "cc8229db",
+      "rhsa-2026-95086-important-tesseract-security-updat-37d854",
+      "rhsa-2026-95086-important-tesseract-security-update"
+    ]
+  },
+  {
+    "slug": "barracuda-flaws-enable-authentication-bypass-and-r-0a890021",
+    "title": "Barracuda flaws enable authentication bypass and root access",
+    "summary": "Barracuda disclosed two critical flaws (CVE-2026-116606, CVE-2026-116607) that let attackers bypass authentication and gain root. Exploitation needs access to the device’s admin interface, making exposed management systems a key risk, though no public PoC exists. Barracuda urges applying the firmware patch and disabling remote management until the update is installed to block privilege escalation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-barracuda-security-flaws/",
+    "publishedAt": "2026-11-04T13:07:41.000Z",
+    "cves": [
+      "CVE-2026-116606",
+      "CVE-2026-116607"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-flaws-enable-authentication-bypass-and-r",
+      "article-0a890021",
+      "0a890021",
+      "barracuda-flaws-enable-authentication-bypass-and-r-57a9d8",
+      "barracuda-flaws-enable-authentication-bypass-and-root-access"
+    ]
+  },
+  {
     "slug": "node-js-schedules-high-severity-security-fixes-for-10ca6f84",
     "title": "Node.js Schedules High-Severity Security Fixes for 22.x, 24.x, and 26.x Release Lines",
     "summary": "The Node.js project has scheduled security updates for its 22.x, 24.x, and 26.x release lines on or shortly after Wednesday, November 11, 2026. The announcement gives developers and system administrators time to prepare for patches addressing HIGH-rated vulnerabilities across all three branches.",
@@ -1242,6 +1341,25 @@ export const news: NewsBrief[] = [
       "article-05ee7afe",
       "05ee7afe",
       "red-hat-kernel-patch-addresses-cve-2026-43871-37d854"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95100-important-kernel-rt-security-bug-f-af2328e6",
+    "title": "RHSA-2026:95100: Important: kernel-rt security, bug fix, and enhancement update",
+    "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95100",
+    "publishedAt": "2026-11-04T12:29:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95100-important-kernel-rt-security-bug-f",
+      "article-af2328e6",
+      "af2328e6",
+      "rhsa-2026-95100-important-kernel-rt-security-bug-f-37d851",
+      "rhsa-2026-95100-important-kernel-rt-security-bug-fix-and-enh"
     ]
   },
   {
@@ -1324,6 +1442,24 @@ export const news: NewsBrief[] = [
       "ab5f1960",
       "cisa-adds-one-known-exploited-vulnerability-to-cat-3fd10f",
       "cisa-adds-one-known-exploited-vulnerability-to-catalog"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95064-important-flatpak-security-update-f924e795",
+    "title": "RHSA-2026:95064: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95064",
+    "publishedAt": "2026-11-04T11:58:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95064-important-flatpak-security-update",
+      "article-f924e795",
+      "f924e795",
+      "rhsa-2026-95064-important-flatpak-security-update-37d854"
     ]
   },
   {
@@ -9318,136 +9454,6 @@ export const news: NewsBrief[] = [
       "article-94670f36",
       "94670f36",
       "aur0ra-ransomware-employs-ai-exploitation-aa79e6"
-    ]
-  },
-  {
-    "slug": "block-1-200-fake-store-domains-d7a01b51",
-    "title": "Block 1,200 Fake Store Domains",
-    "summary": "Law enforcement reports over 1,200 look‑alike domains used to host fake web stores targeting consumers. These domains mimic legitimate retailers, enabling phishing, credential theft, and fraudulent transactions. Security teams should block these domains, monitor for new look‑alike registrations, and apply defensive controls to maintain protection daily.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fake-web-stores-how-to-block-1-200-look-alike-domain-sc",
-    "publishedAt": "2026-11-01T16:26:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "block-1-200-fake-store-domains",
-      "article-d7a01b51",
-      "d7a01b51",
-      "block-1-200-fake-store-domains-498eb2"
-    ]
-  },
-  {
-    "slug": "chainalysis-audit-leak-exposes-customer-data-db5b1944",
-    "title": "Chainalysis Audit Leak Exposes Customer Data",
-    "summary": "Chainalysis suffered a breach that exposed audit records containing sensitive customer data, including personal identifiers and transaction histories. The compromise resulted from insufficient access controls on the audit database, allowing attackers to download large volumes of data without detection. Chainalysis has applied a patch to strengthen database permissions, enabled multi‑factor authentication, and notified affected customers.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/chainalysis-breach-audit-leaked-customer-data",
-    "publishedAt": "2026-11-01T16:25:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chainalysis-audit-leak-exposes-customer-data",
-      "article-db5b1944",
-      "db5b1944",
-      "chainalysis-audit-leak-exposes-customer-data-18cd19"
-    ]
-  },
-  {
-    "slug": "fbi-links-dprk-hackers-to-6-43b-heist-a1677651",
-    "title": "FBI Links DPRK Hackers to $6.43B Heist",
-    "summary": "The FBI has linked a North Korean hacking group to a $6.43 billion cyber heist that targeted financial institutions. Investigators attribute the breach to credential theft and exploitation of weak multi‑factor authentication, enabling unauthorized transfers of over $6 billion. Law enforcement recommends tightening MFA, monitoring for anomalous transfers, and conducting forensic analysis of compromised accounts.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/tradertraitor-fbi-links-dprk-hackers-to-6-43b-heist",
-    "publishedAt": "2026-11-01T15:31:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-links-dprk-hackers-to-6-43b-heist",
-      "article-a1677651",
-      "a1677651",
-      "fbi-links-dprk-hackers-to-6-43b-heist-4cdaad"
-    ]
-  },
-  {
-    "slug": "police-bust-cyber-syndicate-operators-16d63d38",
-    "title": "Police Bust Cyber Syndicate Operators",
-    "summary": "Law enforcement agencies dismantled the Cyber Syndicate, arresting key operators involved in coordinated cybercrime. Court filings detail the group’s use of phishing, credential theft, and ransomware delivery tactics, with profiles indicating a structured, financially motivated operation. Security teams should review the disclosed defensive controls, including multi‑factor authentication, email filtering, and endpoint detection, to mitigate similar threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fbi-links-north-korea-s-tradertraitor-to-record-6-43-bi",
-    "publishedAt": "2026-11-01T15:31:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "police-bust-cyber-syndicate-operators",
-      "article-16d63d38",
-      "16d63d38",
-      "police-bust-cyber-syndicate-operators-2f48de"
-    ]
-  },
-  {
-    "slug": "northstar-security-raises-7m-to-map-risk-combinati-7389d5f3",
-    "title": "Northstar Security Raises $7M to Map Risk Combinations",
-    "summary": "Northstar Security has secured $7 million to develop a platform that maps identities, assets, and vulnerabilities to identify toxic risk combinations. The solution employs AI agents that scan for interdependencies and automatically suggest remediation steps for high‑impact combinations. Security teams can integrate the platform into existing workflows to proactively mitigate compound vulnerabilities before exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/",
-    "publishedAt": "2026-11-01T11:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "northstar-security-raises-7m-to-map-risk-combinati",
-      "article-7389d5f3",
-      "7389d5f3",
-      "northstar-security-raises-7m-to-map-risk-combinati-366aec",
-      "northstar-security-raises-7m-to-map-risk-combinations"
-    ]
-  },
-  {
-    "slug": "onenote-embedded-file-extraction-5586c7f9",
-    "title": "OneNote Embedded File Extraction",
-    "summary": "An analyst extracted embedded files from OneNote (.one) documents using a custom extraction process. The method parses the OneNote file structure to locate and retrieve embedded attachments, which may contain executable payloads. Security teams should scan extracted files for malware and carefully validate the integrity of OneNote documents before use.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33478",
-    "publishedAt": "2026-11-01T09:12:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "onenote-embedded-file-extraction",
-      "article-5586c7f9",
-      "5586c7f9",
-      "onenote-embedded-file-extraction-57dd7e"
-    ]
-  },
-  {
-    "slug": "binance-theft-highlights-impact-of-brotli-cve-2026-859d27d6",
-    "title": "Binance Theft Highlights Impact of Brotli CVE-2026-111497",
-    "summary": "Binance suffered a $6.3 billion theft, while the Brotli compression flaw CVE‑2026‑111497 exposed vulnerabilities in multiple web applications. The CVE allows attackers to inject malicious payloads during decompression, potentially leading to remote code execution on affected servers. Patches are available from the Brotli maintainers; administrators should update libraries and audit decompression usage to mitigate risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/",
-    "publishedAt": "2026-11-01T09:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "binance-theft-highlights-impact-of-brotli-cve-2026",
-      "article-859d27d6",
-      "859d27d6",
-      "binance-theft-highlights-impact-of-brotli-cve-2026-3fe244",
-      "binance-theft-highlights-impact-of-brotli-cve-2026-111497"
     ]
   }
 ];
