@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "69gb-philippine-government-data-exfiltrated-35c7c0ec",
+    "title": "69GB Philippine Government Data Exfiltrated",
+    "summary": "An unknown operator exfiltrated 69GB of SQL Server backups from the Philippine Overseas Employment Administration in under 30 minutes, confirming a data breach. The breach likely exploited misconfigured database permissions, enabling unauthorized access to sensitive migrant worker records. The agency has not released a patch; security teams should enforce least‑privilege access, audit logs, and monitor for anomalous data transfers.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
+    "publishedAt": "2026-11-04T02:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "69gb-philippine-government-data-exfiltrated",
+      "article-35c7c0ec",
+      "35c7c0ec",
+      "69gb-philippine-government-data-exfiltrated-1b6ffb"
+    ]
+  },
+  {
     "slug": "microsoft-detects-trojanized-installers-delivering-f34da954",
     "title": "Microsoft Detects Trojanized Installers Delivering Monetization Payloads",
     "summary": "Microsoft has identified a supply‑chain threat where installers are trojanized to deliver monetization payloads. The malicious installers exploit legitimate distribution channels, embedding code that redirects users to advertising or payment services. Microsoft recommends verifying installer signatures, monitoring for anomalous outbound traffic, and applying the latest security patches to mitigate the threat.",
@@ -9466,24 +9484,6 @@ export const news: NewsBrief[] = [
       "article-7c7757a1",
       "7c7757a1",
       "chrome-dev-channel-updated-to-159-0-8130-0-55ca2c"
-    ]
-  },
-  {
-    "slug": "uefi-flaw-affects-majority-of-servers-b554d363",
-    "title": "UEFI Flaw Affects Majority of Servers",
-    "summary": "A critical UEFI firmware flaw was discovered that compromises the boot integrity of the majority of enterprise servers, enabling attackers to load malicious code during system startup. The vulnerability allows unauthenticated remote exploitation through a malformed firmware update package, potentially granting full system control without user interaction.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
-    "publishedAt": "2026-10-30T14:41:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uefi-flaw-affects-majority-of-servers",
-      "article-b554d363",
-      "b554d363",
-      "uefi-flaw-affects-majority-of-servers-5f262a"
     ]
   }
 ];

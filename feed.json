@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
+    "title": "69GB Philippine Government Data Exfiltrated",
+    "headline": "69GB Philippine Government Data Exfiltrated",
+    "summary": "An unknown operator exfiltrated 69GB of SQL Server backups from the Philippine Overseas Employment Administration in under 30 minutes, confirming a data breach. The breach likely exploited misconfigured database permissions, enabling unauthorized access to sensitive migrant worker records. The agency has not released a patch; security teams should enforce least‑privilege access, audit logs, and monitor for anomalous data transfers.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-04T02:00:00.000Z",
+    "ingestedAt": "2026-11-04T02:43:09.569Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/fake-download-campaign-uses-trojanized-installers-to-de",
     "sourceUrl": "https://cybernewsai.com/blog/fake-download-campaign-uses-trojanized-installers-to-de",
     "title": "Microsoft Detects Trojanized Installers Delivering Monetization Payloads",
@@ -8023,19 +8039,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://chromereleases.googleblog.com/2026/10/chrome-dev-for-desktop-update_01100896752.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
-    "title": "UEFI Flaw Affects Majority of Servers",
-    "headline": "UEFI Flaw Affects Majority of Servers",
-    "summary": "A critical UEFI firmware flaw was discovered that compromises the boot integrity of the majority of enterprise servers, enabling attackers to load malicious code during system startup. The vulnerability allows unauthenticated remote exploitation through a malformed firmware update package, potentially granting full system control without user interaction.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-10-30T14:41:35.000Z",
-    "url": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
     "additionalSources": []
   }
 ]
