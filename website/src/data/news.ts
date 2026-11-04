@@ -11,6 +11,64 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-risks-rank-highest-in-gartner-emerging-risk-rep-4abff701",
+    "title": "AI Risks Rank Highest in Gartner Emerging Risk Report",
+    "summary": "Gartner’s Quarterly Emerging Risk Report ranks AI strategy miscalculation and AI‑driven competitive displacement among the top enterprise risks. The report identifies AI workforce preparedness gaps, AI discovery of cyber vulnerabilities, and geopolitical energy supply shocks as additional high‑impact concerns. The findings, based on 308 enterprise risk leaders’ responses, underscore the need for balanced AI adoption and robust risk mitigation strategies.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/ai-strategy-miscalculation-gartner-report/",
+    "publishedAt": "2026-11-04T05:30:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-risks-rank-highest-in-gartner-emerging-risk-rep",
+      "article-4abff701",
+      "4abff701",
+      "ai-risks-rank-highest-in-gartner-emerging-risk-rep-66e1d8",
+      "ai-risks-rank-highest-in-gartner-emerging-risk-report"
+    ]
+  },
+  {
+    "slug": "nist-releases-guide-for-solopreneurs-without-it-st-4d906bfe",
+    "title": "NIST Releases Guide for Solopreneurs Without IT Staff",
+    "summary": "NIST issued a cybersecurity guidance document targeting small businesses lacking paid IT staff, including freelancers, sole proprietors, and independent contractors. The guide addresses 82% of the 34.8 million U.S. small businesses, offering tailored security practices for owners who lack specialized expertise. Administrators and solopreneurs should review the NIST recommendations and implement the outlined controls to strengthen their cyber posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/nist-small-business-cybersecurity-guide/",
+    "publishedAt": "2026-11-04T05:00:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nist-releases-guide-for-solopreneurs-without-it-st",
+      "article-4d906bfe",
+      "4d906bfe",
+      "nist-releases-guide-for-solopreneurs-without-it-st-1883f4",
+      "nist-releases-guide-for-solopreneurs-without-it-staff"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-patch-for-cve-2026-43871-f0adae83",
+    "title": "Red Hat Releases Kernel Patch for CVE-2026-43871",
+    "summary": "CVE-2026-43871 exposed a kernel flaw in Red Hat Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support releases. The vulnerability, rated CVSS 9.8, allows unauthenticated remote code execution via a buffer overflow in the networking stack. Red Hat released a critical kernel patch; administrators must apply it immediately or upgrade to the latest RHEL 8.6.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94996",
+    "publishedAt": "2026-11-04T04:47:44.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-patch-for-cve-2026-43871",
+      "article-f0adae83",
+      "f0adae83",
+      "red-hat-releases-kernel-patch-for-cve-2026-43871-37d8a6"
+    ]
+  },
+  {
     "slug": "anthropic-releases-flashprove-for-verifiable-model-0c1d002e",
     "title": "Anthropic Releases FlashProve for Verifiable Model Inference",
     "summary": "Anthropic released FlashProve, a prototype that generates cryptographic proofs for specific language model responses. The system uses a prover and two verifiers to produce formal proofs, enabling verification of model outputs. The code, proofs, and protocol specification are available on GitHub under Apache 2.0, allowing developers to integrate verification into their workflows.",
@@ -9428,63 +9486,6 @@ export const news: NewsBrief[] = [
       "abf80a06",
       "north-korea-group-steals-credentials-injects-malwa-63ada6",
       "north-korea-group-steals-credentials-injects-malware-into-gi"
-    ]
-  },
-  {
-    "slug": "php2shell-attacks-target-palo-alto-firewalls-and-w-25823e14",
-    "title": "PHP2Shell Attacks Target Palo Alto Firewalls and WordPress",
-    "summary": "Threat actors are launching PHP2Shell attacks targeting critical PHP flaws across more than 22.6 million exposed internet instances. The ongoing campaign successfully rooted Palo Alto Networks firewalls during exploitation attempts while failing against targeted WordPress installations. Administrators must immediately audit exposed PHP applications and apply relevant security updates to prevent unauthorized root system compromise.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/",
-    "publishedAt": "2026-10-30T15:09:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php2shell-attacks-target-palo-alto-firewalls-and-w",
-      "article-25823e14",
-      "25823e14",
-      "php2shell-attacks-target-palo-alto-firewalls-and-w-a12cb3",
-      "php2shell-attacks-target-palo-alto-firewalls-and-wordpress"
-    ]
-  },
-  {
-    "slug": "adaptive-ai-assisted-attacks-escalate-threat-respo-60ea91e7",
-    "title": "Adaptive AI‑Assisted Attacks Escalate Threat Response Speed",
-    "summary": "Adaptive attacks can change tactics rapidly, leveraging AI to probe environments, learn responses, and chain subsequent actions while the attack is ongoing. Anthropic’s 2026 analysis examined 832 accounts, illustrating how quickly AI‑driven operations can pivot techniques and exploit discovered weaknesses. Security teams must adopt continuous monitoring, adaptive defenses, and AI‑aware threat intelligence to keep pace with evolving attack vectors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/when-threats-dont-wait-security-cant-either/",
-    "publishedAt": "2026-10-30T15:08:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "adaptive-ai-assisted-attacks-escalate-threat-respo",
-      "article-60ea91e7",
-      "60ea91e7",
-      "adaptive-ai-assisted-attacks-escalate-threat-respo-dc9897",
-      "adaptive-ai-assisted-attacks-escalate-threat-response-speed"
-    ]
-  },
-  {
-    "slug": "php2shell-disclosure-highlights-need-for-cyber-rea-ee5542ae",
-    "title": "PHP2Shell Disclosure Highlights Need for Cyber Readiness",
-    "summary": "The month’s coverage included the PHP2Shell vulnerability disclosure, underscoring the importance of robust web application security. Other notable incidents highlighted the need for comprehensive cyber‑readiness plans, prompting organizations to reassess defensive postures. Stakeholders are advised to review incident response frameworks, update patch management schedules, and conduct regular threat modeling exercises.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/videos/month-security-tony-anscombe-october-2026/",
-    "publishedAt": "2026-10-30T15:03:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php2shell-disclosure-highlights-need-for-cyber-rea",
-      "article-ee5542ae",
-      "ee5542ae",
-      "php2shell-disclosure-highlights-need-for-cyber-rea-158449",
-      "php2shell-disclosure-highlights-need-for-cyber-readiness"
     ]
   }
 ];
