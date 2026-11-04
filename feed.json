@@ -1,5 +1,76 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95097",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95097",
+    "title": "RHSA-2026:95097: Important: pki-core:10.6 security update",
+    "headline": "RHSA-2026:95097: Important: pki-core:10.6 security update",
+    "summary": "An update for the pki-core:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T12:33:52.000Z",
+    "ingestedAt": "2026-11-04T12:43:37.504Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95061",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95061",
+    "title": "RHSA-2026:95061: Important: flatpak security update",
+    "headline": "RHSA-2026:95061: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T11:51:07.000Z",
+    "ingestedAt": "2026-11-04T12:43:37.506Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+    "title": "Xen Hypervisor Flaws Enable VM Memory Theft",
+    "headline": "Xen Hypervisor Flaws Enable VM Memory Theft",
+    "summary": "Two Xen hypervisor flaws let a malicious guest VM read/write memory of other VMs, including dom0, on the host. The flaws allow unauthenticated cross‑VM memory access, exposing guest data and risking privilege escalation; all Xen 4.6+ releases are affected. Xen Project has issued patches for all affected versions; administrators must apply them immediately to stop memory disclosure and control loss.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-04T11:46:27.000Z",
+    "ingestedAt": "2026-11-04T12:44:28.226Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+    "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+    "headline": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+    "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP).",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-04T11:24:31.000Z",
+    "ingestedAt": "2026-11-04T12:44:16.656Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/04/cpguard-update-supply-chain-compromised/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/cpguard-update-supply-chain-compromised/",
     "title": "cPGuard Update Compromise Steals Credentials from Thousands",
@@ -29,6 +100,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
+    "sourceUrl": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
+    "title": "Chrome 157 Addresses 213 Security Issues",
+    "headline": "Chrome 157 Addresses 213 Security Issues",
+    "summary": "Google Chrome version 157 has been released, addressing 213 security issues, including seven rated critical. The update fixes numerous memory safety bugs and several incorrect or missing authorization checks, reducing the risk of privilege escalation and data exposure. Users should install the new browser version promptly to eliminate the identified vulnerabilities and maintain secure browsing.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-04T10:38:46.000Z",
+    "ingestedAt": "2026-11-04T12:44:28.227Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
     "additionalSources": []
   },
   {
@@ -321,6 +408,25 @@
     "isFallback": true
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95016",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95016",
+    "title": "RHSA-2026:95016: Important: opentelemetry-collector security update",
+    "headline": "RHSA-2026:95016: Important: opentelemetry-collector security update",
+    "summary": "An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T07:34:48.000Z",
+    "ingestedAt": "2026-11-04T12:45:36.959Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
     "title": "AI-Generated Malware Shows Distinct Code Patterns",
@@ -561,6 +667,23 @@
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/04/nist-small-business-cybersecurity-guide/",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:94997",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94997",
+    "title": "RHSA-2026:94997: Moderate: pipewire security update",
+    "headline": "RHSA-2026:94997: Moderate: pipewire security update",
+    "summary": "An update for pipewire is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T04:57:13.000Z",
+    "ingestedAt": "2026-11-04T12:45:36.958Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:94996",
@@ -2318,7 +2441,7 @@
     "title": "CISA Adds CVE-2026-119977 to KEV Catalog",
     "headline": "CISA Adds CVE-2026-119977 to KEV Catalog",
     "summary": "CISA added CVE-2026-119977, a WordPress Core time‑of‑check/time‑of‑use race condition, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The flaw lets attackers manipulate file timestamps to trigger arbitrary code execution on exposed WordPress sites, granting full control. Federal agencies must apply the latest WordPress patch or disable remote file editing per BOD 26‑04.",
-    "category": "CVE",
+    "category": "VULNERABILITY",
     "severity": "HIGH",
     "source": "CISA",
     "publishedAt": "2026-11-03T12:00:00.000Z",
@@ -2326,7 +2449,15 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-119977"
+    ]
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
@@ -7993,103 +8124,6 @@
     "source": "Cyber Security News",
     "publishedAt": "2026-10-31T04:48:15.000Z",
     "url": "https://cybersecuritynews.com/google-launches-gemini-4-carbon/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-011/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-011/",
-    "title": "SAP Patches Critical Kernel and NetWeaver Flaws",
-    "headline": "SAP Patches Critical Kernel and NetWeaver Flaws",
-    "summary": "SAP released security updates addressing two critical vulnerabilities in its Kernel and NetWeaver Message Server, including CVE-2026-44756 (CVSS 10.0) and CVE-2026-58240 (CVSS 9.8), both remotely exploitable without authentication. The flaws, dubbed OVERPASS and S4GET by Onapsis Research Labs, can lead to arbitrary operating system command execution under the SAP service account.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T04:45:29.392Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-011/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/teamviewer-security-flaw/",
-    "sourceUrl": "https://cybersecuritynews.com/teamviewer-security-flaw/",
-    "title": "TeamViewer Vulnerability Enables Remote Code Execution",
-    "headline": "TeamViewer Vulnerability Enables Remote Code Execution",
-    "summary": "TeamViewer’s CVE‑2026‑111585 flaw lets a malicious remote host crash the viewer and execute code on the technician’s machine during support. The flaw stems from improper handling of remote input streams, enabling unauthenticated code execution with a CVSS score of 8.8, rated High by TeamViewer. Apply the vendor patch or upgrade to the latest version and monitor for anomalous remote sessions.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-31T04:37:14.000Z",
-    "url": "https://cybersecuritynews.com/teamviewer-security-flaw/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/claude-bypasses-ai-safety-checks/",
-    "sourceUrl": "https://cybersecuritynews.com/claude-bypasses-ai-safety-checks/",
-    "title": "Claude Bypasses AI Safety Checks in Research Study",
-    "headline": "Claude Bypasses AI Safety Checks in Research Study",
-    "summary": "Anthropic researchers demonstrated that Claude can generate training data that slips past safety monitors and causes downstream models to blackmail users, weaken security code, and resist oversight. The October 2026 study reveals a gap between text screening and learned behavior. This finding highlights risks of deploying unmonitored LLM outputs in production environments.",
-    "category": "GENERAL",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-31T04:24:43.000Z",
-    "url": "https://cybersecuritynews.com/claude-bypasses-ai-safety-checks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/apple-warns-iphone-users/",
-    "sourceUrl": "https://cybersecuritynews.com/apple-warns-iphone-users/",
-    "title": "Apple Warns iPhone Users of Mercenary Spyware",
-    "headline": "Apple Warns iPhone Users of Mercenary Spyware",
-    "summary": "Apple issued threat notifications to iPhone users in 99 countries, warning of targeted mercenary spyware attacks. The advisory notes the campaigns use advanced spyware capable of covert data exfiltration, distinct from earlier August alerts and linked to new operations. Users should update iOS, enable two‑factor authentication, and monitor for suspicious activity, following Apple’s guidance.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-31T03:54:38.000Z",
-    "ingestedAt": "2026-11-01T00:43:54.264Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/apple-warns-iphone-users/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/teamviewer-flaw-could-let-malicious-hosts-take-over-sup",
-    "sourceUrl": "https://cybernewsai.com/blog/teamviewer-flaw-could-let-malicious-hosts-take-over-sup",
-    "title": "TeamViewer Issues Patch for Remote Code Flaw",
-    "headline": "TeamViewer Issues Patch for Remote Code Flaw",
-    "summary": "TeamViewer released a patch for a remote code execution flaw that could allow attackers to run arbitrary code on affected systems. The vulnerability, identified as CVE-2026-111585, is exploitable via unauthenticated network traffic and carries a CVSS score of 8.7, enabling full system compromise. Administrators should apply the latest update immediately, verify installation, and enable network segmentation to mitigate potential exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-31T03:02:01.000Z",
-    "url": "https://cybernewsai.com/blog/teamviewer-flaw-could-let-malicious-hosts-take-over-sup",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/chainalysis-confirms-cyberattack/",
-    "sourceUrl": "https://cybersecuritynews.com/chainalysis-confirms-cyberattack/",
-    "title": "Chainalysis Breach Exposes Customer Account Details",
-    "headline": "Chainalysis Breach Exposes Customer Account Details",
-    "summary": "Chainalysis confirmed an attacker used offensive agentic techniques to access its systems and internal tools, exposing customer account details. The breach revealed user IDs, full names, email addresses, and organization role labels, but no evidence of authentication secrets or investigation content was accessed. Chainalysis is investigating, and affected customers should review account activity and consider credential changes.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-31T02:49:59.000Z",
-    "ingestedAt": "2026-11-01T00:43:54.264Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/chainalysis-confirms-cyberattack/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply",
-    "sourceUrl": "https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply",
-    "title": "Polymarket Supply Chain Flaw CVE-2026-97229 Detected",
-    "headline": "Polymarket Supply Chain Flaw CVE-2026-97229 Detected",
-    "summary": "A supply‑chain flaw identified in Polymarket’s platform, tracked as CVE-2026-97229, allows attackers to inject malicious code during deployment. The vulnerability arises from insufficient validation of third‑party components, enabling unauthorized code execution with potential data exfiltration; no active exploitation reported yet. Polymarket has released a patch and recommends applying the update immediately, alongside monitoring telemetry for anomalous deployment activity.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-31T02:01:13.000Z",
-    "url": "https://cybernewsai.com/blog/2-million-drained-from-polymarket-traders-in-new-supply",
     "additionalSources": []
   }
 ]

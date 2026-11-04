@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 11:35:27 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 12:49:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:95097: Important: pki-core:10.6 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95097-important-pki-core-10-6-security-u-1f33716b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95097-important-pki-core-10-6-security-u-1f33716b</guid>
+      <description><![CDATA[An update for the pki-core:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.]]></description>
+      <pubDate>Wed, 04 Nov 2026 12:33:52 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95097">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95061: Important: flatpak security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95061-important-flatpak-security-update-aaa4381b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95061-important-flatpak-security-update-aaa4381b</guid>
+      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.]]></description>
+      <pubDate>Wed, 04 Nov 2026 11:51:07 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95061">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Xen Hypervisor Flaws Enable VM Memory Theft</title>
+      <link>https://secubuzz.com/news/xen-hypervisor-flaws-enable-vm-memory-theft-3fb65d25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xen-hypervisor-flaws-enable-vm-memory-theft-3fb65d25</guid>
+      <description><![CDATA[Two Xen hypervisor flaws let a malicious guest VM read/write memory of other VMs, including dom0, on the host. The flaws allow unauthenticated cross‑VM memory access, exposing guest data and risking privilege escalation; all Xen 4.6+ releases are affected. Xen Project has issued patches for all affected versions; administrators must apply them immediately to stop memory disclosure and control loss.]]></description>
+      <pubDate>Wed, 04 Nov 2026 11:46:27 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor</title>
+      <link>https://secubuzz.com/news/china-aligned-hackers-hijack-sogou-input-method-dn-fa4ac48f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-aligned-hackers-hijack-sogou-input-method-dn-fa4ac48f</guid>
+      <description><![CDATA[A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP).]]></description>
+      <pubDate>Wed, 04 Nov 2026 11:24:31 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html">The Hacker News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>cPGuard Update Compromise Steals Credentials from Thousands</title>
       <link>https://secubuzz.com/news/cpguard-update-compromise-steals-credentials-from-e6da8e9e</link>
@@ -24,6 +60,15 @@
       <pubDate>Wed, 04 Nov 2026 10:54:48 GMT</pubDate>
       <source url="https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Chrome 157 Addresses 213 Security Issues</title>
+      <link>https://secubuzz.com/news/chrome-157-addresses-213-security-issues-9cfda71a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-157-addresses-213-security-issues-9cfda71a</guid>
+      <description><![CDATA[Google Chrome version 157 has been released, addressing 213 security issues, including seven rated critical. The update fixes numerous memory safety bugs and several incorrect or missing authorization checks, reducing the risk of privilege escalation and data exposure. Users should install the new browser version promptly to eliminate the identified vulnerabilities and maintain secure browsing.]]></description>
+      <pubDate>Wed, 04 Nov 2026 10:38:46 GMT</pubDate>
+      <source url="https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/">SecurityWeek</source>
+      <category>General</category>
     </item>
     <item>
       <title>VasyGrek Hackers Arrested, Infrastructure Dismantled</title>
@@ -179,6 +224,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>RHSA-2026:95016: Important: opentelemetry-collector security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95016-important-opentelemetry-collector-c30b1b70</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95016-important-opentelemetry-collector-c30b1b70</guid>
+      <description><![CDATA[An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.]]></description>
+      <pubDate>Wed, 04 Nov 2026 07:34:48 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95016">Red Hat Security Advisories</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>AI-Generated Malware Shows Distinct Code Patterns</title>
       <link>https://secubuzz.com/news/ai-generated-malware-shows-distinct-code-patterns-c716b0a2</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-generated-malware-shows-distinct-code-patterns-c716b0a2</guid>
@@ -314,6 +368,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>RHSA-2026:94997: Moderate: pipewire security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-94997-moderate-pipewire-security-update-82f4bf84</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94997-moderate-pipewire-security-update-82f4bf84</guid>
+      <description><![CDATA[An update for pipewire is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 04 Nov 2026 04:57:13 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94997">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Releases Kernel Patch for CVE-2026-43871</title>
       <link>https://secubuzz.com/news/red-hat-releases-kernel-patch-for-cve-2026-43871-f0adae83</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-patch-for-cve-2026-43871-f0adae83</guid>
@@ -393,69 +456,6 @@
       <pubDate>Tue, 03 Nov 2026 23:13:00 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update.html">Google Chrome Releases</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>European Fridge Attacks Highlight Cold‑Chain Security Risks</title>
-      <link>https://secubuzz.com/news/european-fridge-attacks-highlight-cold-chain-secur-f6aee072</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/european-fridge-attacks-highlight-cold-chain-secur-f6aee072</guid>
-      <description><![CDATA[Recent attacks on European refrigerators exposed vulnerabilities in their internet connectivity and remote access controls. The incidents demonstrate that temperature‑controlled infrastructure, such as industrial refrigeration, can be compromised through inadequate security practices, potentially disrupting critical supply chains. Operators should enforce network segmentation, secure remote access, and regular firmware updates to mitigate these risks.]]></description>
-      <pubDate>Tue, 03 Nov 2026 22:16:49 GMT</pubDate>
-      <source url="https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Germany Seizes Crime‑as‑a‑Service Fraud Platform</title>
-      <link>https://secubuzz.com/news/germany-seizes-crime-as-a-service-fraud-platform-86b772dd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/germany-seizes-crime-as-a-service-fraud-platform-86b772dd</guid>
-      <description><![CDATA[German police, in a multinational operation, dismantled a crime‑as‑a‑service outfit that provided fraudulent trading platforms to investment scammers. The investigation uncovered a network that enabled scammers to create and host deceptive brokerage sites, facilitating large‑scale financial fraud. Authorities seized the infrastructure and are prosecuting the operators, underscoring the threat posed by such service‑based fraud ecosystems.]]></description>
-      <pubDate>Tue, 03 Nov 2026 21:57:12 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-119084: Amazon Redshift JDBC Driver RCE via Class Loading</title>
-      <link>https://secubuzz.com/news/cve-2026-119084-amazon-redshift-jdbc-driver-rce-vi-174b5bcc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119084-amazon-redshift-jdbc-driver-rce-vi-174b5bcc</guid>
-      <description><![CDATA[CVE-2026-119084 allows remote code execution in Amazon Redshift JDBC Driver versions prior to 2.3.0 when parsing JDBC URLs or AWS credential profiles. The flaw lets an attacker load and run arbitrary classes, bypassing authentication and compromising the host. Amazon released driver 2.3.0 and later, which removes the unsafe loading path; teams should upgrade or apply the patch.]]></description>
-      <pubDate>Tue, 03 Nov 2026 21:32:29 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>WorkOS Breach via ARTEX AI Exposes Customer Data</title>
-      <link>https://secubuzz.com/news/workos-breach-via-artex-ai-exposes-customer-data-c386cd67</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/workos-breach-via-artex-ai-exposes-customer-data-c386cd67</guid>
-      <description><![CDATA[WorkOS reported an attacker used the ARTEX AI module to breach its sales app and access business contact records and customer communications. The breach exploited a privilege‑escalation flaw in the AI integration, granting unauthorized read access to sensitive data without authentication. WorkOS applied a patch limiting AI module permissions and advises customers to review access controls and monitor activity.]]></description>
-      <pubDate>Tue, 03 Nov 2026 21:28:44 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Gorbag APT Self‑Deleting Malware Detection Guide</title>
-      <link>https://secubuzz.com/news/gorbag-apt-self-deleting-malware-detection-guide-217b96d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gorbag-apt-self-deleting-malware-detection-guide-217b96d7</guid>
-      <description><![CDATA[Gorbag APT has deployed self‑deleting malware delivered via spearphishing campaigns targeting corporate email users. The malware erases its own code after execution, evading traditional signature‑based detection and allowing attackers to maintain persistence without leaving forensic footprints. Security teams should monitor for anomalous email attachments, enable advanced threat protection, and apply the latest email gateway updates to block known Gorbag indicators.]]></description>
-      <pubDate>Tue, 03 Nov 2026 20:50:35 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council">CyberNews AI</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Chrome 157 Update Contains Critical Dawn Buffer Overflow</title>
-      <link>https://secubuzz.com/news/chrome-157-update-contains-critical-dawn-buffer-ov-0e495a62</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-157-update-contains-critical-dawn-buffer-ov-0e495a62</guid>
-      <description><![CDATA[Google Chrome promoted version 157 to the stable channel, delivering 213 security fixes, including a Dawn buffer overflow. CVE-2026-121156 allows attackers to execute arbitrary code via malformed graphics data, enabling remote code execution with high privilege. Users should install the update immediately; the patch is distributed via the standard channel, with no workarounds needed.]]></description>
-      <pubDate>Tue, 03 Nov 2026 20:38:18 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Python-dns Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-python-dns-security-update-b6e4bbd6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-python-dns-security-update-b6e4bbd6</guid>
-      <description><![CDATA[Red Hat released a security update for python‑dns on RHEL 8, addressing CVE‑2026‑43871. The flaw, rated Important, allows improper input handling that could lead to arbitrary code execution or denial of service, with a CVSS base score in the 7‑8 range. Red Hat has published the patch; administrators should apply it immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 03 Nov 2026 20:32:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94749">Red Hat Security Advisories</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
