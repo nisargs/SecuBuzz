@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "chrome-158-0-8127-18-19-stable-desktop-update-f0d8cb49",
+    "title": "Chrome 158.0.8127.18/.19 Stable Desktop Update",
+    "summary": "Google Chrome released Stable channel build 158.0.8127.18/.19 for Windows as an early stable rollout to a small percentage of users. This desktop update introduces no specific CVE-identified vulnerability; it is a routine browser patch cycle. Security teams should monitor for any reported regressions and validate stability before full deployment across enterprise fleets.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop.html",
+    "publishedAt": "2026-11-04T18:33:09.421Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-158-0-8127-18-19-stable-desktop-update",
+      "article-f0d8cb49",
+      "f0d8cb49",
+      "chrome-158-0-8127-18-19-stable-desktop-update-2f005c"
+    ]
+  },
+  {
+    "slug": "ncsc-10th-annual-review-on-cyber-resilience-basics-129a4078",
+    "title": "NCSC 10th Annual Review on Cyber Resilience Basics",
+    "summary": "The UK NCSC published its 10th Annual Review and 'State of Cyber Nation' report, framing cyber resilience as foundational rather than advanced. The report emphasizes basic hygiene practices as the starting point for long-term defense improvements. Organizations are advised to prioritize fundamentals before investing in complex defensive architectures.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/blog-uk/the-next-decade-of-cyber-resilience-starts-with-the-basics/",
+    "publishedAt": "2026-11-04T18:25:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ncsc-10th-annual-review-on-cyber-resilience-basics",
+      "article-129a4078",
+      "129a4078",
+      "ncsc-10th-annual-review-on-cyber-resilience-basics-2391fb"
+    ]
+  },
+  {
+    "slug": "cyberattack-disrupts-blood-storage-refrigeration-i-706907ad",
+    "title": "Cyberattack Disrupts Blood Storage Refrigeration in France",
+    "summary": "A cyberattack targeted a refrigeration equipment provider serving France's national blood service, raising temperature and defrost settings at three facilities. The incident threatens stored blood products through equipment disruption rather than direct data exfiltration. Defensive monitoring of critical infrastructure SCADA systems remains essential to prevent similar operational disruptions.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
+    "publishedAt": "2026-11-04T18:02:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyberattack-disrupts-blood-storage-refrigeration-i",
+      "article-706907ad",
+      "706907ad",
+      "cyberattack-disrupts-blood-storage-refrigeration-i-5404e4",
+      "cyberattack-disrupts-blood-storage-refrigeration-in-france"
+    ]
+  },
+  {
+    "slug": "msecure-urges-password-changes-without-disclosure-17b8d323",
+    "title": "mSecure Urges Password Changes Without Disclosure",
+    "summary": "mSecure has instructed users to change passwords across its application without publicly disclosing the underlying cause or confirming any data exposure. The advisory lacks technical specifics, making independent verification impossible. Users should treat the password reset as precautionary until official confirmation clarifies the scope and threat vector.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/msecure-tells-users-to-change-passwords-but-wont-say-why",
+    "publishedAt": "2026-11-04T17:02:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "msecure-urges-password-changes-without-disclosure",
+      "article-17b8d323",
+      "17b8d323",
+      "msecure-urges-password-changes-without-disclosure-292774"
+    ]
+  },
+  {
     "slug": "critical-rails-active-storage-flaw-enables-secret-6d6b01f1",
     "title": "Critical Rails Active Storage Flaw Enables Secret Theft",
     "summary": "A critical flaw in Ruby on Rails Active Storage lets unauthenticated users upload crafted images that cause the server to write arbitrary files. CVE‑2026‑116606 has a CVSS score of 9.8 and can also allow file reads when the Disk service is used. Rails has issued a patch that fixes the flaw; no workarounds exist, so update the framework immediately.",
@@ -9354,89 +9427,6 @@ export const news: NewsBrief[] = [
       "fc04bcc2",
       "microsoft-edge-fixes-chromium-compositing-vulnerab-1fe91b",
       "microsoft-edge-fixes-chromium-compositing-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-patches-chromium-filesystem-vulnera-7dfd9ce5",
-    "title": "Microsoft Edge Patches Chromium FileSystem Vulnerability",
-    "summary": "Microsoft updated its Chromium-based Edge browser to address a security flaw originally identified and assigned by Google Chrome. Identified as CVE-2026-118347, the vulnerability is caused by a use-after-free memory safety defect inside the FileSystem component. Administrators are advised to update Microsoft Edge to the latest release and review Google Chrome releases for mitigation details.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118347",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118347"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-patches-chromium-filesystem-vulnera",
-      "article-7dfd9ce5",
-      "7dfd9ce5",
-      "microsoft-edge-patches-chromium-filesystem-vulnera-1fe91b",
-      "microsoft-edge-patches-chromium-filesystem-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-skia-input-validation-flaw-in-ed-1614807e",
-    "title": "Microsoft Patches Skia Input Validation Flaw in Edge",
-    "summary": "Microsoft issued security updates for Microsoft Edge after Google assigned a vulnerability affecting shared Chromium components. Designated as CVE-2026-118348, the technical flaw involves improper input validation existing within the Skia graphics rendering engine. Organizations should deploy the latest Microsoft Edge browser builds and consult Google Chrome advisory notes to verify defensive updates.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118348",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118348"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patches-skia-input-validation-flaw-in-ed",
-      "article-1614807e",
-      "1614807e",
-      "microsoft-patches-skia-input-validation-flaw-in-ed-1fe91b",
-      "microsoft-patches-skia-input-validation-flaw-in-edge"
-    ]
-  },
-  {
-    "slug": "chromium-payments-memory-corruption-cve-2026-11834-ea72b36d",
-    "title": "Chromium Payments Memory Corruption CVE-2026-118349",
-    "summary": "A memory corruption flaw in Chromium’s Payments module, CVE-2026-118349, could allow attackers to execute arbitrary code via crafted payment data. The flaw stems from improper bounds checking during payment data parsing, enabling a buffer overflow that may allow remote code execution. Microsoft Edge users should update to the latest Chromium-based release, as the patch is integrated.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118349",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118349"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-payments-memory-corruption-cve-2026-11834",
-      "article-ea72b36d",
-      "ea72b36d",
-      "chromium-payments-memory-corruption-cve-2026-11834-1fe91b",
-      "chromium-payments-memory-corruption-cve-2026-118349"
-    ]
-  },
-  {
-    "slug": "chromium-out-of-bounds-write-cve-2026-118342-fixed-f8a08b34",
-    "title": "Chromium Out-of-Bounds Write CVE-2026-118342 Fixed",
-    "summary": "An out-of-bounds write flaw, CVE-2026-118342, was discovered in Chromium's Editing module, affecting Microsoft Edge (Chromium-based) browsers. The vulnerability allows memory corruption during text editing operations, potentially enabling arbitrary code execution if exploited, though no active exploitation reports exist. Microsoft Edge incorporates the Chromium patch, and users should update to the latest release via the Chrome update channel.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118342",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118342"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-out-of-bounds-write-cve-2026-118342-fixed",
-      "article-f8a08b34",
-      "f8a08b34",
-      "chromium-out-of-bounds-write-cve-2026-118342-fixed-1fe91b"
     ]
   }
 ];
