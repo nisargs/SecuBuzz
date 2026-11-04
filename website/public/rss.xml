@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 14:46:41 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 15:46:21 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Calendar phishing campaign hijacks sessions, bypasses MFA</title>
+      <link>https://secubuzz.com/news/google-calendar-phishing-campaign-hijacks-sessions-6a1b1200</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-calendar-phishing-campaign-hijacks-sessions-6a1b1200</guid>
+      <description><![CDATA[A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers.]]></description>
+      <pubDate>Wed, 04 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases JBoss EAP 8.1.9 XP 6.0.7.GA Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-79ca22b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-79ca22b3</guid>
+      <description><![CDATA[Red Hat released JBoss Enterprise Application Platform 8.1.9 XP 6.0.7.GA to update the EAP 8.1.9 base. The update incorporates unspecified fixes and enhancements, as outlined in the release notes, but does not introduce new vulnerabilities. Security teams should apply the new version to maintain compatibility and benefit from the improvements.]]></description>
+      <pubDate>Wed, 04 Nov 2026 14:44:48 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95221">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SonicWall Alerts on Unpatched GMS End‑of‑Life Flaws</title>
+      <link>https://secubuzz.com/news/sonicwall-alerts-on-unpatched-gms-end-of-life-flaw-a34413db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-alerts-on-unpatched-gms-end-of-life-flaw-a34413db</guid>
+      <description><![CDATA[SonicWall warned customers of two security flaws in its end‑of‑life Global Management System (GMS) that will not receive patches. The vulnerabilities, which remain unmitigated, could allow attackers to exploit the GMS platform, potentially enabling access or code execution, though no public exploit is reported. Security teams should decommission affected GMS instances or migrate to supported solutions to mitigate risk.]]></description>
+      <pubDate>Wed, 04 Nov 2026 14:42:25 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cycurion Launches Habit SOC Tool</title>
+      <link>https://secubuzz.com/news/cycurion-launches-habit-soc-tool-a28410c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cycurion-launches-habit-soc-tool-a28410c8</guid>
+      <description><![CDATA[Cycurion introduced Habit, an AI‑driven security operations center platform designed to identify threats before they disrupt operations. Habit learns normal behavior across identities, devices, and workloads, then actively seeks deviations, enabling proactive detection of anomalous activity. The launch positions Cycurion as a predictive cybersecurity company, leveraging a team of former U.S. Intelligence Community and private‑sector experts.]]></description>
+      <pubDate>Wed, 04 Nov 2026 14:40:23 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/04/cycurion-habit/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>APT29 Targets Mobile Devices Using Patched Exploits</title>
       <link>https://secubuzz.com/news/apt29-targets-mobile-devices-using-patched-exploit-fc26991b</link>
@@ -15,6 +51,15 @@
       <pubDate>Wed, 04 Nov 2026 14:38:37 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/04/apt29-watering-hole-mobile-devices-n-day-exploits/">Help Net Security</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Sysdig Enhances Runtime Security for AI Agents</title>
+      <link>https://secubuzz.com/news/sysdig-enhances-runtime-security-for-ai-agents-a1f1297a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sysdig-enhances-runtime-security-for-ai-agents-a1f1297a</guid>
+      <description><![CDATA[Sysdig expanded its platform to provide runtime visibility and governance for AI agents, tracking their actions before reaching production systems. The new capability blocks risky behavior by monitoring AI agent activity, enabling security teams to intervene proactively. Organizations can integrate Sysdig’s runtime controls to enforce compliance and reduce the attack surface of AI workloads.]]></description>
+      <pubDate>Wed, 04 Nov 2026 14:34:44 GMT</pubDate>
+      <source url="https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/">SecurityWeek</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Patches Important Flaw in PKI Core</title>
@@ -35,6 +80,24 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>Barracuda ESG Auth Bypass Enables Root Access</title>
+      <link>https://secubuzz.com/news/barracuda-esg-auth-bypass-enables-root-access-027a29b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-esg-auth-bypass-enables-root-access-027a29b3</guid>
+      <description><![CDATA[Barracuda’s Email Security Gateway appliances have an authentication bypass that can be chained with a command injection flaw to gain root privileges. The flaw, CVE-2026-116606, permits attackers to execute arbitrary commands after authenticating with weak credentials. Barracuda has issued a patch; administrators should apply it immediately and enforce strong authentication.]]></description>
+      <pubDate>Wed, 04 Nov 2026 14:24:54 GMT</pubDate>
+      <source url="https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>The Sandbox Fights Back: Joe Security Launches Adaptive Detonation</title>
+      <link>https://secubuzz.com/news/the-sandbox-fights-back-joe-security-launches-adap-ac724a59</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/the-sandbox-fights-back-joe-security-launches-adap-ac724a59</guid>
+      <description><![CDATA[Reinach, Switzerland, November 4th, 2026, CyberNewswire AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions. Joe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during an initial sandbox run.]]></description>
+      <pubDate>Wed, 04 Nov 2026 13:56:40 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/the-sandbox-fights-back-joe-security-launches-adaptive-detonation/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat Issues dnsmasq Patch for CVE-2026-43871 on RHEL 9.2 and 9.4</title>
       <link>https://secubuzz.com/news/red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on-cf60773e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on-cf60773e</guid>
@@ -53,6 +116,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Node.js Schedules High-Severity Security Fixes for 22.x, 24.x, and 26.x Release Lines</title>
+      <link>https://secubuzz.com/news/node-js-schedules-high-severity-security-fixes-for-10ca6f84</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-js-schedules-high-severity-security-fixes-for-10ca6f84</guid>
+      <description><![CDATA[The Node.js project has scheduled security updates for its 22.x, 24.x, and 26.x release lines on or shortly after Wednesday, November 11, 2026. The announcement gives developers and system administrators time to prepare for patches addressing HIGH-rated vulnerabilities across all three branches.]]></description>
+      <pubDate>Wed, 04 Nov 2026 12:59:05 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/node-js-schedules-patch/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>AI Token Theft Drives WorkOS, Northflank, Trigger.dev Breaches</title>
       <link>https://secubuzz.com/news/ai-token-theft-drives-workos-northflank-trigger-de-5721376b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-token-theft-drives-workos-northflank-trigger-de-5721376b</guid>
@@ -62,10 +134,10 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>RHSA-2026:95097: Important: pki-core:10.6 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95097-important-pki-core-10-6-security-u-1f33716b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95097-important-pki-core-10-6-security-u-1f33716b</guid>
-      <description><![CDATA[An update for the pki-core:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.]]></description>
+      <title>Red Hat Kernel Patch Addresses CVE-2026-43871</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-patch-addresses-cve-2026-43871-05ee7afe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-patch-addresses-cve-2026-43871-05ee7afe</guid>
+      <description><![CDATA[Red Hat released a kernel update for RHEL 8 to address CVE-2026-43871, a flaw that could allow privilege escalation or remote code execution. The vulnerability, rated Important by Product Security, has a CVSS base score listed but no active exploitation reported. The patch is available through standard RHEL 8 update channels; administrators should apply it promptly to mitigate potential exploitation.]]></description>
       <pubDate>Wed, 04 Nov 2026 12:33:52 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95097">Red Hat Security Advisories</source>
       <category>CVE</category>
@@ -384,78 +456,6 @@
       <pubDate>Wed, 04 Nov 2026 07:00:26 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Fake Downloads Hijack Windows PCs for Monetization</title>
-      <link>https://secubuzz.com/news/fake-downloads-hijack-windows-pcs-for-monetization-d34df581</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-downloads-hijack-windows-pcs-for-monetization-d34df581</guid>
-      <description><![CDATA[Hackers embed malicious payloads in counterfeit software downloads to covertly compromise Windows PCs, targeting users seeking cracked or free applications. The malware installs bandwidth‑sharing, distributed‑compute, or ad‑delivery modules, monetizing network resources without user awareness via social engineering. Security teams should block malicious domains, enforce whitelisting, and educate users; Microsoft recommends applying latest Windows updates and running reputable anti‑malware.]]></description>
-      <pubDate>Wed, 04 Nov 2026 06:44:45 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-fake-software-downloads/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical Fence-Agents Patch</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-fence-agents-patch-0d661752</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-fence-agents-patch-0d661752</guid>
-      <description><![CDATA[Red Hat issued a critical security update for the fence-agents component on Red Enterprise Linux 10.0 Extended Update Support. The update addresses multiple high‑severity vulnerabilities, each with a CVSS base score indicating potential remote code execution or privilege escalation. Administrators should apply the fence-agents update immediately and verify that all affected systems are patched to mitigate exploitation risk.]]></description>
-      <pubDate>Wed, 04 Nov 2026 06:44:17 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95012">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ghostunnel Provides Mutual‑Auth TLS Proxy</title>
-      <link>https://secubuzz.com/news/ghostunnel-provides-mutual-auth-tls-proxy-c553a3bd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostunnel-provides-mutual-auth-tls-proxy-c553a3bd</guid>
-      <description><![CDATA[Ghostunnel is an open‑source TLS proxy that enables mutual authentication for applications lacking native TLS support. In server mode it terminates client TLS connections, verifies certificates, and forwards traffic to back‑end services over TCP or UNIX sockets. In client mode it accepts plain local connections, wraps them in TLS, and presents a client certificate to remote servers, simplifying secure communications.]]></description>
-      <pubDate>Wed, 04 Nov 2026 06:30:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/04/ghostunnel-open-source-tls-proxy/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ChromeOS Beta Updates to OS 16868.9.0</title>
-      <link>https://secubuzz.com/news/chromeos-beta-updates-to-os-16868-9-0-aeb8676b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-beta-updates-to-os-16868-9-0-aeb8676b</guid>
-      <description><![CDATA[Google released a beta channel update for ChromeOS and ChromeOS Flex, bumping the OS to version 16868.9.0 and the browser to 158.0.8127.9. The update includes bug fixes and performance improvements, with users encouraged to report issues via the ChromeOS communities or bug‑tracking channels. Administrators should verify that devices receive the new beta build and monitor for regressions before wider deployment.]]></description>
-      <pubDate>Wed, 04 Nov 2026 06:16:07 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Secure your containers without breaking what works</title>
-      <link>https://secubuzz.com/news/secure-your-containers-without-breaking-what-works-2c37d2d1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/secure-your-containers-without-breaking-what-works-2c37d2d1</guid>
-      <description><![CDATA[Teams identify vulnerabilities, but turning those findings into lower risk is much harder. Each unnecessary component can expand the attack surface and add vulnerabilities to investigate, patch or explain during an audit. Consider an NGINX image that contains 274 categorized vulnerabilities straight from download.]]></description>
-      <pubDate>Wed, 04 Nov 2026 06:00:34 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/04/rapidfort-runtime-container-profiling/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ashlar-Vellum Cobalt XE File Parsing Use-After-Free RCE</title>
-      <link>https://secubuzz.com/news/ashlar-vellum-cobalt-xe-file-parsing-use-after-fre-8c0fd99b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ashlar-vellum-cobalt-xe-file-parsing-use-after-fre-8c0fd99b</guid>
-      <description><![CDATA[A use-after-free vulnerability in Ashlar-Vellum Cobalt XE file parsing allows remote code execution when a user opens a malicious file. The assigned CVE is CVE-2026-121742 with a CVSS rating of 7.8. Users should avoid opening untrusted files and apply vendor patches as soon as available.]]></description>
-      <pubDate>Wed, 04 Nov 2026 06:00:00 GMT</pubDate>
-      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-874/">ZDI Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ashlar-Vellum Cobalt Vulnerability Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/ashlar-vellum-cobalt-vulnerability-enables-remote-85bb0af9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ashlar-vellum-cobalt-vulnerability-enables-remote-85bb0af9</guid>
-      <description><![CDATA[A use-after-free vulnerability in Ashlar-Vellum Cobalt XE allows remote attackers to execute arbitrary code on affected installations. Tracked as CVE-2026-121753 with a CVSS score of 7.8, the flaw requires user interaction through a malicious file or webpage. Security teams should restrict untrusted file opening and monitor vendor advisories for mitigations against this zero-day flaw.]]></description>
-      <pubDate>Wed, 04 Nov 2026 06:00:00 GMT</pubDate>
-      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-872/">ZDI Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ZDI-26-871: (0Day) Ashlar-Vellum Cobalt LI File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability</title>
-      <link>https://secubuzz.com/news/zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsi-8ceda593</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsi-8ceda593</guid>
-      <description><![CDATA[This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-121752.]]></description>
-      <pubDate>Wed, 04 Nov 2026 06:00:00 GMT</pubDate>
-      <source url="http://www.zerodayinitiative.com/advisories/ZDI-26-871/">ZDI Advisories</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

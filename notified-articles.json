@@ -3365,5 +3365,17 @@
   "https://www.malwarebytes.com/blog/bugs/2026/11/chrome-157-fixes-213-security-issues-including-7-critical-flaws",
   "https://cybersecuritynews.com/microsoft-edge/",
   "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
-  "http://www.zerodayinitiative.com/advisories/ZDI-26-871/"
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-871/",
+  "https://access.redhat.com/errata/RHSA-2026:95212",
+  "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-873/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-870/",
+  "https://cybersecuritynews.com/the-sandbox-fights-back-joe-security-launches-adaptive-detonation/",
+  "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
+  "https://access.redhat.com/errata/RHSA-2026:95221",
+  "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
+  "https://www.helpnetsecurity.com/2026/11/04/cycurion-habit/",
+  "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-869/",
+  "https://cybersecuritynews.com/node-js-schedules-patch/"
 ]

@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-calendar-phishing-campaign-hijacks-sessions-6a1b1200",
+    "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
+    "summary": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
+    "publishedAt": "2026-11-04T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-calendar-phishing-campaign-hijacks-sessions",
+      "article-6a1b1200",
+      "6a1b1200",
+      "google-calendar-phishing-campaign-hijacks-sessions-6a4a1e",
+      "google-calendar-phishing-campaign-hijacks-sessions-bypasses-"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-79ca22b3",
+    "title": "Red Hat Releases JBoss EAP 8.1.9 XP 6.0.7.GA Update",
+    "summary": "Red Hat released JBoss Enterprise Application Platform 8.1.9 XP 6.0.7.GA to update the EAP 8.1.9 base. The update incorporates unspecified fixes and enhancements, as outlined in the release notes, but does not introduce new vulnerabilities. Security teams should apply the new version to maintain compatibility and benefit from the improvements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95221",
+    "publishedAt": "2026-11-04T14:44:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat",
+      "article-79ca22b3",
+      "79ca22b3",
+      "red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-37d84d",
+      "red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-update"
+    ]
+  },
+  {
+    "slug": "sonicwall-alerts-on-unpatched-gms-end-of-life-flaw-a34413db",
+    "title": "SonicWall Alerts on Unpatched GMS End‑of‑Life Flaws",
+    "summary": "SonicWall warned customers of two security flaws in its end‑of‑life Global Management System (GMS) that will not receive patches. The vulnerabilities, which remain unmitigated, could allow attackers to exploit the GMS platform, potentially enabling access or code execution, though no public exploit is reported. Security teams should decommission affected GMS instances or migrate to supported solutions to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
+    "publishedAt": "2026-11-04T14:42:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sonicwall-alerts-on-unpatched-gms-end-of-life-flaw",
+      "article-a34413db",
+      "a34413db",
+      "sonicwall-alerts-on-unpatched-gms-end-of-life-flaw-58371b",
+      "sonicwall-alerts-on-unpatched-gms-end-of-life-flaws"
+    ]
+  },
+  {
+    "slug": "cycurion-launches-habit-soc-tool-a28410c8",
+    "title": "Cycurion Launches Habit SOC Tool",
+    "summary": "Cycurion introduced Habit, an AI‑driven security operations center platform designed to identify threats before they disrupt operations. Habit learns normal behavior across identities, devices, and workloads, then actively seeks deviations, enabling proactive detection of anomalous activity. The launch positions Cycurion as a predictive cybersecurity company, leveraging a team of former U.S. Intelligence Community and private‑sector experts.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/cycurion-habit/",
+    "publishedAt": "2026-11-04T14:40:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cycurion-launches-habit-soc-tool",
+      "article-a28410c8",
+      "a28410c8",
+      "cycurion-launches-habit-soc-tool-311fbd"
+    ]
+  },
+  {
     "slug": "apt29-targets-mobile-devices-using-patched-exploit-fc26991b",
     "title": "APT29 Targets Mobile Devices Using Patched Exploits",
     "summary": "Russian threat group APT29 is targeting iOS and Android users using watering hole attacks delivered through compromised websites and lookalike domains. According to a report by Sekoia, the operation utilizes n-day exploits for patched vulnerabilities to steal user cookies, messages, and Wi-Fi passwords. Security teams should enforce immediate mobile OS updates and restrict access to unverified external web resources.",
@@ -27,6 +102,24 @@ export const news: NewsBrief[] = [
       "fc26991b",
       "apt29-targets-mobile-devices-using-patched-exploit-50e3aa",
       "apt29-targets-mobile-devices-using-patched-exploits"
+    ]
+  },
+  {
+    "slug": "sysdig-enhances-runtime-security-for-ai-agents-a1f1297a",
+    "title": "Sysdig Enhances Runtime Security for AI Agents",
+    "summary": "Sysdig expanded its platform to provide runtime visibility and governance for AI agents, tracking their actions before reaching production systems. The new capability blocks risky behavior by monitoring AI agent activity, enabling security teams to intervene proactively. Organizations can integrate Sysdig’s runtime controls to enforce compliance and reduce the attack surface of AI workloads.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
+    "publishedAt": "2026-11-04T14:34:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sysdig-enhances-runtime-security-for-ai-agents",
+      "article-a1f1297a",
+      "a1f1297a",
+      "sysdig-enhances-runtime-security-for-ai-agents-118982"
     ]
   },
   {
@@ -66,6 +159,45 @@ export const news: NewsBrief[] = [
       "d740d667",
       "apt29-watering-hole-campaign-targets-ios-and-andro-493d8c",
       "apt29-watering-hole-campaign-targets-ios-and-android-users"
+    ]
+  },
+  {
+    "slug": "barracuda-esg-auth-bypass-enables-root-access-027a29b3",
+    "title": "Barracuda ESG Auth Bypass Enables Root Access",
+    "summary": "Barracuda’s Email Security Gateway appliances have an authentication bypass that can be chained with a command injection flaw to gain root privileges. The flaw, CVE-2026-116606, permits attackers to execute arbitrary commands after authenticating with weak credentials. Barracuda has issued a patch; administrators should apply it immediately and enforce strong authentication.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
+    "publishedAt": "2026-11-04T14:24:54.000Z",
+    "cves": [
+      "CVE-2026-116606"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-esg-auth-bypass-enables-root-access",
+      "article-027a29b3",
+      "027a29b3",
+      "barracuda-esg-auth-bypass-enables-root-access-77e93a"
+    ]
+  },
+  {
+    "slug": "the-sandbox-fights-back-joe-security-launches-adap-ac724a59",
+    "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
+    "summary": "Reinach, Switzerland, November 4th, 2026, CyberNewswire AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions. Joe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during an initial sandbox run.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/the-sandbox-fights-back-joe-security-launches-adaptive-detonation/",
+    "publishedAt": "2026-11-04T13:56:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "the-sandbox-fights-back-joe-security-launches-adap",
+      "article-ac724a59",
+      "ac724a59",
+      "the-sandbox-fights-back-joe-security-launches-adap-1b41a7",
+      "the-sandbox-fights-back-joe-security-launches-adaptive-deton"
     ]
   },
   {
@@ -116,6 +248,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "node-js-schedules-high-severity-security-fixes-for-10ca6f84",
+    "title": "Node.js Schedules High-Severity Security Fixes for 22.x, 24.x, and 26.x Release Lines",
+    "summary": "The Node.js project has scheduled security updates for its 22.x, 24.x, and 26.x release lines on or shortly after Wednesday, November 11, 2026. The announcement gives developers and system administrators time to prepare for patches addressing HIGH-rated vulnerabilities across all three branches.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/node-js-schedules-patch/",
+    "publishedAt": "2026-11-04T12:59:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-schedules-high-severity-security-fixes-for",
+      "article-10ca6f84",
+      "10ca6f84",
+      "node-js-schedules-high-severity-security-fixes-for-4cf1ad",
+      "node-js-schedules-high-severity-security-fixes-for-22-x-24-x"
+    ]
+  },
+  {
     "slug": "ai-token-theft-drives-workos-northflank-trigger-de-5721376b",
     "title": "AI Token Theft Drives WorkOS, Northflank, Trigger.dev Breaches",
     "summary": "Hackers harvested AI access tokens from WorkOS, Northflank, and Trigger.dev, exploiting automated attack tools in the past month. The attacks leveraged AI‑assisted offensive frameworks, enabling rapid credential reuse and lateral movement across cloud services. Security teams should revoke exposed tokens, enforce multi‑factor authentication, and monitor for anomalous API usage continuously.",
@@ -135,24 +286,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "rhsa-2026-95097-important-pki-core-10-6-security-u-1f33716b",
-    "title": "RHSA-2026:95097: Important: pki-core:10.6 security update",
-    "summary": "An update for the pki-core:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "slug": "red-hat-kernel-patch-addresses-cve-2026-43871-05ee7afe",
+    "title": "Red Hat Kernel Patch Addresses CVE-2026-43871",
+    "summary": "Red Hat released a kernel update for RHEL 8 to address CVE-2026-43871, a flaw that could allow privilege escalation or remote code execution. The vulnerability, rated Important by Product Security, has a CVSS base score listed but no active exploitation reported. The patch is available through standard RHEL 8 update channels; administrators should apply it promptly to mitigate potential exploitation.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "Red Hat Security Advisories",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95097",
     "publishedAt": "2026-11-04T12:33:52.000Z",
     "cves": [
       "CVE-2026-43871"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95212"
+      }
+    ],
     "aliases": [
-      "rhsa-2026-95097-important-pki-core-10-6-security-u",
-      "article-1f33716b",
-      "1f33716b",
-      "rhsa-2026-95097-important-pki-core-10-6-security-u-37d854",
-      "rhsa-2026-95097-important-pki-core-10-6-security-update"
+      "red-hat-kernel-patch-addresses-cve-2026-43871",
+      "article-05ee7afe",
+      "05ee7afe",
+      "red-hat-kernel-patch-addresses-cve-2026-43871-37d854"
     ]
   },
   {
@@ -920,6 +1075,67 @@ export const news: NewsBrief[] = [
       "article-2c37d2d1",
       "2c37d2d1",
       "secure-your-containers-without-breaking-what-works-3699a1"
+    ]
+  },
+  {
+    "slug": "ashlar-vellum-cobalt-ar-heap-overflow-enables-rce-9f1a246f",
+    "title": "Ashlar-Vellum Cobalt AR Heap Overflow Enables RCE",
+    "summary": "A heap-based buffer overflow in Ashlar-Vellum Cobalt’s AR file parser allows remote attackers to execute arbitrary code after opening a malicious file. CVE-2026-121743 carries a CVSS score of 7.8 and requires user interaction to trigger the exploit. A patch is available; users should update the software immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-873/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-121743"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ashlar-vellum-cobalt-ar-heap-overflow-enables-rce",
+      "article-9f1a246f",
+      "9f1a246f",
+      "ashlar-vellum-cobalt-ar-heap-overflow-enables-rce-6f3cae"
+    ]
+  },
+  {
+    "slug": "ashlar-vellum-cobalt-xe-stack-overflow-enables-rce-6c8edb54",
+    "title": "Ashlar-Vellum Cobalt XE Stack Overflow Enables RCE",
+    "summary": "A stack-based buffer overflow in Ashlar-Vellum Cobalt XE’s file parser permits remote code execution when a user opens a crafted file. CVE-2026-121744 has a CVSS score of 7.8 and requires user interaction to trigger. A patch is available; administrators should update the product immediately to mitigate the critical vulnerability today.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-870/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-121744"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ashlar-vellum-cobalt-xe-stack-overflow-enables-rce",
+      "article-6c8edb54",
+      "6c8edb54",
+      "ashlar-vellum-cobalt-xe-stack-overflow-enables-rce-6f3cad"
+    ]
+  },
+  {
+    "slug": "zdi-26-869-mailenable-save-directory-traversal-arb-5bd67715",
+    "title": "ZDI-26-869: MailEnable Save Directory Traversal Arbitrary File Creation Vulnerability",
+    "summary": "This vulnerability allows remote attackers to create arbitrary files on affected installations of MailEnable. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-114556.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-869/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114556"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-869-mailenable-save-directory-traversal-arb",
+      "article-5bd67715",
+      "5bd67715",
+      "zdi-26-869-mailenable-save-directory-traversal-arb-6f3cab",
+      "zdi-26-869-mailenable-save-directory-traversal-arbitrary-fil"
     ]
   },
   {
@@ -9245,231 +9461,6 @@ export const news: NewsBrief[] = [
       "article-8d3fe687",
       "8d3fe687",
       "chromium-skia-memory-corruption-cve-2026-118319-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-memory-corruption-cve-2026-118305-fixed-94a29281",
-    "title": "Chromium Memory Corruption CVE-2026-118305 Fixed",
-    "summary": "A memory corruption flaw (CVE-2026-118305) in Chromium's Turbolev component can be triggered by malformed input during rendering. The vulnerability allows local code execution if an attacker supplies crafted data, but no active exploitation has been reported. Microsoft Edge users should install the latest Chromium update, and Chrome users can apply the patch released in the 2026 update cycle.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118305",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118305"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-memory-corruption-cve-2026-118305-fixed",
-      "article-94a29281",
-      "94a29281",
-      "chromium-memory-corruption-cve-2026-118305-fixed-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-paint-use-after-free-cve-2026-118307-fixe-8c1c5b1c",
-    "title": "Chromium Paint Use-After-Free CVE-2026-118307 Fixed",
-    "summary": "A use-after-free flaw (CVE-2026-118307) in Chromium's Paint engine can be triggered by maliciously crafted graphics files. The defect may lead to arbitrary code execution if an attacker supplies a specially crafted image, though no public exploits are known. Edge and Chrome users should apply the latest Chromium patch, which resolves the use-after-free vulnerability in the Paint module.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118307",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118307"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-paint-use-after-free-cve-2026-118307-fixe",
-      "article-8c1c5b1c",
-      "8c1c5b1c",
-      "chromium-paint-use-after-free-cve-2026-118307-fixe-1fe91c",
-      "chromium-paint-use-after-free-cve-2026-118307-fixed"
-    ]
-  },
-  {
-    "slug": "chromium-svg-use-after-free-cve-2026-118308-af2a1f21",
-    "title": "Chromium SVG Use-After-Free CVE-2026-118308",
-    "summary": "A use‑after‑free flaw in Chromium’s SVG engine, CVE‑2026‑118308, can be triggered by crafted SVG files in Microsoft Edge (Chromium‑based). The flaw allows arbitrary memory access that could lead to code execution, but no public exploit has been released. Google and Microsoft have patched the issue in recent Chrome releases; users should upgrade to the latest Chromium build.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118308"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-svg-use-after-free-cve-2026-118308",
-      "article-af2a1f21",
-      "af2a1f21",
-      "chromium-svg-use-after-free-cve-2026-118308-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-views-input-validation-cve-2026-118310-bcb67e7c",
-    "title": "Chromium Views Input Validation CVE-2026-118310",
-    "summary": "Chromium’s Views component has an improper input validation flaw, CVE‑2026‑118310, triggered by malformed view data in Microsoft Edge (Chromium‑based). The flaw could enable memory corruption or code execution, but no public exploit has been disclosed. Google and Microsoft patched the issue in recent Chrome releases; users should upgrade to the latest Chromium build.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118310"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-views-input-validation-cve-2026-118310",
-      "article-bcb67e7c",
-      "bcb67e7c",
-      "chromium-views-input-validation-cve-2026-118310-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-improper-input-validation-in-v8-cve-2026-9ea55134",
-    "title": "Chromium Improper Input Validation in V8 (CVE-2026-118316)",
-    "summary": "CVE-2026-118316 reveals an improper input validation flaw in Chromium’s V8 engine, affecting Microsoft Edge. The flaw could allow crafted input to trigger arbitrary code execution, though no public exploit is known. Users should install the latest Chromium-based update, and vendors should review Chrome release notes for mitigation in production globally.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118316",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118316"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-improper-input-validation-in-v8-cve-2026",
-      "article-9ea55134",
-      "9ea55134",
-      "chromium-improper-input-validation-in-v8-cve-2026-1fe91c",
-      "chromium-improper-input-validation-in-v8-cve-2026-118316"
-    ]
-  },
-  {
-    "slug": "chromium-improper-access-control-in-v8-cve-2026-11-89e6ff99",
-    "title": "Chromium Improper Access Control in V8 (CVE-2026-118318)",
-    "summary": "CVE-2026-118318 exposes an improper access control flaw in Chromium’s V8 engine, impacting Microsoft Edge. The vulnerability could permit unauthorized execution of JavaScript code if an attacker supplies crafted input, but no public exploit exists today. Apply the latest Chromium-based update, and monitor Chrome release notes for vendor‑issued mitigation guidance globally.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118318",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118318"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-improper-access-control-in-v8-cve-2026-11",
-      "article-89e6ff99",
-      "89e6ff99",
-      "chromium-improper-access-control-in-v8-cve-2026-11-1fe91c",
-      "chromium-improper-access-control-in-v8-cve-2026-118318"
-    ]
-  },
-  {
-    "slug": "chromium-improper-svg-validation-flaw-fa3eba7b",
-    "title": "Chromium Improper SVG Validation Flaw",
-    "summary": "Chromium’s SVG parser has an improper input validation flaw, CVE-2026-118315, that can be triggered by malicious SVG files in Microsoft Edge. The issue stems from insufficient sanitization of SVG attributes, potentially enabling cross‑site scripting or code execution when an attacker supplies crafted content.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118315"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-improper-svg-validation-flaw",
-      "article-fa3eba7b",
-      "fa3eba7b",
-      "chromium-improper-svg-validation-flaw-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-paint-memory-corruption-flaw-cb8f041f",
-    "title": "Chromium Paint Memory Corruption Flaw",
-    "summary": "Chromium’s Paint component contains a memory corruption flaw, CVE-2026-118312, that can be triggered by malicious image files in Microsoft Edge. It stems from improper bounds checking during image decoding, which may allow arbitrary code execution. Edge users should install the latest Chromium‑based update; the patch is bundled with Google Chrome releases, as documented in the official blog.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118312"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-paint-memory-corruption-flaw",
-      "article-cb8f041f",
-      "cb8f041f",
-      "chromium-paint-memory-corruption-flaw-1fe91c"
-    ]
-  },
-  {
-    "slug": "edge-affected-by-cve-2026-118311-media-memory-corr-05972fde",
-    "title": "Edge Affected by CVE-2026-118311 Media Memory Corruption",
-    "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium’s Media component, identified as CVE-2026-118311. The flaw could allow arbitrary code execution when processing a crafted media stream, though no public exploit has been released. Microsoft advises installing the latest Chromium update, which includes the patch, and keeping Edge current to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118311",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118311"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-affected-by-cve-2026-118311-media-memory-corr",
-      "article-05972fde",
-      "05972fde",
-      "edge-affected-by-cve-2026-118311-media-memory-corr-1fe91c",
-      "edge-affected-by-cve-2026-118311-media-memory-corruption"
-    ]
-  },
-  {
-    "slug": "edge-affected-by-cve-2026-118317-html-memory-corru-d43c05a8",
-    "title": "Edge Affected by CVE-2026-118317 HTML Memory Corruption",
-    "summary": "Microsoft Edge (Chromium-based) is impacted by a memory corruption flaw in Chromium’s HTML component, identified as CVE-2026-118317. The vulnerability could enable arbitrary code execution when rendering a malicious HTML payload, but no public exploit has been disclosed. Microsoft recommends applying the latest Chromium update that contains the patch and ensuring Edge remains up‑to‑date to mitigate the issue.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118317",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118317"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-affected-by-cve-2026-118317-html-memory-corru",
-      "article-d43c05a8",
-      "d43c05a8",
-      "edge-affected-by-cve-2026-118317-html-memory-corru-1fe91c",
-      "edge-affected-by-cve-2026-118317-html-memory-corruption"
-    ]
-  },
-  {
-    "slug": "chromium-svg-input-validation-flaw-cve-2026-118304-95421beb",
-    "title": "Chromium SVG Input Validation Flaw CVE-2026-118304",
-    "summary": "Chromium's SVG parser contains an improper input validation flaw identified as CVE-2026-118304. The vulnerability allows malformed SVG files to trigger unexpected behavior, potentially leading to memory corruption or denial‑of‑service, though no active exploitation has been reported. Google released a patch in the latest Chrome update; users should upgrade to the newest version to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118304",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118304"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-svg-input-validation-flaw-cve-2026-118304",
-      "article-95421beb",
-      "95421beb",
-      "chromium-svg-input-validation-flaw-cve-2026-118304-1fe91c"
     ]
   }
 ];
