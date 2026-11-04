@@ -1,5 +1,45 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95088",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95088",
+    "title": "Red Hat Issues dnsmasq Patch for CVE-2026-43871 on RHEL 9.2 and 9.4",
+    "headline": "Red Hat Issues dnsmasq Patch for CVE-2026-43871 on RHEL 9.2 and 9.4",
+    "summary": "Red Hat has issued a security update for dnsmasq on RHEL 9.2 and 9.4, addressing CVE-2026-43871. The flaw is a buffer overflow in the DHCP packet parser that allows local attackers to gain elevated privileges. Administrators should apply the patch immediately and verify the new firmware version on all affected hosts.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T13:30:26.000Z",
+    "ingestedAt": "2026-11-04T13:43:11.081Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:95088",
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95093"
+      }
+    ],
+    "cves": [
+      "CVE-2026-43871"
+    ]
+  },
+  {
+    "id": "https://isc.sans.edu/diary/rss/33488",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33488",
+    "title": "Classic CGI Email Script Vulnerability Exploited for Code Execution",
+    "headline": "Classic CGI Email Script Vulnerability Exploited for Code Execution",
+    "summary": "The blog revisits CVE-2000-0411, a CGI-bin script flaw that allowed attackers to manipulate email parameters and leak environment variables. The vulnerability enabled arbitrary code execution when parameters were passed directly to the sendmail binary, facilitating spam and potential system compromise. Modern web servers should disable CGI scripts, enforce strict input validation, and apply current security patches to prevent similar exploits.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-04T13:24:13.000Z",
+    "ingestedAt": "2026-11-04T13:43:11.081Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33488",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:95097",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95097",
     "title": "RHSA-2026:95097: Important: pki-core:10.6 security update",
@@ -19,6 +59,22 @@
     "isFallback": true
   },
   {
+    "id": "https://cybersecuritynews.com/zyxel-gs1900-zero-day-exploited/",
+    "sourceUrl": "https://cybersecuritynews.com/zyxel-gs1900-zero-day-exploited/",
+    "title": "Zyxel GS1900 Switches Hijacked via New Zero-Day",
+    "headline": "Zyxel GS1900 Switches Hijacked via New Zero-Day",
+    "summary": "A newly identified flaw in Zyxel GS1900 switches, tracked as CVE-2026-107441, is actively exploited in the wild to hijack device control. The flaw allows remote attackers to execute arbitrary commands via malformed management traffic, bypassing Zyxel's ineffective patch. Zyxel released a new firmware update; teams should apply it immediately and monitor logs for unauthorized access.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T11:57:24.000Z",
+    "ingestedAt": "2026-11-04T13:43:11.081Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/zyxel-gs1900-zero-day-exploited/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:95061",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95061",
     "title": "RHSA-2026:95061: Important: flatpak security update",
@@ -29,6 +85,25 @@
     "source": "Red Hat Security Advisories",
     "publishedAt": "2026-11-04T11:51:07.000Z",
     "ingestedAt": "2026-11-04T12:43:37.506Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95085",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95085",
+    "title": "RHSA-2026:95085: Important: tesseract security update",
+    "headline": "RHSA-2026:95085: Important: tesseract security update",
+    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T11:48:26.000Z",
+    "ingestedAt": "2026-11-04T13:44:02.113Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [
@@ -52,6 +127,39 @@
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
     "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
+    "title": "Agent Runtime Security Fails Without Underlying Layers",
+    "headline": "Agent Runtime Security Fails Without Underlying Layers",
+    "summary": "Most agent security tools stop bad actions only for agents whose traffic passes through an enterprise gateway. Agents operating outside that gateway lack runtime visibility, enabling unsafe automation behaviors. Organizations must deploy layered runtime monitoring beyond gateway-based controls to detect and prevent unauthorized agent actions.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-04T11:34:20.000Z",
+    "ingestedAt": "2026-11-04T13:43:41.081Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/google-releases-major-chrome-security-update/",
+    "sourceUrl": "https://cybersecuritynews.com/google-releases-major-chrome-security-update/",
+    "title": "Google Releases Major Chrome Security Update Fixing 213 Bugs, Including 7 Critical Vulnerabilities",
+    "headline": "Google Releases Major Chrome Security Update Fixing 213 Bugs, Including 7 Critical Vulnerabilities",
+    "summary": "Google has released Chrome 157 for Windows, macOS, and Linux, fixing 213 security bugs, including seven rated critical. Announced on November 3, 2026, the update addresses flaws across graphics, memory handling, browser features, and access controls. Google says the stable release will reach users over the coming days and weeks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T11:27:04.000Z",
+    "ingestedAt": "2026-11-04T13:43:18.282Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
@@ -87,6 +195,23 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/cloudflare-launches-zero-wire/",
+    "sourceUrl": "https://cybersecuritynews.com/cloudflare-launches-zero-wire/",
+    "title": "Cloudflare Launches Zero Wire to Track Critical CVEs, Active Exploits, and Security Fixes",
+    "headline": "Cloudflare Launches Zero Wire to Track Critical CVEs, Active Exploits, and Security Fixes",
+    "summary": "Cloudflare has launched Zero Wire, a public vulnerability intelligence feed designed to help security teams track critical CVEs, understand exploitation activity, and find security fixes. Announced on November 3, 2026, the service sits within Cloudflare Radar’s security section and brings technical evidence, vendor guidance, and recommended actions into readable briefings.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T11:10:14.000Z",
+    "ingestedAt": "2026-11-04T13:44:02.113Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
     "sourceUrl": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
     "title": "OpsShield Update Servers Compromised via cPGuard Poisoning",
@@ -101,6 +226,25 @@
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95082",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95082",
+    "title": "RHSA-2026:95082: Important: python3 security update",
+    "headline": "RHSA-2026:95082: Important: python3 security update",
+    "summary": "An update for python3 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T10:40:09.000Z",
+    "ingestedAt": "2026-11-04T13:44:02.112Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
@@ -220,6 +364,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/ransomware-gangs/",
+    "sourceUrl": "https://cybersecuritynews.com/ransomware-gangs/",
+    "title": "Ransomware Leak Site Listings Increase 30 Percent",
+    "headline": "Ransomware Leak Site Listings Increase 30 Percent",
+    "summary": "According to cybersecurity researchers, ransomware extortion leak site listings surged by 30 percent in the third quarter of 2026. The volume surge was driven primarily by newly emerging, unproven threat groups posting potentially fabricated enterprise breach claims. Security teams should independently verify extortion claims and assess compromise indicators rather than trusting public leak site postings.",
+    "category": "GENERAL",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T09:35:04.000Z",
+    "ingestedAt": "2026-11-04T13:44:00.659Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/ransomware-gangs/",
     "additionalSources": []
   },
   {
@@ -8004,126 +8164,5 @@
     "cves": [
       "CVE-2026-111497"
     ]
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-013/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-013/",
-    "title": "F5 BIG-IP APM Vulnerability Exposed to Active Exploitation",
-    "headline": "F5 BIG-IP APM Vulnerability Exposed to Active Exploitation",
-    "summary": "F5 disclosed a critical flaw in its BIG‑IP APM product that has been actively exploited in the wild. The vulnerability allows attackers to bypass authentication controls, potentially gaining unauthorized administrative access to network devices. F5 has released a patch; security teams must apply it immediately and verify configuration hardening to prevent further exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T06:43:54.965Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-013/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/60000-attacks-targeting-wordpress/",
-    "sourceUrl": "https://cybersecuritynews.com/60000-attacks-targeting-wordpress/",
-    "title": "WordPress RCE Vulnerability Targeted by 60,000 Attacks",
-    "headline": "WordPress RCE Vulnerability Targeted by 60,000 Attacks",
-    "summary": "Hackers targeted a WordPress Core remote code execution vulnerability during software updates, with 60,471 blocked attempts recorded by Wordfence in 24 hours. The flaw, identified as CVE-2026-101767, allows unauthenticated attackers to execute arbitrary code on affected sites, potentially compromising site integrity and data. WordPress released version 7.1.4 to address the issue; administrators should update immediately and monitor for suspicious activity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-31T06:02:41.000Z",
-    "url": "https://cybersecuritynews.com/60000-attacks-targeting-wordpress/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-019/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-019/",
-    "title": "GitLab Patches Critical Unauthenticated RCE Flaw",
-    "headline": "GitLab Patches Critical Unauthenticated RCE Flaw",
-    "summary": "GitLab published a security advisory on 21 October 2026 addressing a critical vulnerability in GitLab Community and Enterprise Editions that allows unauthenticated arbitrary code execution on affected servers. The flaw enables remote attackers to compromise internet-facing GitLab instances without credentials, posing severe operational risk to source code repositories and CI/CD pipelines.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T05:48:08.535Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-019/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-018/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-018/",
-    "title": "PHP Unauthenticated RCE Vulnerabilities Pushed in Oct 2026",
-    "headline": "PHP Unauthenticated RCE Vulnerabilities Pushed in Oct 2026",
-    "summary": "PHP disclosed two critical vulnerabilities enabling unauthenticated remote code execution in versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35, with public PoCs circulating. Both flaws allow attackers to run arbitrary code without credentials, and active exploitation is suspected from emerging PoCs. PHP patched on 21 October 2026; admins should upgrade to the latest releases and monitor for exploitation attempts.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T05:44:58.809Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-018/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-014/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-014/",
-    "title": "Citrix NetScaler Exposed to Critical RCE Vulnerabilities",
-    "headline": "Citrix NetScaler Exposed to Critical RCE Vulnerabilities",
-    "summary": "Citrix NetScaler ADC and Gateway suffered eight vulnerabilities, including two critical unauthenticated RCE flaws confirmed in the wild, with CVE-2026-88779 cited as a representative case. The flaws permit attackers to execute arbitrary code on exposed devices without authentication, potentially compromising all internet‑exposed NetScaler instances. Citrix released patches; security teams must apply updates immediately and conduct compromise assessments on exposed systems.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T05:44:58.809Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-014/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-    "title": "ChatGPT Share Link Enables Session Code Execution",
-    "headline": "ChatGPT Share Link Enables Session Code Execution",
-    "summary": "A malicious ChatGPT share link can execute attacker code within a logged‑in session, granting the attacker read access to private conversations. The flaw stems from insufficient isolation of shared session data, allowing injected scripts to run with the user's privileges. OpenAI fixed the issue eight days after the researchers reported it, issuing a patch and rating the vulnerability as P1.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-31T05:33:41.000Z",
-    "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
-    "title": "Linux Kernel TCP Use-After-Free CVE Exploitable",
-    "headline": "Linux Kernel TCP Use-After-Free CVE Exploitable",
-    "summary": "AWS identified CVE-2026-98432, a use-after-free flaw in the Linux kernel IPv4 TCP handshake path affecting versions 4.4 and later. The flaw can trigger remote code execution during TCP connection establishment, posing a high risk to exposed services. Updated kernel packages for Amazon Linux 2 and 2023 are available; customers should apply patches and reboot, while managed services receive automatic updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "publishedAt": "2026-10-31T05:21:05.000Z",
-    "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
-    "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
-    "headline": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
-    "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-31T04:56:12.000Z",
-    "ingestedAt": "2026-10-31T23:27:54.999Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://cybersecuritynews.com/google-launches-gemini-4-carbon/",
-    "sourceUrl": "https://cybersecuritynews.com/google-launches-gemini-4-carbon/",
-    "title": "Google Unveils Gemini 4 Carbon AI for Security",
-    "headline": "Google Unveils Gemini 4 Carbon AI for Security",
-    "summary": "Google has launched Gemini 4 Carbon, an AI model designed to identify software vulnerabilities, assess exploitation potential, and generate remediation suggestions. The model builds on Gemini 4 Argon, extending capabilities to security and coding tasks that previously required days of effort. Access will be limited to selected cyber defenders initially, with broader availability expected after further testing and refinement.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-31T04:48:15.000Z",
-    "url": "https://cybersecuritynews.com/google-launches-gemini-4-carbon/",
-    "additionalSources": []
   }
 ]
