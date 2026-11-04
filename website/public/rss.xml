@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 20:45:53 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 21:45:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard</title>
@@ -15,6 +15,24 @@
       <pubDate>Wed, 04 Nov 2026 19:40:33 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>DreamHost Breach Exposes FTP Credentials</title>
+      <link>https://secubuzz.com/news/dreamhost-breach-exposes-ftp-credentials-9e6a5bae</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dreamhost-breach-exposes-ftp-credentials-9e6a5bae</guid>
+      <description><![CDATA[DreamHost confirmed a breach after attackers accessed its File Manager platform for two months, capturing customers' FTP/SFTP usernames and passwords. The intrusion exploited unauthorized platform access, exposing credential data that could enable credential stuffing or unauthorized file transfers. DreamHost urged users to change passwords, enable MFA, and review account activity while investigating the incident.]]></description>
+      <pubDate>Wed, 04 Nov 2026 19:05:19 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>French Bank Heist Steals $133 Million via Supplier Breach</title>
+      <link>https://secubuzz.com/news/french-bank-heist-steals-133-million-via-supplier-7e786033</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/french-bank-heist-steals-133-million-via-supplier-7e786033</guid>
+      <description><![CDATA[Crédit Mutuel Arkéa confirmed a cyber heist that transferred about $133 million using the bank’s account after compromising a supplier. Attackers used the supplier’s credentials to authenticate with the bank’s transfer system, enabling unauthorized fund movements without triggering fraud alerts. Bank officials are tightening supplier access controls, reviewing transaction monitoring, and notifying regulators while investigating the breach.]]></description>
+      <pubDate>Wed, 04 Nov 2026 18:58:00 GMT</pubDate>
+      <source url="https://therecord.media/french-bank-confirms-cyber-heist">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>SkyW4lker Phishing Kit Targets US Microsoft 365 Accounts</title>
@@ -107,6 +125,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Twisted IMAP Server Vulnerability Enables Resource Exhaustion DoS</title>
+      <link>https://secubuzz.com/news/twisted-imap-server-vulnerability-enables-resource-dbe3f525</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/twisted-imap-server-vulnerability-enables-resource-dbe3f525</guid>
+      <description><![CDATA[Twisted’s IMAP server mishandled wildcard patterns in mailbox list commands, letting an authenticated remote attacker trigger excessive resource consumption. The flaw can cause a denial of service by exhausting server memory or CPU, disrupting legitimate user access. Ubuntu’s USN-9000-1 patch corrects the wildcard handling logic; users should apply the update to mitigate DoS risk.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:24:47 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9000-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Google Partners Disrupt 1.3M-Device XCPE Botnet</title>
       <link>https://secubuzz.com/news/google-partners-disrupt-1-3m-device-xcpe-botnet-75329475</link>
       <guid isPermaLink="true">https://secubuzz.com/news/google-partners-disrupt-1-3m-device-xcpe-botnet-75329475</guid>
@@ -170,6 +197,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Chromium CVE-2026-119260: Use-After-Free Exploit</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-119260-use-after-free-exploit-b36f13f2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-119260-use-after-free-exploit-b36f13f2</guid>
+      <description><![CDATA[Chromium CVE-2026-119260 is a use-after-free flaw that may allow attackers to execute arbitrary code in the browser. Microsoft Edge, built on Chromium, inherits the same vulnerability; Google assigned the CVE and released a patch in recent Chrome updates. Users should upgrade to the latest Edge or apply the Chrome patch linked in Microsoft’s release notes to mitigate the risk.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Cisco Unified CM Vulnerable to Unauthenticated XSS</title>
       <link>https://secubuzz.com/news/cisco-unified-cm-vulnerable-to-unauthenticated-xss-f2a268d1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisco-unified-cm-vulnerable-to-unauthenticated-xss-f2a268d1</guid>
@@ -197,6 +233,33 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Chrome Beta Desktop 158 Update</title>
+      <link>https://secubuzz.com/news/chrome-beta-desktop-158-update-86a22153</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-desktop-158-update-86a22153</guid>
+      <description><![CDATA[Google Chrome Beta channel has been updated to version 158.0.8127.18 for Windows, Mac, and Linux platforms. This release includes partial changes documented in the Git log, with community bug reporting channels available for user feedback. The update represents a routine channel synchronization release without specific security vulnerability disclosures.]]></description>
+      <pubDate>Wed, 04 Nov 2026 15:43:33 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>USN-8998-1: Squid vulnerability</title>
+      <link>https://secubuzz.com/news/usn-8998-1-squid-vulnerability-3f698384</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-8998-1-squid-vulnerability-3f698384</guid>
+      <description><![CDATA[It was discovered that Squid incorrectly handled certain HTTP Transfer- Encoding headers. An attacker could possibly use this issue to perform HTTP request smuggling attacks, bypass security mechanisms, or poison web caches.]]></description>
+      <pubDate>Wed, 04 Nov 2026 15:32:22 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8998-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-8997-1: Net-SNMP vulnerability</title>
+      <link>https://secubuzz.com/news/usn-8997-1-net-snmp-vulnerability-7b785586</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-8997-1-net-snmp-vulnerability-7b785586</guid>
+      <description><![CDATA[It was discovered that Net-SNMP incorrectly handled newly accepted connections in the SMUX module. An unauthenticated remote attacker could possibly use this issue to cause Net-SNMP to block indefinitely, resulting in a denial of service.]]></description>
+      <pubDate>Wed, 04 Nov 2026 15:25:21 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8997-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>USN-7530-2: ADOdb vulnerability</title>
       <link>https://secubuzz.com/news/usn-7530-2-adodb-vulnerability-debdc786</link>
       <guid isPermaLink="true">https://secubuzz.com/news/usn-7530-2-adodb-vulnerability-debdc786</guid>
@@ -204,6 +267,15 @@
       <pubDate>Wed, 04 Nov 2026 15:14:52 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-7530-2">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Chrome Beta iOS 158 Release</title>
+      <link>https://secubuzz.com/news/chrome-beta-ios-158-release-559acb4d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-ios-158-release-559acb4d</guid>
+      <description><![CDATA[Google Chrome Beta channel has been updated to version 158.0.8127.13 for iOS, with availability on the App Store in coming days. The release includes partial changes documented in the Git log, alongside community bug reporting channels for user feedback. This is a routine channel synchronization release without specific security vulnerability disclosures.]]></description>
+      <pubDate>Wed, 04 Nov 2026 15:13:33 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>Google Calendar phishing campaign hijacks sessions, bypasses MFA</title>
@@ -267,6 +339,15 @@
       <pubDate>Wed, 04 Nov 2026 14:34:44 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95181">Red Hat Security Advisories</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Descope Envoy AI Agent Authentication</title>
+      <link>https://secubuzz.com/news/descope-envoy-ai-agent-authentication-5967a76b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/descope-envoy-ai-agent-authentication-5967a76b</guid>
+      <description><![CDATA[Descope announced Envoy, a capability enabling personal AI agents to receive delegated sign-in paths within consumer applications alongside existing authentication flows. Consumer companies can now treat agents as first-class users with dedicated identities and permission structures without rebuilding identity infrastructure. Launch partners include GoFundMe, You.com, GoodRx, and Composio.]]></description>
+      <pubDate>Wed, 04 Nov 2026 14:31:05 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/04/descope-envoy/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>APT29 Watering Hole Campaign Targets iOS and Android Users</title>
@@ -375,87 +456,6 @@
       <pubDate>Wed, 04 Nov 2026 13:52:13 GMT</pubDate>
       <source url="https://cybersecuritynews.com/scammers-use-microsoft-azure/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Europe-Wide Cyberattacks Alter Blood Refrigeration Controls</title>
-      <link>https://secubuzz.com/news/europe-wide-cyberattacks-alter-blood-refrigeration-3dbb4a86</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/europe-wide-cyberattacks-alter-blood-refrigeration-3dbb4a86</guid>
-      <description><![CDATA[A wave of cyberattacks targeting refrigeration equipment providers across Europe altered temperature controls at three French national blood service sites this week. Monitoring systems detected and reversed the parameter changes in time, preventing potential damage to stored blood products. No direct compromise of blood inventory or patient data occurred.]]></description>
-      <pubDate>Wed, 04 Nov 2026 13:45:00 GMT</pubDate>
-      <source url="https://therecord.media/france-cyberattack-blood-refrigeration">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Issues dnsmasq Patch for CVE-2026-43871 on RHEL 9.2 and 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on-cf60773e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on-cf60773e</guid>
-      <description><![CDATA[Red Hat has issued a security update for dnsmasq on RHEL 9.2 and 9.4, addressing CVE-2026-43871. The flaw is a buffer overflow in the DHCP packet parser that allows local attackers to gain elevated privileges. Administrators should apply the patch immediately and verify the new firmware version on all affected hosts.]]></description>
-      <pubDate>Wed, 04 Nov 2026 13:30:26 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95088">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Critical SolarWinds Dameware Flaw Could Allow Attackers to Compromise Remote Systems</title>
-      <link>https://secubuzz.com/news/critical-solarwinds-dameware-flaw-could-allow-atta-aab9c8f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-solarwinds-dameware-flaw-could-allow-atta-aab9c8f6</guid>
-      <description><![CDATA[SolarWinds has warned about a critical command injection flaw in its Dameware remote support software. It is tracked as CVE-2026-28336 and carries a severity score of 9.9 out of 10. The bug could let an attacker take over a computer that an IT team is controlling remotely.]]></description>
-      <pubDate>Wed, 04 Nov 2026 13:30:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-solarwinds-dameware-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Crédit Mutuel Arkéa Confirms Cyberattack Linked to $133M Theft</title>
-      <link>https://secubuzz.com/news/cr-dit-mutuel-ark-a-confirms-cyberattack-linked-to-9994ed27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cr-dit-mutuel-ark-a-confirms-cyberattack-linked-to-9994ed27</guid>
-      <description><![CDATA[A cyberattack on French bank Crédit Mutuel Arkéa enabled fraudulent transactions, the bank confirmed. The breach exploited weaknesses to manipulate payment systems, but the bank reports containment and no confirmed loss of customer assets; linked to reported $133 million cryptocurrency theft. Crédit Mutuel Arkéa notified regulators, is restoring operations, and stresses the need for stronger transaction monitoring and security controls.]]></description>
-      <pubDate>Wed, 04 Nov 2026 13:29:39 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/credit-mutuel-arkea-confirms-cyberattack/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Classic CGI Email Script Vulnerability Exploited for Code Execution</title>
-      <link>https://secubuzz.com/news/classic-cgi-email-script-vulnerability-exploited-f-bdfc975e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/classic-cgi-email-script-vulnerability-exploited-f-bdfc975e</guid>
-      <description><![CDATA[The blog revisits CVE-2000-0411, a CGI-bin script flaw that allowed attackers to manipulate email parameters and leak environment variables. The vulnerability enabled arbitrary code execution when parameters were passed directly to the sendmail binary, facilitating spam and potential system compromise. Modern web servers should disable CGI scripts, enforce strict input validation, and apply current security patches to prevent similar exploits.]]></description>
-      <pubDate>Wed, 04 Nov 2026 13:24:13 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33488">SANS Internet Storm Center</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>US Indicts Two Canadians for University Hacks</title>
-      <link>https://secubuzz.com/news/us-indicts-two-canadians-for-university-hacks-eb6e8410</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-indicts-two-canadians-for-university-hacks-eb6e8410</guid>
-      <description><![CDATA[A federal grand jury indicted two Canadians for hacking multiple U.S. universities. The attackers allegedly exploited system vulnerabilities to gain access and subsequently mined cryptocurrency using the compromised resources. The indictment underscores the need for universities to strengthen security controls and monitor for illicit mining activity in the coming months.]]></description>
-      <pubDate>Wed, 04 Nov 2026 13:13:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Node.js Schedules High-Severity Security Fixes for 22.x, 24.x, and 26.x Release Lines</title>
-      <link>https://secubuzz.com/news/node-js-schedules-high-severity-security-fixes-for-10ca6f84</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-js-schedules-high-severity-security-fixes-for-10ca6f84</guid>
-      <description><![CDATA[The Node.js project has scheduled security updates for its 22.x, 24.x, and 26.x release lines on or shortly after Wednesday, November 11, 2026. The announcement gives developers and system administrators time to prepare for patches addressing HIGH-rated vulnerabilities across all three branches.]]></description>
-      <pubDate>Wed, 04 Nov 2026 12:59:05 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/node-js-schedules-patch/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Token Theft Drives WorkOS, Northflank, Trigger.dev Breaches</title>
-      <link>https://secubuzz.com/news/ai-token-theft-drives-workos-northflank-trigger-de-5721376b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-token-theft-drives-workos-northflank-trigger-de-5721376b</guid>
-      <description><![CDATA[Hackers harvested AI access tokens from WorkOS, Northflank, and Trigger.dev, exploiting automated attack tools in the past month. The attacks leveraged AI‑assisted offensive frameworks, enabling rapid credential reuse and lateral movement across cloud services. Security teams should revoke exposed tokens, enforce multi‑factor authentication, and monitor for anomalous API usage continuously.]]></description>
-      <pubDate>Wed, 04 Nov 2026 12:43:20 GMT</pubDate>
-      <source url="https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Kernel Patch Addresses CVE-2026-43871</title>
-      <link>https://secubuzz.com/news/red-hat-kernel-patch-addresses-cve-2026-43871-05ee7afe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-patch-addresses-cve-2026-43871-05ee7afe</guid>
-      <description><![CDATA[Red Hat released a kernel update for RHEL 8 to address CVE-2026-43871, a flaw that could allow privilege escalation or remote code execution. The vulnerability, rated Important by Product Security, has a CVSS base score listed but no active exploitation reported. The patch is available through standard RHEL 8 update channels; administrators should apply it promptly to mitigate potential exploitation.]]></description>
-      <pubDate>Wed, 04 Nov 2026 12:33:52 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95097">Red Hat Security Advisories</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

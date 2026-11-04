@@ -19,6 +19,38 @@
     "isFallback": true
   },
   {
+    "id": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+    "title": "DreamHost Breach Exposes FTP Credentials",
+    "headline": "DreamHost Breach Exposes FTP Credentials",
+    "summary": "DreamHost confirmed a breach after attackers accessed its File Manager platform for two months, capturing customers' FTP/SFTP usernames and passwords. The intrusion exploited unauthorized platform access, exposing credential data that could enable credential stuffing or unauthorized file transfers. DreamHost urged users to change passwords, enable MFA, and review account activity while investigating the incident.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-04T19:05:19.000Z",
+    "ingestedAt": "2026-11-04T21:43:48.623Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/french-bank-confirms-cyber-heist",
+    "sourceUrl": "https://therecord.media/french-bank-confirms-cyber-heist",
+    "title": "French Bank Heist Steals $133 Million via Supplier Breach",
+    "headline": "French Bank Heist Steals $133 Million via Supplier Breach",
+    "summary": "Crédit Mutuel Arkéa confirmed a cyber heist that transferred about $133 million using the bank’s account after compromising a supplier. Attackers used the supplier’s credentials to authenticate with the bank’s transfer system, enabling unauthorized fund movements without triggering fraud alerts. Bank officials are tightening supplier access controls, reviewing transaction monitoring, and notifying regulators while investigating the breach.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-11-04T18:58:00.000Z",
+    "ingestedAt": "2026-11-04T21:43:48.623Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/french-bank-confirms-cyber-heist",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/skyw4lker-phishing-campaign-expands-threatening-us-enterprises-with-microsoft-365-account-takeovers/",
     "sourceUrl": "https://cybersecuritynews.com/skyw4lker-phishing-campaign-expands-threatening-us-enterprises-with-microsoft-365-account-takeovers/",
     "title": "SkyW4lker Phishing Kit Targets US Microsoft 365 Accounts",
@@ -192,6 +224,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://ubuntu.com/security/notices/USN-9000-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9000-1",
+    "title": "Twisted IMAP Server Vulnerability Enables Resource Exhaustion DoS",
+    "headline": "Twisted IMAP Server Vulnerability Enables Resource Exhaustion DoS",
+    "summary": "Twisted’s IMAP server mishandled wildcard patterns in mailbox list commands, letting an authenticated remote attacker trigger excessive resource consumption. The flaw can cause a denial of service by exhausting server memory or CPU, disrupting legitimate user access. Ubuntu’s USN-9000-1 patch corrects the wildcard handling logic; users should apply the update to mitigate DoS risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-04T16:24:47.000Z",
+    "ingestedAt": "2026-11-04T21:43:48.623Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-9000-1",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
     "sourceUrl": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
     "title": "Google Partners Disrupt 1.3M-Device XCPE Botnet",
@@ -313,6 +361,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
+    "title": "Chromium CVE-2026-119260: Use-After-Free Exploit",
+    "headline": "Chromium CVE-2026-119260: Use-After-Free Exploit",
+    "summary": "Chromium CVE-2026-119260 is a use-after-free flaw that may allow attackers to execute arbitrary code in the browser. Microsoft Edge, built on Chromium, inherits the same vulnerability; Google assigned the CVE and released a patch in recent Chrome updates. Users should upgrade to the latest Edge or apply the Chrome patch linked in Microsoft’s release notes to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "ingestedAt": "2026-11-04T21:43:48.623Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
+    "additionalSources": []
+  },
+  {
     "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-5mQn2U5z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Unified+Communications+Manager+Cross-Site+Scripting+Vulnerability%26vs_k%3D1",
     "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-5mQn2U5z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Unified+Communications+Manager+Cross-Site+Scripting+Vulnerability%26vs_k%3D1",
     "title": "Cisco Unified CM Vulnerable to Unauthenticated XSS",
@@ -361,6 +425,56 @@
     "additionalSources": []
   },
   {
+    "id": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update.html",
+    "title": "Chrome Beta Desktop 158 Update",
+    "headline": "Chrome Beta Desktop 158 Update",
+    "summary": "Google Chrome Beta channel has been updated to version 158.0.8127.18 for Windows, Mac, and Linux platforms. This release includes partial changes documented in the Git log, with community bug reporting channels available for user feedback. The update represents a routine channel synchronization release without specific security vulnerability disclosures.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-11-04T15:43:33.511Z",
+    "ingestedAt": "2026-11-04T21:44:31.293Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-8998-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8998-1",
+    "title": "USN-8998-1: Squid vulnerability",
+    "headline": "USN-8998-1: Squid vulnerability",
+    "summary": "It was discovered that Squid incorrectly handled certain HTTP Transfer- Encoding headers. An attacker could possibly use this issue to perform HTTP request smuggling attacks, bypass security mechanisms, or poison web caches.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-04T15:32:22.000Z",
+    "ingestedAt": "2026-11-04T21:44:37.412Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-8997-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8997-1",
+    "title": "USN-8997-1: Net-SNMP vulnerability",
+    "headline": "USN-8997-1: Net-SNMP vulnerability",
+    "summary": "It was discovered that Net-SNMP incorrectly handled newly accepted connections in the SMUX module. An unauthenticated remote attacker could possibly use this issue to cause Net-SNMP to block indefinitely, resulting in a denial of service.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-04T15:25:21.000Z",
+    "ingestedAt": "2026-11-04T21:44:37.412Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://ubuntu.com/security/notices/USN-7530-2",
     "sourceUrl": "https://ubuntu.com/security/notices/USN-7530-2",
     "title": "USN-7530-2: ADOdb vulnerability",
@@ -376,6 +490,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update.html",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update.html",
+    "title": "Chrome Beta iOS 158 Release",
+    "headline": "Chrome Beta iOS 158 Release",
+    "summary": "Google Chrome Beta channel has been updated to version 158.0.8127.13 for iOS, with availability on the App Store in coming days. The release includes partial changes documented in the Git log, alongside community bug reporting channels for user feedback. This is a routine channel synchronization release without specific security vulnerability disclosures.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "publishedAt": "2026-11-04T15:13:33.229Z",
+    "ingestedAt": "2026-11-04T21:44:31.293Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update.html",
+    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
@@ -488,6 +618,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:95181",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/04/descope-envoy/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/descope-envoy/",
+    "title": "Descope Envoy AI Agent Authentication",
+    "headline": "Descope Envoy AI Agent Authentication",
+    "summary": "Descope announced Envoy, a capability enabling personal AI agents to receive delegated sign-in paths within consumer applications alongside existing authentication flows. Consumer companies can now treat agents as first-class users with dedicated identities and permission structures without rebuilding identity infrastructure. Launch partners include GoFundMe, You.com, GoodRx, and Composio.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-04T14:31:05.000Z",
+    "ingestedAt": "2026-11-04T21:44:31.293Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/04/descope-envoy/",
     "additionalSources": []
   },
   {
@@ -700,6 +846,23 @@
     "additionalSources": []
   },
   {
+    "id": "https://ubuntu.com/security/notices/USN-8996-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8996-1",
+    "title": "USN-8996-1: APT vulnerability",
+    "headline": "USN-8996-1: APT vulnerability",
+    "summary": "Max Justicz discovered that APT incorrectly handled hard links when encountering redirects and retrying package downloads. A remote on-path attacker could possibly use this issue to trick APT into installing an unverified package and achieve remote code execution with root privileges.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-04T13:37:00.000Z",
+    "ingestedAt": "2026-11-04T21:43:34.791Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:95088",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95088",
     "title": "Red Hat Issues dnsmasq Patch for CVE-2026-43871 on RHEL 9.2 and 9.4",
@@ -848,6 +1011,27 @@
     "isFallback": true
   },
   {
+    "id": "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/",
+    "sourceUrl": "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/",
+    "title": "Canadian hacker extradited to US for school cryptomining",
+    "headline": "Canadian hacker extradited to US for school cryptomining",
+    "summary": "Two suspects were identified in a 2016 case involving illicit cryptomining on computers at U.S. educational institutions across at least four states. The suspects have been extradited to the United States to face charges related to unauthorized use of computing resources for cryptocurrency mining. This case highlights the persistent threat of cryptojacking targeting educational infrastructure.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-04T12:27:58.000Z",
+    "ingestedAt": "2026-11-04T21:44:31.293Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/",
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/canadian-nationals-accused-us-education-hacks-cryptomining"
+      }
+    ]
+  },
+  {
     "id": "https://www.malwarebytes.com/blog/bugs/2026/11/chrome-157-fixes-213-security-issues-including-7-critical-flaws",
     "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/chrome-157-fixes-213-security-issues-including-7-critical-flaws",
     "title": "Google Chrome 157 Resolves 213 Security Flaws",
@@ -878,6 +1062,25 @@
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
     "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "headline": "CISA Adds One Known Exploited Vulnerability to Catalog",
+    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-04T12:00:00.000Z",
+    "ingestedAt": "2026-11-04T21:44:18.415Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2024-27834"
+    ],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://cybersecuritynews.com/zyxel-gs1900-zero-day-exploited/",
@@ -8040,180 +8243,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/fbi-confirms-north-korean-hackers/",
-    "sourceUrl": "https://cybersecuritynews.com/fbi-confirms-north-korean-hackers/",
-    "title": "North Korean Hackers Stole $6B from Binance",
-    "headline": "North Korean Hackers Stole $6B from Binance",
-    "summary": "FBI confirmed North Korean hackers stole over $6 billion in virtual assets from Binance on October 29, 2026. The operation, dubbed 'TraderTraitor', links the theft to a series of attacks on digital asset platforms attributed to the same group. Security teams should monitor for related credential theft and apply multi‑factor authentication to mitigate further compromise.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-01T05:48:16.000Z",
-    "ingestedAt": "2026-11-01T07:43:07.376Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/fbi-confirms-north-korean-hackers/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
-    "sourceUrl": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
-    "title": "Wave of Attacks Hits PHP, Binance, AI Tools",
-    "headline": "Wave of Attacks Hits PHP, Binance, AI Tools",
-    "summary": "October saw a surge of cyberattacks targeting PHP, Binance, LiteLLM, and other high‑profile entities, including government records and grocery chains. The attacks exploited multiple vulnerabilities, with Binance reporting billions of unauthorized transactions, PHP issuing emergency patches, and a malicious LiteLLM release exposing developer credentials. Affected vendors released emergency fixes; security teams should apply patches promptly and monitor for credential compromise.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-01T05:24:22.000Z",
-    "ingestedAt": "2026-11-01T07:43:15.141Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/hacktober-cyberattack-wave/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:90500",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:90500",
-    "title": "RHSA-2026:90500: Important: java-17-openjdk security update for RHEL 9",
-    "headline": "RHSA-2026:90500: Important: java-17-openjdk security update for RHEL 9",
-    "summary": "An update for java-17-openjdk is now available for Red Hat Enterprise Linux 9.2 Extended Update Support, Red Hat Enterprise Linux 9.4 Extended Update Support, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-10-31T22:50:24.000Z",
-    "ingestedAt": "2026-10-31T23:26:47.279Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-012/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-012/",
-    "title": "Check Point Critical Vulnerabilities in VPN and Firewall Products",
-    "headline": "Check Point Critical Vulnerabilities in VPN and Firewall Products",
-    "summary": "Check Point released emergency security updates addressing two critical vulnerabilities affecting Security Gateway, Security Management Server, and Spark Firewall deployments configured for Remote Access VPN or Site-to-Site VPN. Both vulnerabilities carry a CVSS score of 9.8 and could allow an unauthenticated remote attacker to execute arbitrary code on affected appliances.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T21:51:21.306Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-012/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-015/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-015/",
-    "title": "Critical Atlassian Vulnerability Affects Multiple Products",
-    "headline": "Critical Atlassian Vulnerability Affects Multiple Products",
-    "summary": "Atlassian disclosed a critical arbitrary file access vulnerability affecting Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible, and Fisheye. CERT-EU recommends upgrading all affected installations immediately, starting with instances accessible from the internet, and checking access logs for signs of exploitation. The associated CVE is CVE-2026-20011.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T21:51:05.218Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-015/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-016/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-016/",
-    "title": "GitLab Releases Emergency Fixes for Critical Server-Side RCE",
-    "headline": "GitLab Releases Emergency Fixes for Critical Server-Side RCE",
-    "summary": "GitLab addressed a critical unauthenticated remote code execution vulnerability across self-managed GitLab CE and EE instances in versions 19.4.2, 19.3.4, and 19.2.8. The flaw allows arbitrary code execution on the server without prior authentication, posing a significant risk to internet-facing deployments. CERT-EU urges administrators to upgrade immediately, prioritizing externally accessible instances to mitigate exposure.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T20:44:17.390Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-016/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cert.europa.eu/publications/security-advisories/2026-017/",
-    "sourceUrl": "https://cert.europa.eu/publications/security-advisories/2026-017/",
-    "title": "Cisco Distributes Patch for Critical AMP RCE Vulnerability",
-    "headline": "Cisco Distributes Patch for Critical AMP RCE Vulnerability",
-    "summary": "An unauthenticated remote attacker could exploit a critical vulnerability in Cisco Secure Email Gateway's Advanced Malware Protection feature to write arbitrary files and execute commands with root privileges on the underlying operating system. Active exploitation of this vulnerability is currently confirmed in the wild, making it an urgent threat to internet-facing appliances.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CERT-EU Security Advisories",
-    "publishedAt": "2026-10-31T20:44:17.389Z",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-017/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
-    "title": "Northflank Breach Exposes AI API Keys",
-    "headline": "Northflank Breach Exposes AI API Keys",
-    "summary": "Northflank, a cloud hosting platform, suffered a breach that exposed its AI API key store, compromising customer credentials. The unauthorized access allowed attackers to retrieve and potentially abuse stored keys, enabling unauthorized API calls and data exfiltration. Northflank urged users to rotate credentials, monitor activity, and investigate the attack vector to mitigate further risk.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-31T18:01:12.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/northflank-security-breach-leads-to-abuse-of-customers"
-      }
-    ]
-  },
-  {
-    "id": "https://cybernewsai.com/blog/new-android-sms-of-death-exploit-can-remotely-crash-unp",
-    "sourceUrl": "https://cybernewsai.com/blog/new-android-sms-of-death-exploit-can-remotely-crash-unp",
-    "title": "Android SMS Crash Flaw CVE-2026-58882 Requires Immediate Patching",
-    "headline": "Android SMS Crash Flaw CVE-2026-58882 Requires Immediate Patching",
-    "summary": "A critical vulnerability designated CVE-2026-58882 affects enterprise Android environments through an SMS crash flaw that enables exploitation by threat actors. Organizations should deploy detection rules to identify active exploitation attempts and apply vendor patches promptly to prevent operational disruption. Patching should be prioritized based on exposure to enterprise-grade mobile devices.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-10-31T17:26:57.000Z",
-    "url": "https://cybernewsai.com/blog/new-android-sms-of-death-exploit-can-remotely-crash-unp",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
-    "title": "Android SMS of Death PoC Enables Remote Phone Crash",
-    "headline": "Android SMS of Death PoC Enables Remote Phone Crash",
-    "summary": "A proof‑of‑concept exploit for CVE-2026-58882, dubbed 'SMS of Death', lets attackers remotely crash unpatched Android phones via crafted text messages. The flaw lies in SMS handling, causing a denial‑of‑service that can reboot devices, but it does not grant code execution. Google released a patch in the latest security update; users should install it promptly and monitor for suspicious SMS activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-31T15:35:11.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
-    "title": "Reddit Shifts to Logged-In Service Model",
-    "headline": "Reddit Shifts to Logged-In Service Model",
-    "summary": "Reddit announced a gradual transition to a logged-in service model, restricting content access behind user accounts. This policy shift aims to combat unauthorized scraping and bot activity across the platform. The change represents a structural modification to Reddit's public-facing architecture, requiring users to authenticate for broader content access.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-31T14:05:15.000Z",
-    "url": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118357",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118357",
-    "title": "Chromium Use-After-Free CVE-2026-118357 in FileSystem",
-    "headline": "Chromium Use-After-Free CVE-2026-118357 in FileSystem",
-    "summary": "Chromium’s FileSystem module contains a use-after-free flaw (CVE-2026-118357) that can lead to arbitrary code execution on affected browsers. The vulnerability arises when the browser frees a file handle before completing pending operations, allowing attackers to trigger memory corruption. Microsoft Edge and Chrome have released patches; users should update to the latest version or apply the vendor’s hotfix.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "ingestedAt": "2026-11-01T18:43:13.179Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118357",
     "additionalSources": []
   }
 ]
