@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "north-korea-launches-missiles-amid-binance-hack-pr-a6529e29",
+    "title": "North Korea Launches Missiles Amid Binance Hack Protest",
+    "summary": "North Korea accelerated missile tests toward the sea, citing increased leverage for potential diplomacy with the United States. The launch coincided with Pyongyang's protest against U.S. claims regarding a Binance hack, reflecting geopolitical tensions. No direct cyber activity was reported; analysts advise monitoring for potential cyber‑political escalations and related cyber‑defense posture adjustments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/",
+    "publishedAt": "2026-11-04T09:23:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korea-launches-missiles-amid-binance-hack-pr",
+      "article-a6529e29",
+      "a6529e29",
+      "north-korea-launches-missiles-amid-binance-hack-pr-49e3f8",
+      "north-korea-launches-missiles-amid-binance-hack-protest"
+    ]
+  },
+  {
     "slug": "meta-uncovers-muse-vm-data-exposure-bug-a9869b8e",
     "title": "Meta Uncovers Muse VM Data Exposure Bug",
     "summary": "A pre‑launch flaw in Meta’s Muse test virtual machines exposed internal conversations and authentication tokens to unauthorized users. The vulnerability allowed attackers to read sensitive data without authentication, potentially compromising internal communications; no public exploit was reported. Meta patched the issue in later Muse releases, and teams should verify VM isolation and token handling best practices.",
@@ -26,6 +45,24 @@ export const news: NewsBrief[] = [
       "article-a9869b8e",
       "a9869b8e",
       "meta-uncovers-muse-vm-data-exposure-bug-1a0511"
+    ]
+  },
+  {
+    "slug": "russian-police-arrest-vasygrek-hackers-96abba7f",
+    "title": "Russian Police Arrest VasyGrek Hackers",
+    "summary": "Russian authorities arrested three suspected members of the VasyGrek threat group, also known as Fluffy Wolf, and dismantled its criminal infrastructure. VasyGrek has targeted Russian and international companies since 2016, engaging in financial fraud and data theft, according to the Ministry of Internal Affairs. The arrests demonstrate Russian law enforcement's ongoing efforts to disrupt cybercriminal networks and recover embezzled funds.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
+    "publishedAt": "2026-11-04T08:17:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-police-arrest-vasygrek-hackers",
+      "article-96abba7f",
+      "96abba7f",
+      "russian-police-arrest-vasygrek-hackers-2cd867"
     ]
   },
   {
@@ -73,6 +110,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "top-10-2026-breach-attack-simulation-tools-dd680acd",
+    "title": "Top 10 2026 Breach & Attack Simulation Tools",
+    "summary": "Breach & attack simulation tools validate SOC controls by continuously running real attacker techniques instead of annual tests. The 2026 field features safe‑simulation specialists, autonomous‑pentest hybrids, and validation suites grading entire kill chains, with Cymulate among the leaders. These platforms deliver pass/fail evidence per technique and control, shifting SOCs from assumed coverage to measurable resilience.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-bas-tools/",
+    "publishedAt": "2026-11-04T08:03:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-2026-breach-attack-simulation-tools",
+      "article-dd680acd",
+      "dd680acd",
+      "top-10-2026-breach-attack-simulation-tools-4ea947"
+    ]
+  },
+  {
     "slug": "red-hat-issues-bind9-16-security-update-20eb57f9",
     "title": "Red Hat Issues bind9.16 Security Update",
     "summary": "Red Hat released a security update for bind9.16 on RHEL 8.8 for SAP Solutions and Telecommunications, addressing CVE-2026-43871. The vulnerability could allow attackers to gain unauthorized access or execute code on the DNS server. The update is available through the standard RHEL update mechanism; administrators should apply it promptly during the next maintenance window.",
@@ -90,6 +145,44 @@ export const news: NewsBrief[] = [
       "article-20eb57f9",
       "20eb57f9",
       "red-hat-issues-bind9-16-security-update-37d855"
+    ]
+  },
+  {
+    "slug": "google-patches-critical-android-rce-flaw-f36658d8",
+    "title": "Google Patches Critical Android RCE Flaw",
+    "summary": "A critical Android flaw, CVE-2026-58868, allows remote code execution on Android 14‑17 devices without user interaction. The flaw exploits a buffer overflow in the media subsystem, granting attackers system‑level code execution and is a high‑severity zero‑day. Google issued a patch in its November bulletin; devices must apply the 2026‑11‑01 security patch or later, distributed by OEMs and carriers.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+    "publishedAt": "2026-11-04T07:46:15.000Z",
+    "cves": [
+      "CVE-2026-58868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "google-patches-critical-android-rce-flaw",
+      "article-f36658d8",
+      "f36658d8",
+      "google-patches-critical-android-rce-flaw-76729c"
+    ]
+  },
+  {
+    "slug": "rsync-3-5-2-addresses-cpu-exhaustion-flaw-ecc28fd7",
+    "title": "rsync 3.5.2 Addresses CPU Exhaustion Flaw",
+    "summary": "The rsync 3.5.2 release fixes a CPU exhaustion vulnerability that allowed a client to monopolize server CPU during checksum calculations. The flaw could cause denial of service by tying up CPU and disk resources, impacting other concurrent transfers. The update also introduces a queue‑backing feature, allowing administrators to defer large transfers and prevent resource contention.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/rsync-3-5-2-released/",
+    "publishedAt": "2026-11-04T07:43:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rsync-3-5-2-addresses-cpu-exhaustion-flaw",
+      "article-ecc28fd7",
+      "ecc28fd7",
+      "rsync-3-5-2-addresses-cpu-exhaustion-flaw-ac61e4"
     ]
   },
   {
@@ -130,6 +223,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fake-downloads-hijack-windows-pcs-for-monetization-d34df581",
+    "title": "Fake Downloads Hijack Windows PCs for Monetization",
+    "summary": "Hackers embed malicious payloads in counterfeit software downloads to covertly compromise Windows PCs, targeting users seeking cracked or free applications. The malware installs bandwidth‑sharing, distributed‑compute, or ad‑delivery modules, monetizing network resources without user awareness via social engineering. Security teams should block malicious domains, enforce whitelisting, and educate users; Microsoft recommends applying latest Windows updates and running reputable anti‑malware.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-fake-software-downloads/",
+    "publishedAt": "2026-11-04T06:44:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-downloads-hijack-windows-pcs-for-monetization",
+      "article-d34df581",
+      "d34df581",
+      "fake-downloads-hijack-windows-pcs-for-monetization-349596"
+    ]
+  },
+  {
     "slug": "red-hat-releases-critical-fence-agents-patch-0d661752",
     "title": "Red Hat Releases Critical Fence-Agents Patch",
     "summary": "Red Hat issued a critical security update for the fence-agents component on Red Enterprise Linux 10.0 Extended Update Support. The update addresses multiple high‑severity vulnerabilities, each with a CVSS base score indicating potential remote code execution or privilege escalation. Administrators should apply the fence-agents update immediately and verify that all affected systems are patched to mitigate exploitation risk.",
@@ -148,6 +259,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ghostunnel-provides-mutual-auth-tls-proxy-c553a3bd",
+    "title": "Ghostunnel Provides Mutual‑Auth TLS Proxy",
+    "summary": "Ghostunnel is an open‑source TLS proxy that enables mutual authentication for applications lacking native TLS support. In server mode it terminates client TLS connections, verifies certificates, and forwards traffic to back‑end services over TCP or UNIX sockets. In client mode it accepts plain local connections, wraps them in TLS, and presents a client certificate to remote servers, simplifying secure communications.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/ghostunnel-open-source-tls-proxy/",
+    "publishedAt": "2026-11-04T06:30:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostunnel-provides-mutual-auth-tls-proxy",
+      "article-c553a3bd",
+      "c553a3bd",
+      "ghostunnel-provides-mutual-auth-tls-proxy-4c29c8"
+    ]
+  },
+  {
+    "slug": "chromeos-beta-updates-to-os-16868-9-0-aeb8676b",
+    "title": "ChromeOS Beta Updates to OS 16868.9.0",
+    "summary": "Google released a beta channel update for ChromeOS and ChromeOS Flex, bumping the OS to version 16868.9.0 and the browser to 158.0.8127.9. The update includes bug fixes and performance improvements, with users encouraged to report issues via the ChromeOS communities or bug‑tracking channels. Administrators should verify that devices receive the new beta build and monitor for regressions before wider deployment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos.html",
+    "publishedAt": "2026-11-04T06:16:07.626Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-beta-updates-to-os-16868-9-0",
+      "article-aeb8676b",
+      "aeb8676b",
+      "chromeos-beta-updates-to-os-16868-9-0-441376"
+    ]
+  },
+  {
     "slug": "secure-your-containers-without-breaking-what-works-2c37d2d1",
     "title": "Secure your containers without breaking what works",
     "summary": "Teams identify vulnerabilities, but turning those findings into lower risk is much harder. Each unnecessary component can expand the attack surface and add vulnerabilities to investigate, patch or explain during an audit. Consider an NGINX image that contains 274 categorized vulnerabilities straight from download.",
@@ -163,6 +310,25 @@ export const news: NewsBrief[] = [
       "article-2c37d2d1",
       "2c37d2d1",
       "secure-your-containers-without-breaking-what-works-3699a1"
+    ]
+  },
+  {
+    "slug": "crowdstrike-enhances-agentic-soc-against-agent-ins-a6576908",
+    "title": "CrowdStrike Enhances Agentic SOC Against Agent Insider Risks",
+    "summary": "CrowdStrike has updated its Agentic SOC platform to detect and block malicious actions associated with agent insider threats. The security update integrates enhanced behavioral monitoring to identify unauthorized activities and potential security compromises within corporate agent environments. Enterprise security teams can deploy the upgraded platform features to improve real-time threat detection and mitigate internal operational risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-detects-and-stops-agent-insider-threats/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-enhances-agentic-soc-against-agent-ins",
+      "article-a6576908",
+      "a6576908",
+      "crowdstrike-enhances-agentic-soc-against-agent-ins-5f342c",
+      "crowdstrike-enhances-agentic-soc-against-agent-insider-risks"
     ]
   },
   {
@@ -9295,176 +9461,6 @@ export const news: NewsBrief[] = [
       "article-bd430a23",
       "bd430a23",
       "operation-blackout-dismantles-scam-centers-30f84c"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-pillow-update-for-rhel8-582f997b",
-    "title": "Red Hat Releases Critical Pillow Update for RHEL8",
-    "summary": "Red Hat has issued a critical security update for python‑pillow on RHEL 8, addressing multiple vulnerabilities that could allow remote code execution. The update carries a high CVSS base score and is available through the RHSA-2026:93077 advisory. Administrators must install the patch promptly to secure image processing services.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93077",
-    "publishedAt": "2026-10-30T19:24:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-pillow-update-for-rhel8",
-      "article-582f997b",
-      "582f997b",
-      "red-hat-releases-critical-pillow-update-for-rhel8-37d93d"
-    ]
-  },
-  {
-    "slug": "resolve-retailer-card-data-compromised-e85784d7",
-    "title": "Resolve Retailer Card Data Compromised",
-    "summary": "A hack exposed customer payment card numbers at Resolve, a fashion retailer targeting Millennials and Gen Z. Attackers accessed stored card data through an undisclosed vulnerability in the retailer’s payment processing system, potentially allowing credential theft. Resolve has notified affected customers and is coordinating with payment processors to mitigate further exposure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
-    "publishedAt": "2026-10-30T19:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "resolve-retailer-card-data-compromised",
-      "article-e85784d7",
-      "e85784d7",
-      "resolve-retailer-card-data-compromised-4250d4"
-    ]
-  },
-  {
-    "slug": "chromeos-dev-channel-updated-to-16868-5-0-0864e730",
-    "title": "ChromeOS Dev Channel Updated to 16868.5.0",
-    "summary": "Google released ChromeOS Dev channel update to OS version 16868.5.0, including Browser 158.0.8127.5, for most ChromeOS devices. The update addresses multiple stability and security issues identified in the previous build, ensuring improved kernel and application integrity. Users on Dev channel should apply the update immediately to maintain system security posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/10/dev-channel-update-for-chromeos_0448562495.html",
-    "publishedAt": "2026-10-30T18:49:40.728Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-dev-channel-updated-to-16868-5-0",
-      "article-0864e730",
-      "0864e730",
-      "chromeos-dev-channel-updated-to-16868-5-0-7a43a5"
-    ]
-  },
-  {
-    "slug": "cve-2026-119117-exposes-aws-credentials-in-logs-59cbbfd9",
-    "title": "CVE-2026-119117 Exposes AWS Credentials in Logs",
-    "summary": "CVE-2026-119117 allows local users to retrieve AWS credentials from logs and process arguments in Amazon Kinesis Producer Library for Java before 1.0.8 when DEBUG logging is enabled. The flaw enables credential disclosure through log files and command-line arguments, compromising application security. AWS recommends upgrading to version 1.0.8 or later to remediate.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/",
-    "publishedAt": "2026-10-30T18:18:40.000Z",
-    "cves": [
-      "CVE-2026-119117"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-119117-exposes-aws-credentials-in-logs",
-      "article-59cbbfd9",
-      "59cbbfd9",
-      "cve-2026-119117-exposes-aws-credentials-in-logs-59cb37"
-    ]
-  },
-  {
-    "slug": "bind9-18-update-addresses-multiple-security-flaws-092f0c27",
-    "title": "Bind9.18 Update Addresses Multiple Security Flaws",
-    "summary": "Red Hat released an important security update for bind9.18 on Enterprise Linux 9, addressing several critical vulnerabilities. The update mitigates flaws that could allow unauthenticated attackers to execute arbitrary code or cause denial of service, with CVSS scores ranging from 7.5 to 9.0. Administrators should apply the RHSA-2026:93072 update immediately, verify installation, and monitor DNS traffic for anomalous activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93072",
-    "publishedAt": "2026-10-30T17:44:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bind9-18-update-addresses-multiple-security-flaws",
-      "article-092f0c27",
-      "092f0c27",
-      "bind9-18-update-addresses-multiple-security-flaws-37d93d"
-    ]
-  },
-  {
-    "slug": "freertos-kernel-cve-2026-119086-enables-privileged-d2aca18c",
-    "title": "FreeRTOS-Kernel CVE-2026-119086 Enables Privileged Escalation",
-    "summary": "CVE-2026-119086 in FreeRTOS-Kernel allows unprivileged tasks to corrupt privileged memory via missing type validation in xQueueSelectFromSet. The flaw permits an attacker to write beyond intended destinations while executing in privileged context, undermining kernel integrity on MPU-enabled builds with queue sets. Amazon recommends applying the latest FreeRTOS-Kernel patch (v7.4.0+) and disabling queue sets on untrusted tasks to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-158-aws/",
-    "publishedAt": "2026-10-30T17:39:33.000Z",
-    "cves": [
-      "CVE-2026-119086"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "freertos-kernel-cve-2026-119086-enables-privileged",
-      "article-d2aca18c",
-      "d2aca18c",
-      "freertos-kernel-cve-2026-119086-enables-privileged-58165f",
-      "freertos-kernel-cve-2026-119086-enables-privileged-escalatio"
-    ]
-  },
-  {
-    "slug": "4-real-tracking-exploitation-and-patching-of-emudh-31081b74",
-    "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-    "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/emudhra-patching/",
-    "publishedAt": "2026-10-30T17:38:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "4-real-tracking-exploitation-and-patching-of-emudh",
-      "article-31081b74",
-      "31081b74",
-      "4-real-tracking-exploitation-and-patching-of-emudh-1763b0",
-      "4-real-tracking-exploitation-and-patching-of-emudhra-s-weak-"
-    ]
-  },
-  {
-    "slug": "php2shell-fragnesia-node2shell-vulnerabilities-exp-b86f97a9",
-    "title": "PHP2SHELL, Fragnesia, Node2Shell Vulnerabilities Exposed",
-    "summary": "PHP2SHELL’s complex code stalls mass exploitation, yet attackers chain it with Fragnesia to gain root on firewalls. A silent Brotli update failed to patch a critical flaw, leaving Node2Shell active and exposing servers to remote code execution. Apply the latest Brotli patch, upgrade PHP2SHELL, and monitor firewall logs for privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-44-8",
-    "publishedAt": "2026-10-30T17:29:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "php2shell-fragnesia-node2shell-vulnerabilities-exp",
-      "article-b86f97a9",
-      "b86f97a9",
-      "php2shell-fragnesia-node2shell-vulnerabilities-exp-5e83e5",
-      "php2shell-fragnesia-node2shell-vulnerabilities-exposed"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-releases-2026-agentic-security-operati-d48e22ae",
-    "title": "Arctic Wolf Releases 2026 Agentic Security Operations Report",
-    "summary": "The 2026 Agentic Security Operations Report outlines how agentic AI collaborates with expert analysts to accelerate security investigations. It details operational efficiencies gained through AI-driven threat detection and response workflows. The report is available for download from Arctic Wolf’s website, offering insights into future security operation trends.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/report-au/agentic-security-operations-report/",
-    "publishedAt": "2026-10-30T17:23:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-releases-2026-agentic-security-operati",
-      "article-d48e22ae",
-      "d48e22ae",
-      "arctic-wolf-releases-2026-agentic-security-operati-678c5e",
-      "arctic-wolf-releases-2026-agentic-security-operations-report"
     ]
   }
 ];
