@@ -30,24 +30,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swa-2637acfc",
-    "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
-    "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that Debian, Ubuntu, and APT's developers published on November 4. The vulnerability is tracked as CVE-2026-109518.",
-    "category": "CVE",
-    "severity": "MEDIUM",
+    "slug": "debian-ubuntu-apt-flaw-enables-root-code-execution-3b3b7b41",
+    "title": "Debian/Ubuntu APT Flaw Enables Root Code Execution",
+    "summary": "A flaw in Debian and Ubuntu's APT package manager allows attackers to replace trusted packages with malicious ones during updates. Tracked as CVE-2026-109518, the vulnerability permits unauthenticated code execution with root privileges, potentially compromising entire Linux systems. Debian has released a patch; users should update APT to the latest version and verify package signatures.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
     "publishedAt": "2026-11-04T17:00:46.000Z",
     "cves": [
       "CVE-2026-109518"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/debian-apt-flaw-lets-hackers-hijack-updates/"
+      }
+    ],
     "aliases": [
-      "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swa",
-      "article-2637acfc",
-      "2637acfc",
-      "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swa-784038",
-      "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified"
+      "debian-ubuntu-apt-flaw-enables-root-code-execution",
+      "article-3b3b7b41",
+      "3b3b7b41",
+      "debian-ubuntu-apt-flaw-enables-root-code-execution-784038"
     ]
   },
   {
@@ -66,6 +70,43 @@ export const news: NewsBrief[] = [
       "article-ffa93564",
       "ffa93564",
       "sonicwall-gms-flaws-expose-files-alter-db-records-7430e3"
+    ]
+  },
+  {
+    "slug": "nikke-launcher-compromised-distributes-credential-c9c5c89b",
+    "title": "NIKKE Launcher Compromised, Distributes Credential-Stealing Malware",
+    "summary": "A supply‑chain compromise of the Goddess of Victory: NIKKE PC launcher distributed malware that steals credentials and cryptocurrency wallet data. The attackers tampered with launcher scripts, enabling remote access tools and credential‑stealing payloads, exposing user accounts and wallet keys to theft. Developers have issued a patched launcher and advise users to download the latest version and verify script integrity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
+    "publishedAt": "2026-11-04T16:58:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nikke-launcher-compromised-distributes-credential",
+      "article-c9c5c89b",
+      "c9c5c89b",
+      "nikke-launcher-compromised-distributes-credential-68d0d4",
+      "nikke-launcher-compromised-distributes-credential-stealing-m"
+    ]
+  },
+  {
+    "slug": "google-partners-disrupt-1-3m-device-xcpe-botnet-75329475",
+    "title": "Google Partners Disrupt 1.3M-Device XCPE Botnet",
+    "summary": "Google and partners dismantled the XCPE botnet that infected over 1.3 million Android set‑top boxes and IoT devices. The botnet used a backdoor to create a criminal infrastructure, enabling remote control and data exfiltration from compromised devices. Affected devices should be updated to the latest firmware, and security teams should monitor for anomalous traffic patterns.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
+    "publishedAt": "2026-11-04T16:24:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-partners-disrupt-1-3m-device-xcpe-botnet",
+      "article-75329475",
+      "75329475",
+      "google-partners-disrupt-1-3m-device-xcpe-botnet-7fc2b3"
     ]
   },
   {
@@ -167,6 +208,24 @@ export const news: NewsBrief[] = [
       "dd20b5eb",
       "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
       "msecure-users-urged-to-reset-passwords-after-breach"
+    ]
+  },
+  {
+    "slug": "cisco-unified-cm-vulnerable-to-unauthenticated-xss-f2a268d1",
+    "title": "Cisco Unified CM Vulnerable to Unauthenticated XSS",
+    "summary": "A cross‑site scripting flaw in Cisco Unified Communications Manager’s web interface allows unauthenticated attackers to inject malicious scripts into user sessions. The flaw stems from insufficient input validation, letting attackers run arbitrary code in the browser and access sensitive data. Cisco released patches; administrators should apply them immediately as no workarounds exist.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-5mQn2U5z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Unified+Communications+Manager+Cross-Site+Scripting+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-unified-cm-vulnerable-to-unauthenticated-xss",
+      "article-f2a268d1",
+      "f2a268d1",
+      "cisco-unified-cm-vulnerable-to-unauthenticated-xss-54284c"
     ]
   },
   {
@@ -9378,67 +9437,6 @@ export const news: NewsBrief[] = [
       "article-f8a08b34",
       "f8a08b34",
       "chromium-out-of-bounds-write-cve-2026-118342-fixed-1fe91b"
-    ]
-  },
-  {
-    "slug": "chromium-improper-input-validation-cve-2026-118343-07261882",
-    "title": "Chromium Improper Input Validation CVE-2026-118343 Resolved",
-    "summary": "An improper input validation flaw, CVE-2026-118343, was identified in Chromium's ReadingList component, impacting Microsoft Edge (Chromium-based) browsers. The defect permits malformed list entries to bypass sanitization, potentially leading to memory corruption or denial-of-service if exploited, though no exploitation evidence is reported. Microsoft Edge includes the Chromium patch; users should install the latest update via the Chrome update channel.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118343",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118343"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-improper-input-validation-cve-2026-118343",
-      "article-07261882",
-      "07261882",
-      "chromium-improper-input-validation-cve-2026-118343-1fe91b",
-      "chromium-improper-input-validation-cve-2026-118343-resolved"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-118344-fixed-7b8a0d93",
-    "title": "Chromium Use-After-Free CVE-2026-118344 Fixed",
-    "summary": "A use-after-free vulnerability, CVE-2026-118344, was discovered in Chromium's Layout engine, affecting Microsoft Edge (Chromium-based) browsers. The flaw allows an attacker to trigger memory corruption during layout rendering, potentially enabling arbitrary code execution if exploited, though no active exploitation reports exist. Microsoft Edge incorporates the Chromium patch; users should update to the latest release via the Chrome update channel.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118344",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118344"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-118344-fixed",
-      "article-7b8a0d93",
-      "7b8a0d93",
-      "chromium-use-after-free-cve-2026-118344-fixed-1fe91b"
-    ]
-  },
-  {
-    "slug": "chromium-pdfium-use-after-free-cve-2026-118345-2d630412",
-    "title": "Chromium PDFium Use-After-Free CVE-2026-118345",
-    "summary": "A use‑after‑free flaw in Chromium’s PDFium engine, CVE‑2026‑118345, corrupts memory when parsing malicious PDFs, potentially enabling arbitrary code execution. The bug triggers on freed memory access, but no active exploitation has been observed. Microsoft Edge users receive the fix via Chromium updates; the patch is listed in Google Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118345",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118345"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-pdfium-use-after-free-cve-2026-118345",
-      "article-2d630412",
-      "2d630412",
-      "chromium-pdfium-use-after-free-cve-2026-118345-1fe91b"
     ]
   }
 ];
