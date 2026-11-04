@@ -1,5 +1,39 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/04/rapidfort-runtime-container-profiling/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/rapidfort-runtime-container-profiling/",
+    "title": "Secure your containers without breaking what works",
+    "headline": "Secure your containers without breaking what works",
+    "summary": "Teams identify vulnerabilities, but turning those findings into lower risk is much harder. Each unnecessary component can expand the attack surface and add vulnerabilities to investigate, patch or explain during an audit. Consider an NGINX image that contains 274 categorized vulnerabilities straight from download.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-04T06:00:34.000Z",
+    "ingestedAt": "2026-11-04T06:43:51.531Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://cybersecuritynews.com/stolen-entra-id-and-azure-credentials/",
+    "sourceUrl": "https://cybersecuritynews.com/stolen-entra-id-and-azure-credentials/",
+    "title": "Hackers Use Stolen Microsoft Entra ID and Azure DevOps Credentials to Access 27 Organizations",
+    "headline": "Hackers Use Stolen Microsoft Entra ID and Azure DevOps Credentials to Access 27 Organizations",
+    "summary": "Hackers are abusing stolen Microsoft Entra ID application credentials and Azure DevOps identities to access Microsoft 365 and Azure environments, reaching at least 27 organizations. Todyl’s latest investigation update describes an ongoing campaign targeting managed service providers (MSPs) and their customers since November 1, 2026.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T05:45:46.000Z",
+    "ingestedAt": "2026-11-04T06:43:51.533Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/04/ai-strategy-miscalculation-gartner-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/ai-strategy-miscalculation-gartner-report/",
     "title": "AI Risks Rank Highest in Gartner Emerging Risk Report",
@@ -45,6 +79,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:94996",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/llmhijacking-attacks/",
+    "sourceUrl": "https://cybersecuritynews.com/llmhijacking-attacks/",
+    "title": "LLMHijacking Attacks Inflate Corporate Cloud Bills",
+    "headline": "LLMHijacking Attacks Inflate Corporate Cloud Bills",
+    "summary": "Hackers stole corporate large language model access and resold it, driving cloud bill inflation to $1M for affected companies. The attacks leveraged stolen credentials to trigger unauthorized AI usage, generating over $100k in charges within a single day, Mandiant reported. Security teams should enforce strict credential management, enable usage monitoring, and apply least‑privilege controls to prevent unauthorized LLM exploitation.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T04:44:53.000Z",
+    "ingestedAt": "2026-11-04T06:45:06.252Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/llmhijacking-attacks/",
     "additionalSources": []
   },
   {
@@ -8000,48 +8050,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/news/2026/10/fake-pdf-and-search-tools-hijacked-searches-for-13-4-million-chrome-users",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
-    "title": "Aftermarket Car Head Units Found Carrying Pre-Installed Bloatware",
-    "headline": "Aftermarket Car Head Units Found Carrying Pre-Installed Bloatware",
-    "summary": "An analysis of cheap aftermarket automotive head units revealed pre-installed bloatware and background spyware. The devices contained background voice assistants using WebView components, location tracking, and unexpected call recording capabilities that silently consume processing resources. Vehicle owners using third-party Android head units should monitor network traffic and audit installed system packages.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "publishedAt": "2026-10-30T15:20:02.000Z",
-    "ingestedAt": "2026-10-31T23:28:24.901Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
-    "sourceUrl": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
-    "title": "TeamViewer Host Can Crash Viewer via CVE-2026-111585",
-    "headline": "TeamViewer Host Can Crash Viewer via CVE-2026-111585",
-    "summary": "A flaw in TeamViewer allows a compromised host to attack the viewer computer during a remote session. The vulnerability, CVE-2026-111585, lets the host crash the viewer's TeamViewer client and, on some platforms, run arbitrary code, enabling remote code execution. TeamViewer has released a patch; users should update to the latest version to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-10-30T15:17:28.000Z",
-    "url": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/north-korean-hackers-2/",
-    "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers-2/",
-    "title": "North Korea Group Steals Credentials, Injects Malware into GitHub",
-    "headline": "North Korea Group Steals Credentials, Injects Malware into GitHub",
-    "summary": "North Korea-aligned group DeceptiveDevelopment stole developer credentials to modify code in public and private GitHub repositories between April and September 2026. The compromised accounts enabled injection of malicious payloads into trusted software packages, creating new supply‑chain entry points for attackers. Security teams should enforce multi‑factor authentication, monitor repository activity, and apply the latest security patches to mitigate credential misuse.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-10-30T15:15:02.000Z",
-    "url": "https://cybersecuritynews.com/north-korean-hackers-2/",
     "additionalSources": []
   }
 ]

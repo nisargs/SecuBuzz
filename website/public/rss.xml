@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 05:45:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 06:45:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Secure your containers without breaking what works</title>
+      <link>https://secubuzz.com/news/secure-your-containers-without-breaking-what-works-2c37d2d1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/secure-your-containers-without-breaking-what-works-2c37d2d1</guid>
+      <description><![CDATA[Teams identify vulnerabilities, but turning those findings into lower risk is much harder. Each unnecessary component can expand the attack surface and add vulnerabilities to investigate, patch or explain during an audit. Consider an NGINX image that contains 274 categorized vulnerabilities straight from download.]]></description>
+      <pubDate>Wed, 04 Nov 2026 06:00:34 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/04/rapidfort-runtime-container-profiling/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Hackers Use Stolen Microsoft Entra ID and Azure DevOps Credentials to Access 27 Organizations</title>
+      <link>https://secubuzz.com/news/hackers-use-stolen-microsoft-entra-id-and-azure-de-93e16fbf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-stolen-microsoft-entra-id-and-azure-de-93e16fbf</guid>
+      <description><![CDATA[Hackers are abusing stolen Microsoft Entra ID application credentials and Azure DevOps identities to access Microsoft 365 and Azure environments, reaching at least 27 organizations. Todyl’s latest investigation update describes an ongoing campaign targeting managed service providers (MSPs) and their customers since November 1, 2026.]]></description>
+      <pubDate>Wed, 04 Nov 2026 05:45:46 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/stolen-entra-id-and-azure-credentials/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>AI Risks Rank Highest in Gartner Emerging Risk Report</title>
       <link>https://secubuzz.com/news/ai-risks-rank-highest-in-gartner-emerging-risk-rep-4abff701</link>
@@ -33,6 +51,15 @@
       <pubDate>Wed, 04 Nov 2026 04:47:44 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94996">Red Hat Security Advisories</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>LLMHijacking Attacks Inflate Corporate Cloud Bills</title>
+      <link>https://secubuzz.com/news/llmhijacking-attacks-inflate-corporate-cloud-bills-f3900eb4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/llmhijacking-attacks-inflate-corporate-cloud-bills-f3900eb4</guid>
+      <description><![CDATA[Hackers stole corporate large language model access and resold it, driving cloud bill inflation to $1M for affected companies. The attacks leveraged stolen credentials to trigger unauthorized AI usage, generating over $100k in charges within a single day, Mandiant reported. Security teams should enforce strict credential management, enable usage monitoring, and apply least‑privilege controls to prevent unauthorized LLM exploitation.]]></description>
+      <pubDate>Wed, 04 Nov 2026 04:44:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/llmhijacking-attacks/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Anthropic Releases FlashProve for Verifiable Model Inference</title>
@@ -428,33 +455,6 @@
       <description><![CDATA[It was discovered that jabberd2 allowed SASL ANONYMOUS authentication even when it was not enabled in the configuration. A remote attacker could possibly use this issue to bypass authentication.]]></description>
       <pubDate>Tue, 03 Nov 2026 17:35:55 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8984-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Trojanized Inno Installers Deliver Monetization Payloads</title>
-      <link>https://secubuzz.com/news/trojanized-inno-installers-deliver-monetization-pa-605b70fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trojanized-inno-installers-deliver-monetization-pa-605b70fb</guid>
-      <description><![CDATA[Microsoft Threat Intelligence identified a fake‑download campaign that distributes trojanized Inno installers to users. The installers embed monetization offers, enabling attackers to generate revenue through click‑throughs and ad fraud while remaining undetected during the installation process. Security teams should block known malicious installer URLs, employ application whitelisting, and monitor installer execution for anomalous behavior.]]></description>
-      <pubDate>Tue, 03 Nov 2026 17:32:47 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenAI Deploys Continuous Security Testing on Pando Git</title>
-      <link>https://secubuzz.com/news/openai-deploys-continuous-security-testing-on-pand-42884314</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-deploys-continuous-security-testing-on-pand-42884314</guid>
-      <description><![CDATA[OpenAI built Pando, a new Git backend, using Codex agents over 10 weeks while maintaining engineering work. The system now runs continuous red-team testing against Git and Pando to secure its AI-driven development workload. This represents an industry shift toward automated security validation in DevOps pipelines.]]></description>
-      <pubDate>Tue, 03 Nov 2026 17:15:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/openai-builds-pando-git-infrastructure/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cisco Email Gateway Vulnerability Enables Root RCE</title>
-      <link>https://secubuzz.com/news/cisco-email-gateway-vulnerability-enables-root-rce-804fca82</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-email-gateway-vulnerability-enables-root-rce-804fca82</guid>
-      <description><![CDATA[A SQL injection flaw in Cisco AsyncOS email parsing lets unauthenticated attackers run arbitrary OS commands with root privileges on Secure Email Gateway devices. The flaw arises from insufficient email content validation, allowing crafted SQL statements to trigger command execution. Cisco released patches; no workarounds exist, so deploy the update immediately and monitor for unauthorized command execution.]]></description>
-      <pubDate>Tue, 03 Nov 2026 17:05:12 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Email+Gateway+SQL+Injection+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
       <category>Vulnerability</category>
     </item>
   </channel>
