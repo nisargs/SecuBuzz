@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 23:46:01 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 23:49:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS</title>
@@ -15,6 +15,24 @@
       <pubDate>Wed, 04 Nov 2026 21:53:42 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Rails Active Storage ImageMagick Arbitrary File Write</title>
+      <link>https://secubuzz.com/news/rails-active-storage-imagemagick-arbitrary-file-wr-70eb5e9d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rails-active-storage-imagemagick-arbitrary-file-wr-70eb5e9d</guid>
+      <description><![CDATA[A critical vulnerability exists in Ruby on Rails Active Storage's integration with ImageMagick, allowing attackers to write arbitrary files and read sensitive files via uploaded images. This flaw enables potential lateral movement within Rails-based web applications. Organizations using Rails with ImageMagick processing should apply vendor patches immediately.]]></description>
+      <pubDate>Wed, 04 Nov 2026 21:48:18 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Multiple Asian Airlines Report Data Breaches from Amadeus</title>
+      <link>https://secubuzz.com/news/multiple-asian-airlines-report-data-breaches-from-2ae0d0e9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/multiple-asian-airlines-report-data-breaches-from-2ae0d0e9</guid>
+      <description><![CDATA[Six Asian airlines—Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines, and Malaysia Airlines—have reported data breaches traced to Amadeus IT Group, a Spanish provider of flight reservation and ticketing platforms. The breaches expose passenger data across multiple carriers following an initial incident at the Spanish IT provider. Affected organizations should conduct forensic investigations and implement enhanced access controls.]]></description>
+      <pubDate>Wed, 04 Nov 2026 21:30:00 GMT</pubDate>
+      <source url="https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard</title>
@@ -89,6 +107,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:95281: Moderate: xorg-x11-server-Xwayland security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95281-moderate-xorg-x11-server-xwayland-25d890e2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95281-moderate-xorg-x11-server-xwayland-25d890e2</guid>
+      <description><![CDATA[An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 04 Nov 2026 18:14:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95281">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>SOC Leaders Face Evolving Operational Challenges in 2027</title>
       <link>https://secubuzz.com/news/soc-leaders-face-evolving-operational-challenges-i-21f7e140</link>
       <guid isPermaLink="true">https://secubuzz.com/news/soc-leaders-face-evolving-operational-challenges-i-21f7e140</guid>
@@ -141,6 +168,15 @@
       <pubDate>Wed, 04 Nov 2026 17:00:38 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>App Store Connect 3.3.1 Patch Release</title>
+      <link>https://secubuzz.com/news/app-store-connect-3-3-1-patch-release-b35f72ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/app-store-connect-3-3-1-patch-release-b35f72ec</guid>
+      <description><![CDATA[Apple released App Store Connect 3.3.1 addressing multiple security vulnerabilities in its developer management platform. The update resolves flaws that could allow unauthorized access to sensitive store metadata and user account data. Organizations using the tool should immediately install the latest version to maintain secure operations.]]></description>
+      <pubDate>Wed, 04 Nov 2026 17:00:00 GMT</pubDate>
+      <source url="https://developer.apple.com/news/releases/?id=11042026a">Apple Security Updates</source>
+      <category>General</category>
     </item>
     <item>
       <title>NIKKE Launcher Compromised, Distributes Credential-Stealing Malware</title>
@@ -224,6 +260,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Microsoft Edge Patches Upstream Chromium Memory Corruption Flaw</title>
+      <link>https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-memory-co-92e95873</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-memory-co-92e95873</guid>
+      <description><![CDATA[Microsoft Edge received an update addressing a memory corruption flaw, identified as CVE-2026-119264, ingested from upstream Chromium components. The memory corruption vulnerability originated in Chrome, creating technical risks for Chromium-based browsers if left unpatched. Administrators and users should update Microsoft Edge to the latest build incorporating the upstream Google Chrome security patches.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Edge addresses Chromium CVE-2026-118309</title>
       <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-118309-a0636b28</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-118309-a0636b28</guid>
@@ -305,6 +350,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>RHSA-2026:95234: Important: git-lfs security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95234-important-git-lfs-security-update-0fcf4d36</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95234-important-git-lfs-security-update-0fcf4d36</guid>
+      <description><![CDATA[An update for git-lfs is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Wed, 04 Nov 2026 15:42:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95234">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>USN-8998-1: Squid vulnerability</title>
       <link>https://secubuzz.com/news/usn-8998-1-squid-vulnerability-3f698384</link>
       <guid isPermaLink="true">https://secubuzz.com/news/usn-8998-1-squid-vulnerability-3f698384</guid>
@@ -350,6 +404,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Updates PKI Core in RHEL 7</title>
+      <link>https://secubuzz.com/news/red-hat-updates-pki-core-in-rhel-7-e17623f9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-pki-core-in-rhel-7-e17623f9</guid>
+      <description><![CDATA[Red Hat issued a security update for pki-core addressing security flaws in Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rated the security impact of these vulnerabilities as important based on the Common Vulnerability Scoring System. System administrators are advised to apply the updated pki-core packages immediately to maintain enterprise system security.]]></description>
+      <pubDate>Wed, 04 Nov 2026 14:44:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95182">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Releases JBoss EAP 8.1.9 XP 6.0.7.GA Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-79ca22b3</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-79ca22b3</guid>
@@ -392,69 +455,6 @@
       <description><![CDATA[Sysdig expanded its platform to provide runtime visibility and governance for AI agents, tracking their actions before reaching production systems. The new capability blocks risky behavior by monitoring AI agent activity, enabling security teams to intervene proactively. Organizations can integrate Sysdig’s runtime controls to enforce compliance and reduce the attack surface of AI workloads.]]></description>
       <pubDate>Wed, 04 Nov 2026 14:34:44 GMT</pubDate>
       <source url="https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Patches Important Flaw in PKI Core</title>
-      <link>https://secubuzz.com/news/red-hat-patches-important-flaw-in-pki-core-3baaaed8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-important-flaw-in-pki-core-3baaaed8</guid>
-      <description><![CDATA[Red Hat released a security update addressing a vulnerability in the pki-core module for Red Hat Enterprise Linux 8.4 extended support editions. Tracked as CVE-2026-43871, the flaw carries an Important severity rating assigned by Red Hat Product Security. Administrators must apply the updated pki-core:10.6 packages to affected systems to maintain system integrity and security.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:34:44 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95181">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Descope Envoy AI Agent Authentication</title>
-      <link>https://secubuzz.com/news/descope-envoy-ai-agent-authentication-5967a76b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/descope-envoy-ai-agent-authentication-5967a76b</guid>
-      <description><![CDATA[Descope announced Envoy, a capability enabling personal AI agents to receive delegated sign-in paths within consumer applications alongside existing authentication flows. Consumer companies can now treat agents as first-class users with dedicated identities and permission structures without rebuilding identity infrastructure. Launch partners include GoFundMe, You.com, GoodRx, and Composio.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:31:05 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/04/descope-envoy/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>APT29 Watering Hole Campaign Targets iOS and Android Users</title>
-      <link>https://secubuzz.com/news/apt29-watering-hole-campaign-targets-ios-and-andro-d740d667</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apt29-watering-hole-campaign-targets-ios-and-andro-d740d667</guid>
-      <description><![CDATA[APT29 conducted a large-scale watering hole campaign targeting iOS and Android users via compromised websites, fake domains, and a supply chain attack involving the Ukrainian web analytics service Plerdy SEO Tracker. The injected JavaScript code collects browser and device attributes to deliver exploits. Organizations should monitor for anomalous traffic patterns originating from compromised third-party services.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:27:52 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html">The Hacker News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Barracuda ESG Auth Bypass Enables Root Access</title>
-      <link>https://secubuzz.com/news/barracuda-esg-auth-bypass-enables-root-access-027a29b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-esg-auth-bypass-enables-root-access-027a29b3</guid>
-      <description><![CDATA[Barracuda’s Email Security Gateway appliances have an authentication bypass that can be chained with a command injection flaw to gain root privileges. The flaw, CVE-2026-116606, permits attackers to execute arbitrary commands after authenticating with weak credentials. Barracuda has issued a patch; administrators should apply it immediately and enforce strong authentication.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:24:54 GMT</pubDate>
-      <source url="https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>BlueFlag Security Adds Developer Identity Controls</title>
-      <link>https://secubuzz.com/news/blueflag-security-adds-developer-identity-controls-756cf508</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/blueflag-security-adds-developer-identity-controls-756cf508</guid>
-      <description><![CDATA[BlueFlag Security expanded its AI Agent Governance platform to fully map access, behavior and oversight of both approved and shadow AI agents operating under developer identities. The platform now offers automated risk remediation across the software development lifecycle, enabling organizations to govern all aspects of AI agents and their relationships with human and machine identities.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:22:51 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/04/blueflag-ai-agent-governance/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Automation Needed as Incidents Outpace Manual Response</title>
-      <link>https://secubuzz.com/news/automation-needed-as-incidents-outpace-manual-resp-a018221d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/automation-needed-as-incidents-outpace-manual-resp-a018221d</guid>
-      <description><![CDATA[An industry article argues that fully autonomous communication processes may outpace current incident response capabilities, stressing the need for automation. The piece notes that automating information updates could reduce manual pressure, but organizations must ensure readiness for rapid incident evolution. Security teams should evaluate automation tools, establish clear escalation paths, and test response workflows to maintain operational resilience.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:17:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Citrix Expands AI Agent Governance Controls</title>
-      <link>https://secubuzz.com/news/citrix-expands-ai-agent-governance-controls-d700f5d9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-expands-ai-agent-governance-controls-d700f5d9</guid>
-      <description><![CDATA[Citrix announced new capabilities across its SecurSpaces, SecurAccess and Platform Flex products to help organizations securely deploy AI agents and govern AI-powered work. The updates include expanded persona support in SecurSpaces, new AI governance features in SecurAccess, and a credit-based consumption model.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:13:48 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/04/citrix-ai-governance-capabilities/">Help Net Security</source>
       <category>General</category>
     </item>
   </channel>

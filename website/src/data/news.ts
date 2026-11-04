@@ -32,6 +32,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rails-active-storage-imagemagick-arbitrary-file-wr-70eb5e9d",
+    "title": "Rails Active Storage ImageMagick Arbitrary File Write",
+    "summary": "A critical vulnerability exists in Ruby on Rails Active Storage's integration with ImageMagick, allowing attackers to write arbitrary files and read sensitive files via uploaded images. This flaw enables potential lateral movement within Rails-based web applications. Organizations using Rails with ImageMagick processing should apply vendor patches immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
+    "publishedAt": "2026-11-04T21:48:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rails-active-storage-imagemagick-arbitrary-file-wr",
+      "article-70eb5e9d",
+      "70eb5e9d",
+      "rails-active-storage-imagemagick-arbitrary-file-wr-5f3c47",
+      "rails-active-storage-imagemagick-arbitrary-file-write"
+    ]
+  },
+  {
+    "slug": "multiple-asian-airlines-report-data-breaches-from-2ae0d0e9",
+    "title": "Multiple Asian Airlines Report Data Breaches from Amadeus",
+    "summary": "Six Asian airlines—Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines, and Malaysia Airlines—have reported data breaches traced to Amadeus IT Group, a Spanish provider of flight reservation and ticketing platforms. The breaches expose passenger data across multiple carriers following an initial incident at the Spanish IT provider. Affected organizations should conduct forensic investigations and implement enhanced access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
+    "publishedAt": "2026-11-04T21:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "multiple-asian-airlines-report-data-breaches-from",
+      "article-2ae0d0e9",
+      "2ae0d0e9",
+      "multiple-asian-airlines-report-data-breaches-from-67c7e1",
+      "multiple-asian-airlines-report-data-breaches-from-amadeus"
+    ]
+  },
+  {
     "slug": "cve-2026-122192-guest-access-to-firecracker-proces-94ed1063",
     "title": "CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard",
     "summary": "Bulletin ID: 2026-169-AWS Publication Date: 11/04/2026 11:30 AM PST Description: We identified CVE-2026-122192, an issue in Firecracker v0.23.0 through v1.16.1 that, under certain host memory conditions, can let a root user in a guest read or modify memory of the Firecracker process.",
@@ -182,6 +220,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-25d890e2",
+    "title": "RHSA-2026:95281: Moderate: xorg-x11-server-Xwayland security update",
+    "summary": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95281",
+    "publishedAt": "2026-11-04T18:14:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95281-moderate-xorg-x11-server-xwayland",
+      "article-25d890e2",
+      "25d890e2",
+      "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-37d84c",
+      "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-security-u"
+    ]
+  },
+  {
     "slug": "soc-leaders-face-evolving-operational-challenges-i-21f7e140",
     "title": "SOC Leaders Face Evolving Operational Challenges in 2027",
     "summary": "Security Operations Center and managed security service provider teams face mounting operational pressure from evolving attack techniques, rising alert volumes, and budget constraints. Complex threat environments and persistent staffing shortages hinder effective detection and investigation capabilities across enterprise environments. Security leaders must prioritize threat intelligence integration to enhance detection capabilities and streamline investigation workflows.",
@@ -301,6 +358,24 @@ export const news: NewsBrief[] = [
       "article-ffa93564",
       "ffa93564",
       "sonicwall-gms-flaws-expose-files-alter-db-records-7430e3"
+    ]
+  },
+  {
+    "slug": "app-store-connect-3-3-1-patch-release-b35f72ec",
+    "title": "App Store Connect 3.3.1 Patch Release",
+    "summary": "Apple released App Store Connect 3.3.1 addressing multiple security vulnerabilities in its developer management platform. The update resolves flaws that could allow unauthorized access to sensitive store metadata and user account data. Organizations using the tool should immediately install the latest version to maintain secure operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11042026a",
+    "publishedAt": "2026-11-04T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "app-store-connect-3-3-1-patch-release",
+      "article-b35f72ec",
+      "b35f72ec",
+      "app-store-connect-3-3-1-patch-release-68728a"
     ]
   },
   {
@@ -480,6 +555,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-edge-patches-upstream-chromium-memory-co-92e95873",
+    "title": "Microsoft Edge Patches Upstream Chromium Memory Corruption Flaw",
+    "summary": "Microsoft Edge received an update addressing a memory corruption flaw, identified as CVE-2026-119264, ingested from upstream Chromium components. The memory corruption vulnerability originated in Chrome, creating technical risks for Chromium-based browsers if left unpatched. Administrators and users should update Microsoft Edge to the latest build incorporating the upstream Google Chrome security patches.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119264"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-patches-upstream-chromium-memory-co",
+      "article-92e95873",
+      "92e95873",
+      "microsoft-edge-patches-upstream-chromium-memory-co-1fe8ab",
+      "microsoft-edge-patches-upstream-chromium-memory-corruption-f"
+    ]
+  },
+  {
     "slug": "microsoft-edge-addresses-chromium-cve-2026-118309-a0636b28",
     "title": "Microsoft Edge addresses Chromium CVE-2026-118309",
     "summary": "Microsoft Edge (Chromium-based) incorporates a fix for CVE-2026-118309, a reference resolution flaw discovered in Chromium. The vulnerability allowed attackers to manipulate internal references, potentially leading to memory corruption or denial of service, but no public exploits have been disclosed. Edge users should install the latest update via Windows Update or the Microsoft Edge installer to ensure the patch is applied.",
@@ -654,6 +750,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-95234-important-git-lfs-security-update-0fcf4d36",
+    "title": "RHSA-2026:95234: Important: git-lfs security update",
+    "summary": "An update for git-lfs is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95234",
+    "publishedAt": "2026-11-04T15:42:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95234-important-git-lfs-security-update",
+      "article-0fcf4d36",
+      "0fcf4d36",
+      "rhsa-2026-95234-important-git-lfs-security-update-37d84d"
+    ]
+  },
+  {
     "slug": "usn-8998-1-squid-vulnerability-3f698384",
     "title": "USN-8998-1: Squid vulnerability",
     "summary": "It was discovered that Squid incorrectly handled certain HTTP Transfer- Encoding headers. An attacker could possibly use this issue to perform HTTP request smuggling attacks, bypass security mechanisms, or poison web caches.",
@@ -742,6 +856,24 @@ export const news: NewsBrief[] = [
       "6a1b1200",
       "google-calendar-phishing-campaign-hijacks-sessions-6a4a1e",
       "google-calendar-phishing-campaign-hijacks-sessions-bypasses-"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-pki-core-in-rhel-7-e17623f9",
+    "title": "Red Hat Updates PKI Core in RHEL 7",
+    "summary": "Red Hat issued a security update for pki-core addressing security flaws in Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rated the security impact of these vulnerabilities as important based on the Common Vulnerability Scoring System. System administrators are advised to apply the updated pki-core packages immediately to maintain enterprise system security.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95182",
+    "publishedAt": "2026-11-04T14:44:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-pki-core-in-rhel-7",
+      "article-e17623f9",
+      "e17623f9",
+      "red-hat-updates-pki-core-in-rhel-7-37d850"
     ]
   },
   {
@@ -1297,6 +1429,25 @@ export const news: NewsBrief[] = [
       "10ca6f84",
       "node-js-schedules-high-severity-security-fixes-for-4cf1ad",
       "node-js-schedules-high-severity-security-fixes-for-22-x-24-x"
+    ]
+  },
+  {
+    "slug": "impart-launches-runtime-defense-harness-for-virtua-e39e09b0",
+    "title": "Impart Launches Runtime Defense Harness for Virtual Patching",
+    "summary": "Impart Security released the Runtime Defense Harness, an AI-driven environment where agents generate and test virtual patches for new vulnerabilities without deploying models into live traffic. The platform enforces deterministic code after engineer approval, providing tested patches within 60 minutes of a vulnerability disclosure. This approach addresses the growing gap between exploit publication and available fixes.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/impart-security-runtime-defense-harness/",
+    "publishedAt": "2026-11-04T12:48:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "impart-launches-runtime-defense-harness-for-virtua",
+      "article-e39e09b0",
+      "e39e09b0",
+      "impart-launches-runtime-defense-harness-for-virtua-6cd317",
+      "impart-launches-runtime-defense-harness-for-virtual-patching"
     ]
   },
   {
@@ -9303,157 +9454,6 @@ export const news: NewsBrief[] = [
       "40426d79",
       "gitee-repos-detecting-exposed-cloud-and-ai-credent-e4d0c3",
       "gitee-repos-detecting-exposed-cloud-and-ai-credentials"
-    ]
-  },
-  {
-    "slug": "telegram-android-rce-fix-for-cve-2026-111105-e8fd46ba",
-    "title": "Telegram Android RCE Fix for CVE-2026-111105",
-    "summary": "Telegram Android users face a remote code execution flaw in voice call handling, identified as CVE-2026-111105, in enterprise environments. The flaw stems from unchecked packet validation, allowing unauthenticated attackers to run arbitrary code; no public exploit yet. Telegram released an Android patch; apply it immediately and monitor call traffic for anomalies.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/telegram-android-flaw-lets-attackers-run-code-when-user",
-    "publishedAt": "2026-11-01T17:39:07.000Z",
-    "cves": [
-      "CVE-2026-111105"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "telegram-android-rce-fix-for-cve-2026-111105",
-      "article-e8fd46ba",
-      "e8fd46ba",
-      "telegram-android-rce-fix-for-cve-2026-111105-4004d9"
-    ]
-  },
-  {
-    "slug": "chatgpt-session-hijack-flaw-requires-patch-11072ecb",
-    "title": "ChatGPT Session Hijack Flaw Requires Patch",
-    "summary": "A session hijack vulnerability in ChatGPT lets attackers hijack user sessions if they acquire a valid session cookie. The flaw arises from insufficient binding of session tokens to IP addresses and missing secure cookie flags, permitting credential theft. OpenAI released a patch enforcing secure cookie attributes and IP binding, and advises users to clear cookies and enable two‑factor authentication.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/a-shared-chatgpt-link-could-run-attacker-code-in-your-s",
-    "publishedAt": "2026-11-01T17:36:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chatgpt-session-hijack-flaw-requires-patch",
-      "article-11072ecb",
-      "11072ecb",
-      "chatgpt-session-hijack-flaw-requires-patch-10e4fa"
-    ]
-  },
-  {
-    "slug": "netamloader-detecting-net-injection-on-gov-windows-2edf26ac",
-    "title": "NetamLoader: Detecting .NET Injection on Gov Windows 10",
-    "summary": "NetamLoader is a malicious loader that injects .NET assemblies into legitimate Windows 10 processes on government systems. The loader exploits the Windows Runtime API to bypass code‑signing checks, enabling stealthy persistence and credential theft. Defenders should monitor for anomalous .NET process creation, enforce application whitelisting, and apply the latest security updates to block the loader.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/netamloader-malware-targets-government-windows-10-syste",
-    "publishedAt": "2026-11-01T17:35:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "netamloader-detecting-net-injection-on-gov-windows",
-      "article-2edf26ac",
-      "2edf26ac",
-      "netamloader-detecting-net-injection-on-gov-windows-7d931f",
-      "netamloader-detecting-net-injection-on-gov-windows-10"
-    ]
-  },
-  {
-    "slug": "lxd-privilege-escalation-fix-for-cve-2026-112816-4ea267e0",
-    "title": "LXD Privilege Escalation Fix for CVE-2026-112816",
-    "summary": "LXD containers can be exploited for privilege escalation via CVE-2026-112816, affecting host systems running the container engine. The flaw originates from improper validation of container configuration files, allowing attackers to gain root access without authentication; no public exploit confirmed. Apply the vendor patch immediately and audit container configurations for anomalous privilege assignments.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonat",
-    "publishedAt": "2026-11-01T17:34:54.000Z",
-    "cves": [
-      "CVE-2026-112816"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "lxd-privilege-escalation-fix-for-cve-2026-112816",
-      "article-4ea267e0",
-      "4ea267e0",
-      "lxd-privilege-escalation-fix-for-cve-2026-112816-e20997"
-    ]
-  },
-  {
-    "slug": "volta-stealer-detecting-and-blocking-ai-driven-mal-8de8d981",
-    "title": "VOLTA Stealer: Detecting and Blocking AI‑Driven Malware",
-    "summary": "The VOLTA Stealer malware leverages AI techniques to obfuscate its payload and evade traditional signature‑based defenses. It injects malicious code into legitimate processes, harvests credentials, and exfiltrates data via encrypted channels, posing a high‑risk threat to enterprise networks. Security teams should deploy behavioral analytics, enable application whitelisting, and apply vendor‑issued patches to mitigate the malware’s spread.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/volta-stealer-how-to-detect-block-ai-driven-malware",
-    "publishedAt": "2026-11-01T16:30:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "volta-stealer-detecting-and-blocking-ai-driven-mal",
-      "article-8de8d981",
-      "8de8d981",
-      "volta-stealer-detecting-and-blocking-ai-driven-mal-529ce0",
-      "volta-stealer-detecting-and-blocking-ai-driven-malware"
-    ]
-  },
-  {
-    "slug": "syrian-hacker-sentenced-42-months-for-136b-tweet-cf99d81a",
-    "title": "Syrian Hacker Sentenced 42 Months for $136B Tweet",
-    "summary": "A Syrian hacker received a 42‑month prison sentence for orchestrating a $136 billion Twitter account takeover. The case involved credential stuffing and social engineering that enabled unauthorized access to high‑profile accounts, compromising user data. Law enforcement agencies highlighted the need for stronger global multi‑factor authentication and monitoring of privileged account activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/syrian-hacker-sentenced-to-42-months-over-136b-ap-tweet",
-    "publishedAt": "2026-11-01T16:30:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "syrian-hacker-sentenced-42-months-for-136b-tweet",
-      "article-cf99d81a",
-      "cf99d81a",
-      "syrian-hacker-sentenced-42-months-for-136b-tweet-4346df"
-    ]
-  },
-  {
-    "slug": "github-supply-chain-attack-detection-for-61-reposi-737e1f61",
-    "title": "GitHub Supply Chain Attack Detection for 61 Repositories",
-    "summary": "GitHub identified a series of supply chain attacks targeting 61 repositories, enabling malicious code injection into open-source projects. The attacks exploit compromised contributor credentials and insecure merge workflows, allowing attackers to embed backdoors that persist across forks. Security teams should review audit logs, enforce two-factor authentication, and apply the provided patch or workflow restrictions to eliminate the threat.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/github-issues-detect-61-repo-supply-chain-attacks",
-    "publishedAt": "2026-11-01T16:29:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-supply-chain-attack-detection-for-61-reposi",
-      "article-737e1f61",
-      "737e1f61",
-      "github-supply-chain-attack-detection-for-61-reposi-34c3aa",
-      "github-supply-chain-attack-detection-for-61-repositories"
-    ]
-  },
-  {
-    "slug": "aur0ra-ransomware-employs-ai-exploitation-94670f36",
-    "title": "Aur0ra Ransomware Employs AI Exploitation",
-    "summary": "Aur0ra ransomware leverages AI-driven tactics to identify and exploit vulnerable systems. The malware’s adaptive techniques enable it to bypass standard defenses, potentially leading to data encryption and extortion. Security teams should deploy the latest vendor patches, enable AI‑based detection rules, and isolate affected hosts immediately and monitor for lateral movement.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/aur0ra-ransomware-ai-driven-exploitation-tactics",
-    "publishedAt": "2026-11-01T16:28:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aur0ra-ransomware-employs-ai-exploitation",
-      "article-94670f36",
-      "94670f36",
-      "aur0ra-ransomware-employs-ai-exploitation-aa79e6"
     ]
   }
 ];
