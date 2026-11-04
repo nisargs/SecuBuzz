@@ -32,6 +32,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "skyw4lker-phishing-kit-targets-us-microsoft-365-ac-de436d88",
+    "title": "SkyW4lker Phishing Kit Targets US Microsoft 365 Accounts",
+    "summary": "The SkyW4lker phishing kit targets US enterprise organizations to facilitate Microsoft 365 account takeovers without requiring stolen user passwords. The kit abuses Microsoft device-code sign-in flows to trick users into authorizing attacker access, granting valid sessions to corporate mailboxes, documents, and connected applications.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/skyw4lker-phishing-campaign-expands-threatening-us-enterprises-with-microsoft-365-account-takeovers/",
+    "publishedAt": "2026-11-04T18:43:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "skyw4lker-phishing-kit-targets-us-microsoft-365-ac",
+      "article-de436d88",
+      "de436d88",
+      "skyw4lker-phishing-kit-targets-us-microsoft-365-ac-235f8d",
+      "skyw4lker-phishing-kit-targets-us-microsoft-365-accounts"
+    ]
+  },
+  {
     "slug": "chrome-158-0-8127-18-19-stable-desktop-update-f0d8cb49",
     "title": "Chrome 158.0.8127.18/.19 Stable Desktop Update",
     "summary": "Google Chrome released Stable channel build 158.0.8127.18/.19 for Windows as an early stable rollout to a small percentage of users. This desktop update introduces no specific CVE-identified vulnerability; it is a routine browser patch cycle. Security teams should monitor for any reported regressions and validate stability before full deployment across enterprise fleets.",
@@ -65,6 +84,25 @@ export const news: NewsBrief[] = [
       "article-129a4078",
       "129a4078",
       "ncsc-10th-annual-review-on-cyber-resilience-basics-2391fb"
+    ]
+  },
+  {
+    "slug": "soc-leaders-face-evolving-operational-challenges-i-21f7e140",
+    "title": "SOC Leaders Face Evolving Operational Challenges in 2027",
+    "summary": "Security Operations Center and managed security service provider teams face mounting operational pressure from evolving attack techniques, rising alert volumes, and budget constraints. Complex threat environments and persistent staffing shortages hinder effective detection and investigation capabilities across enterprise environments. Security leaders must prioritize threat intelligence integration to enhance detection capabilities and streamline investigation workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/6-challenges-soc-leaders-should-turn-into-priorities-in-2027/",
+    "publishedAt": "2026-11-04T18:07:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "soc-leaders-face-evolving-operational-challenges-i",
+      "article-21f7e140",
+      "21f7e140",
+      "soc-leaders-face-evolving-operational-challenges-i-420e45",
+      "soc-leaders-face-evolving-operational-challenges-in-2027"
     ]
   },
   {
@@ -266,6 +304,25 @@ export const news: NewsBrief[] = [
       "20f27ea2",
       "rhsa-2026-95241-important-bind-security-bug-fix-an-37d84d",
       "rhsa-2026-95241-important-bind-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
+    "slug": "prompt-adware-discovered-in-openai-codex-jailbreak-71f7bc3a",
+    "title": "Prompt Adware Discovered in OpenAI Codex Jailbreak Toolkit",
+    "summary": "Check Point Research disclosed details of a malicious jailbreak bundle targeting OpenAI Codex configuration settings. Dubbed Haiou, the toolkit alters the artificial intelligence agent's trusted instructions to inject unauthorized advertisements for a third-party gateway. Security teams deploying artificial intelligence development environments must inspect custom agent configurations and remove untrusted jailbreak tools.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+    "publishedAt": "2026-11-04T16:06:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "prompt-adware-discovered-in-openai-codex-jailbreak",
+      "article-71f7bc3a",
+      "71f7bc3a",
+      "prompt-adware-discovered-in-openai-codex-jailbreak-2e2173",
+      "prompt-adware-discovered-in-openai-codex-jailbreak-toolkit"
     ]
   },
   {
@@ -552,6 +609,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "blueflag-security-adds-developer-identity-controls-756cf508",
+    "title": "BlueFlag Security Adds Developer Identity Controls",
+    "summary": "BlueFlag Security expanded its AI Agent Governance platform to fully map access, behavior and oversight of both approved and shadow AI agents operating under developer identities. The platform now offers automated risk remediation across the software development lifecycle, enabling organizations to govern all aspects of AI agents and their relationships with human and machine identities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/blueflag-ai-agent-governance/",
+    "publishedAt": "2026-11-04T14:22:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "blueflag-security-adds-developer-identity-controls",
+      "article-756cf508",
+      "756cf508",
+      "blueflag-security-adds-developer-identity-controls-34fe1d"
+    ]
+  },
+  {
     "slug": "automation-needed-as-incidents-outpace-manual-resp-a018221d",
     "title": "Automation Needed as Incidents Outpace Manual Response",
     "summary": "An industry article argues that fully autonomous communication processes may outpace current incident response capabilities, stressing the need for automation. The piece notes that automating information updates could reduce manual pressure, but organizations must ensure readiness for rapid incident evolution. Security teams should evaluate automation tools, establish clear escalation paths, and test response workflows to maintain operational resilience.",
@@ -568,6 +643,24 @@ export const news: NewsBrief[] = [
       "a018221d",
       "automation-needed-as-incidents-outpace-manual-resp-1449a4",
       "automation-needed-as-incidents-outpace-manual-response"
+    ]
+  },
+  {
+    "slug": "citrix-expands-ai-agent-governance-controls-d700f5d9",
+    "title": "Citrix Expands AI Agent Governance Controls",
+    "summary": "Citrix announced new capabilities across its SecurSpaces, SecurAccess and Platform Flex products to help organizations securely deploy AI agents and govern AI-powered work. The updates include expanded persona support in SecurSpaces, new AI governance features in SecurAccess, and a credit-based consumption model.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/citrix-ai-governance-capabilities/",
+    "publishedAt": "2026-11-04T14:13:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-expands-ai-agent-governance-controls",
+      "article-d700f5d9",
+      "d700f5d9",
+      "citrix-expands-ai-agent-governance-controls-63b21e"
     ]
   },
   {
@@ -9332,104 +9425,6 @@ export const news: NewsBrief[] = [
       "97dcff30",
       "chromium-use-after-free-cve-2026-118357-in-filesys-1fe91b",
       "chromium-use-after-free-cve-2026-118357-in-filesystem"
-    ]
-  },
-  {
-    "slug": "chromium-webaudio-memory-corruption-cve-2026-11835-9a63abf5",
-    "title": "Chromium WebAudio Memory Corruption CVE-2026-118358",
-    "summary": "Chromium’s WebAudio engine contains a memory corruption flaw (CVE-2026-118358) that can enable arbitrary code execution in affected browsers. The bug occurs when the audio context processes malformed audio data, leading to out-of-bounds writes that attackers can exploit. Chrome and Microsoft Edge have issued patches; users should update to the latest release or apply the vendor’s hotfix to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118358",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118358"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-webaudio-memory-corruption-cve-2026-11835",
-      "article-9a63abf5",
-      "9a63abf5",
-      "chromium-webaudio-memory-corruption-cve-2026-11835-1fe91b",
-      "chromium-webaudio-memory-corruption-cve-2026-118358"
-    ]
-  },
-  {
-    "slug": "chromium-v8-memory-corruption-flaw-cve-2026-118359-de0fc468",
-    "title": "Chromium V8 Memory Corruption Flaw CVE-2026-118359",
-    "summary": "CVE-2026-118359 is a memory corruption flaw in Chromium’s V8 engine triggered by JavaScript, affecting Microsoft Edge and browsers. The flaw arises from unchecked buffer handling in script parsing, enabling remote code execution with a CVSS of 8.2; no public exploit. Microsoft recommends installing the latest Edge update, and Google advises applying the newest Chrome patch from the Chrome Releases blog.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118359",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118359"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-v8-memory-corruption-flaw-cve-2026-118359",
-      "article-de0fc468",
-      "de0fc468",
-      "chromium-v8-memory-corruption-flaw-cve-2026-118359-1fe91b"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-118356-fixed-cdc718b3",
-    "title": "Chromium Use-After-Free CVE-2026-118356 Fixed",
-    "summary": "Chromium's WTF parser contains a use-after-free vulnerability, CVE-2026-118356, that could allow attackers to execute arbitrary code during web page rendering. The flaw arises from improper reference counting of DOM nodes, enabling memory corruption without authentication; no public exploit is known. Microsoft Edge and Chrome have released patches; update browsers immediately and enable automatic updates to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118356",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118356"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-118356-fixed",
-      "article-cdc718b3",
-      "cdc718b3",
-      "chromium-use-after-free-cve-2026-118356-fixed-1fe91b"
-    ]
-  },
-  {
-    "slug": "edge-addresses-cve-2026-118350-use-after-free-8f6c0f2a",
-    "title": "Edge Addresses CVE‑2026‑118350 Use‑After‑Free",
-    "summary": "A use‑after‑free flaw in Chromium’s Turbolev component, CVE‑2026‑118350, can corrupt memory during image rendering. The defect stems from improper handling of freed memory in image decoding, potentially enabling code execution if exploited; no public exploit is known. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118350",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "edge-addresses-cve-2026-118350-use-after-free",
-      "article-8f6c0f2a",
-      "8f6c0f2a",
-      "edge-addresses-cve-2026-118350-use-after-free-1fe91b"
-    ]
-  },
-  {
-    "slug": "edge-addresses-cve-2026-118351-skia-memory-corrupt-674334b9",
-    "title": "Edge Addresses CVE‑2026‑118351 Skia Memory Corruption",
-    "summary": "A memory corruption vulnerability in Chromium’s Skia graphics library, CVE‑2026‑118351, can affect rendering of web content. The flaw arises from improper bounds checking during image processing, potentially allowing arbitrary code execution if exploited; no public exploit is documented. Microsoft Edge incorporates the Chrome patch; users should update to the latest Edge release or apply the referenced Chrome update.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118351",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "edge-addresses-cve-2026-118351-skia-memory-corrupt",
-      "article-674334b9",
-      "674334b9",
-      "edge-addresses-cve-2026-118351-skia-memory-corrupt-1fe91b",
-      "edge-addresses-cve-2026-118351-skia-memory-corruption"
     ]
   }
 ];
