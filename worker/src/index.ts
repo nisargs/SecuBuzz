@@ -1039,6 +1039,19 @@ export default {
         });
       }
 
+      // Ads.txt for Authorized Digital Sellers (Google AdSense)
+      if (url.pathname === '/ads.txt') {
+        const adsTxt = `google.com, pub-6892734842813197, DIRECT, f08c47fec0942fa0\n`;
+        return new Response(adsTxt, {
+          status: 200,
+          headers: {
+            'Content-Type': 'text/plain; charset=utf-8',
+            'Cache-Control': 'public, max-age=86400',
+            ...CORS_HEADERS,
+          },
+        });
+      }
+
       // 1. Health check & Feed Freshness Watchdog
       if (url.pathname === '/health' || url.pathname === '/api/health') {
         const articles = await getArticles();
