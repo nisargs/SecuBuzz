@@ -11,6 +11,31 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-flatpak-update-for-cve-2026-43871-65080cc0",
+    "title": "Red Hat Issues Flatpak Update for CVE-2026-43871",
+    "summary": "Red Hat has issued a security update for Flatpak to address CVE-2026-43871, affecting RHEL 10.0 Extended Update Support and RHEL 9.2 Update Services for SAP Solutions. The flaw, rated Important, allows potential exploitation of Flatpak's component handling, posing a risk of unauthorized code execution. Red Hat recommends applying the patch immediately via standard update channels.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95063",
+    "publishedAt": "2026-11-04T10:06:14.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95062"
+      }
+    ],
+    "aliases": [
+      "red-hat-issues-flatpak-update-for-cve-2026-43871",
+      "article-65080cc0",
+      "65080cc0",
+      "red-hat-issues-flatpak-update-for-cve-2026-43871-37d854"
+    ]
+  },
+  {
     "slug": "north-korea-launches-missiles-amid-binance-hack-pr-a6529e29",
     "title": "North Korea Launches Missiles Amid Binance Hack Protest",
     "summary": "North Korea accelerated missile tests toward the sea, citing increased leverage for potential diplomacy with the United States. The launch coincided with Pyongyang's protest against U.S. claims regarding a Binance hack, reflecting geopolitical tensions. No direct cyber activity was reported; analysts advise monitoring for potential cyber‑political escalations and related cyber‑defense posture adjustments.",
@@ -310,6 +335,25 @@ export const news: NewsBrief[] = [
       "article-2c37d2d1",
       "2c37d2d1",
       "secure-your-containers-without-breaking-what-works-3699a1"
+    ]
+  },
+  {
+    "slug": "crowdstrike-unveils-falcon-cloud-security-ai-workl-c60c771c",
+    "title": "CrowdStrike Unveils Falcon Cloud Security AI Workload Protection",
+    "summary": "CrowdStrike launches new Falcon Cloud Security features to protect AI workloads in cloud environments. The updates address emerging cloud-native attack vectors by enhancing runtime monitoring, policy enforcement, and threat intelligence integration. Security teams should deploy the latest Falcon Cloud Security version and enable the new AI workload protection modules for optimal defense.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/falcon-cloud-security-innovations-secure-cloud-ai-runs-on/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-unveils-falcon-cloud-security-ai-workl",
+      "article-c60c771c",
+      "c60c771c",
+      "crowdstrike-unveils-falcon-cloud-security-ai-workl-772633",
+      "crowdstrike-unveils-falcon-cloud-security-ai-workload-protec"
     ]
   },
   {
@@ -9424,43 +9468,6 @@ export const news: NewsBrief[] = [
       "article-ff310861",
       "ff310861",
       "investors-discuss-emerging-cybersecurity-startups-5ebdce"
-    ]
-  },
-  {
-    "slug": "doj-calls-for-privacy-ombudsman-on-character-ai-sa-fbbef44c",
-    "title": "DOJ Calls for Privacy Ombudsman on Character.AI Sales",
-    "summary": "The DOJ’s Executive Office for U.S. Trustees has raised privacy concerns regarding the potential sale of Character.AI chat data. The agency seeks a consumer privacy ombudsman to advise courts on data regulation and sale terms. This initiative reflects growing scrutiny of AI data handling practices.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
-    "publishedAt": "2026-10-30T20:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "doj-calls-for-privacy-ombudsman-on-character-ai-sa",
-      "article-fbbef44c",
-      "fbbef44c",
-      "doj-calls-for-privacy-ombudsman-on-character-ai-sa-2d5396",
-      "doj-calls-for-privacy-ombudsman-on-character-ai-sales"
-    ]
-  },
-  {
-    "slug": "operation-blackout-dismantles-scam-centers-bd430a23",
-    "title": "Operation Blackout Dismantles Scam Centers",
-    "summary": "Operation Blackout targeted and dismantled multiple scam centers across the internet, seizing servers and financial assets. Investigators uncovered coordinated phishing, credential‑stealing, and money‑laundering tactics employed by the operators, revealing a sophisticated supply chain. The operation demonstrates the effectiveness of joint law‑enforcement and threat‑intelligence collaboration, encouraging similar actions worldwide in the digital economy.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
-    "publishedAt": "2026-10-30T19:46:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "operation-blackout-dismantles-scam-centers",
-      "article-bd430a23",
-      "bd430a23",
-      "operation-blackout-dismantles-scam-centers-30f84c"
     ]
   }
 ];

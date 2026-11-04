@@ -1,5 +1,29 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95063",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95063",
+    "title": "Red Hat Issues Flatpak Update for CVE-2026-43871",
+    "headline": "Red Hat Issues Flatpak Update for CVE-2026-43871",
+    "summary": "Red Hat has issued a security update for Flatpak to address CVE-2026-43871, affecting RHEL 10.0 Extended Update Support and RHEL 9.2 Update Services for SAP Solutions. The flaw, rated Important, allows potential exploitation of Flatpak's component handling, posing a risk of unauthorized code execution. Red Hat recommends applying the patch immediately via standard update channels.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T10:06:14.000Z",
+    "ingestedAt": "2026-11-04T10:44:01.548Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95062"
+      }
+    ],
+    "isFallback": true
+  },
+  {
     "id": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/",
     "sourceUrl": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/",
     "title": "North Korea Launches Missiles Amid Binance Hack Protest",
@@ -264,6 +288,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://www.crowdstrike.com/en-us/blog/falcon-cloud-security-innovations-secure-cloud-ai-runs-on/",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/falcon-cloud-security-innovations-secure-cloud-ai-runs-on/",
+    "title": "CrowdStrike Unveils Falcon Cloud Security AI Workload Protection",
+    "headline": "CrowdStrike Unveils Falcon Cloud Security AI Workload Protection",
+    "summary": "CrowdStrike launches new Falcon Cloud Security features to protect AI workloads in cloud environments. The updates address emerging cloud-native attack vectors by enhancing runtime monitoring, policy enforcement, and threat intelligence integration. Security teams should deploy the latest Falcon Cloud Security version and enable the new AI workload protection modules for optimal defense.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "ingestedAt": "2026-11-04T10:44:46.884Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.crowdstrike.com/en-us/blog/falcon-cloud-security-innovations-secure-cloud-ai-runs-on/",
+    "additionalSources": []
   },
   {
     "id": "https://www.crowdstrike.com/en-us/blog/crowdstrike-detects-and-stops-agent-insider-threats/",
@@ -8050,35 +8090,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
-    "sourceUrl": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
-    "title": "DOJ Calls for Privacy Ombudsman on Character.AI Sales",
-    "headline": "DOJ Calls for Privacy Ombudsman on Character.AI Sales",
-    "summary": "The DOJ’s Executive Office for U.S. Trustees has raised privacy concerns regarding the potential sale of Character.AI chat data. The agency seeks a consumer privacy ombudsman to advise courts on data regulation and sale terms. This initiative reflects growing scrutiny of AI data handling practices.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-10-30T20:45:00.000Z",
-    "url": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
-    "title": "Operation Blackout Dismantles Scam Centers",
-    "headline": "Operation Blackout Dismantles Scam Centers",
-    "summary": "Operation Blackout targeted and dismantled multiple scam centers across the internet, seizing servers and financial assets. Investigators uncovered coordinated phishing, credential‑stealing, and money‑laundering tactics employed by the operators, revealing a sophisticated supply chain. The operation demonstrates the effectiveness of joint law‑enforcement and threat‑intelligence collaboration, encouraging similar actions worldwide in the digital economy.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-30T19:46:08.000Z",
-    "ingestedAt": "2026-11-01T00:43:58.148Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
     "additionalSources": []
   }
 ]
