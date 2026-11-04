@@ -11,6 +11,125 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-95194-important-webkit2gtk3-security-upd-2e3087a7",
+    "title": "RHSA-2026:95194: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95194",
+    "publishedAt": "2026-11-04T16:22:24.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95194-important-webkit2gtk3-security-upd",
+      "article-2e3087a7",
+      "2e3087a7",
+      "rhsa-2026-95194-important-webkit2gtk3-security-upd-37d850",
+      "rhsa-2026-95194-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
+    "slug": "kyiv-independent-website-disrupted-by-suspected-ru-9418cb7f",
+    "title": "Kyiv Independent Website Disrupted by Suspected Russian Attack",
+    "summary": "A suspected Russian cyberattack disrupted the Kyiv Independent website, targeting Ukraine’s leading English-language news outlet. The incident may have exploited web application flaws or credential theft, but no exploitation details or data exfiltration have been confirmed. Security teams should monitor for phishing or credential reuse, apply vendor patches, and review access controls to mitigate future attacks.",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ukraine-kyiv-independent-cyberattack",
+    "publishedAt": "2026-11-04T16:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kyiv-independent-website-disrupted-by-suspected-ru",
+      "article-9418cb7f",
+      "9418cb7f",
+      "kyiv-independent-website-disrupted-by-suspected-ru-5cfd1a",
+      "kyiv-independent-website-disrupted-by-suspected-russian-atta"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95241-important-bind-security-bug-fix-an-20f27ea2",
+    "title": "RHSA-2026:95241: Important: bind security, bug fix, and enhancement update",
+    "summary": "An update for bind is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95241",
+    "publishedAt": "2026-11-04T16:07:27.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95241-important-bind-security-bug-fix-an",
+      "article-20f27ea2",
+      "20f27ea2",
+      "rhsa-2026-95241-important-bind-security-bug-fix-an-37d84d",
+      "rhsa-2026-95241-important-bind-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95242-important-bind-security-bug-fix-an-c258a84e",
+    "title": "RHSA-2026:95242: Important: bind security, bug fix, and enhancement update",
+    "summary": "An update for bind is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95242",
+    "publishedAt": "2026-11-04T16:04:40.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95242-important-bind-security-bug-fix-an",
+      "article-c258a84e",
+      "c258a84e",
+      "rhsa-2026-95242-important-bind-security-bug-fix-an-37d84d",
+      "rhsa-2026-95242-important-bind-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
+    "slug": "msecure-users-urged-to-reset-passwords-after-breac-dd20b5eb",
+    "title": "mSecure Users Urged to Reset Passwords After Breach",
+    "summary": "mSeven Software warned mSecure password manager users to change passwords after a cyberattack exposed an encrypted customer database. The breach likely involved credential theft or database compromise, but the exact exploitation vector remains unclear, leaving the root cause uncertain. Users should reset passwords, revoke two‑factor authentication, remove passkeys, and monitor for suspicious activity while the vendor releases a patch.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+    "publishedAt": "2026-11-04T16:00:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "msecure-users-urged-to-reset-passwords-after-breac",
+      "article-dd20b5eb",
+      "dd20b5eb",
+      "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
+      "msecure-users-urged-to-reset-passwords-after-breach"
+    ]
+  },
+  {
+    "slug": "usn-7530-2-adodb-vulnerability-debdc786",
+    "title": "USN-7530-2: ADOdb vulnerability",
+    "summary": "USN-7530-1 fixed a vulnerability in ADOdb. This update provides the corresponding updates for Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 24.04 LTS. Original advisory details: It was discovered that ADOdb incorrectly handled SQL input.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-7530-2",
+    "publishedAt": "2026-11-04T15:14:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-7530-2-adodb-vulnerability",
+      "article-debdc786",
+      "debdc786",
+      "usn-7530-2-adodb-vulnerability-7e5465"
+    ]
+  },
+  {
     "slug": "google-calendar-phishing-campaign-hijacks-sessions-6a1b1200",
     "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
     "summary": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers.",
@@ -182,6 +301,97 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "automation-needed-as-incidents-outpace-manual-resp-a018221d",
+    "title": "Automation Needed as Incidents Outpace Manual Response",
+    "summary": "An industry article argues that fully autonomous communication processes may outpace current incident response capabilities, stressing the need for automation. The piece notes that automating information updates could reduce manual pressure, but organizations must ensure readiness for rapid incident evolution. Security teams should evaluate automation tools, establish clear escalation paths, and test response workflows to maintain operational resilience.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper",
+    "publishedAt": "2026-11-04T14:17:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "automation-needed-as-incidents-outpace-manual-resp",
+      "article-a018221d",
+      "a018221d",
+      "automation-needed-as-incidents-outpace-manual-resp-1449a4",
+      "automation-needed-as-incidents-outpace-manual-response"
+    ]
+  },
+  {
+    "slug": "chrome-beta-158-for-android-released-with-updates-a58caa23",
+    "title": "Chrome Beta 158 for Android Released with Updates",
+    "summary": "Google released Chrome Beta 158 for Android, updating the browser to version 158.0.8127.22 and adding new features. The update includes bug fixes, performance improvements, and web platform enhancements, with developers encouraged to report issues via the bug tracking system. Users can install the beta build from Google Play, and security teams should monitor for regressions or compatibility problems during rollout.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update.html",
+    "publishedAt": "2026-11-04T14:13:32.334Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-beta-158-for-android-released-with-updates",
+      "article-a58caa23",
+      "a58caa23",
+      "chrome-beta-158-for-android-released-with-updates-19b1e0"
+    ]
+  },
+  {
+    "slug": "sentra-secures-150m-funding-for-agentic-security-1f6e4b0f",
+    "title": "Sentra Secures $150M Funding for Agentic Security",
+    "summary": "Sentra, an agentic data security firm, announced a $150 million funding round to accelerate its agentic security platform. The capital will support development of AI‑driven data protection capabilities and expand the company’s go‑to‑market organization. Investors expect the infusion to drive broader adoption of agentic security solutions across enterprises in the next fiscal year.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/agentic-data-security-firm-sentra-raises-150-million/",
+    "publishedAt": "2026-11-04T14:09:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sentra-secures-150m-funding-for-agentic-security",
+      "article-1f6e4b0f",
+      "1f6e4b0f",
+      "sentra-secures-150m-funding-for-agentic-security-4999e7"
+    ]
+  },
+  {
+    "slug": "beget-cloud-data-wiped-in-russian-hosting-attack-f63508ba",
+    "title": "Beget Cloud Data Wiped in Russian Hosting Attack",
+    "summary": "A cyberattack destroyed data across Beget's cloud infrastructure, affecting hundreds of websites. The assault likely leveraged undisclosed vulnerabilities or credential compromise, causing irreversible data loss and service outages. Beget is working to restore services and investigate the breach, while customers should verify backups and monitor for suspicious activity in the coming weeks.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russia-cyberattack-beget-cloud",
+    "publishedAt": "2026-11-04T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "beget-cloud-data-wiped-in-russian-hosting-attack",
+      "article-f63508ba",
+      "f63508ba",
+      "beget-cloud-data-wiped-in-russian-hosting-attack-254478"
+    ]
+  },
+  {
+    "slug": "cloudflare-enables-control-over-personal-ai-agents-f552ccc0",
+    "title": "Cloudflare Enables Control Over Personal AI Agents",
+    "summary": "Cloudflare introduces new visibility and control features for personal AI agents interacting with websites. The update addresses concerns over automated traffic masquerading as human users, potentially skewing analytics and security policies. Site owners can now monitor agent activity, set access rules, and mitigate risks associated with automated traffic in real time.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/personal-agents-visibility-control/",
+    "publishedAt": "2026-11-04T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-enables-control-over-personal-ai-agents",
+      "article-f552ccc0",
+      "f552ccc0",
+      "cloudflare-enables-control-over-personal-ai-agents-12ad5e"
+    ]
+  },
+  {
     "slug": "the-sandbox-fights-back-joe-security-launches-adap-ac724a59",
     "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
     "summary": "Reinach, Switzerland, November 4th, 2026, CyberNewswire AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions. Joe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during an initial sandbox run.",
@@ -227,6 +437,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "critical-solarwinds-dameware-flaw-could-allow-atta-aab9c8f6",
+    "title": "Critical SolarWinds Dameware Flaw Could Allow Attackers to Compromise Remote Systems",
+    "summary": "SolarWinds has warned about a critical command injection flaw in its Dameware remote support software. It is tracked as CVE-2026-28336 and carries a severity score of 9.9 out of 10. The bug could let an attacker take over a computer that an IT team is controlling remotely.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-solarwinds-dameware-flaw/",
+    "publishedAt": "2026-11-04T13:30:17.000Z",
+    "cves": [
+      "CVE-2026-28336"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-solarwinds-dameware-flaw-could-allow-atta",
+      "article-aab9c8f6",
+      "aab9c8f6",
+      "critical-solarwinds-dameware-flaw-could-allow-atta-69d0cd",
+      "critical-solarwinds-dameware-flaw-could-allow-attackers-to-c"
+    ]
+  },
+  {
     "slug": "classic-cgi-email-script-vulnerability-exploited-f-bdfc975e",
     "title": "Classic CGI Email Script Vulnerability Exploited for Code Execution",
     "summary": "The blog revisits CVE-2000-0411, a CGI-bin script flaw that allowed attackers to manipulate email parameters and leak environment variables. The vulnerability enabled arbitrary code execution when parameters were passed directly to the sendmail binary, facilitating spam and potential system compromise. Modern web servers should disable CGI scripts, enforce strict input validation, and apply current security patches to prevent similar exploits.",
@@ -245,6 +476,24 @@ export const news: NewsBrief[] = [
       "bdfc975e",
       "classic-cgi-email-script-vulnerability-exploited-f-57dd7e",
       "classic-cgi-email-script-vulnerability-exploited-for-code-ex"
+    ]
+  },
+  {
+    "slug": "us-indicts-two-canadians-for-university-hacks-eb6e8410",
+    "title": "US Indicts Two Canadians for University Hacks",
+    "summary": "A federal grand jury indicted two Canadians for hacking multiple U.S. universities. The attackers allegedly exploited system vulnerabilities to gain access and subsequently mined cryptocurrency using the compromised resources. The indictment underscores the need for universities to strengthen security controls and monitor for illicit mining activity in the coming months.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/",
+    "publishedAt": "2026-11-04T13:13:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-indicts-two-canadians-for-university-hacks",
+      "article-eb6e8410",
+      "eb6e8410",
+      "us-indicts-two-canadians-for-university-hacks-3ff19a"
     ]
   },
   {
@@ -9192,275 +9441,6 @@ export const news: NewsBrief[] = [
       "81b42519",
       "chromium-missing-authorization-cve-2026-118333-in-1fe91c",
       "chromium-missing-authorization-cve-2026-118333-in-video"
-    ]
-  },
-  {
-    "slug": "edge-addresses-headless-input-validation-cve-2026-cbddabca",
-    "title": "Edge Addresses Headless Input Validation CVE-2026-118336",
-    "summary": "CVE-2026-118336 reveals an improper input validation flaw in Chromium’s headless mode, which Microsoft Edge (Chromium‑based) adopts. The flaw allows malformed input to bypass sanitization, potentially enabling arbitrary code execution or denial‑of‑service when headless browsers process untrusted data. Microsoft Edge will integrate the Chromium patch in its release; security teams should upgrade to Edge build or apply the Chrome patch.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118336",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118336"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-addresses-headless-input-validation-cve-2026",
-      "article-cbddabca",
-      "cbddabca",
-      "edge-addresses-headless-input-validation-cve-2026-1fe91c",
-      "edge-addresses-headless-input-validation-cve-2026-118336"
-    ]
-  },
-  {
-    "slug": "edge-fixes-forms-access-control-cve-2026-118337-222c6390",
-    "title": "Edge Fixes Forms Access Control CVE-2026-118337",
-    "summary": "CVE-2026-118337 exposes an improper access control flaw in Chromium’s Forms component, which Microsoft Edge (Chromium‑based) incorporates. The vulnerability permits unauthorized manipulation of form data, potentially allowing attackers to inject malicious payloads or bypass authentication checks during form submission. Microsoft Edge will apply the Chromium patch in its release; security teams should update to Edge build or apply the Chrome patch.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118337",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118337"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-fixes-forms-access-control-cve-2026-118337",
-      "article-222c6390",
-      "222c6390",
-      "edge-fixes-forms-access-control-cve-2026-118337-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-118335-improper-input-validation-ffc95d36",
-    "title": "Chromium CVE-2026-118335 Improper Input Validation",
-    "summary": "Chromium vulnerability CVE-2026-118335 allows improper input validation in metrics, potentially enabling attackers to inject malicious data. The flaw could lead to denial-of-service or information disclosure if exploited in a web context, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the corresponding patch from Google Chrome Releases.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118335",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118335"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-118335-improper-input-validation",
-      "article-ffc95d36",
-      "ffc95d36",
-      "chromium-cve-2026-118335-improper-input-validation-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-angle-improper-input-validation-cve-2026-5de03e63",
-    "title": "Chromium ANGLE Improper Input Validation CVE-2026-118329",
-    "summary": "A CVE-2026-118329 flaw in Chromium’s ANGLE component allows improper input validation. The flaw permits malformed graphics data to bypass validation, potentially enabling memory corruption; CVSS score is 7.8, and a public PoC exists. Microsoft Edge users should install the latest Chromium update, and Chrome users can refer to Google Chrome Releases for patch details.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118329",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118329"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-angle-improper-input-validation-cve-2026",
-      "article-5de03e63",
-      "5de03e63",
-      "chromium-angle-improper-input-validation-cve-2026-1fe91c",
-      "chromium-angle-improper-input-validation-cve-2026-118329"
-    ]
-  },
-  {
-    "slug": "chromium-fileapi-improper-input-validation-cve-202-83f47097",
-    "title": "Chromium FileAPI Improper Input Validation CVE-2026-118331",
-    "summary": "Chromium's FileAPI suffers from improper input validation, identified as CVE-2026-118331. The flaw allows attackers to supply malformed input that may lead to memory corruption or denial of service, though no active exploitation has been reported. Microsoft Edge, built on Chromium, incorporates the fix; users should update to the latest release to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118331",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118331"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-fileapi-improper-input-validation-cve-202",
-      "article-83f47097",
-      "83f47097",
-      "chromium-fileapi-improper-input-validation-cve-202-1fe91c",
-      "chromium-fileapi-improper-input-validation-cve-2026-118331"
-    ]
-  },
-  {
-    "slug": "chromium-v8-memory-corruption-cve-2026-118320-cdcf9e39",
-    "title": "Chromium V8 Memory Corruption CVE-2026-118320",
-    "summary": "A memory corruption flaw, CVE-2026-118320, exists in Chromium's V8 engine. The defect allows arbitrary memory corruption during JavaScript execution, potentially enabling remote code execution if exploited; no public exploit is confirmed. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release or apply the Chrome patch referenced by Google.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118320",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118320"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-v8-memory-corruption-cve-2026-118320",
-      "article-cdcf9e39",
-      "cdcf9e39",
-      "chromium-v8-memory-corruption-cve-2026-118320-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-imagecapture-use-after-free-cve-2026-1183-6888447f",
-    "title": "Chromium ImageCapture Use-After-Free CVE-2026-118334",
-    "summary": "A use-after-free vulnerability, CVE-2026-118334, exists in Chromium's ImageCapture API. The flaw can corrupt memory during image capture operations, potentially allowing arbitrary code execution if an attacker controls the API; no public exploit is reported. Microsoft Edge includes the Chromium patch; users should update to the latest Edge or apply the Chrome update referenced by Google.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118334",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118334"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-imagecapture-use-after-free-cve-2026-1183",
-      "article-6888447f",
-      "6888447f",
-      "chromium-imagecapture-use-after-free-cve-2026-1183-1fe91c",
-      "chromium-imagecapture-use-after-free-cve-2026-118334"
-    ]
-  },
-  {
-    "slug": "edge-addresses-cve-2026-118327-media-memory-corrup-dea10119",
-    "title": "Edge Addresses CVE-2026-118327 Media Memory Corruption",
-    "summary": "Microsoft Edge (Chromium-based) mitigates a memory corruption flaw in Chromium’s Media component, identified as CVE-2026-118327. The vulnerability arises from improper handling of media buffer boundaries, potentially allowing local code execution if exploited within a privileged process. Red Hat and Microsoft have released patch updates; users should install the latest Chromium-based Edge release to eliminate the flaw.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118327",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118327"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-addresses-cve-2026-118327-media-memory-corrup",
-      "article-dea10119",
-      "dea10119",
-      "edge-addresses-cve-2026-118327-media-memory-corrup-1fe91c",
-      "edge-addresses-cve-2026-118327-media-memory-corruption"
-    ]
-  },
-  {
-    "slug": "edge-fixes-cve-2026-118332-compositing-input-valid-510f55c4",
-    "title": "Edge Fixes CVE-2026-118332 Compositing Input Validation",
-    "summary": "Microsoft Edge (Chromium-based) addresses a flaw in Chromium’s Compositing module, identified as CVE-2026-118332. The defect stems from inadequate input validation of compositor messages, which could lead to memory corruption and local privilege escalation. Microsoft has released a patch; users should update to the latest Chromium-based Edge to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118332",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118332"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-fixes-cve-2026-118332-compositing-input-valid",
-      "article-510f55c4",
-      "510f55c4",
-      "edge-fixes-cve-2026-118332-compositing-input-valid-1fe91c",
-      "edge-fixes-cve-2026-118332-compositing-input-validation"
-    ]
-  },
-  {
-    "slug": "edge-patch-addresses-angle-memory-corruption-cve-2-7b7f1bd7",
-    "title": "Edge Patch Addresses ANGLE Memory Corruption CVE-2026-118322",
-    "summary": "Microsoft Edge (Chromium-based) is affected by CVE-2026-118322, a memory corruption flaw in Chromium’s ANGLE component. The bug can corrupt rendering memory, potentially enabling arbitrary code execution, though no public exploit is known. Microsoft has patched the issue in its Chromium base; users should update to the latest Edge release or apply the Chrome patch.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118322",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118322"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-patch-addresses-angle-memory-corruption-cve-2",
-      "article-7b7f1bd7",
-      "7b7f1bd7",
-      "edge-patch-addresses-angle-memory-corruption-cve-2-1fe91c",
-      "edge-patch-addresses-angle-memory-corruption-cve-2026-118322"
-    ]
-  },
-  {
-    "slug": "edge-patch-fixes-webrtc-input-validation-cve-2026-38e0d67b",
-    "title": "Edge Patch Fixes WebRTC Input Validation CVE-2026-118328",
-    "summary": "Microsoft Edge (Chromium-based) is affected by CVE-2026-118328, an improper input validation flaw in Chromium’s WebRTC. The defect allows malformed data to bypass checks, potentially causing memory corruption or denial of service, though no active exploitation has been reported. Microsoft has fixed the issue in its Chromium base; users should update to the latest Edge release or apply the Chrome patch.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118328",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118328"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-patch-fixes-webrtc-input-validation-cve-2026",
-      "article-38e0d67b",
-      "38e0d67b",
-      "edge-patch-fixes-webrtc-input-validation-cve-2026-1fe91c",
-      "edge-patch-fixes-webrtc-input-validation-cve-2026-118328"
-    ]
-  },
-  {
-    "slug": "chromium-filesystem-memory-corruption-cve-2026-118-69e77aef",
-    "title": "Chromium FileSystem Memory Corruption CVE-2026-118306",
-    "summary": "CVE‑2026‑118306 is a memory corruption flaw in Chromium’s FileSystem module that can corrupt data when Edge processes malformed paths. The bug arises from unchecked buffer handling during file metadata parsing, allowing local privilege escalation. Microsoft released an update that incorporates Chrome’s patch; users should install the latest Edge or apply the Chromium update to mitigate.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118306"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-filesystem-memory-corruption-cve-2026-118",
-      "article-69e77aef",
-      "69e77aef",
-      "chromium-filesystem-memory-corruption-cve-2026-118-1fe91c",
-      "chromium-filesystem-memory-corruption-cve-2026-118306"
-    ]
-  },
-  {
-    "slug": "chromium-skia-memory-corruption-cve-2026-118319-8d3fe687",
-    "title": "Chromium Skia Memory Corruption CVE-2026-118319",
-    "summary": "CVE‑2026‑118319 is a memory corruption flaw in Chromium’s Skia library that can corrupt rendering data when Edge processes malformed images. The defect originates from unchecked bounds checks during image decoding, potentially enabling local privilege escalation. Microsoft incorporated Chrome’s patch in an Edge update; users should install the latest version or apply the Chromium update.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118319"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-skia-memory-corruption-cve-2026-118319",
-      "article-8d3fe687",
-      "8d3fe687",
-      "chromium-skia-memory-corruption-cve-2026-118319-1fe91c"
     ]
   }
 ];

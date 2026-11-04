@@ -2,6 +2,32 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-113787",
+    "slug": "cve-2026-113787",
+    "vendor": "npm",
+    "product": "odf-kit",
+    "name": "odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values",
+    "dateAdded": "2026-11-04",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "ODF style attribute values are interpolated into style=\"...\" attributes without HTML-escaping in both of odf-kit's to-HTML renderers (odtToHtml and odsToHtml).",
+    "requiredAction": "Upgrade odf-kit to version 0.14.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3cgg-c5pp-57h6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113787"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-119977",
     "slug": "cve-2026-119977",
     "vendor": "WordPress",
@@ -1330,32 +1356,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119279"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119280",
-    "slug": "cve-2026-119280",
-    "vendor": "Java (Maven)",
-    "product": "org.mariadb.jdbc:mariadb-java-client",
-    "name": "MariaDB Connector/J: XA recover() trusted server-supplied gtrid and bqual lengths",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "XAResource.recover() in MariaDB Connector/J trusted the gtrid_length and bqual_length columns returned by XA RECOVER to allocate and split each Xid.",
-    "requiredAction": "Upgrade org.mariadb.jdbc:mariadb-java-client to version 3.3.7 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4jq2-8v3c-97w8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119280"
       }
     ],
     "source": "GITHUB"
