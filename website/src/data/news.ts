@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "critical-rails-active-storage-flaw-enables-secret-6d6b01f1",
+    "title": "Critical Rails Active Storage Flaw Enables Secret Theft",
+    "summary": "A critical flaw in Ruby on Rails Active Storage lets unauthenticated users upload crafted images that cause the server to write arbitrary files. CVE‑2026‑116606 has a CVSS score of 9.8 and can also allow file reads when the Disk service is used. Rails has issued a patch that fixes the flaw; no workarounds exist, so update the framework immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-ruby-on-rails-flaw/",
+    "publishedAt": "2026-11-04T17:01:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-rails-active-storage-flaw-enables-secret",
+      "article-6d6b01f1",
+      "6d6b01f1",
+      "critical-rails-active-storage-flaw-enables-secret-2dc37b",
+      "critical-rails-active-storage-flaw-enables-secret-theft"
+    ]
+  },
+  {
     "slug": "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swa-2637acfc",
     "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
     "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that Debian, Ubuntu, and APT's developers published on November 4. The vulnerability is tracked as CVE-2026-109518.",
@@ -29,6 +48,24 @@ export const news: NewsBrief[] = [
       "2637acfc",
       "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swa-784038",
       "debian-and-ubuntu-apt-flaw-lets-mitm-attackers-swap-verified"
+    ]
+  },
+  {
+    "slug": "sonicwall-gms-flaws-expose-files-alter-db-records-ffa93564",
+    "title": "SonicWall GMS Flaws Expose Files, Alter DB Records",
+    "summary": "CVE‑2026‑109593 exposes SonicWall GMS 9.5.2 and earlier to unauthenticated attackers who can read files and alter database records. The vulnerability arises from missing authentication checks, granting file read/write access; its CVSS score of 9.1 classifies it as critical. SonicWall will not patch these end‑of‑life systems, so administrators must disable exposed services or migrate to supported versions to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+    "publishedAt": "2026-11-04T17:00:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sonicwall-gms-flaws-expose-files-alter-db-records",
+      "article-ffa93564",
+      "ffa93564",
+      "sonicwall-gms-flaws-expose-files-alter-db-records-7430e3"
     ]
   },
   {
@@ -130,6 +167,42 @@ export const news: NewsBrief[] = [
       "dd20b5eb",
       "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
       "msecure-users-urged-to-reset-passwords-after-breach"
+    ]
+  },
+  {
+    "slug": "cisco-ise-authorization-bypass-vulnerability-f438cbb6",
+    "title": "Cisco ISE Authorization Bypass Vulnerability",
+    "summary": "A flaw in Cisco ISE and ISE‑PIC lets unauthenticated remote attackers obtain endpoint identity certificates via crafted requests. The issue arises from missing authorization checks, and the CVE‑2026‑20241 advisory rates the impact as medium, publicly disclosed. Cisco released patches that address the vulnerability; no workarounds exist, so apply updates immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-cert-mE9BD5GO?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-ise-authorization-bypass-vulnerability",
+      "article-f438cbb6",
+      "f438cbb6",
+      "cisco-ise-authorization-bypass-vulnerability-784285"
+    ]
+  },
+  {
+    "slug": "cisco-ucs-central-rce-vulnerability-664c1bb3",
+    "title": "Cisco UCS Central RCE Vulnerability",
+    "summary": "A flaw in Cisco UCS Central Software’s web interface lets authenticated remote attackers execute arbitrary code or disclose data via crafted HTTP requests. The issue stems from insufficient input validation, allowing code execution and file writes; no public exploit is known. Cisco has issued patches that fix the flaw, and no workarounds exist; apply updates promptly.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucs-rce-LzHSFRDQ?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+UCS+Central+Software+Remote+Code+Execution+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-ucs-central-rce-vulnerability",
+      "article-664c1bb3",
+      "664c1bb3",
+      "cisco-ucs-central-rce-vulnerability-1695cc"
     ]
   },
   {
@@ -865,6 +938,24 @@ export const news: NewsBrief[] = [
       "article-9cfda71a",
       "9cfda71a",
       "chrome-157-addresses-213-security-issues-2e2da2"
+    ]
+  },
+  {
+    "slug": "binance-6-billion-heist-via-compromised-engineers-c12eea2c",
+    "title": "Binance $6 Billion Heist via Compromised Engineers",
+    "summary": "Attackers compromised three Binance engineers' workstations over a months-long campaign using a rigged coding assignment and an abused AI tool to execute the record $6 billion theft. The incident represents unauthorized corporate access resulting in massive financial loss. Binance has disclosed the details in its initial incident report.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+    "publishedAt": "2026-11-04T10:36:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-6-billion-heist-via-compromised-engineers",
+      "article-c12eea2c",
+      "c12eea2c",
+      "binance-6-billion-heist-via-compromised-engineers-a573de"
     ]
   },
   {
@@ -9348,101 +9439,6 @@ export const news: NewsBrief[] = [
       "article-2d630412",
       "2d630412",
       "chromium-pdfium-use-after-free-cve-2026-118345-1fe91b"
-    ]
-  },
-  {
-    "slug": "chromium-animation-use-after-free-cve-2026-118338-0c3951e1",
-    "title": "Chromium Animation Use‑After‑Free CVE‑2026‑118338",
-    "summary": "A use‑after‑free flaw, CVE‑2026‑118338, exists in Chromium’s animation subsystem and can be triggered by malicious content in Microsoft Edge. The defect permits memory corruption that could lead to arbitrary code execution, but no active exploitation has been observed. Microsoft Edge includes the Chromium patch; users should update to Edge or apply the Chrome release to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118338",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-animation-use-after-free-cve-2026-118338",
-      "article-0c3951e1",
-      "0c3951e1",
-      "chromium-animation-use-after-free-cve-2026-118338-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-animation-use-after-free-cve-2026-118339-3bea7cd1",
-    "title": "Chromium Animation Use‑After‑Free CVE‑2026‑118339",
-    "summary": "A use‑after‑free flaw, CVE‑2026‑118339, exists in Chromium’s animation subsystem and can be triggered by malicious content in Microsoft Edge. The defect permits memory corruption that could lead to arbitrary code execution, but no active exploitation has been observed. Microsoft Edge includes the Chromium patch; users should update to Edge or apply the Chrome release to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118339",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-animation-use-after-free-cve-2026-118339",
-      "article-3bea7cd1",
-      "3bea7cd1",
-      "chromium-animation-use-after-free-cve-2026-118339-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-skia-memory-corruption-cve-2026-118340-dce46e63",
-    "title": "Chromium Skia Memory Corruption CVE-2026-118340",
-    "summary": "Microsoft identified a memory corruption flaw in Chromium's Skia graphics library, assigned CVE-2026-118340. The vulnerability could allow attackers to corrupt memory during rendering, potentially leading to arbitrary code execution if exploited, especially in contexts where untrusted content is processed. Microsoft Edge users should apply the latest Chromium-based updates, as released by Google Chrome, to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118340",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118340"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-skia-memory-corruption-cve-2026-118340",
-      "article-dce46e63",
-      "dce46e63",
-      "chromium-skia-memory-corruption-cve-2026-118340-1fe91b"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-118341-8f11c104",
-    "title": "Chromium Use-After-Free CVE-2026-118341",
-    "summary": "Microsoft identified a use-after-free flaw in Chromium's modularization component, assigned CVE-2026-118341. The defect could allow attackers to execute arbitrary code by freeing memory prematurely during module loading, potentially compromising the browser. Microsoft Edge users should install the latest Chromium-based updates, as distributed by Google Chrome, to address the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118341",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118341"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-118341",
-      "article-8f11c104",
-      "8f11c104",
-      "chromium-use-after-free-cve-2026-118341-1fe91b"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-118330-exploited-79e20c5b",
-    "title": "Chromium Use‑After‑Free CVE‑2026‑118330 Exploited in Browser",
-    "summary": "A use‑after‑free flaw, CVE‑2026‑118330, was discovered in Chromium’s rendering engine, allowing attackers to execute arbitrary code within the browser context. The vulnerability is exploitable via crafted web content, and a public PoC demonstrates remote code execution with no authentication required. Microsoft Edge and Google Chrome have released patches; users should update to the latest browser versions and enable automatic updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118330",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-118330-exploited",
-      "article-79e20c5b",
-      "79e20c5b",
-      "chromium-use-after-free-cve-2026-118330-exploited-1fe91c",
-      "chromium-use-after-free-cve-2026-118330-exploited-in-browser"
     ]
   }
 ];
