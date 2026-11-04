@@ -11,6 +11,118 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cpguard-update-compromise-steals-credentials-from-e6da8e9e",
+    "title": "cPGuard Update Compromise Steals Credentials from Thousands",
+    "summary": "An attacker compromised cPGuard’s update system and pushed malicious updates to almost 3,000 hosting servers in the next 24 hours. The payload stole customer contact data and hashed passwords from OPSShield’s billing server, enabling credential theft. Teams should revoke affected credentials, install the official 5.88.20 release, and audit servers for unauthorized changes immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/cpguard-update-supply-chain-compromised/",
+    "publishedAt": "2026-11-04T11:18:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cpguard-update-compromise-steals-credentials-from",
+      "article-e6da8e9e",
+      "e6da8e9e",
+      "cpguard-update-compromise-steals-credentials-from-310de0",
+      "cpguard-update-compromise-steals-credentials-from-thousands"
+    ]
+  },
+  {
+    "slug": "opsshield-update-servers-compromised-via-cpguard-p-b8d862ff",
+    "title": "OpsShield Update Servers Compromised via cPGuard Poisoning",
+    "summary": "Attackers used compromised credentials to access OpsShield’s update servers and injected malicious cPGuard versions into the supply chain. The poisoned updates could deliver arbitrary code to end‑user devices, potentially enabling remote execution without user interaction. Security teams should verify cPGuard binaries against signed hashes, revoke compromised certificates, and apply vendor patches to mitigate the threat.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
+    "publishedAt": "2026-11-04T10:54:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "opsshield-update-servers-compromised-via-cpguard-p",
+      "article-b8d862ff",
+      "b8d862ff",
+      "opsshield-update-servers-compromised-via-cpguard-p-38961f",
+      "opsshield-update-servers-compromised-via-cpguard-poisoning"
+    ]
+  },
+  {
+    "slug": "vasygrek-hackers-arrested-infrastructure-dismantle-48381ff2",
+    "title": "VasyGrek Hackers Arrested, Infrastructure Dismantled",
+    "summary": "Law enforcement agencies have arrested members of the VasyGrek hacking group and dismantled their infrastructure. Court filings detail the group's operations, threat actor profiles, and the defensive controls that led to the takedown. Security teams should review the disclosed threat actor tactics and update detection rules accordingly, enhancing monitoring daily.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/russian-police-arrest-3-suspected-vasygrek-hackers-dism",
+    "publishedAt": "2026-11-04T10:29:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vasygrek-hackers-arrested-infrastructure-dismantle",
+      "article-48381ff2",
+      "48381ff2",
+      "vasygrek-hackers-arrested-infrastructure-dismantle-32a306",
+      "vasygrek-hackers-arrested-infrastructure-dismantled"
+    ]
+  },
+  {
+    "slug": "binance-heist-via-fake-interview-and-installer-88402eac",
+    "title": "Binance Heist via Fake Interview and Installer",
+    "summary": "Binance suffered a $6.34 billion heist after attackers used a fake job interview and tampered installer to gain endpoint access. The attackers combined social engineering, malicious software downloads, compromised AI tooling, and an advanced transaction‑authorisation bypass to move funds. Binance’s incident report recommends tightening internal AI controls, enforcing stricter download vetting, and monitoring transaction‑authorisation logs for anomalous activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/binance-hack-north-korea-fake-job-interview/",
+    "publishedAt": "2026-11-04T10:29:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-heist-via-fake-interview-and-installer",
+      "article-88402eac",
+      "88402eac",
+      "binance-heist-via-fake-interview-and-installer-1fd774"
+    ]
+  },
+  {
+    "slug": "xloader-malware-disguised-as-business-orders-7237997e",
+    "title": "XLoader Malware Disguised as Business Orders",
+    "summary": "A new XLoader malware campaign delivers password‑stealing payloads via seemingly legitimate business order emails. The attachment contains a compressed archive that launches a hidden script chain, ultimately executing the XLoader stealer within a trusted Windows process, enabling credential harvesting without user interaction. Security teams should block the malicious archive, quarantine affected accounts, and monitor for outbound credential exfiltration.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hide-xloader-malware/",
+    "publishedAt": "2026-11-04T10:25:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xloader-malware-disguised-as-business-orders",
+      "article-7237997e",
+      "7237997e",
+      "xloader-malware-disguised-as-business-orders-2483b3"
+    ]
+  },
+  {
+    "slug": "google-patches-android-zero-click-rce-cve-2026-588-7037eafd",
+    "title": "Google Patches Android Zero‑Click RCE CVE‑2026‑58868",
+    "summary": "Google released its November 2026 Android update, fixing over 200 flaws, including CVE‑2026‑58868, a zero‑click RCE. The flaw is a buffer overflow in intent handling, granting full device control with a CVSS of 9.8. Google has made the patch available for devices with patch level 2026‑11‑05 or newer; apply it immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/android-0-click-remote-code-execution-flaws/",
+    "publishedAt": "2026-11-04T10:12:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-patches-android-zero-click-rce-cve-2026-588",
+      "article-7037eafd",
+      "7037eafd",
+      "google-patches-android-zero-click-rce-cve-2026-588-344fef",
+      "google-patches-android-zero-click-rce-cve-2026-58868"
+    ]
+  },
+  {
     "slug": "red-hat-issues-flatpak-update-for-cve-2026-43871-65080cc0",
     "title": "Red Hat Issues Flatpak Update for CVE-2026-43871",
     "summary": "Red Hat has issued a security update for Flatpak to address CVE-2026-43871, affecting RHEL 10.0 Extended Update Support and RHEL 9.2 Update Services for SAP Solutions. The flaw, rated Important, allows potential exploitation of Flatpak's component handling, posing a risk of unauthorized code execution. Red Hat recommends applying the patch immediately via standard update channels.",
@@ -33,6 +145,46 @@ export const news: NewsBrief[] = [
       "article-65080cc0",
       "65080cc0",
       "red-hat-issues-flatpak-update-for-cve-2026-43871-37d854"
+    ]
+  },
+  {
+    "slug": "zero-click-attacks-target-ios-android-via-n-day-ex-59d225cc",
+    "title": "Zero‑Click Attacks Target iOS, Android via n‑Day Exploits",
+    "summary": "Russian‑affiliated hackers are exploiting undisclosed n‑day vulnerabilities to launch zero‑click attacks on iOS and Android devices. The attacks use memory corruption flaws that enable remote code execution without user interaction, allowing credential theft and device compromise. Apple and Google have released patches for the affected OS versions; security teams should apply updates and monitor for anomalous outbound traffic.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
+    "publishedAt": "2026-11-04T09:39:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zero-click-attacks-target-ios-android-via-n-day-ex",
+      "article-59d225cc",
+      "59d225cc",
+      "zero-click-attacks-target-ios-android-via-n-day-ex-7cdb08",
+      "zero-click-attacks-target-ios-android-via-n-day-exploits"
+    ]
+  },
+  {
+    "slug": "cisa-flags-active-exploitation-of-wordpress-core-v-4745e9d7",
+    "title": "CISA Flags Active Exploitation of WordPress Core Vulnerability",
+    "summary": "CISA reports active exploitation of a WordPress Core flaw that permits remote code execution on site servers. Tracked as CVE-2026-119977, the vulnerability allows attackers to inject malicious scripts via crafted requests, with public proof-of-concept and confirmed wild exploitation. WordPress urges immediate patching and recommends administrators verify server integrity, monitor logs, and apply mitigations.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/wordpress-core-vulnerability-exploited/",
+    "publishedAt": "2026-11-04T09:34:04.000Z",
+    "cves": [
+      "CVE-2026-119977"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-flags-active-exploitation-of-wordpress-core-v",
+      "article-4745e9d7",
+      "4745e9d7",
+      "cisa-flags-active-exploitation-of-wordpress-core-v-35a69d",
+      "cisa-flags-active-exploitation-of-wordpress-core-vulnerabili"
     ]
   },
   {
@@ -335,6 +487,44 @@ export const news: NewsBrief[] = [
       "article-2c37d2d1",
       "2c37d2d1",
       "secure-your-containers-without-breaking-what-works-3699a1"
+    ]
+  },
+  {
+    "slug": "crowdstrike-launches-agentic-adversary-emulation-f-0acb86d5",
+    "title": "CrowdStrike Launches Agentic Adversary Emulation for AI Threats",
+    "summary": "CrowdStrike released Agentic Adversary Emulation, a new capability integrated into its platform to simulate AI-driven attacker behaviors. The feature enables security teams to test defenses against sophisticated AI-powered threats by emulating adversary tactics autonomously. Organizations can deploy the emulation to validate detection and response workflows against evolving AI-enabled adversaries through continuous automated testing cycles.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agentic-adversary-emulation-counters-ai-enabled-adversaries/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-launches-agentic-adversary-emulation-f",
+      "article-0acb86d5",
+      "0acb86d5",
+      "crowdstrike-launches-agentic-adversary-emulation-f-567773",
+      "crowdstrike-launches-agentic-adversary-emulation-for-ai-thre"
+    ]
+  },
+  {
+    "slug": "crowdstrike-adds-enterprise-browser-security-to-fa-ed42ec16",
+    "title": "CrowdStrike Adds Enterprise Browser Security to Falcon",
+    "summary": "CrowdStrike integrated enterprise browser security into the Falcon platform, expanding its endpoint protection capabilities. The new module isolates untrusted web sessions, blocks malicious scripts, and enforces policy controls at the browser level to reduce attack surface. Security teams can configure browser protection rules via Falcon consoles and receive telemetry for threat hunting and compliance reporting.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-brings-enterprise-browser-security-to-falcon-platform/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "crowdstrike-adds-enterprise-browser-security-to-fa",
+      "article-ed42ec16",
+      "ed42ec16",
+      "crowdstrike-adds-enterprise-browser-security-to-fa-4e3366",
+      "crowdstrike-adds-enterprise-browser-security-to-falcon"
     ]
   },
   {
@@ -9273,201 +9463,6 @@ export const news: NewsBrief[] = [
       "400539ae",
       "polymarket-supply-chain-flaw-cve-2026-97229-detect-7660bd",
       "polymarket-supply-chain-flaw-cve-2026-97229-detected"
-    ]
-  },
-  {
-    "slug": "fbi-seizes-virtualine-domain-5b555493",
-    "title": "FBI Seizes Virtualine Domain",
-    "summary": "The FBI has seized the domain associated with the Virtualine threat actor, disrupting its public command and control infrastructure. Court filings detail Virtualine’s use of compromised credentials and phishing campaigns to compromise corporate networks. Security teams should block the domain, monitor for related indicators, and review credential hygiene practices online.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/bulletproof-host-virtualine-loses-its-domain-to-fbi-sei",
-    "publishedAt": "2026-10-31T02:00:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-virtualine-domain",
-      "article-5b555493",
-      "5b555493",
-      "fbi-seizes-virtualine-domain-33e3c7"
-    ]
-  },
-  {
-    "slug": "alert-fake-help-desk-calls-threaten-users-54126f80",
-    "title": "Alert: Fake Help Desk Calls Threaten Users",
-    "summary": "An alert warns of fake help desk calls posing as legitimate support. Attackers use social engineering to trick users into revealing credentials or installing malware. Security teams should monitor call patterns, enforce verification procedures, apply vendor patches, conduct employee training, and review logs for anomalies daily comprehensively regularly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fake-it-help-desk-callers-got-by-on-little-more-than-na",
-    "publishedAt": "2026-10-31T02:00:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "alert-fake-help-desk-calls-threaten-users",
-      "article-54126f80",
-      "54126f80",
-      "alert-fake-help-desk-calls-threaten-users-3cd2a7"
-    ]
-  },
-  {
-    "slug": "malicious-claude-code-extension-hosts-persistent-s-a923c8f0",
-    "title": "Malicious Claude Code Extension Hosts Persistent SSH Backdoor",
-    "summary": "Microsoft identified a malicious Claude Code‑branded extension that installs a persistent SSH backdoor on compromised systems. The backdoor opens port 22, enabling attackers to gain remote shell access, exfiltrate data, and maintain persistence across reboots. Microsoft recommends scanning for the extension, removing it, applying security updates, and monitoring SSH logs for unauthorized activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
-    "publishedAt": "2026-10-31T01:02:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-claude-code-extension-hosts-persistent-s",
-      "article-a923c8f0",
-      "a923c8f0",
-      "malicious-claude-code-extension-hosts-persistent-s-485406",
-      "malicious-claude-code-extension-hosts-persistent-ssh-backdoo"
-    ]
-  },
-  {
-    "slug": "claude-code-detects-trojanized-browser-extension-e87792fc",
-    "title": "Claude Code Detects Trojanized Browser Extension",
-    "summary": "A Trojanized browser extension has been identified by the Claude Code detection tool. The malicious extension injects code into user sessions, potentially exfiltrating data or executing arbitrary commands. Security teams should deploy the latest detection rules and apply the recommended patch to block the extension.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/official-claude-code-extension-on-cursor-marketplace-tr",
-    "publishedAt": "2026-10-30T23:51:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-code-detects-trojanized-browser-extension",
-      "article-e87792fc",
-      "e87792fc",
-      "claude-code-detects-trojanized-browser-extension-21ab0d"
-    ]
-  },
-  {
-    "slug": "mitigating-cve-2026-97229-flaw-in-enterprise-alpin-bbcde93e",
-    "title": "Mitigating CVE-2026-97229 Flaw in Enterprise Alpine Linux Systems",
-    "summary": "GitLab issued a threat brief regarding CVE-2026-97229 affecting Alpine Linux deployments within enterprise environments. The critical security vulnerability allows potential system exploitation through compromised telemetry and underlying distribution components. Security teams must hunt for threats using custom detection rules, analyze root-cause telemetry, and immediately apply vendor-provided software patches.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/max-severity-gitlab-vulnerability-exploited-against-alp",
-    "publishedAt": "2026-10-30T23:38:29.000Z",
-    "cves": [
-      "CVE-2026-97229"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "mitigating-cve-2026-97229-flaw-in-enterprise-alpin",
-      "article-bbcde93e",
-      "bbcde93e",
-      "mitigating-cve-2026-97229-flaw-in-enterprise-alpin-200ef8",
-      "mitigating-cve-2026-97229-flaw-in-enterprise-alpine-linux-sy"
-    ]
-  },
-  {
-    "slug": "drupal-commerce-auth-bypass-vulnerability-68aafae7",
-    "title": "Drupal Commerce Auth Bypass Vulnerability",
-    "summary": "An authentication bypass flaw in Drupal Commerce Core, identified as CVE‑2026‑118539, allows attackers to gain privileged access without valid credentials. The vulnerability exploits a logic error in the authentication flow, enabling unauthorized users to elevate privileges and access restricted resources. A patch is available; administrators should apply it immediately and monitor logs for suspicious authentication attempts.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/hackers-actively-exploit-highly-critical-drupal-commerc",
-    "publishedAt": "2026-10-30T23:38:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "drupal-commerce-auth-bypass-vulnerability",
-      "article-68aafae7",
-      "68aafae7",
-      "drupal-commerce-auth-bypass-vulnerability-1ec811"
-    ]
-  },
-  {
-    "slug": "ai-platforms-face-large-scale-llmjacking-in-black-5933a7f3",
-    "title": "AI Platforms Face Large‑Scale LLMJacking in Black October",
-    "summary": "A series of agentic attacks on AI developer platforms has led to LLMJacking incidents during the “Black October” period. Attackers exploit platform APIs and model training pipelines to hijack language models, redirecting outputs and injecting malicious code; no specific vulnerability ID is cited. Platform operators should enforce API access controls, monitor model usage, and apply security hardening to mitigate LLMJacking.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
-    "publishedAt": "2026-10-30T22:51:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-platforms-face-large-scale-llmjacking-in-black",
-      "article-5933a7f3",
-      "5933a7f3",
-      "ai-platforms-face-large-scale-llmjacking-in-black-3c2ac2",
-      "ai-platforms-face-large-scale-llmjacking-in-black-october"
-    ]
-  },
-  {
-    "slug": "wordpress-rce-flaw-sparks-63-000-attack-attempts-3420f952",
-    "title": "WordPress RCE Flaw Sparks 63,000 Attack Attempts",
-    "summary": "A critical remote code execution flaw in WordPress core has triggered over 63,000 exploitation attempts within 24 hours, targeting the plugin loading mechanism. The bug allows attackers to inject arbitrary PHP code through malformed plugin URLs, leading to full server compromise without authentication. WordPress core developers have issued a patch in version 6.5.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/wordpress-rce-flaw-draws-nearly-63-000-attack-attempts",
-    "publishedAt": "2026-10-30T22:44:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wordpress-rce-flaw-sparks-63-000-attack-attempts",
-      "article-3420f952",
-      "3420f952",
-      "wordpress-rce-flaw-sparks-63-000-attack-attempts-7e216d"
-    ]
-  },
-  {
-    "slug": "cve-2026-98432-linux-kernel-tcp-flaw-grants-unauth-a15dd8b8",
-    "title": "CVE‑2026‑98432: Linux Kernel TCP Flaw Grants Unauthenticated Root RCE",
-    "summary": "A critical Linux kernel vulnerability (CVE‑2026‑98432) lets unauthenticated attackers execute arbitrary code as root via flawed TCP handling. The flaw, rated CVSS 9.8/10, affects systems using Multipath TCP listeners and can be triggered without credentials. Vendors including Red Hat have released patches; immediate deployment is required to prevent full system compromise.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
-    "publishedAt": "2026-10-30T21:09:46.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/critical-linux-kernel-flaw-allows-remote-root-attacks-o"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html"
-      }
-    ],
-    "aliases": [
-      "cve-2026-98432-linux-kernel-tcp-flaw-grants-unauth",
-      "article-a15dd8b8",
-      "a15dd8b8",
-      "cve-2026-98432-linux-kernel-tcp-flaw-grants-unauth-636780",
-      "cve-2026-98432-linux-kernel-tcp-flaw-grants-unauthenticated-"
-    ]
-  },
-  {
-    "slug": "investors-discuss-emerging-cybersecurity-startups-ff310861",
-    "title": "Investors Discuss Emerging Cybersecurity Startups",
-    "summary": "The DataTribe Challenge revealed investor preferences for emerging cybersecurity startups, highlighting key market trends. Participants evaluated new ventures across threat detection, cloud security, and AI-driven defense, indicating which sectors attract capital. The findings suggest investors prioritize solutions that address evolving attack vectors, global regulatory compliance, and automation of security operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next",
-    "publishedAt": "2026-10-30T21:08:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "investors-discuss-emerging-cybersecurity-startups",
-      "article-ff310861",
-      "ff310861",
-      "investors-discuss-emerging-cybersecurity-startups-5ebdce"
     ]
   }
 ];
