@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 06:45:34 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 07:46:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI-Generated Malware Shows Distinct Code Patterns</title>
+      <link>https://secubuzz.com/news/ai-generated-malware-shows-distinct-code-patterns-c716b0a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-generated-malware-shows-distinct-code-patterns-c716b0a2</guid>
+      <description><![CDATA[The interview examines how AI‑generated malware differs from traditional scripts, focusing on code structure and logging. Indicators include tidy comments, uniform logging messages, and emojis that are often removed during decompilation, revealing the model origin. Security teams should analyze code comments and logging patterns for AI signatures and apply standard malware analysis practices to mitigate patch delays.]]></description>
+      <pubDate>Wed, 04 Nov 2026 07:00:26 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Critical Fence-Agents Patch</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-fence-agents-patch-0d661752</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-fence-agents-patch-0d661752</guid>
+      <description><![CDATA[Red Hat issued a critical security update for the fence-agents component on Red Enterprise Linux 10.0 Extended Update Support. The update addresses multiple high‑severity vulnerabilities, each with a CVSS base score indicating potential remote code execution or privilege escalation. Administrators should apply the fence-agents update immediately and verify that all affected systems are patched to mitigate exploitation risk.]]></description>
+      <pubDate>Wed, 04 Nov 2026 06:44:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95012">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Secure your containers without breaking what works</title>
       <link>https://secubuzz.com/news/secure-your-containers-without-breaking-what-works-2c37d2d1</link>
@@ -26,6 +44,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>CISA Adds WordPress Core CVE-2026-119977 to KEV</title>
+      <link>https://secubuzz.com/news/cisa-adds-wordpress-core-cve-2026-119977-to-kev-b037122a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-wordpress-core-cve-2026-119977-to-kev-b037122a</guid>
+      <description><![CDATA[CISA has listed the WordPress Core flaw CVE-2026-119977 in its Known Exploited Vulnerabilities catalog, citing active exploitation. The high‑severity TOCTOU race condition, scored CVSS 8.1, allows attackers to execute arbitrary code by manipulating file timestamps during upgrade processes. Site owners should apply the latest WordPress core update immediately and verify that all plugins and themes are compatible to prevent exploitation.]]></description>
+      <pubDate>Wed, 04 Nov 2026 05:43:11 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>AI Risks Rank Highest in Gartner Emerging Risk Report</title>
       <link>https://secubuzz.com/news/ai-risks-rank-highest-in-gartner-emerging-risk-rep-4abff701</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-risks-rank-highest-in-gartner-emerging-risk-rep-4abff701</guid>
@@ -33,6 +60,15 @@
       <pubDate>Wed, 04 Nov 2026 05:30:45 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/04/ai-strategy-miscalculation-gartner-report/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Codex Jailbreak Toolkit Injects Ads into AI Responses</title>
+      <link>https://secubuzz.com/news/codex-jailbreak-toolkit-injects-ads-into-ai-respon-b8213f97</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/codex-jailbreak-toolkit-injects-ads-into-ai-respon-b8213f97</guid>
+      <description><![CDATA[A Chinese-language jailbreak toolkit named Haiou targets OpenAI Codex, altering trusted instructions to trigger advertisement prompts. The tool modifies prompt handling, causing persistent adware that injects third‑party AI gateway links without conventional malware signatures. Users should avoid unverified jailbreak packages, monitor prompt outputs for unexpected links, and apply OpenAI updates that tighten instruction validation.]]></description>
+      <pubDate>Wed, 04 Nov 2026 05:22:19 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openai-codex-jailbreak/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>NIST Releases Guide for Solopreneurs Without IT Staff</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[The Relax‑and‑Recover tool creates an initrd with world‑readable permissions when GRUB_RESCUE is enabled, exposing kernel and configuration data. A local attacker could read the initrd to retrieve sensitive information such as passwords or cryptographic keys. Updating to the latest Relax‑and‑Recover version removes the permission issue; administrators should apply the patch immediately.]]></description>
       <pubDate>Tue, 03 Nov 2026 17:37:16 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8988-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>libuser GECOS Field Validation Vulnerabilities</title>
-      <link>https://secubuzz.com/news/libuser-gecos-field-validation-vulnerabilities-adc6ae5d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/libuser-gecos-field-validation-vulnerabilities-adc6ae5d</guid>
-      <description><![CDATA[Two libuser vulnerabilities were disclosed affecting user information handling: CVE-2015-3245 allows local attackers to corrupt the passwd file via improper GECOS field validation, resulting in denial of service; CVE-2015-3246 permits privilege escalation through inconsistent passwd file modification during updates. Both require local access and impact system authentication integrity. Users should apply the updated libuser package to resolve these issues.]]></description>
-      <pubDate>Tue, 03 Nov 2026 17:36:51 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8987-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Swift Mailer Remote Code Execution Vulnerability</title>
-      <link>https://secubuzz.com/news/swift-mailer-remote-code-execution-vulnerability-ac8066f5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/swift-mailer-remote-code-execution-vulnerability-ac8066f5</guid>
-      <description><![CDATA[A remote code execution vulnerability was discovered in Swift Mailer due to improper sanitization of email addresses in the mail transport layer. An unauthenticated attacker could exploit this flaw by passing extra parameters to the underlying mail command. The vendor issued a security update to remediate the issue and prevent arbitrary code execution from remote locations.]]></description>
-      <pubDate>Tue, 03 Nov 2026 17:36:26 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8986-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-8985-1: Net::EasyTCP vulnerability</title>
-      <link>https://secubuzz.com/news/usn-8985-1-net-easytcp-vulnerability-6d448c3f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-8985-1-net-easytcp-vulnerability-6d448c3f</guid>
-      <description><![CDATA[It was discovered that Net::EasyTCP used the built-in Perl rand() function to generate encryption keys when no strong randomization module was present. An attacker could possibly use this issue to predict the keys and obtain sensitive information.]]></description>
-      <pubDate>Tue, 03 Nov 2026 17:36:13 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8985-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-8984-1: jabberd2 vulnerability</title>
-      <link>https://secubuzz.com/news/usn-8984-1-jabberd2-vulnerability-841bcc94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-8984-1-jabberd2-vulnerability-841bcc94</guid>
-      <description><![CDATA[It was discovered that jabberd2 allowed SASL ANONYMOUS authentication even when it was not enabled in the configuration. A remote attacker could possibly use this issue to bypass authentication.]]></description>
-      <pubDate>Tue, 03 Nov 2026 17:35:55 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8984-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>

@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
+    "title": "AI-Generated Malware Shows Distinct Code Patterns",
+    "headline": "AI-Generated Malware Shows Distinct Code Patterns",
+    "summary": "The interview examines how AI‑generated malware differs from traditional scripts, focusing on code structure and logging. Indicators include tidy comments, uniform logging messages, and emojis that are often removed during decompilation, revealing the model origin. Security teams should analyze code comments and logging patterns for AI signatures and apply standard malware analysis practices to mitigate patch delays.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-04T07:00:26.000Z",
+    "ingestedAt": "2026-11-04T07:43:13.843Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95012",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95012",
+    "title": "Red Hat Releases Critical Fence-Agents Patch",
+    "headline": "Red Hat Releases Critical Fence-Agents Patch",
+    "summary": "Red Hat issued a critical security update for the fence-agents component on Red Enterprise Linux 10.0 Extended Update Support. The update addresses multiple high‑severity vulnerabilities, each with a CVSS base score indicating potential remote code execution or privilege escalation. Administrators should apply the fence-agents update immediately and verify that all affected systems are patched to mitigate exploitation risk.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-04T06:44:17.000Z",
+    "ingestedAt": "2026-11-04T07:43:13.843Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:95012",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/04/rapidfort-runtime-container-profiling/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/rapidfort-runtime-container-profiling/",
     "title": "Secure your containers without breaking what works",
@@ -34,6 +66,22 @@
     "isFallback": true
   },
   {
+    "id": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+    "title": "CISA Adds WordPress Core CVE-2026-119977 to KEV",
+    "headline": "CISA Adds WordPress Core CVE-2026-119977 to KEV",
+    "summary": "CISA has listed the WordPress Core flaw CVE-2026-119977 in its Known Exploited Vulnerabilities catalog, citing active exploitation. The high‑severity TOCTOU race condition, scored CVSS 8.1, allows attackers to execute arbitrary code by manipulating file timestamps during upgrade processes. Site owners should apply the latest WordPress core update immediately and verify that all plugins and themes are compatible to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-04T05:43:11.000Z",
+    "ingestedAt": "2026-11-04T07:43:13.843Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/04/ai-strategy-miscalculation-gartner-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/ai-strategy-miscalculation-gartner-report/",
     "title": "AI Risks Rank Highest in Gartner Emerging Risk Report",
@@ -47,6 +95,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/04/ai-strategy-miscalculation-gartner-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/openai-codex-jailbreak/",
+    "sourceUrl": "https://cybersecuritynews.com/openai-codex-jailbreak/",
+    "title": "Codex Jailbreak Toolkit Injects Ads into AI Responses",
+    "headline": "Codex Jailbreak Toolkit Injects Ads into AI Responses",
+    "summary": "A Chinese-language jailbreak toolkit named Haiou targets OpenAI Codex, altering trusted instructions to trigger advertisement prompts. The tool modifies prompt handling, causing persistent adware that injects third‑party AI gateway links without conventional malware signatures. Users should avoid unverified jailbreak packages, monitor prompt outputs for unexpected links, and apply OpenAI updates that tighten instruction validation.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-04T05:22:19.000Z",
+    "ingestedAt": "2026-11-04T07:43:13.843Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/openai-codex-jailbreak/",
     "additionalSources": []
   },
   {
@@ -7984,72 +8048,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
-    "title": "Trezor Warns of Hardware Implant on Devices Sold by CryptoBilis",
-    "headline": "Trezor Warns of Hardware Implant on Devices Sold by CryptoBilis",
-    "summary": "Trezor warned users about compromised Trezor Safe 5 hardware wallets distributed by reseller CryptoBilis in Southeast Asia. A malicious hardware implant exfiltrates private keys during transaction signing, enabling unauthorized cryptocurrency transfers without user interaction. Affected users must verify firmware authenticity, update to official signed releases, and monitor accounts for anomalous activity.",
-    "category": "BREACH",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-10-30T15:58:20.000Z",
-    "ingestedAt": "2026-11-01T02:43:22.841Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/trezor-warns-of-suspected-hardware-implant-in-one-of-it"
-      }
-    ]
-  },
-  {
-    "id": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
-    "sourceUrl": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
-    "title": "Florida Education Dept Data Leak Affects 4.9 Million SSNs",
-    "headline": "Florida Education Dept Data Leak Affects 4.9 Million SSNs",
-    "summary": "The Florida Department of Education disclosed a data breach affecting the Florida Student Financial Aid website, exposing the Social Security numbers of approximately 4.9 million individuals. The breach occurred on October 19, 2026, when unauthorized access was gained to the state's financial aid portal. Affected residents should monitor for identity theft and consider credit monitoring services.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-10-30T15:54:00.000Z",
-    "url": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
-    "title": "Italy Faces Diverse Cyber Threat Landscape",
-    "headline": "Italy Faces Diverse Cyber Threat Landscape",
-    "summary": "Researchers note Italy faces a uniquely diverse cyber threat landscape compared to other nations. The absence of a clear causal explanation points to local socio-economic factors, regulatory differences, and threat actor preferences. Security teams should perform localized threat intelligence and tailor controls to address the specific attack vectors prevalent in Italy.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-10-30T15:39:54.000Z",
-    "ingestedAt": "2026-11-01T04:43:19.307Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/10/fake-pdf-and-search-tools-hijacked-searches-for-13-4-million-chrome-users",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/fake-pdf-and-search-tools-hijacked-searches-for-13-4-million-chrome-users",
-    "title": "Malicious Chrome Extensions Exfiltrate 13.4M Users' Search Queries",
-    "headline": "Malicious Chrome Extensions Exfiltrate 13.4M Users' Search Queries",
-    "summary": "Malicious Chrome extensions hijacked search queries from 13.4 million users, routing them to attacker‑controlled servers. The compromise leveraged the extensions’ permission to access browser search data, enabling passive eavesdropping without user interaction. Users should remove the 319 identified extensions and update Chrome to the latest stable release to mitigate the threat.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-10-30T15:25:41.000Z",
-    "ingestedAt": "2026-11-01T03:43:24.213Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.malwarebytes.com/blog/news/2026/10/fake-pdf-and-search-tools-hijacked-searches-for-13-4-million-chrome-users",
     "additionalSources": []
   }
 ]

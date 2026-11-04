@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-generated-malware-shows-distinct-code-patterns-c716b0a2",
+    "title": "AI-Generated Malware Shows Distinct Code Patterns",
+    "summary": "The interview examines how AI‑generated malware differs from traditional scripts, focusing on code structure and logging. Indicators include tidy comments, uniform logging messages, and emojis that are often removed during decompilation, revealing the model origin. Security teams should analyze code comments and logging patterns for AI signatures and apply standard malware analysis practices to mitigate patch delays.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
+    "publishedAt": "2026-11-04T07:00:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-generated-malware-shows-distinct-code-patterns",
+      "article-c716b0a2",
+      "c716b0a2",
+      "ai-generated-malware-shows-distinct-code-patterns-1f288b"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-fence-agents-patch-0d661752",
+    "title": "Red Hat Releases Critical Fence-Agents Patch",
+    "summary": "Red Hat issued a critical security update for the fence-agents component on Red Enterprise Linux 10.0 Extended Update Support. The update addresses multiple high‑severity vulnerabilities, each with a CVSS base score indicating potential remote code execution or privilege escalation. Administrators should apply the fence-agents update immediately and verify that all affected systems are patched to mitigate exploitation risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95012",
+    "publishedAt": "2026-11-04T06:44:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-fence-agents-patch",
+      "article-0d661752",
+      "0d661752",
+      "red-hat-releases-critical-fence-agents-patch-37d855"
+    ]
+  },
+  {
     "slug": "secure-your-containers-without-breaking-what-works-2c37d2d1",
     "title": "Secure your containers without breaking what works",
     "summary": "Teams identify vulnerabilities, but turning those findings into lower risk is much harder. Each unnecessary component can expand the attack surface and add vulnerabilities to investigate, patch or explain during an audit. Consider an NGINX image that contains 274 categorized vulnerabilities straight from download.",
@@ -48,6 +84,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-adds-wordpress-core-cve-2026-119977-to-kev-b037122a",
+    "title": "CISA Adds WordPress Core CVE-2026-119977 to KEV",
+    "summary": "CISA has listed the WordPress Core flaw CVE-2026-119977 in its Known Exploited Vulnerabilities catalog, citing active exploitation. The high‑severity TOCTOU race condition, scored CVSS 8.1, allows attackers to execute arbitrary code by manipulating file timestamps during upgrade processes. Site owners should apply the latest WordPress core update immediately and verify that all plugins and themes are compatible to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+    "publishedAt": "2026-11-04T05:43:11.000Z",
+    "cves": [
+      "CVE-2026-119977"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-wordpress-core-cve-2026-119977-to-kev",
+      "article-b037122a",
+      "b037122a",
+      "cisa-adds-wordpress-core-cve-2026-119977-to-kev-42a8d1"
+    ]
+  },
+  {
     "slug": "ai-risks-rank-highest-in-gartner-emerging-risk-rep-4abff701",
     "title": "AI Risks Rank Highest in Gartner Emerging Risk Report",
     "summary": "Gartner’s Quarterly Emerging Risk Report ranks AI strategy miscalculation and AI‑driven competitive displacement among the top enterprise risks. The report identifies AI workforce preparedness gaps, AI discovery of cyber vulnerabilities, and geopolitical energy supply shocks as additional high‑impact concerns. The findings, based on 308 enterprise risk leaders’ responses, underscore the need for balanced AI adoption and robust risk mitigation strategies.",
@@ -64,6 +120,25 @@ export const news: NewsBrief[] = [
       "4abff701",
       "ai-risks-rank-highest-in-gartner-emerging-risk-rep-66e1d8",
       "ai-risks-rank-highest-in-gartner-emerging-risk-report"
+    ]
+  },
+  {
+    "slug": "codex-jailbreak-toolkit-injects-ads-into-ai-respon-b8213f97",
+    "title": "Codex Jailbreak Toolkit Injects Ads into AI Responses",
+    "summary": "A Chinese-language jailbreak toolkit named Haiou targets OpenAI Codex, altering trusted instructions to trigger advertisement prompts. The tool modifies prompt handling, causing persistent adware that injects third‑party AI gateway links without conventional malware signatures. Users should avoid unverified jailbreak packages, monitor prompt outputs for unexpected links, and apply OpenAI updates that tighten instruction validation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openai-codex-jailbreak/",
+    "publishedAt": "2026-11-04T05:22:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "codex-jailbreak-toolkit-injects-ads-into-ai-respon",
+      "article-b8213f97",
+      "b8213f97",
+      "codex-jailbreak-toolkit-injects-ads-into-ai-respon-5130ec",
+      "codex-jailbreak-toolkit-injects-ads-into-ai-responses"
     ]
   },
   {
@@ -9402,86 +9477,6 @@ export const news: NewsBrief[] = [
       "article-ba1f00a4",
       "ba1f00a4",
       "help-desk-impersonation-enables-ad-cs-abuse-27f822"
-    ]
-  },
-  {
-    "slug": "trezor-warns-of-hardware-implant-on-devices-sold-b-cf09c239",
-    "title": "Trezor Warns of Hardware Implant on Devices Sold by CryptoBilis",
-    "summary": "Trezor warned users about compromised Trezor Safe 5 hardware wallets distributed by reseller CryptoBilis in Southeast Asia. A malicious hardware implant exfiltrates private keys during transaction signing, enabling unauthorized cryptocurrency transfers without user interaction. Affected users must verify firmware authenticity, update to official signed releases, and monitor accounts for anomalous activity.",
-    "category": "Breach",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
-    "publishedAt": "2026-10-30T15:58:20.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/trezor-warns-of-suspected-hardware-implant-in-one-of-it"
-      }
-    ],
-    "aliases": [
-      "trezor-warns-of-hardware-implant-on-devices-sold-b",
-      "article-cf09c239",
-      "cf09c239",
-      "trezor-warns-of-hardware-implant-on-devices-sold-b-6a9779",
-      "trezor-warns-of-hardware-implant-on-devices-sold-by-cryptobi"
-    ]
-  },
-  {
-    "slug": "florida-education-dept-data-leak-affects-4-9-milli-c8a9abfe",
-    "title": "Florida Education Dept Data Leak Affects 4.9 Million SSNs",
-    "summary": "The Florida Department of Education disclosed a data breach affecting the Florida Student Financial Aid website, exposing the Social Security numbers of approximately 4.9 million individuals. The breach occurred on October 19, 2026, when unauthorized access was gained to the state's financial aid portal. Affected residents should monitor for identity theft and consider credit monitoring services.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
-    "publishedAt": "2026-10-30T15:54:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "florida-education-dept-data-leak-affects-4-9-milli",
-      "article-c8a9abfe",
-      "c8a9abfe",
-      "florida-education-dept-data-leak-affects-4-9-milli-22155c",
-      "florida-education-dept-data-leak-affects-4-9-million-ssns"
-    ]
-  },
-  {
-    "slug": "italy-faces-diverse-cyber-threat-landscape-ad209944",
-    "title": "Italy Faces Diverse Cyber Threat Landscape",
-    "summary": "Researchers note Italy faces a uniquely diverse cyber threat landscape compared to other nations. The absence of a clear causal explanation points to local socio-economic factors, regulatory differences, and threat actor preferences. Security teams should perform localized threat intelligence and tailor controls to address the specific attack vectors prevalent in Italy.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
-    "publishedAt": "2026-10-30T15:39:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "italy-faces-diverse-cyber-threat-landscape",
-      "article-ad209944",
-      "ad209944",
-      "italy-faces-diverse-cyber-threat-landscape-701901"
-    ]
-  },
-  {
-    "slug": "malicious-chrome-extensions-exfiltrate-13-4m-users-96d3f2d3",
-    "title": "Malicious Chrome Extensions Exfiltrate 13.4M Users' Search Queries",
-    "summary": "Malicious Chrome extensions hijacked search queries from 13.4 million users, routing them to attacker‑controlled servers. The compromise leveraged the extensions’ permission to access browser search data, enabling passive eavesdropping without user interaction. Users should remove the 319 identified extensions and update Chrome to the latest stable release to mitigate the threat.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/fake-pdf-and-search-tools-hijacked-searches-for-13-4-million-chrome-users",
-    "publishedAt": "2026-10-30T15:25:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-chrome-extensions-exfiltrate-13-4m-users",
-      "article-96d3f2d3",
-      "96d3f2d3",
-      "malicious-chrome-extensions-exfiltrate-13-4m-users-1a74d7",
-      "malicious-chrome-extensions-exfiltrate-13-4m-users-search-qu"
     ]
   }
 ];
