@@ -11,6 +11,64 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "apt29-targets-mobile-devices-using-patched-exploit-fc26991b",
+    "title": "APT29 Targets Mobile Devices Using Patched Exploits",
+    "summary": "Russian threat group APT29 is targeting iOS and Android users using watering hole attacks delivered through compromised websites and lookalike domains. According to a report by Sekoia, the operation utilizes n-day exploits for patched vulnerabilities to steal user cookies, messages, and Wi-Fi passwords. Security teams should enforce immediate mobile OS updates and restrict access to unverified external web resources.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/apt29-watering-hole-mobile-devices-n-day-exploits/",
+    "publishedAt": "2026-11-04T14:38:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apt29-targets-mobile-devices-using-patched-exploit",
+      "article-fc26991b",
+      "fc26991b",
+      "apt29-targets-mobile-devices-using-patched-exploit-50e3aa",
+      "apt29-targets-mobile-devices-using-patched-exploits"
+    ]
+  },
+  {
+    "slug": "red-hat-patches-important-flaw-in-pki-core-3baaaed8",
+    "title": "Red Hat Patches Important Flaw in PKI Core",
+    "summary": "Red Hat released a security update addressing a vulnerability in the pki-core module for Red Hat Enterprise Linux 8.4 extended support editions. Tracked as CVE-2026-43871, the flaw carries an Important severity rating assigned by Red Hat Product Security. Administrators must apply the updated pki-core:10.6 packages to affected systems to maintain system integrity and security.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95181",
+    "publishedAt": "2026-11-04T14:34:44.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-patches-important-flaw-in-pki-core",
+      "article-3baaaed8",
+      "3baaaed8",
+      "red-hat-patches-important-flaw-in-pki-core-37d850"
+    ]
+  },
+  {
+    "slug": "apt29-watering-hole-campaign-targets-ios-and-andro-d740d667",
+    "title": "APT29 Watering Hole Campaign Targets iOS and Android Users",
+    "summary": "APT29 conducted a large-scale watering hole campaign targeting iOS and Android users via compromised websites, fake domains, and a supply chain attack involving the Ukrainian web analytics service Plerdy SEO Tracker. The injected JavaScript code collects browser and device attributes to deliver exploits. Organizations should monitor for anomalous traffic patterns originating from compromised third-party services.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+    "publishedAt": "2026-11-04T14:27:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apt29-watering-hole-campaign-targets-ios-and-andro",
+      "article-d740d667",
+      "d740d667",
+      "apt29-watering-hole-campaign-targets-ios-and-andro-493d8c",
+      "apt29-watering-hole-campaign-targets-ios-and-android-users"
+    ]
+  },
+  {
     "slug": "red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on-cf60773e",
     "title": "Red Hat Issues dnsmasq Patch for CVE-2026-43871 on RHEL 9.2 and 9.4",
     "summary": "Red Hat has issued a security update for dnsmasq on RHEL 9.2 and 9.4, addressing CVE-2026-43871. The flaw is a buffer overflow in the DHCP packet parser that allows local attackers to gain elevated privileges. Administrators should apply the patch immediately and verify the new firmware version on all affected hosts.",
@@ -58,6 +116,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-token-theft-drives-workos-northflank-trigger-de-5721376b",
+    "title": "AI Token Theft Drives WorkOS, Northflank, Trigger.dev Breaches",
+    "summary": "Hackers harvested AI access tokens from WorkOS, Northflank, and Trigger.dev, exploiting automated attack tools in the past month. The attacks leveraged AI‑assisted offensive frameworks, enabling rapid credential reuse and lateral movement across cloud services. Security teams should revoke exposed tokens, enforce multi‑factor authentication, and monitor for anomalous API usage continuously.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/",
+    "publishedAt": "2026-11-04T12:43:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-token-theft-drives-workos-northflank-trigger-de",
+      "article-5721376b",
+      "5721376b",
+      "ai-token-theft-drives-workos-northflank-trigger-de-6c6b5a",
+      "ai-token-theft-drives-workos-northflank-trigger-dev-breaches"
+    ]
+  },
+  {
     "slug": "rhsa-2026-95097-important-pki-core-10-6-security-u-1f33716b",
     "title": "RHSA-2026:95097: Important: pki-core:10.6 security update",
     "summary": "An update for the pki-core:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
@@ -76,6 +153,43 @@ export const news: NewsBrief[] = [
       "1f33716b",
       "rhsa-2026-95097-important-pki-core-10-6-security-u-37d854",
       "rhsa-2026-95097-important-pki-core-10-6-security-update"
+    ]
+  },
+  {
+    "slug": "google-chrome-157-resolves-213-security-flaws-0dd5bbe7",
+    "title": "Google Chrome 157 Resolves 213 Security Flaws",
+    "summary": "Google released Chrome version 157 to resolve 213 security issues impacting the web browser application. The update fixes seven critical severity vulnerabilities that could potentially allow remote attackers to compromise vulnerable systems. Users are advised to manually check their browser version settings and immediately install the latest software patch to mitigate potential exploitation risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/chrome-157-fixes-213-security-issues-including-7-critical-flaws",
+    "publishedAt": "2026-11-04T12:16:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-chrome-157-resolves-213-security-flaws",
+      "article-0dd5bbe7",
+      "0dd5bbe7",
+      "google-chrome-157-resolves-213-security-flaws-7873dd"
+    ]
+  },
+  {
+    "slug": "rails-flaw-enables-arbitrary-file-write-via-imagem-aa5f8d5c",
+    "title": "Rails Flaw Enables Arbitrary File Write via ImageMagick",
+    "summary": "A critical Rails flaw lets unauthenticated attackers write arbitrary files by uploading crafted ImageMagick files. The flaw resides in Active Storage’s ImageMagick processing, enabling remote code execution with CVSS 9.8 and public PoC. Rails patched the issue in 8.1.4.1 and 8.0.5.2; admins should upgrade and verify upload security.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+    "publishedAt": "2026-11-04T12:07:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rails-flaw-enables-arbitrary-file-write-via-imagem",
+      "article-aa5f8d5c",
+      "aa5f8d5c",
+      "rails-flaw-enables-arbitrary-file-write-via-imagem-3c54d2",
+      "rails-flaw-enables-arbitrary-file-write-via-imagemagick"
     ]
   },
   {
@@ -155,6 +269,25 @@ export const news: NewsBrief[] = [
       "article-3fb65d25",
       "3fb65d25",
       "xen-hypervisor-flaws-enable-vm-memory-theft-3caf5f"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-automatically-blocks-malicious-noti-4f1e8858",
+    "title": "Microsoft Edge Automatically Blocks Malicious Notification Scams",
+    "summary": "Microsoft Edge now automatically revokes notification permissions for websites that redirect users to detected scam pages delivering fake virus alerts. The feature integrates Microsoft Defender SmartScreen and scareware blocker detections directly into browser permissions to disrupt persistent social engineering tactics. Administrators and users receive this automated protection in recent Edge updates to minimize exposure to malicious scareware campaigns.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-edge/",
+    "publishedAt": "2026-11-04T11:38:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-automatically-blocks-malicious-noti",
+      "article-4f1e8858",
+      "4f1e8858",
+      "microsoft-edge-automatically-blocks-malicious-noti-5e400a",
+      "microsoft-edge-automatically-blocks-malicious-notification-s"
     ]
   },
   {
@@ -790,6 +923,69 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ashlar-vellum-cobalt-xe-file-parsing-use-after-fre-8c0fd99b",
+    "title": "Ashlar-Vellum Cobalt XE File Parsing Use-After-Free RCE",
+    "summary": "A use-after-free vulnerability in Ashlar-Vellum Cobalt XE file parsing allows remote code execution when a user opens a malicious file. The assigned CVE is CVE-2026-121742 with a CVSS rating of 7.8. Users should avoid opening untrusted files and apply vendor patches as soon as available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-874/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-121742"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ashlar-vellum-cobalt-xe-file-parsing-use-after-fre",
+      "article-8c0fd99b",
+      "8c0fd99b",
+      "ashlar-vellum-cobalt-xe-file-parsing-use-after-fre-6f3cae",
+      "ashlar-vellum-cobalt-xe-file-parsing-use-after-free-rce"
+    ]
+  },
+  {
+    "slug": "ashlar-vellum-cobalt-vulnerability-enables-remote-85bb0af9",
+    "title": "Ashlar-Vellum Cobalt Vulnerability Enables Remote Code Execution",
+    "summary": "A use-after-free vulnerability in Ashlar-Vellum Cobalt XE allows remote attackers to execute arbitrary code on affected installations. Tracked as CVE-2026-121753 with a CVSS score of 7.8, the flaw requires user interaction through a malicious file or webpage. Security teams should restrict untrusted file opening and monitor vendor advisories for mitigations against this zero-day flaw.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-872/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-121753"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ashlar-vellum-cobalt-vulnerability-enables-remote",
+      "article-85bb0af9",
+      "85bb0af9",
+      "ashlar-vellum-cobalt-vulnerability-enables-remote-6f3cae",
+      "ashlar-vellum-cobalt-vulnerability-enables-remote-code-execu"
+    ]
+  },
+  {
+    "slug": "zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsi-8ceda593",
+    "title": "ZDI-26-871: (0Day) Ashlar-Vellum Cobalt LI File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-121752.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-871/",
+    "publishedAt": "2026-11-04T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-121752"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsi",
+      "article-8ceda593",
+      "8ceda593",
+      "zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsi-6f3cad",
+      "zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsing-heap-ba"
+    ]
+  },
+  {
     "slug": "crowdstrike-launches-agentic-adversary-emulation-f-0acb86d5",
     "title": "CrowdStrike Launches Agentic Adversary Emulation for AI Threats",
     "summary": "CrowdStrike released Agentic Adversary Emulation, a new capability integrated into its platform to simulate AI-driven attacker behaviors. The feature enables security teams to test defenses against sophisticated AI-powered threats by emulating adversary tactics autonomously. Organizations can deploy the emulation to validate detection and response workflows against evolving AI-enabled adversaries through continuous automated testing cycles.",
@@ -1127,6 +1323,25 @@ export const news: NewsBrief[] = [
       "8d7f792d",
       "cpguard-update-channel-backdoor-steals-password-ha-321089",
       "cpguard-update-channel-backdoor-steals-password-hashes"
+    ]
+  },
+  {
+    "slug": "yubico-launches-yubiid-to-secure-identity-verifica-347ac42b",
+    "title": "Yubico Launches YubiID to Secure Identity Verification",
+    "summary": "Yubico announced the YubiID service to integrate identity verification directly into credential enrollment and recovery across enterprise identity platforms. The tool addresses authentication gaps in phishing-resistant frameworks while introducing a beta release for post-quantum YubiKey hardware keys. Security teams can leverage the platform to streamline secure user onboarding and enhance identity lifecycle management across existing infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
+    "publishedAt": "2026-11-04T01:05:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yubico-launches-yubiid-to-secure-identity-verifica",
+      "article-347ac42b",
+      "347ac42b",
+      "yubico-launches-yubiid-to-secure-identity-verifica-189fcc",
+      "yubico-launches-yubiid-to-secure-identity-verification"
     ]
   },
   {
@@ -9255,228 +9470,6 @@ export const news: NewsBrief[] = [
       "article-95421beb",
       "95421beb",
       "chromium-svg-input-validation-flaw-cve-2026-118304-1fe91c"
-    ]
-  },
-  {
-    "slug": "chromium-video-use-after-free-cve-2026-118313-3720cdf2",
-    "title": "Chromium Video Use-After-Free CVE-2026-118313",
-    "summary": "Chromium's video subsystem contains a use‑after‑free flaw identified as CVE-2026-118313. The defect can lead to memory corruption or denial‑of‑service when processing malformed video streams, but no active exploitation has been observed. Google released a patch in the latest Chrome update; users should upgrade to the newest version to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118313",
-    "publishedAt": "2026-10-31T14:00:00.000Z",
-    "cves": [
-      "CVE-2026-118313"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-video-use-after-free-cve-2026-118313",
-      "article-3720cdf2",
-      "3720cdf2",
-      "chromium-video-use-after-free-cve-2026-118313-1fe91c"
-    ]
-  },
-  {
-    "slug": "beginners-learn-cybersecurity-amid-ai-report-overl-774171d1",
-    "title": "Beginners Learn Cybersecurity Amid AI Report Overload",
-    "summary": "AI‑generated vulnerability reports are flooding bug bounty programs, complicating entry for aspiring security researchers. TryHackMe outlines practical skill‑building steps, responsible AI use, and reproducible testing methods to help novices produce credible findings. These resources aim to streamline the learning curve and ensure submissions meet program standards without relying on unverified AI outputs.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
-    "publishedAt": "2026-10-31T13:10:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "beginners-learn-cybersecurity-amid-ai-report-overl",
-      "article-774171d1",
-      "774171d1",
-      "beginners-learn-cybersecurity-amid-ai-report-overl-9a29cd",
-      "beginners-learn-cybersecurity-amid-ai-report-overload"
-    ]
-  },
-  {
-    "slug": "chainalysis-data-breach-exposes-customer-details-81386881",
-    "title": "Chainalysis Data Breach Exposes Customer Details",
-    "summary": "Chainalysis, a blockchain analytics firm, suffered a data breach after attackers used offensive agentic techniques to access internal systems and tools. The breach exposed customer names, email addresses, user IDs, and organizational roles, compromising sensitive personal information. Chainalysis has disclosed the incident and is investigating the extent of the compromise; affected customers should monitor for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
-    "publishedAt": "2026-10-31T12:50:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chainalysis-data-breach-exposes-customer-details",
-      "article-81386881",
-      "81386881",
-      "chainalysis-data-breach-exposes-customer-details-3eab49"
-    ]
-  },
-  {
-    "slug": "chainalysis-reports-internal-tool-breach-exposing-36f74ac8",
-    "title": "Chainalysis Reports Internal Tool Breach Exposing Customer Identities",
-    "summary": "Chainalysis said an external actor accessed internal tools and exposed non‑sensitive customer identity data, without compromising credentials or session tokens. The incident involved unauthorized internal access but did not result in credential theft or sensitive data leakage. Chainalysis has added monitoring and access controls and is conducting a full forensic investigation.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
-    "publishedAt": "2026-10-31T12:01:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chainalysis-reports-internal-tool-breach-exposing",
-      "article-36f74ac8",
-      "36f74ac8",
-      "chainalysis-reports-internal-tool-breach-exposing-470746",
-      "chainalysis-reports-internal-tool-breach-exposing-customer-i"
-    ]
-  },
-  {
-    "slug": "ai-driven-volta-infostealer-prioritizes-victims-e9159e27",
-    "title": "AI-Driven VOLTA Infostealer Prioritizes Victims",
-    "summary": "The VOLTA infostealer is a self‑deleting malware that harvests credentials, session data, and cryptocurrency wallets from infected hosts. After collection, the malware uses large language models to profile victims and rank their most valuable assets, enabling attackers to focus on high‑value targets. Security teams should deploy endpoint detection and response solutions, monitor for credential exfiltration, and isolate compromised systems promptly.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
-    "publishedAt": "2026-10-31T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-driven-volta-infostealer-prioritizes-victims",
-      "article-e9159e27",
-      "e9159e27",
-      "ai-driven-volta-infostealer-prioritizes-victims-b85d54"
-    ]
-  },
-  {
-    "slug": "syrian-hacker-sentenced-to-42-months-in-us-court-a2c80476",
-    "title": "Syrian Hacker Sentenced to 42 Months in US Court",
-    "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro‑Assad attacks on media, businesses, and government entities. The attacks leveraged compromised credentials and distributed denial‑of‑service tactics to disrupt communications and compromise sensitive data across multiple sectors. The sentencing underscores the importance of international cooperation and reinforces the need for robust cyber‑defense measures to deter state‑backed actors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
-    "publishedAt": "2026-10-31T11:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "syrian-hacker-sentenced-to-42-months-in-us-court",
-      "article-a2c80476",
-      "a2c80476",
-      "syrian-hacker-sentenced-to-42-months-in-us-court-b95c46"
-    ]
-  },
-  {
-    "slug": "wireshark-5-0-0rc1-release-adbfdb21",
-    "title": "Wireshark 5.0.0rc1 Release",
-    "summary": "Wireshark released the 5.0.0 release candidate, introducing new features and bug fixes for network protocol analysis. The candidate includes updated dissectors for emerging protocols, improved performance, and several security patches addressing previously reported vulnerabilities. Users should download the latest release candidate, test compatibility with existing workflows, and upgrade to the stable 5.0.0 version when available.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33476",
-    "publishedAt": "2026-10-31T10:52:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wireshark-5-0-0rc1-release",
-      "article-adbfdb21",
-      "adbfdb21",
-      "wireshark-5-0-0rc1-release-57dd7e"
-    ]
-  },
-  {
-    "slug": "yara-x-1-22-1-releases-two-bug-fixes-a7436a1d",
-    "title": "YARA‑X 1.22.1 Releases Two Bug Fixes",
-    "summary": "YARA‑X 1.22.1 release addresses two bugs in the open‑source malware detection tool. The issues involved incorrect pattern‑matching logic and memory handling, which could have caused false positives or crashes; no exploitation was reported. Users should update to 1.22.1 to apply the fixes, with no further mitigations required in production environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33474",
-    "publishedAt": "2026-10-31T10:48:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yara-x-1-22-1-releases-two-bug-fixes",
-      "article-a7436a1d",
-      "a7436a1d",
-      "yara-x-1-22-1-releases-two-bug-fixes-57dd7e"
-    ]
-  },
-  {
-    "slug": "cursor-supply-chain-attack-serves-malicious-claude-1ac76498",
-    "title": "Cursor Supply Chain Attack Serves Malicious Claude Extension",
-    "summary": "A malicious Claude Code extension was delivered through a Cursor supply chain attack, targeting users of the Cursor platform. The extension performed host reconnaissance and attempted to establish a reverse SSH tunnel, enabling potential remote access if successful, though no confirmed exploitation is reported. Users should remove the extension, update to Cursor version, and monitor for unauthorized SSH connections.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/malicious-claude-code-extension-with-cursor/",
-    "publishedAt": "2026-10-31T10:41:18.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/"
-      }
-    ],
-    "aliases": [
-      "cursor-supply-chain-attack-serves-malicious-claude",
-      "article-1ac76498",
-      "1ac76498",
-      "cursor-supply-chain-attack-serves-malicious-claude-20ebc5",
-      "cursor-supply-chain-attack-serves-malicious-claude-extension"
-    ]
-  },
-  {
-    "slug": "ivanti-patches-actively-exploited-connect-secure-z-2597ea0b",
-    "title": "Ivanti Patches Actively Exploited Connect Secure Zero-Day Flaws",
-    "summary": "Threat actors chained zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to execute unauthenticated attacks in the wild. Centered around CVE-2026-111357, the exploit chain bypasses authentication mechanisms, granting remote attackers arbitrary code execution and full root server compromise. CISA added the actively exploited flaws to its KEV catalog; administrators must immediately apply Ivanti's emergency security patches.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-    "publishedAt": "2026-10-31T08:27:43.000Z",
-    "cves": [
-      "CVE-2026-111357"
-    ],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/"
-      }
-    ],
-    "aliases": [
-      "ivanti-patches-actively-exploited-connect-secure-z",
-      "article-2597ea0b",
-      "2597ea0b",
-      "ivanti-patches-actively-exploited-connect-secure-z-d58862",
-      "ivanti-patches-actively-exploited-connect-secure-zero-day-fl"
-    ]
-  },
-  {
-    "slug": "node-js-and-google-address-critical-cve-2026-11149-5a41a94c",
-    "title": "Node.js and Google Address Critical CVE‑2026‑111497 in Brotli Decoder",
-    "summary": "A critical remote code execution flaw (CVE‑2026‑111497) was discovered in the Brotli decompression library used by Node.js and other software. The vulnerability arises from improper bounds checking during decompression, allowing attackers to corrupt memory and execute arbitrary code without authentication. Security teams should immediately apply the Node.js hotfix or update to the latest patched Brotli library to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-111497",
-    "publishedAt": "2026-10-31T08:13:53.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/node-js-how-to-patch-brotli-decoder-cve-2026-111497-rce"
-      }
-    ],
-    "aliases": [
-      "node-js-and-google-address-critical-cve-2026-11149",
-      "article-5a41a94c",
-      "5a41a94c",
-      "node-js-and-google-address-critical-cve-2026-11149-1fec46",
-      "node-js-and-google-address-critical-cve-2026-111497-in-brotl"
     ]
   }
 ];
