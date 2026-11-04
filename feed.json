@@ -1,5 +1,24 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/",
+    "title": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
+    "headline": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
+    "summary": "Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Impacted versions: - aws-network-policy-agent - Amazon VPC CNI Managed Add-on Refer to the article below for the most up-to-date and complete information.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-04T21:53:42.000Z",
+    "ingestedAt": "2026-11-04T22:43:21.312Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-122266"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/",
     "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/",
     "title": "CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard",
@@ -48,6 +67,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://therecord.media/french-bank-confirms-cyber-heist",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing",
+    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing",
+    "title": "Scammers Use Fake Apple Cash Offers for Affiliate Fraud",
+    "headline": "Scammers Use Fake Apple Cash Offers for Affiliate Fraud",
+    "summary": "Fraudulent schemes target consumers with fake $750 Apple Cash reward promotions designed to generate illicit revenue for affiliate marketers. The scam employs website scripted checks and artificial countdown timers to trick victims into completing tasks without delivering any monetary rewards. Users should avoid clicking unsolicited reward links, verify financial promotions through official channels, and block deceptive affiliate marketing domains.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-11-04T18:49:13.000Z",
+    "ingestedAt": "2026-11-04T22:44:47.412Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing",
     "additionalSources": []
   },
   {
@@ -361,20 +396,41 @@
     "additionalSources": []
   },
   {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
+    "title": "Microsoft Edge Fixes Chromium Reference Resolution Flaw",
+    "headline": "Microsoft Edge Fixes Chromium Reference Resolution Flaw",
+    "summary": "An incorrect reference resolution vulnerability in the Chromium rendering engine impacts Microsoft Edge. The defect allows attackers to manipulate pointer references during DOM traversal, potentially leading to memory corruption and arbitrary code execution. Microsoft issued an emergency patch to remediate this critical flaw. Users must update their browser to prevent exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "ingestedAt": "2026-11-04T22:43:59.482Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
+    "additionalSources": []
+  },
+  {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
     "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
-    "title": "Chromium CVE-2026-119260: Use-After-Free Exploit",
-    "headline": "Chromium CVE-2026-119260: Use-After-Free Exploit",
-    "summary": "Chromium CVE-2026-119260 is a use-after-free flaw that may allow attackers to execute arbitrary code in the browser. Microsoft Edge, built on Chromium, inherits the same vulnerability; Google assigned the CVE and released a patch in recent Chrome updates. Users should upgrade to the latest Edge or apply the Chrome patch linked in Microsoft’s release notes to mitigate the risk.",
+    "title": "Microsoft Edge Patch Addresses Chromium Use‑After‑Free Vulnerability (CVE‑2026‑119260)",
+    "headline": "Microsoft Edge Patch Addresses Chromium Use‑After‑Free Vulnerability (CVE‑2026‑119260)",
+    "summary": "Microsoft Edge users face a critical use‑after‑free flaw in the Chromium rendering engine, identified as CVE‑2026‑119260. The flaw permits attackers to execute arbitrary code within the renderer process, potentially compromising the entire browser session. Microsoft released an out‑of‑band patch and urges organizations to update Edge immediately to mitigate exploitation risk.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "Microsoft MSRC",
     "publishedAt": "2026-11-04T16:00:00.000Z",
     "ingestedAt": "2026-11-04T21:43:48.623Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Microsoft MSRC",
+        "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118321"
+      }
+    ]
   },
   {
     "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-5mQn2U5z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Unified+Communications+Manager+Cross-Site+Scripting+Vulnerability%26vs_k%3D1",
@@ -422,6 +478,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucs-rce-LzHSFRDQ?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+UCS+Central+Software+Remote+Code+Execution+Vulnerability%26vs_k%3D1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-8999-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8999-1",
+    "title": "Pillow Multiple Vulnerabilities Affect Image Processing Libraries",
+    "headline": "Pillow Multiple Vulnerabilities Affect Image Processing Libraries",
+    "summary": "Multiple vulnerabilities were discovered in Pillow, a popular Python imaging library. Issues include improper handling of map stride values in McIdas AREA image loading, inadequate decompression bomb checks for font files, and flawed filter size validation in rank filter implementations. These flaws can lead to information disclosure or denial-of-service conditions.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-04T15:49:54.000Z",
+    "ingestedAt": "2026-11-04T22:43:59.482Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-8999-1",
     "additionalSources": []
   },
   {
@@ -4124,10 +4196,10 @@
   {
     "id": "https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/",
-    "title": "Gorbag APT Targets Ukrainian Courts with Self‑Deleting Malware",
-    "headline": "Gorbag APT Targets Ukrainian Courts with Self‑Deleting Malware",
-    "summary": "The Gorbag APT group, aligned with Russia, has breached Ukrainian court and city council systems since February 2025 via spearphishing attachments delivering a self‑deleting stealer. The malware exfiltrates credentials and sensitive data before erasing its traces, complicating detection and response. Teams should enforce MFA, monitor outbound traffic, and apply the latest patches to mitigate Gorbag’s tactics.",
-    "category": "NATION_STATE",
+    "title": "Gorbag Hackers Exploit WinRAR Vulnerability Against Ukrainian Targets",
+    "headline": "Gorbag Hackers Exploit WinRAR Vulnerability Against Ukrainian Targets",
+    "summary": "Russia-aligned threat actors tracked as Gorbag are actively exploiting a WinRAR vulnerability to steal credentials from Ukrainian government agencies. The campaign targets law enforcement bodies, defense organizations, and local administrations near conflict zones. Attackers exfiltrate browser credentials, VPN configurations, and sensitive documents through the exploit chain. Ukrainian defenders must apply vendor patches and implement credential monitoring to detect unauthorized access.",
+    "category": "VULNERABILITY",
     "severity": "HIGH",
     "source": "Help Net Security",
     "publishedAt": "2026-11-03T10:00:14.000Z",
@@ -4135,7 +4207,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/gorbag-hackers-exploit-winrar-vulnerability/"
+      }
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/cogent-security-makes-the-fortune-cyber-60-for-a-second-year-with-a-plan-to-run-cyber-defense-like-a-factory/",
@@ -8174,75 +8251,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/01/week-in-review-binance-hit-by-6-3-billion-theft-impact-of-brotli-vulnerability/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
-    "title": "Canonical LXD, MicroCloud Vulnerability Enables Client Impersonation",
-    "headline": "Canonical LXD, MicroCloud Vulnerability Enables Client Impersonation",
-    "summary": "A CVSS 10.0 flaw in Canonical’s LXD and MicroCloud lets attackers authenticate as trusted clients without the client’s private key. The attack requires network reach to the HTTPS API and the target’s public certificate, enabling full cluster and VM access. Canonical released a patch revoking the vulnerable flow; admins should apply it immediately and limit API exposure.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-01T08:51:31.000Z",
-    "ingestedAt": "2026-11-01T11:43:08.455Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
-    "title": "Polymarket Traders Lose $2.7M to Hijacked Script",
-    "headline": "Polymarket Traders Lose $2.7M to Hijacked Script",
-    "summary": "Polymarket suffered a $2.7 million theft after attackers hijacked a third‑party DebugBear script that replaced a legitimate page‑speed script on the site. The malicious code exfiltrated signed‑in traders’ positions and redirected their funds to attacker-controlled wallets, totaling approximately $2.64 million in crypto. Polymarket is refunding affected wallets and recommends users verify script integrity and monitor account activity for anomalies.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-01T07:25:40.000Z",
-    "ingestedAt": "2026-11-01T11:43:08.455Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-    "title": "FBI Links Binance Heist to North Korean Hackers",
-    "headline": "FBI Links Binance Heist to North Korean Hackers",
-    "summary": "The FBI confirmed that North Korean state-sponsored hackers known as TraderTraitor executed a $6.3 billion cryptocurrency theft from Binance. The attack leveraged compromised API keys and privileged credentials to move millions of USDT and other tokens, creating the largest recorded crypto heist. Binance has tightened API key management and urged exchanges to enforce multi‑factor authentication and monitor anomalous transfer activity.",
-    "category": "BREACH",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-01T07:03:00.000Z",
-    "ingestedAt": "2026-11-01T11:43:49.918Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/"
-      }
-    ]
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-    "title": "NetamLoader Targets Asian Government Windows 10 via .NET Injection",
-    "headline": "NetamLoader Targets Asian Government Windows 10 via .NET Injection",
-    "summary": "NetamLoader malware launched a sophisticated chain against a custom Windows 10 build used by Asian governments via an undocumented .NET loader. It injects malicious assemblies, granting attackers system‑level code execution that can compromise classified data and disrupt operations. Apply vendor patches, enforce least‑privilege .NET policies, and monitor for anomalous assembly loading.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-01T07:02:58.000Z",
-    "ingestedAt": "2026-11-01T11:43:18.094Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
     "additionalSources": []
   }
 ]

@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 21:45:23 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 22:45:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS</title>
+      <link>https://secubuzz.com/news/cve-2026-122266-improper-isolation-of-shared-resou-3baea691</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-122266-improper-isolation-of-shared-resou-3baea691</guid>
+      <description><![CDATA[Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Impacted versions: - aws-network-policy-agent - Amazon VPC CNI Managed Add-on Refer to the article below for the most up-to-date and complete information.]]></description>
+      <pubDate>Wed, 04 Nov 2026 21:53:42 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard</title>
       <link>https://secubuzz.com/news/cve-2026-122192-guest-access-to-firecracker-proces-94ed1063</link>
@@ -33,6 +42,15 @@
       <pubDate>Wed, 04 Nov 2026 18:58:00 GMT</pubDate>
       <source url="https://therecord.media/french-bank-confirms-cyber-heist">The Record</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Scammers Use Fake Apple Cash Offers for Affiliate Fraud</title>
+      <link>https://secubuzz.com/news/scammers-use-fake-apple-cash-offers-for-affiliate-ae8beda4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scammers-use-fake-apple-cash-offers-for-affiliate-ae8beda4</guid>
+      <description><![CDATA[Fraudulent schemes target consumers with fake $750 Apple Cash reward promotions designed to generate illicit revenue for affiliate marketers. The scam employs website scripted checks and artificial countdown timers to trick victims into completing tasks without delivering any monetary rewards. Users should avoid clicking unsolicited reward links, verify financial promotions through official channels, and block deceptive affiliate marketing domains.]]></description>
+      <pubDate>Wed, 04 Nov 2026 18:49:13 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing">Malwarebytes Labs</source>
+      <category>General</category>
     </item>
     <item>
       <title>SkyW4lker Phishing Kit Targets US Microsoft 365 Accounts</title>
@@ -197,10 +215,19 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Chromium CVE-2026-119260: Use-After-Free Exploit</title>
-      <link>https://secubuzz.com/news/chromium-cve-2026-119260-use-after-free-exploit-b36f13f2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-119260-use-after-free-exploit-b36f13f2</guid>
-      <description><![CDATA[Chromium CVE-2026-119260 is a use-after-free flaw that may allow attackers to execute arbitrary code in the browser. Microsoft Edge, built on Chromium, inherits the same vulnerability; Google assigned the CVE and released a patch in recent Chrome updates. Users should upgrade to the latest Edge or apply the Chrome patch linked in Microsoft’s release notes to mitigate the risk.]]></description>
+      <title>Microsoft Edge Fixes Chromium Reference Resolution Flaw</title>
+      <link>https://secubuzz.com/news/microsoft-edge-fixes-chromium-reference-resolution-69d7c85f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-fixes-chromium-reference-resolution-69d7c85f</guid>
+      <description><![CDATA[An incorrect reference resolution vulnerability in the Chromium rendering engine impacts Microsoft Edge. The defect allows attackers to manipulate pointer references during DOM traversal, potentially leading to memory corruption and arbitrary code execution. Microsoft issued an emergency patch to remediate this critical flaw. Users must update their browser to prevent exploitation.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314">Microsoft MSRC</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Patch Addresses Chromium Use‑After‑Free Vulnerability (CVE‑2026‑119260)</title>
+      <link>https://secubuzz.com/news/microsoft-edge-patch-addresses-chromium-use-after-afe3991a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-patch-addresses-chromium-use-after-afe3991a</guid>
+      <description><![CDATA[Microsoft Edge users face a critical use‑after‑free flaw in the Chromium rendering engine, identified as CVE‑2026‑119260. The flaw permits attackers to execute arbitrary code within the renderer process, potentially compromising the entire browser session. Microsoft released an out‑of‑band patch and urges organizations to update Edge immediately to mitigate exploitation risk.]]></description>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260">Microsoft MSRC</source>
       <category>CVE</category>
@@ -230,6 +257,15 @@
       <description><![CDATA[A flaw in Cisco UCS Central Software’s web interface lets authenticated remote attackers execute arbitrary code or disclose data via crafted HTTP requests. The issue stems from insufficient input validation, allowing code execution and file writes; no public exploit is known. Cisco has issued patches that fix the flaw, and no workarounds exist; apply updates promptly.]]></description>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucs-rce-LzHSFRDQ?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+UCS+Central+Software+Remote+Code+Execution+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Pillow Multiple Vulnerabilities Affect Image Processing Libraries</title>
+      <link>https://secubuzz.com/news/pillow-multiple-vulnerabilities-affect-image-proce-4e0f903b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pillow-multiple-vulnerabilities-affect-image-proce-4e0f903b</guid>
+      <description><![CDATA[Multiple vulnerabilities were discovered in Pillow, a popular Python imaging library. Issues include improper handling of map stride values in McIdas AREA image loading, inadequate decompression bomb checks for font files, and flawed filter size validation in rank filter implementations. These flaws can lead to information disclosure or denial-of-service conditions.]]></description>
+      <pubDate>Wed, 04 Nov 2026 15:49:54 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8999-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -419,42 +455,6 @@
       <description><![CDATA[ISC2 is hosting a live Q&A session on November 6, 2026 at 7:00pm CET to help candidates prepare for the CISSP exam. A panel of experts will cover exam domains, foundational cybersecurity knowledge, vendor-neutral certification value, and training resources. This is an educational event with no security implications.]]></description>
       <pubDate>Wed, 04 Nov 2026 14:00:31 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/04/isc2-cissp-exam-prep-webinar/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Beget Cloud Data Wiped in Russian Hosting Attack</title>
-      <link>https://secubuzz.com/news/beget-cloud-data-wiped-in-russian-hosting-attack-f63508ba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/beget-cloud-data-wiped-in-russian-hosting-attack-f63508ba</guid>
-      <description><![CDATA[A cyberattack destroyed data across Beget's cloud infrastructure, affecting hundreds of websites. The assault likely leveraged undisclosed vulnerabilities or credential compromise, causing irreversible data loss and service outages. Beget is working to restore services and investigate the breach, while customers should verify backups and monitor for suspicious activity in the coming weeks.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-cyberattack-beget-cloud">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Cloudflare Enables Control Over Personal AI Agents</title>
-      <link>https://secubuzz.com/news/cloudflare-enables-control-over-personal-ai-agents-f552ccc0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-enables-control-over-personal-ai-agents-f552ccc0</guid>
-      <description><![CDATA[Cloudflare introduces new visibility and control features for personal AI agents interacting with websites. The update addresses concerns over automated traffic masquerading as human users, potentially skewing analytics and security policies. Site owners can now monitor agent activity, set access rules, and mitigate risks associated with automated traffic in real time.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/personal-agents-visibility-control/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>The Sandbox Fights Back: Joe Security Launches Adaptive Detonation</title>
-      <link>https://secubuzz.com/news/the-sandbox-fights-back-joe-security-launches-adap-ac724a59</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/the-sandbox-fights-back-joe-security-launches-adap-ac724a59</guid>
-      <description><![CDATA[Reinach, Switzerland, November 4th, 2026, CyberNewswire AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions. Joe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during an initial sandbox run.]]></description>
-      <pubDate>Wed, 04 Nov 2026 13:56:40 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/the-sandbox-fights-back-joe-security-launches-adaptive-detonation/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Fake Windows Alerts Hosted on Azure Target 80 Organizations</title>
-      <link>https://secubuzz.com/news/fake-windows-alerts-hosted-on-azure-target-80-orga-b5c20d51</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-windows-alerts-hosted-on-azure-target-80-orga-b5c20d51</guid>
-      <description><![CDATA[Scammers are hosting fake Windows security alert landing pages on Microsoft Azure to pressure users into calling fraudulent support numbers. Between March and October 2026, the same fake support kit reached users at 80 organizations, with new pages appearing daily as of November 2. This campaign relies entirely on social engineering rather than technical exploitation.]]></description>
-      <pubDate>Wed, 04 Nov 2026 13:52:13 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/scammers-use-microsoft-azure/">Cyber Security News</source>
       <category>General</category>
     </item>
   </channel>
