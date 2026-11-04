@@ -11,6 +11,107 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "meta-uncovers-muse-vm-data-exposure-bug-a9869b8e",
+    "title": "Meta Uncovers Muse VM Data Exposure Bug",
+    "summary": "A pre‑launch flaw in Meta’s Muse test virtual machines exposed internal conversations and authentication tokens to unauthorized users. The vulnerability allowed attackers to read sensitive data without authentication, potentially compromising internal communications; no public exploit was reported. Meta patched the issue in later Muse releases, and teams should verify VM isolation and token handling best practices.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/meta-shares-top-muse-bug-bounty-findings-as-payouts-reach-1-2-million/",
+    "publishedAt": "2026-11-04T08:27:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-uncovers-muse-vm-data-exposure-bug",
+      "article-a9869b8e",
+      "a9869b8e",
+      "meta-uncovers-muse-vm-data-exposure-bug-1a0511"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-bind-patch-for-cve-2026-43871-7bcde99c",
+    "title": "Red Hat Releases Bind Patch for CVE-2026-43871",
+    "summary": "Red Hat issued a security update for the BIND DNS server on RHEL 9.6 EUS to address CVE‑2026‑43871. The Important vulnerability could allow exploitation of BIND’s DNS query handling, potentially enabling data disclosure or service disruption; a public PoC is available. Users should apply the RHSA‑2026‑95048 update immediately and verify BIND configuration aligns with best practices.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95048",
+    "publishedAt": "2026-11-04T08:13:24.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-bind-patch-for-cve-2026-43871",
+      "article-7bcde99c",
+      "7bcde99c",
+      "red-hat-releases-bind-patch-for-cve-2026-43871-37d854"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-opentelemetry-collector-patch-for-c-00f2c3b5",
+    "title": "Red Hat Issues Opentelemetry‑Collector Patch for CVE‑2026‑43871",
+    "summary": "Red Hat released a security update for the OpenTelemetry Collector on RHEL 9.x to address CVE‑2026‑43871, a flaw that could allow attackers to execute code or exfiltrate data via telemetry ingestion. The vulnerability impacts RHEL 9.4 and 9.6 EUS, potentially enabling unauthorized access or denial of service. Administrators should apply the RHSA‑2026‑95014 update immediately and review collector configurations.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95014",
+    "publishedAt": "2026-11-04T08:09:57.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95015"
+      }
+    ],
+    "aliases": [
+      "red-hat-issues-opentelemetry-collector-patch-for-c",
+      "article-00f2c3b5",
+      "00f2c3b5",
+      "red-hat-issues-opentelemetry-collector-patch-for-c-37d855",
+      "red-hat-issues-opentelemetry-collector-patch-for-cve-2026-43"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-bind9-16-security-update-20eb57f9",
+    "title": "Red Hat Issues bind9.16 Security Update",
+    "summary": "Red Hat released a security update for bind9.16 on RHEL 8.8 for SAP Solutions and Telecommunications, addressing CVE-2026-43871. The vulnerability could allow attackers to gain unauthorized access or execute code on the DNS server. The update is available through the standard RHEL update mechanism; administrators should apply it promptly during the next maintenance window.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95017",
+    "publishedAt": "2026-11-04T07:48:35.000Z",
+    "cves": [
+      "CVE-2026-43871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-bind9-16-security-update",
+      "article-20eb57f9",
+      "20eb57f9",
+      "red-hat-issues-bind9-16-security-update-37d855"
+    ]
+  },
+  {
+    "slug": "hackers-use-new-infostealer-malware-to-steal-chatg-84149201",
+    "title": "Hackers Use New Infostealer Malware to Steal ChatGPT, Claude, and Codex Tokens That Survive Password Resets",
+    "summary": "Hackers are expanding information theft beyond saved passwords, targeting authentication tokens and session data stored by ChatGPT, Claude, Codex, and other AI tools. Two Windows malware families, WardenStealer and Aoki, collect credentials that may remain usable after a password reset, leaving victims exposed even after they believe their accounts are secured.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-new-infostealer-malware/",
+    "publishedAt": "2026-11-04T07:34:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-new-infostealer-malware-to-steal-chatg",
+      "article-84149201",
+      "84149201",
+      "hackers-use-new-infostealer-malware-to-steal-chatg-158059",
+      "hackers-use-new-infostealer-malware-to-steal-chatgpt-claude-"
+    ]
+  },
+  {
     "slug": "ai-generated-malware-shows-distinct-code-patterns-c716b0a2",
     "title": "AI-Generated Malware Shows Distinct Code Patterns",
     "summary": "The interview examines how AI‑generated malware differs from traditional scripts, focusing on code structure and logging. Indicators include tidy comments, uniform logging messages, and emojis that are often removed during decompilation, revealing the model origin. Security teams should analyze code comments and logging patterns for AI signatures and apply standard malware analysis practices to mitigate patch delays.",
@@ -3643,24 +3744,6 @@ export const news: NewsBrief[] = [
       "article-5e50442b",
       "5e50442b",
       "red-hat-issues-bind9-18-security-update-37d8c1"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-bind9-16-security-update-5cce6130",
-    "title": "Red Hat Issues Bind9.16 Security Update",
-    "summary": "Red Hat released a security update for bind9.16 on RHEL 8.6 AMCS and EUS Long‑Life Add‑On, addressing multiple vulnerabilities. The update contains fixes with CVSS base scores linked via CVE references, though no individual CVE identifiers are specified. Apply the bind9.16 patch promptly to close the identified critical security gaps.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94277",
-    "publishedAt": "2026-11-03T03:54:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-bind9-16-security-update",
-      "article-5cce6130",
-      "5cce6130",
-      "red-hat-issues-bind9-16-security-update-37d8c1"
     ]
   },
   {
@@ -9382,101 +9465,6 @@ export const news: NewsBrief[] = [
       "d48e22ae",
       "arctic-wolf-releases-2026-agentic-security-operati-678c5e",
       "arctic-wolf-releases-2026-agentic-security-operations-report"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-ipa-security-update-2c38b719",
-    "title": "Red Hat Issues Critical IPA Security Update",
-    "summary": "Red Hat released a critical security update for the IPA component on Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple high‑severity vulnerabilities that could allow remote code execution or privilege escalation. Red Hat recommends immediate application of the patch to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93071",
-    "publishedAt": "2026-10-30T17:04:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-ipa-security-update",
-      "article-2c38b719",
-      "2c38b719",
-      "red-hat-issues-critical-ipa-security-update-37d93d"
-    ]
-  },
-  {
-    "slug": "app-store-connect-release-notes-updated-09a0915f",
-    "title": "App Store Connect Release Notes Updated",
-    "summary": "Apple released an update to App Store Connect, as indicated by the new release notes. The update likely includes platform enhancements and bug fixes, though specific changes are not disclosed in the brief. Users should review the release notes and apply any recommended configuration changes to maintain compatibility and monitor for any reported issues.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=10302026a",
-    "publishedAt": "2026-10-30T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "app-store-connect-release-notes-updated",
-      "article-09a0915f",
-      "09a0915f",
-      "app-store-connect-release-notes-updated-678f52"
-    ]
-  },
-  {
-    "slug": "vapor-panda-uses-ai-framework-artex-against-200-ta-9927e956",
-    "title": "Vapor Panda Uses AI Framework ARTEX Against 200+ Targets",
-    "summary": "Chinese state-sponsored actors, identified by CrowdStrike as Vapor Panda, deployed the Go‑based AI‑powered ARTEX framework to attack more than 200 high‑value organizations worldwide. ARTEX automates reconnaissance, credential harvesting, and exploitation, enabling attackers to scale operations, though specific exploitation techniques remain undisclosed. Security teams should monitor for ARTEX signatures, enforce strict access controls, and apply timely patches to mitigate potential compromise.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
-    "publishedAt": "2026-10-30T16:58:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vapor-panda-uses-ai-framework-artex-against-200-ta",
-      "article-9927e956",
-      "9927e956",
-      "vapor-panda-uses-ai-framework-artex-against-200-ta-42ae23",
-      "vapor-panda-uses-ai-framework-artex-against-200-targets"
-    ]
-  },
-  {
-    "slug": "cve-2026-119116-and-cve-2026-119148-issues-in-aws-a86b42ff",
-    "title": "CVE-2026-119116 and CVE-2026-119148 - Issues in AWS Nitro Enclaves SDK for C",
-    "summary": "Bulletin ID: 2026-157-AWS Publication Date: 10/30/2026 09:00 AM PDT Description: We identified CVE-2026-119116, a use-after-free in the SetClient command handler of the kmstool-enclave example application, where an application that executes on the parent EC2 instance could send crafted messages over vsock to corrupt heap memory inside the enclave and execute arbitrary code within it.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-157-aws/",
-    "publishedAt": "2026-10-30T16:34:46.000Z",
-    "cves": [
-      "CVE-2026-119116",
-      "CVE-2026-119148"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-119116-and-cve-2026-119148-issues-in-aws",
-      "article-a86b42ff",
-      "a86b42ff",
-      "cve-2026-119116-and-cve-2026-119148-issues-in-aws-566186",
-      "cve-2026-119116-and-cve-2026-119148-issues-in-aws-nitro-encl"
-    ]
-  },
-  {
-    "slug": "help-desk-impersonation-enables-ad-cs-abuse-ba1f00a4",
-    "title": "Help Desk Impersonation Enables AD CS Abuse",
-    "summary": "Microsoft’s investigation found help‑desk impersonation enabled attackers to gain remote access and run malicious code via authentication relay and Kerberos. Attackers then abused Active Directory Certificate Services, issuing rogue certificates that facilitated lateral movement across the network. Teams should enforce MFA for help‑desk accounts, disable authentication relay, monitor AD CS logs, and apply patches to stop this path.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
-    "publishedAt": "2026-10-30T16:11:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "help-desk-impersonation-enables-ad-cs-abuse",
-      "article-ba1f00a4",
-      "ba1f00a4",
-      "help-desk-impersonation-enables-ad-cs-abuse-27f822"
     ]
   }
 ];
