@@ -216,6 +216,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-critical-fence-agents-update-ad925f9c",
+    "title": "Red Hat Issues Critical Fence‑Agents Update",
+    "summary": "Red Hat released a critical security update for fence-agents targeting RHEL 9.2 Update Services for SAP Solutions. The update addresses multiple vulnerabilities with CVSS base scores listed in the CVE references, and Red Hat rated the impact as Critical. Security teams should apply the fence-agents update immediately to mitigate the high‑risk flaws.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94634",
+    "publishedAt": "2026-11-03T18:59:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-fence-agents-update",
+      "article-ad925f9c",
+      "ad925f9c",
+      "red-hat-issues-critical-fence-agents-update-37d8b2"
+    ]
+  },
+  {
     "slug": "aws-oauth-audience-validation-bypass-cve-2026-1154-c45c948e",
     "title": "AWS OAuth Audience Validation Bypass CVE-2026-115413",
     "summary": "AWS discovered a flaw in the MCP Server OAuth that bypasses token audience validation, allowing misuse of tokens issued for other services. CVE-2026-115413 enables attackers to gain unauthorized access to protected resources by manipulating the audience claim in a valid token. AWS has issued a patch; administrators should update the MCP Server and enforce strict audience checks to prevent exploitation.",
@@ -386,6 +404,25 @@ export const news: NewsBrief[] = [
       "6e897223",
       "cve-2026-119922-babelfish-for-postgresql-privilege-7821ef",
       "cve-2026-119922-babelfish-for-postgresql-privilege-escalatio"
+    ]
+  },
+  {
+    "slug": "red-hat-edge-manager-1-2-2-receives-security-updat-c8a4ee59",
+    "title": "Red Hat Edge Manager 1.2.2 Receives Security Update",
+    "summary": "Red Hat Edge Manager Version 1.2.2 receives a security update addressing unspecified vulnerabilities that could allow unauthorized access or privilege escalation. The update patches internal components, though specific root causes remain undisclosed, and is part of Red Hat's ongoing effort to secure edge computing environments. Users should apply the patch immediately to maintain system integrity and prevent potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94632",
+    "publishedAt": "2026-11-03T18:24:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-edge-manager-1-2-2-receives-security-updat",
+      "article-c8a4ee59",
+      "c8a4ee59",
+      "red-hat-edge-manager-1-2-2-receives-security-updat-37d8b2",
+      "red-hat-edge-manager-1-2-2-receives-security-update"
     ]
   },
   {
@@ -766,6 +803,24 @@ export const news: NewsBrief[] = [
       "32a7dbb8",
       "binance-discloses-6-43-billion-theft-via-social-en-5314da",
       "binance-discloses-6-43-billion-theft-via-social-engineering-"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-cockpit-security-patch-ec2883c9",
+    "title": "Red Hat Releases Cockpit Security Patch",
+    "summary": "An update for Red Hat Enterprise Linux 9 cockpit addresses a critical flaw identified as CVE‑2026‑43871. The vulnerability allows attackers to gain elevated privileges through a buffer overflow in the cockpit web interface, potentially enabling remote code execution. Red Hat has released a patch that must be applied immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94533",
+    "publishedAt": "2026-11-03T16:43:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-cockpit-security-patch",
+      "article-ec2883c9",
+      "ec2883c9",
+      "red-hat-releases-cockpit-security-patch-37d8b6"
     ]
   },
   {
@@ -1164,24 +1219,6 @@ export const news: NewsBrief[] = [
       "article-bb30d75f",
       "bb30d75f",
       "freerdp-update-addresses-cve-2026-43871-37d8b6"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-fence-agents-update-2e66fbda",
-    "title": "Red Hat Issues Critical Fence‑Agents Update",
-    "summary": "Red Hat issued a critical fence‑agents update for RHEL 9.4 Update Services for SAP Solutions, fixing vulnerabilities that could allow remote code execution. The advisory cites CVE links with CVSS scores, but no specific CVE ID; the flaw is improper input validation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94557",
-    "publishedAt": "2026-11-03T14:33:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-fence-agents-update",
-      "article-2e66fbda",
-      "2e66fbda",
-      "red-hat-issues-critical-fence-agents-update-37d8b6"
     ]
   },
   {
@@ -2757,6 +2794,66 @@ export const news: NewsBrief[] = [
       "article-abf28543",
       "abf28543",
       "sweet-virtual-patching-mitigates-http2shell-rce-40222c"
+    ]
+  },
+  {
+    "slug": "quest-foglight-directory-traversal-enables-remote-3bc4674a",
+    "title": "Quest Foglight Directory Traversal Enables Remote Code Execution",
+    "summary": "Quest Foglight for Databases suffers a directory traversal flaw that allows remote code execution via the loadManageServerLicense endpoint. The vulnerability, CVE-2026-92194, requires authentication and has a CVSS score of 8.8, enabling attackers to run arbitrary code. No patch information is available; security teams should monitor for updates and restrict access to the affected API.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-857/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92194"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-directory-traversal-enables-remote",
+      "article-3bc4674a",
+      "3bc4674a",
+      "quest-foglight-directory-traversal-enables-remote-6f3ca7",
+      "quest-foglight-directory-traversal-enables-remote-code-execu"
+    ]
+  },
+  {
+    "slug": "quest-foglight-directory-traversal-allows-remote-c-29b2ca1d",
+    "title": "Quest Foglight Directory Traversal Allows Remote Code Execution",
+    "summary": "Quest Foglight for Databases suffers a directory traversal flaw that allows remote code execution via the loadEvolveLicense endpoint. The vulnerability, CVE-2026-92195, requires authentication and has a CVSS score of 8.8, enabling attackers to run arbitrary code. No patch information is available; security teams should monitor for updates and restrict access to the affected API.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-856/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92195"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-directory-traversal-allows-remote-c",
+      "article-29b2ca1d",
+      "29b2ca1d",
+      "quest-foglight-directory-traversal-allows-remote-c-6f3ca6",
+      "quest-foglight-directory-traversal-allows-remote-code-execut"
+    ]
+  },
+  {
+    "slug": "quest-foglight-rce-exploit-unauthenticated-06066062",
+    "title": "Quest Foglight RCE Exploit Unauthenticated",
+    "summary": "Quest Foglight for Databases is vulnerable to an unauthenticated remote code execution flaw, CVE‑2026‑92188, that exploits missing authentication in ForgeMBeanServerSupport. The flaw carries a CVSS score of 9.8, allowing attackers to execute arbitrary code on the database server without credentials. A vendor patch is available; administrators should apply it promptly and disable remote MBean access if possible.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-854/",
+    "publishedAt": "2026-11-03T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quest-foglight-rce-exploit-unauthenticated",
+      "article-06066062",
+      "06066062",
+      "quest-foglight-rce-exploit-unauthenticated-6f3ca6"
     ]
   },
   {
@@ -9412,141 +9509,6 @@ export const news: NewsBrief[] = [
       "article-0c47b86e",
       "0c47b86e",
       "microsoft-edge-elevation-of-privilege-cve-fixed-745a62"
-    ]
-  },
-  {
-    "slug": "drupal-commerce-core-authorization-bypass-vulnerab-a88a6981",
-    "title": "Drupal Commerce Core Authorization Bypass Vulnerability (CVE-2026-118539) Actively Exploited",
-    "summary": "A missing authorization flaw in Drupal Commerce Core (CVE-2026-118539) affects versions 0.0.0-2.41 and 3.0.0-3.3.13, enabling attackers to bypass authentication and access controls. The vulnerability permits unauthorized access and purchases, risking customer data exposure. Drupal has released a patch enforcing proper authorization; administrators should apply it immediately and update Commerce Core.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-drupal-commerce-vulnerability/",
-    "publishedAt": "2026-10-30T13:56:01.000Z",
-    "cves": [
-      "CVE-2026-118539"
-    ],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html"
-      }
-    ],
-    "aliases": [
-      "drupal-commerce-core-authorization-bypass-vulnerab",
-      "article-a88a6981",
-      "a88a6981",
-      "drupal-commerce-core-authorization-bypass-vulnerab-63279e",
-      "drupal-commerce-core-authorization-bypass-vulnerability-cve-"
-    ]
-  },
-  {
-    "slug": "fbi-seizes-domain-of-bulletproof-host-virtualine-453d2616",
-    "title": "FBI Seizes Domain of Bulletproof Host Virtualine",
-    "summary": "The FBI seized the domain of Virtualine, a bulletproof hosting provider that facilitated hack-for-hire services, ransomware operations, and infostealer infrastructure while accepting cryptocurrency payments. The takedown disrupted backend infrastructure used by multiple cybercriminal groups to launch attacks and host malicious payloads.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/",
-    "publishedAt": "2026-10-30T13:36:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-seizes-domain-of-bulletproof-host-virtualine",
-      "article-453d2616",
-      "453d2616",
-      "fbi-seizes-domain-of-bulletproof-host-virtualine-5c9d3e"
-    ]
-  },
-  {
-    "slug": "kairos-botnet-exploits-passwordless-telnet-on-linu-95683606",
-    "title": "Kairos Botnet Exploits Passwordless Telnet on Linux",
-    "summary": "The Kairos botnet spreads to Linux devices by exploiting Telnet services that allow root login without passwords. The flaw enables remote code execution, allowing attackers to install a Go‑based DDoS agent. Administrators must disable Telnet, enforce strong authentication, and apply timely security patches to prevent infection.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-passwordless-telnet/",
-    "publishedAt": "2026-10-30T13:22:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kairos-botnet-exploits-passwordless-telnet-on-linu",
-      "article-95683606",
-      "95683606",
-      "kairos-botnet-exploits-passwordless-telnet-on-linu-44a6df",
-      "kairos-botnet-exploits-passwordless-telnet-on-linux"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-rt-security-update-9c539288",
-    "title": "Red Hat Releases Kernel‑RT Security Update",
-    "summary": "Red Hat issued a kernel‑rt update for Enterprise Linux 9.2 SAP Solutions, addressing multiple security issues. The patch mitigates vulnerabilities with CVSS scores ranging from moderate to high, as detailed in the referenced CVE entries. Red Hat recommends immediate installation of the update to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93047",
-    "publishedAt": "2026-10-30T13:08:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-rt-security-update",
-      "article-9c539288",
-      "9c539288",
-      "red-hat-releases-kernel-rt-security-update-37d93d"
-    ]
-  },
-  {
-    "slug": "syrian-hacker-sentenced-for-white-house-hoax-f940c774",
-    "title": "Syrian Hacker Sentenced for White House Hoax",
-    "summary": "A Syrian national, Ahmad Umar Agha, was convicted for orchestrating a fake White House explosion report via a hijacked Twitter account. The deception triggered a $136 billion market decline and was part of a broader Assad regime hacking conspiracy. A federal court sentenced him to 42 months imprisonment.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/10/30/syrian-hacker-sentenced-42-months-prison/",
-    "publishedAt": "2026-10-30T13:00:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "syrian-hacker-sentenced-for-white-house-hoax",
-      "article-f940c774",
-      "f940c774",
-      "syrian-hacker-sentenced-for-white-house-hoax-3abddc"
-    ]
-  },
-  {
-    "slug": "gitlab-cve-2026-97229-exploited-in-wild-a4024a8b",
-    "title": "GitLab CVE‑2026‑97229 Exploited in Wild",
-    "summary": "CISA confirmed active exploitation of GitLab’s CVE‑2026‑97229, a maximum‑severity flaw patched earlier this month. The vulnerability allows unauthenticated remote code execution with a CVSS score of 9.8, enabling attackers to compromise affected instances. GitLab urges users to apply the latest patch immediately to prevent further compromise.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
-    "publishedAt": "2026-10-30T13:00:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-cve-2026-97229-exploited-in-wild",
-      "article-a4024a8b",
-      "a4024a8b",
-      "gitlab-cve-2026-97229-exploited-in-wild-6a6bed"
-    ]
-  },
-  {
-    "slug": "uk-introduces-four-age-verification-methods-c5a9a6a1",
-    "title": "UK Introduces Four Age‑Verification Methods",
-    "summary": "The UK government announced four age‑verification methods to enforce the under‑16 social media ban, including photo ID, bank checks, face scans, and other options. Ofcom outlined these options to ensure compliance with the new regulatory framework, aiming to prevent under‑age access to online platforms.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/10/photo-id-bank-checks-face-scan-the-uks-age-check-options",
-    "publishedAt": "2026-10-30T13:00:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-introduces-four-age-verification-methods",
-      "article-c5a9a6a1",
-      "c5a9a6a1",
-      "uk-introduces-four-age-verification-methods-3393c8"
     ]
   }
 ];
