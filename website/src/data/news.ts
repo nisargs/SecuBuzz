@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-pcre2-security-patch-9e9fa5fb",
+    "title": "Red Hat Releases pcre2 Security Patch",
+    "summary": "Red Hat released a pcre2 update for RHEL 7 ELS to fix multiple security vulnerabilities. The vulnerabilities, referenced by CVE identifiers, are rated Important, suggesting a moderate to high exploitation risk. The patch is available via the RHEL 7 ELS update channel; administrators should install it and verify system integrity after installation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95371",
+    "publishedAt": "2026-11-05T01:45:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-pcre2-security-patch",
+      "article-9e9fa5fb",
+      "9e9fa5fb",
+      "red-hat-releases-pcre2-security-patch-37d849"
+    ]
+  },
+  {
     "slug": "cisco-products-hit-by-node-js-brotli-vulnerabiliti-a9298be6",
     "title": "Cisco Products Hit by Node.js Brotli Vulnerabilities",
     "summary": "Cisco products are affected by Node.js vulnerabilities, including Brotli decoder, DNS resolution, and TLS hostname validation flaws. The flaws, identified as CVE‑2026‑111497, CVE‑2026‑105482, CVE‑2026‑105483, and CVE‑2026‑106069, enable remote code execution or traffic interception via out‑of‑bounds writes and hostname validation bypasses. Node.js has released patches for the 22.x, 24.x, and 26.x lines; Cisco should apply updates and verify TLS validation behavior.",
@@ -27,6 +45,24 @@ export const news: NewsBrief[] = [
       "a9298be6",
       "cisco-products-hit-by-node-js-brotli-vulnerabiliti-104bcf",
       "cisco-products-hit-by-node-js-brotli-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-kernel-security-update-25c318ae",
+    "title": "Red Hat Issues Kernel Security Update",
+    "summary": "Red Hat released a kernel update for RHEL 10 to address multiple security vulnerabilities. The vulnerabilities, identified by CVE references, carry an Important impact rating, indicating moderate to high risk for affected systems. The update is available through standard RHEL 10 repositories; administrators should apply it promptly to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95367",
+    "publishedAt": "2026-11-05T00:17:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kernel-security-update",
+      "article-25c318ae",
+      "25c318ae",
+      "red-hat-issues-kernel-security-update-37d849"
     ]
   },
   {
@@ -103,6 +139,24 @@ export const news: NewsBrief[] = [
       "70eb5e9d",
       "rails-active-storage-imagemagick-arbitrary-file-wr-5f3c47",
       "rails-active-storage-imagemagick-arbitrary-file-write"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-cryostat-4-for-cve-2026-98432-b4b42418",
+    "title": "Red Hat Updates Cryostat 4 for CVE‑2026‑98432",
+    "summary": "Red Hat released a security update for its Cryostat 4 build on RHEL 9, addressing CVE‑2026‑98432. The vulnerability involves a memory‑corruption flaw that could allow local privilege escalation or denial of service if exploited. Red Hat recommends installing the updated Cryostat package or applying the vendor patch to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95360",
+    "publishedAt": "2026-11-04T21:45:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-cryostat-4-for-cve-2026-98432",
+      "article-b4b42418",
+      "b4b42418",
+      "red-hat-updates-cryostat-4-for-cve-2026-98432-37d849"
     ]
   },
   {
@@ -643,6 +697,84 @@ export const news: NewsBrief[] = [
       "dd20b5eb",
       "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
       "msecure-users-urged-to-reset-passwords-after-breach"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-119270-improper-input-validation-be57d80e",
+    "title": "Chromium CVE-2026-119270 Improper Input Validation",
+    "summary": "Microsoft Edge incorporates a fix for Chromium CVE-2026-119270, an improper input validation flaw that could allow exploitation via crafted input. The vulnerability permits attackers to bypass input checks, potentially enabling code execution on affected systems. Microsoft recommends installing the latest Edge update, which includes the Chromium patch; users should also keep Chrome up to date.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119270",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119270"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-119270-improper-input-validation",
+      "article-be57d80e",
+      "be57d80e",
+      "chromium-cve-2026-119270-improper-input-validation-1fe8aa"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-76024-memory-corruption-6233f5c8",
+    "title": "Chromium CVE-2026-76024 Memory Corruption",
+    "summary": "Microsoft Edge incorporates a fix for Chromium CVE-2026-76024, a memory corruption flaw that could allow exploitation via crafted input. The vulnerability permits attackers to corrupt memory, potentially leading to arbitrary code execution on affected systems. Microsoft recommends installing the latest Edge update, which includes the Chromium patch; users should also keep Chrome up to date.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76024",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-76024"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-76024-memory-corruption",
+      "article-6233f5c8",
+      "6233f5c8",
+      "chromium-cve-2026-76024-memory-corruption-744db7"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-fixes-chromium-use-after-free-cve-2-1b52e126",
+    "title": "Microsoft Edge Fixes Chromium Use‑After‑Free CVE‑2026‑76025",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a use‑after‑free flaw in Chromium, identified as CVE‑2026‑76025. The flaw stems from improper memory handling during object lifecycle, potentially enabling arbitrary code execution if exploited. Microsoft has released an update that incorporates Chromium's fix; users should install the latest Edge update or apply the patch from Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76025",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-fixes-chromium-use-after-free-cve-2",
+      "article-1b52e126",
+      "1b52e126",
+      "microsoft-edge-fixes-chromium-use-after-free-cve-2-744db7",
+      "microsoft-edge-fixes-chromium-use-after-free-cve-2026-76025"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-memory-corruptio-08e9a41a",
+    "title": "Microsoft Edge Addresses Chromium Memory‑Corruption CVE‑2026‑76026",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a memory‑corruption flaw in Chromium, identified as CVE‑2026‑76026. The defect arises from improper handling of buffer boundaries during rendering, potentially allowing arbitrary code execution if exploited. Microsoft has released an update that incorporates Chromium's patch; users should install the latest Edge update or apply the Chrome release notes patch.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76026",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-memory-corruptio",
+      "article-08e9a41a",
+      "08e9a41a",
+      "microsoft-edge-addresses-chromium-memory-corruptio-744db7",
+      "microsoft-edge-addresses-chromium-memory-corruption-cve-2026"
     ]
   },
   {
@@ -2270,6 +2402,25 @@ export const news: NewsBrief[] = [
       "article-65080cc0",
       "65080cc0",
       "red-hat-issues-flatpak-update-for-cve-2026-43871-37d854"
+    ]
+  },
+  {
+    "slug": "slippynunchucks-hijacks-sogou-input-method-promoti-623c76dc",
+    "title": "SlippyNunchucks hijacks Sogou Input Method promotion to spread malware",
+    "summary": "SlippyNunchucks hijacked Sogou Input Method’s brand promotion mechanism to distribute malware via DNS hijacking in Windows versions. The flaw stems from insecure HTTP communications that allow attackers to redirect DNS queries, enabling malicious payload delivery without authentication. No vendor patch has been announced; users should monitor for updates and consider disabling insecure HTTP connections.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/slippynunchucks-hijacks-sogou-input-methods-brand-promotion-mechanism-to-distribute-malware/",
+    "publishedAt": "2026-11-04T09:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "slippynunchucks-hijacks-sogou-input-method-promoti",
+      "article-623c76dc",
+      "623c76dc",
+      "slippynunchucks-hijacks-sogou-input-method-promoti-262b5a",
+      "slippynunchucks-hijacks-sogou-input-method-promotion-to-spre"
     ]
   },
   {
@@ -9344,135 +9495,6 @@ export const news: NewsBrief[] = [
       "article-0d35cbdc",
       "0d35cbdc",
       "red-hat-patches-libsoup-flaws-in-rhel-8-8-37d92e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-security-update-for-libso-6d2e5d83",
-    "title": "Red Hat Issues Important Security Update for Libsoup",
-    "summary": "Red Hat released a security update for the libsoup HTTP client library affecting Red Hat Enterprise Linux 9.6 Extended Update Support systems. Product security teams classified the underlying vulnerability as Important, indicating significant potential impact across impacted enterprise Linux environments. Administrators using affected Extended Update Support deployments should apply the latest package updates immediately to secure HTTP client functionality.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93446",
-    "publishedAt": "2026-11-02T03:37:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-security-update-for-libso",
-      "article-6d2e5d83",
-      "6d2e5d83",
-      "red-hat-issues-important-security-update-for-libso-37d92e",
-      "red-hat-issues-important-security-update-for-libsoup"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-9-6-libxtst-update-addresses-7f95f7d3",
-    "title": "Red Enterprise Linux 9.6 libXtst Update Addresses Vulnerabilities",
-    "summary": "Red Enterprise Linux 9.6 EUS users receive a libXtst security update addressing multiple vulnerabilities. The update fixes issues identified by Red Hat Product Security, with CVSS scores in the CVE references indicating moderate to high impact. Apply RHSA-2026:93450 immediately to mitigate the weaknesses and review the CVE links for severity details.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93450",
-    "publishedAt": "2026-11-02T03:35:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-9-6-libxtst-update-addresses",
-      "article-7f95f7d3",
-      "7f95f7d3",
-      "red-enterprise-linux-9-6-libxtst-update-addresses-37d92e",
-      "red-enterprise-linux-9-6-libxtst-update-addresses-vulnerabil"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-update-for-libsoup-90d9b9f2",
-    "title": "Red Hat Issues Important Update for libsoup",
-    "summary": "A high‑severity vulnerability in libsoup affects Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rates the flaw important, with a CVSS base score listed in the CVE references but no public exploit. Security teams should install the libsoup update available for RHEL 7 Extended Lifecycle Support to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93465",
-    "publishedAt": "2026-11-02T03:33:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-update-for-libsoup",
-      "article-90d9b9f2",
-      "90d9b9f2",
-      "red-hat-issues-important-update-for-libsoup-37d92e"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-libxml2-with-important-fix-9e7aeae0",
-    "title": "Red Hat Updates libxml2 with Important Fix",
-    "summary": "Red Hat issued an important update for libxml2 in RHEL 8.4, addressing a vulnerability that could allow XML parsing exploits. The defect, with a moderate CVSS score, permits attackers to trigger buffer overflows during XML processing, potentially leading to code execution. Red Hat advises installing the patch promptly and reviewing the CVE links for full remediation guidance.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93473",
-    "publishedAt": "2026-11-02T03:27:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-libxml2-with-important-fix",
-      "article-9e7aeae0",
-      "9e7aeae0",
-      "red-hat-updates-libxml2-with-important-fix-37d92e"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-idm-client-update-e25b3871",
-    "title": "Red Hat Releases Critical idm:client Update",
-    "summary": "Red Hat released a critical update for the idm:client module in RHEL 8.4, fixing a vulnerability that could allow unauthorized identity access. The flaw, rated with a high CVSS score, permits exploitation of client authentication, potentially enabling privilege escalation. Red Hat recommends applying the patch immediately and verifying the CVE references to ensure mitigation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93452",
-    "publishedAt": "2026-11-02T03:27:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-idm-client-update",
-      "article-e25b3871",
-      "e25b3871",
-      "red-hat-releases-critical-idm-client-update-37d92e"
-    ]
-  },
-  {
-    "slug": "perl-xml-libxml-security-update-for-rhel-8-4-relea-09109957",
-    "title": "perl-XML-LibXML Security Update for RHEL 8.4 Released",
-    "summary": "An update for perl-XML-LibXML on RHEL 8.4 addresses multiple security vulnerabilities. The vulnerabilities were identified by Red Hat Product Security and rated as Important, with no public exploit reported in the wild. The update is available for RHEL 8.4 via the package manager and should be applied promptly to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93470",
-    "publishedAt": "2026-11-02T03:27:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "perl-xml-libxml-security-update-for-rhel-8-4-relea",
-      "article-09109957",
-      "09109957",
-      "perl-xml-libxml-security-update-for-rhel-8-4-relea-37d92e",
-      "perl-xml-libxml-security-update-for-rhel-8-4-released"
-    ]
-  },
-  {
-    "slug": "thunderbird-security-update-for-rhel-9-released-32ba1ab4",
-    "title": "Thunderbird Security Update for RHEL 9 Released",
-    "summary": "An update for Thunderbird on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities. The vulnerabilities were identified by Red Hat Product Security and rated as Important, but no public exploit is known. The update is available through RHEL 9's package manager and should be applied immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93443",
-    "publishedAt": "2026-11-02T03:03:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "thunderbird-security-update-for-rhel-9-released",
-      "article-32ba1ab4",
-      "32ba1ab4",
-      "thunderbird-security-update-for-rhel-9-released-37d92e"
     ]
   }
 ];

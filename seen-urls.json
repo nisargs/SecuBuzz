@@ -4128,5 +4128,13 @@
   "https://developer.apple.com/news/releases/?id=11032026a",
   "https://developer.apple.com/news/releases/?id=11032026b",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119271",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119272"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119272",
+  "https://access.redhat.com/errata/RHSA-2026:95367",
+  "https://access.redhat.com/errata/RHSA-2026:95371",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119270",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76024",
+  "https://www.welivesecurity.com/en/eset-research/slippynunchucks-hijacks-sogou-input-methods-brand-promotion-mechanism-to-distribute-malware/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76025",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76026",
+  "https://access.redhat.com/errata/RHSA-2026:95360"
 ]
