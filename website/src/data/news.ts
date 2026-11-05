@@ -11,6 +11,79 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-bind-security-update-for-rhel-8-4-3cf9e828",
+    "title": "Red Hat Releases Bind Security Update for RHEL 8.4",
+    "summary": "Red Hat issued a bind security update for RHEL 8.4 AMCS and EUS LLA, addressing multiple vulnerabilities. The update includes bug fixes and enhancements, with CVSS scores provided for each CVE referenced in the advisory. Customers should apply the patch immediately to mitigate critical potential exploitation of the bind service.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95477",
+    "publishedAt": "2026-11-05T09:26:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-bind-security-update-for-rhel-8-4",
+      "article-3cf9e828",
+      "3cf9e828",
+      "red-hat-releases-bind-security-update-for-rhel-8-4-37d845"
+    ]
+  },
+  {
+    "slug": "ghostmap-app-forces-android-devices-into-boot-loop-052cbc10",
+    "title": "GhostMap App Forces Android Devices into Boot Loop",
+    "summary": "A no‑permission Android app can force devices into a continuous boot loop by exploiting the GhostMap flaw. The flaw stems from improper ZIP structure handling during APK parsing, enabling a crash loop without user interaction. Users should immediately apply the vendor’s latest Android patch to eliminate the critical boot‑loop vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
+    "publishedAt": "2026-11-05T09:18:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostmap-app-forces-android-devices-into-boot-loop",
+      "article-052cbc10",
+      "052cbc10",
+      "ghostmap-app-forces-android-devices-into-boot-loop-147b87"
+    ]
+  },
+  {
+    "slug": "openai-generates-948-linux-root-exploits-in-one-ru-4e7ac37a",
+    "title": "OpenAI Generates 948 Linux Root Exploits in One Run",
+    "summary": "An automated pipeline on an upcoming OpenAI model produced 948 working exploits targeting the latest Linux kernel on stock desktop distributions. The exploits elevate ordinary users to root by exploiting kernel bugs, and the system auto‑generated patches for each flaw. Security teams should apply vendor kernel patches and monitor for similar automated exploitation tools.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/openai-linux-kernel-root-exploits/",
+    "publishedAt": "2026-11-05T09:05:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-generates-948-linux-root-exploits-in-one-ru",
+      "article-4e7ac37a",
+      "4e7ac37a",
+      "openai-generates-948-linux-root-exploits-in-one-ru-4cd5a3",
+      "openai-generates-948-linux-root-exploits-in-one-run"
+    ]
+  },
+  {
+    "slug": "banking-malware-reveals-ghostmap-crash-loop-bug-e709ff8f",
+    "title": "Banking Malware Reveals GhostMap Crash Loop Bug",
+    "summary": "Bitdefender Labs found a banking‑related Android app with no executable code or permissions that forces a Pixel 10 into a crash loop, exposing GhostMap. The flaw stems from Android’s ZIP structure handling in APKs, enabling a boot loop without user interaction. Users should apply the latest Android update and vendor patches to eliminate the GhostMap crash loop.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/ghostmap-android-bug-research/",
+    "publishedAt": "2026-11-05T09:00:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "banking-malware-reveals-ghostmap-crash-loop-bug",
+      "article-e709ff8f",
+      "e709ff8f",
+      "banking-malware-reveals-ghostmap-crash-loop-bug-58b902"
+    ]
+  },
+  {
     "slug": "apple-adds-harmful-content-checks-to-icloud-links-ad6ed6bd",
     "title": "Apple Adds Harmful Content Checks to iCloud Links",
     "summary": "Apple will start scanning iCloud content shared via the ‘Anyone with the link’ option for harmful material on iOS, iPadOS, macOS, and visionOS 27.3 or later. If harmful content is detected, Apple may impose account penalties, encouraging users to choose more restrictive sharing settings. Security teams should review sharing policies and ensure compliance with the new content‑review requirements.",
@@ -26,6 +99,25 @@ export const news: NewsBrief[] = [
       "article-ad6ed6bd",
       "ad6ed6bd",
       "apple-adds-harmful-content-checks-to-icloud-links-653df9"
+    ]
+  },
+  {
+    "slug": "hackers-trick-mac-users-into-running-terminal-comm-ef52cbaa",
+    "title": "Hackers Trick Mac Users Into Running Terminal Commands That Install Phexia Password-Stealing Malware",
+    "summary": "A macOS malware family called Phexia is spreading through fake web pages that talk Mac users into pasting a command into Terminal. Once the command runs, the malware quietly settles on the Mac, steals the login password, and copies browser data, keychain files, and password-manager extension data.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-trick-mac-users/",
+    "publishedAt": "2026-11-05T08:31:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-trick-mac-users-into-running-terminal-comm",
+      "article-ef52cbaa",
+      "ef52cbaa",
+      "hackers-trick-mac-users-into-running-terminal-comm-1d91ce",
+      "hackers-trick-mac-users-into-running-terminal-commands-that-"
     ]
   },
   {
@@ -47,6 +139,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-use-fake-government-websites-and-captcha-c-94a2e802",
+    "title": "Hackers Use Fake Government Websites and CAPTCHA Checks to Deliver SimpleHelp Remote Access Software",
+    "summary": "Hackers are impersonating the Israel Tax Authority through phishing emails, fake government websites, and CAPTCHA-style checks to trick employees into running SimpleHelp remote access software. The campaign targets Israeli organizations and turns an ordinary tax-document request into a possible entry point for unauthorized access.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-fake-government-websites/",
+    "publishedAt": "2026-11-05T07:59:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-fake-government-websites-and-captcha-c",
+      "article-94a2e802",
+      "94a2e802",
+      "hackers-use-fake-government-websites-and-captcha-c-6780bb",
+      "hackers-use-fake-government-websites-and-captcha-checks-to-d"
+    ]
+  },
+  {
+    "slug": "2026-log-management-tools-ranked-e76f8aca",
+    "title": "2026 Log Management Tools Ranked",
+    "summary": "The article presents a 2026 ranking of security log management tools, evaluating cost to move, store, and query logs across pipeline brokers and cloud giants. It discusses how vendors optimize different pipeline legs, hot‑architecture engines, and retention bundling, emphasizing query efficiency and cost‑effective data retention. Readers should evaluate scoring criteria and align tool selection with their economic and operational requirements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-security-log-management/",
+    "publishedAt": "2026-11-05T07:14:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-log-management-tools-ranked",
+      "article-e76f8aca",
+      "e76f8aca",
+      "2026-log-management-tools-ranked-3373e2"
+    ]
+  },
+  {
     "slug": "zyxel-gs1900-switches-still-vulnerable-to-zero-day-a9bb101a",
     "title": "Zyxel GS1900 Switches Still Vulnerable to Zero‑Day RCE",
     "summary": "Zyxel GS1900 switches remain vulnerable to a zero‑day exploit bypassing the earlier 2.90 patch, enabling unauthenticated remote command execution via the web interface. The flaw lets attackers run arbitrary commands without login, a high‑severity remote code execution vulnerability; the exploit is active. Zyxel released new firmware for ten GS1900 models that closes the hole; teams should upgrade immediately.",
@@ -63,6 +192,24 @@ export const news: NewsBrief[] = [
       "a9bb101a",
       "zyxel-gs1900-switches-still-vulnerable-to-zero-day-104ccf",
       "zyxel-gs1900-switches-still-vulnerable-to-zero-day-rce"
+    ]
+  },
+  {
+    "slug": "2026-threat-hunting-services-ranked-68702007",
+    "title": "2026 Threat Hunting Services Ranked",
+    "summary": "The article ranks 2026 threat hunting services, evaluating platform-native and estate-attached offerings through detection engineering and hypothesis-driven hunting. It examines market segmentation, cost models, and the trade‑off between telemetry depth and MDR partnerships, highlighting vendor differentiation. Readers should review the scoring methodology and assess economic and operational fit before procurement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-threat-hunting-services/",
+    "publishedAt": "2026-11-05T07:02:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-threat-hunting-services-ranked",
+      "article-68702007",
+      "68702007",
+      "2026-threat-hunting-services-ranked-1a653a"
     ]
   },
   {
@@ -9379,154 +9526,6 @@ export const news: NewsBrief[] = [
       "article-25ad2aab",
       "25ad2aab",
       "red-hat-releases-freerdp-security-update-for-rhel-37d92a"
-    ]
-  },
-  {
-    "slug": "volta-infostealer-leverages-llms-to-rank-victims-e4b8a9a1",
-    "title": "VOLTA Infostealer Leverages LLMs to Rank Victims",
-    "summary": "A new infostealer, VOLTA-AUTODOXER, harvests credentials and browser cookies from Chromium-based browsers, Outlook profiles, and Slack workspaces. The malware employs language models such as Claude, Gemini, and Kimi to evaluate stolen data and prioritize victims by financial value. Security teams should deploy endpoint detection and response solutions, block known VOLTA download domains, and enforce multi‑factor authentication to mitigate credential theft.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
-    "publishedAt": "2026-11-02T05:51:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "volta-infostealer-leverages-llms-to-rank-victims",
-      "article-e4b8a9a1",
-      "e4b8a9a1",
-      "volta-infostealer-leverages-llms-to-rank-victims-271739"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-postgresql-16-security-update-9536fbdb",
-    "title": "Red Hat Releases PostgreSQL 16 Security Update",
-    "summary": "Red Hat released a security update for PostgreSQL 16 on RHEL 9.6 EUS, fixing vulnerabilities that could enable unauthorized data access or denial of service. The advisory cites several CVE identifiers with CVSS scores ranging from moderate to high, yet no exploitation has been reported. Apply the PostgreSQL update promptly and verify database configurations per Red Hat’s security recommendations.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93460",
-    "publishedAt": "2026-11-02T05:33:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-postgresql-16-security-update",
-      "article-9536fbdb",
-      "9536fbdb",
-      "red-hat-releases-postgresql-16-security-update-37d92e"
-    ]
-  },
-  {
-    "slug": "net-8-0-update-addresses-important-security-issue-9930d43d",
-    "title": ".NET 8.0 Update Addresses Important Security Issues",
-    "summary": "Red Hat released a security update for .NET 8.0 on Enterprise Linux 9.6 Extended Update Support to address multiple vulnerabilities. The update is rated Important by Red Hat Product Security, and each vulnerability’s CVSS base score is listed in the references. Administrators should apply the patch immediately, verify the CVSS scores, and monitor for any related exploitation attempts.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93457",
-    "publishedAt": "2026-11-02T05:32:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "net-8-0-update-addresses-important-security-issue",
-      "article-9930d43d",
-      "9930d43d",
-      "net-8-0-update-addresses-important-security-issue-37d92e",
-      "net-8-0-update-addresses-important-security-issues"
-    ]
-  },
-  {
-    "slug": "trust-onion-introduces-rotating-codeword-caller-ve-1370a317",
-    "title": "Trust Onion Introduces Rotating Codeword Caller Verification",
-    "summary": "Trust Onion provides a free app that gives trusted groups three rotating codewords to verify caller identity during voice or text. It also supports signed selfies, message integrity checks, and callback verification, and runs on macOS, iOS, and Android. Users can set rotation schedules and embed the verification into existing communication workflows, boosting trust without extra infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/product-showcase-trust-onion/",
-    "publishedAt": "2026-11-02T05:30:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trust-onion-introduces-rotating-codeword-caller-ve",
-      "article-1370a317",
-      "1370a317",
-      "trust-onion-introduces-rotating-codeword-caller-ve-a9e73d",
-      "trust-onion-introduces-rotating-codeword-caller-verification"
-    ]
-  },
-  {
-    "slug": "nginx-update-fixes-important-security-vulnerabilit-302ab5d8",
-    "title": "nginx Update Fixes Important Security Vulnerabilities",
-    "summary": "Red Hat issued a security update for nginx on Enterprise Linux 9.6 Extended Update Support to remediate several vulnerabilities. The update carries an Important impact rating, and each affected CVE’s CVSS base score is provided in the references section. Operators should install the patch, review the CVSS scores, and ensure nginx is not exposed to untrusted networks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93467",
-    "publishedAt": "2026-11-02T05:30:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nginx-update-fixes-important-security-vulnerabilit",
-      "article-302ab5d8",
-      "302ab5d8",
-      "nginx-update-fixes-important-security-vulnerabilit-37d92e",
-      "nginx-update-fixes-important-security-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-net-9-0-for-rhel-9-6-ed05000d",
-    "title": "Red Hat Updates .NET 9.0 for RHEL 9.6",
-    "summary": "Red Hat released a .NET 9.0 security update for RHEL 9.6 Extended Update Support. The update fixes several vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to address the identified weaknesses, following Red Hat’s installation guidance today.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93459",
-    "publishedAt": "2026-11-02T05:28:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-net-9-0-for-rhel-9-6",
-      "article-ed05000d",
-      "ed05000d",
-      "red-hat-updates-net-9-0-for-rhel-9-6-37d92e"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-9-6-curl-update-addresses-vul-e53c2a3d",
-    "title": "Red Enterprise Linux 9.6 curl Update Addresses Vulnerabilities",
-    "summary": "Red Enterprise Linux 9.6 EUS users receive a curl security update addressing multiple vulnerabilities. The update fixes issues identified by Red Hat Product Security, with CVSS scores listed in the CVE references, indicating moderate to high impact. Apply RHSA-2026:93454 immediately to mitigate the weaknesses and review the CVE links for severity details.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93454",
-    "publishedAt": "2026-11-02T05:15:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-9-6-curl-update-addresses-vul",
-      "article-e53c2a3d",
-      "e53c2a3d",
-      "red-enterprise-linux-9-6-curl-update-addresses-vul-37d92e",
-      "red-enterprise-linux-9-6-curl-update-addresses-vulnerabiliti"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-util-linux-security-update-97de88a9",
-    "title": "Red Hat Issues util-linux Security Update",
-    "summary": "Red Hat released a security update for util‑linux on RHEL 10. The update addresses multiple vulnerabilities with CVSS scores listed in the CVE references, though no CVE IDs are named in the advisory. Apply the update promptly to mitigate the identified weaknesses, following Red Hat’s installation guidance in the vendor documentation today.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93461",
-    "publishedAt": "2026-11-02T05:15:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-util-linux-security-update",
-      "article-97de88a9",
-      "97de88a9",
-      "red-hat-issues-util-linux-security-update-37d92e"
     ]
   }
 ];
