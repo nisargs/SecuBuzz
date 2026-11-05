@@ -2,6 +2,84 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-62300",
+    "slug": "cve-2026-62300",
+    "vendor": "npm",
+    "product": "filecoin-pin",
+    "name": "filecoin-pin: Unbounded DAG pinning can exhaust server resources",
+    "dateAdded": "2026-11-05",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "The IPFS Pinning Service API implementation accepts a caller-controlled CID through POST /pins, queues background processing, and then recursively fetches the full DAG with helia.pins.add(cid). The route and background pinning path do not enforce a request rate limit, per-user quota, maximum DAG byte count, maximum block count, traversal timeout, or concurrent pinning limit.",
+    "requiredAction": "Upgrade filecoin-pin to version 1.1.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m5ph-mmg5-6w5h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62300"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-61536",
+    "slug": "cve-2026-61536",
+    "vendor": "Pip",
+    "product": "banks",
+    "name": "Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE",
+    "dateAdded": "2026-11-05",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "banks parses Tool JSON objects from the rendered body of {% completion %} blocks and later resolves their import_path field through importlib.import_module(...) + getattr(...) to obtain the callable that handles a tool call. There is no allowlist or sanitization on import_path, so any importable Python attribute (e.g. os.system, subprocess.getoutput) can be selected.",
+    "requiredAction": "Upgrade banks to version 2.4.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-64vx-6h2c-rjh7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61536"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-105769",
+    "slug": "cve-2026-105769",
+    "vendor": "Go",
+    "product": "kaniko · chainguard-dev",
+    "name": "kaniko can send the build's Azure (Entra ID) access token to lookalike ACR registry hosts",
+    "dateAdded": "2026-11-05",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-346",
+    "ransomware": false,
+    "description": "kaniko before v1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to a registry host an attacker controls. A Dockerfile that references an image on a lookalike host, such as FROM x.azurecr.io.attacker.com/img, is enough. The build needs no RUN instruction and never has to push.",
+    "requiredAction": "Upgrade kaniko · chainguard-dev to version 1.25.20 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5q7h-w9jf-cx97"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105769"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-12411",
     "slug": "cve-2026-12411",
     "vendor": "Go",
@@ -1303,84 +1381,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119201"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119200",
-    "slug": "cve-2026-119200",
-    "vendor": "npm",
-    "product": "nuxt",
-    "name": "Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-41",
-    "ransomware": false,
-    "description": "Since 4.6.0, Nuxt resolves . and .. segments in the request path, including percent-encoded forms such as %2e, before rendering a page. Nitro's routing, Nitro's route rules and server/middleware see the path with those segments still in place. A request for /%2e/admin therefore renders the page at /admin, while server-side checks keyed on /admin do not apply.",
-    "requiredAction": "Upgrade nuxt to version 4.6.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9v7c-q64q-vv33"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119200"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119198",
-    "slug": "cve-2026-119198",
-    "vendor": "npm",
-    "product": "@nuxt/vite-builder",
-    "name": "Nuxt dev server arbitrary file read through client error reports",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-73",
-    "ransomware": false,
-    "description": "A client that can connect to the dev server's HMR socket can send a nuxt:dev:client-error event whose message ends in an absolute file path. The dev server reads that file while building the error report, and its contents are returned in the error overlay, on the dev error channel, and in the report shown in the terminal.",
-    "requiredAction": "Upgrade @nuxt/vite-builder to version 4.6.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x287-wcfc-q46c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119198"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119199",
-    "slug": "cve-2026-119199",
-    "vendor": "npm",
-    "product": "@nuxt/vite-builder",
-    "name": "Nuxt dev server exposes private runtime config through the Nitro dev bundle",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "With Nitro 2 (the default server engine in Nuxt 3 and Nuxt 4), the Nitro development server bundle written by nuxt dev can be fetched through the Vite dev server. Nitro inlines the resolved runtimeConfig into that bundle, so private runtime config values that were resolved at build time can be read by anyone with HTTP access to the dev server.",
-    "requiredAction": "Upgrade @nuxt/vite-builder to version 4.6.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-648h-gw55-m2g7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119199"
       }
     ],
     "source": "GITHUB"

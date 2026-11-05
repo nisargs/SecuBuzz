@@ -30,6 +30,79 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-launches-on-premises-security-initiative-b73c8f71",
+    "title": "Microsoft Launches On‑Premises Security Initiative",
+    "summary": "Microsoft announces a new on‑premises security initiative to reduce risk across enterprise deployments. The program bundles guidance, migration support, and product investments to strengthen on‑premises defenses against evolving threats. Security teams should review the new guidance, assess current on‑premises assets, and plan migrations accordingly to mitigate emerging vulnerabilities and ensure compliance with industry standards.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/new-investments-to-reduce-on-premises-security-risk/4570381",
+    "publishedAt": "2026-11-05T17:10:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-launches-on-premises-security-initiative",
+      "article-b73c8f71",
+      "b73c8f71",
+      "microsoft-launches-on-premises-security-initiative-7f88cc"
+    ]
+  },
+  {
+    "slug": "cloudflare-addresses-visibility-gap-for-ai-agents-4a5b3646",
+    "title": "Cloudflare Addresses Visibility Gap for AI Agents",
+    "summary": "Cloudflare discusses the challenge of AI agents acting on behalf of users while servers lack visibility into the intermediary traffic. The post outlines a collaborative framework for identifying, allowing, and managing automated traffic to preserve user privacy and security. Adopting this framework requires integrating agent detection mechanisms and establishing clear policies for automated request handling.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/trusted-agent-delegation/",
+    "publishedAt": "2026-11-05T17:03:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-addresses-visibility-gap-for-ai-agents",
+      "article-4a5b3646",
+      "4a5b3646",
+      "cloudflare-addresses-visibility-gap-for-ai-agents-7773e0"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-ai-agent-security-in-november-20-89f230b6",
+    "title": "Microsoft Updates AI Agent Security in November 2026",
+    "summary": "Microsoft Security releases its November 2026 update, focusing on AI agent security, least privilege, threat protection, and exposure management. The update introduces new controls and guidance to reduce attack surface and improve detection of anomalous agent behavior. Security teams should review the new documentation and apply the updated least‑privilege policies and exposure controls.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
+    "publishedAt": "2026-11-05T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-ai-agent-security-in-november-20",
+      "article-89f230b6",
+      "89f230b6",
+      "microsoft-updates-ai-agent-security-in-november-20-27e9d3",
+      "microsoft-updates-ai-agent-security-in-november-2026"
+    ]
+  },
+  {
+    "slug": "openmatter-promotes-decentralized-ai-computing-f2b79906",
+    "title": "OpenMatter Promotes Decentralized AI Computing",
+    "summary": "OpenMatter Network announces its decentralized computing platform as an alternative to traditional data centers for AI workloads. The company claims the distributed infrastructure can support continued AI adoption while addressing public opposition to large centralized facilities. Stakeholders should evaluate the platform’s scalability, security model, and integration requirements before adopting it for AI projects.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openmatter-network-positions-decentralized-computing-as-an-alternative-to-data-centers-for-ai/",
+    "publishedAt": "2026-11-05T16:56:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openmatter-promotes-decentralized-ai-computing",
+      "article-f2b79906",
+      "f2b79906",
+      "openmatter-promotes-decentralized-ai-computing-38c335"
+    ]
+  },
+  {
     "slug": "cve-2026-119083-gluonts-arbitrary-file-write-durin-fa2b9750",
     "title": "CVE-2026-119083 - GluonTS arbitrary file write during archive extraction",
     "summary": "Bulletin ID: 2026-171-AWS Publication Date: 11/05/2026 08:30 AM PST Description: GluonTS is an open-source Python library for probabilistic time series modeling. We identified CVE-2026-119083, an issue in the archive extraction utility in GluonTS before 0.17.0.",
@@ -85,6 +158,25 @@ export const news: NewsBrief[] = [
       "28f4b248",
       "digicert-breach-exposes-customer-data-and-id-docum-12d7e3",
       "digicert-breach-exposes-customer-data-and-id-documents"
+    ]
+  },
+  {
+    "slug": "ghostmap-android-flaw-can-trap-phones-in-endless-r-f3601b18",
+    "title": "GhostMap Android Flaw Can Trap Phones in Endless Reboot Loops Without Opening an App",
+    "summary": "A new Android bug named GhostMap can leave a phone stuck in a crash loop after a user installs a single crafted app. The app does not need to be opened, asks for no permissions, and contains no code. Researchers at Bitdefender Labs published the findings on November 5, 2026.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ghostmap-android-vulnerability/",
+    "publishedAt": "2026-11-05T16:11:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostmap-android-flaw-can-trap-phones-in-endless-r",
+      "article-f3601b18",
+      "f3601b18",
+      "ghostmap-android-flaw-can-trap-phones-in-endless-r-199df3",
+      "ghostmap-android-flaw-can-trap-phones-in-endless-reboot-loop"
     ]
   },
   {
@@ -239,24 +331,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "openssh-flaw-lets-attackers-bypass-alpine-password-ab57cf12",
-    "title": "OpenSSH flaw lets attackers bypass Alpine password authentication",
-    "summary": "A OpenSSH vulnerability, CVE-2026-116606, enables remote attackers to bypass password authentication on Alpine Linux servers using musl libc without PAM. The flaw permits attackers to gain unauthorized access to accounts intended for key-only use, potentially escalating privileges or executing arbitrary commands. OpenSSH released Portable 10.6p2 on November 5, 2026, patching the issue; users should upgrade immediately to mitigate the risk.",
+    "slug": "openssh-vulnerability-allows-bypass-of-alpine-linu-94d225a8",
+    "title": "OpenSSH Vulnerability Allows Bypass of Alpine Linux Password Authentication",
+    "summary": "An OpenSSH vulnerability (CVE‑2026‑116606) exposed Alpine Linux servers to unauthorized logins by bypassing password authentication. The flaw permits attackers to use oversized passwords to gain key‑only account access, enabling privilege escalation or arbitrary command execution. OpenSSH released Portable 10.6p2 on November 5, 2026; administrators should upgrade immediately to mitigate the risk.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/openssh-flaw-bypass-password-authentication/",
     "publishedAt": "2026-11-05T14:58:40.000Z",
-    "cves": [
-      "CVE-2026-116606"
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/"
+      }
     ],
-    "additionalSources": [],
     "aliases": [
-      "openssh-flaw-lets-attackers-bypass-alpine-password",
-      "article-ab57cf12",
-      "ab57cf12",
-      "openssh-flaw-lets-attackers-bypass-alpine-password-38b84f",
-      "openssh-flaw-lets-attackers-bypass-alpine-password-authentic"
+      "openssh-vulnerability-allows-bypass-of-alpine-linu",
+      "article-94d225a8",
+      "94d225a8",
+      "openssh-vulnerability-allows-bypass-of-alpine-linu-38b84f",
+      "openssh-vulnerability-allows-bypass-of-alpine-linux-password"
     ]
   },
   {
@@ -9453,99 +9548,6 @@ export const news: NewsBrief[] = [
       "8dc7783a",
       "florida-student-aid-site-breach-exposes-4-9-millio-6ea42e",
       "florida-student-aid-site-breach-exposes-4-9-million-ssns"
-    ]
-  },
-  {
-    "slug": "apple-issues-global-spyware-warning-d2c05b97",
-    "title": "Apple Issues Global Spyware Warning",
-    "summary": "Apple notified users in 99 countries about the presence of mercenary spyware targeting their devices. The company emphasized the spyware’s extreme cost, sophistication, and worldwide reach, labeling it among the most advanced digital threats. Apple recommends users update to the latest iOS, install security patches, and monitor for unusual device activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/apple-warns-users-99-countries-mercenary-spyware",
-    "publishedAt": "2026-11-02T14:42:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-issues-global-spyware-warning",
-      "article-d2c05b97",
-      "d2c05b97",
-      "apple-issues-global-spyware-warning-18bc05"
-    ]
-  },
-  {
-    "slug": "hackers-hijack-emergency-apps-with-fake-nuclear-al-70d679f8",
-    "title": "Hackers Hijack Emergency Apps with Fake Nuclear Alerts",
-    "summary": "Russian and Ukrainian hacking groups compromised popular air raid alert systems, injecting false nuclear attack warnings into the apps. The attacks exploited vulnerabilities in the apps’ authentication and update mechanisms, enabling attackers to push malicious payloads without user interaction. Security teams should harden authentication, verify update sources, and monitor for anomalous notifications to mitigate the sabotage.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ukraine-hackers-russia-alert-system",
-    "publishedAt": "2026-11-02T14:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-hijack-emergency-apps-with-fake-nuclear-al",
-      "article-70d679f8",
-      "70d679f8",
-      "hackers-hijack-emergency-apps-with-fake-nuclear-al-94cca2",
-      "hackers-hijack-emergency-apps-with-fake-nuclear-alerts"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-92363-important-firefox-security-update-1991f863",
-    "title": "RHSA-2026:92363: Important: firefox security update",
-    "summary": "An update for firefox is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92363",
-    "publishedAt": "2026-11-02T14:28:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-92363-important-firefox-security-update",
-      "article-1991f863",
-      "1991f863",
-      "rhsa-2026-92363-important-firefox-security-update-37d9a6"
-    ]
-  },
-  {
-    "slug": "hackers-alter-supermarket-refrigeration-temperatur-5ff3d83b",
-    "title": "Hackers alter supermarket refrigeration temperatures remotely",
-    "summary": "Hackers remotely altered temperature settings on refrigeration units in multiple European supermarket chains, disrupting cold storage operations. The attack exploited a misconfiguration in the refrigeration control software, allowing unauthorized remote command execution without authentication. Supermarket operators should update firmware to the latest vendor release and enforce network segmentation to prevent similar remote manipulation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
-    "publishedAt": "2026-11-02T14:28:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-alter-supermarket-refrigeration-temperatur",
-      "article-5ff3d83b",
-      "5ff3d83b",
-      "hackers-alter-supermarket-refrigeration-temperatur-1a1aa9",
-      "hackers-alter-supermarket-refrigeration-temperatures-remotel"
-    ]
-  },
-  {
-    "slug": "european-supermarkets-hit-by-refrigeration-unit-at-28d75eb9",
-    "title": "European Supermarkets Hit by Refrigeration Unit Attacks",
-    "summary": "Attackers remotely reconfigured refrigeration units in Belgian, Luxembourg, and Swedish supermarkets, switching evaporators to defrost mode. The exploit leveraged a flaw in the units’ firmware that allowed unauthorized remote command execution, causing food spoilage. Manufacturers have released firmware updates, and supermarkets should apply patches, isolate affected devices, and monitor for anomalous control traffic.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/",
-    "publishedAt": "2026-11-02T14:28:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "european-supermarkets-hit-by-refrigeration-unit-at",
-      "article-28d75eb9",
-      "28d75eb9",
-      "european-supermarkets-hit-by-refrigeration-unit-at-131e6a",
-      "european-supermarkets-hit-by-refrigeration-unit-attacks"
     ]
   }
 ];
