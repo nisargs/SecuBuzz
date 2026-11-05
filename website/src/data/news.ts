@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "vercel-introduces-device-bound-sessions-ai-review-dbab40b9",
+    "title": "Vercel Introduces Device‑Bound Sessions, AI Review Beta",
+    "summary": "Vercel rolls out Device Bound Session Credentials (DBSC) to tie login sessions to specific devices, rendering stolen session cookies ineffective. The feature limits infostealer impact by preventing session hijacking, while a public beta AI Security Review scans code for vulnerabilities. Security teams should enable DBSC and join the beta to leverage automated threat detection, following Vercel’s integration guidance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking/",
+    "publishedAt": "2026-11-05T14:37:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vercel-introduces-device-bound-sessions-ai-review",
+      "article-dbab40b9",
+      "dbab40b9",
+      "vercel-introduces-device-bound-sessions-ai-review-22edc5",
+      "vercel-introduces-device-bound-sessions-ai-review-beta"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-cockpit-files-on-enterprise-linux-cbe3730a",
+    "title": "Red Hat Updates Cockpit‑Files on Enterprise Linux 10",
+    "summary": "Red Hat issued a cockpit‑files update for Enterprise Linux 10 to fix vulnerabilities that could enable unauthorized web console access. The advisory labels the issues as Moderate, with CVSS scores linked via CVE references, and no active exploitation is known. Users should install the latest cockpit‑files package immediately to prevent potential privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95570",
+    "publishedAt": "2026-11-05T14:28:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-cockpit-files-on-enterprise-linux",
+      "article-cbe3730a",
+      "cbe3730a",
+      "red-hat-updates-cockpit-files-on-enterprise-linux-37d841",
+      "red-hat-updates-cockpit-files-on-enterprise-linux-10"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-rsyslog-update-for-rhel-8-4-67d10994",
+    "title": "Red Hat Issues rsyslog Update for RHEL 8.4",
+    "summary": "Red Hat released a rsyslog update for RHEL 8.4 and RHEL 8.4 ELS, addressing vulnerabilities that could lead to remote code execution. The advisory rates the issues as Important, with CVSS scores provided via CVE links, and no active exploitation has been reported. Administrators should apply the rsyslog update immediately and verify the package version to mitigate potential RCE.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95573",
+    "publishedAt": "2026-11-05T14:26:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-rsyslog-update-for-rhel-8-4",
+      "article-67d10994",
+      "67d10994",
+      "red-hat-issues-rsyslog-update-for-rhel-8-4-37d841"
+    ]
+  },
+  {
+    "slug": "chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-eb304005",
+    "title": "ChatGPT Runtime Flaw Enables Silent DNS Exfiltration",
+    "summary": "Check Point Research identified a flaw in ChatGPT’s runtime that let attackers exfiltrate conversation data silently via DNS tunneling, bypassing network isolation. The vulnerability enables covert data leakage without triggering runtime controls, and a patch was issued immediately after discovery. Users should upgrade to the latest ChatGPT release and monitor DNS traffic for anomalies to mitigate exfiltration.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/",
+    "publishedAt": "2026-11-05T14:00:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chatgpt-runtime-flaw-enables-silent-dns-exfiltrati",
+      "article-eb304005",
+      "eb304005",
+      "chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-53a74d",
+      "chatgpt-runtime-flaw-enables-silent-dns-exfiltration"
+    ]
+  },
+  {
     "slug": "red-hat-issues-ruby-2-5-security-update-2f0dc9c6",
     "title": "Red Hat Issues Ruby 2.5 Security Update",
     "summary": "Red Hat released a security update for the ruby:2.5 module on RHEL 8.8 Update Services for SAP Solutions and the RHEL 8.8 Telecommunications Update Service. The update addresses multiple vulnerabilities rated as Important, with CVSS base scores provided via the referenced CVE links. Customers should apply the patch immediately to mitigate potential exploitation of the identified weaknesses.",
@@ -44,6 +119,25 @@ export const news: NewsBrief[] = [
       "article-1f136c80",
       "1f136c80",
       "red-hat-updates-postgresql16-pgvector-37d842"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95520-critical-webkit2gtk3-security-bug-050c3e95",
+    "title": "RHSA-2026:95520: Critical: webkit2gtk3 security, bug fix, and enhancement update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95520",
+    "publishedAt": "2026-11-05T12:51:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95520-critical-webkit2gtk3-security-bug",
+      "article-050c3e95",
+      "050c3e95",
+      "rhsa-2026-95520-critical-webkit2gtk3-security-bug-37d842",
+      "rhsa-2026-95520-critical-webkit2gtk3-security-bug-fix-and-en"
     ]
   },
   {
@@ -172,6 +266,24 @@ export const news: NewsBrief[] = [
       "article-70e4ec9c",
       "70e4ec9c",
       "rhsa-2026-95505-important-resteasy-security-update-37d842"
+    ]
+  },
+  {
+    "slug": "post-quantum-questions-to-ask-your-vendors-56956716",
+    "title": "Post-Quantum Questions to Ask Your Vendors",
+    "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). Visit CISA’s PQC Initiative page for additional resources.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+    "publishedAt": "2026-11-05T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "post-quantum-questions-to-ask-your-vendors",
+      "article-56956716",
+      "56956716",
+      "post-quantum-questions-to-ask-your-vendors-3f4113"
     ]
   },
   {
@@ -9422,117 +9534,6 @@ export const news: NewsBrief[] = [
       "9b10c473",
       "hackers-exploit-patched-synology-nas-vulnerabiliti-031e24",
       "hackers-exploit-patched-synology-nas-vulnerabilities-to-depl"
-    ]
-  },
-  {
-    "slug": "chainalysis-breach-via-offensive-agentic-technique-946c8397",
-    "title": "Chainalysis Breach via Offensive Agentic Techniques",
-    "summary": "Chainalysis experienced a security incident where external attackers employed offensive agentic techniques to access internal systems and tools. IBM reported no evidence of unauthorized data exfiltration or compromise of investigative data, though the breach exposed internal infrastructure. The company is investigating the incident and has implemented additional monitoring and access controls to prevent future intrusions.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/chainalysis-breached-using-offensive-agentic-techniques/",
-    "publishedAt": "2026-11-02T11:40:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chainalysis-breach-via-offensive-agentic-technique",
-      "article-946c8397",
-      "946c8397",
-      "chainalysis-breach-via-offensive-agentic-technique-cb35db",
-      "chainalysis-breach-via-offensive-agentic-techniques"
-    ]
-  },
-  {
-    "slug": "phishers-mimic-openai-to-steal-cards-and-otps-5944ec10",
-    "title": "Phishers mimic OpenAI to steal cards and OTPs",
-    "summary": "Phishers impersonated OpenAI in billing emails, directing victims to payment pages that harvest credit card details and one‑time passwords. The campaign combines convincing subscription warnings with a live operator who can request a verification code, enabling unauthorized payment approval. Security teams should block the sender domain, educate users on legitimate OpenAI communications, and enforce multi‑factor authentication for payment portals.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-billing-notices/",
-    "publishedAt": "2026-11-02T11:31:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishers-mimic-openai-to-steal-cards-and-otps",
-      "article-5944ec10",
-      "5944ec10",
-      "phishers-mimic-openai-to-steal-cards-and-otps-72758e"
-    ]
-  },
-  {
-    "slug": "prophet-security-survey-evaluates-soc-ai-adoption-c9669de4",
-    "title": "Prophet Security Survey Evaluates SOC AI Adoption Trends",
-    "summary": "Prophet Security published its State of AI in Security Operations 2026 survey of over 250 security leaders and practitioners. The report reveals that 40 percent of security teams deploy AI daily, 56 percent are testing implementation, and only 4 percent lack adoption plans. Security operations centers must evaluate structural readiness and operational maturity before deploying AI agents across workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
-    "publishedAt": "2026-11-02T11:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "prophet-security-survey-evaluates-soc-ai-adoption",
-      "article-c9669de4",
-      "c9669de4",
-      "prophet-security-survey-evaluates-soc-ai-adoption-7be76b",
-      "prophet-security-survey-evaluates-soc-ai-adoption-trends"
-    ]
-  },
-  {
-    "slug": "synology-alerts-on-c3rb3r-ransomware-attacks-d3641584",
-    "title": "Synology Alerts on C3RB3R Ransomware Attacks",
-    "summary": "Synology warned customers of a surge in C3RB3R ransomware attacks on its NAS devices. The malware encrypts stored data and demands payment, exploiting unpatched firmware vulnerabilities without a cited CVE. Synology urges immediate firmware updates, disabling remote management, and backing up data to mitigate the threat and monitoring for unauthorized access.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
-    "publishedAt": "2026-11-02T11:28:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "synology-alerts-on-c3rb3r-ransomware-attacks",
-      "article-d3641584",
-      "d3641584",
-      "synology-alerts-on-c3rb3r-ransomware-attacks-755df0"
-    ]
-  },
-  {
-    "slug": "threat-actors-impersonate-it-support-on-microsoft-052d7de6",
-    "title": "Threat Actors Impersonate IT Support on Microsoft Teams",
-    "summary": "Threat actors impersonated IT support personnel on Microsoft Teams to trick employees into granting remote access to corporate workstations. Attackers exploited misconfigured Active Directory Certificate Services settings to mint authentication certificates for privileged accounts, including a domain controller, resulting in data theft. Organizations should restrict certificate templates, enforce strict social engineering defenses, and audit Active Directory Certificate Services misconfigurations.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
-    "publishedAt": "2026-11-02T11:08:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threat-actors-impersonate-it-support-on-microsoft",
-      "article-052d7de6",
-      "052d7de6",
-      "threat-actors-impersonate-it-support-on-microsoft-7ecd75",
-      "threat-actors-impersonate-it-support-on-microsoft-teams"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93592-important-freerdp-security-update-4c834942",
-    "title": "RHSA-2026:93592: Important: freerdp security update",
-    "summary": "An update for freerdp is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93592",
-    "publishedAt": "2026-11-02T11:03:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93592-important-freerdp-security-update",
-      "article-4c834942",
-      "4c834942",
-      "rhsa-2026-93592-important-freerdp-security-update-37d92a"
     ]
   }
 ];

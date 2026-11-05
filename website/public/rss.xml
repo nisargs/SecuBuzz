@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 13:45:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 14:45:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Vercel Introduces Device‑Bound Sessions, AI Review Beta</title>
+      <link>https://secubuzz.com/news/vercel-introduces-device-bound-sessions-ai-review-dbab40b9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vercel-introduces-device-bound-sessions-ai-review-dbab40b9</guid>
+      <description><![CDATA[Vercel rolls out Device Bound Session Credentials (DBSC) to tie login sessions to specific devices, rendering stolen session cookies ineffective. The feature limits infostealer impact by preventing session hijacking, while a public beta AI Security Review scans code for vulnerabilities. Security teams should enable DBSC and join the beta to leverage automated threat detection, following Vercel’s integration guidance.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:37:00 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Updates Cockpit‑Files on Enterprise Linux 10</title>
+      <link>https://secubuzz.com/news/red-hat-updates-cockpit-files-on-enterprise-linux-cbe3730a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-cockpit-files-on-enterprise-linux-cbe3730a</guid>
+      <description><![CDATA[Red Hat issued a cockpit‑files update for Enterprise Linux 10 to fix vulnerabilities that could enable unauthorized web console access. The advisory labels the issues as Moderate, with CVSS scores linked via CVE references, and no active exploitation is known. Users should install the latest cockpit‑files package immediately to prevent potential privilege escalation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:28:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95570">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues rsyslog Update for RHEL 8.4</title>
+      <link>https://secubuzz.com/news/red-hat-issues-rsyslog-update-for-rhel-8-4-67d10994</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-rsyslog-update-for-rhel-8-4-67d10994</guid>
+      <description><![CDATA[Red Hat released a rsyslog update for RHEL 8.4 and RHEL 8.4 ELS, addressing vulnerabilities that could lead to remote code execution. The advisory rates the issues as Important, with CVSS scores provided via CVE links, and no active exploitation has been reported. Administrators should apply the rsyslog update immediately and verify the package version to mitigate potential RCE.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:26:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95573">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ChatGPT Runtime Flaw Enables Silent DNS Exfiltration</title>
+      <link>https://secubuzz.com/news/chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-eb304005</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-eb304005</guid>
+      <description><![CDATA[Check Point Research identified a flaw in ChatGPT’s runtime that let attackers exfiltrate conversation data silently via DNS tunneling, bypassing network isolation. The vulnerability enables covert data leakage without triggering runtime controls, and a patch was issued immediately after discovery. Users should upgrade to the latest ChatGPT release and monitor DNS traffic for anomalies to mitigate exfiltration.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:00:11 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/">Check Point Research</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Issues Ruby 2.5 Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-ruby-2-5-security-update-2f0dc9c6</link>
@@ -23,6 +59,15 @@
       <description><![CDATA[Red Hat released a security update for the postgresql16-pgvector module on RHEL 10.0 Extended Update Support, addressing critical issues. The update fixes multiple vulnerabilities rated as Important, with CVSS base scores available through the referenced CVE links. Systems should apply the patch promptly to prevent exploitation of the identified weaknesses.]]></description>
       <pubDate>Thu, 05 Nov 2026 12:52:00 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95521">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95520: Critical: webkit2gtk3 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95520-critical-webkit2gtk3-security-bug-050c3e95</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95520-critical-webkit2gtk3-security-bug-050c3e95</guid>
+      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:51:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95520">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -87,6 +132,15 @@
       <pubDate>Thu, 05 Nov 2026 12:03:47 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95505">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Post-Quantum Questions to Ask Your Vendors</title>
+      <link>https://secubuzz.com/news/post-quantum-questions-to-ask-your-vendors-56956716</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/post-quantum-questions-to-ask-your-vendors-56956716</guid>
+      <description><![CDATA[CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). Visit CISA’s PQC Initiative page for additional resources.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors">CISA</source>
+      <category>General</category>
     </item>
     <item>
       <title>Scammers Exploit GTA 6 Hype for Malware Crypto Scams</title>
@@ -402,60 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 05:30:14 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/05/dnsfilter-shadow-ai-cost-report/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Consumers Unwilling to Let AI Agents Shop Unsupervised</title>
-      <link>https://secubuzz.com/news/consumers-unwilling-to-let-ai-agents-shop-unsuperv-fcd1538d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/consumers-unwilling-to-let-ai-agents-shop-unsuperv-fcd1538d</guid>
-      <description><![CDATA[Okta’s 2026 Customer Identity Trends Report indicates that most consumers are reluctant to allow AI agents to make purchases without supervision. The study attributes hesitation to the scope of agent capabilities, potential mistakes, and the lack of easy approval or reversal mechanisms. Businesses must implement stringent agent verification and permission controls to meet evolving consumer expectations and regulatory demands.]]></description>
-      <pubDate>Thu, 05 Nov 2026 05:00:30 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/okta-ai-customer-experiences-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>White House Staff Use Proxies Exposing IPs for Rent</title>
-      <link>https://secubuzz.com/news/white-house-staff-use-proxies-exposing-ips-for-ren-1fca82b0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/white-house-staff-use-proxies-exposing-ips-for-ren-1fca82b0</guid>
-      <description><![CDATA[White House staff are reportedly using proxy services that expose their device IP addresses, allowing third parties to rent them. One service is operated by a Russian company whose founder’s hosting business was a target of 2016 election system attacks in Arizona and Illinois. Security teams should audit device configurations, disable proxy usage, and enforce network segmentation to mitigate exposure.]]></description>
-      <pubDate>Thu, 05 Nov 2026 04:36:17 GMT</pubDate>
-      <source url="https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/">Krebs on Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical WebKit2GTK3 Update for RHEL 8.4</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-webkit2gtk3-update-for-rhe-c187f2f4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-webkit2gtk3-update-for-rhe-c187f2f4</guid>
-      <description><![CDATA[Red Hat released a critical security update for webkit2gtk3 on Red Hat Enterprise Linux 8.4, addressing multiple high‑impact vulnerabilities. The advisory assigns a Critical impact rating, with CVSS base scores linked via CVE references, underscoring the severity of the flaws. Affected customers should apply the update immediately to patch the webkit2gtk3 component and prevent exploitation.]]></description>
-      <pubDate>Thu, 05 Nov 2026 03:06:18 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95403">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenAI Pipeline Uncovers 948 Linux Kernel Privilege Escalation Flaws</title>
-      <link>https://secubuzz.com/news/openai-pipeline-uncovers-948-linux-kernel-privileg-efcb72f4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-pipeline-uncovers-948-linux-kernel-privileg-efcb72f4</guid>
-      <description><![CDATA[OpenAI's automated pipeline discovered 948 Linux kernel local privilege escalation vulnerabilities during a 30-hour analysis in October 2026. The flaws stem from missing privilege checks, allowing local users to achieve root-level code execution across numerous kernel versions. Vendors including Red Hat must urgently patch affected kernels while organizations should immediately apply latest stable releases and monitor security advisories.]]></description>
-      <pubDate>Thu, 05 Nov 2026 02:42:57 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/openai-uncovers-948-linux-kernel-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Security Update for RHEL 9</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-9-6461df30</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-9-6461df30</guid>
-      <description><![CDATA[Red Hat issued a kernel security update for Red Hat Enterprise Linux 9, addressing multiple vulnerabilities. The advisory rates the update as Important, with CVSS base scores available via referenced CVE links, indicating significant impact. Customers should apply the update promptly to mitigate the identified kernel flaws and maintain system integrity.]]></description>
-      <pubDate>Thu, 05 Nov 2026 02:18:17 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95370">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases pcre2 Security Patch</title>
-      <link>https://secubuzz.com/news/red-hat-releases-pcre2-security-patch-9e9fa5fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-pcre2-security-patch-9e9fa5fb</guid>
-      <description><![CDATA[Red Hat released a pcre2 update for RHEL 7 ELS to fix multiple security vulnerabilities. The vulnerabilities, referenced by CVE identifiers, are rated Important, suggesting a moderate to high exploitation risk. The patch is available via the RHEL 7 ELS update channel; administrators should install it and verify system integrity after installation.]]></description>
-      <pubDate>Thu, 05 Nov 2026 01:45:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95371">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
