@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 15:37:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 16:45:38 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CWP Web Server Trojan Enables Linux Backdoors</title>
+      <link>https://secubuzz.com/news/cwp-web-server-trojan-enables-linux-backdoors-96a43958</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cwp-web-server-trojan-enables-linux-backdoors-96a43958</guid>
+      <description><![CDATA[A trojanized Control Web Panel (CWP) web server, cwpsrv, installs the CWPdoor malware on Linux servers. The trojan exploits a flaw in CWP’s authentication, granting attackers privileged access and a persistent backdoor. Update CWP to the latest release, remove unauthorized cwpsrv binaries, and regularly monitor for anomalous outbound traffic daily.]]></description>
+      <pubDate>Thu, 05 Nov 2026 16:24:26 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>DigiCert Breach Exposes Customer Data and ID Documents</title>
+      <link>https://secubuzz.com/news/digicert-breach-exposes-customer-data-and-id-docum-28f4b248</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/digicert-breach-exposes-customer-data-and-id-docum-28f4b248</guid>
+      <description><![CDATA[During a server migration, DigiCert unintentionally exposed an internal business system to the internet, enabling unauthorized access to customer information and identity documents. The misconfiguration allowed attackers to retrieve sensitive data, including personal identifiers and certificates, potentially facilitating credential theft and fraud. DigiCert notified affected customers, is conducting a forensic investigation, and will enforce stricter access controls and monitoring.]]></description>
+      <pubDate>Thu, 05 Nov 2026 16:12:46 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Q3 2026 Email Threat Landscape Trends</title>
+      <link>https://secubuzz.com/news/q3-2026-email-threat-landscape-trends-b12b02eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/q3-2026-email-threat-landscape-trends-b12b02eb</guid>
+      <description><![CDATA[Microsoft Threat Intelligence observed a sharp rise in email-based phishing activity at the end of Q3 2026, while QR code phishing declined and CAPTCHA-gated phishing recovered. Messages spoofing familiar business-service sender domains exposed risks associated with security override configurations. These trends indicate evolving adversary tactics targeting enterprise email environments.]]></description>
+      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/">Microsoft Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Python36 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-python36-security-update-c989fdea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-python36-security-update-c989fdea</guid>
+      <description><![CDATA[Red Hat issued an important security update for the python36:3.6 module on RHEL 8.4 Advanced Mission Critical and Extended Update Support Long‑Life Add‑On releases. The update addresses multiple vulnerabilities that could allow remote code execution or privilege escalation, with CVSS scores detailed in the referenced CVE links. Users should apply the python36:3.6 update immediately to mitigate exploitation risk.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:46:15 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95583">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Python 3.6 module receives important security update</title>
+      <link>https://secubuzz.com/news/python-3-6-module-receives-important-security-upda-309a86ca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/python-3-6-module-receives-important-security-upda-309a86ca</guid>
+      <description><![CDATA[Red Hat released a security update for the python36:3.6 module on RHEL 8.6, addressing multiple vulnerabilities rated as Important. The update mitigates flaws that could allow attackers to gain elevated privileges or execute arbitrary code via the Python interpreter. Red Hat recommends applying the update immediately to secure affected systems.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:32:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95580">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)</title>
       <link>https://secubuzz.com/news/vulnerability-scans-for-older-cisco-ios-vulnerabil-cbd5a20c</link>
@@ -44,6 +89,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Sogou Input Method used to install DarkVigil backdoor</title>
+      <link>https://secubuzz.com/news/sogou-input-method-used-to-install-darkvigil-backd-03ba4110</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sogou-input-method-used-to-install-darkvigil-backd-03ba4110</guid>
+      <description><![CDATA[A hacking group, SlippyNunchucks, has weaponized the Sogou Input Method keyboard software to install the DarkVigil backdoor on Windows machines. The campaign, since July 1, 2026, targets users across Hong Kong, Thailand, Japan, Vietnam, and Sri Lanka, enabling espionage and data exfiltration. Security teams should block Sogou Input Method distribution, remove DarkVigil binaries, and monitor for movement or credential theft.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:59:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/chinese-keyboard-software/">Cyber Security News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>OpenSSH flaw lets attackers bypass Alpine password authentication</title>
+      <link>https://secubuzz.com/news/openssh-flaw-lets-attackers-bypass-alpine-password-ab57cf12</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssh-flaw-lets-attackers-bypass-alpine-password-ab57cf12</guid>
+      <description><![CDATA[A OpenSSH vulnerability, CVE-2026-116606, enables remote attackers to bypass password authentication on Alpine Linux servers using musl libc without PAM. The flaw permits attackers to gain unauthorized access to accounts intended for key-only use, potentially escalating privileges or executing arbitrary commands. OpenSSH released Portable 10.6p2 on November 5, 2026, patching the issue; users should upgrade immediately to mitigate the risk.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:58:40 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openssh-flaw-bypass-password-authentication/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Rubrik Introduces Immutable NAS Backup Vaults</title>
       <link>https://secubuzz.com/news/rubrik-introduces-immutable-nas-backup-vaults-af58dea6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rubrik-introduces-immutable-nas-backup-vaults-af58dea6</guid>
@@ -62,12 +125,30 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Ubuntu patches multiple nginx vulnerabilities</title>
+      <link>https://secubuzz.com/news/ubuntu-patches-multiple-nginx-vulnerabilities-586a9b88</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-multiple-nginx-vulnerabilities-586a9b88</guid>
+      <description><![CDATA[Ubuntu released USN-8955-2 to address two nginx vulnerabilities, CVE-2026-42533 and CVE-2026-15176, affecting releases from 14.04 to 26.10. The flaws stem from improper handling of map directives and alias rewrite rules, allowing attackers to crash nginx or potentially execute arbitrary code. Users should apply the update immediately to prevent denial-of-service incidents or code execution exploits.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:40:26 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8955-2">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Vercel Introduces Device‑Bound Sessions, AI Review Beta</title>
       <link>https://secubuzz.com/news/vercel-introduces-device-bound-sessions-ai-review-dbab40b9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vercel-introduces-device-bound-sessions-ai-review-dbab40b9</guid>
       <description><![CDATA[Vercel rolls out Device Bound Session Credentials (DBSC) to tie login sessions to specific devices, rendering stolen session cookies ineffective. The feature limits infostealer impact by preventing session hijacking, while a public beta AI Security Review scans code for vulnerabilities. Security teams should enable DBSC and join the beta to leverage automated threat detection, following Vercel’s integration guidance.]]></description>
       <pubDate>Thu, 05 Nov 2026 14:37:00 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Arkose Labs Expands Agent Trust Manager Controls</title>
+      <link>https://secubuzz.com/news/arkose-labs-expands-agent-trust-manager-controls-b5226a46</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arkose-labs-expands-agent-trust-manager-controls-b5226a46</guid>
+      <description><![CDATA[Arkose Labs expanded its Agent Trust Manager to help businesses classify agentic traffic sessions and enforce allow, monitor, or block policies across customer journeys. The expansion addresses findings from its State of Agentic AI Trust Q3 report showing personal AI agents identify themselves less than 3% of the time. Organizations need enhanced controls to govern unrecognized agent traffic.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:33:02 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/arkose-agent-trust-manager/">Help Net Security</source>
       <category>General</category>
     </item>
     <item>
@@ -98,6 +179,33 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>PortSwigger Burp AT Enables Enterprise Pentest Delegation</title>
+      <link>https://secubuzz.com/news/portswigger-burp-at-enables-enterprise-pentest-del-69f679d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/portswigger-burp-at-enables-enterprise-pentest-del-69f679d8</guid>
+      <description><![CDATA[PortSwigger released Burp AT for enterprises, an agentic pentesting solution that lets security teams delegate application investigations to autonomous agents. The platform combines specialist Burp tools with purpose-built pentesting skills and relevant application context to plan testing approaches and adapt dynamically. This is a vendor product announcement classified as GENERAL with LOW severity.]]></description>
+      <pubDate>Thu, 05 Nov 2026 13:48:16 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/portswigger-burp-at-enterprises/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>White House Network IP Rented via 28 Residential Proxy Services</title>
+      <link>https://secubuzz.com/news/white-house-network-ip-rented-via-28-residential-p-9c22cc98</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/white-house-network-ip-rented-via-28-residential-p-9c22cc98</guid>
+      <description><![CDATA[Researchers at Layer3 Intel discovered that 28 residential proxy services were renting IP addresses from the White House network between October 5 and November 3, 2026. Anyone could route web traffic through these proxies at minimal cost, exposing infrastructure details. This is an infrastructure exposure classified as BREACH with MEDIUM severity.]]></description>
+      <pubDate>Thu, 05 Nov 2026 13:31:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/white-house-network-ip-for-rent/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Sysdig AI Defense Enforces Runtime Guardrails on AI Agents</title>
+      <link>https://secubuzz.com/news/sysdig-ai-defense-enforces-runtime-guardrails-on-a-02b14aec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sysdig-ai-defense-enforces-runtime-guardrails-on-a-02b14aec</guid>
+      <description><![CDATA[Sysdig announced general availability of Sysdig AI Defense, a platform that monitors and controls AI agent activity across endpoints and cloud environments by checking actions against company policies. The solution allows, holds for approval, or blocks agent actions before completion while recording all activity for investigations and audits. This is a vendor product release classified as GENERAL with LOW severity.]]></description>
+      <pubDate>Thu, 05 Nov 2026 13:29:28 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/sysdig-ai-defense/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Phishing Sites Use Fake Suspended Pages to Evade Takedowns</title>
       <link>https://secubuzz.com/news/phishing-sites-use-fake-suspended-pages-to-evade-t-3068a5ff</link>
       <guid isPermaLink="true">https://secubuzz.com/news/phishing-sites-use-fake-suspended-pages-to-evade-t-3068a5ff</guid>
@@ -105,6 +213,24 @@
       <pubDate>Thu, 05 Nov 2026 13:22:12 GMT</pubDate>
       <source url="https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/">SecurityWeek</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>ARTEX Hackers Expose Servers Revealing AI Tools Behind Bank Breaches</title>
+      <link>https://secubuzz.com/news/artex-hackers-expose-servers-revealing-ai-tools-be-399999b4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/artex-hackers-expose-servers-revealing-ai-tools-be-399999b4</guid>
+      <description><![CDATA[Hackers in the ARTEX campaign exposed their own servers between late September and early October 2026, revealing AI models, scripts, and proxies used to breach seven South Korean financial firms. The self-disclosure provided researchers rare visibility into the operational infrastructure supporting the intrusions. No specific CVE identifier is stated, so this is classified as a VULNERABILITY with MEDIUM severity.]]></description>
+      <pubDate>Thu, 05 Nov 2026 13:11:17 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/artex-hackers/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>HAProxy Regression Fixes Chunked Request DoS</title>
+      <link>https://secubuzz.com/news/haproxy-regression-fixes-chunked-request-dos-9329d665</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/haproxy-regression-fixes-chunked-request-dos-9329d665</guid>
+      <description><![CDATA[HAProxy on Ubuntu 22.04 LTS regressed when processing HTTP/1.1 chunked requests, causing excessive CPU consumption and denial of service. Two CVEs (CVE-2026-110353 and CVE-2026-110354) were addressed in USN-8972-2. Organizations should apply the updated package to restore proper chunked request handling. The regression was triggered by a prior security update that inadvertently broke chunked request processing.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:52:52 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8972-2">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Issues Ruby 2.5 Security Update</title>
@@ -197,6 +323,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Govt Urges Hardening of Industrial Refrigeration Systems</title>
+      <link>https://secubuzz.com/news/govt-urges-hardening-of-industrial-refrigeration-s-92a6b86c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/govt-urges-hardening-of-industrial-refrigeration-s-92a6b86c</guid>
+      <description><![CDATA[Malicious cyber activity targets industrial refrigeration and cold chain monitoring systems worldwide. The activity exploits weak authentication, outdated firmware, and unpatched software, potentially allowing remote manipulation of temperature controls and data logging. The authoring organizations recommend enforcing strong authentication, applying vendor patches, and conducting comprehensive system inventory to mitigate risk.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems">CISA</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Post-Quantum Questions to Ask Your Vendors</title>
       <link>https://secubuzz.com/news/post-quantum-questions-to-ask-your-vendors-56956716</link>
       <guid isPermaLink="true">https://secubuzz.com/news/post-quantum-questions-to-ask-your-vendors-56956716</guid>
@@ -224,6 +359,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Autonomous AI Agents Pose New Proxy Identity Risks</title>
+      <link>https://secubuzz.com/news/autonomous-ai-agents-pose-new-proxy-identity-risks-30e4d6ec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/autonomous-ai-agents-pose-new-proxy-identity-risks-30e4d6ec</guid>
+      <description><![CDATA[The article examines the proliferation of autonomous AI agents in enterprises, describing each as a new proxy identity operating within the perimeter. It highlights risks of uncontrolled agentic identities, including potential lateral movement and policy bypass that can undermine security controls. The piece recommends establishing governance frameworks and continuous monitoring to manage agent behavior and mitigate hidden threats.]]></description>
+      <pubDate>Thu, 05 Nov 2026 11:15:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/the-agent-smith-dilemma-governing-agentic-identities/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>RHSA-2026:95498: Important: libX11 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-95498-important-libx11-security-update-76df154d</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95498-important-libx11-security-update-76df154d</guid>
@@ -239,6 +383,15 @@
       <description><![CDATA[Google Cloud is adding new controls to CodeMender, its AI tool for finding and fixing software vulnerabilities, allowing businesses to isolate attack simulations and target code scans more precisely. The updates let businesses verify vulnerabilities and simulate exploits in an operating system-level sandbox or an isolated virtual machine.]]></description>
       <pubDate>Thu, 05 Nov 2026 11:02:43 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/05/google-cloud-ai-agents-security-controls/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Ryan Davis Discusses Shadow AI Threats</title>
+      <link>https://secubuzz.com/news/ryan-davis-discusses-shadow-ai-threats-8e04b13e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ryan-davis-discusses-shadow-ai-threats-8e04b13e</guid>
+      <description><![CDATA[Ryan Davis, former school network hacker turned CISO at New Charter Technologies, discusses evolving security challenges in an interview. He highlights growing concern over shadow AI, describing it as an emerging threat that can obscure intent and complicate detection. The conversation underscores the need for robust AI governance and proactive monitoring to mitigate hidden risks.]]></description>
+      <pubDate>Thu, 05 Nov 2026 11:00:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/ciso-conversations-ryan-davis-the-unknown-is-where-security-meets-reality/">SecurityWeek</source>
       <category>General</category>
     </item>
     <item>
@@ -302,159 +455,6 @@
       <description><![CDATA[The October 2026 threat landscape features five active campaigns targeting U.S. enterprises through trusted platforms, legitimate authentication, and routine business workflows. These attacks increase the likelihood of financial loss, data breaches, and operational disruption by exploiting common software and user behaviors. Defenders should review threat intelligence feeds, enforce multi‑factor authentication, and harden supply‑chain controls to mitigate exposure.]]></description>
       <pubDate>Thu, 05 Nov 2026 10:06:19 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95482: Important: gimp:2.8 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95482-important-gimp-2-8-security-bug-fi-442dc4ba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95482-important-gimp-2-8-security-bug-fi-442dc4ba</guid>
-      <description><![CDATA[An update for the gimp:2.8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 10:01:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95482">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Bind Security Update for RHEL 8.4</title>
-      <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-for-rhel-8-4-3cf9e828</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-bind-security-update-for-rhel-8-4-3cf9e828</guid>
-      <description><![CDATA[Red Hat issued a bind security update for RHEL 8.4 AMCS and EUS LLA, addressing multiple vulnerabilities. The update includes bug fixes and enhancements, with CVSS scores provided for each CVE referenced in the advisory. Customers should apply the patch immediately to mitigate critical potential exploitation of the bind service.]]></description>
-      <pubDate>Thu, 05 Nov 2026 09:26:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95477">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GhostMap App Forces Android Devices into Boot Loop</title>
-      <link>https://secubuzz.com/news/ghostmap-app-forces-android-devices-into-boot-loop-052cbc10</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostmap-app-forces-android-devices-into-boot-loop-052cbc10</guid>
-      <description><![CDATA[A no‑permission Android app can force devices into a continuous boot loop by exploiting the GhostMap flaw. The flaw stems from improper ZIP structure handling during APK parsing, enabling a crash loop without user interaction. Users should immediately apply the vendor’s latest Android patch to eliminate the critical boot‑loop vulnerability.]]></description>
-      <pubDate>Thu, 05 Nov 2026 09:18:29 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apple Introduces Harmful-Content Scanning for Public iCloud Links in iOS 27.3</title>
-      <link>https://secubuzz.com/news/apple-introduces-harmful-content-scanning-for-publ-67579950</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-introduces-harmful-content-scanning-for-publ-67579950</guid>
-      <description><![CDATA[Apple announced that starting with iOS 27.3, it will scan publicly shared iCloud photos and files for harmful content. The update targets links shared with “Anyone with the link” permissions, aiming to detect malware, phishing, or illicit material before delivery. Users will receive automated scans and warnings, and developers must ensure content complies with Apple’s policy and update apps accordingly.]]></description>
-      <pubDate>Thu, 05 Nov 2026 09:13:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenAI Generates 948 Linux Root Exploits in One Run</title>
-      <link>https://secubuzz.com/news/openai-generates-948-linux-root-exploits-in-one-ru-4e7ac37a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-generates-948-linux-root-exploits-in-one-ru-4e7ac37a</guid>
-      <description><![CDATA[An automated pipeline on an upcoming OpenAI model produced 948 working exploits targeting the latest Linux kernel on stock desktop distributions. The exploits elevate ordinary users to root by exploiting kernel bugs, and the system auto‑generated patches for each flaw. Security teams should apply vendor kernel patches and monitor for similar automated exploitation tools.]]></description>
-      <pubDate>Thu, 05 Nov 2026 09:05:06 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/openai-linux-kernel-root-exploits/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Banking Malware Reveals GhostMap Crash Loop Bug</title>
-      <link>https://secubuzz.com/news/banking-malware-reveals-ghostmap-crash-loop-bug-e709ff8f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/banking-malware-reveals-ghostmap-crash-loop-bug-e709ff8f</guid>
-      <description><![CDATA[Bitdefender Labs found a banking‑related Android app with no executable code or permissions that forces a Pixel 10 into a crash loop, exposing GhostMap. The flaw stems from Android’s ZIP structure handling in APKs, enabling a boot loop without user interaction. Users should apply the latest Android update and vendor patches to eliminate the GhostMap crash loop.]]></description>
-      <pubDate>Thu, 05 Nov 2026 09:00:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/ghostmap-android-bug-research/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95478: Important: bind security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95478-important-bind-security-bug-fix-an-444d1a56</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95478-important-bind-security-bug-fix-an-444d1a56</guid>
-      <description><![CDATA[An update for bind is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Thu, 05 Nov 2026 08:58:34 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95478">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hacker Uses 12 AI Agents to Breach Taiwan Services</title>
-      <link>https://secubuzz.com/news/hacker-uses-12-ai-agents-to-breach-taiwan-services-d7a6e2e8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hacker-uses-12-ai-agents-to-breach-taiwan-services-d7a6e2e8</guid>
-      <description><![CDATA[A single operator in Taiwan deployed 12 AI agents, named BOSSAI, to compromise emergency services, banks, universities, and military systems across 11 countries. The campaign resulted in confirmed theft of medical data and personal records, exposing sensitive information from multiple organizations. Security teams should investigate compromised accounts, apply multi‑factor authentication, and monitor for anomalous data exfiltration to mitigate further loss.]]></description>
-      <pubDate>Thu, 05 Nov 2026 08:56:26 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/one-hacker-uses-12-ai-agents/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CERT‑In Reports AI‑Driven Attacks Target BFSI Consoles</title>
-      <link>https://secubuzz.com/news/cert-in-reports-ai-driven-attacks-target-bfsi-cons-0bf4ab91</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cert-in-reports-ai-driven-attacks-target-bfsi-cons-0bf4ab91</guid>
-      <description><![CDATA[CERT‑In flagged that AI‑assisted actor Crafty Falcon targets Indian banking, financial services, and insurance firms, aiming to compromise 62 consoles. The campaign uses publicly available AI‑driven tools, enabling automated exploitation of known vulnerabilities and credential theft, though no specific CVE has been disclosed. Security teams should monitor console logs, apply patches, and restrict privileged access to mitigate potential compromise.]]></description>
-      <pubDate>Thu, 05 Nov 2026 08:42:03 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apple Adds Harmful Content Checks to iCloud Links</title>
-      <link>https://secubuzz.com/news/apple-adds-harmful-content-checks-to-icloud-links-ad6ed6bd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-adds-harmful-content-checks-to-icloud-links-ad6ed6bd</guid>
-      <description><![CDATA[Apple will start scanning iCloud content shared via the ‘Anyone with the link’ option for harmful material on iOS, iPadOS, macOS, and visionOS 27.3 or later. If harmful content is detected, Apple may impose account penalties, encouraging users to choose more restrictive sharing settings. Security teams should review sharing policies and ensure compliance with the new content‑review requirements.]]></description>
-      <pubDate>Thu, 05 Nov 2026 08:32:52 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/apple-icloud-link-sharing-checks/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Trick Mac Users Into Running Terminal Commands That Install Phexia Password-Stealing Malware</title>
-      <link>https://secubuzz.com/news/hackers-trick-mac-users-into-running-terminal-comm-ef52cbaa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-trick-mac-users-into-running-terminal-comm-ef52cbaa</guid>
-      <description><![CDATA[A macOS malware family called Phexia is spreading through fake web pages that talk Mac users into pasting a command into Terminal. Once the command runs, the malware quietly settles on the Mac, steals the login password, and copies browser data, keychain files, and password-manager extension data.]]></description>
-      <pubDate>Thu, 05 Nov 2026 08:31:45 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-trick-mac-users/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Important Dogtag‑PKI Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-important-dogtag-pki-update-8b96f136</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-dogtag-pki-update-8b96f136</guid>
-      <description><![CDATA[Red Hat released an Important security update for dogtag‑pki on Red Hat Enterprise Linux 10.0 Extended Update Support, addressing multiple vulnerabilities. The update carries a CVSS base score for each vulnerability, as listed in the CVE references, indicating a high‑severity impact. Security teams should apply the patch immediately to mitigate the identified risks.]]></description>
-      <pubDate>Thu, 05 Nov 2026 08:12:57 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95466">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Use Fake Government Websites and CAPTCHA Checks to Deliver SimpleHelp Remote Access Software</title>
-      <link>https://secubuzz.com/news/hackers-use-fake-government-websites-and-captcha-c-94a2e802</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-government-websites-and-captcha-c-94a2e802</guid>
-      <description><![CDATA[Hackers are impersonating the Israel Tax Authority through phishing emails, fake government websites, and CAPTCHA-style checks to trick employees into running SimpleHelp remote access software. The campaign targets Israeli organizations and turns an ordinary tax-document request into a possible entry point for unauthorized access.]]></description>
-      <pubDate>Thu, 05 Nov 2026 07:59:40 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-fake-government-websites/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Critical Citrix XenServer Vulnerability Could Let Hackers Take Over Virtualization Hosts Without Authentication</title>
-      <link>https://secubuzz.com/news/critical-citrix-xenserver-vulnerability-could-let-81a18ab3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-citrix-xenserver-vulnerability-could-let-81a18ab3</guid>
-      <description><![CDATA[Citrix has disclosed a critical XenServer vulnerability that could let an unauthenticated attacker compromise virtualization hosts and supporting appliances. Tracked as CVE-2026-98432, the flaw requires access to the management network, an important limit when assessing which systems are exposed.]]></description>
-      <pubDate>Thu, 05 Nov 2026 07:24:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-citrix-xenserver-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95435: Important: bind security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95435-important-bind-security-bug-fix-an-a4d48342</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95435-important-bind-security-bug-fix-an-a4d48342</guid>
-      <description><![CDATA[An update for bind is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Thu, 05 Nov 2026 07:23:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95435">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Top 10 Security Data Lake Platforms 2026</title>
-      <link>https://secubuzz.com/news/top-10-security-data-lake-platforms-2026-9b148f95</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-security-data-lake-platforms-2026-9b148f95</guid>
-      <description><![CDATA[The article ranks the leading security data lake platforms for 2026, evaluating telemetry storage, detection engines, and cost efficiency. It highlights the shift from SIEM‑priced storage to open‑format object storage, noting challenges in data escape and vendor migration. Security teams should assess platform fit, plan migration strategies, and monitor for performance and compliance gaps.]]></description>
-      <pubDate>Thu, 05 Nov 2026 07:19:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-security-data-lakes/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>2026 Log Management Tools Ranked</title>
-      <link>https://secubuzz.com/news/2026-log-management-tools-ranked-e76f8aca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/2026-log-management-tools-ranked-e76f8aca</guid>
-      <description><![CDATA[The article presents a 2026 ranking of security log management tools, evaluating cost to move, store, and query logs across pipeline brokers and cloud giants. It discusses how vendors optimize different pipeline legs, hot‑architecture engines, and retention bundling, emphasizing query efficiency and cost‑effective data retention. Readers should evaluate scoring criteria and align tool selection with their economic and operational requirements.]]></description>
-      <pubDate>Thu, 05 Nov 2026 07:14:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-security-log-management/">Cyber Security News</source>
       <category>General</category>
     </item>
   </channel>
