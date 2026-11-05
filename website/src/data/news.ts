@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "apple-adds-harmful-content-checks-to-icloud-links-ad6ed6bd",
+    "title": "Apple Adds Harmful Content Checks to iCloud Links",
+    "summary": "Apple will start scanning iCloud content shared via the ‘Anyone with the link’ option for harmful material on iOS, iPadOS, macOS, and visionOS 27.3 or later. If harmful content is detected, Apple may impose account penalties, encouraging users to choose more restrictive sharing settings. Security teams should review sharing policies and ensure compliance with the new content‑review requirements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/apple-icloud-link-sharing-checks/",
+    "publishedAt": "2026-11-05T08:32:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-adds-harmful-content-checks-to-icloud-links",
+      "article-ad6ed6bd",
+      "ad6ed6bd",
+      "apple-adds-harmful-content-checks-to-icloud-links-653df9"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-important-dogtag-pki-update-8b96f136",
+    "title": "Red Hat Releases Important Dogtag‑PKI Update",
+    "summary": "Red Hat released an Important security update for dogtag‑pki on Red Hat Enterprise Linux 10.0 Extended Update Support, addressing multiple vulnerabilities. The update carries a CVSS base score for each vulnerability, as listed in the CVE references, indicating a high‑severity impact. Security teams should apply the patch immediately to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95466",
+    "publishedAt": "2026-11-05T08:12:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-important-dogtag-pki-update",
+      "article-8b96f136",
+      "8b96f136",
+      "red-hat-releases-important-dogtag-pki-update-37d845"
+    ]
+  },
+  {
+    "slug": "zyxel-gs1900-switches-still-vulnerable-to-zero-day-a9bb101a",
+    "title": "Zyxel GS1900 Switches Still Vulnerable to Zero‑Day RCE",
+    "summary": "Zyxel GS1900 switches remain vulnerable to a zero‑day exploit bypassing the earlier 2.90 patch, enabling unauthenticated remote command execution via the web interface. The flaw lets attackers run arbitrary commands without login, a high‑severity remote code execution vulnerability; the exploit is active. Zyxel released new firmware for ten GS1900 models that closes the hole; teams should upgrade immediately.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+    "publishedAt": "2026-11-05T07:06:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zyxel-gs1900-switches-still-vulnerable-to-zero-day",
+      "article-a9bb101a",
+      "a9bb101a",
+      "zyxel-gs1900-switches-still-vulnerable-to-zero-day-104ccf",
+      "zyxel-gs1900-switches-still-vulnerable-to-zero-day-rce"
+    ]
+  },
+  {
     "slug": "ai-agents-evade-binary-detection-reveal-new-signal-7b469918",
     "title": "AI Agents Evade Binary Detection, Reveal New Signals",
     "summary": "AI agents that choose autonomous steps evade traditional binary bot detection, prompting Resemble AI to identify new traffic signals. The flaw lies in binary detection's scripted behavior reliance; AI agents generate undeclared or disguised traffic, bypassing signature checks. Security teams should monitor click timing anomalies and session batch patterns, updating detection engines with behavioral analytics to flag coordinated traffic.",
@@ -9472,63 +9527,6 @@ export const news: NewsBrief[] = [
       "article-97de88a9",
       "97de88a9",
       "red-hat-issues-util-linux-security-update-37d92e"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-8-8-freerdp-update-fixes-vuln-c192ba27",
-    "title": "Red Enterprise Linux 8.8 freerdp Update Fixes Vulnerabilities",
-    "summary": "Red Enterprise Linux 8.8 SAP and Telecom users receive a freerdp security update addressing multiple vulnerabilities. The update corrects issues identified by Red Hat Product Security, with CVSS scores in the CVE references indicating moderate to high impact. Apply RHSA-2026:93537 promptly to mitigate the weaknesses and consult the CVE links for severity details.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93537",
-    "publishedAt": "2026-11-02T05:03:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-8-8-freerdp-update-fixes-vuln",
-      "article-c192ba27",
-      "c192ba27",
-      "red-enterprise-linux-8-8-freerdp-update-fixes-vuln-37d92a",
-      "red-enterprise-linux-8-8-freerdp-update-fixes-vulnerabilitie"
-    ]
-  },
-  {
-    "slug": "aur0ra-ransomware-uses-ai-agents-for-network-infil-9e9edf30",
-    "title": "Aur0ra Ransomware Uses AI Agents for Network Infiltration",
-    "summary": "Aur0ra ransomware, tracked as GOLD OGRE, uses AI agents to traverse networks, harvest credentials, and gain domain administrator rights. Sophos uncovered Cursor AI artifacts that supplied attackers with VPN logins, proxy access, and target objectives, enabling automated network mapping. Defenders should detect anomalous AI activity, enforce strict VPN controls, and rotate credentials rapidly to counter the threat.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/aur0ra-ransomware-ai-agents/",
-    "publishedAt": "2026-11-02T05:00:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aur0ra-ransomware-uses-ai-agents-for-network-infil",
-      "article-9e9edf30",
-      "9e9edf30",
-      "aur0ra-ransomware-uses-ai-agents-for-network-infil-77251b",
-      "aur0ra-ransomware-uses-ai-agents-for-network-infiltration"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-tomcat-security-update-for-rhel-9-11e05504",
-    "title": "Red Hat Releases Tomcat Security Update for RHEL 9.8",
-    "summary": "Red Hat issued a security update for Apache Tomcat on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities. The flaws involve improper input validation in the servlet container, potentially allowing remote code execution with elevated privileges. Apply the provided Tomcat patch immediately and review server configurations to enforce strict access controls.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93469",
-    "publishedAt": "2026-11-02T04:44:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-tomcat-security-update-for-rhel-9",
-      "article-11e05504",
-      "11e05504",
-      "red-hat-releases-tomcat-security-update-for-rhel-9-37d92e",
-      "red-hat-releases-tomcat-security-update-for-rhel-9-8"
     ]
   }
 ];
