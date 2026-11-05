@@ -11,6 +11,120 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "vulnerability-scans-for-older-cisco-ios-vulnerabil-cbd5a20c",
+    "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
+    "summary": "This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. This Cisco IOS exploit attempt was a bit more interesting. I suspect this is for CVE-2023-20198.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33492",
+    "publishedAt": "2026-11-05T15:29:08.000Z",
+    "cves": [
+      "CVE-2023-20198"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "vulnerability-scans-for-older-cisco-ios-vulnerabil",
+      "article-cbd5a20c",
+      "cbd5a20c",
+      "vulnerability-scans-for-older-cisco-ios-vulnerabil-57dd7e",
+      "vulnerability-scans-for-older-cisco-ios-vulnerability-opt-ou"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95574-important-qt5-qtbase-security-upda-c31c5cb8",
+    "title": "RHSA-2026:95574: Important: qt5-qtbase security update",
+    "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95574",
+    "publishedAt": "2026-11-05T15:05:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95574-important-qt5-qtbase-security-upda",
+      "article-c31c5cb8",
+      "c31c5cb8",
+      "rhsa-2026-95574-important-qt5-qtbase-security-upda-37d841",
+      "rhsa-2026-95574-important-qt5-qtbase-security-update"
+    ]
+  },
+  {
+    "slug": "cyberhaven-unveils-agentic-data-security-for-ai-go-f9027bf3",
+    "title": "Cyberhaven Unveils Agentic Data Security for AI Governance",
+    "summary": "Cyberhaven launched Agentic Data Security (ADS) to give CISOs and AI governance teams visibility into AI agents’ data interactions. ADS records data usage, identifies the acting entity, tracks destinations, and blocks sensitive data exfiltration before it leaves. The solution integrates with existing security stacks; no firmware updates are needed, but organizations should assess ADS for AI‑driven workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/cyberhaven-agentic-data-security/",
+    "publishedAt": "2026-11-05T15:04:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyberhaven-unveils-agentic-data-security-for-ai-go",
+      "article-f9027bf3",
+      "f9027bf3",
+      "cyberhaven-unveils-agentic-data-security-for-ai-go-4198fa",
+      "cyberhaven-unveils-agentic-data-security-for-ai-governance"
+    ]
+  },
+  {
+    "slug": "service-desk-identity-gap-exploited-for-mfa-bypass-31313919",
+    "title": "Service Desk Identity Gap Exploited for MFA Bypass",
+    "summary": "Attackers target IT service desks to bypass MFA by impersonating staff and persuading employees to reset passwords or register authentication devices. Specops Software warns that traditional identity verification is insufficient, enabling social engineering at the desk to grant attackers credential control without MFA. Defenders should enforce MFA for service desk actions, limit password reset permissions, and monitor anomalous authentication requests.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/",
+    "publishedAt": "2026-11-05T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "service-desk-identity-gap-exploited-for-mfa-bypass",
+      "article-31313919",
+      "31313919",
+      "service-desk-identity-gap-exploited-for-mfa-bypass-15852e"
+    ]
+  },
+  {
+    "slug": "rubrik-introduces-immutable-nas-backup-vaults-af58dea6",
+    "title": "Rubrik Introduces Immutable NAS Backup Vaults",
+    "summary": "Rubrik announced Rubrik‑Hosted Protection for On‑Premise Unstructured Data, enabling customers to back up NAS data to isolated, immutable vaults. The solution leverages Rubrik’s NAS Cloud Direct service, providing clean recovery without requiring customers to purchase, build, or manage backup storage. Rubrik recommends integrating the hosted protection into existing backup workflows and monitoring for successful replication to ensure data resilience.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/rubrik-unstructured-data-protection/",
+    "publishedAt": "2026-11-05T14:48:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rubrik-introduces-immutable-nas-backup-vaults",
+      "article-af58dea6",
+      "af58dea6",
+      "rubrik-introduces-immutable-nas-backup-vaults-76714a"
+    ]
+  },
+  {
+    "slug": "threatsday-apache-ofbiz-rce-dreamhost-breach-defi-69a319bc",
+    "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+    "summary": "How much damage can someone do without breaking much? A stolen login can open doors across several systems. And while new tools are helping find security holes faster, some important systems are still taking months, sometimes over a year, to get patched.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
+    "publishedAt": "2026-11-05T14:41:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threatsday-apache-ofbiz-rce-dreamhost-breach-defi",
+      "article-69a319bc",
+      "69a319bc",
+      "threatsday-apache-ofbiz-rce-dreamhost-breach-defi-71c50c",
+      "threatsday-apache-ofbiz-rce-dreamhost-breach-defi-site-hijac"
+    ]
+  },
+  {
     "slug": "vercel-introduces-device-bound-sessions-ai-review-dbab40b9",
     "title": "Vercel Introduces Device‑Bound Sessions, AI Review Beta",
     "summary": "Vercel rolls out Device Bound Session Credentials (DBSC) to tie login sessions to specific devices, rendering stolen session cookies ineffective. The feature limits infostealer impact by preventing session hijacking, while a public beta AI Security Review scans code for vulnerabilities. Security teams should enable DBSC and join the beta to leverage automated threat detection, following Vercel’s integration guidance.",
@@ -83,6 +197,25 @@ export const news: NewsBrief[] = [
       "eb304005",
       "chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-53a74d",
       "chatgpt-runtime-flaw-enables-silent-dns-exfiltration"
+    ]
+  },
+  {
+    "slug": "phishing-sites-use-fake-suspended-pages-to-evade-t-3068a5ff",
+    "title": "Phishing Sites Use Fake Suspended Pages to Evade Takedowns",
+    "summary": "Over 200 phishing sites served fake ‘suspended’ pages to first‑time visitors while delivering malicious content to returning users. The tactic lets attackers evade takedowns by presenting a legitimate notice to new visitors, then redirecting them to phishing payloads on subsequent visits. Defenders should monitor domain reputation, block suspicious URLs, and enforce strict content‑security policies to detect deceptive landing pages.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/",
+    "publishedAt": "2026-11-05T13:22:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishing-sites-use-fake-suspended-pages-to-evade-t",
+      "article-3068a5ff",
+      "3068a5ff",
+      "phishing-sites-use-fake-suspended-pages-to-evade-t-44ea10",
+      "phishing-sites-use-fake-suspended-pages-to-evade-takedowns"
     ]
   },
   {
@@ -9401,139 +9534,6 @@ export const news: NewsBrief[] = [
       "article-17601272",
       "17601272",
       "red-hat-releases-important-bind-security-update-37d927"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-update-for-python-jwt-lib-76be2095",
-    "title": "Red Hat Issues Important Update for python‑jwt Library",
-    "summary": "Red Hat released an Important security update for python‑jwt on RHEL 8.8 Update Services for SAP Solutions and Telecommunications. The update fixes vulnerabilities in python‑jwt, with CVSS base scores available via referenced CVE links, and is rated Important by Red Hat Product Security. Apply the patch through the RHEL 8.8 Update Services channel to mitigate potential exploitation of the library.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93624",
-    "publishedAt": "2026-11-02T12:02:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-update-for-python-jwt-lib",
-      "article-76be2095",
-      "76be2095",
-      "red-hat-issues-important-update-for-python-jwt-lib-37d927",
-      "red-hat-issues-important-update-for-python-jwt-library"
-    ]
-  },
-  {
-    "slug": "ai-bug-discovery-rate-surges-3-of-critical-bugs-82ead697",
-    "title": "AI Bug Discovery Rate Surges 3% of Critical Bugs",
-    "summary": "A recent analysis shows 3% of all recorded critical bugs were found last month, potentially adding 100,000 new vulnerabilities this year. This pace would increase the all‑time total by about 26%, expanding the threat landscape through AI‑assisted discovery. Security teams should monitor feeds and adjust patch cycles to match the accelerated discovery rate.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
-    "publishedAt": "2026-11-02T12:02:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-bug-discovery-rate-surges-3-of-critical-bugs",
-      "article-82ead697",
-      "82ead697",
-      "ai-bug-discovery-rate-surges-3-of-critical-bugs-21d0f9"
-    ]
-  },
-  {
-    "slug": "northflank-breach-exposes-ai-api-keys-53145069",
-    "title": "Northflank Breach Exposes AI API Keys",
-    "summary": "Northflank reported a security incident that exposed AI API keys, allowing attackers to access platform workloads and misuse environment variables. The breach did not confirm an entry point or attacker identity, but leaked credentials could grant privileged access to global settings and secret groups. Northflank urges customers to rotate all secrets, update variables, and enable MFA to mitigate credential misuse.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/northflank-security-breach/",
-    "publishedAt": "2026-11-02T12:02:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "northflank-breach-exposes-ai-api-keys",
-      "article-53145069",
-      "53145069",
-      "northflank-breach-exposes-ai-api-keys-4ea7c4"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93626-important-python-jwt-security-upda-be651efb",
-    "title": "RHSA-2026:93626: Important: python-jwt security update",
-    "summary": "An update for python-jwt is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93626",
-    "publishedAt": "2026-11-02T11:58:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93626-important-python-jwt-security-upda",
-      "article-be651efb",
-      "be651efb",
-      "rhsa-2026-93626-important-python-jwt-security-upda-37d927",
-      "rhsa-2026-93626-important-python-jwt-security-update"
-    ]
-  },
-  {
-    "slug": "cve-2023-21768-winsock-privilege-escalation-poc-b0b5680c",
-    "title": "CVE-2023-21768 WinSock Privilege Escalation PoC",
-    "summary": "A public proof‑of‑concept exploit demonstrates local privilege escalation via the Windows Ancillary Function Driver for WinSock, targeting CVE-2023-21768. The PoC shows attackers with local access can obtain SYSTEM privileges on vulnerable Windows 11 22H2 systems, a flaw patched in January 2023. Microsoft recommends installing the January 2023 security update and applying the latest Windows patches to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/poc-for-windows-winsock-ancillary-vulnerability/",
-    "publishedAt": "2026-11-02T11:57:41.000Z",
-    "cves": [
-      "CVE-2023-21768"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2023-21768-winsock-privilege-escalation-poc",
-      "article-b0b5680c",
-      "b0b5680c",
-      "cve-2023-21768-winsock-privilege-escalation-poc-79befd"
-    ]
-  },
-  {
-    "slug": "langflow-unauthenticated-rce-flaws-exposed-e5963d00",
-    "title": "Langflow Unauthenticated RCE Flaws Exposed",
-    "summary": "Langflow contains two critical unauthenticated RCE flaws that allow attackers to bypass authentication and execute arbitrary code. IBM identified the vulnerabilities across releases 1.0.0 to 1.12.8, assigning CVE-2026-111357, and noted no public exploit yet. Users should upgrade to version 1.13.0 immediately, as the patch resolves both flaws and restores authentication controls.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-    "publishedAt": "2026-11-02T11:50:00.000Z",
-    "cves": [
-      "CVE-2026-111357"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "langflow-unauthenticated-rce-flaws-exposed",
-      "article-e5963d00",
-      "e5963d00",
-      "langflow-unauthenticated-rce-flaws-exposed-312ed6"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-patched-synology-nas-vulnerabiliti-9b10c473",
-    "title": "Hackers Exploit Patched Synology NAS Vulnerabilities to Deploy C3RB3R Ransomware and Encrypt Files",
-    "summary": "Synology NAS devices are facing C3RB3R ransomware attacks linked to 2024 security flaws, prompting the company to urge users to update outdated DiskStation Manager versions and packages. The warning followed reports from the 360 Security Team and Solar Emergency Response Team on October 29.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/synology-nas-vulnerabilities-c3rb3r-ransomware/",
-    "publishedAt": "2026-11-02T11:49:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-patched-synology-nas-vulnerabiliti",
-      "article-9b10c473",
-      "9b10c473",
-      "hackers-exploit-patched-synology-nas-vulnerabiliti-031e24",
-      "hackers-exploit-patched-synology-nas-vulnerabilities-to-depl"
     ]
   }
 ];

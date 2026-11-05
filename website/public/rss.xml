@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 14:45:23 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 15:37:16 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)</title>
+      <link>https://secubuzz.com/news/vulnerability-scans-for-older-cisco-ios-vulnerabil-cbd5a20c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vulnerability-scans-for-older-cisco-ios-vulnerabil-cbd5a20c</guid>
+      <description><![CDATA[This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. This Cisco IOS exploit attempt was a bit more interesting. I suspect this is for CVE-2023-20198.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:29:08 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33492">SANS Internet Storm Center</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95574: Important: qt5-qtbase security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95574-important-qt5-qtbase-security-upda-c31c5cb8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95574-important-qt5-qtbase-security-upda-c31c5cb8</guid>
+      <description><![CDATA[An update for qt5-qtbase is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:05:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95574">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cyberhaven Unveils Agentic Data Security for AI Governance</title>
+      <link>https://secubuzz.com/news/cyberhaven-unveils-agentic-data-security-for-ai-go-f9027bf3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyberhaven-unveils-agentic-data-security-for-ai-go-f9027bf3</guid>
+      <description><![CDATA[Cyberhaven launched Agentic Data Security (ADS) to give CISOs and AI governance teams visibility into AI agents’ data interactions. ADS records data usage, identifies the acting entity, tracks destinations, and blocks sensitive data exfiltration before it leaves. The solution integrates with existing security stacks; no firmware updates are needed, but organizations should assess ADS for AI‑driven workflows.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:04:07 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/cyberhaven-agentic-data-security/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Service Desk Identity Gap Exploited for MFA Bypass</title>
+      <link>https://secubuzz.com/news/service-desk-identity-gap-exploited-for-mfa-bypass-31313919</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/service-desk-identity-gap-exploited-for-mfa-bypass-31313919</guid>
+      <description><![CDATA[Attackers target IT service desks to bypass MFA by impersonating staff and persuading employees to reset passwords or register authentication devices. Specops Software warns that traditional identity verification is insufficient, enabling social engineering at the desk to grant attackers credential control without MFA. Defenders should enforce MFA for service desk actions, limit password reset permissions, and monitor anomalous authentication requests.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Rubrik Introduces Immutable NAS Backup Vaults</title>
+      <link>https://secubuzz.com/news/rubrik-introduces-immutable-nas-backup-vaults-af58dea6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rubrik-introduces-immutable-nas-backup-vaults-af58dea6</guid>
+      <description><![CDATA[Rubrik announced Rubrik‑Hosted Protection for On‑Premise Unstructured Data, enabling customers to back up NAS data to isolated, immutable vaults. The solution leverages Rubrik’s NAS Cloud Direct service, providing clean recovery without requiring customers to purchase, build, or manage backup storage. Rubrik recommends integrating the hosted protection into existing backup workflows and monitoring for successful replication to ensure data resilience.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:48:20 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/rubrik-unstructured-data-protection/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories</title>
+      <link>https://secubuzz.com/news/threatsday-apache-ofbiz-rce-dreamhost-breach-defi-69a319bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threatsday-apache-ofbiz-rce-dreamhost-breach-defi-69a319bc</guid>
+      <description><![CDATA[How much damage can someone do without breaking much? A stolen login can open doors across several systems. And while new tools are helping find security holes faster, some important systems are still taking months, sometimes over a year, to get patched.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:41:10 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Vercel Introduces Device‑Bound Sessions, AI Review Beta</title>
       <link>https://secubuzz.com/news/vercel-introduces-device-bound-sessions-ai-review-dbab40b9</link>
@@ -42,6 +96,15 @@
       <pubDate>Thu, 05 Nov 2026 14:00:11 GMT</pubDate>
       <source url="https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/">Check Point Research</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Phishing Sites Use Fake Suspended Pages to Evade Takedowns</title>
+      <link>https://secubuzz.com/news/phishing-sites-use-fake-suspended-pages-to-evade-t-3068a5ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-sites-use-fake-suspended-pages-to-evade-t-3068a5ff</guid>
+      <description><![CDATA[Over 200 phishing sites served fake ‘suspended’ pages to first‑time visitors while delivering malicious content to returning users. The tactic lets attackers evade takedowns by presenting a legitimate notice to new visitors, then redirecting them to phishing payloads on subsequent visits. Defenders should monitor domain reputation, block suspicious URLs, and enforce strict content‑security policies to detect deceptive landing pages.]]></description>
+      <pubDate>Thu, 05 Nov 2026 13:22:12 GMT</pubDate>
+      <source url="https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/">SecurityWeek</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Issues Ruby 2.5 Security Update</title>
@@ -392,69 +455,6 @@
       <description><![CDATA[The article presents a 2026 ranking of security log management tools, evaluating cost to move, store, and query logs across pipeline brokers and cloud giants. It discusses how vendors optimize different pipeline legs, hot‑architecture engines, and retention bundling, emphasizing query efficiency and cost‑effective data retention. Readers should evaluate scoring criteria and align tool selection with their economic and operational requirements.]]></description>
       <pubDate>Thu, 05 Nov 2026 07:14:43 GMT</pubDate>
       <source url="https://cybersecuritynews.com/best-security-log-management/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Zyxel Switches Still Vulnerable to Exploit</title>
-      <link>https://secubuzz.com/news/zyxel-switches-still-vulnerable-to-exploit-e4018843</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zyxel-switches-still-vulnerable-to-exploit-e4018843</guid>
-      <description><![CDATA[Zyxel GS1900 switches remain exposed to a stack‑based buffer overflow (CVE‑2026‑107441) that attackers exploited in the wild, despite a patch release. The patch fixed CVE‑2026‑7273, a separate CGI overflow, leaving the active flaw unmitigated and enabling remote code execution via crafted HTTP requests. Security teams must apply update for CVE‑2026‑107441 or deploy vendor’s interim workaround to block the exploit.]]></description>
-      <pubDate>Thu, 05 Nov 2026 07:06:33 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>2026 Threat Hunting Services Ranked</title>
-      <link>https://secubuzz.com/news/2026-threat-hunting-services-ranked-68702007</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/2026-threat-hunting-services-ranked-68702007</guid>
-      <description><![CDATA[The article ranks 2026 threat hunting services, evaluating platform-native and estate-attached offerings through detection engineering and hypothesis-driven hunting. It examines market segmentation, cost models, and the trade‑off between telemetry depth and MDR partnerships, highlighting vendor differentiation. Readers should review the scoring methodology and assess economic and operational fit before procurement.]]></description>
-      <pubDate>Thu, 05 Nov 2026 07:02:34 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-threat-hunting-services/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Agents Evade Binary Detection, Reveal New Signals</title>
-      <link>https://secubuzz.com/news/ai-agents-evade-binary-detection-reveal-new-signal-7b469918</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-evade-binary-detection-reveal-new-signal-7b469918</guid>
-      <description><![CDATA[AI agents that choose autonomous steps evade traditional binary bot detection, prompting Resemble AI to identify new traffic signals. The flaw lies in binary detection's scripted behavior reliance; AI agents generate undeclared or disguised traffic, bypassing signature checks. Security teams should monitor click timing anomalies and session batch patterns, updating detection engines with behavioral analytics to flag coordinated traffic.]]></description>
-      <pubDate>Thu, 05 Nov 2026 06:45:07 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/zohaib-ahmed-resemble-ai-detecting-ai-agent-traffic/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>DigiCert Breach Exposes Customer Data and Identity Documents</title>
-      <link>https://secubuzz.com/news/digicert-breach-exposes-customer-data-and-identity-a195507b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/digicert-breach-exposes-customer-data-and-identity-a195507b</guid>
-      <description><![CDATA[A DigiCert data breach exposed an internal system holding customer contact details and identity documents. Unauthorized access revealed archived names, business emails, phone numbers, addresses, and in some accounts, passports, driver’s licenses, and utility bills. DigiCert has not issued a patch; affected customers should monitor for credential compromise and apply future security updates.]]></description>
-      <pubDate>Thu, 05 Nov 2026 06:21:35 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/digicert-confirms-data-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Healthcare Struggles to Govern Undiscovered AI Tools</title>
-      <link>https://secubuzz.com/news/healthcare-struggles-to-govern-undiscovered-ai-too-9ac87524</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/healthcare-struggles-to-govern-undiscovered-ai-too-9ac87524</guid>
-      <description><![CDATA[A Paubox survey shows 90% of healthcare leaders report security teams review AI‑generated code touching patient data before deployment, yet 70% still find AI‑built tools handling that data without IT or security awareness. The gap indicates AI‑assisted development can introduce patient‑data components that escape formal security vetting. Organizations should enforce code review, track AI tools, and mandate security training.]]></description>
-      <pubDate>Thu, 05 Nov 2026 06:11:25 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Adversaries Exploit Vulnerability Ecosystem to Counter Defenders</title>
-      <link>https://secubuzz.com/news/adversaries-exploit-vulnerability-ecosystem-to-cou-e3a2fe16</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/adversaries-exploit-vulnerability-ecosystem-to-cou-e3a2fe16</guid>
-      <description><![CDATA[Adversaries are exploiting the public vulnerability ecosystem to undermine defensive efforts. They weaponize disclosed flaws, coordinate exploit chains, and manipulate patch timelines, increasing the risk of delayed mitigations and heightened attack surface. Security teams should monitor vulnerability feeds, prioritize critical patches, and adopt threat intelligence to anticipate adversary use of newly disclosed weaknesses.]]></description>
-      <pubDate>Thu, 05 Nov 2026 06:00:00 GMT</pubDate>
-      <source url="https://www.crowdstrike.com/en-us/blog/adversaries-turn-vulnerability-ecosystem-against-defenders/">CrowdStrike</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Companies Boost AI Governance Spending, Lose Control</title>
-      <link>https://secubuzz.com/news/companies-boost-ai-governance-spending-lose-contro-723c397a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/companies-boost-ai-governance-spending-lose-contro-723c397a</guid>
-      <description><![CDATA[A DNSFilter report shows companies are raising cybersecurity budgets, prioritizing AI security and governance. The study notes 74.5% of respondents increased spending, with 40.3% earmarking funds for AI governance, yet many firms report diminished control over AI tools due to employee access. Organizations should align budget allocations with governance frameworks and monitor AI tool usage to mitigate risk.]]></description>
-      <pubDate>Thu, 05 Nov 2026 05:30:14 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/dnsfilter-shadow-ai-cost-report/">Help Net Security</source>
       <category>General</category>
     </item>
   </channel>
