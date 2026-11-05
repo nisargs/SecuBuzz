@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-95498-important-libx11-security-update-76df154d",
+    "title": "RHSA-2026:95498: Important: libX11 security update",
+    "summary": "An update for libX11 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95498",
+    "publishedAt": "2026-11-05T11:12:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95498-important-libx11-security-update",
+      "article-76df154d",
+      "76df154d",
+      "rhsa-2026-95498-important-libx11-security-update-37d845"
+    ]
+  },
+  {
+    "slug": "google-puts-new-limits-on-ai-agents-that-hunt-thre-9630c841",
+    "title": "Google puts new limits on AI agents that hunt threats and fix vulnerabilities",
+    "summary": "Google Cloud is adding new controls to CodeMender, its AI tool for finding and fixing software vulnerabilities, allowing businesses to isolate attack simulations and target code scans more precisely. The updates let businesses verify vulnerabilities and simulate exploits in an operating system-level sandbox or an isolated virtual machine.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/google-cloud-ai-agents-security-controls/",
+    "publishedAt": "2026-11-05T11:02:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-puts-new-limits-on-ai-agents-that-hunt-thre",
+      "article-9630c841",
+      "9630c841",
+      "google-puts-new-limits-on-ai-agents-that-hunt-thre-e2f169",
+      "google-puts-new-limits-on-ai-agents-that-hunt-threats-and-fi"
+    ]
+  },
+  {
+    "slug": "hackers-hide-marsalek-malware-in-fake-roblox-and-f-bdfbb6db",
+    "title": "Hackers Hide Marsalek Malware in Fake Roblox and Fortnite Cheats to Steal Passwords and Crypto Wallet Data",
+    "summary": "Hackers are hiding a free information stealer called Marsalek inside fake cheats and tools for games such as Roblox, Fortnite, and Counter-Strike 2. In the background they steal saved passwords, browser cookies, Discord tokens, and crypto wallet data from Windows PCs.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hide-marsalek-malware/",
+    "publishedAt": "2026-11-05T10:59:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-hide-marsalek-malware-in-fake-roblox-and-f",
+      "article-bdfbb6db",
+      "bdfbb6db",
+      "hackers-hide-marsalek-malware-in-fake-roblox-and-f-2ae3a5",
+      "hackers-hide-marsalek-malware-in-fake-roblox-and-fortnite-ch"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95497-important-libx11-security-update-eb58447d",
+    "title": "RHSA-2026:95497: Important: libX11 security update",
+    "summary": "An update for libX11 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95497",
+    "publishedAt": "2026-11-05T10:59:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95497-important-libx11-security-update",
+      "article-eb58447d",
+      "eb58447d",
+      "rhsa-2026-95497-important-libx11-security-update-37d845"
+    ]
+  },
+  {
     "slug": "rhsa-2026-95482-important-gimp-2-8-security-bug-fi-442dc4ba",
     "title": "RHSA-2026:95482: Important: gimp:2.8 security, bug fix, and enhancement update",
     "summary": "An update for the gimp:2.8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -127,6 +201,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-95478-important-bind-security-bug-fix-an-444d1a56",
+    "title": "RHSA-2026:95478: Important: bind security, bug fix, and enhancement update",
+    "summary": "An update for bind is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95478",
+    "publishedAt": "2026-11-05T08:58:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95478-important-bind-security-bug-fix-an",
+      "article-444d1a56",
+      "444d1a56",
+      "rhsa-2026-95478-important-bind-security-bug-fix-an-37d845",
+      "rhsa-2026-95478-important-bind-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
     "slug": "cert-in-reports-ai-driven-attacks-target-bfsi-cons-0bf4ab91",
     "title": "CERT‑In Reports AI‑Driven Attacks Target BFSI Consoles",
     "summary": "CERT‑In flagged that AI‑assisted actor Crafty Falcon targets Indian banking, financial services, and insurance firms, aiming to compromise 62 consoles. The campaign uses publicly available AI‑driven tools, enabling automated exploitation of known vulnerabilities and credential theft, though no specific CVE has been disclosed. Security teams should monitor console logs, apply patches, and restrict privileged access to mitigate potential compromise.",
@@ -238,6 +331,25 @@ export const news: NewsBrief[] = [
       "81a18ab3",
       "critical-citrix-xenserver-vulnerability-could-let-217a0b",
       "critical-citrix-xenserver-vulnerability-could-let-hackers-ta"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95435-important-bind-security-bug-fix-an-a4d48342",
+    "title": "RHSA-2026:95435: Important: bind security, bug fix, and enhancement update",
+    "summary": "An update for bind is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95435",
+    "publishedAt": "2026-11-05T07:23:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95435-important-bind-security-bug-fix-an",
+      "article-a4d48342",
+      "a4d48342",
+      "rhsa-2026-95435-important-bind-security-bug-fix-an-37d846",
+      "rhsa-2026-95435-important-bind-security-bug-fix-and-enhancem"
     ]
   },
   {
@@ -559,6 +671,25 @@ export const news: NewsBrief[] = [
       "article-ef49329e",
       "ef49329e",
       "canadians-indicted-for-hacking-us-universities-6e5250"
+    ]
+  },
+  {
+    "slug": "ukraine-dismisses-security-officials-over-fraudule-3e0e132d",
+    "title": "Ukraine Dismisses Security Officials Over Fraudulent Call Center Scheme",
+    "summary": "Ukraine's security service dismissed two senior officials following a corruption probe into fraudulent call center operations. Investigators found the criminal network bribed law enforcement personnel to protect illicit call centers and illegal activities from police intervention. Government authorities terminated the implicated officials as broader law enforcement actions continue against the underlying financial fraud scheme.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ukraine-fires-senior-security-officials-amid-scam-center-corruption-investigation",
+    "publishedAt": "2026-11-05T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukraine-dismisses-security-officials-over-fraudule",
+      "article-3e0e132d",
+      "3e0e132d",
+      "ukraine-dismisses-security-officials-over-fraudule-274e2b",
+      "ukraine-dismisses-security-officials-over-fraudulent-call-ce"
     ]
   },
   {
@@ -9402,137 +9533,6 @@ export const news: NewsBrief[] = [
       "4ea7b26c",
       "fbi-links-600-addresses-to-north-korean-binance-th-3dac18",
       "fbi-links-600-addresses-to-north-korean-binance-theft"
-    ]
-  },
-  {
-    "slug": "reddit-moves-to-mandatory-logins-5653ba47",
-    "title": "Reddit Moves to Mandatory Logins",
-    "summary": "Reddit announced a shift to mandatory logins for its platform to limit public discussion access. The change aims to curb unauthorized data scraping by AI bots and support improved recommendations and advertising. Users will need to create or sign in to an account to view content, and the policy aligns with evolving safety rules.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/reddit-plans-mandatory-logins/",
-    "publishedAt": "2026-11-02T08:35:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "reddit-moves-to-mandatory-logins",
-      "article-5653ba47",
-      "5653ba47",
-      "reddit-moves-to-mandatory-logins-1cc82f"
-    ]
-  },
-  {
-    "slug": "hackers-use-artex-ai-agents-to-automate-active-dir-e965ed23",
-    "title": "Hackers Use ARTEX AI Agents to Automate Active Directory Attacks, Kerberoasting, and Lateral Movement",
-    "summary": "Hackers are now using an open-source AI tool called ARTEX to run large parts of a network break-in on their own. The tool can map a Windows network, steal service account passwords, and try to spread to domain controllers with very little human help.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-artex-ai-agents/",
-    "publishedAt": "2026-11-02T08:23:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-artex-ai-agents-to-automate-active-dir",
-      "article-e965ed23",
-      "e965ed23",
-      "hackers-use-artex-ai-agents-to-automate-active-dir-1598b4",
-      "hackers-use-artex-ai-agents-to-automate-active-directory-att"
-    ]
-  },
-  {
-    "slug": "beyondtrust-vulnerability-faces-fresh-exploitation-cd86462c",
-    "title": "BeyondTrust vulnerability faces fresh exploitation probes, mass scanning",
-    "summary": "Attackers are probing CVE-2026-102764 against BeyondTrust Remote Support appliances in the United States and Europe. The flaw, CVE-2026-102764, is a critical privilege escalation in Remote Support that could allow unauthenticated remote code execution and spread beyond targeted espionage. BeyondTrust has issued an out-of-band patch; apply it immediately and monitor for scanning activity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-beyondtrust-vulnerability/",
-    "publishedAt": "2026-11-02T08:01:35.000Z",
-    "cves": [
-      "CVE-2026-102764"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "beyondtrust-vulnerability-faces-fresh-exploitation",
-      "article-cd86462c",
-      "cd86462c",
-      "beyondtrust-vulnerability-faces-fresh-exploitation-e8841b",
-      "beyondtrust-vulnerability-faces-fresh-exploitation-probes-ma"
-    ]
-  },
-  {
-    "slug": "weekly-security-highlights-oct-26-nov-1-a1e5455f",
-    "title": "Weekly Security Highlights: Oct 26–Nov 1",
-    "summary": "The article provides a weekly roundup of the latest cybersecurity topics discussed between October 26 and November 1, 2026. It covers a range of subjects, from emerging threats and vulnerability disclosures to industry trends and ongoing defensive best practices. Readers can use the summary to stay informed about recent developments in the security landscape.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-october-26-november-1-2",
-    "publishedAt": "2026-11-02T08:01:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "weekly-security-highlights-oct-26-nov-1",
-      "article-a1e5455f",
-      "a1e5455f",
-      "weekly-security-highlights-oct-26-nov-1-1c5834"
-    ]
-  },
-  {
-    "slug": "volta-infostealer-harvests-gmail-discord-uses-ai-p-3cf735be",
-    "title": "VOLTA Infostealer Harvests Gmail, Discord, Uses AI Profiling",
-    "summary": "A new Windows infostealer named VOLTA captures Gmail, Discord, and other login sessions, surpassing basic credential theft. It forwards the loot to an AI model that analyzes the data and produces a detailed victim value report, revealing advanced profiling. Security teams should block VOLTA’s download URLs, monitor outbound traffic to AI endpoints, and enforce multi‑factor authentication on affected services.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/volta-malware-steals-gmail/",
-    "publishedAt": "2026-11-02T07:33:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "volta-infostealer-harvests-gmail-discord-uses-ai-p",
-      "article-3cf735be",
-      "3cf735be",
-      "volta-infostealer-harvests-gmail-discord-uses-ai-p-209f2b",
-      "volta-infostealer-harvests-gmail-discord-uses-ai-profiling"
-    ]
-  },
-  {
-    "slug": "deepseek-releases-super-agent-coding-tool-d4a951b1",
-    "title": "DeepSeek Releases Super-Agent Coding Tool",
-    "summary": "DeepSeek unveiled dsh-superagent, a research prototype that automates coding tasks on GitHub repositories. The agent activates when an authorized user requests work or a team rule matches, and it can be invoked by mentioning the agent in chat or GitHub scopes. Developers can integrate the prototype into collaborative workflows, but should review its permissions and usage policies before deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/deepseek-dsh-superagent/",
-    "publishedAt": "2026-11-02T07:09:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deepseek-releases-super-agent-coding-tool",
-      "article-d4a951b1",
-      "d4a951b1",
-      "deepseek-releases-super-agent-coding-tool-1b328b"
-    ]
-  },
-  {
-    "slug": "ai-agent-command-policy-first-ten-lines-6be8061f",
-    "title": "AI Agent Command Policy: First Ten Lines",
-    "summary": "Vinay Thakker, KloudStax CTO, outlines a command policy framework for AI coding agents. The policy emphasizes running agents under distinct identities, attaching the user’s identity when acting on their behalf, and correcting credential proxy misuse. Thakker also recommends the first ten lines of a policy and measures to prevent data exfiltration via package installs.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/vinay-thakker-kloudstax-ai-agent-access-control/",
-    "publishedAt": "2026-11-02T06:30:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agent-command-policy-first-ten-lines",
-      "article-6be8061f",
-      "6be8061f",
-      "ai-agent-command-policy-first-ten-lines-485002"
     ]
   }
 ];

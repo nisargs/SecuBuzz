@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 10:45:57 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 11:31:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:95498: Important: libX11 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95498-important-libx11-security-update-76df154d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95498-important-libx11-security-update-76df154d</guid>
+      <description><![CDATA[An update for libX11 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 11:12:09 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95498">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google puts new limits on AI agents that hunt threats and fix vulnerabilities</title>
+      <link>https://secubuzz.com/news/google-puts-new-limits-on-ai-agents-that-hunt-thre-9630c841</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-puts-new-limits-on-ai-agents-that-hunt-thre-9630c841</guid>
+      <description><![CDATA[Google Cloud is adding new controls to CodeMender, its AI tool for finding and fixing software vulnerabilities, allowing businesses to isolate attack simulations and target code scans more precisely. The updates let businesses verify vulnerabilities and simulate exploits in an operating system-level sandbox or an isolated virtual machine.]]></description>
+      <pubDate>Thu, 05 Nov 2026 11:02:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/google-cloud-ai-agents-security-controls/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Hackers Hide Marsalek Malware in Fake Roblox and Fortnite Cheats to Steal Passwords and Crypto Wallet Data</title>
+      <link>https://secubuzz.com/news/hackers-hide-marsalek-malware-in-fake-roblox-and-f-bdfbb6db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-hide-marsalek-malware-in-fake-roblox-and-f-bdfbb6db</guid>
+      <description><![CDATA[Hackers are hiding a free information stealer called Marsalek inside fake cheats and tools for games such as Roblox, Fortnite, and Counter-Strike 2. In the background they steal saved passwords, browser cookies, Discord tokens, and crypto wallet data from Windows PCs.]]></description>
+      <pubDate>Thu, 05 Nov 2026 10:59:30 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-hide-marsalek-malware/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95497: Important: libX11 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95497-important-libx11-security-update-eb58447d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95497-important-libx11-security-update-eb58447d</guid>
+      <description><![CDATA[An update for libX11 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 10:59:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95497">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:95482: Important: gimp:2.8 security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-95482-important-gimp-2-8-security-bug-fi-442dc4ba</link>
@@ -62,6 +98,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:95478: Important: bind security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95478-important-bind-security-bug-fix-an-444d1a56</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95478-important-bind-security-bug-fix-an-444d1a56</guid>
+      <description><![CDATA[An update for bind is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 05 Nov 2026 08:58:34 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95478">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>CERT‑In Reports AI‑Driven Attacks Target BFSI Consoles</title>
       <link>https://secubuzz.com/news/cert-in-reports-ai-driven-attacks-target-bfsi-cons-0bf4ab91</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cert-in-reports-ai-driven-attacks-target-bfsi-cons-0bf4ab91</guid>
@@ -114,6 +159,15 @@
       <pubDate>Thu, 05 Nov 2026 07:24:28 GMT</pubDate>
       <source url="https://cybersecuritynews.com/critical-citrix-xenserver-vulnerability/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95435: Important: bind security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95435-important-bind-security-bug-fix-an-a4d48342</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95435-important-bind-security-bug-fix-an-a4d48342</guid>
+      <description><![CDATA[An update for bind is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 05 Nov 2026 07:23:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95435">Red Hat Security Advisories</source>
+      <category>General</category>
     </item>
     <item>
       <title>Top 10 Security Data Lake Platforms 2026</title>
@@ -269,6 +323,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Ukraine Dismisses Security Officials Over Fraudulent Call Center Scheme</title>
+      <link>https://secubuzz.com/news/ukraine-dismisses-security-officials-over-fraudule-3e0e132d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-dismisses-security-officials-over-fraudule-3e0e132d</guid>
+      <description><![CDATA[Ukraine's security service dismissed two senior officials following a corruption probe into fraudulent call center operations. Investigators found the criminal network bribed law enforcement personnel to protect illicit call centers and illegal activities from police intervention. Government authorities terminated the implicated officials as broader law enforcement actions continue against the underlying financial fraud scheme.]]></description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://therecord.media/ukraine-fires-senior-security-officials-amid-scam-center-corruption-investigation">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Chainalysis User Data Exposed in Cyberattack</title>
       <link>https://secubuzz.com/news/chainalysis-user-data-exposed-in-cyberattack-f0f422a0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-user-data-exposed-in-cyberattack-f0f422a0</guid>
@@ -392,69 +455,6 @@
       <description><![CDATA[The SkyW4lker phishing kit targets US enterprise organizations to facilitate Microsoft 365 account takeovers without requiring stolen user passwords. The kit abuses Microsoft device-code sign-in flows to trick users into authorizing attacker access, granting valid sessions to corporate mailboxes, documents, and connected applications.]]></description>
       <pubDate>Wed, 04 Nov 2026 18:43:01 GMT</pubDate>
       <source url="https://cybersecuritynews.com/skyw4lker-phishing-campaign-expands-threatening-us-enterprises-with-microsoft-365-account-takeovers/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Chrome 158.0.8127.18/.19 Stable Desktop Update</title>
-      <link>https://secubuzz.com/news/chrome-158-0-8127-18-19-stable-desktop-update-f0d8cb49</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-0-8127-18-19-stable-desktop-update-f0d8cb49</guid>
-      <description><![CDATA[Google Chrome released Stable channel build 158.0.8127.18/.19 for Windows as an early stable rollout to a small percentage of users. This desktop update introduces no specific CVE-identified vulnerability; it is a routine browser patch cycle. Security teams should monitor for any reported regressions and validate stability before full deployment across enterprise fleets.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:33:09 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>NCSC 10th Annual Review on Cyber Resilience Basics</title>
-      <link>https://secubuzz.com/news/ncsc-10th-annual-review-on-cyber-resilience-basics-129a4078</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ncsc-10th-annual-review-on-cyber-resilience-basics-129a4078</guid>
-      <description><![CDATA[The UK NCSC published its 10th Annual Review and 'State of Cyber Nation' report, framing cyber resilience as foundational rather than advanced. The report emphasizes basic hygiene practices as the starting point for long-term defense improvements. Organizations are advised to prioritize fundamentals before investing in complex defensive architectures.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:25:50 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/blog-uk/the-next-decade-of-cyber-resilience-starts-with-the-basics/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat releases osbuild-composer security update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-osbuild-composer-security-update-bc9f002f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-osbuild-composer-security-update-bc9f002f</guid>
-      <description><![CDATA[Red Hat issued a security update for osbuild-composer on RHEL 9, addressing multiple vulnerabilities identified in the build system. The update carries an Important impact rating, with CVSS scores available via CVE links, but no active exploitation has been reported. Red Hat recommends applying the patch immediately and reviewing build configurations to mitigate potential privilege escalation.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:20:59 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95272">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95281: Moderate: xorg-x11-server-Xwayland security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95281-moderate-xorg-x11-server-xwayland-25d890e2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95281-moderate-xorg-x11-server-xwayland-25d890e2</guid>
-      <description><![CDATA[An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:14:17 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95281">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SOC Leaders Face Evolving Operational Challenges in 2027</title>
-      <link>https://secubuzz.com/news/soc-leaders-face-evolving-operational-challenges-i-21f7e140</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/soc-leaders-face-evolving-operational-challenges-i-21f7e140</guid>
-      <description><![CDATA[Security Operations Center and managed security service provider teams face mounting operational pressure from evolving attack techniques, rising alert volumes, and budget constraints. Complex threat environments and persistent staffing shortages hinder effective detection and investigation capabilities across enterprise environments. Security leaders must prioritize threat intelligence integration to enhance detection capabilities and streamline investigation workflows.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:07:24 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/6-challenges-soc-leaders-should-turn-into-priorities-in-2027/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>French Blood Establishment Cold Room Cyberattack</title>
-      <link>https://secubuzz.com/news/french-blood-establishment-cold-room-cyberattack-96b7ee70</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/french-blood-establishment-cold-room-cyberattack-96b7ee70</guid>
-      <description><![CDATA[A cyberattack targeted a refrigeration equipment provider serving the French Blood Establishment, causing temperature anomalies in three national blood bank cold rooms. Monitoring systems detected deviations and allowed operators to reverse parameter changes before any blood product was compromised. The incident did not compromise patient data or blood inventory.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:02:56 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>mSecure Urges Password Changes Without Disclosure</title>
-      <link>https://secubuzz.com/news/msecure-urges-password-changes-without-disclosure-17b8d323</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/msecure-urges-password-changes-without-disclosure-17b8d323</guid>
-      <description><![CDATA[mSecure has instructed users to change passwords across its application without publicly disclosing the underlying cause or confirming any data exposure. The advisory lacks technical specifics, making independent verification impossible. Users should treat the password reset as precautionary until official confirmation clarifies the scope and threat vector.]]></description>
-      <pubDate>Wed, 04 Nov 2026 17:02:25 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/data-breaches/2026/11/msecure-tells-users-to-change-passwords-but-wont-say-why">Malwarebytes Labs</source>
       <category>Breach</category>
     </item>
   </channel>
