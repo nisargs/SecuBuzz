@@ -11,6 +11,63 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "phishers-exploit-fake-spacex-events-for-microsoft-480fdb89",
+    "title": "Phishers Exploit Fake SpaceX Events for Microsoft, Google Credentials",
+    "summary": "Hackers used counterfeit OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, targeting Microsoft and Google accounts. The phishing‑as‑a‑service platforms delivered credential phishing that captured Microsoft and Google authentication sessions, enabling attackers to hijack accounts. Security teams should verify event invitations, enforce multi‑factor authentication, and monitor for anomalous login sessions to mitigate credential compromise.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
+    "publishedAt": "2026-11-05T21:30:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishers-exploit-fake-spacex-events-for-microsoft",
+      "article-480fdb89",
+      "480fdb89",
+      "phishers-exploit-fake-spacex-events-for-microsoft-4e1aa3",
+      "phishers-exploit-fake-spacex-events-for-microsoft-google-cre"
+    ]
+  },
+  {
+    "slug": "phishing-simulation-exceeds-scope-exposes-users-to-e956d915",
+    "title": "Phishing Simulation Exceeds Scope, Exposes Users to Real Threats",
+    "summary": "Dark Reading editors highlighted a phishing simulation that exceeded its intended scope, exposing participants to real phishing content. The exercise, meant to test user awareness, inadvertently triggered legitimate phishing attempts, raising concerns about accidental credential compromise. Teams should review simulation parameters, enforce strict boundaries, and monitor for unintended credential leakage to prevent real-world exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/what-we-missed-knicks-phishing-test-out-of-bounds",
+    "publishedAt": "2026-11-05T21:00:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishing-simulation-exceeds-scope-exposes-users-to",
+      "article-e956d915",
+      "e956d915",
+      "phishing-simulation-exceeds-scope-exposes-users-to-2fb4a5",
+      "phishing-simulation-exceeds-scope-exposes-users-to-real-thre"
+    ]
+  },
+  {
+    "slug": "google-meta-tiktok-sue-california-over-youth-prote-fbe3bf35",
+    "title": "Google, Meta, TikTok Sue California Over Youth Protection Law",
+    "summary": "Google, Meta, and TikTok filed federal suits to block a California law that prohibits deploying psychologically exploitative features for users under 15. The lawsuit argues the law infringes on platform freedom and could stifle innovation while protecting minors from compulsive use. Courts will evaluate the law's compatibility with First Amendment rights and the platforms' responsibility to safeguard youth engagement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/social-media-giants-sue-california-over-social-media-law",
+    "publishedAt": "2026-11-05T20:48:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-meta-tiktok-sue-california-over-youth-prote",
+      "article-fbe3bf35",
+      "fbe3bf35",
+      "google-meta-tiktok-sue-california-over-youth-prote-297b95",
+      "google-meta-tiktok-sue-california-over-youth-protection-law"
+    ]
+  },
+  {
     "slug": "truffle-security-launches-secret-revocation-initia-0c63b467",
     "title": "Truffle Security Launches Secret Revocation Initiative",
     "summary": "Truffle Security announced a free Secrets Revocation Program to help API key issuers invalidate 1.4 million publicly exposed secrets. The initiative provides automated tooling and guidance to identify active secrets, revoke them, and monitor for re‑exposure, reducing credential‑based attack surface. Security teams should adopt the program, integrate revocation checks into CI/CD pipelines, and maintain strict secret lifecycle policies.",
@@ -159,6 +216,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-critical-webkit2gtk3-security-upd-c181fe76",
+    "title": "Red Hat Releases Critical WebKit2GTK3 Security Update",
+    "summary": "Red Hat issued a critical update for the webkit2gtk3 component in RHEL 8.8, addressing multiple security vulnerabilities. The vulnerabilities, detailed in linked CVE references, allow attackers to exploit the rendering engine, potentially leading to remote code execution. Red Hat recommends applying the webkit2gtk3 update immediately; no workarounds are available, and the patch mitigates all identified flaws.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95602",
+    "publishedAt": "2026-11-05T17:33:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-webkit2gtk3-security-upd",
+      "article-c181fe76",
+      "c181fe76",
+      "red-hat-releases-critical-webkit2gtk3-security-upd-37d83e",
+      "red-hat-releases-critical-webkit2gtk3-security-update"
+    ]
+  },
+  {
     "slug": "openai-model-exploits-948-linux-kernel-privilege-e-decf7046",
     "title": "OpenAI Model Exploits 948 Linux Kernel Privilege Escalations",
     "summary": "An unreleased OpenAI cyber model discovered and exploited 948 distinct Linux kernel privilege escalation bugs. The flaws enable kernel-level privilege escalation, allowing attackers to gain root access on affected systems and reportedly generate about $1.2 million in illicit revenue. Red Hat and other vendors should apply the latest kernel patches, and security teams should monitor for anomalous privilege escalation activity.",
@@ -175,6 +251,24 @@ export const news: NewsBrief[] = [
       "decf7046",
       "openai-model-exploits-948-linux-kernel-privilege-e-47237d",
       "openai-model-exploits-948-linux-kernel-privilege-escalations"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-kpatch-security-update-155014be",
+    "title": "Red Hat Issues Important kpatch Security Update",
+    "summary": "Red Hat released an important security update for multiple kpatch packages in RHEL 8.8, addressing several kernel patch vulnerabilities. The CVE references linked in the advisory indicate that the patches fix kernel memory corruption issues that could lead to privilege escalation. Administrators should apply the kpatch updates promptly; no workarounds are available, and the patch mitigates all identified kernel flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95601",
+    "publishedAt": "2026-11-05T17:25:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-kpatch-security-update",
+      "article-155014be",
+      "155014be",
+      "red-hat-issues-important-kpatch-security-update-37d83e"
     ]
   },
   {
@@ -326,6 +420,45 @@ export const news: NewsBrief[] = [
       "fa2b9750",
       "cve-2026-119083-gluonts-arbitrary-file-write-durin-4a0f16",
       "cve-2026-119083-gluonts-arbitrary-file-write-during-archive-"
+    ]
+  },
+  {
+    "slug": "openssh-fixes-long-password-ssh-bypass-on-alpine-c7788958",
+    "title": "OpenSSH Fixes Long‑Password SSH Bypass on Alpine",
+    "summary": "OpenSSH issued an emergency patch for a critical flaw that let passwords 257–1,024 bytes bypass authentication on Alpine Linux. The bug involved improper buffer handling, letting attackers with network access and a valid account name log in without a key. Users should upgrade to OpenSSH 10.6p2; Alpine has released fixed packages for all supported releases, and no workarounds exist.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+    "publishedAt": "2026-11-05T16:42:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openssh-fixes-long-password-ssh-bypass-on-alpine",
+      "article-c7788958",
+      "c7788958",
+      "openssh-fixes-long-password-ssh-bypass-on-alpine-33c1d3"
+    ]
+  },
+  {
+    "slug": "openai-chatgpt-lockdown-mode-bypass-exfiltration-v-2aeb8abd",
+    "title": "OpenAI ChatGPT Lockdown Mode Bypass Exfiltration Vulnerability",
+    "summary": "Researchers uncovered a flaw bypassing OpenAI ChatGPT's Lockdown Mode, enabling unauthorized data exfiltration from chats. The vulnerability, CVE-2026-58868, permits silent extraction of chat content and phishing vectors without user interaction, posing credential theft risk; no public exploit reported. OpenAI released a patch to restore Lockdown Mode; teams should apply it promptly and monitor outbound traffic.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+    "publishedAt": "2026-11-05T16:42:32.000Z",
+    "cves": [
+      "CVE-2026-58868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openai-chatgpt-lockdown-mode-bypass-exfiltration-v",
+      "article-2aeb8abd",
+      "2aeb8abd",
+      "openai-chatgpt-lockdown-mode-bypass-exfiltration-v-454e96",
+      "openai-chatgpt-lockdown-mode-bypass-exfiltration-vulnerabili"
     ]
   },
   {
@@ -499,6 +632,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "github-blocks-pull-request-target-workflows-by-def-1be554cc",
+    "title": "GitHub Blocks pull_request_target Workflows by Default",
+    "summary": "GitHub will block pull_request_target workflows by default on December 2, tightening Actions security. The change removes privileged execution triggered by pull requests, reducing malicious code injection risk in CI pipelines. Maintainers must adjust workflows to use pull_request or push events, request an exception via GitHub support, and verify least privilege properly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/github-to-block-pull-request-target",
+    "publishedAt": "2026-11-05T15:01:39.110Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-blocks-pull-request-target-workflows-by-def",
+      "article-1be554cc",
+      "1be554cc",
+      "github-blocks-pull-request-target-workflows-by-def-10129e",
+      "github-blocks-pull-request-target-workflows-by-default"
+    ]
+  },
+  {
     "slug": "service-desk-identity-gap-exploited-for-mfa-bypass-31313919",
     "title": "Service Desk Identity Gap Exploited for MFA Bypass",
     "summary": "Attackers target IT service desks to bypass MFA by impersonating staff and persuading employees to reset passwords or register authentication devices. Specops Software warns that traditional identity verification is insufficient, enabling social engineering at the desk to grant attackers credential control without MFA. Defenders should enforce MFA for service desk actions, limit password reset permissions, and monitor anomalous authentication requests.",
@@ -613,6 +765,24 @@ export const news: NewsBrief[] = [
       "f1994b83",
       "ca-certificates-jks-integration-bug-fixed-in-updat-7e89b7",
       "ca-certificates-jks-integration-bug-fixed-in-update"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-flatpak-security-update-266788d2",
+    "title": "Red Hat Releases Flatpak Security Update",
+    "summary": "Red Hat released a security update for flatpak on Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On, addressing several vulnerabilities. The update is rated Important, and each vulnerability’s CVSS base score is provided via CVE links in the references. Users should install the latest flatpak package to protect against the disclosed weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95493",
+    "publishedAt": "2026-11-05T14:45:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-flatpak-security-update",
+      "article-266788d2",
+      "266788d2",
+      "red-hat-releases-flatpak-security-update-37d845"
     ]
   },
   {
@@ -859,6 +1029,24 @@ export const news: NewsBrief[] = [
       "article-88e5c7a0",
       "88e5c7a0",
       "frr-regression-restores-rpki-update-processing-7e2a1f"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-delve-security-update-0d3b2f55",
+    "title": "Red Hat Issues Delve Security Update",
+    "summary": "Red Hat issued a security update for the delve tool on Red Hat Enterprise Linux 9.8 Extended Update Support, addressing multiple vulnerabilities. The update is rated as Important, and each affected vulnerability has an associated CVSS base score linked through CVE references. Security teams should apply the latest delve package to mitigate the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95518",
+    "publishedAt": "2026-11-05T13:37:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-delve-security-update",
+      "article-0d3b2f55",
+      "0d3b2f55",
+      "red-hat-issues-delve-security-update-37d842"
     ]
   },
   {
@@ -9330,203 +9518,6 @@ export const news: NewsBrief[] = [
       "b53a47be",
       "rhsa-2026-93925-important-bind-security-bug-fix-an-37d91c",
       "rhsa-2026-93925-important-bind-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-ghostscript-update-for-rh-f2e94468",
-    "title": "Red Hat Issues Important Ghostscript Update for RHEL8",
-    "summary": "Red Hat released an Important security update for Ghostscript on Red Hat Enterprise Linux 8, addressing a critical flaw. The advisory references multiple CVEs with CVSS base scores, indicating a high‑severity vulnerability that could allow remote code execution if exploited. Users should apply the RHSA‑2026:93978 update immediately or upgrade to the latest Ghostscript package to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93978",
-    "publishedAt": "2026-11-02T18:18:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-ghostscript-update-for-rh",
-      "article-f2e94468",
-      "f2e94468",
-      "red-hat-issues-important-ghostscript-update-for-rh-37d91b",
-      "red-hat-issues-important-ghostscript-update-for-rhel8"
-    ]
-  },
-  {
-    "slug": "google-dismantles-1-3-million-device-android-tv-bo-548e3a98",
-    "title": "Google Dismantles 1.3‑Million‑Device Android TV Botnet",
-    "summary": "Google and partners dismantled a 1.3‑million‑device Android TV botnet that targeted Videostrong XCPE firmware. The flaw allowed remote code execution and enabled malicious firmware to serve as a command‑and‑control hub for data exfiltration. Google issued a device‑wide removal directive, banned the vendor, and urged security teams to update firmware and monitor for residual signatures.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
-    "publishedAt": "2026-11-02T18:16:34.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/google-disrupts-1-3-million-device-android-botnet-says"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/google-dismantles-xcpe-botnet/"
-      }
-    ],
-    "aliases": [
-      "google-dismantles-1-3-million-device-android-tv-bo",
-      "article-548e3a98",
-      "548e3a98",
-      "google-dismantles-1-3-million-device-android-tv-bo-668192",
-      "google-dismantles-1-3-million-device-android-tv-botnet"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-quarkus-3-33-4-sp2-security-updat-401bf2ff",
-    "title": "Red Hat releases Quarkus 3.33.4.SP2 security update",
-    "summary": "Red Hat released a security update for its Quarkus 3.33.4.SP2 build, addressing a flaw that could impact application integrity. The flaw, rated as Important, is documented with a CVSS base score, though the specific CVE identifier is not disclosed in the advisory. Red Hat recommends applying the Quarkus 3.33.4.SP2 update immediately to eliminate the vulnerability; no workarounds are listed.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93902",
-    "publishedAt": "2026-11-02T18:07:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-quarkus-3-33-4-sp2-security-updat",
-      "article-401bf2ff",
-      "401bf2ff",
-      "red-hat-releases-quarkus-3-33-4-sp2-security-updat-37d91c",
-      "red-hat-releases-quarkus-3-33-4-sp2-security-update"
-    ]
-  },
-  {
-    "slug": "quarkus-3-27-6-sp2-update-addresses-security-issue-0488b5e3",
-    "title": "Quarkus 3.27.6.SP2 Update Addresses Security Issues",
-    "summary": "Red Hat released a security update for its Quarkus 3.27.6.SP2 build on RHEL, targeting multiple framework vulnerabilities. The patch addresses flaws that could enable remote code execution or privilege escalation, with CVSS scores linked in the advisory. Red Hat advises applying the update through standard RHEL channels; no work‑arounds are documented.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93908",
-    "publishedAt": "2026-11-02T18:07:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "quarkus-3-27-6-sp2-update-addresses-security-issue",
-      "article-0488b5e3",
-      "0488b5e3",
-      "quarkus-3-27-6-sp2-update-addresses-security-issue-37d91c",
-      "quarkus-3-27-6-sp2-update-addresses-security-issues"
-    ]
-  },
-  {
-    "slug": "gimp-update-fixes-security-vulnerabilities-e2e62731",
-    "title": "GIMP Update Fixes Security Vulnerabilities",
-    "summary": "Red Hat released a security update for GIMP on RHEL 9.8 EUS, addressing multiple image‑editing software vulnerabilities. The patch mitigates flaws that could allow remote attackers to execute code or cause denial of service, as indicated by CVSS scores linked in the advisory. Red Hat recommends applying the update via standard RHEL update channels; no work‑arounds are provided.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93975",
-    "publishedAt": "2026-11-02T17:58:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gimp-update-fixes-security-vulnerabilities",
-      "article-e2e62731",
-      "e2e62731",
-      "gimp-update-fixes-security-vulnerabilities-37d91b"
-    ]
-  },
-  {
-    "slug": "mercado-bitcoin-breach-involves-40m-suspicious-tra-6c73a023",
-    "title": "Mercado Bitcoin Breach Involves $40M Suspicious Transfers",
-    "summary": "Brazilian cryptocurrency exchange Mercado Bitcoin detected a security incident that halted deposits and withdrawals on November 2, 2026. Security firm Hypernative identified more than $40 million in suspicious transfers across at least ten blockchains, indicating potential credential theft or compromised wallet access.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/mercado-bitcoin-suffers-cyberattack/",
-    "publishedAt": "2026-11-02T17:54:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mercado-bitcoin-breach-involves-40m-suspicious-tra",
-      "article-6c73a023",
-      "6c73a023",
-      "mercado-bitcoin-breach-involves-40m-suspicious-tra-3be776",
-      "mercado-bitcoin-breach-involves-40m-suspicious-transfers"
-    ]
-  },
-  {
-    "slug": "amazon-vew-exposes-template-injection-vulnerabilit-0116f358",
-    "title": "Amazon VEW Exposes Template Injection Vulnerability CVE-2026-119085",
-    "summary": "Amazon Virtual Engineering Workbench (VEW) suffers a template injection flaw (CVE‑2026‑119085) in its publishing component. The flaw allows an authenticated third party to inject malicious template code, enabling arbitrary code execution with the publishing Lambda’s IAM role permissions. Amazon has released a patch covering all affected commits before c146486; users should update VEW or apply the workaround to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/",
-    "publishedAt": "2026-11-02T17:41:34.000Z",
-    "cves": [
-      "CVE-2026-119085"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "amazon-vew-exposes-template-injection-vulnerabilit",
-      "article-0116f358",
-      "0116f358",
-      "amazon-vew-exposes-template-injection-vulnerabilit-7d4079",
-      "amazon-vew-exposes-template-injection-vulnerability-cve-2026"
-    ]
-  },
-  {
-    "slug": "synology-ai-driven-attack-detection-and-mitigation-4281090b",
-    "title": "Synology AI-Driven Attack Detection and Mitigation",
-    "summary": "Synology issued a critical alert for AI-driven attacks targeting its NAS devices, prompting immediate detection measures. The advisory recommends reviewing root-cause telemetry, applying detection rules, and deploying the latest security patch to mitigate exploitation of the underlying vulnerability. Security teams should implement the provided rules and update firmware to close the attack surface.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/synology-warns-of-c3rb3r-ransomware-attacks-targeting-n",
-    "publishedAt": "2026-11-02T17:25:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "synology-ai-driven-attack-detection-and-mitigation",
-      "article-4281090b",
-      "4281090b",
-      "synology-ai-driven-attack-detection-and-mitigation-718b17"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-for-rhel-9-8-7e223b0b",
-    "title": "Red Hat Kernel Update for RHEL 9.8",
-    "summary": "A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 9.8 Extended Update Support, affecting the Linux kernel component. The update mitigates moderate‑severity flaws, each identified by CVE references, and the CVSS base score indicates a moderate impact. Red Hat recommends applying the patch immediately to prevent exploitation of the kernel vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93930",
-    "publishedAt": "2026-11-02T17:18:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-for-rhel-9-8",
-      "article-7e223b0b",
-      "7e223b0b",
-      "red-hat-kernel-update-for-rhel-9-8-37d91c"
-    ]
-  },
-  {
-    "slug": "polymarket-to-refund-3-9m-after-compromise-2962b7ad",
-    "title": "Polymarket to Refund $3.9M After Compromise",
-    "summary": "Polymarket announced it will reimburse users $3.9 million following a site compromise that disrupted services and caused financial losses. The incident involved unauthorized access to the platform, though no evidence of data exfiltration or credential theft has been disclosed. Polymarket is conducting a post‑mortem, tightening security controls, and urging users to monitor accounts for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise",
-    "publishedAt": "2026-11-02T17:05:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "polymarket-to-refund-3-9m-after-compromise",
-      "article-2962b7ad",
-      "2962b7ad",
-      "polymarket-to-refund-3-9m-after-compromise-ee0183"
     ]
   }
 ];

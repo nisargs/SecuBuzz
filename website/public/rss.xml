@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 20:16:36 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 21:44:18 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Phishers Exploit Fake SpaceX Events for Microsoft, Google Credentials</title>
+      <link>https://secubuzz.com/news/phishers-exploit-fake-spacex-events-for-microsoft-480fdb89</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishers-exploit-fake-spacex-events-for-microsoft-480fdb89</guid>
+      <description><![CDATA[Hackers used counterfeit OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, targeting Microsoft and Google accounts. The phishing‑as‑a‑service platforms delivered credential phishing that captured Microsoft and Google authentication sessions, enabling attackers to hijack accounts. Security teams should verify event invitations, enforce multi‑factor authentication, and monitor for anomalous login sessions to mitigate credential compromise.]]></description>
+      <pubDate>Thu, 05 Nov 2026 21:30:30 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Phishing Simulation Exceeds Scope, Exposes Users to Real Threats</title>
+      <link>https://secubuzz.com/news/phishing-simulation-exceeds-scope-exposes-users-to-e956d915</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-simulation-exceeds-scope-exposes-users-to-e956d915</guid>
+      <description><![CDATA[Dark Reading editors highlighted a phishing simulation that exceeded its intended scope, exposing participants to real phishing content. The exercise, meant to test user awareness, inadvertently triggered legitimate phishing attempts, raising concerns about accidental credential compromise. Teams should review simulation parameters, enforce strict boundaries, and monitor for unintended credential leakage to prevent real-world exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 21:00:47 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/what-we-missed-knicks-phishing-test-out-of-bounds">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Google, Meta, TikTok Sue California Over Youth Protection Law</title>
+      <link>https://secubuzz.com/news/google-meta-tiktok-sue-california-over-youth-prote-fbe3bf35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-meta-tiktok-sue-california-over-youth-prote-fbe3bf35</guid>
+      <description><![CDATA[Google, Meta, and TikTok filed federal suits to block a California law that prohibits deploying psychologically exploitative features for users under 15. The lawsuit argues the law infringes on platform freedom and could stifle innovation while protecting minors from compulsive use. Courts will evaluate the law's compatibility with First Amendment rights and the platforms' responsibility to safeguard youth engagement.]]></description>
+      <pubDate>Thu, 05 Nov 2026 20:48:00 GMT</pubDate>
+      <source url="https://therecord.media/social-media-giants-sue-california-over-social-media-law">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Truffle Security Launches Secret Revocation Initiative</title>
       <link>https://secubuzz.com/news/truffle-security-launches-secret-revocation-initia-0c63b467</link>
@@ -80,12 +107,30 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Releases Critical WebKit2GTK3 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-critical-webkit2gtk3-security-upd-c181fe76</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-webkit2gtk3-security-upd-c181fe76</guid>
+      <description><![CDATA[Red Hat issued a critical update for the webkit2gtk3 component in RHEL 8.8, addressing multiple security vulnerabilities. The vulnerabilities, detailed in linked CVE references, allow attackers to exploit the rendering engine, potentially leading to remote code execution. Red Hat recommends applying the webkit2gtk3 update immediately; no workarounds are available, and the patch mitigates all identified flaws.]]></description>
+      <pubDate>Thu, 05 Nov 2026 17:33:28 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95602">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>OpenAI Model Exploits 948 Linux Kernel Privilege Escalations</title>
       <link>https://secubuzz.com/news/openai-model-exploits-948-linux-kernel-privilege-e-decf7046</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openai-model-exploits-948-linux-kernel-privilege-e-decf7046</guid>
       <description><![CDATA[An unreleased OpenAI cyber model discovered and exploited 948 distinct Linux kernel privilege escalation bugs. The flaws enable kernel-level privilege escalation, allowing attackers to gain root access on affected systems and reportedly generate about $1.2 million in illicit revenue. Red Hat and other vendors should apply the latest kernel patches, and security teams should monitor for anomalous privilege escalation activity.]]></description>
       <pubDate>Thu, 05 Nov 2026 17:32:37 GMT</pubDate>
       <source url="https://www.securityweek.com/ai-agents-got-root-on-linux-via-948-kernel-flaws-in-openai-research/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important kpatch Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-kpatch-security-update-155014be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-kpatch-security-update-155014be</guid>
+      <description><![CDATA[Red Hat released an important security update for multiple kpatch packages in RHEL 8.8, addressing several kernel patch vulnerabilities. The CVE references linked in the advisory indicate that the patches fix kernel memory corruption issues that could lead to privilege escalation. Administrators should apply the kpatch updates promptly; no workarounds are available, and the patch mitigates all identified kernel flaws.]]></description>
+      <pubDate>Thu, 05 Nov 2026 17:25:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95601">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -158,6 +203,24 @@
       <description><![CDATA[Bulletin ID: 2026-171-AWS Publication Date: 11/05/2026 08:30 AM PST Description: GluonTS is an open-source Python library for probabilistic time series modeling. We identified CVE-2026-119083, an issue in the archive extraction utility in GluonTS before 0.17.0.]]></description>
       <pubDate>Thu, 05 Nov 2026 16:43:41 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-171-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>OpenSSH Fixes Long‑Password SSH Bypass on Alpine</title>
+      <link>https://secubuzz.com/news/openssh-fixes-long-password-ssh-bypass-on-alpine-c7788958</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssh-fixes-long-password-ssh-bypass-on-alpine-c7788958</guid>
+      <description><![CDATA[OpenSSH issued an emergency patch for a critical flaw that let passwords 257–1,024 bytes bypass authentication on Alpine Linux. The bug involved improper buffer handling, letting attackers with network access and a valid account name log in without a key. Users should upgrade to OpenSSH 10.6p2; Alpine has released fixed packages for all supported releases, and no workarounds exist.]]></description>
+      <pubDate>Thu, 05 Nov 2026 16:42:46 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI ChatGPT Lockdown Mode Bypass Exfiltration Vulnerability</title>
+      <link>https://secubuzz.com/news/openai-chatgpt-lockdown-mode-bypass-exfiltration-v-2aeb8abd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-chatgpt-lockdown-mode-bypass-exfiltration-v-2aeb8abd</guid>
+      <description><![CDATA[Researchers uncovered a flaw bypassing OpenAI ChatGPT's Lockdown Mode, enabling unauthorized data exfiltration from chats. The vulnerability, CVE-2026-58868, permits silent extraction of chat content and phishing vectors without user interaction, posing credential theft risk; no public exploit reported. OpenAI released a patch to restore Lockdown Mode; teams should apply it promptly and monitor outbound traffic.]]></description>
+      <pubDate>Thu, 05 Nov 2026 16:42:32 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html">The Hacker News</source>
       <category>CVE</category>
     </item>
     <item>
@@ -242,6 +305,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>GitHub Blocks pull_request_target Workflows by Default</title>
+      <link>https://secubuzz.com/news/github-blocks-pull-request-target-workflows-by-def-1be554cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-blocks-pull-request-target-workflows-by-def-1be554cc</guid>
+      <description><![CDATA[GitHub will block pull_request_target workflows by default on December 2, tightening Actions security. The change removes privileged execution triggered by pull requests, reducing malicious code injection risk in CI pipelines. Maintainers must adjust workflows to use pull_request or push events, request an exception via GitHub support, and verify least privilege properly.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:01:39 GMT</pubDate>
+      <source url="https://socket.dev/blog/github-to-block-pull-request-target">Socket.dev</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Service Desk Identity Gap Exploited for MFA Bypass</title>
       <link>https://secubuzz.com/news/service-desk-identity-gap-exploited-for-mfa-bypass-31313919</link>
       <guid isPermaLink="true">https://secubuzz.com/news/service-desk-identity-gap-exploited-for-mfa-bypass-31313919</guid>
@@ -293,6 +365,15 @@
       <description><![CDATA[A bug was discovered where the ca-certificates JKS integration failed to properly remove CA certificates from the system bundle when they were removed from the JKS keystore. The update corrects the integration logic and resyncs the keystore with the current system CA certificates list. This is a routine scheduled security patch addressing a local configuration defect without active exploitation.]]></description>
       <pubDate>Thu, 05 Nov 2026 14:46:13 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9001-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Flatpak Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-flatpak-security-update-266788d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-flatpak-security-update-266788d2</guid>
+      <description><![CDATA[Red Hat released a security update for flatpak on Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On, addressing several vulnerabilities. The update is rated Important, and each vulnerability’s CVSS base score is provided via CVE links in the references. Users should install the latest flatpak package to protect against the disclosed weaknesses.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:45:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95493">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -375,87 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 14:08:01 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hyflock-ransomware/">Cyber Security News</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>ChatGPT Runtime Flaw Enables Silent DNS Exfiltration</title>
-      <link>https://secubuzz.com/news/chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-eb304005</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-eb304005</guid>
-      <description><![CDATA[Check Point Research identified a flaw in ChatGPT’s runtime that let attackers exfiltrate conversation data silently via DNS tunneling, bypassing network isolation. The vulnerability enables covert data leakage without triggering runtime controls, and a patch was issued immediately after discovery. Users should upgrade to the latest ChatGPT release and monitor DNS traffic for anomalies to mitigate exfiltration.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:00:11 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/">Check Point Research</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Norad Grants Portal Data Exposed in Cyberattack</title>
-      <link>https://secubuzz.com/news/norad-grants-portal-data-exposed-in-cyberattack-e40db7cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/norad-grants-portal-data-exposed-in-cyberattack-e40db7cc</guid>
-      <description><![CDATA[Norad disclosed that a cyberattack may have exposed names and email addresses of 20,614 Grants Portal users. The breach likely stemmed from weak access controls and lack of monitoring, enabling attackers to pull user data from the database. Norad is investigating, notifying affected users, and will strengthen authentication, patch vulnerabilities, and improve monitoring.]]></description>
-      <pubDate>Thu, 05 Nov 2026 13:56:49 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/norad-grants-portal-breach/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>PortSwigger Burp AT Enables Enterprise Pentest Delegation</title>
-      <link>https://secubuzz.com/news/portswigger-burp-at-enables-enterprise-pentest-del-69f679d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/portswigger-burp-at-enables-enterprise-pentest-del-69f679d8</guid>
-      <description><![CDATA[PortSwigger released Burp AT for enterprises, an agentic pentesting solution that lets security teams delegate application investigations to autonomous agents. The platform combines specialist Burp tools with purpose-built pentesting skills and relevant application context to plan testing approaches and adapt dynamically. This is a vendor product announcement classified as GENERAL with LOW severity.]]></description>
-      <pubDate>Thu, 05 Nov 2026 13:48:16 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/portswigger-burp-at-enterprises/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FRR Regression Restores RPKI Update Processing</title>
-      <link>https://secubuzz.com/news/frr-regression-restores-rpki-update-processing-88e5c7a0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/frr-regression-restores-rpki-update-processing-88e5c7a0</guid>
-      <description><![CDATA[A regression from the CVE-2024-55553 fix caused FRR to stop processing RPKI updates after the first one, blocking route revalidation. The regression, CVE-2024-44070, also made the BGP daemon fail to start with RPKI enabled on Ubuntu 20.04 LTS, creating denial‑of‑service. The USN-7230-3 update restores correct RPKI handling and BGP startup, eliminating the denial‑of‑service.]]></description>
-      <pubDate>Thu, 05 Nov 2026 13:39:13 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-7230-3">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>White House Network IP Rented via 28 Residential Proxy Services</title>
-      <link>https://secubuzz.com/news/white-house-network-ip-rented-via-28-residential-p-9c22cc98</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/white-house-network-ip-rented-via-28-residential-p-9c22cc98</guid>
-      <description><![CDATA[Researchers at Layer3 Intel discovered that 28 residential proxy services were renting IP addresses from the White House network between October 5 and November 3, 2026. Anyone could route web traffic through these proxies at minimal cost, exposing infrastructure details. This is an infrastructure exposure classified as BREACH with MEDIUM severity.]]></description>
-      <pubDate>Thu, 05 Nov 2026 13:31:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/white-house-network-ip-for-rent/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Sysdig AI Defense Enforces Runtime Guardrails on AI Agents</title>
-      <link>https://secubuzz.com/news/sysdig-ai-defense-enforces-runtime-guardrails-on-a-02b14aec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sysdig-ai-defense-enforces-runtime-guardrails-on-a-02b14aec</guid>
-      <description><![CDATA[Sysdig announced general availability of Sysdig AI Defense, a platform that monitors and controls AI agent activity across endpoints and cloud environments by checking actions against company policies. The solution allows, holds for approval, or blocks agent actions before completion while recording all activity for investigations and audits. This is a vendor product release classified as GENERAL with LOW severity.]]></description>
-      <pubDate>Thu, 05 Nov 2026 13:29:28 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/sysdig-ai-defense/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Phishing Sites Use Fake Suspended Pages to Evade Takedowns</title>
-      <link>https://secubuzz.com/news/phishing-sites-use-fake-suspended-pages-to-evade-t-3068a5ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishing-sites-use-fake-suspended-pages-to-evade-t-3068a5ff</guid>
-      <description><![CDATA[Over 200 phishing sites served fake ‘suspended’ pages to first‑time visitors while delivering malicious content to returning users. The tactic lets attackers evade takedowns by presenting a legitimate notice to new visitors, then redirecting them to phishing payloads on subsequent visits. Defenders should monitor domain reputation, block suspicious URLs, and enforce strict content‑security policies to detect deceptive landing pages.]]></description>
-      <pubDate>Thu, 05 Nov 2026 13:22:12 GMT</pubDate>
-      <source url="https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ARTEX Hackers Expose Servers Revealing AI Tools Behind Bank Breaches</title>
-      <link>https://secubuzz.com/news/artex-hackers-expose-servers-revealing-ai-tools-be-399999b4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/artex-hackers-expose-servers-revealing-ai-tools-be-399999b4</guid>
-      <description><![CDATA[Hackers in the ARTEX campaign exposed their own servers between late September and early October 2026, revealing AI models, scripts, and proxies used to breach seven South Korean financial firms. The self-disclosure provided researchers rare visibility into the operational infrastructure supporting the intrusions. No specific CVE identifier is stated, so this is classified as a VULNERABILITY with MEDIUM severity.]]></description>
-      <pubDate>Thu, 05 Nov 2026 13:11:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/artex-hackers/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95516: Critical: webkit2gtk3 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95516-critical-webkit2gtk3-security-bug-9702211f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95516-critical-webkit2gtk3-security-bug-9702211f</guid>
-      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 13:03:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95516">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
