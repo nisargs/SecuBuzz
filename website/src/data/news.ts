@@ -11,6 +11,97 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-security-update-for-delve-tool-b57ccc39",
+    "title": "Red Hat Issues Security Update for Delve Tool",
+    "summary": "Red Hat issued a security update for the delve tool on RHEL 10.2 Extended Update Support, fixing vulnerabilities that could enable potential unauthorized access. The advisory lists multiple CVSS base scores but does not provide specific CVE identifiers. Red Hat recommends applying the update immediately; no additional workarounds are required.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95519",
+    "publishedAt": "2026-11-05T12:32:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-security-update-for-delve-tool",
+      "article-b57ccc39",
+      "b57ccc39",
+      "red-hat-issues-security-update-for-delve-tool-37d842"
+    ]
+  },
+  {
+    "slug": "vizio-samsung-tvs-ignore-tracking-opt-outs-4dc2dd19",
+    "title": "Vizio Samsung TVs Ignore Tracking Opt‑Outs",
+    "summary": "Vizio and Samsung smart TVs appear to disregard user opt‑out requests for tracking, continuing data collection despite privacy settings. The flaw lets manufacturers transmit viewing data to third‑party analytics without explicit consent, violating user expectations and breaching privacy regulations. Users should verify firmware versions, apply vendor patches when available, and consider disabling telemetry through device settings or network filtering.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/vizio-samsung-smart-tvs-seem-to-ignore-tracking-opt-outs",
+    "publishedAt": "2026-11-05T12:10:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vizio-samsung-tvs-ignore-tracking-opt-outs",
+      "article-4dc2dd19",
+      "4dc2dd19",
+      "vizio-samsung-tvs-ignore-tracking-opt-outs-476618"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95505-important-resteasy-security-update-70e4ec9c",
+    "title": "RHSA-2026:95505: Important: resteasy security update",
+    "summary": "An update for resteasy is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95505",
+    "publishedAt": "2026-11-05T12:03:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95505-important-resteasy-security-update",
+      "article-70e4ec9c",
+      "70e4ec9c",
+      "rhsa-2026-95505-important-resteasy-security-update-37d842"
+    ]
+  },
+  {
+    "slug": "scammers-exploit-gta-6-hype-for-malware-crypto-sca-7d177acf",
+    "title": "Scammers Exploit GTA 6 Hype for Malware Crypto Scams",
+    "summary": "Scammers are exploiting the upcoming Grand Theft Auto VI release to distribute malware and run cryptocurrency scams via fake build sites. The campaign targets users July–October 2026, using domains that imitate leaker CyberLeek and promise early access or nonexistent mobile versions. Defenders should block these domains, warn users about phishing, and monitor for suspicious downloads or crypto wallet activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/gta-6-scams-fake-leaks-early-access/",
+    "publishedAt": "2026-11-05T11:41:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "scammers-exploit-gta-6-hype-for-malware-crypto-sca",
+      "article-7d177acf",
+      "7d177acf",
+      "scammers-exploit-gta-6-hype-for-malware-crypto-sca-101afe",
+      "scammers-exploit-gta-6-hype-for-malware-crypto-scams"
+    ]
+  },
+  {
+    "slug": "isc-stormcast-november-5th-2026-c6307e8f",
+    "title": "ISC Stormcast November 5th 2026",
+    "summary": "SANS Internet Storm Center published its Thursday Stormcast covering threat intelligence, incident reports, and defensive guidance for the week ending November 5th 2026. The broadcast aggregates actionable cybersecurity intelligence from multiple sources including incident handlers and threat analysts. Organizations should monitor ISC feeds for emerging threats and apply recommended mitigations accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33490",
+    "publishedAt": "2026-11-05T11:25:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-november-5th-2026",
+      "article-c6307e8f",
+      "c6307e8f",
+      "isc-stormcast-november-5th-2026-57dd7e"
+    ]
+  },
+  {
     "slug": "rhsa-2026-95498-important-libx11-security-update-76df154d",
     "title": "RHSA-2026:95498: Important: libX11 security update",
     "summary": "An update for libX11 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -82,6 +173,82 @@ export const news: NewsBrief[] = [
       "article-eb58447d",
       "eb58447d",
       "rhsa-2026-95497-important-libx11-security-update-37d845"
+    ]
+  },
+  {
+    "slug": "zyxel-switches-exploited-by-zero-day-flaw-c24256ad",
+    "title": "Zyxel Switches Exploited by Zero-Day Flaw",
+    "summary": "Zyxel GS1900 switches suffered an out‑of‑bounds write (CVE‑2026‑107441) that attackers used to execute OS commands via crafted HTTP requests. The flaw was mistakenly considered fixed in a patch that addressed CVE‑2026‑7273, leaving the zero‑day active and enabling remote code execution. Apply the correct update for CVE‑2026‑107441 or use the vendor’s interim workaround to stop the exploit.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/",
+    "publishedAt": "2026-11-05T10:56:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zyxel-switches-exploited-by-zero-day-flaw",
+      "article-c24256ad",
+      "c24256ad",
+      "zyxel-switches-exploited-by-zero-day-flaw-1c6c0b"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95496-important-libx11-security-update-440f9625",
+    "title": "RHSA-2026:95496: Important: libX11 security update",
+    "summary": "An update for libX11 is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95496",
+    "publishedAt": "2026-11-05T10:45:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95496-important-libx11-security-update",
+      "article-440f9625",
+      "440f9625",
+      "rhsa-2026-95496-important-libx11-security-update-37d845"
+    ]
+  },
+  {
+    "slug": "tata-motors-ira-app-flaws-enable-owner-impersonati-8f7cf50f",
+    "title": "Tata Motors iRA App Flaws Enable Owner Impersonation",
+    "summary": "Tata Motors’ iRA 2.0 and iRA.ev apps contain four flaws that let attackers steal credentials, impersonate owners, and access vehicle services. The flaws, identified as CVE-2026-116606, carry a High severity rating from CERT‑In and could enable unauthorized remote control of vehicle functions. Users should update to the latest app version and disable unused features to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/tata-motors-ira-app-flaws/",
+    "publishedAt": "2026-11-05T10:41:33.000Z",
+    "cves": [
+      "CVE-2026-116606"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "tata-motors-ira-app-flaws-enable-owner-impersonati",
+      "article-8f7cf50f",
+      "8f7cf50f",
+      "tata-motors-ira-app-flaws-enable-owner-impersonati-3313ed",
+      "tata-motors-ira-app-flaws-enable-owner-impersonation"
+    ]
+  },
+  {
+    "slug": "top-five-cyber-threats-endangering-enterprises-in-0763f754",
+    "title": "Top Five Cyber Threats Endangering Enterprises in Oct 2026",
+    "summary": "The October 2026 threat landscape features five active campaigns targeting U.S. enterprises through trusted platforms, legitimate authentication, and routine business workflows. These attacks increase the likelihood of financial loss, data breaches, and operational disruption by exploiting common software and user behaviors. Defenders should review threat intelligence feeds, enforce multi‑factor authentication, and harden supply‑chain controls to mitigate exposure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
+    "publishedAt": "2026-11-05T10:06:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-five-cyber-threats-endangering-enterprises-in",
+      "article-0763f754",
+      "0763f754",
+      "top-five-cyber-threats-endangering-enterprises-in-6b273d",
+      "top-five-cyber-threats-endangering-enterprises-in-oct-2026"
     ]
   },
   {
@@ -217,6 +384,24 @@ export const news: NewsBrief[] = [
       "444d1a56",
       "rhsa-2026-95478-important-bind-security-bug-fix-an-37d845",
       "rhsa-2026-95478-important-bind-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
+    "slug": "hacker-uses-12-ai-agents-to-breach-taiwan-services-d7a6e2e8",
+    "title": "Hacker Uses 12 AI Agents to Breach Taiwan Services",
+    "summary": "A single operator in Taiwan deployed 12 AI agents, named BOSSAI, to compromise emergency services, banks, universities, and military systems across 11 countries. The campaign resulted in confirmed theft of medical data and personal records, exposing sensitive information from multiple organizations. Security teams should investigate compromised accounts, apply multi‑factor authentication, and monitor for anomalous data exfiltration to mitigate further loss.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/one-hacker-uses-12-ai-agents/",
+    "publishedAt": "2026-11-05T08:56:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hacker-uses-12-ai-agents-to-breach-taiwan-services",
+      "article-d7a6e2e8",
+      "d7a6e2e8",
+      "hacker-uses-12-ai-agents-to-breach-taiwan-services-55f6a2"
     ]
   },
   {
@@ -389,22 +574,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "zyxel-gs1900-switches-still-vulnerable-to-zero-day-a9bb101a",
-    "title": "Zyxel GS1900 Switches Still Vulnerable to Zero‑Day RCE",
-    "summary": "Zyxel GS1900 switches remain vulnerable to a zero‑day exploit bypassing the earlier 2.90 patch, enabling unauthenticated remote command execution via the web interface. The flaw lets attackers run arbitrary commands without login, a high‑severity remote code execution vulnerability; the exploit is active. Zyxel released new firmware for ten GS1900 models that closes the hole; teams should upgrade immediately.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
+    "slug": "zyxel-switches-still-vulnerable-to-exploit-e4018843",
+    "title": "Zyxel Switches Still Vulnerable to Exploit",
+    "summary": "Zyxel GS1900 switches remain exposed to a stack‑based buffer overflow (CVE‑2026‑107441) that attackers exploited in the wild, despite a patch release. The patch fixed CVE‑2026‑7273, a separate CGI overflow, leaving the active flaw unmitigated and enabling remote code execution via crafted HTTP requests. Security teams must apply update for CVE‑2026‑107441 or deploy vendor’s interim workaround to block the exploit.",
+    "category": "CVE",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
     "publishedAt": "2026-11-05T07:06:33.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/zyxel-cve-2026-107441-exploit/"
+      }
+    ],
     "aliases": [
-      "zyxel-gs1900-switches-still-vulnerable-to-zero-day",
-      "article-a9bb101a",
-      "a9bb101a",
-      "zyxel-gs1900-switches-still-vulnerable-to-zero-day-104ccf",
-      "zyxel-gs1900-switches-still-vulnerable-to-zero-day-rce"
+      "zyxel-switches-still-vulnerable-to-exploit",
+      "article-e4018843",
+      "e4018843",
+      "zyxel-switches-still-vulnerable-to-exploit-104ccf"
     ]
   },
   {
@@ -480,6 +669,25 @@ export const news: NewsBrief[] = [
       "9ac87524",
       "healthcare-struggles-to-govern-undiscovered-ai-too-7418ca",
       "healthcare-struggles-to-govern-undiscovered-ai-tools"
+    ]
+  },
+  {
+    "slug": "adversaries-exploit-vulnerability-ecosystem-to-cou-e3a2fe16",
+    "title": "Adversaries Exploit Vulnerability Ecosystem to Counter Defenders",
+    "summary": "Adversaries are exploiting the public vulnerability ecosystem to undermine defensive efforts. They weaponize disclosed flaws, coordinate exploit chains, and manipulate patch timelines, increasing the risk of delayed mitigations and heightened attack surface. Security teams should monitor vulnerability feeds, prioritize critical patches, and adopt threat intelligence to anticipate adversary use of newly disclosed weaknesses.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/adversaries-turn-vulnerability-ecosystem-against-defenders/",
+    "publishedAt": "2026-11-05T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adversaries-exploit-vulnerability-ecosystem-to-cou",
+      "article-e3a2fe16",
+      "e3a2fe16",
+      "adversaries-exploit-vulnerability-ecosystem-to-cou-7e3dcc",
+      "adversaries-exploit-vulnerability-ecosystem-to-counter-defen"
     ]
   },
   {
@@ -9326,213 +9534,6 @@ export const news: NewsBrief[] = [
       "article-098ea92e",
       "098ea92e",
       "red-hat-releases-freerdp-security-update-37d92a"
-    ]
-  },
-  {
-    "slug": "fbi-links-6b-binance-heist-to-north-korea-ac6b5964",
-    "title": "FBI Links $6B Binance Heist to North Korea",
-    "summary": "The FBI confirmed that North Korea was responsible for a $6 billion theft of virtual assets from Binance on October 29, 2026. The attack exploited compromised wallet addresses, allowing attackers to siphon funds from Binance’s transaction network. Binance and the crypto industry are urged to block TraderTraitor‑linked transactions, enhance wallet monitoring, and tighten KYC procedures to prevent repeat incidents.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/fbi-north-korea-binance-hack/",
-    "publishedAt": "2026-11-02T10:12:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-links-6b-binance-heist-to-north-korea",
-      "article-ac6b5964",
-      "ac6b5964",
-      "fbi-links-6b-binance-heist-to-north-korea-383878"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-gimp-security-update-61833136",
-    "title": "Red Hat Issues GIMP Security Update",
-    "summary": "Red Hat released a security update for GIMP on RHEL 9.2 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could allow local privilege escalation or denial of service; CVSS scores are listed in the referenced CVE links. Users should apply the update immediately and verify that the affected packages are upgraded to the patched versions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93589",
-    "publishedAt": "2026-11-02T09:58:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-gimp-security-update",
-      "article-61833136",
-      "61833136",
-      "red-hat-issues-gimp-security-update-37d92a"
-    ]
-  },
-  {
-    "slug": "trusted-vendors-should-guide-smbs-through-onboardi-7fe5f15f",
-    "title": "Trusted Vendors Should Guide SMBs Through Onboarding",
-    "summary": "SMBs require guided onboarding and supervised protection to optimize their security investments. The article emphasizes that vendors should provide clear onboarding processes and ongoing oversight to reduce confusion and ensure consistent security posture. Organizations should adopt vendor-led training, continuous monitoring, and proactive risk assessments to maintain effective defenses and protect critical assets.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/business-security/when-confusion-reigns-trusted-vendors-guide-smb-customers/",
-    "publishedAt": "2026-11-02T09:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trusted-vendors-should-guide-smbs-through-onboardi",
-      "article-7fe5f15f",
-      "7fe5f15f",
-      "trusted-vendors-should-guide-smbs-through-onboardi-6a51e0",
-      "trusted-vendors-should-guide-smbs-through-onboarding"
-    ]
-  },
-  {
-    "slug": "managed-siem-services-cost-tuning-and-ownership-mo-fa0bacaf",
-    "title": "Managed SIEM Services: Cost, Tuning, and Ownership Models",
-    "summary": "The article reviews managed SIEM services, noting that the license costs half the total while the unstaffed half—tuning, content, and triage—often causes failures. It explains managed services supply discipline, offering three ownership models: platform‑managed, operator‑managed, and shared‑ownership, ensuring tuning and threat detection. The ranking evaluates ten vendors on cost, ownership, and operational effectiveness to help organizations choose a SIEM partner.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-managed-siem-services/",
-    "publishedAt": "2026-11-02T09:39:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "managed-siem-services-cost-tuning-and-ownership-mo",
-      "article-fa0bacaf",
-      "fa0bacaf",
-      "managed-siem-services-cost-tuning-and-ownership-mo-2ce517",
-      "managed-siem-services-cost-tuning-and-ownership-models"
-    ]
-  },
-  {
-    "slug": "cyber-security-news-ranks-top-soc-service-provider-39fb8ae4",
-    "title": "Cyber Security News Ranks Top SOC Service Providers",
-    "summary": "Cyber Security News published a technical vendor evaluation ranking the top SOC-as-a-Service providers for mid-market and enterprise organizations. The 2026 market evaluation categorizes security providers into specialized concierge models, scalable detection engineering platforms, and bring-your-own-stack operators. Security leaders can utilize these detailed industry benchmarks to solve internal analyst staffing constraints and maintain continuous operational monitoring.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-soc-as-a-service/",
-    "publishedAt": "2026-11-02T09:36:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyber-security-news-ranks-top-soc-service-provider",
-      "article-39fb8ae4",
-      "39fb8ae4",
-      "cyber-security-news-ranks-top-soc-service-provider-547a42",
-      "cyber-security-news-ranks-top-soc-service-providers"
-    ]
-  },
-  {
-    "slug": "ivanti-patches-two-more-connect-secure-zero-days-c-9d5b4621",
-    "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
-    "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...] (Corroborated Threat Intelligence: Associated CVE is CVE-2026-111357).",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
-    "publishedAt": "2026-11-02T09:33:26.000Z",
-    "cves": [
-      "CVE-2026-111357"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ivanti-patches-two-more-connect-secure-zero-days-c",
-      "article-9d5b4621",
-      "9d5b4621",
-      "ivanti-patches-two-more-connect-secure-zero-days-c-64858f",
-      "ivanti-patches-two-more-connect-secure-zero-days-chained-in-"
-    ]
-  },
-  {
-    "slug": "debugbear-dns-hijack-affects-polymarket-customer-5fcecb17",
-    "title": "DebugBear DNS Hijack Affects Polymarket Customer",
-    "summary": "DebugBear says its DNS records were hijacked via its registrar, targeting a single Polymarket customer. The compromised DNS redirected traffic to malicious endpoints, enabling attackers to intercept or alter user transactions on Polymarket. Polymarket refunded $3.9 million to affected traders; teams should verify DNS settings, lock registrar accounts, and monitor zone changes.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
-    "publishedAt": "2026-11-02T09:33:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "debugbear-dns-hijack-affects-polymarket-customer",
-      "article-5fcecb17",
-      "5fcecb17",
-      "debugbear-dns-hijack-affects-polymarket-customer-431e74"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93586-important-perl-http-daemon-securit-e6ea8474",
-    "title": "RHSA-2026:93586: Important: perl-HTTP-Daemon security update",
-    "summary": "An update for perl-HTTP-Daemon is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93586",
-    "publishedAt": "2026-11-02T09:30:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93586-important-perl-http-daemon-securit",
-      "article-e6ea8474",
-      "e6ea8474",
-      "rhsa-2026-93586-important-perl-http-daemon-securit-37d92a",
-      "rhsa-2026-93586-important-perl-http-daemon-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93585-important-perl-http-daemon-securit-c8c07b84",
-    "title": "RHSA-2026:93585: Important: perl-HTTP-Daemon security update",
-    "summary": "An update for perl-HTTP-Daemon is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93585",
-    "publishedAt": "2026-11-02T09:30:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93585-important-perl-http-daemon-securit",
-      "article-c8c07b84",
-      "c8c07b84",
-      "rhsa-2026-93585-important-perl-http-daemon-securit-37d92a",
-      "rhsa-2026-93585-important-perl-http-daemon-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libsoup3-security-update-77e459f8",
-    "title": "Red Hat Issues Libsoup3 Security Update",
-    "summary": "Red Hat released a security update for libsoup3 on RHEL 10.0 Extended Update Support. The patch mitigates several vulnerabilities that could lead to remote code execution or denial of service; CVSS scores are provided via CVE references. Affected users should install the update promptly and confirm that the libsoup3 package is at the patched version.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93583",
-    "publishedAt": "2026-11-02T09:00:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libsoup3-security-update",
-      "article-77e459f8",
-      "77e459f8",
-      "red-hat-issues-libsoup3-security-update-37d92a"
-    ]
-  },
-  {
-    "slug": "fbi-links-600-addresses-to-north-korean-binance-th-4ea7b26c",
-    "title": "FBI Links 600+ Addresses to North Korean Binance Theft",
-    "summary": "FBI linked over 600 addresses to a $6 billion Binance theft attributed to North Korean group TraderTraitor. Attackers siphoned funds from Binance’s exchange and laundered them through a complex wallet chain to obscure the trail. Binance issued a security advisory urging users to enable two‑factor authentication and monitor activity while law enforcement pursues the laundering network.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
-    "publishedAt": "2026-11-02T08:40:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-links-600-addresses-to-north-korean-binance-th",
-      "article-4ea7b26c",
-      "4ea7b26c",
-      "fbi-links-600-addresses-to-north-korean-binance-th-3dac18",
-      "fbi-links-600-addresses-to-north-korean-binance-theft"
     ]
   }
 ];

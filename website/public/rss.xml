@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 11:31:31 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 12:47:47 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Security Update for Delve Tool</title>
+      <link>https://secubuzz.com/news/red-hat-issues-security-update-for-delve-tool-b57ccc39</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-security-update-for-delve-tool-b57ccc39</guid>
+      <description><![CDATA[Red Hat issued a security update for the delve tool on RHEL 10.2 Extended Update Support, fixing vulnerabilities that could enable potential unauthorized access. The advisory lists multiple CVSS base scores but does not provide specific CVE identifiers. Red Hat recommends applying the update immediately; no additional workarounds are required.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:32:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95519">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Vizio Samsung TVs Ignore Tracking Opt‑Outs</title>
+      <link>https://secubuzz.com/news/vizio-samsung-tvs-ignore-tracking-opt-outs-4dc2dd19</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vizio-samsung-tvs-ignore-tracking-opt-outs-4dc2dd19</guid>
+      <description><![CDATA[Vizio and Samsung smart TVs appear to disregard user opt‑out requests for tracking, continuing data collection despite privacy settings. The flaw lets manufacturers transmit viewing data to third‑party analytics without explicit consent, violating user expectations and breaching privacy regulations. Users should verify firmware versions, apply vendor patches when available, and consider disabling telemetry through device settings or network filtering.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:10:50 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/vizio-samsung-smart-tvs-seem-to-ignore-tracking-opt-outs">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95505: Important: resteasy security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95505-important-resteasy-security-update-70e4ec9c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95505-important-resteasy-security-update-70e4ec9c</guid>
+      <description><![CDATA[An update for resteasy is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:03:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95505">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Scammers Exploit GTA 6 Hype for Malware Crypto Scams</title>
+      <link>https://secubuzz.com/news/scammers-exploit-gta-6-hype-for-malware-crypto-sca-7d177acf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/scammers-exploit-gta-6-hype-for-malware-crypto-sca-7d177acf</guid>
+      <description><![CDATA[Scammers are exploiting the upcoming Grand Theft Auto VI release to distribute malware and run cryptocurrency scams via fake build sites. The campaign targets users July–October 2026, using domains that imitate leaker CyberLeek and promise early access or nonexistent mobile versions. Defenders should block these domains, warn users about phishing, and monitor for suspicious downloads or crypto wallet activity.]]></description>
+      <pubDate>Thu, 05 Nov 2026 11:41:50 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/gta-6-scams-fake-leaks-early-access/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ISC Stormcast November 5th 2026</title>
+      <link>https://secubuzz.com/news/isc-stormcast-november-5th-2026-c6307e8f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-november-5th-2026-c6307e8f</guid>
+      <description><![CDATA[SANS Internet Storm Center published its Thursday Stormcast covering threat intelligence, incident reports, and defensive guidance for the week ending November 5th 2026. The broadcast aggregates actionable cybersecurity intelligence from multiple sources including incident handlers and threat analysts. Organizations should monitor ISC feeds for emerging threats and apply recommended mitigations accordingly.]]></description>
+      <pubDate>Thu, 05 Nov 2026 11:25:11 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33490">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>RHSA-2026:95498: Important: libX11 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-95498-important-libx11-security-update-76df154d</link>
@@ -42,6 +87,42 @@
       <pubDate>Thu, 05 Nov 2026 10:59:25 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95497">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Zyxel Switches Exploited by Zero-Day Flaw</title>
+      <link>https://secubuzz.com/news/zyxel-switches-exploited-by-zero-day-flaw-c24256ad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zyxel-switches-exploited-by-zero-day-flaw-c24256ad</guid>
+      <description><![CDATA[Zyxel GS1900 switches suffered an out‑of‑bounds write (CVE‑2026‑107441) that attackers used to execute OS commands via crafted HTTP requests. The flaw was mistakenly considered fixed in a patch that addressed CVE‑2026‑7273, leaving the zero‑day active and enabling remote code execution. Apply the correct update for CVE‑2026‑107441 or use the vendor’s interim workaround to stop the exploit.]]></description>
+      <pubDate>Thu, 05 Nov 2026 10:56:41 GMT</pubDate>
+      <source url="https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95496: Important: libX11 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95496-important-libx11-security-update-440f9625</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95496-important-libx11-security-update-440f9625</guid>
+      <description><![CDATA[An update for libX11 is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 10:45:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95496">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Tata Motors iRA App Flaws Enable Owner Impersonation</title>
+      <link>https://secubuzz.com/news/tata-motors-ira-app-flaws-enable-owner-impersonati-8f7cf50f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/tata-motors-ira-app-flaws-enable-owner-impersonati-8f7cf50f</guid>
+      <description><![CDATA[Tata Motors’ iRA 2.0 and iRA.ev apps contain four flaws that let attackers steal credentials, impersonate owners, and access vehicle services. The flaws, identified as CVE-2026-116606, carry a High severity rating from CERT‑In and could enable unauthorized remote control of vehicle functions. Users should update to the latest app version and disable unused features to mitigate the risk.]]></description>
+      <pubDate>Thu, 05 Nov 2026 10:41:33 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/tata-motors-ira-app-flaws/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Top Five Cyber Threats Endangering Enterprises in Oct 2026</title>
+      <link>https://secubuzz.com/news/top-five-cyber-threats-endangering-enterprises-in-0763f754</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-five-cyber-threats-endangering-enterprises-in-0763f754</guid>
+      <description><![CDATA[The October 2026 threat landscape features five active campaigns targeting U.S. enterprises through trusted platforms, legitimate authentication, and routine business workflows. These attacks increase the likelihood of financial loss, data breaches, and operational disruption by exploiting common software and user behaviors. Defenders should review threat intelligence feeds, enforce multi‑factor authentication, and harden supply‑chain controls to mitigate exposure.]]></description>
+      <pubDate>Thu, 05 Nov 2026 10:06:19 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html">The Hacker News</source>
+      <category>General</category>
     </item>
     <item>
       <title>RHSA-2026:95482: Important: gimp:2.8 security, bug fix, and enhancement update</title>
@@ -105,6 +186,15 @@
       <pubDate>Thu, 05 Nov 2026 08:58:34 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95478">Red Hat Security Advisories</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Hacker Uses 12 AI Agents to Breach Taiwan Services</title>
+      <link>https://secubuzz.com/news/hacker-uses-12-ai-agents-to-breach-taiwan-services-d7a6e2e8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hacker-uses-12-ai-agents-to-breach-taiwan-services-d7a6e2e8</guid>
+      <description><![CDATA[A single operator in Taiwan deployed 12 AI agents, named BOSSAI, to compromise emergency services, banks, universities, and military systems across 11 countries. The campaign resulted in confirmed theft of medical data and personal records, exposing sensitive information from multiple organizations. Security teams should investigate compromised accounts, apply multi‑factor authentication, and monitor for anomalous data exfiltration to mitigate further loss.]]></description>
+      <pubDate>Thu, 05 Nov 2026 08:56:26 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/one-hacker-uses-12-ai-agents/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>CERT‑In Reports AI‑Driven Attacks Target BFSI Consoles</title>
@@ -188,13 +278,13 @@
       <category>General</category>
     </item>
     <item>
-      <title>Zyxel GS1900 Switches Still Vulnerable to Zero‑Day RCE</title>
-      <link>https://secubuzz.com/news/zyxel-gs1900-switches-still-vulnerable-to-zero-day-a9bb101a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zyxel-gs1900-switches-still-vulnerable-to-zero-day-a9bb101a</guid>
-      <description><![CDATA[Zyxel GS1900 switches remain vulnerable to a zero‑day exploit bypassing the earlier 2.90 patch, enabling unauthenticated remote command execution via the web interface. The flaw lets attackers run arbitrary commands without login, a high‑severity remote code execution vulnerability; the exploit is active. Zyxel released new firmware for ten GS1900 models that closes the hole; teams should upgrade immediately.]]></description>
+      <title>Zyxel Switches Still Vulnerable to Exploit</title>
+      <link>https://secubuzz.com/news/zyxel-switches-still-vulnerable-to-exploit-e4018843</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zyxel-switches-still-vulnerable-to-exploit-e4018843</guid>
+      <description><![CDATA[Zyxel GS1900 switches remain exposed to a stack‑based buffer overflow (CVE‑2026‑107441) that attackers exploited in the wild, despite a patch release. The patch fixed CVE‑2026‑7273, a separate CGI overflow, leaving the active flaw unmitigated and enabling remote code execution via crafted HTTP requests. Security teams must apply update for CVE‑2026‑107441 or deploy vendor’s interim workaround to block the exploit.]]></description>
       <pubDate>Thu, 05 Nov 2026 07:06:33 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html">The Hacker News</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>2026 Threat Hunting Services Ranked</title>
@@ -230,6 +320,15 @@
       <description><![CDATA[A Paubox survey shows 90% of healthcare leaders report security teams review AI‑generated code touching patient data before deployment, yet 70% still find AI‑built tools handling that data without IT or security awareness. The gap indicates AI‑assisted development can introduce patient‑data components that escape formal security vetting. Organizations should enforce code review, track AI tools, and mandate security training.]]></description>
       <pubDate>Thu, 05 Nov 2026 06:11:25 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Adversaries Exploit Vulnerability Ecosystem to Counter Defenders</title>
+      <link>https://secubuzz.com/news/adversaries-exploit-vulnerability-ecosystem-to-cou-e3a2fe16</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adversaries-exploit-vulnerability-ecosystem-to-cou-e3a2fe16</guid>
+      <description><![CDATA[Adversaries are exploiting the public vulnerability ecosystem to undermine defensive efforts. They weaponize disclosed flaws, coordinate exploit chains, and manipulate patch timelines, increasing the risk of delayed mitigations and heightened attack surface. Security teams should monitor vulnerability feeds, prioritize critical patches, and adopt threat intelligence to anticipate adversary use of newly disclosed weaknesses.]]></description>
+      <pubDate>Thu, 05 Nov 2026 06:00:00 GMT</pubDate>
+      <source url="https://www.crowdstrike.com/en-us/blog/adversaries-turn-vulnerability-ecosystem-against-defenders/">CrowdStrike</source>
       <category>General</category>
     </item>
     <item>
@@ -357,105 +456,6 @@
       <pubDate>Wed, 04 Nov 2026 23:42:35 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/barracuda-esg-authentication-bypass-flaw-opens-path-to">CyberNews AI</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS</title>
-      <link>https://secubuzz.com/news/cve-2026-122266-improper-isolation-of-shared-resou-3baea691</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-122266-improper-isolation-of-shared-resou-3baea691</guid>
-      <description><![CDATA[Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Impacted versions: - aws-network-policy-agent - Amazon VPC CNI Managed Add-on Refer to the article below for the most up-to-date and complete information.]]></description>
-      <pubDate>Wed, 04 Nov 2026 21:53:42 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Rails Active Storage ImageMagick Arbitrary File Write</title>
-      <link>https://secubuzz.com/news/rails-active-storage-imagemagick-arbitrary-file-wr-70eb5e9d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rails-active-storage-imagemagick-arbitrary-file-wr-70eb5e9d</guid>
-      <description><![CDATA[A critical vulnerability exists in Ruby on Rails Active Storage's integration with ImageMagick, allowing attackers to write arbitrary files and read sensitive files via uploaded images. This flaw enables potential lateral movement within Rails-based web applications. Organizations using Rails with ImageMagick processing should apply vendor patches immediately.]]></description>
-      <pubDate>Wed, 04 Nov 2026 21:48:18 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Cryostat 4 for CVE‑2026‑98432</title>
-      <link>https://secubuzz.com/news/red-hat-updates-cryostat-4-for-cve-2026-98432-b4b42418</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-cryostat-4-for-cve-2026-98432-b4b42418</guid>
-      <description><![CDATA[Red Hat released a security update for its Cryostat 4 build on RHEL 9, addressing CVE‑2026‑98432. The vulnerability involves a memory‑corruption flaw that could allow local privilege escalation or denial of service if exploited. Red Hat recommends installing the updated Cryostat package or applying the vendor patch to mitigate the risk.]]></description>
-      <pubDate>Wed, 04 Nov 2026 21:45:54 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95360">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Vercel Deploys Device‑Bound Session Credentials</title>
-      <link>https://secubuzz.com/news/vercel-deploys-device-bound-session-credentials-53d89812</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vercel-deploys-device-bound-session-credentials-53d89812</guid>
-      <description><![CDATA[Vercel is introducing Device‑Bound Session Credentials (DBSC) to protect its platform from stolen session cookie attacks. DBSC binds session tokens to device fingerprints, preventing attackers from hijacking sessions even if they acquire valid cookies. Vercel recommends enabling DBSC for all projects and monitoring for anomalous session activity to maintain secure user access.]]></description>
-      <pubDate>Wed, 04 Nov 2026 21:31:18 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Multiple Asian Airlines Report Data Breaches from Amadeus</title>
-      <link>https://secubuzz.com/news/multiple-asian-airlines-report-data-breaches-from-2ae0d0e9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/multiple-asian-airlines-report-data-breaches-from-2ae0d0e9</guid>
-      <description><![CDATA[Six Asian airlines—Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines, and Malaysia Airlines—have reported data breaches traced to Amadeus IT Group, a Spanish provider of flight reservation and ticketing platforms. The breaches expose passenger data across multiple carriers following an initial incident at the Spanish IT provider. Affected organizations should conduct forensic investigations and implement enhanced access controls.]]></description>
-      <pubDate>Wed, 04 Nov 2026 21:30:00 GMT</pubDate>
-      <source url="https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Zyxel GS1900 Switches Hit by Zero‑Day Exploit</title>
-      <link>https://secubuzz.com/news/zyxel-gs1900-switches-hit-by-zero-day-exploit-6135af26</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zyxel-gs1900-switches-hit-by-zero-day-exploit-6135af26</guid>
-      <description><![CDATA[Zyxel GS1900 series switches were compromised by a zero‑day vulnerability exploited on nearly 1,000 devices worldwide across all affected devices. The flaw allowed attackers to retrieve configuration files and credentials, facilitating lateral movement and potential network‑wide attacks. Zyxel released a patch; administrators should update firmware immediately and audit switch configurations for unauthorized changes.]]></description>
-      <pubDate>Wed, 04 Nov 2026 20:58:19 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard</title>
-      <link>https://secubuzz.com/news/cve-2026-122192-guest-access-to-firecracker-proces-94ed1063</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-122192-guest-access-to-firecracker-proces-94ed1063</guid>
-      <description><![CDATA[Bulletin ID: 2026-169-AWS Publication Date: 11/04/2026 11:30 AM PST Description: We identified CVE-2026-122192, an issue in Firecracker v0.23.0 through v1.16.1 that, under certain host memory conditions, can let a root user in a guest read or modify memory of the Firecracker process.]]></description>
-      <pubDate>Wed, 04 Nov 2026 19:40:33 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>DreamHost Breach Exposes Customer Credentials and Emails</title>
-      <link>https://secubuzz.com/news/dreamhost-breach-exposes-customer-credentials-and-b64076da</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dreamhost-breach-exposes-customer-credentials-and-b64076da</guid>
-      <description><![CDATA[DreamHost confirmed a breach that exposed customer login details after attackers exploited its File Manager on October 23, 2026. The incident yielded FTP/SFTP usernames and passwords, webmail credentials, and in limited cases, private mailbox contents, compromising user accounts and sensitive data. DreamHost advised customers to change passwords, enable two‑factor authentication, and monitor accounts for suspicious activity while investigating the breach.]]></description>
-      <pubDate>Wed, 04 Nov 2026 19:05:19 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>French Bank Heist Steals $133 Million via Supplier Breach</title>
-      <link>https://secubuzz.com/news/french-bank-heist-steals-133-million-via-supplier-7e786033</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/french-bank-heist-steals-133-million-via-supplier-7e786033</guid>
-      <description><![CDATA[Crédit Mutuel Arkéa confirmed a cyber heist that transferred about $133 million using the bank’s account after compromising a supplier. Attackers used the supplier’s credentials to authenticate with the bank’s transfer system, enabling unauthorized fund movements without triggering fraud alerts. Bank officials are tightening supplier access controls, reviewing transaction monitoring, and notifying regulators while investigating the breach.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:58:00 GMT</pubDate>
-      <source url="https://therecord.media/french-bank-confirms-cyber-heist">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Scammers Use Fake Apple Cash Offers for Affiliate Fraud</title>
-      <link>https://secubuzz.com/news/scammers-use-fake-apple-cash-offers-for-affiliate-ae8beda4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scammers-use-fake-apple-cash-offers-for-affiliate-ae8beda4</guid>
-      <description><![CDATA[Fraudulent schemes target consumers with fake $750 Apple Cash reward promotions designed to generate illicit revenue for affiliate marketers. The scam employs website scripted checks and artificial countdown timers to trick victims into completing tasks without delivering any monetary rewards. Users should avoid clicking unsolicited reward links, verify financial promotions through official channels, and block deceptive affiliate marketing domains.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:49:13 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SkyW4lker Phishing Kit Targets US Microsoft 365 Accounts</title>
-      <link>https://secubuzz.com/news/skyw4lker-phishing-kit-targets-us-microsoft-365-ac-de436d88</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/skyw4lker-phishing-kit-targets-us-microsoft-365-ac-de436d88</guid>
-      <description><![CDATA[The SkyW4lker phishing kit targets US enterprise organizations to facilitate Microsoft 365 account takeovers without requiring stolen user passwords. The kit abuses Microsoft device-code sign-in flows to trick users into authorizing attacker access, granting valid sessions to corporate mailboxes, documents, and connected applications.]]></description>
-      <pubDate>Wed, 04 Nov 2026 18:43:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/skyw4lker-phishing-campaign-expands-threatening-us-enterprises-with-microsoft-365-account-takeovers/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
