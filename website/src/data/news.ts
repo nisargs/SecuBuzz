@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "dns-typos-expose-us-government-email-systems-483040ce",
+    "title": "DNS Typos Expose US Government Email Systems",
+    "summary": "Erroneous or outdated DNS records in US government email infrastructure can grant attackers unexpected control over mail routing and delivery. The misconfiguration allows attackers to spoof sender addresses, intercept messages, or redirect traffic, potentially facilitating phishing or data exfiltration. Administrators should audit DNS zones, correct stale entries, and enforce strict SPF, DKIM, and DMARC policies to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
+    "publishedAt": "2026-11-05T21:35:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dns-typos-expose-us-government-email-systems",
+      "article-483040ce",
+      "483040ce",
+      "dns-typos-expose-us-government-email-systems-1ba267"
+    ]
+  },
+  {
+    "slug": "ai-images-fuel-pet-missing-scam-extortions-1987234e",
+    "title": "AI Images Fuel Pet‑Missing Scam Extortions",
+    "summary": "Scammers are leveraging AI‑generated images of missing pets to create convincing claims of finding a lost animal. The fabricated images are used to solicit payment from owners, who are misled into believing the pet has been located. Security teams should educate users about verifying claims, checking official pet‑search channels, and reporting suspicious requests to authorities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/scammers-use-ai-generated-images-of-missing-pets-to-extort-owners",
+    "publishedAt": "2026-11-05T21:34:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-images-fuel-pet-missing-scam-extortions",
+      "article-1987234e",
+      "1987234e",
+      "ai-images-fuel-pet-missing-scam-extortions-6fa090"
+    ]
+  },
+  {
     "slug": "phishers-exploit-fake-spacex-events-for-microsoft-480fdb89",
     "title": "Phishers Exploit Fake SpaceX Events for Microsoft, Google Credentials",
     "summary": "Hackers used counterfeit OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, targeting Microsoft and Google accounts. The phishing‑as‑a‑service platforms delivered credential phishing that captured Microsoft and Google authentication sessions, enabling attackers to hijack accounts. Security teams should verify event invitations, enforce multi‑factor authentication, and monitor for anomalous login sessions to mitigate credential compromise.",
@@ -84,6 +120,24 @@ export const news: NewsBrief[] = [
       "0c63b467",
       "truffle-security-launches-secret-revocation-initia-4a9fe1",
       "truffle-security-launches-secret-revocation-initiative"
+    ]
+  },
+  {
+    "slug": "us-sanctions-prince-group-scam-affiliates-837e03ba",
+    "title": "US Sanctions Prince Group Scam Affiliates",
+    "summary": "The U.S. Treasury imposed additional sanctions on four individuals and 41 companies tied to the Prince Group, a Cambodian scam operator. The measures freeze assets and block U.S. financial services to curb the group’s money‑laundering activities. Entities on the list must comply with U.S. export and anti‑money‑laundering rules to avoid penalties.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/us-issues-more-sanctions-against-prince-group-scammers",
+    "publishedAt": "2026-11-05T20:11:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-sanctions-prince-group-scam-affiliates",
+      "article-837e03ba",
+      "837e03ba",
+      "us-sanctions-prince-group-scam-affiliates-63c17f"
     ]
   },
   {
@@ -291,6 +345,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-thunderbird-update-for-rhel-9-4-05d9ea75",
+    "title": "Red Hat Issues Thunderbird Update for RHEL 9.4",
+    "summary": "Red Hat released a Thunderbird update for RHEL 9.4 SAP Solutions, fixing vulnerabilities that could allow local or remote code execution. The advisory lists CVE references and CVSS scores, but no public proof‑of‑concept or active exploitation has been reported. Red Hat recommends applying the update via the standard RHEL 9.4 repositories to deploy the patches.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95597",
+    "publishedAt": "2026-11-05T17:18:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-thunderbird-update-for-rhel-9-4",
+      "article-05d9ea75",
+      "05d9ea75",
+      "red-hat-issues-thunderbird-update-for-rhel-9-4-37d841"
+    ]
+  },
+  {
     "slug": "microsoft-launches-on-premises-security-initiative-b73c8f71",
     "title": "Microsoft Launches On‑Premises Security Initiative",
     "summary": "Microsoft announces a new on‑premises security initiative to reduce risk across enterprise deployments. The program bundles guidance, migration support, and product investments to strengthen on‑premises defenses against evolving threats. Security teams should review the new guidance, assess current on‑premises assets, and plan migrations accordingly to mitigate emerging vulnerabilities and ensure compliance with industry standards.",
@@ -462,6 +534,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-kpatch-security-update-for-rhel-8-39a79ff3",
+    "title": "Red Hat Issues kpatch Security Update for RHEL 8",
+    "summary": "Red Hat released security updates for multiple kpatch packages on RHEL 8, addressing vulnerabilities that could enable local or remote code execution. The advisory references CVE entries and CVSS base scores, but no public proof‑of‑concept or active exploitation has been reported. Red Hat recommends applying the patches through the standard RHEL 8 repositories to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95587",
+    "publishedAt": "2026-11-05T16:41:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kpatch-security-update-for-rhel-8",
+      "article-39a79ff3",
+      "39a79ff3",
+      "red-hat-issues-kpatch-security-update-for-rhel-8-37d841"
+    ]
+  },
+  {
     "slug": "cwp-web-server-trojan-enables-linux-backdoors-96a43958",
     "title": "CWP Web Server Trojan Enables Linux Backdoors",
     "summary": "A trojanized Control Web Panel (CWP) web server, cwpsrv, installs the CWPdoor malware on Linux servers. The trojan exploits a flaw in CWP’s authentication, granting attackers privileged access and a persistent backdoor. Update CWP to the latest release, remove unauthorized cwpsrv binaries, and regularly monitor for anomalous outbound traffic daily.",
@@ -591,6 +681,42 @@ export const news: NewsBrief[] = [
       "cbd5a20c",
       "vulnerability-scans-for-older-cisco-ios-vulnerabil-57dd7e",
       "vulnerability-scans-for-older-cisco-ios-vulnerability-opt-ou"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-python3-6-security-patch-56a6cdba",
+    "title": "Red Hat Issues Python3.6 Security Patch",
+    "summary": "Red Hat released a security update for python36:3.6 on RHEL 8.8 and its SAP and Telecom variants, fixing several Python 3.6 bugs. The advisory lists CVSS base scores from moderate to high, but no CVE IDs or exploit details are provided. Red Hat recommends applying the patch via standard RHEL update channels to remediate the vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95578",
+    "publishedAt": "2026-11-05T15:21:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-python3-6-security-patch",
+      "article-56a6cdba",
+      "56a6cdba",
+      "red-hat-issues-python3-6-security-patch-37d841"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-qt5-qtbase-security-update-e089b1ff",
+    "title": "Red Hat Releases Qt5-Qtbase Security Update",
+    "summary": "Red Hat released a security update for qt5‑qtbase on RHEL 9.6 EUS, fixing multiple Qt framework bugs. The advisory lists CVSS base scores from moderate to high, but no CVE IDs or public exploits are disclosed. Red Hat recommends applying the patch via the standard update channels to mitigate the identified vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95575",
+    "publishedAt": "2026-11-05T15:15:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-qt5-qtbase-security-update",
+      "article-e089b1ff",
+      "e089b1ff",
+      "red-hat-releases-qt5-qtbase-security-update-37d841"
     ]
   },
   {
@@ -9386,138 +9512,6 @@ export const news: NewsBrief[] = [
       "748027d4",
       "microsoft-security-blog-analyzes-real-world-exploi-791a73",
       "microsoft-security-blog-analyzes-real-world-exploitation-pat"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-client-update-addresses-multiple-10764dda",
-    "title": "Red Hat Satellite Client Update Addresses Multiple Security Issues",
-    "summary": "Red Hat Satellite Client packages have been updated to fix several security vulnerabilities rated as Important, addressing bugs in the Satellite 6 client component. The Common Vulnerability Scoring System base score is available for each individual vulnerability through linked CVE references. Administrators should apply these updates promptly to maintain security posture across managed Satellite environments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94063",
-    "publishedAt": "2026-11-02T20:07:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-client-update-addresses-multiple",
-      "article-10764dda",
-      "10764dda",
-      "red-hat-satellite-client-update-addresses-multiple-37d8c9",
-      "red-hat-satellite-client-update-addresses-multiple-security-"
-    ]
-  },
-  {
-    "slug": "byod-gang-claims-michigan-state-cyber-incident-b5f8dee4",
-    "title": "BYOD Gang Claims Michigan State Cyber Incident",
-    "summary": "The BYOD ransomware gang claimed responsibility for a cyber incident that triggered campus‑wide security measures at Michigan State University. The gang, known for a recent hospital attack, claimed the incident via a post aligning with the MSU timeline. Security teams should verify the claim, isolate affected systems, and apply the gang’s ransomware signatures to mitigate further compromise.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
-    "publishedAt": "2026-11-02T19:54:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "byod-gang-claims-michigan-state-cyber-incident",
-      "article-b5f8dee4",
-      "b5f8dee4",
-      "byod-gang-claims-michigan-state-cyber-incident-2318f7"
-    ]
-  },
-  {
-    "slug": "cve-2026-120497-stored-cross-site-scripting-in-the-beeb1c33",
-    "title": "CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows",
-    "summary": "We identified CVE-2026-120497, where stored cross-site scripting (XSS) in the HTML report generator in the aidlc-traceability CLI could allow an actor who can modify a project's AI-DLC artifact files to execute arbitrary script in the browser of a user who opens a generated HTML traceability report via crafted artifact titles or descriptions.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/",
-    "publishedAt": "2026-11-02T19:19:50.000Z",
-    "cves": [
-      "CVE-2026-120497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-120497-stored-cross-site-scripting-in-the",
-      "article-beeb1c33",
-      "beeb1c33",
-      "cve-2026-120497-stored-cross-site-scripting-in-the-7b8ba0",
-      "cve-2026-120497-stored-cross-site-scripting-in-the-html-repo"
-    ]
-  },
-  {
-    "slug": "red-hat-openstack-platform-13-security-update-reso-3d071354",
-    "title": "Red Hat OpenStack Platform 13 Security Update Resolves Critical Issues",
-    "summary": "Updated Red Hat OpenStack Platform 13.0 packages resolve multiple security vulnerabilities rated as Important, addressing issues in the OpenStack platform for RHEL 7 environments. Each vulnerability carries a CVSS base score accessible via linked CVE references in the advisory. System administrators should apply these patches immediately to mitigate the disclosed security weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94039",
-    "publishedAt": "2026-11-02T19:17:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-openstack-platform-13-security-update-reso",
-      "article-3d071354",
-      "3d071354",
-      "red-hat-openstack-platform-13-security-update-reso-37d8c9",
-      "red-hat-openstack-platform-13-security-update-resolves-criti"
-    ]
-  },
-  {
-    "slug": "sageworks-outage-after-suspected-cyberattack-c2c17ebc",
-    "title": "Sageworks Outage After Suspected Cyberattack",
-    "summary": "Abrigo’s Sageworks risk‑management platform experienced an outage after detecting irregular activity, prompting a temporary shutdown of borrower‑facing services. The incident was attributed to a suspected cyberattack, though no data exfiltration or credential compromise has been confirmed. Abrigo has restored core functionality but is maintaining heightened monitoring and will evaluate the root cause before fully reopening borrower interfaces.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
-    "publishedAt": "2026-11-02T19:00:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sageworks-outage-after-suspected-cyberattack",
-      "article-c2c17ebc",
-      "c2c17ebc",
-      "sageworks-outage-after-suspected-cyberattack-fc4cb4"
-    ]
-  },
-  {
-    "slug": "bind9-16-update-addresses-security-flaws-550f8eb2",
-    "title": "Bind9.16 Update Addresses Security Flaws",
-    "summary": "Red Hat released a security update for bind9.16 on RHEL 8, addressing multiple DNS server vulnerabilities. The update mitigates flaws that could allow attackers to execute code or cause denial of service, as indicated by CVSS scores linked in the advisory. Red Hat recommends applying the patch via standard RHEL update channels; no work‑arounds are provided.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94011",
-    "publishedAt": "2026-11-02T18:59:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bind9-16-update-addresses-security-flaws",
-      "article-550f8eb2",
-      "550f8eb2",
-      "bind9-16-update-addresses-security-flaws-37d8c9"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93925-important-bind-security-bug-fix-an-b53a47be",
-    "title": "RHSA-2026:93925: Important: bind security, bug fix, and enhancement update",
-    "summary": "An update for bind is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93925",
-    "publishedAt": "2026-11-02T18:25:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93925-important-bind-security-bug-fix-an",
-      "article-b53a47be",
-      "b53a47be",
-      "rhsa-2026-93925-important-bind-security-bug-fix-an-37d91c",
-      "rhsa-2026-93925-important-bind-security-bug-fix-and-enhancem"
     ]
   }
 ];

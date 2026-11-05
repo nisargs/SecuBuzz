@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 21:44:18 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 22:07:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>DNS Typos Expose US Government Email Systems</title>
+      <link>https://secubuzz.com/news/dns-typos-expose-us-government-email-systems-483040ce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dns-typos-expose-us-government-email-systems-483040ce</guid>
+      <description><![CDATA[Erroneous or outdated DNS records in US government email infrastructure can grant attackers unexpected control over mail routing and delivery. The misconfiguration allows attackers to spoof sender addresses, intercept messages, or redirect traffic, potentially facilitating phishing or data exfiltration. Administrators should audit DNS zones, correct stale entries, and enforce strict SPF, DKIM, and DMARC policies to mitigate the risk.]]></description>
+      <pubDate>Thu, 05 Nov 2026 21:35:05 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Images Fuel Pet‑Missing Scam Extortions</title>
+      <link>https://secubuzz.com/news/ai-images-fuel-pet-missing-scam-extortions-1987234e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-images-fuel-pet-missing-scam-extortions-1987234e</guid>
+      <description><![CDATA[Scammers are leveraging AI‑generated images of missing pets to create convincing claims of finding a lost animal. The fabricated images are used to solicit payment from owners, who are misled into believing the pet has been located. Security teams should educate users about verifying claims, checking official pet‑search channels, and reporting suspicious requests to authorities.]]></description>
+      <pubDate>Thu, 05 Nov 2026 21:34:14 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/ai/2026/11/scammers-use-ai-generated-images-of-missing-pets-to-extort-owners">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Phishers Exploit Fake SpaceX Events for Microsoft, Google Credentials</title>
       <link>https://secubuzz.com/news/phishers-exploit-fake-spacex-events-for-microsoft-480fdb89</link>
@@ -41,6 +59,15 @@
       <description><![CDATA[Truffle Security announced a free Secrets Revocation Program to help API key issuers invalidate 1.4 million publicly exposed secrets. The initiative provides automated tooling and guidance to identify active secrets, revoke them, and monitor for re‑exposure, reducing credential‑based attack surface. Security teams should adopt the program, integrate revocation checks into CI/CD pipelines, and maintain strict secret lifecycle policies.]]></description>
       <pubDate>Thu, 05 Nov 2026 20:15:08 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>US Sanctions Prince Group Scam Affiliates</title>
+      <link>https://secubuzz.com/news/us-sanctions-prince-group-scam-affiliates-837e03ba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-sanctions-prince-group-scam-affiliates-837e03ba</guid>
+      <description><![CDATA[The U.S. Treasury imposed additional sanctions on four individuals and 41 companies tied to the Prince Group, a Cambodian scam operator. The measures freeze assets and block U.S. financial services to curb the group’s money‑laundering activities. Entities on the list must comply with U.S. export and anti‑money‑laundering rules to avoid penalties.]]></description>
+      <pubDate>Thu, 05 Nov 2026 20:11:00 GMT</pubDate>
+      <source url="https://therecord.media/us-issues-more-sanctions-against-prince-group-scammers">The Record</source>
       <category>General</category>
     </item>
     <item>
@@ -143,6 +170,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Issues Thunderbird Update for RHEL 9.4</title>
+      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-rhel-9-4-05d9ea75</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-rhel-9-4-05d9ea75</guid>
+      <description><![CDATA[Red Hat released a Thunderbird update for RHEL 9.4 SAP Solutions, fixing vulnerabilities that could allow local or remote code execution. The advisory lists CVE references and CVSS scores, but no public proof‑of‑concept or active exploitation has been reported. Red Hat recommends applying the update via the standard RHEL 9.4 repositories to deploy the patches.]]></description>
+      <pubDate>Thu, 05 Nov 2026 17:18:54 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95597">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Microsoft Launches On‑Premises Security Initiative</title>
       <link>https://secubuzz.com/news/microsoft-launches-on-premises-security-initiative-b73c8f71</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-launches-on-premises-security-initiative-b73c8f71</guid>
@@ -224,6 +260,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Red Hat Issues kpatch Security Update for RHEL 8</title>
+      <link>https://secubuzz.com/news/red-hat-issues-kpatch-security-update-for-rhel-8-39a79ff3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kpatch-security-update-for-rhel-8-39a79ff3</guid>
+      <description><![CDATA[Red Hat released security updates for multiple kpatch packages on RHEL 8, addressing vulnerabilities that could enable local or remote code execution. The advisory references CVE entries and CVSS base scores, but no public proof‑of‑concept or active exploitation has been reported. Red Hat recommends applying the patches through the standard RHEL 8 repositories to mitigate the risks.]]></description>
+      <pubDate>Thu, 05 Nov 2026 16:41:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95587">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CWP Web Server Trojan Enables Linux Backdoors</title>
       <link>https://secubuzz.com/news/cwp-web-server-trojan-enables-linux-backdoors-96a43958</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cwp-web-server-trojan-enables-linux-backdoors-96a43958</guid>
@@ -285,6 +330,24 @@
       <pubDate>Thu, 05 Nov 2026 15:29:08 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33492">SANS Internet Storm Center</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Python3.6 Security Patch</title>
+      <link>https://secubuzz.com/news/red-hat-issues-python3-6-security-patch-56a6cdba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python3-6-security-patch-56a6cdba</guid>
+      <description><![CDATA[Red Hat released a security update for python36:3.6 on RHEL 8.8 and its SAP and Telecom variants, fixing several Python 3.6 bugs. The advisory lists CVSS base scores from moderate to high, but no CVE IDs or exploit details are provided. Red Hat recommends applying the patch via standard RHEL update channels to remediate the vulnerabilities.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:21:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95578">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Qt5-Qtbase Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-qt5-qtbase-security-update-e089b1ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-qt5-qtbase-security-update-e089b1ff</guid>
+      <description><![CDATA[Red Hat released a security update for qt5‑qtbase on RHEL 9.6 EUS, fixing multiple Qt framework bugs. The advisory lists CVSS base scores from moderate to high, but no CVE IDs or public exploits are disclosed. Red Hat recommends applying the patch via the standard update channels to mitigate the identified vulnerabilities.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:15:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95575">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>RHSA-2026:95574: Important: qt5-qtbase security update</title>
@@ -393,69 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 14:40:26 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-8955-2">Ubuntu Security Notices</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Vercel Introduces Device‑Bound Sessions, AI Review Beta</title>
-      <link>https://secubuzz.com/news/vercel-introduces-device-bound-sessions-ai-review-dbab40b9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vercel-introduces-device-bound-sessions-ai-review-dbab40b9</guid>
-      <description><![CDATA[Vercel rolls out Device Bound Session Credentials (DBSC) to tie login sessions to specific devices, rendering stolen session cookies ineffective. The feature limits infostealer impact by preventing session hijacking, while a public beta AI Security Review scans code for vulnerabilities. Security teams should enable DBSC and join the beta to leverage automated threat detection, following Vercel’s integration guidance.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:37:00 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Arkose Labs Expands Agent Trust Manager Controls</title>
-      <link>https://secubuzz.com/news/arkose-labs-expands-agent-trust-manager-controls-b5226a46</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arkose-labs-expands-agent-trust-manager-controls-b5226a46</guid>
-      <description><![CDATA[Arkose Labs expanded its Agent Trust Manager to help businesses classify agentic traffic sessions and enforce allow, monitor, or block policies across customer journeys. The expansion addresses findings from its State of Agentic AI Trust Q3 report showing personal AI agents identify themselves less than 3% of the time. Organizations need enhanced controls to govern unrecognized agent traffic.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:33:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/arkose-agent-trust-manager/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Cockpit‑Files on Enterprise Linux 10</title>
-      <link>https://secubuzz.com/news/red-hat-updates-cockpit-files-on-enterprise-linux-cbe3730a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-cockpit-files-on-enterprise-linux-cbe3730a</guid>
-      <description><![CDATA[Red Hat issued a cockpit‑files update for Enterprise Linux 10 to fix vulnerabilities that could enable unauthorized web console access. The advisory labels the issues as Moderate, with CVSS scores linked via CVE references, and no active exploitation is known. Users should install the latest cockpit‑files package immediately to prevent potential privilege escalation.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:28:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95570">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues rsyslog Update for RHEL 8.4</title>
-      <link>https://secubuzz.com/news/red-hat-issues-rsyslog-update-for-rhel-8-4-67d10994</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-rsyslog-update-for-rhel-8-4-67d10994</guid>
-      <description><![CDATA[Red Hat released a rsyslog update for RHEL 8.4 and RHEL 8.4 ELS, addressing vulnerabilities that could lead to remote code execution. The advisory rates the issues as Important, with CVSS scores provided via CVE links, and no active exploitation has been reported. Administrators should apply the rsyslog update immediately and verify the package version to mitigate potential RCE.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:26:30 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95573">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Box Unveils Architect for Agentic Workflow Management</title>
-      <link>https://secubuzz.com/news/box-unveils-architect-for-agentic-workflow-managem-d4209a0e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/box-unveils-architect-for-agentic-workflow-managem-d4209a0e</guid>
-      <description><![CDATA[Box announced new capabilities including Box Architect for autonomously building, managing, and optimizing agentic workflows across critical business processes. The platform enables teams to leverage frontier AI to create workflows, configure agents, connect tools, and manage workflows at scale. This is a vendor product launch announcement describing enterprise collaboration and AI workflow automation features.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:25:34 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/box-architect/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95556: Important: kernel security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95556-important-kernel-security-update-002190ab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95556-important-kernel-security-update-002190ab</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:17:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95556">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>HYFLOCK Encrypts Only First 4KB of Large Files</title>
-      <link>https://secubuzz.com/news/hyflock-encrypts-only-first-4kb-of-large-files-be19f9b4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hyflock-encrypts-only-first-4kb-of-large-files-be19f9b4</guid>
-      <description><![CDATA[HYFLOCK ransomware encrypts only the first 4,096 bytes of files larger than 4KB, leaving the remainder readable. The October 17 build demonstrates this flaw, reducing the encryption scope and providing a partial data recovery opportunity for affected organizations. Security teams should apply vendor‑issued patches or disable the ransomware’s encryption routine to mitigate data loss.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:08:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hyflock-ransomware/">Cyber Security News</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>
