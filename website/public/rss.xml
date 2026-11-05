@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 12:47:47 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 13:45:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Ruby 2.5 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-ruby-2-5-security-update-2f0dc9c6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-ruby-2-5-security-update-2f0dc9c6</guid>
+      <description><![CDATA[Red Hat released a security update for the ruby:2.5 module on RHEL 8.8 Update Services for SAP Solutions and the RHEL 8.8 Telecommunications Update Service. The update addresses multiple vulnerabilities rated as Important, with CVSS base scores provided via the referenced CVE links. Customers should apply the patch immediately to mitigate potential exploitation of the identified weaknesses.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:52:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95514">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates PostgreSQL16-pgvector</title>
+      <link>https://secubuzz.com/news/red-hat-updates-postgresql16-pgvector-1f136c80</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-postgresql16-pgvector-1f136c80</guid>
+      <description><![CDATA[Red Hat released a security update for the postgresql16-pgvector module on RHEL 10.0 Extended Update Support, addressing critical issues. The update fixes multiple vulnerabilities rated as Important, with CVSS base scores available through the referenced CVE links. Systems should apply the patch promptly to prevent exploitation of the identified weaknesses.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:52:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95521">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95499: Important: libX11 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95499-important-libx11-security-update-2c41ad4d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95499-important-libx11-security-update-2c41ad4d</guid>
+      <description><![CDATA[An update for libX11 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:40:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95499">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cisco UCS Central RCE Patch Released</title>
+      <link>https://secubuzz.com/news/cisco-ucs-central-rce-patch-released-d404f322</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-ucs-central-rce-patch-released-d404f322</guid>
+      <description><![CDATA[An unauthenticated remote code execution flaw, CVE-2026-109593, was discovered in Cisco UCS Central Software, exposing authentication and MitM weaknesses in WatchGuard devices. The flaw lets attackers run arbitrary code on management servers without credentials, potentially disrupting data center operations; no public exploit has surfaced. Cisco has issued a patch, WatchGuard released updates, and SonicWall declined to address its GMS vulnerabilities.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:33:49 GMT</pubDate>
+      <source url="https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Red Hat Issues Security Update for Delve Tool</title>
       <link>https://secubuzz.com/news/red-hat-issues-security-update-for-delve-tool-b57ccc39</link>
@@ -17,6 +53,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Exposure Management Tests Reveal Persistent Gaps</title>
+      <link>https://secubuzz.com/news/exposure-management-tests-reveal-persistent-gaps-1ada0326</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/exposure-management-tests-reveal-persistent-gaps-1ada0326</guid>
+      <description><![CDATA[A critical exposure finding can traverse multiple security tools yet leave an organization still exposed, highlighting gaps in coverage. The vulnerability has a severity score, and a ticket is queued, but remediation stalls without clarity on ownership, attacker reach, protection, and business impact. Each missing detail compounds risk, underscoring the need for comprehensive data collection before remediation can proceed.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:25:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/is-your-exposure-management-platform.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Vizio Samsung TVs Ignore Tracking Opt‑Outs</title>
       <link>https://secubuzz.com/news/vizio-samsung-tvs-ignore-tracking-opt-outs-4dc2dd19</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vizio-samsung-tvs-ignore-tracking-opt-outs-4dc2dd19</guid>
@@ -24,6 +69,15 @@
       <pubDate>Thu, 05 Nov 2026 12:10:50 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/vizio-samsung-smart-tvs-seem-to-ignore-tracking-opt-outs">Malwarebytes Labs</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95512: Important: ruby:2.5 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95512-important-ruby-2-5-security-update-ee7dadcf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95512-important-ruby-2-5-security-update-ee7dadcf</guid>
+      <description><![CDATA[An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 05 Nov 2026 12:05:37 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95512">Red Hat Security Advisories</source>
+      <category>General</category>
     </item>
     <item>
       <title>RHSA-2026:95505: Important: resteasy security update</title>
@@ -114,6 +168,15 @@
       <pubDate>Thu, 05 Nov 2026 10:41:33 GMT</pubDate>
       <source url="https://cybersecuritynews.com/tata-motors-ira-app-flaws/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Russia-Linked Hackers Target iOS, Android via Watering Holes</title>
+      <link>https://secubuzz.com/news/russia-linked-hackers-target-ios-android-via-water-3157534e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russia-linked-hackers-target-ios-android-via-water-3157534e</guid>
+      <description><![CDATA[Russia-linked hackers launched a watering hole campaign targeting iOS and Android devices of US and European entities, Ukraine. The chain delivers malicious payloads via compromised sites, exploiting platform flaws that enable code execution without user interaction, risking data theft. Organizations should monitor traffic to known malicious domains, apply the latest OS patches, and enforce web filtering to block compromised sites.]]></description>
+      <pubDate>Thu, 05 Nov 2026 10:37:13 GMT</pubDate>
+      <source url="https://www.securityweek.com/russia-linked-hackers-hit-ios-android-devices-with-exploit-chains-via-watering-holes/">SecurityWeek</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>Top Five Cyber Threats Endangering Enterprises in Oct 2026</title>
@@ -393,69 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 01:45:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95371">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco Products Hit by Node.js Brotli Vulnerabilities</title>
-      <link>https://secubuzz.com/news/cisco-products-hit-by-node-js-brotli-vulnerabiliti-a9298be6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-products-hit-by-node-js-brotli-vulnerabiliti-a9298be6</guid>
-      <description><![CDATA[Cisco products are affected by Node.js vulnerabilities, including Brotli decoder, DNS resolution, and TLS hostname validation flaws. The flaws, identified as CVE‑2026‑111497, CVE‑2026‑105482, CVE‑2026‑105483, and CVE‑2026‑106069, enable remote code execution or traffic interception via out‑of‑bounds writes and hostname validation bypasses. Node.js has released patches for the 22.x, 24.x, and 26.x lines; Cisco should apply updates and verify TLS validation behavior.]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:32:39 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+and+Brotli+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1">Cisco PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Kernel Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-kernel-security-update-25c318ae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kernel-security-update-25c318ae</guid>
-      <description><![CDATA[Red Hat released a kernel update for RHEL 10 to address multiple security vulnerabilities. The vulnerabilities, identified by CVE references, carry an Important impact rating, indicating moderate to high risk for affected systems. The update is available through standard RHEL 10 repositories; administrators should apply it promptly to mitigate potential exploitation.]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:17:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95367">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Canadians Indicted for Hacking US Universities</title>
-      <link>https://secubuzz.com/news/canadians-indicted-for-hacking-us-universities-ef49329e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/canadians-indicted-for-hacking-us-universities-ef49329e</guid>
-      <description><![CDATA[Federal indictment charges Canadian nationals with hacking U.S. universities, alleging unauthorized access to academic systems. Prosecution claims actors exploited credential theft and phishing to infiltrate university networks, potentially compromising student data and research assets; no confirmed exfiltration reported. Law enforcement recommends universities review access controls, enforce MFA, and monitor for suspicious credential usage during trial proceedings.]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:15:23 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/us-charges-two-canadians-accused-of-hacking-us-universi">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Ukraine Dismisses Security Officials Over Fraudulent Call Center Scheme</title>
-      <link>https://secubuzz.com/news/ukraine-dismisses-security-officials-over-fraudule-3e0e132d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-dismisses-security-officials-over-fraudule-3e0e132d</guid>
-      <description><![CDATA[Ukraine's security service dismissed two senior officials following a corruption probe into fraudulent call center operations. Investigators found the criminal network bribed law enforcement personnel to protect illicit call centers and illegal activities from police intervention. Government authorities terminated the implicated officials as broader law enforcement actions continue against the underlying financial fraud scheme.]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/ukraine-fires-senior-security-officials-amid-scam-center-corruption-investigation">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chainalysis User Data Exposed in Cyberattack</title>
-      <link>https://secubuzz.com/news/chainalysis-user-data-exposed-in-cyberattack-f0f422a0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-user-data-exposed-in-cyberattack-f0f422a0</guid>
-      <description><![CDATA[Chainalysis reported that a cyberattack exposed user data, including law enforcement and national security personnel. The breach leveraged undisclosed agentic techniques, compromising sensitive information across the platform; no specific CVE or exploit details were disclosed. Chainalysis urged affected users to monitor accounts and change credentials, while the company is investigating the attack vector.]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Apple Releases App Store Connect API 4.6 Update</title>
-      <link>https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-update-9f3adfdb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-update-9f3adfdb</guid>
-      <description><![CDATA[Apple has released version 4.6 of the App Store Connect API, introducing new endpoints and enhancements. The update includes improved file view capabilities, allowing developers to retrieve detailed metadata for app assets. Developers should review the release notes and update integration code for developers to leverage new features and maintain compatibility.]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11042026b">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Barracuda ESG Auth Bypass CVE‑2026‑116606</title>
-      <link>https://secubuzz.com/news/barracuda-esg-auth-bypass-cve-2026-116606-dabbecbd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-esg-auth-bypass-cve-2026-116606-dabbecbd</guid>
-      <description><![CDATA[Barracuda ESG software is vulnerable to an authentication bypass identified as CVE‑2026‑116606 across all deployments. The flaw permits attackers to gain unauthorized access to administrative interfaces without credentials, potentially exposing configuration data and enabling further exploitation. Barracuda has released a patch; administrators should apply the update immediately and review access controls.]]></description>
-      <pubDate>Wed, 04 Nov 2026 23:42:35 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/barracuda-esg-authentication-bypass-flaw-opens-path-to">CyberNews AI</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

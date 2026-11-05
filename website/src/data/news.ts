@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-ruby-2-5-security-update-2f0dc9c6",
+    "title": "Red Hat Issues Ruby 2.5 Security Update",
+    "summary": "Red Hat released a security update for the ruby:2.5 module on RHEL 8.8 Update Services for SAP Solutions and the RHEL 8.8 Telecommunications Update Service. The update addresses multiple vulnerabilities rated as Important, with CVSS base scores provided via the referenced CVE links. Customers should apply the patch immediately to mitigate potential exploitation of the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95514",
+    "publishedAt": "2026-11-05T12:52:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-ruby-2-5-security-update",
+      "article-2f0dc9c6",
+      "2f0dc9c6",
+      "red-hat-issues-ruby-2-5-security-update-37d842"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-postgresql16-pgvector-1f136c80",
+    "title": "Red Hat Updates PostgreSQL16-pgvector",
+    "summary": "Red Hat released a security update for the postgresql16-pgvector module on RHEL 10.0 Extended Update Support, addressing critical issues. The update fixes multiple vulnerabilities rated as Important, with CVSS base scores available through the referenced CVE links. Systems should apply the patch promptly to prevent exploitation of the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95521",
+    "publishedAt": "2026-11-05T12:52:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-postgresql16-pgvector",
+      "article-1f136c80",
+      "1f136c80",
+      "red-hat-updates-postgresql16-pgvector-37d842"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95499-important-libx11-security-update-2c41ad4d",
+    "title": "RHSA-2026:95499: Important: libX11 security update",
+    "summary": "An update for libX11 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95499",
+    "publishedAt": "2026-11-05T12:40:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95499-important-libx11-security-update",
+      "article-2c41ad4d",
+      "2c41ad4d",
+      "rhsa-2026-95499-important-libx11-security-update-37d845"
+    ]
+  },
+  {
+    "slug": "cisco-ucs-central-rce-patch-released-d404f322",
+    "title": "Cisco UCS Central RCE Patch Released",
+    "summary": "An unauthenticated remote code execution flaw, CVE-2026-109593, was discovered in Cisco UCS Central Software, exposing authentication and MitM weaknesses in WatchGuard devices. The flaw lets attackers run arbitrary code on management servers without credentials, potentially disrupting data center operations; no public exploit has surfaced. Cisco has issued a patch, WatchGuard released updates, and SonicWall declined to address its GMS vulnerabilities.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/",
+    "publishedAt": "2026-11-05T12:33:49.000Z",
+    "cves": [
+      "CVE-2026-109593"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-ucs-central-rce-patch-released",
+      "article-d404f322",
+      "d404f322",
+      "cisco-ucs-central-rce-patch-released-279504"
+    ]
+  },
+  {
     "slug": "red-hat-issues-security-update-for-delve-tool-b57ccc39",
     "title": "Red Hat Issues Security Update for Delve Tool",
     "summary": "Red Hat issued a security update for the delve tool on RHEL 10.2 Extended Update Support, fixing vulnerabilities that could enable potential unauthorized access. The advisory lists multiple CVSS base scores but does not provide specific CVE identifiers. Red Hat recommends applying the update immediately; no additional workarounds are required.",
@@ -29,6 +103,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "exposure-management-tests-reveal-persistent-gaps-1ada0326",
+    "title": "Exposure Management Tests Reveal Persistent Gaps",
+    "summary": "A critical exposure finding can traverse multiple security tools yet leave an organization still exposed, highlighting gaps in coverage. The vulnerability has a severity score, and a ticket is queued, but remediation stalls without clarity on ownership, attacker reach, protection, and business impact. Each missing detail compounds risk, underscoring the need for comprehensive data collection before remediation can proceed.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
+    "publishedAt": "2026-11-05T12:25:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "exposure-management-tests-reveal-persistent-gaps",
+      "article-1ada0326",
+      "1ada0326",
+      "exposure-management-tests-reveal-persistent-gaps-7a011f"
+    ]
+  },
+  {
     "slug": "vizio-samsung-tvs-ignore-tracking-opt-outs-4dc2dd19",
     "title": "Vizio Samsung TVs Ignore Tracking Opt‑Outs",
     "summary": "Vizio and Samsung smart TVs appear to disregard user opt‑out requests for tracking, continuing data collection despite privacy settings. The flaw lets manufacturers transmit viewing data to third‑party analytics without explicit consent, violating user expectations and breaching privacy regulations. Users should verify firmware versions, apply vendor patches when available, and consider disabling telemetry through device settings or network filtering.",
@@ -44,6 +136,24 @@ export const news: NewsBrief[] = [
       "article-4dc2dd19",
       "4dc2dd19",
       "vizio-samsung-tvs-ignore-tracking-opt-outs-476618"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95512-important-ruby-2-5-security-update-ee7dadcf",
+    "title": "RHSA-2026:95512: Important: ruby:2.5 security update",
+    "summary": "An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95512",
+    "publishedAt": "2026-11-05T12:05:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95512-important-ruby-2-5-security-update",
+      "article-ee7dadcf",
+      "ee7dadcf",
+      "rhsa-2026-95512-important-ruby-2-5-security-update-37d842"
     ]
   },
   {
@@ -230,6 +340,25 @@ export const news: NewsBrief[] = [
       "8f7cf50f",
       "tata-motors-ira-app-flaws-enable-owner-impersonati-3313ed",
       "tata-motors-ira-app-flaws-enable-owner-impersonation"
+    ]
+  },
+  {
+    "slug": "russia-linked-hackers-target-ios-android-via-water-3157534e",
+    "title": "Russia-Linked Hackers Target iOS, Android via Watering Holes",
+    "summary": "Russia-linked hackers launched a watering hole campaign targeting iOS and Android devices of US and European entities, Ukraine. The chain delivers malicious payloads via compromised sites, exploiting platform flaws that enable code execution without user interaction, risking data theft. Organizations should monitor traffic to known malicious domains, apply the latest OS patches, and enforce web filtering to block compromised sites.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/russia-linked-hackers-hit-ios-android-devices-with-exploit-chains-via-watering-holes/",
+    "publishedAt": "2026-11-05T10:37:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russia-linked-hackers-target-ios-android-via-water",
+      "article-3157534e",
+      "3157534e",
+      "russia-linked-hackers-target-ios-android-via-water-1126c1",
+      "russia-linked-hackers-target-ios-android-via-watering-holes"
     ]
   },
   {
@@ -9404,136 +9533,6 @@ export const news: NewsBrief[] = [
       "article-4c834942",
       "4c834942",
       "rhsa-2026-93592-important-freerdp-security-update-37d92a"
-    ]
-  },
-  {
-    "slug": "hackers-impersonate-ai-bots-to-hunt-credentials-cf7804e2",
-    "title": "Hackers Impersonate AI Bots to Hunt Credentials",
-    "summary": "Attackers are impersonating ChatGPT, Claude, and Perplexity AI bots to scan websites for passwords, API keys, and cloud credentials. The campaign leverages familiar AI service names to bypass trust mechanisms and test whether organizations grant access based on perceived legitimacy. This social engineering technique targets credential theft at scale.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-impersonate-ai-bots/",
-    "publishedAt": "2026-11-02T11:01:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-impersonate-ai-bots-to-hunt-credentials",
-      "article-cf7804e2",
-      "cf7804e2",
-      "hackers-impersonate-ai-bots-to-hunt-credentials-295d61"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93596-important-opentelemetry-collector-8741ac62",
-    "title": "RHSA-2026:93596: Important: opentelemetry-collector security update",
-    "summary": "An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93596",
-    "publishedAt": "2026-11-02T10:54:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93596-important-opentelemetry-collector",
-      "article-8741ac62",
-      "8741ac62",
-      "rhsa-2026-93596-important-opentelemetry-collector-37d92a",
-      "rhsa-2026-93596-important-opentelemetry-collector-security-u"
-    ]
-  },
-  {
-    "slug": "government-linux-servers-targeted-in-sysgorat-espi-b00f8861",
-    "title": "Government Linux Servers Targeted in SysGoRAT Espionage Campaign",
-    "summary": "Palo Alto Networks Unit 42 discovered a cyber espionage campaign targeting Linux servers across government and state-affiliated entities. Tracked as cluster CL-UNK-1211, the attackers deployed SysGoRAT malware alongside suspected AI-generated scripts to conduct unauthorized operational reconnaissance and control. Defenders must inspect Linux infrastructure for unauthorized background processes, monitor script executions, and implement strict host-based access controls.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
-    "publishedAt": "2026-11-02T10:49:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "government-linux-servers-targeted-in-sysgorat-espi",
-      "article-b00f8861",
-      "b00f8861",
-      "government-linux-servers-targeted-in-sysgorat-espi-27781a",
-      "government-linux-servers-targeted-in-sysgorat-espionage-camp"
-    ]
-  },
-  {
-    "slug": "cyberstrikeai-breach-guidance-released-for-exposur-02d0faa5",
-    "title": "CyberStrikeAI Breach Guidance Released for Exposure Verification",
-    "summary": "Security researchers issued an intelligence alert detailing a recent data breach affecting CyberStrikeAI systems and telemetry infrastructure. The incident exposes internal operational telemetry, creating potential operational risks and requiring immediate root-cause telemetry analysis to hunt for exposure. Incident response teams should review root-cause telemetry, deploy recommended detection rules, and apply necessary patches immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cyberstrikeai-in-the-wild-the-use-of-ai-in-real-world-a",
-    "publishedAt": "2026-11-02T10:45:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyberstrikeai-breach-guidance-released-for-exposur",
-      "article-02d0faa5",
-      "02d0faa5",
-      "cyberstrikeai-breach-guidance-released-for-exposur-32913a",
-      "cyberstrikeai-breach-guidance-released-for-exposure-verifica"
-    ]
-  },
-  {
-    "slug": "hackers-use-cyberstrikeai-agents-to-automate-windo-d471d7a9",
-    "title": "Hackers Use CyberStrikeAI Agents to Automate Windows Domain Takeovers and Credential Theft",
-    "summary": "Hackers are now using an AI-driven command framework called CyberStrikeAI to break into Windows networks and take over entire domains. Education organizations in Africa and Latin America were among the confirmed victims. The tool lets a language model decide which commands to run, so the operator no longer types each step by hand.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-cyberstrikeai-agents-2/",
-    "publishedAt": "2026-11-02T10:34:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-cyberstrikeai-agents-to-automate-windo",
-      "article-d471d7a9",
-      "d471d7a9",
-      "hackers-use-cyberstrikeai-agents-to-automate-windo-65a62a",
-      "hackers-use-cyberstrikeai-agents-to-automate-windows-domain-"
-    ]
-  },
-  {
-    "slug": "chainalysis-breach-via-ai-driven-attack-d196dbe1",
-    "title": "Chainalysis Breach via AI-Driven Attack",
-    "summary": "Chainalysis suffered a data breach after attackers used AI‑driven offensive agentic techniques to infiltrate its internal systems and tools. The attack exploited automated reconnaissance and credential‑guessing capabilities, granting unauthorized access to proprietary data; no public exploit code is reported. Chainalysis has disclosed the incident and is conducting forensics; security teams should review access controls, monitor anomalies, and apply vendor patches.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
-    "publishedAt": "2026-11-02T10:27:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chainalysis-breach-via-ai-driven-attack",
-      "article-d196dbe1",
-      "d196dbe1",
-      "chainalysis-breach-via-ai-driven-attack-642816"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-freerdp-security-update-098ea92e",
-    "title": "Red Hat Releases freerdp Security Update",
-    "summary": "Red Hat issued an important security update for the freerdp client on Enterprise Linux 7. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the references, potentially preventing remote code execution or privilege escalation. Customers should apply the freerdp update immediately and review the CVE references for detailed impact.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93559",
-    "publishedAt": "2026-11-02T10:22:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-freerdp-security-update",
-      "article-098ea92e",
-      "098ea92e",
-      "red-hat-releases-freerdp-security-update-37d92a"
     ]
   }
 ];
