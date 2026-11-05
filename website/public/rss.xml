@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 23:49:40 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:47:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cisco Products Hit by Node.js Brotli Vulnerabilities</title>
+      <link>https://secubuzz.com/news/cisco-products-hit-by-node-js-brotli-vulnerabiliti-a9298be6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-products-hit-by-node-js-brotli-vulnerabiliti-a9298be6</guid>
+      <description><![CDATA[Cisco products are affected by Node.js vulnerabilities, including Brotli decoder, DNS resolution, and TLS hostname validation flaws. The flaws, identified as CVE‑2026‑111497, CVE‑2026‑105482, CVE‑2026‑105483, and CVE‑2026‑106069, enable remote code execution or traffic interception via out‑of‑bounds writes and hostname validation bypasses. Node.js has released patches for the 22.x, 24.x, and 26.x lines; Cisco should apply updates and verify TLS validation behavior.]]></description>
+      <pubDate>Thu, 05 Nov 2026 00:32:39 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+and+Brotli+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1">Cisco PSIRT</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Canadians Indicted for Hacking US Universities</title>
+      <link>https://secubuzz.com/news/canadians-indicted-for-hacking-us-universities-ef49329e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/canadians-indicted-for-hacking-us-universities-ef49329e</guid>
+      <description><![CDATA[Federal indictment charges Canadian nationals with hacking U.S. universities, alleging unauthorized access to academic systems. Prosecution claims actors exploited credential theft and phishing to infiltrate university networks, potentially compromising student data and research assets; no confirmed exfiltration reported. Law enforcement recommends universities review access controls, enforce MFA, and monitor for suspicious credential usage during trial proceedings.]]></description>
+      <pubDate>Thu, 05 Nov 2026 00:15:23 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/us-charges-two-canadians-accused-of-hacking-us-universi">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Barracuda ESG Auth Bypass CVE‑2026‑116606</title>
+      <link>https://secubuzz.com/news/barracuda-esg-auth-bypass-cve-2026-116606-dabbecbd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/barracuda-esg-auth-bypass-cve-2026-116606-dabbecbd</guid>
+      <description><![CDATA[Barracuda ESG software is vulnerable to an authentication bypass identified as CVE‑2026‑116606 across all deployments. The flaw permits attackers to gain unauthorized access to administrative interfaces without credentials, potentially exposing configuration data and enabling further exploitation. Barracuda has released a patch; administrators should apply the update immediately and review access controls.]]></description>
+      <pubDate>Wed, 04 Nov 2026 23:42:35 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/barracuda-esg-authentication-bypass-flaw-opens-path-to">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS</title>
       <link>https://secubuzz.com/news/cve-2026-122266-improper-isolation-of-shared-resou-3baea691</link>
@@ -26,6 +53,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Vercel Deploys Device‑Bound Session Credentials</title>
+      <link>https://secubuzz.com/news/vercel-deploys-device-bound-session-credentials-53d89812</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vercel-deploys-device-bound-session-credentials-53d89812</guid>
+      <description><![CDATA[Vercel is introducing Device‑Bound Session Credentials (DBSC) to protect its platform from stolen session cookie attacks. DBSC binds session tokens to device fingerprints, preventing attackers from hijacking sessions even if they acquire valid cookies. Vercel recommends enabling DBSC for all projects and monitoring for anomalous session activity to maintain secure user access.]]></description>
+      <pubDate>Wed, 04 Nov 2026 21:31:18 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Multiple Asian Airlines Report Data Breaches from Amadeus</title>
       <link>https://secubuzz.com/news/multiple-asian-airlines-report-data-breaches-from-2ae0d0e9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/multiple-asian-airlines-report-data-breaches-from-2ae0d0e9</guid>
@@ -33,6 +69,15 @@
       <pubDate>Wed, 04 Nov 2026 21:30:00 GMT</pubDate>
       <source url="https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident">The Record</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Zyxel GS1900 Switches Hit by Zero‑Day Exploit</title>
+      <link>https://secubuzz.com/news/zyxel-gs1900-switches-hit-by-zero-day-exploit-6135af26</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zyxel-gs1900-switches-hit-by-zero-day-exploit-6135af26</guid>
+      <description><![CDATA[Zyxel GS1900 series switches were compromised by a zero‑day vulnerability exploited on nearly 1,000 devices worldwide across all affected devices. The flaw allowed attackers to retrieve configuration files and credentials, facilitating lateral movement and potential network‑wide attacks. Zyxel released a patch; administrators should update firmware immediately and audit switch configurations for unauthorized changes.]]></description>
+      <pubDate>Wed, 04 Nov 2026 20:58:19 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/">BleepingComputer</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard</title>
@@ -260,6 +305,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Chromium Improper Input Validation CVE-2026-119262</title>
+      <link>https://secubuzz.com/news/chromium-improper-input-validation-cve-2026-119262-32d35b3e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-improper-input-validation-cve-2026-119262-32d35b3e</guid>
+      <description><![CDATA[CVE-2026-119262 exposes improper input validation in Chromium, impacting Microsoft Edge (Chromium-based) through its Chromium engine. The flaw permits malformed input to bypass checks, potentially causing memory corruption or denial of service; no public exploit reported, CVSS undisclosed. Edge applies the fix via its Chromium update; users should install the latest release or consult Google Chrome release notes for patch details.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Memory Corruption CVE-2026-119263</title>
+      <link>https://secubuzz.com/news/chromium-memory-corruption-cve-2026-119263-f6963e32</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-memory-corruption-cve-2026-119263-f6963e32</guid>
+      <description><![CDATA[CVE-2026-119263 exposes memory corruption in Chromium, impacting Microsoft Edge. Crafted input can corrupt memory, potentially causing crashes or RCE; no exploitation reported, CVSS undisclosed, and no evidence of exploitation in the wild. Edge applies the fix via its Chromium update; users should install the latest release or consult Chrome release notes for patch details.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Edge Patches Upstream Chromium Memory Corruption Flaw</title>
       <link>https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-memory-co-92e95873</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-memory-co-92e95873</guid>
@@ -392,69 +455,6 @@
       <description><![CDATA[Google Chrome Beta channel has been updated to version 158.0.8127.13 for iOS, with availability on the App Store in coming days. The release includes partial changes documented in the Git log, alongside community bug reporting channels for user feedback. This is a routine channel synchronization release without specific security vulnerability disclosures.]]></description>
       <pubDate>Wed, 04 Nov 2026 15:13:33 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Calendar phishing campaign hijacks sessions, bypasses MFA</title>
-      <link>https://secubuzz.com/news/google-calendar-phishing-campaign-hijacks-sessions-6a1b1200</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-calendar-phishing-campaign-hijacks-sessions-6a1b1200</guid>
-      <description><![CDATA[A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers.]]></description>
-      <pubDate>Wed, 04 Nov 2026 15:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Updates PKI Core in RHEL 7</title>
-      <link>https://secubuzz.com/news/red-hat-updates-pki-core-in-rhel-7-e17623f9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-pki-core-in-rhel-7-e17623f9</guid>
-      <description><![CDATA[Red Hat issued a security update for pki-core addressing security flaws in Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rated the security impact of these vulnerabilities as important based on the Common Vulnerability Scoring System. System administrators are advised to apply the updated pki-core packages immediately to maintain enterprise system security.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:44:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95182">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases JBoss EAP 8.1.9 XP 6.0.7.GA Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-79ca22b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-79ca22b3</guid>
-      <description><![CDATA[Red Hat released JBoss Enterprise Application Platform 8.1.9 XP 6.0.7.GA to update the EAP 8.1.9 base. The update incorporates unspecified fixes and enhancements, as outlined in the release notes, but does not introduce new vulnerabilities. Security teams should apply the new version to maintain compatibility and benefit from the improvements.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:44:48 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95221">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SonicWall Alerts on Unpatched GMS End‑of‑Life Flaws</title>
-      <link>https://secubuzz.com/news/sonicwall-alerts-on-unpatched-gms-end-of-life-flaw-a34413db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-alerts-on-unpatched-gms-end-of-life-flaw-a34413db</guid>
-      <description><![CDATA[SonicWall warned customers of two security flaws in its end‑of‑life Global Management System (GMS) that will not receive patches. The vulnerabilities, which remain unmitigated, could allow attackers to exploit the GMS platform, potentially enabling access or code execution, though no public exploit is reported. Security teams should decommission affected GMS instances or migrate to supported solutions to mitigate risk.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:42:25 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cycurion Launches Habit SOC Tool</title>
-      <link>https://secubuzz.com/news/cycurion-launches-habit-soc-tool-a28410c8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cycurion-launches-habit-soc-tool-a28410c8</guid>
-      <description><![CDATA[Cycurion introduced Habit, an AI‑driven security operations center platform designed to identify threats before they disrupt operations. Habit learns normal behavior across identities, devices, and workloads, then actively seeks deviations, enabling proactive detection of anomalous activity. The launch positions Cycurion as a predictive cybersecurity company, leveraging a team of former U.S. Intelligence Community and private‑sector experts.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:40:23 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/04/cycurion-habit/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>APT29 Targets Mobile Devices Using Patched Exploits</title>
-      <link>https://secubuzz.com/news/apt29-targets-mobile-devices-using-patched-exploit-fc26991b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apt29-targets-mobile-devices-using-patched-exploit-fc26991b</guid>
-      <description><![CDATA[Russian threat group APT29 is targeting iOS and Android users using watering hole attacks delivered through compromised websites and lookalike domains. According to a report by Sekoia, the operation utilizes n-day exploits for patched vulnerabilities to steal user cookies, messages, and Wi-Fi passwords. Security teams should enforce immediate mobile OS updates and restrict access to unverified external web resources.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:38:37 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/04/apt29-watering-hole-mobile-devices-n-day-exploits/">Help Net Security</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Sysdig Enhances Runtime Security for AI Agents</title>
-      <link>https://secubuzz.com/news/sysdig-enhances-runtime-security-for-ai-agents-a1f1297a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sysdig-enhances-runtime-security-for-ai-agents-a1f1297a</guid>
-      <description><![CDATA[Sysdig expanded its platform to provide runtime visibility and governance for AI agents, tracking their actions before reaching production systems. The new capability blocks risky behavior by monitoring AI agent activity, enabling security teams to intervene proactively. Organizations can integrate Sysdig’s runtime controls to enforce compliance and reduce the attack surface of AI workloads.]]></description>
-      <pubDate>Wed, 04 Nov 2026 14:34:44 GMT</pubDate>
-      <source url="https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/">SecurityWeek</source>
       <category>General</category>
     </item>
   </channel>

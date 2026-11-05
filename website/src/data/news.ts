@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cisco-products-hit-by-node-js-brotli-vulnerabiliti-a9298be6",
+    "title": "Cisco Products Hit by Node.js Brotli Vulnerabilities",
+    "summary": "Cisco products are affected by Node.js vulnerabilities, including Brotli decoder, DNS resolution, and TLS hostname validation flaws. The flaws, identified as CVE‑2026‑111497, CVE‑2026‑105482, CVE‑2026‑105483, and CVE‑2026‑106069, enable remote code execution or traffic interception via out‑of‑bounds writes and hostname validation bypasses. Node.js has released patches for the 22.x, 24.x, and 26.x lines; Cisco should apply updates and verify TLS validation behavior.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+and+Brotli+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
+    "publishedAt": "2026-11-05T00:32:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-products-hit-by-node-js-brotli-vulnerabiliti",
+      "article-a9298be6",
+      "a9298be6",
+      "cisco-products-hit-by-node-js-brotli-vulnerabiliti-104bcf",
+      "cisco-products-hit-by-node-js-brotli-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "canadians-indicted-for-hacking-us-universities-ef49329e",
+    "title": "Canadians Indicted for Hacking US Universities",
+    "summary": "Federal indictment charges Canadian nationals with hacking U.S. universities, alleging unauthorized access to academic systems. Prosecution claims actors exploited credential theft and phishing to infiltrate university networks, potentially compromising student data and research assets; no confirmed exfiltration reported. Law enforcement recommends universities review access controls, enforce MFA, and monitor for suspicious credential usage during trial proceedings.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/us-charges-two-canadians-accused-of-hacking-us-universi",
+    "publishedAt": "2026-11-05T00:15:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "canadians-indicted-for-hacking-us-universities",
+      "article-ef49329e",
+      "ef49329e",
+      "canadians-indicted-for-hacking-us-universities-6e5250"
+    ]
+  },
+  {
+    "slug": "barracuda-esg-auth-bypass-cve-2026-116606-dabbecbd",
+    "title": "Barracuda ESG Auth Bypass CVE‑2026‑116606",
+    "summary": "Barracuda ESG software is vulnerable to an authentication bypass identified as CVE‑2026‑116606 across all deployments. The flaw permits attackers to gain unauthorized access to administrative interfaces without credentials, potentially exposing configuration data and enabling further exploitation. Barracuda has released a patch; administrators should apply the update immediately and review access controls.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/barracuda-esg-authentication-bypass-flaw-opens-path-to",
+    "publishedAt": "2026-11-04T23:42:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-esg-auth-bypass-cve-2026-116606",
+      "article-dabbecbd",
+      "dabbecbd",
+      "barracuda-esg-auth-bypass-cve-2026-116606-43ca72"
+    ]
+  },
+  {
     "slug": "cve-2026-122266-improper-isolation-of-shared-resou-3baea691",
     "title": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
     "summary": "Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Impacted versions: - aws-network-policy-agent - Amazon VPC CNI Managed Add-on Refer to the article below for the most up-to-date and complete information.",
@@ -51,6 +106,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "vercel-deploys-device-bound-session-credentials-53d89812",
+    "title": "Vercel Deploys Device‑Bound Session Credentials",
+    "summary": "Vercel is introducing Device‑Bound Session Credentials (DBSC) to protect its platform from stolen session cookie attacks. DBSC binds session tokens to device fingerprints, preventing attackers from hijacking sessions even if they acquire valid cookies. Vercel recommends enabling DBSC for all projects and monitoring for anomalous session activity to maintain secure user access.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+    "publishedAt": "2026-11-04T21:31:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vercel-deploys-device-bound-session-credentials",
+      "article-53d89812",
+      "53d89812",
+      "vercel-deploys-device-bound-session-credentials-2a66c4"
+    ]
+  },
+  {
     "slug": "multiple-asian-airlines-report-data-breaches-from-2ae0d0e9",
     "title": "Multiple Asian Airlines Report Data Breaches from Amadeus",
     "summary": "Six Asian airlines—Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines, and Malaysia Airlines—have reported data breaches traced to Amadeus IT Group, a Spanish provider of flight reservation and ticketing platforms. The breaches expose passenger data across multiple carriers following an initial incident at the Spanish IT provider. Affected organizations should conduct forensic investigations and implement enhanced access controls.",
@@ -67,6 +140,24 @@ export const news: NewsBrief[] = [
       "2ae0d0e9",
       "multiple-asian-airlines-report-data-breaches-from-67c7e1",
       "multiple-asian-airlines-report-data-breaches-from-amadeus"
+    ]
+  },
+  {
+    "slug": "zyxel-gs1900-switches-hit-by-zero-day-exploit-6135af26",
+    "title": "Zyxel GS1900 Switches Hit by Zero‑Day Exploit",
+    "summary": "Zyxel GS1900 series switches were compromised by a zero‑day vulnerability exploited on nearly 1,000 devices worldwide across all affected devices. The flaw allowed attackers to retrieve configuration files and credentials, facilitating lateral movement and potential network‑wide attacks. Zyxel released a patch; administrators should update firmware immediately and audit switch configurations for unauthorized changes.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+    "publishedAt": "2026-11-04T20:58:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zyxel-gs1900-switches-hit-by-zero-day-exploit",
+      "article-6135af26",
+      "6135af26",
+      "zyxel-gs1900-switches-hit-by-zero-day-exploit-1c90f5"
     ]
   },
   {
@@ -552,6 +643,46 @@ export const news: NewsBrief[] = [
       "dd20b5eb",
       "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
       "msecure-users-urged-to-reset-passwords-after-breach"
+    ]
+  },
+  {
+    "slug": "chromium-improper-input-validation-cve-2026-119262-32d35b3e",
+    "title": "Chromium Improper Input Validation CVE-2026-119262",
+    "summary": "CVE-2026-119262 exposes improper input validation in Chromium, impacting Microsoft Edge (Chromium-based) through its Chromium engine. The flaw permits malformed input to bypass checks, potentially causing memory corruption or denial of service; no public exploit reported, CVSS undisclosed. Edge applies the fix via its Chromium update; users should install the latest release or consult Google Chrome release notes for patch details.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119262"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-improper-input-validation-cve-2026-119262",
+      "article-32d35b3e",
+      "32d35b3e",
+      "chromium-improper-input-validation-cve-2026-119262-1fe8ab"
+    ]
+  },
+  {
+    "slug": "chromium-memory-corruption-cve-2026-119263-f6963e32",
+    "title": "Chromium Memory Corruption CVE-2026-119263",
+    "summary": "CVE-2026-119263 exposes memory corruption in Chromium, impacting Microsoft Edge. Crafted input can corrupt memory, potentially causing crashes or RCE; no exploitation reported, CVSS undisclosed, and no evidence of exploitation in the wild. Edge applies the fix via its Chromium update; users should install the latest release or consult Chrome release notes for patch details.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119263"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-memory-corruption-cve-2026-119263",
+      "article-f6963e32",
+      "f6963e32",
+      "chromium-memory-corruption-cve-2026-119263-1fe8ab"
     ]
   },
   {
@@ -1351,6 +1482,25 @@ export const news: NewsBrief[] = [
       "bdfc975e",
       "classic-cgi-email-script-vulnerability-exploited-f-57dd7e",
       "classic-cgi-email-script-vulnerability-exploited-for-code-ex"
+    ]
+  },
+  {
+    "slug": "red-hat-service-interconnect-2-2-4-container-image-641bff09",
+    "title": "Red Hat Service Interconnect 2.2.4 Container Images Released",
+    "summary": "Red Hat publishes Service Interconnect 2.2.4 container images for OpenShift, providing updated components for service mesh integration. The release includes minor bug fixes and performance improvements, with no security vulnerabilities disclosed or CVEs assigned. Users should pull the new images from the Red Hat registry and update their OpenShift deployments to benefit from the enhancements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95058",
+    "publishedAt": "2026-11-04T13:15:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-service-interconnect-2-2-4-container-image",
+      "article-641bff09",
+      "641bff09",
+      "red-hat-service-interconnect-2-2-4-container-image-37d854",
+      "red-hat-service-interconnect-2-2-4-container-images-released"
     ]
   },
   {
@@ -9308,152 +9458,6 @@ export const news: NewsBrief[] = [
       "ccab73dc",
       "red-hat-releases-critical-webkit2gtk3-security-upd-37d92e",
       "red-hat-releases-critical-webkit2gtk3-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-kernel-rt-update-for-rhel-8-04dc1c11",
-    "title": "Red Hat Issues Kernel-rt Update for RHEL 8",
-    "summary": "Red Hat released a kernel-rt security update for RHEL 8, addressing multiple vulnerabilities referenced via CVE links. The update mitigates potential kernel-level exploits that could allow privilege escalation or denial of service, both of which could compromise system integrity. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify kernel version post-update.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93437",
-    "publishedAt": "2026-11-02T01:51:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-kernel-rt-update-for-rhel-8",
-      "article-04dc1c11",
-      "04dc1c11",
-      "red-hat-issues-kernel-rt-update-for-rhel-8-37d92e"
-    ]
-  },
-  {
-    "slug": "tradertraitor-blamed-for-6-3b-binance-theft-48ab283f",
-    "title": "TraderTraitor Blamed for $6.3B Binance Theft",
-    "summary": "The FBI and Secret Service blame North Korean hackers, TraderTraitor, for a $6.3 billion theft from Binance. The theft involved exfiltrating virtual assets through compromised wallet addresses, exposing Binance’s transaction system to large‑scale fraud. Binance and partners are urged to block TraderTraitor‑linked transactions, strengthen wallet monitoring, and enforce stricter KYC controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/fbi-blames-tradertraitor-for-binance-hack",
-    "publishedAt": "2026-11-02T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tradertraitor-blamed-for-6-3b-binance-theft",
-      "article-48ab283f",
-      "48ab283f",
-      "tradertraitor-blamed-for-6-3b-binance-theft-556b0a"
-    ]
-  },
-  {
-    "slug": "kernel-update-for-rhel-10-addresses-multiple-vulne-ebd3b60f",
-    "title": "Kernel Update for RHEL 10 Addresses Multiple Vulnerabilities",
-    "summary": "Red Hat released a kernel update for Enterprise Linux 10 to fix multiple kernel vulnerabilities that could compromise system integrity. The vulnerabilities, rated Important by Red Product Security, have CVSS base scores accessible through CVE links, suggesting moderate to high risk. Apply the kernel patch promptly per Red Hat’s instructions to prevent privilege escalation or denial-of-service attacks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93413",
-    "publishedAt": "2026-11-01T22:16:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kernel-update-for-rhel-10-addresses-multiple-vulne",
-      "article-ebd3b60f",
-      "ebd3b60f",
-      "kernel-update-for-rhel-10-addresses-multiple-vulne-37d92f",
-      "kernel-update-for-rhel-10-addresses-multiple-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-kernel-security-update-c7553cc9",
-    "title": "Red Hat Releases Critical Kernel Security Update",
-    "summary": "Red Hat released a kernel update for RHEL 8, fixing critical vulnerabilities that could enable privilege escalation or remote code execution. The advisory lists kernel flaws with CVSS scores but omits CVE IDs; exploitation requires no authentication. Red Hat urges users to apply the update immediately and consult the CVE links for detailed severity information.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93414",
-    "publishedAt": "2026-11-01T21:39:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-kernel-security-update",
-      "article-c7553cc9",
-      "c7553cc9",
-      "red-hat-releases-critical-kernel-security-update-37d92f"
-    ]
-  },
-  {
-    "slug": "kernel-rt-update-for-rhel-8-fixes-critical-flaws-25934d50",
-    "title": "Kernel‑rt Update for RHEL 8 Fixes Critical Flaws",
-    "summary": "Red Hat issued a kernel‑rt update for Enterprise Linux 8 to fix critical kernel vulnerabilities that could enable remote code execution. The flaws, rated Critical by Red Product Security, have CVSS base scores linked to CVE references, indicating exploitability and compromise risk. Apply the kernel‑rt patch immediately per Red Hat’s guidance to prevent privilege escalation and preserve real‑time kernel stability.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93415",
-    "publishedAt": "2026-11-01T20:52:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kernel-rt-update-for-rhel-8-fixes-critical-flaws",
-      "article-25934d50",
-      "25934d50",
-      "kernel-rt-update-for-rhel-8-fixes-critical-flaws-37d92f"
-    ]
-  },
-  {
-    "slug": "microsoft-teams-detect-esc1-help-desk-threat-8e2abe05",
-    "title": "Microsoft Teams: Detect ESC1 Help Desk Threat",
-    "summary": "Microsoft Teams users face a new ESC1 Help Desk threat that can compromise accounts via malicious support interactions. The threat exploits social engineering tactics, leveraging deceptive help desk communications to gain credential access; no software vulnerability is required. Security teams should review telemetry, deploy detection rules, and apply the latest Teams patches to mitigate the risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/from-help-desk-impersonation-to-ad-cs-abuse-investigati",
-    "publishedAt": "2026-11-01T17:43:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-teams-detect-esc1-help-desk-threat",
-      "article-8e2abe05",
-      "8e2abe05",
-      "microsoft-teams-detect-esc1-help-desk-threat-4b2815"
-    ]
-  },
-  {
-    "slug": "binance-detect-devops-laptop-takeover-threat-acdd1b42",
-    "title": "Binance: Detect DevOps Laptop Takeover Threat",
-    "summary": "Binance faces a DevOps laptop takeover threat that can grant attackers persistent access to critical infrastructure. The attack leverages credential theft and lateral movement via compromised laptops, exploiting weak endpoint security; no software vulnerability is cited. Teams should monitor telemetry, enforce strict endpoint controls, and apply the latest security patches to prevent exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/binance-links-6-3-billion-crypto-theft-to-compromised-d",
-    "publishedAt": "2026-11-01T17:41:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-detect-devops-laptop-takeover-threat",
-      "article-acdd1b42",
-      "acdd1b42",
-      "binance-detect-devops-laptop-takeover-threat-4e8474"
-    ]
-  },
-  {
-    "slug": "gitee-repos-detecting-exposed-cloud-and-ai-credent-40426d79",
-    "title": "Gitee Repos: Detecting Exposed Cloud and AI Credentials",
-    "summary": "An alert warns that Gitee repositories may expose cloud and AI credentials through publicly accessible code. The flaw arises from repositories lacking secret scanning, allowing attackers to harvest API keys and tokens, potentially granting unauthorized access to cloud and AI platforms. Gitee recommends enabling secret scanning, restricting repository visibility, and rotating exposed credentials immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/26-400-valid-cloud-and-ai-credentials-found-exposed-in",
-    "publishedAt": "2026-11-01T17:39:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gitee-repos-detecting-exposed-cloud-and-ai-credent",
-      "article-40426d79",
-      "40426d79",
-      "gitee-repos-detecting-exposed-cloud-and-ai-credent-e4d0c3",
-      "gitee-repos-detecting-exposed-cloud-and-ai-credentials"
     ]
   }
 ];
