@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/05/zohaib-ahmed-resemble-ai-detecting-ai-agent-traffic/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/zohaib-ahmed-resemble-ai-detecting-ai-agent-traffic/",
+    "title": "AI Agents Evade Binary Detection, Reveal New Signals",
+    "headline": "AI Agents Evade Binary Detection, Reveal New Signals",
+    "summary": "AI agents that choose autonomous steps evade traditional binary bot detection, prompting Resemble AI to identify new traffic signals. The flaw lies in binary detection's scripted behavior reliance; AI agents generate undeclared or disguised traffic, bypassing signature checks. Security teams should monitor click timing anomalies and session batch patterns, updating detection engines with behavioral analytics to flag coordinated traffic.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-05T06:45:07.000Z",
+    "ingestedAt": "2026-11-05T06:57:23.088Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/05/zohaib-ahmed-resemble-ai-detecting-ai-agent-traffic/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
     "title": "Healthcare Struggles to Govern Undiscovered AI Tools",
@@ -8253,22 +8269,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:93538",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:93468",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93468",
-    "title": "Red Hat Updates Nginx on RHEL 9.4",
-    "headline": "Red Hat Updates Nginx on RHEL 9.4",
-    "summary": "Red Hat released an important‑severity security update for nginx on RHEL 9.4 for SAP Solutions. The update fixes one or more vulnerabilities referenced by CVE links, but no specific CVE ID is disclosed. Administrators should apply the patch to prevent potential exploitation of the web server component and mitigate denial of service or remote code execution risks.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-02T04:38:56.000Z",
-    "ingestedAt": "2026-11-02T10:43:22.606Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:93468",
     "additionalSources": []
   }
 ]

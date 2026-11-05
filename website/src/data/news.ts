@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-agents-evade-binary-detection-reveal-new-signal-7b469918",
+    "title": "AI Agents Evade Binary Detection, Reveal New Signals",
+    "summary": "AI agents that choose autonomous steps evade traditional binary bot detection, prompting Resemble AI to identify new traffic signals. The flaw lies in binary detection's scripted behavior reliance; AI agents generate undeclared or disguised traffic, bypassing signature checks. Security teams should monitor click timing anomalies and session batch patterns, updating detection engines with behavioral analytics to flag coordinated traffic.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/zohaib-ahmed-resemble-ai-detecting-ai-agent-traffic/",
+    "publishedAt": "2026-11-05T06:45:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-evade-binary-detection-reveal-new-signal",
+      "article-7b469918",
+      "7b469918",
+      "ai-agents-evade-binary-detection-reveal-new-signal-2c32ab",
+      "ai-agents-evade-binary-detection-reveal-new-signals"
+    ]
+  },
+  {
     "slug": "healthcare-struggles-to-govern-undiscovered-ai-too-9ac87524",
     "title": "Healthcare Struggles to Govern Undiscovered AI Tools",
     "summary": "A Paubox survey shows 90% of healthcare leaders report security teams review AI‑generated code touching patient data before deployment, yet 70% still find AI‑built tools handling that data without IT or security awareness. The gap indicates AI‑assisted development can introduce patient‑data components that escape formal security vetting. Organizations should enforce code review, track AI tools, and mandate security training.",
@@ -9510,24 +9529,6 @@ export const news: NewsBrief[] = [
       "2ebe81f7",
       "red-hat-releases-freerdp-security-update-for-rhel-37d92a",
       "red-hat-releases-freerdp-security-update-for-rhel-8-4"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-nginx-on-rhel-9-4-59bea493",
-    "title": "Red Hat Updates Nginx on RHEL 9.4",
-    "summary": "Red Hat released an important‑severity security update for nginx on RHEL 9.4 for SAP Solutions. The update fixes one or more vulnerabilities referenced by CVE links, but no specific CVE ID is disclosed. Administrators should apply the patch to prevent potential exploitation of the web server component and mitigate denial of service or remote code execution risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93468",
-    "publishedAt": "2026-11-02T04:38:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-nginx-on-rhel-9-4",
-      "article-59bea493",
-      "59bea493",
-      "red-hat-updates-nginx-on-rhel-9-4-37d92e"
     ]
   }
 ];

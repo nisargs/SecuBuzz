@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 06:44:05 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 06:57:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Agents Evade Binary Detection, Reveal New Signals</title>
+      <link>https://secubuzz.com/news/ai-agents-evade-binary-detection-reveal-new-signal-7b469918</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-evade-binary-detection-reveal-new-signal-7b469918</guid>
+      <description><![CDATA[AI agents that choose autonomous steps evade traditional binary bot detection, prompting Resemble AI to identify new traffic signals. The flaw lies in binary detection's scripted behavior reliance; AI agents generate undeclared or disguised traffic, bypassing signature checks. Security teams should monitor click timing anomalies and session batch patterns, updating detection engines with behavioral analytics to flag coordinated traffic.]]></description>
+      <pubDate>Thu, 05 Nov 2026 06:45:07 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/zohaib-ahmed-resemble-ai-detecting-ai-agent-traffic/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Healthcare Struggles to Govern Undiscovered AI Tools</title>
       <link>https://secubuzz.com/news/healthcare-struggles-to-govern-undiscovered-ai-too-9ac87524</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76030, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.]]></description>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76030">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium CVE-2026-119270 Improper Input Validation</title>
-      <link>https://secubuzz.com/news/chromium-cve-2026-119270-improper-input-validation-be57d80e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-119270-improper-input-validation-be57d80e</guid>
-      <description><![CDATA[Microsoft Edge incorporates a fix for Chromium CVE-2026-119270, an improper input validation flaw that could allow exploitation via crafted input. The vulnerability permits attackers to bypass input checks, potentially enabling code execution on affected systems. Microsoft recommends installing the latest Edge update, which includes the Chromium patch; users should also keep Chrome up to date.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119270">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
