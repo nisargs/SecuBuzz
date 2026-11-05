@@ -36,6 +36,79 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "phone-return-scams-bill-victims-for-fake-returns-dfe726c7",
+    "title": "Phone Return Scams Bill Victims for Fake Returns",
+    "summary": "Phone return scams trick victims into receiving a real delivery and then billing them for a fake return. Fraudsters obtain a phone number, arrange a delivery, and later claim a return that triggers a billing charge, exploiting consumer trust. Security teams should educate users to verify return requests and monitor unexpected charges to mitigate this deceptive practice.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/phone-return-scams-where-a-real-delivery-and-a-fake-return-end-up-in-a-bill-for-you",
+    "publishedAt": "2026-11-05T22:18:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phone-return-scams-bill-victims-for-fake-returns",
+      "article-dfe726c7",
+      "dfe726c7",
+      "phone-return-scams-bill-victims-for-fake-returns-33d67a"
+    ]
+  },
+  {
+    "slug": "queens-library-ransomware-disrupts-wi-fi-computers-d750eb48",
+    "title": "Queens Library Ransomware Disrupts Wi-Fi, Computers",
+    "summary": "A ransomware payload infected the Queens Public Library network, disabling Wi‑Fi and on‑site computers across its 66 branches. The attack leveraged a credential‑stealing technique that encrypted critical systems, causing service outages for the borough’s 2.3 million residents; no ransom demand was reported. Library administrators applied emergency patches and restored services after isolating infected machines and resetting credentials.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/queens-library-ransomware-causes-disruptions",
+    "publishedAt": "2026-11-05T22:08:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "queens-library-ransomware-disrupts-wi-fi-computers",
+      "article-d750eb48",
+      "d750eb48",
+      "queens-library-ransomware-disrupts-wi-fi-computers-724a42"
+    ]
+  },
+  {
+    "slug": "nikke-launcher-files-tampered-player-credentials-e-f2cc72de",
+    "title": "NIKKE Launcher Files Tampered, Player Credentials Exposed",
+    "summary": "Attackers tampered with Windows launcher files of Goddess of Victory: NIKKE, exposing player passwords and personal files. The alteration of launcher binaries and config files enabled unauthorized reading of stored credentials and local documents. Players should verify launcher integrity, reinstall the game, and apply the vendor’s patch restoring original files and updating to the latest version.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/nikke-pc-launcher-compromise-put-players-passwords-and-personal-files-at-risk",
+    "publishedAt": "2026-11-05T22:06:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nikke-launcher-files-tampered-player-credentials-e",
+      "article-f2cc72de",
+      "f2cc72de",
+      "nikke-launcher-files-tampered-player-credentials-e-427c15",
+      "nikke-launcher-files-tampered-player-credentials-exposed"
+    ]
+  },
+  {
+    "slug": "chrome-157-released-for-android-a5329e91",
+    "title": "Chrome 157 Released for Android",
+    "summary": "Google Chrome released version 157 for Android, adding stability and performance improvements. The update includes the same security fixes as the corresponding desktop releases, ensuring consistent protection across platforms. Users should install the new package from Google Play within the next few days to benefit from the latest patches and performance gains.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_01050980700.html",
+    "publishedAt": "2026-11-05T22:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-157-released-for-android",
+      "article-a5329e91",
+      "a5329e91",
+      "chrome-157-released-for-android-1135d4"
+    ]
+  },
+  {
     "slug": "dns-typos-expose-us-government-email-systems-483040ce",
     "title": "DNS Typos Expose US Government Email Systems",
     "summary": "Erroneous or outdated DNS records in US government email infrastructure can grant attackers unexpected control over mail routing and delivery. The misconfiguration allows attackers to spoof sender addresses, intercept messages, or redirect traffic, potentially facilitating phishing or data exfiltration. Administrators should audit DNS zones, correct stale entries, and enforce strict SPF, DKIM, and DMARC policies to mitigate the risk.",
@@ -577,6 +650,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-qt5-qtbase-security-update-cc55f839",
+    "title": "Red Hat Issues Qt5-Qtbase Security Update",
+    "summary": "Red Hat released an important security update for the qt5‑qtbase component in RHEL 9.4 Update Services for SAP Solutions. The update addresses multiple vulnerabilities identified by CVE references, each with a CVSS base score indicating moderate risk; no active exploitation was reported. Users should apply the update immediately to mitigate potential privilege escalation or denial‑of‑service risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95588",
+    "publishedAt": "2026-11-05T16:39:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-qt5-qtbase-security-update",
+      "article-cc55f839",
+      "cc55f839",
+      "red-hat-issues-qt5-qtbase-security-update-37d841"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-critical-webkit2gtk3-update-4b94ba6d",
+    "title": "Red Hat Releases Critical WebKit2GTK3 Update",
+    "summary": "Red Hat issued a critical update for webkit2gtk3 in RHEL 8.6 Advanced Mission Critical and Extended Update Support. The patch fixes multiple high‑severity vulnerabilities cited by CVE references, each with a CVSS base score indicating remote code execution risk; no active exploitation was reported. Administrators should install the update promptly to prevent exploitation of web rendering components.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95589",
+    "publishedAt": "2026-11-05T16:35:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-critical-webkit2gtk3-update",
+      "article-4b94ba6d",
+      "4b94ba6d",
+      "red-hat-releases-critical-webkit2gtk3-update-37d841"
+    ]
+  },
+  {
     "slug": "cwp-web-server-trojan-enables-linux-backdoors-96a43958",
     "title": "CWP Web Server Trojan Enables Linux Backdoors",
     "summary": "A trojanized Control Web Panel (CWP) web server, cwpsrv, installs the CWPdoor malware on Linux servers. The trojan exploits a flaw in CWP’s authentication, granting attackers privileged access and a persistent backdoor. Update CWP to the latest release, remove unauthorized cwpsrv binaries, and regularly monitor for anomalous outbound traffic daily.",
@@ -592,6 +701,24 @@ export const news: NewsBrief[] = [
       "article-96a43958",
       "96a43958",
       "cwp-web-server-trojan-enables-linux-backdoors-68daec"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-java-11-openjdk-els-390440e0",
+    "title": "Red Hat Updates Java 11 OpenJDK ELS",
+    "summary": "Red Hat released a security update for java-11-openjdk with Extended Lifecycle Support on RHEL 7, 8, and 9. The update addresses multiple vulnerabilities in the Java runtime, though no specific CVE identifiers are listed in the advisory. Users should apply the update via the Red Hat package manager to maintain secure Java environments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94520",
+    "publishedAt": "2026-11-05T16:12:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-java-11-openjdk-els",
+      "article-390440e0",
+      "390440e0",
+      "red-hat-updates-java-11-openjdk-els-37d8b6"
     ]
   },
   {
@@ -6365,6 +6492,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-releases-macos-27-3-beta-f2295d9a",
+    "title": "Apple Releases macOS 27.3 Beta",
+    "summary": "Apple released macOS 27.3 beta (26C5035r) for macOS users. The beta contains internal security enhancements and bug fixes, with details documented in the official release notes, and is part of Apple’s ongoing security maintenance cycle. Users should download the beta from Apple’s site and install it to keep systems current.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026c",
+    "publishedAt": "2026-11-03T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-macos-27-3-beta",
+      "article-f2295d9a",
+      "f2295d9a",
+      "apple-releases-macos-27-3-beta-66bdb2"
+    ]
+  },
+  {
+    "slug": "apple-releases-tvos-27-3-beta-1547dc30",
+    "title": "Apple Releases tvOS 27.3 Beta",
+    "summary": "Apple released tvOS 27.3 beta (24K5286g) for tvOS users. The beta includes internal security improvements and bug fixes, detailed in the official release notes, and continues Apple’s routine security maintenance. Users should download the beta from Apple’s site and install it to keep devices up to date.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026d",
+    "publishedAt": "2026-11-03T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-tvos-27-3-beta",
+      "article-1547dc30",
+      "1547dc30",
+      "apple-releases-tvos-27-3-beta-66bdb2"
+    ]
+  },
+  {
     "slug": "apple-releases-ios-27-3-beta-bea3c93c",
     "title": "Apple Releases iOS 27.3 Beta",
     "summary": "Apple released iOS 27.3 beta (24C5037i) to its developer community. The beta introduces performance improvements, UI tweaks, security enhancements, refined background task handling, and minor bug fixes for messaging and notification services, but no public vulnerabilities are disclosed. Developers can download the beta via Apple's developer portal and should test for compatibility before deployment.",
@@ -9348,176 +9511,6 @@ export const news: NewsBrief[] = [
       "article-1e42a351",
       "1e42a351",
       "uk-warns-of-rising-cyberattack-scale-2864e4"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-kernel-update-for-rhel-9-70b22e22",
-    "title": "Red Hat Releases Critical Kernel Update for RHEL 9.4",
-    "summary": "Red Hat released a kernel update for RHEL 9.4 Update Services for SAP Solutions, fixing a critical flaw that could enable privilege escalation or denial of service. The advisory lists multiple CVEs with CVSS base scores, but no single CVE is named in the text. Apply the new kernel package via standard RHEL repositories immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94109",
-    "publishedAt": "2026-11-02T23:24:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-kernel-update-for-rhel-9",
-      "article-70b22e22",
-      "70b22e22",
-      "red-hat-releases-critical-kernel-update-for-rhel-9-37d8c5",
-      "red-hat-releases-critical-kernel-update-for-rhel-9-4"
-    ]
-  },
-  {
-    "slug": "unit-42-highlights-cyberespionage-extortion-ai-ado-599c6f89",
-    "title": "Unit 42 Highlights Cyberespionage, Extortion, AI Adoption",
-    "summary": "Unit 42 released a threat intelligence brief covering recent cyberespionage campaigns, financial extortion incidents, and AI‑driven offensive tactics. The report notes adversaries use AI to automate phishing, accelerate malware development, and enhance data exfiltration while extortion actors target financial institutions. Security teams should monitor AI‑driven threat indicators, update detection rules, and review supply‑chain controls to mitigate evolving risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/",
-    "publishedAt": "2026-11-02T23:00:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unit-42-highlights-cyberespionage-extortion-ai-ado",
-      "article-599c6f89",
-      "599c6f89",
-      "unit-42-highlights-cyberespionage-extortion-ai-ado-ceb4eb",
-      "unit-42-highlights-cyberespionage-extortion-ai-adoption"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-camel-4-18-for-quarkus-security-768da2e4",
-    "title": "Red Hat Updates Camel 4.18 for Quarkus Security",
-    "summary": "Red Hat issued an important security update for its build of Apache Camel 4.18 bundled with Quarkus 3.33.4.SP2, addressing security issues. The patch resolves flaws that could enable remote code execution via malformed Camel routes, though no public exploit or CVE is currently documented. Customers should apply the update immediately to maintain product security; no additional mitigations are required.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93980",
-    "publishedAt": "2026-11-02T22:41:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-camel-4-18-for-quarkus-security",
-      "article-768da2e4",
-      "768da2e4",
-      "red-hat-updates-camel-4-18-for-quarkus-security-37d91b"
-    ]
-  },
-  {
-    "slug": "binance-breach-shows-single-laptop-compromise-caus-614a7acd",
-    "title": "Binance Breach Shows Single Laptop Compromise Causes Billions Lost",
-    "summary": "Attackers exploited a single compromised laptop within Binance's network to exfiltrate over one billion dollars, demonstrating how weak system separation and inadequate access controls can cascade into systemic financial loss. The incident highlights the critical need for robust network segmentation and least-privilege enforcement across enterprise infrastructure.",
-    "category": "Breach",
-    "severity": "CRITICAL",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
-    "publishedAt": "2026-11-02T22:27:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-breach-shows-single-laptop-compromise-caus",
-      "article-614a7acd",
-      "614a7acd",
-      "binance-breach-shows-single-laptop-compromise-caus-16e9fc",
-      "binance-breach-shows-single-laptop-compromise-causes-billion"
-    ]
-  },
-  {
-    "slug": "red-hat-ansible-automation-platform-2-5-security-u-b8a34741",
-    "title": "Red Hat Ansible Automation Platform 2.5 Security Update",
-    "summary": "Red Hat released an important security and bug fix update for Ansible Automation Platform 2.5. The update addresses multiple vulnerabilities with a security impact rated as Important, and each CVE’s CVSS base score is provided in the references. Administrators should apply the update promptly to mitigate the identified issues and consult the CVE links for detailed patch information.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94100",
-    "publishedAt": "2026-11-02T22:20:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-ansible-automation-platform-2-5-security-u",
-      "article-b8a34741",
-      "b8a34741",
-      "red-hat-ansible-automation-platform-2-5-security-u-37d8c6",
-      "red-hat-ansible-automation-platform-2-5-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-ansible-2-6-security-update-released-e35b03c3",
-    "title": "Red Hat Ansible 2.6 Security Update Released",
-    "summary": "Red Hat released a security update for Ansible Automation Platform 2.6 to fix multiple vulnerabilities in its automation modules. The patch fixes issues rated Important on the CVSS scale, as listed in the CVE references, stopping privilege escalation. Red Hat urges users to apply the update immediately and confirm the new version via the product security portal.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94101",
-    "publishedAt": "2026-11-02T22:18:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-ansible-2-6-security-update-released",
-      "article-e35b03c3",
-      "e35b03c3",
-      "red-hat-ansible-2-6-security-update-released-37d8c6"
-    ]
-  },
-  {
-    "slug": "aws-mcp-server-path-traversal-vulnerability-cve-20-ff621880",
-    "title": "AWS MCP Server Path Traversal Vulnerability CVE-2026-116635",
-    "summary": "CVE-2026-116635 is an unauthenticated path traversal flaw in the deployment status component of the AWS Serverless MCP Server that allows read or write access to JSON files outside the intended directory when write permissions are enabled. This vulnerability enables potential information disclosure and file manipulation by actors who can influence the MCP agent.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-164-aws/",
-    "publishedAt": "2026-11-02T21:43:24.000Z",
-    "cves": [
-      "CVE-2026-116635"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-mcp-server-path-traversal-vulnerability-cve-20",
-      "article-ff621880",
-      "ff621880",
-      "aws-mcp-server-path-traversal-vulnerability-cve-20-79d6c7",
-      "aws-mcp-server-path-traversal-vulnerability-cve-2026-116635"
-    ]
-  },
-  {
-    "slug": "brazilian-exchange-reports-46m-crypto-theft-59c13561",
-    "title": "Brazilian Exchange Reports $46M Crypto Theft",
-    "summary": "Mercado Bitcoin confirmed a cyberattack that enabled attackers to transfer more than $46 million in cryptocurrency from user wallets. The breach exploited a vulnerability in the exchange’s wallet management system, allowing unauthorized access to private keys and transaction signing. Mercado Bitcoin has issued a patch, updated key‑management protocols, and advised users to change passwords and enable two‑factor authentication.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
-    "publishedAt": "2026-11-02T21:42:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "brazilian-exchange-reports-46m-crypto-theft",
-      "article-59c13561",
-      "59c13561",
-      "brazilian-exchange-reports-46m-crypto-theft-524744"
-    ]
-  },
-  {
-    "slug": "chinese-hackers-deploy-artex-ai-against-200-organi-fb186eba",
-    "title": "Chinese Hackers Deploy ARTEX AI Against 200 Organizations",
-    "summary": "Chinese hackers used the open‑source ARTEX AI framework to launch automated attacks on more than 200 organizations across 14 countries. ARTEX orchestrates multi‑agent reconnaissance and credential harvesting, enabling rapid, low‑interaction exploitation without a specific CVE. Security teams should monitor for ARTEX activity, block known command‑and‑control endpoints, and enforce strict credential hygiene.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
-    "publishedAt": "2026-11-02T21:40:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-hackers-deploy-artex-ai-against-200-organi",
-      "article-fb186eba",
-      "fb186eba",
-      "chinese-hackers-deploy-artex-ai-against-200-organi-7271ee",
-      "chinese-hackers-deploy-artex-ai-against-200-organizations"
     ]
   }
 ];
