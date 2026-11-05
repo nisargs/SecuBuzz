@@ -646,6 +646,64 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-use-after-free-cve-2026-119269-fixed-in-e-afbd46cb",
+    "title": "Chromium Use‑After‑Free CVE‑2026‑119269 Fixed in Edge",
+    "summary": "A use‑after‑free flaw identified as CVE‑2026‑119269 exists in Chromium, the engine powering Microsoft Edge (Chromium‑based). The flaw permits memory corruption that could enable arbitrary code execution, yet no exploitation or public PoC exists. Microsoft Edge incorporates the Chromium patch; users should update to the latest Edge or Chrome release, per Google Chrome’s release notes, to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119269",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-119269-fixed-in-e",
+      "article-afbd46cb",
+      "afbd46cb",
+      "chromium-use-after-free-cve-2026-119269-fixed-in-e-1fe8ab",
+      "chromium-use-after-free-cve-2026-119269-fixed-in-edge"
+    ]
+  },
+  {
+    "slug": "microsoft-addresses-chromium-cve-2026-119271-use-a-04539ca4",
+    "title": "Microsoft Addresses Chromium CVE-2026-119271 Use-After-Free",
+    "summary": "Microsoft released a security update for Chromium CVE-2026-119271, a use‑after‑free flaw in Edge (Chromium‑based). The vulnerability could enable arbitrary code execution if exploited, but no active exploitation or public PoC has been reported. Edge users should apply the latest update via Windows Update or the Edge update channel to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119271",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119271"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-addresses-chromium-cve-2026-119271-use-a",
+      "article-04539ca4",
+      "04539ca4",
+      "microsoft-addresses-chromium-cve-2026-119271-use-a-1fe8aa",
+      "microsoft-addresses-chromium-cve-2026-119271-use-after-free"
+    ]
+  },
+  {
+    "slug": "chromium-out-of-bounds-read-vulnerability-7a1be3c8",
+    "title": "Chromium Out-of-Bounds Read Vulnerability",
+    "summary": "Chromium out‑of‑bounds read flaw (CVE‑2026‑119272) affects Microsoft Edge (Chromium‑based) via its Chromium engine. The bug permits memory reads beyond bounds, exposing sensitive data, and is a high‑severity memory corruption vulnerability. Microsoft Edge resolves the issue by integrating the latest Chromium patch; users should update to the newest Edge release or review Google Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119272",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-out-of-bounds-read-vulnerability",
+      "article-7a1be3c8",
+      "7a1be3c8",
+      "chromium-out-of-bounds-read-vulnerability-1fe8aa"
+    ]
+  },
+  {
     "slug": "chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7",
     "title": "Chromium Vulnerability CVE-2026-119265 Causes Memory Corruption",
     "summary": "A memory corruption flaw, identified as CVE-2026-119265, affects Chromium components used by Microsoft Edge. The defect arises from improper handling of memory buffers, potentially allowing attackers to corrupt data or crash the browser; no exploitation reported. Microsoft Edge incorporates the fix via Chromium updates; users should install the latest Edge release or consult Google Chrome release notes.",
@@ -2986,6 +3044,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "isc-stormcast-podcast-november-4-2026-93db1eb4",
+    "title": "ISC Stormcast Podcast – November 4, 2026",
+    "summary": "The SANS Internet Storm Center released its weekly ISC Stormcast podcast for Wednesday, November 4, 2026. The episode covers current threat landscape, emerging attack trends, and defensive best practices, featuring expert commentary and real‑world incident analyses. Listeners can access the recording and transcript via the ISC website for up‑to‑date threat intelligence.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33486",
+    "publishedAt": "2026-11-04T02:10:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-podcast-november-4-2026",
+      "article-93db1eb4",
+      "93db1eb4",
+      "isc-stormcast-podcast-november-4-2026-57dd7e"
+    ]
+  },
+  {
     "slug": "69gb-philippine-government-data-exfiltrated-35c7c0ec",
     "title": "69GB Philippine Government Data Exfiltrated",
     "summary": "An unknown operator exfiltrated 69GB of SQL Server backups from the Philippine Overseas Employment Administration in under 30 minutes, confirming a data breach. The breach likely exploited misconfigured database permissions, enabling unauthorized access to sensitive migrant worker records. The agency has not released a patch; security teams should enforce least‑privilege access, audit logs, and monitor for anomalous data transfers.",
@@ -3548,6 +3624,42 @@ export const news: NewsBrief[] = [
       "article-b0b12e73",
       "b0b12e73",
       "rhsa-2026-94629-important-dpdk-security-update-37d8b2"
+    ]
+  },
+  {
+    "slug": "apple-releases-ios-27-3-beta-bea3c93c",
+    "title": "Apple Releases iOS 27.3 Beta",
+    "summary": "Apple released iOS 27.3 beta (24C5037i) to its developer community. The beta introduces performance improvements, UI tweaks, security enhancements, refined background task handling, and minor bug fixes for messaging and notification services, but no public vulnerabilities are disclosed. Developers can download the beta via Apple's developer portal and should test for compatibility before deployment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026a",
+    "publishedAt": "2026-11-03T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-ios-27-3-beta",
+      "article-bea3c93c",
+      "bea3c93c",
+      "apple-releases-ios-27-3-beta-66bdb2"
+    ]
+  },
+  {
+    "slug": "apple-releases-ipados-27-3-beta-2bcb8868",
+    "title": "Apple Releases iPadOS 27.3 Beta",
+    "summary": "Apple released iPadOS 27.3 beta (24C5037i) to its developer community. The beta adds performance improvements, UI tweaks, security enhancements, refined background task handling, and minor bug fixes for messaging and notification services, but no public vulnerabilities are disclosed. Developers can download the beta via Apple's developer portal and should test for compatibility before deployment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026b",
+    "publishedAt": "2026-11-03T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-ipados-27-3-beta",
+      "article-2bcb8868",
+      "2bcb8868",
+      "apple-releases-ipados-27-3-beta-66bdb2"
     ]
   },
   {
@@ -9361,117 +9473,6 @@ export const news: NewsBrief[] = [
       "article-32ba1ab4",
       "32ba1ab4",
       "thunderbird-security-update-for-rhel-9-released-37d92e"
-    ]
-  },
-  {
-    "slug": "lxd-incus-certificate-validation-flaw-enables-remo-99c45be4",
-    "title": "LXD/Incus Certificate Validation Flaw Enables Remote Control",
-    "summary": "A critical certificate validation flaw in LXD and Incus lets attackers bypass HTTPS management authentication and seize control of clusters and VMs. The flaw allows unauthenticated access without passwords, stolen keys, or user interaction, exposing Linux hosts to full administrative takeover. Canonical and Red Hat have released patches; operators should upgrade LXD/Incus to the latest version and enforce certificate validation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/certificate-validation-flaw-in-lxd-and-incus/",
-    "publishedAt": "2026-11-02T02:45:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "lxd-incus-certificate-validation-flaw-enables-remo",
-      "article-99c45be4",
-      "99c45be4",
-      "lxd-incus-certificate-validation-flaw-enables-remo-58736f",
-      "lxd-incus-certificate-validation-flaw-enables-remote-control"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-moderate-update-for-libkcapi-330cca79",
-    "title": "Red Hat Issues Moderate Update for libkcapi",
-    "summary": "A moderate‑severity vulnerability in libkcapi affects Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and the Telecommunications Update Service. Red Hat Product Security rates the flaw moderate, with a CVSS base score listed in the CVE references but no public exploit. Apply the libkcapi update via RHEL 8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93453",
-    "publishedAt": "2026-11-02T02:41:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-moderate-update-for-libkcapi",
-      "article-330cca79",
-      "330cca79",
-      "red-hat-issues-moderate-update-for-libkcapi-37d92e"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-jackson-packages-for-rhel-9-4-4a46af94",
-    "title": "Red Hat Updates Jackson Packages for RHEL 9.4",
-    "summary": "Red Hat released a security update for jackson-annotations, jackson-core, jackson-databind, jackson-jaxrs-providers, and jackson-modules-base on RHEL 9.4 Update Services for SAP Solutions. The update addresses multiple vulnerabilities that could enable remote code execution or unauthorized data disclosure via malformed JSON payloads. Red Hat recommends applying the update promptly; no workarounds are available, and users should confirm package versions after installation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93444",
-    "publishedAt": "2026-11-02T02:39:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-jackson-packages-for-rhel-9-4",
-      "article-4a46af94",
-      "4a46af94",
-      "red-hat-updates-jackson-packages-for-rhel-9-4-37d92e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libsoup-security-update-for-rhel-9-672da2ea",
-    "title": "Red Hat Issues libsoup Security Update for RHEL 9.2",
-    "summary": "Red Hat released a libsoup update on RHEL 9.2 Update Services for SAP Solutions, fixing a flaw that could allow remote code execution via malformed HTTP requests. The flaw is rated Important with a high CVSS score, and a public PoC demonstrates remote code execution. Red Hat has published the patch; administrators should apply it immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93447",
-    "publishedAt": "2026-11-02T02:37:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libsoup-security-update-for-rhel-9",
-      "article-672da2ea",
-      "672da2ea",
-      "red-hat-issues-libsoup-security-update-for-rhel-9-37d92e",
-      "red-hat-issues-libsoup-security-update-for-rhel-9-2"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-libxtst-update-for-rhel-9-c562358a",
-    "title": "Red Hat Issues Important libXtst Update for RHEL 9.2 SAP",
-    "summary": "Red Hat issued an Important security update for libXtst on RHEL 9.2 Update Services for SAP Solutions, addressing flaws that could allow privilege escalation or denial of service. The advisory cites CVSS base scores for each vulnerability, but no explicit CVE identifiers are provided. Customers should install the latest libXtst package immediately to protect against the disclosed weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93449",
-    "publishedAt": "2026-11-02T02:37:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-libxtst-update-for-rhel-9",
-      "article-c562358a",
-      "c562358a",
-      "red-hat-issues-important-libxtst-update-for-rhel-9-37d92e",
-      "red-hat-issues-important-libxtst-update-for-rhel-9-2-sap"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-libsoup-update-for-rhel-9-4-9fd8bf8c",
-    "title": "Red Hat Issues libsoup Update for RHEL 9.4",
-    "summary": "Red Hat released a security update for libsoup on RHEL 9.4 Update Services for SAP Solutions, addressing several vulnerabilities. The vulnerabilities could allow attackers to execute arbitrary code or cause denial of service through crafted HTTP requests. Red Hat recommends applying the update immediately; no workarounds are provided, and users should verify libsoup version after patching.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93445",
-    "publishedAt": "2026-11-02T02:30:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-libsoup-update-for-rhel-9-4",
-      "article-9fd8bf8c",
-      "9fd8bf8c",
-      "red-hat-issues-libsoup-update-for-rhel-9-4-37d92e"
     ]
   }
 ];

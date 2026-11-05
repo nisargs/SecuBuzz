@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 01:44:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 02:45:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Cisco Products Hit by Node.js Brotli Vulnerabilities</title>
@@ -305,6 +305,33 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Chromium Use‑After‑Free CVE‑2026‑119269 Fixed in Edge</title>
+      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-119269-fixed-in-e-afbd46cb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-119269-fixed-in-e-afbd46cb</guid>
+      <description><![CDATA[A use‑after‑free flaw identified as CVE‑2026‑119269 exists in Chromium, the engine powering Microsoft Edge (Chromium‑based). The flaw permits memory corruption that could enable arbitrary code execution, yet no exploitation or public PoC exists. Microsoft Edge incorporates the Chromium patch; users should update to the latest Edge or Chrome release, per Google Chrome’s release notes, to mitigate the risk.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119269">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Addresses Chromium CVE-2026-119271 Use-After-Free</title>
+      <link>https://secubuzz.com/news/microsoft-addresses-chromium-cve-2026-119271-use-a-04539ca4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-addresses-chromium-cve-2026-119271-use-a-04539ca4</guid>
+      <description><![CDATA[Microsoft released a security update for Chromium CVE-2026-119271, a use‑after‑free flaw in Edge (Chromium‑based). The vulnerability could enable arbitrary code execution if exploited, but no active exploitation or public PoC has been reported. Edge users should apply the latest update via Windows Update or the Edge update channel to mitigate the risk.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119271">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Out-of-Bounds Read Vulnerability</title>
+      <link>https://secubuzz.com/news/chromium-out-of-bounds-read-vulnerability-7a1be3c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-out-of-bounds-read-vulnerability-7a1be3c8</guid>
+      <description><![CDATA[Chromium out‑of‑bounds read flaw (CVE‑2026‑119272) affects Microsoft Edge (Chromium‑based) via its Chromium engine. The bug permits memory reads beyond bounds, exposing sensitive data, and is a high‑severity memory corruption vulnerability. Microsoft Edge resolves the issue by integrating the latest Chromium patch; users should update to the newest Edge release or review Google Chrome release notes.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119272">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Chromium Vulnerability CVE-2026-119265 Causes Memory Corruption</title>
       <link>https://secubuzz.com/news/chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7</guid>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucs-rce-LzHSFRDQ?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+UCS+Central+Software+Remote+Code+Execution+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Pillow Multiple Vulnerabilities Affect Image Processing Libraries</title>
-      <link>https://secubuzz.com/news/pillow-multiple-vulnerabilities-affect-image-proce-4e0f903b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pillow-multiple-vulnerabilities-affect-image-proce-4e0f903b</guid>
-      <description><![CDATA[Multiple vulnerabilities were discovered in Pillow, a popular Python imaging library. Issues include improper handling of map stride values in McIdas AREA image loading, inadequate decompression bomb checks for font files, and flawed filter size validation in rank filter implementations. These flaws can lead to information disclosure or denial-of-service conditions.]]></description>
-      <pubDate>Wed, 04 Nov 2026 15:49:54 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8999-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Beta Desktop 158 Update</title>
-      <link>https://secubuzz.com/news/chrome-beta-desktop-158-update-86a22153</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-desktop-158-update-86a22153</guid>
-      <description><![CDATA[Google Chrome Beta channel has been updated to version 158.0.8127.18 for Windows, Mac, and Linux platforms. This release includes partial changes documented in the Git log, with community bug reporting channels available for user feedback. The update represents a routine channel synchronization release without specific security vulnerability disclosures.]]></description>
-      <pubDate>Wed, 04 Nov 2026 15:43:33 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95234: Important: git-lfs security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95234-important-git-lfs-security-update-0fcf4d36</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95234-important-git-lfs-security-update-0fcf4d36</guid>
-      <description><![CDATA[An update for git-lfs is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 04 Nov 2026 15:42:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95234">Red Hat Security Advisories</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
