@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "healthcare-struggles-to-govern-undiscovered-ai-too-9ac87524",
+    "title": "Healthcare Struggles to Govern Undiscovered AI Tools",
+    "summary": "A Paubox survey shows 90% of healthcare leaders report security teams review AI‑generated code touching patient data before deployment, yet 70% still find AI‑built tools handling that data without IT or security awareness. The gap indicates AI‑assisted development can introduce patient‑data components that escape formal security vetting. Organizations should enforce code review, track AI tools, and mandate security training.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
+    "publishedAt": "2026-11-05T06:11:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "healthcare-struggles-to-govern-undiscovered-ai-too",
+      "article-9ac87524",
+      "9ac87524",
+      "healthcare-struggles-to-govern-undiscovered-ai-too-7418ca",
+      "healthcare-struggles-to-govern-undiscovered-ai-tools"
+    ]
+  },
+  {
     "slug": "companies-boost-ai-governance-spending-lose-contro-723c397a",
     "title": "Companies Boost AI Governance Spending, Lose Control",
     "summary": "A DNSFilter report shows companies are raising cybersecurity budgets, prioritizing AI security and governance. The study notes 74.5% of respondents increased spending, with 40.3% earmarking funds for AI governance, yet many firms report diminished control over AI tools due to employee access. Organizations should align budget allocations with governance frameworks and monitor AI tool usage to mitigate risk.",
@@ -2245,24 +2264,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-adds-one-known-exploited-vulnerability-to-cat-ab5f1960",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .",
+    "slug": "apple-improper-authentication-vulnerability-cve-20-844bd6b2",
+    "title": "Apple Improper Authentication Vulnerability CVE-2024-27834 Exploited for Info-Stealing Malware",
+    "summary": "Apple's CVE-2024-27834 improper authentication flaw was actively exploited to deliver info‑stealing malware across macOS versions, compromising user credentials and data. The vulnerability, rated CVSS 5.5, allows bypassing authentication checks without privileged access, enabling credential theft and data exfiltration. CISA added CVE-2024-27834 to its Known Exploited Vulnerabilities catalog and urges macOS users to install the latest updates and enable two‑factor authentication.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "MEDIUM",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
     "publishedAt": "2026-11-04T12:00:00.000Z",
     "cves": [
       "CVE-2024-27834"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html"
+      }
+    ],
     "aliases": [
-      "cisa-adds-one-known-exploited-vulnerability-to-cat",
-      "article-ab5f1960",
-      "ab5f1960",
-      "cisa-adds-one-known-exploited-vulnerability-to-cat-3fd10f",
-      "cisa-adds-one-known-exploited-vulnerability-to-catalog"
+      "apple-improper-authentication-vulnerability-cve-20",
+      "article-844bd6b2",
+      "844bd6b2",
+      "apple-improper-authentication-vulnerability-cve-20-3fd10f",
+      "apple-improper-authentication-vulnerability-cve-2024-27834-e"
     ]
   },
   {
@@ -9504,24 +9528,6 @@ export const news: NewsBrief[] = [
       "article-59bea493",
       "59bea493",
       "red-hat-updates-nginx-on-rhel-9-4-37d92e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-net-8-0-update-for-rhel-9-4-fa65bc85",
-    "title": "Red Hat Issues .NET 8.0 Update for RHEL 9.4",
-    "summary": "Red Hat released a security update for .NET 8.0 on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The patch fixes several CVE‑identified flaws that could enable remote code execution or privilege escalation, with CVSS scores up to 9.0. Red Hat advises applying the update immediately via the provided RPMs or the Customer Portal to secure affected systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93456",
-    "publishedAt": "2026-11-02T04:37:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-net-8-0-update-for-rhel-9-4",
-      "article-fa65bc85",
-      "fa65bc85",
-      "red-hat-issues-net-8-0-update-for-rhel-9-4-37d92e"
     ]
   }
 ];

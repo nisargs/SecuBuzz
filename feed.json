@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
+    "title": "Healthcare Struggles to Govern Undiscovered AI Tools",
+    "headline": "Healthcare Struggles to Govern Undiscovered AI Tools",
+    "summary": "A Paubox survey shows 90% of healthcare leaders report security teams review AI‑generated code touching patient data before deployment, yet 70% still find AI‑built tools handling that data without IT or security awareness. The gap indicates AI‑assisted development can introduce patient‑data components that escape formal security vetting. Organizations should enforce code review, track AI tools, and mandate security training.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-05T06:11:25.000Z",
+    "ingestedAt": "2026-11-05T06:43:09.422Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/05/dnsfilter-shadow-ai-cost-report/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/dnsfilter-shadow-ai-cost-report/",
     "title": "Companies Boost AI Governance Spending, Lose Control",
@@ -1920,11 +1936,11 @@
   {
     "id": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
     "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "headline": "CISA Adds One Known Exploited Vulnerability to Catalog",
-    "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria .",
+    "title": "Apple Improper Authentication Vulnerability CVE-2024-27834 Exploited for Info-Stealing Malware",
+    "headline": "Apple Improper Authentication Vulnerability CVE-2024-27834 Exploited for Info-Stealing Malware",
+    "summary": "Apple's CVE-2024-27834 improper authentication flaw was actively exploited to deliver info‑stealing malware across macOS versions, compromising user credentials and data. The vulnerability, rated CVSS 5.5, allows bypassing authentication checks without privileged access, enabling credential theft and data exfiltration. CISA added CVE-2024-27834 to its Known Exploited Vulnerabilities catalog and urges macOS users to install the latest updates and enable two‑factor authentication.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "MEDIUM",
     "source": "CISA",
     "publishedAt": "2026-11-04T12:00:00.000Z",
     "ingestedAt": "2026-11-04T21:44:18.415Z",
@@ -1933,7 +1949,12 @@
     "cves": [
       "CVE-2024-27834"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html"
+      }
+    ],
     "isFallback": true
   },
   {
@@ -8248,22 +8269,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:93468",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:93456",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93456",
-    "title": "Red Hat Issues .NET 8.0 Update for RHEL 9.4",
-    "headline": "Red Hat Issues .NET 8.0 Update for RHEL 9.4",
-    "summary": "Red Hat released a security update for .NET 8.0 on RHEL 9.4 Update Services for SAP Solutions, addressing multiple vulnerabilities. The patch fixes several CVE‑identified flaws that could enable remote code execution or privilege escalation, with CVSS scores up to 9.0. Red Hat advises applying the update immediately via the provided RPMs or the Customer Portal to secure affected systems.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-02T04:37:46.000Z",
-    "ingestedAt": "2026-11-02T11:43:56.183Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:93456",
     "additionalSources": []
   }
 ]
