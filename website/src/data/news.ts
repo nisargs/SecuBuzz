@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-95482-important-gimp-2-8-security-bug-fi-442dc4ba",
+    "title": "RHSA-2026:95482: Important: gimp:2.8 security, bug fix, and enhancement update",
+    "summary": "An update for the gimp:2.8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95482",
+    "publishedAt": "2026-11-05T10:01:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95482-important-gimp-2-8-security-bug-fi",
+      "article-442dc4ba",
+      "442dc4ba",
+      "rhsa-2026-95482-important-gimp-2-8-security-bug-fi-37d845",
+      "rhsa-2026-95482-important-gimp-2-8-security-bug-fix-and-enha"
+    ]
+  },
+  {
     "slug": "red-hat-releases-bind-security-update-for-rhel-8-4-3cf9e828",
     "title": "Red Hat Releases Bind Security Update for RHEL 8.4",
     "summary": "Red Hat issued a bind security update for RHEL 8.4 AMCS and EUS LLA, addressing multiple vulnerabilities. The update includes bug fixes and enhancements, with CVSS scores provided for each CVE referenced in the advisory. Customers should apply the patch immediately to mitigate critical potential exploitation of the bind service.",
@@ -44,6 +63,30 @@ export const news: NewsBrief[] = [
       "article-052cbc10",
       "052cbc10",
       "ghostmap-app-forces-android-devices-into-boot-loop-147b87"
+    ]
+  },
+  {
+    "slug": "apple-introduces-harmful-content-scanning-for-publ-67579950",
+    "title": "Apple Introduces Harmful-Content Scanning for Public iCloud Links in iOS 27.3",
+    "summary": "Apple announced that starting with iOS 27.3, it will scan publicly shared iCloud photos and files for harmful content. The update targets links shared with “Anyone with the link” permissions, aiming to detect malware, phishing, or illicit material before delivery. Users will receive automated scans and warnings, and developers must ensure content complies with Apple’s policy and update apps accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
+    "publishedAt": "2026-11-05T09:13:28.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/apple-to-scan-for-every-photo-and-file/"
+      }
+    ],
+    "aliases": [
+      "apple-introduces-harmful-content-scanning-for-publ",
+      "article-67579950",
+      "67579950",
+      "apple-introduces-harmful-content-scanning-for-publ-6b033c",
+      "apple-introduces-harmful-content-scanning-for-public-icloud-"
     ]
   },
   {
@@ -81,6 +124,25 @@ export const news: NewsBrief[] = [
       "article-e709ff8f",
       "e709ff8f",
       "banking-malware-reveals-ghostmap-crash-loop-bug-58b902"
+    ]
+  },
+  {
+    "slug": "cert-in-reports-ai-driven-attacks-target-bfsi-cons-0bf4ab91",
+    "title": "CERT‑In Reports AI‑Driven Attacks Target BFSI Consoles",
+    "summary": "CERT‑In flagged that AI‑assisted actor Crafty Falcon targets Indian banking, financial services, and insurance firms, aiming to compromise 62 consoles. The campaign uses publicly available AI‑driven tools, enabling automated exploitation of known vulnerabilities and credential theft, though no specific CVE has been disclosed. Security teams should monitor console logs, apply patches, and restrict privileged access to mitigate potential compromise.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+    "publishedAt": "2026-11-05T08:42:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cert-in-reports-ai-driven-attacks-target-bfsi-cons",
+      "article-0bf4ab91",
+      "0bf4ab91",
+      "cert-in-reports-ai-driven-attacks-target-bfsi-cons-2f3bfe",
+      "cert-in-reports-ai-driven-attacks-target-bfsi-consoles"
     ]
   },
   {
@@ -155,6 +217,45 @@ export const news: NewsBrief[] = [
       "94a2e802",
       "hackers-use-fake-government-websites-and-captcha-c-6780bb",
       "hackers-use-fake-government-websites-and-captcha-checks-to-d"
+    ]
+  },
+  {
+    "slug": "critical-citrix-xenserver-vulnerability-could-let-81a18ab3",
+    "title": "Critical Citrix XenServer Vulnerability Could Let Hackers Take Over Virtualization Hosts Without Authentication",
+    "summary": "Citrix has disclosed a critical XenServer vulnerability that could let an unauthenticated attacker compromise virtualization hosts and supporting appliances. Tracked as CVE-2026-98432, the flaw requires access to the management network, an important limit when assessing which systems are exposed.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-citrix-xenserver-vulnerability/",
+    "publishedAt": "2026-11-05T07:24:28.000Z",
+    "cves": [
+      "CVE-2026-98432"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-citrix-xenserver-vulnerability-could-let",
+      "article-81a18ab3",
+      "81a18ab3",
+      "critical-citrix-xenserver-vulnerability-could-let-217a0b",
+      "critical-citrix-xenserver-vulnerability-could-let-hackers-ta"
+    ]
+  },
+  {
+    "slug": "top-10-security-data-lake-platforms-2026-9b148f95",
+    "title": "Top 10 Security Data Lake Platforms 2026",
+    "summary": "The article ranks the leading security data lake platforms for 2026, evaluating telemetry storage, detection engines, and cost efficiency. It highlights the shift from SIEM‑priced storage to open‑format object storage, noting challenges in data escape and vendor migration. Security teams should assess platform fit, plan migration strategies, and monitor for performance and compliance gaps.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-security-data-lakes/",
+    "publishedAt": "2026-11-05T07:19:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-security-data-lake-platforms-2026",
+      "article-9b148f95",
+      "9b148f95",
+      "top-10-security-data-lake-platforms-2026-228889"
     ]
   },
   {
@@ -458,6 +559,24 @@ export const news: NewsBrief[] = [
       "article-ef49329e",
       "ef49329e",
       "canadians-indicted-for-hacking-us-universities-6e5250"
+    ]
+  },
+  {
+    "slug": "chainalysis-user-data-exposed-in-cyberattack-f0f422a0",
+    "title": "Chainalysis User Data Exposed in Cyberattack",
+    "summary": "Chainalysis reported that a cyberattack exposed user data, including law enforcement and national security personnel. The breach leveraged undisclosed agentic techniques, compromising sensitive information across the platform; no specific CVE or exploit details were disclosed. Chainalysis urged affected users to monitor accounts and change credentials, while the company is investigating the attack vector.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
+    "publishedAt": "2026-11-05T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chainalysis-user-data-exposed-in-cyberattack",
+      "article-f0f422a0",
+      "f0f422a0",
+      "chainalysis-user-data-exposed-in-cyberattack-10fcac"
     ]
   },
   {
@@ -9414,118 +9533,6 @@ export const news: NewsBrief[] = [
       "article-6be8061f",
       "6be8061f",
       "ai-agent-command-policy-first-ten-lines-485002"
-    ]
-  },
-  {
-    "slug": "byoky-launches-open-source-ai-api-key-wallet-13f4fb13",
-    "title": "Byoky Launches Open-Source AI API Key Wallet",
-    "summary": "Byoky introduces an open‑source wallet for storing AI API keys on Chrome, Firefox, iOS, and Android. The wallet encrypts keys locally, and forwards calls to providers, returning session tokens while keeping keys secure. Users install the extension or mobile app, configure provider credentials, and rely on Byoky to keep keys isolated from applications.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/byoky-open-source-ai-api-key-wallet/",
-    "publishedAt": "2026-11-02T06:00:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "byoky-launches-open-source-ai-api-key-wallet",
-      "article-13f4fb13",
-      "13f4fb13",
-      "byoky-launches-open-source-ai-api-key-wallet-4ec313"
-    ]
-  },
-  {
-    "slug": "microsoft-qlib-mlflowrecorder-deserialization-rce-28728857",
-    "title": "Microsoft Qlib MLflowRecorder Deserialization RCE Vulnerability",
-    "summary": "A deserialization flaw in Microsoft Qlib's MLflowRecorder permits remote code execution on affected installations. The flaw requires user interaction, such as visiting a malicious page or opening a crafted file, and has a CVSS score of 7.8, indicating high severity. Microsoft has assigned a CVSS rating of 7.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-850/",
-    "publishedAt": "2026-11-02T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-qlib-mlflowrecorder-deserialization-rce",
-      "article-28728857",
-      "28728857",
-      "microsoft-qlib-mlflowrecorder-deserialization-rce-6f3ca6",
-      "microsoft-qlib-mlflowrecorder-deserialization-rce-vulnerabil"
-    ]
-  },
-  {
-    "slug": "microsoft-qlib-restrictedunpickler-deserialization-7fb53b05",
-    "title": "Microsoft Qlib RestrictedUnpickler Deserialization RCE Vulnerability",
-    "summary": "A deserialization flaw in Microsoft Qlib's RestrictedUnpickler permits remote code execution on affected installations. The flaw requires user interaction, such as visiting a malicious page or opening a crafted file, and has a CVSS score of 7.8, indicating high severity. Microsoft has assigned a CVSS rating of 7.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-849/",
-    "publishedAt": "2026-11-02T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-qlib-restrictedunpickler-deserialization",
-      "article-7fb53b05",
-      "7fb53b05",
-      "microsoft-qlib-restrictedunpickler-deserialization-6f3ca3",
-      "microsoft-qlib-restrictedunpickler-deserialization-rce-vulne"
-    ]
-  },
-  {
-    "slug": "microsoft-qlib-staticdataloader-deserialization-rc-15d55021",
-    "title": "Microsoft Qlib StaticDataLoader Deserialization RCE Vulnerability",
-    "summary": "A deserialization flaw in Microsoft Qlib's StaticDataLoader permits remote code execution on affected installations. The flaw requires user interaction, such as visiting a malicious page or opening a crafted file, and has a CVSS score of 7.8, indicating high severity. Microsoft has assigned a CVSS rating of 7.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-848/",
-    "publishedAt": "2026-11-02T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-qlib-staticdataloader-deserialization-rc",
-      "article-15d55021",
-      "15d55021",
-      "microsoft-qlib-staticdataloader-deserialization-rc-6f3ca3",
-      "microsoft-qlib-staticdataloader-deserialization-rce-vulnerab"
-    ]
-  },
-  {
-    "slug": "agentworks-hackathon-yields-5-security-agent-lesso-cc4def7c",
-    "title": "AgentWorks Hackathon Yields 5 Security Agent Lessons",
-    "summary": "The article examines five lessons learned from the AgentWorks Hackathon that illustrate best practices for building effective security agents. It highlights design principles such as modular architecture, real‑time threat detection, secure communication, and continuous integration testing. The insights aim to guide developers in creating robust, scalable agents that can adapt to evolving threat landscapes.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/five-lessons-from-agentworks-hackathon/",
-    "publishedAt": "2026-11-02T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "agentworks-hackathon-yields-5-security-agent-lesso",
-      "article-cc4def7c",
-      "cc4def7c",
-      "agentworks-hackathon-yields-5-security-agent-lesso-276663",
-      "agentworks-hackathon-yields-5-security-agent-lessons"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-freerdp-security-update-for-rhel-25ad2aab",
-    "title": "Red Hat Releases FreeRDP Security Update for RHEL",
-    "summary": "Red Hat issued an important security update for the freerdp package on Red Hat Enterprise Linux 8.6 systems. The update addresses security flaws rated as important that could impact remote desktop protocol client connections and system stability. System administrators should apply the patch via Red Hat Enterprise Linux 8.6 update channels to mitigate potential risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93549",
-    "publishedAt": "2026-11-02T05:58:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-freerdp-security-update-for-rhel",
-      "article-25ad2aab",
-      "25ad2aab",
-      "red-hat-releases-freerdp-security-update-for-rhel-37d92a"
     ]
   }
 ];
