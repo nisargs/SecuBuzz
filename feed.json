@@ -1,5 +1,42 @@
 [
   {
+    "id": "asb-2026-11-01",
+    "title": "Google Fixes 216 Android Flaws in November 2026 Bulletin",
+    "headline": "Google Fixes 216 Android Flaws in November 2026 Bulletin",
+    "summary": "Google released the November 2026 Android Security Bulletin, resolving 216 vulnerabilities across core Android Framework, System, and vendor components. The bulletin details 23 critical flaws, including CVE-2026-58868, CVE-2026-58876, CVE-2026-58936, CVE-2026-55275, and CVE-2026-55283, which enable remote code execution or elevation of privilege. Devices must install the 2026-11-05 security patch level or vendor firmware updates to fully remediate the disclosed flaws.",
+    "url": "https://source.android.com/docs/security/bulletin/2026/2026-11-01",
+    "source": "Android Security Bulletin",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "cves": [
+      "CVE-2026-58868",
+      "CVE-2026-58876",
+      "CVE-2026-58936",
+      "CVE-2026-55275",
+      "CVE-2026-55283",
+      "CVE-2026-58984",
+      "CVE-2026-58814",
+      "CVE-2026-58882",
+      "CVE-2026-53256",
+      "CVE-2026-59044",
+      "CVE-2026-59045",
+      "CVE-2026-80604",
+      "CVE-2026-89774",
+      "CVE-2026-59048",
+      "CVE-2026-20499",
+      "CVE-2026-20519",
+      "CVE-2026-20520",
+      "CVE-2026-20545",
+      "CVE-2026-20546",
+      "CVE-2026-20547",
+      "CVE-2026-20548",
+      "CVE-2026-20549",
+      "CVE-2026-25285"
+    ],
+    "publishedAt": "2026-11-05T23:15:11.150Z",
+    "timeAgo": "Just now"
+  },
+  {
     "id": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
     "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
     "title": "DNS Typos Expose US Government Email Systems",
@@ -8246,22 +8283,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
-    "title": "Microsoft Security Blog Analyzes Real‑World Exploitation Patterns",
-    "headline": "Microsoft Security Blog Analyzes Real‑World Exploitation Patterns",
-    "summary": "Microsoft Security blog analyzes real‑world exploitation, showing that a small subset of high‑impact CVEs accounts for most attacks. The analysis quantifies exploitation likelihood, exposure, and blast radius, guiding defenders to prioritize patches for vulnerabilities with the greatest operational risk. The post recommends data‑driven prioritization frameworks and continuous monitoring to reduce exposure to actively exploited flaws.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "publishedAt": "2026-11-02T20:20:59.000Z",
-    "ingestedAt": "2026-11-02T21:43:18.845Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
     "additionalSources": []
   }
 ]

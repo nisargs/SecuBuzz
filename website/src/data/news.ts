@@ -11,6 +11,31 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-fixes-216-android-flaws-in-november-2026-bu-9856043c",
+    "title": "Google Fixes 216 Android Flaws in November 2026 Bulletin",
+    "summary": "Google released the November 2026 Android Security Bulletin, resolving 216 vulnerabilities across core Android Framework, System, and vendor components. The bulletin details 23 critical flaws, including CVE-2026-58868, CVE-2026-58876, CVE-2026-58936, CVE-2026-55275, and CVE-2026-55283, which enable remote code execution or elevation of privilege. Devices must install the 2026-11-05 security patch level or vendor firmware updates to fully remediate the disclosed flaws.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Android Security Bulletin",
+    "sourceUrl": "https://source.android.com/docs/security/bulletin/2026/2026-11-01",
+    "publishedAt": "2026-11-05T23:15:11.150Z",
+    "cves": [
+      "CVE-2026-58868",
+      "CVE-2026-58876",
+      "CVE-2026-58936",
+      "CVE-2026-55275",
+      "CVE-2026-55283"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "google-fixes-216-android-flaws-in-november-2026-bu",
+      "article-9856043c",
+      "9856043c",
+      "google-fixes-216-android-flaws-in-november-2026-bu-1d65bf",
+      "google-fixes-216-android-flaws-in-november-2026-bulletin"
+    ]
+  },
+  {
     "slug": "dns-typos-expose-us-government-email-systems-483040ce",
     "title": "DNS Typos Expose US Government Email Systems",
     "summary": "Erroneous or outdated DNS records in US government email infrastructure can grant attackers unexpected control over mail routing and delivery. The misconfiguration allows attackers to spoof sender addresses, intercept messages, or redirect traffic, potentially facilitating phishing or data exfiltration. Administrators should audit DNS zones, correct stale entries, and enforce strict SPF, DKIM, and DMARC policies to mitigate the risk.",
@@ -9493,25 +9518,6 @@ export const news: NewsBrief[] = [
       "fb186eba",
       "chinese-hackers-deploy-artex-ai-against-200-organi-7271ee",
       "chinese-hackers-deploy-artex-ai-against-200-organizations"
-    ]
-  },
-  {
-    "slug": "microsoft-security-blog-analyzes-real-world-exploi-748027d4",
-    "title": "Microsoft Security Blog Analyzes Real‑World Exploitation Patterns",
-    "summary": "Microsoft Security blog analyzes real‑world exploitation, showing that a small subset of high‑impact CVEs accounts for most attacks. The analysis quantifies exploitation likelihood, exposure, and blast radius, guiding defenders to prioritize patches for vulnerabilities with the greatest operational risk. The post recommends data‑driven prioritization frameworks and continuous monitoring to reduce exposure to actively exploited flaws.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
-    "publishedAt": "2026-11-02T20:20:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-security-blog-analyzes-real-world-exploi",
-      "article-748027d4",
-      "748027d4",
-      "microsoft-security-blog-analyzes-real-world-exploi-791a73",
-      "microsoft-security-blog-analyzes-real-world-exploitation-pat"
     ]
   }
 ];

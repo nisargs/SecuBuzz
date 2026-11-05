@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 22:07:11 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 23:15:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Fixes 216 Android Flaws in November 2026 Bulletin</title>
+      <link>https://secubuzz.com/news/google-fixes-216-android-flaws-in-november-2026-bu-9856043c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-fixes-216-android-flaws-in-november-2026-bu-9856043c</guid>
+      <description><![CDATA[Google released the November 2026 Android Security Bulletin, resolving 216 vulnerabilities across core Android Framework, System, and vendor components. The bulletin details 23 critical flaws, including CVE-2026-58868, CVE-2026-58876, CVE-2026-58936, CVE-2026-55275, and CVE-2026-55283, which enable remote code execution or elevation of privilege. Devices must install the 2026-11-05 security patch level or vendor firmware updates to fully remediate the disclosed flaws.]]></description>
+      <pubDate>Thu, 05 Nov 2026 23:15:11 GMT</pubDate>
+      <source url="https://source.android.com/docs/security/bulletin/2026/2026-11-01">Android Security Bulletin</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>DNS Typos Expose US Government Email Systems</title>
       <link>https://secubuzz.com/news/dns-typos-expose-us-government-email-systems-483040ce</link>
@@ -447,15 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 14:41:10 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html">The Hacker News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Ubuntu patches multiple nginx vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-multiple-nginx-vulnerabilities-586a9b88</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-multiple-nginx-vulnerabilities-586a9b88</guid>
-      <description><![CDATA[Ubuntu released USN-8955-2 to address two nginx vulnerabilities, CVE-2026-42533 and CVE-2026-15176, affecting releases from 14.04 to 26.10. The flaws stem from improper handling of map directives and alias rewrite rules, allowing attackers to crash nginx or potentially execute arbitrary code. Users should apply the update immediately to prevent denial-of-service incidents or code execution exploits.]]></description>
-      <pubDate>Thu, 05 Nov 2026 14:40:26 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8955-2">Ubuntu Security Notices</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
