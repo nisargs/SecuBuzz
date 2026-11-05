@@ -11,22 +11,121 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "openai-finds-948-linux-kernel-privilege-escalation-fd49289d",
-    "title": "OpenAI Finds 948 Linux Kernel Privilege Escalation Flaws",
-    "summary": "OpenAI’s automated pipeline uncovered 948 Linux kernel privilege‑escalation flaws in a single run in mid‑October 2026, letting local users gain root. The flaws arise from missing kernel privilege checks and enable local‑user RCE that attackers could exploit with local access. Kernel maintainers have not yet issued patches; teams should apply the latest stable kernel and monitor advisories for updates.",
+    "slug": "companies-boost-ai-governance-spending-lose-contro-723c397a",
+    "title": "Companies Boost AI Governance Spending, Lose Control",
+    "summary": "A DNSFilter report shows companies are raising cybersecurity budgets, prioritizing AI security and governance. The study notes 74.5% of respondents increased spending, with 40.3% earmarking funds for AI governance, yet many firms report diminished control over AI tools due to employee access. Organizations should align budget allocations with governance frameworks and monitor AI tool usage to mitigate risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/dnsfilter-shadow-ai-cost-report/",
+    "publishedAt": "2026-11-05T05:30:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "companies-boost-ai-governance-spending-lose-contro",
+      "article-723c397a",
+      "723c397a",
+      "companies-boost-ai-governance-spending-lose-contro-3bcb7e",
+      "companies-boost-ai-governance-spending-lose-control"
+    ]
+  },
+  {
+    "slug": "consumers-unwilling-to-let-ai-agents-shop-unsuperv-fcd1538d",
+    "title": "Consumers Unwilling to Let AI Agents Shop Unsupervised",
+    "summary": "Okta’s 2026 Customer Identity Trends Report indicates that most consumers are reluctant to allow AI agents to make purchases without supervision. The study attributes hesitation to the scope of agent capabilities, potential mistakes, and the lack of easy approval or reversal mechanisms. Businesses must implement stringent agent verification and permission controls to meet evolving consumer expectations and regulatory demands.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/okta-ai-customer-experiences-report/",
+    "publishedAt": "2026-11-05T05:00:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "consumers-unwilling-to-let-ai-agents-shop-unsuperv",
+      "article-fcd1538d",
+      "fcd1538d",
+      "consumers-unwilling-to-let-ai-agents-shop-unsuperv-1679dc",
+      "consumers-unwilling-to-let-ai-agents-shop-unsupervised"
+    ]
+  },
+  {
+    "slug": "white-house-staff-use-proxies-exposing-ips-for-ren-1fca82b0",
+    "title": "White House Staff Use Proxies Exposing IPs for Rent",
+    "summary": "White House staff are reportedly using proxy services that expose their device IP addresses, allowing third parties to rent them. One service is operated by a Russian company whose founder’s hosting business was a target of 2016 election system attacks in Arizona and Illinois. Security teams should audit device configurations, disable proxy usage, and enforce network segmentation to mitigate exposure.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+    "publishedAt": "2026-11-05T04:36:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "white-house-staff-use-proxies-exposing-ips-for-ren",
+      "article-1fca82b0",
+      "1fca82b0",
+      "white-house-staff-use-proxies-exposing-ips-for-ren-455f6c",
+      "white-house-staff-use-proxies-exposing-ips-for-rent"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-webkit2gtk3-update-for-rhe-c187f2f4",
+    "title": "Red Hat Issues Critical WebKit2GTK3 Update for RHEL 8.4",
+    "summary": "Red Hat released a critical security update for webkit2gtk3 on Red Hat Enterprise Linux 8.4, addressing multiple high‑impact vulnerabilities. The advisory assigns a Critical impact rating, with CVSS base scores linked via CVE references, underscoring the severity of the flaws. Affected customers should apply the update immediately to patch the webkit2gtk3 component and prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95403",
+    "publishedAt": "2026-11-05T03:06:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-webkit2gtk3-update-for-rhe",
+      "article-c187f2f4",
+      "c187f2f4",
+      "red-hat-issues-critical-webkit2gtk3-update-for-rhe-37d846",
+      "red-hat-issues-critical-webkit2gtk3-update-for-rhel-8-4"
+    ]
+  },
+  {
+    "slug": "openai-pipeline-uncovers-948-linux-kernel-privileg-efcb72f4",
+    "title": "OpenAI Pipeline Uncovers 948 Linux Kernel Privilege Escalation Flaws",
+    "summary": "OpenAI's automated pipeline discovered 948 Linux kernel local privilege escalation vulnerabilities during a 30-hour analysis in October 2026. The flaws stem from missing privilege checks, allowing local users to achieve root-level code execution across numerous kernel versions. Vendors including Red Hat must urgently patch affected kernels while organizations should immediately apply latest stable releases and monitor security advisories.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/openai-uncovers-948-linux-kernel-vulnerabilities/",
     "publishedAt": "2026-11-05T02:42:57.000Z",
     "cves": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
+      }
+    ],
+    "aliases": [
+      "openai-pipeline-uncovers-948-linux-kernel-privileg",
+      "article-efcb72f4",
+      "efcb72f4",
+      "openai-pipeline-uncovers-948-linux-kernel-privileg-391ed3",
+      "openai-pipeline-uncovers-948-linux-kernel-privilege-escalati"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-security-update-for-rhel-9-6461df30",
+    "title": "Red Hat Releases Kernel Security Update for RHEL 9",
+    "summary": "Red Hat issued a kernel security update for Red Hat Enterprise Linux 9, addressing multiple vulnerabilities. The advisory rates the update as Important, with CVSS base scores available via referenced CVE links, indicating significant impact. Customers should apply the update promptly to mitigate the identified kernel flaws and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95370",
+    "publishedAt": "2026-11-05T02:18:17.000Z",
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "openai-finds-948-linux-kernel-privilege-escalation",
-      "article-fd49289d",
-      "fd49289d",
-      "openai-finds-948-linux-kernel-privilege-escalation-391ed3",
-      "openai-finds-948-linux-kernel-privilege-escalation-flaws"
+      "red-hat-releases-kernel-security-update-for-rhel-9",
+      "article-6461df30",
+      "6461df30",
+      "red-hat-releases-kernel-security-update-for-rhel-9-37d849"
     ]
   },
   {
@@ -100,6 +199,24 @@ export const news: NewsBrief[] = [
       "article-ef49329e",
       "ef49329e",
       "canadians-indicted-for-hacking-us-universities-6e5250"
+    ]
+  },
+  {
+    "slug": "apple-releases-app-store-connect-api-4-6-update-9f3adfdb",
+    "title": "Apple Releases App Store Connect API 4.6 Update",
+    "summary": "Apple has released version 4.6 of the App Store Connect API, introducing new endpoints and enhancements. The update includes improved file view capabilities, allowing developers to retrieve detailed metadata for app assets. Developers should review the release notes and update integration code for developers to leverage new features and maintain compatibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11042026b",
+    "publishedAt": "2026-11-05T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-app-store-connect-api-4-6-update",
+      "article-9f3adfdb",
+      "9f3adfdb",
+      "apple-releases-app-store-connect-api-4-6-update-68728a"
     ]
   },
   {
@@ -722,6 +839,27 @@ export const news: NewsBrief[] = [
       "dd20b5eb",
       "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
       "msecure-users-urged-to-reset-passwords-after-breach"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-cve-2026-76031-u-8b43c3fc",
+    "title": "Microsoft Edge Addresses Chromium CVE-2026-76031 Use‑After‑Free",
+    "summary": "Microsoft Edge, built on Chromium, patched the CVE‑2026‑76031 use‑after‑free flaw. The flaw could allow arbitrary code execution via a use‑after‑free condition and is now mitigated in the update, as noted in Chromium release logs. Users should update to the latest Microsoft Edge or apply the Chromium patch to remove the exploitation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76031",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-76031"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-cve-2026-76031-u",
+      "article-8b43c3fc",
+      "8b43c3fc",
+      "microsoft-edge-addresses-chromium-cve-2026-76031-u-744db7",
+      "microsoft-edge-addresses-chromium-cve-2026-76031-use-after-f"
     ]
   },
   {
@@ -9384,135 +9522,6 @@ export const news: NewsBrief[] = [
       "article-fa65bc85",
       "fa65bc85",
       "red-hat-issues-net-8-0-update-for-rhel-9-4-37d92e"
-    ]
-  },
-  {
-    "slug": "tightvnc-pre-auth-rce-enables-code-execution-on-wi-3d877a03",
-    "title": "TightVNC Pre‑Auth RCE Enables Code Execution on Windows",
-    "summary": "A pre‑authentication RCE flaw in TightVNC Viewer 2.8.88 x64 lets attackers run code on Windows PCs before password prompts. The flaw corrupts viewer memory when a malicious VNC server sends crafted screen data, enabling arbitrary code execution; PoC confirms the vulnerability. Update to the latest TightVNC release or apply vendor patches, and disable remote connections until a fix is issued.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/tightvnc-pre-auth-rce-vulnerability/",
-    "publishedAt": "2026-11-02T04:26:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "tightvnc-pre-auth-rce-enables-code-execution-on-wi",
-      "article-3d877a03",
-      "3d877a03",
-      "tightvnc-pre-auth-rce-enables-code-execution-on-wi-3c46d5",
-      "tightvnc-pre-auth-rce-enables-code-execution-on-windows"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-github-actions-for-ci-cd-secrets-t-a6188030",
-    "title": "Hackers Exploit GitHub Actions for CI/CD Secrets Theft",
-    "summary": "Hackers used command injection in GitHub Actions to target 61 public repositories via malicious issues, PRs, and comments. Injected commands executed in two workflow runs, allowing attackers to exfiltrate CI/CD secrets. GitHub should tighten workflow permissions, and users must audit PRs for suspicious commands; disabling workflow execution for untrusted PRs mitigates the flaw.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-target-61-github-repositories/",
-    "publishedAt": "2026-11-02T04:21:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-github-actions-for-ci-cd-secrets-t",
-      "article-a6188030",
-      "a6188030",
-      "hackers-exploit-github-actions-for-ci-cd-secrets-t-5fa7d4",
-      "hackers-exploit-github-actions-for-ci-cd-secrets-theft"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93464-moderate-podman-security-update-c54f492c",
-    "title": "RHSA-2026:93464: Moderate: podman security update",
-    "summary": "An update for podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93464",
-    "publishedAt": "2026-11-02T04:14:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93464-moderate-podman-security-update",
-      "article-c54f492c",
-      "c54f492c",
-      "rhsa-2026-93464-moderate-podman-security-update-37d92e"
-    ]
-  },
-  {
-    "slug": "btcpay-servers-targeted-hot-wallets-drained-7e228faa",
-    "title": "BTCPay Servers Targeted: Hot Wallets Drained",
-    "summary": "BTCPay Server operators received reports that attackers drained Bitcoin hot wallets on its servers, compromising merchant funds. The incident prompted the open‑source payment processor to urge operators to shut down installations immediately and keep them offline during investigation. BTCPay recommends applying the latest security patches and verifying wallet configurations to prevent further unauthorized withdrawals.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/btcpay-server-warns/",
-    "publishedAt": "2026-11-02T04:04:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "btcpay-servers-targeted-hot-wallets-drained",
-      "article-7e228faa",
-      "7e228faa",
-      "btcpay-servers-targeted-hot-wallets-drained-27f00c"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-kernel-security-update-for-rhel-8-7fa41efe",
-    "title": "Red Hat Issues Kernel Security Update for RHEL 8",
-    "summary": "Red Hat released an important kernel security update for RHEL 8, addressing vulnerabilities that could enable privilege escalation or denial of service. The advisory cites multiple CVE identifiers with CVSS scores ranging from moderate to high, though no active exploitation has been observed. Apply the kernel update promptly and verify system integrity following Red Hat’s upgrade guidelines.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93436",
-    "publishedAt": "2026-11-02T03:57:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-kernel-security-update-for-rhel-8",
-      "article-7fa41efe",
-      "7fa41efe",
-      "red-hat-issues-kernel-security-update-for-rhel-8-37d92e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93471-important-perl-yaml-1-24-security-d3a09504",
-    "title": "RHSA-2026:93471: Important: perl-YAML:1.24 security update",
-    "summary": "An update for the perl-YAML:1.24 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93471",
-    "publishedAt": "2026-11-02T03:52:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93471-important-perl-yaml-1-24-security",
-      "article-d3a09504",
-      "d3a09504",
-      "rhsa-2026-93471-important-perl-yaml-1-24-security-37d92e",
-      "rhsa-2026-93471-important-perl-yaml-1-24-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-pipewire-on-rhel-10-f43ad8cd",
-    "title": "Red Hat Updates Pipewire on RHEL 10",
-    "summary": "Red Hat released a moderate‑severity security update for pipewire on RHEL 10. The update addresses one or more vulnerabilities referenced by CVE links, though no specific CVE ID is listed, potentially allowing local privilege escalation or denial of service. Users should apply the patch to mitigate potential exploitation of the affected component.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93442",
-    "publishedAt": "2026-11-02T03:48:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-pipewire-on-rhel-10",
-      "article-f43ad8cd",
-      "f43ad8cd",
-      "red-hat-updates-pipewire-on-rhel-10-37d92e"
     ]
   }
 ];

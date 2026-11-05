@@ -5,15 +5,60 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 04:45:15 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 05:46:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>OpenAI Finds 948 Linux Kernel Privilege Escalation Flaws</title>
-      <link>https://secubuzz.com/news/openai-finds-948-linux-kernel-privilege-escalation-fd49289d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-finds-948-linux-kernel-privilege-escalation-fd49289d</guid>
-      <description><![CDATA[OpenAI’s automated pipeline uncovered 948 Linux kernel privilege‑escalation flaws in a single run in mid‑October 2026, letting local users gain root. The flaws arise from missing kernel privilege checks and enable local‑user RCE that attackers could exploit with local access. Kernel maintainers have not yet issued patches; teams should apply the latest stable kernel and monitor advisories for updates.]]></description>
+      <title>Companies Boost AI Governance Spending, Lose Control</title>
+      <link>https://secubuzz.com/news/companies-boost-ai-governance-spending-lose-contro-723c397a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/companies-boost-ai-governance-spending-lose-contro-723c397a</guid>
+      <description><![CDATA[A DNSFilter report shows companies are raising cybersecurity budgets, prioritizing AI security and governance. The study notes 74.5% of respondents increased spending, with 40.3% earmarking funds for AI governance, yet many firms report diminished control over AI tools due to employee access. Organizations should align budget allocations with governance frameworks and monitor AI tool usage to mitigate risk.]]></description>
+      <pubDate>Thu, 05 Nov 2026 05:30:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/dnsfilter-shadow-ai-cost-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Consumers Unwilling to Let AI Agents Shop Unsupervised</title>
+      <link>https://secubuzz.com/news/consumers-unwilling-to-let-ai-agents-shop-unsuperv-fcd1538d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/consumers-unwilling-to-let-ai-agents-shop-unsuperv-fcd1538d</guid>
+      <description><![CDATA[Okta’s 2026 Customer Identity Trends Report indicates that most consumers are reluctant to allow AI agents to make purchases without supervision. The study attributes hesitation to the scope of agent capabilities, potential mistakes, and the lack of easy approval or reversal mechanisms. Businesses must implement stringent agent verification and permission controls to meet evolving consumer expectations and regulatory demands.]]></description>
+      <pubDate>Thu, 05 Nov 2026 05:00:30 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/okta-ai-customer-experiences-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>White House Staff Use Proxies Exposing IPs for Rent</title>
+      <link>https://secubuzz.com/news/white-house-staff-use-proxies-exposing-ips-for-ren-1fca82b0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/white-house-staff-use-proxies-exposing-ips-for-ren-1fca82b0</guid>
+      <description><![CDATA[White House staff are reportedly using proxy services that expose their device IP addresses, allowing third parties to rent them. One service is operated by a Russian company whose founder’s hosting business was a target of 2016 election system attacks in Arizona and Illinois. Security teams should audit device configurations, disable proxy usage, and enforce network segmentation to mitigate exposure.]]></description>
+      <pubDate>Thu, 05 Nov 2026 04:36:17 GMT</pubDate>
+      <source url="https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/">Krebs on Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical WebKit2GTK3 Update for RHEL 8.4</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-webkit2gtk3-update-for-rhe-c187f2f4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-webkit2gtk3-update-for-rhe-c187f2f4</guid>
+      <description><![CDATA[Red Hat released a critical security update for webkit2gtk3 on Red Hat Enterprise Linux 8.4, addressing multiple high‑impact vulnerabilities. The advisory assigns a Critical impact rating, with CVSS base scores linked via CVE references, underscoring the severity of the flaws. Affected customers should apply the update immediately to patch the webkit2gtk3 component and prevent exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 03:06:18 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95403">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Pipeline Uncovers 948 Linux Kernel Privilege Escalation Flaws</title>
+      <link>https://secubuzz.com/news/openai-pipeline-uncovers-948-linux-kernel-privileg-efcb72f4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-pipeline-uncovers-948-linux-kernel-privileg-efcb72f4</guid>
+      <description><![CDATA[OpenAI's automated pipeline discovered 948 Linux kernel local privilege escalation vulnerabilities during a 30-hour analysis in October 2026. The flaws stem from missing privilege checks, allowing local users to achieve root-level code execution across numerous kernel versions. Vendors including Red Hat must urgently patch affected kernels while organizations should immediately apply latest stable releases and monitor security advisories.]]></description>
       <pubDate>Thu, 05 Nov 2026 02:42:57 GMT</pubDate>
       <source url="https://cybersecuritynews.com/openai-uncovers-948-linux-kernel-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Security Update for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-9-6461df30</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-9-6461df30</guid>
+      <description><![CDATA[Red Hat issued a kernel security update for Red Hat Enterprise Linux 9, addressing multiple vulnerabilities. The advisory rates the update as Important, with CVSS base scores available via referenced CVE links, indicating significant impact. Customers should apply the update promptly to mitigate the identified kernel flaws and maintain system integrity.]]></description>
+      <pubDate>Thu, 05 Nov 2026 02:18:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95370">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -51,6 +96,15 @@
       <pubDate>Thu, 05 Nov 2026 00:15:23 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/us-charges-two-canadians-accused-of-hacking-us-universi">CyberNews AI</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Apple Releases App Store Connect API 4.6 Update</title>
+      <link>https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-update-9f3adfdb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-app-store-connect-api-4-6-update-9f3adfdb</guid>
+      <description><![CDATA[Apple has released version 4.6 of the App Store Connect API, introducing new endpoints and enhancements. The update includes improved file view capabilities, allowing developers to retrieve detailed metadata for app assets. Developers should review the release notes and update integration code for developers to leverage new features and maintain compatibility.]]></description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://developer.apple.com/news/releases/?id=11042026b">Apple Security Updates</source>
+      <category>General</category>
     </item>
     <item>
       <title>Barracuda ESG Auth Bypass CVE‑2026‑116606</title>
@@ -341,6 +395,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Microsoft Edge Addresses Chromium CVE-2026-76031 Use‑After‑Free</title>
+      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-76031-u-8b43c3fc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-76031-u-8b43c3fc</guid>
+      <description><![CDATA[Microsoft Edge, built on Chromium, patched the CVE‑2026‑76031 use‑after‑free flaw. The flaw could allow arbitrary code execution via a use‑after‑free condition and is now mitigated in the update, as noted in Chromium release logs. Users should update to the latest Microsoft Edge or apply the Chromium patch to remove the exploitation risk.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76031">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Chromium CVE-2026-76027 Memory Corruption Exploit</title>
       <link>https://secubuzz.com/news/chromium-cve-2026-76027-memory-corruption-exploit-3c488524</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-76027-memory-corruption-exploit-3c488524</guid>
@@ -392,69 +455,6 @@
       <description><![CDATA[Microsoft Edge incorporates a fix for Chromium CVE-2026-76024, a memory corruption flaw that could allow exploitation via crafted input. The vulnerability permits attackers to corrupt memory, potentially leading to arbitrary code execution on affected systems. Microsoft recommends installing the latest Edge update, which includes the Chromium patch; users should also keep Chrome up to date.]]></description>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76024">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Fixes Chromium Use‑After‑Free CVE‑2026‑76025</title>
-      <link>https://secubuzz.com/news/microsoft-edge-fixes-chromium-use-after-free-cve-2-1b52e126</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-fixes-chromium-use-after-free-cve-2-1b52e126</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a use‑after‑free flaw in Chromium, identified as CVE‑2026‑76025. The flaw stems from improper memory handling during object lifecycle, potentially enabling arbitrary code execution if exploited. Microsoft has released an update that incorporates Chromium's fix; users should install the latest Edge update or apply the patch from Chrome release notes.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76025">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Addresses Chromium Memory‑Corruption CVE‑2026‑76026</title>
-      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-memory-corruptio-08e9a41a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-memory-corruptio-08e9a41a</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory‑corruption flaw in Chromium, identified as CVE‑2026‑76026. The defect arises from improper handling of buffer boundaries during rendering, potentially allowing arbitrary code execution if exploited. Microsoft has released an update that incorporates Chromium's patch; users should install the latest Edge update or apply the Chrome release notes patch.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76026">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Use‑After‑Free CVE‑2026‑119269 Fixed in Edge</title>
-      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-119269-fixed-in-e-afbd46cb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-119269-fixed-in-e-afbd46cb</guid>
-      <description><![CDATA[A use‑after‑free flaw identified as CVE‑2026‑119269 exists in Chromium, the engine powering Microsoft Edge (Chromium‑based). The flaw permits memory corruption that could enable arbitrary code execution, yet no exploitation or public PoC exists. Microsoft Edge incorporates the Chromium patch; users should update to the latest Edge or Chrome release, per Google Chrome’s release notes, to mitigate the risk.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119269">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Addresses Chromium CVE-2026-119271 Use-After-Free</title>
-      <link>https://secubuzz.com/news/microsoft-addresses-chromium-cve-2026-119271-use-a-04539ca4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-addresses-chromium-cve-2026-119271-use-a-04539ca4</guid>
-      <description><![CDATA[Microsoft released a security update for Chromium CVE-2026-119271, a use‑after‑free flaw in Edge (Chromium‑based). The vulnerability could enable arbitrary code execution if exploited, but no active exploitation or public PoC has been reported. Edge users should apply the latest update via Windows Update or the Edge update channel to mitigate the risk.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119271">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Out-of-Bounds Read Vulnerability</title>
-      <link>https://secubuzz.com/news/chromium-out-of-bounds-read-vulnerability-7a1be3c8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-out-of-bounds-read-vulnerability-7a1be3c8</guid>
-      <description><![CDATA[Chromium out‑of‑bounds read flaw (CVE‑2026‑119272) affects Microsoft Edge (Chromium‑based) via its Chromium engine. The bug permits memory reads beyond bounds, exposing sensitive data, and is a high‑severity memory corruption vulnerability. Microsoft Edge resolves the issue by integrating the latest Chromium patch; users should update to the newest Edge release or review Google Chrome release notes.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119272">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Vulnerability CVE-2026-119265 Causes Memory Corruption</title>
-      <link>https://secubuzz.com/news/chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7</guid>
-      <description><![CDATA[A memory corruption flaw, identified as CVE-2026-119265, affects Chromium components used by Microsoft Edge. The defect arises from improper handling of memory buffers, potentially allowing attackers to corrupt data or crash the browser; no exploitation reported. Microsoft Edge incorporates the fix via Chromium updates; users should install the latest Edge release or consult Google Chrome release notes.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119265">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Vulnerability CVE-2026-119266 Enables Use-After-Free</title>
-      <link>https://secubuzz.com/news/chromium-vulnerability-cve-2026-119266-enables-use-98ba9934</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-vulnerability-cve-2026-119266-enables-use-98ba9934</guid>
-      <description><![CDATA[A use‑after‑free flaw, CVE-2026-119266, targets Chromium code paths used by Microsoft Edge. The flaw arises from freeing memory before all references are cleared, potentially allowing attackers to execute arbitrary code or crash the browser; no exploitation reported. Microsoft Edge applies the fix through Chromium updates; users should upgrade to the latest Edge version or consult Google Chrome release notes.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119266">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
