@@ -2,6 +2,32 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-12411",
+    "slug": "cve-2026-12411",
+    "vendor": "Go",
+    "product": "lxd · canonical",
+    "name": "lxd allows Cross-guest volume hijack via DevLXD device patch",
+    "dateAdded": "2026-11-05",
+    "dueDate": "",
+    "cvss": 8.4,
+    "severity": "High",
+    "cwe": "CWE-639",
+    "ransomware": false,
+    "description": "A guest can mount another guest's custom storage volume over /dev/lxd and read or write its contents without owning it. The DevLXD storage API blocks access to volumes you don't own, but the instance device-update path that attaches a volume to a container without checks ownership.",
+    "requiredAction": "Upgrade lxd · canonical to version 0.0.0-20260626085133-7cb96ac80a6d or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hhf9-qw4v-72xp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12411"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2024-27834",
     "slug": "cve-2024-27834",
     "vendor": "Apple",
@@ -1355,32 +1381,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119199"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118763",
-    "slug": "cve-2026-118763",
-    "vendor": "npm",
-    "product": "@sigstore/oci",
-    "name": "@sigstore/oci sends the registry Authorization header to a cross-host blob-upload Location",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-522",
-    "ransomware": false,
-    "description": "@sigstore/oci sends the registry Authorization header to a cross-host blob-upload Location",
-    "requiredAction": "Upgrade @sigstore/oci to version 0.7.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j63v-mwhm-56jx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118763"
       }
     ],
     "source": "GITHUB"

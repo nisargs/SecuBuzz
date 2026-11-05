@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 16:45:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 17:44:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns</title>
+      <link>https://secubuzz.com/news/hacking-on-autopilot-inside-artex-cybercrime-campa-c1b56714</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hacking-on-autopilot-inside-artex-cybercrime-campa-c1b56714</guid>
+      <description><![CDATA[Key Points Introduction ARTEX is a Chinese open-source, AI-powered penetration testing platform designed to help security teams assess systems they own or are authorized to test. It uses large language models (LLMs) to coordinate multiple AI agents that plan tests, run security tools, and record evidence of potential vulnerabilities.]]></description>
+      <pubDate>Thu, 05 Nov 2026 17:22:06 GMT</pubDate>
+      <source url="https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/">Check Point Research</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CVE-2026-119083 - GluonTS arbitrary file write during archive extraction</title>
+      <link>https://secubuzz.com/news/cve-2026-119083-gluonts-arbitrary-file-write-durin-fa2b9750</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119083-gluonts-arbitrary-file-write-durin-fa2b9750</guid>
+      <description><![CDATA[Bulletin ID: 2026-171-AWS Publication Date: 11/05/2026 08:30 AM PST Description: GluonTS is an open-source Python library for probabilistic time series modeling. We identified CVE-2026-119083, an issue in the archive extraction utility in GluonTS before 0.17.0.]]></description>
+      <pubDate>Thu, 05 Nov 2026 16:43:41 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-171-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>CWP Web Server Trojan Enables Linux Backdoors</title>
       <link>https://secubuzz.com/news/cwp-web-server-trojan-enables-linux-backdoors-96a43958</link>
@@ -170,6 +188,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>HYFLOCK Encrypts Only First 4KB of Large Files</title>
+      <link>https://secubuzz.com/news/hyflock-encrypts-only-first-4kb-of-large-files-be19f9b4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hyflock-encrypts-only-first-4kb-of-large-files-be19f9b4</guid>
+      <description><![CDATA[HYFLOCK ransomware encrypts only the first 4,096 bytes of files larger than 4KB, leaving the remainder readable. The October 17 build demonstrates this flaw, reducing the encryption scope and providing a partial data recovery opportunity for affected organizations. Security teams should apply vendor‑issued patches or disable the ransomware’s encryption routine to mitigate data loss.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:08:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hyflock-ransomware/">Cyber Security News</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
       <title>ChatGPT Runtime Flaw Enables Silent DNS Exfiltration</title>
       <link>https://secubuzz.com/news/chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-eb304005</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-eb304005</guid>
@@ -186,6 +213,15 @@
       <pubDate>Thu, 05 Nov 2026 13:48:16 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/05/portswigger-burp-at-enterprises/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>FRR Regression Restores RPKI Update Processing</title>
+      <link>https://secubuzz.com/news/frr-regression-restores-rpki-update-processing-88e5c7a0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/frr-regression-restores-rpki-update-processing-88e5c7a0</guid>
+      <description><![CDATA[A regression from the CVE-2024-55553 fix caused FRR to stop processing RPKI updates after the first one, blocking route revalidation. The regression, CVE-2024-44070, also made the BGP daemon fail to start with RPKI enabled on Ubuntu 20.04 LTS, creating denial‑of‑service. The USN-7230-3 update restores correct RPKI handling and BGP startup, eliminating the denial‑of‑service.]]></description>
+      <pubDate>Thu, 05 Nov 2026 13:39:13 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-7230-3">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>White House Network IP Rented via 28 Residential Proxy Services</title>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 10:56:41 GMT</pubDate>
       <source url="https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/">SecurityWeek</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95496: Important: libX11 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95496-important-libx11-security-update-440f9625</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95496-important-libx11-security-update-440f9625</guid>
-      <description><![CDATA[An update for libX11 is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 10:45:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95496">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Tata Motors iRA App Flaws Enable Owner Impersonation</title>
-      <link>https://secubuzz.com/news/tata-motors-ira-app-flaws-enable-owner-impersonati-8f7cf50f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tata-motors-ira-app-flaws-enable-owner-impersonati-8f7cf50f</guid>
-      <description><![CDATA[Tata Motors’ iRA 2.0 and iRA.ev apps contain four flaws that let attackers steal credentials, impersonate owners, and access vehicle services. The flaws, identified as CVE-2026-116606, carry a High severity rating from CERT‑In and could enable unauthorized remote control of vehicle functions. Users should update to the latest app version and disable unused features to mitigate the risk.]]></description>
-      <pubDate>Thu, 05 Nov 2026 10:41:33 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/tata-motors-ira-app-flaws/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Russia-Linked Hackers Target iOS, Android via Watering Holes</title>
-      <link>https://secubuzz.com/news/russia-linked-hackers-target-ios-android-via-water-3157534e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russia-linked-hackers-target-ios-android-via-water-3157534e</guid>
-      <description><![CDATA[Russia-linked hackers launched a watering hole campaign targeting iOS and Android devices of US and European entities, Ukraine. The chain delivers malicious payloads via compromised sites, exploiting platform flaws that enable code execution without user interaction, risking data theft. Organizations should monitor traffic to known malicious domains, apply the latest OS patches, and enforce web filtering to block compromised sites.]]></description>
-      <pubDate>Thu, 05 Nov 2026 10:37:13 GMT</pubDate>
-      <source url="https://www.securityweek.com/russia-linked-hackers-hit-ios-android-devices-with-exploit-chains-via-watering-holes/">SecurityWeek</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Top Five Cyber Threats Endangering Enterprises in Oct 2026</title>
-      <link>https://secubuzz.com/news/top-five-cyber-threats-endangering-enterprises-in-0763f754</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-five-cyber-threats-endangering-enterprises-in-0763f754</guid>
-      <description><![CDATA[The October 2026 threat landscape features five active campaigns targeting U.S. enterprises through trusted platforms, legitimate authentication, and routine business workflows. These attacks increase the likelihood of financial loss, data breaches, and operational disruption by exploiting common software and user behaviors. Defenders should review threat intelligence feeds, enforce multi‑factor authentication, and harden supply‑chain controls to mitigate exposure.]]></description>
-      <pubDate>Thu, 05 Nov 2026 10:06:19 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html">The Hacker News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

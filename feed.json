@@ -1,5 +1,41 @@
 [
   {
+    "id": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
+    "sourceUrl": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
+    "title": "Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns",
+    "headline": "Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns",
+    "summary": "Key Points Introduction ARTEX is a Chinese open-source, AI-powered penetration testing platform designed to help security teams assess systems they own or are authorized to test. It uses large language models (LLMs) to coordinate multiple AI agents that plan tests, run security tools, and record evidence of potential vulnerabilities.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Check Point Research",
+    "publishedAt": "2026-11-05T17:22:06.000Z",
+    "ingestedAt": "2026-11-05T17:43:23.846Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-171-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-171-aws/",
+    "title": "CVE-2026-119083 - GluonTS arbitrary file write during archive extraction",
+    "headline": "CVE-2026-119083 - GluonTS arbitrary file write during archive extraction",
+    "summary": "Bulletin ID: 2026-171-AWS Publication Date: 11/05/2026 08:30 AM PST Description: GluonTS is an open-source Python library for probabilistic time series modeling. We identified CVE-2026-119083, an issue in the archive extraction utility in GluonTS before 0.17.0.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-05T16:43:41.000Z",
+    "ingestedAt": "2026-11-05T17:43:23.848Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-119083"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
     "title": "CWP Web Server Trojan Enables Linux Backdoors",
@@ -293,6 +329,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/hyflock-ransomware/",
+    "sourceUrl": "https://cybersecuritynews.com/hyflock-ransomware/",
+    "title": "HYFLOCK Encrypts Only First 4KB of Large Files",
+    "headline": "HYFLOCK Encrypts Only First 4KB of Large Files",
+    "summary": "HYFLOCK ransomware encrypts only the first 4,096 bytes of files larger than 4KB, leaving the remainder readable. The October 17 build demonstrates this flaw, reducing the encryption scope and providing a partial data recovery opportunity for affected organizations. Security teams should apply vendor‑issued patches or disable the ransomware’s encryption routine to mitigate data loss.",
+    "category": "RANSOMWARE",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-05T14:08:01.000Z",
+    "ingestedAt": "2026-11-05T17:43:37.213Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/hyflock-ransomware/",
+    "additionalSources": []
+  },
+  {
     "id": "https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/",
     "sourceUrl": "https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/",
     "title": "ChatGPT Runtime Flaw Enables Silent DNS Exfiltration",
@@ -322,6 +374,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/05/portswigger-burp-at-enterprises/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-7230-3",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-7230-3",
+    "title": "FRR Regression Restores RPKI Update Processing",
+    "headline": "FRR Regression Restores RPKI Update Processing",
+    "summary": "A regression from the CVE-2024-55553 fix caused FRR to stop processing RPKI updates after the first one, blocking route revalidation. The regression, CVE-2024-44070, also made the BGP daemon fail to start with RPKI enabled on Ubuntu 20.04 LTS, creating denial‑of‑service. The USN-7230-3 update restores correct RPKI handling and BGP startup, eliminating the denial‑of‑service.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-05T13:39:13.000Z",
+    "ingestedAt": "2026-11-05T17:43:37.214Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-7230-3",
     "additionalSources": []
   },
   {
@@ -8216,70 +8284,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
-    "title": "Fake Review Trade Sells Five‑Star Ratings",
-    "headline": "Fake Review Trade Sells Five‑Star Ratings",
-    "summary": "Underground operators sell five‑star reviews for up to $1,100, offering to erase negative feedback from online platforms. The scheme exploits reputation‑management systems, enabling malicious actors to manipulate consumer perception and undermine trust in digital marketplaces. Businesses should verify review authenticity, enforce platform moderation policies, and monitor for suspicious bulk review activity to mitigate reputational damage.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-11-02T14:24:43.000Z",
-    "ingestedAt": "2026-11-02T18:44:04.789Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/11/5-stars-for-sale-inside-the-underground-fake-review-trade",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/11/applebees-customer-data-exposed-by-password-left-in-app",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/applebees-customer-data-exposed-by-password-left-in-app",
-    "title": "Applebee’s App Hardcoded Password Exposes Data",
-    "headline": "Applebee’s App Hardcoded Password Exposes Data",
-    "summary": "A researcher discovered a hard‑coded password within the Applebee’s mobile application, allowing unauthorized access to customer data. The embedded credential bypasses authentication, exposing personal information without user interaction; no public exploit reported, but the flaw could enable credential theft. Applebee’s should remove the hard‑coded password, deploy a patched app version, and enforce secure credential storage best practices.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-11-02T14:22:43.000Z",
-    "ingestedAt": "2026-11-02T23:43:26.466Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.malwarebytes.com/blog/news/2026/11/applebees-customer-data-exposed-by-password-left-in-app",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
-    "title": "PapRAT Cyber-Espionage Campaign Targets South Asia",
-    "headline": "PapRAT Cyber-Espionage Campaign Targets South Asia",
-    "summary": "A known India-linked threat group is conducting cyber-espionage campaigns against organizations in South Asia using three distinct attack chains that leverage legitimate Windows functionality. The campaign employs multiple chained techniques to establish persistence and exfiltrate sensitive information from targeted entities. Organizations in the region should implement enhanced endpoint monitoring and network segmentation to detect anomalous lateral movement.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-02T14:00:00.000Z",
-    "ingestedAt": "2026-11-02T23:54:53.393Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
-    "additionalSources": []
-  },
-  {
-    "id": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
-    "sourceUrl": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
-    "title": "Cloudflare Cuts DNS Build Time and Memory",
-    "headline": "Cloudflare Cuts DNS Build Time and Memory",
-    "summary": "Cloudflare introduced a planner that selects minimal safe DNS zone rebuilds, targeting large zones with millions of records. The planner reduces full rebuilds by 40%, cuts peak memory usage by 85%, and halves overall build delay, improving resource efficiency. The change is implemented via zone setting adjustments and is available to all Cloudflare customers.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "publishedAt": "2026-11-02T14:00:00.000Z",
-    "ingestedAt": "2026-11-02T21:43:58.792Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
     "additionalSources": []
   }
 ]
