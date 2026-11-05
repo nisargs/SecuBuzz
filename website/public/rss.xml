@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 06:57:35 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 07:43:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AI Agents Evade Binary Detection, Reveal New Signals</title>
@@ -15,6 +15,15 @@
       <pubDate>Thu, 05 Nov 2026 06:45:07 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/05/zohaib-ahmed-resemble-ai-detecting-ai-agent-traffic/">Help Net Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>DigiCert Breach Exposes Customer Data and Identity Documents</title>
+      <link>https://secubuzz.com/news/digicert-breach-exposes-customer-data-and-identity-a195507b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/digicert-breach-exposes-customer-data-and-identity-a195507b</guid>
+      <description><![CDATA[A DigiCert data breach exposed an internal system holding customer contact details and identity documents. Unauthorized access revealed archived names, business emails, phone numbers, addresses, and in some accounts, passports, driver’s licenses, and utility bills. DigiCert has not issued a patch; affected customers should monitor for credential compromise and apply future security updates.]]></description>
+      <pubDate>Thu, 05 Nov 2026 06:21:35 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/digicert-confirms-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Healthcare Struggles to Govern Undiscovered AI Tools</title>
@@ -446,15 +455,6 @@
       <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76029, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.]]></description>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76029">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Addresses Chromium CVE-2026-76030 Memory Corruption</title>
-      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-76030-m-f2101526</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-76030-m-f2101526</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76030, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76030">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>

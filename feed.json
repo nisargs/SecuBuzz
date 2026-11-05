@@ -16,6 +16,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/digicert-confirms-data-breach/",
+    "sourceUrl": "https://cybersecuritynews.com/digicert-confirms-data-breach/",
+    "title": "DigiCert Breach Exposes Customer Data and Identity Documents",
+    "headline": "DigiCert Breach Exposes Customer Data and Identity Documents",
+    "summary": "A DigiCert data breach exposed an internal system holding customer contact details and identity documents. Unauthorized access revealed archived names, business emails, phone numbers, addresses, and in some accounts, passports, driver’s licenses, and utility bills. DigiCert has not issued a patch; affected customers should monitor for credential compromise and apply future security updates.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-05T06:21:35.000Z",
+    "ingestedAt": "2026-11-05T07:43:10.999Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/digicert-confirms-data-breach/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
     "title": "Healthcare Struggles to Govern Undiscovered AI Tools",
@@ -8253,22 +8269,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:93469",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:93538",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93538",
-    "title": "Red Hat Releases FreeRDP Security Update for RHEL 8.4",
-    "headline": "Red Hat Releases FreeRDP Security Update for RHEL 8.4",
-    "summary": "Red Hat released a security update for FreeRDP on RHEL 8.4 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The vulnerabilities stem from buffer overflows in the RDP protocol handling, enabling attackers to execute arbitrary code remotely. Apply the FreeRDP patch immediately and enforce network segmentation to limit RDP exposure.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-02T04:43:36.000Z",
-    "ingestedAt": "2026-11-02T08:43:21.726Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:93538",
     "additionalSources": []
   }
 ]

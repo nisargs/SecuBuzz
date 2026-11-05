@@ -30,6 +30,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "digicert-breach-exposes-customer-data-and-identity-a195507b",
+    "title": "DigiCert Breach Exposes Customer Data and Identity Documents",
+    "summary": "A DigiCert data breach exposed an internal system holding customer contact details and identity documents. Unauthorized access revealed archived names, business emails, phone numbers, addresses, and in some accounts, passports, driver’s licenses, and utility bills. DigiCert has not issued a patch; affected customers should monitor for credential compromise and apply future security updates.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/digicert-confirms-data-breach/",
+    "publishedAt": "2026-11-05T06:21:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "digicert-breach-exposes-customer-data-and-identity",
+      "article-a195507b",
+      "a195507b",
+      "digicert-breach-exposes-customer-data-and-identity-207eee",
+      "digicert-breach-exposes-customer-data-and-identity-documents"
+    ]
+  },
+  {
     "slug": "healthcare-struggles-to-govern-undiscovered-ai-too-9ac87524",
     "title": "Healthcare Struggles to Govern Undiscovered AI Tools",
     "summary": "A Paubox survey shows 90% of healthcare leaders report security teams review AI‑generated code touching patient data before deployment, yet 70% still find AI‑built tools handling that data without IT or security awareness. The gap indicates AI‑assisted development can introduce patient‑data components that escape formal security vetting. Organizations should enforce code review, track AI tools, and mandate security training.",
@@ -9510,25 +9529,6 @@ export const news: NewsBrief[] = [
       "11e05504",
       "red-hat-releases-tomcat-security-update-for-rhel-9-37d92e",
       "red-hat-releases-tomcat-security-update-for-rhel-9-8"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-freerdp-security-update-for-rhel-2ebe81f7",
-    "title": "Red Hat Releases FreeRDP Security Update for RHEL 8.4",
-    "summary": "Red Hat released a security update for FreeRDP on RHEL 8.4 Advanced Mission Critical Update Support and Extended Update Support Long-Life Add-On. The vulnerabilities stem from buffer overflows in the RDP protocol handling, enabling attackers to execute arbitrary code remotely. Apply the FreeRDP patch immediately and enforce network segmentation to limit RDP exposure.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93538",
-    "publishedAt": "2026-11-02T04:43:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-freerdp-security-update-for-rhel",
-      "article-2ebe81f7",
-      "2ebe81f7",
-      "red-hat-releases-freerdp-security-update-for-rhel-37d92a",
-      "red-hat-releases-freerdp-security-update-for-rhel-8-4"
     ]
   }
 ];
