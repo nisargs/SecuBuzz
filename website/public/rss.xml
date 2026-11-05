@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 18:45:05 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 19:45:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:95619: Important: qt5-qtbase security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95619-important-qt5-qtbase-security-upda-4704faf4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95619-important-qt5-qtbase-security-upda-4704faf4</guid>
+      <description><![CDATA[An update for qt5-qtbase is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 05 Nov 2026 19:11:59 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95619">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Bring a tent, I&apos;ve got the coffee: Lessons from it-sa</title>
+      <link>https://secubuzz.com/news/bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-a9042345</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-a9042345</guid>
+      <description><![CDATA[Thorsten may have had to camp out in Nuremberg to attend it-sa, but the real story is the initiative to add a formal IT Security apprenticeship program in Germany for the thousands of young hackers ready to join our side.]]></description>
+      <pubDate>Thu, 05 Nov 2026 19:00:00 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/bring-a-tent-ive-got-the-coffee-lessons-from-it-sa/">Cisco Talos</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns</title>
       <link>https://secubuzz.com/news/hacking-on-autopilot-inside-artex-cybercrime-campa-c1b56714</link>
@@ -35,6 +53,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Russian State Hackers Target iPhone, Android Zero-Click Espionage</title>
+      <link>https://secubuzz.com/news/russian-state-hackers-target-iphone-android-zero-c-4acc3a75</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-state-hackers-target-iphone-android-zero-c-4acc3a75</guid>
+      <description><![CDATA[Russian state-linked hackers launched a zero‑click espionage campaign against iPhone and Android devices in Ukraine, United States, and Europe. The attack exploits a memory‑corruption flaw in notification handling, enabling code execution without user interaction and exfiltrating contacts and location data. Apple and Google released security updates patching the flaw; users should install the latest OS updates and enable two‑factor authentication.]]></description>
+      <pubDate>Thu, 05 Nov 2026 17:00:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-hackers-smartphone-cyberattacks">The Record</source>
+      <category>Nation State</category>
+    </item>
+    <item>
       <title>Microsoft Updates AI Agent Security in November 2026</title>
       <link>https://secubuzz.com/news/microsoft-updates-ai-agent-security-in-november-20-89f230b6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-ai-agent-security-in-november-20-89f230b6</guid>
@@ -50,6 +77,15 @@
       <description><![CDATA[OpenMatter Network announces its decentralized computing platform as an alternative to traditional data centers for AI workloads. The company claims the distributed infrastructure can support continued AI adoption while addressing public opposition to large centralized facilities. Stakeholders should evaluate the platform’s scalability, security model, and integration requirements before adopting it for AI projects.]]></description>
       <pubDate>Thu, 05 Nov 2026 16:56:19 GMT</pubDate>
       <source url="https://cybersecuritynews.com/openmatter-network-positions-decentralized-computing-as-an-alternative-to-data-centers-for-ai/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SecurityDataPipeline.com Launches as AI Security Resource</title>
+      <link>https://secubuzz.com/news/securitydatapipeline-com-launches-as-ai-security-r-8fc7e749</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/securitydatapipeline-com-launches-as-ai-security-r-8fc7e749</guid>
+      <description><![CDATA[SecurityDataPipeline.com provides an ungated educational resource explaining how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations. This vendor-published guide addresses operational efficiency rather than exposing a specific vulnerability or incident. The platform serves as a general industry resource on data pipeline optimization for modern SOC operations.]]></description>
+      <pubDate>Thu, 05 Nov 2026 16:48:36 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era">Dark Reading</source>
       <category>General</category>
     </item>
     <item>
@@ -152,6 +188,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Defense Drill Interventions Pair EDR and SAT Training</title>
+      <link>https://secubuzz.com/news/defense-drill-interventions-pair-edr-and-sat-train-46c7ca33</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/defense-drill-interventions-pair-edr-and-sat-train-46c7ca33</guid>
+      <description><![CDATA[Defense Drill Interventions pair Managed EDR with just-in-time SAT training so users learn immediately when they fall for ClickFix phishing campaigns. This is a vendor product feature announcement describing an educational intervention model combining endpoint detection and response with simulated attack training. The initiative targets user awareness reinforcement rather than reporting a specific breach or vulnerability.]]></description>
+      <pubDate>Thu, 05 Nov 2026 15:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/defense-drill-interventions">Huntress</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Sogou Input Method used to install DarkVigil backdoor</title>
       <link>https://secubuzz.com/news/sogou-input-method-used-to-install-darkvigil-backd-03ba4110</link>
       <guid isPermaLink="true">https://secubuzz.com/news/sogou-input-method-used-to-install-darkvigil-backd-03ba4110</guid>
@@ -177,6 +222,15 @@
       <pubDate>Thu, 05 Nov 2026 14:48:20 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/05/rubrik-unstructured-data-protection/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>ca-certificates JKS Integration Bug Fixed in Update</title>
+      <link>https://secubuzz.com/news/ca-certificates-jks-integration-bug-fixed-in-updat-f1994b83</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ca-certificates-jks-integration-bug-fixed-in-updat-f1994b83</guid>
+      <description><![CDATA[A bug was discovered where the ca-certificates JKS integration failed to properly remove CA certificates from the system bundle when they were removed from the JKS keystore. The update corrects the integration logic and resyncs the keystore with the current system CA certificates list. This is a routine scheduled security patch addressing a local configuration defect without active exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:46:13 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9001-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories</title>
@@ -230,6 +284,24 @@
       <description><![CDATA[Red Hat released a rsyslog update for RHEL 8.4 and RHEL 8.4 ELS, addressing vulnerabilities that could lead to remote code execution. The advisory rates the issues as Important, with CVSS scores provided via CVE links, and no active exploitation has been reported. Administrators should apply the rsyslog update immediately and verify the package version to mitigate potential RCE.]]></description>
       <pubDate>Thu, 05 Nov 2026 14:26:30 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95573">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Box Unveils Architect for Agentic Workflow Management</title>
+      <link>https://secubuzz.com/news/box-unveils-architect-for-agentic-workflow-managem-d4209a0e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/box-unveils-architect-for-agentic-workflow-managem-d4209a0e</guid>
+      <description><![CDATA[Box announced new capabilities including Box Architect for autonomously building, managing, and optimizing agentic workflows across critical business processes. The platform enables teams to leverage frontier AI to create workflows, configure agents, connect tools, and manage workflows at scale. This is a vendor product launch announcement describing enterprise collaboration and AI workflow automation features.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:25:34 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/05/box-architect/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95556: Important: kernel security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95556-important-kernel-security-update-002190ab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95556-important-kernel-security-update-002190ab</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 14:17:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95556">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -383,78 +455,6 @@
       <description><![CDATA[Vizio and Samsung smart TVs appear to disregard user opt‑out requests for tracking, continuing data collection despite privacy settings. The flaw lets manufacturers transmit viewing data to third‑party analytics without explicit consent, violating user expectations and breaching privacy regulations. Users should verify firmware versions, apply vendor patches when available, and consider disabling telemetry through device settings or network filtering.]]></description>
       <pubDate>Thu, 05 Nov 2026 12:10:50 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/vizio-samsung-smart-tvs-seem-to-ignore-tracking-opt-outs">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95512: Important: ruby:2.5 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95512-important-ruby-2-5-security-update-ee7dadcf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95512-important-ruby-2-5-security-update-ee7dadcf</guid>
-      <description><![CDATA[An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Thu, 05 Nov 2026 12:05:37 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95512">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95505: Important: resteasy security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95505-important-resteasy-security-update-70e4ec9c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95505-important-resteasy-security-update-70e4ec9c</guid>
-      <description><![CDATA[An update for resteasy is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 12:03:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95505">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Govt Urges Hardening of Industrial Refrigeration Systems</title>
-      <link>https://secubuzz.com/news/govt-urges-hardening-of-industrial-refrigeration-s-92a6b86c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/govt-urges-hardening-of-industrial-refrigeration-s-92a6b86c</guid>
-      <description><![CDATA[Malicious cyber activity targets industrial refrigeration and cold chain monitoring systems worldwide. The activity exploits weak authentication, outdated firmware, and unpatched software, potentially allowing remote manipulation of temperature controls and data logging. The authoring organizations recommend enforcing strong authentication, applying vendor patches, and conducting comprehensive system inventory to mitigate risk.]]></description>
-      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems">CISA</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Post-Quantum Questions to Ask Your Vendors</title>
-      <link>https://secubuzz.com/news/post-quantum-questions-to-ask-your-vendors-56956716</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/post-quantum-questions-to-ask-your-vendors-56956716</guid>
-      <description><![CDATA[CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). Visit CISA’s PQC Initiative page for additional resources.]]></description>
-      <pubDate>Thu, 05 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors">CISA</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Scammers Exploit GTA 6 Hype for Malware Crypto Scams</title>
-      <link>https://secubuzz.com/news/scammers-exploit-gta-6-hype-for-malware-crypto-sca-7d177acf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/scammers-exploit-gta-6-hype-for-malware-crypto-sca-7d177acf</guid>
-      <description><![CDATA[Scammers are exploiting the upcoming Grand Theft Auto VI release to distribute malware and run cryptocurrency scams via fake build sites. The campaign targets users July–October 2026, using domains that imitate leaker CyberLeek and promise early access or nonexistent mobile versions. Defenders should block these domains, warn users about phishing, and monitor for suspicious downloads or crypto wallet activity.]]></description>
-      <pubDate>Thu, 05 Nov 2026 11:41:50 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/gta-6-scams-fake-leaks-early-access/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ISC Stormcast November 5th 2026</title>
-      <link>https://secubuzz.com/news/isc-stormcast-november-5th-2026-c6307e8f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-november-5th-2026-c6307e8f</guid>
-      <description><![CDATA[SANS Internet Storm Center published its Thursday Stormcast covering threat intelligence, incident reports, and defensive guidance for the week ending November 5th 2026. The broadcast aggregates actionable cybersecurity intelligence from multiple sources including incident handlers and threat analysts. Organizations should monitor ISC feeds for emerging threats and apply recommended mitigations accordingly.]]></description>
-      <pubDate>Thu, 05 Nov 2026 11:25:11 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33490">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Autonomous AI Agents Pose New Proxy Identity Risks</title>
-      <link>https://secubuzz.com/news/autonomous-ai-agents-pose-new-proxy-identity-risks-30e4d6ec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/autonomous-ai-agents-pose-new-proxy-identity-risks-30e4d6ec</guid>
-      <description><![CDATA[The article examines the proliferation of autonomous AI agents in enterprises, describing each as a new proxy identity operating within the perimeter. It highlights risks of uncontrolled agentic identities, including potential lateral movement and policy bypass that can undermine security controls. The piece recommends establishing governance frameworks and continuous monitoring to manage agent behavior and mitigate hidden threats.]]></description>
-      <pubDate>Thu, 05 Nov 2026 11:15:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/the-agent-smith-dilemma-governing-agentic-identities/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95498: Important: libX11 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95498-important-libx11-security-update-76df154d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95498-important-libx11-security-update-76df154d</guid>
-      <description><![CDATA[An update for libX11 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 11:12:09 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95498">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-95619-important-qt5-qtbase-security-upda-4704faf4",
+    "title": "RHSA-2026:95619: Important: qt5-qtbase security update",
+    "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95619",
+    "publishedAt": "2026-11-05T19:11:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95619-important-qt5-qtbase-security-upda",
+      "article-4704faf4",
+      "4704faf4",
+      "rhsa-2026-95619-important-qt5-qtbase-security-upda-37d83e",
+      "rhsa-2026-95619-important-qt5-qtbase-security-update"
+    ]
+  },
+  {
+    "slug": "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-a9042345",
+    "title": "Bring a tent, I've got the coffee: Lessons from it-sa",
+    "summary": "Thorsten may have had to camp out in Nuremberg to attend it-sa, but the real story is the initiative to add a formal IT Security apprenticeship program in Germany for the thousands of young hackers ready to join our side.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/bring-a-tent-ive-got-the-coffee-lessons-from-it-sa/",
+    "publishedAt": "2026-11-05T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s",
+      "article-a9042345",
+      "a9042345",
+      "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-7962df",
+      "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-sa"
+    ]
+  },
+  {
     "slug": "hacking-on-autopilot-inside-artex-cybercrime-campa-c1b56714",
     "title": "Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns",
     "summary": "Key Points Introduction ARTEX is a Chinese open-source, AI-powered penetration testing platform designed to help security teams assess systems they own or are authorized to test. It uses large language models (LLMs) to coordinate multiple AI agents that plan tests, run security tools, and record evidence of potential vulnerabilities.",
@@ -66,6 +104,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "russian-state-hackers-target-iphone-android-zero-c-4acc3a75",
+    "title": "Russian State Hackers Target iPhone, Android Zero-Click Espionage",
+    "summary": "Russian state-linked hackers launched a zero‑click espionage campaign against iPhone and Android devices in Ukraine, United States, and Europe. The attack exploits a memory‑corruption flaw in notification handling, enabling code execution without user interaction and exfiltrating contacts and location data. Apple and Google released security updates patching the flaw; users should install the latest OS updates and enable two‑factor authentication.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russia-hackers-smartphone-cyberattacks",
+    "publishedAt": "2026-11-05T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-state-hackers-target-iphone-android-zero-c",
+      "article-4acc3a75",
+      "4acc3a75",
+      "russian-state-hackers-target-iphone-android-zero-c-37e2ff",
+      "russian-state-hackers-target-iphone-android-zero-click-espio"
+    ]
+  },
+  {
     "slug": "microsoft-updates-ai-agent-security-in-november-20-89f230b6",
     "title": "Microsoft Updates AI Agent Security in November 2026",
     "summary": "Microsoft Security releases its November 2026 update, focusing on AI agent security, least privilege, threat protection, and exposure management. The update introduces new controls and guidance to reduce attack surface and improve detection of anomalous agent behavior. Security teams should review the new documentation and apply the updated least‑privilege policies and exposure controls.",
@@ -100,6 +157,25 @@ export const news: NewsBrief[] = [
       "article-f2b79906",
       "f2b79906",
       "openmatter-promotes-decentralized-ai-computing-38c335"
+    ]
+  },
+  {
+    "slug": "securitydatapipeline-com-launches-as-ai-security-r-8fc7e749",
+    "title": "SecurityDataPipeline.com Launches as AI Security Resource",
+    "summary": "SecurityDataPipeline.com provides an ungated educational resource explaining how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations. This vendor-published guide addresses operational efficiency rather than exposing a specific vulnerability or incident. The platform serves as a general industry resource on data pipeline optimization for modern SOC operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era",
+    "publishedAt": "2026-11-05T16:48:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "securitydatapipeline-com-launches-as-ai-security-r",
+      "article-8fc7e749",
+      "8fc7e749",
+      "securitydatapipeline-com-launches-as-ai-security-r-63c49b",
+      "securitydatapipeline-com-launches-as-ai-security-resource"
     ]
   },
   {
@@ -312,6 +388,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "defense-drill-interventions-pair-edr-and-sat-train-46c7ca33",
+    "title": "Defense Drill Interventions Pair EDR and SAT Training",
+    "summary": "Defense Drill Interventions pair Managed EDR with just-in-time SAT training so users learn immediately when they fall for ClickFix phishing campaigns. This is a vendor product feature announcement describing an educational intervention model combining endpoint detection and response with simulated attack training. The initiative targets user awareness reinforcement rather than reporting a specific breach or vulnerability.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/defense-drill-interventions",
+    "publishedAt": "2026-11-05T15:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "defense-drill-interventions-pair-edr-and-sat-train",
+      "article-46c7ca33",
+      "46c7ca33",
+      "defense-drill-interventions-pair-edr-and-sat-train-55de92",
+      "defense-drill-interventions-pair-edr-and-sat-training"
+    ]
+  },
+  {
     "slug": "sogou-input-method-used-to-install-darkvigil-backd-03ba4110",
     "title": "Sogou Input Method used to install DarkVigil backdoor",
     "summary": "A hacking group, SlippyNunchucks, has weaponized the Sogou Input Method keyboard software to install the DarkVigil backdoor on Windows machines. The campaign, since July 1, 2026, targets users across Hong Kong, Thailand, Japan, Vietnam, and Sri Lanka, enabling espionage and data exfiltration. Security teams should block Sogou Input Method distribution, remove DarkVigil binaries, and monitor for movement or credential theft.",
@@ -370,6 +465,25 @@ export const news: NewsBrief[] = [
       "article-af58dea6",
       "af58dea6",
       "rubrik-introduces-immutable-nas-backup-vaults-76714a"
+    ]
+  },
+  {
+    "slug": "ca-certificates-jks-integration-bug-fixed-in-updat-f1994b83",
+    "title": "ca-certificates JKS Integration Bug Fixed in Update",
+    "summary": "A bug was discovered where the ca-certificates JKS integration failed to properly remove CA certificates from the system bundle when they were removed from the JKS keystore. The update corrects the integration logic and resyncs the keystore with the current system CA certificates list. This is a routine scheduled security patch addressing a local configuration defect without active exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9001-1",
+    "publishedAt": "2026-11-05T14:46:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ca-certificates-jks-integration-bug-fixed-in-updat",
+      "article-f1994b83",
+      "f1994b83",
+      "ca-certificates-jks-integration-bug-fixed-in-updat-7e89b7",
+      "ca-certificates-jks-integration-bug-fixed-in-update"
     ]
   },
   {
@@ -484,6 +598,43 @@ export const news: NewsBrief[] = [
       "article-67d10994",
       "67d10994",
       "red-hat-issues-rsyslog-update-for-rhel-8-4-37d841"
+    ]
+  },
+  {
+    "slug": "box-unveils-architect-for-agentic-workflow-managem-d4209a0e",
+    "title": "Box Unveils Architect for Agentic Workflow Management",
+    "summary": "Box announced new capabilities including Box Architect for autonomously building, managing, and optimizing agentic workflows across critical business processes. The platform enables teams to leverage frontier AI to create workflows, configure agents, connect tools, and manage workflows at scale. This is a vendor product launch announcement describing enterprise collaboration and AI workflow automation features.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/box-architect/",
+    "publishedAt": "2026-11-05T14:25:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "box-unveils-architect-for-agentic-workflow-managem",
+      "article-d4209a0e",
+      "d4209a0e",
+      "box-unveils-architect-for-agentic-workflow-managem-3057c0",
+      "box-unveils-architect-for-agentic-workflow-management"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95556-important-kernel-security-update-002190ab",
+    "title": "RHSA-2026:95556: Important: kernel security update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95556",
+    "publishedAt": "2026-11-05T14:17:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95556-important-kernel-security-update",
+      "article-002190ab",
+      "002190ab",
+      "rhsa-2026-95556-important-kernel-security-update-37d842"
     ]
   },
   {
@@ -805,6 +956,42 @@ export const news: NewsBrief[] = [
       "article-4dc2dd19",
       "4dc2dd19",
       "vizio-samsung-tvs-ignore-tracking-opt-outs-476618"
+    ]
+  },
+  {
+    "slug": "resteasy-security-update-for-rhel-9-6-2cbb2b40",
+    "title": "RESTEasy security update for RHEL 9.6",
+    "summary": "Red Hat published an important security update for the resteasy module on Red Hat Enterprise Linux 9.6 Extended Update Support. The advisory addresses multiple tracked vulnerabilities in the RESTEasy framework. Red Hat customers should apply this update to remediate the disclosed security issues in their Java-based REST services.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95504",
+    "publishedAt": "2026-11-05T12:08:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "resteasy-security-update-for-rhel-9-6",
+      "article-2cbb2b40",
+      "2cbb2b40",
+      "resteasy-security-update-for-rhel-9-6-37d842"
+    ]
+  },
+  {
+    "slug": "ruby-2-5-security-update-for-rhel-e95c8772",
+    "title": "Ruby 2.5 security update for RHEL",
+    "summary": "Red Hat released an important security update for the ruby:2.5 module on Red Hat Enterprise Linux 8.6. The update addresses multiple tracked vulnerabilities in the Ruby language runtime. Organizations running Ruby applications on RHEL 8.6 should apply this patch immediately to remediate the disclosed flaws.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95513",
+    "publishedAt": "2026-11-05T12:06:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-2-5-security-update-for-rhel",
+      "article-e95c8772",
+      "e95c8772",
+      "ruby-2-5-security-update-for-rhel-37d842"
     ]
   },
   {
@@ -9349,205 +9536,6 @@ export const news: NewsBrief[] = [
       "article-fe942fb9",
       "fe942fb9",
       "red-hat-perl-5-32-security-update-released-37e64a"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-security-update-for-python-urllib3-ab89bc86",
-    "title": "Red Hat Issues Security Update for python‑urllib3",
-    "summary": "Red Hat released a security update for python‑urllib3 on RHEL 10, fixing multiple library vulnerabilities. The update is rated Important, with CVSS base scores linked to CVE entries, though no exploitation has been observed. Apply the patch immediately and review the CVSS scores for each CVE to gauge residual risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:85930",
-    "publishedAt": "2026-11-02T15:37:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-security-update-for-python-urllib3",
-      "article-ab89bc86",
-      "ab89bc86",
-      "red-hat-issues-security-update-for-python-urllib3-37e64a"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-for-rhel-10-2-978cf2ac",
-    "title": "Red Hat Kernel Update for RHEL 10.2",
-    "summary": "A kernel security update addresses vulnerabilities in Red Hat Enterprise Linux 10.2 Extended Update Support, targeting the Linux kernel. The patch covers moderate‑severity flaws linked to CVE entries, with CVSS scores reflecting a moderate risk level. Red Hat advises installing the update promptly for mitigating potential critical kernel exploitation today.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93911",
-    "publishedAt": "2026-11-02T15:37:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-for-rhel-10-2",
-      "article-978cf2ac",
-      "978cf2ac",
-      "red-hat-kernel-update-for-rhel-10-2-37d91c"
-    ]
-  },
-  {
-    "slug": "btcpay-server-hot-wallet-theft-exploited-by-vulner-ae0d7285",
-    "title": "BTCPay Server Hot Wallet Theft Exploited by Vulnerability in Versions 2.4.1 and Earlier",
-    "summary": "BTCPay Server 2.4.1 and earlier users suffered hot wallet theft as attackers exploited a flaw in the open‑source payment platform. The vulnerability stems from insufficient access controls that allow unauthorized transaction signing, draining Bitcoin and Litecoin from hot wallets. Users must upgrade to the latest BTCPay Server release, audit wallet permissions, and enforce strict access policies to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
-    "publishedAt": "2026-11-02T15:03:07.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html"
-      }
-    ],
-    "aliases": [
-      "btcpay-server-hot-wallet-theft-exploited-by-vulner",
-      "article-ae0d7285",
-      "ae0d7285",
-      "btcpay-server-hot-wallet-theft-exploited-by-vulner-177321",
-      "btcpay-server-hot-wallet-theft-exploited-by-vulnerability-in"
-    ]
-  },
-  {
-    "slug": "carriers-retain-call-logs-for-years-raising-privac-dee89ba1",
-    "title": "Carriers Retain Call Logs for Years, Raising Privacy Risks",
-    "summary": "Carriers can retain call and text metadata for years, exposing customers’ relationships, locations, and routines if breached. Cape’s service reduces exposure by automatically deleting call records, limiting the metadata carriers can store. Organizations should review carrier retention policies and adopt comprehensive solutions that enforce strictly timely deletion to safeguard privacy.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
-    "publishedAt": "2026-11-02T15:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "carriers-retain-call-logs-for-years-raising-privac",
-      "article-dee89ba1",
-      "dee89ba1",
-      "carriers-retain-call-logs-for-years-raising-privac-627a52",
-      "carriers-retain-call-logs-for-years-raising-privacy-risks"
-    ]
-  },
-  {
-    "slug": "37-cybersecurity-deals-announced-in-october-ada8c04c",
-    "title": "37 Cybersecurity Deals Announced in October",
-    "summary": "In October 2026, cybersecurity firms Absolute Security, Aikido, Anthropic, Cohere, Hex‑Rays, and Proofpoint announced 37 mergers and acquisitions, signaling accelerated consolidation in the sector. The deals span AI, threat‑intelligence, reverse‑engineering, and email‑security domains, potentially reshaping vendor portfolios and customer integration strategies. Security teams should assess integration risks, update supply‑chain controls, and monitor for overlapping capabilities post‑merger.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
-    "publishedAt": "2026-11-02T15:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "37-cybersecurity-deals-announced-in-october",
-      "article-ada8c04c",
-      "ada8c04c",
-      "37-cybersecurity-deals-announced-in-october-383e0a"
-    ]
-  },
-  {
-    "slug": "digital-defense-report-overlooks-microsoft-bug-thr-e30f533a",
-    "title": "Digital Defense Report Overlooks Microsoft Bug Threats",
-    "summary": "The Digital Defense Report labels government agencies as primary AI attack targets while omitting the exploitation of Microsoft software bugs against them. This oversight obscures the threat vector, as attackers leverage known Microsoft vulnerabilities to gain privileged access to agency networks. Security teams should prioritize patching Microsoft products, monitor for exploitation signatures, and incorporate threat models into AI risk assessments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
-    "publishedAt": "2026-11-02T15:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "digital-defense-report-overlooks-microsoft-bug-thr",
-      "article-e30f533a",
-      "e30f533a",
-      "digital-defense-report-overlooks-microsoft-bug-thr-47db31",
-      "digital-defense-report-overlooks-microsoft-bug-threats"
-    ]
-  },
-  {
-    "slug": "ubuntu-releases-fixes-for-cve-2026-98432-a-kernel-925b2527",
-    "title": "Ubuntu Releases Fixes for CVE-2026-98432, a Kernel RCE Vulnerability",
-    "summary": "Ubuntu has released kernel patches for CVE-2026-98432, a critical Linux kernel flaw that enables remote attackers to execute commands as root without authentication. The vulnerability stems from improper handling of Mutipath TCP options, potentially causing memory corruption and denial‑of‑service. Users of Ubuntu 22.04 LTS and newer should apply the proposed updates immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33482",
-    "publishedAt": "2026-11-02T14:52:05.000Z",
-    "cves": [
-      "CVE-2026-98432"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/linux-kernel-rce-flaw-ubuntu-fixes/"
-      }
-    ],
-    "aliases": [
-      "ubuntu-releases-fixes-for-cve-2026-98432-a-kernel",
-      "article-925b2527",
-      "925b2527",
-      "ubuntu-releases-fixes-for-cve-2026-98432-a-kernel-57dd7e",
-      "ubuntu-releases-fixes-for-cve-2026-98432-a-kernel-rce-vulner"
-    ]
-  },
-  {
-    "slug": "new-windows-infostealer-uses-ai-to-rank-stolen-dat-fcc119c0",
-    "title": "New Windows Infostealer Uses AI to Rank Stolen Data",
-    "summary": "Cisco Talos identified a new Windows infostealer, VOLTA-AUTODOXER, that forwards stolen data to an AI model for value ranking. The malware harvests credentials and asset details, then relies on the AI engine to prioritize targets, enabling focused attacks. Security teams should block the malware’s download, monitor outbound AI traffic, and apply updated endpoint protection signatures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/02/ai-powered-infostealer-volta-victim-profiling/",
-    "publishedAt": "2026-11-02T14:47:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "new-windows-infostealer-uses-ai-to-rank-stolen-dat",
-      "article-fcc119c0",
-      "fcc119c0",
-      "new-windows-infostealer-uses-ai-to-rank-stolen-dat-343bed",
-      "new-windows-infostealer-uses-ai-to-rank-stolen-data"
-    ]
-  },
-  {
-    "slug": "darkblinders-compromises-israeli-target-iraqi-clou-e2fc4f90",
-    "title": "DarkBlinders Compromises Israeli Target, Iraqi Cloud",
-    "summary": "Between August and October 2026, the DarkBlinders group compromised an Israeli individual and infiltrated a Kurdistan Region of Iraq government cloud environment. The campaign leveraged spear‑phishing, credential theft, and cloud misconfigurations to gain privileged access, exposing sensitive data and operational controls. Affected organizations should enforce MFA, audit cloud permissions, apply timely patches, and conduct forensic investigations to assess data exfiltration.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-    "publishedAt": "2026-11-02T14:46:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "darkblinders-compromises-israeli-target-iraqi-clou",
-      "article-e2fc4f90",
-      "e2fc4f90",
-      "darkblinders-compromises-israeli-target-iraqi-clou-49dd3f",
-      "darkblinders-compromises-israeli-target-iraqi-cloud"
-    ]
-  },
-  {
-    "slug": "florida-student-aid-site-breach-exposes-4-9-millio-8dc7783a",
-    "title": "Florida Student Aid Site Breach Exposes 4.9 Million SSNs",
-    "summary": "The Florida Department of Education’s student aid website was breached, exposing SSNs and other personal data of approximately 4.9 million individuals. An unspecified web application flaw allowed unauthenticated attackers to retrieve sensitive records. The department notified users, issued an advisory, and is collaborating with law enforcement to investigate and remediate.",
-    "category": "Breach",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
-    "publishedAt": "2026-11-02T14:44:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "florida-student-aid-site-breach-exposes-4-9-millio",
-      "article-8dc7783a",
-      "8dc7783a",
-      "florida-student-aid-site-breach-exposes-4-9-millio-6ea42e",
-      "florida-student-aid-site-breach-exposes-4-9-million-ssns"
     ]
   }
 ];
