@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 00:47:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 01:44:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Cisco Products Hit by Node.js Brotli Vulnerabilities</title>
@@ -305,6 +305,42 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Chromium Vulnerability CVE-2026-119265 Causes Memory Corruption</title>
+      <link>https://secubuzz.com/news/chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7</guid>
+      <description><![CDATA[A memory corruption flaw, identified as CVE-2026-119265, affects Chromium components used by Microsoft Edge. The defect arises from improper handling of memory buffers, potentially allowing attackers to corrupt data or crash the browser; no exploitation reported. Microsoft Edge incorporates the fix via Chromium updates; users should install the latest Edge release or consult Google Chrome release notes.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119265">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Vulnerability CVE-2026-119266 Enables Use-After-Free</title>
+      <link>https://secubuzz.com/news/chromium-vulnerability-cve-2026-119266-enables-use-98ba9934</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-vulnerability-cve-2026-119266-enables-use-98ba9934</guid>
+      <description><![CDATA[A use‑after‑free flaw, CVE-2026-119266, targets Chromium code paths used by Microsoft Edge. The flaw arises from freeing memory before all references are cleared, potentially allowing attackers to execute arbitrary code or crash the browser; no exploitation reported. Microsoft Edge applies the fix through Chromium updates; users should upgrade to the latest Edge version or consult Google Chrome release notes.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119266">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Edge Addresses Chromium Memory Corruption CVE-2026-119267</title>
+      <link>https://secubuzz.com/news/edge-addresses-chromium-memory-corruption-cve-2026-cc043ad6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-chromium-memory-corruption-cve-2026-cc043ad6</guid>
+      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory corruption flaw, CVE-2026-119267, in Chromium. The flaw stems from improper bounds checking during memory allocation, potentially enabling arbitrary code execution if a malicious page is rendered, though no public exploit exists. Microsoft has fixed the issue in Edge; users should update or apply the patch referenced in Google Chrome releases.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119267">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Edge Addresses Chromium Integer Overflow CVE-2026-119268</title>
+      <link>https://secubuzz.com/news/edge-addresses-chromium-integer-overflow-cve-2026-3322a0f5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-chromium-integer-overflow-cve-2026-3322a0f5</guid>
+      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by an integer overflow flaw, CVE-2026-119268, in Chromium. The overflow occurs during integer arithmetic, enabling memory corruption and code execution if a crafted page is processed, though no public exploit is known. Microsoft fixed the issue in Edge; users should update or apply the patch referenced in Google Chrome releases.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119268">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Chromium Improper Input Validation CVE-2026-119262</title>
       <link>https://secubuzz.com/news/chromium-improper-input-validation-cve-2026-119262-32d35b3e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-improper-input-validation-cve-2026-119262-32d35b3e</guid>
@@ -419,42 +455,6 @@
       <description><![CDATA[An update for git-lfs is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
       <pubDate>Wed, 04 Nov 2026 15:42:35 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95234">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>USN-8998-1: Squid vulnerability</title>
-      <link>https://secubuzz.com/news/usn-8998-1-squid-vulnerability-3f698384</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-8998-1-squid-vulnerability-3f698384</guid>
-      <description><![CDATA[It was discovered that Squid incorrectly handled certain HTTP Transfer- Encoding headers. An attacker could possibly use this issue to perform HTTP request smuggling attacks, bypass security mechanisms, or poison web caches.]]></description>
-      <pubDate>Wed, 04 Nov 2026 15:32:22 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8998-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-8997-1: Net-SNMP vulnerability</title>
-      <link>https://secubuzz.com/news/usn-8997-1-net-snmp-vulnerability-7b785586</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-8997-1-net-snmp-vulnerability-7b785586</guid>
-      <description><![CDATA[It was discovered that Net-SNMP incorrectly handled newly accepted connections in the SMUX module. An unauthenticated remote attacker could possibly use this issue to cause Net-SNMP to block indefinitely, resulting in a denial of service.]]></description>
-      <pubDate>Wed, 04 Nov 2026 15:25:21 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8997-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-7530-2: ADOdb vulnerability</title>
-      <link>https://secubuzz.com/news/usn-7530-2-adodb-vulnerability-debdc786</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-7530-2-adodb-vulnerability-debdc786</guid>
-      <description><![CDATA[USN-7530-1 fixed a vulnerability in ADOdb. This update provides the corresponding updates for Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 24.04 LTS. Original advisory details: It was discovered that ADOdb incorrectly handled SQL input.]]></description>
-      <pubDate>Wed, 04 Nov 2026 15:14:52 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-7530-2">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Beta iOS 158 Release</title>
-      <link>https://secubuzz.com/news/chrome-beta-ios-158-release-559acb4d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-beta-ios-158-release-559acb4d</guid>
-      <description><![CDATA[Google Chrome Beta channel has been updated to version 158.0.8127.13 for iOS, with availability on the App Store in coming days. The release includes partial changes documented in the Git log, alongside community bug reporting channels for user feedback. This is a routine channel synchronization release without specific security vulnerability disclosures.]]></description>
-      <pubDate>Wed, 04 Nov 2026 15:13:33 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update.html">Google Chrome Releases</source>
       <category>General</category>
     </item>
   </channel>

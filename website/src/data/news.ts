@@ -646,6 +646,90 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7",
+    "title": "Chromium Vulnerability CVE-2026-119265 Causes Memory Corruption",
+    "summary": "A memory corruption flaw, identified as CVE-2026-119265, affects Chromium components used by Microsoft Edge. The defect arises from improper handling of memory buffers, potentially allowing attackers to corrupt data or crash the browser; no exploitation reported. Microsoft Edge incorporates the fix via Chromium updates; users should install the latest Edge release or consult Google Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119265",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119265"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-vulnerability-cve-2026-119265-causes-memo",
+      "article-7f308fa7",
+      "7f308fa7",
+      "chromium-vulnerability-cve-2026-119265-causes-memo-1fe8ab",
+      "chromium-vulnerability-cve-2026-119265-causes-memory-corrupt"
+    ]
+  },
+  {
+    "slug": "chromium-vulnerability-cve-2026-119266-enables-use-98ba9934",
+    "title": "Chromium Vulnerability CVE-2026-119266 Enables Use-After-Free",
+    "summary": "A use‑after‑free flaw, CVE-2026-119266, targets Chromium code paths used by Microsoft Edge. The flaw arises from freeing memory before all references are cleared, potentially allowing attackers to execute arbitrary code or crash the browser; no exploitation reported. Microsoft Edge applies the fix through Chromium updates; users should upgrade to the latest Edge version or consult Google Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119266",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119266"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-vulnerability-cve-2026-119266-enables-use",
+      "article-98ba9934",
+      "98ba9934",
+      "chromium-vulnerability-cve-2026-119266-enables-use-1fe8ab",
+      "chromium-vulnerability-cve-2026-119266-enables-use-after-fre"
+    ]
+  },
+  {
+    "slug": "edge-addresses-chromium-memory-corruption-cve-2026-cc043ad6",
+    "title": "Edge Addresses Chromium Memory Corruption CVE-2026-119267",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption flaw, CVE-2026-119267, in Chromium. The flaw stems from improper bounds checking during memory allocation, potentially enabling arbitrary code execution if a malicious page is rendered, though no public exploit exists. Microsoft has fixed the issue in Edge; users should update or apply the patch referenced in Google Chrome releases.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119267",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119267"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "edge-addresses-chromium-memory-corruption-cve-2026",
+      "article-cc043ad6",
+      "cc043ad6",
+      "edge-addresses-chromium-memory-corruption-cve-2026-1fe8ab",
+      "edge-addresses-chromium-memory-corruption-cve-2026-119267"
+    ]
+  },
+  {
+    "slug": "edge-addresses-chromium-integer-overflow-cve-2026-3322a0f5",
+    "title": "Edge Addresses Chromium Integer Overflow CVE-2026-119268",
+    "summary": "Microsoft Edge (Chromium-based) is affected by an integer overflow flaw, CVE-2026-119268, in Chromium. The overflow occurs during integer arithmetic, enabling memory corruption and code execution if a crafted page is processed, though no public exploit is known. Microsoft fixed the issue in Edge; users should update or apply the patch referenced in Google Chrome releases.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119268",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119268"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "edge-addresses-chromium-integer-overflow-cve-2026",
+      "article-3322a0f5",
+      "3322a0f5",
+      "edge-addresses-chromium-integer-overflow-cve-2026-1fe8ab",
+      "edge-addresses-chromium-integer-overflow-cve-2026-119268"
+    ]
+  },
+  {
     "slug": "chromium-improper-input-validation-cve-2026-119262-32d35b3e",
     "title": "Chromium Improper Input Validation CVE-2026-119262",
     "summary": "CVE-2026-119262 exposes improper input validation in Chromium, impacting Microsoft Edge (Chromium-based) through its Chromium engine. The flaw permits malformed input to bypass checks, potentially causing memory corruption or denial of service; no public exploit reported, CVSS undisclosed. Edge applies the fix via its Chromium update; users should install the latest release or consult Google Chrome release notes for patch details.",
@@ -4573,7 +4657,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "police-seize-100-servers-in-european-investment-fr-e35b024b",
     "title": "Police Seize 100+ Servers in European Investment Fraud Crackdown",
-    "summary": "European authorities conducted a coordinated operation that seized more than 100 servers used by a fraudulent investment network targeting online trading platform users. The sites prevented victims from withdrawing profits, defrauding them of over four million euros and exposing sensitive financial data. Police arrested seven suspects and dismantled the infrastructure, ending the scam and protecting market integrity.",
+    "summary": "Police seized over 100 servers used by a European investment fraud network targeting online trading platform users. The operation disrupted the scheme, preventing victims from withdrawing profits and exposing sensitive financial data, with losses exceeding four million euros. Seven suspects were arrested, the infrastructure dismantled, and authorities urged affected users to monitor accounts and update security practices.",
     "category": "General",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -4584,6 +4668,10 @@ export const news: NewsBrief[] = [
       {
         "source": "Help Net Security",
         "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/investment-fraud-network-servers-seized/"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/germany-busts-crime-as-a-service-investment-fraud-outfi"
       }
     ],
     "aliases": [
@@ -9384,80 +9472,6 @@ export const news: NewsBrief[] = [
       "article-9fd8bf8c",
       "9fd8bf8c",
       "red-hat-issues-libsoup-update-for-rhel-9-4-37d92e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-libxtst-update-for-rhel-1-c05c27a5",
-    "title": "Red Hat Issues Important libXtst Update for RHEL 10.0",
-    "summary": "Red Hat released an Important security update for libXtst on RHEL 10.0 Extended Update Support, fixing vulnerabilities that could enable privilege escalation or denial of service. The advisory references CVSS base scores for each flaw, though no specific CVE identifiers are listed. Apply the latest libXtst package immediately to mitigate the disclosed weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93448",
-    "publishedAt": "2026-11-02T02:26:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-libxtst-update-for-rhel-1",
-      "article-c05c27a5",
-      "c05c27a5",
-      "red-hat-issues-important-libxtst-update-for-rhel-1-37d92e",
-      "red-hat-issues-important-libxtst-update-for-rhel-10-0"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-python-jwt-for-rhel-8-8e81bf09",
-    "title": "Red Hat Updates python‑jwt for RHEL 8",
-    "summary": "Red Hat released a security update for python‑jwt on RHEL 8, addressing a vulnerability that could affect application security. The advisory notes an Important security impact and references CVE links for each vulnerability, though no specific CVE ID is listed. Operators should apply the RHSA-2026:93440 update immediately to mitigate the risk, as the patch is available via RHEL update channels.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93440",
-    "publishedAt": "2026-11-02T02:03:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-python-jwt-for-rhel-8",
-      "article-8e81bf09",
-      "8e81bf09",
-      "red-hat-updates-python-jwt-for-rhel-8-37d92e"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-nov-2-2026-b8998b3b",
-    "title": "ISC Stormcast Podcast – Nov 2, 2026",
-    "summary": "The SANS Internet Storm Center released the ISC Stormcast podcast for Monday, November 2, 2026, providing a curated overview of the week’s most significant cyber events. The episode, available at https://isc.sans.edu/podcastdetail/10160, covers emerging threats, vulnerability trends, and defensive best practices discussed by industry experts. Listeners can download or stream the recording under a Creative Commons Attribution-Noncommercial 3.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33480",
-    "publishedAt": "2026-11-02T02:00:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-nov-2-2026",
-      "article-b8998b3b",
-      "b8998b3b",
-      "isc-stormcast-podcast-nov-2-2026-57dd7e"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-webkit2gtk3-security-upd-ccab73dc",
-    "title": "Red Hat Releases Critical WebKit2GTK3 Security Update",
-    "summary": "Red Hat released a critical update for webkit2gtk3 on RHEL 8.8 Update Services for SAP Solutions and RHEL 8.8 Telecommunications. The patch fixes multiple high‑severity vulnerabilities with CVSS scores that meet critical thresholds, with CVE references provided in the advisory. Administrators must apply the update promptly and confirm webkit2gtk3 is patched to prevent remote code execution.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93435",
-    "publishedAt": "2026-11-02T01:55:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-webkit2gtk3-security-upd",
-      "article-ccab73dc",
-      "ccab73dc",
-      "red-hat-releases-critical-webkit2gtk3-security-upd-37d92e",
-      "red-hat-releases-critical-webkit2gtk3-security-update"
     ]
   }
 ];
