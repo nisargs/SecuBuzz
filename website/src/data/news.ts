@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openai-finds-948-linux-kernel-privilege-escalation-fd49289d",
+    "title": "OpenAI Finds 948 Linux Kernel Privilege Escalation Flaws",
+    "summary": "OpenAI’s automated pipeline uncovered 948 Linux kernel privilege‑escalation flaws in a single run in mid‑October 2026, letting local users gain root. The flaws arise from missing kernel privilege checks and enable local‑user RCE that attackers could exploit with local access. Kernel maintainers have not yet issued patches; teams should apply the latest stable kernel and monitor advisories for updates.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openai-uncovers-948-linux-kernel-vulnerabilities/",
+    "publishedAt": "2026-11-05T02:42:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-finds-948-linux-kernel-privilege-escalation",
+      "article-fd49289d",
+      "fd49289d",
+      "openai-finds-948-linux-kernel-privilege-escalation-391ed3",
+      "openai-finds-948-linux-kernel-privilege-escalation-flaws"
+    ]
+  },
+  {
     "slug": "red-hat-releases-pcre2-security-patch-9e9fa5fb",
     "title": "Red Hat Releases pcre2 Security Patch",
     "summary": "Red Hat released a pcre2 update for RHEL 7 ELS to fix multiple security vulnerabilities. The vulnerabilities, referenced by CVE identifiers, are rated Important, suggesting a moderate to high exploitation risk. The patch is available via the RHEL 7 ELS update channel; administrators should install it and verify system integrity after installation.",
@@ -236,21 +255,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "dreamhost-breach-exposes-ftp-credentials-9e6a5bae",
-    "title": "DreamHost Breach Exposes FTP Credentials",
-    "summary": "DreamHost confirmed a breach after attackers accessed its File Manager platform for two months, capturing customers' FTP/SFTP usernames and passwords. The intrusion exploited unauthorized platform access, exposing credential data that could enable credential stuffing or unauthorized file transfers. DreamHost urged users to change passwords, enable MFA, and review account activity while investigating the incident.",
+    "slug": "dreamhost-breach-exposes-customer-credentials-and-b64076da",
+    "title": "DreamHost Breach Exposes Customer Credentials and Emails",
+    "summary": "DreamHost confirmed a breach that exposed customer login details after attackers exploited its File Manager on October 23, 2026. The incident yielded FTP/SFTP usernames and passwords, webmail credentials, and in limited cases, private mailbox contents, compromising user accounts and sensitive data. DreamHost advised customers to change passwords, enable two‑factor authentication, and monitor accounts for suspicious activity while investigating the breach.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
     "publishedAt": "2026-11-04T19:05:19.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/dreamhost-confirms-data-breach/"
+      }
+    ],
     "aliases": [
-      "dreamhost-breach-exposes-ftp-credentials",
-      "article-9e6a5bae",
-      "9e6a5bae",
-      "dreamhost-breach-exposes-ftp-credentials-bb4a7d"
+      "dreamhost-breach-exposes-customer-credentials-and",
+      "article-b64076da",
+      "b64076da",
+      "dreamhost-breach-exposes-customer-credentials-and-bb4a7d",
+      "dreamhost-breach-exposes-customer-credentials-and-emails"
     ]
   },
   {
@@ -697,6 +722,89 @@ export const news: NewsBrief[] = [
       "dd20b5eb",
       "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
       "msecure-users-urged-to-reset-passwords-after-breach"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-76027-memory-corruption-exploit-3c488524",
+    "title": "Chromium CVE-2026-76027 Memory Corruption Exploit",
+    "summary": "Chromium CVE-2026-76027 is a memory corruption flaw in Chrome and Microsoft Edge, fixed in the latest Chromium release. The flaw lets an attacker corrupt memory during rendering, which could enable remote code execution from a malicious web page. Users should upgrade to the newest Chrome or Edge version, and developers should apply the Chromium patch to mitigate the issue.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76027",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-76027"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-76027-memory-corruption-exploit",
+      "article-3c488524",
+      "3c488524",
+      "chromium-cve-2026-76027-memory-corruption-exploit-744db7"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-76028-use-after-free-vulnerabili-7dfb5fda",
+    "title": "Chromium CVE-2026-76028 Use‑After‑Free Vulnerability",
+    "summary": "Chromium CVE-2026-76028 is a use‑after‑free flaw affecting Chrome and Microsoft Edge, addressed in the most recent Chromium update. The vulnerability occurs when a freed object is accessed during rendering, allowing attackers to execute arbitrary code via crafted web content. Updating to the latest Chrome or Edge version applies the patch, and developers should incorporate the Chromium fix to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76028",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-76028"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-76028-use-after-free-vulnerabili",
+      "article-7dfb5fda",
+      "7dfb5fda",
+      "chromium-cve-2026-76028-use-after-free-vulnerabili-744db7",
+      "chromium-cve-2026-76028-use-after-free-vulnerability"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-cve-2026-76029-m-319d68ea",
+    "title": "Microsoft Edge Addresses Chromium CVE-2026-76029 Memory Corruption",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76029, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76029",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-76029"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-cve-2026-76029-m",
+      "article-319d68ea",
+      "319d68ea",
+      "microsoft-edge-addresses-chromium-cve-2026-76029-m-744db7",
+      "microsoft-edge-addresses-chromium-cve-2026-76029-memory-corr"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-cve-2026-76030-m-f2101526",
+    "title": "Microsoft Edge Addresses Chromium CVE-2026-76030 Memory Corruption",
+    "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76030, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76030",
+    "publishedAt": "2026-11-04T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-76030"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-cve-2026-76030-m",
+      "article-f2101526",
+      "f2101526",
+      "microsoft-edge-addresses-chromium-cve-2026-76030-m-744db7",
+      "microsoft-edge-addresses-chromium-cve-2026-76030-memory-corr"
     ]
   },
   {
@@ -9405,96 +9513,6 @@ export const news: NewsBrief[] = [
       "article-f43ad8cd",
       "f43ad8cd",
       "red-hat-updates-pipewire-on-rhel-10-37d92e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93458-important-net-9-0-security-update-7ecd4944",
-    "title": "RHSA-2026:93458: Important: .NET 9.0 security update",
-    "summary": "An update for .NET 9.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93458",
-    "publishedAt": "2026-11-02T03:38:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93458-important-net-9-0-security-update",
-      "article-7ecd4944",
-      "7ecd4944",
-      "rhsa-2026-93458-important-net-9-0-security-update-37d92e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93472-important-nginx-security-update-64b5712c",
-    "title": "RHSA-2026:93472: Important: nginx security update",
-    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93472",
-    "publishedAt": "2026-11-02T03:38:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93472-important-nginx-security-update",
-      "article-64b5712c",
-      "64b5712c",
-      "rhsa-2026-93472-important-nginx-security-update-37d92e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93455-important-net-8-0-security-update-6eef3a87",
-    "title": "RHSA-2026:93455: Important: .NET 8.0 security update",
-    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93455",
-    "publishedAt": "2026-11-02T03:38:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93455-important-net-8-0-security-update",
-      "article-6eef3a87",
-      "6eef3a87",
-      "rhsa-2026-93455-important-net-8-0-security-update-37d92e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-93451-important-libxtst-security-update-f6921eba",
-    "title": "RHSA-2026:93451: Important: libXtst security update",
-    "summary": "An update for libXtst is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93451",
-    "publishedAt": "2026-11-02T03:37:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-93451-important-libxtst-security-update",
-      "article-f6921eba",
-      "f6921eba",
-      "rhsa-2026-93451-important-libxtst-security-update-37d92e"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-libsoup-flaws-in-rhel-8-8-0d35cbdc",
-    "title": "Red Hat Patches Libsoup Flaws in RHEL 8.8",
-    "summary": "Red Hat issued a security patch addressing vulnerabilities in the libsoup HTTP library on Enterprise Linux 8.8 specialized server distributions. Red Hat Product Security assigned an Important severity rating due to potential security risks impacting SAP Solutions and Telecommunications Update Service builds. Infrastructure operators managing RHEL 8.8 SAP and Telecommunications deployments should install available package updates to patch affected systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93466",
-    "publishedAt": "2026-11-02T03:37:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-libsoup-flaws-in-rhel-8-8",
-      "article-0d35cbdc",
-      "0d35cbdc",
-      "red-hat-patches-libsoup-flaws-in-rhel-8-8-37d92e"
     ]
   }
 ];

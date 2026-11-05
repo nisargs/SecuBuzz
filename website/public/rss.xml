@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 03:45:21 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 04:45:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenAI Finds 948 Linux Kernel Privilege Escalation Flaws</title>
+      <link>https://secubuzz.com/news/openai-finds-948-linux-kernel-privilege-escalation-fd49289d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-finds-948-linux-kernel-privilege-escalation-fd49289d</guid>
+      <description><![CDATA[OpenAI’s automated pipeline uncovered 948 Linux kernel privilege‑escalation flaws in a single run in mid‑October 2026, letting local users gain root. The flaws arise from missing kernel privilege checks and enable local‑user RCE that attackers could exploit with local access. Kernel maintainers have not yet issued patches; teams should apply the latest stable kernel and monitor advisories for updates.]]></description>
+      <pubDate>Thu, 05 Nov 2026 02:42:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openai-uncovers-948-linux-kernel-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Releases pcre2 Security Patch</title>
       <link>https://secubuzz.com/news/red-hat-releases-pcre2-security-patch-9e9fa5fb</link>
@@ -116,10 +125,10 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>DreamHost Breach Exposes FTP Credentials</title>
-      <link>https://secubuzz.com/news/dreamhost-breach-exposes-ftp-credentials-9e6a5bae</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dreamhost-breach-exposes-ftp-credentials-9e6a5bae</guid>
-      <description><![CDATA[DreamHost confirmed a breach after attackers accessed its File Manager platform for two months, capturing customers' FTP/SFTP usernames and passwords. The intrusion exploited unauthorized platform access, exposing credential data that could enable credential stuffing or unauthorized file transfers. DreamHost urged users to change passwords, enable MFA, and review account activity while investigating the incident.]]></description>
+      <title>DreamHost Breach Exposes Customer Credentials and Emails</title>
+      <link>https://secubuzz.com/news/dreamhost-breach-exposes-customer-credentials-and-b64076da</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dreamhost-breach-exposes-customer-credentials-and-b64076da</guid>
+      <description><![CDATA[DreamHost confirmed a breach that exposed customer login details after attackers exploited its File Manager on October 23, 2026. The incident yielded FTP/SFTP usernames and passwords, webmail credentials, and in limited cases, private mailbox contents, compromising user accounts and sensitive data. DreamHost advised customers to change passwords, enable two‑factor authentication, and monitor accounts for suspicious activity while investigating the breach.]]></description>
       <pubDate>Wed, 04 Nov 2026 19:05:19 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/">BleepingComputer</source>
       <category>Breach</category>
@@ -332,6 +341,42 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Chromium CVE-2026-76027 Memory Corruption Exploit</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-76027-memory-corruption-exploit-3c488524</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-76027-memory-corruption-exploit-3c488524</guid>
+      <description><![CDATA[Chromium CVE-2026-76027 is a memory corruption flaw in Chrome and Microsoft Edge, fixed in the latest Chromium release. The flaw lets an attacker corrupt memory during rendering, which could enable remote code execution from a malicious web page. Users should upgrade to the newest Chrome or Edge version, and developers should apply the Chromium patch to mitigate the issue.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76027">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-76028 Use‑After‑Free Vulnerability</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-76028-use-after-free-vulnerabili-7dfb5fda</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-76028-use-after-free-vulnerabili-7dfb5fda</guid>
+      <description><![CDATA[Chromium CVE-2026-76028 is a use‑after‑free flaw affecting Chrome and Microsoft Edge, addressed in the most recent Chromium update. The vulnerability occurs when a freed object is accessed during rendering, allowing attackers to execute arbitrary code via crafted web content. Updating to the latest Chrome or Edge version applies the patch, and developers should incorporate the Chromium fix to prevent exploitation.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76028">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Addresses Chromium CVE-2026-76029 Memory Corruption</title>
+      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-76029-m-319d68ea</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-76029-m-319d68ea</guid>
+      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76029, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76029">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Addresses Chromium CVE-2026-76030 Memory Corruption</title>
+      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-76030-m-f2101526</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-76030-m-f2101526</guid>
+      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76030, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.]]></description>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76030">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Chromium CVE-2026-119270 Improper Input Validation</title>
       <link>https://secubuzz.com/news/chromium-cve-2026-119270-improper-input-validation-be57d80e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-119270-improper-input-validation-be57d80e</guid>
@@ -410,51 +455,6 @@
       <description><![CDATA[A use‑after‑free flaw, CVE-2026-119266, targets Chromium code paths used by Microsoft Edge. The flaw arises from freeing memory before all references are cleared, potentially allowing attackers to execute arbitrary code or crash the browser; no exploitation reported. Microsoft Edge applies the fix through Chromium updates; users should upgrade to the latest Edge version or consult Google Chrome release notes.]]></description>
       <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119266">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Edge Addresses Chromium Memory Corruption CVE-2026-119267</title>
-      <link>https://secubuzz.com/news/edge-addresses-chromium-memory-corruption-cve-2026-cc043ad6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-chromium-memory-corruption-cve-2026-cc043ad6</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by a memory corruption flaw, CVE-2026-119267, in Chromium. The flaw stems from improper bounds checking during memory allocation, potentially enabling arbitrary code execution if a malicious page is rendered, though no public exploit exists. Microsoft has fixed the issue in Edge; users should update or apply the patch referenced in Google Chrome releases.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119267">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Edge Addresses Chromium Integer Overflow CVE-2026-119268</title>
-      <link>https://secubuzz.com/news/edge-addresses-chromium-integer-overflow-cve-2026-3322a0f5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/edge-addresses-chromium-integer-overflow-cve-2026-3322a0f5</guid>
-      <description><![CDATA[Microsoft Edge (Chromium-based) is affected by an integer overflow flaw, CVE-2026-119268, in Chromium. The overflow occurs during integer arithmetic, enabling memory corruption and code execution if a crafted page is processed, though no public exploit is known. Microsoft fixed the issue in Edge; users should update or apply the patch referenced in Google Chrome releases.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119268">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Improper Input Validation CVE-2026-119262</title>
-      <link>https://secubuzz.com/news/chromium-improper-input-validation-cve-2026-119262-32d35b3e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-improper-input-validation-cve-2026-119262-32d35b3e</guid>
-      <description><![CDATA[CVE-2026-119262 exposes improper input validation in Chromium, impacting Microsoft Edge (Chromium-based) through its Chromium engine. The flaw permits malformed input to bypass checks, potentially causing memory corruption or denial of service; no public exploit reported, CVSS undisclosed. Edge applies the fix via its Chromium update; users should install the latest release or consult Google Chrome release notes for patch details.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Memory Corruption CVE-2026-119263</title>
-      <link>https://secubuzz.com/news/chromium-memory-corruption-cve-2026-119263-f6963e32</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-memory-corruption-cve-2026-119263-f6963e32</guid>
-      <description><![CDATA[CVE-2026-119263 exposes memory corruption in Chromium, impacting Microsoft Edge. Crafted input can corrupt memory, potentially causing crashes or RCE; no exploitation reported, CVSS undisclosed, and no evidence of exploitation in the wild. Edge applies the fix via its Chromium update; users should install the latest release or consult Chrome release notes for patch details.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Patches Upstream Chromium Memory Corruption Flaw</title>
-      <link>https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-memory-co-92e95873</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-memory-co-92e95873</guid>
-      <description><![CDATA[Microsoft Edge received an update addressing a memory corruption flaw, identified as CVE-2026-119264, ingested from upstream Chromium components. The memory corruption vulnerability originated in Chrome, creating technical risks for Chromium-based browsers if left unpatched. Administrators and users should update Microsoft Edge to the latest build incorporating the upstream Google Chrome security patches.]]></description>
-      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
