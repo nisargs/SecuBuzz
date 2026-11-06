@@ -1,5 +1,25 @@
 [
   {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
+    "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
+    "headline": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
+    "summary": "Bulletin ID: 2026-166-AWS Publication Date: 11/06/2026 10:00 AM PST Description: We identified two issues in the Babelfish TDS protocol layer: - CVE-2026-119923: A memory-safety issue in the TDS connection-handshake handling could allow a remote, unauthenticated actor to affect the database process. - CVE-2026-119924: A memory-safety issue in the TDS remote-procedure-call request handling could allow a remote, authenticated actor to read adjacent process memory or cause a denial of service.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-06T18:46:27.000Z",
+    "ingestedAt": "2026-11-06T20:43:38.118Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-119923",
+      "CVE-2026-119924"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-45-8",
     "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-45-8",
     "title": "Authorities Dismantle Scams, Teams Abuse, Refrigeration Attacks",
@@ -293,6 +313,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/microsoft-warns-fake-game-downloads/",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-warns-fake-game-downloads/",
+    "title": "Microsoft Alerts on Monetizing Windows PCs via Fake Games",
+    "headline": "Microsoft Alerts on Monetizing Windows PCs via Fake Games",
+    "summary": "Microsoft warned that fake game installers covertly monetize Windows PCs by allocating bandwidth to distributed computing tasks. The campaign targets users seeking free titles, silently running background workloads that turn machines into unconsented mining rigs. Microsoft recommends verifying installer signatures, avoiding untrusted sites, and using endpoint protection to block unauthorized bandwidth usage.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-06T14:38:43.000Z",
+    "ingestedAt": "2026-11-06T20:44:00.864Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/microsoft-warns-fake-game-downloads/",
     "additionalSources": []
   },
   {
@@ -748,18 +784,23 @@
   {
     "id": "https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/",
-    "title": "OpenAI’s GPT‑6 Cyber Finds 81 Firefox Vulnerabilities",
-    "headline": "OpenAI’s GPT‑6 Cyber Finds 81 Firefox Vulnerabilities",
-    "summary": "OpenAI’s GPT‑6 Cyber model identified 81 previously undetected Firefox vulnerabilities during authorized security testing. The flaws, uncovered through automated vulnerability discovery and exploitation simulation, represent potential entry points for attackers but have not been publicly exploited. OpenAI leveraged the findings to harden its training infrastructure, and Mozilla is expected to issue patches.",
+    "title": "OpenAI’s GPT‑6 Cyber Identifies 81 Firefox Vulnerabilities",
+    "headline": "OpenAI’s GPT‑6 Cyber Identifies 81 Firefox Vulnerabilities",
+    "summary": "OpenAI’s GPT‑6 Cyber model uncovered 81 previously unknown high‑severity vulnerabilities in Mozilla Firefox during authorized testing. The flaws, which could allow remote code execution, were not publicly exploited but were used to strengthen OpenAI’s training infrastructure. Mozilla is expected to release patches, and OpenAI plans to monitor the vulnerabilities for potential future exploitation.",
     "category": "VULNERABILITY",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "Help Net Security",
     "publishedAt": "2026-11-06T10:19:49.000Z",
     "ingestedAt": "2026-11-06T11:03:05.955Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/"
+      }
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/06/sarajevo-cyber-security-summit-2026/",
@@ -8276,37 +8317,5 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:94514",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94514",
-    "title": "Red Hat Releases freerdp Patch for CVE-2026-43871",
-    "headline": "Red Hat Releases freerdp Patch for CVE-2026-43871",
-    "summary": "A CVE-2026-43871 flaw in Red Hat Enterprise Linux 10.2 freerdp allows remote attackers to exploit a security vulnerability. Red Hat rates it as Important, with a CVSS base score indicating moderate to high risk, yet no active exploitation has been seen. Red Hat has issued a freerdp update; administrators should apply it promptly to mitigate the flaw.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-03T13:05:30.000Z",
-    "ingestedAt": "2026-11-03T23:43:19.920Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:94514",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.wiz.io/blog/green-agent-agentic-remediation",
-    "sourceUrl": "https://www.wiz.io/blog/green-agent-agentic-remediation",
-    "title": "Wiz Green Agent Speeds Critical Risk Resolution",
-    "headline": "Wiz Green Agent Speeds Critical Risk Resolution",
-    "summary": "Wiz Green Agent, an agentic remediation tool, deployed by Fireblocks, Rogo, and project44 to address cross-team blockers in critical risk resolution. The platform automates remediation workflows, reducing manual coordination overhead and accelerating mean-time-to-remediate for high-severity findings. Organizations can adopt similar agentic approaches to streamline vulnerability management and eliminate operational bottlenecks.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "publishedAt": "2026-11-03T13:00:00.000Z",
-    "ingestedAt": "2026-11-03T15:19:44.033Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.wiz.io/blog/green-agent-agentic-remediation",
-    "additionalSources": []
   }
 ]

@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 19:41:42 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 20:45:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL</title>
+      <link>https://secubuzz.com/news/cve-2026-119923-and-cve-2026-119924-issues-with-ba-ef80c914</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-119923-and-cve-2026-119924-issues-with-ba-ef80c914</guid>
+      <description><![CDATA[Bulletin ID: 2026-166-AWS Publication Date: 11/06/2026 10:00 AM PST Description: We identified two issues in the Babelfish TDS protocol layer: - CVE-2026-119923: A memory-safety issue in the TDS connection-handshake handling could allow a remote, unauthenticated actor to affect the database process. - CVE-2026-119924: A memory-safety issue in the TDS remote-procedure-call request handling could allow a remote, authenticated actor to read adjacent process memory or cause a denial of service.]]></description>
+      <pubDate>Fri, 06 Nov 2026 18:46:27 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Authorities Dismantle Scams, Teams Abuse, Refrigeration Attacks</title>
       <link>https://secubuzz.com/news/authorities-dismantle-scams-teams-abuse-refrigerat-d7e6d4c2</link>
@@ -167,6 +176,15 @@
       <description><![CDATA[The report highlights multiple emerging threats, including a Trezor hardware wallet implant, LLMJacking ransomware billing at $1M, and SAP vulnerabilities weaponized within days. Additionally, Synology warns of NAS ransomware attacks, Flowise 'hello' attacks exploit, and Chainalysis breach impacts expanding across customers. Security teams should review detection rules, apply vendor patches, and monitor for credential theft to mitigate these risks.]]></description>
       <pubDate>Fri, 06 Nov 2026 14:40:09 GMT</pubDate>
       <source url="https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Alerts on Monetizing Windows PCs via Fake Games</title>
+      <link>https://secubuzz.com/news/microsoft-alerts-on-monetizing-windows-pcs-via-fak-ccffd898</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-alerts-on-monetizing-windows-pcs-via-fak-ccffd898</guid>
+      <description><![CDATA[Microsoft warned that fake game installers covertly monetize Windows PCs by allocating bandwidth to distributed computing tasks. The campaign targets users seeking free titles, silently running background workloads that turn machines into unconsented mining rigs. Microsoft recommends verifying installer signatures, avoiding untrusted sites, and using endpoint protection to block unauthorized bandwidth usage.]]></description>
+      <pubDate>Fri, 06 Nov 2026 14:38:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-warns-fake-game-downloads/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -413,10 +431,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>OpenAI’s GPT‑6 Cyber Finds 81 Firefox Vulnerabilities</title>
-      <link>https://secubuzz.com/news/openai-s-gpt-6-cyber-finds-81-firefox-vulnerabilit-7538a3cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-s-gpt-6-cyber-finds-81-firefox-vulnerabilit-7538a3cc</guid>
-      <description><![CDATA[OpenAI’s GPT‑6 Cyber model identified 81 previously undetected Firefox vulnerabilities during authorized security testing. The flaws, uncovered through automated vulnerability discovery and exploitation simulation, represent potential entry points for attackers but have not been publicly exploited. OpenAI leveraged the findings to harden its training infrastructure, and Mozilla is expected to issue patches.]]></description>
+      <title>OpenAI’s GPT‑6 Cyber Identifies 81 Firefox Vulnerabilities</title>
+      <link>https://secubuzz.com/news/openai-s-gpt-6-cyber-identifies-81-firefox-vulnera-5357252a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-s-gpt-6-cyber-identifies-81-firefox-vulnera-5357252a</guid>
+      <description><![CDATA[OpenAI’s GPT‑6 Cyber model uncovered 81 previously unknown high‑severity vulnerabilities in Mozilla Firefox during authorized testing. The flaws, which could allow remote code execution, were not publicly exploited but were used to strengthen OpenAI’s training infrastructure. Mozilla is expected to release patches, and OpenAI plans to monitor the vulnerabilities for potential future exploitation.]]></description>
       <pubDate>Fri, 06 Nov 2026 10:19:49 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/">Help Net Security</source>
       <category>Vulnerability</category>
@@ -438,24 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 09:33:51 GMT</pubDate>
       <source url="https://www.securityweek.com/openai-model-wrote-its-own-network-code-to-get-around-sandbox-restrictions/">SecurityWeek</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>MetaMask Incident Does Not Affect Wallets</title>
-      <link>https://secubuzz.com/news/metamask-incident-does-not-affect-wallets-11149822</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/metamask-incident-does-not-affect-wallets-11149822</guid>
-      <description><![CDATA[MetaMask reported a recent security incident that did not compromise wallet infrastructure or user accounts. The incident involved an external probe that failed to breach the platform's authentication controls, leaving no data exfiltration. MetaMask advises users to monitor account activity and keep software updated, but no patch is required at this time.]]></description>
-      <pubDate>Fri, 06 Nov 2026 09:22:28 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/metamask-says-recent-attack-didnt-affect-wallet-infrastructure/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>US Agencies Warn of Refrigeration System Attacks</title>
-      <link>https://secubuzz.com/news/us-agencies-warn-of-refrigeration-system-attacks-f9308924</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-agencies-warn-of-refrigeration-system-attacks-f9308924</guid>
-      <description><![CDATA[Five U.S. agencies warned that threat actors target refrigeration controllers keeping grocery freezers and cold storage rooms at safe temperatures. Attackers may force units into continuous heating and defrost cycles, compromising perishable food and medical supplies; the threat remains active. The advisory urges firmware updates, network segmentation, and monitoring for anomalous control commands to mitigate the risk.]]></description>
-      <pubDate>Fri, 06 Nov 2026 09:04:36 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/06/cyberattacks-refrigeration-systems-cisa-fbi/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
