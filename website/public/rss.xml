@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 04:45:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 05:47:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Red Hat Releases Security Updates for BIND on RHEL 6</title>
@@ -86,6 +86,15 @@
       <description><![CDATA[Microsoft Threat Intelligence reports that attackers employ the ARTEX agentic AI framework to scan GitHub for exposed OAuth application secrets. Compromised OAuth apps enable attackers to perform authenticated actions within the victim tenant, potentially escalating privileges or exfiltrating data. Security teams should audit exposed secrets, rotate credentials, and enable multi‑factor authentication to mitigate this automated threat.]]></description>
       <pubDate>Thu, 05 Nov 2026 23:46:50 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/">Microsoft Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95725: Important: tesseract security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95725-important-tesseract-security-updat-5c4b413f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95725-important-tesseract-security-updat-5c4b413f</guid>
+      <description><![CDATA[An update for tesseract is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 23:30:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95725">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -222,6 +231,15 @@
       <pubDate>Thu, 05 Nov 2026 20:48:00 GMT</pubDate>
       <source url="https://therecord.media/social-media-giants-sue-california-over-social-media-law">The Record</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95638: Important: go-toolset:rhel8 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95638-important-go-toolset-rhel8-securit-7fd2681e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95638-important-go-toolset-rhel8-securit-7fd2681e</guid>
+      <description><![CDATA[An update for the go-toolset:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 05 Nov 2026 20:20:40 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95638">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Truffle Security Launches Secret Revocation Initiative</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Cloudflare discusses the challenge of AI agents acting on behalf of users while servers lack visibility into the intermediary traffic. The post outlines a collaborative framework for identifying, allowing, and managing automated traffic to preserve user privacy and security. Adopting this framework requires integrating agent detection mechanisms and establishing clear policies for automated request handling.]]></description>
       <pubDate>Thu, 05 Nov 2026 17:03:04 GMT</pubDate>
       <source url="https://blog.cloudflare.com/trusted-agent-delegation/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Russian State Hackers Target iPhone, Android Zero-Click Espionage</title>
-      <link>https://secubuzz.com/news/russian-state-hackers-target-iphone-android-zero-c-4acc3a75</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-state-hackers-target-iphone-android-zero-c-4acc3a75</guid>
-      <description><![CDATA[Russian state-linked hackers launched a zero‑click espionage campaign against iPhone and Android devices in Ukraine, United States, and Europe. The attack exploits a memory‑corruption flaw in notification handling, enabling code execution without user interaction and exfiltrating contacts and location data. Apple and Google released security updates patching the flaw; users should install the latest OS updates and enable two‑factor authentication.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-hackers-smartphone-cyberattacks">The Record</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Microsoft Updates AI Agent Security in November 2026</title>
-      <link>https://secubuzz.com/news/microsoft-updates-ai-agent-security-in-november-20-89f230b6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-ai-agent-security-in-november-20-89f230b6</guid>
-      <description><![CDATA[Microsoft Security releases its November 2026 update, focusing on AI agent security, least privilege, threat protection, and exposure management. The update introduces new controls and guidance to reduce attack surface and improve detection of anomalous agent behavior. Security teams should review the new documentation and apply the updated least‑privilege policies and exposure controls.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/">Microsoft Security</source>
       <category>General</category>
     </item>
   </channel>

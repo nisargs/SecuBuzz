@@ -178,6 +178,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-95725-important-tesseract-security-updat-5c4b413f",
+    "title": "RHSA-2026:95725: Important: tesseract security update",
+    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95725",
+    "publishedAt": "2026-11-05T23:30:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95725-important-tesseract-security-updat",
+      "article-5c4b413f",
+      "5c4b413f",
+      "rhsa-2026-95725-important-tesseract-security-updat-37d83a",
+      "rhsa-2026-95725-important-tesseract-security-update"
+    ]
+  },
+  {
     "slug": "google-fixes-216-android-flaws-in-november-2026-bu-9856043c",
     "title": "Google Fixes 216 Android Flaws in November 2026 Bulletin",
     "summary": "Google released the November 2026 Android Security Bulletin, resolving 216 vulnerabilities across core Android Framework, System, and vendor components. The bulletin details 23 critical flaws, including CVE-2026-58868, CVE-2026-58876, CVE-2026-58936, CVE-2026-55275, and CVE-2026-55283, which enable remote code execution or elevation of privilege. Devices must install the 2026-11-05 security patch level or vendor firmware updates to fully remediate the disclosed flaws.",
@@ -456,6 +475,25 @@ export const news: NewsBrief[] = [
       "fbe3bf35",
       "google-meta-tiktok-sue-california-over-youth-prote-297b95",
       "google-meta-tiktok-sue-california-over-youth-protection-law"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95638-important-go-toolset-rhel8-securit-7fd2681e",
+    "title": "RHSA-2026:95638: Important: go-toolset:rhel8 security update",
+    "summary": "An update for the go-toolset:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95638",
+    "publishedAt": "2026-11-05T20:20:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95638-important-go-toolset-rhel8-securit",
+      "article-7fd2681e",
+      "7fd2681e",
+      "rhsa-2026-95638-important-go-toolset-rhel8-securit-37d83e",
+      "rhsa-2026-95638-important-go-toolset-rhel8-security-update"
     ]
   },
   {
@@ -3471,9 +3509,9 @@ export const news: NewsBrief[] = [
   {
     "slug": "debian-ubuntu-apt-flaw-enables-root-code-execution-3b3b7b41",
     "title": "Debian/Ubuntu APT Flaw Enables Root Code Execution",
-    "summary": "A flaw in Debian and Ubuntu's APT package manager allows attackers to replace trusted packages with malicious ones during updates. Tracked as CVE-2026-109518, the vulnerability permits unauthenticated code execution with root privileges, potentially compromising entire Linux systems. Debian has released a patch; users should update APT to the latest version and verify package signatures.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
+    "summary": "The CVE-2026-109518 flaw in the APT package manager impacts Ubuntu and Debian Linux distributions. It permits unauthenticated attackers to inject malicious packages during updates, achieving full root code execution and complete system compromise. Canonical and Debian have issued patches (USN-8996-1, DSA-6607-1); users must update APT and verify package signatures immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
     "publishedAt": "2026-11-04T17:00:46.000Z",
@@ -3484,6 +3522,10 @@ export const news: NewsBrief[] = [
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/debian-apt-flaw-lets-hackers-hijack-updates/"
+      },
+      {
+        "source": "AWS Security Bulletins",
+        "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-172-aws/"
       }
     ],
     "aliases": [
@@ -9484,27 +9526,6 @@ export const news: NewsBrief[] = [
       "3bc4674a",
       "quest-foglight-directory-traversal-enables-remote-6f3ca7",
       "quest-foglight-directory-traversal-enables-remote-code-execu"
-    ]
-  },
-  {
-    "slug": "quest-foglight-directory-traversal-allows-remote-c-29b2ca1d",
-    "title": "Quest Foglight Directory Traversal Allows Remote Code Execution",
-    "summary": "Quest Foglight for Databases suffers a directory traversal flaw that allows remote code execution via the loadEvolveLicense endpoint. The vulnerability, CVE-2026-92195, requires authentication and has a CVSS score of 8.8, enabling attackers to run arbitrary code. No patch information is available; security teams should monitor for updates and restrict access to the affected API.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-856/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92195"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-directory-traversal-allows-remote-c",
-      "article-29b2ca1d",
-      "29b2ca1d",
-      "quest-foglight-directory-traversal-allows-remote-c-6f3ca6",
-      "quest-foglight-directory-traversal-allows-remote-code-execut"
     ]
   }
 ];

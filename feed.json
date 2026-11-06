@@ -144,6 +144,23 @@
     "additionalSources": []
   },
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95725",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95725",
+    "title": "RHSA-2026:95725: Important: tesseract security update",
+    "headline": "RHSA-2026:95725: Important: tesseract security update",
+    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-05T23:30:16.000Z",
+    "ingestedAt": "2026-11-06T05:43:34.563Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "asb-2026-11-01",
     "title": "Google Fixes 216 Android Flaws in November 2026 Bulletin",
     "headline": "Google Fixes 216 Android Flaws in November 2026 Bulletin",
@@ -403,6 +420,23 @@
     "isFutureSkew": false,
     "url": "https://therecord.media/social-media-giants-sue-california-over-social-media-law",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95638",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95638",
+    "title": "RHSA-2026:95638: Important: go-toolset:rhel8 security update",
+    "headline": "RHSA-2026:95638: Important: go-toolset:rhel8 security update",
+    "summary": "An update for the go-toolset:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-05T20:20:40.000Z",
+    "ingestedAt": "2026-11-06T05:43:34.564Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
@@ -3041,9 +3075,9 @@
     "sourceUrl": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
     "title": "Debian/Ubuntu APT Flaw Enables Root Code Execution",
     "headline": "Debian/Ubuntu APT Flaw Enables Root Code Execution",
-    "summary": "A flaw in Debian and Ubuntu's APT package manager allows attackers to replace trusted packages with malicious ones during updates. Tracked as CVE-2026-109518, the vulnerability permits unauthenticated code execution with root privileges, potentially compromising entire Linux systems. Debian has released a patch; users should update APT to the latest version and verify package signatures.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
+    "summary": "The CVE-2026-109518 flaw in the APT package manager impacts Ubuntu and Debian Linux distributions. It permits unauthenticated attackers to inject malicious packages during updates, achieving full root code execution and complete system compromise. Canonical and Debian have issued patches (USN-8996-1, DSA-6607-1); users must update APT and verify package signatures immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
     "source": "The Hacker News",
     "publishedAt": "2026-11-04T17:00:46.000Z",
     "ingestedAt": "2026-11-04T17:43:07.883Z",
@@ -3056,6 +3090,10 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/debian-apt-flaw-lets-hackers-hijack-updates/"
+      },
+      {
+        "source": "AWS Security Bulletins",
+        "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-172-aws/"
       }
     ],
     "isFallback": true
@@ -8251,38 +8289,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-857/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-856/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-856/",
-    "title": "Quest Foglight Directory Traversal Allows Remote Code Execution",
-    "headline": "Quest Foglight Directory Traversal Allows Remote Code Execution",
-    "summary": "Quest Foglight for Databases suffers a directory traversal flaw that allows remote code execution via the loadEvolveLicense endpoint. The vulnerability, CVE-2026-92195, requires authentication and has a CVSS score of 8.8, enabling attackers to run arbitrary code. No patch information is available; security teams should monitor for updates and restrict access to the affected API.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "ingestedAt": "2026-11-04T00:43:10.667Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-856/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-855/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-855/",
-    "title": "Quest Foglight Directory Traversal Enables Remote Code Execution",
-    "headline": "Quest Foglight Directory Traversal Enables Remote Code Execution",
-    "summary": "Quest Foglight for Databases suffers a directory traversal flaw that allows remote code execution via the installLicense endpoint. The vulnerability, CVE-2026-92192, requires authentication and has a CVSS score of 8.8, enabling attackers to run arbitrary code. No patch information is available; security teams should monitor for updates and restrict access to the affected API.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "ingestedAt": "2026-11-04T00:43:10.667Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-855/",
     "additionalSources": []
   }
 ]
