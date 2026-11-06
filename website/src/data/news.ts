@@ -186,6 +186,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ubuntu-tornado-regression-fix-released-74b59201",
+    "title": "Ubuntu Tornado Regression Fix Released",
+    "summary": "USN-8952-2 resolves a regression in Tornado caused by an incomplete fix for CVE-2026-103263, which broke static file serving for applications subclassing StaticFileHandler such as Jupyter. The original update introduced the regression by failing to properly handle certain HTTP requests and network inputs. This revised release restores correct static file serving functionality while maintaining the security fixes from prior advisories.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8952-2",
+    "publishedAt": "2026-11-06T15:04:17.000Z",
+    "cves": [
+      "CVE-2026-103263"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-tornado-regression-fix-released",
+      "article-74b59201",
+      "74b59201",
+      "ubuntu-tornado-regression-fix-released-7fbd73"
+    ]
+  },
+  {
     "slug": "dark-project-ransomware-group-offers-80-commission-46fe2579",
     "title": "Dark Project Ransomware Group Offers 80% Commission",
     "summary": "The Dark Project ransomware group recruits criminal partners with an 80% commission on successful attacks, combining data theft, encryption, and extortion. First observed in June 2026, the financially motivated operation pressures organizations into ransom payments. Security teams should monitor for extortion activity and implement network segmentation to limit lateral movement.",
@@ -406,21 +426,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "openai-launches-gpt-6-cyber-model-for-flaw-hunting-e7972fd5",
-    "title": "OpenAI Launches GPT‑6 Cyber Model for Flaw Hunting",
-    "summary": "OpenAI introduced GPT‑6 Cyber, a model rated critical for cybersecurity that surpasses GPT‑5.6 Cyber in exploitation accuracy while staying within scope. The model hunts flaws with detailed reports, avoiding policy violations or unauthorized code execution. Teams can embed GPT‑6 Cyber into scanning pipelines, but should validate outputs manually to avoid false positives.",
+    "slug": "openai-releases-gpt-6-cyber-model-to-enhance-vulne-771511c1",
+    "title": "OpenAI Releases GPT‑6 Cyber Model to Enhance Vulnerability Detection",
+    "summary": "OpenAI unveiled GPT‑6 Cyber, a new AI model designed to accelerate vulnerability discovery across software ecosystems. The model reportedly identified 81 Firefox flaws and 948 Linux exploits during development, outperforming its predecessor in detection accuracy. Security teams can integrate GPT‑6 Cyber into scanning pipelines but must manually validate outputs to avoid false positives.",
     "category": "General",
     "severity": "LOW",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
     "publishedAt": "2026-11-06T13:19:52.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html"
+      }
+    ],
     "aliases": [
-      "openai-launches-gpt-6-cyber-model-for-flaw-hunting",
-      "article-e7972fd5",
-      "e7972fd5",
-      "openai-launches-gpt-6-cyber-model-for-flaw-hunting-40974c"
+      "openai-releases-gpt-6-cyber-model-to-enhance-vulne",
+      "article-771511c1",
+      "771511c1",
+      "openai-releases-gpt-6-cyber-model-to-enhance-vulne-40974c",
+      "openai-releases-gpt-6-cyber-model-to-enhance-vulnerability-d"
     ]
   },
   {
@@ -9515,27 +9541,6 @@ export const news: NewsBrief[] = [
       "5fb80576",
       "microsoft-study-links-78-of-exploits-to-system-tak-7a8ee3",
       "microsoft-study-links-78-of-exploits-to-system-takeover"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94485-moderate-cockpit-security-bug-fix-08586ae9",
-    "title": "RHSA-2026:94485: Moderate: cockpit security, bug fix, and enhancement update",
-    "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94485",
-    "publishedAt": "2026-11-03T12:31:40.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94485-moderate-cockpit-security-bug-fix",
-      "article-08586ae9",
-      "08586ae9",
-      "rhsa-2026-94485-moderate-cockpit-security-bug-fix-37d8b9",
-      "rhsa-2026-94485-moderate-cockpit-security-bug-fix-and-enhanc"
     ]
   }
 ];

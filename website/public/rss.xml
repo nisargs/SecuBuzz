@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 17:47:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 18:05:04 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)</title>
@@ -87,6 +87,15 @@
       <pubDate>Fri, 06 Nov 2026 15:06:02 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/big-tech-sues-over-california-plan-to-limit-kids-scrolling">Malwarebytes Labs</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Ubuntu Tornado Regression Fix Released</title>
+      <link>https://secubuzz.com/news/ubuntu-tornado-regression-fix-released-74b59201</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-tornado-regression-fix-released-74b59201</guid>
+      <description><![CDATA[USN-8952-2 resolves a regression in Tornado caused by an incomplete fix for CVE-2026-103263, which broke static file serving for applications subclassing StaticFileHandler such as Jupyter. The original update introduced the regression by failing to properly handle certain HTTP requests and network inputs. This revised release restores correct static file serving functionality while maintaining the security fixes from prior advisories.]]></description>
+      <pubDate>Fri, 06 Nov 2026 15:04:17 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-8952-2">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Dark Project Ransomware Group Offers 80% Commission</title>
@@ -197,10 +206,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>OpenAI Launches GPT‑6 Cyber Model for Flaw Hunting</title>
-      <link>https://secubuzz.com/news/openai-launches-gpt-6-cyber-model-for-flaw-hunting-e7972fd5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-launches-gpt-6-cyber-model-for-flaw-hunting-e7972fd5</guid>
-      <description><![CDATA[OpenAI introduced GPT‑6 Cyber, a model rated critical for cybersecurity that surpasses GPT‑5.6 Cyber in exploitation accuracy while staying within scope. The model hunts flaws with detailed reports, avoiding policy violations or unauthorized code execution. Teams can embed GPT‑6 Cyber into scanning pipelines, but should validate outputs manually to avoid false positives.]]></description>
+      <title>OpenAI Releases GPT‑6 Cyber Model to Enhance Vulnerability Detection</title>
+      <link>https://secubuzz.com/news/openai-releases-gpt-6-cyber-model-to-enhance-vulne-771511c1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-releases-gpt-6-cyber-model-to-enhance-vulne-771511c1</guid>
+      <description><![CDATA[OpenAI unveiled GPT‑6 Cyber, a new AI model designed to accelerate vulnerability discovery across software ecosystems. The model reportedly identified 81 Firefox flaws and 948 Linux exploits during development, outperforming its predecessor in detection accuracy. Security teams can integrate GPT‑6 Cyber into scanning pipelines but must manually validate outputs to avoid false positives.]]></description>
       <pubDate>Fri, 06 Nov 2026 13:19:52 GMT</pubDate>
       <source url="https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/">SecurityWeek</source>
       <category>General</category>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 08:16:23 GMT</pubDate>
       <source url="https://cybersecuritynews.com/chatgpt-lockdown-mode-bypass/">Cyber Security News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Chainalysis Breach Exposes Credentials and Live Tokens</title>
-      <link>https://secubuzz.com/news/chainalysis-breach-exposes-credentials-and-live-to-40439140</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-breach-exposes-credentials-and-live-to-40439140</guid>
-      <description><![CDATA[Blockchain intelligence firm Chainalysis reported a breach that exposed credentials and live tokens for all customers. The attack compromised internal tools and systems, potentially allowing attackers to access customer accounts and transfer funds. Chainalysis urged customers to reset credentials, monitor accounts, and apply security patches immediately to mitigate further exploitation.]]></description>
-      <pubDate>Fri, 06 Nov 2026 08:04:49 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html">The Hacker News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

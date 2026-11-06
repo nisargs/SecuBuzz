@@ -152,6 +152,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://ubuntu.com/security/notices/USN-8952-2",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8952-2",
+    "title": "Ubuntu Tornado Regression Fix Released",
+    "headline": "Ubuntu Tornado Regression Fix Released",
+    "summary": "USN-8952-2 resolves a regression in Tornado caused by an incomplete fix for CVE-2026-103263, which broke static file serving for applications subclassing StaticFileHandler such as Jupyter. The original update introduced the regression by failing to properly handle certain HTTP requests and network inputs. This revised release restores correct static file serving functionality while maintaining the security fixes from prior advisories.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-06T15:04:17.000Z",
+    "ingestedAt": "2026-11-06T18:04:55.948Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-8952-2",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/new-dark-project-ransomware-group/",
     "sourceUrl": "https://cybersecuritynews.com/new-dark-project-ransomware-group/",
     "title": "Dark Project Ransomware Group Offers 80% Commission",
@@ -346,9 +362,9 @@
   {
     "id": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
     "sourceUrl": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
-    "title": "OpenAI Launches GPT‑6 Cyber Model for Flaw Hunting",
-    "headline": "OpenAI Launches GPT‑6 Cyber Model for Flaw Hunting",
-    "summary": "OpenAI introduced GPT‑6 Cyber, a model rated critical for cybersecurity that surpasses GPT‑5.6 Cyber in exploitation accuracy while staying within scope. The model hunts flaws with detailed reports, avoiding policy violations or unauthorized code execution. Teams can embed GPT‑6 Cyber into scanning pipelines, but should validate outputs manually to avoid false positives.",
+    "title": "OpenAI Releases GPT‑6 Cyber Model to Enhance Vulnerability Detection",
+    "headline": "OpenAI Releases GPT‑6 Cyber Model to Enhance Vulnerability Detection",
+    "summary": "OpenAI unveiled GPT‑6 Cyber, a new AI model designed to accelerate vulnerability discovery across software ecosystems. The model reportedly identified 81 Firefox flaws and 948 Linux exploits during development, outperforming its predecessor in detection accuracy. Security teams can integrate GPT‑6 Cyber into scanning pipelines but must manually validate outputs to avoid false positives.",
     "category": "GENERAL",
     "severity": "LOW",
     "source": "SecurityWeek",
@@ -357,7 +373,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html"
+      }
+    ]
   },
   {
     "id": "https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/",
@@ -8278,24 +8299,5 @@
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/",
     "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:94485",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94485",
-    "title": "RHSA-2026:94485: Moderate: cockpit security, bug fix, and enhancement update",
-    "headline": "RHSA-2026:94485: Moderate: cockpit security, bug fix, and enhancement update",
-    "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-03T12:31:40.000Z",
-    "ingestedAt": "2026-11-03T22:43:54.611Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]
