@@ -1,5 +1,85 @@
 [
   {
+    "id": "https://arcticwolf.com/resources/news/a-chinese-spyware-tool-operates-in-13-countries-cyber-firm-says/",
+    "sourceUrl": "https://arcticwolf.com/resources/news/a-chinese-spyware-tool-operates-in-13-countries-cyber-firm-says/",
+    "title": "Chinese Spyware Tool Active in 13 Nations",
+    "headline": "Chinese Spyware Tool Active in 13 Nations",
+    "summary": "A Chinese spyware tool has been detected operating in 13 countries, according to a cyber‑security firm. The tool harvests credentials and exfiltrates data via covert channels, leveraging social engineering and compromised web services, but no public exploit or CVE is disclosed. Security teams should monitor outbound traffic, block known malicious domains, and apply multi‑factor authentication to mitigate data exfiltration.",
+    "category": "NATION_STATE",
+    "severity": "HIGH",
+    "source": "Arctic Wolf",
+    "publishedAt": "2026-11-06T21:00:19.000Z",
+    "ingestedAt": "2026-11-06T21:43:26.363Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://arcticwolf.com/resources/news/a-chinese-spyware-tool-operates-in-13-countries-cyber-firm-says/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://socket.dev/blog/rails-active-storage-patch",
+    "sourceUrl": "https://socket.dev/blog/rails-active-storage-patch",
+    "title": "Socket Releases Certified Patch for Rails Active Storage Vulnerability",
+    "headline": "Socket Releases Certified Patch for Rails Active Storage Vulnerability",
+    "summary": "Socket released a free Certified Patch for a critical Rails Active Storage flaw that could enable remote code execution via malformed file uploads. The vulnerability arises from improper input validation in Active Storage attachment handling, allowing attackers to inject malicious payloads without authentication. Upgrade to Rails 7.1 or later and apply the Socket patch immediately to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Socket.dev",
+    "publishedAt": "2026-11-06T20:40:46.426Z",
+    "ingestedAt": "2026-11-06T21:43:11.487Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://socket.dev/blog/rails-active-storage-patch",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/medical-services-company-settles-with-4-state-ags",
+    "sourceUrl": "https://therecord.media/medical-services-company-settles-with-4-state-ags",
+    "title": "Company Settles with Four States Over Patient Record Hack",
+    "headline": "Company Settles with Four States Over Patient Record Hack",
+    "summary": "Perry Johnson Companies settled with Connecticut, New Jersey, New York, and Michigan over a 2023 hack that exposed patient records. The breach accessed transcription, coding, and imaging subsidiaries, compromising personal health information but no financial data theft was reported. The settlement mandates enhanced security controls, regular penetration testing, and credit monitoring for affected patients.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Record",
+    "publishedAt": "2026-11-06T19:06:00.000Z",
+    "ingestedAt": "2026-11-06T21:43:26.363Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/medical-services-company-settles-with-4-state-ags",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/digicert-customer-data-ids-exposed",
+    "sourceUrl": "https://cybernewsai.com/blog/digicert-customer-data-ids-exposed",
+    "title": "DigiCert Exposes IDs and Customer Data",
+    "headline": "DigiCert Exposes IDs and Customer Data",
+    "summary": "A data exposure incident at DigiCert revealed customer IDs and personal data through an unsecured data store. The flaw stemmed from misconfigured access controls that allowed unauthenticated reads, exposing sensitive customer information. DigiCert has issued a remediation notice, urging customers to review access logs, apply the latest patch, and enforce strict IAM controls.",
+    "category": "BREACH",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-06T18:53:12.000Z",
+    "ingestedAt": "2026-11-06T21:43:32.919Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybernewsai.com/blog/digicert-customer-data-ids-exposed",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+    "title": "GitHub Security Projects Deliver Backdoor and Infostealer",
+    "headline": "GitHub Security Projects Deliver Backdoor and Infostealer",
+    "summary": "Infected security projects on GitHub are delivering backdoor and information stealer malware to targeted cybersecurity professionals. The malicious code is embedded in legitimate-looking tools, enabling attackers to establish remote persistence and exfiltrate credentials without user interaction. Security teams should verify the integrity of GitHub repositories, remove compromised packages, and enforce strict code review and dependency scanning.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-06T18:46:52.000Z",
+    "ingestedAt": "2026-11-06T21:43:11.488Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+    "additionalSources": []
+  },
+  {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
     "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
     "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
@@ -103,6 +183,38 @@
     "isFallback": true
   },
   {
+    "id": "https://socket.dev/blog/shai-hulud-descendant-malicious-ruby-gem",
+    "sourceUrl": "https://socket.dev/blog/shai-hulud-descendant-malicious-ruby-gem",
+    "title": "Malicious Ruby Gem Steals Credentials and Poison AI Tools",
+    "headline": "Malicious Ruby Gem Steals Credentials and Poison AI Tools",
+    "summary": "A malicious Ruby gem, a Shai‑Hulud descendant, installs during gem installation and steals user credentials. The worm poisons AI coding tools and can wipe files when a stolen GitHub token is revoked, but no public exploit or CVE is disclosed. Security teams should audit gem sources, remove the malicious package, and enforce strict dependency verification to prevent credential theft.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Socket.dev",
+    "publishedAt": "2026-11-06T17:11:11.050Z",
+    "ingestedAt": "2026-11-06T21:43:26.363Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://socket.dev/blog/shai-hulud-descendant-malicious-ruby-gem",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+    "title": "QNAP Warns of Plex2Shell Attacks on NAS Devices",
+    "headline": "QNAP Warns of Plex2Shell Attacks on NAS Devices",
+    "summary": "QNAP reports hackers breaching NAS devices by exploiting the Plex2Shell vulnerability chain in Plex Media Server. The flaw allows unauthenticated attackers to execute arbitrary commands through crafted media files, potentially compromising the underlying operating system. Users must update Plex Media Server to the latest QNAP App Center release and apply any vendor patches to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-06T17:04:23.000Z",
+    "ingestedAt": "2026-11-06T21:43:11.488Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/vercel-rolls-out-new-protection-against-stolen-session",
     "sourceUrl": "https://cybernewsai.com/blog/vercel-rolls-out-new-protection-against-stolen-session",
     "title": "Vercel Deploys Device‑Bound Sessions to Stop Cookie Theft",
@@ -186,6 +298,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://cybernewsai.com/blog/nikke-pc-game-launcher-hacked-to-spread-remote-access-d",
+    "sourceUrl": "https://cybernewsai.com/blog/nikke-pc-game-launcher-hacked-to-spread-remote-access-d",
+    "title": "NIKKE Launcher Distributed Remote Access Trojan via Script Tampering",
+    "headline": "NIKKE Launcher Distributed Remote Access Trojan via Script Tampering",
+    "summary": "The NIKKE PC game launcher suffered a script tampering attack that distributed an obfuscated remote access trojan and infostealer. The malicious scripts exploit the launcher’s trust model, enabling attackers to execute arbitrary code and exfiltrate user credentials without detection. Security teams should remove the compromised launcher, update to the latest official release, and monitor for unauthorized outbound connections.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-06T15:30:48.000Z",
+    "ingestedAt": "2026-11-06T21:43:11.488Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybernewsai.com/blog/nikke-pc-game-launcher-hacked-to-spread-remote-access-d",
+    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
@@ -504,10 +632,10 @@
   {
     "id": "https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/",
-    "title": "OpenSSH flaw exploited in the wild just hours after disclosure (CVE-2026-123158)",
-    "headline": "OpenSSH flaw exploited in the wild just hours after disclosure (CVE-2026-123158)",
-    "summary": "An OpenSSH flaw that lets remote attackers log into passwordless accounts on Alpine Linux and other musl-based systems is being exploited, threat intelligence firm Previdian has warned. The flaw (CVE-2026-123158), nicknamed sshole by Wakefield researcher Özgün Kültekin, was fixed in OpenSSH 10.6p2 on November 5. “An attacker who can reach your SSH port can log in without knowing any password.",
-    "category": "CVE",
+    "title": "Hackers Exploit OpenSSH SSHole Flaw, Gain Root on Honeypot",
+    "headline": "Hackers Exploit OpenSSH SSHole Flaw, Gain Root on Honeypot",
+    "summary": "Hackers exploited OpenSSH flaw CVE-2026-123158 to sign into passwordless accounts on musl‑based Linux with PAM disabled, achieving root on a honeypot. The SSHole vulnerability scores CVSS 8.1, enabling unauthenticated remote code execution by bypassing authentication when PAM is off. No patch has been issued; operators should monitor advisories and disable passwordless logins until a fix arrives.",
+    "category": "VULNERABILITY",
     "severity": "HIGH",
     "source": "Help Net Security",
     "publishedAt": "2026-11-06T12:49:41.000Z",
@@ -517,7 +645,12 @@
     "cves": [
       "CVE-2026-123158"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html"
+      }
+    ],
     "isFallback": true
   },
   {
@@ -630,6 +763,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "title": "CISA Adds SonicWall SSLVPN Vulnerability to KEV Catalog",
+    "headline": "CISA Adds SonicWall SSLVPN Vulnerability to KEV Catalog",
+    "summary": "CISA added CVE-2026-19868, a SonicWall SSLVPN single‑factor flaw, to its KEV catalog after active exploitation. The flaw lets attackers bypass authentication on SSLVPN endpoints, granting full control over exposed assets. Federal agencies must apply patches or disable SSLVPN per BOD 26‑04 until a vendor fix arrives and monitor advisories for updates.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "publishedAt": "2026-11-06T12:00:00.000Z",
+    "ingestedAt": "2026-11-06T21:43:20.769Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
     "additionalSources": []
   },
   {
@@ -4010,9 +4159,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
-    "title": "DreamHost Breach Exposes Customer Credentials and Emails",
-    "headline": "DreamHost Breach Exposes Customer Credentials and Emails",
-    "summary": "DreamHost confirmed a breach that exposed customer login details after attackers exploited its File Manager on October 23, 2026. The incident yielded FTP/SFTP usernames and passwords, webmail credentials, and in limited cases, private mailbox contents, compromising user accounts and sensitive data. DreamHost advised customers to change passwords, enable two‑factor authentication, and monitor accounts for suspicious activity while investigating the breach.",
+    "title": "DreamHost Exposes FTP Logins and Webmail Credentials",
+    "headline": "DreamHost Exposes FTP Logins and Webmail Credentials",
+    "summary": "DreamHost has disclosed that FTP login credentials and webmail accounts were exposed due to access controls, according to a security alert. The exposure allows attackers to authenticate to user accounts and exfiltrate sensitive data, but no evidence of active exploitation or data theft has been reported. DreamHost recommends users change passwords, enable two‑factor authentication, and review logs to detect access.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -4025,6 +4174,10 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/dreamhost-confirms-data-breach/"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/dreamhost-confirms-data-breach-exposed-ftp-logins-and-w"
       }
     ]
   },
@@ -8155,167 +8308,5 @@
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/03/assured-data-protection-cleanroom-scan/",
     "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/artex-ai-automate-enterprise-attacks/",
-    "sourceUrl": "https://cybersecuritynews.com/artex-ai-automate-enterprise-attacks/",
-    "title": "ARTEX AI Automates Enterprise Attacks at Machine Speed",
-    "headline": "ARTEX AI Automates Enterprise Attacks at Machine Speed",
-    "summary": "Attackers employ the ARTEX AI framework to accelerate credential‑based attacks, enabling rapid cloud privilege escalation, lateral movement, and data exfiltration. Recent campaigns demonstrate the framework’s ability to automate complex intrusion stages in minutes, raising concerns for organizations relying on traditional detection methods. Defenders should adopt AI‑aware monitoring, enforce strict credential hygiene, and update detection rules to counter ARTEX‑driven attacks.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-03T13:58:16.000Z",
-    "ingestedAt": "2026-11-03T16:43:15.030Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/artex-ai-automate-enterprise-attacks/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://research.checkpoint.com/2026/free-the-model-sell-the-gateway-prompt-adware-hidden-in-jailbreak-bundles/",
-    "sourceUrl": "https://research.checkpoint.com/2026/free-the-model-sell-the-gateway-prompt-adware-hidden-in-jailbreak-bundles/",
-    "title": "Cobalt Strike Server Compromises Chinese Users' PCs",
-    "headline": "Cobalt Strike Server Compromises Chinese Users' PCs",
-    "summary": "A misconfigured webserver operated by a threat actor running Cobalt Strike exposed an open server that logged compromises of private computers belonging to Chinese-speaking users. The insecure configuration allowed attackers to execute arbitrary code, exfiltrate credentials, and access sensitive files. Teams should secure the server, enforce strict access controls, and monitor logs for anomalous activity.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Check Point Research",
-    "publishedAt": "2026-11-03T13:57:04.000Z",
-    "ingestedAt": "2026-11-03T22:43:35.771Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://research.checkpoint.com/2026/free-the-model-sell-the-gateway-prompt-adware-hidden-in-jailbreak-bundles/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:93618",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93618",
-    "title": "Red Hat Releases JBoss 7.0.3 Update to Fix Critical CVE‑2026‑98432 Remote Code Execution Vulnerability",
-    "headline": "Red Hat Releases JBoss 7.0.3 Update to Fix Critical CVE‑2026‑98432 Remote Code Execution Vulnerability",
-    "summary": "Red Hat released a JBoss Web Server 7.0.3 update for RHEL 8, 9, 10, and Windows Server to fix the critical CVE‑2026‑98432 remote code execution flaw. The flaw let unauthenticated attackers parse malicious HTTP requests and run arbitrary code with system privileges, risking full server compromise. Admins should apply the patch immediately, confirm mitigation, and monitor for anomalous activity.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-03T13:52:32.000Z",
-    "ingestedAt": "2026-11-03T22:43:27.086Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:93618",
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:93622"
-      }
-    ],
-    "cves": [
-      "CVE-2026-98432"
-    ]
-  },
-  {
-    "id": "https://therecord.media/russia-dismantles-vasygrek-infrastructure-detains-three",
-    "sourceUrl": "https://therecord.media/russia-dismantles-vasygrek-infrastructure-detains-three",
-    "title": "Russia Disrupts VasyGrek Cybercrime Group",
-    "headline": "Russia Disrupts VasyGrek Cybercrime Group",
-    "summary": "Russia's Interior Ministry dismantled the infrastructure of the VasyGrek cybercrime group following a joint investigation with cybersecurity firm Kaspersky. Three suspects were detained as part of the operation targeting the organized criminal network. The enforcement action represents a significant disruption to the group's operational capacity and financial infrastructure.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-11-03T13:50:00.000Z",
-    "ingestedAt": "2026-11-03T20:44:57.533Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/russia-dismantles-vasygrek-infrastructure-detains-three",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8969-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8969-1",
-    "title": "Bind DNS Multiple Denial-of-Service Vulnerabilities Patched",
-    "headline": "Bind DNS Multiple Denial-of-Service Vulnerabilities Patched",
-    "summary": "It was discovered that Bind incorrectly handled certain DNS messages with repeated singleton records such as SOA, CNAME, or DNAME records. A remote attacker could possibly use this issue to cause Bind to use excessive memory, leading to a denial of service. This issue only affected Ubuntu 26.10. (CVE-2026-75029). It was discovered that Bind incorrectly handled cached DNSSEC proofs.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-03T13:45:46.000Z",
-    "ingestedAt": "2026-11-03T18:45:22.589Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-8969-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:94523",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94523",
-    "title": "Fence-Agents Critical Security Update",
-    "headline": "Fence-Agents Critical Security Update",
-    "summary": "Red Hat released a critical security update for the fence-agents component on RHEL 9.6 Extended Update Support, addressing a high‑impact vulnerability. The update mitigates an unauthenticated remote code execution flaw that could allow attackers to gain system control, though no CVE ID is publicly disclosed. Administrators should apply the fence-agents patch immediately to prevent exploitation of the vulnerability.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-03T13:40:19.000Z",
-    "ingestedAt": "2026-11-03T23:43:11.284Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:94523",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/russia-linked-cyber-spies-target-ukraine-war-support",
-    "sourceUrl": "https://therecord.media/russia-linked-cyber-spies-target-ukraine-war-support",
-    "title": "Russia-Linked Spies Target Ukrainian War Crimes Data",
-    "headline": "Russia-Linked Spies Target Ukrainian War Crimes Data",
-    "summary": "Russian‑linked actors deployed simple malware to exfiltrate sensitive documents and login credentials from Ukrainian war‑crimes investigators and military aid entities. The attacks relied on credential theft rather than a zero‑day flaw, limiting impact to compromised accounts and confidential records. Teams should enforce MFA, monitor anomalous logins, and apply vendor patches to prevent further exfiltration.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-11-03T13:39:00.000Z",
-    "ingestedAt": "2026-11-03T14:44:50.501Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/russia-linked-cyber-spies-target-ukraine-war-support",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
-    "title": "Police Seize 100+ Servers in European Investment Fraud Crackdown",
-    "headline": "Police Seize 100+ Servers in European Investment Fraud Crackdown",
-    "summary": "Police seized over 100 servers used by a European investment fraud network targeting online trading platform users. The operation disrupted the scheme, preventing victims from withdrawing profits and exposing sensitive financial data, with losses exceeding four million euros. Seven suspects were arrested, the infrastructure dismantled, and authorities urged affected users to monitor accounts and update security practices.",
-    "category": "GENERAL",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-03T13:33:49.000Z",
-    "ingestedAt": "2026-11-03T13:44:54.582Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/investment-fraud-network-servers-seized/"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/germany-busts-crime-as-a-service-investment-fraud-outfi"
-      }
-    ]
-  },
-  {
-    "id": "https://cybersecuritynews.com/renault-cars/",
-    "sourceUrl": "https://cybersecuritynews.com/renault-cars/",
-    "title": "Renault Car’s 15-Year-Old Linux Navigation Software Hacked to Execute Arbitrary Root Commands",
-    "headline": "Renault Car’s 15-Year-Old Linux Navigation Software Hacked to Execute Arbitrary Root Commands",
-    "summary": "A security researcher has found a way to run any command with root rights on the navigation unit in a 2014 Renault Latitude. The unit is a TomTom Carminat LIVE head unit that runs a custom system built on Linux 2.6.28.10.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-03T13:10:24.000Z",
-    "ingestedAt": "2026-11-03T14:45:40.133Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]
