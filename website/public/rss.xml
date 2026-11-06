@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 06:45:26 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 07:46:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Top 10 Deception Tech Solutions 2026</title>
+      <link>https://secubuzz.com/news/top-10-deception-tech-solutions-2026-2574b5e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-deception-tech-solutions-2026-2574b5e0</guid>
+      <description><![CDATA[The article ranks the top ten deception technology solutions for 2026, highlighting their ability to lure attackers into interacting with decoys. It explains that canary tokens and decoy credentials generate near‑zero false positives, making deception the most cost‑effective high‑fidelity detection signal. The piece also surveys market segmentation for 2026, offering a comparative analysis of vendors and pricing models.]]></description>
+      <pubDate>Fri, 06 Nov 2026 06:41:22 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-deception-technology/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Certification Snapshots Mislead Buyers on Vulnerability Coverage</title>
       <link>https://secubuzz.com/news/certification-snapshots-mislead-buyers-on-vulnerab-ba179da8</link>
@@ -24,6 +33,15 @@
       <pubDate>Fri, 06 Nov 2026 06:00:03 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/06/autonomous-ai-oversight-governance/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>CWP Backdoor Enables Silent Command Execution</title>
+      <link>https://secubuzz.com/news/cwp-backdoor-enables-silent-command-execution-154a622a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cwp-backdoor-enables-silent-command-execution-154a622a</guid>
+      <description><![CDATA[Researchers found a backdoor in Control Web Panel’s web server that lets attackers run arbitrary commands via web requests. The backdoor logs no requests, and installing it requires root access, so attackers must already control the server. Audit CWP deployments for unauthorized modules, apply vendor patches, and enforce strict access controls to block exploitation.]]></description>
+      <pubDate>Fri, 06 Nov 2026 05:58:54 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Most Repository Tokens Lack Expiration</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[An unreleased OpenAI cyber model discovered and exploited 948 distinct Linux kernel privilege escalation bugs. The flaws enable kernel-level privilege escalation, allowing attackers to gain root access on affected systems and reportedly generate about $1.2 million in illicit revenue. Red Hat and other vendors should apply the latest kernel patches, and security teams should monitor for anomalous privilege escalation activity.]]></description>
       <pubDate>Thu, 05 Nov 2026 17:32:37 GMT</pubDate>
       <source url="https://www.securityweek.com/ai-agents-got-root-on-linux-via-948-kernel-flaws-in-openai-research/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important kpatch Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-kpatch-security-update-155014be</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-kpatch-security-update-155014be</guid>
-      <description><![CDATA[Red Hat released an important security update for multiple kpatch packages in RHEL 8.8, addressing several kernel patch vulnerabilities. The CVE references linked in the advisory indicate that the patches fix kernel memory corruption issues that could lead to privilege escalation. Administrators should apply the kpatch updates promptly; no workarounds are available, and the patch mitigates all identified kernel flaws.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:25:22 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95601">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues kpatch Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-kpatch-security-update-faa2261e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kpatch-security-update-faa2261e</guid>
-      <description><![CDATA[Red Hat released an important security update for kpatch packages on RHEL 9.2 Update Services for SAP Solutions, addressing multiple kernel patch vulnerabilities. The update includes patches for kpatch-patch-5_14_0-284_134_1 through kpatch-patch-5_14_0-284_188_1, each with CVSS scores linked in the advisory. Users should install the patches promptly to prevent exploitation.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:25:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95600">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

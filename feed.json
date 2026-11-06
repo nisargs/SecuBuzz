@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/best-deception-technology/",
+    "sourceUrl": "https://cybersecuritynews.com/best-deception-technology/",
+    "title": "Top 10 Deception Tech Solutions 2026",
+    "headline": "Top 10 Deception Tech Solutions 2026",
+    "summary": "The article ranks the top ten deception technology solutions for 2026, highlighting their ability to lure attackers into interacting with decoys. It explains that canary tokens and decoy credentials generate near‑zero false positives, making deception the most cost‑effective high‑fidelity detection signal. The piece also surveys market segmentation for 2026, offering a comparative analysis of vendors and pricing models.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-06T06:41:22.000Z",
+    "ingestedAt": "2026-11-06T07:43:10.857Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/best-deception-technology/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/06/mariia-bakhtina-masaryk-university-security-certification/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/mariia-bakhtina-masaryk-university-security-certification/",
     "title": "Certification Snapshots Mislead Buyers on Vulnerability Coverage",
@@ -29,6 +45,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/06/autonomous-ai-oversight-governance/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+    "title": "CWP Backdoor Enables Silent Command Execution",
+    "headline": "CWP Backdoor Enables Silent Command Execution",
+    "summary": "Researchers found a backdoor in Control Web Panel’s web server that lets attackers run arbitrary commands via web requests. The backdoor logs no requests, and installing it requires root access, so attackers must already control the server. Audit CWP deployments for unauthorized modules, apply vendor patches, and enforce strict access controls to block exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-06T05:58:54.000Z",
+    "ingestedAt": "2026-11-06T07:43:10.857Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
     "additionalSources": []
   },
   {
@@ -2630,6 +2662,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/05/okta-ai-customer-experiences-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.huntress.com/blog/itdr-adversary-infrastructure",
+    "sourceUrl": "https://www.huntress.com/blog/itdr-adversary-infrastructure",
+    "title": "Huntress ITDR Blocks M365 Sign‑In Attacks",
+    "headline": "Huntress ITDR Blocks M365 Sign‑In Attacks",
+    "summary": "Huntress introduced a Managed ITDR feature called Adversary Infrastructure that intercepts attacker activity during Microsoft 365 sign‑in events. The feature transforms a single tenant’s compromise into fleet‑wide protection by blocking malicious sign‑ins across the organization. Security teams should enable the feature, monitor blocked attempts, and integrate alerts with existing SIEM solutions for comprehensive visibility.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Huntress",
+    "publishedAt": "2026-11-05T05:00:00.000Z",
+    "ingestedAt": "2026-11-06T07:43:10.857Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.huntress.com/blog/itdr-adversary-infrastructure",
     "additionalSources": []
   },
   {
@@ -5773,6 +5821,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://developer.apple.com/news/releases/?id=11032026h",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026h",
+    "title": "Apple Issues TestFlight Security Update",
+    "headline": "Apple Issues TestFlight Security Update",
+    "summary": "Apple has issued a TestFlight update through its official security updates channel. The accompanying advisory provides no technical details regarding addressed vulnerabilities or exploit vectors, only referencing release notes. Organizations using TestFlight should immediately review the release notes and apply the update to ensure they receive any potential security improvements.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "publishedAt": "2026-11-03T21:00:00.000Z",
+    "ingestedAt": "2026-11-06T07:43:58.603Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://developer.apple.com/news/releases/?id=11032026h",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council",
     "sourceUrl": "https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council",
     "title": "Gorbag APT Self‑Deleting Malware Detection Guide",
@@ -6587,9 +6651,9 @@
   {
     "id": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
     "sourceUrl": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
-    "title": "Barracuda Vulnerabilities Chain to Root Access",
-    "headline": "Barracuda Vulnerabilities Chain to Root Access",
-    "summary": "Barracuda disclosed two vulnerabilities that, when chained, allow an attacker to bypass authorization and gain root on affected devices. The pre‑authentication bypass and command injection flaws, identified as CVE‑2026‑116606 with a CVSS score of 9.3, enable unauthenticated remote code execution. Apply the vendor‑issued patch immediately; no workarounds exist, and monitor for privilege escalation anomalies.",
+    "title": "Barracuda Email Gateway Root Access Exploit Chain (CVE‑2026‑116606)",
+    "headline": "Barracuda Email Gateway Root Access Exploit Chain (CVE‑2026‑116606)",
+    "summary": "Barracuda disclosed a chained exploit in its Email Security Gateway that grants unauthenticated root access to the appliance. The chain combines an authorization bypass (CVE‑2026‑116606) with a command injection flaw, enabling remote code execution and full device compromise. Vendor patches were released; organizations must apply them immediately and verify that unauthenticated requests are rejected to mitigate the risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
@@ -6598,7 +6662,15 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html"
+      }
+    ],
+    "cves": [
+      "CVE-2026-116606"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/hackers-use-ai-agents-2/",
@@ -8225,70 +8297,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/hackers-use-malicious-vhdx-files/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/03/kara-sprague-hackerone-ai-bug-bounty/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/kara-sprague-hackerone-ai-bug-bounty/",
-    "title": "Human Hackers Outperform AI in Business Logic Assessment",
-    "headline": "Human Hackers Outperform AI in Business Logic Assessment",
-    "summary": "Kara Sprague, HackerOne CEO, said AI finds bugs fast, but humans better assess business impact and prioritize. She noted medium‑severity findings often pay less, and AI‑assisted reports need human triage to filter spam and ensure relevance. HackerOne blends AI detection with human judgment to enhance security outcomes and reward alignment.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-03T06:30:36.000Z",
-    "ingestedAt": "2026-11-03T06:43:07.683Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/03/kara-sprague-hackerone-ai-bug-bounty/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/bydfis-up-to-8100-usdt-welcome-rewards-a-security-first-guide-for-new-users/",
-    "sourceUrl": "https://cybersecuritynews.com/bydfis-up-to-8100-usdt-welcome-rewards-a-security-first-guide-for-new-users/",
-    "title": "BYDFi Revamp Unifies Rewards Hub, Offers 8,100 USDT",
-    "headline": "BYDFi Revamp Unifies Rewards Hub, Offers 8,100 USDT",
-    "summary": "BYDFi’s platform upgrade consolidates campaigns, tasks, and reward claims into a single Rewards Hub, letting new users claim welcome rewards up to 8,100 USDT. The security perspective frames the onboarding window where an account shifts from empty to active, highlighting potential credential exposure. Users should verify account activity, enable MFA, and monitor for suspicious transactions during the initial claim period.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-03T06:03:30.000Z",
-    "ingestedAt": "2026-11-03T06:43:17.270Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/bydfis-up-to-8100-usdt-welcome-rewards-a-security-first-guide-for-new-users/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/",
-    "title": "Sweet Virtual Patching Mitigates HTTP2Shell RCE",
-    "headline": "Sweet Virtual Patching Mitigates HTTP2Shell RCE",
-    "summary": "HTTP2Shell (CVE-2026-111497) is a remote code execution flaw in Brotli used by Node.js, Bun, Envoy, Python, discovered by OpenAI agents. The flaw lets attackers inject malformed Brotli streams, triggering a decoder crash that enables unauthenticated code execution with a CVSS of 9.8.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-03T06:00:18.000Z",
-    "ingestedAt": "2026-11-03T06:43:07.682Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-862/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-862/",
-    "title": "Quest Foglight XML External Entity Disclosure Vulnerability",
-    "headline": "Quest Foglight XML External Entity Disclosure Vulnerability",
-    "summary": "A remote information‑disclosure flaw in Quest Foglight for Databases’ AbstractParser lets attackers read sensitive data via XML External Entity processing. CVE-2026-92185 carries a CVSS 7.2 score, requires no authentication, and can expose configuration files and internal credentials. Quest has issued a patch disabling external entity processing; administrators should apply it immediately to stop data leakage.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "ingestedAt": "2026-11-04T01:38:30.307Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-862/",
     "additionalSources": []
   }
 ]

@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "top-10-deception-tech-solutions-2026-2574b5e0",
+    "title": "Top 10 Deception Tech Solutions 2026",
+    "summary": "The article ranks the top ten deception technology solutions for 2026, highlighting their ability to lure attackers into interacting with decoys. It explains that canary tokens and decoy credentials generate near‑zero false positives, making deception the most cost‑effective high‑fidelity detection signal. The piece also surveys market segmentation for 2026, offering a comparative analysis of vendors and pricing models.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-deception-technology/",
+    "publishedAt": "2026-11-06T06:41:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-deception-tech-solutions-2026",
+      "article-2574b5e0",
+      "2574b5e0",
+      "top-10-deception-tech-solutions-2026-36bbbe"
+    ]
+  },
+  {
     "slug": "certification-snapshots-mislead-buyers-on-vulnerab-ba179da8",
     "title": "Certification Snapshots Mislead Buyers on Vulnerability Coverage",
     "summary": "Research shows Common Criteria and FIPS-140 certifications do not guarantee ongoing security, with 60% of vulnerabilities in certified products disclosed post-certification. The certifications represent a point-in-time assessment, leaving gaps as new flaws emerge after evaluation. Buyers should demand continuous vulnerability monitoring and use open-source tools like sec-certs and SCRUTINY for ongoing validation.",
@@ -46,6 +64,24 @@ export const news: NewsBrief[] = [
       "0dee2eb5",
       "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
       "survey-reveals-87-demand-stronger-ai-control-mechanisms"
+    ]
+  },
+  {
+    "slug": "cwp-backdoor-enables-silent-command-execution-154a622a",
+    "title": "CWP Backdoor Enables Silent Command Execution",
+    "summary": "Researchers found a backdoor in Control Web Panel’s web server that lets attackers run arbitrary commands via web requests. The backdoor logs no requests, and installing it requires root access, so attackers must already control the server. Audit CWP deployments for unauthorized modules, apply vendor patches, and enforce strict access controls to block exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+    "publishedAt": "2026-11-06T05:58:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cwp-backdoor-enables-silent-command-execution",
+      "article-154a622a",
+      "154a622a",
+      "cwp-backdoor-enables-silent-command-execution-41868e"
     ]
   },
   {
@@ -3004,6 +3040,24 @@ export const news: NewsBrief[] = [
       "fcd1538d",
       "consumers-unwilling-to-let-ai-agents-shop-unsuperv-1679dc",
       "consumers-unwilling-to-let-ai-agents-shop-unsupervised"
+    ]
+  },
+  {
+    "slug": "huntress-itdr-blocks-m365-sign-in-attacks-89cfa108",
+    "title": "Huntress ITDR Blocks M365 Sign‑In Attacks",
+    "summary": "Huntress introduced a Managed ITDR feature called Adversary Infrastructure that intercepts attacker activity during Microsoft 365 sign‑in events. The feature transforms a single tenant’s compromise into fleet‑wide protection by blocking malicious sign‑ins across the organization. Security teams should enable the feature, monitor blocked attempts, and integrate alerts with existing SIEM solutions for comprehensive visibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/itdr-adversary-infrastructure",
+    "publishedAt": "2026-11-05T05:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "huntress-itdr-blocks-m365-sign-in-attacks",
+      "article-89cfa108",
+      "89cfa108",
+      "huntress-itdr-blocks-m365-sign-in-attacks-5d9461"
     ]
   },
   {
@@ -6650,6 +6704,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-issues-testflight-security-update-df7722d8",
+    "title": "Apple Issues TestFlight Security Update",
+    "summary": "Apple has issued a TestFlight update through its official security updates channel. The accompanying advisory provides no technical details regarding addressed vulnerabilities or exploit vectors, only referencing release notes. Organizations using TestFlight should immediately review the release notes and apply the update to ensure they receive any potential security improvements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026h",
+    "publishedAt": "2026-11-03T21:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-issues-testflight-security-update",
+      "article-df7722d8",
+      "df7722d8",
+      "apple-issues-testflight-security-update-66bdb2"
+    ]
+  },
+  {
     "slug": "gorbag-apt-self-deleting-malware-detection-guide-217b96d7",
     "title": "Gorbag APT Self‑Deleting Malware Detection Guide",
     "summary": "Gorbag APT has deployed self‑deleting malware delivered via spearphishing campaigns targeting corporate email users. The malware erases its own code after execution, evading traditional signature‑based detection and allowing attackers to maintain persistence without leaving forensic footprints. Security teams should monitor for anomalous email attachments, enable advanced threat protection, and apply the latest email gateway updates to block known Gorbag indicators.",
@@ -7586,21 +7658,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "barracuda-vulnerabilities-chain-to-root-access-60b95613",
-    "title": "Barracuda Vulnerabilities Chain to Root Access",
-    "summary": "Barracuda disclosed two vulnerabilities that, when chained, allow an attacker to bypass authorization and gain root on affected devices. The pre‑authentication bypass and command injection flaws, identified as CVE‑2026‑116606 with a CVSS score of 9.3, enable unauthenticated remote code execution. Apply the vendor‑issued patch immediately; no workarounds exist, and monitor for privilege escalation anomalies.",
+    "slug": "barracuda-email-gateway-root-access-exploit-chain-0040aafa",
+    "title": "Barracuda Email Gateway Root Access Exploit Chain (CVE‑2026‑116606)",
+    "summary": "Barracuda disclosed a chained exploit in its Email Security Gateway that grants unauthenticated root access to the appliance. The chain combines an authorization bypass (CVE‑2026‑116606) with a command injection flaw, enabling remote code execution and full device compromise. Vendor patches were released; organizations must apply them immediately and verify that unauthenticated requests are rejected to mitigate the risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
     "publishedAt": "2026-11-03T15:59:19.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html"
+      }
+    ],
     "aliases": [
-      "barracuda-vulnerabilities-chain-to-root-access",
-      "article-60b95613",
-      "60b95613",
-      "barracuda-vulnerabilities-chain-to-root-access-5c1e49"
+      "barracuda-email-gateway-root-access-exploit-chain",
+      "article-0040aafa",
+      "0040aafa",
+      "barracuda-email-gateway-root-access-exploit-chain-5c1e49",
+      "barracuda-email-gateway-root-access-exploit-chain-cve-2026-1"
     ]
   },
   {
@@ -9459,84 +9537,6 @@ export const news: NewsBrief[] = [
       "article-544374d8",
       "544374d8",
       "hackers-deploy-paprat-via-vhdx-and-webdav-links-1049ca"
-    ]
-  },
-  {
-    "slug": "human-hackers-outperform-ai-in-business-logic-asse-f8d053d9",
-    "title": "Human Hackers Outperform AI in Business Logic Assessment",
-    "summary": "Kara Sprague, HackerOne CEO, said AI finds bugs fast, but humans better assess business impact and prioritize. She noted medium‑severity findings often pay less, and AI‑assisted reports need human triage to filter spam and ensure relevance. HackerOne blends AI detection with human judgment to enhance security outcomes and reward alignment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/kara-sprague-hackerone-ai-bug-bounty/",
-    "publishedAt": "2026-11-03T06:30:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "human-hackers-outperform-ai-in-business-logic-asse",
-      "article-f8d053d9",
-      "f8d053d9",
-      "human-hackers-outperform-ai-in-business-logic-asse-433d13",
-      "human-hackers-outperform-ai-in-business-logic-assessment"
-    ]
-  },
-  {
-    "slug": "bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt-3bb753eb",
-    "title": "BYDFi Revamp Unifies Rewards Hub, Offers 8,100 USDT",
-    "summary": "BYDFi’s platform upgrade consolidates campaigns, tasks, and reward claims into a single Rewards Hub, letting new users claim welcome rewards up to 8,100 USDT. The security perspective frames the onboarding window where an account shifts from empty to active, highlighting potential credential exposure. Users should verify account activity, enable MFA, and monitor for suspicious transactions during the initial claim period.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/bydfis-up-to-8100-usdt-welcome-rewards-a-security-first-guide-for-new-users/",
-    "publishedAt": "2026-11-03T06:03:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt",
-      "article-3bb753eb",
-      "3bb753eb",
-      "bydfi-revamp-unifies-rewards-hub-offers-8-100-usdt-621df1"
-    ]
-  },
-  {
-    "slug": "sweet-virtual-patching-mitigates-http2shell-rce-abf28543",
-    "title": "Sweet Virtual Patching Mitigates HTTP2Shell RCE",
-    "summary": "HTTP2Shell (CVE-2026-111497) is a remote code execution flaw in Brotli used by Node.js, Bun, Envoy, Python, discovered by OpenAI agents. The flaw lets attackers inject malformed Brotli streams, triggering a decoder crash that enables unauthenticated code execution with a CVSS of 9.8.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/",
-    "publishedAt": "2026-11-03T06:00:18.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "sweet-virtual-patching-mitigates-http2shell-rce",
-      "article-abf28543",
-      "abf28543",
-      "sweet-virtual-patching-mitigates-http2shell-rce-40222c"
-    ]
-  },
-  {
-    "slug": "quest-foglight-xml-external-entity-disclosure-vuln-ab171ef5",
-    "title": "Quest Foglight XML External Entity Disclosure Vulnerability",
-    "summary": "A remote information‑disclosure flaw in Quest Foglight for Databases’ AbstractParser lets attackers read sensitive data via XML External Entity processing. CVE-2026-92185 carries a CVSS 7.2 score, requires no authentication, and can expose configuration files and internal credentials. Quest has issued a patch disabling external entity processing; administrators should apply it immediately to stop data leakage.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-862/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92185"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-xml-external-entity-disclosure-vuln",
-      "article-ab171ef5",
-      "ab171ef5",
-      "quest-foglight-xml-external-entity-disclosure-vuln-6f3caa",
-      "quest-foglight-xml-external-entity-disclosure-vulnerability"
     ]
   }
 ];
