@@ -11,6 +11,45 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-paint-zero-click-cve-2026-83844-enables-24fc4a3f",
+    "title": "Microsoft Paint Zero-Click CVE-2026-83844 Enables Remote Code Execution",
+    "summary": "Microsoft’s Windows Paint is vulnerable to a zero-click flaw that lets unauthenticated attackers execute code remotely without user interaction. Identified as CVE-2026-83844, the flaw scores 8.1 on CVSS, classifying it as high severity and enabling remote code execution. Microsoft has issued an updated Paint build; administrators should verify the corrected version and apply the patch to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/windows-paint-rce-vulnerability/",
+    "publishedAt": "2026-11-06T00:58:05.000Z",
+    "cves": [
+      "CVE-2026-83844"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-paint-zero-click-cve-2026-83844-enables",
+      "article-24fc4a3f",
+      "24fc4a3f",
+      "microsoft-paint-zero-click-cve-2026-83844-enables-462017",
+      "microsoft-paint-zero-click-cve-2026-83844-enables-remote-cod"
+    ]
+  },
+  {
+    "slug": "fbi-cisa-warn-of-refrigeration-system-cyberattacks-a6450a23",
+    "title": "FBI, CISA Warn of Refrigeration System Cyberattacks",
+    "summary": "The FBI and CISA have issued a warning that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide. These attacks could cause food spoilage, equipment damage, and fire hazards by exploiting vulnerabilities in control software or network interfaces. Security teams should harden refrigeration network segments, apply vendor patches, and monitor for anomalous traffic to mitigate potential compromise.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/",
+    "publishedAt": "2026-11-06T00:56:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-cisa-warn-of-refrigeration-system-cyberattacks",
+      "article-a6450a23",
+      "a6450a23",
+      "fbi-cisa-warn-of-refrigeration-system-cyberattacks-d6495b"
+    ]
+  },
+  {
     "slug": "red-hat-releases-bind-security-update-6b2a8ce1",
     "title": "Red Hat Releases Bind Security Update",
     "summary": "Red Hat released a bind security and bug‑fix update for RHEL 7 ELS, targeting the DNS server. The update is rated Important, with CVSS scores for each referenced CVE, indicating high‑severity flaws. Apply the patch via standard RHEL repositories; no workarounds are listed, and the update fixes security and functional issues.",
@@ -26,6 +65,42 @@ export const news: NewsBrief[] = [
       "article-6b2a8ce1",
       "6b2a8ce1",
       "red-hat-releases-bind-security-update-37d83a"
+    ]
+  },
+  {
+    "slug": "chrome-158-released-for-android-users-31f86bd0",
+    "title": "Chrome 158 Released for Android Users",
+    "summary": "Google released Chrome 158 (158.0.8127.22) for Android to a limited user cohort. The update focuses on stability and performance enhancements, with no security vulnerabilities disclosed. The patch will roll out via Google Play over the next few days, and users are encouraged to report issues through the bug‑tracking system.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0698823948.html",
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-158-released-for-android-users",
+      "article-31f86bd0",
+      "31f86bd0",
+      "chrome-158-released-for-android-users-3ec9f2"
+    ]
+  },
+  {
+    "slug": "ai-tooling-used-to-harvest-oauth-secrets-b5c0117b",
+    "title": "AI Tooling Used to Harvest OAuth Secrets",
+    "summary": "Microsoft Threat Intelligence reports that attackers employ the ARTEX agentic AI framework to scan GitHub for exposed OAuth application secrets. Compromised OAuth apps enable attackers to perform authenticated actions within the victim tenant, potentially escalating privileges or exfiltrating data. Security teams should audit exposed secrets, rotate credentials, and enable multi‑factor authentication to mitigate this automated threat.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+    "publishedAt": "2026-11-05T23:46:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-tooling-used-to-harvest-oauth-secrets",
+      "article-b5c0117b",
+      "b5c0117b",
+      "ai-tooling-used-to-harvest-oauth-secrets-1c28cc"
     ]
   },
   {
@@ -87,6 +162,42 @@ export const news: NewsBrief[] = [
       "article-d750eb48",
       "d750eb48",
       "queens-library-ransomware-disrupts-wi-fi-computers-724a42"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-goose-update-for-rhel-10-2-1e87cce5",
+    "title": "Red Hat Releases Goose Update for RHEL 10.2",
+    "summary": "Red Hat has issued an important security update for the 'goose' package on Red Hat Enterprise Linux 10.2. The update fixes vulnerabilities rated Important, with CVSS scores between 7.0 and 8.9, and CVE IDs are listed in the references. Administrators should install the update promptly and verify that the 'goose' package is at the patched version to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95724",
+    "publishedAt": "2026-11-05T22:07:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-goose-update-for-rhel-10-2",
+      "article-1e87cce5",
+      "1e87cce5",
+      "red-hat-releases-goose-update-for-rhel-10-2-37d83a"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-goose-update-for-rhel-9-8-5826942c",
+    "title": "Red Hat Releases Goose Update for RHEL 9.8",
+    "summary": "Red Hat has issued an important security update for the 'goose' package on Red Hat Enterprise Linux 9.8. The update addresses vulnerabilities rated Important, with CVSS scores between 7.0 and 8.9, and CVE IDs are listed in the references. Administrators should apply the update immediately and confirm the 'goose' package is at the patched version to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95723",
+    "publishedAt": "2026-11-05T22:07:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-goose-update-for-rhel-9-8",
+      "article-5826942c",
+      "5826942c",
+      "red-hat-releases-goose-update-for-rhel-9-8-37d83a"
     ]
   },
   {
@@ -348,6 +459,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-apache-camel-4-18-for-quarkus-3-33-810b4582",
+    "title": "Red Hat Updates Apache Camel 4.18 for Quarkus 3.33",
+    "summary": "Red Hat released an update for its build of Apache Camel 4.18 on Quarkus 3.33, addressing security and stability issues. The update incorporates code changes that mitigate injection flaws and improve input validation, reducing the risk of unauthorized data exposure. Security teams should deploy RHBQ 3.33.4.SP3 immediately to maintain application integrity and prevent exploitation of identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95622",
+    "publishedAt": "2026-11-05T19:09:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-apache-camel-4-18-for-quarkus-3-33",
+      "article-810b4582",
+      "810b4582",
+      "red-hat-updates-apache-camel-4-18-for-quarkus-3-33-37d83e"
+    ]
+  },
+  {
     "slug": "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-a9042345",
     "title": "Bring a tent, I've got the coffee: Lessons from it-sa",
     "summary": "Thorsten may have had to camp out in Nuremberg to attend it-sa, but the real story is the initiative to add a formal IT Security apprenticeship program in Germany for the thousands of young hackers ready to join our side.",
@@ -382,6 +511,24 @@ export const news: NewsBrief[] = [
       "article-61fef2cb",
       "61fef2cb",
       "apt29-targets-mobile-users-via-watering-hole-sites-37e96e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-update-for-openjdk-11-0-33-0ee204a7",
+    "title": "Red Hat Issues Critical Update for OpenJDK 11.0.33",
+    "summary": "Red Hat released a critical security update for OpenJDK 11.0.33 ELS portable Linux builds, addressing multiple vulnerabilities that could allow remote code execution. The vulnerabilities, detailed in CVE references, carry high CVSS scores and are exploitable without authentication. Red Hat recommends applying the update immediately and promptly to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94499",
+    "publishedAt": "2026-11-05T18:02:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-update-for-openjdk-11-0-33",
+      "article-0ee204a7",
+      "0ee204a7",
+      "red-hat-issues-critical-update-for-openjdk-11-0-33-37d8b9"
     ]
   },
   {
@@ -9376,158 +9523,6 @@ export const news: NewsBrief[] = [
       "b0d5010b",
       "red-hat-releases-critical-kernel-update-for-rhel-8-37d8be",
       "red-hat-releases-critical-kernel-update-for-rhel-8-8"
-    ]
-  },
-  {
-    "slug": "ai-coding-agents-deploy-unpatched-mcp-servers-bcd9096a",
-    "title": "AI Coding Agents Deploy Unpatched MCP Servers",
-    "summary": "Glow Labs found AI coding agents installing deprecated MCP servers on developer machines when prompted to set up a GitHub MCP. The agents pick from repositories that will never be patched, creating a MCPhantom pattern that exposes systems to unpatched vulnerabilities. Developers should vet MCP packages, avoid deprecated repositories, and apply controls to detect and remediate unpatched servers.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/mcphantom-deprecated-mcp-servers/",
-    "publishedAt": "2026-11-03T05:45:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-coding-agents-deploy-unpatched-mcp-servers",
-      "article-bcd9096a",
-      "bcd9096a",
-      "ai-coding-agents-deploy-unpatched-mcp-servers-1dca0b"
-    ]
-  },
-  {
-    "slug": "siemens-iot2050-exploited-for-remote-code-executio-062391f1",
-    "title": "Siemens IoT2050 Exploited for Remote Code Execution",
-    "summary": "Attackers are exploiting a missing authentication flaw in Siemens SIMATIC IoT2050 Advanced devices, allowing remote code execution. The flaw, CVE-2026-58115, carries a CVSS score of 10.0 and permits unauthenticated attackers to run arbitrary code, potentially compromising device control and network integrity. Siemens has released an out‑of‑band patch; administrators should apply the update immediately and disable exposed management interfaces.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
-    "publishedAt": "2026-11-03T05:34:41.000Z",
-    "cves": [
-      "CVE-2026-58115"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "siemens-iot2050-exploited-for-remote-code-executio",
-      "article-062391f1",
-      "062391f1",
-      "siemens-iot2050-exploited-for-remote-code-executio-1fe1a1",
-      "siemens-iot2050-exploited-for-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "cryptopayment-plugin-vulnerability-enables-remote-384f31b0",
-    "title": "CryptoPayment Plugin Vulnerability Enables Remote File Deletion",
-    "summary": "Threat actors target an unpatched flaw in the CryptoPayment Gateway WordPress plugin, enabling unauthenticated remote file deletion. The vulnerability, CVE-2026-81648, scores CVSS 10.0 and could allow attackers to remove arbitrary files and exfiltrate wallet credentials. Site owners should apply the vendor patch immediately and restrict plugin access to authenticated users.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
-    "publishedAt": "2026-11-03T05:34:37.000Z",
-    "cves": [
-      "CVE-2026-81648"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cryptopayment-plugin-vulnerability-enables-remote",
-      "article-384f31b0",
-      "384f31b0",
-      "cryptopayment-plugin-vulnerability-enables-remote-11c86d",
-      "cryptopayment-plugin-vulnerability-enables-remote-file-delet"
-    ]
-  },
-  {
-    "slug": "fireperf-released-as-open-source-firewall-testing-cd77d728",
-    "title": "Fireperf Released as Open-Source Firewall Testing Tool",
-    "summary": "The IPFire project has launched fireperf, an open‑source measurement tool that opens connections at a fixed rate to evaluate firewall and router performance. Fireperf mimics iperf3 by reporting per‑connection actions, allowing administrators to assess stateful device behavior under sustained traffic. The tool is free software, suitable for developers, testers, and network engineers seeking to benchmark firewall throughput and latency.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/fireperf-open-source-network-testing-tool/",
-    "publishedAt": "2026-11-03T05:30:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fireperf-released-as-open-source-firewall-testing",
-      "article-cd77d728",
-      "cd77d728",
-      "fireperf-released-as-open-source-firewall-testing-2a5758",
-      "fireperf-released-as-open-source-firewall-testing-tool"
-    ]
-  },
-  {
-    "slug": "openai-initiates-security-sprint-with-external-res-fe8b1526",
-    "title": "OpenAI Initiates Security Sprint with External Researchers",
-    "summary": "OpenAI announced a new security sprint on November 2, inviting external researchers to collaborate with internal teams on vulnerability discovery and remediation. The program partners with Cathedral Systems and offers increased bug bounty rewards to incentivize reporting of serious flaws across OpenAI’s platforms. Security teams should monitor the sprint’s findings and apply patches promptly to maintain platform integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-security-sprint/",
-    "publishedAt": "2026-11-03T05:17:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-initiates-security-sprint-with-external-res",
-      "article-fe8b1526",
-      "fe8b1526",
-      "openai-initiates-security-sprint-with-external-res-483311",
-      "openai-initiates-security-sprint-with-external-researchers"
-    ]
-  },
-  {
-    "slug": "cybersecurity-architect-jobs-open-in-portugal-695c947a",
-    "title": "Cybersecurity Architect Jobs Open in Portugal",
-    "summary": "Planck Technologies is recruiting a Cyber Security Architect in Portugal to design security architectures for telecom, platform, and cloud environments. The role requires defining frameworks, assessing risks, conducting threat modeling, and embedding security into deployments while maintaining documentation. Candidates should have experience with governance, transformation projects, and technical reviews to support customer workshops.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/cybersecurity-jobs-available-right-now-november-3-2026/",
-    "publishedAt": "2026-11-03T05:00:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cybersecurity-architect-jobs-open-in-portugal",
-      "article-695c947a",
-      "695c947a",
-      "cybersecurity-architect-jobs-open-in-portugal-4ce3e7"
-    ]
-  },
-  {
-    "slug": "composer-2-11-introduces-dependency-cooldowns-60b8e0f7",
-    "title": "Composer 2.11 Introduces Dependency Cooldowns",
-    "summary": "Composer 2.11 adds a dependency cooldown mechanism that delays the adoption of new package releases to mitigate supply‑chain risk. The cooldown feature allows maintainers to postpone updates for a configurable period, ensuring critical security patches can be vetted before widespread deployment. Users should upgrade to Composer 2.11 and configure cooldown settings to balance security and release velocity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/composer-dependency-cooldowns",
-    "publishedAt": "2026-11-03T04:23:21.154Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "composer-2-11-introduces-dependency-cooldowns",
-      "article-60b8e0f7",
-      "60b8e0f7",
-      "composer-2-11-introduces-dependency-cooldowns-95b4be"
-    ]
-  },
-  {
-    "slug": "anthropic-adds-edr-monitoring-to-claude-cowork-0bd9b67a",
-    "title": "Anthropic Adds EDR Monitoring to Claude Cowork",
-    "summary": "Anthropic introduced a beta integration that allows businesses to run endpoint detection and response sensors inside Claude Cowork’s local virtual machine. The feature addresses a monitoring gap where security software cannot see shell commands and code executed within Cowork’s isolated environment. Security teams can now forward Cowork activity to existing EDR solutions, enhancing visibility of hidden AI agent operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/anthropic-enables-edr-monitoring/",
-    "publishedAt": "2026-11-03T04:18:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-adds-edr-monitoring-to-claude-cowork",
-      "article-0bd9b67a",
-      "0bd9b67a",
-      "anthropic-adds-edr-monitoring-to-claude-cowork-3b0cda"
     ]
   }
 ];

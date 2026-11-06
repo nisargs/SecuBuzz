@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 00:46:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 01:48:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Paint Zero-Click CVE-2026-83844 Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/microsoft-paint-zero-click-cve-2026-83844-enables-24fc4a3f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-paint-zero-click-cve-2026-83844-enables-24fc4a3f</guid>
+      <description><![CDATA[Microsoft’s Windows Paint is vulnerable to a zero-click flaw that lets unauthenticated attackers execute code remotely without user interaction. Identified as CVE-2026-83844, the flaw scores 8.1 on CVSS, classifying it as high severity and enabling remote code execution. Microsoft has issued an updated Paint build; administrators should verify the corrected version and apply the patch to mitigate the vulnerability.]]></description>
+      <pubDate>Fri, 06 Nov 2026 00:58:05 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/windows-paint-rce-vulnerability/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>FBI, CISA Warn of Refrigeration System Cyberattacks</title>
+      <link>https://secubuzz.com/news/fbi-cisa-warn-of-refrigeration-system-cyberattacks-a6450a23</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-cisa-warn-of-refrigeration-system-cyberattacks-a6450a23</guid>
+      <description><![CDATA[The FBI and CISA have issued a warning that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide. These attacks could cause food spoilage, equipment damage, and fire hazards by exploiting vulnerabilities in control software or network interfaces. Security teams should harden refrigeration network segments, apply vendor patches, and monitor for anomalous traffic to mitigate potential compromise.]]></description>
+      <pubDate>Fri, 06 Nov 2026 00:56:44 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Releases Bind Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-6b2a8ce1</link>
@@ -14,6 +32,24 @@
       <description><![CDATA[Red Hat released a bind security and bug‑fix update for RHEL 7 ELS, targeting the DNS server. The update is rated Important, with CVSS scores for each referenced CVE, indicating high‑severity flaws. Apply the patch via standard RHEL repositories; no workarounds are listed, and the update fixes security and functional issues.]]></description>
       <pubDate>Fri, 06 Nov 2026 00:07:04 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95726">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Chrome 158 Released for Android Users</title>
+      <link>https://secubuzz.com/news/chrome-158-released-for-android-users-31f86bd0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-released-for-android-users-31f86bd0</guid>
+      <description><![CDATA[Google released Chrome 158 (158.0.8127.22) for Android to a limited user cohort. The update focuses on stability and performance enhancements, with no security vulnerabilities disclosed. The patch will roll out via Google Play over the next few days, and users are encouraged to report issues through the bug‑tracking system.]]></description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0698823948.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Tooling Used to Harvest OAuth Secrets</title>
+      <link>https://secubuzz.com/news/ai-tooling-used-to-harvest-oauth-secrets-b5c0117b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-tooling-used-to-harvest-oauth-secrets-b5c0117b</guid>
+      <description><![CDATA[Microsoft Threat Intelligence reports that attackers employ the ARTEX agentic AI framework to scan GitHub for exposed OAuth application secrets. Compromised OAuth apps enable attackers to perform authenticated actions within the victim tenant, potentially escalating privileges or exfiltrating data. Security teams should audit exposed secrets, rotate credentials, and enable multi‑factor authentication to mitigate this automated threat.]]></description>
+      <pubDate>Thu, 05 Nov 2026 23:46:50 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/">Microsoft Security</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -42,6 +78,24 @@
       <pubDate>Thu, 05 Nov 2026 22:08:00 GMT</pubDate>
       <source url="https://therecord.media/queens-library-ransomware-causes-disruptions">The Record</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Goose Update for RHEL 10.2</title>
+      <link>https://secubuzz.com/news/red-hat-releases-goose-update-for-rhel-10-2-1e87cce5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-goose-update-for-rhel-10-2-1e87cce5</guid>
+      <description><![CDATA[Red Hat has issued an important security update for the 'goose' package on Red Hat Enterprise Linux 10.2. The update fixes vulnerabilities rated Important, with CVSS scores between 7.0 and 8.9, and CVE IDs are listed in the references. Administrators should install the update promptly and verify that the 'goose' package is at the patched version to prevent exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 22:07:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95724">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Goose Update for RHEL 9.8</title>
+      <link>https://secubuzz.com/news/red-hat-releases-goose-update-for-rhel-9-8-5826942c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-goose-update-for-rhel-9-8-5826942c</guid>
+      <description><![CDATA[Red Hat has issued an important security update for the 'goose' package on Red Hat Enterprise Linux 9.8. The update addresses vulnerabilities rated Important, with CVSS scores between 7.0 and 8.9, and CVE IDs are listed in the references. Administrators should apply the update immediately and confirm the 'goose' package is at the patched version to mitigate exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 22:07:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95723">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>NIKKE Launcher Files Tampered, Player Credentials Exposed</title>
@@ -170,6 +224,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Updates Apache Camel 4.18 for Quarkus 3.33</title>
+      <link>https://secubuzz.com/news/red-hat-updates-apache-camel-4-18-for-quarkus-3-33-810b4582</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-apache-camel-4-18-for-quarkus-3-33-810b4582</guid>
+      <description><![CDATA[Red Hat released an update for its build of Apache Camel 4.18 on Quarkus 3.33, addressing security and stability issues. The update incorporates code changes that mitigate injection flaws and improve input validation, reducing the risk of unauthorized data exposure. Security teams should deploy RHBQ 3.33.4.SP3 immediately to maintain application integrity and prevent exploitation of identified weaknesses.]]></description>
+      <pubDate>Thu, 05 Nov 2026 19:09:08 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95622">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Bring a tent, I&apos;ve got the coffee: Lessons from it-sa</title>
       <link>https://secubuzz.com/news/bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-a9042345</link>
       <guid isPermaLink="true">https://secubuzz.com/news/bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-a9042345</guid>
@@ -186,6 +249,15 @@
       <pubDate>Thu, 05 Nov 2026 18:08:31 GMT</pubDate>
       <source url="https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users">Dark Reading</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical Update for OpenJDK 11.0.33</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-openjdk-11-0-33-0ee204a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-openjdk-11-0-33-0ee204a7</guid>
+      <description><![CDATA[Red Hat released a critical security update for OpenJDK 11.0.33 ELS portable Linux builds, addressing multiple vulnerabilities that could allow remote code execution. The vulnerabilities, detailed in CVE references, carry high CVSS scores and are exploitable without authentication. Red Hat recommends applying the update immediately and promptly to mitigate the risk.]]></description>
+      <pubDate>Thu, 05 Nov 2026 18:02:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:94499">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>OpenJDK 11.0.33 Windows Update Addresses Critical Flaws</title>
@@ -383,78 +455,6 @@
       <description><![CDATA[Red Hat released a security update for java-11-openjdk with Extended Lifecycle Support on RHEL 7, 8, and 9. The update addresses multiple vulnerabilities in the Java runtime, though no specific CVE identifiers are listed in the advisory. Users should apply the update via the Red Hat package manager to maintain secure Java environments.]]></description>
       <pubDate>Thu, 05 Nov 2026 16:12:49 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:94520">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>DigiCert Breach Exposes Customer Data and ID Documents</title>
-      <link>https://secubuzz.com/news/digicert-breach-exposes-customer-data-and-id-docum-28f4b248</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/digicert-breach-exposes-customer-data-and-id-docum-28f4b248</guid>
-      <description><![CDATA[During a server migration, DigiCert unintentionally exposed an internal business system to the internet, enabling unauthorized access to customer information and identity documents. The misconfiguration allowed attackers to retrieve sensitive data, including personal identifiers and certificates, potentially facilitating credential theft and fraud. DigiCert notified affected customers, is conducting a forensic investigation, and will enforce stricter access controls and monitoring.]]></description>
-      <pubDate>Thu, 05 Nov 2026 16:12:46 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>GhostMap Android Flaw Can Trap Phones in Endless Reboot Loops Without Opening an App</title>
-      <link>https://secubuzz.com/news/ghostmap-android-flaw-can-trap-phones-in-endless-r-f3601b18</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostmap-android-flaw-can-trap-phones-in-endless-r-f3601b18</guid>
-      <description><![CDATA[A new Android bug named GhostMap can leave a phone stuck in a crash loop after a user installs a single crafted app. The app does not need to be opened, asks for no permissions, and contains no code. Researchers at Bitdefender Labs published the findings on November 5, 2026.]]></description>
-      <pubDate>Thu, 05 Nov 2026 16:11:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ghostmap-android-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Q3 2026 Email Threat Landscape Trends</title>
-      <link>https://secubuzz.com/news/q3-2026-email-threat-landscape-trends-b12b02eb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/q3-2026-email-threat-landscape-trends-b12b02eb</guid>
-      <description><![CDATA[Microsoft Threat Intelligence observed a sharp rise in email-based phishing activity at the end of Q3 2026, while QR code phishing declined and CAPTCHA-gated phishing recovered. Messages spoofing familiar business-service sender domains exposed risks associated with security override configurations. These trends indicate evolving adversary tactics targeting enterprise email environments.]]></description>
-      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Python36 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-python36-security-update-c989fdea</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-python36-security-update-c989fdea</guid>
-      <description><![CDATA[Red Hat issued an important security update for the python36:3.6 module on RHEL 8.4 Advanced Mission Critical and Extended Update Support Long‑Life Add‑On releases. The update addresses multiple vulnerabilities that could allow remote code execution or privilege escalation, with CVSS scores detailed in the referenced CVE links. Users should apply the python36:3.6 update immediately to mitigate exploitation risk.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:46:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95583">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Python 3.6 module receives important security update</title>
-      <link>https://secubuzz.com/news/python-3-6-module-receives-important-security-upda-309a86ca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/python-3-6-module-receives-important-security-upda-309a86ca</guid>
-      <description><![CDATA[Red Hat released a security update for the python36:3.6 module on RHEL 8.6, addressing multiple vulnerabilities rated as Important. The update mitigates flaws that could allow attackers to gain elevated privileges or execute arbitrary code via the Python interpreter. Red Hat recommends applying the update immediately to secure affected systems.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:32:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95580">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)</title>
-      <link>https://secubuzz.com/news/vulnerability-scans-for-older-cisco-ios-vulnerabil-cbd5a20c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vulnerability-scans-for-older-cisco-ios-vulnerabil-cbd5a20c</guid>
-      <description><![CDATA[This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. This Cisco IOS exploit attempt was a bit more interesting. I suspect this is for CVE-2023-20198.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:29:08 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33492">SANS Internet Storm Center</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Python3.6 Security Patch</title>
-      <link>https://secubuzz.com/news/red-hat-issues-python3-6-security-patch-56a6cdba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-python3-6-security-patch-56a6cdba</guid>
-      <description><![CDATA[Red Hat released a security update for python36:3.6 on RHEL 8.8 and its SAP and Telecom variants, fixing several Python 3.6 bugs. The advisory lists CVSS base scores from moderate to high, but no CVE IDs or exploit details are provided. Red Hat recommends applying the patch via standard RHEL update channels to remediate the vulnerabilities.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:21:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95578">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Qt5-Qtbase Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-qt5-qtbase-security-update-e089b1ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-qt5-qtbase-security-update-e089b1ff</guid>
-      <description><![CDATA[Red Hat released a security update for qt5‑qtbase on RHEL 9.6 EUS, fixing multiple Qt framework bugs. The advisory lists CVSS base scores from moderate to high, but no CVE IDs or public exploits are disclosed. Red Hat recommends applying the patch via the standard update channels to mitigate the identified vulnerabilities.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:15:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95575">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
