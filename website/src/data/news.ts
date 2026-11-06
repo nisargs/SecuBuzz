@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-security-updates-for-bind-on-rhel-8a77118d",
+    "title": "Red Hat Releases Security Updates for BIND on RHEL 6",
+    "summary": "Red Hat issued a security update for the BIND package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The advisory addresses security flaws rated as Important impact that could jeopardize DNS infrastructure resilience. System administrators should apply the latest package updates provided by Red Hat to mitigate potential exploitation risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95727",
+    "publishedAt": "2026-11-06T04:15:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-security-updates-for-bind-on-rhel",
+      "article-8a77118d",
+      "8a77118d",
+      "red-hat-releases-security-updates-for-bind-on-rhel-37d83a",
+      "red-hat-releases-security-updates-for-bind-on-rhel-6"
+    ]
+  },
+  {
     "slug": "openai-unveils-gpt-6-cyber-ai-security-model-98ffde6c",
     "title": "OpenAI Unveils GPT-6 Cyber AI Security Model",
     "summary": "OpenAI introduced GPT-6 Cyber, a security-focused artificial intelligence model designed for vulnerability research, on November 4, 2026. The advanced AI model successfully identified 81 new high-severity Firefox flaws and generated functional exploits for 948 Linux kernel bugs. OpenAI stated that the cybersecurity tool adheres to researcher-defined constraints far better than its previous model versions.",
@@ -474,6 +493,24 @@ export const news: NewsBrief[] = [
       "article-837e03ba",
       "837e03ba",
       "us-sanctions-prince-group-scam-affiliates-63c17f"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-satellite-6-16-eus-security-update-fef0356f",
+    "title": "Red Hat Issues Satellite 6.16 EUS Security Update",
+    "summary": "Red Hat released a security update for Satellite 6.16 EUS, addressing critical vulnerabilities in the platform. The update mitigates several high‑severity flaws, each with a CVSS base score and linked to CVE identifiers, though no specific IDs are listed. Red Hat recommends applying the update immediately; the patch is available via the Satellite update repository and includes all necessary fixes.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95655",
+    "publishedAt": "2026-11-05T19:44:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-satellite-6-16-eus-security-update",
+      "article-fef0356f",
+      "fef0356f",
+      "red-hat-issues-satellite-6-16-eus-security-update-37d83e"
     ]
   },
   {
@@ -9468,44 +9505,6 @@ export const news: NewsBrief[] = [
       "29b2ca1d",
       "quest-foglight-directory-traversal-allows-remote-c-6f3ca6",
       "quest-foglight-directory-traversal-allows-remote-code-execut"
-    ]
-  },
-  {
-    "slug": "quest-foglight-rce-exploit-unauthenticated-06066062",
-    "title": "Quest Foglight RCE Exploit Unauthenticated",
-    "summary": "Quest Foglight for Databases is vulnerable to an unauthenticated remote code execution flaw, CVE‑2026‑92188, that exploits missing authentication in ForgeMBeanServerSupport. The flaw carries a CVSS score of 9.8, allowing attackers to execute arbitrary code on the database server without credentials. A vendor patch is available; administrators should apply it promptly and disable remote MBean access if possible.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-854/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-rce-exploit-unauthenticated",
-      "article-06066062",
-      "06066062",
-      "quest-foglight-rce-exploit-unauthenticated-6f3ca6"
-    ]
-  },
-  {
-    "slug": "quest-foglight-rce-via-external-file-path-control-392990f9",
-    "title": "Quest Foglight RCE via External File Path Control",
-    "summary": "A remote code execution flaw in Quest Foglight for Databases lets attackers write arbitrary file paths via writeTopologySectionToFile, bypassing authentication. The flaw, CVE-2026-92189, scores 9.8 on CVSS, enabling unauthenticated RCE that can compromise system integrity. Quest has issued a critical patch; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-861/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92189"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-rce-via-external-file-path-control",
-      "article-392990f9",
-      "392990f9",
-      "quest-foglight-rce-via-external-file-path-control-6f3caa"
     ]
   }
 ];

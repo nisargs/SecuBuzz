@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95727",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95727",
+    "title": "Red Hat Releases Security Updates for BIND on RHEL 6",
+    "headline": "Red Hat Releases Security Updates for BIND on RHEL 6",
+    "summary": "Red Hat issued a security update for the BIND package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The advisory addresses security flaws rated as Important impact that could jeopardize DNS infrastructure resilience. System administrators should apply the latest package updates provided by Red Hat to mitigate potential exploitation risks.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-06T04:15:37.000Z",
+    "ingestedAt": "2026-11-06T04:43:35.256Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:95727",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/openai-launches-gpt-6-cyber/",
     "sourceUrl": "https://cybersecuritynews.com/openai-launches-gpt-6-cyber/",
     "title": "OpenAI Unveils GPT-6 Cyber AI Security Model",
@@ -418,6 +434,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://therecord.media/us-issues-more-sanctions-against-prince-group-scammers",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95655",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95655",
+    "title": "Red Hat Issues Satellite 6.16 EUS Security Update",
+    "headline": "Red Hat Issues Satellite 6.16 EUS Security Update",
+    "summary": "Red Hat released a security update for Satellite 6.16 EUS, addressing critical vulnerabilities in the platform. The update mitigates several high‑severity flaws, each with a CVSS base score and linked to CVE identifiers, though no specific IDs are listed. Red Hat recommends applying the update immediately; the patch is available via the Satellite update repository and includes all necessary fixes.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-05T19:44:20.000Z",
+    "ingestedAt": "2026-11-06T04:43:42.405Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:95655",
     "additionalSources": []
   },
   {
@@ -8251,38 +8283,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-855/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-854/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-854/",
-    "title": "Quest Foglight RCE Exploit Unauthenticated",
-    "headline": "Quest Foglight RCE Exploit Unauthenticated",
-    "summary": "Quest Foglight for Databases is vulnerable to an unauthenticated remote code execution flaw, CVE‑2026‑92188, that exploits missing authentication in ForgeMBeanServerSupport. The flaw carries a CVSS score of 9.8, allowing attackers to execute arbitrary code on the database server without credentials. A vendor patch is available; administrators should apply it promptly and disable remote MBean access if possible.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "ingestedAt": "2026-11-04T00:43:19.545Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-854/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-861/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-861/",
-    "title": "Quest Foglight RCE via External File Path Control",
-    "headline": "Quest Foglight RCE via External File Path Control",
-    "summary": "A remote code execution flaw in Quest Foglight for Databases lets attackers write arbitrary file paths via writeTopologySectionToFile, bypassing authentication. The flaw, CVE-2026-92189, scores 9.8 on CVSS, enabling unauthenticated RCE that can compromise system integrity. Quest has issued a critical patch; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "ingestedAt": "2026-11-03T23:43:11.284Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-861/",
     "additionalSources": []
   }
 ]
