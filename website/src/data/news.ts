@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "isc-stormcast-provides-daily-threat-briefing-b061cdf8",
+    "title": "ISC Stormcast Provides Daily Threat Briefing",
+    "summary": "ISC released its Friday stormcast, providing a briefing on threat activity, including malware campaigns, phishing trends, and zero‑day disclosures. The report covers emerging attack vectors, defensive recommendations, and contextual analysis of recent incidents, but does not highlight any specific vulnerabilities. The briefing is freely available under a Creative Commons Attribution‑Noncommercial 3.0 United States License, enabling internal security awareness sharing.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33494",
+    "publishedAt": "2026-11-06T02:00:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-provides-daily-threat-briefing",
+      "article-b061cdf8",
+      "b061cdf8",
+      "isc-stormcast-provides-daily-threat-briefing-57dd7e"
+    ]
+  },
+  {
     "slug": "microsoft-paint-zero-click-cve-2026-83844-enables-24fc4a3f",
     "title": "Microsoft Paint Zero-Click CVE-2026-83844 Enables Remote Code Execution",
     "summary": "Microsoft’s Windows Paint is vulnerable to a zero-click flaw that lets unauthenticated attackers execute code remotely without user interaction. Identified as CVE-2026-83844, the flaw scores 8.1 on CVSS, classifying it as high severity and enabling remote code execution. Microsoft has issued an updated Paint build; administrators should verify the corrected version and apply the patch to mitigate the vulnerability.",
@@ -238,6 +256,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-glibc-update-released-dc12078b",
+    "title": "Red Hat glibc Update Released",
+    "summary": "Red Hat released a glibc security update for Enterprise Linux 9, addressing multiple vulnerabilities. The update mitigates unspecified glibc flaws; CVSS scores are available via CVE links, but no specific CVE IDs are listed. Security teams should apply the patch immediately to maintain system integrity to ensure compliance with Red Hat's security policy.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95618",
+    "publishedAt": "2026-11-05T21:43:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-glibc-update-released",
+      "article-dc12078b",
+      "dc12078b",
+      "red-hat-glibc-update-released-37d83e"
+    ]
+  },
+  {
     "slug": "dns-typos-expose-us-government-email-systems-483040ce",
     "title": "DNS Typos Expose US Government Email Systems",
     "summary": "Erroneous or outdated DNS records in US government email infrastructure can grant attackers unexpected control over mail routing and delivery. The misconfiguration allows attackers to spoof sender addresses, intercept messages, or redirect traffic, potentially facilitating phishing or data exfiltration. Administrators should audit DNS zones, correct stale entries, and enforce strict SPF, DKIM, and DMARC policies to mitigate the risk.",
@@ -290,6 +326,24 @@ export const news: NewsBrief[] = [
       "480fdb89",
       "phishers-exploit-fake-spacex-events-for-microsoft-4e1aa3",
       "phishers-exploit-fake-spacex-events-for-microsoft-google-cre"
+    ]
+  },
+  {
+    "slug": "red-hat-webkit2gtk3-critical-update-released-ad72d378",
+    "title": "Red Hat webkit2gtk3 Critical Update Released",
+    "summary": "Red Hat issued a critical security update for webkit2gtk3 on Enterprise Linux 8.4, covering both Advanced Mission Critical and Extended Update Support streams. The patch addresses unspecified webkit2gtk3 vulnerabilities; CVSS scores are linked via CVE references, but no specific CVE IDs are named. Administrators should deploy the update promptly to mitigate potential exploitation risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95590",
+    "publishedAt": "2026-11-05T21:15:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-webkit2gtk3-critical-update-released",
+      "article-ad72d378",
+      "ad72d378",
+      "red-hat-webkit2gtk3-critical-update-released-37d841"
     ]
   },
   {
@@ -401,6 +455,42 @@ export const news: NewsBrief[] = [
       "article-41ea1750",
       "41ea1750",
       "red-hat-satellite-client-critical-update-released-37d83e"
+    ]
+  },
+  {
+    "slug": "red-hat-satellite-6-17-important-update-released-d8db5712",
+    "title": "Red Hat Satellite 6.17 Important Update Released",
+    "summary": "Red Hat released a security update for Satellite 6.17, addressing several high‑severity vulnerabilities that could allow remote code execution or privilege escalation. Each flaw carries a CVSS base score indicating significant risk, and the update patches the underlying authentication and input validation weaknesses. Red Hat recommends applying the update promptly to secure Satellite 6.17 against exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95656",
+    "publishedAt": "2026-11-05T19:44:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-17-important-update-released",
+      "article-d8db5712",
+      "d8db5712",
+      "red-hat-satellite-6-17-important-update-released-37d83e"
+    ]
+  },
+  {
+    "slug": "red-hat-satellite-6-19-critical-update-released-21be32c3",
+    "title": "Red Hat Satellite 6.19 Critical Update Released",
+    "summary": "Red Hat released a critical security update for Satellite 6.19, addressing multiple high‑severity vulnerabilities that could enable remote code execution or privilege escalation. Each flaw carries a CVSS base score indicating critical risk, and the update patches the underlying authentication and input validation weaknesses. Red Hat recommends applying the update immediately to secure Satellite 6.19 against exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95652",
+    "publishedAt": "2026-11-05T19:43:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-19-critical-update-released",
+      "article-21be32c3",
+      "21be32c3",
+      "red-hat-satellite-6-19-critical-update-released-37d83e"
     ]
   },
   {
@@ -9423,106 +9513,6 @@ export const news: NewsBrief[] = [
       "article-d77c8ad6",
       "d77c8ad6",
       "quest-foglight-patch-addresses-cve-2026-92186-rce-6f3ca7"
-    ]
-  },
-  {
-    "slug": "cisco-snort-rce-via-sf-unfold-header-oob-write-d24507e1",
-    "title": "Cisco Snort RCE via sf_unfold_header OOB Write",
-    "summary": "CVE-2026-20043 exploits an out‑of‑bounds write in Cisco Snort's sf_unfold_header, enabling remote code execution without authentication. The vulnerability carries a CVSS score of 9.8, indicating a critical risk to network intrusion detection systems. Cisco has issued a patch in the latest Snort release; administrators should update immediately to mitigate the exploit.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-867/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-20043"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-snort-rce-via-sf-unfold-header-oob-write",
-      "article-d24507e1",
-      "d24507e1",
-      "cisco-snort-rce-via-sf-unfold-header-oob-write-6f3caa"
-    ]
-  },
-  {
-    "slug": "quest-foglight-rce-via-rendertemplatestring-ssti-5f815693",
-    "title": "Quest Foglight RCE via renderTemplateString SSTI",
-    "summary": "CVE-2026-92196 permits remote code execution in Quest Foglight for Databases via a server‑side template injection in renderTemplateString. The flaw requires authentication and has a CVSS score of 7.2, allowing attackers to run arbitrary code on the database server. Quest released a patch in the latest Foglight version; users should upgrade or apply the vendor‑issued fix to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-866/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92196"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-rce-via-rendertemplatestring-ssti",
-      "article-5f815693",
-      "5f815693",
-      "quest-foglight-rce-via-rendertemplatestring-ssti-6f3caa"
-    ]
-  },
-  {
-    "slug": "quest-foglight-lpe-via-incorrect-permission-assign-d2548fd3",
-    "title": "Quest Foglight LPE via Incorrect Permission Assignment",
-    "summary": "CVE-2026-92200 enables local privilege escalation in Quest Foglight for Databases through incorrect permission assignment. The vulnerability has a CVSS score of 7.8 and requires the attacker to first execute low‑privileged code on the target system. Quest has issued a patch in the current Foglight release; administrators should apply the update to eliminate the privilege escalation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-865/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92200"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-lpe-via-incorrect-permission-assign",
-      "article-d2548fd3",
-      "d2548fd3",
-      "quest-foglight-lpe-via-incorrect-permission-assign-6f3caa",
-      "quest-foglight-lpe-via-incorrect-permission-assignment"
-    ]
-  },
-  {
-    "slug": "quest-foglight-lpe-via-hardcoded-encryption-key-841f4a88",
-    "title": "Quest Foglight LPE via Hardcoded Encryption Key",
-    "summary": "A privilege escalation flaw in Quest Foglight for Databases' EncryptionUtil allows attackers to gain elevated rights on affected installations. The vulnerability stems from a hardcoded encryption key that permits unauthorized code execution, and is rated CVSS 7.8 under CVE-2026-92199. Administrators should apply the vendor's patch or upgrade to a version that removes the hardcoded key to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-863/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92199"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-lpe-via-hardcoded-encryption-key",
-      "article-841f4a88",
-      "841f4a88",
-      "quest-foglight-lpe-via-hardcoded-encryption-key-6f3caa"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-kernel-update-for-rhel-8-b0d5010b",
-    "title": "Red Hat Releases Critical Kernel Update for RHEL 8.8",
-    "summary": "Red Hat released a critical kernel update for RHEL 8.8 SAP and Telecom services, fixing multiple CVEs. The patch addresses unauthenticated remote code execution flaws with CVSS scores up to 9.0, protecting kernel integrity. Administrators should apply the update via Red Hat Update Manager or yum to maintain compliance and security.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94303",
-    "publishedAt": "2026-11-03T05:53:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-kernel-update-for-rhel-8",
-      "article-b0d5010b",
-      "b0d5010b",
-      "red-hat-releases-critical-kernel-update-for-rhel-8-37d8be",
-      "red-hat-releases-critical-kernel-update-for-rhel-8-8"
     ]
   }
 ];

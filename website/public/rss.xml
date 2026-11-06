@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 01:48:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 02:34:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ISC Stormcast Provides Daily Threat Briefing</title>
+      <link>https://secubuzz.com/news/isc-stormcast-provides-daily-threat-briefing-b061cdf8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-provides-daily-threat-briefing-b061cdf8</guid>
+      <description><![CDATA[ISC released its Friday stormcast, providing a briefing on threat activity, including malware campaigns, phishing trends, and zero‑day disclosures. The report covers emerging attack vectors, defensive recommendations, and contextual analysis of recent incidents, but does not highlight any specific vulnerabilities. The briefing is freely available under a Creative Commons Attribution‑Noncommercial 3.0 United States License, enabling internal security awareness sharing.]]></description>
+      <pubDate>Fri, 06 Nov 2026 02:00:02 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33494">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Microsoft Paint Zero-Click CVE-2026-83844 Enables Remote Code Execution</title>
       <link>https://secubuzz.com/news/microsoft-paint-zero-click-cve-2026-83844-enables-24fc4a3f</link>
@@ -116,6 +125,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat glibc Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-glibc-update-released-dc12078b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-glibc-update-released-dc12078b</guid>
+      <description><![CDATA[Red Hat released a glibc security update for Enterprise Linux 9, addressing multiple vulnerabilities. The update mitigates unspecified glibc flaws; CVSS scores are available via CVE links, but no specific CVE IDs are listed. Security teams should apply the patch immediately to maintain system integrity to ensure compliance with Red Hat's security policy.]]></description>
+      <pubDate>Thu, 05 Nov 2026 21:43:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95618">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>DNS Typos Expose US Government Email Systems</title>
       <link>https://secubuzz.com/news/dns-typos-expose-us-government-email-systems-483040ce</link>
       <guid isPermaLink="true">https://secubuzz.com/news/dns-typos-expose-us-government-email-systems-483040ce</guid>
@@ -141,6 +159,15 @@
       <pubDate>Thu, 05 Nov 2026 21:30:30 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat webkit2gtk3 Critical Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-webkit2gtk3-critical-update-released-ad72d378</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-webkit2gtk3-critical-update-released-ad72d378</guid>
+      <description><![CDATA[Red Hat issued a critical security update for webkit2gtk3 on Enterprise Linux 8.4, covering both Advanced Mission Critical and Extended Update Support streams. The patch addresses unspecified webkit2gtk3 vulnerabilities; CVSS scores are linked via CVE references, but no specific CVE IDs are named. Administrators should deploy the update promptly to mitigate potential exploitation risks.]]></description>
+      <pubDate>Thu, 05 Nov 2026 21:15:40 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95590">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Releases Kernel-RT Security Update</title>
@@ -194,6 +221,24 @@
       <description><![CDATA[Red Hat released a critical update for Satellite 6 Client to address multiple vulnerabilities. The patch mitigates high-severity flaws that could allow attackers to gain unauthorized access or disrupt satellite management; CVSS scores are listed in the CVE references. Administrators should download and apply the patch immediately and verify configuration integrity to prevent exploitation.]]></description>
       <pubDate>Thu, 05 Nov 2026 19:44:10 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95653">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Satellite 6.17 Important Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-satellite-6-17-important-update-released-d8db5712</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-6-17-important-update-released-d8db5712</guid>
+      <description><![CDATA[Red Hat released a security update for Satellite 6.17, addressing several high‑severity vulnerabilities that could allow remote code execution or privilege escalation. Each flaw carries a CVSS base score indicating significant risk, and the update patches the underlying authentication and input validation weaknesses. Red Hat recommends applying the update promptly to secure Satellite 6.17 against exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 19:44:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95656">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Satellite 6.19 Critical Update Released</title>
+      <link>https://secubuzz.com/news/red-hat-satellite-6-19-critical-update-released-21be32c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-6-19-critical-update-released-21be32c3</guid>
+      <description><![CDATA[Red Hat released a critical security update for Satellite 6.19, addressing multiple high‑severity vulnerabilities that could enable remote code execution or privilege escalation. Each flaw carries a CVSS base score indicating critical risk, and the update patches the underlying authentication and input validation weaknesses. Red Hat recommends applying the update immediately to secure Satellite 6.19 against exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 19:43:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95652">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 16:42:32 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Issues kpatch Security Update for RHEL 8</title>
-      <link>https://secubuzz.com/news/red-hat-issues-kpatch-security-update-for-rhel-8-39a79ff3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kpatch-security-update-for-rhel-8-39a79ff3</guid>
-      <description><![CDATA[Red Hat released security updates for multiple kpatch packages on RHEL 8, addressing vulnerabilities that could enable local or remote code execution. The advisory references CVE entries and CVSS base scores, but no public proof‑of‑concept or active exploitation has been reported. Red Hat recommends applying the patches through the standard RHEL 8 repositories to mitigate the risks.]]></description>
-      <pubDate>Thu, 05 Nov 2026 16:41:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95587">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Qt5-Qtbase Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-cc55f839</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-cc55f839</guid>
-      <description><![CDATA[Red Hat released an important security update for the qt5‑qtbase component in RHEL 9.4 Update Services for SAP Solutions. The update addresses multiple vulnerabilities identified by CVE references, each with a CVSS base score indicating moderate risk; no active exploitation was reported. Users should apply the update immediately to mitigate potential privilege escalation or denial‑of‑service risks.]]></description>
-      <pubDate>Thu, 05 Nov 2026 16:39:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95588">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Critical WebKit2GTK3 Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-critical-webkit2gtk3-update-4b94ba6d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-critical-webkit2gtk3-update-4b94ba6d</guid>
-      <description><![CDATA[Red Hat issued a critical update for webkit2gtk3 in RHEL 8.6 Advanced Mission Critical and Extended Update Support. The patch fixes multiple high‑severity vulnerabilities cited by CVE references, each with a CVSS base score indicating remote code execution risk; no active exploitation was reported. Administrators should install the update promptly to prevent exploitation of web rendering components.]]></description>
-      <pubDate>Thu, 05 Nov 2026 16:35:58 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95589">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CWP Web Server Trojan Enables Linux Backdoors</title>
-      <link>https://secubuzz.com/news/cwp-web-server-trojan-enables-linux-backdoors-96a43958</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cwp-web-server-trojan-enables-linux-backdoors-96a43958</guid>
-      <description><![CDATA[A trojanized Control Web Panel (CWP) web server, cwpsrv, installs the CWPdoor malware on Linux servers. The trojan exploits a flaw in CWP’s authentication, granting attackers privileged access and a persistent backdoor. Update CWP to the latest release, remove unauthorized cwpsrv binaries, and regularly monitor for anomalous outbound traffic daily.]]></description>
-      <pubDate>Thu, 05 Nov 2026 16:24:26 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Java 11 OpenJDK ELS</title>
-      <link>https://secubuzz.com/news/red-hat-updates-java-11-openjdk-els-390440e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-java-11-openjdk-els-390440e0</guid>
-      <description><![CDATA[Red Hat released a security update for java-11-openjdk with Extended Lifecycle Support on RHEL 7, 8, and 9. The update addresses multiple vulnerabilities in the Java runtime, though no specific CVE identifiers are listed in the advisory. Users should apply the update via the Red Hat package manager to maintain secure Java environments.]]></description>
-      <pubDate>Thu, 05 Nov 2026 16:12:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94520">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
