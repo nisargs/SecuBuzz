@@ -11,6 +11,65 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "chatgpt-lockdown-mode-bypass-exposes-conversation-92195acf",
+    "title": "ChatGPT Lockdown Mode Bypass Exposes Conversation History",
+    "summary": "OpenAI’s ChatGPT Classic desktop app flaw, CVE-2026-58868, lets attackers bypass Lockdown Mode and steal full chat histories undetected. The vulnerability uses a hidden pop‑up to copy conversation data, display counterfeit windows, and deliver malware, enabling credential theft. OpenAI has released a patch; users should update immediately and disable Lockdown Mode until the fix is applied.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/chatgpt-lockdown-mode-bypass/",
+    "publishedAt": "2026-11-06T08:16:23.000Z",
+    "cves": [
+      "CVE-2026-58868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chatgpt-lockdown-mode-bypass-exposes-conversation",
+      "article-92195acf",
+      "92195acf",
+      "chatgpt-lockdown-mode-bypass-exposes-conversation-72fe53",
+      "chatgpt-lockdown-mode-bypass-exposes-conversation-history"
+    ]
+  },
+  {
+    "slug": "chainalysis-breach-exposes-all-user-credentials-9267617d",
+    "title": "Chainalysis Breach Exposes All User Credentials",
+    "summary": "Chainalysis disclosed that an agentic attack exposed usernames, password hashes, and live tokens for all users, compromising Reactor and Data Solutions. The breach forced the company to revoke access and suspend services while investigators evaluated credential theft and potential data exfiltration. Teams should enforce multi‑factor authentication, rotate compromised credentials, and monitor all affected accounts for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+    "publishedAt": "2026-11-06T08:04:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chainalysis-breach-exposes-all-user-credentials",
+      "article-9267617d",
+      "9267617d",
+      "chainalysis-breach-exposes-all-user-credentials-2a4e36"
+    ]
+  },
+  {
+    "slug": "microsoft-releases-november-patch-tuesday-update-2458068c",
+    "title": "Microsoft Releases November Patch Tuesday Update",
+    "summary": "Microsoft released its November 2026 Patch Tuesday update, addressing 1,407 CVEs, including zero‑day CVE-2026-96951 that affected legacy software. The rollout, delayed by two and a half hours, focused on high‑severity flaws that could enable local privilege escalation or remote code execution on outdated Windows components. Teams should apply the update immediately, verify installation, and monitor legacy systems for residual vulnerabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/november-2026-patch-tuesday-forecast/",
+    "publishedAt": "2026-11-06T07:00:48.000Z",
+    "cves": [
+      "CVE-2026-96951"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-november-patch-tuesday-update",
+      "article-2458068c",
+      "2458068c",
+      "microsoft-releases-november-patch-tuesday-update-568b83"
+    ]
+  },
+  {
     "slug": "top-10-deception-tech-solutions-2026-2574b5e0",
     "title": "Top 10 Deception Tech Solutions 2026",
     "summary": "The article ranks the top ten deception technology solutions for 2026, highlighting their ability to lure attackers into interacting with decoys. It explains that canary tokens and decoy credentials generate near‑zero false positives, making deception the most cost‑effective high‑fidelity detection signal. The piece also surveys market segmentation for 2026, offering a comparative analysis of vendors and pricing models.",
@@ -9482,61 +9541,6 @@ export const news: NewsBrief[] = [
       "79b25dd4",
       "synology-ransomware-exploits-patched-dsm-vulnerabi-3f59d6",
       "synology-ransomware-exploits-patched-dsm-vulnerability"
-    ]
-  },
-  {
-    "slug": "europe-supermarkets-hit-by-refrigeration-cyberatta-6b367a70",
-    "title": "Europe Supermarkets Hit by Refrigeration Cyberattacks",
-    "summary": "Attackers remotely altered refrigeration control settings at supermarkets in Belgium, Sweden, Estonia, and other European countries, warming fridges and freezers overnight. The flaw in Danfoss controllers allowed unauthenticated remote configuration changes, causing food spoilage and inventory losses. Danfoss issued a firmware update and recommends disabling remote access until the patch is applied to prevent further disruptions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
-    "publishedAt": "2026-11-03T07:27:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "europe-supermarkets-hit-by-refrigeration-cyberatta",
-      "article-6b367a70",
-      "6b367a70",
-      "europe-supermarkets-hit-by-refrigeration-cyberatta-263d71",
-      "europe-supermarkets-hit-by-refrigeration-cyberattacks"
-    ]
-  },
-  {
-    "slug": "darkblinders-breach-iraqi-cloud-steal-1gb-data-7722d4db",
-    "title": "DarkBlinders Breach Iraqi Cloud, Steal 1GB Data",
-    "summary": "DarkBlinders breached a government cloud in Iraq’s Kurdistan Region, exfiltrating over 1GB of data and compromising an Israeli security official. The attackers leveraged undisclosed misconfigurations or vulnerabilities to gain unauthorized access, sustaining the intrusion from August to October 2026. No vendor patch applies; defenders should tighten cloud IAM, monitor outbound traffic, and perform forensic analysis to detect similar breaches.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/iran-linked-darkblinders-hackers/",
-    "publishedAt": "2026-11-03T07:25:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "darkblinders-breach-iraqi-cloud-steal-1gb-data",
-      "article-7722d4db",
-      "7722d4db",
-      "darkblinders-breach-iraqi-cloud-steal-1gb-data-6a8dbc"
-    ]
-  },
-  {
-    "slug": "hackers-deploy-paprat-via-vhdx-and-webdav-links-544374d8",
-    "title": "Hackers Deploy PapRAT via VHDX and WebDAV Links",
-    "summary": "A suspected espionage group delivers the PapRAT remote access trojan to Windows systems using malicious VHDX disk images and WebDAV links. The campaign embeds the payload in innocuous shortcut files and remote web folders, evading detection by antivirus signatures. Security teams should block inbound WebDAV traffic, quarantine suspicious VHDX files, and enforce strict email attachment policies to mitigate infection.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-malicious-vhdx-files/",
-    "publishedAt": "2026-11-03T06:44:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-deploy-paprat-via-vhdx-and-webdav-links",
-      "article-544374d8",
-      "544374d8",
-      "hackers-deploy-paprat-via-vhdx-and-webdav-links-1049ca"
     ]
   }
 ];
