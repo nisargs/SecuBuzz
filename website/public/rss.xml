@@ -5,16 +5,25 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 11:26:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 12:45:22 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>White House Network Exposed via Residential Proxy Traffic</title>
-      <link>https://secubuzz.com/news/white-house-network-exposed-via-residential-proxy-adaa0b6c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/white-house-network-exposed-via-residential-proxy-adaa0b6c</guid>
-      <description><![CDATA[Layer3 Intel found residential proxy traffic exiting the White House network via AS2650, exposing a potential unauthorized path. The exit routing lets proxy services route traffic through the Executive Office of the President’s network, creating a covert espionage channel. Security teams should audit routing policies, block unauthorized exit points, and monitor for anomalous proxy traffic to mitigate the risk.]]></description>
+      <title>US Warns of Remote Access Threats to Cold-Chain Systems</title>
+      <link>https://secubuzz.com/news/us-warns-of-remote-access-threats-to-cold-chain-sy-a28cd128</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-warns-of-remote-access-threats-to-cold-chain-sy-a28cd128</guid>
+      <description><![CDATA[US agencies issued a warning about remote access vulnerabilities affecting supermarket refrigeration and blood storage cold‑chain monitoring systems. The warning highlights that attackers could exploit unsecured remote connections to disrupt temperature controls, potentially compromising stored products. Operators should enforce strong authentication, patch firmware, and monitor remote access logs to mitigate the identified risks.]]></description>
+      <pubDate>Fri, 06 Nov 2026 12:02:17 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>White House Network Exposed by Residential Proxy Services</title>
+      <link>https://secubuzz.com/news/white-house-network-exposed-by-residential-proxy-s-b0273d7d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/white-house-network-exposed-by-residential-proxy-s-b0273d7d</guid>
+      <description><![CDATA[Researchers found 28 residential proxy services accessed the White House network via six IP addresses, mainly between 5 p.m. and midnight Eastern Time. The proxy usage bypassed perimeter controls, allowing attackers to mask traffic and potentially evade detection, though no data exfiltration was reported. Teams should audit firewall rules, block known proxy IP ranges, and enforce stricter outbound traffic monitoring.]]></description>
       <pubDate>Fri, 06 Nov 2026 10:29:58 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/06/white-house-residential-proxy-traffic/">Help Net Security</source>
-      <category>Vulnerability</category>
+      <category>Breach</category>
     </item>
     <item>
       <title>Red Hat Updates Keycloak 26.4.17 Images</title>
@@ -260,6 +269,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>EU Accuses TikTok of Failing to Stop Harmful Content</title>
+      <link>https://secubuzz.com/news/eu-accuses-tiktok-of-failing-to-stop-harmful-conte-85862602</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/eu-accuses-tiktok-of-failing-to-stop-harmful-conte-85862602</guid>
+      <description><![CDATA[The European Commission accused TikTok of failing to stop its recommendation algorithm from leading users into rabbit holes of sadness, self‑harm, and body‑image content. The complaint indicates algorithmic design may expose users to psychologically harmful material, worsening mental health risks. TikTok must review content‑filtering policies, enhance user controls, and provide clearer disclosures to meet EU expectations.]]></description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://therecord.media/eu-accuses-tiktok-of-rabbit-hole-DSA-violation">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Chrome 158 Released for Android Users</title>
       <link>https://secubuzz.com/news/chrome-158-released-for-android-users-31f86bd0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-released-for-android-users-31f86bd0</guid>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 20:15:08 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/">BleepingComputer</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>US Sanctions Prince Group Scam Affiliates</title>
-      <link>https://secubuzz.com/news/us-sanctions-prince-group-scam-affiliates-837e03ba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-sanctions-prince-group-scam-affiliates-837e03ba</guid>
-      <description><![CDATA[The U.S. Treasury imposed additional sanctions on four individuals and 41 companies tied to the Prince Group, a Cambodian scam operator. The measures freeze assets and block U.S. financial services to curb the group’s money‑laundering activities. Entities on the list must comply with U.S. export and anti‑money‑laundering rules to avoid penalties.]]></description>
-      <pubDate>Thu, 05 Nov 2026 20:11:00 GMT</pubDate>
-      <source url="https://therecord.media/us-issues-more-sanctions-against-prince-group-scammers">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Satellite 6.16 EUS Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-satellite-6-16-eus-security-update-fef0356f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-satellite-6-16-eus-security-update-fef0356f</guid>
-      <description><![CDATA[Red Hat released a security update for Satellite 6.16 EUS, addressing critical vulnerabilities in the platform. The update mitigates several high‑severity flaws, each with a CVSS base score and linked to CVE identifiers, though no specific IDs are listed. Red Hat recommends applying the update immediately; the patch is available via the Satellite update repository and includes all necessary fixes.]]></description>
-      <pubDate>Thu, 05 Nov 2026 19:44:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95655">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

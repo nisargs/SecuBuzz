@@ -1,19 +1,40 @@
 [
   {
+    "id": "https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning",
+    "title": "US Warns of Remote Access Threats to Cold-Chain Systems",
+    "headline": "US Warns of Remote Access Threats to Cold-Chain Systems",
+    "summary": "US agencies issued a warning about remote access vulnerabilities affecting supermarket refrigeration and blood storage cold‑chain monitoring systems. The warning highlights that attackers could exploit unsecured remote connections to disrupt temperature controls, potentially compromising stored products. Operators should enforce strong authentication, patch firmware, and monitor remote access logs to mitigate the identified risks.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "publishedAt": "2026-11-06T12:02:17.000Z",
+    "ingestedAt": "2026-11-06T12:43:51.737Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.helpnetsecurity.com/2026/11/06/white-house-residential-proxy-traffic/",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/white-house-residential-proxy-traffic/",
-    "title": "White House Network Exposed via Residential Proxy Traffic",
-    "headline": "White House Network Exposed via Residential Proxy Traffic",
-    "summary": "Layer3 Intel found residential proxy traffic exiting the White House network via AS2650, exposing a potential unauthorized path. The exit routing lets proxy services route traffic through the Executive Office of the President’s network, creating a covert espionage channel. Security teams should audit routing policies, block unauthorized exit points, and monitor for anomalous proxy traffic to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
+    "title": "White House Network Exposed by Residential Proxy Services",
+    "headline": "White House Network Exposed by Residential Proxy Services",
+    "summary": "Researchers found 28 residential proxy services accessed the White House network via six IP addresses, mainly between 5 p.m. and midnight Eastern Time. The proxy usage bypassed perimeter controls, allowing attackers to mask traffic and potentially evade detection, though no data exfiltration was reported. Teams should audit firewall rules, block known proxy IP ranges, and enforce stricter outbound traffic monitoring.",
+    "category": "BREACH",
+    "severity": "HIGH",
     "source": "Help Net Security",
     "publishedAt": "2026-11-06T10:29:58.000Z",
     "ingestedAt": "2026-11-06T11:03:05.955Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/06/white-house-residential-proxy-traffic/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/researchers-find-residential-proxies-on-white-house-network/"
+      }
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:95760",
@@ -447,6 +468,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:95726",
+    "additionalSources": []
+  },
+  {
+    "id": "https://therecord.media/eu-accuses-tiktok-of-rabbit-hole-DSA-violation",
+    "sourceUrl": "https://therecord.media/eu-accuses-tiktok-of-rabbit-hole-DSA-violation",
+    "title": "EU Accuses TikTok of Failing to Stop Harmful Content",
+    "headline": "EU Accuses TikTok of Failing to Stop Harmful Content",
+    "summary": "The European Commission accused TikTok of failing to stop its recommendation algorithm from leading users into rabbit holes of sadness, self‑harm, and body‑image content. The complaint indicates algorithmic design may expose users to psychologically harmful material, worsening mental health risks. TikTok must review content‑filtering policies, enhance user controls, and provide clearer disclosures to meet EU expectations.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "ingestedAt": "2026-11-06T12:43:51.737Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/eu-accuses-tiktok-of-rabbit-hole-DSA-violation",
     "additionalSources": []
   },
   {
@@ -8264,40 +8301,5 @@
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/03/openai-bigger-bug-bounty-rewards/",
     "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/",
-    "sourceUrl": "https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/",
-    "title": "NATO Exercise Integrates AI Agents into Cyber Training",
-    "headline": "NATO Exercise Integrates AI Agents into Cyber Training",
-    "summary": "NATO’s Crossed Swords exercise in Estonia integrated AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The exercise aimed to evaluate AI‑driven decision support and autonomous response capabilities within a realistic threat environment. Participants will assess integration challenges, command‑control workflows, and potential adversarial manipulation of AI agents.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-03T08:49:03.000Z",
-    "ingestedAt": "2026-11-03T09:43:56.851Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:94443",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94443",
-    "title": "RHSA-2026:94443: Important: python3 security update",
-    "headline": "RHSA-2026:94443: Important: python3 security update",
-    "summary": "An update for python3 is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-03T08:41:02.000Z",
-    "ingestedAt": "2026-11-03T17:44:51.730Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "isFallback": true
   }
 ]
