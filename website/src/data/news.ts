@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openai-unveils-gpt-6-cyber-ai-security-model-98ffde6c",
+    "title": "OpenAI Unveils GPT-6 Cyber AI Security Model",
+    "summary": "OpenAI introduced GPT-6 Cyber, a security-focused artificial intelligence model designed for vulnerability research, on November 4, 2026. The advanced AI model successfully identified 81 new high-severity Firefox flaws and generated functional exploits for 948 Linux kernel bugs. OpenAI stated that the cybersecurity tool adheres to researcher-defined constraints far better than its previous model versions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openai-launches-gpt-6-cyber/",
+    "publishedAt": "2026-11-06T02:04:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-unveils-gpt-6-cyber-ai-security-model",
+      "article-98ffde6c",
+      "98ffde6c",
+      "openai-unveils-gpt-6-cyber-ai-security-model-1178f5"
+    ]
+  },
+  {
     "slug": "isc-stormcast-provides-daily-threat-briefing-b061cdf8",
     "title": "ISC Stormcast Provides Daily Threat Briefing",
     "summary": "ISC released its Friday stormcast, providing a briefing on threat activity, including malware campaigns, phishing trends, and zero‑day disclosures. The report covers emerging attack vectors, defensive recommendations, and contextual analysis of recent incidents, but does not highlight any specific vulnerabilities. The briefing is freely available under a Creative Commons Attribution‑Noncommercial 3.0 United States License, enabling internal security awareness sharing.",
@@ -26,6 +44,25 @@ export const news: NewsBrief[] = [
       "article-b061cdf8",
       "b061cdf8",
       "isc-stormcast-provides-daily-threat-briefing-57dd7e"
+    ]
+  },
+  {
+    "slug": "shopify-enforces-ip-allowlisting-for-public-admin-465d016f",
+    "title": "Shopify Enforces IP Allowlisting for Public Admin API Apps",
+    "summary": "Shopify requires IP allowlisting for public apps that use its Admin API to curb unauthorized access via stolen tokens. The change adds a check that restricts API calls to approved IP ranges, mitigating token misuse without altering authentication logic. Developers must enable the feature by November 20, 2026, with bulk‑operation apps due November 12, and should update app configurations accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/shopify-mandates-ip-allowlisting/",
+    "publishedAt": "2026-11-06T01:44:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "shopify-enforces-ip-allowlisting-for-public-admin",
+      "article-465d016f",
+      "465d016f",
+      "shopify-enforces-ip-allowlisting-for-public-admin-604168",
+      "shopify-enforces-ip-allowlisting-for-public-admin-api-apps"
     ]
   },
   {
@@ -455,6 +492,24 @@ export const news: NewsBrief[] = [
       "article-41ea1750",
       "41ea1750",
       "red-hat-satellite-client-critical-update-released-37d83e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-update-for-satellite-6-18-31e67044",
+    "title": "Red Hat Issues Critical Update for Satellite 6.18",
+    "summary": "Red Hat released a critical security update for Satellite 6.18 to address multiple vulnerabilities. The update mitigates flaws that could allow unauthorized configuration changes or privilege escalation, as indicated by the CVSS ratings linked in the advisory. Administrators should apply the patch immediately and verify the new version to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95657",
+    "publishedAt": "2026-11-05T19:44:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-update-for-satellite-6-18",
+      "article-31e67044",
+      "31e67044",
+      "red-hat-issues-critical-update-for-satellite-6-18-37d83e"
     ]
   },
   {
@@ -9451,68 +9506,6 @@ export const news: NewsBrief[] = [
       "article-392990f9",
       "392990f9",
       "quest-foglight-rce-via-external-file-path-control-6f3caa"
-    ]
-  },
-  {
-    "slug": "quest-foglight-rce-via-unzipfile-directory-travers-790f56da",
-    "title": "Quest Foglight RCE via unzipFile Directory Traversal",
-    "summary": "An authenticated remote code execution vulnerability in Quest Foglight for Databases allows attackers to traverse directories through the unzipFile function. The flaw, CVE-2026-92197, has a CVSS score of 8.8 and requires valid credentials to exploit, potentially enabling full system compromise. Quest has released a patch; administrators should update affected installations promptly to eliminate the exploitation vector.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-860/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92197"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-rce-via-unzipfile-directory-travers",
-      "article-790f56da",
-      "790f56da",
-      "quest-foglight-rce-via-unzipfile-directory-travers-6f3caa",
-      "quest-foglight-rce-via-unzipfile-directory-traversal"
-    ]
-  },
-  {
-    "slug": "quest-foglight-rce-via-runscript-authorization-fla-d10aed00",
-    "title": "Quest Foglight RCE via runScript Authorization Flaw",
-    "summary": "A remote code execution flaw in Quest Foglight for Databases permits attackers with valid credentials to execute arbitrary scripts through the runScript interface. The vulnerability, CVE-2026-92191, scores 8.8 on CVSS and requires authentication, enabling attackers to compromise system processes. Quest has issued a patch; affected users should apply it immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-859/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92191"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-rce-via-runscript-authorization-fla",
-      "article-d10aed00",
-      "d10aed00",
-      "quest-foglight-rce-via-runscript-authorization-fla-6f3ca7",
-      "quest-foglight-rce-via-runscript-authorization-flaw"
-    ]
-  },
-  {
-    "slug": "quest-foglight-patch-addresses-cve-2026-92186-rce-d77c8ad6",
-    "title": "Quest Foglight Patch Addresses CVE-2026-92186 RCE",
-    "summary": "A CVE-2026-92186 flaw in Quest Foglight for Databases permits authenticated remote attackers to exploit a directory traversal vulnerability and execute arbitrary code. The vulnerability carries a CVSS score of 8.8, indicating high risk, and requires valid credentials to trigger the remote code execution. Quest has released a patch; administrators should apply the update immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-858/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92186"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-patch-addresses-cve-2026-92186-rce",
-      "article-d77c8ad6",
-      "d77c8ad6",
-      "quest-foglight-patch-addresses-cve-2026-92186-rce-6f3ca7"
     ]
   }
 ];
