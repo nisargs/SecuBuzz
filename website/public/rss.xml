@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 22:44:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 23:16:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>AI Hacking Agent Breaches WorkOS Sales App</title>
@@ -32,6 +32,15 @@
       <description><![CDATA[The UK is shifting its technology strategy by investing in domestic AI and cyber capabilities to lessen dependence on U.S. vendors. Security leaders, however, argue that the funding is fragmented and arrives too late to counter emerging threats effectively. To maintain resilience, stakeholders should streamline investment, prioritize critical infrastructure, and accelerate deployment of secure AI solutions.]]></description>
       <pubDate>Fri, 06 Nov 2026 21:27:36 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Unit 42 Explores Attacks on European Refrigeration Systems</title>
+      <link>https://secubuzz.com/news/unit-42-explores-attacks-on-european-refrigeration-9e5dd9ca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-explores-attacks-on-european-refrigeration-9e5dd9ca</guid>
+      <description><![CDATA[Unit 42 analyzed recent cyberattacks that targeted European refrigeration systems, focusing on the operational impact on cold chain logistics. The analysis identifies common attack vectors, such as compromised supply‑chain software and remote command injection, and assesses the potential for widespread service disruption. Unit 42 recommends layered defenses, including network segmentation, firmware integrity checks, and continuous monitoring, to mitigate future threats.]]></description>
+      <pubDate>Fri, 06 Nov 2026 21:15:09 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/">Unit 42</source>
       <category>General</category>
     </item>
     <item>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 12:06:35 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html">The Hacker News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>US Warns of Remote Access Threats to Cold-Chain Systems</title>
-      <link>https://secubuzz.com/news/us-warns-of-remote-access-threats-to-cold-chain-sy-a28cd128</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-warns-of-remote-access-threats-to-cold-chain-sy-a28cd128</guid>
-      <description><![CDATA[US agencies issued a warning about remote access vulnerabilities affecting supermarket refrigeration and blood storage cold‑chain monitoring systems. The warning highlights that attackers could exploit unsecured remote connections to disrupt temperature controls, potentially compromising stored products. Operators should enforce strong authentication, patch firmware, and monitor remote access logs to mitigate the identified risks.]]></description>
-      <pubDate>Fri, 06 Nov 2026 12:02:17 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning">Malwarebytes Labs</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -65,6 +65,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "unit-42-explores-attacks-on-european-refrigeration-9e5dd9ca",
+    "title": "Unit 42 Explores Attacks on European Refrigeration Systems",
+    "summary": "Unit 42 analyzed recent cyberattacks that targeted European refrigeration systems, focusing on the operational impact on cold chain logistics. The analysis identifies common attack vectors, such as compromised supply‑chain software and remote command injection, and assesses the potential for widespread service disruption. Unit 42 recommends layered defenses, including network segmentation, firmware integrity checks, and continuous monitoring, to mitigate future threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/",
+    "publishedAt": "2026-11-06T21:15:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "unit-42-explores-attacks-on-european-refrigeration",
+      "article-9e5dd9ca",
+      "9e5dd9ca",
+      "unit-42-explores-attacks-on-european-refrigeration-76ad3e",
+      "unit-42-explores-attacks-on-european-refrigeration-systems"
+    ]
+  },
+  {
     "slug": "chinese-spyware-tool-active-in-13-nations-9da8c99a",
     "title": "Chinese Spyware Tool Active in 13 Nations",
     "summary": "A Chinese spyware tool has been detected operating in 13 countries, according to a cyber‑security firm. The tool harvests credentials and exfiltrates data via covert channels, leveraging social engineering and compromised web services, but no public exploit or CVE is disclosed. Security teams should monitor outbound traffic, block known malicious domains, and apply multi‑factor authentication to mitigate data exfiltration.",
@@ -1435,6 +1454,82 @@ export const news: NewsBrief[] = [
       "0dee2eb5",
       "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
       "survey-reveals-87-demand-stronger-ai-control-mechanisms"
+    ]
+  },
+  {
+    "slug": "home-assistant-green-privilege-escalation-via-clea-aad49b72",
+    "title": "Home Assistant Green Privilege Escalation via Cleartext Credentials",
+    "summary": "A local privilege escalation flaw in Home Assistant Green lets attackers who can run low‑privileged code inside a container gain full system access. The flaw arises from cleartext credential storage; CVE‑2026‑91131 has a CVSS score of 8.8 and is exploitable without network access. Home Assistant has released a patch; administrators should apply it immediately and verify container isolation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-896/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "home-assistant-green-privilege-escalation-via-clea",
+      "article-aad49b72",
+      "aad49b72",
+      "home-assistant-green-privilege-escalation-via-clea-6f3cb6",
+      "home-assistant-green-privilege-escalation-via-cleartext-cred"
+    ]
+  },
+  {
+    "slug": "libreoffice-heap-overflow-enables-remote-code-exec-acd8a8ca",
+    "title": "LibreOffice Heap Overflow Enables Remote Code Execution",
+    "summary": "A heap-based buffer overflow in LibreOffice’s dBase file parser allows remote attackers to execute arbitrary code when a user opens a crafted file. The vulnerability, identified as CVE‑2026‑76181, has a CVSS score of 7.8 and requires user interaction to trigger exploitation. LibreOffice has issued a patch; users should update immediately and avoid opening untrusted files.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-895/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "libreoffice-heap-overflow-enables-remote-code-exec",
+      "article-acd8a8ca",
+      "acd8a8ca",
+      "libreoffice-heap-overflow-enables-remote-code-exec-6f3cb5",
+      "libreoffice-heap-overflow-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "docker-sandboxes-rce-via-untrusted-control-sphere-ae548564",
+    "title": "Docker Sandboxes RCE via Untrusted Control Sphere Inclusion",
+    "summary": "A remote code execution flaw in Docker Sandboxes lets local attackers run arbitrary code by including untrusted control sphere functionality. CVE‑2026‑121614 has a CVSS score of 7.8 and requires user interaction, such as visiting a malicious page or opening a file. Docker released a patch; administrators should apply it promptly and limit sandbox access to trusted sources.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-894/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "docker-sandboxes-rce-via-untrusted-control-sphere",
+      "article-ae548564",
+      "ae548564",
+      "docker-sandboxes-rce-via-untrusted-control-sphere-6f3cb5",
+      "docker-sandboxes-rce-via-untrusted-control-sphere-inclusion"
+    ]
+  },
+  {
+    "slug": "trimble-sketchup-skp-use-after-free-rce-vulnerabil-7d22ebde",
+    "title": "Trimble SketchUp SKP Use-After-Free RCE Vulnerability",
+    "summary": "A use‑after‑free flaw in Trimble SketchUp’s SKP parser lets remote attackers run code when a user opens a malicious file or visits a malicious page. Identified as CVE‑2026‑121741, it scores 7.8 on CVSS and requires user interaction, making it a high‑severity flaw that could compromise installations. Until a patch arrives, teams should monitor advisories and restrict SKP file handling.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-893/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trimble-sketchup-skp-use-after-free-rce-vulnerabil",
+      "article-7d22ebde",
+      "7d22ebde",
+      "trimble-sketchup-skp-use-after-free-rce-vulnerabil-6f3cb5",
+      "trimble-sketchup-skp-use-after-free-rce-vulnerability"
     ]
   },
   {
@@ -9456,103 +9551,6 @@ export const news: NewsBrief[] = [
       "article-bb30d75f",
       "bb30d75f",
       "freerdp-update-addresses-cve-2026-43871-37d8b6"
-    ]
-  },
-  {
-    "slug": "haproxy-vulnerabilities-allow-denial-of-service-vi-416fa8af",
-    "title": "HAProxy Vulnerabilities Allow Denial of Service via HTTP/2 and HTTP/1.1",
-    "summary": "Two CVEs affecting HAProxy were disclosed: CVE-2026-110353 and CVE-2026-110354, both involving incorrect handling of truncated HTTP/2 PING frames and certain HTTP/1.1 chunked requests respectively. A remote attacker could trigger excessive CPU consumption leading to denial of service without authentication. The vulnerabilities require no exploitation confirmation beyond the advisory description.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8972-1",
-    "publishedAt": "2026-11-03T14:33:21.000Z",
-    "cves": [
-      "CVE-2026-110353",
-      "CVE-2026-110354"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "haproxy-vulnerabilities-allow-denial-of-service-vi",
-      "article-416fa8af",
-      "416fa8af",
-      "haproxy-vulnerabilities-allow-denial-of-service-vi-7fbc8a",
-      "haproxy-vulnerabilities-allow-denial-of-service-via-http-2-a"
-    ]
-  },
-  {
-    "slug": "frontline-education-breach-exposes-1-3-million-rec-4bdd1929",
-    "title": "Frontline Education Breach Exposes 1.3 Million Records",
-    "summary": "Hackers exploited a flaw in third‑party software used by Frontline Education, compromising personal data of staff and students. The vulnerability enabled unauthorized extraction of names, addresses, and academic details, affecting more than 1.3 million individuals. Frontline Education has notified affected parties, coordinated with the vendor to patch the flaw, and urged MFA enforcement.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/",
-    "publishedAt": "2026-11-03T14:32:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "frontline-education-breach-exposes-1-3-million-rec",
-      "article-4bdd1929",
-      "4bdd1929",
-      "frontline-education-breach-exposes-1-3-million-rec-5bc8ce",
-      "frontline-education-breach-exposes-1-3-million-records"
-    ]
-  },
-  {
-    "slug": "gnome-shell-vulnerability-allows-dos-and-informati-f13ad83a",
-    "title": "GNOME Shell Vulnerability Allows DoS and Information Disclosure from Remote Icons",
-    "summary": "A vulnerability was discovered in GNOME Shell where improper validation of icon dimensions from remote search providers could cause crashes or expose sensitive memory information. The flaw requires no authentication and affects desktop environments processing untrusted icon data. The advisory describes a denial of service vector combined with potential information disclosure from improperly validated remote icon sources.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8971-1",
-    "publishedAt": "2026-11-03T14:13:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gnome-shell-vulnerability-allows-dos-and-informati",
-      "article-f13ad83a",
-      "f13ad83a",
-      "gnome-shell-vulnerability-allows-dos-and-informati-7fbc8e",
-      "gnome-shell-vulnerability-allows-dos-and-information-disclos"
-    ]
-  },
-  {
-    "slug": "crowdstrike-buys-ai-firms-fiddler-dreadnode-d817239b",
-    "title": "CrowdStrike Buys AI Firms Fiddler, Dreadnode",
-    "summary": "CrowdStrike announced a $495 million purchase of AI firms Fiddler and Dreadnode to boost Falcon with AI agent observability and automated testing. The acquisition will merge Fiddler’s monitoring tools and Dreadnode’s testing framework into CrowdStrike’s threat detection stack. Customers should watch for feature updates and integration milestones that may affect Falcon deployments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/",
-    "publishedAt": "2026-11-03T14:12:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-buys-ai-firms-fiddler-dreadnode",
-      "article-d817239b",
-      "d817239b",
-      "crowdstrike-buys-ai-firms-fiddler-dreadnode-19333c"
-    ]
-  },
-  {
-    "slug": "videostrong-deploys-backdoor-in-1-3-million-androi-04cc5652",
-    "title": "Videostrong Deploys Backdoor in 1.3 Million Android TV Boxes",
-    "summary": "Videostrong embedded a hidden backdoor in more than 1.3 million Android set‑top boxes, creating a covert botnet. The flaw allowed remote command execution without authentication, enabling attackers to issue arbitrary instructions and exfiltrate data from compromised devices. Affected manufacturers should release firmware updates to remove the backdoor, and security teams must monitor device traffic for anomalous outbound connections.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/11/a-hidden-backdoor-put-1-3-million-tv-boxes-to-work-for-criminals",
-    "publishedAt": "2026-11-03T14:11:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "videostrong-deploys-backdoor-in-1-3-million-androi",
-      "article-04cc5652",
-      "04cc5652",
-      "videostrong-deploys-backdoor-in-1-3-million-androi-5a95a9",
-      "videostrong-deploys-backdoor-in-1-3-million-android-tv-boxes"
     ]
   }
 ];
