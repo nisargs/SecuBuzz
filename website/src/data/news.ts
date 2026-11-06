@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "authorities-dismantle-scams-teams-abuse-refrigerat-d7e6d4c2",
+    "title": "Authorities Dismantle Scams, Teams Abuse, Refrigeration Attacks",
+    "summary": "Authorities dismantled investment‑scam and cybercrime networks that used Microsoft Teams and AD CS for credential theft. Simultaneously, attackers exploited refrigeration control system vulnerabilities across Europe, disrupting operations and threatening critical infrastructure. Security teams should apply Teams and AD CS patches, monitor certificate issuance, and harden industrial control firmware and segmentation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-45-8",
+    "publishedAt": "2026-11-06T18:30:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "authorities-dismantle-scams-teams-abuse-refrigerat",
+      "article-d7e6d4c2",
+      "d7e6d4c2",
+      "authorities-dismantle-scams-teams-abuse-refrigerat-5e83e9",
+      "authorities-dismantle-scams-teams-abuse-refrigeration-attack"
+    ]
+  },
+  {
+    "slug": "japan-unveils-emergency-cybersecurity-package-afte-6d2883f9",
+    "title": "Japan Unveils Emergency Cybersecurity Package After Attacks",
+    "summary": "Japan announced an emergency cybersecurity package after dozens of companies and government agencies suffered unauthorized system access and client data leaks. The attacks exploited weak authentication, unpatched software, and inadequate network segmentation, exposing sensitive personal and corporate information. The package mandates rapid patching, multi‑factor authentication rollout, and continuous monitoring, with penalties for non‑compliance to strengthen national cyber resilience.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/",
+    "publishedAt": "2026-11-06T18:28:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-unveils-emergency-cybersecurity-package-afte",
+      "article-6d2883f9",
+      "6d2883f9",
+      "japan-unveils-emergency-cybersecurity-package-afte-66171b",
+      "japan-unveils-emergency-cybersecurity-package-after-attacks"
+    ]
+  },
+  {
+    "slug": "vendors-use-incident-records-to-train-ai-raising-r-665fd110",
+    "title": "Vendors Use Incident Records to Train AI, Raising Risks",
+    "summary": "Security incident archives are being repurposed by vendors to train AI models, exposing sensitive operational data. The practice introduces new attack vectors, as leaked logs can reveal system configurations, privileged credentials, and internal threat patterns. Organizations should enforce strict data‑handling policies, anonymize logs before sharing, and audit vendor training pipelines to mitigate exposure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
+    "publishedAt": "2026-11-06T18:27:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vendors-use-incident-records-to-train-ai-raising-r",
+      "article-665fd110",
+      "665fd110",
+      "vendors-use-incident-records-to-train-ai-raising-r-2e2492",
+      "vendors-use-incident-records-to-train-ai-raising-risks"
+    ]
+  },
+  {
+    "slug": "chrome-dev-channel-updated-to-159-0-8144-0-64471497",
+    "title": "Chrome Dev Channel Updated to 159.0.8144.0",
+    "summary": "Google Chrome’s Dev channel received an update to version 159.0.8144.0, affecting Windows, macOS, and Linux desktops. The release includes bug fixes and performance improvements, with a partial change log available in the Git repository. Users should install the update promptly, report new issues via the bug‑reporting system, and consult the community forum for support.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update.html",
+    "publishedAt": "2026-11-06T17:28:33.341Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-dev-channel-updated-to-159-0-8144-0",
+      "article-64471497",
+      "64471497",
+      "chrome-dev-channel-updated-to-159-0-8144-0-74565e"
+    ]
+  },
+  {
     "slug": "cve-2026-122193-issue-with-trusted-remote-executio-9acb1335",
     "title": "CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)",
     "summary": "Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for running scripts on managed instances.",
@@ -354,14 +429,19 @@ export const news: NewsBrief[] = [
   {
     "slug": "digicert-breach-exposes-business-customer-data-e807c301",
     "title": "DigiCert Breach Exposes Business Customer Data",
-    "summary": "Hackers created an internal account on DigiCert’s system and accessed business customer data, including names, emails, phone numbers, and addresses. The breach leveraged an unauthorized internal account, indicating insufficient access controls and privileged account monitoring. DigiCert has issued a security advisory and recommends immediate review of internal access policies, account provisioning procedures, and deployment of multi‑factor authentication for privileged accounts.",
+    "summary": "DigiCert disclosed a breach where an internal business system was externally accessible, enabling an unauthorized account. The misconfigured access controls exposed customer data, potentially compromising credentials, and the incident occurred during the summer. Affected customers should reset credentials, review logs, and DigiCert is auditing systems and tightening authentication and monitoring.",
     "category": "Breach",
-    "severity": "HIGH",
+    "severity": "MEDIUM",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/",
     "publishedAt": "2026-11-06T14:00:07.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/digicert-certificate-authority-reports-data-breach"
+      }
+    ],
     "aliases": [
       "digicert-breach-exposes-business-customer-data",
       "article-e807c301",
@@ -3689,12 +3769,17 @@ export const news: NewsBrief[] = [
     "title": "OpenAI Generates 948 Linux Root Exploits in One Run",
     "summary": "An automated pipeline on an upcoming OpenAI model produced 948 working exploits targeting the latest Linux kernel on stock desktop distributions. The exploits elevate ordinary users to root by exploiting kernel bugs, and the system auto‑generated patches for each flaw. Security teams should apply vendor kernel patches and monitor for similar automated exploitation tools.",
     "category": "Vulnerability",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/openai-linux-kernel-root-exploits/",
     "publishedAt": "2026-11-05T09:05:06.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/openai-ai-pipeline-generates-948-linux-root-escalation"
+      }
+    ],
     "aliases": [
       "openai-generates-948-linux-root-exploits-in-one-ru",
       "article-4e7ac37a",
@@ -9463,84 +9548,6 @@ export const news: NewsBrief[] = [
       "article-82ba4250",
       "82ba4250",
       "wiz-green-agent-speeds-critical-risk-resolution-69c0e9"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94500-critical-fence-agents-security-upd-074f3073",
-    "title": "RHSA-2026:94500: Critical: fence-agents security update",
-    "summary": "An update for fence-agents is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94500",
-    "publishedAt": "2026-11-03T12:47:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94500-critical-fence-agents-security-upd",
-      "article-074f3073",
-      "074f3073",
-      "rhsa-2026-94500-critical-fence-agents-security-upd-37d8b7",
-      "rhsa-2026-94500-critical-fence-agents-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-kernel-patch-for-cve-202-7e418930",
-    "title": "Red Hat Releases Critical Kernel Patch for CVE‑2026‑64832",
-    "summary": "Red Hat issued a kernel update for RHEL 10.0 Extended Update Support to address CVE‑2026‑64832, a critical security flaw. The vulnerability is a kernel‑level bug that could allow unauthenticated attackers to gain elevated privileges, with a CVSS base score indicating critical impact. Red Hat has released the patch; administrators should apply the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94508",
-    "publishedAt": "2026-11-03T12:39:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-kernel-patch-for-cve-202",
-      "article-7e418930",
-      "7e418930",
-      "red-hat-releases-critical-kernel-patch-for-cve-202-37d8b6",
-      "red-hat-releases-critical-kernel-patch-for-cve-2026-64832"
-    ]
-  },
-  {
-    "slug": "ai-agents-accelerate-china-linked-espionage-attack-575023df",
-    "title": "AI Agents Accelerate China‑Linked Espionage Attacks",
-    "summary": "A China‑linked espionage group deployed AI agents to compromise over 200 organizations in 11 days, according to CrowdStrike. The attackers leveraged large language models to autonomously select commands, enabling rapid, low‑interaction phishing and credential‑stealing campaigns across diverse sectors. Security teams should enforce multi‑factor authentication, monitor for anomalous credential usage, and deploy AI‑driven threat detection to mitigate automated attack vectors.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/ai-powered-cyberattacks-artex-cyberstrikeai/",
-    "publishedAt": "2026-11-03T12:31:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-accelerate-china-linked-espionage-attack",
-      "article-575023df",
-      "575023df",
-      "ai-agents-accelerate-china-linked-espionage-attack-25ab9b",
-      "ai-agents-accelerate-china-linked-espionage-attacks"
-    ]
-  },
-  {
-    "slug": "microsoft-study-links-78-of-exploits-to-system-tak-5fb80576",
-    "title": "Microsoft Study Links 78% of Exploits to System Takeover",
-    "summary": "Microsoft’s research identifies that 78% of real-world exploits target vulnerabilities enabling system takeover or privilege escalation. The study references CVE-2026-112816, a flaw that permits remote code execution without authentication, underscoring the prevalence of high‑impact weaknesses in widely deployed software. Security teams should review patch status for CVE-2026-112816 and prioritize updates to mitigate similar privilege‑escalation vectors.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-reveals-78-of-exploited-vulnerabilities/",
-    "publishedAt": "2026-11-03T12:31:55.000Z",
-    "cves": [
-      "CVE-2026-112816"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-study-links-78-of-exploits-to-system-tak",
-      "article-5fb80576",
-      "5fb80576",
-      "microsoft-study-links-78-of-exploits-to-system-tak-7a8ee3",
-      "microsoft-study-links-78-of-exploits-to-system-takeover"
     ]
   }
 ];

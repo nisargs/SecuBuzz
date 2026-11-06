@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 18:05:04 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 19:41:42 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Authorities Dismantle Scams, Teams Abuse, Refrigeration Attacks</title>
+      <link>https://secubuzz.com/news/authorities-dismantle-scams-teams-abuse-refrigerat-d7e6d4c2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/authorities-dismantle-scams-teams-abuse-refrigerat-d7e6d4c2</guid>
+      <description><![CDATA[Authorities dismantled investment‑scam and cybercrime networks that used Microsoft Teams and AD CS for credential theft. Simultaneously, attackers exploited refrigeration control system vulnerabilities across Europe, disrupting operations and threatening critical infrastructure. Security teams should apply Teams and AD CS patches, monitor certificate issuance, and harden industrial control firmware and segmentation.]]></description>
+      <pubDate>Fri, 06 Nov 2026 18:30:54 GMT</pubDate>
+      <source url="https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-45-8">SentinelOne</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Japan Unveils Emergency Cybersecurity Package After Attacks</title>
+      <link>https://secubuzz.com/news/japan-unveils-emergency-cybersecurity-package-afte-6d2883f9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/japan-unveils-emergency-cybersecurity-package-afte-6d2883f9</guid>
+      <description><![CDATA[Japan announced an emergency cybersecurity package after dozens of companies and government agencies suffered unauthorized system access and client data leaks. The attacks exploited weak authentication, unpatched software, and inadequate network segmentation, exposing sensitive personal and corporate information. The package mandates rapid patching, multi‑factor authentication rollout, and continuous monitoring, with penalties for non‑compliance to strengthen national cyber resilience.]]></description>
+      <pubDate>Fri, 06 Nov 2026 18:28:41 GMT</pubDate>
+      <source url="https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Vendors Use Incident Records to Train AI, Raising Risks</title>
+      <link>https://secubuzz.com/news/vendors-use-incident-records-to-train-ai-raising-r-665fd110</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vendors-use-incident-records-to-train-ai-raising-r-665fd110</guid>
+      <description><![CDATA[Security incident archives are being repurposed by vendors to train AI models, exposing sensitive operational data. The practice introduces new attack vectors, as leaked logs can reveal system configurations, privileged credentials, and internal threat patterns. Organizations should enforce strict data‑handling policies, anonymize logs before sharing, and audit vendor training pipelines to mitigate exposure.]]></description>
+      <pubDate>Fri, 06 Nov 2026 18:27:30 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chrome Dev Channel Updated to 159.0.8144.0</title>
+      <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-159-0-8144-0-64471497</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-159-0-8144-0-64471497</guid>
+      <description><![CDATA[Google Chrome’s Dev channel received an update to version 159.0.8144.0, affecting Windows, macOS, and Linux desktops. The release includes bug fixes and performance improvements, with a partial change log available in the Git repository. Users should install the update promptly, report new issues via the bug‑reporting system, and consult the community forum for support.]]></description>
+      <pubDate>Fri, 06 Nov 2026 17:28:33 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
     <item>
       <title>CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)</title>
       <link>https://secubuzz.com/news/cve-2026-122193-issue-with-trusted-remote-executio-9acb1335</link>
@@ -173,7 +209,7 @@
       <title>DigiCert Breach Exposes Business Customer Data</title>
       <link>https://secubuzz.com/news/digicert-breach-exposes-business-customer-data-e807c301</link>
       <guid isPermaLink="true">https://secubuzz.com/news/digicert-breach-exposes-business-customer-data-e807c301</guid>
-      <description><![CDATA[Hackers created an internal account on DigiCert’s system and accessed business customer data, including names, emails, phone numbers, and addresses. The breach leveraged an unauthorized internal account, indicating insufficient access controls and privileged account monitoring. DigiCert has issued a security advisory and recommends immediate review of internal access policies, account provisioning procedures, and deployment of multi‑factor authentication for privileged accounts.]]></description>
+      <description><![CDATA[DigiCert disclosed a breach where an internal business system was externally accessible, enabling an unauthorized account. The misconfigured access controls exposed customer data, potentially compromising credentials, and the incident occurred during the summer. Affected customers should reset credentials, review logs, and DigiCert is auditing systems and tightening authentication and monitoring.]]></description>
       <pubDate>Fri, 06 Nov 2026 14:00:07 GMT</pubDate>
       <source url="https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/">SecurityWeek</source>
       <category>Breach</category>
@@ -420,42 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 09:04:36 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/06/cyberattacks-refrigeration-systems-cisa-fbi/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>ARTEX AI Hacking Framework Found on 1,465 Public Servers, Some Hosting Cyberattack Tools</title>
-      <link>https://secubuzz.com/news/artex-ai-hacking-framework-found-on-1-465-public-s-17871242</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/artex-ai-hacking-framework-found-on-1-465-public-s-17871242</guid>
-      <description><![CDATA[Security researchers have found ARTEX, an AI-powered penetration-testing framework, exposed on 1,465 internet-facing hosts. Some servers also hosted command-and-control tools, phishing software, and exploit files, showing how automated security-testing platforms are appearing alongside established attack infrastructure.]]></description>
-      <pubDate>Fri, 06 Nov 2026 09:02:33 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/artex-ai-hacking-framework/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>UK Launches AI Risk Strategy for Critical Infrastructure</title>
-      <link>https://secubuzz.com/news/uk-launches-ai-risk-strategy-for-critical-infrastr-84e3d395</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/uk-launches-ai-risk-strategy-for-critical-infrastr-84e3d395</guid>
-      <description><![CDATA[The UK government launched a national strategy to mitigate AI risks to critical infrastructure, including national networks and industry. The plan emphasizes strengthening security controls, advancing AI safety research, and creating regulatory frameworks to reduce cyber threats. Stakeholders must collaborate with agencies and adopt best practices to protect critical systems from emerging AI-enabled attacks.]]></description>
-      <pubDate>Fri, 06 Nov 2026 09:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Claude Dispatch Flaw Lets Malicious Browser Extensions Run Code on Connected Computers</title>
-      <link>https://secubuzz.com/news/claude-dispatch-flaw-lets-malicious-browser-extens-30f1c528</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-dispatch-flaw-lets-malicious-browser-extens-30f1c528</guid>
-      <description><![CDATA[A flaw in Anthropic’s Claude Dispatch let a malicious browser extension run commands on a computer via Claude Desktop. That computer could even be a different machine signed into the same Claude account. Researcher Gal Weizman of Forever Security named the technique ThisBash and published the findings on November 4, 2026.]]></description>
-      <pubDate>Fri, 06 Nov 2026 08:40:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-dispatch-vulnerability/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ChatGPT Lockdown Mode Bypass Exposes Conversation History</title>
-      <link>https://secubuzz.com/news/chatgpt-lockdown-mode-bypass-exposes-conversation-92195acf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-lockdown-mode-bypass-exposes-conversation-92195acf</guid>
-      <description><![CDATA[OpenAI’s ChatGPT Classic desktop app flaw, CVE-2026-58868, lets attackers bypass Lockdown Mode and steal full chat histories undetected. The vulnerability uses a hidden pop‑up to copy conversation data, display counterfeit windows, and deliver malware, enabling credential theft. OpenAI has released a patch; users should update immediately and disable Lockdown Mode until the fix is applied.]]></description>
-      <pubDate>Fri, 06 Nov 2026 08:16:23 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/chatgpt-lockdown-mode-bypass/">Cyber Security News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
