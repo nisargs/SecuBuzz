@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-bind-security-update-6b2a8ce1",
+    "title": "Red Hat Releases Bind Security Update",
+    "summary": "Red Hat released a bind security and bug‑fix update for RHEL 7 ELS, targeting the DNS server. The update is rated Important, with CVSS scores for each referenced CVE, indicating high‑severity flaws. Apply the patch via standard RHEL repositories; no workarounds are listed, and the update fixes security and functional issues.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95726",
+    "publishedAt": "2026-11-06T00:07:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-bind-security-update",
+      "article-6b2a8ce1",
+      "6b2a8ce1",
+      "red-hat-releases-bind-security-update-37d83a"
+    ]
+  },
+  {
     "slug": "google-fixes-216-android-flaws-in-november-2026-bu-9856043c",
     "title": "Google Fixes 216 Android Flaws in November 2026 Bulletin",
     "summary": "Google released the November 2026 Android Security Bulletin, resolving 216 vulnerabilities across core Android Framework, System, and vendor components. The bulletin details 23 critical flaws, including CVE-2026-58868, CVE-2026-58876, CVE-2026-58936, CVE-2026-55275, and CVE-2026-55283, which enable remote code execution or elevation of privilege. Devices must install the 2026-11-05 security patch level or vendor firmware updates to fully remediate the disclosed flaws.",
@@ -161,6 +179,24 @@ export const news: NewsBrief[] = [
       "480fdb89",
       "phishers-exploit-fake-spacex-events-for-microsoft-4e1aa3",
       "phishers-exploit-fake-spacex-events-for-microsoft-google-cre"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-rt-security-update-4121a22f",
+    "title": "Red Hat Releases Kernel-RT Security Update",
+    "summary": "Red Hat issued a kernel‑rt security update for Red Hat Enterprise Linux 7 Extended Lifecycle Support, addressing multiple vulnerabilities. The update carries an Important security impact rating, with CVSS base scores provided for each referenced CVE, indicating high‑severity flaws. Red Hat recommends applying the kernel‑rt patch immediately; no workarounds are listed, and the update is available through standard RHEL repositories.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95721",
+    "publishedAt": "2026-11-05T21:05:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-rt-security-update",
+      "article-4121a22f",
+      "4121a22f",
+      "red-hat-releases-kernel-rt-security-update-37d83a"
     ]
   },
   {
@@ -421,6 +457,42 @@ export const news: NewsBrief[] = [
       "article-155014be",
       "155014be",
       "red-hat-issues-important-kpatch-security-update-37d83e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-kpatch-security-update-faa2261e",
+    "title": "Red Hat Issues kpatch Security Update",
+    "summary": "Red Hat released an important security update for kpatch packages on RHEL 9.2 Update Services for SAP Solutions, addressing multiple kernel patch vulnerabilities. The update includes patches for kpatch-patch-5_14_0-284_134_1 through kpatch-patch-5_14_0-284_188_1, each with CVSS scores linked in the advisory. Users should install the patches promptly to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95600",
+    "publishedAt": "2026-11-05T17:25:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kpatch-security-update",
+      "article-faa2261e",
+      "faa2261e",
+      "red-hat-issues-kpatch-security-update-37d83e"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-thunderbird-security-update-6241e274",
+    "title": "Red Hat Issues Thunderbird Security Update",
+    "summary": "Red Hat released an important security update for Thunderbird on RHEL 9.6 EUS, addressing multiple vulnerabilities and adding enhancements. The update resolves several bugs that could allow privilege escalation or data leakage, with CVSS scores available via referenced CVE links. Users should apply the update immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95596",
+    "publishedAt": "2026-11-05T17:22:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-thunderbird-security-update",
+      "article-6241e274",
+      "6241e274",
+      "red-hat-issues-thunderbird-security-update-37d841"
     ]
   },
   {
@@ -6492,6 +6564,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-issues-visionos-27-3-beta-update-16dfe139",
+    "title": "Apple Issues visionOS 27.3 Beta Update",
+    "summary": "Apple released visionOS 27.3 beta (24N5286r), updating the downloads view component. The beta introduces UI refinements, performance tweaks, and bug fixes for the downloads interface, improving user experience and stability. Beta testers can install the update via the Apple Beta Software Program and should report any regressions or issues to Apple for further refinement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026e",
+    "publishedAt": "2026-11-03T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-issues-visionos-27-3-beta-update",
+      "article-16dfe139",
+      "16dfe139",
+      "apple-issues-visionos-27-3-beta-update-66bdb2"
+    ]
+  },
+  {
+    "slug": "apple-releases-watchos-27-3-beta-d5b4cf5d",
+    "title": "Apple Releases watchOS 27.3 Beta",
+    "summary": "Apple released watchOS 27.3 beta (24S5284h), updating the watch interface and system components. The beta adds UI improvements, performance optimizations, and fixes for known bugs, enhancing overall device stability. Users can install the beta through the Apple Beta Software Program and should report any issues to Apple for refinement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026f",
+    "publishedAt": "2026-11-03T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-watchos-27-3-beta",
+      "article-d5b4cf5d",
+      "d5b4cf5d",
+      "apple-releases-watchos-27-3-beta-66bdb2"
+    ]
+  },
+  {
     "slug": "apple-releases-macos-27-3-beta-f2295d9a",
     "title": "Apple Releases macOS 27.3 Beta",
     "summary": "Apple released macOS 27.3 beta (26C5035r) for macOS users. The beta contains internal security enhancements and bug fixes, with details documented in the official release notes, and is part of Apple’s ongoing security maintenance cycle. Users should download the beta from Apple’s site and install it to keep systems current.",
@@ -9420,97 +9528,6 @@ export const news: NewsBrief[] = [
       "article-0bd9b67a",
       "0bd9b67a",
       "anthropic-adds-edr-monitoring-to-claude-cowork-3b0cda"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-bind9-18-security-update-5e50442b",
-    "title": "Red Hat Issues Bind9.18 Security Update",
-    "summary": "Red Hat released a security update for bind9.18 on RHEL 9.6 EUS, addressing multiple vulnerabilities. The update mitigates bugs identified by Red Hat Product Security, with CVSS base scores available via CVE links, though no specific CVE IDs are named. Security teams should apply the bind9.18 update immediately to eliminate the identified flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94278",
-    "publishedAt": "2026-11-03T03:58:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-bind9-18-security-update",
-      "article-5e50442b",
-      "5e50442b",
-      "red-hat-issues-bind9-18-security-update-37d8c1"
-    ]
-  },
-  {
-    "slug": "workos-breach-exposes-customer-slack-data-via-arte-1bec1a93",
-    "title": "WorkOS Breach Exposes Customer Slack Data via ARTEX AI",
-    "summary": "Hackers leveraged the ARTEX AI framework to breach WorkOS's sales application, exposing customer contact information and Slack conversation records. The incident, detected on October 30, 2026, involved reconnaissance and exploitation attempts, but no evidence of credential theft or ransomware was reported. WorkOS issued a security bulletin on November 2 and recommends applying the patch and strengthening monitoring for unauthorized access.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/workos-data-breach/",
-    "publishedAt": "2026-11-03T03:43:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "workos-breach-exposes-customer-slack-data-via-arte",
-      "article-1bec1a93",
-      "1bec1a93",
-      "workos-breach-exposes-customer-slack-data-via-arte-66ca17",
-      "workos-breach-exposes-customer-slack-data-via-artex-ai"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-broadcast-scheduled-for-nov-3-2026-38cd315b",
-    "title": "ISC Stormcast Broadcast Scheduled for Nov 3, 2026",
-    "summary": "ISC releases its weekly Stormcast briefing for Tuesday, November 3, 2026, covering the latest threat landscape and incident responses. The session will review recent high-profile exploits, emerging malware trends, and defensive best practices for security teams. Listeners can stream the podcast via the ISC website or download the episode for offline review.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33484",
-    "publishedAt": "2026-11-03T02:00:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-broadcast-scheduled-for-nov-3-2026",
-      "article-38cd315b",
-      "38cd315b",
-      "isc-stormcast-broadcast-scheduled-for-nov-3-2026-57dd7e"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-bind-security-update-1e96ff18",
-    "title": "Red Hat Releases Bind Security Update",
-    "summary": "Red Hat issued a security update for the BIND DNS server on Enterprise Linux 10.0 Extended Update Support. The patch addresses multiple vulnerabilities with CVSS scores detailed in the referenced CVE links, mitigating potential remote code execution and denial‑of‑service risks. Administrators should apply the RHSA‑2026:94115 update promptly to secure DNS operations.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94115",
-    "publishedAt": "2026-11-03T01:25:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-bind-security-update",
-      "article-1e96ff18",
-      "1e96ff18",
-      "red-hat-releases-bind-security-update-37d8c5"
-    ]
-  },
-  {
-    "slug": "uk-warns-of-rising-cyberattack-scale-1e42a351",
-    "title": "UK Warns of Rising Cyberattack Scale",
-    "summary": "The UK National Cyber Security Centre chief warned of an unprecedented rise in cyberattacks expected in the coming months. He cited long‑tolerated vulnerabilities now being discovered and exploited at a scale previously unimaginable, stressing the need for stronger defenses. The NCSC will publish its annual report with recommendations, urging organizations to adopt proactive security measures and update legacy systems.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/uk-ncsc-predicts-rise-cyberattacks-coming-months",
-    "publishedAt": "2026-11-03T00:01:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-warns-of-rising-cyberattack-scale",
-      "article-1e42a351",
-      "1e42a351",
-      "uk-warns-of-rising-cyberattack-scale-2864e4"
     ]
   }
 ];

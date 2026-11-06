@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2026 23:44:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:46:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Bind Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-6b2a8ce1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-bind-security-update-6b2a8ce1</guid>
+      <description><![CDATA[Red Hat released a bind security and bug‑fix update for RHEL 7 ELS, targeting the DNS server. The update is rated Important, with CVSS scores for each referenced CVE, indicating high‑severity flaws. Apply the patch via standard RHEL repositories; no workarounds are listed, and the update fixes security and functional issues.]]></description>
+      <pubDate>Fri, 06 Nov 2026 00:07:04 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95726">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Google Fixes 216 Android Flaws in November 2026 Bulletin</title>
       <link>https://secubuzz.com/news/google-fixes-216-android-flaws-in-november-2026-bu-9856043c</link>
@@ -78,6 +87,15 @@
       <pubDate>Thu, 05 Nov 2026 21:30:30 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel-RT Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-security-update-4121a22f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-security-update-4121a22f</guid>
+      <description><![CDATA[Red Hat issued a kernel‑rt security update for Red Hat Enterprise Linux 7 Extended Lifecycle Support, addressing multiple vulnerabilities. The update carries an Important security impact rating, with CVSS base scores provided for each referenced CVE, indicating high‑severity flaws. Red Hat recommends applying the kernel‑rt patch immediately; no workarounds are listed, and the update is available through standard RHEL repositories.]]></description>
+      <pubDate>Thu, 05 Nov 2026 21:05:03 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95721">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Phishing Simulation Exceeds Scope, Exposes Users to Real Threats</title>
@@ -203,6 +221,24 @@
       <description><![CDATA[Red Hat released an important security update for multiple kpatch packages in RHEL 8.8, addressing several kernel patch vulnerabilities. The CVE references linked in the advisory indicate that the patches fix kernel memory corruption issues that could lead to privilege escalation. Administrators should apply the kpatch updates promptly; no workarounds are available, and the patch mitigates all identified kernel flaws.]]></description>
       <pubDate>Thu, 05 Nov 2026 17:25:22 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95601">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues kpatch Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-kpatch-security-update-faa2261e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kpatch-security-update-faa2261e</guid>
+      <description><![CDATA[Red Hat released an important security update for kpatch packages on RHEL 9.2 Update Services for SAP Solutions, addressing multiple kernel patch vulnerabilities. The update includes patches for kpatch-patch-5_14_0-284_134_1 through kpatch-patch-5_14_0-284_188_1, each with CVSS scores linked in the advisory. Users should install the patches promptly to prevent exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 17:25:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95600">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Thunderbird Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-security-update-6241e274</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-security-update-6241e274</guid>
+      <description><![CDATA[Red Hat released an important security update for Thunderbird on RHEL 9.6 EUS, addressing multiple vulnerabilities and adding enhancements. The update resolves several bugs that could allow privilege escalation or data leakage, with CVSS scores available via referenced CVE links. Users should apply the update immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Thu, 05 Nov 2026 17:22:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95596">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 15:15:10 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95575">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95574: Important: qt5-qtbase security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95574-important-qt5-qtbase-security-upda-c31c5cb8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95574-important-qt5-qtbase-security-upda-c31c5cb8</guid>
-      <description><![CDATA[An update for qt5-qtbase is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:05:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95574">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cyberhaven Unveils Agentic Data Security for AI Governance</title>
-      <link>https://secubuzz.com/news/cyberhaven-unveils-agentic-data-security-for-ai-go-f9027bf3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyberhaven-unveils-agentic-data-security-for-ai-go-f9027bf3</guid>
-      <description><![CDATA[Cyberhaven launched Agentic Data Security (ADS) to give CISOs and AI governance teams visibility into AI agents’ data interactions. ADS records data usage, identifies the acting entity, tracks destinations, and blocks sensitive data exfiltration before it leaves. The solution integrates with existing security stacks; no firmware updates are needed, but organizations should assess ADS for AI‑driven workflows.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:04:07 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/05/cyberhaven-agentic-data-security/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GitHub Blocks pull_request_target Workflows by Default</title>
-      <link>https://secubuzz.com/news/github-blocks-pull-request-target-workflows-by-def-1be554cc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-blocks-pull-request-target-workflows-by-def-1be554cc</guid>
-      <description><![CDATA[GitHub will block pull_request_target workflows by default on December 2, tightening Actions security. The change removes privileged execution triggered by pull requests, reducing malicious code injection risk in CI pipelines. Maintainers must adjust workflows to use pull_request or push events, request an exception via GitHub support, and verify least privilege properly.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:01:39 GMT</pubDate>
-      <source url="https://socket.dev/blog/github-to-block-pull-request-target">Socket.dev</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Service Desk Identity Gap Exploited for MFA Bypass</title>
-      <link>https://secubuzz.com/news/service-desk-identity-gap-exploited-for-mfa-bypass-31313919</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/service-desk-identity-gap-exploited-for-mfa-bypass-31313919</guid>
-      <description><![CDATA[Attackers target IT service desks to bypass MFA by impersonating staff and persuading employees to reset passwords or register authentication devices. Specops Software warns that traditional identity verification is insufficient, enabling social engineering at the desk to grant attackers credential control without MFA. Defenders should enforce MFA for service desk actions, limit password reset permissions, and monitor anomalous authentication requests.]]></description>
-      <pubDate>Thu, 05 Nov 2026 15:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
