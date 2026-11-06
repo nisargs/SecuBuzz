@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "industrial-control-systems-harden-refrigeration-mo-04118118",
+    "title": "Industrial Control Systems Harden Refrigeration Monitoring",
+    "summary": "Industrial control systems used for refrigeration monitoring face new attack vectors that could disrupt temperature regulation and safety protocols. The advisory recommends hardening network segmentation, updating firmware, and implementing strict authentication to mitigate unauthorized access and command injection risks. Security teams should deploy the latest vendor patches, monitor anomalous traffic, and conduct regular penetration testing to validate controls.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/us-government-partners-urge-hardening-industrial-refrig",
+    "publishedAt": "2026-11-06T16:00:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "industrial-control-systems-harden-refrigeration-mo",
+      "article-04118118",
+      "04118118",
+      "industrial-control-systems-harden-refrigeration-mo-251d4f",
+      "industrial-control-systems-harden-refrigeration-monitoring"
+    ]
+  },
+  {
     "slug": "veeam-alerts-to-boot-failures-on-amd-epyc-hosts-6aa6506a",
     "title": "Veeam Alerts to Boot Failures on AMD EPYC Hosts",
     "summary": "Veeam warned that its Software Appliance virtual machines fail to boot on AMD EPYC hosts. The flaw arises from a bootloader incompatibility with EPYC firmware, causing kernel panics that halt services but pose no remote code execution risk. Veeam recommends applying the latest appliance update or disabling the problematic boot option, and verifying firmware compatibility before deploying EPYC hosts.",
@@ -1998,21 +2017,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cwp-web-server-trojan-enables-linux-backdoors-96a43958",
-    "title": "CWP Web Server Trojan Enables Linux Backdoors",
-    "summary": "A trojanized Control Web Panel (CWP) web server, cwpsrv, installs the CWPdoor malware on Linux servers. The trojan exploits a flaw in CWP’s authentication, granting attackers privileged access and a persistent backdoor. Update CWP to the latest release, remove unauthorized cwpsrv binaries, and regularly monitor for anomalous outbound traffic daily.",
+    "slug": "cwpdoor-trojan-exploits-cwp-control-panel-vulnerab-21527595",
+    "title": "CWPdoor Trojan Exploits CWP Control Panel Vulnerability to Grant Root Access on Linux Servers",
+    "summary": "CWPdoor, a trojanized variant of the CWP control panel, has infected Linux servers worldwide by exploiting a flaw in CWP’s authentication that grants attackers root access. The vulnerability lets attackers execute arbitrary code, install backdoors, and exfiltrate data, threatening system integrity. Admins should apply the latest patch, remove unauthorized binaries, and monitor outbound traffic to mitigate the threat.",
     "category": "Vulnerability",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
     "publishedAt": "2026-11-05T16:24:26.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/hackers-backdoor-linux-servers-using-trojanized-cwp-web"
+      }
+    ],
     "aliases": [
-      "cwp-web-server-trojan-enables-linux-backdoors",
-      "article-96a43958",
-      "96a43958",
-      "cwp-web-server-trojan-enables-linux-backdoors-68daec"
+      "cwpdoor-trojan-exploits-cwp-control-panel-vulnerab",
+      "article-21527595",
+      "21527595",
+      "cwpdoor-trojan-exploits-cwp-control-panel-vulnerab-68daec",
+      "cwpdoor-trojan-exploits-cwp-control-panel-vulnerability-to-g"
     ]
   },
   {
@@ -9524,25 +9549,6 @@ export const news: NewsBrief[] = [
       "article-36cbb380",
       "36cbb380",
       "exposure-prioritization-framework-explained-44e845"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-pipewire-for-moderate-security-imp-0108f945",
-    "title": "Red Hat Updates pipewire for Moderate Security Impact",
-    "summary": "An update for pipewire is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System base score is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94490",
-    "publishedAt": "2026-11-03T11:15:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-pipewire-for-moderate-security-imp",
-      "article-0108f945",
-      "0108f945",
-      "red-hat-updates-pipewire-for-moderate-security-imp-37d8b9",
-      "red-hat-updates-pipewire-for-moderate-security-impact"
     ]
   }
 ];

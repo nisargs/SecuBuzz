@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybernewsai.com/blog/us-government-partners-urge-hardening-industrial-refrig",
+    "sourceUrl": "https://cybernewsai.com/blog/us-government-partners-urge-hardening-industrial-refrig",
+    "title": "Industrial Control Systems Harden Refrigeration Monitoring",
+    "headline": "Industrial Control Systems Harden Refrigeration Monitoring",
+    "summary": "Industrial control systems used for refrigeration monitoring face new attack vectors that could disrupt temperature regulation and safety protocols. The advisory recommends hardening network segmentation, updating firmware, and implementing strict authentication to mitigate unauthorized access and command injection risks. Security teams should deploy the latest vendor patches, monitor anomalous traffic, and conduct regular penetration testing to validate controls.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-06T16:00:22.000Z",
+    "ingestedAt": "2026-11-06T16:44:10.274Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybernewsai.com/blog/us-government-partners-urge-hardening-industrial-refrig",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
     "title": "Veeam Alerts to Boot Failures on AMD EPYC Hosts",
@@ -1742,18 +1758,23 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
-    "title": "CWP Web Server Trojan Enables Linux Backdoors",
-    "headline": "CWP Web Server Trojan Enables Linux Backdoors",
-    "summary": "A trojanized Control Web Panel (CWP) web server, cwpsrv, installs the CWPdoor malware on Linux servers. The trojan exploits a flaw in CWP’s authentication, granting attackers privileged access and a persistent backdoor. Update CWP to the latest release, remove unauthorized cwpsrv binaries, and regularly monitor for anomalous outbound traffic daily.",
+    "title": "CWPdoor Trojan Exploits CWP Control Panel Vulnerability to Grant Root Access on Linux Servers",
+    "headline": "CWPdoor Trojan Exploits CWP Control Panel Vulnerability to Grant Root Access on Linux Servers",
+    "summary": "CWPdoor, a trojanized variant of the CWP control panel, has infected Linux servers worldwide by exploiting a flaw in CWP’s authentication that grants attackers root access. The vulnerability lets attackers execute arbitrary code, install backdoors, and exfiltrate data, threatening system integrity. Admins should apply the latest patch, remove unauthorized binaries, and monitor outbound traffic to mitigate the threat.",
     "category": "VULNERABILITY",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
     "publishedAt": "2026-11-05T16:24:26.000Z",
     "ingestedAt": "2026-11-05T16:43:11.176Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/hackers-backdoor-linux-servers-using-trojanized-cwp-web"
+      }
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:94520",
@@ -8288,22 +8309,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:94490",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94490",
-    "title": "Red Hat Updates pipewire for Moderate Security Impact",
-    "headline": "Red Hat Updates pipewire for Moderate Security Impact",
-    "summary": "An update for pipewire is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System base score is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-03T11:15:38.000Z",
-    "ingestedAt": "2026-11-03T18:45:22.589Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:94490",
     "additionalSources": []
   }
 ]
