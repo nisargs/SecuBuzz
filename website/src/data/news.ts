@@ -11,6 +11,117 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "veeam-alerts-to-boot-failures-on-amd-epyc-hosts-6aa6506a",
+    "title": "Veeam Alerts to Boot Failures on AMD EPYC Hosts",
+    "summary": "Veeam warned that its Software Appliance virtual machines fail to boot on AMD EPYC hosts. The flaw arises from a bootloader incompatibility with EPYC firmware, causing kernel panics that halt services but pose no remote code execution risk. Veeam recommends applying the latest appliance update or disabling the problematic boot option, and verifying firmware compatibility before deploying EPYC hosts.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
+    "publishedAt": "2026-11-06T15:25:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "veeam-alerts-to-boot-failures-on-amd-epyc-hosts",
+      "article-6aa6506a",
+      "6aa6506a",
+      "veeam-alerts-to-boot-failures-on-amd-epyc-hosts-4e16b5"
+    ]
+  },
+  {
+    "slug": "chatgpt-cve-2025-51591-bypasses-lockdown-mode-027c7473",
+    "title": "ChatGPT CVE-2025-51591 Bypasses Lockdown Mode",
+    "summary": "A newly disclosed CVE-2025-51591 flaw in OpenAI’s ChatGPT lets attackers bypass the platform’s lockdown mode, exposing enterprise data. The flaw arises from improper prompt validation, enabling unauthorized code execution inside the sandbox and granting elevated privileges; CVSS 9.2. OpenAI has issued a patch; organizations should apply it within 24 hours and update detection rules to flag anomalous prompts.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate",
+    "publishedAt": "2026-11-06T15:17:35.000Z",
+    "cves": [
+      "CVE-2025-51591"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chatgpt-cve-2025-51591-bypasses-lockdown-mode",
+      "article-027c7473",
+      "027c7473",
+      "chatgpt-cve-2025-51591-bypasses-lockdown-mode-43a40b"
+    ]
+  },
+  {
+    "slug": "big-tech-files-lawsuit-against-california-scrollin-35fb5a9b",
+    "title": "Big Tech Files Lawsuit Against California Scrolling Law",
+    "summary": "Google, Meta, and TikTok sued California, claiming the state’s scrolling‑limit law violates free‑speech rights and parental control. They argue the regulation imposes unconstitutional restrictions on platform moderation and could harm user experience for minors. The lawsuit seeks a preliminary injunction to stop enforcement while the case proceeds in federal court.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/big-tech-sues-over-california-plan-to-limit-kids-scrolling",
+    "publishedAt": "2026-11-06T15:06:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "big-tech-files-lawsuit-against-california-scrollin",
+      "article-35fb5a9b",
+      "35fb5a9b",
+      "big-tech-files-lawsuit-against-california-scrollin-52fa04",
+      "big-tech-files-lawsuit-against-california-scrolling-law"
+    ]
+  },
+  {
+    "slug": "imsi-and-imei-phone-broadcasts-and-readability-e3d9e5cd",
+    "title": "IMSI and IMEI: Phone Broadcasts and Readability",
+    "summary": "Mobile devices transmit IMSI and IMEI identifiers to cellular networks, allowing operators to track device location and authenticate subscribers. Attackers can harvest these IDs through network sniffing or malicious apps, enabling targeted tracking or spoofing of device identity. Rotating the IMSI periodically or using privacy‑enhancing SIMs can mitigate tracking risks, while IMEI remains static and less exploitable.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/",
+    "publishedAt": "2026-11-06T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "imsi-and-imei-phone-broadcasts-and-readability",
+      "article-e3d9e5cd",
+      "e3d9e5cd",
+      "imsi-and-imei-phone-broadcasts-and-readability-2a597e"
+    ]
+  },
+  {
+    "slug": "locating-videos-via-background-airplane-sounds-b8b292a2",
+    "title": "Locating Videos via Background Airplane Sounds",
+    "summary": "Researchers showed a method that pinpoints a recording’s location by analyzing faint airplane sounds in its background. The technique uses Doppler curves to track frequency shifts as aircraft pass overhead, enabling triangulation of the source. Although academically interesting, the method raises privacy concerns for creators who may inadvertently disclose their location through ambient audio.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
+    "publishedAt": "2026-11-06T14:57:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "locating-videos-via-background-airplane-sounds",
+      "article-b8b292a2",
+      "b8b292a2",
+      "locating-videos-via-background-airplane-sounds-361b14"
+    ]
+  },
+  {
+    "slug": "trezor-implant-llmjacking-sap-flaws-weaponized-5d6c32a5",
+    "title": "Trezor Implant, LLMJacking, SAP Flaws Weaponized",
+    "summary": "The report highlights multiple emerging threats, including a Trezor hardware wallet implant, LLMJacking ransomware billing at $1M, and SAP vulnerabilities weaponized within days. Additionally, Synology warns of NAS ransomware attacks, Flowise 'hello' attacks exploit, and Chainalysis breach impacts expanding across customers. Security teams should review detection rules, apply vendor patches, and monitor for credential theft to mitigate these risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
+    "publishedAt": "2026-11-06T14:40:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trezor-implant-llmjacking-sap-flaws-weaponized",
+      "article-5d6c32a5",
+      "5d6c32a5",
+      "trezor-implant-llmjacking-sap-flaws-weaponized-793a79"
+    ]
+  },
+  {
     "slug": "ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e",
     "title": "CEO‑Spoofing Scammers Indicted for $100M AI‑Assisted Fraud",
     "summary": "Three suspects face indictment for orchestrating CEO‑spoofing scams that used AI to facilitate over $100 million in fraud. The scheme exploited social engineering and AI‑generated phishing content to deceive executives, bypassing email authentication and credential verification. U.S. authorities are pursuing extradition of the suspects from Europe, and organizations are urged to enforce multi‑factor authentication and verify executive communications.",
@@ -45,6 +156,25 @@ export const news: NewsBrief[] = [
       "article-e807c301",
       "e807c301",
       "digicert-breach-exposes-business-customer-data-3638a4"
+    ]
+  },
+  {
+    "slug": "european-freezer-hacks-cascade-through-supply-chai-93f96966",
+    "title": "European Freezer Hacks Cascade Through Supply Chains",
+    "summary": "Recent hacks targeting supermarket freezer systems in Europe demonstrate how a single security flaw can propagate across an entire industry. The attacks disrupted refrigeration controls, potentially compromising food safety and supply chain integrity, but no data breach was reported. Industry analysts advise vendors to harden freezer firmware and implement network segmentation to prevent rapid spread of similar vulnerabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
+    "publishedAt": "2026-11-06T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "european-freezer-hacks-cascade-through-supply-chai",
+      "article-93f96966",
+      "93f96966",
+      "european-freezer-hacks-cascade-through-supply-chai-11c450",
+      "european-freezer-hacks-cascade-through-supply-chains"
     ]
   },
   {
@@ -278,6 +408,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "kernel-rmp-check-flaw-enables-hypervisor-memory-co-04f2f0ba",
+    "title": "Kernel RMP Check Flaw Enables Hypervisor Memory Compromise",
+    "summary": "A kernel flaw in AMD processors’ IOMMU RMP checks lets a local hypervisor attacker trigger an out‑of‑bounds condition and potentially compromise SEV‑SNP guest memory. CVE‑2023‑20585 affects multiple architectures, including ARM64 and x86, and could lead to integrity violations in virtualized environments. Ubuntu released a kernel update patching RMP validation; admins should apply the latest kernel to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9003-1",
+    "publishedAt": "2026-11-06T11:30:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kernel-rmp-check-flaw-enables-hypervisor-memory-co",
+      "article-04f2f0ba",
+      "04f2f0ba",
+      "kernel-rmp-check-flaw-enables-hypervisor-memory-co-7e89b0",
+      "kernel-rmp-check-flaw-enables-hypervisor-memory-compromise"
+    ]
+  },
+  {
     "slug": "athena-model-predictions-warn-of-imminent-ai-risks-457005fd",
     "title": "Athena Model Predictions Warn of Imminent AI Risks",
     "summary": "The piece reviews updates to the Athena model and cites Dario Amodei’s call to pace AI development. Amodei warns that the gap between model performance and societal readiness will widen, urging caution in deployment. Readers are encouraged to examine the model’s limitations and prepare mitigation strategies for emerging AI risks.",
@@ -293,6 +442,24 @@ export const news: NewsBrief[] = [
       "article-457005fd",
       "457005fd",
       "athena-model-predictions-warn-of-imminent-ai-risks-1d4ab3"
+    ]
+  },
+  {
+    "slug": "io-uring-cancellation-bug-causes-kernel-crash-3079934a",
+    "title": "io_uring Cancellation Bug Causes Kernel Crash",
+    "summary": "A Linux kernel io_uring flaw lets a local attacker trigger a denial‑of‑service by running operations in the wrong task context. CVE‑2026‑81010 affects multiple architectures and causes system crashes, but requires local privilege and offers no remote code execution. Ubuntu released a kernel update fixing the io_uring cancellation bug; users should apply the latest kernel to avoid crashes.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9002-1",
+    "publishedAt": "2026-11-06T11:22:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "io-uring-cancellation-bug-causes-kernel-crash",
+      "article-3079934a",
+      "3079934a",
+      "io-uring-cancellation-bug-causes-kernel-crash-7e89b4"
     ]
   },
   {
@@ -525,21 +692,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chainalysis-breach-exposes-all-user-credentials-9267617d",
-    "title": "Chainalysis Breach Exposes All User Credentials",
-    "summary": "Chainalysis disclosed that an agentic attack exposed usernames, password hashes, and live tokens for all users, compromising Reactor and Data Solutions. The breach forced the company to revoke access and suspend services while investigators evaluated credential theft and potential data exfiltration. Teams should enforce multi‑factor authentication, rotate compromised credentials, and monitor all affected accounts for suspicious activity.",
+    "slug": "chainalysis-breach-exposes-credentials-and-live-to-40439140",
+    "title": "Chainalysis Breach Exposes Credentials and Live Tokens",
+    "summary": "Blockchain intelligence firm Chainalysis reported a breach that exposed credentials and live tokens for all customers. The attack compromised internal tools and systems, potentially allowing attackers to access customer accounts and transfer funds. Chainalysis urged customers to reset credentials, monitor accounts, and apply security patches immediately to mitigate further exploitation.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
     "publishedAt": "2026-11-06T08:04:49.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/"
+      }
+    ],
     "aliases": [
-      "chainalysis-breach-exposes-all-user-credentials",
-      "article-9267617d",
-      "9267617d",
-      "chainalysis-breach-exposes-all-user-credentials-2a4e36"
+      "chainalysis-breach-exposes-credentials-and-live-to",
+      "article-40439140",
+      "40439140",
+      "chainalysis-breach-exposes-credentials-and-live-to-2a4e36",
+      "chainalysis-breach-exposes-credentials-and-live-tokens"
     ]
   },
   {
@@ -9370,177 +9543,6 @@ export const news: NewsBrief[] = [
       "0108f945",
       "red-hat-updates-pipewire-for-moderate-security-imp-37d8b9",
       "red-hat-updates-pipewire-for-moderate-security-impact"
-    ]
-  },
-  {
-    "slug": "kernel-race-condition-exploits-cause-dos-cve-2022-da40416e",
-    "title": "Kernel Race Condition Exploits Cause DoS CVE‑2022‑1205",
-    "summary": "Duoming Zhou identified race conditions in the AX.25 amateur radio protocol within the Linux kernel, creating CVE‑2022‑1205, a use‑after‑free flaw. The vulnerability permits local attackers to trigger a denial‑of‑service crash, potentially compromising system stability. Red Hat and other vendors have released kernel updates correcting the flaw across multiple subsystems; administrators should apply the patch promptly.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8961-1",
-    "publishedAt": "2026-11-03T11:05:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kernel-race-condition-exploits-cause-dos-cve-2022",
-      "article-da40416e",
-      "da40416e",
-      "kernel-race-condition-exploits-cause-dos-cve-2022-7fbd02",
-      "kernel-race-condition-exploits-cause-dos-cve-2022-1205"
-    ]
-  },
-  {
-    "slug": "kernel-clock-driver-null-dereference-cve-2022-3114-d1d8373f",
-    "title": "Kernel Clock Driver Null Dereference CVE‑2022‑3114",
-    "summary": "Duoming Zhou uncovered race conditions in the AX.25 protocol and a null pointer dereference in the i.MX clock driver, creating CVE‑2022‑1205 and CVE‑2022‑3114, both local use‑after‑free flaws. Each vulnerability allows local attackers to trigger a denial‑of‑service crash, potentially destabilizing affected systems. Kernel updates correcting these flaws across multiple architectures have been released; administrators should apply the patches promptly.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8963-1",
-    "publishedAt": "2026-11-03T11:04:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kernel-clock-driver-null-dereference-cve-2022-3114",
-      "article-d1d8373f",
-      "d1d8373f",
-      "kernel-clock-driver-null-dereference-cve-2022-3114-7fbcfb"
-    ]
-  },
-  {
-    "slug": "linux-kernel-subsystems-vulnerabilities-patching-u-78ae618d",
-    "title": "Linux Kernel Subsystems Vulnerabilities Patching Update",
-    "summary": "Linux kernel subsystems like USB gadget drivers and memory management contain flaws that could let attackers compromise a system. Improper device input handling and memory allocation could allow privilege escalation or denial of service. Ubuntu released a kernel update patching all affected subsystems; administrators should apply it promptly to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8959-1",
-    "publishedAt": "2026-11-03T11:03:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-subsystems-vulnerabilities-patching-u",
-      "article-78ae618d",
-      "78ae618d",
-      "linux-kernel-subsystems-vulnerabilities-patching-u-7fbd59",
-      "linux-kernel-subsystems-vulnerabilities-patching-update"
-    ]
-  },
-  {
-    "slug": "linux-kernel-bluetooth-use-after-free-vulnerabilit-82a11cdb",
-    "title": "Linux Kernel Bluetooth Use-After-Free Vulnerabilities Fixed",
-    "summary": "A use‑after‑free flaw in the Linux kernel Bluetooth subsystem (CVE‑2021‑3640) allows a local attacker to trigger a denial‑of‑service or potentially execute arbitrary code. Another CVE‑2022‑49058 flaw in the kernel’s file‑system infrastructure also permits local privilege escalation or denial‑of‑service. Ubuntu released kernel updates that patch both vulnerabilities; administrators should apply the latest kernel version immediately to mitigate the risks.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8968-1",
-    "publishedAt": "2026-11-03T11:03:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-bluetooth-use-after-free-vulnerabilit",
-      "article-82a11cdb",
-      "82a11cdb",
-      "linux-kernel-bluetooth-use-after-free-vulnerabilit-7fbce8",
-      "linux-kernel-bluetooth-use-after-free-vulnerabilities-fixed"
-    ]
-  },
-  {
-    "slug": "usn-8967-1-linux-kernel-aws-vulnerability-b5a0eb08",
-    "title": "USN-8967-1: Linux kernel (AWS) vulnerability",
-    "summary": "Jürgen Groß discovered that the Xen network backend driver in the Linux kernel did not adequately limit the amount of queued packets when a guest did not process them. An attacker in a guest VM can use this to cause a denial of service (excessive kernel memory consumption) in the network backend domain. The vulnerability is tracked as CVE-2026-98432.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8967-1",
-    "publishedAt": "2026-11-03T11:03:11.000Z",
-    "cves": [
-      "CVE-2026-98432"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-8967-1-linux-kernel-aws-vulnerability",
-      "article-b5a0eb08",
-      "b5a0eb08",
-      "usn-8967-1-linux-kernel-aws-vulnerability-7fbcec"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-linux-kernel-scsi-nfs-flaws-ce91eeae",
-    "title": "Ubuntu Patches Linux Kernel SCSI NFS Flaws",
-    "summary": "Ubuntu released USN-8964-1 patching Linux kernel vulnerabilities in SCSI and NFS subsystems allowing system compromise. The flaws, CVE-2022-49082 and CVE-2025-39730, permit memory corruption or privilege escalation via local or network file share access. Administrators must apply kernel updates via standard Ubuntu channels to mitigate exploitation risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8964-1",
-    "publishedAt": "2026-11-03T11:02:41.000Z",
-    "cves": [
-      "CVE-2022-49082",
-      "CVE-2025-39730"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-linux-kernel-scsi-nfs-flaws",
-      "article-ce91eeae",
-      "ce91eeae",
-      "ubuntu-patches-linux-kernel-scsi-nfs-flaws-7fbcf7"
-    ]
-  },
-  {
-    "slug": "gorbag-exploits-winrar-flaw-for-data-theft-d7ba2ddb",
-    "title": "Gorbag Exploits WinRAR Flaw for Data Theft",
-    "summary": "Gorbag exploited a WinRAR flaw to deploy simple information‑stealing malware against Ukrainian law enforcement, justice, and defense entities. The vulnerability enabled arbitrary code execution via a crafted archive, but no zero‑day status was confirmed, limiting the attack to a known flaw. Teams should patch WinRAR to the latest release and monitor for suspicious archive extraction.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
-    "publishedAt": "2026-11-03T11:00:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gorbag-exploits-winrar-flaw-for-data-theft",
-      "article-d7ba2ddb",
-      "d7ba2ddb",
-      "gorbag-exploits-winrar-flaw-for-data-theft-bb3727"
-    ]
-  },
-  {
-    "slug": "harvard-breach-exposes-851-000-alumni-accounts-62b371b9",
-    "title": "Harvard Breach Exposes 851,000 Alumni Accounts",
-    "summary": "Hackers accessed Harvard University's Alumni Affairs and Development systems in November 2025, compromising over 850,000 email addresses. The breach exposed personal identifiers and contact data, creating a high‑risk exposure for alumni and potential phishing vectors, with no credential theft reported.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
-    "publishedAt": "2026-11-03T10:53:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "harvard-breach-exposes-851-000-alumni-accounts",
-      "article-62b371b9",
-      "62b371b9",
-      "harvard-breach-exposes-851-000-alumni-accounts-76cbec"
-    ]
-  },
-  {
-    "slug": "ncsc-warns-ai-accelerates-ransomware-on-critical-i-e6aa1c94",
-    "title": "NCSC Warns AI Accelerates Ransomware on Critical Infrastructure",
-    "summary": "The UK National Cyber Security Centre warned that AI is enabling ransomware actors to launch attacks on critical infrastructure more quickly and cheaply. Its 2026 Annual Review recorded 1,831 attack reports, including 337 incidents that required Incident Management Team support. The NCSC urges organizations to adopt AI‑aware defenses, such as threat detection and response playbooks, to mitigate accelerated ransomware risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ai-could-accelerate-ransomware/",
-    "publishedAt": "2026-11-03T10:50:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ncsc-warns-ai-accelerates-ransomware-on-critical-i",
-      "article-e6aa1c94",
-      "e6aa1c94",
-      "ncsc-warns-ai-accelerates-ransomware-on-critical-i-7f5e2e",
-      "ncsc-warns-ai-accelerates-ransomware-on-critical-infrastruct"
     ]
   }
 ];

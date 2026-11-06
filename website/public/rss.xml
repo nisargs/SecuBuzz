@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 14:47:11 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 15:45:04 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Veeam Alerts to Boot Failures on AMD EPYC Hosts</title>
+      <link>https://secubuzz.com/news/veeam-alerts-to-boot-failures-on-amd-epyc-hosts-6aa6506a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/veeam-alerts-to-boot-failures-on-amd-epyc-hosts-6aa6506a</guid>
+      <description><![CDATA[Veeam warned that its Software Appliance virtual machines fail to boot on AMD EPYC hosts. The flaw arises from a bootloader incompatibility with EPYC firmware, causing kernel panics that halt services but pose no remote code execution risk. Veeam recommends applying the latest appliance update or disabling the problematic boot option, and verifying firmware compatibility before deploying EPYC hosts.]]></description>
+      <pubDate>Fri, 06 Nov 2026 15:25:31 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ChatGPT CVE-2025-51591 Bypasses Lockdown Mode</title>
+      <link>https://secubuzz.com/news/chatgpt-cve-2025-51591-bypasses-lockdown-mode-027c7473</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-cve-2025-51591-bypasses-lockdown-mode-027c7473</guid>
+      <description><![CDATA[A newly disclosed CVE-2025-51591 flaw in OpenAI’s ChatGPT lets attackers bypass the platform’s lockdown mode, exposing enterprise data. The flaw arises from improper prompt validation, enabling unauthorized code execution inside the sandbox and granting elevated privileges; CVSS 9.2. OpenAI has issued a patch; organizations should apply it within 24 hours and update detection rules to flag anomalous prompts.]]></description>
+      <pubDate>Fri, 06 Nov 2026 15:17:35 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Big Tech Files Lawsuit Against California Scrolling Law</title>
+      <link>https://secubuzz.com/news/big-tech-files-lawsuit-against-california-scrollin-35fb5a9b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/big-tech-files-lawsuit-against-california-scrollin-35fb5a9b</guid>
+      <description><![CDATA[Google, Meta, and TikTok sued California, claiming the state’s scrolling‑limit law violates free‑speech rights and parental control. They argue the regulation imposes unconstitutional restrictions on platform moderation and could harm user experience for minors. The lawsuit seeks a preliminary injunction to stop enforcement while the case proceeds in federal court.]]></description>
+      <pubDate>Fri, 06 Nov 2026 15:06:02 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/big-tech-sues-over-california-plan-to-limit-kids-scrolling">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>IMSI and IMEI: Phone Broadcasts and Readability</title>
+      <link>https://secubuzz.com/news/imsi-and-imei-phone-broadcasts-and-readability-e3d9e5cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/imsi-and-imei-phone-broadcasts-and-readability-e3d9e5cd</guid>
+      <description><![CDATA[Mobile devices transmit IMSI and IMEI identifiers to cellular networks, allowing operators to track device location and authenticate subscribers. Attackers can harvest these IDs through network sniffing or malicious apps, enabling targeted tracking or spoofing of device identity. Rotating the IMSI periodically or using privacy‑enhancing SIMs can mitigate tracking risks, while IMEI remains static and less exploitable.]]></description>
+      <pubDate>Fri, 06 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Locating Videos via Background Airplane Sounds</title>
+      <link>https://secubuzz.com/news/locating-videos-via-background-airplane-sounds-b8b292a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/locating-videos-via-background-airplane-sounds-b8b292a2</guid>
+      <description><![CDATA[Researchers showed a method that pinpoints a recording’s location by analyzing faint airplane sounds in its background. The technique uses Doppler curves to track frequency shifts as aircraft pass overhead, enabling triangulation of the source. Although academically interesting, the method raises privacy concerns for creators who may inadvertently disclose their location through ambient audio.]]></description>
+      <pubDate>Fri, 06 Nov 2026 14:57:48 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html">Schneier on Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Trezor Implant, LLMJacking, SAP Flaws Weaponized</title>
+      <link>https://secubuzz.com/news/trezor-implant-llmjacking-sap-flaws-weaponized-5d6c32a5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/trezor-implant-llmjacking-sap-flaws-weaponized-5d6c32a5</guid>
+      <description><![CDATA[The report highlights multiple emerging threats, including a Trezor hardware wallet implant, LLMJacking ransomware billing at $1M, and SAP vulnerabilities weaponized within days. Additionally, Synology warns of NAS ransomware attacks, Flowise 'hello' attacks exploit, and Chainalysis breach impacts expanding across customers. Security teams should review detection rules, apply vendor patches, and monitor for credential theft to mitigate these risks.]]></description>
+      <pubDate>Fri, 06 Nov 2026 14:40:09 GMT</pubDate>
+      <source url="https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/">SecurityWeek</source>
+      <category>General</category>
+    </item>
     <item>
       <title>CEO‑Spoofing Scammers Indicted for $100M AI‑Assisted Fraud</title>
       <link>https://secubuzz.com/news/ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e</link>
@@ -24,6 +78,15 @@
       <pubDate>Fri, 06 Nov 2026 14:00:07 GMT</pubDate>
       <source url="https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/">SecurityWeek</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>European Freezer Hacks Cascade Through Supply Chains</title>
+      <link>https://secubuzz.com/news/european-freezer-hacks-cascade-through-supply-chai-93f96966</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/european-freezer-hacks-cascade-through-supply-chai-93f96966</guid>
+      <description><![CDATA[Recent hacks targeting supermarket freezer systems in Europe demonstrate how a single security flaw can propagate across an entire industry. The attacks disrupted refrigeration controls, potentially compromising food safety and supply chain integrity, but no data breach was reported. Industry analysts advise vendors to harden freezer firmware and implement network segmentation to prevent rapid spread of similar vulnerabilities.]]></description>
+      <pubDate>Fri, 06 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast">Dark Reading</source>
+      <category>General</category>
     </item>
     <item>
       <title>Post‑Quantum Threats to Web Privacy Protocols</title>
@@ -134,6 +197,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Kernel RMP Check Flaw Enables Hypervisor Memory Compromise</title>
+      <link>https://secubuzz.com/news/kernel-rmp-check-flaw-enables-hypervisor-memory-co-04f2f0ba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kernel-rmp-check-flaw-enables-hypervisor-memory-co-04f2f0ba</guid>
+      <description><![CDATA[A kernel flaw in AMD processors’ IOMMU RMP checks lets a local hypervisor attacker trigger an out‑of‑bounds condition and potentially compromise SEV‑SNP guest memory. CVE‑2023‑20585 affects multiple architectures, including ARM64 and x86, and could lead to integrity violations in virtualized environments. Ubuntu released a kernel update patching RMP validation; admins should apply the latest kernel to mitigate the risk.]]></description>
+      <pubDate>Fri, 06 Nov 2026 11:30:38 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9003-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Athena Model Predictions Warn of Imminent AI Risks</title>
       <link>https://secubuzz.com/news/athena-model-predictions-warn-of-imminent-ai-risks-457005fd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/athena-model-predictions-warn-of-imminent-ai-risks-457005fd</guid>
@@ -141,6 +213,15 @@
       <pubDate>Fri, 06 Nov 2026 11:30:00 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html">The Hacker News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>io_uring Cancellation Bug Causes Kernel Crash</title>
+      <link>https://secubuzz.com/news/io-uring-cancellation-bug-causes-kernel-crash-3079934a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/io-uring-cancellation-bug-causes-kernel-crash-3079934a</guid>
+      <description><![CDATA[A Linux kernel io_uring flaw lets a local attacker trigger a denial‑of‑service by running operations in the wrong task context. CVE‑2026‑81010 affects multiple architectures and causes system crashes, but requires local privilege and offers no remote code execution. Ubuntu released a kernel update fixing the io_uring cancellation bug; users should apply the latest kernel to avoid crashes.]]></description>
+      <pubDate>Fri, 06 Nov 2026 11:22:23 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9002-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>White House Network Exposed by Residential Proxy Services</title>
@@ -251,10 +332,10 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Chainalysis Breach Exposes All User Credentials</title>
-      <link>https://secubuzz.com/news/chainalysis-breach-exposes-all-user-credentials-9267617d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-breach-exposes-all-user-credentials-9267617d</guid>
-      <description><![CDATA[Chainalysis disclosed that an agentic attack exposed usernames, password hashes, and live tokens for all users, compromising Reactor and Data Solutions. The breach forced the company to revoke access and suspend services while investigators evaluated credential theft and potential data exfiltration. Teams should enforce multi‑factor authentication, rotate compromised credentials, and monitor all affected accounts for suspicious activity.]]></description>
+      <title>Chainalysis Breach Exposes Credentials and Live Tokens</title>
+      <link>https://secubuzz.com/news/chainalysis-breach-exposes-credentials-and-live-to-40439140</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chainalysis-breach-exposes-credentials-and-live-to-40439140</guid>
+      <description><![CDATA[Blockchain intelligence firm Chainalysis reported a breach that exposed credentials and live tokens for all customers. The attack compromised internal tools and systems, potentially allowing attackers to access customer accounts and transfer funds. Chainalysis urged customers to reset credentials, monitor accounts, and apply security patches immediately to mitigate further exploitation.]]></description>
       <pubDate>Fri, 06 Nov 2026 08:04:49 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html">The Hacker News</source>
       <category>Breach</category>
@@ -375,87 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 00:58:05 GMT</pubDate>
       <source url="https://cybersecuritynews.com/windows-paint-rce-vulnerability/">Cyber Security News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>FBI, CISA Warn of Refrigeration System Cyberattacks</title>
-      <link>https://secubuzz.com/news/fbi-cisa-warn-of-refrigeration-system-cyberattacks-a6450a23</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-cisa-warn-of-refrigeration-system-cyberattacks-a6450a23</guid>
-      <description><![CDATA[The FBI and CISA have issued a warning that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide. These attacks could cause food spoilage, equipment damage, and fire hazards by exploiting vulnerabilities in control software or network interfaces. Security teams should harden refrigeration network segments, apply vendor patches, and monitor for anomalous traffic to mitigate potential compromise.]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:56:44 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Bind Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-6b2a8ce1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-bind-security-update-6b2a8ce1</guid>
-      <description><![CDATA[Red Hat released a bind security and bug‑fix update for RHEL 7 ELS, targeting the DNS server. The update is rated Important, with CVSS scores for each referenced CVE, indicating high‑severity flaws. Apply the patch via standard RHEL repositories; no workarounds are listed, and the update fixes security and functional issues.]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:07:04 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95726">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>EU Accuses TikTok of Failing to Stop Harmful Content</title>
-      <link>https://secubuzz.com/news/eu-accuses-tiktok-of-failing-to-stop-harmful-conte-85862602</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-accuses-tiktok-of-failing-to-stop-harmful-conte-85862602</guid>
-      <description><![CDATA[The European Commission accused TikTok of failing to stop its recommendation algorithm from leading users into rabbit holes of sadness, self‑harm, and body‑image content. The complaint indicates algorithmic design may expose users to psychologically harmful material, worsening mental health risks. TikTok must review content‑filtering policies, enhance user controls, and provide clearer disclosures to meet EU expectations.]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://therecord.media/eu-accuses-tiktok-of-rabbit-hole-DSA-violation">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome 158 Released for Android Users</title>
-      <link>https://secubuzz.com/news/chrome-158-released-for-android-users-31f86bd0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-158-released-for-android-users-31f86bd0</guid>
-      <description><![CDATA[Google released Chrome 158 (158.0.8127.22) for Android to a limited user cohort. The update focuses on stability and performance enhancements, with no security vulnerabilities disclosed. The patch will roll out via Google Play over the next few days, and users are encouraged to report issues through the bug‑tracking system.]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0698823948.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Tooling Used to Harvest OAuth Secrets</title>
-      <link>https://secubuzz.com/news/ai-tooling-used-to-harvest-oauth-secrets-b5c0117b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-tooling-used-to-harvest-oauth-secrets-b5c0117b</guid>
-      <description><![CDATA[Microsoft Threat Intelligence reports that attackers employ the ARTEX agentic AI framework to scan GitHub for exposed OAuth application secrets. Compromised OAuth apps enable attackers to perform authenticated actions within the victim tenant, potentially escalating privileges or exfiltrating data. Security teams should audit exposed secrets, rotate credentials, and enable multi‑factor authentication to mitigate this automated threat.]]></description>
-      <pubDate>Thu, 05 Nov 2026 23:46:50 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/">Microsoft Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95725: Important: tesseract security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95725-important-tesseract-security-updat-5c4b413f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95725-important-tesseract-security-updat-5c4b413f</guid>
-      <description><![CDATA[An update for tesseract is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 23:30:16 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95725">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Fixes 216 Android Flaws in November 2026 Bulletin</title>
-      <link>https://secubuzz.com/news/google-fixes-216-android-flaws-in-november-2026-bu-9856043c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-fixes-216-android-flaws-in-november-2026-bu-9856043c</guid>
-      <description><![CDATA[Google released the November 2026 Android Security Bulletin, resolving 216 vulnerabilities across core Android Framework, System, and vendor components. The bulletin details 23 critical flaws, including CVE-2026-58868, CVE-2026-58876, CVE-2026-58936, CVE-2026-55275, and CVE-2026-55283, which enable remote code execution or elevation of privilege. Devices must install the 2026-11-05 security patch level or vendor firmware updates to fully remediate the disclosed flaws.]]></description>
-      <pubDate>Thu, 05 Nov 2026 23:15:11 GMT</pubDate>
-      <source url="https://source.android.com/docs/security/bulletin/2026/2026-11-01">Android Security Bulletin</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Phone Return Scams Bill Victims for Fake Returns</title>
-      <link>https://secubuzz.com/news/phone-return-scams-bill-victims-for-fake-returns-dfe726c7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phone-return-scams-bill-victims-for-fake-returns-dfe726c7</guid>
-      <description><![CDATA[Phone return scams trick victims into receiving a real delivery and then billing them for a fake return. Fraudsters obtain a phone number, arrange a delivery, and later claim a return that triggers a billing charge, exploiting consumer trust. Security teams should educate users to verify return requests and monitor unexpected charges to mitigate this deceptive practice.]]></description>
-      <pubDate>Thu, 05 Nov 2026 22:18:22 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/threat-intel/2026/11/phone-return-scams-where-a-real-delivery-and-a-fake-return-end-up-in-a-bill-for-you">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Queens Library Ransomware Disrupts Wi-Fi, Computers</title>
-      <link>https://secubuzz.com/news/queens-library-ransomware-disrupts-wi-fi-computers-d750eb48</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/queens-library-ransomware-disrupts-wi-fi-computers-d750eb48</guid>
-      <description><![CDATA[A ransomware payload infected the Queens Public Library network, disabling Wi‑Fi and on‑site computers across its 66 branches. The attack leveraged a credential‑stealing technique that encrypted critical systems, causing service outages for the borough’s 2.3 million residents; no ransom demand was reported. Library administrators applied emergency patches and restored services after isolating infected machines and resetting credentials.]]></description>
-      <pubDate>Thu, 05 Nov 2026 22:08:00 GMT</pubDate>
-      <source url="https://therecord.media/queens-library-ransomware-causes-disruptions">The Record</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>
