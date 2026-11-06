@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "white-house-network-exposed-via-residential-proxy-adaa0b6c",
+    "title": "White House Network Exposed via Residential Proxy Traffic",
+    "summary": "Layer3 Intel found residential proxy traffic exiting the White House network via AS2650, exposing a potential unauthorized path. The exit routing lets proxy services route traffic through the Executive Office of the President’s network, creating a covert espionage channel. Security teams should audit routing policies, block unauthorized exit points, and monitor for anomalous proxy traffic to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/white-house-residential-proxy-traffic/",
+    "publishedAt": "2026-11-06T10:29:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "white-house-network-exposed-via-residential-proxy",
+      "article-adaa0b6c",
+      "adaa0b6c",
+      "white-house-network-exposed-via-residential-proxy-3bdf06",
+      "white-house-network-exposed-via-residential-proxy-traffic"
+    ]
+  },
+  {
     "slug": "red-hat-updates-keycloak-26-4-17-images-90733f6c",
     "title": "Red Hat Updates Keycloak 26.4.17 Images",
     "summary": "Red Hat released a security update for its Keycloak 26.4.17 images, addressing vulnerabilities that could allow unauthorized authentication access. The update fixes a flaw in image configuration exploitable via misconfigured token handling, though no public exploit has been reported. Red Hat recommends applying the new image versions immediately and reviewing token validation settings for secure deployment.",
@@ -44,6 +63,25 @@ export const news: NewsBrief[] = [
       "article-afdce4c0",
       "afdce4c0",
       "red-hat-updates-keycloak-26-6-8-packages-37d83a"
+    ]
+  },
+  {
+    "slug": "openai-s-gpt-6-cyber-finds-81-firefox-vulnerabilit-7538a3cc",
+    "title": "OpenAI’s GPT‑6 Cyber Finds 81 Firefox Vulnerabilities",
+    "summary": "OpenAI’s GPT‑6 Cyber model identified 81 previously undetected Firefox vulnerabilities during authorized security testing. The flaws, uncovered through automated vulnerability discovery and exploitation simulation, represent potential entry points for attackers but have not been publicly exploited. OpenAI leveraged the findings to harden its training infrastructure, and Mozilla is expected to issue patches.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/",
+    "publishedAt": "2026-11-06T10:19:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-s-gpt-6-cyber-finds-81-firefox-vulnerabilit",
+      "article-7538a3cc",
+      "7538a3cc",
+      "openai-s-gpt-6-cyber-finds-81-firefox-vulnerabilit-32a666",
+      "openai-s-gpt-6-cyber-finds-81-firefox-vulnerabilities"
     ]
   },
   {
@@ -9502,43 +9540,6 @@ export const news: NewsBrief[] = [
       "article-6c65896b",
       "6c65896b",
       "rhsa-2026-94443-important-python3-security-update-37d8ba"
-    ]
-  },
-  {
-    "slug": "pipewire-update-addresses-moderate-security-flaw-i-2fe8608c",
-    "title": "Pipewire Update Addresses Moderate Security Flaw in RHEL 9.6",
-    "summary": "A moderate update for Pipewire on Red Hat Enterprise Linux 9.6 EUS addresses a vulnerability in the multimedia framework. The flaw permits unauthorized manipulation of audio and video streams, potentially enabling privilege escalation or denial of service, and is rated moderate by Red Hat Product Security. Red Hat recommends applying the RHSA‑2026:94437 update immediately; no additional workarounds are required.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94437",
-    "publishedAt": "2026-11-03T08:33:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pipewire-update-addresses-moderate-security-flaw-i",
-      "article-2fe8608c",
-      "2fe8608c",
-      "pipewire-update-addresses-moderate-security-flaw-i-37d8ba",
-      "pipewire-update-addresses-moderate-security-flaw-in-rhel-9-6"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94436-moderate-pipewire-security-update-8b46d4e4",
-    "title": "RHSA-2026:94436: Moderate: pipewire security update",
-    "summary": "An update for pipewire is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94436",
-    "publishedAt": "2026-11-03T08:26:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94436-moderate-pipewire-security-update",
-      "article-8b46d4e4",
-      "8b46d4e4",
-      "rhsa-2026-94436-moderate-pipewire-security-update-37d8ba"
     ]
   }
 ];

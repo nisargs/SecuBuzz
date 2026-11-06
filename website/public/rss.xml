@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 10:45:12 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 11:04:28 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>White House Network Exposed via Residential Proxy Traffic</title>
+      <link>https://secubuzz.com/news/white-house-network-exposed-via-residential-proxy-adaa0b6c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/white-house-network-exposed-via-residential-proxy-adaa0b6c</guid>
+      <description><![CDATA[Layer3 Intel found residential proxy traffic exiting the White House network via AS2650, exposing a potential unauthorized path. The exit routing lets proxy services route traffic through the Executive Office of the President’s network, creating a covert espionage channel. Security teams should audit routing policies, block unauthorized exit points, and monitor for anomalous proxy traffic to mitigate the risk.]]></description>
+      <pubDate>Fri, 06 Nov 2026 10:29:58 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/06/white-house-residential-proxy-traffic/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Updates Keycloak 26.4.17 Images</title>
       <link>https://secubuzz.com/news/red-hat-updates-keycloak-26-4-17-images-90733f6c</link>
@@ -23,6 +32,15 @@
       <description><![CDATA[Red Hat released a security update for its Keycloak 26.6.8 packages, addressing vulnerabilities that could permit unauthorized authentication access. The update corrects a flaw in the container image configuration that could be exploited via misconfigured token handling, with no public exploit reported. Red Hat advises applying the updated packages immediately and reviewing token validation settings to ensure secure deployment.]]></description>
       <pubDate>Fri, 06 Nov 2026 10:21:57 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95761">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI’s GPT‑6 Cyber Finds 81 Firefox Vulnerabilities</title>
+      <link>https://secubuzz.com/news/openai-s-gpt-6-cyber-finds-81-firefox-vulnerabilit-7538a3cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-s-gpt-6-cyber-finds-81-firefox-vulnerabilit-7538a3cc</guid>
+      <description><![CDATA[OpenAI’s GPT‑6 Cyber model identified 81 previously undetected Firefox vulnerabilities during authorized security testing. The flaws, uncovered through automated vulnerability discovery and exploitation simulation, represent potential entry points for attackers but have not been publicly exploited. OpenAI leveraged the findings to harden its training infrastructure, and Mozilla is expected to issue patches.]]></description>
+      <pubDate>Fri, 06 Nov 2026 10:19:49 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/">Help Net Security</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -437,24 +455,6 @@
       <description><![CDATA[Red Hat released a security update for Satellite 6.16 EUS, addressing critical vulnerabilities in the platform. The update mitigates several high‑severity flaws, each with a CVSS base score and linked to CVE identifiers, though no specific IDs are listed. Red Hat recommends applying the update immediately; the patch is available via the Satellite update repository and includes all necessary fixes.]]></description>
       <pubDate>Thu, 05 Nov 2026 19:44:20 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95655">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Satellite Client Critical Update Released</title>
-      <link>https://secubuzz.com/news/red-hat-satellite-client-critical-update-released-41ea1750</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-client-critical-update-released-41ea1750</guid>
-      <description><![CDATA[Red Hat released a critical update for Satellite 6 Client to address multiple vulnerabilities. The patch mitigates high-severity flaws that could allow attackers to gain unauthorized access or disrupt satellite management; CVSS scores are listed in the CVE references. Administrators should download and apply the patch immediately and verify configuration integrity to prevent exploitation.]]></description>
-      <pubDate>Thu, 05 Nov 2026 19:44:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95653">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical Update for Satellite 6.18</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-update-for-satellite-6-18-31e67044</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-update-for-satellite-6-18-31e67044</guid>
-      <description><![CDATA[Red Hat released a critical security update for Satellite 6.18 to address multiple vulnerabilities. The update mitigates flaws that could allow unauthorized configuration changes or privilege escalation, as indicated by the CVSS ratings linked in the advisory. Administrators should apply the patch immediately and verify the new version to maintain system integrity.]]></description>
-      <pubDate>Thu, 05 Nov 2026 19:44:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95657">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
