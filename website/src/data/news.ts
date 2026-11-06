@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "certification-snapshots-mislead-buyers-on-vulnerab-ba179da8",
+    "title": "Certification Snapshots Mislead Buyers on Vulnerability Coverage",
+    "summary": "Research shows Common Criteria and FIPS-140 certifications do not guarantee ongoing security, with 60% of vulnerabilities in certified products disclosed post-certification. The certifications represent a point-in-time assessment, leaving gaps as new flaws emerge after evaluation. Buyers should demand continuous vulnerability monitoring and use open-source tools like sec-certs and SCRUTINY for ongoing validation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/mariia-bakhtina-masaryk-university-security-certification/",
+    "publishedAt": "2026-11-06T06:30:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "certification-snapshots-mislead-buyers-on-vulnerab",
+      "article-ba179da8",
+      "ba179da8",
+      "certification-snapshots-mislead-buyers-on-vulnerab-269aa2",
+      "certification-snapshots-mislead-buyers-on-vulnerability-cove"
+    ]
+  },
+  {
+    "slug": "survey-reveals-87-demand-stronger-ai-control-mecha-0dee2eb5",
+    "title": "Survey Reveals 87% Demand Stronger AI Control Mechanisms",
+    "summary": "A Vanson Bourne survey of 3,600 decision-makers finds over half of enterprise AI systems operate autonomously or complete processes without human approval. 87% of respondents report existing approval and monitoring frameworks are insufficient for current AI deployments across multiple categories. Organizations must implement robust governance pipelines and real-time oversight to manage AI autonomy and mitigate unauthorized actions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/autonomous-ai-oversight-governance/",
+    "publishedAt": "2026-11-06T06:00:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "survey-reveals-87-demand-stronger-ai-control-mecha",
+      "article-0dee2eb5",
+      "0dee2eb5",
+      "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
+      "survey-reveals-87-demand-stronger-ai-control-mechanisms"
+    ]
+  },
+  {
+    "slug": "most-repository-tokens-lack-expiration-e79c4b53",
+    "title": "Most Repository Tokens Lack Expiration",
+    "summary": "BlueFlag Security’s 2026 report reveals that 99% of repository access tokens never expire, leaving development accounts and automated tools with prolonged permissions. The lack of periodic access reviews creates blind spots, enabling unauthorized code modifications or data exfiltration after project completion. Organizations should enforce token rotation policies, conduct regular access audits, and restrict automated accounts to the minimum necessary privileges.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/blueflag-ai-agents-access-risks-report/",
+    "publishedAt": "2026-11-06T05:30:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "most-repository-tokens-lack-expiration",
+      "article-e79c4b53",
+      "e79c4b53",
+      "most-repository-tokens-lack-expiration-5389b0"
+    ]
+  },
+  {
+    "slug": "phishing-sites-use-live-chat-to-target-travelers-a31e6990",
+    "title": "Phishing Sites Use Live Chat to Target Travelers",
+    "summary": "Phishing sites mimicking rental platforms use live chat to lure travelers into giving passwords, personal data, and credit card numbers. They replicate host names, ratings, and reservation details, using urgent messages to pressure users, and were removed by Fortra’s FIRE team. Security teams should verify URLs, educate travelers on phishing indicators, and block known malicious domains to prevent credential compromise.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/holiday-rental-platform-phishing-travelers/",
+    "publishedAt": "2026-11-06T05:00:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "phishing-sites-use-live-chat-to-target-travelers",
+      "article-a31e6990",
+      "a31e6990",
+      "phishing-sites-use-live-chat-to-target-travelers-138d30"
+    ]
+  },
+  {
     "slug": "red-hat-releases-security-updates-for-bind-on-rhel-8a77118d",
     "title": "Red Hat Releases Security Updates for BIND on RHEL 6",
     "summary": "Red Hat issued a security update for the BIND package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The advisory addresses security flaws rated as Important impact that could jeopardize DNS infrastructure resilience. System administrators should apply the latest package updates provided by Red Hat to mitigate potential exploitation risks.",
@@ -27,6 +101,25 @@ export const news: NewsBrief[] = [
       "8a77118d",
       "red-hat-releases-security-updates-for-bind-on-rhel-37d83a",
       "red-hat-releases-security-updates-for-bind-on-rhel-6"
+    ]
+  },
+  {
+    "slug": "three-charged-in-129m-ai-impersonation-fraud-schem-79e3bbdb",
+    "title": "Three Charged in $129M AI Impersonation Fraud Scheme",
+    "summary": "Three individuals nicknamed 'Rocky Balboa,' 'Superman Cash,' and 'Fat Boy' are charged with using AI to impersonate executives and attorneys to steal $129 million from accounting departments. The scheme leveraged AI-generated voice to authorize fraudulent transfers, exploiting trust in executive identities. Indictments highlight the growing threat of AI-enabled social engineering and the need for enhanced verification in financial workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
+    "publishedAt": "2026-11-06T03:03:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "three-charged-in-129m-ai-impersonation-fraud-schem",
+      "article-79e3bbdb",
+      "79e3bbdb",
+      "three-charged-in-129m-ai-impersonation-fraud-schem-30e82b",
+      "three-charged-in-129m-ai-impersonation-fraud-scheme"
     ]
   },
   {
@@ -6935,6 +7028,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-releases-xcode-27-3-beta-14509dfe",
+    "title": "Apple Releases Xcode 27.3 Beta",
+    "summary": "Apple released Xcode 27.3 beta (27C5020n) for developers, available through the Apple Developer portal. The update adds new features, bug fixes, SwiftUI enhancements, and Xcode Server integration, with no disclosed security flaws. Developers should download the beta from Apple’s official portal, review release notes, and test compatibility before deployment, avoiding use in production.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026g",
+    "publishedAt": "2026-11-03T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-xcode-27-3-beta",
+      "article-14509dfe",
+      "14509dfe",
+      "apple-releases-xcode-27-3-beta-66bdb2"
+    ]
+  },
+  {
     "slug": "apple-issues-visionos-27-3-beta-update-16dfe139",
     "title": "Apple Issues visionOS 27.3 Beta Update",
     "summary": "Apple released visionOS 27.3 beta (24N5286r), updating the downloads view component. The beta introduces UI refinements, performance tweaks, and bug fixes for the downloads interface, improving user experience and stability. Beta testers can install the update via the Apple Beta Software Program and should report any regressions or issues to Apple for further refinement.",
@@ -9426,106 +9537,6 @@ export const news: NewsBrief[] = [
       "ab171ef5",
       "quest-foglight-xml-external-entity-disclosure-vuln-6f3caa",
       "quest-foglight-xml-external-entity-disclosure-vulnerability"
-    ]
-  },
-  {
-    "slug": "quest-foglight-fileservlet-path-disclosure-vulnera-ba64caed",
-    "title": "Quest Foglight FileServlet Path Disclosure Vulnerability",
-    "summary": "An authenticated information‑disclosure flaw in Quest Foglight for Databases’ FileServlet component allows attackers to read arbitrary file paths. CVE-2026-92193 has a CVSS 6.5 rating, requires valid credentials, and can reveal internal configuration and log files. Quest released a patch that restricts file path access; administrators should apply the update to prevent data exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-853/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92193"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-fileservlet-path-disclosure-vulnera",
-      "article-ba64caed",
-      "ba64caed",
-      "quest-foglight-fileservlet-path-disclosure-vulnera-6f3ca6",
-      "quest-foglight-fileservlet-path-disclosure-vulnerability"
-    ]
-  },
-  {
-    "slug": "quest-foglight-rce-via-directory-traversal-27a78179",
-    "title": "Quest Foglight RCE via Directory Traversal",
-    "summary": "A remote code execution flaw in Quest Foglight for Databases allows authenticated attackers to traverse directories and execute arbitrary code. The vulnerability, identified as CVE-2026-92187, scores CVSS 8.8 and requires valid credentials; exploitation can compromise database servers and expose sensitive data. Quest has released a patch; administrators should apply the update immediately and restrict network access to Foglight management interfaces.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-852/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92187"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-rce-via-directory-traversal",
-      "article-27a78179",
-      "27a78179",
-      "quest-foglight-rce-via-directory-traversal-6f3ca6"
-    ]
-  },
-  {
-    "slug": "quest-foglight-rce-via-untrusted-deserialization-9c4e31d0",
-    "title": "Quest Foglight RCE via Untrusted Deserialization",
-    "summary": "An unauthenticated remote code execution vulnerability in Quest Foglight for Databases enables attackers to exploit deserialization of untrusted data. The flaw, CVE-2026-92190, carries a CVSS score of 9.8 and permits arbitrary code execution on database servers, potentially compromising all stored data. Quest has issued a patch; security teams must apply it immediately and disable remote RMI services if possible.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-851/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92190"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-rce-via-untrusted-deserialization",
-      "article-9c4e31d0",
-      "9c4e31d0",
-      "quest-foglight-rce-via-untrusted-deserialization-6f3ca6"
-    ]
-  },
-  {
-    "slug": "windows-aero-theme-denial-of-service-vulnerability-85a7e7de",
-    "title": "Windows Aero Theme Denial‑of‑Service Vulnerability",
-    "summary": "A local denial‑of‑service flaw in Microsoft Windows Aero Theme lets attackers crash the system when the theme processes an error condition. The flaw requires low‑privileged code execution and carries a CVSS score of 4.7, indicating moderate impact but no remote code execution. Microsoft has released a patch in the cumulative update; users should apply it promptly to avoid service interruptions.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-868/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-aero-theme-denial-of-service-vulnerability",
-      "article-85a7e7de",
-      "85a7e7de",
-      "windows-aero-theme-denial-of-service-vulnerability-6f3caa"
-    ]
-  },
-  {
-    "slug": "quest-foglight-directory-traversal-enables-remote-3bc4674a",
-    "title": "Quest Foglight Directory Traversal Enables Remote Code Execution",
-    "summary": "Quest Foglight for Databases suffers a directory traversal flaw that allows remote code execution via the loadManageServerLicense endpoint. The vulnerability, CVE-2026-92194, requires authentication and has a CVSS score of 8.8, enabling attackers to run arbitrary code. No patch information is available; security teams should monitor for updates and restrict access to the affected API.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-857/",
-    "publishedAt": "2026-11-03T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-92194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "quest-foglight-directory-traversal-enables-remote",
-      "article-3bc4674a",
-      "3bc4674a",
-      "quest-foglight-directory-traversal-enables-remote-6f3ca7",
-      "quest-foglight-directory-traversal-enables-remote-code-execu"
     ]
   }
 ];

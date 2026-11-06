@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 05:47:02 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 06:45:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Certification Snapshots Mislead Buyers on Vulnerability Coverage</title>
+      <link>https://secubuzz.com/news/certification-snapshots-mislead-buyers-on-vulnerab-ba179da8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/certification-snapshots-mislead-buyers-on-vulnerab-ba179da8</guid>
+      <description><![CDATA[Research shows Common Criteria and FIPS-140 certifications do not guarantee ongoing security, with 60% of vulnerabilities in certified products disclosed post-certification. The certifications represent a point-in-time assessment, leaving gaps as new flaws emerge after evaluation. Buyers should demand continuous vulnerability monitoring and use open-source tools like sec-certs and SCRUTINY for ongoing validation.]]></description>
+      <pubDate>Fri, 06 Nov 2026 06:30:16 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/06/mariia-bakhtina-masaryk-university-security-certification/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Survey Reveals 87% Demand Stronger AI Control Mechanisms</title>
+      <link>https://secubuzz.com/news/survey-reveals-87-demand-stronger-ai-control-mecha-0dee2eb5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/survey-reveals-87-demand-stronger-ai-control-mecha-0dee2eb5</guid>
+      <description><![CDATA[A Vanson Bourne survey of 3,600 decision-makers finds over half of enterprise AI systems operate autonomously or complete processes without human approval. 87% of respondents report existing approval and monitoring frameworks are insufficient for current AI deployments across multiple categories. Organizations must implement robust governance pipelines and real-time oversight to manage AI autonomy and mitigate unauthorized actions.]]></description>
+      <pubDate>Fri, 06 Nov 2026 06:00:03 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/06/autonomous-ai-oversight-governance/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Most Repository Tokens Lack Expiration</title>
+      <link>https://secubuzz.com/news/most-repository-tokens-lack-expiration-e79c4b53</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/most-repository-tokens-lack-expiration-e79c4b53</guid>
+      <description><![CDATA[BlueFlag Security’s 2026 report reveals that 99% of repository access tokens never expire, leaving development accounts and automated tools with prolonged permissions. The lack of periodic access reviews creates blind spots, enabling unauthorized code modifications or data exfiltration after project completion. Organizations should enforce token rotation policies, conduct regular access audits, and restrict automated accounts to the minimum necessary privileges.]]></description>
+      <pubDate>Fri, 06 Nov 2026 05:30:23 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/06/blueflag-ai-agents-access-risks-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Phishing Sites Use Live Chat to Target Travelers</title>
+      <link>https://secubuzz.com/news/phishing-sites-use-live-chat-to-target-travelers-a31e6990</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/phishing-sites-use-live-chat-to-target-travelers-a31e6990</guid>
+      <description><![CDATA[Phishing sites mimicking rental platforms use live chat to lure travelers into giving passwords, personal data, and credit card numbers. They replicate host names, ratings, and reservation details, using urgent messages to pressure users, and were removed by Fortra’s FIRE team. Security teams should verify URLs, educate travelers on phishing indicators, and block known malicious domains to prevent credential compromise.]]></description>
+      <pubDate>Fri, 06 Nov 2026 05:00:41 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/06/holiday-rental-platform-phishing-travelers/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Red Hat Releases Security Updates for BIND on RHEL 6</title>
       <link>https://secubuzz.com/news/red-hat-releases-security-updates-for-bind-on-rhel-8a77118d</link>
@@ -15,6 +51,15 @@
       <pubDate>Fri, 06 Nov 2026 04:15:37 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95727">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Three Charged in $129M AI Impersonation Fraud Scheme</title>
+      <link>https://secubuzz.com/news/three-charged-in-129m-ai-impersonation-fraud-schem-79e3bbdb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/three-charged-in-129m-ai-impersonation-fraud-schem-79e3bbdb</guid>
+      <description><![CDATA[Three individuals nicknamed 'Rocky Balboa,' 'Superman Cash,' and 'Fat Boy' are charged with using AI to impersonate executives and attorneys to steal $129 million from accounting departments. The scheme leveraged AI-generated voice to authorize fraudulent transfers, exploiting trust in executive identities. Indictments highlight the growing threat of AI-enabled social engineering and the need for enhanced verification in financial workflows.]]></description>
+      <pubDate>Fri, 06 Nov 2026 03:03:29 GMT</pubDate>
+      <source url="https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/">SecurityWeek</source>
+      <category>General</category>
     </item>
     <item>
       <title>OpenAI Unveils GPT-6 Cyber AI Security Model</title>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 17:25:12 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95600">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Thunderbird Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-security-update-6241e274</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-security-update-6241e274</guid>
-      <description><![CDATA[Red Hat released an important security update for Thunderbird on RHEL 9.6 EUS, addressing multiple vulnerabilities and adding enhancements. The update resolves several bugs that could allow privilege escalation or data leakage, with CVSS scores available via referenced CVE links. Users should apply the update immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:22:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95596">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns</title>
-      <link>https://secubuzz.com/news/hacking-on-autopilot-inside-artex-cybercrime-campa-c1b56714</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hacking-on-autopilot-inside-artex-cybercrime-campa-c1b56714</guid>
-      <description><![CDATA[Key Points Introduction ARTEX is a Chinese open-source, AI-powered penetration testing platform designed to help security teams assess systems they own or are authorized to test. It uses large language models (LLMs) to coordinate multiple AI agents that plan tests, run security tools, and record evidence of potential vulnerabilities.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:22:06 GMT</pubDate>
-      <source url="https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/">Check Point Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Thunderbird Update for RHEL 9.4</title>
-      <link>https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-rhel-9-4-05d9ea75</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-thunderbird-update-for-rhel-9-4-05d9ea75</guid>
-      <description><![CDATA[Red Hat released a Thunderbird update for RHEL 9.4 SAP Solutions, fixing vulnerabilities that could allow local or remote code execution. The advisory lists CVE references and CVSS scores, but no public proof‑of‑concept or active exploitation has been reported. Red Hat recommends applying the update via the standard RHEL 9.4 repositories to deploy the patches.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:18:54 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95597">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Launches On‑Premises Security Initiative</title>
-      <link>https://secubuzz.com/news/microsoft-launches-on-premises-security-initiative-b73c8f71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-launches-on-premises-security-initiative-b73c8f71</guid>
-      <description><![CDATA[Microsoft announces a new on‑premises security initiative to reduce risk across enterprise deployments. The program bundles guidance, migration support, and product investments to strengthen on‑premises defenses against evolving threats. Security teams should review the new guidance, assess current on‑premises assets, and plan migrations accordingly to mitigate emerging vulnerabilities and ensure compliance with industry standards.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:10:14 GMT</pubDate>
-      <source url="https://techcommunity.microsoft.com/blog/microsoft-security-blog/new-investments-to-reduce-on-premises-security-risk/4570381">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cloudflare Addresses Visibility Gap for AI Agents</title>
-      <link>https://secubuzz.com/news/cloudflare-addresses-visibility-gap-for-ai-agents-4a5b3646</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-addresses-visibility-gap-for-ai-agents-4a5b3646</guid>
-      <description><![CDATA[Cloudflare discusses the challenge of AI agents acting on behalf of users while servers lack visibility into the intermediary traffic. The post outlines a collaborative framework for identifying, allowing, and managing automated traffic to preserve user privacy and security. Adopting this framework requires integrating agent detection mechanisms and establishing clear policies for automated request handling.]]></description>
-      <pubDate>Thu, 05 Nov 2026 17:03:04 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/trusted-agent-delegation/">Cloudflare Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
