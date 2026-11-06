@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e",
+    "title": "CEO‑Spoofing Scammers Indicted for $100M AI‑Assisted Fraud",
+    "summary": "Three suspects face indictment for orchestrating CEO‑spoofing scams that used AI to facilitate over $100 million in fraud. The scheme exploited social engineering and AI‑generated phishing content to deceive executives, bypassing email authentication and credential verification. U.S. authorities are pursuing extradition of the suspects from Europe, and organizations are urged to enforce multi‑factor authentication and verify executive communications.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ceo-spoofing-scammers-charged",
+    "publishedAt": "2026-11-06T14:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ceo-spoofing-scammers-indicted-for-100m-ai-assiste",
+      "article-1ba7565e",
+      "1ba7565e",
+      "ceo-spoofing-scammers-indicted-for-100m-ai-assiste-319ecf",
+      "ceo-spoofing-scammers-indicted-for-100m-ai-assisted-fraud"
+    ]
+  },
+  {
+    "slug": "digicert-breach-exposes-business-customer-data-e807c301",
+    "title": "DigiCert Breach Exposes Business Customer Data",
+    "summary": "Hackers created an internal account on DigiCert’s system and accessed business customer data, including names, emails, phone numbers, and addresses. The breach leveraged an unauthorized internal account, indicating insufficient access controls and privileged account monitoring. DigiCert has issued a security advisory and recommends immediate review of internal access policies, account provisioning procedures, and deployment of multi‑factor authentication for privileged accounts.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/",
+    "publishedAt": "2026-11-06T14:00:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "digicert-breach-exposes-business-customer-data",
+      "article-e807c301",
+      "e807c301",
+      "digicert-breach-exposes-business-customer-data-3638a4"
+    ]
+  },
+  {
+    "slug": "post-quantum-threats-to-web-privacy-protocols-b25618ee",
+    "title": "Post‑Quantum Threats to Web Privacy Protocols",
+    "summary": "Cryptographic protocols such as Privacy Pass, used to protect web privacy, face potential compromise from quantum‑computing capabilities. Current asymmetric schemes rely on integer factorization, which quantum algorithms can solve efficiently, threatening the integrity of privacy tokens and session authentication. Adoption of lattice‑based or hash‑based post‑quantum primitives is recommended to secure privacy tokens, and vendors should update protocol libraries accordingly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/vole-mole/",
+    "publishedAt": "2026-11-06T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "post-quantum-threats-to-web-privacy-protocols",
+      "article-b25618ee",
+      "b25618ee",
+      "post-quantum-threats-to-web-privacy-protocols-4f7359"
+    ]
+  },
+  {
     "slug": "openai-launches-gpt-6-cyber-model-for-flaw-hunting-e7972fd5",
     "title": "OpenAI Launches GPT‑6 Cyber Model for Flaw Hunting",
     "summary": "OpenAI introduced GPT‑6 Cyber, a model rated critical for cybersecurity that surpasses GPT‑5.6 Cyber in exploitation accuracy while staying within scope. The model hunts flaws with detailed reports, avoiding policy violations or unauthorized code execution. Teams can embed GPT‑6 Cyber into scanning pipelines, but should validate outputs manually to avoid false positives.",
@@ -26,6 +81,25 @@ export const news: NewsBrief[] = [
       "article-e7972fd5",
       "e7972fd5",
       "openai-launches-gpt-6-cyber-model-for-flaw-hunting-40974c"
+    ]
+  },
+  {
+    "slug": "us-agencies-advise-hardening-refrigeration-control-fdd5a816",
+    "title": "US Agencies Advise Hardening Refrigeration Controllers",
+    "summary": "U.S. agencies warn that refrigeration controllers in supermarkets and blood banks have been targeted, urging hardened security. The incidents exploit default credentials and unpatched firmware, allowing remote code execution and potential disruption of critical temperature‑controlled environments. Organizations should update firmware, enforce strong passwords, enable network segmentation, and monitor for anomalous traffic to protect refrigeration infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/",
+    "publishedAt": "2026-11-06T13:02:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-agencies-advise-hardening-refrigeration-control",
+      "article-fdd5a816",
+      "fdd5a816",
+      "us-agencies-advise-hardening-refrigeration-control-37a22b",
+      "us-agencies-advise-hardening-refrigeration-controllers"
     ]
   },
   {
@@ -123,6 +197,27 @@ export const news: NewsBrief[] = [
       "article-17f8aa5a",
       "17f8aa5a",
       "openssh-fixes-sshole-authentication-bypass-7e09f0"
+    ]
+  },
+  {
+    "slug": "microsoft-paint-rce-fix-unavailable-via-windows-up-fc303966",
+    "title": "Microsoft Paint RCE Fix Unavailable via Windows Update",
+    "summary": "A remote code execution flaw, CVE-2026-83844, in Windows Paint allows attackers to execute code over a network through an out-of-bounds read. Microsoft released a patch in the Store (build 11.2609.401.0), but Windows Update does not address the flaw, leaving many systems vulnerable. Security teams should install the Store update immediately or manually apply the new Paint build to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+    "publishedAt": "2026-11-06T12:06:43.000Z",
+    "cves": [
+      "CVE-2026-83844"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-paint-rce-fix-unavailable-via-windows-up",
+      "article-fc303966",
+      "fc303966",
+      "microsoft-paint-rce-fix-unavailable-via-windows-up-2da49c",
+      "microsoft-paint-rce-fix-unavailable-via-windows-update"
     ]
   },
   {
@@ -6804,10 +6899,10 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "cisa-adds-wordpress-core-cve-2026-119977-to-kev-b037122a",
-    "title": "CISA Adds WordPress Core CVE-2026-119977 to KEV",
-    "summary": "CISA has listed the WordPress Core flaw CVE-2026-119977 in its Known Exploited Vulnerabilities catalog, citing active exploitation. The high‑severity TOCTOU race condition, scored CVSS 8.1, allows attackers to execute arbitrary code by manipulating file timestamps during upgrade processes. Site owners should apply the latest WordPress core update immediately and verify that all plugins and themes are compatible to prevent exploitation.",
-    "category": "CVE",
+    "slug": "wordpress-core-rce-vulnerability-cve-2026-119977-faebfe6f",
+    "title": "WordPress Core RCE Vulnerability CVE-2026-119977",
+    "summary": "Hackers are actively exploiting an unauthenticated remote code execution flaw in WordPress Core tracked as CVE-2026-119977, achieving CVSS 8.1 severity. The TOCTOU race condition during upgrades allows arbitrary code execution without login. Site owners must immediately apply the October 28, 2026 core update and verify plugin/theme compatibility to prevent exploitation.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
@@ -6815,12 +6910,17 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-119977"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/240000-wordpress-exploit-attempts/"
+      }
+    ],
     "aliases": [
-      "cisa-adds-wordpress-core-cve-2026-119977-to-kev",
-      "article-b037122a",
-      "b037122a",
-      "cisa-adds-wordpress-core-cve-2026-119977-to-kev-42a8d1"
+      "wordpress-core-rce-vulnerability-cve-2026-119977",
+      "article-faebfe6f",
+      "faebfe6f",
+      "wordpress-core-rce-vulnerability-cve-2026-119977-42a8d1"
     ]
   },
   {
@@ -9441,111 +9541,6 @@ export const news: NewsBrief[] = [
       "e6aa1c94",
       "ncsc-warns-ai-accelerates-ransomware-on-critical-i-7f5e2e",
       "ncsc-warns-ai-accelerates-ransomware-on-critical-infrastruct"
-    ]
-  },
-  {
-    "slug": "red-hat-fixes-multiple-cves-in-rhel-ai-3-5-4c5aebe3",
-    "title": "Red Hat Fixes Multiple CVEs in RHEL AI 3.5",
-    "summary": "Red Hat released a security update for RHEL AI 3.5 that addresses six critical CVEs affecting the ffmpeg runtime. The vulnerabilities, identified as CVE-2026-64832, CVE-2026-64833, CVE-2026-70628, CVE-2026-75142, CVE-2026-75144, and CVE-2026-75146, could allow attackers to execute arbitrary code or cause denial of service. Users should apply the RHSA-2026:94488 update immediately to mitigate potential exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94488",
-    "publishedAt": "2026-11-03T10:49:20.000Z",
-    "cves": [
-      "CVE-2026-64832",
-      "CVE-2026-64833",
-      "CVE-2026-70628",
-      "CVE-2026-75142",
-      "CVE-2026-75144",
-      "CVE-2026-75146"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-fixes-multiple-cves-in-rhel-ai-3-5",
-      "article-4c5aebe3",
-      "4c5aebe3",
-      "red-hat-fixes-multiple-cves-in-rhel-ai-3-5-37d8b9"
-    ]
-  },
-  {
-    "slug": "ares-platform-automates-66-red-team-attack-modules-411e83c2",
-    "title": "ARES Platform Automates 66 Red Team Attack Modules",
-    "summary": "The open‑core ARES platform provides red teams with 66 active modules to simulate attacks against Active Directory and cloud environments. Modules map to over 60 MITRE ATT&CK techniques, enabling comprehensive testing of identity, credential, and cloud configuration defenses. Developed by Mafifrizi and released on GitHub, the tool is free to use and can be integrated into existing penetration‑testing workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ares-ai-red-team-platform/",
-    "publishedAt": "2026-11-03T10:39:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ares-platform-automates-66-red-team-attack-modules",
-      "article-411e83c2",
-      "411e83c2",
-      "ares-platform-automates-66-red-team-attack-modules-71f349"
-    ]
-  },
-  {
-    "slug": "adobe-commerce-zero-day-enables-psk-agent-rat-depl-3b9d53a7",
-    "title": "Adobe Commerce Zero-Day Enables PSK Agent RAT Deployment",
-    "summary": "Attackers exploited the StyleSmuggler flaw in Adobe Commerce and Magento to install the PSK Agent RAT on e‑commerce servers via remote code execution. The CVE‑2026‑75650 vulnerability allows persistent command execution, traffic tunneling, and survives server restarts, presenting a high‑severity remote access threat. Adobe has released an out‑of‑band patch; administrators should apply the update immediately and monitor for unauthorized processes.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/adobe-commerce-zero-day/",
-    "publishedAt": "2026-11-03T10:03:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "adobe-commerce-zero-day-enables-psk-agent-rat-depl",
-      "article-3b9d53a7",
-      "3b9d53a7",
-      "adobe-commerce-zero-day-enables-psk-agent-rat-depl-1411a7",
-      "adobe-commerce-zero-day-enables-psk-agent-rat-deployment"
-    ]
-  },
-  {
-    "slug": "gorbag-hackers-exploit-winrar-vulnerability-agains-27d64ca9",
-    "title": "Gorbag Hackers Exploit WinRAR Vulnerability Against Ukrainian Targets",
-    "summary": "Russia-aligned threat actors tracked as Gorbag are actively exploiting a WinRAR vulnerability to steal credentials from Ukrainian government agencies. The campaign targets law enforcement bodies, defense organizations, and local administrations near conflict zones. Attackers exfiltrate browser credentials, VPN configurations, and sensitive documents through the exploit chain. Ukrainian defenders must apply vendor patches and implement credential monitoring to detect unauthorized access.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/gorbag-apt-group-malware/",
-    "publishedAt": "2026-11-03T10:00:14.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/gorbag-hackers-exploit-winrar-vulnerability/"
-      }
-    ],
-    "aliases": [
-      "gorbag-hackers-exploit-winrar-vulnerability-agains",
-      "article-27d64ca9",
-      "27d64ca9",
-      "gorbag-hackers-exploit-winrar-vulnerability-agains-7cf37f",
-      "gorbag-hackers-exploit-winrar-vulnerability-against-ukrainia"
-    ]
-  },
-  {
-    "slug": "cogent-security-highlights-php2shell-vulnerability-6a9d6960",
-    "title": "Cogent Security Highlights PHP2Shell Vulnerability Impact",
-    "summary": "Cogent Security reported that PHP2Shell, disclosed on October 21, exposed two critical flaws that had persisted in PHP for over a decade. The flaws enable remote code execution and privilege escalation, posing a high‑severity risk for web apps using the affected PHP version. Admins should upgrade to the latest PHP release, apply patches, and use AI‑driven monitoring to detect exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cogent-security-makes-the-fortune-cyber-60-for-a-second-year-with-a-plan-to-run-cyber-defense-like-a-factory/",
-    "publishedAt": "2026-11-03T09:59:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cogent-security-highlights-php2shell-vulnerability",
-      "article-6a9d6960",
-      "6a9d6960",
-      "cogent-security-highlights-php2shell-vulnerability-19b788",
-      "cogent-security-highlights-php2shell-vulnerability-impact"
     ]
   }
 ];
