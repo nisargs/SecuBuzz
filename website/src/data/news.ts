@@ -11,6 +11,86 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cve-2026-122193-issue-with-trusted-remote-executio-9acb1335",
+    "title": "CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)",
+    "summary": "Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for running scripts on managed instances.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-173-aws/",
+    "publishedAt": "2026-11-06T17:19:55.000Z",
+    "cves": [
+      "CVE-2026-122193"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-122193-issue-with-trusted-remote-executio",
+      "article-9acb1335",
+      "9acb1335",
+      "cve-2026-122193-issue-with-trusted-remote-executio-46a565",
+      "cve-2026-122193-issue-with-trusted-remote-execution-setup-gu"
+    ]
+  },
+  {
+    "slug": "vercel-deploys-device-bound-sessions-to-stop-cooki-7637fdf5",
+    "title": "Vercel Deploys Device‑Bound Sessions to Stop Cookie Theft",
+    "summary": "Vercel introduced device‑bound session enforcement to mitigate stolen session cookie attacks on its platform. The mechanism binds session tokens to device fingerprints, preventing reuse of captured cookies across different hardware or browsers. Additionally, Vercel released an AI‑driven security review pipeline in public beta to proactively identify potential comprehensive session‑related vulnerabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/vercel-rolls-out-new-protection-against-stolen-session",
+    "publishedAt": "2026-11-06T16:55:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vercel-deploys-device-bound-sessions-to-stop-cooki",
+      "article-7637fdf5",
+      "7637fdf5",
+      "vercel-deploys-device-bound-sessions-to-stop-cooki-520be5",
+      "vercel-deploys-device-bound-sessions-to-stop-cookie-theft"
+    ]
+  },
+  {
+    "slug": "fbi-agent-pleads-guilty-to-stealing-2-4-million-in-5a5ff5ad",
+    "title": "FBI agent pleads guilty to stealing $2.4 million in crypto from nation-state hackers",
+    "summary": "Patrick Steven Yaroch, 37, is facing up to 20 years in prison on wire fraud and money laundering charges after admitting to using his position on an FBI investigative squad to steal more than $2.4 million in cryptocurrency to cover his debts.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/fbi-agent-pleads-guilty-to-stealing-from-nation-state-hackers",
+    "publishedAt": "2026-11-06T16:53:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-agent-pleads-guilty-to-stealing-2-4-million-in",
+      "article-5a5ff5ad",
+      "5a5ff5ad",
+      "fbi-agent-pleads-guilty-to-stealing-2-4-million-in-2fefc4",
+      "fbi-agent-pleads-guilty-to-stealing-2-4-million-in-crypto-fr"
+    ]
+  },
+  {
+    "slug": "installing-the-fix-for-an-exploited-wordpress-flaw-5c970c1e",
+    "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+    "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The vulnerability is tracked as CVE-2024-27834.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+    "publishedAt": "2026-11-06T16:08:38.000Z",
+    "cves": [
+      "CVE-2024-27834"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "installing-the-fix-for-an-exploited-wordpress-flaw",
+      "article-5c970c1e",
+      "5c970c1e",
+      "installing-the-fix-for-an-exploited-wordpress-flaw-a997a8",
+      "installing-the-fix-for-an-exploited-wordpress-flaw-can-expos"
+    ]
+  },
+  {
     "slug": "industrial-control-systems-harden-refrigeration-mo-04118118",
     "title": "Industrial Control Systems Harden Refrigeration Monitoring",
     "summary": "Industrial control systems used for refrigeration monitoring face new attack vectors that could disrupt temperature regulation and safety protocols. The advisory recommends hardening network segmentation, updating firmware, and implementing strict authentication to mitigate unauthorized access and command injection risks. Security teams should deploy the latest vendor patches, monitor anomalous traffic, and conduct regular penetration testing to validate controls.",
@@ -27,6 +107,25 @@ export const news: NewsBrief[] = [
       "04118118",
       "industrial-control-systems-harden-refrigeration-mo-251d4f",
       "industrial-control-systems-harden-refrigeration-monitoring"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95887-important-red-hat-jboss-enterprise-1fcf7082",
+    "title": "RHSA-2026:95887: Important: Red Hat JBoss Enterprise Application Platform 8.1.9 security update",
+    "summary": "A security update is now available for Red Hat JBoss Enterprise Application Platform 8.1. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95887",
+    "publishedAt": "2026-11-06T15:31:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95887-important-red-hat-jboss-enterprise",
+      "article-1fcf7082",
+      "1fcf7082",
+      "rhsa-2026-95887-important-red-hat-jboss-enterprise-37d836",
+      "rhsa-2026-95887-important-red-hat-jboss-enterprise-applicati"
     ]
   },
   {
@@ -87,6 +186,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "dark-project-ransomware-group-offers-80-commission-46fe2579",
+    "title": "Dark Project Ransomware Group Offers 80% Commission",
+    "summary": "The Dark Project ransomware group recruits criminal partners with an 80% commission on successful attacks, combining data theft, encryption, and extortion. First observed in June 2026, the financially motivated operation pressures organizations into ransom payments. Security teams should monitor for extortion activity and implement network segmentation to limit lateral movement.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/new-dark-project-ransomware-group/",
+    "publishedAt": "2026-11-06T15:03:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dark-project-ransomware-group-offers-80-commission",
+      "article-46fe2579",
+      "46fe2579",
+      "dark-project-ransomware-group-offers-80-commission-6e891f"
+    ]
+  },
+  {
     "slug": "imsi-and-imei-phone-broadcasts-and-readability-e3d9e5cd",
     "title": "IMSI and IMEI: Phone Broadcasts and Readability",
     "summary": "Mobile devices transmit IMSI and IMEI identifiers to cellular networks, allowing operators to track device location and authenticate subscribers. Attackers can harvest these IDs through network sniffing or malicious apps, enabling targeted tracking or spoofing of device identity. Rotating the IMSI periodically or using privacy‑enhancing SIMs can mitigate tracking risks, while IMEI remains static and less exploitable.",
@@ -141,6 +258,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "claude-code-exposes-user-emails-via-user-agent-hea-2683cb35",
+    "title": "Claude Code Exposes User Emails via User‑Agent Headers",
+    "summary": "Anthropic’s Claude Code transmitted users’ email addresses in HTTP User‑Agent headers during web searches, leaking personal data to third‑party sites. The flaw arises from the tool’s default header configuration, which embeds user identifiers without explicit consent, violating privacy best practices. Anthropic should update header handling, provide opt‑out controls, and issue a patch to prevent accidental data leakage.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-code-leaks-user-email/",
+    "publishedAt": "2026-11-06T14:37:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-code-exposes-user-emails-via-user-agent-hea",
+      "article-2683cb35",
+      "2683cb35",
+      "claude-code-exposes-user-emails-via-user-agent-hea-2fbbc2",
+      "claude-code-exposes-user-emails-via-user-agent-headers"
+    ]
+  },
+  {
     "slug": "ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e",
     "title": "CEO‑Spoofing Scammers Indicted for $100M AI‑Assisted Fraud",
     "summary": "Three suspects face indictment for orchestrating CEO‑spoofing scams that used AI to facilitate over $100 million in fraud. The scheme exploited social engineering and AI‑generated phishing content to deceive executives, bypassing email authentication and credential verification. U.S. authorities are pursuing extradition of the suspects from Europe, and organizations are urged to enforce multi‑factor authentication and verify executive communications.",
@@ -157,6 +293,42 @@ export const news: NewsBrief[] = [
       "1ba7565e",
       "ceo-spoofing-scammers-indicted-for-100m-ai-assiste-319ecf",
       "ceo-spoofing-scammers-indicted-for-100m-ai-assisted-fraud"
+    ]
+  },
+  {
+    "slug": "chrome-dev-159-released-for-android-04d26652",
+    "title": "Chrome Dev 159 Released for Android",
+    "summary": "Google released Chrome Dev 159 (159.0.8144.0) for Android, adding new features and bug fixes. The update, available on Google Play, includes changes logged in the Chromium Git history and platform enhancements noted on the Chromium blog. Users should install the latest build and report any issues via the Chrome Release Team bug‑tracking system.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update.html",
+    "publishedAt": "2026-11-06T14:28:32.500Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-dev-159-released-for-android",
+      "article-04d26652",
+      "04d26652",
+      "chrome-dev-159-released-for-android-2ae120"
+    ]
+  },
+  {
+    "slug": "mirax-android-rat-hijacks-streaming-app-ads-23f66fb7",
+    "title": "Mirax Android RAT Hijacks Streaming App Ads",
+    "summary": "The Mirax Android RAT campaign leverages streaming-app advertisements as an initial infection vector to steal banking credentials across retail banking customers in the Middle East, Turkey, and Africa. The malware intercepts security codes and operates banking apps directly from victims' devices. Financial institutions should enforce app verification policies and monitor for anomalous banking activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/mirax-android-rat/",
+    "publishedAt": "2026-11-06T14:08:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mirax-android-rat-hijacks-streaming-app-ads",
+      "article-23f66fb7",
+      "23f66fb7",
+      "mirax-android-rat-hijacks-streaming-app-ads-c0cbf9"
     ]
   },
   {
@@ -212,6 +384,25 @@ export const news: NewsBrief[] = [
       "article-b25618ee",
       "b25618ee",
       "post-quantum-threats-to-web-privacy-protocols-4f7359"
+    ]
+  },
+  {
+    "slug": "artex-ai-agents-compromise-190k-gaming-credentials-1041ff8d",
+    "title": "ARTEX AI Agents Compromise 190k Gaming Credentials, Apple Certificates",
+    "summary": "ARTEX AI agents exploited web applications with minimal human input, stealing over 190,000 gaming credentials and more than 300 Apple code‑signing certificates. The flaw stems from ARTEX’s automated penetration logic that bypasses manual checks, enabling credential harvesting and certificate misuse without user intervention. Security teams should disable ARTEX usage, revoke compromised certificates, and audit affected accounts for unauthorized access.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/artex-ai-agents/",
+    "publishedAt": "2026-11-06T13:49:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "artex-ai-agents-compromise-190k-gaming-credentials",
+      "article-1041ff8d",
+      "1041ff8d",
+      "artex-ai-agents-compromise-190k-gaming-credentials-3b007a",
+      "artex-ai-agents-compromise-190k-gaming-credentials-apple-cer"
     ]
   },
   {
@@ -506,6 +697,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-keycloak-26-6-8-security-update-9ffab451",
+    "title": "Red Hat Keycloak 26.6.8 Security Update",
+    "summary": "Red Hat released updated images for its Keycloak 26.6.8 build and the corresponding Operator on OpenShift. The update addresses internal security issues in the Keycloak container images, though no public CVE is cited. Users should pull the new images from the Customer Portal and redeploy to maintain secure authentication services.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95762",
+    "publishedAt": "2026-11-06T10:25:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-keycloak-26-6-8-security-update",
+      "article-9ffab451",
+      "9ffab451",
+      "red-hat-keycloak-26-6-8-security-update-37d83a"
+    ]
+  },
+  {
     "slug": "red-hat-updates-keycloak-26-4-17-images-90733f6c",
     "title": "Red Hat Updates Keycloak 26.4.17 Images",
     "summary": "Red Hat released a security update for its Keycloak 26.4.17 images, addressing vulnerabilities that could allow unauthorized authentication access. The update fixes a flaw in image configuration exploitable via misconfigured token handling, though no public exploit has been reported. Red Hat recommends applying the new image versions immediately and reviewing token validation settings for secure deployment.",
@@ -539,6 +748,24 @@ export const news: NewsBrief[] = [
       "article-afdce4c0",
       "afdce4c0",
       "red-hat-updates-keycloak-26-6-8-packages-37d83a"
+    ]
+  },
+  {
+    "slug": "red-hat-keycloak-26-4-17-security-update-157aac0f",
+    "title": "Red Hat Keycloak 26.4.17 Security Update",
+    "summary": "Red Hat released new Keycloak 26.4.17 packages for OpenShift users. The update patches internal security flaws in the Keycloak distribution, with no CVE disclosed. Customers should download the updated packages from the Customer Portal and apply them to secure their identity services and verify deployment integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95759",
+    "publishedAt": "2026-11-06T10:21:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-keycloak-26-4-17-security-update",
+      "article-157aac0f",
+      "157aac0f",
+      "red-hat-keycloak-26-4-17-security-update-37d83a"
     ]
   },
   {
@@ -844,6 +1071,24 @@ export const news: NewsBrief[] = [
       "article-e79c4b53",
       "e79c4b53",
       "most-repository-tokens-lack-expiration-5389b0"
+    ]
+  },
+  {
+    "slug": "gta-6-anticipation-fuels-crypto-credential-theft-99a773d8",
+    "title": "GTA 6 Anticipation Fuels Crypto Credential Theft",
+    "summary": "Cybercriminals target GTA 6 hype with fake beta access offers and counterfeit alpha downloads. These social‑engineering campaigns trick users into submitting crypto wallet credentials, enabling theft of digital assets. Security teams should warn users against unsolicited download links and verify official sources before providing wallet information and monitor for phishing sites.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/scammers-capitalize-on-gta-6-hype-to-push-malware-and-c",
+    "publishedAt": "2026-11-06T05:10:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gta-6-anticipation-fuels-crypto-credential-theft",
+      "article-99a773d8",
+      "99a773d8",
+      "gta-6-anticipation-fuels-crypto-credential-theft-6bce0c"
     ]
   },
   {
@@ -9291,264 +9536,6 @@ export const news: NewsBrief[] = [
       "08586ae9",
       "rhsa-2026-94485-moderate-cockpit-security-bug-fix-37d8b9",
       "rhsa-2026-94485-moderate-cockpit-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-critical-update-e05ca4e6",
-    "title": "Red Hat Releases Kernel Critical Update",
-    "summary": "Red Hat released a critical kernel update for Enterprise Linux 9.2 SAP, fixing vulnerabilities that could enable privilege escalation. The patch addresses CVE‑2026‑43871, a flaw rated critical by Red Hat, with no known active exploitation. Apply the update immediately; no workarounds exist, and monitor kernel activity for anomalies in all environments.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94477",
-    "publishedAt": "2026-11-03T12:29:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-critical-update",
-      "article-e05ca4e6",
-      "e05ca4e6",
-      "red-hat-releases-kernel-critical-update-37d8b9"
-    ]
-  },
-  {
-    "slug": "android-november-2026-update-fixes-200-vulnerabili-92d171cf",
-    "title": "Android November 2026 Update Fixes 200+ Vulnerabilities",
-    "summary": "Android’s November 2026 update patches over 200 flaws, including a critical framework bug that allows remote code execution without user interaction. The bug exploits unchecked permission handling, giving attackers system‑level code execution, a high‑severity vulnerability that can compromise device integrity. Install the update immediately and verify framework component patching to block exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
-    "publishedAt": "2026-11-03T12:21:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "android-november-2026-update-fixes-200-vulnerabili",
-      "article-92d171cf",
-      "92d171cf",
-      "android-november-2026-update-fixes-200-vulnerabili-294b08",
-      "android-november-2026-update-fixes-200-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "node-red-authentication-flaw-cve-2026-58115-used-t-5a30be60",
-    "title": "Node-RED Authentication Flaw (CVE-2026-58115) Used to Deploy Linux Bots and Backdoors",
-    "summary": "Attackers exploited Node‑RED’s authentication flaw (CVE‑2026‑58115) to gain remote code execution on unprotected industrial control servers. The flaw allowed attackers to deploy Linux bots and webshells, enabling arbitrary command execution and persistent backdoors. Node‑RED released a patch; users must update immediately and restrict flow editor access to mitigate the threat.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
-    "publishedAt": "2026-11-03T12:10:19.000Z",
-    "cves": [
-      "CVE-2026-58115"
-    ],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/node-red-cve-2026-58115-exploitation/"
-      }
-    ],
-    "aliases": [
-      "node-red-authentication-flaw-cve-2026-58115-used-t",
-      "article-5a30be60",
-      "5a30be60",
-      "node-red-authentication-flaw-cve-2026-58115-used-t-589a87",
-      "node-red-authentication-flaw-cve-2026-58115-used-to-deploy-l"
-    ]
-  },
-  {
-    "slug": "leakers-hijack-billboard-software-to-display-porn-869233ee",
-    "title": "Leakers$ Hijack Billboard Software to Display Porn",
-    "summary": "The hacking group Leakers$ gained unauthorized access to remote management software controlling public billboards and used it to display pornographic content. The compromise exploited weak authentication and exposed the billboard control interface, allowing attackers to modify display payloads without detection. Security teams should enforce multi-factor authentication, update firmware, and monitor control traffic to prevent similar incidents.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/hackers-put-porn-on-public-billboards-and-claim-it-was-far-too-easy",
-    "publishedAt": "2026-11-03T12:01:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "leakers-hijack-billboard-software-to-display-porn",
-      "article-869233ee",
-      "869233ee",
-      "leakers-hijack-billboard-software-to-display-porn-431bbe"
-    ]
-  },
-  {
-    "slug": "ai-discovers-vulnerabilities-in-legal-systems-d9484d0b",
-    "title": "AI Discovers Vulnerabilities in Legal Systems",
-    "summary": "The article argues that advanced AI can identify logical flaws in legal texts, treating statutes as code susceptible to exploitation. These vulnerabilities arise from ambiguous language or inconsistent provisions, allowing AI‑driven analysis to surface potential loopholes that courts may overlook. The piece calls for legal scholars to adopt formal verification techniques and for lawmakers to review statutes for machine‑readable consistency.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html",
-    "publishedAt": "2026-11-03T12:01:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-discovers-vulnerabilities-in-legal-systems",
-      "article-d9484d0b",
-      "d9484d0b",
-      "ai-discovers-vulnerabilities-in-legal-systems-7af64a"
-    ]
-  },
-  {
-    "slug": "cisa-adds-cve-2026-119977-to-kev-catalog-c755a8fd",
-    "title": "CISA Adds CVE-2026-119977 to KEV Catalog",
-    "summary": "CISA added CVE-2026-119977, a WordPress Core time‑of‑check/time‑of‑use race condition, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. The flaw lets attackers manipulate file timestamps to trigger arbitrary code execution on exposed WordPress sites, granting full control. Federal agencies must apply the latest WordPress patch or disable remote file editing per BOD 26‑04.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "publishedAt": "2026-11-03T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-119977"
-    ],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/"
-      }
-    ],
-    "aliases": [
-      "cisa-adds-cve-2026-119977-to-kev-catalog",
-      "article-c755a8fd",
-      "c755a8fd",
-      "cisa-adds-cve-2026-119977-to-kev-catalog-4d69a1"
-    ]
-  },
-  {
-    "slug": "subnet-solutions-powersystem-center-dc5c2e21",
-    "title": "Subnet Solutions PowerSYSTEM Center",
-    "summary": "The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 PowerSYSTEM Center 2024 >=6.0.x| PowerSYSTEM Center 2026 >=7.0.x| CVSS Vendor Equipment v3 9 Subnet Solutions PowerSYSTEM Center 2 Vulnerabilities Incorrect Authorization, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Canada Vulnerabilities Expand All + CVE-2026-63017 Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
-    "publishedAt": "2026-11-03T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-63017"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "subnet-solutions-powersystem-center",
-      "article-dc5c2e21",
-      "dc5c2e21",
-      "subnet-solutions-powersystem-center-41c85b"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94501-critical-fence-agents-security-upd-baaa948f",
-    "title": "RHSA-2026:94501: Critical: fence-agents security update",
-    "summary": "An update for fence-agents is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94501",
-    "publishedAt": "2026-11-03T11:57:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94501-critical-fence-agents-security-upd",
-      "article-baaa948f",
-      "baaa948f",
-      "rhsa-2026-94501-critical-fence-agents-security-upd-37d8b7",
-      "rhsa-2026-94501-critical-fence-agents-security-update"
-    ]
-  },
-  {
-    "slug": "rhel-ai-3-4-rpm-runtime-cve-fixes-630247ed",
-    "title": "RHEL AI 3.4 RPM Runtime CVE Fixes",
-    "summary": "Red Hat released an important security update addressing two RPM runtime vulnerabilities in RHEL AI 3.4, identified as CVE-2026-43871 and CVE-2026-55969. These flaws impact the RPM runtime component of the RHEL AI platform, requiring immediate patching to prevent exploitation. Administrators should apply the updated RPM packages to mitigate the disclosed vulnerabilities.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94503",
-    "publishedAt": "2026-11-03T11:52:45.000Z",
-    "cves": [
-      "CVE-2026-43871",
-      "CVE-2026-55969"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhel-ai-3-4-rpm-runtime-cve-fixes",
-      "article-630247ed",
-      "630247ed",
-      "rhel-ai-3-4-rpm-runtime-cve-fixes-37d8b7"
-    ]
-  },
-  {
-    "slug": "libxtst-security-update-for-rhel-03338511",
-    "title": "libXtst Security Update for RHEL",
-    "summary": "Red Hat issued an important security update for libXtst affecting RHEL 8.4 Advanced Mission Critical and Extended Update Support. The associated CVE-2026-43871 requires local access to exploit, with a CVSS base score available from the referenced CVE link. System administrators should apply the patch promptly.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94482",
-    "publishedAt": "2026-11-03T11:44:40.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "libxtst-security-update-for-rhel",
-      "article-03338511",
-      "03338511",
-      "libxtst-security-update-for-rhel-37d8b9"
-    ]
-  },
-  {
-    "slug": "revolve-card-data-stolen-1-5-million-affected-37f2effe",
-    "title": "Revolve Card Data Stolen, 1.5 Million Affected",
-    "summary": "Revolve reported that attackers accessed and exfiltrated stored card details from its payment platform, potentially compromising up to 1.5 million users. The breach involved credential theft and data‑stealing malware, but no evidence of active exploitation of a zero‑day vulnerability was disclosed. Users should monitor statements, change passwords, and enable two‑factor authentication, while Revolve has issued a patch and security advisory.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/revolve-card-breach-1-5-million-people-may-be-affected",
-    "publishedAt": "2026-11-03T11:26:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "revolve-card-data-stolen-1-5-million-affected",
-      "article-37f2effe",
-      "37f2effe",
-      "revolve-card-data-stolen-1-5-million-affected-743409"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-kernel-tcp-rce-cve-2026-98432-99de3560",
-    "title": "Red Hat Patches Kernel TCP RCE CVE‑2026‑98432",
-    "summary": "Red Hat released kernel patches for RHEL 8, 9, and 10 to fix CVE‑2026‑98432, a use‑after‑free flaw in the IPv4 TCP code. The flaw enables remote, unauthenticated attackers to execute arbitrary code with a CVSS score of 9.8, posing a critical threat. Administrators should apply the update immediately; Ubuntu’s fixes remain in the testing channel pending a stable release.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-    "publishedAt": "2026-11-03T11:23:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-kernel-tcp-rce-cve-2026-98432",
-      "article-99de3560",
-      "99de3560",
-      "red-hat-patches-kernel-tcp-rce-cve-2026-98432-728c1b"
-    ]
-  },
-  {
-    "slug": "exposure-prioritization-framework-explained-36cbb380",
-    "title": "Exposure Prioritization Framework Explained",
-    "summary": "The report explains how organizations prioritize vulnerability remediation, noting that most exposures are treated as urgent despite low exploitation rates. Gartner data shows fewer than 10% of vulnerabilities are actually exploited, yet teams focus on low‑risk exposures, leaving higher‑risk ones unaddressed. Adopting the four‑element framework aligns remediation effort with true risk, improving resource allocation and reducing breach exposure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
-    "publishedAt": "2026-11-03T11:18:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "exposure-prioritization-framework-explained",
-      "article-36cbb380",
-      "36cbb380",
-      "exposure-prioritization-framework-explained-44e845"
     ]
   }
 ];

@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 16:44:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 17:47:55 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)</title>
+      <link>https://secubuzz.com/news/cve-2026-122193-issue-with-trusted-remote-executio-9acb1335</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-122193-issue-with-trusted-remote-executio-9acb1335</guid>
+      <description><![CDATA[Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for running scripts on managed instances.]]></description>
+      <pubDate>Fri, 06 Nov 2026 17:19:55 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-173-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Vercel Deploys Device‑Bound Sessions to Stop Cookie Theft</title>
+      <link>https://secubuzz.com/news/vercel-deploys-device-bound-sessions-to-stop-cooki-7637fdf5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/vercel-deploys-device-bound-sessions-to-stop-cooki-7637fdf5</guid>
+      <description><![CDATA[Vercel introduced device‑bound session enforcement to mitigate stolen session cookie attacks on its platform. The mechanism binds session tokens to device fingerprints, preventing reuse of captured cookies across different hardware or browsers. Additionally, Vercel released an AI‑driven security review pipeline in public beta to proactively identify potential comprehensive session‑related vulnerabilities.]]></description>
+      <pubDate>Fri, 06 Nov 2026 16:55:20 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/vercel-rolls-out-new-protection-against-stolen-session">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>FBI agent pleads guilty to stealing $2.4 million in crypto from nation-state hackers</title>
+      <link>https://secubuzz.com/news/fbi-agent-pleads-guilty-to-stealing-2-4-million-in-5a5ff5ad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-agent-pleads-guilty-to-stealing-2-4-million-in-5a5ff5ad</guid>
+      <description><![CDATA[Patrick Steven Yaroch, 37, is facing up to 20 years in prison on wire fraud and money laundering charges after admitting to using his position on an FBI investigative squad to steal more than $2.4 million in cryptocurrency to cover his debts.]]></description>
+      <pubDate>Fri, 06 Nov 2026 16:53:00 GMT</pubDate>
+      <source url="https://therecord.media/fbi-agent-pleads-guilty-to-stealing-from-nation-state-hackers">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time</title>
+      <link>https://secubuzz.com/news/installing-the-fix-for-an-exploited-wordpress-flaw-5c970c1e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/installing-the-fix-for-an-exploited-wordpress-flaw-5c970c1e</guid>
+      <description><![CDATA[Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The vulnerability is tracked as CVE-2024-27834.]]></description>
+      <pubDate>Fri, 06 Nov 2026 16:08:38 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Industrial Control Systems Harden Refrigeration Monitoring</title>
       <link>https://secubuzz.com/news/industrial-control-systems-harden-refrigeration-mo-04118118</link>
@@ -15,6 +51,15 @@
       <pubDate>Fri, 06 Nov 2026 16:00:22 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/us-government-partners-urge-hardening-industrial-refrig">CyberNews AI</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:95887: Important: Red Hat JBoss Enterprise Application Platform 8.1.9 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-95887-important-red-hat-jboss-enterprise-1fcf7082</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95887-important-red-hat-jboss-enterprise-1fcf7082</guid>
+      <description><![CDATA[A security update is now available for Red Hat JBoss Enterprise Application Platform 8.1. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Fri, 06 Nov 2026 15:31:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95887">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Veeam Alerts to Boot Failures on AMD EPYC Hosts</title>
@@ -44,6 +89,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Dark Project Ransomware Group Offers 80% Commission</title>
+      <link>https://secubuzz.com/news/dark-project-ransomware-group-offers-80-commission-46fe2579</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dark-project-ransomware-group-offers-80-commission-46fe2579</guid>
+      <description><![CDATA[The Dark Project ransomware group recruits criminal partners with an 80% commission on successful attacks, combining data theft, encryption, and extortion. First observed in June 2026, the financially motivated operation pressures organizations into ransom payments. Security teams should monitor for extortion activity and implement network segmentation to limit lateral movement.]]></description>
+      <pubDate>Fri, 06 Nov 2026 15:03:03 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/new-dark-project-ransomware-group/">Cyber Security News</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
       <title>IMSI and IMEI: Phone Broadcasts and Readability</title>
       <link>https://secubuzz.com/news/imsi-and-imei-phone-broadcasts-and-readability-e3d9e5cd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/imsi-and-imei-phone-broadcasts-and-readability-e3d9e5cd</guid>
@@ -71,6 +125,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Claude Code Exposes User Emails via User‑Agent Headers</title>
+      <link>https://secubuzz.com/news/claude-code-exposes-user-emails-via-user-agent-hea-2683cb35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-exposes-user-emails-via-user-agent-hea-2683cb35</guid>
+      <description><![CDATA[Anthropic’s Claude Code transmitted users’ email addresses in HTTP User‑Agent headers during web searches, leaking personal data to third‑party sites. The flaw arises from the tool’s default header configuration, which embeds user identifiers without explicit consent, violating privacy best practices. Anthropic should update header handling, provide opt‑out controls, and issue a patch to prevent accidental data leakage.]]></description>
+      <pubDate>Fri, 06 Nov 2026 14:37:40 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-code-leaks-user-email/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CEO‑Spoofing Scammers Indicted for $100M AI‑Assisted Fraud</title>
       <link>https://secubuzz.com/news/ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e</guid>
@@ -78,6 +141,24 @@
       <pubDate>Fri, 06 Nov 2026 14:30:00 GMT</pubDate>
       <source url="https://therecord.media/ceo-spoofing-scammers-charged">The Record</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Chrome Dev 159 Released for Android</title>
+      <link>https://secubuzz.com/news/chrome-dev-159-released-for-android-04d26652</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-159-released-for-android-04d26652</guid>
+      <description><![CDATA[Google released Chrome Dev 159 (159.0.8144.0) for Android, adding new features and bug fixes. The update, available on Google Play, includes changes logged in the Chromium Git history and platform enhancements noted on the Chromium blog. Users should install the latest build and report any issues via the Chrome Release Team bug‑tracking system.]]></description>
+      <pubDate>Fri, 06 Nov 2026 14:28:32 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Mirax Android RAT Hijacks Streaming App Ads</title>
+      <link>https://secubuzz.com/news/mirax-android-rat-hijacks-streaming-app-ads-23f66fb7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mirax-android-rat-hijacks-streaming-app-ads-23f66fb7</guid>
+      <description><![CDATA[The Mirax Android RAT campaign leverages streaming-app advertisements as an initial infection vector to steal banking credentials across retail banking customers in the Middle East, Turkey, and Africa. The malware intercepts security codes and operates banking apps directly from victims' devices. Financial institutions should enforce app verification policies and monitor for anomalous banking activity.]]></description>
+      <pubDate>Fri, 06 Nov 2026 14:08:55 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/mirax-android-rat/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>DigiCert Breach Exposes Business Customer Data</title>
@@ -105,6 +186,15 @@
       <pubDate>Fri, 06 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/vole-mole/">Cloudflare Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>ARTEX AI Agents Compromise 190k Gaming Credentials, Apple Certificates</title>
+      <link>https://secubuzz.com/news/artex-ai-agents-compromise-190k-gaming-credentials-1041ff8d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/artex-ai-agents-compromise-190k-gaming-credentials-1041ff8d</guid>
+      <description><![CDATA[ARTEX AI agents exploited web applications with minimal human input, stealing over 190,000 gaming credentials and more than 300 Apple code‑signing certificates. The flaw stems from ARTEX’s automated penetration logic that bypasses manual checks, enabling credential harvesting and certificate misuse without user intervention. Security teams should disable ARTEX usage, revoke compromised certificates, and audit affected accounts for unauthorized access.]]></description>
+      <pubDate>Fri, 06 Nov 2026 13:49:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/artex-ai-agents/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>OpenAI Launches GPT‑6 Cyber Model for Flaw Hunting</title>
@@ -242,6 +332,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Red Hat Keycloak 26.6.8 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-keycloak-26-6-8-security-update-9ffab451</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-keycloak-26-6-8-security-update-9ffab451</guid>
+      <description><![CDATA[Red Hat released updated images for its Keycloak 26.6.8 build and the corresponding Operator on OpenShift. The update addresses internal security issues in the Keycloak container images, though no public CVE is cited. Users should pull the new images from the Customer Portal and redeploy to maintain secure authentication services.]]></description>
+      <pubDate>Fri, 06 Nov 2026 10:25:50 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95762">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Updates Keycloak 26.4.17 Images</title>
       <link>https://secubuzz.com/news/red-hat-updates-keycloak-26-4-17-images-90733f6c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-keycloak-26-4-17-images-90733f6c</guid>
@@ -257,6 +356,15 @@
       <description><![CDATA[Red Hat released a security update for its Keycloak 26.6.8 packages, addressing vulnerabilities that could permit unauthorized authentication access. The update corrects a flaw in the container image configuration that could be exploited via misconfigured token handling, with no public exploit reported. Red Hat advises applying the updated packages immediately and reviewing token validation settings to ensure secure deployment.]]></description>
       <pubDate>Fri, 06 Nov 2026 10:21:57 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95761">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Keycloak 26.4.17 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-keycloak-26-4-17-security-update-157aac0f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-keycloak-26-4-17-security-update-157aac0f</guid>
+      <description><![CDATA[Red Hat released new Keycloak 26.4.17 packages for OpenShift users. The update patches internal security flaws in the Keycloak distribution, with no CVE disclosed. Customers should download the updated packages from the Customer Portal and apply them to secure their identity services and verify deployment integrity.]]></description>
+      <pubDate>Fri, 06 Nov 2026 10:21:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95759">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -348,114 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 08:04:49 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html">The Hacker News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft Releases November Patch Tuesday Update</title>
-      <link>https://secubuzz.com/news/microsoft-releases-november-patch-tuesday-update-2458068c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-november-patch-tuesday-update-2458068c</guid>
-      <description><![CDATA[Microsoft released its November 2026 Patch Tuesday update, addressing 1,407 CVEs, including zero‑day CVE-2026-96951 that affected legacy software. The rollout, delayed by two and a half hours, focused on high‑severity flaws that could enable local privilege escalation or remote code execution on outdated Windows components. Teams should apply the update immediately, verify installation, and monitor legacy systems for residual vulnerabilities.]]></description>
-      <pubDate>Fri, 06 Nov 2026 07:00:48 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/06/november-2026-patch-tuesday-forecast/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Top 10 Deception Tech Solutions 2026</title>
-      <link>https://secubuzz.com/news/top-10-deception-tech-solutions-2026-2574b5e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-10-deception-tech-solutions-2026-2574b5e0</guid>
-      <description><![CDATA[The article ranks the top ten deception technology solutions for 2026, highlighting their ability to lure attackers into interacting with decoys. It explains that canary tokens and decoy credentials generate near‑zero false positives, making deception the most cost‑effective high‑fidelity detection signal. The piece also surveys market segmentation for 2026, offering a comparative analysis of vendors and pricing models.]]></description>
-      <pubDate>Fri, 06 Nov 2026 06:41:22 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-deception-technology/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Certification Snapshots Mislead Buyers on Vulnerability Coverage</title>
-      <link>https://secubuzz.com/news/certification-snapshots-mislead-buyers-on-vulnerab-ba179da8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/certification-snapshots-mislead-buyers-on-vulnerab-ba179da8</guid>
-      <description><![CDATA[Research shows Common Criteria and FIPS-140 certifications do not guarantee ongoing security, with 60% of vulnerabilities in certified products disclosed post-certification. The certifications represent a point-in-time assessment, leaving gaps as new flaws emerge after evaluation. Buyers should demand continuous vulnerability monitoring and use open-source tools like sec-certs and SCRUTINY for ongoing validation.]]></description>
-      <pubDate>Fri, 06 Nov 2026 06:30:16 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/06/mariia-bakhtina-masaryk-university-security-certification/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Survey Reveals 87% Demand Stronger AI Control Mechanisms</title>
-      <link>https://secubuzz.com/news/survey-reveals-87-demand-stronger-ai-control-mecha-0dee2eb5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/survey-reveals-87-demand-stronger-ai-control-mecha-0dee2eb5</guid>
-      <description><![CDATA[A Vanson Bourne survey of 3,600 decision-makers finds over half of enterprise AI systems operate autonomously or complete processes without human approval. 87% of respondents report existing approval and monitoring frameworks are insufficient for current AI deployments across multiple categories. Organizations must implement robust governance pipelines and real-time oversight to manage AI autonomy and mitigate unauthorized actions.]]></description>
-      <pubDate>Fri, 06 Nov 2026 06:00:03 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/06/autonomous-ai-oversight-governance/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CWP Backdoor Enables Silent Command Execution</title>
-      <link>https://secubuzz.com/news/cwp-backdoor-enables-silent-command-execution-154a622a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cwp-backdoor-enables-silent-command-execution-154a622a</guid>
-      <description><![CDATA[Researchers found a backdoor in Control Web Panel’s web server that lets attackers run arbitrary commands via web requests. The backdoor logs no requests, and installing it requires root access, so attackers must already control the server. Audit CWP deployments for unauthorized modules, apply vendor patches, and enforce strict access controls to block exploitation.]]></description>
-      <pubDate>Fri, 06 Nov 2026 05:58:54 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Most Repository Tokens Lack Expiration</title>
-      <link>https://secubuzz.com/news/most-repository-tokens-lack-expiration-e79c4b53</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/most-repository-tokens-lack-expiration-e79c4b53</guid>
-      <description><![CDATA[BlueFlag Security’s 2026 report reveals that 99% of repository access tokens never expire, leaving development accounts and automated tools with prolonged permissions. The lack of periodic access reviews creates blind spots, enabling unauthorized code modifications or data exfiltration after project completion. Organizations should enforce token rotation policies, conduct regular access audits, and restrict automated accounts to the minimum necessary privileges.]]></description>
-      <pubDate>Fri, 06 Nov 2026 05:30:23 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/06/blueflag-ai-agents-access-risks-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Phishing Sites Use Live Chat to Target Travelers</title>
-      <link>https://secubuzz.com/news/phishing-sites-use-live-chat-to-target-travelers-a31e6990</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishing-sites-use-live-chat-to-target-travelers-a31e6990</guid>
-      <description><![CDATA[Phishing sites mimicking rental platforms use live chat to lure travelers into giving passwords, personal data, and credit card numbers. They replicate host names, ratings, and reservation details, using urgent messages to pressure users, and were removed by Fortra’s FIRE team. Security teams should verify URLs, educate travelers on phishing indicators, and block known malicious domains to prevent credential compromise.]]></description>
-      <pubDate>Fri, 06 Nov 2026 05:00:41 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/06/holiday-rental-platform-phishing-travelers/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Security Updates for BIND on RHEL 6</title>
-      <link>https://secubuzz.com/news/red-hat-releases-security-updates-for-bind-on-rhel-8a77118d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-security-updates-for-bind-on-rhel-8a77118d</guid>
-      <description><![CDATA[Red Hat issued a security update for the BIND package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The advisory addresses security flaws rated as Important impact that could jeopardize DNS infrastructure resilience. System administrators should apply the latest package updates provided by Red Hat to mitigate potential exploitation risks.]]></description>
-      <pubDate>Fri, 06 Nov 2026 04:15:37 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95727">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Three Charged in $129M AI Impersonation Fraud Scheme</title>
-      <link>https://secubuzz.com/news/three-charged-in-129m-ai-impersonation-fraud-schem-79e3bbdb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/three-charged-in-129m-ai-impersonation-fraud-schem-79e3bbdb</guid>
-      <description><![CDATA[Three individuals nicknamed 'Rocky Balboa,' 'Superman Cash,' and 'Fat Boy' are charged with using AI to impersonate executives and attorneys to steal $129 million from accounting departments. The scheme leveraged AI-generated voice to authorize fraudulent transfers, exploiting trust in executive identities. Indictments highlight the growing threat of AI-enabled social engineering and the need for enhanced verification in financial workflows.]]></description>
-      <pubDate>Fri, 06 Nov 2026 03:03:29 GMT</pubDate>
-      <source url="https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenAI Unveils GPT-6 Cyber AI Security Model</title>
-      <link>https://secubuzz.com/news/openai-unveils-gpt-6-cyber-ai-security-model-98ffde6c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-unveils-gpt-6-cyber-ai-security-model-98ffde6c</guid>
-      <description><![CDATA[OpenAI introduced GPT-6 Cyber, a security-focused artificial intelligence model designed for vulnerability research, on November 4, 2026. The advanced AI model successfully identified 81 new high-severity Firefox flaws and generated functional exploits for 948 Linux kernel bugs. OpenAI stated that the cybersecurity tool adheres to researcher-defined constraints far better than its previous model versions.]]></description>
-      <pubDate>Fri, 06 Nov 2026 02:04:53 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/openai-launches-gpt-6-cyber/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ISC Stormcast Provides Daily Threat Briefing</title>
-      <link>https://secubuzz.com/news/isc-stormcast-provides-daily-threat-briefing-b061cdf8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-provides-daily-threat-briefing-b061cdf8</guid>
-      <description><![CDATA[ISC released its Friday stormcast, providing a briefing on threat activity, including malware campaigns, phishing trends, and zero‑day disclosures. The report covers emerging attack vectors, defensive recommendations, and contextual analysis of recent incidents, but does not highlight any specific vulnerabilities. The briefing is freely available under a Creative Commons Attribution‑Noncommercial 3.0 United States License, enabling internal security awareness sharing.]]></description>
-      <pubDate>Fri, 06 Nov 2026 02:00:02 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33494">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Shopify Enforces IP Allowlisting for Public Admin API Apps</title>
-      <link>https://secubuzz.com/news/shopify-enforces-ip-allowlisting-for-public-admin-465d016f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/shopify-enforces-ip-allowlisting-for-public-admin-465d016f</guid>
-      <description><![CDATA[Shopify requires IP allowlisting for public apps that use its Admin API to curb unauthorized access via stolen tokens. The change adds a check that restricts API calls to approved IP ranges, mitigating token misuse without altering authentication logic. Developers must enable the feature by November 20, 2026, with bulk‑operation apps due November 12, and should update app configurations accordingly.]]></description>
-      <pubDate>Fri, 06 Nov 2026 01:44:52 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/shopify-mandates-ip-allowlisting/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
