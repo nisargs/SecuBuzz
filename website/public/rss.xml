@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Nov 2026 12:45:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 13:46:47 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenAI Launches GPT‑6 Cyber Model for Flaw Hunting</title>
+      <link>https://secubuzz.com/news/openai-launches-gpt-6-cyber-model-for-flaw-hunting-e7972fd5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-launches-gpt-6-cyber-model-for-flaw-hunting-e7972fd5</guid>
+      <description><![CDATA[OpenAI introduced GPT‑6 Cyber, a model rated critical for cybersecurity that surpasses GPT‑5.6 Cyber in exploitation accuracy while staying within scope. The model hunts flaws with detailed reports, avoiding policy violations or unauthorized code execution. Teams can embed GPT‑6 Cyber into scanning pipelines, but should validate outputs manually to avoid false positives.]]></description>
+      <pubDate>Fri, 06 Nov 2026 13:19:52 GMT</pubDate>
+      <source url="https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>OpenSSH flaw exploited in the wild just hours after disclosure (CVE-2026-123158)</title>
+      <link>https://secubuzz.com/news/openssh-flaw-exploited-in-the-wild-just-hours-afte-c348bbe1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssh-flaw-exploited-in-the-wild-just-hours-afte-c348bbe1</guid>
+      <description><![CDATA[An OpenSSH flaw that lets remote attackers log into passwordless accounts on Alpine Linux and other musl-based systems is being exploited, threat intelligence firm Previdian has warned. The flaw (CVE-2026-123158), nicknamed sshole by Wakefield researcher Özgün Kültekin, was fixed in OpenSSH 10.6p2 on November 5. “An attacker who can reach your SSH port can log in without knowing any password.]]></description>
+      <pubDate>Fri, 06 Nov 2026 12:49:41 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ahold Delhaize Estimates €250M Loss from Cyberattack</title>
+      <link>https://secubuzz.com/news/ahold-delhaize-estimates-250m-loss-from-cyberattac-af648d4c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ahold-delhaize-estimates-250m-loss-from-cyberattac-af648d4c</guid>
+      <description><![CDATA[Ahold Delhaize disclosed that an October cyberattack is expected to reduce fourth‑quarter sales by up to €250 million. The breach forced the retailer to lower its 2026 financial outlook, reflecting significant operational and reputational damage. Ahold Delhaize has not released detailed incident response steps, but security teams should review supply‑chain controls and incident‑response readiness.]]></description>
+      <pubDate>Fri, 06 Nov 2026 12:47:55 GMT</pubDate>
+      <source url="https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>D-Link Issues Zero‑Day Alerts for DGS‑3130 Switches</title>
+      <link>https://secubuzz.com/news/d-link-issues-zero-day-alerts-for-dgs-3130-switche-6086ec92</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/d-link-issues-zero-day-alerts-for-dgs-3130-switche-6086ec92</guid>
+      <description><![CDATA[D-Link disclosed multiple zero‑day flaws in its DGS‑3130 series managed Gigabit stackable switches, exposing them to remote exploitation. The defects enable unauthenticated attackers to run arbitrary code via malformed management packets, potentially compromising network control planes. D-Link issued mitigation steps and firmware updates; administrators should apply the latest patch and limit management access to trusted networks.]]></description>
+      <pubDate>Fri, 06 Nov 2026 12:37:22 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Tool Rapidly Steals Azure Key Vault Secrets</title>
+      <link>https://secubuzz.com/news/ai-tool-rapidly-steals-azure-key-vault-secrets-37326da9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-tool-rapidly-steals-azure-key-vault-secrets-37326da9</guid>
+      <description><![CDATA[Hackers used ARTEX AI to locate exposed GitHub credentials and access Azure Key Vault, extracting data in five minutes. The incident shows AI can accelerate credential discovery and cloud exfiltration, bypassing manual search. Teams should enforce strict secret management, enable Azure Key Vault controls, and monitor GitHub for accidental exposure.]]></description>
+      <pubDate>Fri, 06 Nov 2026 12:08:58 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-artex-ai/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>OpenSSH Fixes ‘SSHole’ Authentication Bypass</title>
+      <link>https://secubuzz.com/news/openssh-fixes-sshole-authentication-bypass-17f8aa5a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssh-fixes-sshole-authentication-bypass-17f8aa5a</guid>
+      <description><![CDATA[OpenSSH released patches for the ‘SSHole’ authentication bypass on Linux systems using musl libc without PAM, where any password of 257–1024 characters was accepted. The flaw, CVE-2026-116606, allows unauthenticated users to log in as privileged accounts, risking full system compromise. Apply the latest OpenSSH update and enforce PAM to block the password length vulnerability.]]></description>
+      <pubDate>Fri, 06 Nov 2026 12:07:42 GMT</pubDate>
+      <source url="https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Malicious Extensions Exploit Claude Dispatch for Code Execution</title>
+      <link>https://secubuzz.com/news/malicious-extensions-exploit-claude-dispatch-for-c-c28b32f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-extensions-exploit-claude-dispatch-for-c-c28b32f8</guid>
+      <description><![CDATA[Researchers discovered that malicious browser extensions can leverage Claude Dispatch to execute arbitrary scripts on users’ computers via the Claude Desktop application. The flaw allows attackers to bypass browser sandboxing, enabling remote code execution without user interaction. Users should avoid installing untrusted extensions, and developers must patch the Dispatch integration to prevent unauthorized script execution.]]></description>
+      <pubDate>Fri, 06 Nov 2026 12:06:35 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>US Warns of Remote Access Threats to Cold-Chain Systems</title>
       <link>https://secubuzz.com/news/us-warns-of-remote-access-threats-to-cold-chain-sy-a28cd128</link>
@@ -14,6 +77,24 @@
       <description><![CDATA[US agencies issued a warning about remote access vulnerabilities affecting supermarket refrigeration and blood storage cold‑chain monitoring systems. The warning highlights that attackers could exploit unsecured remote connections to disrupt temperature controls, potentially compromising stored products. Operators should enforce strong authentication, patch firmware, and monitor remote access logs to mitigate the identified risks.]]></description>
       <pubDate>Fri, 06 Nov 2026 12:02:17 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Storm-2603 Exploits SharePoint ToolShell Flaws for Fileless Backdoor</title>
+      <link>https://secubuzz.com/news/storm-2603-exploits-sharepoint-toolshell-flaws-for-9eed6441</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/storm-2603-exploits-sharepoint-toolshell-flaws-for-9eed6441</guid>
+      <description><![CDATA[Storm-2603 exploited SharePoint ToolShell vulnerabilities on a SharePoint server to deploy a backdoor that never touched disk. The backdoor enabled the group to attempt execution of Warlock ransomware, but security software intercepted the payload before encryption could occur. Microsoft has issued patches for the ToolShell flaws; organizations should apply the latest SharePoint updates and monitor for anomalous PowerShell activity.]]></description>
+      <pubDate>Fri, 06 Nov 2026 11:43:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/storm-2603-hackers/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Athena Model Predictions Warn of Imminent AI Risks</title>
+      <link>https://secubuzz.com/news/athena-model-predictions-warn-of-imminent-ai-risks-457005fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/athena-model-predictions-warn-of-imminent-ai-risks-457005fd</guid>
+      <description><![CDATA[The piece reviews updates to the Athena model and cites Dario Amodei’s call to pace AI development. Amodei warns that the gap between model performance and societal readiness will widen, urging caution in deployment. Readers are encouraged to examine the model’s limitations and prepare mitigation strategies for emerging AI risks.]]></description>
+      <pubDate>Fri, 06 Nov 2026 11:30:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html">The Hacker News</source>
       <category>General</category>
     </item>
     <item>
@@ -375,87 +456,6 @@
       <pubDate>Thu, 05 Nov 2026 21:43:56 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95618">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>DNS Typos Expose US Government Email Systems</title>
-      <link>https://secubuzz.com/news/dns-typos-expose-us-government-email-systems-483040ce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dns-typos-expose-us-government-email-systems-483040ce</guid>
-      <description><![CDATA[Erroneous or outdated DNS records in US government email infrastructure can grant attackers unexpected control over mail routing and delivery. The misconfiguration allows attackers to spoof sender addresses, intercept messages, or redirect traffic, potentially facilitating phishing or data exfiltration. Administrators should audit DNS zones, correct stale entries, and enforce strict SPF, DKIM, and DMARC policies to mitigate the risk.]]></description>
-      <pubDate>Thu, 05 Nov 2026 21:35:05 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Images Fuel Pet‑Missing Scam Extortions</title>
-      <link>https://secubuzz.com/news/ai-images-fuel-pet-missing-scam-extortions-1987234e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-images-fuel-pet-missing-scam-extortions-1987234e</guid>
-      <description><![CDATA[Scammers are leveraging AI‑generated images of missing pets to create convincing claims of finding a lost animal. The fabricated images are used to solicit payment from owners, who are misled into believing the pet has been located. Security teams should educate users about verifying claims, checking official pet‑search channels, and reporting suspicious requests to authorities.]]></description>
-      <pubDate>Thu, 05 Nov 2026 21:34:14 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/ai/2026/11/scammers-use-ai-generated-images-of-missing-pets-to-extort-owners">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Phishers Exploit Fake SpaceX Events for Microsoft, Google Credentials</title>
-      <link>https://secubuzz.com/news/phishers-exploit-fake-spacex-events-for-microsoft-480fdb89</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishers-exploit-fake-spacex-events-for-microsoft-480fdb89</guid>
-      <description><![CDATA[Hackers used counterfeit OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, targeting Microsoft and Google accounts. The phishing‑as‑a‑service platforms delivered credential phishing that captured Microsoft and Google authentication sessions, enabling attackers to hijack accounts. Security teams should verify event invitations, enforce multi‑factor authentication, and monitor for anomalous login sessions to mitigate credential compromise.]]></description>
-      <pubDate>Thu, 05 Nov 2026 21:30:30 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat webkit2gtk3 Critical Update Released</title>
-      <link>https://secubuzz.com/news/red-hat-webkit2gtk3-critical-update-released-ad72d378</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-webkit2gtk3-critical-update-released-ad72d378</guid>
-      <description><![CDATA[Red Hat issued a critical security update for webkit2gtk3 on Enterprise Linux 8.4, covering both Advanced Mission Critical and Extended Update Support streams. The patch addresses unspecified webkit2gtk3 vulnerabilities; CVSS scores are linked via CVE references, but no specific CVE IDs are named. Administrators should deploy the update promptly to mitigate potential exploitation risks.]]></description>
-      <pubDate>Thu, 05 Nov 2026 21:15:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95590">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel-RT Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-rt-security-update-4121a22f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-rt-security-update-4121a22f</guid>
-      <description><![CDATA[Red Hat issued a kernel‑rt security update for Red Hat Enterprise Linux 7 Extended Lifecycle Support, addressing multiple vulnerabilities. The update carries an Important security impact rating, with CVSS base scores provided for each referenced CVE, indicating high‑severity flaws. Red Hat recommends applying the kernel‑rt patch immediately; no workarounds are listed, and the update is available through standard RHEL repositories.]]></description>
-      <pubDate>Thu, 05 Nov 2026 21:05:03 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95721">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Phishing Simulation Exceeds Scope, Exposes Users to Real Threats</title>
-      <link>https://secubuzz.com/news/phishing-simulation-exceeds-scope-exposes-users-to-e956d915</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/phishing-simulation-exceeds-scope-exposes-users-to-e956d915</guid>
-      <description><![CDATA[Dark Reading editors highlighted a phishing simulation that exceeded its intended scope, exposing participants to real phishing content. The exercise, meant to test user awareness, inadvertently triggered legitimate phishing attempts, raising concerns about accidental credential compromise. Teams should review simulation parameters, enforce strict boundaries, and monitor for unintended credential leakage to prevent real-world exploitation.]]></description>
-      <pubDate>Thu, 05 Nov 2026 21:00:47 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/what-we-missed-knicks-phishing-test-out-of-bounds">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google, Meta, TikTok Sue California Over Youth Protection Law</title>
-      <link>https://secubuzz.com/news/google-meta-tiktok-sue-california-over-youth-prote-fbe3bf35</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-meta-tiktok-sue-california-over-youth-prote-fbe3bf35</guid>
-      <description><![CDATA[Google, Meta, and TikTok filed federal suits to block a California law that prohibits deploying psychologically exploitative features for users under 15. The lawsuit argues the law infringes on platform freedom and could stifle innovation while protecting minors from compulsive use. Courts will evaluate the law's compatibility with First Amendment rights and the platforms' responsibility to safeguard youth engagement.]]></description>
-      <pubDate>Thu, 05 Nov 2026 20:48:00 GMT</pubDate>
-      <source url="https://therecord.media/social-media-giants-sue-california-over-social-media-law">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95638: Important: go-toolset:rhel8 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95638-important-go-toolset-rhel8-securit-7fd2681e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95638-important-go-toolset-rhel8-securit-7fd2681e</guid>
-      <description><![CDATA[An update for the go-toolset:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 05 Nov 2026 20:20:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95638">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Truffle Security Launches Secret Revocation Initiative</title>
-      <link>https://secubuzz.com/news/truffle-security-launches-secret-revocation-initia-0c63b467</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/truffle-security-launches-secret-revocation-initia-0c63b467</guid>
-      <description><![CDATA[Truffle Security announced a free Secrets Revocation Program to help API key issuers invalidate 1.4 million publicly exposed secrets. The initiative provides automated tooling and guidance to identify active secrets, revoke them, and monitor for re‑exposure, reducing credential‑based attack surface. Security teams should adopt the program, integrate revocation checks into CI/CD pipelines, and maintain strict secret lifecycle policies.]]></description>
-      <pubDate>Thu, 05 Nov 2026 20:15:08 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

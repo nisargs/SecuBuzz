@@ -11,6 +11,140 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openai-launches-gpt-6-cyber-model-for-flaw-hunting-e7972fd5",
+    "title": "OpenAI Launches GPT‑6 Cyber Model for Flaw Hunting",
+    "summary": "OpenAI introduced GPT‑6 Cyber, a model rated critical for cybersecurity that surpasses GPT‑5.6 Cyber in exploitation accuracy while staying within scope. The model hunts flaws with detailed reports, avoiding policy violations or unauthorized code execution. Teams can embed GPT‑6 Cyber into scanning pipelines, but should validate outputs manually to avoid false positives.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
+    "publishedAt": "2026-11-06T13:19:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-launches-gpt-6-cyber-model-for-flaw-hunting",
+      "article-e7972fd5",
+      "e7972fd5",
+      "openai-launches-gpt-6-cyber-model-for-flaw-hunting-40974c"
+    ]
+  },
+  {
+    "slug": "openssh-flaw-exploited-in-the-wild-just-hours-afte-c348bbe1",
+    "title": "OpenSSH flaw exploited in the wild just hours after disclosure (CVE-2026-123158)",
+    "summary": "An OpenSSH flaw that lets remote attackers log into passwordless accounts on Alpine Linux and other musl-based systems is being exploited, threat intelligence firm Previdian has warned. The flaw (CVE-2026-123158), nicknamed sshole by Wakefield researcher Özgün Kültekin, was fixed in OpenSSH 10.6p2 on November 5. “An attacker who can reach your SSH port can log in without knowing any password.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/",
+    "publishedAt": "2026-11-06T12:49:41.000Z",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openssh-flaw-exploited-in-the-wild-just-hours-afte",
+      "article-c348bbe1",
+      "c348bbe1",
+      "openssh-flaw-exploited-in-the-wild-just-hours-afte-2cffd1",
+      "openssh-flaw-exploited-in-the-wild-just-hours-after-disclosu"
+    ]
+  },
+  {
+    "slug": "ahold-delhaize-estimates-250m-loss-from-cyberattac-af648d4c",
+    "title": "Ahold Delhaize Estimates €250M Loss from Cyberattack",
+    "summary": "Ahold Delhaize disclosed that an October cyberattack is expected to reduce fourth‑quarter sales by up to €250 million. The breach forced the retailer to lower its 2026 financial outlook, reflecting significant operational and reputational damage. Ahold Delhaize has not released detailed incident response steps, but security teams should review supply‑chain controls and incident‑response readiness.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack/",
+    "publishedAt": "2026-11-06T12:47:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ahold-delhaize-estimates-250m-loss-from-cyberattac",
+      "article-af648d4c",
+      "af648d4c",
+      "ahold-delhaize-estimates-250m-loss-from-cyberattac-217a02",
+      "ahold-delhaize-estimates-250m-loss-from-cyberattack"
+    ]
+  },
+  {
+    "slug": "d-link-issues-zero-day-alerts-for-dgs-3130-switche-6086ec92",
+    "title": "D-Link Issues Zero‑Day Alerts for DGS‑3130 Switches",
+    "summary": "D-Link disclosed multiple zero‑day flaws in its DGS‑3130 series managed Gigabit stackable switches, exposing them to remote exploitation. The defects enable unauthenticated attackers to run arbitrary code via malformed management packets, potentially compromising network control planes. D-Link issued mitigation steps and firmware updates; administrators should apply the latest patch and limit management access to trusted networks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
+    "publishedAt": "2026-11-06T12:37:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "d-link-issues-zero-day-alerts-for-dgs-3130-switche",
+      "article-6086ec92",
+      "6086ec92",
+      "d-link-issues-zero-day-alerts-for-dgs-3130-switche-257244",
+      "d-link-issues-zero-day-alerts-for-dgs-3130-switches"
+    ]
+  },
+  {
+    "slug": "ai-tool-rapidly-steals-azure-key-vault-secrets-37326da9",
+    "title": "AI Tool Rapidly Steals Azure Key Vault Secrets",
+    "summary": "Hackers used ARTEX AI to locate exposed GitHub credentials and access Azure Key Vault, extracting data in five minutes. The incident shows AI can accelerate credential discovery and cloud exfiltration, bypassing manual search. Teams should enforce strict secret management, enable Azure Key Vault controls, and monitor GitHub for accidental exposure.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-artex-ai/",
+    "publishedAt": "2026-11-06T12:08:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-tool-rapidly-steals-azure-key-vault-secrets",
+      "article-37326da9",
+      "37326da9",
+      "ai-tool-rapidly-steals-azure-key-vault-secrets-2cedf0"
+    ]
+  },
+  {
+    "slug": "openssh-fixes-sshole-authentication-bypass-17f8aa5a",
+    "title": "OpenSSH Fixes ‘SSHole’ Authentication Bypass",
+    "summary": "OpenSSH released patches for the ‘SSHole’ authentication bypass on Linux systems using musl libc without PAM, where any password of 257–1024 characters was accepted. The flaw, CVE-2026-116606, allows unauthenticated users to log in as privileged accounts, risking full system compromise. Apply the latest OpenSSH update and enforce PAM to block the password length vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/",
+    "publishedAt": "2026-11-06T12:07:42.000Z",
+    "cves": [
+      "CVE-2026-116606"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openssh-fixes-sshole-authentication-bypass",
+      "article-17f8aa5a",
+      "17f8aa5a",
+      "openssh-fixes-sshole-authentication-bypass-7e09f0"
+    ]
+  },
+  {
+    "slug": "malicious-extensions-exploit-claude-dispatch-for-c-c28b32f8",
+    "title": "Malicious Extensions Exploit Claude Dispatch for Code Execution",
+    "summary": "Researchers discovered that malicious browser extensions can leverage Claude Dispatch to execute arbitrary scripts on users’ computers via the Claude Desktop application. The flaw allows attackers to bypass browser sandboxing, enabling remote code execution without user interaction. Users should avoid installing untrusted extensions, and developers must patch the Dispatch integration to prevent unauthorized script execution.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+    "publishedAt": "2026-11-06T12:06:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-extensions-exploit-claude-dispatch-for-c",
+      "article-c28b32f8",
+      "c28b32f8",
+      "malicious-extensions-exploit-claude-dispatch-for-c-13aee6",
+      "malicious-extensions-exploit-claude-dispatch-for-code-execut"
+    ]
+  },
+  {
     "slug": "us-warns-of-remote-access-threats-to-cold-chain-sy-a28cd128",
     "title": "US Warns of Remote Access Threats to Cold-Chain Systems",
     "summary": "US agencies issued a warning about remote access vulnerabilities affecting supermarket refrigeration and blood storage cold‑chain monitoring systems. The warning highlights that attackers could exploit unsecured remote connections to disrupt temperature controls, potentially compromising stored products. Operators should enforce strong authentication, patch firmware, and monitor remote access logs to mitigate the identified risks.",
@@ -27,6 +161,43 @@ export const news: NewsBrief[] = [
       "a28cd128",
       "us-warns-of-remote-access-threats-to-cold-chain-sy-69a66f",
       "us-warns-of-remote-access-threats-to-cold-chain-systems"
+    ]
+  },
+  {
+    "slug": "storm-2603-exploits-sharepoint-toolshell-flaws-for-9eed6441",
+    "title": "Storm-2603 Exploits SharePoint ToolShell Flaws for Fileless Backdoor",
+    "summary": "Storm-2603 exploited SharePoint ToolShell vulnerabilities on a SharePoint server to deploy a backdoor that never touched disk. The backdoor enabled the group to attempt execution of Warlock ransomware, but security software intercepted the payload before encryption could occur. Microsoft has issued patches for the ToolShell flaws; organizations should apply the latest SharePoint updates and monitor for anomalous PowerShell activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/storm-2603-hackers/",
+    "publishedAt": "2026-11-06T11:43:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "storm-2603-exploits-sharepoint-toolshell-flaws-for",
+      "article-9eed6441",
+      "9eed6441",
+      "storm-2603-exploits-sharepoint-toolshell-flaws-for-41173d",
+      "storm-2603-exploits-sharepoint-toolshell-flaws-for-fileless-"
+    ]
+  },
+  {
+    "slug": "athena-model-predictions-warn-of-imminent-ai-risks-457005fd",
+    "title": "Athena Model Predictions Warn of Imminent AI Risks",
+    "summary": "The piece reviews updates to the Athena model and cites Dario Amodei’s call to pace AI development. Amodei warns that the gap between model performance and societal readiness will widen, urging caution in deployment. Readers are encouraged to examine the model’s limitations and prepare mitigation strategies for emerging AI risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+    "publishedAt": "2026-11-06T11:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "athena-model-predictions-warn-of-imminent-ai-risks",
+      "article-457005fd",
+      "457005fd",
+      "athena-model-predictions-warn-of-imminent-ai-risks-1d4ab3"
     ]
   },
   {
@@ -9375,175 +9546,6 @@ export const news: NewsBrief[] = [
       "6a9d6960",
       "cogent-security-highlights-php2shell-vulnerability-19b788",
       "cogent-security-highlights-php2shell-vulnerability-impact"
-    ]
-  },
-  {
-    "slug": "cpguard-update-channel-hijacked-backdoor-deployed-25db363b",
-    "title": "cPGuard Update Channel Hijacked, Backdoor Deployed",
-    "summary": "An attacker compromised the update channel for cPGuard, a Linux hosting security tool, and pushed a malicious script that installed a backdoor and exfiltrated sensitive files. OPSSHIELD confirmed the attacker retrieved stolen data and advised administrators to upgrade to version 5.88.25 or newer immediately. Security teams should verify update signatures, apply the latest patch, and monitor for unauthorized backdoor activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cpguard-supply-chain-attack/",
-    "publishedAt": "2026-11-03T09:53:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cpguard-update-channel-hijacked-backdoor-deployed",
-      "article-25db363b",
-      "25db363b",
-      "cpguard-update-channel-hijacked-backdoor-deployed-7e2df3"
-    ]
-  },
-  {
-    "slug": "russia-aligned-gorbag-group-targets-frontline-ukra-76702641",
-    "title": "Russia-Aligned Gorbag Group Targets Frontline Ukrainian Entities",
-    "summary": "ESET researchers identified Gorbag, a Russia-aligned cyber espionage group targeting Ukrainian organizations located near the front line. The threat actors deploy simple infostealer malware to systematically harvest sensitive data and intelligence from compromised systems. Security teams monitoring affected regional networks should implement robust infostealer detection mechanisms and restrict sensitive data egress.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/gorbag-orcs-border-harvesting-intelligence-ukraine/",
-    "publishedAt": "2026-11-03T09:50:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russia-aligned-gorbag-group-targets-frontline-ukra",
-      "article-76702641",
-      "76702641",
-      "russia-aligned-gorbag-group-targets-frontline-ukra-62b7ab",
-      "russia-aligned-gorbag-group-targets-frontline-ukrainian-enti"
-    ]
-  },
-  {
-    "slug": "uk-anticipates-ai-cyberattacks-on-critical-infrast-15a1cf1e",
-    "title": "UK Anticipates AI Cyberattacks on Critical Infrastructure by 2028",
-    "summary": "UK cyber chief warned that by 2028, state actors like China and Russia will target critical infrastructure with AI attacks. The warning underscores the rise of machine‑learning‑driven intrusion, phishing, and sabotage against essential services. Teams should adopt robust AI‑aware defenses, conduct threat modeling, and coordinate with government agencies for preparedness.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/",
-    "publishedAt": "2026-11-03T09:49:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-anticipates-ai-cyberattacks-on-critical-infrast",
-      "article-15a1cf1e",
-      "15a1cf1e",
-      "uk-anticipates-ai-cyberattacks-on-critical-infrast-7579d0",
-      "uk-anticipates-ai-cyberattacks-on-critical-infrastructure-by"
-    ]
-  },
-  {
-    "slug": "stolen-cloud-credentials-fuel-ai-billing-spikes-5b583e27",
-    "title": "Stolen Cloud Credentials Fuel AI Billing Spikes",
-    "summary": "Criminals compromised corporate cloud accounts to run AI models, generating excessive API requests and billing spikes. The attacks, dubbed LLMJacking, have produced daily charges exceeding $100,000 and cumulative bills up to $1 million, as identified by GTIG and Mandiant. Organizations should enforce strict credential hygiene, enable multi‑factor authentication, and monitor anomalous API usage to mitigate future incidents.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/llmjacking-stolen-ai-access-cloud-bills/",
-    "publishedAt": "2026-11-03T09:39:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "stolen-cloud-credentials-fuel-ai-billing-spikes",
-      "article-5b583e27",
-      "5b583e27",
-      "stolen-cloud-credentials-fuel-ai-billing-spikes-5d4531"
-    ]
-  },
-  {
-    "slug": "crowdstrike-deloitte-ai-partnership-expands-enterp-c3812401",
-    "title": "CrowdStrike-Deloitte AI Partnership Expands Enterprise Threat Detection",
-    "summary": "CrowdStrike and Deloitte announced an expanded AI security partnership at Fal.Con Europe, integrating Falcon IQ into Deloitte Spain’s advisory services. The alliance links business risk decisions with threat detection and response, focusing on identifying practical security challenges for enterprises. Security teams should evaluate the integration to enhance risk‑aware threat detection workflows and incorporate Falcon IQ analytics into operational playbooks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/crowdstrike-and-deloitte-expand-ai-security/",
-    "publishedAt": "2026-11-03T09:34:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-deloitte-ai-partnership-expands-enterp",
-      "article-c3812401",
-      "c3812401",
-      "crowdstrike-deloitte-ai-partnership-expands-enterp-3c3cb7",
-      "crowdstrike-deloitte-ai-partnership-expands-enterprise-threa"
-    ]
-  },
-  {
-    "slug": "google-dismantles-xcpe-botnet-of-1-3m-android-devi-a88e7321",
-    "title": "Google Dismantles XCPE Botnet of 1.3M Android Devices",
-    "summary": "Google dismantled the XCPE botnet that infected 1.3 million Android devices, operated by OEM/ODM Videostrong Technology for financial gain. The botnet used compromised apps to exfiltrate data and deliver malware, but no public exploit or CVE was disclosed. Google removed command‑and‑control servers and pushed device cleanup, and teams should update firmware and enforce stricter app vetting.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/",
-    "publishedAt": "2026-11-03T09:22:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-dismantles-xcpe-botnet-of-1-3m-android-devi",
-      "article-a88e7321",
-      "a88e7321",
-      "google-dismantles-xcpe-botnet-of-1-3m-android-devi-1979c1",
-      "google-dismantles-xcpe-botnet-of-1-3m-android-devices"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94438-critical-kernel-security-bug-fix-a-302ed0b3",
-    "title": "RHSA-2026:94438: Critical: kernel security, bug fix, and enhancement update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. The vulnerability is tracked as CVE-2026-64832.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94438",
-    "publishedAt": "2026-11-03T09:20:58.000Z",
-    "cves": [
-      "CVE-2026-64832"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94438-critical-kernel-security-bug-fix-a",
-      "article-302ed0b3",
-      "302ed0b3",
-      "rhsa-2026-94438-critical-kernel-security-bug-fix-a-37d8ba",
-      "rhsa-2026-94438-critical-kernel-security-bug-fix-and-enhance"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94449-important-libxtst-security-update-5901ed76",
-    "title": "RHSA-2026:94449: Important: libXtst security update",
-    "summary": "An update for libXtst is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94449",
-    "publishedAt": "2026-11-03T09:03:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94449-important-libxtst-security-update",
-      "article-5901ed76",
-      "5901ed76",
-      "rhsa-2026-94449-important-libxtst-security-update-37d8ba"
-    ]
-  },
-  {
-    "slug": "openai-boosts-bug-bounty-payouts-to-172-000-c78b0629",
-    "title": "OpenAI Boosts Bug Bounty Payouts to $172,000",
-    "summary": "OpenAI has increased its bug bounty program, raising the maximum payout for critical findings to $172,000 and adding bonus incentives for high‑quality reports. The program now offers quadrupled midpoints for medium, high, and critical categories, encouraging researchers to disclose vulnerabilities responsibly. Security teams should review OpenAI’s updated bounty guidelines and ensure their own systems are regularly tested for similar vulnerabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/03/openai-bigger-bug-bounty-rewards/",
-    "publishedAt": "2026-11-03T08:58:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-boosts-bug-bounty-payouts-to-172-000",
-      "article-c78b0629",
-      "c78b0629",
-      "openai-boosts-bug-bounty-payouts-to-172-000-644cbd"
     ]
   }
 ];
