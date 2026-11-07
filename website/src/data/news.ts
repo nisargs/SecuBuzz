@@ -240,11 +240,11 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "sonicwall-sslvpn-mfa-bypass-vulnerability-cve-2026-2a12555f",
-    "title": "SonicWall SSLVPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed",
-    "summary": "SonicWall disclosed a critical vulnerability (CVE‑2026‑19868) in its SonicOS SSLVPN that allows attackers to bypass SAML‑based MFA during logins, exposing administrative access. The flaw exploits a logic error in SAML enforcement, enabling credential‑reuse attacks that can compromise protected resources. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.",
+    "slug": "sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables-c701e62e",
+    "title": "SonicWall SSLVPN MFA Bypass (CVE‑2026‑19868) Enables Remote Code Execution",
+    "summary": "SonicWall SSLVPN suffered a critical MFA bypass flaw (CVE‑2026‑19868) that lets attackers gain unauthenticated access to corporate networks. The vulnerability stems from improper validation of authentication tokens during the SSLVPN handshake, enabling remote code execution and credential‑reuse attacks. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
     "publishedAt": "2026-11-07T00:00:55.000Z",
@@ -257,14 +257,18 @@ export const news: NewsBrief[] = [
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/sonicos-sslvpn-vulnerability-exploited/"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-19868-how-to-detect-patch-sonicwall-ssl-vpn-mf"
       }
     ],
     "aliases": [
-      "sonicwall-sslvpn-mfa-bypass-vulnerability-cve-2026",
-      "article-2a12555f",
-      "2a12555f",
-      "sonicwall-sslvpn-mfa-bypass-vulnerability-cve-2026-578c67",
-      "sonicwall-sslvpn-mfa-bypass-vulnerability-cve-2026-19868-dis"
+      "sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables",
+      "article-c701e62e",
+      "c701e62e",
+      "sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables-578c67",
+      "sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables-remote-co"
     ]
   },
   {
