@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 10:23:41 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 10:38:58 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Claude Code Option Exposes Credentials to Public GitHub</title>
@@ -98,13 +98,13 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>SonicWall SSL‑VPN MFA Bypass Flaw Exploited</title>
-      <link>https://secubuzz.com/news/sonicwall-ssl-vpn-mfa-bypass-flaw-exploited-de4c7c5f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-ssl-vpn-mfa-bypass-flaw-exploited-de4c7c5f</guid>
-      <description><![CDATA[SonicWall disclosed an SSL‑VPN MFA bypass flaw in SonicOS firewalls that attackers exploited to gain unauthenticated access. The vulnerability allows bypassing MFA authentication by manipulating SSL‑VPN session parameters, enabling attackers to execute commands with administrative privileges. Apply the SonicWall security update, enforce MFA enforcement policies, and monitor VPN logs for anomalous authentication attempts.]]></description>
+      <title>SonicWall SSL‑VPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed</title>
+      <link>https://secubuzz.com/news/sonicwall-ssl-vpn-mfa-bypass-vulnerability-cve-202-5a9dfe6c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-ssl-vpn-mfa-bypass-vulnerability-cve-202-5a9dfe6c</guid>
+      <description><![CDATA[SonicWall disclosed a critical vulnerability (CVE‑2026‑19868) in its SonicOS firmware that allows attackers to bypass SAML‑based MFA during SSL‑VPN logins, granting unauthorized administrative access. The flaw exploits a logic error in SAML enforcement, enabling credential‑reuse attacks that can compromise protected resources. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.]]></description>
       <pubDate>Sat, 07 Nov 2026 00:00:55 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/">BleepingComputer</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>ESXi Ransomware Exploits Weak Access Controls</title>

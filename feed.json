@@ -163,10 +163,10 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
-    "title": "SonicWall SSL‑VPN MFA Bypass Flaw Exploited",
-    "headline": "SonicWall SSL‑VPN MFA Bypass Flaw Exploited",
-    "summary": "SonicWall disclosed an SSL‑VPN MFA bypass flaw in SonicOS firewalls that attackers exploited to gain unauthenticated access. The vulnerability allows bypassing MFA authentication by manipulating SSL‑VPN session parameters, enabling attackers to execute commands with administrative privileges. Apply the SonicWall security update, enforce MFA enforcement policies, and monitor VPN logs for anomalous authentication attempts.",
-    "category": "VULNERABILITY",
+    "title": "SonicWall SSL‑VPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed",
+    "headline": "SonicWall SSL‑VPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed",
+    "summary": "SonicWall disclosed a critical vulnerability (CVE‑2026‑19868) in its SonicOS firmware that allows attackers to bypass SAML‑based MFA during SSL‑VPN logins, granting unauthorized administrative access. The flaw exploits a logic error in SAML enforcement, enabling credential‑reuse attacks that can compromise protected resources. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.",
+    "category": "CVE",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
     "publishedAt": "2026-11-07T00:00:55.000Z",
@@ -174,7 +174,15 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-19868"
+    ]
   },
   {
     "id": "https://cybernewsai.com/blog/virtualization-security-attack-layers-and-misconfigurat",

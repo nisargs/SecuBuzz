@@ -198,21 +198,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "sonicwall-ssl-vpn-mfa-bypass-flaw-exploited-de4c7c5f",
-    "title": "SonicWall SSL‑VPN MFA Bypass Flaw Exploited",
-    "summary": "SonicWall disclosed an SSL‑VPN MFA bypass flaw in SonicOS firewalls that attackers exploited to gain unauthenticated access. The vulnerability allows bypassing MFA authentication by manipulating SSL‑VPN session parameters, enabling attackers to execute commands with administrative privileges. Apply the SonicWall security update, enforce MFA enforcement policies, and monitor VPN logs for anomalous authentication attempts.",
-    "category": "Vulnerability",
+    "slug": "sonicwall-ssl-vpn-mfa-bypass-vulnerability-cve-202-5a9dfe6c",
+    "title": "SonicWall SSL‑VPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed",
+    "summary": "SonicWall disclosed a critical vulnerability (CVE‑2026‑19868) in its SonicOS firmware that allows attackers to bypass SAML‑based MFA during SSL‑VPN logins, granting unauthorized administrative access. The flaw exploits a logic error in SAML enforcement, enabling credential‑reuse attacks that can compromise protected resources. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.",
+    "category": "CVE",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
     "publishedAt": "2026-11-07T00:00:55.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/"
+      }
+    ],
     "aliases": [
-      "sonicwall-ssl-vpn-mfa-bypass-flaw-exploited",
-      "article-de4c7c5f",
-      "de4c7c5f",
-      "sonicwall-ssl-vpn-mfa-bypass-flaw-exploited-578c67"
+      "sonicwall-ssl-vpn-mfa-bypass-vulnerability-cve-202",
+      "article-5a9dfe6c",
+      "5a9dfe6c",
+      "sonicwall-ssl-vpn-mfa-bypass-vulnerability-cve-202-578c67",
+      "sonicwall-ssl-vpn-mfa-bypass-vulnerability-cve-2026-19868-di"
     ]
   },
   {
