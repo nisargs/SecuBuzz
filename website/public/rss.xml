@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 07:43:22 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 08:44:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Claude Code Option Exposes Credentials to Public GitHub</title>
+      <link>https://secubuzz.com/news/claude-code-option-exposes-credentials-to-public-g-f8b02e5e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-option-exposes-credentials-to-public-g-f8b02e5e</guid>
+      <description><![CDATA[Claude Code’s ‘Yes, and don’t ask again’ option stores passwords and API keys in project settings, allowing them to be pushed to public GitHub repositories. Researchers uncovered 2,539 secrets in 1,994 public repos, affecting 63 organizations, proving a single approval can expose credentials. Teams should disable the option, audit settings, rotate exposed keys, and enable secret scanning to prevent leakage.]]></description>
+      <pubDate>Sat, 07 Nov 2026 08:20:25 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Claude Code Exposes Secrets via &apos;Don&apos;t Ask Again&apos; Setting</title>
       <link>https://secubuzz.com/news/claude-code-exposes-secrets-via-don-t-ask-again-se-3fb04556</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[Three suspects face indictment for orchestrating CEO‑spoofing scams that used AI to facilitate over $100 million in fraud. The scheme exploited social engineering and AI‑generated phishing content to deceive executives, bypassing email authentication and credential verification. U.S. authorities are pursuing extradition of the suspects from Europe, and organizations are urged to enforce multi‑factor authentication and verify executive communications.]]></description>
       <pubDate>Fri, 06 Nov 2026 14:30:00 GMT</pubDate>
       <source url="https://therecord.media/ceo-spoofing-scammers-charged">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome Dev 159 Released for Android</title>
-      <link>https://secubuzz.com/news/chrome-dev-159-released-for-android-04d26652</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-159-released-for-android-04d26652</guid>
-      <description><![CDATA[Google released Chrome Dev 159 (159.0.8144.0) for Android, adding new features and bug fixes. The update, available on Google Play, includes changes logged in the Chromium Git history and platform enhancements noted on the Chromium blog. Users should install the latest build and report any issues via the Chrome Release Team bug‑tracking system.]]></description>
-      <pubDate>Fri, 06 Nov 2026 14:28:32 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update.html">Google Chrome Releases</source>
       <category>General</category>
     </item>
   </channel>

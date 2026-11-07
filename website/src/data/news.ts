@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "claude-code-option-exposes-credentials-to-public-g-f8b02e5e",
+    "title": "Claude Code Option Exposes Credentials to Public GitHub",
+    "summary": "Claude Code’s ‘Yes, and don’t ask again’ option stores passwords and API keys in project settings, allowing them to be pushed to public GitHub repositories. Researchers uncovered 2,539 secrets in 1,994 public repos, affecting 63 organizations, proving a single approval can expose credentials. Teams should disable the option, audit settings, rotate exposed keys, and enable secret scanning to prevent leakage.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/",
+    "publishedAt": "2026-11-07T08:20:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-code-option-exposes-credentials-to-public-g",
+      "article-f8b02e5e",
+      "f8b02e5e",
+      "claude-code-option-exposes-credentials-to-public-g-516be4",
+      "claude-code-option-exposes-credentials-to-public-github"
+    ]
+  },
+  {
     "slug": "claude-code-exposes-secrets-via-don-t-ask-again-se-3fb04556",
     "title": "Claude Code Exposes Secrets via 'Don't Ask Again' Setting",
     "summary": "Claude Code's 'Don't Ask Again' feature records passwords and API keys into project settings files, exposing them in 1,122 public GitHub repositories. The flaw saves the exact command, including secrets, into an unprotected file, letting anyone with repository access read credentials. Anthropic and vendors advise disabling the option, scanning for exposed secrets, and rotating credentials; no patch yet.",
@@ -9581,25 +9600,6 @@ export const news: NewsBrief[] = [
       "article-3f6d84e9",
       "3f6d84e9",
       "rxvt-unicode-escape-sequence-vulnerability-7fbba5"
-    ]
-  },
-  {
-    "slug": "sprockets-server-vulnerability-allows-remote-file-0e0e69ff",
-    "title": "Sprockets Server Vulnerability Allows Remote File Access",
-    "summary": "A flaw in the Sprockets server’s request handling permits specially crafted requests to bypass directory restrictions when deployed in production. The vulnerability could enable a remote attacker to read files outside the application’s root directory, potentially exposing sensitive data. A patch is available in the latest Sprockets release; administrators should upgrade promptly to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8990-1",
-    "publishedAt": "2026-11-03T17:37:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sprockets-server-vulnerability-allows-remote-file",
-      "article-0e0e69ff",
-      "0e0e69ff",
-      "sprockets-server-vulnerability-allows-remote-file-7fbba9",
-      "sprockets-server-vulnerability-allows-remote-file-access"
     ]
   }
 ];

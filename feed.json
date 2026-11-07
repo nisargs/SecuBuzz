@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/",
+    "sourceUrl": "https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/",
+    "title": "Claude Code Option Exposes Credentials to Public GitHub",
+    "headline": "Claude Code Option Exposes Credentials to Public GitHub",
+    "summary": "Claude Code’s ‘Yes, and don’t ask again’ option stores passwords and API keys in project settings, allowing them to be pushed to public GitHub repositories. Researchers uncovered 2,539 secrets in 1,994 public repos, affecting 63 organizations, proving a single approval can expose credentials. Teams should disable the option, audit settings, rotate exposed keys, and enable secret scanning to prevent leakage.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-07T08:20:25.000Z",
+    "ingestedAt": "2026-11-07T08:43:08.141Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
     "sourceUrl": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
     "title": "Claude Code Exposes Secrets via 'Don't Ask Again' Setting",
@@ -8311,22 +8327,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-8991-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8990-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8990-1",
-    "title": "Sprockets Server Vulnerability Allows Remote File Access",
-    "headline": "Sprockets Server Vulnerability Allows Remote File Access",
-    "summary": "A flaw in the Sprockets server’s request handling permits specially crafted requests to bypass directory restrictions when deployed in production. The vulnerability could enable a remote attacker to read files outside the application’s root directory, potentially exposing sensitive data. A patch is available in the latest Sprockets release; administrators should upgrade promptly to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-03T17:37:22.000Z",
-    "ingestedAt": "2026-11-03T21:08:02.012Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-8990-1",
     "additionalSources": []
   }
 ]
