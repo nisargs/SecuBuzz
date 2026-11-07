@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+    "title": "CTM360 Exposes Fake Gift Card Scam Tactics",
+    "headline": "CTM360 Exposes Fake Gift Card Scam Tactics",
+    "summary": "CTM360 uncovered a series of fake gift card scams that impersonate well-known brands and celebrities to trick consumers into providing personal data. The campaigns use deceptive verification steps and affiliate networks to harvest information and trigger unwanted subscriptions, exploiting social engineering rather than technical vulnerabilities. Security teams should educate users about verifying legitimate offers and monitor for unauthorized subscription charges.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-07T14:10:19.000Z",
+    "ingestedAt": "2026-11-07T14:43:19.316Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/",
     "sourceUrl": "https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/",
     "title": "Claude Code Option Exposes Credentials to Public GitHub",
@@ -163,11 +179,11 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
-    "title": "SonicWall SSL‑VPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed",
-    "headline": "SonicWall SSL‑VPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed",
-    "summary": "SonicWall disclosed a critical vulnerability (CVE‑2026‑19868) in its SonicOS firmware that allows attackers to bypass SAML‑based MFA during SSL‑VPN logins, granting unauthorized administrative access. The flaw exploits a logic error in SAML enforcement, enabling credential‑reuse attacks that can compromise protected resources. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.",
+    "title": "SonicWall SSLVPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed",
+    "headline": "SonicWall SSLVPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed",
+    "summary": "SonicWall disclosed a critical vulnerability (CVE‑2026‑19868) in its SonicOS SSLVPN that allows attackers to bypass SAML‑based MFA during logins, exposing administrative access. The flaw exploits a logic error in SAML enforcement, enabling credential‑reuse attacks that can compromise protected resources. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.",
     "category": "CVE",
-    "severity": "CRITICAL",
+    "severity": "HIGH",
     "source": "BleepingComputer",
     "publishedAt": "2026-11-07T00:00:55.000Z",
     "ingestedAt": "2026-11-07T00:43:09.654Z",
@@ -178,6 +194,10 @@
       {
         "source": "SecurityWeek",
         "sourceUrl": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/sonicos-sslvpn-vulnerability-exploited/"
       }
     ],
     "cves": [
@@ -8319,22 +8339,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-8992-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8991-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8991-1",
-    "title": "rxvt‑Unicode Escape Sequence Vulnerability",
-    "headline": "rxvt‑Unicode Escape Sequence Vulnerability",
-    "summary": "Ubuntu discovered that rxvt‑unicode mishandles specific escape sequences, creating a potential code execution vector in terminal sessions. When a user renders specially crafted text, the flaw can trigger arbitrary code execution, posing a risk to any system with exposed terminals. Ubuntu advises installing the latest rxvt‑unicode update or applying the provided patch to mitigate the vulnerability.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-03T17:37:49.000Z",
-    "ingestedAt": "2026-11-03T20:43:53.592Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-8991-1",
     "additionalSources": []
   }
 ]

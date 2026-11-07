@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 13:43:01 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 14:43:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CTM360 Exposes Fake Gift Card Scam Tactics</title>
+      <link>https://secubuzz.com/news/ctm360-exposes-fake-gift-card-scam-tactics-b4921fb8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ctm360-exposes-fake-gift-card-scam-tactics-b4921fb8</guid>
+      <description><![CDATA[CTM360 uncovered a series of fake gift card scams that impersonate well-known brands and celebrities to trick consumers into providing personal data. The campaigns use deceptive verification steps and affiliate networks to harvest information and trigger unwanted subscriptions, exploiting social engineering rather than technical vulnerabilities. Security teams should educate users about verifying legitimate offers and monitor for unauthorized subscription charges.]]></description>
+      <pubDate>Sat, 07 Nov 2026 14:10:19 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Claude Code Option Exposes Credentials to Public GitHub</title>
       <link>https://secubuzz.com/news/claude-code-option-exposes-credentials-to-public-g-f8b02e5e</link>
@@ -98,10 +107,10 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>SonicWall SSL‑VPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed</title>
-      <link>https://secubuzz.com/news/sonicwall-ssl-vpn-mfa-bypass-vulnerability-cve-202-5a9dfe6c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-ssl-vpn-mfa-bypass-vulnerability-cve-202-5a9dfe6c</guid>
-      <description><![CDATA[SonicWall disclosed a critical vulnerability (CVE‑2026‑19868) in its SonicOS firmware that allows attackers to bypass SAML‑based MFA during SSL‑VPN logins, granting unauthorized administrative access. The flaw exploits a logic error in SAML enforcement, enabling credential‑reuse attacks that can compromise protected resources. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.]]></description>
+      <title>SonicWall SSLVPN MFA Bypass Vulnerability (CVE‑2026‑19868) Disclosed</title>
+      <link>https://secubuzz.com/news/sonicwall-sslvpn-mfa-bypass-vulnerability-cve-2026-2a12555f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sslvpn-mfa-bypass-vulnerability-cve-2026-2a12555f</guid>
+      <description><![CDATA[SonicWall disclosed a critical vulnerability (CVE‑2026‑19868) in its SonicOS SSLVPN that allows attackers to bypass SAML‑based MFA during logins, exposing administrative access. The flaw exploits a logic error in SAML enforcement, enabling credential‑reuse attacks that can compromise protected resources. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.]]></description>
       <pubDate>Sat, 07 Nov 2026 00:00:55 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/">BleepingComputer</source>
       <category>CVE</category>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 14:37:40 GMT</pubDate>
       <source url="https://cybersecuritynews.com/claude-code-leaks-user-email/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CEO‑Spoofing Scammers Indicted for $100M AI‑Assisted Fraud</title>
-      <link>https://secubuzz.com/news/ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e</guid>
-      <description><![CDATA[Three suspects face indictment for orchestrating CEO‑spoofing scams that used AI to facilitate over $100 million in fraud. The scheme exploited social engineering and AI‑generated phishing content to deceive executives, bypassing email authentication and credential verification. U.S. authorities are pursuing extradition of the suspects from Europe, and organizations are urged to enforce multi‑factor authentication and verify executive communications.]]></description>
-      <pubDate>Fri, 06 Nov 2026 14:30:00 GMT</pubDate>
-      <source url="https://therecord.media/ceo-spoofing-scammers-charged">The Record</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
