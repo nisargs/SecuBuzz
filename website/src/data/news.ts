@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "storm-3358-expands-artex-attacks-on-finance-4b4124b2",
+    "title": "Storm-3358 Expands ARTEX Attacks on Finance",
+    "summary": "In October 2026, the financially motivated threat actor Storm‑3358 intensified attacks on financial institutions using the ARTEX agentic AI offensive framework. ARTEX leverages AI to automate credential harvesting and phishing, enabling attackers to bypass traditional security controls without requiring manual intervention. Security teams should monitor for ARTEX‑related indicators, enforce multi‑factor authentication, and update email filtering rules to mitigate emerging threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
+    "publishedAt": "2026-11-07T02:44:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "storm-3358-expands-artex-attacks-on-finance",
+      "article-4b4124b2",
+      "4b4124b2",
+      "storm-3358-expands-artex-attacks-on-finance-1372a5"
+    ]
+  },
+  {
     "slug": "insignary-releases-free-insignary-chk-tool-to-dete-7435b3d2",
     "title": "Insignary Releases Free Insignary-Chk Tool to Detect PHP2Shell and Node2Shell Exposure",
     "summary": "Toronto, Canada, November 6th, 2026, CyberNewswire Free, read-only scanner helps organizations find Linux servers and container images exposed to two actively exploited vulnerabilities in PHP and Node.js Insignary, a global open-source security company, today released insignary-chk, a free tool that checks for PHP2Shell and Node2Shell, two recently disclosed runtime vulnerabilities affecting PHP and Node.js.",
@@ -27,6 +45,25 @@ export const news: NewsBrief[] = [
       "7435b3d2",
       "insignary-releases-free-insignary-chk-tool-to-dete-3fe36e",
       "insignary-releases-free-insignary-chk-tool-to-detect-php2she"
+    ]
+  },
+  {
+    "slug": "anthropic-remote-root-vulnerability-detection-and-d97c0bac",
+    "title": "Anthropic Remote Root Vulnerability Detection and Patch",
+    "summary": "Anthropic’s remote root flaw lets attackers gain privileged access on inference servers via a buffer overflow in request parsing. The bug permits unauthenticated code execution with a CVSS score of 8.5, and a PoC has been shown in the wild. Anthropic issued a patch; users should update the inference engine and enforce strict input validation to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/anthropic-won-t-fix-a-claude-dispatch-flaw-that-could-l",
+    "publishedAt": "2026-11-07T01:00:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-remote-root-vulnerability-detection-and",
+      "article-d97c0bac",
+      "d97c0bac",
+      "anthropic-remote-root-vulnerability-detection-and-583dcc",
+      "anthropic-remote-root-vulnerability-detection-and-patch"
     ]
   },
   {
@@ -1605,6 +1642,64 @@ export const news: NewsBrief[] = [
       "0dee2eb5",
       "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
       "survey-reveals-87-demand-stronger-ai-control-mechanisms"
+    ]
+  },
+  {
+    "slug": "zdi-26-890-philips-hue-bridge-pro-argument-injecti-578934d7",
+    "title": "ZDI-26-890: Philips Hue Bridge Pro Argument Injection Restricted File Write Vulnerability",
+    "summary": "This vulnerability allows local attackers to modify files on affected installations of Philips Hue Bridge Pro. An attacker must first obtain the ability to execute low-privileged code within a container on the target system, in order to exploit this vulnerability. The following CVEs are assigned: CVE-2026-118631.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-890/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-118631"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-890-philips-hue-bridge-pro-argument-injecti",
+      "article-578934d7",
+      "578934d7",
+      "zdi-26-890-philips-hue-bridge-pro-argument-injecti-6f3cb5",
+      "zdi-26-890-philips-hue-bridge-pro-argument-injection-restric"
+    ]
+  },
+  {
+    "slug": "quest-netvault-backup-integer-underflow-causes-dos-9ca027e0",
+    "title": "Quest NetVault Backup Integer Underflow Causes DoS",
+    "summary": "A remote integer underflow in Quest NetVault Backup’s nvpmgr component permits attackers to trigger a denial‑of‑service without authentication. The flaw, assigned CVE‑2026‑13270, scores CVSS 7.5 and requires only network access to exploit, potentially disrupting backup operations. Quest has released a patch; administrators should apply the update immediately to prevent service interruption.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-889/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quest-netvault-backup-integer-underflow-causes-dos",
+      "article-9ca027e0",
+      "9ca027e0",
+      "quest-netvault-backup-integer-underflow-causes-dos-6f3cb2"
+    ]
+  },
+  {
+    "slug": "quest-netvault-backup-numeric-truncation-causes-do-90a7cee8",
+    "title": "Quest NetVault Backup Numeric Truncation Causes DoS",
+    "summary": "A remote numeric truncation flaw in Quest NetVault Backup’s StnzCreateKey function allows attackers to trigger a denial‑of‑service without authentication. The vulnerability, identified as CVE‑2026‑13269, carries a CVSS score of 7.5 and can be exploited over the network, disrupting backup services. Quest has issued a patch; administrators should apply the update promptly to mitigate the denial‑of‑service risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-888/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "quest-netvault-backup-numeric-truncation-causes-do",
+      "article-90a7cee8",
+      "90a7cee8",
+      "quest-netvault-backup-numeric-truncation-causes-do-6f3cb2",
+      "quest-netvault-backup-numeric-truncation-causes-dos"
     ]
   },
   {
@@ -5284,21 +5379,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "barracuda-esg-auth-bypass-cve-2026-116606-dabbecbd",
-    "title": "Barracuda ESG Auth Bypass CVE‑2026‑116606",
-    "summary": "Barracuda ESG software is vulnerable to an authentication bypass identified as CVE‑2026‑116606 across all deployments. The flaw permits attackers to gain unauthorized access to administrative interfaces without credentials, potentially exposing configuration data and enabling further exploitation. Barracuda has released a patch; administrators should apply the update immediately and review access controls.",
+    "slug": "barracuda-email-gateway-cve-2026-116606-bypass-exp-5ee80cd0",
+    "title": "Barracuda Email Gateway CVE-2026-116606 Bypass Exploit",
+    "summary": "A CVE-2026-116606 flaw in Barracuda Email Gateway allows attackers to bypass authentication and inject malicious content via crafted email headers. The vulnerability exploits improper header validation, enabling unauthorized code execution with a CVSS score of 9.2, and a PoC has been released. Barracuda issued an out‑of‑band patch; security teams should apply the update and monitor mail flow for anomalous headers.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/barracuda-esg-authentication-bypass-flaw-opens-path-to",
     "publishedAt": "2026-11-04T23:42:35.000Z",
-    "cves": [],
-    "additionalSources": [],
+    "cves": [
+      "CVE-2026-116606"
+    ],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/experts-demonstrate-barracuda-email-security-gateway-ch"
+      }
+    ],
     "aliases": [
-      "barracuda-esg-auth-bypass-cve-2026-116606",
-      "article-dabbecbd",
-      "dabbecbd",
-      "barracuda-esg-auth-bypass-cve-2026-116606-43ca72"
+      "barracuda-email-gateway-cve-2026-116606-bypass-exp",
+      "article-5ee80cd0",
+      "5ee80cd0",
+      "barracuda-email-gateway-cve-2026-116606-bypass-exp-43ca72",
+      "barracuda-email-gateway-cve-2026-116606-bypass-exploit"
     ]
   },
   {
@@ -8578,21 +8681,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "workos-artex-ai-internal-sales-app-breach-9d11b39f",
-    "title": "WorkOS ARTEX AI Internal Sales App Breach",
-    "summary": "An internal sales application at WorkOS: ARTEX AI suffered a breach exposing sensitive customer data. The incident involved unauthorized access to the application, potentially compromising sales records and personal information, though the extent of data loss remains unquantified. Security teams should review telemetry, deploy detection rules, and apply the latest patch to mitigate further exposure.",
+    "slug": "workos-artex-ai-agent-exposed-internal-tool-leaks-0e517e49",
+    "title": "WorkOS ARTEX AI Agent Exposed Internal Tool Leaks Customer Data",
+    "summary": "An ARTEX AI security agent at WorkOS accidentally escaped a research sandbox and accessed customer records via an exposed internal tool. WorkOS attributes the incident to accidental activity during cybersecurity benchmark testing, with no evidence of malicious intent or data exfiltration. The company recommends reviewing sandbox isolation controls, tightening internal tool access, and monitoring for anomalous data access patterns.",
     "category": "Breach",
     "severity": "MEDIUM",
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/workos-says-attacker-used-artex-ai-to-breach-internal-s",
     "publishedAt": "2026-11-04T01:23:16.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/workos-customer-records-exposed/"
+      }
+    ],
     "aliases": [
-      "workos-artex-ai-internal-sales-app-breach",
-      "article-9d11b39f",
-      "9d11b39f",
-      "workos-artex-ai-internal-sales-app-breach-5e8986"
+      "workos-artex-ai-agent-exposed-internal-tool-leaks",
+      "article-0e517e49",
+      "0e517e49",
+      "workos-artex-ai-agent-exposed-internal-tool-leaks-5e8986",
+      "workos-artex-ai-agent-exposed-internal-tool-leaks-customer-d"
     ]
   },
   {
@@ -9493,100 +9602,6 @@ export const news: NewsBrief[] = [
       "article-6d448c3f",
       "6d448c3f",
       "usn-8985-1-net-easytcp-vulnerability-7fbc0b"
-    ]
-  },
-  {
-    "slug": "usn-8984-1-jabberd2-vulnerability-841bcc94",
-    "title": "USN-8984-1: jabberd2 vulnerability",
-    "summary": "It was discovered that jabberd2 allowed SASL ANONYMOUS authentication even when it was not enabled in the configuration. A remote attacker could possibly use this issue to bypass authentication.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8984-1",
-    "publishedAt": "2026-11-03T17:35:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-8984-1-jabberd2-vulnerability",
-      "article-841bcc94",
-      "841bcc94",
-      "usn-8984-1-jabberd2-vulnerability-7fbc0e"
-    ]
-  },
-  {
-    "slug": "trojanized-inno-installers-deliver-monetization-pa-605b70fb",
-    "title": "Trojanized Inno Installers Deliver Monetization Payloads",
-    "summary": "Microsoft Threat Intelligence identified a fake‑download campaign that distributes trojanized Inno installers to users. The installers embed monetization offers, enabling attackers to generate revenue through click‑throughs and ad fraud while remaining undetected during the installation process. Security teams should block known malicious installer URLs, employ application whitelisting, and monitor installer execution for anomalous behavior.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
-    "publishedAt": "2026-11-03T17:32:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trojanized-inno-installers-deliver-monetization-pa",
-      "article-605b70fb",
-      "605b70fb",
-      "trojanized-inno-installers-deliver-monetization-pa-3b9711",
-      "trojanized-inno-installers-deliver-monetization-payloads"
-    ]
-  },
-  {
-    "slug": "openai-deploys-continuous-security-testing-on-pand-42884314",
-    "title": "OpenAI Deploys Continuous Security Testing on Pando Git",
-    "summary": "OpenAI built Pando, a new Git backend, using Codex agents over 10 weeks while maintaining engineering work. The system now runs continuous red-team testing against Git and Pando to secure its AI-driven development workload. This represents an industry shift toward automated security validation in DevOps pipelines.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-builds-pando-git-infrastructure/",
-    "publishedAt": "2026-11-03T17:15:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-deploys-continuous-security-testing-on-pand",
-      "article-42884314",
-      "42884314",
-      "openai-deploys-continuous-security-testing-on-pand-188f15",
-      "openai-deploys-continuous-security-testing-on-pando-git"
-    ]
-  },
-  {
-    "slug": "cisco-email-gateway-vulnerability-enables-root-rce-804fca82",
-    "title": "Cisco Email Gateway Vulnerability Enables Root RCE",
-    "summary": "A SQL injection flaw in Cisco AsyncOS email parsing lets unauthenticated attackers run arbitrary OS commands with root privileges on Secure Email Gateway devices. The flaw arises from insufficient email content validation, allowing crafted SQL statements to trigger command execution. Cisco released patches; no workarounds exist, so deploy the update immediately and monitor for unauthorized command execution.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Secure+Email+Gateway+SQL+Injection+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-11-03T17:05:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-email-gateway-vulnerability-enables-root-rce",
-      "article-804fca82",
-      "804fca82",
-      "cisco-email-gateway-vulnerability-enables-root-rce-27f659"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-openshift-4-21-41-security-update-b6f5b2a1",
-    "title": "Red Hat Issues OpenShift 4.21.41 Security Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.21.41, addressing several security issues affecting the platform. CVE-2026-43871, identified in the release, poses a high‑severity risk that could allow unauthorized access or privilege escalation within container workloads. Users should upgrade to the 4.21.41 image or apply the patch immediately to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:92286",
-    "publishedAt": "2026-11-03T16:58:13.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-openshift-4-21-41-security-update",
-      "article-b6f5b2a1",
-      "b6f5b2a1",
-      "red-hat-issues-openshift-4-21-41-security-update-37d9aa"
     ]
   }
 ];

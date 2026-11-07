@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 03:01:02 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 03:45:54 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Storm-3358 Expands ARTEX Attacks on Finance</title>
+      <link>https://secubuzz.com/news/storm-3358-expands-artex-attacks-on-finance-4b4124b2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/storm-3358-expands-artex-attacks-on-finance-4b4124b2</guid>
+      <description><![CDATA[In October 2026, the financially motivated threat actor Storm‑3358 intensified attacks on financial institutions using the ARTEX agentic AI offensive framework. ARTEX leverages AI to automate credential harvesting and phishing, enabling attackers to bypass traditional security controls without requiring manual intervention. Security teams should monitor for ARTEX‑related indicators, enforce multi‑factor authentication, and update email filtering rules to mitigate emerging threats.]]></description>
+      <pubDate>Sat, 07 Nov 2026 02:44:34 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/">Microsoft Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Insignary Releases Free Insignary-Chk Tool to Detect PHP2Shell and Node2Shell Exposure</title>
       <link>https://secubuzz.com/news/insignary-releases-free-insignary-chk-tool-to-dete-7435b3d2</link>
@@ -15,6 +24,15 @@
       <pubDate>Sat, 07 Nov 2026 02:06:17 GMT</pubDate>
       <source url="https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Anthropic Remote Root Vulnerability Detection and Patch</title>
+      <link>https://secubuzz.com/news/anthropic-remote-root-vulnerability-detection-and-d97c0bac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-remote-root-vulnerability-detection-and-d97c0bac</guid>
+      <description><![CDATA[Anthropic’s remote root flaw lets attackers gain privileged access on inference servers via a buffer overflow in request parsing. The bug permits unauthenticated code execution with a CVSS score of 8.5, and a PoC has been shown in the wild. Anthropic issued a patch; users should update the inference engine and enforce strict input validation to mitigate the risk.]]></description>
+      <pubDate>Sat, 07 Nov 2026 01:00:51 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/anthropic-won-t-fix-a-claude-dispatch-flaw-that-could-l">CyberNews AI</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Metasploit Unauth RCE in Perimeter Devices</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[Cryptographic protocols such as Privacy Pass, used to protect web privacy, face potential compromise from quantum‑computing capabilities. Current asymmetric schemes rely on integer factorization, which quantum algorithms can solve efficiently, threatening the integrity of privacy tokens and session authentication. Adoption of lattice‑based or hash‑based post‑quantum primitives is recommended to secure privacy tokens, and vendors should update protocol libraries accordingly.]]></description>
       <pubDate>Fri, 06 Nov 2026 14:00:00 GMT</pubDate>
       <source url="https://blog.cloudflare.com/vole-mole/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ARTEX AI Agents Compromise 190k Gaming Credentials, Apple Certificates</title>
-      <link>https://secubuzz.com/news/artex-ai-agents-compromise-190k-gaming-credentials-1041ff8d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/artex-ai-agents-compromise-190k-gaming-credentials-1041ff8d</guid>
-      <description><![CDATA[ARTEX AI agents exploited web applications with minimal human input, stealing over 190,000 gaming credentials and more than 300 Apple code‑signing certificates. The flaw stems from ARTEX’s automated penetration logic that bypasses manual checks, enabling credential harvesting and certificate misuse without user intervention. Security teams should disable ARTEX usage, revoke compromised certificates, and audit affected accounts for unauthorized access.]]></description>
-      <pubDate>Fri, 06 Nov 2026 13:49:57 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/artex-ai-agents/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenAI Releases GPT‑6 Cyber Model to Enhance Vulnerability Detection</title>
-      <link>https://secubuzz.com/news/openai-releases-gpt-6-cyber-model-to-enhance-vulne-771511c1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-releases-gpt-6-cyber-model-to-enhance-vulne-771511c1</guid>
-      <description><![CDATA[OpenAI unveiled GPT‑6 Cyber, a new AI model designed to accelerate vulnerability discovery across software ecosystems. The model reportedly identified 81 Firefox flaws and 948 Linux exploits during development, outperforming its predecessor in detection accuracy. Security teams can integrate GPT‑6 Cyber into scanning pipelines but must manually validate outputs to avoid false positives.]]></description>
-      <pubDate>Fri, 06 Nov 2026 13:19:52 GMT</pubDate>
-      <source url="https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/">SecurityWeek</source>
       <category>General</category>
     </item>
   </channel>
