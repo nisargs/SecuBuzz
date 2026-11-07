@@ -159,6 +159,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "huntress-siem-brute-force-sentry-enhances-early-de-7cd5a1a8",
+    "title": "Huntress SIEM Brute Force Sentry Enhances Early Detection",
+    "summary": "Huntress Managed SIEM introduces Brute Force Sentry, converting observed brute force attempts into early detections. The tool aggregates attack evidence and provides hardening guidance, enabling partners to close security gaps before escalation and actionable remediation steps. Deploying Brute Force Sentry improves SOC response times and reduces the window for credential compromise.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/brute-force-sentry",
+    "publishedAt": "2026-11-06T21:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "huntress-siem-brute-force-sentry-enhances-early-de",
+      "article-7cd5a1a8",
+      "7cd5a1a8",
+      "huntress-siem-brute-force-sentry-enhances-early-de-3fb010",
+      "huntress-siem-brute-force-sentry-enhances-early-detection"
+    ]
+  },
+  {
     "slug": "socket-releases-certified-patch-for-rails-active-s-7bd1098b",
     "title": "Socket Releases Certified Patch for Rails Active Storage Vulnerability",
     "summary": "Socket released a free Certified Patch for a critical Rails Active Storage flaw that could enable remote code execution via malformed file uploads. The vulnerability arises from improper input validation in Active Storage attachment handling, allowing attackers to inject malicious payloads without authentication. Upgrade to Rails 7.1 or later and apply the Socket patch immediately to mitigate the risk.",
@@ -1511,6 +1530,87 @@ export const news: NewsBrief[] = [
       "0dee2eb5",
       "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
       "survey-reveals-87-demand-stronger-ai-control-mechanisms"
+    ]
+  },
+  {
+    "slug": "originlab-origin-viewer-opj-buffer-overflow-exploi-4996da28",
+    "title": "OriginLab Origin Viewer OPJ Buffer Overflow Exploitable",
+    "summary": "OriginLab Origin Viewer suffers a heap-based buffer overflow when parsing malicious OPJ files, allowing remote code execution. The flaw, CVE-2026-114568, scores 7.8 CVSS and requires user interaction, such as opening a crafted file or visiting a malicious page. OriginLab has issued a patch that corrects the parsing logic; apply the update promptly or block OPJ handling to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-885/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114568"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "originlab-origin-viewer-opj-buffer-overflow-exploi",
+      "article-4996da28",
+      "4996da28",
+      "originlab-origin-viewer-opj-buffer-overflow-exploi-6f3cb2",
+      "originlab-origin-viewer-opj-buffer-overflow-exploitable"
+    ]
+  },
+  {
+    "slug": "originlab-origin-viewer-ogwu-out-of-bounds-write-v-ab7fdf82",
+    "title": "OriginLab Origin Viewer OGWU Out-of-Bounds Write Vulnerability",
+    "summary": "OriginLab Origin Viewer contains an out-of-bounds write triggered by parsing malicious OGWU files, enabling remote code execution. The vulnerability, CVE-2026-114567, scores 7.8 CVSS and requires user interaction, such as opening a crafted file or visiting a malicious page. OriginLab released a patch that fixes the parsing logic; apply the update immediately or block OGWU file handling to mitigate the threat.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-884/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114567"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "originlab-origin-viewer-ogwu-out-of-bounds-write-v",
+      "article-ab7fdf82",
+      "ab7fdf82",
+      "originlab-origin-viewer-ogwu-out-of-bounds-write-v-6f3cb2",
+      "originlab-origin-viewer-ogwu-out-of-bounds-write-vulnerabili"
+    ]
+  },
+  {
+    "slug": "originlab-origin-viewer-ogm-memory-corruption-expl-09a31c94",
+    "title": "OriginLab Origin Viewer OGM Memory Corruption Exploit",
+    "summary": "OriginLab Origin Viewer suffers memory corruption when parsing malicious OGM files, enabling remote code execution. The flaw, CVE-2026-114566, carries a CVSS score of 7.8 and requires user interaction, such as opening a crafted file or visiting a malicious page. OriginLab has issued a patch correcting the parsing logic; apply the update or block OGM file handling to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-883/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114566"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "originlab-origin-viewer-ogm-memory-corruption-expl",
+      "article-09a31c94",
+      "09a31c94",
+      "originlab-origin-viewer-ogm-memory-corruption-expl-6f3cb1",
+      "originlab-origin-viewer-ogm-memory-corruption-exploit"
+    ]
+  },
+  {
+    "slug": "originlab-viewer-ogg-parsing-rce-vulnerability-9c1952e5",
+    "title": "OriginLab Viewer OGG Parsing RCE Vulnerability",
+    "summary": "OriginLab Origin Viewer can execute remote code via an out‑of‑bounds write in OGG parsing when a user opens a malicious file. CVE‑2026‑114565 scores 7.8 CVSS and grants attackers arbitrary code execution with viewer privileges. Until a patch is released, block OGG handling or advise users to avoid untrusted OGG files.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-882/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "originlab-viewer-ogg-parsing-rce-vulnerability",
+      "article-9c1952e5",
+      "9c1952e5",
+      "originlab-viewer-ogg-parsing-rce-vulnerability-6f3cb1"
     ]
   },
   {
@@ -9480,105 +9580,6 @@ export const news: NewsBrief[] = [
       "article-da182336",
       "da182336",
       "practical-cyber-awareness-tips-for-modern-threats-65034f"
-    ]
-  },
-  {
-    "slug": "llmjacking-thrives-as-cybercriminal-cloud-resale-29360372",
-    "title": "LLMjacking Thrives as Cybercriminal Cloud Resale",
-    "summary": "The article reports that cybercriminals resell cloud access to large language models, with some victims paying up to $1 million before access was revoked. Attackers exploit stolen or misconfigured API keys to inflate cloud usage, causing significant financial damage. Organizations should enforce strict key‑management controls, monitor usage anomalies, and rotate credentials regularly to counter LLMjacking.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
-    "publishedAt": "2026-11-03T15:35:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "llmjacking-thrives-as-cybercriminal-cloud-resale",
-      "article-29360372",
-      "29360372",
-      "llmjacking-thrives-as-cybercriminal-cloud-resale-1a4ef1"
-    ]
-  },
-  {
-    "slug": "hackers-hijack-emergency-alert-apps-in-ukraine-and-63a53231",
-    "title": "Hackers Hijack Emergency Alert Apps in Ukraine and Russia for Fake Nuclear Warnings",
-    "summary": "Attackers compromised emergency alert applications in Ukraine and Russia to distribute false nuclear strike warnings during wartime operations on November 1-2. The incidents disrupted trusted public safety channels by injecting fabricated radiation and chemical threat alerts. Officials confirmed the breaches did not disable broader warning systems but represented a significant interference with critical communication infrastructure.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-emergency-alert-apps/",
-    "publishedAt": "2026-11-03T15:34:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-hijack-emergency-alert-apps-in-ukraine-and",
-      "article-63a53231",
-      "63a53231",
-      "hackers-hijack-emergency-alert-apps-in-ukraine-and-5eecf7",
-      "hackers-hijack-emergency-alert-apps-in-ukraine-and-russia-fo"
-    ]
-  },
-  {
-    "slug": "cpguard-update-hijacked-to-deploy-backdoor-and-ste-01e72a96",
-    "title": "cPGuard Update Hijacked to Deploy Backdoor and Steal Data",
-    "summary": "Attackers hijacked the cPGuard web security suite autoupdate mechanism to push a malicious backdoor and data‑stealing script to customers. The compromise exploited the update infrastructure’s lack of integrity verification, enabling remote code execution and credential exfiltration without user interaction. cPGuard has released a patched update signing process and recommends customers validate update signatures and apply the new firmware immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
-    "publishedAt": "2026-11-03T15:16:32.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/"
-      }
-    ],
-    "aliases": [
-      "cpguard-update-hijacked-to-deploy-backdoor-and-ste",
-      "article-01e72a96",
-      "01e72a96",
-      "cpguard-update-hijacked-to-deploy-backdoor-and-ste-715c30",
-      "cpguard-update-hijacked-to-deploy-backdoor-and-steal-data"
-    ]
-  },
-  {
-    "slug": "barracuda-issues-root-privilege-vulnerability-aler-e7b80cea",
-    "title": "Barracuda Issues Root‑Privilege Vulnerability Alerts",
-    "summary": "Barracuda Networks warned that two undisclosed vulnerabilities in its device firmware can grant attackers root‑level command execution. The flaws allow local or remote attackers to bypass authentication and run arbitrary code with full system privileges. Barracuda released firmware patches for affected devices; administrators should apply the updates and enforce strict access controls.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
-    "publishedAt": "2026-11-03T15:06:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "barracuda-issues-root-privilege-vulnerability-aler",
-      "article-e7b80cea",
-      "e7b80cea",
-      "barracuda-issues-root-privilege-vulnerability-aler-305835",
-      "barracuda-issues-root-privilege-vulnerability-alerts"
-    ]
-  },
-  {
-    "slug": "gartner-forecasts-soc-engineers-outnumber-analysts-f0d63030",
-    "title": "Gartner Forecasts SOC Engineers Outnumber Analysts by 2028",
-    "summary": "Gartner predicts that security operations centers will employ 50% more engineers than analysts by 2028 as AI agents automate routine alert handling. The report examines how AI reshapes SOC roles, shifting responsibilities from analysts to detection engineering, threat hunting, and exposure management. Security teams should plan for increased engineering capacity and invest in AI‑driven tooling to support evolving SOC workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
-    "publishedAt": "2026-11-03T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gartner-forecasts-soc-engineers-outnumber-analysts",
-      "article-f0d63030",
-      "f0d63030",
-      "gartner-forecasts-soc-engineers-outnumber-analysts-7325b6",
-      "gartner-forecasts-soc-engineers-outnumber-analysts-by-2028"
     ]
   }
 ];

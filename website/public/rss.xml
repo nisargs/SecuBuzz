@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 00:45:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 01:12:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>CISA Reports RCE Exploitation of CVE-2023-1380</title>
@@ -78,6 +78,15 @@
       <pubDate>Fri, 06 Nov 2026 21:00:19 GMT</pubDate>
       <source url="https://arcticwolf.com/resources/news/a-chinese-spyware-tool-operates-in-13-countries-cyber-firm-says/">Arctic Wolf</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Huntress SIEM Brute Force Sentry Enhances Early Detection</title>
+      <link>https://secubuzz.com/news/huntress-siem-brute-force-sentry-enhances-early-de-7cd5a1a8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/huntress-siem-brute-force-sentry-enhances-early-de-7cd5a1a8</guid>
+      <description><![CDATA[Huntress Managed SIEM introduces Brute Force Sentry, converting observed brute force attempts into early detections. The tool aggregates attack evidence and provides hardening guidance, enabling partners to close security gaps before escalation and actionable remediation steps. Deploying Brute Force Sentry improves SOC response times and reduces the window for credential compromise.]]></description>
+      <pubDate>Fri, 06 Nov 2026 21:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/brute-force-sentry">Huntress</source>
+      <category>General</category>
     </item>
     <item>
       <title>Socket Releases Certified Patch for Rails Active Storage Vulnerability</title>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 12:37:22 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Tool Rapidly Steals Azure Key Vault Secrets</title>
-      <link>https://secubuzz.com/news/ai-tool-rapidly-steals-azure-key-vault-secrets-37326da9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-tool-rapidly-steals-azure-key-vault-secrets-37326da9</guid>
-      <description><![CDATA[Hackers used ARTEX AI to locate exposed GitHub credentials and access Azure Key Vault, extracting data in five minutes. The incident shows AI can accelerate credential discovery and cloud exfiltration, bypassing manual search. Teams should enforce strict secret management, enable Azure Key Vault controls, and monitor GitHub for accidental exposure.]]></description>
-      <pubDate>Fri, 06 Nov 2026 12:08:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-artex-ai/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
