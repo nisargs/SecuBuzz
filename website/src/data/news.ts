@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "metasploit-unauth-rce-in-perimeter-devices-b2f6a475",
+    "title": "Metasploit Unauth RCE in Perimeter Devices",
+    "summary": "Metasploit contains an unauthenticated remote code execution flaw affecting perimeter devices, enabling attackers to execute arbitrary code without credentials. The vulnerability is actively exploitable, with no known public exploit yet, but could allow full system compromise on affected devices. Security teams should deploy the latest Metasploit patch immediately and implement detection rules to monitor for exploitation attempts.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/metasploit-wrapup-unauth-rce-modules-in-network-perimet",
+    "publishedAt": "2026-11-07T00:50:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "metasploit-unauth-rce-in-perimeter-devices",
+      "article-b2f6a475",
+      "b2f6a475",
+      "metasploit-unauth-rce-in-perimeter-devices-940ec6"
+    ]
+  },
+  {
     "slug": "cisa-reports-rce-exploitation-of-cve-2023-1380-6bc78273",
     "title": "CISA Reports RCE Exploitation of CVE-2023-1380",
     "summary": "CISA identified active exploitation of CVE-2023-1380, a remote code execution vulnerability in unspecified software. The flaw allows attackers to execute arbitrary code without authentication, potentially compromising system integrity and confidentiality. Immediate patching is required; apply vendor‑issued updates, enable network segmentation, enforce least‑privilege access controls, and monitor for suspicious activity to mitigate exposure.",
@@ -46,6 +64,25 @@ export const news: NewsBrief[] = [
       "article-de4c7c5f",
       "de4c7c5f",
       "sonicwall-ssl-vpn-mfa-bypass-flaw-exploited-578c67"
+    ]
+  },
+  {
+    "slug": "fake-security-tools-host-backdoors-and-infostealer-c863cfec",
+    "title": "Fake Security Tools Host Backdoors and Infostealers on GitHub",
+    "summary": "Malicious backdoors and infostealers have been found in counterfeit security tool repositories on GitHub, exposing users to credential theft. The flaw results from malicious code injection during repository creation, lacking code review, and can be exploited by anyone cloning the repo. Security teams should audit cloned repos, use official tool versions, and deploy detection rules to flag suspicious binaries.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/fake-security-tools-on-github-push-backdoors-and-infost",
+    "publishedAt": "2026-11-06T23:50:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-security-tools-host-backdoors-and-infostealer",
+      "article-c863cfec",
+      "c863cfec",
+      "fake-security-tools-host-backdoors-and-infostealer-19c8f9",
+      "fake-security-tools-host-backdoors-and-infostealers-on-githu"
     ]
   },
   {
@@ -1530,6 +1567,84 @@ export const news: NewsBrief[] = [
       "0dee2eb5",
       "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
       "survey-reveals-87-demand-stronger-ai-control-mechanisms"
+    ]
+  },
+  {
+    "slug": "originlab-origin-viewer-ogg-oob-write-rce-vulnerab-ed03a174",
+    "title": "OriginLab Origin Viewer OGG OOB Write RCE Vulnerability",
+    "summary": "OriginLab Origin Viewer’s OGG parser contains an out‑of‑bounds write that lets attackers trigger remote code execution when a user opens a crafted file. The flaw, CVE‑2026‑114564 with a CVSS of 7.8, requires user interaction and has no public exploit yet, but could allow arbitrary code.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-881/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "originlab-origin-viewer-ogg-oob-write-rce-vulnerab",
+      "article-ed03a174",
+      "ed03a174",
+      "originlab-origin-viewer-ogg-oob-write-rce-vulnerab-6f3cb1",
+      "originlab-origin-viewer-ogg-oob-write-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "originlab-origin-viewer-ogwu-stack-buffer-overflow-2dc13175",
+    "title": "OriginLab Origin Viewer OGWU Stack Buffer Overflow RCE",
+    "summary": "A stack‑based buffer overflow in OriginLab Origin Viewer’s OGWU file parser permits remote code execution when a user opens a malicious file. The vulnerability, CVE‑2026‑114563 with a CVSS of 7.8, requires user interaction and currently has no public exploit, yet could allow arbitrary code. OriginLab released a patch; apply it promptly and disable OGWU file handling as a temporary mitigation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-880/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "originlab-origin-viewer-ogwu-stack-buffer-overflow",
+      "article-2dc13175",
+      "2dc13175",
+      "originlab-origin-viewer-ogwu-stack-buffer-overflow-6f3cb1",
+      "originlab-origin-viewer-ogwu-stack-buffer-overflow-rce"
+    ]
+  },
+  {
+    "slug": "originlab-origin-viewer-ogwu-oob-write-rce-vulnera-a56efeb0",
+    "title": "OriginLab Origin Viewer OGWU OOB Write RCE Vulnerability",
+    "summary": "An out‑of‑bounds write in OriginLab Origin Viewer’s OGWU file parser enables remote code execution when a user opens a crafted file. CVE‑2026‑114562 carries a CVSS score of 7.8, needs user interaction, and has no public exploit yet, but could allow arbitrary code. Apply OriginLab’s patch immediately and consider disabling OGWU file handling as a temporary workaround.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-879/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "originlab-origin-viewer-ogwu-oob-write-rce-vulnera",
+      "article-a56efeb0",
+      "a56efeb0",
+      "originlab-origin-viewer-ogwu-oob-write-rce-vulnera-6f3cae",
+      "originlab-origin-viewer-ogwu-oob-write-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "zdi-26-878-originlab-origin-viewer-opju-file-parsi-9c901483",
+    "title": "ZDI-26-878: OriginLab Origin Viewer OPJU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-114561.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-878/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114561"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-878-originlab-origin-viewer-opju-file-parsi",
+      "article-9c901483",
+      "9c901483",
+      "zdi-26-878-originlab-origin-viewer-opju-file-parsi-6f3cae",
+      "zdi-26-878-originlab-origin-viewer-opju-file-parsing-out-of-"
     ]
   },
   {
@@ -9463,123 +9578,6 @@ export const news: NewsBrief[] = [
       "article-09ea03d0",
       "09ea03d0",
       "msecure-urges-users-to-secure-stored-login-data-3b2f1c"
-    ]
-  },
-  {
-    "slug": "barracuda-email-gateway-root-access-exploit-chain-0040aafa",
-    "title": "Barracuda Email Gateway Root Access Exploit Chain (CVE‑2026‑116606)",
-    "summary": "Barracuda disclosed a chained exploit in its Email Security Gateway that grants unauthenticated root access to the appliance. The chain combines an authorization bypass (CVE‑2026‑116606) with a command injection flaw, enabling remote code execution and full device compromise. Vendor patches were released; organizations must apply them immediately and verify that unauthenticated requests are rejected to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
-    "publishedAt": "2026-11-03T15:59:19.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html"
-      }
-    ],
-    "aliases": [
-      "barracuda-email-gateway-root-access-exploit-chain",
-      "article-0040aafa",
-      "0040aafa",
-      "barracuda-email-gateway-root-access-exploit-chain-5c1e49",
-      "barracuda-email-gateway-root-access-exploit-chain-cve-2026-1"
-    ]
-  },
-  {
-    "slug": "hackers-use-ai-agents-to-launch-3am-ransomware-att-6c373d14",
-    "title": "Hackers Use AI Agents to Launch 3AM Ransomware Attacks Against UK School Networks",
-    "summary": "A ransomware affiliate has hit a group of UK schools with a mix of human control and AI-style automation. The attackers used built-in Windows tools, stolen backup passwords and fake admin accounts to spread across the school network, then encrypted about 37 machines.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-ai-agents-2/",
-    "publishedAt": "2026-11-03T15:55:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-ai-agents-to-launch-3am-ransomware-att",
-      "article-6c373d14",
-      "6c373d14",
-      "hackers-use-ai-agents-to-launch-3am-ransomware-att-ceebd3",
-      "hackers-use-ai-agents-to-launch-3am-ransomware-attacks-again"
-    ]
-  },
-  {
-    "slug": "hackers-raise-supermarket-freezers-to-50-c-114500b3",
-    "title": "Hackers Raise Supermarket Freezers to 50°C",
-    "summary": "Hackers targeted supermarket refrigeration systems in at least ten European countries, manipulating temperature controls to raise freezers to 50°C. The attack forced retailers to remove chilled and frozen goods, exposing the vulnerability of connected HVAC equipment and threatening the food supply chain. Operators should isolate affected systems, apply vendor firmware updates, and enforce stricter access controls to prevent further sabotage.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/supermarket-refrigeration-systems-across-europe/",
-    "publishedAt": "2026-11-03T15:51:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-raise-supermarket-freezers-to-50-c",
-      "article-114500b3",
-      "114500b3",
-      "hackers-raise-supermarket-freezers-to-50-c-47fd09"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-kernel-security-update-20d26e92",
-    "title": "Red Hat Issues Important Kernel Security Update",
-    "summary": "Red Hat released a kernel security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing CVE-2026-64832. The vulnerability is rated Important by Product Security, with a CVSS score linked to the CVE reference, indicating potential kernel exploitation. Administrators should apply the patch promptly to mitigate the risk and maintain kernel integrity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94596",
-    "publishedAt": "2026-11-03T15:43:54.000Z",
-    "cves": [
-      "CVE-2026-64832"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-kernel-security-update",
-      "article-20d26e92",
-      "20d26e92",
-      "red-hat-issues-important-kernel-security-update-37d8b5"
-    ]
-  },
-  {
-    "slug": "google-warns-of-llmjacking-costing-enterprises-1m-ee7f0014",
-    "title": "Google Warns of LLMjacking Costing Enterprises $1M",
-    "summary": "Google warned that threat actors hijack enterprise LLM access via phishing, code leaks, misconfigurations, or exposed client-side code. LLMjacking exploits stolen API keys to consume expensive compute resources, generating up to $1 million in unauthorized cloud charges. Google recommends rotating API keys, enforcing strict key‑management policies, and monitoring usage anomalies to mitigate LLMjacking.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
-    "publishedAt": "2026-11-03T15:41:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-warns-of-llmjacking-costing-enterprises-1m",
-      "article-ee7f0014",
-      "ee7f0014",
-      "google-warns-of-llmjacking-costing-enterprises-1m-76467c"
-    ]
-  },
-  {
-    "slug": "practical-cyber-awareness-tips-for-modern-threats-da182336",
-    "title": "Practical Cyber Awareness Tips for Modern Threats",
-    "summary": "The article outlines nine practical cyber awareness practices designed to align with the current threat landscape. Techniques include safer search habits, stronger login security, enhanced executive protection, and other habits that reduce enterprise risk. Security teams should adopt these measures to strengthen user behavior and mitigate evolving ongoing attack vectors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
-    "publishedAt": "2026-11-03T15:38:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "practical-cyber-awareness-tips-for-modern-threats",
-      "article-da182336",
-      "da182336",
-      "practical-cyber-awareness-tips-for-modern-threats-65034f"
     ]
   }
 ];

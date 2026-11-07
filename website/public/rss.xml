@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 01:12:02 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 02:45:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Metasploit Unauth RCE in Perimeter Devices</title>
+      <link>https://secubuzz.com/news/metasploit-unauth-rce-in-perimeter-devices-b2f6a475</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/metasploit-unauth-rce-in-perimeter-devices-b2f6a475</guid>
+      <description><![CDATA[Metasploit contains an unauthenticated remote code execution flaw affecting perimeter devices, enabling attackers to execute arbitrary code without credentials. The vulnerability is actively exploitable, with no known public exploit yet, but could allow full system compromise on affected devices. Security teams should deploy the latest Metasploit patch immediately and implement detection rules to monitor for exploitation attempts.]]></description>
+      <pubDate>Sat, 07 Nov 2026 00:50:13 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/metasploit-wrapup-unauth-rce-modules-in-network-perimet">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>CISA Reports RCE Exploitation of CVE-2023-1380</title>
       <link>https://secubuzz.com/news/cisa-reports-rce-exploitation-of-cve-2023-1380-6bc78273</link>
@@ -23,6 +32,15 @@
       <description><![CDATA[SonicWall disclosed an SSL‑VPN MFA bypass flaw in SonicOS firewalls that attackers exploited to gain unauthenticated access. The vulnerability allows bypassing MFA authentication by manipulating SSL‑VPN session parameters, enabling attackers to execute commands with administrative privileges. Apply the SonicWall security update, enforce MFA enforcement policies, and monitor VPN logs for anomalous authentication attempts.]]></description>
       <pubDate>Sat, 07 Nov 2026 00:00:55 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Fake Security Tools Host Backdoors and Infostealers on GitHub</title>
+      <link>https://secubuzz.com/news/fake-security-tools-host-backdoors-and-infostealer-c863cfec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-security-tools-host-backdoors-and-infostealer-c863cfec</guid>
+      <description><![CDATA[Malicious backdoors and infostealers have been found in counterfeit security tool repositories on GitHub, exposing users to credential theft. The flaw results from malicious code injection during repository creation, lacking code review, and can be exploited by anyone cloning the repo. Security teams should audit cloned repos, use official tool versions, and deploy detection rules to flag suspicious binaries.]]></description>
+      <pubDate>Fri, 06 Nov 2026 23:50:29 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/fake-security-tools-on-github-push-backdoors-and-infost">CyberNews AI</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -437,24 +455,6 @@
       <description><![CDATA[Hackers exploited OpenSSH flaw CVE-2026-123158 to sign into passwordless accounts on musl‑based Linux with PAM disabled, achieving root on a honeypot. The SSHole vulnerability scores CVSS 8.1, enabling unauthenticated remote code execution by bypassing authentication when PAM is off. No patch has been issued; operators should monitor advisories and disable passwordless logins until a fix arrives.]]></description>
       <pubDate>Fri, 06 Nov 2026 12:49:41 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ahold Delhaize Estimates €250M Loss from Cyberattack</title>
-      <link>https://secubuzz.com/news/ahold-delhaize-estimates-250m-loss-from-cyberattac-af648d4c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ahold-delhaize-estimates-250m-loss-from-cyberattac-af648d4c</guid>
-      <description><![CDATA[Ahold Delhaize disclosed that an October cyberattack is expected to reduce fourth‑quarter sales by up to €250 million. The breach forced the retailer to lower its 2026 financial outlook, reflecting significant operational and reputational damage. Ahold Delhaize has not released detailed incident response steps, but security teams should review supply‑chain controls and incident‑response readiness.]]></description>
-      <pubDate>Fri, 06 Nov 2026 12:47:55 GMT</pubDate>
-      <source url="https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>D-Link Issues Zero‑Day Alerts for DGS‑3130 Switches</title>
-      <link>https://secubuzz.com/news/d-link-issues-zero-day-alerts-for-dgs-3130-switche-6086ec92</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/d-link-issues-zero-day-alerts-for-dgs-3130-switche-6086ec92</guid>
-      <description><![CDATA[D-Link disclosed multiple zero‑day flaws in its DGS‑3130 series managed Gigabit stackable switches, exposing them to remote exploitation. The defects enable unauthenticated attackers to run arbitrary code via malformed management packets, potentially compromising network control planes. D-Link issued mitigation steps and firmware updates; administrators should apply the latest patch and limit management access to trusted networks.]]></description>
-      <pubDate>Fri, 06 Nov 2026 12:37:22 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
   </channel>
