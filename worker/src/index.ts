@@ -428,7 +428,9 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
     const slug = decodeURIComponent(rawSlug).replace(/\.html?$/i, '');
     if (!slug) return false;
     // 1) Any standard CVE (cve-YYYY-NNNN) or GHSA identifier
-    // Validated against advisoriesList below
+    if (/^cve-\d{4}-\d{4,7}$/i.test(slug) || /^ghsa-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}$/i.test(slug)) {
+      return true;
+    }
     // 2) Active KEV catalog match
     if (advisoriesList.some(
       a => (a?.cveID && a.cveID.toLowerCase() === slug) ||
@@ -437,8 +439,6 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
     )) {
       return true;
     }
-    // 3) Any valid advisory slug (>= 4 chars)
-    // Strict advisory check (eliminates soft 404s)
     return false;
   }
 
