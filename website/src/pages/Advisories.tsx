@@ -21,6 +21,7 @@ const PAGE_SIZE = 25;
 export function Advisories() {
   const [searchParams] = useSearchParams();
   const urlVendor = searchParams.get('vendor');
+  const urlStack = searchParams.get('stack') === '1';
   const [query, setQuery] = useState('');
   const [sourceFilter, setSourceFilter] = useState<AdvisorySourceFilter>('ALL');
   const [severityFilter, setSeverityFilter] = useState<AdvisorySeverityFilter>('ALL');
@@ -29,6 +30,7 @@ export function Advisories() {
   const [sort, setSort] = useState<SortKey>('added');
   const [page, setPage] = useState(1);
   const [stackFilterActive, setStackFilterActive] = useState<boolean>(() => {
+    if (urlStack) return true;
     try {
       const saved = localStorage.getItem('secubuzz_advisories_stack_filter_active_v1');
       return saved === 'true';
@@ -54,13 +56,12 @@ export function Advisories() {
       setVendorFilter(v);
       setPage(1);
     }
-  }, [searchParams]);
-
-  useEffect(() => {
-    if (!myStack.hasConfiguredStack && stackFilterActive) {
-      setStackFilterActive(false);
+    if (searchParams.get('stack') === '1') {
+      setStackFilterActive(true);
+      setSourceFilter('ALL');
+      setPage(1);
     }
-  }, [myStack.hasConfiguredStack, stackFilterActive]);
+  }, [searchParams]);
 
   const handleToggleWatchCve = useCallback((cve: string) => {
     const isPinned = myStack.isWatchingCve(cve);

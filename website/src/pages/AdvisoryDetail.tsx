@@ -631,22 +631,36 @@ export function AdvisoryDetail() {
               ) : (
                 <div className="mt-3 rounded border border-line bg-raised/40 p-3 text-xs text-subtle leading-relaxed">
                   <p className="text-muted">No news brief references {advisory.cve} yet.</p>
-                  <p className="mt-2">
-                    Affects <strong className="text-ink">{advisory.vendor} {advisory.product}</strong>. Filter all{' '}
+                  <p className="mt-2 text-ink">
+                    Affects <strong className="font-semibold">{advisory.vendor} {advisory.product}</strong>.
+                  </p>
+                  <div className="mt-2.5 flex flex-wrap items-center gap-2">
                     <Link
                       to={`/advisories?vendor=${encodeURIComponent(advisory.vendor)}`}
-                      className="text-accent underline underline-offset-2 hover:text-ink transition-colors"
+                      className="inline-flex items-center gap-1 rounded border border-line bg-surface px-2 py-1 text-xs text-ink hover:border-accent hover:text-accent transition-colors"
                     >
-                      {advisory.vendor} advisories
-                    </Link>{' '}
-                    or monitor in{' '}
+                      Filter all {advisory.vendor} advisories
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => myStack.toggleWatchCve(advisory.cve)}
+                      className={`inline-flex items-center gap-1.5 rounded border px-2 py-1 text-xs font-medium transition-colors cursor-pointer ${
+                        myStack.isWatchingCve(advisory.cve)
+                          ? 'border-accent/60 bg-accent/15 text-accent hover:border-critical hover:text-critical'
+                          : 'border-line bg-surface text-ink hover:border-accent hover:text-accent'
+                      }`}
+                      title={myStack.isWatchingCve(advisory.cve) ? 'Remove CVE from Watchlist' : 'Watch this CVE in My Stack'}
+                    >
+                      <Bookmark className={`h-3 w-3 ${myStack.isWatchingCve(advisory.cve) ? 'fill-accent' : ''}`} />
+                      <span>{myStack.isWatchingCve(advisory.cve) ? 'Watching in My Stack' : 'Watch in My Stack'}</span>
+                    </button>
                     <Link
-                      to="/advisories"
-                      className="text-accent underline underline-offset-2 hover:text-ink transition-colors"
+                      to="/advisories?stack=1"
+                      className="inline-flex items-center gap-1 rounded border border-line bg-surface px-2 py-1 text-xs text-muted hover:border-accent hover:text-accent transition-colors"
                     >
-                      My Stack
-                    </Link>.
-                  </p>
+                      View My Stack ({myStack.watchedCves.length + myStack.selectedVendors.length})
+                    </Link>
+                  </div>
                 </div>
               )}
             </section>
