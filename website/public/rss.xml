@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 06:42:58 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 07:43:22 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Claude Code Exposes Secrets via &apos;Don&apos;t Ask Again&apos; Setting</title>
+      <link>https://secubuzz.com/news/claude-code-exposes-secrets-via-don-t-ask-again-se-3fb04556</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-exposes-secrets-via-don-t-ask-again-se-3fb04556</guid>
+      <description><![CDATA[Claude Code's 'Don't Ask Again' feature records passwords and API keys into project settings files, exposing them in 1,122 public GitHub repositories. The flaw saves the exact command, including secrets, into an unprotected file, letting anyone with repository access read credentials. Anthropic and vendors advise disabling the option, scanning for exposed secrets, and rotating credentials; no patch yet.]]></description>
+      <pubDate>Sat, 07 Nov 2026 06:44:17 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Storm-3358 Expands ARTEX Attacks on Finance</title>
       <link>https://secubuzz.com/news/storm-3358-expands-artex-attacks-on-finance-4b4124b2</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 14:28:32 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update.html">Google Chrome Releases</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Mirax Android RAT Hijacks Streaming App Ads</title>
-      <link>https://secubuzz.com/news/mirax-android-rat-hijacks-streaming-app-ads-23f66fb7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mirax-android-rat-hijacks-streaming-app-ads-23f66fb7</guid>
-      <description><![CDATA[The Mirax Android RAT campaign leverages streaming-app advertisements as an initial infection vector to steal banking credentials across retail banking customers in the Middle East, Turkey, and Africa. The malware intercepts security codes and operates banking apps directly from victims' devices. Financial institutions should enforce app verification policies and monitor for anomalous banking activity.]]></description>
-      <pubDate>Fri, 06 Nov 2026 14:08:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/mirax-android-rat/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

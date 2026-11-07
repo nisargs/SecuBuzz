@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "claude-code-exposes-secrets-via-don-t-ask-again-se-3fb04556",
+    "title": "Claude Code Exposes Secrets via 'Don't Ask Again' Setting",
+    "summary": "Claude Code's 'Don't Ask Again' feature records passwords and API keys into project settings files, exposing them in 1,122 public GitHub repositories. The flaw saves the exact command, including secrets, into an unprotected file, letting anyone with repository access read credentials. Anthropic and vendors advise disabling the option, scanning for exposed secrets, and rotating credentials; no patch yet.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "publishedAt": "2026-11-07T06:44:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-code-exposes-secrets-via-don-t-ask-again-se",
+      "article-3fb04556",
+      "3fb04556",
+      "claude-code-exposes-secrets-via-don-t-ask-again-se-7b8080",
+      "claude-code-exposes-secrets-via-don-t-ask-again-setting"
+    ]
+  },
+  {
     "slug": "storm-3358-expands-artex-attacks-on-finance-4b4124b2",
     "title": "Storm-3358 Expands ARTEX Attacks on Finance",
     "summary": "In October 2026, the financially motivated threat actor Storm‑3358 intensified attacks on financial institutions using the ARTEX agentic AI offensive framework. ARTEX leverages AI to automate credential harvesting and phishing, enabling attackers to bypass traditional security controls without requiring manual intervention. Security teams should monitor for ARTEX‑related indicators, enforce multi‑factor authentication, and update email filtering rules to mitigate emerging threats.",
@@ -9581,24 +9600,6 @@ export const news: NewsBrief[] = [
       "0e0e69ff",
       "sprockets-server-vulnerability-allows-remote-file-7fbba9",
       "sprockets-server-vulnerability-allows-remote-file-access"
-    ]
-  },
-  {
-    "slug": "relax-and-recover-generates-world-readable-initrd-595c58e7",
-    "title": "Relax‑and‑Recover Generates World‑Readable Initrd",
-    "summary": "The Relax‑and‑Recover tool creates an initrd with world‑readable permissions when GRUB_RESCUE is enabled, exposing kernel and configuration data. A local attacker could read the initrd to retrieve sensitive information such as passwords or cryptographic keys. Updating to the latest Relax‑and‑Recover version removes the permission issue; administrators should apply the patch immediately.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8988-1",
-    "publishedAt": "2026-11-03T17:37:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "relax-and-recover-generates-world-readable-initrd",
-      "article-595c58e7",
-      "595c58e7",
-      "relax-and-recover-generates-world-readable-initrd-7fbbff"
     ]
   }
 ];

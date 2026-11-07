@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "title": "Claude Code Exposes Secrets via 'Don't Ask Again' Setting",
+    "headline": "Claude Code Exposes Secrets via 'Don't Ask Again' Setting",
+    "summary": "Claude Code's 'Don't Ask Again' feature records passwords and API keys into project settings files, exposing them in 1,122 public GitHub repositories. The flaw saves the exact command, including secrets, into an unprotected file, letting anyone with repository access read credentials. Anthropic and vendors advise disabling the option, scanning for exposed secrets, and rotating credentials; no patch yet.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-07T06:44:17.000Z",
+    "ingestedAt": "2026-11-07T07:43:04.738Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
     "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
     "title": "Storm-3358 Expands ARTEX Attacks on Finance",
@@ -8311,22 +8327,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-8990-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8988-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8988-1",
-    "title": "Relax‑and‑Recover Generates World‑Readable Initrd",
-    "headline": "Relax‑and‑Recover Generates World‑Readable Initrd",
-    "summary": "The Relax‑and‑Recover tool creates an initrd with world‑readable permissions when GRUB_RESCUE is enabled, exposing kernel and configuration data. A local attacker could read the initrd to retrieve sensitive information such as passwords or cryptographic keys. Updating to the latest Relax‑and‑Recover version removes the permission issue; administrators should apply the patch immediately.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-03T17:37:16.000Z",
-    "ingestedAt": "2026-11-03T21:08:02.012Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-8988-1",
     "additionalSources": []
   }
 ]
