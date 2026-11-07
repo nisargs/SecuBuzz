@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
@@ -19,11 +19,13 @@ type SortKey = 'added' | 'due';
 const PAGE_SIZE = 25;
 
 export function Advisories() {
+  const [searchParams] = useSearchParams();
+  const urlVendor = searchParams.get('vendor');
   const [query, setQuery] = useState('');
   const [sourceFilter, setSourceFilter] = useState<AdvisorySourceFilter>('ALL');
   const [severityFilter, setSeverityFilter] = useState<AdvisorySeverityFilter>('ALL');
   const [dueThisWeekOnly, setDueThisWeekOnly] = useState(false);
-  const [vendorFilter, setVendorFilter] = useState('ALL');
+  const [vendorFilter, setVendorFilter] = useState(urlVendor || 'ALL');
   const [sort, setSort] = useState<SortKey>('added');
   const [page, setPage] = useState(1);
   const [stackFilterActive, setStackFilterActive] = useState<boolean>(() => {
@@ -45,6 +47,14 @@ export function Advisories() {
       // Ignore in private browsing
     }
   }, [stackFilterActive]);
+
+  useEffect(() => {
+    const v = searchParams.get('vendor');
+    if (v) {
+      setVendorFilter(v);
+      setPage(1);
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     if (!myStack.hasConfiguredStack && stackFilterActive) {

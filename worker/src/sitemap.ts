@@ -161,14 +161,14 @@ export function injectMetaTags(
   advisories: KevVulnerability[]
 ): string {
   let title = 'SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar';
-  let description = 'Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking for security professionals. Zero tracking, fast triage, verified sources.';
+  let description = 'Real-time cybersecurity news in 60 words and CISA KEV zero-day radar. Track active exploits, EPSS likelihood, and vendor advisories across 48+ sources.';
   let canonicalPath = pathname.replace(/\/$/, '') || '';
   let ogType = 'website';
   let jsonLdObj: Record<string, unknown> | null = null;
 
   if (pathname === '/' || pathname === '') {
     title = 'SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar';
-    description = 'Quick, factual 60-word cybersecurity news briefs and CISA KEV zero-day tracking for security professionals. Zero tracking, fast triage, verified sources.';
+    description = 'Real-time cybersecurity news in 60 words and CISA KEV zero-day radar. Track active exploits, EPSS likelihood, and vendor advisories across 48+ sources.';
     canonicalPath = '';
     jsonLdObj = {
       '@context': 'https://schema.org',
@@ -284,11 +284,27 @@ export function injectMetaTags(
       const vendor = adv.vendorProject || (adv as any).vendor || '';
       const prod = adv.product || '';
       const vendorProd = [vendor, prod].filter(Boolean).join(' ') || 'Vulnerability';
-      title = `${cveCode}: ${vendorProd} Exploit Status, Patch & CISA KEV · SecuBuzz`;
-      const actionText = adv.requiredAction ? ` Action: ${adv.requiredAction}.` : '';
-      const dueText = adv.dueDate ? ` Due: ${adv.dueDate}.` : '';
+      const shortEntity = vendorProd.length <= 16 ? vendorProd : (vendor || vendorProd.slice(0, 15));
+      title = `${cveCode} (${shortEntity}): Exploit & KEV | SecuBuzz`;
+      if (title.length > 60) {
+        title = `${cveCode} Exploit Status & KEV | SecuBuzz`;
+      }
+      const cleanAction = (adv.requiredAction || '').replace(/\.+$/, '').trim();
+      const duePart = adv.dueDate ? ` Due: ${adv.dueDate}.` : '';
+      const prefix = `${cveCode} (${vendorProd}): CISA KEV zero-day alert.${duePart}`;
+      const suffix = ' Review EPSS & CVSS metrics.';
+      const budgetForAction = 155 - prefix.length - suffix.length;
+      let actionPart = '';
+      if (cleanAction && budgetForAction >= 30) {
+        const rawAction = ` Action: ${cleanAction}.`;
+        if (rawAction.length <= budgetForAction) {
+          actionPart = rawAction;
+        } else if (budgetForAction >= 28) {
+          actionPart = ' Action: Apply vendor updates.';
+        }
+      }
       const summaryText = adv.shortDescription || adv.vulnerabilityName || (adv as any).description || '';
-      description = `CISA KEV active zero-day alert for ${cveCode} (${vendorProd}).${actionText}${dueText} ${summaryText}`.trim();
+      description = `${prefix}${actionPart}${suffix}`;
       ogType = 'article';
       jsonLdObj = {
         '@context': 'https://schema.org',
@@ -309,8 +325,8 @@ export function injectMetaTags(
       };
     } else {
       const cveCode = slug.toUpperCase();
-      title = `${cveCode} Vulnerability Advisory, Exploit Status & CISA KEV · SecuBuzz`;
-      description = `Track exploit likelihood, CISA KEV zero-day status, and patch intelligence for ${cveCode} on SecuBuzz.`;
+      title = `${cveCode} Exploit Likelihood, EPSS & KEV Status | SecuBuzz`;
+      description = `Track exploit likelihood, EPSS score, CVSS severity, and CISA KEV zero-day status for ${cveCode} on SecuBuzz. Fast triage intelligence.`.slice(0, 155);
       ogType = 'article';
       jsonLdObj = {
         '@context': 'https://schema.org',

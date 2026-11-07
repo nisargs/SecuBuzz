@@ -225,11 +225,33 @@ export function AdvisoryDetail() {
     },
   ];
 
+  const vendorProd = [advisory.vendor, advisory.product].filter(Boolean).join(' ') || 'Vulnerability';
+  const shortEntity = vendorProd.length <= 16 ? vendorProd : (advisory.vendor || vendorProd.slice(0, 15));
+  let seoTitle = `${advisory.cve} (${shortEntity}): Exploit & KEV | SecuBuzz`;
+  if (seoTitle.length > 60) {
+    seoTitle = `${advisory.cve} Exploit Status & KEV | SecuBuzz`;
+  }
+  const cleanAction = (advisory.requiredAction || '').replace(/\.+$/, '').trim();
+  const duePart = hasCisaDeadline && advisory.dueDate ? ` Due: ${advisory.dueDate}.` : '';
+  const prefix = `${advisory.cve} (${vendorProd}): ${hasCisaDeadline ? 'CISA KEV zero-day alert.' : 'Security advisory.'}${duePart}`;
+  const suffix = ' Review EPSS & CVSS metrics.';
+  const budgetForAction = 155 - prefix.length - suffix.length;
+  let actionPart = '';
+  if (cleanAction && budgetForAction >= 30) {
+    const rawAction = ` Action: ${cleanAction}.`;
+    if (rawAction.length <= budgetForAction) {
+      actionPart = rawAction;
+    } else if (budgetForAction >= 28) {
+      actionPart = ' Action: Apply vendor updates.';
+    }
+  }
+  const seoDescription = `${prefix}${actionPart}${suffix}`;
+
   return (
     <>
       <Seo
-        title={`${advisory.cve}: ${advisory.vendor} ${advisory.product} Exploit Status, Patch & CISA KEV · SecuBuzz`}
-        description={`${hasCisaDeadline ? `CISA KEV active zero-day alert for ${advisory.cve}` : `Security advisory for ${advisory.cve}`} (${advisory.vendor} ${advisory.product}). Action required: ${advisory.requiredAction}. ${hasCisaDeadline ? `Due date: ${advisory.dueDate}. ` : ''}${advisory.description || advisory.name}`.trim()}
+        title={seoTitle}
+        description={seoDescription}
         canonicalPath={`/advisories/${advisory.slug}`}
         type="article"
         jsonLd={{
@@ -607,7 +629,25 @@ export function AdvisoryDetail() {
                   ))}
                 </ul>
               ) : (
-                <p className="mt-2 text-sm text-muted">No briefs reference this CVE yet.</p>
+                <div className="mt-3 rounded border border-line bg-raised/40 p-3 text-xs text-subtle leading-relaxed">
+                  <p className="text-muted">No news brief references {advisory.cve} yet.</p>
+                  <p className="mt-2">
+                    Affects <strong className="text-ink">{advisory.vendor} {advisory.product}</strong>. Filter all{' '}
+                    <Link
+                      to={`/advisories?vendor=${encodeURIComponent(advisory.vendor)}`}
+                      className="text-accent underline underline-offset-2 hover:text-ink transition-colors"
+                    >
+                      {advisory.vendor} advisories
+                    </Link>{' '}
+                    or monitor in{' '}
+                    <Link
+                      to="/advisories"
+                      className="text-accent underline underline-offset-2 hover:text-ink transition-colors"
+                    >
+                      My Stack
+                    </Link>.
+                  </p>
+                </div>
               )}
             </section>
           </aside>
