@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "insignary-releases-free-insignary-chk-tool-to-dete-7435b3d2",
+    "title": "Insignary Releases Free Insignary-Chk Tool to Detect PHP2Shell and Node2Shell Exposure",
+    "summary": "Toronto, Canada, November 6th, 2026, CyberNewswire Free, read-only scanner helps organizations find Linux servers and container images exposed to two actively exploited vulnerabilities in PHP and Node.js Insignary, a global open-source security company, today released insignary-chk, a free tool that checks for PHP2Shell and Node2Shell, two recently disclosed runtime vulnerabilities affecting PHP and Node.js.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
+    "publishedAt": "2026-11-07T02:06:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "insignary-releases-free-insignary-chk-tool-to-dete",
+      "article-7435b3d2",
+      "7435b3d2",
+      "insignary-releases-free-insignary-chk-tool-to-dete-3fe36e",
+      "insignary-releases-free-insignary-chk-tool-to-detect-php2she"
+    ]
+  },
+  {
     "slug": "metasploit-unauth-rce-in-perimeter-devices-b2f6a475",
     "title": "Metasploit Unauth RCE in Perimeter Devices",
     "summary": "Metasploit contains an unauthenticated remote code execution flaw affecting perimeter devices, enabling attackers to execute arbitrary code without credentials. The vulnerability is actively exploitable, with no known public exploit yet, but could allow full system compromise on affected devices. Security teams should deploy the latest Metasploit patch immediately and implement detection rules to monitor for exploitation attempts.",
@@ -46,6 +65,25 @@ export const news: NewsBrief[] = [
       "article-6bc78273",
       "6bc78273",
       "cisa-reports-rce-exploitation-of-cve-2023-1380-2064de"
+    ]
+  },
+  {
+    "slug": "claude-dispatch-browser-extension-enables-code-exe-4df853f7",
+    "title": "Claude Dispatch Browser Extension Enables Code Execution",
+    "summary": "A code‑execution vulnerability in the Claude Dispatch browser extension allows attackers to run arbitrary code within the host environment. The flaw, identified as CVE‑2026‑119977, is exploitable via a malicious add‑on and could lead to credential theft or system compromise. Users should update to the latest extension version or disable the add‑on to eliminate the execution risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/malicious-browser-extensions-could-use-claude-dispatch",
+    "publishedAt": "2026-11-07T00:20:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-dispatch-browser-extension-enables-code-exe",
+      "article-4df853f7",
+      "4df853f7",
+      "claude-dispatch-browser-extension-enables-code-exe-580ae5",
+      "claude-dispatch-browser-extension-enables-code-execution"
     ]
   },
   {
@@ -1567,6 +1605,87 @@ export const news: NewsBrief[] = [
       "0dee2eb5",
       "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
       "survey-reveals-87-demand-stronger-ai-control-mechanisms"
+    ]
+  },
+  {
+    "slug": "zdi-26-877-originlab-origin-viewer-opj-file-parsin-f3a6af58",
+    "title": "ZDI-26-877: OriginLab Origin Viewer OPJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-114560.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-877/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114560"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-877-originlab-origin-viewer-opj-file-parsin",
+      "article-f3a6af58",
+      "f3a6af58",
+      "zdi-26-877-originlab-origin-viewer-opj-file-parsin-6f3cae",
+      "zdi-26-877-originlab-origin-viewer-opj-file-parsing-out-of-b"
+    ]
+  },
+  {
+    "slug": "zdi-26-876-originlab-origin-viewer-ogg-file-parsin-c48b5b42",
+    "title": "ZDI-26-876: OriginLab Origin Viewer OGG File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-114559.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-876/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114559"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-876-originlab-origin-viewer-ogg-file-parsin",
+      "article-c48b5b42",
+      "c48b5b42",
+      "zdi-26-876-originlab-origin-viewer-ogg-file-parsin-6f3cae",
+      "zdi-26-876-originlab-origin-viewer-ogg-file-parsing-out-of-b"
+    ]
+  },
+  {
+    "slug": "zdi-26-875-originlab-origin-viewer-ogwu-file-parsi-00d673a9",
+    "title": "ZDI-26-875: OriginLab Origin Viewer OGWU File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-114569.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-875/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-114569"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-875-originlab-origin-viewer-ogwu-file-parsi",
+      "article-00d673a9",
+      "00d673a9",
+      "zdi-26-875-originlab-origin-viewer-ogwu-file-parsi-6f3cae",
+      "zdi-26-875-originlab-origin-viewer-ogwu-file-parsing-heap-ba"
+    ]
+  },
+  {
+    "slug": "home-assistant-green-ssrf-exploitable-without-auth-067a0401",
+    "title": "Home Assistant Green SSRF Exploitable Without Auth",
+    "summary": "A server‑side request forgery flaw in Home Assistant Green’s aiohttp_client permits network‑adjacent attackers to trigger arbitrary outbound requests without authentication. The flaw, assigned CVE‑2026‑91131 and CVSS 5.4, lacks a public exploit but could enable data exfiltration or lateral movement. Home Assistant recommends applying the latest firmware update or applying the vendor‑issued patch to mitigate the SSRF risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-897/",
+    "publishedAt": "2026-11-06T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "home-assistant-green-ssrf-exploitable-without-auth",
+      "article-067a0401",
+      "067a0401",
+      "home-assistant-green-ssrf-exploitable-without-auth-6f3cb6"
     ]
   },
   {
@@ -9468,116 +9587,6 @@ export const news: NewsBrief[] = [
       "article-b6f5b2a1",
       "b6f5b2a1",
       "red-hat-issues-openshift-4-21-41-security-update-37d9aa"
-    ]
-  },
-  {
-    "slug": "binance-discloses-6-43-billion-theft-via-social-en-32a7dbb8",
-    "title": "Binance Discloses $6.43 Billion Theft via Social Engineering and Tampered Homebrew",
-    "summary": "Binance disclosed a multi-stage campaign resulting in a record $6.43 billion asset theft, combining tampered Homebrew installations with recruitment-themed social engineering targeting two engineers. The attack bypassed standard security controls through supply chain manipulation and targeted personnel rather than infrastructure directly. Binance stated the incident was not a single phishing event but a coordinated campaign requiring comprehensive forensic investigation.",
-    "category": "Breach",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
-    "publishedAt": "2026-11-03T16:55:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-discloses-6-43-billion-theft-via-social-en",
-      "article-32a7dbb8",
-      "32a7dbb8",
-      "binance-discloses-6-43-billion-theft-via-social-en-5314da",
-      "binance-discloses-6-43-billion-theft-via-social-engineering-"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-cockpit-security-patch-ec2883c9",
-    "title": "Red Hat Releases Cockpit Security Patch",
-    "summary": "An update for Red Hat Enterprise Linux 9 cockpit addresses a critical flaw identified as CVE‑2026‑43871. The vulnerability allows attackers to gain elevated privileges through a buffer overflow in the cockpit web interface, potentially enabling remote code execution. Red Hat has released a patch that must be applied immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94533",
-    "publishedAt": "2026-11-03T16:43:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-cockpit-security-patch",
-      "article-ec2883c9",
-      "ec2883c9",
-      "red-hat-releases-cockpit-security-patch-37d8b6"
-    ]
-  },
-  {
-    "slug": "binance-reports-6-3b-theft-in-months-long-campaign-d871ab44",
-    "title": "Binance Reports $6.3B Theft in Months‑Long Campaign",
-    "summary": "Binance disclosed a $6.3 billion cryptocurrency theft executed over several months by attackers linked to North Korea. The campaign leveraged social engineering, including fake recruitment interviews, to compromise accounts and siphon funds, resulting in a massive loss of digital assets. Binance has tightened account verification, implemented stricter monitoring, and urged users to enable multi‑factor authentication to prevent future breaches.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea",
-    "publishedAt": "2026-11-03T16:42:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-reports-6-3b-theft-in-months-long-campaign",
-      "article-d871ab44",
-      "d871ab44",
-      "binance-reports-6-3b-theft-in-months-long-campaign-1bf56b"
-    ]
-  },
-  {
-    "slug": "north-korean-hackers-abuse-internal-ai-tool-and-fa-884953e5",
-    "title": "North Korean Hackers Abuse Internal AI Tool and Fake Job Interviews in $6.34 Billion Binance Heist",
-    "summary": "North Korean hackers used a fake job interview, a poisoned coding task, and a hijacked internal AI tool to reach Binance’s wallet systems. The FBI says the North Korean group it calls “TraderTraitor” stole more than $6 billion in digital assets on 29 October 2026.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-job-interviews-binance-heist/",
-    "publishedAt": "2026-11-03T16:39:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-korean-hackers-abuse-internal-ai-tool-and-fa",
-      "article-884953e5",
-      "884953e5",
-      "north-korean-hackers-abuse-internal-ai-tool-and-fa-776dd8",
-      "north-korean-hackers-abuse-internal-ai-tool-and-fake-job-int"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-kernel-security-update-70923a38",
-    "title": "Red Hat Issues Critical Kernel Security Update",
-    "summary": "Red Hat released a kernel security update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing several high‑impact kernel flaws. The update is rated Critical by Product Security, with CVSS scores linked to CVE references, implying potential unauthenticated remote code execution. Administrators should apply the patch promptly to mitigate exploitation risks and preserve system integrity.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94623",
-    "publishedAt": "2026-11-03T16:26:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-kernel-security-update",
-      "article-70923a38",
-      "70923a38",
-      "red-hat-issues-critical-kernel-security-update-37d8b3"
-    ]
-  },
-  {
-    "slug": "msecure-urges-users-to-secure-stored-login-data-09ea03d0",
-    "title": "mSecure Urges Users to Secure Stored Login Data",
-    "summary": "mSeven Software detected suspicious activity affecting mSecure password manager customers. The company urged current and former users to immediately protect stored passwords, two-factor authentication methods, and passkeys. This warning extends beyond routine password reset notices. Organizations should enforce credential rotation and review account access logs for unauthorized sessions.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/msecure-security-incident/",
-    "publishedAt": "2026-11-03T16:21:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "msecure-urges-users-to-secure-stored-login-data",
-      "article-09ea03d0",
-      "09ea03d0",
-      "msecure-urges-users-to-secure-stored-login-data-3b2f1c"
     ]
   }
 ];
