@@ -67,6 +67,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromeos-update-fixes-multiple-high-severity-cves-2a7a9d4c",
+    "title": "ChromeOS Update Fixes Multiple High‑Severity CVEs",
+    "summary": "Google ChromeOS Stable channel update addresses several memory corruption flaws affecting WebXR, WebGL, Media, CacheStorage, and Navigation. The CVEs, including CVE‑2026‑121076, CVE‑2026‑121208, CVE‑2026‑79235, and others, enable use‑after‑free or out‑of‑bounds reads that could lead to arbitrary code execution if exploited in the browser. All affected devices should install the new 16836.32.0 build or apply vendor‑supplied patches to mitigate the vulnerabilities.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos.html",
+    "publishedAt": "2026-11-07T00:52:58.867Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-update-fixes-multiple-high-severity-cves",
+      "article-2a7a9d4c",
+      "2a7a9d4c",
+      "chromeos-update-fixes-multiple-high-severity-cves-21c1c7"
+    ]
+  },
+  {
     "slug": "metasploit-unauth-rce-in-perimeter-devices-b2f6a475",
     "title": "Metasploit Unauth RCE in Perimeter Devices",
     "summary": "Metasploit contains an unauthenticated remote code execution flaw affecting perimeter devices, enabling attackers to execute arbitrary code without credentials. The vulnerability is actively exploitable, with no known public exploit yet, but could allow full system compromise on affected devices. Security teams should deploy the latest Metasploit patch immediately and implement detection rules to monitor for exploitation attempts.",
@@ -82,6 +100,24 @@ export const news: NewsBrief[] = [
       "article-b2f6a475",
       "b2f6a475",
       "metasploit-unauth-rce-in-perimeter-devices-940ec6"
+    ]
+  },
+  {
+    "slug": "sharepoint-cve-2025-53770-exploited-by-storm-2603-f3f6f544",
+    "title": "SharePoint CVE‑2025‑53770 Exploited by Storm‑2603",
+    "summary": "A remote code execution flaw, CVE‑2025‑53770, in Microsoft SharePoint was actively exploited by the Storm‑2603 threat actor. The vulnerability allows attackers to inject malicious scripts via crafted HTTP requests, enabling arbitrary code execution with the privileges of the SharePoint service account. Microsoft has released a patch; organizations should apply the update immediately and monitor for suspicious activity in SharePoint logs.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/the-soc-files-5-ghost-in-the-pipeline-or-a-fileless-sha",
+    "publishedAt": "2026-11-07T00:40:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sharepoint-cve-2025-53770-exploited-by-storm-2603",
+      "article-f3f6f544",
+      "f3f6f544",
+      "sharepoint-cve-2025-53770-exploited-by-storm-2603-2c32f9"
     ]
   },
   {
@@ -139,6 +175,24 @@ export const news: NewsBrief[] = [
       "article-de4c7c5f",
       "de4c7c5f",
       "sonicwall-ssl-vpn-mfa-bypass-flaw-exploited-578c67"
+    ]
+  },
+  {
+    "slug": "esxi-ransomware-exploits-weak-access-controls-7484dbee",
+    "title": "ESXi Ransomware Exploits Weak Access Controls",
+    "summary": "The ESXi hypervisor was hit by ransomware that exploited weak access controls and misconfigurations to gain administrative privileges. Attackers encrypted virtual machine files with a cryptolocker payload, demanding payment to restore access, and the breach was detected via anomalous credential usage. VMware issued a security advisory urging immediate patching, stricter ESXi authentication, and least‑privilege access controls to mitigate future attacks.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/virtualization-security-attack-layers-and-misconfigurat",
+    "publishedAt": "2026-11-07T00:00:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "esxi-ransomware-exploits-weak-access-controls",
+      "article-7484dbee",
+      "7484dbee",
+      "esxi-ransomware-exploits-weak-access-controls-4379ca"
     ]
   },
   {
@@ -9545,63 +9599,6 @@ export const news: NewsBrief[] = [
       "article-595c58e7",
       "595c58e7",
       "relax-and-recover-generates-world-readable-initrd-7fbbff"
-    ]
-  },
-  {
-    "slug": "libuser-gecos-field-validation-vulnerabilities-adc6ae5d",
-    "title": "libuser GECOS Field Validation Vulnerabilities",
-    "summary": "Two libuser vulnerabilities were disclosed affecting user information handling: CVE-2015-3245 allows local attackers to corrupt the passwd file via improper GECOS field validation, resulting in denial of service; CVE-2015-3246 permits privilege escalation through inconsistent passwd file modification during updates. Both require local access and impact system authentication integrity. Users should apply the updated libuser package to resolve these issues.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8987-1",
-    "publishedAt": "2026-11-03T17:36:51.000Z",
-    "cves": [
-      "CVE-2015-3245",
-      "CVE-2015-3246"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "libuser-gecos-field-validation-vulnerabilities",
-      "article-adc6ae5d",
-      "adc6ae5d",
-      "libuser-gecos-field-validation-vulnerabilities-7fbc03"
-    ]
-  },
-  {
-    "slug": "swift-mailer-remote-code-execution-vulnerability-ac8066f5",
-    "title": "Swift Mailer Remote Code Execution Vulnerability",
-    "summary": "A remote code execution vulnerability was discovered in Swift Mailer due to improper sanitization of email addresses in the mail transport layer. An unauthenticated attacker could exploit this flaw by passing extra parameters to the underlying mail command. The vendor issued a security update to remediate the issue and prevent arbitrary code execution from remote locations.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8986-1",
-    "publishedAt": "2026-11-03T17:36:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "swift-mailer-remote-code-execution-vulnerability",
-      "article-ac8066f5",
-      "ac8066f5",
-      "swift-mailer-remote-code-execution-vulnerability-7fbc07"
-    ]
-  },
-  {
-    "slug": "usn-8985-1-net-easytcp-vulnerability-6d448c3f",
-    "title": "USN-8985-1: Net::EasyTCP vulnerability",
-    "summary": "It was discovered that Net::EasyTCP used the built-in Perl rand() function to generate encryption keys when no strong randomization module was present. An attacker could possibly use this issue to predict the keys and obtain sensitive information.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8985-1",
-    "publishedAt": "2026-11-03T17:36:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-8985-1-net-easytcp-vulnerability",
-      "article-6d448c3f",
-      "6d448c3f",
-      "usn-8985-1-net-easytcp-vulnerability-7fbc0b"
     ]
   }
 ];
