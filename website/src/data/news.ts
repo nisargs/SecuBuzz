@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "storm-3358-exploits-ssrf-and-file-upload-in-artex-75f2b7f0",
+    "title": "Storm-3358 Exploits SSRF and File Upload in ARTEX",
+    "summary": "Storm-3358 attackers exploited SSRF and file upload flaws in ARTEX. The flaw allows unauthenticated remote code execution via crafted HTTP requests, enabling attackers to read internal resources and upload malicious payloads, potentially compromising system integrity. ARTEX has released a patch that validates input paths and restricts file types; security teams should apply the update immediately and enforce strict upload policies.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/artex-abuse-expands-as-cybercriminals-target-financial",
+    "publishedAt": "2026-11-07T19:46:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "storm-3358-exploits-ssrf-and-file-upload-in-artex",
+      "article-75f2b7f0",
+      "75f2b7f0",
+      "storm-3358-exploits-ssrf-and-file-upload-in-artex-5ceac1"
+    ]
+  },
+  {
     "slug": "red-hat-issues-keycloak-26-6-9-security-update-to-86f165d5",
     "title": "Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability",
     "summary": "Red Hat released a security update for Keycloak 26.6.9, fixing a flaw that could let attackers gain unauthorized access or elevate privileges within deployments. The vulnerability affects both standard and containerized installations, potentially impacting OpenShift and Kubernetes environments. Administrators should download the updated packages or pull the new images from the Red Customer Portal and redeploy Keycloak to maintain security.",
@@ -9605,25 +9623,6 @@ export const news: NewsBrief[] = [
       "7579da09",
       "ubuntu-libvips-vulnerabilities-exploit-integer-ove-7fbb9a",
       "ubuntu-libvips-vulnerabilities-exploit-integer-overflows"
-    ]
-  },
-  {
-    "slug": "sogo-vulnerability-enables-password-reset-token-th-6b28e205",
-    "title": "SOGo Vulnerability Enables Password Reset Token Theft",
-    "summary": "SOGo, an open‑source groupware server, contains a flaw that uses client‑supplied Origin headers in password reset link construction. A remote attacker can exploit this to harvest password reset tokens and hijack user accounts, potentially compromising sensitive data. Administrators should update to the latest SOGo release or apply the security patch provided in USN-8993-1 to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8993-1",
-    "publishedAt": "2026-11-03T17:38:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sogo-vulnerability-enables-password-reset-token-th",
-      "article-6b28e205",
-      "6b28e205",
-      "sogo-vulnerability-enables-password-reset-token-th-7fbb9e",
-      "sogo-vulnerability-enables-password-reset-token-theft"
     ]
   }
 ];

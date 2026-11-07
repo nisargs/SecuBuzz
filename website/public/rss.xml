@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 19:43:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 20:43:15 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Storm-3358 Exploits SSRF and File Upload in ARTEX</title>
+      <link>https://secubuzz.com/news/storm-3358-exploits-ssrf-and-file-upload-in-artex-75f2b7f0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/storm-3358-exploits-ssrf-and-file-upload-in-artex-75f2b7f0</guid>
+      <description><![CDATA[Storm-3358 attackers exploited SSRF and file upload flaws in ARTEX. The flaw allows unauthenticated remote code execution via crafted HTTP requests, enabling attackers to read internal resources and upload malicious payloads, potentially compromising system integrity. ARTEX has released a patch that validates input paths and restricts file types; security teams should apply the update immediately and enforce strict upload policies.]]></description>
+      <pubDate>Sat, 07 Nov 2026 19:46:05 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/artex-abuse-expands-as-cybercriminals-target-financial">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability</title>
       <link>https://secubuzz.com/news/red-hat-issues-keycloak-26-6-9-security-update-to-86f165d5</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[The report highlights multiple emerging threats, including a Trezor hardware wallet implant, LLMJacking ransomware billing at $1M, and SAP vulnerabilities weaponized within days. Additionally, Synology warns of NAS ransomware attacks, Flowise 'hello' attacks exploit, and Chainalysis breach impacts expanding across customers. Security teams should review detection rules, apply vendor patches, and monitor for credential theft to mitigate these risks.]]></description>
       <pubDate>Fri, 06 Nov 2026 14:40:09 GMT</pubDate>
       <source url="https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Alerts on Monetizing Windows PCs via Fake Games</title>
-      <link>https://secubuzz.com/news/microsoft-alerts-on-monetizing-windows-pcs-via-fak-ccffd898</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-alerts-on-monetizing-windows-pcs-via-fak-ccffd898</guid>
-      <description><![CDATA[Microsoft warned that fake game installers covertly monetize Windows PCs by allocating bandwidth to distributed computing tasks. The campaign targets users seeking free titles, silently running background workloads that turn machines into unconsented mining rigs. Microsoft recommends verifying installer signatures, avoiding untrusted sites, and using endpoint protection to block unauthorized bandwidth usage.]]></description>
-      <pubDate>Fri, 06 Nov 2026 14:38:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsoft-warns-fake-game-downloads/">Cyber Security News</source>
       <category>General</category>
     </item>
   </channel>
