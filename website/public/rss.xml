@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2026 14:43:31 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 15:44:29 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability</title>
+      <link>https://secubuzz.com/news/red-hat-issues-keycloak-26-6-9-security-update-to-86f165d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-keycloak-26-6-9-security-update-to-86f165d5</guid>
+      <description><![CDATA[Red Hat released a security update for Keycloak 26.6.9, fixing a flaw that could let attackers gain unauthorized access or elevate privileges within deployments. The vulnerability affects both standard and containerized installations, potentially impacting OpenShift and Kubernetes environments. Administrators should download the updated packages or pull the new images from the Red Customer Portal and redeploy Keycloak to maintain security.]]></description>
+      <pubDate>Sat, 07 Nov 2026 14:49:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96039">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>CTM360 Exposes Fake Gift Card Scam Tactics</title>
       <link>https://secubuzz.com/news/ctm360-exposes-fake-gift-card-scam-tactics-b4921fb8</link>
@@ -447,15 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 14:38:43 GMT</pubDate>
       <source url="https://cybersecuritynews.com/microsoft-warns-fake-game-downloads/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Claude Code Exposes User Emails via User‑Agent Headers</title>
-      <link>https://secubuzz.com/news/claude-code-exposes-user-emails-via-user-agent-hea-2683cb35</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-exposes-user-emails-via-user-agent-hea-2683cb35</guid>
-      <description><![CDATA[Anthropic’s Claude Code transmitted users’ email addresses in HTTP User‑Agent headers during web searches, leaking personal data to third‑party sites. The flaw arises from the tool’s default header configuration, which embeds user identifiers without explicit consent, violating privacy best practices. Anthropic should update header handling, provide opt‑out controls, and issue a patch to prevent accidental data leakage.]]></description>
-      <pubDate>Fri, 06 Nov 2026 14:37:40 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-code-leaks-user-email/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

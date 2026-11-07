@@ -1,5 +1,26 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:96039",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96039",
+    "title": "Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability",
+    "headline": "Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability",
+    "summary": "Red Hat released a security update for Keycloak 26.6.9, fixing a flaw that could let attackers gain unauthorized access or elevate privileges within deployments. The vulnerability affects both standard and containerized installations, potentially impacting OpenShift and Kubernetes environments. Administrators should download the updated packages or pull the new images from the Red Customer Portal and redeploy Keycloak to maintain security.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-07T14:49:00.000Z",
+    "ingestedAt": "2026-11-07T15:43:09.220Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:96039",
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96040"
+      }
+    ]
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
     "title": "CTM360 Exposes Fake Gift Card Scam Tactics",
@@ -4958,9 +4979,9 @@
   {
     "id": "https://therecord.media/french-bank-confirms-cyber-heist",
     "sourceUrl": "https://therecord.media/french-bank-confirms-cyber-heist",
-    "title": "French Bank Heist Steals $133 Million via Supplier Breach",
-    "headline": "French Bank Heist Steals $133 Million via Supplier Breach",
-    "summary": "Crédit Mutuel Arkéa confirmed a cyber heist that transferred about $133 million using the bank’s account after compromising a supplier. Attackers used the supplier’s credentials to authenticate with the bank’s transfer system, enabling unauthorized fund movements without triggering fraud alerts. Bank officials are tightening supplier access controls, reviewing transaction monitoring, and notifying regulators while investigating the breach.",
+    "title": "Crédit Mutuel Arkéa $133M Heist via Supplier Breach",
+    "headline": "Crédit Mutuel Arkéa $133M Heist via Supplier Breach",
+    "summary": "Crédit Mutuel Arkéa suffered a $133 million cyber heist that exploited a supplier’s credentials to access the bank’s transfer system. Attackers leveraged the supplier’s privileged access to move funds without triggering fraud alerts, draining the bank’s accounts undetected. The bank has suspended affected systems, tightened supplier controls, and is conducting a forensic investigation while notifying regulators.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "The Record",
@@ -4969,7 +4990,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://therecord.media/french-bank-confirms-cyber-heist",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/"
+      }
+    ]
   },
   {
     "id": "https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing",
@@ -8323,22 +8349,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-8993-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8992-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8992-1",
-    "title": "Shapelib Shpsort Double Free Vulnerability",
-    "headline": "Shapelib Shpsort Double Free Vulnerability",
-    "summary": "Ubuntu identified a double‑free flaw in the shpsort utility of Shapelib, a library used for handling shapefile data. Improper input validation can trigger a double free, potentially leading to denial of service or arbitrary code execution if an attacker supplies crafted data. Ubuntu recommends applying the latest Shapelib update or patching the library to eliminate the vulnerability.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-03T17:38:38.000Z",
-    "ingestedAt": "2026-11-03T20:43:53.592Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-8992-1",
     "additionalSources": []
   }
 ]

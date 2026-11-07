@@ -11,6 +11,30 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-keycloak-26-6-9-security-update-to-86f165d5",
+    "title": "Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability",
+    "summary": "Red Hat released a security update for Keycloak 26.6.9, fixing a flaw that could let attackers gain unauthorized access or elevate privileges within deployments. The vulnerability affects both standard and containerized installations, potentially impacting OpenShift and Kubernetes environments. Administrators should download the updated packages or pull the new images from the Red Customer Portal and redeploy Keycloak to maintain security.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96039",
+    "publishedAt": "2026-11-07T14:49:00.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96040"
+      }
+    ],
+    "aliases": [
+      "red-hat-issues-keycloak-26-6-9-security-update-to",
+      "article-86f165d5",
+      "86f165d5",
+      "red-hat-issues-keycloak-26-6-9-security-update-to-37d7e0",
+      "red-hat-issues-keycloak-26-6-9-security-update-to-mitigate-p"
+    ]
+  },
+  {
     "slug": "ctm360-exposes-fake-gift-card-scam-tactics-b4921fb8",
     "title": "CTM360 Exposes Fake Gift Card Scam Tactics",
     "summary": "CTM360 uncovered a series of fake gift card scams that impersonate well-known brands and celebrities to trick consumers into providing personal data. The campaigns use deceptive verification steps and affiliate networks to harvest information and trigger unwanted subscriptions, exploiting social engineering rather than technical vulnerabilities. Security teams should educate users about verifying legitimate offers and monitor for unauthorized subscription charges.",
@@ -5687,22 +5711,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "french-bank-heist-steals-133-million-via-supplier-7e786033",
-    "title": "French Bank Heist Steals $133 Million via Supplier Breach",
-    "summary": "Crédit Mutuel Arkéa confirmed a cyber heist that transferred about $133 million using the bank’s account after compromising a supplier. Attackers used the supplier’s credentials to authenticate with the bank’s transfer system, enabling unauthorized fund movements without triggering fraud alerts. Bank officials are tightening supplier access controls, reviewing transaction monitoring, and notifying regulators while investigating the breach.",
+    "slug": "cr-dit-mutuel-ark-a-133m-heist-via-supplier-breach-32ba0218",
+    "title": "Crédit Mutuel Arkéa $133M Heist via Supplier Breach",
+    "summary": "Crédit Mutuel Arkéa suffered a $133 million cyber heist that exploited a supplier’s credentials to access the bank’s transfer system. Attackers leveraged the supplier’s privileged access to move funds without triggering fraud alerts, draining the bank’s accounts undetected. The bank has suspended affected systems, tightened supplier controls, and is conducting a forensic investigation while notifying regulators.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "The Record",
     "sourceUrl": "https://therecord.media/french-bank-confirms-cyber-heist",
     "publishedAt": "2026-11-04T18:58:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/"
+      }
+    ],
     "aliases": [
-      "french-bank-heist-steals-133-million-via-supplier",
-      "article-7e786033",
-      "7e786033",
-      "french-bank-heist-steals-133-million-via-supplier-7e17eb",
-      "french-bank-heist-steals-133-million-via-supplier-breach"
+      "cr-dit-mutuel-ark-a-133m-heist-via-supplier-breach",
+      "article-32ba0218",
+      "32ba0218",
+      "cr-dit-mutuel-ark-a-133m-heist-via-supplier-breach-7e17eb"
     ]
   },
   {
@@ -9592,24 +9620,6 @@ export const news: NewsBrief[] = [
       "6b28e205",
       "sogo-vulnerability-enables-password-reset-token-th-7fbb9e",
       "sogo-vulnerability-enables-password-reset-token-theft"
-    ]
-  },
-  {
-    "slug": "shapelib-shpsort-double-free-vulnerability-51438691",
-    "title": "Shapelib Shpsort Double Free Vulnerability",
-    "summary": "Ubuntu identified a double‑free flaw in the shpsort utility of Shapelib, a library used for handling shapefile data. Improper input validation can trigger a double free, potentially leading to denial of service or arbitrary code execution if an attacker supplies crafted data. Ubuntu recommends applying the latest Shapelib update or patching the library to eliminate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8992-1",
-    "publishedAt": "2026-11-03T17:38:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "shapelib-shpsort-double-free-vulnerability",
-      "article-51438691",
-      "51438691",
-      "shapelib-shpsort-double-free-vulnerability-7fbba1"
     ]
   }
 ];
