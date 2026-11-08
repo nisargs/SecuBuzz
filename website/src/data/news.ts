@@ -32,21 +32,26 @@ export const news: NewsBrief[] = [
   },
   {
     "slug": "iris-ohyama-cloud-breach-exposes-7-7-million-custo-f2e31ab0",
-    "title": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customers",
-    "summary": "Iris Ohyama disclosed that unauthorized access to a third‑party cloud service may have exposed personal data of roughly 7.7 million customers. The breach leaked identifiers, contact details, and purchase histories, but no financial fraud or credential theft has been reported. Affected users were advised to monitor accounts, change passwords, and Iris Ohyama notified regulators while conducting a forensic investigation.",
+    "title": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customer Records",
+    "summary": "Iris Ohyama suffered a cloud breach that exposed 7.7 million customer records, including identifiers, contact details, and purchase histories. The unauthorized access originated from a third‑party cloud service, with no evidence of financial fraud or credential theft reported. Iris Ohyama notified regulators, advised affected users to monitor accounts and change passwords, and is conducting a forensic investigation.",
     "category": "Breach",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
     "publishedAt": "2026-11-08T15:43:08.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/iris-ohyama-data-cloud-breach-exposes-info-of-7-7-milli"
+      }
+    ],
     "aliases": [
       "iris-ohyama-cloud-breach-exposes-7-7-million-custo",
       "article-f2e31ab0",
       "f2e31ab0",
       "iris-ohyama-cloud-breach-exposes-7-7-million-custo-777175",
-      "iris-ohyama-cloud-breach-exposes-7-7-million-customers"
+      "iris-ohyama-cloud-breach-exposes-7-7-million-customer-record"
     ]
   },
   {

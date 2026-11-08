@@ -18,9 +18,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-    "title": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customers",
-    "headline": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customers",
-    "summary": "Iris Ohyama disclosed that unauthorized access to a third‑party cloud service may have exposed personal data of roughly 7.7 million customers. The breach leaked identifiers, contact details, and purchase histories, but no financial fraud or credential theft has been reported. Affected users were advised to monitor accounts, change passwords, and Iris Ohyama notified regulators while conducting a forensic investigation.",
+    "title": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customer Records",
+    "headline": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customer Records",
+    "summary": "Iris Ohyama suffered a cloud breach that exposed 7.7 million customer records, including identifiers, contact details, and purchase histories. The unauthorized access originated from a third‑party cloud service, with no evidence of financial fraud or credential theft reported. Iris Ohyama notified regulators, advised affected users to monitor accounts and change passwords, and is conducting a forensic investigation.",
     "category": "BREACH",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -29,7 +29,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/iris-ohyama-data-cloud-breach-exposes-info-of-7-7-milli"
+      }
+    ]
   },
   {
     "id": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",

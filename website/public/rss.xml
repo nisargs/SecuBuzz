@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2026 18:42:59 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 19:43:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Honeypots Detect Rising SSHole Exploit Attempts</title>
@@ -17,10 +17,10 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Iris Ohyama Cloud Breach Exposes 7.7 Million Customers</title>
+      <title>Iris Ohyama Cloud Breach Exposes 7.7 Million Customer Records</title>
       <link>https://secubuzz.com/news/iris-ohyama-cloud-breach-exposes-7-7-million-custo-f2e31ab0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/iris-ohyama-cloud-breach-exposes-7-7-million-custo-f2e31ab0</guid>
-      <description><![CDATA[Iris Ohyama disclosed that unauthorized access to a third‑party cloud service may have exposed personal data of roughly 7.7 million customers. The breach leaked identifiers, contact details, and purchase histories, but no financial fraud or credential theft has been reported. Affected users were advised to monitor accounts, change passwords, and Iris Ohyama notified regulators while conducting a forensic investigation.]]></description>
+      <description><![CDATA[Iris Ohyama suffered a cloud breach that exposed 7.7 million customer records, including identifiers, contact details, and purchase histories. The unauthorized access originated from a third‑party cloud service, with no evidence of financial fraud or credential theft reported. Iris Ohyama notified regulators, advised affected users to monitor accounts and change passwords, and is conducting a forensic investigation.]]></description>
       <pubDate>Sun, 08 Nov 2026 15:43:08 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/">BleepingComputer</source>
       <category>Breach</category>
