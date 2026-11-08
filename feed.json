@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/",
+    "title": "Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe",
+    "headline": "Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe",
+    "summary": "European retailers’ refrigeration systems were hit by cyberattacks exploiting CVE‑2026‑96951, granting attackers unauthorized control over temperature settings. The flaw allows remote code execution through malformed configuration files, and a public PoC shows attackers can alter cooling cycles, risking spoilage. Patch Tuesday will deliver a fix; security teams should apply it promptly and monitor logs for anomalous temperature changes.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-08T09:00:21.000Z",
+    "ingestedAt": "2026-11-08T09:43:07.935Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybernewsai.com/blog/artex-abuse-expands-as-cybercriminals-target-financial",
     "sourceUrl": "https://cybernewsai.com/blog/artex-abuse-expands-as-cybercriminals-target-financial",
     "title": "Storm-3358 Exploits SSRF and File Upload in ARTEX",
@@ -8337,22 +8353,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://socket.dev/blog/hardening-github-actions-against-outside-threats",
-    "additionalSources": []
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-8994-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8994-1",
-    "title": "Ubuntu libvips Vulnerabilities Exploit Integer Overflows",
-    "headline": "Ubuntu libvips Vulnerabilities Exploit Integer Overflows",
-    "summary": "Ubuntu users face multiple libvips vulnerabilities that allow attackers to exploit integer overflows during PDF and GIF processing. CVE-2025-59933 and CVE-2026-33327 trigger crashes or potential arbitrary code execution on affected Ubuntu releases, with CVSS scores indicating high severity. Canonical recommends applying the latest libvips updates via package manager or installing the security patches released in USN-8994-1.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-03T17:39:43.000Z",
-    "ingestedAt": "2026-11-03T19:43:51.376Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-8994-1",
     "additionalSources": []
   }
 ]

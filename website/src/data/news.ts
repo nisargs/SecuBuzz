@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "refrigeration-attacks-exploit-cve-2026-96951-in-eu-50387730",
+    "title": "Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe",
+    "summary": "European retailers’ refrigeration systems were hit by cyberattacks exploiting CVE‑2026‑96951, granting attackers unauthorized control over temperature settings. The flaw allows remote code execution through malformed configuration files, and a public PoC shows attackers can alter cooling cycles, risking spoilage. Patch Tuesday will deliver a fix; security teams should apply it promptly and monitor logs for anomalous temperature changes.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/",
+    "publishedAt": "2026-11-08T09:00:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "refrigeration-attacks-exploit-cve-2026-96951-in-eu",
+      "article-50387730",
+      "50387730",
+      "refrigeration-attacks-exploit-cve-2026-96951-in-eu-2f268a",
+      "refrigeration-attacks-exploit-cve-2026-96951-in-europe"
+    ]
+  },
+  {
     "slug": "storm-3358-exploits-ssrf-and-file-upload-in-artex-75f2b7f0",
     "title": "Storm-3358 Exploits SSRF and File Upload in ARTEX",
     "summary": "Storm-3358 attackers exploited SSRF and file upload flaws in ARTEX. The flaw allows unauthenticated remote code execution via crafted HTTP requests, enabling attackers to read internal resources and upload malicious payloads, potentially compromising system integrity. ARTEX has released a patch that validates input paths and restricts file types; security teams should apply the update immediately and enforce strict upload policies.",
@@ -9601,28 +9620,6 @@ export const news: NewsBrief[] = [
       "article-0ac64a7d",
       "0ac64a7d",
       "secure-github-actions-against-supply-chain-threats-4eba51"
-    ]
-  },
-  {
-    "slug": "ubuntu-libvips-vulnerabilities-exploit-integer-ove-7579da09",
-    "title": "Ubuntu libvips Vulnerabilities Exploit Integer Overflows",
-    "summary": "Ubuntu users face multiple libvips vulnerabilities that allow attackers to exploit integer overflows during PDF and GIF processing. CVE-2025-59933 and CVE-2026-33327 trigger crashes or potential arbitrary code execution on affected Ubuntu releases, with CVSS scores indicating high severity. Canonical recommends applying the latest libvips updates via package manager or installing the security patches released in USN-8994-1.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8994-1",
-    "publishedAt": "2026-11-03T17:39:43.000Z",
-    "cves": [
-      "CVE-2025-59933",
-      "CVE-2026-33327"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-libvips-vulnerabilities-exploit-integer-ove",
-      "article-7579da09",
-      "7579da09",
-      "ubuntu-libvips-vulnerabilities-exploit-integer-ove-7fbb9a",
-      "ubuntu-libvips-vulnerabilities-exploit-integer-overflows"
     ]
   }
 ];

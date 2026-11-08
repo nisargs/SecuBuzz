@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2026 08:42:58 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 09:44:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe</title>
+      <link>https://secubuzz.com/news/refrigeration-attacks-exploit-cve-2026-96951-in-eu-50387730</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/refrigeration-attacks-exploit-cve-2026-96951-in-eu-50387730</guid>
+      <description><![CDATA[European retailers’ refrigeration systems were hit by cyberattacks exploiting CVE‑2026‑96951, granting attackers unauthorized control over temperature settings. The flaw allows remote code execution through malformed configuration files, and a public PoC shows attackers can alter cooling cycles, risking spoilage. Patch Tuesday will deliver a fix; security teams should apply it promptly and monitor logs for anomalous temperature changes.]]></description>
+      <pubDate>Sun, 08 Nov 2026 09:00:21 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Storm-3358 Exploits SSRF and File Upload in ARTEX</title>
       <link>https://secubuzz.com/news/storm-3358-exploits-ssrf-and-file-upload-in-artex-75f2b7f0</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[Researchers showed a method that pinpoints a recording’s location by analyzing faint airplane sounds in its background. The technique uses Doppler curves to track frequency shifts as aircraft pass overhead, enabling triangulation of the source. Although academically interesting, the method raises privacy concerns for creators who may inadvertently disclose their location through ambient audio.]]></description>
       <pubDate>Fri, 06 Nov 2026 14:57:48 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Trezor Implant, LLMJacking, SAP Flaws Weaponized</title>
-      <link>https://secubuzz.com/news/trezor-implant-llmjacking-sap-flaws-weaponized-5d6c32a5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/trezor-implant-llmjacking-sap-flaws-weaponized-5d6c32a5</guid>
-      <description><![CDATA[The report highlights multiple emerging threats, including a Trezor hardware wallet implant, LLMJacking ransomware billing at $1M, and SAP vulnerabilities weaponized within days. Additionally, Synology warns of NAS ransomware attacks, Flowise 'hello' attacks exploit, and Chainalysis breach impacts expanding across customers. Security teams should review detection rules, apply vendor patches, and monitor for credential theft to mitigate these risks.]]></description>
-      <pubDate>Fri, 06 Nov 2026 14:40:09 GMT</pubDate>
-      <source url="https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/">SecurityWeek</source>
       <category>General</category>
     </item>
   </channel>
