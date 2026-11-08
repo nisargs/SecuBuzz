@@ -133,7 +133,11 @@
       - D1 database alignment: Cleaned all 4 historical rows in D1 `articles` table with prompt leakage (0 rows remaining).
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a19f15-a1ef-74e1-b1bd-c9f65a3e9271` / Group `af00a700-1db5-4edb-8a95-8c84de403d2f` / Worker `24683136-c90c-4a94-8b42-67fd5b47232d`):**
+- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `670eb43b-dc98-4324-8b8e-73c84a0c90da`):**
+  - **My Stack Cross-Tab Auto-Filtering & Bottom Pill Toast (Nov 8, 2026)**:
+    - **Instant Feed Pivot**: Tapping "Add to My Stack" or "Add to CVE Watchlist" on an entity chip in `ArticleCard` or `CveCard` immediately activates the `MY_STACK` source filter on the active screen and scrolls to top (`index: 0`).
+    - **Shared Cross-Tab Stack Filter**: Added `isStackFilterActive` and `setStackFilterActive` to `MyStackContext`. Activating My Stack on Briefs automatically synchronizes to Advisories (and vice versa), so switching tabs preserves the active stack lens with zero manual re-selection.
+    - **High-Contrast Bottom Pill Toast**: Relocated confirmation toast from top status bar (`top: 46/56`) to float directly above the bottom tab bar (`bottom: insets.bottom + 66px`). Upgraded chassis to solid obsidian `#111622` (light: `#FFFFFF`) with 1.5px accent border (`${accentColor}80`), 12 elevation, and smooth bottom-up slide animation (`translateY: 16 -> 0 -> 12`).
   - **Server-Side My Stack & CVE Watchlist Push Targeting (Nov 2, 2026)**:
     - **Zero-Leakage On-Call Pager Mode**: Eliminates background push leakage where Android OS bypassed foreground handlers. The ingestion dispatcher evaluates stories server-side against the device's selected enterprise vendors and watched CVEs before delivering FCM messages.
     - **Real-Time Client Stack Sync**: Mobile app automatically synchronizes stack modifications (adding, deselecting, or clearing vendors/CVEs) to Cloudflare D1 with zero account friction.
