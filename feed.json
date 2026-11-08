@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://isc.sans.edu/diary/rss/33498",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33498",
+    "title": "Honeypots Detect Rising SSHole Exploit Attempts",
+    "headline": "Honeypots Detect Rising SSHole Exploit Attempts",
+    "summary": "Honeypot operators using Cowrie have observed a surge in attempts to exploit the SSHole vulnerability in SSH servers. The flaw, identified as CVE-2026-123158, allows attackers to bypass authentication by sending malformed SSH packets, though no confirmed remote code execution has been reported. Security teams should apply vendor‑issued patches or disable unused SSH services, and monitor for anomalous authentication traffic.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "publishedAt": "2026-11-08T15:44:33.000Z",
+    "ingestedAt": "2026-11-08T16:16:30.787Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://isc.sans.edu/diary/rss/33498",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+    "title": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customers",
+    "headline": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customers",
+    "summary": "Iris Ohyama disclosed that unauthorized access to a third‑party cloud service may have exposed personal data of roughly 7.7 million customers. The breach leaked identifiers, contact details, and purchase histories, but no financial fraud or credential theft has been reported. Affected users were advised to monitor accounts, change passwords, and Iris Ohyama notified regulators while conducting a forensic investigation.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-08T15:43:08.000Z",
+    "ingestedAt": "2026-11-08T16:16:30.787Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
     "sourceUrl": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
     "title": "Brava Security Raises 15 Million Exiting Stealth Mode",
@@ -8318,41 +8350,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://developer.apple.com/news/releases/?id=11032026b",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:94630",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94630",
-    "title": "RHSA-2026:94630: Important: dpdk security update",
-    "headline": "RHSA-2026:94630: Important: dpdk security update",
-    "summary": "An update for dpdk is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-03T17:54:39.000Z",
-    "ingestedAt": "2026-11-03T18:44:07.223Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks",
-    "sourceUrl": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks",
-    "title": "Europe‑wide Fridge Control Attacks Spoil Grocery Stock",
-    "headline": "Europe‑wide Fridge Control Attacks Spoil Grocery Stock",
-    "summary": "Supermarket and grocery refrigerator controls across Europe were compromised, marking a second wave of attacks that defrosted fridges and spoiled inventory. Unidentified actors exploited a remote control vulnerability in IoT refrigeration systems, enabling unauthorized temperature manipulation and causing significant product loss. Operators should apply vendor firmware updates, enforce network segmentation, and monitor anomalous temperature changes to mitigate future incidents.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "The Record",
-    "publishedAt": "2026-11-03T17:43:00.000Z",
-    "ingestedAt": "2026-11-03T18:44:55.162Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks",
     "additionalSources": []
   }
 ]
