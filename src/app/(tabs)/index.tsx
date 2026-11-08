@@ -128,6 +128,17 @@ export default function FeedScreen() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (myStack.isStackFilterActive) {
+      if (sourceFilter !== 'MY_STACK') {
+        setSourceFilter('MY_STACK');
+        listRef.current?.scrollToOffset({ offset: 0, animated: false });
+      }
+    } else if (sourceFilter === 'MY_STACK') {
+      setSourceFilter('ALL');
+    }
+  }, [myStack.isStackFilterActive]);
+
   const isAnyFilterActive =
     filter !== 'ALL' || severityFilter !== 'ALL' || sourceFilter !== 'ALL';
 
@@ -970,6 +981,7 @@ export default function FeedScreen() {
             onPress={() => {
               setFilter('ALL');
               setSeverityFilter('ALL');
+              myStack.setStackFilterActive(false);
               setSourceFilter('ALL');
             }}
             style={styles.clearFilterButton}
@@ -1148,6 +1160,11 @@ export default function FeedScreen() {
                       setSearchOpen(true);
                       setSearchQuery(cve);
                     }}
+                    onFilterMyStack={() => {
+                      myStack.setStackFilterActive(true);
+                      setSourceFilter('MY_STACK');
+                      listRef.current?.scrollToOffset({ offset: 0, animated: true });
+                    }}
                     onSelectCategory={(cat) => {
                       setFilter(cat);
                     }}
@@ -1289,10 +1306,12 @@ export default function FeedScreen() {
         selectedSource={sourceFilter}
         onSelectSource={(src) => {
           setSourceFilter(src);
+          myStack.setStackFilterActive(src === 'MY_STACK');
         }}
         onReset={() => {
           setFilter('ALL');
           setSeverityFilter('ALL');
+          myStack.setStackFilterActive(false);
           setSourceFilter('ALL');
         }}
         totalArticlesCount={articles.length}

@@ -20,6 +20,7 @@ import {
 
 import type { Article } from '../models/article';
 import type { CveAdvisory } from '../models/cve';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTheme } from './ThemeContext';
 import { haptics } from '../utils/haptics';
 import { getVendorFromSource } from '../utils/psirt';
@@ -83,20 +84,24 @@ export type MyStackContextValue = {
   matchesArticle: (article: Article) => boolean;
   matchesAdvisory: (advisory: CveAdvisory) => boolean;
   showToast: (message: string) => void;
+  isStackFilterActive: boolean;
+  setStackFilterActive: (active: boolean) => void;
 };
 
 const MyStackContext = createContext<MyStackContextValue | null>(null);
 
 export function MyStackProvider({ children }: { children: ReactNode }) {
   const { colors, accentColor, isDark } = useTheme();
+  const insets = useSafeAreaInsets();
   const [selectedVendors, setSelectedVendors] = useState<string[]>([]);
   const [watchedCves, setWatchedCves] = useState<string[]>([]);
+  const [isStackFilterActive, setStackFilterActive] = useState(false);
   const [isHydrated, setIsHydrated] = useState(false);
 
   // Global acknowledgement toast banner state
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const toastOpacity = useRef(new Animated.Value(0)).current;
-  const toastTranslateY = useRef(new Animated.Value(-12)).current;
+  const toastTranslateY = useRef(new Animated.Value(16)).current;
   const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const showToast = useCallback(
@@ -106,7 +111,7 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
       }
       setToastMessage(message);
       toastOpacity.setValue(0);
-      toastTranslateY.setValue(-12);
+      toastTranslateY.setValue(16);
 
       Animated.parallel([
         Animated.timing(toastOpacity, {
@@ -129,7 +134,7 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
             useNativeDriver: true,
           }),
           Animated.timing(toastTranslateY, {
-            toValue: -10,
+            toValue: 12,
             duration: 200,
             useNativeDriver: true,
           }),
@@ -404,6 +409,8 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
       matchesArticle,
       matchesAdvisory,
       showToast,
+      isStackFilterActive,
+      setStackFilterActive,
     }),
     [
       selectedVendors,
@@ -424,6 +431,8 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
       matchesArticle,
       matchesAdvisory,
       showToast,
+      isStackFilterActive,
+      setStackFilterActive,
     ]
   );
 
@@ -439,6 +448,7 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
               {
                 opacity: toastOpacity,
                 transform: [{ translateY: toastTranslateY }],
+                bottom: Math.max(insets.bottom, 12) + (Platform.OS === 'ios' ? 76 : 66),
               },
             ]}
           >
@@ -446,12 +456,12 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
               style={[
                 styles.toastPill,
                 {
-                  backgroundColor: isDark ? '#141A22FA' : '#FFFFFFAA',
-                  borderColor: `${accentColor}55`,
+                  backgroundColor: isDark ? '#111622' : '#FFFFFF',
+                  borderColor: `${accentColor}80`,
                 },
               ]}
             >
-              <Ionicons name="checkmark-circle" size={17} color={accentColor} />
+              <Ionicons name="checkmark-circle" size={18} color={accentColor} />
               <Text
                 style={[
                   styles.toastText,
@@ -459,6 +469,7 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
                     color: colors.textPrimary,
                   },
                 ]}
+                numberOfLines={2}
               >
                 {toastMessage}
               </Text>
@@ -473,29 +484,29 @@ export function MyStackProvider({ children }: { children: ReactNode }) {
 const styles = StyleSheet.create({
   toastContainer: {
     position: 'absolute',
-    top: Platform.OS === 'ios' ? 56 : 46,
-    left: 16,
-    right: 16,
+    left: 20,
+    right: 20,
     zIndex: 999999,
     alignItems: 'center',
   },
   toastPill: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 10,
+    gap: 10,
+    paddingHorizontal: 18,
+    paddingVertical: 12,
     borderRadius: 9999,
-    borderWidth: 1,
+    borderWidth: 1.5,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.35,
-    shadowRadius: 10,
-    elevation: 8,
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.45,
+    shadowRadius: 14,
+    elevation: 12,
   },
   toastText: {
     fontFamily: 'Exo_600SemiBold',
-    fontSize: 13,
+    fontSize: 13.5,
+    letterSpacing: 0.1,
   },
 });
 

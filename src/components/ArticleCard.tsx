@@ -33,6 +33,7 @@ type ArticleCardProps = {
   onSelectSeverity?: (severity: NonNullable<Article['severity']>) => void;
   onSelectCategory?: (category: Article['category']) => void;
   onSearchCve?: (cve: string) => void;
+  onFilterMyStack?: () => void;
 };
 
 function formatCategory(
@@ -135,6 +136,7 @@ export function ArticleCard({
   onSelectSeverity,
   onSelectCategory,
   onSearchCve,
+  onFilterMyStack,
 }: ArticleCardProps) {
   const { colors, isDark, accentColor, severityColors, fontScaleMultiplier } = useTheme();
   const insets = useSafeAreaInsets();
@@ -160,10 +162,10 @@ export function ArticleCard({
     const feedbackText = isCve
       ? isCurrentlyActive
         ? `Removed ${activeEntity.value} from Watchlist`
-        : `Pinned ${activeEntity.value} to Watchlist`
+        : `Pinned ${activeEntity.value} to Watchlist • Feed filtered`
       : isCurrentlyActive
         ? `Removed ${activeEntity.value} from My Stack`
-        : `Added ${activeEntity.value} to My Stack`;
+        : `Added ${activeEntity.value} to My Stack • Feed filtered`;
 
     haptics.notificationSuccess();
     setActionFeedback(feedbackText);
@@ -174,6 +176,9 @@ export function ArticleCard({
       toggleVendor(activeEntity.value);
     }
 
+    if (!isCurrentlyActive) {
+      onFilterMyStack?.();
+    }
     showToast(feedbackText);
 
     setTimeout(() => {

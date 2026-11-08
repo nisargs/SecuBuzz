@@ -108,6 +108,7 @@ type CveCardProps = {
   onSelectSeverity?: (severity: AdvisorySeverity) => void;
   onSelectSource?: (source: AdvisorySource) => void;
   onSearchCve?: (cve: string) => void;
+  onFilterMyStack?: () => void;
 };
 
 function isValidAdvisoryDate(dateStr?: string | null): boolean {
@@ -144,6 +145,7 @@ export function CveCard({
   onSelectSeverity,
   onSelectSource,
   onSearchCve,
+  onFilterMyStack,
 }: CveCardProps) {
   const { colors, isDark, accentColor, severityColors, fontScaleMultiplier } = useTheme();
   const insets = useSafeAreaInsets();
@@ -167,10 +169,10 @@ export function CveCard({
     const feedbackText = isCve
       ? isCurrentlyActive
         ? `Removed ${activeEntity.value} from Watchlist`
-        : `Pinned ${activeEntity.value} to Watchlist`
+        : `Pinned ${activeEntity.value} to Watchlist • Advisories filtered`
       : isCurrentlyActive
         ? `Removed ${activeEntity.value} from My Stack`
-        : `Added ${activeEntity.value} to My Stack`;
+        : `Added ${activeEntity.value} to My Stack • Advisories filtered`;
 
     haptics.notificationSuccess();
     setActionFeedback(feedbackText);
@@ -181,6 +183,9 @@ export function CveCard({
       toggleVendor(activeEntity.value);
     }
 
+    if (!isCurrentlyActive) {
+      onFilterMyStack?.();
+    }
     showToast(feedbackText);
 
     setTimeout(() => {

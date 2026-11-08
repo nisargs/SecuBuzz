@@ -80,6 +80,17 @@ export default function AdvisoriesScreen() {
     useState<AdvisoryEpssFilter>('ALL');
   const [filterModalOpen, setFilterModalOpen] = useState(false);
 
+  useEffect(() => {
+    if (myStack.isStackFilterActive) {
+      if (sourceFilter !== 'MY_STACK') {
+        setSourceFilter('MY_STACK');
+        listRef.current?.scrollToOffset({ offset: 0, animated: false });
+      }
+    } else if (sourceFilter === 'MY_STACK') {
+      setSourceFilter('ALL');
+    }
+  }, [myStack.isStackFilterActive]);
+
   const isAnyFilterActive =
     sourceFilter !== 'ALL' ||
     severityFilter !== 'ALL' ||
@@ -873,6 +884,7 @@ export default function AdvisoriesScreen() {
               setSourceFilter('ALL');
               setSeverityFilter('ALL');
               setEpssFilter('ALL');
+              myStack.setStackFilterActive(false);
             }}
             style={styles.clearFilterButton}
           >
@@ -1013,6 +1025,11 @@ export default function AdvisoriesScreen() {
                     onSelectSource={(src) =>
                       setSourceFilter(src === 'CISA KEV' ? 'CISA' : 'GITHUB')
                     }
+                    onFilterMyStack={() => {
+                      myStack.setStackFilterActive(true);
+                      setSourceFilter('MY_STACK');
+                      listRef.current?.scrollToOffset({ offset: 0, animated: true });
+                    }}
                     onSearchCve={(cveOrVendor: string) => {
                       setSearchOpen(true);
                       setSearchQuery(cveOrVendor);
@@ -1119,7 +1136,10 @@ export default function AdvisoriesScreen() {
         visible={filterModalOpen}
         onClose={() => setFilterModalOpen(false)}
         selectedSource={sourceFilter}
-        onSelectSource={setSourceFilter}
+        onSelectSource={(src) => {
+          setSourceFilter(src);
+          myStack.setStackFilterActive(src === 'MY_STACK');
+        }}
         selectedSeverity={severityFilter}
         onSelectSeverity={setSeverityFilter}
         selectedEpss={epssFilter}
@@ -1128,6 +1148,7 @@ export default function AdvisoriesScreen() {
           setSourceFilter('ALL');
           setSeverityFilter('ALL');
           setEpssFilter('ALL');
+          myStack.setStackFilterActive(false);
         }}
         totalCount={advisories.length}
         filteredCount={filteredAdvisories.length}
