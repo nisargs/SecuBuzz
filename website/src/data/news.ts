@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "brava-security-raises-15-million-exiting-stealth-m-e53a4ad0",
+    "title": "Brava Security Raises 15 Million Exiting Stealth Mode",
+    "summary": "Cybersecurity startup Brava Security has emerged from stealth mode following a 15 million dollar funding round. The vendor offers a multi-agent AI platform engineered to simulate attack activity by generating realistic threat telemetry. Security teams can utilize this generated telemetry mechanism to identify and resolve defensive coverage gaps across enterprise environments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+    "publishedAt": "2026-11-08T12:14:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "brava-security-raises-15-million-exiting-stealth-m",
+      "article-e53a4ad0",
+      "e53a4ad0",
+      "brava-security-raises-15-million-exiting-stealth-m-2d4f29",
+      "brava-security-raises-15-million-exiting-stealth-mode"
+    ]
+  },
+  {
     "slug": "refrigeration-attacks-exploit-cve-2026-96951-in-eu-50387730",
     "title": "Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe",
     "summary": "European retailers’ refrigeration systems were hit by cyberattacks exploiting CVE‑2026‑96951, granting attackers unauthorized control over temperature settings. The flaw allows remote code execution through malformed configuration files, and a public PoC shows attackers can alter cooling cycles, risking spoilage. Patch Tuesday will deliver a fix; security teams should apply it promptly and monitor logs for anomalous temperature changes.",
@@ -9602,24 +9621,6 @@ export const news: NewsBrief[] = [
       "6f1889d7",
       "europe-wide-fridge-control-attacks-spoil-grocery-s-42810f",
       "europe-wide-fridge-control-attacks-spoil-grocery-stock"
-    ]
-  },
-  {
-    "slug": "secure-github-actions-against-supply-chain-threats-0ac64a7d",
-    "title": "Secure GitHub Actions Against Supply Chain Threats",
-    "summary": "This guide tackles supply‑chain threats to GitHub Actions, covering malicious pull requests, credential theft, dependency risks, and release pipeline vulnerabilities. It explains how insecure workflow configurations and unverified third‑party actions enable attackers to inject malicious code or exfiltrate secrets. The article recommends restricting workflow permissions, using signed actions, scanning dependencies, and monitoring pipeline activity to mitigate risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/hardening-github-actions-against-outside-threats",
-    "publishedAt": "2026-11-03T17:41:44.155Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "secure-github-actions-against-supply-chain-threats",
-      "article-0ac64a7d",
-      "0ac64a7d",
-      "secure-github-actions-against-supply-chain-threats-4eba51"
     ]
   }
 ];

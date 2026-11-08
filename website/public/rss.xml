@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2026 11:43:04 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 12:43:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Brava Security Raises 15 Million Exiting Stealth Mode</title>
+      <link>https://secubuzz.com/news/brava-security-raises-15-million-exiting-stealth-m-e53a4ad0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/brava-security-raises-15-million-exiting-stealth-m-e53a4ad0</guid>
+      <description><![CDATA[Cybersecurity startup Brava Security has emerged from stealth mode following a 15 million dollar funding round. The vendor offers a multi-agent AI platform engineered to simulate attack activity by generating realistic threat telemetry. Security teams can utilize this generated telemetry mechanism to identify and resolve defensive coverage gaps across enterprise environments.]]></description>
+      <pubDate>Sun, 08 Nov 2026 12:14:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/">SecurityWeek</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe</title>
       <link>https://secubuzz.com/news/refrigeration-attacks-exploit-cve-2026-96951-in-eu-50387730</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[Mobile devices transmit IMSI and IMEI identifiers to cellular networks, allowing operators to track device location and authenticate subscribers. Attackers can harvest these IDs through network sniffing or malicious apps, enabling targeted tracking or spoofing of device identity. Rotating the IMSI periodically or using privacy‑enhancing SIMs can mitigate tracking risks, while IMEI remains static and less exploitable.]]></description>
       <pubDate>Fri, 06 Nov 2026 15:00:10 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Locating Videos via Background Airplane Sounds</title>
-      <link>https://secubuzz.com/news/locating-videos-via-background-airplane-sounds-b8b292a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/locating-videos-via-background-airplane-sounds-b8b292a2</guid>
-      <description><![CDATA[Researchers showed a method that pinpoints a recording’s location by analyzing faint airplane sounds in its background. The technique uses Doppler curves to track frequency shifts as aircraft pass overhead, enabling triangulation of the source. Although academically interesting, the method raises privacy concerns for creators who may inadvertently disclose their location through ambient audio.]]></description>
-      <pubDate>Fri, 06 Nov 2026 14:57:48 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html">Schneier on Security</source>
       <category>General</category>
     </item>
   </channel>
