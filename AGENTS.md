@@ -448,12 +448,20 @@
 ## 15. Active Session State & Next Conversation Reminders (Permanent Memory)
 - **Mandatory Next-Conversation Reminder Protocol**:
   - *When the user opens chat next time, immediately greet and remind them about*:
-    1. **CVE Watchlist Implementation (v1.0.4 / Version Code 10)**:
-       - Ready to build local-first state (`AsyncStorage` on mobile, `localStorage` on web).
-       - Zero-account architecture: Google Play In-App Billing handles "Pro" entitlements anonymously via Google accounts without requiring database auth.
-       - Target release: Later this week (7–10 days post-v1.0.3) for an optimal Google Play update cadence.
-    2. **Parked Discussion: Article Detail Page Deep-Dive Intelligence**:
-       - Revisit what extra value detail pages can provide beyond the 60-word feed brief (interactive EPSS likelihood meter, leak checker/PSIRT links, discovery vector micro-intel).
+    1. **Expo SDK 58 Migration (Slated for Release v1.1.0)**:
+       - User decided to pause and tackle later when in the mood.
+       - Execution steps: Check phone's Expo Go SDK version -> create branch `feature/expo-sdk-58` -> run `npx expo install expo@^58.0.0 --fix` -> verify via `npm run typecheck` & Fast Refresh -> EAS native `.aab` release build (`version: 1.1.0`, `versionCode: 11`) for Google Play.
+       - Unlocks: Native Android Home Screen widgets (`expo-widgets`), 50% faster build times, `expo-notifications` `largeIcon` drawer branding, React Native 0.88 performance.
+    2. **Parked Feature: Cybersecurity Conferences & Events Hub**:
+       - Clean, filterable directory of upcoming 2026 infosec events (DEF CON, Black Hat, BSides, RSA), CFP dates, and ticket links.
+       - Non-intrusive value add with natural partnership / affiliate potential (0 ads, 0 paywalls).
+    3. **Parked Tool: OpenSEO (`every-app/open-seo`) Integration (Remind at correct time)**:
+       - Saved in memory: Open-source, self-hostable Ahrefs/Semrush alternative using DataForSEO API ($50 deposit) + TypeScript / Cloudflare / MCP native.
+       - *Trigger to remind user*: When we launch large-scale web directories (like the Conferences Hub or CVE directory) that need competitive Google search keyword tracking.
+    4. **Parked Tool: SecuBuzz Threat Intel / IOC Radar (IP & Domain Reputation)**:
+       - Evaluated from user's Discord bot. Standalone lookup page (`/tools/lookup`) with dark-mode telemetry card + quick mobile triage bottom sheet.
+       - High-limit & keyless architecture: Shodan InternetDB (open ports + CVEs, 0 keys, 100% free) + RDAP (`rdap.org`, WHOIS, 0 keys) + IP-API (ISP/geo, 0 keys) + AbuseIPDB + 24-72h Cloudflare edge cache.
+       - High evergreen SEO value driving organic web visitors to the Google Play Store app.
 - **Recent Production Deployments Record**:
   - **Website Navigation, Filter Sorting & Copy Modernization (Oct 28, 2026)**:
     - Alphabetical Category Sorting: Scoped and sorted the Category dropdown in `website/src/pages/News.tsx` alphabetically (`Breach`, `CVE`, `General`, `Nation State`, `Ransomware`, `Vulnerability`) using `localeCompare`.
