@@ -2,18 +2,26 @@
   {
     "id": "https://isc.sans.edu/diary/rss/33498",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33498",
-    "title": "Honeypots Detect Rising SSHole Exploit Attempts",
-    "headline": "Honeypots Detect Rising SSHole Exploit Attempts",
-    "summary": "Honeypot operators using Cowrie have observed a surge in attempts to exploit the SSHole vulnerability in SSH servers. The flaw, identified as CVE-2026-123158, allows attackers to bypass authentication by sending malformed SSH packets, though no confirmed remote code execution has been reported. Security teams should apply vendor‑issued patches or disable unused SSH services, and monitor for anomalous authentication traffic.",
+    "title": "OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released",
+    "headline": "OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released",
+    "summary": "OpenSSH's SSHole authentication bypass (CVE-2026-123158) allows attackers to gain root on Alpine Linux by submitting oversized passwords. The flaw exploits improper length validation in the password handling routine, enabling unauthenticated remote code execution with a CVSS score of 9.8. Administrators should apply the vendor‑issued patch immediately or upgrade to the latest release to mitigate the vulnerability.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
     "publishedAt": "2026-11-08T15:44:33.000Z",
     "ingestedAt": "2026-11-08T16:16:30.787Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://isc.sans.edu/diary/rss/33498",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-123158-openssh-sshole-auth-bypass-defense"
+      }
+    ],
+    "cves": [
+      "CVE-2026-123158"
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",

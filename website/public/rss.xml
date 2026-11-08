@@ -5,13 +5,13 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2026 19:43:12 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 20:33:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Honeypots Detect Rising SSHole Exploit Attempts</title>
-      <link>https://secubuzz.com/news/honeypots-detect-rising-sshole-exploit-attempts-2d3fe3a5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/honeypots-detect-rising-sshole-exploit-attempts-2d3fe3a5</guid>
-      <description><![CDATA[Honeypot operators using Cowrie have observed a surge in attempts to exploit the SSHole vulnerability in SSH servers. The flaw, identified as CVE-2026-123158, allows attackers to bypass authentication by sending malformed SSH packets, though no confirmed remote code execution has been reported. Security teams should apply vendor‑issued patches or disable unused SSH services, and monitor for anomalous authentication traffic.]]></description>
+      <title>OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released</title>
+      <link>https://secubuzz.com/news/openssh-sshole-authentication-bypass-vulnerability-acbc22ef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssh-sshole-authentication-bypass-vulnerability-acbc22ef</guid>
+      <description><![CDATA[OpenSSH's SSHole authentication bypass (CVE-2026-123158) allows attackers to gain root on Alpine Linux by submitting oversized passwords. The flaw exploits improper length validation in the password handling routine, enabling unauthenticated remote code execution with a CVSS score of 9.8. Administrators should apply the vendor‑issued patch immediately or upgrade to the latest release to mitigate the vulnerability.]]></description>
       <pubDate>Sun, 08 Nov 2026 15:44:33 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33498">SANS Internet Storm Center</source>
       <category>CVE</category>

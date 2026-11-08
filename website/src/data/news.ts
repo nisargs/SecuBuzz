@@ -11,23 +11,29 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "honeypots-detect-rising-sshole-exploit-attempts-2d3fe3a5",
-    "title": "Honeypots Detect Rising SSHole Exploit Attempts",
-    "summary": "Honeypot operators using Cowrie have observed a surge in attempts to exploit the SSHole vulnerability in SSH servers. The flaw, identified as CVE-2026-123158, allows attackers to bypass authentication by sending malformed SSH packets, though no confirmed remote code execution has been reported. Security teams should apply vendor‑issued patches or disable unused SSH services, and monitor for anomalous authentication traffic.",
+    "slug": "openssh-sshole-authentication-bypass-vulnerability-acbc22ef",
+    "title": "OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released",
+    "summary": "OpenSSH's SSHole authentication bypass (CVE-2026-123158) allows attackers to gain root on Alpine Linux by submitting oversized passwords. The flaw exploits improper length validation in the password handling routine, enabling unauthenticated remote code execution with a CVSS score of 9.8. Administrators should apply the vendor‑issued patch immediately or upgrade to the latest release to mitigate the vulnerability.",
     "category": "CVE",
-    "severity": "MEDIUM",
+    "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33498",
     "publishedAt": "2026-11-08T15:44:33.000Z",
     "cves": [
       "CVE-2026-123158"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-123158-openssh-sshole-auth-bypass-defense"
+      }
+    ],
     "aliases": [
-      "honeypots-detect-rising-sshole-exploit-attempts",
-      "article-2d3fe3a5",
-      "2d3fe3a5",
-      "honeypots-detect-rising-sshole-exploit-attempts-57dd7e"
+      "openssh-sshole-authentication-bypass-vulnerability",
+      "article-acbc22ef",
+      "acbc22ef",
+      "openssh-sshole-authentication-bypass-vulnerability-57dd7e",
+      "openssh-sshole-authentication-bypass-vulnerability-cve-2026-"
     ]
   },
   {
