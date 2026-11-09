@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2026 23:43:06 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:43:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released</title>
