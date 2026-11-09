@@ -2,9 +2,9 @@
   {
     "id": "https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/",
     "sourceUrl": "https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/",
-    "title": "Arctic Wolf and AWS Enhance Incident Response",
-    "headline": "Arctic Wolf and AWS Enhance Incident Response",
-    "summary": "Arctic Wolf and AWS announced a joint offering that streamlines incident response for cloud‑native environments. The solution integrates Arctic Wolf’s managed detection and response with AWS security services, enabling faster threat containment and automated recovery workflows. Organizations should adopt the combined platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.",
+    "title": "Arctic Wolf and AWS Launch Joint Incident‑Response Platform for Cloud‑Native Environments",
+    "headline": "Arctic Wolf and AWS Launch Joint Incident‑Response Platform for Cloud‑Native Environments",
+    "summary": "Arctic Wolf and AWS unveiled a joint incident‑response platform targeting cloud‑native environments. The solution merges Arctic Wolf’s managed detection and response with AWS security services to accelerate threat containment and automate recovery workflows. Organizations are encouraged to adopt the platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.",
     "category": "GENERAL",
     "severity": "LOW",
     "source": "Arctic Wolf",
@@ -13,7 +13,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Arctic Wolf",
+        "sourceUrl": "https://arcticwolf.com/resources/datasheet/accelerate-incident-response-across-aws-environments/"
+      }
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",

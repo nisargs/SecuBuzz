@@ -77,6 +77,57 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-123218",
+    "slug": "cve-2026-123218",
+    "vendor": "IBM",
+    "product": "Aspera Faspex",
+    "name": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+    "dateAdded": "2026-11-09",
+    "dueDate": "2026-11-12",
+    "severity": "High",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-123218"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-63478",
+    "slug": "cve-2026-63478",
+    "vendor": "npm",
+    "product": "isomorphic-git",
+    "name": "isomorphic-git: Path traversal via a \"..\" tree-entry name writes files outside the working directory on clone/checkout",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "isomorphic-git's tree parser (src/models/GitTree.js) validates each entry name only against the path separators / and \\. It does not reject the standalone reserved name .., so a malicious repository can, on a single clone/checkout, write files outside the working directory (unbounded depth). Works on any host-backed fs provider.",
+    "requiredAction": "Upgrade isomorphic-git to version 1.38.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cw2g-2vwq-88w6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63478"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-63475",
     "slug": "cve-2026-63475",
     "vendor": "npm",
@@ -1423,32 +1474,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119202"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118764",
-    "slug": "cve-2026-118764",
-    "vendor": "npm",
-    "product": "minimatch",
-    "name": "minimatch has potential denial of service via globparts amplification",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-405",
-    "ransomware": false,
-    "description": "minimatch 10.2.6 contains an attacker-controlled pattern amplification in firstPhasePreProcess() when optimizationLevel >= 2. researcher: Reid Downing (b1nv0id) files: - src/index.ts: 690-770 - src/index.ts: 780-796 issue: input-controlled growth of globParts during first-phase preprocessing, followed by quadratic second-phase processing.",
-    "requiredAction": "Upgrade minimatch to version 11.0.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118764"
       }
     ],
     "source": "GITHUB"

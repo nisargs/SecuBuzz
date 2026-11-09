@@ -11,21 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
-    "slug": "arctic-wolf-and-aws-enhance-incident-response-1b420edb",
-    "title": "Arctic Wolf and AWS Enhance Incident Response",
-    "summary": "Arctic Wolf and AWS announced a joint offering that streamlines incident response for cloud‑native environments. The solution integrates Arctic Wolf’s managed detection and response with AWS security services, enabling faster threat containment and automated recovery workflows. Organizations should adopt the combined platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.",
+    "slug": "arctic-wolf-and-aws-launch-joint-incident-response-0c4c03dd",
+    "title": "Arctic Wolf and AWS Launch Joint Incident‑Response Platform for Cloud‑Native Environments",
+    "summary": "Arctic Wolf and AWS unveiled a joint incident‑response platform targeting cloud‑native environments. The solution merges Arctic Wolf’s managed detection and response with AWS security services to accelerate threat containment and automate recovery workflows. Organizations are encouraged to adopt the platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.",
     "category": "General",
     "severity": "LOW",
     "source": "Arctic Wolf",
     "sourceUrl": "https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/",
     "publishedAt": "2026-11-09T19:02:47.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Arctic Wolf",
+        "sourceUrl": "https://arcticwolf.com/resources/datasheet/accelerate-incident-response-across-aws-environments/"
+      }
+    ],
     "aliases": [
-      "arctic-wolf-and-aws-enhance-incident-response",
-      "article-1b420edb",
-      "1b420edb",
-      "arctic-wolf-and-aws-enhance-incident-response-61b6b7"
+      "arctic-wolf-and-aws-launch-joint-incident-response",
+      "article-0c4c03dd",
+      "0c4c03dd",
+      "arctic-wolf-and-aws-launch-joint-incident-response-61b6b7",
+      "arctic-wolf-and-aws-launch-joint-incident-response-platform-"
     ]
   },
   {

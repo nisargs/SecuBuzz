@@ -5,13 +5,13 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 20:01:44 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 20:44:22 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Arctic Wolf and AWS Enhance Incident Response</title>
-      <link>https://secubuzz.com/news/arctic-wolf-and-aws-enhance-incident-response-1b420edb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-and-aws-enhance-incident-response-1b420edb</guid>
-      <description><![CDATA[Arctic Wolf and AWS announced a joint offering that streamlines incident response for cloud‑native environments. The solution integrates Arctic Wolf’s managed detection and response with AWS security services, enabling faster threat containment and automated recovery workflows. Organizations should adopt the combined platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.]]></description>
+      <title>Arctic Wolf and AWS Launch Joint Incident‑Response Platform for Cloud‑Native Environments</title>
+      <link>https://secubuzz.com/news/arctic-wolf-and-aws-launch-joint-incident-response-0c4c03dd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-and-aws-launch-joint-incident-response-0c4c03dd</guid>
+      <description><![CDATA[Arctic Wolf and AWS unveiled a joint incident‑response platform targeting cloud‑native environments. The solution merges Arctic Wolf’s managed detection and response with AWS security services to accelerate threat containment and automate recovery workflows. Organizations are encouraged to adopt the platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.]]></description>
       <pubDate>Mon, 09 Nov 2026 19:02:47 GMT</pubDate>
       <source url="https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/">Arctic Wolf</source>
       <category>General</category>
