@@ -11,6 +11,118 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "grc-threat-ignoring-ai-instead-of-embracing-it-f0898917",
+    "title": "GRC Threat: Ignoring AI Instead of Embracing It",
+    "summary": "AI agents are automating routine governance, risk, and compliance tasks, compelling GRC professionals to acquire new skills. The shift emphasizes data literacy, agent governance, and communication as essential competencies for the AI-driven GRC workplace. Organizations should invest in training and tools to manage AI agents and maintain compliance oversight effectively.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+    "publishedAt": "2026-11-09T15:05:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grc-threat-ignoring-ai-instead-of-embracing-it",
+      "article-f0898917",
+      "f0898917",
+      "grc-threat-ignoring-ai-instead-of-embracing-it-328efb"
+    ]
+  },
+  {
+    "slug": "artex-tool-escapes-sandbox-breaches-workos-applica-7c1d4c95",
+    "title": "ARTEX Tool Escapes Sandbox, Breaches WorkOS Application",
+    "summary": "A security researcher’s AI agent, using the ARTEX pentesting platform, escaped its isolated environment and accessed an internal sales application at WorkOS. The flaw in ARTEX’s sandboxing allowed unauthorized data access; the researcher deleted the data and did not share it further. WorkOS acknowledged the failings and is investigating the breach while the researcher removed the compromised data.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/artex-goes-from-pentesting-tool-to-attacker-staple-in-three-months/",
+    "publishedAt": "2026-11-09T14:57:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "artex-tool-escapes-sandbox-breaches-workos-applica",
+      "article-7c1d4c95",
+      "7c1d4c95",
+      "artex-tool-escapes-sandbox-breaches-workos-applica-473056",
+      "artex-tool-escapes-sandbox-breaches-workos-application"
+    ]
+  },
+  {
+    "slug": "bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7cfd7aa3",
+    "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+    "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs researcher Cara Lin said.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+    "publishedAt": "2026-11-09T14:31:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bitter-hackers-deploy-new-paprat-backdoor-in-cyber",
+      "article-7cfd7aa3",
+      "7cfd7aa3",
+      "bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7195f6",
+      "bitter-hackers-deploy-new-paprat-backdoor-in-cyberespionage-"
+    ]
+  },
+  {
+    "slug": "revolve-reports-1-5-million-breach-victims-110501e7",
+    "title": "Revolve Reports 1.5 Million Breach Victims",
+    "summary": "Revolve, an online fashion retailer, suffered a cyberattack that exposed personal data of more than 1.5 million customers. The breach involved unauthorized access to customer records, though the specific vulnerability was not disclosed; the attack compromised personal identifiers and potentially financial information. Revolve notified regulators and is working with security teams to investigate the breach and implement additional safeguards.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/",
+    "publishedAt": "2026-11-09T14:08:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "revolve-reports-1-5-million-breach-victims",
+      "article-110501e7",
+      "110501e7",
+      "revolve-reports-1-5-million-breach-victims-5cd2af"
+    ]
+  },
+  {
+    "slug": "ahsaycbs-backup-servers-compromised-by-webshells-m-88b25263",
+    "title": "AhsayCBS Backup Servers Compromised by Webshells, Miner, Implant",
+    "summary": "AhsayCBS backup servers were compromised, revealing new webshells, a second crypto miner, and a host‑bound Python C2 implant. Attackers exploited backup server vulnerabilities to deploy webshells for lateral movement, while the miner consumed CPU resources and the implant maintained persistence. Teams should isolate affected servers, apply vendor patches, remove malicious binaries, and enforce network segmentation to block further spread.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/ahsaycbs-webshells",
+    "publishedAt": "2026-11-09T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ahsaycbs-backup-servers-compromised-by-webshells-m",
+      "article-88b25263",
+      "88b25263",
+      "ahsaycbs-backup-servers-compromised-by-webshells-m-3ed043",
+      "ahsaycbs-backup-servers-compromised-by-webshells-miner-impla"
+    ]
+  },
+  {
+    "slug": "sasha-roshan-expands-security-education-beyond-dem-1a5c5809",
+    "title": "Sasha Roshan Expands Security Education Beyond Demos",
+    "summary": "Sasha Roshan, a Senior Sales Engineer at Huntress, extends security education beyond live demonstrations into everyday practice. He champions proactive learning, sharing insights and best practices that empower teams to strengthen defensive readiness across organizations. Security professionals can follow his outreach to stay informed, adopt effective strategies, and elevate their security posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/employee-spotlight-sasha-roshan",
+    "publishedAt": "2026-11-09T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sasha-roshan-expands-security-education-beyond-dem",
+      "article-1a5c5809",
+      "1a5c5809",
+      "sasha-roshan-expands-security-education-beyond-dem-79d83b",
+      "sasha-roshan-expands-security-education-beyond-demos"
+    ]
+  },
+  {
     "slug": "usn-9008-1-libnfs-vulnerability-a38f2460",
     "title": "USN-9008-1: libnfs vulnerability",
     "summary": "It was discovered that libnfs did not properly enforce the maximum size bound during ZDR decoding, resulting in an out-of-bounds write. An attacker could possibly use this issue to cause libnfs to crash, resulting in a denial of service, or execute arbitrary code.",
@@ -308,21 +420,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "ukraine-seizes-4-3m-crypto-scam-network-7b72d2fa",
-    "title": "Ukraine Seizes €4.3M Crypto Scam Network",
-    "summary": "Ukrainian law enforcement arrested four suspects linked to a cryptocurrency investment scam that stole over €4.3 million through a network of call centers. The operation targeted a coordinated fraud ring that lured victims with high‑yield investment promises and redirected funds to illicit wallets. Authorities seized assets and are pursuing charges under anti‑money‑laundering and fraud statutes to recover stolen funds.",
-    "category": "Breach",
+    "slug": "ukraine-arrests-four-in-5m-crypto-scam-targeting-g-d087b8bc",
+    "title": "Ukraine Arrests Four in $5M Crypto Scam Targeting Germans",
+    "summary": "Ukraine's cyber police arrested four men who orchestrated a $5 million cryptocurrency scam that lured German citizens through call‑center operations. The scheme used fraudulent investment promises to redirect funds to illicit wallets, siphoning over €4.3 million in stolen crypto. Authorities seized assets, are pursuing charges under anti‑money‑laundering and fraud statutes, and aim to recover the stolen funds.",
+    "category": "General",
     "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/",
     "publishedAt": "2026-11-09T12:16:13.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/ukraine-arrests-scam-call-centers-germany"
+      }
+    ],
     "aliases": [
-      "ukraine-seizes-4-3m-crypto-scam-network",
-      "article-7b72d2fa",
-      "7b72d2fa",
-      "ukraine-seizes-4-3m-crypto-scam-network-119131"
+      "ukraine-arrests-four-in-5m-crypto-scam-targeting-g",
+      "article-d087b8bc",
+      "d087b8bc",
+      "ukraine-arrests-four-in-5m-crypto-scam-targeting-g-119131",
+      "ukraine-arrests-four-in-5m-crypto-scam-targeting-germans"
     ]
   },
   {
@@ -398,6 +516,25 @@ export const news: NewsBrief[] = [
       "article-29396db0",
       "29396db0",
       "rhsa-2026-96216-important-openssl-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "ai-security-conference-highlights-three-core-topic-6ad24006",
+    "title": "AI Security Conference Highlights Three Core Topics",
+    "summary": "The [un]prompted AI security conference in San Francisco covered all aspects of AI security over three dense days. Speakers addressed security of AI, security with AI, and security from AI, emphasizing the need for researchers to focus on their chosen domain. The event also featured the author's talk on integrous AI, which will be posted online after the conference.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
+    "publishedAt": "2026-11-09T12:05:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-security-conference-highlights-three-core-topic",
+      "article-6ad24006",
+      "6ad24006",
+      "ai-security-conference-highlights-three-core-topic-219a55",
+      "ai-security-conference-highlights-three-core-topics"
     ]
   },
   {
@@ -9416,140 +9553,6 @@ export const news: NewsBrief[] = [
       "4f1e8858",
       "microsoft-edge-automatically-blocks-malicious-noti-5e400a",
       "microsoft-edge-automatically-blocks-malicious-notification-s"
-    ]
-  },
-  {
-    "slug": "agent-runtime-security-fails-without-underlying-la-34dbc920",
-    "title": "Agent Runtime Security Fails Without Underlying Layers",
-    "summary": "Most agent security tools stop bad actions only for agents whose traffic passes through an enterprise gateway. Agents operating outside that gateway lack runtime visibility, enabling unsafe automation behaviors. Organizations must deploy layered runtime monitoring beyond gateway-based controls to detect and prevent unauthorized agent actions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
-    "publishedAt": "2026-11-04T11:34:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "agent-runtime-security-fails-without-underlying-la",
-      "article-34dbc920",
-      "34dbc920",
-      "agent-runtime-security-fails-without-underlying-la-7aa03f",
-      "agent-runtime-security-fails-without-underlying-layers"
-    ]
-  },
-  {
-    "slug": "google-releases-major-chrome-security-update-fixin-5feb26a4",
-    "title": "Google Releases Major Chrome Security Update Fixing 213 Bugs, Including 7 Critical Vulnerabilities",
-    "summary": "Google has released Chrome 157 for Windows, macOS, and Linux, fixing 213 security bugs, including seven rated critical. Announced on November 3, 2026, the update addresses flaws across graphics, memory handling, browser features, and access controls. Google says the stable release will reach users over the coming days and weeks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/google-releases-major-chrome-security-update/",
-    "publishedAt": "2026-11-04T11:27:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-major-chrome-security-update-fixin",
-      "article-5feb26a4",
-      "5feb26a4",
-      "google-releases-major-chrome-security-update-fixin-573e09",
-      "google-releases-major-chrome-security-update-fixing-213-bugs"
-    ]
-  },
-  {
-    "slug": "china-aligned-hackers-hijack-sogou-input-method-dn-fa4ac48f",
-    "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
-    "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP).",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
-    "publishedAt": "2026-11-04T11:24:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "china-aligned-hackers-hijack-sogou-input-method-dn",
-      "article-fa4ac48f",
-      "fa4ac48f",
-      "china-aligned-hackers-hijack-sogou-input-method-dn-1f6ee0",
-      "china-aligned-hackers-hijack-sogou-input-method-dns-requests"
-    ]
-  },
-  {
-    "slug": "cpguard-update-compromise-steals-credentials-from-e6da8e9e",
-    "title": "cPGuard Update Compromise Steals Credentials from Thousands",
-    "summary": "An attacker compromised cPGuard’s update system and pushed malicious updates to almost 3,000 hosting servers in the next 24 hours. The payload stole customer contact data and hashed passwords from OPSShield’s billing server, enabling credential theft. Teams should revoke affected credentials, install the official 5.88.20 release, and audit servers for unauthorized changes immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/cpguard-update-supply-chain-compromised/",
-    "publishedAt": "2026-11-04T11:18:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cpguard-update-compromise-steals-credentials-from",
-      "article-e6da8e9e",
-      "e6da8e9e",
-      "cpguard-update-compromise-steals-credentials-from-310de0",
-      "cpguard-update-compromise-steals-credentials-from-thousands"
-    ]
-  },
-  {
-    "slug": "cloudflare-launches-zero-wire-to-track-critical-cv-63d51e6d",
-    "title": "Cloudflare Launches Zero Wire to Track Critical CVEs, Active Exploits, and Security Fixes",
-    "summary": "Cloudflare has launched Zero Wire, a public vulnerability intelligence feed designed to help security teams track critical CVEs, understand exploitation activity, and find security fixes. Announced on November 3, 2026, the service sits within Cloudflare Radar’s security section and brings technical evidence, vendor guidance, and recommended actions into readable briefings.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cloudflare-launches-zero-wire/",
-    "publishedAt": "2026-11-04T11:10:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-launches-zero-wire-to-track-critical-cv",
-      "article-63d51e6d",
-      "63d51e6d",
-      "cloudflare-launches-zero-wire-to-track-critical-cv-6f9cb2",
-      "cloudflare-launches-zero-wire-to-track-critical-cves-active-"
-    ]
-  },
-  {
-    "slug": "opsshield-update-servers-compromised-via-cpguard-p-b8d862ff",
-    "title": "OpsShield Update Servers Compromised via cPGuard Poisoning",
-    "summary": "Attackers used compromised credentials to access OpsShield’s update servers and injected malicious cPGuard versions into the supply chain. The poisoned updates could deliver arbitrary code to end‑user devices, potentially enabling remote execution without user interaction. Security teams should verify cPGuard binaries against signed hashes, revoke compromised certificates, and apply vendor patches to mitigate the threat.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
-    "publishedAt": "2026-11-04T10:54:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "opsshield-update-servers-compromised-via-cpguard-p",
-      "article-b8d862ff",
-      "b8d862ff",
-      "opsshield-update-servers-compromised-via-cpguard-p-38961f",
-      "opsshield-update-servers-compromised-via-cpguard-poisoning"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95082-important-python3-security-update-d25cfef7",
-    "title": "RHSA-2026:95082: Important: python3 security update",
-    "summary": "An update for python3 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95082",
-    "publishedAt": "2026-11-04T10:40:09.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95082-important-python3-security-update",
-      "article-d25cfef7",
-      "d25cfef7",
-      "rhsa-2026-95082-important-python3-security-update-37d854"
     ]
   }
 ];

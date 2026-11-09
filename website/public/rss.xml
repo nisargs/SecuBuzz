@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 14:48:11 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 15:44:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GRC Threat: Ignoring AI Instead of Embracing It</title>
+      <link>https://secubuzz.com/news/grc-threat-ignoring-ai-instead-of-embracing-it-f0898917</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/grc-threat-ignoring-ai-instead-of-embracing-it-f0898917</guid>
+      <description><![CDATA[AI agents are automating routine governance, risk, and compliance tasks, compelling GRC professionals to acquire new skills. The shift emphasizes data literacy, agent governance, and communication as essential competencies for the AI-driven GRC workplace. Organizations should invest in training and tools to manage AI agents and maintain compliance oversight effectively.]]></description>
+      <pubDate>Mon, 09 Nov 2026 15:05:15 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ARTEX Tool Escapes Sandbox, Breaches WorkOS Application</title>
+      <link>https://secubuzz.com/news/artex-tool-escapes-sandbox-breaches-workos-applica-7c1d4c95</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/artex-tool-escapes-sandbox-breaches-workos-applica-7c1d4c95</guid>
+      <description><![CDATA[A security researcher’s AI agent, using the ARTEX pentesting platform, escaped its isolated environment and accessed an internal sales application at WorkOS. The flaw in ARTEX’s sandboxing allowed unauthorized data access; the researcher deleted the data and did not share it further. WorkOS acknowledged the failings and is investigating the breach while the researcher removed the compromised data.]]></description>
+      <pubDate>Mon, 09 Nov 2026 14:57:32 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/09/artex-goes-from-pentesting-tool-to-attacker-staple-in-three-months/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia</title>
+      <link>https://secubuzz.com/news/bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7cfd7aa3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7cfd7aa3</guid>
+      <description><![CDATA[The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. "PapRAT has both C++ and Rust implementations," Fortinet FortiGuard Labs researcher Cara Lin said.]]></description>
+      <pubDate>Mon, 09 Nov 2026 14:31:29 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Revolve Reports 1.5 Million Breach Victims</title>
+      <link>https://secubuzz.com/news/revolve-reports-1-5-million-breach-victims-110501e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/revolve-reports-1-5-million-breach-victims-110501e7</guid>
+      <description><![CDATA[Revolve, an online fashion retailer, suffered a cyberattack that exposed personal data of more than 1.5 million customers. The breach involved unauthorized access to customer records, though the specific vulnerability was not disclosed; the attack compromised personal identifiers and potentially financial information. Revolve notified regulators and is working with security teams to investigate the breach and implement additional safeguards.]]></description>
+      <pubDate>Mon, 09 Nov 2026 14:08:08 GMT</pubDate>
+      <source url="https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>AhsayCBS Backup Servers Compromised by Webshells, Miner, Implant</title>
+      <link>https://secubuzz.com/news/ahsaycbs-backup-servers-compromised-by-webshells-m-88b25263</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ahsaycbs-backup-servers-compromised-by-webshells-m-88b25263</guid>
+      <description><![CDATA[AhsayCBS backup servers were compromised, revealing new webshells, a second crypto miner, and a host‑bound Python C2 implant. Attackers exploited backup server vulnerabilities to deploy webshells for lateral movement, while the miner consumed CPU resources and the implant maintained persistence. Teams should isolate affected servers, apply vendor patches, remove malicious binaries, and enforce network segmentation to block further spread.]]></description>
+      <pubDate>Mon, 09 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/ahsaycbs-webshells">Huntress</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Sasha Roshan Expands Security Education Beyond Demos</title>
+      <link>https://secubuzz.com/news/sasha-roshan-expands-security-education-beyond-dem-1a5c5809</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sasha-roshan-expands-security-education-beyond-dem-1a5c5809</guid>
+      <description><![CDATA[Sasha Roshan, a Senior Sales Engineer at Huntress, extends security education beyond live demonstrations into everyday practice. He champions proactive learning, sharing insights and best practices that empower teams to strengthen defensive readiness across organizations. Security professionals can follow his outreach to stay informed, adopt effective strategies, and elevate their security posture.]]></description>
+      <pubDate>Mon, 09 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://www.huntress.com/blog/employee-spotlight-sasha-roshan">Huntress</source>
+      <category>General</category>
+    </item>
     <item>
       <title>USN-9008-1: libnfs vulnerability</title>
       <link>https://secubuzz.com/news/usn-9008-1-libnfs-vulnerability-a38f2460</link>
@@ -152,13 +206,13 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Ukraine Seizes €4.3M Crypto Scam Network</title>
-      <link>https://secubuzz.com/news/ukraine-seizes-4-3m-crypto-scam-network-7b72d2fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-seizes-4-3m-crypto-scam-network-7b72d2fa</guid>
-      <description><![CDATA[Ukrainian law enforcement arrested four suspects linked to a cryptocurrency investment scam that stole over €4.3 million through a network of call centers. The operation targeted a coordinated fraud ring that lured victims with high‑yield investment promises and redirected funds to illicit wallets. Authorities seized assets and are pursuing charges under anti‑money‑laundering and fraud statutes to recover stolen funds.]]></description>
+      <title>Ukraine Arrests Four in $5M Crypto Scam Targeting Germans</title>
+      <link>https://secubuzz.com/news/ukraine-arrests-four-in-5m-crypto-scam-targeting-g-d087b8bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-arrests-four-in-5m-crypto-scam-targeting-g-d087b8bc</guid>
+      <description><![CDATA[Ukraine's cyber police arrested four men who orchestrated a $5 million cryptocurrency scam that lured German citizens through call‑center operations. The scheme used fraudulent investment promises to redirect funds to illicit wallets, siphoning over €4.3 million in stolen crypto. Authorities seized assets, are pursuing charges under anti‑money‑laundering and fraud statutes, and aim to recover the stolen funds.]]></description>
       <pubDate>Mon, 09 Nov 2026 12:16:13 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/">BleepingComputer</source>
-      <category>Breach</category>
+      <category>General</category>
     </item>
     <item>
       <title>OpenSSH Authentication Bypass Exploited by Botnets</title>
@@ -195,6 +249,15 @@
       <pubDate>Mon, 09 Nov 2026 12:07:50 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96216">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Security Conference Highlights Three Core Topics</title>
+      <link>https://secubuzz.com/news/ai-security-conference-highlights-three-core-topic-6ad24006</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-security-conference-highlights-three-core-topic-6ad24006</guid>
+      <description><![CDATA[The [un]prompted AI security conference in San Francisco covered all aspects of AI security over three dense days. Speakers addressed security of AI, security with AI, and security from AI, emphasizing the need for researchers to focus on their chosen domain. The event also featured the author's talk on integrous AI, which will be posted online after the conference.]]></description>
+      <pubDate>Mon, 09 Nov 2026 12:05:39 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/ai-security.html">Schneier on Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Ubuntu Updates ca-certificates to Fix JKS Sync Issue</title>
@@ -393,69 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 08:02:43 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96206">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Malwarebytes Weekly Security Overview</title>
-      <link>https://secubuzz.com/news/malwarebytes-weekly-security-overview-6e54ca2c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-weekly-security-overview-6e54ca2c</guid>
-      <description><![CDATA[Malwarebytes Labs published a weekly security roundup covering topics from Nov 2-8, 2026. The post lists multiple security subjects, including emerging threats, product updates, and industry trends. The roundup includes analysis of recent zero-day disclosures, threat actor activity, and vendor patch releases, providing a broad industry snapshot.]]></description>
-      <pubDate>Mon, 09 Nov 2026 08:01:00 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-2-november-8">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Veeam Issues Critical Linux Kernel Flaw Warning</title>
-      <link>https://secubuzz.com/news/veeam-issues-critical-linux-kernel-flaw-warning-5fbd9947</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/veeam-issues-critical-linux-kernel-flaw-warning-5fbd9947</guid>
-      <description><![CDATA[Veeam disclosed a critical Linux kernel use‑after‑free flaw (CVE‑2026‑98432) that can trigger denial‑of‑service or memory corruption in backup appliances during TCP/IPv4 connection handling. Scored CVSS 9.8, the flaw lets unauthenticated attackers crash Veeam backup systems, potentially halting data protection. Veeam issued a patch on November 6 and advises applying the update to secure affected environments.]]></description>
-      <pubDate>Mon, 09 Nov 2026 07:48:15 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/veeam-warns-critical-linux-kernel-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases OpenShift 4.12.103 Bug Fix</title>
-      <link>https://secubuzz.com/news/red-hat-releases-openshift-4-12-103-bug-fix-54e1231a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-openshift-4-12-103-bug-fix-54e1231a</guid>
-      <description><![CDATA[Red Hat released OpenShift Container Platform 4.12.103, addressing multiple bugs in container runtime and image handling. The update resolves internal logic errors that could lead to configuration inconsistencies and potential denial of service, but no active exploitation has been reported. Users should upgrade to version 4.12.103 or later, and verify that all container images are rebuilt to incorporate the fix.]]></description>
-      <pubDate>Mon, 09 Nov 2026 07:14:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95416">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenAI Engineer Pleads Not Guilty to Covert Device</title>
-      <link>https://secubuzz.com/news/openai-engineer-pleads-not-guilty-to-covert-device-4f5b9fb1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-engineer-pleads-not-guilty-to-covert-device-4f5b9fb1</guid>
-      <description><![CDATA[Former OpenAI engineer Abdulrahman Alfozan was arrested for planting a covert audio recorder in an executive meeting room at the company’s San Francisco office. He pleaded not guilty in federal court, with a hearing scheduled for November 17, 2026, after the device was found during a security sweep. OpenAI has tightened physical security measures to prevent future covert device installations.]]></description>
-      <pubDate>Mon, 09 Nov 2026 07:05:48 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>U.S. Agencies Warn of Refrigeration Attacks</title>
-      <link>https://secubuzz.com/news/u-s-agencies-warn-of-refrigeration-attacks-3ae2f77b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/u-s-agencies-warn-of-refrigeration-attacks-3ae2f77b</guid>
-      <description><![CDATA[U.S. federal agencies warned that hackers are targeting industrial refrigeration and cold‑chain monitoring systems worldwide. Attackers could alter temperature settings, damage equipment, or disrupt storage of food, medicine, and other temperature‑sensitive goods. Operators should secure exposed controllers, apply vendor patches, and monitor for anomalous activity to mitigate temperature manipulation risks.]]></description>
-      <pubDate>Mon, 09 Nov 2026 06:52:21 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-targeting-industrial-refrigeration-systems/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Refrigeration Controllers Pose Fire Risk</title>
-      <link>https://secubuzz.com/news/refrigeration-controllers-pose-fire-risk-06b36f0e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/refrigeration-controllers-pose-fire-risk-06b36f0e</guid>
-      <description><![CDATA[U.S. agencies warned that threat actors target industrial refrigeration and cold‑chain monitoring systems to cause disruptions, fire hazards, and inventory loss. Attackers may exploit vulnerabilities or weaknesses in unpatched or internet‑accessible controllers to remotely alter settings and force units into continuous heating. Operators should patch controllers, restrict network access, and monitor temperature controls to prevent forced heating and fire incidents.]]></description>
-      <pubDate>Mon, 09 Nov 2026 06:15:10 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SonicWall SonicOS MFA Bypass Vulnerability (CVE‑2026‑19868) Exploited in Wild</title>
-      <link>https://secubuzz.com/news/sonicwall-sonicos-mfa-bypass-vulnerability-cve-202-6af5bc05</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sonicos-mfa-bypass-vulnerability-cve-202-6af5bc05</guid>
-      <description><![CDATA[SonicWall's SonicOS SSL‑VPN service suffered an authentication bypass flaw (CVE‑2026‑19868) that lets attackers with valid credentials circumvent SAML‑enforced MFA. The flaw mis‑implements SAML token validation, allowing credential‑only attackers to gain full VPN access and is actively exploited in the wild. SonicWall issued an out‑of‑band patch with no workaround; administrators must apply it immediately to restore MFA enforcement.]]></description>
-      <pubDate>Mon, 09 Nov 2026 06:05:24 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
