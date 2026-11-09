@@ -11,6 +11,80 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "france-blames-iran-for-supermarket-refrigeration-a-effbc67d",
+    "title": "France Blames Iran for Supermarket Refrigeration Attacks",
+    "summary": "French authorities attribute October cyberattacks that disabled refrigeration systems at more than 700 supermarkets to Iranian state-backed hackers. The attacks exploited vulnerabilities in the supermarkets' HVAC control software, causing food spoilage and igniting at least 15 fires, leading to economic loss. French cybersecurity agencies issued guidance to update firmware and strengthen network segmentation, while the EU coordinates a joint investigation.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+    "publishedAt": "2026-11-09T18:32:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "france-blames-iran-for-supermarket-refrigeration-a",
+      "article-effbc67d",
+      "effbc67d",
+      "france-blames-iran-for-supermarket-refrigeration-a-5a8e91",
+      "france-blames-iran-for-supermarket-refrigeration-attacks"
+    ]
+  },
+  {
+    "slug": "claude-tool-vulnerability-enables-linux-rce-3e1e0341",
+    "title": "Claude Tool Vulnerability Enables Linux RCE",
+    "summary": "Attackers leveraged a flaw in Anthropic’s Claude document-processing tool to execute malicious code on Linux systems. The vulnerability allows creation of a temporary file that AI assistant can access, enabling remote code execution with privilege escalation. Anthropic has released a patch for the affected component, and users should update to the latest version or disable the document-processing feature until remediation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
+    "publishedAt": "2026-11-09T18:08:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-tool-vulnerability-enables-linux-rce",
+      "article-3e1e0341",
+      "3e1e0341",
+      "claude-tool-vulnerability-enables-linux-rce-10261b"
+    ]
+  },
+  {
+    "slug": "abe-office-malware-steals-chrome-passwords-eded8374",
+    "title": "Abe Office Malware Steals Chrome Passwords",
+    "summary": "A new remote-access trojan, Abe Office, masquerades as an office helper and steals Chrome passwords and cookies, bypassing App-Bound Encryption. Researchers found the malware exploits weak protection in Chrome’s encryption wrapper, using a code-signing certificate to evade detection and capture credentials. Security teams should block the Abe Office executable, revoke the signed certificate, and enforce multi-factor authentication for privileged accounts.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/abe-office-malware/",
+    "publishedAt": "2026-11-09T17:58:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "abe-office-malware-steals-chrome-passwords",
+      "article-eded8374",
+      "eded8374",
+      "abe-office-malware-steals-chrome-passwords-765175"
+    ]
+  },
+  {
+    "slug": "beget-rebuilds-cloud-after-data-wiping-malware-att-d4645aab",
+    "title": "Beget Rebuilds Cloud After Data-Wiping Malware Attack",
+    "summary": "A data-wiping malware attack destroyed Beget's cloud infrastructure, forcing the Russian provider to rebuild from scratch. The attack leveraged a destructive payload that erased all stored data, but no evidence of data exfiltration or credential theft was reported. Beget has not released a patch but recommends restoring from backups and implementing stricter access controls to mitigate future destructive threats.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+    "publishedAt": "2026-11-09T17:50:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "beget-rebuilds-cloud-after-data-wiping-malware-att",
+      "article-d4645aab",
+      "d4645aab",
+      "beget-rebuilds-cloud-after-data-wiping-malware-att-d269f2",
+      "beget-rebuilds-cloud-after-data-wiping-malware-attack"
+    ]
+  },
+  {
     "slug": "red-hat-jboss-web-server-6-2-6-security-update-9b1fedbe",
     "title": "Red Hat JBoss Web Server 6.2.6 Security Update",
     "summary": "Red Hat released JBoss Web Server 6.2.6 with security updates addressing multiple vulnerabilities affecting the web server component on RHEL 8, 9, and 10. The flaws involve improper input validation leading to potential remote code execution, with CVSS scores available via referenced CVE links. Red Hat recommends installing the 6.2.6 release immediately to mitigate the identified risks.",
@@ -26,6 +100,24 @@ export const news: NewsBrief[] = [
       "article-9b1fedbe",
       "9b1fedbe",
       "red-hat-jboss-web-server-6-2-6-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "ethersphere-tools-compromised-to-steal-wallet-keys-b4abafee",
+    "title": "Ethersphere Tools Compromised to Steal Wallet Keys",
+    "summary": "Attackers hijacked Ethersphere's bee-js 13.3.0 and Swarm Desktop 0.56.2 releases, injecting code that steals wallet keys and node passwords. The malicious payload exploits release automation, enabling credential theft and backdoor installation without user interaction, threatening Swarm participants. Ethersphere warns users to verify release signatures, update to patched versions, and monitor for unauthorized backdoors.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+    "publishedAt": "2026-11-09T17:36:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ethersphere-tools-compromised-to-steal-wallet-keys",
+      "article-b4abafee",
+      "b4abafee",
+      "ethersphere-tools-compromised-to-steal-wallet-keys-6b3b88"
     ]
   },
   {
@@ -63,6 +155,25 @@ export const news: NewsBrief[] = [
       "6b70975e",
       "red-hat-openshift-container-platform-4-14-78-secur-37d842",
       "red-hat-openshift-container-platform-4-14-78-security-update"
+    ]
+  },
+  {
+    "slug": "ghostaction-compromises-500-github-accounts-for-cl-d75bece3",
+    "title": "GhostAction Compromises 500+ GitHub Accounts for Cloud Credentials",
+    "summary": "GhostAction attackers compromised over 500 GitHub accounts in October 2026, injecting a workflow into thousands of repositories that exfiltrated AWS, OpenAI, and other cloud credentials. The workflow leveraged GitHub Actions to harvest secrets from environment variables, bypassing rotation and exposing key material to the attackers.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ghostaction-github-account-compromise/",
+    "publishedAt": "2026-11-09T16:29:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostaction-compromises-500-github-accounts-for-cl",
+      "article-d75bece3",
+      "d75bece3",
+      "ghostaction-compromises-500-github-accounts-for-cl-43e3a4",
+      "ghostaction-compromises-500-github-accounts-for-cloud-creden"
     ]
   },
   {
@@ -119,6 +230,25 @@ export const news: NewsBrief[] = [
       "article-91174b53",
       "91174b53",
       "nist-guidance-for-solo-business-owners-30251b"
+    ]
+  },
+  {
+    "slug": "anubis-ransomware-deploys-lindnor-backdoor-and-sec-1e6cbb54",
+    "title": "Anubis Ransomware Deploys Lindnor Backdoor and Security‑Killing Tools",
+    "summary": "Attackers using Anubis ransomware infiltrated a U.S. organization in October 2026, deploying a backdoor named Lindnor and dropping 13 tools to disable security software. The backdoor leveraged privilege escalation to install utilities, but Symantec’s bulletin reported the encryption payload was blocked before execution, preventing data loss.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/anubis-ransomware-lindnor-backdoor/",
+    "publishedAt": "2026-11-09T15:31:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anubis-ransomware-deploys-lindnor-backdoor-and-sec",
+      "article-1e6cbb54",
+      "1e6cbb54",
+      "anubis-ransomware-deploys-lindnor-backdoor-and-sec-2ce9ec",
+      "anubis-ransomware-deploys-lindnor-backdoor-and-security-kill"
     ]
   },
   {
@@ -9391,149 +9521,6 @@ export const news: NewsBrief[] = [
       "article-74755c53",
       "74755c53",
       "usn-8996-1-apt-vulnerability-7fbb92"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on-cf60773e",
-    "title": "Red Hat Issues dnsmasq Patch for CVE-2026-43871 on RHEL 9.2 and 9.4",
-    "summary": "Red Hat has issued a security update for dnsmasq on RHEL 9.2 and 9.4, addressing CVE-2026-43871. The flaw is a buffer overflow in the DHCP packet parser that allows local attackers to gain elevated privileges. Administrators should apply the patch immediately and verify the new firmware version on all affected hosts.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95088",
-    "publishedAt": "2026-11-04T13:30:26.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95093"
-      }
-    ],
-    "aliases": [
-      "red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on",
-      "article-cf60773e",
-      "cf60773e",
-      "red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on-37d854",
-      "red-hat-issues-dnsmasq-patch-for-cve-2026-43871-on-rhel-9-2-"
-    ]
-  },
-  {
-    "slug": "critical-solarwinds-dameware-flaw-could-allow-atta-aab9c8f6",
-    "title": "Critical SolarWinds Dameware Flaw Could Allow Attackers to Compromise Remote Systems",
-    "summary": "SolarWinds has warned about a critical command injection flaw in its Dameware remote support software. It is tracked as CVE-2026-28336 and carries a severity score of 9.9 out of 10. The bug could let an attacker take over a computer that an IT team is controlling remotely.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-solarwinds-dameware-flaw/",
-    "publishedAt": "2026-11-04T13:30:17.000Z",
-    "cves": [
-      "CVE-2026-28336"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-solarwinds-dameware-flaw-could-allow-atta",
-      "article-aab9c8f6",
-      "aab9c8f6",
-      "critical-solarwinds-dameware-flaw-could-allow-atta-69d0cd",
-      "critical-solarwinds-dameware-flaw-could-allow-attackers-to-c"
-    ]
-  },
-  {
-    "slug": "cr-dit-mutuel-ark-a-confirms-cyberattack-linked-to-9994ed27",
-    "title": "Crédit Mutuel Arkéa Confirms Cyberattack Linked to $133M Theft",
-    "summary": "A cyberattack on French bank Crédit Mutuel Arkéa enabled fraudulent transactions, the bank confirmed. The breach exploited weaknesses to manipulate payment systems, but the bank reports containment and no confirmed loss of customer assets; linked to reported $133 million cryptocurrency theft. Crédit Mutuel Arkéa notified regulators, is restoring operations, and stresses the need for stronger transaction monitoring and security controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/credit-mutuel-arkea-confirms-cyberattack/",
-    "publishedAt": "2026-11-04T13:29:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cr-dit-mutuel-ark-a-confirms-cyberattack-linked-to",
-      "article-9994ed27",
-      "9994ed27",
-      "cr-dit-mutuel-ark-a-confirms-cyberattack-linked-to-a7a257",
-      "cr-dit-mutuel-ark-a-confirms-cyberattack-linked-to-133m-thef"
-    ]
-  },
-  {
-    "slug": "classic-cgi-email-script-vulnerability-exploited-f-bdfc975e",
-    "title": "Classic CGI Email Script Vulnerability Exploited for Code Execution",
-    "summary": "The blog revisits CVE-2000-0411, a CGI-bin script flaw that allowed attackers to manipulate email parameters and leak environment variables. The vulnerability enabled arbitrary code execution when parameters were passed directly to the sendmail binary, facilitating spam and potential system compromise. Modern web servers should disable CGI scripts, enforce strict input validation, and apply current security patches to prevent similar exploits.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33488",
-    "publishedAt": "2026-11-04T13:24:13.000Z",
-    "cves": [
-      "CVE-2000-0411"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "classic-cgi-email-script-vulnerability-exploited-f",
-      "article-bdfc975e",
-      "bdfc975e",
-      "classic-cgi-email-script-vulnerability-exploited-f-57dd7e",
-      "classic-cgi-email-script-vulnerability-exploited-for-code-ex"
-    ]
-  },
-  {
-    "slug": "red-hat-service-interconnect-2-2-4-container-image-641bff09",
-    "title": "Red Hat Service Interconnect 2.2.4 Container Images Released",
-    "summary": "Red Hat publishes Service Interconnect 2.2.4 container images for OpenShift, providing updated components for service mesh integration. The release includes minor bug fixes and performance improvements, with no security vulnerabilities disclosed or CVEs assigned. Users should pull the new images from the Red Hat registry and update their OpenShift deployments to benefit from the enhancements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95058",
-    "publishedAt": "2026-11-04T13:15:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-service-interconnect-2-2-4-container-image",
-      "article-641bff09",
-      "641bff09",
-      "red-hat-service-interconnect-2-2-4-container-image-37d854",
-      "red-hat-service-interconnect-2-2-4-container-images-released"
-    ]
-  },
-  {
-    "slug": "us-indicts-two-canadians-for-university-hacks-eb6e8410",
-    "title": "US Indicts Two Canadians for University Hacks",
-    "summary": "A federal grand jury indicted two Canadians for hacking multiple U.S. universities. The attackers allegedly exploited system vulnerabilities to gain access and subsequently mined cryptocurrency using the compromised resources. The indictment underscores the need for universities to strengthen security controls and monitor for illicit mining activity in the coming months.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/",
-    "publishedAt": "2026-11-04T13:13:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-indicts-two-canadians-for-university-hacks",
-      "article-eb6e8410",
-      "eb6e8410",
-      "us-indicts-two-canadians-for-university-hacks-3ff19a"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95086-important-tesseract-security-updat-cc8229db",
-    "title": "RHSA-2026:95086: Important: tesseract security update",
-    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95086",
-    "publishedAt": "2026-11-04T13:12:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95086-important-tesseract-security-updat",
-      "article-cc8229db",
-      "cc8229db",
-      "rhsa-2026-95086-important-tesseract-security-updat-37d854",
-      "rhsa-2026-95086-important-tesseract-security-update"
     ]
   }
 ];

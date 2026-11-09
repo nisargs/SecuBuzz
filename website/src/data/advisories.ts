@@ -77,6 +77,32 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-63417",
+    "slug": "cve-2026-63417",
+    "vendor": "Pip",
+    "product": "loggingredactor",
+    "name": "Logging Redactor: PII data in str/repr of non primitive objects was not being redacted",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-532",
+    "ransomware": false,
+    "description": "Impact PII data in str/repr of non primitive objects was not being redacted, leading to leakage of PII in logs that should have been redacted for custom str and repr functions Patches The problem has been patched in version 0.0.7. Workarounds None without patching.",
+    "requiredAction": "Upgrade loggingredactor to version 0.0.7 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w7qv-268h-9h3f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63417"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-19868",
     "slug": "cve-2026-19868",
     "vendor": "SonicWall",
@@ -1423,32 +1449,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119209"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119196",
-    "slug": "cve-2026-119196",
-    "vendor": "Pip",
-    "product": "pyasn1",
-    "name": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "In pyasn1 through 0.6.4, decoding a constructed BIT STRING with many fragments repeatedly shifts and copies the entire value accumulated so far. For fixed-size fragments, CPU time grows quadratically with the encoded input size.",
-    "requiredAction": "Upgrade pyasn1 to version 0.6.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2qm8-x737-gmw5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119196"
       }
     ],
     "source": "GITHUB"
