@@ -1,5 +1,77 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+    "title": "N‑able Shuts N‑central Cloud After Critical Vulnerabilities Discovered",
+    "headline": "N‑able Shuts N‑central Cloud After Critical Vulnerabilities Discovered",
+    "summary": "N‑able shut down its N‑central cloud after discovering critical vulnerabilities that enable remote code execution and privilege escalation. Dubbed 'Able2Shell', the flaws lack public proof‑of‑concepts but could let attackers fully compromise affected servers. N‑able advises customers to immediately shut down on‑premises installations and apply forthcoming patches to mitigate the risk.",
+    "category": "VULNERABILITY",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-09T21:26:25.000Z",
+    "ingestedAt": "2026-11-09T21:43:08.954Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+    "additionalSources": [
+      {
+        "source": "Huntress",
+        "sourceUrl": "https://www.huntress.com/blog/n-able-disables-cloud-services-following-disclosure-of-able2shell-exploit-chains"
+      }
+    ]
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+    "title": "York University Breach Reveals 2007 Personal Data",
+    "headline": "York University Breach Reveals 2007 Personal Data",
+    "summary": "York University disclosed a breach in which a threat actor accessed personal information submitted via online forms dating back to 2007. The stolen data includes names, email addresses, phone numbers, and student identification numbers, potentially exposing thousands of individuals. York University has notified affected parties, engaged forensic investigators, and is reviewing its data protection controls to prevent future incidents.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-09T21:22:31.000Z",
+    "ingestedAt": "2026-11-09T21:43:08.954Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-174-aws/",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-174-aws/",
+    "title": "CVE-2026-124033 - Relative path traversal in the log export commands in AWS ParallelCluster CLI",
+    "headline": "CVE-2026-124033 - Relative path traversal in the log export commands in AWS ParallelCluster CLI",
+    "summary": "Bulletin ID: 2026-174-AWS Publication Date: 11/09/2026 13:00 PM PST Description: AWS ParallelCluster CLI is an open source command line tool, distributed on PyPI as aws-parallelcluster. We identified CVE-2026-124033, an issue where the export-cluster-logs and export-image-logs commands in the AWS ParallelCluster CLI before version 3.16.0 contain a relative path traversal issue.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "publishedAt": "2026-11-09T21:12:17.000Z",
+    "ingestedAt": "2026-11-09T21:43:47.430Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-124033"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+    "title": "Black Hat India 2026 Debuts in Bengaluru",
+    "headline": "Black Hat India 2026 Debuts in Bengaluru",
+    "summary": "Black Hat India 2026, a first‑time conference in Bengaluru, convened global cybersecurity researchers, practitioners, and decision makers. The event featured four days of cutting‑edge research, technical exchange, and strategic dialogue, covering emerging threats and defensive innovations. Attendees can network, share insights, and collaborate on future security initiatives, reinforcing industry resilience.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-09T20:19:56.000Z",
+    "ingestedAt": "2026-11-09T21:44:04.734Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+    "additionalSources": []
+  },
+  {
     "id": "https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/",
     "sourceUrl": "https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/",
     "title": "Arctic Wolf and AWS Launch Joint Incident‑Response Platform for Cloud‑Native Environments",
@@ -3300,18 +3372,26 @@
   {
     "id": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
     "sourceUrl": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-    "title": "Microsoft Paint RCE Fix Unavailable via Windows Update",
-    "headline": "Microsoft Paint RCE Fix Unavailable via Windows Update",
-    "summary": "A remote code execution flaw, CVE-2026-83844, in Windows Paint allows attackers to execute code over a network through an out-of-bounds read. Microsoft released a patch in the Store (build 11.2609.401.0), but Windows Update does not address the flaw, leaving many systems vulnerable. Security teams should install the Store update immediately or manually apply the new Paint build to prevent exploitation.",
+    "title": "Microsoft Patches Critical Paint RCE Flaw CVE-2026-83844 via Store Update",
+    "headline": "Microsoft Patches Critical Paint RCE Flaw CVE-2026-83844 via Store Update",
+    "summary": "Microsoft released a patch for a critical remote code execution vulnerability (CVE-2026-83844) in Windows Paint. The out-of-bounds read flaw allows arbitrary code execution via crafted images with a 9.2 CVSS score. The fix is only available through the Microsoft Store (build 11.2609.401.0), not Windows Update, requiring manual installation.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "The Hacker News",
     "publishedAt": "2026-11-06T12:06:43.000Z",
     "ingestedAt": "2026-11-06T14:43:15.398Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Dark Reading",
+        "sourceUrl": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion"
+      }
+    ],
+    "cves": [
+      "CVE-2026-83844"
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
@@ -8276,70 +8356,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/04/descope-envoy/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
-    "sourceUrl": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
-    "title": "APT29 Watering Hole Campaign Targets iOS and Android Users",
-    "headline": "APT29 Watering Hole Campaign Targets iOS and Android Users",
-    "summary": "APT29 conducted a large-scale watering hole campaign targeting iOS and Android users via compromised websites, fake domains, and a supply chain attack involving the Ukrainian web analytics service Plerdy SEO Tracker. The injected JavaScript code collects browser and device attributes to deliver exploits. Organizations should monitor for anomalous traffic patterns originating from compromised third-party services.",
-    "category": "NATION_STATE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "publishedAt": "2026-11-04T14:27:52.000Z",
-    "ingestedAt": "2026-11-04T14:44:05.321Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
-    "sourceUrl": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
-    "title": "Barracuda ESG Auth Bypass Enables Root Access",
-    "headline": "Barracuda ESG Auth Bypass Enables Root Access",
-    "summary": "Barracuda’s Email Security Gateway appliances have an authentication bypass that can be chained with a command injection flaw to gain root privileges. The flaw, CVE-2026-116606, permits attackers to execute arbitrary commands after authenticating with weak credentials. Barracuda has issued a patch; administrators should apply it immediately and enforce strong authentication.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-04T14:24:54.000Z",
-    "ingestedAt": "2026-11-04T15:43:13.547Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/04/blueflag-ai-agent-governance/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/blueflag-ai-agent-governance/",
-    "title": "BlueFlag Security Adds Developer Identity Controls",
-    "headline": "BlueFlag Security Adds Developer Identity Controls",
-    "summary": "BlueFlag Security expanded its AI Agent Governance platform to fully map access, behavior and oversight of both approved and shadow AI agents operating under developer identities. The platform now offers automated risk remediation across the software development lifecycle, enabling organizations to govern all aspects of AI agents and their relationships with human and machine identities.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-04T14:22:51.000Z",
-    "ingestedAt": "2026-11-04T20:44:54.971Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/04/blueflag-ai-agent-governance/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper",
-    "title": "Automation Needed as Incidents Outpace Manual Response",
-    "headline": "Automation Needed as Incidents Outpace Manual Response",
-    "summary": "An industry article argues that fully autonomous communication processes may outpace current incident response capabilities, stressing the need for automation. The piece notes that automating information updates could reduce manual pressure, but organizations must ensure readiness for rapid incident evolution. Security teams should evaluate automation tools, establish clear escalation paths, and test response workflows to maintain operational resilience.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-04T14:17:00.000Z",
-    "ingestedAt": "2026-11-04T16:44:15.103Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper",
     "additionalSources": []
   }
 ]

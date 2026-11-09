@@ -102,6 +102,292 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-77604",
+    "slug": "cve-2026-77604",
+    "vendor": "Pip",
+    "product": "code-graph-rag",
+    "name": "Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The read_file MCP tool in codebase_rag/mcp/tools.py contains a path traversal vulnerability in its paginated branch (when offset or limit is supplied). The handler constructs a file path using Path(self.project_root) / file_path without subsequently validating that the resolved path remains within the configured project root.",
+    "requiredAction": "Upgrade code-graph-rag to version 0.0.345 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vvr2-h2jp-838m"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77604"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77463",
+    "slug": "cve-2026-77463",
+    "vendor": "Go",
+    "product": "remark42 (backend) · umputun",
+    "name": "Remark42: Rate limit bypass via unconditional trust of X-Forwarded-For/X-Real-IP headers in direct-internet deployment",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-348",
+    "ransomware": false,
+    "description": "Remark42 applied chi's middleware.RealIP globally, trusting True-Client-IP / X-Real-IP / X-Forwarded-For headers without verifying the request came from a trusted proxy. The per-IP rate limiters key on the overwritten r.RemoteAddr, so any client can bypass every per-IP rate limiter by rotating spoofed IP headers.",
+    "requiredAction": "Upgrade remark42 (backend) · umputun to version 1.16.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-56x6-q882-mf27"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77463"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62662",
+    "slug": "cve-2026-62662",
+    "vendor": "Go",
+    "product": "pocket-id (backend) · pocket-id",
+    "name": "Pocket ID: The client credentials grant allows any OIDC client to obtain tokens for arbitrary audiences",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "The client credentials grant (grant_type=client_credentials) does not validate the resource parameter before embedding it as the aud claim in the issued JWT. Any authenticated OIDC client can obtain a Pocket ID-signed access token claiming authorization for any arbitrary audience, including other registered OIDC clients.",
+    "requiredAction": "Upgrade pocket-id (backend) · pocket-id to version 0.0.0-20260622164202-8158452b3730 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q4xm-p75h-h9p3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62662"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-76893",
+    "slug": "cve-2026-76893",
+    "vendor": "npm",
+    "product": "@tsparticles/mcp-server",
+    "name": "tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "The HTTP mode of @tsparticles/mcp-server creates a single stateful StreamableHTTPServerTransport instance and reuses it for all clients. The first anonymous client that initializes the MCP endpoint claims the shared transport state, and later clients cannot create their own sessions. This was verified on v4.3.0 at commit 0266d469aa2d719cb66a9c6bf09aded4186ec17c.",
+    "requiredAction": "Upgrade @tsparticles/mcp-server to version 4.3.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h7c4-q426-7jh9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76893"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-76892",
+    "slug": "cve-2026-76892",
+    "vendor": "npm",
+    "product": "@tsparticles/mcp-server",
+    "name": "tsParticles: Malformed JSON requests can terminate the @tsparticles/mcp-server HTTP process",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "The HTTP mode of @tsparticles/mcp-server parses incoming /mcp request bodies with JSON.parse() outside a request-local error boundary. A single malformed JSON request causes the async request handler to throw and terminates the Node.js process. This was verified on v4.3.0 at commit 0266d469aa2d719cb66a9c6bf09aded4186ec17c. Version 4.3.1 appears to fix this by returning HTTP 400 for invalid JSON.",
+    "requiredAction": "Upgrade @tsparticles/mcp-server to version 4.3.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4p8p-pjpq-2w7h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76892"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-59171",
+    "slug": "cve-2026-59171",
+    "vendor": "Java (Maven)",
+    "product": "org.json:json",
+    "name": "JSON-java: JSONTokener Has Unbounded Numeric String Resource-Exhaustion DoS",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "JSON-java version 20260522 contains an unguarded path from an HTTP request body to unbounded BigInteger and BigDecimal construction. JSONTokener.nextSimpleValue() accumulates numeric characters into a StringBuilder with no length cap, then passes the full string to JSONObject.stringToNumber(), which calls new BigInteger(val) or new BigDecimal(val) directly.",
+    "requiredAction": "Upgrade org.json:json to version 20260719 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-ghc9-756g-vrcv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59171"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63655",
+    "slug": "cve-2026-63655",
+    "vendor": "npm",
+    "product": "@tsparticles/mcp-server",
+    "name": "tsParticles: Unbounded HTTP Request Body Buffering in @tsparticles/mcp-server Leads to Remote DoS",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "The HTTP server mode of @tsparticles/mcp-server accumulates all incoming request body chunks into an in-memory Buffer[] array with no size limit before calling JSON.parse. An unauthenticated remote attacker can stream an arbitrarily large body to POST /mcp, exhausting the Node.js process memory and causing a Denial of Service.",
+    "requiredAction": "Upgrade @tsparticles/mcp-server to version 4.3.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-447x-qqwf-m7xq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63655"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63501",
+    "slug": "cve-2026-63501",
+    "vendor": "npm",
+    "product": "ag-psd",
+    "name": "ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass)",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "The readPsd() function in ag-psd accepts a totalMemoryLimit option to cap memory usage when parsing untrusted PSD files, but this limit is never forwarded to the layer image buffer allocation path. A property name mismatch (totalMemoryLimit vs. memoryLimit) causes the size guard inside createImageDataBitDepth to be skipped unconditionally.",
+    "requiredAction": "Upgrade ag-psd to version 31.0.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6w3r-6hpr-hp6p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63501"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63499",
+    "slug": "cve-2026-63499",
+    "vendor": "Java (Maven)",
+    "product": "org.zeroturnaround:zt-zip",
+    "name": "zt-zip: ZipUtil.unpack can change file permissions of output directory",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 6.9,
+    "severity": "Medium",
+    "cwe": "CWE-23",
+    "ransomware": false,
+    "description": "When using one of the ZipUtil.unpack overloads, the file permissions of the output directory can be changed. For example, when the output directory was only accessible to the 'owner' it could be instead made accessible to every OS user.",
+    "requiredAction": "Upgrade org.zeroturnaround:zt-zip to version 1.18.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v2g6-7r9j-v6px"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63499"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63198",
+    "slug": "cve-2026-63198",
+    "vendor": "Go",
+    "product": "traQ · traPtitech",
+    "name": "traQ: Privilege escalation by OAuth prompt=none request",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "In OAuth2 silent authorization (prompt=none), when the scope parameter was empty or omitted, all scopes registered for the OAuth client became eligible for issuance. However, the prior consent check was performed against the empty requested scope set.",
+    "requiredAction": "Upgrade traQ · traPtitech to version 1.0.0-rc.2.0.20260629134940-5510fe8aa9bb or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8cfq-jgf7-8m27"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63198"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63197",
+    "slug": "cve-2026-63197",
+    "vendor": "Go",
+    "product": "traQ · traPtitech",
+    "name": "traQ: XSS in the User Uploaded File Retrieval API",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "For instances where TRAQ_STORAGE_TYPE is set to local, the file retrieval API /files/{fileId} could serve user-uploaded SVG or HTML files in a way that allowed them to be rendered directly in the browser.",
+    "requiredAction": "Upgrade traQ · traPtitech to version 1.0.0-rc.2.0.20260627142846-3db29e777166 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p74g-f95m-7fx7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63197"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-63478",
     "slug": "cve-2026-63478",
     "vendor": "npm",
@@ -1151,102 +1437,6 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
-    "cve": "CVE-2026-62848",
-    "slug": "cve-2026-62848",
-    "vendor": ".NET (NuGet)",
-    "product": "Metalama.Framework",
-    "name": "Metalama: Unsafe deserialization over Metalama's Visual Studio inter-process named pipe enables local code execution",
-    "dateAdded": "2026-11-03",
-    "dueDate": "",
-    "cvss": 7.3,
-    "severity": "High",
-    "cwe": "CWE-502",
-    "ransomware": false,
-    "description": "Metalama uses a local named-pipe channel to communicate between its Visual Studio processes — the Visual Studio UI process (devenv), the out-of-process Roslyn code-analysis process, and the CodeLens process. This channel deserialized messages from the pipe without restricting which CLR types could be instantiated.",
-    "requiredAction": "Upgrade Metalama.Framework to version 2026.1.19 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h26j-4vp7-x9w2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62848"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-m3qr-fvp4-78xj",
-    "slug": "ghsa-m3qr-fvp4-78xj",
-    "vendor": "Go",
-    "product": "arc · basekick-labs",
-    "name": "Arc has unauthenticated application log disclosure via `/api/v1/logs`",
-    "dateAdded": "2026-11-03",
-    "dueDate": "",
-    "cvss": 0,
-    "severity": "Low",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "Arc exposes GET /api/v1/logs without authentication even when authentication is enabled by default. The route is registered before the global Fiber authentication middleware, and the handler returns recent buffered application logs without performing its own authorization check.",
-    "requiredAction": "Upgrade arc · basekick-labs to version 0.0.0-20260615165136-bb7d9761ad98 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m3qr-fvp4-78xj"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-j656-3hf2-fvjc",
-    "slug": "ghsa-j656-3hf2-fvjc",
-    "vendor": "npm",
-    "product": "@bytebase/dbhub",
-    "name": "DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation",
-    "dateAdded": "2026-11-02",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-436",
-    "ransomware": false,
-    "description": "The read-only mode can be bypassed on the MySQL and MariaDB connectors. In read-only mode a caller can still execute arbitrary write and DDL statements (for example DROP TABLE), which defeats the protection that read-only mode is meant to provide when a database is exposed to an AI agent.",
-    "requiredAction": "Upgrade @bytebase/dbhub to version 0.22.6 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j656-3hf2-fvjc"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-62374",
-    "slug": "cve-2026-62374",
-    "vendor": "npm",
-    "product": "@sd-jwt/decode",
-    "name": "SD JWT JS: Tampered disclosures silently dropped instead of rejected",
-    "dateAdded": "2026-11-02",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-176",
-    "ransomware": false,
-    "description": "When one Disclosure in an SD-JWT presentation is tampered so its digest no longer matches the Issuer-signed _sd array, @sd-jwt/decode 0.19.0 does not reject the presentation. It silently drops the unmatched Disclosure and returns a reduced claim set, reporting success. The Issuer signature is untouched and valid. This is a downgrade/omission primitive.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f9j6-8p6x-r9j6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62374"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
     "cve": "CVE-2026-118527",
     "slug": "cve-2026-118527",
     "vendor": "Ivanti",
@@ -1295,188 +1485,6 @@ export const advisories: Advisory[] = [
       }
     ],
     "source": "CISA KEV"
-  },
-  {
-    "cve": "CVE-2026-118761",
-    "slug": "cve-2026-118761",
-    "vendor": "Go",
-    "product": "pipelines · kubeflow",
-    "name": "Kubeflow Pipelines: Pipeline archive upload allows decompression bomb to exhaust server memory",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-409",
-    "ransomware": false,
-    "description": "The Kubeflow Pipelines API server decompresses uploaded pipeline archives without adequately bounding expanded data in affected versions. A small ZIP or gzip-compressed tar archive can consume disproportionately large amounts of memory while the server locates or reads the pipeline file, potentially exhausting API-server resources and interrupting service.",
-    "requiredAction": "Upgrade pipelines · kubeflow to version 0.0.0-20260831164314-ba9ae72cc860 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8fmv-6rg5-5924"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118761"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118759",
-    "slug": "cve-2026-118759",
-    "vendor": "Go",
-    "product": "pipelines · kubeflow",
-    "name": "Kubeflow Pipelines: Run-log endpoint permits unauthorized access to pod logs",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "The Kubeflow Pipelines API server's GET /apis/v1alpha1/runs/{run_id}/nodes/{node_id}/log handler retrieves logs without authorizing the caller against the selected run. A caller who can reach the backend and knows a victim run ID and a suitable pod or node identifier can read live or archived logs using the API server's permissions.",
-    "requiredAction": "Upgrade pipelines · kubeflow to version 0.0.0-20260904182349-be4723e33727 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wg5q-x4j9-qm54"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118759"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119203",
-    "slug": "cve-2026-119203",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-835",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires opening an incomplete file without a trailer. This has been fixed in pypdf==6.21.4. If you cannot upgrade yet, consider applying the changes from PR #4289.",
-    "requiredAction": "Upgrade pypdf to version 6.21.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5849-834g-hvw5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119203"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119204",
-    "slug": "cve-2026-119204",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf has possible large memory usage when parsing page tree",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires parsing the page tree with many shared resources. This has been fixed in pypdf==6.21.4. If you cannot upgrade yet, consider applying the changes from PR #4290.",
-    "requiredAction": "Upgrade pypdf to version 6.21.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-cggf-277g-3q54"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119204"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119205",
-    "slug": "cve-2026-119205",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf has possible infinite loop when cloning dictionaries",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-835",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to an infinite loop. This requires cloning/duplicating a DictionaryObject. This has been fixed in pypdf==6.21.4. If you cannot upgrade yet, consider applying the changes from PR #4288.",
-    "requiredAction": "Upgrade pypdf to version 6.21.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mfr5-77xh-9j7h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119205"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118772",
-    "slug": "cve-2026-118772",
-    "vendor": "npm",
-    "product": "joi",
-    "name": "joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "Joi.string().email({ multiple: true }) takes quadratic time to split a value that contains a long run of whitespace. One request with 100 KB of spaces blocks the Node.js event loop for several seconds, which causes a denial of service.",
-    "requiredAction": "Upgrade joi to version 17.13.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4528-x5fx-h6hg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118772"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119202",
-    "slug": "cve-2026-119202",
-    "vendor": "npm",
-    "product": "@hapi/content",
-    "name": "@hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "Content.disposition() takes quadratic time when a Content-Disposition parameter contains a long token without =. One unauthenticated multipart request can block the Node.js event loop for several minutes.",
-    "requiredAction": "Upgrade @hapi/content to version 6.0.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8494-f6mr-cjpv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119202"
-      }
-    ],
-    "source": "GITHUB"
   },
   {
     "cve": "CVE-2026-97229",
