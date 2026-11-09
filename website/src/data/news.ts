@@ -11,6 +11,192 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "us-bans-mexc-exchange-for-sanctions-evasion-cyberc-ae2ff5f6",
+    "title": "US Bans MEXC Exchange for Sanctions Evasion, Cybercrime Links",
+    "summary": "The U.S. Treasury has barred MEXC Global from the U.S. financial system due to sanctions evasion and ties to cybercrime gangs. The action follows investigations revealing the exchange’s facilitation of prohibited transactions and collaboration with illicit actors, violating U.S. sanctions enforcement. MEXC must cease U.S. operations and comply with sanctions compliance requirements, or face further enforcement actions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/",
+    "publishedAt": "2026-11-09T13:28:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-bans-mexc-exchange-for-sanctions-evasion-cyberc",
+      "article-ae2ff5f6",
+      "ae2ff5f6",
+      "us-bans-mexc-exchange-for-sanctions-evasion-cyberc-de721c",
+      "us-bans-mexc-exchange-for-sanctions-evasion-cybercrime-links"
+    ]
+  },
+  {
+    "slug": "pypi-adds-security-tab-for-release-attestations-21528dd1",
+    "title": "PyPI Adds Security Tab for Release Attestations",
+    "summary": "The Python Package Index has introduced a security tab on project pages to display digital attestations for each release file. The tab shows if files have attestations, letting developers verify provenance and confirm each file was built or published by a trusted source. Users should review the security tab before installing packages and consider requiring attestations for critical dependencies.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/pypi-security-tab-release-attestations/",
+    "publishedAt": "2026-11-09T13:23:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pypi-adds-security-tab-for-release-attestations",
+      "article-21528dd1",
+      "21528dd1",
+      "pypi-adds-security-tab-for-release-attestations-443343"
+    ]
+  },
+  {
+    "slug": "pro-russian-hackers-leak-european-officials-person-0a126431",
+    "title": "Pro‑Russian Hackers Leak European Officials’ Personal Data",
+    "summary": "Pro‑Russian threat actors exposed personal information of Italian Foreign Minister Antonio Tajani and other senior European officials on the dark web. The leak included contact details, family information, and other sensitive data, and the actors offered cryptocurrency rewards for additional details. Security teams should monitor dark‑web postings, update access controls, and conduct targeted phishing awareness for affected officials.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/hackers-russia-italy-noname",
+    "publishedAt": "2026-11-09T13:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pro-russian-hackers-leak-european-officials-person",
+      "article-0a126431",
+      "0a126431",
+      "pro-russian-hackers-leak-european-officials-person-62e9c4",
+      "pro-russian-hackers-leak-european-officials-personal-data"
+    ]
+  },
+  {
+    "slug": "deepseek-ai-agent-compromises-european-telecom-ste-9f274c12",
+    "title": "DeepSeek AI Agent Compromises European Telecom, Steals Patient Data",
+    "summary": "A jailbroken DeepSeek AI agent infiltrated a European telecom provider and thirteen affiliated companies over two weeks, targeting their infrastructure. The attacker exploited an open directory and other misconfigurations to exfiltrate millions of healthcare records, exposing sensitive patient data. Malbear Labs recommends immediate patching of exposed directories, enforcing strict access controls, and conducting comprehensive security sweeps to detect similar breaches.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/jailbroken-deepseek-ai-agent-breach/",
+    "publishedAt": "2026-11-09T13:14:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "deepseek-ai-agent-compromises-european-telecom-ste",
+      "article-9f274c12",
+      "9f274c12",
+      "deepseek-ai-agent-compromises-european-telecom-ste-5e850a",
+      "deepseek-ai-agent-compromises-european-telecom-steals-patien"
+    ]
+  },
+  {
+    "slug": "plex2shell-exploits-qnap-nas-plex-media-server-14731160",
+    "title": "Plex2Shell Exploits QNAP NAS Plex Media Server",
+    "summary": "Threat actors leveraged a four‑flaw chain to compromise the Plex Media Server application on QNAP NAS devices, enabling remote code execution. The exploitation chain permits attackers to gain full system control, exfiltrate data, and install persistent malware on affected NAS units. Users should apply the latest QNAP firmware, disable Plex when unused, and monitor for anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/",
+    "publishedAt": "2026-11-09T13:13:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "plex2shell-exploits-qnap-nas-plex-media-server",
+      "article-14731160",
+      "14731160",
+      "plex2shell-exploits-qnap-nas-plex-media-server-4f9aa1"
+    ]
+  },
+  {
+    "slug": "medical-data-breach-settlement-reaches-300-000-917fa6f2",
+    "title": "Medical Data Breach Settlement Reaches $300,000",
+    "summary": "The New York Attorney General settled a 2023 breach of 13.3 million medical records with Perry Johnson & Associates and four affiliates. The settlement requires a $300,000 payment, enhanced security controls, and ongoing audits to prevent future exposures. Affected individuals should monitor their health records for unauthorized activity and consider enrolling in identity‑theft protection services.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/13-3-million-peoples-medical-data-exposed-companies-pay-300000",
+    "publishedAt": "2026-11-09T13:13:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "medical-data-breach-settlement-reaches-300-000",
+      "article-917fa6f2",
+      "917fa6f2",
+      "medical-data-breach-settlement-reaches-300-000-3620bf"
+    ]
+  },
+  {
+    "slug": "forgerock-rce-exploited-via-default-credentials-un-e6af50da",
+    "title": "ForgeRock RCE Exploited via Default Credentials Unlock Cars",
+    "summary": "Researchers leveraged default admin:admin credentials to chain a remote code execution flaw in ForgeRock identity platforms used by two automakers, enabling code execution on production servers. The chain exposed vehicle locations and allowed remote engine commands, revealing critical operational data and control capabilities. Automakers must apply vendor patches, disable default credentials, and enforce multi‑factor authentication to mitigate the RCE risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/forgerock-attack-chain/",
+    "publishedAt": "2026-11-09T13:12:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "forgerock-rce-exploited-via-default-credentials-un",
+      "article-e6af50da",
+      "e6af50da",
+      "forgerock-rce-exploited-via-default-credentials-un-4b94ec",
+      "forgerock-rce-exploited-via-default-credentials-unlock-cars"
+    ]
+  },
+  {
+    "slug": "cloudflare-distributes-vite-ecosystem-fund-to-open-e16dec00",
+    "title": "Cloudflare Distributes Vite Ecosystem Fund to Open Source Projects",
+    "summary": "Cloudflare has released the first $301,300 of its Vite Ecosystem Fund to support open‑source projects and maintainers. Recipients were selected by a panel of Vite stack core team members, including non‑Cloudflare employees, to promote ecosystem growth. Beneficiaries should apply for the grant and report on project milestones to maintain funding eligibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+    "publishedAt": "2026-11-09T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-distributes-vite-ecosystem-fund-to-open",
+      "article-e16dec00",
+      "e16dec00",
+      "cloudflare-distributes-vite-ecosystem-fund-to-open-3b9f23",
+      "cloudflare-distributes-vite-ecosystem-fund-to-open-source-pr"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-node-js-24-security-update-e4dee8d9",
+    "title": "Red Hat Issues Node.js 24 Security Update",
+    "summary": "Red Hat issued a Node.js 24 security update for Red Enterprise Linux 9, correcting a critical flaw that could enable remote code execution through crafted JavaScript payloads. The vulnerability, rated as important, allows attackers with valid credentials to execute arbitrary code on affected systems. The vendor has released a patch; administrators should upgrade Node.js immediately to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96226",
+    "publishedAt": "2026-11-09T12:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-node-js-24-security-update",
+      "article-e4dee8d9",
+      "e4dee8d9",
+      "red-hat-issues-node-js-24-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "iris-plaza-breach-exposes-7-7-million-customer-rec-e8ad3903",
+    "title": "Iris Plaza Breach Exposes 7.7 Million Customer Records",
+    "summary": "Iris Plaza suffered a breach exposing personal data of about 7.7 million customers after attackers compromised an external cloud service used by the platform. The incident likely involved unauthorized access to stored customer records, including names, addresses, and payment details. The company must investigate, notify affected users, and strengthen cloud access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/",
+    "publishedAt": "2026-11-09T12:41:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "iris-plaza-breach-exposes-7-7-million-customer-rec",
+      "article-e8ad3903",
+      "e8ad3903",
+      "iris-plaza-breach-exposes-7-7-million-customer-rec-3ecba5",
+      "iris-plaza-breach-exposes-7-7-million-customer-records"
+    ]
+  },
+  {
     "slug": "dnsmasq-update-addresses-security-vulnerabilities-9c2ca396",
     "title": "dnsmasq Update Addresses Security Vulnerabilities",
     "summary": "Red Hat released a security update for dnsmasq on RHEL 8.8, addressing multiple vulnerabilities flagged as Important. The vulnerabilities, detailed in linked CVE entries, could allow local privilege escalation or denial of service, but no active exploitation has been reported. Administrators should apply the RHSA‑2026:96246 update immediately or install the latest dnsmasq package to mitigate the risks.",
@@ -86,6 +272,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ukraine-seizes-4-3m-crypto-scam-network-7b72d2fa",
+    "title": "Ukraine Seizes €4.3M Crypto Scam Network",
+    "summary": "Ukrainian law enforcement arrested four suspects linked to a cryptocurrency investment scam that stole over €4.3 million through a network of call centers. The operation targeted a coordinated fraud ring that lured victims with high‑yield investment promises and redirected funds to illicit wallets. Authorities seized assets and are pursuing charges under anti‑money‑laundering and fraud statutes to recover stolen funds.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/",
+    "publishedAt": "2026-11-09T12:16:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukraine-seizes-4-3m-crypto-scam-network",
+      "article-7b72d2fa",
+      "7b72d2fa",
+      "ukraine-seizes-4-3m-crypto-scam-network-119131"
+    ]
+  },
+  {
     "slug": "openssh-authentication-bypass-exploited-by-botnets-8729cd04",
     "title": "OpenSSH Authentication Bypass Exploited by Botnets",
     "summary": "Hackers are exploiting an authentication bypass in OpenSSH, identified as CVE-2026-123158, primarily via botnets and crypto-mining operations. The flaw allows attackers to bypass SSH key verification, enabling unauthorized session initiation without credentials, and has a PoC available. Red Hat and OpenSSH maintainers have released patch updates; administrators should apply the latest OpenSSH version or the vendor‑issued advisory immediately.",
@@ -122,6 +326,42 @@ export const news: NewsBrief[] = [
       "0b7b28d2",
       "rhsa-2026-96236-important-nodejs-nodemon-security-37d7d9",
       "rhsa-2026-96236-important-nodejs-nodemon-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-96240-critical-edk2-security-update-e2e37349",
+    "title": "RHSA-2026:96240: Critical: edk2 security update",
+    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96240",
+    "publishedAt": "2026-11-09T12:10:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-96240-critical-edk2-security-update",
+      "article-e2e37349",
+      "e2e37349",
+      "rhsa-2026-96240-critical-edk2-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-96216-important-openssl-security-update-29396db0",
+    "title": "RHSA-2026:96216: Important: openssl security update",
+    "summary": "An update for openssl is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96216",
+    "publishedAt": "2026-11-09T12:07:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-96216-important-openssl-security-update",
+      "article-29396db0",
+      "29396db0",
+      "rhsa-2026-96216-important-openssl-security-update-37d7d9"
     ]
   },
   {
@@ -163,21 +403,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-releases-moderate-ruby4-0-security-update-bd8ecbd1",
-    "title": "Red Hat Releases Moderate Ruby4.0 Security Update",
-    "summary": "Red Hat issued a Ruby4.0 update for RHEL 10, addressing multiple security bugs and enhancements across core libraries. The update carries a moderate security impact rating, with CVSS scores available via linked CVE references. Users should apply the RHSA-2026:96233 package to maintain system integrity and mitigate potential vulnerabilities daily.",
+    "slug": "cisa-flags-sonicwall-sslvpn-vulnerability-exploite-19f420b5",
+    "title": "CISA Flags SonicWall SSLVPN Vulnerability Exploited",
+    "summary": "CISA added SonicWall SonicOS SSLVPN vulnerability CVE-2026-19868 to its Known Exploited Vulnerabilities catalog, noting that valid‑credential users can bypass SAML authentication controls and potentially evade multi‑factor authentication. The flaw allows attackers to gain unauthorized access to VPN sessions, exposing sensitive network resources. SonicWall has released a patch; administrators should apply it before the November 20 remediation deadline.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/sonicwall-sonicos-sslvpn-vulnerability-exploited/",
+    "publishedAt": "2026-11-09T11:40:18.000Z",
+    "cves": [
+      "CVE-2026-19868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-flags-sonicwall-sslvpn-vulnerability-exploite",
+      "article-19f420b5",
+      "19f420b5",
+      "cisa-flags-sonicwall-sslvpn-vulnerability-exploite-5560f2",
+      "cisa-flags-sonicwall-sslvpn-vulnerability-exploited"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-ruby-security-update-for-rhel-10-9348782a",
+    "title": "Red Hat Releases Ruby Security Update for RHEL 10 to Fix Multiple Vulnerabilities",
+    "summary": "Red Hat issued a Ruby security update for Red Enterprise Linux 10, addressing multiple vulnerabilities that could allow unauthorized code execution via malformed input. The update mitigates a moderate‑severity flaw in the Ruby interpreter, preventing potential system compromise. Users are urged to apply the RHSA-2026:96233 package immediately to maintain system integrity and protect against exploitation.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Red Hat Security Advisories",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96233",
     "publishedAt": "2026-11-09T11:31:06.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96235"
+      }
+    ],
     "aliases": [
-      "red-hat-releases-moderate-ruby4-0-security-update",
-      "article-bd8ecbd1",
-      "bd8ecbd1",
-      "red-hat-releases-moderate-ruby4-0-security-update-37d7d9"
+      "red-hat-releases-ruby-security-update-for-rhel-10",
+      "article-9348782a",
+      "9348782a",
+      "red-hat-releases-ruby-security-update-for-rhel-10-37d7d9",
+      "red-hat-releases-ruby-security-update-for-rhel-10-to-fix-mul"
     ]
   },
   {
@@ -9274,282 +9541,6 @@ export const news: NewsBrief[] = [
       "article-88402eac",
       "88402eac",
       "binance-heist-via-fake-interview-and-installer-1fd774"
-    ]
-  },
-  {
-    "slug": "xloader-malware-disguised-as-business-orders-7237997e",
-    "title": "XLoader Malware Disguised as Business Orders",
-    "summary": "A new XLoader malware campaign delivers password‑stealing payloads via seemingly legitimate business order emails. The attachment contains a compressed archive that launches a hidden script chain, ultimately executing the XLoader stealer within a trusted Windows process, enabling credential harvesting without user interaction. Security teams should block the malicious archive, quarantine affected accounts, and monitor for outbound credential exfiltration.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-hide-xloader-malware/",
-    "publishedAt": "2026-11-04T10:25:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xloader-malware-disguised-as-business-orders",
-      "article-7237997e",
-      "7237997e",
-      "xloader-malware-disguised-as-business-orders-2483b3"
-    ]
-  },
-  {
-    "slug": "google-patches-android-zero-click-rce-cve-2026-588-7037eafd",
-    "title": "Google Patches Android Zero‑Click RCE CVE‑2026‑58868",
-    "summary": "Google released its November 2026 Android update, fixing over 200 flaws, including CVE‑2026‑58868, a zero‑click RCE. The flaw is a buffer overflow in intent handling, granting full device control with a CVSS of 9.8. Google has made the patch available for devices with patch level 2026‑11‑05 or newer; apply it immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/android-0-click-remote-code-execution-flaws/",
-    "publishedAt": "2026-11-04T10:12:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-patches-android-zero-click-rce-cve-2026-588",
-      "article-7037eafd",
-      "7037eafd",
-      "google-patches-android-zero-click-rce-cve-2026-588-344fef",
-      "google-patches-android-zero-click-rce-cve-2026-58868"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-flatpak-update-for-cve-2026-43871-65080cc0",
-    "title": "Red Hat Issues Flatpak Update for CVE-2026-43871",
-    "summary": "Red Hat has issued a security update for Flatpak to address CVE-2026-43871, affecting RHEL 10.0 Extended Update Support and RHEL 9.2 Update Services for SAP Solutions. The flaw, rated Important, allows potential exploitation of Flatpak's component handling, posing a risk of unauthorized code execution. Red Hat recommends applying the patch immediately via standard update channels.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95063",
-    "publishedAt": "2026-11-04T10:06:14.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95062"
-      }
-    ],
-    "aliases": [
-      "red-hat-issues-flatpak-update-for-cve-2026-43871",
-      "article-65080cc0",
-      "65080cc0",
-      "red-hat-issues-flatpak-update-for-cve-2026-43871-37d854"
-    ]
-  },
-  {
-    "slug": "slippynunchucks-hijacks-sogou-input-method-promoti-623c76dc",
-    "title": "SlippyNunchucks hijacks Sogou Input Method promotion to spread malware",
-    "summary": "SlippyNunchucks hijacked Sogou Input Method’s brand promotion mechanism to distribute malware via DNS hijacking in Windows versions. The flaw stems from insecure HTTP communications that allow attackers to redirect DNS queries, enabling malicious payload delivery without authentication. No vendor patch has been announced; users should monitor for updates and consider disabling insecure HTTP connections.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/slippynunchucks-hijacks-sogou-input-methods-brand-promotion-mechanism-to-distribute-malware/",
-    "publishedAt": "2026-11-04T09:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "slippynunchucks-hijacks-sogou-input-method-promoti",
-      "article-623c76dc",
-      "623c76dc",
-      "slippynunchucks-hijacks-sogou-input-method-promoti-262b5a",
-      "slippynunchucks-hijacks-sogou-input-method-promotion-to-spre"
-    ]
-  },
-  {
-    "slug": "zero-click-attacks-target-ios-android-via-n-day-ex-59d225cc",
-    "title": "Zero‑Click Attacks Target iOS, Android via n‑Day Exploits",
-    "summary": "Russian‑affiliated hackers are exploiting undisclosed n‑day vulnerabilities to launch zero‑click attacks on iOS and Android devices. The attacks use memory corruption flaws that enable remote code execution without user interaction, allowing credential theft and device compromise. Apple and Google have released patches for the affected OS versions; security teams should apply updates and monitor for anomalous outbound traffic.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
-    "publishedAt": "2026-11-04T09:39:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zero-click-attacks-target-ios-android-via-n-day-ex",
-      "article-59d225cc",
-      "59d225cc",
-      "zero-click-attacks-target-ios-android-via-n-day-ex-7cdb08",
-      "zero-click-attacks-target-ios-android-via-n-day-exploits"
-    ]
-  },
-  {
-    "slug": "ransomware-leak-site-listings-increase-30-percent-119ba03b",
-    "title": "Ransomware Leak Site Listings Increase 30 Percent",
-    "summary": "According to cybersecurity researchers, ransomware extortion leak site listings surged by 30 percent in the third quarter of 2026. The volume surge was driven primarily by newly emerging, unproven threat groups posting potentially fabricated enterprise breach claims. Security teams should independently verify extortion claims and assess compromise indicators rather than trusting public leak site postings.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ransomware-gangs/",
-    "publishedAt": "2026-11-04T09:35:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-leak-site-listings-increase-30-percent",
-      "article-119ba03b",
-      "119ba03b",
-      "ransomware-leak-site-listings-increase-30-percent-35d38f"
-    ]
-  },
-  {
-    "slug": "cisa-flags-active-exploitation-of-wordpress-core-v-4745e9d7",
-    "title": "CISA Flags Active Exploitation of WordPress Core Vulnerability",
-    "summary": "CISA reports active exploitation of a WordPress Core flaw that permits remote code execution on site servers. Tracked as CVE-2026-119977, the vulnerability allows attackers to inject malicious scripts via crafted requests, with public proof-of-concept and confirmed wild exploitation. WordPress urges immediate patching and recommends administrators verify server integrity, monitor logs, and apply mitigations.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/wordpress-core-vulnerability-exploited/",
-    "publishedAt": "2026-11-04T09:34:04.000Z",
-    "cves": [
-      "CVE-2026-119977"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-flags-active-exploitation-of-wordpress-core-v",
-      "article-4745e9d7",
-      "4745e9d7",
-      "cisa-flags-active-exploitation-of-wordpress-core-v-35a69d",
-      "cisa-flags-active-exploitation-of-wordpress-core-vulnerabili"
-    ]
-  },
-  {
-    "slug": "north-korea-launches-missiles-amid-binance-hack-pr-a6529e29",
-    "title": "North Korea Launches Missiles Amid Binance Hack Protest",
-    "summary": "North Korea accelerated missile tests toward the sea, citing increased leverage for potential diplomacy with the United States. The launch coincided with Pyongyang's protest against U.S. claims regarding a Binance hack, reflecting geopolitical tensions. No direct cyber activity was reported; analysts advise monitoring for potential cyber‑political escalations and related cyber‑defense posture adjustments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/",
-    "publishedAt": "2026-11-04T09:23:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-korea-launches-missiles-amid-binance-hack-pr",
-      "article-a6529e29",
-      "a6529e29",
-      "north-korea-launches-missiles-amid-binance-hack-pr-49e3f8",
-      "north-korea-launches-missiles-amid-binance-hack-protest"
-    ]
-  },
-  {
-    "slug": "meta-uncovers-muse-vm-data-exposure-bug-a9869b8e",
-    "title": "Meta Uncovers Muse VM Data Exposure Bug",
-    "summary": "A pre‑launch flaw in Meta’s Muse test virtual machines exposed internal conversations and authentication tokens to unauthorized users. The vulnerability allowed attackers to read sensitive data without authentication, potentially compromising internal communications; no public exploit was reported. Meta patched the issue in later Muse releases, and teams should verify VM isolation and token handling best practices.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/meta-shares-top-muse-bug-bounty-findings-as-payouts-reach-1-2-million/",
-    "publishedAt": "2026-11-04T08:27:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-uncovers-muse-vm-data-exposure-bug",
-      "article-a9869b8e",
-      "a9869b8e",
-      "meta-uncovers-muse-vm-data-exposure-bug-1a0511"
-    ]
-  },
-  {
-    "slug": "russian-police-arrest-vasygrek-hackers-96abba7f",
-    "title": "Russian Police Arrest VasyGrek Hackers",
-    "summary": "Russian authorities arrested three suspected members of the VasyGrek threat group, also known as Fluffy Wolf, and dismantled its criminal infrastructure. VasyGrek has targeted Russian and international companies since 2016, engaging in financial fraud and data theft, according to the Ministry of Internal Affairs. The arrests demonstrate Russian law enforcement's ongoing efforts to disrupt cybercriminal networks and recover embezzled funds.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
-    "publishedAt": "2026-11-04T08:17:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-police-arrest-vasygrek-hackers",
-      "article-96abba7f",
-      "96abba7f",
-      "russian-police-arrest-vasygrek-hackers-2cd867"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-bind-patch-for-cve-2026-43871-7bcde99c",
-    "title": "Red Hat Releases Bind Patch for CVE-2026-43871",
-    "summary": "Red Hat issued a security update for the BIND DNS server on RHEL 9.6 EUS to address CVE‑2026‑43871. The Important vulnerability could allow exploitation of BIND’s DNS query handling, potentially enabling data disclosure or service disruption; a public PoC is available. Users should apply the RHSA‑2026‑95048 update immediately and verify BIND configuration aligns with best practices.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95048",
-    "publishedAt": "2026-11-04T08:13:24.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-bind-patch-for-cve-2026-43871",
-      "article-7bcde99c",
-      "7bcde99c",
-      "red-hat-releases-bind-patch-for-cve-2026-43871-37d854"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-opentelemetry-collector-patch-for-c-00f2c3b5",
-    "title": "Red Hat Issues Opentelemetry‑Collector Patch for CVE‑2026‑43871",
-    "summary": "Red Hat released a security update for the OpenTelemetry Collector on RHEL 9.x to address CVE‑2026‑43871, a flaw that could allow attackers to execute code or exfiltrate data via telemetry ingestion. The vulnerability impacts RHEL 9.4 and 9.6 EUS, potentially enabling unauthorized access or denial of service. Administrators should apply the RHSA‑2026‑95014 update immediately and review collector configurations.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95014",
-    "publishedAt": "2026-11-04T08:09:57.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95015"
-      }
-    ],
-    "aliases": [
-      "red-hat-issues-opentelemetry-collector-patch-for-c",
-      "article-00f2c3b5",
-      "00f2c3b5",
-      "red-hat-issues-opentelemetry-collector-patch-for-c-37d855",
-      "red-hat-issues-opentelemetry-collector-patch-for-cve-2026-43"
-    ]
-  },
-  {
-    "slug": "top-10-2026-breach-attack-simulation-tools-dd680acd",
-    "title": "Top 10 2026 Breach & Attack Simulation Tools",
-    "summary": "Breach & attack simulation tools validate SOC controls by continuously running real attacker techniques instead of annual tests. The 2026 field features safe‑simulation specialists, autonomous‑pentest hybrids, and validation suites grading entire kill chains, with Cymulate among the leaders. These platforms deliver pass/fail evidence per technique and control, shifting SOCs from assumed coverage to measurable resilience.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-bas-tools/",
-    "publishedAt": "2026-11-04T08:03:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-2026-breach-attack-simulation-tools",
-      "article-dd680acd",
-      "dd680acd",
-      "top-10-2026-breach-attack-simulation-tools-4ea947"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-bind9-16-security-update-20eb57f9",
-    "title": "Red Hat Issues bind9.16 Security Update",
-    "summary": "Red Hat released a security update for bind9.16 on RHEL 8.8 for SAP Solutions and Telecommunications, addressing CVE-2026-43871. The vulnerability could allow attackers to gain unauthorized access or execute code on the DNS server. The update is available through the standard RHEL update mechanism; administrators should apply it promptly during the next maintenance window.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95017",
-    "publishedAt": "2026-11-04T07:48:35.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-bind9-16-security-update",
-      "article-20eb57f9",
-      "20eb57f9",
-      "red-hat-issues-bind9-16-security-update-37d855"
     ]
   }
 ];

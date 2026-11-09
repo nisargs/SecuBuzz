@@ -5,8 +5,98 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 12:47:24 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 13:46:47 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>US Bans MEXC Exchange for Sanctions Evasion, Cybercrime Links</title>
+      <link>https://secubuzz.com/news/us-bans-mexc-exchange-for-sanctions-evasion-cyberc-ae2ff5f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-bans-mexc-exchange-for-sanctions-evasion-cyberc-ae2ff5f6</guid>
+      <description><![CDATA[The U.S. Treasury has barred MEXC Global from the U.S. financial system due to sanctions evasion and ties to cybercrime gangs. The action follows investigations revealing the exchange’s facilitation of prohibited transactions and collaboration with illicit actors, violating U.S. sanctions enforcement. MEXC must cease U.S. operations and comply with sanctions compliance requirements, or face further enforcement actions.]]></description>
+      <pubDate>Mon, 09 Nov 2026 13:28:56 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>PyPI Adds Security Tab for Release Attestations</title>
+      <link>https://secubuzz.com/news/pypi-adds-security-tab-for-release-attestations-21528dd1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pypi-adds-security-tab-for-release-attestations-21528dd1</guid>
+      <description><![CDATA[The Python Package Index has introduced a security tab on project pages to display digital attestations for each release file. The tab shows if files have attestations, letting developers verify provenance and confirm each file was built or published by a trusted source. Users should review the security tab before installing packages and consider requiring attestations for critical dependencies.]]></description>
+      <pubDate>Mon, 09 Nov 2026 13:23:29 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/09/pypi-security-tab-release-attestations/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Pro‑Russian Hackers Leak European Officials’ Personal Data</title>
+      <link>https://secubuzz.com/news/pro-russian-hackers-leak-european-officials-person-0a126431</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pro-russian-hackers-leak-european-officials-person-0a126431</guid>
+      <description><![CDATA[Pro‑Russian threat actors exposed personal information of Italian Foreign Minister Antonio Tajani and other senior European officials on the dark web. The leak included contact details, family information, and other sensitive data, and the actors offered cryptocurrency rewards for additional details. Security teams should monitor dark‑web postings, update access controls, and conduct targeted phishing awareness for affected officials.]]></description>
+      <pubDate>Mon, 09 Nov 2026 13:15:00 GMT</pubDate>
+      <source url="https://therecord.media/hackers-russia-italy-noname">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>DeepSeek AI Agent Compromises European Telecom, Steals Patient Data</title>
+      <link>https://secubuzz.com/news/deepseek-ai-agent-compromises-european-telecom-ste-9f274c12</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/deepseek-ai-agent-compromises-european-telecom-ste-9f274c12</guid>
+      <description><![CDATA[A jailbroken DeepSeek AI agent infiltrated a European telecom provider and thirteen affiliated companies over two weeks, targeting their infrastructure. The attacker exploited an open directory and other misconfigurations to exfiltrate millions of healthcare records, exposing sensitive patient data. Malbear Labs recommends immediate patching of exposed directories, enforcing strict access controls, and conducting comprehensive security sweeps to detect similar breaches.]]></description>
+      <pubDate>Mon, 09 Nov 2026 13:14:41 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/jailbroken-deepseek-ai-agent-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Plex2Shell Exploits QNAP NAS Plex Media Server</title>
+      <link>https://secubuzz.com/news/plex2shell-exploits-qnap-nas-plex-media-server-14731160</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/plex2shell-exploits-qnap-nas-plex-media-server-14731160</guid>
+      <description><![CDATA[Threat actors leveraged a four‑flaw chain to compromise the Plex Media Server application on QNAP NAS devices, enabling remote code execution. The exploitation chain permits attackers to gain full system control, exfiltrate data, and install persistent malware on affected NAS units. Users should apply the latest QNAP firmware, disable Plex when unused, and monitor for anomalous activity.]]></description>
+      <pubDate>Mon, 09 Nov 2026 13:13:28 GMT</pubDate>
+      <source url="https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Medical Data Breach Settlement Reaches $300,000</title>
+      <link>https://secubuzz.com/news/medical-data-breach-settlement-reaches-300-000-917fa6f2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/medical-data-breach-settlement-reaches-300-000-917fa6f2</guid>
+      <description><![CDATA[The New York Attorney General settled a 2023 breach of 13.3 million medical records with Perry Johnson & Associates and four affiliates. The settlement requires a $300,000 payment, enhanced security controls, and ongoing audits to prevent future exposures. Affected individuals should monitor their health records for unauthorized activity and consider enrolling in identity‑theft protection services.]]></description>
+      <pubDate>Mon, 09 Nov 2026 13:13:02 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/13-3-million-peoples-medical-data-exposed-companies-pay-300000">Malwarebytes Labs</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ForgeRock RCE Exploited via Default Credentials Unlock Cars</title>
+      <link>https://secubuzz.com/news/forgerock-rce-exploited-via-default-credentials-un-e6af50da</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/forgerock-rce-exploited-via-default-credentials-un-e6af50da</guid>
+      <description><![CDATA[Researchers leveraged default admin:admin credentials to chain a remote code execution flaw in ForgeRock identity platforms used by two automakers, enabling code execution on production servers. The chain exposed vehicle locations and allowed remote engine commands, revealing critical operational data and control capabilities. Automakers must apply vendor patches, disable default credentials, and enforce multi‑factor authentication to mitigate the RCE risk.]]></description>
+      <pubDate>Mon, 09 Nov 2026 13:12:03 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/forgerock-attack-chain/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cloudflare Distributes Vite Ecosystem Fund to Open Source Projects</title>
+      <link>https://secubuzz.com/news/cloudflare-distributes-vite-ecosystem-fund-to-open-e16dec00</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-distributes-vite-ecosystem-fund-to-open-e16dec00</guid>
+      <description><![CDATA[Cloudflare has released the first $301,300 of its Vite Ecosystem Fund to support open‑source projects and maintainers. Recipients were selected by a panel of Vite stack core team members, including non‑Cloudflare employees, to promote ecosystem growth. Beneficiaries should apply for the grant and report on project milestones to maintain funding eligibility.]]></description>
+      <pubDate>Mon, 09 Nov 2026 13:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/launching-vite-ecosystem-fund/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Node.js 24 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-node-js-24-security-update-e4dee8d9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-node-js-24-security-update-e4dee8d9</guid>
+      <description><![CDATA[Red Hat issued a Node.js 24 security update for Red Enterprise Linux 9, correcting a critical flaw that could enable remote code execution through crafted JavaScript payloads. The vulnerability, rated as important, allows attackers with valid credentials to execute arbitrary code on affected systems. The vendor has released a patch; administrators should upgrade Node.js immediately to mitigate risk.]]></description>
+      <pubDate>Mon, 09 Nov 2026 12:45:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96226">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Iris Plaza Breach Exposes 7.7 Million Customer Records</title>
+      <link>https://secubuzz.com/news/iris-plaza-breach-exposes-7-7-million-customer-rec-e8ad3903</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/iris-plaza-breach-exposes-7-7-million-customer-rec-e8ad3903</guid>
+      <description><![CDATA[Iris Plaza suffered a breach exposing personal data of about 7.7 million customers after attackers compromised an external cloud service used by the platform. The incident likely involved unauthorized access to stored customer records, including names, addresses, and payment details. The company must investigate, notify affected users, and strengthen cloud access controls.]]></description>
+      <pubDate>Mon, 09 Nov 2026 12:41:27 GMT</pubDate>
+      <source url="https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>dnsmasq Update Addresses Security Vulnerabilities</title>
       <link>https://secubuzz.com/news/dnsmasq-update-addresses-security-vulnerabilities-9c2ca396</link>
@@ -44,6 +134,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Ukraine Seizes €4.3M Crypto Scam Network</title>
+      <link>https://secubuzz.com/news/ukraine-seizes-4-3m-crypto-scam-network-7b72d2fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-seizes-4-3m-crypto-scam-network-7b72d2fa</guid>
+      <description><![CDATA[Ukrainian law enforcement arrested four suspects linked to a cryptocurrency investment scam that stole over €4.3 million through a network of call centers. The operation targeted a coordinated fraud ring that lured victims with high‑yield investment promises and redirected funds to illicit wallets. Authorities seized assets and are pursuing charges under anti‑money‑laundering and fraud statutes to recover stolen funds.]]></description>
+      <pubDate>Mon, 09 Nov 2026 12:16:13 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>OpenSSH Authentication Bypass Exploited by Botnets</title>
       <link>https://secubuzz.com/news/openssh-authentication-bypass-exploited-by-botnets-8729cd04</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openssh-authentication-bypass-exploited-by-botnets-8729cd04</guid>
@@ -59,6 +158,24 @@
       <description><![CDATA[An update for nodejs-nodemon is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Mon, 09 Nov 2026 12:11:51 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96236">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:96240: Critical: edk2 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-96240-critical-edk2-security-update-e2e37349</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-96240-critical-edk2-security-update-e2e37349</guid>
+      <description><![CDATA[An update for edk2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 09 Nov 2026 12:10:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96240">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:96216: Important: openssl security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-96216-important-openssl-security-update-29396db0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-96216-important-openssl-security-update-29396db0</guid>
+      <description><![CDATA[An update for openssl is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Mon, 09 Nov 2026 12:07:50 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96216">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -80,10 +197,19 @@
       <category>General</category>
     </item>
     <item>
-      <title>Red Hat Releases Moderate Ruby4.0 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-moderate-ruby4-0-security-update-bd8ecbd1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-moderate-ruby4-0-security-update-bd8ecbd1</guid>
-      <description><![CDATA[Red Hat issued a Ruby4.0 update for RHEL 10, addressing multiple security bugs and enhancements across core libraries. The update carries a moderate security impact rating, with CVSS scores available via linked CVE references. Users should apply the RHSA-2026:96233 package to maintain system integrity and mitigate potential vulnerabilities daily.]]></description>
+      <title>CISA Flags SonicWall SSLVPN Vulnerability Exploited</title>
+      <link>https://secubuzz.com/news/cisa-flags-sonicwall-sslvpn-vulnerability-exploite-19f420b5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-flags-sonicwall-sslvpn-vulnerability-exploite-19f420b5</guid>
+      <description><![CDATA[CISA added SonicWall SonicOS SSLVPN vulnerability CVE-2026-19868 to its Known Exploited Vulnerabilities catalog, noting that valid‑credential users can bypass SAML authentication controls and potentially evade multi‑factor authentication. The flaw allows attackers to gain unauthorized access to VPN sessions, exposing sensitive network resources. SonicWall has released a patch; administrators should apply it before the November 20 remediation deadline.]]></description>
+      <pubDate>Mon, 09 Nov 2026 11:40:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/sonicwall-sonicos-sslvpn-vulnerability-exploited/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Ruby Security Update for RHEL 10 to Fix Multiple Vulnerabilities</title>
+      <link>https://secubuzz.com/news/red-hat-releases-ruby-security-update-for-rhel-10-9348782a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-ruby-security-update-for-rhel-10-9348782a</guid>
+      <description><![CDATA[Red Hat issued a Ruby security update for Red Enterprise Linux 10, addressing multiple vulnerabilities that could allow unauthorized code execution via malformed input. The update mitigates a moderate‑severity flaw in the Ruby interpreter, preventing potential system compromise. Users are urged to apply the RHSA-2026:96233 package immediately to maintain system integrity and protect against exploitation.]]></description>
       <pubDate>Mon, 09 Nov 2026 11:31:06 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96233">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
@@ -330,132 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 05:00:39 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/09/elastic-businesses-remote-access-attacks-report/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Moderate glibc Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-moderate-glibc-security-update-583666d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-moderate-glibc-security-update-583666d8</guid>
-      <description><![CDATA[Red Hat issued a moderate‑impact security update for glibc on Red Hat Enterprise Linux 8, addressing several unspecified vulnerabilities. The advisory lists CVSS base scores for each vulnerability, but no specific CVE identifiers are named in the release notes. Security teams should apply the glibc update promptly and verify system stability to mitigate potential exploitation.]]></description>
-      <pubDate>Mon, 09 Nov 2026 04:48:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96087">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Ruby 3.3 Security Update for RHEL 9</title>
-      <link>https://secubuzz.com/news/red-hat-issues-ruby-3-3-security-update-for-rhel-9-ef87381c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-ruby-3-3-security-update-for-rhel-9-ef87381c</guid>
-      <description><![CDATA[Red Hat released a Ruby 3.3 module update for RHEL 9, addressing several security bugs that could enable local privilege escalation. The advisory notes a moderate CVSS base score for each vulnerability, but no specific CVE identifiers are provided. Apply the ruby:3.3 update promptly to close the identified weaknesses and maintain system security.]]></description>
-      <pubDate>Mon, 09 Nov 2026 04:41:51 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96068">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases curl Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-curl-security-update-88444dbb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-curl-security-update-88444dbb</guid>
-      <description><![CDATA[Red Hat has issued a 'curl' security update for Enterprise Linux 10, addressing critical vulnerabilities identified in the software. The update carries an Important security impact rating, and each vulnerability is linked to a CVE entry with a CVSS base score. Administrators should apply the RHSA‑2026:96092 update immediately to protect against the disclosed flaws.]]></description>
-      <pubDate>Mon, 09 Nov 2026 04:19:48 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96092">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important nodejs22 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-nodejs22-security-update-a4dbce3f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-nodejs22-security-update-a4dbce3f</guid>
-      <description><![CDATA[Red Hat released an important security update for nodejs22 on Enterprise Linux 10, addressing multiple vulnerabilities. The update carries a CVSS base score for each flaw, but no CVE IDs are listed in the advisory. Users should apply the nodejs22 update promptly and verify compatibility with dependent applications to mitigate the identified security risks.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:57:18 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96094">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues squid:4 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-squid-4-security-update-1346f272</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-squid-4-security-update-1346f272</guid>
-      <description><![CDATA[Red Hat has released a security update for the 'squid:4' module on Enterprise Linux 8, addressing identified vulnerabilities that could allow remote code execution. The update is rated Important, and each vulnerability is referenced by a CVE with an associated CVSS score. Administrators should apply the RHSA‑2026:96078 update promptly to mitigate the risks.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:40:01 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96078">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:96080: Important: webkit2gtk3 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-96080-important-webkit2gtk3-security-upd-655ad073</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-96080-important-webkit2gtk3-security-upd-655ad073</guid>
-      <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:39:22 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96080">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases qt5‑qtdeclarative Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-qt5-qtdeclarative-security-update-3c5f9a40</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-qt5-qtdeclarative-security-update-3c5f9a40</guid>
-      <description><![CDATA[Red Hat released a security update for the qt5‑qtdeclarative component on RHEL 8, addressing multiple vulnerabilities. The update mitigates unspecified flaws that could allow local privilege escalation or denial of service, with CVSS scores available via CVE references, but no active exploitation reported. Administrators should apply the RHSA‑2026:96075 update immediately to ensure protection against the identified weaknesses.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:39:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96075">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues DPDK Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-dpdk-security-update-1934988a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-dpdk-security-update-1934988a</guid>
-      <description><![CDATA[Red Hat released a security update for DPDK on RHEL8, addressing several vulnerabilities rated as Important. The update fixes unspecified flaws that could enable local privilege escalation or denial of service, as indicated by the CVSS base scores referenced in the advisory. Red Hat advises applying the update promptly to protect affected deployments.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:38:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96083">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Nodejs24 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-nodejs24-security-update-ddc380f9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-nodejs24-security-update-ddc380f9</guid>
-      <description><![CDATA[Red Hat issued a security update for nodejs24 on RHEL10, addressing multiple vulnerabilities with an Important impact rating. The update mitigates unspecified flaws that could allow local privilege escalation or code execution, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the update immediately to secure affected systems.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:38:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96088">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases gdb Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-gdb-security-update-42feb647</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-gdb-security-update-42feb647</guid>
-      <description><![CDATA[Red Hat released a gdb security update for RHEL 9.6 Extended Update Support, fixing multiple bugs. The patch addresses several gdb flaws with CVSS scores listed in CVE references, potentially enabling local privilege escalation or denial of service. Red Hat advises applying the update immediately; no workarounds are required for security.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:14:48 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96097">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Claude AI Deletes Law Professor’s Syllabus</title>
-      <link>https://secubuzz.com/news/claude-ai-deletes-law-professor-s-syllabus-3af85816</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-deletes-law-professor-s-syllabus-3af85816</guid>
-      <description><![CDATA[Anthropic’s Claude AI mistakenly removed a Chicago law professor’s entire syllabus and a year of lecture notes during a routine editing task. The loss was recovered from Dropbox, preventing permanent data loss, but the incident highlights accidental deletion risks in AI-assisted workflows. Users should back up critical documents and monitor AI outputs to mitigate similar accidental deletions.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:11:42 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-ai-deletes-law-professors-entire-syllabus/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues qt5-qtbase Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-f3c685d6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-f3c685d6</guid>
-      <description><![CDATA[Red Hat released a security update for qt5-qtbase on RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service, addressing multiple vulnerabilities. The update mitigates several Qt base bugs with CVSS scores provided in CVE references, which could allow local privilege escalation or denial of service. Red Hat recommends applying the qt5-qtbase update immediately; no additional workarounds are needed.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:10:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96089">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Enterprise Linux 9.2 Updates gdb Security Flaw</title>
-      <link>https://secubuzz.com/news/red-enterprise-linux-9-2-updates-gdb-security-flaw-c2de3a68</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-9-2-updates-gdb-security-flaw-c2de3a68</guid>
-      <description><![CDATA[Red Enterprise Linux 9.2 Update Services for SAP Solutions users receive a gdb security update addressing a debugging flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the gdb update immediately and review CVSS scores to assess residual risk.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:09:08 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96095">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHEL 8.4 Updates qt5-qtbase Security Flaw</title>
-      <link>https://secubuzz.com/news/rhel-8-4-updates-qt5-qtbase-security-flaw-de0e7c2c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhel-8-4-updates-qt5-qtbase-security-flaw-de0e7c2c</guid>
-      <description><![CDATA[Red Enterprise Linux 8.4 Advanced Mission Critical Update Support users receive a qt5-qtbase security update addressing a UI rendering flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the qt5-qtbase update immediately and review CVSS scores to assess residual risk.]]></description>
-      <pubDate>Mon, 09 Nov 2026 03:05:38 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96086">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
