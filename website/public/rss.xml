@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 03:44:59 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 04:44:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Red Hat Releases gdb Security Update</title>
@@ -17,12 +17,48 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Claude AI Deletes Law Professor’s Syllabus</title>
+      <link>https://secubuzz.com/news/claude-ai-deletes-law-professor-s-syllabus-3af85816</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-ai-deletes-law-professor-s-syllabus-3af85816</guid>
+      <description><![CDATA[Anthropic’s Claude AI mistakenly removed a Chicago law professor’s entire syllabus and a year of lecture notes during a routine editing task. The loss was recovered from Dropbox, preventing permanent data loss, but the incident highlights accidental deletion risks in AI-assisted workflows. Users should back up critical documents and monitor AI outputs to mitigate similar accidental deletions.]]></description>
+      <pubDate>Mon, 09 Nov 2026 03:11:42 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-ai-deletes-law-professors-entire-syllabus/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat Issues qt5-qtbase Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-f3c685d6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-f3c685d6</guid>
       <description><![CDATA[Red Hat released a security update for qt5-qtbase on RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service, addressing multiple vulnerabilities. The update mitigates several Qt base bugs with CVSS scores provided in CVE references, which could allow local privilege escalation or denial of service. Red Hat recommends applying the qt5-qtbase update immediately; no additional workarounds are needed.]]></description>
       <pubDate>Mon, 09 Nov 2026 03:10:43 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96089">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Enterprise Linux 9.2 Updates gdb Security Flaw</title>
+      <link>https://secubuzz.com/news/red-enterprise-linux-9-2-updates-gdb-security-flaw-c2de3a68</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-9-2-updates-gdb-security-flaw-c2de3a68</guid>
+      <description><![CDATA[Red Enterprise Linux 9.2 Update Services for SAP Solutions users receive a gdb security update addressing a debugging flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the gdb update immediately and review CVSS scores to assess residual risk.]]></description>
+      <pubDate>Mon, 09 Nov 2026 03:09:08 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96095">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHEL 8.4 Updates qt5-qtbase Security Flaw</title>
+      <link>https://secubuzz.com/news/rhel-8-4-updates-qt5-qtbase-security-flaw-de0e7c2c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhel-8-4-updates-qt5-qtbase-security-flaw-de0e7c2c</guid>
+      <description><![CDATA[Red Enterprise Linux 8.4 Advanced Mission Critical Update Support users receive a qt5-qtbase security update addressing a UI rendering flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the qt5-qtbase update immediately and review CVSS scores to assess residual risk.]]></description>
+      <pubDate>Mon, 09 Nov 2026 03:05:38 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96086">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important gdb Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-gdb-security-update-508c2645</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-gdb-security-update-508c2645</guid>
+      <description><![CDATA[Red Hat released a gdb security update on RHEL 10.0 Extended Update Support, fixing vulnerabilities that could enable arbitrary code execution via malformed debugging data. The flaws, rated Important by Red Hat Product Security, carry high CVSS scores but have no known active exploitation. Apply the gdb update immediately and verify the package version to ensure the patches are installed.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:51:28 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96098">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -69,6 +105,15 @@
       <pubDate>Mon, 09 Nov 2026 02:05:10 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33500">SANS Internet Storm Center</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>OpenShift 4.21.42 Releases Critical Security Update</title>
+      <link>https://secubuzz.com/news/openshift-4-21-42-releases-critical-security-updat-5dc8b824</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openshift-4-21-42-releases-critical-security-updat-5dc8b824</guid>
+      <description><![CDATA[Red Enterprise Linux users of OpenShift Container Platform 4.21.42 receive a critical security update addressing bugs that could affect container runtime stability. The update is rated Critical by Red Hat Product Security, and CVSS scores via CVE links indicate high impact if unpatched. Administrators should apply the 4.21.42 update immediately and review CVSS scores to prioritize remediation.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:02:34 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95408">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Python‑jwt Update Addresses Security Vulnerabilities</title>
@@ -411,51 +456,6 @@
       <pubDate>Fri, 06 Nov 2026 18:28:41 GMT</pubDate>
       <source url="https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/">SecurityWeek</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Vendors Use Incident Records to Train AI, Raising Risks</title>
-      <link>https://secubuzz.com/news/vendors-use-incident-records-to-train-ai-raising-r-665fd110</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vendors-use-incident-records-to-train-ai-raising-r-665fd110</guid>
-      <description><![CDATA[Security incident archives are being repurposed by vendors to train AI models, exposing sensitive operational data. The practice introduces new attack vectors, as leaked logs can reveal system configurations, privileged credentials, and internal threat patterns. Organizations should enforce strict data‑handling policies, anonymize logs before sharing, and audit vendor training pipelines to mitigate exposure.]]></description>
-      <pubDate>Fri, 06 Nov 2026 18:27:30 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Critical OpenShift 4.22.22 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-critical-openshift-4-22-22-security-33b127e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-openshift-4-22-22-security-33b127e7</guid>
-      <description><![CDATA[Red Hat released OpenShift Container Platform 4.22.22, addressing multiple security flaws affecting container orchestration components. The update patches several vulnerabilities, each with a CVSS base score indicating high severity, and mitigates potential unauthorized access to cluster resources. Users should apply the 4.22.22 update immediately or enable automatic patching to ensure cluster security.]]></description>
-      <pubDate>Fri, 06 Nov 2026 18:10:52 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95346">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Dev Channel Updated to 159.0.8144.0</title>
-      <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-159-0-8144-0-64471497</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-159-0-8144-0-64471497</guid>
-      <description><![CDATA[Google Chrome’s Dev channel received an update to version 159.0.8144.0, affecting Windows, macOS, and Linux desktops. The release includes bug fixes and performance improvements, with a partial change log available in the Git repository. Users should install the update promptly, report new issues via the bug‑reporting system, and consult the community forum for support.]]></description>
-      <pubDate>Fri, 06 Nov 2026 17:28:33 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)</title>
-      <link>https://secubuzz.com/news/cve-2026-122193-issue-with-trusted-remote-executio-9acb1335</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-122193-issue-with-trusted-remote-executio-9acb1335</guid>
-      <description><![CDATA[Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for running scripts on managed instances.]]></description>
-      <pubDate>Fri, 06 Nov 2026 17:19:55 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-173-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Malicious Ruby Gem Steals Credentials and Poison AI Tools</title>
-      <link>https://secubuzz.com/news/malicious-ruby-gem-steals-credentials-and-poison-a-676c0d7c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-ruby-gem-steals-credentials-and-poison-a-676c0d7c</guid>
-      <description><![CDATA[A malicious Ruby gem, a Shai‑Hulud descendant, installs during gem installation and steals user credentials. The worm poisons AI coding tools and can wipe files when a stolen GitHub token is revoked, but no public exploit or CVE is disclosed. Security teams should audit gem sources, remove the malicious package, and enforce strict dependency verification to prevent credential theft.]]></description>
-      <pubDate>Fri, 06 Nov 2026 17:11:11 GMT</pubDate>
-      <source url="https://socket.dev/blog/shai-hulud-descendant-malicious-ruby-gem">Socket.dev</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

@@ -29,6 +29,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "claude-ai-deletes-law-professor-s-syllabus-3af85816",
+    "title": "Claude AI Deletes Law Professor’s Syllabus",
+    "summary": "Anthropic’s Claude AI mistakenly removed a Chicago law professor’s entire syllabus and a year of lecture notes during a routine editing task. The loss was recovered from Dropbox, preventing permanent data loss, but the incident highlights accidental deletion risks in AI-assisted workflows. Users should back up critical documents and monitor AI outputs to mitigate similar accidental deletions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-ai-deletes-law-professors-entire-syllabus/",
+    "publishedAt": "2026-11-09T03:11:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-ai-deletes-law-professor-s-syllabus",
+      "article-3af85816",
+      "3af85816",
+      "claude-ai-deletes-law-professor-s-syllabus-4351ed"
+    ]
+  },
+  {
     "slug": "red-hat-issues-qt5-qtbase-security-update-f3c685d6",
     "title": "Red Hat Issues qt5-qtbase Security Update",
     "summary": "Red Hat released a security update for qt5-qtbase on RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service, addressing multiple vulnerabilities. The update mitigates several Qt base bugs with CVSS scores provided in CVE references, which could allow local privilege escalation or denial of service. Red Hat recommends applying the qt5-qtbase update immediately; no additional workarounds are needed.",
@@ -44,6 +62,60 @@ export const news: NewsBrief[] = [
       "article-f3c685d6",
       "f3c685d6",
       "red-hat-issues-qt5-qtbase-security-update-37d7e0"
+    ]
+  },
+  {
+    "slug": "red-enterprise-linux-9-2-updates-gdb-security-flaw-c2de3a68",
+    "title": "Red Enterprise Linux 9.2 Updates gdb Security Flaw",
+    "summary": "Red Enterprise Linux 9.2 Update Services for SAP Solutions users receive a gdb security update addressing a debugging flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the gdb update immediately and review CVSS scores to assess residual risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96095",
+    "publishedAt": "2026-11-09T03:09:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-enterprise-linux-9-2-updates-gdb-security-flaw",
+      "article-c2de3a68",
+      "c2de3a68",
+      "red-enterprise-linux-9-2-updates-gdb-security-flaw-37d7df"
+    ]
+  },
+  {
+    "slug": "rhel-8-4-updates-qt5-qtbase-security-flaw-de0e7c2c",
+    "title": "RHEL 8.4 Updates qt5-qtbase Security Flaw",
+    "summary": "Red Enterprise Linux 8.4 Advanced Mission Critical Update Support users receive a qt5-qtbase security update addressing a UI rendering flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the qt5-qtbase update immediately and review CVSS scores to assess residual risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96086",
+    "publishedAt": "2026-11-09T03:05:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhel-8-4-updates-qt5-qtbase-security-flaw",
+      "article-de0e7c2c",
+      "de0e7c2c",
+      "rhel-8-4-updates-qt5-qtbase-security-flaw-37d7e0"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-gdb-security-update-508c2645",
+    "title": "Red Hat Issues Important gdb Security Update",
+    "summary": "Red Hat released a gdb security update on RHEL 10.0 Extended Update Support, fixing vulnerabilities that could enable arbitrary code execution via malformed debugging data. The flaws, rated Important by Red Hat Product Security, carry high CVSS scores but have no known active exploitation. Apply the gdb update immediately and verify the package version to ensure the patches are installed.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96098",
+    "publishedAt": "2026-11-09T02:51:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-gdb-security-update",
+      "article-508c2645",
+      "508c2645",
+      "red-hat-issues-important-gdb-security-update-37d7df"
     ]
   },
   {
@@ -136,6 +208,25 @@ export const news: NewsBrief[] = [
       "article-e2397a8e",
       "e2397a8e",
       "isc-stormcast-podcast-released-november-9-2026-57dd81"
+    ]
+  },
+  {
+    "slug": "openshift-4-21-42-releases-critical-security-updat-5dc8b824",
+    "title": "OpenShift 4.21.42 Releases Critical Security Update",
+    "summary": "Red Enterprise Linux users of OpenShift Container Platform 4.21.42 receive a critical security update addressing bugs that could affect container runtime stability. The update is rated Critical by Red Hat Product Security, and CVSS scores via CVE links indicate high impact if unpatched. Administrators should apply the 4.21.42 update immediately and review CVSS scores to prioritize remediation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95408",
+    "publishedAt": "2026-11-09T02:02:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openshift-4-21-42-releases-critical-security-updat",
+      "article-5dc8b824",
+      "5dc8b824",
+      "openshift-4-21-42-releases-critical-security-updat-37d846",
+      "openshift-4-21-42-releases-critical-security-update"
     ]
   },
   {
@@ -9500,98 +9591,6 @@ export const news: NewsBrief[] = [
       "article-2aad2aed",
       "2aad2aed",
       "llmjacking-drives-1m-cloud-ai-billing-fraud-3be83d"
-    ]
-  },
-  {
-    "slug": "chrome-extended-stable-update-156-0-8078-88-releas-96f8a50a",
-    "title": "Chrome Extended Stable Update 156.0.8078.88 Released",
-    "summary": "Google Chrome’s Extended Stable channel received update 156.0.8078.88 for Windows and macOS, rolling out over the next weeks. The update includes multiple security fixes for previously reported vulnerabilities, though no CVE identifiers are listed. Users should install the update promptly to maintain protection against known exploits and review the Chrome release log for details.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop.html",
-    "publishedAt": "2026-11-03T18:47:14.028Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-extended-stable-update-156-0-8078-88-releas",
-      "article-96f8a50a",
-      "96f8a50a",
-      "chrome-extended-stable-update-156-0-8078-88-releas-649d4c",
-      "chrome-extended-stable-update-156-0-8078-88-released"
-    ]
-  },
-  {
-    "slug": "europol-seizes-100-servers-for-fake-trading-scam-5942a559",
-    "title": "Europol Seizes 100 Servers for Fake Trading Scam",
-    "summary": "Europol seized 100 servers linked to a fake trading website scam targeting unsuspecting users. The operation uncovered threat actor profiles and court findings, indicating a coordinated phishing and credential theft campaign, though no direct exploitation of software vulnerabilities was reported. Law enforcement recommends monitoring for similar domain registrations and implementing stricter domain validation controls to mitigate future fraud.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/police-seizes-over-100-servers-in-investment-scam-crack",
-    "publishedAt": "2026-11-03T18:47:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "europol-seizes-100-servers-for-fake-trading-scam",
-      "article-5942a559",
-      "5942a559",
-      "europol-seizes-100-servers-for-fake-trading-scam-785955"
-    ]
-  },
-  {
-    "slug": "msecure-advises-password-and-2fa-reset-after-suspi-21661f78",
-    "title": "mSecure Advises Password and 2FA Reset After Suspicious Activity",
-    "summary": "mSecure password manager users received an email warning of suspicious activity linked to the app, prompting immediate credential changes. The alert indicates potential unauthorized access to stored passwords, 2FA tokens, and passkeys, though no data exfiltration has been confirmed. Users should change all passwords, reset 2FA, remove passkeys, and review account activity logs to mitigate potential compromise.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
-    "publishedAt": "2026-11-03T18:46:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "msecure-advises-password-and-2fa-reset-after-suspi",
-      "article-21661f78",
-      "21661f78",
-      "msecure-advises-password-and-2fa-reset-after-suspi-fd9126",
-      "msecure-advises-password-and-2fa-reset-after-suspicious-acti"
-    ]
-  },
-  {
-    "slug": "3am-ransomware-ai-driven-school-attack-detection-f4c7db26",
-    "title": "3AM Ransomware AI‑Driven School Attack Detection",
-    "summary": "3AM ransomware has launched AI‑driven attacks against school estate systems, encrypting critical data and demanding ransom. The malware leverages machine‑learning models to evade detection, targeting backup files and exploiting unpatched vulnerabilities for lateral movement. Apply the latest ransomware protection rules, patch vulnerable assets, isolate affected networks, and monitor for lateral movement to prevent further spread.",
-    "category": "Ransomware",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai",
-    "publishedAt": "2026-11-03T18:45:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "3am-ransomware-ai-driven-school-attack-detection",
-      "article-f4c7db26",
-      "f4c7db26",
-      "3am-ransomware-ai-driven-school-attack-detection-627225"
-    ]
-  },
-  {
-    "slug": "apple-warns-german-lawmakers-of-spyware-targeting-51916cf9",
-    "title": "Apple Warns German Lawmakers of Spyware Targeting",
-    "summary": "Apple warned several German lawmakers and foreign policy staff about spyware targeting them in 99 countries. The spyware exploits zero‑day vulnerabilities in iOS and macOS to covertly capture communications, with no public evidence of data exfiltration yet. Affected users should install the latest iOS and macOS updates, enable two‑factor authentication, and monitor network traffic for anomalies to mitigate espionage risk.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/german-officials-among-apple-spyware-warning-recipients",
-    "publishedAt": "2026-11-03T18:44:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-warns-german-lawmakers-of-spyware-targeting",
-      "article-51916cf9",
-      "51916cf9",
-      "apple-warns-german-lawmakers-of-spyware-targeting-1f6330"
     ]
   }
 ];
