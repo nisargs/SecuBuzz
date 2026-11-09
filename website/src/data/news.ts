@@ -11,6 +11,142 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-moderate-ruby4-0-security-update-bd8ecbd1",
+    "title": "Red Hat Releases Moderate Ruby4.0 Security Update",
+    "summary": "Red Hat issued a Ruby4.0 update for RHEL 10, addressing multiple security bugs and enhancements across core libraries. The update carries a moderate security impact rating, with CVSS scores available via linked CVE references. Users should apply the RHSA-2026:96233 package to maintain system integrity and mitigate potential vulnerabilities daily.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96233",
+    "publishedAt": "2026-11-09T11:31:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-moderate-ruby4-0-security-update",
+      "article-bd8ecbd1",
+      "bd8ecbd1",
+      "red-hat-releases-moderate-ruby4-0-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "researchers-exploit-default-passwords-to-hack-auto-558104dd",
+    "title": "Researchers Exploit Default Passwords to Hack Automaker Apps",
+    "summary": "Researchers exploited default 'admin:admin' credentials on ForgeRock servers powering two automaker mobile apps, gaining full account control. The breach enabled attackers to access customer data and remotely unlock and start connected vehicles, exposing critical operational security. Automakers should immediately change default passwords, apply ForgeRock security patches, and audit authentication configurations to prevent further exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+    "publishedAt": "2026-11-09T11:27:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-exploit-default-passwords-to-hack-auto",
+      "article-558104dd",
+      "558104dd",
+      "researchers-exploit-default-passwords-to-hack-auto-7b9123",
+      "researchers-exploit-default-passwords-to-hack-automaker-apps"
+    ]
+  },
+  {
+    "slug": "amplifon-americas-breach-exposes-1-3-million-recor-cf1de79b",
+    "title": "Amplifon Americas Breach Exposes 1.3 Million Records",
+    "summary": "Amplifon Americas suffered a data breach that exposed personal, health, and insurance information, including Social Security numbers, from internal systems. The incident compromised data for approximately 1.3 million individuals, potentially enabling identity theft and fraud across affected regions. Amplifon has notified affected customers and is collaborating with law enforcement to investigate the breach and implement remedial controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/",
+    "publishedAt": "2026-11-09T11:20:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amplifon-americas-breach-exposes-1-3-million-recor",
+      "article-cf1de79b",
+      "cf1de79b",
+      "amplifon-americas-breach-exposes-1-3-million-recor-611b1b",
+      "amplifon-americas-breach-exposes-1-3-million-records"
+    ]
+  },
+  {
+    "slug": "web3auth-flaw-used-to-steal-keplr-crypto-8e9353a4",
+    "title": "Web3Auth Flaw Used to Steal Keplr Crypto",
+    "summary": "A flaw in Web3Auth’s authentication flow was exploited to steal funds from Keplr wallets using Google or Apple sign‑in. The vulnerability bypassed identity checks, allowing attackers to access wallet balances and empty other at‑risk wallets via the same route. Web3Auth has cleared affected wallets and issued a security update; users should monitor balances and consider switching authentication providers.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+    "publishedAt": "2026-11-09T10:56:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "web3auth-flaw-used-to-steal-keplr-crypto",
+      "article-8e9353a4",
+      "8e9353a4",
+      "web3auth-flaw-used-to-steal-keplr-crypto-6e505e"
+    ]
+  },
+  {
+    "slug": "plex-media-servers-targeted-by-plex2shell-exploit-cae438a4",
+    "title": "Plex Media Servers Targeted by Plex2Shell Exploit Chain",
+    "summary": "Hackers leveraged the Plex2Shell exploit chain to compromise Plex Media Server installations, deploying cryptocurrency miners and proxy software. The chain exploits four CVEs—CVE-2026-96652, CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656—allowing remote code execution with PoC, resulting in unauthorized system takeover and resource hijacking. Administrators should patch Plex Media Server to the latest release, disable unused services, and monitor for anomalous mining activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-plex2shell-flaws/",
+    "publishedAt": "2026-11-09T10:33:03.000Z",
+    "cves": [
+      "CVE-2026-96652",
+      "CVE-2026-96654",
+      "CVE-2026-96655",
+      "CVE-2026-96656"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "plex-media-servers-targeted-by-plex2shell-exploit",
+      "article-cae438a4",
+      "cae438a4",
+      "plex-media-servers-targeted-by-plex2shell-exploit-1c3d96",
+      "plex-media-servers-targeted-by-plex2shell-exploit-chain"
+    ]
+  },
+  {
+    "slug": "powersystem-center-faces-two-critical-9-0-flaws-6dd04f33",
+    "title": "PowerSYSTEM Center Faces Two Critical 9.0 Flaws",
+    "summary": "CISA identified two critical PowerSYSTEM Center flaws that allow authenticated users to access administrator resources or execute unauthorized SQL commands. The vulnerabilities, rated CVSS 9.0, enable privilege escalation and data exfiltration in energy and manufacturing sectors worldwide, with no public exploit yet. CISA issued advisory ICSA-26-307-01 and recommends applying vendor patches as soon as available to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cisa-warns-critical-flaws-in-powersystem-center/",
+    "publishedAt": "2026-11-09T10:32:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "powersystem-center-faces-two-critical-9-0-flaws",
+      "article-6dd04f33",
+      "6dd04f33",
+      "powersystem-center-faces-two-critical-9-0-flaws-1874c6"
+    ]
+  },
+  {
+    "slug": "modsecurity-exposes-high-severity-waf-bypass-flaw-b7eb8a24",
+    "title": "ModSecurity Exposes High-Severity WAF Bypass Flaw",
+    "summary": "ModSecurity, a web application firewall, contains a high-severity flaw (CVE-2026-83844) that permits malicious uploads and can trigger server crashes. The vulnerability enables remote code execution via crafted requests, posing a significant risk to Apache, IIS, and Nginx deployments without authentication. Maintainers released advisories on September 30; users should apply the latest ModSecurity update or implement mitigations immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/modsecurity-patches-two-high-severity-flaws/",
+    "publishedAt": "2026-11-09T10:31:28.000Z",
+    "cves": [
+      "CVE-2026-83844"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "modsecurity-exposes-high-severity-waf-bypass-flaw",
+      "article-b7eb8a24",
+      "b7eb8a24",
+      "modsecurity-exposes-high-severity-waf-bypass-flaw-59138a"
+    ]
+  },
+  {
     "slug": "red-hat-releases-util-linux-security-update-cc3bf8d2",
     "title": "Red Hat Releases util‑linux Security Update",
     "summary": "Red Hat issued a security update for the util‑linux package on RHEL 8, addressing multiple unspecified vulnerabilities. The advisory references several CVEs rated as Important, yet no active exploitation has been reported to date. Administrators should apply the RHSA‑2026:96212 update promptly to mitigate potential privilege‑escalation or denial‑of‑service risks in affected systems.",
@@ -47,6 +183,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ai-tool-artex-rapidly-steals-azure-key-vault-secre-1f00d2ac",
+    "title": "AI Tool ARTEX Rapidly Steals Azure Key Vault Secrets",
+    "summary": "Threat actors used the ARTEX AI tool to locate and exfiltrate Azure Key Vault secrets from public GitHub repositories within five minutes of scanning. The automated code search identified misconfigured secrets, enabling credential theft and potential lateral movement into Microsoft cloud environments. Microsoft recommends reviewing GitHub code for exposed secrets, rotating compromised keys, and enforcing Azure Key Vault access policies.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/artex-ai-azure-key-vault-secrets/",
+    "publishedAt": "2026-11-09T10:04:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-tool-artex-rapidly-steals-azure-key-vault-secre",
+      "article-1f00d2ac",
+      "1f00d2ac",
+      "ai-tool-artex-rapidly-steals-azure-key-vault-secre-71d469",
+      "ai-tool-artex-rapidly-steals-azure-key-vault-secrets"
+    ]
+  },
+  {
     "slug": "bank-loses-133m-via-exploited-service-provider-d74f0b32",
     "title": "Bank Loses $133M via Exploited Service Provider",
     "summary": "Attackers siphoned $133 million from Crédit Mutuel Arkéa by abusing the bank’s account to wire funds to other banks, later converting them into cryptocurrency. The breach exploited CVE‑2023‑1380 in a third‑party service provider, enabling unauthorized fund transfers without triggering internal controls. Security teams should apply the CVE‑2023‑1380 patch, audit transfer logs, and strengthen multi‑factor authentication to prevent similar exploits.",
@@ -62,6 +217,25 @@ export const news: NewsBrief[] = [
       "article-d74f0b32",
       "d74f0b32",
       "bank-loses-133m-via-exploited-service-provider-3689c5"
+    ]
+  },
+  {
+    "slug": "lnbits-operators-urged-to-shut-down-servers-amid-a-ad646b3b",
+    "title": "LNbits Operators Urged to Shut Down Servers Amid Attacks",
+    "summary": "LNbits operators were targeted by an exploit that created new accounts and withdrew 2,285,545 satoshis from their Bitcoin Lightning wallet servers. The vulnerability allowed unauthenticated account creation and fund transfer, exposing servers to unauthorized withdrawals without user interaction. LNbits has issued a shutdown advisory and is releasing security fixes; operators should stop services immediately and apply forthcoming patches.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+    "publishedAt": "2026-11-09T10:01:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "lnbits-operators-urged-to-shut-down-servers-amid-a",
+      "article-ad646b3b",
+      "ad646b3b",
+      "lnbits-operators-urged-to-shut-down-servers-amid-a-5d7d55",
+      "lnbits-operators-urged-to-shut-down-servers-amid-attacks"
     ]
   },
   {
@@ -399,6 +573,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-important-nodejs22-security-update-a4dbce3f",
+    "title": "Red Hat Issues Important nodejs22 Security Update",
+    "summary": "Red Hat released an important security update for nodejs22 on Enterprise Linux 10, addressing multiple vulnerabilities. The update carries a CVSS base score for each flaw, but no CVE IDs are listed in the advisory. Users should apply the nodejs22 update promptly and verify compatibility with dependent applications to mitigate the identified security risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96094",
+    "publishedAt": "2026-11-09T03:57:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-nodejs22-security-update",
+      "article-a4dbce3f",
+      "a4dbce3f",
+      "red-hat-issues-important-nodejs22-security-update-37d7df"
+    ]
+  },
+  {
     "slug": "red-hat-issues-squid-4-security-update-1346f272",
     "title": "Red Hat Issues squid:4 Security Update",
     "summary": "Red Hat has released a security update for the 'squid:4' module on Enterprise Linux 8, addressing identified vulnerabilities that could allow remote code execution. The update is rated Important, and each vulnerability is referenced by a CVE with an associated CVSS score. Administrators should apply the RHSA‑2026:96078 update promptly to mitigate the risks.",
@@ -433,6 +625,24 @@ export const news: NewsBrief[] = [
       "655ad073",
       "rhsa-2026-96080-important-webkit2gtk3-security-upd-37d7e0",
       "rhsa-2026-96080-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-qt5-qtdeclarative-security-update-3c5f9a40",
+    "title": "Red Hat Releases qt5‑qtdeclarative Security Update",
+    "summary": "Red Hat released a security update for the qt5‑qtdeclarative component on RHEL 8, addressing multiple vulnerabilities. The update mitigates unspecified flaws that could allow local privilege escalation or denial of service, with CVSS scores available via CVE references, but no active exploitation reported. Administrators should apply the RHSA‑2026:96075 update immediately to ensure protection against the identified weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96075",
+    "publishedAt": "2026-11-09T03:39:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-qt5-qtdeclarative-security-update",
+      "article-3c5f9a40",
+      "3c5f9a40",
+      "red-hat-releases-qt5-qtdeclarative-security-update-37d7e0"
     ]
   },
   {
@@ -9337,224 +9547,6 @@ export const news: NewsBrief[] = [
       "article-aeb8676b",
       "aeb8676b",
       "chromeos-beta-updates-to-os-16868-9-0-441376"
-    ]
-  },
-  {
-    "slug": "secure-your-containers-without-breaking-what-works-2c37d2d1",
-    "title": "Secure your containers without breaking what works",
-    "summary": "Teams identify vulnerabilities, but turning those findings into lower risk is much harder. Each unnecessary component can expand the attack surface and add vulnerabilities to investigate, patch or explain during an audit. Consider an NGINX image that contains 274 categorized vulnerabilities straight from download.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/rapidfort-runtime-container-profiling/",
-    "publishedAt": "2026-11-04T06:00:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "secure-your-containers-without-breaking-what-works",
-      "article-2c37d2d1",
-      "2c37d2d1",
-      "secure-your-containers-without-breaking-what-works-3699a1"
-    ]
-  },
-  {
-    "slug": "ashlar-vellum-cobalt-ar-heap-overflow-enables-rce-9f1a246f",
-    "title": "Ashlar-Vellum Cobalt AR Heap Overflow Enables RCE",
-    "summary": "A heap-based buffer overflow in Ashlar-Vellum Cobalt’s AR file parser allows remote attackers to execute arbitrary code after opening a malicious file. CVE-2026-121743 carries a CVSS score of 7.8 and requires user interaction to trigger the exploit. A patch is available; users should update the software immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-873/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-121743"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ashlar-vellum-cobalt-ar-heap-overflow-enables-rce",
-      "article-9f1a246f",
-      "9f1a246f",
-      "ashlar-vellum-cobalt-ar-heap-overflow-enables-rce-6f3cae"
-    ]
-  },
-  {
-    "slug": "ashlar-vellum-cobalt-xe-stack-overflow-enables-rce-6c8edb54",
-    "title": "Ashlar-Vellum Cobalt XE Stack Overflow Enables RCE",
-    "summary": "A stack-based buffer overflow in Ashlar-Vellum Cobalt XE’s file parser permits remote code execution when a user opens a crafted file. CVE-2026-121744 has a CVSS score of 7.8 and requires user interaction to trigger. A patch is available; administrators should update the product immediately to mitigate the critical vulnerability today.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-870/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-121744"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ashlar-vellum-cobalt-xe-stack-overflow-enables-rce",
-      "article-6c8edb54",
-      "6c8edb54",
-      "ashlar-vellum-cobalt-xe-stack-overflow-enables-rce-6f3cad"
-    ]
-  },
-  {
-    "slug": "zdi-26-869-mailenable-save-directory-traversal-arb-5bd67715",
-    "title": "ZDI-26-869: MailEnable Save Directory Traversal Arbitrary File Creation Vulnerability",
-    "summary": "This vulnerability allows remote attackers to create arbitrary files on affected installations of MailEnable. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2026-114556.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-869/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114556"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-869-mailenable-save-directory-traversal-arb",
-      "article-5bd67715",
-      "5bd67715",
-      "zdi-26-869-mailenable-save-directory-traversal-arb-6f3cab",
-      "zdi-26-869-mailenable-save-directory-traversal-arbitrary-fil"
-    ]
-  },
-  {
-    "slug": "ashlar-vellum-cobalt-xe-file-parsing-use-after-fre-8c0fd99b",
-    "title": "Ashlar-Vellum Cobalt XE File Parsing Use-After-Free RCE",
-    "summary": "A use-after-free vulnerability in Ashlar-Vellum Cobalt XE file parsing allows remote code execution when a user opens a malicious file. The assigned CVE is CVE-2026-121742 with a CVSS rating of 7.8. Users should avoid opening untrusted files and apply vendor patches as soon as available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-874/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-121742"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ashlar-vellum-cobalt-xe-file-parsing-use-after-fre",
-      "article-8c0fd99b",
-      "8c0fd99b",
-      "ashlar-vellum-cobalt-xe-file-parsing-use-after-fre-6f3cae",
-      "ashlar-vellum-cobalt-xe-file-parsing-use-after-free-rce"
-    ]
-  },
-  {
-    "slug": "ashlar-vellum-cobalt-vulnerability-enables-remote-85bb0af9",
-    "title": "Ashlar-Vellum Cobalt Vulnerability Enables Remote Code Execution",
-    "summary": "A use-after-free vulnerability in Ashlar-Vellum Cobalt XE allows remote attackers to execute arbitrary code on affected installations. Tracked as CVE-2026-121753 with a CVSS score of 7.8, the flaw requires user interaction through a malicious file or webpage. Security teams should restrict untrusted file opening and monitor vendor advisories for mitigations against this zero-day flaw.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-872/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-121753"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ashlar-vellum-cobalt-vulnerability-enables-remote",
-      "article-85bb0af9",
-      "85bb0af9",
-      "ashlar-vellum-cobalt-vulnerability-enables-remote-6f3cae",
-      "ashlar-vellum-cobalt-vulnerability-enables-remote-code-execu"
-    ]
-  },
-  {
-    "slug": "zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsi-8ceda593",
-    "title": "ZDI-26-871: (0Day) Ashlar-Vellum Cobalt LI File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-121752.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-871/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-121752"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsi",
-      "article-8ceda593",
-      "8ceda593",
-      "zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsi-6f3cad",
-      "zdi-26-871-0day-ashlar-vellum-cobalt-li-file-parsing-heap-ba"
-    ]
-  },
-  {
-    "slug": "crowdstrike-launches-agentic-adversary-emulation-f-0acb86d5",
-    "title": "CrowdStrike Launches Agentic Adversary Emulation for AI Threats",
-    "summary": "CrowdStrike released Agentic Adversary Emulation, a new capability integrated into its platform to simulate AI-driven attacker behaviors. The feature enables security teams to test defenses against sophisticated AI-powered threats by emulating adversary tactics autonomously. Organizations can deploy the emulation to validate detection and response workflows against evolving AI-enabled adversaries through continuous automated testing cycles.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-agentic-adversary-emulation-counters-ai-enabled-adversaries/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-launches-agentic-adversary-emulation-f",
-      "article-0acb86d5",
-      "0acb86d5",
-      "crowdstrike-launches-agentic-adversary-emulation-f-567773",
-      "crowdstrike-launches-agentic-adversary-emulation-for-ai-thre"
-    ]
-  },
-  {
-    "slug": "crowdstrike-adds-enterprise-browser-security-to-fa-ed42ec16",
-    "title": "CrowdStrike Adds Enterprise Browser Security to Falcon",
-    "summary": "CrowdStrike integrated enterprise browser security into the Falcon platform, expanding its endpoint protection capabilities. The new module isolates untrusted web sessions, blocks malicious scripts, and enforces policy controls at the browser level to reduce attack surface. Security teams can configure browser protection rules via Falcon consoles and receive telemetry for threat hunting and compliance reporting.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-brings-enterprise-browser-security-to-falcon-platform/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-adds-enterprise-browser-security-to-fa",
-      "article-ed42ec16",
-      "ed42ec16",
-      "crowdstrike-adds-enterprise-browser-security-to-fa-4e3366",
-      "crowdstrike-adds-enterprise-browser-security-to-falcon"
-    ]
-  },
-  {
-    "slug": "crowdstrike-unveils-falcon-cloud-security-ai-workl-c60c771c",
-    "title": "CrowdStrike Unveils Falcon Cloud Security AI Workload Protection",
-    "summary": "CrowdStrike launches new Falcon Cloud Security features to protect AI workloads in cloud environments. The updates address emerging cloud-native attack vectors by enhancing runtime monitoring, policy enforcement, and threat intelligence integration. Security teams should deploy the latest Falcon Cloud Security version and enable the new AI workload protection modules for optimal defense.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/falcon-cloud-security-innovations-secure-cloud-ai-runs-on/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-unveils-falcon-cloud-security-ai-workl",
-      "article-c60c771c",
-      "c60c771c",
-      "crowdstrike-unveils-falcon-cloud-security-ai-workl-772633",
-      "crowdstrike-unveils-falcon-cloud-security-ai-workload-protec"
-    ]
-  },
-  {
-    "slug": "crowdstrike-enhances-agentic-soc-against-agent-ins-a6576908",
-    "title": "CrowdStrike Enhances Agentic SOC Against Agent Insider Risks",
-    "summary": "CrowdStrike has updated its Agentic SOC platform to detect and block malicious actions associated with agent insider threats. The security update integrates enhanced behavioral monitoring to identify unauthorized activities and potential security compromises within corporate agent environments. Enterprise security teams can deploy the upgraded platform features to improve real-time threat detection and mitigate internal operational risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/crowdstrike-detects-and-stops-agent-insider-threats/",
-    "publishedAt": "2026-11-04T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "crowdstrike-enhances-agentic-soc-against-agent-ins",
-      "article-a6576908",
-      "a6576908",
-      "crowdstrike-enhances-agentic-soc-against-agent-ins-5f342c",
-      "crowdstrike-enhances-agentic-soc-against-agent-insider-risks"
     ]
   }
 ];
