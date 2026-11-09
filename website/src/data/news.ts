@@ -11,6 +11,158 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "dnsmasq-update-addresses-security-vulnerabilities-9c2ca396",
+    "title": "dnsmasq Update Addresses Security Vulnerabilities",
+    "summary": "Red Hat released a security update for dnsmasq on RHEL 8.8, addressing multiple vulnerabilities flagged as Important. The vulnerabilities, detailed in linked CVE entries, could allow local privilege escalation or denial of service, but no active exploitation has been reported. Administrators should apply the RHSA‑2026:96246 update immediately or install the latest dnsmasq package to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96246",
+    "publishedAt": "2026-11-09T12:39:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dnsmasq-update-addresses-security-vulnerabilities",
+      "article-9c2ca396",
+      "9c2ca396",
+      "dnsmasq-update-addresses-security-vulnerabilities-37d7d9"
+    ]
+  },
+  {
+    "slug": "npm-packages-hijacked-to-deploy-polinrider-malware-e235adf4",
+    "title": "npm Packages Hijacked to Deploy PolinRider Malware",
+    "summary": "Attackers hijacked ten npm packages, inserting malicious code into twelve releases to distribute PolinRider malware. The embedded script leverages the Ethereum blockchain to locate a command‑and‑control server, enabling remote payload downloads and achieving a CVSS‑8.7 severity score. Sonatype recommends removing the compromised packages, updating dependencies, and scanning for hidden code; security teams should monitor npm registries for similar tampering.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-10-npm-packages-to-spread-polinrider-malware-using-ethereum-blockchain/",
+    "publishedAt": "2026-11-09T12:39:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "npm-packages-hijacked-to-deploy-polinrider-malware",
+      "article-e235adf4",
+      "e235adf4",
+      "npm-packages-hijacked-to-deploy-polinrider-malware-1d646e"
+    ]
+  },
+  {
+    "slug": "google-gemini-allows-download-of-filtered-ai-image-b4da79bc",
+    "title": "Google Gemini Allows Download of Filtered AI Images",
+    "summary": "Google Gemini’s safety filter bypass lets users download AI‑generated images that the platform’s filters rejected, bypassing controls without a jailbreak. The flaw allows a rejected image to be served while the chat shows an approved one, CVE-2026-19868. Google patched the safety filter logic; users should apply the latest Gemini update or disable the download feature until the fix is deployed.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/google-gemini-safety-bypass-ai-generated-images/",
+    "publishedAt": "2026-11-09T12:26:16.000Z",
+    "cves": [
+      "CVE-2026-19868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "google-gemini-allows-download-of-filtered-ai-image",
+      "article-b4da79bc",
+      "b4da79bc",
+      "google-gemini-allows-download-of-filtered-ai-image-6404e2",
+      "google-gemini-allows-download-of-filtered-ai-images"
+    ]
+  },
+  {
+    "slug": "foreign-minister-s-data-leaked-on-dark-web-bd5ae861",
+    "title": "Foreign Minister’s Data Leaked on Dark Web",
+    "summary": "Italian Foreign Minister Antonio Tajani confirmed that his personal data was released on the dark web by pro‑Russian hackers. The breach exposed contact details, travel itineraries, and diplomatic credentials, potentially compromising future diplomatic communications. Italian authorities urged affected officials to change credentials, monitor accounts, and strengthen encryption on sensitive communications.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/italys-meloni-blames-pro-russian-hackers-for-leak-of-foreign-ministers-data-on-the-dark-web/",
+    "publishedAt": "2026-11-09T12:22:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "foreign-minister-s-data-leaked-on-dark-web",
+      "article-bd5ae861",
+      "bd5ae861",
+      "foreign-minister-s-data-leaked-on-dark-web-35183b"
+    ]
+  },
+  {
+    "slug": "openssh-authentication-bypass-exploited-by-botnets-8729cd04",
+    "title": "OpenSSH Authentication Bypass Exploited by Botnets",
+    "summary": "Hackers are exploiting an authentication bypass in OpenSSH, identified as CVE-2026-123158, primarily via botnets and crypto-mining operations. The flaw allows attackers to bypass SSH key verification, enabling unauthorized session initiation without credentials, and has a PoC available. Red Hat and OpenSSH maintainers have released patch updates; administrators should apply the latest OpenSSH version or the vendor‑issued advisory immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/",
+    "publishedAt": "2026-11-09T12:13:32.000Z",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openssh-authentication-bypass-exploited-by-botnets",
+      "article-8729cd04",
+      "8729cd04",
+      "openssh-authentication-bypass-exploited-by-botnets-346b3a"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-96236-important-nodejs-nodemon-security-0b7b28d2",
+    "title": "RHSA-2026:96236: Important: nodejs-nodemon security update",
+    "summary": "An update for nodejs-nodemon is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96236",
+    "publishedAt": "2026-11-09T12:11:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-96236-important-nodejs-nodemon-security",
+      "article-0b7b28d2",
+      "0b7b28d2",
+      "rhsa-2026-96236-important-nodejs-nodemon-security-37d7d9",
+      "rhsa-2026-96236-important-nodejs-nodemon-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-96238-important-tesseract-security-updat-6612bb9b",
+    "title": "RHSA-2026:96238: Important: tesseract security update",
+    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96238",
+    "publishedAt": "2026-11-09T11:56:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-96238-important-tesseract-security-updat",
+      "article-6612bb9b",
+      "6612bb9b",
+      "rhsa-2026-96238-important-tesseract-security-updat-37d7d9",
+      "rhsa-2026-96238-important-tesseract-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-96239-important-tesseract-security-updat-33029807",
+    "title": "RHSA-2026:96239: Important: tesseract security update",
+    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96239",
+    "publishedAt": "2026-11-09T11:45:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-96239-important-tesseract-security-updat",
+      "article-33029807",
+      "33029807",
+      "rhsa-2026-96239-important-tesseract-security-updat-37d7d9",
+      "rhsa-2026-96239-important-tesseract-security-update"
+    ]
+  },
+  {
     "slug": "red-hat-releases-moderate-ruby4-0-security-update-bd8ecbd1",
     "title": "Red Hat Releases Moderate Ruby4.0 Security Update",
     "summary": "Red Hat issued a Ruby4.0 update for RHEL 10, addressing multiple security bugs and enhancements across core libraries. The update carries a moderate security impact rating, with CVSS scores available via linked CVE references. Users should apply the RHSA-2026:96233 package to maintain system integrity and mitigate potential vulnerabilities daily.",
@@ -45,6 +197,25 @@ export const news: NewsBrief[] = [
       "558104dd",
       "researchers-exploit-default-passwords-to-hack-auto-7b9123",
       "researchers-exploit-default-passwords-to-hack-automaker-apps"
+    ]
+  },
+  {
+    "slug": "researchers-uncover-notc2-ai-powered-c2-framework-595b61c8",
+    "title": "Researchers Uncover NotC2 AI-Powered C2 Framework That Hides Malicious Commands Inside AWS Services",
+    "summary": "It runs entirely on native AWS services and uses Amazon Bedrock to turn plain English into cloud commands. It is service abuse, not a flaw in Bedrock, and it only works after an attacker already holds AWS credentials .",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/notc2-ai-powered-c2-framework/",
+    "publishedAt": "2026-11-09T11:26:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-uncover-notc2-ai-powered-c2-framework",
+      "article-595b61c8",
+      "595b61c8",
+      "researchers-uncover-notc2-ai-powered-c2-framework-774fd1",
+      "researchers-uncover-notc2-ai-powered-c2-framework-that-hides"
     ]
   },
   {
@@ -9379,174 +9550,6 @@ export const news: NewsBrief[] = [
       "article-20eb57f9",
       "20eb57f9",
       "red-hat-issues-bind9-16-security-update-37d855"
-    ]
-  },
-  {
-    "slug": "google-patches-critical-android-rce-flaw-f36658d8",
-    "title": "Google Patches Critical Android RCE Flaw",
-    "summary": "A critical Android flaw, CVE-2026-58868, allows remote code execution on Android 14‑17 devices without user interaction. The flaw exploits a buffer overflow in the media subsystem, granting attackers system‑level code execution and is a high‑severity zero‑day. Google issued a patch in its November bulletin; devices must apply the 2026‑11‑01 security patch or later, distributed by OEMs and carriers.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
-    "publishedAt": "2026-11-04T07:46:15.000Z",
-    "cves": [
-      "CVE-2026-58868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "google-patches-critical-android-rce-flaw",
-      "article-f36658d8",
-      "f36658d8",
-      "google-patches-critical-android-rce-flaw-76729c"
-    ]
-  },
-  {
-    "slug": "rsync-3-5-2-addresses-cpu-exhaustion-flaw-ecc28fd7",
-    "title": "rsync 3.5.2 Addresses CPU Exhaustion Flaw",
-    "summary": "The rsync 3.5.2 release fixes a CPU exhaustion vulnerability that allowed a client to monopolize server CPU during checksum calculations. The flaw could cause denial of service by tying up CPU and disk resources, impacting other concurrent transfers. The update also introduces a queue‑backing feature, allowing administrators to defer large transfers and prevent resource contention.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/rsync-3-5-2-released/",
-    "publishedAt": "2026-11-04T07:43:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rsync-3-5-2-addresses-cpu-exhaustion-flaw",
-      "article-ecc28fd7",
-      "ecc28fd7",
-      "rsync-3-5-2-addresses-cpu-exhaustion-flaw-ac61e4"
-    ]
-  },
-  {
-    "slug": "hackers-use-new-infostealer-malware-to-steal-chatg-84149201",
-    "title": "Hackers Use New Infostealer Malware to Steal ChatGPT, Claude, and Codex Tokens That Survive Password Resets",
-    "summary": "Hackers are expanding information theft beyond saved passwords, targeting authentication tokens and session data stored by ChatGPT, Claude, Codex, and other AI tools. Two Windows malware families, WardenStealer and Aoki, collect credentials that may remain usable after a password reset, leaving victims exposed even after they believe their accounts are secured.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-new-infostealer-malware/",
-    "publishedAt": "2026-11-04T07:34:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-new-infostealer-malware-to-steal-chatg",
-      "article-84149201",
-      "84149201",
-      "hackers-use-new-infostealer-malware-to-steal-chatg-158059",
-      "hackers-use-new-infostealer-malware-to-steal-chatgpt-claude-"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95016-important-opentelemetry-collector-c30b1b70",
-    "title": "RHSA-2026:95016: Important: opentelemetry-collector security update",
-    "summary": "An update for opentelemetry-collector is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95016",
-    "publishedAt": "2026-11-04T07:34:48.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95016-important-opentelemetry-collector",
-      "article-c30b1b70",
-      "c30b1b70",
-      "rhsa-2026-95016-important-opentelemetry-collector-37d855",
-      "rhsa-2026-95016-important-opentelemetry-collector-security-u"
-    ]
-  },
-  {
-    "slug": "ai-generated-malware-shows-distinct-code-patterns-c716b0a2",
-    "title": "AI-Generated Malware Shows Distinct Code Patterns",
-    "summary": "The interview examines how AI‑generated malware differs from traditional scripts, focusing on code structure and logging. Indicators include tidy comments, uniform logging messages, and emojis that are often removed during decompilation, revealing the model origin. Security teams should analyze code comments and logging patterns for AI signatures and apply standard malware analysis practices to mitigate patch delays.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
-    "publishedAt": "2026-11-04T07:00:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-generated-malware-shows-distinct-code-patterns",
-      "article-c716b0a2",
-      "c716b0a2",
-      "ai-generated-malware-shows-distinct-code-patterns-1f288b"
-    ]
-  },
-  {
-    "slug": "fake-downloads-hijack-windows-pcs-for-monetization-d34df581",
-    "title": "Fake Downloads Hijack Windows PCs for Monetization",
-    "summary": "Hackers embed malicious payloads in counterfeit software downloads to covertly compromise Windows PCs, targeting users seeking cracked or free applications. The malware installs bandwidth‑sharing, distributed‑compute, or ad‑delivery modules, monetizing network resources without user awareness via social engineering. Security teams should block malicious domains, enforce whitelisting, and educate users; Microsoft recommends applying latest Windows updates and running reputable anti‑malware.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-fake-software-downloads/",
-    "publishedAt": "2026-11-04T06:44:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-downloads-hijack-windows-pcs-for-monetization",
-      "article-d34df581",
-      "d34df581",
-      "fake-downloads-hijack-windows-pcs-for-monetization-349596"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-fence-agents-patch-0d661752",
-    "title": "Red Hat Releases Critical Fence-Agents Patch",
-    "summary": "Red Hat issued a critical security update for the fence-agents component on Red Enterprise Linux 10.0 Extended Update Support. The update addresses multiple high‑severity vulnerabilities, each with a CVSS base score indicating potential remote code execution or privilege escalation. Administrators should apply the fence-agents update immediately and verify that all affected systems are patched to mitigate exploitation risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95012",
-    "publishedAt": "2026-11-04T06:44:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-fence-agents-patch",
-      "article-0d661752",
-      "0d661752",
-      "red-hat-releases-critical-fence-agents-patch-37d855"
-    ]
-  },
-  {
-    "slug": "ghostunnel-provides-mutual-auth-tls-proxy-c553a3bd",
-    "title": "Ghostunnel Provides Mutual‑Auth TLS Proxy",
-    "summary": "Ghostunnel is an open‑source TLS proxy that enables mutual authentication for applications lacking native TLS support. In server mode it terminates client TLS connections, verifies certificates, and forwards traffic to back‑end services over TCP or UNIX sockets. In client mode it accepts plain local connections, wraps them in TLS, and presents a client certificate to remote servers, simplifying secure communications.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/ghostunnel-open-source-tls-proxy/",
-    "publishedAt": "2026-11-04T06:30:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostunnel-provides-mutual-auth-tls-proxy",
-      "article-c553a3bd",
-      "c553a3bd",
-      "ghostunnel-provides-mutual-auth-tls-proxy-4c29c8"
-    ]
-  },
-  {
-    "slug": "chromeos-beta-updates-to-os-16868-9-0-aeb8676b",
-    "title": "ChromeOS Beta Updates to OS 16868.9.0",
-    "summary": "Google released a beta channel update for ChromeOS and ChromeOS Flex, bumping the OS to version 16868.9.0 and the browser to 158.0.8127.9. The update includes bug fixes and performance improvements, with users encouraged to report issues via the ChromeOS communities or bug‑tracking channels. Administrators should verify that devices receive the new beta build and monitor for regressions before wider deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos.html",
-    "publishedAt": "2026-11-04T06:16:07.626Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-beta-updates-to-os-16868-9-0",
-      "article-aeb8676b",
-      "aeb8676b",
-      "chromeos-beta-updates-to-os-16868-9-0-441376"
     ]
   }
 ];
