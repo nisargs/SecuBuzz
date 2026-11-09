@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "aws-braket-sdk-exposes-two-cve-vulnerabilities-9a27a0b3",
+    "title": "AWS Braket SDK Exposes Two CVE Vulnerabilities",
+    "summary": "Amazon disclosed two CVE vulnerabilities affecting the Braket SDK and its schemas, impacting versions 1.10.0+ and 1.17.0+. CVE‑2026‑124034 involves insecure local hybrid job input download, while CVE‑2026‑124035 affects error‑mitigation schema validation, possibly enabling unauthorized data access. AWS advises updating to the latest SDK and schemas and applying the vendor’s patch or mitigation steps.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-175-aws/",
+    "publishedAt": "2026-11-09T22:42:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aws-braket-sdk-exposes-two-cve-vulnerabilities",
+      "article-9a27a0b3",
+      "9a27a0b3",
+      "aws-braket-sdk-exposes-two-cve-vulnerabilities-433bb4"
+    ]
+  },
+  {
     "slug": "sega-exposes-2-2m-subscriber-emails-via-arara-brea-db5fcc69",
     "title": "SEGA Exposes 2.2M Subscriber Emails via ARARA Breach",
     "summary": "A data breach at SEGA’s third‑party newsletter provider ARARA exposed 2.2 million subscriber email addresses. Unauthorized access to ARARA’s database compromised email identifiers but not credentials or financial data; SEGA reported the incident in November 2026. SEGA notified affected users and advised monitoring for phishing, while ARARA conducts a forensic investigation and tightens access controls.",
@@ -27,6 +45,24 @@ export const news: NewsBrief[] = [
       "db5fcc69",
       "sega-exposes-2-2m-subscriber-emails-via-arara-brea-245287",
       "sega-exposes-2-2m-subscriber-emails-via-arara-breach"
+    ]
+  },
+  {
+    "slug": "cisa-unveils-enhanced-incident-reporting-form-35de4eec",
+    "title": "CISA Unveils Enhanced Incident Reporting Form",
+    "summary": "CISA introduced a new incident reporting questionnaire designed to collect detailed data on cyber events. The form captures critical information that enables the agency to assess incident severity, detect emerging trends, and prioritize response resources. Organizations should submit incident details through the new form to support CISA’s improved analysis and coordination efforts.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
+    "publishedAt": "2026-11-09T21:38:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-unveils-enhanced-incident-reporting-form",
+      "article-35de4eec",
+      "35de4eec",
+      "cisa-unveils-enhanced-incident-reporting-form-599910"
     ]
   },
   {
@@ -90,6 +126,44 @@ export const news: NewsBrief[] = [
       "e0d7aeb5",
       "cve-2026-124033-relative-path-traversal-in-the-log-44f08c",
       "cve-2026-124033-relative-path-traversal-in-the-log-export-co"
+    ]
+  },
+  {
+    "slug": "chrome-stable-update-addresses-three-high-severity-9606d6c0",
+    "title": "Chrome Stable Update Addresses Three High‑Severity CVEs",
+    "summary": "Google Chrome’s latest stable channel update (157.0.8103.50/51) patches three high‑severity vulnerabilities in WebGL, FileSystem, and Compositing. The flaws—CVE‑2026‑125345, CVE‑2026‑125347, CVE‑2026‑125343—enable uninitialized resource exploitation, authorization bypass, and buffer overflow, potentially allowing remote code execution. Install the update promptly; Chrome will deploy the patch over the next days, and users should verify via the Chrome Security Page.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_018223192.html",
+    "publishedAt": "2026-11-09T20:52:57.820Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-stable-update-addresses-three-high-severity",
+      "article-9606d6c0",
+      "9606d6c0",
+      "chrome-stable-update-addresses-three-high-severity-13a865",
+      "chrome-stable-update-addresses-three-high-severity-cves"
+    ]
+  },
+  {
+    "slug": "chrome-extended-stable-update-fixes-eleven-high-se-5a870814",
+    "title": "Chrome Extended Stable Update Fixes Eleven High‑Severity CVEs",
+    "summary": "Google Chrome’s Extended Stable update (156.0.8078.96) patches eleven high‑severity flaws, including CVE‑2026‑121068, CVE‑2026‑121076, and CVE‑2026‑125350. These flaws involve improper authentication, authorization bypass, and buffer overflows, potentially allowing remote code execution or privilege escalation on affected systems. Install the update promptly; Chrome will deploy the patch over the next days, and users should verify via the Chrome Security Page.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_0910980127.html",
+    "publishedAt": "2026-11-09T20:45:01.211Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-extended-stable-update-fixes-eleven-high-se",
+      "article-5a870814",
+      "5a870814",
+      "chrome-extended-stable-update-fixes-eleven-high-se-58f40d",
+      "chrome-extended-stable-update-fixes-eleven-high-severity-cve"
     ]
   },
   {
@@ -251,6 +325,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "openjdk-21-faces-multiple-authentication-flaws-06ebae8e",
+    "title": "OpenJDK 21 Faces Multiple Authentication Flaws",
+    "summary": "Ubuntu Security Notices report four OpenJDK 21 components—Security, JSSE, Compiler, and JAAS—failing to authenticate or authorize users, exposing CVE‑2026‑83374, CVE‑2026‑83376, CVE‑2026‑83378, and CVE‑2026‑83380. The flaws allow unauthenticated remote attackers to read or modify sensitive data, potentially compromising application integrity and confidentiality. Users should upgrade to the patched OpenJDK 21 release and apply the vendor’s recommended mitigations to enforce proper authentication.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9015-1",
+    "publishedAt": "2026-11-09T18:01:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openjdk-21-faces-multiple-authentication-flaws",
+      "article-06ebae8e",
+      "06ebae8e",
+      "openjdk-21-faces-multiple-authentication-flaws-7e8934"
+    ]
+  },
+  {
     "slug": "abe-office-malware-steals-chrome-passwords-eded8374",
     "title": "Abe Office Malware Steals Chrome Passwords",
     "summary": "A new remote-access trojan, Abe Office, masquerades as an office helper and steals Chrome passwords and cookies, bypassing App-Bound Encryption. Researchers found the malware exploits weak protection in Chrome’s encryption wrapper, using a code-signing certificate to evade detection and capture credentials. Security teams should block the Abe Office executable, revoke the signed certificate, and enforce multi-factor authentication for privileged accounts.",
@@ -307,21 +399,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-jboss-web-server-6-2-6-security-update-9b1fedbe",
-    "title": "Red Hat JBoss Web Server 6.2.6 Security Update",
-    "summary": "Red Hat released JBoss Web Server 6.2.6 with security updates addressing multiple vulnerabilities affecting the web server component on RHEL 8, 9, and 10. The flaws involve improper input validation leading to potential remote code execution, with CVSS scores available via referenced CVE links. Red Hat recommends installing the 6.2.6 release immediately to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
+    "slug": "red-hat-releases-jboss-web-server-6-2-6-security-u-4c18ac9b",
+    "title": "Red Hat Releases JBoss Web Server 6.2.6 Security Update Addressing Multiple Vulnerabilities",
+    "summary": "Red Hat released JBoss Web Server 6.2.6 for RHEL 8, 9, 10, and Windows Server to patch multiple vulnerabilities that could allow remote exploitation. The flaws involve authentication, authorization, and improper input validation that could lead to remote code execution or unauthorized access. Red Hat recommends installing the 6.2.6 update immediately and reviewing referenced CVE links for critical severity details.",
+    "category": "CVE",
+    "severity": "CRITICAL",
     "source": "Red Hat Security Advisories",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96228",
     "publishedAt": "2026-11-09T17:37:53.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Red Hat Security Advisories",
+        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96229"
+      }
+    ],
     "aliases": [
-      "red-hat-jboss-web-server-6-2-6-security-update",
-      "article-9b1fedbe",
-      "9b1fedbe",
-      "red-hat-jboss-web-server-6-2-6-security-update-37d7d9"
+      "red-hat-releases-jboss-web-server-6-2-6-security-u",
+      "article-4c18ac9b",
+      "4c18ac9b",
+      "red-hat-releases-jboss-web-server-6-2-6-security-u-37d7d9",
+      "red-hat-releases-jboss-web-server-6-2-6-security-update-addr"
     ]
   },
   {
@@ -340,6 +438,30 @@ export const news: NewsBrief[] = [
       "article-b4abafee",
       "b4abafee",
       "ethersphere-tools-compromised-to-steal-wallet-keys-6b3b88"
+    ]
+  },
+  {
+    "slug": "openjdk-17-vulnerabilities-allow-remote-data-modif-081b64b4",
+    "title": "OpenJDK 17 Vulnerabilities Allow Remote Data Modification",
+    "summary": "Ubuntu identified multiple OpenJDK 17 components lacking proper authentication or authorization, exposing the platform to remote data tampering. Vulnerabilities CVE-2026-83374, CVE-2026-83376, CVE-2026-83380, CVE-2026-83381, and others enable attackers to read or modify sensitive data without credentials. Apply the latest OpenJDK 17 update and verify component authentication controls to mitigate the identified flaws.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9014-1",
+    "publishedAt": "2026-11-09T17:27:36.000Z",
+    "cves": [
+      "CVE-2026-83374",
+      "CVE-2026-83376",
+      "CVE-2026-83380",
+      "CVE-2026-83381"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openjdk-17-vulnerabilities-allow-remote-data-modif",
+      "article-081b64b4",
+      "081b64b4",
+      "openjdk-17-vulnerabilities-allow-remote-data-modif-7e8938",
+      "openjdk-17-vulnerabilities-allow-remote-data-modification"
     ]
   },
   {
@@ -380,6 +502,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-openshift-4-14-78-security-update-1d4ceaf6",
+    "title": "Red Hat Releases OpenShift 4.14.78 Security Update",
+    "summary": "Red Hat released OpenShift Container Platform 4.14.78, incorporating security fixes for multiple package and image vulnerabilities. The update addresses authentication and authorization weaknesses that could allow unauthorized access, with CVSS scores linked via referenced CVE entries. Install the 4.14.78 release promptly and review the CVE references for detailed severity information.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95507",
+    "publishedAt": "2026-11-09T17:16:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-openshift-4-14-78-security-update",
+      "article-1d4ceaf6",
+      "1d4ceaf6",
+      "red-hat-releases-openshift-4-14-78-security-update-37d842"
+    ]
+  },
+  {
     "slug": "red-hat-openshift-container-platform-4-14-78-secur-6b70975e",
     "title": "Red Hat OpenShift Container Platform 4.14.78 Security Update",
     "summary": "Red Hat released OpenShift Container Platform 4.14.78, incorporating bug fixes and a critical security update for the platform on supported RHEL versions. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, with CVSS scores referenced via CVE links. Users should apply the 4.14.78 release promptly to secure their clusters.",
@@ -415,6 +555,25 @@ export const news: NewsBrief[] = [
       "42f7b818",
       "notepad-8-9-9-released-with-fixes-for-6-vulnerabil-510037",
       "notepad-8-9-9-released-with-fixes-for-6-vulnerabilities-allo"
+    ]
+  },
+  {
+    "slug": "libheif-vulnerability-allows-arbitrary-code-execut-0cc88e36",
+    "title": "libheif Vulnerability Allows Arbitrary Code Execution",
+    "summary": "A flaw in libheif lets attackers execute arbitrary code when a user opens a crafted HEIF file. The flaw arises from improper HEIF header parsing, causing memory corruption that could be exploited; no public exploit yet. Ubuntu recommends installing the latest libheif update and advises users to avoid opening unknown HEIF files until patched.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9012-1",
+    "publishedAt": "2026-11-09T16:44:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "libheif-vulnerability-allows-arbitrary-code-execut",
+      "article-0cc88e36",
+      "0cc88e36",
+      "libheif-vulnerability-allows-arbitrary-code-execut-7e893f",
+      "libheif-vulnerability-allows-arbitrary-code-execution"
     ]
   },
   {
@@ -9433,151 +9592,6 @@ export const news: NewsBrief[] = [
       "article-f438cbb6",
       "f438cbb6",
       "cisco-ise-authorization-bypass-vulnerability-784285"
-    ]
-  },
-  {
-    "slug": "cisco-ucs-central-rce-vulnerability-664c1bb3",
-    "title": "Cisco UCS Central RCE Vulnerability",
-    "summary": "A flaw in Cisco UCS Central Software’s web interface lets authenticated remote attackers execute arbitrary code or disclose data via crafted HTTP requests. The issue stems from insufficient input validation, allowing code execution and file writes; no public exploit is known. Cisco has issued patches that fix the flaw, and no workarounds exist; apply updates promptly.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucs-rce-LzHSFRDQ?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+UCS+Central+Software+Remote+Code+Execution+Vulnerability%26vs_k%3D1",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-ucs-central-rce-vulnerability",
-      "article-664c1bb3",
-      "664c1bb3",
-      "cisco-ucs-central-rce-vulnerability-1695cc"
-    ]
-  },
-  {
-    "slug": "pillow-multiple-vulnerabilities-affect-image-proce-4e0f903b",
-    "title": "Pillow Multiple Vulnerabilities Affect Image Processing Libraries",
-    "summary": "Multiple vulnerabilities were discovered in Pillow, a popular Python imaging library. Issues include improper handling of map stride values in McIdas AREA image loading, inadequate decompression bomb checks for font files, and flawed filter size validation in rank filter implementations. These flaws can lead to information disclosure or denial-of-service conditions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8999-1",
-    "publishedAt": "2026-11-04T15:49:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pillow-multiple-vulnerabilities-affect-image-proce",
-      "article-4e0f903b",
-      "4e0f903b",
-      "pillow-multiple-vulnerabilities-affect-image-proce-7fbb87",
-      "pillow-multiple-vulnerabilities-affect-image-processing-libr"
-    ]
-  },
-  {
-    "slug": "chrome-beta-desktop-158-update-86a22153",
-    "title": "Chrome Beta Desktop 158 Update",
-    "summary": "Google Chrome Beta channel has been updated to version 158.0.8127.18 for Windows, Mac, and Linux platforms. This release includes partial changes documented in the Git log, with community bug reporting channels available for user feedback. The update represents a routine channel synchronization release without specific security vulnerability disclosures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update.html",
-    "publishedAt": "2026-11-04T15:43:33.511Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-beta-desktop-158-update",
-      "article-86a22153",
-      "86a22153",
-      "chrome-beta-desktop-158-update-63271e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95234-important-git-lfs-security-update-0fcf4d36",
-    "title": "RHSA-2026:95234: Important: git-lfs security update",
-    "summary": "An update for git-lfs is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95234",
-    "publishedAt": "2026-11-04T15:42:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95234-important-git-lfs-security-update",
-      "article-0fcf4d36",
-      "0fcf4d36",
-      "rhsa-2026-95234-important-git-lfs-security-update-37d84d"
-    ]
-  },
-  {
-    "slug": "usn-8998-1-squid-vulnerability-3f698384",
-    "title": "USN-8998-1: Squid vulnerability",
-    "summary": "It was discovered that Squid incorrectly handled certain HTTP Transfer- Encoding headers. An attacker could possibly use this issue to perform HTTP request smuggling attacks, bypass security mechanisms, or poison web caches.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8998-1",
-    "publishedAt": "2026-11-04T15:32:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-8998-1-squid-vulnerability",
-      "article-3f698384",
-      "3f698384",
-      "usn-8998-1-squid-vulnerability-7fbb8b"
-    ]
-  },
-  {
-    "slug": "usn-8997-1-net-snmp-vulnerability-7b785586",
-    "title": "USN-8997-1: Net-SNMP vulnerability",
-    "summary": "It was discovered that Net-SNMP incorrectly handled newly accepted connections in the SMUX module. An unauthenticated remote attacker could possibly use this issue to cause Net-SNMP to block indefinitely, resulting in a denial of service.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8997-1",
-    "publishedAt": "2026-11-04T15:25:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-8997-1-net-snmp-vulnerability",
-      "article-7b785586",
-      "7b785586",
-      "usn-8997-1-net-snmp-vulnerability-7fbb8f"
-    ]
-  },
-  {
-    "slug": "usn-7530-2-adodb-vulnerability-debdc786",
-    "title": "USN-7530-2: ADOdb vulnerability",
-    "summary": "USN-7530-1 fixed a vulnerability in ADOdb. This update provides the corresponding updates for Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, and Ubuntu 24.04 LTS. Original advisory details: It was discovered that ADOdb incorrectly handled SQL input.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-7530-2",
-    "publishedAt": "2026-11-04T15:14:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-7530-2-adodb-vulnerability",
-      "article-debdc786",
-      "debdc786",
-      "usn-7530-2-adodb-vulnerability-7e5465"
-    ]
-  },
-  {
-    "slug": "chrome-beta-ios-158-release-559acb4d",
-    "title": "Chrome Beta iOS 158 Release",
-    "summary": "Google Chrome Beta channel has been updated to version 158.0.8127.13 for iOS, with availability on the App Store in coming days. The release includes partial changes documented in the Git log, alongside community bug reporting channels for user feedback. This is a routine channel synchronization release without specific security vulnerability disclosures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update.html",
-    "publishedAt": "2026-11-04T15:13:33.229Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-beta-ios-158-release",
-      "article-559acb4d",
-      "559acb4d",
-      "chrome-beta-ios-158-release-4c2878"
     ]
   }
 ];

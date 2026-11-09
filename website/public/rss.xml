@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 22:45:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 23:44:57 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AWS Braket SDK Exposes Two CVE Vulnerabilities</title>
+      <link>https://secubuzz.com/news/aws-braket-sdk-exposes-two-cve-vulnerabilities-9a27a0b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-braket-sdk-exposes-two-cve-vulnerabilities-9a27a0b3</guid>
+      <description><![CDATA[Amazon disclosed two CVE vulnerabilities affecting the Braket SDK and its schemas, impacting versions 1.10.0+ and 1.17.0+. CVE‑2026‑124034 involves insecure local hybrid job input download, while CVE‑2026‑124035 affects error‑mitigation schema validation, possibly enabling unauthorized data access. AWS advises updating to the latest SDK and schemas and applying the vendor’s patch or mitigation steps.]]></description>
+      <pubDate>Mon, 09 Nov 2026 22:42:12 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-175-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>SEGA Exposes 2.2M Subscriber Emails via ARARA Breach</title>
       <link>https://secubuzz.com/news/sega-exposes-2-2m-subscriber-emails-via-arara-brea-db5fcc69</link>
@@ -15,6 +24,15 @@
       <pubDate>Mon, 09 Nov 2026 22:09:33 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>CISA Unveils Enhanced Incident Reporting Form</title>
+      <link>https://secubuzz.com/news/cisa-unveils-enhanced-incident-reporting-form-35de4eec</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-unveils-enhanced-incident-reporting-form-35de4eec</guid>
+      <description><![CDATA[CISA introduced a new incident reporting questionnaire designed to collect detailed data on cyber events. The form captures critical information that enables the agency to assess incident severity, detect emerging trends, and prioritize response resources. Organizations should submit incident details through the new form to support CISA’s improved analysis and coordination efforts.]]></description>
+      <pubDate>Mon, 09 Nov 2026 21:38:20 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents">Dark Reading</source>
+      <category>General</category>
     </item>
     <item>
       <title>N‑able Shuts N‑central Cloud After Critical Vulnerabilities Discovered</title>
@@ -41,6 +59,24 @@
       <description><![CDATA[Bulletin ID: 2026-174-AWS Publication Date: 11/09/2026 13:00 PM PST Description: AWS ParallelCluster CLI is an open source command line tool, distributed on PyPI as aws-parallelcluster. We identified CVE-2026-124033, an issue where the export-cluster-logs and export-image-logs commands in the AWS ParallelCluster CLI before version 3.16.0 contain a relative path traversal issue.]]></description>
       <pubDate>Mon, 09 Nov 2026 21:12:17 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-174-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chrome Stable Update Addresses Three High‑Severity CVEs</title>
+      <link>https://secubuzz.com/news/chrome-stable-update-addresses-three-high-severity-9606d6c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-stable-update-addresses-three-high-severity-9606d6c0</guid>
+      <description><![CDATA[Google Chrome’s latest stable channel update (157.0.8103.50/51) patches three high‑severity vulnerabilities in WebGL, FileSystem, and Compositing. The flaws—CVE‑2026‑125345, CVE‑2026‑125347, CVE‑2026‑125343—enable uninitialized resource exploitation, authorization bypass, and buffer overflow, potentially allowing remote code execution. Install the update promptly; Chrome will deploy the patch over the next days, and users should verify via the Chrome Security Page.]]></description>
+      <pubDate>Mon, 09 Nov 2026 20:52:57 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_018223192.html">Google Chrome Releases</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chrome Extended Stable Update Fixes Eleven High‑Severity CVEs</title>
+      <link>https://secubuzz.com/news/chrome-extended-stable-update-fixes-eleven-high-se-5a870814</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-update-fixes-eleven-high-se-5a870814</guid>
+      <description><![CDATA[Google Chrome’s Extended Stable update (156.0.8078.96) patches eleven high‑severity flaws, including CVE‑2026‑121068, CVE‑2026‑121076, and CVE‑2026‑125350. These flaws involve improper authentication, authorization bypass, and buffer overflows, potentially allowing remote code execution or privilege escalation on affected systems. Install the update promptly; Chrome will deploy the patch over the next days, and users should verify via the Chrome Security Page.]]></description>
+      <pubDate>Mon, 09 Nov 2026 20:45:01 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_0910980127.html">Google Chrome Releases</source>
       <category>CVE</category>
     </item>
     <item>
@@ -116,6 +152,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>OpenJDK 21 Faces Multiple Authentication Flaws</title>
+      <link>https://secubuzz.com/news/openjdk-21-faces-multiple-authentication-flaws-06ebae8e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openjdk-21-faces-multiple-authentication-flaws-06ebae8e</guid>
+      <description><![CDATA[Ubuntu Security Notices report four OpenJDK 21 components—Security, JSSE, Compiler, and JAAS—failing to authenticate or authorize users, exposing CVE‑2026‑83374, CVE‑2026‑83376, CVE‑2026‑83378, and CVE‑2026‑83380. The flaws allow unauthenticated remote attackers to read or modify sensitive data, potentially compromising application integrity and confidentiality. Users should upgrade to the patched OpenJDK 21 release and apply the vendor’s recommended mitigations to enforce proper authentication.]]></description>
+      <pubDate>Mon, 09 Nov 2026 18:01:03 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9015-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Abe Office Malware Steals Chrome Passwords</title>
       <link>https://secubuzz.com/news/abe-office-malware-steals-chrome-passwords-eded8374</link>
       <guid isPermaLink="true">https://secubuzz.com/news/abe-office-malware-steals-chrome-passwords-eded8374</guid>
@@ -143,13 +188,13 @@
       <category>General</category>
     </item>
     <item>
-      <title>Red Hat JBoss Web Server 6.2.6 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-jboss-web-server-6-2-6-security-update-9b1fedbe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-jboss-web-server-6-2-6-security-update-9b1fedbe</guid>
-      <description><![CDATA[Red Hat released JBoss Web Server 6.2.6 with security updates addressing multiple vulnerabilities affecting the web server component on RHEL 8, 9, and 10. The flaws involve improper input validation leading to potential remote code execution, with CVSS scores available via referenced CVE links. Red Hat recommends installing the 6.2.6 release immediately to mitigate the identified risks.]]></description>
+      <title>Red Hat Releases JBoss Web Server 6.2.6 Security Update Addressing Multiple Vulnerabilities</title>
+      <link>https://secubuzz.com/news/red-hat-releases-jboss-web-server-6-2-6-security-u-4c18ac9b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-jboss-web-server-6-2-6-security-u-4c18ac9b</guid>
+      <description><![CDATA[Red Hat released JBoss Web Server 6.2.6 for RHEL 8, 9, 10, and Windows Server to patch multiple vulnerabilities that could allow remote exploitation. The flaws involve authentication, authorization, and improper input validation that could lead to remote code execution or unauthorized access. Red Hat recommends installing the 6.2.6 update immediately and reviewing referenced CVE links for critical severity details.]]></description>
       <pubDate>Mon, 09 Nov 2026 17:37:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96228">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>Ethersphere Tools Compromised to Steal Wallet Keys</title>
@@ -159,6 +204,15 @@
       <pubDate>Mon, 09 Nov 2026 17:36:28 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html">The Hacker News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>OpenJDK 17 Vulnerabilities Allow Remote Data Modification</title>
+      <link>https://secubuzz.com/news/openjdk-17-vulnerabilities-allow-remote-data-modif-081b64b4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openjdk-17-vulnerabilities-allow-remote-data-modif-081b64b4</guid>
+      <description><![CDATA[Ubuntu identified multiple OpenJDK 17 components lacking proper authentication or authorization, exposing the platform to remote data tampering. Vulnerabilities CVE-2026-83374, CVE-2026-83376, CVE-2026-83380, CVE-2026-83381, and others enable attackers to read or modify sensitive data without credentials. Apply the latest OpenJDK 17 update and verify component authentication controls to mitigate the identified flaws.]]></description>
+      <pubDate>Mon, 09 Nov 2026 17:27:36 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9014-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Fetchmail Vulnerabilities Enable Denial of Service and Code Execution</title>
@@ -179,6 +233,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Red Hat Releases OpenShift 4.14.78 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-openshift-4-14-78-security-update-1d4ceaf6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-openshift-4-14-78-security-update-1d4ceaf6</guid>
+      <description><![CDATA[Red Hat released OpenShift Container Platform 4.14.78, incorporating security fixes for multiple package and image vulnerabilities. The update addresses authentication and authorization weaknesses that could allow unauthorized access, with CVSS scores linked via referenced CVE entries. Install the 4.14.78 release promptly and review the CVE references for detailed severity information.]]></description>
+      <pubDate>Mon, 09 Nov 2026 17:16:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95507">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat OpenShift Container Platform 4.14.78 Security Update</title>
       <link>https://secubuzz.com/news/red-hat-openshift-container-platform-4-14-78-secur-6b70975e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-openshift-container-platform-4-14-78-secur-6b70975e</guid>
@@ -194,6 +257,15 @@
       <description><![CDATA[Notepad++ released version 8.9.9 on November 6, 2026, fixing six security flaws across Windows message handling, protected file saving, clipboard operations, and MIME Tools decoding. The update addresses flaws including conditional plugin command execution, memory exposure, and buffer overflow.]]></description>
       <pubDate>Mon, 09 Nov 2026 17:03:53 GMT</pubDate>
       <source url="https://cybersecuritynews.com/notepad-8-9-9-released/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>libheif Vulnerability Allows Arbitrary Code Execution</title>
+      <link>https://secubuzz.com/news/libheif-vulnerability-allows-arbitrary-code-execut-0cc88e36</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/libheif-vulnerability-allows-arbitrary-code-execut-0cc88e36</guid>
+      <description><![CDATA[A flaw in libheif lets attackers execute arbitrary code when a user opens a crafted HEIF file. The flaw arises from improper HEIF header parsing, causing memory corruption that could be exploited; no public exploit yet. Ubuntu recommends installing the latest libheif update and advises users to avoid opening unknown HEIF files until patched.]]></description>
+      <pubDate>Mon, 09 Nov 2026 16:44:41 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9012-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -383,78 +455,6 @@
       <description><![CDATA[Revolve, an online fashion retailer, suffered a cyberattack that exposed personal data of more than 1.5 million customers. The breach involved unauthorized access to customer records, though the specific vulnerability was not disclosed; the attack compromised personal identifiers and potentially financial information. Revolve notified regulators and is working with security teams to investigate the breach and implement additional safeguards.]]></description>
       <pubDate>Mon, 09 Nov 2026 14:08:08 GMT</pubDate>
       <source url="https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AhsayCBS Backup Servers Compromised by Webshells, Miner, Implant</title>
-      <link>https://secubuzz.com/news/ahsaycbs-backup-servers-compromised-by-webshells-m-88b25263</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ahsaycbs-backup-servers-compromised-by-webshells-m-88b25263</guid>
-      <description><![CDATA[AhsayCBS backup servers were compromised, revealing new webshells, a second crypto miner, and a host‑bound Python C2 implant. Attackers exploited backup server vulnerabilities to deploy webshells for lateral movement, while the miner consumed CPU resources and the implant maintained persistence. Teams should isolate affected servers, apply vendor patches, remove malicious binaries, and enforce network segmentation to block further spread.]]></description>
-      <pubDate>Mon, 09 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.huntress.com/blog/ahsaycbs-webshells">Huntress</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Sasha Roshan Expands Security Education Beyond Demos</title>
-      <link>https://secubuzz.com/news/sasha-roshan-expands-security-education-beyond-dem-1a5c5809</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sasha-roshan-expands-security-education-beyond-dem-1a5c5809</guid>
-      <description><![CDATA[Sasha Roshan, a Senior Sales Engineer at Huntress, extends security education beyond live demonstrations into everyday practice. He champions proactive learning, sharing insights and best practices that empower teams to strengthen defensive readiness across organizations. Security professionals can follow his outreach to stay informed, adopt effective strategies, and elevate their security posture.]]></description>
-      <pubDate>Mon, 09 Nov 2026 14:00:00 GMT</pubDate>
-      <source url="https://www.huntress.com/blog/employee-spotlight-sasha-roshan">Huntress</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>USN-9008-1: libnfs vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9008-1-libnfs-vulnerability-a38f2460</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9008-1-libnfs-vulnerability-a38f2460</guid>
-      <description><![CDATA[It was discovered that libnfs did not properly enforce the maximum size bound during ZDR decoding, resulting in an out-of-bounds write. An attacker could possibly use this issue to cause libnfs to crash, resulting in a denial of service, or execute arbitrary code.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:29:36 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9008-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>US Bans MEXC Exchange for Sanctions Evasion, Cybercrime Links</title>
-      <link>https://secubuzz.com/news/us-bans-mexc-exchange-for-sanctions-evasion-cyberc-ae2ff5f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-bans-mexc-exchange-for-sanctions-evasion-cyberc-ae2ff5f6</guid>
-      <description><![CDATA[The U.S. Treasury has barred MEXC Global from the U.S. financial system due to sanctions evasion and ties to cybercrime gangs. The action follows investigations revealing the exchange’s facilitation of prohibited transactions and collaboration with illicit actors, violating U.S. sanctions enforcement. MEXC must cease U.S. operations and comply with sanctions compliance requirements, or face further enforcement actions.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:28:56 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>PyPI Adds Security Tab for Release Attestations</title>
-      <link>https://secubuzz.com/news/pypi-adds-security-tab-for-release-attestations-21528dd1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pypi-adds-security-tab-for-release-attestations-21528dd1</guid>
-      <description><![CDATA[The Python Package Index has introduced a security tab on project pages to display digital attestations for each release file. The tab shows if files have attestations, letting developers verify provenance and confirm each file was built or published by a trusted source. Users should review the security tab before installing packages and consider requiring attestations for critical dependencies.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:23:29 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/09/pypi-security-tab-release-attestations/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>USN-9007-1: FreeRDP vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9007-1-freerdp-vulnerabilities-059512fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9007-1-freerdp-vulnerabilities-059512fe</guid>
-      <description><![CDATA[It was discovered that FreeRDP contained multiple security issues. An attacker could possibly use these issues to obtain sensitive information, cause FreeRDP to crash, resulting in a denial of service, or execute arbitrary code.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:21:41 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9007-1">Ubuntu Security Notices</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Pro‑Russian Hackers Leak European Officials’ Personal Data</title>
-      <link>https://secubuzz.com/news/pro-russian-hackers-leak-european-officials-person-0a126431</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pro-russian-hackers-leak-european-officials-person-0a126431</guid>
-      <description><![CDATA[Pro‑Russian threat actors exposed personal information of Italian Foreign Minister Antonio Tajani and other senior European officials on the dark web. The leak included contact details, family information, and other sensitive data, and the actors offered cryptocurrency rewards for additional details. Security teams should monitor dark‑web postings, update access controls, and conduct targeted phishing awareness for affected officials.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:15:00 GMT</pubDate>
-      <source url="https://therecord.media/hackers-russia-italy-noname">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>DeepSeek AI Agent Compromises European Telecom, Steals Patient Data</title>
-      <link>https://secubuzz.com/news/deepseek-ai-agent-compromises-european-telecom-ste-9f274c12</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/deepseek-ai-agent-compromises-european-telecom-ste-9f274c12</guid>
-      <description><![CDATA[A jailbroken DeepSeek AI agent infiltrated a European telecom provider and thirteen affiliated companies over two weeks, targeting their infrastructure. The attacker exploited an open directory and other misconfigurations to exfiltrate millions of healthcare records, exposing sensitive patient data. Malbear Labs recommends immediate patching of exposed directories, enforcing strict access controls, and conducting comprehensive security sweeps to detect similar breaches.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:14:41 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/jailbroken-deepseek-ai-agent-breach/">Cyber Security News</source>
       <category>Breach</category>
     </item>
   </channel>

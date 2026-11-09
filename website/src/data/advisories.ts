@@ -102,6 +102,110 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-88986",
+    "slug": "cve-2026-88986",
+    "vendor": "Go",
+    "product": "pipelines · kubeflow",
+    "name": "Kubeflow Pipelines: Reflected XSS in the frontend pod information and events error responses",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The Kubeflow Pipelines frontend reflected untrusted pod names and namespaces into HTML error responses from the pod-information and pod-events routes. An attacker could craft a link that causes JavaScript to execute in the frontend's origin when a user follows it and reaches an affected error response.",
+    "requiredAction": "Upgrade pipelines · kubeflow to version 0.0.0-20251010122814-fedc25e3f725 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-g3qx-frcg-j979"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88986"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-88985",
+    "slug": "cve-2026-88985",
+    "vendor": "Go",
+    "product": "pipelines · kubeflow",
+    "name": "Kubeflow Pipelines: SQL injection through unvalidated pagination tokens in Kubeflow Pipelines API server",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-89",
+    "ransomware": false,
+    "description": "Kubeflow Pipelines API server does not sufficiently validate SQL identifier fields decoded from the page_token pagination parameter. Client-controlled fields can reach SQL query construction, allowing SQL injection through list APIs. This advisory consolidates the original pipeline-listing report and the later run-listing report in GHSA-mhpc-2x8q-2vp9.",
+    "requiredAction": "Upgrade pipelines · kubeflow to version 0.0.0-20260403210607-ac3a4c65677a or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r4mx-2gr2-8277"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88985"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-77433",
+    "slug": "cve-2026-77433",
+    "vendor": "Pip",
+    "product": "kiwitcms",
+    "name": "Kiwi TCMS account confirmation open redirect through protocol-relative URLs",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-601",
+    "ransomware": false,
+    "description": "In Kiwi TCMS version 16.1, the fix for CVE-2026-54724 (open redirect via unvalidated next parameter) in the account confirmation endpoint is incomplete. The validation uses startswith(\"/\") to check if the redirect URL is local, but this is bypassed by protocol-relative URLs like //evil.com which start with / but redirect the browser to an external attacker-controlled domain.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gcwf-c25f-p9rv"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77433"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-88984",
+    "slug": "cve-2026-88984",
+    "vendor": "Go",
+    "product": "pipelines · kubeflow",
+    "name": "Kubeflow Pipelines: RBAC bypass on shared pipelines allows any authenticated user to delete or modify global pipelines",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 7.2,
+    "severity": "High",
+    "cwe": "CWE-285",
+    "ransomware": false,
+    "description": "In multi-user mode, the Kubeflow Pipelines API server skipped authorization checks for shared/global pipelines with an empty namespace. This exception applied to write and delete operations as well as reads, allowing an authenticated user to modify or delete shared pipelines without the required Kubernetes RBAC permissions.",
+    "requiredAction": "Upgrade pipelines · kubeflow to version 0.0.0-20260420170029-186dd1f3b040 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-ghgh-57qv-h687"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88984"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-88983",
     "slug": "cve-2026-88983",
     "vendor": "Go",
@@ -1280,102 +1384,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46429"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-33050",
-    "slug": "cve-2026-33050",
-    "vendor": "Pip",
-    "product": "GeoNode",
-    "name": "GeoNode has OS command injection via uploaded file layer name",
-    "dateAdded": "2026-11-06",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "Arbitrary OS commands can be executed on the GeoNode by uploading a vector file with a crafted layer name.",
-    "requiredAction": "Upgrade GeoNode to version 5.1.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9fpx-fr6j-2vh6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33050"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-9639",
-    "slug": "cve-2026-9639",
-    "vendor": "Go",
-    "product": "lxd · canonical",
-    "name": "LXD has CreateCustomVolumeFromBackup nil-pointer dereference on volumes[0].snapshots[*].expires_at",
-    "dateAdded": "2026-11-06",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-476",
-    "ransomware": false,
-    "description": "(sibling-field variant of CVE-2026-40197 fix 05bc272) (lxdBackend).CreateCustomVolumeFromBackup in lxd/storage/backend_lxd.go contains an unguarded time.Time dereference on the ExpiresAt field of every volume-snapshot entry in an imported custom-volume backup.",
-    "requiredAction": "Upgrade lxd · canonical to version 0.0.0-20260622081844-85f897013ccd or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j93m-3j9p-m5m8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9639"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-pjff-c2wc-f6jm",
-    "slug": "ghsa-pjff-c2wc-f6jm",
-    "vendor": "Go",
-    "product": "lxd · canonical",
-    "name": "LXD has arbitrary file write on client due to trusted image hash",
-    "dateAdded": "2026-11-06",
-    "dueDate": "",
-    "cvss": 9.9,
-    "severity": "Critical",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "An arbitrary file write exists in the Incus client when a malicious image server returns a crafted Incus-Image-Hash header. This can lead to arbitrary command execution as root on the server.",
-    "requiredAction": "Upgrade lxd · canonical to version 0.0.0-20260630083100-c5184be310b1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pjff-c2wc-f6jm"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-fmc8-p6q7-75cc",
-    "slug": "ghsa-fmc8-p6q7-75cc",
-    "vendor": "Go",
-    "product": "lxd · canonical",
-    "name": "LXD has argument injection in backup compression algorithm leading to AFW and ACE",
-    "dateAdded": "2026-11-06",
-    "dueDate": "",
-    "cvss": 9.9,
-    "severity": "Critical",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "Improper validation of user-provided backup compression algorithm leads to argument injection in the constructed command line. This leads to an arbitrary file write on the host, possibly leading to arbitrary command execution.",
-    "requiredAction": "Upgrade lxd · canonical to version 0.0.0-20260630083100-c5184be310b1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fmc8-p6q7-75cc"
       }
     ],
     "source": "GITHUB"
