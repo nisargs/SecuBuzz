@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 18:45:20 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 18:56:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>France Blames Iran for Supermarket Refrigeration Attacks</title>
@@ -15,6 +15,15 @@
       <pubDate>Mon, 09 Nov 2026 18:32:42 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Attackers Seek SAP Netweaver Webshells</title>
+      <link>https://secubuzz.com/news/attackers-seek-sap-netweaver-webshells-ec730fe7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-seek-sap-netweaver-webshells-ec730fe7</guid>
+      <description><![CDATA[Attackers are scanning for SAP Netweaver webshells on exposed servers, targeting the application for exploitation. The flaw permits remote code execution via unauthorized shell files, but no public PoC or CVE is disclosed, limiting immediate risk. Teams should monitor logs for shell activity, apply vendor patches, and enforce strict access controls to mitigate compromise.]]></description>
+      <pubDate>Mon, 09 Nov 2026 18:18:15 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33502">SANS Internet Storm Center</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Claude Tool Vulnerability Enables Linux RCE</title>
@@ -32,6 +41,15 @@
       <description><![CDATA[A new remote-access trojan, Abe Office, masquerades as an office helper and steals Chrome passwords and cookies, bypassing App-Bound Encryption. Researchers found the malware exploits weak protection in Chrome’s encryption wrapper, using a code-signing certificate to evade detection and capture credentials. Security teams should block the Abe Office executable, revoke the signed certificate, and enforce multi-factor authentication for privileged accounts.]]></description>
       <pubDate>Mon, 09 Nov 2026 17:58:44 GMT</pubDate>
       <source url="https://cybersecuritynews.com/abe-office-malware/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Hackers Exploit Qubole&apos;s Trusted AWS Access to Breach Customer Accounts and Steal Data</title>
+      <link>https://secubuzz.com/news/hackers-exploit-qubole-s-trusted-aws-access-to-bre-732a8419</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-qubole-s-trusted-aws-access-to-bre-732a8419</guid>
+      <description><![CDATA[An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers.]]></description>
+      <pubDate>Mon, 09 Nov 2026 17:51:21 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html">The Hacker News</source>
       <category>Breach</category>
     </item>
     <item>
@@ -80,12 +98,30 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Notepad++ 8.9.9 Released With Fixes for 6 Vulnerabilities Allowing Plugin Command Execution</title>
+      <link>https://secubuzz.com/news/notepad-8-9-9-released-with-fixes-for-6-vulnerabil-42f7b818</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/notepad-8-9-9-released-with-fixes-for-6-vulnerabil-42f7b818</guid>
+      <description><![CDATA[Notepad++ released version 8.9.9 on November 6, 2026, fixing six security flaws across Windows message handling, protected file saving, clipboard operations, and MIME Tools decoding. The update addresses flaws including conditional plugin command execution, memory exposure, and buffer overflow.]]></description>
+      <pubDate>Mon, 09 Nov 2026 17:03:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/notepad-8-9-9-released/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>GhostAction Compromises 500+ GitHub Accounts for Cloud Credentials</title>
       <link>https://secubuzz.com/news/ghostaction-compromises-500-github-accounts-for-cl-d75bece3</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ghostaction-compromises-500-github-accounts-for-cl-d75bece3</guid>
       <description><![CDATA[GhostAction attackers compromised over 500 GitHub accounts in October 2026, injecting a workflow into thousands of repositories that exfiltrated AWS, OpenAI, and other cloud credentials. The workflow leveraged GitHub Actions to harvest secrets from environment variables, bypassing rotation and exposing key material to the attackers.]]></description>
       <pubDate>Mon, 09 Nov 2026 16:29:38 GMT</pubDate>
       <source url="https://cybersecuritynews.com/ghostaction-github-account-compromise/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Binance denies data breach after alleged ShinyHunters claims</title>
+      <link>https://secubuzz.com/news/binance-denies-data-breach-after-alleged-shinyhunt-1be14fa8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-denies-data-breach-after-alleged-shinyhunt-1be14fa8</guid>
+      <description><![CDATA[Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum.]]></description>
+      <pubDate>Mon, 09 Nov 2026 16:12:39 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/">BleepingComputer</source>
       <category>Breach</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 12:11:51 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96236">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:96240: Critical: edk2 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-96240-critical-edk2-security-update-e2e37349</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-96240-critical-edk2-security-update-e2e37349</guid>
-      <description><![CDATA[An update for edk2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 09 Nov 2026 12:10:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96240">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Patch Utility Vulnerability Prompting RHEL 8 Update</title>
-      <link>https://secubuzz.com/news/patch-utility-vulnerability-prompting-rhel-8-updat-674460e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/patch-utility-vulnerability-prompting-rhel-8-updat-674460e7</guid>
-      <description><![CDATA[A vulnerability in the patch utility on RHEL 8 has been identified, prompting a Moderate security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of the patch utility.]]></description>
-      <pubDate>Mon, 09 Nov 2026 12:09:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96215">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:96216: Important: openssl security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-96216-important-openssl-security-update-29396db0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-96216-important-openssl-security-update-29396db0</guid>
-      <description><![CDATA[An update for openssl is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Mon, 09 Nov 2026 12:07:50 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96216">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Security Conference Highlights Three Core Topics</title>
-      <link>https://secubuzz.com/news/ai-security-conference-highlights-three-core-topic-6ad24006</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-security-conference-highlights-three-core-topic-6ad24006</guid>
-      <description><![CDATA[The [un]prompted AI security conference in San Francisco covered all aspects of AI security over three dense days. Speakers addressed security of AI, security with AI, and security from AI, emphasizing the need for researchers to focus on their chosen domain. The event also featured the author's talk on integrous AI, which will be posted online after the conference.]]></description>
-      <pubDate>Mon, 09 Nov 2026 12:05:39 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/ai-security.html">Schneier on Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

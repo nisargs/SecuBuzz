@@ -77,6 +77,58 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-63470",
+    "slug": "cve-2026-63470",
+    "vendor": "Pip",
+    "product": "fastapi-code-generator",
+    "name": "fastapi-code-generator: Call-time RCE via operation summary -> unescaped route-handler docstring",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "fastapi-code-generator (koxudaxi) emits an operation's summary as the generated route handler's docstring, using a triple-quoted string without escaping \"\"\". A \"\"\" in the summary closes the docstring and, via concatenation, injects a live expression that becomes an expression statement in the handler body -- which runs when the route handler is CALLED (the endpoint is hit).",
+    "requiredAction": "Upgrade fastapi-code-generator to version 0.8.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h667-4jj2-cgv4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63470"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63436",
+    "slug": "cve-2026-63436",
+    "vendor": "Java (Maven)",
+    "product": "org.zeroturnaround:zt-zip",
+    "name": "zt-zip: Path traversal in fluent API unpack",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 8.2,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "ZipUtil.unpack(...) rejects ZIP entries that escape the target output directory, but the Zips fluent API appears to use a separate unpack implementation that does not apply the same destination-boundary check. A ZIP entry such as: is written outside the configured destination directory when processed with: The transformer branch is affected as well.",
+    "requiredAction": "Upgrade org.zeroturnaround:zt-zip to version 1.18.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-52c6-99qm-3hqr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63436"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-63417",
     "slug": "cve-2026-63417",
     "vendor": "Pip",
@@ -1397,58 +1449,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119207"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119208",
-    "slug": "cve-2026-119208",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf has possible long runtimes/large memory usage for encrypted PDF files",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large runtimes/memory usage. This requires accessing the page count of an encrypted PDF file, which itself declares a wrong /Count value. This has been fixed in pypdf==6.21.3. If you cannot upgrade yet, consider applying the changes from PR #4270.",
-    "requiredAction": "Upgrade pypdf to version 6.21.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-62m5-6wh8-28x7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119208"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119209",
-    "slug": "cve-2026-119209",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf has possible large memory usage when parsing cross-reference streams",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires opening a file with cross-reference streams. This has been fixed in pypdf==6.21.3. If you cannot upgrade yet, consider applying the changes from PR #4269.",
-    "requiredAction": "Upgrade pypdf to version 6.21.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x3rh-gjgm-fmqc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119209"
       }
     ],
     "source": "GITHUB"

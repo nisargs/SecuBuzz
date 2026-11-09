@@ -30,6 +30,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "attackers-seek-sap-netweaver-webshells-ec730fe7",
+    "title": "Attackers Seek SAP Netweaver Webshells",
+    "summary": "Attackers are scanning for SAP Netweaver webshells on exposed servers, targeting the application for exploitation. The flaw permits remote code execution via unauthorized shell files, but no public PoC or CVE is disclosed, limiting immediate risk. Teams should monitor logs for shell activity, apply vendor patches, and enforce strict access controls to mitigate compromise.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33502",
+    "publishedAt": "2026-11-09T18:18:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-seek-sap-netweaver-webshells",
+      "article-ec730fe7",
+      "ec730fe7",
+      "attackers-seek-sap-netweaver-webshells-57dd81"
+    ]
+  },
+  {
     "slug": "claude-tool-vulnerability-enables-linux-rce-3e1e0341",
     "title": "Claude Tool Vulnerability Enables Linux RCE",
     "summary": "Attackers leveraged a flaw in Anthropic’s Claude document-processing tool to execute malicious code on Linux systems. The vulnerability allows creation of a temporary file that AI assistant can access, enabling remote code execution with privilege escalation. Anthropic has released a patch for the affected component, and users should update to the latest version or disable the document-processing feature until remediation.",
@@ -63,6 +81,25 @@ export const news: NewsBrief[] = [
       "article-eded8374",
       "eded8374",
       "abe-office-malware-steals-chrome-passwords-765175"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-qubole-s-trusted-aws-access-to-bre-732a8419",
+    "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+    "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+    "publishedAt": "2026-11-09T17:51:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-qubole-s-trusted-aws-access-to-bre",
+      "article-732a8419",
+      "732a8419",
+      "hackers-exploit-qubole-s-trusted-aws-access-to-bre-7c9614",
+      "hackers-exploit-qubole-s-trusted-aws-access-to-breach-custom"
     ]
   },
   {
@@ -158,6 +195,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "notepad-8-9-9-released-with-fixes-for-6-vulnerabil-42f7b818",
+    "title": "Notepad++ 8.9.9 Released With Fixes for 6 Vulnerabilities Allowing Plugin Command Execution",
+    "summary": "Notepad++ released version 8.9.9 on November 6, 2026, fixing six security flaws across Windows message handling, protected file saving, clipboard operations, and MIME Tools decoding. The update addresses flaws including conditional plugin command execution, memory exposure, and buffer overflow.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/notepad-8-9-9-released/",
+    "publishedAt": "2026-11-09T17:03:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "notepad-8-9-9-released-with-fixes-for-6-vulnerabil",
+      "article-42f7b818",
+      "42f7b818",
+      "notepad-8-9-9-released-with-fixes-for-6-vulnerabil-510037",
+      "notepad-8-9-9-released-with-fixes-for-6-vulnerabilities-allo"
+    ]
+  },
+  {
     "slug": "ghostaction-compromises-500-github-accounts-for-cl-d75bece3",
     "title": "GhostAction Compromises 500+ GitHub Accounts for Cloud Credentials",
     "summary": "GhostAction attackers compromised over 500 GitHub accounts in October 2026, injecting a workflow into thousands of repositories that exfiltrated AWS, OpenAI, and other cloud credentials. The workflow leveraged GitHub Actions to harvest secrets from environment variables, bypassing rotation and exposing key material to the attackers.",
@@ -174,6 +230,25 @@ export const news: NewsBrief[] = [
       "d75bece3",
       "ghostaction-compromises-500-github-accounts-for-cl-43e3a4",
       "ghostaction-compromises-500-github-accounts-for-cloud-creden"
+    ]
+  },
+  {
+    "slug": "binance-denies-data-breach-after-alleged-shinyhunt-1be14fa8",
+    "title": "Binance denies data breach after alleged ShinyHunters claims",
+    "summary": "Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/",
+    "publishedAt": "2026-11-09T16:12:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-denies-data-breach-after-alleged-shinyhunt",
+      "article-1be14fa8",
+      "1be14fa8",
+      "binance-denies-data-breach-after-alleged-shinyhunt-43c0a5",
+      "binance-denies-data-breach-after-alleged-shinyhunters-claims"
     ]
   },
   {
@@ -9446,81 +9521,6 @@ export const news: NewsBrief[] = [
       "article-f552ccc0",
       "f552ccc0",
       "cloudflare-enables-control-over-personal-ai-agents-12ad5e"
-    ]
-  },
-  {
-    "slug": "the-sandbox-fights-back-joe-security-launches-adap-ac724a59",
-    "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
-    "summary": "Reinach, Switzerland, November 4th, 2026, CyberNewswire AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions. Joe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during an initial sandbox run.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/the-sandbox-fights-back-joe-security-launches-adaptive-detonation/",
-    "publishedAt": "2026-11-04T13:56:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "the-sandbox-fights-back-joe-security-launches-adap",
-      "article-ac724a59",
-      "ac724a59",
-      "the-sandbox-fights-back-joe-security-launches-adap-1b41a7",
-      "the-sandbox-fights-back-joe-security-launches-adaptive-deton"
-    ]
-  },
-  {
-    "slug": "fake-windows-alerts-hosted-on-azure-target-80-orga-b5c20d51",
-    "title": "Fake Windows Alerts Hosted on Azure Target 80 Organizations",
-    "summary": "Scammers are hosting fake Windows security alert landing pages on Microsoft Azure to pressure users into calling fraudulent support numbers. Between March and October 2026, the same fake support kit reached users at 80 organizations, with new pages appearing daily as of November 2. This campaign relies entirely on social engineering rather than technical exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/scammers-use-microsoft-azure/",
-    "publishedAt": "2026-11-04T13:52:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-windows-alerts-hosted-on-azure-target-80-orga",
-      "article-b5c20d51",
-      "b5c20d51",
-      "fake-windows-alerts-hosted-on-azure-target-80-orga-108a31",
-      "fake-windows-alerts-hosted-on-azure-target-80-organizations"
-    ]
-  },
-  {
-    "slug": "europe-wide-cyberattacks-alter-blood-refrigeration-3dbb4a86",
-    "title": "Europe-Wide Cyberattacks Alter Blood Refrigeration Controls",
-    "summary": "A wave of cyberattacks targeting refrigeration equipment providers across Europe altered temperature controls at three French national blood service sites this week. Monitoring systems detected and reversed the parameter changes in time, preventing potential damage to stored blood products. No direct compromise of blood inventory or patient data occurred.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/france-cyberattack-blood-refrigeration",
-    "publishedAt": "2026-11-04T13:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "europe-wide-cyberattacks-alter-blood-refrigeration",
-      "article-3dbb4a86",
-      "3dbb4a86",
-      "europe-wide-cyberattacks-alter-blood-refrigeration-b36cb8",
-      "europe-wide-cyberattacks-alter-blood-refrigeration-controls"
-    ]
-  },
-  {
-    "slug": "usn-8996-1-apt-vulnerability-74755c53",
-    "title": "USN-8996-1: APT vulnerability",
-    "summary": "Max Justicz discovered that APT incorrectly handled hard links when encountering redirects and retrying package downloads. A remote on-path attacker could possibly use this issue to trick APT into installing an unverified package and achieve remote code execution with root privileges.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8996-1",
-    "publishedAt": "2026-11-04T13:37:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-8996-1-apt-vulnerability",
-      "article-74755c53",
-      "74755c53",
-      "usn-8996-1-apt-vulnerability-7fbb92"
     ]
   }
 ];
