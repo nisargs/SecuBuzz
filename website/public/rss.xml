@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 07:09:11 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 08:06:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues gd Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-gd-security-update-ea7d602d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-gd-security-update-ea7d602d</guid>
+      <description><![CDATA[Red Hat released a security update for the gd package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The update addresses multiple vulnerabilities in gd, each with a CVSS base score listed in the advisory references, but no CVE identifiers are disclosed. Administrators should apply the gd update immediately to mitigate the identified risks, following Red Hat’s installation guidance.]]></description>
+      <pubDate>Mon, 09 Nov 2026 08:02:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96206">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Engineer Pleads Not Guilty to Covert Device</title>
+      <link>https://secubuzz.com/news/openai-engineer-pleads-not-guilty-to-covert-device-4f5b9fb1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-engineer-pleads-not-guilty-to-covert-device-4f5b9fb1</guid>
+      <description><![CDATA[Former OpenAI engineer Abdulrahman Alfozan was arrested for planting a covert audio recorder in an executive meeting room at the company’s San Francisco office. He pleaded not guilty in federal court, with a hearing scheduled for November 17, 2026, after the device was found during a security sweep. OpenAI has tightened physical security measures to prevent future covert device installations.]]></description>
+      <pubDate>Mon, 09 Nov 2026 07:05:48 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>U.S. Agencies Warn of Refrigeration Attacks</title>
+      <link>https://secubuzz.com/news/u-s-agencies-warn-of-refrigeration-attacks-3ae2f77b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/u-s-agencies-warn-of-refrigeration-attacks-3ae2f77b</guid>
+      <description><![CDATA[U.S. federal agencies warned that hackers are targeting industrial refrigeration and cold‑chain monitoring systems worldwide. Attackers could alter temperature settings, damage equipment, or disrupt storage of food, medicine, and other temperature‑sensitive goods. Operators should secure exposed controllers, apply vendor patches, and monitor for anomalous activity to mitigate temperature manipulation risks.]]></description>
+      <pubDate>Mon, 09 Nov 2026 06:52:21 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-targeting-industrial-refrigeration-systems/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Refrigeration Controllers Pose Fire Risk</title>
+      <link>https://secubuzz.com/news/refrigeration-controllers-pose-fire-risk-06b36f0e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/refrigeration-controllers-pose-fire-risk-06b36f0e</guid>
+      <description><![CDATA[U.S. agencies warned that threat actors target industrial refrigeration and cold‑chain monitoring systems to cause disruptions, fire hazards, and inventory loss. Attackers may exploit vulnerabilities or weaknesses in unpatched or internet‑accessible controllers to remotely alter settings and force units into continuous heating. Operators should patch controllers, restrict network access, and monitor temperature controls to prevent forced heating and fire incidents.]]></description>
+      <pubDate>Mon, 09 Nov 2026 06:15:10 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html">The Hacker News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>SonicWall SonicOS MFA Bypass Vulnerability Exploited</title>
       <link>https://secubuzz.com/news/sonicwall-sonicos-mfa-bypass-vulnerability-exploit-5280e62b</link>
@@ -15,6 +51,15 @@
       <pubDate>Mon, 09 Nov 2026 06:05:24 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Wirken: Open-Source AI Agent Gateway</title>
+      <link>https://secubuzz.com/news/wirken-open-source-ai-agent-gateway-2c00cd4e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/wirken-open-source-ai-agent-gateway-2c00cd4e</guid>
+      <description><![CDATA[Wirken is an open‑source gateway that sits between messaging apps and AI agents, limiting a compromised agent’s data access. It enforces a sandboxed instruction set, blocking hidden directives that could leak secrets or rewrite files on Signal, WhatsApp, Telegram, and others. Hosted on GitHub, the project lets developers integrate Wirken into chat infrastructures to reduce malicious AI agent risks.]]></description>
+      <pubDate>Mon, 09 Nov 2026 06:00:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/09/wirken-open-source-ai-agent-gateway/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>MSP Customers Question Attack Detection Capabilities</title>
@@ -131,6 +176,24 @@
       <description><![CDATA[An update for multiple packages is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Mon, 09 Nov 2026 02:56:31 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96091">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues kpatch Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-kpatch-security-update-723f2f96</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-kpatch-security-update-723f2f96</guid>
+      <description><![CDATA[Red Hat released an important security update for multiple kpatch packages on Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. The update addresses several vulnerabilities in kpatch, each with a CVSS base score listed in the advisory references, but no CVE identifiers are disclosed.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:53:03 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96090">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Ruby Security Update for RHEL7</title>
+      <link>https://secubuzz.com/news/red-hat-releases-ruby-security-update-for-rhel7-9739cae5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-ruby-security-update-for-rhel7-9739cae5</guid>
+      <description><![CDATA[Red Hat issued a Ruby security update for Enterprise Linux 7 ELS, fixing vulnerabilities that could enable remote code execution. The update is rated Important, and each CVE’s CVSS base score is listed in the references supplied by Red Hat Product Security. Apply the patch promptly to eliminate exploitation risk and review the CVE links for detailed remediation guidance.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:52:56 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96099">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -393,69 +456,6 @@
       <pubDate>Sat, 07 Nov 2026 01:00:51 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/anthropic-won-t-fix-a-claude-dispatch-flaw-that-could-l">CyberNews AI</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ChromeOS Update Fixes Multiple High‑Severity CVEs</title>
-      <link>https://secubuzz.com/news/chromeos-update-fixes-multiple-high-severity-cves-2a7a9d4c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-update-fixes-multiple-high-severity-cves-2a7a9d4c</guid>
-      <description><![CDATA[Google ChromeOS Stable channel update addresses several memory corruption flaws affecting WebXR, WebGL, Media, CacheStorage, and Navigation. The CVEs, including CVE‑2026‑121076, CVE‑2026‑121208, CVE‑2026‑79235, and others, enable use‑after‑free or out‑of‑bounds reads that could lead to arbitrary code execution if exploited in the browser. All affected devices should install the new 16836.32.0 build or apply vendor‑supplied patches to mitigate the vulnerabilities.]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:52:58 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Metasploit Unauth RCE in Perimeter Devices</title>
-      <link>https://secubuzz.com/news/metasploit-unauth-rce-in-perimeter-devices-b2f6a475</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/metasploit-unauth-rce-in-perimeter-devices-b2f6a475</guid>
-      <description><![CDATA[Metasploit contains an unauthenticated remote code execution flaw affecting perimeter devices, enabling attackers to execute arbitrary code without credentials. The vulnerability is actively exploitable, with no known public exploit yet, but could allow full system compromise on affected devices. Security teams should deploy the latest Metasploit patch immediately and implement detection rules to monitor for exploitation attempts.]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:50:13 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/metasploit-wrapup-unauth-rce-modules-in-network-perimet">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SharePoint CVE‑2025‑53770 Exploited by Storm‑2603</title>
-      <link>https://secubuzz.com/news/sharepoint-cve-2025-53770-exploited-by-storm-2603-f3f6f544</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sharepoint-cve-2025-53770-exploited-by-storm-2603-f3f6f544</guid>
-      <description><![CDATA[A remote code execution flaw, CVE‑2025‑53770, in Microsoft SharePoint was actively exploited by the Storm‑2603 threat actor. The vulnerability allows attackers to inject malicious scripts via crafted HTTP requests, enabling arbitrary code execution with the privileges of the SharePoint service account. Microsoft has released a patch; organizations should apply the update immediately and monitor for suspicious activity in SharePoint logs.]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:40:16 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/the-soc-files-5-ghost-in-the-pipeline-or-a-fileless-sha">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CISA Reports RCE Exploitation of CVE-2023-1380</title>
-      <link>https://secubuzz.com/news/cisa-reports-rce-exploitation-of-cve-2023-1380-6bc78273</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-reports-rce-exploitation-of-cve-2023-1380-6bc78273</guid>
-      <description><![CDATA[CISA identified active exploitation of CVE-2023-1380, a remote code execution vulnerability in unspecified software. The flaw allows attackers to execute arbitrary code without authentication, potentially compromising system integrity and confidentiality. Immediate patching is required; apply vendor‑issued updates, enable network segmentation, enforce least‑privilege access controls, and monitor for suspicious activity to mitigate exposure.]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:30:32 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cisa-adds-one-known-exploited-vulnerability-to-catalog">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Claude Dispatch Browser Extension Enables Code Execution</title>
-      <link>https://secubuzz.com/news/claude-dispatch-browser-extension-enables-code-exe-4df853f7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-dispatch-browser-extension-enables-code-exe-4df853f7</guid>
-      <description><![CDATA[A code‑execution vulnerability in the Claude Dispatch browser extension allows attackers to run arbitrary code within the host environment. The flaw, identified as CVE‑2026‑119977, is exploitable via a malicious add‑on and could lead to credential theft or system compromise. Users should update to the latest extension version or disable the add‑on to eliminate the execution risk.]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:20:04 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/malicious-browser-extensions-could-use-claude-dispatch">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>SonicWall SSLVPN MFA Bypass (CVE‑2026‑19868) Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables-c701e62e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables-c701e62e</guid>
-      <description><![CDATA[SonicWall SSLVPN suffered a critical MFA bypass flaw (CVE‑2026‑19868) that lets attackers gain unauthenticated access to corporate networks. The vulnerability stems from improper validation of authentication tokens during the SSLVPN handshake, enabling remote code execution and credential‑reuse attacks. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:55 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ESXi Ransomware Exploits Weak Access Controls</title>
-      <link>https://secubuzz.com/news/esxi-ransomware-exploits-weak-access-controls-7484dbee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/esxi-ransomware-exploits-weak-access-controls-7484dbee</guid>
-      <description><![CDATA[The ESXi hypervisor was hit by ransomware that exploited weak access controls and misconfigurations to gain administrative privileges. Attackers encrypted virtual machine files with a cryptolocker payload, demanding payment to restore access, and the breach was detected via anomalous credential usage. VMware issued a security advisory urging immediate patching, stricter ESXi authentication, and least‑privilege access controls to mitigate future attacks.]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:43 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/virtualization-security-attack-layers-and-misconfigurat">CyberNews AI</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>

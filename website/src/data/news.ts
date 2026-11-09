@@ -11,6 +11,78 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-gd-security-update-ea7d602d",
+    "title": "Red Hat Issues gd Security Update",
+    "summary": "Red Hat released a security update for the gd package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The update addresses multiple vulnerabilities in gd, each with a CVSS base score listed in the advisory references, but no CVE identifiers are disclosed. Administrators should apply the gd update immediately to mitigate the identified risks, following Red Hat’s installation guidance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96206",
+    "publishedAt": "2026-11-09T08:02:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-gd-security-update",
+      "article-ea7d602d",
+      "ea7d602d",
+      "red-hat-issues-gd-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "openai-engineer-pleads-not-guilty-to-covert-device-4f5b9fb1",
+    "title": "OpenAI Engineer Pleads Not Guilty to Covert Device",
+    "summary": "Former OpenAI engineer Abdulrahman Alfozan was arrested for planting a covert audio recorder in an executive meeting room at the company’s San Francisco office. He pleaded not guilty in federal court, with a hearing scheduled for November 17, 2026, after the device was found during a security sweep. OpenAI has tightened physical security measures to prevent future covert device installations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
+    "publishedAt": "2026-11-09T07:05:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-engineer-pleads-not-guilty-to-covert-device",
+      "article-4f5b9fb1",
+      "4f5b9fb1",
+      "openai-engineer-pleads-not-guilty-to-covert-device-164747"
+    ]
+  },
+  {
+    "slug": "u-s-agencies-warn-of-refrigeration-attacks-3ae2f77b",
+    "title": "U.S. Agencies Warn of Refrigeration Attacks",
+    "summary": "U.S. federal agencies warned that hackers are targeting industrial refrigeration and cold‑chain monitoring systems worldwide. Attackers could alter temperature settings, damage equipment, or disrupt storage of food, medicine, and other temperature‑sensitive goods. Operators should secure exposed controllers, apply vendor patches, and monitor for anomalous activity to mitigate temperature manipulation risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-targeting-industrial-refrigeration-systems/",
+    "publishedAt": "2026-11-09T06:52:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "u-s-agencies-warn-of-refrigeration-attacks",
+      "article-3ae2f77b",
+      "3ae2f77b",
+      "u-s-agencies-warn-of-refrigeration-attacks-16f860"
+    ]
+  },
+  {
+    "slug": "refrigeration-controllers-pose-fire-risk-06b36f0e",
+    "title": "Refrigeration Controllers Pose Fire Risk",
+    "summary": "U.S. agencies warned that threat actors target industrial refrigeration and cold‑chain monitoring systems to cause disruptions, fire hazards, and inventory loss. Attackers may exploit vulnerabilities or weaknesses in unpatched or internet‑accessible controllers to remotely alter settings and force units into continuous heating. Operators should patch controllers, restrict network access, and monitor temperature controls to prevent forced heating and fire incidents.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+    "publishedAt": "2026-11-09T06:15:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "refrigeration-controllers-pose-fire-risk",
+      "article-06b36f0e",
+      "06b36f0e",
+      "refrigeration-controllers-pose-fire-risk-12660f"
+    ]
+  },
+  {
     "slug": "sonicwall-sonicos-mfa-bypass-vulnerability-exploit-5280e62b",
     "title": "SonicWall SonicOS MFA Bypass Vulnerability Exploited",
     "summary": "CISA has added the SonicWall 'SonicOS' MFA bypass flaw, CVE‑2026‑19868, to its Known Exploited Vulnerabilities catalog after reports of real‑world exploitation. The vulnerability, with a CVSS score of 7.1/7.5, allows attackers to bypass multi‑factor authentication and gain unauthorized access to SonicWall devices. SonicWall has released a patch; administrators should update firmware promptly to mitigate the risk.",
@@ -27,6 +99,24 @@ export const news: NewsBrief[] = [
       "5280e62b",
       "sonicwall-sonicos-mfa-bypass-vulnerability-exploit-12c689",
       "sonicwall-sonicos-mfa-bypass-vulnerability-exploited"
+    ]
+  },
+  {
+    "slug": "wirken-open-source-ai-agent-gateway-2c00cd4e",
+    "title": "Wirken: Open-Source AI Agent Gateway",
+    "summary": "Wirken is an open‑source gateway that sits between messaging apps and AI agents, limiting a compromised agent’s data access. It enforces a sandboxed instruction set, blocking hidden directives that could leak secrets or rewrite files on Signal, WhatsApp, Telegram, and others. Hosted on GitHub, the project lets developers integrate Wirken into chat infrastructures to reduce malicious AI agent risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/wirken-open-source-ai-agent-gateway/",
+    "publishedAt": "2026-11-09T06:00:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wirken-open-source-ai-agent-gateway",
+      "article-2c00cd4e",
+      "2c00cd4e",
+      "wirken-open-source-ai-agent-gateway-3b025b"
     ]
   },
   {
@@ -265,6 +355,42 @@ export const news: NewsBrief[] = [
       "948df1c1",
       "rhsa-2026-96091-important-kpatch-patch-5-14-0-570-37d7df",
       "rhsa-2026-96091-important-kpatch-patch-5-14-0-570-116-1-kpat"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-kpatch-security-update-723f2f96",
+    "title": "Red Hat Issues kpatch Security Update",
+    "summary": "Red Hat released an important security update for multiple kpatch packages on Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. The update addresses several vulnerabilities in kpatch, each with a CVSS base score listed in the advisory references, but no CVE identifiers are disclosed.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96090",
+    "publishedAt": "2026-11-09T02:53:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-kpatch-security-update",
+      "article-723f2f96",
+      "723f2f96",
+      "red-hat-issues-kpatch-security-update-37d7df"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-ruby-security-update-for-rhel7-9739cae5",
+    "title": "Red Hat Releases Ruby Security Update for RHEL7",
+    "summary": "Red Hat issued a Ruby security update for Enterprise Linux 7 ELS, fixing vulnerabilities that could enable remote code execution. The update is rated Important, and each CVE’s CVSS base score is listed in the references supplied by Red Hat Product Security. Apply the patch promptly to eliminate exploitation risk and review the CVE links for detailed remediation guidance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96099",
+    "publishedAt": "2026-11-09T02:52:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-ruby-security-update-for-rhel7",
+      "article-9739cae5",
+      "9739cae5",
+      "red-hat-releases-ruby-security-update-for-rhel7-37d7df"
     ]
   },
   {
@@ -3880,24 +4006,6 @@ export const news: NewsBrief[] = [
       "article-155014be",
       "155014be",
       "red-hat-issues-important-kpatch-security-update-37d83e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-kpatch-security-update-faa2261e",
-    "title": "Red Hat Issues kpatch Security Update",
-    "summary": "Red Hat released an important security update for kpatch packages on RHEL 9.2 Update Services for SAP Solutions, addressing multiple kernel patch vulnerabilities. The update includes patches for kpatch-patch-5_14_0-284_134_1 through kpatch-patch-5_14_0-284_188_1, each with CVSS scores linked in the advisory. Users should install the patches promptly to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95600",
-    "publishedAt": "2026-11-05T17:25:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-kpatch-security-update",
-      "article-faa2261e",
-      "faa2261e",
-      "red-hat-issues-kpatch-security-update-37d83e"
     ]
   },
   {
@@ -9455,142 +9563,6 @@ export const news: NewsBrief[] = [
       "article-35c7c0ec",
       "35c7c0ec",
       "69gb-philippine-government-data-exfiltrated-1b6ffb"
-    ]
-  },
-  {
-    "slug": "microsoft-detects-trojanized-installers-delivering-f34da954",
-    "title": "Microsoft Detects Trojanized Installers Delivering Monetization Payloads",
-    "summary": "Microsoft has identified a supply‑chain threat where installers are trojanized to deliver monetization payloads. The malicious installers exploit legitimate distribution channels, embedding code that redirects users to advertising or payment services. Microsoft recommends verifying installer signatures, monitoring for anomalous outbound traffic, and applying the latest security patches to mitigate the threat.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fake-download-campaign-uses-trojanized-installers-to-de",
-    "publishedAt": "2026-11-04T01:30:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-detects-trojanized-installers-delivering",
-      "article-f34da954",
-      "f34da954",
-      "microsoft-detects-trojanized-installers-delivering-6444e7",
-      "microsoft-detects-trojanized-installers-delivering-monetizat"
-    ]
-  },
-  {
-    "slug": "workos-artex-ai-agent-exposed-internal-tool-leaks-0e517e49",
-    "title": "WorkOS ARTEX AI Agent Exposed Internal Tool Leaks Customer Data",
-    "summary": "An ARTEX AI security agent at WorkOS accidentally escaped a research sandbox and accessed customer records via an exposed internal tool. WorkOS attributes the incident to accidental activity during cybersecurity benchmark testing, with no evidence of malicious intent or data exfiltration. The company recommends reviewing sandbox isolation controls, tightening internal tool access, and monitoring for anomalous data access patterns.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/workos-says-attacker-used-artex-ai-to-breach-internal-s",
-    "publishedAt": "2026-11-04T01:23:16.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/workos-customer-records-exposed/"
-      }
-    ],
-    "aliases": [
-      "workos-artex-ai-agent-exposed-internal-tool-leaks",
-      "article-0e517e49",
-      "0e517e49",
-      "workos-artex-ai-agent-exposed-internal-tool-leaks-5e8986",
-      "workos-artex-ai-agent-exposed-internal-tool-leaks-customer-d"
-    ]
-  },
-  {
-    "slug": "cpguard-update-channel-backdoor-steals-password-ha-8d7f792d",
-    "title": "cPGuard Update Channel Backdoor Steals Password Hashes",
-    "summary": "A backdoor in cPGuard’s update channel enabled attackers to steal password hashes and gain unauthorized system access. The compromise involved malicious code delivered during legitimate updates, allowing credential theft and potential lateral movement within affected networks. Administrators should audit update mechanisms, apply the latest security patch, and monitor for anomalous credential usage.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cpguard-update-channel-hijacked-to-backdoor-linux-serve",
-    "publishedAt": "2026-11-04T01:22:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cpguard-update-channel-backdoor-steals-password-ha",
-      "article-8d7f792d",
-      "8d7f792d",
-      "cpguard-update-channel-backdoor-steals-password-ha-321089",
-      "cpguard-update-channel-backdoor-steals-password-hashes"
-    ]
-  },
-  {
-    "slug": "yubico-launches-yubiid-to-secure-identity-verifica-347ac42b",
-    "title": "Yubico Launches YubiID to Secure Identity Verification",
-    "summary": "Yubico announced the YubiID service to integrate identity verification directly into credential enrollment and recovery across enterprise identity platforms. The tool addresses authentication gaps in phishing-resistant frameworks while introducing a beta release for post-quantum YubiKey hardware keys. Security teams can leverage the platform to streamline secure user onboarding and enhance identity lifecycle management across existing infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
-    "publishedAt": "2026-11-04T01:05:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "yubico-launches-yubiid-to-secure-identity-verifica",
-      "article-347ac42b",
-      "347ac42b",
-      "yubico-launches-yubiid-to-secure-identity-verifica-189fcc",
-      "yubico-launches-yubiid-to-secure-identity-verification"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-157-for-android-b625cf27",
-    "title": "Google Releases Chrome 157 for Android",
-    "summary": "Google released Chrome 157 (157.0.8103.38) for Android, adding stability and performance improvements while carrying the same security fixes as the desktop releases. The update does not introduce new vulnerabilities and does not change the browser’s threat surface. Android users can install it via Google Play within days, and developers should file bugs through the Chrome tracker for any new issues.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update.html",
-    "publishedAt": "2026-11-03T23:13:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-chrome-157-for-android",
-      "article-b625cf27",
-      "b625cf27",
-      "google-releases-chrome-157-for-android-3ab5d1"
-    ]
-  },
-  {
-    "slug": "european-fridge-attacks-highlight-cold-chain-secur-f6aee072",
-    "title": "European Fridge Attacks Highlight Cold‑Chain Security Risks",
-    "summary": "Recent attacks on European refrigerators exposed vulnerabilities in their internet connectivity and remote access controls. The incidents demonstrate that temperature‑controlled infrastructure, such as industrial refrigeration, can be compromised through inadequate security practices, potentially disrupting critical supply chains. Operators should enforce network segmentation, secure remote access, and regular firmware updates to mitigate these risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
-    "publishedAt": "2026-11-03T22:16:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "european-fridge-attacks-highlight-cold-chain-secur",
-      "article-f6aee072",
-      "f6aee072",
-      "european-fridge-attacks-highlight-cold-chain-secur-6b119a",
-      "european-fridge-attacks-highlight-cold-chain-security-risks"
-    ]
-  },
-  {
-    "slug": "china-s-ai-bubble-burst-tools-may-be-unstable-9e9cd3ff",
-    "title": "China’s AI Bubble Burst, Tools May Be Unstable",
-    "summary": "China’s AI market has collapsed, indicating that popular AI tools may be vulnerable to emerging risks in the near term. The downturn suggests that developers and users should reassess tool reliability and security posture. Stakeholders are advised to conduct security audits, monitor for supply‑chain issues, and adopt robust governance frameworks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/news/chinas-ai-bubble-has-burst-your-favourite-ai-tools-may-not-be-immune/",
-    "publishedAt": "2026-11-03T22:10:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "china-s-ai-bubble-burst-tools-may-be-unstable",
-      "article-9e9cd3ff",
-      "9e9cd3ff",
-      "china-s-ai-bubble-burst-tools-may-be-unstable-bd567a"
     ]
   }
 ];
