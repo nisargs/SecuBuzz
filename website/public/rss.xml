@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 09:44:16 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 10:45:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases util‑linux Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-util-linux-security-update-cc3bf8d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-util-linux-security-update-cc3bf8d2</guid>
+      <description><![CDATA[Red Hat issued a security update for the util‑linux package on RHEL 8, addressing multiple unspecified vulnerabilities. The advisory references several CVEs rated as Important, yet no active exploitation has been reported to date. Administrators should apply the RHSA‑2026:96212 update promptly to mitigate potential privilege‑escalation or denial‑of‑service risks in affected systems.]]></description>
+      <pubDate>Mon, 09 Nov 2026 10:17:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96212">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Frontline Education Breach Hits 3 Million Users</title>
+      <link>https://secubuzz.com/news/frontline-education-breach-hits-3-million-users-8fe1087f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/frontline-education-breach-hits-3-million-users-8fe1087f</guid>
+      <description><![CDATA[Frontline Education disclosed a data breach that exposed personal information of over 3 million school district staff and students in Indiana. The incident involved unauthorized access to the organization’s systems, potentially compromising credentials, contact details, and academic records. Frontline Education notified regulators and affected parties, and is conducting a forensic investigation while urging users to monitor for suspicious activity.]]></description>
+      <pubDate>Mon, 09 Nov 2026 10:09:02 GMT</pubDate>
+      <source url="https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Bank Loses $133M via Exploited Service Provider</title>
+      <link>https://secubuzz.com/news/bank-loses-133m-via-exploited-service-provider-d74f0b32</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/bank-loses-133m-via-exploited-service-provider-d74f0b32</guid>
+      <description><![CDATA[Attackers siphoned $133 million from Crédit Mutuel Arkéa by abusing the bank’s account to wire funds to other banks, later converting them into cryptocurrency. The breach exploited CVE‑2023‑1380 in a third‑party service provider, enabling unauthorized fund transfers without triggering internal controls. Security teams should apply the CVE‑2023‑1380 patch, audit transfer logs, and strengthen multi‑factor authentication to prevent similar exploits.]]></description>
+      <pubDate>Mon, 09 Nov 2026 10:03:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/09/credit-mutuel-arkea-cyberattack-133-million/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Malwarebytes Claude Connector Showcases Threat Checks</title>
+      <link>https://secubuzz.com/news/malwarebytes-claude-connector-showcases-threat-che-e8ab21ca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-claude-connector-showcases-threat-che-e8ab21ca</guid>
+      <description><![CDATA[Malwarebytes launched a Claude connector that lets users query suspicious links, phone numbers, and email addresses directly in chat. The tool supports free and paid Claude plans, requires no separate Malwarebytes account, and offers six utilities including domain registration lookup and screenshot scanning. Security teams can quickly validate potential threats without leaving the conversation, streamlining threat assessment workflows.]]></description>
+      <pubDate>Mon, 09 Nov 2026 09:31:52 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/09/product-showcase-malwarebytes-claude-scam-detection/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Taiwan Hacker Steals Taipei Dispatch Records via AI Agents</title>
+      <link>https://secubuzz.com/news/taiwan-hacker-steals-taipei-dispatch-records-via-a-6b3623d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/taiwan-hacker-steals-taipei-dispatch-records-via-a-6b3623d5</guid>
+      <description><![CDATA[A Taiwan‑based attacker used BOSSAI AI agents to exfiltrate emergency dispatch records from seven Taipei districts. The agents also discovered a Taipei fire department platform exposing 2018 patient data, including ECG readings and ambulance video, without authentication. Researchers confirm the attacker is a single individual, underscoring the need for tighter access controls on public platforms.]]></description>
+      <pubDate>Mon, 09 Nov 2026 09:01:50 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ArmorSteal Malware Spread via Fake Downloads</title>
+      <link>https://secubuzz.com/news/armorsteal-malware-spread-via-fake-downloads-fc8498d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/armorsteal-malware-spread-via-fake-downloads-fc8498d4</guid>
+      <description><![CDATA[Hackers distribute a Python‑based kit, ArmorSteal, via counterfeit download portals that lure users into installing malicious executables. The kit harvests credentials, crypto wallets, and Discord accounts while covertly mining Monero, exploiting social‑engineering trust and lacking a public CVE. Security teams should block malicious download sites, deploy endpoint detection signatures for ArmorSteal, and enforce user awareness training to mitigate credential theft.]]></description>
+      <pubDate>Mon, 09 Nov 2026 08:55:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/armorsteal-malware/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>DeepMind AI Lowers Cost of 1024‑Bit RSA Attacks</title>
+      <link>https://secubuzz.com/news/deepmind-ai-lowers-cost-of-1024-bit-rsa-attacks-1aaa7b25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/deepmind-ai-lowers-cost-of-1024-bit-rsa-attacks-1aaa7b25</guid>
+      <description><![CDATA[DeepMind’s AI agents have reduced the cost of forging RSA‑1024 signatures and factoring 1024‑bit keys, making attacks more economically feasible. The breakthrough leverages machine‑learning models trained on cryptographic data, lowering the computational effort from astronomical to practical levels. Security practitioners should transition to RSA keys of at least 2048 bits, adopt post‑quantum algorithms, and monitor for anomalous signature requests.]]></description>
+      <pubDate>Mon, 09 Nov 2026 08:35:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Issues gd Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-gd-security-update-ea7d602d</link>
@@ -15,6 +78,15 @@
       <pubDate>Mon, 09 Nov 2026 08:02:43 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96206">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Malwarebytes Weekly Security Overview</title>
+      <link>https://secubuzz.com/news/malwarebytes-weekly-security-overview-6e54ca2c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-weekly-security-overview-6e54ca2c</guid>
+      <description><![CDATA[Malwarebytes Labs published a weekly security roundup covering topics from Nov 2-8, 2026. The post lists multiple security subjects, including emerging threats, product updates, and industry trends. The roundup includes analysis of recent zero-day disclosures, threat actor activity, and vendor patch releases, providing a broad industry snapshot.]]></description>
+      <pubDate>Mon, 09 Nov 2026 08:01:00 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-2-november-8">Malwarebytes Labs</source>
+      <category>General</category>
     </item>
     <item>
       <title>Veeam Issues Critical Linux Kernel Flaw Warning</title>
@@ -53,10 +125,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>SonicWall SonicOS MFA Bypass Vulnerability Exploited</title>
-      <link>https://secubuzz.com/news/sonicwall-sonicos-mfa-bypass-vulnerability-exploit-5280e62b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sonicos-mfa-bypass-vulnerability-exploit-5280e62b</guid>
-      <description><![CDATA[CISA has added the SonicWall 'SonicOS' MFA bypass flaw, CVE‑2026‑19868, to its Known Exploited Vulnerabilities catalog after reports of real‑world exploitation. The vulnerability, with a CVSS score of 7.1/7.5, allows attackers to bypass multi‑factor authentication and gain unauthorized access to SonicWall devices. SonicWall has released a patch; administrators should update firmware promptly to mitigate the risk.]]></description>
+      <title>SonicWall SonicOS MFA Bypass Vulnerability (CVE‑2026‑19868) Exploited in Wild</title>
+      <link>https://secubuzz.com/news/sonicwall-sonicos-mfa-bypass-vulnerability-cve-202-6af5bc05</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sonicwall-sonicos-mfa-bypass-vulnerability-cve-202-6af5bc05</guid>
+      <description><![CDATA[SonicWall's SonicOS SSL‑VPN service suffered an authentication bypass flaw (CVE‑2026‑19868) that lets attackers with valid credentials circumvent SAML‑enforced MFA. The flaw mis‑implements SAML token validation, allowing credential‑only attackers to gain full VPN access and is actively exploited in the wild. SonicWall issued an out‑of‑band patch with no workaround; administrators must apply it immediately to restore MFA enforcement.]]></description>
       <pubDate>Mon, 09 Nov 2026 06:05:24 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html">The Hacker News</source>
       <category>CVE</category>
@@ -98,6 +170,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Red Hat Releases Moderate glibc Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-moderate-glibc-security-update-583666d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-moderate-glibc-security-update-583666d8</guid>
+      <description><![CDATA[Red Hat issued a moderate‑impact security update for glibc on Red Hat Enterprise Linux 8, addressing several unspecified vulnerabilities. The advisory lists CVSS base scores for each vulnerability, but no specific CVE identifiers are named in the release notes. Security teams should apply the glibc update promptly and verify system stability to mitigate potential exploitation.]]></description>
+      <pubDate>Mon, 09 Nov 2026 04:48:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96087">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Issues Ruby 3.3 Security Update for RHEL 9</title>
       <link>https://secubuzz.com/news/red-hat-issues-ruby-3-3-security-update-for-rhel-9-ef87381c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-ruby-3-3-security-update-for-rhel-9-ef87381c</guid>
@@ -131,6 +212,24 @@
       <description><![CDATA[An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Mon, 09 Nov 2026 03:39:22 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96080">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues DPDK Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-dpdk-security-update-1934988a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-dpdk-security-update-1934988a</guid>
+      <description><![CDATA[Red Hat released a security update for DPDK on RHEL8, addressing several vulnerabilities rated as Important. The update fixes unspecified flaws that could enable local privilege escalation or denial of service, as indicated by the CVSS base scores referenced in the advisory. Red Hat advises applying the update promptly to protect affected deployments.]]></description>
+      <pubDate>Mon, 09 Nov 2026 03:38:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96083">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Nodejs24 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-nodejs24-security-update-ddc380f9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-nodejs24-security-update-ddc380f9</guid>
+      <description><![CDATA[Red Hat issued a security update for nodejs24 on RHEL10, addressing multiple vulnerabilities with an Important impact rating. The update mitigates unspecified flaws that could allow local privilege escalation or code execution, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the update immediately to secure affected systems.]]></description>
+      <pubDate>Mon, 09 Nov 2026 03:38:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96088">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -357,105 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 01:45:39 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:96076">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenSSH SSHole Authentication Bypass (CVE-2026-123158) Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/openssh-sshole-authentication-bypass-cve-2026-1231-63427e3c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openssh-sshole-authentication-bypass-cve-2026-1231-63427e3c</guid>
-      <description><![CDATA[OpenSSH servers are vulnerable to the SSHole authentication bypass (CVE-2026-123158), letting attackers submit oversized passwords for unauthenticated remote code execution. The flaw exploits improper length validation in password handling, enabling privilege escalation and root access on affected Linux systems. Administrators must apply the vendor‑issued patch or upgrade to the latest OpenSSH release immediately to mitigate the vulnerability.]]></description>
-      <pubDate>Sun, 08 Nov 2026 15:44:33 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33498">SANS Internet Storm Center</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Iris Ohyama Cloud Breach Exposes 7.7 Million Customer Records</title>
-      <link>https://secubuzz.com/news/iris-ohyama-cloud-breach-exposes-7-7-million-custo-f2e31ab0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iris-ohyama-cloud-breach-exposes-7-7-million-custo-f2e31ab0</guid>
-      <description><![CDATA[Iris Ohyama suffered a cloud breach that exposed 7.7 million customer records, including identifiers, contact details, and purchase histories. The unauthorized access originated from a third‑party cloud service, with no evidence of financial fraud or credential theft reported. Iris Ohyama notified regulators, advised affected users to monitor accounts and change passwords, and is conducting a forensic investigation.]]></description>
-      <pubDate>Sun, 08 Nov 2026 15:43:08 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Brava Security Raises 15 Million Exiting Stealth Mode</title>
-      <link>https://secubuzz.com/news/brava-security-raises-15-million-exiting-stealth-m-e53a4ad0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/brava-security-raises-15-million-exiting-stealth-m-e53a4ad0</guid>
-      <description><![CDATA[Cybersecurity startup Brava Security has emerged from stealth mode following a 15 million dollar funding round. The vendor offers a multi-agent AI platform engineered to simulate attack activity by generating realistic threat telemetry. Security teams can utilize this generated telemetry mechanism to identify and resolve defensive coverage gaps across enterprise environments.]]></description>
-      <pubDate>Sun, 08 Nov 2026 12:14:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe</title>
-      <link>https://secubuzz.com/news/refrigeration-attacks-exploit-cve-2026-96951-in-eu-50387730</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/refrigeration-attacks-exploit-cve-2026-96951-in-eu-50387730</guid>
-      <description><![CDATA[European retailers’ refrigeration systems were hit by cyberattacks exploiting CVE‑2026‑96951, granting attackers unauthorized control over temperature settings. The flaw allows remote code execution through malformed configuration files, and a public PoC shows attackers can alter cooling cycles, risking spoilage. Patch Tuesday will deliver a fix; security teams should apply it promptly and monitor logs for anomalous temperature changes.]]></description>
-      <pubDate>Sun, 08 Nov 2026 09:00:21 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/">Help Net Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Storm-3358 Exploits SSRF and File Upload in ARTEX</title>
-      <link>https://secubuzz.com/news/storm-3358-exploits-ssrf-and-file-upload-in-artex-75f2b7f0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/storm-3358-exploits-ssrf-and-file-upload-in-artex-75f2b7f0</guid>
-      <description><![CDATA[Storm-3358 attackers exploited SSRF and file upload flaws in ARTEX. The flaw allows unauthenticated remote code execution via crafted HTTP requests, enabling attackers to read internal resources and upload malicious payloads, potentially compromising system integrity. ARTEX has released a patch that validates input paths and restricts file types; security teams should apply the update immediately and enforce strict upload policies.]]></description>
-      <pubDate>Sat, 07 Nov 2026 19:46:05 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/artex-abuse-expands-as-cybercriminals-target-financial">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability</title>
-      <link>https://secubuzz.com/news/red-hat-issues-keycloak-26-6-9-security-update-to-86f165d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-keycloak-26-6-9-security-update-to-86f165d5</guid>
-      <description><![CDATA[Red Hat released a security update for Keycloak 26.6.9, fixing a flaw that could let attackers gain unauthorized access or elevate privileges within deployments. The vulnerability affects both standard and containerized installations, potentially impacting OpenShift and Kubernetes environments. Administrators should download the updated packages or pull the new images from the Red Customer Portal and redeploy Keycloak to maintain security.]]></description>
-      <pubDate>Sat, 07 Nov 2026 14:49:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96039">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CTM360 Exposes Fake Gift Card Scam Tactics</title>
-      <link>https://secubuzz.com/news/ctm360-exposes-fake-gift-card-scam-tactics-b4921fb8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ctm360-exposes-fake-gift-card-scam-tactics-b4921fb8</guid>
-      <description><![CDATA[CTM360 uncovered a series of fake gift card scams that impersonate well-known brands and celebrities to trick consumers into providing personal data. The campaigns use deceptive verification steps and affiliate networks to harvest information and trigger unwanted subscriptions, exploiting social engineering rather than technical vulnerabilities. Security teams should educate users about verifying legitimate offers and monitor for unauthorized subscription charges.]]></description>
-      <pubDate>Sat, 07 Nov 2026 14:10:19 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Claude Code Option Exposes Credentials to Public GitHub</title>
-      <link>https://secubuzz.com/news/claude-code-option-exposes-credentials-to-public-g-f8b02e5e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-option-exposes-credentials-to-public-g-f8b02e5e</guid>
-      <description><![CDATA[Claude Code’s ‘Yes, and don’t ask again’ option stores passwords and API keys in project settings, allowing them to be pushed to public GitHub repositories. Researchers uncovered 2,539 secrets in 1,994 public repos, affecting 63 organizations, proving a single approval can expose credentials. Teams should disable the option, audit settings, rotate exposed keys, and enable secret scanning to prevent leakage.]]></description>
-      <pubDate>Sat, 07 Nov 2026 08:20:25 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Claude Code Exposes Secrets via &apos;Don&apos;t Ask Again&apos; Setting</title>
-      <link>https://secubuzz.com/news/claude-code-exposes-secrets-via-don-t-ask-again-se-3fb04556</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-exposes-secrets-via-don-t-ask-again-se-3fb04556</guid>
-      <description><![CDATA[Claude Code's 'Don't Ask Again' feature records passwords and API keys into project settings files, exposing them in 1,122 public GitHub repositories. The flaw saves the exact command, including secrets, into an unprotected file, letting anyone with repository access read credentials. Anthropic and vendors advise disabling the option, scanning for exposed secrets, and rotating credentials; no patch yet.]]></description>
-      <pubDate>Sat, 07 Nov 2026 06:44:17 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Storm-3358 Expands ARTEX Attacks on Finance</title>
-      <link>https://secubuzz.com/news/storm-3358-expands-artex-attacks-on-finance-4b4124b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/storm-3358-expands-artex-attacks-on-finance-4b4124b2</guid>
-      <description><![CDATA[In October 2026, the financially motivated threat actor Storm‑3358 intensified attacks on financial institutions using the ARTEX agentic AI offensive framework. ARTEX leverages AI to automate credential harvesting and phishing, enabling attackers to bypass traditional security controls without requiring manual intervention. Security teams should monitor for ARTEX‑related indicators, enforce multi‑factor authentication, and update email filtering rules to mitigate emerging threats.]]></description>
-      <pubDate>Sat, 07 Nov 2026 02:44:34 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Insignary Releases Free Insignary-Chk Tool to Detect PHP2Shell and Node2Shell Exposure</title>
-      <link>https://secubuzz.com/news/insignary-releases-free-insignary-chk-tool-to-dete-7435b3d2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/insignary-releases-free-insignary-chk-tool-to-dete-7435b3d2</guid>
-      <description><![CDATA[Toronto, Canada, November 6th, 2026, CyberNewswire Free, read-only scanner helps organizations find Linux servers and container images exposed to two actively exploited vulnerabilities in PHP and Node.js Insignary, a global open-source security company, today released insignary-chk, a free tool that checks for PHP2Shell and Node2Shell, two recently disclosed runtime vulnerabilities affecting PHP and Node.js.]]></description>
-      <pubDate>Sat, 07 Nov 2026 02:06:17 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/">Cyber Security News</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

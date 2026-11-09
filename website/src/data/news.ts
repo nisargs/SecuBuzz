@@ -11,6 +11,134 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-util-linux-security-update-cc3bf8d2",
+    "title": "Red Hat Releases util‑linux Security Update",
+    "summary": "Red Hat issued a security update for the util‑linux package on RHEL 8, addressing multiple unspecified vulnerabilities. The advisory references several CVEs rated as Important, yet no active exploitation has been reported to date. Administrators should apply the RHSA‑2026:96212 update promptly to mitigate potential privilege‑escalation or denial‑of‑service risks in affected systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96212",
+    "publishedAt": "2026-11-09T10:17:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-util-linux-security-update",
+      "article-cc3bf8d2",
+      "cc3bf8d2",
+      "red-hat-releases-util-linux-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "frontline-education-breach-hits-3-million-users-8fe1087f",
+    "title": "Frontline Education Breach Hits 3 Million Users",
+    "summary": "Frontline Education disclosed a data breach that exposed personal information of over 3 million school district staff and students in Indiana. The incident involved unauthorized access to the organization’s systems, potentially compromising credentials, contact details, and academic records. Frontline Education notified regulators and affected parties, and is conducting a forensic investigation while urging users to monitor for suspicious activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/",
+    "publishedAt": "2026-11-09T10:09:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "frontline-education-breach-hits-3-million-users",
+      "article-8fe1087f",
+      "8fe1087f",
+      "frontline-education-breach-hits-3-million-users-654c8e"
+    ]
+  },
+  {
+    "slug": "bank-loses-133m-via-exploited-service-provider-d74f0b32",
+    "title": "Bank Loses $133M via Exploited Service Provider",
+    "summary": "Attackers siphoned $133 million from Crédit Mutuel Arkéa by abusing the bank’s account to wire funds to other banks, later converting them into cryptocurrency. The breach exploited CVE‑2023‑1380 in a third‑party service provider, enabling unauthorized fund transfers without triggering internal controls. Security teams should apply the CVE‑2023‑1380 patch, audit transfer logs, and strengthen multi‑factor authentication to prevent similar exploits.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/credit-mutuel-arkea-cyberattack-133-million/",
+    "publishedAt": "2026-11-09T10:03:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bank-loses-133m-via-exploited-service-provider",
+      "article-d74f0b32",
+      "d74f0b32",
+      "bank-loses-133m-via-exploited-service-provider-3689c5"
+    ]
+  },
+  {
+    "slug": "malwarebytes-claude-connector-showcases-threat-che-e8ab21ca",
+    "title": "Malwarebytes Claude Connector Showcases Threat Checks",
+    "summary": "Malwarebytes launched a Claude connector that lets users query suspicious links, phone numbers, and email addresses directly in chat. The tool supports free and paid Claude plans, requires no separate Malwarebytes account, and offers six utilities including domain registration lookup and screenshot scanning. Security teams can quickly validate potential threats without leaving the conversation, streamlining threat assessment workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/product-showcase-malwarebytes-claude-scam-detection/",
+    "publishedAt": "2026-11-09T09:31:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malwarebytes-claude-connector-showcases-threat-che",
+      "article-e8ab21ca",
+      "e8ab21ca",
+      "malwarebytes-claude-connector-showcases-threat-che-1ceda1",
+      "malwarebytes-claude-connector-showcases-threat-checks"
+    ]
+  },
+  {
+    "slug": "taiwan-hacker-steals-taipei-dispatch-records-via-a-6b3623d5",
+    "title": "Taiwan Hacker Steals Taipei Dispatch Records via AI Agents",
+    "summary": "A Taiwan‑based attacker used BOSSAI AI agents to exfiltrate emergency dispatch records from seven Taipei districts. The agents also discovered a Taipei fire department platform exposing 2018 patient data, including ECG readings and ambulance video, without authentication. Researchers confirm the attacker is a single individual, underscoring the need for tighter access controls on public platforms.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+    "publishedAt": "2026-11-09T09:01:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "taiwan-hacker-steals-taipei-dispatch-records-via-a",
+      "article-6b3623d5",
+      "6b3623d5",
+      "taiwan-hacker-steals-taipei-dispatch-records-via-a-6f95e3",
+      "taiwan-hacker-steals-taipei-dispatch-records-via-ai-agents"
+    ]
+  },
+  {
+    "slug": "armorsteal-malware-spread-via-fake-downloads-fc8498d4",
+    "title": "ArmorSteal Malware Spread via Fake Downloads",
+    "summary": "Hackers distribute a Python‑based kit, ArmorSteal, via counterfeit download portals that lure users into installing malicious executables. The kit harvests credentials, crypto wallets, and Discord accounts while covertly mining Monero, exploiting social‑engineering trust and lacking a public CVE. Security teams should block malicious download sites, deploy endpoint detection signatures for ArmorSteal, and enforce user awareness training to mitigate credential theft.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/armorsteal-malware/",
+    "publishedAt": "2026-11-09T08:55:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "armorsteal-malware-spread-via-fake-downloads",
+      "article-fc8498d4",
+      "fc8498d4",
+      "armorsteal-malware-spread-via-fake-downloads-62cbae"
+    ]
+  },
+  {
+    "slug": "deepmind-ai-lowers-cost-of-1024-bit-rsa-attacks-1aaa7b25",
+    "title": "DeepMind AI Lowers Cost of 1024‑Bit RSA Attacks",
+    "summary": "DeepMind’s AI agents have reduced the cost of forging RSA‑1024 signatures and factoring 1024‑bit keys, making attacks more economically feasible. The breakthrough leverages machine‑learning models trained on cryptographic data, lowering the computational effort from astronomical to practical levels. Security practitioners should transition to RSA keys of at least 2048 bits, adopt post‑quantum algorithms, and monitor for anomalous signature requests.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
+    "publishedAt": "2026-11-09T08:35:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "deepmind-ai-lowers-cost-of-1024-bit-rsa-attacks",
+      "article-1aaa7b25",
+      "1aaa7b25",
+      "deepmind-ai-lowers-cost-of-1024-bit-rsa-attacks-2a75e5"
+    ]
+  },
+  {
     "slug": "red-hat-issues-gd-security-update-ea7d602d",
     "title": "Red Hat Issues gd Security Update",
     "summary": "Red Hat released a security update for the gd package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The update addresses multiple vulnerabilities in gd, each with a CVSS base score listed in the advisory references, but no CVE identifiers are disclosed. Administrators should apply the gd update immediately to mitigate the identified risks, following Red Hat’s installation guidance.",
@@ -26,6 +154,24 @@ export const news: NewsBrief[] = [
       "article-ea7d602d",
       "ea7d602d",
       "red-hat-issues-gd-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "malwarebytes-weekly-security-overview-6e54ca2c",
+    "title": "Malwarebytes Weekly Security Overview",
+    "summary": "Malwarebytes Labs published a weekly security roundup covering topics from Nov 2-8, 2026. The post lists multiple security subjects, including emerging threats, product updates, and industry trends. The roundup includes analysis of recent zero-day disclosures, threat actor activity, and vendor patch releases, providing a broad industry snapshot.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-2-november-8",
+    "publishedAt": "2026-11-09T08:01:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malwarebytes-weekly-security-overview",
+      "article-6e54ca2c",
+      "6e54ca2c",
+      "malwarebytes-weekly-security-overview-53abc7"
     ]
   },
   {
@@ -101,22 +247,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "sonicwall-sonicos-mfa-bypass-vulnerability-exploit-5280e62b",
-    "title": "SonicWall SonicOS MFA Bypass Vulnerability Exploited",
-    "summary": "CISA has added the SonicWall 'SonicOS' MFA bypass flaw, CVE‑2026‑19868, to its Known Exploited Vulnerabilities catalog after reports of real‑world exploitation. The vulnerability, with a CVSS score of 7.1/7.5, allows attackers to bypass multi‑factor authentication and gain unauthorized access to SonicWall devices. SonicWall has released a patch; administrators should update firmware promptly to mitigate the risk.",
+    "slug": "sonicwall-sonicos-mfa-bypass-vulnerability-cve-202-6af5bc05",
+    "title": "SonicWall SonicOS MFA Bypass Vulnerability (CVE‑2026‑19868) Exploited in Wild",
+    "summary": "SonicWall's SonicOS SSL‑VPN service suffered an authentication bypass flaw (CVE‑2026‑19868) that lets attackers with valid credentials circumvent SAML‑enforced MFA. The flaw mis‑implements SAML token validation, allowing credential‑only attackers to gain full VPN access and is actively exploited in the wild. SonicWall issued an out‑of‑band patch with no workaround; administrators must apply it immediately to restore MFA enforcement.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
     "publishedAt": "2026-11-09T06:05:24.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/exploited-sonicwall-ssl-vpn-flaw-lets-attackers-bypass-saml-enforced-mfa-cve-2026-19868/"
+      }
+    ],
     "aliases": [
-      "sonicwall-sonicos-mfa-bypass-vulnerability-exploit",
-      "article-5280e62b",
-      "5280e62b",
-      "sonicwall-sonicos-mfa-bypass-vulnerability-exploit-12c689",
-      "sonicwall-sonicos-mfa-bypass-vulnerability-exploited"
+      "sonicwall-sonicos-mfa-bypass-vulnerability-cve-202",
+      "article-6af5bc05",
+      "6af5bc05",
+      "sonicwall-sonicos-mfa-bypass-vulnerability-cve-202-12c689",
+      "sonicwall-sonicos-mfa-bypass-vulnerability-cve-2026-19868-ex"
     ]
   },
   {
@@ -194,6 +345,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-moderate-glibc-security-update-583666d8",
+    "title": "Red Hat Releases Moderate glibc Security Update",
+    "summary": "Red Hat issued a moderate‑impact security update for glibc on Red Hat Enterprise Linux 8, addressing several unspecified vulnerabilities. The advisory lists CVSS base scores for each vulnerability, but no specific CVE identifiers are named in the release notes. Security teams should apply the glibc update promptly and verify system stability to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96087",
+    "publishedAt": "2026-11-09T04:48:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-moderate-glibc-security-update",
+      "article-583666d8",
+      "583666d8",
+      "red-hat-releases-moderate-glibc-security-update-37d7e0"
+    ]
+  },
+  {
     "slug": "red-hat-issues-ruby-3-3-security-update-for-rhel-9-ef87381c",
     "title": "Red Hat Issues Ruby 3.3 Security Update for RHEL 9",
     "summary": "Red Hat released a Ruby 3.3 module update for RHEL 9, addressing several security bugs that could enable local privilege escalation. The advisory notes a moderate CVSS base score for each vulnerability, but no specific CVE identifiers are provided. Apply the ruby:3.3 update promptly to close the identified weaknesses and maintain system security.",
@@ -264,6 +433,42 @@ export const news: NewsBrief[] = [
       "655ad073",
       "rhsa-2026-96080-important-webkit2gtk3-security-upd-37d7e0",
       "rhsa-2026-96080-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-dpdk-security-update-1934988a",
+    "title": "Red Hat Issues DPDK Security Update",
+    "summary": "Red Hat released a security update for DPDK on RHEL8, addressing several vulnerabilities rated as Important. The update fixes unspecified flaws that could enable local privilege escalation or denial of service, as indicated by the CVSS base scores referenced in the advisory. Red Hat advises applying the update promptly to protect affected deployments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96083",
+    "publishedAt": "2026-11-09T03:38:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-dpdk-security-update",
+      "article-1934988a",
+      "1934988a",
+      "red-hat-issues-dpdk-security-update-37d7e0"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-nodejs24-security-update-ddc380f9",
+    "title": "Red Hat Releases Nodejs24 Security Update",
+    "summary": "Red Hat issued a security update for nodejs24 on RHEL10, addressing multiple vulnerabilities with an Important impact rating. The update mitigates unspecified flaws that could allow local privilege escalation or code execution, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the update immediately to secure affected systems.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96088",
+    "publishedAt": "2026-11-09T03:38:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-nodejs24-security-update",
+      "article-ddc380f9",
+      "ddc380f9",
+      "red-hat-releases-nodejs24-security-update-37d7e0"
     ]
   },
   {
@@ -9350,219 +9555,6 @@ export const news: NewsBrief[] = [
       "a6576908",
       "crowdstrike-enhances-agentic-soc-against-agent-ins-5f342c",
       "crowdstrike-enhances-agentic-soc-against-agent-insider-risks"
-    ]
-  },
-  {
-    "slug": "hackers-use-stolen-microsoft-entra-id-and-azure-de-93e16fbf",
-    "title": "Hackers Use Stolen Microsoft Entra ID and Azure DevOps Credentials to Access 27 Organizations",
-    "summary": "Hackers are abusing stolen Microsoft Entra ID application credentials and Azure DevOps identities to access Microsoft 365 and Azure environments, reaching at least 27 organizations. Todyl’s latest investigation update describes an ongoing campaign targeting managed service providers (MSPs) and their customers since November 1, 2026.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/stolen-entra-id-and-azure-credentials/",
-    "publishedAt": "2026-11-04T05:45:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-stolen-microsoft-entra-id-and-azure-de",
-      "article-93e16fbf",
-      "93e16fbf",
-      "hackers-use-stolen-microsoft-entra-id-and-azure-de-237705",
-      "hackers-use-stolen-microsoft-entra-id-and-azure-devops-crede"
-    ]
-  },
-  {
-    "slug": "wordpress-core-rce-vulnerability-cve-2026-119977-faebfe6f",
-    "title": "WordPress Core RCE Vulnerability CVE-2026-119977",
-    "summary": "Hackers are actively exploiting an unauthenticated remote code execution flaw in WordPress Core tracked as CVE-2026-119977, achieving CVSS 8.1 severity. The TOCTOU race condition during upgrades allows arbitrary code execution without login. Site owners must immediately apply the October 28, 2026 core update and verify plugin/theme compatibility to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
-    "publishedAt": "2026-11-04T05:43:11.000Z",
-    "cves": [
-      "CVE-2026-119977"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/240000-wordpress-exploit-attempts/"
-      }
-    ],
-    "aliases": [
-      "wordpress-core-rce-vulnerability-cve-2026-119977",
-      "article-faebfe6f",
-      "faebfe6f",
-      "wordpress-core-rce-vulnerability-cve-2026-119977-42a8d1"
-    ]
-  },
-  {
-    "slug": "ai-risks-rank-highest-in-gartner-emerging-risk-rep-4abff701",
-    "title": "AI Risks Rank Highest in Gartner Emerging Risk Report",
-    "summary": "Gartner’s Quarterly Emerging Risk Report ranks AI strategy miscalculation and AI‑driven competitive displacement among the top enterprise risks. The report identifies AI workforce preparedness gaps, AI discovery of cyber vulnerabilities, and geopolitical energy supply shocks as additional high‑impact concerns. The findings, based on 308 enterprise risk leaders’ responses, underscore the need for balanced AI adoption and robust risk mitigation strategies.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/ai-strategy-miscalculation-gartner-report/",
-    "publishedAt": "2026-11-04T05:30:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-risks-rank-highest-in-gartner-emerging-risk-rep",
-      "article-4abff701",
-      "4abff701",
-      "ai-risks-rank-highest-in-gartner-emerging-risk-rep-66e1d8",
-      "ai-risks-rank-highest-in-gartner-emerging-risk-report"
-    ]
-  },
-  {
-    "slug": "codex-jailbreak-toolkit-injects-ads-into-ai-respon-b8213f97",
-    "title": "Codex Jailbreak Toolkit Injects Ads into AI Responses",
-    "summary": "A Chinese-language jailbreak toolkit named Haiou targets OpenAI Codex, altering trusted instructions to trigger advertisement prompts. The tool modifies prompt handling, causing persistent adware that injects third‑party AI gateway links without conventional malware signatures. Users should avoid unverified jailbreak packages, monitor prompt outputs for unexpected links, and apply OpenAI updates that tighten instruction validation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-codex-jailbreak/",
-    "publishedAt": "2026-11-04T05:22:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "codex-jailbreak-toolkit-injects-ads-into-ai-respon",
-      "article-b8213f97",
-      "b8213f97",
-      "codex-jailbreak-toolkit-injects-ads-into-ai-respon-5130ec",
-      "codex-jailbreak-toolkit-injects-ads-into-ai-responses"
-    ]
-  },
-  {
-    "slug": "nist-releases-guide-for-solopreneurs-without-it-st-4d906bfe",
-    "title": "NIST Releases Guide for Solopreneurs Without IT Staff",
-    "summary": "NIST issued a cybersecurity guidance document targeting small businesses lacking paid IT staff, including freelancers, sole proprietors, and independent contractors. The guide addresses 82% of the 34.8 million U.S. small businesses, offering tailored security practices for owners who lack specialized expertise. Administrators and solopreneurs should review the NIST recommendations and implement the outlined controls to strengthen their cyber posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/nist-small-business-cybersecurity-guide/",
-    "publishedAt": "2026-11-04T05:00:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nist-releases-guide-for-solopreneurs-without-it-st",
-      "article-4d906bfe",
-      "4d906bfe",
-      "nist-releases-guide-for-solopreneurs-without-it-st-1883f4",
-      "nist-releases-guide-for-solopreneurs-without-it-staff"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94997-moderate-pipewire-security-update-82f4bf84",
-    "title": "RHSA-2026:94997: Moderate: pipewire security update",
-    "summary": "An update for pipewire is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94997",
-    "publishedAt": "2026-11-04T04:57:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94997-moderate-pipewire-security-update",
-      "article-82f4bf84",
-      "82f4bf84",
-      "rhsa-2026-94997-moderate-pipewire-security-update-37d8a6"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-patch-for-cve-2026-43871-f0adae83",
-    "title": "Red Hat Releases Kernel Patch for CVE-2026-43871",
-    "summary": "CVE-2026-43871 exposed a kernel flaw in Red Hat Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support releases. The vulnerability, rated CVSS 9.8, allows unauthenticated remote code execution via a buffer overflow in the networking stack. Red Hat released a critical kernel patch; administrators must apply it immediately or upgrade to the latest RHEL 8.6.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94996",
-    "publishedAt": "2026-11-04T04:47:44.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-patch-for-cve-2026-43871",
-      "article-f0adae83",
-      "f0adae83",
-      "red-hat-releases-kernel-patch-for-cve-2026-43871-37d8a6"
-    ]
-  },
-  {
-    "slug": "llmhijacking-attacks-inflate-corporate-cloud-bills-f3900eb4",
-    "title": "LLMHijacking Attacks Inflate Corporate Cloud Bills",
-    "summary": "Hackers stole corporate large language model access and resold it, driving cloud bill inflation to $1M for affected companies. The attacks leveraged stolen credentials to trigger unauthorized AI usage, generating over $100k in charges within a single day, Mandiant reported. Security teams should enforce strict credential management, enable usage monitoring, and apply least‑privilege controls to prevent unauthorized LLM exploitation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/llmhijacking-attacks/",
-    "publishedAt": "2026-11-04T04:44:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "llmhijacking-attacks-inflate-corporate-cloud-bills",
-      "article-f3900eb4",
-      "f3900eb4",
-      "llmhijacking-attacks-inflate-corporate-cloud-bills-5d224c"
-    ]
-  },
-  {
-    "slug": "anthropic-releases-flashprove-for-verifiable-model-0c1d002e",
-    "title": "Anthropic Releases FlashProve for Verifiable Model Inference",
-    "summary": "Anthropic released FlashProve, a prototype that generates cryptographic proofs for specific language model responses. The system uses a prover and two verifiers to produce formal proofs, enabling verification of model outputs. The code, proofs, and protocol specification are available on GitHub under Apache 2.0, allowing developers to integrate verification into their workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/anthropic-flashprove-provable-inference/",
-    "publishedAt": "2026-11-04T04:36:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-releases-flashprove-for-verifiable-model",
-      "article-0c1d002e",
-      "0c1d002e",
-      "anthropic-releases-flashprove-for-verifiable-model-6bf6b1",
-      "anthropic-releases-flashprove-for-verifiable-model-inference"
-    ]
-  },
-  {
-    "slug": "french-blood-freezers-hijacked-temperature-raised-57d71c23",
-    "title": "French Blood Freezers Hijacked, Temperature Raised to 110°C",
-    "summary": "Hackers altered temperature settings on French Blood Establishment freezers, raising from −30°C to 110°C, targeting the cooling service provider Coolworld. The attack exploited remote access to the refrigeration control system, potentially compromising stored plasma and endangering patient transfusions. Security teams should verify firmware integrity, isolate affected units, and coordinate with Coolworld to patch control interfaces.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/french-blood-plasma-freezers-hacked/",
-    "publishedAt": "2026-11-04T02:35:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "french-blood-freezers-hijacked-temperature-raised",
-      "article-57d71c23",
-      "57d71c23",
-      "french-blood-freezers-hijacked-temperature-raised-17257b",
-      "french-blood-freezers-hijacked-temperature-raised-to-110-c"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-november-4-2026-93db1eb4",
-    "title": "ISC Stormcast Podcast – November 4, 2026",
-    "summary": "The SANS Internet Storm Center released its weekly ISC Stormcast podcast for Wednesday, November 4, 2026. The episode covers current threat landscape, emerging attack trends, and defensive best practices, featuring expert commentary and real‑world incident analyses. Listeners can access the recording and transcript via the ISC website for up‑to‑date threat intelligence.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33486",
-    "publishedAt": "2026-11-04T02:10:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-november-4-2026",
-      "article-93db1eb4",
-      "93db1eb4",
-      "isc-stormcast-podcast-november-4-2026-57dd7e"
     ]
   }
 ];
