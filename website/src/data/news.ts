@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-ruby-4-0-security-update-for-rhel-9-f0322583",
+    "title": "Red Hat Issues Ruby 4.0 Security Update for RHEL 9",
+    "summary": "Red Hat released a Ruby 4.0 module update for RHEL 9, fixing multiple security bugs that could allow local privilege escalation. The update addresses vulnerabilities with a moderate CVSS base score, though no CVE IDs are listed in the advisory. Security teams should apply the ruby:4.0 update promptly to mitigate the identified weaknesses and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96120",
+    "publishedAt": "2026-11-09T05:17:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-ruby-4-0-security-update-for-rhel-9",
+      "article-f0322583",
+      "f0322583",
+      "red-hat-issues-ruby-4-0-security-update-for-rhel-9-37d7dd"
+    ]
+  },
+  {
+    "slug": "hackers-log-in-within-8-minutes-using-stolen-crede-5f534fe9",
+    "title": "Hackers Log In Within 8 Minutes Using Stolen Credentials",
+    "summary": "Attackers leveraged stolen credentials to log into compromised systems an average of eight minutes after initial infection across 27 infostealer incidents. The report also noted attackers used AI tools to execute commands and signed remote monitoring software to sustain persistence. Security teams should enforce multi‑factor authentication, monitor credential usage, and deploy rapid credential‑rotation policies to mitigate this threat.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/elastic-businesses-remote-access-attacks-report/",
+    "publishedAt": "2026-11-09T05:00:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-log-in-within-8-minutes-using-stolen-crede",
+      "article-5f534fe9",
+      "5f534fe9",
+      "hackers-log-in-within-8-minutes-using-stolen-crede-4b138d",
+      "hackers-log-in-within-8-minutes-using-stolen-credentials"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-ruby-3-3-security-update-for-rhel-9-ef87381c",
+    "title": "Red Hat Issues Ruby 3.3 Security Update for RHEL 9",
+    "summary": "Red Hat released a Ruby 3.3 module update for RHEL 9, addressing several security bugs that could enable local privilege escalation. The advisory notes a moderate CVSS base score for each vulnerability, but no specific CVE identifiers are provided. Apply the ruby:3.3 update promptly to close the identified weaknesses and maintain system security.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96068",
+    "publishedAt": "2026-11-09T04:41:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-ruby-3-3-security-update-for-rhel-9",
+      "article-ef87381c",
+      "ef87381c",
+      "red-hat-issues-ruby-3-3-security-update-for-rhel-9-37d7e0"
+    ]
+  },
+  {
     "slug": "red-hat-releases-gdb-security-update-42feb647",
     "title": "Red Hat Releases gdb Security Update",
     "summary": "Red Hat released a gdb security update for RHEL 9.6 Extended Update Support, fixing multiple bugs. The patch addresses several gdb flaws with CVSS scores listed in CVE references, potentially enabling local privilege escalation or denial of service. Red Hat advises applying the update immediately; no workarounds are required for security.",
@@ -174,6 +229,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "openshift-4-20-46-releases-critical-security-updat-552655ba",
+    "title": "OpenShift 4.20.46 Releases Critical Security Update",
+    "summary": "Red Hat released OpenShift 4.20.46, adding bug fixes and security updates for the 4.20 series. The update carries a Critical rating, with CVSS scores linked to each CVE, indicating high exploitation risk. Red Hat has made 4.20.46 available; teams should apply the update or upgrade images immediately to mitigate risks.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95377",
+    "publishedAt": "2026-11-09T02:14:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openshift-4-20-46-releases-critical-security-updat",
+      "article-552655ba",
+      "552655ba",
+      "openshift-4-20-46-releases-critical-security-updat-37d849",
+      "openshift-4-20-46-releases-critical-security-update"
+    ]
+  },
+  {
     "slug": "react-server-components-rce-flaw-exposes-remote-co-5ca6c37b",
     "title": "React Server Components RCE Flaw Exposes Remote Code Execution",
     "summary": "A critical flaw in React Server Components allows unauthenticated remote code execution across react-server-dom-webpack, react-server-dom-parcel, and react-server-dom-turbopack. The vulnerability, tracked as GHSA-xqc2-xf4c-x3h3, carries a CVSS v4 score of 9.5, indicating a severe exploitation risk. React recommends immediate updates to affected applications; no workaround is available, and security teams should apply patches promptly.",
@@ -264,6 +338,25 @@ export const news: NewsBrief[] = [
       "article-a515e4d4",
       "a515e4d4",
       "openshift-4-16-75-releases-security-update-37d84d"
+    ]
+  },
+  {
+    "slug": "openshift-4-16-75-releases-security-update-for-rhe-ed9bbbb5",
+    "title": "OpenShift 4.16.75 Releases Security Update for RHEL 9",
+    "summary": "Red Hat released OpenShift Container Platform 4.16.75 for RHEL 9, fixing multiple bugs and adding enhancements. The update includes a security fix for OpenShift 4.16, with a moderate CVSS base score, though no CVE IDs are listed. Security teams should apply the 4.16.75 update immediately to mitigate the identified vulnerabilities and maintain platform integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95228",
+    "publishedAt": "2026-11-09T01:47:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openshift-4-16-75-releases-security-update-for-rhe",
+      "article-ed9bbbb5",
+      "ed9bbbb5",
+      "openshift-4-16-75-releases-security-update-for-rhe-37d84d",
+      "openshift-4-16-75-releases-security-update-for-rhel-9"
     ]
   },
   {
@@ -9495,102 +9588,6 @@ export const news: NewsBrief[] = [
       "article-ad747b86",
       "ad747b86",
       "google-removes-x-cpe-botnet-from-android-tv-boxes-4e4f2c"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-stable-157-for-ios-a28f686b",
-    "title": "Google Releases Chrome Stable 157 for iOS",
-    "summary": "Google released Chrome Stable 157 (157.0.8103.37) for iOS, marking the latest iteration of its mobile browser. The update focuses on stability and performance improvements, incorporating minor bug fixes and optimizations without any new security patches. The new build will be available on the App Store within hours, allowing users to upgrade their browsers promptly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update.html",
-    "publishedAt": "2026-11-03T19:13:32.969Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-releases-chrome-stable-157-for-ios",
-      "article-a28f686b",
-      "a28f686b",
-      "google-releases-chrome-stable-157-for-ios-364d39"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-fence-agents-update-ad925f9c",
-    "title": "Red Hat Issues Critical Fence‑Agents Update",
-    "summary": "Red Hat released a critical security update for fence-agents targeting RHEL 9.2 Update Services for SAP Solutions. The update addresses multiple vulnerabilities with CVSS base scores listed in the CVE references, and Red Hat rated the impact as Critical. Security teams should apply the fence-agents update immediately to mitigate the high‑risk flaws.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94634",
-    "publishedAt": "2026-11-03T18:59:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-fence-agents-update",
-      "article-ad925f9c",
-      "ad925f9c",
-      "red-hat-issues-critical-fence-agents-update-37d8b2"
-    ]
-  },
-  {
-    "slug": "aws-oauth-audience-validation-bypass-cve-2026-1154-c45c948e",
-    "title": "AWS OAuth Audience Validation Bypass CVE-2026-115413",
-    "summary": "AWS discovered a flaw in the MCP Server OAuth that bypasses token audience validation, allowing misuse of tokens issued for other services. CVE-2026-115413 enables attackers to gain unauthorized access to protected resources by manipulating the audience claim in a valid token. AWS has issued a patch; administrators should update the MCP Server and enforce strict audience checks to prevent exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-152-aws/",
-    "publishedAt": "2026-11-03T18:58:52.000Z",
-    "cves": [
-      "CVE-2026-115413"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-oauth-audience-validation-bypass-cve-2026-1154",
-      "article-c45c948e",
-      "c45c948e",
-      "aws-oauth-audience-validation-bypass-cve-2026-1154-4dd94b",
-      "aws-oauth-audience-validation-bypass-cve-2026-115413"
-    ]
-  },
-  {
-    "slug": "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re-e1d9033d",
-    "title": "AWS Amplify XSS in maplibre-gl-js-amplify Popup Rendering CVE-2026-121652",
-    "summary": "AWS identified a stored cross‑site scripting flaw in the Amplify maplibre‑gl‑js‑amplify library that affects popup and geofence‑control rendering. The vulnerability, CVE-2026-121652, allows attackers to inject malicious scripts into map popups, potentially stealing user data or hijacking sessions. AWS recommends updating to the latest library version and sanitizing user input in popup content to mitigate the XSS risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-167-aws/",
-    "publishedAt": "2026-11-03T18:54:53.000Z",
-    "cves": [
-      "CVE-2026-121652"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re",
-      "article-e1d9033d",
-      "e1d9033d",
-      "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-re-74b83e",
-      "aws-amplify-xss-in-maplibre-gl-js-amplify-popup-rendering-cv"
-    ]
-  },
-  {
-    "slug": "llmjacking-drives-1m-cloud-ai-billing-fraud-2aad2aed",
-    "title": "LLMjacking Drives $1M Cloud AI Billing Fraud",
-    "summary": "Large language model hijacking attacks, called LLMjacking, are generating fraudulent cloud AI charges against Google Cloud customers. Attackers trigger high‑volume inference requests via unauthorized API calls, costing firms over $100,000 daily and totaling $1 million in billed usage. Customers should audit billing logs, revoke compromised keys, enable usage limits, and monitor for anomalous request patterns to mitigate further costs.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
-    "publishedAt": "2026-11-03T18:51:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "llmjacking-drives-1m-cloud-ai-billing-fraud",
-      "article-2aad2aed",
-      "2aad2aed",
-      "llmjacking-drives-1m-cloud-ai-billing-fraud-3be83d"
     ]
   }
 ];
