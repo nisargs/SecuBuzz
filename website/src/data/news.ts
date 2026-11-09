@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "arctic-wolf-and-aws-enhance-incident-response-1b420edb",
+    "title": "Arctic Wolf and AWS Enhance Incident Response",
+    "summary": "Arctic Wolf and AWS announced a joint offering that streamlines incident response for cloud‑native environments. The solution integrates Arctic Wolf’s managed detection and response with AWS security services, enabling faster threat containment and automated recovery workflows. Organizations should adopt the combined platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/",
+    "publishedAt": "2026-11-09T19:02:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arctic-wolf-and-aws-enhance-incident-response",
+      "article-1b420edb",
+      "1b420edb",
+      "arctic-wolf-and-aws-enhance-incident-response-61b6b7"
+    ]
+  },
+  {
     "slug": "france-blames-iran-for-supermarket-refrigeration-a-effbc67d",
     "title": "France Blames Iran for Supermarket Refrigeration Attacks",
     "summary": "French authorities attribute October cyberattacks that disabled refrigeration systems at more than 700 supermarkets to Iranian state-backed hackers. The attacks exploited vulnerabilities in the supermarkets' HVAC control software, causing food spoilage and igniting at least 15 fires, leading to economic loss. French cybersecurity agencies issued guidance to update firmware and strengthen network segmentation, while the EU coordinates a joint investigation.",
@@ -233,6 +251,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9011-1-pyasn1-vulnerabilities-c8fff662",
+    "title": "USN-9011-1: pyasn1 vulnerabilities",
+    "summary": "This issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2026-59884) It was discovered that pyasn1 processed OBJECT IDENTIFIER and RELATIVE-OID values in quadratic time relative to the number of arcs. This issue was only addressed in Ubuntu 26.04 LTS and Ubuntu 26.10. (CVE-2026-119195) It was discovered that pyasn1 processed fragmented constructed BIT STRING values in quadratic time.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9011-1",
+    "publishedAt": "2026-11-09T16:15:14.000Z",
+    "cves": [
+      "CVE-2026-59884",
+      "CVE-2026-119195"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9011-1-pyasn1-vulnerabilities",
+      "article-c8fff662",
+      "c8fff662",
+      "usn-9011-1-pyasn1-vulnerabilities-7e8943"
+    ]
+  },
+  {
     "slug": "binance-denies-data-breach-after-alleged-shinyhunt-1be14fa8",
     "title": "Binance denies data breach after alleged ShinyHunters claims",
     "summary": "Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum.",
@@ -249,6 +288,31 @@ export const news: NewsBrief[] = [
       "1be14fa8",
       "binance-denies-data-breach-after-alleged-shinyhunt-43c0a5",
       "binance-denies-data-breach-after-alleged-shinyhunters-claims"
+    ]
+  },
+  {
+    "slug": "openjdk-8-auth-flaws-expose-sensitive-data-b64e18df",
+    "title": "OpenJDK 8 Auth Flaws Expose Sensitive Data",
+    "summary": "OpenJDK 8 components—Security, JSSE, JAAS, JDBC—exposed authentication and authorization flaws that could let remote attackers read or modify sensitive data. Flaws CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, CVE-2026-83380, CVE-2026-83381, CVE-2026-87294 grant unauthenticated or improperly authorized access, enabling data tampering. Oracle released patches; users should apply the latest OpenJDK 8 update to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9009-1",
+    "publishedAt": "2026-11-09T16:04:44.000Z",
+    "cves": [
+      "CVE-2026-83374",
+      "CVE-2026-83376",
+      "CVE-2026-91461",
+      "CVE-2026-83380",
+      "CVE-2026-83381",
+      "CVE-2026-87294"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openjdk-8-auth-flaws-expose-sensitive-data",
+      "article-b64e18df",
+      "b64e18df",
+      "openjdk-8-auth-flaws-expose-sensitive-data-7e8999"
     ]
   },
   {
@@ -305,6 +369,31 @@ export const news: NewsBrief[] = [
       "article-91174b53",
       "91174b53",
       "nist-guidance-for-solo-business-owners-30251b"
+    ]
+  },
+  {
+    "slug": "openjdk-11-auth-flaws-expose-sensitive-data-6c7d78b1",
+    "title": "OpenJDK 11 Auth Flaws Expose Sensitive Data",
+    "summary": "OpenJDK 11 components—Security, JSSE, JAAS, JDBC—exposed authentication and authorization flaws that could let remote attackers read or modify sensitive data. Flaws CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, CVE-2026-83380, CVE-2026-83381, CVE-2026-87294 grant unauthenticated or improperly authorized access, enabling data tampering. Oracle released patches; users should apply the latest OpenJDK 11 update to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9010-1",
+    "publishedAt": "2026-11-09T15:35:24.000Z",
+    "cves": [
+      "CVE-2026-83374",
+      "CVE-2026-83376",
+      "CVE-2026-91461",
+      "CVE-2026-83380",
+      "CVE-2026-83381",
+      "CVE-2026-87294"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openjdk-11-auth-flaws-expose-sensitive-data",
+      "article-6c7d78b1",
+      "6c7d78b1",
+      "openjdk-11-auth-flaws-expose-sensitive-data-7e8947"
     ]
   },
   {
@@ -400,6 +489,25 @@ export const news: NewsBrief[] = [
       "aeeb4c7b",
       "qubole-iam-credentials-abuse-enables-cross-account-644812",
       "qubole-iam-credentials-abuse-enables-cross-account-access"
+    ]
+  },
+  {
+    "slug": "bee-js-and-swarm-desktop-releases-embed-sleepyduck-5e2cb730",
+    "title": "Bee-js and Swarm Desktop Releases Embed SleepyDuck C2 Backdoor",
+    "summary": "Compromised maintainer accounts pushed malicious @ethersphere/bee-js 13.3.0 and Swarm Desktop 0.56.2, embedding a SleepyDuck Ethereum‑addressed C2 backdoor. Credentialed npm and GitHub access allowed attackers to inject code that connects to SleepyDuck C2, enabling data exfiltration. Users should uninstall the malicious packages, replace them with verified releases, and monitor traffic to SleepyDuck Ethereum addresses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/bee-js-compromise",
+    "publishedAt": "2026-11-09T14:52:15.147Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bee-js-and-swarm-desktop-releases-embed-sleepyduck",
+      "article-5e2cb730",
+      "5e2cb730",
+      "bee-js-and-swarm-desktop-releases-embed-sleepyduck-4549a1",
+      "bee-js-and-swarm-desktop-releases-embed-sleepyduck-c2-backdo"
     ]
   },
   {
@@ -9431,96 +9539,6 @@ export const news: NewsBrief[] = [
       "article-d700f5d9",
       "d700f5d9",
       "citrix-expands-ai-agent-governance-controls-63b21e"
-    ]
-  },
-  {
-    "slug": "chrome-beta-158-for-android-released-with-updates-a58caa23",
-    "title": "Chrome Beta 158 for Android Released with Updates",
-    "summary": "Google released Chrome Beta 158 for Android, updating the browser to version 158.0.8127.22 and adding new features. The update includes bug fixes, performance improvements, and web platform enhancements, with developers encouraged to report issues via the bug tracking system. Users can install the beta build from Google Play, and security teams should monitor for regressions or compatibility problems during rollout.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update.html",
-    "publishedAt": "2026-11-04T14:13:32.334Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-beta-158-for-android-released-with-updates",
-      "article-a58caa23",
-      "a58caa23",
-      "chrome-beta-158-for-android-released-with-updates-19b1e0"
-    ]
-  },
-  {
-    "slug": "sentra-secures-150m-funding-for-agentic-security-1f6e4b0f",
-    "title": "Sentra Secures $150M Funding for Agentic Security",
-    "summary": "Sentra, an agentic data security firm, announced a $150 million funding round to accelerate its agentic security platform. The capital will support development of AI‑driven data protection capabilities and expand the company’s go‑to‑market organization. Investors expect the infusion to drive broader adoption of agentic security solutions across enterprises in the next fiscal year.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/agentic-data-security-firm-sentra-raises-150-million/",
-    "publishedAt": "2026-11-04T14:09:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sentra-secures-150m-funding-for-agentic-security",
-      "article-1f6e4b0f",
-      "1f6e4b0f",
-      "sentra-secures-150m-funding-for-agentic-security-4999e7"
-    ]
-  },
-  {
-    "slug": "isc2-cissp-exam-prep-live-q-a-session-84c6a108",
-    "title": "ISC2 CISSP Exam Prep Live Q&A Session",
-    "summary": "ISC2 is hosting a live Q&A session on November 6, 2026 at 7:00pm CET to help candidates prepare for the CISSP exam. A panel of experts will cover exam domains, foundational cybersecurity knowledge, vendor-neutral certification value, and training resources. This is an educational event with no security implications.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/isc2-cissp-exam-prep-webinar/",
-    "publishedAt": "2026-11-04T14:00:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc2-cissp-exam-prep-live-q-a-session",
-      "article-84c6a108",
-      "84c6a108",
-      "isc2-cissp-exam-prep-live-q-a-session-1284a5"
-    ]
-  },
-  {
-    "slug": "beget-cloud-data-wiped-in-russian-hosting-attack-f63508ba",
-    "title": "Beget Cloud Data Wiped in Russian Hosting Attack",
-    "summary": "A cyberattack destroyed data across Beget's cloud infrastructure, affecting hundreds of websites. The assault likely leveraged undisclosed vulnerabilities or credential compromise, causing irreversible data loss and service outages. Beget is working to restore services and investigate the breach, while customers should verify backups and monitor for suspicious activity in the coming weeks.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-cyberattack-beget-cloud",
-    "publishedAt": "2026-11-04T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "beget-cloud-data-wiped-in-russian-hosting-attack",
-      "article-f63508ba",
-      "f63508ba",
-      "beget-cloud-data-wiped-in-russian-hosting-attack-254478"
-    ]
-  },
-  {
-    "slug": "cloudflare-enables-control-over-personal-ai-agents-f552ccc0",
-    "title": "Cloudflare Enables Control Over Personal AI Agents",
-    "summary": "Cloudflare introduces new visibility and control features for personal AI agents interacting with websites. The update addresses concerns over automated traffic masquerading as human users, potentially skewing analytics and security policies. Site owners can now monitor agent activity, set access rules, and mitigate risks associated with automated traffic in real time.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/personal-agents-visibility-control/",
-    "publishedAt": "2026-11-04T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-enables-control-over-personal-ai-agents",
-      "article-f552ccc0",
-      "f552ccc0",
-      "cloudflare-enables-control-over-personal-ai-agents-12ad5e"
     ]
   }
 ];
