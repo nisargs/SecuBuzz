@@ -1,5 +1,22 @@
 [
   {
+    "id": "https://ubuntu.com/security/notices/USN-9008-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9008-1",
+    "title": "USN-9008-1: libnfs vulnerability",
+    "headline": "USN-9008-1: libnfs vulnerability",
+    "summary": "It was discovered that libnfs did not properly enforce the maximum size bound during ZDR decoding, resulting in an out-of-bounds write. An attacker could possibly use this issue to cause libnfs to crash, resulting in a denial of service, or execute arbitrary code.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-09T13:29:36.000Z",
+    "ingestedAt": "2026-11-09T14:45:32.048Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/",
     "title": "US Bans MEXC Exchange for Sanctions Evasion, Cybercrime Links",
@@ -30,6 +47,23 @@
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/09/pypi-security-tab-release-attestations/",
     "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-9007-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9007-1",
+    "title": "USN-9007-1: FreeRDP vulnerabilities",
+    "headline": "USN-9007-1: FreeRDP vulnerabilities",
+    "summary": "It was discovered that FreeRDP contained multiple security issues. An attacker could possibly use these issues to obtain sensitive information, cause FreeRDP to crash, resulting in a denial of service, or execute arbitrary code.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-09T13:21:41.000Z",
+    "ingestedAt": "2026-11-09T14:45:32.049Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://therecord.media/hackers-russia-italy-noname",
@@ -305,6 +339,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-9001-2",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9001-2",
+    "title": "Ubuntu Updates ca-certificates to Fix JKS Sync Issue",
+    "headline": "Ubuntu Updates ca-certificates to Fix JKS Sync Issue",
+    "summary": "Ubuntu released USN-9001-2 to fix a flaw in ca-certificates and ca-certificates-java that left removed CA certificates in the JKS keystore. The mis‑synchronization allowed clients to trust revoked certificates, undermining secure communications. Apply the update on Ubuntu 18.04 LTS and 20.04 LTS, then verify the JKS keystore matches the system CA list.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-09T12:01:46.000Z",
+    "ingestedAt": "2026-11-09T14:45:44.987Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-9001-2",
+    "additionalSources": []
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:96238",
@@ -680,6 +730,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/veeam-warns-critical-linux-kernel-flaw/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:95416",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95416",
+    "title": "Red Hat Releases OpenShift 4.12.103 Bug Fix",
+    "headline": "Red Hat Releases OpenShift 4.12.103 Bug Fix",
+    "summary": "Red Hat released OpenShift Container Platform 4.12.103, addressing multiple bugs in container runtime and image handling. The update resolves internal logic errors that could lead to configuration inconsistencies and potential denial of service, but no active exploitation has been reported. Users should upgrade to version 4.12.103 or later, and verify that all container images are rebuilt to incorporate the fix.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-09T07:14:32.000Z",
+    "ingestedAt": "2026-11-09T14:45:44.987Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:95416",
     "additionalSources": []
   },
   {
@@ -1368,7 +1434,7 @@
     "sourceUrl": "https://isc.sans.edu/diary/rss/33498",
     "title": "OpenSSH SSHole Authentication Bypass (CVE-2026-123158) Enables Remote Code Execution",
     "headline": "OpenSSH SSHole Authentication Bypass (CVE-2026-123158) Enables Remote Code Execution",
-    "summary": "OpenSSH servers are vulnerable to the SSHole authentication bypass (CVE-2026-123158), letting attackers submit oversized passwords for unauthenticated remote code execution. The flaw exploits improper length validation in password handling, enabling privilege escalation and root access on affected Linux systems. Administrators must apply the vendor‑issued patch or upgrade to the latest OpenSSH release immediately to mitigate the vulnerability.",
+    "summary": "OpenSSH servers are vulnerable to the SSHole authentication bypass (CVE-2026-123158), allowing attackers to submit oversized passwords and gain unauthenticated remote code execution. The flaw exploits improper length validation in password handling, enabling privilege escalation and root access on affected Linux systems. Administrators must apply the vendor‑issued patch or upgrade to the latest OpenSSH release immediately to mitigate the vulnerability.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
@@ -1385,6 +1451,10 @@
       {
         "source": "Cyber Security News",
         "sourceUrl": "https://cybersecuritynews.com/openssh-sshole-flaw-exploited/"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html"
       }
     ],
     "cves": [
@@ -3473,18 +3543,23 @@
   {
     "id": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
     "sourceUrl": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
-    "title": "Three Charged in $129M AI Impersonation Fraud Scheme",
-    "headline": "Three Charged in $129M AI Impersonation Fraud Scheme",
-    "summary": "Three individuals nicknamed 'Rocky Balboa,' 'Superman Cash,' and 'Fat Boy' are charged with using AI to impersonate executives and attorneys to steal $129 million from accounting departments. The scheme leveraged AI-generated voice to authorize fraudulent transfers, exploiting trust in executive identities. Indictments highlight the growing threat of AI-enabled social engineering and the need for enhanced verification in financial workflows.",
-    "category": "GENERAL",
-    "severity": "LOW",
+    "title": "Three Charged in $129M AI‑Impersonation Wire Transfer Fraud",
+    "headline": "Three Charged in $129M AI‑Impersonation Wire Transfer Fraud",
+    "summary": "Three men used deepfake CEO and lawyer videos to trick employees into wiring $129 million to fraudulent accounts. The scheme exploited AI‑generated voice and video to bypass internal verification, highlighting vulnerabilities in financial approval processes. Prosecutors charged the perpetrators, and experts recommend multi‑factor approvals and staff training to prevent similar deepfake fraud.",
+    "category": "BREACH",
+    "severity": "HIGH",
     "source": "SecurityWeek",
     "publishedAt": "2026-11-06T03:03:29.000Z",
     "ingestedAt": "2026-11-06T06:44:08.132Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/deepfake-ceo-fraud-129-million-indictment/"
+      }
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/openai-launches-gpt-6-cyber/",
@@ -8276,69 +8351,5 @@
     ],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
-    "sourceUrl": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
-    "title": "Chrome 157 Addresses 213 Security Issues",
-    "headline": "Chrome 157 Addresses 213 Security Issues",
-    "summary": "Google Chrome version 157 has been released, addressing 213 security issues, including seven rated critical. The update fixes numerous memory safety bugs and several incorrect or missing authorization checks, reducing the risk of privilege escalation and data exposure. Users should install the new browser version promptly to eliminate the identified vulnerabilities and maintain secure browsing.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-04T10:38:46.000Z",
-    "ingestedAt": "2026-11-04T12:44:28.227Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
-    "sourceUrl": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
-    "title": "Binance $6 Billion Heist via Compromised Engineers",
-    "headline": "Binance $6 Billion Heist via Compromised Engineers",
-    "summary": "Attackers compromised three Binance engineers' workstations over a months-long campaign using a rigged coding assignment and an abused AI tool to execute the record $6 billion theft. The incident represents unauthorized corporate access resulting in massive financial loss. Binance has disclosed the details in its initial incident report.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-04T10:36:32.000Z",
-    "ingestedAt": "2026-11-04T18:04:30.142Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/russian-police-arrest-3-suspected-vasygrek-hackers-dism",
-    "sourceUrl": "https://cybernewsai.com/blog/russian-police-arrest-3-suspected-vasygrek-hackers-dism",
-    "title": "VasyGrek Hackers Arrested, Infrastructure Dismantled",
-    "headline": "VasyGrek Hackers Arrested, Infrastructure Dismantled",
-    "summary": "Law enforcement agencies have arrested members of the VasyGrek hacking group and dismantled their infrastructure. Court filings detail the group's operations, threat actor profiles, and the defensive controls that led to the takedown. Security teams should review the disclosed threat actor tactics and update detection rules accordingly, enhancing monitoring daily.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-11-04T10:29:51.000Z",
-    "ingestedAt": "2026-11-04T11:30:23.102Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybernewsai.com/blog/russian-police-arrest-3-suspected-vasygrek-hackers-dism",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/04/binance-hack-north-korea-fake-job-interview/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/binance-hack-north-korea-fake-job-interview/",
-    "title": "Binance Heist via Fake Interview and Installer",
-    "headline": "Binance Heist via Fake Interview and Installer",
-    "summary": "Binance suffered a $6.34 billion heist after attackers used a fake job interview and tampered installer to gain endpoint access. The attackers combined social engineering, malicious software downloads, compromised AI tooling, and an advanced transaction‑authorisation bypass to move funds. Binance’s incident report recommends tightening internal AI controls, enforcing stricter download vetting, and monitoring transaction‑authorisation logs for anomalous activity.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-04T10:29:48.000Z",
-    "ingestedAt": "2026-11-04T11:30:23.102Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/04/binance-hack-north-korea-fake-job-interview/",
-    "additionalSources": []
   }
 ]
