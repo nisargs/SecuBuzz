@@ -11,6 +11,96 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-ruby-update-for-rhel-9-8-f72945eb",
+    "title": "Red Hat Releases Ruby Update for RHEL 9.8",
+    "summary": "A moderate security update addresses multiple Ruby vulnerabilities affecting Red Hat Enterprise Linux 9.8 Extended Update Support. The update mitigates unspecified code execution risks identified in Ruby's core libraries, with CVSS scores available via referenced CVE links. Red Hat recommends applying the update immediately; no workarounds are required to ensure system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96067",
+    "publishedAt": "2026-11-09T02:29:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-ruby-update-for-rhel-9-8",
+      "article-f72945eb",
+      "f72945eb",
+      "red-hat-releases-ruby-update-for-rhel-9-8-37d7e0"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-critical-openshift-4-19-55-update-115b6395",
+    "title": "Red Hat Issues Critical OpenShift 4.19.55 Update",
+    "summary": "Red Hat released OpenShift Container Platform 4.19.55, addressing multiple critical bugs and security flaws affecting cluster management components. The update mitigates privilege escalation and code execution risks identified in the platform's API server and scheduler, with CVSS scores linked via CVE references. Red Hat advises applying the update immediately; no workarounds are available, and users should verify cluster integrity post‑deployment.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95523",
+    "publishedAt": "2026-11-09T02:23:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-openshift-4-19-55-update",
+      "article-115b6395",
+      "115b6395",
+      "red-hat-issues-critical-openshift-4-19-55-update-37d842"
+    ]
+  },
+  {
+    "slug": "isc-stormcast-podcast-released-november-9-2026-e2397a8e",
+    "title": "ISC Stormcast Podcast Released November 9, 2026",
+    "summary": "The SANS Internet Storm Center released the ISC Stormcast podcast for Monday, November 9, 2026. The episode covers current threat landscape trends, emerging attack vectors, and defensive best practices, featuring expert commentary. Listeners can access the recording via the ISC website, with Creative Commons Attribution-Noncommercial 3.0 license permitting sharing and adaptation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33500",
+    "publishedAt": "2026-11-09T02:05:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-podcast-released-november-9-2026",
+      "article-e2397a8e",
+      "e2397a8e",
+      "isc-stormcast-podcast-released-november-9-2026-57dd81"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-resteasy-security-update-712eb26c",
+    "title": "Red Hat Releases Resteasy Security Update",
+    "summary": "Red Hat released a security update for Resteasy on RHEL 9.2 Update Services for SAP Solutions, fixing a critical REST flaw. The flaw, rated Important by Red Hat Product Security, lacks a public CVE ID but has a CVSS base score in the advisory. Apply the patch immediately; Red Hat recommends updating to Resteasy package or following vendor mitigation guidance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96077",
+    "publishedAt": "2026-11-09T01:47:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-resteasy-security-update",
+      "article-712eb26c",
+      "712eb26c",
+      "red-hat-releases-resteasy-security-update-37d7e0"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-osbuild-composer-security-update-9aedb70a",
+    "title": "Red Hat Releases osbuild-composer Security Update",
+    "summary": "Red Hat released a security update for osbuild-composer, addressing vulnerabilities affecting RHEL 8.4 Mission Critical Update Support and Extended Update Support Add-On. The update mitigates privilege escalation and memory corruption risks identified in the build orchestration engine, with CVSS scores available via referenced CVE links. Red Hat recommends applying the update immediately; no workarounds are required to maintain build integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96076",
+    "publishedAt": "2026-11-09T01:45:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-osbuild-composer-security-update",
+      "article-9aedb70a",
+      "9aedb70a",
+      "red-hat-releases-osbuild-composer-security-update-37d7e0"
+    ]
+  },
+  {
     "slug": "openssh-sshole-authentication-bypass-vulnerability-acbc22ef",
     "title": "OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released",
     "summary": "OpenSSH's SSHole authentication bypass (CVE-2026-123158) allows attackers to gain root on Alpine Linux by submitting oversized passwords. The flaw exploits improper length validation in the password handling routine, enabling unauthenticated remote code execution with a CVSS score of 9.8. Administrators should apply the vendor‑issued patch immediately or upgrade to the latest release to mitigate the vulnerability.",
@@ -5918,24 +6008,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-releases-osbuild-composer-security-update-bc9f002f",
-    "title": "Red Hat releases osbuild-composer security update",
-    "summary": "Red Hat issued a security update for osbuild-composer on RHEL 9, addressing multiple vulnerabilities identified in the build system. The update carries an Important impact rating, with CVSS scores available via CVE links, but no active exploitation has been reported. Red Hat recommends applying the patch immediately and reviewing build configurations to mitigate potential privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95272",
-    "publishedAt": "2026-11-04T18:20:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-osbuild-composer-security-update",
-      "article-bc9f002f",
-      "bc9f002f",
-      "red-hat-releases-osbuild-composer-security-update-37d84d"
-    ]
-  },
-  {
     "slug": "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-25d890e2",
     "title": "RHSA-2026:95281: Moderate: xorg-x11-server-Xwayland security update",
     "summary": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -9542,96 +9614,6 @@ export const news: NewsBrief[] = [
       "article-16dfe139",
       "16dfe139",
       "apple-issues-visionos-27-3-beta-update-66bdb2"
-    ]
-  },
-  {
-    "slug": "apple-releases-watchos-27-3-beta-d5b4cf5d",
-    "title": "Apple Releases watchOS 27.3 Beta",
-    "summary": "Apple released watchOS 27.3 beta (24S5284h), updating the watch interface and system components. The beta adds UI improvements, performance optimizations, and fixes for known bugs, enhancing overall device stability. Users can install the beta through the Apple Beta Software Program and should report any issues to Apple for refinement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026f",
-    "publishedAt": "2026-11-03T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-watchos-27-3-beta",
-      "article-d5b4cf5d",
-      "d5b4cf5d",
-      "apple-releases-watchos-27-3-beta-66bdb2"
-    ]
-  },
-  {
-    "slug": "apple-releases-macos-27-3-beta-f2295d9a",
-    "title": "Apple Releases macOS 27.3 Beta",
-    "summary": "Apple released macOS 27.3 beta (26C5035r) for macOS users. The beta contains internal security enhancements and bug fixes, with details documented in the official release notes, and is part of Apple’s ongoing security maintenance cycle. Users should download the beta from Apple’s site and install it to keep systems current.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026c",
-    "publishedAt": "2026-11-03T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-macos-27-3-beta",
-      "article-f2295d9a",
-      "f2295d9a",
-      "apple-releases-macos-27-3-beta-66bdb2"
-    ]
-  },
-  {
-    "slug": "apple-releases-tvos-27-3-beta-1547dc30",
-    "title": "Apple Releases tvOS 27.3 Beta",
-    "summary": "Apple released tvOS 27.3 beta (24K5286g) for tvOS users. The beta includes internal security improvements and bug fixes, detailed in the official release notes, and continues Apple’s routine security maintenance. Users should download the beta from Apple’s site and install it to keep devices up to date.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026d",
-    "publishedAt": "2026-11-03T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-tvos-27-3-beta",
-      "article-1547dc30",
-      "1547dc30",
-      "apple-releases-tvos-27-3-beta-66bdb2"
-    ]
-  },
-  {
-    "slug": "apple-releases-ios-27-3-beta-bea3c93c",
-    "title": "Apple Releases iOS 27.3 Beta",
-    "summary": "Apple released iOS 27.3 beta (24C5037i) to its developer community. The beta introduces performance improvements, UI tweaks, security enhancements, refined background task handling, and minor bug fixes for messaging and notification services, but no public vulnerabilities are disclosed. Developers can download the beta via Apple's developer portal and should test for compatibility before deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026a",
-    "publishedAt": "2026-11-03T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-ios-27-3-beta",
-      "article-bea3c93c",
-      "bea3c93c",
-      "apple-releases-ios-27-3-beta-66bdb2"
-    ]
-  },
-  {
-    "slug": "apple-releases-ipados-27-3-beta-2bcb8868",
-    "title": "Apple Releases iPadOS 27.3 Beta",
-    "summary": "Apple released iPadOS 27.3 beta (24C5037i) to its developer community. The beta adds performance improvements, UI tweaks, security enhancements, refined background task handling, and minor bug fixes for messaging and notification services, but no public vulnerabilities are disclosed. Developers can download the beta via Apple's developer portal and should test for compatibility before deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026b",
-    "publishedAt": "2026-11-03T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-ipados-27-3-beta",
-      "article-2bcb8868",
-      "2bcb8868",
-      "apple-releases-ipados-27-3-beta-66bdb2"
     ]
   }
 ];

@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 01:43:01 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 02:44:40 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Ruby Update for RHEL 9.8</title>
+      <link>https://secubuzz.com/news/red-hat-releases-ruby-update-for-rhel-9-8-f72945eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-ruby-update-for-rhel-9-8-f72945eb</guid>
+      <description><![CDATA[A moderate security update addresses multiple Ruby vulnerabilities affecting Red Hat Enterprise Linux 9.8 Extended Update Support. The update mitigates unspecified code execution risks identified in Ruby's core libraries, with CVSS scores available via referenced CVE links. Red Hat recommends applying the update immediately; no workarounds are required to ensure system integrity.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:29:22 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96067">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Critical OpenShift 4.19.55 Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-openshift-4-19-55-update-115b6395</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-openshift-4-19-55-update-115b6395</guid>
+      <description><![CDATA[Red Hat released OpenShift Container Platform 4.19.55, addressing multiple critical bugs and security flaws affecting cluster management components. The update mitigates privilege escalation and code execution risks identified in the platform's API server and scheduler, with CVSS scores linked via CVE references. Red Hat advises applying the update immediately; no workarounds are available, and users should verify cluster integrity post‑deployment.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:23:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95523">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ISC Stormcast Podcast Released November 9, 2026</title>
+      <link>https://secubuzz.com/news/isc-stormcast-podcast-released-november-9-2026-e2397a8e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-november-9-2026-e2397a8e</guid>
+      <description><![CDATA[The SANS Internet Storm Center released the ISC Stormcast podcast for Monday, November 9, 2026. The episode covers current threat landscape trends, emerging attack vectors, and defensive best practices, featuring expert commentary. Listeners can access the recording via the ISC website, with Creative Commons Attribution-Noncommercial 3.0 license permitting sharing and adaptation.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:05:10 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33500">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Resteasy Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-resteasy-security-update-712eb26c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-resteasy-security-update-712eb26c</guid>
+      <description><![CDATA[Red Hat released a security update for Resteasy on RHEL 9.2 Update Services for SAP Solutions, fixing a critical REST flaw. The flaw, rated Important by Red Hat Product Security, lacks a public CVE ID but has a CVSS base score in the advisory. Apply the patch immediately; Red Hat recommends updating to Resteasy package or following vendor mitigation guidance.]]></description>
+      <pubDate>Mon, 09 Nov 2026 01:47:09 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96077">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases osbuild-composer Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-osbuild-composer-security-update-9aedb70a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-osbuild-composer-security-update-9aedb70a</guid>
+      <description><![CDATA[Red Hat released a security update for osbuild-composer, addressing vulnerabilities affecting RHEL 8.4 Mission Critical Update Support and Extended Update Support Add-On. The update mitigates privilege escalation and memory corruption risks identified in the build orchestration engine, with CVSS scores available via referenced CVE links. Red Hat recommends applying the update immediately; no workarounds are required to maintain build integrity.]]></description>
+      <pubDate>Mon, 09 Nov 2026 01:45:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96076">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released</title>
       <link>https://secubuzz.com/news/openssh-sshole-authentication-bypass-vulnerability-acbc22ef</link>
@@ -410,51 +455,6 @@
       <description><![CDATA[A security update is now available for Red Hat JBoss Enterprise Application Platform 8.1. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Fri, 06 Nov 2026 15:31:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95887">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>NIKKE Launcher Distributed Remote Access Trojan via Script Tampering</title>
-      <link>https://secubuzz.com/news/nikke-launcher-distributed-remote-access-trojan-vi-3c8b0dd9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nikke-launcher-distributed-remote-access-trojan-vi-3c8b0dd9</guid>
-      <description><![CDATA[The NIKKE PC game launcher suffered a script tampering attack that distributed an obfuscated remote access trojan and infostealer. The malicious scripts exploit the launcher’s trust model, enabling attackers to execute arbitrary code and exfiltrate user credentials without detection. Security teams should remove the compromised launcher, update to the latest official release, and monitor for unauthorized outbound connections.]]></description>
-      <pubDate>Fri, 06 Nov 2026 15:30:48 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/nikke-pc-game-launcher-hacked-to-spread-remote-access-d">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Veeam Alerts to Boot Failures on AMD EPYC Hosts</title>
-      <link>https://secubuzz.com/news/veeam-alerts-to-boot-failures-on-amd-epyc-hosts-6aa6506a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/veeam-alerts-to-boot-failures-on-amd-epyc-hosts-6aa6506a</guid>
-      <description><![CDATA[Veeam warned that its Software Appliance virtual machines fail to boot on AMD EPYC hosts. The flaw arises from a bootloader incompatibility with EPYC firmware, causing kernel panics that halt services but pose no remote code execution risk. Veeam recommends applying the latest appliance update or disabling the problematic boot option, and verifying firmware compatibility before deploying EPYC hosts.]]></description>
-      <pubDate>Fri, 06 Nov 2026 15:25:31 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ChatGPT CVE-2025-51591 Bypasses Lockdown Mode</title>
-      <link>https://secubuzz.com/news/chatgpt-cve-2025-51591-bypasses-lockdown-mode-027c7473</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chatgpt-cve-2025-51591-bypasses-lockdown-mode-027c7473</guid>
-      <description><![CDATA[A newly disclosed CVE-2025-51591 flaw in OpenAI’s ChatGPT lets attackers bypass the platform’s lockdown mode, exposing enterprise data. The flaw arises from improper prompt validation, enabling unauthorized code execution inside the sandbox and granting elevated privileges; CVSS 9.2. OpenAI has issued a patch; organizations should apply it within 24 hours and update detection rules to flag anomalous prompts.]]></description>
-      <pubDate>Fri, 06 Nov 2026 15:17:35 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Big Tech Files Lawsuit Against California Scrolling Law</title>
-      <link>https://secubuzz.com/news/big-tech-files-lawsuit-against-california-scrollin-35fb5a9b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/big-tech-files-lawsuit-against-california-scrollin-35fb5a9b</guid>
-      <description><![CDATA[Google, Meta, and TikTok sued California, claiming the state’s scrolling‑limit law violates free‑speech rights and parental control. They argue the regulation imposes unconstitutional restrictions on platform moderation and could harm user experience for minors. The lawsuit seeks a preliminary injunction to stop enforcement while the case proceeds in federal court.]]></description>
-      <pubDate>Fri, 06 Nov 2026 15:06:02 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/big-tech-sues-over-california-plan-to-limit-kids-scrolling">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ubuntu Tornado Regression Fix Released</title>
-      <link>https://secubuzz.com/news/ubuntu-tornado-regression-fix-released-74b59201</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-tornado-regression-fix-released-74b59201</guid>
-      <description><![CDATA[USN-8952-2 resolves a regression in Tornado caused by an incomplete fix for CVE-2026-103263, which broke static file serving for applications subclassing StaticFileHandler such as Jupyter. The original update introduced the regression by failing to properly handle certain HTTP requests and network inputs. This revised release restores correct static file serving functionality while maintaining the security fixes from prior advisories.]]></description>
-      <pubDate>Fri, 06 Nov 2026 15:04:17 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8952-2">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>
