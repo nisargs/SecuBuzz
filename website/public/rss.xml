@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 16:47:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 17:46:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat JBoss Web Server 6.2.6 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-jboss-web-server-6-2-6-security-update-9b1fedbe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-jboss-web-server-6-2-6-security-update-9b1fedbe</guid>
+      <description><![CDATA[Red Hat released JBoss Web Server 6.2.6 with security updates addressing multiple vulnerabilities affecting the web server component on RHEL 8, 9, and 10. The flaws involve improper input validation leading to potential remote code execution, with CVSS scores available via referenced CVE links. Red Hat recommends installing the 6.2.6 release immediately to mitigate the identified risks.]]></description>
+      <pubDate>Mon, 09 Nov 2026 17:37:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96228">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PwC CISO Discusses AI, Robots, Future Security</title>
+      <link>https://secubuzz.com/news/pwc-ciso-discusses-ai-robots-future-security-9ce1fa97</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pwc-ciso-discusses-ai-robots-future-security-9ce1fa97</guid>
+      <description><![CDATA[PwC’s Chief Information Security Officer James Shira outlined how AI and robotics are reshaping enterprise risk management. He emphasized the need for security teams to adopt adaptive threat models, integrate automation, and prioritize human oversight in AI deployments. PwC recommends continuous monitoring, policy updates, and cross‑functional collaboration to mitigate emerging AI‑driven attack vectors.]]></description>
+      <pubDate>Mon, 09 Nov 2026 17:17:23 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat OpenShift Container Platform 4.14.78 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-openshift-container-platform-4-14-78-secur-6b70975e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-openshift-container-platform-4-14-78-secur-6b70975e</guid>
+      <description><![CDATA[Red Hat released OpenShift Container Platform 4.14.78, incorporating bug fixes and a critical security update for the platform on supported RHEL versions. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, with CVSS scores referenced via CVE links. Users should apply the 4.14.78 release promptly to secure their clusters.]]></description>
+      <pubDate>Mon, 09 Nov 2026 17:10:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95508">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenSSH SSHole Bypass Vulnerability Disclosed</title>
+      <link>https://secubuzz.com/news/openssh-sshole-bypass-vulnerability-disclosed-86de8784</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssh-sshole-bypass-vulnerability-disclosed-86de8784</guid>
+      <description><![CDATA[OpenSSH has a documented SSHole bypass vulnerability (CVE-2026-123158) that allows attackers to circumvent authentication checks on supported SSH servers. The flaw stems from improper handling of session key negotiation, potentially enabling unauthorized remote access with CVSS 8.5. Red Hat and OpenSSH maintainers advise applying the latest patch or upgrading to version 9.8 to mitigate the risk.]]></description>
+      <pubDate>Mon, 09 Nov 2026 16:00:45 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/hackers-exploiting-sshole-authentication-bypass-in-open">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Ukraine Seizes €4.3M Crypto Scam Ring</title>
       <link>https://secubuzz.com/news/ukraine-seizes-4-3m-crypto-scam-ring-46ec5661</link>
@@ -71,6 +107,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>FBI Agent Steals $2.5M From Crypto Wallets</title>
+      <link>https://secubuzz.com/news/fbi-agent-steals-2-5m-from-crypto-wallets-18e4ebf8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fbi-agent-steals-2-5m-from-crypto-wallets-18e4ebf8</guid>
+      <description><![CDATA[A former FBI agent stole $2.5 million from the wallets of fraud victims and nation‑state hackers under investigation. The theft used the agent’s privileged access to the exchange’s wallet management system, enabling unauthorized transfers without audit alerts. The exchange revoked the agent’s credentials, launched a forensic audit, and is working with law enforcement to recover assets and tighten wallet controls.]]></description>
+      <pubDate>Mon, 09 Nov 2026 14:34:03 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia</title>
       <link>https://secubuzz.com/news/bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7cfd7aa3</link>
       <guid isPermaLink="true">https://secubuzz.com/news/bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7cfd7aa3</guid>
@@ -78,6 +123,15 @@
       <pubDate>Mon, 09 Nov 2026 14:31:29 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html">The Hacker News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>AI‑Assisted Attack Breaches German Web Host</title>
+      <link>https://secubuzz.com/news/ai-assisted-attack-breaches-german-web-host-5e8aefc1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-assisted-attack-breaches-german-web-host-5e8aefc1</guid>
+      <description><![CDATA[Hackers allegedly used AI to exploit a customer‑assistant interface, breaching a German web‑hosting company. The vulnerability allowed unauthorized code execution via the assistant integration, enabling attackers to gain administrative access to client accounts. The host applied a patch to the interface, disabled the vulnerable feature, and advised clients to update credentials and monitor logs.]]></description>
+      <pubDate>Mon, 09 Nov 2026 14:15:00 GMT</pubDate>
+      <source url="https://therecord.media/cyberattack-germany-ai-mittwald">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Revolve Reports 1.5 Million Breach Victims</title>
@@ -215,6 +269,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Issues Nodejs:22 Update for RHEL 9 Vulnerabilities</title>
+      <link>https://secubuzz.com/news/red-hat-issues-nodejs-22-update-for-rhel-9-vulnera-f27e3170</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-nodejs-22-update-for-rhel-9-vulnera-f27e3170</guid>
+      <description><![CDATA[Red Hat released a security update for nodejs:22 on RHEL 9, fixing vulnerabilities that could enable remote code execution. The patch addresses multiple CVSS‑scored flaws, with base scores listed in the CVE references, and no active exploitation has been reported. Apply the nodejs:22 update promptly or use the recommended workaround to mitigate remote code execution risks.]]></description>
+      <pubDate>Mon, 09 Nov 2026 12:43:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96234">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Iris Plaza Breach Exposes 7.7 Million Customer Records</title>
       <link>https://secubuzz.com/news/iris-plaza-breach-exposes-7-7-million-customer-rec-e8ad3903</link>
       <guid isPermaLink="true">https://secubuzz.com/news/iris-plaza-breach-exposes-7-7-million-customer-rec-e8ad3903</guid>
@@ -249,6 +312,15 @@
       <pubDate>Mon, 09 Nov 2026 12:26:16 GMT</pubDate>
       <source url="https://cybersecuritynews.com/google-gemini-safety-bypass-ai-generated-images/">Cyber Security News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases dnsmasq Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-dnsmasq-security-update-5f41d1f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-dnsmasq-security-update-5f41d1f8</guid>
+      <description><![CDATA[Red Hat issued an important update for dnsmasq on RHEL 8.6, addressing multiple security vulnerabilities across all affected systems. The update patches memory‑corruption and privilege‑escalation flaws with CVSS scores 7.5–8.3 and adds a new config option. Apply RHSA‑2026:96241 immediately in production, verify the new version, and review audit logs for anomalies.]]></description>
+      <pubDate>Mon, 09 Nov 2026 12:23:39 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96241">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Foreign Minister’s Data Leaked on Dark Web</title>
@@ -384,78 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 11:26:18 GMT</pubDate>
       <source url="https://cybersecuritynews.com/notc2-ai-powered-c2-framework/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenSSL Vulnerability Prompting RHEL 7 Update</title>
-      <link>https://secubuzz.com/news/openssl-vulnerability-prompting-rhel-7-update-b46c1150</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openssl-vulnerability-prompting-rhel-7-update-b46c1150</guid>
-      <description><![CDATA[A vulnerability in OpenSSL on RHEL 7 Extended Lifecycle Support has been identified, prompting an Important security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of OpenSSL.]]></description>
-      <pubDate>Mon, 09 Nov 2026 11:23:36 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96220">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Amplifon Americas Breach Exposes 1.3 Million Records</title>
-      <link>https://secubuzz.com/news/amplifon-americas-breach-exposes-1-3-million-recor-cf1de79b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/amplifon-americas-breach-exposes-1-3-million-recor-cf1de79b</guid>
-      <description><![CDATA[Amplifon Americas suffered a data breach that exposed personal, health, and insurance information, including Social Security numbers, from internal systems. The incident compromised data for approximately 1.3 million individuals, potentially enabling identity theft and fraud across affected regions. Amplifon has notified affected customers and is collaborating with law enforcement to investigate the breach and implement remedial controls.]]></description>
-      <pubDate>Mon, 09 Nov 2026 11:20:09 GMT</pubDate>
-      <source url="https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Web3Auth Flaw Used to Steal Keplr Crypto</title>
-      <link>https://secubuzz.com/news/web3auth-flaw-used-to-steal-keplr-crypto-8e9353a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/web3auth-flaw-used-to-steal-keplr-crypto-8e9353a4</guid>
-      <description><![CDATA[A flaw in Web3Auth’s authentication flow was exploited to steal funds from Keplr wallets using Google or Apple sign‑in. The vulnerability bypassed identity checks, allowing attackers to access wallet balances and empty other at‑risk wallets via the same route. Web3Auth has cleared affected wallets and issued a security update; users should monitor balances and consider switching authentication providers.]]></description>
-      <pubDate>Mon, 09 Nov 2026 10:56:25 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Plex Media Servers Targeted by Plex2Shell Exploit Chain</title>
-      <link>https://secubuzz.com/news/plex-media-servers-targeted-by-plex2shell-exploit-cae438a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/plex-media-servers-targeted-by-plex2shell-exploit-cae438a4</guid>
-      <description><![CDATA[Hackers leveraged the Plex2Shell exploit chain to compromise Plex Media Server installations, deploying cryptocurrency miners and proxy software. The chain exploits four CVEs—CVE-2026-96652, CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656—allowing remote code execution with PoC, resulting in unauthorized system takeover and resource hijacking. Administrators should patch Plex Media Server to the latest release, disable unused services, and monitor for anomalous mining activity.]]></description>
-      <pubDate>Mon, 09 Nov 2026 10:33:03 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-plex2shell-flaws/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>PowerSYSTEM Center Faces Two Critical 9.0 Flaws</title>
-      <link>https://secubuzz.com/news/powersystem-center-faces-two-critical-9-0-flaws-6dd04f33</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/powersystem-center-faces-two-critical-9-0-flaws-6dd04f33</guid>
-      <description><![CDATA[CISA identified two critical PowerSYSTEM Center flaws that allow authenticated users to access administrator resources or execute unauthorized SQL commands. The vulnerabilities, rated CVSS 9.0, enable privilege escalation and data exfiltration in energy and manufacturing sectors worldwide, with no public exploit yet. CISA issued advisory ICSA-26-307-01 and recommends applying vendor patches as soon as available to mitigate the risks.]]></description>
-      <pubDate>Mon, 09 Nov 2026 10:32:26 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/cisa-warns-critical-flaws-in-powersystem-center/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ModSecurity Exposes High-Severity WAF Bypass Flaw</title>
-      <link>https://secubuzz.com/news/modsecurity-exposes-high-severity-waf-bypass-flaw-b7eb8a24</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/modsecurity-exposes-high-severity-waf-bypass-flaw-b7eb8a24</guid>
-      <description><![CDATA[ModSecurity, a web application firewall, contains a high-severity flaw (CVE-2026-83844) that permits malicious uploads and can trigger server crashes. The vulnerability enables remote code execution via crafted requests, posing a significant risk to Apache, IIS, and Nginx deployments without authentication. Maintainers released advisories on September 30; users should apply the latest ModSecurity update or implement mitigations immediately.]]></description>
-      <pubDate>Mon, 09 Nov 2026 10:31:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/modsecurity-patches-two-high-severity-flaws/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Releases util‑linux Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-util-linux-security-update-cc3bf8d2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-util-linux-security-update-cc3bf8d2</guid>
-      <description><![CDATA[Red Hat issued a security update for the util‑linux package on RHEL 8, addressing multiple unspecified vulnerabilities. The advisory references several CVEs rated as Important, yet no active exploitation has been reported to date. Administrators should apply the RHSA‑2026:96212 update promptly to mitigate potential privilege‑escalation or denial‑of‑service risks in affected systems.]]></description>
-      <pubDate>Mon, 09 Nov 2026 10:17:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96212">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Frontline Education Breach Hits 3 Million Users</title>
-      <link>https://secubuzz.com/news/frontline-education-breach-hits-3-million-users-8fe1087f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/frontline-education-breach-hits-3-million-users-8fe1087f</guid>
-      <description><![CDATA[Frontline Education disclosed a data breach that exposed personal information of over 3 million school district staff and students in Indiana. The incident involved unauthorized access to the organization’s systems, potentially compromising credentials, contact details, and academic records. Frontline Education notified regulators and affected parties, and is conducting a forensic investigation while urging users to monitor for suspicious activity.]]></description>
-      <pubDate>Mon, 09 Nov 2026 10:09:02 GMT</pubDate>
-      <source url="https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/">SecurityWeek</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

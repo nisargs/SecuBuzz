@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-jboss-web-server-6-2-6-security-update-9b1fedbe",
+    "title": "Red Hat JBoss Web Server 6.2.6 Security Update",
+    "summary": "Red Hat released JBoss Web Server 6.2.6 with security updates addressing multiple vulnerabilities affecting the web server component on RHEL 8, 9, and 10. The flaws involve improper input validation leading to potential remote code execution, with CVSS scores available via referenced CVE links. Red Hat recommends installing the 6.2.6 release immediately to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96228",
+    "publishedAt": "2026-11-09T17:37:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-jboss-web-server-6-2-6-security-update",
+      "article-9b1fedbe",
+      "9b1fedbe",
+      "red-hat-jboss-web-server-6-2-6-security-update-37d7d9"
+    ]
+  },
+  {
+    "slug": "pwc-ciso-discusses-ai-robots-future-security-9ce1fa97",
+    "title": "PwC CISO Discusses AI, Robots, Future Security",
+    "summary": "PwC’s Chief Information Security Officer James Shira outlined how AI and robotics are reshaping enterprise risk management. He emphasized the need for security teams to adopt adaptive threat models, integrate automation, and prioritize human oversight in AI deployments. PwC recommends continuous monitoring, policy updates, and cross‑functional collaboration to mitigate emerging AI‑driven attack vectors.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security",
+    "publishedAt": "2026-11-09T17:17:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pwc-ciso-discusses-ai-robots-future-security",
+      "article-9ce1fa97",
+      "9ce1fa97",
+      "pwc-ciso-discusses-ai-robots-future-security-3666f4"
+    ]
+  },
+  {
+    "slug": "red-hat-openshift-container-platform-4-14-78-secur-6b70975e",
+    "title": "Red Hat OpenShift Container Platform 4.14.78 Security Update",
+    "summary": "Red Hat released OpenShift Container Platform 4.14.78, incorporating bug fixes and a critical security update for the platform on supported RHEL versions. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, with CVSS scores referenced via CVE links. Users should apply the 4.14.78 release promptly to secure their clusters.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95508",
+    "publishedAt": "2026-11-09T17:10:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-openshift-container-platform-4-14-78-secur",
+      "article-6b70975e",
+      "6b70975e",
+      "red-hat-openshift-container-platform-4-14-78-secur-37d842",
+      "red-hat-openshift-container-platform-4-14-78-security-update"
+    ]
+  },
+  {
+    "slug": "openssh-sshole-bypass-vulnerability-disclosed-86de8784",
+    "title": "OpenSSH SSHole Bypass Vulnerability Disclosed",
+    "summary": "OpenSSH has a documented SSHole bypass vulnerability (CVE-2026-123158) that allows attackers to circumvent authentication checks on supported SSH servers. The flaw stems from improper handling of session key negotiation, potentially enabling unauthorized remote access with CVSS 8.5. Red Hat and OpenSSH maintainers advise applying the latest patch or upgrading to version 9.8 to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/hackers-exploiting-sshole-authentication-bypass-in-open",
+    "publishedAt": "2026-11-09T16:00:45.000Z",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openssh-sshole-bypass-vulnerability-disclosed",
+      "article-86de8784",
+      "86de8784",
+      "openssh-sshole-bypass-vulnerability-disclosed-5830c4"
+    ]
+  },
+  {
     "slug": "ukraine-seizes-4-3m-crypto-scam-ring-46ec5661",
     "title": "Ukraine Seizes €4.3M Crypto Scam Ring",
     "summary": "Ukraine law enforcement disrupted a €4.3 million crypto scam ring, arresting key operators and seizing assets. Court filings revealed the ring used layered phishing and cryptocurrency mixing services, with threat actors operating from multiple jurisdictions. Security teams should monitor for similar phishing vectors, enforce multi‑factor authentication, and employ transaction monitoring to detect illicit crypto flows.",
@@ -142,6 +217,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fbi-agent-steals-2-5m-from-crypto-wallets-18e4ebf8",
+    "title": "FBI Agent Steals $2.5M From Crypto Wallets",
+    "summary": "A former FBI agent stole $2.5 million from the wallets of fraud victims and nation‑state hackers under investigation. The theft used the agent’s privileged access to the exchange’s wallet management system, enabling unauthorized transfers without audit alerts. The exchange revoked the agent’s credentials, launched a forensic audit, and is working with law enforcement to recover assets and tighten wallet controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/",
+    "publishedAt": "2026-11-09T14:34:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-agent-steals-2-5m-from-crypto-wallets",
+      "article-18e4ebf8",
+      "18e4ebf8",
+      "fbi-agent-steals-2-5m-from-crypto-wallets-6ae62b"
+    ]
+  },
+  {
     "slug": "bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7cfd7aa3",
     "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
     "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs researcher Cara Lin said.",
@@ -158,6 +251,24 @@ export const news: NewsBrief[] = [
       "7cfd7aa3",
       "bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7195f6",
       "bitter-hackers-deploy-new-paprat-backdoor-in-cyberespionage-"
+    ]
+  },
+  {
+    "slug": "ai-assisted-attack-breaches-german-web-host-5e8aefc1",
+    "title": "AI‑Assisted Attack Breaches German Web Host",
+    "summary": "Hackers allegedly used AI to exploit a customer‑assistant interface, breaching a German web‑hosting company. The vulnerability allowed unauthorized code execution via the assistant integration, enabling attackers to gain administrative access to client accounts. The host applied a patch to the interface, disabled the vulnerable feature, and advised clients to update credentials and monitor logs.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/cyberattack-germany-ai-mittwald",
+    "publishedAt": "2026-11-09T14:15:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-assisted-attack-breaches-german-web-host",
+      "article-5e8aefc1",
+      "5e8aefc1",
+      "ai-assisted-attack-breaches-german-web-host-6e7960"
     ]
   },
   {
@@ -438,6 +549,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-issues-nodejs-22-update-for-rhel-9-vulnera-f27e3170",
+    "title": "Red Hat Issues Nodejs:22 Update for RHEL 9 Vulnerabilities",
+    "summary": "Red Hat released a security update for nodejs:22 on RHEL 9, fixing vulnerabilities that could enable remote code execution. The patch addresses multiple CVSS‑scored flaws, with base scores listed in the CVE references, and no active exploitation has been reported. Apply the nodejs:22 update promptly or use the recommended workaround to mitigate remote code execution risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96234",
+    "publishedAt": "2026-11-09T12:43:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-nodejs-22-update-for-rhel-9-vulnera",
+      "article-f27e3170",
+      "f27e3170",
+      "red-hat-issues-nodejs-22-update-for-rhel-9-vulnera-37d7d9",
+      "red-hat-issues-nodejs-22-update-for-rhel-9-vulnerabilities"
+    ]
+  },
+  {
     "slug": "iris-plaza-breach-exposes-7-7-million-customer-rec-e8ad3903",
     "title": "Iris Plaza Breach Exposes 7.7 Million Customer Records",
     "summary": "Iris Plaza suffered a breach exposing personal data of about 7.7 million customers after attackers compromised an external cloud service used by the platform. The incident likely involved unauthorized access to stored customer records, including names, addresses, and payment details. The company must investigate, notify affected users, and strengthen cloud access controls.",
@@ -511,6 +641,24 @@ export const news: NewsBrief[] = [
       "b4da79bc",
       "google-gemini-allows-download-of-filtered-ai-image-6404e2",
       "google-gemini-allows-download-of-filtered-ai-images"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-dnsmasq-security-update-5f41d1f8",
+    "title": "Red Hat Releases dnsmasq Security Update",
+    "summary": "Red Hat issued an important update for dnsmasq on RHEL 8.6, addressing multiple security vulnerabilities across all affected systems. The update patches memory‑corruption and privilege‑escalation flaws with CVSS scores 7.5–8.3 and adds a new config option. Apply RHSA‑2026:96241 immediately in production, verify the new version, and review audit logs for anomalies.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96241",
+    "publishedAt": "2026-11-09T12:23:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-dnsmasq-security-update",
+      "article-5f41d1f8",
+      "5f41d1f8",
+      "red-hat-releases-dnsmasq-security-update-37d7d9"
     ]
   },
   {
@@ -9386,171 +9534,6 @@ export const news: NewsBrief[] = [
       "cc8229db",
       "rhsa-2026-95086-important-tesseract-security-updat-37d854",
       "rhsa-2026-95086-important-tesseract-security-update"
-    ]
-  },
-  {
-    "slug": "barracuda-flaws-enable-authentication-bypass-and-r-0a890021",
-    "title": "Barracuda flaws enable authentication bypass and root access",
-    "summary": "Barracuda disclosed two critical flaws (CVE-2026-116606, CVE-2026-116607) that let attackers bypass authentication and gain root. Exploitation needs access to the device’s admin interface, making exposed management systems a key risk, though no public PoC exists. Barracuda urges applying the firmware patch and disabling remote management until the update is installed to block privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-barracuda-security-flaws/",
-    "publishedAt": "2026-11-04T13:07:41.000Z",
-    "cves": [
-      "CVE-2026-116606",
-      "CVE-2026-116607"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "barracuda-flaws-enable-authentication-bypass-and-r",
-      "article-0a890021",
-      "0a890021",
-      "barracuda-flaws-enable-authentication-bypass-and-r-57a9d8",
-      "barracuda-flaws-enable-authentication-bypass-and-root-access"
-    ]
-  },
-  {
-    "slug": "node-js-schedules-high-severity-security-fixes-for-10ca6f84",
-    "title": "Node.js Schedules High-Severity Security Fixes for 22.x, 24.x, and 26.x Release Lines",
-    "summary": "The Node.js project has scheduled security updates for its 22.x, 24.x, and 26.x release lines on or shortly after Wednesday, November 11, 2026. The announcement gives developers and system administrators time to prepare for patches addressing HIGH-rated vulnerabilities across all three branches.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/node-js-schedules-patch/",
-    "publishedAt": "2026-11-04T12:59:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "node-js-schedules-high-severity-security-fixes-for",
-      "article-10ca6f84",
-      "10ca6f84",
-      "node-js-schedules-high-severity-security-fixes-for-4cf1ad",
-      "node-js-schedules-high-severity-security-fixes-for-22-x-24-x"
-    ]
-  },
-  {
-    "slug": "impart-launches-runtime-defense-harness-for-virtua-e39e09b0",
-    "title": "Impart Launches Runtime Defense Harness for Virtual Patching",
-    "summary": "Impart Security released the Runtime Defense Harness, an AI-driven environment where agents generate and test virtual patches for new vulnerabilities without deploying models into live traffic. The platform enforces deterministic code after engineer approval, providing tested patches within 60 minutes of a vulnerability disclosure. This approach addresses the growing gap between exploit publication and available fixes.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/impart-security-runtime-defense-harness/",
-    "publishedAt": "2026-11-04T12:48:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "impart-launches-runtime-defense-harness-for-virtua",
-      "article-e39e09b0",
-      "e39e09b0",
-      "impart-launches-runtime-defense-harness-for-virtua-6cd317",
-      "impart-launches-runtime-defense-harness-for-virtual-patching"
-    ]
-  },
-  {
-    "slug": "ai-token-theft-drives-workos-northflank-trigger-de-5721376b",
-    "title": "AI Token Theft Drives WorkOS, Northflank, Trigger.dev Breaches",
-    "summary": "Hackers harvested AI access tokens from WorkOS, Northflank, and Trigger.dev, exploiting automated attack tools in the past month. The attacks leveraged AI‑assisted offensive frameworks, enabling rapid credential reuse and lateral movement across cloud services. Security teams should revoke exposed tokens, enforce multi‑factor authentication, and monitor for anomalous API usage continuously.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/",
-    "publishedAt": "2026-11-04T12:43:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-token-theft-drives-workos-northflank-trigger-de",
-      "article-5721376b",
-      "5721376b",
-      "ai-token-theft-drives-workos-northflank-trigger-de-6c6b5a",
-      "ai-token-theft-drives-workos-northflank-trigger-dev-breaches"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-patch-addresses-cve-2026-43871-05ee7afe",
-    "title": "Red Hat Kernel Patch Addresses CVE-2026-43871",
-    "summary": "Red Hat released a kernel update for RHEL 8 to address CVE-2026-43871, a flaw that could allow privilege escalation or remote code execution. The vulnerability, rated Important by Product Security, has a CVSS base score listed but no active exploitation reported. The patch is available through standard RHEL 8 update channels; administrators should apply it promptly to mitigate potential exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95097",
-    "publishedAt": "2026-11-04T12:33:52.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95212"
-      }
-    ],
-    "aliases": [
-      "red-hat-kernel-patch-addresses-cve-2026-43871",
-      "article-05ee7afe",
-      "05ee7afe",
-      "red-hat-kernel-patch-addresses-cve-2026-43871-37d854"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95100-important-kernel-rt-security-bug-f-af2328e6",
-    "title": "RHSA-2026:95100: Important: kernel-rt security, bug fix, and enhancement update",
-    "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95100",
-    "publishedAt": "2026-11-04T12:29:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95100-important-kernel-rt-security-bug-f",
-      "article-af2328e6",
-      "af2328e6",
-      "rhsa-2026-95100-important-kernel-rt-security-bug-f-37d851",
-      "rhsa-2026-95100-important-kernel-rt-security-bug-fix-and-enh"
-    ]
-  },
-  {
-    "slug": "canadian-hacker-extradited-to-us-for-school-crypto-f00d8d3d",
-    "title": "Canadian hacker extradited to US for school cryptomining",
-    "summary": "Two suspects were identified in a 2016 case involving illicit cryptomining on computers at U.S. educational institutions across at least four states. The suspects have been extradited to the United States to face charges related to unauthorized use of computing resources for cryptocurrency mining. This case highlights the persistent threat of cryptojacking targeting educational infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/",
-    "publishedAt": "2026-11-04T12:27:58.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/canadian-nationals-accused-us-education-hacks-cryptomining"
-      }
-    ],
-    "aliases": [
-      "canadian-hacker-extradited-to-us-for-school-crypto",
-      "article-f00d8d3d",
-      "f00d8d3d",
-      "canadian-hacker-extradited-to-us-for-school-crypto-6801ca",
-      "canadian-hacker-extradited-to-us-for-school-cryptomining"
-    ]
-  },
-  {
-    "slug": "google-chrome-157-resolves-213-security-flaws-0dd5bbe7",
-    "title": "Google Chrome 157 Resolves 213 Security Flaws",
-    "summary": "Google released Chrome version 157 to resolve 213 security issues impacting the web browser application. The update fixes seven critical severity vulnerabilities that could potentially allow remote attackers to compromise vulnerable systems. Users are advised to manually check their browser version settings and immediately install the latest software patch to mitigate potential exploitation risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/chrome-157-fixes-213-security-issues-including-7-critical-flaws",
-    "publishedAt": "2026-11-04T12:16:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-chrome-157-resolves-213-security-flaws",
-      "article-0dd5bbe7",
-      "0dd5bbe7",
-      "google-chrome-157-resolves-213-security-flaws-7873dd"
     ]
   }
 ];
