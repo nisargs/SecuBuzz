@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 21:44:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 22:45:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SEGA Exposes 2.2M Subscriber Emails via ARARA Breach</title>
+      <link>https://secubuzz.com/news/sega-exposes-2-2m-subscriber-emails-via-arara-brea-db5fcc69</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sega-exposes-2-2m-subscriber-emails-via-arara-brea-db5fcc69</guid>
+      <description><![CDATA[A data breach at SEGA’s third‑party newsletter provider ARARA exposed 2.2 million subscriber email addresses. Unauthorized access to ARARA’s database compromised email identifiers but not credentials or financial data; SEGA reported the incident in November 2026. SEGA notified affected users and advised monitoring for phishing, while ARARA conducts a forensic investigation and tightens access controls.]]></description>
+      <pubDate>Mon, 09 Nov 2026 22:09:33 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>N‑able Shuts N‑central Cloud After Critical Vulnerabilities Discovered</title>
       <link>https://secubuzz.com/news/n-able-shuts-n-central-cloud-after-critical-vulner-15079bec</link>
@@ -35,12 +44,30 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Amplifon Breach Exposes Medical Data of Thousands</title>
+      <link>https://secubuzz.com/news/amplifon-breach-exposes-medical-data-of-thousands-f81b72eb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/amplifon-breach-exposes-medical-data-of-thousands-f81b72eb</guid>
+      <description><![CDATA[A data breach at Amplifon’s U.S. arm exposed medical information of thousands of customers. The incident involved unauthorized disclosure of sensitive health records, but no credentials or financial data were reported. Amplifon notified affected customers and is conducting a forensic investigation while advising them to monitor for identity theft ongoing.]]></description>
+      <pubDate>Mon, 09 Nov 2026 20:44:00 GMT</pubDate>
+      <source url="https://therecord.media/amplifon-hearing-aid-company-data-breach">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Black Hat India 2026 Debuts in Bengaluru</title>
       <link>https://secubuzz.com/news/black-hat-india-2026-debuts-in-bengaluru-2152c0ba</link>
       <guid isPermaLink="true">https://secubuzz.com/news/black-hat-india-2026-debuts-in-bengaluru-2152c0ba</guid>
       <description><![CDATA[Black Hat India 2026, a first‑time conference in Bengaluru, convened global cybersecurity researchers, practitioners, and decision makers. The event featured four days of cutting‑edge research, technical exchange, and strategic dialogue, covering emerging threats and defensive innovations. Attendees can network, share insights, and collaborate on future security initiatives, reinforcing industry resilience.]]></description>
       <pubDate>Mon, 09 Nov 2026 20:19:56 GMT</pubDate>
       <source url="https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>FORGE Lab uses agentic tools to identify memory safety issues in Rust</title>
+      <link>https://secubuzz.com/news/forge-lab-uses-agentic-tools-to-identify-memory-sa-cd50a823</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/forge-lab-uses-agentic-tools-to-identify-memory-sa-cd50a823</guid>
+      <description><![CDATA[Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees.]]></description>
+      <pubDate>Mon, 09 Nov 2026 20:17:31 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/">Microsoft Security</source>
       <category>General</category>
     </item>
     <item>
@@ -134,6 +161,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Fetchmail Vulnerabilities Enable Denial of Service and Code Execution</title>
+      <link>https://secubuzz.com/news/fetchmail-vulnerabilities-enable-denial-of-service-8ed7529c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fetchmail-vulnerabilities-enable-denial-of-service-8ed7529c</guid>
+      <description><![CDATA[Ubuntu’s USN‑9013‑1 documents three Fetchmail flaws, including CVE‑2021‑36386, CVE‑2025‑61962, and an NTLM authentication mishandling bug. The defects can crash Fetchmail via malformed log or status messages, and CVE‑2025‑61962 may allow remote code execution. Ubuntu advises upgrading to the latest packages on 16.04, 18.04, and 20.04 LTS to mitigate denial‑of‑service and potential RCE.]]></description>
+      <pubDate>Mon, 09 Nov 2026 17:17:55 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9013-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>PwC CISO Discusses AI, Robots, Future Security</title>
       <link>https://secubuzz.com/news/pwc-ciso-discusses-ai-robots-future-security-9ce1fa97</link>
       <guid isPermaLink="true">https://secubuzz.com/news/pwc-ciso-discusses-ai-robots-future-security-9ce1fa97</guid>
@@ -203,6 +239,15 @@
       <description><![CDATA[OpenSSH has a documented SSHole bypass vulnerability (CVE-2026-123158) that allows attackers to circumvent authentication checks on supported SSH servers. The flaw stems from improper handling of session key negotiation, potentially enabling unauthorized remote access with CVSS 8.5. Red Hat and OpenSSH maintainers advise applying the latest patch or upgrading to version 9.8 to mitigate the risk.]]></description>
       <pubDate>Mon, 09 Nov 2026 16:00:45 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/hackers-exploiting-sshole-authentication-bypass-in-open">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>AhsayCBS Exploits CVE-2026-105133 for Webshells and Mining</title>
+      <link>https://secubuzz.com/news/ahsaycbs-exploits-cve-2026-105133-for-webshells-an-63510953</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ahsaycbs-exploits-cve-2026-105133-for-webshells-an-63510953</guid>
+      <description><![CDATA[AhsayCBS has leveraged CVE‑2026‑105133 to deploy webshells and an XMRig miner on affected systems. The vulnerability permits remote code execution via a flaw in the AhsayCBS web interface, enabling attackers to execute arbitrary commands and mine cryptocurrency. Immediate patching of the affected AhsayCBS version is required; security teams should also monitor for webshell activity and block mining processes.]]></description>
+      <pubDate>Mon, 09 Nov 2026 15:50:32 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/inside-an-ahsaycbs-intrusion-hidden-webshells-a-cryptom">CyberNews AI</source>
       <category>CVE</category>
     </item>
     <item>
@@ -276,6 +321,15 @@
       <pubDate>Mon, 09 Nov 2026 14:56:32 GMT</pubDate>
       <source url="https://www.wiz.io/blog/qubole-cross-account-access-abused-in-the-wild">Wiz Research</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Refrigeration Controllers Hijacked for Spam and Proxy Traffic</title>
+      <link>https://secubuzz.com/news/refrigeration-controllers-hijacked-for-spam-and-pr-ff849312</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/refrigeration-controllers-hijacked-for-spam-and-pr-ff849312</guid>
+      <description><![CDATA[Hackers hijacked internet‑exposed refrigeration controllers in supermarkets and cold storage facilities, turning them into spam botnet and proxy infrastructure. The attack exploited remote management interfaces, allowing attackers to reconfigure HVAC settings and redirect traffic, causing spoilage of perishable goods. Security teams should isolate affected controllers, apply vendor firmware updates, and enforce network segmentation to block unauthorized remote access.]]></description>
+      <pubDate>Mon, 09 Nov 2026 14:54:01 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/09/copeland-xweb-refrigeration-controllers-spam-botnet/">Help Net Security</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Bee-js and Swarm Desktop Releases Embed SleepyDuck C2 Backdoor</title>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 13:14:41 GMT</pubDate>
       <source url="https://cybersecuritynews.com/jailbroken-deepseek-ai-agent-breach/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Plex2Shell Exploits QNAP NAS Plex Media Server</title>
-      <link>https://secubuzz.com/news/plex2shell-exploits-qnap-nas-plex-media-server-14731160</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/plex2shell-exploits-qnap-nas-plex-media-server-14731160</guid>
-      <description><![CDATA[Threat actors leveraged a four‑flaw chain to compromise the Plex Media Server application on QNAP NAS devices, enabling remote code execution. The exploitation chain permits attackers to gain full system control, exfiltrate data, and install persistent malware on affected NAS units. Users should apply the latest QNAP firmware, disable Plex when unused, and monitor for anomalous activity.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:13:28 GMT</pubDate>
-      <source url="https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Medical Data Breach Settlement Reaches $300,000</title>
-      <link>https://secubuzz.com/news/medical-data-breach-settlement-reaches-300-000-917fa6f2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/medical-data-breach-settlement-reaches-300-000-917fa6f2</guid>
-      <description><![CDATA[The New York Attorney General settled a 2023 breach of 13.3 million medical records with Perry Johnson & Associates and four affiliates. The settlement requires a $300,000 payment, enhanced security controls, and ongoing audits to prevent future exposures. Affected individuals should monitor their health records for unauthorized activity and consider enrolling in identity‑theft protection services.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:13:02 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/13-3-million-peoples-medical-data-exposed-companies-pay-300000">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>ForgeRock RCE Exploited via Default Credentials Unlock Cars</title>
-      <link>https://secubuzz.com/news/forgerock-rce-exploited-via-default-credentials-un-e6af50da</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/forgerock-rce-exploited-via-default-credentials-un-e6af50da</guid>
-      <description><![CDATA[Researchers leveraged default admin:admin credentials to chain a remote code execution flaw in ForgeRock identity platforms used by two automakers, enabling code execution on production servers. The chain exposed vehicle locations and allowed remote engine commands, revealing critical operational data and control capabilities. Automakers must apply vendor patches, disable default credentials, and enforce multi‑factor authentication to mitigate the RCE risk.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:12:03 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/forgerock-attack-chain/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cloudflare Distributes Vite Ecosystem Fund to Open Source Projects</title>
-      <link>https://secubuzz.com/news/cloudflare-distributes-vite-ecosystem-fund-to-open-e16dec00</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-distributes-vite-ecosystem-fund-to-open-e16dec00</guid>
-      <description><![CDATA[Cloudflare has released the first $301,300 of its Vite Ecosystem Fund to support open‑source projects and maintainers. Recipients were selected by a panel of Vite stack core team members, including non‑Cloudflare employees, to promote ecosystem growth. Beneficiaries should apply for the grant and report on project milestones to maintain funding eligibility.]]></description>
-      <pubDate>Mon, 09 Nov 2026 13:00:00 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/launching-vite-ecosystem-fund/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cockpit Vulnerability Prompting RHEL 10 Update</title>
-      <link>https://secubuzz.com/news/cockpit-vulnerability-prompting-rhel-10-update-5bc2694c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cockpit-vulnerability-prompting-rhel-10-update-5bc2694c</guid>
-      <description><![CDATA[A vulnerability in cockpit on RHEL 10 has been identified, prompting an Important security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of cockpit.]]></description>
-      <pubDate>Mon, 09 Nov 2026 12:56:01 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96250">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Node.js 24 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-node-js-24-security-update-e4dee8d9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-node-js-24-security-update-e4dee8d9</guid>
-      <description><![CDATA[Red Hat issued a Node.js 24 security update for Red Enterprise Linux 9, correcting a critical flaw that could enable remote code execution through crafted JavaScript payloads. The vulnerability, rated as important, allows attackers with valid credentials to execute arbitrary code on affected systems. The vendor has released a patch; administrators should upgrade Node.js immediately to mitigate risk.]]></description>
-      <pubDate>Mon, 09 Nov 2026 12:45:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96226">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

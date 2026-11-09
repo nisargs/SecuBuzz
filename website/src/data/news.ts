@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sega-exposes-2-2m-subscriber-emails-via-arara-brea-db5fcc69",
+    "title": "SEGA Exposes 2.2M Subscriber Emails via ARARA Breach",
+    "summary": "A data breach at SEGA’s third‑party newsletter provider ARARA exposed 2.2 million subscriber email addresses. Unauthorized access to ARARA’s database compromised email identifiers but not credentials or financial data; SEGA reported the incident in November 2026. SEGA notified affected users and advised monitoring for phishing, while ARARA conducts a forensic investigation and tightens access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
+    "publishedAt": "2026-11-09T22:09:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sega-exposes-2-2m-subscriber-emails-via-arara-brea",
+      "article-db5fcc69",
+      "db5fcc69",
+      "sega-exposes-2-2m-subscriber-emails-via-arara-brea-245287",
+      "sega-exposes-2-2m-subscriber-emails-via-arara-breach"
+    ]
+  },
+  {
     "slug": "n-able-shuts-n-central-cloud-after-critical-vulner-15079bec",
     "title": "N‑able Shuts N‑central Cloud After Critical Vulnerabilities Discovered",
     "summary": "N‑able shut down its N‑central cloud after discovering critical vulnerabilities that enable remote code execution and privilege escalation. Dubbed 'Able2Shell', the flaws lack public proof‑of‑concepts but could let attackers fully compromise affected servers. N‑able advises customers to immediately shut down on‑premises installations and apply forthcoming patches to mitigate the risk.",
@@ -74,6 +93,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "amplifon-breach-exposes-medical-data-of-thousands-f81b72eb",
+    "title": "Amplifon Breach Exposes Medical Data of Thousands",
+    "summary": "A data breach at Amplifon’s U.S. arm exposed medical information of thousands of customers. The incident involved unauthorized disclosure of sensitive health records, but no credentials or financial data were reported. Amplifon notified affected customers and is conducting a forensic investigation while advising them to monitor for identity theft ongoing.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/amplifon-hearing-aid-company-data-breach",
+    "publishedAt": "2026-11-09T20:44:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amplifon-breach-exposes-medical-data-of-thousands",
+      "article-f81b72eb",
+      "f81b72eb",
+      "amplifon-breach-exposes-medical-data-of-thousands-4a2dc5"
+    ]
+  },
+  {
     "slug": "black-hat-india-2026-debuts-in-bengaluru-2152c0ba",
     "title": "Black Hat India 2026 Debuts in Bengaluru",
     "summary": "Black Hat India 2026, a first‑time conference in Bengaluru, convened global cybersecurity researchers, practitioners, and decision makers. The event featured four days of cutting‑edge research, technical exchange, and strategic dialogue, covering emerging threats and defensive innovations. Attendees can network, share insights, and collaborate on future security initiatives, reinforcing industry resilience.",
@@ -89,6 +126,25 @@ export const news: NewsBrief[] = [
       "article-2152c0ba",
       "2152c0ba",
       "black-hat-india-2026-debuts-in-bengaluru-4308e8"
+    ]
+  },
+  {
+    "slug": "forge-lab-uses-agentic-tools-to-identify-memory-sa-cd50a823",
+    "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+    "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+    "publishedAt": "2026-11-09T20:17:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "forge-lab-uses-agentic-tools-to-identify-memory-sa",
+      "article-cd50a823",
+      "cd50a823",
+      "forge-lab-uses-agentic-tools-to-identify-memory-sa-df9851",
+      "forge-lab-uses-agentic-tools-to-identify-memory-safety-issue"
     ]
   },
   {
@@ -287,6 +343,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fetchmail-vulnerabilities-enable-denial-of-service-8ed7529c",
+    "title": "Fetchmail Vulnerabilities Enable Denial of Service and Code Execution",
+    "summary": "Ubuntu’s USN‑9013‑1 documents three Fetchmail flaws, including CVE‑2021‑36386, CVE‑2025‑61962, and an NTLM authentication mishandling bug. The defects can crash Fetchmail via malformed log or status messages, and CVE‑2025‑61962 may allow remote code execution. Ubuntu advises upgrading to the latest packages on 16.04, 18.04, and 20.04 LTS to mitigate denial‑of‑service and potential RCE.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9013-1",
+    "publishedAt": "2026-11-09T17:17:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fetchmail-vulnerabilities-enable-denial-of-service",
+      "article-8ed7529c",
+      "8ed7529c",
+      "fetchmail-vulnerabilities-enable-denial-of-service-7e893c",
+      "fetchmail-vulnerabilities-enable-denial-of-service-and-code-"
+    ]
+  },
+  {
     "slug": "pwc-ciso-discusses-ai-robots-future-security-9ce1fa97",
     "title": "PwC CISO Discusses AI, Robots, Future Security",
     "summary": "PwC’s Chief Information Security Officer James Shira outlined how AI and robotics are reshaping enterprise risk management. He emphasized the need for security teams to adopt adaptive threat models, integrate automation, and prioritize human oversight in AI deployments. PwC recommends continuous monitoring, policy updates, and cross‑functional collaboration to mitigate emerging AI‑driven attack vectors.",
@@ -447,6 +522,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ahsaycbs-exploits-cve-2026-105133-for-webshells-an-63510953",
+    "title": "AhsayCBS Exploits CVE-2026-105133 for Webshells and Mining",
+    "summary": "AhsayCBS has leveraged CVE‑2026‑105133 to deploy webshells and an XMRig miner on affected systems. The vulnerability permits remote code execution via a flaw in the AhsayCBS web interface, enabling attackers to execute arbitrary commands and mine cryptocurrency. Immediate patching of the affected AhsayCBS version is required; security teams should also monitor for webshell activity and block mining processes.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/inside-an-ahsaycbs-intrusion-hidden-webshells-a-cryptom",
+    "publishedAt": "2026-11-09T15:50:32.000Z",
+    "cves": [
+      "CVE-2026-105133"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ahsaycbs-exploits-cve-2026-105133-for-webshells-an",
+      "article-63510953",
+      "63510953",
+      "ahsaycbs-exploits-cve-2026-105133-for-webshells-an-865f45",
+      "ahsaycbs-exploits-cve-2026-105133-for-webshells-and-mining"
+    ]
+  },
+  {
     "slug": "ukraine-seizes-4-3m-crypto-scam-ring-46ec5661",
     "title": "Ukraine Seizes €4.3M Crypto Scam Ring",
     "summary": "Ukraine law enforcement disrupted a €4.3 million crypto scam ring, arresting key operators and seizing assets. Court filings revealed the ring used layered phishing and cryptocurrency mixing services, with threat actors operating from multiple jurisdictions. Security teams should monitor for similar phishing vectors, enforce multi‑factor authentication, and employ transaction monitoring to detect illicit crypto flows.",
@@ -600,6 +696,25 @@ export const news: NewsBrief[] = [
       "aeeb4c7b",
       "qubole-iam-credentials-abuse-enables-cross-account-644812",
       "qubole-iam-credentials-abuse-enables-cross-account-access"
+    ]
+  },
+  {
+    "slug": "refrigeration-controllers-hijacked-for-spam-and-pr-ff849312",
+    "title": "Refrigeration Controllers Hijacked for Spam and Proxy Traffic",
+    "summary": "Hackers hijacked internet‑exposed refrigeration controllers in supermarkets and cold storage facilities, turning them into spam botnet and proxy infrastructure. The attack exploited remote management interfaces, allowing attackers to reconfigure HVAC settings and redirect traffic, causing spoilage of perishable goods. Security teams should isolate affected controllers, apply vendor firmware updates, and enforce network segmentation to block unauthorized remote access.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/copeland-xweb-refrigeration-controllers-spam-botnet/",
+    "publishedAt": "2026-11-09T14:54:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "refrigeration-controllers-hijacked-for-spam-and-pr",
+      "article-ff849312",
+      "ff849312",
+      "refrigeration-controllers-hijacked-for-spam-and-pr-115fe3",
+      "refrigeration-controllers-hijacked-for-spam-and-proxy-traffi"
     ]
   },
   {
@@ -1257,6 +1372,30 @@ export const news: NewsBrief[] = [
       "a43468b1",
       "ubuntu-updates-ca-certificates-to-fix-jks-sync-iss-7e89b7",
       "ubuntu-updates-ca-certificates-to-fix-jks-sync-issue"
+    ]
+  },
+  {
+    "slug": "cisa-adds-four-exploited-vulnerabilities-to-kev-ca-8940165c",
+    "title": "CISA Adds Four Exploited Vulnerabilities to KEV Catalog",
+    "summary": "CISA added four actively exploited vulnerabilities to its KEV catalog: CVE-2026-102895 (GPUStack), CVE-2026-116779 (SignalWire FreeSwitch), CVE-2026-123158 (OpenBSD OpenSSH), and CVE-2026-123218 (IBM Aspera Faspex). The flaws involve improper authentication, code injection, unexpected status handling, and incorrect authorization, allowing attackers to gain unauthorized access or execute arbitrary code.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-09T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-102895",
+      "CVE-2026-116779",
+      "CVE-2026-123158",
+      "CVE-2026-123218"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-four-exploited-vulnerabilities-to-kev-ca",
+      "article-8940165c",
+      "8940165c",
+      "cisa-adds-four-exploited-vulnerabilities-to-kev-ca-21ae12",
+      "cisa-adds-four-exploited-vulnerabilities-to-kev-catalog"
     ]
   },
   {
@@ -2324,6 +2463,31 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "openjdk-27-vulnerabilities-allow-authentication-by-d51e46c4",
+    "title": "OpenJDK 27 Vulnerabilities Allow Authentication Bypass",
+    "summary": "OpenJDK 27 has authentication and authorization flaws: CVE-2026-91415 in 2D, CVE-2026-91398 and CVE-2026-83395 in Networking, CVE-2026-83381 and CVE-2026-87294 in Security, plus JAXP component issues. These flaws let remote attackers bypass authentication, cause denial of service, or read and modify sensitive data. Apply the latest OpenJDK 27 patch, limit network exposure, and enforce strict access controls to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9005-1",
+    "publishedAt": "2026-11-09T02:27:00.000Z",
+    "cves": [
+      "CVE-2026-91415",
+      "CVE-2026-91398",
+      "CVE-2026-83395",
+      "CVE-2026-83381",
+      "CVE-2026-87294"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openjdk-27-vulnerabilities-allow-authentication-by",
+      "article-d51e46c4",
+      "d51e46c4",
+      "openjdk-27-vulnerabilities-allow-authentication-by-7e89a8",
+      "openjdk-27-vulnerabilities-allow-authentication-bypass"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-openshift-4-19-55-update-115b6395",
     "title": "Red Hat Issues Critical OpenShift 4.19.55 Update",
     "summary": "Red Hat released OpenShift Container Platform 4.19.55, addressing multiple critical bugs and security flaws affecting cluster management components. The update mitigates privilege escalation and code execution risks identified in the platform's API server and scheduler, with CVSS scores linked via CVE references. Red Hat advises applying the update immediately; no workarounds are available, and users should verify cluster integrity post‑deployment.",
@@ -2414,6 +2578,27 @@ export const news: NewsBrief[] = [
       "5dc8b824",
       "openshift-4-21-42-releases-critical-security-updat-37d846",
       "openshift-4-21-42-releases-critical-security-update"
+    ]
+  },
+  {
+    "slug": "usn-9004-1-openjdk-25-vulnerabilities-32c7187d",
+    "title": "USN-9004-1: OpenJDK 25 vulnerabilities",
+    "summary": "A remote attacker could possibly use this issue to modify sensitive data. (CVE-2026-91398) It was discovered that the 2D component of OpenJDK 25 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-91403) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9004-1",
+    "publishedAt": "2026-11-09T02:00:41.000Z",
+    "cves": [
+      "CVE-2026-91398",
+      "CVE-2026-91403"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9004-1-openjdk-25-vulnerabilities",
+      "article-32c7187d",
+      "32c7187d",
+      "usn-9004-1-openjdk-25-vulnerabilities-7e89ac"
     ]
   },
   {
@@ -9393,174 +9578,6 @@ export const news: NewsBrief[] = [
       "article-559acb4d",
       "559acb4d",
       "chrome-beta-ios-158-release-4c2878"
-    ]
-  },
-  {
-    "slug": "google-calendar-phishing-campaign-hijacks-sessions-6a1b1200",
-    "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
-    "summary": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
-    "publishedAt": "2026-11-04T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-calendar-phishing-campaign-hijacks-sessions",
-      "article-6a1b1200",
-      "6a1b1200",
-      "google-calendar-phishing-campaign-hijacks-sessions-6a4a1e",
-      "google-calendar-phishing-campaign-hijacks-sessions-bypasses-"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-pki-core-in-rhel-7-e17623f9",
-    "title": "Red Hat Updates PKI Core in RHEL 7",
-    "summary": "Red Hat issued a security update for pki-core addressing security flaws in Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security rated the security impact of these vulnerabilities as important based on the Common Vulnerability Scoring System. System administrators are advised to apply the updated pki-core packages immediately to maintain enterprise system security.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95182",
-    "publishedAt": "2026-11-04T14:44:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-pki-core-in-rhel-7",
-      "article-e17623f9",
-      "e17623f9",
-      "red-hat-updates-pki-core-in-rhel-7-37d850"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-79ca22b3",
-    "title": "Red Hat Releases JBoss EAP 8.1.9 XP 6.0.7.GA Update",
-    "summary": "Red Hat released JBoss Enterprise Application Platform 8.1.9 XP 6.0.7.GA to update the EAP 8.1.9 base. The update incorporates unspecified fixes and enhancements, as outlined in the release notes, but does not introduce new vulnerabilities. Security teams should apply the new version to maintain compatibility and benefit from the improvements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95221",
-    "publishedAt": "2026-11-04T14:44:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat",
-      "article-79ca22b3",
-      "79ca22b3",
-      "red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-updat-37d84d",
-      "red-hat-releases-jboss-eap-8-1-9-xp-6-0-7-ga-update"
-    ]
-  },
-  {
-    "slug": "sonicwall-alerts-on-unpatched-gms-end-of-life-flaw-a34413db",
-    "title": "SonicWall Alerts on Unpatched GMS End‑of‑Life Flaws",
-    "summary": "SonicWall warned customers of two security flaws in its end‑of‑life Global Management System (GMS) that will not receive patches. The vulnerabilities, which remain unmitigated, could allow attackers to exploit the GMS platform, potentially enabling access or code execution, though no public exploit is reported. Security teams should decommission affected GMS instances or migrate to supported solutions to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
-    "publishedAt": "2026-11-04T14:42:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sonicwall-alerts-on-unpatched-gms-end-of-life-flaw",
-      "article-a34413db",
-      "a34413db",
-      "sonicwall-alerts-on-unpatched-gms-end-of-life-flaw-58371b",
-      "sonicwall-alerts-on-unpatched-gms-end-of-life-flaws"
-    ]
-  },
-  {
-    "slug": "cycurion-launches-habit-soc-tool-a28410c8",
-    "title": "Cycurion Launches Habit SOC Tool",
-    "summary": "Cycurion introduced Habit, an AI‑driven security operations center platform designed to identify threats before they disrupt operations. Habit learns normal behavior across identities, devices, and workloads, then actively seeks deviations, enabling proactive detection of anomalous activity. The launch positions Cycurion as a predictive cybersecurity company, leveraging a team of former U.S. Intelligence Community and private‑sector experts.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/cycurion-habit/",
-    "publishedAt": "2026-11-04T14:40:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cycurion-launches-habit-soc-tool",
-      "article-a28410c8",
-      "a28410c8",
-      "cycurion-launches-habit-soc-tool-311fbd"
-    ]
-  },
-  {
-    "slug": "apt29-targets-mobile-devices-using-patched-exploit-fc26991b",
-    "title": "APT29 Targets Mobile Devices Using Patched Exploits",
-    "summary": "Russian threat group APT29 is targeting iOS and Android users using watering hole attacks delivered through compromised websites and lookalike domains. According to a report by Sekoia, the operation utilizes n-day exploits for patched vulnerabilities to steal user cookies, messages, and Wi-Fi passwords. Security teams should enforce immediate mobile OS updates and restrict access to unverified external web resources.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/apt29-watering-hole-mobile-devices-n-day-exploits/",
-    "publishedAt": "2026-11-04T14:38:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apt29-targets-mobile-devices-using-patched-exploit",
-      "article-fc26991b",
-      "fc26991b",
-      "apt29-targets-mobile-devices-using-patched-exploit-50e3aa",
-      "apt29-targets-mobile-devices-using-patched-exploits"
-    ]
-  },
-  {
-    "slug": "sysdig-enhances-runtime-security-for-ai-agents-a1f1297a",
-    "title": "Sysdig Enhances Runtime Security for AI Agents",
-    "summary": "Sysdig expanded its platform to provide runtime visibility and governance for AI agents, tracking their actions before reaching production systems. The new capability blocks risky behavior by monitoring AI agent activity, enabling security teams to intervene proactively. Organizations can integrate Sysdig’s runtime controls to enforce compliance and reduce the attack surface of AI workloads.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
-    "publishedAt": "2026-11-04T14:34:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sysdig-enhances-runtime-security-for-ai-agents",
-      "article-a1f1297a",
-      "a1f1297a",
-      "sysdig-enhances-runtime-security-for-ai-agents-118982"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-important-flaw-in-pki-core-3baaaed8",
-    "title": "Red Hat Patches Important Flaw in PKI Core",
-    "summary": "Red Hat released a security update addressing a vulnerability in the pki-core module for Red Hat Enterprise Linux 8.4 extended support editions. Tracked as CVE-2026-43871, the flaw carries an Important severity rating assigned by Red Hat Product Security. Administrators must apply the updated pki-core:10.6 packages to affected systems to maintain system integrity and security.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95181",
-    "publishedAt": "2026-11-04T14:34:44.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-important-flaw-in-pki-core",
-      "article-3baaaed8",
-      "3baaaed8",
-      "red-hat-patches-important-flaw-in-pki-core-37d850"
-    ]
-  },
-  {
-    "slug": "descope-envoy-ai-agent-authentication-5967a76b",
-    "title": "Descope Envoy AI Agent Authentication",
-    "summary": "Descope announced Envoy, a capability enabling personal AI agents to receive delegated sign-in paths within consumer applications alongside existing authentication flows. Consumer companies can now treat agents as first-class users with dedicated identities and permission structures without rebuilding identity infrastructure. Launch partners include GoFundMe, You.com, GoodRx, and Composio.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/descope-envoy/",
-    "publishedAt": "2026-11-04T14:31:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "descope-envoy-ai-agent-authentication",
-      "article-5967a76b",
-      "5967a76b",
-      "descope-envoy-ai-agent-authentication-6d8729"
     ]
   }
 ];
