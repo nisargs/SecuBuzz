@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ukraine-seizes-4-3m-crypto-scam-ring-46ec5661",
+    "title": "Ukraine Seizes €4.3M Crypto Scam Ring",
+    "summary": "Ukraine law enforcement disrupted a €4.3 million crypto scam ring, arresting key operators and seizing assets. Court filings revealed the ring used layered phishing and cryptocurrency mixing services, with threat actors operating from multiple jurisdictions. Security teams should monitor for similar phishing vectors, enforce multi‑factor authentication, and employ transaction monitoring to detect illicit crypto flows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/ukraine-dismantles-crypto-scam-network-that-stole-4-3-m",
+    "publishedAt": "2026-11-09T15:49:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ukraine-seizes-4-3m-crypto-scam-ring",
+      "article-46ec5661",
+      "46ec5661",
+      "ukraine-seizes-4-3m-crypto-scam-ring-7cf541"
+    ]
+  },
+  {
+    "slug": "nist-guidance-for-solo-business-owners-91174b53",
+    "title": "NIST Guidance for Solo Business Owners",
+    "summary": "NIST released guidance offering a basic framework for solo business owners lacking technical expertise in the rapidly evolving threat landscape. The guidance outlines security practices for technology that operates without human oversight, though it may not fully address all risk scenarios. Organizations should review the guidance and supplement it with additional controls as needed.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure",
+    "publishedAt": "2026-11-09T15:46:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nist-guidance-for-solo-business-owners",
+      "article-91174b53",
+      "91174b53",
+      "nist-guidance-for-solo-business-owners-30251b"
+    ]
+  },
+  {
     "slug": "grc-threat-ignoring-ai-instead-of-embracing-it-f0898917",
     "title": "GRC Threat: Ignoring AI Instead of Embracing It",
     "summary": "AI agents are automating routine governance, risk, and compliance tasks, compelling GRC professionals to acquire new skills. The shift emphasizes data literacy, agent governance, and communication as essential competencies for the AI-driven GRC workplace. Organizations should invest in training and tools to manage AI agents and maintain compliance oversight effectively.",
@@ -26,6 +62,26 @@ export const news: NewsBrief[] = [
       "article-f0898917",
       "f0898917",
       "grc-threat-ignoring-ai-instead-of-embracing-it-328efb"
+    ]
+  },
+  {
+    "slug": "sonicwall-mfa-bypass-exploited-via-cve-2026-19868-1ec7fde2",
+    "title": "SonicWall MFA Bypass Exploited via CVE-2026-19868",
+    "summary": "CVE-2026-19868 allows MFA bypass in SonicWall SonicOS, targeting enterprise firewall environments via web interface. The flaw exploits improper validation of authentication tokens, letting attackers gain privileged access without MFA and potentially full administrative control; CVSS 8.5 reported. SonicWall issued an out‑of‑band patch today; apply it immediately and enforce strict MFA as a temporary workaround.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cisa-flags-sonicwall-sonicos-mfa-bypass-flaw-amid-repor",
+    "publishedAt": "2026-11-09T15:04:43.000Z",
+    "cves": [
+      "CVE-2026-19868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "sonicwall-mfa-bypass-exploited-via-cve-2026-19868",
+      "article-1ec7fde2",
+      "1ec7fde2",
+      "sonicwall-mfa-bypass-exploited-via-cve-2026-19868-73bbdc"
     ]
   },
   {
@@ -45,6 +101,44 @@ export const news: NewsBrief[] = [
       "7c1d4c95",
       "artex-tool-escapes-sandbox-breaches-workos-applica-473056",
       "artex-tool-escapes-sandbox-breaches-workos-application"
+    ]
+  },
+  {
+    "slug": "qubole-iam-credentials-abuse-enables-cross-account-aeeb4c7b",
+    "title": "Qubole IAM Credentials Abuse Enables Cross‑Account Access",
+    "summary": "A threat actor used stolen IAM credentials from a Qubole AWS account to assume roles in customer AWS environments, enabling cross‑account access. The exploit relied on misconfigured trust relationships and weak role monitoring, letting attackers read and modify data across accounts undetected. Teams should audit IAM trust policies, enforce least‑privilege, and enable CloudTrail logging to detect anomalous cross‑account activity.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/qubole-cross-account-access-abused-in-the-wild",
+    "publishedAt": "2026-11-09T14:56:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qubole-iam-credentials-abuse-enables-cross-account",
+      "article-aeeb4c7b",
+      "aeeb4c7b",
+      "qubole-iam-credentials-abuse-enables-cross-account-644812",
+      "qubole-iam-credentials-abuse-enables-cross-account-access"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-94537-critical-openshift-container-platf-70e6d196",
+    "title": "RHSA-2026:94537: Critical: OpenShift Container Platform 5.0.1 bug fix and security update",
+    "summary": "Red Hat OpenShift Container Platform release 5.0.1 is now available with updates to packages and images that fix several bugs and add enhancements. This release includes a security update for Red Hat OpenShift Container Platform 5.0. Red Hat Product Security has rated this update as having a security impact of Critical.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94537",
+    "publishedAt": "2026-11-09T14:40:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-94537-critical-openshift-container-platf",
+      "article-70e6d196",
+      "70e6d196",
+      "rhsa-2026-94537-critical-openshift-container-platf-37d8b6",
+      "rhsa-2026-94537-critical-openshift-container-platform-5-0-1-"
     ]
   },
   {
@@ -308,6 +402,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cockpit-vulnerability-prompting-rhel-10-update-5bc2694c",
+    "title": "Cockpit Vulnerability Prompting RHEL 10 Update",
+    "summary": "A vulnerability in cockpit on RHEL 10 has been identified, prompting an Important security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of cockpit.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96250",
+    "publishedAt": "2026-11-09T12:56:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cockpit-vulnerability-prompting-rhel-10-update",
+      "article-5bc2694c",
+      "5bc2694c",
+      "cockpit-vulnerability-prompting-rhel-10-update-37d7d8"
+    ]
+  },
+  {
     "slug": "red-hat-issues-node-js-24-security-update-e4dee8d9",
     "title": "Red Hat Issues Node.js 24 Security Update",
     "summary": "Red Hat issued a Node.js 24 security update for Red Enterprise Linux 9, correcting a critical flaw that could enable remote code execution through crafted JavaScript payloads. The vulnerability, rated as important, allows attackers with valid credentials to execute arbitrary code on affected systems. The vendor has released a patch; administrators should upgrade Node.js immediately to mitigate risk.",
@@ -501,6 +613,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "patch-utility-vulnerability-prompting-rhel-8-updat-674460e7",
+    "title": "Patch Utility Vulnerability Prompting RHEL 8 Update",
+    "summary": "A vulnerability in the patch utility on RHEL 8 has been identified, prompting a Moderate security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of the patch utility.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96215",
+    "publishedAt": "2026-11-09T12:09:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "patch-utility-vulnerability-prompting-rhel-8-updat",
+      "article-674460e7",
+      "674460e7",
+      "patch-utility-vulnerability-prompting-rhel-8-updat-37d7d9",
+      "patch-utility-vulnerability-prompting-rhel-8-update"
+    ]
+  },
+  {
     "slug": "rhsa-2026-96216-important-openssl-security-update-29396db0",
     "title": "RHSA-2026:96216: Important: openssl security update",
     "summary": "An update for openssl is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -675,6 +806,24 @@ export const news: NewsBrief[] = [
       "595b61c8",
       "researchers-uncover-notc2-ai-powered-c2-framework-774fd1",
       "researchers-uncover-notc2-ai-powered-c2-framework-that-hides"
+    ]
+  },
+  {
+    "slug": "openssl-vulnerability-prompting-rhel-7-update-b46c1150",
+    "title": "OpenSSL Vulnerability Prompting RHEL 7 Update",
+    "summary": "A vulnerability in OpenSSL on RHEL 7 Extended Lifecycle Support has been identified, prompting an Important security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of OpenSSL.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96220",
+    "publishedAt": "2026-11-09T11:23:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openssl-vulnerability-prompting-rhel-7-update",
+      "article-b46c1150",
+      "b46c1150",
+      "openssl-vulnerability-prompting-rhel-7-update-37d7d9"
     ]
   },
   {
@@ -1788,9 +1937,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "openssh-sshole-authentication-bypass-cve-2026-1231-63427e3c",
-    "title": "OpenSSH SSHole Authentication Bypass (CVE-2026-123158) Enables Remote Code Execution",
-    "summary": "OpenSSH servers are vulnerable to the SSHole authentication bypass (CVE-2026-123158), allowing attackers to submit oversized passwords and gain unauthenticated remote code execution. The flaw exploits improper length validation in password handling, enabling privilege escalation and root access on affected Linux systems. Administrators must apply the vendor‑issued patch or upgrade to the latest OpenSSH release immediately to mitigate the vulnerability.",
+    "slug": "openssh-sshole-vulnerability-cve-2026-123158-enabl-b5b717ef",
+    "title": "OpenSSH SSHole Vulnerability (CVE-2026-123158) Enables Remote Code Execution",
+    "summary": "OpenSSH servers worldwide are compromised by the SSHole vulnerability (CVE-2026-123158), allowing attackers to bypass authentication and execute arbitrary code. The flaw stems from improper password length validation, enabling attackers to gain root privileges, exfiltrate credentials, and maintain persistence on affected Linux systems. Administrators must immediately apply the vendor‑issued patch or upgrade to the latest OpenSSH release to mitigate the risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
@@ -1811,14 +1960,18 @@ export const news: NewsBrief[] = [
       {
         "source": "The Hacker News",
         "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html"
+      },
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/"
       }
     ],
     "aliases": [
-      "openssh-sshole-authentication-bypass-cve-2026-1231",
-      "article-63427e3c",
-      "63427e3c",
-      "openssh-sshole-authentication-bypass-cve-2026-1231-57dd7e",
-      "openssh-sshole-authentication-bypass-cve-2026-123158-enables"
+      "openssh-sshole-vulnerability-cve-2026-123158-enabl",
+      "article-b5b717ef",
+      "b5b717ef",
+      "openssh-sshole-vulnerability-cve-2026-123158-enabl-57dd7e",
+      "openssh-sshole-vulnerability-cve-2026-123158-enables-remote-"
     ]
   },
   {
@@ -4512,21 +4665,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "queens-library-ransomware-disrupts-wi-fi-computers-d750eb48",
-    "title": "Queens Library Ransomware Disrupts Wi-Fi, Computers",
-    "summary": "A ransomware payload infected the Queens Public Library network, disabling Wi‑Fi and on‑site computers across its 66 branches. The attack leveraged a credential‑stealing technique that encrypted critical systems, causing service outages for the borough’s 2.3 million residents; no ransom demand was reported. Library administrators applied emergency patches and restored services after isolating infected machines and resetting credentials.",
+    "slug": "queens-public-library-ransomware-attack-disrupts-w-89f6d9a1",
+    "title": "Queens Public Library Ransomware Attack Disrupts Wi‑Fi and Computers",
+    "summary": "Queens Public Library in New York City suffered a ransomware attack that crippled Wi‑Fi, computers, and checkout services across its 66 branches. The malware exploited a legacy software vulnerability and credential‑stealing technique, granting attackers administrative privileges to encrypt systems and halt services. Administrators isolated infected machines, applied emergency patches, reset credentials, and restored operations from backups while law enforcement investigated.",
     "category": "Ransomware",
     "severity": "HIGH",
     "source": "The Record",
     "sourceUrl": "https://therecord.media/queens-library-ransomware-causes-disruptions",
     "publishedAt": "2026-11-05T22:08:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Check Point Research",
+        "sourceUrl": "https://research.checkpoint.com/2026/9th-november-threat-intelligence-report/"
+      }
+    ],
     "aliases": [
-      "queens-library-ransomware-disrupts-wi-fi-computers",
-      "article-d750eb48",
-      "d750eb48",
-      "queens-library-ransomware-disrupts-wi-fi-computers-724a42"
+      "queens-public-library-ransomware-attack-disrupts-w",
+      "article-89f6d9a1",
+      "89f6d9a1",
+      "queens-public-library-ransomware-attack-disrupts-w-724a42",
+      "queens-public-library-ransomware-attack-disrupts-wi-fi-and-c"
     ]
   },
   {
@@ -9392,167 +9551,6 @@ export const news: NewsBrief[] = [
       "article-0dd5bbe7",
       "0dd5bbe7",
       "google-chrome-157-resolves-213-security-flaws-7873dd"
-    ]
-  },
-  {
-    "slug": "rails-flaw-enables-arbitrary-file-write-via-imagem-aa5f8d5c",
-    "title": "Rails Flaw Enables Arbitrary File Write via ImageMagick",
-    "summary": "A critical Rails flaw lets unauthenticated attackers write arbitrary files by uploading crafted ImageMagick files. The flaw resides in Active Storage’s ImageMagick processing, enabling remote code execution with CVSS 9.8 and public PoC. Rails patched the issue in 8.1.4.1 and 8.0.5.2; admins should upgrade and verify upload security.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
-    "publishedAt": "2026-11-04T12:07:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rails-flaw-enables-arbitrary-file-write-via-imagem",
-      "article-aa5f8d5c",
-      "aa5f8d5c",
-      "rails-flaw-enables-arbitrary-file-write-via-imagem-3c54d2",
-      "rails-flaw-enables-arbitrary-file-write-via-imagemagick"
-    ]
-  },
-  {
-    "slug": "apple-improper-authentication-vulnerability-cve-20-844bd6b2",
-    "title": "Apple Improper Authentication Vulnerability CVE-2024-27834 Exploited for Info-Stealing Malware",
-    "summary": "Apple's CVE-2024-27834 improper authentication flaw was actively exploited to deliver info‑stealing malware across macOS versions, compromising user credentials and data. The vulnerability, rated CVSS 5.5, allows bypassing authentication checks without privileged access, enabling credential theft and data exfiltration. CISA added CVE-2024-27834 to its Known Exploited Vulnerabilities catalog and urges macOS users to install the latest updates and enable two‑factor authentication.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "publishedAt": "2026-11-04T12:00:00.000Z",
-    "cves": [
-      "CVE-2024-27834"
-    ],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html"
-      }
-    ],
-    "aliases": [
-      "apple-improper-authentication-vulnerability-cve-20",
-      "article-844bd6b2",
-      "844bd6b2",
-      "apple-improper-authentication-vulnerability-cve-20-3fd10f",
-      "apple-improper-authentication-vulnerability-cve-2024-27834-e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95064-important-flatpak-security-update-f924e795",
-    "title": "RHSA-2026:95064: Important: flatpak security update",
-    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95064",
-    "publishedAt": "2026-11-04T11:58:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95064-important-flatpak-security-update",
-      "article-f924e795",
-      "f924e795",
-      "rhsa-2026-95064-important-flatpak-security-update-37d854"
-    ]
-  },
-  {
-    "slug": "zyxel-gs1900-switches-hijacked-via-new-zero-day-a26f17b7",
-    "title": "Zyxel GS1900 Switches Hijacked via New Zero-Day",
-    "summary": "A newly identified flaw in Zyxel GS1900 switches, tracked as CVE-2026-107441, is actively exploited in the wild to hijack device control. The flaw allows remote attackers to execute arbitrary commands via malformed management traffic, bypassing Zyxel's ineffective patch. Zyxel released a new firmware update; teams should apply it immediately and monitor logs for unauthorized access.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/zyxel-gs1900-zero-day-exploited/",
-    "publishedAt": "2026-11-04T11:57:24.000Z",
-    "cves": [
-      "CVE-2026-107441"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zyxel-gs1900-switches-hijacked-via-new-zero-day",
-      "article-a26f17b7",
-      "a26f17b7",
-      "zyxel-gs1900-switches-hijacked-via-new-zero-day-5517a6"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95061-important-flatpak-security-update-aaa4381b",
-    "title": "RHSA-2026:95061: Important: flatpak security update",
-    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95061",
-    "publishedAt": "2026-11-04T11:51:07.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95061-important-flatpak-security-update",
-      "article-aaa4381b",
-      "aaa4381b",
-      "rhsa-2026-95061-important-flatpak-security-update-37d854"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95085-important-tesseract-security-updat-b61117b3",
-    "title": "RHSA-2026:95085: Important: tesseract security update",
-    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95085",
-    "publishedAt": "2026-11-04T11:48:26.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95085-important-tesseract-security-updat",
-      "article-b61117b3",
-      "b61117b3",
-      "rhsa-2026-95085-important-tesseract-security-updat-37d854",
-      "rhsa-2026-95085-important-tesseract-security-update"
-    ]
-  },
-  {
-    "slug": "xen-hypervisor-flaws-enable-vm-memory-theft-3fb65d25",
-    "title": "Xen Hypervisor Flaws Enable VM Memory Theft",
-    "summary": "Two Xen hypervisor flaws let a malicious guest VM read/write memory of other VMs, including dom0, on the host. The flaws allow unauthenticated cross‑VM memory access, exposing guest data and risking privilege escalation; all Xen 4.6+ releases are affected. Xen Project has issued patches for all affected versions; administrators must apply them immediately to stop memory disclosure and control loss.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
-    "publishedAt": "2026-11-04T11:46:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xen-hypervisor-flaws-enable-vm-memory-theft",
-      "article-3fb65d25",
-      "3fb65d25",
-      "xen-hypervisor-flaws-enable-vm-memory-theft-3caf5f"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-automatically-blocks-malicious-noti-4f1e8858",
-    "title": "Microsoft Edge Automatically Blocks Malicious Notification Scams",
-    "summary": "Microsoft Edge now automatically revokes notification permissions for websites that redirect users to detected scam pages delivering fake virus alerts. The feature integrates Microsoft Defender SmartScreen and scareware blocker detections directly into browser permissions to disrupt persistent social engineering tactics. Administrators and users receive this automated protection in recent Edge updates to minimize exposure to malicious scareware campaigns.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-edge/",
-    "publishedAt": "2026-11-04T11:38:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-automatically-blocks-malicious-noti",
-      "article-4f1e8858",
-      "4f1e8858",
-      "microsoft-edge-automatically-blocks-malicious-noti-5e400a",
-      "microsoft-edge-automatically-blocks-malicious-notification-s"
     ]
   }
 ];

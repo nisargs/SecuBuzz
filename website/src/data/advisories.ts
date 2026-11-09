@@ -2,6 +2,81 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-102895",
+    "slug": "cve-2026-102895",
+    "vendor": "GPUStack",
+    "product": "GPUStack",
+    "name": "GPUStack Improper Authentication Vulnerability",
+    "dateAdded": "2026-11-09",
+    "dueDate": "2026-11-12",
+    "severity": "High",
+    "cwe": "CWE-287, CWE-290, CWE-346",
+    "ransomware": false,
+    "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-102895"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-123158",
+    "slug": "cve-2026-123158",
+    "vendor": "OpenBSD",
+    "product": "OpenSSH",
+    "name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+    "dateAdded": "2026-11-09",
+    "dueDate": "2026-11-12",
+    "severity": "High",
+    "cwe": "CWE-394",
+    "ransomware": false,
+    "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-123158"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-116779",
+    "slug": "cve-2026-116779",
+    "vendor": "SignalWire",
+    "product": "FreeSwitch",
+    "name": "SignalWire FreeSwitch Code Injection Vulnerability",
+    "dateAdded": "2026-11-09",
+    "dueDate": "2026-11-12",
+    "severity": "High",
+    "cwe": "CWE-77, CWE-78, CWE-749",
+    "ransomware": false,
+    "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-116779"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
     "cve": "CVE-2026-19868",
     "slug": "cve-2026-19868",
     "vendor": "SonicWall",
