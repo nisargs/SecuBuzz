@@ -30,6 +30,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "msp-customers-question-attack-detection-capabiliti-5cb4b425",
+    "title": "MSP Customers Question Attack Detection Capabilities",
+    "summary": "A Barracuda Networks survey shows companies outsourcing cybersecurity to MSPs doubt their attack detection. The report notes 66% of organizations already outsource security services, 29% are evaluating MSPs, yet recovery remains weak and AI risk management is a priority. Findings urge MSPs to improve detection, clarify risk implications, and strengthen recovery to meet client expectations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/barracuda-msp-cybersecurity-services-expectations-report/",
+    "publishedAt": "2026-11-09T06:00:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "msp-customers-question-attack-detection-capabiliti",
+      "article-5cb4b425",
+      "5cb4b425",
+      "msp-customers-question-attack-detection-capabiliti-49b80b",
+      "msp-customers-question-attack-detection-capabilities"
+    ]
+  },
+  {
     "slug": "red-hat-issues-ruby-4-0-security-update-for-rhel-9-f0322583",
     "title": "Red Hat Issues Ruby 4.0 Security Update for RHEL 9",
     "summary": "Red Hat released a Ruby 4.0 module update for RHEL 9, fixing multiple security bugs that could allow local privilege escalation. The update addresses vulnerabilities with a moderate CVSS base score, though no CVE IDs are listed in the advisory. Security teams should apply the ruby:4.0 update promptly to mitigate the identified weaknesses and maintain system integrity.",
@@ -118,6 +137,25 @@ export const news: NewsBrief[] = [
       "article-1346f272",
       "1346f272",
       "red-hat-issues-squid-4-security-update-37d7e0"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-96080-important-webkit2gtk3-security-upd-655ad073",
+    "title": "RHSA-2026:96080: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96080",
+    "publishedAt": "2026-11-09T03:39:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-96080-important-webkit2gtk3-security-upd",
+      "article-655ad073",
+      "655ad073",
+      "rhsa-2026-96080-important-webkit2gtk3-security-upd-37d7e0",
+      "rhsa-2026-96080-important-webkit2gtk3-security-update"
     ]
   },
   {
@@ -211,6 +249,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-96091-important-kpatch-patch-5-14-0-570-948df1c1",
+    "title": "RHSA-2026:96091: Important: kpatch-patch-5_14_0-570_116_1, kpatch-patch-5_14_0-570_135_1, kpatch-patch-5_14_0-570_39_1, kpatch-patch-5_14_0-570_66_1, and kpatch-patch-5_14_0-570_94_1 security update",
+    "summary": "An update for multiple packages is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96091",
+    "publishedAt": "2026-11-09T02:56:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-96091-important-kpatch-patch-5-14-0-570",
+      "article-948df1c1",
+      "948df1c1",
+      "rhsa-2026-96091-important-kpatch-patch-5-14-0-570-37d7df",
+      "rhsa-2026-96091-important-kpatch-patch-5-14-0-570-116-1-kpat"
+    ]
+  },
+  {
+    "slug": "rsyslog-update-addresses-security-issues-f1878c83",
+    "title": "Rsyslog Update Addresses Security Issues",
+    "summary": "Red Hat released a security update for rsyslog on Red Hat Enterprise Linux 7 Extended Lifecycle Support. The update is rated Important by Red Hat Product Security, with CVSS base scores for each vulnerability listed in the references. Systems should install the rsyslog update to remediate the identified vulnerabilities and preserve logging integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96085",
+    "publishedAt": "2026-11-09T02:52:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rsyslog-update-addresses-security-issues",
+      "article-f1878c83",
+      "f1878c83",
+      "rsyslog-update-addresses-security-issues-37d7e0"
+    ]
+  },
+  {
     "slug": "red-hat-issues-important-gdb-security-update-508c2645",
     "title": "Red Hat Issues Important gdb Security Update",
     "summary": "Red Hat released a gdb security update on RHEL 10.0 Extended Update Support, fixing vulnerabilities that could enable arbitrary code execution via malformed debugging data. The flaws, rated Important by Red Hat Product Security, carry high CVSS scores but have no known active exploitation. Apply the gdb update immediately and verify the package version to ensure the patches are installed.",
@@ -226,6 +301,24 @@ export const news: NewsBrief[] = [
       "article-508c2645",
       "508c2645",
       "red-hat-issues-important-gdb-security-update-37d7df"
+    ]
+  },
+  {
+    "slug": "openshift-4-18-60-releases-security-update-5fa5fab5",
+    "title": "OpenShift 4.18.60 Releases Security Update",
+    "summary": "Red Hat released OpenShift Container Platform 4.18.60, which includes a security update addressing multiple bugs and adding enhancements. The update is rated Important by Red Hat Product Security, and CVSS base scores for each vulnerability are listed in the references. Customers should apply the 4.18.60 update to mitigate the identified vulnerabilities and maintain platform stability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95103",
+    "publishedAt": "2026-11-09T02:50:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openshift-4-18-60-releases-security-update",
+      "article-5fa5fab5",
+      "5fa5fab5",
+      "openshift-4-18-60-releases-security-update-37d851"
     ]
   },
   {
@@ -9498,99 +9591,6 @@ export const news: NewsBrief[] = [
       "article-9e9cd3ff",
       "9e9cd3ff",
       "china-s-ai-bubble-burst-tools-may-be-unstable-bd567a"
-    ]
-  },
-  {
-    "slug": "germany-seizes-crime-as-a-service-fraud-platform-86b772dd",
-    "title": "Germany Seizes Crime‑as‑a‑Service Fraud Platform",
-    "summary": "German police, in a multinational operation, dismantled a crime‑as‑a‑service outfit that provided fraudulent trading platforms to investment scammers. The investigation uncovered a network that enabled scammers to create and host deceptive brokerage sites, facilitating large‑scale financial fraud. Authorities seized the infrastructure and are prosecuting the operators, underscoring the threat posed by such service‑based fraud ecosystems.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
-    "publishedAt": "2026-11-03T21:57:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "germany-seizes-crime-as-a-service-fraud-platform",
-      "article-86b772dd",
-      "86b772dd",
-      "germany-seizes-crime-as-a-service-fraud-platform-25598b"
-    ]
-  },
-  {
-    "slug": "cve-2026-119084-amazon-redshift-jdbc-driver-rce-vi-174b5bcc",
-    "title": "CVE-2026-119084: Amazon Redshift JDBC Driver RCE via Class Loading",
-    "summary": "CVE-2026-119084 allows remote code execution in Amazon Redshift JDBC Driver versions prior to 2.3.0 when parsing JDBC URLs or AWS credential profiles. The flaw lets an attacker load and run arbitrary classes, bypassing authentication and compromising the host. Amazon released driver 2.3.0 and later, which removes the unsafe loading path; teams should upgrade or apply the patch.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/",
-    "publishedAt": "2026-11-03T21:32:29.000Z",
-    "cves": [
-      "CVE-2026-119084"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-119084-amazon-redshift-jdbc-driver-rce-vi",
-      "article-174b5bcc",
-      "174b5bcc",
-      "cve-2026-119084-amazon-redshift-jdbc-driver-rce-vi-730365",
-      "cve-2026-119084-amazon-redshift-jdbc-driver-rce-via-class-lo"
-    ]
-  },
-  {
-    "slug": "workos-breach-via-artex-ai-exposes-customer-data-c386cd67",
-    "title": "WorkOS Breach via ARTEX AI Exposes Customer Data",
-    "summary": "WorkOS reported an attacker used the ARTEX AI module to breach its sales app and access business contact records and customer communications. The breach exploited a privilege‑escalation flaw in the AI integration, granting unauthorized read access to sensitive data without authentication. WorkOS applied a patch limiting AI module permissions and advises customers to review access controls and monitor activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
-    "publishedAt": "2026-11-03T21:28:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "workos-breach-via-artex-ai-exposes-customer-data",
-      "article-c386cd67",
-      "c386cd67",
-      "workos-breach-via-artex-ai-exposes-customer-data-70fa52"
-    ]
-  },
-  {
-    "slug": "apple-issues-testflight-security-update-df7722d8",
-    "title": "Apple Issues TestFlight Security Update",
-    "summary": "Apple has issued a TestFlight update through its official security updates channel. The accompanying advisory provides no technical details regarding addressed vulnerabilities or exploit vectors, only referencing release notes. Organizations using TestFlight should immediately review the release notes and apply the update to ensure they receive any potential security improvements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026h",
-    "publishedAt": "2026-11-03T21:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-issues-testflight-security-update",
-      "article-df7722d8",
-      "df7722d8",
-      "apple-issues-testflight-security-update-66bdb2"
-    ]
-  },
-  {
-    "slug": "gorbag-apt-self-deleting-malware-detection-guide-217b96d7",
-    "title": "Gorbag APT Self‑Deleting Malware Detection Guide",
-    "summary": "Gorbag APT has deployed self‑deleting malware delivered via spearphishing campaigns targeting corporate email users. The malware erases its own code after execution, evading traditional signature‑based detection and allowing attackers to maintain persistence without leaving forensic footprints. Security teams should monitor for anomalous email attachments, enable advanced threat protection, and apply the latest email gateway updates to block known Gorbag indicators.",
-    "category": "Nation State",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council",
-    "publishedAt": "2026-11-03T20:50:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gorbag-apt-self-deleting-malware-detection-guide",
-      "article-217b96d7",
-      "217b96d7",
-      "gorbag-apt-self-deleting-malware-detection-guide-51f68e"
     ]
   }
 ];
