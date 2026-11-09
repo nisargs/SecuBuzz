@@ -16,6 +16,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/veeam-warns-critical-linux-kernel-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/veeam-warns-critical-linux-kernel-flaw/",
+    "title": "Veeam Issues Critical Linux Kernel Flaw Warning",
+    "headline": "Veeam Issues Critical Linux Kernel Flaw Warning",
+    "summary": "Veeam disclosed a critical Linux kernel use‑after‑free flaw (CVE‑2026‑98432) that can trigger denial‑of‑service or memory corruption in backup appliances during TCP/IPv4 connection handling. Scored CVSS 9.8, the flaw lets unauthenticated attackers crash Veeam backup systems, potentially halting data protection. Veeam issued a patch on November 6 and advises applying the update to secure affected environments.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-09T07:48:15.000Z",
+    "ingestedAt": "2026-11-09T09:43:16.025Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/veeam-warns-critical-linux-kernel-flaw/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
     "sourceUrl": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
     "title": "OpenAI Engineer Pleads Not Guilty to Covert Device",
@@ -8344,22 +8360,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://isc.sans.edu/diary/rss/33486",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
-    "title": "69GB Philippine Government Data Exfiltrated",
-    "headline": "69GB Philippine Government Data Exfiltrated",
-    "summary": "An unknown operator exfiltrated 69GB of SQL Server backups from the Philippine Overseas Employment Administration in under 30 minutes, confirming a data breach. The breach likely exploited misconfigured database permissions, enabling unauthorized access to sensitive migrant worker records. The agency has not released a patch; security teams should enforce least‑privilege access, audit logs, and monitor for anomalous data transfers.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-04T02:00:00.000Z",
-    "ingestedAt": "2026-11-04T02:43:09.569Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
     "additionalSources": []
   }
 ]

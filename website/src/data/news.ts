@@ -29,6 +29,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "veeam-issues-critical-linux-kernel-flaw-warning-5fbd9947",
+    "title": "Veeam Issues Critical Linux Kernel Flaw Warning",
+    "summary": "Veeam disclosed a critical Linux kernel use‑after‑free flaw (CVE‑2026‑98432) that can trigger denial‑of‑service or memory corruption in backup appliances during TCP/IPv4 connection handling. Scored CVSS 9.8, the flaw lets unauthenticated attackers crash Veeam backup systems, potentially halting data protection. Veeam issued a patch on November 6 and advises applying the update to secure affected environments.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/veeam-warns-critical-linux-kernel-flaw/",
+    "publishedAt": "2026-11-09T07:48:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "veeam-issues-critical-linux-kernel-flaw-warning",
+      "article-5fbd9947",
+      "5fbd9947",
+      "veeam-issues-critical-linux-kernel-flaw-warning-41c3d2"
+    ]
+  },
+  {
     "slug": "openai-engineer-pleads-not-guilty-to-covert-device-4f5b9fb1",
     "title": "OpenAI Engineer Pleads Not Guilty to Covert Device",
     "summary": "Former OpenAI engineer Abdulrahman Alfozan was arrested for planting a covert audio recorder in an executive meeting room at the company’s San Francisco office. He pleaded not guilty in federal court, with a hearing scheduled for November 17, 2026, after the device was found during a security sweep. OpenAI has tightened physical security measures to prevent future covert device installations.",
@@ -9545,24 +9563,6 @@ export const news: NewsBrief[] = [
       "article-93db1eb4",
       "93db1eb4",
       "isc-stormcast-podcast-november-4-2026-57dd7e"
-    ]
-  },
-  {
-    "slug": "69gb-philippine-government-data-exfiltrated-35c7c0ec",
-    "title": "69GB Philippine Government Data Exfiltrated",
-    "summary": "An unknown operator exfiltrated 69GB of SQL Server backups from the Philippine Overseas Employment Administration in under 30 minutes, confirming a data breach. The breach likely exploited misconfigured database permissions, enabling unauthorized access to sensitive migrant worker records. The agency has not released a patch; security teams should enforce least‑privilege access, audit logs, and monitor for anomalous data transfers.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
-    "publishedAt": "2026-11-04T02:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "69gb-philippine-government-data-exfiltrated",
-      "article-35c7c0ec",
-      "35c7c0ec",
-      "69gb-philippine-government-data-exfiltrated-1b6ffb"
     ]
   }
 ];
