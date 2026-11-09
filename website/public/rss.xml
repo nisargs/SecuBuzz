@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 02:44:40 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 03:44:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases gdb Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-gdb-security-update-42feb647</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-gdb-security-update-42feb647</guid>
+      <description><![CDATA[Red Hat released a gdb security update for RHEL 9.6 Extended Update Support, fixing multiple bugs. The patch addresses several gdb flaws with CVSS scores listed in CVE references, potentially enabling local privilege escalation or denial of service. Red Hat advises applying the update immediately; no workarounds are required for security.]]></description>
+      <pubDate>Mon, 09 Nov 2026 03:14:48 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96097">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues qt5-qtbase Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-f3c685d6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-f3c685d6</guid>
+      <description><![CDATA[Red Hat released a security update for qt5-qtbase on RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service, addressing multiple vulnerabilities. The update mitigates several Qt base bugs with CVSS scores provided in CVE references, which could allow local privilege escalation or denial of service. Red Hat recommends applying the qt5-qtbase update immediately; no additional workarounds are needed.]]></description>
+      <pubDate>Mon, 09 Nov 2026 03:10:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96089">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>NVIDIA Investigates Suspected Chinese Spy Operation</title>
+      <link>https://secubuzz.com/news/nvidia-investigates-suspected-chinese-spy-operatio-cf43b6f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nvidia-investigates-suspected-chinese-spy-operatio-cf43b6f8</guid>
+      <description><![CDATA[NVIDIA opened an independent investigation into reports that a foreign intelligence operation targeted CEO Jensen Huang. The review will examine the alleged activity and any potential security impact, though the board states no evidence of company secrets or national security compromise. Security teams should monitor for related phishing or credential theft attempts and ensure multi-factor authentication for executive accounts.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:36:57 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/nvidia-investigates-chinese-spy-operation/">Cyber Security News</source>
+      <category>Nation State</category>
+    </item>
     <item>
       <title>Red Hat Releases Ruby Update for RHEL 9.8</title>
       <link>https://secubuzz.com/news/red-hat-releases-ruby-update-for-rhel-9-8-f72945eb</link>
@@ -26,6 +53,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>React Server Components RCE Flaw Exposes Remote Code Execution</title>
+      <link>https://secubuzz.com/news/react-server-components-rce-flaw-exposes-remote-co-5ca6c37b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/react-server-components-rce-flaw-exposes-remote-co-5ca6c37b</guid>
+      <description><![CDATA[A critical flaw in React Server Components allows unauthenticated remote code execution across react-server-dom-webpack, react-server-dom-parcel, and react-server-dom-turbopack. The vulnerability, tracked as GHSA-xqc2-xf4c-x3h3, carries a CVSS v4 score of 9.5, indicating a severe exploitation risk. React recommends immediate updates to affected applications; no workaround is available, and security teams should apply patches promptly.]]></description>
+      <pubDate>Mon, 09 Nov 2026 02:13:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/react-server-components-vulnerability-patch/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>ISC Stormcast Podcast Released November 9, 2026</title>
       <link>https://secubuzz.com/news/isc-stormcast-podcast-released-november-9-2026-e2397a8e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-podcast-released-november-9-2026-e2397a8e</guid>
@@ -33,6 +69,24 @@
       <pubDate>Mon, 09 Nov 2026 02:05:10 GMT</pubDate>
       <source url="https://isc.sans.edu/diary/rss/33500">SANS Internet Storm Center</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Python‑jwt Update Addresses Security Vulnerabilities</title>
+      <link>https://secubuzz.com/news/python-jwt-update-addresses-security-vulnerabiliti-a25e993d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/python-jwt-update-addresses-security-vulnerabiliti-a25e993d</guid>
+      <description><![CDATA[Red Hat released a security update for python‑jwt on RHEL 7 ELS, addressing multiple vulnerabilities. The update fixes flaws that could allow code execution or privilege escalation, with CVSS base scores listed in the CVE references, rated Important by Red Hat Product Security. Apply the python‑jwt update immediately to secure RHEL 7 ELS systems.]]></description>
+      <pubDate>Mon, 09 Nov 2026 01:58:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:96084">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenShift 4.16.75 Releases Security Update</title>
+      <link>https://secubuzz.com/news/openshift-4-16-75-releases-security-update-a515e4d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openshift-4-16-75-releases-security-update-a515e4d4</guid>
+      <description><![CDATA[Red Hat released OpenShift Container Platform 4.16.75, fixing bugs and adding enhancements, including a security update. The update mitigates vulnerabilities that could enable unauthorized access or privilege escalation, with CVSS base scores in the CVE references, rated Important by Red Hat Product Security. Apply the 4.16.75 release promptly to obtain the latest patches and mitigations.]]></description>
+      <pubDate>Mon, 09 Nov 2026 01:58:04 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95229">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Releases Resteasy Security Update</title>
@@ -401,60 +455,6 @@
       <description><![CDATA[A malicious Ruby gem, a Shai‑Hulud descendant, installs during gem installation and steals user credentials. The worm poisons AI coding tools and can wipe files when a stolen GitHub token is revoked, but no public exploit or CVE is disclosed. Security teams should audit gem sources, remove the malicious package, and enforce strict dependency verification to prevent credential theft.]]></description>
       <pubDate>Fri, 06 Nov 2026 17:11:11 GMT</pubDate>
       <source url="https://socket.dev/blog/shai-hulud-descendant-malicious-ruby-gem">Socket.dev</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>QNAP Warns of Plex2Shell Attacks on NAS Devices</title>
-      <link>https://secubuzz.com/news/qnap-warns-of-plex2shell-attacks-on-nas-devices-b87963a1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qnap-warns-of-plex2shell-attacks-on-nas-devices-b87963a1</guid>
-      <description><![CDATA[QNAP reports hackers breaching NAS devices by exploiting the Plex2Shell vulnerability chain in Plex Media Server. The flaw allows unauthenticated attackers to execute arbitrary commands through crafted media files, potentially compromising the underlying operating system. Users must update Plex Media Server to the latest QNAP App Center release and apply any vendor patches to mitigate the risk.]]></description>
-      <pubDate>Fri, 06 Nov 2026 17:04:23 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Vercel Deploys Device‑Bound Sessions to Stop Cookie Theft</title>
-      <link>https://secubuzz.com/news/vercel-deploys-device-bound-sessions-to-stop-cooki-7637fdf5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vercel-deploys-device-bound-sessions-to-stop-cooki-7637fdf5</guid>
-      <description><![CDATA[Vercel introduced device‑bound session enforcement to mitigate stolen session cookie attacks on its platform. The mechanism binds session tokens to device fingerprints, preventing reuse of captured cookies across different hardware or browsers. Additionally, Vercel released an AI‑driven security review pipeline in public beta to proactively identify potential comprehensive session‑related vulnerabilities.]]></description>
-      <pubDate>Fri, 06 Nov 2026 16:55:20 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/vercel-rolls-out-new-protection-against-stolen-session">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FBI agent pleads guilty to stealing $2.4 million in crypto from nation-state hackers</title>
-      <link>https://secubuzz.com/news/fbi-agent-pleads-guilty-to-stealing-2-4-million-in-5a5ff5ad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-agent-pleads-guilty-to-stealing-2-4-million-in-5a5ff5ad</guid>
-      <description><![CDATA[Patrick Steven Yaroch, 37, is facing up to 20 years in prison on wire fraud and money laundering charges after admitting to using his position on an FBI investigative squad to steal more than $2.4 million in cryptocurrency to cover his debts.]]></description>
-      <pubDate>Fri, 06 Nov 2026 16:53:00 GMT</pubDate>
-      <source url="https://therecord.media/fbi-agent-pleads-guilty-to-stealing-from-nation-state-hackers">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time</title>
-      <link>https://secubuzz.com/news/installing-the-fix-for-an-exploited-wordpress-flaw-5c970c1e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/installing-the-fix-for-an-exploited-wordpress-flaw-5c970c1e</guid>
-      <description><![CDATA[Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The vulnerability is tracked as CVE-2024-27834.]]></description>
-      <pubDate>Fri, 06 Nov 2026 16:08:38 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Industrial Control Systems Harden Refrigeration Monitoring</title>
-      <link>https://secubuzz.com/news/industrial-control-systems-harden-refrigeration-mo-04118118</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/industrial-control-systems-harden-refrigeration-mo-04118118</guid>
-      <description><![CDATA[Industrial control systems used for refrigeration monitoring face new attack vectors that could disrupt temperature regulation and safety protocols. The advisory recommends hardening network segmentation, updating firmware, and implementing strict authentication to mitigate unauthorized access and command injection risks. Security teams should deploy the latest vendor patches, monitor anomalous traffic, and conduct regular penetration testing to validate controls.]]></description>
-      <pubDate>Fri, 06 Nov 2026 16:00:22 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/us-government-partners-urge-hardening-industrial-refrig">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95887: Important: Red Hat JBoss Enterprise Application Platform 8.1.9 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95887-important-red-hat-jboss-enterprise-1fcf7082</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95887-important-red-hat-jboss-enterprise-1fcf7082</guid>
-      <description><![CDATA[A security update is now available for Red Hat JBoss Enterprise Application Platform 8.1. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Fri, 06 Nov 2026 15:31:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95887">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

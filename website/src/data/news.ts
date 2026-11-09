@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-gdb-security-update-42feb647",
+    "title": "Red Hat Releases gdb Security Update",
+    "summary": "Red Hat released a gdb security update for RHEL 9.6 Extended Update Support, fixing multiple bugs. The patch addresses several gdb flaws with CVSS scores listed in CVE references, potentially enabling local privilege escalation or denial of service. Red Hat advises applying the update immediately; no workarounds are required for security.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96097",
+    "publishedAt": "2026-11-09T03:14:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-gdb-security-update",
+      "article-42feb647",
+      "42feb647",
+      "red-hat-releases-gdb-security-update-37d7df"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-qt5-qtbase-security-update-f3c685d6",
+    "title": "Red Hat Issues qt5-qtbase Security Update",
+    "summary": "Red Hat released a security update for qt5-qtbase on RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service, addressing multiple vulnerabilities. The update mitigates several Qt base bugs with CVSS scores provided in CVE references, which could allow local privilege escalation or denial of service. Red Hat recommends applying the qt5-qtbase update immediately; no additional workarounds are needed.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96089",
+    "publishedAt": "2026-11-09T03:10:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-qt5-qtbase-security-update",
+      "article-f3c685d6",
+      "f3c685d6",
+      "red-hat-issues-qt5-qtbase-security-update-37d7e0"
+    ]
+  },
+  {
+    "slug": "nvidia-investigates-suspected-chinese-spy-operatio-cf43b6f8",
+    "title": "NVIDIA Investigates Suspected Chinese Spy Operation",
+    "summary": "NVIDIA opened an independent investigation into reports that a foreign intelligence operation targeted CEO Jensen Huang. The review will examine the alleged activity and any potential security impact, though the board states no evidence of company secrets or national security compromise. Security teams should monitor for related phishing or credential theft attempts and ensure multi-factor authentication for executive accounts.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/nvidia-investigates-chinese-spy-operation/",
+    "publishedAt": "2026-11-09T02:36:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nvidia-investigates-suspected-chinese-spy-operatio",
+      "article-cf43b6f8",
+      "cf43b6f8",
+      "nvidia-investigates-suspected-chinese-spy-operatio-7cf245",
+      "nvidia-investigates-suspected-chinese-spy-operation"
+    ]
+  },
+  {
     "slug": "red-hat-releases-ruby-update-for-rhel-9-8-f72945eb",
     "title": "Red Hat Releases Ruby Update for RHEL 9.8",
     "summary": "A moderate security update addresses multiple Ruby vulnerabilities affecting Red Hat Enterprise Linux 9.8 Extended Update Support. The update mitigates unspecified code execution risks identified in Ruby's core libraries, with CVSS scores available via referenced CVE links. Red Hat recommends applying the update immediately; no workarounds are required to ensure system integrity.",
@@ -47,6 +102,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "react-server-components-rce-flaw-exposes-remote-co-5ca6c37b",
+    "title": "React Server Components RCE Flaw Exposes Remote Code Execution",
+    "summary": "A critical flaw in React Server Components allows unauthenticated remote code execution across react-server-dom-webpack, react-server-dom-parcel, and react-server-dom-turbopack. The vulnerability, tracked as GHSA-xqc2-xf4c-x3h3, carries a CVSS v4 score of 9.5, indicating a severe exploitation risk. React recommends immediate updates to affected applications; no workaround is available, and security teams should apply patches promptly.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/react-server-components-vulnerability-patch/",
+    "publishedAt": "2026-11-09T02:13:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "react-server-components-rce-flaw-exposes-remote-co",
+      "article-5ca6c37b",
+      "5ca6c37b",
+      "react-server-components-rce-flaw-exposes-remote-co-abd572",
+      "react-server-components-rce-flaw-exposes-remote-code-executi"
+    ]
+  },
+  {
     "slug": "isc-stormcast-podcast-released-november-9-2026-e2397a8e",
     "title": "ISC Stormcast Podcast Released November 9, 2026",
     "summary": "The SANS Internet Storm Center released the ISC Stormcast podcast for Monday, November 9, 2026. The episode covers current threat landscape trends, emerging attack vectors, and defensive best practices, featuring expert commentary. Listeners can access the recording via the ISC website, with Creative Commons Attribution-Noncommercial 3.0 license permitting sharing and adaptation.",
@@ -62,6 +136,43 @@ export const news: NewsBrief[] = [
       "article-e2397a8e",
       "e2397a8e",
       "isc-stormcast-podcast-released-november-9-2026-57dd81"
+    ]
+  },
+  {
+    "slug": "python-jwt-update-addresses-security-vulnerabiliti-a25e993d",
+    "title": "Python‑jwt Update Addresses Security Vulnerabilities",
+    "summary": "Red Hat released a security update for python‑jwt on RHEL 7 ELS, addressing multiple vulnerabilities. The update fixes flaws that could allow code execution or privilege escalation, with CVSS base scores listed in the CVE references, rated Important by Red Hat Product Security. Apply the python‑jwt update immediately to secure RHEL 7 ELS systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96084",
+    "publishedAt": "2026-11-09T01:58:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "python-jwt-update-addresses-security-vulnerabiliti",
+      "article-a25e993d",
+      "a25e993d",
+      "python-jwt-update-addresses-security-vulnerabiliti-37d7e0",
+      "python-jwt-update-addresses-security-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "openshift-4-16-75-releases-security-update-a515e4d4",
+    "title": "OpenShift 4.16.75 Releases Security Update",
+    "summary": "Red Hat released OpenShift Container Platform 4.16.75, fixing bugs and adding enhancements, including a security update. The update mitigates vulnerabilities that could enable unauthorized access or privilege escalation, with CVSS base scores in the CVE references, rated Important by Red Hat Product Security. Apply the 4.16.75 release promptly to obtain the latest patches and mitigations.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95229",
+    "publishedAt": "2026-11-09T01:58:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openshift-4-16-75-releases-security-update",
+      "article-a515e4d4",
+      "a515e4d4",
+      "openshift-4-16-75-releases-security-update-37d84d"
     ]
   },
   {
@@ -3658,24 +3769,6 @@ export const news: NewsBrief[] = [
       "article-39a79ff3",
       "39a79ff3",
       "red-hat-issues-kpatch-security-update-for-rhel-8-37d841"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-qt5-qtbase-security-update-cc55f839",
-    "title": "Red Hat Issues Qt5-Qtbase Security Update",
-    "summary": "Red Hat released an important security update for the qt5‑qtbase component in RHEL 9.4 Update Services for SAP Solutions. The update addresses multiple vulnerabilities identified by CVE references, each with a CVSS base score indicating moderate risk; no active exploitation was reported. Users should apply the update immediately to mitigate potential privilege escalation or denial‑of‑service risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95588",
-    "publishedAt": "2026-11-05T16:39:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-qt5-qtbase-security-update",
-      "article-cc55f839",
-      "cc55f839",
-      "red-hat-issues-qt5-qtbase-security-update-37d841"
     ]
   },
   {
@@ -9499,121 +9592,6 @@ export const news: NewsBrief[] = [
       "article-51916cf9",
       "51916cf9",
       "apple-warns-german-lawmakers-of-spyware-targeting-1f6330"
-    ]
-  },
-  {
-    "slug": "cve-2026-119922-babelfish-for-postgresql-privilege-6e897223",
-    "title": "CVE-2026-119922 - Babelfish for PostgreSQL Privilege Escalation",
-    "summary": "Bulletin ID: 2026-165-AWS Publication Date: 11/03/2026 10:00 AM PST Description: Improper access control in the Babelfish for PostgreSQL extension versions 1.2-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 allows remote authenticated users to elevate their privileges. We recommend you upgrade to Babelfish for PostgreSQL extension versions Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-165-aws/",
-    "publishedAt": "2026-11-03T18:26:54.000Z",
-    "cves": [
-      "CVE-2026-119922"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-119922-babelfish-for-postgresql-privilege",
-      "article-6e897223",
-      "6e897223",
-      "cve-2026-119922-babelfish-for-postgresql-privilege-7821ef",
-      "cve-2026-119922-babelfish-for-postgresql-privilege-escalatio"
-    ]
-  },
-  {
-    "slug": "red-hat-edge-manager-1-2-2-receives-security-updat-c8a4ee59",
-    "title": "Red Hat Edge Manager 1.2.2 Receives Security Update",
-    "summary": "Red Hat Edge Manager Version 1.2.2 receives a security update addressing unspecified vulnerabilities that could allow unauthorized access or privilege escalation. The update patches internal components, though specific root causes remain undisclosed, and is part of Red Hat's ongoing effort to secure edge computing environments. Users should apply the patch immediately to maintain system integrity and prevent potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94632",
-    "publishedAt": "2026-11-03T18:24:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-edge-manager-1-2-2-receives-security-updat",
-      "article-c8a4ee59",
-      "c8a4ee59",
-      "red-hat-edge-manager-1-2-2-receives-security-updat-37d8b2",
-      "red-hat-edge-manager-1-2-2-receives-security-update"
-    ]
-  },
-  {
-    "slug": "chainstack-breach-exposes-customer-data-and-passwo-5790daba",
-    "title": "Chainstack Breach Exposes Customer Data and Password Hashes",
-    "summary": "Chainstack, a blockchain infrastructure provider, suffered a breach that granted an unauthorized party access to parts of its production systems. The intrusion is linked to a large‑scale AI‑powered attack campaign, potentially allowing exfiltration of customer data and password hashes. Chainstack has disclosed the incident, is investigating, patching vulnerabilities, and notifying affected customers.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
-    "publishedAt": "2026-11-03T18:16:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chainstack-breach-exposes-customer-data-and-passwo",
-      "article-5790daba",
-      "5790daba",
-      "chainstack-breach-exposes-customer-data-and-passwo-1376aa",
-      "chainstack-breach-exposes-customer-data-and-password-hashes"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94629-important-dpdk-security-update-b0b12e73",
-    "title": "RHSA-2026:94629: Important: dpdk security update",
-    "summary": "An update for dpdk is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94629",
-    "publishedAt": "2026-11-03T18:13:22.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94629-important-dpdk-security-update",
-      "article-b0b12e73",
-      "b0b12e73",
-      "rhsa-2026-94629-important-dpdk-security-update-37d8b2"
-    ]
-  },
-  {
-    "slug": "apple-releases-xcode-27-3-beta-14509dfe",
-    "title": "Apple Releases Xcode 27.3 Beta",
-    "summary": "Apple released Xcode 27.3 beta (27C5020n) for developers, available through the Apple Developer portal. The update adds new features, bug fixes, SwiftUI enhancements, and Xcode Server integration, with no disclosed security flaws. Developers should download the beta from Apple’s official portal, review release notes, and test compatibility before deployment, avoiding use in production.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026g",
-    "publishedAt": "2026-11-03T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-xcode-27-3-beta",
-      "article-14509dfe",
-      "14509dfe",
-      "apple-releases-xcode-27-3-beta-66bdb2"
-    ]
-  },
-  {
-    "slug": "apple-issues-visionos-27-3-beta-update-16dfe139",
-    "title": "Apple Issues visionOS 27.3 Beta Update",
-    "summary": "Apple released visionOS 27.3 beta (24N5286r), updating the downloads view component. The beta introduces UI refinements, performance tweaks, and bug fixes for the downloads interface, improving user experience and stability. Beta testers can install the update via the Apple Beta Software Program and should report any regressions or issues to Apple for further refinement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11032026e",
-    "publishedAt": "2026-11-03T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-issues-visionos-27-3-beta-update",
-      "article-16dfe139",
-      "16dfe139",
-      "apple-issues-visionos-27-3-beta-update-66bdb2"
     ]
   }
 ];
