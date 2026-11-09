@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+    "title": "SonicWall SonicOS MFA Bypass Vulnerability Exploited",
+    "headline": "SonicWall SonicOS MFA Bypass Vulnerability Exploited",
+    "summary": "CISA has added the SonicWall 'SonicOS' MFA bypass flaw, CVE‑2026‑19868, to its Known Exploited Vulnerabilities catalog after reports of real‑world exploitation. The vulnerability, with a CVSS score of 7.1/7.5, allows attackers to bypass multi‑factor authentication and gain unauthorized access to SonicWall devices. SonicWall has released a patch; administrators should update firmware promptly to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-09T06:05:24.000Z",
+    "ingestedAt": "2026-11-09T06:43:11.848Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:96120",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96120",
     "title": "Red Hat Issues Ruby 4.0 Security Update for RHEL 9",
@@ -45,6 +61,38 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:96068",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:96092",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96092",
+    "title": "Red Hat Releases curl Security Update",
+    "headline": "Red Hat Releases curl Security Update",
+    "summary": "Red Hat has issued a 'curl' security update for Enterprise Linux 10, addressing critical vulnerabilities identified in the software. The update carries an Important security impact rating, and each vulnerability is linked to a CVE entry with a CVSS base score. Administrators should apply the RHSA‑2026:96092 update immediately to protect against the disclosed flaws.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-09T04:19:48.000Z",
+    "ingestedAt": "2026-11-09T06:43:11.848Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:96092",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:96078",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96078",
+    "title": "Red Hat Issues squid:4 Security Update",
+    "headline": "Red Hat Issues squid:4 Security Update",
+    "summary": "Red Hat has released a security update for the 'squid:4' module on Enterprise Linux 8, addressing identified vulnerabilities that could allow remote code execution. The update is rated Important, and each vulnerability is referenced by a CVE with an associated CVSS score. Administrators should apply the RHSA‑2026:96078 update promptly to mitigate the risks.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-09T03:40:01.000Z",
+    "ingestedAt": "2026-11-09T06:43:11.848Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:96078",
     "additionalSources": []
   },
   {
@@ -142,6 +190,40 @@
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:96098",
     "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:96096",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96096",
+    "title": "RHSA-2026:96096: Important: gdb security update",
+    "headline": "RHSA-2026:96096: Important: gdb security update",
+    "summary": "An update for gdb is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-09T02:49:48.000Z",
+    "ingestedAt": "2026-11-09T06:43:49.394Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:96093",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96093",
+    "title": "RHSA-2026:96093: Important: kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 security update",
+    "headline": "RHSA-2026:96093: Important: kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 security update",
+    "summary": "An update for multiple packages is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-09T02:49:48.000Z",
+    "ingestedAt": "2026-11-09T06:43:49.395Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://cybersecuritynews.com/nvidia-investigates-chinese-spy-operation/",
@@ -338,9 +420,9 @@
   {
     "id": "https://isc.sans.edu/diary/rss/33498",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33498",
-    "title": "OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released",
-    "headline": "OpenSSH SSHole Authentication Bypass Vulnerability (CVE-2026-123158) Patches Released",
-    "summary": "OpenSSH's SSHole authentication bypass (CVE-2026-123158) allows attackers to gain root on Alpine Linux by submitting oversized passwords. The flaw exploits improper length validation in the password handling routine, enabling unauthenticated remote code execution with a CVSS score of 9.8. Administrators should apply the vendor‑issued patch immediately or upgrade to the latest release to mitigate the vulnerability.",
+    "title": "OpenSSH SSHole Authentication Bypass (CVE-2026-123158) Enables Remote Code Execution",
+    "headline": "OpenSSH SSHole Authentication Bypass (CVE-2026-123158) Enables Remote Code Execution",
+    "summary": "OpenSSH servers are vulnerable to the SSHole authentication bypass (CVE-2026-123158), letting attackers submit oversized passwords for unauthenticated remote code execution. The flaw exploits improper length validation in password handling, enabling privilege escalation and root access on affected Linux systems. Administrators must apply the vendor‑issued patch or upgrade to the latest OpenSSH release immediately to mitigate the vulnerability.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "SANS Internet Storm Center",
@@ -353,6 +435,10 @@
       {
         "source": "CyberNews AI",
         "sourceUrl": "https://cybernewsai.com/blog/cve-2026-123158-openssh-sshole-auth-bypass-defense"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/openssh-sshole-flaw-exploited/"
       }
     ],
     "cves": [
@@ -8277,86 +8363,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/gorbag-apt-group-hits-ukrainian-courts-and-city-council",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
-    "title": "Chrome 157 Update Contains Critical Dawn Buffer Overflow",
-    "headline": "Chrome 157 Update Contains Critical Dawn Buffer Overflow",
-    "summary": "Google Chrome promoted version 157 to the stable channel, delivering 213 security fixes, including a Dawn buffer overflow. CVE-2026-121156 allows attackers to execute arbitrary code via malformed graphics data, enabling remote code execution with high privilege. Users should install the update immediately; the patch is distributed via the standard channel, with no workarounds needed.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-11-03T20:38:18.791Z",
-    "ingestedAt": "2026-11-03T21:08:02.012Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop.html",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:94749",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94749",
-    "title": "Red Hat Releases Python-dns Security Update",
-    "headline": "Red Hat Releases Python-dns Security Update",
-    "summary": "Red Hat released a security update for python‑dns on RHEL 8, addressing CVE‑2026‑43871. The flaw, rated Important, allows improper input handling that could lead to arbitrary code execution or denial of service, with a CVSS base score in the 7‑8 range. Red Hat has published the patch; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-03T20:32:39.000Z",
-    "ingestedAt": "2026-11-03T20:43:53.592Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:94749",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
-    "title": "Binance Breach via Fake Job Interview",
-    "headline": "Binance Breach via Fake Job Interview",
-    "summary": "Binance disclosed that North Korean hackers used a fake job interview to trick an employee into installing malware, compromising wallet infrastructure. The malware enabled credential theft and privileged access, allowing attackers to siphon roughly $6.34 billion in digital assets. Binance has secured its systems and is investigating; teams should review vetting procedures and monitor wallet activity.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-03T20:05:50.000Z",
-    "ingestedAt": "2026-11-03T20:43:53.592Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/harvard-university-data-breach-exposed-info-of-851-000",
-    "sourceUrl": "https://cybernewsai.com/blog/harvard-university-data-breach-exposed-info-of-851-000",
-    "title": "Harvard Exposes 851,000 Emails in Breach",
-    "headline": "Harvard Exposes 851,000 Emails in Breach",
-    "summary": "A breach at Harvard exposed 851,000 email addresses, compromising user credentials and potentially enabling phishing attacks. The incident involved unauthorized access to the university’s audit database, revealing sensitive contact information and internal email addresses. Security teams should review root‑cause telemetry, deploy detection rules, and apply patches immediately to prevent further exposure and mitigate credential theft.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-11-03T19:50:00.000Z",
-    "ingestedAt": "2026-11-03T19:43:41.094Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybernewsai.com/blog/harvard-university-data-breach-exposed-info-of-851-000",
-    "additionalSources": []
-  },
-  {
-    "id": "https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes",
-    "sourceUrl": "https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes",
-    "title": "Google Removes X.CPE Botnet from Android TV Boxes",
-    "headline": "Google Removes X.CPE Botnet from Android TV Boxes",
-    "summary": "Google announced the dismantlement of the X.CPE botnet, which primarily infected Android TV set‑top boxes and other Android‑based IoT devices. The botnet leveraged compromised firmware updates to distribute malware, enabling attackers to harvest device credentials and exfiltrate data from connected services.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "The Record",
-    "publishedAt": "2026-11-03T19:48:00.000Z",
-    "ingestedAt": "2026-11-03T20:43:57.792Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes",
     "additionalSources": []
   }
 ]
