@@ -29,22 +29,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "france-blames-iran-for-supermarket-refrigeration-a-effbc67d",
-    "title": "France Blames Iran for Supermarket Refrigeration Attacks",
-    "summary": "French authorities attribute October cyberattacks that disabled refrigeration systems at more than 700 supermarkets to Iranian state-backed hackers. The attacks exploited vulnerabilities in the supermarkets' HVAC control software, causing food spoilage and igniting at least 15 fires, leading to economic loss. French cybersecurity agencies issued guidance to update firmware and strengthen network segmentation, while the EU coordinates a joint investigation.",
-    "category": "Breach",
-    "severity": "MEDIUM",
+    "slug": "france-attributes-fridge-attacks-to-iran-s-shahid-2c6af0de",
+    "title": "France Attributes Fridge Attacks to Iran's Shahid Kaveh",
+    "summary": "France attributes recent smart refrigerator cyberattacks, some causing fires, to Iran's Shahid Kaveh unit. The unit, linked to prior attacks on U.S. water utility controllers, likely exploited vulnerabilities in IoT firmware to gain remote access and trigger heating elements. French authorities advise affected manufacturers to apply vendor patches and monitor device logs for anomalous activity.",
+    "category": "Nation State",
+    "severity": "HIGH",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
     "publishedAt": "2026-11-09T18:32:42.000Z",
     "cves": [],
+    "additionalSources": [
+      {
+        "source": "The Record",
+        "sourceUrl": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks"
+      }
+    ],
+    "aliases": [
+      "france-attributes-fridge-attacks-to-iran-s-shahid",
+      "article-2c6af0de",
+      "2c6af0de",
+      "france-attributes-fridge-attacks-to-iran-s-shahid-5a8e91",
+      "france-attributes-fridge-attacks-to-iran-s-shahid-kaveh"
+    ]
+  },
+  {
+    "slug": "vanderbilt-warns-of-cyberattack-impacting-campus-d-8d4b82c6",
+    "title": "Vanderbilt Warns of Cyberattack Impacting Campus Devices",
+    "summary": "Vanderbilt University reported a cyberattack that may have impacted campus devices and systems. The attack's specifics remain undisclosed, but the university cautions that compromised credentials or malware could have accessed network resources. Security teams are advised to monitor for anomalous activity, enforce multi-factor authentication, and apply pending vendor patches promptly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert",
+    "publishedAt": "2026-11-09T18:30:00.000Z",
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "france-blames-iran-for-supermarket-refrigeration-a",
-      "article-effbc67d",
-      "effbc67d",
-      "france-blames-iran-for-supermarket-refrigeration-a-5a8e91",
-      "france-blames-iran-for-supermarket-refrigeration-attacks"
+      "vanderbilt-warns-of-cyberattack-impacting-campus-d",
+      "article-8d4b82c6",
+      "8d4b82c6",
+      "vanderbilt-warns-of-cyberattack-impacting-campus-d-594602",
+      "vanderbilt-warns-of-cyberattack-impacting-campus-devices"
     ]
   },
   {
@@ -9521,24 +9545,6 @@ export const news: NewsBrief[] = [
       "a018221d",
       "automation-needed-as-incidents-outpace-manual-resp-1449a4",
       "automation-needed-as-incidents-outpace-manual-response"
-    ]
-  },
-  {
-    "slug": "citrix-expands-ai-agent-governance-controls-d700f5d9",
-    "title": "Citrix Expands AI Agent Governance Controls",
-    "summary": "Citrix announced new capabilities across its SecurSpaces, SecurAccess and Platform Flex products to help organizations securely deploy AI agents and govern AI-powered work. The updates include expanded persona support in SecurSpaces, new AI governance features in SecurAccess, and a credit-based consumption model.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/citrix-ai-governance-capabilities/",
-    "publishedAt": "2026-11-04T14:13:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-expands-ai-agent-governance-controls",
-      "article-d700f5d9",
-      "d700f5d9",
-      "citrix-expands-ai-agent-governance-controls-63b21e"
     ]
   }
 ];

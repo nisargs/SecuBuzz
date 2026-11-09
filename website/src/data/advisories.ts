@@ -77,6 +77,110 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-63475",
+    "slug": "cve-2026-63475",
+    "vendor": "npm",
+    "product": "isomorphic-git",
+    "name": "isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS)",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "A malicious server can advertise circular symref= capabilities (e.g. a → b and b → a). isomorphic-git writes them to disk as loose symrefs, and GitRefManager.resolve() follows them with no depth limit and no cycle detection, so any later operation that resolves one of them (log, status, checkout, branch, …) loops forever — a persistent denial of service from a single clone.",
+    "requiredAction": "Upgrade isomorphic-git to version 1.38.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-96wc-2m84-2cj7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63475"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63395",
+    "slug": "cve-2026-63395",
+    "vendor": "npm",
+    "product": "isomorphic-git",
+    "name": "isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE)",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "git.checkout writes working-tree files through a directory symlink without checking the leading path, so a malicious repository can write outside the intended working directory. The defect is in isomorphic-git's checkout logic itself and is therefore independent of the fs provider. The impact depends on the configured filesystem; worst case is arbitrary file write on the host, e.g.",
+    "requiredAction": "Upgrade isomorphic-git to version 1.38.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9qw7-j9xw-fv9c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63395"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63471",
+    "slug": "cve-2026-63471",
+    "vendor": "Pip",
+    "product": "fastapi-code-generator",
+    "name": "fastapi-code-generator: Import-time RCE via route path -> unescaped @app.get('...') decorator",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "fastapi-code-generator (koxudaxi) emits the OpenAPI path into the generated main.py route decorator as a single-quoted string literal (@app.get('/u/<path>/x')) without escaping the '.",
+    "requiredAction": "Upgrade fastapi-code-generator to version 0.8.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p2mm-64f6-gmpp"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63471"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-63469",
+    "slug": "cve-2026-63469",
+    "vendor": "Pip",
+    "product": "fastapi-code-generator",
+    "name": "fastapi-code-generator: Import-time RCE via response status-code key -> unescaped @app.get(..., responses={...}) dict",
+    "dateAdded": "2026-11-09",
+    "dueDate": "",
+    "cvss": 9.3,
+    "severity": "Critical",
+    "cwe": "CWE-94",
+    "ransomware": false,
+    "description": "fastapi-code-generator (koxudaxi) emits an operation's extra responses into the route decorator's responses={...} dict, using each response's status-code key as a single-quoted string literal without escaping the '.",
+    "requiredAction": "Upgrade fastapi-code-generator to version 0.8.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6xmv-cjr5-w3q8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63469"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-63470",
     "slug": "cve-2026-63470",
     "vendor": "Pip",
@@ -1345,110 +1449,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118764"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118773",
-    "slug": "cve-2026-118773",
-    "vendor": "npm",
-    "product": "glob",
-    "name": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "In glob 13.0.6, an aborted async walk rejects or emits an error but continues recursively reading directories in the background. The root cause is that abort branches in src/walker.ts call cb() without returning. As a result, callers that rely on signal or AbortSignal.timeout() to bound glob traversal cost can still incur filesystem I/O and CPU work after the request has already been rejected.",
-    "requiredAction": "Upgrade glob to version 14.0.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118773"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-116672",
-    "slug": "cve-2026-116672",
-    "vendor": "Pip",
-    "product": "Authlib",
-    "name": "Authlib RFC 7592 examples omit registration-access-token client binding",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "RFC 7592 (OAuth 2.0 Dynamic Client Registration Management Protocol) lets a previously registered client read, update, or delete its own registration, authenticated by a registration_access_token issued specifically to that client at registration time.",
-    "requiredAction": "Upgrade Authlib to version 1.9.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-c73q-w75p-j82v"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116672"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119206",
-    "slug": "cve-2026-119206",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf has possible long runtimes when retrieving page labels",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large runtimes. This requires retrieving the page labels of a file. This has been fixed in pypdf==6.21.3. If you cannot upgrade yet, consider applying the changes from PR #4251.",
-    "requiredAction": "Upgrade pypdf to version 6.21.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-42gh-23hr-vphw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119206"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119207",
-    "slug": "cve-2026-119207",
-    "vendor": "Pip",
-    "product": "pypdf",
-    "name": "pypdf has possible large memory usage for exceptions in strict mode",
-    "dateAdded": "2026-10-30",
-    "dueDate": "",
-    "cvss": 7.1,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "An attacker who uses this vulnerability can craft a PDF which leads to large memory usage. This requires loading an invalid dictionary. This has been fixed in pypdf==6.21.3. If you cannot upgrade yet, consider applying the changes from PR #4265.",
-    "requiredAction": "Upgrade pypdf to version 6.21.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4vqv-7265-gm2w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119207"
       }
     ],
     "source": "GITHUB"
