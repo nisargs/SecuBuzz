@@ -11,6 +11,63 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-patch-tuesday-exceeds-1-000-vulnerabilit-1fd9f3cb",
+    "title": "Microsoft Patch Tuesday Exceeds 1,000 Vulnerabilities",
+    "summary": "Microsoft’s Patch Tuesday released 1,093 fixes, with the most attention on an exploited Outlook vulnerability. The update list exceeded 1,000 bugs for the second consecutive month, reflecting a high volume of security issues. Administrators should review the advisory and apply all relevant patches in a timely manner to maintain system integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/patch-tuesday-microsoft-1000-bugs-again",
+    "publishedAt": "2026-11-10T20:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-exceeds-1-000-vulnerabilit",
+      "article-1fd9f3cb",
+      "1fd9f3cb",
+      "microsoft-patch-tuesday-exceeds-1-000-vulnerabilit-b9c145",
+      "microsoft-patch-tuesday-exceeds-1-000-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97578-important-buildah-security-bug-fix-e44cc762",
+    "title": "RHSA-2026:97578: Important: buildah security, bug fix, and enhancement update",
+    "summary": "An update for buildah is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97578",
+    "publishedAt": "2026-11-10T20:46:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97578-important-buildah-security-bug-fix",
+      "article-e44cc762",
+      "e44cc762",
+      "rhsa-2026-97578-important-buildah-security-bug-fix-37d759",
+      "rhsa-2026-97578-important-buildah-security-bug-fix-and-enhan"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97514-important-subscription-manager-coc-f9fd6ec0",
+    "title": "RHSA-2026:97514: Important: subscription-manager-cockpit security update",
+    "summary": "An update for subscription-manager-cockpit is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97514",
+    "publishedAt": "2026-11-10T20:44:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97514-important-subscription-manager-coc",
+      "article-f9fd6ec0",
+      "f9fd6ec0",
+      "rhsa-2026-97514-important-subscription-manager-coc-37d759",
+      "rhsa-2026-97514-important-subscription-manager-cockpit-secur"
+    ]
+  },
+  {
     "slug": "aurora-adtp-blocks-ransomware-with-ai-in-real-time-6ec26d86",
     "title": "Aurora ADTP Blocks Ransomware with AI in Real Time",
     "summary": "Aurora Adaptive Threat Protection (ADTP) employs AI‑powered intent detection to identify ransomware and advanced threats before they reach endpoints. The system analyzes traffic patterns and user behavior, flagging malicious payloads and command‑and‑control communications with high accuracy. Security teams should integrate ADTP into existing SIEM pipelines and enable real‑time alerting to maintain continuous protection.",
@@ -84,6 +141,27 @@ export const news: NewsBrief[] = [
       "499e671e",
       "red-hat-releases-kernel-update-for-enterprise-linu-37d75d",
       "red-hat-releases-kernel-update-for-enterprise-linux-9"
+    ]
+  },
+  {
+    "slug": "usn-9037-1-hplip-vulnerabilities-41bb06eb",
+    "title": "USN-9037-1: HPLIP vulnerabilities",
+    "summary": "An attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute arbitrary code. (CVE-2026-91097) It was discovered that HPLIP did not properly handle certain input, which could result in a heap-based buffer overflow. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2026-91100) It was discovered that HPLIP did not properly validate certain array indices.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9037-1",
+    "publishedAt": "2026-11-10T19:50:31.000Z",
+    "cves": [
+      "CVE-2026-91097",
+      "CVE-2026-91100"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9037-1-hplip-vulnerabilities",
+      "article-41bb06eb",
+      "41bb06eb",
+      "usn-9037-1-hplip-vulnerabilities-7e8844"
     ]
   },
   {
@@ -554,6 +632,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-can-exploit-sap-proxygate-and-icm2shell-fl-d2792acf",
+    "title": "Hackers Can Exploit SAP PROXYGATE and ICM2SHELL Flaws for Unauthorized Full System Access",
+    "summary": "SAP has released fixes for PROXYGATE and ICM2SHELL, critical security flaws that could let attackers take control of SAP systems without signing in. Disclosed during the November 10, 2026, Security Patch Day, the vulnerabilities carry maximum CVSS scores of 10.0 and affect core components used across business applications.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
+    "publishedAt": "2026-11-10T17:32:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-can-exploit-sap-proxygate-and-icm2shell-fl",
+      "article-d2792acf",
+      "d2792acf",
+      "hackers-can-exploit-sap-proxygate-and-icm2shell-fl-6a70af",
+      "hackers-can-exploit-sap-proxygate-and-icm2shell-flaws-for-un"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97456-moderate-krb5-security-update-142bdc41",
     "title": "RHSA-2026:97456: Moderate: krb5 security update",
     "summary": "An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -610,6 +707,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec-39b793b0",
+    "title": "RHSA-2026:97328: Important: oci-seccomp-bpf-hook security, bug fix, and enhancement update",
+    "summary": "An update for oci-seccomp-bpf-hook is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97328",
+    "publishedAt": "2026-11-10T16:57:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec",
+      "article-39b793b0",
+      "39b793b0",
+      "rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec-37d761",
+      "rhsa-2026-97328-important-oci-seccomp-bpf-hook-security-bug-"
+    ]
+  },
+  {
     "slug": "notion-confirms-ai-chat-transcripts-exposed-in-fir-4ab5ac1f",
     "title": "Notion Confirms AI Chat Transcripts Exposed in Fireworks AI Breach, Affecting Customer Workspaces",
     "summary": "Notion has confirmed that a security incident at Fireworks AI exposed Notion AI chat transcripts linked to fewer than 1% of its customer workspaces. Insights, a feature that helps teams understand their AI usage, used the affected conversations.",
@@ -626,6 +742,25 @@ export const news: NewsBrief[] = [
       "4ab5ac1f",
       "notion-confirms-ai-chat-transcripts-exposed-in-fir-53a2c6",
       "notion-confirms-ai-chat-transcripts-exposed-in-fireworks-ai-"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97219-moderate-freerdp-security-bug-fix-a7b5af48",
+    "title": "RHSA-2026:97219: Moderate: freerdp security, bug fix, and enhancement update",
+    "summary": "An update for freerdp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97219",
+    "publishedAt": "2026-11-10T16:54:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97219-moderate-freerdp-security-bug-fix",
+      "article-a7b5af48",
+      "a7b5af48",
+      "rhsa-2026-97219-moderate-freerdp-security-bug-fix-37d765",
+      "rhsa-2026-97219-moderate-freerdp-security-bug-fix-and-enhanc"
     ]
   },
   {
@@ -815,6 +950,67 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "microsoft-refs-rce-vulnerability-cve-2026-102227-624b1899",
+    "title": "Microsoft ReFS RCE Vulnerability CVE-2026-102227",
+    "summary": "Microsoft disclosed CVE-2026-102227, a remote code execution flaw in Windows ReFS that could allow attackers to run arbitrary code via malformed metadata. The flaw stems from improper validation of ReFS metadata, enabling unauthenticated exploitation with a CVSS score of 9.8. Microsoft issued an out‑of‑band patch; administrators should apply it immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102227",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-102227"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-refs-rce-vulnerability-cve-2026-102227",
+      "article-624b1899",
+      "624b1899",
+      "microsoft-refs-rce-vulnerability-cve-2026-102227-1ff9f1"
+    ]
+  },
+  {
+    "slug": "microsoft-office-word-rce-cve-2026-108447-7e433417",
+    "title": "Microsoft Office Word RCE CVE-2026-108447",
+    "summary": "Microsoft announced CVE-2026-108447, a remote code execution vulnerability in Office Word that could be triggered by a malicious document. The flaw results from unsafe handling of Rich Text Format (RTF) content, allowing unauthenticated code execution with a CVSS score of 9.5. Microsoft released an out‑of‑band patch; users should update Office immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108447",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-108447"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-office-word-rce-cve-2026-108447",
+      "article-7e433417",
+      "7e433417",
+      "microsoft-office-word-rce-cve-2026-108447-1ff72f"
+    ]
+  },
+  {
+    "slug": "windows-kernel-information-disclosure-cve-2026-700-8def015c",
+    "title": "Windows Kernel Information Disclosure CVE-2026-70017",
+    "summary": "Microsoft disclosed CVE-2026-70017, a kernel‑mode information disclosure flaw in Windows that could expose sensitive data via the Secure Kernel API. The vulnerability arises from improper bounds checking during kernel data retrieval, allowing local attackers to read privileged memory with a CVSS score of 7.2. Microsoft issued a patch; administrators should apply it promptly to mitigate the information disclosure risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70017",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-70017"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-kernel-information-disclosure-cve-2026-700",
+      "article-8def015c",
+      "8def015c",
+      "windows-kernel-information-disclosure-cve-2026-700-745071",
+      "windows-kernel-information-disclosure-cve-2026-70017"
     ]
   },
   {
@@ -1654,6 +1850,31 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-adds-six-exploited-vulnerabilities-to-kev-9ddecdf1",
+    "title": "CISA Adds Six Exploited Vulnerabilities to KEV",
+    "summary": "CISA added six known exploited vulnerabilities to its KEV catalog, including CVE-2026-20320, CVE-2026-111560, CVE-2026-111793, CVE-2026-116606, CVE-2026-124194, and CVE-2026-125350. The flaws cover XML external entity handling, OS command injection, resource transfer, authentication bypass, unsafe action, and use‑after‑free, all with active exploitation evidence. Vendors should apply patches or mitigations from the KEV catalog, and security teams should monitor for exploitation indicators.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-10T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-20320",
+      "CVE-2026-111560",
+      "CVE-2026-111793",
+      "CVE-2026-116606",
+      "CVE-2026-124194",
+      "CVE-2026-125350"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-six-exploited-vulnerabilities-to-kev",
+      "article-9ddecdf1",
+      "9ddecdf1",
+      "cisa-adds-six-exploited-vulnerabilities-to-kev-6af0be"
+    ]
+  },
+  {
     "slug": "binance-alerts-iphone-users-to-ios-file-access-fla-4cd25477",
     "title": "Binance Alerts iPhone Users to iOS File‑Access Flaw",
     "summary": "Binance warned iPhone users about worse_query, an iOS flaw that permits malicious apps to read files belonging to other apps. Affected iOS versions 26.7.1, 27.0.1, and 27.2 could expose seed phrases, private keys, and login credentials, creating a high‑risk data leakage vector. Users should install the latest iOS updates or apply the vendor’s security patch to mitigate the file‑access vulnerability.",
@@ -2344,6 +2565,63 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "fortimail-authorization-bypass-enables-unauthentic-74d576d2",
+    "title": "FortiMail Authorization Bypass Enables Unauthenticated Account Takeover",
+    "summary": "FortiMail’s user‑controlled key bypass lets an unauthenticated remote attacker hijack any IBE recipient account through crafted HTTP requests. Rated CVSSv3 9.1, the flaw abuses improper key validation, granting full account takeover without credentials and exposing mailbox data. Fortinet issued a patch for FortiMail 7.2.1 and earlier; administrators must apply it immediately to close the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-208",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimail-authorization-bypass-enables-unauthentic",
+      "article-74d576d2",
+      "74d576d2",
+      "fortimail-authorization-bypass-enables-unauthentic-3bcda6",
+      "fortimail-authorization-bypass-enables-unauthenticated-accou"
+    ]
+  },
+  {
+    "slug": "fortimanager-privilege-escalation-via-user-control-1f87005e",
+    "title": "FortiManager Privilege Escalation via User-Controlled Key",
+    "summary": "FortiManager’s user‑controlled key flaw permits a remote authenticated attacker with admin rights to elevate privileges to root via crafted HTTP requests. The vulnerability, CVSSv3 8.2, exploits inadequate key validation, allowing full root access without additional credentials. Fortinet released a patch for FortiManager 7.2.1 and earlier; users should update promptly to prevent privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-235",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimanager-privilege-escalation-via-user-control",
+      "article-1f87005e",
+      "1f87005e",
+      "fortimanager-privilege-escalation-via-user-control-3bcda5",
+      "fortimanager-privilege-escalation-via-user-controlled-key"
+    ]
+  },
+  {
+    "slug": "fortimail-authenticated-bypass-allows-root-directo-ff06611b",
+    "title": "FortiMail Authenticated Bypass Allows Root Directory Deletion",
+    "summary": "FortiMail’s authorization bypass lets an authenticated remote attacker delete directories as root or access other users’ calendar and mailbox data across tenant domains via crafted HTTP requests. The flaw, CVSSv3 8.1, stems from improper key validation, enabling privileged file operations without credentials. Fortinet issued patches for FortiMail 7.2.1 and earlier; administrators should apply them immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-204",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimail-authenticated-bypass-allows-root-directo",
+      "article-ff06611b",
+      "ff06611b",
+      "fortimail-authenticated-bypass-allows-root-directo-3bcda6",
+      "fortimail-authenticated-bypass-allows-root-directory-deletio"
     ]
   },
   {
@@ -9401,255 +9679,6 @@ export const news: NewsBrief[] = [
       "89f230b6",
       "microsoft-updates-ai-agent-security-in-november-20-27e9d3",
       "microsoft-updates-ai-agent-security-in-november-2026"
-    ]
-  },
-  {
-    "slug": "openmatter-promotes-decentralized-ai-computing-f2b79906",
-    "title": "OpenMatter Promotes Decentralized AI Computing",
-    "summary": "OpenMatter Network announces its decentralized computing platform as an alternative to traditional data centers for AI workloads. The company claims the distributed infrastructure can support continued AI adoption while addressing public opposition to large centralized facilities. Stakeholders should evaluate the platform’s scalability, security model, and integration requirements before adopting it for AI projects.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openmatter-network-positions-decentralized-computing-as-an-alternative-to-data-centers-for-ai/",
-    "publishedAt": "2026-11-05T16:56:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openmatter-promotes-decentralized-ai-computing",
-      "article-f2b79906",
-      "f2b79906",
-      "openmatter-promotes-decentralized-ai-computing-38c335"
-    ]
-  },
-  {
-    "slug": "securitydatapipeline-com-launches-as-ai-security-r-8fc7e749",
-    "title": "SecurityDataPipeline.com Launches as AI Security Resource",
-    "summary": "SecurityDataPipeline.com provides an ungated educational resource explaining how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations. This vendor-published guide addresses operational efficiency rather than exposing a specific vulnerability or incident. The platform serves as a general industry resource on data pipeline optimization for modern SOC operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era",
-    "publishedAt": "2026-11-05T16:48:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "securitydatapipeline-com-launches-as-ai-security-r",
-      "article-8fc7e749",
-      "8fc7e749",
-      "securitydatapipeline-com-launches-as-ai-security-r-63c49b",
-      "securitydatapipeline-com-launches-as-ai-security-resource"
-    ]
-  },
-  {
-    "slug": "cve-2026-119083-gluonts-arbitrary-file-write-durin-fa2b9750",
-    "title": "CVE-2026-119083 - GluonTS arbitrary file write during archive extraction",
-    "summary": "Bulletin ID: 2026-171-AWS Publication Date: 11/05/2026 08:30 AM PST Description: GluonTS is an open-source Python library for probabilistic time series modeling. We identified CVE-2026-119083, an issue in the archive extraction utility in GluonTS before 0.17.0.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-171-aws/",
-    "publishedAt": "2026-11-05T16:43:41.000Z",
-    "cves": [
-      "CVE-2026-119083"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-119083-gluonts-arbitrary-file-write-durin",
-      "article-fa2b9750",
-      "fa2b9750",
-      "cve-2026-119083-gluonts-arbitrary-file-write-durin-4a0f16",
-      "cve-2026-119083-gluonts-arbitrary-file-write-during-archive-"
-    ]
-  },
-  {
-    "slug": "openssh-fixes-long-password-ssh-bypass-on-alpine-c7788958",
-    "title": "OpenSSH Fixes Long‑Password SSH Bypass on Alpine",
-    "summary": "OpenSSH issued an emergency patch for a critical flaw that let passwords 257–1,024 bytes bypass authentication on Alpine Linux. The bug involved improper buffer handling, letting attackers with network access and a valid account name log in without a key. Users should upgrade to OpenSSH 10.6p2; Alpine has released fixed packages for all supported releases, and no workarounds exist.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
-    "publishedAt": "2026-11-05T16:42:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openssh-fixes-long-password-ssh-bypass-on-alpine",
-      "article-c7788958",
-      "c7788958",
-      "openssh-fixes-long-password-ssh-bypass-on-alpine-33c1d3"
-    ]
-  },
-  {
-    "slug": "openai-chatgpt-lockdown-mode-bypass-exfiltration-v-2aeb8abd",
-    "title": "OpenAI ChatGPT Lockdown Mode Bypass Exfiltration Vulnerability",
-    "summary": "Researchers uncovered a flaw bypassing OpenAI ChatGPT's Lockdown Mode, enabling unauthorized data exfiltration from chats. The vulnerability, CVE-2026-58868, permits silent extraction of chat content and phishing vectors without user interaction, posing credential theft risk; no public exploit reported. OpenAI released a patch to restore Lockdown Mode; teams should apply it promptly and monitor outbound traffic.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
-    "publishedAt": "2026-11-05T16:42:32.000Z",
-    "cves": [
-      "CVE-2026-58868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openai-chatgpt-lockdown-mode-bypass-exfiltration-v",
-      "article-2aeb8abd",
-      "2aeb8abd",
-      "openai-chatgpt-lockdown-mode-bypass-exfiltration-v-454e96",
-      "openai-chatgpt-lockdown-mode-bypass-exfiltration-vulnerabili"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-kpatch-security-update-for-rhel-8-39a79ff3",
-    "title": "Red Hat Issues kpatch Security Update for RHEL 8",
-    "summary": "Red Hat released security updates for multiple kpatch packages on RHEL 8, addressing vulnerabilities that could enable local or remote code execution. The advisory references CVE entries and CVSS base scores, but no public proof‑of‑concept or active exploitation has been reported. Red Hat recommends applying the patches through the standard RHEL 8 repositories to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95587",
-    "publishedAt": "2026-11-05T16:41:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-kpatch-security-update-for-rhel-8",
-      "article-39a79ff3",
-      "39a79ff3",
-      "red-hat-issues-kpatch-security-update-for-rhel-8-37d841"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-webkit2gtk3-update-4b94ba6d",
-    "title": "Red Hat Releases Critical WebKit2GTK3 Update",
-    "summary": "Red Hat issued a critical update for webkit2gtk3 in RHEL 8.6 Advanced Mission Critical and Extended Update Support. The patch fixes multiple high‑severity vulnerabilities cited by CVE references, each with a CVSS base score indicating remote code execution risk; no active exploitation was reported. Administrators should install the update promptly to prevent exploitation of web rendering components.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95589",
-    "publishedAt": "2026-11-05T16:35:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-webkit2gtk3-update",
-      "article-4b94ba6d",
-      "4b94ba6d",
-      "red-hat-releases-critical-webkit2gtk3-update-37d841"
-    ]
-  },
-  {
-    "slug": "cwpdoor-trojan-exploits-cwp-control-panel-vulnerab-21527595",
-    "title": "CWPdoor Trojan Exploits CWP Control Panel Vulnerability to Grant Root Access on Linux Servers",
-    "summary": "CWPdoor, a trojanized variant of the CWP control panel, has infected Linux servers worldwide by exploiting a flaw in CWP’s authentication that grants attackers root access. The vulnerability lets attackers execute arbitrary code, install backdoors, and exfiltrate data, threatening system integrity. Admins should apply the latest patch, remove unauthorized binaries, and monitor outbound traffic to mitigate the threat.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
-    "publishedAt": "2026-11-05T16:24:26.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/hackers-backdoor-linux-servers-using-trojanized-cwp-web"
-      }
-    ],
-    "aliases": [
-      "cwpdoor-trojan-exploits-cwp-control-panel-vulnerab",
-      "article-21527595",
-      "21527595",
-      "cwpdoor-trojan-exploits-cwp-control-panel-vulnerab-68daec",
-      "cwpdoor-trojan-exploits-cwp-control-panel-vulnerability-to-g"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-java-11-openjdk-els-390440e0",
-    "title": "Red Hat Updates Java 11 OpenJDK ELS",
-    "summary": "Red Hat released a security update for java-11-openjdk with Extended Lifecycle Support on RHEL 7, 8, and 9. The update addresses multiple vulnerabilities in the Java runtime, though no specific CVE identifiers are listed in the advisory. Users should apply the update via the Red Hat package manager to maintain secure Java environments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94520",
-    "publishedAt": "2026-11-05T16:12:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-java-11-openjdk-els",
-      "article-390440e0",
-      "390440e0",
-      "red-hat-updates-java-11-openjdk-els-37d8b6"
-    ]
-  },
-  {
-    "slug": "digicert-breach-exposes-customer-data-and-id-docum-28f4b248",
-    "title": "DigiCert Breach Exposes Customer Data and ID Documents",
-    "summary": "During a server migration, DigiCert unintentionally exposed an internal business system to the internet, enabling unauthorized access to customer information and identity documents. The misconfiguration allowed attackers to retrieve sensitive data, including personal identifiers and certificates, potentially facilitating credential theft and fraud. DigiCert notified affected customers, is conducting a forensic investigation, and will enforce stricter access controls and monitoring.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
-    "publishedAt": "2026-11-05T16:12:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "digicert-breach-exposes-customer-data-and-id-docum",
-      "article-28f4b248",
-      "28f4b248",
-      "digicert-breach-exposes-customer-data-and-id-docum-12d7e3",
-      "digicert-breach-exposes-customer-data-and-id-documents"
-    ]
-  },
-  {
-    "slug": "ghostmap-android-flaw-can-trap-phones-in-endless-r-f3601b18",
-    "title": "GhostMap Android Flaw Can Trap Phones in Endless Reboot Loops Without Opening an App",
-    "summary": "A new Android bug named GhostMap can leave a phone stuck in a crash loop after a user installs a single crafted app. The app does not need to be opened, asks for no permissions, and contains no code. Researchers at Bitdefender Labs published the findings on November 5, 2026.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ghostmap-android-vulnerability/",
-    "publishedAt": "2026-11-05T16:11:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostmap-android-flaw-can-trap-phones-in-endless-r",
-      "article-f3601b18",
-      "f3601b18",
-      "ghostmap-android-flaw-can-trap-phones-in-endless-r-199df3",
-      "ghostmap-android-flaw-can-trap-phones-in-endless-reboot-loop"
-    ]
-  },
-  {
-    "slug": "q3-2026-email-threat-landscape-trends-b12b02eb",
-    "title": "Q3 2026 Email Threat Landscape Trends",
-    "summary": "Microsoft Threat Intelligence observed a sharp rise in email-based phishing activity at the end of Q3 2026, while QR code phishing declined and CAPTCHA-gated phishing recovered. Messages spoofing familiar business-service sender domains exposed risks associated with security override configurations. These trends indicate evolving adversary tactics targeting enterprise email environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/",
-    "publishedAt": "2026-11-05T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "q3-2026-email-threat-landscape-trends",
-      "article-b12b02eb",
-      "b12b02eb",
-      "q3-2026-email-threat-landscape-trends-2da3d8"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-python36-security-update-c989fdea",
-    "title": "Red Hat Releases Python36 Security Update",
-    "summary": "Red Hat issued an important security update for the python36:3.6 module on RHEL 8.4 Advanced Mission Critical and Extended Update Support Long‑Life Add‑On releases. The update addresses multiple vulnerabilities that could allow remote code execution or privilege escalation, with CVSS scores detailed in the referenced CVE links. Users should apply the python36:3.6 update immediately to mitigate exploitation risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95583",
-    "publishedAt": "2026-11-05T15:46:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-python36-security-update",
-      "article-c989fdea",
-      "c989fdea",
-      "red-hat-releases-python36-security-update-37d841"
     ]
   }
 ];
