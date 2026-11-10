@@ -1980,6 +1980,37 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "title": "Adobe Commerce and Magento File Upload RCE Flaw (CVE-2026-48356)",
+    "headline": "Adobe Commerce and Magento File Upload RCE Flaw (CVE-2026-48356)",
+    "summary": "Adobe Commerce and Magento contain an unrestricted file upload vulnerability (CVE-2026-48356, CVSS 9.3, CWE-434) enabling arbitrary code execution and elevated account control. CISA added the flaw to its Known Exploited Vulnerabilities catalog on Oct. 27, 2026, with federal remediation due Nov. 10, 2026, under BOD 26-04. Apply patches in Adobe bulletin APSB26-73 immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "publishedAt": "2026-11-10T12:00:00.000Z",
+    "ingestedAt": "2026-11-10T23:42:33.078Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "cves": [
+      "CVE-2026-48356"
+    ],
+    "additionalSources": [
+      {
+        "source": "Adobe Security Bulletin (APSB26-73)",
+        "sourceUrl": "https://www.adobe.com/trust/security/products/commerce/apsb26-73.html"
+      }
+    ],
+    "slug": "adobe-commerce-and-magento-file-upload-rce-flaw-cv-d6c9bec3",
+    "aliases": [
+      "adobe-commerce-and-magento-file-upload-rce-flaw-cv",
+      "article-d6c9bec3",
+      "d6c9bec3",
+      "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    ]
+  },
+  {
     "id": "https://cybersecuritynews.com/ios-flaw-expose-crypto-wallet/",
     "sourceUrl": "https://cybersecuritynews.com/ios-flaw-expose-crypto-wallet/",
     "title": "Binance Alerts iPhone Users to iOS File‑Access Flaw",
@@ -8420,22 +8451,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:95618",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
-    "title": "DNS Typos Expose US Government Email Systems",
-    "headline": "DNS Typos Expose US Government Email Systems",
-    "summary": "Erroneous or outdated DNS records in US government email infrastructure can grant attackers unexpected control over mail routing and delivery. The misconfiguration allows attackers to spoof sender addresses, intercept messages, or redirect traffic, potentially facilitating phishing or data exfiltration. Administrators should audit DNS zones, correct stale entries, and enforce strict SPF, DKIM, and DMARC policies to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "publishedAt": "2026-11-05T21:35:05.000Z",
-    "ingestedAt": "2026-11-05T22:05:19.973Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
     "additionalSources": []
   }
 ]
