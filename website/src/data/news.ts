@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "iranian-unit-sabotages-700-french-retail-refrigera-080a646c",
+    "title": "Iranian Unit Sabotages 700 French Retail Refrigerators",
+    "summary": "An IRGC cyber unit targeted refrigeration controllers at roughly 700 French retail sites, altering defrost settings to high temperatures. The change caused food spoilage and ignited fires in at least 15 locations, leading to significant losses. French authorities attribute the sabotage to Iran; operators should audit controller access logs and enforce stricter authentication controls.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
+    "publishedAt": "2026-11-10T09:08:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "iranian-unit-sabotages-700-french-retail-refrigera",
+      "article-080a646c",
+      "080a646c",
+      "iranian-unit-sabotages-700-french-retail-refrigera-7e30f3",
+      "iranian-unit-sabotages-700-french-retail-refrigerators"
+    ]
+  },
+  {
+    "slug": "2026-digital-forensics-tools-ranking-de25091e",
+    "title": "2026 Digital Forensics Tools Ranking",
+    "summary": "A 2026 ranking evaluates digital forensics tools, judging them by the durability of findings under cross‑examination and their artifact depth. The list covers mobile‑extraction giants, disk‑and‑artifact workhorses, memory‑analysis frameworks, and open‑source pillars, weighing evidentiary rigor and economics. Security analysts can reference the ranking to select tools that provide robust evidence and cost‑effective performance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-digital-forensics-tools/",
+    "publishedAt": "2026-11-10T08:21:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-digital-forensics-tools-ranking",
+      "article-de25091e",
+      "de25091e",
+      "2026-digital-forensics-tools-ranking-6a2703"
+    ]
+  },
+  {
     "slug": "claude-fable-5-2-outperforms-gpt-6-in-cyberattack-5e0c9d71",
     "title": "Claude Fable 5.2 Outperforms GPT-6 in Cyberattack Benchmark",
     "summary": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2 models, which were evaluated against GPT‑6 in a multi‑stage cyberattack benchmark. The models demonstrated enhanced coding, reasoning, and vision, enabling engineers to complete complex software migrations, design electronic devices, and solve advanced physics problems during pre‑release training. Benchmark results are publicly available, enabling teams to assess LLM readiness for cyber‑defense.",
@@ -27,6 +64,24 @@ export const news: NewsBrief[] = [
       "5e0c9d71",
       "claude-fable-5-2-outperforms-gpt-6-in-cyberattack-519b9d",
       "claude-fable-5-2-outperforms-gpt-6-in-cyberattack-benchmark"
+    ]
+  },
+  {
+    "slug": "2026-genai-soc-copilots-ranking-083dfa4a",
+    "title": "2026 GenAI SOC Copilots Ranking",
+    "summary": "A 2026 ranking evaluates GenAI SOC copilots, distinguishing assistants that summarize and draft within human workflows from autonomous agents that manage tier‑1 queues under policy guardrails. The list assesses tools on triage efficiency and platform integration, highlighting both suite copilots and AI analysts. Security teams can use the ranking to select tools aligned with their triage and automation needs.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-genai-soc-copilots/",
+    "publishedAt": "2026-11-10T08:14:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-genai-soc-copilots-ranking",
+      "article-083dfa4a",
+      "083dfa4a",
+      "2026-genai-soc-copilots-ranking-78d757"
     ]
   },
   {
@@ -67,21 +122,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "google-patches-chrome-xml-use-after-free-bug-3b3a5037",
-    "title": "Google Patches Chrome XML Use‑After‑Free Bug",
-    "summary": "Google patched Chrome’s XML component after an actively exploited use‑after‑free bug (CVE‑2026‑125350) was reported. The flaw enabled memory corruption via crafted XML, potentially allowing remote code execution; it was rated high severity and is actively exploited. Google released a patch in the latest Chrome update; users should install it immediately to mitigate the vulnerability.",
+    "slug": "google-patches-chrome-xml-use-after-free-vulnerabi-4f95a003",
+    "title": "Google Patches Chrome XML Use‑After‑Free Vulnerability (CVE‑2026‑125350)",
+    "summary": "Google released a patch for Chrome after discovering CVE‑2026‑125350, a use‑after‑free flaw in its XML parser that was actively exploited. The vulnerability allowed attackers to corrupt memory and potentially execute code via crafted XML documents, posing a remote code execution threat. Google’s latest Chrome update includes the fix; users are urged to install it immediately to mitigate the risk.",
     "category": "CVE",
-    "severity": "CRITICAL",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
     "publishedAt": "2026-11-10T06:52:54.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "BleepingComputer",
+        "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/"
+      }
+    ],
     "aliases": [
-      "google-patches-chrome-xml-use-after-free-bug",
-      "article-3b3a5037",
-      "3b3a5037",
-      "google-patches-chrome-xml-use-after-free-bug-37252a"
+      "google-patches-chrome-xml-use-after-free-vulnerabi",
+      "article-4f95a003",
+      "4f95a003",
+      "google-patches-chrome-xml-use-after-free-vulnerabi-37252a",
+      "google-patches-chrome-xml-use-after-free-vulnerability-cve-2"
     ]
   },
   {
@@ -338,9 +399,9 @@ export const news: NewsBrief[] = [
   {
     "slug": "byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b",
     "title": "BYOD Ransomware Encrypts Vanderbilt University Databases",
-    "summary": "A ransomware gang named BYOD targeted Vanderbilt University, encrypting its database systems and exfiltrating student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged database access, encrypting files and compromising sensitive information. University officials isolated affected systems, applied the latest database patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.",
+    "summary": "Vanderbilt University fell victim to a BYOD ransomware attack that encrypted its database systems and exfiltrated student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged access, locking critical databases and demanding payment. University officials isolated affected systems, applied patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.",
     "category": "Ransomware",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
     "publishedAt": "2026-11-09T23:52:12.000Z",
@@ -349,6 +410,10 @@ export const news: NewsBrief[] = [
       {
         "source": "CyberNews AI",
         "sourceUrl": "https://cybernewsai.com/blog/vanderbilt-university-hit-in-byod-ransomware-attack-dat"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/vanderbilt-university-shuts-down-devices/"
       }
     ],
     "aliases": [
@@ -9553,68 +9618,6 @@ export const news: NewsBrief[] = [
       "8b43c3fc",
       "microsoft-edge-addresses-chromium-cve-2026-76031-u-744db7",
       "microsoft-edge-addresses-chromium-cve-2026-76031-use-after-f"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-76027-memory-corruption-exploit-3c488524",
-    "title": "Chromium CVE-2026-76027 Memory Corruption Exploit",
-    "summary": "Chromium CVE-2026-76027 is a memory corruption flaw in Chrome and Microsoft Edge, fixed in the latest Chromium release. The flaw lets an attacker corrupt memory during rendering, which could enable remote code execution from a malicious web page. Users should upgrade to the newest Chrome or Edge version, and developers should apply the Chromium patch to mitigate the issue.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76027",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-76027"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-76027-memory-corruption-exploit",
-      "article-3c488524",
-      "3c488524",
-      "chromium-cve-2026-76027-memory-corruption-exploit-744db7"
-    ]
-  },
-  {
-    "slug": "chromium-cve-2026-76028-use-after-free-vulnerabili-7dfb5fda",
-    "title": "Chromium CVE-2026-76028 Use‑After‑Free Vulnerability",
-    "summary": "Chromium CVE-2026-76028 is a use‑after‑free flaw affecting Chrome and Microsoft Edge, addressed in the most recent Chromium update. The vulnerability occurs when a freed object is accessed during rendering, allowing attackers to execute arbitrary code via crafted web content. Updating to the latest Chrome or Edge version applies the patch, and developers should incorporate the Chromium fix to prevent exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76028",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-76028"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-cve-2026-76028-use-after-free-vulnerabili",
-      "article-7dfb5fda",
-      "7dfb5fda",
-      "chromium-cve-2026-76028-use-after-free-vulnerabili-744db7",
-      "chromium-cve-2026-76028-use-after-free-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-cve-2026-76029-m-319d68ea",
-    "title": "Microsoft Edge Addresses Chromium CVE-2026-76029 Memory Corruption",
-    "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76029, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76029",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-76029"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-cve-2026-76029-m",
-      "article-319d68ea",
-      "319d68ea",
-      "microsoft-edge-addresses-chromium-cve-2026-76029-m-744db7",
-      "microsoft-edge-addresses-chromium-cve-2026-76029-memory-corr"
     ]
   }
 ];

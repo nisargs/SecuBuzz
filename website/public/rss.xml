@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 08:45:18 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 09:44:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Iranian Unit Sabotages 700 French Retail Refrigerators</title>
+      <link>https://secubuzz.com/news/iranian-unit-sabotages-700-french-retail-refrigera-080a646c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/iranian-unit-sabotages-700-french-retail-refrigera-080a646c</guid>
+      <description><![CDATA[An IRGC cyber unit targeted refrigeration controllers at roughly 700 French retail sites, altering defrost settings to high temperatures. The change caused food spoilage and ignited fires in at least 15 locations, leading to significant losses. French authorities attribute the sabotage to Iran; operators should audit controller access logs and enforce stricter authentication controls.]]></description>
+      <pubDate>Tue, 10 Nov 2026 09:08:20 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>2026 Digital Forensics Tools Ranking</title>
+      <link>https://secubuzz.com/news/2026-digital-forensics-tools-ranking-de25091e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-digital-forensics-tools-ranking-de25091e</guid>
+      <description><![CDATA[A 2026 ranking evaluates digital forensics tools, judging them by the durability of findings under cross‑examination and their artifact depth. The list covers mobile‑extraction giants, disk‑and‑artifact workhorses, memory‑analysis frameworks, and open‑source pillars, weighing evidentiary rigor and economics. Security analysts can reference the ranking to select tools that provide robust evidence and cost‑effective performance.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:21:39 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-digital-forensics-tools/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Claude Fable 5.2 Outperforms GPT-6 in Cyberattack Benchmark</title>
       <link>https://secubuzz.com/news/claude-fable-5-2-outperforms-gpt-6-in-cyberattack-5e0c9d71</link>
@@ -14,6 +32,15 @@
       <description><![CDATA[Anthropic released Claude Fable 5.2 and Claude Mythos 5.2 models, which were evaluated against GPT‑6 in a multi‑stage cyberattack benchmark. The models demonstrated enhanced coding, reasoning, and vision, enabling engineers to complete complex software migrations, design electronic devices, and solve advanced physics problems during pre‑release training. Benchmark results are publicly available, enabling teams to assess LLM readiness for cyber‑defense.]]></description>
       <pubDate>Tue, 10 Nov 2026 08:16:14 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>2026 GenAI SOC Copilots Ranking</title>
+      <link>https://secubuzz.com/news/2026-genai-soc-copilots-ranking-083dfa4a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-genai-soc-copilots-ranking-083dfa4a</guid>
+      <description><![CDATA[A 2026 ranking evaluates GenAI SOC copilots, distinguishing assistants that summarize and draft within human workflows from autonomous agents that manage tier‑1 queues under policy guardrails. The list assesses tools on triage efficiency and platform integration, highlighting both suite copilots and AI analysts. Security teams can use the ranking to select tools aligned with their triage and automation needs.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:14:07 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-genai-soc-copilots/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -35,10 +62,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>Google Patches Chrome XML Use‑After‑Free Bug</title>
-      <link>https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-bug-3b3a5037</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-bug-3b3a5037</guid>
-      <description><![CDATA[Google patched Chrome’s XML component after an actively exploited use‑after‑free bug (CVE‑2026‑125350) was reported. The flaw enabled memory corruption via crafted XML, potentially allowing remote code execution; it was rated high severity and is actively exploited. Google released a patch in the latest Chrome update; users should install it immediately to mitigate the vulnerability.]]></description>
+      <title>Google Patches Chrome XML Use‑After‑Free Vulnerability (CVE‑2026‑125350)</title>
+      <link>https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-vulnerabi-4f95a003</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-vulnerabi-4f95a003</guid>
+      <description><![CDATA[Google released a patch for Chrome after discovering CVE‑2026‑125350, a use‑after‑free flaw in its XML parser that was actively exploited. The vulnerability allowed attackers to corrupt memory and potentially execute code via crafted XML documents, posing a remote code execution threat. Google’s latest Chrome update includes the fix; users are urged to install it immediately to mitigate the risk.]]></description>
       <pubDate>Tue, 10 Nov 2026 06:52:54 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/google-issues-chrome-security-update.html">The Hacker News</source>
       <category>CVE</category>
@@ -164,7 +191,7 @@
       <title>BYOD Ransomware Encrypts Vanderbilt University Databases</title>
       <link>https://secubuzz.com/news/byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b</guid>
-      <description><![CDATA[A ransomware gang named BYOD targeted Vanderbilt University, encrypting its database systems and exfiltrating student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged database access, encrypting files and compromising sensitive information. University officials isolated affected systems, applied the latest database patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.]]></description>
+      <description><![CDATA[Vanderbilt University fell victim to a BYOD ransomware attack that encrypted its database systems and exfiltrated student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged access, locking critical databases and demanding payment. University officials isolated affected systems, applied patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.]]></description>
       <pubDate>Mon, 09 Nov 2026 23:52:12 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/">BleepingComputer</source>
       <category>Ransomware</category>
@@ -428,33 +455,6 @@
       <description><![CDATA[Red Hat released OpenShift Container Platform 4.14.78, incorporating security fixes for multiple package and image vulnerabilities. The update addresses authentication and authorization weaknesses that could allow unauthorized access, with CVSS scores linked via referenced CVE entries. Install the 4.14.78 release promptly and review the CVE references for detailed severity information.]]></description>
       <pubDate>Mon, 09 Nov 2026 17:16:25 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95507">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat OpenShift Container Platform 4.14.78 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-openshift-container-platform-4-14-78-secur-6b70975e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-openshift-container-platform-4-14-78-secur-6b70975e</guid>
-      <description><![CDATA[Red Hat released OpenShift Container Platform 4.14.78, incorporating bug fixes and a critical security update for the platform on supported RHEL versions. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, with CVSS scores referenced via CVE links. Users should apply the 4.14.78 release promptly to secure their clusters.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:10:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95508">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Notepad++ 8.9.9 Released With Fixes for 6 Vulnerabilities Allowing Plugin Command Execution</title>
-      <link>https://secubuzz.com/news/notepad-8-9-9-released-with-fixes-for-6-vulnerabil-42f7b818</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/notepad-8-9-9-released-with-fixes-for-6-vulnerabil-42f7b818</guid>
-      <description><![CDATA[Notepad++ released version 8.9.9 on November 6, 2026, fixing six security flaws across Windows message handling, protected file saving, clipboard operations, and MIME Tools decoding. The update addresses flaws including conditional plugin command execution, memory exposure, and buffer overflow.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:03:53 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/notepad-8-9-9-released/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>libheif Vulnerability Allows Arbitrary Code Execution</title>
-      <link>https://secubuzz.com/news/libheif-vulnerability-allows-arbitrary-code-execut-0cc88e36</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/libheif-vulnerability-allows-arbitrary-code-execut-0cc88e36</guid>
-      <description><![CDATA[A flaw in libheif lets attackers execute arbitrary code when a user opens a crafted HEIF file. The flaw arises from improper HEIF header parsing, causing memory corruption that could be exploited; no public exploit yet. Ubuntu recommends installing the latest libheif update and advises users to avoid opening unknown HEIF files until patched.]]></description>
-      <pubDate>Mon, 09 Nov 2026 16:44:41 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9012-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>
