@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "n-able-shuts-n-central-servers-over-33-zero-day-vu-f9091fd2",
+    "title": "N‑able Shuts N‑central Servers Over 33 Zero‑Day Vulnerabilities",
+    "summary": "N‑able disabled its hosted N‑central environments worldwide after an independent researcher disclosed 33 zero‑day vulnerabilities and Able2Shell exploit code. The flaws enable remote code execution via unvalidated input in the N‑central management interface, with PoC code available, posing data exfiltration risk. N‑able advised on‑premises customers to take N‑central offline until a patch is released and is developing a remediation update.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
+    "publishedAt": "2026-11-10T02:34:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-shuts-n-central-servers-over-33-zero-day-vu",
+      "article-f9091fd2",
+      "f9091fd2",
+      "n-able-shuts-n-central-servers-over-33-zero-day-vu-214ffb",
+      "n-able-shuts-n-central-servers-over-33-zero-day-vulnerabilit"
+    ]
+  },
+  {
     "slug": "vanderbilt-university-targeted-by-byod-ransomware-1f7f7707",
     "title": "Vanderbilt University Targeted by BYOD Ransomware Attack",
     "summary": "A ransomware gang called BYOD claimed to have encrypted Vanderbilt University’s databases and exfiltrated sensitive student, employee, and research data. The attack used credential‑stealing techniques to access university systems, but no specific vulnerability or CVE is cited. The university has issued a response notice, is coordinating with law enforcement, and recommends enforcing MFA and isolating affected systems.",
@@ -9581,26 +9600,6 @@ export const news: NewsBrief[] = [
       "article-a0636b28",
       "a0636b28",
       "microsoft-edge-addresses-chromium-cve-2026-118309-1fe91c"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-cve-2026-119261-5ac699d0",
-    "title": "Microsoft Edge addresses Chromium CVE-2026-119261",
-    "summary": "Microsoft Edge (Chromium-based) includes a patch for CVE-2026-119261, an improper input validation flaw in Chromium. The flaw could allow attackers to supply crafted input that bypasses sanitization, potentially enabling arbitrary code execution, though no active exploits are known. Users should apply the latest Microsoft Edge update via Windows Update or the standalone installer to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119261",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119261"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-cve-2026-119261",
-      "article-5ac699d0",
-      "5ac699d0",
-      "microsoft-edge-addresses-chromium-cve-2026-119261-1fe8ab"
     ]
   }
 ];

@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 02:14:25 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 03:44:28 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>N‑able Shuts N‑central Servers Over 33 Zero‑Day Vulnerabilities</title>
+      <link>https://secubuzz.com/news/n-able-shuts-n-central-servers-over-33-zero-day-vu-f9091fd2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-shuts-n-central-servers-over-33-zero-day-vu-f9091fd2</guid>
+      <description><![CDATA[N‑able disabled its hosted N‑central environments worldwide after an independent researcher disclosed 33 zero‑day vulnerabilities and Able2Shell exploit code. The flaws enable remote code execution via unvalidated input in the N‑central management interface, with PoC code available, posing data exfiltration risk. N‑able advised on‑premises customers to take N‑central offline until a patch is released and is developing a remediation update.]]></description>
+      <pubDate>Tue, 10 Nov 2026 02:34:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Vanderbilt University Targeted by BYOD Ransomware Attack</title>
       <link>https://secubuzz.com/news/vanderbilt-university-targeted-by-byod-ransomware-1f7f7707</link>
@@ -447,15 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 14:52:15 GMT</pubDate>
       <source url="https://socket.dev/blog/bee-js-compromise">Socket.dev</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:94537: Critical: OpenShift Container Platform 5.0.1 bug fix and security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-94537-critical-openshift-container-platf-70e6d196</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-94537-critical-openshift-container-platf-70e6d196</guid>
-      <description><![CDATA[Red Hat OpenShift Container Platform release 5.0.1 is now available with updates to packages and images that fix several bugs and add enhancements. This release includes a security update for Red Hat OpenShift Container Platform 5.0. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
-      <pubDate>Mon, 09 Nov 2026 14:40:48 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:94537">Red Hat Security Advisories</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>
