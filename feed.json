@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/",
+    "sourceUrl": "https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/",
+    "title": "Satirical Terminal2Shell Claims Highlight Security Marketing Parody",
+    "headline": "Satirical Terminal2Shell Claims Highlight Security Marketing Parody",
+    "summary": "Security analysts highlighted Terminal2Shell, a satirical website claiming a 55-year-old zero-day vulnerability affects over two billion interactive terminals. The underlying exploit simply describes standard terminal execution rather than a legitimate security flaw or unauthorized code execution vector. Reports confirm the publication represents a commentary on security industry marketing rather than a genuine threat requiring system updates.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-10T03:37:47.000Z",
+    "ingestedAt": "2026-11-10T04:43:22.328Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
     "sourceUrl": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
     "title": "N‑able Shuts N‑central Servers Over 33 Zero‑Day Vulnerabilities",
@@ -8389,22 +8405,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
-    "title": "Microsoft Edge addresses Chromium CVE-2026-118309",
-    "headline": "Microsoft Edge addresses Chromium CVE-2026-118309",
-    "summary": "Microsoft Edge (Chromium-based) incorporates a fix for CVE-2026-118309, a reference resolution flaw discovered in Chromium. The vulnerability allowed attackers to manipulate internal references, potentially leading to memory corruption or denial of service, but no public exploits have been disclosed. Edge users should install the latest update via Windows Update or the Microsoft Edge installer to ensure the patch is applied.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-04T23:43:48.657Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
     "additionalSources": []
   }
 ]

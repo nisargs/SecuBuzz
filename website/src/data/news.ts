@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "satirical-terminal2shell-claims-highlight-security-939c958d",
+    "title": "Satirical Terminal2Shell Claims Highlight Security Marketing Parody",
+    "summary": "Security analysts highlighted Terminal2Shell, a satirical website claiming a 55-year-old zero-day vulnerability affects over two billion interactive terminals. The underlying exploit simply describes standard terminal execution rather than a legitimate security flaw or unauthorized code execution vector. Reports confirm the publication represents a commentary on security industry marketing rather than a genuine threat requiring system updates.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/",
+    "publishedAt": "2026-11-10T03:37:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "satirical-terminal2shell-claims-highlight-security",
+      "article-939c958d",
+      "939c958d",
+      "satirical-terminal2shell-claims-highlight-security-6128db",
+      "satirical-terminal2shell-claims-highlight-security-marketing"
+    ]
+  },
+  {
     "slug": "n-able-shuts-n-central-servers-over-33-zero-day-vu-f9091fd2",
     "title": "N‑able Shuts N‑central Servers Over 33 Zero‑Day Vulnerabilities",
     "summary": "N‑able disabled its hosted N‑central environments worldwide after an independent researcher disclosed 33 zero‑day vulnerabilities and Able2Shell exploit code. The flaws enable remote code execution via unvalidated input in the N‑central management interface, with PoC code available, posing data exfiltration risk. N‑able advised on‑premises customers to take N‑central offline until a patch is released and is developing a remediation update.",
@@ -9580,26 +9599,6 @@ export const news: NewsBrief[] = [
       "92e95873",
       "microsoft-edge-patches-upstream-chromium-memory-co-1fe8ab",
       "microsoft-edge-patches-upstream-chromium-memory-corruption-f"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-cve-2026-118309-a0636b28",
-    "title": "Microsoft Edge addresses Chromium CVE-2026-118309",
-    "summary": "Microsoft Edge (Chromium-based) incorporates a fix for CVE-2026-118309, a reference resolution flaw discovered in Chromium. The vulnerability allowed attackers to manipulate internal references, potentially leading to memory corruption or denial of service, but no public exploits have been disclosed. Edge users should install the latest update via Windows Update or the Microsoft Edge installer to ensure the patch is applied.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118309"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-cve-2026-118309",
-      "article-a0636b28",
-      "a0636b28",
-      "microsoft-edge-addresses-chromium-cve-2026-118309-1fe91c"
     ]
   }
 ];
