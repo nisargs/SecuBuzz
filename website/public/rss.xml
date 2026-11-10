@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 17:58:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 18:45:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft Releases Windows 11 Cumulative Updates KB5132061, KB5131087</title>
+      <link>https://secubuzz.com/news/microsoft-releases-windows-11-cumulative-updates-k-e0252079</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-windows-11-cumulative-updates-k-e0252079</guid>
+      <description><![CDATA[Microsoft released cumulative updates KB5132061 and KB5131087 for Windows 11 versions 26H2/25H2/24H2 and 23H2. The updates address multiple security vulnerabilities and bugs, though specific CVE identifiers are not disclosed in the release notes. Users should install the patches via Windows Update or manually to maintain system security and feature parity.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:33:26 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Grafana Update Addresses Security Issues on RHEL9</title>
+      <link>https://secubuzz.com/news/grafana-update-addresses-security-issues-on-rhel9-f60a5ecc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-addresses-security-issues-on-rhel9-f60a5ecc</guid>
+      <description><![CDATA[Red Hat released a Grafana update for RHEL 9, addressing multiple security vulnerabilities. The advisory rates the update as Important, with CVSS base scores linked to CVE references, indicating medium‑to‑high severity flaws that could allow unauthorized data access. Administrators should apply the update promptly to mitigate potential exploitation and maintain system integrity.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:20:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97555">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>edk2 Update for RHEL10 Addresses Low‑Severity Issues</title>
+      <link>https://secubuzz.com/news/edk2-update-for-rhel10-addresses-low-severity-issu-c503678a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/edk2-update-for-rhel10-addresses-low-severity-issu-c503678a</guid>
+      <description><![CDATA[Red Hat released an edk2 update for RHEL 10, targeting low‑severity security bugs that could affect firmware initialization. The advisory lists CVSS base scores linked to CVE references, indicating minimal exploitation risk. Users should apply the update to maintain firmware stability, though no immediate threat is reported, and monitor for any related advisories.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:17:59 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97212">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Adobe Fixes 110 Vulnerabilities in Nine Products</title>
+      <link>https://secubuzz.com/news/adobe-fixes-110-vulnerabilities-in-nine-products-ea059d9e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/adobe-fixes-110-vulnerabilities-in-nine-products-ea059d9e</guid>
+      <description><![CDATA[Adobe has patched 110 vulnerabilities across nine products, including AEM, Premiere, Photoshop, After Effects, Connect, Audition, Dimension, Content Credentials SDK, and Media Encoder. The flaws span configuration, input validation, and privilege escalation paths, but no active exploitation reports were disclosed. Adobe recommends applying the latest security updates immediately to mitigate potential risks.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:11:54 GMT</pubDate>
+      <source url="https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Git Addresses Six Security Vulnerabilities in Updates</title>
+      <link>https://secubuzz.com/news/git-addresses-six-security-vulnerabilities-in-upda-a1593972</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/git-addresses-six-security-vulnerabilities-in-upda-a1593972</guid>
+      <description><![CDATA[Git released updates addressing six security vulnerabilities that affected recursive clones, reference handling, merges, binary patches, and imports. The defects involve improper validation of repository metadata and could enable unauthorized code injection or data leakage. Users should install the latest Git version or apply the provided patches to secure their repositories.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:00:00 GMT</pubDate>
+      <source url="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/">GitHub Security Blog</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:97386: Important: go-fdo-client security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-97386-important-go-fdo-client-security-u-585d17b2</link>
@@ -35,6 +80,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Railway Exposes AI‑Driven API Key Theft and Charges</title>
+      <link>https://secubuzz.com/news/railway-exposes-ai-driven-api-key-theft-and-charge-a5e70a7f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/railway-exposes-ai-driven-api-key-theft-and-charge-a5e70a7f</guid>
+      <description><![CDATA[Railway disclosed that attackers leveraged AI agents, a build system flaw, and cloud misconfigurations to exfiltrate customer API keys. The compromised secrets enabled the adversary to generate approximately $740,000 in unauthorized cloud charges across multiple internal systems. Railway is tightening build pipelines, enforcing stricter access controls, and monitoring for anomalous API usage to prevent future incidents.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:19:58 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/railway-details-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>RHSA-2026:97497: Moderate: unbound security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-97497-moderate-unbound-security-bug-fix-a01b4add</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97497-moderate-unbound-security-bug-fix-a01b4add</guid>
@@ -53,6 +107,33 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>RHSA-2026:97553: Important: grafana-pcp security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97553-important-grafana-pcp-security-bug-c05a01d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97553-important-grafana-pcp-security-bug-c05a01d7</guid>
+      <description><![CDATA[An update for grafana-pcp is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:53:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97553">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97537: Important: cockpit-podman security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97537-important-cockpit-podman-security-a435431d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97537-important-cockpit-podman-security-a435431d</guid>
+      <description><![CDATA[An update for cockpit-podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:49:14 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97537">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SBOM, AI BOMs Drive New Software Transparency</title>
+      <link>https://secubuzz.com/news/sbom-ai-boms-drive-new-software-transparency-17fcb302</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sbom-ai-boms-drive-new-software-transparency-17fcb302</guid>
+      <description><![CDATA[Allan Friedman discussed how SBOMs and emerging AI BOMs are reshaping software supply‑chain visibility. He emphasized that knowing component contents is only the first step, and organizations must analyze SBOM data to detect risks. The podcast recommends adopting automated SBOM ingestion tools and integrating AI analysis to prioritize remediation efforts.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:45:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Ivanti Issues Patches for Endpoint Manager, CSA Vulnerabilities</title>
       <link>https://secubuzz.com/news/ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce</guid>
@@ -60,6 +141,15 @@
       <pubDate>Tue, 10 Nov 2026 16:43:58 GMT</pubDate>
       <source url="https://cybersecuritynews.com/ivanti-security-flaws/">Cyber Security News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CVE‑2026‑125271: AWS API MCP Policy Bypass</title>
+      <link>https://secubuzz.com/news/cve-2026-125271-aws-api-mcp-policy-bypass-7320861d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-125271-aws-api-mcp-policy-bypass-7320861d</guid>
+      <description><![CDATA[CVE‑2026‑125271 exposes a policy bypass in AWS API MCP Server caused by incorrect operation name normalization. The flaw allows actors to execute operations that the operator's security policy denies or requires elicitation for, potentially granting unauthorized API access. AWS has released a patch for affected versions (>=0.2.13); administrators should update immediately and review policy configurations.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:42:37 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-176-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Xen Orchestra Auth Bypass Enables VM Server Hijack</title>
@@ -95,6 +185,42 @@
       <description><![CDATA[Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems.]]></description>
       <pubDate>Tue, 10 Nov 2026 16:00:55 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>HEIF Image Extensions Vulnerability Enables Local RCE</title>
+      <link>https://secubuzz.com/news/heif-image-extensions-vulnerability-enables-local-10305511</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/heif-image-extensions-vulnerability-enables-local-10305511</guid>
+      <description><![CDATA[A use‑after‑free flaw in Microsoft HEIF Image Extensions lets an unauthorized attacker execute code locally on Windows. CVE‑2026‑100204 exploits heap corruption triggered by a crafted HEIF file, enabling local code execution without authentication. Microsoft released a patch in the latest cumulative update; apply it immediately or disable HEIF processing as a temporary fix.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100204">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Windows Kernel Use-After-Free Allows Local Privilege Escalation</title>
+      <link>https://secubuzz.com/news/windows-kernel-use-after-free-allows-local-privile-597d1e7b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-kernel-use-after-free-allows-local-privile-597d1e7b</guid>
+      <description><![CDATA[A use‑after‑free bug in the Windows Kernel allows an authorized attacker to elevate privileges locally on affected systems. The flaw, identified as CVE‑2026‑108403, arises from improper memory handling during kernel operations, enabling local privilege escalation without authentication. Microsoft has issued a patch in the latest cumulative update; administrators should apply it promptly to prevent privilege escalation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108403">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>ODBC Driver Heap Overflow Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/odbc-driver-heap-overflow-enables-remote-code-exec-38a3b1c9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/odbc-driver-heap-overflow-enables-remote-code-exec-38a3b1c9</guid>
+      <description><![CDATA[A heap‑based buffer overflow in the Microsoft ODBC Driver permits an unauthorized attacker to execute code over a network. CVE‑2026‑108411 exploits memory corruption triggered by malformed ODBC requests, enabling remote code execution without authentication. Microsoft released a patch in the latest cumulative update; apply it immediately or restrict ODBC traffic as a temporary workaround.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108411">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Windows DNS RCE via Deserialization Vulnerability</title>
+      <link>https://secubuzz.com/news/windows-dns-rce-via-deserialization-vulnerability-e4c11f4e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-dns-rce-via-deserialization-vulnerability-e4c11f4e</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-109463, a deserialization flaw in Windows DNS enabling unauthenticated remote code execution over the network. Attackers can craft malicious DNS responses to trigger arbitrary code execution on affected systems. Microsoft released an emergency patch addressing this critical vulnerability, and administrators should deploy it promptly to prevent exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109463">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
     <item>
@@ -329,132 +455,6 @@
       <description><![CDATA[Russian state-linked hackers compromised government email servers in Romania and Kazakhstan, intercepting messages exchanged with NATO and EU officials. The intrusion leveraged credential theft and internal access to infiltrate mail systems, enabling covert eavesdropping on diplomatic communications without detection. Affected organizations should conduct forensic analysis, reset credentials, and implement multi-factor authentication to prevent further compromise.]]></description>
       <pubDate>Tue, 10 Nov 2026 13:00:00 GMT</pubDate>
       <source url="https://therecord.media/russia-hackers-espionage-romania-kazakhstan">The Record</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>AI Simplifies Reverse Engineering of Software and Malware</title>
-      <link>https://secubuzz.com/news/ai-simplifies-reverse-engineering-of-software-and-106b4d6e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-simplifies-reverse-engineering-of-software-and-106b4d6e</guid>
-      <description><![CDATA[Researchers demonstrated that artificial intelligence tools can now decompile and reconstruct complex software and the Turla malware, lowering the barrier for reverse engineering. The capability exposes hidden logic, facilitates vulnerability discovery, and speeds threat analysis, raising concerns for defenders. Security teams should adopt AI-aware defensive tools, continuous monitoring, and threat intelligence sharing to mitigate accelerated reverse engineering risks.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/application-security/ai-reverse-engineering-apps">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97040: Important: kernel security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97040-important-kernel-security-bug-fix-275ecb10</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97040-important-kernel-security-bug-fix-275ecb10</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 12:55:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97040">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Moderate sssd Update for RHEL 10</title>
-      <link>https://secubuzz.com/news/red-hat-issues-moderate-sssd-update-for-rhel-10-1609cdcb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-moderate-sssd-update-for-rhel-10-1609cdcb</guid>
-      <description><![CDATA[Red Hat released a moderate-impact update for the sssd service on Red Hat Enterprise Linux 10, addressing multiple security bugs. The update carries a CVSS base score for each vulnerability, with references to CVE identifiers in the advisory’s links. Administrators should apply the sssd update immediately to mitigate the identified weaknesses and maintain system integrity.]]></description>
-      <pubDate>Tue, 10 Nov 2026 12:54:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97077">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apple Releases November 2026 Security Updates</title>
-      <link>https://secubuzz.com/news/apple-releases-november-2026-security-updates-a7e401a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-november-2026-security-updates-a7e401a4</guid>
-      <description><![CDATA[Apple released a November 2026 update patching nine vulnerabilities across iOS, iPadOS, macOS, watchOS, and visionOS, including CVE-2026-113971 affecting iOS/iPadOS 26. The fixes address Bluetooth pairing weaknesses, iMessage group chat message leakage, and flaws that could allow remote attackers to intercept messages. Users should install the latest firmware and security teams should monitor for exploit activity and apply patches promptly.]]></description>
-      <pubDate>Tue, 10 Nov 2026 12:48:55 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33506">SANS Internet Storm Center</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Anthropic Releases Mythos 5.2 With Enhanced Sandbox Security</title>
-      <link>https://secubuzz.com/news/anthropic-releases-mythos-5-2-with-enhanced-sandbo-418ce659</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-mythos-5-2-with-enhanced-sandbo-418ce659</guid>
-      <description><![CDATA[Anthropic released Mythos 5.2, a new model iteration focused on vulnerability discovery for security researchers. The update tightens sandbox boundaries, reducing sandbox escape incidents observed in controlled testing environments. Security teams should upgrade to Mythos 5.2 to leverage enhanced sandbox integrity and bug‑hunting capabilities and improved detection of exploitation attempts.]]></description>
-      <pubDate>Tue, 10 Nov 2026 12:17:13 GMT</pubDate>
-      <source url="https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ireland Warns of Rising Cyberattack Threats Ahead of IRISSCON</title>
-      <link>https://secubuzz.com/news/ireland-warns-of-rising-cyberattack-threats-ahead-f95a4122</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ireland-warns-of-rising-cyberattack-threats-ahead-f95a4122</guid>
-      <description><![CDATA[Irish cybersecurity officials warn that the nation faces increasing cyberattack and hybrid threat sophistication, citing a lack of preparedness. The warning precedes IRISSCON 2026, the annual IRISSCERT conference at Dublin’s Aviva Stadium, where experts will discuss strengthening national security capabilities. Stakeholders are urged to implement enhanced cyber defenses and policy reforms before the conference to mitigate the escalating threat landscape.]]></description>
-      <pubDate>Tue, 10 Nov 2026 12:16:40 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/irisscon-2026-dublin/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Binance Alerts to iOS Sandbox Escape Exposing Keys</title>
-      <link>https://secubuzz.com/news/binance-alerts-to-ios-sandbox-escape-exposing-keys-a30ef69e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binance-alerts-to-ios-sandbox-escape-exposing-keys-a30ef69e</guid>
-      <description><![CDATA[Binance warns that a sandbox escape lets iOS 26 and 27 apps read files from other apps, exposing seed phrases and private keys. The flaw, worse_query, exploits a privilege escalation bug in the iOS sandbox, enabling unauthorized file access.]]></description>
-      <pubDate>Tue, 10 Nov 2026 12:15:31 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SAP Issues Patches for Four Maximum-Severity Flaws</title>
-      <link>https://secubuzz.com/news/sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b</guid>
-      <description><![CDATA[SAP released November 2026 security updates addressing 35 vulnerabilities, including four maximum‑severity flaws in NetWeaver, Web Dispatcher, and Gateway components. The flaws, classified as maximum severity, could allow remote code execution or privilege escalation if exploited, though no active exploitation reports exist. SAP has issued patches for all affected products; administrators should apply the updates promptly to mitigate potential exploitation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 12:07:03 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenSSH Musl Flaw Enables Password‑Authentication Bypass</title>
-      <link>https://secubuzz.com/news/openssh-musl-flaw-enables-password-authentication-11883b79</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openssh-musl-flaw-enables-password-authentication-11883b79</guid>
-      <description><![CDATA[A flaw dubbed 'sshole' affects OpenSSH on musl‑based Linux, letting attackers authenticate with an oversized password over 256 bytes. The bug arises from a buffer oversight in password parsing, enabling unauthorized login without valid credentials and potentially full system access. Admins should upgrade to the patched OpenSSH release or apply the vendor‑issued workaround to reject oversized passwords.]]></description>
-      <pubDate>Tue, 10 Nov 2026 12:02:38 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html">Schneier on Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Binance Alerts iPhone Users to iOS File‑Access Flaw</title>
-      <link>https://secubuzz.com/news/binance-alerts-iphone-users-to-ios-file-access-fla-4cd25477</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binance-alerts-iphone-users-to-ios-file-access-fla-4cd25477</guid>
-      <description><![CDATA[Binance warned iPhone users about worse_query, an iOS flaw that permits malicious apps to read files belonging to other apps. Affected iOS versions 26.7.1, 27.0.1, and 27.2 could expose seed phrases, private keys, and login credentials, creating a high‑risk data leakage vector. Users should install the latest iOS updates or apply the vendor’s security patch to mitigate the file‑access vulnerability.]]></description>
-      <pubDate>Tue, 10 Nov 2026 11:40:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ios-flaw-expose-crypto-wallet/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Claude Mythos 5.2 Enhances Bug Hunting, Reduces Sandbox Breaks</title>
-      <link>https://secubuzz.com/news/claude-mythos-5-2-enhances-bug-hunting-reduces-san-8326924a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-mythos-5-2-enhances-bug-hunting-reduces-san-8326924a</guid>
-      <description><![CDATA[Anthropic released Claude Mythos 5.2, a model variant aimed at improving cybersecurity task detection. The update tightens safety classifiers, decreasing sandbox‑breaking incidents observed during controlled testing of penetration‑testing and exploit‑generation requests. Security teams should upgrade to Mythos 5.2 to benefit from stricter safeguards and reduced sandbox escape risk and improved detection.]]></description>
-      <pubDate>Tue, 10 Nov 2026 11:40:00 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/anthropic-claude-fable-and-mythos-5-2-safeguards/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Rich Network Data Improves Post-Alert Interdiction</title>
-      <link>https://secubuzz.com/news/rich-network-data-improves-post-alert-interdiction-4a9ec0de</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rich-network-data-improves-post-alert-interdiction-4a9ec0de</guid>
-      <description><![CDATA[The article argues that relying solely on alerts is insufficient, as security teams often fail to detect sophisticated intrusions. It proposes that rich network data enables interdiction by identifying and disrupting malicious traffic after an alert has been triggered. Security teams should integrate deep packet inspection and flow analytics to complement alerts, improving detection coverage and response times.]]></description>
-      <pubDate>Tue, 10 Nov 2026 11:38:13 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SAP Issues Critical Patch Day for NetWeaver, Dispatcher, Gateway</title>
-      <link>https://secubuzz.com/news/sap-issues-critical-patch-day-for-netweaver-dispat-0a949af6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sap-issues-critical-patch-day-for-netweaver-dispat-0a949af6</guid>
-      <description><![CDATA[SAP released its November 2026 Security Patch Day, addressing critical vulnerabilities in NetWeaver, Web Dispatcher, and Gateway components. The update includes 35 new security notes, four GitHub advisories, and fixes for four CVEs, including CVE-2026-44756, each scoring a maximum CVSS of 10.0. Administrators should apply patches immediately to eliminate the high‑risk remote code execution vectors exposed by these flaws.]]></description>
-      <pubDate>Tue, 10 Nov 2026 11:10:19 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/sap-security-patch-day-november/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>France Attributes Supermarket Refrigeration Sabotage to Iranian Hackers</title>
-      <link>https://secubuzz.com/news/france-attributes-supermarket-refrigeration-sabota-99bf71bc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/france-attributes-supermarket-refrigeration-sabota-99bf71bc</guid>
-      <description><![CDATA[France attributed a disruptive cyberattack on 700 supermarket refrigeration systems to Iran's Islamic Revolutionary Guard Corps. Attackers remotely manipulated defrost controls during October 11–12, causing widespread food spoilage and approximately 20 fires, per the Paris prosecutor. Foreign Minister Jean-Noël Barrot confirmed the attribution; affected organizations should audit industrial control system access and implement network segmentation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 10:23:06 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/iranian-hackers-supermarket-cyberattacks/">Cyber Security News</source>
       <category>Nation State</category>
     </item>
   </channel>

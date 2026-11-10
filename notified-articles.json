@@ -4099,5 +4099,21 @@
   "https://access.redhat.com/errata/RHSA-2026:97521",
   "https://cybersecuritynews.com/notion-confirms-data-breach/",
   "https://access.redhat.com/errata/RHSA-2026:97344",
-  "https://access.redhat.com/errata/RHSA-2026:97533"
+  "https://access.redhat.com/errata/RHSA-2026:97533",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100204",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108403",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108411",
+  "https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/",
+  "https://www.sophos.com/en-us/blog/artex-attackers-apply-agentic-ai",
+  "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
+  "https://access.redhat.com/errata/RHSA-2026:97555",
+  "https://access.redhat.com/errata/RHSA-2026:97212",
+  "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/",
+  "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+  "https://cybersecuritynews.com/railway-details-data-breach/",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-176-aws/",
+  "https://developer.apple.com/news/releases/?id=11092026e",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109463",
+  "https://access.redhat.com/errata/RHSA-2026:97537",
+  "https://access.redhat.com/errata/RHSA-2026:97553"
 ]

@@ -11,6 +11,99 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-releases-windows-11-cumulative-updates-k-e0252079",
+    "title": "Microsoft Releases Windows 11 Cumulative Updates KB5132061, KB5131087",
+    "summary": "Microsoft released cumulative updates KB5132061 and KB5131087 for Windows 11 versions 26H2/25H2/24H2 and 23H2. The updates address multiple security vulnerabilities and bugs, though specific CVE identifiers are not disclosed in the release notes. Users should install the patches via Windows Update or manually to maintain system security and feature parity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
+    "publishedAt": "2026-11-10T18:33:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-windows-11-cumulative-updates-k",
+      "article-e0252079",
+      "e0252079",
+      "microsoft-releases-windows-11-cumulative-updates-k-636e3e",
+      "microsoft-releases-windows-11-cumulative-updates-kb5132061-k"
+    ]
+  },
+  {
+    "slug": "grafana-update-addresses-security-issues-on-rhel9-f60a5ecc",
+    "title": "Grafana Update Addresses Security Issues on RHEL9",
+    "summary": "Red Hat released a Grafana update for RHEL 9, addressing multiple security vulnerabilities. The advisory rates the update as Important, with CVSS base scores linked to CVE references, indicating medium‑to‑high severity flaws that could allow unauthorized data access. Administrators should apply the update promptly to mitigate potential exploitation and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97555",
+    "publishedAt": "2026-11-10T18:20:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grafana-update-addresses-security-issues-on-rhel9",
+      "article-f60a5ecc",
+      "f60a5ecc",
+      "grafana-update-addresses-security-issues-on-rhel9-37d759"
+    ]
+  },
+  {
+    "slug": "edk2-update-for-rhel10-addresses-low-severity-issu-c503678a",
+    "title": "edk2 Update for RHEL10 Addresses Low‑Severity Issues",
+    "summary": "Red Hat released an edk2 update for RHEL 10, targeting low‑severity security bugs that could affect firmware initialization. The advisory lists CVSS base scores linked to CVE references, indicating minimal exploitation risk. Users should apply the update to maintain firmware stability, though no immediate threat is reported, and monitor for any related advisories.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97212",
+    "publishedAt": "2026-11-10T18:17:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "edk2-update-for-rhel10-addresses-low-severity-issu",
+      "article-c503678a",
+      "c503678a",
+      "edk2-update-for-rhel10-addresses-low-severity-issu-37d765",
+      "edk2-update-for-rhel10-addresses-low-severity-issues"
+    ]
+  },
+  {
+    "slug": "adobe-fixes-110-vulnerabilities-in-nine-products-ea059d9e",
+    "title": "Adobe Fixes 110 Vulnerabilities in Nine Products",
+    "summary": "Adobe has patched 110 vulnerabilities across nine products, including AEM, Premiere, Photoshop, After Effects, Connect, Audition, Dimension, Content Credentials SDK, and Media Encoder. The flaws span configuration, input validation, and privilege escalation paths, but no active exploitation reports were disclosed. Adobe recommends applying the latest security updates immediately to mitigate potential risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/",
+    "publishedAt": "2026-11-10T18:11:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "adobe-fixes-110-vulnerabilities-in-nine-products",
+      "article-ea059d9e",
+      "ea059d9e",
+      "adobe-fixes-110-vulnerabilities-in-nine-products-439ac8"
+    ]
+  },
+  {
+    "slug": "git-addresses-six-security-vulnerabilities-in-upda-a1593972",
+    "title": "Git Addresses Six Security Vulnerabilities in Updates",
+    "summary": "Git released updates addressing six security vulnerabilities that affected recursive clones, reference handling, merges, binary patches, and imports. The defects involve improper validation of repository metadata and could enable unauthorized code injection or data leakage. Users should install the latest Git version or apply the provided patches to secure their repositories.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "GitHub Security Blog",
+    "sourceUrl": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+    "publishedAt": "2026-11-10T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "git-addresses-six-security-vulnerabilities-in-upda",
+      "article-a1593972",
+      "a1593972",
+      "git-addresses-six-security-vulnerabilities-in-upda-48249b",
+      "git-addresses-six-security-vulnerabilities-in-updates"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97386-important-go-fdo-client-security-u-585d17b2",
     "title": "RHSA-2026:97386: Important: go-fdo-client security update",
     "summary": "An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -67,6 +160,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "railway-exposes-ai-driven-api-key-theft-and-charge-a5e70a7f",
+    "title": "Railway Exposes AI‑Driven API Key Theft and Charges",
+    "summary": "Railway disclosed that attackers leveraged AI agents, a build system flaw, and cloud misconfigurations to exfiltrate customer API keys. The compromised secrets enabled the adversary to generate approximately $740,000 in unauthorized cloud charges across multiple internal systems. Railway is tightening build pipelines, enforcing stricter access controls, and monitoring for anomalous API usage to prevent future incidents.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/railway-details-data-breach/",
+    "publishedAt": "2026-11-10T17:19:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "railway-exposes-ai-driven-api-key-theft-and-charge",
+      "article-a5e70a7f",
+      "a5e70a7f",
+      "railway-exposes-ai-driven-api-key-theft-and-charge-6c98d4",
+      "railway-exposes-ai-driven-api-key-theft-and-charges"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97497-moderate-unbound-security-bug-fix-a01b4add",
     "title": "RHSA-2026:97497: Moderate: unbound security, bug fix, and enhancement update",
     "summary": "An update for unbound is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -105,6 +217,62 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-97553-important-grafana-pcp-security-bug-c05a01d7",
+    "title": "RHSA-2026:97553: Important: grafana-pcp security, bug fix, and enhancement update",
+    "summary": "An update for grafana-pcp is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97553",
+    "publishedAt": "2026-11-10T16:53:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97553-important-grafana-pcp-security-bug",
+      "article-c05a01d7",
+      "c05a01d7",
+      "rhsa-2026-97553-important-grafana-pcp-security-bug-37d759",
+      "rhsa-2026-97553-important-grafana-pcp-security-bug-fix-and-e"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97537-important-cockpit-podman-security-a435431d",
+    "title": "RHSA-2026:97537: Important: cockpit-podman security update",
+    "summary": "An update for cockpit-podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97537",
+    "publishedAt": "2026-11-10T16:49:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97537-important-cockpit-podman-security",
+      "article-a435431d",
+      "a435431d",
+      "rhsa-2026-97537-important-cockpit-podman-security-37d759",
+      "rhsa-2026-97537-important-cockpit-podman-security-update"
+    ]
+  },
+  {
+    "slug": "sbom-ai-boms-drive-new-software-transparency-17fcb302",
+    "title": "SBOM, AI BOMs Drive New Software Transparency",
+    "summary": "Allan Friedman discussed how SBOMs and emerging AI BOMs are reshaping software supply‑chain visibility. He emphasized that knowing component contents is only the first step, and organizations must analyze SBOM data to detect risks. The podcast recommends adopting automated SBOM ingestion tools and integrating AI analysis to prioritize remediation efforts.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/",
+    "publishedAt": "2026-11-10T16:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sbom-ai-boms-drive-new-software-transparency",
+      "article-17fcb302",
+      "17fcb302",
+      "sbom-ai-boms-drive-new-software-transparency-41f60e"
+    ]
+  },
+  {
     "slug": "ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce",
     "title": "Ivanti Issues Patches for Endpoint Manager, CSA Vulnerabilities",
     "summary": "Ivanti released patches for Endpoint Manager, Endpoint Manager Mobile, Sentry, and Cloud Services Application after discovering flaws enabling remote code execution, certificate tampering, data exposure, and service disruption. Two critical vulnerabilities in Endpoint Manager and Cloud Services Application pose the highest risk, requiring code execution privileges. Administrators should apply the updates immediately and verify certificate trust chains to mitigate exploitation.",
@@ -121,6 +289,24 @@ export const news: NewsBrief[] = [
       "f802dfce",
       "ivanti-issues-patches-for-endpoint-manager-csa-vul-18631b",
       "ivanti-issues-patches-for-endpoint-manager-csa-vulnerabiliti"
+    ]
+  },
+  {
+    "slug": "cve-2026-125271-aws-api-mcp-policy-bypass-7320861d",
+    "title": "CVE‑2026‑125271: AWS API MCP Policy Bypass",
+    "summary": "CVE‑2026‑125271 exposes a policy bypass in AWS API MCP Server caused by incorrect operation name normalization. The flaw allows actors to execute operations that the operator's security policy denies or requires elicitation for, potentially granting unauthorized API access. AWS has released a patch for affected versions (>=0.2.13); administrators should update immediately and review policy configurations.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-176-aws/",
+    "publishedAt": "2026-11-10T16:42:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-125271-aws-api-mcp-policy-bypass",
+      "article-7320861d",
+      "7320861d",
+      "cve-2026-125271-aws-api-mcp-policy-bypass-4186db"
     ]
   },
   {
@@ -198,6 +384,83 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "heif-image-extensions-vulnerability-enables-local-10305511",
+    "title": "HEIF Image Extensions Vulnerability Enables Local RCE",
+    "summary": "A use‑after‑free flaw in Microsoft HEIF Image Extensions lets an unauthorized attacker execute code locally on Windows. CVE‑2026‑100204 exploits heap corruption triggered by a crafted HEIF file, enabling local code execution without authentication. Microsoft released a patch in the latest cumulative update; apply it immediately or disable HEIF processing as a temporary fix.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100204",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "heif-image-extensions-vulnerability-enables-local",
+      "article-10305511",
+      "10305511",
+      "heif-image-extensions-vulnerability-enables-local-1ffada",
+      "heif-image-extensions-vulnerability-enables-local-rce"
+    ]
+  },
+  {
+    "slug": "windows-kernel-use-after-free-allows-local-privile-597d1e7b",
+    "title": "Windows Kernel Use-After-Free Allows Local Privilege Escalation",
+    "summary": "A use‑after‑free bug in the Windows Kernel allows an authorized attacker to elevate privileges locally on affected systems. The flaw, identified as CVE‑2026‑108403, arises from improper memory handling during kernel operations, enabling local privilege escalation without authentication. Microsoft has issued a patch in the latest cumulative update; administrators should apply it promptly to prevent privilege escalation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108403",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-kernel-use-after-free-allows-local-privile",
+      "article-597d1e7b",
+      "597d1e7b",
+      "windows-kernel-use-after-free-allows-local-privile-1ff730",
+      "windows-kernel-use-after-free-allows-local-privilege-escalat"
+    ]
+  },
+  {
+    "slug": "odbc-driver-heap-overflow-enables-remote-code-exec-38a3b1c9",
+    "title": "ODBC Driver Heap Overflow Enables Remote Code Execution",
+    "summary": "A heap‑based buffer overflow in the Microsoft ODBC Driver permits an unauthorized attacker to execute code over a network. CVE‑2026‑108411 exploits memory corruption triggered by malformed ODBC requests, enabling remote code execution without authentication. Microsoft released a patch in the latest cumulative update; apply it immediately or restrict ODBC traffic as a temporary workaround.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108411",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "odbc-driver-heap-overflow-enables-remote-code-exec",
+      "article-38a3b1c9",
+      "38a3b1c9",
+      "odbc-driver-heap-overflow-enables-remote-code-exec-1ff730",
+      "odbc-driver-heap-overflow-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "windows-dns-rce-via-deserialization-vulnerability-e4c11f4e",
+    "title": "Windows DNS RCE via Deserialization Vulnerability",
+    "summary": "Microsoft disclosed CVE-2026-109463, a deserialization flaw in Windows DNS enabling unauthenticated remote code execution over the network. Attackers can craft malicious DNS responses to trigger arbitrary code execution on affected systems. Microsoft released an emergency patch addressing this critical vulnerability, and administrators should deploy it promptly to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109463",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-109463"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-dns-rce-via-deserialization-vulnerability",
+      "article-e4c11f4e",
+      "e4c11f4e",
+      "windows-dns-rce-via-deserialization-vulnerability-1ff6bb"
     ]
   },
   {
@@ -2095,6 +2358,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "threat-actors-deploy-agentic-ai-pentesting-framewo-d48641a6",
+    "title": "Threat Actors Deploy Agentic AI Pentesting Framework",
+    "summary": "Threat actors are deploying an agentic AI pentesting framework, enabling automated reconnaissance and exploitation across target networks. The framework leverages large‑language models to generate attack vectors, increasing speed and reducing manual effort, and has been observed in the wild. Defenders should update detection rules, employ AI‑aware monitoring, and enforce strict privilege controls to mitigate automated exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/artex-attackers-apply-agentic-ai",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threat-actors-deploy-agentic-ai-pentesting-framewo",
+      "article-d48641a6",
+      "d48641a6",
+      "threat-actors-deploy-agentic-ai-pentesting-framewo-1e099a",
+      "threat-actors-deploy-agentic-ai-pentesting-framework"
+    ]
+  },
+  {
     "slug": "byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b",
     "title": "BYOD Ransomware Encrypts Vanderbilt University Databases",
     "summary": "Vanderbilt University fell victim to a BYOD ransomware attack that encrypted its database systems and exfiltrated student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged access, locking critical databases and demanding payment. University officials isolated affected systems, applied patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.",
@@ -2482,6 +2764,24 @@ export const news: NewsBrief[] = [
       "article-06ebae8e",
       "06ebae8e",
       "openjdk-21-faces-multiple-authentication-flaws-7e8934"
+    ]
+  },
+  {
+    "slug": "apple-releases-ipados-26-7-3-security-update-d48ebd8a",
+    "title": "Apple Releases iPadOS 26.7.3 Security Update",
+    "summary": "Apple issued iPadOS 26.7.3 (23H131) to address multiple security vulnerabilities affecting the iPadOS platform. The update resolves flaws in the operating system that could allow attackers to execute arbitrary code or bypass security protections. iPad users should install this patch immediately to mitigate potential exploitation risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026e",
+    "publishedAt": "2026-11-09T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-ipados-26-7-3-security-update",
+      "article-d48ebd8a",
+      "d48ebd8a",
+      "apple-releases-ipados-26-7-3-security-update-70fac5"
     ]
   },
   {
@@ -9335,304 +9635,6 @@ export const news: NewsBrief[] = [
       "02b14aec",
       "sysdig-ai-defense-enforces-runtime-guardrails-on-a-428d09",
       "sysdig-ai-defense-enforces-runtime-guardrails-on-ai-agents"
-    ]
-  },
-  {
-    "slug": "phishing-sites-use-fake-suspended-pages-to-evade-t-3068a5ff",
-    "title": "Phishing Sites Use Fake Suspended Pages to Evade Takedowns",
-    "summary": "Over 200 phishing sites served fake ‘suspended’ pages to first‑time visitors while delivering malicious content to returning users. The tactic lets attackers evade takedowns by presenting a legitimate notice to new visitors, then redirecting them to phishing payloads on subsequent visits. Defenders should monitor domain reputation, block suspicious URLs, and enforce strict content‑security policies to detect deceptive landing pages.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/",
-    "publishedAt": "2026-11-05T13:22:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishing-sites-use-fake-suspended-pages-to-evade-t",
-      "article-3068a5ff",
-      "3068a5ff",
-      "phishing-sites-use-fake-suspended-pages-to-evade-t-44ea10",
-      "phishing-sites-use-fake-suspended-pages-to-evade-takedowns"
-    ]
-  },
-  {
-    "slug": "artex-hackers-expose-servers-revealing-ai-tools-be-399999b4",
-    "title": "ARTEX Hackers Expose Servers Revealing AI Tools Behind Bank Breaches",
-    "summary": "Hackers in the ARTEX campaign exposed their own servers between late September and early October 2026, revealing AI models, scripts, and proxies used to breach seven South Korean financial firms. The self-disclosure provided researchers rare visibility into the operational infrastructure supporting the intrusions. No specific CVE identifier is stated, so this is classified as a VULNERABILITY with MEDIUM severity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/artex-hackers/",
-    "publishedAt": "2026-11-05T13:11:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "artex-hackers-expose-servers-revealing-ai-tools-be",
-      "article-399999b4",
-      "399999b4",
-      "artex-hackers-expose-servers-revealing-ai-tools-be-382689",
-      "artex-hackers-expose-servers-revealing-ai-tools-behind-bank-"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95516-critical-webkit2gtk3-security-bug-9702211f",
-    "title": "RHSA-2026:95516: Critical: webkit2gtk3 security, bug fix, and enhancement update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95516",
-    "publishedAt": "2026-11-05T13:03:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95516-critical-webkit2gtk3-security-bug",
-      "article-9702211f",
-      "9702211f",
-      "rhsa-2026-95516-critical-webkit2gtk3-security-bug-37d842",
-      "rhsa-2026-95516-critical-webkit2gtk3-security-bug-fix-and-en"
-    ]
-  },
-  {
-    "slug": "french-blood-bank-site-targeted-in-cyberattack-dbec3012",
-    "title": "French Blood Bank Site Targeted in Cyberattack",
-    "summary": "A cyberattack targeted a French blood bank site, though blood products remained uncompromised during the incident. The attack follows recent remote hacking incidents impacting supermarket fridges and freezers across several European countries, causing temperature disruptions. Specific details regarding the initial attack vector, underlying vulnerabilities, or formal remediation guidelines were not disclosed in the official reporting.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised/",
-    "publishedAt": "2026-11-05T12:58:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "french-blood-bank-site-targeted-in-cyberattack",
-      "article-dbec3012",
-      "dbec3012",
-      "french-blood-bank-site-targeted-in-cyberattack-54cf8f"
-    ]
-  },
-  {
-    "slug": "haproxy-regression-fixes-chunked-request-dos-9329d665",
-    "title": "HAProxy Regression Fixes Chunked Request DoS",
-    "summary": "HAProxy on Ubuntu 22.04 LTS regressed when processing HTTP/1.1 chunked requests, causing excessive CPU consumption and denial of service. Two CVEs (CVE-2026-110353 and CVE-2026-110354) were addressed in USN-8972-2. Organizations should apply the updated package to restore proper chunked request handling. The regression was triggered by a prior security update that inadvertently broke chunked request processing.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8972-2",
-    "publishedAt": "2026-11-05T12:52:52.000Z",
-    "cves": [
-      "CVE-2026-110353",
-      "CVE-2026-110354"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "haproxy-regression-fixes-chunked-request-dos",
-      "article-9329d665",
-      "9329d665",
-      "haproxy-regression-fixes-chunked-request-dos-7fbc8a"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-ruby-2-5-security-update-2f0dc9c6",
-    "title": "Red Hat Issues Ruby 2.5 Security Update",
-    "summary": "Red Hat released a security update for the ruby:2.5 module on RHEL 8.8 Update Services for SAP Solutions and the RHEL 8.8 Telecommunications Update Service. The update addresses multiple vulnerabilities rated as Important, with CVSS base scores provided via the referenced CVE links. Customers should apply the patch immediately to mitigate potential exploitation of the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95514",
-    "publishedAt": "2026-11-05T12:52:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-ruby-2-5-security-update",
-      "article-2f0dc9c6",
-      "2f0dc9c6",
-      "red-hat-issues-ruby-2-5-security-update-37d842"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-postgresql16-pgvector-1f136c80",
-    "title": "Red Hat Updates PostgreSQL16-pgvector",
-    "summary": "Red Hat released a security update for the postgresql16-pgvector module on RHEL 10.0 Extended Update Support, addressing critical issues. The update fixes multiple vulnerabilities rated as Important, with CVSS base scores available through the referenced CVE links. Systems should apply the patch promptly to prevent exploitation of the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95521",
-    "publishedAt": "2026-11-05T12:52:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-postgresql16-pgvector",
-      "article-1f136c80",
-      "1f136c80",
-      "red-hat-updates-postgresql16-pgvector-37d842"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95520-critical-webkit2gtk3-security-bug-050c3e95",
-    "title": "RHSA-2026:95520: Critical: webkit2gtk3 security, bug fix, and enhancement update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95520",
-    "publishedAt": "2026-11-05T12:51:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95520-critical-webkit2gtk3-security-bug",
-      "article-050c3e95",
-      "050c3e95",
-      "rhsa-2026-95520-critical-webkit2gtk3-security-bug-37d842",
-      "rhsa-2026-95520-critical-webkit2gtk3-security-bug-fix-and-en"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95502-critical-webkit2gtk3-security-bug-6db4a201",
-    "title": "RHSA-2026:95502: Critical: webkit2gtk3 security, bug fix, and enhancement update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95502",
-    "publishedAt": "2026-11-05T12:48:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95502-critical-webkit2gtk3-security-bug",
-      "article-6db4a201",
-      "6db4a201",
-      "rhsa-2026-95502-critical-webkit2gtk3-security-bug-37d842",
-      "rhsa-2026-95502-critical-webkit2gtk3-security-bug-fix-and-en"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95499-important-libx11-security-update-2c41ad4d",
-    "title": "RHSA-2026:95499: Important: libX11 security update",
-    "summary": "An update for libX11 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95499",
-    "publishedAt": "2026-11-05T12:40:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95499-important-libx11-security-update",
-      "article-2c41ad4d",
-      "2c41ad4d",
-      "rhsa-2026-95499-important-libx11-security-update-37d845"
-    ]
-  },
-  {
-    "slug": "cisco-ucs-central-rce-patch-released-d404f322",
-    "title": "Cisco UCS Central RCE Patch Released",
-    "summary": "An unauthenticated remote code execution flaw, CVE-2026-109593, was discovered in Cisco UCS Central Software, exposing authentication and MitM weaknesses in WatchGuard devices. The flaw lets attackers run arbitrary code on management servers without credentials, potentially disrupting data center operations; no public exploit has surfaced. Cisco has issued a patch, WatchGuard released updates, and SonicWall declined to address its GMS vulnerabilities.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/",
-    "publishedAt": "2026-11-05T12:33:49.000Z",
-    "cves": [
-      "CVE-2026-109593"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-ucs-central-rce-patch-released",
-      "article-d404f322",
-      "d404f322",
-      "cisco-ucs-central-rce-patch-released-279504"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-security-update-for-delve-tool-b57ccc39",
-    "title": "Red Hat Issues Security Update for Delve Tool",
-    "summary": "Red Hat issued a security update for the delve tool on RHEL 10.2 Extended Update Support, fixing vulnerabilities that could enable potential unauthorized access. The advisory lists multiple CVSS base scores but does not provide specific CVE identifiers. Red Hat recommends applying the update immediately; no additional workarounds are required.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95519",
-    "publishedAt": "2026-11-05T12:32:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-security-update-for-delve-tool",
-      "article-b57ccc39",
-      "b57ccc39",
-      "red-hat-issues-security-update-for-delve-tool-37d842"
-    ]
-  },
-  {
-    "slug": "exposure-management-tests-reveal-persistent-gaps-1ada0326",
-    "title": "Exposure Management Tests Reveal Persistent Gaps",
-    "summary": "A critical exposure finding can traverse multiple security tools yet leave an organization still exposed, highlighting gaps in coverage. The vulnerability has a severity score, and a ticket is queued, but remediation stalls without clarity on ownership, attacker reach, protection, and business impact. Each missing detail compounds risk, underscoring the need for comprehensive data collection before remediation can proceed.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
-    "publishedAt": "2026-11-05T12:25:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "exposure-management-tests-reveal-persistent-gaps",
-      "article-1ada0326",
-      "1ada0326",
-      "exposure-management-tests-reveal-persistent-gaps-7a011f"
-    ]
-  },
-  {
-    "slug": "vizio-samsung-tvs-ignore-tracking-opt-outs-4dc2dd19",
-    "title": "Vizio Samsung TVs Ignore Tracking Opt‑Outs",
-    "summary": "Vizio and Samsung smart TVs appear to disregard user opt‑out requests for tracking, continuing data collection despite privacy settings. The flaw lets manufacturers transmit viewing data to third‑party analytics without explicit consent, violating user expectations and breaching privacy regulations. Users should verify firmware versions, apply vendor patches when available, and consider disabling telemetry through device settings or network filtering.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/vizio-samsung-smart-tvs-seem-to-ignore-tracking-opt-outs",
-    "publishedAt": "2026-11-05T12:10:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vizio-samsung-tvs-ignore-tracking-opt-outs",
-      "article-4dc2dd19",
-      "4dc2dd19",
-      "vizio-samsung-tvs-ignore-tracking-opt-outs-476618"
-    ]
-  },
-  {
-    "slug": "resteasy-security-update-for-rhel-9-6-2cbb2b40",
-    "title": "RESTEasy security update for RHEL 9.6",
-    "summary": "Red Hat published an important security update for the resteasy module on Red Hat Enterprise Linux 9.6 Extended Update Support. The advisory addresses multiple tracked vulnerabilities in the RESTEasy framework. Red Hat customers should apply this update to remediate the disclosed security issues in their Java-based REST services.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95504",
-    "publishedAt": "2026-11-05T12:08:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "resteasy-security-update-for-rhel-9-6",
-      "article-2cbb2b40",
-      "2cbb2b40",
-      "resteasy-security-update-for-rhel-9-6-37d842"
-    ]
-  },
-  {
-    "slug": "ruby-2-5-security-update-for-rhel-e95c8772",
-    "title": "Ruby 2.5 security update for RHEL",
-    "summary": "Red Hat released an important security update for the ruby:2.5 module on Red Hat Enterprise Linux 8.6. The update addresses multiple tracked vulnerabilities in the Ruby language runtime. Organizations running Ruby applications on RHEL 8.6 should apply this patch immediately to remediate the disclosed flaws.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95513",
-    "publishedAt": "2026-11-05T12:06:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ruby-2-5-security-update-for-rhel",
-      "article-e95c8772",
-      "e95c8772",
-      "ruby-2-5-security-update-for-rhel-37d842"
     ]
   }
 ];

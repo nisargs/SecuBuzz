@@ -2,6 +2,32 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-125121",
+    "slug": "cve-2026-125121",
+    "vendor": "Pip",
+    "product": "compose-lint",
+    "name": "compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-117",
+    "ransomware": false,
+    "description": "0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in everything compose-lint prints, and the 0.31.0 changelog says the report \"escapes both openers (also covering Azure Pipelines)\". Five paths were left open: - Unicode whitespace before a line-leading ::.",
+    "requiredAction": "Upgrade compose-lint to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r7j4-crjv-h467"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125121"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-118670",
     "slug": "cve-2026-118670",
     "vendor": "npm",
@@ -1345,32 +1371,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86041"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-63183",
-    "slug": "cve-2026-63183",
-    "vendor": "RubyGems",
-    "product": "omniauth",
-    "name": "OmniAuth: Host Header Injection Vulnerability",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 6.9,
-    "severity": "Medium",
-    "cwe": "CWE-346",
-    "ransomware": false,
-    "description": "Host header injection risk when using Omniauth with a web framework that does not verify incoming host headers. An example of a framework that provides host header validation is modern Rails when configured appropriately 2.2.0 _Set the full_host config in the Omniauth config_",
-    "requiredAction": "Upgrade omniauth to version 2.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m27g-v28p-f9fx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63183"
       }
     ],
     "source": "GITHUB"
