@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 10:48:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 11:47:29 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>France Attributes Supermarket Refrigeration Sabotage to Iranian Hackers</title>
@@ -15,6 +15,15 @@
       <pubDate>Tue, 10 Nov 2026 10:23:06 GMT</pubDate>
       <source url="https://cybersecuritynews.com/iranian-hackers-supermarket-cyberattacks/">Cyber Security News</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities</title>
+      <link>https://secubuzz.com/news/apple-patches-imessage-group-chat-privacy-flaws-an-be674176</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-patches-imessage-group-chat-privacy-flaws-an-be674176</guid>
+      <description><![CDATA[An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined.]]></description>
+      <pubDate>Tue, 10 Nov 2026 10:16:51 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html">The Hacker News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Attackers Exploit Barracuda ESG Flaws for Root Access</title>
@@ -44,13 +53,13 @@
       <category>CVE</category>
     </item>
     <item>
-      <title>Turla’s Cereal malware turns victims’ Exchange servers into spy hubs</title>
-      <link>https://secubuzz.com/news/turla-s-cereal-malware-turns-victims-exchange-serv-1c0ecfed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/turla-s-cereal-malware-turns-victims-exchange-serv-1c0ecfed</guid>
-      <description><![CDATA[Russia-aligned group Turla planted a modular .NET toolset on Microsoft Exchange servers at two government organizations, one in Kazakhstan and one in Romania, and used it to copy selected email straight out of the mail flow. ESET researchers found the malware and named it Cereal. Operators send commands to the victim’s internet-facing Exchange server, dressed up as ordinary Outlook Web Access, Autodiscover, and ActiveSync traffic.]]></description>
+      <title>Turla Deploys Cereal Malware to Harvest Exchange Emails</title>
+      <link>https://secubuzz.com/news/turla-deploys-cereal-malware-to-harvest-exchange-e-e1a34ab8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/turla-deploys-cereal-malware-to-harvest-exchange-e-e1a34ab8</guid>
+      <description><![CDATA[Turla, a Russia‑aligned threat actor, deployed its Cereal malware to infiltrate Microsoft Exchange servers and harvest email communications covertly. The tool exploits undisclosed Exchange vulnerabilities to bypass authentication and exfiltrate mailboxes, enabling persistent surveillance without triggering standard detection. Security teams should apply Microsoft’s latest Exchange patches, enforce MFA, and monitor outbound traffic to mitigate the threat.]]></description>
       <pubDate>Tue, 10 Nov 2026 10:00:39 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/">Help Net Security</source>
-      <category>General</category>
+      <category>Breach</category>
     </item>
     <item>
       <title>N-able Disables N-central Over 30 Zero-Day Flaws</title>
@@ -62,6 +71,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Malicious VS Code Extension Steals GitHub Tokens</title>
+      <link>https://secubuzz.com/news/malicious-vs-code-extension-steals-github-tokens-8dacf453</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/malicious-vs-code-extension-steals-github-tokens-8dacf453</guid>
+      <description><![CDATA[A poisoned Nx Console extension for VS Code stayed on the marketplace for 18 minutes, letting attackers install it and steal GitHub tokens. The extension captured authentication tokens during installation, compromising developer accounts and enabling unauthorized repository access. Developers should uninstall the extension immediately, revoke exposed tokens, and install official updates; Microsoft must remove the listing and investigate.]]></description>
+      <pubDate>Tue, 10 Nov 2026 09:54:32 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-steal-github-tokens/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>IBM, SignalWire Vulnerabilities Exploited, CISA Urges Patch</title>
       <link>https://secubuzz.com/news/ibm-signalwire-vulnerabilities-exploited-cisa-urge-dfabc271</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ibm-signalwire-vulnerabilities-exploited-cisa-urge-dfabc271</guid>
@@ -69,6 +87,15 @@
       <pubDate>Tue, 10 Nov 2026 09:42:27 GMT</pubDate>
       <source url="https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/">SecurityWeek</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Hackers Use Fake FOFA Accounts to Steal AI Keys</title>
+      <link>https://secubuzz.com/news/hackers-use-fake-fofa-accounts-to-steal-ai-keys-2d9fba03</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-fofa-accounts-to-steal-ai-keys-2d9fba03</guid>
+      <description><![CDATA[A threat actor created 1,438 fake FOFA accounts to scan the internet for leaked OpenAI and DeepSeek API keys. The system exploited misconfigured servers exposing API keys, enabling attackers to hijack AI services and potentially monetize or exfiltrate data. Organizations should rotate exposed keys, enforce strict key management, and monitor for unauthorized usage; FOFA must investigate account abuse.]]></description>
+      <pubDate>Tue, 10 Nov 2026 09:39:54 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-fofa-accounts/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Linux Kernel Receives Patch for Multiple Vulnerabilities</title>
@@ -89,6 +116,15 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>Ruby Gem Steals Credentials, Installs Backdoors in AI Tools</title>
+      <link>https://secubuzz.com/news/ruby-gem-steals-credentials-installs-backdoors-in-a6ca377e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ruby-gem-steals-credentials-installs-backdoors-in-a6ca377e</guid>
+      <description><![CDATA[A counterfeit Ruby gem, strutil-core, masquerades as a helper but installs credential‑stealing worm. The worm harvests 51 credential types, injects backdoors into AI tool settings, and can delete a home folder if a stolen GitHub token is revoked. Teams should remove the gem, audit dependencies, enforce RubyGems signing, and update AI tools to eliminate backdoors and stop credential theft.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:55:28 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/malicious-ruby-gem/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>AMD RMP Flaw Allows Local Hypervisor Exploit</title>
       <link>https://secubuzz.com/news/amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66</link>
       <guid isPermaLink="true">https://secubuzz.com/news/amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66</guid>
@@ -104,6 +140,15 @@
       <description><![CDATA[Ubuntu released kernel updates addressing CVE-2023-20585 and multiple Linux kernel vulnerabilities. The AMD flaw allows hypervisor-privileged attackers to corrupt SEV-SNP guest memory via improper RMP checks; other issues affect USB gadget, memory management, NVDIMM, networking, and architecture subsystems. Updated kernel packages are available; immediate deployment is recommended to prevent system compromise.]]></description>
       <pubDate>Tue, 10 Nov 2026 08:47:02 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9025-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ubuntu Kernel Patch Addresses Xen Device Frontend Flaws</title>
+      <link>https://secubuzz.com/news/ubuntu-kernel-patch-addresses-xen-device-frontend-3cbe023d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-kernel-patch-addresses-xen-device-frontend-3cbe023d</guid>
+      <description><![CDATA[Ubuntu released USN‑9033‑1 to fix multiple Linux kernel flaws affecting Xen para‑virtualization device frontends. The vulnerabilities, including CVE‑2022‑23036, allow a malicious Xen backend to read guest memory or trigger a denial of service, potentially compromising isolation between virtual machines. The update applies patches to the kernel subsystems and should be installed immediately to prevent exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:46:13 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9033-1">Ubuntu Security Notices</source>
       <category>CVE</category>
     </item>
     <item>
@@ -341,6 +386,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>ISC Stormcast: Weekly Threat Landscape Overview</title>
+      <link>https://secubuzz.com/news/isc-stormcast-weekly-threat-landscape-overview-958ee648</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-weekly-threat-landscape-overview-958ee648</guid>
+      <description><![CDATA[The ISC Stormcast podcast released its November 10th edition, summarizing the latest threat activity observed across the internet. The report highlighted increased phishing campaigns, emerging ransomware variants, and a rise in supply‑chain attacks, but did not identify any new zero‑day exploits. Listeners are advised to review the full transcript for detailed indicators and to maintain current defensive posture.]]></description>
+      <pubDate>Tue, 10 Nov 2026 02:00:02 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33504">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>BYOD Ransomware Encrypts Vanderbilt University Databases</title>
       <link>https://secubuzz.com/news/byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b</guid>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 21:22:31 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>CVE-2026-124033 - Relative path traversal in the log export commands in AWS ParallelCluster CLI</title>
-      <link>https://secubuzz.com/news/cve-2026-124033-relative-path-traversal-in-the-log-e0d7aeb5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-124033-relative-path-traversal-in-the-log-e0d7aeb5</guid>
-      <description><![CDATA[Bulletin ID: 2026-174-AWS Publication Date: 11/09/2026 13:00 PM PST Description: AWS ParallelCluster CLI is an open source command line tool, distributed on PyPI as aws-parallelcluster. We identified CVE-2026-124033, an issue where the export-cluster-logs and export-image-logs commands in the AWS ParallelCluster CLI before version 3.16.0 contain a relative path traversal issue.]]></description>
-      <pubDate>Mon, 09 Nov 2026 21:12:17 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-174-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chrome Stable Update Addresses Three High‑Severity CVEs</title>
-      <link>https://secubuzz.com/news/chrome-stable-update-addresses-three-high-severity-9606d6c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-stable-update-addresses-three-high-severity-9606d6c0</guid>
-      <description><![CDATA[Google Chrome’s latest stable channel update (157.0.8103.50/51) patches three high‑severity vulnerabilities in WebGL, FileSystem, and Compositing. The flaws—CVE‑2026‑125345, CVE‑2026‑125347, CVE‑2026‑125343—enable uninitialized resource exploitation, authorization bypass, and buffer overflow, potentially allowing remote code execution. Install the update promptly; Chrome will deploy the patch over the next days, and users should verify via the Chrome Security Page.]]></description>
-      <pubDate>Mon, 09 Nov 2026 20:52:57 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_018223192.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chrome Extended Stable Update Fixes Eleven High‑Severity CVEs</title>
-      <link>https://secubuzz.com/news/chrome-extended-stable-update-fixes-eleven-high-se-5a870814</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-update-fixes-eleven-high-se-5a870814</guid>
-      <description><![CDATA[Google Chrome’s Extended Stable update (156.0.8078.96) patches eleven high‑severity flaws, including CVE‑2026‑121068, CVE‑2026‑121076, and CVE‑2026‑125350. These flaws involve improper authentication, authorization bypass, and buffer overflows, potentially allowing remote code execution or privilege escalation on affected systems. Install the update promptly; Chrome will deploy the patch over the next days, and users should verify via the Chrome Security Page.]]></description>
-      <pubDate>Mon, 09 Nov 2026 20:45:01 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_0910980127.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Amplifon Breach Exposes Medical Data of Thousands</title>
-      <link>https://secubuzz.com/news/amplifon-breach-exposes-medical-data-of-thousands-f81b72eb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/amplifon-breach-exposes-medical-data-of-thousands-f81b72eb</guid>
-      <description><![CDATA[A data breach at Amplifon’s U.S. arm exposed medical information of thousands of customers. The incident involved unauthorized disclosure of sensitive health records, but no credentials or financial data were reported. Amplifon notified affected customers and is conducting a forensic investigation while advising them to monitor for identity theft ongoing.]]></description>
-      <pubDate>Mon, 09 Nov 2026 20:44:00 GMT</pubDate>
-      <source url="https://therecord.media/amplifon-hearing-aid-company-data-breach">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Black Hat India 2026 Debuts in Bengaluru</title>
-      <link>https://secubuzz.com/news/black-hat-india-2026-debuts-in-bengaluru-2152c0ba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/black-hat-india-2026-debuts-in-bengaluru-2152c0ba</guid>
-      <description><![CDATA[Black Hat India 2026, a first‑time conference in Bengaluru, convened global cybersecurity researchers, practitioners, and decision makers. The event featured four days of cutting‑edge research, technical exchange, and strategic dialogue, covering emerging threats and defensive innovations. Attendees can network, share insights, and collaborate on future security initiatives, reinforcing industry resilience.]]></description>
-      <pubDate>Mon, 09 Nov 2026 20:19:56 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FORGE Lab uses agentic tools to identify memory safety issues in Rust</title>
-      <link>https://secubuzz.com/news/forge-lab-uses-agentic-tools-to-identify-memory-sa-cd50a823</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/forge-lab-uses-agentic-tools-to-identify-memory-sa-cd50a823</guid>
-      <description><![CDATA[Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees.]]></description>
-      <pubDate>Mon, 09 Nov 2026 20:17:31 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/">Microsoft Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

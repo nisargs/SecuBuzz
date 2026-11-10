@@ -30,6 +30,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-patches-imessage-group-chat-privacy-flaws-an-be674176",
+    "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
+    "summary": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
+    "publishedAt": "2026-11-10T10:16:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-patches-imessage-group-chat-privacy-flaws-an",
+      "article-be674176",
+      "be674176",
+      "apple-patches-imessage-group-chat-privacy-flaws-an-797319",
+      "apple-patches-imessage-group-chat-privacy-flaws-and-bluetoot"
+    ]
+  },
+  {
     "slug": "attackers-exploit-barracuda-esg-flaws-for-root-acc-25ab3004",
     "title": "Attackers Exploit Barracuda ESG Flaws for Root Access",
     "summary": "Attackers are actively exploiting two critical Barracuda Email Security Gateway vulnerabilities to achieve root-level command execution. The flaws, recently patched by Barracuda, allow unauthenticated remote code execution on the appliance, granting full system compromise. Barracuda urges immediate application of security updates and verification of appliance integrity to prevent persistent unauthorized access.",
@@ -88,22 +107,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "turla-s-cereal-malware-turns-victims-exchange-serv-1c0ecfed",
-    "title": "Turla’s Cereal malware turns victims’ Exchange servers into spy hubs",
-    "summary": "Russia-aligned group Turla planted a modular .NET toolset on Microsoft Exchange servers at two government organizations, one in Kazakhstan and one in Romania, and used it to copy selected email straight out of the mail flow. ESET researchers found the malware and named it Cereal. Operators send commands to the victim’s internet-facing Exchange server, dressed up as ordinary Outlook Web Access, Autodiscover, and ActiveSync traffic.",
-    "category": "General",
-    "severity": "MEDIUM",
+    "slug": "turla-deploys-cereal-malware-to-harvest-exchange-e-e1a34ab8",
+    "title": "Turla Deploys Cereal Malware to Harvest Exchange Emails",
+    "summary": "Turla, a Russia‑aligned threat actor, deployed its Cereal malware to infiltrate Microsoft Exchange servers and harvest email communications covertly. The tool exploits undisclosed Exchange vulnerabilities to bypass authentication and exfiltrate mailboxes, enabling persistent surveillance without triggering standard detection. Security teams should apply Microsoft’s latest Exchange patches, enforce MFA, and monitor outbound traffic to mitigate the threat.",
+    "category": "Breach",
+    "severity": "HIGH",
     "source": "Help Net Security",
     "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/",
     "publishedAt": "2026-11-10T10:00:39.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html"
+      }
+    ],
     "aliases": [
-      "turla-s-cereal-malware-turns-victims-exchange-serv",
-      "article-1c0ecfed",
-      "1c0ecfed",
-      "turla-s-cereal-malware-turns-victims-exchange-serv-ef12ed",
-      "turla-s-cereal-malware-turns-victims-exchange-servers-into-s"
+      "turla-deploys-cereal-malware-to-harvest-exchange-e",
+      "article-e1a34ab8",
+      "e1a34ab8",
+      "turla-deploys-cereal-malware-to-harvest-exchange-e-ef12ed",
+      "turla-deploys-cereal-malware-to-harvest-exchange-emails"
     ]
   },
   {
@@ -122,6 +146,24 @@ export const news: NewsBrief[] = [
       "article-74835697",
       "74835697",
       "n-able-disables-n-central-over-30-zero-day-flaws-95ce8b"
+    ]
+  },
+  {
+    "slug": "malicious-vs-code-extension-steals-github-tokens-8dacf453",
+    "title": "Malicious VS Code Extension Steals GitHub Tokens",
+    "summary": "A poisoned Nx Console extension for VS Code stayed on the marketplace for 18 minutes, letting attackers install it and steal GitHub tokens. The extension captured authentication tokens during installation, compromising developer accounts and enabling unauthorized repository access. Developers should uninstall the extension immediately, revoke exposed tokens, and install official updates; Microsoft must remove the listing and investigate.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-steal-github-tokens/",
+    "publishedAt": "2026-11-10T09:54:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-vs-code-extension-steals-github-tokens",
+      "article-8dacf453",
+      "8dacf453",
+      "malicious-vs-code-extension-steals-github-tokens-664437"
     ]
   },
   {
@@ -144,6 +186,24 @@ export const news: NewsBrief[] = [
       "dfabc271",
       "ibm-signalwire-vulnerabilities-exploited-cisa-urge-59bc4d",
       "ibm-signalwire-vulnerabilities-exploited-cisa-urges-patch"
+    ]
+  },
+  {
+    "slug": "hackers-use-fake-fofa-accounts-to-steal-ai-keys-2d9fba03",
+    "title": "Hackers Use Fake FOFA Accounts to Steal AI Keys",
+    "summary": "A threat actor created 1,438 fake FOFA accounts to scan the internet for leaked OpenAI and DeepSeek API keys. The system exploited misconfigured servers exposing API keys, enabling attackers to hijack AI services and potentially monetize or exfiltrate data. Organizations should rotate exposed keys, enforce strict key management, and monitor for unauthorized usage; FOFA must investigate account abuse.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-fofa-accounts/",
+    "publishedAt": "2026-11-10T09:39:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-fake-fofa-accounts-to-steal-ai-keys",
+      "article-2d9fba03",
+      "2d9fba03",
+      "hackers-use-fake-fofa-accounts-to-steal-ai-keys-8fe774"
     ]
   },
   {
@@ -185,6 +245,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ruby-gem-steals-credentials-installs-backdoors-in-a6ca377e",
+    "title": "Ruby Gem Steals Credentials, Installs Backdoors in AI Tools",
+    "summary": "A counterfeit Ruby gem, strutil-core, masquerades as a helper but installs credential‑stealing worm. The worm harvests 51 credential types, injects backdoors into AI tool settings, and can delete a home folder if a stolen GitHub token is revoked. Teams should remove the gem, audit dependencies, enforce RubyGems signing, and update AI tools to eliminate backdoors and stop credential theft.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/malicious-ruby-gem/",
+    "publishedAt": "2026-11-10T08:55:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-gem-steals-credentials-installs-backdoors-in",
+      "article-a6ca377e",
+      "a6ca377e",
+      "ruby-gem-steals-credentials-installs-backdoors-in-e74af0",
+      "ruby-gem-steals-credentials-installs-backdoors-in-ai-tools"
+    ]
+  },
+  {
     "slug": "amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66",
     "title": "AMD RMP Flaw Allows Local Hypervisor Exploit",
     "summary": "A flaw in AMD processors' Reverse Map Table checks was discovered, potentially enabling local hypervisor attackers to trigger an out‑of‑bounds condition. The vulnerability, identified as CVE-2023-20585, could compromise the integrity of SEV‑SNP guest memory if exploited. Kernel maintainers advise applying the USN-9024-1 update to patch affected subsystems and mitigate the risk.",
@@ -223,6 +302,25 @@ export const news: NewsBrief[] = [
       "1cac7a6d",
       "ubuntu-addresses-multiple-linux-kernel-vulnerabili-7e88c0",
       "ubuntu-addresses-multiple-linux-kernel-vulnerabilities-in-us"
+    ]
+  },
+  {
+    "slug": "ubuntu-kernel-patch-addresses-xen-device-frontend-3cbe023d",
+    "title": "Ubuntu Kernel Patch Addresses Xen Device Frontend Flaws",
+    "summary": "Ubuntu released USN‑9033‑1 to fix multiple Linux kernel flaws affecting Xen para‑virtualization device frontends. The vulnerabilities, including CVE‑2022‑23036, allow a malicious Xen backend to read guest memory or trigger a denial of service, potentially compromising isolation between virtual machines. The update applies patches to the kernel subsystems and should be installed immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9033-1",
+    "publishedAt": "2026-11-10T08:46:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-kernel-patch-addresses-xen-device-frontend",
+      "article-3cbe023d",
+      "3cbe023d",
+      "ubuntu-kernel-patch-addresses-xen-device-frontend-7e8853",
+      "ubuntu-kernel-patch-addresses-xen-device-frontend-flaws"
     ]
   },
   {
@@ -721,6 +819,24 @@ export const news: NewsBrief[] = [
       "bc249e2e",
       "n-able-n-central-exposes-30-zero-day-vulnerabiliti-214ffb",
       "n-able-n-central-exposes-30-zero-day-vulnerabilities-urgent-"
+    ]
+  },
+  {
+    "slug": "isc-stormcast-weekly-threat-landscape-overview-958ee648",
+    "title": "ISC Stormcast: Weekly Threat Landscape Overview",
+    "summary": "The ISC Stormcast podcast released its November 10th edition, summarizing the latest threat activity observed across the internet. The report highlighted increased phishing campaigns, emerging ransomware variants, and a rise in supply‑chain attacks, but did not identify any new zero‑day exploits. Listeners are advised to review the full transcript for detailed indicators and to maintain current defensive posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33504",
+    "publishedAt": "2026-11-10T02:00:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "isc-stormcast-weekly-threat-landscape-overview",
+      "article-958ee648",
+      "958ee648",
+      "isc-stormcast-weekly-threat-landscape-overview-57dd81"
     ]
   },
   {
@@ -9511,99 +9627,6 @@ export const news: NewsBrief[] = [
       "article-32ba0218",
       "32ba0218",
       "cr-dit-mutuel-ark-a-133m-heist-via-supplier-breach-7e17eb"
-    ]
-  },
-  {
-    "slug": "scammers-use-fake-apple-cash-offers-for-affiliate-ae8beda4",
-    "title": "Scammers Use Fake Apple Cash Offers for Affiliate Fraud",
-    "summary": "Fraudulent schemes target consumers with fake $750 Apple Cash reward promotions designed to generate illicit revenue for affiliate marketers. The scam employs website scripted checks and artificial countdown timers to trick victims into completing tasks without delivering any monetary rewards. Users should avoid clicking unsolicited reward links, verify financial promotions through official channels, and block deceptive affiliate marketing domains.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/11/the-fake-750-apple-cash-reward-that-pays-out-nothing",
-    "publishedAt": "2026-11-04T18:49:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "scammers-use-fake-apple-cash-offers-for-affiliate",
-      "article-ae8beda4",
-      "ae8beda4",
-      "scammers-use-fake-apple-cash-offers-for-affiliate-d9f247",
-      "scammers-use-fake-apple-cash-offers-for-affiliate-fraud"
-    ]
-  },
-  {
-    "slug": "skyw4lker-phishing-kit-targets-us-microsoft-365-ac-de436d88",
-    "title": "SkyW4lker Phishing Kit Targets US Microsoft 365 Accounts",
-    "summary": "The SkyW4lker phishing kit targets US enterprise organizations to facilitate Microsoft 365 account takeovers without requiring stolen user passwords. The kit abuses Microsoft device-code sign-in flows to trick users into authorizing attacker access, granting valid sessions to corporate mailboxes, documents, and connected applications.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/skyw4lker-phishing-campaign-expands-threatening-us-enterprises-with-microsoft-365-account-takeovers/",
-    "publishedAt": "2026-11-04T18:43:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "skyw4lker-phishing-kit-targets-us-microsoft-365-ac",
-      "article-de436d88",
-      "de436d88",
-      "skyw4lker-phishing-kit-targets-us-microsoft-365-ac-235f8d",
-      "skyw4lker-phishing-kit-targets-us-microsoft-365-accounts"
-    ]
-  },
-  {
-    "slug": "chrome-158-0-8127-18-19-stable-desktop-update-f0d8cb49",
-    "title": "Chrome 158.0.8127.18/.19 Stable Desktop Update",
-    "summary": "Google Chrome released Stable channel build 158.0.8127.18/.19 for Windows as an early stable rollout to a small percentage of users. This desktop update introduces no specific CVE-identified vulnerability; it is a routine browser patch cycle. Security teams should monitor for any reported regressions and validate stability before full deployment across enterprise fleets.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop.html",
-    "publishedAt": "2026-11-04T18:33:09.421Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-158-0-8127-18-19-stable-desktop-update",
-      "article-f0d8cb49",
-      "f0d8cb49",
-      "chrome-158-0-8127-18-19-stable-desktop-update-2f005c"
-    ]
-  },
-  {
-    "slug": "ncsc-10th-annual-review-on-cyber-resilience-basics-129a4078",
-    "title": "NCSC 10th Annual Review on Cyber Resilience Basics",
-    "summary": "The UK NCSC published its 10th Annual Review and 'State of Cyber Nation' report, framing cyber resilience as foundational rather than advanced. The report emphasizes basic hygiene practices as the starting point for long-term defense improvements. Organizations are advised to prioritize fundamentals before investing in complex defensive architectures.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/blog-uk/the-next-decade-of-cyber-resilience-starts-with-the-basics/",
-    "publishedAt": "2026-11-04T18:25:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ncsc-10th-annual-review-on-cyber-resilience-basics",
-      "article-129a4078",
-      "129a4078",
-      "ncsc-10th-annual-review-on-cyber-resilience-basics-2391fb"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-25d890e2",
-    "title": "RHSA-2026:95281: Moderate: xorg-x11-server-Xwayland security update",
-    "summary": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95281",
-    "publishedAt": "2026-11-04T18:14:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95281-moderate-xorg-x11-server-xwayland",
-      "article-25d890e2",
-      "25d890e2",
-      "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-37d84c",
-      "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-security-u"
     ]
   }
 ];
