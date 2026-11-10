@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 21:29:03 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 22:45:33 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Security Update for php:8.4</title>
+      <link>https://secubuzz.com/news/red-hat-releases-security-update-for-php-8-4-292ebc39</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-security-update-for-php-8-4-292ebc39</guid>
+      <description><![CDATA[Red Hat released a security update for the php:8.4 module on Enterprise Linux 9. The update addresses multiple vulnerabilities in PHP’s core engine, including a potential remote code execution flaw that could allow attackers to execute arbitrary code via crafted input. Administrators should apply the php:8.4 update immediately and verify that all web applications are running the patched version.]]></description>
+      <pubDate>Tue, 10 Nov 2026 22:40:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97880">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Update for mod_auth_openidc</title>
+      <link>https://secubuzz.com/news/red-hat-issues-update-for-mod-auth-openidc-27a52e13</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-update-for-mod-auth-openidc-27a52e13</guid>
+      <description><![CDATA[Red Hat released a security update for the mod_auth_openidc module on Enterprise Linux 9. The patch fixes multiple authentication bypass and privilege escalation flaws that could allow attackers to gain unauthorized access to protected resources. Administrators should apply the update immediately and review access logs for anomalous authentication attempts today.]]></description>
+      <pubDate>Tue, 10 Nov 2026 22:37:47 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97861">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cisco ISE Authorization Bypass Flaws Exposed</title>
+      <link>https://secubuzz.com/news/cisco-ise-authorization-bypass-flaws-exposed-80fd12f9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-ise-authorization-bypass-flaws-exposed-80fd12f9</guid>
+      <description><![CDATA[Cisco ISE and ISE‑PIC contain web‑interface authorization bypass flaws that let authenticated remote attackers modify configuration. The flaw arises from missing server‑side validation of Administrator permissions, enabling crafted HTTP requests to alter file descriptions; exploitation requires valid admin credentials. Cisco has issued patches that address these vulnerabilities, and no workarounds exist; security teams should apply them promptly.]]></description>
+      <pubDate>Tue, 10 Nov 2026 22:37:41 GMT</pubDate>
+      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-auth-bypass-1-MxcTNgwx?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerabilities%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Releases Patch for Actively Exploited Outlook Zero-Day</title>
+      <link>https://secubuzz.com/news/microsoft-releases-patch-for-actively-exploited-ou-c9129445</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-patch-for-actively-exploited-ou-c9129445</guid>
+      <description><![CDATA[Microsoft released a patch for an actively exploited Outlook zero‑day affecting Microsoft Outlook. The flaw enabled remote code execution via crafted email attachments, allowing attackers to run arbitrary code on vulnerable clients. Microsoft issued an out‑of‑band update; administrators should apply the patch promptly and monitor for anomalous outbound traffic immediately.]]></description>
+      <pubDate>Tue, 10 Nov 2026 22:26:51 GMT</pubDate>
+      <source url="https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Railway Breach Generates $740k in Fraudulent AI Charges</title>
+      <link>https://secubuzz.com/news/railway-breach-generates-740k-in-fraudulent-ai-cha-a3f05e2a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/railway-breach-generates-740k-in-fraudulent-ai-cha-a3f05e2a</guid>
+      <description><![CDATA[Cloud hosting provider Railway suffered a breach that exposed customer authentication secrets and enabled fraudulent AI usage. Attackers leveraged infrastructure vulnerabilities to steal credentials for up to 100,000 workspaces, generating approximately $740,000 in unauthorized AI compute charges. Railway has applied security patches, revoked compromised tokens, and notified affected customers to reset credentials and monitor usage.]]></description>
+      <pubDate>Tue, 10 Nov 2026 22:20:19 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Releases Patch for 1,100 Windows Vulnerabilities</title>
+      <link>https://secubuzz.com/news/microsoft-releases-patch-for-1-100-windows-vulnera-82dba596</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-patch-for-1-100-windows-vulnera-82dba596</guid>
+      <description><![CDATA[Microsoft issued a Patch Tuesday update that addresses nearly 1,100 security vulnerabilities across its Windows operating systems and supported software. The release includes 63 critical fixes, among them a zero‑day in Microsoft Outlook, and aligns with concurrent updates from Adobe, Apple, Google, and Mozilla. Security teams should apply the patches promptly to mitigate the identified weaknesses and maintain system integrity.]]></description>
+      <pubDate>Tue, 10 Nov 2026 21:55:03 GMT</pubDate>
+      <source url="https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/">Krebs on Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>US Soldier Arrested in UK for Alleged Russian Espionage</title>
+      <link>https://secubuzz.com/news/us-soldier-arrested-in-uk-for-alleged-russian-espi-a12ae7b9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-soldier-arrested-in-uk-for-alleged-russian-espi-a12ae7b9</guid>
+      <description><![CDATA[A U.S. Army member was arrested by British counterterrorism police in cooperation with U.S. authorities including the FBI and military. The arrest relates to allegations of spying for Russia. The Metropolitan Police confirmed the coordinated investigation. This case highlights ongoing international efforts to counter foreign intelligence operations conducted by service members.]]></description>
+      <pubDate>Tue, 10 Nov 2026 21:13:00 GMT</pubDate>
+      <source url="https://therecord.media/us-army-member-arrested-in-uk-spying-for-russia">The Record</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Artex Forks Enable Rapid Credential Attacks</title>
+      <link>https://secubuzz.com/news/artex-forks-enable-rapid-credential-attacks-f642655a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/artex-forks-enable-rapid-credential-attacks-f642655a</guid>
+      <description><![CDATA[Forks of the open-source Artex framework and 45 similar pen‑testing tools can execute credential attacks and cloud breaches at machine speed across multiple industries. The tools exploit weak authentication and misconfigured cloud services, allowing attackers to harvest credentials and compromise cloud resources without user interaction. Security teams should audit cloud configurations, enforce multi‑factor authentication, and monitor for anomalous credential‑exfiltration activity.]]></description>
+      <pubDate>Tue, 10 Nov 2026 21:01:14 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Microsoft Patch Tuesday Exceeds 1,000 Vulnerabilities</title>
       <link>https://secubuzz.com/news/microsoft-patch-tuesday-exceeds-1-000-vulnerabilit-1fd9f3cb</link>
@@ -15,6 +87,15 @@
       <pubDate>Tue, 10 Nov 2026 20:55:00 GMT</pubDate>
       <source url="https://therecord.media/patch-tuesday-microsoft-1000-bugs-again">The Record</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Nitori Exposes 37.6M Customer Records Theft</title>
+      <link>https://secubuzz.com/news/nitori-exposes-37-6m-customer-records-theft-c6603bc7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nitori-exposes-37-6m-customer-records-theft-c6603bc7</guid>
+      <description><![CDATA[Nitori, a major Japanese furniture retailer, discovered attackers accessed a system on its network and may have stolen 37.62 million customer records. The breach exposed personal identifiers, purchase histories, and contact information, though the full scope of compromised data remains unclear. Nitori should conduct a forensic investigation, notify affected customers, and strengthen network segmentation and access controls.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:54:55 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/">BleepingComputer</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>RHSA-2026:97578: Important: buildah security, bug fix, and enhancement update</title>
@@ -287,6 +368,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:97463: Moderate: polkit security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97463-moderate-polkit-security-update-3aaf68fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97463-moderate-polkit-security-update-3aaf68fe</guid>
+      <description><![CDATA[An update for polkit is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:52:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97463">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>China-Nexus Espionage Campaigns Linked via Sparrow Malware</title>
       <link>https://secubuzz.com/news/china-nexus-espionage-campaigns-linked-via-sparrow-823b4648</link>
       <guid isPermaLink="true">https://secubuzz.com/news/china-nexus-espionage-campaigns-linked-via-sparrow-823b4648</guid>
@@ -332,6 +422,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:97288: Important: yggdrasil security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97288-important-yggdrasil-security-bug-f-87570b12</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97288-important-yggdrasil-security-bug-f-87570b12</guid>
+      <description><![CDATA[An update for yggdrasil is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:07:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97288">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>RHSA-2026:97328: Important: oci-seccomp-bpf-hook security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec-39b793b0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec-39b793b0</guid>
@@ -357,105 +456,6 @@
       <pubDate>Tue, 10 Nov 2026 16:54:15 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97219">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97553: Important: grafana-pcp security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97553-important-grafana-pcp-security-bug-c05a01d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97553-important-grafana-pcp-security-bug-c05a01d7</guid>
-      <description><![CDATA[An update for grafana-pcp is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:53:16 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97553">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97537: Important: cockpit-podman security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97537-important-cockpit-podman-security-a435431d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97537-important-cockpit-podman-security-a435431d</guid>
-      <description><![CDATA[An update for cockpit-podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:49:14 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97537">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SBOM, AI BOMs Drive New Software Transparency</title>
-      <link>https://secubuzz.com/news/sbom-ai-boms-drive-new-software-transparency-17fcb302</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sbom-ai-boms-drive-new-software-transparency-17fcb302</guid>
-      <description><![CDATA[Allan Friedman discussed how SBOMs and emerging AI BOMs are reshaping software supply‑chain visibility. He emphasized that knowing component contents is only the first step, and organizations must analyze SBOM data to detect risks. The podcast recommends adopting automated SBOM ingestion tools and integrating AI analysis to prioritize remediation efforts.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:45:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Ivanti Issues Patches for Endpoint Manager, CSA Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce</guid>
-      <description><![CDATA[Ivanti released patches for Endpoint Manager, Endpoint Manager Mobile, Sentry, and Cloud Services Application after discovering flaws enabling remote code execution, certificate tampering, data exposure, and service disruption. Two critical vulnerabilities in Endpoint Manager and Cloud Services Application pose the highest risk, requiring code execution privileges. Administrators should apply the updates immediately and verify certificate trust chains to mitigate exploitation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:43:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ivanti-security-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CVE‑2026‑125271: AWS API MCP Policy Bypass</title>
-      <link>https://secubuzz.com/news/cve-2026-125271-aws-api-mcp-policy-bypass-7320861d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-125271-aws-api-mcp-policy-bypass-7320861d</guid>
-      <description><![CDATA[CVE‑2026‑125271 exposes a policy bypass in AWS API MCP Server caused by incorrect operation name normalization. The flaw allows actors to execute operations that the operator's security policy denies or requires elicitation for, potentially granting unauthorized API access. AWS has released a patch for affected versions (>=0.2.13); administrators should update immediately and review policy configurations.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:42:37 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-176-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Xen Orchestra Auth Bypass Enables VM Server Hijack</title>
-      <link>https://secubuzz.com/news/xen-orchestra-auth-bypass-enables-vm-server-hijack-8e029e9c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/xen-orchestra-auth-bypass-enables-vm-server-hijack-8e029e9c</guid>
-      <description><![CDATA[A critical authentication bypass flaw in Xen Orchestra is actively exploited to grant admin privileges and seize XCP‑ng virtualization hosts. The flaw bypasses login checks, giving attackers full control over host management interfaces, and is used in multiple attacks. Xen Orchestra issued an urgent patch; administrators should apply it immediately and audit host authentication logs for anomalies.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:17:16 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fireworks Reports Data Theft During October Breaches</title>
-      <link>https://secubuzz.com/news/fireworks-reports-data-theft-during-october-breach-2d599cd7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-reports-data-theft-during-october-breach-2d599cd7</guid>
-      <description><![CDATA[AI company Fireworks disclosed that hackers stole data and billing information during October incidents affecting a limited number of customer accounts. All affected customers were notified of the attack. The company should conduct forensic investigation to determine scope and implement enhanced access monitoring for sensitive billing records.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:08:00 GMT</pubDate>
-      <source url="https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks">The Record</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97533: Important: podman security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6</guid>
-      <description><![CDATA[An update for podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:07:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97533">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Benchmarking Offensive AI Agent Capabilities</title>
-      <link>https://secubuzz.com/news/benchmarking-offensive-ai-agent-capabilities-6496bb80</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/benchmarking-offensive-ai-agent-capabilities-6496bb80</guid>
-      <description><![CDATA[The article presents a framework for assessing AI agents' cybersecurity capabilities, focusing on offensive testing. It outlines the construction of the Wiz Cyber Model Arena, detailing scenario design, adversarial objectives, and performance metrics. The authors recommend iterative validation, data collection, and continuous improvement to ensure robust evaluation for security teams.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:03:25 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/cyber-model-arena-ai-benchmark">Wiz Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor</title>
-      <link>https://secubuzz.com/news/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-2710d747</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-2710d747</guid>
-      <description><![CDATA[Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:00:55 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft ReFS RCE Vulnerability CVE-2026-102227</title>
-      <link>https://secubuzz.com/news/microsoft-refs-rce-vulnerability-cve-2026-102227-624b1899</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-refs-rce-vulnerability-cve-2026-102227-624b1899</guid>
-      <description><![CDATA[Microsoft disclosed CVE-2026-102227, a remote code execution flaw in Windows ReFS that could allow attackers to run arbitrary code via malformed metadata. The flaw stems from improper validation of ReFS metadata, enabling unauthenticated exploitation with a CVSS score of 9.8. Microsoft issued an out‑of‑band patch; administrators should apply it immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102227">Microsoft MSRC</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

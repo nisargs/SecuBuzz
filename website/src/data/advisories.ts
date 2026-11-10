@@ -152,6 +152,346 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-126187",
+    "slug": "cve-2026-126187",
+    "vendor": "npm",
+    "product": "react-server-dom-parcel",
+    "name": "React: Unauthenticated Remote Code Execution in React Server Components",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 9.5,
+    "severity": "Critical",
+    "cwe": "CWE-502",
+    "ransomware": false,
+    "description": "Crafted payloads targeting frameworks supporting React Server Components can lead to remote code execution. This only affects extremely rare cases where responses transport multiple typed arrays and an attacker-controlled value. Updating immediately is recommended.",
+    "requiredAction": "Upgrade react-server-dom-parcel to version 19.0.9 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126187"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125123",
+    "slug": "cve-2026-125123",
+    "vendor": "Pip",
+    "product": "compose-lint",
+    "name": "compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages ",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-117",
+    "ransomware": false,
+    "description": "0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in compose-lint's own output, but not in the argument parser's error messages. When a repository path reaches compose-lint's arguments without a -- before it, the argument parser prints it raw in its error message.",
+    "requiredAction": "Upgrade compose-lint to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8v59-qmwv-4p6q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125123"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125125",
+    "slug": "cve-2026-125125",
+    "vendor": "Actions",
+    "product": "tmatens/compose-lint",
+    "name": " compose-lint: Workflow command injection through SARIF-directory errors triggered by pull request symlinks ",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-117",
+    "ransomware": false,
+    "description": "In Action tags v0.30.0 and v0.31.0, when sarif-file: names a file in a subdirectory that can't be created, the Action prints the directory's resolved path in an error message. In v0.31.0 that message is outside the window in which the Action turns command processing off, and v0.30.0 has no such window.",
+    "requiredAction": "Upgrade tmatens/compose-lint to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xcf7-88g6-7xr8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125125"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125122",
+    "slug": "cve-2026-125122",
+    "vendor": "Pip",
+    "product": "compose-lint",
+    "name": "compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-117",
+    "ransomware": false,
+    "description": "0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. --format json and --format sarif output never passed through that fix, so ##[ inside a service name or other value reaches the log intact when the output is printed to stdout rather than written to a file.",
+    "requiredAction": "Upgrade compose-lint to version 0.32.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hr4h-4c45-v4q4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125122"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126186",
+    "slug": "cve-2026-126186",
+    "vendor": "RubyGems",
+    "product": "activestorage",
+    "name": "Active Storage: Possible arbitrary file read and remote code execution in video previews, analysis and image processing",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-646",
+    "ransomware": false,
+    "description": "ActiveStorage::Blob#open writes a blob to a tempfile whose name carries the extension of the uploaded filename, and hands that path to ffprobe (VideoAnalyzer, AudioAnalyzer), ffmpeg (VideoPreviewer) and ImageMagick (ImageAnalyzer, the :mini_magick variant processor).",
+    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-v924-7rp8-4mxh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126186"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126085",
+    "slug": "cve-2026-126085",
+    "vendor": "RubyGems",
+    "product": "activestorage",
+    "name": "Active Storage: Possible circumvention of file size limits in Active Storage direct uploads to Google Cloud Storage",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-602",
+    "ransomware": false,
+    "description": "ActiveStorage::Service::GCSService#url_for_direct_upload does not bind the declared content length into the signed direct-upload URL, and #headers_for_direct_upload returns no length constraint, so the URL authorizes an upload body of any size.",
+    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hfr4-8rjc-97m2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126085"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126080",
+    "slug": "cve-2026-126080",
+    "vendor": "RubyGems",
+    "product": "activesupport",
+    "name": "Active Support: Possible DoS vulnerability in Active Support safe_constantize",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-74",
+    "ransomware": false,
+    "description": "When constant lookup raises LoadError, ActiveSupport::Inflector#safe_constantize (and String#safe_constantize) builds a regular expression from the requested constant name without escaping it, so a caller that passes untrusted input lets the attacker choose the source of a pattern that the application compiles.",
+    "requiredAction": "Upgrade activesupport to version 8.1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8474-xrp6-wh69"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126080"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-fgfw-85w4-gx99",
+    "slug": "ghsa-fgfw-85w4-gx99",
+    "vendor": ".NET (NuGet)",
+    "product": "Aspire.Cli",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-532",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-q6jf-24jf-m3cg. This link is maintained to preserve external references. Insertion of sensitive information into log file in .NET Aspire allows an authorized attacker to disclose information locally.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fgfw-85w4-gx99"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-hfpm-4fc4-g2wc",
+    "slug": "ghsa-hfpm-4fc4-g2wc",
+    "vendor": ".NET (NuGet)",
+    "product": "Aspire.Cli",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-379",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-m63f-xhvm-6mv5. This link is maintained to preserve external references. Creation of temporary file in directory with insecure permissions in .NET Aspire allows an authorized attacker to elevate privileges locally.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hfpm-4fc4-g2wc"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126074",
+    "slug": "cve-2026-126074",
+    "vendor": "RubyGems",
+    "product": "activestorage",
+    "name": "Active Storage: Possible DoS vulnerability in Active Storage filename handling",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "ActiveStorage::Filename#base and #extension_with_delimiter, and therefore #extension, pass the stored filename unmodified to File.basename and File.extname, which raise ArgumentError when the name contains a NUL byte.",
+    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p2pm-g2h6-7j5j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126074"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-95x6-7hq8-2c37",
+    "slug": "ghsa-95x6-7hq8-2c37",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114157 - ASP.NET Core Security Feature Bypass Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-7phj-vgxq-r67h. This link is maintained to preserve external references. Concurrent execution using shared resource with improper synchronization ('race condition') in ASP.NET Core allows an authorized attacker to elevate privileges locally.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-95x6-7hq8-2c37"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-c827-j3xf-67v6",
+    "slug": "ghsa-c827-j3xf-67v6",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114156 - ASP.NET Core Security Feature Bypass Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-41",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-8w29-6cjc-h6w4. This link is maintained to preserve external references. Improper input validation in ASP.NET Core allows an unauthorized attacker to bypass a security feature over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-c827-j3xf-67v6"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-49q5-vjx7-5gwr",
+    "slug": "ghsa-49q5-vjx7-5gwr",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.Server.HttpSys",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114154 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-401",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-3893-7fxc-qvff. This link is maintained to preserve external references. Uncontrolled resource consumption in ASP.NET Core allows an unauthorized attacker to deny service over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-49q5-vjx7-5gwr"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-gxg8-5rwf-cg43",
+    "slug": "ghsa-gxg8-5rwf-cg43",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.SignalR.StackExchangeRedis",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114147 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-401",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-wr8v-9x5q-ggcm. This link is maintained to preserve external references. Missing release of memory after effective lifetime in ASP.NET Core allows an unauthorized attacker to deny service over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gxg8-5rwf-cg43"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-126068",
     "slug": "cve-2026-126068",
     "vendor": "RubyGems",
@@ -1083,370 +1423,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107846"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-123796",
-    "slug": "cve-2026-123796",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env`",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "This is an incomplete fix for GHSA-jf3h-8jvx-vcrg. 0.32.0 made findings quote the ${NAME} a sibling .env filled in, instead of its value. The same release added a stop at 20,000 findings per document, and that stop is checked before the quoting step. A run that hits it reports the findings graded so far with the resolved values still in them, in text, JSON and SARIF output.",
-    "requiredAction": "Upgrade compose-lint to version 0.33.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rm8w-w798-g545"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123796"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-103002",
-    "slug": "cve-2026-103002",
-    "vendor": "Pip",
-    "product": "gpustack",
-    "name": "GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "An authenticated non-administrative user could access a Kubernetes cluster they are not authorized to access through GPUStack's Kubernetes API proxy. The cluster_apiserver_proxy handler did not perform a resource-level authorization check before forwarding requests to the selected cluster. Requests were forwarded through a worker using its Kubernetes ServiceAccount credentials.",
-    "requiredAction": "Upgrade gpustack to version 2.2.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3hch-x692-6qj3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103002"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-113663",
-    "slug": "cve-2026-113663",
-    "vendor": "Pip",
-    "product": "ag2",
-    "name": "AG2: Newline injection in SandboxShellTool bypasses allowed=[...] and readonly=True, enabling arbitrary command execution",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "SandboxShellTool's restricted modes — allowed=[...] (explicit command allowlist) and readonly=True (implicit READONLY_COMMANDS allowlist) — can both be bypassed by embedding a newline character inside the command string.",
-    "requiredAction": "Upgrade ag2 to version 1.1.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2h4w-29cv-2cmv"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113663"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-102894",
-    "slug": "cve-2026-102894",
-    "vendor": "Pip",
-    "product": "gpustack",
-    "name": "GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 9.1,
-    "severity": "Critical",
-    "cwe": "CWE-294",
-    "ransomware": false,
-    "description": "The callback Base64-decodes the posted XML, reads NameID and attributes, resolves or provisions the user, and mints a gpustack_session JWT — but never calls OneLogin_Saml2_Auth.process_response(), the step that verifies the signature, issuer, audience, destination, and time conditions. No credentials are required, and SAML SSO does not even need to be configured.",
-    "requiredAction": "Upgrade gpustack to version 2.2.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-62m9-f875-rqw6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102894"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-102650",
-    "slug": "cve-2026-102650",
-    "vendor": "npm",
-    "product": "@nuxt/content",
-    "name": "Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "The POST /__nuxt_content/:collection/query endpoint in @nuxt/content accepts an attacker-controlled sql field from the HTTP request body and executes it against a local SQLite database after passing it through an insufficient validator (assertSafeQuery).",
-    "requiredAction": "Upgrade @nuxt/content to version 3.15.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xxrh-5hgg-gj4h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102650"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-123373",
-    "slug": "cve-2026-123373",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-59",
-    "ransomware": false,
-    "description": "Like Docker Compose, compose-lint follows symlinks when it reads a project's files. Unlike Compose, compose-lint up to 0.24.0 could then put the contents of a file from outside the project into its output, where the author of a pull request can read it.",
-    "requiredAction": "Upgrade compose-lint to version 0.25.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-whr6-fgpq-fpv9"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123373"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-123371",
-    "slug": "cve-2026-123371",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-59",
-    "ransomware": false,
-    "description": "compose-lint automatically reads a .compose-lint.yml policy file beside the Compose file. It is meant to read nothing outside the project directory, but it follows that file if it is a symlink, wherever it points. A pull request can commit .compose-lint.yml as a symlink to a file on the CI runner.",
-    "requiredAction": "Upgrade compose-lint to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-88f4-frh5-gmcr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123371"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-123372",
-    "slug": "cve-2026-123372",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "Since 0.22.0, compose-lint fills in ${VAR} references from the .env beside the Compose file, as Compose does. The documentation says values under environment: are never resolved from a .env, \"that is where secrets live\". But image: values are resolved, and CL-0004 and CL-0019 quote the resolved image in their message and fix text.",
-    "requiredAction": "Upgrade compose-lint to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jf3h-8jvx-vcrg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123372"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-123370",
-    "slug": "cve-2026-123370",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: `fix --apply` can delete a line the user did not select, including a security setting",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.1,
-    "severity": "Medium",
-    "cwe": "CWE-193",
-    "ransomware": false,
-    "description": "compose-lint fix --apply converts the line numbers its fixers work with into positions in the file. The YAML parser treats a lone carriage return, U+0085, U+2028 and U+2029 as line breaks, but the conversion counted only \\n. One of those characters inside a quoted value, which most editors and diff views don't show, shifted every later edit down by one line.",
-    "requiredAction": "Upgrade compose-lint to version 0.18.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-65v8-q222-64xx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123370"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-123369",
-    "slug": "cve-2026-123369",
-    "vendor": "Actions",
-    "product": "tmatens/compose-lint",
-    "name": "compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-117",
-    "ransomware": false,
-    "description": "The GitHub Actions runner treats certain text in a step's output as commands. The legacy form, ##[command], is recognized anywhere in a line. compose-lint's text report prints service names, environment keys and lines of the Compose file, and it does not neutralize ##[.",
-    "requiredAction": "Upgrade tmatens/compose-lint to version 0.31.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6f4g-xm8v-pgv6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123369"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-123368",
-    "slug": "cve-2026-123368",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: .env read through a symlink outside the project can expose the CI job's environment",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "compose-lint fills in ${VAR} references from the .env file next to the Compose file. It is meant to read nothing outside the project directory, and env_file:, include: and extends: paths are checked for that. The .env read is not. If .env is a symlink, compose-lint follows it wherever it points.",
-    "requiredAction": "Upgrade compose-lint to version 0.31.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6wcv-rj3c-mhv3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123368"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119345",
-    "slug": "cve-2026-119345",
-    "vendor": "Go",
-    "product": "cocos · ultravioletrs",
-    "name": "Cocos AI Intra-handshake attested TLS implementation is vulnerable to TOCTOU Attacks",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.2,
-    "severity": "High",
-    "cwe": "CWE-367",
-    "ransomware": false,
-    "description": "An attacker who can modify the attested workload’s code, memory-backed state, or configuration after the initial attestation — but without necessarily terminating the existing TLS connection — can cause the peer to continue trusting the connection as if the originally attested state were still running.",
-    "requiredAction": "Upgrade cocos · ultravioletrs to version 0.9.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-ghwv-vrp2-2975"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119345"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-95860",
-    "slug": "cve-2026-95860",
-    "vendor": "npm",
-    "product": "node-opcua",
-    "name": "node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 9.1,
-    "severity": "Critical",
-    "cwe": "CWE-285",
-    "ransomware": false,
-    "description": "An unauthenticated (Anonymous) client can Write protected Variables and Call privileged Methods on any Node that lacks explicit per-node permissions. This follows the inheritance model defined by OPC UA Part 3, §5.2.9, where nodes without an explicit RolePermissions attribute inherit the namespace DefaultRolePermissions.",
-    "requiredAction": "Upgrade node-opcua to version 2.180.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xggf-m53x-jc3f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95860"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119299",
-    "slug": "cve-2026-119299",
-    "vendor": "Go",
-    "product": "gopacket · gopacket",
-    "name": "gopacket: SCTP chunk sub-decoder out-of-bounds panics on crafted segments",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-125",
-    "ransomware": false,
-    "description": "gopacket decodes SCTP (IP protocol 132) by walking the chunk chain through per-chunk-type decoder functions (decodeSCTPInit, decodeSCTPShutdown, decodeSCTPError, decodeSCTPSack, in layers/sctp.go). Each of these reads fixed-size header fields and runs count-driven loops without validating the chunk's declared length against the minimums those reads require.",
-    "requiredAction": "Upgrade gopacket · gopacket to version 1.7.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-358w-w75h-x6rx"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119299"
       }
     ],
     "source": "GITHUB"

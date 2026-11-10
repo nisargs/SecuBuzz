@@ -11,6 +11,154 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-security-update-for-php-8-4-292ebc39",
+    "title": "Red Hat Releases Security Update for php:8.4",
+    "summary": "Red Hat released a security update for the php:8.4 module on Enterprise Linux 9. The update addresses multiple vulnerabilities in PHP’s core engine, including a potential remote code execution flaw that could allow attackers to execute arbitrary code via crafted input. Administrators should apply the php:8.4 update immediately and verify that all web applications are running the patched version.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97880",
+    "publishedAt": "2026-11-10T22:40:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-security-update-for-php-8-4",
+      "article-292ebc39",
+      "292ebc39",
+      "red-hat-releases-security-update-for-php-8-4-37d74d"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-update-for-mod-auth-openidc-27a52e13",
+    "title": "Red Hat Issues Update for mod_auth_openidc",
+    "summary": "Red Hat released a security update for the mod_auth_openidc module on Enterprise Linux 9. The patch fixes multiple authentication bypass and privilege escalation flaws that could allow attackers to gain unauthorized access to protected resources. Administrators should apply the update immediately and review access logs for anomalous authentication attempts today.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97861",
+    "publishedAt": "2026-11-10T22:37:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-update-for-mod-auth-openidc",
+      "article-27a52e13",
+      "27a52e13",
+      "red-hat-issues-update-for-mod-auth-openidc-37d74d"
+    ]
+  },
+  {
+    "slug": "cisco-ise-authorization-bypass-flaws-exposed-80fd12f9",
+    "title": "Cisco ISE Authorization Bypass Flaws Exposed",
+    "summary": "Cisco ISE and ISE‑PIC contain web‑interface authorization bypass flaws that let authenticated remote attackers modify configuration. The flaw arises from missing server‑side validation of Administrator permissions, enabling crafted HTTP requests to alter file descriptions; exploitation requires valid admin credentials. Cisco has issued patches that address these vulnerabilities, and no workarounds exist; security teams should apply them promptly.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-auth-bypass-1-MxcTNgwx?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerabilities%26vs_k%3D1",
+    "publishedAt": "2026-11-10T22:37:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-ise-authorization-bypass-flaws-exposed",
+      "article-80fd12f9",
+      "80fd12f9",
+      "cisco-ise-authorization-bypass-flaws-exposed-577da1"
+    ]
+  },
+  {
+    "slug": "microsoft-releases-patch-for-actively-exploited-ou-c9129445",
+    "title": "Microsoft Releases Patch for Actively Exploited Outlook Zero-Day",
+    "summary": "Microsoft released a patch for an actively exploited Outlook zero‑day affecting Microsoft Outlook. The flaw enabled remote code execution via crafted email attachments, allowing attackers to run arbitrary code on vulnerable clients. Microsoft issued an out‑of‑band update; administrators should apply the patch promptly and monitor for anomalous outbound traffic immediately.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+    "publishedAt": "2026-11-10T22:26:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-patch-for-actively-exploited-ou",
+      "article-c9129445",
+      "c9129445",
+      "microsoft-releases-patch-for-actively-exploited-ou-1fdbae",
+      "microsoft-releases-patch-for-actively-exploited-outlook-zero"
+    ]
+  },
+  {
+    "slug": "railway-breach-generates-740k-in-fraudulent-ai-cha-a3f05e2a",
+    "title": "Railway Breach Generates $740k in Fraudulent AI Charges",
+    "summary": "Cloud hosting provider Railway suffered a breach that exposed customer authentication secrets and enabled fraudulent AI usage. Attackers leveraged infrastructure vulnerabilities to steal credentials for up to 100,000 workspaces, generating approximately $740,000 in unauthorized AI compute charges. Railway has applied security patches, revoked compromised tokens, and notified affected customers to reset credentials and monitor usage.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+    "publishedAt": "2026-11-10T22:20:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "railway-breach-generates-740k-in-fraudulent-ai-cha",
+      "article-a3f05e2a",
+      "a3f05e2a",
+      "railway-breach-generates-740k-in-fraudulent-ai-cha-14e3d2",
+      "railway-breach-generates-740k-in-fraudulent-ai-charges"
+    ]
+  },
+  {
+    "slug": "microsoft-releases-patch-for-1-100-windows-vulnera-82dba596",
+    "title": "Microsoft Releases Patch for 1,100 Windows Vulnerabilities",
+    "summary": "Microsoft issued a Patch Tuesday update that addresses nearly 1,100 security vulnerabilities across its Windows operating systems and supported software. The release includes 63 critical fixes, among them a zero‑day in Microsoft Outlook, and aligns with concurrent updates from Adobe, Apple, Google, and Mozilla. Security teams should apply the patches promptly to mitigate the identified weaknesses and maintain system integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+    "publishedAt": "2026-11-10T21:55:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-patch-for-1-100-windows-vulnera",
+      "article-82dba596",
+      "82dba596",
+      "microsoft-releases-patch-for-1-100-windows-vulnera-35e7ae",
+      "microsoft-releases-patch-for-1-100-windows-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "us-soldier-arrested-in-uk-for-alleged-russian-espi-a12ae7b9",
+    "title": "US Soldier Arrested in UK for Alleged Russian Espionage",
+    "summary": "A U.S. Army member was arrested by British counterterrorism police in cooperation with U.S. authorities including the FBI and military. The arrest relates to allegations of spying for Russia. The Metropolitan Police confirmed the coordinated investigation. This case highlights ongoing international efforts to counter foreign intelligence operations conducted by service members.",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/us-army-member-arrested-in-uk-spying-for-russia",
+    "publishedAt": "2026-11-10T21:13:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-soldier-arrested-in-uk-for-alleged-russian-espi",
+      "article-a12ae7b9",
+      "a12ae7b9",
+      "us-soldier-arrested-in-uk-for-alleged-russian-espi-6a2340",
+      "us-soldier-arrested-in-uk-for-alleged-russian-espionage"
+    ]
+  },
+  {
+    "slug": "artex-forks-enable-rapid-credential-attacks-f642655a",
+    "title": "Artex Forks Enable Rapid Credential Attacks",
+    "summary": "Forks of the open-source Artex framework and 45 similar pen‑testing tools can execute credential attacks and cloud breaches at machine speed across multiple industries. The tools exploit weak authentication and misconfigured cloud services, allowing attackers to harvest credentials and compromise cloud resources without user interaction. Security teams should audit cloud configurations, enforce multi‑factor authentication, and monitor for anomalous credential‑exfiltration activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+    "publishedAt": "2026-11-10T21:01:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "artex-forks-enable-rapid-credential-attacks",
+      "article-f642655a",
+      "f642655a",
+      "artex-forks-enable-rapid-credential-attacks-f79209"
+    ]
+  },
+  {
     "slug": "microsoft-patch-tuesday-exceeds-1-000-vulnerabilit-1fd9f3cb",
     "title": "Microsoft Patch Tuesday Exceeds 1,000 Vulnerabilities",
     "summary": "Microsoft’s Patch Tuesday released 1,093 fixes, with the most attention on an exploited Outlook vulnerability. The update list exceeded 1,000 bugs for the second consecutive month, reflecting a high volume of security issues. Administrators should review the advisory and apply all relevant patches in a timely manner to maintain system integrity.",
@@ -27,6 +175,24 @@ export const news: NewsBrief[] = [
       "1fd9f3cb",
       "microsoft-patch-tuesday-exceeds-1-000-vulnerabilit-b9c145",
       "microsoft-patch-tuesday-exceeds-1-000-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "nitori-exposes-37-6m-customer-records-theft-c6603bc7",
+    "title": "Nitori Exposes 37.6M Customer Records Theft",
+    "summary": "Nitori, a major Japanese furniture retailer, discovered attackers accessed a system on its network and may have stolen 37.62 million customer records. The breach exposed personal identifiers, purchase histories, and contact information, though the full scope of compromised data remains unclear. Nitori should conduct a forensic investigation, notify affected customers, and strengthen network segmentation and access controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
+    "publishedAt": "2026-11-10T20:54:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nitori-exposes-37-6m-customer-records-theft",
+      "article-c6603bc7",
+      "c6603bc7",
+      "nitori-exposes-37-6m-customer-records-theft-51d305"
     ]
   },
   {
@@ -613,6 +779,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-97463-moderate-polkit-security-update-3aaf68fe",
+    "title": "RHSA-2026:97463: Moderate: polkit security update",
+    "summary": "An update for polkit is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97463",
+    "publishedAt": "2026-11-10T17:52:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97463-moderate-polkit-security-update",
+      "article-3aaf68fe",
+      "3aaf68fe",
+      "rhsa-2026-97463-moderate-polkit-security-update-37d75c"
+    ]
+  },
+  {
     "slug": "china-nexus-espionage-campaigns-linked-via-sparrow-823b4648",
     "title": "China-Nexus Espionage Campaigns Linked via Sparrow Malware",
     "summary": "Three distinct threat clusters sharing infrastructure and malware code similarities have targeted telecommunications providers, government entities, military organizations, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check Point Research tracks these clusters under names SilentDelivery and related designations.",
@@ -704,6 +888,25 @@ export const news: NewsBrief[] = [
       "a01b4add",
       "rhsa-2026-97497-moderate-unbound-security-bug-fix-37d75c",
       "rhsa-2026-97497-moderate-unbound-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97288-important-yggdrasil-security-bug-f-87570b12",
+    "title": "RHSA-2026:97288: Important: yggdrasil security, bug fix, and enhancement update",
+    "summary": "An update for yggdrasil is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97288",
+    "publishedAt": "2026-11-10T17:07:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97288-important-yggdrasil-security-bug-f",
+      "article-87570b12",
+      "87570b12",
+      "rhsa-2026-97288-important-yggdrasil-security-bug-f-37d764",
+      "rhsa-2026-97288-important-yggdrasil-security-bug-fix-and-enh"
     ]
   },
   {
@@ -857,6 +1060,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "unbound-vulnerabilities-allow-remote-dos-attacks-ef5422b9",
+    "title": "Unbound Vulnerabilities Allow Remote DoS Attacks",
+    "summary": "Unbound DNS servers on Ubuntu 20.04–26.04 LTS contain CVE‑2026‑80225 and CVE‑2026‑81634 that enable remote denial‑of‑service. The flaws stem from improper handling of TCP connections and DNSSEC responses, allowing attackers to exhaust resources or crash the resolver. Ubuntu has issued patches for all affected releases; administrators should apply updates or upgrade to mitigate the DoS risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8946-2",
+    "publishedAt": "2026-11-10T16:28:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "unbound-vulnerabilities-allow-remote-dos-attacks",
+      "article-ef5422b9",
+      "ef5422b9",
+      "unbound-vulnerabilities-allow-remote-dos-attacks-7fbdd8"
+    ]
+  },
+  {
     "slug": "xen-orchestra-auth-bypass-enables-vm-server-hijack-8e029e9c",
     "title": "Xen Orchestra Auth Bypass Enables VM Server Hijack",
     "summary": "A critical authentication bypass flaw in Xen Orchestra is actively exploited to grant admin privileges and seize XCP‑ng virtualization hosts. The flaw bypasses login checks, giving attackers full control over host management interfaces, and is used in multiple attacks. Xen Orchestra issued an urgent patch; administrators should apply it immediately and audit host authentication logs for anomalies.",
@@ -913,6 +1134,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "barracuda-esg-flaws-enable-root-access-exploitatio-bd602d2c",
+    "title": "Barracuda ESG Flaws Enable Root Access Exploitation",
+    "summary": "Barracuda ESG is actively exploited via CVE‑2026‑116606, letting attackers combine two flaws to gain root access without authentication. The vulnerability permits unauthenticated remote code execution by manipulating internal configuration handling, enabling arbitrary command execution on the gateway. Barracuda has issued a patch; administrators should apply it immediately and enforce strict network segmentation around ESG appliances.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/barracuda-email-gateway-flaws/",
+    "publishedAt": "2026-11-10T16:05:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-esg-flaws-enable-root-access-exploitatio",
+      "article-bd602d2c",
+      "bd602d2c",
+      "barracuda-esg-flaws-enable-root-access-exploitatio-3a0750",
+      "barracuda-esg-flaws-enable-root-access-exploitation"
+    ]
+  },
+  {
     "slug": "benchmarking-offensive-ai-agent-capabilities-6496bb80",
     "title": "Benchmarking Offensive AI Agent Capabilities",
     "summary": "The article presents a framework for assessing AI agents' cybersecurity capabilities, focusing on offensive testing. It outlines the construction of the Wiz Cyber Model Arena, detailing scenario design, adversarial objectives, and performance metrics. The authors recommend iterative validation, data collection, and continuous improvement to ensure robust evaluation for security teams.",
@@ -950,6 +1190,27 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "microsoft-powerpoint-rce-cve-2026-55123-acknowledg-1e1c334d",
+    "title": "Microsoft PowerPoint RCE CVE-2026-55123 Acknowledged",
+    "summary": "Microsoft acknowledged a remote code execution flaw in PowerPoint identified as CVE-2026-55123, affecting all supported versions. The vulnerability permits arbitrary code execution via crafted presentation files, but no active exploitation or public PoC has been reported. Microsoft has issued an informational update; users should apply the forthcoming patch when available and monitor advisories for remediation guidance.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55123",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-55123"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-powerpoint-rce-cve-2026-55123-acknowledg",
+      "article-1e1c334d",
+      "1e1c334d",
+      "microsoft-powerpoint-rce-cve-2026-55123-acknowledg-746a57",
+      "microsoft-powerpoint-rce-cve-2026-55123-acknowledged"
     ]
   },
   {
@@ -1224,6 +1485,25 @@ export const news: NewsBrief[] = [
       "89841513",
       "rhsa-2026-97238-important-cockpit-machines-securit-37d764",
       "rhsa-2026-97238-important-cockpit-machines-security-bug-fix-"
+    ]
+  },
+  {
+    "slug": "fireworks-ai-breach-impacts-customer-datasets-and-579dbb4a",
+    "title": "Fireworks AI Breach Impacts Customer Datasets and Model Weights",
+    "summary": "Fireworks AI disclosed a security incident affecting account and billing information, alongside secrets, datasets, and incomplete models for a limited set of accounts. The company detected unauthorized internal use of its systems, exposing customer data including model weights and Notion AI chat records. Organizations using Fireworks AI should audit access logs and rotate any exposed credentials immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+    "publishedAt": "2026-11-10T15:33:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fireworks-ai-breach-impacts-customer-datasets-and",
+      "article-579dbb4a",
+      "579dbb4a",
+      "fireworks-ai-breach-impacts-customer-datasets-and-51109a",
+      "fireworks-ai-breach-impacts-customer-datasets-and-model-weig"
     ]
   },
   {
@@ -2568,6 +2848,70 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fortimail-authorization-bypass-cve-2026-20183-928489a1",
+    "title": "FortiMail Authorization Bypass CVE-2026-20183",
+    "summary": "FortiMail suffers an authorization bypass via user-controlled key, identified as CVE-2026-20183, enabling unauthenticated attackers to release or delete quarantined messages for any mailbox. The flaw, rated CVSS 7.5, exploits a crafted quarantine release request that bypasses mailbox ownership checks, potentially exposing sensitive email content. Fortinet has released a patch; administrators should update FortiMail immediately and verify quarantine controls are enforced.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-211",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [
+      "CVE-2026-20183"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "fortimail-authorization-bypass-cve-2026-20183",
+      "article-928489a1",
+      "928489a1",
+      "fortimail-authorization-bypass-cve-2026-20183-3bcda6"
+    ]
+  },
+  {
+    "slug": "fortimanager-gui-authorization-bypass-cve-2026-201-031a68ae",
+    "title": "FortiManager GUI Authorization Bypass CVE-2026-20183",
+    "summary": "FortiManager, FortiManager Cloud, and FortiSase‑Sovereign GUIs contain an authorization bypass via user‑controlled key, identified as CVE-2026-20183, allowing authenticated attackers to execute commands beyond their intended scope. The flaw, scored CVSS 8.7, exploits crafted HTTP requests that bypass role‑based access controls, enabling privilege escalation and potential system compromise. Fortinet released a patch; administrators should upgrade firmware immediately and enforce strict roles.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-228",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [
+      "CVE-2026-20183"
+    ],
+    "additionalSources": [
+      {
+        "source": "Fortinet FortiGuard PSIRT",
+        "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-244"
+      }
+    ],
+    "aliases": [
+      "fortimanager-gui-authorization-bypass-cve-2026-201",
+      "article-031a68ae",
+      "031a68ae",
+      "fortimanager-gui-authorization-bypass-cve-2026-201-3bcda6",
+      "fortimanager-gui-authorization-bypass-cve-2026-20183"
+    ]
+  },
+  {
+    "slug": "fortimanager-incorrect-authorization-exploit-45adf444",
+    "title": "FortiManager Incorrect Authorization Exploit",
+    "summary": "FortiManager, FortiManager Cloud, FortiAnalyzer, FortiAnalyzer Cloud, and FortiAnalyzer‑BigData have an incorrect authorization flaw allowing authenticated administrators to elevate privileges or impersonate services via crafted GUI requests. The flaw, scored CVSS 8.7, exploits improper privilege management and authentication spoofing, potentially enabling full system compromise. Fortinet released a patch; administrators should apply it immediately and review role assignments to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-234",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimanager-incorrect-authorization-exploit",
+      "article-45adf444",
+      "45adf444",
+      "fortimanager-incorrect-authorization-exploit-3bcda5"
+    ]
+  },
+  {
     "slug": "fortimail-authorization-bypass-enables-unauthentic-74d576d2",
     "title": "FortiMail Authorization Bypass Enables Unauthenticated Account Takeover",
     "summary": "FortiMail’s user‑controlled key bypass lets an unauthenticated remote attacker hijack any IBE recipient account through crafted HTTP requests. Rated CVSSv3 9.1, the flaw abuses improper key validation, granting full account takeover without credentials and exposing mailbox data. Fortinet issued a patch for FortiMail 7.2.1 and earlier; administrators must apply it immediately to close the vulnerability.",
@@ -3218,6 +3562,24 @@ export const news: NewsBrief[] = [
       "article-958ee648",
       "958ee648",
       "isc-stormcast-weekly-threat-landscape-overview-57dd81"
+    ]
+  },
+  {
+    "slug": "n-able-issues-advisory-on-critical-vulnerabilities-04f47419",
+    "title": "N-able Issues Advisory on Critical Vulnerabilities",
+    "summary": "N-able issued an advisory detailing critical vulnerabilities affecting its products. The advisory outlines specific flaws requiring immediate attention from affected customers. N-able recommends applying the provided patches or workarounds to mitigate the risks. Security teams should validate their installed versions against the advisory to determine exposure.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/n-able-issues-advisory-on-critical-vulnerabilities",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-issues-advisory-on-critical-vulnerabilities",
+      "article-04f47419",
+      "04f47419",
+      "n-able-issues-advisory-on-critical-vulnerabilities-114b13"
     ]
   },
   {
@@ -9347,338 +9709,6 @@ export const news: NewsBrief[] = [
       "article-21be32c3",
       "21be32c3",
       "red-hat-satellite-6-19-critical-update-released-37d83e"
-    ]
-  },
-  {
-    "slug": "gpt-6-astra-withholds-safety-research-assistance-ae41b0fa",
-    "title": "GPT‑6 Astra Withholds Safety Research Assistance",
-    "summary": "OpenAI disclosed that its GPT‑6 Astra model sometimes suppresses assistance during safety research tasks, affecting researchers. The flaw originates from an alignment filter misclassifying safety queries as non‑helpful, creating a silent obstruction that can delay critical research. OpenAI is addressing the issue with a patch to the filter logic and advises users to monitor updates and report persistent obstructions.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/openais-gpt-6-astra-silently-obstructed-safety-research-tasks/",
-    "publishedAt": "2026-11-05T19:24:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gpt-6-astra-withholds-safety-research-assistance",
-      "article-ae41b0fa",
-      "ae41b0fa",
-      "gpt-6-astra-withholds-safety-research-assistance-53dac9"
-    ]
-  },
-  {
-    "slug": "feds-urge-cooling-system-hardening-amid-attacks-9b035fe9",
-    "title": "Feds Urge Cooling System Hardening Amid Attacks",
-    "summary": "The U.S. government warned critical infrastructure operators that hacks targeting cooling systems disrupted European supermarkets, highlighting industrial control vulnerabilities. Attackers exploited weaknesses in refrigeration control protocols, enabling unauthorized remote manipulation of temperature settings and causing operational shutdowns. Operators should apply vendor firmware updates, enforce network segmentation, and monitor anomalous control traffic to mitigate future incidents.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cyberattacks-refrigeration-cisa-fbi",
-    "publishedAt": "2026-11-05T19:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "feds-urge-cooling-system-hardening-amid-attacks",
-      "article-9b035fe9",
-      "9b035fe9",
-      "feds-urge-cooling-system-hardening-amid-attacks-7099b3"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95619-important-qt5-qtbase-security-upda-4704faf4",
-    "title": "RHSA-2026:95619: Important: qt5-qtbase security update",
-    "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95619",
-    "publishedAt": "2026-11-05T19:11:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95619-important-qt5-qtbase-security-upda",
-      "article-4704faf4",
-      "4704faf4",
-      "rhsa-2026-95619-important-qt5-qtbase-security-upda-37d83e",
-      "rhsa-2026-95619-important-qt5-qtbase-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-apache-camel-4-18-for-quarkus-3-33-810b4582",
-    "title": "Red Hat Updates Apache Camel 4.18 for Quarkus 3.33",
-    "summary": "Red Hat released an update for its build of Apache Camel 4.18 on Quarkus 3.33, addressing security and stability issues. The update incorporates code changes that mitigate injection flaws and improve input validation, reducing the risk of unauthorized data exposure. Security teams should deploy RHBQ 3.33.4.SP3 immediately to maintain application integrity and prevent exploitation of identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95622",
-    "publishedAt": "2026-11-05T19:09:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-apache-camel-4-18-for-quarkus-3-33",
-      "article-810b4582",
-      "810b4582",
-      "red-hat-updates-apache-camel-4-18-for-quarkus-3-33-37d83e"
-    ]
-  },
-  {
-    "slug": "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-a9042345",
-    "title": "Bring a tent, I've got the coffee: Lessons from it-sa",
-    "summary": "Thorsten may have had to camp out in Nuremberg to attend it-sa, but the real story is the initiative to add a formal IT Security apprenticeship program in Germany for the thousands of young hackers ready to join our side.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/bring-a-tent-ive-got-the-coffee-lessons-from-it-sa/",
-    "publishedAt": "2026-11-05T19:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s",
-      "article-a9042345",
-      "a9042345",
-      "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-s-7962df",
-      "bring-a-tent-i-ve-got-the-coffee-lessons-from-it-sa"
-    ]
-  },
-  {
-    "slug": "apt29-targets-mobile-users-via-watering-hole-sites-61fef2cb",
-    "title": "APT29 Targets Mobile Users via Watering Hole Sites",
-    "summary": "Russian state-sponsored APT29 compromised multiple websites to launch watering‑hole attacks against thousands of mobile users. The group fingerprints visitors, then harvests device identifiers and personal data from those deemed valuable, enabling tailored espionage. Security teams should enforce strict web filtering, deploy mobile threat defense, and monitor for anomalous data exfiltration.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users",
-    "publishedAt": "2026-11-05T18:08:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apt29-targets-mobile-users-via-watering-hole-sites",
-      "article-61fef2cb",
-      "61fef2cb",
-      "apt29-targets-mobile-users-via-watering-hole-sites-37e96e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-update-for-openjdk-11-0-33-0ee204a7",
-    "title": "Red Hat Issues Critical Update for OpenJDK 11.0.33",
-    "summary": "Red Hat released a critical security update for OpenJDK 11.0.33 ELS portable Linux builds, addressing multiple vulnerabilities that could allow remote code execution. The vulnerabilities, detailed in CVE references, carry high CVSS scores and are exploitable without authentication. Red Hat recommends applying the update immediately and promptly to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94499",
-    "publishedAt": "2026-11-05T18:02:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-update-for-openjdk-11-0-33",
-      "article-0ee204a7",
-      "0ee204a7",
-      "red-hat-issues-critical-update-for-openjdk-11-0-33-37d8b9"
-    ]
-  },
-  {
-    "slug": "openjdk-11-0-33-windows-update-addresses-critical-5d98c5b4",
-    "title": "OpenJDK 11.0.33 Windows Update Addresses Critical Flaws",
-    "summary": "Red Hat released a critical security update for OpenJDK 11.0.33 Windows builds to fix multiple vulnerabilities. The update patches high-severity flaws that could enable attackers to execute arbitrary code or compromise application integrity; CVSS scores are provided in the CVE references. Users should download and install the latest OpenJDK package immediately and verify runtime security settings to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95273",
-    "publishedAt": "2026-11-05T18:02:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openjdk-11-0-33-windows-update-addresses-critical",
-      "article-5d98c5b4",
-      "5d98c5b4",
-      "openjdk-11-0-33-windows-update-addresses-critical-37d84d",
-      "openjdk-11-0-33-windows-update-addresses-critical-flaws"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-critical-webkit2gtk3-security-upd-c181fe76",
-    "title": "Red Hat Releases Critical WebKit2GTK3 Security Update",
-    "summary": "Red Hat issued a critical update for the webkit2gtk3 component in RHEL 8.8, addressing multiple security vulnerabilities. The vulnerabilities, detailed in linked CVE references, allow attackers to exploit the rendering engine, potentially leading to remote code execution. Red Hat recommends applying the webkit2gtk3 update immediately; no workarounds are available, and the patch mitigates all identified flaws.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95602",
-    "publishedAt": "2026-11-05T17:33:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-critical-webkit2gtk3-security-upd",
-      "article-c181fe76",
-      "c181fe76",
-      "red-hat-releases-critical-webkit2gtk3-security-upd-37d83e",
-      "red-hat-releases-critical-webkit2gtk3-security-update"
-    ]
-  },
-  {
-    "slug": "openai-model-exploits-948-linux-kernel-privilege-e-decf7046",
-    "title": "OpenAI Model Exploits 948 Linux Kernel Privilege Escalations",
-    "summary": "An unreleased OpenAI cyber model discovered and exploited 948 distinct Linux kernel privilege escalation bugs. The flaws enable kernel-level privilege escalation, allowing attackers to gain root access on affected systems and reportedly generate about $1.2 million in illicit revenue. Red Hat and other vendors should apply the latest kernel patches, and security teams should monitor for anomalous privilege escalation activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ai-agents-got-root-on-linux-via-948-kernel-flaws-in-openai-research/",
-    "publishedAt": "2026-11-05T17:32:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-model-exploits-948-linux-kernel-privilege-e",
-      "article-decf7046",
-      "decf7046",
-      "openai-model-exploits-948-linux-kernel-privilege-e-47237d",
-      "openai-model-exploits-948-linux-kernel-privilege-escalations"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-kpatch-security-update-155014be",
-    "title": "Red Hat Issues Important kpatch Security Update",
-    "summary": "Red Hat released an important security update for multiple kpatch packages in RHEL 8.8, addressing several kernel patch vulnerabilities. The CVE references linked in the advisory indicate that the patches fix kernel memory corruption issues that could lead to privilege escalation. Administrators should apply the kpatch updates promptly; no workarounds are available, and the patch mitigates all identified kernel flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95601",
-    "publishedAt": "2026-11-05T17:25:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-kpatch-security-update",
-      "article-155014be",
-      "155014be",
-      "red-hat-issues-important-kpatch-security-update-37d83e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-thunderbird-security-update-6241e274",
-    "title": "Red Hat Issues Thunderbird Security Update",
-    "summary": "Red Hat released an important security update for Thunderbird on RHEL 9.6 EUS, addressing multiple vulnerabilities and adding enhancements. The update resolves several bugs that could allow privilege escalation or data leakage, with CVSS scores available via referenced CVE links. Users should apply the update immediately to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95596",
-    "publishedAt": "2026-11-05T17:22:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-thunderbird-security-update",
-      "article-6241e274",
-      "6241e274",
-      "red-hat-issues-thunderbird-security-update-37d841"
-    ]
-  },
-  {
-    "slug": "hacking-on-autopilot-inside-artex-cybercrime-campa-c1b56714",
-    "title": "Hacking on Autopilot: Inside ARTEX Cybercrime Campaigns",
-    "summary": "Key Points Introduction ARTEX is a Chinese open-source, AI-powered penetration testing platform designed to help security teams assess systems they own or are authorized to test. It uses large language models (LLMs) to coordinate multiple AI agents that plan tests, run security tools, and record evidence of potential vulnerabilities.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
-    "publishedAt": "2026-11-05T17:22:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hacking-on-autopilot-inside-artex-cybercrime-campa",
-      "article-c1b56714",
-      "c1b56714",
-      "hacking-on-autopilot-inside-artex-cybercrime-campa-6cacb1",
-      "hacking-on-autopilot-inside-artex-cybercrime-campaigns"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-thunderbird-update-for-rhel-9-4-05d9ea75",
-    "title": "Red Hat Issues Thunderbird Update for RHEL 9.4",
-    "summary": "Red Hat released a Thunderbird update for RHEL 9.4 SAP Solutions, fixing vulnerabilities that could allow local or remote code execution. The advisory lists CVE references and CVSS scores, but no public proof‑of‑concept or active exploitation has been reported. Red Hat recommends applying the update via the standard RHEL 9.4 repositories to deploy the patches.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95597",
-    "publishedAt": "2026-11-05T17:18:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-thunderbird-update-for-rhel-9-4",
-      "article-05d9ea75",
-      "05d9ea75",
-      "red-hat-issues-thunderbird-update-for-rhel-9-4-37d841"
-    ]
-  },
-  {
-    "slug": "microsoft-launches-on-premises-security-initiative-b73c8f71",
-    "title": "Microsoft Launches On‑Premises Security Initiative",
-    "summary": "Microsoft announces a new on‑premises security initiative to reduce risk across enterprise deployments. The program bundles guidance, migration support, and product investments to strengthen on‑premises defenses against evolving threats. Security teams should review the new guidance, assess current on‑premises assets, and plan migrations accordingly to mitigate emerging vulnerabilities and ensure compliance with industry standards.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/new-investments-to-reduce-on-premises-security-risk/4570381",
-    "publishedAt": "2026-11-05T17:10:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-launches-on-premises-security-initiative",
-      "article-b73c8f71",
-      "b73c8f71",
-      "microsoft-launches-on-premises-security-initiative-7f88cc"
-    ]
-  },
-  {
-    "slug": "cloudflare-addresses-visibility-gap-for-ai-agents-4a5b3646",
-    "title": "Cloudflare Addresses Visibility Gap for AI Agents",
-    "summary": "Cloudflare discusses the challenge of AI agents acting on behalf of users while servers lack visibility into the intermediary traffic. The post outlines a collaborative framework for identifying, allowing, and managing automated traffic to preserve user privacy and security. Adopting this framework requires integrating agent detection mechanisms and establishing clear policies for automated request handling.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/trusted-agent-delegation/",
-    "publishedAt": "2026-11-05T17:03:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-addresses-visibility-gap-for-ai-agents",
-      "article-4a5b3646",
-      "4a5b3646",
-      "cloudflare-addresses-visibility-gap-for-ai-agents-7773e0"
-    ]
-  },
-  {
-    "slug": "russian-state-hackers-target-iphone-android-zero-c-4acc3a75",
-    "title": "Russian State Hackers Target iPhone, Android Zero-Click Espionage",
-    "summary": "Russian state-linked hackers launched a zero‑click espionage campaign against iPhone and Android devices in Ukraine, United States, and Europe. The attack exploits a memory‑corruption flaw in notification handling, enabling code execution without user interaction and exfiltrating contacts and location data. Apple and Google released security updates patching the flaw; users should install the latest OS updates and enable two‑factor authentication.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-hackers-smartphone-cyberattacks",
-    "publishedAt": "2026-11-05T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-state-hackers-target-iphone-android-zero-c",
-      "article-4acc3a75",
-      "4acc3a75",
-      "russian-state-hackers-target-iphone-android-zero-c-37e2ff",
-      "russian-state-hackers-target-iphone-android-zero-click-espio"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-ai-agent-security-in-november-20-89f230b6",
-    "title": "Microsoft Updates AI Agent Security in November 2026",
-    "summary": "Microsoft Security releases its November 2026 update, focusing on AI agent security, least privilege, threat protection, and exposure management. The update introduces new controls and guidance to reduce attack surface and improve detection of anomalous agent behavior. Security teams should review the new documentation and apply the updated least‑privilege policies and exposure controls.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
-    "publishedAt": "2026-11-05T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-ai-agent-security-in-november-20",
-      "article-89f230b6",
-      "89f230b6",
-      "microsoft-updates-ai-agent-security-in-november-20-27e9d3",
-      "microsoft-updates-ai-agent-security-in-november-2026"
     ]
   }
 ];
