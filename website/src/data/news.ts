@@ -32,6 +32,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "wiz-aligns-iso-for-japan-government-cloud-entry-3dcc3895",
+    "title": "Wiz Aligns ISO for Japan Government Cloud Entry",
+    "summary": "Wiz and ISMAP conduct gap assessment and ISO alignment to qualify for Japan's government cloud service list. The assessment identifies compliance gaps and outlines steps to meet Japan's public sector security requirements. Wiz plans to submit documentation and pursue certification, with no immediate security patch or vulnerability, aiming to comply with strict regulatory standards.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/wiz-and-ismap-for-japan-public-sector",
+    "publishedAt": "2026-11-10T13:48:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-aligns-iso-for-japan-government-cloud-entry",
+      "article-3dcc3895",
+      "3dcc3895",
+      "wiz-aligns-iso-for-japan-government-cloud-entry-22b4fb"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781",
     "title": "RHSA-2026:97121: Moderate: unbound security, bug fix, and enhancement update",
     "summary": "An update for unbound is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -48,6 +66,65 @@ export const news: NewsBrief[] = [
       "7e279781",
       "rhsa-2026-97121-moderate-unbound-security-bug-fix-37d768",
       "rhsa-2026-97121-moderate-unbound-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "qubole-iam-credentials-compromised-multiple-organi-3ef88938",
+    "title": "Qubole IAM Credentials Compromised, Multiple Organizations Hit",
+    "summary": "Hackers used compromised Qubole IAM credentials to access customer files, secrets, keys, environment variables, and credentials, impacting more than a dozen organizations. The breach exploited privileged IAM access to exfiltrate sensitive data from Qubole‑managed cloud environments, exposing operational secrets across tenants. Customers should audit IAM permissions, rotate compromised credentials, and apply the latest Qubole security patches to prevent further exfiltration.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
+    "publishedAt": "2026-11-10T13:27:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qubole-iam-credentials-compromised-multiple-organi",
+      "article-3ef88938",
+      "3ef88938",
+      "qubole-iam-credentials-compromised-multiple-organi-69ea7a",
+      "qubole-iam-credentials-compromised-multiple-organizations-hi"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-trusted-qubole-iam-roles-to-access-d4323600",
+    "title": "Hackers Exploit Trusted Qubole IAM Roles to Access AWS Accounts and Download Entire S3 Buckets",
+    "summary": "Hackers abused trusted Qubole integrations to enter customer AWS accounts, steal secrets, and download data from Amazon S3, sometimes taking entire buckets in one session. The activity ran from October 14 through October 26, 2026, using IAM credentials from an AWS account associated with Qubole rather than exploiting a software vulnerability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/qubole-iam-roles/",
+    "publishedAt": "2026-11-10T13:26:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-trusted-qubole-iam-roles-to-access",
+      "article-d4323600",
+      "d4323600",
+      "hackers-exploit-trusted-qubole-iam-roles-to-access-644914",
+      "hackers-exploit-trusted-qubole-iam-roles-to-access-aws-accou"
+    ]
+  },
+  {
+    "slug": "chrome-updates-released-to-patch-exploited-zero-da-7d6565c2",
+    "title": "Chrome Updates Released to Patch Exploited Zero-Day Vulnerability",
+    "summary": "Google released Chrome desktop and Android updates to patch CVE-2026-123158, a zero‑day flaw attackers are exploiting. The vulnerability permits remote code execution through the Chrome rendering engine, risking user data and system compromise. Users should install the latest Chrome version immediately, and admins should monitor for anomalous activity and enforce additional controls.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting",
+    "publishedAt": "2026-11-10T13:23:00.000Z",
+    "cves": [
+      "CVE-2026-123158"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-updates-released-to-patch-exploited-zero-da",
+      "article-7d6565c2",
+      "7d6565c2",
+      "chrome-updates-released-to-patch-exploited-zero-da-562340",
+      "chrome-updates-released-to-patch-exploited-zero-day-vulnerab"
     ]
   },
   {
@@ -88,6 +165,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "finite-state-raises-27-million-for-ai-product-secu-c67b25bf",
+    "title": "Finite State Raises $27 Million for AI Product Security",
+    "summary": "Finite State announced a $27 million Series C funding round to scale its autonomous product security platform amid rising AI-discovered vulnerabilities and new global security mandates. The investment targets accelerating defect detection across device supply chains. This reflects broader industry trends in automated vulnerability remediation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/finite-state-raises-27-million-to-help-device-makers-fight-vulnpocalypse-with-ai-powered-product-security/",
+    "publishedAt": "2026-11-10T13:17:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "finite-state-raises-27-million-for-ai-product-secu",
+      "article-c67b25bf",
+      "c67b25bf",
+      "finite-state-raises-27-million-for-ai-product-secu-d04e30",
+      "finite-state-raises-27-million-for-ai-product-security"
+    ]
+  },
+  {
     "slug": "red-hat-issues-important-subscription-manager-cock-0b712084",
     "title": "Red Hat Issues Important subscription‑manager‑cockpit Update",
     "summary": "Red Hat released an important security update for subscription‑manager‑cockpit on Red Hat Enterprise Linux 10, addressing critical vulnerabilities. The advisory lists CVSS base scores for each flaw and links to CVE identifiers in the references. Systems administrators should apply the update promptly to close the security gaps and preserve platform stability.",
@@ -104,6 +200,25 @@ export const news: NewsBrief[] = [
       "0b712084",
       "red-hat-issues-important-subscription-manager-cock-37d76b",
       "red-hat-issues-important-subscription-manager-cockpit-update"
+    ]
+  },
+  {
+    "slug": "malwarebytes-flags-phishing-red-flags-on-advent-ca-a3608a97",
+    "title": "Malwarebytes Flags Phishing Red Flags on Advent Calendars",
+    "summary": "Malwarebytes Labs warns that several online advent calendar storefronts exhibit red flags such as copied designs, false urgency, and contradictory claims. These indicators suggest the sites may be phishing fronts or hosts for malicious payloads, potentially compromising user credentials or installing malware. Security teams should verify domain authenticity, inspect SSL certificates, and avoid downloading content from vendors until further investigation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/how-to/2026/11/before-you-buy-an-advent-calendar-check-these-warning-signs",
+    "publishedAt": "2026-11-10T13:03:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malwarebytes-flags-phishing-red-flags-on-advent-ca",
+      "article-a3608a97",
+      "a3608a97",
+      "malwarebytes-flags-phishing-red-flags-on-advent-ca-13ccbe",
+      "malwarebytes-flags-phishing-red-flags-on-advent-calendars"
     ]
   },
   {
@@ -240,6 +355,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "binance-alerts-to-ios-sandbox-escape-exposing-keys-a30ef69e",
+    "title": "Binance Alerts to iOS Sandbox Escape Exposing Keys",
+    "summary": "Binance warns that a sandbox escape lets iOS 26 and 27 apps read files from other apps, exposing seed phrases and private keys. The flaw, worse_query, exploits a privilege escalation bug in the iOS sandbox, enabling unauthorized file access.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+    "publishedAt": "2026-11-10T12:15:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-alerts-to-ios-sandbox-escape-exposing-keys",
+      "article-a30ef69e",
+      "a30ef69e",
+      "binance-alerts-to-ios-sandbox-escape-exposing-keys-48a154"
+    ]
+  },
+  {
     "slug": "sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b",
     "title": "SAP Issues Patches for Four Maximum-Severity Flaws",
     "summary": "SAP released November 2026 security updates addressing 35 vulnerabilities, including four maximum‑severity flaws in NetWeaver, Web Dispatcher, and Gateway components. The flaws, classified as maximum severity, could allow remote code execution or privilege escalation if exploited, though no active exploitation reports exist. SAP has issued patches for all affected products; administrators should apply the updates promptly to mitigate potential exploitation.",
@@ -312,6 +445,24 @@ export const news: NewsBrief[] = [
       "8326924a",
       "claude-mythos-5-2-enhances-bug-hunting-reduces-san-143103",
       "claude-mythos-5-2-enhances-bug-hunting-reduces-sandbox-break"
+    ]
+  },
+  {
+    "slug": "rich-network-data-improves-post-alert-interdiction-4a9ec0de",
+    "title": "Rich Network Data Improves Post-Alert Interdiction",
+    "summary": "The article argues that relying solely on alerts is insufficient, as security teams often fail to detect sophisticated intrusions. It proposes that rich network data enables interdiction by identifying and disrupting malicious traffic after an alert has been triggered. Security teams should integrate deep packet inspection and flow analytics to complement alerts, improving detection coverage and response times.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
+    "publishedAt": "2026-11-10T11:38:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rich-network-data-improves-post-alert-interdiction",
+      "article-4a9ec0de",
+      "4a9ec0de",
+      "rich-network-data-improves-post-alert-interdiction-5a6a44"
     ]
   },
   {
@@ -702,6 +853,27 @@ export const news: NewsBrief[] = [
       "921bb2ee",
       "raspberry-pi-kernel-ax-25-race-condition-causes-do-7e88b1",
       "raspberry-pi-kernel-ax-25-race-condition-causes-dos"
+    ]
+  },
+  {
+    "slug": "xen-frontend-vulnerabilities-allow-guest-memory-ac-36bf45fe",
+    "title": "Xen Frontend Vulnerabilities Allow Guest Memory Access",
+    "summary": "USN-9034-1 patches Linux kernel vulnerabilities in AWS Xen, including CVE-2022-23037, that let malicious backends read guest memory or cause denial of service. The issue stems from inadequate access‑right checks in Xen device frontends, enabling unauthorized memory reads and potential guest workload disruption. Kernel maintainers released patches; administrators should update affected systems and verify Xen configurations to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9034-1",
+    "publishedAt": "2026-11-10T08:46:28.000Z",
+    "cves": [
+      "CVE-2022-23037"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "xen-frontend-vulnerabilities-allow-guest-memory-ac",
+      "article-36bf45fe",
+      "36bf45fe",
+      "xen-frontend-vulnerabilities-allow-guest-memory-ac-7e884f",
+      "xen-frontend-vulnerabilities-allow-guest-memory-access"
     ]
   },
   {
@@ -4216,11 +4388,11 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "openssh-sshole-vulnerability-cve-2026-123158-enabl-b5b717ef",
-    "title": "OpenSSH SSHole Vulnerability (CVE-2026-123158) Enables Remote Code Execution",
-    "summary": "OpenSSH servers worldwide are compromised by the SSHole vulnerability (CVE-2026-123158), allowing attackers to bypass authentication and execute arbitrary code. The flaw stems from improper password length validation, enabling attackers to gain root privileges, exfiltrate credentials, and maintain persistence on affected Linux systems. Administrators must immediately apply the vendor‑issued patch or upgrade to the latest OpenSSH release to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
+    "slug": "cisa-confirms-active-exploitation-of-openssh-sshol-46d3f326",
+    "title": "CISA Confirms Active Exploitation of OpenSSH SSHole Vulnerability",
+    "summary": "CISA reports active exploitation of the SSHole authentication bypass in OpenSSH, letting remote attackers access Linux accounts without valid credentials. The flaw, CVE-2026-123158, scores 8.1 on CVSS and targets specific server configurations, enabling unauthorized SSH access. CISA urges immediate patching; OpenSSH releases updates that mitigate the vulnerability, and administrators should apply the latest security fixes to all affected servers.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
     "source": "SANS Internet Storm Center",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33498",
     "publishedAt": "2026-11-08T15:44:33.000Z",
@@ -4243,14 +4415,18 @@ export const news: NewsBrief[] = [
       {
         "source": "BleepingComputer",
         "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/"
+      },
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/hackers-exploiting-sshole-the-openssh-bug/"
       }
     ],
     "aliases": [
-      "openssh-sshole-vulnerability-cve-2026-123158-enabl",
-      "article-b5b717ef",
-      "b5b717ef",
-      "openssh-sshole-vulnerability-cve-2026-123158-enabl-57dd7e",
-      "openssh-sshole-vulnerability-cve-2026-123158-enables-remote-"
+      "cisa-confirms-active-exploitation-of-openssh-sshol",
+      "article-46d3f326",
+      "46d3f326",
+      "cisa-confirms-active-exploitation-of-openssh-sshol-57dd7e",
+      "cisa-confirms-active-exploitation-of-openssh-sshole-vulnerab"
     ]
   },
   {
@@ -9438,179 +9614,6 @@ export const news: NewsBrief[] = [
       "article-9b148f95",
       "9b148f95",
       "top-10-security-data-lake-platforms-2026-228889"
-    ]
-  },
-  {
-    "slug": "2026-log-management-tools-ranked-e76f8aca",
-    "title": "2026 Log Management Tools Ranked",
-    "summary": "The article presents a 2026 ranking of security log management tools, evaluating cost to move, store, and query logs across pipeline brokers and cloud giants. It discusses how vendors optimize different pipeline legs, hot‑architecture engines, and retention bundling, emphasizing query efficiency and cost‑effective data retention. Readers should evaluate scoring criteria and align tool selection with their economic and operational requirements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-security-log-management/",
-    "publishedAt": "2026-11-05T07:14:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "2026-log-management-tools-ranked",
-      "article-e76f8aca",
-      "e76f8aca",
-      "2026-log-management-tools-ranked-3373e2"
-    ]
-  },
-  {
-    "slug": "zyxel-switches-still-vulnerable-to-exploit-e4018843",
-    "title": "Zyxel Switches Still Vulnerable to Exploit",
-    "summary": "Zyxel GS1900 switches remain exposed to a stack‑based buffer overflow (CVE‑2026‑107441) that attackers exploited in the wild, despite a patch release. The patch fixed CVE‑2026‑7273, a separate CGI overflow, leaving the active flaw unmitigated and enabling remote code execution via crafted HTTP requests. Security teams must apply update for CVE‑2026‑107441 or deploy vendor’s interim workaround to block the exploit.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
-    "publishedAt": "2026-11-05T07:06:33.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/zyxel-cve-2026-107441-exploit/"
-      }
-    ],
-    "aliases": [
-      "zyxel-switches-still-vulnerable-to-exploit",
-      "article-e4018843",
-      "e4018843",
-      "zyxel-switches-still-vulnerable-to-exploit-104ccf"
-    ]
-  },
-  {
-    "slug": "2026-threat-hunting-services-ranked-68702007",
-    "title": "2026 Threat Hunting Services Ranked",
-    "summary": "The article ranks 2026 threat hunting services, evaluating platform-native and estate-attached offerings through detection engineering and hypothesis-driven hunting. It examines market segmentation, cost models, and the trade‑off between telemetry depth and MDR partnerships, highlighting vendor differentiation. Readers should review the scoring methodology and assess economic and operational fit before procurement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-threat-hunting-services/",
-    "publishedAt": "2026-11-05T07:02:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "2026-threat-hunting-services-ranked",
-      "article-68702007",
-      "68702007",
-      "2026-threat-hunting-services-ranked-1a653a"
-    ]
-  },
-  {
-    "slug": "ai-agents-evade-binary-detection-reveal-new-signal-7b469918",
-    "title": "AI Agents Evade Binary Detection, Reveal New Signals",
-    "summary": "AI agents that choose autonomous steps evade traditional binary bot detection, prompting Resemble AI to identify new traffic signals. The flaw lies in binary detection's scripted behavior reliance; AI agents generate undeclared or disguised traffic, bypassing signature checks. Security teams should monitor click timing anomalies and session batch patterns, updating detection engines with behavioral analytics to flag coordinated traffic.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/zohaib-ahmed-resemble-ai-detecting-ai-agent-traffic/",
-    "publishedAt": "2026-11-05T06:45:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-agents-evade-binary-detection-reveal-new-signal",
-      "article-7b469918",
-      "7b469918",
-      "ai-agents-evade-binary-detection-reveal-new-signal-2c32ab",
-      "ai-agents-evade-binary-detection-reveal-new-signals"
-    ]
-  },
-  {
-    "slug": "digicert-breach-exposes-customer-data-and-identity-a195507b",
-    "title": "DigiCert Breach Exposes Customer Data and Identity Documents",
-    "summary": "A DigiCert data breach exposed an internal system holding customer contact details and identity documents. Unauthorized access revealed archived names, business emails, phone numbers, addresses, and in some accounts, passports, driver’s licenses, and utility bills. DigiCert has not issued a patch; affected customers should monitor for credential compromise and apply future security updates.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/digicert-confirms-data-breach/",
-    "publishedAt": "2026-11-05T06:21:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "digicert-breach-exposes-customer-data-and-identity",
-      "article-a195507b",
-      "a195507b",
-      "digicert-breach-exposes-customer-data-and-identity-207eee",
-      "digicert-breach-exposes-customer-data-and-identity-documents"
-    ]
-  },
-  {
-    "slug": "healthcare-struggles-to-govern-undiscovered-ai-too-9ac87524",
-    "title": "Healthcare Struggles to Govern Undiscovered AI Tools",
-    "summary": "A Paubox survey shows 90% of healthcare leaders report security teams review AI‑generated code touching patient data before deployment, yet 70% still find AI‑built tools handling that data without IT or security awareness. The gap indicates AI‑assisted development can introduce patient‑data components that escape formal security vetting. Organizations should enforce code review, track AI tools, and mandate security training.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/healthcare-ai-governance-patient-data/",
-    "publishedAt": "2026-11-05T06:11:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "healthcare-struggles-to-govern-undiscovered-ai-too",
-      "article-9ac87524",
-      "9ac87524",
-      "healthcare-struggles-to-govern-undiscovered-ai-too-7418ca",
-      "healthcare-struggles-to-govern-undiscovered-ai-tools"
-    ]
-  },
-  {
-    "slug": "adversaries-exploit-vulnerability-ecosystem-to-cou-e3a2fe16",
-    "title": "Adversaries Exploit Vulnerability Ecosystem to Counter Defenders",
-    "summary": "Adversaries are exploiting the public vulnerability ecosystem to undermine defensive efforts. They weaponize disclosed flaws, coordinate exploit chains, and manipulate patch timelines, increasing the risk of delayed mitigations and heightened attack surface. Security teams should monitor vulnerability feeds, prioritize critical patches, and adopt threat intelligence to anticipate adversary use of newly disclosed weaknesses.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/adversaries-turn-vulnerability-ecosystem-against-defenders/",
-    "publishedAt": "2026-11-05T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "adversaries-exploit-vulnerability-ecosystem-to-cou",
-      "article-e3a2fe16",
-      "e3a2fe16",
-      "adversaries-exploit-vulnerability-ecosystem-to-cou-7e3dcc",
-      "adversaries-exploit-vulnerability-ecosystem-to-counter-defen"
-    ]
-  },
-  {
-    "slug": "companies-boost-ai-governance-spending-lose-contro-723c397a",
-    "title": "Companies Boost AI Governance Spending, Lose Control",
-    "summary": "A DNSFilter report shows companies are raising cybersecurity budgets, prioritizing AI security and governance. The study notes 74.5% of respondents increased spending, with 40.3% earmarking funds for AI governance, yet many firms report diminished control over AI tools due to employee access. Organizations should align budget allocations with governance frameworks and monitor AI tool usage to mitigate risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/dnsfilter-shadow-ai-cost-report/",
-    "publishedAt": "2026-11-05T05:30:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "companies-boost-ai-governance-spending-lose-contro",
-      "article-723c397a",
-      "723c397a",
-      "companies-boost-ai-governance-spending-lose-contro-3bcb7e",
-      "companies-boost-ai-governance-spending-lose-control"
-    ]
-  },
-  {
-    "slug": "consumers-unwilling-to-let-ai-agents-shop-unsuperv-fcd1538d",
-    "title": "Consumers Unwilling to Let AI Agents Shop Unsupervised",
-    "summary": "Okta’s 2026 Customer Identity Trends Report indicates that most consumers are reluctant to allow AI agents to make purchases without supervision. The study attributes hesitation to the scope of agent capabilities, potential mistakes, and the lack of easy approval or reversal mechanisms. Businesses must implement stringent agent verification and permission controls to meet evolving consumer expectations and regulatory demands.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/okta-ai-customer-experiences-report/",
-    "publishedAt": "2026-11-05T05:00:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "consumers-unwilling-to-let-ai-agents-shop-unsuperv",
-      "article-fcd1538d",
-      "fcd1538d",
-      "consumers-unwilling-to-let-ai-agents-shop-unsuperv-1679dc",
-      "consumers-unwilling-to-let-ai-agents-shop-unsupervised"
     ]
   }
 ];

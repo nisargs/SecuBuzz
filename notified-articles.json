@@ -4054,5 +4054,15 @@
   "https://access.redhat.com/errata/RHSA-2026:97077",
   "https://access.redhat.com/errata/RHSA-2026:97090",
   "https://cybersecuritynews.com/critical-apache-airflow-rce-flaw/",
-  "https://cybersecuritynews.com/dark-storm-team/"
+  "https://cybersecuritynews.com/dark-storm-team/",
+  "https://cybersecuritynews.com/hackers-exploiting-sshole-the-openssh-bug/",
+  "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
+  "https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting",
+  "https://ubuntu.com/security/notices/USN-9034-1",
+  "https://cybersecuritynews.com/finite-state-raises-27-million-to-help-device-makers-fight-vulnpocalypse-with-ai-powered-product-security/",
+  "https://www.wiz.io/blog/wiz-and-ismap-for-japan-public-sector",
+  "https://www.malwarebytes.com/blog/how-to/2026/11/before-you-buy-an-advent-calendar-check-these-warning-signs",
+  "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+  "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
+  "https://cybersecuritynews.com/qubole-iam-roles/"
 ]
