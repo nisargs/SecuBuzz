@@ -9,7 +9,6 @@ import {
   Bug,
   Sparkles,
   UserX,
-  ExternalLink,
   Lock,
   ArrowUpRight,
 } from 'lucide-react';
@@ -339,43 +338,6 @@ export function Contact() {
               >
                 <ArrowUpRight className="h-3.5 w-3.5" /> Open in Mail App
               </a>
-            </div>
-          </div>
-        </section>
-
-        {/* SECURITY & PRIVACY ARCHITECTURAL ASSURANCE */}
-        <section className="rounded-xl border border-line/70 bg-surface/50 p-6 md:p-8 space-y-4">
-          <div className="flex items-center gap-2.5 text-ink">
-            <ShieldCheck className="h-5 w-5 text-accent" />
-            <h3 className="font-semibold text-sm">Security &amp; Attack Surface Elimination</h3>
-          </div>
-
-          <div className="grid gap-6 sm:grid-cols-3 text-xs leading-relaxed text-muted pt-2 border-t border-line/60">
-            <div>
-              <p className="font-medium text-ink mb-1">Zero SQL Injection Risk</p>
-              <p>
-                By avoiding web-based form textboxes, SecuBuzz eliminates all database insertion attack surfaces (SQLi, Stored XSS, and parameter pollution).
-              </p>
-            </div>
-            <div>
-              <p className="font-medium text-ink mb-1">Direct Verified Delivery</p>
-              <p>
-                Inquiries travel through end-to-end encrypted SMTP/TLS directly to our engineers' phones. No messages sit unread in an intermediary database.
-              </p>
-            </div>
-            <div>
-              <p className="font-medium text-ink mb-1">RFC 9116 Compliant</p>
-              <p>
-                Our authoritative vulnerability disclosure policy is declared at{' '}
-                <a
-                  href="/.well-known/security.txt"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-mono text-accent hover:underline inline-flex items-center gap-0.5"
-                >
-                  security.txt <ExternalLink className="w-2.5 h-2.5 inline" />
-                </a>.
-              </p>
             </div>
           </div>
         </section>
