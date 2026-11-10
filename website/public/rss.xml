@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 22:45:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 23:34:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Turla Malware Exploitation Enhanced by AI Reverse Engineering</title>
+      <link>https://secubuzz.com/news/turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457</guid>
+      <description><![CDATA[Turla malware, a Russian state-sponsored threat, is now being reverse engineered using AI techniques, according to a security intelligence alert. The AI-driven analysis uncovers root‑cause telemetry and detection rule patterns, enabling precise identification of Turla's command‑and‑control infrastructure, but no active exploitation is confirmed. Security teams should review telemetry, apply updated detection rules, and patch affected systems to mitigate potential compromise.]]></description>
+      <pubDate>Tue, 10 Nov 2026 23:04:58 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/ai-makes-reverse-engineering-mainstream-software-malwar">CyberNews AI</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>SAP Issues Critical RCE Patches</title>
+      <link>https://secubuzz.com/news/sap-issues-critical-rce-patches-0b9b0471</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-issues-critical-rce-patches-0b9b0471</guid>
+      <description><![CDATA[SAP issued emergency patches for critical remote code execution flaws in its software, exposing customers to code execution via malformed input. Rated CVSS 10.0, the bugs allow attackers to run arbitrary code without credentials, threatening system integrity and data confidentiality. SAP urges immediate application of the updates and monitoring for suspicious activity, as no workaround exists until patches are installed.]]></description>
+      <pubDate>Tue, 10 Nov 2026 23:04:16 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/sap-patches-four-cvss-10-0-flaws-including-two-enabling">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Releases Security Update for php:8.4</title>
       <link>https://secubuzz.com/news/red-hat-releases-security-update-for-php-8-4-292ebc39</link>
@@ -32,6 +50,24 @@
       <description><![CDATA[Cisco ISE and ISE‑PIC contain web‑interface authorization bypass flaws that let authenticated remote attackers modify configuration. The flaw arises from missing server‑side validation of Administrator permissions, enabling crafted HTTP requests to alter file descriptions; exploitation requires valid admin credentials. Cisco has issued patches that address these vulnerabilities, and no workarounds exist; security teams should apply them promptly.]]></description>
       <pubDate>Tue, 10 Nov 2026 22:37:41 GMT</pubDate>
       <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-auth-bypass-1-MxcTNgwx?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerabilities%26vs_k%3D1">Cisco PSIRT</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Python-jwcrypto Update Addresses Moderate Security Issue</title>
+      <link>https://secubuzz.com/news/python-jwcrypto-update-addresses-moderate-security-40f8f9fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/python-jwcrypto-update-addresses-moderate-security-40f8f9fd</guid>
+      <description><![CDATA[Red Hat released a security update for python‑jwcrypto on RHEL 9, addressing a moderate‑impact vulnerability identified by the product security team. The update mitigates potential misuse of the cryptographic library, though no public exploit or CVE identifier is disclosed. Customers should apply the RHSA‑2026:97858 update immediately to ensure cryptographic integrity.]]></description>
+      <pubDate>Tue, 10 Nov 2026 22:36:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97858">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Delve Update Fixes Important Security Bug</title>
+      <link>https://secubuzz.com/news/delve-update-fixes-important-security-bug-1aa4724a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/delve-update-fixes-important-security-bug-1aa4724a</guid>
+      <description><![CDATA[Red Hat issued an important security update for the delve tool on RHEL 9, addressing a critical bug that could affect system integrity. The advisory notes that the flaw may allow unauthorized access to privileged data, though no public exploit is reported. Users should install RHSA‑2026:97877 immediately to prevent potential privilege escalation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 22:32:51 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97877">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -341,6 +377,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>RHSA-2026:97194: Important: cockpit-files security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97194-important-cockpit-files-security-u-c568e2d1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97194-important-cockpit-files-security-u-c568e2d1</guid>
+      <description><![CDATA[An update for cockpit-files is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:02:08 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97194">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Git Addresses Six Security Vulnerabilities in Updates</title>
       <link>https://secubuzz.com/news/git-addresses-six-security-vulnerabilities-in-upda-a1593972</link>
       <guid isPermaLink="true">https://secubuzz.com/news/git-addresses-six-security-vulnerabilities-in-upda-a1593972</guid>
@@ -365,6 +410,15 @@
       <description><![CDATA[An update for microcode_ctl is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 10 Nov 2026 17:54:38 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97521">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97193: Important: cockpit-podman security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97193-important-cockpit-podman-security-edb68059</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97193-important-cockpit-podman-security-edb68059</guid>
+      <description><![CDATA[An update for cockpit-podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:53:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97193">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -401,60 +455,6 @@
       <description><![CDATA[An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 10 Nov 2026 17:31:55 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97456">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Railway Exposes AI‑Driven API Key Theft and Charges</title>
-      <link>https://secubuzz.com/news/railway-exposes-ai-driven-api-key-theft-and-charge-a5e70a7f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/railway-exposes-ai-driven-api-key-theft-and-charge-a5e70a7f</guid>
-      <description><![CDATA[Railway disclosed that attackers leveraged AI agents, a build system flaw, and cloud misconfigurations to exfiltrate customer API keys. The compromised secrets enabled the adversary to generate approximately $740,000 in unauthorized cloud charges across multiple internal systems. Railway is tightening build pipelines, enforcing stricter access controls, and monitoring for anomalous API usage to prevent future incidents.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:19:58 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/railway-details-data-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97497: Moderate: unbound security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97497-moderate-unbound-security-bug-fix-a01b4add</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97497-moderate-unbound-security-bug-fix-a01b4add</guid>
-      <description><![CDATA[An update for unbound is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:11:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97497">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97288: Important: yggdrasil security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97288-important-yggdrasil-security-bug-f-87570b12</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97288-important-yggdrasil-security-bug-f-87570b12</guid>
-      <description><![CDATA[An update for yggdrasil is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:07:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97288">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97328: Important: oci-seccomp-bpf-hook security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec-39b793b0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec-39b793b0</guid>
-      <description><![CDATA[An update for oci-seccomp-bpf-hook is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:57:29 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97328">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Notion Confirms AI Chat Transcripts Exposed in Fireworks AI Breach, Affecting Customer Workspaces</title>
-      <link>https://secubuzz.com/news/notion-confirms-ai-chat-transcripts-exposed-in-fir-4ab5ac1f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/notion-confirms-ai-chat-transcripts-exposed-in-fir-4ab5ac1f</guid>
-      <description><![CDATA[Notion has confirmed that a security incident at Fireworks AI exposed Notion AI chat transcripts linked to fewer than 1% of its customer workspaces. Insights, a feature that helps teams understand their AI usage, used the affected conversations.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:54:37 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/notion-confirms-data-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97219: Moderate: freerdp security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97219-moderate-freerdp-security-bug-fix-a7b5af48</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97219-moderate-freerdp-security-bug-fix-a7b5af48</guid>
-      <description><![CDATA[An update for freerdp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 16:54:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97219">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

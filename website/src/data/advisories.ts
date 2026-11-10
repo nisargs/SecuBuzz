@@ -152,6 +152,266 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-109481",
+    "slug": "cve-2026-109481",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-109481 - ASP.NET Core Elevation of Privilege Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-352",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. The Blazor/SignalR /_blazor/refresh path can accept a cross-site request that binds a victim's authenticated principal to an attacker-owned circuit.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 11.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xw2x-23jm-j582"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109481"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118750",
+    "slug": "cve-2026-118750",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.WebUtilities",
+    "name": "Microsoft Security Advisory CVE-2026-118750 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. FileBufferingReadStream buffer allocation can allow unauthenticated multipart-form requests to exhaust memory.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.WebUtilities to version 2.3.14 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6527-9fp8-r4x6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118750"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-120006",
+    "slug": "cve-2026-120006",
+    "vendor": ".NET (NuGet)",
+    "product": "Aspire.Hosting.AppHost",
+    "name": "Microsoft Security Advisory CVE-2026-120006 - Aspire Elevation of Privilege Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-201",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components. Disclosure of an Aspire Dashboard authentication cookie to a linked service can allow an attacker-controlled container to replay the authenticated session and execute code as the host developer.",
+    "requiredAction": "Upgrade Aspire.Hosting.AppHost to version 13.6.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f7vh-h5g3-7jrh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120006"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118746",
+    "slug": "cve-2026-118746",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-118746 - .NET Security Feature Bypass Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-636",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Unix Negotiate authentication can accept a request when required channel-binding information is missing.",
+    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.linux-arm to version 11.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-ff4h-7rhj-jrjf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118746"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109475",
+    "slug": "cve-2026-109475",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-109475 - .NET Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-121",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Managed HttpListener can recursively process an unterminated request line and exhaust the process stack.",
+    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.linux-arm to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3g4v-f5gv-c7xf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109475"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-120796",
+    "slug": "cve-2026-120796",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-120796 - .NET Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 4.6,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Inefficient algorithmic complexity in .NET allows an unauthorized attacker to deny service over a network.",
+    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.linux-arm to version 11.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cpw3-h88j-9f6x"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120796"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118747",
+    "slug": "cve-2026-118747",
+    "vendor": ".NET (NuGet)",
+    "product": "System.Formats.Cbor",
+    "name": "Microsoft Security Advisory CVE-2026-118747 - .NET Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Colliding CBOR map keys can hash-flood uniqueness checks; the fix uses seeded Marvin hashing.",
+    "requiredAction": "Upgrade System.Formats.Cbor to version 8.0.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-vmv3-wvjp-wqpj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118747"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118749",
+    "slug": "cve-2026-118749",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-118749 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Minimal API validation repeatedly copies a growing validation-error dictionary, allowing attacker-controlled collections to trigger quadratic CPU work after the client disconnects.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 11.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m28h-pj36-4364"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118749"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114149",
+    "slug": "cve-2026-114149",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-114149 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Multipart form processing can bypass the configured header-count limit and consume excessive resources.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x33c-w48q-qrgc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114149"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109476",
+    "slug": "cve-2026-109476",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-109476 - ASP.NET Core Information Disclosure Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 6.1,
+    "severity": "Medium",
+    "cwe": "CWE-116",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. A crafted X-Forwarded-Prefix can inject cookie path delimiters unless PathBase-derived cookie paths percent-encode semicolons.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xhj5-c3g8-pfj8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109476"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-126187",
     "slug": "cve-2026-126187",
     "vendor": "npm",
@@ -1163,266 +1423,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125121"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118670",
-    "slug": "cve-2026-118670",
-    "vendor": "npm",
-    "product": "@ohif/extension-dicom-pdf",
-    "name": "OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "An XSS (Cross-Site Scripting) vulnerability occurs when an attacker is able to inject their own JavaScript code into a web page's source, which is subsequently processed by the victim's browser. A common cause of this vulnerability is the failure to validate user-supplied data before displaying it within the vulnerable application without proper filtering.",
-    "requiredAction": "Upgrade @ohif/extension-dicom-pdf to version 3.12.18 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xwgp-w3pj-q5h3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118670"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118774",
-    "slug": "cve-2026-118774",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: Certificate signature verified with the issuer's RSA signature scheme",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-347",
-    "ransomware": false,
-    "description": "When verifying a certificate, node-forge chose the RSA padding scheme (PKCS#1 v1.5 or RSASSA-PSS) and PSS parameters from the issuer certificate's own signature algorithm instead of the certificate being verified. A certificate labeled as signed with RSASSA-PSS could pass verifyCertificateChain() with a PKCS#1 v1.5 signature. Fixed in node-forge 1.4.1.",
-    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9wg5-mj3p-v49q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118774"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118776",
-    "slug": "cve-2026-118776",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "decipher.finish() in CBC and ECB mode accepted malformed PKCS#7 padding: only the last byte was checked, against a limit of four blocks, so mismatched padding bytes, a zero count and oversized counts were accepted and up to four blocks of plaintext could be silently removed. Fixed in node-forge 1.4.1.",
-    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2vgq-wchc-25w7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118776"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119189",
-    "slug": "cve-2026-119189",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-295",
-    "ransomware": false,
-    "description": "forge.pki.verifyCertificateChain() enforces the pathLenConstraint of a CA certificate's basicConstraints extension only when that certificate also has a keyUsage extension. For a CA certificate with a pathLenConstraint and no keyUsage, chains with more intermediate CA certificates below it than the constraint allows are accepted. Fixed in node-forge 1.4.1.",
-    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h46v-rmh6-fq4f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119189"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119191",
-    "slug": "cve-2026-119191",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "asn1.fromDer() decodes the contents of BIT STRINGs as ASN.1 by default. That decode ignored the maxDepth recursion limit (an incomplete fix of CVE-2025-66031) and also decoded nested BIT STRINGs, keeping a full copy of the decoded contents at each level, so small crafted DER or PEM inputs (certificates, keys, PKCS structures) use excessive CPU time and memory and can abort the Node.js process.",
-    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rhr8-3pm8-cq29"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119191"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-119192",
-    "slug": "cve-2026-119192",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-347",
-    "ransomware": false,
-    "description": "RSASSA-PKCS1-v1_5 signature verification (publicKey.verify() with the default scheme, also used by X.509 certificate and PKCS#7 verification) accepted non-canonical BER encodings of the DigestInfo, such as NULL parameters with content and non-minimal lengths.",
-    "requiredAction": "Upgrade node-forge to version 1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6qrw-m8cv-hcxf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119192"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115779",
-    "slug": "cve-2026-115779",
-    "vendor": "npm",
-    "product": "@effect/platform",
-    "name": "Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie()",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 6.3,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "The name, domain, and path fields of makeCookie() were validated with a regex that allows ;, the attribute separator in Set-Cookie headers. Because serializeCookie() writes those fields verbatim, a caller who passes untrusted input into any of them can append arbitrary attributes to the header.",
-    "requiredAction": "Upgrade @effect/platform to version 0.97.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-chp3-j5qr-2vfr"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115779"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-123364",
-    "slug": "cve-2026-123364",
-    "vendor": "Pip",
-    "product": "OctoPrint",
-    "name": "OctoPrint: Stored XSS via saved connection parameters",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.4,
-    "severity": "Low",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "OctoPrint versions 2.0.0rc1 up until version 2.0.0rc6 are susceptible to cross-site scripting via a specially crafted default port or baudrate setting on the bundled Serial Connector plugin, supplied via the API as new defaults during a connect request. The vulnerability is patched in 2.0.0rc7.",
-    "requiredAction": "Upgrade OctoPrint to version 2.0.0rc7 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p623-mxf7-qxjm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123364"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-110802",
-    "slug": "cve-2026-110802",
-    "vendor": "npm",
-    "product": "altair-static",
-    "name": "Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "Altair 8.5.7 accepts plugin configuration directly from the iframe-sandbox query string. When plugin_sandbox_opts contains type: \"scripts\" and an attacker-controlled URL in scriptUrls, the sandbox page creates a classic <script src=\"...\"> element and loads the supplied script.",
-    "requiredAction": "Upgrade altair-static to version 8.5.8 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-752m-7p75-49gf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110802"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-107846",
-    "slug": "cve-2026-107846",
-    "vendor": "npm",
-    "product": "bitcoinjs-lib",
-    "name": "bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 9.3,
-    "severity": "Critical",
-    "cwe": "CWE-354",
-    "ransomware": false,
-    "description": "fastMerkleRoot pads an odd level by hashing the last node with itself. It does not report that it did so, and checkTxRoots never looks for repeated transactions. A peer can therefore duplicate transactions to fill the pad and produce a block with a different transaction list but the same merkle root. The block hash and block id do not change, so the header still carries valid proof of work.",
-    "requiredAction": "Upgrade bitcoinjs-lib to version 5.2.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8vv3-6qpc-gpw6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107846"
       }
     ],
     "source": "GITHUB"

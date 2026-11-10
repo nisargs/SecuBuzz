@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457",
+    "title": "Turla Malware Exploitation Enhanced by AI Reverse Engineering",
+    "summary": "Turla malware, a Russian state-sponsored threat, is now being reverse engineered using AI techniques, according to a security intelligence alert. The AI-driven analysis uncovers root‑cause telemetry and detection rule patterns, enabling precise identification of Turla's command‑and‑control infrastructure, but no active exploitation is confirmed. Security teams should review telemetry, apply updated detection rules, and patch affected systems to mitigate potential compromise.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/ai-makes-reverse-engineering-mainstream-software-malwar",
+    "publishedAt": "2026-11-10T23:04:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "turla-malware-exploitation-enhanced-by-ai-reverse",
+      "article-6a00e457",
+      "6a00e457",
+      "turla-malware-exploitation-enhanced-by-ai-reverse-5e0fa6",
+      "turla-malware-exploitation-enhanced-by-ai-reverse-engineerin"
+    ]
+  },
+  {
+    "slug": "sap-issues-critical-rce-patches-0b9b0471",
+    "title": "SAP Issues Critical RCE Patches",
+    "summary": "SAP issued emergency patches for critical remote code execution flaws in its software, exposing customers to code execution via malformed input. Rated CVSS 10.0, the bugs allow attackers to run arbitrary code without credentials, threatening system integrity and data confidentiality. SAP urges immediate application of the updates and monitoring for suspicious activity, as no workaround exists until patches are installed.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/sap-patches-four-cvss-10-0-flaws-including-two-enabling",
+    "publishedAt": "2026-11-10T23:04:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-issues-critical-rce-patches",
+      "article-0b9b0471",
+      "0b9b0471",
+      "sap-issues-critical-rce-patches-5efef2"
+    ]
+  },
+  {
     "slug": "red-hat-releases-security-update-for-php-8-4-292ebc39",
     "title": "Red Hat Releases Security Update for php:8.4",
     "summary": "Red Hat released a security update for the php:8.4 module on Enterprise Linux 9. The update addresses multiple vulnerabilities in PHP’s core engine, including a potential remote code execution flaw that could allow attackers to execute arbitrary code via crafted input. Administrators should apply the php:8.4 update immediately and verify that all web applications are running the patched version.",
@@ -62,6 +99,43 @@ export const news: NewsBrief[] = [
       "article-80fd12f9",
       "80fd12f9",
       "cisco-ise-authorization-bypass-flaws-exposed-577da1"
+    ]
+  },
+  {
+    "slug": "python-jwcrypto-update-addresses-moderate-security-40f8f9fd",
+    "title": "Python-jwcrypto Update Addresses Moderate Security Issue",
+    "summary": "Red Hat released a security update for python‑jwcrypto on RHEL 9, addressing a moderate‑impact vulnerability identified by the product security team. The update mitigates potential misuse of the cryptographic library, though no public exploit or CVE identifier is disclosed. Customers should apply the RHSA‑2026:97858 update immediately to ensure cryptographic integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97858",
+    "publishedAt": "2026-11-10T22:36:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "python-jwcrypto-update-addresses-moderate-security",
+      "article-40f8f9fd",
+      "40f8f9fd",
+      "python-jwcrypto-update-addresses-moderate-security-37d74e",
+      "python-jwcrypto-update-addresses-moderate-security-issue"
+    ]
+  },
+  {
+    "slug": "delve-update-fixes-important-security-bug-1aa4724a",
+    "title": "Delve Update Fixes Important Security Bug",
+    "summary": "Red Hat issued an important security update for the delve tool on RHEL 9, addressing a critical bug that could affect system integrity. The advisory notes that the flaw may allow unauthorized access to privileged data, though no public exploit is reported. Users should install RHSA‑2026:97877 immediately to prevent potential privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97877",
+    "publishedAt": "2026-11-10T22:32:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "delve-update-fixes-important-security-bug",
+      "article-1aa4724a",
+      "1aa4724a",
+      "delve-update-fixes-important-security-bug-37d74d"
     ]
   },
   {
@@ -722,6 +796,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-97194-important-cockpit-files-security-u-c568e2d1",
+    "title": "RHSA-2026:97194: Important: cockpit-files security update",
+    "summary": "An update for cockpit-files is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97194",
+    "publishedAt": "2026-11-10T18:02:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97194-important-cockpit-files-security-u",
+      "article-c568e2d1",
+      "c568e2d1",
+      "rhsa-2026-97194-important-cockpit-files-security-u-37d767",
+      "rhsa-2026-97194-important-cockpit-files-security-update"
+    ]
+  },
+  {
     "slug": "git-addresses-six-security-vulnerabilities-in-upda-a1593972",
     "title": "Git Addresses Six Security Vulnerabilities in Updates",
     "summary": "Git released updates addressing six security vulnerabilities that affected recursive clones, reference handling, merges, binary patches, and imports. The defects involve improper validation of repository metadata and could enable unauthorized code injection or data leakage. Users should install the latest Git version or apply the provided patches to secure their repositories.",
@@ -776,6 +869,25 @@ export const news: NewsBrief[] = [
       "18ff9260",
       "rhsa-2026-97521-important-microcode-ctl-security-b-37d759",
       "rhsa-2026-97521-important-microcode-ctl-security-bug-fix-and"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97193-important-cockpit-podman-security-edb68059",
+    "title": "RHSA-2026:97193: Important: cockpit-podman security update",
+    "summary": "An update for cockpit-podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97193",
+    "publishedAt": "2026-11-10T17:53:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97193-important-cockpit-podman-security",
+      "article-edb68059",
+      "edb68059",
+      "rhsa-2026-97193-important-cockpit-podman-security-37d767",
+      "rhsa-2026-97193-important-cockpit-podman-security-update"
     ]
   },
   {
@@ -1693,6 +1805,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "losapio-nominated-to-lead-cisa-amid-senate-uncerta-e092c1d2",
+    "title": "LoSapio Nominated to Lead CISA Amid Senate Uncertainty",
+    "summary": "Palantir's chief information security officer, Michael LoSapio, has been nominated by President Donald Trump to lead the Cybersecurity and Infrastructure Security Agency. The nomination awaits a lame‑duck Senate vote, leaving the confirmation status uncertain amid political debate over CISA leadership. If confirmed, LoSapio would oversee federal cybersecurity policy, incident response coordination, and critical infrastructure protection initiatives.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/michael-losapio-cisa-director-nomination",
+    "publishedAt": "2026-11-10T14:31:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "losapio-nominated-to-lead-cisa-amid-senate-uncerta",
+      "article-e092c1d2",
+      "e092c1d2",
+      "losapio-nominated-to-lead-cisa-amid-senate-uncerta-48000d",
+      "losapio-nominated-to-lead-cisa-amid-senate-uncertainty"
+    ]
+  },
+  {
     "slug": "north-korea-targets-drone-tech-and-software-supply-93ca9b9c",
     "title": "North Korea Targets Drone Tech and Software Supply Chains",
     "summary": "North Korean actors Lazarus and DeceptiveDevelopment resumed cyberespionage against drone technology and software supply chains between April and September 2026. They used stolen developer credentials to inject malicious code into open‑source projects and targeted European defense entities, widening the threat surface. Defenders should monitor supply‑chain integrity, enforce strict credential hygiene, and apply security patches to exposed development environments.",
@@ -1728,6 +1859,24 @@ export const news: NewsBrief[] = [
       "47e2b6b2",
       "check-point-traces-copperdragon-sparrow-framework-3c011b",
       "check-point-traces-copperdragon-sparrow-framework-globally"
+    ]
+  },
+  {
+    "slug": "dreeze-secures-33m-seed-funding-for-cloud-recovery-8e55b81a",
+    "title": "Dreeze Secures $33M Seed Funding for Cloud Recovery",
+    "summary": "Dreeze, a stealth startup, secured $33 million in seed funding to launch its Application Revival platform for Amazon Web Services. The platform automates full cloud application recovery by restoring data, infrastructure, and dependencies in the order required for operational continuity. Dreeze’s solution addresses gaps where traditional backups leave businesses offline, offering a comprehensive restoration workflow for enterprise cloud environments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/dreeze-application-revival-33-million-funding/",
+    "publishedAt": "2026-11-10T14:00:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dreeze-secures-33m-seed-funding-for-cloud-recovery",
+      "article-8e55b81a",
+      "8e55b81a",
+      "dreeze-secures-33m-seed-funding-for-cloud-recovery-7994f3"
     ]
   },
   {
@@ -2848,6 +2997,61 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fortiauthenticator-resource-exhaustion-vulnerabili-e3d17678",
+    "title": "FortiAuthenticator Resource Exhaustion Vulnerability Exposes DoS Risk",
+    "summary": "Fortinet disclosed a resource allocation flaw in FortiAuthenticator’s FastAPI, letting unauthenticated attackers exhaust system resources and cause a denial of service. The CVSSv3 score of 7.5 indicates high severity, and the flaw can be triggered with crafted requests without authentication. Fortinet recommends applying the latest firmware patch or enabling traffic throttling to mitigate the DoS risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-258",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortiauthenticator-resource-exhaustion-vulnerabili",
+      "article-e3d17678",
+      "e3d17678",
+      "fortiauthenticator-resource-exhaustion-vulnerabili-3bcda5",
+      "fortiauthenticator-resource-exhaustion-vulnerability-exposes"
+    ]
+  },
+  {
+    "slug": "arbitrary-file-write-and-delete-in-json-api-80fa3011",
+    "title": "Arbitrary file write and delete in JSON API",
+    "summary": "CVSSv3 Score: 7.3 An improper limitation of a pathname to a restricted directory ('Path Traversal') vulnerability [CWE-22] in FortiManager and FortiAnalyzer API may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-190",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arbitrary-file-write-and-delete-in-json-api",
+      "article-80fa3011",
+      "80fa3011",
+      "arbitrary-file-write-and-delete-in-json-api-3bcda8"
+    ]
+  },
+  {
+    "slug": "broken-access-control-in-two-factor-authentication-f2fe69ff",
+    "title": "Broken Access Control in Two-Factor-Authentication",
+    "summary": "CVSSv3 Score: 5.9 An Improper Authentication vulnerability [CWE-287] in the FortiOS Remote Radius Type Admin Two-Factor (TFA) Authentication may allow a remote authenticated attacker with at least read-only permission to log in to the FortiOS GUI with an invalid token after entering a valid username and password, in scenarios where the RADIUS server returns an additional \"Access-Challenge\" response following an invalid TFA token.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-195",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "broken-access-control-in-two-factor-authentication",
+      "article-f2fe69ff",
+      "f2fe69ff",
+      "broken-access-control-in-two-factor-authentication-3bcda8"
+    ]
+  },
+  {
     "slug": "fortimail-authorization-bypass-cve-2026-20183-928489a1",
     "title": "FortiMail Authorization Bypass CVE-2026-20183",
     "summary": "FortiMail suffers an authorization bypass via user-controlled key, identified as CVE-2026-20183, enabling unauthenticated attackers to release or delete quarantined messages for any mailbox. The flaw, rated CVSS 7.5, exploits a crafted quarantine release request that bypasses mailbox ownership checks, potentially exposing sensitive email content. Fortinet has released a patch; administrators should update FortiMail immediately and verify quarantine controls are enforced.",
@@ -3565,6 +3769,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gitlab-critical-patch-release-19-5-4-19-4-6-19-3-8-f8ad1984",
+    "title": "GitLab Critical Patch Release: 19.5.4, 19.4.6, 19.3.8",
+    "summary": "On November 10, 2026, we released versions 19.5.4, 19.4.6, 19.3.8 for GitLab Community Edition and Enterprise Edition. These versions contain important bug and security fixes, and we strongly recommend that all self-managed GitLab installations be upgraded to one of these versions immediately. GitLab releases fixes for vulnerabilities in patch releases.",
+    "category": "General",
+    "severity": "CRITICAL",
+    "source": "GitLab Security Releases",
+    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-4-released/",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-critical-patch-release-19-5-4-19-4-6-19-3-8",
+      "article-f8ad1984",
+      "f8ad1984",
+      "gitlab-critical-patch-release-19-5-4-19-4-6-19-3-8-78d304"
+    ]
+  },
+  {
     "slug": "n-able-issues-advisory-on-critical-vulnerabilities-04f47419",
     "title": "N-able Issues Advisory on Critical Vulnerabilities",
     "summary": "N-able issued an advisory detailing critical vulnerabilities affecting its products. The advisory outlines specific flaws requiring immediate attention from affected customers. N-able recommends applying the provided patches or workarounds to mitigate the risks. Security teams should validate their installed versions against the advisory to determine exposure.",
@@ -3989,6 +4211,42 @@ export const news: NewsBrief[] = [
       "article-06ebae8e",
       "06ebae8e",
       "openjdk-21-faces-multiple-authentication-flaws-7e8934"
+    ]
+  },
+  {
+    "slug": "apple-releases-macos-27-2-1-security-update-2cb6f97c",
+    "title": "Apple Releases macOS 27.2.1 Security Update",
+    "summary": "Apple released macOS 27.2.1 (26B131) to address a set of security vulnerabilities affecting the operating system. The update patches multiple flaws, including a privilege escalation bug and a memory corruption issue that could allow local attackers to gain elevated access. Security teams should download and install the update promptly to maintain system integrity and comply with Apple’s security best practices.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026d",
+    "publishedAt": "2026-11-09T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-macos-27-2-1-security-update",
+      "article-2cb6f97c",
+      "2cb6f97c",
+      "apple-releases-macos-27-2-1-security-update-70fac5"
+    ]
+  },
+  {
+    "slug": "apple-releases-watchos-27-2-1-security-update-36a4d2ce",
+    "title": "Apple Releases watchOS 27.2.1 Security Update",
+    "summary": "Apple released watchOS 27.2.1 (24S132) to fix several security issues identified in the smartwatch operating system. The update addresses vulnerabilities such as a buffer overflow in the watch’s communication stack and a flaw that could allow unauthorized access to health data. Users should install the update through the Apple Watch app to ensure device security and protect sensitive health information.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026f",
+    "publishedAt": "2026-11-09T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-watchos-27-2-1-security-update",
+      "article-36a4d2ce",
+      "36a4d2ce",
+      "apple-releases-watchos-27-2-1-security-update-70fac5"
     ]
   },
   {
@@ -9452,263 +9710,6 @@ export const news: NewsBrief[] = [
       "article-483040ce",
       "483040ce",
       "dns-typos-expose-us-government-email-systems-1ba267"
-    ]
-  },
-  {
-    "slug": "ai-images-fuel-pet-missing-scam-extortions-1987234e",
-    "title": "AI Images Fuel Pet‑Missing Scam Extortions",
-    "summary": "Scammers are leveraging AI‑generated images of missing pets to create convincing claims of finding a lost animal. The fabricated images are used to solicit payment from owners, who are misled into believing the pet has been located. Security teams should educate users about verifying claims, checking official pet‑search channels, and reporting suspicious requests to authorities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/scammers-use-ai-generated-images-of-missing-pets-to-extort-owners",
-    "publishedAt": "2026-11-05T21:34:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-images-fuel-pet-missing-scam-extortions",
-      "article-1987234e",
-      "1987234e",
-      "ai-images-fuel-pet-missing-scam-extortions-6fa090"
-    ]
-  },
-  {
-    "slug": "phishers-exploit-fake-spacex-events-for-microsoft-480fdb89",
-    "title": "Phishers Exploit Fake SpaceX Events for Microsoft, Google Credentials",
-    "summary": "Hackers used counterfeit OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, targeting Microsoft and Google accounts. The phishing‑as‑a‑service platforms delivered credential phishing that captured Microsoft and Google authentication sessions, enabling attackers to hijack accounts. Security teams should verify event invitations, enforce multi‑factor authentication, and monitor for anomalous login sessions to mitigate credential compromise.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
-    "publishedAt": "2026-11-05T21:30:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishers-exploit-fake-spacex-events-for-microsoft",
-      "article-480fdb89",
-      "480fdb89",
-      "phishers-exploit-fake-spacex-events-for-microsoft-4e1aa3",
-      "phishers-exploit-fake-spacex-events-for-microsoft-google-cre"
-    ]
-  },
-  {
-    "slug": "red-hat-webkit2gtk3-critical-update-released-ad72d378",
-    "title": "Red Hat webkit2gtk3 Critical Update Released",
-    "summary": "Red Hat issued a critical security update for webkit2gtk3 on Enterprise Linux 8.4, covering both Advanced Mission Critical and Extended Update Support streams. The patch addresses unspecified webkit2gtk3 vulnerabilities; CVSS scores are linked via CVE references, but no specific CVE IDs are named. Administrators should deploy the update promptly to mitigate potential exploitation risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95590",
-    "publishedAt": "2026-11-05T21:15:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-webkit2gtk3-critical-update-released",
-      "article-ad72d378",
-      "ad72d378",
-      "red-hat-webkit2gtk3-critical-update-released-37d841"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-rt-security-update-4121a22f",
-    "title": "Red Hat Releases Kernel-RT Security Update",
-    "summary": "Red Hat issued a kernel‑rt security update for Red Hat Enterprise Linux 7 Extended Lifecycle Support, addressing multiple vulnerabilities. The update carries an Important security impact rating, with CVSS base scores provided for each referenced CVE, indicating high‑severity flaws. Red Hat recommends applying the kernel‑rt patch immediately; no workarounds are listed, and the update is available through standard RHEL repositories.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95721",
-    "publishedAt": "2026-11-05T21:05:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-rt-security-update",
-      "article-4121a22f",
-      "4121a22f",
-      "red-hat-releases-kernel-rt-security-update-37d83a"
-    ]
-  },
-  {
-    "slug": "phishing-simulation-exceeds-scope-exposes-users-to-e956d915",
-    "title": "Phishing Simulation Exceeds Scope, Exposes Users to Real Threats",
-    "summary": "Dark Reading editors highlighted a phishing simulation that exceeded its intended scope, exposing participants to real phishing content. The exercise, meant to test user awareness, inadvertently triggered legitimate phishing attempts, raising concerns about accidental credential compromise. Teams should review simulation parameters, enforce strict boundaries, and monitor for unintended credential leakage to prevent real-world exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/what-we-missed-knicks-phishing-test-out-of-bounds",
-    "publishedAt": "2026-11-05T21:00:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishing-simulation-exceeds-scope-exposes-users-to",
-      "article-e956d915",
-      "e956d915",
-      "phishing-simulation-exceeds-scope-exposes-users-to-2fb4a5",
-      "phishing-simulation-exceeds-scope-exposes-users-to-real-thre"
-    ]
-  },
-  {
-    "slug": "google-meta-tiktok-sue-california-over-youth-prote-fbe3bf35",
-    "title": "Google, Meta, TikTok Sue California Over Youth Protection Law",
-    "summary": "Google, Meta, and TikTok filed federal suits to block a California law that prohibits deploying psychologically exploitative features for users under 15. The lawsuit argues the law infringes on platform freedom and could stifle innovation while protecting minors from compulsive use. Courts will evaluate the law's compatibility with First Amendment rights and the platforms' responsibility to safeguard youth engagement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/social-media-giants-sue-california-over-social-media-law",
-    "publishedAt": "2026-11-05T20:48:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-meta-tiktok-sue-california-over-youth-prote",
-      "article-fbe3bf35",
-      "fbe3bf35",
-      "google-meta-tiktok-sue-california-over-youth-prote-297b95",
-      "google-meta-tiktok-sue-california-over-youth-protection-law"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95638-important-go-toolset-rhel8-securit-7fd2681e",
-    "title": "RHSA-2026:95638: Important: go-toolset:rhel8 security update",
-    "summary": "An update for the go-toolset:rhel8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95638",
-    "publishedAt": "2026-11-05T20:20:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95638-important-go-toolset-rhel8-securit",
-      "article-7fd2681e",
-      "7fd2681e",
-      "rhsa-2026-95638-important-go-toolset-rhel8-securit-37d83e",
-      "rhsa-2026-95638-important-go-toolset-rhel8-security-update"
-    ]
-  },
-  {
-    "slug": "truffle-security-launches-secret-revocation-initia-0c63b467",
-    "title": "Truffle Security Launches Secret Revocation Initiative",
-    "summary": "Truffle Security announced a free Secrets Revocation Program to help API key issuers invalidate 1.4 million publicly exposed secrets. The initiative provides automated tooling and guidance to identify active secrets, revoke them, and monitor for re‑exposure, reducing credential‑based attack surface. Security teams should adopt the program, integrate revocation checks into CI/CD pipelines, and maintain strict secret lifecycle policies.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
-    "publishedAt": "2026-11-05T20:15:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "truffle-security-launches-secret-revocation-initia",
-      "article-0c63b467",
-      "0c63b467",
-      "truffle-security-launches-secret-revocation-initia-4a9fe1",
-      "truffle-security-launches-secret-revocation-initiative"
-    ]
-  },
-  {
-    "slug": "us-sanctions-prince-group-scam-affiliates-837e03ba",
-    "title": "US Sanctions Prince Group Scam Affiliates",
-    "summary": "The U.S. Treasury imposed additional sanctions on four individuals and 41 companies tied to the Prince Group, a Cambodian scam operator. The measures freeze assets and block U.S. financial services to curb the group’s money‑laundering activities. Entities on the list must comply with U.S. export and anti‑money‑laundering rules to avoid penalties.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/us-issues-more-sanctions-against-prince-group-scammers",
-    "publishedAt": "2026-11-05T20:11:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-sanctions-prince-group-scam-affiliates",
-      "article-837e03ba",
-      "837e03ba",
-      "us-sanctions-prince-group-scam-affiliates-63c17f"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-satellite-6-16-eus-security-update-fef0356f",
-    "title": "Red Hat Issues Satellite 6.16 EUS Security Update",
-    "summary": "Red Hat released a security update for Satellite 6.16 EUS, addressing critical vulnerabilities in the platform. The update mitigates several high‑severity flaws, each with a CVSS base score and linked to CVE identifiers, though no specific IDs are listed. Red Hat recommends applying the update immediately; the patch is available via the Satellite update repository and includes all necessary fixes.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95655",
-    "publishedAt": "2026-11-05T19:44:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-satellite-6-16-eus-security-update",
-      "article-fef0356f",
-      "fef0356f",
-      "red-hat-issues-satellite-6-16-eus-security-update-37d83e"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-client-critical-update-released-41ea1750",
-    "title": "Red Hat Satellite Client Critical Update Released",
-    "summary": "Red Hat released a critical update for Satellite 6 Client to address multiple vulnerabilities. The patch mitigates high-severity flaws that could allow attackers to gain unauthorized access or disrupt satellite management; CVSS scores are listed in the CVE references. Administrators should download and apply the patch immediately and verify configuration integrity to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95653",
-    "publishedAt": "2026-11-05T19:44:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-client-critical-update-released",
-      "article-41ea1750",
-      "41ea1750",
-      "red-hat-satellite-client-critical-update-released-37d83e"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-update-for-satellite-6-18-31e67044",
-    "title": "Red Hat Issues Critical Update for Satellite 6.18",
-    "summary": "Red Hat released a critical security update for Satellite 6.18 to address multiple vulnerabilities. The update mitigates flaws that could allow unauthorized configuration changes or privilege escalation, as indicated by the CVSS ratings linked in the advisory. Administrators should apply the patch immediately and verify the new version to maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95657",
-    "publishedAt": "2026-11-05T19:44:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-update-for-satellite-6-18",
-      "article-31e67044",
-      "31e67044",
-      "red-hat-issues-critical-update-for-satellite-6-18-37d83e"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-17-important-update-released-d8db5712",
-    "title": "Red Hat Satellite 6.17 Important Update Released",
-    "summary": "Red Hat released a security update for Satellite 6.17, addressing several high‑severity vulnerabilities that could allow remote code execution or privilege escalation. Each flaw carries a CVSS base score indicating significant risk, and the update patches the underlying authentication and input validation weaknesses. Red Hat recommends applying the update promptly to secure Satellite 6.17 against exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95656",
-    "publishedAt": "2026-11-05T19:44:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-17-important-update-released",
-      "article-d8db5712",
-      "d8db5712",
-      "red-hat-satellite-6-17-important-update-released-37d83e"
-    ]
-  },
-  {
-    "slug": "red-hat-satellite-6-19-critical-update-released-21be32c3",
-    "title": "Red Hat Satellite 6.19 Critical Update Released",
-    "summary": "Red Hat released a critical security update for Satellite 6.19, addressing multiple high‑severity vulnerabilities that could enable remote code execution or privilege escalation. Each flaw carries a CVSS base score indicating critical risk, and the update patches the underlying authentication and input validation weaknesses. Red Hat recommends applying the update immediately to secure Satellite 6.19 against exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95652",
-    "publishedAt": "2026-11-05T19:43:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-satellite-6-19-critical-update-released",
-      "article-21be32c3",
-      "21be32c3",
-      "red-hat-satellite-6-19-critical-update-released-37d83e"
     ]
   }
 ];
