@@ -4115,5 +4115,17 @@
   "https://developer.apple.com/news/releases/?id=11092026e",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109463",
   "https://access.redhat.com/errata/RHSA-2026:97537",
-  "https://access.redhat.com/errata/RHSA-2026:97553"
+  "https://access.redhat.com/errata/RHSA-2026:97553",
+  "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
+  "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+  "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+  "https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review",
+  "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109467",
+  "https://access.redhat.com/errata/RHSA-2026:97539",
+  "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
+  "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+  "https://access.redhat.com/errata/RHSA-2026:97163",
+  "https://isc.sans.edu/diary/rss/33508",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-177-aws/"
 ]

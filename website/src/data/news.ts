@@ -11,6 +11,203 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-97539-important-cockpit-machines-securit-71aae787",
+    "title": "RHSA-2026:97539: Important: cockpit-machines security update",
+    "summary": "An update for cockpit-machines is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97539",
+    "publishedAt": "2026-11-10T19:38:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97539-important-cockpit-machines-securit",
+      "article-71aae787",
+      "71aae787",
+      "rhsa-2026-97539-important-cockpit-machines-securit-37d759",
+      "rhsa-2026-97539-important-cockpit-machines-security-update"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-trusted-aws-access-to-breach-multi-e6dd6ee2",
+    "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
+    "summary": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments. The vulnerability is tracked as CVE-2026-126087.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
+    "publishedAt": "2026-11-10T19:31:11.000Z",
+    "cves": [
+      "CVE-2026-126087"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-trusted-aws-access-to-breach-multi",
+      "article-e6dd6ee2",
+      "e6dd6ee2",
+      "hackers-exploit-trusted-aws-access-to-breach-multi-5a38b4",
+      "hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-"
+    ]
+  },
+  {
+    "slug": "git-patches-flaw-that-lets-malicious-repositories-6737e8b6",
+    "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+    "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The flaw, tracked as CVE-2026-111760, is an integer truncation in how Git handles its index.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+    "publishedAt": "2026-11-10T19:23:10.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "git-patches-flaw-that-lets-malicious-repositories",
+      "article-6737e8b6",
+      "6737e8b6",
+      "git-patches-flaw-that-lets-malicious-repositories-463519",
+      "git-patches-flaw-that-lets-malicious-repositories-execute-co"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97163-moderate-mingw-glib2-security-bug-5bb12a17",
+    "title": "RHSA-2026:97163: Moderate: mingw-glib2 security, bug fix, and enhancement update",
+    "summary": "An update for mingw-glib2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97163",
+    "publishedAt": "2026-11-10T19:22:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97163-moderate-mingw-glib2-security-bug",
+      "article-5bb12a17",
+      "5bb12a17",
+      "rhsa-2026-97163-moderate-mingw-glib2-security-bug-37d768",
+      "rhsa-2026-97163-moderate-mingw-glib2-security-bug-fix-and-en"
+    ]
+  },
+  {
+    "slug": "microsoft-aware-of-exploited-outlook-zero-day-cve-a19a1a02",
+    "title": "Microsoft Aware of Exploited Outlook Zero-Day CVE-2026-124194",
+    "summary": "Microsoft reports active exploitation of Outlook zero‑day CVE‑2026‑124194, found among 1,094 vulnerabilities patched in its November 2026 update. The flaw allows unauthenticated remote code execution via malformed email attachments, scoring CVSS 10.0 and enabling arbitrary code on affected systems. Microsoft released a patch in the November 2026 Rollup; administrators should apply it immediately and monitor mail traffic for anomalous attachments.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
+    "publishedAt": "2026-11-10T19:19:46.000Z",
+    "cves": [
+      "CVE-2026-124194"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-aware-of-exploited-outlook-zero-day-cve",
+      "article-a19a1a02",
+      "a19a1a02",
+      "microsoft-aware-of-exploited-outlook-zero-day-cve-6d45f8",
+      "microsoft-aware-of-exploited-outlook-zero-day-cve-2026-12419"
+    ]
+  },
+  {
+    "slug": "sglang-rce-breaches-near-ai-steals-data-3d91e339",
+    "title": "SGLang RCE Breaches NEAR AI, Steals Data",
+    "summary": "An attacker exploited a remote code execution flaw in SGLang, running arbitrary code on a NEAR AI inference server. The breach exposed data from 18 agents and about 100 users, including confidential requests processed in a trusted execution environment. NEAR AI applied a patch to SGLang and recommends updating to the latest version while monitoring logs for anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+    "publishedAt": "2026-11-10T19:19:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sglang-rce-breaches-near-ai-steals-data",
+      "article-3d91e339",
+      "3d91e339",
+      "sglang-rce-breaches-near-ai-steals-data-5165c4"
+    ]
+  },
+  {
+    "slug": "microsoft-patch-tuesday-november-2027-tue-nov-10th-1bbc566e",
+    "title": "Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)",
+    "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge. The vulnerability is tracked as CVE-2026-113971.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33508",
+    "publishedAt": "2026-11-10T19:09:32.000Z",
+    "cves": [
+      "CVE-2026-113971"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-november-2027-tue-nov-10th",
+      "article-1bbc566e",
+      "1bbc566e",
+      "microsoft-patch-tuesday-november-2027-tue-nov-10th-57dd81"
+    ]
+  },
+  {
+    "slug": "microsoft-patch-tuesday-fixes-1-235-flaws-outlook-1bd8ea52",
+    "title": "Microsoft Patch Tuesday Fixes 1,235 Flaws, Outlook Zero-Day",
+    "summary": "Microsoft released its November 2026 Patch Tuesday, addressing 1,235 vulnerabilities, including the actively exploited Outlook zero‑day CVE‑2026‑113971. The CVE permits unauthenticated remote code execution via malformed email attachments, scoring CVSS 10.0 and enabling arbitrary code execution. Administrators should apply the November 2026 Rollup immediately and verify that Outlook clients are updated to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+    "publishedAt": "2026-11-10T19:07:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-fixes-1-235-flaws-outlook",
+      "article-1bd8ea52",
+      "1bd8ea52",
+      "microsoft-patch-tuesday-fixes-1-235-flaws-outlook-627c82",
+      "microsoft-patch-tuesday-fixes-1-235-flaws-outlook-zero-day"
+    ]
+  },
+  {
+    "slug": "november-2026-security-update-review-ef678e34",
+    "title": "November 2026 Security Update Review",
+    "summary": "The November 2026 Security Update Review covers patch releases from Microsoft and Adobe, detailing record‑breaking vulnerability counts across products. Microsoft fixed 1,235 flaws, including an actively exploited Outlook zero‑day, while Adobe issued nine bulletins for 110 unique CVEs in its creative suite. Teams should apply the November 2026 Rollup, review Adobe bulletin IDs, and monitor for unpatched vulnerabilities.",
+    "category": "General",
+    "severity": "CRITICAL",
+    "source": "Zero Day Initiative",
+    "sourceUrl": "https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review",
+    "publishedAt": "2026-11-10T19:02:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "november-2026-security-update-review",
+      "article-ef678e34",
+      "ef678e34",
+      "november-2026-security-update-review-219998"
+    ]
+  },
+  {
+    "slug": "cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4",
+    "title": "CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent",
+    "summary": "Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an authenticated remote user with permission to submit jobs to a queue to execute arbitrary code as the worker agent OS user and obtain the AWS credentials held by the worker agent via a crafted job that modifies the PATH environment variable.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-177-aws/",
+    "publishedAt": "2026-11-10T18:53:11.000Z",
+    "cves": [
+      "CVE-2026-126087"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-126087-untrusted-search-path-in-openjd-se",
+      "article-502636a4",
+      "502636a4",
+      "cve-2026-126087-untrusted-search-path-in-openjd-se-3fd202",
+      "cve-2026-126087-untrusted-search-path-in-openjd-sessions-for"
+    ]
+  },
+  {
     "slug": "microsoft-releases-windows-11-cumulative-updates-k-e0252079",
     "title": "Microsoft Releases Windows 11 Cumulative Updates KB5132061, KB5131087",
     "summary": "Microsoft released cumulative updates KB5132061 and KB5131087 for Windows 11 versions 26H2/25H2/24H2 and 23H2. The updates address multiple security vulnerabilities and bugs, though specific CVE identifiers are not disclosed in the release notes. Users should install the patches via Windows Update or manually to maintain system security and feature parity.",
@@ -64,6 +261,25 @@ export const news: NewsBrief[] = [
       "c503678a",
       "edk2-update-for-rhel10-addresses-low-severity-issu-37d765",
       "edk2-update-for-rhel10-addresses-low-severity-issues"
+    ]
+  },
+  {
+    "slug": "xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021",
+    "title": "Xen Orchestra Auth Bypass Exploited for Admin Access",
+    "summary": "Hackers exploit a critical authentication bypass in Xen Orchestra to gain administrative privileges. The flaw, tracked as VSA-2026-062, parses authenticationToken=j:%7B%7D into an empty object, enabling unauthorized access and is actively exploited, potentially compromising entire systems. Vates VMS urges immediate patch deployment and temporary disabling of unused REST endpoints to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+    "publishedAt": "2026-11-10T18:12:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xen-orchestra-auth-bypass-exploited-for-admin-acce",
+      "article-4765a021",
+      "4765a021",
+      "xen-orchestra-auth-bypass-exploited-for-admin-acce-40d9ac",
+      "xen-orchestra-auth-bypass-exploited-for-admin-access"
     ]
   },
   {
@@ -384,6 +600,27 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "azure-devops-server-rce-exploited-via-improper-aut-d5a77fc2",
+    "title": "Azure DevOps Server RCE Exploited via Improper Auth",
+    "summary": "CVE-2026-109467 is a remote code execution flaw in Azure DevOps Server that lets authenticated attackers run arbitrary code over the network. The issue arises from improper authentication handling in the REST API, allowing credential bypass and code execution with elevated privileges. Microsoft released a patch; administrators should apply it immediately and audit access controls to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109467",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-109467"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "azure-devops-server-rce-exploited-via-improper-aut",
+      "article-d5a77fc2",
+      "d5a77fc2",
+      "azure-devops-server-rce-exploited-via-improper-aut-1ff6bb",
+      "azure-devops-server-rce-exploited-via-improper-auth"
     ]
   },
   {
@@ -9410,231 +9647,6 @@ export const news: NewsBrief[] = [
       "article-b5226a46",
       "b5226a46",
       "arkose-labs-expands-agent-trust-manager-controls-5ba9e5"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-cockpit-files-on-enterprise-linux-cbe3730a",
-    "title": "Red Hat Updates Cockpit‑Files on Enterprise Linux 10",
-    "summary": "Red Hat issued a cockpit‑files update for Enterprise Linux 10 to fix vulnerabilities that could enable unauthorized web console access. The advisory labels the issues as Moderate, with CVSS scores linked via CVE references, and no active exploitation is known. Users should install the latest cockpit‑files package immediately to prevent potential privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95570",
-    "publishedAt": "2026-11-05T14:28:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-cockpit-files-on-enterprise-linux",
-      "article-cbe3730a",
-      "cbe3730a",
-      "red-hat-updates-cockpit-files-on-enterprise-linux-37d841",
-      "red-hat-updates-cockpit-files-on-enterprise-linux-10"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-rsyslog-update-for-rhel-8-4-67d10994",
-    "title": "Red Hat Issues rsyslog Update for RHEL 8.4",
-    "summary": "Red Hat released a rsyslog update for RHEL 8.4 and RHEL 8.4 ELS, addressing vulnerabilities that could lead to remote code execution. The advisory rates the issues as Important, with CVSS scores provided via CVE links, and no active exploitation has been reported. Administrators should apply the rsyslog update immediately and verify the package version to mitigate potential RCE.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95573",
-    "publishedAt": "2026-11-05T14:26:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-rsyslog-update-for-rhel-8-4",
-      "article-67d10994",
-      "67d10994",
-      "red-hat-issues-rsyslog-update-for-rhel-8-4-37d841"
-    ]
-  },
-  {
-    "slug": "box-unveils-architect-for-agentic-workflow-managem-d4209a0e",
-    "title": "Box Unveils Architect for Agentic Workflow Management",
-    "summary": "Box announced new capabilities including Box Architect for autonomously building, managing, and optimizing agentic workflows across critical business processes. The platform enables teams to leverage frontier AI to create workflows, configure agents, connect tools, and manage workflows at scale. This is a vendor product launch announcement describing enterprise collaboration and AI workflow automation features.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/box-architect/",
-    "publishedAt": "2026-11-05T14:25:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "box-unveils-architect-for-agentic-workflow-managem",
-      "article-d4209a0e",
-      "d4209a0e",
-      "box-unveils-architect-for-agentic-workflow-managem-3057c0",
-      "box-unveils-architect-for-agentic-workflow-management"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95556-important-kernel-security-update-002190ab",
-    "title": "RHSA-2026:95556: Important: kernel security update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95556",
-    "publishedAt": "2026-11-05T14:17:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95556-important-kernel-security-update",
-      "article-002190ab",
-      "002190ab",
-      "rhsa-2026-95556-important-kernel-security-update-37d842"
-    ]
-  },
-  {
-    "slug": "hyflock-encrypts-only-first-4kb-of-large-files-be19f9b4",
-    "title": "HYFLOCK Encrypts Only First 4KB of Large Files",
-    "summary": "HYFLOCK ransomware encrypts only the first 4,096 bytes of files larger than 4KB, leaving the remainder readable. The October 17 build demonstrates this flaw, reducing the encryption scope and providing a partial data recovery opportunity for affected organizations. Security teams should apply vendor‑issued patches or disable the ransomware’s encryption routine to mitigate data loss.",
-    "category": "Ransomware",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hyflock-ransomware/",
-    "publishedAt": "2026-11-05T14:08:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hyflock-encrypts-only-first-4kb-of-large-files",
-      "article-be19f9b4",
-      "be19f9b4",
-      "hyflock-encrypts-only-first-4kb-of-large-files-54d40d"
-    ]
-  },
-  {
-    "slug": "chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-eb304005",
-    "title": "ChatGPT Runtime Flaw Enables Silent DNS Exfiltration",
-    "summary": "Check Point Research identified a flaw in ChatGPT’s runtime that let attackers exfiltrate conversation data silently via DNS tunneling, bypassing network isolation. The vulnerability enables covert data leakage without triggering runtime controls, and a patch was issued immediately after discovery. Users should upgrade to the latest ChatGPT release and monitor DNS traffic for anomalies to mitigate exfiltration.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/chatgpt-lockdown-mode-bypass-phishing-malware-delivery-and-silent-data-exfiltration/",
-    "publishedAt": "2026-11-05T14:00:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chatgpt-runtime-flaw-enables-silent-dns-exfiltrati",
-      "article-eb304005",
-      "eb304005",
-      "chatgpt-runtime-flaw-enables-silent-dns-exfiltrati-53a74d",
-      "chatgpt-runtime-flaw-enables-silent-dns-exfiltration"
-    ]
-  },
-  {
-    "slug": "norad-grants-portal-data-exposed-in-cyberattack-e40db7cc",
-    "title": "Norad Grants Portal Data Exposed in Cyberattack",
-    "summary": "Norad disclosed that a cyberattack may have exposed names and email addresses of 20,614 Grants Portal users. The breach likely stemmed from weak access controls and lack of monitoring, enabling attackers to pull user data from the database. Norad is investigating, notifying affected users, and will strengthen authentication, patch vulnerabilities, and improve monitoring.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/norad-grants-portal-breach/",
-    "publishedAt": "2026-11-05T13:56:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "norad-grants-portal-data-exposed-in-cyberattack",
-      "article-e40db7cc",
-      "e40db7cc",
-      "norad-grants-portal-data-exposed-in-cyberattack-6e1992"
-    ]
-  },
-  {
-    "slug": "portswigger-burp-at-enables-enterprise-pentest-del-69f679d8",
-    "title": "PortSwigger Burp AT Enables Enterprise Pentest Delegation",
-    "summary": "PortSwigger released Burp AT for enterprises, an agentic pentesting solution that lets security teams delegate application investigations to autonomous agents. The platform combines specialist Burp tools with purpose-built pentesting skills and relevant application context to plan testing approaches and adapt dynamically. This is a vendor product announcement classified as GENERAL with LOW severity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/portswigger-burp-at-enterprises/",
-    "publishedAt": "2026-11-05T13:48:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "portswigger-burp-at-enables-enterprise-pentest-del",
-      "article-69f679d8",
-      "69f679d8",
-      "portswigger-burp-at-enables-enterprise-pentest-del-77a212",
-      "portswigger-burp-at-enables-enterprise-pentest-delegation"
-    ]
-  },
-  {
-    "slug": "frr-regression-restores-rpki-update-processing-88e5c7a0",
-    "title": "FRR Regression Restores RPKI Update Processing",
-    "summary": "A regression from the CVE-2024-55553 fix caused FRR to stop processing RPKI updates after the first one, blocking route revalidation. The regression, CVE-2024-44070, also made the BGP daemon fail to start with RPKI enabled on Ubuntu 20.04 LTS, creating denial‑of‑service. The USN-7230-3 update restores correct RPKI handling and BGP startup, eliminating the denial‑of‑service.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-7230-3",
-    "publishedAt": "2026-11-05T13:39:13.000Z",
-    "cves": [
-      "CVE-2024-55553",
-      "CVE-2024-44070"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "frr-regression-restores-rpki-update-processing",
-      "article-88e5c7a0",
-      "88e5c7a0",
-      "frr-regression-restores-rpki-update-processing-7e2a1f"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-delve-security-update-0d3b2f55",
-    "title": "Red Hat Issues Delve Security Update",
-    "summary": "Red Hat issued a security update for the delve tool on Red Hat Enterprise Linux 9.8 Extended Update Support, addressing multiple vulnerabilities. The update is rated as Important, and each affected vulnerability has an associated CVSS base score linked through CVE references. Security teams should apply the latest delve package to mitigate the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95518",
-    "publishedAt": "2026-11-05T13:37:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-delve-security-update",
-      "article-0d3b2f55",
-      "0d3b2f55",
-      "red-hat-issues-delve-security-update-37d842"
-    ]
-  },
-  {
-    "slug": "white-house-network-ip-rented-via-28-residential-p-9c22cc98",
-    "title": "White House Network IP Rented via 28 Residential Proxy Services",
-    "summary": "Researchers at Layer3 Intel discovered that 28 residential proxy services were renting IP addresses from the White House network between October 5 and November 3, 2026. Anyone could route web traffic through these proxies at minimal cost, exposing infrastructure details. This is an infrastructure exposure classified as BREACH with MEDIUM severity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/white-house-network-ip-for-rent/",
-    "publishedAt": "2026-11-05T13:31:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "white-house-network-ip-rented-via-28-residential-p",
-      "article-9c22cc98",
-      "9c22cc98",
-      "white-house-network-ip-rented-via-28-residential-p-75a379",
-      "white-house-network-ip-rented-via-28-residential-proxy-servi"
-    ]
-  },
-  {
-    "slug": "sysdig-ai-defense-enforces-runtime-guardrails-on-a-02b14aec",
-    "title": "Sysdig AI Defense Enforces Runtime Guardrails on AI Agents",
-    "summary": "Sysdig announced general availability of Sysdig AI Defense, a platform that monitors and controls AI agent activity across endpoints and cloud environments by checking actions against company policies. The solution allows, holds for approval, or blocks agent actions before completion while recording all activity for investigations and audits. This is a vendor product release classified as GENERAL with LOW severity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/sysdig-ai-defense/",
-    "publishedAt": "2026-11-05T13:29:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sysdig-ai-defense-enforces-runtime-guardrails-on-a",
-      "article-02b14aec",
-      "02b14aec",
-      "sysdig-ai-defense-enforces-runtime-guardrails-on-a-428d09",
-      "sysdig-ai-defense-enforces-runtime-guardrails-on-ai-agents"
     ]
   }
 ];

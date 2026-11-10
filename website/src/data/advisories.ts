@@ -2,6 +2,162 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-125120",
+    "slug": "cve-2026-125120",
+    "vendor": "npm",
+    "product": "mongoose",
+    "name": "Mongoose: sanitizeFilter not applied on countDocuments",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-943",
+    "ransomware": false,
+    "description": "sanitizeFilter is Mongoose's mechanism for protecting against query selector injection attacks. In older versions of Mongoose, sanitizeFilter was not applied for countDocuments() queries. Patches have been released for all supported Mongoose major release lines. Please upgrade to the following versions depending on which major version of Mongoose applications are using. 1. ^9.9.2 2. ^8.24.3 3.",
+    "requiredAction": "Upgrade mongoose to version 6.13.11 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pcrw-h46h-c93h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125120"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125111",
+    "slug": "cve-2026-125111",
+    "vendor": "RubyGems",
+    "product": "rack",
+    "name": "Rack: Multipart parsing allows DoS via unbounded scan buffer growth",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "Rack::Multipart::Parser reads the request body in chunks of rack.multipart.buffer_size (1 MiB by default) into an internal scan buffer. Parsed bytes are only discarded from that buffer when a chunk ends inside a part body. A request whose parts are sized so that every chunk ends inside, or immediately after, a part's headers is never compacted, so the buffer grows to the size of the request.",
+    "requiredAction": "Upgrade rack to version 2.2.25 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5v64-555j-wjxm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125111"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125108",
+    "slug": "cve-2026-125108",
+    "vendor": "RubyGems",
+    "product": "rack",
+    "name": "Rack: Multipart boundary ambiguity guard in Rack::Multipart::Parser can be bypassed with a quoted boundary value, allowing WAF bypass",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-436",
+    "ransomware": false,
+    "description": "The guard added for CVE-2026-26961 (GHSA-vgpv-f759-9wx3), which rejects multipart requests with more than one boundary parameter, only inspects the part of the Content-Type header after the boundary it extracts.",
+    "requiredAction": "Upgrade rack to version 2.2.25 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p8x9-v4hv-2w4g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125108"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-79914",
+    "slug": "cve-2026-79914",
+    "vendor": "npm",
+    "product": "@nocobase/plugin-action-custom-request",
+    "name": "NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-918",
+    "ransomware": false,
+    "description": "A Server-Side Request Forgery vulnerability exists in NocoBase v2.1.10 in the @nocobase/plugin-action-custom-request plugin. A low-privileged authenticated user can call the customRequests:send endpoint and override the stored request URL at runtime using options.url. This causes the NocoBase server to perform outbound HTTP requests to attacker-controlled or internal URLs.",
+    "requiredAction": "Upgrade @nocobase/plugin-action-custom-request to version 2.1.15 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wrr5-j383-f7h2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79914"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125109",
+    "slug": "cve-2026-125109",
+    "vendor": "RubyGems",
+    "product": "rack",
+    "name": "Rack: Rack::Request#host_with_port (and #base_url / #url) return the raw invalid Host header — incomplete fix of CVE-2026-34835",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 4.8,
+    "severity": "Medium",
+    "cwe": "CWE-1286",
+    "ransomware": false,
+    "description": "Rack::Request#host_with_port, and therefore #base_url and #url, return the raw authority string when it fails validation. An attacker-controlled Host, X-Forwarded-Host, or Forwarded: host= value containing characters that are not permitted in an authority is embedded verbatim in URLs generated by the application.",
+    "requiredAction": "Upgrade rack to version 3.1.23 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2j8w-xcrc-x985"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125109"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125110",
+    "slug": "cve-2026-125110",
+    "vendor": "RubyGems",
+    "product": "rack",
+    "name": "Rack: Rack::Static header_rules bypass via dot-segment normalization mismatch",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-180",
+    "ransomware": false,
+    "description": "Rack::Static normalizes the request path with Utils.clean_path_info when deciding which file to serve, but matches header_rules against a path that is only URL-decoded. A request containing dot segments, raw or percent-encoded, is served the normalized target file while the header rules for that file's location are not applied.",
+    "requiredAction": "Upgrade rack to version 2.2.25 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wvg4-6p58-3gh3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125110"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-125121",
     "slug": "cve-2026-125121",
     "vendor": "Pip",
@@ -1215,162 +1371,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103022"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-102657",
-    "slug": "cve-2026-102657",
-    "vendor": "Go",
-    "product": "esm.sh (web) · esm-dev",
-    "name": "esm.sh: web.NewHandler allows arbitrary file read via encoded dot-segment path traversal",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-22",
-    "ransomware": false,
-    "description": "The documented web.NewHandler static file server can read files outside Config.AppDir when the request path contains URL-encoded dot-segments such as %2e%2e. Go's ServeMux redirects plain /../ paths, but it passes encoded dot-segments to the handler after decoding r.URL.Path.",
-    "requiredAction": "Upgrade esm.sh (web) · esm-dev to version 0.2.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-g3c2-rjq2-c763"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102657"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-102610",
-    "slug": "cve-2026-102610",
-    "vendor": "Pip",
-    "product": "fast-agent-mcp",
-    "name": "fast-agent: `fast-agent serve` binds HTTP to 0.0.0.0 with no authentication by default; with --shell this is unauthenticated remote command execution",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 6.4,
-    "severity": "Medium",
-    "cwe": "CWE-78",
-    "ransomware": false,
-    "description": "fast-agent serve exposes the agent over MCP. By default it uses HTTP transport bound to 0.0.0.0 (all interfaces) on port 8000 with no authentication (auth=None) and prints no warning. Any host that can reach the port can call the exposed agent tool.",
-    "requiredAction": "Upgrade fast-agent-mcp to version 0.7.21 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-9vhv-g5hf-m7m7"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102610"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-102340",
-    "slug": "cve-2026-102340",
-    "vendor": "Go",
-    "product": "telepresence · telepresenceio",
-    "name": "Telepresence: Traffic Manager gRPC has no auth — any pod claims arbitrary namespace and intercepts services, receiving victim environment secrets",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 8.5,
-    "severity": "High",
-    "cwe": "CWE-306",
-    "ransomware": false,
-    "description": "Telepresence's Traffic Manager gRPC API (port 8081) requires no authentication. Any pod with cluster-network access to the Traffic Manager can register as a client in an arbitrary managed namespace and create intercepts against services in that namespace, regardless of Kubernetes RBAC.",
-    "requiredAction": "Upgrade telepresence · telepresenceio to version 2.31.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j8j4-rw65-56r6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102340"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-102339",
-    "slug": "cve-2026-102339",
-    "vendor": "Go",
-    "product": "telepresence (v2) · telepresenceio",
-    "name": "Telepresence: Tunnel endpoint accepts caller-supplied session ID with no ownership proof — active client sessions hijackable",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-639",
-    "ransomware": false,
-    "description": "The Traffic Manager Tunnel gRPC streaming endpoint accepts a session ID from the first bytes of the client-controlled message payload. No verification confirms the caller owns the session. An attacker supplying a valid active session ID receives a fully routed tunnel for that session, gaining the network routing capabilities of the legitimate Telepresence client.",
-    "requiredAction": "Upgrade telepresence (v2) · telepresenceio to version 2.31.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6j3h-rp73-6rvf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102339"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-102289",
-    "slug": "cve-2026-102289",
-    "vendor": "Pip",
-    "product": "zizmor",
-    "name": "zizmor: Debug logging prints available GitHub credentials in cleartext",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 7,
-    "severity": "High",
-    "cwe": "CWE-532",
-    "ransomware": false,
-    "description": "zizmor 1.27.0 exposes GitHub access tokens in cleartext when debug-level logging is enabled. Tokens supplied via environment variables (GH_TOKEN, GITHUB_TOKEN, ZIZMOR_GITHUB_TOKEN), or the corresponding command-line options (--gh-token, --github-token, --zizmor-github-token) are included in the debug representation of the parsed application configuration and written to stderr.",
-    "requiredAction": "Upgrade zizmor to version 1.28.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-f42p-wjw5-97qh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102289"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-86041",
-    "slug": "cve-2026-86041",
-    "vendor": "Go",
-    "product": "ezbookkeeping · mayswind",
-    "name": "ezBookkeeping: Source-IP allowlist (MCP & API token) is bypassable via a spoofed `X-Forwarded-For` header",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-348",
-    "ransomware": false,
-    "description": "A remote attacker from any IP address defeats the operator-configured source-IP allowlist (mcp_allowed_remote_ips / api_token_allowed_remote_ips) by sending a single X-Forwarded-For: <allowlisted-ip> header. The router is created with gin.New() and never calls SetTrustedProxies, so gin trusts every proxy by default and c.ClientIP() returns the attacker-supplied header verbatim.",
-    "requiredAction": "Upgrade ezbookkeeping · mayswind to version 1.6.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wchh-mrv2-5h4q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86041"
       }
     ],
     "source": "GITHUB"

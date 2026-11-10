@@ -5,8 +5,98 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 18:45:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 19:44:41 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:97539: Important: cockpit-machines security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97539-important-cockpit-machines-securit-71aae787</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97539-important-cockpit-machines-securit-71aae787</guid>
+      <description><![CDATA[An update for cockpit-machines is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:38:11 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97539">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers exploit trusted AWS access to breach multiple cloud environments</title>
+      <link>https://secubuzz.com/news/hackers-exploit-trusted-aws-access-to-breach-multi-e6dd6ee2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-trusted-aws-access-to-breach-multi-e6dd6ee2</guid>
+      <description><![CDATA[A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments. The vulnerability is tracked as CVE-2026-126087.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:31:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/">BleepingComputer</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones</title>
+      <link>https://secubuzz.com/news/git-patches-flaw-that-lets-malicious-repositories-6737e8b6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/git-patches-flaw-that-lets-malicious-repositories-6737e8b6</guid>
+      <description><![CDATA[A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The flaw, tracked as CVE-2026-111760, is an integer truncation in how Git handles its index.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:23:10 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97163: Moderate: mingw-glib2 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97163-moderate-mingw-glib2-security-bug-5bb12a17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97163-moderate-mingw-glib2-security-bug-5bb12a17</guid>
+      <description><![CDATA[An update for mingw-glib2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:22:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97163">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Aware of Exploited Outlook Zero-Day CVE-2026-124194</title>
+      <link>https://secubuzz.com/news/microsoft-aware-of-exploited-outlook-zero-day-cve-a19a1a02</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-aware-of-exploited-outlook-zero-day-cve-a19a1a02</guid>
+      <description><![CDATA[Microsoft reports active exploitation of Outlook zero‑day CVE‑2026‑124194, found among 1,094 vulnerabilities patched in its November 2026 update. The flaw allows unauthenticated remote code execution via malformed email attachments, scoring CVSS 10.0 and enabling arbitrary code on affected systems. Microsoft released a patch in the November 2026 Rollup; administrators should apply it immediately and monitor mail traffic for anomalous attachments.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:19:46 GMT</pubDate>
+      <source url="https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>SGLang RCE Breaches NEAR AI, Steals Data</title>
+      <link>https://secubuzz.com/news/sglang-rce-breaches-near-ai-steals-data-3d91e339</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sglang-rce-breaches-near-ai-steals-data-3d91e339</guid>
+      <description><![CDATA[An attacker exploited a remote code execution flaw in SGLang, running arbitrary code on a NEAR AI inference server. The breach exposed data from 18 agents and about 100 users, including confidential requests processed in a trusted execution environment. NEAR AI applied a patch to SGLang and recommends updating to the latest version while monitoring logs for anomalous activity.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:19:39 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)</title>
+      <link>https://secubuzz.com/news/microsoft-patch-tuesday-november-2027-tue-nov-10th-1bbc566e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-november-2027-tue-nov-10th-1bbc566e</guid>
+      <description><![CDATA[Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge. The vulnerability is tracked as CVE-2026-113971.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:09:32 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33508">SANS Internet Storm Center</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Patch Tuesday Fixes 1,235 Flaws, Outlook Zero-Day</title>
+      <link>https://secubuzz.com/news/microsoft-patch-tuesday-fixes-1-235-flaws-outlook-1bd8ea52</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-fixes-1-235-flaws-outlook-1bd8ea52</guid>
+      <description><![CDATA[Microsoft released its November 2026 Patch Tuesday, addressing 1,235 vulnerabilities, including the actively exploited Outlook zero‑day CVE‑2026‑113971. The CVE permits unauthenticated remote code execution via malformed email attachments, scoring CVSS 10.0 and enabling arbitrary code execution. Administrators should apply the November 2026 Rollup immediately and verify that Outlook clients are updated to mitigate the vulnerability.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:07:36 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/">BleepingComputer</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>November 2026 Security Update Review</title>
+      <link>https://secubuzz.com/news/november-2026-security-update-review-ef678e34</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/november-2026-security-update-review-ef678e34</guid>
+      <description><![CDATA[The November 2026 Security Update Review covers patch releases from Microsoft and Adobe, detailing record‑breaking vulnerability counts across products. Microsoft fixed 1,235 flaws, including an actively exploited Outlook zero‑day, while Adobe issued nine bulletins for 110 unique CVEs in its creative suite. Teams should apply the November 2026 Rollup, review Adobe bulletin IDs, and monitor for unpatched vulnerabilities.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:02:41 GMT</pubDate>
+      <source url="https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review">Zero Day Initiative</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent</title>
+      <link>https://secubuzz.com/news/cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4</guid>
+      <description><![CDATA[Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an authenticated remote user with permission to submit jobs to a queue to execute arbitrary code as the worker agent OS user and obtain the AWS credentials held by the worker agent via a crafted job that modifies the PATH environment variable.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:53:11 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-177-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Microsoft Releases Windows 11 Cumulative Updates KB5132061, KB5131087</title>
       <link>https://secubuzz.com/news/microsoft-releases-windows-11-cumulative-updates-k-e0252079</link>
@@ -32,6 +122,15 @@
       <description><![CDATA[Red Hat released an edk2 update for RHEL 10, targeting low‑severity security bugs that could affect firmware initialization. The advisory lists CVSS base scores linked to CVE references, indicating minimal exploitation risk. Users should apply the update to maintain firmware stability, though no immediate threat is reported, and monitor for any related advisories.]]></description>
       <pubDate>Tue, 10 Nov 2026 18:17:59 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97212">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Xen Orchestra Auth Bypass Exploited for Admin Access</title>
+      <link>https://secubuzz.com/news/xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021</guid>
+      <description><![CDATA[Hackers exploit a critical authentication bypass in Xen Orchestra to gain administrative privileges. The flaw, tracked as VSA-2026-062, parses authenticationToken=j:%7B%7D into an empty object, enabling unauthorized access and is actively exploited, potentially compromising entire systems. Vates VMS urges immediate patch deployment and temporary disabling of unused REST endpoints to mitigate risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:12:21 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -185,6 +284,15 @@
       <description><![CDATA[Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems.]]></description>
       <pubDate>Tue, 10 Nov 2026 16:00:55 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Azure DevOps Server RCE Exploited via Improper Auth</title>
+      <link>https://secubuzz.com/news/azure-devops-server-rce-exploited-via-improper-aut-d5a77fc2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/azure-devops-server-rce-exploited-via-improper-aut-d5a77fc2</guid>
+      <description><![CDATA[CVE-2026-109467 is a remote code execution flaw in Azure DevOps Server that lets authenticated attackers run arbitrary code over the network. The issue arises from improper authentication handling in the REST API, allowing credential bypass and code execution with elevated privileges. Microsoft released a patch; administrators should apply it immediately and audit access controls to mitigate risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109467">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
     <item>
@@ -347,114 +455,6 @@
       <description><![CDATA[North Korean actors Lazarus and DeceptiveDevelopment resumed cyberespionage against drone technology and software supply chains between April and September 2026. They used stolen developer credentials to inject malicious code into open‑source projects and targeted European defense entities, widening the threat surface. Defenders should monitor supply‑chain integrity, enforce strict credential hygiene, and apply security patches to exposed development environments.]]></description>
       <pubDate>Tue, 10 Nov 2026 14:09:27 GMT</pubDate>
       <source url="https://cybersecuritynews.com/north-korean-hackers-3/">Cyber Security News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication</title>
-      <link>https://secubuzz.com/news/critical-apache-airflow-rce-flaw-allows-attackers-724acf9f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-apache-airflow-rce-flaw-allows-attackers-724acf9f</guid>
-      <description><![CDATA[Apache Airflow has a critical remote code execution flaw that lets anyone with write access to the Celery message broker run code on worker nodes. The bug is tracked as CVE-2026-68982 and is classified as CWE-306, missing authentication for a critical function.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:57:52 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-apache-airflow-rce-flaw/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Wiz Aligns ISO for Japan Government Cloud Entry</title>
-      <link>https://secubuzz.com/news/wiz-aligns-iso-for-japan-government-cloud-entry-3dcc3895</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wiz-aligns-iso-for-japan-government-cloud-entry-3dcc3895</guid>
-      <description><![CDATA[Wiz and ISMAP conduct gap assessment and ISO alignment to qualify for Japan's government cloud service list. The assessment identifies compliance gaps and outlines steps to meet Japan's public sector security requirements. Wiz plans to submit documentation and pursue certification, with no immediate security patch or vulnerability, aiming to comply with strict regulatory standards.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:48:36 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/wiz-and-ismap-for-japan-public-sector">Wiz Research</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97121: Moderate: unbound security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781</guid>
-      <description><![CDATA[An update for unbound is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:39:44 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97121">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Qubole IAM Credentials Compromised, Multiple Organizations Hit</title>
-      <link>https://secubuzz.com/news/qubole-iam-credentials-compromised-multiple-organi-3ef88938</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qubole-iam-credentials-compromised-multiple-organi-3ef88938</guid>
-      <description><![CDATA[Hackers used compromised Qubole IAM credentials to access customer files, secrets, keys, environment variables, and credentials, impacting more than a dozen organizations. The breach exploited privileged IAM access to exfiltrate sensitive data from Qubole‑managed cloud environments, exposing operational secrets across tenants. Customers should audit IAM permissions, rotate compromised credentials, and apply the latest Qubole security patches to prevent further exfiltration.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:27:44 GMT</pubDate>
-      <source url="https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Trusted Qubole IAM Roles to Access AWS Accounts and Download Entire S3 Buckets</title>
-      <link>https://secubuzz.com/news/hackers-exploit-trusted-qubole-iam-roles-to-access-d4323600</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-trusted-qubole-iam-roles-to-access-d4323600</guid>
-      <description><![CDATA[Hackers abused trusted Qubole integrations to enter customer AWS accounts, steal secrets, and download data from Amazon S3, sometimes taking entire buckets in one session. The activity ran from October 14 through October 26, 2026, using IAM credentials from an AWS account associated with Qubole rather than exploiting a software vulnerability.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:26:51 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/qubole-iam-roles/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Updates Released to Patch Exploited Zero-Day Vulnerability</title>
-      <link>https://secubuzz.com/news/chrome-updates-released-to-patch-exploited-zero-da-7d6565c2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-updates-released-to-patch-exploited-zero-da-7d6565c2</guid>
-      <description><![CDATA[Google released Chrome desktop and Android updates to patch CVE-2026-123158, a zero‑day flaw attackers are exploiting. The vulnerability permits remote code execution through the Chrome rendering engine, risking user data and system compromise. Users should install the latest Chrome version immediately, and admins should monitor for anomalous activity and enforce additional controls.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:23:00 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting">Malwarebytes Labs</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Dark Storm Team Expands DDoS-for-Hire, Demands $5,000 for Amino</title>
-      <link>https://secubuzz.com/news/dark-storm-team-expands-ddos-for-hire-demands-5-00-fd53c7fb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/dark-storm-team-expands-ddos-for-hire-demands-5-00-fd53c7fb</guid>
-      <description><![CDATA[Dark Storm Team expanded its DDoS‑for‑hire service, targeting Amino and demanding $5,000 in cryptocurrency to stop the attack. The group advertises on Telegram, issuing a payment request tied to an October 2025 incident, showing an active threat actor. Defenders should monitor traffic for DDoS patterns, deploy rate‑limiting and scrubbing services, and block known malicious IPs to mitigate disruption.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:18:07 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/dark-storm-team/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA Updates Incident Form for Campaign Detection</title>
-      <link>https://secubuzz.com/news/cisa-updates-incident-form-for-campaign-detection-34addf89</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-updates-incident-form-for-campaign-detection-34addf89</guid>
-      <description><![CDATA[CISA updated its incident reporting form to help analysts identify potential campaign links across organizations. The revised questionnaire incorporates MITRE ATT&CK terminology to capture malware, social engineering, hacking techniques, and insider threats, improving detection of coordinated attacks. Organizations should use the updated form to report incidents, enabling CISA to correlate events and provide more targeted guidance.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:17:50 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/cisa-incident-reporting-form-update/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Finite State Raises $27 Million for AI Product Security</title>
-      <link>https://secubuzz.com/news/finite-state-raises-27-million-for-ai-product-secu-c67b25bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/finite-state-raises-27-million-for-ai-product-secu-c67b25bf</guid>
-      <description><![CDATA[Finite State announced a $27 million Series C funding round to scale its autonomous product security platform amid rising AI-discovered vulnerabilities and new global security mandates. The investment targets accelerating defect detection across device supply chains. This reflects broader industry trends in automated vulnerability remediation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:17:34 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/finite-state-raises-27-million-to-help-device-makers-fight-vulnpocalypse-with-ai-powered-product-security/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important subscription‑manager‑cockpit Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-subscription-manager-cock-0b712084</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-subscription-manager-cock-0b712084</guid>
-      <description><![CDATA[Red Hat released an important security update for subscription‑manager‑cockpit on Red Hat Enterprise Linux 10, addressing critical vulnerabilities. The advisory lists CVSS base scores for each flaw and links to CVE identifiers in the references. Systems administrators should apply the update promptly to close the security gaps and preserve platform stability.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:04:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97090">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Malwarebytes Flags Phishing Red Flags on Advent Calendars</title>
-      <link>https://secubuzz.com/news/malwarebytes-flags-phishing-red-flags-on-advent-ca-a3608a97</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malwarebytes-flags-phishing-red-flags-on-advent-ca-a3608a97</guid>
-      <description><![CDATA[Malwarebytes Labs warns that several online advent calendar storefronts exhibit red flags such as copied designs, false urgency, and contradictory claims. These indicators suggest the sites may be phishing fronts or hosts for malicious payloads, potentially compromising user credentials or installing malware. Security teams should verify domain authenticity, inspect SSL certificates, and avoid downloading content from vendors until further investigation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:03:12 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/how-to/2026/11/before-you-buy-an-advent-calendar-check-these-warning-signs">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Russian State Hackers Compromise Romanian, Kazakh Email Servers</title>
-      <link>https://secubuzz.com/news/russian-state-hackers-compromise-romanian-kazakh-e-c70a08d6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/russian-state-hackers-compromise-romanian-kazakh-e-c70a08d6</guid>
-      <description><![CDATA[Russian state-linked hackers compromised government email servers in Romania and Kazakhstan, intercepting messages exchanged with NATO and EU officials. The intrusion leveraged credential theft and internal access to infiltrate mail systems, enabling covert eavesdropping on diplomatic communications without detection. Affected organizations should conduct forensic analysis, reset credentials, and implement multi-factor authentication to prevent further compromise.]]></description>
-      <pubDate>Tue, 10 Nov 2026 13:00:00 GMT</pubDate>
-      <source url="https://therecord.media/russia-hackers-espionage-romania-kazakhstan">The Record</source>
       <category>Nation State</category>
     </item>
   </channel>
