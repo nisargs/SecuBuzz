@@ -4705,5 +4705,19 @@
   "https://ubuntu.com/security/notices/USN-9029-1",
   "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/",
   "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
-  "https://ubuntu.com/security/notices/USN-9032-1"
+  "https://ubuntu.com/security/notices/USN-9032-1",
+  "https://access.redhat.com/errata/RHSA-2026:97040",
+  "https://access.redhat.com/errata/RHSA-2026:97121",
+  "https://www.helpnetsecurity.com/2026/11/10/cisa-incident-reporting-form-update/",
+  "https://therecord.media/russia-hackers-espionage-romania-kazakhstan",
+  "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
+  "https://isc.sans.edu/diary/rss/33506",
+  "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/",
+  "https://cybersecuritynews.com/ios-flaw-expose-crypto-wallet/",
+  "https://www.helpnetsecurity.com/2026/11/10/anthropic-claude-fable-and-mythos-5-2-safeguards/",
+  "https://cybersecuritynews.com/sap-security-patch-day-november/",
+  "https://www.helpnetsecurity.com/2026/11/10/windows-settings-backup-default/",
+  "https://www.helpnetsecurity.com/2026/11/10/irisscon-2026-dublin/",
+  "https://access.redhat.com/errata/RHSA-2026:97077",
+  "https://access.redhat.com/errata/RHSA-2026:97090"
 ]

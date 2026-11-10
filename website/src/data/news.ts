@@ -11,6 +11,195 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781",
+    "title": "RHSA-2026:97121: Moderate: unbound security, bug fix, and enhancement update",
+    "summary": "An update for unbound is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97121",
+    "publishedAt": "2026-11-10T13:39:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97121-moderate-unbound-security-bug-fix",
+      "article-7e279781",
+      "7e279781",
+      "rhsa-2026-97121-moderate-unbound-security-bug-fix-37d768",
+      "rhsa-2026-97121-moderate-unbound-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "cisa-updates-incident-form-for-campaign-detection-34addf89",
+    "title": "CISA Updates Incident Form for Campaign Detection",
+    "summary": "CISA updated its incident reporting form to help analysts identify potential campaign links across organizations. The revised questionnaire incorporates MITRE ATT&CK terminology to capture malware, social engineering, hacking techniques, and insider threats, improving detection of coordinated attacks. Organizations should use the updated form to report incidents, enabling CISA to correlate events and provide more targeted guidance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/cisa-incident-reporting-form-update/",
+    "publishedAt": "2026-11-10T13:17:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-updates-incident-form-for-campaign-detection",
+      "article-34addf89",
+      "34addf89",
+      "cisa-updates-incident-form-for-campaign-detection-157b51"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-subscription-manager-cock-0b712084",
+    "title": "Red Hat Issues Important subscription‑manager‑cockpit Update",
+    "summary": "Red Hat released an important security update for subscription‑manager‑cockpit on Red Hat Enterprise Linux 10, addressing critical vulnerabilities. The advisory lists CVSS base scores for each flaw and links to CVE identifiers in the references. Systems administrators should apply the update promptly to close the security gaps and preserve platform stability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97090",
+    "publishedAt": "2026-11-10T13:04:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-subscription-manager-cock",
+      "article-0b712084",
+      "0b712084",
+      "red-hat-issues-important-subscription-manager-cock-37d76b",
+      "red-hat-issues-important-subscription-manager-cockpit-update"
+    ]
+  },
+  {
+    "slug": "russian-state-hackers-compromise-romanian-kazakh-e-c70a08d6",
+    "title": "Russian State Hackers Compromise Romanian, Kazakh Email Servers",
+    "summary": "Russian state-linked hackers compromised government email servers in Romania and Kazakhstan, intercepting messages exchanged with NATO and EU officials. The intrusion leveraged credential theft and internal access to infiltrate mail systems, enabling covert eavesdropping on diplomatic communications without detection. Affected organizations should conduct forensic analysis, reset credentials, and implement multi-factor authentication to prevent further compromise.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/russia-hackers-espionage-romania-kazakhstan",
+    "publishedAt": "2026-11-10T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "russian-state-hackers-compromise-romanian-kazakh-e",
+      "article-c70a08d6",
+      "c70a08d6",
+      "russian-state-hackers-compromise-romanian-kazakh-e-793ae9",
+      "russian-state-hackers-compromise-romanian-kazakh-email-serve"
+    ]
+  },
+  {
+    "slug": "ai-simplifies-reverse-engineering-of-software-and-106b4d6e",
+    "title": "AI Simplifies Reverse Engineering of Software and Malware",
+    "summary": "Researchers demonstrated that artificial intelligence tools can now decompile and reconstruct complex software and the Turla malware, lowering the barrier for reverse engineering. The capability exposes hidden logic, facilitates vulnerability discovery, and speeds threat analysis, raising concerns for defenders. Security teams should adopt AI-aware defensive tools, continuous monitoring, and threat intelligence sharing to mitigate accelerated reverse engineering risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
+    "publishedAt": "2026-11-10T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-simplifies-reverse-engineering-of-software-and",
+      "article-106b4d6e",
+      "106b4d6e",
+      "ai-simplifies-reverse-engineering-of-software-and-6489b9",
+      "ai-simplifies-reverse-engineering-of-software-and-malware"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97040-important-kernel-security-bug-fix-275ecb10",
+    "title": "RHSA-2026:97040: Important: kernel security, bug fix, and enhancement update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97040",
+    "publishedAt": "2026-11-10T12:55:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97040-important-kernel-security-bug-fix",
+      "article-275ecb10",
+      "275ecb10",
+      "rhsa-2026-97040-important-kernel-security-bug-fix-37d76c",
+      "rhsa-2026-97040-important-kernel-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-moderate-sssd-update-for-rhel-10-1609cdcb",
+    "title": "Red Hat Issues Moderate sssd Update for RHEL 10",
+    "summary": "Red Hat released a moderate-impact update for the sssd service on Red Hat Enterprise Linux 10, addressing multiple security bugs. The update carries a CVSS base score for each vulnerability, with references to CVE identifiers in the advisory’s links. Administrators should apply the sssd update immediately to mitigate the identified weaknesses and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97077",
+    "publishedAt": "2026-11-10T12:54:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-moderate-sssd-update-for-rhel-10",
+      "article-1609cdcb",
+      "1609cdcb",
+      "red-hat-issues-moderate-sssd-update-for-rhel-10-37d76b"
+    ]
+  },
+  {
+    "slug": "apple-releases-november-2026-security-updates-a7e401a4",
+    "title": "Apple Releases November 2026 Security Updates",
+    "summary": "Apple released a November 2026 update patching nine vulnerabilities across iOS, iPadOS, macOS, watchOS, and visionOS, including CVE-2026-113971 affecting iOS/iPadOS 26. The fixes address Bluetooth pairing weaknesses, iMessage group chat message leakage, and flaws that could allow remote attackers to intercept messages. Users should install the latest firmware and security teams should monitor for exploit activity and apply patches promptly.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33506",
+    "publishedAt": "2026-11-10T12:48:55.000Z",
+    "cves": [
+      "CVE-2026-113971"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-november-2026-security-updates",
+      "article-a7e401a4",
+      "a7e401a4",
+      "apple-releases-november-2026-security-updates-57dd81"
+    ]
+  },
+  {
+    "slug": "anthropic-releases-mythos-5-2-with-enhanced-sandbo-418ce659",
+    "title": "Anthropic Releases Mythos 5.2 With Enhanced Sandbox Security",
+    "summary": "Anthropic released Mythos 5.2, a new model iteration focused on vulnerability discovery for security researchers. The update tightens sandbox boundaries, reducing sandbox escape incidents observed in controlled testing environments. Security teams should upgrade to Mythos 5.2 to leverage enhanced sandbox integrity and bug‑hunting capabilities and improved detection of exploitation attempts.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/",
+    "publishedAt": "2026-11-10T12:17:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-releases-mythos-5-2-with-enhanced-sandbo",
+      "article-418ce659",
+      "418ce659",
+      "anthropic-releases-mythos-5-2-with-enhanced-sandbo-63a588",
+      "anthropic-releases-mythos-5-2-with-enhanced-sandbox-security"
+    ]
+  },
+  {
+    "slug": "ireland-warns-of-rising-cyberattack-threats-ahead-f95a4122",
+    "title": "Ireland Warns of Rising Cyberattack Threats Ahead of IRISSCON",
+    "summary": "Irish cybersecurity officials warn that the nation faces increasing cyberattack and hybrid threat sophistication, citing a lack of preparedness. The warning precedes IRISSCON 2026, the annual IRISSCERT conference at Dublin’s Aviva Stadium, where experts will discuss strengthening national security capabilities. Stakeholders are urged to implement enhanced cyber defenses and policy reforms before the conference to mitigate the escalating threat landscape.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/irisscon-2026-dublin/",
+    "publishedAt": "2026-11-10T12:16:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ireland-warns-of-rising-cyberattack-threats-ahead",
+      "article-f95a4122",
+      "f95a4122",
+      "ireland-warns-of-rising-cyberattack-threats-ahead-2dcd70",
+      "ireland-warns-of-rising-cyberattack-threats-ahead-of-irissco"
+    ]
+  },
+  {
     "slug": "sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b",
     "title": "SAP Issues Patches for Four Maximum-Severity Flaws",
     "summary": "SAP released November 2026 security updates addressing 35 vulnerabilities, including four maximum‑severity flaws in NetWeaver, Web Dispatcher, and Gateway components. The flaws, classified as maximum severity, could allow remote code execution or privilege escalation if exploited, though no active exploitation reports exist. SAP has issued patches for all affected products; administrators should apply the updates promptly to mitigate potential exploitation.",
@@ -45,6 +234,65 @@ export const news: NewsBrief[] = [
       "11883b79",
       "openssh-musl-flaw-enables-password-authentication-67f2ec",
       "openssh-musl-flaw-enables-password-authentication-bypass"
+    ]
+  },
+  {
+    "slug": "binance-alerts-iphone-users-to-ios-file-access-fla-4cd25477",
+    "title": "Binance Alerts iPhone Users to iOS File‑Access Flaw",
+    "summary": "Binance warned iPhone users about worse_query, an iOS flaw that permits malicious apps to read files belonging to other apps. Affected iOS versions 26.7.1, 27.0.1, and 27.2 could expose seed phrases, private keys, and login credentials, creating a high‑risk data leakage vector. Users should install the latest iOS updates or apply the vendor’s security patch to mitigate the file‑access vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ios-flaw-expose-crypto-wallet/",
+    "publishedAt": "2026-11-10T11:40:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-alerts-iphone-users-to-ios-file-access-fla",
+      "article-4cd25477",
+      "4cd25477",
+      "binance-alerts-iphone-users-to-ios-file-access-fla-551001",
+      "binance-alerts-iphone-users-to-ios-file-access-flaw"
+    ]
+  },
+  {
+    "slug": "claude-mythos-5-2-enhances-bug-hunting-reduces-san-8326924a",
+    "title": "Claude Mythos 5.2 Enhances Bug Hunting, Reduces Sandbox Breaks",
+    "summary": "Anthropic released Claude Mythos 5.2, a model variant aimed at improving cybersecurity task detection. The update tightens safety classifiers, decreasing sandbox‑breaking incidents observed during controlled testing of penetration‑testing and exploit‑generation requests. Security teams should upgrade to Mythos 5.2 to benefit from stricter safeguards and reduced sandbox escape risk and improved detection.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/anthropic-claude-fable-and-mythos-5-2-safeguards/",
+    "publishedAt": "2026-11-10T11:40:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-mythos-5-2-enhances-bug-hunting-reduces-san",
+      "article-8326924a",
+      "8326924a",
+      "claude-mythos-5-2-enhances-bug-hunting-reduces-san-143103",
+      "claude-mythos-5-2-enhances-bug-hunting-reduces-sandbox-break"
+    ]
+  },
+  {
+    "slug": "sap-issues-critical-patch-day-for-netweaver-dispat-0a949af6",
+    "title": "SAP Issues Critical Patch Day for NetWeaver, Dispatcher, Gateway",
+    "summary": "SAP released its November 2026 Security Patch Day, addressing critical vulnerabilities in NetWeaver, Web Dispatcher, and Gateway components. The update includes 35 new security notes, four GitHub advisories, and fixes for four CVEs, including CVE-2026-44756, each scoring a maximum CVSS of 10.0. Administrators should apply patches immediately to eliminate the high‑risk remote code execution vectors exposed by these flaws.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/sap-security-patch-day-november/",
+    "publishedAt": "2026-11-10T11:10:19.000Z",
+    "cves": [
+      "CVE-2026-44756"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "sap-issues-critical-patch-day-for-netweaver-dispat",
+      "article-0a949af6",
+      "0a949af6",
+      "sap-issues-critical-patch-day-for-netweaver-dispat-48e8e0",
+      "sap-issues-critical-patch-day-for-netweaver-dispatcher-gatew"
     ]
   },
   {
@@ -102,6 +350,24 @@ export const news: NewsBrief[] = [
       "25ab3004",
       "attackers-exploit-barracuda-esg-flaws-for-root-acc-304d38",
       "attackers-exploit-barracuda-esg-flaws-for-root-access"
+    ]
+  },
+  {
+    "slug": "windows-11-26h2-enables-default-settings-backup-cbb1595d",
+    "title": "Windows 11 26H2 Enables Default Settings Backup",
+    "summary": "Windows 11 26H2 now enables settings backup by default on eligible devices. Renamed Windows Backup for Organizations, the update consolidates roaming settings management and preserves supported settings and Microsoft Store app lists during backup. Admins can adjust backup profiles via policy console; no extra patch needed beyond the 26H2 release.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/windows-settings-backup-default/",
+    "publishedAt": "2026-11-10T10:03:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-11-26h2-enables-default-settings-backup",
+      "article-cbb1595d",
+      "cbb1595d",
+      "windows-11-26h2-enables-default-settings-backup-2c499a"
     ]
   },
   {
@@ -9342,279 +9608,6 @@ export const news: NewsBrief[] = [
       "1fca82b0",
       "white-house-staff-use-proxies-exposing-ips-for-ren-455f6c",
       "white-house-staff-use-proxies-exposing-ips-for-rent"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-webkit2gtk3-update-for-rhe-c187f2f4",
-    "title": "Red Hat Issues Critical WebKit2GTK3 Update for RHEL 8.4",
-    "summary": "Red Hat released a critical security update for webkit2gtk3 on Red Hat Enterprise Linux 8.4, addressing multiple high‑impact vulnerabilities. The advisory assigns a Critical impact rating, with CVSS base scores linked via CVE references, underscoring the severity of the flaws. Affected customers should apply the update immediately to patch the webkit2gtk3 component and prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95403",
-    "publishedAt": "2026-11-05T03:06:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-webkit2gtk3-update-for-rhe",
-      "article-c187f2f4",
-      "c187f2f4",
-      "red-hat-issues-critical-webkit2gtk3-update-for-rhe-37d846",
-      "red-hat-issues-critical-webkit2gtk3-update-for-rhel-8-4"
-    ]
-  },
-  {
-    "slug": "openai-pipeline-uncovers-948-linux-kernel-privileg-efcb72f4",
-    "title": "OpenAI Pipeline Uncovers 948 Linux Kernel Privilege Escalation Flaws",
-    "summary": "OpenAI's automated pipeline discovered 948 Linux kernel local privilege escalation vulnerabilities during a 30-hour analysis in October 2026. The flaws stem from missing privilege checks, allowing local users to achieve root-level code execution across numerous kernel versions. Vendors including Red Hat must urgently patch affected kernels while organizations should immediately apply latest stable releases and monitor security advisories.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-uncovers-948-linux-kernel-vulnerabilities/",
-    "publishedAt": "2026-11-05T02:42:57.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
-      }
-    ],
-    "aliases": [
-      "openai-pipeline-uncovers-948-linux-kernel-privileg",
-      "article-efcb72f4",
-      "efcb72f4",
-      "openai-pipeline-uncovers-948-linux-kernel-privileg-391ed3",
-      "openai-pipeline-uncovers-948-linux-kernel-privilege-escalati"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-security-update-for-rhel-9-6461df30",
-    "title": "Red Hat Releases Kernel Security Update for RHEL 9",
-    "summary": "Red Hat issued a kernel security update for Red Hat Enterprise Linux 9, addressing multiple vulnerabilities. The advisory rates the update as Important, with CVSS base scores available via referenced CVE links, indicating significant impact. Customers should apply the update promptly to mitigate the identified kernel flaws and maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95370",
-    "publishedAt": "2026-11-05T02:18:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-security-update-for-rhel-9",
-      "article-6461df30",
-      "6461df30",
-      "red-hat-releases-kernel-security-update-for-rhel-9-37d849"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-pcre2-security-patch-9e9fa5fb",
-    "title": "Red Hat Releases pcre2 Security Patch",
-    "summary": "Red Hat released a pcre2 update for RHEL 7 ELS to fix multiple security vulnerabilities. The vulnerabilities, referenced by CVE identifiers, are rated Important, suggesting a moderate to high exploitation risk. The patch is available via the RHEL 7 ELS update channel; administrators should install it and verify system integrity after installation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95371",
-    "publishedAt": "2026-11-05T01:45:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-pcre2-security-patch",
-      "article-9e9fa5fb",
-      "9e9fa5fb",
-      "red-hat-releases-pcre2-security-patch-37d849"
-    ]
-  },
-  {
-    "slug": "cisco-products-hit-by-node-js-brotli-vulnerabiliti-a9298be6",
-    "title": "Cisco Products Hit by Node.js Brotli Vulnerabilities",
-    "summary": "Cisco products are affected by Node.js vulnerabilities, including Brotli decoder, DNS resolution, and TLS hostname validation flaws. The flaws, identified as CVE‑2026‑111497, CVE‑2026‑105482, CVE‑2026‑105483, and CVE‑2026‑106069, enable remote code execution or traffic interception via out‑of‑bounds writes and hostname validation bypasses. Node.js has released patches for the 22.x, 24.x, and 26.x lines; Cisco should apply updates and verify TLS validation behavior.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-oct2026-node-js-Jj3SQ19u?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DVulnerabilities+in+Node.js+and+Brotli+Affecting+Cisco+Products%3A+October+2026%26vs_k%3D1",
-    "publishedAt": "2026-11-05T00:32:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-products-hit-by-node-js-brotli-vulnerabiliti",
-      "article-a9298be6",
-      "a9298be6",
-      "cisco-products-hit-by-node-js-brotli-vulnerabiliti-104bcf",
-      "cisco-products-hit-by-node-js-brotli-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-kernel-security-update-25c318ae",
-    "title": "Red Hat Issues Kernel Security Update",
-    "summary": "Red Hat released a kernel update for RHEL 10 to address multiple security vulnerabilities. The vulnerabilities, identified by CVE references, carry an Important impact rating, indicating moderate to high risk for affected systems. The update is available through standard RHEL 10 repositories; administrators should apply it promptly to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95367",
-    "publishedAt": "2026-11-05T00:17:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-kernel-security-update",
-      "article-25c318ae",
-      "25c318ae",
-      "red-hat-issues-kernel-security-update-37d849"
-    ]
-  },
-  {
-    "slug": "canadians-indicted-for-hacking-us-universities-ef49329e",
-    "title": "Canadians Indicted for Hacking US Universities",
-    "summary": "Federal indictment charges Canadian nationals with hacking U.S. universities, alleging unauthorized access to academic systems. Prosecution claims actors exploited credential theft and phishing to infiltrate university networks, potentially compromising student data and research assets; no confirmed exfiltration reported. Law enforcement recommends universities review access controls, enforce MFA, and monitor for suspicious credential usage during trial proceedings.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/us-charges-two-canadians-accused-of-hacking-us-universi",
-    "publishedAt": "2026-11-05T00:15:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "canadians-indicted-for-hacking-us-universities",
-      "article-ef49329e",
-      "ef49329e",
-      "canadians-indicted-for-hacking-us-universities-6e5250"
-    ]
-  },
-  {
-    "slug": "ukraine-dismisses-security-officials-over-fraudule-3e0e132d",
-    "title": "Ukraine Dismisses Security Officials Over Fraudulent Call Center Scheme",
-    "summary": "Ukraine's security service dismissed two senior officials following a corruption probe into fraudulent call center operations. Investigators found the criminal network bribed law enforcement personnel to protect illicit call centers and illegal activities from police intervention. Government authorities terminated the implicated officials as broader law enforcement actions continue against the underlying financial fraud scheme.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ukraine-fires-senior-security-officials-amid-scam-center-corruption-investigation",
-    "publishedAt": "2026-11-05T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ukraine-dismisses-security-officials-over-fraudule",
-      "article-3e0e132d",
-      "3e0e132d",
-      "ukraine-dismisses-security-officials-over-fraudule-274e2b",
-      "ukraine-dismisses-security-officials-over-fraudulent-call-ce"
-    ]
-  },
-  {
-    "slug": "chainalysis-user-data-exposed-in-cyberattack-f0f422a0",
-    "title": "Chainalysis User Data Exposed in Cyberattack",
-    "summary": "Chainalysis reported that a cyberattack exposed user data, including law enforcement and national security personnel. The breach leveraged undisclosed agentic techniques, compromising sensitive information across the platform; no specific CVE or exploit details were disclosed. Chainalysis urged affected users to monitor accounts and change credentials, while the company is investigating the attack vector.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
-    "publishedAt": "2026-11-05T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chainalysis-user-data-exposed-in-cyberattack",
-      "article-f0f422a0",
-      "f0f422a0",
-      "chainalysis-user-data-exposed-in-cyberattack-10fcac"
-    ]
-  },
-  {
-    "slug": "apple-releases-app-store-connect-api-4-6-update-9f3adfdb",
-    "title": "Apple Releases App Store Connect API 4.6 Update",
-    "summary": "Apple has released version 4.6 of the App Store Connect API, introducing new endpoints and enhancements. The update includes improved file view capabilities, allowing developers to retrieve detailed metadata for app assets. Developers should review the release notes and update integration code for developers to leverage new features and maintain compatibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11042026b",
-    "publishedAt": "2026-11-05T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-app-store-connect-api-4-6-update",
-      "article-9f3adfdb",
-      "9f3adfdb",
-      "apple-releases-app-store-connect-api-4-6-update-68728a"
-    ]
-  },
-  {
-    "slug": "barracuda-email-gateway-cve-2026-116606-bypass-exp-5ee80cd0",
-    "title": "Barracuda Email Gateway CVE-2026-116606 Bypass Exploit",
-    "summary": "A CVE-2026-116606 flaw in Barracuda Email Gateway allows attackers to bypass authentication and inject malicious content via crafted email headers. The vulnerability exploits improper header validation, enabling unauthorized code execution with a CVSS score of 9.2, and a PoC has been released. Barracuda issued an out‑of‑band patch; security teams should apply the update and monitor mail flow for anomalous headers.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/barracuda-esg-authentication-bypass-flaw-opens-path-to",
-    "publishedAt": "2026-11-04T23:42:35.000Z",
-    "cves": [
-      "CVE-2026-116606"
-    ],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/experts-demonstrate-barracuda-email-security-gateway-ch"
-      }
-    ],
-    "aliases": [
-      "barracuda-email-gateway-cve-2026-116606-bypass-exp",
-      "article-5ee80cd0",
-      "5ee80cd0",
-      "barracuda-email-gateway-cve-2026-116606-bypass-exp-43ca72",
-      "barracuda-email-gateway-cve-2026-116606-bypass-exploit"
-    ]
-  },
-  {
-    "slug": "cve-2026-122266-improper-isolation-of-shared-resou-3baea691",
-    "title": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
-    "summary": "Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Impacted versions: - aws-network-policy-agent - Amazon VPC CNI Managed Add-on Refer to the article below for the most up-to-date and complete information.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/",
-    "publishedAt": "2026-11-04T21:53:42.000Z",
-    "cves": [
-      "CVE-2026-122266"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-122266-improper-isolation-of-shared-resou",
-      "article-3baea691",
-      "3baea691",
-      "cve-2026-122266-improper-isolation-of-shared-resou-4bc3ef",
-      "cve-2026-122266-improper-isolation-of-shared-resources-in-aw"
-    ]
-  },
-  {
-    "slug": "rails-active-storage-imagemagick-arbitrary-file-wr-70eb5e9d",
-    "title": "Rails Active Storage ImageMagick Arbitrary File Write",
-    "summary": "A critical vulnerability exists in Ruby on Rails Active Storage's integration with ImageMagick, allowing attackers to write arbitrary files and read sensitive files via uploaded images. This flaw enables potential lateral movement within Rails-based web applications. Organizations using Rails with ImageMagick processing should apply vendor patches immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
-    "publishedAt": "2026-11-04T21:48:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rails-active-storage-imagemagick-arbitrary-file-wr",
-      "article-70eb5e9d",
-      "70eb5e9d",
-      "rails-active-storage-imagemagick-arbitrary-file-wr-5f3c47",
-      "rails-active-storage-imagemagick-arbitrary-file-write"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-cryostat-4-for-cve-2026-98432-b4b42418",
-    "title": "Red Hat Updates Cryostat 4 for CVE‑2026‑98432",
-    "summary": "Red Hat released a security update for its Cryostat 4 build on RHEL 9, addressing CVE‑2026‑98432. The vulnerability involves a memory‑corruption flaw that could allow local privilege escalation or denial of service if exploited. Red Hat recommends installing the updated Cryostat package or applying the vendor patch to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95360",
-    "publishedAt": "2026-11-04T21:45:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-cryostat-4-for-cve-2026-98432",
-      "article-b4b42418",
-      "b4b42418",
-      "red-hat-updates-cryostat-4-for-cve-2026-98432-37d849"
     ]
   }
 ];

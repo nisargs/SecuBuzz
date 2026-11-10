@@ -5,8 +5,98 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 12:46:31 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 13:46:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:97121: Moderate: unbound security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781</guid>
+      <description><![CDATA[An update for unbound is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 13:39:44 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97121">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CISA Updates Incident Form for Campaign Detection</title>
+      <link>https://secubuzz.com/news/cisa-updates-incident-form-for-campaign-detection-34addf89</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-updates-incident-form-for-campaign-detection-34addf89</guid>
+      <description><![CDATA[CISA updated its incident reporting form to help analysts identify potential campaign links across organizations. The revised questionnaire incorporates MITRE ATT&CK terminology to capture malware, social engineering, hacking techniques, and insider threats, improving detection of coordinated attacks. Organizations should use the updated form to report incidents, enabling CISA to correlate events and provide more targeted guidance.]]></description>
+      <pubDate>Tue, 10 Nov 2026 13:17:50 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/cisa-incident-reporting-form-update/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important subscription‑manager‑cockpit Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-subscription-manager-cock-0b712084</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-subscription-manager-cock-0b712084</guid>
+      <description><![CDATA[Red Hat released an important security update for subscription‑manager‑cockpit on Red Hat Enterprise Linux 10, addressing critical vulnerabilities. The advisory lists CVSS base scores for each flaw and links to CVE identifiers in the references. Systems administrators should apply the update promptly to close the security gaps and preserve platform stability.]]></description>
+      <pubDate>Tue, 10 Nov 2026 13:04:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97090">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Russian State Hackers Compromise Romanian, Kazakh Email Servers</title>
+      <link>https://secubuzz.com/news/russian-state-hackers-compromise-romanian-kazakh-e-c70a08d6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/russian-state-hackers-compromise-romanian-kazakh-e-c70a08d6</guid>
+      <description><![CDATA[Russian state-linked hackers compromised government email servers in Romania and Kazakhstan, intercepting messages exchanged with NATO and EU officials. The intrusion leveraged credential theft and internal access to infiltrate mail systems, enabling covert eavesdropping on diplomatic communications without detection. Affected organizations should conduct forensic analysis, reset credentials, and implement multi-factor authentication to prevent further compromise.]]></description>
+      <pubDate>Tue, 10 Nov 2026 13:00:00 GMT</pubDate>
+      <source url="https://therecord.media/russia-hackers-espionage-romania-kazakhstan">The Record</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>AI Simplifies Reverse Engineering of Software and Malware</title>
+      <link>https://secubuzz.com/news/ai-simplifies-reverse-engineering-of-software-and-106b4d6e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-simplifies-reverse-engineering-of-software-and-106b4d6e</guid>
+      <description><![CDATA[Researchers demonstrated that artificial intelligence tools can now decompile and reconstruct complex software and the Turla malware, lowering the barrier for reverse engineering. The capability exposes hidden logic, facilitates vulnerability discovery, and speeds threat analysis, raising concerns for defenders. Security teams should adopt AI-aware defensive tools, continuous monitoring, and threat intelligence sharing to mitigate accelerated reverse engineering risks.]]></description>
+      <pubDate>Tue, 10 Nov 2026 13:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/ai-reverse-engineering-apps">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97040: Important: kernel security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97040-important-kernel-security-bug-fix-275ecb10</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97040-important-kernel-security-bug-fix-275ecb10</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 12:55:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97040">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Moderate sssd Update for RHEL 10</title>
+      <link>https://secubuzz.com/news/red-hat-issues-moderate-sssd-update-for-rhel-10-1609cdcb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-moderate-sssd-update-for-rhel-10-1609cdcb</guid>
+      <description><![CDATA[Red Hat released a moderate-impact update for the sssd service on Red Hat Enterprise Linux 10, addressing multiple security bugs. The update carries a CVSS base score for each vulnerability, with references to CVE identifiers in the advisory’s links. Administrators should apply the sssd update immediately to mitigate the identified weaknesses and maintain system integrity.]]></description>
+      <pubDate>Tue, 10 Nov 2026 12:54:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97077">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apple Releases November 2026 Security Updates</title>
+      <link>https://secubuzz.com/news/apple-releases-november-2026-security-updates-a7e401a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-november-2026-security-updates-a7e401a4</guid>
+      <description><![CDATA[Apple released a November 2026 update patching nine vulnerabilities across iOS, iPadOS, macOS, watchOS, and visionOS, including CVE-2026-113971 affecting iOS/iPadOS 26. The fixes address Bluetooth pairing weaknesses, iMessage group chat message leakage, and flaws that could allow remote attackers to intercept messages. Users should install the latest firmware and security teams should monitor for exploit activity and apply patches promptly.]]></description>
+      <pubDate>Tue, 10 Nov 2026 12:48:55 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33506">SANS Internet Storm Center</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Anthropic Releases Mythos 5.2 With Enhanced Sandbox Security</title>
+      <link>https://secubuzz.com/news/anthropic-releases-mythos-5-2-with-enhanced-sandbo-418ce659</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-mythos-5-2-with-enhanced-sandbo-418ce659</guid>
+      <description><![CDATA[Anthropic released Mythos 5.2, a new model iteration focused on vulnerability discovery for security researchers. The update tightens sandbox boundaries, reducing sandbox escape incidents observed in controlled testing environments. Security teams should upgrade to Mythos 5.2 to leverage enhanced sandbox integrity and bug‑hunting capabilities and improved detection of exploitation attempts.]]></description>
+      <pubDate>Tue, 10 Nov 2026 12:17:13 GMT</pubDate>
+      <source url="https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Ireland Warns of Rising Cyberattack Threats Ahead of IRISSCON</title>
+      <link>https://secubuzz.com/news/ireland-warns-of-rising-cyberattack-threats-ahead-f95a4122</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ireland-warns-of-rising-cyberattack-threats-ahead-f95a4122</guid>
+      <description><![CDATA[Irish cybersecurity officials warn that the nation faces increasing cyberattack and hybrid threat sophistication, citing a lack of preparedness. The warning precedes IRISSCON 2026, the annual IRISSCERT conference at Dublin’s Aviva Stadium, where experts will discuss strengthening national security capabilities. Stakeholders are urged to implement enhanced cyber defenses and policy reforms before the conference to mitigate the escalating threat landscape.]]></description>
+      <pubDate>Tue, 10 Nov 2026 12:16:40 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/irisscon-2026-dublin/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>SAP Issues Patches for Four Maximum-Severity Flaws</title>
       <link>https://secubuzz.com/news/sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b</link>
@@ -24,6 +114,33 @@
       <pubDate>Tue, 10 Nov 2026 12:02:38 GMT</pubDate>
       <source url="https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html">Schneier on Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Binance Alerts iPhone Users to iOS File‑Access Flaw</title>
+      <link>https://secubuzz.com/news/binance-alerts-iphone-users-to-ios-file-access-fla-4cd25477</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-alerts-iphone-users-to-ios-file-access-fla-4cd25477</guid>
+      <description><![CDATA[Binance warned iPhone users about worse_query, an iOS flaw that permits malicious apps to read files belonging to other apps. Affected iOS versions 26.7.1, 27.0.1, and 27.2 could expose seed phrases, private keys, and login credentials, creating a high‑risk data leakage vector. Users should install the latest iOS updates or apply the vendor’s security patch to mitigate the file‑access vulnerability.]]></description>
+      <pubDate>Tue, 10 Nov 2026 11:40:16 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ios-flaw-expose-crypto-wallet/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Claude Mythos 5.2 Enhances Bug Hunting, Reduces Sandbox Breaks</title>
+      <link>https://secubuzz.com/news/claude-mythos-5-2-enhances-bug-hunting-reduces-san-8326924a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-mythos-5-2-enhances-bug-hunting-reduces-san-8326924a</guid>
+      <description><![CDATA[Anthropic released Claude Mythos 5.2, a model variant aimed at improving cybersecurity task detection. The update tightens safety classifiers, decreasing sandbox‑breaking incidents observed during controlled testing of penetration‑testing and exploit‑generation requests. Security teams should upgrade to Mythos 5.2 to benefit from stricter safeguards and reduced sandbox escape risk and improved detection.]]></description>
+      <pubDate>Tue, 10 Nov 2026 11:40:00 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/anthropic-claude-fable-and-mythos-5-2-safeguards/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SAP Issues Critical Patch Day for NetWeaver, Dispatcher, Gateway</title>
+      <link>https://secubuzz.com/news/sap-issues-critical-patch-day-for-netweaver-dispat-0a949af6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-issues-critical-patch-day-for-netweaver-dispat-0a949af6</guid>
+      <description><![CDATA[SAP released its November 2026 Security Patch Day, addressing critical vulnerabilities in NetWeaver, Web Dispatcher, and Gateway components. The update includes 35 new security notes, four GitHub advisories, and fixes for four CVEs, including CVE-2026-44756, each scoring a maximum CVSS of 10.0. Administrators should apply patches immediately to eliminate the high‑risk remote code execution vectors exposed by these flaws.]]></description>
+      <pubDate>Tue, 10 Nov 2026 11:10:19 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/sap-security-patch-day-november/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>France Attributes Supermarket Refrigeration Sabotage to Iranian Hackers</title>
@@ -51,6 +168,15 @@
       <pubDate>Tue, 10 Nov 2026 10:10:20 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Windows 11 26H2 Enables Default Settings Backup</title>
+      <link>https://secubuzz.com/news/windows-11-26h2-enables-default-settings-backup-cbb1595d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-26h2-enables-default-settings-backup-cbb1595d</guid>
+      <description><![CDATA[Windows 11 26H2 now enables settings backup by default on eligible devices. Renamed Windows Backup for Organizations, the update consolidates roaming settings management and preserves supported settings and Microsoft Store app lists during backup. Admins can adjust backup profiles via policy console; no extra patch needed beyond the 26H2 release.]]></description>
+      <pubDate>Tue, 10 Nov 2026 10:03:40 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/windows-settings-backup-default/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Anthropic Releases Claude Mythos 5.2 AI for Vulnerability Detection</title>
@@ -330,132 +456,6 @@
       <pubDate>Tue, 10 Nov 2026 06:31:42 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Chrome Patch Fixes Exploited XML Use‑After‑Free Zero‑Day</title>
-      <link>https://secubuzz.com/news/chrome-patch-fixes-exploited-xml-use-after-free-ze-04e2086f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-patch-fixes-exploited-xml-use-after-free-ze-04e2086f</guid>
-      <description><![CDATA[Google released a Chrome update to fix a high‑severity use‑after‑free flaw (CVE‑2026‑125350) in the XML component that was already exploited. The bug allowed memory corruption via crafted XML, potentially enabling remote code execution with a CVSS score of 9.8. Users should install the latest Chrome patch immediately to mitigate the vulnerability; no separate advisory was issued.]]></description>
-      <pubDate>Tue, 10 Nov 2026 06:12:24 GMT</pubDate>
-      <source url="https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Security Teams Prioritize AI Agent Behavior Monitoring</title>
-      <link>https://secubuzz.com/news/security-teams-prioritize-ai-agent-behavior-monito-778ad60b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/security-teams-prioritize-ai-agent-behavior-monito-778ad60b</guid>
-      <description><![CDATA[A 2026 State of Behavioral Security Report names AI agents as the top monitoring focus. The survey shows 43% plan to invest in AI agent monitoring, exceeding API integrations, yet many lack baseline definitions. Teams should establish baseline metrics and deploy monitoring tools to detect anomalous AI agent behavior early.]]></description>
-      <pubDate>Tue, 10 Nov 2026 06:00:42 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/abnormal-ai-behavioral-security-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>ChromeOS Beta Channel Updated to OS 16868.13.0</title>
-      <link>https://secubuzz.com/news/chromeos-beta-channel-updated-to-os-16868-13-0-bd6c78e3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-beta-channel-updated-to-os-16868-13-0-bd6c78e3</guid>
-      <description><![CDATA[Google ChromeOS Beta channel received an OS update to version 16868.13.0 and browser 158.0.8127.24 for most devices. The update contains routine bug fixes and performance improvements, with no publicly disclosed security vulnerabilities. Users should apply the update via the OS update mechanism or switch channels as needed to maintain security posture.]]></description>
-      <pubDate>Tue, 10 Nov 2026 05:45:27 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos_01835406967.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenClaw AI Agents Deliver Malware to Windows and macOS</title>
-      <link>https://secubuzz.com/news/openclaw-ai-agents-deliver-malware-to-windows-and-b78866a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openclaw-ai-agents-deliver-malware-to-windows-and-b78866a7</guid>
-      <description><![CDATA[OpenClaw operators have deployed over 575 AI‑driven skills that deliver malware to Windows and macOS endpoints. They use stolen credentials, AI models for reconnaissance and exploitation, and tools that suppress intrusion detection, coordinated via WeChat and LINE. Teams should monitor credential activity, block known OpenClaw signatures, and enforce multi‑factor authentication to counter this threat.]]></description>
-      <pubDate>Tue, 10 Nov 2026 05:30:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Fireworks AI Breach Steals Customer Data via Cloud Provider</title>
-      <link>https://secubuzz.com/news/fireworks-ai-breach-steals-customer-data-via-cloud-9eb3e610</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-ai-breach-steals-customer-data-via-cloud-9eb3e610</guid>
-      <description><![CDATA[Fireworks AI disclosed a breach where attackers accessed development machines via a compromised third‑party cloud provider, stealing customer account details, billing records, and datasets. The intrusion leveraged the provider’s compromised credentials, granting unauthorized remote access and data exfiltration from Fireworks’ internal systems. Fireworks urges customers to review logs, enforce MFA, and monitor anomalous activity; no patch is available.]]></description>
-      <pubDate>Tue, 10 Nov 2026 05:17:39 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fireworks-ai-data-breach/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Application Security Engineer Position Open at ONE ZERO BANK</title>
-      <link>https://secubuzz.com/news/application-security-engineer-position-open-at-one-b0117907</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/application-security-engineer-position-open-at-one-b0117907</guid>
-      <description><![CDATA[ONE ZERO BANK in Israel is recruiting an Application Security Engineer to integrate security into the software development lifecycle. The role involves threat modeling, vulnerability assessment of web, mobile, API, CI/CD, and supply chain components, and automating security controls with AI tools. Candidates should have experience in secure coding practices and DevSecOps tooling.]]></description>
-      <pubDate>Tue, 10 Nov 2026 05:00:58 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/cybersecurity-jobs-available-right-now-november-10-2026/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SEGA Exposes 2.2 Million Emails</title>
-      <link>https://secubuzz.com/news/sega-exposes-2-2-million-emails-d439d4bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sega-exposes-2-2-million-emails-d439d4bf</guid>
-      <description><![CDATA[SEGA disclosed a breach that exposed 2.2 million email addresses from its customer database, accessed through an unauthorized entry point. The incident likely involved credential compromise or misconfigured access controls, but no exploit code or public proof-of-concept has been reported. SEGA should conduct a forensic review, apply any pending patches, enforce multi‑factor authentication, and notify affected users per data‑breach regulations.]]></description>
-      <pubDate>Tue, 10 Nov 2026 04:32:48 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/sega-newsletter-data-breach-exposes-2-2-million-email-a">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Qubole Cross‑Account Access Vulnerability Abused</title>
-      <link>https://secubuzz.com/news/qubole-cross-account-access-vulnerability-abused-0503e73e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qubole-cross-account-access-vulnerability-abused-0503e73e</guid>
-      <description><![CDATA[Qubole’s cross‑account access flaw enabled attackers to reach resources in other accounts, bypassing intended isolation controls. The root cause is a misconfigured IAM policy that grants excessive permissions, allowing credential reuse across accounts and leading to unauthorized data exposure. Security teams should apply the vendor‑issued patch immediately, review cross‑account permissions, and deploy detection rules to monitor anomalous access patterns.]]></description>
-      <pubDate>Tue, 10 Nov 2026 04:25:43 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/trusted-by-default-qubole-cross-account-access-abused-i">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Patches CVE-2026-125350 Chrome Zero‑Day</title>
-      <link>https://secubuzz.com/news/google-patches-cve-2026-125350-chrome-zero-day-6a7f8004</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-patches-cve-2026-125350-chrome-zero-day-6a7f8004</guid>
-      <description><![CDATA[Google has released a patch for CVE-2026-125350, a Chrome zero‑day that lets remote attackers execute malicious code in the browser. The flaw, exploited in the wild, permits arbitrary code execution via a crafted web page and carries a CVSS score of 9.8. Users should update to Chrome 157.0.8103.50/51 on Windows and Mac, or 157.0.8103.50 on Linux, to mitigate the risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 04:21:10 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/google-chrome-0-day-exploited/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Satirical Terminal2Shell Claims Highlight Security Marketing Parody</title>
-      <link>https://secubuzz.com/news/satirical-terminal2shell-claims-highlight-security-939c958d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/satirical-terminal2shell-claims-highlight-security-939c958d</guid>
-      <description><![CDATA[Security analysts highlighted Terminal2Shell, a satirical website claiming a 55-year-old zero-day vulnerability affects over two billion interactive terminals. The underlying exploit simply describes standard terminal execution rather than a legitimate security flaw or unauthorized code execution vector. Reports confirm the publication represents a commentary on security industry marketing rather than a genuine threat requiring system updates.]]></description>
-      <pubDate>Tue, 10 Nov 2026 03:37:47 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apache HTTP Server Vulnerabilities Hit Ubuntu LTS</title>
-      <link>https://secubuzz.com/news/apache-http-server-vulnerabilities-hit-ubuntu-lts-86b927d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-vulnerabilities-hit-ubuntu-lts-86b927d5</guid>
-      <description><![CDATA[Ubuntu 14.04 through 26.04 LTS releases contain multiple Apache HTTP Server flaws. CVE-2026-46729 and CVE-2026-47360 allow attackers to trigger denial of service or leak session data via improper memory and cookie handling, potentially exposing sensitive information; no confirmed exploitation yet. Ubuntu advises applying the latest security updates and verifying Apache configurations to mitigate the vulnerabilities.]]></description>
-      <pubDate>Tue, 10 Nov 2026 02:43:47 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9016-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>N‑able N‑central Exposes 30+ Zero‑Day Vulnerabilities, Urgent Patch Released</title>
-      <link>https://secubuzz.com/news/n-able-n-central-exposes-30-zero-day-vulnerabiliti-bc249e2e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-n-central-exposes-30-zero-day-vulnerabiliti-bc249e2e</guid>
-      <description><![CDATA[N‑able N‑central software was exposed to more than 30 zero‑day vulnerabilities, enabling remote code execution and privilege escalation. The flaws stem from inadequate input validation and weak session handling, allowing attackers to bypass authentication without credentials. N‑able issued an urgent patch, disabled hosted environments worldwide, and urged customers to apply fixes immediately and monitor logs for anomalies.]]></description>
-      <pubDate>Tue, 10 Nov 2026 02:34:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ISC Stormcast: Weekly Threat Landscape Overview</title>
-      <link>https://secubuzz.com/news/isc-stormcast-weekly-threat-landscape-overview-958ee648</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/isc-stormcast-weekly-threat-landscape-overview-958ee648</guid>
-      <description><![CDATA[The ISC Stormcast podcast released its November 10th edition, summarizing the latest threat activity observed across the internet. The report highlighted increased phishing campaigns, emerging ransomware variants, and a rise in supply‑chain attacks, but did not identify any new zero‑day exploits. Listeners are advised to review the full transcript for detailed indicators and to maintain current defensive posture.]]></description>
-      <pubDate>Tue, 10 Nov 2026 02:00:02 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33504">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>BYOD Ransomware Encrypts Vanderbilt University Databases</title>
-      <link>https://secubuzz.com/news/byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b</guid>
-      <description><![CDATA[Vanderbilt University fell victim to a BYOD ransomware attack that encrypted its database systems and exfiltrated student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged access, locking critical databases and demanding payment. University officials isolated affected systems, applied patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.]]></description>
-      <pubDate>Mon, 09 Nov 2026 23:52:12 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/">BleepingComputer</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>
