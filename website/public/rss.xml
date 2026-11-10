@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 09:44:59 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 10:07:54 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>N-able Disables N-central Over 30 Zero-Day Flaws</title>
+      <link>https://secubuzz.com/news/n-able-disables-n-central-over-30-zero-day-flaws-74835697</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-disables-n-central-over-30-zero-day-flaws-74835697</guid>
+      <description><![CDATA[N-able temporarily disabled N-central services while addressing over 30 zero-day vulnerabilities that enable remote code execution, credential theft, and unauthorized administrator account creation. The flaws arise from insufficient input validation in the web interface, permitting attackers to inject malicious code and elevate privileges. N-able has released a patch and urges customers to update immediately to mitigate the risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 09:56:28 GMT</pubDate>
+      <source url="https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>IBM, SignalWire Vulnerabilities Exploited, CISA Urges Patch</title>
+      <link>https://secubuzz.com/news/ibm-signalwire-vulnerabilities-exploited-cisa-urge-dfabc271</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ibm-signalwire-vulnerabilities-exploited-cisa-urge-dfabc271</guid>
+      <description><![CDATA[CISA added CVE-2026-123218 and CVE-2026-116779 to the KEV list after attackers exploited vulnerabilities in IBM Aspera Faspex and SignalWire FreeSwitch. The flaws enable remote code execution and privilege escalation, allowing adversaries to compromise server infrastructure and exfiltrate data. Federal agencies are urged to apply the vendor patches within three days to mitigate the active exploitation risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 09:42:27 GMT</pubDate>
+      <source url="https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Iranian Unit Sabotages 700 French Retail Refrigerators</title>
       <link>https://secubuzz.com/news/iranian-unit-sabotages-700-french-retail-refrigera-080a646c</link>
@@ -14,6 +32,42 @@
       <description><![CDATA[An IRGC cyber unit targeted refrigeration controllers at roughly 700 French retail sites, altering defrost settings to high temperatures. The change caused food spoilage and ignited fires in at least 15 locations, leading to significant losses. French authorities attribute the sabotage to Iran; operators should audit controller access logs and enforce stricter authentication controls.]]></description>
       <pubDate>Tue, 10 Nov 2026 09:08:20 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html">The Hacker News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Ubuntu Releases Kernel Patch for Multiple Vulnerabilities</title>
+      <link>https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b</guid>
+      <description><![CDATA[Ubuntu released USN-9018-1, addressing several kernel vulnerabilities that could allow attackers to compromise affected systems. The flaws span network file systems, ARM64, PowerPC, RISC-V, S390, and numerous device drivers, exposing potential privilege escalation and denial of service. Ubuntu has issued a kernel update; administrators should apply the patch promptly to eliminate the exploitation vector.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:42:59 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9018-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apple Releases iOS 27.2.1 Patch for Nine Flaws</title>
+      <link>https://secubuzz.com/news/apple-releases-ios-27-2-1-patch-for-nine-flaws-a9f244fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-ios-27-2-1-patch-for-nine-flaws-a9f244fd</guid>
+      <description><![CDATA[Apple released iOS 27.2.1 and iPadOS 27.2.1 on November 9, fixing nine security flaws across Bluetooth, AirPlay, Messages, and other system components. The flaws could allow attackers to gain unauthorized access or execute code via malformed pairing requests or message payloads, identified during internal reviews. Users should install the update immediately to eliminate the exploitation vector and maintain device integrity.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:38:15 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/apple-fixes-security-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SEGA Breach Exposes 2.19M Emails via Arara</title>
+      <link>https://secubuzz.com/news/sega-breach-exposes-2-19m-emails-via-arara-8674511c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sega-breach-exposes-2-19m-emails-via-arara-8674511c</guid>
+      <description><![CDATA[A SEGA data breach exposed 2,196,044 customer emails after attackers accessed Arara Message, a third‑party newsletter service. The breach leveraged unauthorized access to the provider’s account, leaking email lists tied to SEGA and SEGA Fave, with no other personal data reported. SEGA disclosed on November 9, 2026, and urged users to watch for phishing while the provider secures its systems.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:34:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/sega-confirms-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>North Korean Hackers Launder Binance Theft with Meme Coins</title>
+      <link>https://secubuzz.com/news/north-korean-hackers-launder-binance-theft-with-me-6d495b7f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-launder-binance-theft-with-me-6d495b7f</guid>
+      <description><![CDATA[North Korean hackers created meme coins to move cryptocurrency stolen from Binance's $6.4B hack, using fake trading activity to disguise proceeds. The scheme inserts DEX liquidity pools between wallets holding stolen assets and those collecting proceeds, masking trails. Binance and regulators should monitor pools for anomalies, enforce stricter KYC on meme coin exchanges, and use blockchain analytics to trace funds.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:25:01 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-meme-coins/">Cyber Security News</source>
       <category>Nation State</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 17:50:32 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/">BleepingComputer</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases JBoss Web Server 6.2.6 Security Update Addressing Multiple Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-hat-releases-jboss-web-server-6-2-6-security-u-4c18ac9b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-jboss-web-server-6-2-6-security-u-4c18ac9b</guid>
-      <description><![CDATA[Red Hat released JBoss Web Server 6.2.6 for RHEL 8, 9, 10, and Windows Server to patch multiple vulnerabilities that could allow remote exploitation. The flaws involve authentication, authorization, and improper input validation that could lead to remote code execution or unauthorized access. Red Hat recommends installing the 6.2.6 update immediately and reviewing referenced CVE links for critical severity details.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:37:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96228">Red Hat Security Advisories</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ethersphere Tools Compromised to Steal Wallet Keys</title>
-      <link>https://secubuzz.com/news/ethersphere-tools-compromised-to-steal-wallet-keys-b4abafee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ethersphere-tools-compromised-to-steal-wallet-keys-b4abafee</guid>
-      <description><![CDATA[Attackers hijacked Ethersphere's bee-js 13.3.0 and Swarm Desktop 0.56.2 releases, injecting code that steals wallet keys and node passwords. The malicious payload exploits release automation, enabling credential theft and backdoor installation without user interaction, threatening Swarm participants. Ethersphere warns users to verify release signatures, update to patched versions, and monitor for unauthorized backdoors.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:36:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>OpenJDK 17 Vulnerabilities Allow Remote Data Modification</title>
-      <link>https://secubuzz.com/news/openjdk-17-vulnerabilities-allow-remote-data-modif-081b64b4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openjdk-17-vulnerabilities-allow-remote-data-modif-081b64b4</guid>
-      <description><![CDATA[Ubuntu identified multiple OpenJDK 17 components lacking proper authentication or authorization, exposing the platform to remote data tampering. Vulnerabilities CVE-2026-83374, CVE-2026-83376, CVE-2026-83380, CVE-2026-83381, and others enable attackers to read or modify sensitive data without credentials. Apply the latest OpenJDK 17 update and verify component authentication controls to mitigate the identified flaws.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:27:36 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9014-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Fetchmail Vulnerabilities Enable Denial of Service and Code Execution</title>
-      <link>https://secubuzz.com/news/fetchmail-vulnerabilities-enable-denial-of-service-8ed7529c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fetchmail-vulnerabilities-enable-denial-of-service-8ed7529c</guid>
-      <description><![CDATA[Ubuntu’s USN‑9013‑1 documents three Fetchmail flaws, including CVE‑2021‑36386, CVE‑2025‑61962, and an NTLM authentication mishandling bug. The defects can crash Fetchmail via malformed log or status messages, and CVE‑2025‑61962 may allow remote code execution. Ubuntu advises upgrading to the latest packages on 16.04, 18.04, and 20.04 LTS to mitigate denial‑of‑service and potential RCE.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:17:55 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9013-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>PwC CISO Discusses AI, Robots, Future Security</title>
-      <link>https://secubuzz.com/news/pwc-ciso-discusses-ai-robots-future-security-9ce1fa97</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pwc-ciso-discusses-ai-robots-future-security-9ce1fa97</guid>
-      <description><![CDATA[PwC’s Chief Information Security Officer James Shira outlined how AI and robotics are reshaping enterprise risk management. He emphasized the need for security teams to adopt adaptive threat models, integrate automation, and prioritize human oversight in AI deployments. PwC recommends continuous monitoring, policy updates, and cross‑functional collaboration to mitigate emerging AI‑driven attack vectors.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:17:23 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases OpenShift 4.14.78 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-openshift-4-14-78-security-update-1d4ceaf6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-openshift-4-14-78-security-update-1d4ceaf6</guid>
-      <description><![CDATA[Red Hat released OpenShift Container Platform 4.14.78, incorporating security fixes for multiple package and image vulnerabilities. The update addresses authentication and authorization weaknesses that could allow unauthorized access, with CVSS scores linked via referenced CVE entries. Install the 4.14.78 release promptly and review the CVE references for detailed severity information.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:16:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95507">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

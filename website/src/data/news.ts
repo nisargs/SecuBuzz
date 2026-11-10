@@ -11,6 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "n-able-disables-n-central-over-30-zero-day-flaws-74835697",
+    "title": "N-able Disables N-central Over 30 Zero-Day Flaws",
+    "summary": "N-able temporarily disabled N-central services while addressing over 30 zero-day vulnerabilities that enable remote code execution, credential theft, and unauthorized administrator account creation. The flaws arise from insufficient input validation in the web interface, permitting attackers to inject malicious code and elevate privileges. N-able has released a patch and urges customers to update immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/",
+    "publishedAt": "2026-11-10T09:56:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-disables-n-central-over-30-zero-day-flaws",
+      "article-74835697",
+      "74835697",
+      "n-able-disables-n-central-over-30-zero-day-flaws-95ce8b"
+    ]
+  },
+  {
+    "slug": "ibm-signalwire-vulnerabilities-exploited-cisa-urge-dfabc271",
+    "title": "IBM, SignalWire Vulnerabilities Exploited, CISA Urges Patch",
+    "summary": "CISA added CVE-2026-123218 and CVE-2026-116779 to the KEV list after attackers exploited vulnerabilities in IBM Aspera Faspex and SignalWire FreeSwitch. The flaws enable remote code execution and privilege escalation, allowing adversaries to compromise server infrastructure and exfiltrate data. Federal agencies are urged to apply the vendor patches within three days to mitigate the active exploitation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+    "publishedAt": "2026-11-10T09:42:27.000Z",
+    "cves": [
+      "CVE-2026-123218",
+      "CVE-2026-116779"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ibm-signalwire-vulnerabilities-exploited-cisa-urge",
+      "article-dfabc271",
+      "dfabc271",
+      "ibm-signalwire-vulnerabilities-exploited-cisa-urge-59bc4d",
+      "ibm-signalwire-vulnerabilities-exploited-cisa-urges-patch"
+    ]
+  },
+  {
     "slug": "iranian-unit-sabotages-700-french-retail-refrigera-080a646c",
     "title": "Iranian Unit Sabotages 700 French Retail Refrigerators",
     "summary": "An IRGC cyber unit targeted refrigeration controllers at roughly 700 French retail sites, altering defrost settings to high temperatures. The change caused food spoilage and ignited fires in at least 15 locations, leading to significant losses. French authorities attribute the sabotage to Iran; operators should audit controller access logs and enforce stricter authentication controls.",
@@ -27,6 +67,80 @@ export const news: NewsBrief[] = [
       "080a646c",
       "iranian-unit-sabotages-700-french-retail-refrigera-7e30f3",
       "iranian-unit-sabotages-700-french-retail-refrigerators"
+    ]
+  },
+  {
+    "slug": "ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b",
+    "title": "Ubuntu Releases Kernel Patch for Multiple Vulnerabilities",
+    "summary": "Ubuntu released USN-9018-1, addressing several kernel vulnerabilities that could allow attackers to compromise affected systems. The flaws span network file systems, ARM64, PowerPC, RISC-V, S390, and numerous device drivers, exposing potential privilege escalation and denial of service. Ubuntu has issued a kernel update; administrators should apply the patch promptly to eliminate the exploitation vector.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9018-1",
+    "publishedAt": "2026-11-10T08:42:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-releases-kernel-patch-for-multiple-vulnerab",
+      "article-d99e037b",
+      "d99e037b",
+      "ubuntu-releases-kernel-patch-for-multiple-vulnerab-7e8929",
+      "ubuntu-releases-kernel-patch-for-multiple-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "apple-releases-ios-27-2-1-patch-for-nine-flaws-a9f244fd",
+    "title": "Apple Releases iOS 27.2.1 Patch for Nine Flaws",
+    "summary": "Apple released iOS 27.2.1 and iPadOS 27.2.1 on November 9, fixing nine security flaws across Bluetooth, AirPlay, Messages, and other system components. The flaws could allow attackers to gain unauthorized access or execute code via malformed pairing requests or message payloads, identified during internal reviews. Users should install the update immediately to eliminate the exploitation vector and maintain device integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/apple-fixes-security-vulnerabilities/",
+    "publishedAt": "2026-11-10T08:38:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-ios-27-2-1-patch-for-nine-flaws",
+      "article-a9f244fd",
+      "a9f244fd",
+      "apple-releases-ios-27-2-1-patch-for-nine-flaws-44b050"
+    ]
+  },
+  {
+    "slug": "sega-breach-exposes-2-19m-emails-via-arara-8674511c",
+    "title": "SEGA Breach Exposes 2.19M Emails via Arara",
+    "summary": "A SEGA data breach exposed 2,196,044 customer emails after attackers accessed Arara Message, a third‑party newsletter service. The breach leveraged unauthorized access to the provider’s account, leaking email lists tied to SEGA and SEGA Fave, with no other personal data reported. SEGA disclosed on November 9, 2026, and urged users to watch for phishing while the provider secures its systems.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/sega-confirms-data-breach/",
+    "publishedAt": "2026-11-10T08:34:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sega-breach-exposes-2-19m-emails-via-arara",
+      "article-8674511c",
+      "8674511c",
+      "sega-breach-exposes-2-19m-emails-via-arara-b9e124"
+    ]
+  },
+  {
+    "slug": "north-korean-hackers-launder-binance-theft-with-me-6d495b7f",
+    "title": "North Korean Hackers Launder Binance Theft with Meme Coins",
+    "summary": "North Korean hackers created meme coins to move cryptocurrency stolen from Binance's $6.4B hack, using fake trading activity to disguise proceeds. The scheme inserts DEX liquidity pools between wallets holding stolen assets and those collecting proceeds, masking trails. Binance and regulators should monitor pools for anomalies, enforce stricter KYC on meme coin exchanges, and use blockchain analytics to trace funds.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-meme-coins/",
+    "publishedAt": "2026-11-10T08:25:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korean-hackers-launder-binance-theft-with-me",
+      "article-6d495b7f",
+      "6d495b7f",
+      "north-korean-hackers-launder-binance-theft-with-me-530867",
+      "north-korean-hackers-launder-binance-theft-with-meme-coins"
     ]
   },
   {
@@ -9498,126 +9612,6 @@ export const news: NewsBrief[] = [
       "2e3087a7",
       "rhsa-2026-95194-important-webkit2gtk3-security-upd-37d850",
       "rhsa-2026-95194-important-webkit2gtk3-security-update"
-    ]
-  },
-  {
-    "slug": "kyiv-independent-website-disrupted-by-suspected-ru-9418cb7f",
-    "title": "Kyiv Independent Website Disrupted by Suspected Russian Attack",
-    "summary": "A suspected Russian cyberattack disrupted the Kyiv Independent website, targeting Ukraine’s leading English-language news outlet. The incident may have exploited web application flaws or credential theft, but no exploitation details or data exfiltration have been confirmed. Security teams should monitor for phishing or credential reuse, apply vendor patches, and review access controls to mitigate future attacks.",
-    "category": "Nation State",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ukraine-kyiv-independent-cyberattack",
-    "publishedAt": "2026-11-04T16:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kyiv-independent-website-disrupted-by-suspected-ru",
-      "article-9418cb7f",
-      "9418cb7f",
-      "kyiv-independent-website-disrupted-by-suspected-ru-5cfd1a",
-      "kyiv-independent-website-disrupted-by-suspected-russian-atta"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95241-important-bind-security-bug-fix-an-20f27ea2",
-    "title": "RHSA-2026:95241: Important: bind security, bug fix, and enhancement update",
-    "summary": "An update for bind is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95241",
-    "publishedAt": "2026-11-04T16:07:27.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95241-important-bind-security-bug-fix-an",
-      "article-20f27ea2",
-      "20f27ea2",
-      "rhsa-2026-95241-important-bind-security-bug-fix-an-37d84d",
-      "rhsa-2026-95241-important-bind-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "prompt-adware-discovered-in-openai-codex-jailbreak-71f7bc3a",
-    "title": "Prompt Adware Discovered in OpenAI Codex Jailbreak Toolkit",
-    "summary": "Check Point Research disclosed details of a malicious jailbreak bundle targeting OpenAI Codex configuration settings. Dubbed Haiou, the toolkit alters the artificial intelligence agent's trusted instructions to inject unauthorized advertisements for a third-party gateway. Security teams deploying artificial intelligence development environments must inspect custom agent configurations and remove untrusted jailbreak tools.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
-    "publishedAt": "2026-11-04T16:06:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "prompt-adware-discovered-in-openai-codex-jailbreak",
-      "article-71f7bc3a",
-      "71f7bc3a",
-      "prompt-adware-discovered-in-openai-codex-jailbreak-2e2173",
-      "prompt-adware-discovered-in-openai-codex-jailbreak-toolkit"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95242-important-bind-security-bug-fix-an-c258a84e",
-    "title": "RHSA-2026:95242: Important: bind security, bug fix, and enhancement update",
-    "summary": "An update for bind is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95242",
-    "publishedAt": "2026-11-04T16:04:40.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95242-important-bind-security-bug-fix-an",
-      "article-c258a84e",
-      "c258a84e",
-      "rhsa-2026-95242-important-bind-security-bug-fix-an-37d84d",
-      "rhsa-2026-95242-important-bind-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "msecure-users-urged-to-reset-passwords-after-breac-dd20b5eb",
-    "title": "mSecure Users Urged to Reset Passwords After Breach",
-    "summary": "mSeven Software warned mSecure password manager users to change passwords after a cyberattack exposed an encrypted customer database. The breach likely involved credential theft or database compromise, but the exact exploitation vector remains unclear, leaving the root cause uncertain. Users should reset passwords, revoke two‑factor authentication, remove passkeys, and monitor for suspicious activity while the vendor releases a patch.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
-    "publishedAt": "2026-11-04T16:00:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "msecure-users-urged-to-reset-passwords-after-breac",
-      "article-dd20b5eb",
-      "dd20b5eb",
-      "msecure-users-urged-to-reset-passwords-after-breac-3124ab",
-      "msecure-users-urged-to-reset-passwords-after-breach"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-cve-2026-76031-u-8b43c3fc",
-    "title": "Microsoft Edge Addresses Chromium CVE-2026-76031 Use‑After‑Free",
-    "summary": "Microsoft Edge, built on Chromium, patched the CVE‑2026‑76031 use‑after‑free flaw. The flaw could allow arbitrary code execution via a use‑after‑free condition and is now mitigated in the update, as noted in Chromium release logs. Users should update to the latest Microsoft Edge or apply the Chromium patch to remove the exploitation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76031",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-76031"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-cve-2026-76031-u",
-      "article-8b43c3fc",
-      "8b43c3fc",
-      "microsoft-edge-addresses-chromium-cve-2026-76031-u-744db7",
-      "microsoft-edge-addresses-chromium-cve-2026-76031-use-after-f"
     ]
   }
 ];
