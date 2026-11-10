@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 16:45:18 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 17:45:29 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:97456: Moderate: krb5 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97456-moderate-krb5-security-update-142bdc41</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97456-moderate-krb5-security-update-142bdc41</guid>
+      <description><![CDATA[An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:31:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97456">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97497: Moderate: unbound security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97497-moderate-unbound-security-bug-fix-a01b4add</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97497-moderate-unbound-security-bug-fix-a01b4add</guid>
+      <description><![CDATA[An update for unbound is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:11:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97497">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ivanti Issues Patches for Endpoint Manager, CSA Vulnerabilities</title>
+      <link>https://secubuzz.com/news/ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce</guid>
+      <description><![CDATA[Ivanti released patches for Endpoint Manager, Endpoint Manager Mobile, Sentry, and Cloud Services Application after discovering flaws enabling remote code execution, certificate tampering, data exposure, and service disruption. Two critical vulnerabilities in Endpoint Manager and Cloud Services Application pose the highest risk, requiring code execution privileges. Administrators should apply the updates immediately and verify certificate trust chains to mitigate exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:43:58 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ivanti-security-flaws/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Xen Orchestra Auth Bypass Enables VM Server Hijack</title>
       <link>https://secubuzz.com/news/xen-orchestra-auth-bypass-enables-vm-server-hijack-8e029e9c</link>
@@ -15,6 +42,15 @@
       <pubDate>Tue, 10 Nov 2026 16:17:16 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Benchmarking Offensive AI Agent Capabilities</title>
+      <link>https://secubuzz.com/news/benchmarking-offensive-ai-agent-capabilities-6496bb80</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/benchmarking-offensive-ai-agent-capabilities-6496bb80</guid>
+      <description><![CDATA[The article presents a framework for assessing AI agents' cybersecurity capabilities, focusing on offensive testing. It outlines the construction of the Wiz Cyber Model Arena, detailing scenario design, adversarial objectives, and performance metrics. The authors recommend iterative validation, data collection, and continuous improvement to ensure robust evaluation for security teams.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:03:25 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/cyber-model-arena-ai-benchmark">Wiz Research</source>
+      <category>General</category>
     </item>
     <item>
       <title>Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor</title>
@@ -35,6 +71,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>One Identity Releases Identity Manager 10.0 LTS</title>
+      <link>https://secubuzz.com/news/one-identity-releases-identity-manager-10-0-lts-2dce62bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/one-identity-releases-identity-manager-10-0-lts-2dce62bf</guid>
+      <description><![CDATA[One Identity has released Identity Manager 10.0 LTS, a major platform update introducing browser-based administration, AI-assisted insights, and streamlined automation for identity governance workflows. The update modernizes the user experience with a redesigned web interface and intelligent operational assistance. Organizations should evaluate migration readiness and validate compatibility with existing integration modules before deployment.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:49:23 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/one-identity-unveils-identity-manager-10-0-lts-with-ai-and-modern-ux/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97238: Important: cockpit-machines security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97238-important-cockpit-machines-securit-89841513</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97238-important-cockpit-machines-securit-89841513</guid>
+      <description><![CDATA[An update for cockpit-machines is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:38:14 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97238">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Ivanti Releases Monthly Security Update</title>
       <link>https://secubuzz.com/news/ivanti-releases-monthly-security-update-7d8ceb82</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ivanti-releases-monthly-security-update-7d8ceb82</guid>
@@ -50,6 +104,15 @@
       <description><![CDATA[An update for BIND on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities are linked to CVE references and carry moderate severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.]]></description>
       <pubDate>Tue, 10 Nov 2026 15:29:24 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97586">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97299: Moderate: pcp security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97299-moderate-pcp-security-bug-fix-and-b74c76f7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97299-moderate-pcp-security-bug-fix-and-b74c76f7</guid>
+      <description><![CDATA[An update for pcp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:25:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97299">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -393,69 +456,6 @@
       <pubDate>Tue, 10 Nov 2026 10:02:40 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Turla Deploys Cereal Malware to Harvest Exchange Emails</title>
-      <link>https://secubuzz.com/news/turla-deploys-cereal-malware-to-harvest-exchange-e-e1a34ab8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/turla-deploys-cereal-malware-to-harvest-exchange-e-e1a34ab8</guid>
-      <description><![CDATA[Turla, a Russia‑aligned threat actor, deployed its Cereal malware to infiltrate Microsoft Exchange servers and harvest email communications covertly. The tool exploits undisclosed Exchange vulnerabilities to bypass authentication and exfiltrate mailboxes, enabling persistent surveillance without triggering standard detection. Security teams should apply Microsoft’s latest Exchange patches, enforce MFA, and monitor outbound traffic to mitigate the threat.]]></description>
-      <pubDate>Tue, 10 Nov 2026 10:00:39 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>N-able Disables N-central Over 30 Zero-Day Flaws</title>
-      <link>https://secubuzz.com/news/n-able-disables-n-central-over-30-zero-day-flaws-74835697</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-disables-n-central-over-30-zero-day-flaws-74835697</guid>
-      <description><![CDATA[N-able temporarily disabled N-central services while addressing over 30 zero-day vulnerabilities that enable remote code execution, credential theft, and unauthorized administrator account creation. The flaws arise from insufficient input validation in the web interface, permitting attackers to inject malicious code and elevate privileges. N-able has released a patch and urges customers to update immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 09:56:28 GMT</pubDate>
-      <source url="https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Malicious VS Code Extension Steals GitHub Tokens</title>
-      <link>https://secubuzz.com/news/malicious-vs-code-extension-steals-github-tokens-8dacf453</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/malicious-vs-code-extension-steals-github-tokens-8dacf453</guid>
-      <description><![CDATA[A poisoned Nx Console extension for VS Code stayed on the marketplace for 18 minutes, letting attackers install it and steal GitHub tokens. The extension captured authentication tokens during installation, compromising developer accounts and enabling unauthorized repository access. Developers should uninstall the extension immediately, revoke exposed tokens, and install official updates; Microsoft must remove the listing and investigate.]]></description>
-      <pubDate>Tue, 10 Nov 2026 09:54:32 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-steal-github-tokens/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>IBM, SignalWire Vulnerabilities Exploited, CISA Urges Patch</title>
-      <link>https://secubuzz.com/news/ibm-signalwire-vulnerabilities-exploited-cisa-urge-dfabc271</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ibm-signalwire-vulnerabilities-exploited-cisa-urge-dfabc271</guid>
-      <description><![CDATA[CISA added CVE-2026-123218 and CVE-2026-116779 to the KEV list after attackers exploited vulnerabilities in IBM Aspera Faspex and SignalWire FreeSwitch. The flaws enable remote code execution and privilege escalation, allowing adversaries to compromise server infrastructure and exfiltrate data. Federal agencies are urged to apply the vendor patches within three days to mitigate the active exploitation risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 09:42:27 GMT</pubDate>
-      <source url="https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Hackers Use Fake FOFA Accounts to Steal AI Keys</title>
-      <link>https://secubuzz.com/news/hackers-use-fake-fofa-accounts-to-steal-ai-keys-2d9fba03</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-fofa-accounts-to-steal-ai-keys-2d9fba03</guid>
-      <description><![CDATA[A threat actor created 1,438 fake FOFA accounts to scan the internet for leaked OpenAI and DeepSeek API keys. The system exploited misconfigured servers exposing API keys, enabling attackers to hijack AI services and potentially monetize or exfiltrate data. Organizations should rotate exposed keys, enforce strict key management, and monitor for unauthorized usage; FOFA must investigate account abuse.]]></description>
-      <pubDate>Tue, 10 Nov 2026 09:39:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-fofa-accounts/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Linux Kernel Receives Patch for Multiple Vulnerabilities</title>
-      <link>https://secubuzz.com/news/linux-kernel-receives-patch-for-multiple-vulnerabi-9e70e8b0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-receives-patch-for-multiple-vulnerabi-9e70e8b0</guid>
-      <description><![CDATA[The Linux kernel was updated to address several security issues across multiple subsystems, including USB gadget drivers, memory management, and networking core. An attacker could potentially exploit these flaws to compromise system integrity, though no active exploitation has been reported. Kernel maintainers recommend applying the USN-9022-1 update immediately to mitigate the identified vulnerabilities.]]></description>
-      <pubDate>Tue, 10 Nov 2026 09:09:50 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9022-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Iranian Unit Sabotages 700 French Retail Refrigerators</title>
-      <link>https://secubuzz.com/news/iranian-unit-sabotages-700-french-retail-refrigera-080a646c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/iranian-unit-sabotages-700-french-retail-refrigera-080a646c</guid>
-      <description><![CDATA[An IRGC cyber unit targeted refrigeration controllers at roughly 700 French retail sites, altering defrost settings to high temperatures. The change caused food spoilage and ignited fires in at least 15 locations, leading to significant losses. French authorities attribute the sabotage to Iran; operators should audit controller access logs and enforce stricter authentication controls.]]></description>
-      <pubDate>Tue, 10 Nov 2026 09:08:20 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html">The Hacker News</source>
-      <category>Nation State</category>
     </item>
   </channel>
 </rss>
