@@ -6,7 +6,7 @@ import { MyStackSidebar } from '../components/MyStackSidebar';
 import { useMyStack } from '../data/useMyStack';
 import { VendorSelect } from '../components/VendorSelect';
 import { newsCategories } from '../data/news';
-import { useLiveNews } from '../data/useLiveNews';
+import { useLiveNews, normalizeHyphens, normalizeApiBrief } from '../data/useLiveNews';
 import type { NewsBrief, NewsCategory, NewsSeverity } from '../types/news';
 import { Seo } from '../components/Seo';
 import { isVendorPsirt, getVendorFromSource } from '../utils/psirt';
@@ -15,6 +15,16 @@ type Filter = 'All' | NewsCategory;
 type SeverityFilter = 'ALL' | NewsSeverity;
 type SourceFilter = 'ALL' | 'PSIRT' | 'MEDIA';
 const PAGE_SIZE = 20;
+
+function matchesNewsQuery(b: NewsBrief, rawQuery: string): boolean {
+  const q = normalizeHyphens(rawQuery).trim().toLowerCase();
+  if (!q) return true;
+  return (
+    normalizeHyphens(b.title).toLowerCase().includes(q) ||
+    normalizeHyphens(b.summary).toLowerCase().includes(q) ||
+    b.cves.some((c) => normalizeHyphens(c).toLowerCase().includes(q))
+  );
+}
 
 export function News() {
   const [filter, setFilter] = useState<Filter>('All');
@@ -36,11 +46,11 @@ export function News() {
     if (!query.trim()) return;
     setArchiveLoading(true);
     setArchiveSearched(true);
-    fetch(`/api/news/search?q=${encodeURIComponent(query.trim())}`)
+    fetch(`/api/news/search?q=${encodeURIComponent(normalizeHyphens(query).trim())}`)
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (data?.results) {
-          setArchiveResults(data.results);
+        if (Array.isArray(data?.results)) {
+          setArchiveResults(data.results.map(normalizeApiBrief));
         }
       })
       .catch((err) => console.error('Archive search failed:', err))
@@ -148,19 +158,13 @@ export function News() {
   }, [news, myStack]);
 
   const severityCounts = useMemo(() => {
-    const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
       if (stackFilterActive && !myStack.matchesBrief(b)) return false;
       if (filter !== 'All' && b.category !== filter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
       if (vendorFilter !== 'ALL' && getVendorFromSource(b.source) !== vendorFilter) return false;
-      if (!q) return true;
-      return (
-        b.title.toLowerCase().includes(q) ||
-        b.summary.toLowerCase().includes(q) ||
-        b.cves.some((c) => c.toLowerCase().includes(q))
-      );
+      return matchesNewsQuery(b, query);
     });
 
     const counts: Record<SeverityFilter, number> = {
@@ -179,19 +183,13 @@ export function News() {
   }, [news, filter, sourceFilter, vendorFilter, stackFilterActive, myStack, query]);
 
   const categoryCounts = useMemo(() => {
-    const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
       if (stackFilterActive && !myStack.matchesBrief(b)) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
       if (vendorFilter !== 'ALL' && getVendorFromSource(b.source) !== vendorFilter) return false;
-      if (!q) return true;
-      return (
-        b.title.toLowerCase().includes(q) ||
-        b.summary.toLowerCase().includes(q) ||
-        b.cves.some((c) => c.toLowerCase().includes(q))
-      );
+      return matchesNewsQuery(b, query);
     });
 
     const counts: Record<string, number> = {
@@ -206,17 +204,11 @@ export function News() {
   }, [news, severityFilter, sourceFilter, vendorFilter, stackFilterActive, myStack, query]);
 
   const sourceCounts = useMemo(() => {
-    const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
       if (filter !== 'All' && b.category !== filter) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (vendorFilter !== 'ALL' && getVendorFromSource(b.source) !== vendorFilter) return false;
-      if (!q) return true;
-      return (
-        b.title.toLowerCase().includes(q) ||
-        b.summary.toLowerCase().includes(q) ||
-        b.cves.some((c) => c.toLowerCase().includes(q))
-      );
+      return matchesNewsQuery(b, query);
     });
 
     const counts: Record<SourceFilter, number> = {
@@ -235,19 +227,13 @@ export function News() {
   }, [news, filter, severityFilter, vendorFilter, query]);
 
   const vendorCounts = useMemo(() => {
-    const q = query.trim().toLowerCase();
     const candidateNews = news.filter((b) => {
       if (stackFilterActive && !myStack.matchesBrief(b)) return false;
       if (filter !== 'All' && b.category !== filter) return false;
       if (severityFilter !== 'ALL' && b.severity !== severityFilter) return false;
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
-      if (!q) return true;
-      return (
-        b.title.toLowerCase().includes(q) ||
-        b.summary.toLowerCase().includes(q) ||
-        b.cves.some((c) => c.toLowerCase().includes(q))
-      );
+      return matchesNewsQuery(b, query);
     });
 
     const counts: Record<string, number> = {
@@ -278,7 +264,6 @@ export function News() {
   }, [news, sourceFilter, vendorCounts]);
 
   const results = useMemo(() => {
-    const q = query.trim().toLowerCase();
     return news.filter((b) => {
       if (stackFilterActive && !myStack.matchesBrief(b)) return false;
       if (filter !== 'All' && b.category !== filter) return false;
@@ -286,12 +271,7 @@ export function News() {
       if (sourceFilter === 'PSIRT' && !isVendorPsirt(b.source)) return false;
       if (sourceFilter === 'MEDIA' && isVendorPsirt(b.source)) return false;
       if (vendorFilter !== 'ALL' && getVendorFromSource(b.source) !== vendorFilter) return false;
-      if (!q) return true;
-      return (
-        b.title.toLowerCase().includes(q) ||
-        b.summary.toLowerCase().includes(q) ||
-        b.cves.some((c) => c.toLowerCase().includes(q))
-      );
+      return matchesNewsQuery(b, query);
     });
   }, [news, filter, severityFilter, sourceFilter, vendorFilter, stackFilterActive, myStack, query]);
 

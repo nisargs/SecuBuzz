@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import type { NewsBrief } from '../types/news';
 import type { Advisory } from '../types/advisory';
 import { getVendorFromSource } from '../utils/psirt';
+import { normalizeHyphens } from './useLiveNews';
 
 const VENDORS_STORAGE_KEY = 'secubuzz_my_stack_vendors_v1';
 const CVES_STORAGE_KEY = 'secubuzz_cve_watchlist_v1';
@@ -31,8 +32,7 @@ export function isValidVulnerabilityId(raw: string): boolean {
 }
 
 export function normalizeCve(raw: string): string {
-  let normalized = (raw || '')
-    .replace(/[\u2010\u2011\u2012\u2013\u2014\u2015\u2212]/g, '-')
+  let normalized = normalizeHyphens(raw)
     .trim()
     .toUpperCase();
 
@@ -176,7 +176,7 @@ export function useMyStack() {
           if (hasWatchedCve) return true;
         }
 
-        const textToSearch = (brief.title + ' ' + brief.summary).toUpperCase();
+        const textToSearch = normalizeHyphens(brief.title + ' ' + brief.summary).toUpperCase();
         if (watchedCves.some((w) => textToSearch.includes(w))) return true;
       }
 
@@ -215,7 +215,7 @@ export function useMyStack() {
           if (watchedCves.includes(norm)) return true;
         }
 
-        const textToSearch = ((advisory.name || '') + ' ' + (advisory.description || '')).toUpperCase();
+        const textToSearch = normalizeHyphens((advisory.name || '') + ' ' + (advisory.description || '')).toUpperCase();
         if (watchedCves.some((w) => textToSearch.includes(w))) return true;
       }
 

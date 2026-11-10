@@ -136,9 +136,49 @@ function getTitleKeywords(title: string): string[] {
     .filter(w => w.length > 2 && !STOP_WORDS.has(w));
 }
 
+function normalizeHyphens(text: string): string {
+  return (text || '').replace(/[\u2010-\u2015\u2212]/g, '-');
+}
+
+function normalizeCveHyphens(text: string): string {
+  return (text || '').replace(
+    /CVE[\u2010-\u2015\u2212-](\d{4})[\u2010-\u2015\u2212-](\d{4,7})/gi,
+    'CVE-$1-$2'
+  );
+}
+
 function extractCvesFromText(text: string): string[] {
-  const matches = (text || '').match(/CVE-\d{4}-\d{4,7}/gi);
+  const norm = normalizeCveHyphens(text);
+  const matches = norm.match(/CVE-\d{4}-\d{4,7}/gi);
   return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
+}
+
+function formatD1Article(r: any): ArticleItem {
+  const cleanTitle = normalizeCveHyphens(r.title || '');
+  const cleanSummary = normalizeCveHyphens(r.summary || '');
+  const existingCves = JSON.parse(r.cves_json || '[]').map((c: string) =>
+    normalizeHyphens(c).toUpperCase()
+  );
+  const cves = Array.from(
+    new Set([...existingCves, ...extractCvesFromText(`${cleanTitle} ${cleanSummary}`)])
+  );
+  return {
+    id: r.source_url || r.slug,
+    slug: r.slug,
+    title: cleanTitle,
+    headline: cleanTitle,
+    summary: cleanSummary,
+    category: r.category,
+    severity: r.severity,
+    source: r.source,
+    sourceName: r.source,
+    sourceUrl: r.source_url,
+    url: r.source_url,
+    publishedAt: r.published_at,
+    cves,
+    additionalSources: JSON.parse(r.additional_sources_json || '[]'),
+    aliases: JSON.parse(r.aliases_json || '[]'),
+  };
 }
 
 function deduplicateFeed(articles: any[]): ArticleItem[] {
@@ -215,9 +255,22 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
       summary = summary.replace(/\.{2,}/g, '.').replace(/\s+/g, ' ').trim();
     }
 
+    summary = normalizeCveHyphens(summary);
+    const cleanTitle = normalizeCveHyphens(title);
+    const cleanHeadline = art.headline ? normalizeCveHyphens(art.headline) : cleanTitle;
+    const existingCves = Array.isArray(art.cves)
+      ? art.cves.map((c: string) => normalizeHyphens(c).toUpperCase())
+      : [];
+    const cves = Array.from(
+      new Set([...existingCves, ...extractCvesFromText(`${cleanTitle} ${summary}`)])
+    );
+
     deduped.push({
       ...art,
+      title: cleanTitle,
+      headline: cleanHeadline,
       summary,
+      cves,
       slug,
       aliases,
       additionalSources: Array.isArray(art.additionalSources) ? art.additionalSources : []
@@ -800,35 +853,46 @@ export default {
 
       // API: Search archived news in D1
       if (url.pathname === '/api/news/search') {
-        const q = (url.searchParams.get('q') || '').trim();
-        if (!q) {
+        const rawQ = (url.searchParams.get('q') || '').trim();
+        if (!rawQ) {
           return jsonResponse({ count: 0, results: [] });
         }
-        const term = `%${q}%`;
-        const { results } = await env.DB.prepare(
-          `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
-           FROM articles
-           WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ?
-           ORDER BY published_at DESC
-           LIMIT 50;`
-        ).bind(term, term, term).all();
 
-        const formatted = (results || []).map((r: any) => ({
-          slug: r.slug,
-          title: r.title,
-          headline: r.title,
-          summary: r.summary,
-          category: r.category,
-          severity: r.severity,
-          source: r.source,
-          sourceName: r.source,
-          sourceUrl: r.source_url,
-          url: r.source_url,
-          publishedAt: r.published_at,
-          cves: JSON.parse(r.cves_json || '[]'),
-          additionalSources: JSON.parse(r.additional_sources_json || '[]'),
-          aliases: JSON.parse(r.aliases_json || '[]'),
-        }));
+        const q = normalizeHyphens(rawQ);
+        const cveMatch = q.match(/^CVE-(\d{4})-(\d{4,7})$/i);
+
+        let rows: any[] = [];
+        if (cveMatch) {
+          // SQL '_' wildcard matches both ASCII '-' and Unicode dashes (e.g. U+2011)
+          const wildTerm = `%CVE_${cveMatch[1]}_${cveMatch[2]}%`;
+          const { results } = await env.DB.prepare(
+            `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+             FROM articles
+             WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ?
+             ORDER BY published_at DESC
+             LIMIT 100;`
+          ).bind(wildTerm, wildTerm, wildTerm).all();
+
+          const exactRegex = new RegExp(`CVE-${cveMatch[1]}-${cveMatch[2]}(?!\\d)`, 'i');
+          rows = (results || [])
+            .filter((r: any) =>
+              exactRegex.test(normalizeHyphens(`${r.title || ''} ${r.summary || ''} ${r.cves_json || ''}`))
+            )
+            .slice(0, 50);
+        } else {
+          const term = `%${q}%`;
+          const altTerm = q.includes('-') ? `%${q.replace(/-/g, '\u2011')}%` : term;
+          const { results } = await env.DB.prepare(
+            `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+             FROM articles
+             WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ? OR title LIKE ? OR summary LIKE ?
+             ORDER BY published_at DESC
+             LIMIT 50;`
+          ).bind(term, term, term, altTerm, altTerm).all();
+          rows = results || [];
+        }
+
+        const formatted = rows.map(formatD1Article);
 
         return jsonResponse({ count: formatted.length, results: formatted }, 200, {
           'Cache-Control': 'public, max-age=60, s-maxage=300',
@@ -876,22 +940,7 @@ export default {
         }
 
         if (row) {
-          const article = {
-            slug: row.slug,
-            title: row.title,
-            headline: row.title,
-            summary: row.summary,
-            category: row.category,
-            severity: row.severity,
-            source: row.source,
-            sourceName: row.source,
-            sourceUrl: row.source_url,
-            url: row.source_url,
-            publishedAt: row.published_at,
-            cves: JSON.parse(row.cves_json || '[]'),
-            additionalSources: JSON.parse(row.additional_sources_json || '[]'),
-            aliases: JSON.parse(row.aliases_json || '[]'),
-          };
+          const article = formatD1Article(row);
           return jsonResponse({ article }, 200, {
             'Cache-Control': 'public, max-age=3600, s-maxage=86400',
           });
@@ -919,16 +968,19 @@ export default {
         }
 
         const statements = articles.map((a: any) => {
-          const title = a.title || a.headline || '';
-          const id = a.id || a.sourceUrl || a.url || title;
-          const slug = a.slug || createSlug(title, id);
-          const summary = a.summary || '';
+          const rawTitle = a.title || a.headline || '';
+          const title = normalizeCveHyphens(rawTitle);
+          const id = a.id || a.sourceUrl || a.url || rawTitle;
+          const slug = a.slug || createSlug(rawTitle, id);
+          const summary = normalizeCveHyphens(a.summary || '');
           const category = a.category || 'GENERAL';
           const severity = a.severity || 'LOW';
           const source = a.source || a.sourceName || '';
           const sourceUrl = a.sourceUrl || a.url || '';
           const publishedAt = a.publishedAt || (a.pubDate ? new Date(a.pubDate).toISOString() : new Date().toISOString());
-          const cvesJson = JSON.stringify(a.cves || []);
+          const rawCves = Array.isArray(a.cves) ? a.cves.map((c: string) => normalizeHyphens(c).toUpperCase()) : [];
+          const mergedCves = Array.from(new Set([...rawCves, ...extractCvesFromText(`${title} ${summary}`)]));
+          const cvesJson = JSON.stringify(mergedCves);
           const additionalSourcesJson = JSON.stringify(a.additionalSources || []);
           const aliasesJson = JSON.stringify(a.aliases || []);
 
@@ -1571,22 +1623,7 @@ export default {
 
                 if (row) {
                   isArchivedMatch = true;
-                  const archivedArt: ArticleItem = {
-                    slug: row.slug,
-                    title: row.title,
-                    headline: row.title,
-                    summary: row.summary,
-                    category: row.category,
-                    severity: row.severity,
-                    source: row.source,
-                    sourceName: row.source,
-                    sourceUrl: row.source_url,
-                    url: row.source_url,
-                    publishedAt: row.published_at,
-                    cves: JSON.parse(row.cves_json || '[]'),
-                    additionalSources: JSON.parse(row.additional_sources_json || '[]'),
-                    aliases: JSON.parse(row.aliases_json || '[]'),
-                  };
+                  const archivedArt = formatD1Article(row);
                   articleListForMeta = [archivedArt, ...articles];
                 }
               } catch (e) {

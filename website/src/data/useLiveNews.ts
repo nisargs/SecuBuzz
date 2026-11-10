@@ -4,7 +4,18 @@ import type { NewsBrief, NewsCategory } from '../types/news';
 
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
-function mapCategory(cat: string = ''): NewsCategory {
+export function normalizeHyphens(text: string): string {
+  return (text || '').replace(/[\u2010-\u2015\u2212]/g, '-');
+}
+
+export function normalizeCveText(text: string): string {
+  return (text || '').replace(
+    /CVE[\u2010-\u2015\u2212-](\d{4})[\u2010-\u2015\u2212-](\d{4,7})/gi,
+    'CVE-$1-$2'
+  );
+}
+
+export function mapCategory(cat: string = ''): NewsCategory {
   const upper = cat.toUpperCase();
   if (upper === 'CVE') return 'CVE';
   if (upper === 'VULNERABILITY') return 'Vulnerability';
@@ -14,8 +25,9 @@ function mapCategory(cat: string = ''): NewsCategory {
   return 'General';
 }
 
-function extractCves(text: string): string[] {
-  const matches = text.match(/CVE-\d{4}-\d{4,7}/gi);
+export function extractCves(text: string): string[] {
+  const norm = normalizeCveText(text);
+  const matches = norm.match(/CVE-\d{4}-\d{4,7}/gi);
   return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
 }
 
@@ -66,21 +78,25 @@ function transformFeed(feed: any[]): NewsBrief[] {
   const deduped: NewsBrief[] = [];
 
   for (const art of sorted) {
-    const title = (art.title || art.headline || '').trim();
-    if (!title) continue;
+    const rawTitle = (art.title || art.headline || '').trim();
+    if (!rawTitle) continue;
 
-    const summary = (art.summary || '').trim();
+    const title = normalizeCveText(rawTitle);
+    const summary = normalizeCveText((art.summary || '').trim());
     const source = (art.source || art.sourceName || 'SecuBuzz').trim();
     const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
     const publishedAt = art.publishedAt || new Date().toISOString();
-    const cves = extractCves(title + ' ' + summary);
+    const existingCves = Array.isArray(art.cves)
+      ? art.cves.map((c: string) => normalizeHyphens(c).trim().toUpperCase()).filter(Boolean)
+      : [];
+    const cves = Array.from(new Set([...existingCves, ...extractCves(title + ' ' + summary)]));
     const category = mapCategory(art.category);
     const rawSev = (art.severity || '').toUpperCase();
     const severity = (['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].includes(rawSev) ? rawSev : undefined) as NewsBrief['severity'];
 
     const normUrl = sourceUrl.toLowerCase();
-    const articleId = (art.id || sourceUrl || title).trim().toLowerCase();
-    const normTitle = title.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
+    const articleId = (art.id || sourceUrl || rawTitle).trim().toLowerCase();
+    const normTitle = rawTitle.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 60);
 
     // O(1) duplicate filter (exact match on ID, canonical URL, or identical title)
     if (seenIds.has(articleId) || (normUrl && seenUrls.has(normUrl)) || (normTitle && seenNormTitles.has(normTitle))) {
@@ -177,6 +193,37 @@ function reconcileLiveFeed(liveFeed: NewsBrief[], baseNews: NewsBrief[]): NewsBr
   }
 
   return reconciled;
+}
+
+export function normalizeApiBrief(art: any): NewsBrief {
+  const rawTitle = (art.title || art.headline || '').trim();
+  const title = normalizeCveText(rawTitle);
+  const summary = normalizeCveText((art.summary || '').trim());
+  const source = (art.source || art.sourceName || 'SecuBuzz').trim();
+  const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
+  const publishedAt = art.publishedAt || new Date().toISOString();
+  const existingCves = Array.isArray(art.cves)
+    ? art.cves.map((c: string) => normalizeHyphens(c).trim().toUpperCase()).filter(Boolean)
+    : [];
+  const cves = Array.from(new Set([...existingCves, ...extractCves(title + ' ' + summary)]));
+  const category = mapCategory(art.category);
+  const rawSev = (art.severity || '').toUpperCase();
+  const severity = (['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].includes(rawSev) ? rawSev : undefined) as NewsBrief['severity'];
+  const slug = art.slug || createSlug(rawTitle, art.id || art.sourceUrl || art.url || rawTitle);
+
+  return {
+    slug,
+    title,
+    summary,
+    category,
+    severity,
+    source,
+    sourceUrl,
+    publishedAt,
+    cves,
+    additionalSources: Array.isArray(art.additionalSources) ? art.additionalSources : [],
+    aliases: Array.isArray(art.aliases) ? art.aliases : [],
+  };
 }
 
 let cachedNews: NewsBrief[] = initialNews;

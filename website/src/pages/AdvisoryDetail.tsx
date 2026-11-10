@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ArrowLeftIcon, ArrowUpRightIcon, ShieldAlertIcon, ActivityIcon, CopyIcon, CheckIcon, Share2Icon, Bookmark } from 'lucide-react';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { useMyStack } from '../data/useMyStack';
-import { useLiveNews } from '../data/useLiveNews';
+import { useLiveNews, normalizeHyphens, normalizeApiBrief } from '../data/useLiveNews';
 import { SeverityBadge } from '../components/SeverityBadge';
 import { AppCta } from '../components/AppCta';
 import { NotFound } from './NotFound';
@@ -12,6 +12,16 @@ import { dueStatus, parseCvssVector, formatAdvisorySnippet, getCvssSeverity } fr
 import { Seo } from '../components/Seo';
 import { getVendorFromSource } from '../utils/psirt';
 import type { Advisory } from '../types/advisory';
+import type { NewsBrief } from '../types/news';
+
+function briefMentionsCve(b: NewsBrief, cve: string): boolean {
+  const target = normalizeHyphens(cve).toUpperCase();
+  if (!target) return false;
+  if (b.cves?.some((c) => normalizeHyphens(c).toUpperCase() === target)) return true;
+  const escaped = target.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const normText = normalizeHyphens(`${b.title || ''} ${b.summary || ''}`);
+  return new RegExp(`\\b${escaped}(?!\\d)`, 'i').test(normText);
+}
 
 interface EpssData {
   epss: number;
@@ -43,10 +53,13 @@ export function AdvisoryDetail() {
   const isCveSlug = /^cve-\d{4}-\d+$/i.test(slug || '');
   const cveCode = isCveSlug ? (slug || '').toUpperCase() : '';
 
+  const [archivedCoverage, setArchivedCoverage] = useState<NewsBrief[]>([]);
+  const [coverageLoading, setCoverageLoading] = useState(false);
+
   const matchedAdvisory = advisories.find((a) => a.slug === slug || a.cve.toLowerCase() === (slug || '').toLowerCase());
 
   const matchingBrief = isCveSlug
-    ? news.find((b) => b.cves.some((c) => c.toUpperCase() === cveCode) || (b.title + ' ' + b.summary).toUpperCase().includes(cveCode))
+    ? news.find((b) => briefMentionsCve(b, cveCode)) || archivedCoverage.find((b) => briefMentionsCve(b, cveCode))
     : null;
 
   const fallbackAdvisory: Advisory | null = isCveSlug
@@ -81,6 +94,7 @@ export function AdvisoryDetail() {
   const [cvssMetrics, setCvssMetrics] = useState<CvssMetrics | null>(null);
   const [metricsLoading, setMetricsLoading] = useState(false);
   const [copiedSnippet, setCopiedSnippet] = useState(false);
+  const [copiedLink, setCopiedLink] = useState(false);
 
   useEffect(() => {
     if (!advisory?.cve) return;
@@ -138,6 +152,25 @@ export function AdvisoryDetail() {
       })
       .catch((err) => console.warn('CVSS metrics error:', err))
       .finally(() => setMetricsLoading(false));
+
+    // 3. Query D1 archive for all SecuBuzz news briefs mentioning this CVE (including >5d old briefs)
+    let cancelled = false;
+    setCoverageLoading(true);
+    setArchivedCoverage([]);
+    fetch(`/api/news/search?q=${encodeURIComponent(normalizeHyphens(advisory.cve))}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data: any) => {
+        if (cancelled || !Array.isArray(data?.results)) return;
+        setArchivedCoverage(data.results.map(normalizeApiBrief));
+      })
+      .catch((err) => console.warn('Archived coverage lookup error:', err))
+      .finally(() => {
+        if (!cancelled) setCoverageLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
   }, [advisory?.cve]);
 
   if (!advisory) {
@@ -166,8 +199,6 @@ export function AdvisoryDetail() {
     }
   };
 
-  const [copiedLink, setCopiedLink] = useState(false);
-
   const canonicalUrl = `https://secubuzz.com/advisories/${advisory.slug}`;
   const tweetText = `🚨 [CISA Zero-Day Alert] ${advisory.cve}: ${advisory.name}\n\nFederal remediation deadline: ${shortDate(advisory.dueDate)} · Live CISA KEV Radar 👇`;
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=${encodeURIComponent(canonicalUrl)}`;
@@ -185,8 +216,16 @@ export function AdvisoryDetail() {
   };
 
   const status = dueStatus(advisory.dueDate);
-  const coverage = news.filter(
-    (b) => b.cves.some((c) => c.toUpperCase() === advisory.cve.toUpperCase()) || (b.title + ' ' + b.summary).toUpperCase().includes(advisory.cve.toUpperCase())
+  const coverageMap = new Map<string, NewsBrief>();
+  for (const b of [...news, ...archivedCoverage]) {
+    if (!briefMentionsCve(b, advisory.cve)) continue;
+    const key = (b.sourceUrl || b.slug).toLowerCase();
+    if (!coverageMap.has(key)) {
+      coverageMap.set(key, b);
+    }
+  }
+  const coverage = Array.from(coverageMap.values()).sort(
+    (a, b) => (Date.parse(b.publishedAt || '') || 0) - (Date.parse(a.publishedAt || '') || 0)
   );
   const hasCisaDeadline = status.hasDeadline;
   const deadlineTone =
@@ -623,11 +662,15 @@ export function AdvisoryDetail() {
                         <p className="text-[15px] font-medium leading-snug text-ink transition-colors duration-150 ease-out hover:text-accent">
                           {b.title}
                         </p>
-                        <p className="mt-1.5 font-mono text-xs text-subtle">{timeAgo(b.publishedAt)}</p>
+                        <p className="mt-1.5 font-mono text-xs text-subtle">
+                          {b.source} · {shortDate(b.publishedAt.slice(0, 10))} ({timeAgo(b.publishedAt)})
+                        </p>
                       </Link>
                     </li>
                   ))}
                 </ul>
+              ) : coverageLoading ? (
+                <p className="mt-3 font-mono text-xs text-subtle">Searching archive for {advisory.cve} briefs...</p>
               ) : (
                 <div className="mt-3 rounded border border-line bg-raised/40 p-3 text-xs text-subtle leading-relaxed">
                   <p className="text-muted">No news brief references {advisory.cve} yet.</p>

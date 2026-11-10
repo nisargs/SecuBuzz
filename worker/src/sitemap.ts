@@ -18,6 +18,8 @@ export interface ArticleItem {
   vulnerableVersionRange?: string;
   slug?: string;
   aliases?: string[];
+  cves?: string[];
+  additionalSources?: Array<{ source: string; sourceUrl: string }>;
 }
 
 export interface KevVulnerability {
