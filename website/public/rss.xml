@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 13:46:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 14:45:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication</title>
+      <link>https://secubuzz.com/news/critical-apache-airflow-rce-flaw-allows-attackers-724acf9f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-apache-airflow-rce-flaw-allows-attackers-724acf9f</guid>
+      <description><![CDATA[Apache Airflow has a critical remote code execution flaw that lets anyone with write access to the Celery message broker run code on worker nodes. The bug is tracked as CVE-2026-68982 and is classified as CWE-306, missing authentication for a critical function.]]></description>
+      <pubDate>Tue, 10 Nov 2026 13:57:52 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/critical-apache-airflow-rce-flaw/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>RHSA-2026:97121: Moderate: unbound security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781</link>
@@ -15,6 +24,15 @@
       <pubDate>Tue, 10 Nov 2026 13:39:44 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97121">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Dark Storm Team Expands DDoS-for-Hire, Demands $5,000 for Amino</title>
+      <link>https://secubuzz.com/news/dark-storm-team-expands-ddos-for-hire-demands-5-00-fd53c7fb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/dark-storm-team-expands-ddos-for-hire-demands-5-00-fd53c7fb</guid>
+      <description><![CDATA[Dark Storm Team expanded its DDoS‑for‑hire service, targeting Amino and demanding $5,000 in cryptocurrency to stop the attack. The group advertises on Telegram, issuing a payment request tied to an October 2025 incident, showing an active threat actor. Defenders should monitor traffic for DDoS patterns, deploy rate‑limiting and scrubbing services, and block known malicious IPs to mitigate disruption.]]></description>
+      <pubDate>Tue, 10 Nov 2026 13:18:07 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/dark-storm-team/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>CISA Updates Incident Form for Campaign Detection</title>
@@ -438,24 +456,6 @@
       <pubDate>Tue, 10 Nov 2026 07:40:43 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/10/eric-fourrier-gitguardian-leaked-credentials/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Google Patches Chrome XML Use‑After‑Free Vulnerability (CVE‑2026‑125350)</title>
-      <link>https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-vulnerabi-4f95a003</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-vulnerabi-4f95a003</guid>
-      <description><![CDATA[Google released a patch for Chrome after discovering CVE‑2026‑125350, a use‑after‑free flaw in its XML parser that was actively exploited. The vulnerability allowed attackers to corrupt memory and potentially execute code via crafted XML documents, posing a remote code execution threat. Google’s latest Chrome update includes the fix; users are urged to install it immediately to mitigate the risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 06:52:54 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/google-issues-chrome-security-update.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CISA Adds Four Flaws to KEV Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-four-flaws-to-kev-catalog-15140f7a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-flaws-to-kev-catalog-15140f7a</guid>
-      <description><![CDATA[CISA added four actively exploited vulnerabilities, including CVE‑2026‑123218, to its Known Exploited Vulnerabilities catalog. The flaws affect OpenSSH, GPUStack, SignalWire FreeSwitch, and IBM Aspera Faspex, with CVE‑2026‑123218 rated CVSS 9.8 for an incorrect authorization flaw. CISA recommends immediate patching or applying vendor mitigations; users should verify that their systems are not exposed to the active exploitation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 06:31:42 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

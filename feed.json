@@ -1,5 +1,24 @@
 [
   {
+    "id": "https://cybersecuritynews.com/critical-apache-airflow-rce-flaw/",
+    "sourceUrl": "https://cybersecuritynews.com/critical-apache-airflow-rce-flaw/",
+    "title": "Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication",
+    "headline": "Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication",
+    "summary": "Apache Airflow has a critical remote code execution flaw that lets anyone with write access to the Celery message broker run code on worker nodes. The bug is tracked as CVE-2026-68982 and is classified as CWE-306, missing authentication for a critical function.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-10T13:57:52.000Z",
+    "ingestedAt": "2026-11-10T14:43:24.336Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-68982"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:97121",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97121",
     "title": "RHSA-2026:97121: Moderate: unbound security, bug fix, and enhancement update",
@@ -15,6 +34,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://cybersecuritynews.com/dark-storm-team/",
+    "sourceUrl": "https://cybersecuritynews.com/dark-storm-team/",
+    "title": "Dark Storm Team Expands DDoS-for-Hire, Demands $5,000 for Amino",
+    "headline": "Dark Storm Team Expands DDoS-for-Hire, Demands $5,000 for Amino",
+    "summary": "Dark Storm Team expanded its DDoS‑for‑hire service, targeting Amino and demanding $5,000 in cryptocurrency to stop the attack. The group advertises on Telegram, issuing a payment request tied to an October 2025 incident, showing an active threat actor. Defenders should monitor traffic for DDoS patterns, deploy rate‑limiting and scrubbing services, and block known malicious IPs to mitigate disruption.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-10T13:18:07.000Z",
+    "ingestedAt": "2026-11-10T14:44:53.971Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/dark-storm-team/",
+    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/10/cisa-incident-reporting-form-update/",
@@ -8376,38 +8411,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/05/okta-ai-customer-experiences-report/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.huntress.com/blog/itdr-adversary-infrastructure",
-    "sourceUrl": "https://www.huntress.com/blog/itdr-adversary-infrastructure",
-    "title": "Huntress ITDR Blocks M365 Sign‑In Attacks",
-    "headline": "Huntress ITDR Blocks M365 Sign‑In Attacks",
-    "summary": "Huntress introduced a Managed ITDR feature called Adversary Infrastructure that intercepts attacker activity during Microsoft 365 sign‑in events. The feature transforms a single tenant’s compromise into fleet‑wide protection by blocking malicious sign‑ins across the organization. Security teams should enable the feature, monitor blocked attempts, and integrate alerts with existing SIEM solutions for comprehensive visibility.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Huntress",
-    "publishedAt": "2026-11-05T05:00:00.000Z",
-    "ingestedAt": "2026-11-06T07:43:10.857Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.huntress.com/blog/itdr-adversary-infrastructure",
-    "additionalSources": []
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
-    "sourceUrl": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
-    "title": "White House Staff Use Proxies Exposing IPs for Rent",
-    "headline": "White House Staff Use Proxies Exposing IPs for Rent",
-    "summary": "White House staff are reportedly using proxy services that expose their device IP addresses, allowing third parties to rent them. One service is operated by a Russian company whose founder’s hosting business was a target of 2016 election system attacks in Arizona and Illinois. Security teams should audit device configurations, disable proxy usage, and enforce network segmentation to mitigate exposure.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Krebs on Security",
-    "publishedAt": "2026-11-05T04:36:17.000Z",
-    "ingestedAt": "2026-11-05T05:43:18.595Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
     "additionalSources": []
   }
 ]

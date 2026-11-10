@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "critical-apache-airflow-rce-flaw-allows-attackers-724acf9f",
+    "title": "Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication",
+    "summary": "Apache Airflow has a critical remote code execution flaw that lets anyone with write access to the Celery message broker run code on worker nodes. The bug is tracked as CVE-2026-68982 and is classified as CWE-306, missing authentication for a critical function.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-apache-airflow-rce-flaw/",
+    "publishedAt": "2026-11-10T13:57:52.000Z",
+    "cves": [
+      "CVE-2026-68982"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-apache-airflow-rce-flaw-allows-attackers",
+      "article-724acf9f",
+      "724acf9f",
+      "critical-apache-airflow-rce-flaw-allows-attackers-679389",
+      "critical-apache-airflow-rce-flaw-allows-attackers-to-execute"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781",
     "title": "RHSA-2026:97121: Moderate: unbound security, bug fix, and enhancement update",
     "summary": "An update for unbound is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -27,6 +48,25 @@ export const news: NewsBrief[] = [
       "7e279781",
       "rhsa-2026-97121-moderate-unbound-security-bug-fix-37d768",
       "rhsa-2026-97121-moderate-unbound-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "dark-storm-team-expands-ddos-for-hire-demands-5-00-fd53c7fb",
+    "title": "Dark Storm Team Expands DDoS-for-Hire, Demands $5,000 for Amino",
+    "summary": "Dark Storm Team expanded its DDoS‑for‑hire service, targeting Amino and demanding $5,000 in cryptocurrency to stop the attack. The group advertises on Telegram, issuing a payment request tied to an October 2025 incident, showing an active threat actor. Defenders should monitor traffic for DDoS patterns, deploy rate‑limiting and scrubbing services, and block known malicious IPs to mitigate disruption.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/dark-storm-team/",
+    "publishedAt": "2026-11-10T13:18:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "dark-storm-team-expands-ddos-for-hire-demands-5-00",
+      "article-fd53c7fb",
+      "fd53c7fb",
+      "dark-storm-team-expands-ddos-for-hire-demands-5-00-6e56dd",
+      "dark-storm-team-expands-ddos-for-hire-demands-5-000-for-amin"
     ]
   },
   {
@@ -9571,43 +9611,6 @@ export const news: NewsBrief[] = [
       "fcd1538d",
       "consumers-unwilling-to-let-ai-agents-shop-unsuperv-1679dc",
       "consumers-unwilling-to-let-ai-agents-shop-unsupervised"
-    ]
-  },
-  {
-    "slug": "huntress-itdr-blocks-m365-sign-in-attacks-89cfa108",
-    "title": "Huntress ITDR Blocks M365 Sign‑In Attacks",
-    "summary": "Huntress introduced a Managed ITDR feature called Adversary Infrastructure that intercepts attacker activity during Microsoft 365 sign‑in events. The feature transforms a single tenant’s compromise into fleet‑wide protection by blocking malicious sign‑ins across the organization. Security teams should enable the feature, monitor blocked attempts, and integrate alerts with existing SIEM solutions for comprehensive visibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/itdr-adversary-infrastructure",
-    "publishedAt": "2026-11-05T05:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "huntress-itdr-blocks-m365-sign-in-attacks",
-      "article-89cfa108",
-      "89cfa108",
-      "huntress-itdr-blocks-m365-sign-in-attacks-5d9461"
-    ]
-  },
-  {
-    "slug": "white-house-staff-use-proxies-exposing-ips-for-ren-1fca82b0",
-    "title": "White House Staff Use Proxies Exposing IPs for Rent",
-    "summary": "White House staff are reportedly using proxy services that expose their device IP addresses, allowing third parties to rent them. One service is operated by a Russian company whose founder’s hosting business was a target of 2016 election system attacks in Arizona and Illinois. Security teams should audit device configurations, disable proxy usage, and enforce network segmentation to mitigate exposure.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
-    "publishedAt": "2026-11-05T04:36:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "white-house-staff-use-proxies-exposing-ips-for-ren",
-      "article-1fca82b0",
-      "1fca82b0",
-      "white-house-staff-use-proxies-exposing-ips-for-ren-455f6c",
-      "white-house-staff-use-proxies-exposing-ips-for-rent"
     ]
   }
 ];
