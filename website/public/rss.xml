@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 11:47:29 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 12:46:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>SAP Issues Patches for Four Maximum-Severity Flaws</title>
+      <link>https://secubuzz.com/news/sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b</guid>
+      <description><![CDATA[SAP released November 2026 security updates addressing 35 vulnerabilities, including four maximum‑severity flaws in NetWeaver, Web Dispatcher, and Gateway components. The flaws, classified as maximum severity, could allow remote code execution or privilege escalation if exploited, though no active exploitation reports exist. SAP has issued patches for all affected products; administrators should apply the updates promptly to mitigate potential exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 12:07:03 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenSSH Musl Flaw Enables Password‑Authentication Bypass</title>
+      <link>https://secubuzz.com/news/openssh-musl-flaw-enables-password-authentication-11883b79</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssh-musl-flaw-enables-password-authentication-11883b79</guid>
+      <description><![CDATA[A flaw dubbed 'sshole' affects OpenSSH on musl‑based Linux, letting attackers authenticate with an oversized password over 256 bytes. The bug arises from a buffer oversight in password parsing, enabling unauthorized login without valid credentials and potentially full system access. Admins should upgrade to the patched OpenSSH release or apply the vendor‑issued workaround to reject oversized passwords.]]></description>
+      <pubDate>Tue, 10 Nov 2026 12:02:38 GMT</pubDate>
+      <source url="https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html">Schneier on Security</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>France Attributes Supermarket Refrigeration Sabotage to Iranian Hackers</title>
       <link>https://secubuzz.com/news/france-attributes-supermarket-refrigeration-sabota-99bf71bc</link>
@@ -140,6 +158,42 @@
       <description><![CDATA[Ubuntu released kernel updates addressing CVE-2023-20585 and multiple Linux kernel vulnerabilities. The AMD flaw allows hypervisor-privileged attackers to corrupt SEV-SNP guest memory via improper RMP checks; other issues affect USB gadget, memory management, NVDIMM, networking, and architecture subsystems. Updated kernel packages are available; immediate deployment is recommended to prevent system compromise.]]></description>
       <pubDate>Tue, 10 Nov 2026 08:47:02 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9025-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Linux Kernel Azure RMP Check Flaw Exposes SEV‑SNP Memory</title>
+      <link>https://secubuzz.com/news/linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-15cee65f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-15cee65f</guid>
+      <description><![CDATA[A flaw in AMD processors’ IOMMU RMP checks on Linux kernel Azure allows a hypervisor attacker to trigger an out‑of‑bounds condition that could corrupt SEV‑SNP guest memory. The vulnerability, identified as CVE‑2023‑20585, exploits improper buffer validation and could lead to integrity violations. Ubuntu has released kernel patches covering multiple subsystems; users should apply the update to mitigate the risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:46:54 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9026-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Turtle Beach Audio Driver Race Condition Enables Local Exploit</title>
+      <link>https://secubuzz.com/news/turtle-beach-audio-driver-race-condition-enables-l-0eb87dbe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/turtle-beach-audio-driver-race-condition-enables-l-0eb87dbe</guid>
+      <description><![CDATA[The Turtle Beach MultiSound audio driver in Linux contains race conditions that trigger out‑of‑bounds accesses during ring‑buffer reads, allowing a local attacker to cause a denial of service or possibly execute code. The flaw, CVE‑2017‑9986, enables local privilege escalation that could compromise system integrity. Ubuntu has released kernel patches for the affected subsystems; users should apply them promptly.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:46:39 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9035-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Raspberry Pi Kernel AX.25 Race Condition Causes DoS</title>
+      <link>https://secubuzz.com/news/raspberry-pi-kernel-ax-25-race-condition-causes-do-921bb2ee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/raspberry-pi-kernel-ax-25-race-condition-causes-do-921bb2ee</guid>
+      <description><![CDATA[AX.25 protocol race conditions on Raspberry Pi Linux kernels cause use‑after‑free bugs that a local attacker can exploit to crash the system. The i.MX clock driver also has a null pointer dereference due to improper allocation handling, leading to a local denial of service (CVE‑2022‑3114).]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:46:37 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9029-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Linux Kernel Vulnerabilities Updated</title>
+      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-updated-36aef8d2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-updated-36aef8d2</guid>
+      <description><![CDATA[Multiple Linux kernel flaws, including CVE-2024-53210, were found in GPU and network subsystems, allowing attackers to potentially compromise systems. The USN‑9032‑1 update patches seven CVEs, including CVE-2026-43456, by fixing memory corruption and validation errors that could lead to privilege escalation or denial of service. Apply the patch immediately and upgrade to the latest kernel to prevent reintroduction of the flaws.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:46:16 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9032-1">Ubuntu Security Notices</source>
       <category>CVE</category>
     </item>
     <item>
@@ -402,60 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 23:52:12 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/">BleepingComputer</source>
       <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Ubuntu libsoup Regression Introduces Multiple CVE Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-libsoup-regression-introduces-multiple-cve-1469474b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-libsoup-regression-introduces-multiple-cve-1469474b</guid>
-      <description><![CDATA[Ubuntu’s libsoup regression introduced CVE-2026-4271, CVE-2026-5119, and related flaws in HTTP/2, HTTPS proxy, and chunked request handling. Remote attackers could use these to cause DoS, steal sensitive data, or bypass controls, though no active exploitation is known. Ubuntu’s USN-8890-3 patch addresses the regressions; administrators should apply the update promptly and monitor for service anomalies.]]></description>
-      <pubDate>Mon, 09 Nov 2026 23:12:32 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8890-3">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AWS Braket SDK Exposes Two CVE Vulnerabilities</title>
-      <link>https://secubuzz.com/news/aws-braket-sdk-exposes-two-cve-vulnerabilities-9a27a0b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-braket-sdk-exposes-two-cve-vulnerabilities-9a27a0b3</guid>
-      <description><![CDATA[Amazon disclosed two CVE vulnerabilities affecting the Braket SDK and its schemas, impacting versions 1.10.0+ and 1.17.0+. CVE‑2026‑124034 involves insecure local hybrid job input download, while CVE‑2026‑124035 affects error‑mitigation schema validation, possibly enabling unauthorized data access. AWS advises updating to the latest SDK and schemas and applying the vendor’s patch or mitigation steps.]]></description>
-      <pubDate>Mon, 09 Nov 2026 22:42:12 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-175-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>SEGA Exposes 2.2M Subscriber Emails via ARARA Breach</title>
-      <link>https://secubuzz.com/news/sega-exposes-2-2m-subscriber-emails-via-arara-brea-db5fcc69</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sega-exposes-2-2m-subscriber-emails-via-arara-brea-db5fcc69</guid>
-      <description><![CDATA[A data breach at SEGA’s third‑party newsletter provider ARARA exposed 2.2 million subscriber email addresses. Unauthorized access to ARARA’s database compromised email identifiers but not credentials or financial data; SEGA reported the incident in November 2026. SEGA notified affected users and advised monitoring for phishing, while ARARA conducts a forensic investigation and tightens access controls.]]></description>
-      <pubDate>Mon, 09 Nov 2026 22:09:33 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>CISA Unveils Enhanced Incident Reporting Form</title>
-      <link>https://secubuzz.com/news/cisa-unveils-enhanced-incident-reporting-form-35de4eec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-unveils-enhanced-incident-reporting-form-35de4eec</guid>
-      <description><![CDATA[CISA introduced a new incident reporting questionnaire designed to collect detailed data on cyber events. The form captures critical information that enables the agency to assess incident severity, detect emerging trends, and prioritize response resources. Organizations should submit incident details through the new form to support CISA’s improved analysis and coordination efforts.]]></description>
-      <pubDate>Mon, 09 Nov 2026 21:38:20 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>N-Able Shuts Down N-Central Cloud Over &apos;Able2Shell&apos; Zero-Day Vulnerabilities</title>
-      <link>https://secubuzz.com/news/n-able-shuts-down-n-central-cloud-over-able2shell-e2990899</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-shuts-down-n-central-cloud-over-able2shell-e2990899</guid>
-      <description><![CDATA[N-Able took its N-Central cloud platform offline after the 'Able2Shell' vulnerability set, comprising over 30 zero-days enabling remote code execution and privilege escalation, was publicly disclosed with proof-of-concept exploits. The flaws allow full server compromise across hosted and on-premises deployments. N-Able urges immediate shutdown of all N-Central instances pending vendor patches.]]></description>
-      <pubDate>Mon, 09 Nov 2026 21:26:25 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>York University Breach Reveals 2007 Personal Data</title>
-      <link>https://secubuzz.com/news/york-university-breach-reveals-2007-personal-data-e585fff0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/york-university-breach-reveals-2007-personal-data-e585fff0</guid>
-      <description><![CDATA[York University disclosed a breach in which a threat actor accessed personal information submitted via online forms dating back to 2007. The stolen data includes names, email addresses, phone numbers, and student identification numbers, potentially exposing thousands of individuals. York University has notified affected parties, engaged forensic investigators, and is reviewing its data protection controls to prevent future incidents.]]></description>
-      <pubDate>Mon, 09 Nov 2026 21:22:31 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

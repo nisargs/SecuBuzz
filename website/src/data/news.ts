@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b",
+    "title": "SAP Issues Patches for Four Maximum-Severity Flaws",
+    "summary": "SAP released November 2026 security updates addressing 35 vulnerabilities, including four maximum‑severity flaws in NetWeaver, Web Dispatcher, and Gateway components. The flaws, classified as maximum severity, could allow remote code execution or privilege escalation if exploited, though no active exploitation reports exist. SAP has issued patches for all affected products; administrators should apply the updates promptly to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/",
+    "publishedAt": "2026-11-10T12:07:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-issues-patches-for-four-maximum-severity-flaws",
+      "article-41b60e3b",
+      "41b60e3b",
+      "sap-issues-patches-for-four-maximum-severity-flaws-4e9854"
+    ]
+  },
+  {
+    "slug": "openssh-musl-flaw-enables-password-authentication-11883b79",
+    "title": "OpenSSH Musl Flaw Enables Password‑Authentication Bypass",
+    "summary": "A flaw dubbed 'sshole' affects OpenSSH on musl‑based Linux, letting attackers authenticate with an oversized password over 256 bytes. The bug arises from a buffer oversight in password parsing, enabling unauthorized login without valid credentials and potentially full system access. Admins should upgrade to the patched OpenSSH release or apply the vendor‑issued workaround to reject oversized passwords.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
+    "publishedAt": "2026-11-10T12:02:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openssh-musl-flaw-enables-password-authentication",
+      "article-11883b79",
+      "11883b79",
+      "openssh-musl-flaw-enables-password-authentication-67f2ec",
+      "openssh-musl-flaw-enables-password-authentication-bypass"
+    ]
+  },
+  {
     "slug": "france-attributes-supermarket-refrigeration-sabota-99bf71bc",
     "title": "France Attributes Supermarket Refrigeration Sabotage to Iranian Hackers",
     "summary": "France attributed a disruptive cyberattack on 700 supermarket refrigeration systems to Iran's Islamic Revolutionary Guard Corps. Attackers remotely manipulated defrost controls during October 11–12, causing widespread food spoilage and approximately 20 fires, per the Paris prosecutor. Foreign Minister Jean-Noël Barrot confirmed the attribution; affected organizations should audit industrial control system access and implement network segmentation.",
@@ -302,6 +339,84 @@ export const news: NewsBrief[] = [
       "1cac7a6d",
       "ubuntu-addresses-multiple-linux-kernel-vulnerabili-7e88c0",
       "ubuntu-addresses-multiple-linux-kernel-vulnerabilities-in-us"
+    ]
+  },
+  {
+    "slug": "linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-15cee65f",
+    "title": "Linux Kernel Azure RMP Check Flaw Exposes SEV‑SNP Memory",
+    "summary": "A flaw in AMD processors’ IOMMU RMP checks on Linux kernel Azure allows a hypervisor attacker to trigger an out‑of‑bounds condition that could corrupt SEV‑SNP guest memory. The vulnerability, identified as CVE‑2023‑20585, exploits improper buffer validation and could lead to integrity violations. Ubuntu has released kernel patches covering multiple subsystems; users should apply the update to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9026-1",
+    "publishedAt": "2026-11-10T08:46:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-azure-rmp-check-flaw-exposes-sev-snp",
+      "article-15cee65f",
+      "15cee65f",
+      "linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-7e88bc",
+      "linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-memory"
+    ]
+  },
+  {
+    "slug": "turtle-beach-audio-driver-race-condition-enables-l-0eb87dbe",
+    "title": "Turtle Beach Audio Driver Race Condition Enables Local Exploit",
+    "summary": "The Turtle Beach MultiSound audio driver in Linux contains race conditions that trigger out‑of‑bounds accesses during ring‑buffer reads, allowing a local attacker to cause a denial of service or possibly execute code. The flaw, CVE‑2017‑9986, enables local privilege escalation that could compromise system integrity. Ubuntu has released kernel patches for the affected subsystems; users should apply them promptly.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9035-1",
+    "publishedAt": "2026-11-10T08:46:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "turtle-beach-audio-driver-race-condition-enables-l",
+      "article-0eb87dbe",
+      "0eb87dbe",
+      "turtle-beach-audio-driver-race-condition-enables-l-7e884b",
+      "turtle-beach-audio-driver-race-condition-enables-local-explo"
+    ]
+  },
+  {
+    "slug": "raspberry-pi-kernel-ax-25-race-condition-causes-do-921bb2ee",
+    "title": "Raspberry Pi Kernel AX.25 Race Condition Causes DoS",
+    "summary": "AX.25 protocol race conditions on Raspberry Pi Linux kernels cause use‑after‑free bugs that a local attacker can exploit to crash the system. The i.MX clock driver also has a null pointer dereference due to improper allocation handling, leading to a local denial of service (CVE‑2022‑3114).",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9029-1",
+    "publishedAt": "2026-11-10T08:46:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "raspberry-pi-kernel-ax-25-race-condition-causes-do",
+      "article-921bb2ee",
+      "921bb2ee",
+      "raspberry-pi-kernel-ax-25-race-condition-causes-do-7e88b1",
+      "raspberry-pi-kernel-ax-25-race-condition-causes-dos"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-updated-36aef8d2",
+    "title": "Linux Kernel Vulnerabilities Updated",
+    "summary": "Multiple Linux kernel flaws, including CVE-2024-53210, were found in GPU and network subsystems, allowing attackers to potentially compromise systems. The USN‑9032‑1 update patches seven CVEs, including CVE-2026-43456, by fixing memory corruption and validation errors that could lead to privilege escalation or denial of service. Apply the patch immediately and upgrade to the latest kernel to prevent reintroduction of the flaws.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9032-1",
+    "publishedAt": "2026-11-10T08:46:16.000Z",
+    "cves": [
+      "CVE-2024-53210",
+      "CVE-2026-43456"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-updated",
+      "article-36aef8d2",
+      "36aef8d2",
+      "linux-kernel-vulnerabilities-updated-7e8857"
     ]
   },
   {
@@ -9500,133 +9615,6 @@ export const news: NewsBrief[] = [
       "article-b4b42418",
       "b4b42418",
       "red-hat-updates-cryostat-4-for-cve-2026-98432-37d849"
-    ]
-  },
-  {
-    "slug": "vercel-deploys-device-bound-session-credentials-53d89812",
-    "title": "Vercel Deploys Device‑Bound Session Credentials",
-    "summary": "Vercel is introducing Device‑Bound Session Credentials (DBSC) to protect its platform from stolen session cookie attacks. DBSC binds session tokens to device fingerprints, preventing attackers from hijacking sessions even if they acquire valid cookies. Vercel recommends enabling DBSC for all projects and monitoring for anomalous session activity to maintain secure user access.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
-    "publishedAt": "2026-11-04T21:31:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vercel-deploys-device-bound-session-credentials",
-      "article-53d89812",
-      "53d89812",
-      "vercel-deploys-device-bound-session-credentials-2a66c4"
-    ]
-  },
-  {
-    "slug": "multiple-asian-airlines-report-data-breaches-from-2ae0d0e9",
-    "title": "Multiple Asian Airlines Report Data Breaches from Amadeus",
-    "summary": "Six Asian airlines—Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines, and Malaysia Airlines—have reported data breaches traced to Amadeus IT Group, a Spanish provider of flight reservation and ticketing platforms. The breaches expose passenger data across multiple carriers following an initial incident at the Spanish IT provider. Affected organizations should conduct forensic investigations and implement enhanced access controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
-    "publishedAt": "2026-11-04T21:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "multiple-asian-airlines-report-data-breaches-from",
-      "article-2ae0d0e9",
-      "2ae0d0e9",
-      "multiple-asian-airlines-report-data-breaches-from-67c7e1",
-      "multiple-asian-airlines-report-data-breaches-from-amadeus"
-    ]
-  },
-  {
-    "slug": "zyxel-gs1900-switches-hit-by-zero-day-exploit-6135af26",
-    "title": "Zyxel GS1900 Switches Hit by Zero‑Day Exploit",
-    "summary": "Zyxel GS1900 series switches were compromised by a zero‑day vulnerability exploited on nearly 1,000 devices worldwide across all affected devices. The flaw allowed attackers to retrieve configuration files and credentials, facilitating lateral movement and potential network‑wide attacks. Zyxel released a patch; administrators should update firmware immediately and audit switch configurations for unauthorized changes.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
-    "publishedAt": "2026-11-04T20:58:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zyxel-gs1900-switches-hit-by-zero-day-exploit",
-      "article-6135af26",
-      "6135af26",
-      "zyxel-gs1900-switches-hit-by-zero-day-exploit-1c90f5"
-    ]
-  },
-  {
-    "slug": "cve-2026-122192-guest-access-to-firecracker-proces-94ed1063",
-    "title": "CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard",
-    "summary": "Bulletin ID: 2026-169-AWS Publication Date: 11/04/2026 11:30 AM PST Description: We identified CVE-2026-122192, an issue in Firecracker v0.23.0 through v1.16.1 that, under certain host memory conditions, can let a root user in a guest read or modify memory of the Firecracker process.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/",
-    "publishedAt": "2026-11-04T19:40:33.000Z",
-    "cves": [
-      "CVE-2026-122192"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-122192-guest-access-to-firecracker-proces",
-      "article-94ed1063",
-      "94ed1063",
-      "cve-2026-122192-guest-access-to-firecracker-proces-714e8c",
-      "cve-2026-122192-guest-access-to-firecracker-process-memory-a"
-    ]
-  },
-  {
-    "slug": "dreamhost-exposes-ftp-logins-and-webmail-credentia-4675f352",
-    "title": "DreamHost Exposes FTP Logins and Webmail Credentials",
-    "summary": "DreamHost has disclosed that FTP login credentials and webmail accounts were exposed due to access controls, according to a security alert. The exposure allows attackers to authenticate to user accounts and exfiltrate sensitive data, but no evidence of active exploitation or data theft has been reported. DreamHost recommends users change passwords, enable two‑factor authentication, and review logs to detect access.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
-    "publishedAt": "2026-11-04T19:05:19.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/dreamhost-confirms-data-breach/"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/dreamhost-confirms-data-breach-exposed-ftp-logins-and-w"
-      }
-    ],
-    "aliases": [
-      "dreamhost-exposes-ftp-logins-and-webmail-credentia",
-      "article-4675f352",
-      "4675f352",
-      "dreamhost-exposes-ftp-logins-and-webmail-credentia-bb4a7d",
-      "dreamhost-exposes-ftp-logins-and-webmail-credentials"
-    ]
-  },
-  {
-    "slug": "cr-dit-mutuel-ark-a-133m-heist-via-supplier-breach-32ba0218",
-    "title": "Crédit Mutuel Arkéa $133M Heist via Supplier Breach",
-    "summary": "Crédit Mutuel Arkéa suffered a $133 million cyber heist that exploited a supplier’s credentials to access the bank’s transfer system. Attackers leveraged the supplier’s privileged access to move funds without triggering fraud alerts, draining the bank’s accounts undetected. The bank has suspended affected systems, tightened supplier controls, and is conducting a forensic investigation while notifying regulators.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/french-bank-confirms-cyber-heist",
-    "publishedAt": "2026-11-04T18:58:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/"
-      }
-    ],
-    "aliases": [
-      "cr-dit-mutuel-ark-a-133m-heist-via-supplier-breach",
-      "article-32ba0218",
-      "32ba0218",
-      "cr-dit-mutuel-ark-a-133m-heist-via-supplier-breach-7e17eb"
     ]
   }
 ];
