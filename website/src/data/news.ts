@@ -11,6 +11,82 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "aurora-adtp-blocks-ransomware-with-ai-in-real-time-6ec26d86",
+    "title": "Aurora ADTP Blocks Ransomware with AI in Real Time",
+    "summary": "Aurora Adaptive Threat Protection (ADTP) employs AI‑powered intent detection to identify ransomware and advanced threats before they reach endpoints. The system analyzes traffic patterns and user behavior, flagging malicious payloads and command‑and‑control communications with high accuracy. Security teams should integrate ADTP into existing SIEM pipelines and enable real‑time alerting to maintain continuous protection.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-disrupts-attacks-in-real-time/",
+    "publishedAt": "2026-11-10T20:43:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aurora-adtp-blocks-ransomware-with-ai-in-real-time",
+      "article-6ec26d86",
+      "6ec26d86",
+      "aurora-adtp-blocks-ransomware-with-ai-in-real-time-42e684"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-low-impact-dhcp-security-update-70f3c8f2",
+    "title": "Red Hat Releases Low‑Impact DHCP Security Update",
+    "summary": "Red Hat Enterprise Linux 9 receives a DHCP security update addressing multiple bugs and enhancements. The advisory rates the update as Low impact, with CVSS scores linked to individual CVE references for detailed severity. Administrators should apply the latest dhcp package via yum or dnf to ensure patched configurations and mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97486",
+    "publishedAt": "2026-11-10T20:32:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-low-impact-dhcp-security-update",
+      "article-70f3c8f2",
+      "70f3c8f2",
+      "red-hat-releases-low-impact-dhcp-security-update-37d75c"
+    ]
+  },
+  {
+    "slug": "cve-2026-124848-kiro-cli-default-permissions-expos-dd708a3c",
+    "title": "CVE-2026-124848: Kiro CLI Default Permissions Expose Sessions",
+    "summary": "CVE-2026-124848 reveals that Kiro CLI versions before 2.27.0 create session transcript files with world‑readable permissions on macOS and Linux. The flaw allows any local user to read credentials, source code, and other sensitive data stored in the prompt history, potentially enabling credential theft. Users should upgrade to Kiro CLI 2.27.0 or later, or manually change file permissions to restrict access.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-178-aws/",
+    "publishedAt": "2026-11-10T20:05:36.000Z",
+    "cves": [
+      "CVE-2026-124848"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-124848-kiro-cli-default-permissions-expos",
+      "article-dd708a3c",
+      "dd708a3c",
+      "cve-2026-124848-kiro-cli-default-permissions-expos-3e1d2a",
+      "cve-2026-124848-kiro-cli-default-permissions-expose-sessions"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-update-for-enterprise-linu-499e671e",
+    "title": "Red Hat Releases Kernel Update for Enterprise Linux 9",
+    "summary": "Red Hat released a kernel update for Enterprise Linux 9 addressing multiple security issues. Product Security rated the update as Important, and CVSS base scores are provided for each CVE linked in the references. Security teams should apply the patch promptly to mitigate the identified kernel vulnerabilities, maintain system integrity, and ensure compliance with security policies.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97435",
+    "publishedAt": "2026-11-10T20:05:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-enterprise-linu",
+      "article-499e671e",
+      "499e671e",
+      "red-hat-releases-kernel-update-for-enterprise-linu-37d75d",
+      "red-hat-releases-kernel-update-for-enterprise-linux-9"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97539-important-cockpit-machines-securit-71aae787",
     "title": "RHSA-2026:97539: Important: cockpit-machines security update",
     "summary": "An update for cockpit-machines is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -187,6 +263,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-1982f712",
+    "title": "Microsoft Patch Tuesday Fixes 1,093 Vulnerabilities, Outlook Zero-Day",
+    "summary": "Microsoft released its November 2026 Patch Tuesday updates, fixing 1,093 vulnerabilities across Windows, Office, SQL Server, SharePoint, Exchange Server, Azure services, and developer tools. The update includes CVE-2026-113971, an actively exploited Outlook zero‑day that leaks users’ NTLMv2 authentication hashes to attackers. Security teams must apply the patch immediately to eliminate the credential theft vector and protect enterprise authentication infrastructure.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-november-2026-patch-tuesday/",
+    "publishedAt": "2026-11-10T19:01:53.000Z",
+    "cves": [
+      "CVE-2026-113971"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-fixes-1-093-vulnerabilitie",
+      "article-1982f712",
+      "1982f712",
+      "microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-63091b",
+      "microsoft-patch-tuesday-fixes-1-093-vulnerabilities-outlook-"
+    ]
+  },
+  {
     "slug": "cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4",
     "title": "CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent",
     "summary": "Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an authenticated remote user with permission to submit jobs to a queue to execute arbitrary code as the worker agent OS user and obtain the AWS credentials held by the worker agent via a crafted job that modifies the PATH environment variable.",
@@ -205,6 +302,48 @@ export const news: NewsBrief[] = [
       "502636a4",
       "cve-2026-126087-untrusted-search-path-in-openjd-se-3fd202",
       "cve-2026-126087-untrusted-search-path-in-openjd-sessions-for"
+    ]
+  },
+  {
+    "slug": "ai-coding-agents-leak-thousands-of-secrets-to-gith-98f23060",
+    "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
+    "summary": "A command in Claude Code inadvertently saves files containing credentials and sensitive data to public Git repositories, creating security exposure for organizations. The leaked secrets include API keys, tokens, and authentication credentials that were committed to public repositories without authorization. Organizations must audit their AI coding agent configurations and implement pre-commit hooks to prevent credential leakage.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github",
+    "publishedAt": "2026-11-10T18:46:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-coding-agents-leak-thousands-of-secrets-to-gith",
+      "article-98f23060",
+      "98f23060",
+      "ai-coding-agents-leak-thousands-of-secrets-to-gith-6c2ddc",
+      "ai-coding-agents-leak-thousands-of-secrets-to-github"
+    ]
+  },
+  {
+    "slug": "gstreamer-good-plugins-vulnerabilities-allow-remot-7309a69b",
+    "title": "GStreamer Good Plugins Vulnerabilities Allow Remote Code Execution",
+    "summary": "Ubuntu 16.04, 18.04, and 20.04 are affected by GStreamer Good Plugins flaws (CVE-2026-3083, CVE-2026-3085, CVE-2026-39043) that mishandle network streams, Matroska, and WAV files. The vulnerabilities enable remote attackers to trigger crashes or potentially execute arbitrary code, posing a significant risk to affected systems. Apply Ubuntu security updates or upgrade GStreamer to a patched version to mitigate exploitation risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9038-1",
+    "publishedAt": "2026-11-10T18:38:56.000Z",
+    "cves": [
+      "CVE-2026-3083",
+      "CVE-2026-3085",
+      "CVE-2026-39043"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "gstreamer-good-plugins-vulnerabilities-allow-remot",
+      "article-7309a69b",
+      "7309a69b",
+      "gstreamer-good-plugins-vulnerabilities-allow-remot-7e8840",
+      "gstreamer-good-plugins-vulnerabilities-allow-remote-code-exe"
     ]
   },
   {
@@ -264,6 +403,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "byod-ransomware-allegedly-claims-toyota-data-breac-75240c97",
+    "title": "BYOD Ransomware Allegedly Claims Toyota Data Breach",
+    "summary": "The BYOD ransomware group claims it obtained personal information and kiosk device access from Toyota, though the claim remains unverified. No evidence confirms Toyota systems were breached or files were encrypted. Security teams should monitor threat actor claims and validate any reported data exposure through independent forensic analysis.",
+    "category": "Breach",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/toyota-data-breach-claim/",
+    "publishedAt": "2026-11-10T18:14:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "byod-ransomware-allegedly-claims-toyota-data-breac",
+      "article-75240c97",
+      "75240c97",
+      "byod-ransomware-allegedly-claims-toyota-data-breac-74c568",
+      "byod-ransomware-allegedly-claims-toyota-data-breach"
+    ]
+  },
+  {
     "slug": "xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021",
     "title": "Xen Orchestra Auth Bypass Exploited for Admin Access",
     "summary": "Hackers exploit a critical authentication bypass in Xen Orchestra to gain administrative privileges. The flaw, tracked as VSA-2026-062, parses authenticationToken=j:%7B%7D into an empty object, enabling unauthorized access and is actively exploited, potentially compromising entire systems. Vates VMS urges immediate patch deployment and temporary disabling of unused REST endpoints to mitigate risk.",
@@ -298,6 +456,25 @@ export const news: NewsBrief[] = [
       "article-ea059d9e",
       "ea059d9e",
       "adobe-fixes-110-vulnerabilities-in-nine-products-439ac8"
+    ]
+  },
+  {
+    "slug": "firefox-free-vpn-drops-50gb-launch-cap-until-janua-7bb5b801",
+    "title": "Firefox Free VPN Drops 50GB Launch Cap Until January 31",
+    "summary": "Mozilla removed the data cap on the built-in Firefox free VPN, extending unlimited desktop and Android usage for users with a Mozilla account. The VPN protects traffic only inside Firefox and does not affect other applications on the device. Users benefit from unrestricted browsing without additional subscription costs beyond the existing Mozilla account requirement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/firefox-free-vpn-data/",
+    "publishedAt": "2026-11-10T18:05:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "firefox-free-vpn-drops-50gb-launch-cap-until-janua",
+      "article-7bb5b801",
+      "7bb5b801",
+      "firefox-free-vpn-drops-50gb-launch-cap-until-janua-2d4be7",
+      "firefox-free-vpn-drops-50gb-launch-cap-until-january-31"
     ]
   },
   {
@@ -355,6 +532,25 @@ export const news: NewsBrief[] = [
       "18ff9260",
       "rhsa-2026-97521-important-microcode-ctl-security-b-37d759",
       "rhsa-2026-97521-important-microcode-ctl-security-bug-fix-and"
+    ]
+  },
+  {
+    "slug": "china-nexus-espionage-campaigns-linked-via-sparrow-823b4648",
+    "title": "China-Nexus Espionage Campaigns Linked via Sparrow Malware",
+    "summary": "Three distinct threat clusters sharing infrastructure and malware code similarities have targeted telecommunications providers, government entities, military organizations, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check Point Research tracks these clusters under names SilentDelivery and related designations.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+    "publishedAt": "2026-11-10T17:43:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "china-nexus-espionage-campaigns-linked-via-sparrow",
+      "article-823b4648",
+      "823b4648",
+      "china-nexus-espionage-campaigns-linked-via-sparrow-21b668",
+      "china-nexus-espionage-campaigns-linked-via-sparrow-malware"
     ]
   },
   {
@@ -544,6 +740,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fireworks-reports-data-theft-during-october-breach-2d599cd7",
+    "title": "Fireworks Reports Data Theft During October Breaches",
+    "summary": "AI company Fireworks disclosed that hackers stole data and billing information during October incidents affecting a limited number of customer accounts. All affected customers were notified of the attack. The company should conduct forensic investigation to determine scope and implement enhanced access monitoring for sensitive billing records.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks",
+    "publishedAt": "2026-11-10T16:08:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fireworks-reports-data-theft-during-october-breach",
+      "article-2d599cd7",
+      "2d599cd7",
+      "fireworks-reports-data-theft-during-october-breach-503fac",
+      "fireworks-reports-data-theft-during-october-breaches"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6",
     "title": "RHSA-2026:97533: Important: podman security, bug fix, and enhancement update",
     "summary": "An update for podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -600,6 +815,27 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-windows-kernel-privilege-es-b04c91c2",
+    "title": "Microsoft Acknowledges Windows Kernel Privilege Escalation",
+    "summary": "Microsoft acknowledges CVE-2026-69898, a critical Windows kernel privilege escalation vulnerability that could allow local users to gain elevated privileges. The update is purely informational, with no evidence of active exploitation, public proof‑of‑concept, or a released patch. No remediation guidance is provided, and security teams should monitor Microsoft advisories for future updates.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69898",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-69898"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-windows-kernel-privilege-es",
+      "article-b04c91c2",
+      "b04c91c2",
+      "microsoft-acknowledges-windows-kernel-privilege-es-745a53",
+      "microsoft-acknowledges-windows-kernel-privilege-escalation"
     ]
   },
   {
@@ -736,6 +972,25 @@ export const news: NewsBrief[] = [
       "2f648fa6",
       "rhsa-2026-97344-important-rhc-worker-playbook-secu-37d760",
       "rhsa-2026-97344-important-rhc-worker-playbook-security-bug-f"
+    ]
+  },
+  {
+    "slug": "blind-eagle-uses-fake-court-notices-to-deliver-rat-62d139ff",
+    "title": "Blind Eagle Uses Fake Court Notices to Deliver RAT Across Latin America",
+    "summary": "The threat actor Blind Eagle launched a campaign targeting Latin American organizations using judicial and administrative-themed phishing lures resembling court notifications and fiscalía notices. The campaign delivers a remote access trojan sharing lineage with AsyncRAT and DCRat through Portuguese and Spanish-language lures. Organizations should implement email filtering for domain-spoofed legal correspondence and require multi-factor authentication for remote access.",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+    "publishedAt": "2026-11-10T15:58:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "blind-eagle-uses-fake-court-notices-to-deliver-rat",
+      "article-62d139ff",
+      "62d139ff",
+      "blind-eagle-uses-fake-court-notices-to-deliver-rat-713e62",
+      "blind-eagle-uses-fake-court-notices-to-deliver-rat-across-la"
     ]
   },
   {
@@ -887,6 +1142,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "researcher-bypasses-meta-smart-glasses-safeguard-ca7e9717",
+    "title": "Researcher Bypasses Meta Smart Glasses Safeguard",
+    "summary": "A researcher demonstrated that Meta smart glasses' software restriction policy could be bypassed to execute arbitrary code on the device. The vulnerability allows an attacker running on the device to override intended sandboxing protections. Users should apply manufacturer firmware updates as soon as available to remediate this code execution path.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/researcher-bypassed-meta-smart-glasses-safeguards-to-run-her-own-code",
+    "publishedAt": "2026-11-10T15:09:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researcher-bypasses-meta-smart-glasses-safeguard",
+      "article-ca7e9717",
+      "ca7e9717",
+      "researcher-bypasses-meta-smart-glasses-safeguard-2c9fe4"
+    ]
+  },
+  {
     "slug": "ransomware-recovery-becomes-client-retention-metri-3e699a1c",
     "title": "Ransomware Recovery Becomes Client Retention Metric",
     "summary": "Kaseya finds that ransomware recovery delays, poor communication, and unexpected costs erode MSP client trust, making recovery performance a retention metric. Disconnected recovery tools create these problems, while integrated workflows improve response times, transparency, and client satisfaction. MSPs should adopt unified recovery solutions to reduce delays, enhance communication, and maintain client loyalty during ransomware incidents.",
@@ -960,6 +1233,25 @@ export const news: NewsBrief[] = [
       "93ca9b9c",
       "north-korea-targets-drone-tech-and-software-supply-63ada6",
       "north-korea-targets-drone-tech-and-software-supply-chains"
+    ]
+  },
+  {
+    "slug": "check-point-traces-copperdragon-sparrow-framework-47e2b6b2",
+    "title": "Check Point Traces CopperDragon Sparrow Framework Globally",
+    "summary": "Check Point Research tracked intrusion campaigns attributed to CopperDragon using a shared Sparrow framework across Latin America, Asia, and Europe. The campaigns employed distinct backdoors and post-exploitation tools while sharing common infrastructure patterns. defenders should monitor for lateral movement indicators and apply network segmentation to limit blast radius during active intrusions.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/not-all-that-glitters-is-gold-tracking-copperdragons-sparrow-framework-around-the-globe/",
+    "publishedAt": "2026-11-10T14:01:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-traces-copperdragon-sparrow-framework",
+      "article-47e2b6b2",
+      "47e2b6b2",
+      "check-point-traces-copperdragon-sparrow-framework-3c011b",
+      "check-point-traces-copperdragon-sparrow-framework-globally"
     ]
   },
   {
@@ -2052,6 +2344,62 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "fortiauthenticator-hard-coded-password-allows-auth-7877ef47",
+    "title": "FortiAuthenticator Hard‑coded Password Allows Authentication Bypass",
+    "summary": "FortiAuthenticator contains a hard‑coded password flaw that permits unauthenticated attackers to bypass credential checks in the authentication flow. The CVSSv3 score is 9.0, indicating a severe vulnerability that can grant unauthorized access without user interaction. Fortinet has issued a patch; security teams should apply the update immediately to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-271",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortiauthenticator-hard-coded-password-allows-auth",
+      "article-7877ef47",
+      "7877ef47",
+      "fortiauthenticator-hard-coded-password-allows-auth-3bcda5",
+      "fortiauthenticator-hard-coded-password-allows-authentication"
+    ]
+  },
+  {
+    "slug": "fortios-ospf-daemon-allows-authentication-bypass-1237b78c",
+    "title": "FortiOS OSPF Daemon Allows Authentication Bypass",
+    "summary": "FortiOS and FortiSASE OSPF daemons contain a primary weakness that enables unauthenticated attackers to broadcast LSAs via crafted requests. The CVSSv3 score is 9.3, indicating a severe flaw that can disrupt routing tables and potentially cause denial of service. Fortinet has released a patch; administrators should update the OSPF daemon firmware immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortios-ospf-daemon-allows-authentication-bypass",
+      "article-1237b78c",
+      "1237b78c",
+      "fortios-ospf-daemon-allows-authentication-bypass-3bcda5"
+    ]
+  },
+  {
+    "slug": "fortianalyzer-spoofing-enables-authentication-bypa-8cb39c1e",
+    "title": "FortiAnalyzer Spoofing Enables Authentication Bypass",
+    "summary": "FortiAnalyzer, FortiManager, and FortiSASE‑Sovereign fortilogd contain a spoofing flaw that allows attackers to bypass authentication and disrupt high‑availability state. The CVSSv3 score is 8.2, reflecting a high‑severity vulnerability that can compromise HA coordination without user interaction. Fortinet has issued a patch; security teams should apply the update to all affected devices to prevent HA disruption.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-229",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortianalyzer-spoofing-enables-authentication-bypa",
+      "article-8cb39c1e",
+      "8cb39c1e",
+      "fortianalyzer-spoofing-enables-authentication-bypa-3bcda6",
+      "fortianalyzer-spoofing-enables-authentication-bypass"
     ]
   },
   {
@@ -9302,351 +9650,6 @@ export const news: NewsBrief[] = [
       "article-c989fdea",
       "c989fdea",
       "red-hat-releases-python36-security-update-37d841"
-    ]
-  },
-  {
-    "slug": "python-3-6-module-receives-important-security-upda-309a86ca",
-    "title": "Python 3.6 module receives important security update",
-    "summary": "Red Hat released a security update for the python36:3.6 module on RHEL 8.6, addressing multiple vulnerabilities rated as Important. The update mitigates flaws that could allow attackers to gain elevated privileges or execute arbitrary code via the Python interpreter. Red Hat recommends applying the update immediately to secure affected systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95580",
-    "publishedAt": "2026-11-05T15:32:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "python-3-6-module-receives-important-security-upda",
-      "article-309a86ca",
-      "309a86ca",
-      "python-3-6-module-receives-important-security-upda-37d841",
-      "python-3-6-module-receives-important-security-update"
-    ]
-  },
-  {
-    "slug": "vulnerability-scans-for-older-cisco-ios-vulnerabil-cbd5a20c",
-    "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
-    "summary": "This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. This Cisco IOS exploit attempt was a bit more interesting. I suspect this is for CVE-2023-20198.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33492",
-    "publishedAt": "2026-11-05T15:29:08.000Z",
-    "cves": [
-      "CVE-2023-20198"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "vulnerability-scans-for-older-cisco-ios-vulnerabil",
-      "article-cbd5a20c",
-      "cbd5a20c",
-      "vulnerability-scans-for-older-cisco-ios-vulnerabil-57dd7e",
-      "vulnerability-scans-for-older-cisco-ios-vulnerability-opt-ou"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-python3-6-security-patch-56a6cdba",
-    "title": "Red Hat Issues Python3.6 Security Patch",
-    "summary": "Red Hat released a security update for python36:3.6 on RHEL 8.8 and its SAP and Telecom variants, fixing several Python 3.6 bugs. The advisory lists CVSS base scores from moderate to high, but no CVE IDs or exploit details are provided. Red Hat recommends applying the patch via standard RHEL update channels to remediate the vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95578",
-    "publishedAt": "2026-11-05T15:21:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-python3-6-security-patch",
-      "article-56a6cdba",
-      "56a6cdba",
-      "red-hat-issues-python3-6-security-patch-37d841"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-qt5-qtbase-security-update-e089b1ff",
-    "title": "Red Hat Releases Qt5-Qtbase Security Update",
-    "summary": "Red Hat released a security update for qt5‑qtbase on RHEL 9.6 EUS, fixing multiple Qt framework bugs. The advisory lists CVSS base scores from moderate to high, but no CVE IDs or public exploits are disclosed. Red Hat recommends applying the patch via the standard update channels to mitigate the identified vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95575",
-    "publishedAt": "2026-11-05T15:15:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-qt5-qtbase-security-update",
-      "article-e089b1ff",
-      "e089b1ff",
-      "red-hat-releases-qt5-qtbase-security-update-37d841"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95574-important-qt5-qtbase-security-upda-c31c5cb8",
-    "title": "RHSA-2026:95574: Important: qt5-qtbase security update",
-    "summary": "An update for qt5-qtbase is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95574",
-    "publishedAt": "2026-11-05T15:05:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95574-important-qt5-qtbase-security-upda",
-      "article-c31c5cb8",
-      "c31c5cb8",
-      "rhsa-2026-95574-important-qt5-qtbase-security-upda-37d841",
-      "rhsa-2026-95574-important-qt5-qtbase-security-update"
-    ]
-  },
-  {
-    "slug": "cyberhaven-unveils-agentic-data-security-for-ai-go-f9027bf3",
-    "title": "Cyberhaven Unveils Agentic Data Security for AI Governance",
-    "summary": "Cyberhaven launched Agentic Data Security (ADS) to give CISOs and AI governance teams visibility into AI agents’ data interactions. ADS records data usage, identifies the acting entity, tracks destinations, and blocks sensitive data exfiltration before it leaves. The solution integrates with existing security stacks; no firmware updates are needed, but organizations should assess ADS for AI‑driven workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/cyberhaven-agentic-data-security/",
-    "publishedAt": "2026-11-05T15:04:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cyberhaven-unveils-agentic-data-security-for-ai-go",
-      "article-f9027bf3",
-      "f9027bf3",
-      "cyberhaven-unveils-agentic-data-security-for-ai-go-4198fa",
-      "cyberhaven-unveils-agentic-data-security-for-ai-governance"
-    ]
-  },
-  {
-    "slug": "github-blocks-pull-request-target-workflows-by-def-1be554cc",
-    "title": "GitHub Blocks pull_request_target Workflows by Default",
-    "summary": "GitHub will block pull_request_target workflows by default on December 2, tightening Actions security. The change removes privileged execution triggered by pull requests, reducing malicious code injection risk in CI pipelines. Maintainers must adjust workflows to use pull_request or push events, request an exception via GitHub support, and verify least privilege properly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/github-to-block-pull-request-target",
-    "publishedAt": "2026-11-05T15:01:39.110Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-blocks-pull-request-target-workflows-by-def",
-      "article-1be554cc",
-      "1be554cc",
-      "github-blocks-pull-request-target-workflows-by-def-10129e",
-      "github-blocks-pull-request-target-workflows-by-default"
-    ]
-  },
-  {
-    "slug": "service-desk-identity-gap-exploited-for-mfa-bypass-31313919",
-    "title": "Service Desk Identity Gap Exploited for MFA Bypass",
-    "summary": "Attackers target IT service desks to bypass MFA by impersonating staff and persuading employees to reset passwords or register authentication devices. Specops Software warns that traditional identity verification is insufficient, enabling social engineering at the desk to grant attackers credential control without MFA. Defenders should enforce MFA for service desk actions, limit password reset permissions, and monitor anomalous authentication requests.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/",
-    "publishedAt": "2026-11-05T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "service-desk-identity-gap-exploited-for-mfa-bypass",
-      "article-31313919",
-      "31313919",
-      "service-desk-identity-gap-exploited-for-mfa-bypass-15852e"
-    ]
-  },
-  {
-    "slug": "defense-drill-interventions-pair-edr-and-sat-train-46c7ca33",
-    "title": "Defense Drill Interventions Pair EDR and SAT Training",
-    "summary": "Defense Drill Interventions pair Managed EDR with just-in-time SAT training so users learn immediately when they fall for ClickFix phishing campaigns. This is a vendor product feature announcement describing an educational intervention model combining endpoint detection and response with simulated attack training. The initiative targets user awareness reinforcement rather than reporting a specific breach or vulnerability.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/defense-drill-interventions",
-    "publishedAt": "2026-11-05T15:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "defense-drill-interventions-pair-edr-and-sat-train",
-      "article-46c7ca33",
-      "46c7ca33",
-      "defense-drill-interventions-pair-edr-and-sat-train-55de92",
-      "defense-drill-interventions-pair-edr-and-sat-training"
-    ]
-  },
-  {
-    "slug": "sogou-input-method-used-to-install-darkvigil-backd-03ba4110",
-    "title": "Sogou Input Method used to install DarkVigil backdoor",
-    "summary": "A hacking group, SlippyNunchucks, has weaponized the Sogou Input Method keyboard software to install the DarkVigil backdoor on Windows machines. The campaign, since July 1, 2026, targets users across Hong Kong, Thailand, Japan, Vietnam, and Sri Lanka, enabling espionage and data exfiltration. Security teams should block Sogou Input Method distribution, remove DarkVigil binaries, and monitor for movement or credential theft.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/chinese-keyboard-software/",
-    "publishedAt": "2026-11-05T14:59:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sogou-input-method-used-to-install-darkvigil-backd",
-      "article-03ba4110",
-      "03ba4110",
-      "sogou-input-method-used-to-install-darkvigil-backd-56ecc1",
-      "sogou-input-method-used-to-install-darkvigil-backdoor"
-    ]
-  },
-  {
-    "slug": "openssh-vulnerability-allows-bypass-of-alpine-linu-94d225a8",
-    "title": "OpenSSH Vulnerability Allows Bypass of Alpine Linux Password Authentication",
-    "summary": "An OpenSSH vulnerability (CVE‑2026‑116606) exposed Alpine Linux servers to unauthorized logins by bypassing password authentication. The flaw permits attackers to use oversized passwords to gain key‑only account access, enabling privilege escalation or arbitrary command execution. OpenSSH released Portable 10.6p2 on November 5, 2026; administrators should upgrade immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openssh-flaw-bypass-password-authentication/",
-    "publishedAt": "2026-11-05T14:58:40.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/"
-      }
-    ],
-    "aliases": [
-      "openssh-vulnerability-allows-bypass-of-alpine-linu",
-      "article-94d225a8",
-      "94d225a8",
-      "openssh-vulnerability-allows-bypass-of-alpine-linu-38b84f",
-      "openssh-vulnerability-allows-bypass-of-alpine-linux-password"
-    ]
-  },
-  {
-    "slug": "rubrik-introduces-immutable-nas-backup-vaults-af58dea6",
-    "title": "Rubrik Introduces Immutable NAS Backup Vaults",
-    "summary": "Rubrik announced Rubrik‑Hosted Protection for On‑Premise Unstructured Data, enabling customers to back up NAS data to isolated, immutable vaults. The solution leverages Rubrik’s NAS Cloud Direct service, providing clean recovery without requiring customers to purchase, build, or manage backup storage. Rubrik recommends integrating the hosted protection into existing backup workflows and monitoring for successful replication to ensure data resilience.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/rubrik-unstructured-data-protection/",
-    "publishedAt": "2026-11-05T14:48:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rubrik-introduces-immutable-nas-backup-vaults",
-      "article-af58dea6",
-      "af58dea6",
-      "rubrik-introduces-immutable-nas-backup-vaults-76714a"
-    ]
-  },
-  {
-    "slug": "ca-certificates-jks-integration-bug-fixed-in-updat-f1994b83",
-    "title": "ca-certificates JKS Integration Bug Fixed in Update",
-    "summary": "A bug was discovered where the ca-certificates JKS integration failed to properly remove CA certificates from the system bundle when they were removed from the JKS keystore. The update corrects the integration logic and resyncs the keystore with the current system CA certificates list. This is a routine scheduled security patch addressing a local configuration defect without active exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9001-1",
-    "publishedAt": "2026-11-05T14:46:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ca-certificates-jks-integration-bug-fixed-in-updat",
-      "article-f1994b83",
-      "f1994b83",
-      "ca-certificates-jks-integration-bug-fixed-in-updat-7e89b7",
-      "ca-certificates-jks-integration-bug-fixed-in-update"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-flatpak-security-update-266788d2",
-    "title": "Red Hat Releases Flatpak Security Update",
-    "summary": "Red Hat released a security update for flatpak on Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On, addressing several vulnerabilities. The update is rated Important, and each vulnerability’s CVSS base score is provided via CVE links in the references. Users should install the latest flatpak package to protect against the disclosed weaknesses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95493",
-    "publishedAt": "2026-11-05T14:45:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-flatpak-security-update",
-      "article-266788d2",
-      "266788d2",
-      "red-hat-releases-flatpak-security-update-37d845"
-    ]
-  },
-  {
-    "slug": "threatsday-apache-ofbiz-rce-dreamhost-breach-defi-69a319bc",
-    "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-    "summary": "How much damage can someone do without breaking much? A stolen login can open doors across several systems. And while new tools are helping find security holes faster, some important systems are still taking months, sometimes over a year, to get patched.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
-    "publishedAt": "2026-11-05T14:41:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threatsday-apache-ofbiz-rce-dreamhost-breach-defi",
-      "article-69a319bc",
-      "69a319bc",
-      "threatsday-apache-ofbiz-rce-dreamhost-breach-defi-71c50c",
-      "threatsday-apache-ofbiz-rce-dreamhost-breach-defi-site-hijac"
-    ]
-  },
-  {
-    "slug": "ubuntu-patches-multiple-nginx-vulnerabilities-586a9b88",
-    "title": "Ubuntu patches multiple nginx vulnerabilities",
-    "summary": "Ubuntu released USN-8955-2 to address two nginx vulnerabilities, CVE-2026-42533 and CVE-2026-15176, affecting releases from 14.04 to 26.10. The flaws stem from improper handling of map directives and alias rewrite rules, allowing attackers to crash nginx or potentially execute arbitrary code. Users should apply the update immediately to prevent denial-of-service incidents or code execution exploits.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8955-2",
-    "publishedAt": "2026-11-05T14:40:26.000Z",
-    "cves": [
-      "CVE-2026-42533",
-      "CVE-2026-15176"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-patches-multiple-nginx-vulnerabilities",
-      "article-586a9b88",
-      "586a9b88",
-      "ubuntu-patches-multiple-nginx-vulnerabilities-7fbd68"
-    ]
-  },
-  {
-    "slug": "vercel-introduces-device-bound-sessions-ai-review-dbab40b9",
-    "title": "Vercel Introduces Device‑Bound Sessions, AI Review Beta",
-    "summary": "Vercel rolls out Device Bound Session Credentials (DBSC) to tie login sessions to specific devices, rendering stolen session cookies ineffective. The feature limits infostealer impact by preventing session hijacking, while a public beta AI Security Review scans code for vulnerabilities. Security teams should enable DBSC and join the beta to leverage automated threat detection, following Vercel’s integration guidance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking/",
-    "publishedAt": "2026-11-05T14:37:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vercel-introduces-device-bound-sessions-ai-review",
-      "article-dbab40b9",
-      "dbab40b9",
-      "vercel-introduces-device-bound-sessions-ai-review-22edc5",
-      "vercel-introduces-device-bound-sessions-ai-review-beta"
-    ]
-  },
-  {
-    "slug": "arkose-labs-expands-agent-trust-manager-controls-b5226a46",
-    "title": "Arkose Labs Expands Agent Trust Manager Controls",
-    "summary": "Arkose Labs expanded its Agent Trust Manager to help businesses classify agentic traffic sessions and enforce allow, monitor, or block policies across customer journeys. The expansion addresses findings from its State of Agentic AI Trust Q3 report showing personal AI agents identify themselves less than 3% of the time. Organizations need enhanced controls to govern unrecognized agent traffic.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/arkose-agent-trust-manager/",
-    "publishedAt": "2026-11-05T14:33:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arkose-labs-expands-agent-trust-manager-controls",
-      "article-b5226a46",
-      "b5226a46",
-      "arkose-labs-expands-agent-trust-manager-controls-5ba9e5"
     ]
   }
 ];

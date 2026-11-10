@@ -2,6 +2,234 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-124194",
+    "slug": "cve-2026-124194",
+    "vendor": "Microsoft",
+    "product": "Office",
+    "name": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "2026-11-24",
+    "severity": "High",
+    "cwe": "CWE-356",
+    "ransomware": false,
+    "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-124194"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-111793",
+    "slug": "cve-2026-111793",
+    "vendor": "Openwave Messaging Limited",
+    "product": "Webtop Media Transcoder",
+    "name": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "2026-11-24",
+    "severity": "High",
+    "cwe": "CWE-669",
+    "ransomware": false,
+    "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-111793"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-20320",
+    "slug": "cve-2026-20320",
+    "vendor": "Cisco",
+    "product": "BroadWorks",
+    "name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "2026-11-24",
+    "severity": "High",
+    "cwe": "CWE-611",
+    "ransomware": false,
+    "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-20320"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-111560",
+    "slug": "cve-2026-111560",
+    "vendor": "Barracuda Networks",
+    "product": "Multiple Products",
+    "name": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "2026-11-13",
+    "severity": "High",
+    "cwe": "CWE-78",
+    "ransomware": false,
+    "description": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection vulnerability. This vulnerability could allow an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed. This vulnerability can be chained with CVE-2026-116606",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-111560"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-116606",
+    "slug": "cve-2026-116606",
+    "vendor": "Barracuda Networks",
+    "product": "Barracuda Email Security Gateway (ESG)",
+    "name": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "2026-11-13",
+    "severity": "High",
+    "cwe": "CWE-288",
+    "ransomware": false,
+    "description": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration. This vulnerability can be chained with CVE-2026-111560.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-116606"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-125350",
+    "slug": "cve-2026-125350",
+    "vendor": "Google",
+    "product": "Chromium",
+    "name": "Google Chromium Use-After-Free Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "2026-11-24",
+    "severity": "High",
+    "cwe": "CWE-416",
+    "ransomware": false,
+    "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-125350"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-126063",
+    "slug": "cve-2026-126063",
+    "vendor": "RubyGems",
+    "product": "nokogiri",
+    "name": "Nokogiri: Mutation XSS through `noscript` content in Nokogiri's HTML5 serializer",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "Nokogiri's HTML5 serializer did not escape text inside noscript elements, or < and > inside attribute values. When a document parsed with the default options is serialized, a browser with scripting enabled can parse the output into markup that Nokogiri's parser never produced.",
+    "requiredAction": "Upgrade nokogiri to version 1.19.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4p39-36wj-23h4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126063"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125118",
+    "slug": "cve-2026-125118",
+    "vendor": "npm",
+    "product": "mongoose",
+    "name": "Mongoose: Prototype pollution via Schema.prototype.virtual()",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-1321",
+    "ransomware": false,
+    "description": "Prototype pollution via Schema.prototype.virtual() — the 2022 fix for CVE-2022-2564 / CVE-2022-24304 protected Schema.path()/add() but never virtual(), so the same class of bug is still exploitable in all maintained release lines.",
+    "requiredAction": "Upgrade mongoose to version 6.13.12 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6972-9mcm-vhwj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125118"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125119",
+    "slug": "cve-2026-125119",
+    "vendor": "npm",
+    "product": "mongoose",
+    "name": "Mongoose: Connection-level sanitizeFilter not applied",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-943",
+    "ransomware": false,
+    "description": "sanitizeFilter exists to stop query selector injection: it wraps operator objects such as { $ne: null } in filter values in $eq, so they are matched literally. Set on a connection with mongoose.connect() or createConnection(uri, { sanitizeFilter: true }), the connection reports it as enabled but queries never apply it.",
+    "requiredAction": "Upgrade mongoose to version 6.13.12 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gg4r-jv3p-qx3c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125119"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-125120",
     "slug": "cve-2026-125120",
     "vendor": "npm",
@@ -1319,58 +1547,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87008"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-115770",
-    "slug": "cve-2026-115770",
-    "vendor": "Go",
-    "product": "pocket-id (backend) · pocket-id",
-    "name": "Pocket ID: Email verification token remains valid after address change, enabling arbitrary verified-email spoofing",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 9.6,
-    "severity": "Critical",
-    "cwe": "CWE-345",
-    "ransomware": false,
-    "description": "An authenticated Pocket ID user can request an email-verification token while their account uses an address they control, change the account email address, and then redeem the previously issued token. The token is bound only to the user ID, not to the address to which it was sent, and changing the address does not revoke outstanding tokens.",
-    "requiredAction": "Upgrade pocket-id (backend) · pocket-id to version 0.0.0-20260727180059-43aaccd5bfac or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-rm8c-2cv8-jwf6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115770"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-103022",
-    "slug": "cve-2026-103022",
-    "vendor": "Pip",
-    "product": "urwid",
-    "name": "Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS)",
-    "dateAdded": "2026-11-09",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-116",
-    "ransomware": false,
-    "description": "The handle_short_request() function in urwid/display/web.py raises an unhandled UnicodeEncodeError when processing a POST request body containing non-ASCII bytes. The function reads POST input and encodes it to ASCII before writing to a named pipe. Any byte value above 0x7F causes the CGI process to exit with an unhandled exception, returning an HTTP 500 error to the client.",
-    "requiredAction": "Upgrade urwid to version 4.0.7 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-cp25-j9x5-p5xm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103022"
       }
     ],
     "source": "GITHUB"

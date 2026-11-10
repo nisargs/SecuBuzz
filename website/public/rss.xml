@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 19:44:41 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 20:50:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Aurora ADTP Blocks Ransomware with AI in Real Time</title>
+      <link>https://secubuzz.com/news/aurora-adtp-blocks-ransomware-with-ai-in-real-time-6ec26d86</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aurora-adtp-blocks-ransomware-with-ai-in-real-time-6ec26d86</guid>
+      <description><![CDATA[Aurora Adaptive Threat Protection (ADTP) employs AI‑powered intent detection to identify ransomware and advanced threats before they reach endpoints. The system analyzes traffic patterns and user behavior, flagging malicious payloads and command‑and‑control communications with high accuracy. Security teams should integrate ADTP into existing SIEM pipelines and enable real‑time alerting to maintain continuous protection.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:43:57 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-disrupts-attacks-in-real-time/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Low‑Impact DHCP Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-low-impact-dhcp-security-update-70f3c8f2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-low-impact-dhcp-security-update-70f3c8f2</guid>
+      <description><![CDATA[Red Hat Enterprise Linux 9 receives a DHCP security update addressing multiple bugs and enhancements. The advisory rates the update as Low impact, with CVSS scores linked to individual CVE references for detailed severity. Administrators should apply the latest dhcp package via yum or dnf to ensure patched configurations and mitigate potential exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:32:58 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97486">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CVE-2026-124848: Kiro CLI Default Permissions Expose Sessions</title>
+      <link>https://secubuzz.com/news/cve-2026-124848-kiro-cli-default-permissions-expos-dd708a3c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-124848-kiro-cli-default-permissions-expos-dd708a3c</guid>
+      <description><![CDATA[CVE-2026-124848 reveals that Kiro CLI versions before 2.27.0 create session transcript files with world‑readable permissions on macOS and Linux. The flaw allows any local user to read credentials, source code, and other sensitive data stored in the prompt history, potentially enabling credential theft. Users should upgrade to Kiro CLI 2.27.0 or later, or manually change file permissions to restrict access.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:05:36 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-178-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Update for Enterprise Linux 9</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-enterprise-linu-499e671e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-enterprise-linu-499e671e</guid>
+      <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 9 addressing multiple security issues. Product Security rated the update as Important, and CVSS base scores are provided for each CVE linked in the references. Security teams should apply the patch promptly to mitigate the identified kernel vulnerabilities, maintain system integrity, and ensure compliance with security policies.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:05:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97435">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:97539: Important: cockpit-machines security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-97539-important-cockpit-machines-securit-71aae787</link>
@@ -89,12 +125,39 @@
       <category>General</category>
     </item>
     <item>
+      <title>Microsoft Patch Tuesday Fixes 1,093 Vulnerabilities, Outlook Zero-Day</title>
+      <link>https://secubuzz.com/news/microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-1982f712</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-1982f712</guid>
+      <description><![CDATA[Microsoft released its November 2026 Patch Tuesday updates, fixing 1,093 vulnerabilities across Windows, Office, SQL Server, SharePoint, Exchange Server, Azure services, and developer tools. The update includes CVE-2026-113971, an actively exploited Outlook zero‑day that leaks users’ NTLMv2 authentication hashes to attackers. Security teams must apply the patch immediately to eliminate the credential theft vector and protect enterprise authentication infrastructure.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:01:53 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/microsoft-november-2026-patch-tuesday/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent</title>
       <link>https://secubuzz.com/news/cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4</guid>
       <description><![CDATA[Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an authenticated remote user with permission to submit jobs to a queue to execute arbitrary code as the worker agent OS user and obtain the AWS credentials held by the worker agent via a crafted job that modifies the PATH environment variable.]]></description>
       <pubDate>Tue, 10 Nov 2026 18:53:11 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-177-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>AI Coding Agents Leak Thousands of Secrets to GitHub</title>
+      <link>https://secubuzz.com/news/ai-coding-agents-leak-thousands-of-secrets-to-gith-98f23060</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-coding-agents-leak-thousands-of-secrets-to-gith-98f23060</guid>
+      <description><![CDATA[A command in Claude Code inadvertently saves files containing credentials and sensitive data to public Git repositories, creating security exposure for organizations. The leaked secrets include API keys, tokens, and authentication credentials that were committed to public repositories without authorization. Organizations must audit their AI coding agent configurations and implement pre-commit hooks to prevent credential leakage.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:46:22 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github">Dark Reading</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>GStreamer Good Plugins Vulnerabilities Allow Remote Code Execution</title>
+      <link>https://secubuzz.com/news/gstreamer-good-plugins-vulnerabilities-allow-remot-7309a69b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gstreamer-good-plugins-vulnerabilities-allow-remot-7309a69b</guid>
+      <description><![CDATA[Ubuntu 16.04, 18.04, and 20.04 are affected by GStreamer Good Plugins flaws (CVE-2026-3083, CVE-2026-3085, CVE-2026-39043) that mishandle network streams, Matroska, and WAV files. The vulnerabilities enable remote attackers to trigger crashes or potentially execute arbitrary code, posing a significant risk to affected systems. Apply Ubuntu security updates or upgrade GStreamer to a patched version to mitigate exploitation risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:38:56 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9038-1">Ubuntu Security Notices</source>
       <category>CVE</category>
     </item>
     <item>
@@ -125,6 +188,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>BYOD Ransomware Allegedly Claims Toyota Data Breach</title>
+      <link>https://secubuzz.com/news/byod-ransomware-allegedly-claims-toyota-data-breac-75240c97</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/byod-ransomware-allegedly-claims-toyota-data-breac-75240c97</guid>
+      <description><![CDATA[The BYOD ransomware group claims it obtained personal information and kiosk device access from Toyota, though the claim remains unverified. No evidence confirms Toyota systems were breached or files were encrypted. Security teams should monitor threat actor claims and validate any reported data exposure through independent forensic analysis.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:14:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/toyota-data-breach-claim/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Xen Orchestra Auth Bypass Exploited for Admin Access</title>
       <link>https://secubuzz.com/news/xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021</link>
       <guid isPermaLink="true">https://secubuzz.com/news/xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021</guid>
@@ -141,6 +213,15 @@
       <pubDate>Tue, 10 Nov 2026 18:11:54 GMT</pubDate>
       <source url="https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/">SecurityWeek</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Firefox Free VPN Drops 50GB Launch Cap Until January 31</title>
+      <link>https://secubuzz.com/news/firefox-free-vpn-drops-50gb-launch-cap-until-janua-7bb5b801</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/firefox-free-vpn-drops-50gb-launch-cap-until-janua-7bb5b801</guid>
+      <description><![CDATA[Mozilla removed the data cap on the built-in Firefox free VPN, extending unlimited desktop and Android usage for users with a Mozilla account. The VPN protects traffic only inside Firefox and does not affect other applications on the device. Users benefit from unrestricted browsing without additional subscription costs beyond the existing Mozilla account requirement.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:05:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/firefox-free-vpn-data/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Git Addresses Six Security Vulnerabilities in Updates</title>
@@ -168,6 +249,15 @@
       <pubDate>Tue, 10 Nov 2026 17:54:38 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97521">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>China-Nexus Espionage Campaigns Linked via Sparrow Malware</title>
+      <link>https://secubuzz.com/news/china-nexus-espionage-campaigns-linked-via-sparrow-823b4648</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-nexus-espionage-campaigns-linked-via-sparrow-823b4648</guid>
+      <description><![CDATA[Three distinct threat clusters sharing infrastructure and malware code similarities have targeted telecommunications providers, government entities, military organizations, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check Point Research tracks these clusters under names SilentDelivery and related designations.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:43:23 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html">The Hacker News</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>RHSA-2026:97456: Moderate: krb5 security update</title>
@@ -260,6 +350,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Fireworks Reports Data Theft During October Breaches</title>
+      <link>https://secubuzz.com/news/fireworks-reports-data-theft-during-october-breach-2d599cd7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-reports-data-theft-during-october-breach-2d599cd7</guid>
+      <description><![CDATA[AI company Fireworks disclosed that hackers stole data and billing information during October incidents affecting a limited number of customer accounts. All affected customers were notified of the attack. The company should conduct forensic investigation to determine scope and implement enhanced access monitoring for sensitive billing records.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:08:00 GMT</pubDate>
+      <source url="https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>RHSA-2026:97533: Important: podman security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6</guid>
@@ -284,6 +383,15 @@
       <description><![CDATA[Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems.]]></description>
       <pubDate>Tue, 10 Nov 2026 16:00:55 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Acknowledges Windows Kernel Privilege Escalation</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-windows-kernel-privilege-es-b04c91c2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-windows-kernel-privilege-es-b04c91c2</guid>
+      <description><![CDATA[Microsoft acknowledges CVE-2026-69898, a critical Windows kernel privilege escalation vulnerability that could allow local users to gain elevated privileges. The update is purely informational, with no evidence of active exploitation, public proof‑of‑concept, or a released patch. No remediation guidance is provided, and security teams should monitor Microsoft advisories for future updates.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69898">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
     <item>
@@ -348,114 +456,6 @@
       <pubDate>Tue, 10 Nov 2026 15:58:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97344">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>One Identity Releases Identity Manager 10.0 LTS</title>
-      <link>https://secubuzz.com/news/one-identity-releases-identity-manager-10-0-lts-2dce62bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/one-identity-releases-identity-manager-10-0-lts-2dce62bf</guid>
-      <description><![CDATA[One Identity has released Identity Manager 10.0 LTS, a major platform update introducing browser-based administration, AI-assisted insights, and streamlined automation for identity governance workflows. The update modernizes the user experience with a redesigned web interface and intelligent operational assistance. Organizations should evaluate migration readiness and validate compatibility with existing integration modules before deployment.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:49:23 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/one-identity-unveils-identity-manager-10-0-lts-with-ai-and-modern-ux/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97238: Important: cockpit-machines security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97238-important-cockpit-machines-securit-89841513</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97238-important-cockpit-machines-securit-89841513</guid>
-      <description><![CDATA[An update for cockpit-machines is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:38:14 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97238">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ivanti Releases Monthly Security Update</title>
-      <link>https://secubuzz.com/news/ivanti-releases-monthly-security-update-7d8ceb82</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-releases-monthly-security-update-7d8ceb82</guid>
-      <description><![CDATA[Ivanti publishes monthly security patches on the second Tuesday, applying fixes discovered through AI‑driven vulnerability analysis. The update cycle incorporates advanced LLMs to detect issues missed by traditional tools, emphasizing proactive vulnerability management. Security teams should apply the latest Ivanti patches promptly and review release notes for newly identified vulnerabilities.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:33:07 GMT</pubDate>
-      <source url="https://www.ivanti.com/blog/november-2026-security-update">Ivanti Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases BIND Security Update for RHEL9</title>
-      <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-for-rhel9-ac091820</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-bind-security-update-for-rhel9-ac091820</guid>
-      <description><![CDATA[An update for BIND on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities are linked to CVE references and carry moderate severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:29:24 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97586">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97299: Moderate: pcp security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97299-moderate-pcp-security-bug-fix-and-b74c76f7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97299-moderate-pcp-security-bug-fix-and-b74c76f7</guid>
-      <description><![CDATA[An update for pcp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:25:29 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97299">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Containernetworking‑Plugins Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-containernetworking-plugins-securit-aa093ca2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-containernetworking-plugins-securit-aa093ca2</guid>
-      <description><![CDATA[An update for containernetworking‑plugins on Red Hat Enterprise Linux 9 addresses several security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities carry important severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:23:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97644">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97284: Important: git-lfs security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97284-important-git-lfs-security-update-090e4bb8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97284-important-git-lfs-security-update-090e4bb8</guid>
-      <description><![CDATA[An update for git-lfs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:20:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97284">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97561: Important: crun security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97561-important-crun-security-bug-fix-an-81ee0c21</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97561-important-crun-security-bug-fix-an-81ee0c21</guid>
-      <description><![CDATA[An update for crun is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:17:57 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97561">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ransomware Recovery Becomes Client Retention Metric</title>
-      <link>https://secubuzz.com/news/ransomware-recovery-becomes-client-retention-metri-3e699a1c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-recovery-becomes-client-retention-metri-3e699a1c</guid>
-      <description><![CDATA[Kaseya finds that ransomware recovery delays, poor communication, and unexpected costs erode MSP client trust, making recovery performance a retention metric. Disconnected recovery tools create these problems, while integrated workflows improve response times, transparency, and client satisfaction. MSPs should adopt unified recovery solutions to reduce delays, enhance communication, and maintain client loyalty during ransomware incidents.]]></description>
-      <pubDate>Tue, 10 Nov 2026 15:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SAP Releases Patches for Critical ICM2SHELL, ProxyGate Bugs</title>
-      <link>https://secubuzz.com/news/sap-releases-patches-for-critical-icm2shell-proxyg-09424f5e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sap-releases-patches-for-critical-icm2shell-proxyg-09424f5e</guid>
-      <description><![CDATA[SAP has issued 42 new and updated security advisories, including nine that address critical‑severity vulnerabilities in its ICM2SHELL and ProxyGate components. The critical flaws involve improper handling of input data, potentially enabling remote code execution, but no active exploitation has been reported. SAP recommends applying the released patches immediately to mitigate the identified risks and prevent potential exploitation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 14:46:28 GMT</pubDate>
-      <source url="https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI reverse engineering let researchers add a new feature to Slack</title>
-      <link>https://secubuzz.com/news/ai-reverse-engineering-let-researchers-add-a-new-f-4d48b7e9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-reverse-engineering-let-researchers-add-a-new-f-4d48b7e9</guid>
-      <description><![CDATA[Intezer researchers used AI agents to rebuild source code for Slack, Apple’s Finder and a TinyTurla-NG sample, from a backdoor family Cisco Talos attributes to the Turla group. The rebuilt Slack ran well enough that the team added a new feature to it: AI text autocomplete, powered by a small local model.]]></description>
-      <pubDate>Tue, 10 Nov 2026 14:45:18 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/slack-ai-reverse-engineering/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>North Korea Targets Drone Tech and Software Supply Chains</title>
-      <link>https://secubuzz.com/news/north-korea-targets-drone-tech-and-software-supply-93ca9b9c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-targets-drone-tech-and-software-supply-93ca9b9c</guid>
-      <description><![CDATA[North Korean actors Lazarus and DeceptiveDevelopment resumed cyberespionage against drone technology and software supply chains between April and September 2026. They used stolen developer credentials to inject malicious code into open‑source projects and targeted European defense entities, widening the threat surface. Defenders should monitor supply‑chain integrity, enforce strict credential hygiene, and apply security patches to exposed development environments.]]></description>
-      <pubDate>Tue, 10 Nov 2026 14:09:27 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/north-korean-hackers-3/">Cyber Security News</source>
-      <category>Nation State</category>
     </item>
   </channel>
 </rss>
