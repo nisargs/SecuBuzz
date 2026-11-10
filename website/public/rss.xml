@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 10:07:54 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 10:48:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>France Attributes Supermarket Refrigeration Sabotage to Iranian Hackers</title>
+      <link>https://secubuzz.com/news/france-attributes-supermarket-refrigeration-sabota-99bf71bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/france-attributes-supermarket-refrigeration-sabota-99bf71bc</guid>
+      <description><![CDATA[France attributed a disruptive cyberattack on 700 supermarket refrigeration systems to Iran's Islamic Revolutionary Guard Corps. Attackers remotely manipulated defrost controls during October 11–12, causing widespread food spoilage and approximately 20 fires, per the Paris prosecutor. Foreign Minister Jean-Noël Barrot confirmed the attribution; affected organizations should audit industrial control system access and implement network segmentation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 10:23:06 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/iranian-hackers-supermarket-cyberattacks/">Cyber Security News</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Attackers Exploit Barracuda ESG Flaws for Root Access</title>
+      <link>https://secubuzz.com/news/attackers-exploit-barracuda-esg-flaws-for-root-acc-25ab3004</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-barracuda-esg-flaws-for-root-acc-25ab3004</guid>
+      <description><![CDATA[Attackers are actively exploiting two critical Barracuda Email Security Gateway vulnerabilities to achieve root-level command execution. The flaws, recently patched by Barracuda, allow unauthenticated remote code execution on the appliance, granting full system compromise. Barracuda urges immediate application of security updates and verification of appliance integrity to prevent persistent unauthorized access.]]></description>
+      <pubDate>Tue, 10 Nov 2026 10:10:20 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Anthropic Releases Claude Mythos 5.2 AI for Vulnerability Detection</title>
+      <link>https://secubuzz.com/news/anthropic-releases-claude-mythos-5-2-ai-for-vulner-649ae7e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-claude-mythos-5-2-ai-for-vulner-649ae7e7</guid>
+      <description><![CDATA[Anthropic released Claude Mythos 5.2, an AI model aimed at cybersecurity engineering, on November 9. The model achieved a 76.3% score on CyScenarioBench, indicating strong capability to identify zero‑day flaws. Access remains restricted to prevent misuse, and security teams can use it to locate, reproduce, and remediate vulnerabilities before exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 10:03:25 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-mythos-5-2-released/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SAP Fixes Four 10.0 RCE Flaws, Including NetWeaver</title>
+      <link>https://secubuzz.com/news/sap-fixes-four-10-0-rce-flaws-including-netweaver-102407d0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-fixes-four-10-0-rce-flaws-including-netweaver-102407d0</guid>
+      <description><![CDATA[SAP released a patch for four critical flaws, all rated CVSS 10.0, on its monthly Security Patch Day. The vulnerabilities, including CVE-2026-83844, allow unauthenticated remote code execution on SAP NetWeaver application servers and the Web Dispatcher. SAP has issued patches for all affected components; security teams should apply them immediately to prevent exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 10:02:40 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Turla’s Cereal malware turns victims’ Exchange servers into spy hubs</title>
+      <link>https://secubuzz.com/news/turla-s-cereal-malware-turns-victims-exchange-serv-1c0ecfed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/turla-s-cereal-malware-turns-victims-exchange-serv-1c0ecfed</guid>
+      <description><![CDATA[Russia-aligned group Turla planted a modular .NET toolset on Microsoft Exchange servers at two government organizations, one in Kazakhstan and one in Romania, and used it to copy selected email straight out of the mail flow. ESET researchers found the malware and named it Cereal. Operators send commands to the victim’s internet-facing Exchange server, dressed up as ordinary Outlook Web Access, Autodiscover, and ActiveSync traffic.]]></description>
+      <pubDate>Tue, 10 Nov 2026 10:00:39 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>N-able Disables N-central Over 30 Zero-Day Flaws</title>
       <link>https://secubuzz.com/news/n-able-disables-n-central-over-30-zero-day-flaws-74835697</link>
@@ -26,6 +71,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Linux Kernel Receives Patch for Multiple Vulnerabilities</title>
+      <link>https://secubuzz.com/news/linux-kernel-receives-patch-for-multiple-vulnerabi-9e70e8b0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-receives-patch-for-multiple-vulnerabi-9e70e8b0</guid>
+      <description><![CDATA[The Linux kernel was updated to address several security issues across multiple subsystems, including USB gadget drivers, memory management, and networking core. An attacker could potentially exploit these flaws to compromise system integrity, though no active exploitation has been reported. Kernel maintainers recommend applying the USN-9022-1 update immediately to mitigate the identified vulnerabilities.]]></description>
+      <pubDate>Tue, 10 Nov 2026 09:09:50 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9022-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Iranian Unit Sabotages 700 French Retail Refrigerators</title>
       <link>https://secubuzz.com/news/iranian-unit-sabotages-700-french-retail-refrigera-080a646c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/iranian-unit-sabotages-700-french-retail-refrigera-080a646c</guid>
@@ -35,6 +89,33 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>AMD RMP Flaw Allows Local Hypervisor Exploit</title>
+      <link>https://secubuzz.com/news/amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66</guid>
+      <description><![CDATA[A flaw in AMD processors' Reverse Map Table checks was discovered, potentially enabling local hypervisor attackers to trigger an out‑of‑bounds condition. The vulnerability, identified as CVE-2023-20585, could compromise the integrity of SEV‑SNP guest memory if exploited. Kernel maintainers advise applying the USN-9024-1 update to patch affected subsystems and mitigate the risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:47:04 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9024-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ubuntu Addresses Multiple Linux Kernel Vulnerabilities in USN-9025-1</title>
+      <link>https://secubuzz.com/news/ubuntu-addresses-multiple-linux-kernel-vulnerabili-1cac7a6d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-addresses-multiple-linux-kernel-vulnerabili-1cac7a6d</guid>
+      <description><![CDATA[Ubuntu released kernel updates addressing CVE-2023-20585 and multiple Linux kernel vulnerabilities. The AMD flaw allows hypervisor-privileged attackers to corrupt SEV-SNP guest memory via improper RMP checks; other issues affect USB gadget, memory management, NVDIMM, networking, and architecture subsystems. Updated kernel packages are available; immediate deployment is recommended to prevent system compromise.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:47:02 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9025-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ubuntu Addresses Multiple Kernel Vulnerabilities</title>
+      <link>https://secubuzz.com/news/ubuntu-addresses-multiple-kernel-vulnerabilities-3840f8cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-addresses-multiple-kernel-vulnerabilities-3840f8cd</guid>
+      <description><![CDATA[Ubuntu released USN-9023-1, patching multiple Linux kernel vulnerabilities that could let attackers compromise systems. Flaws touch USB gadget drivers, memory management, networking core, ARM/x86 architectures, and device drivers, with no confirmed exploitation but potential for privilege escalation or denial of service. All affected subsystems are fixed; admins should apply the latest kernel or backport the patches.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:46:07 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9023-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Ubuntu Releases Kernel Patch for Multiple Vulnerabilities</title>
       <link>https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b</guid>
@@ -42,6 +123,15 @@
       <pubDate>Tue, 10 Nov 2026 08:42:59 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9018-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Progress WS_FTP Server Addresses Seven Credential Theft Flaws</title>
+      <link>https://secubuzz.com/news/progress-ws-ftp-server-addresses-seven-credential-cf7e693a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/progress-ws-ftp-server-addresses-seven-credential-cf7e693a</guid>
+      <description><![CDATA[Progress Software released a pack for WS_FTP Server 2025.0.5 to fix seven flaws enabling credential theft, path traversal, and file transfer disruption. The flaws, catalogued as CVE-2026-124033, allow unauthenticated remote code execution and local file access, compromising credentials and exposing restricted files. Upgrade to WS_FTP Server 2025.0.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:42:39 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/progress-ws_ftp-server-fixes-security-vulnerabilities/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Apple Releases iOS 27.2.1 Patch for Nine Flaws</title>
@@ -60,6 +150,15 @@
       <pubDate>Tue, 10 Nov 2026 08:34:20 GMT</pubDate>
       <source url="https://cybersecuritynews.com/sega-confirms-data-breach/">Cyber Security News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Nine Leading CRQ Tools Ranked for 2026</title>
+      <link>https://secubuzz.com/news/nine-leading-crq-tools-ranked-for-2026-673ee821</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nine-leading-crq-tools-ranked-for-2026-673ee821</guid>
+      <description><![CDATA[The article ranks nine cyber risk quantification tools for 2026, evaluating how they convert security severity metrics into budget‑friendly dollar estimates. It separates FAIR‑methodology descendants, telemetry‑based engines using live estate data, and ratings‑lineage platforms monetizing scoring graphs, noting a duplicate BitSight entry. Security teams can use the list to choose tools matching risk‑budget translation needs and benchmark industry performance.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:31:05 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-crq-tools/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>North Korean Hackers Launder Binance Theft with Meme Coins</title>
@@ -356,105 +455,6 @@
       <description><![CDATA[Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees.]]></description>
       <pubDate>Mon, 09 Nov 2026 20:17:31 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Arctic Wolf and AWS Launch Joint Incident‑Response Platform for Cloud‑Native Environments</title>
-      <link>https://secubuzz.com/news/arctic-wolf-and-aws-launch-joint-incident-response-0c4c03dd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-and-aws-launch-joint-incident-response-0c4c03dd</guid>
-      <description><![CDATA[Arctic Wolf and AWS unveiled a joint incident‑response platform targeting cloud‑native environments. The solution merges Arctic Wolf’s managed detection and response with AWS security services to accelerate threat containment and automate recovery workflows. Organizations are encouraged to adopt the platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.]]></description>
-      <pubDate>Mon, 09 Nov 2026 19:02:47 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>France Accuses Iran of Cyberattack on Supermarket Refrigerators</title>
-      <link>https://secubuzz.com/news/france-accuses-iran-of-cyberattack-on-supermarket-9c760c5c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/france-accuses-iran-of-cyberattack-on-supermarket-9c760c5c</guid>
-      <description><![CDATA[France accused Iran of a cyberattack that targeted supermarket refrigeration systems, causing them to overheat and risk food spoilage. Attackers exploited a remote code execution flaw in the IoT firmware, enabling manipulation of temperature controls and triggering heating elements. French authorities summoned the Iranian ambassador, urged manufacturers to apply patches, and are pursuing European sanctions against the perpetrators.]]></description>
-      <pubDate>Mon, 09 Nov 2026 18:32:42 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/">BleepingComputer</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Vanderbilt Warns of Cyberattack Impacting Campus Devices</title>
-      <link>https://secubuzz.com/news/vanderbilt-warns-of-cyberattack-impacting-campus-d-8d4b82c6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vanderbilt-warns-of-cyberattack-impacting-campus-d-8d4b82c6</guid>
-      <description><![CDATA[Vanderbilt University reported a cyberattack that may have impacted campus devices and systems. The attack's specifics remain undisclosed, but the university cautions that compromised credentials or malware could have accessed network resources. Security teams are advised to monitor for anomalous activity, enforce multi-factor authentication, and apply pending vendor patches promptly.]]></description>
-      <pubDate>Mon, 09 Nov 2026 18:30:00 GMT</pubDate>
-      <source url="https://therecord.media/vanderbilt-cyberattack-ransomware-alert">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Attackers Seek SAP Netweaver Webshells</title>
-      <link>https://secubuzz.com/news/attackers-seek-sap-netweaver-webshells-ec730fe7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-seek-sap-netweaver-webshells-ec730fe7</guid>
-      <description><![CDATA[Attackers are scanning for SAP Netweaver webshells on exposed servers, targeting the application for exploitation. The flaw permits remote code execution via unauthorized shell files, but no public PoC or CVE is disclosed, limiting immediate risk. Teams should monitor logs for shell activity, apply vendor patches, and enforce strict access controls to mitigate compromise.]]></description>
-      <pubDate>Mon, 09 Nov 2026 18:18:15 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33502">SANS Internet Storm Center</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Claude Tool Vulnerability Enables Linux RCE</title>
-      <link>https://secubuzz.com/news/claude-tool-vulnerability-enables-linux-rce-3e1e0341</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/claude-tool-vulnerability-enables-linux-rce-3e1e0341</guid>
-      <description><![CDATA[Attackers leveraged a flaw in Anthropic’s Claude document-processing tool to execute malicious code on Linux systems. The vulnerability allows creation of a temporary file that AI assistant can access, enabling remote code execution with privilege escalation. Anthropic has released a patch for the affected component, and users should update to the latest version or disable the document-processing feature until remediation.]]></description>
-      <pubDate>Mon, 09 Nov 2026 18:08:30 GMT</pubDate>
-      <source url="https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>OpenJDK 21 Faces Multiple Authentication Flaws</title>
-      <link>https://secubuzz.com/news/openjdk-21-faces-multiple-authentication-flaws-06ebae8e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openjdk-21-faces-multiple-authentication-flaws-06ebae8e</guid>
-      <description><![CDATA[Ubuntu Security Notices report four OpenJDK 21 components—Security, JSSE, Compiler, and JAAS—failing to authenticate or authorize users, exposing CVE‑2026‑83374, CVE‑2026‑83376, CVE‑2026‑83378, and CVE‑2026‑83380. The flaws allow unauthenticated remote attackers to read or modify sensitive data, potentially compromising application integrity and confidentiality. Users should upgrade to the patched OpenJDK 21 release and apply the vendor’s recommended mitigations to enforce proper authentication.]]></description>
-      <pubDate>Mon, 09 Nov 2026 18:01:03 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9015-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Apple Releases iOS 27.2.1 Security Update</title>
-      <link>https://secubuzz.com/news/apple-releases-ios-27-2-1-security-update-8051478b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-ios-27-2-1-security-update-8051478b</guid>
-      <description><![CDATA[Apple released iOS 27.2.1 (build 24B156/24B91034) to iOS users, addressing multiple security vulnerabilities and performance issues. The update patches critical flaws that could allow remote code execution, data leakage, or denial‑of‑service attacks on affected devices. Users are urged to download the update via the App Store immediately to maintain device security and stability.]]></description>
-      <pubDate>Mon, 09 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11092026a">Apple Security Updates</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apple Releases iPadOS 27.2.1 (24B156)</title>
-      <link>https://secubuzz.com/news/apple-releases-ipados-27-2-1-24b156-2dd77244</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-releases-ipados-27-2-1-24b156-2dd77244</guid>
-      <description><![CDATA[Apple released iPadOS 27.2.1 (24B156) to iPad users, delivering updated security patches and performance improvements. The update is available for download through the App Store, ensuring device compatibility with the latest iPadOS version and improved system stability. Users should install the update promptly to maintain security posture and benefit from stability enhancements.]]></description>
-      <pubDate>Mon, 09 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://developer.apple.com/news/releases/?id=11092026c">Apple Security Updates</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Abe Office Malware Steals Chrome Passwords</title>
-      <link>https://secubuzz.com/news/abe-office-malware-steals-chrome-passwords-eded8374</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/abe-office-malware-steals-chrome-passwords-eded8374</guid>
-      <description><![CDATA[A new remote-access trojan, Abe Office, masquerades as an office helper and steals Chrome passwords and cookies, bypassing App-Bound Encryption. Researchers found the malware exploits weak protection in Chrome’s encryption wrapper, using a code-signing certificate to evade detection and capture credentials. Security teams should block the Abe Office executable, revoke the signed certificate, and enforce multi-factor authentication for privileged accounts.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:58:44 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/abe-office-malware/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Qubole AWS Backdoor Enables Customer Data Breach</title>
-      <link>https://secubuzz.com/news/qubole-aws-backdoor-enables-customer-data-breach-dc6dac4b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qubole-aws-backdoor-enables-customer-data-breach-dc6dac4b</guid>
-      <description><![CDATA[Qubole’s AWS deployment contained a backdoor that allowed attackers to access and exfiltrate customer secrets without authentication. Between October 14 and 26, attackers used the compromised AWS credentials to breach multiple customer accounts and steal data. Qubole urged immediate patching, telemetry review, and deployment of detection rules to mitigate further exfiltration.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:51:21 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Beget Rebuilds Cloud After Data-Wiping Malware Attack</title>
-      <link>https://secubuzz.com/news/beget-rebuilds-cloud-after-data-wiping-malware-att-d4645aab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/beget-rebuilds-cloud-after-data-wiping-malware-att-d4645aab</guid>
-      <description><![CDATA[A data-wiping malware attack destroyed Beget's cloud infrastructure, forcing the Russian provider to rebuild from scratch. The attack leveraged a destructive payload that erased all stored data, but no evidence of data exfiltration or credential theft was reported. Beget has not released a patch but recommends restoring from backups and implementing stricter access controls to mitigate future destructive threats.]]></description>
-      <pubDate>Mon, 09 Nov 2026 17:50:32 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/">BleepingComputer</source>
       <category>General</category>
     </item>
   </channel>

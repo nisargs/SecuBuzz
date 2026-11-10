@@ -11,6 +11,102 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "france-attributes-supermarket-refrigeration-sabota-99bf71bc",
+    "title": "France Attributes Supermarket Refrigeration Sabotage to Iranian Hackers",
+    "summary": "France attributed a disruptive cyberattack on 700 supermarket refrigeration systems to Iran's Islamic Revolutionary Guard Corps. Attackers remotely manipulated defrost controls during October 11–12, causing widespread food spoilage and approximately 20 fires, per the Paris prosecutor. Foreign Minister Jean-Noël Barrot confirmed the attribution; affected organizations should audit industrial control system access and implement network segmentation.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/iranian-hackers-supermarket-cyberattacks/",
+    "publishedAt": "2026-11-10T10:23:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "france-attributes-supermarket-refrigeration-sabota",
+      "article-99bf71bc",
+      "99bf71bc",
+      "france-attributes-supermarket-refrigeration-sabota-48fa53",
+      "france-attributes-supermarket-refrigeration-sabotage-to-iran"
+    ]
+  },
+  {
+    "slug": "attackers-exploit-barracuda-esg-flaws-for-root-acc-25ab3004",
+    "title": "Attackers Exploit Barracuda ESG Flaws for Root Access",
+    "summary": "Attackers are actively exploiting two critical Barracuda Email Security Gateway vulnerabilities to achieve root-level command execution. The flaws, recently patched by Barracuda, allow unauthenticated remote code execution on the appliance, granting full system compromise. Barracuda urges immediate application of security updates and verification of appliance integrity to prevent persistent unauthorized access.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/",
+    "publishedAt": "2026-11-10T10:10:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-exploit-barracuda-esg-flaws-for-root-acc",
+      "article-25ab3004",
+      "25ab3004",
+      "attackers-exploit-barracuda-esg-flaws-for-root-acc-304d38",
+      "attackers-exploit-barracuda-esg-flaws-for-root-access"
+    ]
+  },
+  {
+    "slug": "anthropic-releases-claude-mythos-5-2-ai-for-vulner-649ae7e7",
+    "title": "Anthropic Releases Claude Mythos 5.2 AI for Vulnerability Detection",
+    "summary": "Anthropic released Claude Mythos 5.2, an AI model aimed at cybersecurity engineering, on November 9. The model achieved a 76.3% score on CyScenarioBench, indicating strong capability to identify zero‑day flaws. Access remains restricted to prevent misuse, and security teams can use it to locate, reproduce, and remediate vulnerabilities before exploitation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-mythos-5-2-released/",
+    "publishedAt": "2026-11-10T10:03:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-releases-claude-mythos-5-2-ai-for-vulner",
+      "article-649ae7e7",
+      "649ae7e7",
+      "anthropic-releases-claude-mythos-5-2-ai-for-vulner-64791d",
+      "anthropic-releases-claude-mythos-5-2-ai-for-vulnerability-de"
+    ]
+  },
+  {
+    "slug": "sap-fixes-four-10-0-rce-flaws-including-netweaver-102407d0",
+    "title": "SAP Fixes Four 10.0 RCE Flaws, Including NetWeaver",
+    "summary": "SAP released a patch for four critical flaws, all rated CVSS 10.0, on its monthly Security Patch Day. The vulnerabilities, including CVE-2026-83844, allow unauthenticated remote code execution on SAP NetWeaver application servers and the Web Dispatcher. SAP has issued patches for all affected components; security teams should apply them immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+    "publishedAt": "2026-11-10T10:02:40.000Z",
+    "cves": [
+      "CVE-2026-83844"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "sap-fixes-four-10-0-rce-flaws-including-netweaver",
+      "article-102407d0",
+      "102407d0",
+      "sap-fixes-four-10-0-rce-flaws-including-netweaver-4254d9"
+    ]
+  },
+  {
+    "slug": "turla-s-cereal-malware-turns-victims-exchange-serv-1c0ecfed",
+    "title": "Turla’s Cereal malware turns victims’ Exchange servers into spy hubs",
+    "summary": "Russia-aligned group Turla planted a modular .NET toolset on Microsoft Exchange servers at two government organizations, one in Kazakhstan and one in Romania, and used it to copy selected email straight out of the mail flow. ESET researchers found the malware and named it Cereal. Operators send commands to the victim’s internet-facing Exchange server, dressed up as ordinary Outlook Web Access, Autodiscover, and ActiveSync traffic.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/",
+    "publishedAt": "2026-11-10T10:00:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "turla-s-cereal-malware-turns-victims-exchange-serv",
+      "article-1c0ecfed",
+      "1c0ecfed",
+      "turla-s-cereal-malware-turns-victims-exchange-serv-ef12ed",
+      "turla-s-cereal-malware-turns-victims-exchange-servers-into-s"
+    ]
+  },
+  {
     "slug": "n-able-disables-n-central-over-30-zero-day-flaws-74835697",
     "title": "N-able Disables N-central Over 30 Zero-Day Flaws",
     "summary": "N-able temporarily disabled N-central services while addressing over 30 zero-day vulnerabilities that enable remote code execution, credential theft, and unauthorized administrator account creation. The flaws arise from insufficient input validation in the web interface, permitting attackers to inject malicious code and elevate privileges. N-able has released a patch and urges customers to update immediately to mitigate the risk.",
@@ -51,6 +147,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "linux-kernel-receives-patch-for-multiple-vulnerabi-9e70e8b0",
+    "title": "Linux Kernel Receives Patch for Multiple Vulnerabilities",
+    "summary": "The Linux kernel was updated to address several security issues across multiple subsystems, including USB gadget drivers, memory management, and networking core. An attacker could potentially exploit these flaws to compromise system integrity, though no active exploitation has been reported. Kernel maintainers recommend applying the USN-9022-1 update immediately to mitigate the identified vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9022-1",
+    "publishedAt": "2026-11-10T09:09:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-receives-patch-for-multiple-vulnerabi",
+      "article-9e70e8b0",
+      "9e70e8b0",
+      "linux-kernel-receives-patch-for-multiple-vulnerabi-7e88cb",
+      "linux-kernel-receives-patch-for-multiple-vulnerabilities"
+    ]
+  },
+  {
     "slug": "iranian-unit-sabotages-700-french-retail-refrigera-080a646c",
     "title": "Iranian Unit Sabotages 700 French Retail Refrigerators",
     "summary": "An IRGC cyber unit targeted refrigeration controllers at roughly 700 French retail sites, altering defrost settings to high temperatures. The change caused food spoilage and ignited fires in at least 15 locations, leading to significant losses. French authorities attribute the sabotage to Iran; operators should audit controller access logs and enforce stricter authentication controls.",
@@ -70,6 +185,65 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66",
+    "title": "AMD RMP Flaw Allows Local Hypervisor Exploit",
+    "summary": "A flaw in AMD processors' Reverse Map Table checks was discovered, potentially enabling local hypervisor attackers to trigger an out‑of‑bounds condition. The vulnerability, identified as CVE-2023-20585, could compromise the integrity of SEV‑SNP guest memory if exploited. Kernel maintainers advise applying the USN-9024-1 update to patch affected subsystems and mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9024-1",
+    "publishedAt": "2026-11-10T08:47:04.000Z",
+    "cves": [
+      "CVE-2023-20585"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "amd-rmp-flaw-allows-local-hypervisor-exploit",
+      "article-3afbdb66",
+      "3afbdb66",
+      "amd-rmp-flaw-allows-local-hypervisor-exploit-7e88c3"
+    ]
+  },
+  {
+    "slug": "ubuntu-addresses-multiple-linux-kernel-vulnerabili-1cac7a6d",
+    "title": "Ubuntu Addresses Multiple Linux Kernel Vulnerabilities in USN-9025-1",
+    "summary": "Ubuntu released kernel updates addressing CVE-2023-20585 and multiple Linux kernel vulnerabilities. The AMD flaw allows hypervisor-privileged attackers to corrupt SEV-SNP guest memory via improper RMP checks; other issues affect USB gadget, memory management, NVDIMM, networking, and architecture subsystems. Updated kernel packages are available; immediate deployment is recommended to prevent system compromise.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9025-1",
+    "publishedAt": "2026-11-10T08:47:02.000Z",
+    "cves": [
+      "CVE-2023-20585"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-addresses-multiple-linux-kernel-vulnerabili",
+      "article-1cac7a6d",
+      "1cac7a6d",
+      "ubuntu-addresses-multiple-linux-kernel-vulnerabili-7e88c0",
+      "ubuntu-addresses-multiple-linux-kernel-vulnerabilities-in-us"
+    ]
+  },
+  {
+    "slug": "ubuntu-addresses-multiple-kernel-vulnerabilities-3840f8cd",
+    "title": "Ubuntu Addresses Multiple Kernel Vulnerabilities",
+    "summary": "Ubuntu released USN-9023-1, patching multiple Linux kernel vulnerabilities that could let attackers compromise systems. Flaws touch USB gadget drivers, memory management, networking core, ARM/x86 architectures, and device drivers, with no confirmed exploitation but potential for privilege escalation or denial of service. All affected subsystems are fixed; admins should apply the latest kernel or backport the patches.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9023-1",
+    "publishedAt": "2026-11-10T08:46:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-addresses-multiple-kernel-vulnerabilities",
+      "article-3840f8cd",
+      "3840f8cd",
+      "ubuntu-addresses-multiple-kernel-vulnerabilities-7e88c7"
+    ]
+  },
+  {
     "slug": "ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b",
     "title": "Ubuntu Releases Kernel Patch for Multiple Vulnerabilities",
     "summary": "Ubuntu released USN-9018-1, addressing several kernel vulnerabilities that could allow attackers to compromise affected systems. The flaws span network file systems, ARM64, PowerPC, RISC-V, S390, and numerous device drivers, exposing potential privilege escalation and denial of service. Ubuntu has issued a kernel update; administrators should apply the patch promptly to eliminate the exploitation vector.",
@@ -86,6 +260,27 @@ export const news: NewsBrief[] = [
       "d99e037b",
       "ubuntu-releases-kernel-patch-for-multiple-vulnerab-7e8929",
       "ubuntu-releases-kernel-patch-for-multiple-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "progress-ws-ftp-server-addresses-seven-credential-cf7e693a",
+    "title": "Progress WS_FTP Server Addresses Seven Credential Theft Flaws",
+    "summary": "Progress Software released a pack for WS_FTP Server 2025.0.5 to fix seven flaws enabling credential theft, path traversal, and file transfer disruption. The flaws, catalogued as CVE-2026-124033, allow unauthenticated remote code execution and local file access, compromising credentials and exposing restricted files. Upgrade to WS_FTP Server 2025.0.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/progress-ws_ftp-server-fixes-security-vulnerabilities/",
+    "publishedAt": "2026-11-10T08:42:39.000Z",
+    "cves": [
+      "CVE-2026-124033"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "progress-ws-ftp-server-addresses-seven-credential",
+      "article-cf7e693a",
+      "cf7e693a",
+      "progress-ws-ftp-server-addresses-seven-credential-1ce304",
+      "progress-ws-ftp-server-addresses-seven-credential-theft-flaw"
     ]
   },
   {
@@ -122,6 +317,24 @@ export const news: NewsBrief[] = [
       "article-8674511c",
       "8674511c",
       "sega-breach-exposes-2-19m-emails-via-arara-b9e124"
+    ]
+  },
+  {
+    "slug": "nine-leading-crq-tools-ranked-for-2026-673ee821",
+    "title": "Nine Leading CRQ Tools Ranked for 2026",
+    "summary": "The article ranks nine cyber risk quantification tools for 2026, evaluating how they convert security severity metrics into budget‑friendly dollar estimates. It separates FAIR‑methodology descendants, telemetry‑based engines using live estate data, and ratings‑lineage platforms monetizing scoring graphs, noting a duplicate BitSight entry. Security teams can use the list to choose tools matching risk‑budget translation needs and benchmark industry performance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-crq-tools/",
+    "publishedAt": "2026-11-10T08:31:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nine-leading-crq-tools-ranked-for-2026",
+      "article-673ee821",
+      "673ee821",
+      "nine-leading-crq-tools-ranked-for-2026-4bbbbd"
     ]
   },
   {
@@ -9391,227 +9604,6 @@ export const news: NewsBrief[] = [
       "25d890e2",
       "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-37d84c",
       "rhsa-2026-95281-moderate-xorg-x11-server-xwayland-security-u"
-    ]
-  },
-  {
-    "slug": "soc-leaders-face-evolving-operational-challenges-i-21f7e140",
-    "title": "SOC Leaders Face Evolving Operational Challenges in 2027",
-    "summary": "Security Operations Center and managed security service provider teams face mounting operational pressure from evolving attack techniques, rising alert volumes, and budget constraints. Complex threat environments and persistent staffing shortages hinder effective detection and investigation capabilities across enterprise environments. Security leaders must prioritize threat intelligence integration to enhance detection capabilities and streamline investigation workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/6-challenges-soc-leaders-should-turn-into-priorities-in-2027/",
-    "publishedAt": "2026-11-04T18:07:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "soc-leaders-face-evolving-operational-challenges-i",
-      "article-21f7e140",
-      "21f7e140",
-      "soc-leaders-face-evolving-operational-challenges-i-420e45",
-      "soc-leaders-face-evolving-operational-challenges-in-2027"
-    ]
-  },
-  {
-    "slug": "french-blood-establishment-cold-room-cyberattack-96b7ee70",
-    "title": "French Blood Establishment Cold Room Cyberattack",
-    "summary": "A cyberattack targeted a refrigeration equipment provider serving the French Blood Establishment, causing temperature anomalies in three national blood bank cold rooms. Monitoring systems detected deviations and allowed operators to reverse parameter changes before any blood product was compromised. The incident did not compromise patient data or blood inventory.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
-    "publishedAt": "2026-11-04T18:02:56.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/04/cyberattack-hits-french-blood-banks/"
-      }
-    ],
-    "aliases": [
-      "french-blood-establishment-cold-room-cyberattack",
-      "article-96b7ee70",
-      "96b7ee70",
-      "french-blood-establishment-cold-room-cyberattack-5404e4"
-    ]
-  },
-  {
-    "slug": "msecure-urges-password-changes-without-disclosure-17b8d323",
-    "title": "mSecure Urges Password Changes Without Disclosure",
-    "summary": "mSecure has instructed users to change passwords across its application without publicly disclosing the underlying cause or confirming any data exposure. The advisory lacks technical specifics, making independent verification impossible. Users should treat the password reset as precautionary until official confirmation clarifies the scope and threat vector.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/11/msecure-tells-users-to-change-passwords-but-wont-say-why",
-    "publishedAt": "2026-11-04T17:02:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "msecure-urges-password-changes-without-disclosure",
-      "article-17b8d323",
-      "17b8d323",
-      "msecure-urges-password-changes-without-disclosure-292774"
-    ]
-  },
-  {
-    "slug": "critical-rails-active-storage-flaw-enables-secret-6d6b01f1",
-    "title": "Critical Rails Active Storage Flaw Enables Secret Theft",
-    "summary": "A critical flaw in Ruby on Rails Active Storage lets unauthenticated users upload crafted images that cause the server to write arbitrary files. CVE‑2026‑116606 has a CVSS score of 9.8 and can also allow file reads when the Disk service is used. Rails has issued a patch that fixes the flaw; no workarounds exist, so update the framework immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-ruby-on-rails-flaw/",
-    "publishedAt": "2026-11-04T17:01:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "critical-rails-active-storage-flaw-enables-secret",
-      "article-6d6b01f1",
-      "6d6b01f1",
-      "critical-rails-active-storage-flaw-enables-secret-2dc37b",
-      "critical-rails-active-storage-flaw-enables-secret-theft"
-    ]
-  },
-  {
-    "slug": "debian-ubuntu-apt-flaw-enables-root-code-execution-3b3b7b41",
-    "title": "Debian/Ubuntu APT Flaw Enables Root Code Execution",
-    "summary": "The CVE-2026-109518 flaw in the APT package manager impacts Ubuntu and Debian Linux distributions. It permits unauthenticated attackers to inject malicious packages during updates, achieving full root code execution and complete system compromise. Canonical and Debian have issued patches (USN-8996-1, DSA-6607-1); users must update APT and verify package signatures immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
-    "publishedAt": "2026-11-04T17:00:46.000Z",
-    "cves": [
-      "CVE-2026-109518"
-    ],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/debian-apt-flaw-lets-hackers-hijack-updates/"
-      },
-      {
-        "source": "AWS Security Bulletins",
-        "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-172-aws/"
-      }
-    ],
-    "aliases": [
-      "debian-ubuntu-apt-flaw-enables-root-code-execution",
-      "article-3b3b7b41",
-      "3b3b7b41",
-      "debian-ubuntu-apt-flaw-enables-root-code-execution-784038"
-    ]
-  },
-  {
-    "slug": "sonicwall-gms-flaws-expose-files-alter-db-records-ffa93564",
-    "title": "SonicWall GMS Flaws Expose Files, Alter DB Records",
-    "summary": "CVE‑2026‑109593 exposes SonicWall GMS 9.5.2 and earlier to unauthenticated attackers who can read files and alter database records. The vulnerability arises from missing authentication checks, granting file read/write access; its CVSS score of 9.1 classifies it as critical. SonicWall will not patch these end‑of‑life systems, so administrators must disable exposed services or migrate to supported versions to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
-    "publishedAt": "2026-11-04T17:00:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sonicwall-gms-flaws-expose-files-alter-db-records",
-      "article-ffa93564",
-      "ffa93564",
-      "sonicwall-gms-flaws-expose-files-alter-db-records-7430e3"
-    ]
-  },
-  {
-    "slug": "app-store-connect-3-3-1-patch-release-b35f72ec",
-    "title": "App Store Connect 3.3.1 Patch Release",
-    "summary": "Apple released App Store Connect 3.3.1 addressing multiple security vulnerabilities in its developer management platform. The update resolves flaws that could allow unauthorized access to sensitive store metadata and user account data. Organizations using the tool should immediately install the latest version to maintain secure operations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11042026a",
-    "publishedAt": "2026-11-04T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "app-store-connect-3-3-1-patch-release",
-      "article-b35f72ec",
-      "b35f72ec",
-      "app-store-connect-3-3-1-patch-release-68728a"
-    ]
-  },
-  {
-    "slug": "nikke-launcher-compromised-distributes-credential-c9c5c89b",
-    "title": "NIKKE Launcher Compromised, Distributes Credential-Stealing Malware",
-    "summary": "A supply‑chain compromise of the Goddess of Victory: NIKKE PC launcher distributed malware that steals credentials and cryptocurrency wallet data. The attackers tampered with launcher scripts, enabling remote access tools and credential‑stealing payloads, exposing user accounts and wallet keys to theft. Developers have issued a patched launcher and advise users to download the latest version and verify script integrity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
-    "publishedAt": "2026-11-04T16:58:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nikke-launcher-compromised-distributes-credential",
-      "article-c9c5c89b",
-      "c9c5c89b",
-      "nikke-launcher-compromised-distributes-credential-68d0d4",
-      "nikke-launcher-compromised-distributes-credential-stealing-m"
-    ]
-  },
-  {
-    "slug": "twisted-imap-server-vulnerability-enables-resource-dbe3f525",
-    "title": "Twisted IMAP Server Vulnerability Enables Resource Exhaustion DoS",
-    "summary": "Twisted’s IMAP server mishandled wildcard patterns in mailbox list commands, letting an authenticated remote attacker trigger excessive resource consumption. The flaw can cause a denial of service by exhausting server memory or CPU, disrupting legitimate user access. Ubuntu’s USN-9000-1 patch corrects the wildcard handling logic; users should apply the update to mitigate DoS risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9000-1",
-    "publishedAt": "2026-11-04T16:24:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "twisted-imap-server-vulnerability-enables-resource",
-      "article-dbe3f525",
-      "dbe3f525",
-      "twisted-imap-server-vulnerability-enables-resource-7e89bb",
-      "twisted-imap-server-vulnerability-enables-resource-exhaustio"
-    ]
-  },
-  {
-    "slug": "google-partners-disrupt-1-3m-device-xcpe-botnet-75329475",
-    "title": "Google Partners Disrupt 1.3M-Device XCPE Botnet",
-    "summary": "Google and partners dismantled the XCPE botnet that infected over 1.3 million Android set‑top boxes and IoT devices. The botnet used a backdoor to create a criminal infrastructure, enabling remote control and data exfiltration from compromised devices. Affected devices should be updated to the latest firmware, and security teams should monitor for anomalous traffic patterns.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
-    "publishedAt": "2026-11-04T16:24:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-partners-disrupt-1-3m-device-xcpe-botnet",
-      "article-75329475",
-      "75329475",
-      "google-partners-disrupt-1-3m-device-xcpe-botnet-7fc2b3"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95194-important-webkit2gtk3-security-upd-2e3087a7",
-    "title": "RHSA-2026:95194: Important: webkit2gtk3 security update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. The vulnerability is tracked as CVE-2026-43871.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95194",
-    "publishedAt": "2026-11-04T16:22:24.000Z",
-    "cves": [
-      "CVE-2026-43871"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95194-important-webkit2gtk3-security-upd",
-      "article-2e3087a7",
-      "2e3087a7",
-      "rhsa-2026-95194-important-webkit2gtk3-security-upd-37d850",
-      "rhsa-2026-95194-important-webkit2gtk3-security-update"
     ]
   }
 ];
