@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 06:45:51 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 07:48:38 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google Patches Chrome XML Use‑After‑Free Bug</title>
+      <link>https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-bug-3b3a5037</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-bug-3b3a5037</guid>
+      <description><![CDATA[Google patched Chrome’s XML component after an actively exploited use‑after‑free bug (CVE‑2026‑125350) was reported. The flaw enabled memory corruption via crafted XML, potentially allowing remote code execution; it was rated high severity and is actively exploited. Google released a patch in the latest Chrome update; users should install it immediately to mitigate the vulnerability.]]></description>
+      <pubDate>Tue, 10 Nov 2026 06:52:54 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/google-issues-chrome-security-update.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CISA Adds Four Flaws to KEV Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-four-flaws-to-kev-catalog-15140f7a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-four-flaws-to-kev-catalog-15140f7a</guid>
+      <description><![CDATA[CISA added four actively exploited vulnerabilities, including CVE‑2026‑123218, to its Known Exploited Vulnerabilities catalog. The flaws affect OpenSSH, GPUStack, SignalWire FreeSwitch, and IBM Aspera Faspex, with CVE‑2026‑123218 rated CVSS 9.8 for an incorrect authorization flaw. CISA recommends immediate patching or applying vendor mitigations; users should verify that their systems are not exposed to the active exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 06:31:42 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chrome Patch Fixes Exploited XML Use‑After‑Free Zero‑Day</title>
+      <link>https://secubuzz.com/news/chrome-patch-fixes-exploited-xml-use-after-free-ze-04e2086f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-patch-fixes-exploited-xml-use-after-free-ze-04e2086f</guid>
+      <description><![CDATA[Google released a Chrome update to fix a high‑severity use‑after‑free flaw (CVE‑2026‑125350) in the XML component that was already exploited. The bug allowed memory corruption via crafted XML, potentially enabling remote code execution with a CVSS score of 9.8. Users should install the latest Chrome patch immediately to mitigate the vulnerability; no separate advisory was issued.]]></description>
+      <pubDate>Tue, 10 Nov 2026 06:12:24 GMT</pubDate>
+      <source url="https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Security Teams Prioritize AI Agent Behavior Monitoring</title>
       <link>https://secubuzz.com/news/security-teams-prioritize-ai-agent-behavior-monito-778ad60b</link>
@@ -14,6 +41,15 @@
       <description><![CDATA[A 2026 State of Behavioral Security Report names AI agents as the top monitoring focus. The survey shows 43% plan to invest in AI agent monitoring, exceeding API integrations, yet many lack baseline definitions. Teams should establish baseline metrics and deploy monitoring tools to detect anomalous AI agent behavior early.]]></description>
       <pubDate>Tue, 10 Nov 2026 06:00:42 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/10/abnormal-ai-behavioral-security-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ChromeOS Beta Channel Updated to OS 16868.13.0</title>
+      <link>https://secubuzz.com/news/chromeos-beta-channel-updated-to-os-16868-13-0-bd6c78e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-beta-channel-updated-to-os-16868-13-0-bd6c78e3</guid>
+      <description><![CDATA[Google ChromeOS Beta channel received an OS update to version 16868.13.0 and browser 158.0.8127.24 for most devices. The update contains routine bug fixes and performance improvements, with no publicly disclosed security vulnerabilities. Users should apply the update via the OS update mechanism or switch channels as needed to maintain security posture.]]></description>
+      <pubDate>Tue, 10 Nov 2026 05:45:27 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos_01835406967.html">Google Chrome Releases</source>
       <category>General</category>
     </item>
     <item>
@@ -33,6 +69,15 @@
       <pubDate>Tue, 10 Nov 2026 05:00:58 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/10/cybersecurity-jobs-available-right-now-november-10-2026/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>SEGA Exposes 2.2 Million Emails</title>
+      <link>https://secubuzz.com/news/sega-exposes-2-2-million-emails-d439d4bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sega-exposes-2-2-million-emails-d439d4bf</guid>
+      <description><![CDATA[SEGA disclosed a breach that exposed 2.2 million email addresses from its customer database, accessed through an unauthorized entry point. The incident likely involved credential compromise or misconfigured access controls, but no exploit code or public proof-of-concept has been reported. SEGA should conduct a forensic review, apply any pending patches, enforce multi‑factor authentication, and notify affected users per data‑breach regulations.]]></description>
+      <pubDate>Tue, 10 Nov 2026 04:32:48 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/sega-newsletter-data-breach-exposes-2-2-million-email-a">CyberNews AI</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Qubole Cross‑Account Access Vulnerability Abused</title>
@@ -125,10 +170,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>N‑able Shuts N‑central Cloud After Critical Vulnerabilities Discovered</title>
-      <link>https://secubuzz.com/news/n-able-shuts-n-central-cloud-after-critical-vulner-15079bec</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-shuts-n-central-cloud-after-critical-vulner-15079bec</guid>
-      <description><![CDATA[N‑able shut down its N‑central cloud after discovering critical vulnerabilities that enable remote code execution and privilege escalation. Dubbed 'Able2Shell', the flaws lack public proof‑of‑concepts but could let attackers fully compromise affected servers. N‑able advises customers to immediately shut down on‑premises installations and apply forthcoming patches to mitigate the risk.]]></description>
+      <title>N-Able Shuts Down N-Central Cloud Over &apos;Able2Shell&apos; Zero-Day Vulnerabilities</title>
+      <link>https://secubuzz.com/news/n-able-shuts-down-n-central-cloud-over-able2shell-e2990899</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-shuts-down-n-central-cloud-over-able2shell-e2990899</guid>
+      <description><![CDATA[N-Able took its N-Central cloud platform offline after the 'Able2Shell' vulnerability set, comprising over 30 zero-days enabling remote code execution and privilege escalation, was publicly disclosed with proof-of-concept exploits. The flaws allow full server compromise across hosted and on-premises deployments. N-Able urges immediate shutdown of all N-Central instances pending vendor patches.]]></description>
       <pubDate>Mon, 09 Nov 2026 21:26:25 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/">BleepingComputer</source>
       <category>Vulnerability</category>
@@ -410,51 +455,6 @@
       <description><![CDATA[OpenJDK 8 components—Security, JSSE, JAAS, JDBC—exposed authentication and authorization flaws that could let remote attackers read or modify sensitive data. Flaws CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, CVE-2026-83380, CVE-2026-83381, CVE-2026-87294 grant unauthenticated or improperly authorized access, enabling data tampering. Oracle released patches; users should apply the latest OpenJDK 8 update to mitigate risk.]]></description>
       <pubDate>Mon, 09 Nov 2026 16:04:44 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9009-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>OpenSSH SSHole Bypass Vulnerability Disclosed</title>
-      <link>https://secubuzz.com/news/openssh-sshole-bypass-vulnerability-disclosed-86de8784</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openssh-sshole-bypass-vulnerability-disclosed-86de8784</guid>
-      <description><![CDATA[OpenSSH has a documented SSHole bypass vulnerability (CVE-2026-123158) that allows attackers to circumvent authentication checks on supported SSH servers. The flaw stems from improper handling of session key negotiation, potentially enabling unauthorized remote access with CVSS 8.5. Red Hat and OpenSSH maintainers advise applying the latest patch or upgrading to version 9.8 to mitigate the risk.]]></description>
-      <pubDate>Mon, 09 Nov 2026 16:00:45 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/hackers-exploiting-sshole-authentication-bypass-in-open">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AhsayCBS Exploits CVE-2026-105133 for Webshells and Mining</title>
-      <link>https://secubuzz.com/news/ahsaycbs-exploits-cve-2026-105133-for-webshells-an-63510953</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ahsaycbs-exploits-cve-2026-105133-for-webshells-an-63510953</guid>
-      <description><![CDATA[AhsayCBS has leveraged CVE‑2026‑105133 to deploy webshells and an XMRig miner on affected systems. The vulnerability permits remote code execution via a flaw in the AhsayCBS web interface, enabling attackers to execute arbitrary commands and mine cryptocurrency. Immediate patching of the affected AhsayCBS version is required; security teams should also monitor for webshell activity and block mining processes.]]></description>
-      <pubDate>Mon, 09 Nov 2026 15:50:32 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/inside-an-ahsaycbs-intrusion-hidden-webshells-a-cryptom">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ukraine Seizes €4.3M Crypto Scam Ring</title>
-      <link>https://secubuzz.com/news/ukraine-seizes-4-3m-crypto-scam-ring-46ec5661</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ukraine-seizes-4-3m-crypto-scam-ring-46ec5661</guid>
-      <description><![CDATA[Ukraine law enforcement disrupted a €4.3 million crypto scam ring, arresting key operators and seizing assets. Court filings revealed the ring used layered phishing and cryptocurrency mixing services, with threat actors operating from multiple jurisdictions. Security teams should monitor for similar phishing vectors, enforce multi‑factor authentication, and employ transaction monitoring to detect illicit crypto flows.]]></description>
-      <pubDate>Mon, 09 Nov 2026 15:49:26 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/ukraine-dismantles-crypto-scam-network-that-stole-4-3-m">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>NIST Guidance for Solo Business Owners</title>
-      <link>https://secubuzz.com/news/nist-guidance-for-solo-business-owners-91174b53</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nist-guidance-for-solo-business-owners-91174b53</guid>
-      <description><![CDATA[NIST released guidance offering a basic framework for solo business owners lacking technical expertise in the rapidly evolving threat landscape. The guidance outlines security practices for technology that operates without human oversight, though it may not fully address all risk scenarios. Organizations should review the guidance and supplement it with additional controls as needed.]]></description>
-      <pubDate>Mon, 09 Nov 2026 15:46:10 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenJDK 11 Auth Flaws Expose Sensitive Data</title>
-      <link>https://secubuzz.com/news/openjdk-11-auth-flaws-expose-sensitive-data-6c7d78b1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openjdk-11-auth-flaws-expose-sensitive-data-6c7d78b1</guid>
-      <description><![CDATA[OpenJDK 11 components—Security, JSSE, JAAS, JDBC—exposed authentication and authorization flaws that could let remote attackers read or modify sensitive data. Flaws CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, CVE-2026-83380, CVE-2026-83381, CVE-2026-87294 grant unauthenticated or improperly authorized access, enabling data tampering. Oracle released patches; users should apply the latest OpenJDK 11 update to mitigate risk.]]></description>
-      <pubDate>Mon, 09 Nov 2026 15:35:24 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9010-1">Ubuntu Security Notices</source>
       <category>CVE</category>
     </item>
   </channel>

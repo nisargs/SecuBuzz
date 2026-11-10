@@ -11,6 +11,61 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-patches-chrome-xml-use-after-free-bug-3b3a5037",
+    "title": "Google Patches Chrome XML Use‑After‑Free Bug",
+    "summary": "Google patched Chrome’s XML component after an actively exploited use‑after‑free bug (CVE‑2026‑125350) was reported. The flaw enabled memory corruption via crafted XML, potentially allowing remote code execution; it was rated high severity and is actively exploited. Google released a patch in the latest Chrome update; users should install it immediately to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+    "publishedAt": "2026-11-10T06:52:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-patches-chrome-xml-use-after-free-bug",
+      "article-3b3a5037",
+      "3b3a5037",
+      "google-patches-chrome-xml-use-after-free-bug-37252a"
+    ]
+  },
+  {
+    "slug": "cisa-adds-four-flaws-to-kev-catalog-15140f7a",
+    "title": "CISA Adds Four Flaws to KEV Catalog",
+    "summary": "CISA added four actively exploited vulnerabilities, including CVE‑2026‑123218, to its Known Exploited Vulnerabilities catalog. The flaws affect OpenSSH, GPUStack, SignalWire FreeSwitch, and IBM Aspera Faspex, with CVE‑2026‑123218 rated CVSS 9.8 for an incorrect authorization flaw. CISA recommends immediate patching or applying vendor mitigations; users should verify that their systems are not exposed to the active exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+    "publishedAt": "2026-11-10T06:31:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-four-flaws-to-kev-catalog",
+      "article-15140f7a",
+      "15140f7a",
+      "cisa-adds-four-flaws-to-kev-catalog-39df6a"
+    ]
+  },
+  {
+    "slug": "chrome-patch-fixes-exploited-xml-use-after-free-ze-04e2086f",
+    "title": "Chrome Patch Fixes Exploited XML Use‑After‑Free Zero‑Day",
+    "summary": "Google released a Chrome update to fix a high‑severity use‑after‑free flaw (CVE‑2026‑125350) in the XML component that was already exploited. The bug allowed memory corruption via crafted XML, potentially enabling remote code execution with a CVSS score of 9.8. Users should install the latest Chrome patch immediately to mitigate the vulnerability; no separate advisory was issued.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
+    "publishedAt": "2026-11-10T06:12:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-patch-fixes-exploited-xml-use-after-free-ze",
+      "article-04e2086f",
+      "04e2086f",
+      "chrome-patch-fixes-exploited-xml-use-after-free-ze-4458a0",
+      "chrome-patch-fixes-exploited-xml-use-after-free-zero-day"
+    ]
+  },
+  {
     "slug": "security-teams-prioritize-ai-agent-behavior-monito-778ad60b",
     "title": "Security Teams Prioritize AI Agent Behavior Monitoring",
     "summary": "A 2026 State of Behavioral Security Report names AI agents as the top monitoring focus. The survey shows 43% plan to invest in AI agent monitoring, exceeding API integrations, yet many lack baseline definitions. Teams should establish baseline metrics and deploy monitoring tools to detect anomalous AI agent behavior early.",
@@ -27,6 +82,24 @@ export const news: NewsBrief[] = [
       "778ad60b",
       "security-teams-prioritize-ai-agent-behavior-monito-28e32c",
       "security-teams-prioritize-ai-agent-behavior-monitoring"
+    ]
+  },
+  {
+    "slug": "chromeos-beta-channel-updated-to-os-16868-13-0-bd6c78e3",
+    "title": "ChromeOS Beta Channel Updated to OS 16868.13.0",
+    "summary": "Google ChromeOS Beta channel received an OS update to version 16868.13.0 and browser 158.0.8127.24 for most devices. The update contains routine bug fixes and performance improvements, with no publicly disclosed security vulnerabilities. Users should apply the update via the OS update mechanism or switch channels as needed to maintain security posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos_01835406967.html",
+    "publishedAt": "2026-11-10T05:45:27.885Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-beta-channel-updated-to-os-16868-13-0",
+      "article-bd6c78e3",
+      "bd6c78e3",
+      "chromeos-beta-channel-updated-to-os-16868-13-0-7ad17a"
     ]
   },
   {
@@ -65,6 +138,24 @@ export const news: NewsBrief[] = [
       "b0117907",
       "application-security-engineer-position-open-at-one-1f273b",
       "application-security-engineer-position-open-at-one-zero-bank"
+    ]
+  },
+  {
+    "slug": "sega-exposes-2-2-million-emails-d439d4bf",
+    "title": "SEGA Exposes 2.2 Million Emails",
+    "summary": "SEGA disclosed a breach that exposed 2.2 million email addresses from its customer database, accessed through an unauthorized entry point. The incident likely involved credential compromise or misconfigured access controls, but no exploit code or public proof-of-concept has been reported. SEGA should conduct a forensic review, apply any pending patches, enforce multi‑factor authentication, and notify affected users per data‑breach regulations.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/sega-newsletter-data-breach-exposes-2-2-million-email-a",
+    "publishedAt": "2026-11-10T04:32:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sega-exposes-2-2-million-emails",
+      "article-d439d4bf",
+      "d439d4bf",
+      "sega-exposes-2-2-million-emails-688a52"
     ]
   },
   {
@@ -266,9 +357,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "n-able-shuts-n-central-cloud-after-critical-vulner-15079bec",
-    "title": "N‑able Shuts N‑central Cloud After Critical Vulnerabilities Discovered",
-    "summary": "N‑able shut down its N‑central cloud after discovering critical vulnerabilities that enable remote code execution and privilege escalation. Dubbed 'Able2Shell', the flaws lack public proof‑of‑concepts but could let attackers fully compromise affected servers. N‑able advises customers to immediately shut down on‑premises installations and apply forthcoming patches to mitigate the risk.",
+    "slug": "n-able-shuts-down-n-central-cloud-over-able2shell-e2990899",
+    "title": "N-Able Shuts Down N-Central Cloud Over 'Able2Shell' Zero-Day Vulnerabilities",
+    "summary": "N-Able took its N-Central cloud platform offline after the 'Able2Shell' vulnerability set, comprising over 30 zero-days enabling remote code execution and privilege escalation, was publicly disclosed with proof-of-concept exploits. The flaws allow full server compromise across hosted and on-premises deployments. N-Able urges immediate shutdown of all N-Central instances pending vendor patches.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
@@ -279,14 +370,18 @@ export const news: NewsBrief[] = [
       {
         "source": "Huntress",
         "sourceUrl": "https://www.huntress.com/blog/n-able-disables-cloud-services-following-disclosure-of-able2shell-exploit-chains"
+      },
+      {
+        "source": "The Hacker News",
+        "sourceUrl": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html"
       }
     ],
     "aliases": [
-      "n-able-shuts-n-central-cloud-after-critical-vulner",
-      "article-15079bec",
-      "15079bec",
-      "n-able-shuts-n-central-cloud-after-critical-vulner-742e0a",
-      "n-able-shuts-n-central-cloud-after-critical-vulnerabilities-"
+      "n-able-shuts-down-n-central-cloud-over-able2shell",
+      "article-e2990899",
+      "e2990899",
+      "n-able-shuts-down-n-central-cloud-over-able2shell-742e0a",
+      "n-able-shuts-down-n-central-cloud-over-able2shell-zero-day-v"
     ]
   },
   {
@@ -9516,104 +9611,6 @@ export const news: NewsBrief[] = [
       "1b52e126",
       "microsoft-edge-fixes-chromium-use-after-free-cve-2-744db7",
       "microsoft-edge-fixes-chromium-use-after-free-cve-2026-76025"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-addresses-chromium-memory-corruptio-08e9a41a",
-    "title": "Microsoft Edge Addresses Chromium Memory‑Corruption CVE‑2026‑76026",
-    "summary": "Microsoft Edge (Chromium-based) is affected by a memory‑corruption flaw in Chromium, identified as CVE‑2026‑76026. The defect arises from improper handling of buffer boundaries during rendering, potentially allowing arbitrary code execution if exploited. Microsoft has released an update that incorporates Chromium's patch; users should install the latest Edge update or apply the Chrome release notes patch.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76026",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-addresses-chromium-memory-corruptio",
-      "article-08e9a41a",
-      "08e9a41a",
-      "microsoft-edge-addresses-chromium-memory-corruptio-744db7",
-      "microsoft-edge-addresses-chromium-memory-corruption-cve-2026"
-    ]
-  },
-  {
-    "slug": "chromium-use-after-free-cve-2026-119269-fixed-in-e-afbd46cb",
-    "title": "Chromium Use‑After‑Free CVE‑2026‑119269 Fixed in Edge",
-    "summary": "A use‑after‑free flaw identified as CVE‑2026‑119269 exists in Chromium, the engine powering Microsoft Edge (Chromium‑based). The flaw permits memory corruption that could enable arbitrary code execution, yet no exploitation or public PoC exists. Microsoft Edge incorporates the Chromium patch; users should update to the latest Edge or Chrome release, per Google Chrome’s release notes, to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119269",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-use-after-free-cve-2026-119269-fixed-in-e",
-      "article-afbd46cb",
-      "afbd46cb",
-      "chromium-use-after-free-cve-2026-119269-fixed-in-e-1fe8ab",
-      "chromium-use-after-free-cve-2026-119269-fixed-in-edge"
-    ]
-  },
-  {
-    "slug": "microsoft-addresses-chromium-cve-2026-119271-use-a-04539ca4",
-    "title": "Microsoft Addresses Chromium CVE-2026-119271 Use-After-Free",
-    "summary": "Microsoft released a security update for Chromium CVE-2026-119271, a use‑after‑free flaw in Edge (Chromium‑based). The vulnerability could enable arbitrary code execution if exploited, but no active exploitation or public PoC has been reported. Edge users should apply the latest update via Windows Update or the Edge update channel to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119271",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119271"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-addresses-chromium-cve-2026-119271-use-a",
-      "article-04539ca4",
-      "04539ca4",
-      "microsoft-addresses-chromium-cve-2026-119271-use-a-1fe8aa",
-      "microsoft-addresses-chromium-cve-2026-119271-use-after-free"
-    ]
-  },
-  {
-    "slug": "chromium-out-of-bounds-read-vulnerability-7a1be3c8",
-    "title": "Chromium Out-of-Bounds Read Vulnerability",
-    "summary": "Chromium out‑of‑bounds read flaw (CVE‑2026‑119272) affects Microsoft Edge (Chromium‑based) via its Chromium engine. The bug permits memory reads beyond bounds, exposing sensitive data, and is a high‑severity memory corruption vulnerability. Microsoft Edge resolves the issue by integrating the latest Chromium patch; users should update to the newest Edge release or review Google Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119272",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-out-of-bounds-read-vulnerability",
-      "article-7a1be3c8",
-      "7a1be3c8",
-      "chromium-out-of-bounds-read-vulnerability-1fe8aa"
-    ]
-  },
-  {
-    "slug": "chromium-vulnerability-cve-2026-119265-causes-memo-7f308fa7",
-    "title": "Chromium Vulnerability CVE-2026-119265 Causes Memory Corruption",
-    "summary": "A memory corruption flaw, identified as CVE-2026-119265, affects Chromium components used by Microsoft Edge. The defect arises from improper handling of memory buffers, potentially allowing attackers to corrupt data or crash the browser; no exploitation reported. Microsoft Edge incorporates the fix via Chromium updates; users should install the latest Edge release or consult Google Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119265",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119265"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-vulnerability-cve-2026-119265-causes-memo",
-      "article-7f308fa7",
-      "7f308fa7",
-      "chromium-vulnerability-cve-2026-119265-causes-memo-1fe8ab",
-      "chromium-vulnerability-cve-2026-119265-causes-memory-corrupt"
     ]
   }
 ];
