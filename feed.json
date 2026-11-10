@@ -1,5 +1,69 @@
 [
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
+    "title": "OpenClaw AI Agents Deliver Malware to Windows and macOS",
+    "headline": "OpenClaw AI Agents Deliver Malware to Windows and macOS",
+    "summary": "OpenClaw operators have deployed over 575 AI‑driven skills that deliver malware to Windows and macOS endpoints. They use stolen credentials, AI models for reconnaissance and exploitation, and tools that suppress intrusion detection, coordinated via WeChat and LINE. Teams should monitor credential activity, block known OpenClaw signatures, and enforce multi‑factor authentication to counter this threat.",
+    "category": "GENERAL",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-10T05:30:59.000Z",
+    "ingestedAt": "2026-11-10T05:43:13.578Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/10/cybersecurity-jobs-available-right-now-november-10-2026/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/cybersecurity-jobs-available-right-now-november-10-2026/",
+    "title": "Application Security Engineer Position Open at ONE ZERO BANK",
+    "headline": "Application Security Engineer Position Open at ONE ZERO BANK",
+    "summary": "ONE ZERO BANK in Israel is recruiting an Application Security Engineer to integrate security into the software development lifecycle. The role involves threat modeling, vulnerability assessment of web, mobile, API, CI/CD, and supply chain components, and automating security controls with AI tools. Candidates should have experience in secure coding practices and DevSecOps tooling.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-10T05:00:58.000Z",
+    "ingestedAt": "2026-11-10T05:43:08.808Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/10/cybersecurity-jobs-available-right-now-november-10-2026/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/trusted-by-default-qubole-cross-account-access-abused-i",
+    "sourceUrl": "https://cybernewsai.com/blog/trusted-by-default-qubole-cross-account-access-abused-i",
+    "title": "Qubole Cross‑Account Access Vulnerability Abused",
+    "headline": "Qubole Cross‑Account Access Vulnerability Abused",
+    "summary": "Qubole’s cross‑account access flaw enabled attackers to reach resources in other accounts, bypassing intended isolation controls. The root cause is a misconfigured IAM policy that grants excessive permissions, allowing credential reuse across accounts and leading to unauthorized data exposure. Security teams should apply the vendor‑issued patch immediately, review cross‑account permissions, and deploy detection rules to monitor anomalous access patterns.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-10T04:25:43.000Z",
+    "ingestedAt": "2026-11-10T05:43:20.038Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybernewsai.com/blog/trusted-by-default-qubole-cross-account-access-abused-i",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
+    "sourceUrl": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
+    "title": "Google Patches CVE-2026-125350 Chrome Zero‑Day",
+    "headline": "Google Patches CVE-2026-125350 Chrome Zero‑Day",
+    "summary": "Google has released a patch for CVE-2026-125350, a Chrome zero‑day that lets remote attackers execute malicious code in the browser. The flaw, exploited in the wild, permits arbitrary code execution via a crafted web page and carries a CVSS score of 9.8. Users should update to Chrome 157.0.8103.50/51 on Windows and Mac, or 157.0.8103.50 on Linux, to mitigate the risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-10T04:21:10.000Z",
+    "ingestedAt": "2026-11-10T05:43:08.808Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/",
     "sourceUrl": "https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/",
     "title": "Satirical Terminal2Shell Claims Highlight Security Marketing Parody",
@@ -18,18 +82,23 @@
   {
     "id": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
     "sourceUrl": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
-    "title": "N‑able Shuts N‑central Servers Over 33 Zero‑Day Vulnerabilities",
-    "headline": "N‑able Shuts N‑central Servers Over 33 Zero‑Day Vulnerabilities",
-    "summary": "N‑able disabled its hosted N‑central environments worldwide after an independent researcher disclosed 33 zero‑day vulnerabilities and Able2Shell exploit code. The flaws enable remote code execution via unvalidated input in the N‑central management interface, with PoC code available, posing data exfiltration risk. N‑able advised on‑premises customers to take N‑central offline until a patch is released and is developing a remediation update.",
+    "title": "N‑able N‑central Exposes 30+ Zero‑Day Vulnerabilities, Urgent Patch Released",
+    "headline": "N‑able N‑central Exposes 30+ Zero‑Day Vulnerabilities, Urgent Patch Released",
+    "summary": "N‑able N‑central software was exposed to more than 30 zero‑day vulnerabilities, enabling remote code execution and privilege escalation. The flaws stem from inadequate input validation and weak session handling, allowing attackers to bypass authentication without credentials. N‑able issued an urgent patch, disabled hosted environments worldwide, and urged customers to apply fixes immediately and monitor logs for anomalies.",
     "category": "VULNERABILITY",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "Cyber Security News",
     "publishedAt": "2026-11-10T02:34:38.000Z",
     "ingestedAt": "2026-11-10T03:43:09.417Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/n-able-takes-cloud-platform-offline-after-30-zero-days"
+      }
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
@@ -1417,18 +1486,23 @@
   {
     "id": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
     "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "title": "CISA Adds Four Exploited Vulnerabilities to KEV Catalog",
-    "headline": "CISA Adds Four Exploited Vulnerabilities to KEV Catalog",
-    "summary": "CISA added four actively exploited vulnerabilities to its KEV catalog: CVE-2026-102895 (GPUStack), CVE-2026-116779 (SignalWire FreeSwitch), CVE-2026-123158 (OpenBSD OpenSSH), and CVE-2026-123218 (IBM Aspera Faspex). The flaws involve improper authentication, code injection, unexpected status handling, and incorrect authorization, allowing attackers to gain unauthorized access or execute arbitrary code.",
+    "title": "CISA Adds Four Actively Exploited Zero‑Day Vulnerabilities to KEV Catalog",
+    "headline": "CISA Adds Four Actively Exploited Zero‑Day Vulnerabilities to KEV Catalog",
+    "summary": "CISA has added four actively exploited zero‑day vulnerabilities—CVE‑2026‑102895 (GPUStack), CVE‑2026‑116779 (SignalWire FreeSwitch), CVE‑2026‑123158 (OpenSSH), and CVE‑2026‑123218 (IBM Aspera Faspex)—to its KEV catalog. The flaws enable unauthenticated remote code execution, with public proof‑of‑concepts and real‑world exploitation already documented. Affected vendors have released patches; security teams should apply updates immediately and monitor for exploitation indicators.",
     "category": "CVE",
-    "severity": "HIGH",
+    "severity": "CRITICAL",
     "source": "CISA",
     "publishedAt": "2026-11-09T12:00:00.000Z",
     "ingestedAt": "2026-11-09T22:43:23.142Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cisa-adds-four-known-exploited-vulnerabilities-to-catal"
+      }
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:96238",
@@ -3794,9 +3868,9 @@
   {
     "id": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
     "sourceUrl": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-    "title": "Microsoft Patches Critical Paint RCE Flaw CVE-2026-83844 via Store Update",
-    "headline": "Microsoft Patches Critical Paint RCE Flaw CVE-2026-83844 via Store Update",
-    "summary": "Microsoft released a patch for a critical remote code execution vulnerability (CVE-2026-83844) in Windows Paint. The out-of-bounds read flaw allows arbitrary code execution via crafted images with a 9.2 CVSS score. The fix is only available through the Microsoft Store (build 11.2609.401.0), not Windows Update, requiring manual installation.",
+    "title": "Microsoft Patches Critical Windows Paint RCE CVE-2026-83844 via Store Update",
+    "headline": "Microsoft Patches Critical Windows Paint RCE CVE-2026-83844 via Store Update",
+    "summary": "Microsoft patched a critical remote code execution flaw (CVE-2026-83844) in Windows Paint that lets attackers run arbitrary code via crafted images. The flaw, triggered by a malformed image, has a 9.2 CVSS score and was discovered through telemetry analysis. Microsoft released the fix via the Microsoft Store (build 11.2609.401.0) and urges users to install it immediately and monitor for exploitation.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
@@ -3809,6 +3883,10 @@
       {
         "source": "Dark Reading",
         "sourceUrl": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion"
+      },
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/microsoft-fixes-rce-bug-in-windows-paint-after-weeks-of"
       }
     ],
     "cves": [
@@ -8341,70 +8419,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119267",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119268",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119268",
-    "title": "Edge Addresses Chromium Integer Overflow CVE-2026-119268",
-    "headline": "Edge Addresses Chromium Integer Overflow CVE-2026-119268",
-    "summary": "Microsoft Edge (Chromium-based) is affected by an integer overflow flaw, CVE-2026-119268, in Chromium. The overflow occurs during integer arithmetic, enabling memory corruption and code execution if a crafted page is processed, though no public exploit is known. Microsoft fixed the issue in Edge; users should update or apply the patch referenced in Google Chrome releases.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-05T01:43:34.941Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119268",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262",
-    "title": "Chromium Improper Input Validation CVE-2026-119262",
-    "headline": "Chromium Improper Input Validation CVE-2026-119262",
-    "summary": "CVE-2026-119262 exposes improper input validation in Chromium, impacting Microsoft Edge (Chromium-based) through its Chromium engine. The flaw permits malformed input to bypass checks, potentially causing memory corruption or denial of service; no public exploit reported, CVSS undisclosed. Edge applies the fix via its Chromium update; users should install the latest release or consult Google Chrome release notes for patch details.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-05T00:43:19.627Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263",
-    "title": "Chromium Memory Corruption CVE-2026-119263",
-    "headline": "Chromium Memory Corruption CVE-2026-119263",
-    "summary": "CVE-2026-119263 exposes memory corruption in Chromium, impacting Microsoft Edge. Crafted input can corrupt memory, potentially causing crashes or RCE; no exploitation reported, CVSS undisclosed, and no evidence of exploitation in the wild. Edge applies the fix via its Chromium update; users should install the latest release or consult Chrome release notes for patch details.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-05T00:43:19.627Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264",
-    "title": "Microsoft Edge Patches Upstream Chromium Memory Corruption Flaw",
-    "headline": "Microsoft Edge Patches Upstream Chromium Memory Corruption Flaw",
-    "summary": "Microsoft Edge received an update addressing a memory corruption flaw, identified as CVE-2026-119264, ingested from upstream Chromium components. The memory corruption vulnerability originated in Chrome, creating technical risks for Chromium-based browsers if left unpatched. Administrators and users should update Microsoft Edge to the latest build incorporating the upstream Google Chrome security patches.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-04T23:48:41.768Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264",
     "additionalSources": []
   }
 ]
