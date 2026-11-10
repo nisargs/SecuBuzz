@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+    "title": "Vanderbilt University Targeted by BYOD Ransomware Attack",
+    "headline": "Vanderbilt University Targeted by BYOD Ransomware Attack",
+    "summary": "A ransomware gang called BYOD claimed to have encrypted Vanderbilt University’s databases and exfiltrated sensitive student, employee, and research data. The attack used credential‑stealing techniques to access university systems, but no specific vulnerability or CVE is cited. The university has issued a response notice, is coordinating with law enforcement, and recommends enforcing MFA and isolating affected systems.",
+    "category": "RANSOMWARE",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-09T23:52:12.000Z",
+    "ingestedAt": "2026-11-10T00:43:09.269Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://ubuntu.com/security/notices/USN-8890-3",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8890-3",
+    "title": "Ubuntu libsoup Regression Introduces Multiple CVE Vulnerabilities",
+    "headline": "Ubuntu libsoup Regression Introduces Multiple CVE Vulnerabilities",
+    "summary": "Ubuntu’s libsoup regression introduced CVE-2026-4271, CVE-2026-5119, and related flaws in HTTP/2, HTTPS proxy, and chunked request handling. Remote attackers could use these to cause DoS, steal sensitive data, or bypass controls, though no active exploitation is known. Ubuntu’s USN-8890-3 patch addresses the regressions; administrators should apply the update promptly and monitor for service anomalies.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-09T23:12:32.000Z",
+    "ingestedAt": "2026-11-10T00:43:09.269Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-8890-3",
+    "additionalSources": []
+  },
+  {
     "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-175-aws/",
     "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-175-aws/",
     "title": "AWS Braket SDK Exposes Two CVE Vulnerabilities",
@@ -8369,37 +8401,5 @@
         "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118321"
       }
     ]
-  },
-  {
-    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-5mQn2U5z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Unified+Communications+Manager+Cross-Site+Scripting+Vulnerability%26vs_k%3D1",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-5mQn2U5z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Unified+Communications+Manager+Cross-Site+Scripting+Vulnerability%26vs_k%3D1",
-    "title": "Cisco Unified CM Vulnerable to Unauthenticated XSS",
-    "headline": "Cisco Unified CM Vulnerable to Unauthenticated XSS",
-    "summary": "A cross‑site scripting flaw in Cisco Unified Communications Manager’s web interface allows unauthenticated attackers to inject malicious scripts into user sessions. The flaw stems from insufficient input validation, letting attackers run arbitrary code in the browser and access sensitive data. Cisco released patches; administrators should apply them immediately as no workarounds exist.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cisco PSIRT",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-04T18:43:16.018Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cucm-xss-5mQn2U5z?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Unified+Communications+Manager+Cross-Site+Scripting+Vulnerability%26vs_k%3D1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-cert-mE9BD5GO?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerability%26vs_k%3D1",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-cert-mE9BD5GO?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerability%26vs_k%3D1",
-    "title": "Cisco ISE Authorization Bypass Vulnerability",
-    "headline": "Cisco ISE Authorization Bypass Vulnerability",
-    "summary": "A flaw in Cisco ISE and ISE‑PIC lets unauthenticated remote attackers obtain endpoint identity certificates via crafted requests. The issue arises from missing authorization checks, and the CVE‑2026‑20241 advisory rates the impact as medium, publicly disclosed. Cisco released patches that address the vulnerability; no workarounds exist, so apply updates immediately.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cisco PSIRT",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-04T18:03:19.973Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-cert-mE9BD5GO?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerability%26vs_k%3D1",
-    "additionalSources": []
   }
 ]
