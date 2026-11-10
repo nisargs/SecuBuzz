@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 17:45:29 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 17:58:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:97386: Important: go-fdo-client security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97386-important-go-fdo-client-security-u-585d17b2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97386-important-go-fdo-client-security-u-585d17b2</guid>
+      <description><![CDATA[An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:54:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97386">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97521: Important: microcode_ctl security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97521-important-microcode-ctl-security-b-18ff9260</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97521-important-microcode-ctl-security-b-18ff9260</guid>
+      <description><![CDATA[An update for microcode_ctl is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 17:54:38 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97521">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:97456: Moderate: krb5 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-97456-moderate-krb5-security-update-142bdc41</link>
@@ -26,6 +44,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Notion Confirms AI Chat Transcripts Exposed in Fireworks AI Breach, Affecting Customer Workspaces</title>
+      <link>https://secubuzz.com/news/notion-confirms-ai-chat-transcripts-exposed-in-fir-4ab5ac1f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/notion-confirms-ai-chat-transcripts-exposed-in-fir-4ab5ac1f</guid>
+      <description><![CDATA[Notion has confirmed that a security incident at Fireworks AI exposed Notion AI chat transcripts linked to fewer than 1% of its customer workspaces. Insights, a feature that helps teams understand their AI usage, used the affected conversations.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:54:37 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/notion-confirms-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>Ivanti Issues Patches for Endpoint Manager, CSA Vulnerabilities</title>
       <link>https://secubuzz.com/news/ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce</guid>
@@ -41,6 +68,15 @@
       <description><![CDATA[A critical authentication bypass flaw in Xen Orchestra is actively exploited to grant admin privileges and seize XCP‑ng virtualization hosts. The flaw bypasses login checks, giving attackers full control over host management interfaces, and is used in multiple attacks. Xen Orchestra issued an urgent patch; administrators should apply it immediately and audit host authentication logs for anomalies.]]></description>
       <pubDate>Tue, 10 Nov 2026 16:17:16 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97533: Important: podman security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6</guid>
+      <description><![CDATA[An update for podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:07:42 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97533">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -68,6 +104,15 @@
       <description><![CDATA[Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials.]]></description>
       <pubDate>Tue, 10 Nov 2026 15:59:19 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97344: Important: rhc-worker-playbook security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97344-important-rhc-worker-playbook-secu-2f648fa6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97344-important-rhc-worker-playbook-secu-2f648fa6</guid>
+      <description><![CDATA[An update for rhc-worker-playbook is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:58:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97344">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -411,51 +456,6 @@
       <pubDate>Tue, 10 Nov 2026 10:23:06 GMT</pubDate>
       <source url="https://cybersecuritynews.com/iranian-hackers-supermarket-cyberattacks/">Cyber Security News</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities</title>
-      <link>https://secubuzz.com/news/apple-patches-imessage-group-chat-privacy-flaws-an-be674176</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-patches-imessage-group-chat-privacy-flaws-an-be674176</guid>
-      <description><![CDATA[An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined.]]></description>
-      <pubDate>Tue, 10 Nov 2026 10:16:51 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Attackers Exploit Barracuda ESG Flaws for Root Access</title>
-      <link>https://secubuzz.com/news/attackers-exploit-barracuda-esg-flaws-for-root-acc-25ab3004</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-barracuda-esg-flaws-for-root-acc-25ab3004</guid>
-      <description><![CDATA[Attackers are actively exploiting two critical Barracuda Email Security Gateway vulnerabilities to achieve root-level command execution. The flaws, recently patched by Barracuda, allow unauthenticated remote code execution on the appliance, granting full system compromise. Barracuda urges immediate application of security updates and verification of appliance integrity to prevent persistent unauthorized access.]]></description>
-      <pubDate>Tue, 10 Nov 2026 10:10:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Windows 11 26H2 Enables Default Settings Backup</title>
-      <link>https://secubuzz.com/news/windows-11-26h2-enables-default-settings-backup-cbb1595d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-11-26h2-enables-default-settings-backup-cbb1595d</guid>
-      <description><![CDATA[Windows 11 26H2 now enables settings backup by default on eligible devices. Renamed Windows Backup for Organizations, the update consolidates roaming settings management and preserves supported settings and Microsoft Store app lists during backup. Admins can adjust backup profiles via policy console; no extra patch needed beyond the 26H2 release.]]></description>
-      <pubDate>Tue, 10 Nov 2026 10:03:40 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/10/windows-settings-backup-default/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Anthropic Releases Claude Mythos 5.2 AI for Vulnerability Detection</title>
-      <link>https://secubuzz.com/news/anthropic-releases-claude-mythos-5-2-ai-for-vulner-649ae7e7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anthropic-releases-claude-mythos-5-2-ai-for-vulner-649ae7e7</guid>
-      <description><![CDATA[Anthropic released Claude Mythos 5.2, an AI model aimed at cybersecurity engineering, on November 9. The model achieved a 76.3% score on CyScenarioBench, indicating strong capability to identify zero‑day flaws. Access remains restricted to prevent misuse, and security teams can use it to locate, reproduce, and remediate vulnerabilities before exploitation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 10:03:25 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/claude-mythos-5-2-released/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SAP Fixes Four 10.0 RCE Flaws, Including NetWeaver</title>
-      <link>https://secubuzz.com/news/sap-fixes-four-10-0-rce-flaws-including-netweaver-102407d0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sap-fixes-four-10-0-rce-flaws-including-netweaver-102407d0</guid>
-      <description><![CDATA[SAP released a patch for four critical flaws, all rated CVSS 10.0, on its monthly Security Patch Day. The vulnerabilities, including CVE-2026-83844, allow unauthenticated remote code execution on SAP NetWeaver application servers and the Web Dispatcher. SAP has issued patches for all affected components; security teams should apply them immediately to prevent exploitation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 10:02:40 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

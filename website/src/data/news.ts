@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-97386-important-go-fdo-client-security-u-585d17b2",
+    "title": "RHSA-2026:97386: Important: go-fdo-client security update",
+    "summary": "An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97386",
+    "publishedAt": "2026-11-10T17:54:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97386-important-go-fdo-client-security-u",
+      "article-585d17b2",
+      "585d17b2",
+      "rhsa-2026-97386-important-go-fdo-client-security-u-37d760",
+      "rhsa-2026-97386-important-go-fdo-client-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97521-important-microcode-ctl-security-b-18ff9260",
+    "title": "RHSA-2026:97521: Important: microcode_ctl security, bug fix, and enhancement update",
+    "summary": "An update for microcode_ctl is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97521",
+    "publishedAt": "2026-11-10T17:54:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97521-important-microcode-ctl-security-b",
+      "article-18ff9260",
+      "18ff9260",
+      "rhsa-2026-97521-important-microcode-ctl-security-b-37d759",
+      "rhsa-2026-97521-important-microcode-ctl-security-bug-fix-and"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97456-moderate-krb5-security-update-142bdc41",
     "title": "RHSA-2026:97456: Moderate: krb5 security update",
     "summary": "An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -48,6 +86,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "notion-confirms-ai-chat-transcripts-exposed-in-fir-4ab5ac1f",
+    "title": "Notion Confirms AI Chat Transcripts Exposed in Fireworks AI Breach, Affecting Customer Workspaces",
+    "summary": "Notion has confirmed that a security incident at Fireworks AI exposed Notion AI chat transcripts linked to fewer than 1% of its customer workspaces. Insights, a feature that helps teams understand their AI usage, used the affected conversations.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/notion-confirms-data-breach/",
+    "publishedAt": "2026-11-10T16:54:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "notion-confirms-ai-chat-transcripts-exposed-in-fir",
+      "article-4ab5ac1f",
+      "4ab5ac1f",
+      "notion-confirms-ai-chat-transcripts-exposed-in-fir-53a2c6",
+      "notion-confirms-ai-chat-transcripts-exposed-in-fireworks-ai-"
+    ]
+  },
+  {
     "slug": "ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce",
     "title": "Ivanti Issues Patches for Endpoint Manager, CSA Vulnerabilities",
     "summary": "Ivanti released patches for Endpoint Manager, Endpoint Manager Mobile, Sentry, and Cloud Services Application after discovering flaws enabling remote code execution, certificate tampering, data exposure, and service disruption. Two critical vulnerabilities in Endpoint Manager and Cloud Services Application pose the highest risk, requiring code execution privileges. Administrators should apply the updates immediately and verify certificate trust chains to mitigate exploitation.",
@@ -82,6 +139,25 @@ export const news: NewsBrief[] = [
       "article-8e029e9c",
       "8e029e9c",
       "xen-orchestra-auth-bypass-enables-vm-server-hijack-7915fe"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6",
+    "title": "RHSA-2026:97533: Important: podman security, bug fix, and enhancement update",
+    "summary": "An update for podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97533",
+    "publishedAt": "2026-11-10T16:07:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97533-important-podman-security-bug-fix",
+      "article-a41b34f6",
+      "a41b34f6",
+      "rhsa-2026-97533-important-podman-security-bug-fix-37d759",
+      "rhsa-2026-97533-important-podman-security-bug-fix-and-enhanc"
     ]
   },
   {
@@ -141,6 +217,25 @@ export const news: NewsBrief[] = [
       "752325ce",
       "binance-warns-of-ios-flaw-that-could-leak-crypto-w-3c2f2c",
       "binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secr"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97344-important-rhc-worker-playbook-secu-2f648fa6",
+    "title": "RHSA-2026:97344: Important: rhc-worker-playbook security, bug fix, and enhancement update",
+    "summary": "An update for rhc-worker-playbook is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97344",
+    "publishedAt": "2026-11-10T15:58:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97344-important-rhc-worker-playbook-secu",
+      "article-2f648fa6",
+      "2f648fa6",
+      "rhsa-2026-97344-important-rhc-worker-playbook-secu-37d760",
+      "rhsa-2026-97344-important-rhc-worker-playbook-security-bug-f"
     ]
   },
   {
@@ -1574,6 +1669,27 @@ export const news: NewsBrief[] = [
       "778ad60b",
       "security-teams-prioritize-ai-agent-behavior-monito-28e32c",
       "security-teams-prioritize-ai-agent-behavior-monitoring"
+    ]
+  },
+  {
+    "slug": "zdi-26-898-wireshark-lorawan-decryption-numeric-tr-f8e5e8d0",
+    "title": "ZDI-26-898: Wireshark LoRaWAN Decryption Numeric Truncation Error Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Wireshark. Authentication is not required to exploit this vulnerability. The vulnerability is tracked as CVE-2026-83844.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-898/",
+    "publishedAt": "2026-11-10T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-83844"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-898-wireshark-lorawan-decryption-numeric-tr",
+      "article-f8e5e8d0",
+      "f8e5e8d0",
+      "zdi-26-898-wireshark-lorawan-decryption-numeric-tr-6f3cb6",
+      "zdi-26-898-wireshark-lorawan-decryption-numeric-truncation-e"
     ]
   },
   {
@@ -9517,116 +9633,6 @@ export const news: NewsBrief[] = [
       "article-e95c8772",
       "e95c8772",
       "ruby-2-5-security-update-for-rhel-37d842"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95512-important-ruby-2-5-security-update-ee7dadcf",
-    "title": "RHSA-2026:95512: Important: ruby:2.5 security update",
-    "summary": "An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95512",
-    "publishedAt": "2026-11-05T12:05:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95512-important-ruby-2-5-security-update",
-      "article-ee7dadcf",
-      "ee7dadcf",
-      "rhsa-2026-95512-important-ruby-2-5-security-update-37d842"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95505-important-resteasy-security-update-70e4ec9c",
-    "title": "RHSA-2026:95505: Important: resteasy security update",
-    "summary": "An update for resteasy is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95505",
-    "publishedAt": "2026-11-05T12:03:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95505-important-resteasy-security-update",
-      "article-70e4ec9c",
-      "70e4ec9c",
-      "rhsa-2026-95505-important-resteasy-security-update-37d842"
-    ]
-  },
-  {
-    "slug": "govt-urges-hardening-of-industrial-refrigeration-s-92a6b86c",
-    "title": "Govt Urges Hardening of Industrial Refrigeration Systems",
-    "summary": "Malicious cyber activity targets industrial refrigeration and cold chain monitoring systems worldwide. The activity exploits weak authentication, outdated firmware, and unpatched software, potentially allowing remote manipulation of temperature controls and data logging. The authoring organizations recommend enforcing strong authentication, applying vendor patches, and conducting comprehensive system inventory to mitigate risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems",
-    "publishedAt": "2026-11-05T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "govt-urges-hardening-of-industrial-refrigeration-s",
-      "article-92a6b86c",
-      "92a6b86c",
-      "govt-urges-hardening-of-industrial-refrigeration-s-23ecb5",
-      "govt-urges-hardening-of-industrial-refrigeration-systems"
-    ]
-  },
-  {
-    "slug": "post-quantum-questions-to-ask-your-vendors-56956716",
-    "title": "Post-Quantum Questions to Ask Your Vendors",
-    "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). Visit CISA’s PQC Initiative page for additional resources.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
-    "publishedAt": "2026-11-05T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "post-quantum-questions-to-ask-your-vendors",
-      "article-56956716",
-      "56956716",
-      "post-quantum-questions-to-ask-your-vendors-3f4113"
-    ]
-  },
-  {
-    "slug": "scammers-exploit-gta-6-hype-for-malware-crypto-sca-7d177acf",
-    "title": "Scammers Exploit GTA 6 Hype for Malware Crypto Scams",
-    "summary": "Scammers are exploiting the upcoming Grand Theft Auto VI release to distribute malware and run cryptocurrency scams via fake build sites. The campaign targets users July–October 2026, using domains that imitate leaker CyberLeek and promise early access or nonexistent mobile versions. Defenders should block these domains, warn users about phishing, and monitor for suspicious downloads or crypto wallet activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/gta-6-scams-fake-leaks-early-access/",
-    "publishedAt": "2026-11-05T11:41:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "scammers-exploit-gta-6-hype-for-malware-crypto-sca",
-      "article-7d177acf",
-      "7d177acf",
-      "scammers-exploit-gta-6-hype-for-malware-crypto-sca-101afe",
-      "scammers-exploit-gta-6-hype-for-malware-crypto-scams"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-november-5th-2026-c6307e8f",
-    "title": "ISC Stormcast November 5th 2026",
-    "summary": "SANS Internet Storm Center published its Thursday Stormcast covering threat intelligence, incident reports, and defensive guidance for the week ending November 5th 2026. The broadcast aggregates actionable cybersecurity intelligence from multiple sources including incident handlers and threat analysts. Organizations should monitor ISC feeds for emerging threats and apply recommended mitigations accordingly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33490",
-    "publishedAt": "2026-11-05T11:25:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-november-5th-2026",
-      "article-c6307e8f",
-      "c6307e8f",
-      "isc-stormcast-november-5th-2026-57dd7e"
     ]
   }
 ];
