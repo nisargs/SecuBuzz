@@ -384,6 +384,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-releases-ios-27-2-1-security-update-8051478b",
+    "title": "Apple Releases iOS 27.2.1 Security Update",
+    "summary": "Apple released iOS 27.2.1 (build 24B156/24B91034) to iOS users, addressing multiple security vulnerabilities and performance issues. The update patches critical flaws that could allow remote code execution, data leakage, or denial‑of‑service attacks on affected devices. Users are urged to download the update via the App Store immediately to maintain device security and stability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026a",
+    "publishedAt": "2026-11-09T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Apple Security Updates",
+        "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026b"
+      }
+    ],
+    "aliases": [
+      "apple-releases-ios-27-2-1-security-update",
+      "article-8051478b",
+      "8051478b",
+      "apple-releases-ios-27-2-1-security-update-70fac5"
+    ]
+  },
+  {
+    "slug": "apple-releases-ipados-27-2-1-24b156-2dd77244",
+    "title": "Apple Releases iPadOS 27.2.1 (24B156)",
+    "summary": "Apple released iPadOS 27.2.1 (24B156) to iPad users, delivering updated security patches and performance improvements. The update is available for download through the App Store, ensuring device compatibility with the latest iPadOS version and improved system stability. Users should install the update promptly to maintain security posture and benefit from stability enhancements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026c",
+    "publishedAt": "2026-11-09T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-releases-ipados-27-2-1-24b156",
+      "article-2dd77244",
+      "2dd77244",
+      "apple-releases-ipados-27-2-1-24b156-70fac5"
+    ]
+  },
+  {
     "slug": "abe-office-malware-steals-chrome-passwords-eded8374",
     "title": "Abe Office Malware Steals Chrome Passwords",
     "summary": "A new remote-access trojan, Abe Office, masquerades as an office helper and steals Chrome passwords and cookies, bypassing App-Bound Encryption. Researchers found the malware exploits weak protection in Chrome’s encryption wrapper, using a code-signing certificate to evade detection and capture credentials. Security teams should block the Abe Office executable, revoke the signed certificate, and enforce multi-factor authentication for privileged accounts.",
@@ -5706,21 +5747,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chrome-157-released-for-android-a5329e91",
-    "title": "Chrome 157 Released for Android",
-    "summary": "Google Chrome released version 157 for Android, adding stability and performance improvements. The update includes the same security fixes as the corresponding desktop releases, ensuring consistent protection across platforms. Users should install the new package from Google Play within the next few days to benefit from the latest patches and performance gains.",
+    "slug": "google-releases-chrome-157-for-android-with-securi-f061d9d3",
+    "title": "Google Releases Chrome 157 for Android with Security Fixes",
+    "summary": "Google released Chrome 157 for Android, aligning with the desktop version 157.0.8103.50, to provide security fixes and performance enhancements. The update contains the same security patches applied to Windows, macOS, and Linux releases, ensuring consistency without new vulnerabilities. Users should install the update via Google Play within the next few days to maintain protection and benefit from stability improvements.",
     "category": "General",
     "severity": "LOW",
     "source": "Google Chrome Releases",
     "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_01050980700.html",
     "publishedAt": "2026-11-05T22:00:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Google Chrome Releases",
+        "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_01533302390.html"
+      }
+    ],
     "aliases": [
-      "chrome-157-released-for-android",
-      "article-a5329e91",
-      "a5329e91",
-      "chrome-157-released-for-android-1135d4"
+      "google-releases-chrome-157-for-android-with-securi",
+      "article-f061d9d3",
+      "f061d9d3",
+      "google-releases-chrome-157-for-android-with-securi-1135d4",
+      "google-releases-chrome-157-for-android-with-security-fixes"
     ]
   },
   {
@@ -9554,49 +9601,6 @@ export const news: NewsBrief[] = [
       "article-5ac699d0",
       "5ac699d0",
       "microsoft-edge-addresses-chromium-cve-2026-119261-1fe8ab"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-fixes-chromium-reference-resolution-69d7c85f",
-    "title": "Microsoft Edge Fixes Chromium Reference Resolution Flaw",
-    "summary": "An incorrect reference resolution vulnerability in the Chromium rendering engine impacts Microsoft Edge. The defect allows attackers to manipulate pointer references during DOM traversal, potentially leading to memory corruption and arbitrary code execution. Microsoft issued an emergency patch to remediate this critical flaw. Users must update their browser to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-edge-fixes-chromium-reference-resolution",
-      "article-69d7c85f",
-      "69d7c85f",
-      "microsoft-edge-fixes-chromium-reference-resolution-1fe91c",
-      "microsoft-edge-fixes-chromium-reference-resolution-flaw"
-    ]
-  },
-  {
-    "slug": "microsoft-edge-patch-addresses-chromium-use-after-afe3991a",
-    "title": "Microsoft Edge Patch Addresses Chromium Use‑After‑Free Vulnerability (CVE‑2026‑119260)",
-    "summary": "Microsoft Edge users face a critical use‑after‑free flaw in the Chromium rendering engine, identified as CVE‑2026‑119260. The flaw permits attackers to execute arbitrary code within the renderer process, potentially compromising the entire browser session. Microsoft released an out‑of‑band patch and urges organizations to update Edge immediately to mitigate exploitation risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Microsoft MSRC",
-        "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118321"
-      }
-    ],
-    "aliases": [
-      "microsoft-edge-patch-addresses-chromium-use-after",
-      "article-afe3991a",
-      "afe3991a",
-      "microsoft-edge-patch-addresses-chromium-use-after-1fe8ab",
-      "microsoft-edge-patch-addresses-chromium-use-after-free-vulne"
     ]
   }
 ];
