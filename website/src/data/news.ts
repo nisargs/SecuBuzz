@@ -11,6 +11,233 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "xen-orchestra-auth-bypass-enables-vm-server-hijack-8e029e9c",
+    "title": "Xen Orchestra Auth Bypass Enables VM Server Hijack",
+    "summary": "A critical authentication bypass flaw in Xen Orchestra is actively exploited to grant admin privileges and seize XCP‑ng virtualization hosts. The flaw bypasses login checks, giving attackers full control over host management interfaces, and is used in multiple attacks. Xen Orchestra issued an urgent patch; administrators should apply it immediately and audit host authentication logs for anomalies.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+    "publishedAt": "2026-11-10T16:17:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xen-orchestra-auth-bypass-enables-vm-server-hijack",
+      "article-8e029e9c",
+      "8e029e9c",
+      "xen-orchestra-auth-bypass-enables-vm-server-hijack-7915fe"
+    ]
+  },
+  {
+    "slug": "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-2710d747",
+    "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+    "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+    "publishedAt": "2026-11-10T16:00:55.000Z",
+    "cves": [
+      "CVE-2026-105133",
+      "CVE-2026-105134"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox",
+      "article-2710d747",
+      "2710d747",
+      "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
+      "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "binance-warns-of-ios-flaw-that-could-leak-crypto-w-752325ce",
+    "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
+    "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
+    "publishedAt": "2026-11-10T15:59:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "binance-warns-of-ios-flaw-that-could-leak-crypto-w",
+      "article-752325ce",
+      "752325ce",
+      "binance-warns-of-ios-flaw-that-could-leak-crypto-w-3c2f2c",
+      "binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secr"
+    ]
+  },
+  {
+    "slug": "ivanti-releases-monthly-security-update-7d8ceb82",
+    "title": "Ivanti Releases Monthly Security Update",
+    "summary": "Ivanti publishes monthly security patches on the second Tuesday, applying fixes discovered through AI‑driven vulnerability analysis. The update cycle incorporates advanced LLMs to detect issues missed by traditional tools, emphasizing proactive vulnerability management. Security teams should apply the latest Ivanti patches promptly and review release notes for newly identified vulnerabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Ivanti Security Advisories",
+    "sourceUrl": "https://www.ivanti.com/blog/november-2026-security-update",
+    "publishedAt": "2026-11-10T15:33:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ivanti-releases-monthly-security-update",
+      "article-7d8ceb82",
+      "7d8ceb82",
+      "ivanti-releases-monthly-security-update-153446"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-bind-security-update-for-rhel9-ac091820",
+    "title": "Red Hat Releases BIND Security Update for RHEL9",
+    "summary": "An update for BIND on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities are linked to CVE references and carry moderate severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97586",
+    "publishedAt": "2026-11-10T15:29:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-bind-security-update-for-rhel9",
+      "article-ac091820",
+      "ac091820",
+      "red-hat-releases-bind-security-update-for-rhel9-37d758"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-containernetworking-plugins-securit-aa093ca2",
+    "title": "Red Hat Issues Containernetworking‑Plugins Security Update",
+    "summary": "An update for containernetworking‑plugins on Red Hat Enterprise Linux 9 addresses several security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities carry important severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97644",
+    "publishedAt": "2026-11-10T15:23:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-containernetworking-plugins-securit",
+      "article-aa093ca2",
+      "aa093ca2",
+      "red-hat-issues-containernetworking-plugins-securit-37d755",
+      "red-hat-issues-containernetworking-plugins-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97284-important-git-lfs-security-update-090e4bb8",
+    "title": "RHSA-2026:97284: Important: git-lfs security update",
+    "summary": "An update for git-lfs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97284",
+    "publishedAt": "2026-11-10T15:20:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97284-important-git-lfs-security-update",
+      "article-090e4bb8",
+      "090e4bb8",
+      "rhsa-2026-97284-important-git-lfs-security-update-37d764"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97561-important-crun-security-bug-fix-an-81ee0c21",
+    "title": "RHSA-2026:97561: Important: crun security, bug fix, and enhancement update",
+    "summary": "An update for crun is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97561",
+    "publishedAt": "2026-11-10T15:17:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97561-important-crun-security-bug-fix-an",
+      "article-81ee0c21",
+      "81ee0c21",
+      "rhsa-2026-97561-important-crun-security-bug-fix-an-37d759",
+      "rhsa-2026-97561-important-crun-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
+    "slug": "ransomware-recovery-becomes-client-retention-metri-3e699a1c",
+    "title": "Ransomware Recovery Becomes Client Retention Metric",
+    "summary": "Kaseya finds that ransomware recovery delays, poor communication, and unexpected costs erode MSP client trust, making recovery performance a retention metric. Disconnected recovery tools create these problems, while integrated workflows improve response times, transparency, and client satisfaction. MSPs should adopt unified recovery solutions to reduce delays, enhance communication, and maintain client loyalty during ransomware incidents.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
+    "publishedAt": "2026-11-10T15:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ransomware-recovery-becomes-client-retention-metri",
+      "article-3e699a1c",
+      "3e699a1c",
+      "ransomware-recovery-becomes-client-retention-metri-2eea80",
+      "ransomware-recovery-becomes-client-retention-metric"
+    ]
+  },
+  {
+    "slug": "sap-releases-patches-for-critical-icm2shell-proxyg-09424f5e",
+    "title": "SAP Releases Patches for Critical ICM2SHELL, ProxyGate Bugs",
+    "summary": "SAP has issued 42 new and updated security advisories, including nine that address critical‑severity vulnerabilities in its ICM2SHELL and ProxyGate components. The critical flaws involve improper handling of input data, potentially enabling remote code execution, but no active exploitation has been reported. SAP recommends applying the released patches immediately to mitigate the identified risks and prevent potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/",
+    "publishedAt": "2026-11-10T14:46:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sap-releases-patches-for-critical-icm2shell-proxyg",
+      "article-09424f5e",
+      "09424f5e",
+      "sap-releases-patches-for-critical-icm2shell-proxyg-567cdd",
+      "sap-releases-patches-for-critical-icm2shell-proxygate-bugs"
+    ]
+  },
+  {
+    "slug": "ai-reverse-engineering-let-researchers-add-a-new-f-4d48b7e9",
+    "title": "AI reverse engineering let researchers add a new feature to Slack",
+    "summary": "Intezer researchers used AI agents to rebuild source code for Slack, Apple’s Finder and a TinyTurla-NG sample, from a backdoor family Cisco Talos attributes to the Turla group. The rebuilt Slack ran well enough that the team added a new feature to it: AI text autocomplete, powered by a small local model.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/slack-ai-reverse-engineering/",
+    "publishedAt": "2026-11-10T14:45:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-reverse-engineering-let-researchers-add-a-new-f",
+      "article-4d48b7e9",
+      "4d48b7e9",
+      "ai-reverse-engineering-let-researchers-add-a-new-f-5d0b6c",
+      "ai-reverse-engineering-let-researchers-add-a-new-feature-to-"
+    ]
+  },
+  {
+    "slug": "north-korea-targets-drone-tech-and-software-supply-93ca9b9c",
+    "title": "North Korea Targets Drone Tech and Software Supply Chains",
+    "summary": "North Korean actors Lazarus and DeceptiveDevelopment resumed cyberespionage against drone technology and software supply chains between April and September 2026. They used stolen developer credentials to inject malicious code into open‑source projects and targeted European defense entities, widening the threat surface. Defenders should monitor supply‑chain integrity, enforce strict credential hygiene, and apply security patches to exposed development environments.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers-3/",
+    "publishedAt": "2026-11-10T14:09:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korea-targets-drone-tech-and-software-supply",
+      "article-93ca9b9c",
+      "93ca9b9c",
+      "north-korea-targets-drone-tech-and-software-supply-63ada6",
+      "north-korea-targets-drone-tech-and-software-supply-chains"
+    ]
+  },
+  {
     "slug": "critical-apache-airflow-rce-flaw-allows-attackers-724acf9f",
     "title": "Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication",
     "summary": "Apache Airflow has a critical remote code execution flaw that lets anyone with write access to the Celery message broker run code on worker nodes. The bug is tracked as CVE-2026-68982 and is classified as CWE-306, missing authentication for a critical function.",
@@ -1217,6 +1444,93 @@ export const news: NewsBrief[] = [
       "778ad60b",
       "security-teams-prioritize-ai-agent-behavior-monito-28e32c",
       "security-teams-prioritize-ai-agent-behavior-monitoring"
+    ]
+  },
+  {
+    "slug": "x-org-patches-eight-server-vulnerabilities-a-month-d475a869",
+    "title": "X.Org patches eight server vulnerabilities a month after fixing 12 others",
+    "summary": "X.Org has fixed eight vulnerabilities in the X.Org X server and Xwayland, including one in the Xorg server that lets a malicious monitor corrupt its memory. The fixes ship in xorg-server 21.1.26 and xwayland 24.1.15, and each of the eight affects versions before those two releases. The X server provides the low-level display layer for graphical desktops on many Linux and Unix systems.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-906/",
+    "publishedAt": "2026-11-10T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [
+      {
+        "source": "Help Net Security",
+        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/x-org-server-vulnerabilities-november-2026/"
+      }
+    ],
+    "aliases": [
+      "x-org-patches-eight-server-vulnerabilities-a-month",
+      "article-d475a869",
+      "d475a869",
+      "x-org-patches-eight-server-vulnerabilities-a-month-6f3d08",
+      "x-org-patches-eight-server-vulnerabilities-a-month-after-fix"
+    ]
+  },
+  {
+    "slug": "zdi-26-905-x-org-server-libxrender-renderquerypict-250501f6",
+    "title": "ZDI-26-905: X.Org Server libXrender RenderQueryPictFormats Reply Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of X.Org Server. User interaction is required to exploit this vulnerability in that the target must connect to a malicious X11 server. The following CVEs are assigned: CVE-2026-88807.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-905/",
+    "publishedAt": "2026-11-10T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-88807"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-905-x-org-server-libxrender-renderquerypict",
+      "article-250501f6",
+      "250501f6",
+      "zdi-26-905-x-org-server-libxrender-renderquerypict-6f3d08",
+      "zdi-26-905-x-org-server-libxrender-renderquerypictformats-re"
+    ]
+  },
+  {
+    "slug": "zdi-26-904-nvidia-megatron-lm-checkpoint-deseriali-2c091eb5",
+    "title": "ZDI-26-904: NVIDIA Megatron-LM Checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of NVIDIA Megatron-LM. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The following CVEs are assigned: CVE-2026-65110.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-904/",
+    "publishedAt": "2026-11-10T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-65110"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-904-nvidia-megatron-lm-checkpoint-deseriali",
+      "article-2c091eb5",
+      "2c091eb5",
+      "zdi-26-904-nvidia-megatron-lm-checkpoint-deseriali-6f3d08",
+      "zdi-26-904-nvidia-megatron-lm-checkpoint-deserialization-of-"
+    ]
+  },
+  {
+    "slug": "x-org-server-heap-overflow-enables-local-privilege-6bab7086",
+    "title": "X.Org Server Heap Overflow Enables Local Privilege Escalation",
+    "summary": "A heap-based buffer overflow in X.Org Server’s font alias resolution permits local privilege escalation on affected installations. The flaw, assigned CVE-2026-50256, has a CVSS score of 7.8 and requires low‑privileged code execution to trigger, allowing attackers to gain root access. A patch is available from the X.Org project; administrators should apply the update or disable font aliasing as a mitigation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-903/",
+    "publishedAt": "2026-11-10T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-50256"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "x-org-server-heap-overflow-enables-local-privilege",
+      "article-6bab7086",
+      "6bab7086",
+      "x-org-server-heap-overflow-enables-local-privilege-6f3d08",
+      "x-org-server-heap-overflow-enables-local-privilege-escalatio"
     ]
   },
   {
@@ -9305,315 +9619,6 @@ export const news: NewsBrief[] = [
       "63055d02",
       "openai-gpt-6-red-teaming-underperforms-exploit-tas-4752bd",
       "openai-gpt-6-red-teaming-underperforms-exploit-tasks"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95482-important-gimp-2-8-security-bug-fi-442dc4ba",
-    "title": "RHSA-2026:95482: Important: gimp:2.8 security, bug fix, and enhancement update",
-    "summary": "An update for the gimp:2.8 module is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95482",
-    "publishedAt": "2026-11-05T10:01:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95482-important-gimp-2-8-security-bug-fi",
-      "article-442dc4ba",
-      "442dc4ba",
-      "rhsa-2026-95482-important-gimp-2-8-security-bug-fi-37d845",
-      "rhsa-2026-95482-important-gimp-2-8-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-bind-security-update-for-rhel-8-4-3cf9e828",
-    "title": "Red Hat Releases Bind Security Update for RHEL 8.4",
-    "summary": "Red Hat issued a bind security update for RHEL 8.4 AMCS and EUS LLA, addressing multiple vulnerabilities. The update includes bug fixes and enhancements, with CVSS scores provided for each CVE referenced in the advisory. Customers should apply the patch immediately to mitigate critical potential exploitation of the bind service.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95477",
-    "publishedAt": "2026-11-05T09:26:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-bind-security-update-for-rhel-8-4",
-      "article-3cf9e828",
-      "3cf9e828",
-      "red-hat-releases-bind-security-update-for-rhel-8-4-37d845"
-    ]
-  },
-  {
-    "slug": "ghostmap-app-forces-android-devices-into-boot-loop-052cbc10",
-    "title": "GhostMap App Forces Android Devices into Boot Loop",
-    "summary": "A no‑permission Android app can force devices into a continuous boot loop by exploiting the GhostMap flaw. The flaw stems from improper ZIP structure handling during APK parsing, enabling a crash loop without user interaction. Users should immediately apply the vendor’s latest Android patch to eliminate the critical boot‑loop vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
-    "publishedAt": "2026-11-05T09:18:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostmap-app-forces-android-devices-into-boot-loop",
-      "article-052cbc10",
-      "052cbc10",
-      "ghostmap-app-forces-android-devices-into-boot-loop-147b87"
-    ]
-  },
-  {
-    "slug": "apple-introduces-harmful-content-scanning-for-publ-67579950",
-    "title": "Apple Introduces Harmful-Content Scanning for Public iCloud Links in iOS 27.3",
-    "summary": "Apple announced that starting with iOS 27.3, it will scan publicly shared iCloud photos and files for harmful content. The update targets links shared with “Anyone with the link” permissions, aiming to detect malware, phishing, or illicit material before delivery. Users will receive automated scans and warnings, and developers must ensure content complies with Apple’s policy and update apps accordingly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
-    "publishedAt": "2026-11-05T09:13:28.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/apple-to-scan-for-every-photo-and-file/"
-      }
-    ],
-    "aliases": [
-      "apple-introduces-harmful-content-scanning-for-publ",
-      "article-67579950",
-      "67579950",
-      "apple-introduces-harmful-content-scanning-for-publ-6b033c",
-      "apple-introduces-harmful-content-scanning-for-public-icloud-"
-    ]
-  },
-  {
-    "slug": "openai-generates-948-linux-root-exploits-in-one-ru-4e7ac37a",
-    "title": "OpenAI Generates 948 Linux Root Exploits in One Run",
-    "summary": "An automated pipeline on an upcoming OpenAI model produced 948 working exploits targeting the latest Linux kernel on stock desktop distributions. The exploits elevate ordinary users to root by exploiting kernel bugs, and the system auto‑generated patches for each flaw. Security teams should apply vendor kernel patches and monitor for similar automated exploitation tools.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/openai-linux-kernel-root-exploits/",
-    "publishedAt": "2026-11-05T09:05:06.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/openai-ai-pipeline-generates-948-linux-root-escalation"
-      }
-    ],
-    "aliases": [
-      "openai-generates-948-linux-root-exploits-in-one-ru",
-      "article-4e7ac37a",
-      "4e7ac37a",
-      "openai-generates-948-linux-root-exploits-in-one-ru-4cd5a3",
-      "openai-generates-948-linux-root-exploits-in-one-run"
-    ]
-  },
-  {
-    "slug": "banking-malware-reveals-ghostmap-crash-loop-bug-e709ff8f",
-    "title": "Banking Malware Reveals GhostMap Crash Loop Bug",
-    "summary": "Bitdefender Labs found a banking‑related Android app with no executable code or permissions that forces a Pixel 10 into a crash loop, exposing GhostMap. The flaw stems from Android’s ZIP structure handling in APKs, enabling a boot loop without user interaction. Users should apply the latest Android update and vendor patches to eliminate the GhostMap crash loop.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/ghostmap-android-bug-research/",
-    "publishedAt": "2026-11-05T09:00:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "banking-malware-reveals-ghostmap-crash-loop-bug",
-      "article-e709ff8f",
-      "e709ff8f",
-      "banking-malware-reveals-ghostmap-crash-loop-bug-58b902"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95478-important-bind-security-bug-fix-an-444d1a56",
-    "title": "RHSA-2026:95478: Important: bind security, bug fix, and enhancement update",
-    "summary": "An update for bind is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95478",
-    "publishedAt": "2026-11-05T08:58:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95478-important-bind-security-bug-fix-an",
-      "article-444d1a56",
-      "444d1a56",
-      "rhsa-2026-95478-important-bind-security-bug-fix-an-37d845",
-      "rhsa-2026-95478-important-bind-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "hacker-uses-12-ai-agents-to-breach-taiwan-services-d7a6e2e8",
-    "title": "Hacker Uses 12 AI Agents to Breach Taiwan Services",
-    "summary": "A single operator in Taiwan deployed 12 AI agents, named BOSSAI, to compromise emergency services, banks, universities, and military systems across 11 countries. The campaign resulted in confirmed theft of medical data and personal records, exposing sensitive information from multiple organizations. Security teams should investigate compromised accounts, apply multi‑factor authentication, and monitor for anomalous data exfiltration to mitigate further loss.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/one-hacker-uses-12-ai-agents/",
-    "publishedAt": "2026-11-05T08:56:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hacker-uses-12-ai-agents-to-breach-taiwan-services",
-      "article-d7a6e2e8",
-      "d7a6e2e8",
-      "hacker-uses-12-ai-agents-to-breach-taiwan-services-55f6a2"
-    ]
-  },
-  {
-    "slug": "cert-in-reports-ai-driven-attacks-target-bfsi-cons-0bf4ab91",
-    "title": "CERT‑In Reports AI‑Driven Attacks Target BFSI Consoles",
-    "summary": "CERT‑In flagged that AI‑assisted actor Crafty Falcon targets Indian banking, financial services, and insurance firms, aiming to compromise 62 consoles. The campaign uses publicly available AI‑driven tools, enabling automated exploitation of known vulnerabilities and credential theft, though no specific CVE has been disclosed. Security teams should monitor console logs, apply patches, and restrict privileged access to mitigate potential compromise.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
-    "publishedAt": "2026-11-05T08:42:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cert-in-reports-ai-driven-attacks-target-bfsi-cons",
-      "article-0bf4ab91",
-      "0bf4ab91",
-      "cert-in-reports-ai-driven-attacks-target-bfsi-cons-2f3bfe",
-      "cert-in-reports-ai-driven-attacks-target-bfsi-consoles"
-    ]
-  },
-  {
-    "slug": "apple-adds-harmful-content-checks-to-icloud-links-ad6ed6bd",
-    "title": "Apple Adds Harmful Content Checks to iCloud Links",
-    "summary": "Apple will start scanning iCloud content shared via the ‘Anyone with the link’ option for harmful material on iOS, iPadOS, macOS, and visionOS 27.3 or later. If harmful content is detected, Apple may impose account penalties, encouraging users to choose more restrictive sharing settings. Security teams should review sharing policies and ensure compliance with the new content‑review requirements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/05/apple-icloud-link-sharing-checks/",
-    "publishedAt": "2026-11-05T08:32:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-adds-harmful-content-checks-to-icloud-links",
-      "article-ad6ed6bd",
-      "ad6ed6bd",
-      "apple-adds-harmful-content-checks-to-icloud-links-653df9"
-    ]
-  },
-  {
-    "slug": "hackers-trick-mac-users-into-running-terminal-comm-ef52cbaa",
-    "title": "Hackers Trick Mac Users Into Running Terminal Commands That Install Phexia Password-Stealing Malware",
-    "summary": "A macOS malware family called Phexia is spreading through fake web pages that talk Mac users into pasting a command into Terminal. Once the command runs, the malware quietly settles on the Mac, steals the login password, and copies browser data, keychain files, and password-manager extension data.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-trick-mac-users/",
-    "publishedAt": "2026-11-05T08:31:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-trick-mac-users-into-running-terminal-comm",
-      "article-ef52cbaa",
-      "ef52cbaa",
-      "hackers-trick-mac-users-into-running-terminal-comm-1d91ce",
-      "hackers-trick-mac-users-into-running-terminal-commands-that-"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-important-dogtag-pki-update-8b96f136",
-    "title": "Red Hat Releases Important Dogtag‑PKI Update",
-    "summary": "Red Hat released an Important security update for dogtag‑pki on Red Hat Enterprise Linux 10.0 Extended Update Support, addressing multiple vulnerabilities. The update carries a CVSS base score for each vulnerability, as listed in the CVE references, indicating a high‑severity impact. Security teams should apply the patch immediately to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95466",
-    "publishedAt": "2026-11-05T08:12:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-important-dogtag-pki-update",
-      "article-8b96f136",
-      "8b96f136",
-      "red-hat-releases-important-dogtag-pki-update-37d845"
-    ]
-  },
-  {
-    "slug": "hackers-use-fake-government-websites-and-captcha-c-94a2e802",
-    "title": "Hackers Use Fake Government Websites and CAPTCHA Checks to Deliver SimpleHelp Remote Access Software",
-    "summary": "Hackers are impersonating the Israel Tax Authority through phishing emails, fake government websites, and CAPTCHA-style checks to trick employees into running SimpleHelp remote access software. The campaign targets Israeli organizations and turns an ordinary tax-document request into a possible entry point for unauthorized access.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-fake-government-websites/",
-    "publishedAt": "2026-11-05T07:59:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-fake-government-websites-and-captcha-c",
-      "article-94a2e802",
-      "94a2e802",
-      "hackers-use-fake-government-websites-and-captcha-c-6780bb",
-      "hackers-use-fake-government-websites-and-captcha-checks-to-d"
-    ]
-  },
-  {
-    "slug": "critical-citrix-xenserver-vulnerability-could-let-81a18ab3",
-    "title": "Critical Citrix XenServer Vulnerability Could Let Hackers Take Over Virtualization Hosts Without Authentication",
-    "summary": "Citrix has disclosed a critical XenServer vulnerability that could let an unauthenticated attacker compromise virtualization hosts and supporting appliances. Tracked as CVE-2026-98432, the flaw requires access to the management network, an important limit when assessing which systems are exposed.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-citrix-xenserver-vulnerability/",
-    "publishedAt": "2026-11-05T07:24:28.000Z",
-    "cves": [
-      "CVE-2026-98432"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-citrix-xenserver-vulnerability-could-let",
-      "article-81a18ab3",
-      "81a18ab3",
-      "critical-citrix-xenserver-vulnerability-could-let-217a0b",
-      "critical-citrix-xenserver-vulnerability-could-let-hackers-ta"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95435-important-bind-security-bug-fix-an-a4d48342",
-    "title": "RHSA-2026:95435: Important: bind security, bug fix, and enhancement update",
-    "summary": "An update for bind is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95435",
-    "publishedAt": "2026-11-05T07:23:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95435-important-bind-security-bug-fix-an",
-      "article-a4d48342",
-      "a4d48342",
-      "rhsa-2026-95435-important-bind-security-bug-fix-an-37d846",
-      "rhsa-2026-95435-important-bind-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "top-10-security-data-lake-platforms-2026-9b148f95",
-    "title": "Top 10 Security Data Lake Platforms 2026",
-    "summary": "The article ranks the leading security data lake platforms for 2026, evaluating telemetry storage, detection engines, and cost efficiency. It highlights the shift from SIEM‑priced storage to open‑format object storage, noting challenges in data escape and vendor migration. Security teams should assess platform fit, plan migration strategies, and monitor for performance and compliance gaps.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-security-data-lakes/",
-    "publishedAt": "2026-11-05T07:19:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-security-data-lake-platforms-2026",
-      "article-9b148f95",
-      "9b148f95",
-      "top-10-security-data-lake-platforms-2026-228889"
     ]
   }
 ];

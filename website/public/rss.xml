@@ -5,8 +5,116 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 15:14:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 16:45:18 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Xen Orchestra Auth Bypass Enables VM Server Hijack</title>
+      <link>https://secubuzz.com/news/xen-orchestra-auth-bypass-enables-vm-server-hijack-8e029e9c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xen-orchestra-auth-bypass-enables-vm-server-hijack-8e029e9c</guid>
+      <description><![CDATA[A critical authentication bypass flaw in Xen Orchestra is actively exploited to grant admin privileges and seize XCP‑ng virtualization hosts. The flaw bypasses login checks, giving attackers full control over host management interfaces, and is used in multiple attacks. Xen Orchestra issued an urgent patch; administrators should apply it immediately and audit host authentication logs for anomalies.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:17:16 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor</title>
+      <link>https://secubuzz.com/news/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-2710d747</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-2710d747</guid>
+      <description><![CDATA[Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems.]]></description>
+      <pubDate>Tue, 10 Nov 2026 16:00:55 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Binance warns of iOS flaw that could leak crypto wallet secrets</title>
+      <link>https://secubuzz.com/news/binance-warns-of-ios-flaw-that-could-leak-crypto-w-752325ce</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/binance-warns-of-ios-flaw-that-could-leak-crypto-w-752325ce</guid>
+      <description><![CDATA[Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:59:19 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ivanti Releases Monthly Security Update</title>
+      <link>https://secubuzz.com/news/ivanti-releases-monthly-security-update-7d8ceb82</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-releases-monthly-security-update-7d8ceb82</guid>
+      <description><![CDATA[Ivanti publishes monthly security patches on the second Tuesday, applying fixes discovered through AI‑driven vulnerability analysis. The update cycle incorporates advanced LLMs to detect issues missed by traditional tools, emphasizing proactive vulnerability management. Security teams should apply the latest Ivanti patches promptly and review release notes for newly identified vulnerabilities.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:33:07 GMT</pubDate>
+      <source url="https://www.ivanti.com/blog/november-2026-security-update">Ivanti Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Releases BIND Security Update for RHEL9</title>
+      <link>https://secubuzz.com/news/red-hat-releases-bind-security-update-for-rhel9-ac091820</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-bind-security-update-for-rhel9-ac091820</guid>
+      <description><![CDATA[An update for BIND on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities are linked to CVE references and carry moderate severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:29:24 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97586">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Containernetworking‑Plugins Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-containernetworking-plugins-securit-aa093ca2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-containernetworking-plugins-securit-aa093ca2</guid>
+      <description><![CDATA[An update for containernetworking‑plugins on Red Hat Enterprise Linux 9 addresses several security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities carry important severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:23:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97644">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97284: Important: git-lfs security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97284-important-git-lfs-security-update-090e4bb8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97284-important-git-lfs-security-update-090e4bb8</guid>
+      <description><![CDATA[An update for git-lfs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:20:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97284">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97561: Important: crun security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97561-important-crun-security-bug-fix-an-81ee0c21</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97561-important-crun-security-bug-fix-an-81ee0c21</guid>
+      <description><![CDATA[An update for crun is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:17:57 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97561">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ransomware Recovery Becomes Client Retention Metric</title>
+      <link>https://secubuzz.com/news/ransomware-recovery-becomes-client-retention-metri-3e699a1c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ransomware-recovery-becomes-client-retention-metri-3e699a1c</guid>
+      <description><![CDATA[Kaseya finds that ransomware recovery delays, poor communication, and unexpected costs erode MSP client trust, making recovery performance a retention metric. Disconnected recovery tools create these problems, while integrated workflows improve response times, transparency, and client satisfaction. MSPs should adopt unified recovery solutions to reduce delays, enhance communication, and maintain client loyalty during ransomware incidents.]]></description>
+      <pubDate>Tue, 10 Nov 2026 15:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SAP Releases Patches for Critical ICM2SHELL, ProxyGate Bugs</title>
+      <link>https://secubuzz.com/news/sap-releases-patches-for-critical-icm2shell-proxyg-09424f5e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sap-releases-patches-for-critical-icm2shell-proxyg-09424f5e</guid>
+      <description><![CDATA[SAP has issued 42 new and updated security advisories, including nine that address critical‑severity vulnerabilities in its ICM2SHELL and ProxyGate components. The critical flaws involve improper handling of input data, potentially enabling remote code execution, but no active exploitation has been reported. SAP recommends applying the released patches immediately to mitigate the identified risks and prevent potential exploitation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 14:46:28 GMT</pubDate>
+      <source url="https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI reverse engineering let researchers add a new feature to Slack</title>
+      <link>https://secubuzz.com/news/ai-reverse-engineering-let-researchers-add-a-new-f-4d48b7e9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-reverse-engineering-let-researchers-add-a-new-f-4d48b7e9</guid>
+      <description><![CDATA[Intezer researchers used AI agents to rebuild source code for Slack, Apple’s Finder and a TinyTurla-NG sample, from a backdoor family Cisco Talos attributes to the Turla group. The rebuilt Slack ran well enough that the team added a new feature to it: AI text autocomplete, powered by a small local model.]]></description>
+      <pubDate>Tue, 10 Nov 2026 14:45:18 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/slack-ai-reverse-engineering/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>North Korea Targets Drone Tech and Software Supply Chains</title>
+      <link>https://secubuzz.com/news/north-korea-targets-drone-tech-and-software-supply-93ca9b9c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-targets-drone-tech-and-software-supply-93ca9b9c</guid>
+      <description><![CDATA[North Korean actors Lazarus and DeceptiveDevelopment resumed cyberespionage against drone technology and software supply chains between April and September 2026. They used stolen developer credentials to inject malicious code into open‑source projects and targeted European defense entities, widening the threat surface. Defenders should monitor supply‑chain integrity, enforce strict credential hygiene, and apply security patches to exposed development environments.]]></description>
+      <pubDate>Tue, 10 Nov 2026 14:09:27 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/north-korean-hackers-3/">Cyber Security News</source>
+      <category>Nation State</category>
+    </item>
     <item>
       <title>Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication</title>
       <link>https://secubuzz.com/news/critical-apache-airflow-rce-flaw-allows-attackers-724acf9f</link>
@@ -348,114 +456,6 @@
       <pubDate>Tue, 10 Nov 2026 09:08:20 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html">The Hacker News</source>
       <category>Nation State</category>
-    </item>
-    <item>
-      <title>Ruby Gem Steals Credentials, Installs Backdoors in AI Tools</title>
-      <link>https://secubuzz.com/news/ruby-gem-steals-credentials-installs-backdoors-in-a6ca377e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ruby-gem-steals-credentials-installs-backdoors-in-a6ca377e</guid>
-      <description><![CDATA[A counterfeit Ruby gem, strutil-core, masquerades as a helper but installs credential‑stealing worm. The worm harvests 51 credential types, injects backdoors into AI tool settings, and can delete a home folder if a stolen GitHub token is revoked. Teams should remove the gem, audit dependencies, enforce RubyGems signing, and update AI tools to eliminate backdoors and stop credential theft.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:55:28 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/malicious-ruby-gem/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AMD RMP Flaw Allows Local Hypervisor Exploit</title>
-      <link>https://secubuzz.com/news/amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66</guid>
-      <description><![CDATA[A flaw in AMD processors' Reverse Map Table checks was discovered, potentially enabling local hypervisor attackers to trigger an out‑of‑bounds condition. The vulnerability, identified as CVE-2023-20585, could compromise the integrity of SEV‑SNP guest memory if exploited. Kernel maintainers advise applying the USN-9024-1 update to patch affected subsystems and mitigate the risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:47:04 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9024-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Addresses Multiple Linux Kernel Vulnerabilities in USN-9025-1</title>
-      <link>https://secubuzz.com/news/ubuntu-addresses-multiple-linux-kernel-vulnerabili-1cac7a6d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-addresses-multiple-linux-kernel-vulnerabili-1cac7a6d</guid>
-      <description><![CDATA[Ubuntu released kernel updates addressing CVE-2023-20585 and multiple Linux kernel vulnerabilities. The AMD flaw allows hypervisor-privileged attackers to corrupt SEV-SNP guest memory via improper RMP checks; other issues affect USB gadget, memory management, NVDIMM, networking, and architecture subsystems. Updated kernel packages are available; immediate deployment is recommended to prevent system compromise.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:47:02 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9025-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Linux Kernel Azure RMP Check Flaw Exposes SEV‑SNP Memory</title>
-      <link>https://secubuzz.com/news/linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-15cee65f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-15cee65f</guid>
-      <description><![CDATA[A flaw in AMD processors’ IOMMU RMP checks on Linux kernel Azure allows a hypervisor attacker to trigger an out‑of‑bounds condition that could corrupt SEV‑SNP guest memory. The vulnerability, identified as CVE‑2023‑20585, exploits improper buffer validation and could lead to integrity violations. Ubuntu has released kernel patches covering multiple subsystems; users should apply the update to mitigate the risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:46:54 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9026-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Turtle Beach Audio Driver Race Condition Enables Local Exploit</title>
-      <link>https://secubuzz.com/news/turtle-beach-audio-driver-race-condition-enables-l-0eb87dbe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/turtle-beach-audio-driver-race-condition-enables-l-0eb87dbe</guid>
-      <description><![CDATA[The Turtle Beach MultiSound audio driver in Linux contains race conditions that trigger out‑of‑bounds accesses during ring‑buffer reads, allowing a local attacker to cause a denial of service or possibly execute code. The flaw, CVE‑2017‑9986, enables local privilege escalation that could compromise system integrity. Ubuntu has released kernel patches for the affected subsystems; users should apply them promptly.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:46:39 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9035-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Raspberry Pi Kernel AX.25 Race Condition Causes DoS</title>
-      <link>https://secubuzz.com/news/raspberry-pi-kernel-ax-25-race-condition-causes-do-921bb2ee</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/raspberry-pi-kernel-ax-25-race-condition-causes-do-921bb2ee</guid>
-      <description><![CDATA[AX.25 protocol race conditions on Raspberry Pi Linux kernels cause use‑after‑free bugs that a local attacker can exploit to crash the system. The i.MX clock driver also has a null pointer dereference due to improper allocation handling, leading to a local denial of service (CVE‑2022‑3114).]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:46:37 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9029-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Xen Frontend Vulnerabilities Allow Guest Memory Access</title>
-      <link>https://secubuzz.com/news/xen-frontend-vulnerabilities-allow-guest-memory-ac-36bf45fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/xen-frontend-vulnerabilities-allow-guest-memory-ac-36bf45fe</guid>
-      <description><![CDATA[USN-9034-1 patches Linux kernel vulnerabilities in AWS Xen, including CVE-2022-23037, that let malicious backends read guest memory or cause denial of service. The issue stems from inadequate access‑right checks in Xen device frontends, enabling unauthorized memory reads and potential guest workload disruption. Kernel maintainers released patches; administrators should update affected systems and verify Xen configurations to prevent exploitation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:46:28 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9034-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Linux Kernel Vulnerabilities Updated</title>
-      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-updated-36aef8d2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-updated-36aef8d2</guid>
-      <description><![CDATA[Multiple Linux kernel flaws, including CVE-2024-53210, were found in GPU and network subsystems, allowing attackers to potentially compromise systems. The USN‑9032‑1 update patches seven CVEs, including CVE-2026-43456, by fixing memory corruption and validation errors that could lead to privilege escalation or denial of service. Apply the patch immediately and upgrade to the latest kernel to prevent reintroduction of the flaws.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:46:16 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9032-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Kernel Patch Addresses Xen Device Frontend Flaws</title>
-      <link>https://secubuzz.com/news/ubuntu-kernel-patch-addresses-xen-device-frontend-3cbe023d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-kernel-patch-addresses-xen-device-frontend-3cbe023d</guid>
-      <description><![CDATA[Ubuntu released USN‑9033‑1 to fix multiple Linux kernel flaws affecting Xen para‑virtualization device frontends. The vulnerabilities, including CVE‑2022‑23036, allow a malicious Xen backend to read guest memory or trigger a denial of service, potentially compromising isolation between virtual machines. The update applies patches to the kernel subsystems and should be installed immediately to prevent exploitation.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:46:13 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9033-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Addresses Multiple Kernel Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-addresses-multiple-kernel-vulnerabilities-3840f8cd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-addresses-multiple-kernel-vulnerabilities-3840f8cd</guid>
-      <description><![CDATA[Ubuntu released USN-9023-1, patching multiple Linux kernel vulnerabilities that could let attackers compromise systems. Flaws touch USB gadget drivers, memory management, networking core, ARM/x86 architectures, and device drivers, with no confirmed exploitation but potential for privilege escalation or denial of service. All affected subsystems are fixed; admins should apply the latest kernel or backport the patches.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:46:07 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9023-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ubuntu Releases Kernel Patch for Multiple Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b</guid>
-      <description><![CDATA[Ubuntu released USN-9018-1, addressing several kernel vulnerabilities that could allow attackers to compromise affected systems. The flaws span network file systems, ARM64, PowerPC, RISC-V, S390, and numerous device drivers, exposing potential privilege escalation and denial of service. Ubuntu has issued a kernel update; administrators should apply the patch promptly to eliminate the exploitation vector.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:42:59 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9018-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Progress WS_FTP Server Addresses Seven Credential Theft Flaws</title>
-      <link>https://secubuzz.com/news/progress-ws-ftp-server-addresses-seven-credential-cf7e693a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/progress-ws-ftp-server-addresses-seven-credential-cf7e693a</guid>
-      <description><![CDATA[Progress Software released a pack for WS_FTP Server 2025.0.5 to fix seven flaws enabling credential theft, path traversal, and file transfer disruption. The flaws, catalogued as CVE-2026-124033, allow unauthenticated remote code execution and local file access, compromising credentials and exposing restricted files. Upgrade to WS_FTP Server 2025.0.]]></description>
-      <pubDate>Tue, 10 Nov 2026 08:42:39 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/progress-ws_ftp-server-fixes-security-vulnerabilities/">Cyber Security News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
