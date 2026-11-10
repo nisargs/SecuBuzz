@@ -1,5 +1,53 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+    "title": "Claude Fable 5.2 Outperforms GPT-6 in Cyberattack Benchmark",
+    "headline": "Claude Fable 5.2 Outperforms GPT-6 in Cyberattack Benchmark",
+    "summary": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2 models, which were evaluated against GPT‑6 in a multi‑stage cyberattack benchmark. The models demonstrated enhanced coding, reasoning, and vision, enabling engineers to complete complex software migrations, design electronic devices, and solve advanced physics problems during pre‑release training. Benchmark results are publicly available, enabling teams to assess LLM readiness for cyber‑defense.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-10T08:16:14.000Z",
+    "ingestedAt": "2026-11-10T08:43:23.913Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
+    "title": "Fireworks AI Breach via Cloud Provider Hack",
+    "headline": "Fireworks AI Breach via Cloud Provider Hack",
+    "summary": "Fireworks AI disclosed a breach where attackers accessed its development machines after compromising a third‑party cloud provider. The intrusion leveraged the provider’s compromised credentials, granting unauthorized remote access to Fireworks’ internal infrastructure. Fireworks recommends monitoring for anomalous activity and tightening cloud access controls, but no patch is available in the near future.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-10T07:49:58.000Z",
+    "ingestedAt": "2026-11-10T08:43:14.656Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.helpnetsecurity.com/2026/11/10/eric-fourrier-gitguardian-leaked-credentials/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/eric-fourrier-gitguardian-leaked-credentials/",
+    "title": "Security Leaders Must Inform CEOs About Leaked Credentials",
+    "headline": "Security Leaders Must Inform CEOs About Leaked Credentials",
+    "summary": "The article discusses the importance of security leaders communicating leaked credential incidents to CEOs. It highlights how fear of blame can conceal credential exposure, emphasizes the need for metrics beyond alert counts, and addresses disclosure deadlines and AI tool risks. Security leaders should prepare clear explanations, recommend robust credential management, and establish disclosure protocols.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-10T07:40:43.000Z",
+    "ingestedAt": "2026-11-10T08:43:23.914Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/10/eric-fourrier-gitguardian-leaked-credentials/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
     "sourceUrl": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
     "title": "Google Patches Chrome XML Use‑After‑Free Bug",
@@ -93,6 +141,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/fireworks-ai-data-breach/",
+    "sourceUrl": "https://cybersecuritynews.com/fireworks-ai-data-breach/",
+    "title": "Fireworks AI Breach Steals Customer Data via Cloud Provider",
+    "headline": "Fireworks AI Breach Steals Customer Data via Cloud Provider",
+    "summary": "Fireworks AI disclosed a breach where attackers accessed development machines via a compromised third‑party cloud provider, stealing customer account details, billing records, and datasets. The intrusion leveraged the provider’s compromised credentials, granting unauthorized remote access and data exfiltration from Fireworks’ internal systems. Fireworks urges customers to review logs, enforce MFA, and monitor anomalous activity; no patch is available.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-10T05:17:39.000Z",
+    "ingestedAt": "2026-11-10T08:43:14.656Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/fireworks-ai-data-breach/",
     "additionalSources": []
   },
   {
@@ -215,9 +279,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
-    "title": "Vanderbilt University Targeted by BYOD Ransomware Attack",
-    "headline": "Vanderbilt University Targeted by BYOD Ransomware Attack",
-    "summary": "A ransomware gang called BYOD claimed to have encrypted Vanderbilt University’s databases and exfiltrated sensitive student, employee, and research data. The attack used credential‑stealing techniques to access university systems, but no specific vulnerability or CVE is cited. The university has issued a response notice, is coordinating with law enforcement, and recommends enforcing MFA and isolating affected systems.",
+    "title": "BYOD Ransomware Encrypts Vanderbilt University Databases",
+    "headline": "BYOD Ransomware Encrypts Vanderbilt University Databases",
+    "summary": "A ransomware gang named BYOD targeted Vanderbilt University, encrypting its database systems and exfiltrating student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged database access, encrypting files and compromising sensitive information. University officials isolated affected systems, applied the latest database patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.",
     "category": "RANSOMWARE",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -226,7 +290,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/vanderbilt-university-hit-in-byod-ransomware-attack-dat"
+      }
+    ]
   },
   {
     "id": "https://ubuntu.com/security/notices/USN-8890-3",
@@ -457,9 +526,9 @@
   {
     "id": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
-    "title": "France Attributes Fridge Attacks to Iran's Shahid Kaveh",
-    "headline": "France Attributes Fridge Attacks to Iran's Shahid Kaveh",
-    "summary": "France attributes recent smart refrigerator cyberattacks, some causing fires, to Iran's Shahid Kaveh unit. The unit, linked to prior attacks on U.S. water utility controllers, likely exploited vulnerabilities in IoT firmware to gain remote access and trigger heating elements. French authorities advise affected manufacturers to apply vendor patches and monitor device logs for anomalous activity.",
+    "title": "France Accuses Iran of Cyberattack on Supermarket Refrigerators",
+    "headline": "France Accuses Iran of Cyberattack on Supermarket Refrigerators",
+    "summary": "France accused Iran of a cyberattack that targeted supermarket refrigeration systems, causing them to overheat and risk food spoilage. Attackers exploited a remote code execution flaw in the IoT firmware, enabling manipulation of temperature controls and triggering heating elements. French authorities summoned the Iranian ambassador, urged manufacturers to apply patches, and are pursuing European sanctions against the perpetrators.",
     "category": "NATION_STATE",
     "severity": "HIGH",
     "source": "BleepingComputer",
@@ -472,6 +541,10 @@
       {
         "source": "The Record",
         "sourceUrl": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks"
+      },
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/"
       }
     ]
   },
@@ -8374,70 +8447,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76029",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76030",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76030",
-    "title": "Microsoft Edge Addresses Chromium CVE-2026-76030 Memory Corruption",
-    "headline": "Microsoft Edge Addresses Chromium CVE-2026-76030 Memory Corruption",
-    "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption flaw in Chromium, CVE-2026-76030, that could corrupt rendering. The flaw arises from a pointer dereference during buffer handling, exposing a local privilege escalation vector; no public exploit is known. Microsoft released an update incorporating the Chromium fix; users should install Edge version or apply the patch from Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-05T04:43:44.897Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76030",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119270",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119270",
-    "title": "Chromium CVE-2026-119270 Improper Input Validation",
-    "headline": "Chromium CVE-2026-119270 Improper Input Validation",
-    "summary": "Microsoft Edge incorporates a fix for Chromium CVE-2026-119270, an improper input validation flaw that could allow exploitation via crafted input. The vulnerability permits attackers to bypass input checks, potentially enabling code execution on affected systems. Microsoft recommends installing the latest Edge update, which includes the Chromium patch; users should also keep Chrome up to date.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-05T03:43:11.121Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119270",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76024",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76024",
-    "title": "Chromium CVE-2026-76024 Memory Corruption",
-    "headline": "Chromium CVE-2026-76024 Memory Corruption",
-    "summary": "Microsoft Edge incorporates a fix for Chromium CVE-2026-76024, a memory corruption flaw that could allow exploitation via crafted input. The vulnerability permits attackers to corrupt memory, potentially leading to arbitrary code execution on affected systems. Microsoft recommends installing the latest Edge update, which includes the Chromium patch; users should also keep Chrome up to date.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-05T03:43:11.121Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76024",
-    "additionalSources": []
-  },
-  {
-    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76025",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76025",
-    "title": "Microsoft Edge Fixes Chromium Use‑After‑Free CVE‑2026‑76025",
-    "headline": "Microsoft Edge Fixes Chromium Use‑After‑Free CVE‑2026‑76025",
-    "summary": "Microsoft Edge (Chromium-based) is affected by a use‑after‑free flaw in Chromium, identified as CVE‑2026‑76025. The flaw stems from improper memory handling during object lifecycle, potentially enabling arbitrary code execution if exploited. Microsoft has released an update that incorporates Chromium's fix; users should install the latest Edge update or apply the patch from Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "ingestedAt": "2026-11-05T03:43:22.209Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76025",
     "additionalSources": []
   }
 ]

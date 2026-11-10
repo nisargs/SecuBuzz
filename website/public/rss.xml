@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 07:48:38 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:45:18 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Claude Fable 5.2 Outperforms GPT-6 in Cyberattack Benchmark</title>
+      <link>https://secubuzz.com/news/claude-fable-5-2-outperforms-gpt-6-in-cyberattack-5e0c9d71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-fable-5-2-outperforms-gpt-6-in-cyberattack-5e0c9d71</guid>
+      <description><![CDATA[Anthropic released Claude Fable 5.2 and Claude Mythos 5.2 models, which were evaluated against GPT‑6 in a multi‑stage cyberattack benchmark. The models demonstrated enhanced coding, reasoning, and vision, enabling engineers to complete complex software migrations, design electronic devices, and solve advanced physics problems during pre‑release training. Benchmark results are publicly available, enabling teams to assess LLM readiness for cyber‑defense.]]></description>
+      <pubDate>Tue, 10 Nov 2026 08:16:14 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Fireworks AI Breach via Cloud Provider Hack</title>
+      <link>https://secubuzz.com/news/fireworks-ai-breach-via-cloud-provider-hack-b320423b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-ai-breach-via-cloud-provider-hack-b320423b</guid>
+      <description><![CDATA[Fireworks AI disclosed a breach where attackers accessed its development machines after compromising a third‑party cloud provider. The intrusion leveraged the provider’s compromised credentials, granting unauthorized remote access to Fireworks’ internal infrastructure. Fireworks recommends monitoring for anomalous activity and tightening cloud access controls, but no patch is available in the near future.]]></description>
+      <pubDate>Tue, 10 Nov 2026 07:49:58 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Security Leaders Must Inform CEOs About Leaked Credentials</title>
+      <link>https://secubuzz.com/news/security-leaders-must-inform-ceos-about-leaked-cre-264c4464</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/security-leaders-must-inform-ceos-about-leaked-cre-264c4464</guid>
+      <description><![CDATA[The article discusses the importance of security leaders communicating leaked credential incidents to CEOs. It highlights how fear of blame can conceal credential exposure, emphasizes the need for metrics beyond alert counts, and addresses disclosure deadlines and AI tool risks. Security leaders should prepare clear explanations, recommend robust credential management, and establish disclosure protocols.]]></description>
+      <pubDate>Tue, 10 Nov 2026 07:40:43 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/eric-fourrier-gitguardian-leaked-credentials/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Google Patches Chrome XML Use‑After‑Free Bug</title>
       <link>https://secubuzz.com/news/google-patches-chrome-xml-use-after-free-bug-3b3a5037</link>
@@ -60,6 +87,15 @@
       <pubDate>Tue, 10 Nov 2026 05:30:59 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Fireworks AI Breach Steals Customer Data via Cloud Provider</title>
+      <link>https://secubuzz.com/news/fireworks-ai-breach-steals-customer-data-via-cloud-9eb3e610</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-ai-breach-steals-customer-data-via-cloud-9eb3e610</guid>
+      <description><![CDATA[Fireworks AI disclosed a breach where attackers accessed development machines via a compromised third‑party cloud provider, stealing customer account details, billing records, and datasets. The intrusion leveraged the provider’s compromised credentials, granting unauthorized remote access and data exfiltration from Fireworks’ internal systems. Fireworks urges customers to review logs, enforce MFA, and monitor anomalous activity; no patch is available.]]></description>
+      <pubDate>Tue, 10 Nov 2026 05:17:39 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fireworks-ai-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Application Security Engineer Position Open at ONE ZERO BANK</title>
@@ -125,10 +161,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Vanderbilt University Targeted by BYOD Ransomware Attack</title>
-      <link>https://secubuzz.com/news/vanderbilt-university-targeted-by-byod-ransomware-1f7f7707</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vanderbilt-university-targeted-by-byod-ransomware-1f7f7707</guid>
-      <description><![CDATA[A ransomware gang called BYOD claimed to have encrypted Vanderbilt University’s databases and exfiltrated sensitive student, employee, and research data. The attack used credential‑stealing techniques to access university systems, but no specific vulnerability or CVE is cited. The university has issued a response notice, is coordinating with law enforcement, and recommends enforcing MFA and isolating affected systems.]]></description>
+      <title>BYOD Ransomware Encrypts Vanderbilt University Databases</title>
+      <link>https://secubuzz.com/news/byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b</guid>
+      <description><![CDATA[A ransomware gang named BYOD targeted Vanderbilt University, encrypting its database systems and exfiltrating student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged database access, encrypting files and compromising sensitive information. University officials isolated affected systems, applied the latest database patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.]]></description>
       <pubDate>Mon, 09 Nov 2026 23:52:12 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/">BleepingComputer</source>
       <category>Ransomware</category>
@@ -251,10 +287,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>France Attributes Fridge Attacks to Iran&apos;s Shahid Kaveh</title>
-      <link>https://secubuzz.com/news/france-attributes-fridge-attacks-to-iran-s-shahid-2c6af0de</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/france-attributes-fridge-attacks-to-iran-s-shahid-2c6af0de</guid>
-      <description><![CDATA[France attributes recent smart refrigerator cyberattacks, some causing fires, to Iran's Shahid Kaveh unit. The unit, linked to prior attacks on U.S. water utility controllers, likely exploited vulnerabilities in IoT firmware to gain remote access and trigger heating elements. French authorities advise affected manufacturers to apply vendor patches and monitor device logs for anomalous activity.]]></description>
+      <title>France Accuses Iran of Cyberattack on Supermarket Refrigerators</title>
+      <link>https://secubuzz.com/news/france-accuses-iran-of-cyberattack-on-supermarket-9c760c5c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/france-accuses-iran-of-cyberattack-on-supermarket-9c760c5c</guid>
+      <description><![CDATA[France accused Iran of a cyberattack that targeted supermarket refrigeration systems, causing them to overheat and risk food spoilage. Attackers exploited a remote code execution flaw in the IoT firmware, enabling manipulation of temperature controls and triggering heating elements. French authorities summoned the Iranian ambassador, urged manufacturers to apply patches, and are pursuing European sanctions against the perpetrators.]]></description>
       <pubDate>Mon, 09 Nov 2026 18:32:42 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/">BleepingComputer</source>
       <category>Nation State</category>
@@ -420,42 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 16:44:41 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9012-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GhostAction Compromises 500+ GitHub Accounts for Cloud Credentials</title>
-      <link>https://secubuzz.com/news/ghostaction-compromises-500-github-accounts-for-cl-d75bece3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostaction-compromises-500-github-accounts-for-cl-d75bece3</guid>
-      <description><![CDATA[GhostAction attackers compromised over 500 GitHub accounts in October 2026, injecting a workflow into thousands of repositories that exfiltrated AWS, OpenAI, and other cloud credentials. The workflow leveraged GitHub Actions to harvest secrets from environment variables, bypassing rotation and exposing key material to the attackers.]]></description>
-      <pubDate>Mon, 09 Nov 2026 16:29:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ghostaction-github-account-compromise/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>USN-9011-1: pyasn1 vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9011-1-pyasn1-vulnerabilities-c8fff662</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9011-1-pyasn1-vulnerabilities-c8fff662</guid>
-      <description><![CDATA[This issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2026-59884) It was discovered that pyasn1 processed OBJECT IDENTIFIER and RELATIVE-OID values in quadratic time relative to the number of arcs. This issue was only addressed in Ubuntu 26.04 LTS and Ubuntu 26.10. (CVE-2026-119195) It was discovered that pyasn1 processed fragmented constructed BIT STRING values in quadratic time.]]></description>
-      <pubDate>Mon, 09 Nov 2026 16:15:14 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9011-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Binance denies data breach after alleged ShinyHunters claims</title>
-      <link>https://secubuzz.com/news/binance-denies-data-breach-after-alleged-shinyhunt-1be14fa8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/binance-denies-data-breach-after-alleged-shinyhunt-1be14fa8</guid>
-      <description><![CDATA[Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum.]]></description>
-      <pubDate>Mon, 09 Nov 2026 16:12:39 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>OpenJDK 8 Auth Flaws Expose Sensitive Data</title>
-      <link>https://secubuzz.com/news/openjdk-8-auth-flaws-expose-sensitive-data-b64e18df</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openjdk-8-auth-flaws-expose-sensitive-data-b64e18df</guid>
-      <description><![CDATA[OpenJDK 8 components—Security, JSSE, JAAS, JDBC—exposed authentication and authorization flaws that could let remote attackers read or modify sensitive data. Flaws CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, CVE-2026-83380, CVE-2026-83381, CVE-2026-87294 grant unauthenticated or improperly authorized access, enabling data tampering. Oracle released patches; users should apply the latest OpenJDK 8 update to mitigate risk.]]></description>
-      <pubDate>Mon, 09 Nov 2026 16:04:44 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9009-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
