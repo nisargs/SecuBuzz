@@ -6,10 +6,10 @@ export function Privacy() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated="September 1, 2026"
+      updated="November 9, 2026"
       sections={privacySections}
       canonicalPath="/privacy"
-      description="Privacy Policy for SecuBuzz by MiSo Labs. No tracking, zero ad profiles, anonymous crash reports only."
+      description="Privacy Policy for SecuBuzz by MiSo Labs detailing data practices, push notifications, and advertising disclosures."
     />
   );
 }

@@ -35,21 +35,31 @@ export const privacySections: LegalSection[] = [
     id: 'what-we-dont',
     heading: '3. What We Never Collect',
     body: [
-      'We do not collect names, passwords, phone numbers, contact books, GPS location data, advertising IDs (GAID/IDFA), or browsed brief history.',
-      'We do not sell personal data, license user profiles, or transmit information to data brokers or third-party marketing networks.'
+      'We do not collect names, passwords, phone numbers, contact books, GPS location data, or browsed brief history.',
+      'We do not sell personal data, license user profiles, or transmit user information to data brokers.'
+    ]
+  },
+  {
+    id: 'advertising',
+    heading: '4. Third-Party Advertising & Cookies (Google AdSense)',
+    body: [
+      'We may partner with third-party advertising networks such as Google AdSense to display advertisements on secubuzz.com to support operational and infrastructure costs.',
+      'Third-party vendors, including Google, use cookies to serve ads based on a user\'s prior visits to this website or other sites on the Internet.',
+      'Google\'s use of advertising cookies enables it and its partners to serve personalized or non-personalized ads to visitors based on their visit to secubuzz.com and/or other sites across the Internet.',
+      'Users may opt out of personalized advertising at any time by visiting Google Ads Settings (https://www.google.com/settings/ads) or through the Digital Advertising Alliance consumer choice tool at https://optout.aboutads.info/.'
     ]
   },
   {
     id: 'sharing',
-    heading: '4. Service Providers & Third Parties',
+    heading: '5. Service Providers & Third Parties',
     body: [
-      'We utilize Cloudflare Workers for secure edge delivery and privacy-first web performance analytics (without cookies or user tracking), and Google Firebase/Expo for anonymous push notification delivery.',
+      'We utilize Cloudflare Workers for secure edge delivery and privacy-first web performance analytics (without cookies or user tracking), Google Firebase/Expo for anonymous push notification delivery, and Google AdSense for website display advertising.',
       'News source links redirect directly to external publisher websites. Third-party publisher websites operate under their own independent privacy notices.'
     ]
   },
   {
     id: 'retention',
-    heading: '5. Data Retention & Deletion',
+    heading: '6. Data Retention & Deletion',
     body: [
       'Anonymous push tokens are retained only while active and purged automatically when notifications are disabled or the app is uninstalled.',
       'You may request complete verification of any server token removal by contacting support@secubuzz.com.'
@@ -57,7 +67,7 @@ export const privacySections: LegalSection[] = [
   },
   {
     id: 'contact',
-    heading: '6. Privacy Contact',
+    heading: '7. Privacy Contact',
     body: [
       'For questions or privacy inquiries regarding SecuBuzz or MiSo Labs, contact us at support@secubuzz.com.'
     ]
