@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 05:45:04 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 06:45:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Security Teams Prioritize AI Agent Behavior Monitoring</title>
+      <link>https://secubuzz.com/news/security-teams-prioritize-ai-agent-behavior-monito-778ad60b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/security-teams-prioritize-ai-agent-behavior-monito-778ad60b</guid>
+      <description><![CDATA[A 2026 State of Behavioral Security Report names AI agents as the top monitoring focus. The survey shows 43% plan to invest in AI agent monitoring, exceeding API integrations, yet many lack baseline definitions. Teams should establish baseline metrics and deploy monitoring tools to detect anomalous AI agent behavior early.]]></description>
+      <pubDate>Tue, 10 Nov 2026 06:00:42 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/10/abnormal-ai-behavioral-security-report/">Help Net Security</source>
+      <category>General</category>
+    </item>
     <item>
       <title>OpenClaw AI Agents Deliver Malware to Windows and macOS</title>
       <link>https://secubuzz.com/news/openclaw-ai-agents-deliver-malware-to-windows-and-b78866a7</link>
@@ -51,6 +60,15 @@
       <pubDate>Tue, 10 Nov 2026 03:37:47 GMT</pubDate>
       <source url="https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Apache HTTP Server Vulnerabilities Hit Ubuntu LTS</title>
+      <link>https://secubuzz.com/news/apache-http-server-vulnerabilities-hit-ubuntu-lts-86b927d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-vulnerabilities-hit-ubuntu-lts-86b927d5</guid>
+      <description><![CDATA[Ubuntu 14.04 through 26.04 LTS releases contain multiple Apache HTTP Server flaws. CVE-2026-46729 and CVE-2026-47360 allow attackers to trigger denial of service or leak session data via improper memory and cookie handling, potentially exposing sensitive information; no confirmed exploitation yet. Ubuntu advises applying the latest security updates and verifying Apache configurations to mitigate the vulnerabilities.]]></description>
+      <pubDate>Tue, 10 Nov 2026 02:43:47 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9016-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>N‑able N‑central Exposes 30+ Zero‑Day Vulnerabilities, Urgent Patch Released</title>
@@ -260,10 +278,10 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>Hackers Exploit Qubole&apos;s Trusted AWS Access to Breach Customer Accounts and Steal Data</title>
-      <link>https://secubuzz.com/news/hackers-exploit-qubole-s-trusted-aws-access-to-bre-732a8419</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-qubole-s-trusted-aws-access-to-bre-732a8419</guid>
-      <description><![CDATA[An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers.]]></description>
+      <title>Qubole AWS Backdoor Enables Customer Data Breach</title>
+      <link>https://secubuzz.com/news/qubole-aws-backdoor-enables-customer-data-breach-dc6dac4b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/qubole-aws-backdoor-enables-customer-data-breach-dc6dac4b</guid>
+      <description><![CDATA[Qubole’s AWS deployment contained a backdoor that allowed attackers to access and exfiltrate customer secrets without authentication. Between October 14 and 26, attackers used the compromised AWS credentials to breach multiple customer accounts and steal data. Qubole urged immediate patching, telemetry review, and deployment of detection rules to mitigate further exfiltration.]]></description>
       <pubDate>Mon, 09 Nov 2026 17:51:21 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html">The Hacker News</source>
       <category>Breach</category>
@@ -438,24 +456,6 @@
       <pubDate>Mon, 09 Nov 2026 15:35:24 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9010-1">Ubuntu Security Notices</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Anubis Ransomware Deploys Lindnor Backdoor and Security‑Killing Tools</title>
-      <link>https://secubuzz.com/news/anubis-ransomware-deploys-lindnor-backdoor-and-sec-1e6cbb54</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/anubis-ransomware-deploys-lindnor-backdoor-and-sec-1e6cbb54</guid>
-      <description><![CDATA[Attackers using Anubis ransomware infiltrated a U.S. organization in October 2026, deploying a backdoor named Lindnor and dropping 13 tools to disable security software. The backdoor leveraged privilege escalation to install utilities, but Symantec’s bulletin reported the encryption payload was blocked before execution, preventing data loss.]]></description>
-      <pubDate>Mon, 09 Nov 2026 15:31:18 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/anubis-ransomware-lindnor-backdoor/">Cyber Security News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>GRC Threat: Ignoring AI Instead of Embracing It</title>
-      <link>https://secubuzz.com/news/grc-threat-ignoring-ai-instead-of-embracing-it-f0898917</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/grc-threat-ignoring-ai-instead-of-embracing-it-f0898917</guid>
-      <description><![CDATA[AI agents are automating routine governance, risk, and compliance tasks, compelling GRC professionals to acquire new skills. The shift emphasizes data literacy, agent governance, and communication as essential competencies for the AI-driven GRC workplace. Organizations should invest in training and tools to manage AI agents and maintain compliance oversight effectively.]]></description>
-      <pubDate>Mon, 09 Nov 2026 15:05:15 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/">BleepingComputer</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "security-teams-prioritize-ai-agent-behavior-monito-778ad60b",
+    "title": "Security Teams Prioritize AI Agent Behavior Monitoring",
+    "summary": "A 2026 State of Behavioral Security Report names AI agents as the top monitoring focus. The survey shows 43% plan to invest in AI agent monitoring, exceeding API integrations, yet many lack baseline definitions. Teams should establish baseline metrics and deploy monitoring tools to detect anomalous AI agent behavior early.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/abnormal-ai-behavioral-security-report/",
+    "publishedAt": "2026-11-10T06:00:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "security-teams-prioritize-ai-agent-behavior-monito",
+      "article-778ad60b",
+      "778ad60b",
+      "security-teams-prioritize-ai-agent-behavior-monito-28e32c",
+      "security-teams-prioritize-ai-agent-behavior-monitoring"
+    ]
+  },
+  {
     "slug": "openclaw-ai-agents-deliver-malware-to-windows-and-b78866a7",
     "title": "OpenClaw AI Agents Deliver Malware to Windows and macOS",
     "summary": "OpenClaw operators have deployed over 575 AI‑driven skills that deliver malware to Windows and macOS endpoints. They use stolen credentials, AI models for reconnaissance and exploitation, and tools that suppress intrusion detection, coordinated via WeChat and LINE. Teams should monitor credential activity, block known OpenClaw signatures, and enforce multi‑factor authentication to counter this threat.",
@@ -103,6 +122,27 @@ export const news: NewsBrief[] = [
       "939c958d",
       "satirical-terminal2shell-claims-highlight-security-6128db",
       "satirical-terminal2shell-claims-highlight-security-marketing"
+    ]
+  },
+  {
+    "slug": "apache-http-server-vulnerabilities-hit-ubuntu-lts-86b927d5",
+    "title": "Apache HTTP Server Vulnerabilities Hit Ubuntu LTS",
+    "summary": "Ubuntu 14.04 through 26.04 LTS releases contain multiple Apache HTTP Server flaws. CVE-2026-46729 and CVE-2026-47360 allow attackers to trigger denial of service or leak session data via improper memory and cookie handling, potentially exposing sensitive information; no confirmed exploitation yet. Ubuntu advises applying the latest security updates and verifying Apache configurations to mitigate the vulnerabilities.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9016-1",
+    "publishedAt": "2026-11-10T02:43:47.000Z",
+    "cves": [
+      "CVE-2026-46729",
+      "CVE-2026-47360"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-http-server-vulnerabilities-hit-ubuntu-lts",
+      "article-86b927d5",
+      "86b927d5",
+      "apache-http-server-vulnerabilities-hit-ubuntu-lts-7e8930"
     ]
   },
   {
@@ -562,22 +602,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "hackers-exploit-qubole-s-trusted-aws-access-to-bre-732a8419",
-    "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
-    "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers.",
+    "slug": "qubole-aws-backdoor-enables-customer-data-breach-dc6dac4b",
+    "title": "Qubole AWS Backdoor Enables Customer Data Breach",
+    "summary": "Qubole’s AWS deployment contained a backdoor that allowed attackers to access and exfiltrate customer secrets without authentication. Between October 14 and 26, attackers used the compromised AWS credentials to breach multiple customer accounts and steal data. Qubole urged immediate patching, telemetry review, and deployment of detection rules to mitigate further exfiltration.",
     "category": "Breach",
-    "severity": "MEDIUM",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
     "publishedAt": "2026-11-09T17:51:21.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/attackers-backdoor-trusted-aws-integrations-to-steal-se"
+      }
+    ],
     "aliases": [
-      "hackers-exploit-qubole-s-trusted-aws-access-to-bre",
-      "article-732a8419",
-      "732a8419",
-      "hackers-exploit-qubole-s-trusted-aws-access-to-bre-7c9614",
-      "hackers-exploit-qubole-s-trusted-aws-access-to-breach-custom"
+      "qubole-aws-backdoor-enables-customer-data-breach",
+      "article-dc6dac4b",
+      "dc6dac4b",
+      "qubole-aws-backdoor-enables-customer-data-breach-7c9614"
     ]
   },
   {
@@ -1078,22 +1122,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "bee-js-and-swarm-desktop-releases-embed-sleepyduck-5e2cb730",
-    "title": "Bee-js and Swarm Desktop Releases Embed SleepyDuck C2 Backdoor",
-    "summary": "Compromised maintainer accounts pushed malicious @ethersphere/bee-js 13.3.0 and Swarm Desktop 0.56.2, embedding a SleepyDuck Ethereum‑addressed C2 backdoor. Credentialed npm and GitHub access allowed attackers to inject code that connects to SleepyDuck C2, enabling data exfiltration. Users should uninstall the malicious packages, replace them with verified releases, and monitor traffic to SleepyDuck Ethereum addresses.",
+    "slug": "ethersphere-bee-js-package-compromised-with-sleepy-54efd795",
+    "title": "Ethersphere bee-js Package Compromised with SleepyDuck Backdoor Exfiltrating Wallets",
+    "summary": "Ethersphere’s bee-js package was compromised by malicious maintainers, embedding a SleepyDuck C2 backdoor that exfiltrates cryptocurrency wallets from infected nodes. The backdoor bypasses authentication via undisclosed code paths, enabling credential theft and transaction hijacking without a public CVE. Security teams should apply vendor patches, enable multi‑factor authentication, uninstall malicious releases, and monitor traffic to SleepyDuck Ethereum addresses.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Socket.dev",
     "sourceUrl": "https://socket.dev/blog/bee-js-compromise",
     "publishedAt": "2026-11-09T14:52:15.147Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/hackers-compromise-ethersphere-s-bee-js-and-swarm-deskt"
+      }
+    ],
     "aliases": [
-      "bee-js-and-swarm-desktop-releases-embed-sleepyduck",
-      "article-5e2cb730",
-      "5e2cb730",
-      "bee-js-and-swarm-desktop-releases-embed-sleepyduck-4549a1",
-      "bee-js-and-swarm-desktop-releases-embed-sleepyduck-c2-backdo"
+      "ethersphere-bee-js-package-compromised-with-sleepy",
+      "article-54efd795",
+      "54efd795",
+      "ethersphere-bee-js-package-compromised-with-sleepy-4549a1",
+      "ethersphere-bee-js-package-compromised-with-sleepyduck-backd"
     ]
   },
   {
@@ -1134,22 +1183,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7cfd7aa3",
-    "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
-    "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs researcher Cara Lin said.",
-    "category": "General",
-    "severity": "MEDIUM",
+    "slug": "bitter-apt-deploys-paprat-backdoor-in-south-asian-d747891e",
+    "title": "Bitter APT Deploys PapRAT Backdoor in South Asian Cyber Espionage Campaign",
+    "summary": "Bitter, a state-sponsored APT, deployed the PapRAT backdoor against multiple South Asian organizations, compromising system integrity. The malware exploits undocumented privilege‑escalation paths, enabling persistent access and covert data exfiltration without a known CVE. Defenders should apply vendor patches, enforce least‑privilege policies, and deploy behavioral detection rules to neutralize the threat.",
+    "category": "Nation State",
+    "severity": "HIGH",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
     "publishedAt": "2026-11-09T14:31:29.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/bitter-hackers-deploy-new-paprat-backdoor-in-cyberespio"
+      }
+    ],
     "aliases": [
-      "bitter-hackers-deploy-new-paprat-backdoor-in-cyber",
-      "article-7cfd7aa3",
-      "7cfd7aa3",
-      "bitter-hackers-deploy-new-paprat-backdoor-in-cyber-7195f6",
-      "bitter-hackers-deploy-new-paprat-backdoor-in-cyberespionage-"
+      "bitter-apt-deploys-paprat-backdoor-in-south-asian",
+      "article-d747891e",
+      "d747891e",
+      "bitter-apt-deploys-paprat-backdoor-in-south-asian-7195f6",
+      "bitter-apt-deploys-paprat-backdoor-in-south-asian-cyber-espi"
     ]
   },
   {
@@ -9560,48 +9614,6 @@ export const news: NewsBrief[] = [
       "7f308fa7",
       "chromium-vulnerability-cve-2026-119265-causes-memo-1fe8ab",
       "chromium-vulnerability-cve-2026-119265-causes-memory-corrupt"
-    ]
-  },
-  {
-    "slug": "chromium-vulnerability-cve-2026-119266-enables-use-98ba9934",
-    "title": "Chromium Vulnerability CVE-2026-119266 Enables Use-After-Free",
-    "summary": "A use‑after‑free flaw, CVE-2026-119266, targets Chromium code paths used by Microsoft Edge. The flaw arises from freeing memory before all references are cleared, potentially allowing attackers to execute arbitrary code or crash the browser; no exploitation reported. Microsoft Edge applies the fix through Chromium updates; users should upgrade to the latest Edge version or consult Google Chrome release notes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119266",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119266"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-vulnerability-cve-2026-119266-enables-use",
-      "article-98ba9934",
-      "98ba9934",
-      "chromium-vulnerability-cve-2026-119266-enables-use-1fe8ab",
-      "chromium-vulnerability-cve-2026-119266-enables-use-after-fre"
-    ]
-  },
-  {
-    "slug": "edge-addresses-chromium-memory-corruption-cve-2026-cc043ad6",
-    "title": "Edge Addresses Chromium Memory Corruption CVE-2026-119267",
-    "summary": "Microsoft Edge (Chromium-based) is affected by a memory corruption flaw, CVE-2026-119267, in Chromium. The flaw stems from improper bounds checking during memory allocation, potentially enabling arbitrary code execution if a malicious page is rendered, though no public exploit exists. Microsoft has fixed the issue in Edge; users should update or apply the patch referenced in Google Chrome releases.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119267",
-    "publishedAt": "2026-11-04T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-119267"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "edge-addresses-chromium-memory-corruption-cve-2026",
-      "article-cc043ad6",
-      "cc043ad6",
-      "edge-addresses-chromium-memory-corruption-cve-2026-1fe8ab",
-      "edge-addresses-chromium-memory-corruption-cve-2026-119267"
     ]
   }
 ];
