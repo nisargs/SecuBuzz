@@ -11,6 +11,101 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-98588-moderate-openssl-security-bug-fix-00a2dfee",
+    "title": "RHSA-2026:98588: Moderate: openssl security, bug fix, and enhancement update",
+    "summary": "An update for openssl is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98588",
+    "publishedAt": "2026-11-11T11:23:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98588-moderate-openssl-security-bug-fix",
+      "article-00a2dfee",
+      "00a2dfee",
+      "rhsa-2026-98588-moderate-openssl-security-bug-fix-37d6e4",
+      "rhsa-2026-98588-moderate-openssl-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98586-important-networkmanager-security-54b55bf3",
+    "title": "RHSA-2026:98586: Important: NetworkManager security update",
+    "summary": "An update for NetworkManager is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98586",
+    "publishedAt": "2026-11-11T11:23:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98586-important-networkmanager-security",
+      "article-54b55bf3",
+      "54b55bf3",
+      "rhsa-2026-98586-important-networkmanager-security-37d6e4",
+      "rhsa-2026-98586-important-networkmanager-security-update"
+    ]
+  },
+  {
+    "slug": "microsoft-researchers-demonstrate-hidden-backdoor-7a159787",
+    "title": "Microsoft researchers demonstrate hidden backdoor technique for AI agents",
+    "summary": "Microsoft researchers have demonstrated how small changes to an AI model can implant a hidden backdoor, causing an agent to execute an attacker’s command when a specific trigger appears. The technique, called Lazarus, requires no model retraining and allows the agent to behave normally during standard safety evaluations.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/microsoft-hidden-ai-backdoors-lazarus/",
+    "publishedAt": "2026-11-11T10:55:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-researchers-demonstrate-hidden-backdoor",
+      "article-7a159787",
+      "7a159787",
+      "microsoft-researchers-demonstrate-hidden-backdoor-39d37f",
+      "microsoft-researchers-demonstrate-hidden-backdoor-technique-"
+    ]
+  },
+  {
+    "slug": "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-23540e14",
+    "title": "Hackers Exploit AhsayCBS Vulnerabilities to Hide Malware in PNG Images and Deploy Stealthy Backdoors",
+    "summary": "Hackers exploiting AhsayCBS backup servers have planted webshells, hidden encrypted code inside PNG images, and staged a Python implant designed to run only on its intended host. The findings show an intrusion that extended beyond cryptocurrency mining, giving attackers several ways to keep access to systems responsible for protecting an organization’s backups.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-ahsaycbs-vulnerabilities/",
+    "publishedAt": "2026-11-11T10:44:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m",
+      "article-23540e14",
+      "23540e14",
+      "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-4181d5",
+      "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-malware-in-"
+    ]
+  },
+  {
+    "slug": "clickfix-attacks-evolve-to-hide-malware-in-png-ima-5a872db2",
+    "title": "ClickFix Attacks Evolve to Hide Malware in PNG Images and Hijack Windows Domain Controllers",
+    "summary": "ClickFix attacks are moving beyond simple malware downloads, with recent investigations revealing executable payloads hidden inside PNG images and intrusions reaching Windows domain controllers. The activity shows how a fake verification prompt can become the starting point for persistent access, credential theft, and movement across corporate networks.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/clickfix-attacks-evolve/",
+    "publishedAt": "2026-11-11T10:32:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "clickfix-attacks-evolve-to-hide-malware-in-png-ima",
+      "article-5a872db2",
+      "5a872db2",
+      "clickfix-attacks-evolve-to-hide-malware-in-png-ima-b21c77",
+      "clickfix-attacks-evolve-to-hide-malware-in-png-images-and-hi"
+    ]
+  },
+  {
     "slug": "cisa-flags-cisco-broadworks-flaw-as-actively-explo-f54e59e8",
     "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
     "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. The vulnerability is tracked as CVE-2026-20320.",
@@ -693,6 +788,44 @@ export const news: NewsBrief[] = [
       "532fc7b9",
       "red-enterprise-linux-7-users-receive-acl-security-37d6f4",
       "red-enterprise-linux-7-users-receive-acl-security-patch"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98107-important-python-tornado-security-6a82b776",
+    "title": "RHSA-2026:98107: Important: python-tornado security update",
+    "summary": "An update for python-tornado is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98107",
+    "publishedAt": "2026-11-11T02:58:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98107-important-python-tornado-security",
+      "article-6a82b776",
+      "6a82b776",
+      "rhsa-2026-98107-important-python-tornado-security-37d6f4",
+      "rhsa-2026-98107-important-python-tornado-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98109-critical-python-pillow-security-up-852ee003",
+    "title": "RHSA-2026:98109: Critical: python-pillow security update",
+    "summary": "An update for python-pillow is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98109",
+    "publishedAt": "2026-11-11T02:35:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98109-critical-python-pillow-security-up",
+      "article-852ee003",
+      "852ee003",
+      "rhsa-2026-98109-critical-python-pillow-security-up-37d6f4",
+      "rhsa-2026-98109-critical-python-pillow-security-update"
     ]
   },
   {
@@ -2812,6 +2945,48 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "local-information-disclosure-flaw-discovered-in-wi-af58654c",
+    "title": "Local Information Disclosure Flaw Discovered in Windows Overlay Filter",
+    "summary": "A local information disclosure vulnerability affects the Microsoft Windows Overlay Filter driver. Designated as CVE-2026-108409, the exposure of sensitive system information to an unauthorized control sphere enables local authenticated attackers to leak confidential data. Security administrators should apply Microsoft's security updates to prevent unauthorized local information exposure across enterprise systems.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108409",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-108409"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "local-information-disclosure-flaw-discovered-in-wi",
+      "article-af58654c",
+      "af58654c",
+      "local-information-disclosure-flaw-discovered-in-wi-1ff730",
+      "local-information-disclosure-flaw-discovered-in-windows-over"
+    ]
+  },
+  {
+    "slug": "network-information-disclosure-bug-impacts-windows-43391aec",
+    "title": "Network Information Disclosure Bug Impacts Windows Remote Desktop Client",
+    "summary": "A network-based information disclosure vulnerability impacts the Microsoft Windows Remote Desktop Client software. Identified as CVE-2026-108417, an out-of-bounds read flaw allows unauthorized remote attackers to expose sensitive system data across the network connection. Organizations must deploy the latest Microsoft software patches to protect Remote Desktop endpoints against unauthorized information leakage.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108417",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-108417"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "network-information-disclosure-bug-impacts-windows",
+      "article-43391aec",
+      "43391aec",
+      "network-information-disclosure-bug-impacts-windows-1ff730",
+      "network-information-disclosure-bug-impacts-windows-remote-de"
     ]
   },
   {
@@ -9398,172 +9573,6 @@ export const news: NewsBrief[] = [
       "86f165d5",
       "red-hat-issues-keycloak-26-6-9-security-update-to-37d7e0",
       "red-hat-issues-keycloak-26-6-9-security-update-to-mitigate-p"
-    ]
-  },
-  {
-    "slug": "ctm360-exposes-fake-gift-card-scam-tactics-b4921fb8",
-    "title": "CTM360 Exposes Fake Gift Card Scam Tactics",
-    "summary": "CTM360 uncovered a series of fake gift card scams that impersonate well-known brands and celebrities to trick consumers into providing personal data. The campaigns use deceptive verification steps and affiliate networks to harvest information and trigger unwanted subscriptions, exploiting social engineering rather than technical vulnerabilities. Security teams should educate users about verifying legitimate offers and monitor for unauthorized subscription charges.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
-    "publishedAt": "2026-11-07T14:10:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ctm360-exposes-fake-gift-card-scam-tactics",
-      "article-b4921fb8",
-      "b4921fb8",
-      "ctm360-exposes-fake-gift-card-scam-tactics-4b97bc"
-    ]
-  },
-  {
-    "slug": "claude-code-option-exposes-credentials-to-public-g-f8b02e5e",
-    "title": "Claude Code Option Exposes Credentials to Public GitHub",
-    "summary": "Claude Code’s ‘Yes, and don’t ask again’ option stores passwords and API keys in project settings, allowing them to be pushed to public GitHub repositories. Researchers uncovered 2,539 secrets in 1,994 public repos, affecting 63 organizations, proving a single approval can expose credentials. Teams should disable the option, audit settings, rotate exposed keys, and enable secret scanning to prevent leakage.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/",
-    "publishedAt": "2026-11-07T08:20:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-code-option-exposes-credentials-to-public-g",
-      "article-f8b02e5e",
-      "f8b02e5e",
-      "claude-code-option-exposes-credentials-to-public-g-516be4",
-      "claude-code-option-exposes-credentials-to-public-github"
-    ]
-  },
-  {
-    "slug": "claude-code-exposes-secrets-via-don-t-ask-again-se-3fb04556",
-    "title": "Claude Code Exposes Secrets via 'Don't Ask Again' Setting",
-    "summary": "Claude Code's 'Don't Ask Again' feature records passwords and API keys into project settings files, exposing them in 1,122 public GitHub repositories. The flaw saves the exact command, including secrets, into an unprotected file, letting anyone with repository access read credentials. Anthropic and vendors advise disabling the option, scanning for exposed secrets, and rotating credentials; no patch yet.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
-    "publishedAt": "2026-11-07T06:44:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-code-exposes-secrets-via-don-t-ask-again-se",
-      "article-3fb04556",
-      "3fb04556",
-      "claude-code-exposes-secrets-via-don-t-ask-again-se-7b8080",
-      "claude-code-exposes-secrets-via-don-t-ask-again-setting"
-    ]
-  },
-  {
-    "slug": "storm-3358-expands-artex-attacks-on-finance-4b4124b2",
-    "title": "Storm-3358 Expands ARTEX Attacks on Finance",
-    "summary": "In October 2026, the financially motivated threat actor Storm‑3358 intensified attacks on financial institutions using the ARTEX agentic AI offensive framework. ARTEX leverages AI to automate credential harvesting and phishing, enabling attackers to bypass traditional security controls without requiring manual intervention. Security teams should monitor for ARTEX‑related indicators, enforce multi‑factor authentication, and update email filtering rules to mitigate emerging threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
-    "publishedAt": "2026-11-07T02:44:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "storm-3358-expands-artex-attacks-on-finance",
-      "article-4b4124b2",
-      "4b4124b2",
-      "storm-3358-expands-artex-attacks-on-finance-1372a5"
-    ]
-  },
-  {
-    "slug": "insignary-releases-free-insignary-chk-tool-to-dete-7435b3d2",
-    "title": "Insignary Releases Free Insignary-Chk Tool to Detect PHP2Shell and Node2Shell Exposure",
-    "summary": "Toronto, Canada, November 6th, 2026, CyberNewswire Free, read-only scanner helps organizations find Linux servers and container images exposed to two actively exploited vulnerabilities in PHP and Node.js Insignary, a global open-source security company, today released insignary-chk, a free tool that checks for PHP2Shell and Node2Shell, two recently disclosed runtime vulnerabilities affecting PHP and Node.js.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
-    "publishedAt": "2026-11-07T02:06:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "insignary-releases-free-insignary-chk-tool-to-dete",
-      "article-7435b3d2",
-      "7435b3d2",
-      "insignary-releases-free-insignary-chk-tool-to-dete-3fe36e",
-      "insignary-releases-free-insignary-chk-tool-to-detect-php2she"
-    ]
-  },
-  {
-    "slug": "anthropic-remote-root-vulnerability-detection-and-d97c0bac",
-    "title": "Anthropic Remote Root Vulnerability Detection and Patch",
-    "summary": "Anthropic’s remote root flaw lets attackers gain privileged access on inference servers via a buffer overflow in request parsing. The bug permits unauthenticated code execution with a CVSS score of 8.5, and a PoC has been shown in the wild. Anthropic issued a patch; users should update the inference engine and enforce strict input validation to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/anthropic-won-t-fix-a-claude-dispatch-flaw-that-could-l",
-    "publishedAt": "2026-11-07T01:00:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-remote-root-vulnerability-detection-and",
-      "article-d97c0bac",
-      "d97c0bac",
-      "anthropic-remote-root-vulnerability-detection-and-583dcc",
-      "anthropic-remote-root-vulnerability-detection-and-patch"
-    ]
-  },
-  {
-    "slug": "chromeos-update-fixes-multiple-high-severity-cves-2a7a9d4c",
-    "title": "ChromeOS Update Fixes Multiple High‑Severity CVEs",
-    "summary": "Google ChromeOS Stable channel update addresses several memory corruption flaws affecting WebXR, WebGL, Media, CacheStorage, and Navigation. The CVEs, including CVE‑2026‑121076, CVE‑2026‑121208, CVE‑2026‑79235, and others, enable use‑after‑free or out‑of‑bounds reads that could lead to arbitrary code execution if exploited in the browser. All affected devices should install the new 16836.32.0 build or apply vendor‑supplied patches to mitigate the vulnerabilities.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos.html",
-    "publishedAt": "2026-11-07T00:52:58.867Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-update-fixes-multiple-high-severity-cves",
-      "article-2a7a9d4c",
-      "2a7a9d4c",
-      "chromeos-update-fixes-multiple-high-severity-cves-21c1c7"
-    ]
-  },
-  {
-    "slug": "metasploit-unauth-rce-in-perimeter-devices-b2f6a475",
-    "title": "Metasploit Unauth RCE in Perimeter Devices",
-    "summary": "Metasploit contains an unauthenticated remote code execution flaw affecting perimeter devices, enabling attackers to execute arbitrary code without credentials. The vulnerability is actively exploitable, with no known public exploit yet, but could allow full system compromise on affected devices. Security teams should deploy the latest Metasploit patch immediately and implement detection rules to monitor for exploitation attempts.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/metasploit-wrapup-unauth-rce-modules-in-network-perimet",
-    "publishedAt": "2026-11-07T00:50:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "metasploit-unauth-rce-in-perimeter-devices",
-      "article-b2f6a475",
-      "b2f6a475",
-      "metasploit-unauth-rce-in-perimeter-devices-940ec6"
-    ]
-  },
-  {
-    "slug": "sharepoint-cve-2025-53770-exploited-by-storm-2603-f3f6f544",
-    "title": "SharePoint CVE‑2025‑53770 Exploited by Storm‑2603",
-    "summary": "A remote code execution flaw, CVE‑2025‑53770, in Microsoft SharePoint was actively exploited by the Storm‑2603 threat actor. The vulnerability allows attackers to inject malicious scripts via crafted HTTP requests, enabling arbitrary code execution with the privileges of the SharePoint service account. Microsoft has released a patch; organizations should apply the update immediately and monitor for suspicious activity in SharePoint logs.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/the-soc-files-5-ghost-in-the-pipeline-or-a-fileless-sha",
-    "publishedAt": "2026-11-07T00:40:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sharepoint-cve-2025-53770-exploited-by-storm-2603",
-      "article-f3f6f544",
-      "f3f6f544",
-      "sharepoint-cve-2025-53770-exploited-by-storm-2603-2c32f9"
     ]
   }
 ];

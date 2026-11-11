@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 10:48:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 11:30:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:98588: Moderate: openssl security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98588-moderate-openssl-security-bug-fix-00a2dfee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98588-moderate-openssl-security-bug-fix-00a2dfee</guid>
+      <description><![CDATA[An update for openssl is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 11:23:37 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98588">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:98586: Important: NetworkManager security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98586-important-networkmanager-security-54b55bf3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98586-important-networkmanager-security-54b55bf3</guid>
+      <description><![CDATA[An update for NetworkManager is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 11:23:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98586">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft researchers demonstrate hidden backdoor technique for AI agents</title>
+      <link>https://secubuzz.com/news/microsoft-researchers-demonstrate-hidden-backdoor-7a159787</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-researchers-demonstrate-hidden-backdoor-7a159787</guid>
+      <description><![CDATA[Microsoft researchers have demonstrated how small changes to an AI model can implant a hidden backdoor, causing an agent to execute an attacker’s command when a specific trigger appears. The technique, called Lazarus, requires no model retraining and allows the agent to behave normally during standard safety evaluations.]]></description>
+      <pubDate>Wed, 11 Nov 2026 10:55:54 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/11/microsoft-hidden-ai-backdoors-lazarus/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Hackers Exploit AhsayCBS Vulnerabilities to Hide Malware in PNG Images and Deploy Stealthy Backdoors</title>
+      <link>https://secubuzz.com/news/hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-23540e14</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-23540e14</guid>
+      <description><![CDATA[Hackers exploiting AhsayCBS backup servers have planted webshells, hidden encrypted code inside PNG images, and staged a Python implant designed to run only on its intended host. The findings show an intrusion that extended beyond cryptocurrency mining, giving attackers several ways to keep access to systems responsible for protecting an organization’s backups.]]></description>
+      <pubDate>Wed, 11 Nov 2026 10:44:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-exploit-ahsaycbs-vulnerabilities/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ClickFix Attacks Evolve to Hide Malware in PNG Images and Hijack Windows Domain Controllers</title>
+      <link>https://secubuzz.com/news/clickfix-attacks-evolve-to-hide-malware-in-png-ima-5a872db2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-attacks-evolve-to-hide-malware-in-png-ima-5a872db2</guid>
+      <description><![CDATA[ClickFix attacks are moving beyond simple malware downloads, with recent investigations revealing executable payloads hidden inside PNG images and intrusions reaching Windows domain controllers. The activity shows how a fake verification prompt can become the starting point for persistent access, credential theft, and movement across corporate networks.]]></description>
+      <pubDate>Wed, 11 Nov 2026 10:32:40 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/clickfix-attacks-evolve/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>CISA flags Cisco BroadWorks flaw as actively exploited in attacks</title>
       <link>https://secubuzz.com/news/cisa-flags-cisco-broadworks-flaw-as-actively-explo-f54e59e8</link>
@@ -332,6 +377,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:98107: Important: python-tornado security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98107-important-python-tornado-security-6a82b776</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98107-important-python-tornado-security-6a82b776</guid>
+      <description><![CDATA[An update for python-tornado is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 02:58:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98107">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:98109: Critical: python-pillow security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98109-critical-python-pillow-security-up-852ee003</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98109-critical-python-pillow-security-up-852ee003</guid>
+      <description><![CDATA[An update for python-pillow is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
+      <pubDate>Wed, 11 Nov 2026 02:35:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98109">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Microsoft Confirms Hackers Are Exploiting Outlook 0-Day to Steal Windows Authentication Hashes</title>
       <link>https://secubuzz.com/news/microsoft-confirms-hackers-are-exploiting-outlook-0e1a2292</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-confirms-hackers-are-exploiting-outlook-0e1a2292</guid>
@@ -392,69 +455,6 @@
       <description><![CDATA[An update for python3.12-urllib3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Wed, 11 Nov 2026 01:45:45 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98097">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98116: Important: dnsmasq security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98116-important-dnsmasq-security-bug-fix-df3ba1ce</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98116-important-dnsmasq-security-bug-fix-df3ba1ce</guid>
-      <description><![CDATA[An update for dnsmasq is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:45:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98116">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98112: Important: flatpak security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98112-important-flatpak-security-update-77f2c077</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98112-important-flatpak-security-update-77f2c077</guid>
-      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:45:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98112">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98104: Critical: python-tornado security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98104-critical-python-tornado-security-u-6191568f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98104-critical-python-tornado-security-u-6191568f</guid>
-      <description><![CDATA[An update for python-tornado is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:44:54 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98104">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:95745: Critical: OpenShift Container Platform 4.13.73 bug fix and security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-95745-critical-openshift-container-platf-51cfd39e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-95745-critical-openshift-container-platf-51cfd39e</guid>
-      <description><![CDATA[Red Hat OpenShift Container Platform release 4.13.73 is now available with updates to packages and images that fix several bugs and add enhancements. This release includes a security update for Red Hat OpenShift Container Platform 4.13. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:43:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95745">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Patch Tuesday for November 2026 — Snort rules and prominent vulnerabilities</title>
-      <link>https://secubuzz.com/news/microsoft-patch-tuesday-for-november-2026-snort-ru-db9b6612</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-for-november-2026-snort-ru-db9b6612</guid>
-      <description><![CDATA[Microsoft has released its monthly security update for November 2026, which includes 1328 vulnerabilities affecting a range of products, including 60 that Microsoft marked as "critical." Out of 60 "critical" vulnerabilities, 45 are remote code execution (RCE) vulnerabilities. The vulnerability is tracked as CVE-2026-113971.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:41:17 GMT</pubDate>
-      <source url="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/">Cisco Talos</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97873: Important: kernel security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97873-important-kernel-security-bug-fix-13dc64f8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97873-important-kernel-security-bug-fix-13dc64f8</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:27:18 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97873">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates python‑urllib3 for Enterprise Linux</title>
-      <link>https://secubuzz.com/news/red-hat-updates-python-urllib3-for-enterprise-linu-9ba06051</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-python-urllib3-for-enterprise-linu-9ba06051</guid>
-      <description><![CDATA[Red Hat released a security update for python‑urllib3 in its Enterprise Linux 10.0 Extended Update Support, addressing a flaw. The vulnerability, rated Important by Red Hat Product Security, could allow attackers to exploit insecure urllib3 handling, leading to remote code execution. Users should apply the update immediately, verify CVE references for severity, and enforce secure coding practices to prevent exploitation.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:23:08 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98096">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

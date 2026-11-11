@@ -4323,5 +4323,14 @@
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-221",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-266",
   "https://access.redhat.com/errata/RHSA-2026:98118",
-  "https://access.redhat.com/errata/RHSA-2026:98121"
+  "https://access.redhat.com/errata/RHSA-2026:98121",
+  "https://access.redhat.com/errata/RHSA-2026:98588",
+  "https://access.redhat.com/errata/RHSA-2026:98586",
+  "https://www.helpnetsecurity.com/2026/11/11/microsoft-hidden-ai-backdoors-lazarus/",
+  "https://cybersecuritynews.com/hackers-exploit-ahsaycbs-vulnerabilities/",
+  "https://cybersecuritynews.com/clickfix-attacks-evolve/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108409",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108417",
+  "https://access.redhat.com/errata/RHSA-2026:98109",
+  "https://access.redhat.com/errata/RHSA-2026:98107"
 ]
