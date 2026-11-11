@@ -4439,5 +4439,14 @@
   "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
   "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01570615041.html",
   "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html",
-  "http://www.zerodayinitiative.com/advisories/ZDI-26-934/"
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-934/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-933/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-932/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-931/",
+  "https://access.redhat.com/errata/RHSA-2026:99168",
+  "https://access.redhat.com/errata/RHSA-2026:99155",
+  "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-930/"
 ]

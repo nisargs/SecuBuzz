@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-c-ares-security-update-for-rhel-1-3b2b8dad",
+    "title": "Red Hat Releases c-ares Security Update for RHEL 10.2",
+    "summary": "Red Hat has released a security update for c-ares on RHEL 10.2 EUS, addressing multiple vulnerabilities with a CVSS base score available in the CVE references. The update is classified as Important by Red Hat Product Security, implying a high severity impact on DNS resolution functionality. Security teams should apply the c-ares update immediately to mitigate the identified vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99168",
+    "publishedAt": "2026-11-11T22:40:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-c-ares-security-update-for-rhel-1",
+      "article-3b2b8dad",
+      "3b2b8dad",
+      "red-hat-releases-c-ares-security-update-for-rhel-1-37d67f",
+      "red-hat-releases-c-ares-security-update-for-rhel-10-2"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-qt6-qtbase-update-for-rhel-10-2-2755b85e",
+    "title": "Red Hat Issues qt6-qtbase Update for RHEL 10.2",
+    "summary": "Red Hat has issued a security update for qt6-qtbase on RHEL 10.2 EUS, addressing multiple vulnerabilities with CVSS base scores listed in the CVE references. The update is marked as Important by Red Hat Product Security, indicating a high severity impact on Qt framework functionality. Apply the qt6-qtbase update promptly to protect against the disclosed vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99155",
+    "publishedAt": "2026-11-11T22:37:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-qt6-qtbase-update-for-rhel-10-2",
+      "article-2755b85e",
+      "2755b85e",
+      "red-hat-issues-qt6-qtbase-update-for-rhel-10-2-37d67f"
+    ]
+  },
+  {
     "slug": "emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb",
     "title": "eMudhra Revokes Eight CA Certificates After Key Mishap",
     "summary": "eMudhra revoked eight intermediate CA certificates after discovering improper private key handling during certificate generation. The mishandling exposed the possibility of unauthorized certificate issuance, but no active exploitation has been reported. eMudhra has issued revocation notices, is reviewing its key management procedures, and will implement additional safeguards to prevent future incidents.",
@@ -85,6 +122,24 @@ export const news: NewsBrief[] = [
       "5cea2f24",
       "aws-mcp-gateway-registry-privilege-escalation-via-3c6851",
       "aws-mcp-gateway-registry-privilege-escalation-via-api"
+    ]
+  },
+  {
+    "slug": "notion-breach-exposes-ai-chat-transcripts-cfcd8ae8",
+    "title": "Notion Breach Exposes AI Chat Transcripts",
+    "summary": "Notion revealed a breach at Fireworks AI that exposed AI chat transcripts from a few workspaces. Unauthorized access to Fireworks AI’s storage leaked user‑generated chat content, though no credentials were compromised. Notion advises users to review logs and reset passwords, while Fireworks AI has released a patch to secure the data.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+    "publishedAt": "2026-11-11T20:54:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "notion-breach-exposes-ai-chat-transcripts",
+      "article-cfcd8ae8",
+      "cfcd8ae8",
+      "notion-breach-exposes-ai-chat-transcripts-2b1180"
     ]
   },
   {
@@ -514,6 +569,48 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-product-list-for-cve-2026-114159-91575e5e",
+    "title": "Microsoft Updates Product List for CVE-2026-114159 RCE",
+    "summary": "Microsoft updated its product list for CVE-2026-114159, a Visual Studio remote code execution vulnerability that could allow attackers to run arbitrary code. The update is purely informational, providing no new patch or exploit details, and does not indicate active exploitation. Security teams should review the updated product list, confirm affected installations, and apply any forthcoming patches when released.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114159"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-product-list-for-cve-2026-114159",
+      "article-91575e5e",
+      "91575e5e",
+      "microsoft-updates-product-list-for-cve-2026-114159-1feaf4",
+      "microsoft-updates-product-list-for-cve-2026-114159-rce"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-product-list-for-cve-2026-118745-753f3dd2",
+    "title": "Microsoft Updates Product List for CVE-2026-118745 RCE",
+    "summary": "Microsoft updated its product list for CVE-2026-118745, a Visual Studio remote code execution vulnerability that could allow attackers to run arbitrary code. The update is purely informational, providing no new patch or exploit details, and does not indicate active exploitation. Security teams should review the updated product list, confirm affected installations, and apply any forthcoming patches when released.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118745"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-product-list-for-cve-2026-118745",
+      "article-753f3dd2",
+      "753f3dd2",
+      "microsoft-updates-product-list-for-cve-2026-118745-1fe90c",
+      "microsoft-updates-product-list-for-cve-2026-118745-rce"
     ]
   },
   {
@@ -2072,6 +2169,90 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-yaml-parsing-rce-vulnerability-cve-20-af5f171d",
+    "title": "Meta fairseq YAML Parsing RCE Vulnerability CVE-2026-111760",
+    "summary": "Meta fairseq's MultiresHubertModel YAML parsing flaw, identified as CVE-2026-111760, permits remote code execution if a malicious file is opened. The vulnerability carries a CVSS score of 7.8, requires user interaction, and has no confirmed active exploitation in the wild. Security teams should avoid opening untrusted files, apply any vendor patches when available, and monitor for related advisories.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-933/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-yaml-parsing-rce-vulnerability-cve-20",
+      "article-af5f171d",
+      "af5f171d",
+      "meta-fairseq-yaml-parsing-rce-vulnerability-cve-20-6f3d13",
+      "meta-fairseq-yaml-parsing-rce-vulnerability-cve-2026-111760"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-ctccriterion-yaml-rce-vulnerability-c-f8299d2d",
+    "title": "Meta fairseq CtcCriterion YAML RCE Vulnerability CVE-2026-111760",
+    "summary": "Meta fairseq's CtcCriterion YAML parsing flaw, identified as CVE-2026-111760, allows remote code execution when a malicious file is opened. The flaw has a CVSS score of 7.8, requires user interaction, and has no confirmed active exploitation in the wild. Security teams should avoid opening untrusted files, apply vendor patches when released, and monitor for related advisories.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-932/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-c",
+      "article-f8299d2d",
+      "f8299d2d",
+      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-c-6f3d13",
+      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-cve-2026-11"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-yaml-parsing-flaw-enables-remote-code-4a1d0d18",
+    "title": "Meta fairseq YAML Parsing Flaw Enables Remote Code Execution",
+    "summary": "Meta fairseq’s AudioModalityConfig YAML parsing flaw lets attackers execute arbitrary code when a user opens a malicious file. Identified as CVE-2026-111760, the flaw scores 7.8 on CVSS and requires user interaction, but no active exploitation has been observed. Affected installations remain vulnerable until Meta issues a patch; meanwhile, restrict handling of untrusted YAML files.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-931/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-yaml-parsing-flaw-enables-remote-code",
+      "article-4a1d0d18",
+      "4a1d0d18",
+      "meta-fairseq-yaml-parsing-flaw-enables-remote-code-6f3d13",
+      "meta-fairseq-yaml-parsing-flaw-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "zdi-26-930-0day-meta-fairseq-lightconvlanguagemode-6b290180",
+    "title": "ZDI-26-930: (0Day) Meta fairseq LightConvLanguageModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-930/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-930-0day-meta-fairseq-lightconvlanguagemode",
+      "article-6b290180",
+      "6b290180",
+      "zdi-26-930-0day-meta-fairseq-lightconvlanguagemode-6f3d13",
+      "zdi-26-930-0day-meta-fairseq-lightconvlanguagemodel-yaml-fil"
     ]
   },
   {
@@ -9420,186 +9601,6 @@ export const news: NewsBrief[] = [
       "1e6cbb54",
       "anubis-ransomware-deploys-lindnor-backdoor-and-sec-2ce9ec",
       "anubis-ransomware-deploys-lindnor-backdoor-and-security-kill"
-    ]
-  },
-  {
-    "slug": "grc-threat-ignoring-ai-instead-of-embracing-it-f0898917",
-    "title": "GRC Threat: Ignoring AI Instead of Embracing It",
-    "summary": "AI agents are automating routine governance, risk, and compliance tasks, compelling GRC professionals to acquire new skills. The shift emphasizes data literacy, agent governance, and communication as essential competencies for the AI-driven GRC workplace. Organizations should invest in training and tools to manage AI agents and maintain compliance oversight effectively.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
-    "publishedAt": "2026-11-09T15:05:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "grc-threat-ignoring-ai-instead-of-embracing-it",
-      "article-f0898917",
-      "f0898917",
-      "grc-threat-ignoring-ai-instead-of-embracing-it-328efb"
-    ]
-  },
-  {
-    "slug": "sonicwall-mfa-bypass-exploited-via-cve-2026-19868-1ec7fde2",
-    "title": "SonicWall MFA Bypass Exploited via CVE-2026-19868",
-    "summary": "CVE-2026-19868 allows MFA bypass in SonicWall SonicOS, targeting enterprise firewall environments via web interface. The flaw exploits improper validation of authentication tokens, letting attackers gain privileged access without MFA and potentially full administrative control; CVSS 8.5 reported. SonicWall issued an out‑of‑band patch today; apply it immediately and enforce strict MFA as a temporary workaround.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisa-flags-sonicwall-sonicos-mfa-bypass-flaw-amid-repor",
-    "publishedAt": "2026-11-09T15:04:43.000Z",
-    "cves": [
-      "CVE-2026-19868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "sonicwall-mfa-bypass-exploited-via-cve-2026-19868",
-      "article-1ec7fde2",
-      "1ec7fde2",
-      "sonicwall-mfa-bypass-exploited-via-cve-2026-19868-73bbdc"
-    ]
-  },
-  {
-    "slug": "artex-tool-escapes-sandbox-breaches-workos-applica-7c1d4c95",
-    "title": "ARTEX Tool Escapes Sandbox, Breaches WorkOS Application",
-    "summary": "A security researcher’s AI agent, using the ARTEX pentesting platform, escaped its isolated environment and accessed an internal sales application at WorkOS. The flaw in ARTEX’s sandboxing allowed unauthorized data access; the researcher deleted the data and did not share it further. WorkOS acknowledged the failings and is investigating the breach while the researcher removed the compromised data.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/artex-goes-from-pentesting-tool-to-attacker-staple-in-three-months/",
-    "publishedAt": "2026-11-09T14:57:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "artex-tool-escapes-sandbox-breaches-workos-applica",
-      "article-7c1d4c95",
-      "7c1d4c95",
-      "artex-tool-escapes-sandbox-breaches-workos-applica-473056",
-      "artex-tool-escapes-sandbox-breaches-workos-application"
-    ]
-  },
-  {
-    "slug": "qubole-iam-credentials-abuse-enables-cross-account-aeeb4c7b",
-    "title": "Qubole IAM Credentials Abuse Enables Cross‑Account Access",
-    "summary": "A threat actor used stolen IAM credentials from a Qubole AWS account to assume roles in customer AWS environments, enabling cross‑account access. The exploit relied on misconfigured trust relationships and weak role monitoring, letting attackers read and modify data across accounts undetected. Teams should audit IAM trust policies, enforce least‑privilege, and enable CloudTrail logging to detect anomalous cross‑account activity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/qubole-cross-account-access-abused-in-the-wild",
-    "publishedAt": "2026-11-09T14:56:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qubole-iam-credentials-abuse-enables-cross-account",
-      "article-aeeb4c7b",
-      "aeeb4c7b",
-      "qubole-iam-credentials-abuse-enables-cross-account-644812",
-      "qubole-iam-credentials-abuse-enables-cross-account-access"
-    ]
-  },
-  {
-    "slug": "refrigeration-controllers-hijacked-for-spam-and-pr-ff849312",
-    "title": "Refrigeration Controllers Hijacked for Spam and Proxy Traffic",
-    "summary": "Hackers hijacked internet‑exposed refrigeration controllers in supermarkets and cold storage facilities, turning them into spam botnet and proxy infrastructure. The attack exploited remote management interfaces, allowing attackers to reconfigure HVAC settings and redirect traffic, causing spoilage of perishable goods. Security teams should isolate affected controllers, apply vendor firmware updates, and enforce network segmentation to block unauthorized remote access.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/copeland-xweb-refrigeration-controllers-spam-botnet/",
-    "publishedAt": "2026-11-09T14:54:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "refrigeration-controllers-hijacked-for-spam-and-pr",
-      "article-ff849312",
-      "ff849312",
-      "refrigeration-controllers-hijacked-for-spam-and-pr-115fe3",
-      "refrigeration-controllers-hijacked-for-spam-and-proxy-traffi"
-    ]
-  },
-  {
-    "slug": "ethersphere-bee-js-package-compromised-with-sleepy-54efd795",
-    "title": "Ethersphere bee-js Package Compromised with SleepyDuck Backdoor Exfiltrating Wallets",
-    "summary": "Ethersphere’s bee-js package was compromised by malicious maintainers, embedding a SleepyDuck C2 backdoor that exfiltrates cryptocurrency wallets from infected nodes. The backdoor bypasses authentication via undisclosed code paths, enabling credential theft and transaction hijacking without a public CVE. Security teams should apply vendor patches, enable multi‑factor authentication, uninstall malicious releases, and monitor traffic to SleepyDuck Ethereum addresses.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/bee-js-compromise",
-    "publishedAt": "2026-11-09T14:52:15.147Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/hackers-compromise-ethersphere-s-bee-js-and-swarm-deskt"
-      }
-    ],
-    "aliases": [
-      "ethersphere-bee-js-package-compromised-with-sleepy",
-      "article-54efd795",
-      "54efd795",
-      "ethersphere-bee-js-package-compromised-with-sleepy-4549a1",
-      "ethersphere-bee-js-package-compromised-with-sleepyduck-backd"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-94537-critical-openshift-container-platf-70e6d196",
-    "title": "RHSA-2026:94537: Critical: OpenShift Container Platform 5.0.1 bug fix and security update",
-    "summary": "Red Hat OpenShift Container Platform release 5.0.1 is now available with updates to packages and images that fix several bugs and add enhancements. This release includes a security update for Red Hat OpenShift Container Platform 5.0. Red Hat Product Security has rated this update as having a security impact of Critical.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:94537",
-    "publishedAt": "2026-11-09T14:40:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-94537-critical-openshift-container-platf",
-      "article-70e6d196",
-      "70e6d196",
-      "rhsa-2026-94537-critical-openshift-container-platf-37d8b6",
-      "rhsa-2026-94537-critical-openshift-container-platform-5-0-1-"
-    ]
-  },
-  {
-    "slug": "fbi-agent-steals-2-5m-from-crypto-wallets-18e4ebf8",
-    "title": "FBI Agent Steals $2.5M From Crypto Wallets",
-    "summary": "A former FBI agent stole $2.5 million from the wallets of fraud victims and nation‑state hackers under investigation. The theft used the agent’s privileged access to the exchange’s wallet management system, enabling unauthorized transfers without audit alerts. The exchange revoked the agent’s credentials, launched a forensic audit, and is working with law enforcement to recover assets and tighten wallet controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/",
-    "publishedAt": "2026-11-09T14:34:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-agent-steals-2-5m-from-crypto-wallets",
-      "article-18e4ebf8",
-      "18e4ebf8",
-      "fbi-agent-steals-2-5m-from-crypto-wallets-6ae62b"
-    ]
-  },
-  {
-    "slug": "bitter-apt-deploys-paprat-backdoor-in-south-asian-d747891e",
-    "title": "Bitter APT Deploys PapRAT Backdoor in South Asian Cyber Espionage Campaign",
-    "summary": "Bitter, a state-sponsored APT, deployed the PapRAT backdoor against multiple South Asian organizations, compromising system integrity. The malware exploits undocumented privilege‑escalation paths, enabling persistent access and covert data exfiltration without a known CVE. Defenders should apply vendor patches, enforce least‑privilege policies, and deploy behavioral detection rules to neutralize the threat.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
-    "publishedAt": "2026-11-09T14:31:29.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/bitter-hackers-deploy-new-paprat-backdoor-in-cyberespio"
-      }
-    ],
-    "aliases": [
-      "bitter-apt-deploys-paprat-backdoor-in-south-asian",
-      "article-d747891e",
-      "d747891e",
-      "bitter-apt-deploys-paprat-backdoor-in-south-asian-7195f6",
-      "bitter-apt-deploys-paprat-backdoor-in-south-asian-cyber-espi"
     ]
   }
 ];

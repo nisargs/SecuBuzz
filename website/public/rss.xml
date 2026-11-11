@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 21:46:20 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 22:46:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases c-ares Security Update for RHEL 10.2</title>
+      <link>https://secubuzz.com/news/red-hat-releases-c-ares-security-update-for-rhel-1-3b2b8dad</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-c-ares-security-update-for-rhel-1-3b2b8dad</guid>
+      <description><![CDATA[Red Hat has released a security update for c-ares on RHEL 10.2 EUS, addressing multiple vulnerabilities with a CVSS base score available in the CVE references. The update is classified as Important by Red Hat Product Security, implying a high severity impact on DNS resolution functionality. Security teams should apply the c-ares update immediately to mitigate the identified vulnerabilities.]]></description>
+      <pubDate>Wed, 11 Nov 2026 22:40:55 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99168">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues qt6-qtbase Update for RHEL 10.2</title>
+      <link>https://secubuzz.com/news/red-hat-issues-qt6-qtbase-update-for-rhel-10-2-2755b85e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-qt6-qtbase-update-for-rhel-10-2-2755b85e</guid>
+      <description><![CDATA[Red Hat has issued a security update for qt6-qtbase on RHEL 10.2 EUS, addressing multiple vulnerabilities with CVSS base scores listed in the CVE references. The update is marked as Important by Red Hat Product Security, indicating a high severity impact on Qt framework functionality. Apply the qt6-qtbase update promptly to protect against the disclosed vulnerabilities.]]></description>
+      <pubDate>Wed, 11 Nov 2026 22:37:54 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99155">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>eMudhra Revokes Eight CA Certificates After Key Mishap</title>
       <link>https://secubuzz.com/news/emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb</link>
@@ -42,6 +60,15 @@
       <pubDate>Wed, 11 Nov 2026 21:03:02 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-179-aws/">AWS Security Bulletins</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Notion Breach Exposes AI Chat Transcripts</title>
+      <link>https://secubuzz.com/news/notion-breach-exposes-ai-chat-transcripts-cfcd8ae8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/notion-breach-exposes-ai-chat-transcripts-cfcd8ae8</guid>
+      <description><![CDATA[Notion revealed a breach at Fireworks AI that exposed AI chat transcripts from a few workspaces. Unauthorized access to Fireworks AI’s storage leaked user‑generated chat content, though no credentials were compromised. Notion advises users to review logs and reset passwords, while Fireworks AI has released a patch to secure the data.]]></description>
+      <pubDate>Wed, 11 Nov 2026 20:54:20 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/">BleepingComputer</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>N-able N-central Platform Offline Over 33 Flaws</title>
@@ -251,6 +278,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Microsoft Updates Product List for CVE-2026-114159 RCE</title>
+      <link>https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-114159-91575e5e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-114159-91575e5e</guid>
+      <description><![CDATA[Microsoft updated its product list for CVE-2026-114159, a Visual Studio remote code execution vulnerability that could allow attackers to run arbitrary code. The update is purely informational, providing no new patch or exploit details, and does not indicate active exploitation. Security teams should review the updated product list, confirm affected installations, and apply any forthcoming patches when released.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Updates Product List for CVE-2026-118745 RCE</title>
+      <link>https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-118745-753f3dd2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-118745-753f3dd2</guid>
+      <description><![CDATA[Microsoft updated its product list for CVE-2026-118745, a Visual Studio remote code execution vulnerability that could allow attackers to run arbitrary code. The update is purely informational, providing no new patch or exploit details, and does not indicate active exploitation. Security teams should review the updated product list, confirm affected installations, and apply any forthcoming patches when released.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Updates Visual Studio CVE-2026-114151 RCE</title>
       <link>https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114151-rc-6d361bc9</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114151-rc-6d361bc9</guid>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 13:57:20 GMT</pubDate>
       <source url="https://cybersecuritynews.com/windows-signdrop-zero-day-exploit/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Remus Malware Claims Persistent Gmail Access After Reset</title>
-      <link>https://secubuzz.com/news/remus-malware-claims-persistent-gmail-access-after-81bdb562</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/remus-malware-claims-persistent-gmail-access-after-81bdb562</guid>
-      <description><![CDATA[The Remus infostealer asserts it can maintain Gmail access even after victims reset their passwords. The malware reportedly exploits credential persistence mechanisms, potentially leveraging OAuth tokens or cached credentials to bypass password changes. Users should revoke app permissions, enable two‑factor authentication, and monitor account activity regularly to mitigate the threat.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:42:10 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/remus-malware-claims-gmail-access-even-after-you-change-your-password">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98592: Important: go-fdo-client security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98592-important-go-fdo-client-security-u-9fe8f942</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98592-important-go-fdo-client-security-u-9fe8f942</guid>
-      <description><![CDATA[An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:41:42 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98592">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Citrix, Ivanti Release Patches for RCE Vulnerabilities</title>
-      <link>https://secubuzz.com/news/citrix-ivanti-release-patches-for-rce-vulnerabilit-9b10f27d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-ivanti-release-patches-for-rce-vulnerabilit-9b10f27d</guid>
-      <description><![CDATA[Citrix and Ivanti disclosed critical vulnerabilities that let attackers tamper with certificate entries and achieve remote code execution on affected hosts. The flaws arise from improper certificate validation, enabling arbitrary code execution and full host compromise; no public exploit is confirmed. Both vendors released patches; administrators should apply updates immediately and verify certificate integrity to mitigate risk.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:37:19 GMT</pubDate>
-      <source url="https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98595: Important: flatpak security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98595-important-flatpak-security-update-defea441</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98595-important-flatpak-security-update-defea441</guid>
-      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:37:03 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98595">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Poland Shuts Down ePUAP After Cyberattack</title>
-      <link>https://secubuzz.com/news/poland-shuts-down-epuap-after-cyberattack-b4bd6997</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/poland-shuts-down-epuap-after-cyberattack-b4bd6997</guid>
-      <description><![CDATA[Poland’s nationwide ePUAP platform, used for submitting official documents and communicating with government agencies, was shut down after a cyberattack. The attack disrupted the platform’s availability, preventing citizens from completing administrative procedures online. Polish authorities are investigating the incident, and the platform will be restored after security measures are verified.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:18:00 GMT</pubDate>
-      <source url="https://therecord.media/poland-shuts-down-government-services-platform-cyberattack">The Record</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
