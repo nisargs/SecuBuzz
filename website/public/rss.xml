@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 01:34:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 02:49:05 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:98100: Important: kernel-rt security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98100-important-kernel-rt-security-updat-ba6c131b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98100-important-kernel-rt-security-updat-ba6c131b</guid>
+      <description><![CDATA[An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 02:33:52 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98100">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:98114: Important: kernel security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98114-important-kernel-security-update-0a2558a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98114-important-kernel-security-update-0a2558a7</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 01:57:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98114">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Patch Tuesday for November 2026 — Snort rules and prominent vulnerabilities</title>
+      <link>https://secubuzz.com/news/microsoft-patch-tuesday-for-november-2026-snort-ru-db9b6612</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-for-november-2026-snort-ru-db9b6612</guid>
+      <description><![CDATA[Microsoft has released its monthly security update for November 2026, which includes 1328 vulnerabilities affecting a range of products, including 60 that Microsoft marked as "critical." Out of 60 "critical" vulnerabilities, 45 are remote code execution (RCE) vulnerabilities. The vulnerability is tracked as CVE-2026-113971.]]></description>
+      <pubDate>Wed, 11 Nov 2026 01:41:17 GMT</pubDate>
+      <source url="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/">Cisco Talos</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97873: Important: kernel security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97873-important-kernel-security-bug-fix-13dc64f8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97873-important-kernel-security-bug-fix-13dc64f8</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 01:27:18 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97873">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Updates python‑urllib3 for Enterprise Linux</title>
       <link>https://secubuzz.com/news/red-hat-updates-python-urllib3-for-enterprise-linu-9ba06051</link>
@@ -35,6 +71,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>CISA Updates Incident Form for Linked Attack Detection</title>
+      <link>https://secubuzz.com/news/cisa-updates-incident-form-for-linked-attack-detec-63467f97</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-updates-incident-form-for-linked-attack-detec-63467f97</guid>
+      <description><![CDATA[CISA released an updated Incident Form designed to detect linked attacks by correlating root‑cause telemetry across multiple incidents. The update provides new detection rules and telemetry fields that enable security teams to identify patterns of coordinated activity and trigger alerts. Administrators should download the revised form, apply the new telemetry schema, and review detection rules to ensure timely incident response.]]></description>
+      <pubDate>Tue, 10 Nov 2026 23:05:10 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cisa-tweaks-cyber-incident-form-to-spot-attacks-that-mi">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Turla Malware Exploitation Enhanced by AI Reverse Engineering</title>
       <link>https://secubuzz.com/news/turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457</link>
       <guid isPermaLink="true">https://secubuzz.com/news/turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457</guid>
@@ -42,6 +87,15 @@
       <pubDate>Tue, 10 Nov 2026 23:04:58 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/ai-makes-reverse-engineering-mainstream-software-malwar">CyberNews AI</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>OpenSSH, GPUStack Exploited via CVE-2026-123218</title>
+      <link>https://secubuzz.com/news/openssh-gpustack-exploited-via-cve-2026-123218-f2cc45ed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openssh-gpustack-exploited-via-cve-2026-123218-f2cc45ed</guid>
+      <description><![CDATA[OpenSSH and GPUStack are being exploited via CVE-2026-123218, a flaw that permits remote code execution through malformed SSH packets. Rated CVSS 9.5, the vulnerability allows unauthenticated attackers to run arbitrary code on affected servers without privilege escalation and has PoC exploits. Administrators should immediately apply vendor patches, update OpenSSH to the latest release, and monitor logs for anomalous SSH traffic.]]></description>
+      <pubDate>Tue, 10 Nov 2026 23:04:32 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cisa-warns-of-active-exploitation-of-openssh-gpustack-f">CyberNews AI</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>SAP Issues Critical RCE Patches</title>
@@ -60,6 +114,15 @@
       <pubDate>Tue, 10 Nov 2026 23:04:00 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/apple-patches-imessage-group-chat-privacy-flaws-and-blu">CyberNews AI</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Research Detects Sleeper Agents in AI Neurons</title>
+      <link>https://secubuzz.com/news/microsoft-research-detects-sleeper-agents-in-ai-ne-787eb744</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-research-detects-sleeper-agents-in-ai-ne-787eb744</guid>
+      <description><![CDATA[Microsoft Research discovered a way to turn an agent model into a sleeper agent by editing fewer than ten neurons to embed a malicious payload. Frontier agents can detect these edits by spotting anomalous neuron changes, allowing early detection before payload activation. Teams should monitor training logs for sudden neuron modifications and use anomaly‑detection tools to mitigate sleeper agent risks.]]></description>
+      <pubDate>Tue, 10 Nov 2026 23:00:00 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/">Microsoft Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Releases Security Update for php:8.4</title>
@@ -206,6 +269,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>F-Secure Maps 26 AI Harms in Consumer Taxonomy</title>
+      <link>https://secubuzz.com/news/f-secure-maps-26-ai-harms-in-consumer-taxonomy-8ac4516e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/f-secure-maps-26-ai-harms-in-consumer-taxonomy-8ac4516e</guid>
+      <description><![CDATA[F-Secure introduced an AI Harms Taxonomy identifying 26 operational mechanisms that pose risks to consumers interacting with artificial intelligence systems. The framework maps attack vectors moving through AI infrastructure, ranging from misleading chatbot outputs to compromised autonomous software agents. According to F-Secure, the study highlights specific intervention points where defensive controls can mitigate consumer harm across AI deployments.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:41:45 GMT</pubDate>
+      <source url="https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Checkmarx Names Kobi Sivilya as Chief Information Security Officer</title>
+      <link>https://secubuzz.com/news/checkmarx-names-kobi-sivilya-as-chief-information-05842302</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/checkmarx-names-kobi-sivilya-as-chief-information-05842302</guid>
+      <description><![CDATA[Application security vendor Checkmarx announced the appointment of Kobi Sivilya as its new Chief Information Security Officer. The executive transition aims to reinforce internal security posture and guide organizational cybersecurity strategy amid AI-driven shifts in software development. Sivilya will oversee enterprise defense operations and risk management frameworks across the vendor's software security product portfolio.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:35:34 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat Releases Low‑Impact DHCP Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-low-impact-dhcp-security-update-70f3c8f2</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-low-impact-dhcp-security-update-70f3c8f2</guid>
@@ -249,6 +330,15 @@
       <pubDate>Tue, 10 Nov 2026 19:58:32 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_01666689214.html">Google Chrome Releases</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97242: Moderate: bind security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97242-moderate-bind-security-bug-fix-and-3977eb8f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97242-moderate-bind-security-bug-fix-and-3977eb8f</guid>
+      <description><![CDATA[An update for bind is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:53:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97242">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>USN-9037-1: HPLIP vulnerabilities</title>
@@ -365,96 +455,6 @@
       <description><![CDATA[An update for runc is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 10 Nov 2026 19:00:50 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97560">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97387: Important: go-fdo-server security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97387-important-go-fdo-server-security-u-83121c52</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97387-important-go-fdo-server-security-u-83121c52</guid>
-      <description><![CDATA[An update for go-fdo-server is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:53:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97387">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent</title>
-      <link>https://secubuzz.com/news/cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4</guid>
-      <description><![CDATA[Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an authenticated remote user with permission to submit jobs to a queue to execute arbitrary code as the worker agent OS user and obtain the AWS credentials held by the worker agent via a crafted job that modifies the PATH environment variable.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:53:11 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-177-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Coding Agents Leak Thousands of Secrets to GitHub</title>
-      <link>https://secubuzz.com/news/ai-coding-agents-leak-thousands-of-secrets-to-gith-98f23060</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-coding-agents-leak-thousands-of-secrets-to-gith-98f23060</guid>
-      <description><![CDATA[A command in Claude Code inadvertently saves files containing credentials and sensitive data to public Git repositories, creating security exposure for organizations. The leaked secrets include API keys, tokens, and authentication credentials that were committed to public repositories without authorization. Organizations must audit their AI coding agent configurations and implement pre-commit hooks to prevent credential leakage.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:46:22 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>GStreamer Good Plugins Vulnerabilities Allow Remote Code Execution</title>
-      <link>https://secubuzz.com/news/gstreamer-good-plugins-vulnerabilities-allow-remot-7309a69b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gstreamer-good-plugins-vulnerabilities-allow-remot-7309a69b</guid>
-      <description><![CDATA[Ubuntu 16.04, 18.04, and 20.04 are affected by GStreamer Good Plugins flaws (CVE-2026-3083, CVE-2026-3085, CVE-2026-39043) that mishandle network streams, Matroska, and WAV files. The vulnerabilities enable remote attackers to trigger crashes or potentially execute arbitrary code, posing a significant risk to affected systems. Apply Ubuntu security updates or upgrade GStreamer to a patched version to mitigate exploitation risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:38:56 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9038-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Releases Windows 11 Cumulative Updates KB5132061, KB5131087</title>
-      <link>https://secubuzz.com/news/microsoft-releases-windows-11-cumulative-updates-k-e0252079</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-releases-windows-11-cumulative-updates-k-e0252079</guid>
-      <description><![CDATA[Microsoft released cumulative updates KB5132061 and KB5131087 for Windows 11 versions 26H2/25H2/24H2 and 23H2. The updates address multiple security vulnerabilities and bugs, though specific CVE identifiers are not disclosed in the release notes. Users should install the patches via Windows Update or manually to maintain system security and feature parity.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:33:26 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Grafana Update Addresses Security Issues on RHEL9</title>
-      <link>https://secubuzz.com/news/grafana-update-addresses-security-issues-on-rhel9-f60a5ecc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-addresses-security-issues-on-rhel9-f60a5ecc</guid>
-      <description><![CDATA[Red Hat released a Grafana update for RHEL 9, addressing multiple security vulnerabilities. The advisory rates the update as Important, with CVSS base scores linked to CVE references, indicating medium‑to‑high severity flaws that could allow unauthorized data access. Administrators should apply the update promptly to mitigate potential exploitation and maintain system integrity.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:20:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97555">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>edk2 Update for RHEL10 Addresses Low‑Severity Issues</title>
-      <link>https://secubuzz.com/news/edk2-update-for-rhel10-addresses-low-severity-issu-c503678a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/edk2-update-for-rhel10-addresses-low-severity-issu-c503678a</guid>
-      <description><![CDATA[Red Hat released an edk2 update for RHEL 10, targeting low‑severity security bugs that could affect firmware initialization. The advisory lists CVSS base scores linked to CVE references, indicating minimal exploitation risk. Users should apply the update to maintain firmware stability, though no immediate threat is reported, and monitor for any related advisories.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:17:59 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97212">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fireworks AI Cloud Breach Exposes API Keys</title>
-      <link>https://secubuzz.com/news/fireworks-ai-cloud-breach-exposes-api-keys-291af339</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-ai-cloud-breach-exposes-api-keys-291af339</guid>
-      <description><![CDATA[Fireworks AI suffered a cloud breach that exposed API keys, potentially allowing attackers to access proprietary AI models and data. The compromise resulted from misconfigured access controls on the cloud storage bucket, enabling unauthenticated retrieval of sensitive credentials. Fireworks AI has issued a patch and revoked exposed keys; security teams should rotate credentials and audit cloud permissions immediately.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:16:48 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/fireworks-ai-discloses-new-breach-after-cloud-provider">CyberNews AI</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>BYOD Ransomware Allegedly Claims Toyota Data Breach</title>
-      <link>https://secubuzz.com/news/byod-ransomware-allegedly-claims-toyota-data-breac-75240c97</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/byod-ransomware-allegedly-claims-toyota-data-breac-75240c97</guid>
-      <description><![CDATA[The BYOD ransomware group claims it obtained personal information and kiosk device access from Toyota, though the claim remains unverified. No evidence confirms Toyota systems were breached or files were encrypted. Security teams should monitor threat actor claims and validate any reported data exposure through independent forensic analysis.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:14:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/toyota-data-breach-claim/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Xen Orchestra Auth Bypass Exploited for Admin Access</title>
-      <link>https://secubuzz.com/news/xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021</guid>
-      <description><![CDATA[Hackers exploit a critical authentication bypass in Xen Orchestra to gain administrative privileges. The flaw, tracked as VSA-2026-062, parses authenticationToken=j:%7B%7D into an empty object, enabling unauthorized access and is actively exploited, potentially compromising entire systems. Vates VMS urges immediate patch deployment and temporary disabling of unused REST endpoints to mitigate risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:12:21 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html">The Hacker News</source>
       <category>Vulnerability</category>
     </item>
   </channel>

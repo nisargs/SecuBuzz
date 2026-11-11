@@ -11,6 +11,83 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-98100-important-kernel-rt-security-updat-ba6c131b",
+    "title": "RHSA-2026:98100: Important: kernel-rt security update",
+    "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98100",
+    "publishedAt": "2026-11-11T02:33:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98100-important-kernel-rt-security-updat",
+      "article-ba6c131b",
+      "ba6c131b",
+      "rhsa-2026-98100-important-kernel-rt-security-updat-37d6f4",
+      "rhsa-2026-98100-important-kernel-rt-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98114-important-kernel-security-update-0a2558a7",
+    "title": "RHSA-2026:98114: Important: kernel security update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98114",
+    "publishedAt": "2026-11-11T01:57:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98114-important-kernel-security-update",
+      "article-0a2558a7",
+      "0a2558a7",
+      "rhsa-2026-98114-important-kernel-security-update-37d6f4"
+    ]
+  },
+  {
+    "slug": "microsoft-patch-tuesday-for-november-2026-snort-ru-db9b6612",
+    "title": "Microsoft Patch Tuesday for November 2026 — Snort rules and prominent vulnerabilities",
+    "summary": "Microsoft has released its monthly security update for November 2026, which includes 1328 vulnerabilities affecting a range of products, including 60 that Microsoft marked as \"critical.\" Out of 60 \"critical\" vulnerabilities, 45 are remote code execution (RCE) vulnerabilities. The vulnerability is tracked as CVE-2026-113971.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/",
+    "publishedAt": "2026-11-11T01:41:17.000Z",
+    "cves": [
+      "CVE-2026-113971"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-for-november-2026-snort-ru",
+      "article-db9b6612",
+      "db9b6612",
+      "microsoft-patch-tuesday-for-november-2026-snort-ru-5b5aa2",
+      "microsoft-patch-tuesday-for-november-2026-snort-rules-and-pr"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97873-important-kernel-security-bug-fix-13dc64f8",
+    "title": "RHSA-2026:97873: Important: kernel security, bug fix, and enhancement update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97873",
+    "publishedAt": "2026-11-11T01:27:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97873-important-kernel-security-bug-fix",
+      "article-13dc64f8",
+      "13dc64f8",
+      "rhsa-2026-97873-important-kernel-security-bug-fix-37d74d",
+      "rhsa-2026-97873-important-kernel-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
     "slug": "red-hat-updates-python-urllib3-for-enterprise-linu-9ba06051",
     "title": "Red Hat Updates python‑urllib3 for Enterprise Linux",
     "summary": "Red Hat released a security update for python‑urllib3 in its Enterprise Linux 10.0 Extended Update Support, addressing a flaw. The vulnerability, rated Important by Red Hat Product Security, could allow attackers to exploit insecure urllib3 handling, leading to remote code execution. Users should apply the update immediately, verify CVE references for severity, and enforce secure coding practices to prevent exploitation.",
@@ -66,6 +143,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-updates-incident-form-for-linked-attack-detec-63467f97",
+    "title": "CISA Updates Incident Form for Linked Attack Detection",
+    "summary": "CISA released an updated Incident Form designed to detect linked attacks by correlating root‑cause telemetry across multiple incidents. The update provides new detection rules and telemetry fields that enable security teams to identify patterns of coordinated activity and trigger alerts. Administrators should download the revised form, apply the new telemetry schema, and review detection rules to ensure timely incident response.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cisa-tweaks-cyber-incident-form-to-spot-attacks-that-mi",
+    "publishedAt": "2026-11-10T23:05:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-updates-incident-form-for-linked-attack-detec",
+      "article-63467f97",
+      "63467f97",
+      "cisa-updates-incident-form-for-linked-attack-detec-17bb0c",
+      "cisa-updates-incident-form-for-linked-attack-detection"
+    ]
+  },
+  {
     "slug": "turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457",
     "title": "Turla Malware Exploitation Enhanced by AI Reverse Engineering",
     "summary": "Turla malware, a Russian state-sponsored threat, is now being reverse engineered using AI techniques, according to a security intelligence alert. The AI-driven analysis uncovers root‑cause telemetry and detection rule patterns, enabling precise identification of Turla's command‑and‑control infrastructure, but no active exploitation is confirmed. Security teams should review telemetry, apply updated detection rules, and patch affected systems to mitigate potential compromise.",
@@ -82,6 +178,26 @@ export const news: NewsBrief[] = [
       "6a00e457",
       "turla-malware-exploitation-enhanced-by-ai-reverse-5e0fa6",
       "turla-malware-exploitation-enhanced-by-ai-reverse-engineerin"
+    ]
+  },
+  {
+    "slug": "openssh-gpustack-exploited-via-cve-2026-123218-f2cc45ed",
+    "title": "OpenSSH, GPUStack Exploited via CVE-2026-123218",
+    "summary": "OpenSSH and GPUStack are being exploited via CVE-2026-123218, a flaw that permits remote code execution through malformed SSH packets. Rated CVSS 9.5, the vulnerability allows unauthenticated attackers to run arbitrary code on affected servers without privilege escalation and has PoC exploits. Administrators should immediately apply vendor patches, update OpenSSH to the latest release, and monitor logs for anomalous SSH traffic.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cisa-warns-of-active-exploitation-of-openssh-gpustack-f",
+    "publishedAt": "2026-11-10T23:04:32.000Z",
+    "cves": [
+      "CVE-2026-123218"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openssh-gpustack-exploited-via-cve-2026-123218",
+      "article-f2cc45ed",
+      "f2cc45ed",
+      "openssh-gpustack-exploited-via-cve-2026-123218-16c8bd"
     ]
   },
   {
@@ -119,6 +235,25 @@ export const news: NewsBrief[] = [
       "fdd645db",
       "apple-imessage-group-chat-and-bluetooth-vulnerabil-2f6048",
       "apple-imessage-group-chat-and-bluetooth-vulnerabilities-patc"
+    ]
+  },
+  {
+    "slug": "microsoft-research-detects-sleeper-agents-in-ai-ne-787eb744",
+    "title": "Microsoft Research Detects Sleeper Agents in AI Neurons",
+    "summary": "Microsoft Research discovered a way to turn an agent model into a sleeper agent by editing fewer than ten neurons to embed a malicious payload. Frontier agents can detect these edits by spotting anomalous neuron changes, allowing early detection before payload activation. Teams should monitor training logs for sudden neuron modifications and use anomaly‑detection tools to mitigate sleeper agent risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
+    "publishedAt": "2026-11-10T23:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-research-detects-sleeper-agents-in-ai-ne",
+      "article-787eb744",
+      "787eb744",
+      "microsoft-research-detects-sleeper-agents-in-ai-ne-641529",
+      "microsoft-research-detects-sleeper-agents-in-ai-neurons"
     ]
   },
   {
@@ -418,6 +553,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "f-secure-maps-26-ai-harms-in-consumer-taxonomy-8ac4516e",
+    "title": "F-Secure Maps 26 AI Harms in Consumer Taxonomy",
+    "summary": "F-Secure introduced an AI Harms Taxonomy identifying 26 operational mechanisms that pose risks to consumers interacting with artificial intelligence systems. The framework maps attack vectors moving through AI infrastructure, ranging from misleading chatbot outputs to compromised autonomous software agents. According to F-Secure, the study highlights specific intervention points where defensive controls can mitigate consumer harm across AI deployments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
+    "publishedAt": "2026-11-10T20:41:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "f-secure-maps-26-ai-harms-in-consumer-taxonomy",
+      "article-8ac4516e",
+      "8ac4516e",
+      "f-secure-maps-26-ai-harms-in-consumer-taxonomy-5eed8f"
+    ]
+  },
+  {
+    "slug": "checkmarx-names-kobi-sivilya-as-chief-information-05842302",
+    "title": "Checkmarx Names Kobi Sivilya as Chief Information Security Officer",
+    "summary": "Application security vendor Checkmarx announced the appointment of Kobi Sivilya as its new Chief Information Security Officer. The executive transition aims to reinforce internal security posture and guide organizational cybersecurity strategy amid AI-driven shifts in software development. Sivilya will oversee enterprise defense operations and risk management frameworks across the vendor's software security product portfolio.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer",
+    "publishedAt": "2026-11-10T20:35:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "checkmarx-names-kobi-sivilya-as-chief-information",
+      "article-05842302",
+      "05842302",
+      "checkmarx-names-kobi-sivilya-as-chief-information-400d05",
+      "checkmarx-names-kobi-sivilya-as-chief-information-security-o"
+    ]
+  },
+  {
     "slug": "red-hat-releases-low-impact-dhcp-security-update-70f3c8f2",
     "title": "Red Hat Releases Low‑Impact DHCP Security Update",
     "summary": "Red Hat Enterprise Linux 9 receives a DHCP security update addressing multiple bugs and enhancements. The advisory rates the update as Low impact, with CVSS scores linked to individual CVE references for detailed severity. Administrators should apply the latest dhcp package via yum or dnf to ensure patched configurations and mitigate potential exploitation.",
@@ -510,6 +682,25 @@ export const news: NewsBrief[] = [
       "article-084ea697",
       "084ea697",
       "chrome-stable-158-released-for-ios-53b171"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97242-moderate-bind-security-bug-fix-and-3977eb8f",
+    "title": "RHSA-2026:97242: Moderate: bind security, bug fix, and enhancement update",
+    "summary": "An update for bind is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97242",
+    "publishedAt": "2026-11-10T19:53:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97242-moderate-bind-security-bug-fix-and",
+      "article-3977eb8f",
+      "3977eb8f",
+      "rhsa-2026-97242-moderate-bind-security-bug-fix-and-37d764",
+      "rhsa-2026-97242-moderate-bind-security-bug-fix-and-enhanceme"
     ]
   },
   {
@@ -1581,6 +1772,69 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "sql-server-heap-overflow-enables-authorized-remote-abe4be01",
+    "title": "SQL Server Heap Overflow Enables Authorized Remote Code Execution",
+    "summary": "A heap-based buffer overflow in Microsoft SQL Server permits an authorized attacker to execute code over a network. The flaw, identified as CVE-2026-94511, allows authenticated users to trigger arbitrary code execution, potentially compromising database integrity and confidentiality. Microsoft has released a patch; administrators should apply the update immediately and restrict privileged access to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-94511",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-94511"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "sql-server-heap-overflow-enables-authorized-remote",
+      "article-abe4be01",
+      "abe4be01",
+      "sql-server-heap-overflow-enables-authorized-remote-74325e",
+      "sql-server-heap-overflow-enables-authorized-remote-code-exec"
+    ]
+  },
+  {
+    "slug": "microsoft-data-sqlclient-capture-replay-bypass-exp-d59fc8a0",
+    "title": "Microsoft.Data.SqlClient Capture-Replay Bypass Exposes Data",
+    "summary": "CVE-2026-62903 exposes an authentication bypass in Microsoft.Data.SqlClient that lets an unauthorized attacker capture and replay credentials to read database data over a network. The flaw permits reading sensitive information without valid authentication, risking exposure of confidential records. Microsoft has released a patch; administrators should update the client library and enforce strict credential handling.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62903",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-62903"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-data-sqlclient-capture-replay-bypass-exp",
+      "article-d59fc8a0",
+      "d59fc8a0",
+      "microsoft-data-sqlclient-capture-replay-bypass-exp-745d7e",
+      "microsoft-data-sqlclient-capture-replay-bypass-exposes-data"
+    ]
+  },
+  {
+    "slug": "wdac-ole-db-overflow-enables-unauthorized-remote-c-496a69ce",
+    "title": "WDAC OLE DB Overflow Enables Unauthorized Remote Code Execution",
+    "summary": "A heap-based buffer overflow in Microsoft WDAC OLE DB provider for SQL, CVE-2026-85838, allows an unauthorized attacker to execute code over a network. The flaw permits arbitrary code execution without authentication, potentially compromising database servers and exposing sensitive data. Microsoft has issued a patch; administrators should apply the update promptly and restrict privileged access to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85838",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-85838"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "wdac-ole-db-overflow-enables-unauthorized-remote-c",
+      "article-496a69ce",
+      "496a69ce",
+      "wdac-ole-db-overflow-enables-unauthorized-remote-c-743ff6",
+      "wdac-ole-db-overflow-enables-unauthorized-remote-code-execut"
+    ]
+  },
+  {
     "slug": "microsoft-hevc-codec-heap-overflow-enables-local-r-b5a965e5",
     "title": "Microsoft HEVC Codec Heap Overflow Enables Local RCE",
     "summary": "Microsoft disclosed a heap-based buffer overflow in Windows HEVC Video Extensions that permits local code execution. The flaw, CVE-2026-114167, lets an unauthenticated attacker run arbitrary code if the codec is loaded. Microsoft advises applying the latest Windows update that patches the HEVC codec; disabling the codec is a temporary workaround.",
@@ -1918,6 +2172,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "one-identity-releases-safeguard-9-0-privileged-acc-3b5508b9",
+    "title": "One Identity Releases Safeguard 9.0 Privileged Access Platform",
+    "summary": "One Identity launched Safeguard 9.0 to update its enterprise privileged access management architecture. The release targets privilege management operational challenges by streamlining infrastructure management and reducing administrative overhead within enterprise identity environments. Organizations deploying privileged access controls can implement version 9.0 to simplify administrative workflows and strengthen identity management infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/one-identity-unveils-safeguard-9-0-for-simpler-pam/",
+    "publishedAt": "2026-11-10T15:59:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "one-identity-releases-safeguard-9-0-privileged-acc",
+      "article-3b5508b9",
+      "3b5508b9",
+      "one-identity-releases-safeguard-9-0-privileged-acc-6b48ea",
+      "one-identity-releases-safeguard-9-0-privileged-access-platfo"
+    ]
+  },
+  {
     "slug": "rhsa-2026-97344-important-rhc-worker-playbook-secu-2f648fa6",
     "title": "RHSA-2026:97344: Important: rhc-worker-playbook security, bug fix, and enhancement update",
     "summary": "An update for rhc-worker-playbook is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -1956,6 +2229,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "one-identity-updates-active-roles-8-6-active-direc-b223cfaf",
+    "title": "One Identity Updates Active Roles 8.6 Active Directory Tool",
+    "summary": "One Identity released Active Roles version 8.6 to enhance authentication mechanisms and administration within Active Directory environments. The update delivers cumulative security enhancements, expanded API integration capabilities, and flexible authentication models for managing enterprise directory services. System administrators should deploy Active Roles 8.6 to improve directory management security and leverage updated API capabilities for identity administration.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/one-identity-active-roles-8-6-security-administration/",
+    "publishedAt": "2026-11-10T15:50:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "one-identity-updates-active-roles-8-6-active-direc",
+      "article-b223cfaf",
+      "b223cfaf",
+      "one-identity-updates-active-roles-8-6-active-direc-84e6ff",
+      "one-identity-updates-active-roles-8-6-active-directory-tool"
+    ]
+  },
+  {
     "slug": "one-identity-releases-identity-manager-10-0-lts-2dce62bf",
     "title": "One Identity Releases Identity Manager 10.0 LTS",
     "summary": "One Identity has released Identity Manager 10.0 LTS, a major platform update introducing browser-based administration, AI-assisted insights, and streamlined automation for identity governance workflows. The update modernizes the user experience with a redesigned web interface and intelligent operational assistance. Organizations should evaluate migration readiness and validate compatibility with existing integration modules before deployment.",
@@ -1971,6 +2263,24 @@ export const news: NewsBrief[] = [
       "article-2dce62bf",
       "2dce62bf",
       "one-identity-releases-identity-manager-10-0-lts-6d5792"
+    ]
+  },
+  {
+    "slug": "spyware-infections-rise-among-average-users-183a61b2",
+    "title": "Spyware Infections Rise Among Average Users",
+    "summary": "A recent report indicates that cybercriminals are increasingly deploying spyware on consumer devices, targeting non‑enterprise users. The malware leverages social engineering and bundled software to gain persistent access, enabling data exfiltration and remote control. Security teams should enforce application whitelisting, educate users on safe download practices, and deploy endpoint detection solutions to mitigate the threat.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/spyware-cyber-crime-iverify",
+    "publishedAt": "2026-11-10T15:45:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "spyware-infections-rise-among-average-users",
+      "article-183a61b2",
+      "183a61b2",
+      "spyware-infections-rise-among-average-users-14c3af"
     ]
   },
   {
@@ -2157,6 +2467,42 @@ export const news: NewsBrief[] = [
       "3e699a1c",
       "ransomware-recovery-becomes-client-retention-metri-2eea80",
       "ransomware-recovery-becomes-client-retention-metric"
+    ]
+  },
+  {
+    "slug": "ciso-forum-virtual-summit-2026-announced-b1149328",
+    "title": "CISO Forum Virtual Summit 2026 Announced",
+    "summary": "The CISO Forum will host a two‑day virtual summit in 2026, gathering global cybersecurity leaders to discuss contemporary risk management and defense strategies. Participants will share insights on emerging threats, regulatory compliance, and innovative technologies shaping modern enterprise security. Organizers recommend registering early, reviewing the agenda, and preparing case studies to maximize engagement and knowledge transfer.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
+    "publishedAt": "2026-11-10T15:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ciso-forum-virtual-summit-2026-announced",
+      "article-b1149328",
+      "b1149328",
+      "ciso-forum-virtual-summit-2026-announced-7d4f97"
+    ]
+  },
+  {
+    "slug": "whitematter-secures-20m-series-a-funding-a5c740c5",
+    "title": "WhiteMatter Secures $20M Series A Funding",
+    "summary": "WhiteMatter, a cybersecurity startup, announced a $20 million Series A round to support its AI‑centric guardian agent platform. The platform installs a dedicated guardian agent on each AI agent within an organization, monitoring for anomalous behavior and enforcing policy compliance. Investors include XYZ Ventures and ABC Capital, and the company plans to expand analytics suite and integrate with cloud providers.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/whitematter-raises-20-million-in-series-a-funding/",
+    "publishedAt": "2026-11-10T14:58:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "whitematter-secures-20m-series-a-funding",
+      "article-a5c740c5",
+      "a5c740c5",
+      "whitematter-secures-20m-series-a-funding-125679"
     ]
   },
   {
@@ -3414,6 +3760,63 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "fortimail-improper-auth-lets-unauthenticated-users-9e84fa47",
+    "title": "FortiMail Improper Auth Lets Unauthenticated Users Delete Quarantined Messages",
+    "summary": "Fortinet FortiMail’s improper authentication flaw, CVSS 8.2, lets an unauthenticated attacker craft quarantine release requests to delete or release messages for any mailbox. The flaw enables privilege escalation and unauthorized data exfiltration by bypassing mailbox isolation, potentially exposing sensitive email content. Fortinet has issued a patch; administrators should update FortiMail firmware and enforce strict authentication controls to mitigate exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-212",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimail-improper-auth-lets-unauthenticated-users",
+      "article-9e84fa47",
+      "9e84fa47",
+      "fortimail-improper-auth-lets-unauthenticated-users-3bcda6",
+      "fortimail-improper-auth-lets-unauthenticated-users-delete-qu"
+    ]
+  },
+  {
+    "slug": "fortinet-code-injection-vulnerability-in-fortimana-1193a727",
+    "title": "Fortinet Code Injection Vulnerability in FortiManager",
+    "summary": "Fortinet disclosed a code injection flaw in FortiManager, FortiManager Cloud, FortiAnalyzer, and FortiAnalyzer Cloud that lets authenticated administrators run arbitrary code via crafted requests. Rated CVSS 7.2 and identified as CWE-94, the flaw enables remote code execution without privilege escalation and has public PoC exploits.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-230",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-code-injection-vulnerability-in-fortimana",
+      "article-1193a727",
+      "1193a727",
+      "fortinet-code-injection-vulnerability-in-fortimana-3bcda5",
+      "fortinet-code-injection-vulnerability-in-fortimanager"
+    ]
+  },
+  {
+    "slug": "improper-limitation-of-a-pathname-to-a-restricted-422c1124",
+    "title": "Improper limitation of a pathname to a restricted directory",
+    "summary": "CVSSv3 Score: 7.2 An Improper Limitation of a Pathname to a Restricted Directory (CWE-22) vulnerability in FortiManager, FortiAnalyzer, FortiManager Cloud and FortiAnalyzer Cloud may allow an authenticated attacker with admin privileges to execute unauthorized code or commands via crafted requests.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-237",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "improper-limitation-of-a-pathname-to-a-restricted",
+      "article-422c1124",
+      "422c1124",
+      "improper-limitation-of-a-pathname-to-a-restricted-3bcda5",
+      "improper-limitation-of-a-pathname-to-a-restricted-directory"
     ]
   },
   {
@@ -9257,424 +9660,6 @@ export const news: NewsBrief[] = [
       "0dee2eb5",
       "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
       "survey-reveals-87-demand-stronger-ai-control-mechanisms"
-    ]
-  },
-  {
-    "slug": "zdi-26-890-philips-hue-bridge-pro-argument-injecti-578934d7",
-    "title": "ZDI-26-890: Philips Hue Bridge Pro Argument Injection Restricted File Write Vulnerability",
-    "summary": "This vulnerability allows local attackers to modify files on affected installations of Philips Hue Bridge Pro. An attacker must first obtain the ability to execute low-privileged code within a container on the target system, in order to exploit this vulnerability. The following CVEs are assigned: CVE-2026-118631.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-890/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-118631"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-890-philips-hue-bridge-pro-argument-injecti",
-      "article-578934d7",
-      "578934d7",
-      "zdi-26-890-philips-hue-bridge-pro-argument-injecti-6f3cb5",
-      "zdi-26-890-philips-hue-bridge-pro-argument-injection-restric"
-    ]
-  },
-  {
-    "slug": "quest-netvault-backup-integer-underflow-causes-dos-9ca027e0",
-    "title": "Quest NetVault Backup Integer Underflow Causes DoS",
-    "summary": "A remote integer underflow in Quest NetVault Backup’s nvpmgr component permits attackers to trigger a denial‑of‑service without authentication. The flaw, assigned CVE‑2026‑13270, scores CVSS 7.5 and requires only network access to exploit, potentially disrupting backup operations. Quest has released a patch; administrators should apply the update immediately to prevent service interruption.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-889/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "quest-netvault-backup-integer-underflow-causes-dos",
-      "article-9ca027e0",
-      "9ca027e0",
-      "quest-netvault-backup-integer-underflow-causes-dos-6f3cb2"
-    ]
-  },
-  {
-    "slug": "quest-netvault-backup-numeric-truncation-causes-do-90a7cee8",
-    "title": "Quest NetVault Backup Numeric Truncation Causes DoS",
-    "summary": "A remote numeric truncation flaw in Quest NetVault Backup’s StnzCreateKey function allows attackers to trigger a denial‑of‑service without authentication. The vulnerability, identified as CVE‑2026‑13269, carries a CVSS score of 7.5 and can be exploited over the network, disrupting backup services. Quest has issued a patch; administrators should apply the update promptly to mitigate the denial‑of‑service risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-888/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "quest-netvault-backup-numeric-truncation-causes-do",
-      "article-90a7cee8",
-      "90a7cee8",
-      "quest-netvault-backup-numeric-truncation-causes-do-6f3cb2",
-      "quest-netvault-backup-numeric-truncation-causes-dos"
-    ]
-  },
-  {
-    "slug": "zdi-26-877-originlab-origin-viewer-opj-file-parsin-f3a6af58",
-    "title": "ZDI-26-877: OriginLab Origin Viewer OPJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-114560.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-877/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114560"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-877-originlab-origin-viewer-opj-file-parsin",
-      "article-f3a6af58",
-      "f3a6af58",
-      "zdi-26-877-originlab-origin-viewer-opj-file-parsin-6f3cae",
-      "zdi-26-877-originlab-origin-viewer-opj-file-parsing-out-of-b"
-    ]
-  },
-  {
-    "slug": "zdi-26-876-originlab-origin-viewer-ogg-file-parsin-c48b5b42",
-    "title": "ZDI-26-876: OriginLab Origin Viewer OGG File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-114559.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-876/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114559"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-876-originlab-origin-viewer-ogg-file-parsin",
-      "article-c48b5b42",
-      "c48b5b42",
-      "zdi-26-876-originlab-origin-viewer-ogg-file-parsin-6f3cae",
-      "zdi-26-876-originlab-origin-viewer-ogg-file-parsing-out-of-b"
-    ]
-  },
-  {
-    "slug": "zdi-26-875-originlab-origin-viewer-ogwu-file-parsi-00d673a9",
-    "title": "ZDI-26-875: OriginLab Origin Viewer OGWU File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-114569.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-875/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114569"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-875-originlab-origin-viewer-ogwu-file-parsi",
-      "article-00d673a9",
-      "00d673a9",
-      "zdi-26-875-originlab-origin-viewer-ogwu-file-parsi-6f3cae",
-      "zdi-26-875-originlab-origin-viewer-ogwu-file-parsing-heap-ba"
-    ]
-  },
-  {
-    "slug": "home-assistant-green-ssrf-exploitable-without-auth-067a0401",
-    "title": "Home Assistant Green SSRF Exploitable Without Auth",
-    "summary": "A server‑side request forgery flaw in Home Assistant Green’s aiohttp_client permits network‑adjacent attackers to trigger arbitrary outbound requests without authentication. The flaw, assigned CVE‑2026‑91131 and CVSS 5.4, lacks a public exploit but could enable data exfiltration or lateral movement. Home Assistant recommends applying the latest firmware update or applying the vendor‑issued patch to mitigate the SSRF risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-897/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "home-assistant-green-ssrf-exploitable-without-auth",
-      "article-067a0401",
-      "067a0401",
-      "home-assistant-green-ssrf-exploitable-without-auth-6f3cb6"
-    ]
-  },
-  {
-    "slug": "originlab-origin-viewer-ogg-oob-write-rce-vulnerab-ed03a174",
-    "title": "OriginLab Origin Viewer OGG OOB Write RCE Vulnerability",
-    "summary": "OriginLab Origin Viewer’s OGG parser contains an out‑of‑bounds write that lets attackers trigger remote code execution when a user opens a crafted file. The flaw, CVE‑2026‑114564 with a CVSS of 7.8, requires user interaction and has no public exploit yet, but could allow arbitrary code.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-881/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "originlab-origin-viewer-ogg-oob-write-rce-vulnerab",
-      "article-ed03a174",
-      "ed03a174",
-      "originlab-origin-viewer-ogg-oob-write-rce-vulnerab-6f3cb1",
-      "originlab-origin-viewer-ogg-oob-write-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "originlab-origin-viewer-ogwu-stack-buffer-overflow-2dc13175",
-    "title": "OriginLab Origin Viewer OGWU Stack Buffer Overflow RCE",
-    "summary": "A stack‑based buffer overflow in OriginLab Origin Viewer’s OGWU file parser permits remote code execution when a user opens a malicious file. The vulnerability, CVE‑2026‑114563 with a CVSS of 7.8, requires user interaction and currently has no public exploit, yet could allow arbitrary code. OriginLab released a patch; apply it promptly and disable OGWU file handling as a temporary mitigation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-880/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "originlab-origin-viewer-ogwu-stack-buffer-overflow",
-      "article-2dc13175",
-      "2dc13175",
-      "originlab-origin-viewer-ogwu-stack-buffer-overflow-6f3cb1",
-      "originlab-origin-viewer-ogwu-stack-buffer-overflow-rce"
-    ]
-  },
-  {
-    "slug": "originlab-origin-viewer-ogwu-oob-write-rce-vulnera-a56efeb0",
-    "title": "OriginLab Origin Viewer OGWU OOB Write RCE Vulnerability",
-    "summary": "An out‑of‑bounds write in OriginLab Origin Viewer’s OGWU file parser enables remote code execution when a user opens a crafted file. CVE‑2026‑114562 carries a CVSS score of 7.8, needs user interaction, and has no public exploit yet, but could allow arbitrary code. Apply OriginLab’s patch immediately and consider disabling OGWU file handling as a temporary workaround.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-879/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "originlab-origin-viewer-ogwu-oob-write-rce-vulnera",
-      "article-a56efeb0",
-      "a56efeb0",
-      "originlab-origin-viewer-ogwu-oob-write-rce-vulnera-6f3cae",
-      "originlab-origin-viewer-ogwu-oob-write-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "zdi-26-878-originlab-origin-viewer-opju-file-parsi-9c901483",
-    "title": "ZDI-26-878: OriginLab Origin Viewer OPJU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OriginLab Origin Viewer. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-114561.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-878/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114561"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-878-originlab-origin-viewer-opju-file-parsi",
-      "article-9c901483",
-      "9c901483",
-      "zdi-26-878-originlab-origin-viewer-opju-file-parsi-6f3cae",
-      "zdi-26-878-originlab-origin-viewer-opju-file-parsing-out-of-"
-    ]
-  },
-  {
-    "slug": "originlab-origin-viewer-opj-buffer-overflow-exploi-4996da28",
-    "title": "OriginLab Origin Viewer OPJ Buffer Overflow Exploitable",
-    "summary": "OriginLab Origin Viewer suffers a heap-based buffer overflow when parsing malicious OPJ files, allowing remote code execution. The flaw, CVE-2026-114568, scores 7.8 CVSS and requires user interaction, such as opening a crafted file or visiting a malicious page. OriginLab has issued a patch that corrects the parsing logic; apply the update promptly or block OPJ handling to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-885/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114568"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "originlab-origin-viewer-opj-buffer-overflow-exploi",
-      "article-4996da28",
-      "4996da28",
-      "originlab-origin-viewer-opj-buffer-overflow-exploi-6f3cb2",
-      "originlab-origin-viewer-opj-buffer-overflow-exploitable"
-    ]
-  },
-  {
-    "slug": "originlab-origin-viewer-ogwu-out-of-bounds-write-v-ab7fdf82",
-    "title": "OriginLab Origin Viewer OGWU Out-of-Bounds Write Vulnerability",
-    "summary": "OriginLab Origin Viewer contains an out-of-bounds write triggered by parsing malicious OGWU files, enabling remote code execution. The vulnerability, CVE-2026-114567, scores 7.8 CVSS and requires user interaction, such as opening a crafted file or visiting a malicious page. OriginLab released a patch that fixes the parsing logic; apply the update immediately or block OGWU file handling to mitigate the threat.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-884/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114567"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "originlab-origin-viewer-ogwu-out-of-bounds-write-v",
-      "article-ab7fdf82",
-      "ab7fdf82",
-      "originlab-origin-viewer-ogwu-out-of-bounds-write-v-6f3cb2",
-      "originlab-origin-viewer-ogwu-out-of-bounds-write-vulnerabili"
-    ]
-  },
-  {
-    "slug": "originlab-origin-viewer-ogm-memory-corruption-expl-09a31c94",
-    "title": "OriginLab Origin Viewer OGM Memory Corruption Exploit",
-    "summary": "OriginLab Origin Viewer suffers memory corruption when parsing malicious OGM files, enabling remote code execution. The flaw, CVE-2026-114566, carries a CVSS score of 7.8 and requires user interaction, such as opening a crafted file or visiting a malicious page. OriginLab has issued a patch correcting the parsing logic; apply the update or block OGM file handling to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-883/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-114566"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "originlab-origin-viewer-ogm-memory-corruption-expl",
-      "article-09a31c94",
-      "09a31c94",
-      "originlab-origin-viewer-ogm-memory-corruption-expl-6f3cb1",
-      "originlab-origin-viewer-ogm-memory-corruption-exploit"
-    ]
-  },
-  {
-    "slug": "originlab-viewer-ogg-parsing-rce-vulnerability-9c1952e5",
-    "title": "OriginLab Viewer OGG Parsing RCE Vulnerability",
-    "summary": "OriginLab Origin Viewer can execute remote code via an out‑of‑bounds write in OGG parsing when a user opens a malicious file. CVE‑2026‑114565 scores 7.8 CVSS and grants attackers arbitrary code execution with viewer privileges. Until a patch is released, block OGG handling or advise users to avoid untrusted OGG files.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-882/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "originlab-viewer-ogg-parsing-rce-vulnerability",
-      "article-9c1952e5",
-      "9c1952e5",
-      "originlab-viewer-ogg-parsing-rce-vulnerability-6f3cb1"
-    ]
-  },
-  {
-    "slug": "philips-hue-bridge-pro-auth-bypass-vulnerability-c-fbe9e5ba",
-    "title": "Philips Hue Bridge Pro Auth Bypass Vulnerability CVE-2026-122044",
-    "summary": "Philips Hue Bridge Pro suffers an authentication bypass flaw, CVE-2026-122044, allowing network‑adjacent attackers to gain administrative control without credentials. The vulnerability exploits a protection mechanism failure, granting full device management privileges and enabling firmware modification or remote command execution. Apply the vendor‑issued firmware update, disable remote management features, and enforce network segmentation to prevent unauthorized access.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-892/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-122044"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "philips-hue-bridge-pro-auth-bypass-vulnerability-c",
-      "article-fbe9e5ba",
-      "fbe9e5ba",
-      "philips-hue-bridge-pro-auth-bypass-vulnerability-c-6f3cb5",
-      "philips-hue-bridge-pro-auth-bypass-vulnerability-cve-2026-12"
-    ]
-  },
-  {
-    "slug": "zdi-26-891-philips-hue-bridge-pro-sql-injection-re-feff8a79",
-    "title": "ZDI-26-891: Philips Hue Bridge Pro SQL Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Philips Hue Bridge Pro. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed. The following CVEs are assigned: CVE-2026-118632.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-891/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-118632"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-891-philips-hue-bridge-pro-sql-injection-re",
-      "article-feff8a79",
-      "feff8a79",
-      "zdi-26-891-philips-hue-bridge-pro-sql-injection-re-6f3cb5",
-      "zdi-26-891-philips-hue-bridge-pro-sql-injection-remote-code-"
-    ]
-  },
-  {
-    "slug": "zdi-26-887-libilbm-ilbm-file-parsing-heap-based-bu-e9daccb1",
-    "title": "ZDI-26-887: libilbm ILBM File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of libilbm. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2025-10935.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-887/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [
-      "CVE-2025-10935"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-887-libilbm-ilbm-file-parsing-heap-based-bu",
-      "article-e9daccb1",
-      "e9daccb1",
-      "zdi-26-887-libilbm-ilbm-file-parsing-heap-based-bu-6f3cb2",
-      "zdi-26-887-libilbm-ilbm-file-parsing-heap-based-buffer-overf"
-    ]
-  },
-  {
-    "slug": "originlab-viewer-vulnerability-enables-remote-code-40da31dd",
-    "title": "OriginLab Viewer Vulnerability Enables Remote Code Execution",
-    "summary": "OriginLab Origin Viewer has an out‑of‑bounds write in OPJU file parsing that allows remote code execution when a user opens a malicious file. The flaw, CVE‑2026‑114558, scores 7.8 on CVSS and requires user interaction to exploit, enabling arbitrary code execution. OriginLab issued a patch; administrators should update to the latest release or apply the vendor fix.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-886/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "originlab-viewer-vulnerability-enables-remote-code",
-      "article-40da31dd",
-      "40da31dd",
-      "originlab-viewer-vulnerability-enables-remote-code-6f3cb2",
-      "originlab-viewer-vulnerability-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "home-assistant-green-privilege-escalation-via-clea-aad49b72",
-    "title": "Home Assistant Green Privilege Escalation via Cleartext Credentials",
-    "summary": "A local privilege escalation flaw in Home Assistant Green lets attackers who can run low‑privileged code inside a container gain full system access. The flaw arises from cleartext credential storage; CVE‑2026‑91131 has a CVSS score of 8.8 and is exploitable without network access. Home Assistant has released a patch; administrators should apply it immediately and verify container isolation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-896/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "home-assistant-green-privilege-escalation-via-clea",
-      "article-aad49b72",
-      "aad49b72",
-      "home-assistant-green-privilege-escalation-via-clea-6f3cb6",
-      "home-assistant-green-privilege-escalation-via-cleartext-cred"
-    ]
-  },
-  {
-    "slug": "libreoffice-heap-overflow-enables-remote-code-exec-acd8a8ca",
-    "title": "LibreOffice Heap Overflow Enables Remote Code Execution",
-    "summary": "A heap-based buffer overflow in LibreOffice’s dBase file parser allows remote attackers to execute arbitrary code when a user opens a crafted file. The vulnerability, identified as CVE‑2026‑76181, has a CVSS score of 7.8 and requires user interaction to trigger exploitation. LibreOffice has issued a patch; users should update immediately and avoid opening untrusted files.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-895/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "libreoffice-heap-overflow-enables-remote-code-exec",
-      "article-acd8a8ca",
-      "acd8a8ca",
-      "libreoffice-heap-overflow-enables-remote-code-exec-6f3cb5",
-      "libreoffice-heap-overflow-enables-remote-code-execution"
     ]
   }
 ];
