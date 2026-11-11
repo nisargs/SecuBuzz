@@ -5068,5 +5068,17 @@
   "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
   "https://access.redhat.com/errata/RHSA-2026:99006",
   "https://access.redhat.com/errata/RHSA-2026:99007",
-  "http://www.zerodayinitiative.com/advisories/ZDI-26-950/"
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-950/",
+  "https://access.redhat.com/errata/RHSA-2026:99015",
+  "https://security.paloaltonetworks.com/CVE-2026-0325",
+  "https://security.paloaltonetworks.com/CVE-2026-0327",
+  "https://security.paloaltonetworks.com/CVE-2026-0330",
+  "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
+  "https://access.redhat.com/errata/RHSA-2026:99031",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-949/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-948/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-947/",
+  "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
+  "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-946/"
 ]

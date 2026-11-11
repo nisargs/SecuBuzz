@@ -11,6 +11,135 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "vanderbilt-restores-systems-after-alleged-data-the-71df4385",
+    "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
+    "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
+    "publishedAt": "2026-11-11T18:29:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "vanderbilt-restores-systems-after-alleged-data-the",
+      "article-71df4385",
+      "71df4385",
+      "vanderbilt-restores-systems-after-alleged-data-the-550d8e",
+      "vanderbilt-restores-systems-after-alleged-data-theft-attack"
+    ]
+  },
+  {
+    "slug": "who-runs-the-ransomware-group-qilin-86b23989",
+    "title": "Who Runs the Ransomware Group Qilin?",
+    "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Krebs on Security",
+    "sourceUrl": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+    "publishedAt": "2026-11-11T18:06:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "who-runs-the-ransomware-group-qilin",
+      "article-86b23989",
+      "86b23989",
+      "who-runs-the-ransomware-group-qilin-1bb2fd"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-update-for-rhel-8-10dcb7dc",
+    "title": "Red Hat Releases Kernel Update for RHEL 8",
+    "summary": "Red Hat issued a kernel update for Red Enterprise Linux 8 addressing multiple moderate‑impact security issues. The update fixes several kernel bugs identified by CVE references, each with a CVSS base score indicating moderate severity; no active exploitation has been reported. Administrators should apply the RHSA‑2026:99015 package to mitigate the vulnerabilities and review the CVE links for detailed impact.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99015",
+    "publishedAt": "2026-11-11T17:02:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-rhel-8",
+      "article-10dcb7dc",
+      "10dcb7dc",
+      "red-hat-releases-kernel-update-for-rhel-8-37d683"
+    ]
+  },
+  {
+    "slug": "pan-os-globalprotect-authorization-bypass-cve-2026-4d1d2f39",
+    "title": "PAN‑OS GlobalProtect Authorization Bypass CVE‑2026‑0325",
+    "summary": "Palo Alto Networks disclosed CVE‑2026‑0325, an authorization bypass flaw in PAN‑OS GlobalProtect. The vulnerability allows an unauthenticated attacker to gain privileged access to the VPN portal, with a CVSS score indicating low impact; no active exploitation has been reported. Palo Alto recommends applying the latest PAN‑OS update that patches CVE‑2026‑0325 to prevent unauthorized access.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0325",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pan-os-globalprotect-authorization-bypass-cve-2026",
+      "article-4d1d2f39",
+      "4d1d2f39",
+      "pan-os-globalprotect-authorization-bypass-cve-2026-7ae305",
+      "pan-os-globalprotect-authorization-bypass-cve-2026-0325"
+    ]
+  },
+  {
+    "slug": "pan-os-globalprotect-privilege-escalation-cve-2026-236bd6ca",
+    "title": "PAN‑OS GlobalProtect Privilege Escalation CVE‑2026‑0327",
+    "summary": "Palo Alto Networks identified CVE‑2026‑0327, a privilege escalation flaw in PAN‑OS GlobalProtect. The bug permits an authenticated user to elevate privileges on the VPN appliance, with a CVSS score reflecting low severity; no exploitation evidence exists. Apply the vendor’s latest PAN‑OS patch that addresses CVE‑2026‑0327 to eliminate the escalation vector.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0327",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pan-os-globalprotect-privilege-escalation-cve-2026",
+      "article-236bd6ca",
+      "236bd6ca",
+      "pan-os-globalprotect-privilege-escalation-cve-2026-7ae305",
+      "pan-os-globalprotect-privilege-escalation-cve-2026-0327"
+    ]
+  },
+  {
+    "slug": "pan-os-panorama-rce-cve-2026-0330-9058a5c5",
+    "title": "PAN‑OS Panorama RCE CVE‑2026‑0330",
+    "summary": "Palo Alto Networks disclosed CVE‑2026‑0330, an authenticated remote code execution flaw in PAN‑OS Panorama. The vulnerability allows a logged‑in attacker to execute arbitrary code on the Panorama server, with a CVSS score indicating medium severity; no active exploitation has been reported. Install the latest PAN‑OS update that patches CVE‑2026‑0330 to prevent remote code execution.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0330",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pan-os-panorama-rce-cve-2026-0330",
+      "article-9058a5c5",
+      "9058a5c5",
+      "pan-os-panorama-rce-cve-2026-0330-7ae305"
+    ]
+  },
+  {
+    "slug": "lessons-from-59-linux-kernel-bug-reports-3edacd66",
+    "title": "Lessons from 59 Linux Kernel Bug Reports",
+    "summary": "Microsoft FORGE Lab researchers used codename MDASH to investigate Linux kernel vulnerabilities, resulting in 59 upstream bug reports, 33 assigned CVEs, and 38 merged fixes. The research includes eight demonstrated local root privilege-escalation exploits and examines the challenges of turning AI-generated findings into validated vulnerabilities and upstream fixes.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
+    "publishedAt": "2026-11-11T16:55:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "lessons-from-59-linux-kernel-bug-reports",
+      "article-3edacd66",
+      "3edacd66",
+      "lessons-from-59-linux-kernel-bug-reports-240f5f"
+    ]
+  },
+  {
     "slug": "maersk-breach-exposes-legacy-system-data-24af8572",
     "title": "Maersk Breach Exposes Legacy System Data",
     "summary": "Maersk confirmed that a threat actor accessed a legacy local system inherited from a prior acquisition and exfiltrated data. The breach coincided with a WhiteArmor ransomware campaign demanding a $5 million payment, though the ransomware did not encrypt Maersk files. Maersk has engaged incident response teams, applied security patches, and is monitoring for further compromise.",
@@ -26,6 +155,25 @@ export const news: NewsBrief[] = [
       "article-24af8572",
       "24af8572",
       "maersk-breach-exposes-legacy-system-data-109cf0"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99031-moderate-kernel-rt-security-bug-fi-fa1dccca",
+    "title": "RHSA-2026:99031: Moderate: kernel-rt security, bug fix, and enhancement update",
+    "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99031",
+    "publishedAt": "2026-11-11T16:22:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99031-moderate-kernel-rt-security-bug-fi",
+      "article-fa1dccca",
+      "fa1dccca",
+      "rhsa-2026-99031-moderate-kernel-rt-security-bug-fi-37d683",
+      "rhsa-2026-99031-moderate-kernel-rt-security-bug-fix-and-enha"
     ]
   },
   {
@@ -1624,6 +1772,83 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-fairchem-deserialization-rce-exploit-cve-2026-6bd83f8a",
+    "title": "Meta FAIRChem Deserialization RCE Exploit CVE‑2026‑111760",
+    "summary": "A deserialization flaw in Meta FAIRChem’s load_model_and_weights_from_checkpoint permits remote code execution when a user opens a malicious file or visits a crafted page. The vulnerability, rated CVSS 7.8, requires user interaction and is linked to CVE‑2026‑111760, exposing installations to code execution. Meta released a patch; security teams should apply the update immediately or disable the vulnerable function to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-949/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairchem-deserialization-rce-exploit-cve-2026",
+      "article-6bd83f8a",
+      "6bd83f8a",
+      "meta-fairchem-deserialization-rce-exploit-cve-2026-6f3d17",
+      "meta-fairchem-deserialization-rce-exploit-cve-2026-111760"
+    ]
+  },
+  {
+    "slug": "meta-fairchem-mlippredictunit-rce-vulnerability-cv-a6a1ed72",
+    "title": "Meta FAIRChem MLIPPredictUnit RCE Vulnerability CVE‑2026‑111760",
+    "summary": "A deserialization flaw in Meta FAIRChem’s MLIPPredictUnit permits remote code execution when a user opens a malicious file or visits a crafted page. The vulnerability, rated CVSS 7.8, requires user interaction and is linked to CVE‑2026‑111760, exposing installations to code execution. Meta released a patch; security teams should apply the update immediately or disable the vulnerable function to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-948/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairchem-mlippredictunit-rce-vulnerability-cv",
+      "article-a6a1ed72",
+      "a6a1ed72",
+      "meta-fairchem-mlippredictunit-rce-vulnerability-cv-6f3d17",
+      "meta-fairchem-mlippredictunit-rce-vulnerability-cve-2026-111"
+    ]
+  },
+  {
+    "slug": "meta-fairchem-npz-parsing-rce-cve-2026-111760-fdfdc26f",
+    "title": "Meta FAIRChem NPZ Parsing RCE CVE‑2026‑111760",
+    "summary": "A deserialization flaw in Meta FAIRChem’s make_submission_file permits remote code execution when a user opens a malicious file or visits a crafted page. The vulnerability, rated CVSS 7.8, requires user interaction and is linked to CVE‑2026‑111760, exposing installations to code execution. Meta released a patch; security teams should apply the update immediately or disable the vulnerable function to mitigate risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-947/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairchem-npz-parsing-rce-cve-2026-111760",
+      "article-fdfdc26f",
+      "fdfdc26f",
+      "meta-fairchem-npz-parsing-rce-cve-2026-111760-6f3d17"
+    ]
+  },
+  {
+    "slug": "zdi-26-946-0day-meta-fairchem-make-challenge-submi-71f49acc",
+    "title": "ZDI-26-946: (0Day) Meta FAIRChem make_challenge_submission_file NPZ File Parsing Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-946/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-946-0day-meta-fairchem-make-challenge-submi",
+      "article-71f49acc",
+      "71f49acc",
+      "zdi-26-946-0day-meta-fairchem-make-challenge-submi-6f3d17",
+      "zdi-26-946-0day-meta-fairchem-make-challenge-submission-file"
     ]
   },
   {
@@ -9349,244 +9574,6 @@ export const news: NewsBrief[] = [
       "674460e7",
       "patch-utility-vulnerability-prompting-rhel-8-updat-37d7d9",
       "patch-utility-vulnerability-prompting-rhel-8-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96216-important-openssl-security-update-29396db0",
-    "title": "RHSA-2026:96216: Important: openssl security update",
-    "summary": "An update for openssl is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96216",
-    "publishedAt": "2026-11-09T12:07:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96216-important-openssl-security-update",
-      "article-29396db0",
-      "29396db0",
-      "rhsa-2026-96216-important-openssl-security-update-37d7d9"
-    ]
-  },
-  {
-    "slug": "ai-security-conference-highlights-three-core-topic-6ad24006",
-    "title": "AI Security Conference Highlights Three Core Topics",
-    "summary": "The [un]prompted AI security conference in San Francisco covered all aspects of AI security over three dense days. Speakers addressed security of AI, security with AI, and security from AI, emphasizing the need for researchers to focus on their chosen domain. The event also featured the author's talk on integrous AI, which will be posted online after the conference.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/ai-security.html",
-    "publishedAt": "2026-11-09T12:05:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-security-conference-highlights-three-core-topic",
-      "article-6ad24006",
-      "6ad24006",
-      "ai-security-conference-highlights-three-core-topic-219a55",
-      "ai-security-conference-highlights-three-core-topics"
-    ]
-  },
-  {
-    "slug": "ubuntu-updates-ca-certificates-to-fix-jks-sync-iss-a43468b1",
-    "title": "Ubuntu Updates ca-certificates to Fix JKS Sync Issue",
-    "summary": "Ubuntu released USN-9001-2 to fix a flaw in ca-certificates and ca-certificates-java that left removed CA certificates in the JKS keystore. The mis‑synchronization allowed clients to trust revoked certificates, undermining secure communications. Apply the update on Ubuntu 18.04 LTS and 20.04 LTS, then verify the JKS keystore matches the system CA list.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9001-2",
-    "publishedAt": "2026-11-09T12:01:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-updates-ca-certificates-to-fix-jks-sync-iss",
-      "article-a43468b1",
-      "a43468b1",
-      "ubuntu-updates-ca-certificates-to-fix-jks-sync-iss-7e89b7",
-      "ubuntu-updates-ca-certificates-to-fix-jks-sync-issue"
-    ]
-  },
-  {
-    "slug": "cisa-adds-four-actively-exploited-zero-day-vulnera-c05aecf3",
-    "title": "CISA Adds Four Actively Exploited Zero‑Day Vulnerabilities to KEV Catalog",
-    "summary": "CISA has added four actively exploited zero‑day vulnerabilities—CVE‑2026‑102895 (GPUStack), CVE‑2026‑116779 (SignalWire FreeSwitch), CVE‑2026‑123158 (OpenSSH), and CVE‑2026‑123218 (IBM Aspera Faspex)—to its KEV catalog. The flaws enable unauthenticated remote code execution, with public proof‑of‑concepts and real‑world exploitation already documented. Affected vendors have released patches; security teams should apply updates immediately and monitor for exploitation indicators.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-11-09T12:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/cisa-adds-four-known-exploited-vulnerabilities-to-catal"
-      }
-    ],
-    "aliases": [
-      "cisa-adds-four-actively-exploited-zero-day-vulnera",
-      "article-c05aecf3",
-      "c05aecf3",
-      "cisa-adds-four-actively-exploited-zero-day-vulnera-21ae12",
-      "cisa-adds-four-actively-exploited-zero-day-vulnerabilities-t"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96238-important-tesseract-security-updat-6612bb9b",
-    "title": "RHSA-2026:96238: Important: tesseract security update",
-    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96238",
-    "publishedAt": "2026-11-09T11:56:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96238-important-tesseract-security-updat",
-      "article-6612bb9b",
-      "6612bb9b",
-      "rhsa-2026-96238-important-tesseract-security-updat-37d7d9",
-      "rhsa-2026-96238-important-tesseract-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96239-important-tesseract-security-updat-33029807",
-    "title": "RHSA-2026:96239: Important: tesseract security update",
-    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96239",
-    "publishedAt": "2026-11-09T11:45:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96239-important-tesseract-security-updat",
-      "article-33029807",
-      "33029807",
-      "rhsa-2026-96239-important-tesseract-security-updat-37d7d9",
-      "rhsa-2026-96239-important-tesseract-security-update"
-    ]
-  },
-  {
-    "slug": "cisa-flags-sonicwall-sslvpn-vulnerability-exploite-19f420b5",
-    "title": "CISA Flags SonicWall SSLVPN Vulnerability Exploited",
-    "summary": "CISA added SonicWall SonicOS SSLVPN vulnerability CVE-2026-19868 to its Known Exploited Vulnerabilities catalog, noting that valid‑credential users can bypass SAML authentication controls and potentially evade multi‑factor authentication. The flaw allows attackers to gain unauthorized access to VPN sessions, exposing sensitive network resources. SonicWall has released a patch; administrators should apply it before the November 20 remediation deadline.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/sonicwall-sonicos-sslvpn-vulnerability-exploited/",
-    "publishedAt": "2026-11-09T11:40:18.000Z",
-    "cves": [
-      "CVE-2026-19868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-flags-sonicwall-sslvpn-vulnerability-exploite",
-      "article-19f420b5",
-      "19f420b5",
-      "cisa-flags-sonicwall-sslvpn-vulnerability-exploite-5560f2",
-      "cisa-flags-sonicwall-sslvpn-vulnerability-exploited"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-ruby-security-update-for-rhel-10-9348782a",
-    "title": "Red Hat Releases Ruby Security Update for RHEL 10 to Fix Multiple Vulnerabilities",
-    "summary": "Red Hat issued a Ruby security update for Red Enterprise Linux 10, addressing multiple vulnerabilities that could allow unauthorized code execution via malformed input. The update mitigates a moderate‑severity flaw in the Ruby interpreter, preventing potential system compromise. Users are urged to apply the RHSA-2026:96233 package immediately to maintain system integrity and protect against exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96233",
-    "publishedAt": "2026-11-09T11:31:06.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96235"
-      }
-    ],
-    "aliases": [
-      "red-hat-releases-ruby-security-update-for-rhel-10",
-      "article-9348782a",
-      "9348782a",
-      "red-hat-releases-ruby-security-update-for-rhel-10-37d7d9",
-      "red-hat-releases-ruby-security-update-for-rhel-10-to-fix-mul"
-    ]
-  },
-  {
-    "slug": "researchers-exploit-default-passwords-to-hack-auto-558104dd",
-    "title": "Researchers Exploit Default Passwords to Hack Automaker Apps",
-    "summary": "Researchers exploited default 'admin:admin' credentials on ForgeRock servers powering two automaker mobile apps, gaining full account control. The breach enabled attackers to access customer data and remotely unlock and start connected vehicles, exposing critical operational security. Automakers should immediately change default passwords, apply ForgeRock security patches, and audit authentication configurations to prevent further exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
-    "publishedAt": "2026-11-09T11:27:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researchers-exploit-default-passwords-to-hack-auto",
-      "article-558104dd",
-      "558104dd",
-      "researchers-exploit-default-passwords-to-hack-auto-7b9123",
-      "researchers-exploit-default-passwords-to-hack-automaker-apps"
-    ]
-  },
-  {
-    "slug": "researchers-uncover-notc2-ai-powered-c2-framework-595b61c8",
-    "title": "Researchers Uncover NotC2 AI-Powered C2 Framework That Hides Malicious Commands Inside AWS Services",
-    "summary": "It runs entirely on native AWS services and uses Amazon Bedrock to turn plain English into cloud commands. It is service abuse, not a flaw in Bedrock, and it only works after an attacker already holds AWS credentials .",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/notc2-ai-powered-c2-framework/",
-    "publishedAt": "2026-11-09T11:26:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researchers-uncover-notc2-ai-powered-c2-framework",
-      "article-595b61c8",
-      "595b61c8",
-      "researchers-uncover-notc2-ai-powered-c2-framework-774fd1",
-      "researchers-uncover-notc2-ai-powered-c2-framework-that-hides"
-    ]
-  },
-  {
-    "slug": "openssl-vulnerability-prompting-rhel-7-update-b46c1150",
-    "title": "OpenSSL Vulnerability Prompting RHEL 7 Update",
-    "summary": "A vulnerability in OpenSSL on RHEL 7 Extended Lifecycle Support has been identified, prompting an Important security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of OpenSSL.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96220",
-    "publishedAt": "2026-11-09T11:23:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openssl-vulnerability-prompting-rhel-7-update",
-      "article-b46c1150",
-      "b46c1150",
-      "openssl-vulnerability-prompting-rhel-7-update-37d7d9"
-    ]
-  },
-  {
-    "slug": "amplifon-americas-breach-exposes-1-3-million-recor-cf1de79b",
-    "title": "Amplifon Americas Breach Exposes 1.3 Million Records",
-    "summary": "Amplifon Americas suffered a data breach that exposed personal, health, and insurance information, including Social Security numbers, from internal systems. The incident compromised data for approximately 1.3 million individuals, potentially enabling identity theft and fraud across affected regions. Amplifon has notified affected customers and is collaborating with law enforcement to investigate the breach and implement remedial controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/",
-    "publishedAt": "2026-11-09T11:20:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "amplifon-americas-breach-exposes-1-3-million-recor",
-      "article-cf1de79b",
-      "cf1de79b",
-      "amplifon-americas-breach-exposes-1-3-million-recor-611b1b",
-      "amplifon-americas-breach-exposes-1-3-million-records"
     ]
   }
 ];
