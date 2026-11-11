@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hackers-could-exploit-mcp-server-supply-chain-weak-7b7ec6a2",
+    "title": "Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials",
+    "summary": "Security teams that run AI coding assistants may be exposing their most powerful credentials without knowing it. A new study shows that Model Context Protocol (MCP) servers can quietly change their own code after they are set up.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-could-exploit-mcp-server/",
+    "publishedAt": "2026-11-11T16:07:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-could-exploit-mcp-server-supply-chain-weak",
+      "article-7b7ec6a2",
+      "7b7ec6a2",
+      "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
+      "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
     "slug": "antifox-ai-agents-target-aws-credentials-4539ca27",
     "title": "AntiFox AI Agents Target AWS Credentials",
     "summary": "Attackers deploy AntiFox AI agents on Alibaba Cloud to harvest AWS credentials from targeted web services. The open-source platform automates credential extraction, enabling rapid lateral movement within compromised AWS environments. Defenders should restrict outbound traffic from cloud instances, enforce least‑privilege IAM roles, and monitor for anomalous credential usage daily actively continuously.",
@@ -142,6 +161,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cloudflare-explains-quepaxa-consensus-algorithm-1e0211c8",
+    "title": "Cloudflare Explains QuePaxa Consensus Algorithm",
+    "summary": "Cloudflare is building an experimental consensus service that uses the novel QuePaxa algorithm, a consensus mechanism never deployed before. QuePaxa blends proof‑of‑work and proof‑of‑stake to reduce latency and increase fault tolerance across distributed nodes. The post explains the algorithm’s design and rationale, offering insights for researchers and practitioners exploring next‑generation consensus.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/choosing-quepaxa/",
+    "publishedAt": "2026-11-11T14:24:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-explains-quepaxa-consensus-algorithm",
+      "article-1e0211c8",
+      "1e0211c8",
+      "cloudflare-explains-quepaxa-consensus-algorithm-7323e2"
+    ]
+  },
+  {
     "slug": "red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a",
     "title": "Red Hat Releases Kernel Security Update for RHEL 10",
     "summary": "Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security issues. The update targets unspecified kernel vulnerabilities rated Important, with CVSS base scores available via CVE references, indicating potential privilege escalation or denial of service if exploited. Administrators should apply the RHSA‑2026:98638 patch promptly and verify kernel version to ensure protection.",
@@ -195,6 +232,25 @@ export const news: NewsBrief[] = [
       "article-8bf454f6",
       "8bf454f6",
       "asus-zoom-issue-patches-for-execution-flaws-33d66f"
+    ]
+  },
+  {
+    "slug": "windows-signdrop-0-day-exploit-lets-attackers-gain-0c53ce65",
+    "title": "Windows SignDrop 0-Day Exploit Lets Attackers Gain SYSTEM Privileges Through CLFS Protection",
+    "summary": "A public exploit called SignDrop targets a Windows security feature meant to stop attacks on the Common Log File System (CLFS). It claims to turn a normal user account into a SYSTEM account, the highest level of control on Windows. The flaw has no CVE number and no patch as of November 11, 2026.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/windows-signdrop-zero-day-exploit/",
+    "publishedAt": "2026-11-11T13:57:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-signdrop-0-day-exploit-lets-attackers-gain",
+      "article-0c53ce65",
+      "0c53ce65",
+      "windows-signdrop-0-day-exploit-lets-attackers-gain-5900c9",
+      "windows-signdrop-0-day-exploit-lets-attackers-gain-system-pr"
     ]
   },
   {
@@ -270,6 +326,61 @@ export const news: NewsBrief[] = [
       "article-defea441",
       "defea441",
       "rhsa-2026-98595-important-flatpak-security-update-37d6e4"
+    ]
+  },
+  {
+    "slug": "poland-shuts-down-epuap-after-cyberattack-b4bd6997",
+    "title": "Poland Shuts Down ePUAP After Cyberattack",
+    "summary": "Poland’s nationwide ePUAP platform, used for submitting official documents and communicating with government agencies, was shut down after a cyberattack. The attack disrupted the platform’s availability, preventing citizens from completing administrative procedures online. Polish authorities are investigating the incident, and the platform will be restored after security measures are verified.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/poland-shuts-down-government-services-platform-cyberattack",
+    "publishedAt": "2026-11-11T13:18:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "poland-shuts-down-epuap-after-cyberattack",
+      "article-b4bd6997",
+      "b4bd6997",
+      "poland-shuts-down-epuap-after-cyberattack-3e57c8"
+    ]
+  },
+  {
+    "slug": "britain-france-issue-guidelines-for-hacking-firms-94bb8378",
+    "title": "Britain, France Issue Guidelines for Hacking Firms",
+    "summary": "Britain and France have released the first regulatory guidelines targeting commercial hacking firms that develop, sell, or finance cyber‑crime infrastructure components (CCICs). The guidelines require firms to vet customers, implement technical safeguards against misuse, and maintain monitoring and reporting systems for abuse incidents. Compliance will be monitored by national authorities, and non‑compliance could result in licensing revocation or legal action.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/britain-france-set-out-guidelines-for-commercial-hacking-firms",
+    "publishedAt": "2026-11-11T13:11:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "britain-france-issue-guidelines-for-hacking-firms",
+      "article-94bb8378",
+      "94bb8378",
+      "britain-france-issue-guidelines-for-hacking-firms-51648b"
+    ]
+  },
+  {
+    "slug": "blind-eagle-targets-latin-america-with-fake-court-95822401",
+    "title": "Blind Eagle Targets Latin America with Fake Court RATs",
+    "summary": "Law enforcement intelligence reports that the state‑backed threat actor Blind Eagle targets Latin American entities with fake court‑related RATs. The RATs masquerade as legitimate court software, allowing attackers to establish persistent footholds and exfiltrate sensitive data. Security teams should verify software authenticity, enforce strict application whitelisting, and monitor for anomalous remote access activity.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/blind-eagle-uses-fake-court-notices-to-deliver-remote-a",
+    "publishedAt": "2026-11-11T13:10:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "blind-eagle-targets-latin-america-with-fake-court",
+      "article-95822401",
+      "95822401",
+      "blind-eagle-targets-latin-america-with-fake-court-196cd8",
+      "blind-eagle-targets-latin-america-with-fake-court-rats"
     ]
   },
   {
@@ -350,6 +461,24 @@ export const news: NewsBrief[] = [
       "article-ac9d4617",
       "ac9d4617",
       "microsoft-cve-2026-124194-enables-outlook-rce-1cb212"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98471-important-openexr-security-update-56dd69b3",
+    "title": "RHSA-2026:98471: Important: openexr security update",
+    "summary": "An update for openexr is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98471",
+    "publishedAt": "2026-11-11T13:07:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98471-important-openexr-security-update",
+      "article-56dd69b3",
+      "56dd69b3",
+      "rhsa-2026-98471-important-openexr-security-update-37d6e8"
     ]
   },
   {
@@ -3679,6 +3808,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "windows-file-server-elevation-vulnerability-cve-20-39028c79",
+    "title": "Windows File Server Elevation Vulnerability CVE-2026-108415",
+    "summary": "A Windows File Server Resource Management Service vulnerability (CVE-2026-108415) permits privilege escalation via untrusted pointer dereference. The flaw allows an attacker with physical access to dereference an untrusted pointer, enabling elevation of privileges without authentication, potentially compromising system integrity. Microsoft has released a patch; administrators should apply the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108415",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-108415"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-file-server-elevation-vulnerability-cve-20",
+      "article-39028c79",
+      "39028c79",
+      "windows-file-server-elevation-vulnerability-cve-20-1ff730",
+      "windows-file-server-elevation-vulnerability-cve-2026-108415"
+    ]
+  },
+  {
+    "slug": "windows-file-server-elevation-vulnerability-cve-20-360287c0",
+    "title": "Windows File Server Elevation Vulnerability CVE-2026-108416",
+    "summary": "A Windows File Server Resource Management Service vulnerability (CVE-2026-108416) permits privilege escalation via untrusted pointer dereference. The flaw allows an attacker with physical access to dereference an untrusted pointer, enabling elevation of privileges without authentication, potentially compromising system integrity. Microsoft has released a patch; administrators should apply the update immediately to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108416",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-108416"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-file-server-elevation-vulnerability-cve-20",
+      "article-360287c0",
+      "360287c0",
+      "windows-file-server-elevation-vulnerability-cve-20-1ff730",
+      "windows-file-server-elevation-vulnerability-cve-2026-108416"
+    ]
+  },
+  {
     "slug": "windows-gdi-vulnerability-exposes-data-via-out-of-05454bae",
     "title": "Windows GDI Vulnerability Exposes Data via Out‑of‑Bounds Read",
     "summary": "CVE‑2026‑108424 is an out‑of‑bounds read flaw in Windows GDI that permits remote attackers to read sensitive data over a network. The vulnerability arises from improper bounds checking during GDI object rendering, enabling an attacker to extract memory contents without authentication. Microsoft has released a patch in the 2026 security update; administrators should apply it promptly to mitigate the disclosure risk.",
@@ -5944,6 +6115,25 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "fortinet-fixes-authentication-bypass-flaw-in-forti-afc192a8",
+    "title": "Fortinet Fixes Authentication Bypass Flaw in FortiAuthenticator",
+    "summary": "Fortinet reported a critical incorrect authorization vulnerability affecting FortiAuthenticator identity management software. Tracked under CWE-863 with a CVSSv3 score of 9.1, the flaw allows remote attackers to bypass authentication controls and gain unauthorized system access. Security teams should review Fortinet PSIRT advisories and apply available software patches immediately to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-265",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-fixes-authentication-bypass-flaw-in-forti",
+      "article-afc192a8",
+      "afc192a8",
+      "fortinet-fixes-authentication-bypass-flaw-in-forti-3bcda5",
+      "fortinet-fixes-authentication-bypass-flaw-in-fortiauthentica"
     ]
   },
   {
@@ -9380,193 +9570,6 @@ export const news: NewsBrief[] = [
       "article-ea7d602d",
       "ea7d602d",
       "red-hat-issues-gd-security-update-37d7d9"
-    ]
-  },
-  {
-    "slug": "malwarebytes-weekly-security-overview-6e54ca2c",
-    "title": "Malwarebytes Weekly Security Overview",
-    "summary": "Malwarebytes Labs published a weekly security roundup covering topics from Nov 2-8, 2026. The post lists multiple security subjects, including emerging threats, product updates, and industry trends. The roundup includes analysis of recent zero-day disclosures, threat actor activity, and vendor patch releases, providing a broad industry snapshot.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-2-november-8",
-    "publishedAt": "2026-11-09T08:01:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malwarebytes-weekly-security-overview",
-      "article-6e54ca2c",
-      "6e54ca2c",
-      "malwarebytes-weekly-security-overview-53abc7"
-    ]
-  },
-  {
-    "slug": "veeam-issues-critical-linux-kernel-flaw-warning-5fbd9947",
-    "title": "Veeam Issues Critical Linux Kernel Flaw Warning",
-    "summary": "Veeam disclosed a critical Linux kernel use‑after‑free flaw (CVE‑2026‑98432) that can trigger denial‑of‑service or memory corruption in backup appliances during TCP/IPv4 connection handling. Scored CVSS 9.8, the flaw lets unauthenticated attackers crash Veeam backup systems, potentially halting data protection. Veeam issued a patch on November 6 and advises applying the update to secure affected environments.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/veeam-warns-critical-linux-kernel-flaw/",
-    "publishedAt": "2026-11-09T07:48:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "veeam-issues-critical-linux-kernel-flaw-warning",
-      "article-5fbd9947",
-      "5fbd9947",
-      "veeam-issues-critical-linux-kernel-flaw-warning-41c3d2"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-openshift-4-12-103-bug-fix-54e1231a",
-    "title": "Red Hat Releases OpenShift 4.12.103 Bug Fix",
-    "summary": "Red Hat released OpenShift Container Platform 4.12.103, addressing multiple bugs in container runtime and image handling. The update resolves internal logic errors that could lead to configuration inconsistencies and potential denial of service, but no active exploitation has been reported. Users should upgrade to version 4.12.103 or later, and verify that all container images are rebuilt to incorporate the fix.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95416",
-    "publishedAt": "2026-11-09T07:14:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-openshift-4-12-103-bug-fix",
-      "article-54e1231a",
-      "54e1231a",
-      "red-hat-releases-openshift-4-12-103-bug-fix-37d846"
-    ]
-  },
-  {
-    "slug": "openai-engineer-pleads-not-guilty-to-covert-device-4f5b9fb1",
-    "title": "OpenAI Engineer Pleads Not Guilty to Covert Device",
-    "summary": "Former OpenAI engineer Abdulrahman Alfozan was arrested for planting a covert audio recorder in an executive meeting room at the company’s San Francisco office. He pleaded not guilty in federal court, with a hearing scheduled for November 17, 2026, after the device was found during a security sweep. OpenAI has tightened physical security measures to prevent future covert device installations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
-    "publishedAt": "2026-11-09T07:05:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-engineer-pleads-not-guilty-to-covert-device",
-      "article-4f5b9fb1",
-      "4f5b9fb1",
-      "openai-engineer-pleads-not-guilty-to-covert-device-164747"
-    ]
-  },
-  {
-    "slug": "u-s-agencies-warn-of-refrigeration-attacks-3ae2f77b",
-    "title": "U.S. Agencies Warn of Refrigeration Attacks",
-    "summary": "U.S. federal agencies warned that hackers are targeting industrial refrigeration and cold‑chain monitoring systems worldwide. Attackers could alter temperature settings, damage equipment, or disrupt storage of food, medicine, and other temperature‑sensitive goods. Operators should secure exposed controllers, apply vendor patches, and monitor for anomalous activity to mitigate temperature manipulation risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-targeting-industrial-refrigeration-systems/",
-    "publishedAt": "2026-11-09T06:52:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "u-s-agencies-warn-of-refrigeration-attacks",
-      "article-3ae2f77b",
-      "3ae2f77b",
-      "u-s-agencies-warn-of-refrigeration-attacks-16f860"
-    ]
-  },
-  {
-    "slug": "refrigeration-controllers-pose-fire-risk-06b36f0e",
-    "title": "Refrigeration Controllers Pose Fire Risk",
-    "summary": "U.S. agencies warned that threat actors target industrial refrigeration and cold‑chain monitoring systems to cause disruptions, fire hazards, and inventory loss. Attackers may exploit vulnerabilities or weaknesses in unpatched or internet‑accessible controllers to remotely alter settings and force units into continuous heating. Operators should patch controllers, restrict network access, and monitor temperature controls to prevent forced heating and fire incidents.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
-    "publishedAt": "2026-11-09T06:15:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "refrigeration-controllers-pose-fire-risk",
-      "article-06b36f0e",
-      "06b36f0e",
-      "refrigeration-controllers-pose-fire-risk-12660f"
-    ]
-  },
-  {
-    "slug": "sonicwall-sonicos-mfa-bypass-vulnerability-cve-202-6af5bc05",
-    "title": "SonicWall SonicOS MFA Bypass Vulnerability (CVE‑2026‑19868) Exploited in Wild",
-    "summary": "SonicWall's SonicOS SSL‑VPN service suffered an authentication bypass flaw (CVE‑2026‑19868) that lets attackers with valid credentials circumvent SAML‑enforced MFA. The flaw mis‑implements SAML token validation, allowing credential‑only attackers to gain full VPN access and is actively exploited in the wild. SonicWall issued an out‑of‑band patch with no workaround; administrators must apply it immediately to restore MFA enforcement.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
-    "publishedAt": "2026-11-09T06:05:24.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/exploited-sonicwall-ssl-vpn-flaw-lets-attackers-bypass-saml-enforced-mfa-cve-2026-19868/"
-      }
-    ],
-    "aliases": [
-      "sonicwall-sonicos-mfa-bypass-vulnerability-cve-202",
-      "article-6af5bc05",
-      "6af5bc05",
-      "sonicwall-sonicos-mfa-bypass-vulnerability-cve-202-12c689",
-      "sonicwall-sonicos-mfa-bypass-vulnerability-cve-2026-19868-ex"
-    ]
-  },
-  {
-    "slug": "wirken-open-source-ai-agent-gateway-2c00cd4e",
-    "title": "Wirken: Open-Source AI Agent Gateway",
-    "summary": "Wirken is an open‑source gateway that sits between messaging apps and AI agents, limiting a compromised agent’s data access. It enforces a sandboxed instruction set, blocking hidden directives that could leak secrets or rewrite files on Signal, WhatsApp, Telegram, and others. Hosted on GitHub, the project lets developers integrate Wirken into chat infrastructures to reduce malicious AI agent risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/wirken-open-source-ai-agent-gateway/",
-    "publishedAt": "2026-11-09T06:00:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wirken-open-source-ai-agent-gateway",
-      "article-2c00cd4e",
-      "2c00cd4e",
-      "wirken-open-source-ai-agent-gateway-3b025b"
-    ]
-  },
-  {
-    "slug": "msp-customers-question-attack-detection-capabiliti-5cb4b425",
-    "title": "MSP Customers Question Attack Detection Capabilities",
-    "summary": "A Barracuda Networks survey shows companies outsourcing cybersecurity to MSPs doubt their attack detection. The report notes 66% of organizations already outsource security services, 29% are evaluating MSPs, yet recovery remains weak and AI risk management is a priority. Findings urge MSPs to improve detection, clarify risk implications, and strengthen recovery to meet client expectations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/barracuda-msp-cybersecurity-services-expectations-report/",
-    "publishedAt": "2026-11-09T06:00:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "msp-customers-question-attack-detection-capabiliti",
-      "article-5cb4b425",
-      "5cb4b425",
-      "msp-customers-question-attack-detection-capabiliti-49b80b",
-      "msp-customers-question-attack-detection-capabilities"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-ruby-4-0-security-update-for-rhel-9-f0322583",
-    "title": "Red Hat Issues Ruby 4.0 Security Update for RHEL 9",
-    "summary": "Red Hat released a Ruby 4.0 module update for RHEL 9, fixing multiple security bugs that could allow local privilege escalation. The update addresses vulnerabilities with a moderate CVSS base score, though no CVE IDs are listed in the advisory. Security teams should apply the ruby:4.0 update promptly to mitigate the identified weaknesses and maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96120",
-    "publishedAt": "2026-11-09T05:17:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-ruby-4-0-security-update-for-rhel-9",
-      "article-f0322583",
-      "f0322583",
-      "red-hat-issues-ruby-4-0-security-update-for-rhel-9-37d7dd"
     ]
   }
 ];

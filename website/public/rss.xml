@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 15:23:17 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 16:48:14 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials</title>
+      <link>https://secubuzz.com/news/hackers-could-exploit-mcp-server-supply-chain-weak-7b7ec6a2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-could-exploit-mcp-server-supply-chain-weak-7b7ec6a2</guid>
+      <description><![CDATA[Security teams that run AI coding assistants may be exposing their most powerful credentials without knowing it. A new study shows that Model Context Protocol (MCP) servers can quietly change their own code after they are set up.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:07:18 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-could-exploit-mcp-server/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>AntiFox AI Agents Target AWS Credentials</title>
       <link>https://secubuzz.com/news/antifox-ai-agents-target-aws-credentials-4539ca27</link>
@@ -71,6 +80,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Cloudflare Explains QuePaxa Consensus Algorithm</title>
+      <link>https://secubuzz.com/news/cloudflare-explains-quepaxa-consensus-algorithm-1e0211c8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-explains-quepaxa-consensus-algorithm-1e0211c8</guid>
+      <description><![CDATA[Cloudflare is building an experimental consensus service that uses the novel QuePaxa algorithm, a consensus mechanism never deployed before. QuePaxa blends proof‑of‑work and proof‑of‑stake to reduce latency and increase fault tolerance across distributed nodes. The post explains the algorithm’s design and rationale, offering insights for researchers and practitioners exploring next‑generation consensus.]]></description>
+      <pubDate>Wed, 11 Nov 2026 14:24:46 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/choosing-quepaxa/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat Releases Kernel Security Update for RHEL 10</title>
       <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a</guid>
@@ -95,6 +113,15 @@
       <description><![CDATA[Asus and Zoom released security patches addressing critical flaws that could allow attackers to execute arbitrary code, overwrite memory, and elevate privileges. The vulnerabilities involve memory corruption and privilege escalation paths, potentially enabling full system compromise if exploited. Users should install the latest updates for both Asus firmware and Zoom client immediately to mitigate the risk.]]></description>
       <pubDate>Wed, 11 Nov 2026 13:58:38 GMT</pubDate>
       <source url="https://www.securityweek.com/asus-zoom-release-security-patches/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Windows SignDrop 0-Day Exploit Lets Attackers Gain SYSTEM Privileges Through CLFS Protection</title>
+      <link>https://secubuzz.com/news/windows-signdrop-0-day-exploit-lets-attackers-gain-0c53ce65</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-signdrop-0-day-exploit-lets-attackers-gain-0c53ce65</guid>
+      <description><![CDATA[A public exploit called SignDrop targets a Windows security feature meant to stop attacks on the Common Log File System (CLFS). It claims to turn a normal user account into a SYSTEM account, the highest level of control on Windows. The flaw has no CVE number and no patch as of November 11, 2026.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:57:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/windows-signdrop-zero-day-exploit/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -134,6 +161,33 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Poland Shuts Down ePUAP After Cyberattack</title>
+      <link>https://secubuzz.com/news/poland-shuts-down-epuap-after-cyberattack-b4bd6997</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/poland-shuts-down-epuap-after-cyberattack-b4bd6997</guid>
+      <description><![CDATA[Poland’s nationwide ePUAP platform, used for submitting official documents and communicating with government agencies, was shut down after a cyberattack. The attack disrupted the platform’s availability, preventing citizens from completing administrative procedures online. Polish authorities are investigating the incident, and the platform will be restored after security measures are verified.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:18:00 GMT</pubDate>
+      <source url="https://therecord.media/poland-shuts-down-government-services-platform-cyberattack">The Record</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Britain, France Issue Guidelines for Hacking Firms</title>
+      <link>https://secubuzz.com/news/britain-france-issue-guidelines-for-hacking-firms-94bb8378</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/britain-france-issue-guidelines-for-hacking-firms-94bb8378</guid>
+      <description><![CDATA[Britain and France have released the first regulatory guidelines targeting commercial hacking firms that develop, sell, or finance cyber‑crime infrastructure components (CCICs). The guidelines require firms to vet customers, implement technical safeguards against misuse, and maintain monitoring and reporting systems for abuse incidents. Compliance will be monitored by national authorities, and non‑compliance could result in licensing revocation or legal action.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:11:00 GMT</pubDate>
+      <source url="https://therecord.media/britain-france-set-out-guidelines-for-commercial-hacking-firms">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Blind Eagle Targets Latin America with Fake Court RATs</title>
+      <link>https://secubuzz.com/news/blind-eagle-targets-latin-america-with-fake-court-95822401</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/blind-eagle-targets-latin-america-with-fake-court-95822401</guid>
+      <description><![CDATA[Law enforcement intelligence reports that the state‑backed threat actor Blind Eagle targets Latin American entities with fake court‑related RATs. The RATs masquerade as legitimate court software, allowing attackers to establish persistent footholds and exfiltrate sensitive data. Security teams should verify software authenticity, enforce strict application whitelisting, and monitor for anomalous remote access activity.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:10:53 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/blind-eagle-uses-fake-court-notices-to-deliver-remote-a">CyberNews AI</source>
+      <category>Nation State</category>
+    </item>
+    <item>
       <title>Git CVE-2026-111760 Enables Remote Code Execution</title>
       <link>https://secubuzz.com/news/git-cve-2026-111760-enables-remote-code-execution-c8ba2879</link>
       <guid isPermaLink="true">https://secubuzz.com/news/git-cve-2026-111760-enables-remote-code-execution-c8ba2879</guid>
@@ -168,6 +222,15 @@
       <pubDate>Wed, 11 Nov 2026 13:09:51 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws">CyberNews AI</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:98471: Important: openexr security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98471-important-openexr-security-update-56dd69b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98471-important-openexr-security-update-56dd69b3</guid>
+      <description><![CDATA[An update for openexr is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:07:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98471">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>N‑able Issues Emergency Hotfix After 33 Vulnerabilities Shutdown</title>
@@ -392,69 +455,6 @@
       <description><![CDATA[Red Hat released a security update for Grafana on RHEL 9, addressing vulnerabilities that could enable unauthorized access or data leakage. The update patches each flaw, with CVSS scores available via CVE references, though no specific CVE IDs are listed. Apply the update through RHEL 9 package manager to eliminate the risks and maintain system integrity.]]></description>
       <pubDate>Wed, 11 Nov 2026 09:31:58 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98541">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>China-Linked Hackers Use Fake Chrome Certificate Warnings to Infect Victims With Sparrow Backdoor</title>
-      <link>https://secubuzz.com/news/china-linked-hackers-use-fake-chrome-certificate-w-a3941e63</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/china-linked-hackers-use-fake-chrome-certificate-w-a3941e63</guid>
-      <description><![CDATA[China-linked hackers are turning trusted websites into malware delivery points by displaying fake Google Chrome certificate warnings. The pages urge selected visitors to install a certificate repair utility, but the download instead installs a backdoor that gives attackers remote access to Windows computers.]]></description>
-      <pubDate>Wed, 11 Nov 2026 09:24:07 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fake-chrome-certificate/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Xwayland update released for RHEL 9.4</title>
-      <link>https://secubuzz.com/news/xwayland-update-released-for-rhel-9-4-a0a12207</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/xwayland-update-released-for-rhel-9-4-a0a12207</guid>
-      <description><![CDATA[Red Hat issued a security update for xorg‑x11‑server‑Xwayland on RHEL 9.4, targeting vulnerabilities that could allow unauthorized access or data exposure. The advisory notes an Important impact rating and references CVSS scores for each flaw, but no CVE identifiers are disclosed. Security teams should apply the update via RHEL 9.4 package manager to mitigate the identified risks.]]></description>
-      <pubDate>Wed, 11 Nov 2026 09:19:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98547">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98549: Important: xorg-x11-server-Xwayland security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98549-important-xorg-x11-server-xwayland-7ddcf94b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98549-important-xorg-x11-server-xwayland-7ddcf94b</guid>
-      <description><![CDATA[An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 09:16:39 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98549">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98546: Important: xorg-x11-server-Xwayland security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98546-important-xorg-x11-server-xwayland-57ae424b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98546-important-xorg-x11-server-xwayland-57ae424b</guid>
-      <description><![CDATA[An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 09:10:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98546">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Resolves Exchange Sign‑In Issues from Server Updates</title>
-      <link>https://secubuzz.com/news/microsoft-resolves-exchange-sign-in-issues-from-se-ee739ef0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-resolves-exchange-sign-in-issues-from-se-ee739ef0</guid>
-      <description><![CDATA[Microsoft fixed Outlook sign‑in and mail delivery issues on Exchange Server caused by October 2026 Windows Server updates. The updates disrupted authentication flows, leading to failed logins and delayed message routing; no data exfiltration was reported. The problem is resolved in the latest cumulative update; administrators should apply the patch to restore normal Exchange operation.]]></description>
-      <pubDate>Wed, 11 Nov 2026 09:07:27 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Openwave, BroadWorks vulnerabilities exploited for data leakage</title>
-      <link>https://secubuzz.com/news/openwave-broadworks-vulnerabilities-exploited-for-4e1d2283</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openwave-broadworks-vulnerabilities-exploited-for-4e1d2283</guid>
-      <description><![CDATA[Threat actors exploited CVE-2026-111793 in Openwave and CVE-2026-20320 in Cisco BroadWorks, enabling leakage of sensitive configuration data. Both flaws allow unauthorized disclosure of configuration information without authentication, and public proof‑of‑concept exploits have been released. Affected systems should apply vendor patches or configuration hardening to prevent further data exposure immediately.]]></description>
-      <pubDate>Wed, 11 Nov 2026 09:01:07 GMT</pubDate>
-      <source url="https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Intel, AMD patch over 200 vulnerabilities</title>
-      <link>https://secubuzz.com/news/intel-amd-patch-over-200-vulnerabilities-720d0e7b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/intel-amd-patch-over-200-vulnerabilities-720d0e7b</guid>
-      <description><![CDATA[Intel and AMD released over 200 patches on Patch Tuesday, addressing critical flaws in Intel TDX software and numerous AMD graphics bugs. The advisory lists multiple CVE identifiers and CVSS scores, indicating a range of severity levels across the affected components. Security teams should apply the vendor patches via their package managers or firmware updates to mitigate the identified risks.]]></description>
-      <pubDate>Wed, 11 Nov 2026 08:42:44 GMT</pubDate>
-      <source url="https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
   </channel>
