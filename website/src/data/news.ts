@@ -11,6 +11,64 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-gcc-update-for-moderate-security-is-fd907fcf",
+    "title": "Red Hat Issues GCC Update for Moderate Security Issue",
+    "summary": "Red Hat released a GCC update for RHEL 8 to fix a moderate‑severity security issue. The advisory indicates a Moderate impact, with CVSS scores linked to CVE references, suggesting a medium‑severity flaw affecting compiler integrity. Apply the update immediately and confirm GCC version compliance in RHEL 8 to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98115",
+    "publishedAt": "2026-11-11T06:34:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-gcc-update-for-moderate-security-is",
+      "article-fd907fcf",
+      "fd907fcf",
+      "red-hat-issues-gcc-update-for-moderate-security-is-37d6f4",
+      "red-hat-issues-gcc-update-for-moderate-security-issue"
+    ]
+  },
+  {
+    "slug": "cisco-broadworks-openwave-flaws-actively-exploited-3c0cd8b8",
+    "title": "Cisco BroadWorks, Openwave Flaws Actively Exploited",
+    "summary": "CISA identified active exploitation of two vulnerabilities in Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder. The flaws, including CVE-2026-20320, stem from an improper restriction of XML external entities, scoring CVSS 7.5 and enabling remote code execution without authentication. Both vendors have released patches; security teams must apply them immediately and monitor for exploitation indicators.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+    "publishedAt": "2026-11-11T06:04:02.000Z",
+    "cves": [
+      "CVE-2026-20320"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-broadworks-openwave-flaws-actively-exploited",
+      "article-3c0cd8b8",
+      "3c0cd8b8",
+      "cisco-broadworks-openwave-flaws-actively-exploited-15abd9"
+    ]
+  },
+  {
+    "slug": "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-72c8dbf1",
+    "title": "EU cyber scores look healthy, but 45% of surveyed IT providers take months to patch",
+    "summary": "Forty-five percent of surveyed IT service management providers in the EU took more than three months to apply critical patches to critical systems, according to ENISA’s 2026 assessment of cybersecurity in the Union. Attackers can turn a newly disclosed flaw into a working attack within days, and sometimes within hours or minutes.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/eu-enisa-cybersecurity-report/",
+    "publishedAt": "2026-11-11T06:00:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-cyber-scores-look-healthy-but-45-of-surveyed-it",
+      "article-72c8dbf1",
+      "72c8dbf1",
+      "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
+      "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
     "slug": "nearly-half-of-big-firms-shelve-or-close-vulnerabi-c3ace65b",
     "title": "Nearly half of big firms shelve or close vulnerability findings they haven’t confirmed",
     "summary": "Nearly half of security teams at organizations with 5,000 or more employees close or deprioritize vulnerability findings without fully verifying them, ProjectDiscovery found, and the reason they give is time. Among teams that skip full verification, 57% say at least three out of four findings they do check turn out to be real.",
@@ -46,6 +104,44 @@ export const news: NewsBrief[] = [
       "d9919403",
       "an-instagram-ad-was-all-it-took-leaked-exploit-kit-289af2",
       "an-instagram-ad-was-all-it-took-leaked-exploit-kits-are-hitt"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-addresses-important-security-7e8e2f18",
+    "title": "Red Hat Kernel Update Addresses Important Security Flaw",
+    "summary": "Red Hat released a kernel update for RHEL 9.6 Extended Update Support to address a critical security flaw. The advisory rates the impact as Important, with CVSS scores available via CVE links, indicating a high‑severity vulnerability affecting kernel integrity. Security teams should apply the update promptly and verify kernel version compliance.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98239",
+    "publishedAt": "2026-11-11T04:47:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-addresses-important-security",
+      "article-7e8e2f18",
+      "7e8e2f18",
+      "red-hat-kernel-update-addresses-important-security-37d6f0",
+      "red-hat-kernel-update-addresses-important-security-flaw"
+    ]
+  },
+  {
+    "slug": "ghostframe-toolkit-hijacks-vmware-esxi-vms-steals-7f33e363",
+    "title": "GhostFrame Toolkit Hijacks VMware ESXi VMs, Steals Credentials",
+    "summary": "A new GhostFrame hacking toolkit enables attackers to hijack VMware ESXi servers and the virtual machines they host. The framework, discovered by Recorded Future’s Insikt Group while tracking TAG‑218, can extract Windows passwords, indicating a credential‑stealing capability. Security teams should isolate ESXi hosts, apply vendor patches, and monitor for unauthorized management console access.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ghostframe-malware-hijack-vmware-esxi/",
+    "publishedAt": "2026-11-11T04:26:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ghostframe-toolkit-hijacks-vmware-esxi-vms-steals",
+      "article-7f33e363",
+      "7f33e363",
+      "ghostframe-toolkit-hijacks-vmware-esxi-vms-steals-18dc84",
+      "ghostframe-toolkit-hijacks-vmware-esxi-vms-steals-credential"
     ]
   },
   {
@@ -234,6 +330,25 @@ export const news: NewsBrief[] = [
       "article-0a2558a7",
       "0a2558a7",
       "rhsa-2026-98114-important-kernel-security-update-37d6f4"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-95745-critical-openshift-container-platf-51cfd39e",
+    "title": "RHSA-2026:95745: Critical: OpenShift Container Platform 4.13.73 bug fix and security update",
+    "summary": "Red Hat OpenShift Container Platform release 4.13.73 is now available with updates to packages and images that fix several bugs and add enhancements. This release includes a security update for Red Hat OpenShift Container Platform 4.13. Red Hat Product Security has rated this update as having a security impact of Critical.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95745",
+    "publishedAt": "2026-11-11T01:43:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-95745-critical-openshift-container-platf",
+      "article-51cfd39e",
+      "51cfd39e",
+      "rhsa-2026-95745-critical-openshift-container-platf-37d83a",
+      "rhsa-2026-95745-critical-openshift-container-platform-4-13-7"
     ]
   },
   {
@@ -534,6 +649,25 @@ export const news: NewsBrief[] = [
       "40f8f9fd",
       "python-jwcrypto-update-addresses-moderate-security-37d74e",
       "python-jwcrypto-update-addresses-moderate-security-issue"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97855-important-nodejs-26-security-updat-f0c45be3",
+    "title": "RHSA-2026:97855: Important: nodejs:26 security update",
+    "summary": "An update for the nodejs:26 module is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97855",
+    "publishedAt": "2026-11-10T22:35:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97855-important-nodejs-26-security-updat",
+      "article-f0c45be3",
+      "f0c45be3",
+      "rhsa-2026-97855-important-nodejs-26-security-updat-37d74e",
+      "rhsa-2026-97855-important-nodejs-26-security-update"
     ]
   },
   {
@@ -2108,6 +2242,44 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "microsoft-windows-scsi-class-elevation-vulnerabili-31d55636",
+    "title": "Microsoft Windows SCSI Class Elevation Vulnerability",
+    "summary": "A null pointer dereference in Microsoft Windows SCSI Class System File permits an authorized attacker to elevate privileges locally. The flaw originates from improper null checking during SCSI command processing, enabling local privilege escalation without authentication. Microsoft has released a patch in the latest cumulative update; administrators should apply it immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105586",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-windows-scsi-class-elevation-vulnerabili",
+      "article-31d55636",
+      "31d55636",
+      "microsoft-windows-scsi-class-elevation-vulnerabili-1ff888",
+      "microsoft-windows-scsi-class-elevation-vulnerability"
+    ]
+  },
+  {
+    "slug": "microsoft-windows-ole-db-privilege-escalation-vuln-6a30ab5b",
+    "title": "Microsoft Windows OLE DB Privilege Escalation Vulnerability",
+    "summary": "A heap-based buffer overflow in Windows OLE DB allows an authorized attacker to elevate privileges locally. The overflow occurs when unvalidated OLE DB parameters are copied into a fixed-size buffer, enabling local privilege escalation. Microsoft has issued a patch in the latest cumulative update; users should install it promptly to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105587",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-windows-ole-db-privilege-escalation-vuln",
+      "article-6a30ab5b",
+      "6a30ab5b",
+      "microsoft-windows-ole-db-privilege-escalation-vuln-1ff888",
+      "microsoft-windows-ole-db-privilege-escalation-vulnerability"
     ]
   },
   {
@@ -4219,6 +4391,63 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "fortimanager-argument-injection-privilege-escalati-e9e70a94",
+    "title": "FortiManager Argument Injection Privilege Escalation",
+    "summary": "An improper neutralization of argument delimiters in FortiManager, FortiAnalyzer, and cloud variants permits authenticated privileged admins to execute unauthorized code. The flaw, rated CVSSv3 7.2, arises from insufficient escaping of shell metacharacters during command construction, enabling local code execution. Fortinet released a patch in the latest firmware; administrators should upgrade or apply the advisory to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-239",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimanager-argument-injection-privilege-escalati",
+      "article-e9e70a94",
+      "e9e70a94",
+      "fortimanager-argument-injection-privilege-escalati-3bcda5",
+      "fortimanager-argument-injection-privilege-escalation"
+    ]
+  },
+  {
+    "slug": "fortios-ssh-daemon-authentication-bypass-path-trav-0064a9d7",
+    "title": "FortiOS SSH Daemon Authentication Bypass Path Traversal",
+    "summary": "A path traversal flaw in FortiOS, FortiSASE, FortiProxy, and FortiPam ssh daemon allows unauthenticated attackers to bypass authentication via crafted credentials. The vulnerability, CVSSv3 7.4, exploits improper sanitization of SSH credentials, enabling remote code execution without prior authentication. Fortinet issued a patch in the latest firmware; users should update immediately to prevent authentication bypass.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-269",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortios-ssh-daemon-authentication-bypass-path-trav",
+      "article-0064a9d7",
+      "0064a9d7",
+      "fortios-ssh-daemon-authentication-bypass-path-trav-3bcda5",
+      "fortios-ssh-daemon-authentication-bypass-path-traversal"
+    ]
+  },
+  {
+    "slug": "improper-neutralization-of-special-elements-used-i-164bb451",
+    "title": "Improper neutralization of special elements used in a template engine",
+    "summary": "CVSSv3 Score: 7.2 A Server-Side Template Injection vulnerability [CWE-1336] in FortiManager, FortiManager Cloud, FortiAnalyzer and FortiAnalyzer Cloud may allow an authenticated attacker with restricted privileges to execute unauthorized code or commands via a specially crafted request.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-249",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "improper-neutralization-of-special-elements-used-i",
+      "article-164bb451",
+      "164bb451",
+      "improper-neutralization-of-special-elements-used-i-3bcda5",
+      "improper-neutralization-of-special-elements-used-in-a-templa"
     ]
   },
   {
@@ -9381,266 +9610,6 @@ export const news: NewsBrief[] = [
       "ccffd898",
       "microsoft-alerts-on-monetizing-windows-pcs-via-fak-22deee",
       "microsoft-alerts-on-monetizing-windows-pcs-via-fake-games"
-    ]
-  },
-  {
-    "slug": "claude-code-exposes-user-emails-via-user-agent-hea-2683cb35",
-    "title": "Claude Code Exposes User Emails via User‑Agent Headers",
-    "summary": "Anthropic’s Claude Code transmitted users’ email addresses in HTTP User‑Agent headers during web searches, leaking personal data to third‑party sites. The flaw arises from the tool’s default header configuration, which embeds user identifiers without explicit consent, violating privacy best practices. Anthropic should update header handling, provide opt‑out controls, and issue a patch to prevent accidental data leakage.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/claude-code-leaks-user-email/",
-    "publishedAt": "2026-11-06T14:37:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-code-exposes-user-emails-via-user-agent-hea",
-      "article-2683cb35",
-      "2683cb35",
-      "claude-code-exposes-user-emails-via-user-agent-hea-2fbbc2",
-      "claude-code-exposes-user-emails-via-user-agent-headers"
-    ]
-  },
-  {
-    "slug": "ceo-spoofing-scammers-indicted-for-100m-ai-assiste-1ba7565e",
-    "title": "CEO‑Spoofing Scammers Indicted for $100M AI‑Assisted Fraud",
-    "summary": "Three suspects face indictment for orchestrating CEO‑spoofing scams that used AI to facilitate over $100 million in fraud. The scheme exploited social engineering and AI‑generated phishing content to deceive executives, bypassing email authentication and credential verification. U.S. authorities are pursuing extradition of the suspects from Europe, and organizations are urged to enforce multi‑factor authentication and verify executive communications.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ceo-spoofing-scammers-charged",
-    "publishedAt": "2026-11-06T14:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ceo-spoofing-scammers-indicted-for-100m-ai-assiste",
-      "article-1ba7565e",
-      "1ba7565e",
-      "ceo-spoofing-scammers-indicted-for-100m-ai-assiste-319ecf",
-      "ceo-spoofing-scammers-indicted-for-100m-ai-assisted-fraud"
-    ]
-  },
-  {
-    "slug": "chrome-dev-159-released-for-android-04d26652",
-    "title": "Chrome Dev 159 Released for Android",
-    "summary": "Google released Chrome Dev 159 (159.0.8144.0) for Android, adding new features and bug fixes. The update, available on Google Play, includes changes logged in the Chromium Git history and platform enhancements noted on the Chromium blog. Users should install the latest build and report any issues via the Chrome Release Team bug‑tracking system.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update.html",
-    "publishedAt": "2026-11-06T14:28:32.500Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-dev-159-released-for-android",
-      "article-04d26652",
-      "04d26652",
-      "chrome-dev-159-released-for-android-2ae120"
-    ]
-  },
-  {
-    "slug": "mirax-android-rat-hijacks-streaming-app-ads-23f66fb7",
-    "title": "Mirax Android RAT Hijacks Streaming App Ads",
-    "summary": "The Mirax Android RAT campaign leverages streaming-app advertisements as an initial infection vector to steal banking credentials across retail banking customers in the Middle East, Turkey, and Africa. The malware intercepts security codes and operates banking apps directly from victims' devices. Financial institutions should enforce app verification policies and monitor for anomalous banking activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/mirax-android-rat/",
-    "publishedAt": "2026-11-06T14:08:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "mirax-android-rat-hijacks-streaming-app-ads",
-      "article-23f66fb7",
-      "23f66fb7",
-      "mirax-android-rat-hijacks-streaming-app-ads-c0cbf9"
-    ]
-  },
-  {
-    "slug": "digicert-breach-exposes-business-customer-data-e807c301",
-    "title": "DigiCert Breach Exposes Business Customer Data",
-    "summary": "DigiCert disclosed a breach where an internal business system was externally accessible, enabling an unauthorized account. The misconfigured access controls exposed customer data, potentially compromising credentials, and the incident occurred during the summer. Affected customers should reset credentials, review logs, and DigiCert is auditing systems and tightening authentication and monitoring.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/",
-    "publishedAt": "2026-11-06T14:00:07.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/digicert-certificate-authority-reports-data-breach"
-      }
-    ],
-    "aliases": [
-      "digicert-breach-exposes-business-customer-data",
-      "article-e807c301",
-      "e807c301",
-      "digicert-breach-exposes-business-customer-data-3638a4"
-    ]
-  },
-  {
-    "slug": "european-freezer-hacks-cascade-through-supply-chai-93f96966",
-    "title": "European Freezer Hacks Cascade Through Supply Chains",
-    "summary": "Recent hacks targeting supermarket freezer systems in Europe demonstrate how a single security flaw can propagate across an entire industry. The attacks disrupted refrigeration controls, potentially compromising food safety and supply chain integrity, but no data breach was reported. Industry analysts advise vendors to harden freezer firmware and implement network segmentation to prevent rapid spread of similar vulnerabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
-    "publishedAt": "2026-11-06T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "european-freezer-hacks-cascade-through-supply-chai",
-      "article-93f96966",
-      "93f96966",
-      "european-freezer-hacks-cascade-through-supply-chai-11c450",
-      "european-freezer-hacks-cascade-through-supply-chains"
-    ]
-  },
-  {
-    "slug": "post-quantum-threats-to-web-privacy-protocols-b25618ee",
-    "title": "Post‑Quantum Threats to Web Privacy Protocols",
-    "summary": "Cryptographic protocols such as Privacy Pass, used to protect web privacy, face potential compromise from quantum‑computing capabilities. Current asymmetric schemes rely on integer factorization, which quantum algorithms can solve efficiently, threatening the integrity of privacy tokens and session authentication. Adoption of lattice‑based or hash‑based post‑quantum primitives is recommended to secure privacy tokens, and vendors should update protocol libraries accordingly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/vole-mole/",
-    "publishedAt": "2026-11-06T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "post-quantum-threats-to-web-privacy-protocols",
-      "article-b25618ee",
-      "b25618ee",
-      "post-quantum-threats-to-web-privacy-protocols-4f7359"
-    ]
-  },
-  {
-    "slug": "artex-ai-agents-compromise-190k-gaming-credentials-1041ff8d",
-    "title": "ARTEX AI Agents Compromise 190k Gaming Credentials, Apple Certificates",
-    "summary": "ARTEX AI agents exploited web applications with minimal human input, stealing over 190,000 gaming credentials and more than 300 Apple code‑signing certificates. The flaw stems from ARTEX’s automated penetration logic that bypasses manual checks, enabling credential harvesting and certificate misuse without user intervention. Security teams should disable ARTEX usage, revoke compromised certificates, and audit affected accounts for unauthorized access.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/artex-ai-agents/",
-    "publishedAt": "2026-11-06T13:49:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "artex-ai-agents-compromise-190k-gaming-credentials",
-      "article-1041ff8d",
-      "1041ff8d",
-      "artex-ai-agents-compromise-190k-gaming-credentials-3b007a",
-      "artex-ai-agents-compromise-190k-gaming-credentials-apple-cer"
-    ]
-  },
-  {
-    "slug": "openai-releases-gpt-6-cyber-model-to-enhance-vulne-771511c1",
-    "title": "OpenAI Releases GPT‑6 Cyber Model to Enhance Vulnerability Detection",
-    "summary": "OpenAI unveiled GPT‑6 Cyber, a new AI model designed to accelerate vulnerability discovery across software ecosystems. The model reportedly identified 81 Firefox flaws and 948 Linux exploits during development, outperforming its predecessor in detection accuracy. Security teams can integrate GPT‑6 Cyber into scanning pipelines but must manually validate outputs to avoid false positives.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
-    "publishedAt": "2026-11-06T13:19:52.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html"
-      }
-    ],
-    "aliases": [
-      "openai-releases-gpt-6-cyber-model-to-enhance-vulne",
-      "article-771511c1",
-      "771511c1",
-      "openai-releases-gpt-6-cyber-model-to-enhance-vulne-40974c",
-      "openai-releases-gpt-6-cyber-model-to-enhance-vulnerability-d"
-    ]
-  },
-  {
-    "slug": "us-agencies-advise-hardening-refrigeration-control-fdd5a816",
-    "title": "US Agencies Advise Hardening Refrigeration Controllers",
-    "summary": "U.S. agencies warn that refrigeration controllers in supermarkets and blood banks have been targeted, urging hardened security. The incidents exploit default credentials and unpatched firmware, allowing remote code execution and potential disruption of critical temperature‑controlled environments. Organizations should update firmware, enforce strong passwords, enable network segmentation, and monitor for anomalous traffic to protect refrigeration infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/",
-    "publishedAt": "2026-11-06T13:02:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-agencies-advise-hardening-refrigeration-control",
-      "article-fdd5a816",
-      "fdd5a816",
-      "us-agencies-advise-hardening-refrigeration-control-37a22b",
-      "us-agencies-advise-hardening-refrigeration-controllers"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-openssh-sshole-flaw-gain-root-on-h-55a45e5a",
-    "title": "Hackers Exploit OpenSSH SSHole Flaw, Gain Root on Honeypot",
-    "summary": "Hackers exploited OpenSSH flaw CVE-2026-123158 to sign into passwordless accounts on musl‑based Linux with PAM disabled, achieving root on a honeypot. The SSHole vulnerability scores CVSS 8.1, enabling unauthenticated remote code execution by bypassing authentication when PAM is off. No patch has been issued; operators should monitor advisories and disable passwordless logins until a fix arrives.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/",
-    "publishedAt": "2026-11-06T12:49:41.000Z",
-    "cves": [
-      "CVE-2026-123158"
-    ],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html"
-      }
-    ],
-    "aliases": [
-      "hackers-exploit-openssh-sshole-flaw-gain-root-on-h",
-      "article-55a45e5a",
-      "55a45e5a",
-      "hackers-exploit-openssh-sshole-flaw-gain-root-on-h-2cffd1",
-      "hackers-exploit-openssh-sshole-flaw-gain-root-on-honeypot"
-    ]
-  },
-  {
-    "slug": "ahold-delhaize-estimates-250m-loss-from-cyberattac-af648d4c",
-    "title": "Ahold Delhaize Estimates €250M Loss from Cyberattack",
-    "summary": "Ahold Delhaize disclosed that an October cyberattack is expected to reduce fourth‑quarter sales by up to €250 million. The breach forced the retailer to lower its 2026 financial outlook, reflecting significant operational and reputational damage. Ahold Delhaize has not released detailed incident response steps, but security teams should review supply‑chain controls and incident‑response readiness.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack/",
-    "publishedAt": "2026-11-06T12:47:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ahold-delhaize-estimates-250m-loss-from-cyberattac",
-      "article-af648d4c",
-      "af648d4c",
-      "ahold-delhaize-estimates-250m-loss-from-cyberattac-217a02",
-      "ahold-delhaize-estimates-250m-loss-from-cyberattack"
-    ]
-  },
-  {
-    "slug": "d-link-issues-zero-day-alerts-for-dgs-3130-switche-6086ec92",
-    "title": "D-Link Issues Zero‑Day Alerts for DGS‑3130 Switches",
-    "summary": "D-Link disclosed multiple zero‑day flaws in its DGS‑3130 series managed Gigabit stackable switches, exposing them to remote exploitation. The defects enable unauthenticated attackers to run arbitrary code via malformed management packets, potentially compromising network control planes. D-Link issued mitigation steps and firmware updates; administrators should apply the latest patch and limit management access to trusted networks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
-    "publishedAt": "2026-11-06T12:37:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "d-link-issues-zero-day-alerts-for-dgs-3130-switche",
-      "article-6086ec92",
-      "6086ec92",
-      "d-link-issues-zero-day-alerts-for-dgs-3130-switche-257244",
-      "d-link-issues-zero-day-alerts-for-dgs-3130-switches"
     ]
   }
 ];
