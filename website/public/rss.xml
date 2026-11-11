@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 16:48:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 17:46:30 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Maersk Breach Exposes Legacy System Data</title>
+      <link>https://secubuzz.com/news/maersk-breach-exposes-legacy-system-data-24af8572</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/maersk-breach-exposes-legacy-system-data-24af8572</guid>
+      <description><![CDATA[Maersk confirmed that a threat actor accessed a legacy local system inherited from a prior acquisition and exfiltrated data. The breach coincided with a WhiteArmor ransomware campaign demanding a $5 million payment, though the ransomware did not encrypt Maersk files. Maersk has engaged incident response teams, applied security patches, and is monitoring for further compromise.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:24:18 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Zoom Workplace Unauthenticated Remote Privilege Escalation CVE</title>
+      <link>https://secubuzz.com/news/zoom-workplace-unauthenticated-remote-privilege-es-e9f5a551</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/zoom-workplace-unauthenticated-remote-privilege-es-e9f5a551</guid>
+      <description><![CDATA[Zoom Workplace for Windows is vulnerable to CVE-2026-108186, an unauthenticated remote privilege escalation flaw triggered by improper input validation. The flaw carries a CVSS score of 9.6, enabling attackers to elevate privileges without authentication and potentially compromise affected systems. Zoom has released software updates to address the vulnerability; security teams should apply the patch immediately to mitigate risk.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:12:46 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials</title>
       <link>https://secubuzz.com/news/hackers-could-exploit-mcp-server-supply-chain-weak-7b7ec6a2</link>
@@ -15,6 +33,60 @@
       <pubDate>Wed, 11 Nov 2026 16:07:18 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-could-exploit-mcp-server/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Updates Visual Studio CVE-2026-114151 RCE</title>
+      <link>https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114151-rc-6d361bc9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114151-rc-6d361bc9</guid>
+      <description><![CDATA[Microsoft issued an informational update for Visual Studio addressing CVE-2026-114151, a remote code execution flaw. The flaw permits unauthenticated code execution via malformed input, yet no public exploit or PoC has been released. The update lists affected product versions only; no patch is required and no immediate remediation is necessary.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114151">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Updates Visual Studio CVE-2026-114152 RCE</title>
+      <link>https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114152-rc-76b4d667</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114152-rc-76b4d667</guid>
+      <description><![CDATA[Microsoft issued an informational update for Visual Studio addressing CVE-2026-114152, a remote code execution flaw. The vulnerability allows unauthenticated code execution through malformed input, but no public exploit or PoC has been disclosed. The update merely lists affected product versions; no patch is required and no immediate remediation is necessary.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114152">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Updates Visual Studio CVE-2026-114158 RCE</title>
+      <link>https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114158-rc-c6216357</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114158-rc-c6216357</guid>
+      <description><![CDATA[Microsoft issued an informational update for Visual Studio addressing CVE-2026-114158, a remote code execution flaw. The flaw permits unauthenticated code execution via malformed input, yet no public exploit or PoC has been released. The update lists affected product versions only; no patch is required and no immediate remediation is necessary.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114158">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Xen Orchestra Authentication Bypass Enables Admin Code Execution</title>
+      <link>https://secubuzz.com/news/xen-orchestra-authentication-bypass-enables-admin-6ddfe4c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xen-orchestra-authentication-bypass-enables-admin-6ddfe4c0</guid>
+      <description><![CDATA[A critical authentication bypass in Xen Orchestra allows attackers to gain administrative privileges on XCP‑ng nodes. The flaw permits arbitrary code execution via crafted API requests, exposing the hypervisor to remote compromise without user interaction. Red Hat and Xen Orchestra have released patches; administrators should apply the latest updates and restrict API access to trusted hosts.]]></description>
+      <pubDate>Wed, 11 Nov 2026 15:42:47 GMT</pubDate>
+      <source url="https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ansible 2.4 Critical Update Addresses Remote Exploits</title>
+      <link>https://secubuzz.com/news/ansible-2-4-critical-update-addresses-remote-explo-a6243e06</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ansible-2-4-critical-update-addresses-remote-explo-a6243e06</guid>
+      <description><![CDATA[Red Hat released a critical security update for Ansible Automation Platform 2.4, addressing multiple vulnerabilities that could allow remote code execution. The update includes patches for CVE‑linked flaws, each with a CVSS base score indicating high exploitation risk. Administrators should apply the RHSA‑2026:99006 update immediately and verify that all affected nodes are patched.]]></description>
+      <pubDate>Wed, 11 Nov 2026 15:26:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99006">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ansible 2.5 Critical Update Addresses Remote Exploits</title>
+      <link>https://secubuzz.com/news/ansible-2-5-critical-update-addresses-remote-explo-26701ba2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ansible-2-5-critical-update-addresses-remote-explo-26701ba2</guid>
+      <description><![CDATA[Red Hat issued a critical patch for Ansible Automation Platform 2.5, fixing vulnerabilities that could enable remote code execution on managed nodes. Each flaw is referenced by CVE identifiers and carries a high CVSS score, indicating significant exploitation potential. Users should apply the RHSA‑2026:99007 update promptly and audit their Ansible inventory for unpatched hosts.]]></description>
+      <pubDate>Wed, 11 Nov 2026 15:23:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99007">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>AntiFox AI Agents Target AWS Credentials</title>
@@ -384,78 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 10:55:54 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/11/microsoft-hidden-ai-backdoors-lazarus/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>USN-9041-1: uutils coreutils vulnerabilities</title>
-      <link>https://secubuzz.com/news/usn-9041-1-uutils-coreutils-vulnerabilities-8f597bd7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9041-1-uutils-coreutils-vulnerabilities-8f597bd7</guid>
-      <description><![CDATA[A local attacker could possibly use this issue to obtain sensitive information or modify file permissions unexpectedly. (CVE-2026-35341) It was discovered that uutils coreutils dd incorrectly suppressed errors during file truncation operations. A local attacker could possibly use this issue to cause silent data corruption. (CVE-2026-35344) It was discovered that uutils coreutils tail incorrectly followed symbolic links when using the --follow=name option.]]></description>
-      <pubDate>Wed, 11 Nov 2026 10:45:28 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9041-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Hackers Exploit AhsayCBS Vulnerabilities to Hide Malware in PNG Images and Deploy Stealthy Backdoors</title>
-      <link>https://secubuzz.com/news/hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-23540e14</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-23540e14</guid>
-      <description><![CDATA[Hackers exploiting AhsayCBS backup servers have planted webshells, hidden encrypted code inside PNG images, and staged a Python implant designed to run only on its intended host. The findings show an intrusion that extended beyond cryptocurrency mining, giving attackers several ways to keep access to systems responsible for protecting an organization’s backups.]]></description>
-      <pubDate>Wed, 11 Nov 2026 10:44:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-ahsaycbs-vulnerabilities/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Linux Kernel NVIDIA BaseOS Vulnerabilities Fixed</title>
-      <link>https://secubuzz.com/news/linux-kernel-nvidia-baseos-vulnerabilities-fixed-eaf9f20c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-nvidia-baseos-vulnerabilities-fixed-eaf9f20c</guid>
-      <description><![CDATA[An attacker could exploit kernel flaws in NVIDIA BaseOS network drivers and IPv4 networking to compromise affected systems. The vulnerabilities, identified as CVE-2026-98239 and CVE-2026-98432, allow remote code execution through malformed network packets, posing an exploitation risk. Ubuntu has released a kernel patch that corrects the driver and IPv4 subsystems; apply the update immediately to mitigate the threat.]]></description>
-      <pubDate>Wed, 11 Nov 2026 10:40:04 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9044-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Cisco and Openwave Vulnerabilities Identified, Patch Urgently Needed</title>
-      <link>https://secubuzz.com/news/cisco-and-openwave-vulnerabilities-identified-patc-c72f7cab</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-and-openwave-vulnerabilities-identified-patc-c72f7cab</guid>
-      <description><![CDATA[Cisco and Openwave systems are affected by a critical flaw identified as CVE-2026-20320. The vulnerability permits remote code execution via malformed network packets, with a public PoC demonstrating exploitation; the flaw could allow attackers to gain system-level access on affected devices. Administrators should apply the vendor-supplied patch immediately and enable the provided detection rules to monitor for exploitation attempts.]]></description>
-      <pubDate>Wed, 11 Nov 2026 10:39:53 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>ClickFix Attacks Evolve to Hide Malware in PNG Images and Hijack Windows Domain Controllers</title>
-      <link>https://secubuzz.com/news/clickfix-attacks-evolve-to-hide-malware-in-png-ima-5a872db2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/clickfix-attacks-evolve-to-hide-malware-in-png-ima-5a872db2</guid>
-      <description><![CDATA[ClickFix attacks are moving beyond simple malware downloads, with recent investigations revealing executable payloads hidden inside PNG images and intrusions reaching Windows domain controllers. The activity shows how a fake verification prompt can become the starting point for persistent access, credential theft, and movement across corporate networks.]]></description>
-      <pubDate>Wed, 11 Nov 2026 10:32:40 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/clickfix-attacks-evolve/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA flags Cisco BroadWorks flaw as actively exploited in attacks</title>
-      <link>https://secubuzz.com/news/cisa-flags-cisco-broadworks-flaw-as-actively-explo-f54e59e8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-flags-cisco-broadworks-flaw-as-actively-explo-f54e59e8</guid>
-      <description><![CDATA[The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. The vulnerability is tracked as CVE-2026-20320.]]></description>
-      <pubDate>Wed, 11 Nov 2026 10:12:08 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Adds Revocation Checks to Curl</title>
-      <link>https://secubuzz.com/news/ubuntu-adds-revocation-checks-to-curl-f1f7af73</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-adds-revocation-checks-to-curl-f1f7af73</guid>
-      <description><![CDATA[Ubuntu 26.10 adds certificate revocation checking to curl, preventing connections to revoked certificates. Earlier releases, such as 26.04, accepted revoked certificates because curl lacked revocation validation, exposing users to man‑in‑the‑middle attacks; OpenSSL also omits revocation checks by default. Upgrade to Ubuntu 26.10 or later to enforce revocation checks, and enable OCSP or CRL verification in OpenSSL for added protection.]]></description>
-      <pubDate>Wed, 11 Nov 2026 09:46:23 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/11/ubuntu-certificate-revocation-curl-openssl/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Grafana update released for RHEL9</title>
-      <link>https://secubuzz.com/news/grafana-update-released-for-rhel9-d84570bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-released-for-rhel9-d84570bf</guid>
-      <description><![CDATA[Red Hat released a security update for Grafana on RHEL 9, addressing vulnerabilities that could enable unauthorized access or data leakage. The update patches each flaw, with CVSS scores available via CVE references, though no specific CVE IDs are listed. Apply the update through RHEL 9 package manager to eliminate the risks and maintain system integrity.]]></description>
-      <pubDate>Wed, 11 Nov 2026 09:31:58 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98541">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

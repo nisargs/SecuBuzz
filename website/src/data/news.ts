@@ -11,6 +11,45 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "maersk-breach-exposes-legacy-system-data-24af8572",
+    "title": "Maersk Breach Exposes Legacy System Data",
+    "summary": "Maersk confirmed that a threat actor accessed a legacy local system inherited from a prior acquisition and exfiltrated data. The breach coincided with a WhiteArmor ransomware campaign demanding a $5 million payment, though the ransomware did not encrypt Maersk files. Maersk has engaged incident response teams, applied security patches, and is monitoring for further compromise.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
+    "publishedAt": "2026-11-11T16:24:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "maersk-breach-exposes-legacy-system-data",
+      "article-24af8572",
+      "24af8572",
+      "maersk-breach-exposes-legacy-system-data-109cf0"
+    ]
+  },
+  {
+    "slug": "zoom-workplace-unauthenticated-remote-privilege-es-e9f5a551",
+    "title": "Zoom Workplace Unauthenticated Remote Privilege Escalation CVE",
+    "summary": "Zoom Workplace for Windows is vulnerable to CVE-2026-108186, an unauthenticated remote privilege escalation flaw triggered by improper input validation. The flaw carries a CVSS score of 9.6, enabling attackers to elevate privileges without authentication and potentially compromise affected systems. Zoom has released software updates to address the vulnerability; security teams should apply the patch immediately to mitigate risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+    "publishedAt": "2026-11-11T16:12:46.000Z",
+    "cves": [
+      "CVE-2026-108186"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zoom-workplace-unauthenticated-remote-privilege-es",
+      "article-e9f5a551",
+      "e9f5a551",
+      "zoom-workplace-unauthenticated-remote-privilege-es-1a0771",
+      "zoom-workplace-unauthenticated-remote-privilege-escalation-c"
+    ]
+  },
+  {
     "slug": "hackers-could-exploit-mcp-server-supply-chain-weak-7b7ec6a2",
     "title": "Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials",
     "summary": "Security teams that run AI coding assistants may be exposing their most powerful credentials without knowing it. A new study shows that Model Context Protocol (MCP) servers can quietly change their own code after they are set up.",
@@ -27,6 +66,126 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-visual-studio-cve-2026-114151-rc-6d361bc9",
+    "title": "Microsoft Updates Visual Studio CVE-2026-114151 RCE",
+    "summary": "Microsoft issued an informational update for Visual Studio addressing CVE-2026-114151, a remote code execution flaw. The flaw permits unauthenticated code execution via malformed input, yet no public exploit or PoC has been released. The update lists affected product versions only; no patch is required and no immediate remediation is necessary.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114151",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114151"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-visual-studio-cve-2026-114151-rc",
+      "article-6d361bc9",
+      "6d361bc9",
+      "microsoft-updates-visual-studio-cve-2026-114151-rc-1feaf4",
+      "microsoft-updates-visual-studio-cve-2026-114151-rce"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-visual-studio-cve-2026-114152-rc-76b4d667",
+    "title": "Microsoft Updates Visual Studio CVE-2026-114152 RCE",
+    "summary": "Microsoft issued an informational update for Visual Studio addressing CVE-2026-114152, a remote code execution flaw. The vulnerability allows unauthenticated code execution through malformed input, but no public exploit or PoC has been disclosed. The update merely lists affected product versions; no patch is required and no immediate remediation is necessary.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114152",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114152"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-visual-studio-cve-2026-114152-rc",
+      "article-76b4d667",
+      "76b4d667",
+      "microsoft-updates-visual-studio-cve-2026-114152-rc-1feaf4",
+      "microsoft-updates-visual-studio-cve-2026-114152-rce"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-visual-studio-cve-2026-114158-rc-c6216357",
+    "title": "Microsoft Updates Visual Studio CVE-2026-114158 RCE",
+    "summary": "Microsoft issued an informational update for Visual Studio addressing CVE-2026-114158, a remote code execution flaw. The flaw permits unauthenticated code execution via malformed input, yet no public exploit or PoC has been released. The update lists affected product versions only; no patch is required and no immediate remediation is necessary.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114158",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114158"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-visual-studio-cve-2026-114158-rc",
+      "article-c6216357",
+      "c6216357",
+      "microsoft-updates-visual-studio-cve-2026-114158-rc-1feaf4",
+      "microsoft-updates-visual-studio-cve-2026-114158-rce"
+    ]
+  },
+  {
+    "slug": "xen-orchestra-authentication-bypass-enables-admin-6ddfe4c0",
+    "title": "Xen Orchestra Authentication Bypass Enables Admin Code Execution",
+    "summary": "A critical authentication bypass in Xen Orchestra allows attackers to gain administrative privileges on XCP‑ng nodes. The flaw permits arbitrary code execution via crafted API requests, exposing the hypervisor to remote compromise without user interaction. Red Hat and Xen Orchestra have released patches; administrators should apply the latest updates and restrict API access to trusted hosts.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
+    "publishedAt": "2026-11-11T15:42:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xen-orchestra-authentication-bypass-enables-admin",
+      "article-6ddfe4c0",
+      "6ddfe4c0",
+      "xen-orchestra-authentication-bypass-enables-admin-7156f1",
+      "xen-orchestra-authentication-bypass-enables-admin-code-execu"
+    ]
+  },
+  {
+    "slug": "ansible-2-4-critical-update-addresses-remote-explo-a6243e06",
+    "title": "Ansible 2.4 Critical Update Addresses Remote Exploits",
+    "summary": "Red Hat released a critical security update for Ansible Automation Platform 2.4, addressing multiple vulnerabilities that could allow remote code execution. The update includes patches for CVE‑linked flaws, each with a CVSS base score indicating high exploitation risk. Administrators should apply the RHSA‑2026:99006 update immediately and verify that all affected nodes are patched.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99006",
+    "publishedAt": "2026-11-11T15:26:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ansible-2-4-critical-update-addresses-remote-explo",
+      "article-a6243e06",
+      "a6243e06",
+      "ansible-2-4-critical-update-addresses-remote-explo-37d683",
+      "ansible-2-4-critical-update-addresses-remote-exploits"
+    ]
+  },
+  {
+    "slug": "ansible-2-5-critical-update-addresses-remote-explo-26701ba2",
+    "title": "Ansible 2.5 Critical Update Addresses Remote Exploits",
+    "summary": "Red Hat issued a critical patch for Ansible Automation Platform 2.5, fixing vulnerabilities that could enable remote code execution on managed nodes. Each flaw is referenced by CVE identifiers and carries a high CVSS score, indicating significant exploitation potential. Users should apply the RHSA‑2026:99007 update promptly and audit their Ansible inventory for unpatched hosts.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99007",
+    "publishedAt": "2026-11-11T15:23:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ansible-2-5-critical-update-addresses-remote-explo",
+      "article-26701ba2",
+      "26701ba2",
+      "ansible-2-5-critical-update-addresses-remote-explo-37d683",
+      "ansible-2-5-critical-update-addresses-remote-exploits"
     ]
   },
   {
@@ -849,6 +1008,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ubuntu-kernel-cve-2023-20585-rmp-check-flaw-237c9f08",
+    "title": "Ubuntu Kernel CVE-2023-20585 RMP Check Flaw",
+    "summary": "Ubuntu Security Notice USN-9043-1 reports CVE-2023-20585, a kernel flaw in AMD processors' IOMMU reverse map table checks. The flaw permits a local hypervisor attacker to trigger an out-of-bounds condition, potentially compromising SEV‑SNP guest memory integrity. Ubuntu patches the RMP check flaw across multiple architectures; administrators should update to the latest kernel to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9043-1",
+    "publishedAt": "2026-11-11T10:40:18.000Z",
+    "cves": [
+      "CVE-2023-20585"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-kernel-cve-2023-20585-rmp-check-flaw",
+      "article-237c9f08",
+      "237c9f08",
+      "ubuntu-kernel-cve-2023-20585-rmp-check-flaw-7e87de"
+    ]
+  },
+  {
+    "slug": "ubuntu-kernel-patch-addresses-nvidia-ipv4-vulnerab-01ff1b3e",
+    "title": "Ubuntu Kernel Patch Addresses NVIDIA IPv4 Vulnerability",
+    "summary": "A Linux kernel flaw (CVE-2023-20585) in NVIDIA drivers could let attackers compromise systems via the IPv4 networking subsystem. The flaw arises from improper packet header handling, potentially enabling privilege escalation and unauthorized code execution, though no active exploitation has been seen. Ubuntu released kernel updates that patch the affected subsystems; applying the latest update mitigates the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9045-1",
+    "publishedAt": "2026-11-11T10:40:10.000Z",
+    "cves": [
+      "CVE-2023-20585"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-kernel-patch-addresses-nvidia-ipv4-vulnerab",
+      "article-01ff1b3e",
+      "01ff1b3e",
+      "ubuntu-kernel-patch-addresses-nvidia-ipv4-vulnerab-7e87d7",
+      "ubuntu-kernel-patch-addresses-nvidia-ipv4-vulnerability"
+    ]
+  },
+  {
     "slug": "linux-kernel-nvidia-baseos-vulnerabilities-fixed-eaf9f20c",
     "title": "Linux Kernel NVIDIA BaseOS Vulnerabilities Fixed",
     "summary": "An attacker could exploit kernel flaws in NVIDIA BaseOS network drivers and IPv4 networking to compromise affected systems. The vulnerabilities, identified as CVE-2026-98239 and CVE-2026-98432, allow remote code execution through malformed network packets, posing an exploitation risk. Ubuntu has released a kernel patch that corrects the driver and IPv4 subsystems; apply the update immediately to mitigate the threat.",
@@ -1424,6 +1624,87 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-fairchem-rce-via-load-inference-model-332180d5",
+    "title": "Meta FAIRChem RCE via load_inference_model",
+    "summary": "Meta FAIRChem's utils load_inference_model module (CVE-2026-111760) permits remote code execution when deserializing untrusted data. The flaw needs user interaction, such as opening a malicious file, and has a CVSS score of 7.8, indicating high risk. Meta released a patch; administrators should update FAIRChem to the latest version to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-953/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairchem-rce-via-load-inference-model",
+      "article-332180d5",
+      "332180d5",
+      "meta-fairchem-rce-via-load-inference-model-6f3d1b"
+    ]
+  },
+  {
+    "slug": "meta-fairchem-rce-via-cli-yaml-parsing-ba85bb3d",
+    "title": "Meta FAIRChem RCE via _cli YAML Parsing",
+    "summary": "Meta FAIRChem's _cli YAML parsing module (CVE-2026-111760) allows remote code execution when deserializing untrusted data. Exploitation requires user interaction, such as opening a malicious file, and the flaw carries a CVSS score of 7.8. Meta has issued a patch; updating FAIRChem to the latest release will address the security vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-952/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairchem-rce-via-cli-yaml-parsing",
+      "article-ba85bb3d",
+      "ba85bb3d",
+      "meta-fairchem-rce-via-cli-yaml-parsing-6f3d1a"
+    ]
+  },
+  {
+    "slug": "meta-fairchem-rce-via-load-tasks-9513b812",
+    "title": "Meta FAIRChem RCE via load_tasks",
+    "summary": "Meta FAIRChem's load_tasks module (CVE-2026-111760) permits remote code execution via deserialization of untrusted data. The flaw needs user interaction, such as visiting a malicious page or opening a file, and has a CVSS score of 7.8. Meta released a patch; administrators should update FAIRChem to the latest version to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-951/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairchem-rce-via-load-tasks",
+      "article-9513b812",
+      "9513b812",
+      "meta-fairchem-rce-via-load-tasks-6f3d1a"
+    ]
+  },
+  {
+    "slug": "zdi-26-950-0day-meta-fairchem-migrate-checkpoint-d-79471196",
+    "title": "ZDI-26-950: (0Day) Meta FAIRChem migrate_checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-950/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-950-0day-meta-fairchem-migrate-checkpoint-d",
+      "article-79471196",
+      "79471196",
+      "zdi-26-950-0day-meta-fairchem-migrate-checkpoint-d-6f3d1a",
+      "zdi-26-950-0day-meta-fairchem-migrate-checkpoint-deserializa"
     ]
   },
   {
@@ -9306,270 +9587,6 @@ export const news: NewsBrief[] = [
       "cf1de79b",
       "amplifon-americas-breach-exposes-1-3-million-recor-611b1b",
       "amplifon-americas-breach-exposes-1-3-million-records"
-    ]
-  },
-  {
-    "slug": "web3auth-flaw-used-to-steal-keplr-crypto-8e9353a4",
-    "title": "Web3Auth Flaw Used to Steal Keplr Crypto",
-    "summary": "A flaw in Web3Auth’s authentication flow was exploited to steal funds from Keplr wallets using Google or Apple sign‑in. The vulnerability bypassed identity checks, allowing attackers to access wallet balances and empty other at‑risk wallets via the same route. Web3Auth has cleared affected wallets and issued a security update; users should monitor balances and consider switching authentication providers.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
-    "publishedAt": "2026-11-09T10:56:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "web3auth-flaw-used-to-steal-keplr-crypto",
-      "article-8e9353a4",
-      "8e9353a4",
-      "web3auth-flaw-used-to-steal-keplr-crypto-6e505e"
-    ]
-  },
-  {
-    "slug": "plex-media-servers-targeted-by-plex2shell-exploit-cae438a4",
-    "title": "Plex Media Servers Targeted by Plex2Shell Exploit Chain",
-    "summary": "Hackers leveraged the Plex2Shell exploit chain to compromise Plex Media Server installations, deploying cryptocurrency miners and proxy software. The chain exploits four CVEs—CVE-2026-96652, CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656—allowing remote code execution with PoC, resulting in unauthorized system takeover and resource hijacking. Administrators should patch Plex Media Server to the latest release, disable unused services, and monitor for anomalous mining activity.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-plex2shell-flaws/",
-    "publishedAt": "2026-11-09T10:33:03.000Z",
-    "cves": [
-      "CVE-2026-96652",
-      "CVE-2026-96654",
-      "CVE-2026-96655",
-      "CVE-2026-96656"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "plex-media-servers-targeted-by-plex2shell-exploit",
-      "article-cae438a4",
-      "cae438a4",
-      "plex-media-servers-targeted-by-plex2shell-exploit-1c3d96",
-      "plex-media-servers-targeted-by-plex2shell-exploit-chain"
-    ]
-  },
-  {
-    "slug": "powersystem-center-faces-two-critical-9-0-flaws-6dd04f33",
-    "title": "PowerSYSTEM Center Faces Two Critical 9.0 Flaws",
-    "summary": "CISA identified two critical PowerSYSTEM Center flaws that allow authenticated users to access administrator resources or execute unauthorized SQL commands. The vulnerabilities, rated CVSS 9.0, enable privilege escalation and data exfiltration in energy and manufacturing sectors worldwide, with no public exploit yet. CISA issued advisory ICSA-26-307-01 and recommends applying vendor patches as soon as available to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/cisa-warns-critical-flaws-in-powersystem-center/",
-    "publishedAt": "2026-11-09T10:32:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "powersystem-center-faces-two-critical-9-0-flaws",
-      "article-6dd04f33",
-      "6dd04f33",
-      "powersystem-center-faces-two-critical-9-0-flaws-1874c6"
-    ]
-  },
-  {
-    "slug": "modsecurity-exposes-high-severity-waf-bypass-flaw-b7eb8a24",
-    "title": "ModSecurity Exposes High-Severity WAF Bypass Flaw",
-    "summary": "ModSecurity, a web application firewall, contains a high-severity flaw (CVE-2026-83844) that permits malicious uploads and can trigger server crashes. The vulnerability enables remote code execution via crafted requests, posing a significant risk to Apache, IIS, and Nginx deployments without authentication. Maintainers released advisories on September 30; users should apply the latest ModSecurity update or implement mitigations immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/modsecurity-patches-two-high-severity-flaws/",
-    "publishedAt": "2026-11-09T10:31:28.000Z",
-    "cves": [
-      "CVE-2026-83844"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "modsecurity-exposes-high-severity-waf-bypass-flaw",
-      "article-b7eb8a24",
-      "b7eb8a24",
-      "modsecurity-exposes-high-severity-waf-bypass-flaw-59138a"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-util-linux-security-update-cc3bf8d2",
-    "title": "Red Hat Releases util‑linux Security Update",
-    "summary": "Red Hat issued a security update for the util‑linux package on RHEL 8, addressing multiple unspecified vulnerabilities. The advisory references several CVEs rated as Important, yet no active exploitation has been reported to date. Administrators should apply the RHSA‑2026:96212 update promptly to mitigate potential privilege‑escalation or denial‑of‑service risks in affected systems.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96212",
-    "publishedAt": "2026-11-09T10:17:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-util-linux-security-update",
-      "article-cc3bf8d2",
-      "cc3bf8d2",
-      "red-hat-releases-util-linux-security-update-37d7d9"
-    ]
-  },
-  {
-    "slug": "frontline-education-breach-hits-3-million-users-8fe1087f",
-    "title": "Frontline Education Breach Hits 3 Million Users",
-    "summary": "Frontline Education disclosed a data breach that exposed personal information of over 3 million school district staff and students in Indiana. The incident involved unauthorized access to the organization’s systems, potentially compromising credentials, contact details, and academic records. Frontline Education notified regulators and affected parties, and is conducting a forensic investigation while urging users to monitor for suspicious activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/",
-    "publishedAt": "2026-11-09T10:09:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "frontline-education-breach-hits-3-million-users",
-      "article-8fe1087f",
-      "8fe1087f",
-      "frontline-education-breach-hits-3-million-users-654c8e"
-    ]
-  },
-  {
-    "slug": "ai-tool-artex-rapidly-steals-azure-key-vault-secre-1f00d2ac",
-    "title": "AI Tool ARTEX Rapidly Steals Azure Key Vault Secrets",
-    "summary": "Threat actors used the ARTEX AI tool to locate and exfiltrate Azure Key Vault secrets from public GitHub repositories within five minutes of scanning. The automated code search identified misconfigured secrets, enabling credential theft and potential lateral movement into Microsoft cloud environments. Microsoft recommends reviewing GitHub code for exposed secrets, rotating compromised keys, and enforcing Azure Key Vault access policies.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/artex-ai-azure-key-vault-secrets/",
-    "publishedAt": "2026-11-09T10:04:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-tool-artex-rapidly-steals-azure-key-vault-secre",
-      "article-1f00d2ac",
-      "1f00d2ac",
-      "ai-tool-artex-rapidly-steals-azure-key-vault-secre-71d469",
-      "ai-tool-artex-rapidly-steals-azure-key-vault-secrets"
-    ]
-  },
-  {
-    "slug": "bank-loses-133m-via-exploited-service-provider-d74f0b32",
-    "title": "Bank Loses $133M via Exploited Service Provider",
-    "summary": "Attackers siphoned $133 million from Crédit Mutuel Arkéa by abusing the bank’s account to wire funds to other banks, later converting them into cryptocurrency. The breach exploited CVE‑2023‑1380 in a third‑party service provider, enabling unauthorized fund transfers without triggering internal controls. Security teams should apply the CVE‑2023‑1380 patch, audit transfer logs, and strengthen multi‑factor authentication to prevent similar exploits.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/credit-mutuel-arkea-cyberattack-133-million/",
-    "publishedAt": "2026-11-09T10:03:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "bank-loses-133m-via-exploited-service-provider",
-      "article-d74f0b32",
-      "d74f0b32",
-      "bank-loses-133m-via-exploited-service-provider-3689c5"
-    ]
-  },
-  {
-    "slug": "lnbits-operators-urged-to-shut-down-servers-amid-a-ad646b3b",
-    "title": "LNbits Operators Urged to Shut Down Servers Amid Attacks",
-    "summary": "LNbits operators were targeted by an exploit that created new accounts and withdrew 2,285,545 satoshis from their Bitcoin Lightning wallet servers. The vulnerability allowed unauthenticated account creation and fund transfer, exposing servers to unauthorized withdrawals without user interaction. LNbits has issued a shutdown advisory and is releasing security fixes; operators should stop services immediately and apply forthcoming patches.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
-    "publishedAt": "2026-11-09T10:01:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "lnbits-operators-urged-to-shut-down-servers-amid-a",
-      "article-ad646b3b",
-      "ad646b3b",
-      "lnbits-operators-urged-to-shut-down-servers-amid-a-5d7d55",
-      "lnbits-operators-urged-to-shut-down-servers-amid-attacks"
-    ]
-  },
-  {
-    "slug": "malwarebytes-claude-connector-showcases-threat-che-e8ab21ca",
-    "title": "Malwarebytes Claude Connector Showcases Threat Checks",
-    "summary": "Malwarebytes launched a Claude connector that lets users query suspicious links, phone numbers, and email addresses directly in chat. The tool supports free and paid Claude plans, requires no separate Malwarebytes account, and offers six utilities including domain registration lookup and screenshot scanning. Security teams can quickly validate potential threats without leaving the conversation, streamlining threat assessment workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/product-showcase-malwarebytes-claude-scam-detection/",
-    "publishedAt": "2026-11-09T09:31:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malwarebytes-claude-connector-showcases-threat-che",
-      "article-e8ab21ca",
-      "e8ab21ca",
-      "malwarebytes-claude-connector-showcases-threat-che-1ceda1",
-      "malwarebytes-claude-connector-showcases-threat-checks"
-    ]
-  },
-  {
-    "slug": "taiwan-hacker-steals-taipei-dispatch-records-via-a-6b3623d5",
-    "title": "Taiwan Hacker Steals Taipei Dispatch Records via AI Agents",
-    "summary": "A Taiwan‑based attacker used BOSSAI AI agents to exfiltrate emergency dispatch records from seven Taipei districts. The agents also discovered a Taipei fire department platform exposing 2018 patient data, including ECG readings and ambulance video, without authentication. Researchers confirm the attacker is a single individual, underscoring the need for tighter access controls on public platforms.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
-    "publishedAt": "2026-11-09T09:01:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "taiwan-hacker-steals-taipei-dispatch-records-via-a",
-      "article-6b3623d5",
-      "6b3623d5",
-      "taiwan-hacker-steals-taipei-dispatch-records-via-a-6f95e3",
-      "taiwan-hacker-steals-taipei-dispatch-records-via-ai-agents"
-    ]
-  },
-  {
-    "slug": "armorsteal-malware-spread-via-fake-downloads-fc8498d4",
-    "title": "ArmorSteal Malware Spread via Fake Downloads",
-    "summary": "Hackers distribute a Python‑based kit, ArmorSteal, via counterfeit download portals that lure users into installing malicious executables. The kit harvests credentials, crypto wallets, and Discord accounts while covertly mining Monero, exploiting social‑engineering trust and lacking a public CVE. Security teams should block malicious download sites, deploy endpoint detection signatures for ArmorSteal, and enforce user awareness training to mitigate credential theft.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/armorsteal-malware/",
-    "publishedAt": "2026-11-09T08:55:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "armorsteal-malware-spread-via-fake-downloads",
-      "article-fc8498d4",
-      "fc8498d4",
-      "armorsteal-malware-spread-via-fake-downloads-62cbae"
-    ]
-  },
-  {
-    "slug": "deepmind-ai-lowers-cost-of-1024-bit-rsa-attacks-1aaa7b25",
-    "title": "DeepMind AI Lowers Cost of 1024‑Bit RSA Attacks",
-    "summary": "DeepMind’s AI agents have reduced the cost of forging RSA‑1024 signatures and factoring 1024‑bit keys, making attacks more economically feasible. The breakthrough leverages machine‑learning models trained on cryptographic data, lowering the computational effort from astronomical to practical levels. Security practitioners should transition to RSA keys of at least 2048 bits, adopt post‑quantum algorithms, and monitor for anomalous signature requests.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
-    "publishedAt": "2026-11-09T08:35:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deepmind-ai-lowers-cost-of-1024-bit-rsa-attacks",
-      "article-1aaa7b25",
-      "1aaa7b25",
-      "deepmind-ai-lowers-cost-of-1024-bit-rsa-attacks-2a75e5"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-gd-security-update-ea7d602d",
-    "title": "Red Hat Issues gd Security Update",
-    "summary": "Red Hat released a security update for the gd package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The update addresses multiple vulnerabilities in gd, each with a CVSS base score listed in the advisory references, but no CVE identifiers are disclosed. Administrators should apply the gd update immediately to mitigate the identified risks, following Red Hat’s installation guidance.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96206",
-    "publishedAt": "2026-11-09T08:02:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-gd-security-update",
-      "article-ea7d602d",
-      "ea7d602d",
-      "red-hat-issues-gd-security-update-37d7d9"
     ]
   }
 ];
