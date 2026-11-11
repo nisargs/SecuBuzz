@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 19:46:28 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 19:53:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RHSA-2026:99089: Moderate: gcc security update</title>
@@ -23,6 +23,24 @@
       <description><![CDATA[An update for qt6-qtbase is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Wed, 11 Nov 2026 19:01:06 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99094">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99090: Important: gstreamer1 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99090-important-gstreamer1-security-upda-02b99d36</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99090-important-gstreamer1-security-upda-02b99d36</guid>
+      <description><![CDATA[An update for gstreamer1 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 19:00:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99090">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99091: Important: guava security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99091-important-guava-security-update-54632ed4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99091-important-guava-security-update-54632ed4</guid>
+      <description><![CDATA[An update for guava is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:55:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99091">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -437,24 +455,6 @@
       <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Wed, 11 Nov 2026 12:34:00 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98529">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>N‑able Issues Hotfixes for Zero‑Day RMM Flaws</title>
-      <link>https://secubuzz.com/news/n-able-issues-hotfixes-for-zero-day-rmm-flaws-2b6e2e65</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-issues-hotfixes-for-zero-day-rmm-flaws-2b6e2e65</guid>
-      <description><![CDATA[N‑able issued hotfixes for zero‑day flaws in its N‑central RMM platform that were publicly disclosed and caused hosted environments to go offline. The flaws arise from unvalidated input in the remote API, letting attackers execute arbitrary code and disrupt services; no public exploit exists. Administrators should apply the hotfixes immediately, monitor API traffic for anomalies, and disable unused remote endpoints.]]></description>
-      <pubDate>Wed, 11 Nov 2026 12:32:27 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fortinet Releases Patch for Nearly 100 Vulnerabilities</title>
-      <link>https://secubuzz.com/news/fortinet-releases-patch-for-nearly-100-vulnerabili-2d6ccff8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortinet-releases-patch-for-nearly-100-vulnerabili-2d6ccff8</guid>
-      <description><![CDATA[Fortinet issued a comprehensive patch update covering almost 100 vulnerabilities discovered during AI‑driven security testing across multiple Fortinet devices. The update addresses a mix of authentication bypasses, privilege escalation flaws, and buffer overflows across FortiGate and FortiManager products. Administrators should apply the latest firmware and verify configuration compliance to mitigate potential exploitation.]]></description>
-      <pubDate>Wed, 11 Nov 2026 12:10:14 GMT</pubDate>
-      <source url="https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
   </channel>

@@ -48,6 +48,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99090-important-gstreamer1-security-upda-02b99d36",
+    "title": "RHSA-2026:99090: Important: gstreamer1 security update",
+    "summary": "An update for gstreamer1 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99090",
+    "publishedAt": "2026-11-11T19:00:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99090-important-gstreamer1-security-upda",
+      "article-02b99d36",
+      "02b99d36",
+      "rhsa-2026-99090-important-gstreamer1-security-upda-37d682",
+      "rhsa-2026-99090-important-gstreamer1-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99091-important-guava-security-update-54632ed4",
+    "title": "RHSA-2026:99091: Important: guava security update",
+    "summary": "An update for guava is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99091",
+    "publishedAt": "2026-11-11T18:55:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99091-important-guava-security-update",
+      "article-54632ed4",
+      "54632ed4",
+      "rhsa-2026-99091-important-guava-security-update-37d682"
+    ]
+  },
+  {
     "slug": "vanderbilt-restores-systems-after-alleged-data-the-71df4385",
     "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
     "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
@@ -1809,6 +1846,90 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file-8715cfa3",
+    "title": "ZDI-26-941: (0Day) Meta fairseq FConvModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-941/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file",
+      "article-8715cfa3",
+      "8715cfa3",
+      "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file-6f3d17",
+      "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file-parsing-co"
+    ]
+  },
+  {
+    "slug": "zdi-26-940-0day-meta-fairseq-dump-km-label-deseria-e4eeb807",
+    "title": "ZDI-26-940: (0Day) Meta fairseq dump_km_label Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-940/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-940-0day-meta-fairseq-dump-km-label-deseria",
+      "article-e4eeb807",
+      "e4eeb807",
+      "zdi-26-940-0day-meta-fairseq-dump-km-label-deseria-6f3d16",
+      "zdi-26-940-0day-meta-fairseq-dump-km-label-deserialization-o"
+    ]
+  },
+  {
+    "slug": "zdi-26-939-0day-meta-fairseq2-filecheckpointmanage-d39c53f6",
+    "title": "ZDI-26-939: (0Day) Meta fairseq2 FileCheckpointManager _load_state_dict Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-939/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-939-0day-meta-fairseq2-filecheckpointmanage",
+      "article-d39c53f6",
+      "d39c53f6",
+      "zdi-26-939-0day-meta-fairseq2-filecheckpointmanage-6f3d14",
+      "zdi-26-939-0day-meta-fairseq2-filecheckpointmanager-load-sta"
+    ]
+  },
+  {
+    "slug": "zero-day-rce-vulnerability-disclosed-in-meta-fairs-be6902fe",
+    "title": "Zero-Day RCE Vulnerability Disclosed in Meta Fairseq",
+    "summary": "A remote code execution vulnerability was disclosed in Meta fairseq, designated as CVE-2026-111760. The zero-day flaw stems from code injection within the 'parse_manifest' function and carries a CVSS severity rating of 7.8. Successful exploitation requires user interaction through malicious web pages or files, requiring security teams to restrict untrusted file execution.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-938/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zero-day-rce-vulnerability-disclosed-in-meta-fairs",
+      "article-be6902fe",
+      "be6902fe",
+      "zero-day-rce-vulnerability-disclosed-in-meta-fairs-6f3d14",
+      "zero-day-rce-vulnerability-disclosed-in-meta-fairseq"
     ]
   },
   {
@@ -9464,119 +9585,6 @@ export const news: NewsBrief[] = [
       "article-e4dee8d9",
       "e4dee8d9",
       "red-hat-issues-node-js-24-security-update-37d7d9"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-nodejs-22-update-for-rhel-9-vulnera-f27e3170",
-    "title": "Red Hat Issues Nodejs:22 Update for RHEL 9 Vulnerabilities",
-    "summary": "Red Hat released a security update for nodejs:22 on RHEL 9, fixing vulnerabilities that could enable remote code execution. The patch addresses multiple CVSS‑scored flaws, with base scores listed in the CVE references, and no active exploitation has been reported. Apply the nodejs:22 update promptly or use the recommended workaround to mitigate remote code execution risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96234",
-    "publishedAt": "2026-11-09T12:43:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-nodejs-22-update-for-rhel-9-vulnera",
-      "article-f27e3170",
-      "f27e3170",
-      "red-hat-issues-nodejs-22-update-for-rhel-9-vulnera-37d7d9",
-      "red-hat-issues-nodejs-22-update-for-rhel-9-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "iris-plaza-breach-exposes-7-7-million-customer-rec-e8ad3903",
-    "title": "Iris Plaza Breach Exposes 7.7 Million Customer Records",
-    "summary": "Iris Plaza suffered a breach exposing personal data of about 7.7 million customers after attackers compromised an external cloud service used by the platform. The incident likely involved unauthorized access to stored customer records, including names, addresses, and payment details. The company must investigate, notify affected users, and strengthen cloud access controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/",
-    "publishedAt": "2026-11-09T12:41:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "iris-plaza-breach-exposes-7-7-million-customer-rec",
-      "article-e8ad3903",
-      "e8ad3903",
-      "iris-plaza-breach-exposes-7-7-million-customer-rec-3ecba5",
-      "iris-plaza-breach-exposes-7-7-million-customer-records"
-    ]
-  },
-  {
-    "slug": "dnsmasq-update-addresses-security-vulnerabilities-9c2ca396",
-    "title": "dnsmasq Update Addresses Security Vulnerabilities",
-    "summary": "Red Hat released a security update for dnsmasq on RHEL 8.8, addressing multiple vulnerabilities flagged as Important. The vulnerabilities, detailed in linked CVE entries, could allow local privilege escalation or denial of service, but no active exploitation has been reported. Administrators should apply the RHSA‑2026:96246 update immediately or install the latest dnsmasq package to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96246",
-    "publishedAt": "2026-11-09T12:39:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dnsmasq-update-addresses-security-vulnerabilities",
-      "article-9c2ca396",
-      "9c2ca396",
-      "dnsmasq-update-addresses-security-vulnerabilities-37d7d9"
-    ]
-  },
-  {
-    "slug": "npm-packages-hijacked-to-deploy-polinrider-malware-e235adf4",
-    "title": "npm Packages Hijacked to Deploy PolinRider Malware",
-    "summary": "Attackers hijacked ten npm packages, inserting malicious code into twelve releases to distribute PolinRider malware. The embedded script leverages the Ethereum blockchain to locate a command‑and‑control server, enabling remote payload downloads and achieving a CVSS‑8.7 severity score. Sonatype recommends removing the compromised packages, updating dependencies, and scanning for hidden code; security teams should monitor npm registries for similar tampering.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-hijack-10-npm-packages-to-spread-polinrider-malware-using-ethereum-blockchain/",
-    "publishedAt": "2026-11-09T12:39:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "npm-packages-hijacked-to-deploy-polinrider-malware",
-      "article-e235adf4",
-      "e235adf4",
-      "npm-packages-hijacked-to-deploy-polinrider-malware-1d646e"
-    ]
-  },
-  {
-    "slug": "google-gemini-allows-download-of-filtered-ai-image-b4da79bc",
-    "title": "Google Gemini Allows Download of Filtered AI Images",
-    "summary": "Google Gemini’s safety filter bypass lets users download AI‑generated images that the platform’s filters rejected, bypassing controls without a jailbreak. The flaw allows a rejected image to be served while the chat shows an approved one, CVE-2026-19868. Google patched the safety filter logic; users should apply the latest Gemini update or disable the download feature until the fix is deployed.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/google-gemini-safety-bypass-ai-generated-images/",
-    "publishedAt": "2026-11-09T12:26:16.000Z",
-    "cves": [
-      "CVE-2026-19868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "google-gemini-allows-download-of-filtered-ai-image",
-      "article-b4da79bc",
-      "b4da79bc",
-      "google-gemini-allows-download-of-filtered-ai-image-6404e2",
-      "google-gemini-allows-download-of-filtered-ai-images"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-dnsmasq-security-update-5f41d1f8",
-    "title": "Red Hat Releases dnsmasq Security Update",
-    "summary": "Red Hat issued an important update for dnsmasq on RHEL 8.6, addressing multiple security vulnerabilities across all affected systems. The update patches memory‑corruption and privilege‑escalation flaws with CVSS scores 7.5–8.3 and adds a new config option. Apply RHSA‑2026:96241 immediately in production, verify the new version, and review audit logs for anomalies.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96241",
-    "publishedAt": "2026-11-09T12:23:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-dnsmasq-security-update",
-      "article-5f41d1f8",
-      "5f41d1f8",
-      "red-hat-releases-dnsmasq-security-update-37d7d9"
     ]
   }
 ];
