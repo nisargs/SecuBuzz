@@ -11,6 +11,64 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-98130-important-httpd-2-4-security-updat-eb88d9df",
+    "title": "RHSA-2026:98130: Important: httpd:2.4 security update",
+    "summary": "An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98130",
+    "publishedAt": "2026-11-11T03:33:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98130-important-httpd-2-4-security-updat",
+      "article-eb88d9df",
+      "eb88d9df",
+      "rhsa-2026-98130-important-httpd-2-4-security-updat-37d6f4",
+      "rhsa-2026-98130-important-httpd-2-4-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98099-important-kernel-security-update-d3e73b1f",
+    "title": "RHSA-2026:98099: Important: kernel security update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98099",
+    "publishedAt": "2026-11-11T03:22:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98099-important-kernel-security-update",
+      "article-d3e73b1f",
+      "d3e73b1f",
+      "rhsa-2026-98099-important-kernel-security-update-37d6f7"
+    ]
+  },
+  {
+    "slug": "microsoft-confirms-hackers-are-exploiting-outlook-0e1a2292",
+    "title": "Microsoft Confirms Hackers Are Exploiting Outlook 0-Day to Steal Windows Authentication Hashes",
+    "summary": "Microsoft has confirmed that hackers are exploiting an Outlook zero-day that can expose Windows authentication information when a user opens a malicious file. Tracked as CVE-2026-124194, the spoofing vulnerability was patched on November 10, 2026. Microsoft marks it “Exploitation Detected” and says it was not publicly disclosed before the update.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/outlook-0-day-vulnerability/",
+    "publishedAt": "2026-11-11T02:35:43.000Z",
+    "cves": [
+      "CVE-2026-124194"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-confirms-hackers-are-exploiting-outlook",
+      "article-0e1a2292",
+      "0e1a2292",
+      "microsoft-confirms-hackers-are-exploiting-outlook-198773",
+      "microsoft-confirms-hackers-are-exploiting-outlook-0-day-to-s"
+    ]
+  },
+  {
     "slug": "rhsa-2026-98100-important-kernel-rt-security-updat-ba6c131b",
     "title": "RHSA-2026:98100: Important: kernel-rt security update",
     "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -605,6 +663,44 @@ export const news: NewsBrief[] = [
       "article-70f3c8f2",
       "70f3c8f2",
       "red-hat-releases-low-impact-dhcp-security-update-37d75c"
+    ]
+  },
+  {
+    "slug": "red-hat-patches-important-security-flaws-in-rhc-pa-0f4c59af",
+    "title": "Red Hat Patches Important Security Flaws in RHC Package",
+    "summary": "Red Hat released a security update for the rhc package on Red Hat Enterprise Linux 9. Red Hat Product Security rated the addressed vulnerabilities as having an Important security impact based on CVSS scoring criteria. System administrators running affected Red Hat Enterprise Linux installations should apply the newly available rhc package update to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97699",
+    "publishedAt": "2026-11-10T20:14:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-patches-important-security-flaws-in-rhc-pa",
+      "article-0f4c59af",
+      "0f4c59af",
+      "red-hat-patches-important-security-flaws-in-rhc-pa-37d755",
+      "red-hat-patches-important-security-flaws-in-rhc-package"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97585-moderate-bind9-18-security-bug-fix-be4f38bc",
+    "title": "RHSA-2026:97585: Moderate: bind9.18 security, bug fix, and enhancement update",
+    "summary": "An update for bind9.18 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97585",
+    "publishedAt": "2026-11-10T20:11:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97585-moderate-bind9-18-security-bug-fix",
+      "article-be4f38bc",
+      "be4f38bc",
+      "rhsa-2026-97585-moderate-bind9-18-security-bug-fix-37d758",
+      "rhsa-2026-97585-moderate-bind9-18-security-bug-fix-and-enhan"
     ]
   },
   {
@@ -1769,6 +1865,27 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "windows-shell-cve-2026-102868-enables-local-info-d-a64b47b5",
+    "title": "Windows Shell CVE-2026-102868 Enables Local Info Disclosure",
+    "summary": "CVE-2026-102868 exposes sensitive system data in Windows Shell to an authorized attacker via local control sphere. The flaw permits local information disclosure without authentication, enabling attackers to read privileged data; no remote code execution or active exploitation reported. Microsoft has issued a patch in the latest cumulative update; administrators should apply the update promptly to mitigate the disclosure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102868",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-102868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-shell-cve-2026-102868-enables-local-info-d",
+      "article-a64b47b5",
+      "a64b47b5",
+      "windows-shell-cve-2026-102868-enables-local-info-d-1ff9da",
+      "windows-shell-cve-2026-102868-enables-local-info-disclosure"
     ]
   },
   {
@@ -9539,127 +9656,6 @@ export const news: NewsBrief[] = [
       "30f1c528",
       "claude-dispatch-flaw-lets-malicious-browser-extens-4ef607",
       "claude-dispatch-flaw-lets-malicious-browser-extensions-run-c"
-    ]
-  },
-  {
-    "slug": "chatgpt-lockdown-mode-bypass-exposes-conversation-92195acf",
-    "title": "ChatGPT Lockdown Mode Bypass Exposes Conversation History",
-    "summary": "OpenAI’s ChatGPT Classic desktop app flaw, CVE-2026-58868, lets attackers bypass Lockdown Mode and steal full chat histories undetected. The vulnerability uses a hidden pop‑up to copy conversation data, display counterfeit windows, and deliver malware, enabling credential theft. OpenAI has released a patch; users should update immediately and disable Lockdown Mode until the fix is applied.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/chatgpt-lockdown-mode-bypass/",
-    "publishedAt": "2026-11-06T08:16:23.000Z",
-    "cves": [
-      "CVE-2026-58868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chatgpt-lockdown-mode-bypass-exposes-conversation",
-      "article-92195acf",
-      "92195acf",
-      "chatgpt-lockdown-mode-bypass-exposes-conversation-72fe53",
-      "chatgpt-lockdown-mode-bypass-exposes-conversation-history"
-    ]
-  },
-  {
-    "slug": "chainalysis-breach-exposes-credentials-and-live-to-40439140",
-    "title": "Chainalysis Breach Exposes Credentials and Live Tokens",
-    "summary": "Blockchain intelligence firm Chainalysis reported a breach that exposed credentials and live tokens for all customers. The attack compromised internal tools and systems, potentially allowing attackers to access customer accounts and transfer funds. Chainalysis urged customers to reset credentials, monitor accounts, and apply security patches immediately to mitigate further exploitation.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
-    "publishedAt": "2026-11-06T08:04:49.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/"
-      }
-    ],
-    "aliases": [
-      "chainalysis-breach-exposes-credentials-and-live-to",
-      "article-40439140",
-      "40439140",
-      "chainalysis-breach-exposes-credentials-and-live-to-2a4e36",
-      "chainalysis-breach-exposes-credentials-and-live-tokens"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-november-patch-tuesday-update-2458068c",
-    "title": "Microsoft Releases November Patch Tuesday Update",
-    "summary": "Microsoft released its November 2026 Patch Tuesday update, addressing 1,407 CVEs, including zero‑day CVE-2026-96951 that affected legacy software. The rollout, delayed by two and a half hours, focused on high‑severity flaws that could enable local privilege escalation or remote code execution on outdated Windows components. Teams should apply the update immediately, verify installation, and monitor legacy systems for residual vulnerabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/november-2026-patch-tuesday-forecast/",
-    "publishedAt": "2026-11-06T07:00:48.000Z",
-    "cves": [
-      "CVE-2026-96951"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-november-patch-tuesday-update",
-      "article-2458068c",
-      "2458068c",
-      "microsoft-releases-november-patch-tuesday-update-568b83"
-    ]
-  },
-  {
-    "slug": "top-10-deception-tech-solutions-2026-2574b5e0",
-    "title": "Top 10 Deception Tech Solutions 2026",
-    "summary": "The article ranks the top ten deception technology solutions for 2026, highlighting their ability to lure attackers into interacting with decoys. It explains that canary tokens and decoy credentials generate near‑zero false positives, making deception the most cost‑effective high‑fidelity detection signal. The piece also surveys market segmentation for 2026, offering a comparative analysis of vendors and pricing models.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-deception-technology/",
-    "publishedAt": "2026-11-06T06:41:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-deception-tech-solutions-2026",
-      "article-2574b5e0",
-      "2574b5e0",
-      "top-10-deception-tech-solutions-2026-36bbbe"
-    ]
-  },
-  {
-    "slug": "certification-snapshots-mislead-buyers-on-vulnerab-ba179da8",
-    "title": "Certification Snapshots Mislead Buyers on Vulnerability Coverage",
-    "summary": "Research shows Common Criteria and FIPS-140 certifications do not guarantee ongoing security, with 60% of vulnerabilities in certified products disclosed post-certification. The certifications represent a point-in-time assessment, leaving gaps as new flaws emerge after evaluation. Buyers should demand continuous vulnerability monitoring and use open-source tools like sec-certs and SCRUTINY for ongoing validation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/mariia-bakhtina-masaryk-university-security-certification/",
-    "publishedAt": "2026-11-06T06:30:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "certification-snapshots-mislead-buyers-on-vulnerab",
-      "article-ba179da8",
-      "ba179da8",
-      "certification-snapshots-mislead-buyers-on-vulnerab-269aa2",
-      "certification-snapshots-mislead-buyers-on-vulnerability-cove"
-    ]
-  },
-  {
-    "slug": "survey-reveals-87-demand-stronger-ai-control-mecha-0dee2eb5",
-    "title": "Survey Reveals 87% Demand Stronger AI Control Mechanisms",
-    "summary": "A Vanson Bourne survey of 3,600 decision-makers finds over half of enterprise AI systems operate autonomously or complete processes without human approval. 87% of respondents report existing approval and monitoring frameworks are insufficient for current AI deployments across multiple categories. Organizations must implement robust governance pipelines and real-time oversight to manage AI autonomy and mitigate unauthorized actions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/autonomous-ai-oversight-governance/",
-    "publishedAt": "2026-11-06T06:00:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "survey-reveals-87-demand-stronger-ai-control-mecha",
-      "article-0dee2eb5",
-      "0dee2eb5",
-      "survey-reveals-87-demand-stronger-ai-control-mecha-7f7de5",
-      "survey-reveals-87-demand-stronger-ai-control-mechanisms"
     ]
   }
 ];

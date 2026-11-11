@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 02:49:05 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 03:47:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:98130: Important: httpd:2.4 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98130-important-httpd-2-4-security-updat-eb88d9df</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98130-important-httpd-2-4-security-updat-eb88d9df</guid>
+      <description><![CDATA[An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Wed, 11 Nov 2026 03:33:41 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98130">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:98099: Important: kernel security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98099-important-kernel-security-update-d3e73b1f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98099-important-kernel-security-update-d3e73b1f</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 03:22:21 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98099">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Confirms Hackers Are Exploiting Outlook 0-Day to Steal Windows Authentication Hashes</title>
+      <link>https://secubuzz.com/news/microsoft-confirms-hackers-are-exploiting-outlook-0e1a2292</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-confirms-hackers-are-exploiting-outlook-0e1a2292</guid>
+      <description><![CDATA[Microsoft has confirmed that hackers are exploiting an Outlook zero-day that can expose Windows authentication information when a user opens a malicious file. Tracked as CVE-2026-124194, the spoofing vulnerability was patched on November 10, 2026. Microsoft marks it “Exploitation Detected” and says it was not publicly disclosed before the update.]]></description>
+      <pubDate>Wed, 11 Nov 2026 02:35:43 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/outlook-0-day-vulnerability/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>RHSA-2026:98100: Important: kernel-rt security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-98100-important-kernel-rt-security-updat-ba6c131b</link>
@@ -296,6 +323,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Patches Important Security Flaws in RHC Package</title>
+      <link>https://secubuzz.com/news/red-hat-patches-important-security-flaws-in-rhc-pa-0f4c59af</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-important-security-flaws-in-rhc-pa-0f4c59af</guid>
+      <description><![CDATA[Red Hat released a security update for the rhc package on Red Hat Enterprise Linux 9. Red Hat Product Security rated the addressed vulnerabilities as having an Important security impact based on CVSS scoring criteria. System administrators running affected Red Hat Enterprise Linux installations should apply the newly available rhc package update to mitigate risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:14:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97699">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:97585: Moderate: bind9.18 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97585-moderate-bind9-18-security-bug-fix-be4f38bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97585-moderate-bind9-18-security-bug-fix-be4f38bc</guid>
+      <description><![CDATA[An update for bind9.18 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:11:07 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97585">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CVE-2026-124848: Kiro CLI Default Permissions Expose Sessions</title>
       <link>https://secubuzz.com/news/cve-2026-124848-kiro-cli-default-permissions-expos-dd708a3c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-124848-kiro-cli-default-permissions-expos-dd708a3c</guid>
@@ -410,51 +455,6 @@
       <description><![CDATA[An update for grafana-pcp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 10 Nov 2026 19:10:41 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97213">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)</title>
-      <link>https://secubuzz.com/news/microsoft-patch-tuesday-november-2027-tue-nov-10th-1bbc566e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-november-2027-tue-nov-10th-1bbc566e</guid>
-      <description><![CDATA[Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge. The vulnerability is tracked as CVE-2026-113971.]]></description>
-      <pubDate>Tue, 10 Nov 2026 19:09:32 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33508">SANS Internet Storm Center</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Patch Tuesday Fixes 1,235 Flaws, Outlook Zero-Day</title>
-      <link>https://secubuzz.com/news/microsoft-patch-tuesday-fixes-1-235-flaws-outlook-1bd8ea52</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-fixes-1-235-flaws-outlook-1bd8ea52</guid>
-      <description><![CDATA[Microsoft released its November 2026 Patch Tuesday, addressing 1,235 vulnerabilities, including the actively exploited Outlook zero‑day CVE‑2026‑113971. The CVE permits unauthenticated remote code execution via malformed email attachments, scoring CVSS 10.0 and enabling arbitrary code execution. Administrators should apply the November 2026 Rollup immediately and verify that Outlook clients are updated to mitigate the vulnerability.]]></description>
-      <pubDate>Tue, 10 Nov 2026 19:07:36 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/">BleepingComputer</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>November 2026 Security Update Review</title>
-      <link>https://secubuzz.com/news/november-2026-security-update-review-ef678e34</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/november-2026-security-update-review-ef678e34</guid>
-      <description><![CDATA[The November 2026 Security Update Review covers patch releases from Microsoft and Adobe, detailing record‑breaking vulnerability counts across products. Microsoft fixed 1,235 flaws, including an actively exploited Outlook zero‑day, while Adobe issued nine bulletins for 110 unique CVEs in its creative suite. Teams should apply the November 2026 Rollup, review Adobe bulletin IDs, and monitor for unpatched vulnerabilities.]]></description>
-      <pubDate>Tue, 10 Nov 2026 19:02:41 GMT</pubDate>
-      <source url="https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review">Zero Day Initiative</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Patch Tuesday Fixes 1,093 Vulnerabilities, Outlook Zero-Day</title>
-      <link>https://secubuzz.com/news/microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-1982f712</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-1982f712</guid>
-      <description><![CDATA[Microsoft released its November 2026 Patch Tuesday updates, fixing 1,093 vulnerabilities across Windows, Office, SQL Server, SharePoint, Exchange Server, Azure services, and developer tools. The update includes CVE-2026-113971, an actively exploited Outlook zero‑day that leaks users’ NTLMv2 authentication hashes to attackers. Security teams must apply the patch immediately to eliminate the credential theft vector and protect enterprise authentication infrastructure.]]></description>
-      <pubDate>Tue, 10 Nov 2026 19:01:53 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/microsoft-november-2026-patch-tuesday/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97560: Important: runc security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97560-important-runc-security-update-203d049a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97560-important-runc-security-update-203d049a</guid>
-      <description><![CDATA[An update for runc is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 19:00:50 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97560">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>
