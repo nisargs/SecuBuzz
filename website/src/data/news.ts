@@ -11,6 +11,158 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "openssh-update-addresses-moderate-security-issues-9c2d9183",
+    "title": "OpenSSH Update Addresses Moderate Security Issues",
+    "summary": "Red Hat released an OpenSSH update for RHEL 10 to address moderate‑severity vulnerabilities affecting the SSH daemon. The advisory cites multiple CVE references with CVSS base scores, but no active exploitation has been observed. Users should install the latest OpenSSH package to ensure protection against the identified weaknesses in all deployments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98073",
+    "publishedAt": "2026-11-11T08:38:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openssh-update-addresses-moderate-security-issues",
+      "article-9c2d9183",
+      "9c2d9183",
+      "openssh-update-addresses-moderate-security-issues-37d6f7"
+    ]
+  },
+  {
+    "slug": "sos-update-fixes-important-security-bugs-00038762",
+    "title": "SOS Update Fixes Important Security Bugs",
+    "summary": "Red Hat issued a security update for the sos utility on RHEL 10, addressing important bugs that could affect system diagnostics. The advisory references multiple CVE entries with CVSS base scores, indicating a high impact on system stability. Administrators should apply the sos patch promptly to prevent potential denial of service or data corruption during troubleshooting.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98076",
+    "publishedAt": "2026-11-11T08:36:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sos-update-fixes-important-security-bugs",
+      "article-00038762",
+      "00038762",
+      "sos-update-fixes-important-security-bugs-37d6f7"
+    ]
+  },
+  {
+    "slug": "kernel-rmp-check-flaw-enables-hypervisor-out-of-bo-00953341",
+    "title": "Kernel RMP Check Flaw Enables Hypervisor Out-of-Bounds",
+    "summary": "A kernel flaw in IOMMU RMP checks allows a local hypervisor attacker to trigger an out‑of‑bounds condition and corrupt SEV‑SNP guest memory. The vulnerability, identified as CVE‑2023‑20585, could enable privilege escalation within virtualized environments, potentially compromising guest isolation. Red Hat released a kernel patch that restores RMP validation and addresses affected subsystems, and users should apply the update immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9040-1",
+    "publishedAt": "2026-11-11T08:27:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kernel-rmp-check-flaw-enables-hypervisor-out-of-bo",
+      "article-00953341",
+      "00953341",
+      "kernel-rmp-check-flaw-enables-hypervisor-out-of-bo-7e87ea",
+      "kernel-rmp-check-flaw-enables-hypervisor-out-of-bounds"
+    ]
+  },
+  {
+    "slug": "microsoft-releases-patch-for-outlook-bug-exposing-46d41d1b",
+    "title": "Microsoft Releases Patch for Outlook Bug Exposing NTLMv2 Hashes",
+    "summary": "Microsoft released a cumulative update fixing 1,259 flaws, including CVE-2026-124194, an Outlook bug that attackers exploited to exfiltrate NTLMv2 hashes. The flaw permits unauthenticated memory corruption that leaks credential material, enabling credential dumping and lateral movement. Apply the latest cumulative update immediately; no workaround exists, and teams should monitor authentication logs for anomalous NTLM traffic.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+    "publishedAt": "2026-11-11T08:17:53.000Z",
+    "cves": [
+      "CVE-2026-124194"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-releases-patch-for-outlook-bug-exposing",
+      "article-46d41d1b",
+      "46d41d1b",
+      "microsoft-releases-patch-for-outlook-bug-exposing-49dc30",
+      "microsoft-releases-patch-for-outlook-bug-exposing-ntlmv2-has"
+    ]
+  },
+  {
+    "slug": "kernel-vulnerabilities-affect-azure-cvm-systems-7c85010a",
+    "title": "Kernel Vulnerabilities Affect Azure CVM Systems",
+    "summary": "Multiple kernel subsystems in Azure CVM instances contain vulnerabilities that could allow a local attacker to compromise system integrity. The flaws affect USB gadget drivers, memory management, networking core, and various architecture modules, but no public exploit has been reported. Red Hat has issued a kernel update that corrects these issues; administrators should apply the patch to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9039-1",
+    "publishedAt": "2026-11-11T08:12:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kernel-vulnerabilities-affect-azure-cvm-systems",
+      "article-7c85010a",
+      "7c85010a",
+      "kernel-vulnerabilities-affect-azure-cvm-systems-7e883c"
+    ]
+  },
+  {
+    "slug": "barracuda-vulnerabilities-exploited-for-root-acces-9695b19a",
+    "title": "Barracuda Vulnerabilities Exploited for Root Access",
+    "summary": "Barracuda devices were hit by recently patched flaws, including CVE-2026-124194, that attackers exploited to bypass authorization and gain root access. The flaw permits unauthenticated users to trigger a buffer overflow in the management interface, enabling privileged command execution and full system compromise. Barracuda recommends applying the latest firmware patch immediately; no workaround exists, and administrators should limit management interface exposure.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
+    "publishedAt": "2026-11-11T07:53:51.000Z",
+    "cves": [
+      "CVE-2026-124194"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "barracuda-vulnerabilities-exploited-for-root-acces",
+      "article-9695b19a",
+      "9695b19a",
+      "barracuda-vulnerabilities-exploited-for-root-acces-395bcd",
+      "barracuda-vulnerabilities-exploited-for-root-access"
+    ]
+  },
+  {
+    "slug": "railway-breach-causes-740-000-unauthorized-ai-usag-bbd595a0",
+    "title": "Railway Breach Causes $740,000 Unauthorized AI Usage",
+    "summary": "Railway disclosed that customer AI keys stored on its platform were stolen in an October breach. The stolen keys enabled an estimated $740,000 in unauthorized AI usage charges, which Railway pledged to cover. Railway urges customers to rotate API keys and monitor usage logs, while investigating the breach and seeking refunds from AI vendors.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+    "publishedAt": "2026-11-11T07:49:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "railway-breach-causes-740-000-unauthorized-ai-usag",
+      "article-bbd595a0",
+      "bbd595a0",
+      "railway-breach-causes-740-000-unauthorized-ai-usag-728c42",
+      "railway-breach-causes-740-000-unauthorized-ai-usage"
+    ]
+  },
+  {
+    "slug": "top-10-security-ratings-services-ranked-2026-fe367a4f",
+    "title": "Top 10 Security Ratings Services Ranked 2026",
+    "summary": "The piece ranks the top ten security ratings services for 2026, assessing exposure, patch cadence, breach signals, and overall posture. Ratings now influence insurance premiums, vendor access, and board decisions, with NormShield and RiskRecon highlighted as key players. Stakeholders should examine rating criteria and align their security posture with the metrics used by these services.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-security-ratings-services/",
+    "publishedAt": "2026-11-11T07:33:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-security-ratings-services-ranked-2026",
+      "article-fe367a4f",
+      "fe367a4f",
+      "top-10-security-ratings-services-ranked-2026-4d3642"
+    ]
+  },
+  {
     "slug": "microsoft-patches-ad-rce-vulnerability-cve-2026-11-ec018025",
     "title": "Microsoft Patches AD RCE Vulnerability CVE-2026-119948",
     "summary": "A Windows Active Directory flaw (CVE-2026-119948) lets an authorized attacker run code over a network. The vulnerability, rated Important with a CVSS 3.1 score of 7.5, exploits improper input handling in AD replication. Microsoft issued security updates on November 10, 2026; administrators should apply them immediately to secure domain controllers.",
@@ -29,6 +181,25 @@ export const news: NewsBrief[] = [
       "ec018025",
       "microsoft-patches-ad-rce-vulnerability-cve-2026-11-7e1a09",
       "microsoft-patches-ad-rce-vulnerability-cve-2026-119948"
+    ]
+  },
+  {
+    "slug": "microsoft-researchers-show-ai-agents-can-be-backdo-7321c187",
+    "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+    "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown. When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+    "publishedAt": "2026-11-11T07:21:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-researchers-show-ai-agents-can-be-backdo",
+      "article-7321c187",
+      "7321c187",
+      "microsoft-researchers-show-ai-agents-can-be-backdo-13e3b4",
+      "microsoft-researchers-show-ai-agents-can-be-backdoored-by-ed"
     ]
   },
   {
@@ -408,6 +579,44 @@ export const news: NewsBrief[] = [
       "article-0a2558a7",
       "0a2558a7",
       "rhsa-2026-98114-important-kernel-security-update-37d6f4"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98097-important-python3-12-urllib3-secur-d3eebe11",
+    "title": "RHSA-2026:98097: Important: python3.12-urllib3 security update",
+    "summary": "An update for python3.12-urllib3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98097",
+    "publishedAt": "2026-11-11T01:45:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98097-important-python3-12-urllib3-secur",
+      "article-d3eebe11",
+      "d3eebe11",
+      "rhsa-2026-98097-important-python3-12-urllib3-secur-37d6f7",
+      "rhsa-2026-98097-important-python3-12-urllib3-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98116-important-dnsmasq-security-bug-fix-df3ba1ce",
+    "title": "RHSA-2026:98116: Important: dnsmasq security, bug fix, and enhancement update",
+    "summary": "An update for dnsmasq is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98116",
+    "publishedAt": "2026-11-11T01:45:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98116-important-dnsmasq-security-bug-fix",
+      "article-df3ba1ce",
+      "df3ba1ce",
+      "rhsa-2026-98116-important-dnsmasq-security-bug-fix-37d6f4",
+      "rhsa-2026-98116-important-dnsmasq-security-bug-fix-and-enhan"
     ]
   },
   {
@@ -9364,217 +9573,6 @@ export const news: NewsBrief[] = [
       "d7e6d4c2",
       "authorities-dismantle-scams-teams-abuse-refrigerat-5e83e9",
       "authorities-dismantle-scams-teams-abuse-refrigeration-attack"
-    ]
-  },
-  {
-    "slug": "japan-unveils-emergency-cybersecurity-package-afte-6d2883f9",
-    "title": "Japan Unveils Emergency Cybersecurity Package After Attacks",
-    "summary": "Japan announced an emergency cybersecurity package after dozens of companies and government agencies suffered unauthorized system access and client data leaks. The attacks exploited weak authentication, unpatched software, and inadequate network segmentation, exposing sensitive personal and corporate information. The package mandates rapid patching, multi‑factor authentication rollout, and continuous monitoring, with penalties for non‑compliance to strengthen national cyber resilience.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/",
-    "publishedAt": "2026-11-06T18:28:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "japan-unveils-emergency-cybersecurity-package-afte",
-      "article-6d2883f9",
-      "6d2883f9",
-      "japan-unveils-emergency-cybersecurity-package-afte-66171b",
-      "japan-unveils-emergency-cybersecurity-package-after-attacks"
-    ]
-  },
-  {
-    "slug": "vendors-use-incident-records-to-train-ai-raising-r-665fd110",
-    "title": "Vendors Use Incident Records to Train AI, Raising Risks",
-    "summary": "Security incident archives are being repurposed by vendors to train AI models, exposing sensitive operational data. The practice introduces new attack vectors, as leaked logs can reveal system configurations, privileged credentials, and internal threat patterns. Organizations should enforce strict data‑handling policies, anonymize logs before sharing, and audit vendor training pipelines to mitigate exposure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
-    "publishedAt": "2026-11-06T18:27:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vendors-use-incident-records-to-train-ai-raising-r",
-      "article-665fd110",
-      "665fd110",
-      "vendors-use-incident-records-to-train-ai-raising-r-2e2492",
-      "vendors-use-incident-records-to-train-ai-raising-risks"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-openshift-4-22-22-security-33b127e7",
-    "title": "Red Hat Issues Critical OpenShift 4.22.22 Security Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.22.22, addressing multiple security flaws affecting container orchestration components. The update patches several vulnerabilities, each with a CVSS base score indicating high severity, and mitigates potential unauthorized access to cluster resources. Users should apply the 4.22.22 update immediately or enable automatic patching to ensure cluster security.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95346",
-    "publishedAt": "2026-11-06T18:10:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-openshift-4-22-22-security",
-      "article-33b127e7",
-      "33b127e7",
-      "red-hat-issues-critical-openshift-4-22-22-security-37d849",
-      "red-hat-issues-critical-openshift-4-22-22-security-update"
-    ]
-  },
-  {
-    "slug": "chrome-dev-channel-updated-to-159-0-8144-0-64471497",
-    "title": "Chrome Dev Channel Updated to 159.0.8144.0",
-    "summary": "Google Chrome’s Dev channel received an update to version 159.0.8144.0, affecting Windows, macOS, and Linux desktops. The release includes bug fixes and performance improvements, with a partial change log available in the Git repository. Users should install the update promptly, report new issues via the bug‑reporting system, and consult the community forum for support.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update.html",
-    "publishedAt": "2026-11-06T17:28:33.341Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-dev-channel-updated-to-159-0-8144-0",
-      "article-64471497",
-      "64471497",
-      "chrome-dev-channel-updated-to-159-0-8144-0-74565e"
-    ]
-  },
-  {
-    "slug": "cve-2026-122193-issue-with-trusted-remote-executio-9acb1335",
-    "title": "CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)",
-    "summary": "Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for running scripts on managed instances.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-173-aws/",
-    "publishedAt": "2026-11-06T17:19:55.000Z",
-    "cves": [
-      "CVE-2026-122193"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-122193-issue-with-trusted-remote-executio",
-      "article-9acb1335",
-      "9acb1335",
-      "cve-2026-122193-issue-with-trusted-remote-executio-46a565",
-      "cve-2026-122193-issue-with-trusted-remote-execution-setup-gu"
-    ]
-  },
-  {
-    "slug": "malicious-ruby-gem-steals-credentials-and-poison-a-676c0d7c",
-    "title": "Malicious Ruby Gem Steals Credentials and Poison AI Tools",
-    "summary": "A malicious Ruby gem, a Shai‑Hulud descendant, installs during gem installation and steals user credentials. The worm poisons AI coding tools and can wipe files when a stolen GitHub token is revoked, but no public exploit or CVE is disclosed. Security teams should audit gem sources, remove the malicious package, and enforce strict dependency verification to prevent credential theft.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/shai-hulud-descendant-malicious-ruby-gem",
-    "publishedAt": "2026-11-06T17:11:11.050Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-ruby-gem-steals-credentials-and-poison-a",
-      "article-676c0d7c",
-      "676c0d7c",
-      "malicious-ruby-gem-steals-credentials-and-poison-a-5be179",
-      "malicious-ruby-gem-steals-credentials-and-poison-ai-tools"
-    ]
-  },
-  {
-    "slug": "qnap-warns-of-plex2shell-attacks-on-nas-devices-b87963a1",
-    "title": "QNAP Warns of Plex2Shell Attacks on NAS Devices",
-    "summary": "QNAP reports hackers breaching NAS devices by exploiting the Plex2Shell vulnerability chain in Plex Media Server. The flaw allows unauthenticated attackers to execute arbitrary commands through crafted media files, potentially compromising the underlying operating system. Users must update Plex Media Server to the latest QNAP App Center release and apply any vendor patches to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
-    "publishedAt": "2026-11-06T17:04:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qnap-warns-of-plex2shell-attacks-on-nas-devices",
-      "article-b87963a1",
-      "b87963a1",
-      "qnap-warns-of-plex2shell-attacks-on-nas-devices-1f9c76"
-    ]
-  },
-  {
-    "slug": "vercel-deploys-device-bound-sessions-to-stop-cooki-7637fdf5",
-    "title": "Vercel Deploys Device‑Bound Sessions to Stop Cookie Theft",
-    "summary": "Vercel introduced device‑bound session enforcement to mitigate stolen session cookie attacks on its platform. The mechanism binds session tokens to device fingerprints, preventing reuse of captured cookies across different hardware or browsers. Additionally, Vercel released an AI‑driven security review pipeline in public beta to proactively identify potential comprehensive session‑related vulnerabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/vercel-rolls-out-new-protection-against-stolen-session",
-    "publishedAt": "2026-11-06T16:55:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vercel-deploys-device-bound-sessions-to-stop-cooki",
-      "article-7637fdf5",
-      "7637fdf5",
-      "vercel-deploys-device-bound-sessions-to-stop-cooki-520be5",
-      "vercel-deploys-device-bound-sessions-to-stop-cookie-theft"
-    ]
-  },
-  {
-    "slug": "fbi-agent-pleads-guilty-to-stealing-2-4-million-in-5a5ff5ad",
-    "title": "FBI agent pleads guilty to stealing $2.4 million in crypto from nation-state hackers",
-    "summary": "Patrick Steven Yaroch, 37, is facing up to 20 years in prison on wire fraud and money laundering charges after admitting to using his position on an FBI investigative squad to steal more than $2.4 million in cryptocurrency to cover his debts.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/fbi-agent-pleads-guilty-to-stealing-from-nation-state-hackers",
-    "publishedAt": "2026-11-06T16:53:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-agent-pleads-guilty-to-stealing-2-4-million-in",
-      "article-5a5ff5ad",
-      "5a5ff5ad",
-      "fbi-agent-pleads-guilty-to-stealing-2-4-million-in-2fefc4",
-      "fbi-agent-pleads-guilty-to-stealing-2-4-million-in-crypto-fr"
-    ]
-  },
-  {
-    "slug": "installing-the-fix-for-an-exploited-wordpress-flaw-5c970c1e",
-    "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
-    "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The vulnerability is tracked as CVE-2024-27834.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
-    "publishedAt": "2026-11-06T16:08:38.000Z",
-    "cves": [
-      "CVE-2024-27834"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "installing-the-fix-for-an-exploited-wordpress-flaw",
-      "article-5c970c1e",
-      "5c970c1e",
-      "installing-the-fix-for-an-exploited-wordpress-flaw-a997a8",
-      "installing-the-fix-for-an-exploited-wordpress-flaw-can-expos"
-    ]
-  },
-  {
-    "slug": "industrial-control-systems-harden-refrigeration-mo-04118118",
-    "title": "Industrial Control Systems Harden Refrigeration Monitoring",
-    "summary": "Industrial control systems used for refrigeration monitoring face new attack vectors that could disrupt temperature regulation and safety protocols. The advisory recommends hardening network segmentation, updating firmware, and implementing strict authentication to mitigate unauthorized access and command injection risks. Security teams should deploy the latest vendor patches, monitor anomalous traffic, and conduct regular penetration testing to validate controls.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/us-government-partners-urge-hardening-industrial-refrig",
-    "publishedAt": "2026-11-06T16:00:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "industrial-control-systems-harden-refrigeration-mo",
-      "article-04118118",
-      "04118118",
-      "industrial-control-systems-harden-refrigeration-mo-251d4f",
-      "industrial-control-systems-harden-refrigeration-monitoring"
     ]
   }
 ];

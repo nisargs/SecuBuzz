@@ -4294,5 +4294,16 @@
   "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-241",
   "https://access.redhat.com/errata/RHSA-2026:98104",
-  "https://access.redhat.com/errata/RHSA-2026:98112"
+  "https://access.redhat.com/errata/RHSA-2026:98112",
+  "https://ubuntu.com/security/notices/USN-9040-1",
+  "https://ubuntu.com/security/notices/USN-9039-1",
+  "https://access.redhat.com/errata/RHSA-2026:98073",
+  "https://access.redhat.com/errata/RHSA-2026:98076",
+  "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+  "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
+  "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+  "https://cybersecuritynews.com/best-security-ratings-services/",
+  "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+  "https://access.redhat.com/errata/RHSA-2026:98116",
+  "https://access.redhat.com/errata/RHSA-2026:98097"
 ]
