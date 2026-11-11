@@ -11,6 +11,97 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "antifox-ai-agents-target-aws-credentials-4539ca27",
+    "title": "AntiFox AI Agents Target AWS Credentials",
+    "summary": "Attackers deploy AntiFox AI agents on Alibaba Cloud to harvest AWS credentials from targeted web services. The open-source platform automates credential extraction, enabling rapid lateral movement within compromised AWS environments. Defenders should restrict outbound traffic from cloud instances, enforce least‑privilege IAM roles, and monitor for anomalous credential usage daily actively continuously.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
+    "publishedAt": "2026-11-11T15:12:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "antifox-ai-agents-target-aws-credentials",
+      "article-4539ca27",
+      "4539ca27",
+      "antifox-ai-agents-target-aws-credentials-6ce1b6"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-java-runtime-on-rhel-8-f2c13183",
+    "title": "Red Hat Updates Java Runtime on RHEL 8",
+    "summary": "Red Hat released an important security update for java‑1.8.0‑openjdk on RHEL 8, fixing Java runtime vulnerabilities. The patch addresses remote code execution and information disclosure flaws with CVSS scores between 7.0 and 8.5. Apply the update promptly, test application compatibility, and monitor for anomalous runtime behavior to maintain security posture.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95609",
+    "publishedAt": "2026-11-11T15:01:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-java-runtime-on-rhel-8",
+      "article-f2c13183",
+      "f2c13183",
+      "red-hat-updates-java-runtime-on-rhel-8-37d83e"
+    ]
+  },
+  {
+    "slug": "linux-ebpf-rootkits-spread-via-underground-forums-ca178826",
+    "title": "Linux eBPF Rootkits Spread via Underground Forums",
+    "summary": "Linux eBPF rootkits enable malicious code to run without loading kernel modules, allowing attackers to conceal activity. Flare analysis shows underground forums distribute rootkit source, tutorials, and exploits, expanding the threat surface across Linux systems. Security teams should monitor eBPF activity, enforce kernel module signing, and apply vendor patches to mitigate hidden rootkits.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
+    "publishedAt": "2026-11-11T15:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-ebpf-rootkits-spread-via-underground-forums",
+      "article-ca178826",
+      "ca178826",
+      "linux-ebpf-rootkits-spread-via-underground-forums-3277df"
+    ]
+  },
+  {
+    "slug": "red-hat-patches-mod-http2-on-rhel-9-8-f0fa443e",
+    "title": "Red Hat Patches mod_http2 on RHEL 9.8",
+    "summary": "Red Hat issued an important security update for mod_http2 on RHEL 9.8, addressing critical HTTP/2 handling flaws. The update mitigates potential denial‑of‑service and information disclosure vulnerabilities, with CVSS scores up to 8.0. Deploy the patch immediately, verify HTTP/2 functionality, and monitor for abnormal traffic patterns to preserve service availability across all affected servers.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98982",
+    "publishedAt": "2026-11-11T14:58:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-patches-mod-http2-on-rhel-9-8",
+      "article-f0fa443e",
+      "f0fa443e",
+      "red-hat-patches-mod-http2-on-rhel-9-8-37d6d5"
+    ]
+  },
+  {
+    "slug": "kai-adds-external-attack-surface-management-to-def-a9e35699",
+    "title": "Kai Adds External Attack Surface Management to Defense Platform",
+    "summary": "Security vendor Kai announced External Attack Surface Management capability integration into its Autonomous Defense Platform to monitor internet-facing assets. The feature addresses visibility gaps in internal exposure programs by identifying externally facing vulnerabilities visible to potential threat actors. The unified platform consolidates internal and external security exposures into a single remediation workflow to streamline risk mitigation efforts.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/kai-autonomous-defense-platform/",
+    "publishedAt": "2026-11-11T14:55:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kai-adds-external-attack-surface-management-to-def",
+      "article-a9e35699",
+      "a9e35699",
+      "kai-adds-external-attack-surface-management-to-def-76b889",
+      "kai-adds-external-attack-surface-management-to-defense-platf"
+    ]
+  },
+  {
     "slug": "red-hat-issues-openjdk-8-security-update-for-rhel-5832fee3",
     "title": "Red Hat Issues OpenJDK 8 Security Update for RHEL 7",
     "summary": "Red Hat released a security update for java‑1.8.0‑openjdk on Red Enterprise Linux 7 Extended Lifecycle Support to address multiple vulnerabilities. The update covers unspecified Java runtime flaws rated Important, with CVSS base scores linked via CVE references, potentially enabling remote code execution or privilege escalation. System administrators should apply the RHSA‑2026:95598 patch and verify Java version to ensure protection.",
@@ -202,6 +293,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-kev-catalog-detect-patch-six-new-exploits-379e8ffb",
+    "title": "CISA KEV Catalog: Detect & Patch Six New Exploits",
+    "summary": "Critical security intelligence alert regarding CISA KEV Catalog: Detect & Patch Six. Review root-cause telemetry, hunt via detection rules, and patch today. The vulnerability is tracked as CVE-2026-20320.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cisa-adds-six-known-exploited-vulnerabilities-to-catalo",
+    "publishedAt": "2026-11-11T13:10:29.000Z",
+    "cves": [
+      "CVE-2026-20320"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-kev-catalog-detect-patch-six-new-exploits",
+      "article-379e8ffb",
+      "379e8ffb",
+      "cisa-kev-catalog-detect-patch-six-new-exploits-1b6aff"
+    ]
+  },
+  {
     "slug": "cisco-broadworks-cve-2026-20320-xxe-flaw-patch-cfad1869",
     "title": "Cisco BroadWorks CVE-2026-20320: XXE Flaw Patch",
     "summary": "Cisco BroadWorks is affected by CVE-2026-20320, an XML External Entity (XXE) flaw that can enable remote code execution. The vulnerability allows attackers to read arbitrary files and execute commands on the BroadWorks server when processing crafted XML requests. Cisco has released a patch; administrators should apply the update immediately and enable input validation to mitigate the risk.",
@@ -239,6 +350,25 @@ export const news: NewsBrief[] = [
       "article-ac9d4617",
       "ac9d4617",
       "microsoft-cve-2026-124194-enables-outlook-rce-1cb212"
+    ]
+  },
+  {
+    "slug": "n-able-issues-emergency-hotfix-after-33-vulnerabil-9ad632e5",
+    "title": "N‑able Issues Emergency Hotfix After 33 Vulnerabilities Shutdown",
+    "summary": "N‑able’s hosted remote monitoring platform suffered a worldwide shutdown after the public disclosure of 33 vulnerabilities. The emergency update, build 2026.4.1.26, addresses seven published CVEs and implements server, agent, and probe hardening to mitigate the identified weaknesses. Security teams should apply the hotfix immediately and review configuration settings to prevent similar disruptions.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/n-able-n-central-security-vulnerabilities/",
+    "publishedAt": "2026-11-11T12:57:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-issues-emergency-hotfix-after-33-vulnerabil",
+      "article-9ad632e5",
+      "9ad632e5",
+      "n-able-issues-emergency-hotfix-after-33-vulnerabil-dd18ec",
+      "n-able-issues-emergency-hotfix-after-33-vulnerabilities-shut"
     ]
   },
   {
@@ -335,6 +465,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fortinet-releases-patch-for-nearly-100-vulnerabili-2d6ccff8",
+    "title": "Fortinet Releases Patch for Nearly 100 Vulnerabilities",
+    "summary": "Fortinet issued a comprehensive patch update covering almost 100 vulnerabilities discovered during AI‑driven security testing across multiple Fortinet devices. The update addresses a mix of authentication bypasses, privilege escalation flaws, and buffer overflows across FortiGate and FortiManager products. Administrators should apply the latest firmware and verify configuration compliance to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
+    "publishedAt": "2026-11-11T12:10:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-releases-patch-for-nearly-100-vulnerabili",
+      "article-2d6ccff8",
+      "2d6ccff8",
+      "fortinet-releases-patch-for-nearly-100-vulnerabili-5b88be",
+      "fortinet-releases-patch-for-nearly-100-vulnerabilities"
+    ]
+  },
+  {
     "slug": "xen-orchestra-auth-bypass-cve-2026-123158-patched-0e92fe33",
     "title": "Xen Orchestra Auth Bypass CVE-2026-123158 Patched",
     "summary": "Xen Orchestra VSA-2026-062 enables attackers to bypass authentication and gain unauthorized access to virtual machine management interfaces. The flaw, catalogued as CVE-2026-123158, exploits a missing session validation check, allowing credentialless access with a CVSS score of 8.1. Red Hat has issued a patch for Xen Orchestra; security teams should update immediately and enforce strict access controls.",
@@ -371,6 +520,47 @@ export const news: NewsBrief[] = [
       "7cfee60b",
       "claude-code-ai-discovers-technique-to-turn-dormant-228793",
       "claude-code-ai-discovers-technique-to-turn-dormant-model-neu"
+    ]
+  },
+  {
+    "slug": "git-fixes-6-vulnerabilities-enabling-code-executio-6e926cb9",
+    "title": "Git Fixes 6 Vulnerabilities Enabling Code Execution via Cloning",
+    "summary": "Git released 2.56.1, fixing six flaws that could allow code execution during recursive cloning. The critical bug causes an out‑of‑bounds write in the clone process; the others involve unsafe file writes and memory corruption in merges and patches. Upgrade to 2.56.1 or backport the patches to older releases like 2.55.1 and 2.54.1.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/git-fixes-security-vulnerabilities/",
+    "publishedAt": "2026-11-11T11:33:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "git-fixes-6-vulnerabilities-enabling-code-executio",
+      "article-6e926cb9",
+      "6e926cb9",
+      "git-fixes-6-vulnerabilities-enabling-code-executio-5c5eb7",
+      "git-fixes-6-vulnerabilities-enabling-code-execution-via-clon"
+    ]
+  },
+  {
+    "slug": "windows-bitlocker-vulnerabilities-allow-attackers-7dee1c25",
+    "title": "Windows BitLocker Vulnerabilities Allow Attackers to Bypass Security Feature",
+    "summary": "Microsoft has disclosed two Windows BitLocker security feature bypass vulnerabilities that could allow attackers with physical access to weaken device protections. Published on November 10, 2026, the flaws are tracked as CVE-2026-97015 and CVE-2026-119832. Microsoft rates both as Important, with CVSS base scores of 6.8 and 5.9, respectively.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/windows-bitlocker-security-bypass/",
+    "publishedAt": "2026-11-11T11:31:29.000Z",
+    "cves": [
+      "CVE-2026-97015",
+      "CVE-2026-119832"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-bitlocker-vulnerabilities-allow-attackers",
+      "article-7dee1c25",
+      "7dee1c25",
+      "windows-bitlocker-vulnerabilities-allow-attackers-6df65b",
+      "windows-bitlocker-vulnerabilities-allow-attackers-to-bypass-"
     ]
   },
   {
@@ -3486,6 +3676,25 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "windows-gdi-vulnerability-exposes-data-via-out-of-05454bae",
+    "title": "Windows GDI Vulnerability Exposes Data via Out‑of‑Bounds Read",
+    "summary": "CVE‑2026‑108424 is an out‑of‑bounds read flaw in Windows GDI that permits remote attackers to read sensitive data over a network. The vulnerability arises from improper bounds checking during GDI object rendering, enabling an attacker to extract memory contents without authentication. Microsoft has released a patch in the 2026 security update; administrators should apply it promptly to mitigate the disclosure risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108424",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-gdi-vulnerability-exposes-data-via-out-of",
+      "article-05454bae",
+      "05454bae",
+      "windows-gdi-vulnerability-exposes-data-via-out-of-1ff72f",
+      "windows-gdi-vulnerability-exposes-data-via-out-of-bounds-rea"
     ]
   },
   {
@@ -9358,206 +9567,6 @@ export const news: NewsBrief[] = [
       "article-f0322583",
       "f0322583",
       "red-hat-issues-ruby-4-0-security-update-for-rhel-9-37d7dd"
-    ]
-  },
-  {
-    "slug": "hackers-log-in-within-8-minutes-using-stolen-crede-5f534fe9",
-    "title": "Hackers Log In Within 8 Minutes Using Stolen Credentials",
-    "summary": "Attackers leveraged stolen credentials to log into compromised systems an average of eight minutes after initial infection across 27 infostealer incidents. The report also noted attackers used AI tools to execute commands and signed remote monitoring software to sustain persistence. Security teams should enforce multi‑factor authentication, monitor credential usage, and deploy rapid credential‑rotation policies to mitigate this threat.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/elastic-businesses-remote-access-attacks-report/",
-    "publishedAt": "2026-11-09T05:00:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-log-in-within-8-minutes-using-stolen-crede",
-      "article-5f534fe9",
-      "5f534fe9",
-      "hackers-log-in-within-8-minutes-using-stolen-crede-4b138d",
-      "hackers-log-in-within-8-minutes-using-stolen-credentials"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-moderate-glibc-security-update-583666d8",
-    "title": "Red Hat Releases Moderate glibc Security Update",
-    "summary": "Red Hat issued a moderate‑impact security update for glibc on Red Hat Enterprise Linux 8, addressing several unspecified vulnerabilities. The advisory lists CVSS base scores for each vulnerability, but no specific CVE identifiers are named in the release notes. Security teams should apply the glibc update promptly and verify system stability to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96087",
-    "publishedAt": "2026-11-09T04:48:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-moderate-glibc-security-update",
-      "article-583666d8",
-      "583666d8",
-      "red-hat-releases-moderate-glibc-security-update-37d7e0"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-ruby-3-3-security-update-for-rhel-9-ef87381c",
-    "title": "Red Hat Issues Ruby 3.3 Security Update for RHEL 9",
-    "summary": "Red Hat released a Ruby 3.3 module update for RHEL 9, addressing several security bugs that could enable local privilege escalation. The advisory notes a moderate CVSS base score for each vulnerability, but no specific CVE identifiers are provided. Apply the ruby:3.3 update promptly to close the identified weaknesses and maintain system security.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96068",
-    "publishedAt": "2026-11-09T04:41:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-ruby-3-3-security-update-for-rhel-9",
-      "article-ef87381c",
-      "ef87381c",
-      "red-hat-issues-ruby-3-3-security-update-for-rhel-9-37d7e0"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-curl-security-update-88444dbb",
-    "title": "Red Hat Releases curl Security Update",
-    "summary": "Red Hat has issued a 'curl' security update for Enterprise Linux 10, addressing critical vulnerabilities identified in the software. The update carries an Important security impact rating, and each vulnerability is linked to a CVE entry with a CVSS base score. Administrators should apply the RHSA‑2026:96092 update immediately to protect against the disclosed flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96092",
-    "publishedAt": "2026-11-09T04:19:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-curl-security-update",
-      "article-88444dbb",
-      "88444dbb",
-      "red-hat-releases-curl-security-update-37d7df"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-nodejs22-security-update-a4dbce3f",
-    "title": "Red Hat Issues Important nodejs22 Security Update",
-    "summary": "Red Hat released an important security update for nodejs22 on Enterprise Linux 10, addressing multiple vulnerabilities. The update carries a CVSS base score for each flaw, but no CVE IDs are listed in the advisory. Users should apply the nodejs22 update promptly and verify compatibility with dependent applications to mitigate the identified security risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96094",
-    "publishedAt": "2026-11-09T03:57:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-nodejs22-security-update",
-      "article-a4dbce3f",
-      "a4dbce3f",
-      "red-hat-issues-important-nodejs22-security-update-37d7df"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-squid-4-security-update-1346f272",
-    "title": "Red Hat Issues squid:4 Security Update",
-    "summary": "Red Hat has released a security update for the 'squid:4' module on Enterprise Linux 8, addressing identified vulnerabilities that could allow remote code execution. The update is rated Important, and each vulnerability is referenced by a CVE with an associated CVSS score. Administrators should apply the RHSA‑2026:96078 update promptly to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96078",
-    "publishedAt": "2026-11-09T03:40:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-squid-4-security-update",
-      "article-1346f272",
-      "1346f272",
-      "red-hat-issues-squid-4-security-update-37d7e0"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96080-important-webkit2gtk3-security-upd-655ad073",
-    "title": "RHSA-2026:96080: Important: webkit2gtk3 security update",
-    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96080",
-    "publishedAt": "2026-11-09T03:39:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96080-important-webkit2gtk3-security-upd",
-      "article-655ad073",
-      "655ad073",
-      "rhsa-2026-96080-important-webkit2gtk3-security-upd-37d7e0",
-      "rhsa-2026-96080-important-webkit2gtk3-security-update"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-qt5-qtdeclarative-security-update-3c5f9a40",
-    "title": "Red Hat Releases qt5‑qtdeclarative Security Update",
-    "summary": "Red Hat released a security update for the qt5‑qtdeclarative component on RHEL 8, addressing multiple vulnerabilities. The update mitigates unspecified flaws that could allow local privilege escalation or denial of service, with CVSS scores available via CVE references, but no active exploitation reported. Administrators should apply the RHSA‑2026:96075 update immediately to ensure protection against the identified weaknesses.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96075",
-    "publishedAt": "2026-11-09T03:39:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-qt5-qtdeclarative-security-update",
-      "article-3c5f9a40",
-      "3c5f9a40",
-      "red-hat-releases-qt5-qtdeclarative-security-update-37d7e0"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-dpdk-security-update-1934988a",
-    "title": "Red Hat Issues DPDK Security Update",
-    "summary": "Red Hat released a security update for DPDK on RHEL8, addressing several vulnerabilities rated as Important. The update fixes unspecified flaws that could enable local privilege escalation or denial of service, as indicated by the CVSS base scores referenced in the advisory. Red Hat advises applying the update promptly to protect affected deployments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96083",
-    "publishedAt": "2026-11-09T03:38:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-dpdk-security-update",
-      "article-1934988a",
-      "1934988a",
-      "red-hat-issues-dpdk-security-update-37d7e0"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-nodejs24-security-update-ddc380f9",
-    "title": "Red Hat Releases Nodejs24 Security Update",
-    "summary": "Red Hat issued a security update for nodejs24 on RHEL10, addressing multiple vulnerabilities with an Important impact rating. The update mitigates unspecified flaws that could allow local privilege escalation or code execution, as indicated by the CVSS base scores linked in the advisory. Red Hat recommends applying the update immediately to secure affected systems.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96088",
-    "publishedAt": "2026-11-09T03:38:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-nodejs24-security-update",
-      "article-ddc380f9",
-      "ddc380f9",
-      "red-hat-releases-nodejs24-security-update-37d7e0"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-gdb-security-update-42feb647",
-    "title": "Red Hat Releases gdb Security Update",
-    "summary": "Red Hat released a gdb security update for RHEL 9.6 Extended Update Support, fixing multiple bugs. The patch addresses several gdb flaws with CVSS scores listed in CVE references, potentially enabling local privilege escalation or denial of service. Red Hat advises applying the update immediately; no workarounds are required for security.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96097",
-    "publishedAt": "2026-11-09T03:14:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-gdb-security-update",
-      "article-42feb647",
-      "42feb647",
-      "red-hat-releases-gdb-security-update-37d7df"
     ]
   }
 ];
