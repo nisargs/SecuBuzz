@@ -4952,5 +4952,16 @@
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-249",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-225",
   "https://access.redhat.com/errata/RHSA-2026:97855",
-  "https://access.redhat.com/errata/RHSA-2026:95745"
+  "https://access.redhat.com/errata/RHSA-2026:95745",
+  "https://cybersecuritynews.com/windows-active-directory-rce-vulnerability/",
+  "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
+  "https://access.redhat.com/errata/RHSA-2026:98103",
+  "https://access.redhat.com/errata/RHSA-2026:98248",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105588",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105589",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-246",
+  "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-241",
+  "https://access.redhat.com/errata/RHSA-2026:98104",
+  "https://access.redhat.com/errata/RHSA-2026:98112"
 ]

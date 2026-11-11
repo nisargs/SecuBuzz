@@ -11,6 +11,48 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-patches-ad-rce-vulnerability-cve-2026-11-ec018025",
+    "title": "Microsoft Patches AD RCE Vulnerability CVE-2026-119948",
+    "summary": "A Windows Active Directory flaw (CVE-2026-119948) lets an authorized attacker run code over a network. The vulnerability, rated Important with a CVSS 3.1 score of 7.5, exploits improper input handling in AD replication. Microsoft issued security updates on November 10, 2026; administrators should apply them immediately to secure domain controllers.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/windows-active-directory-rce-vulnerability/",
+    "publishedAt": "2026-11-11T07:21:28.000Z",
+    "cves": [
+      "CVE-2026-119948"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patches-ad-rce-vulnerability-cve-2026-11",
+      "article-ec018025",
+      "ec018025",
+      "microsoft-patches-ad-rce-vulnerability-cve-2026-11-7e1a09",
+      "microsoft-patches-ad-rce-vulnerability-cve-2026-119948"
+    ]
+  },
+  {
+    "slug": "fortinet-forticlient-rce-via-fortipam-exploit-cve-dec52944",
+    "title": "Fortinet FortiClient RCE via FortiPAM Exploit CVE-2026-121529",
+    "summary": "A FortiClient flaw (CVE-2026-121529) allows a remote attacker to execute code when a user visits a malicious website. The vulnerability, rated Critical with a CVSS 9.1 score, exploits improper handling of embedded scripts in FortiPAM-enabled sessions. Fortinet released a patch on November 10, 2026; users should update FortiClient immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
+    "publishedAt": "2026-11-11T07:05:55.000Z",
+    "cves": [
+      "CVE-2026-121529"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-forticlient-rce-via-fortipam-exploit-cve",
+      "article-dec52944",
+      "dec52944",
+      "fortinet-forticlient-rce-via-fortipam-exploit-cve-6eb845",
+      "fortinet-forticlient-rce-via-fortipam-exploit-cve-2026-12152"
+    ]
+  },
+  {
     "slug": "red-hat-issues-gcc-update-for-moderate-security-is-fd907fcf",
     "title": "Red Hat Issues GCC Update for Moderate Security Issue",
     "summary": "Red Hat released a GCC update for RHEL 8 to fix a moderate‑severity security issue. The advisory indicates a Moderate impact, with CVSS scores linked to CVE references, suggesting a medium‑severity flaw affecting compiler integrity. Apply the update immediately and confirm GCC version compliance in RHEL 8 to mitigate potential exploitation.",
@@ -27,6 +69,24 @@ export const news: NewsBrief[] = [
       "fd907fcf",
       "red-hat-issues-gcc-update-for-moderate-security-is-37d6f4",
       "red-hat-issues-gcc-update-for-moderate-security-issue"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-qt5-qtbase-security-update-57b47645",
+    "title": "Red Hat Issues Qt5‑Qtbase Security Update",
+    "summary": "Red Hat released a security update for qt5‑qtbase on RHEL 8, addressing vulnerabilities that could allow local privilege escalation or code execution. The update lists multiple CVE identifiers with CVSS scores indicating moderate to high severity, yet no active exploitation reports exist. Red Hat recommends applying the update immediately via the standard RHEL update channels.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98103",
+    "publishedAt": "2026-11-11T06:17:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-qt5-qtbase-security-update",
+      "article-57b47645",
+      "57b47645",
+      "red-hat-issues-qt5-qtbase-security-update-37d6f4"
     ]
   },
   {
@@ -66,6 +126,24 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-rust-rpm-sequoia-security-update-abf31b66",
+    "title": "Red Hat Issues rust‑rpm‑sequoia Security Update",
+    "summary": "Red Hat released a security update for the rust‑rpm‑sequoia package on RHEL 10.0 EUS, addressing vulnerabilities that could enable local privilege escalation or code execution. The update lists multiple CVE identifiers with CVSS scores indicating moderate to high severity, yet no active exploitation reports exist. Red Hat recommends applying the update immediately via the standard RHEL update channels.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98248",
+    "publishedAt": "2026-11-11T05:41:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-rust-rpm-sequoia-security-update",
+      "article-abf31b66",
+      "abf31b66",
+      "red-hat-issues-rust-rpm-sequoia-security-update-37d6f0"
     ]
   },
   {
@@ -330,6 +408,43 @@ export const news: NewsBrief[] = [
       "article-0a2558a7",
       "0a2558a7",
       "rhsa-2026-98114-important-kernel-security-update-37d6f4"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98112-important-flatpak-security-update-77f2c077",
+    "title": "RHSA-2026:98112: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98112",
+    "publishedAt": "2026-11-11T01:45:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98112-important-flatpak-security-update",
+      "article-77f2c077",
+      "77f2c077",
+      "rhsa-2026-98112-important-flatpak-security-update-37d6f4"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98104-critical-python-tornado-security-u-6191568f",
+    "title": "RHSA-2026:98104: Critical: python-tornado security update",
+    "summary": "An update for python-tornado is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98104",
+    "publishedAt": "2026-11-11T01:44:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98104-critical-python-tornado-security-u",
+      "article-6191568f",
+      "6191568f",
+      "rhsa-2026-98104-critical-python-tornado-security-u-37d6f4",
+      "rhsa-2026-98104-critical-python-tornado-security-update"
     ]
   },
   {
@@ -1022,6 +1137,24 @@ export const news: NewsBrief[] = [
       "d3da32b5",
       "rhsa-2026-97538-important-cockpit-files-security-u-37d759",
       "rhsa-2026-97538-important-cockpit-files-security-update"
+    ]
+  },
+  {
+    "slug": "cloud-range-offers-free-ot-readiness-assessment-28d86c2c",
+    "title": "Cloud Range Offers Free OT Readiness Assessment",
+    "summary": "Cloud Range released a free 28‑question OT Cyber Readiness Assessment to help organizations identify gaps in operational technology incident response. The assessment evaluates preparedness across detection, containment, and recovery controls, providing a baseline score and improvement roadmap. Organizations should download the tool, complete the questionnaire, and use the resulting report to prioritize remediation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
+    "publishedAt": "2026-11-10T20:18:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloud-range-offers-free-ot-readiness-assessment",
+      "article-28d86c2c",
+      "28d86c2c",
+      "cloud-range-offers-free-ot-readiness-assessment-665a30"
     ]
   },
   {
@@ -2242,6 +2375,43 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "windows-dhcp-server-local-privilege-escalation-8ffa94ab",
+    "title": "Windows DHCP Server Local Privilege Escalation",
+    "summary": "Microsoft disclosed CVE‑2026‑105588, a missing authentication flaw in Windows DHCP Server that permits an authorized attacker to elevate privileges locally. The vulnerability arises from an unprotected critical function that bypasses authentication checks, enabling local privilege escalation without requiring additional credentials. Microsoft recommends applying the available patch via Windows Update or the Security Update Guide to mitigate the risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105588",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-dhcp-server-local-privilege-escalation",
+      "article-8ffa94ab",
+      "8ffa94ab",
+      "windows-dhcp-server-local-privilege-escalation-1ff888"
+    ]
+  },
+  {
+    "slug": "windows-wireless-networking-local-privilege-escala-53663862",
+    "title": "Windows Wireless Networking Local Privilege Escalation Vulnerability",
+    "summary": "Microsoft disclosed CVE‑2026‑105589, a use‑after‑free flaw in Windows Wireless Networking that permits an authorized attacker to elevate privileges locally. The flaw occurs when a freed memory object is accessed again, bypassing authentication checks and enabling local privilege escalation. Microsoft recommends applying the patch available through Windows Update or the Security Update Guide to prevent exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105589",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-wireless-networking-local-privilege-escala",
+      "article-53663862",
+      "53663862",
+      "windows-wireless-networking-local-privilege-escala-1ff888",
+      "windows-wireless-networking-local-privilege-escalation-vulne"
     ]
   },
   {
@@ -4391,6 +4561,25 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "improper-neutralization-of-special-elements-used-i-0f4ba94c",
+    "title": "Improper neutralization of special elements used in an OS command",
+    "summary": "CVSSv3 Score: 7.2 An improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability (CWE-78) in FortiAnalyzer, FortiAnalyzer Cloud, FortiManager, FortiManager Cloud system-ha plugin may allow an authenticated attacker to execute unauthorized commands via a crafted HTTP request.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-246",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "improper-neutralization-of-special-elements-used-i",
+      "article-0f4ba94c",
+      "0f4ba94c",
+      "improper-neutralization-of-special-elements-used-i-3bcda5",
+      "improper-neutralization-of-special-elements-used-in-an-os-co"
     ]
   },
   {
@@ -8063,24 +8252,6 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "red-hat-issues-qt5-qtbase-security-update-f3c685d6",
-    "title": "Red Hat Issues qt5-qtbase Security Update",
-    "summary": "Red Hat released a security update for qt5-qtbase on RHEL 8.8 Update Services for SAP Solutions and Telecommunications Update Service, addressing multiple vulnerabilities. The update mitigates several Qt base bugs with CVSS scores provided in CVE references, which could allow local privilege escalation or denial of service. Red Hat recommends applying the qt5-qtbase update immediately; no additional workarounds are needed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96089",
-    "publishedAt": "2026-11-09T03:10:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-qt5-qtbase-security-update",
-      "article-f3c685d6",
-      "f3c685d6",
-      "red-hat-issues-qt5-qtbase-security-update-37d7e0"
-    ]
-  },
-  {
     "slug": "red-enterprise-linux-9-2-updates-gdb-security-flaw-c2de3a68",
     "title": "Red Enterprise Linux 9.2 Updates gdb Security Flaw",
     "summary": "Red Enterprise Linux 9.2 Update Services for SAP Solutions users receive a gdb security update addressing a debugging flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the gdb update immediately and review CVSS scores to assess residual risk.",
@@ -9404,212 +9575,6 @@ export const news: NewsBrief[] = [
       "04118118",
       "industrial-control-systems-harden-refrigeration-mo-251d4f",
       "industrial-control-systems-harden-refrigeration-monitoring"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95887-important-red-hat-jboss-enterprise-1fcf7082",
-    "title": "RHSA-2026:95887: Important: Red Hat JBoss Enterprise Application Platform 8.1.9 security update",
-    "summary": "A security update is now available for Red Hat JBoss Enterprise Application Platform 8.1. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95887",
-    "publishedAt": "2026-11-06T15:31:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95887-important-red-hat-jboss-enterprise",
-      "article-1fcf7082",
-      "1fcf7082",
-      "rhsa-2026-95887-important-red-hat-jboss-enterprise-37d836",
-      "rhsa-2026-95887-important-red-hat-jboss-enterprise-applicati"
-    ]
-  },
-  {
-    "slug": "nikke-launcher-distributed-remote-access-trojan-vi-3c8b0dd9",
-    "title": "NIKKE Launcher Distributed Remote Access Trojan via Script Tampering",
-    "summary": "The NIKKE PC game launcher suffered a script tampering attack that distributed an obfuscated remote access trojan and infostealer. The malicious scripts exploit the launcher’s trust model, enabling attackers to execute arbitrary code and exfiltrate user credentials without detection. Security teams should remove the compromised launcher, update to the latest official release, and monitor for unauthorized outbound connections.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/nikke-pc-game-launcher-hacked-to-spread-remote-access-d",
-    "publishedAt": "2026-11-06T15:30:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nikke-launcher-distributed-remote-access-trojan-vi",
-      "article-3c8b0dd9",
-      "3c8b0dd9",
-      "nikke-launcher-distributed-remote-access-trojan-vi-7450c4",
-      "nikke-launcher-distributed-remote-access-trojan-via-script-t"
-    ]
-  },
-  {
-    "slug": "veeam-alerts-to-boot-failures-on-amd-epyc-hosts-6aa6506a",
-    "title": "Veeam Alerts to Boot Failures on AMD EPYC Hosts",
-    "summary": "Veeam warned that its Software Appliance virtual machines fail to boot on AMD EPYC hosts. The flaw arises from a bootloader incompatibility with EPYC firmware, causing kernel panics that halt services but pose no remote code execution risk. Veeam recommends applying the latest appliance update or disabling the problematic boot option, and verifying firmware compatibility before deploying EPYC hosts.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
-    "publishedAt": "2026-11-06T15:25:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "veeam-alerts-to-boot-failures-on-amd-epyc-hosts",
-      "article-6aa6506a",
-      "6aa6506a",
-      "veeam-alerts-to-boot-failures-on-amd-epyc-hosts-4e16b5"
-    ]
-  },
-  {
-    "slug": "chatgpt-cve-2025-51591-bypasses-lockdown-mode-027c7473",
-    "title": "ChatGPT CVE-2025-51591 Bypasses Lockdown Mode",
-    "summary": "A newly disclosed CVE-2025-51591 flaw in OpenAI’s ChatGPT lets attackers bypass the platform’s lockdown mode, exposing enterprise data. The flaw arises from improper prompt validation, enabling unauthorized code execution inside the sandbox and granting elevated privileges; CVSS 9.2. OpenAI has issued a patch; organizations should apply it within 24 hours and update detection rules to flag anomalous prompts.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate",
-    "publishedAt": "2026-11-06T15:17:35.000Z",
-    "cves": [
-      "CVE-2025-51591"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chatgpt-cve-2025-51591-bypasses-lockdown-mode",
-      "article-027c7473",
-      "027c7473",
-      "chatgpt-cve-2025-51591-bypasses-lockdown-mode-43a40b"
-    ]
-  },
-  {
-    "slug": "big-tech-files-lawsuit-against-california-scrollin-35fb5a9b",
-    "title": "Big Tech Files Lawsuit Against California Scrolling Law",
-    "summary": "Google, Meta, and TikTok sued California, claiming the state’s scrolling‑limit law violates free‑speech rights and parental control. They argue the regulation imposes unconstitutional restrictions on platform moderation and could harm user experience for minors. The lawsuit seeks a preliminary injunction to stop enforcement while the case proceeds in federal court.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/big-tech-sues-over-california-plan-to-limit-kids-scrolling",
-    "publishedAt": "2026-11-06T15:06:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "big-tech-files-lawsuit-against-california-scrollin",
-      "article-35fb5a9b",
-      "35fb5a9b",
-      "big-tech-files-lawsuit-against-california-scrollin-52fa04",
-      "big-tech-files-lawsuit-against-california-scrolling-law"
-    ]
-  },
-  {
-    "slug": "ubuntu-tornado-regression-fix-released-74b59201",
-    "title": "Ubuntu Tornado Regression Fix Released",
-    "summary": "USN-8952-2 resolves a regression in Tornado caused by an incomplete fix for CVE-2026-103263, which broke static file serving for applications subclassing StaticFileHandler such as Jupyter. The original update introduced the regression by failing to properly handle certain HTTP requests and network inputs. This revised release restores correct static file serving functionality while maintaining the security fixes from prior advisories.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8952-2",
-    "publishedAt": "2026-11-06T15:04:17.000Z",
-    "cves": [
-      "CVE-2026-103263"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-tornado-regression-fix-released",
-      "article-74b59201",
-      "74b59201",
-      "ubuntu-tornado-regression-fix-released-7fbd73"
-    ]
-  },
-  {
-    "slug": "dark-project-ransomware-group-offers-80-commission-46fe2579",
-    "title": "Dark Project Ransomware Group Offers 80% Commission",
-    "summary": "The Dark Project ransomware group recruits criminal partners with an 80% commission on successful attacks, combining data theft, encryption, and extortion. First observed in June 2026, the financially motivated operation pressures organizations into ransom payments. Security teams should monitor for extortion activity and implement network segmentation to limit lateral movement.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/new-dark-project-ransomware-group/",
-    "publishedAt": "2026-11-06T15:03:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dark-project-ransomware-group-offers-80-commission",
-      "article-46fe2579",
-      "46fe2579",
-      "dark-project-ransomware-group-offers-80-commission-6e891f"
-    ]
-  },
-  {
-    "slug": "imsi-and-imei-phone-broadcasts-and-readability-e3d9e5cd",
-    "title": "IMSI and IMEI: Phone Broadcasts and Readability",
-    "summary": "Mobile devices transmit IMSI and IMEI identifiers to cellular networks, allowing operators to track device location and authenticate subscribers. Attackers can harvest these IDs through network sniffing or malicious apps, enabling targeted tracking or spoofing of device identity. Rotating the IMSI periodically or using privacy‑enhancing SIMs can mitigate tracking risks, while IMEI remains static and less exploitable.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/",
-    "publishedAt": "2026-11-06T15:00:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "imsi-and-imei-phone-broadcasts-and-readability",
-      "article-e3d9e5cd",
-      "e3d9e5cd",
-      "imsi-and-imei-phone-broadcasts-and-readability-2a597e"
-    ]
-  },
-  {
-    "slug": "locating-videos-via-background-airplane-sounds-b8b292a2",
-    "title": "Locating Videos via Background Airplane Sounds",
-    "summary": "Researchers showed a method that pinpoints a recording’s location by analyzing faint airplane sounds in its background. The technique uses Doppler curves to track frequency shifts as aircraft pass overhead, enabling triangulation of the source. Although academically interesting, the method raises privacy concerns for creators who may inadvertently disclose their location through ambient audio.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
-    "publishedAt": "2026-11-06T14:57:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "locating-videos-via-background-airplane-sounds",
-      "article-b8b292a2",
-      "b8b292a2",
-      "locating-videos-via-background-airplane-sounds-361b14"
-    ]
-  },
-  {
-    "slug": "trezor-implant-llmjacking-sap-flaws-weaponized-5d6c32a5",
-    "title": "Trezor Implant, LLMJacking, SAP Flaws Weaponized",
-    "summary": "The report highlights multiple emerging threats, including a Trezor hardware wallet implant, LLMJacking ransomware billing at $1M, and SAP vulnerabilities weaponized within days. Additionally, Synology warns of NAS ransomware attacks, Flowise 'hello' attacks exploit, and Chainalysis breach impacts expanding across customers. Security teams should review detection rules, apply vendor patches, and monitor for credential theft to mitigate these risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
-    "publishedAt": "2026-11-06T14:40:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trezor-implant-llmjacking-sap-flaws-weaponized",
-      "article-5d6c32a5",
-      "5d6c32a5",
-      "trezor-implant-llmjacking-sap-flaws-weaponized-793a79"
-    ]
-  },
-  {
-    "slug": "microsoft-alerts-on-monetizing-windows-pcs-via-fak-ccffd898",
-    "title": "Microsoft Alerts on Monetizing Windows PCs via Fake Games",
-    "summary": "Microsoft warned that fake game installers covertly monetize Windows PCs by allocating bandwidth to distributed computing tasks. The campaign targets users seeking free titles, silently running background workloads that turn machines into unconsented mining rigs. Microsoft recommends verifying installer signatures, avoiding untrusted sites, and using endpoint protection to block unauthorized bandwidth usage.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-warns-fake-game-downloads/",
-    "publishedAt": "2026-11-06T14:38:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-alerts-on-monetizing-windows-pcs-via-fak",
-      "article-ccffd898",
-      "ccffd898",
-      "microsoft-alerts-on-monetizing-windows-pcs-via-fak-22deee",
-      "microsoft-alerts-on-monetizing-windows-pcs-via-fake-games"
     ]
   }
 ];
