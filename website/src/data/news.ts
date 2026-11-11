@@ -48,6 +48,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99134-important-grafana-security-update-71fbc78e",
+    "title": "RHSA-2026:99134: Important: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99134",
+    "publishedAt": "2026-11-11T22:31:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99134-important-grafana-security-update",
+      "article-71fbc78e",
+      "71fbc78e",
+      "rhsa-2026-99134-important-grafana-security-update-37d67f"
+    ]
+  },
+  {
     "slug": "emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb",
     "title": "eMudhra Revokes Eight CA Certificates After Key Mishap",
     "summary": "eMudhra revoked eight intermediate CA certificates after discovering improper private key handling during certificate generation. The mishandling exposed the possibility of unauthorized certificate issuance, but no active exploitation has been reported. eMudhra has issued revocation notices, is reviewing its key management procedures, and will implement additional safeguards to prevent future incidents.",
@@ -2169,6 +2187,48 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "zero-day-code-execution-flaw-discovered-in-meta-fa-8ba8d224",
+    "title": "Zero-Day Code Execution Flaw Discovered in Meta Fairseq",
+    "summary": "Meta fairseq installations are vulnerable to a zero-day remote code execution flaw triggered through improper YAML file parsing. Tracked as CVE-2026-111760 with a CVSS score of 7.8, the code injection vulnerability requires a target to open a malicious file to execute code. Security teams should avoid opening untrusted files and apply vendor patches upon availability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-929/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zero-day-code-execution-flaw-discovered-in-meta-fa",
+      "article-8ba8d224",
+      "8ba8d224",
+      "zero-day-code-execution-flaw-discovered-in-meta-fa-6f3d10",
+      "zero-day-code-execution-flaw-discovered-in-meta-fairseq"
+    ]
+  },
+  {
+    "slug": "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-062b3457",
+    "title": "ZDI-26-926: (0Day) Meta fairseq RawAudioDataset YAML File Parsing Code Injection Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-926/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml",
+      "article-062b3457",
+      "062b3457",
+      "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-6f3d10",
+      "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-file-parsi"
     ]
   },
   {
@@ -9539,68 +9599,6 @@ export const news: NewsBrief[] = [
       "article-46ec5661",
       "46ec5661",
       "ukraine-seizes-4-3m-crypto-scam-ring-7cf541"
-    ]
-  },
-  {
-    "slug": "nist-guidance-for-solo-business-owners-91174b53",
-    "title": "NIST Guidance for Solo Business Owners",
-    "summary": "NIST released guidance offering a basic framework for solo business owners lacking technical expertise in the rapidly evolving threat landscape. The guidance outlines security practices for technology that operates without human oversight, though it may not fully address all risk scenarios. Organizations should review the guidance and supplement it with additional controls as needed.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure",
-    "publishedAt": "2026-11-09T15:46:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nist-guidance-for-solo-business-owners",
-      "article-91174b53",
-      "91174b53",
-      "nist-guidance-for-solo-business-owners-30251b"
-    ]
-  },
-  {
-    "slug": "openjdk-11-auth-flaws-expose-sensitive-data-6c7d78b1",
-    "title": "OpenJDK 11 Auth Flaws Expose Sensitive Data",
-    "summary": "OpenJDK 11 components—Security, JSSE, JAAS, JDBC—exposed authentication and authorization flaws that could let remote attackers read or modify sensitive data. Flaws CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, CVE-2026-83380, CVE-2026-83381, CVE-2026-87294 grant unauthenticated or improperly authorized access, enabling data tampering. Oracle released patches; users should apply the latest OpenJDK 11 update to mitigate risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9010-1",
-    "publishedAt": "2026-11-09T15:35:24.000Z",
-    "cves": [
-      "CVE-2026-83374",
-      "CVE-2026-83376",
-      "CVE-2026-91461",
-      "CVE-2026-83380",
-      "CVE-2026-83381",
-      "CVE-2026-87294"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openjdk-11-auth-flaws-expose-sensitive-data",
-      "article-6c7d78b1",
-      "6c7d78b1",
-      "openjdk-11-auth-flaws-expose-sensitive-data-7e8947"
-    ]
-  },
-  {
-    "slug": "anubis-ransomware-deploys-lindnor-backdoor-and-sec-1e6cbb54",
-    "title": "Anubis Ransomware Deploys Lindnor Backdoor and Security‑Killing Tools",
-    "summary": "Attackers using Anubis ransomware infiltrated a U.S. organization in October 2026, deploying a backdoor named Lindnor and dropping 13 tools to disable security software. The backdoor leveraged privilege escalation to install utilities, but Symantec’s bulletin reported the encryption payload was blocked before execution, preventing data loss.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/anubis-ransomware-lindnor-backdoor/",
-    "publishedAt": "2026-11-09T15:31:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anubis-ransomware-deploys-lindnor-backdoor-and-sec",
-      "article-1e6cbb54",
-      "1e6cbb54",
-      "anubis-ransomware-deploys-lindnor-backdoor-and-sec-2ce9ec",
-      "anubis-ransomware-deploys-lindnor-backdoor-and-security-kill"
     ]
   }
 ];

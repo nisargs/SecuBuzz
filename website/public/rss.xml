@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 22:46:05 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 22:51:38 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Red Hat Releases c-ares Security Update for RHEL 10.2</title>
@@ -23,6 +23,15 @@
       <description><![CDATA[Red Hat has issued a security update for qt6-qtbase on RHEL 10.2 EUS, addressing multiple vulnerabilities with CVSS base scores listed in the CVE references. The update is marked as Important by Red Hat Product Security, indicating a high severity impact on Qt framework functionality. Apply the qt6-qtbase update promptly to protect against the disclosed vulnerabilities.]]></description>
       <pubDate>Wed, 11 Nov 2026 22:37:54 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99155">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99134: Important: grafana security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99134-important-grafana-security-update-71fbc78e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99134-important-grafana-security-update-71fbc78e</guid>
+      <description><![CDATA[An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 22:31:50 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99134">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -446,15 +455,6 @@
       <description><![CDATA[Asus and Zoom released security patches addressing critical flaws that could allow attackers to execute arbitrary code, overwrite memory, and elevate privileges. The vulnerabilities involve memory corruption and privilege escalation paths, potentially enabling full system compromise if exploited. Users should install the latest updates for both Asus firmware and Zoom client immediately to mitigate the risk.]]></description>
       <pubDate>Wed, 11 Nov 2026 13:58:38 GMT</pubDate>
       <source url="https://www.securityweek.com/asus-zoom-release-security-patches/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Windows SignDrop 0-Day Exploit Lets Attackers Gain SYSTEM Privileges Through CLFS Protection</title>
-      <link>https://secubuzz.com/news/windows-signdrop-0-day-exploit-lets-attackers-gain-0c53ce65</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-signdrop-0-day-exploit-lets-attackers-gain-0c53ce65</guid>
-      <description><![CDATA[A public exploit called SignDrop targets a Windows security feature meant to stop attacks on the Common Log File System (CLFS). It claims to turn a normal user account into a SYSTEM account, the highest level of control on Windows. The flaw has no CVE number and no patch as of November 11, 2026.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:57:20 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/windows-signdrop-zero-day-exploit/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
   </channel>
