@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "libreswan-update-fixes-security-vulnerabilities-0f3608f7",
+    "title": "libreswan Update Fixes Security Vulnerabilities",
+    "summary": "Red Hat released a libreswan update addressing multiple security bugs and adding performance enhancements for RHEL 9. The update is rated Important, with CVSS scores available via the referenced CVE links, and fixes memory corruption and privilege escalation issues. Administrators should apply the RHSA-2026:98046 update immediately to maintain system security and compliance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98046",
+    "publishedAt": "2026-11-11T00:16:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "libreswan-update-fixes-security-vulnerabilities",
+      "article-0f3608f7",
+      "0f3608f7",
+      "libreswan-update-fixes-security-vulnerabilities-37d6f7"
+    ]
+  },
+  {
     "slug": "turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457",
     "title": "Turla Malware Exploitation Enhanced by AI Reverse Engineering",
     "summary": "Turla malware, a Russian state-sponsored threat, is now being reverse engineered using AI techniques, according to a security intelligence alert. The AI-driven analysis uncovers root‑cause telemetry and detection rule patterns, enabling precise identification of Turla's command‑and‑control infrastructure, but no active exploitation is confirmed. Security teams should review telemetry, apply updated detection rules, and patch affected systems to mitigate potential compromise.",
@@ -45,6 +63,25 @@ export const news: NewsBrief[] = [
       "article-0b9b0471",
       "0b9b0471",
       "sap-issues-critical-rce-patches-5efef2"
+    ]
+  },
+  {
+    "slug": "apple-imessage-group-chat-and-bluetooth-vulnerabil-fdd645db",
+    "title": "Apple iMessage Group Chat and Bluetooth Vulnerabilities Patched",
+    "summary": "Apple patched vulnerabilities in iMessage group chat and Bluetooth functionality that could allow attackers to exploit the messaging service. The flaws stem from improper input validation in group chat message handling and Bluetooth pairing, enabling code execution or denial of service. Apple released an update for iOS and macOS; users should install the latest iMessage patch to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/apple-patches-imessage-group-chat-privacy-flaws-and-blu",
+    "publishedAt": "2026-11-10T23:04:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-imessage-group-chat-and-bluetooth-vulnerabil",
+      "article-fdd645db",
+      "fdd645db",
+      "apple-imessage-group-chat-and-bluetooth-vulnerabil-2f6048",
+      "apple-imessage-group-chat-and-bluetooth-vulnerabilities-patc"
     ]
   },
   {
@@ -136,6 +173,24 @@ export const news: NewsBrief[] = [
       "article-1aa4724a",
       "1aa4724a",
       "delve-update-fixes-important-security-bug-37d74d"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-rust-sequoia-sq-security-update-d6f979ee",
+    "title": "Red Hat Releases Rust-Sequoia-Sq Security Update",
+    "summary": "Red Hat issued a security update for the rust‑sequoia‑sq library used in Red Hat Enterprise Linux 9, addressing a flaw that could allow attackers to compromise system integrity. The vulnerability arises from improper handling of cryptographic parameters, potentially enabling unauthorized code execution or privilege escalation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97868",
+    "publishedAt": "2026-11-10T22:31:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-rust-sequoia-sq-security-update",
+      "article-d6f979ee",
+      "d6f979ee",
+      "red-hat-releases-rust-sequoia-sq-security-update-37d74d"
     ]
   },
   {
@@ -384,6 +439,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-issues-windows-10-kb5131096-security-upd-633a9a94",
+    "title": "Microsoft Issues Windows 10 KB5131096 Security Update",
+    "summary": "Microsoft released Windows 10 KB5131096 extended security update addressing multiple vulnerabilities in the operating system. The update incorporates November 2026 Patch Tuesday fixes and bug corrections, mitigating potential exploitation paths by tightening system integrity checks. Users should install the KB5131096 package via Windows Update or manual download to ensure protection against the addressed flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
+    "publishedAt": "2026-11-10T20:04:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-issues-windows-10-kb5131096-security-upd",
+      "article-633a9a94",
+      "633a9a94",
+      "microsoft-issues-windows-10-kb5131096-security-upd-61db97",
+      "microsoft-issues-windows-10-kb5131096-security-update"
+    ]
+  },
+  {
+    "slug": "chrome-stable-158-released-for-ios-084ea697",
+    "title": "Chrome Stable 158 Released for iOS",
+    "summary": "Google released Chrome Stable 158 (158.0.8127.32) for iOS, adding stability and performance improvements. The update does not introduce new security features but addresses minor bugs identified in the previous release. Users can download the update from the App Store within hours of release to maintain current browser functionality and security patches.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_01666689214.html",
+    "publishedAt": "2026-11-10T19:58:32.576Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-stable-158-released-for-ios",
+      "article-084ea697",
+      "084ea697",
+      "chrome-stable-158-released-for-ios-53b171"
+    ]
+  },
+  {
     "slug": "usn-9037-1-hplip-vulnerabilities-41bb06eb",
     "title": "USN-9037-1: HPLIP vulnerabilities",
     "summary": "An attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute arbitrary code. (CVE-2026-91097) It was discovered that HPLIP did not properly handle certain input, which could result in a heap-based buffer overflow. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2026-91100) It was discovered that HPLIP did not properly validate certain array indices.",
@@ -602,6 +694,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-97387-important-go-fdo-server-security-u-83121c52",
+    "title": "RHSA-2026:97387: Important: go-fdo-server security update",
+    "summary": "An update for go-fdo-server is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97387",
+    "publishedAt": "2026-11-10T18:53:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97387-important-go-fdo-server-security-u",
+      "article-83121c52",
+      "83121c52",
+      "rhsa-2026-97387-important-go-fdo-server-security-u-37d760",
+      "rhsa-2026-97387-important-go-fdo-server-security-update"
+    ]
+  },
+  {
     "slug": "cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4",
     "title": "CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent",
     "summary": "Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an authenticated remote user with permission to submit jobs to a queue to execute arbitrary code as the worker agent OS user and obtain the AWS credentials held by the worker agent via a crafted job that modifies the PATH environment variable.",
@@ -721,6 +832,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fireworks-ai-cloud-breach-exposes-api-keys-291af339",
+    "title": "Fireworks AI Cloud Breach Exposes API Keys",
+    "summary": "Fireworks AI suffered a cloud breach that exposed API keys, potentially allowing attackers to access proprietary AI models and data. The compromise resulted from misconfigured access controls on the cloud storage bucket, enabling unauthenticated retrieval of sensitive credentials. Fireworks AI has issued a patch and revoked exposed keys; security teams should rotate credentials and audit cloud permissions immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/fireworks-ai-discloses-new-breach-after-cloud-provider",
+    "publishedAt": "2026-11-10T18:16:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fireworks-ai-cloud-breach-exposes-api-keys",
+      "article-291af339",
+      "291af339",
+      "fireworks-ai-cloud-breach-exposes-api-keys-256025"
+    ]
+  },
+  {
     "slug": "byod-ransomware-allegedly-claims-toyota-data-breac-75240c97",
     "title": "BYOD Ransomware Allegedly Claims Toyota Data Breach",
     "summary": "The BYOD ransomware group claims it obtained personal information and kiosk device access from Toyota, though the claim remains unverified. No evidence confirms Toyota systems were breached or files were encrypted. Security teams should monitor threat actor claims and validate any reported data exposure through independent forensic analysis.",
@@ -774,6 +903,25 @@ export const news: NewsBrief[] = [
       "article-ea059d9e",
       "ea059d9e",
       "adobe-fixes-110-vulnerabilities-in-nine-products-439ac8"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97438-moderate-sssd-security-bug-fix-and-b47a5b9d",
+    "title": "RHSA-2026:97438: Moderate: sssd security, bug fix, and enhancement update",
+    "summary": "An update for sssd is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97438",
+    "publishedAt": "2026-11-10T18:06:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97438-moderate-sssd-security-bug-fix-and",
+      "article-b47a5b9d",
+      "b47a5b9d",
+      "rhsa-2026-97438-moderate-sssd-security-bug-fix-and-37d75d",
+      "rhsa-2026-97438-moderate-sssd-security-bug-fix-and-enhanceme"
     ]
   },
   {
@@ -1172,6 +1320,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "google-expands-gemini-4-carbon-access-09e43079",
+    "title": "Google Expands Gemini 4 Carbon Access",
+    "summary": "Google broadened access to its Gemini 4 Carbon platform, allowing paying developers and businesses to utilize the service. DeepMind agents built on Carbon verified libsignal security guarantees, demonstrating the platform’s capability to support secure messaging protocols. Developers should register for Carbon access through Google’s developer portal and review the updated documentation for integration guidelines.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code/",
+    "publishedAt": "2026-11-10T16:42:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-expands-gemini-4-carbon-access",
+      "article-09e43079",
+      "09e43079",
+      "google-expands-gemini-4-carbon-access-322942"
+    ]
+  },
+  {
     "slug": "unbound-vulnerabilities-allow-remote-dos-attacks-ef5422b9",
     "title": "Unbound Vulnerabilities Allow Remote DoS Attacks",
     "summary": "Unbound DNS servers on Ubuntu 20.04–26.04 LTS contain CVE‑2026‑80225 and CVE‑2026‑81634 that enable remote denial‑of‑service. The flaws stem from improper handling of TCP connections and DNSSEC responses, allowing attackers to exhaust resources or crash the resolver. Ubuntu has issued patches for all affected releases; administrators should apply updates or upgrade to mitigate the DoS risk.",
@@ -1205,6 +1371,24 @@ export const news: NewsBrief[] = [
       "article-8e029e9c",
       "8e029e9c",
       "xen-orchestra-auth-bypass-enables-vm-server-hijack-7915fe"
+    ]
+  },
+  {
+    "slug": "ca-certificates-java-jks-handling-fixed-a9bf56bf",
+    "title": "ca-certificates-java JKS Handling Fixed",
+    "summary": "Ubuntu Security Notice USN-9036-1 fixes a ca-certificates-java flaw where JKS entries were not removed when system CA certificates were deleted in some locales. The patch re‑synchronizes the JKS keystore with the system CA bundle, eliminating orphaned certificates that could disrupt trust chains. Apply the USN-9036-1 update via apt to ensure the keystore matches the current system certificates.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9036-1",
+    "publishedAt": "2026-11-10T16:16:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ca-certificates-java-jks-handling-fixed",
+      "article-a9bf56bf",
+      "a9bf56bf",
+      "ca-certificates-java-jks-handling-fixed-7e8848"
     ]
   },
   {
@@ -1302,6 +1486,60 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "xbox-remote-code-execution-via-heap-overflow-21794360",
+    "title": "Xbox Remote Code Execution via Heap Overflow",
+    "summary": "A heap-based buffer overflow in Microsoft Xbox firmware permits an unauthenticated attacker to execute arbitrary code over a network. The flaw arises from unchecked memory allocation during packet parsing, enabling remote code execution without credentials. Microsoft has released an out‑of‑band patch; users should apply the update immediately to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66801",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xbox-remote-code-execution-via-heap-overflow",
+      "article-21794360",
+      "21794360",
+      "xbox-remote-code-execution-via-heap-overflow-745bb1"
+    ]
+  },
+  {
+    "slug": "hevc-codec-integer-underflow-enables-remote-rce-3ad64dbc",
+    "title": "HEVC Codec Integer Underflow Enables Remote RCE",
+    "summary": "An integer underflow in the Windows HEVC Video Extensions codec library allows an unauthenticated attacker to execute code over a network. The vulnerability occurs when the decoder miscalculates buffer sizes during frame decoding, leading to a remote code execution path. Microsoft has issued a patch; administrators should deploy the update promptly to close the flaw.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114164",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hevc-codec-integer-underflow-enables-remote-rce",
+      "article-3ad64dbc",
+      "3ad64dbc",
+      "hevc-codec-integer-underflow-enables-remote-rce-1feaf4"
+    ]
+  },
+  {
+    "slug": "hevc-codec-heap-overflow-allows-local-rce-a3f2d730",
+    "title": "HEVC Codec Heap Overflow Allows Local RCE",
+    "summary": "A heap-based buffer overflow in the Windows HEVC Video Extensions codec library permits an unauthenticated attacker to execute code locally. The flaw is triggered by malformed video frames that cause the decoder to write beyond allocated memory, enabling local code execution. Microsoft has released a patch; users should apply the update to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114165",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hevc-codec-heap-overflow-allows-local-rce",
+      "article-a3f2d730",
+      "a3f2d730",
+      "hevc-codec-heap-overflow-allows-local-rce-1feaf4"
     ]
   },
   {
@@ -2304,6 +2542,33 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "adobe-commerce-and-magento-file-upload-rce-flaw-cv-d6c9bec3",
+    "title": "Adobe Commerce and Magento File Upload RCE Flaw (CVE-2026-48356)",
+    "summary": "Adobe Commerce and Magento contain an unrestricted file upload vulnerability (CVE-2026-48356, CVSS 9.3, CWE-434) enabling arbitrary code execution and elevated account control. CISA added the flaw to its Known Exploited Vulnerabilities catalog on Oct. 27, 2026, with federal remediation due Nov. 10, 2026, under BOD 26-04. Apply patches in Adobe bulletin APSB26-73 immediately.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-10T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-48356"
+    ],
+    "additionalSources": [
+      {
+        "source": "Adobe Security Bulletin (APSB26-73)",
+        "sourceUrl": "https://www.adobe.com/trust/security/products/commerce/apsb26-73.html"
+      }
+    ],
+    "aliases": [
+      "adobe-commerce-and-magento-file-upload-rce-flaw-cv",
+      "article-d6c9bec3",
+      "d6c9bec3",
+      "adobe-commerce-and-magento-file-upload-rce-flaw-cv-7a305a",
+      "adobe-commerce-and-magento-file-upload-rce-flaw-cve-2026-483",
+      "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+    ]
+  },
+  {
     "slug": "binance-alerts-iphone-users-to-ios-file-access-fla-4cd25477",
     "title": "Binance Alerts iPhone Users to iOS File‑Access Flaw",
     "summary": "Binance warned iPhone users about worse_query, an iOS flaw that permits malicious apps to read files belonging to other apps. Affected iOS versions 26.7.1, 27.0.1, and 27.2 could expose seed phrases, private keys, and login credentials, creating a high‑risk data leakage vector. Users should install the latest iOS updates or apply the vendor’s security patch to mitigate the file‑access vulnerability.",
@@ -2994,6 +3259,45 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "fortimanager-fgfm-elevation-exploit-allows-unauthe-d21806a6",
+    "title": "FortiManager FGFM Elevation Exploit Allows Unauthenticated Code Execution",
+    "summary": "Fortinet FortiManager FGFM contains an elevation of privilege flaw that permits unauthenticated attackers to reach the FGFM port and send crafted packets. The vulnerability, rated CVSSv3 9.0, enables remote code execution or command injection, potentially compromising the entire FortiManager infrastructure. Fortinet released a patch in the latest FortiOS update; administrators should apply it immediately and restrict FGFM port access.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-275",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimanager-fgfm-elevation-exploit-allows-unauthe",
+      "article-d21806a6",
+      "d21806a6",
+      "fortimanager-fgfm-elevation-exploit-allows-unauthe-3bcda5",
+      "fortimanager-fgfm-elevation-exploit-allows-unauthenticated-c"
+    ]
+  },
+  {
+    "slug": "heap-based-buffer-overflow-0480e745",
+    "title": "Heap-based buffer overflow",
+    "summary": "CVSSv3 Score: 7.2 A Heap-based Buffer Overflow vulnerability [CWE-122] in FortiManager, FortiManager Cloud, FortiAnalyzer and FortiAnalyzer Cloud may allow an authenticated administrator to execute unauthorized code or commands or cause a denial of service via specially crafted JSON-RPC requests. The vulnerability is tracked as CVE-2026-0250.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-232",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [
+      "CVE-2026-0250"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "heap-based-buffer-overflow",
+      "article-0480e745",
+      "0480e745",
+      "heap-based-buffer-overflow-3bcda5"
     ]
   },
   {
@@ -9369,347 +9673,6 @@ export const news: NewsBrief[] = [
       "465d016f",
       "shopify-enforces-ip-allowlisting-for-public-admin-604168",
       "shopify-enforces-ip-allowlisting-for-public-admin-api-apps"
-    ]
-  },
-  {
-    "slug": "microsoft-paint-vulnerability-cve-2026-83844-enabl-e4e3bf50",
-    "title": "Microsoft Paint Vulnerability CVE-2026-83844 Enables Remote Code Execution",
-    "summary": "Microsoft Windows Paint is affected by CVE-2026-83844, a remote code execution flaw that allows attackers to run arbitrary code via crafted image files. The vulnerability exploits a buffer overflow in the image parser, enabling zero‑click attacks without user interaction. Microsoft released an updated Paint build; users should install the patch or enable automatic updates to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/windows-paint-rce-vulnerability/",
-    "publishedAt": "2026-11-06T00:58:05.000Z",
-    "cves": [
-      "CVE-2026-83844"
-    ],
-    "additionalSources": [
-      {
-        "source": "Microsoft MSRC",
-        "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-83844"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/microsoft-paint-rce-fix-now-available-but-windows-updat"
-      }
-    ],
-    "aliases": [
-      "microsoft-paint-vulnerability-cve-2026-83844-enabl",
-      "article-e4e3bf50",
-      "e4e3bf50",
-      "microsoft-paint-vulnerability-cve-2026-83844-enabl-462017",
-      "microsoft-paint-vulnerability-cve-2026-83844-enables-remote-"
-    ]
-  },
-  {
-    "slug": "fbi-cisa-warn-of-refrigeration-system-cyberattacks-a6450a23",
-    "title": "FBI, CISA Warn of Refrigeration System Cyberattacks",
-    "summary": "The FBI and CISA have issued a warning that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide. These attacks could cause food spoilage, equipment damage, and fire hazards by exploiting vulnerabilities in control software or network interfaces. Security teams should harden refrigeration network segments, apply vendor patches, and monitor for anomalous traffic to mitigate potential compromise.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/",
-    "publishedAt": "2026-11-06T00:56:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fbi-cisa-warn-of-refrigeration-system-cyberattacks",
-      "article-a6450a23",
-      "a6450a23",
-      "fbi-cisa-warn-of-refrigeration-system-cyberattacks-d6495b"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-bind-security-update-6b2a8ce1",
-    "title": "Red Hat Releases Bind Security Update",
-    "summary": "Red Hat released a bind security and bug‑fix update for RHEL 7 ELS, targeting the DNS server. The update is rated Important, with CVSS scores for each referenced CVE, indicating high‑severity flaws. Apply the patch via standard RHEL repositories; no workarounds are listed, and the update fixes security and functional issues.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95726",
-    "publishedAt": "2026-11-06T00:07:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-bind-security-update",
-      "article-6b2a8ce1",
-      "6b2a8ce1",
-      "red-hat-releases-bind-security-update-37d83a"
-    ]
-  },
-  {
-    "slug": "eu-accuses-tiktok-of-failing-to-stop-harmful-conte-85862602",
-    "title": "EU Accuses TikTok of Failing to Stop Harmful Content",
-    "summary": "The European Commission accused TikTok of failing to stop its recommendation algorithm from leading users into rabbit holes of sadness, self‑harm, and body‑image content. The complaint indicates algorithmic design may expose users to psychologically harmful material, worsening mental health risks. TikTok must review content‑filtering policies, enhance user controls, and provide clearer disclosures to meet EU expectations.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/eu-accuses-tiktok-of-rabbit-hole-DSA-violation",
-    "publishedAt": "2026-11-06T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-accuses-tiktok-of-failing-to-stop-harmful-conte",
-      "article-85862602",
-      "85862602",
-      "eu-accuses-tiktok-of-failing-to-stop-harmful-conte-3ac78a",
-      "eu-accuses-tiktok-of-failing-to-stop-harmful-content"
-    ]
-  },
-  {
-    "slug": "chrome-158-released-for-android-users-31f86bd0",
-    "title": "Chrome 158 Released for Android Users",
-    "summary": "Google released Chrome 158 (158.0.8127.22) for Android to a limited user cohort. The update focuses on stability and performance enhancements, with no security vulnerabilities disclosed. The patch will roll out via Google Play over the next few days, and users are encouraged to report issues through the bug‑tracking system.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_0698823948.html",
-    "publishedAt": "2026-11-06T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-158-released-for-android-users",
-      "article-31f86bd0",
-      "31f86bd0",
-      "chrome-158-released-for-android-users-3ec9f2"
-    ]
-  },
-  {
-    "slug": "ai-tooling-used-to-harvest-oauth-secrets-b5c0117b",
-    "title": "AI Tooling Used to Harvest OAuth Secrets",
-    "summary": "Microsoft Threat Intelligence reports that attackers employ the ARTEX agentic AI framework to scan GitHub for exposed OAuth application secrets. Compromised OAuth apps enable attackers to perform authenticated actions within the victim tenant, potentially escalating privileges or exfiltrating data. Security teams should audit exposed secrets, rotate credentials, and enable multi‑factor authentication to mitigate this automated threat.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
-    "publishedAt": "2026-11-05T23:46:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-tooling-used-to-harvest-oauth-secrets",
-      "article-b5c0117b",
-      "b5c0117b",
-      "ai-tooling-used-to-harvest-oauth-secrets-1c28cc"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95725-important-tesseract-security-updat-5c4b413f",
-    "title": "RHSA-2026:95725: Important: tesseract security update",
-    "summary": "An update for tesseract is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95725",
-    "publishedAt": "2026-11-05T23:30:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95725-important-tesseract-security-updat",
-      "article-5c4b413f",
-      "5c4b413f",
-      "rhsa-2026-95725-important-tesseract-security-updat-37d83a",
-      "rhsa-2026-95725-important-tesseract-security-update"
-    ]
-  },
-  {
-    "slug": "google-fixes-216-android-flaws-in-november-2026-bu-9856043c",
-    "title": "Google Fixes 216 Android Flaws in November 2026 Bulletin",
-    "summary": "Google released the November 2026 Android Security Bulletin, resolving 216 vulnerabilities across core Android Framework, System, and vendor components. The bulletin details 23 critical flaws, including CVE-2026-58868, CVE-2026-58876, CVE-2026-58936, CVE-2026-55275, and CVE-2026-55283, which enable remote code execution or elevation of privilege. Devices must install the 2026-11-05 security patch level or vendor firmware updates to fully remediate the disclosed flaws.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Android Security Bulletin",
-    "sourceUrl": "https://source.android.com/docs/security/bulletin/2026/2026-11-01",
-    "publishedAt": "2026-11-05T23:15:11.150Z",
-    "cves": [
-      "CVE-2026-58868",
-      "CVE-2026-58876",
-      "CVE-2026-58936",
-      "CVE-2026-55275",
-      "CVE-2026-55283"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "google-fixes-216-android-flaws-in-november-2026-bu",
-      "article-9856043c",
-      "9856043c",
-      "google-fixes-216-android-flaws-in-november-2026-bu-1d65bf",
-      "google-fixes-216-android-flaws-in-november-2026-bulletin"
-    ]
-  },
-  {
-    "slug": "phone-return-scams-bill-victims-for-fake-returns-dfe726c7",
-    "title": "Phone Return Scams Bill Victims for Fake Returns",
-    "summary": "Phone return scams trick victims into receiving a real delivery and then billing them for a fake return. Fraudsters obtain a phone number, arrange a delivery, and later claim a return that triggers a billing charge, exploiting consumer trust. Security teams should educate users to verify return requests and monitor unexpected charges to mitigate this deceptive practice.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/threat-intel/2026/11/phone-return-scams-where-a-real-delivery-and-a-fake-return-end-up-in-a-bill-for-you",
-    "publishedAt": "2026-11-05T22:18:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phone-return-scams-bill-victims-for-fake-returns",
-      "article-dfe726c7",
-      "dfe726c7",
-      "phone-return-scams-bill-victims-for-fake-returns-33d67a"
-    ]
-  },
-  {
-    "slug": "russian-ai-driven-operation-targets-latin-american-13c0117e",
-    "title": "Russian AI‑Driven Operation Targets Latin American Schools",
-    "summary": "A Russian influence operation used AI to target schools in Peru and Ecuador, sending forged emails, fake government documents, and creating a local front organization. The campaign employed social engineering and fabricated credentials to infiltrate educational institutions, spreading disinformation and eroding public trust. Defenders should verify email authenticity, enforce document checks, and monitor anomalous access to counter future influence operations.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
-    "publishedAt": "2026-11-05T22:13:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-ai-driven-operation-targets-latin-american",
-      "article-13c0117e",
-      "13c0117e",
-      "russian-ai-driven-operation-targets-latin-american-6c95e0",
-      "russian-ai-driven-operation-targets-latin-american-schools"
-    ]
-  },
-  {
-    "slug": "queens-public-library-ransomware-attack-disrupts-w-89f6d9a1",
-    "title": "Queens Public Library Ransomware Attack Disrupts Wi‑Fi and Computers",
-    "summary": "Queens Public Library in New York City suffered a ransomware attack that crippled Wi‑Fi, computers, and checkout services across its 66 branches. The malware exploited a legacy software vulnerability and credential‑stealing technique, granting attackers administrative privileges to encrypt systems and halt services. Administrators isolated infected machines, applied emergency patches, reset credentials, and restored operations from backups while law enforcement investigated.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/queens-library-ransomware-causes-disruptions",
-    "publishedAt": "2026-11-05T22:08:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Check Point Research",
-        "sourceUrl": "https://research.checkpoint.com/2026/9th-november-threat-intelligence-report/"
-      }
-    ],
-    "aliases": [
-      "queens-public-library-ransomware-attack-disrupts-w",
-      "article-89f6d9a1",
-      "89f6d9a1",
-      "queens-public-library-ransomware-attack-disrupts-w-724a42",
-      "queens-public-library-ransomware-attack-disrupts-wi-fi-and-c"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-goose-update-for-rhel-10-2-1e87cce5",
-    "title": "Red Hat Releases Goose Update for RHEL 10.2",
-    "summary": "Red Hat has issued an important security update for the 'goose' package on Red Hat Enterprise Linux 10.2. The update fixes vulnerabilities rated Important, with CVSS scores between 7.0 and 8.9, and CVE IDs are listed in the references. Administrators should install the update promptly and verify that the 'goose' package is at the patched version to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95724",
-    "publishedAt": "2026-11-05T22:07:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-goose-update-for-rhel-10-2",
-      "article-1e87cce5",
-      "1e87cce5",
-      "red-hat-releases-goose-update-for-rhel-10-2-37d83a"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-goose-update-for-rhel-9-8-5826942c",
-    "title": "Red Hat Releases Goose Update for RHEL 9.8",
-    "summary": "Red Hat has issued an important security update for the 'goose' package on Red Hat Enterprise Linux 9.8. The update addresses vulnerabilities rated Important, with CVSS scores between 7.0 and 8.9, and CVE IDs are listed in the references. Administrators should apply the update immediately and confirm the 'goose' package is at the patched version to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95723",
-    "publishedAt": "2026-11-05T22:07:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-goose-update-for-rhel-9-8",
-      "article-5826942c",
-      "5826942c",
-      "red-hat-releases-goose-update-for-rhel-9-8-37d83a"
-    ]
-  },
-  {
-    "slug": "nikke-launcher-files-tampered-player-credentials-e-f2cc72de",
-    "title": "NIKKE Launcher Files Tampered, Player Credentials Exposed",
-    "summary": "Attackers tampered with Windows launcher files of Goddess of Victory: NIKKE, exposing player passwords and personal files. The alteration of launcher binaries and config files enabled unauthorized reading of stored credentials and local documents. Players should verify launcher integrity, reinstall the game, and apply the vendor’s patch restoring original files and updating to the latest version.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/nikke-pc-launcher-compromise-put-players-passwords-and-personal-files-at-risk",
-    "publishedAt": "2026-11-05T22:06:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nikke-launcher-files-tampered-player-credentials-e",
-      "article-f2cc72de",
-      "f2cc72de",
-      "nikke-launcher-files-tampered-player-credentials-e-427c15",
-      "nikke-launcher-files-tampered-player-credentials-exposed"
-    ]
-  },
-  {
-    "slug": "google-releases-chrome-157-for-android-with-securi-f061d9d3",
-    "title": "Google Releases Chrome 157 for Android with Security Fixes",
-    "summary": "Google released Chrome 157 for Android, aligning with the desktop version 157.0.8103.50, to provide security fixes and performance enhancements. The update contains the same security patches applied to Windows, macOS, and Linux releases, ensuring consistency without new vulnerabilities. Users should install the update via Google Play within the next few days to maintain protection and benefit from stability improvements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_01050980700.html",
-    "publishedAt": "2026-11-05T22:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Google Chrome Releases",
-        "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_01533302390.html"
-      }
-    ],
-    "aliases": [
-      "google-releases-chrome-157-for-android-with-securi",
-      "article-f061d9d3",
-      "f061d9d3",
-      "google-releases-chrome-157-for-android-with-securi-1135d4",
-      "google-releases-chrome-157-for-android-with-security-fixes"
-    ]
-  },
-  {
-    "slug": "red-hat-glibc-update-released-dc12078b",
-    "title": "Red Hat glibc Update Released",
-    "summary": "Red Hat released a glibc security update for Enterprise Linux 9, addressing multiple vulnerabilities. The update mitigates unspecified glibc flaws; CVSS scores are available via CVE links, but no specific CVE IDs are listed. Security teams should apply the patch immediately to maintain system integrity to ensure compliance with Red Hat's security policy.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95618",
-    "publishedAt": "2026-11-05T21:43:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-glibc-update-released",
-      "article-dc12078b",
-      "dc12078b",
-      "red-hat-glibc-update-released-37d83e"
-    ]
-  },
-  {
-    "slug": "dns-typos-expose-us-government-email-systems-483040ce",
-    "title": "DNS Typos Expose US Government Email Systems",
-    "summary": "Erroneous or outdated DNS records in US government email infrastructure can grant attackers unexpected control over mail routing and delivery. The misconfiguration allows attackers to spoof sender addresses, intercept messages, or redirect traffic, potentially facilitating phishing or data exfiltration. Administrators should audit DNS zones, correct stale entries, and enforce strict SPF, DKIM, and DMARC policies to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
-    "publishedAt": "2026-11-05T21:35:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dns-typos-expose-us-government-email-systems",
-      "article-483040ce",
-      "483040ce",
-      "dns-typos-expose-us-government-email-systems-1ba267"
     ]
   }
 ];

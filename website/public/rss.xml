@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 23:34:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 00:50:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>libreswan Update Fixes Security Vulnerabilities</title>
+      <link>https://secubuzz.com/news/libreswan-update-fixes-security-vulnerabilities-0f3608f7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/libreswan-update-fixes-security-vulnerabilities-0f3608f7</guid>
+      <description><![CDATA[Red Hat released a libreswan update addressing multiple security bugs and adding performance enhancements for RHEL 9. The update is rated Important, with CVSS scores available via the referenced CVE links, and fixes memory corruption and privilege escalation issues. Administrators should apply the RHSA-2026:98046 update immediately to maintain system security and compliance.]]></description>
+      <pubDate>Wed, 11 Nov 2026 00:16:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98046">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Turla Malware Exploitation Enhanced by AI Reverse Engineering</title>
       <link>https://secubuzz.com/news/turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457</link>
@@ -23,6 +32,15 @@
       <description><![CDATA[SAP issued emergency patches for critical remote code execution flaws in its software, exposing customers to code execution via malformed input. Rated CVSS 10.0, the bugs allow attackers to run arbitrary code without credentials, threatening system integrity and data confidentiality. SAP urges immediate application of the updates and monitoring for suspicious activity, as no workaround exists until patches are installed.]]></description>
       <pubDate>Tue, 10 Nov 2026 23:04:16 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/sap-patches-four-cvss-10-0-flaws-including-two-enabling">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apple iMessage Group Chat and Bluetooth Vulnerabilities Patched</title>
+      <link>https://secubuzz.com/news/apple-imessage-group-chat-and-bluetooth-vulnerabil-fdd645db</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-imessage-group-chat-and-bluetooth-vulnerabil-fdd645db</guid>
+      <description><![CDATA[Apple patched vulnerabilities in iMessage group chat and Bluetooth functionality that could allow attackers to exploit the messaging service. The flaws stem from improper input validation in group chat message handling and Bluetooth pairing, enabling code execution or denial of service. Apple released an update for iOS and macOS; users should install the latest iMessage patch to mitigate the risk.]]></description>
+      <pubDate>Tue, 10 Nov 2026 23:04:00 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/apple-patches-imessage-group-chat-privacy-flaws-and-blu">CyberNews AI</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -68,6 +86,15 @@
       <description><![CDATA[Red Hat issued an important security update for the delve tool on RHEL 9, addressing a critical bug that could affect system integrity. The advisory notes that the flaw may allow unauthorized access to privileged data, though no public exploit is reported. Users should install RHSA‑2026:97877 immediately to prevent potential privilege escalation.]]></description>
       <pubDate>Tue, 10 Nov 2026 22:32:51 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97877">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Rust-Sequoia-Sq Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-rust-sequoia-sq-security-update-d6f979ee</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-rust-sequoia-sq-security-update-d6f979ee</guid>
+      <description><![CDATA[Red Hat issued a security update for the rust‑sequoia‑sq library used in Red Hat Enterprise Linux 9, addressing a flaw that could allow attackers to compromise system integrity. The vulnerability arises from improper handling of cryptographic parameters, potentially enabling unauthorized code execution or privilege escalation.]]></description>
+      <pubDate>Tue, 10 Nov 2026 22:31:58 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97868">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -188,6 +215,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Microsoft Issues Windows 10 KB5131096 Security Update</title>
+      <link>https://secubuzz.com/news/microsoft-issues-windows-10-kb5131096-security-upd-633a9a94</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-issues-windows-10-kb5131096-security-upd-633a9a94</guid>
+      <description><![CDATA[Microsoft released Windows 10 KB5131096 extended security update addressing multiple vulnerabilities in the operating system. The update incorporates November 2026 Patch Tuesday fixes and bug corrections, mitigating potential exploitation paths by tightening system integrity checks. Users should install the KB5131096 package via Windows Update or manual download to ensure protection against the addressed flaws.]]></description>
+      <pubDate>Tue, 10 Nov 2026 20:04:36 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Chrome Stable 158 Released for iOS</title>
+      <link>https://secubuzz.com/news/chrome-stable-158-released-for-ios-084ea697</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-stable-158-released-for-ios-084ea697</guid>
+      <description><![CDATA[Google released Chrome Stable 158 (158.0.8127.32) for iOS, adding stability and performance improvements. The update does not introduce new security features but addresses minor bugs identified in the previous release. Users can download the update from the App Store within hours of release to maintain current browser functionality and security patches.]]></description>
+      <pubDate>Tue, 10 Nov 2026 19:58:32 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_01666689214.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>USN-9037-1: HPLIP vulnerabilities</title>
       <link>https://secubuzz.com/news/usn-9037-1-hplip-vulnerabilities-41bb06eb</link>
       <guid isPermaLink="true">https://secubuzz.com/news/usn-9037-1-hplip-vulnerabilities-41bb06eb</guid>
@@ -287,6 +332,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>RHSA-2026:97387: Important: go-fdo-server security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97387-important-go-fdo-server-security-u-83121c52</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97387-important-go-fdo-server-security-u-83121c52</guid>
+      <description><![CDATA[An update for go-fdo-server is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:53:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97387">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent</title>
       <link>https://secubuzz.com/news/cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4</guid>
@@ -341,6 +395,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Fireworks AI Cloud Breach Exposes API Keys</title>
+      <link>https://secubuzz.com/news/fireworks-ai-cloud-breach-exposes-api-keys-291af339</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-ai-cloud-breach-exposes-api-keys-291af339</guid>
+      <description><![CDATA[Fireworks AI suffered a cloud breach that exposed API keys, potentially allowing attackers to access proprietary AI models and data. The compromise resulted from misconfigured access controls on the cloud storage bucket, enabling unauthenticated retrieval of sensitive credentials. Fireworks AI has issued a patch and revoked exposed keys; security teams should rotate credentials and audit cloud permissions immediately.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:16:48 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/fireworks-ai-discloses-new-breach-after-cloud-provider">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>BYOD Ransomware Allegedly Claims Toyota Data Breach</title>
       <link>https://secubuzz.com/news/byod-ransomware-allegedly-claims-toyota-data-breac-75240c97</link>
       <guid isPermaLink="true">https://secubuzz.com/news/byod-ransomware-allegedly-claims-toyota-data-breac-75240c97</guid>
@@ -368,6 +431,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:97438: Moderate: sssd security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-97438-moderate-sssd-security-bug-fix-and-b47a5b9d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97438-moderate-sssd-security-bug-fix-and-b47a5b9d</guid>
+      <description><![CDATA[An update for sssd is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Tue, 10 Nov 2026 18:06:58 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:97438">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Firefox Free VPN Drops 50GB Launch Cap Until January 31</title>
       <link>https://secubuzz.com/news/firefox-free-vpn-drops-50gb-launch-cap-until-janua-7bb5b801</link>
       <guid isPermaLink="true">https://secubuzz.com/news/firefox-free-vpn-drops-50gb-launch-cap-until-janua-7bb5b801</guid>
@@ -383,78 +455,6 @@
       <description><![CDATA[An update for cockpit-files is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Tue, 10 Nov 2026 18:02:08 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:97194">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Git Addresses Six Security Vulnerabilities in Updates</title>
-      <link>https://secubuzz.com/news/git-addresses-six-security-vulnerabilities-in-upda-a1593972</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/git-addresses-six-security-vulnerabilities-in-upda-a1593972</guid>
-      <description><![CDATA[Git released updates addressing six security vulnerabilities that affected recursive clones, reference handling, merges, binary patches, and imports. The defects involve improper validation of repository metadata and could enable unauthorized code injection or data leakage. Users should install the latest Git version or apply the provided patches to secure their repositories.]]></description>
-      <pubDate>Tue, 10 Nov 2026 18:00:00 GMT</pubDate>
-      <source url="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/">GitHub Security Blog</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97386: Important: go-fdo-client security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97386-important-go-fdo-client-security-u-585d17b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97386-important-go-fdo-client-security-u-585d17b2</guid>
-      <description><![CDATA[An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:54:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97386">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97521: Important: microcode_ctl security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97521-important-microcode-ctl-security-b-18ff9260</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97521-important-microcode-ctl-security-b-18ff9260</guid>
-      <description><![CDATA[An update for microcode_ctl is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:54:38 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97521">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97193: Important: cockpit-podman security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97193-important-cockpit-podman-security-edb68059</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97193-important-cockpit-podman-security-edb68059</guid>
-      <description><![CDATA[An update for cockpit-podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:53:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97193">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97463: Moderate: polkit security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97463-moderate-polkit-security-update-3aaf68fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97463-moderate-polkit-security-update-3aaf68fe</guid>
-      <description><![CDATA[An update for polkit is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:52:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97463">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>China-Nexus Espionage Campaigns Linked via Sparrow Malware</title>
-      <link>https://secubuzz.com/news/china-nexus-espionage-campaigns-linked-via-sparrow-823b4648</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/china-nexus-espionage-campaigns-linked-via-sparrow-823b4648</guid>
-      <description><![CDATA[Three distinct threat clusters sharing infrastructure and malware code similarities have targeted telecommunications providers, government entities, military organizations, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check Point Research tracks these clusters under names SilentDelivery and related designations.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:43:23 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html">The Hacker News</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Hackers Can Exploit SAP PROXYGATE and ICM2SHELL Flaws for Unauthorized Full System Access</title>
-      <link>https://secubuzz.com/news/hackers-can-exploit-sap-proxygate-and-icm2shell-fl-d2792acf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-can-exploit-sap-proxygate-and-icm2shell-fl-d2792acf</guid>
-      <description><![CDATA[SAP has released fixes for PROXYGATE and ICM2SHELL, critical security flaws that could let attackers take control of SAP systems without signing in. Disclosed during the November 10, 2026, Security Patch Day, the vulnerabilities carry maximum CVSS scores of 10.0 and affect core components used across business applications.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:32:01 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:97456: Moderate: krb5 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-97456-moderate-krb5-security-update-142bdc41</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-97456-moderate-krb5-security-update-142bdc41</guid>
-      <description><![CDATA[An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Tue, 10 Nov 2026 17:31:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97456">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

@@ -2,6 +2,444 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-118745",
+    "slug": "cve-2026-118745",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-122",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Crafted PDB line metadata can exceed the caller-provided buffer and cause a heap out-of-bounds write.",
+    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.win-x86 to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x8x8-p968-x646"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118745"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114152",
+    "slug": "cve-2026-114152",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-121",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Attacker-controlled COFF relocation offsets can cause an out-of-bounds stack write in DiaObjectFile::ApplyFixup.",
+    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.win-x86 to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-xf35-v9jh-g65w"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114152"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-6856-87hx-p5x7",
+    "slug": "ghsa-6856-87hx-p5x7",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.TestPlatform.CLI",
+    "name": "Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-284",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. The VSTest artifact postprocessor can consume a forged executionComplete.json from another local user and execute attacker-controlled output handling.",
+    "requiredAction": "Upgrade Microsoft.TestPlatform.CLI to version 17.3.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114151",
+    "slug": "cve-2026-114151",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Microsoft Security Advisory CVE-2026-114151 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-121",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. A crafted PDB LF_DECIMAL payload can trigger an out-of-bounds stack write when processed by DIA.",
+    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.win-x86 to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fpxj-5c99-g7vj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114151"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114158",
+    "slug": "cve-2026-114158",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Microsoft Security Advisory CVE-2026-114158 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-122",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. A Portable PDB EmbeddedSource record with parent RID 0 can trigger an out-of-bounds write.",
+    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.win-x86 to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r8h3-p8p6-ggp7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114158"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114159",
+    "slug": "cve-2026-114159",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Microsoft Security Advisory CVE-2026-114159 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.7,
+    "severity": "High",
+    "cwe": "CWE-122",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. An oversized Portable PDB document name can be truncated during allocation and cause a heap out-of-bounds write.",
+    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.win-x86 to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3cgx-w6gm-fqrx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114159"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-120792",
+    "slug": "cve-2026-120792",
+    "vendor": ".NET (NuGet)",
+    "product": "Aspire.Cli",
+    "name": "Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-532",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components. Insecure temporary files used by Aspire CLI can allow a local attacker to obtain sensitive configuration information.",
+    "requiredAction": "Upgrade Aspire.Cli to version 13.6.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q6jf-24jf-m3cg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120792"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-120778",
+    "slug": "cve-2026-120778",
+    "vendor": ".NET (NuGet)",
+    "product": "Aspire.Cli",
+    "name": "Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.3,
+    "severity": "High",
+    "cwe": "CWE-379",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in the Aspire CLI. This advisory provides guidance on updating affected applications and components.",
+    "requiredAction": "Upgrade Aspire.Cli to version 13.6.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m63f-xhvm-6mv5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120778"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114154",
+    "slug": "cve-2026-114154",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.Server.HttpSys",
+    "name": "Microsoft Security Advisory CVE-2026-114154 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-401",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Malformed chunked HttpSys requests containing conflicting content-length headers can retain request and connection resources.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.Server.HttpSys to version 2.3.14 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3893-7fxc-qvff"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114154"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114157",
+    "slug": "cve-2026-114157",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.win-arm64",
+    "name": "Microsoft Security Advisory CVE-2026-114157 - ASP.NET Core Security Feature Bypass Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core's Kestrel Named Pipes transport. This advisory provides guidance on updating affected applications and components. A Kestrel named-pipe listener configured with CurrentUserOnly can lose protected namespace ownership during recovery, allowing another local user to claim the pipe path.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.win-arm64 to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7phj-vgxq-r67h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114157"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114156",
+    "slug": "cve-2026-114156",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-114156 - ASP.NET Core Security Feature Bypass Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 5.7,
+    "severity": "Medium",
+    "cwe": "CWE-41",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. PathString.StartsWithSegments can mishandle percent-encoded backslashes and permit authorization checks to match an unintended path.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 11.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8w29-6cjc-h6w4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114156"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114147",
+    "slug": "cve-2026-114147",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.SignalR.StackExchangeRedis",
+    "name": "Microsoft Security Advisory CVE-2026-114147 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-401",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. SignalR Redis scale-out can mishandle case-mismatched group removal and leave subscriptions in a state that permits persistent resource amplification and denial of service.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.SignalR.StackExchangeRedis to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wr8v-9x5q-ggcm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114147"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-109478",
+    "slug": "cve-2026-109478",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-109478 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Processing comma-separated HTTP header values can cause excessive allocations and resource exhaustion.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 8.0.34 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r3qf-p3jm-8h4p"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109478"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114146",
+    "slug": "cve-2026-114146",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.Http.Connections",
+    "name": "Microsoft Security Advisory CVE-2026-114146 - ASP.NET Core Elevation of Privilege Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 7.8,
+    "severity": "High",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. SignalR connections are not consistently bound to the identity negotiated at connection establishment, allowing injected messages to execute Hub invocations as the victim.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.Http.Connections to version 1.2.14 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-67wp-ghc2-fw2g"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114146"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114150",
+    "slug": "cve-2026-114150",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-114150 - ASP.NET Core Information Disclosure Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 5.2,
+    "severity": "Medium",
+    "cwe": "CWE-908",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. A reused ResponseBufferingStream can retain pooled tail memory and expose response-body data from another request through HTTP logging.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 11.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6vjv-7wm8-p67r"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114150"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-118748",
+    "slug": "cve-2026-118748",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Microsoft Security Advisory CVE-2026-118748 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-770",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Blazor static-SSR client validation retains attacker-controlled rendered field names in an unbounded singleton cache, allowing remote process memory exhaustion.",
+    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 11.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5h82-77p6-2wp3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118748"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-114155",
+    "slug": "cve-2026-114155",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.DotNet.HotReload.Watch.Aspire",
+    "name": "Microsoft Security Advisory CVE-2026-114155 - .NET Elevation of Privilege Vulnerability",
+    "dateAdded": "2026-11-11",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-367",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in the .NET SDK's dotnet-watch component. This advisory provides guidance on updating affected SDK installations. A local attacker who can replace or modify a temporary solution file used by dotnet-watch can alter a subsequent build.",
+    "requiredAction": "Upgrade Microsoft.DotNet.HotReload.Watch.Aspire to version 10.0.404 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q7j6-px74-p2vw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114155"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-124194",
     "slug": "cve-2026-124194",
     "vendor": "Microsoft",
@@ -664,6 +1102,28 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
+    "cve": "GHSA-cfv6-4v53-fff6",
+    "slug": "ghsa-cfv6-4v53-fff6",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-122",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-x8x8-p968-x646. This link is maintained to preserve external references. Heap-based buffer overflow in Visual Studio allows an unauthorized attacker to execute code over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cfv6-4v53-fff6"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-95x6-7hq8-2c37",
     "slug": "ghsa-95x6-7hq8-2c37",
     "vendor": ".NET (NuGet)",
@@ -681,6 +1141,28 @@ export const advisories: Advisory[] = [
       {
         "label": "GitHub Advisory",
         "url": "https://github.com/advisories/GHSA-95x6-7hq8-2c37"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-cjjx-gv54-83qh",
+    "slug": "ghsa-cjjx-gv54-83qh",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114158 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-122",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-r8h3-p8p6-ggp7. This link is maintained to preserve external references. Heap-based buffer overflow in Visual Studio allows an unauthorized attacker to execute code over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cjjx-gv54-83qh"
       }
     ],
     "source": "GITHUB"
@@ -708,6 +1190,28 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
+    "cve": "GHSA-6rff-vv3p-7mrw",
+    "slug": "ghsa-6rff-vv3p-7mrw",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114159 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-122",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-3cgx-w6gm-fqrx. This link is maintained to preserve external references. Heap-based buffer overflow in Visual Studio allows an unauthorized attacker to execute code over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6rff-vv3p-7mrw"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-49q5-vjx7-5gwr",
     "slug": "ghsa-49q5-vjx7-5gwr",
     "vendor": ".NET (NuGet)",
@@ -730,6 +1234,50 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
+    "cve": "GHSA-mqcg-252r-5fj7",
+    "slug": "ghsa-mqcg-252r-5fj7",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114151 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-121",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-fpxj-5c99-g7vj. This link is maintained to preserve external references. Deserialization of untrusted data in Visual Studio allows an unauthorized attacker to execute code over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mqcg-252r-5fj7"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-hm4p-mv9w-4w8f",
+    "slug": "ghsa-hm4p-mv9w-4w8f",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.NETCore.App.Runtime.win-x86",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 8.8,
+    "severity": "High",
+    "cwe": "CWE-121",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-xf35-v9jh-g65w. This link is maintained to preserve external references. Stack-based buffer overflow in Visual Studio allows an unauthorized attacker to execute code over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-hm4p-mv9w-4w8f"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-gxg8-5rwf-cg43",
     "slug": "ghsa-gxg8-5rwf-cg43",
     "vendor": ".NET (NuGet)",
@@ -747,6 +1295,50 @@ export const advisories: Advisory[] = [
       {
         "label": "GitHub Advisory",
         "url": "https://github.com/advisories/GHSA-gxg8-5rwf-cg43"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-wrm2-c2h2-4w82",
+    "slug": "ghsa-wrm2-c2h2-4w82",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-109478 - ASP.NET Core Denial of Service Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-r3qf-p3jm-8h4p. This link is maintained to preserve external references. Inefficient algorithmic complexity in ASP.NET Core allows an unauthorized attacker to deny service over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-wrm2-c2h2-4w82"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-r33q-3g5w-gqx6",
+    "slug": "ghsa-r33q-3g5w-gqx6",
+    "vendor": ".NET (NuGet)",
+    "product": "Microsoft.TestPlatform.CLI",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "—",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-6856-87hx-p5x7. This link is maintained to preserve external references. Improper access control in .NET allows an authorized attacker to elevate privileges locally.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r33q-3g5w-gqx6"
       }
     ],
     "source": "GITHUB"
@@ -799,630 +1391,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126075"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126073",
-    "slug": "cve-2026-126073",
-    "vendor": "RubyGems",
-    "product": "actionpack",
-    "name": "Action Pack: Possible cache poisoning in Action Pack content negotiation",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 4.8,
-    "severity": "Medium",
-    "cwe": "CWE-436",
-    "ransomware": false,
-    "description": "Action Pack negotiates the format of a rendered response from the Accept, X-Requested-With and, for XHR requests without Accept, Content-Type request headers, but ActionController::Rendering#_set_vary_header adds Vary: Accept only when the request carries a usable Accept header and the response has no Vary header yet.",
-    "requiredAction": "Upgrade actionpack to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r9jg-fmfx-2gv6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126073"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126067",
-    "slug": "cve-2026-126067",
-    "vendor": "RubyGems",
-    "product": "actionpack",
-    "name": "Action Pack: Missing SameSite attribute on session cookies from Action Pack session stores",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 3.1,
-    "severity": "Low",
-    "cwe": "CWE-352",
-    "ransomware": false,
-    "description": "Action Pack session stores other than ActionDispatch::Session::CookieStore (CacheStore, MemCacheStore, and third-party stores built on AbstractStore, AbstractSecureStore or the session mixins) write the session cookie without a SameSite attribute, regardless of config.action_dispatch.cookies_same_site_protection, which defaults to :lax. Only CookieStore applies the configured policy.",
-    "requiredAction": "Upgrade actionpack to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gmj8-hvj3-49mw"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126067"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126071",
-    "slug": "cve-2026-126071",
-    "vendor": "RubyGems",
-    "product": "activestorage",
-    "name": "Active Storage: Possible DoS vulnerability in Active Storage proxy mode via storage errors during streaming",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-772",
-    "ransomware": false,
-    "description": "When Active Storage serves a file through its proxy controllers, ActiveStorage::Streaming#send_blob_stream handles an error from the storage service by calling head to send a 404 or 500 response.",
-    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4v2w-w6g6-f8f8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126071"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126083",
-    "slug": "cve-2026-126083",
-    "vendor": "RubyGems",
-    "product": "actionpack",
-    "name": "Action Pack: Possible IP spoofing in Action Dispatch RemoteIp",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.4,
-    "severity": "High",
-    "cwe": "CWE-348",
-    "ransomware": false,
-    "description": "Since Rails 8.1.0, ActionDispatch::RemoteIp derives request.remote_ip from Rack::Request#forwarded_for, which under Rack 3 reads the RFC 7239 Forwarded header in preference to X-Forwarded-For.",
-    "requiredAction": "Upgrade actionpack to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2gff-2mmg-m73p"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126083"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126076",
-    "slug": "cve-2026-126076",
-    "vendor": "RubyGems",
-    "product": "actionpack",
-    "name": "Action Pack: Possible restoration of destroyed sessions in Action Dispatch CacheStore",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 4.2,
-    "severity": "Medium",
-    "cwe": "CWE-613",
-    "ransomware": false,
-    "description": "ActionDispatch::Session::CacheStore writes a session back to the cache at the end of each request that loaded it, without checking that the session's cache entry still exists.",
-    "requiredAction": "Upgrade actionpack to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2586-8ghr-69fj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126076"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125335",
-    "slug": "cve-2026-125335",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: Ed25519 signature verification accepts small-order public keys",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-347",
-    "ransomware": false,
-    "description": "ed25519.verify() does not reject public keys of small order, such as the identity point. Under such a key, a signature with S = 0 and a small-order R verifies for many messages, or for every message with the identity key, without any private key. Fixed in node-forge 1.4.3.",
-    "requiredAction": "Upgrade node-forge to version 1.4.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6889-vf6x-f3g5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125335"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125332",
-    "slug": "cve-2026-125332",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: TLS client crash on an unsupported ServerHello compression method",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "A forge.tls client accepts any compression method in the ServerHello, although it only offers no compression. An unknown method makes connection.process() throw an uncaught Error when the client handles ServerHelloDone, before the server is authenticated. A malicious server or an on-path attacker can use this to terminate a Node.js process. Fixed in node-forge 1.4.3.",
-    "requiredAction": "Upgrade node-forge to version 1.4.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w4xr-hqv8-ch44"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125332"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125333",
-    "slug": "cve-2026-125333",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: ReDoS in forge.http response header and cookie trimming",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-1333",
-    "ransomware": false,
-    "description": "forge.http trims response header and Set-Cookie values with the regular expression /\\s$/, which takes quadratic time on a long run of whitespace followed by another character. A server or on-path attacker can block a forge.http client for minutes with one large response header. Fixed in node-forge 1.4.3. _trimString() in lib/http.js removes trailing whitespace with str.replace(/\\s$/, '').",
-    "requiredAction": "Upgrade node-forge to version 1.4.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6cv4-p8m7-4r25"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125333"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125334",
-    "slug": "cve-2026-125334",
-    "vendor": "npm",
-    "product": "node-forge",
-    "name": "Forge: TLS client crash on a handshake record received without a session",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-476",
-    "ransomware": false,
-    "description": "A forge.tls client throws an uncaught TypeError from connection.process() when it receives a ServerHello while it has no session: after a close_notify alert or a call to close(), or before handshake() is called. A malicious server or an on-path attacker can use this to terminate a Node.js process. Fixed in node-forge 1.4.3.",
-    "requiredAction": "Upgrade node-forge to version 1.4.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-j8rw-jp99-435v"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125334"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126066",
-    "slug": "cve-2026-126066",
-    "vendor": "npm",
-    "product": "fast-xml-parser",
-    "name": "fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "With the non-default stopNodes option, a stop node's body with many \" \" anywhere after makes readStopNodeData() rescan the entire remaining input from every \"<\". The failed lookahead is neither cached nor bounded, so n fragments cost O(n²) before the parser throws. Availability-only (CPU exhaustion), needs the non-default stopNodes option — not benchmarked yet, see Proof of Concept.",
-    "requiredAction": "Upgrade fast-xml-parser to version 5.12.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-474x-hrwr-fgx4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126066"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125116",
-    "slug": "cve-2026-125116",
-    "vendor": "npm",
-    "product": "mongoose",
-    "name": "Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 4.8,
-    "severity": "Medium",
-    "cwe": "CWE-843",
-    "ransomware": false,
-    "description": "Mongoose chooses which discriminator model or schema to use by looking up the discriminator key value (t by default) in a plain object of registered discriminators, for example Model.discriminators[doc.t]. That value comes from user documents and query filters.",
-    "requiredAction": "Upgrade mongoose to version 6.13.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wr5m-5jph-8m96"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125116"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125117",
-    "slug": "cve-2026-125117",
-    "vendor": "npm",
-    "product": "mongoose",
-    "name": "Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.2,
-    "severity": "High",
-    "cwe": "CWE-1321",
-    "ransomware": false,
-    "description": "Three Mongoose code paths copy data into objects by property name without checking whether the property is the object's own or inherited from its prototype: 1. Loading a document from the database (init(), also used by Model.hydrate()) 2. Setting a dotted path on a document ($set, used by new Model(obj), doc.set() and doc.$set()) 3.",
-    "requiredAction": "Upgrade mongoose to version 6.13.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8332-j7wj-wjw4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125117"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126062",
-    "slug": "cve-2026-126062",
-    "vendor": "RubyGems",
-    "product": "nokogiri",
-    "name": "JRuby: NONET is bypassed for external DTDs and entities when the systemId uses a short-form IPv4 host",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-611",
-    "ransomware": false,
-    "description": "On JRuby, the NONET parse option did not block an external DTD or entity whose system identifier used a short-form IPv4 host, such as or or was an absolute path such as /x.dtd in a document parsed from a network URL. An application that parses untrusted XML with DTDLOAD, DTDVALID or NOENT could be made to send network requests, potentially enabling SSRF.",
-    "requiredAction": "Upgrade nokogiri to version 1.19.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v995-44v6-5fqm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126062"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126064",
-    "slug": "cve-2026-126064",
-    "vendor": "RubyGems",
-    "product": "nokogiri",
-    "name": "Nokogiri: Use-After-Free in Nokogiri when replacing an attribute value",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2,
-    "severity": "Low",
-    "cwe": "CWE-416",
-    "ransomware": false,
-    "description": "Nokogiri's CRuby native extension could leave a Ruby wrapper pointing to freed memory when replacing the value of an existing XML attribute via Nokogiri::XML::Node#[]= or Nokogiri::XML::Node#lang=. If Ruby code had already accessed the attribute's child nodes, replacing the value could free those native child nodes while their wrappers remained reachable.",
-    "requiredAction": "Upgrade nokogiri to version 1.19.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3w22-6jfg-527w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126064"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126063",
-    "slug": "cve-2026-126063",
-    "vendor": "RubyGems",
-    "product": "nokogiri",
-    "name": "Nokogiri: Mutation XSS through `noscript` content in Nokogiri's HTML5 serializer",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "Nokogiri's HTML5 serializer did not escape text inside noscript elements, or < and > inside attribute values. When a document parsed with the default options is serialized, a browser with scripting enabled can parse the output into markup that Nokogiri's parser never produced.",
-    "requiredAction": "Upgrade nokogiri to version 1.19.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4p39-36wj-23h4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126063"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125118",
-    "slug": "cve-2026-125118",
-    "vendor": "npm",
-    "product": "mongoose",
-    "name": "Mongoose: Prototype pollution via Schema.prototype.virtual()",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-1321",
-    "ransomware": false,
-    "description": "Prototype pollution via Schema.prototype.virtual() — the 2022 fix for CVE-2022-2564 / CVE-2022-24304 protected Schema.path()/add() but never virtual(), so the same class of bug is still exploitable in all maintained release lines.",
-    "requiredAction": "Upgrade mongoose to version 6.13.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6972-9mcm-vhwj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125118"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125119",
-    "slug": "cve-2026-125119",
-    "vendor": "npm",
-    "product": "mongoose",
-    "name": "Mongoose: Connection-level sanitizeFilter not applied",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-943",
-    "ransomware": false,
-    "description": "sanitizeFilter exists to stop query selector injection: it wraps operator objects such as { $ne: null } in filter values in $eq, so they are matched literally. Set on a connection with mongoose.connect() or createConnection(uri, { sanitizeFilter: true }), the connection reports it as enabled but queries never apply it.",
-    "requiredAction": "Upgrade mongoose to version 6.13.12 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gg4r-jv3p-qx3c"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125119"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125120",
-    "slug": "cve-2026-125120",
-    "vendor": "npm",
-    "product": "mongoose",
-    "name": "Mongoose: sanitizeFilter not applied on countDocuments",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 9.8,
-    "severity": "Critical",
-    "cwe": "CWE-943",
-    "ransomware": false,
-    "description": "sanitizeFilter is Mongoose's mechanism for protecting against query selector injection attacks. In older versions of Mongoose, sanitizeFilter was not applied for countDocuments() queries. Patches have been released for all supported Mongoose major release lines. Please upgrade to the following versions depending on which major version of Mongoose applications are using. 1. ^9.9.2 2. ^8.24.3 3.",
-    "requiredAction": "Upgrade mongoose to version 6.13.11 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-pcrw-h46h-c93h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125120"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125111",
-    "slug": "cve-2026-125111",
-    "vendor": "RubyGems",
-    "product": "rack",
-    "name": "Rack: Multipart parsing allows DoS via unbounded scan buffer growth",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.7,
-    "severity": "High",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "Rack::Multipart::Parser reads the request body in chunks of rack.multipart.buffer_size (1 MiB by default) into an internal scan buffer. Parsed bytes are only discarded from that buffer when a chunk ends inside a part body. A request whose parts are sized so that every chunk ends inside, or immediately after, a part's headers is never compacted, so the buffer grows to the size of the request.",
-    "requiredAction": "Upgrade rack to version 2.2.25 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5v64-555j-wjxm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125111"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125108",
-    "slug": "cve-2026-125108",
-    "vendor": "RubyGems",
-    "product": "rack",
-    "name": "Rack: Multipart boundary ambiguity guard in Rack::Multipart::Parser can be bypassed with a quoted boundary value, allowing WAF bypass",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-436",
-    "ransomware": false,
-    "description": "The guard added for CVE-2026-26961 (GHSA-vgpv-f759-9wx3), which rejects multipart requests with more than one boundary parameter, only inspects the part of the Content-Type header after the boundary it extracts.",
-    "requiredAction": "Upgrade rack to version 2.2.25 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p8x9-v4hv-2w4g"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125108"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-79914",
-    "slug": "cve-2026-79914",
-    "vendor": "npm",
-    "product": "@nocobase/plugin-action-custom-request",
-    "name": "NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-918",
-    "ransomware": false,
-    "description": "A Server-Side Request Forgery vulnerability exists in NocoBase v2.1.10 in the @nocobase/plugin-action-custom-request plugin. A low-privileged authenticated user can call the customRequests:send endpoint and override the stored request URL at runtime using options.url. This causes the NocoBase server to perform outbound HTTP requests to attacker-controlled or internal URLs.",
-    "requiredAction": "Upgrade @nocobase/plugin-action-custom-request to version 2.1.15 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wrr5-j383-f7h2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79914"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125109",
-    "slug": "cve-2026-125109",
-    "vendor": "RubyGems",
-    "product": "rack",
-    "name": "Rack: Rack::Request#host_with_port (and #base_url / #url) return the raw invalid Host header — incomplete fix of CVE-2026-34835",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 4.8,
-    "severity": "Medium",
-    "cwe": "CWE-1286",
-    "ransomware": false,
-    "description": "Rack::Request#host_with_port, and therefore #base_url and #url, return the raw authority string when it fails validation. An attacker-controlled Host, X-Forwarded-Host, or Forwarded: host= value containing characters that are not permitted in an authority is embedded verbatim in URLs generated by the application.",
-    "requiredAction": "Upgrade rack to version 3.1.23 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2j8w-xcrc-x985"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125109"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125110",
-    "slug": "cve-2026-125110",
-    "vendor": "RubyGems",
-    "product": "rack",
-    "name": "Rack: Rack::Static header_rules bypass via dot-segment normalization mismatch",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-180",
-    "ransomware": false,
-    "description": "Rack::Static normalizes the request path with Utils.clean_path_info when deciding which file to serve, but matches header_rules against a path that is only URL-decoded. A request containing dot segments, raw or percent-encoded, is served the normalized target file while the header rules for that file's location are not applied.",
-    "requiredAction": "Upgrade rack to version 2.2.25 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wvg4-6p58-3gh3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125110"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125121",
-    "slug": "cve-2026-125121",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-117",
-    "ransomware": false,
-    "description": "0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in everything compose-lint prints, and the 0.31.0 changelog says the report \"escapes both openers (also covering Azure Pipelines)\". Five paths were left open: - Unicode whitespace before a line-leading ::.",
-    "requiredAction": "Upgrade compose-lint to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r7j4-crjv-h467"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125121"
       }
     ],
     "source": "GITHUB"
