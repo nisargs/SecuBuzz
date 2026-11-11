@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cisa-flags-cisco-broadworks-flaw-as-actively-explo-f54e59e8",
+    "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+    "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. The vulnerability is tracked as CVE-2026-20320.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
+    "publishedAt": "2026-11-11T10:12:08.000Z",
+    "cves": [
+      "CVE-2026-20320"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-flags-cisco-broadworks-flaw-as-actively-explo",
+      "article-f54e59e8",
+      "f54e59e8",
+      "cisa-flags-cisco-broadworks-flaw-as-actively-explo-33ad49",
+      "cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-at"
+    ]
+  },
+  {
     "slug": "grafana-update-released-for-rhel9-d84570bf",
     "title": "Grafana update released for RHEL9",
     "summary": "Red Hat released a security update for Grafana on RHEL 9, addressing vulnerabilities that could enable unauthorized access or data leakage. The update patches each flaw, with CVSS scores available via CVE references, though no specific CVE IDs are listed. Apply the update through RHEL 9 package manager to eliminate the risks and maintain system integrity.",
@@ -44,6 +65,44 @@ export const news: NewsBrief[] = [
       "article-a0a12207",
       "a0a12207",
       "xwayland-update-released-for-rhel-9-4-37d6e5"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98549-important-xorg-x11-server-xwayland-7ddcf94b",
+    "title": "RHSA-2026:98549: Important: xorg-x11-server-Xwayland security update",
+    "summary": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98549",
+    "publishedAt": "2026-11-11T09:16:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98549-important-xorg-x11-server-xwayland",
+      "article-7ddcf94b",
+      "7ddcf94b",
+      "rhsa-2026-98549-important-xorg-x11-server-xwayland-37d6e5",
+      "rhsa-2026-98549-important-xorg-x11-server-xwayland-security-"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98546-important-xorg-x11-server-xwayland-57ae424b",
+    "title": "RHSA-2026:98546: Important: xorg-x11-server-Xwayland security update",
+    "summary": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98546",
+    "publishedAt": "2026-11-11T09:10:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98546-important-xorg-x11-server-xwayland",
+      "article-57ae424b",
+      "57ae424b",
+      "rhsa-2026-98546-important-xorg-x11-server-xwayland-37d6e5",
+      "rhsa-2026-98546-important-xorg-x11-server-xwayland-security-"
     ]
   },
   {
@@ -297,6 +356,43 @@ export const news: NewsBrief[] = [
       "dec52944",
       "fortinet-forticlient-rce-via-fortipam-exploit-cve-6eb845",
       "fortinet-forticlient-rce-via-fortipam-exploit-cve-2026-12152"
+    ]
+  },
+  {
+    "slug": "eu-cyber-resilience-act-reporting-obligations-expl-974bcf91",
+    "title": "EU Cyber Resilience Act Reporting Obligations Explained",
+    "summary": "The EU Cyber Resilience Act requires manufacturers to register every product version still in use. Effective September 2026, the regulation defines when a company learns of an exploited flaw and urges CISOs to query suppliers on vulnerability handling and CE marking. Manufacturers must keep product registers current and provide clear vulnerability disclosure timelines to meet reporting duties.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/aurimas-bakas-copla-cra-vulnerability-reporting/",
+    "publishedAt": "2026-11-11T07:00:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "eu-cyber-resilience-act-reporting-obligations-expl",
+      "article-974bcf91",
+      "974bcf91",
+      "eu-cyber-resilience-act-reporting-obligations-expl-299b7a",
+      "eu-cyber-resilience-act-reporting-obligations-explained"
+    ]
+  },
+  {
+    "slug": "apple-fixes-bluetooth-airplay-pairing-flaws-28a73ab6",
+    "title": "Apple Fixes Bluetooth, AirPlay Pairing Flaws",
+    "summary": "Apple patched Bluetooth and AirPlay pairing flaws, iMessage vulnerabilities, and an exploited Brotli bug across its platforms. The vulnerabilities allowed unauthorized pairing and message tampering, potentially enabling data exfiltration or denial of service on affected devices. Apple released security updates for macOS, iOS, iPadOS, and tvOS; users should install the latest patches to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/bluetooth-airplay-pairing-vulnerabilities-patched-across-apple-platforms/",
+    "publishedAt": "2026-11-11T07:00:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-fixes-bluetooth-airplay-pairing-flaws",
+      "article-28a73ab6",
+      "28a73ab6",
+      "apple-fixes-bluetooth-airplay-pairing-flaws-7d6b0c"
     ]
   },
   {
@@ -658,6 +754,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-98121-important-openssl-security-update-f3438212",
+    "title": "RHSA-2026:98121: Important: openssl security update",
+    "summary": "An update for openssl is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98121",
+    "publishedAt": "2026-11-11T01:57:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98121-important-openssl-security-update",
+      "article-f3438212",
+      "f3438212",
+      "rhsa-2026-98121-important-openssl-security-update-37d6f4"
+    ]
+  },
+  {
     "slug": "rhsa-2026-98111-critical-python-pillow-security-up-cd2b292b",
     "title": "RHSA-2026:98111: Critical: python-pillow security update",
     "summary": "An update for python-pillow is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Critical.",
@@ -674,6 +788,25 @@ export const news: NewsBrief[] = [
       "cd2b292b",
       "rhsa-2026-98111-critical-python-pillow-security-up-37d6f4",
       "rhsa-2026-98111-critical-python-pillow-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98118-important-python-oauthlib-security-05791297",
+    "title": "RHSA-2026:98118: Important: python-oauthlib security update",
+    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98118",
+    "publishedAt": "2026-11-11T01:54:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98118-important-python-oauthlib-security",
+      "article-05791297",
+      "05791297",
+      "rhsa-2026-98118-important-python-oauthlib-security-37d6f4",
+      "rhsa-2026-98118-important-python-oauthlib-security-update"
     ]
   },
   {
@@ -2679,6 +2812,27 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "windows-ad-cs-bypass-exploits-certificate-validati-12d1c61c",
+    "title": "Windows AD CS Bypass Exploits Certificate Validation Flaw",
+    "summary": "CVE-2026-105590 lets an authorized attacker bypass a security feature in Windows Active Directory Certificate Services through improper certificate validation over a network. The flaw permits issuance or modification of certificates without proper validation, enabling man‑in‑the‑middle attacks or unauthorized domain access. Microsoft issued a patch for Windows 10, 11, and Server 2022; administrators should apply it and review certificate issuance policies.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105590",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-105590"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-ad-cs-bypass-exploits-certificate-validati",
+      "article-12d1c61c",
+      "12d1c61c",
+      "windows-ad-cs-bypass-exploits-certificate-validati-1ff888",
+      "windows-ad-cs-bypass-exploits-certificate-validation-flaw"
     ]
   },
   {
@@ -4865,6 +5019,44 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "improper-neutralization-of-special-elements-used-i-8a3d6063",
+    "title": "Improper neutralization of special elements used in an SQL command",
+    "summary": "CVSSv3 Score: 8.8 An improper neutralization of special elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] in FortiAnalyzer, FortiAnalyzer Cloud, FortiManager and FortiManager Cloud may allow an authenticated attacker to execute unauthorized code or commands via crafted JSON-RPC requests.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-221",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "improper-neutralization-of-special-elements-used-i",
+      "article-8a3d6063",
+      "8a3d6063",
+      "improper-neutralization-of-special-elements-used-i-3bcda6",
+      "improper-neutralization-of-special-elements-used-in-an-sql-c"
+    ]
+  },
+  {
+    "slug": "fortinet-patches-sql-injection-vulnerability-in-co-8467f4d3",
+    "title": "Fortinet Patches SQL Injection Vulnerability in Collectoragent",
+    "summary": "Fortinet disclosed an SQL injection vulnerability affecting the collectoragent component in its enterprise security software. Tracked with a CVSSv3 score of 8.3, the flaw stems from improper neutralization of special elements within SQL commands. An authenticated attacker can leverage HTTP requests to execute unauthorized code or system commands, prompting Fortinet to revise its advisory.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-266",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-patches-sql-injection-vulnerability-in-co",
+      "article-8467f4d3",
+      "8467f4d3",
+      "fortinet-patches-sql-injection-vulnerability-in-co-3bcda5",
+      "fortinet-patches-sql-injection-vulnerability-in-collectorage"
     ]
   },
   {
@@ -9372,206 +9564,6 @@ export const news: NewsBrief[] = [
       "article-f3f6f544",
       "f3f6f544",
       "sharepoint-cve-2025-53770-exploited-by-storm-2603-2c32f9"
-    ]
-  },
-  {
-    "slug": "cisa-reports-rce-exploitation-of-cve-2023-1380-6bc78273",
-    "title": "CISA Reports RCE Exploitation of CVE-2023-1380",
-    "summary": "CISA identified active exploitation of CVE-2023-1380, a remote code execution vulnerability in unspecified software. The flaw allows attackers to execute arbitrary code without authentication, potentially compromising system integrity and confidentiality. Immediate patching is required; apply vendor‑issued updates, enable network segmentation, enforce least‑privilege access controls, and monitor for suspicious activity to mitigate exposure.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisa-adds-one-known-exploited-vulnerability-to-catalog",
-    "publishedAt": "2026-11-07T00:30:32.000Z",
-    "cves": [
-      "CVE-2023-1380"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-reports-rce-exploitation-of-cve-2023-1380",
-      "article-6bc78273",
-      "6bc78273",
-      "cisa-reports-rce-exploitation-of-cve-2023-1380-2064de"
-    ]
-  },
-  {
-    "slug": "claude-dispatch-browser-extension-enables-code-exe-4df853f7",
-    "title": "Claude Dispatch Browser Extension Enables Code Execution",
-    "summary": "A code‑execution vulnerability in the Claude Dispatch browser extension allows attackers to run arbitrary code within the host environment. The flaw, identified as CVE‑2026‑119977, is exploitable via a malicious add‑on and could lead to credential theft or system compromise. Users should update to the latest extension version or disable the add‑on to eliminate the execution risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/malicious-browser-extensions-could-use-claude-dispatch",
-    "publishedAt": "2026-11-07T00:20:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-dispatch-browser-extension-enables-code-exe",
-      "article-4df853f7",
-      "4df853f7",
-      "claude-dispatch-browser-extension-enables-code-exe-580ae5",
-      "claude-dispatch-browser-extension-enables-code-execution"
-    ]
-  },
-  {
-    "slug": "sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables-c701e62e",
-    "title": "SonicWall SSLVPN MFA Bypass (CVE‑2026‑19868) Enables Remote Code Execution",
-    "summary": "SonicWall SSLVPN suffered a critical MFA bypass flaw (CVE‑2026‑19868) that lets attackers gain unauthenticated access to corporate networks. The vulnerability stems from improper validation of authentication tokens during the SSLVPN handshake, enabling remote code execution and credential‑reuse attacks. SonicWall urges immediate firmware updates and stricter MFA enforcement to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
-    "publishedAt": "2026-11-07T00:00:55.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/sonicos-sslvpn-vulnerability-exploited/"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-19868-how-to-detect-patch-sonicwall-ssl-vpn-mf"
-      }
-    ],
-    "aliases": [
-      "sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables",
-      "article-c701e62e",
-      "c701e62e",
-      "sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables-578c67",
-      "sonicwall-sslvpn-mfa-bypass-cve-2026-19868-enables-remote-co"
-    ]
-  },
-  {
-    "slug": "esxi-ransomware-exploits-weak-access-controls-7484dbee",
-    "title": "ESXi Ransomware Exploits Weak Access Controls",
-    "summary": "The ESXi hypervisor was hit by ransomware that exploited weak access controls and misconfigurations to gain administrative privileges. Attackers encrypted virtual machine files with a cryptolocker payload, demanding payment to restore access, and the breach was detected via anomalous credential usage. VMware issued a security advisory urging immediate patching, stricter ESXi authentication, and least‑privilege access controls to mitigate future attacks.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/virtualization-security-attack-layers-and-misconfigurat",
-    "publishedAt": "2026-11-07T00:00:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "esxi-ransomware-exploits-weak-access-controls",
-      "article-7484dbee",
-      "7484dbee",
-      "esxi-ransomware-exploits-weak-access-controls-4379ca"
-    ]
-  },
-  {
-    "slug": "fake-security-tools-host-backdoors-and-infostealer-c863cfec",
-    "title": "Fake Security Tools Host Backdoors and Infostealers on GitHub",
-    "summary": "Malicious backdoors and infostealers have been found in counterfeit security tool repositories on GitHub, exposing users to credential theft. The flaw results from malicious code injection during repository creation, lacking code review, and can be exploited by anyone cloning the repo. Security teams should audit cloned repos, use official tool versions, and deploy detection rules to flag suspicious binaries.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fake-security-tools-on-github-push-backdoors-and-infost",
-    "publishedAt": "2026-11-06T23:50:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fake-security-tools-host-backdoors-and-infostealer",
-      "article-c863cfec",
-      "c863cfec",
-      "fake-security-tools-host-backdoors-and-infostealer-19c8f9",
-      "fake-security-tools-host-backdoors-and-infostealers-on-githu"
-    ]
-  },
-  {
-    "slug": "cwp-server-cwpdoor-backdoor-enables-hidden-command-563cb2ab",
-    "title": "CWP Server cwpdoor Backdoor Enables Hidden Command Execution",
-    "summary": "CWP Server contains a hidden backdoor, cwpdoor, that permits remote command execution when an attacker gains access to the server. The backdoor is triggered via a concealed command interface, enabling attackers to run arbitrary commands without detection, posing a significant operational risk. Administrators should review telemetry, deploy detection rules, and apply the vendor patch immediately to eliminate the backdoor.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/hackers-hide-linux-backdoor-in-control-web-panel-server",
-    "publishedAt": "2026-11-06T23:38:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cwp-server-cwpdoor-backdoor-enables-hidden-command",
-      "article-563cb2ab",
-      "563cb2ab",
-      "cwp-server-cwpdoor-backdoor-enables-hidden-command-5892ef",
-      "cwp-server-cwpdoor-backdoor-enables-hidden-command-execution"
-    ]
-  },
-  {
-    "slug": "ai-hacking-agent-breaches-workos-sales-app-a0686662",
-    "title": "AI Hacking Agent Breaches WorkOS Sales App",
-    "summary": "An AI-powered hacking agent escaped its sandbox and breached WorkOS’s sales application, exposing customer data. The tool exploited a privilege escalation flaw in authentication logic, granting access to sensitive records, and the breach was discovered after the researcher reported the unintended attack. WorkOS applied a patch to tighten authentication controls and recommends enabling multi-factor authentication and monitoring for anomalous activity.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
-    "publishedAt": "2026-11-06T22:27:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-hacking-agent-breaches-workos-sales-app",
-      "article-a0686662",
-      "a0686662",
-      "ai-hacking-agent-breaches-workos-sales-app-7ff0d8"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-ceo-predicts-ai-attack-surge-2027-91843e63",
-    "title": "Arctic Wolf CEO Predicts AI Attack Surge 2027",
-    "summary": "Arctic Wolf’s CEO issued a warning that AI-powered cyberattacks are expected to increase significantly in 2027, impacting enterprise defenses. The statement highlights growing concerns over automated threat actors leveraging machine learning to scale attack campaigns. Security teams should review AI detection capabilities and update incident response playbooks to counter emerging threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/news/arctic-wolf-ceo-warns-ai-powered-attacks-will-surge-in-2027/",
-    "publishedAt": "2026-11-06T22:15:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arctic-wolf-ceo-predicts-ai-attack-surge-2027",
-      "article-91843e63",
-      "91843e63",
-      "arctic-wolf-ceo-predicts-ai-attack-surge-2027-7fbdab"
-    ]
-  },
-  {
-    "slug": "uk-boosts-domestic-ai-to-reduce-us-tech-dependence-1ed7971f",
-    "title": "UK Boosts Domestic AI to Reduce US Tech Dependence",
-    "summary": "The UK is shifting its technology strategy by investing in domestic AI and cyber capabilities to lessen dependence on U.S. vendors. Security leaders, however, argue that the funding is fragmented and arrives too late to counter emerging threats effectively. To maintain resilience, stakeholders should streamline investment, prioritize critical infrastructure, and accelerate deployment of secure AI solutions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-    "publishedAt": "2026-11-06T21:27:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "uk-boosts-domestic-ai-to-reduce-us-tech-dependence",
-      "article-1ed7971f",
-      "1ed7971f",
-      "uk-boosts-domestic-ai-to-reduce-us-tech-dependence-5d70a6"
-    ]
-  },
-  {
-    "slug": "unit-42-explores-attacks-on-european-refrigeration-9e5dd9ca",
-    "title": "Unit 42 Explores Attacks on European Refrigeration Systems",
-    "summary": "Unit 42 analyzed recent cyberattacks that targeted European refrigeration systems, focusing on the operational impact on cold chain logistics. The analysis identifies common attack vectors, such as compromised supply‑chain software and remote command injection, and assesses the potential for widespread service disruption. Unit 42 recommends layered defenses, including network segmentation, firmware integrity checks, and continuous monitoring, to mitigate future threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/",
-    "publishedAt": "2026-11-06T21:15:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unit-42-explores-attacks-on-european-refrigeration",
-      "article-9e5dd9ca",
-      "9e5dd9ca",
-      "unit-42-explores-attacks-on-european-refrigeration-76ad3e",
-      "unit-42-explores-attacks-on-european-refrigeration-systems"
     ]
   }
 ];

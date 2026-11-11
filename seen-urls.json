@@ -4982,5 +4982,15 @@
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-198",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-197",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-233",
-  "https://access.redhat.com/errata/RHSA-2026:98111"
+  "https://access.redhat.com/errata/RHSA-2026:98111",
+  "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
+  "https://access.redhat.com/errata/RHSA-2026:98549",
+  "https://access.redhat.com/errata/RHSA-2026:98546",
+  "https://www.helpnetsecurity.com/2026/11/11/aurimas-bakas-copla-cra-vulnerability-reporting/",
+  "https://www.securityweek.com/bluetooth-airplay-pairing-vulnerabilities-patched-across-apple-platforms/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105590",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-221",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-266",
+  "https://access.redhat.com/errata/RHSA-2026:98118",
+  "https://access.redhat.com/errata/RHSA-2026:98121"
 ]
