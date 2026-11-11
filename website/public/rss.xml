@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 12:49:20 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:46:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:98592: Important: go-fdo-client security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98592-important-go-fdo-client-security-u-9fe8f942</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98592-important-go-fdo-client-security-u-9fe8f942</guid>
+      <description><![CDATA[An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:41:42 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98592">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Citrix, Ivanti Release Patches for RCE Vulnerabilities</title>
+      <link>https://secubuzz.com/news/citrix-ivanti-release-patches-for-rce-vulnerabilit-9b10f27d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-ivanti-release-patches-for-rce-vulnerabilit-9b10f27d</guid>
+      <description><![CDATA[Citrix and Ivanti disclosed critical vulnerabilities that let attackers tamper with certificate entries and achieve remote code execution on affected hosts. The flaws arise from improper certificate validation, enabling arbitrary code execution and full host compromise; no public exploit is confirmed. Both vendors released patches; administrators should apply updates immediately and verify certificate integrity to mitigate risk.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:37:19 GMT</pubDate>
+      <source url="https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:98595: Important: flatpak security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98595-important-flatpak-security-update-defea441</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98595-important-flatpak-security-update-defea441</guid>
+      <description><![CDATA[An update for flatpak is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:37:03 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98595">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Git CVE-2026-111760 Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/git-cve-2026-111760-enables-remote-code-execution-c8ba2879</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/git-cve-2026-111760-enables-remote-code-execution-c8ba2879</guid>
+      <description><![CDATA[Git introduced CVE-2026-111760, a flaw that permits remote code execution in enterprise environments. The vulnerability arises from improper input validation in the Git server component, allowing attackers to inject malicious commands; no public exploit is documented. A patch is available; administrators should update Git to the latest release and monitor logs for suspicious activity.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:10:43 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/git-patches-flaw-that-lets-malicious-repositories-execu">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft CVE-2026-124194 Enables Outlook RCE</title>
+      <link>https://secubuzz.com/news/microsoft-cve-2026-124194-enables-outlook-rce-ac9d4617</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-cve-2026-124194-enables-outlook-rce-ac9d4617</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-124194, a flaw that allows remote code execution in Outlook on enterprise systems. The issue stems from improper handling of email attachments, enabling attackers to execute arbitrary code; no public exploit is reported. Microsoft has released a patch; users should update Outlook immediately and disable macro execution as a precaution.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:09:51 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Red Hat rhc Update Addresses Important Vulnerabilities</title>
       <link>https://secubuzz.com/news/red-hat-rhc-update-addresses-important-vulnerabili-dc8f8a9d</link>
@@ -23,6 +68,33 @@
       <description><![CDATA[Red Hat issued an update for tigervnc on Enterprise Linux 9, fixing vulnerabilities that could enable code execution via the VNC protocol. The advisory lists CVEs with CVSS scores of 9.0, indicating a severe risk for systems exposed to untrusted network traffic. Users must apply the tigervnc patch immediately and restrict VNC access to trusted hosts to mitigate the threat.]]></description>
       <pubDate>Wed, 11 Nov 2026 12:39:10 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98538">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:98531: Important: qt5-qtdeclarative security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98531-important-qt5-qtdeclarative-securi-511b4b77</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98531-important-qt5-qtdeclarative-securi-511b4b77</guid>
+      <description><![CDATA[An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 12:34:01 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98531">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:98529: Important: nginx security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98529-important-nginx-security-update-cf63534c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98529-important-nginx-security-update-cf63534c</guid>
+      <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 12:34:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98529">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>N‑able Issues Hotfixes for Zero‑Day RMM Flaws</title>
+      <link>https://secubuzz.com/news/n-able-issues-hotfixes-for-zero-day-rmm-flaws-2b6e2e65</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-issues-hotfixes-for-zero-day-rmm-flaws-2b6e2e65</guid>
+      <description><![CDATA[N‑able issued hotfixes for zero‑day flaws in its N‑central RMM platform that were publicly disclosed and caused hosted environments to go offline. The flaws arise from unvalidated input in the remote API, letting attackers execute arbitrary code and disrupt services; no public exploit exists. Administrators should apply the hotfixes immediately, monitor API traffic for anomalies, and disable unused remote endpoints.]]></description>
+      <pubDate>Wed, 11 Nov 2026 12:32:27 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -69,6 +141,15 @@
       <pubDate>Wed, 11 Nov 2026 10:55:54 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/11/microsoft-hidden-ai-backdoors-lazarus/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>USN-9041-1: uutils coreutils vulnerabilities</title>
+      <link>https://secubuzz.com/news/usn-9041-1-uutils-coreutils-vulnerabilities-8f597bd7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9041-1-uutils-coreutils-vulnerabilities-8f597bd7</guid>
+      <description><![CDATA[A local attacker could possibly use this issue to obtain sensitive information or modify file permissions unexpectedly. (CVE-2026-35341) It was discovered that uutils coreutils dd incorrectly suppressed errors during file truncation operations. A local attacker could possibly use this issue to cause silent data corruption. (CVE-2026-35344) It was discovered that uutils coreutils tail incorrectly followed symbolic links when using the --follow=name option.]]></description>
+      <pubDate>Wed, 11 Nov 2026 10:45:28 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9041-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Hackers Exploit AhsayCBS Vulnerabilities to Hide Malware in PNG Images and Deploy Stealthy Backdoors</title>
@@ -375,87 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 05:00:34 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/11/iverify-iphone-exploit-kit-attacks-report/">Help Net Security</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Kernel Update Addresses Important Security Flaw</title>
-      <link>https://secubuzz.com/news/red-hat-kernel-update-addresses-important-security-7e8e2f18</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-addresses-important-security-7e8e2f18</guid>
-      <description><![CDATA[Red Hat released a kernel update for RHEL 9.6 Extended Update Support to address a critical security flaw. The advisory rates the impact as Important, with CVSS scores available via CVE links, indicating a high‑severity vulnerability affecting kernel integrity. Security teams should apply the update promptly and verify kernel version compliance.]]></description>
-      <pubDate>Wed, 11 Nov 2026 04:47:44 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98239">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GhostFrame Toolkit Hijacks VMware ESXi VMs, Steals Credentials</title>
-      <link>https://secubuzz.com/news/ghostframe-toolkit-hijacks-vmware-esxi-vms-steals-7f33e363</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ghostframe-toolkit-hijacks-vmware-esxi-vms-steals-7f33e363</guid>
-      <description><![CDATA[A new GhostFrame hacking toolkit enables attackers to hijack VMware ESXi servers and the virtual machines they host. The framework, discovered by Recorded Future’s Insikt Group while tracking TAG‑218, can extract Windows passwords, indicating a credential‑stealing capability. Security teams should isolate ESXi hosts, apply vendor patches, and monitor for unauthorized management console access.]]></description>
-      <pubDate>Wed, 11 Nov 2026 04:26:25 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ghostframe-malware-hijack-vmware-esxi/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98130: Important: httpd:2.4 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98130-important-httpd-2-4-security-updat-eb88d9df</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98130-important-httpd-2-4-security-updat-eb88d9df</guid>
-      <description><![CDATA[An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 11 Nov 2026 03:33:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98130">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenShift 4.17.60 Releases Security Update</title>
-      <link>https://secubuzz.com/news/openshift-4-17-60-releases-security-update-3d6f3f82</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openshift-4-17-60-releases-security-update-3d6f3f82</guid>
-      <description><![CDATA[Red Hat OpenShift Container Platform 4.17.60 now includes a security update addressing multiple vulnerabilities. The update resolves several bugs and security issues, each with a CVSS score listed in the references, reducing exploitation risk. Administrators should deploy the 4.17.60 release promptly and update all dependent images to maintain platform security.]]></description>
-      <pubDate>Wed, 11 Nov 2026 03:24:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:96281">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Wireshark Update Addresses Security Issues</title>
-      <link>https://secubuzz.com/news/wireshark-update-addresses-security-issues-a806c34c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/wireshark-update-addresses-security-issues-a806c34c</guid>
-      <description><![CDATA[Red Hat Enterprise Linux 9 now receives a Wireshark security update addressing multiple vulnerabilities. The update patches several bugs, each assigned a CVSS score in the references, reducing exploitation risk. Administrators should install the latest Wireshark package immediately and update any dependent services to ensure network traffic analysis remains secure.]]></description>
-      <pubDate>Wed, 11 Nov 2026 03:24:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97879">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98099: Important: kernel security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98099-important-kernel-security-update-d3e73b1f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98099-important-kernel-security-update-d3e73b1f</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 03:22:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98099">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Enterprise Linux 9.6 users receive python-tornado patch</title>
-      <link>https://secubuzz.com/news/red-enterprise-linux-9-6-users-receive-python-torn-af547853</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-9-6-users-receive-python-torn-af547853</guid>
-      <description><![CDATA[Red Enterprise Linux 9.6 users face a python‑tornado vulnerability that could allow local privilege escalation via malformed input. Red Hat Product Security rates the issue as Important, with a CVSS base score available via CVE links. Affected systems should apply the python‑tornado update immediately; no workaround is currently recommended today.]]></description>
-      <pubDate>Wed, 11 Nov 2026 03:18:36 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98110">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical Fortinet Flaws Expose FortiManager and FortiAnalyzer to Remote Code Execution Without Login</title>
-      <link>https://secubuzz.com/news/critical-fortinet-flaws-expose-fortimanager-and-fo-5469e6d8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-fortinet-flaws-expose-fortimanager-and-fo-5469e6d8</guid>
-      <description><![CDATA[Fortinet has disclosed critical security flaws affecting FortiManager, FortiAnalyzer, and FortiOS, including weaknesses that could let attackers execute code without logging in. Published on November 10, 2026, the disclosures cover management APIs, device communication services, routing, and specific high availability setups.]]></description>
-      <pubDate>Wed, 11 Nov 2026 03:15:16 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/critical-fortinet-flaws-patched/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Enterprise Linux 7 users receive acl security patch</title>
-      <link>https://secubuzz.com/news/red-enterprise-linux-7-users-receive-acl-security-532fc7b9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-enterprise-linux-7-users-receive-acl-security-532fc7b9</guid>
-      <description><![CDATA[Red Enterprise Linux 7 Extended Lifecycle Support users face a vulnerability in the acl package that could allow local privilege escalation via malformed ACL entries. Red Hat Product Security rates the issue as Important, with a CVSS base score available through CVE links in the advisory references.]]></description>
-      <pubDate>Wed, 11 Nov 2026 03:10:26 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98129">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

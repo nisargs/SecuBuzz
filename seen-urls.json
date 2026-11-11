@@ -5012,5 +5012,16 @@
   "https://www.helpnetsecurity.com/2026/11/11/ubuntu-certificate-revocation-curl-openssl/",
   "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-210",
-  "https://fortiguard.fortinet.com/psirt/FG-IR-26-251"
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-251",
+  "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
+  "https://cybernewsai.com/blog/git-patches-flaw-that-lets-malicious-repositories-execu",
+  "https://cybernewsai.com/blog/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws",
+  "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
+  "https://access.redhat.com/errata/RHSA-2026:98592",
+  "https://access.redhat.com/errata/RHSA-2026:98595",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-263",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-231",
+  "https://ubuntu.com/security/notices/USN-9041-1",
+  "https://access.redhat.com/errata/RHSA-2026:98529",
+  "https://access.redhat.com/errata/RHSA-2026:98531"
 ]

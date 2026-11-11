@@ -11,6 +11,102 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-98592-important-go-fdo-client-security-u-9fe8f942",
+    "title": "RHSA-2026:98592: Important: go-fdo-client security update",
+    "summary": "An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98592",
+    "publishedAt": "2026-11-11T13:41:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98592-important-go-fdo-client-security-u",
+      "article-9fe8f942",
+      "9fe8f942",
+      "rhsa-2026-98592-important-go-fdo-client-security-u-37d6e4",
+      "rhsa-2026-98592-important-go-fdo-client-security-update"
+    ]
+  },
+  {
+    "slug": "citrix-ivanti-release-patches-for-rce-vulnerabilit-9b10f27d",
+    "title": "Citrix, Ivanti Release Patches for RCE Vulnerabilities",
+    "summary": "Citrix and Ivanti disclosed critical vulnerabilities that let attackers tamper with certificate entries and achieve remote code execution on affected hosts. The flaws arise from improper certificate validation, enabling arbitrary code execution and full host compromise; no public exploit is confirmed. Both vendors released patches; administrators should apply updates immediately and verify certificate integrity to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
+    "publishedAt": "2026-11-11T13:37:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-ivanti-release-patches-for-rce-vulnerabilit",
+      "article-9b10f27d",
+      "9b10f27d",
+      "citrix-ivanti-release-patches-for-rce-vulnerabilit-3eadc4",
+      "citrix-ivanti-release-patches-for-rce-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98595-important-flatpak-security-update-defea441",
+    "title": "RHSA-2026:98595: Important: flatpak security update",
+    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98595",
+    "publishedAt": "2026-11-11T13:37:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98595-important-flatpak-security-update",
+      "article-defea441",
+      "defea441",
+      "rhsa-2026-98595-important-flatpak-security-update-37d6e4"
+    ]
+  },
+  {
+    "slug": "git-cve-2026-111760-enables-remote-code-execution-c8ba2879",
+    "title": "Git CVE-2026-111760 Enables Remote Code Execution",
+    "summary": "Git introduced CVE-2026-111760, a flaw that permits remote code execution in enterprise environments. The vulnerability arises from improper input validation in the Git server component, allowing attackers to inject malicious commands; no public exploit is documented. A patch is available; administrators should update Git to the latest release and monitor logs for suspicious activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/git-patches-flaw-that-lets-malicious-repositories-execu",
+    "publishedAt": "2026-11-11T13:10:43.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "git-cve-2026-111760-enables-remote-code-execution",
+      "article-c8ba2879",
+      "c8ba2879",
+      "git-cve-2026-111760-enables-remote-code-execution-3a8d59"
+    ]
+  },
+  {
+    "slug": "microsoft-cve-2026-124194-enables-outlook-rce-ac9d4617",
+    "title": "Microsoft CVE-2026-124194 Enables Outlook RCE",
+    "summary": "Microsoft disclosed CVE-2026-124194, a flaw that allows remote code execution in Outlook on enterprise systems. The issue stems from improper handling of email attachments, enabling attackers to execute arbitrary code; no public exploit is reported. Microsoft has released a patch; users should update Outlook immediately and disable macro execution as a precaution.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws",
+    "publishedAt": "2026-11-11T13:09:51.000Z",
+    "cves": [
+      "CVE-2026-124194"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-cve-2026-124194-enables-outlook-rce",
+      "article-ac9d4617",
+      "ac9d4617",
+      "microsoft-cve-2026-124194-enables-outlook-rce-1cb212"
+    ]
+  },
+  {
     "slug": "red-hat-rhc-update-addresses-important-vulnerabili-dc8f8a9d",
     "title": "Red Hat rhc Update Addresses Important Vulnerabilities",
     "summary": "Red Hat released a security update for the rhc client on Enterprise Linux 7, addressing vulnerabilities that could allow privilege escalation. The advisory references several CVEs with CVSS scores ranging from 7.5 to 8.3, indicating high exploitation potential for authenticated users. Administrators should apply the rhc update immediately and verify that all affected components are patched to prevent unauthorized access.",
@@ -46,6 +142,61 @@ export const news: NewsBrief[] = [
       "b8109f0a",
       "red-hat-tigervnc-update-fixes-important-vulnerabil-37d6e5",
       "red-hat-tigervnc-update-fixes-important-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98531-important-qt5-qtdeclarative-securi-511b4b77",
+    "title": "RHSA-2026:98531: Important: qt5-qtdeclarative security update",
+    "summary": "An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98531",
+    "publishedAt": "2026-11-11T12:34:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98531-important-qt5-qtdeclarative-securi",
+      "article-511b4b77",
+      "511b4b77",
+      "rhsa-2026-98531-important-qt5-qtdeclarative-securi-37d6e5",
+      "rhsa-2026-98531-important-qt5-qtdeclarative-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98529-important-nginx-security-update-cf63534c",
+    "title": "RHSA-2026:98529: Important: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98529",
+    "publishedAt": "2026-11-11T12:34:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98529-important-nginx-security-update",
+      "article-cf63534c",
+      "cf63534c",
+      "rhsa-2026-98529-important-nginx-security-update-37d6e5"
+    ]
+  },
+  {
+    "slug": "n-able-issues-hotfixes-for-zero-day-rmm-flaws-2b6e2e65",
+    "title": "N‑able Issues Hotfixes for Zero‑Day RMM Flaws",
+    "summary": "N‑able issued hotfixes for zero‑day flaws in its N‑central RMM platform that were publicly disclosed and caused hosted environments to go offline. The flaws arise from unvalidated input in the remote API, letting attackers execute arbitrary code and disrupt services; no public exploit exists. Administrators should apply the hotfixes immediately, monitor API traffic for anomalies, and disable unused remote endpoints.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
+    "publishedAt": "2026-11-11T12:32:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-issues-hotfixes-for-zero-day-rmm-flaws",
+      "article-2b6e2e65",
+      "2b6e2e65",
+      "n-able-issues-hotfixes-for-zero-day-rmm-flaws-65971b"
     ]
   },
   {
@@ -142,6 +293,27 @@ export const news: NewsBrief[] = [
       "7a159787",
       "microsoft-researchers-demonstrate-hidden-backdoor-39d37f",
       "microsoft-researchers-demonstrate-hidden-backdoor-technique-"
+    ]
+  },
+  {
+    "slug": "usn-9041-1-uutils-coreutils-vulnerabilities-8f597bd7",
+    "title": "USN-9041-1: uutils coreutils vulnerabilities",
+    "summary": "A local attacker could possibly use this issue to obtain sensitive information or modify file permissions unexpectedly. (CVE-2026-35341) It was discovered that uutils coreutils dd incorrectly suppressed errors during file truncation operations. A local attacker could possibly use this issue to cause silent data corruption. (CVE-2026-35344) It was discovered that uutils coreutils tail incorrectly followed symbolic links when using the --follow=name option.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9041-1",
+    "publishedAt": "2026-11-11T10:45:28.000Z",
+    "cves": [
+      "CVE-2026-35341",
+      "CVE-2026-35344"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9041-1-uutils-coreutils-vulnerabilities",
+      "article-8f597bd7",
+      "8f597bd7",
+      "usn-9041-1-uutils-coreutils-vulnerabilities-7e87e6"
     ]
   },
   {
@@ -5372,6 +5544,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "improper-privilege-management-e356f9b9",
+    "title": "Improper privilege management",
+    "summary": "CVSSv3 Score: 7.2 An Improper Privilege Management vulnerability[CWE-269] in FortiAuthenticator may allow an authenticated attacker to escalate privileges. Revised on 2026-11-10 00:00:00. The vulnerability is tracked as CVE-2026-108415.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-263",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [
+      "CVE-2026-108415"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "improper-privilege-management",
+      "article-e356f9b9",
+      "e356f9b9",
+      "improper-privilege-management-3bcda5"
+    ]
+  },
+  {
     "slug": "fortinet-fixes-os-command-injection-flaw-in-fortim-2d592ff6",
     "title": "Fortinet Fixes OS Command Injection Flaw in FortiMail",
     "summary": "Fortinet disclosed an OS command injection vulnerability affecting its FortiMail secure email gateway platform. Classified under CWE-78 with a CVSSv3 score of 7.2, the flaw allows an authenticated administrator to execute arbitrary commands as root using specially crafted HTTP requests. Administrators should review the updated FortiGuard PSIRT advisory and apply recommended updates to prevent escalation.",
@@ -9335,219 +9527,6 @@ export const news: NewsBrief[] = [
       "article-5fa5fab5",
       "5fa5fab5",
       "openshift-4-18-60-releases-security-update-37d851"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96096-important-gdb-security-update-7e38f2f7",
-    "title": "RHSA-2026:96096: Important: gdb security update",
-    "summary": "An update for gdb is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96096",
-    "publishedAt": "2026-11-09T02:49:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96096-important-gdb-security-update",
-      "article-7e38f2f7",
-      "7e38f2f7",
-      "rhsa-2026-96096-important-gdb-security-update-37d7df"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96093-important-kpatch-patch-5-14-0-687-34af3818",
-    "title": "RHSA-2026:96093: Important: kpatch-patch-5_14_0-687_10_1 and kpatch-patch-5_14_0-687_42_1 security update",
-    "summary": "An update for multiple packages is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96093",
-    "publishedAt": "2026-11-09T02:49:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96093-important-kpatch-patch-5-14-0-687",
-      "article-34af3818",
-      "34af3818",
-      "rhsa-2026-96093-important-kpatch-patch-5-14-0-687-37d7df",
-      "rhsa-2026-96093-important-kpatch-patch-5-14-0-687-10-1-and-k"
-    ]
-  },
-  {
-    "slug": "nvidia-investigates-suspected-chinese-spy-operatio-cf43b6f8",
-    "title": "NVIDIA Investigates Suspected Chinese Spy Operation",
-    "summary": "NVIDIA opened an independent investigation into reports that a foreign intelligence operation targeted CEO Jensen Huang. The review will examine the alleged activity and any potential security impact, though the board states no evidence of company secrets or national security compromise. Security teams should monitor for related phishing or credential theft attempts and ensure multi-factor authentication for executive accounts.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/nvidia-investigates-chinese-spy-operation/",
-    "publishedAt": "2026-11-09T02:36:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nvidia-investigates-suspected-chinese-spy-operatio",
-      "article-cf43b6f8",
-      "cf43b6f8",
-      "nvidia-investigates-suspected-chinese-spy-operatio-7cf245",
-      "nvidia-investigates-suspected-chinese-spy-operation"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-ruby-update-for-rhel-9-8-f72945eb",
-    "title": "Red Hat Releases Ruby Update for RHEL 9.8",
-    "summary": "A moderate security update addresses multiple Ruby vulnerabilities affecting Red Hat Enterprise Linux 9.8 Extended Update Support. The update mitigates unspecified code execution risks identified in Ruby's core libraries, with CVSS scores available via referenced CVE links. Red Hat recommends applying the update immediately; no workarounds are required to ensure system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96067",
-    "publishedAt": "2026-11-09T02:29:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-ruby-update-for-rhel-9-8",
-      "article-f72945eb",
-      "f72945eb",
-      "red-hat-releases-ruby-update-for-rhel-9-8-37d7e0"
-    ]
-  },
-  {
-    "slug": "openjdk-27-vulnerabilities-allow-authentication-by-d51e46c4",
-    "title": "OpenJDK 27 Vulnerabilities Allow Authentication Bypass",
-    "summary": "OpenJDK 27 has authentication and authorization flaws: CVE-2026-91415 in 2D, CVE-2026-91398 and CVE-2026-83395 in Networking, CVE-2026-83381 and CVE-2026-87294 in Security, plus JAXP component issues. These flaws let remote attackers bypass authentication, cause denial of service, or read and modify sensitive data. Apply the latest OpenJDK 27 patch, limit network exposure, and enforce strict access controls to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9005-1",
-    "publishedAt": "2026-11-09T02:27:00.000Z",
-    "cves": [
-      "CVE-2026-91415",
-      "CVE-2026-91398",
-      "CVE-2026-83395",
-      "CVE-2026-83381",
-      "CVE-2026-87294"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openjdk-27-vulnerabilities-allow-authentication-by",
-      "article-d51e46c4",
-      "d51e46c4",
-      "openjdk-27-vulnerabilities-allow-authentication-by-7e89a8",
-      "openjdk-27-vulnerabilities-allow-authentication-bypass"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-critical-openshift-4-19-55-update-115b6395",
-    "title": "Red Hat Issues Critical OpenShift 4.19.55 Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.19.55, addressing multiple critical bugs and security flaws affecting cluster management components. The update mitigates privilege escalation and code execution risks identified in the platform's API server and scheduler, with CVSS scores linked via CVE references. Red Hat advises applying the update immediately; no workarounds are available, and users should verify cluster integrity post‑deployment.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95523",
-    "publishedAt": "2026-11-09T02:23:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-critical-openshift-4-19-55-update",
-      "article-115b6395",
-      "115b6395",
-      "red-hat-issues-critical-openshift-4-19-55-update-37d842"
-    ]
-  },
-  {
-    "slug": "openshift-4-20-46-releases-critical-security-updat-552655ba",
-    "title": "OpenShift 4.20.46 Releases Critical Security Update",
-    "summary": "Red Hat released OpenShift 4.20.46, adding bug fixes and security updates for the 4.20 series. The update carries a Critical rating, with CVSS scores linked to each CVE, indicating high exploitation risk. Red Hat has made 4.20.46 available; teams should apply the update or upgrade images immediately to mitigate risks.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95377",
-    "publishedAt": "2026-11-09T02:14:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openshift-4-20-46-releases-critical-security-updat",
-      "article-552655ba",
-      "552655ba",
-      "openshift-4-20-46-releases-critical-security-updat-37d849",
-      "openshift-4-20-46-releases-critical-security-update"
-    ]
-  },
-  {
-    "slug": "react-server-components-rce-flaw-exposes-remote-co-5ca6c37b",
-    "title": "React Server Components RCE Flaw Exposes Remote Code Execution",
-    "summary": "A critical flaw in React Server Components allows unauthenticated remote code execution across react-server-dom-webpack, react-server-dom-parcel, and react-server-dom-turbopack. The vulnerability, tracked as GHSA-xqc2-xf4c-x3h3, carries a CVSS v4 score of 9.5, indicating a severe exploitation risk. React recommends immediate updates to affected applications; no workaround is available, and security teams should apply patches promptly.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/react-server-components-vulnerability-patch/",
-    "publishedAt": "2026-11-09T02:13:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "react-server-components-rce-flaw-exposes-remote-co",
-      "article-5ca6c37b",
-      "5ca6c37b",
-      "react-server-components-rce-flaw-exposes-remote-co-abd572",
-      "react-server-components-rce-flaw-exposes-remote-code-executi"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-podcast-released-november-9-2026-e2397a8e",
-    "title": "ISC Stormcast Podcast Released November 9, 2026",
-    "summary": "The SANS Internet Storm Center released the ISC Stormcast podcast for Monday, November 9, 2026. The episode covers current threat landscape trends, emerging attack vectors, and defensive best practices, featuring expert commentary. Listeners can access the recording via the ISC website, with Creative Commons Attribution-Noncommercial 3.0 license permitting sharing and adaptation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33500",
-    "publishedAt": "2026-11-09T02:05:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-podcast-released-november-9-2026",
-      "article-e2397a8e",
-      "e2397a8e",
-      "isc-stormcast-podcast-released-november-9-2026-57dd81"
-    ]
-  },
-  {
-    "slug": "openshift-4-21-42-releases-critical-security-updat-5dc8b824",
-    "title": "OpenShift 4.21.42 Releases Critical Security Update",
-    "summary": "Red Enterprise Linux users of OpenShift Container Platform 4.21.42 receive a critical security update addressing bugs that could affect container runtime stability. The update is rated Critical by Red Hat Product Security, and CVSS scores via CVE links indicate high impact if unpatched. Administrators should apply the 4.21.42 update immediately and review CVSS scores to prioritize remediation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95408",
-    "publishedAt": "2026-11-09T02:02:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openshift-4-21-42-releases-critical-security-updat",
-      "article-5dc8b824",
-      "5dc8b824",
-      "openshift-4-21-42-releases-critical-security-updat-37d846",
-      "openshift-4-21-42-releases-critical-security-update"
-    ]
-  },
-  {
-    "slug": "usn-9004-1-openjdk-25-vulnerabilities-32c7187d",
-    "title": "USN-9004-1: OpenJDK 25 vulnerabilities",
-    "summary": "A remote attacker could possibly use this issue to modify sensitive data. (CVE-2026-91398) It was discovered that the 2D component of OpenJDK 25 did not correctly authenticate users. A remote attacker could possibly use this issue to read or modify sensitive data. (CVE-2026-91403) In addition to security fixes, the updated packages contain bug fixes, new features, and possibly incompatible changes.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9004-1",
-    "publishedAt": "2026-11-09T02:00:41.000Z",
-    "cves": [
-      "CVE-2026-91398",
-      "CVE-2026-91403"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9004-1-openjdk-25-vulnerabilities",
-      "article-32c7187d",
-      "32c7187d",
-      "usn-9004-1-openjdk-25-vulnerabilities-7e89ac"
     ]
   }
 ];
