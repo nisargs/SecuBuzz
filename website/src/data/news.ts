@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-99089-moderate-gcc-security-update-f85d34b2",
+    "title": "RHSA-2026:99089: Moderate: gcc security update",
+    "summary": "An update for gcc is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99089",
+    "publishedAt": "2026-11-11T19:10:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99089-moderate-gcc-security-update",
+      "article-f85d34b2",
+      "f85d34b2",
+      "rhsa-2026-99089-moderate-gcc-security-update-37d682"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99094-moderate-qt6-qtbase-security-updat-f4273b76",
+    "title": "RHSA-2026:99094: Moderate: qt6-qtbase security update",
+    "summary": "An update for qt6-qtbase is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99094",
+    "publishedAt": "2026-11-11T19:01:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99094-moderate-qt6-qtbase-security-updat",
+      "article-f4273b76",
+      "f4273b76",
+      "rhsa-2026-99094-moderate-qt6-qtbase-security-updat-37d682",
+      "rhsa-2026-99094-moderate-qt6-qtbase-security-update"
+    ]
+  },
+  {
     "slug": "vanderbilt-restores-systems-after-alleged-data-the-71df4385",
     "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
     "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
@@ -1772,6 +1809,90 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-fairchem-rce-via-deserialization-cve-2026-111-a15736f3",
+    "title": "Meta FAIRChem RCE via Deserialization CVE-2026-111760",
+    "summary": "A remote code execution flaw in Meta FAIRChem’s convert_fine_tune_checkpoint deserialization lets attackers run arbitrary code on affected installations. CVE-2026-111760 carries a CVSS 7.8 score and needs user interaction, such as visiting a malicious page or opening a malicious file, to exploit. Meta has not yet released a patch; teams should avoid opening malicious files and apply vendor fixes when available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-945/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairchem-rce-via-deserialization-cve-2026-111",
+      "article-a15736f3",
+      "a15736f3",
+      "meta-fairchem-rce-via-deserialization-cve-2026-111-6f3d17",
+      "meta-fairchem-rce-via-deserialization-cve-2026-111760"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-rce-via-deserialization-cve-2026-1117-bd1d9ba3",
+    "title": "Meta fairseq RCE via Deserialization CVE-2026-111760",
+    "summary": "A remote code execution flaw in Meta fairseq’s load_ema_from_checkpoint deserialization allows attackers to run arbitrary code on affected installations. CVE-2026-111760 carries a CVSS 7.8 score and needs user interaction, such as visiting a malicious page or opening a malicious file, to exploit. Meta has not yet released a patch; teams should avoid opening files and apply vendor fixes when available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-944/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-rce-via-deserialization-cve-2026-1117",
+      "article-bd1d9ba3",
+      "bd1d9ba3",
+      "meta-fairseq-rce-via-deserialization-cve-2026-1117-6f3d17",
+      "meta-fairseq-rce-via-deserialization-cve-2026-111760"
+    ]
+  },
+  {
+    "slug": "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cp-064aa164",
+    "title": "ZDI-26-943: (0Day) Meta fairseq load_checkpoint_to_cpu Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-943/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cp",
+      "article-064aa164",
+      "064aa164",
+      "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cp-6f3d17",
+      "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cpu-deserial"
+    ]
+  },
+  {
+    "slug": "zdi-26-942-0day-meta-fairseq-rerank-code-injection-c0a55076",
+    "title": "ZDI-26-942: (0Day) Meta fairseq rerank Code Injection Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-942/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-942-0day-meta-fairseq-rerank-code-injection",
+      "article-c0a55076",
+      "c0a55076",
+      "zdi-26-942-0day-meta-fairseq-rerank-code-injection-6f3d17",
+      "zdi-26-942-0day-meta-fairseq-rerank-code-injection-remote-co"
     ]
   },
   {
@@ -9456,124 +9577,6 @@ export const news: NewsBrief[] = [
       "article-5f41d1f8",
       "5f41d1f8",
       "red-hat-releases-dnsmasq-security-update-37d7d9"
-    ]
-  },
-  {
-    "slug": "foreign-minister-s-data-leaked-on-dark-web-bd5ae861",
-    "title": "Foreign Minister’s Data Leaked on Dark Web",
-    "summary": "Italian Foreign Minister Antonio Tajani confirmed that his personal data was released on the dark web by pro‑Russian hackers. The breach exposed contact details, travel itineraries, and diplomatic credentials, potentially compromising future diplomatic communications. Italian authorities urged affected officials to change credentials, monitor accounts, and strengthen encryption on sensitive communications.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/italys-meloni-blames-pro-russian-hackers-for-leak-of-foreign-ministers-data-on-the-dark-web/",
-    "publishedAt": "2026-11-09T12:22:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "foreign-minister-s-data-leaked-on-dark-web",
-      "article-bd5ae861",
-      "bd5ae861",
-      "foreign-minister-s-data-leaked-on-dark-web-35183b"
-    ]
-  },
-  {
-    "slug": "ukraine-arrests-four-in-5m-crypto-scam-targeting-g-d087b8bc",
-    "title": "Ukraine Arrests Four in $5M Crypto Scam Targeting Germans",
-    "summary": "Ukraine's cyber police arrested four men who orchestrated a $5 million cryptocurrency scam that lured German citizens through call‑center operations. The scheme used fraudulent investment promises to redirect funds to illicit wallets, siphoning over €4.3 million in stolen crypto. Authorities seized assets, are pursuing charges under anti‑money‑laundering and fraud statutes, and aim to recover the stolen funds.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/",
-    "publishedAt": "2026-11-09T12:16:13.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/ukraine-arrests-scam-call-centers-germany"
-      }
-    ],
-    "aliases": [
-      "ukraine-arrests-four-in-5m-crypto-scam-targeting-g",
-      "article-d087b8bc",
-      "d087b8bc",
-      "ukraine-arrests-four-in-5m-crypto-scam-targeting-g-119131",
-      "ukraine-arrests-four-in-5m-crypto-scam-targeting-germans"
-    ]
-  },
-  {
-    "slug": "openssh-authentication-bypass-exploited-by-botnets-8729cd04",
-    "title": "OpenSSH Authentication Bypass Exploited by Botnets",
-    "summary": "Hackers are exploiting an authentication bypass in OpenSSH, identified as CVE-2026-123158, primarily via botnets and crypto-mining operations. The flaw allows attackers to bypass SSH key verification, enabling unauthorized session initiation without credentials, and has a PoC available. Red Hat and OpenSSH maintainers have released patch updates; administrators should apply the latest OpenSSH version or the vendor‑issued advisory immediately.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/",
-    "publishedAt": "2026-11-09T12:13:32.000Z",
-    "cves": [
-      "CVE-2026-123158"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openssh-authentication-bypass-exploited-by-botnets",
-      "article-8729cd04",
-      "8729cd04",
-      "openssh-authentication-bypass-exploited-by-botnets-346b3a"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96236-important-nodejs-nodemon-security-0b7b28d2",
-    "title": "RHSA-2026:96236: Important: nodejs-nodemon security update",
-    "summary": "An update for nodejs-nodemon is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96236",
-    "publishedAt": "2026-11-09T12:11:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96236-important-nodejs-nodemon-security",
-      "article-0b7b28d2",
-      "0b7b28d2",
-      "rhsa-2026-96236-important-nodejs-nodemon-security-37d7d9",
-      "rhsa-2026-96236-important-nodejs-nodemon-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96240-critical-edk2-security-update-e2e37349",
-    "title": "RHSA-2026:96240: Critical: edk2 security update",
-    "summary": "An update for edk2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96240",
-    "publishedAt": "2026-11-09T12:10:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96240-critical-edk2-security-update",
-      "article-e2e37349",
-      "e2e37349",
-      "rhsa-2026-96240-critical-edk2-security-update-37d7d9"
-    ]
-  },
-  {
-    "slug": "patch-utility-vulnerability-prompting-rhel-8-updat-674460e7",
-    "title": "Patch Utility Vulnerability Prompting RHEL 8 Update",
-    "summary": "A vulnerability in the patch utility on RHEL 8 has been identified, prompting a Moderate security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of the patch utility.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96215",
-    "publishedAt": "2026-11-09T12:09:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "patch-utility-vulnerability-prompting-rhel-8-updat",
-      "article-674460e7",
-      "674460e7",
-      "patch-utility-vulnerability-prompting-rhel-8-updat-37d7d9",
-      "patch-utility-vulnerability-prompting-rhel-8-update"
     ]
   }
 ];
