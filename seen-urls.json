@@ -5092,5 +5092,21 @@
   "http://www.zerodayinitiative.com/advisories/ZDI-26-939/",
   "https://access.redhat.com/errata/RHSA-2026:99090",
   "https://access.redhat.com/errata/RHSA-2026:99091",
-  "http://www.zerodayinitiative.com/advisories/ZDI-26-938/"
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-938/",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-179-aws/",
+  "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-937/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-936/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-935/",
+  "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-180-aws/",
+  "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
+  "https://access.redhat.com/errata/RHSA-2026:99088",
+  "https://access.redhat.com/errata/RHSA-2026:99052",
+  "https://ubuntu.com/security/notices/USN-9046-1",
+  "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
+  "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
+  "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01570615041.html",
+  "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-934/"
 ]

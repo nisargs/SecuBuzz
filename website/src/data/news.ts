@@ -11,6 +11,177 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb",
+    "title": "eMudhra Revokes Eight CA Certificates After Key Mishap",
+    "summary": "eMudhra revoked eight intermediate CA certificates after discovering improper private key handling during certificate generation. The mishandling exposed the possibility of unauthorized certificate issuance, but no active exploitation has been reported. eMudhra has issued revocation notices, is reviewing its key management procedures, and will implement additional safeguards to prevent future incidents.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
+    "publishedAt": "2026-11-11T21:27:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "emudhra-revokes-eight-ca-certificates-after-key-mi",
+      "article-d1633deb",
+      "d1633deb",
+      "emudhra-revokes-eight-ca-certificates-after-key-mi-38f63a",
+      "emudhra-revokes-eight-ca-certificates-after-key-mishap"
+    ]
+  },
+  {
+    "slug": "ai-enhances-cyber-resilience-competition-cbdd8757",
+    "title": "AI Enhances Cyber Resilience Competition",
+    "summary": "The article argues that AI technologies amplify both threat capabilities and defensive options, making rapid recovery a competitive advantage. It highlights how machine learning can detect anomalies faster, yet also enables adversaries to craft more sophisticated phishing and malware campaigns. Security teams should adopt AI‑driven monitoring, continuous testing, and adaptive response frameworks to mitigate evolving risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
+    "publishedAt": "2026-11-11T21:20:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-enhances-cyber-resilience-competition",
+      "article-cbdd8757",
+      "cbdd8757",
+      "ai-enhances-cyber-resilience-competition-d0d80c"
+    ]
+  },
+  {
+    "slug": "cve-2026-125926-server-side-request-forgery-in-the-a8e51a20",
+    "title": "CVE-2026-125926 - Server-side request forgery in the server registration and update API in mcp-gateway-registry",
+    "summary": "Bulletin ID: 2026-180-AWS Publication Date: 11/11/2026 13:00 PM PST Description: MServer-side request forgery (SSRF) in the server registration and update API in Amazon mcp-gateway-registry before 1.35.0 might allow an authenticated remote user to send requests from the gateway to internal network services and cloud instance metadata endpoints and read the responses via a crafted request Impacted versions: >= v1.0.3 AND Refer to the article for the most up-to-date and complete information.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-180-aws/",
+    "publishedAt": "2026-11-11T21:04:56.000Z",
+    "cves": [
+      "CVE-2026-125926"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-125926-server-side-request-forgery-in-the",
+      "article-a8e51a20",
+      "a8e51a20",
+      "cve-2026-125926-server-side-request-forgery-in-the-16ddb3",
+      "cve-2026-125926-server-side-request-forgery-in-the-server-re"
+    ]
+  },
+  {
+    "slug": "aws-mcp-gateway-registry-privilege-escalation-via-5cea2f24",
+    "title": "AWS mcp-gateway-registry Privilege Escalation via API",
+    "summary": "Amazon mcp-gateway-registry’s external management API lacks authorization, letting an authenticated user elevate to registry administrator. The flaw, present in versions 1.0.9–1.24.7, allows a crafted group import request to grant administrator scope to the attacker’s identity group, giving control over all registered gateway assets. AWS released a patch; security teams should upgrade to 1.24.8 or later and verify group import permissions.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-179-aws/",
+    "publishedAt": "2026-11-11T21:03:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aws-mcp-gateway-registry-privilege-escalation-via",
+      "article-5cea2f24",
+      "5cea2f24",
+      "aws-mcp-gateway-registry-privilege-escalation-via-3c6851",
+      "aws-mcp-gateway-registry-privilege-escalation-via-api"
+    ]
+  },
+  {
+    "slug": "n-able-n-central-platform-offline-over-33-flaws-8a597079",
+    "title": "N-able N-central Platform Offline Over 33 Flaws",
+    "summary": "N-able’s N-central RMM platform was taken offline after the discovery of 33 critical flaws that enable attacker takeover via public exploits. The vulnerabilities lack a single CVE identifier but collectively allow remote code execution and privilege escalation on affected installations. N-able released a hotfix; administrators should apply the update immediately and monitor for unauthorized access attempts.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
+    "publishedAt": "2026-11-11T20:05:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-n-central-platform-offline-over-33-flaws",
+      "article-8a597079",
+      "8a597079",
+      "n-able-n-central-platform-offline-over-33-flaws-5a18cb"
+    ]
+  },
+  {
+    "slug": "chrome-extended-stable-update-156-0-8078-100-relea-dd0cbfeb",
+    "title": "Chrome Extended Stable Update 156.0.8078.100 Released",
+    "summary": "Google Chrome released Stable channel build 156.0.8078.100 for Windows and Mac, rolling out over the next weeks. The update includes security patches, but the full list of changes is available in the release log, and users are encouraged to review it. Users should install the update via browser settings or wait for automatic rollout to ensure protection against known vulnerabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01570615041.html",
+    "publishedAt": "2026-11-11T20:02:29.991Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-extended-stable-update-156-0-8078-100-relea",
+      "article-dd0cbfeb",
+      "dd0cbfeb",
+      "chrome-extended-stable-update-156-0-8078-100-relea-1d96da",
+      "chrome-extended-stable-update-156-0-8078-100-released"
+    ]
+  },
+  {
+    "slug": "chrome-stable-channel-updated-to-157-0-8103-78-a219ebe6",
+    "title": "Chrome Stable Channel Updated to 157.0.8103.78",
+    "summary": "Google Chrome updated the Stable channel to build 157.0.8103.78 for Windows, Mac, and Linux, with rollout scheduled over the coming weeks. Security changes are included, and a list of modifications can be found in the release log, with users advised to review the details. Installation can be performed manually via browser settings or will occur automatically, ensuring users receive protections.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html",
+    "publishedAt": "2026-11-11T20:02:26.373Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-stable-channel-updated-to-157-0-8103-78",
+      "article-a219ebe6",
+      "a219ebe6",
+      "chrome-stable-channel-updated-to-157-0-8103-78-474e4e"
+    ]
+  },
+  {
+    "slug": "the-global-socket-how-threat-actors-are-weaponizin-7e34f62c",
+    "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
+    "summary": "Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
+    "publishedAt": "2026-11-11T19:49:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "the-global-socket-how-threat-actors-are-weaponizin",
+      "article-7e34f62c",
+      "7e34f62c",
+      "the-global-socket-how-threat-actors-are-weaponizin-247e08",
+      "the-global-socket-how-threat-actors-are-weaponizing-gsocket-"
+    ]
+  },
+  {
+    "slug": "apache-http-server-critical-rce-cve-2026-119618-4237afba",
+    "title": "Apache HTTP Server Critical RCE CVE-2026-119618",
+    "summary": "Apache HTTP Server contains a critical RCE flaw identified as CVE-2026-119618. The vulnerability, affecting 64% of cloud environments, permits remote attackers to execute arbitrary code via crafted requests, with no authentication required. Immediate patching is advised; administrators should apply the latest globally Apache HTTP Server update and verify configuration hardening.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+    "publishedAt": "2026-11-11T19:49:10.000Z",
+    "cves": [
+      "CVE-2026-119618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-http-server-critical-rce-cve-2026-119618",
+      "article-4237afba",
+      "4237afba",
+      "apache-http-server-critical-rce-cve-2026-119618-178ef9"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99089-moderate-gcc-security-update-f85d34b2",
     "title": "RHSA-2026:99089: Moderate: gcc security update",
     "summary": "An update for gcc is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -85,6 +256,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99088-important-containernetworking-plug-61aef30b",
+    "title": "RHSA-2026:99088: Important: containernetworking-plugins security update",
+    "summary": "An update for containernetworking-plugins is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99088",
+    "publishedAt": "2026-11-11T18:44:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99088-important-containernetworking-plug",
+      "article-61aef30b",
+      "61aef30b",
+      "rhsa-2026-99088-important-containernetworking-plug-37d682",
+      "rhsa-2026-99088-important-containernetworking-plugins-securi"
+    ]
+  },
+  {
     "slug": "vanderbilt-restores-systems-after-alleged-data-the-71df4385",
     "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
     "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
@@ -104,6 +294,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-net-8-0-security-update-fa711df7",
+    "title": "Red Hat Releases .NET 8.0 Security Update",
+    "summary": "Red Hat released a security update for .NET 8.0 on RHEL 8, fixing vulnerabilities that could let attackers compromise application integrity. The advisory rates the update as Important, with CVSS scores linked to each CVE, indicating moderate to high risk but no confirmed exploitation. Apply the .NET 8.0 update immediately following Red Hat’s guidance to mitigate the identified flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99052",
+    "publishedAt": "2026-11-11T18:20:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-net-8-0-security-update",
+      "article-fa711df7",
+      "fa711df7",
+      "red-hat-releases-net-8-0-security-update-37d683"
+    ]
+  },
+  {
     "slug": "who-runs-the-ransomware-group-qilin-86b23989",
     "title": "Who Runs the Ransomware Group Qilin?",
     "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St.",
@@ -119,6 +327,24 @@ export const news: NewsBrief[] = [
       "article-86b23989",
       "86b23989",
       "who-runs-the-ransomware-group-qilin-1bb2fd"
+    ]
+  },
+  {
+    "slug": "ubuntu-updates-mysql-to-patch-security-issues-aa376998",
+    "title": "Ubuntu Updates MySQL to Patch Security Issues",
+    "summary": "Ubuntu released updates for MySQL, addressing multiple security issues discovered in the database engine across several releases. The patches upgrade MySQL to 8.4.13 on Ubuntu 26.04 LTS, 9.7.4 on 26.10, and backport fixes to 22.04 and 24.04, potentially introducing incompatibilities. Administrators should apply the updated packages immediately and review release notes for any required application adjustments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9046-1",
+    "publishedAt": "2026-11-11T17:42:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-updates-mysql-to-patch-security-issues",
+      "article-aa376998",
+      "aa376998",
+      "ubuntu-updates-mysql-to-patch-security-issues-7e87d3"
     ]
   },
   {
@@ -1846,6 +2072,90 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-deserialization-rce-vulnerability-exp-bb48b00e",
+    "title": "Meta fairseq Deserialization RCE Vulnerability Exposes Code Execution",
+    "summary": "A deserialization flaw in Meta fairseq’s quantize_with_kmeans component lets remote attackers run arbitrary code when a user opens a malicious file or visits a crafted page. CVE-2026-111760 scores 7.8 on CVSS and requires user interaction; no active exploitation has been confirmed. Meta released a patch; administrators should apply it promptly and restrict deserialization of untrusted data.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-937/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-deserialization-rce-vulnerability-exp",
+      "article-bb48b00e",
+      "bb48b00e",
+      "meta-fairseq-deserialization-rce-vulnerability-exp-6f3d13",
+      "meta-fairseq-deserialization-rce-vulnerability-exposes-code-"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulne-43499adb",
+    "title": "Meta fairseq FairseqCPUAdam YAML Parsing RCE Vulnerability",
+    "summary": "A YAML parsing flaw in Meta fairseq’s FairseqCPUAdam module lets remote attackers inject code when a user opens a crafted file. CVE-2026-111760 scores 7.8 on CVSS and needs user interaction; no exploitation has been confirmed. Meta released a patch; administrators should apply it promptly and avoid loading untrusted YAML files.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-936/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulne",
+      "article-43499adb",
+      "43499adb",
+      "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulne-6f3d13",
+      "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu-821ac269",
+    "title": "Meta fairseq FConvModelSelfAtt YAML Parsing RCE Vulnerability",
+    "summary": "A YAML parsing flaw in Meta fairseq’s FConvModelSelfAtt component permits remote attackers to inject code when a user opens a crafted file. CVE-2026-111760 has a CVSS score of 7.8 and requires user interaction; no exploitation has been reported. Meta issued a patch; administrators should apply it immediately and avoid loading untrusted YAML files.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-935/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu",
+      "article-821ac269",
+      "821ac269",
+      "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu-6f3d13",
+      "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vulnerabilit"
+    ]
+  },
+  {
+    "slug": "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-ya-2faffac3",
+    "title": "ZDI-26-934: (0Day) Meta fairseq FConvLanguageModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-934/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-ya",
+      "article-2faffac3",
+      "2faffac3",
+      "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-ya-6f3d13",
+      "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-yaml-file-pa"
     ]
   },
   {
@@ -9290,301 +9600,6 @@ export const news: NewsBrief[] = [
       "d747891e",
       "bitter-apt-deploys-paprat-backdoor-in-south-asian-7195f6",
       "bitter-apt-deploys-paprat-backdoor-in-south-asian-cyber-espi"
-    ]
-  },
-  {
-    "slug": "ai-assisted-attack-breaches-german-web-host-5e8aefc1",
-    "title": "AI‑Assisted Attack Breaches German Web Host",
-    "summary": "Hackers allegedly used AI to exploit a customer‑assistant interface, breaching a German web‑hosting company. The vulnerability allowed unauthorized code execution via the assistant integration, enabling attackers to gain administrative access to client accounts. The host applied a patch to the interface, disabled the vulnerable feature, and advised clients to update credentials and monitor logs.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/cyberattack-germany-ai-mittwald",
-    "publishedAt": "2026-11-09T14:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-assisted-attack-breaches-german-web-host",
-      "article-5e8aefc1",
-      "5e8aefc1",
-      "ai-assisted-attack-breaches-german-web-host-6e7960"
-    ]
-  },
-  {
-    "slug": "revolve-reports-1-5-million-breach-victims-110501e7",
-    "title": "Revolve Reports 1.5 Million Breach Victims",
-    "summary": "Revolve, an online fashion retailer, suffered a cyberattack that exposed personal data of more than 1.5 million customers. The breach involved unauthorized access to customer records, though the specific vulnerability was not disclosed; the attack compromised personal identifiers and potentially financial information. Revolve notified regulators and is working with security teams to investigate the breach and implement additional safeguards.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/",
-    "publishedAt": "2026-11-09T14:08:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "revolve-reports-1-5-million-breach-victims",
-      "article-110501e7",
-      "110501e7",
-      "revolve-reports-1-5-million-breach-victims-5cd2af"
-    ]
-  },
-  {
-    "slug": "ahsaycbs-backup-servers-compromised-by-webshells-m-88b25263",
-    "title": "AhsayCBS Backup Servers Compromised by Webshells, Miner, Implant",
-    "summary": "AhsayCBS backup servers were compromised, revealing new webshells, a second crypto miner, and a host‑bound Python C2 implant. Attackers exploited backup server vulnerabilities to deploy webshells for lateral movement, while the miner consumed CPU resources and the implant maintained persistence. Teams should isolate affected servers, apply vendor patches, remove malicious binaries, and enforce network segmentation to block further spread.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/ahsaycbs-webshells",
-    "publishedAt": "2026-11-09T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ahsaycbs-backup-servers-compromised-by-webshells-m",
-      "article-88b25263",
-      "88b25263",
-      "ahsaycbs-backup-servers-compromised-by-webshells-m-3ed043",
-      "ahsaycbs-backup-servers-compromised-by-webshells-miner-impla"
-    ]
-  },
-  {
-    "slug": "sasha-roshan-expands-security-education-beyond-dem-1a5c5809",
-    "title": "Sasha Roshan Expands Security Education Beyond Demos",
-    "summary": "Sasha Roshan, a Senior Sales Engineer at Huntress, extends security education beyond live demonstrations into everyday practice. He champions proactive learning, sharing insights and best practices that empower teams to strengthen defensive readiness across organizations. Security professionals can follow his outreach to stay informed, adopt effective strategies, and elevate their security posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/employee-spotlight-sasha-roshan",
-    "publishedAt": "2026-11-09T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sasha-roshan-expands-security-education-beyond-dem",
-      "article-1a5c5809",
-      "1a5c5809",
-      "sasha-roshan-expands-security-education-beyond-dem-79d83b",
-      "sasha-roshan-expands-security-education-beyond-demos"
-    ]
-  },
-  {
-    "slug": "usn-9008-1-libnfs-vulnerability-a38f2460",
-    "title": "USN-9008-1: libnfs vulnerability",
-    "summary": "It was discovered that libnfs did not properly enforce the maximum size bound during ZDR decoding, resulting in an out-of-bounds write. An attacker could possibly use this issue to cause libnfs to crash, resulting in a denial of service, or execute arbitrary code.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9008-1",
-    "publishedAt": "2026-11-09T13:29:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9008-1-libnfs-vulnerability",
-      "article-a38f2460",
-      "a38f2460",
-      "usn-9008-1-libnfs-vulnerability-7e899d"
-    ]
-  },
-  {
-    "slug": "us-bans-mexc-exchange-for-sanctions-evasion-cyberc-ae2ff5f6",
-    "title": "US Bans MEXC Exchange for Sanctions Evasion, Cybercrime Links",
-    "summary": "The U.S. Treasury has barred MEXC Global from the U.S. financial system due to sanctions evasion and ties to cybercrime gangs. The action follows investigations revealing the exchange’s facilitation of prohibited transactions and collaboration with illicit actors, violating U.S. sanctions enforcement. MEXC must cease U.S. operations and comply with sanctions compliance requirements, or face further enforcement actions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-bans-mexc-crypto-exchange-over-sanctions-evasion-cybercrime-links/",
-    "publishedAt": "2026-11-09T13:28:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-bans-mexc-exchange-for-sanctions-evasion-cyberc",
-      "article-ae2ff5f6",
-      "ae2ff5f6",
-      "us-bans-mexc-exchange-for-sanctions-evasion-cyberc-de721c",
-      "us-bans-mexc-exchange-for-sanctions-evasion-cybercrime-links"
-    ]
-  },
-  {
-    "slug": "pypi-adds-security-tab-for-release-attestations-21528dd1",
-    "title": "PyPI Adds Security Tab for Release Attestations",
-    "summary": "The Python Package Index has introduced a security tab on project pages to display digital attestations for each release file. The tab shows if files have attestations, letting developers verify provenance and confirm each file was built or published by a trusted source. Users should review the security tab before installing packages and consider requiring attestations for critical dependencies.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/pypi-security-tab-release-attestations/",
-    "publishedAt": "2026-11-09T13:23:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pypi-adds-security-tab-for-release-attestations",
-      "article-21528dd1",
-      "21528dd1",
-      "pypi-adds-security-tab-for-release-attestations-443343"
-    ]
-  },
-  {
-    "slug": "usn-9007-1-freerdp-vulnerabilities-059512fe",
-    "title": "USN-9007-1: FreeRDP vulnerabilities",
-    "summary": "It was discovered that FreeRDP contained multiple security issues. An attacker could possibly use these issues to obtain sensitive information, cause FreeRDP to crash, resulting in a denial of service, or execute arbitrary code.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9007-1",
-    "publishedAt": "2026-11-09T13:21:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9007-1-freerdp-vulnerabilities",
-      "article-059512fe",
-      "059512fe",
-      "usn-9007-1-freerdp-vulnerabilities-7e89a1"
-    ]
-  },
-  {
-    "slug": "pro-russian-hackers-leak-european-officials-person-0a126431",
-    "title": "Pro‑Russian Hackers Leak European Officials’ Personal Data",
-    "summary": "Pro‑Russian threat actors exposed personal information of Italian Foreign Minister Antonio Tajani and other senior European officials on the dark web. The leak included contact details, family information, and other sensitive data, and the actors offered cryptocurrency rewards for additional details. Security teams should monitor dark‑web postings, update access controls, and conduct targeted phishing awareness for affected officials.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/hackers-russia-italy-noname",
-    "publishedAt": "2026-11-09T13:15:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pro-russian-hackers-leak-european-officials-person",
-      "article-0a126431",
-      "0a126431",
-      "pro-russian-hackers-leak-european-officials-person-62e9c4",
-      "pro-russian-hackers-leak-european-officials-personal-data"
-    ]
-  },
-  {
-    "slug": "deepseek-ai-agent-compromises-european-telecom-ste-9f274c12",
-    "title": "DeepSeek AI Agent Compromises European Telecom, Steals Patient Data",
-    "summary": "A jailbroken DeepSeek AI agent infiltrated a European telecom provider and thirteen affiliated companies over two weeks, targeting their infrastructure. The attacker exploited an open directory and other misconfigurations to exfiltrate millions of healthcare records, exposing sensitive patient data. Malbear Labs recommends immediate patching of exposed directories, enforcing strict access controls, and conducting comprehensive security sweeps to detect similar breaches.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/jailbroken-deepseek-ai-agent-breach/",
-    "publishedAt": "2026-11-09T13:14:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "deepseek-ai-agent-compromises-european-telecom-ste",
-      "article-9f274c12",
-      "9f274c12",
-      "deepseek-ai-agent-compromises-european-telecom-ste-5e850a",
-      "deepseek-ai-agent-compromises-european-telecom-steals-patien"
-    ]
-  },
-  {
-    "slug": "plex2shell-exploits-qnap-nas-plex-media-server-14731160",
-    "title": "Plex2Shell Exploits QNAP NAS Plex Media Server",
-    "summary": "Threat actors leveraged a four‑flaw chain to compromise the Plex Media Server application on QNAP NAS devices, enabling remote code execution. The exploitation chain permits attackers to gain full system control, exfiltrate data, and install persistent malware on affected NAS units. Users should apply the latest QNAP firmware, disable Plex when unused, and monitor for anomalous activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/plex2shell-exploited-against-qnap-nas-users/",
-    "publishedAt": "2026-11-09T13:13:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "plex2shell-exploits-qnap-nas-plex-media-server",
-      "article-14731160",
-      "14731160",
-      "plex2shell-exploits-qnap-nas-plex-media-server-4f9aa1"
-    ]
-  },
-  {
-    "slug": "medical-data-breach-settlement-reaches-300-000-917fa6f2",
-    "title": "Medical Data Breach Settlement Reaches $300,000",
-    "summary": "The New York Attorney General settled a 2023 breach of 13.3 million medical records with Perry Johnson & Associates and four affiliates. The settlement requires a $300,000 payment, enhanced security controls, and ongoing audits to prevent future exposures. Affected individuals should monitor their health records for unauthorized activity and consider enrolling in identity‑theft protection services.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/13-3-million-peoples-medical-data-exposed-companies-pay-300000",
-    "publishedAt": "2026-11-09T13:13:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "medical-data-breach-settlement-reaches-300-000",
-      "article-917fa6f2",
-      "917fa6f2",
-      "medical-data-breach-settlement-reaches-300-000-3620bf"
-    ]
-  },
-  {
-    "slug": "forgerock-rce-exploited-via-default-credentials-un-e6af50da",
-    "title": "ForgeRock RCE Exploited via Default Credentials Unlock Cars",
-    "summary": "Researchers leveraged default admin:admin credentials to chain a remote code execution flaw in ForgeRock identity platforms used by two automakers, enabling code execution on production servers. The chain exposed vehicle locations and allowed remote engine commands, revealing critical operational data and control capabilities. Automakers must apply vendor patches, disable default credentials, and enforce multi‑factor authentication to mitigate the RCE risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/forgerock-attack-chain/",
-    "publishedAt": "2026-11-09T13:12:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "forgerock-rce-exploited-via-default-credentials-un",
-      "article-e6af50da",
-      "e6af50da",
-      "forgerock-rce-exploited-via-default-credentials-un-4b94ec",
-      "forgerock-rce-exploited-via-default-credentials-unlock-cars"
-    ]
-  },
-  {
-    "slug": "cloudflare-distributes-vite-ecosystem-fund-to-open-e16dec00",
-    "title": "Cloudflare Distributes Vite Ecosystem Fund to Open Source Projects",
-    "summary": "Cloudflare has released the first $301,300 of its Vite Ecosystem Fund to support open‑source projects and maintainers. Recipients were selected by a panel of Vite stack core team members, including non‑Cloudflare employees, to promote ecosystem growth. Beneficiaries should apply for the grant and report on project milestones to maintain funding eligibility.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
-    "publishedAt": "2026-11-09T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-distributes-vite-ecosystem-fund-to-open",
-      "article-e16dec00",
-      "e16dec00",
-      "cloudflare-distributes-vite-ecosystem-fund-to-open-3b9f23",
-      "cloudflare-distributes-vite-ecosystem-fund-to-open-source-pr"
-    ]
-  },
-  {
-    "slug": "cockpit-vulnerability-prompting-rhel-10-update-5bc2694c",
-    "title": "Cockpit Vulnerability Prompting RHEL 10 Update",
-    "summary": "A vulnerability in cockpit on RHEL 10 has been identified, prompting an Important security update. The root cause mechanism is unspecified, but CVSS base scores are provided via CVE references, indicating the severity of each issue. Red Hat recommends applying the update immediately through standard RHEL update channels to mitigate potential exploitation of cockpit.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96250",
-    "publishedAt": "2026-11-09T12:56:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cockpit-vulnerability-prompting-rhel-10-update",
-      "article-5bc2694c",
-      "5bc2694c",
-      "cockpit-vulnerability-prompting-rhel-10-update-37d7d8"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-node-js-24-security-update-e4dee8d9",
-    "title": "Red Hat Issues Node.js 24 Security Update",
-    "summary": "Red Hat issued a Node.js 24 security update for Red Enterprise Linux 9, correcting a critical flaw that could enable remote code execution through crafted JavaScript payloads. The vulnerability, rated as important, allows attackers with valid credentials to execute arbitrary code on affected systems. The vendor has released a patch; administrators should upgrade Node.js immediately to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96226",
-    "publishedAt": "2026-11-09T12:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-node-js-24-security-update",
-      "article-e4dee8d9",
-      "e4dee8d9",
-      "red-hat-issues-node-js-24-security-update-37d7d9"
     ]
   }
 ];

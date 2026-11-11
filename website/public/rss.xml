@@ -5,8 +5,89 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 19:53:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 21:46:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>eMudhra Revokes Eight CA Certificates After Key Mishap</title>
+      <link>https://secubuzz.com/news/emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb</guid>
+      <description><![CDATA[eMudhra revoked eight intermediate CA certificates after discovering improper private key handling during certificate generation. The mishandling exposed the possibility of unauthorized certificate issuance, but no active exploitation has been reported. eMudhra has issued revocation notices, is reviewing its key management procedures, and will implement additional safeguards to prevent future incidents.]]></description>
+      <pubDate>Wed, 11 Nov 2026 21:27:40 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>AI Enhances Cyber Resilience Competition</title>
+      <link>https://secubuzz.com/news/ai-enhances-cyber-resilience-competition-cbdd8757</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-enhances-cyber-resilience-competition-cbdd8757</guid>
+      <description><![CDATA[The article argues that AI technologies amplify both threat capabilities and defensive options, making rapid recovery a competitive advantage. It highlights how machine learning can detect anomalies faster, yet also enables adversaries to craft more sophisticated phishing and malware campaigns. Security teams should adopt AI‑driven monitoring, continuous testing, and adaptive response frameworks to mitigate evolving risks.]]></description>
+      <pubDate>Wed, 11 Nov 2026 21:20:41 GMT</pubDate>
+      <source url="https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CVE-2026-125926 - Server-side request forgery in the server registration and update API in mcp-gateway-registry</title>
+      <link>https://secubuzz.com/news/cve-2026-125926-server-side-request-forgery-in-the-a8e51a20</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-125926-server-side-request-forgery-in-the-a8e51a20</guid>
+      <description><![CDATA[Bulletin ID: 2026-180-AWS Publication Date: 11/11/2026 13:00 PM PST Description: MServer-side request forgery (SSRF) in the server registration and update API in Amazon mcp-gateway-registry before 1.35.0 might allow an authenticated remote user to send requests from the gateway to internal network services and cloud instance metadata endpoints and read the responses via a crafted request Impacted versions: >= v1.0.3 AND Refer to the article for the most up-to-date and complete information.]]></description>
+      <pubDate>Wed, 11 Nov 2026 21:04:56 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-180-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>AWS mcp-gateway-registry Privilege Escalation via API</title>
+      <link>https://secubuzz.com/news/aws-mcp-gateway-registry-privilege-escalation-via-5cea2f24</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/aws-mcp-gateway-registry-privilege-escalation-via-5cea2f24</guid>
+      <description><![CDATA[Amazon mcp-gateway-registry’s external management API lacks authorization, letting an authenticated user elevate to registry administrator. The flaw, present in versions 1.0.9–1.24.7, allows a crafted group import request to grant administrator scope to the attacker’s identity group, giving control over all registered gateway assets. AWS released a patch; security teams should upgrade to 1.24.8 or later and verify group import permissions.]]></description>
+      <pubDate>Wed, 11 Nov 2026 21:03:02 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-179-aws/">AWS Security Bulletins</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>N-able N-central Platform Offline Over 33 Flaws</title>
+      <link>https://secubuzz.com/news/n-able-n-central-platform-offline-over-33-flaws-8a597079</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-n-central-platform-offline-over-33-flaws-8a597079</guid>
+      <description><![CDATA[N-able’s N-central RMM platform was taken offline after the discovery of 33 critical flaws that enable attacker takeover via public exploits. The vulnerabilities lack a single CVE identifier but collectively allow remote code execution and privilege escalation on affected installations. N-able released a hotfix; administrators should apply the update immediately and monitor for unauthorized access attempts.]]></description>
+      <pubDate>Wed, 11 Nov 2026 20:05:18 GMT</pubDate>
+      <source url="https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws">Dark Reading</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Chrome Extended Stable Update 156.0.8078.100 Released</title>
+      <link>https://secubuzz.com/news/chrome-extended-stable-update-156-0-8078-100-relea-dd0cbfeb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-update-156-0-8078-100-relea-dd0cbfeb</guid>
+      <description><![CDATA[Google Chrome released Stable channel build 156.0.8078.100 for Windows and Mac, rolling out over the next weeks. The update includes security patches, but the full list of changes is available in the release log, and users are encouraged to review it. Users should install the update via browser settings or wait for automatic rollout to ensure protection against known vulnerabilities.]]></description>
+      <pubDate>Wed, 11 Nov 2026 20:02:29 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01570615041.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chrome Stable Channel Updated to 157.0.8103.78</title>
+      <link>https://secubuzz.com/news/chrome-stable-channel-updated-to-157-0-8103-78-a219ebe6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-stable-channel-updated-to-157-0-8103-78-a219ebe6</guid>
+      <description><![CDATA[Google Chrome updated the Stable channel to build 157.0.8103.78 for Windows, Mac, and Linux, with rollout scheduled over the coming weeks. Security changes are included, and a list of modifications can be found in the release log, with users advised to review the details. Installation can be performed manually via browser settings or will occur automatically, ensuring users receive protections.]]></description>
+      <pubDate>Wed, 11 Nov 2026 20:02:26 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>The global socket: how threat actors are weaponizing GSocket for stealthy C2</title>
+      <link>https://secubuzz.com/news/the-global-socket-how-threat-actors-are-weaponizin-7e34f62c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/the-global-socket-how-threat-actors-are-weaponizin-7e34f62c</guid>
+      <description><![CDATA[Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity.]]></description>
+      <pubDate>Wed, 11 Nov 2026 19:49:57 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/">Microsoft Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apache HTTP Server Critical RCE CVE-2026-119618</title>
+      <link>https://secubuzz.com/news/apache-http-server-critical-rce-cve-2026-119618-4237afba</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-critical-rce-cve-2026-119618-4237afba</guid>
+      <description><![CDATA[Apache HTTP Server contains a critical RCE flaw identified as CVE-2026-119618. The vulnerability, affecting 64% of cloud environments, permits remote attackers to execute arbitrary code via crafted requests, with no authentication required. Immediate patching is advised; administrators should apply the latest globally Apache HTTP Server update and verify configuration hardening.]]></description>
+      <pubDate>Wed, 11 Nov 2026 19:49:10 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability">Wiz Research</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>RHSA-2026:99089: Moderate: gcc security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-99089-moderate-gcc-security-update-f85d34b2</link>
@@ -44,6 +125,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:99088: Important: containernetworking-plugins security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99088-important-containernetworking-plug-61aef30b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99088-important-containernetworking-plug-61aef30b</guid>
+      <description><![CDATA[An update for containernetworking-plugins is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:44:19 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99088">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Vanderbilt Restores Systems After Alleged Data Theft Attack</title>
       <link>https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</guid>
@@ -53,6 +143,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Red Hat Releases .NET 8.0 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-net-8-0-security-update-fa711df7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-net-8-0-security-update-fa711df7</guid>
+      <description><![CDATA[Red Hat released a security update for .NET 8.0 on RHEL 8, fixing vulnerabilities that could let attackers compromise application integrity. The advisory rates the update as Important, with CVSS scores linked to each CVE, indicating moderate to high risk but no confirmed exploitation. Apply the .NET 8.0 update immediately following Red Hat’s guidance to mitigate the identified flaws.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:20:45 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99052">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Who Runs the Ransomware Group Qilin?</title>
       <link>https://secubuzz.com/news/who-runs-the-ransomware-group-qilin-86b23989</link>
       <guid isPermaLink="true">https://secubuzz.com/news/who-runs-the-ransomware-group-qilin-86b23989</guid>
@@ -60,6 +159,15 @@
       <pubDate>Wed, 11 Nov 2026 18:06:01 GMT</pubDate>
       <source url="https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/">Krebs on Security</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Ubuntu Updates MySQL to Patch Security Issues</title>
+      <link>https://secubuzz.com/news/ubuntu-updates-mysql-to-patch-security-issues-aa376998</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-updates-mysql-to-patch-security-issues-aa376998</guid>
+      <description><![CDATA[Ubuntu released updates for MySQL, addressing multiple security issues discovered in the database engine across several releases. The patches upgrade MySQL to 8.4.13 on Ubuntu 26.04 LTS, 9.7.4 on 26.10, and backport fixes to 22.04 and 24.04, potentially introducing incompatibilities. Administrators should apply the updated packages immediately and review release notes for any required application adjustments.]]></description>
+      <pubDate>Wed, 11 Nov 2026 17:42:27 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9046-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Releases Kernel Update for RHEL 8</title>
@@ -348,114 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 13:18:00 GMT</pubDate>
       <source url="https://therecord.media/poland-shuts-down-government-services-platform-cyberattack">The Record</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Britain, France Issue Guidelines for Hacking Firms</title>
-      <link>https://secubuzz.com/news/britain-france-issue-guidelines-for-hacking-firms-94bb8378</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/britain-france-issue-guidelines-for-hacking-firms-94bb8378</guid>
-      <description><![CDATA[Britain and France have released the first regulatory guidelines targeting commercial hacking firms that develop, sell, or finance cyber‑crime infrastructure components (CCICs). The guidelines require firms to vet customers, implement technical safeguards against misuse, and maintain monitoring and reporting systems for abuse incidents. Compliance will be monitored by national authorities, and non‑compliance could result in licensing revocation or legal action.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:11:00 GMT</pubDate>
-      <source url="https://therecord.media/britain-france-set-out-guidelines-for-commercial-hacking-firms">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Blind Eagle Targets Latin America with Fake Court RATs</title>
-      <link>https://secubuzz.com/news/blind-eagle-targets-latin-america-with-fake-court-95822401</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/blind-eagle-targets-latin-america-with-fake-court-95822401</guid>
-      <description><![CDATA[Law enforcement intelligence reports that the state‑backed threat actor Blind Eagle targets Latin American entities with fake court‑related RATs. The RATs masquerade as legitimate court software, allowing attackers to establish persistent footholds and exfiltrate sensitive data. Security teams should verify software authenticity, enforce strict application whitelisting, and monitor for anomalous remote access activity.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:10:53 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/blind-eagle-uses-fake-court-notices-to-deliver-remote-a">CyberNews AI</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Git CVE-2026-111760 Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/git-cve-2026-111760-enables-remote-code-execution-c8ba2879</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/git-cve-2026-111760-enables-remote-code-execution-c8ba2879</guid>
-      <description><![CDATA[Git introduced CVE-2026-111760, a flaw that permits remote code execution in enterprise environments. The vulnerability arises from improper input validation in the Git server component, allowing attackers to inject malicious commands; no public exploit is documented. A patch is available; administrators should update Git to the latest release and monitor logs for suspicious activity.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:10:43 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/git-patches-flaw-that-lets-malicious-repositories-execu">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CISA KEV Catalog: Detect &amp; Patch Six New Exploits</title>
-      <link>https://secubuzz.com/news/cisa-kev-catalog-detect-patch-six-new-exploits-379e8ffb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-kev-catalog-detect-patch-six-new-exploits-379e8ffb</guid>
-      <description><![CDATA[Critical security intelligence alert regarding CISA KEV Catalog: Detect & Patch Six. Review root-cause telemetry, hunt via detection rules, and patch today. The vulnerability is tracked as CVE-2026-20320.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:10:29 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cisa-adds-six-known-exploited-vulnerabilities-to-catalo">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Cisco BroadWorks CVE-2026-20320: XXE Flaw Patch</title>
-      <link>https://secubuzz.com/news/cisco-broadworks-cve-2026-20320-xxe-flaw-patch-cfad1869</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-broadworks-cve-2026-20320-xxe-flaw-patch-cfad1869</guid>
-      <description><![CDATA[Cisco BroadWorks is affected by CVE-2026-20320, an XML External Entity (XXE) flaw that can enable remote code execution. The vulnerability allows attackers to read arbitrary files and execute commands on the BroadWorks server when processing crafted XML requests. Cisco has released a patch; administrators should apply the update immediately and enable input validation to mitigate the risk.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:10:06 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cisa-flags-cisco-broadworks-flaw-as-actively-exploited">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft CVE-2026-124194 Enables Outlook RCE</title>
-      <link>https://secubuzz.com/news/microsoft-cve-2026-124194-enables-outlook-rce-ac9d4617</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-cve-2026-124194-enables-outlook-rce-ac9d4617</guid>
-      <description><![CDATA[Microsoft disclosed CVE-2026-124194, a flaw that allows remote code execution in Outlook on enterprise systems. The issue stems from improper handling of email attachments, enabling attackers to execute arbitrary code; no public exploit is reported. Microsoft has released a patch; users should update Outlook immediately and disable macro execution as a precaution.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:09:51 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98471: Important: openexr security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98471-important-openexr-security-update-56dd69b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98471-important-openexr-security-update-56dd69b3</guid>
-      <description><![CDATA[An update for openexr is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:07:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98471">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>N‑able Issues Emergency Hotfix After 33 Vulnerabilities Shutdown</title>
-      <link>https://secubuzz.com/news/n-able-issues-emergency-hotfix-after-33-vulnerabil-9ad632e5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-issues-emergency-hotfix-after-33-vulnerabil-9ad632e5</guid>
-      <description><![CDATA[N‑able’s hosted remote monitoring platform suffered a worldwide shutdown after the public disclosure of 33 vulnerabilities. The emergency update, build 2026.4.1.26, addresses seven published CVEs and implements server, agent, and probe hardening to mitigate the identified weaknesses. Security teams should apply the hotfix immediately and review configuration settings to prevent similar disruptions.]]></description>
-      <pubDate>Wed, 11 Nov 2026 12:57:12 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/n-able-n-central-security-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat rhc Update Addresses Important Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-hat-rhc-update-addresses-important-vulnerabili-dc8f8a9d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-rhc-update-addresses-important-vulnerabili-dc8f8a9d</guid>
-      <description><![CDATA[Red Hat released a security update for the rhc client on Enterprise Linux 7, addressing vulnerabilities that could allow privilege escalation. The advisory references several CVEs with CVSS scores ranging from 7.5 to 8.3, indicating high exploitation potential for authenticated users. Administrators should apply the rhc update immediately and verify that all affected components are patched to prevent unauthorized access.]]></description>
-      <pubDate>Wed, 11 Nov 2026 12:40:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98794">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat tigervnc Update Fixes Important Vulnerabilities</title>
-      <link>https://secubuzz.com/news/red-hat-tigervnc-update-fixes-important-vulnerabil-b8109f0a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-tigervnc-update-fixes-important-vulnerabil-b8109f0a</guid>
-      <description><![CDATA[Red Hat issued an update for tigervnc on Enterprise Linux 9, fixing vulnerabilities that could enable code execution via the VNC protocol. The advisory lists CVEs with CVSS scores of 9.0, indicating a severe risk for systems exposed to untrusted network traffic. Users must apply the tigervnc patch immediately and restrict VNC access to trusted hosts to mitigate the threat.]]></description>
-      <pubDate>Wed, 11 Nov 2026 12:39:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98538">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98531: Important: qt5-qtdeclarative security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98531-important-qt5-qtdeclarative-securi-511b4b77</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98531-important-qt5-qtdeclarative-securi-511b4b77</guid>
-      <description><![CDATA[An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 12:34:01 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98531">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98529: Important: nginx security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98529-important-nginx-security-update-cf63534c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98529-important-nginx-security-update-cf63534c</guid>
-      <description><![CDATA[An update for nginx is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 12:34:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98529">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
