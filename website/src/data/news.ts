@@ -11,6 +11,121 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-openjdk-8-security-update-for-rhel-5832fee3",
+    "title": "Red Hat Issues OpenJDK 8 Security Update for RHEL 7",
+    "summary": "Red Hat released a security update for java‑1.8.0‑openjdk on Red Enterprise Linux 7 Extended Lifecycle Support to address multiple vulnerabilities. The update covers unspecified Java runtime flaws rated Important, with CVSS base scores linked via CVE references, potentially enabling remote code execution or privilege escalation. System administrators should apply the RHSA‑2026:95598 patch and verify Java version to ensure protection.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95598",
+    "publishedAt": "2026-11-11T14:33:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-openjdk-8-security-update-for-rhel",
+      "article-5832fee3",
+      "5832fee3",
+      "red-hat-issues-openjdk-8-security-update-for-rhel-37d841",
+      "red-hat-issues-openjdk-8-security-update-for-rhel-7"
+    ]
+  },
+  {
+    "slug": "git-issues-patches-for-six-vulnerabilities-includi-beb706d4",
+    "title": "Git Issues Patches for Six Vulnerabilities, Including Code Execution",
+    "summary": "Git released patches for six vulnerabilities, including CVE-2026-111760, which allows code execution during recursive clones. The flaw stems from an integer truncation in Git’s index handling, enabling attackers to write unintended files or cause memory corruption when processing malicious repositories. Git has issued security updates; users should apply the latest release to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/git-project-security-updates/",
+    "publishedAt": "2026-11-11T14:26:12.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "git-issues-patches-for-six-vulnerabilities-includi",
+      "article-beb706d4",
+      "beb706d4",
+      "git-issues-patches-for-six-vulnerabilities-includi-4c12d4",
+      "git-issues-patches-for-six-vulnerabilities-including-code-ex"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a",
+    "title": "Red Hat Releases Kernel Security Update for RHEL 10",
+    "summary": "Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security issues. The update targets unspecified kernel vulnerabilities rated Important, with CVSS base scores available via CVE references, indicating potential privilege escalation or denial of service if exploited. Administrators should apply the RHSA‑2026:98638 patch promptly and verify kernel version to ensure protection.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98638",
+    "publishedAt": "2026-11-11T14:10:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-security-update-for-rhel-1",
+      "article-54d0cb1a",
+      "54d0cb1a",
+      "red-hat-releases-kernel-security-update-for-rhel-1-37d6e1",
+      "red-hat-releases-kernel-security-update-for-rhel-10"
+    ]
+  },
+  {
+    "slug": "qlik-sense-servers-targeted-by-reverse-shell-attem-b382a9bf",
+    "title": "Qlik Sense Servers Targeted by Reverse Shell Attempts",
+    "summary": "Threat actors targeted Qlik Sense servers in October 2026, attempting to deliver PowerShell reverse shells across multiple environments. The activity, observed by Cynet's CyOps and Research teams, involved a narrow three‑minute window and failed to achieve code execution or credential compromise. Security teams should monitor for similar attempts and ensure Qlik Sense is patched to the latest version.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+    "publishedAt": "2026-11-11T14:01:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qlik-sense-servers-targeted-by-reverse-shell-attem",
+      "article-b382a9bf",
+      "b382a9bf",
+      "qlik-sense-servers-targeted-by-reverse-shell-attem-43fcd1",
+      "qlik-sense-servers-targeted-by-reverse-shell-attempts"
+    ]
+  },
+  {
+    "slug": "asus-zoom-issue-patches-for-execution-flaws-8bf454f6",
+    "title": "Asus, Zoom Issue Patches for Execution Flaws",
+    "summary": "Asus and Zoom released security patches addressing critical flaws that could allow attackers to execute arbitrary code, overwrite memory, and elevate privileges. The vulnerabilities involve memory corruption and privilege escalation paths, potentially enabling full system compromise if exploited. Users should install the latest updates for both Asus firmware and Zoom client immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/asus-zoom-release-security-patches/",
+    "publishedAt": "2026-11-11T13:58:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "asus-zoom-issue-patches-for-execution-flaws",
+      "article-8bf454f6",
+      "8bf454f6",
+      "asus-zoom-issue-patches-for-execution-flaws-33d66f"
+    ]
+  },
+  {
+    "slug": "remus-malware-claims-persistent-gmail-access-after-81bdb562",
+    "title": "Remus Malware Claims Persistent Gmail Access After Reset",
+    "summary": "The Remus infostealer asserts it can maintain Gmail access even after victims reset their passwords. The malware reportedly exploits credential persistence mechanisms, potentially leveraging OAuth tokens or cached credentials to bypass password changes. Users should revoke app permissions, enable two‑factor authentication, and monitor account activity regularly to mitigate the threat.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/remus-malware-claims-gmail-access-even-after-you-change-your-password",
+    "publishedAt": "2026-11-11T13:42:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "remus-malware-claims-persistent-gmail-access-after",
+      "article-81bdb562",
+      "81bdb562",
+      "remus-malware-claims-persistent-gmail-access-after-b7f879",
+      "remus-malware-claims-persistent-gmail-access-after-reset"
+    ]
+  },
+  {
     "slug": "rhsa-2026-98592-important-go-fdo-client-security-u-9fe8f942",
     "title": "RHSA-2026:98592: Important: go-fdo-client security update",
     "summary": "An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -84,6 +199,26 @@ export const news: NewsBrief[] = [
       "article-c8ba2879",
       "c8ba2879",
       "git-cve-2026-111760-enables-remote-code-execution-3a8d59"
+    ]
+  },
+  {
+    "slug": "cisco-broadworks-cve-2026-20320-xxe-flaw-patch-cfad1869",
+    "title": "Cisco BroadWorks CVE-2026-20320: XXE Flaw Patch",
+    "summary": "Cisco BroadWorks is affected by CVE-2026-20320, an XML External Entity (XXE) flaw that can enable remote code execution. The vulnerability allows attackers to read arbitrary files and execute commands on the BroadWorks server when processing crafted XML requests. Cisco has released a patch; administrators should apply the update immediately and enable input validation to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cisa-flags-cisco-broadworks-flaw-as-actively-exploited",
+    "publishedAt": "2026-11-11T13:10:06.000Z",
+    "cves": [
+      "CVE-2026-20320"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-broadworks-cve-2026-20320-xxe-flaw-patch",
+      "article-cfad1869",
+      "cfad1869",
+      "cisco-broadworks-cve-2026-20320-xxe-flaw-patch-2ca8f4"
     ]
   },
   {
@@ -220,6 +355,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "claude-code-ai-discovers-technique-to-turn-dormant-7cfee60b",
+    "title": "Claude Code AI Discovers Technique to Turn Dormant Model Neurons Into Hidden Malware Triggers",
+    "summary": "Claude Code helped uncover a technique that can turn an otherwise capable AI model into a sleeper agent by changing fewer than 10 dormant neurons. Called Lazarus, the method plants a hidden backdoor in model weights, allowing an attacker’s trigger to make an AI agent produce commands that download and run malicious code.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/claude-code-ai/",
+    "publishedAt": "2026-11-11T11:57:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "claude-code-ai-discovers-technique-to-turn-dormant",
+      "article-7cfee60b",
+      "7cfee60b",
+      "claude-code-ai-discovers-technique-to-turn-dormant-228793",
+      "claude-code-ai-discovers-technique-to-turn-dormant-model-neu"
+    ]
+  },
+  {
+    "slug": "microsoft-patch-tuesday-addresses-actively-exploit-a1376189",
+    "title": "Microsoft Patch Tuesday Addresses Actively Exploited Outlook CVE",
+    "summary": "Microsoft released a Patch Tuesday update for Outlook to remediate an actively exploited vulnerability identified as CVE-2026-124194. The flaw permits remote code execution via malicious email attachments, enabling attackers to execute arbitrary code on affected systems. Administrators should apply the Outlook patch immediately and verify Office updates to close the exploitation vector.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/microsoft-patch-tuesday-fixes-outlook-flaw-already-under-attack",
+    "publishedAt": "2026-11-11T11:25:05.000Z",
+    "cves": [
+      "CVE-2026-124194"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-patch-tuesday-addresses-actively-exploit",
+      "article-a1376189",
+      "a1376189",
+      "microsoft-patch-tuesday-addresses-actively-exploit-344499",
+      "microsoft-patch-tuesday-addresses-actively-exploited-outlook"
+    ]
+  },
+  {
     "slug": "rhsa-2026-98588-moderate-openssl-security-bug-fix-00a2dfee",
     "title": "RHSA-2026:98588: Moderate: openssl security, bug fix, and enhancement update",
     "summary": "An update for openssl is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -255,6 +430,25 @@ export const news: NewsBrief[] = [
       "54b55bf3",
       "rhsa-2026-98586-important-networkmanager-security-37d6e4",
       "rhsa-2026-98586-important-networkmanager-security-update"
+    ]
+  },
+  {
+    "slug": "multiple-windows-remote-desktop-flaws-allow-attack-59540717",
+    "title": "Multiple Windows Remote Desktop Flaws Allow Attackers to Execute Code Over Network",
+    "summary": "Microsoft has released security updates for four Windows Remote Desktop Client vulnerabilities that could allow attackers to run code through network connections or local access. Published on November 10, 2026, the flaws involve memory handling errors and a race condition.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/multiple-windows-remote-desktop-vulnerabilities/",
+    "publishedAt": "2026-11-11T11:22:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "multiple-windows-remote-desktop-flaws-allow-attack",
+      "article-59540717",
+      "59540717",
+      "multiple-windows-remote-desktop-flaws-allow-attack-653499",
+      "multiple-windows-remote-desktop-flaws-allow-attackers-to-exe"
     ]
   },
   {
@@ -9364,169 +9558,6 @@ export const news: NewsBrief[] = [
       "article-42feb647",
       "42feb647",
       "red-hat-releases-gdb-security-update-37d7df"
-    ]
-  },
-  {
-    "slug": "claude-ai-deletes-law-professor-s-syllabus-3af85816",
-    "title": "Claude AI Deletes Law Professor’s Syllabus",
-    "summary": "Anthropic’s Claude AI mistakenly removed a Chicago law professor’s entire syllabus and a year of lecture notes during a routine editing task. The loss was recovered from Dropbox, preventing permanent data loss, but the incident highlights accidental deletion risks in AI-assisted workflows. Users should back up critical documents and monitor AI outputs to mitigate similar accidental deletions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/claude-ai-deletes-law-professors-entire-syllabus/",
-    "publishedAt": "2026-11-09T03:11:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-ai-deletes-law-professor-s-syllabus",
-      "article-3af85816",
-      "3af85816",
-      "claude-ai-deletes-law-professor-s-syllabus-4351ed"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-9-2-updates-gdb-security-flaw-c2de3a68",
-    "title": "Red Enterprise Linux 9.2 Updates gdb Security Flaw",
-    "summary": "Red Enterprise Linux 9.2 Update Services for SAP Solutions users receive a gdb security update addressing a debugging flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the gdb update immediately and review CVSS scores to assess residual risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96095",
-    "publishedAt": "2026-11-09T03:09:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-9-2-updates-gdb-security-flaw",
-      "article-c2de3a68",
-      "c2de3a68",
-      "red-enterprise-linux-9-2-updates-gdb-security-flaw-37d7df"
-    ]
-  },
-  {
-    "slug": "rhel-8-4-updates-qt5-qtbase-security-flaw-de0e7c2c",
-    "title": "RHEL 8.4 Updates qt5-qtbase Security Flaw",
-    "summary": "Red Enterprise Linux 8.4 Advanced Mission Critical Update Support users receive a qt5-qtbase security update addressing a UI rendering flaw. The flaw is rated Important by Red Hat Product Security, and CVSS scores are linked via CVE references, indicating moderate to high risk. Apply the qt5-qtbase update immediately and review CVSS scores to assess residual risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96086",
-    "publishedAt": "2026-11-09T03:05:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhel-8-4-updates-qt5-qtbase-security-flaw",
-      "article-de0e7c2c",
-      "de0e7c2c",
-      "rhel-8-4-updates-qt5-qtbase-security-flaw-37d7e0"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-96091-important-kpatch-patch-5-14-0-570-948df1c1",
-    "title": "RHSA-2026:96091: Important: kpatch-patch-5_14_0-570_116_1, kpatch-patch-5_14_0-570_135_1, kpatch-patch-5_14_0-570_39_1, kpatch-patch-5_14_0-570_66_1, and kpatch-patch-5_14_0-570_94_1 security update",
-    "summary": "An update for multiple packages is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96091",
-    "publishedAt": "2026-11-09T02:56:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-96091-important-kpatch-patch-5-14-0-570",
-      "article-948df1c1",
-      "948df1c1",
-      "rhsa-2026-96091-important-kpatch-patch-5-14-0-570-37d7df",
-      "rhsa-2026-96091-important-kpatch-patch-5-14-0-570-116-1-kpat"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-kpatch-security-update-723f2f96",
-    "title": "Red Hat Issues kpatch Security Update",
-    "summary": "Red Hat released an important security update for multiple kpatch packages on Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. The update addresses several vulnerabilities in kpatch, each with a CVSS base score listed in the advisory references, but no CVE identifiers are disclosed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96090",
-    "publishedAt": "2026-11-09T02:53:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-kpatch-security-update",
-      "article-723f2f96",
-      "723f2f96",
-      "red-hat-issues-kpatch-security-update-37d7df"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-ruby-security-update-for-rhel7-9739cae5",
-    "title": "Red Hat Releases Ruby Security Update for RHEL7",
-    "summary": "Red Hat issued a Ruby security update for Enterprise Linux 7 ELS, fixing vulnerabilities that could enable remote code execution. The update is rated Important, and each CVE’s CVSS base score is listed in the references supplied by Red Hat Product Security. Apply the patch promptly to eliminate exploitation risk and review the CVE links for detailed remediation guidance.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96099",
-    "publishedAt": "2026-11-09T02:52:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-ruby-security-update-for-rhel7",
-      "article-9739cae5",
-      "9739cae5",
-      "red-hat-releases-ruby-security-update-for-rhel7-37d7df"
-    ]
-  },
-  {
-    "slug": "rsyslog-update-addresses-security-issues-f1878c83",
-    "title": "Rsyslog Update Addresses Security Issues",
-    "summary": "Red Hat released a security update for rsyslog on Red Hat Enterprise Linux 7 Extended Lifecycle Support. The update is rated Important by Red Hat Product Security, with CVSS base scores for each vulnerability listed in the references. Systems should install the rsyslog update to remediate the identified vulnerabilities and preserve logging integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96085",
-    "publishedAt": "2026-11-09T02:52:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rsyslog-update-addresses-security-issues",
-      "article-f1878c83",
-      "f1878c83",
-      "rsyslog-update-addresses-security-issues-37d7e0"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-gdb-security-update-508c2645",
-    "title": "Red Hat Issues Important gdb Security Update",
-    "summary": "Red Hat released a gdb security update on RHEL 10.0 Extended Update Support, fixing vulnerabilities that could enable arbitrary code execution via malformed debugging data. The flaws, rated Important by Red Hat Product Security, carry high CVSS scores but have no known active exploitation. Apply the gdb update immediately and verify the package version to ensure the patches are installed.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96098",
-    "publishedAt": "2026-11-09T02:51:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-gdb-security-update",
-      "article-508c2645",
-      "508c2645",
-      "red-hat-issues-important-gdb-security-update-37d7df"
-    ]
-  },
-  {
-    "slug": "openshift-4-18-60-releases-security-update-5fa5fab5",
-    "title": "OpenShift 4.18.60 Releases Security Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.18.60, which includes a security update addressing multiple bugs and adding enhancements. The update is rated Important by Red Hat Product Security, and CVSS base scores for each vulnerability are listed in the references. Customers should apply the 4.18.60 update to mitigate the identified vulnerabilities and maintain platform stability.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95103",
-    "publishedAt": "2026-11-09T02:50:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openshift-4-18-60-releases-security-update",
-      "article-5fa5fab5",
-      "5fa5fab5",
-      "openshift-4-18-60-releases-security-update-37d851"
     ]
   }
 ];

@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 13:46:27 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 14:47:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues OpenJDK 8 Security Update for RHEL 7</title>
+      <link>https://secubuzz.com/news/red-hat-issues-openjdk-8-security-update-for-rhel-5832fee3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openjdk-8-security-update-for-rhel-5832fee3</guid>
+      <description><![CDATA[Red Hat released a security update for java‑1.8.0‑openjdk on Red Enterprise Linux 7 Extended Lifecycle Support to address multiple vulnerabilities. The update covers unspecified Java runtime flaws rated Important, with CVSS base scores linked via CVE references, potentially enabling remote code execution or privilege escalation. System administrators should apply the RHSA‑2026:95598 patch and verify Java version to ensure protection.]]></description>
+      <pubDate>Wed, 11 Nov 2026 14:33:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:95598">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Git Issues Patches for Six Vulnerabilities, Including Code Execution</title>
+      <link>https://secubuzz.com/news/git-issues-patches-for-six-vulnerabilities-includi-beb706d4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/git-issues-patches-for-six-vulnerabilities-includi-beb706d4</guid>
+      <description><![CDATA[Git released patches for six vulnerabilities, including CVE-2026-111760, which allows code execution during recursive clones. The flaw stems from an integer truncation in Git’s index handling, enabling attackers to write unintended files or cause memory corruption when processing malicious repositories. Git has issued security updates; users should apply the latest release to mitigate the risk.]]></description>
+      <pubDate>Wed, 11 Nov 2026 14:26:12 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/11/git-project-security-updates/">Help Net Security</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Security Update for RHEL 10</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a</guid>
+      <description><![CDATA[Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security issues. The update targets unspecified kernel vulnerabilities rated Important, with CVSS base scores available via CVE references, indicating potential privilege escalation or denial of service if exploited. Administrators should apply the RHSA‑2026:98638 patch promptly and verify kernel version to ensure protection.]]></description>
+      <pubDate>Wed, 11 Nov 2026 14:10:03 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98638">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Qlik Sense Servers Targeted by Reverse Shell Attempts</title>
+      <link>https://secubuzz.com/news/qlik-sense-servers-targeted-by-reverse-shell-attem-b382a9bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/qlik-sense-servers-targeted-by-reverse-shell-attem-b382a9bf</guid>
+      <description><![CDATA[Threat actors targeted Qlik Sense servers in October 2026, attempting to deliver PowerShell reverse shells across multiple environments. The activity, observed by Cynet's CyOps and Research teams, involved a narrow three‑minute window and failed to achieve code execution or credential compromise. Security teams should monitor for similar attempts and ensure Qlik Sense is patched to the latest version.]]></description>
+      <pubDate>Wed, 11 Nov 2026 14:01:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Asus, Zoom Issue Patches for Execution Flaws</title>
+      <link>https://secubuzz.com/news/asus-zoom-issue-patches-for-execution-flaws-8bf454f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/asus-zoom-issue-patches-for-execution-flaws-8bf454f6</guid>
+      <description><![CDATA[Asus and Zoom released security patches addressing critical flaws that could allow attackers to execute arbitrary code, overwrite memory, and elevate privileges. The vulnerabilities involve memory corruption and privilege escalation paths, potentially enabling full system compromise if exploited. Users should install the latest updates for both Asus firmware and Zoom client immediately to mitigate the risk.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:58:38 GMT</pubDate>
+      <source url="https://www.securityweek.com/asus-zoom-release-security-patches/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Remus Malware Claims Persistent Gmail Access After Reset</title>
+      <link>https://secubuzz.com/news/remus-malware-claims-persistent-gmail-access-after-81bdb562</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/remus-malware-claims-persistent-gmail-access-after-81bdb562</guid>
+      <description><![CDATA[The Remus infostealer asserts it can maintain Gmail access even after victims reset their passwords. The malware reportedly exploits credential persistence mechanisms, potentially leveraging OAuth tokens or cached credentials to bypass password changes. Users should revoke app permissions, enable two‑factor authentication, and monitor account activity regularly to mitigate the threat.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:42:10 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/remus-malware-claims-gmail-access-even-after-you-change-your-password">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
     <item>
       <title>RHSA-2026:98592: Important: go-fdo-client security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-98592-important-go-fdo-client-security-u-9fe8f942</link>
@@ -41,6 +95,15 @@
       <description><![CDATA[Git introduced CVE-2026-111760, a flaw that permits remote code execution in enterprise environments. The vulnerability arises from improper input validation in the Git server component, allowing attackers to inject malicious commands; no public exploit is documented. A patch is available; administrators should update Git to the latest release and monitor logs for suspicious activity.]]></description>
       <pubDate>Wed, 11 Nov 2026 13:10:43 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/git-patches-flaw-that-lets-malicious-repositories-execu">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Cisco BroadWorks CVE-2026-20320: XXE Flaw Patch</title>
+      <link>https://secubuzz.com/news/cisco-broadworks-cve-2026-20320-xxe-flaw-patch-cfad1869</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-broadworks-cve-2026-20320-xxe-flaw-patch-cfad1869</guid>
+      <description><![CDATA[Cisco BroadWorks is affected by CVE-2026-20320, an XML External Entity (XXE) flaw that can enable remote code execution. The vulnerability allows attackers to read arbitrary files and execute commands on the BroadWorks server when processing crafted XML requests. Cisco has released a patch; administrators should apply the update immediately and enable input validation to mitigate the risk.]]></description>
+      <pubDate>Wed, 11 Nov 2026 13:10:06 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cisa-flags-cisco-broadworks-flaw-as-actively-exploited">CyberNews AI</source>
       <category>CVE</category>
     </item>
     <item>
@@ -107,6 +170,24 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Claude Code AI Discovers Technique to Turn Dormant Model Neurons Into Hidden Malware Triggers</title>
+      <link>https://secubuzz.com/news/claude-code-ai-discovers-technique-to-turn-dormant-7cfee60b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/claude-code-ai-discovers-technique-to-turn-dormant-7cfee60b</guid>
+      <description><![CDATA[Claude Code helped uncover a technique that can turn an otherwise capable AI model into a sleeper agent by changing fewer than 10 dormant neurons. Called Lazarus, the method plants a hidden backdoor in model weights, allowing an attacker’s trigger to make an AI agent produce commands that download and run malicious code.]]></description>
+      <pubDate>Wed, 11 Nov 2026 11:57:04 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/claude-code-ai/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Patch Tuesday Addresses Actively Exploited Outlook CVE</title>
+      <link>https://secubuzz.com/news/microsoft-patch-tuesday-addresses-actively-exploit-a1376189</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patch-tuesday-addresses-actively-exploit-a1376189</guid>
+      <description><![CDATA[Microsoft released a Patch Tuesday update for Outlook to remediate an actively exploited vulnerability identified as CVE-2026-124194. The flaw permits remote code execution via malicious email attachments, enabling attackers to execute arbitrary code on affected systems. Administrators should apply the Outlook patch immediately and verify Office updates to close the exploitation vector.]]></description>
+      <pubDate>Wed, 11 Nov 2026 11:25:05 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/microsoft-patch-tuesday-fixes-outlook-flaw-already-under-attack">Malwarebytes Labs</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>RHSA-2026:98588: Moderate: openssl security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-98588-moderate-openssl-security-bug-fix-00a2dfee</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98588-moderate-openssl-security-bug-fix-00a2dfee</guid>
@@ -122,6 +203,15 @@
       <description><![CDATA[An update for NetworkManager is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Wed, 11 Nov 2026 11:23:25 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98586">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Multiple Windows Remote Desktop Flaws Allow Attackers to Execute Code Over Network</title>
+      <link>https://secubuzz.com/news/multiple-windows-remote-desktop-flaws-allow-attack-59540717</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/multiple-windows-remote-desktop-flaws-allow-attack-59540717</guid>
+      <description><![CDATA[Microsoft has released security updates for four Windows Remote Desktop Client vulnerabilities that could allow attackers to run code through network connections or local access. Published on November 10, 2026, the flaws involve memory handling errors and a race condition.]]></description>
+      <pubDate>Wed, 11 Nov 2026 11:22:00 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/multiple-windows-remote-desktop-vulnerabilities/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -366,96 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 07:21:05 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html">The Hacker News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Fortinet FortiClient RCE via FortiPAM Exploit CVE-2026-121529</title>
-      <link>https://secubuzz.com/news/fortinet-forticlient-rce-via-fortipam-exploit-cve-dec52944</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fortinet-forticlient-rce-via-fortipam-exploit-cve-dec52944</guid>
-      <description><![CDATA[A FortiClient flaw (CVE-2026-121529) allows a remote attacker to execute code when a user visits a malicious website. The vulnerability, rated Critical with a CVSS 9.1 score, exploits improper handling of embedded scripts in FortiPAM-enabled sessions. Fortinet released a patch on November 10, 2026; users should update FortiClient immediately to prevent exploitation.]]></description>
-      <pubDate>Wed, 11 Nov 2026 07:05:55 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/fortinet2shell-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>EU Cyber Resilience Act Reporting Obligations Explained</title>
-      <link>https://secubuzz.com/news/eu-cyber-resilience-act-reporting-obligations-expl-974bcf91</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-cyber-resilience-act-reporting-obligations-expl-974bcf91</guid>
-      <description><![CDATA[The EU Cyber Resilience Act requires manufacturers to register every product version still in use. Effective September 2026, the regulation defines when a company learns of an exploited flaw and urges CISOs to query suppliers on vulnerability handling and CE marking. Manufacturers must keep product registers current and provide clear vulnerability disclosure timelines to meet reporting duties.]]></description>
-      <pubDate>Wed, 11 Nov 2026 07:00:54 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/11/aurimas-bakas-copla-cra-vulnerability-reporting/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apple Fixes Bluetooth, AirPlay Pairing Flaws</title>
-      <link>https://secubuzz.com/news/apple-fixes-bluetooth-airplay-pairing-flaws-28a73ab6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-fixes-bluetooth-airplay-pairing-flaws-28a73ab6</guid>
-      <description><![CDATA[Apple patched Bluetooth and AirPlay pairing flaws, iMessage vulnerabilities, and an exploited Brotli bug across its platforms. The vulnerabilities allowed unauthorized pairing and message tampering, potentially enabling data exfiltration or denial of service on affected devices. Apple released security updates for macOS, iOS, iPadOS, and tvOS; users should install the latest patches to mitigate the risks.]]></description>
-      <pubDate>Wed, 11 Nov 2026 07:00:17 GMT</pubDate>
-      <source url="https://www.securityweek.com/bluetooth-airplay-pairing-vulnerabilities-patched-across-apple-platforms/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues GCC Update for Moderate Security Issue</title>
-      <link>https://secubuzz.com/news/red-hat-issues-gcc-update-for-moderate-security-is-fd907fcf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-gcc-update-for-moderate-security-is-fd907fcf</guid>
-      <description><![CDATA[Red Hat released a GCC update for RHEL 8 to fix a moderate‑severity security issue. The advisory indicates a Moderate impact, with CVSS scores linked to CVE references, suggesting a medium‑severity flaw affecting compiler integrity. Apply the update immediately and confirm GCC version compliance in RHEL 8 to mitigate potential exploitation.]]></description>
-      <pubDate>Wed, 11 Nov 2026 06:34:41 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98115">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Qt5‑Qtbase Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-57b47645</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-qt5-qtbase-security-update-57b47645</guid>
-      <description><![CDATA[Red Hat released a security update for qt5‑qtbase on RHEL 8, addressing vulnerabilities that could allow local privilege escalation or code execution. The update lists multiple CVE identifiers with CVSS scores indicating moderate to high severity, yet no active exploitation reports exist. Red Hat recommends applying the update immediately via the standard RHEL update channels.]]></description>
-      <pubDate>Wed, 11 Nov 2026 06:17:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98103">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco BroadWorks, Openwave Flaws Actively Exploited</title>
-      <link>https://secubuzz.com/news/cisco-broadworks-openwave-flaws-actively-exploited-3c0cd8b8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-broadworks-openwave-flaws-actively-exploited-3c0cd8b8</guid>
-      <description><![CDATA[CISA identified active exploitation of two vulnerabilities in Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder. The flaws, including CVE-2026-20320, stem from an improper restriction of XML external entities, scoring CVSS 7.5 and enabling remote code execution without authentication. Both vendors have released patches; security teams must apply them immediately and monitor for exploitation indicators.]]></description>
-      <pubDate>Wed, 11 Nov 2026 06:04:02 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>EU cyber scores look healthy, but 45% of surveyed IT providers take months to patch</title>
-      <link>https://secubuzz.com/news/eu-cyber-scores-look-healthy-but-45-of-surveyed-it-72c8dbf1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/eu-cyber-scores-look-healthy-but-45-of-surveyed-it-72c8dbf1</guid>
-      <description><![CDATA[Forty-five percent of surveyed IT service management providers in the EU took more than three months to apply critical patches to critical systems, according to ENISA’s 2026 assessment of cybersecurity in the Union. Attackers can turn a newly disclosed flaw into a working attack within days, and sometimes within hours or minutes.]]></description>
-      <pubDate>Wed, 11 Nov 2026 06:00:09 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/11/eu-enisa-cybersecurity-report/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues rust‑rpm‑sequoia Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-rust-rpm-sequoia-security-update-abf31b66</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-rust-rpm-sequoia-security-update-abf31b66</guid>
-      <description><![CDATA[Red Hat released a security update for the rust‑rpm‑sequoia package on RHEL 10.0 EUS, addressing vulnerabilities that could enable local privilege escalation or code execution. The update lists multiple CVE identifiers with CVSS scores indicating moderate to high severity, yet no active exploitation reports exist. Red Hat recommends applying the update immediately via the standard RHEL update channels.]]></description>
-      <pubDate>Wed, 11 Nov 2026 05:41:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98248">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Nearly half of big firms shelve or close vulnerability findings they haven’t confirmed</title>
-      <link>https://secubuzz.com/news/nearly-half-of-big-firms-shelve-or-close-vulnerabi-c3ace65b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/nearly-half-of-big-firms-shelve-or-close-vulnerabi-c3ace65b</guid>
-      <description><![CDATA[Nearly half of security teams at organizations with 5,000 or more employees close or deprioritize vulnerability findings without fully verifying them, ProjectDiscovery found, and the reason they give is time. Among teams that skip full verification, 57% say at least three out of four findings they do check turn out to be real.]]></description>
-      <pubDate>Wed, 11 Nov 2026 05:30:30 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/11/security-teams-vulnerability-backlog/">Help Net Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>An Instagram ad was all it took: Leaked exploit kits are hitting employees’ iPhones</title>
-      <link>https://secubuzz.com/news/an-instagram-ad-was-all-it-took-leaked-exploit-kit-d9919403</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/an-instagram-ad-was-all-it-took-leaked-exploit-kit-d9919403</guid>
-      <description><![CDATA[Criminals are using leaked exploit kits to break into vulnerable iPhones, according to iVerify’s 2026 Advanced Mobile Threat Report. DarkSword chains together several software flaws to compromise iPhones. Researchers disclosed the toolkit in March 2026, and a newer version appeared on GitHub within a week, giving criminal groups code they could adapt.]]></description>
-      <pubDate>Wed, 11 Nov 2026 05:00:34 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/11/iverify-iphone-exploit-kit-attacks-report/">Help Net Security</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
