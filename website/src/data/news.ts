@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "nearly-half-of-big-firms-shelve-or-close-vulnerabi-c3ace65b",
+    "title": "Nearly half of big firms shelve or close vulnerability findings they haven’t confirmed",
+    "summary": "Nearly half of security teams at organizations with 5,000 or more employees close or deprioritize vulnerability findings without fully verifying them, ProjectDiscovery found, and the reason they give is time. Among teams that skip full verification, 57% say at least three out of four findings they do check turn out to be real.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/security-teams-vulnerability-backlog/",
+    "publishedAt": "2026-11-11T05:30:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "nearly-half-of-big-firms-shelve-or-close-vulnerabi",
+      "article-c3ace65b",
+      "c3ace65b",
+      "nearly-half-of-big-firms-shelve-or-close-vulnerabi-7cc6a4",
+      "nearly-half-of-big-firms-shelve-or-close-vulnerability-findi"
+    ]
+  },
+  {
+    "slug": "an-instagram-ad-was-all-it-took-leaked-exploit-kit-d9919403",
+    "title": "An Instagram ad was all it took: Leaked exploit kits are hitting employees’ iPhones",
+    "summary": "Criminals are using leaked exploit kits to break into vulnerable iPhones, according to iVerify’s 2026 Advanced Mobile Threat Report. DarkSword chains together several software flaws to compromise iPhones. Researchers disclosed the toolkit in March 2026, and a newer version appeared on GitHub within a week, giving criminal groups code they could adapt.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/iverify-iphone-exploit-kit-attacks-report/",
+    "publishedAt": "2026-11-11T05:00:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "an-instagram-ad-was-all-it-took-leaked-exploit-kit",
+      "article-d9919403",
+      "d9919403",
+      "an-instagram-ad-was-all-it-took-leaked-exploit-kit-289af2",
+      "an-instagram-ad-was-all-it-took-leaked-exploit-kits-are-hitt"
+    ]
+  },
+  {
     "slug": "rhsa-2026-98130-important-httpd-2-4-security-updat-eb88d9df",
     "title": "RHSA-2026:98130: Important: httpd:2.4 security update",
     "summary": "An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
@@ -81,6 +119,63 @@ export const news: NewsBrief[] = [
       "article-d3e73b1f",
       "d3e73b1f",
       "rhsa-2026-98099-important-kernel-security-update-37d6f7"
+    ]
+  },
+  {
+    "slug": "red-enterprise-linux-9-6-users-receive-python-torn-af547853",
+    "title": "Red Enterprise Linux 9.6 users receive python-tornado patch",
+    "summary": "Red Enterprise Linux 9.6 users face a python‑tornado vulnerability that could allow local privilege escalation via malformed input. Red Hat Product Security rates the issue as Important, with a CVSS base score available via CVE links. Affected systems should apply the python‑tornado update immediately; no workaround is currently recommended today.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98110",
+    "publishedAt": "2026-11-11T03:18:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-enterprise-linux-9-6-users-receive-python-torn",
+      "article-af547853",
+      "af547853",
+      "red-enterprise-linux-9-6-users-receive-python-torn-37d6f4",
+      "red-enterprise-linux-9-6-users-receive-python-tornado-patch"
+    ]
+  },
+  {
+    "slug": "critical-fortinet-flaws-expose-fortimanager-and-fo-5469e6d8",
+    "title": "Critical Fortinet Flaws Expose FortiManager and FortiAnalyzer to Remote Code Execution Without Login",
+    "summary": "Fortinet has disclosed critical security flaws affecting FortiManager, FortiAnalyzer, and FortiOS, including weaknesses that could let attackers execute code without logging in. Published on November 10, 2026, the disclosures cover management APIs, device communication services, routing, and specific high availability setups.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/critical-fortinet-flaws-patched/",
+    "publishedAt": "2026-11-11T03:15:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-fortinet-flaws-expose-fortimanager-and-fo",
+      "article-5469e6d8",
+      "5469e6d8",
+      "critical-fortinet-flaws-expose-fortimanager-and-fo-35c691",
+      "critical-fortinet-flaws-expose-fortimanager-and-fortianalyze"
+    ]
+  },
+  {
+    "slug": "red-enterprise-linux-7-users-receive-acl-security-532fc7b9",
+    "title": "Red Enterprise Linux 7 users receive acl security patch",
+    "summary": "Red Enterprise Linux 7 Extended Lifecycle Support users face a vulnerability in the acl package that could allow local privilege escalation via malformed ACL entries. Red Hat Product Security rates the issue as Important, with a CVSS base score available through CVE links in the advisory references.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98129",
+    "publishedAt": "2026-11-11T03:10:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-enterprise-linux-7-users-receive-acl-security",
+      "article-532fc7b9",
+      "532fc7b9",
+      "red-enterprise-linux-7-users-receive-acl-security-37d6f4",
+      "red-enterprise-linux-7-users-receive-acl-security-patch"
     ]
   },
   {
@@ -717,6 +812,44 @@ export const news: NewsBrief[] = [
       "article-70f3c8f2",
       "70f3c8f2",
       "red-hat-releases-low-impact-dhcp-security-update-37d75c"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97215-important-grafana-security-bug-fix-5776f9f3",
+    "title": "RHSA-2026:97215: Important: grafana security, bug fix, and enhancement update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97215",
+    "publishedAt": "2026-11-10T20:31:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97215-important-grafana-security-bug-fix",
+      "article-5776f9f3",
+      "5776f9f3",
+      "rhsa-2026-97215-important-grafana-security-bug-fix-37d765",
+      "rhsa-2026-97215-important-grafana-security-bug-fix-and-enhan"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97191-important-delve-security-bug-fix-a-eb702761",
+    "title": "RHSA-2026:97191: Important: delve security, bug fix, and enhancement update",
+    "summary": "An update for delve is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97191",
+    "publishedAt": "2026-11-10T20:28:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97191-important-delve-security-bug-fix-a",
+      "article-eb702761",
+      "eb702761",
+      "rhsa-2026-97191-important-delve-security-bug-fix-a-37d767",
+      "rhsa-2026-97191-important-delve-security-bug-fix-and-enhance"
     ]
   },
   {
@@ -1975,6 +2108,44 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "windows-dwm-core-library-allows-local-privilege-es-60a2c159",
+    "title": "Windows DWM Core Library allows local privilege escalation",
+    "summary": "A flaw in Windows DWM Core Library permits an authorized attacker to elevate privileges locally via an invalid pointer or reference. The vulnerability is triggered by malformed input to the DWM component, potentially enabling privilege escalation without authentication. Microsoft has released a patch for Windows 10 and 11; affected systems should install the update immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105583",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-dwm-core-library-allows-local-privilege-es",
+      "article-60a2c159",
+      "60a2c159",
+      "windows-dwm-core-library-allows-local-privilege-es-1ff888",
+      "windows-dwm-core-library-allows-local-privilege-escalation"
+    ]
+  },
+  {
+    "slug": "windows-inventory-backup-leaks-local-information-v-a4e42428",
+    "title": "Windows Inventory Backup leaks local information via format string",
+    "summary": "An externally-controlled format string in Windows Inventory Backup allows an authorized attacker to disclose local information. The flaw arises when user-supplied data is passed to a vulnerable logging function, exposing sensitive data without authentication. Microsoft has issued a patch for Windows 10 and 11; affected systems should apply the update promptly.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-inventory-backup-leaks-local-information-v",
+      "article-a4e42428",
+      "a4e42428",
+      "windows-inventory-backup-leaks-local-information-v-1ff888",
+      "windows-inventory-backup-leaks-local-information-via-format-"
     ]
   },
   {
@@ -3554,6 +3725,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "turla-s-cereal-toolset-targets-exchange-email-coll-c3ca009b",
+    "title": "Turla’s Cereal Toolset Targets Exchange Email Collection",
+    "summary": "ESET Research uncovered Turla’s Cereal toolset, which includes a novel Exchange email collection module and a unique command-and-control mechanism. The toolkit also employs sophisticated .NET execution tricks, enabling stealthy persistence and data exfiltration from compromised Microsoft Exchange servers. Security teams should harden Exchange configurations, monitor for anomalous outbound traffic, and apply the latest Microsoft patches to mitigate potential exploitation.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/exchange-for-breakfast-turlas-cereal-tricks-are-not-for-kids/",
+    "publishedAt": "2026-11-10T09:57:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "turla-s-cereal-toolset-targets-exchange-email-coll",
+      "article-c3ca009b",
+      "c3ca009b",
+      "turla-s-cereal-toolset-targets-exchange-email-coll-803ca3",
+      "turla-s-cereal-toolset-targets-exchange-email-collection"
+    ]
+  },
+  {
     "slug": "n-able-disables-n-central-over-30-zero-day-flaws-74835697",
     "title": "N-able Disables N-central Over 30 Zero-Day Flaws",
     "summary": "N-able temporarily disabled N-central services while addressing over 30 zero-day vulnerabilities that enable remote code execution, credential theft, and unauthorized administrator account creation. The flaws arise from insufficient input validation in the web interface, permitting attackers to inject malicious code and elevate privileges. N-able has released a patch and urges customers to update immediately to mitigate the risk.",
@@ -4029,6 +4219,44 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "fortimai-path-traversal-enables-unauthenticated-co-a1b58ab0",
+    "title": "FortiMai Path Traversal Enables Unauthenticated Command Execution",
+    "summary": "FortiMai suffers a path traversal flaw that allows unauthenticated attackers to execute arbitrary commands via crafted requests. The vulnerability, rated CVSSv3 7.5, exploits improper pathname limitation (CWE-22) and could enable remote code execution without authentication. Fortinet has not yet released a patch; security teams should monitor advisories and apply any future updates promptly.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-205",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimai-path-traversal-enables-unauthenticated-co",
+      "article-a1b58ab0",
+      "a1b58ab0",
+      "fortimai-path-traversal-enables-unauthenticated-co-3bcda6",
+      "fortimai-path-traversal-enables-unauthenticated-command-exec"
+    ]
+  },
+  {
+    "slug": "fortimanager-path-traversal-lets-authenticated-adm-d66b8fbf",
+    "title": "FortiManager Path Traversal Lets Authenticated Admin Write Files",
+    "summary": "FortiManager, FortiAnalyzer, and their cloud variants contain a path traversal flaw that permits administrators to write arbitrary files via a crafted archive. The vulnerability, scored CVSSv3 7.2 and identified as CWE-22, enables file overwrite or injection without requiring elevated privileges. Fortinet has not yet issued a patch; security teams should monitor advisories and apply any future updates promptly.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-250",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimanager-path-traversal-lets-authenticated-adm",
+      "article-d66b8fbf",
+      "d66b8fbf",
+      "fortimanager-path-traversal-lets-authenticated-adm-3bcda5",
+      "fortimanager-path-traversal-lets-authenticated-admin-write-f"
     ]
   },
   {
@@ -9413,249 +9641,6 @@ export const news: NewsBrief[] = [
       "6086ec92",
       "d-link-issues-zero-day-alerts-for-dgs-3130-switche-257244",
       "d-link-issues-zero-day-alerts-for-dgs-3130-switches"
-    ]
-  },
-  {
-    "slug": "ai-tool-rapidly-steals-azure-key-vault-secrets-37326da9",
-    "title": "AI Tool Rapidly Steals Azure Key Vault Secrets",
-    "summary": "Hackers used ARTEX AI to locate exposed GitHub credentials and access Azure Key Vault, extracting data in five minutes. The incident shows AI can accelerate credential discovery and cloud exfiltration, bypassing manual search. Teams should enforce strict secret management, enable Azure Key Vault controls, and monitor GitHub for accidental exposure.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-use-artex-ai/",
-    "publishedAt": "2026-11-06T12:08:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-tool-rapidly-steals-azure-key-vault-secrets",
-      "article-37326da9",
-      "37326da9",
-      "ai-tool-rapidly-steals-azure-key-vault-secrets-2cedf0"
-    ]
-  },
-  {
-    "slug": "openssh-fixes-sshole-authentication-bypass-17f8aa5a",
-    "title": "OpenSSH Fixes ‘SSHole’ Authentication Bypass",
-    "summary": "OpenSSH released patches for the ‘SSHole’ authentication bypass on Linux systems using musl libc without PAM, where any password of 257–1024 characters was accepted. The flaw, CVE-2026-116606, allows unauthenticated users to log in as privileged accounts, risking full system compromise. Apply the latest OpenSSH update and enforce PAM to block the password length vulnerability.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/",
-    "publishedAt": "2026-11-06T12:07:42.000Z",
-    "cves": [
-      "CVE-2026-116606"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openssh-fixes-sshole-authentication-bypass",
-      "article-17f8aa5a",
-      "17f8aa5a",
-      "openssh-fixes-sshole-authentication-bypass-7e09f0"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-critical-windows-paint-rce-cve-2-8c5cfabf",
-    "title": "Microsoft Patches Critical Windows Paint RCE CVE-2026-83844 via Store Update",
-    "summary": "Microsoft patched a critical remote code execution flaw (CVE-2026-83844) in Windows Paint that lets attackers run arbitrary code via crafted images. The flaw, triggered by a malformed image, has a 9.2 CVSS score and was discovered through telemetry analysis. Microsoft released the fix via the Microsoft Store (build 11.2609.401.0) and urges users to install it immediately and monitor for exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-    "publishedAt": "2026-11-06T12:06:43.000Z",
-    "cves": [
-      "CVE-2026-83844"
-    ],
-    "additionalSources": [
-      {
-        "source": "Dark Reading",
-        "sourceUrl": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion"
-      },
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/microsoft-fixes-rce-bug-in-windows-paint-after-weeks-of"
-      }
-    ],
-    "aliases": [
-      "microsoft-patches-critical-windows-paint-rce-cve-2",
-      "article-8c5cfabf",
-      "8c5cfabf",
-      "microsoft-patches-critical-windows-paint-rce-cve-2-2da49c",
-      "microsoft-patches-critical-windows-paint-rce-cve-2026-83844-"
-    ]
-  },
-  {
-    "slug": "malicious-extensions-exploit-claude-dispatch-for-c-c28b32f8",
-    "title": "Malicious Extensions Exploit Claude Dispatch for Code Execution",
-    "summary": "Researchers discovered that malicious browser extensions can leverage Claude Dispatch to execute arbitrary scripts on users’ computers via the Claude Desktop application. The flaw allows attackers to bypass browser sandboxing, enabling remote code execution without user interaction. Users should avoid installing untrusted extensions, and developers must patch the Dispatch integration to prevent unauthorized script execution.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
-    "publishedAt": "2026-11-06T12:06:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-extensions-exploit-claude-dispatch-for-c",
-      "article-c28b32f8",
-      "c28b32f8",
-      "malicious-extensions-exploit-claude-dispatch-for-c-13aee6",
-      "malicious-extensions-exploit-claude-dispatch-for-code-execut"
-    ]
-  },
-  {
-    "slug": "us-warns-of-remote-access-threats-to-cold-chain-sy-a28cd128",
-    "title": "US Warns of Remote Access Threats to Cold-Chain Systems",
-    "summary": "US agencies issued a warning about remote access vulnerabilities affecting supermarket refrigeration and blood storage cold‑chain monitoring systems. The warning highlights that attackers could exploit unsecured remote connections to disrupt temperature controls, potentially compromising stored products. Operators should enforce strong authentication, patch firmware, and monitor remote access logs to mitigate the identified risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/attacks-on-supermarket-and-blood-storage-systems-prompt-us-warning",
-    "publishedAt": "2026-11-06T12:02:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-warns-of-remote-access-threats-to-cold-chain-sy",
-      "article-a28cd128",
-      "a28cd128",
-      "us-warns-of-remote-access-threats-to-cold-chain-sy-69a66f",
-      "us-warns-of-remote-access-threats-to-cold-chain-systems"
-    ]
-  },
-  {
-    "slug": "cisa-adds-sonicwall-sslvpn-vulnerability-to-kev-ca-c85b0e0f",
-    "title": "CISA Adds SonicWall SSLVPN Vulnerability to KEV Catalog",
-    "summary": "CISA added CVE-2026-19868, a SonicWall SSLVPN single‑factor flaw, to its KEV catalog after active exploitation. The flaw lets attackers bypass authentication on SSLVPN endpoints, granting full control over exposed assets. Federal agencies must apply patches or disable SSLVPN per BOD 26‑04 until a vendor fix arrives and monitor advisories for updates.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
-    "publishedAt": "2026-11-06T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-19868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-sonicwall-sslvpn-vulnerability-to-kev-ca",
-      "article-c85b0e0f",
-      "c85b0e0f",
-      "cisa-adds-sonicwall-sslvpn-vulnerability-to-kev-ca-5a4672",
-      "cisa-adds-sonicwall-sslvpn-vulnerability-to-kev-catalog"
-    ]
-  },
-  {
-    "slug": "storm-2603-exploits-sharepoint-toolshell-flaws-for-9eed6441",
-    "title": "Storm-2603 Exploits SharePoint ToolShell Flaws for Fileless Backdoor",
-    "summary": "Storm-2603 exploited SharePoint ToolShell vulnerabilities on a SharePoint server to deploy a backdoor that never touched disk. The backdoor enabled the group to attempt execution of Warlock ransomware, but security software intercepted the payload before encryption could occur. Microsoft has issued patches for the ToolShell flaws; organizations should apply the latest SharePoint updates and monitor for anomalous PowerShell activity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/storm-2603-hackers/",
-    "publishedAt": "2026-11-06T11:43:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "storm-2603-exploits-sharepoint-toolshell-flaws-for",
-      "article-9eed6441",
-      "9eed6441",
-      "storm-2603-exploits-sharepoint-toolshell-flaws-for-41173d",
-      "storm-2603-exploits-sharepoint-toolshell-flaws-for-fileless-"
-    ]
-  },
-  {
-    "slug": "kernel-rmp-check-flaw-enables-hypervisor-memory-co-04f2f0ba",
-    "title": "Kernel RMP Check Flaw Enables Hypervisor Memory Compromise",
-    "summary": "A kernel flaw in AMD processors’ IOMMU RMP checks lets a local hypervisor attacker trigger an out‑of‑bounds condition and potentially compromise SEV‑SNP guest memory. CVE‑2023‑20585 affects multiple architectures, including ARM64 and x86, and could lead to integrity violations in virtualized environments. Ubuntu released a kernel update patching RMP validation; admins should apply the latest kernel to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9003-1",
-    "publishedAt": "2026-11-06T11:30:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kernel-rmp-check-flaw-enables-hypervisor-memory-co",
-      "article-04f2f0ba",
-      "04f2f0ba",
-      "kernel-rmp-check-flaw-enables-hypervisor-memory-co-7e89b0",
-      "kernel-rmp-check-flaw-enables-hypervisor-memory-compromise"
-    ]
-  },
-  {
-    "slug": "athena-model-predictions-warn-of-imminent-ai-risks-457005fd",
-    "title": "Athena Model Predictions Warn of Imminent AI Risks",
-    "summary": "The piece reviews updates to the Athena model and cites Dario Amodei’s call to pace AI development. Amodei warns that the gap between model performance and societal readiness will widen, urging caution in deployment. Readers are encouraged to examine the model’s limitations and prepare mitigation strategies for emerging AI risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
-    "publishedAt": "2026-11-06T11:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "athena-model-predictions-warn-of-imminent-ai-risks",
-      "article-457005fd",
-      "457005fd",
-      "athena-model-predictions-warn-of-imminent-ai-risks-1d4ab3"
-    ]
-  },
-  {
-    "slug": "io-uring-cancellation-bug-causes-kernel-crash-3079934a",
-    "title": "io_uring Cancellation Bug Causes Kernel Crash",
-    "summary": "A Linux kernel io_uring flaw lets a local attacker trigger a denial‑of‑service by running operations in the wrong task context. CVE‑2026‑81010 affects multiple architectures and causes system crashes, but requires local privilege and offers no remote code execution. Ubuntu released a kernel update fixing the io_uring cancellation bug; users should apply the latest kernel to avoid crashes.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9002-1",
-    "publishedAt": "2026-11-06T11:22:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "io-uring-cancellation-bug-causes-kernel-crash",
-      "article-3079934a",
-      "3079934a",
-      "io-uring-cancellation-bug-causes-kernel-crash-7e89b4"
-    ]
-  },
-  {
-    "slug": "white-house-network-exposed-by-residential-proxy-s-b0273d7d",
-    "title": "White House Network Exposed by Residential Proxy Services",
-    "summary": "Researchers found 28 residential proxy services accessed the White House network via six IP addresses, mainly between 5 p.m. and midnight Eastern Time. The proxy usage bypassed perimeter controls, allowing attackers to mask traffic and potentially evade detection, though no data exfiltration was reported. Teams should audit firewall rules, block known proxy IP ranges, and enforce stricter outbound traffic monitoring.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/white-house-residential-proxy-traffic/",
-    "publishedAt": "2026-11-06T10:29:58.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/researchers-find-residential-proxies-on-white-house-network/"
-      }
-    ],
-    "aliases": [
-      "white-house-network-exposed-by-residential-proxy-s",
-      "article-b0273d7d",
-      "b0273d7d",
-      "white-house-network-exposed-by-residential-proxy-s-3bdf06",
-      "white-house-network-exposed-by-residential-proxy-services"
-    ]
-  },
-  {
-    "slug": "red-hat-keycloak-26-6-8-security-update-9ffab451",
-    "title": "Red Hat Keycloak 26.6.8 Security Update",
-    "summary": "Red Hat released updated images for its Keycloak 26.6.8 build and the corresponding Operator on OpenShift. The update addresses internal security issues in the Keycloak container images, though no public CVE is cited. Users should pull the new images from the Customer Portal and redeploy to maintain secure authentication services.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95762",
-    "publishedAt": "2026-11-06T10:25:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-keycloak-26-6-8-security-update",
-      "article-9ffab451",
-      "9ffab451",
-      "red-hat-keycloak-26-6-8-security-update-37d83a"
     ]
   }
 ];
