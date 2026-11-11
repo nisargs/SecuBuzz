@@ -4209,5 +4209,16 @@
   "https://ubuntu.com/security/notices/USN-9036-1",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-223",
   "https://access.redhat.com/errata/RHSA-2026:97438",
-  "https://access.redhat.com/errata/RHSA-2026:97387"
+  "https://access.redhat.com/errata/RHSA-2026:97387",
+  "https://access.redhat.com/errata/RHSA-2026:98047",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114167",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114169",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114170",
+  "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/",
+  "https://access.redhat.com/errata/RHSA-2026:98096",
+  "https://cybernewsai.com/blog/chrome-update-patches-exploited-xml-zero-day-eighth-thi",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-247",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-227",
+  "https://access.redhat.com/errata/RHSA-2026:97560",
+  "https://access.redhat.com/errata/RHSA-2026:97213"
 ]

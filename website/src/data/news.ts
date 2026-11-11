@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-updates-python-urllib3-for-enterprise-linu-9ba06051",
+    "title": "Red Hat Updates python‑urllib3 for Enterprise Linux",
+    "summary": "Red Hat released a security update for python‑urllib3 in its Enterprise Linux 10.0 Extended Update Support, addressing a flaw. The vulnerability, rated Important by Red Hat Product Security, could allow attackers to exploit insecure urllib3 handling, leading to remote code execution. Users should apply the update immediately, verify CVE references for severity, and enforce secure coding practices to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98096",
+    "publishedAt": "2026-11-11T01:23:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-python-urllib3-for-enterprise-linu",
+      "article-9ba06051",
+      "9ba06051",
+      "red-hat-updates-python-urllib3-for-enterprise-linu-37d6f7",
+      "red-hat-updates-python-urllib3-for-enterprise-linux"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-addresses-important-flaws-55412646",
+    "title": "Red Hat Kernel Update Addresses Important Flaws",
+    "summary": "Red Hat released a kernel update for RHEL 9.4 Update Services for SAP Solutions to address critical security issues. The advisory lists kernel vulnerabilities with CVSS scores; no active exploitation is reported, but flaws could enable local privilege escalation or code execution. Red Hat urges immediate application of the update; CVE references and CVSS details are available for further assessment.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98047",
+    "publishedAt": "2026-11-11T00:54:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-addresses-important-flaws",
+      "article-55412646",
+      "55412646",
+      "red-hat-kernel-update-addresses-important-flaws-37d6f7"
+    ]
+  },
+  {
     "slug": "libreswan-update-fixes-security-vulnerabilities-0f3608f7",
     "title": "libreswan Update Fixes Security Vulnerabilities",
     "summary": "Red Hat released a libreswan update addressing multiple security bugs and adding performance enhancements for RHEL 9. The update is rated Important, with CVSS scores available via the referenced CVE links, and fixes memory corruption and privilege escalation issues. Administrators should apply the RHSA-2026:98046 update immediately to maintain system security and compliance.",
@@ -616,6 +653,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-97213-important-grafana-pcp-security-bug-a9e4f067",
+    "title": "RHSA-2026:97213: Important: grafana-pcp security, bug fix, and enhancement update",
+    "summary": "An update for grafana-pcp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97213",
+    "publishedAt": "2026-11-10T19:10:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97213-important-grafana-pcp-security-bug",
+      "article-a9e4f067",
+      "a9e4f067",
+      "rhsa-2026-97213-important-grafana-pcp-security-bug-37d765",
+      "rhsa-2026-97213-important-grafana-pcp-security-bug-fix-and-e"
+    ]
+  },
+  {
     "slug": "microsoft-patch-tuesday-november-2027-tue-nov-10th-1bbc566e",
     "title": "Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)",
     "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge. The vulnerability is tracked as CVE-2026-113971.",
@@ -691,6 +747,24 @@ export const news: NewsBrief[] = [
       "1982f712",
       "microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-63091b",
       "microsoft-patch-tuesday-fixes-1-093-vulnerabilities-outlook-"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-97560-important-runc-security-update-203d049a",
+    "title": "RHSA-2026:97560: Important: runc security update",
+    "summary": "An update for runc is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97560",
+    "publishedAt": "2026-11-10T19:00:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-97560-important-runc-security-update",
+      "article-203d049a",
+      "203d049a",
+      "rhsa-2026-97560-important-runc-security-update-37d759"
     ]
   },
   {
@@ -960,6 +1034,24 @@ export const news: NewsBrief[] = [
       "c568e2d1",
       "rhsa-2026-97194-important-cockpit-files-security-u-37d767",
       "rhsa-2026-97194-important-cockpit-files-security-update"
+    ]
+  },
+  {
+    "slug": "cve-2026-125350-xml-use-after-free-flaw-patched-7d533cf6",
+    "title": "CVE‑2026‑125350 XML Use‑After‑Free Flaw Patched",
+    "summary": "CVE‑2026‑125350, an XML use‑after‑free flaw, was disclosed and patched, affecting enterprise XML processing components. The flaw permits unauthenticated attackers to trigger memory corruption, potentially leading to remote code execution or denial of service. Security teams should deploy the vendor patch immediately, monitor for exploitation indicators, and validate XML input sanitization to mitigate risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/chrome-update-patches-exploited-xml-zero-day-eighth-thi",
+    "publishedAt": "2026-11-10T18:00:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-125350-xml-use-after-free-flaw-patched",
+      "article-7d533cf6",
+      "7d533cf6",
+      "cve-2026-125350-xml-use-after-free-flaw-patched-698a41"
     ]
   },
   {
@@ -1486,6 +1578,69 @@ export const news: NewsBrief[] = [
       "2710d747",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
       "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
+    ]
+  },
+  {
+    "slug": "microsoft-hevc-codec-heap-overflow-enables-local-r-b5a965e5",
+    "title": "Microsoft HEVC Codec Heap Overflow Enables Local RCE",
+    "summary": "Microsoft disclosed a heap-based buffer overflow in Windows HEVC Video Extensions that permits local code execution. The flaw, CVE-2026-114167, lets an unauthenticated attacker run arbitrary code if the codec is loaded. Microsoft advises applying the latest Windows update that patches the HEVC codec; disabling the codec is a temporary workaround.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114167",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114167"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-hevc-codec-heap-overflow-enables-local-r",
+      "article-b5a965e5",
+      "b5a965e5",
+      "microsoft-hevc-codec-heap-overflow-enables-local-r-1feaf4",
+      "microsoft-hevc-codec-heap-overflow-enables-local-rce"
+    ]
+  },
+  {
+    "slug": "windows-raw-image-extension-buffer-overflow-enable-0228cac1",
+    "title": "Windows Raw Image Extension Buffer Overflow Enables Remote RCE",
+    "summary": "Microsoft identified a heap-based buffer overflow in the Windows Raw Image Extension that allows remote code execution. The vulnerability, CVE-2026-114169, permits an unauthenticated attacker to run arbitrary code on the target system via network traffic. Microsoft recommends installing the latest Windows update that patches the Raw Image Extension; disabling the extension is a temporary mitigation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114169",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114169"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-raw-image-extension-buffer-overflow-enable",
+      "article-0228cac1",
+      "0228cac1",
+      "windows-raw-image-extension-buffer-overflow-enable-1feaf4",
+      "windows-raw-image-extension-buffer-overflow-enables-remote-r"
+    ]
+  },
+  {
+    "slug": "windows-kernel-use-after-free-enables-local-privil-113bec46",
+    "title": "Windows Kernel Use-After-Free Enables Local Privilege Escalation",
+    "summary": "Microsoft disclosed a use-after-free flaw in the Windows Kernel that permits local privilege escalation immediately. The vulnerability, CVE-2026-114170, allows an authorized attacker to gain higher privileges on the affected system. Microsoft recommends applying the latest Windows update that patches the kernel flaw; disabling the affected feature is a temporary workaround.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114170",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114170"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-kernel-use-after-free-enables-local-privil",
+      "article-113bec46",
+      "113bec46",
+      "windows-kernel-use-after-free-enables-local-privil-1feaf4",
+      "windows-kernel-use-after-free-enables-local-privilege-escala"
     ]
   },
   {
@@ -3262,6 +3417,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "improper-certificate-validation-in-radius-protocol-22ed1f8d",
+    "title": "Improper certificate validation in RADIUS protocol",
+    "summary": "CVSSv3 Score: 7.5 An Improper Certificate Validation vulnerability [CWE-295] in FortiSASE Sovereign, FortiManager, Fortianalyzer, FortiManager Cloud and FortiAnalyzer Cloud RADIUS protocol may allow a MITM attacker to impersonate the radius server via a rogue RADIUS server.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-247",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "improper-certificate-validation-in-radius-protocol",
+      "article-22ed1f8d",
+      "22ed1f8d",
+      "improper-certificate-validation-in-radius-protocol-3bcda5"
+    ]
+  },
+  {
+    "slug": "improper-control-of-generation-of-code-in-gui-0d112c22",
+    "title": "Improper control of generation of code in GUI",
+    "summary": "CVSSv3 Score: 7.2 An Improper Control of Generation of Code ('Code Injection') vulnerability [CWE-94] and a Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability [CWE-120] in FortiManager, FortiAnalyzer, FortiManager Cloud, and FortiAnalyzer Cloud may allow a remote authenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-227",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "improper-control-of-generation-of-code-in-gui",
+      "article-0d112c22",
+      "0d112c22",
+      "improper-control-of-generation-of-code-in-gui-3bcda6"
+    ]
+  },
+  {
     "slug": "fortimanager-fgfm-elevation-exploit-allows-unauthe-d21806a6",
     "title": "FortiManager FGFM Elevation Exploit Allows Unauthenticated Code Execution",
     "summary": "Fortinet FortiManager FGFM contains an elevation of privilege flaw that permits unauthenticated attackers to reach the FGFM port and send crafted packets. The vulnerability, rated CVSSv3 9.0, enables remote code execution or command injection, potentially compromising the entire FortiManager infrastructure. Fortinet released a patch in the latest FortiOS update; administrators should apply it immediately and restrict FGFM port access.",
@@ -3647,6 +3838,25 @@ export const news: NewsBrief[] = [
       "778ad60b",
       "security-teams-prioritize-ai-agent-behavior-monito-28e32c",
       "security-teams-prioritize-ai-agent-behavior-monitoring"
+    ]
+  },
+  {
+    "slug": "patch-tuesday-unveils-1-252-cves-including-zero-da-b648a3b4",
+    "title": "Patch Tuesday Unveils 1,252 CVEs, Including Zero-Day",
+    "summary": "Patch Tuesday released 1,252 CVEs, including one zero‑day and 68 critical vulnerabilities, with CVE‑2026‑113971 identified. The zero‑day flaw and critical issues span multiple vendors, potentially enabling unauthenticated remote code execution or privilege escalation. Security teams should apply vendor patches immediately, monitor for exploitation indicators, and verify configuration hardening to mitigate risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/",
+    "publishedAt": "2026-11-10T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "patch-tuesday-unveils-1-252-cves-including-zero-da",
+      "article-b648a3b4",
+      "b648a3b4",
+      "patch-tuesday-unveils-1-252-cves-including-zero-da-40f7ce",
+      "patch-tuesday-unveils-1-252-cves-including-zero-day"
     ]
   },
   {
@@ -9465,214 +9675,6 @@ export const news: NewsBrief[] = [
       "acd8a8ca",
       "libreoffice-heap-overflow-enables-remote-code-exec-6f3cb5",
       "libreoffice-heap-overflow-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "docker-sandboxes-rce-via-untrusted-control-sphere-ae548564",
-    "title": "Docker Sandboxes RCE via Untrusted Control Sphere Inclusion",
-    "summary": "A remote code execution flaw in Docker Sandboxes lets local attackers run arbitrary code by including untrusted control sphere functionality. CVE‑2026‑121614 has a CVSS score of 7.8 and requires user interaction, such as visiting a malicious page or opening a file. Docker released a patch; administrators should apply it promptly and limit sandbox access to trusted sources.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-894/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "docker-sandboxes-rce-via-untrusted-control-sphere",
-      "article-ae548564",
-      "ae548564",
-      "docker-sandboxes-rce-via-untrusted-control-sphere-6f3cb5",
-      "docker-sandboxes-rce-via-untrusted-control-sphere-inclusion"
-    ]
-  },
-  {
-    "slug": "trimble-sketchup-skp-use-after-free-rce-vulnerabil-7d22ebde",
-    "title": "Trimble SketchUp SKP Use-After-Free RCE Vulnerability",
-    "summary": "A use‑after‑free flaw in Trimble SketchUp’s SKP parser lets remote attackers run code when a user opens a malicious file or visits a malicious page. Identified as CVE‑2026‑121741, it scores 7.8 on CVSS and requires user interaction, making it a high‑severity flaw that could compromise installations. Until a patch arrives, teams should monitor advisories and restrict SKP file handling.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-893/",
-    "publishedAt": "2026-11-06T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "trimble-sketchup-skp-use-after-free-rce-vulnerabil",
-      "article-7d22ebde",
-      "7d22ebde",
-      "trimble-sketchup-skp-use-after-free-rce-vulnerabil-6f3cb5",
-      "trimble-sketchup-skp-use-after-free-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "cwp-backdoor-enables-silent-command-execution-154a622a",
-    "title": "CWP Backdoor Enables Silent Command Execution",
-    "summary": "Researchers found a backdoor in Control Web Panel’s web server that lets attackers run arbitrary commands via web requests. The backdoor logs no requests, and installing it requires root access, so attackers must already control the server. Audit CWP deployments for unauthorized modules, apply vendor patches, and enforce strict access controls to block exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
-    "publishedAt": "2026-11-06T05:58:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cwp-backdoor-enables-silent-command-execution",
-      "article-154a622a",
-      "154a622a",
-      "cwp-backdoor-enables-silent-command-execution-41868e"
-    ]
-  },
-  {
-    "slug": "most-repository-tokens-lack-expiration-e79c4b53",
-    "title": "Most Repository Tokens Lack Expiration",
-    "summary": "BlueFlag Security’s 2026 report reveals that 99% of repository access tokens never expire, leaving development accounts and automated tools with prolonged permissions. The lack of periodic access reviews creates blind spots, enabling unauthorized code modifications or data exfiltration after project completion. Organizations should enforce token rotation policies, conduct regular access audits, and restrict automated accounts to the minimum necessary privileges.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/blueflag-ai-agents-access-risks-report/",
-    "publishedAt": "2026-11-06T05:30:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "most-repository-tokens-lack-expiration",
-      "article-e79c4b53",
-      "e79c4b53",
-      "most-repository-tokens-lack-expiration-5389b0"
-    ]
-  },
-  {
-    "slug": "gta-6-anticipation-fuels-crypto-credential-theft-99a773d8",
-    "title": "GTA 6 Anticipation Fuels Crypto Credential Theft",
-    "summary": "Cybercriminals target GTA 6 hype with fake beta access offers and counterfeit alpha downloads. These social‑engineering campaigns trick users into submitting crypto wallet credentials, enabling theft of digital assets. Security teams should warn users against unsolicited download links and verify official sources before providing wallet information and monitor for phishing sites.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/scammers-capitalize-on-gta-6-hype-to-push-malware-and-c",
-    "publishedAt": "2026-11-06T05:10:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gta-6-anticipation-fuels-crypto-credential-theft",
-      "article-99a773d8",
-      "99a773d8",
-      "gta-6-anticipation-fuels-crypto-credential-theft-6bce0c"
-    ]
-  },
-  {
-    "slug": "phishing-sites-use-live-chat-to-target-travelers-a31e6990",
-    "title": "Phishing Sites Use Live Chat to Target Travelers",
-    "summary": "Phishing sites mimicking rental platforms use live chat to lure travelers into giving passwords, personal data, and credit card numbers. They replicate host names, ratings, and reservation details, using urgent messages to pressure users, and were removed by Fortra’s FIRE team. Security teams should verify URLs, educate travelers on phishing indicators, and block known malicious domains to prevent credential compromise.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/06/holiday-rental-platform-phishing-travelers/",
-    "publishedAt": "2026-11-06T05:00:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "phishing-sites-use-live-chat-to-target-travelers",
-      "article-a31e6990",
-      "a31e6990",
-      "phishing-sites-use-live-chat-to-target-travelers-138d30"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-security-updates-for-bind-on-rhel-8a77118d",
-    "title": "Red Hat Releases Security Updates for BIND on RHEL 6",
-    "summary": "Red Hat issued a security update for the BIND package on Red Hat Enterprise Linux 6 Extended Lifecycle Support. The advisory addresses security flaws rated as Important impact that could jeopardize DNS infrastructure resilience. System administrators should apply the latest package updates provided by Red Hat to mitigate potential exploitation risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95727",
-    "publishedAt": "2026-11-06T04:15:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-security-updates-for-bind-on-rhel",
-      "article-8a77118d",
-      "8a77118d",
-      "red-hat-releases-security-updates-for-bind-on-rhel-37d83a",
-      "red-hat-releases-security-updates-for-bind-on-rhel-6"
-    ]
-  },
-  {
-    "slug": "three-charged-in-129m-ai-impersonation-wire-transf-febb314a",
-    "title": "Three Charged in $129M AI‑Impersonation Wire Transfer Fraud",
-    "summary": "Three men used deepfake CEO and lawyer videos to trick employees into wiring $129 million to fraudulent accounts. The scheme exploited AI‑generated voice and video to bypass internal verification, highlighting vulnerabilities in financial approval processes. Prosecutors charged the perpetrators, and experts recommend multi‑factor approvals and staff training to prevent similar deepfake fraud.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
-    "publishedAt": "2026-11-06T03:03:29.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/09/deepfake-ceo-fraud-129-million-indictment/"
-      }
-    ],
-    "aliases": [
-      "three-charged-in-129m-ai-impersonation-wire-transf",
-      "article-febb314a",
-      "febb314a",
-      "three-charged-in-129m-ai-impersonation-wire-transf-30e82b",
-      "three-charged-in-129m-ai-impersonation-wire-transfer-fraud"
-    ]
-  },
-  {
-    "slug": "openai-unveils-gpt-6-cyber-ai-security-model-98ffde6c",
-    "title": "OpenAI Unveils GPT-6 Cyber AI Security Model",
-    "summary": "OpenAI introduced GPT-6 Cyber, a security-focused artificial intelligence model designed for vulnerability research, on November 4, 2026. The advanced AI model successfully identified 81 new high-severity Firefox flaws and generated functional exploits for 948 Linux kernel bugs. OpenAI stated that the cybersecurity tool adheres to researcher-defined constraints far better than its previous model versions.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/openai-launches-gpt-6-cyber/",
-    "publishedAt": "2026-11-06T02:04:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openai-unveils-gpt-6-cyber-ai-security-model",
-      "article-98ffde6c",
-      "98ffde6c",
-      "openai-unveils-gpt-6-cyber-ai-security-model-1178f5"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-provides-daily-threat-briefing-b061cdf8",
-    "title": "ISC Stormcast Provides Daily Threat Briefing",
-    "summary": "ISC released its Friday stormcast, providing a briefing on threat activity, including malware campaigns, phishing trends, and zero‑day disclosures. The report covers emerging attack vectors, defensive recommendations, and contextual analysis of recent incidents, but does not highlight any specific vulnerabilities. The briefing is freely available under a Creative Commons Attribution‑Noncommercial 3.0 United States License, enabling internal security awareness sharing.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33494",
-    "publishedAt": "2026-11-06T02:00:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-provides-daily-threat-briefing",
-      "article-b061cdf8",
-      "b061cdf8",
-      "isc-stormcast-provides-daily-threat-briefing-57dd7e"
-    ]
-  },
-  {
-    "slug": "shopify-enforces-ip-allowlisting-for-public-admin-465d016f",
-    "title": "Shopify Enforces IP Allowlisting for Public Admin API Apps",
-    "summary": "Shopify requires IP allowlisting for public apps that use its Admin API to curb unauthorized access via stolen tokens. The change adds a check that restricts API calls to approved IP ranges, mitigating token misuse without altering authentication logic. Developers must enable the feature by November 20, 2026, with bulk‑operation apps due November 12, and should update app configurations accordingly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/shopify-mandates-ip-allowlisting/",
-    "publishedAt": "2026-11-06T01:44:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "shopify-enforces-ip-allowlisting-for-public-admin",
-      "article-465d016f",
-      "465d016f",
-      "shopify-enforces-ip-allowlisting-for-public-admin-604168",
-      "shopify-enforces-ip-allowlisting-for-public-admin-api-apps"
     ]
   }
 ];
