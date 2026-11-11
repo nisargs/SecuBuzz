@@ -11,6 +11,82 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "grafana-update-released-for-rhel9-d84570bf",
+    "title": "Grafana update released for RHEL9",
+    "summary": "Red Hat released a security update for Grafana on RHEL 9, addressing vulnerabilities that could enable unauthorized access or data leakage. The update patches each flaw, with CVSS scores available via CVE references, though no specific CVE IDs are listed. Apply the update through RHEL 9 package manager to eliminate the risks and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98541",
+    "publishedAt": "2026-11-11T09:31:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "grafana-update-released-for-rhel9",
+      "article-d84570bf",
+      "d84570bf",
+      "grafana-update-released-for-rhel9-37d6e5"
+    ]
+  },
+  {
+    "slug": "xwayland-update-released-for-rhel-9-4-a0a12207",
+    "title": "Xwayland update released for RHEL 9.4",
+    "summary": "Red Hat issued a security update for xorg‑x11‑server‑Xwayland on RHEL 9.4, targeting vulnerabilities that could allow unauthorized access or data exposure. The advisory notes an Important impact rating and references CVSS scores for each flaw, but no CVE identifiers are disclosed. Security teams should apply the update via RHEL 9.4 package manager to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98547",
+    "publishedAt": "2026-11-11T09:19:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "xwayland-update-released-for-rhel-9-4",
+      "article-a0a12207",
+      "a0a12207",
+      "xwayland-update-released-for-rhel-9-4-37d6e5"
+    ]
+  },
+  {
+    "slug": "openwave-broadworks-vulnerabilities-exploited-for-4e1d2283",
+    "title": "Openwave, BroadWorks vulnerabilities exploited for data leakage",
+    "summary": "Threat actors exploited CVE-2026-111793 in Openwave and CVE-2026-20320 in Cisco BroadWorks, enabling leakage of sensitive configuration data. Both flaws allow unauthorized disclosure of configuration information without authentication, and public proof‑of‑concept exploits have been released. Affected systems should apply vendor patches or configuration hardening to prevent further data exposure immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+    "publishedAt": "2026-11-11T09:01:07.000Z",
+    "cves": [
+      "CVE-2026-111793",
+      "CVE-2026-20320"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "openwave-broadworks-vulnerabilities-exploited-for",
+      "article-4e1d2283",
+      "4e1d2283",
+      "openwave-broadworks-vulnerabilities-exploited-for-137af6",
+      "openwave-broadworks-vulnerabilities-exploited-for-data-leaka"
+    ]
+  },
+  {
+    "slug": "intel-amd-patch-over-200-vulnerabilities-720d0e7b",
+    "title": "Intel, AMD patch over 200 vulnerabilities",
+    "summary": "Intel and AMD released over 200 patches on Patch Tuesday, addressing critical flaws in Intel TDX software and numerous AMD graphics bugs. The advisory lists multiple CVE identifiers and CVSS scores, indicating a range of severity levels across the affected components. Security teams should apply the vendor patches via their package managers or firmware updates to mitigate the identified risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/",
+    "publishedAt": "2026-11-11T08:42:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "intel-amd-patch-over-200-vulnerabilities",
+      "article-720d0e7b",
+      "720d0e7b",
+      "intel-amd-patch-over-200-vulnerabilities-2be1ef"
+    ]
+  },
+  {
     "slug": "openssh-update-addresses-moderate-security-issues-9c2d9183",
     "title": "OpenSSH Update Addresses Moderate Security Issues",
     "summary": "Red Hat released an OpenSSH update for RHEL 10 to address moderate‑severity vulnerabilities affecting the SSH daemon. The advisory cites multiple CVE references with CVSS base scores, but no active exploitation has been observed. Users should install the latest OpenSSH package to ensure protection against the identified weaknesses in all deployments.",
@@ -579,6 +655,25 @@ export const news: NewsBrief[] = [
       "article-0a2558a7",
       "0a2558a7",
       "rhsa-2026-98114-important-kernel-security-update-37d6f4"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-98111-critical-python-pillow-security-up-cd2b292b",
+    "title": "RHSA-2026:98111: Critical: python-pillow security update",
+    "summary": "An update for python-pillow is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Critical.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98111",
+    "publishedAt": "2026-11-11T01:55:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-98111-critical-python-pillow-security-up",
+      "article-cd2b292b",
+      "cd2b292b",
+      "rhsa-2026-98111-critical-python-pillow-security-up-37d6f4",
+      "rhsa-2026-98111-critical-python-pillow-security-update"
     ]
   },
   {
@@ -4770,6 +4865,63 @@ export const news: NewsBrief[] = [
       "article-083dfa4a",
       "083dfa4a",
       "2026-genai-soc-copilots-ranking-78d757"
+    ]
+  },
+  {
+    "slug": "fortimail-fortirecorder-os-command-injection-vulne-b3263854",
+    "title": "FortiMail, FortiRecorder OS Command Injection Vulnerability",
+    "summary": "FortiMail and FortiRecorder OS Command Injection allows authenticated privileged attackers to run unauthorized code via crafted archive account configurations. The flaw arises from improper neutralization of special elements (CWE‑78) and has a CVSS 7.2 score, enabling remote code execution. Fortinet released patches; teams should apply updates immediately and harden archive account settings.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-198",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimail-fortirecorder-os-command-injection-vulne",
+      "article-b3263854",
+      "b3263854",
+      "fortimail-fortirecorder-os-command-injection-vulne-3bcda8",
+      "fortimail-fortirecorder-os-command-injection-vulnerability"
+    ]
+  },
+  {
+    "slug": "fortimail-os-command-injection-enables-root-execut-13d41b0e",
+    "title": "FortiMail OS Command Injection Enables Root Execution",
+    "summary": "FortiMail OS Command Injection allows an authenticated administrator with system‑time read‑write access to execute code as root. The flaw results from improper neutralization of special elements (CWE‑78) and carries a CVSS 7.2 score, enabling privileged code execution. Fortinet has issued patches; administrators should apply updates promptly and restrict system‑time write permissions.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-197",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimail-os-command-injection-enables-root-execut",
+      "article-13d41b0e",
+      "13d41b0e",
+      "fortimail-os-command-injection-enables-root-execut-3bcda8",
+      "fortimail-os-command-injection-enables-root-execution"
+    ]
+  },
+  {
+    "slug": "fortinet-patches-sql-injection-bug-in-fortimanager-ab02bfce",
+    "title": "Fortinet Patches SQL Injection Bug in FortiManager and FortiAnalyzer",
+    "summary": "Fortinet disclosed an SQL injection flaw in FortiManager, FortiManager Cloud, FortiAnalyzer, and FortiAnalyzer Cloud devices. Designated as a CWE-89 weakness with a 7.1 CVSSv3 score, the flaw allows authenticated attackers to execute unauthorized SQL commands using crafted requests. Administrators should review the revised Fortinet advisory and deploy official vendor software updates to secure vulnerable deployments.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-233",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-patches-sql-injection-bug-in-fortimanager",
+      "article-ab02bfce",
+      "ab02bfce",
+      "fortinet-patches-sql-injection-bug-in-fortimanager-3bcda5",
+      "fortinet-patches-sql-injection-bug-in-fortimanager-and-forti"
     ]
   },
   {
@@ -9420,159 +9572,6 @@ export const news: NewsBrief[] = [
       "9e5dd9ca",
       "unit-42-explores-attacks-on-european-refrigeration-76ad3e",
       "unit-42-explores-attacks-on-european-refrigeration-systems"
-    ]
-  },
-  {
-    "slug": "chinese-spyware-tool-active-in-13-nations-9da8c99a",
-    "title": "Chinese Spyware Tool Active in 13 Nations",
-    "summary": "A Chinese spyware tool has been detected operating in 13 countries, according to a cyber‑security firm. The tool harvests credentials and exfiltrates data via covert channels, leveraging social engineering and compromised web services, but no public exploit or CVE is disclosed. Security teams should monitor outbound traffic, block known malicious domains, and apply multi‑factor authentication to mitigate data exfiltration.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/news/a-chinese-spyware-tool-operates-in-13-countries-cyber-firm-says/",
-    "publishedAt": "2026-11-06T21:00:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chinese-spyware-tool-active-in-13-nations",
-      "article-9da8c99a",
-      "9da8c99a",
-      "chinese-spyware-tool-active-in-13-nations-52fa35"
-    ]
-  },
-  {
-    "slug": "huntress-siem-brute-force-sentry-enhances-early-de-7cd5a1a8",
-    "title": "Huntress SIEM Brute Force Sentry Enhances Early Detection",
-    "summary": "Huntress Managed SIEM introduces Brute Force Sentry, converting observed brute force attempts into early detections. The tool aggregates attack evidence and provides hardening guidance, enabling partners to close security gaps before escalation and actionable remediation steps. Deploying Brute Force Sentry improves SOC response times and reduces the window for credential compromise.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/brute-force-sentry",
-    "publishedAt": "2026-11-06T21:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "huntress-siem-brute-force-sentry-enhances-early-de",
-      "article-7cd5a1a8",
-      "7cd5a1a8",
-      "huntress-siem-brute-force-sentry-enhances-early-de-3fb010",
-      "huntress-siem-brute-force-sentry-enhances-early-detection"
-    ]
-  },
-  {
-    "slug": "socket-releases-certified-patch-for-rails-active-s-7bd1098b",
-    "title": "Socket Releases Certified Patch for Rails Active Storage Vulnerability",
-    "summary": "Socket released a free Certified Patch for a critical Rails Active Storage flaw that could enable remote code execution via malformed file uploads. The vulnerability arises from improper input validation in Active Storage attachment handling, allowing attackers to inject malicious payloads without authentication. Upgrade to Rails 7.1 or later and apply the Socket patch immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Socket.dev",
-    "sourceUrl": "https://socket.dev/blog/rails-active-storage-patch",
-    "publishedAt": "2026-11-06T20:40:46.426Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "socket-releases-certified-patch-for-rails-active-s",
-      "article-7bd1098b",
-      "7bd1098b",
-      "socket-releases-certified-patch-for-rails-active-s-2cdba1",
-      "socket-releases-certified-patch-for-rails-active-storage-vul"
-    ]
-  },
-  {
-    "slug": "company-settles-with-four-states-over-patient-reco-c01a40d0",
-    "title": "Company Settles with Four States Over Patient Record Hack",
-    "summary": "Perry Johnson Companies settled with Connecticut, New Jersey, New York, and Michigan over a 2023 hack that exposed patient records. The breach accessed transcription, coding, and imaging subsidiaries, compromising personal health information but no financial data theft was reported. The settlement mandates enhanced security controls, regular penetration testing, and credit monitoring for affected patients.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/medical-services-company-settles-with-4-state-ags",
-    "publishedAt": "2026-11-06T19:06:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "company-settles-with-four-states-over-patient-reco",
-      "article-c01a40d0",
-      "c01a40d0",
-      "company-settles-with-four-states-over-patient-reco-68ea46",
-      "company-settles-with-four-states-over-patient-record-hack"
-    ]
-  },
-  {
-    "slug": "digicert-exposes-ids-and-customer-data-9fe4a06c",
-    "title": "DigiCert Exposes IDs and Customer Data",
-    "summary": "A data exposure incident at DigiCert revealed customer IDs and personal data through an unsecured data store. The flaw stemmed from misconfigured access controls that allowed unauthenticated reads, exposing sensitive customer information. DigiCert has issued a remediation notice, urging customers to review access logs, apply the latest patch, and enforce strict IAM controls.",
-    "category": "Breach",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/digicert-customer-data-ids-exposed",
-    "publishedAt": "2026-11-06T18:53:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "digicert-exposes-ids-and-customer-data",
-      "article-9fe4a06c",
-      "9fe4a06c",
-      "digicert-exposes-ids-and-customer-data-b8d332"
-    ]
-  },
-  {
-    "slug": "github-security-projects-deliver-backdoor-and-info-3d196c18",
-    "title": "GitHub Security Projects Deliver Backdoor and Infostealer",
-    "summary": "Infected security projects on GitHub are delivering backdoor and information stealer malware to targeted cybersecurity professionals. The malicious code is embedded in legitimate-looking tools, enabling attackers to establish remote persistence and exfiltrate credentials without user interaction. Security teams should verify the integrity of GitHub repositories, remove compromised packages, and enforce strict code review and dependency scanning.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
-    "publishedAt": "2026-11-06T18:46:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "github-security-projects-deliver-backdoor-and-info",
-      "article-3d196c18",
-      "3d196c18",
-      "github-security-projects-deliver-backdoor-and-info-30807b",
-      "github-security-projects-deliver-backdoor-and-infostealer"
-    ]
-  },
-  {
-    "slug": "cve-2026-119923-and-cve-2026-119924-issues-with-ba-ef80c914",
-    "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
-    "summary": "Bulletin ID: 2026-166-AWS Publication Date: 11/06/2026 10:00 AM PST Description: We identified two issues in the Babelfish TDS protocol layer: - CVE-2026-119923: A memory-safety issue in the TDS connection-handshake handling could allow a remote, unauthenticated actor to affect the database process. - CVE-2026-119924: A memory-safety issue in the TDS remote-procedure-call request handling could allow a remote, authenticated actor to read adjacent process memory or cause a denial of service.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
-    "publishedAt": "2026-11-06T18:46:27.000Z",
-    "cves": [
-      "CVE-2026-119923",
-      "CVE-2026-119924"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-119923-and-cve-2026-119924-issues-with-ba",
-      "article-ef80c914",
-      "ef80c914",
-      "cve-2026-119923-and-cve-2026-119924-issues-with-ba-766d16",
-      "cve-2026-119923-and-cve-2026-119924-issues-with-babelfish-fo"
-    ]
-  },
-  {
-    "slug": "authorities-dismantle-scams-teams-abuse-refrigerat-d7e6d4c2",
-    "title": "Authorities Dismantle Scams, Teams Abuse, Refrigeration Attacks",
-    "summary": "Authorities dismantled investment‑scam and cybercrime networks that used Microsoft Teams and AD CS for credential theft. Simultaneously, attackers exploited refrigeration control system vulnerabilities across Europe, disrupting operations and threatening critical infrastructure. Security teams should apply Teams and AD CS patches, monitor certificate issuance, and harden industrial control firmware and segmentation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SentinelOne",
-    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-45-8",
-    "publishedAt": "2026-11-06T18:30:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "authorities-dismantle-scams-teams-abuse-refrigerat",
-      "article-d7e6d4c2",
-      "d7e6d4c2",
-      "authorities-dismantle-scams-teams-abuse-refrigerat-5e83e9",
-      "authorities-dismantle-scams-teams-abuse-refrigeration-attack"
     ]
   }
 ];

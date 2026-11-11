@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 08:49:54 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 09:49:04 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Grafana update released for RHEL9</title>
+      <link>https://secubuzz.com/news/grafana-update-released-for-rhel9-d84570bf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-released-for-rhel9-d84570bf</guid>
+      <description><![CDATA[Red Hat released a security update for Grafana on RHEL 9, addressing vulnerabilities that could enable unauthorized access or data leakage. The update patches each flaw, with CVSS scores available via CVE references, though no specific CVE IDs are listed. Apply the update through RHEL 9 package manager to eliminate the risks and maintain system integrity.]]></description>
+      <pubDate>Wed, 11 Nov 2026 09:31:58 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98541">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Xwayland update released for RHEL 9.4</title>
+      <link>https://secubuzz.com/news/xwayland-update-released-for-rhel-9-4-a0a12207</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xwayland-update-released-for-rhel-9-4-a0a12207</guid>
+      <description><![CDATA[Red Hat issued a security update for xorg‑x11‑server‑Xwayland on RHEL 9.4, targeting vulnerabilities that could allow unauthorized access or data exposure. The advisory notes an Important impact rating and references CVSS scores for each flaw, but no CVE identifiers are disclosed. Security teams should apply the update via RHEL 9.4 package manager to mitigate the identified risks.]]></description>
+      <pubDate>Wed, 11 Nov 2026 09:19:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98547">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Openwave, BroadWorks vulnerabilities exploited for data leakage</title>
+      <link>https://secubuzz.com/news/openwave-broadworks-vulnerabilities-exploited-for-4e1d2283</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openwave-broadworks-vulnerabilities-exploited-for-4e1d2283</guid>
+      <description><![CDATA[Threat actors exploited CVE-2026-111793 in Openwave and CVE-2026-20320 in Cisco BroadWorks, enabling leakage of sensitive configuration data. Both flaws allow unauthorized disclosure of configuration information without authentication, and public proof‑of‑concept exploits have been released. Affected systems should apply vendor patches or configuration hardening to prevent further data exposure immediately.]]></description>
+      <pubDate>Wed, 11 Nov 2026 09:01:07 GMT</pubDate>
+      <source url="https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Intel, AMD patch over 200 vulnerabilities</title>
+      <link>https://secubuzz.com/news/intel-amd-patch-over-200-vulnerabilities-720d0e7b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/intel-amd-patch-over-200-vulnerabilities-720d0e7b</guid>
+      <description><![CDATA[Intel and AMD released over 200 patches on Patch Tuesday, addressing critical flaws in Intel TDX software and numerous AMD graphics bugs. The advisory lists multiple CVE identifiers and CVSS scores, indicating a range of severity levels across the affected components. Security teams should apply the vendor patches via their package managers or firmware updates to mitigate the identified risks.]]></description>
+      <pubDate>Wed, 11 Nov 2026 08:42:44 GMT</pubDate>
+      <source url="https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>OpenSSH Update Addresses Moderate Security Issues</title>
       <link>https://secubuzz.com/news/openssh-update-addresses-moderate-security-issues-9c2d9183</link>
@@ -278,6 +314,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:98111: Critical: python-pillow security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-98111-critical-python-pillow-security-up-cd2b292b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98111-critical-python-pillow-security-up-cd2b292b</guid>
+      <description><![CDATA[An update for python-pillow is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
+      <pubDate>Wed, 11 Nov 2026 01:55:51 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98111">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>RHSA-2026:98097: Important: python3.12-urllib3 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-98097-important-python3-12-urllib3-secur-d3eebe11</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98097-important-python3-12-urllib3-secur-d3eebe11</guid>
@@ -410,51 +455,6 @@
       <description><![CDATA[SAP issued emergency patches for critical remote code execution flaws in its software, exposing customers to code execution via malformed input. Rated CVSS 10.0, the bugs allow attackers to run arbitrary code without credentials, threatening system integrity and data confidentiality. SAP urges immediate application of the updates and monitoring for suspicious activity, as no workaround exists until patches are installed.]]></description>
       <pubDate>Tue, 10 Nov 2026 23:04:16 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/sap-patches-four-cvss-10-0-flaws-including-two-enabling">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apple iMessage Group Chat and Bluetooth Vulnerabilities Patched</title>
-      <link>https://secubuzz.com/news/apple-imessage-group-chat-and-bluetooth-vulnerabil-fdd645db</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-imessage-group-chat-and-bluetooth-vulnerabil-fdd645db</guid>
-      <description><![CDATA[Apple patched vulnerabilities in iMessage group chat and Bluetooth functionality that could allow attackers to exploit the messaging service. The flaws stem from improper input validation in group chat message handling and Bluetooth pairing, enabling code execution or denial of service. Apple released an update for iOS and macOS; users should install the latest iMessage patch to mitigate the risk.]]></description>
-      <pubDate>Tue, 10 Nov 2026 23:04:00 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/apple-patches-imessage-group-chat-privacy-flaws-and-blu">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Research Detects Sleeper Agents in AI Neurons</title>
-      <link>https://secubuzz.com/news/microsoft-research-detects-sleeper-agents-in-ai-ne-787eb744</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-research-detects-sleeper-agents-in-ai-ne-787eb744</guid>
-      <description><![CDATA[Microsoft Research discovered a way to turn an agent model into a sleeper agent by editing fewer than ten neurons to embed a malicious payload. Frontier agents can detect these edits by spotting anomalous neuron changes, allowing early detection before payload activation. Teams should monitor training logs for sudden neuron modifications and use anomaly‑detection tools to mitigate sleeper agent risks.]]></description>
-      <pubDate>Tue, 10 Nov 2026 23:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/">Microsoft Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Security Update for php:8.4</title>
-      <link>https://secubuzz.com/news/red-hat-releases-security-update-for-php-8-4-292ebc39</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-security-update-for-php-8-4-292ebc39</guid>
-      <description><![CDATA[Red Hat released a security update for the php:8.4 module on Enterprise Linux 9. The update addresses multiple vulnerabilities in PHP’s core engine, including a potential remote code execution flaw that could allow attackers to execute arbitrary code via crafted input. Administrators should apply the php:8.4 update immediately and verify that all web applications are running the patched version.]]></description>
-      <pubDate>Tue, 10 Nov 2026 22:40:17 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97880">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Update for mod_auth_openidc</title>
-      <link>https://secubuzz.com/news/red-hat-issues-update-for-mod-auth-openidc-27a52e13</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-update-for-mod-auth-openidc-27a52e13</guid>
-      <description><![CDATA[Red Hat released a security update for the mod_auth_openidc module on Enterprise Linux 9. The patch fixes multiple authentication bypass and privilege escalation flaws that could allow attackers to gain unauthorized access to protected resources. Administrators should apply the update immediately and review access logs for anomalous authentication attempts today.]]></description>
-      <pubDate>Tue, 10 Nov 2026 22:37:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:97861">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco ISE Authorization Bypass Flaws Exposed</title>
-      <link>https://secubuzz.com/news/cisco-ise-authorization-bypass-flaws-exposed-80fd12f9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-ise-authorization-bypass-flaws-exposed-80fd12f9</guid>
-      <description><![CDATA[Cisco ISE and ISE‑PIC contain web‑interface authorization bypass flaws that let authenticated remote attackers modify configuration. The flaw arises from missing server‑side validation of Administrator permissions, enabling crafted HTTP requests to alter file descriptions; exploitation requires valid admin credentials. Cisco has issued patches that address these vulnerabilities, and no workarounds exist; security teams should apply them promptly.]]></description>
-      <pubDate>Tue, 10 Nov 2026 22:37:41 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-auth-bypass-1-MxcTNgwx?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerabilities%26vs_k%3D1">Cisco PSIRT</source>
       <category>Vulnerability</category>
     </item>
   </channel>
