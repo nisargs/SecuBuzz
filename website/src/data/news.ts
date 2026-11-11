@@ -11,6 +11,115 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-kernel-security-update-dcf5048d",
+    "title": "Red Hat Releases Kernel Security Update",
+    "summary": "Red Hat released a kernel update for Enterprise Linux 10, fixing multiple security issues that could enable privilege escalation or denial of service. The advisory labels the update Important and lists CVSS scores, but omits CVE IDs. Apply the patch promptly to close the flaws, as it includes bug fixes and enhancements that address the reported weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99139",
+    "publishedAt": "2026-11-11T23:34:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-security-update",
+      "article-dcf5048d",
+      "dcf5048d",
+      "red-hat-releases-kernel-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-net-10-0-security-update-cc10fd3f",
+    "title": "Red Hat Issues .NET 10.0 Security Update",
+    "summary": "Red Hat released a .NET 10.0 security update for RHEL 10, addressing multiple vulnerabilities that could allow remote code execution via the .NET runtime. The update contains fixes for several CVEs, each with a CVSS base score, but no active exploitation reported. Red Hat recommends applying the RHSA-2026:99143 update immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99143",
+    "publishedAt": "2026-11-11T23:25:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-net-10-0-security-update",
+      "article-cc10fd3f",
+      "cc10fd3f",
+      "red-hat-issues-net-10-0-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "chromeos-lts-150-patches-critical-use-after-free-f54d10a7",
+    "title": "ChromeOS LTS‑150 Patches Critical Use‑After‑Free",
+    "summary": "Google released ChromeOS LTS-150, patching numerous high‑severity CVEs including a critical CVE‑2026‑126879 use‑after‑free in the layout engine. The update addresses 18 CVEs such as CVE‑2026‑126901, CVE‑2026‑126856, and CVE‑2026‑126887, all of which could lead to code execution or denial of service.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/long-term-support-channel-update-for.html",
+    "publishedAt": "2026-11-11T23:06:31.103Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-lts-150-patches-critical-use-after-free",
+      "article-f54d10a7",
+      "f54d10a7",
+      "chromeos-lts-150-patches-critical-use-after-free-be27e9"
+    ]
+  },
+  {
+    "slug": "baker-tilly-clients-informed-of-third-party-breach-c8927c9e",
+    "title": "Baker Tilly Clients Informed of Third‑Party Breach",
+    "summary": "Baker Tilly Advisory Group notified clients that a provider breach exposed personal information of clients and their dependents. The incident involved unauthorized access to sensitive data, including names, addresses, and financial details, though the full scope remains under investigation. Clients should monitor accounts, change passwords, and review security practices while Baker Tilly coordinates with the provider to assess impact.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
+    "publishedAt": "2026-11-11T23:01:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "baker-tilly-clients-informed-of-third-party-breach",
+      "article-c8927c9e",
+      "c8927c9e",
+      "baker-tilly-clients-informed-of-third-party-breach-86b367"
+    ]
+  },
+  {
+    "slug": "unit-42-reveals-ai-powered-red-team-tool-usage-2b919cff",
+    "title": "Unit 42 Reveals AI‑Powered Red Team Tool Usage",
+    "summary": "Unit 42 identified adversaries deploying AI‑powered red team tools, such as ARTEX, to automate reconnaissance, credential harvesting, and lateral movement. These tools use large language models to generate phishing content, craft credential‑dump scripts, and orchestrate multi‑stage attack chains. Defenders should enable AI‑aware detection, enforce least‑privilege access, deploy MFA, and run regular red‑team simulations to validate controls.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/",
+    "publishedAt": "2026-11-11T23:00:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "unit-42-reveals-ai-powered-red-team-tool-usage",
+      "article-2b919cff",
+      "2b919cff",
+      "unit-42-reveals-ai-powered-red-team-tool-usage-381d02"
+    ]
+  },
+  {
+    "slug": "screenconnect-malware-breaches-msps-targets-custom-1b502196",
+    "title": "ScreenConnect Malware Breaches MSPs, Targets Customer Devices",
+    "summary": "ConnectWise investigated a malware campaign that leveraged compromised ScreenConnect environments to deploy rogue remote‑access clients to customer devices of managed service providers. The attacks enabled attackers to gain remote control over client systems, potentially exfiltrating data and installing additional malicious payloads. ConnectWise recommends MSPs update ScreenConnect to the latest version, enforce strict access controls, and monitor for unauthorized remote‑access activity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+    "publishedAt": "2026-11-11T22:56:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "screenconnect-malware-breaches-msps-targets-custom",
+      "article-1b502196",
+      "1b502196",
+      "screenconnect-malware-breaches-msps-targets-custom-308e6c",
+      "screenconnect-malware-breaches-msps-targets-customer-devices"
+    ]
+  },
+  {
     "slug": "red-hat-releases-c-ares-security-update-for-rhel-1-3b2b8dad",
     "title": "Red Hat Releases c-ares Security Update for RHEL 10.2",
     "summary": "Red Hat has released a security update for c-ares on RHEL 10.2 EUS, addressing multiple vulnerabilities with a CVSS base score available in the CVE references. The update is classified as Important by Red Hat Product Security, implying a high severity impact on DNS resolution functionality. Security teams should apply the c-ares update immediately to mitigate the identified vulnerabilities.",
@@ -63,6 +172,44 @@ export const news: NewsBrief[] = [
       "article-71fbc78e",
       "71fbc78e",
       "rhsa-2026-99134-important-grafana-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "arctic-wolf-highlights-agentic-ai-in-2026-security-994392c0",
+    "title": "Arctic Wolf Highlights Agentic AI in 2026 Security Operations",
+    "summary": "Arctic Wolf’s 2026 Agentic Security Operations Report details how agentic AI collaborates with expert analysts to streamline incident response workflows. The integration reduces investigation time by up to 40 % and boosts detection accuracy, enabling quicker threat containment. Teams should evaluate agentic AI platforms, integrate them with SOAR, and train analysts to interpret AI‑generated hypotheses.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar/inside-the-2026-agentic-security-operations-report/",
+    "publishedAt": "2026-11-11T22:12:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arctic-wolf-highlights-agentic-ai-in-2026-security",
+      "article-994392c0",
+      "994392c0",
+      "arctic-wolf-highlights-agentic-ai-in-2026-security-74fba6",
+      "arctic-wolf-highlights-agentic-ai-in-2026-security-operation"
+    ]
+  },
+  {
+    "slug": "greeter-attack-chain-leaves-hello-trail-in-cloud-l-562a968e",
+    "title": "Greeter Attack Chain Leaves 'Hello' Trail in Cloud Logs",
+    "summary": "Researchers identified a new cloud attack chain named Greeter, in which adversaries embed 'hello' messages in log files to obscure their activity. The technique masks lateral movement and persistence indicators, making forensic analysis more difficult and delaying incident response. Defenders should enable log integrity monitoring, correlate anomalous 'hello' entries with known threat patterns, and apply stricter log retention policies.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
+    "publishedAt": "2026-11-11T21:44:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "greeter-attack-chain-leaves-hello-trail-in-cloud-l",
+      "article-562a968e",
+      "562a968e",
+      "greeter-attack-chain-leaves-hello-trail-in-cloud-l-2e556e",
+      "greeter-attack-chain-leaves-hello-trail-in-cloud-logs"
     ]
   },
   {
@@ -213,6 +360,25 @@ export const news: NewsBrief[] = [
       "article-a219ebe6",
       "a219ebe6",
       "chrome-stable-channel-updated-to-157-0-8103-78-474e4e"
+    ]
+  },
+  {
+    "slug": "2026-agentic-security-operations-report-highlights-b31c85ac",
+    "title": "2026 Agentic Security Operations Report Highlights AI Benefits",
+    "summary": "The 2026 Agentic Security Operations Report shows how enterprises use AI‑powered security operations to detect threats faster. The study reports a reduction in alert noise and a 35 % increase in analyst efficiency through AI‑driven prioritization. Organizations should integrate AI platforms with existing SOAR tools, train analysts on AI outputs, and monitor for false positives.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/report-de/2026-agentic-security-operations-report-de/",
+    "publishedAt": "2026-11-11T19:50:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-agentic-security-operations-report-highlights",
+      "article-b31c85ac",
+      "b31c85ac",
+      "2026-agentic-security-operations-report-highlights-465c39",
+      "2026-agentic-security-operations-report-highlights-ai-benefi"
     ]
   },
   {
@@ -2187,6 +2353,89 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-yaml-parsing-rce-exploit-discovered-6dd88325",
+    "title": "Meta fairseq YAML Parsing RCE Exploit Discovered",
+    "summary": "A zero‑day vulnerability in Meta fairseq’s W2lConvGluEncoder YAML parser allows remote attackers to execute arbitrary code when a user opens a crafted file. The flaw carries a CVSS score of 7.8, is identified as CVE-2026-111760, and requires user interaction to trigger. Meta has released a patch; security teams should update fairseq immediately to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-928/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-yaml-parsing-rce-exploit-discovered",
+      "article-6dd88325",
+      "6dd88325",
+      "meta-fairseq-yaml-parsing-rce-exploit-discovered-6f3d10"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-fairseqadam-yaml-rce-vulnerability-fo-0a31e070",
+    "title": "Meta fairseq FairseqAdam YAML RCE Vulnerability Found",
+    "summary": "A zero‑day flaw in Meta fairseq’s FairseqAdam YAML parser permits remote code execution when a user opens a malicious file. The vulnerability is rated CVSS 7.8, identified as CVE-2026-111760, and requires user interaction to exploit. Meta has issued a patch; administrators should apply it promptly to mitigate the critical risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-927/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-fairseqadam-yaml-rce-vulnerability-fo",
+      "article-0a31e070",
+      "0a31e070",
+      "meta-fairseq-fairseqadam-yaml-rce-vulnerability-fo-6f3d10",
+      "meta-fairseq-fairseqadam-yaml-rce-vulnerability-found"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-ex-296dc77b",
+    "title": "Meta fairseq FairseqLAMB YAML RCE Vulnerability Exposed",
+    "summary": "A zero‑day vulnerability in Meta fairseq’s FairseqLAMB YAML parser enables remote code execution when a user opens a crafted file. The flaw has a CVSS score of 7.8, is identified as CVE-2026-111760, and requires user interaction to trigger. Meta released a patch; security teams should update fairseq immediately to block exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-925/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-ex",
+      "article-296dc77b",
+      "296dc77b",
+      "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-ex-6f3d0f",
+      "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-exposed"
+    ]
+  },
+  {
+    "slug": "zdi-26-924-0day-meta-fairseq-s2twavtransformerenco-455c3e72",
+    "title": "ZDI-26-924: (0Day) Meta fairseq S2TWavTransformerEncoder YAML File Parsing Code Injection Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-924/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-924-0day-meta-fairseq-s2twavtransformerenco",
+      "article-455c3e72",
+      "455c3e72",
+      "zdi-26-924-0day-meta-fairseq-s2twavtransformerenco-6f3d0f",
+      "zdi-26-924-0day-meta-fairseq-s2twavtransformerencoder-yaml-f"
     ]
   },
   {
@@ -9344,261 +9593,6 @@ export const news: NewsBrief[] = [
       "081b64b4",
       "openjdk-17-vulnerabilities-allow-remote-data-modif-7e8938",
       "openjdk-17-vulnerabilities-allow-remote-data-modification"
-    ]
-  },
-  {
-    "slug": "fetchmail-vulnerabilities-enable-denial-of-service-8ed7529c",
-    "title": "Fetchmail Vulnerabilities Enable Denial of Service and Code Execution",
-    "summary": "Ubuntu’s USN‑9013‑1 documents three Fetchmail flaws, including CVE‑2021‑36386, CVE‑2025‑61962, and an NTLM authentication mishandling bug. The defects can crash Fetchmail via malformed log or status messages, and CVE‑2025‑61962 may allow remote code execution. Ubuntu advises upgrading to the latest packages on 16.04, 18.04, and 20.04 LTS to mitigate denial‑of‑service and potential RCE.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9013-1",
-    "publishedAt": "2026-11-09T17:17:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fetchmail-vulnerabilities-enable-denial-of-service",
-      "article-8ed7529c",
-      "8ed7529c",
-      "fetchmail-vulnerabilities-enable-denial-of-service-7e893c",
-      "fetchmail-vulnerabilities-enable-denial-of-service-and-code-"
-    ]
-  },
-  {
-    "slug": "pwc-ciso-discusses-ai-robots-future-security-9ce1fa97",
-    "title": "PwC CISO Discusses AI, Robots, Future Security",
-    "summary": "PwC’s Chief Information Security Officer James Shira outlined how AI and robotics are reshaping enterprise risk management. He emphasized the need for security teams to adopt adaptive threat models, integrate automation, and prioritize human oversight in AI deployments. PwC recommends continuous monitoring, policy updates, and cross‑functional collaboration to mitigate emerging AI‑driven attack vectors.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security",
-    "publishedAt": "2026-11-09T17:17:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "pwc-ciso-discusses-ai-robots-future-security",
-      "article-9ce1fa97",
-      "9ce1fa97",
-      "pwc-ciso-discusses-ai-robots-future-security-3666f4"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-openshift-4-14-78-security-update-1d4ceaf6",
-    "title": "Red Hat Releases OpenShift 4.14.78 Security Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.14.78, incorporating security fixes for multiple package and image vulnerabilities. The update addresses authentication and authorization weaknesses that could allow unauthorized access, with CVSS scores linked via referenced CVE entries. Install the 4.14.78 release promptly and review the CVE references for detailed severity information.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95507",
-    "publishedAt": "2026-11-09T17:16:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-openshift-4-14-78-security-update",
-      "article-1d4ceaf6",
-      "1d4ceaf6",
-      "red-hat-releases-openshift-4-14-78-security-update-37d842"
-    ]
-  },
-  {
-    "slug": "red-hat-openshift-container-platform-4-14-78-secur-6b70975e",
-    "title": "Red Hat OpenShift Container Platform 4.14.78 Security Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.14.78, incorporating bug fixes and a critical security update for the platform on supported RHEL versions. The update addresses multiple vulnerabilities that could allow privilege escalation or denial of service, with CVSS scores referenced via CVE links. Users should apply the 4.14.78 release promptly to secure their clusters.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95508",
-    "publishedAt": "2026-11-09T17:10:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-openshift-container-platform-4-14-78-secur",
-      "article-6b70975e",
-      "6b70975e",
-      "red-hat-openshift-container-platform-4-14-78-secur-37d842",
-      "red-hat-openshift-container-platform-4-14-78-security-update"
-    ]
-  },
-  {
-    "slug": "notepad-8-9-9-released-with-fixes-for-6-vulnerabil-42f7b818",
-    "title": "Notepad++ 8.9.9 Released With Fixes for 6 Vulnerabilities Allowing Plugin Command Execution",
-    "summary": "Notepad++ released version 8.9.9 on November 6, 2026, fixing six security flaws across Windows message handling, protected file saving, clipboard operations, and MIME Tools decoding. The update addresses flaws including conditional plugin command execution, memory exposure, and buffer overflow.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/notepad-8-9-9-released/",
-    "publishedAt": "2026-11-09T17:03:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "notepad-8-9-9-released-with-fixes-for-6-vulnerabil",
-      "article-42f7b818",
-      "42f7b818",
-      "notepad-8-9-9-released-with-fixes-for-6-vulnerabil-510037",
-      "notepad-8-9-9-released-with-fixes-for-6-vulnerabilities-allo"
-    ]
-  },
-  {
-    "slug": "libheif-vulnerability-allows-arbitrary-code-execut-0cc88e36",
-    "title": "libheif Vulnerability Allows Arbitrary Code Execution",
-    "summary": "A flaw in libheif lets attackers execute arbitrary code when a user opens a crafted HEIF file. The flaw arises from improper HEIF header parsing, causing memory corruption that could be exploited; no public exploit yet. Ubuntu recommends installing the latest libheif update and advises users to avoid opening unknown HEIF files until patched.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9012-1",
-    "publishedAt": "2026-11-09T16:44:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "libheif-vulnerability-allows-arbitrary-code-execut",
-      "article-0cc88e36",
-      "0cc88e36",
-      "libheif-vulnerability-allows-arbitrary-code-execut-7e893f",
-      "libheif-vulnerability-allows-arbitrary-code-execution"
-    ]
-  },
-  {
-    "slug": "ghostaction-compromises-500-github-accounts-for-cl-d75bece3",
-    "title": "GhostAction Compromises 500+ GitHub Accounts for Cloud Credentials",
-    "summary": "GhostAction attackers compromised over 500 GitHub accounts in October 2026, injecting a workflow into thousands of repositories that exfiltrated AWS, OpenAI, and other cloud credentials. The workflow leveraged GitHub Actions to harvest secrets from environment variables, bypassing rotation and exposing key material to the attackers.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ghostaction-github-account-compromise/",
-    "publishedAt": "2026-11-09T16:29:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostaction-compromises-500-github-accounts-for-cl",
-      "article-d75bece3",
-      "d75bece3",
-      "ghostaction-compromises-500-github-accounts-for-cl-43e3a4",
-      "ghostaction-compromises-500-github-accounts-for-cloud-creden"
-    ]
-  },
-  {
-    "slug": "usn-9011-1-pyasn1-vulnerabilities-c8fff662",
-    "title": "USN-9011-1: pyasn1 vulnerabilities",
-    "summary": "This issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, Ubuntu 18.04 LTS, and Ubuntu 20.04 LTS. (CVE-2026-59884) It was discovered that pyasn1 processed OBJECT IDENTIFIER and RELATIVE-OID values in quadratic time relative to the number of arcs. This issue was only addressed in Ubuntu 26.04 LTS and Ubuntu 26.10. (CVE-2026-119195) It was discovered that pyasn1 processed fragmented constructed BIT STRING values in quadratic time.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9011-1",
-    "publishedAt": "2026-11-09T16:15:14.000Z",
-    "cves": [
-      "CVE-2026-59884",
-      "CVE-2026-119195"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9011-1-pyasn1-vulnerabilities",
-      "article-c8fff662",
-      "c8fff662",
-      "usn-9011-1-pyasn1-vulnerabilities-7e8943"
-    ]
-  },
-  {
-    "slug": "binance-denies-data-breach-after-alleged-shinyhunt-1be14fa8",
-    "title": "Binance denies data breach after alleged ShinyHunters claims",
-    "summary": "Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/",
-    "publishedAt": "2026-11-09T16:12:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-denies-data-breach-after-alleged-shinyhunt",
-      "article-1be14fa8",
-      "1be14fa8",
-      "binance-denies-data-breach-after-alleged-shinyhunt-43c0a5",
-      "binance-denies-data-breach-after-alleged-shinyhunters-claims"
-    ]
-  },
-  {
-    "slug": "openjdk-8-auth-flaws-expose-sensitive-data-b64e18df",
-    "title": "OpenJDK 8 Auth Flaws Expose Sensitive Data",
-    "summary": "OpenJDK 8 components—Security, JSSE, JAAS, JDBC—exposed authentication and authorization flaws that could let remote attackers read or modify sensitive data. Flaws CVE-2026-83374, CVE-2026-83376, CVE-2026-91461, CVE-2026-83380, CVE-2026-83381, CVE-2026-87294 grant unauthenticated or improperly authorized access, enabling data tampering. Oracle released patches; users should apply the latest OpenJDK 8 update to mitigate risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9009-1",
-    "publishedAt": "2026-11-09T16:04:44.000Z",
-    "cves": [
-      "CVE-2026-83374",
-      "CVE-2026-83376",
-      "CVE-2026-91461",
-      "CVE-2026-83380",
-      "CVE-2026-83381",
-      "CVE-2026-87294"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openjdk-8-auth-flaws-expose-sensitive-data",
-      "article-b64e18df",
-      "b64e18df",
-      "openjdk-8-auth-flaws-expose-sensitive-data-7e8999"
-    ]
-  },
-  {
-    "slug": "openssh-sshole-bypass-vulnerability-disclosed-86de8784",
-    "title": "OpenSSH SSHole Bypass Vulnerability Disclosed",
-    "summary": "OpenSSH has a documented SSHole bypass vulnerability (CVE-2026-123158) that allows attackers to circumvent authentication checks on supported SSH servers. The flaw stems from improper handling of session key negotiation, potentially enabling unauthorized remote access with CVSS 8.5. Red Hat and OpenSSH maintainers advise applying the latest patch or upgrading to version 9.8 to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/hackers-exploiting-sshole-authentication-bypass-in-open",
-    "publishedAt": "2026-11-09T16:00:45.000Z",
-    "cves": [
-      "CVE-2026-123158"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openssh-sshole-bypass-vulnerability-disclosed",
-      "article-86de8784",
-      "86de8784",
-      "openssh-sshole-bypass-vulnerability-disclosed-5830c4"
-    ]
-  },
-  {
-    "slug": "ahsaycbs-exploits-cve-2026-105133-for-webshells-an-63510953",
-    "title": "AhsayCBS Exploits CVE-2026-105133 for Webshells and Mining",
-    "summary": "AhsayCBS has leveraged CVE‑2026‑105133 to deploy webshells and an XMRig miner on affected systems. The vulnerability permits remote code execution via a flaw in the AhsayCBS web interface, enabling attackers to execute arbitrary commands and mine cryptocurrency. Immediate patching of the affected AhsayCBS version is required; security teams should also monitor for webshell activity and block mining processes.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/inside-an-ahsaycbs-intrusion-hidden-webshells-a-cryptom",
-    "publishedAt": "2026-11-09T15:50:32.000Z",
-    "cves": [
-      "CVE-2026-105133"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ahsaycbs-exploits-cve-2026-105133-for-webshells-an",
-      "article-63510953",
-      "63510953",
-      "ahsaycbs-exploits-cve-2026-105133-for-webshells-an-865f45",
-      "ahsaycbs-exploits-cve-2026-105133-for-webshells-and-mining"
-    ]
-  },
-  {
-    "slug": "ukraine-seizes-4-3m-crypto-scam-ring-46ec5661",
-    "title": "Ukraine Seizes €4.3M Crypto Scam Ring",
-    "summary": "Ukraine law enforcement disrupted a €4.3 million crypto scam ring, arresting key operators and seizing assets. Court filings revealed the ring used layered phishing and cryptocurrency mixing services, with threat actors operating from multiple jurisdictions. Security teams should monitor for similar phishing vectors, enforce multi‑factor authentication, and employ transaction monitoring to detect illicit crypto flows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ukraine-dismantles-crypto-scam-network-that-stole-4-3-m",
-    "publishedAt": "2026-11-09T15:49:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ukraine-seizes-4-3m-crypto-scam-ring",
-      "article-46ec5661",
-      "46ec5661",
-      "ukraine-seizes-4-3m-crypto-scam-ring-7cf541"
     ]
   }
 ];

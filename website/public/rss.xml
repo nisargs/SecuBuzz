@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 22:51:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 23:47:02 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases Kernel Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-dcf5048d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-dcf5048d</guid>
+      <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 10, fixing multiple security issues that could enable privilege escalation or denial of service. The advisory labels the update Important and lists CVSS scores, but omits CVE IDs. Apply the patch promptly to close the flaws, as it includes bug fixes and enhancements that address the reported weaknesses.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:34:30 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99139">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues .NET 10.0 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-net-10-0-security-update-cc10fd3f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-net-10-0-security-update-cc10fd3f</guid>
+      <description><![CDATA[Red Hat released a .NET 10.0 security update for RHEL 10, addressing multiple vulnerabilities that could allow remote code execution via the .NET runtime. The update contains fixes for several CVEs, each with a CVSS base score, but no active exploitation reported. Red Hat recommends applying the RHSA-2026:99143 update immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:25:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99143">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ChromeOS LTS‑150 Patches Critical Use‑After‑Free</title>
+      <link>https://secubuzz.com/news/chromeos-lts-150-patches-critical-use-after-free-f54d10a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-lts-150-patches-critical-use-after-free-f54d10a7</guid>
+      <description><![CDATA[Google released ChromeOS LTS-150, patching numerous high‑severity CVEs including a critical CVE‑2026‑126879 use‑after‑free in the layout engine. The update addresses 18 CVEs such as CVE‑2026‑126901, CVE‑2026‑126856, and CVE‑2026‑126887, all of which could lead to code execution or denial of service.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:06:31 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/long-term-support-channel-update-for.html">Google Chrome Releases</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Baker Tilly Clients Informed of Third‑Party Breach</title>
+      <link>https://secubuzz.com/news/baker-tilly-clients-informed-of-third-party-breach-c8927c9e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/baker-tilly-clients-informed-of-third-party-breach-c8927c9e</guid>
+      <description><![CDATA[Baker Tilly Advisory Group notified clients that a provider breach exposed personal information of clients and their dependents. The incident involved unauthorized access to sensitive data, including names, addresses, and financial details, though the full scope remains under investigation. Clients should monitor accounts, change passwords, and review security practices while Baker Tilly coordinates with the provider to assess impact.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:01:31 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Unit 42 Reveals AI‑Powered Red Team Tool Usage</title>
+      <link>https://secubuzz.com/news/unit-42-reveals-ai-powered-red-team-tool-usage-2b919cff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-reveals-ai-powered-red-team-tool-usage-2b919cff</guid>
+      <description><![CDATA[Unit 42 identified adversaries deploying AI‑powered red team tools, such as ARTEX, to automate reconnaissance, credential harvesting, and lateral movement. These tools use large language models to generate phishing content, craft credential‑dump scripts, and orchestrate multi‑stage attack chains. Defenders should enable AI‑aware detection, enforce least‑privilege access, deploy MFA, and run regular red‑team simulations to validate controls.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:00:53 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/">Unit 42</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ScreenConnect Malware Breaches MSPs, Targets Customer Devices</title>
+      <link>https://secubuzz.com/news/screenconnect-malware-breaches-msps-targets-custom-1b502196</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-malware-breaches-msps-targets-custom-1b502196</guid>
+      <description><![CDATA[ConnectWise investigated a malware campaign that leveraged compromised ScreenConnect environments to deploy rogue remote‑access clients to customer devices of managed service providers. The attacks enabled attackers to gain remote control over client systems, potentially exfiltrating data and installing additional malicious payloads. ConnectWise recommends MSPs update ScreenConnect to the latest version, enforce strict access controls, and monitor for unauthorized remote‑access activity.]]></description>
+      <pubDate>Wed, 11 Nov 2026 22:56:21 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/">BleepingComputer</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Red Hat Releases c-ares Security Update for RHEL 10.2</title>
       <link>https://secubuzz.com/news/red-hat-releases-c-ares-security-update-for-rhel-1-3b2b8dad</link>
@@ -33,6 +87,24 @@
       <pubDate>Wed, 11 Nov 2026 22:31:50 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99134">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Arctic Wolf Highlights Agentic AI in 2026 Security Operations</title>
+      <link>https://secubuzz.com/news/arctic-wolf-highlights-agentic-ai-in-2026-security-994392c0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-highlights-agentic-ai-in-2026-security-994392c0</guid>
+      <description><![CDATA[Arctic Wolf’s 2026 Agentic Security Operations Report details how agentic AI collaborates with expert analysts to streamline incident response workflows. The integration reduces investigation time by up to 40 % and boosts detection accuracy, enabling quicker threat containment. Teams should evaluate agentic AI platforms, integrate them with SOAR, and train analysts to interpret AI‑generated hypotheses.]]></description>
+      <pubDate>Wed, 11 Nov 2026 22:12:32 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/on-demand-webinar/inside-the-2026-agentic-security-operations-report/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Greeter Attack Chain Leaves &apos;Hello&apos; Trail in Cloud Logs</title>
+      <link>https://secubuzz.com/news/greeter-attack-chain-leaves-hello-trail-in-cloud-l-562a968e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/greeter-attack-chain-leaves-hello-trail-in-cloud-l-562a968e</guid>
+      <description><![CDATA[Researchers identified a new cloud attack chain named Greeter, in which adversaries embed 'hello' messages in log files to obscure their activity. The technique masks lateral movement and persistence indicators, making forensic analysis more difficult and delaying incident response. Defenders should enable log integrity monitoring, correlate anomalous 'hello' entries with known threat patterns, and apply stricter log retention policies.]]></description>
+      <pubDate>Wed, 11 Nov 2026 21:44:04 GMT</pubDate>
+      <source url="https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack">Dark Reading</source>
+      <category>General</category>
     </item>
     <item>
       <title>eMudhra Revokes Eight CA Certificates After Key Mishap</title>
@@ -104,6 +176,15 @@
       <description><![CDATA[Google Chrome updated the Stable channel to build 157.0.8103.78 for Windows, Mac, and Linux, with rollout scheduled over the coming weeks. Security changes are included, and a list of modifications can be found in the release log, with users advised to review the details. Installation can be performed manually via browser settings or will occur automatically, ensuring users receive protections.]]></description>
       <pubDate>Wed, 11 Nov 2026 20:02:26 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>2026 Agentic Security Operations Report Highlights AI Benefits</title>
+      <link>https://secubuzz.com/news/2026-agentic-security-operations-report-highlights-b31c85ac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-agentic-security-operations-report-highlights-b31c85ac</guid>
+      <description><![CDATA[The 2026 Agentic Security Operations Report shows how enterprises use AI‑powered security operations to detect threats faster. The study reports a reduction in alert noise and a 35 % increase in analyst efficiency through AI‑driven prioritization. Organizations should integrate AI platforms with existing SOAR tools, train analysts on AI outputs, and monitor for false positives.]]></description>
+      <pubDate>Wed, 11 Nov 2026 19:50:23 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/report-de/2026-agentic-security-operations-report-de/">Arctic Wolf</source>
       <category>General</category>
     </item>
     <item>
@@ -374,87 +455,6 @@
       <description><![CDATA[Red Hat released an important security update for java‑1.8.0‑openjdk on RHEL 8, fixing Java runtime vulnerabilities. The patch addresses remote code execution and information disclosure flaws with CVSS scores between 7.0 and 8.5. Apply the update promptly, test application compatibility, and monitor for anomalous runtime behavior to maintain security posture.]]></description>
       <pubDate>Wed, 11 Nov 2026 15:01:47 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:95609">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux eBPF Rootkits Spread via Underground Forums</title>
-      <link>https://secubuzz.com/news/linux-ebpf-rootkits-spread-via-underground-forums-ca178826</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-ebpf-rootkits-spread-via-underground-forums-ca178826</guid>
-      <description><![CDATA[Linux eBPF rootkits enable malicious code to run without loading kernel modules, allowing attackers to conceal activity. Flare analysis shows underground forums distribute rootkit source, tutorials, and exploits, expanding the threat surface across Linux systems. Security teams should monitor eBPF activity, enforce kernel module signing, and apply vendor patches to mitigate hidden rootkits.]]></description>
-      <pubDate>Wed, 11 Nov 2026 15:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Patches mod_http2 on RHEL 9.8</title>
-      <link>https://secubuzz.com/news/red-hat-patches-mod-http2-on-rhel-9-8-f0fa443e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-mod-http2-on-rhel-9-8-f0fa443e</guid>
-      <description><![CDATA[Red Hat issued an important security update for mod_http2 on RHEL 9.8, addressing critical HTTP/2 handling flaws. The update mitigates potential denial‑of‑service and information disclosure vulnerabilities, with CVSS scores up to 8.0. Deploy the patch immediately, verify HTTP/2 functionality, and monitor for abnormal traffic patterns to preserve service availability across all affected servers.]]></description>
-      <pubDate>Wed, 11 Nov 2026 14:58:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98982">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Kai Adds External Attack Surface Management to Defense Platform</title>
-      <link>https://secubuzz.com/news/kai-adds-external-attack-surface-management-to-def-a9e35699</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kai-adds-external-attack-surface-management-to-def-a9e35699</guid>
-      <description><![CDATA[Security vendor Kai announced External Attack Surface Management capability integration into its Autonomous Defense Platform to monitor internet-facing assets. The feature addresses visibility gaps in internal exposure programs by identifying externally facing vulnerabilities visible to potential threat actors. The unified platform consolidates internal and external security exposures into a single remediation workflow to streamline risk mitigation efforts.]]></description>
-      <pubDate>Wed, 11 Nov 2026 14:55:27 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/11/kai-autonomous-defense-platform/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues OpenJDK 8 Security Update for RHEL 7</title>
-      <link>https://secubuzz.com/news/red-hat-issues-openjdk-8-security-update-for-rhel-5832fee3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openjdk-8-security-update-for-rhel-5832fee3</guid>
-      <description><![CDATA[Red Hat released a security update for java‑1.8.0‑openjdk on Red Enterprise Linux 7 Extended Lifecycle Support to address multiple vulnerabilities. The update covers unspecified Java runtime flaws rated Important, with CVSS base scores linked via CVE references, potentially enabling remote code execution or privilege escalation. System administrators should apply the RHSA‑2026:95598 patch and verify Java version to ensure protection.]]></description>
-      <pubDate>Wed, 11 Nov 2026 14:33:26 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95598">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Git Issues Patches for Six Vulnerabilities, Including Code Execution</title>
-      <link>https://secubuzz.com/news/git-issues-patches-for-six-vulnerabilities-includi-beb706d4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/git-issues-patches-for-six-vulnerabilities-includi-beb706d4</guid>
-      <description><![CDATA[Git released patches for six vulnerabilities, including CVE-2026-111760, which allows code execution during recursive clones. The flaw stems from an integer truncation in Git’s index handling, enabling attackers to write unintended files or cause memory corruption when processing malicious repositories. Git has issued security updates; users should apply the latest release to mitigate the risk.]]></description>
-      <pubDate>Wed, 11 Nov 2026 14:26:12 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/11/git-project-security-updates/">Help Net Security</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Cloudflare Explains QuePaxa Consensus Algorithm</title>
-      <link>https://secubuzz.com/news/cloudflare-explains-quepaxa-consensus-algorithm-1e0211c8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-explains-quepaxa-consensus-algorithm-1e0211c8</guid>
-      <description><![CDATA[Cloudflare is building an experimental consensus service that uses the novel QuePaxa algorithm, a consensus mechanism never deployed before. QuePaxa blends proof‑of‑work and proof‑of‑stake to reduce latency and increase fault tolerance across distributed nodes. The post explains the algorithm’s design and rationale, offering insights for researchers and practitioners exploring next‑generation consensus.]]></description>
-      <pubDate>Wed, 11 Nov 2026 14:24:46 GMT</pubDate>
-      <source url="https://blog.cloudflare.com/choosing-quepaxa/">Cloudflare Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Security Update for RHEL 10</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a</guid>
-      <description><![CDATA[Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security issues. The update targets unspecified kernel vulnerabilities rated Important, with CVSS base scores available via CVE references, indicating potential privilege escalation or denial of service if exploited. Administrators should apply the RHSA‑2026:98638 patch promptly and verify kernel version to ensure protection.]]></description>
-      <pubDate>Wed, 11 Nov 2026 14:10:03 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98638">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Qlik Sense Servers Targeted by Reverse Shell Attempts</title>
-      <link>https://secubuzz.com/news/qlik-sense-servers-targeted-by-reverse-shell-attem-b382a9bf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/qlik-sense-servers-targeted-by-reverse-shell-attem-b382a9bf</guid>
-      <description><![CDATA[Threat actors targeted Qlik Sense servers in October 2026, attempting to deliver PowerShell reverse shells across multiple environments. The activity, observed by Cynet's CyOps and Research teams, involved a narrow three‑minute window and failed to achieve code execution or credential compromise. Security teams should monitor for similar attempts and ensure Qlik Sense is patched to the latest version.]]></description>
-      <pubDate>Wed, 11 Nov 2026 14:01:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Asus, Zoom Issue Patches for Execution Flaws</title>
-      <link>https://secubuzz.com/news/asus-zoom-issue-patches-for-execution-flaws-8bf454f6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/asus-zoom-issue-patches-for-execution-flaws-8bf454f6</guid>
-      <description><![CDATA[Asus and Zoom released security patches addressing critical flaws that could allow attackers to execute arbitrary code, overwrite memory, and elevate privileges. The vulnerabilities involve memory corruption and privilege escalation paths, potentially enabling full system compromise if exploited. Users should install the latest updates for both Asus firmware and Zoom client immediately to mitigate the risk.]]></description>
-      <pubDate>Wed, 11 Nov 2026 13:58:38 GMT</pubDate>
-      <source url="https://www.securityweek.com/asus-zoom-release-security-patches/">SecurityWeek</source>
       <category>Vulnerability</category>
     </item>
   </channel>
