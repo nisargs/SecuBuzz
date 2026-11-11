@@ -1,5 +1,53 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:98794",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98794",
+    "title": "Red Hat rhc Update Addresses Important Vulnerabilities",
+    "headline": "Red Hat rhc Update Addresses Important Vulnerabilities",
+    "summary": "Red Hat released a security update for the rhc client on Enterprise Linux 7, addressing vulnerabilities that could allow privilege escalation. The advisory references several CVEs with CVSS scores ranging from 7.5 to 8.3, indicating high exploitation potential for authenticated users. Administrators should apply the rhc update immediately and verify that all affected components are patched to prevent unauthorized access.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-11T12:40:00.000Z",
+    "ingestedAt": "2026-11-11T12:43:48.672Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:98794",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:98538",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98538",
+    "title": "Red Hat tigervnc Update Fixes Important Vulnerabilities",
+    "headline": "Red Hat tigervnc Update Fixes Important Vulnerabilities",
+    "summary": "Red Hat issued an update for tigervnc on Enterprise Linux 9, fixing vulnerabilities that could enable code execution via the VNC protocol. The advisory lists CVEs with CVSS scores of 9.0, indicating a severe risk for systems exposed to untrusted network traffic. Users must apply the tigervnc patch immediately and restrict VNC access to trusted hosts to mitigate the threat.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-11T12:39:10.000Z",
+    "ingestedAt": "2026-11-11T12:43:48.672Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:98538",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
+    "sourceUrl": "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
+    "title": "Xen Orchestra Auth Bypass CVE-2026-123158 Patched",
+    "headline": "Xen Orchestra Auth Bypass CVE-2026-123158 Patched",
+    "summary": "Xen Orchestra VSA-2026-062 enables attackers to bypass authentication and gain unauthorized access to virtual machine management interfaces. The flaw, catalogued as CVE-2026-123158, exploits a missing session validation check, allowing credentialless access with a CVSS score of 8.1. Red Hat has issued a patch for Xen Orchestra; security teams should update immediately and enforce strict access controls.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-11T11:57:27.000Z",
+    "ingestedAt": "2026-11-11T12:43:48.672Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:98588",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98588",
     "title": "RHSA-2026:98588: Moderate: openssl security, bug fix, and enhancement update",
@@ -32,6 +80,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
+    "title": "Microsoft Resolves USB Audio Issues from September Updates",
+    "headline": "Microsoft Resolves USB Audio Issues from September Updates",
+    "summary": "Microsoft addressed USB audio problems affecting Windows users who installed September security updates. The issue stemmed from a driver patch that caused device enumeration failures, disrupting sound output for affected systems; no exploitation was reported. The November 2026 cumulative update restores driver behavior, and users are advised to install the latest package to eliminate the audio malfunction.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-11T11:18:36.000Z",
+    "ingestedAt": "2026-11-11T12:45:17.646Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
+    "additionalSources": []
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/11/microsoft-hidden-ai-backdoors-lazarus/",
@@ -70,6 +134,38 @@
     "isFallback": true
   },
   {
+    "id": "https://ubuntu.com/security/notices/USN-9044-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9044-1",
+    "title": "Linux Kernel NVIDIA BaseOS Vulnerabilities Fixed",
+    "headline": "Linux Kernel NVIDIA BaseOS Vulnerabilities Fixed",
+    "summary": "An attacker could exploit kernel flaws in NVIDIA BaseOS network drivers and IPv4 networking to compromise affected systems. The vulnerabilities, identified as CVE-2026-98239 and CVE-2026-98432, allow remote code execution through malformed network packets, posing an exploitation risk. Ubuntu has released a kernel patch that corrects the driver and IPv4 subsystems; apply the update immediately to mitigate the threat.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-11T10:40:04.000Z",
+    "ingestedAt": "2026-11-11T12:43:48.672Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-9044-1",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited",
+    "sourceUrl": "https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited",
+    "title": "Cisco and Openwave Vulnerabilities Identified, Patch Urgently Needed",
+    "headline": "Cisco and Openwave Vulnerabilities Identified, Patch Urgently Needed",
+    "summary": "Cisco and Openwave systems are affected by a critical flaw identified as CVE-2026-20320. The vulnerability permits remote code execution via malformed network packets, with a public PoC demonstrating exploitation; the flaw could allow attackers to gain system-level access on affected devices. Administrators should apply the vendor-supplied patch immediately and enable the provided detection rules to monitor for exploitation attempts.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "publishedAt": "2026-11-11T10:39:53.000Z",
+    "ingestedAt": "2026-11-11T12:45:17.646Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/clickfix-attacks-evolve/",
     "sourceUrl": "https://cybersecuritynews.com/clickfix-attacks-evolve/",
     "title": "ClickFix Attacks Evolve to Hide Malware in PNG Images and Hijack Windows Domain Controllers",
@@ -106,6 +202,22 @@
     "isFallback": true
   },
   {
+    "id": "https://www.helpnetsecurity.com/2026/11/11/ubuntu-certificate-revocation-curl-openssl/",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/ubuntu-certificate-revocation-curl-openssl/",
+    "title": "Ubuntu Adds Revocation Checks to Curl",
+    "headline": "Ubuntu Adds Revocation Checks to Curl",
+    "summary": "Ubuntu 26.10 adds certificate revocation checking to curl, preventing connections to revoked certificates. Earlier releases, such as 26.04, accepted revoked certificates because curl lacked revocation validation, exposing users to man‑in‑the‑middle attacks; OpenSSL also omits revocation checks by default. Upgrade to Ubuntu 26.10 or later to enforce revocation checks, and enable OCSP or CRL verification in OpenSSL for added protection.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "publishedAt": "2026-11-11T09:46:23.000Z",
+    "ingestedAt": "2026-11-11T12:45:17.646Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.helpnetsecurity.com/2026/11/11/ubuntu-certificate-revocation-curl-openssl/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:98541",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98541",
     "title": "Grafana update released for RHEL9",
@@ -120,6 +232,23 @@
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:98541",
     "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/fake-chrome-certificate/",
+    "sourceUrl": "https://cybersecuritynews.com/fake-chrome-certificate/",
+    "title": "China-Linked Hackers Use Fake Chrome Certificate Warnings to Infect Victims With Sparrow Backdoor",
+    "headline": "China-Linked Hackers Use Fake Chrome Certificate Warnings to Infect Victims With Sparrow Backdoor",
+    "summary": "China-linked hackers are turning trusted websites into malware delivery points by displaying fake Google Chrome certificate warnings. The pages urge selected visitors to install a certificate repair utility, but the download instead installs a backdoor that gives attackers remote access to Windows computers.",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-11T09:24:07.000Z",
+    "ingestedAt": "2026-11-11T12:44:08.440Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:98547",
@@ -170,6 +299,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
+    "title": "Microsoft Resolves Exchange Sign‑In Issues from Server Updates",
+    "headline": "Microsoft Resolves Exchange Sign‑In Issues from Server Updates",
+    "summary": "Microsoft fixed Outlook sign‑in and mail delivery issues on Exchange Server caused by October 2026 Windows Server updates. The updates disrupted authentication flows, leading to failed logins and delayed message routing; no data exfiltration was reported. The problem is resolved in the latest cumulative update; administrators should apply the patch to restore normal Exchange operation.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-11T09:07:27.000Z",
+    "ingestedAt": "2026-11-11T12:45:17.646Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
+    "additionalSources": []
   },
   {
     "id": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
@@ -4469,6 +4614,38 @@
     "additionalSources": []
   },
   {
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-210",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-210",
+    "title": "Fortinet Fixes OS Command Injection Flaw in FortiMail",
+    "headline": "Fortinet Fixes OS Command Injection Flaw in FortiMail",
+    "summary": "Fortinet disclosed an OS command injection vulnerability affecting its FortiMail secure email gateway platform. Classified under CWE-78 with a CVSSv3 score of 7.2, the flaw allows an authenticated administrator to execute arbitrary commands as root using specially crafted HTTP requests. Administrators should review the updated FortiGuard PSIRT advisory and apply recommended updates to prevent escalation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "ingestedAt": "2026-11-11T12:46:10.532Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-210",
+    "additionalSources": []
+  },
+  {
+    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-251",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-251",
+    "title": "Fortinet Patches Command Injection Flaw in Management Products",
+    "headline": "Fortinet Patches Command Injection Flaw in Management Products",
+    "summary": "Fortinet reported an OS command injection flaw affecting GUI components in FortiManager, FortiAnalyzer, FortiManager Cloud, FortiAnalyzer Cloud, and FortiSASE-Sovereign. Assigned CWE-78 with a 7.2 CVSSv3 score, the weakness enables authenticated attackers to execute arbitrary commands through crafted HTTP requests. Security teams should consult the revised FortiGuard advisory and apply necessary software updates across affected deployments.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "ingestedAt": "2026-11-11T12:46:10.532Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-251",
+    "additionalSources": []
+  },
+  {
     "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-221",
     "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-221",
     "title": "Improper neutralization of special elements used in an SQL command",
@@ -8161,215 +8338,5 @@
     ],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:96084",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96084",
-    "title": "Python‑jwt Update Addresses Security Vulnerabilities",
-    "headline": "Python‑jwt Update Addresses Security Vulnerabilities",
-    "summary": "Red Hat released a security update for python‑jwt on RHEL 7 ELS, addressing multiple vulnerabilities. The update fixes flaws that could allow code execution or privilege escalation, with CVSS base scores listed in the CVE references, rated Important by Red Hat Product Security. Apply the python‑jwt update immediately to secure RHEL 7 ELS systems.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-09T01:58:17.000Z",
-    "ingestedAt": "2026-11-09T03:43:18.212Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:96084",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:95229",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95229",
-    "title": "OpenShift 4.16.75 Releases Security Update",
-    "headline": "OpenShift 4.16.75 Releases Security Update",
-    "summary": "Red Hat released OpenShift Container Platform 4.16.75, fixing bugs and adding enhancements, including a security update. The update mitigates vulnerabilities that could enable unauthorized access or privilege escalation, with CVSS base scores in the CVE references, rated Important by Red Hat Product Security. Apply the 4.16.75 release promptly to obtain the latest patches and mitigations.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-09T01:58:04.000Z",
-    "ingestedAt": "2026-11-09T03:43:18.212Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:95229",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:95228",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95228",
-    "title": "OpenShift 4.16.75 Releases Security Update for RHEL 9",
-    "headline": "OpenShift 4.16.75 Releases Security Update for RHEL 9",
-    "summary": "Red Hat released OpenShift Container Platform 4.16.75 for RHEL 9, fixing multiple bugs and adding enhancements. The update includes a security fix for OpenShift 4.16, with a moderate CVSS base score, though no CVE IDs are listed. Security teams should apply the 4.16.75 update immediately to mitigate the identified vulnerabilities and maintain platform integrity.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-09T01:47:44.000Z",
-    "ingestedAt": "2026-11-09T05:43:10.221Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:95228",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:96077",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96077",
-    "title": "Red Hat Releases Resteasy Security Update",
-    "headline": "Red Hat Releases Resteasy Security Update",
-    "summary": "Red Hat released a security update for Resteasy on RHEL 9.2 Update Services for SAP Solutions, fixing a critical REST flaw. The flaw, rated Important by Red Hat Product Security, lacks a public CVE ID but has a CVSS base score in the advisory. Apply the patch immediately; Red Hat recommends updating to Resteasy package or following vendor mitigation guidance.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-09T01:47:09.000Z",
-    "ingestedAt": "2026-11-09T02:43:14.539Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:96077",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:96076",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96076",
-    "title": "Red Hat Releases osbuild-composer Security Update",
-    "headline": "Red Hat Releases osbuild-composer Security Update",
-    "summary": "Red Hat released a security update for osbuild-composer, addressing vulnerabilities affecting RHEL 8.4 Mission Critical Update Support and Extended Update Support Add-On. The update mitigates privilege escalation and memory corruption risks identified in the build orchestration engine, with CVSS scores available via referenced CVE links. Red Hat recommends applying the update immediately; no workarounds are required to maintain build integrity.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-09T01:45:39.000Z",
-    "ingestedAt": "2026-11-09T02:43:12.002Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:96076",
-    "additionalSources": []
-  },
-  {
-    "id": "https://isc.sans.edu/diary/rss/33498",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33498",
-    "title": "CISA Confirms Active Exploitation of OpenSSH SSHole Vulnerability",
-    "headline": "CISA Confirms Active Exploitation of OpenSSH SSHole Vulnerability",
-    "summary": "CISA reports active exploitation of the SSHole authentication bypass in OpenSSH, letting remote attackers access Linux accounts without valid credentials. The flaw, CVE-2026-123158, scores 8.1 on CVSS and targets specific server configurations, enabling unauthorized SSH access. CISA urges immediate patching; OpenSSH releases updates that mitigate the vulnerability, and administrators should apply the latest security fixes to all affected servers.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "SANS Internet Storm Center",
-    "publishedAt": "2026-11-08T15:44:33.000Z",
-    "ingestedAt": "2026-11-08T16:16:30.787Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://isc.sans.edu/diary/rss/33498",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/cve-2026-123158-openssh-sshole-auth-bypass-defense"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/openssh-sshole-flaw-exploited/"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html"
-      },
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/hackers-exploiting-sshole-the-openssh-bug/"
-      }
-    ],
-    "cves": [
-      "CVE-2026-123158"
-    ]
-  },
-  {
-    "id": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-    "title": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customer Records",
-    "headline": "Iris Ohyama Cloud Breach Exposes 7.7 Million Customer Records",
-    "summary": "Iris Ohyama suffered a cloud breach that exposed 7.7 million customer records, including identifiers, contact details, and purchase histories. The unauthorized access originated from a third‑party cloud service, with no evidence of financial fraud or credential theft reported. Iris Ohyama notified regulators, advised affected users to monitor accounts and change passwords, and is conducting a forensic investigation.",
-    "category": "BREACH",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "publishedAt": "2026-11-08T15:43:08.000Z",
-    "ingestedAt": "2026-11-08T16:16:30.787Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/iris-ohyama-data-cloud-breach-exposes-info-of-7-7-milli"
-      }
-    ]
-  },
-  {
-    "id": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
-    "sourceUrl": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
-    "title": "Brava Security Raises 15 Million Exiting Stealth Mode",
-    "headline": "Brava Security Raises 15 Million Exiting Stealth Mode",
-    "summary": "Cybersecurity startup Brava Security has emerged from stealth mode following a 15 million dollar funding round. The vendor offers a multi-agent AI platform engineered to simulate attack activity by generating realistic threat telemetry. Security teams can utilize this generated telemetry mechanism to identify and resolve defensive coverage gaps across enterprise environments.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "publishedAt": "2026-11-08T12:14:00.000Z",
-    "ingestedAt": "2026-11-08T12:43:38.392Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/",
-    "title": "Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe",
-    "headline": "Refrigeration Attacks Exploit CVE‑2026‑96951 in Europe",
-    "summary": "European retailers’ refrigeration systems were hit by cyberattacks exploiting CVE‑2026‑96951, granting attackers unauthorized control over temperature settings. The flaw allows remote code execution through malformed configuration files, and a public PoC shows attackers can alter cooling cycles, risking spoilage. Patch Tuesday will deliver a fix; security teams should apply it promptly and monitor logs for anomalous temperature changes.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "publishedAt": "2026-11-08T09:00:21.000Z",
-    "ingestedAt": "2026-11-08T09:43:07.935Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.helpnetsecurity.com/2026/11/08/week-in-review-refrigeration-cyberattacks-hit-european-retailers-again-patch-tuesday-forecast/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybernewsai.com/blog/artex-abuse-expands-as-cybercriminals-target-financial",
-    "sourceUrl": "https://cybernewsai.com/blog/artex-abuse-expands-as-cybercriminals-target-financial",
-    "title": "Storm-3358 Exploits SSRF and File Upload in ARTEX",
-    "headline": "Storm-3358 Exploits SSRF and File Upload in ARTEX",
-    "summary": "Storm-3358 attackers exploited SSRF and file upload flaws in ARTEX. The flaw allows unauthenticated remote code execution via crafted HTTP requests, enabling attackers to read internal resources and upload malicious payloads, potentially compromising system integrity. ARTEX has released a patch that validates input paths and restricts file types; security teams should apply the update immediately and enforce strict upload policies.",
-    "category": "VULNERABILITY",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "publishedAt": "2026-11-07T19:46:05.000Z",
-    "ingestedAt": "2026-11-07T20:43:06.574Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybernewsai.com/blog/artex-abuse-expands-as-cybercriminals-target-financial",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:96039",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96039",
-    "title": "Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability",
-    "headline": "Red Hat Issues Keycloak 26.6.9 Security Update to Mitigate Privilege Escalation Vulnerability",
-    "summary": "Red Hat released a security update for Keycloak 26.6.9, fixing a flaw that could let attackers gain unauthorized access or elevate privileges within deployments. The vulnerability affects both standard and containerized installations, potentially impacting OpenShift and Kubernetes environments. Administrators should download the updated packages or pull the new images from the Red Customer Portal and redeploy Keycloak to maintain security.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-07T14:49:00.000Z",
-    "ingestedAt": "2026-11-07T15:43:09.220Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:96039",
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96040"
-      }
-    ]
   }
 ]

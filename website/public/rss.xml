@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 11:30:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 12:49:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat rhc Update Addresses Important Vulnerabilities</title>
+      <link>https://secubuzz.com/news/red-hat-rhc-update-addresses-important-vulnerabili-dc8f8a9d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-rhc-update-addresses-important-vulnerabili-dc8f8a9d</guid>
+      <description><![CDATA[Red Hat released a security update for the rhc client on Enterprise Linux 7, addressing vulnerabilities that could allow privilege escalation. The advisory references several CVEs with CVSS scores ranging from 7.5 to 8.3, indicating high exploitation potential for authenticated users. Administrators should apply the rhc update immediately and verify that all affected components are patched to prevent unauthorized access.]]></description>
+      <pubDate>Wed, 11 Nov 2026 12:40:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98794">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat tigervnc Update Fixes Important Vulnerabilities</title>
+      <link>https://secubuzz.com/news/red-hat-tigervnc-update-fixes-important-vulnerabil-b8109f0a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-tigervnc-update-fixes-important-vulnerabil-b8109f0a</guid>
+      <description><![CDATA[Red Hat issued an update for tigervnc on Enterprise Linux 9, fixing vulnerabilities that could enable code execution via the VNC protocol. The advisory lists CVEs with CVSS scores of 9.0, indicating a severe risk for systems exposed to untrusted network traffic. Users must apply the tigervnc patch immediately and restrict VNC access to trusted hosts to mitigate the threat.]]></description>
+      <pubDate>Wed, 11 Nov 2026 12:39:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:98538">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Xen Orchestra Auth Bypass CVE-2026-123158 Patched</title>
+      <link>https://secubuzz.com/news/xen-orchestra-auth-bypass-cve-2026-123158-patched-0e92fe33</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/xen-orchestra-auth-bypass-cve-2026-123158-patched-0e92fe33</guid>
+      <description><![CDATA[Xen Orchestra VSA-2026-062 enables attackers to bypass authentication and gain unauthorized access to virtual machine management interfaces. The flaw, catalogued as CVE-2026-123158, exploits a missing session validation check, allowing credentialless access with a CVSS score of 8.1. Red Hat has issued a patch for Xen Orchestra; security teams should update immediately and enforce strict access controls.]]></description>
+      <pubDate>Wed, 11 Nov 2026 11:57:27 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>RHSA-2026:98588: Moderate: openssl security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-98588-moderate-openssl-security-bug-fix-00a2dfee</link>
@@ -23,6 +50,15 @@
       <description><![CDATA[An update for NetworkManager is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Wed, 11 Nov 2026 11:23:25 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98586">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Resolves USB Audio Issues from September Updates</title>
+      <link>https://secubuzz.com/news/microsoft-resolves-usb-audio-issues-from-september-f7c039c5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-resolves-usb-audio-issues-from-september-f7c039c5</guid>
+      <description><![CDATA[Microsoft addressed USB audio problems affecting Windows users who installed September security updates. The issue stemmed from a driver patch that caused device enumeration failures, disrupting sound output for affected systems; no exploitation was reported. The November 2026 cumulative update restores driver behavior, and users are advised to install the latest package to eliminate the audio malfunction.]]></description>
+      <pubDate>Wed, 11 Nov 2026 11:18:36 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -44,6 +80,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Linux Kernel NVIDIA BaseOS Vulnerabilities Fixed</title>
+      <link>https://secubuzz.com/news/linux-kernel-nvidia-baseos-vulnerabilities-fixed-eaf9f20c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-nvidia-baseos-vulnerabilities-fixed-eaf9f20c</guid>
+      <description><![CDATA[An attacker could exploit kernel flaws in NVIDIA BaseOS network drivers and IPv4 networking to compromise affected systems. The vulnerabilities, identified as CVE-2026-98239 and CVE-2026-98432, allow remote code execution through malformed network packets, posing an exploitation risk. Ubuntu has released a kernel patch that corrects the driver and IPv4 subsystems; apply the update immediately to mitigate the threat.]]></description>
+      <pubDate>Wed, 11 Nov 2026 10:40:04 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9044-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Cisco and Openwave Vulnerabilities Identified, Patch Urgently Needed</title>
+      <link>https://secubuzz.com/news/cisco-and-openwave-vulnerabilities-identified-patc-c72f7cab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisco-and-openwave-vulnerabilities-identified-patc-c72f7cab</guid>
+      <description><![CDATA[Cisco and Openwave systems are affected by a critical flaw identified as CVE-2026-20320. The vulnerability permits remote code execution via malformed network packets, with a public PoC demonstrating exploitation; the flaw could allow attackers to gain system-level access on affected devices. Administrators should apply the vendor-supplied patch immediately and enable the provided detection rules to monitor for exploitation attempts.]]></description>
+      <pubDate>Wed, 11 Nov 2026 10:39:53 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>ClickFix Attacks Evolve to Hide Malware in PNG Images and Hijack Windows Domain Controllers</title>
       <link>https://secubuzz.com/news/clickfix-attacks-evolve-to-hide-malware-in-png-ima-5a872db2</link>
       <guid isPermaLink="true">https://secubuzz.com/news/clickfix-attacks-evolve-to-hide-malware-in-png-ima-5a872db2</guid>
@@ -62,6 +116,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Ubuntu Adds Revocation Checks to Curl</title>
+      <link>https://secubuzz.com/news/ubuntu-adds-revocation-checks-to-curl-f1f7af73</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-adds-revocation-checks-to-curl-f1f7af73</guid>
+      <description><![CDATA[Ubuntu 26.10 adds certificate revocation checking to curl, preventing connections to revoked certificates. Earlier releases, such as 26.04, accepted revoked certificates because curl lacked revocation validation, exposing users to man‑in‑the‑middle attacks; OpenSSL also omits revocation checks by default. Upgrade to Ubuntu 26.10 or later to enforce revocation checks, and enable OCSP or CRL verification in OpenSSL for added protection.]]></description>
+      <pubDate>Wed, 11 Nov 2026 09:46:23 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/11/ubuntu-certificate-revocation-curl-openssl/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Grafana update released for RHEL9</title>
       <link>https://secubuzz.com/news/grafana-update-released-for-rhel9-d84570bf</link>
       <guid isPermaLink="true">https://secubuzz.com/news/grafana-update-released-for-rhel9-d84570bf</guid>
@@ -69,6 +132,15 @@
       <pubDate>Wed, 11 Nov 2026 09:31:58 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98541">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>China-Linked Hackers Use Fake Chrome Certificate Warnings to Infect Victims With Sparrow Backdoor</title>
+      <link>https://secubuzz.com/news/china-linked-hackers-use-fake-chrome-certificate-w-a3941e63</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/china-linked-hackers-use-fake-chrome-certificate-w-a3941e63</guid>
+      <description><![CDATA[China-linked hackers are turning trusted websites into malware delivery points by displaying fake Google Chrome certificate warnings. The pages urge selected visitors to install a certificate repair utility, but the download instead installs a backdoor that gives attackers remote access to Windows computers.]]></description>
+      <pubDate>Wed, 11 Nov 2026 09:24:07 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-chrome-certificate/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Xwayland update released for RHEL 9.4</title>
@@ -95,6 +167,15 @@
       <description><![CDATA[An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Wed, 11 Nov 2026 09:10:49 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98546">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Resolves Exchange Sign‑In Issues from Server Updates</title>
+      <link>https://secubuzz.com/news/microsoft-resolves-exchange-sign-in-issues-from-se-ee739ef0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-resolves-exchange-sign-in-issues-from-se-ee739ef0</guid>
+      <description><![CDATA[Microsoft fixed Outlook sign‑in and mail delivery issues on Exchange Server caused by October 2026 Windows Server updates. The updates disrupted authentication flows, leading to failed logins and delayed message routing; no data exfiltration was reported. The problem is resolved in the latest cumulative update; administrators should apply the patch to restore normal Exchange operation.]]></description>
+      <pubDate>Wed, 11 Nov 2026 09:07:27 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -374,87 +455,6 @@
       <description><![CDATA[Red Enterprise Linux 7 Extended Lifecycle Support users face a vulnerability in the acl package that could allow local privilege escalation via malformed ACL entries. Red Hat Product Security rates the issue as Important, with a CVSS base score available through CVE links in the advisory references.]]></description>
       <pubDate>Wed, 11 Nov 2026 03:10:26 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:98129">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98107: Important: python-tornado security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98107-important-python-tornado-security-6a82b776</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98107-important-python-tornado-security-6a82b776</guid>
-      <description><![CDATA[An update for python-tornado is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 02:58:26 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98107">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98109: Critical: python-pillow security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98109-critical-python-pillow-security-up-852ee003</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98109-critical-python-pillow-security-up-852ee003</guid>
-      <description><![CDATA[An update for python-pillow is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
-      <pubDate>Wed, 11 Nov 2026 02:35:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98109">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Microsoft Confirms Hackers Are Exploiting Outlook 0-Day to Steal Windows Authentication Hashes</title>
-      <link>https://secubuzz.com/news/microsoft-confirms-hackers-are-exploiting-outlook-0e1a2292</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-confirms-hackers-are-exploiting-outlook-0e1a2292</guid>
-      <description><![CDATA[Microsoft has confirmed that hackers are exploiting an Outlook zero-day that can expose Windows authentication information when a user opens a malicious file. Tracked as CVE-2026-124194, the spoofing vulnerability was patched on November 10, 2026. Microsoft marks it “Exploitation Detected” and says it was not publicly disclosed before the update.]]></description>
-      <pubDate>Wed, 11 Nov 2026 02:35:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/outlook-0-day-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98100: Important: kernel-rt security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98100-important-kernel-rt-security-updat-ba6c131b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98100-important-kernel-rt-security-updat-ba6c131b</guid>
-      <description><![CDATA[An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 02:33:52 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98100">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98114: Important: kernel security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98114-important-kernel-security-update-0a2558a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98114-important-kernel-security-update-0a2558a7</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:57:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98114">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98121: Important: openssl security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98121-important-openssl-security-update-f3438212</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98121-important-openssl-security-update-f3438212</guid>
-      <description><![CDATA[An update for openssl is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:57:04 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98121">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98111: Critical: python-pillow security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98111-critical-python-pillow-security-up-cd2b292b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98111-critical-python-pillow-security-up-cd2b292b</guid>
-      <description><![CDATA[An update for python-pillow is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Critical.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:55:51 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98111">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98118: Important: python-oauthlib security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98118-important-python-oauthlib-security-05791297</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98118-important-python-oauthlib-security-05791297</guid>
-      <description><![CDATA[An update for python-oauthlib is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:54:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98118">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:98097: Important: python3.12-urllib3 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-98097-important-python3-12-urllib3-secur-d3eebe11</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-98097-important-python3-12-urllib3-secur-d3eebe11</guid>
-      <description><![CDATA[An update for python3.12-urllib3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 01:45:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98097">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
   </channel>

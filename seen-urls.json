@@ -5001,5 +5001,16 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108409",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108417",
   "https://access.redhat.com/errata/RHSA-2026:98109",
-  "https://access.redhat.com/errata/RHSA-2026:98107"
+  "https://access.redhat.com/errata/RHSA-2026:98107",
+  "https://ubuntu.com/security/notices/USN-9044-1",
+  "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
+  "https://access.redhat.com/errata/RHSA-2026:98794",
+  "https://access.redhat.com/errata/RHSA-2026:98538",
+  "https://cybersecuritynews.com/fake-chrome-certificate/",
+  "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
+  "https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited",
+  "https://www.helpnetsecurity.com/2026/11/11/ubuntu-certificate-revocation-curl-openssl/",
+  "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-210",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-251"
 ]
