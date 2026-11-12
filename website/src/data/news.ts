@@ -182,6 +182,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99596-important-gdb-security-update-3fbde677",
+    "title": "RHSA-2026:99596: Important: gdb security update",
+    "summary": "An update for gdb is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99596",
+    "publishedAt": "2026-11-12T11:22:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99596-important-gdb-security-update",
+      "article-3fbde677",
+      "3fbde677",
+      "rhsa-2026-99596-important-gdb-security-update-37d670"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99594-important-gdb-security-update-6cea9c6b",
+    "title": "RHSA-2026:99594: Important: gdb security update",
+    "summary": "An update for gdb is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99594",
+    "publishedAt": "2026-11-12T11:13:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99594-important-gdb-security-update",
+      "article-6cea9c6b",
+      "6cea9c6b",
+      "rhsa-2026-99594-important-gdb-security-update-37d670"
+    ]
+  },
+  {
     "slug": "ai-scripts-enable-rapid-lateral-movement-in-retail-9f16049b",
     "title": "AI Scripts Enable Rapid Lateral Movement in Retail Breach",
     "summary": "An attacker used AI-generated scripts after hand-typed commands failed to breach a US retailer. The AI scripts facilitated lateral movement within minutes, indicating a rapid compromise of internal systems and exposing sensitive data. Security teams should investigate compromised accounts, isolate affected segments, review AI-based attack mitigations, and strengthen monitoring immediately.",
@@ -1030,6 +1066,43 @@ export const news: NewsBrief[] = [
       "9f880bf1",
       "baker-tilly-reports-third-party-data-exposure-inci-1f8243",
       "baker-tilly-reports-third-party-data-exposure-incident"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99146-important-net-8-0-security-bug-fix-cb21ce40",
+    "title": "RHSA-2026:99146: Important: .NET 8.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99146",
+    "publishedAt": "2026-11-12T02:21:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99146-important-net-8-0-security-bug-fix",
+      "article-cb21ce40",
+      "cb21ce40",
+      "rhsa-2026-99146-important-net-8-0-security-bug-fix-37d67f",
+      "rhsa-2026-99146-important-net-8-0-security-bug-fix-and-enhan"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99151-important-grafana-security-update-6dea7678",
+    "title": "RHSA-2026:99151: Important: grafana security update",
+    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99151",
+    "publishedAt": "2026-11-12T02:03:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99151-important-grafana-security-update",
+      "article-6dea7678",
+      "6dea7678",
+      "rhsa-2026-99151-important-grafana-security-update-37d67f"
     ]
   },
   {
@@ -9499,82 +9572,6 @@ export const news: NewsBrief[] = [
       "c3ca009b",
       "turla-s-cereal-toolset-targets-exchange-email-coll-803ca3",
       "turla-s-cereal-toolset-targets-exchange-email-collection"
-    ]
-  },
-  {
-    "slug": "n-able-disables-n-central-over-30-zero-day-flaws-74835697",
-    "title": "N-able Disables N-central Over 30 Zero-Day Flaws",
-    "summary": "N-able temporarily disabled N-central services while addressing over 30 zero-day vulnerabilities that enable remote code execution, credential theft, and unauthorized administrator account creation. The flaws arise from insufficient input validation in the web interface, permitting attackers to inject malicious code and elevate privileges. N-able has released a patch and urges customers to update immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/",
-    "publishedAt": "2026-11-10T09:56:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-disables-n-central-over-30-zero-day-flaws",
-      "article-74835697",
-      "74835697",
-      "n-able-disables-n-central-over-30-zero-day-flaws-95ce8b"
-    ]
-  },
-  {
-    "slug": "malicious-vs-code-extension-steals-github-tokens-8dacf453",
-    "title": "Malicious VS Code Extension Steals GitHub Tokens",
-    "summary": "A poisoned Nx Console extension for VS Code stayed on the marketplace for 18 minutes, letting attackers install it and steal GitHub tokens. The extension captured authentication tokens during installation, compromising developer accounts and enabling unauthorized repository access. Developers should uninstall the extension immediately, revoke exposed tokens, and install official updates; Microsoft must remove the listing and investigate.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-steal-github-tokens/",
-    "publishedAt": "2026-11-10T09:54:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-vs-code-extension-steals-github-tokens",
-      "article-8dacf453",
-      "8dacf453",
-      "malicious-vs-code-extension-steals-github-tokens-664437"
-    ]
-  },
-  {
-    "slug": "ibm-signalwire-vulnerabilities-exploited-cisa-urge-dfabc271",
-    "title": "IBM, SignalWire Vulnerabilities Exploited, CISA Urges Patch",
-    "summary": "CISA added CVE-2026-123218 and CVE-2026-116779 to the KEV list after attackers exploited vulnerabilities in IBM Aspera Faspex and SignalWire FreeSwitch. The flaws enable remote code execution and privilege escalation, allowing adversaries to compromise server infrastructure and exfiltrate data. Federal agencies are urged to apply the vendor patches within three days to mitigate the active exploitation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
-    "publishedAt": "2026-11-10T09:42:27.000Z",
-    "cves": [
-      "CVE-2026-123218",
-      "CVE-2026-116779"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ibm-signalwire-vulnerabilities-exploited-cisa-urge",
-      "article-dfabc271",
-      "dfabc271",
-      "ibm-signalwire-vulnerabilities-exploited-cisa-urge-59bc4d",
-      "ibm-signalwire-vulnerabilities-exploited-cisa-urges-patch"
-    ]
-  },
-  {
-    "slug": "hackers-use-fake-fofa-accounts-to-steal-ai-keys-2d9fba03",
-    "title": "Hackers Use Fake FOFA Accounts to Steal AI Keys",
-    "summary": "A threat actor created 1,438 fake FOFA accounts to scan the internet for leaked OpenAI and DeepSeek API keys. The system exploited misconfigured servers exposing API keys, enabling attackers to hijack AI services and potentially monetize or exfiltrate data. Organizations should rotate exposed keys, enforce strict key management, and monitor for unauthorized usage; FOFA must investigate account abuse.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-fofa-accounts/",
-    "publishedAt": "2026-11-10T09:39:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-use-fake-fofa-accounts-to-steal-ai-keys",
-      "article-2d9fba03",
-      "2d9fba03",
-      "hackers-use-fake-fofa-accounts-to-steal-ai-keys-8fe774"
     ]
   }
 ];
