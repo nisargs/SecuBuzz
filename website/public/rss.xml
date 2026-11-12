@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 22:46:29 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 23:45:50 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14</title>
+      <link>https://secubuzz.com/news/postgresql-security-update-fixes-52-vulnerabilitie-360a9c71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/postgresql-security-update-fixes-52-vulnerabilitie-360a9c71</guid>
+      <description><![CDATA[The PostgreSQL Global Development Group released PostgreSQL 18.7, 17.12, 16.16, 15.20 and 14.25 on November 12, fixing 52 security vulnerabilities and more than 140 other bugs. Most of those code execution bugs are memory errors or type confusion, where PostgreSQL handles a value as the wrong data type.]]></description>
+      <pubDate>Thu, 12 Nov 2026 23:05:33 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/postgresql-security-update-november-2026/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99741: Important: mysql:8.4 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99741-important-mysql-8-4-security-updat-feec161f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99741-important-mysql-8-4-security-updat-feec161f</guid>
+      <description><![CDATA[An update for the mysql:8.4 module is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 23:05:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99741">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99715: Important: krb5 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99715-important-krb5-security-bug-fix-an-502ec757</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99715-important-krb5-security-bug-fix-an-502ec757</guid>
+      <description><![CDATA[An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 22:53:27 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99715">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Hackers Exploit 4,800 GitHub Accounts for Cloud Credentials</title>
       <link>https://secubuzz.com/news/hackers-exploit-4-800-github-accounts-for-cloud-cr-25faffd4</link>
@@ -15,6 +42,33 @@
       <pubDate>Thu, 12 Nov 2026 22:25:30 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Arctic Wolf Discusses Agentic AI in Security Ops</title>
+      <link>https://secubuzz.com/news/arctic-wolf-discusses-agentic-ai-in-security-ops-bd8ef852</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-discusses-agentic-ai-in-security-ops-bd8ef852</guid>
+      <description><![CDATA[Arctic Wolf released a report on how agentic AI and human analysts collaborate to accelerate security operations, reduce investigation time, and improve threat response. The document details AI-driven automation integrated with expert analysis to streamline incident detection, triage, and remediation, citing performance metrics.]]></description>
+      <pubDate>Thu, 12 Nov 2026 22:13:26 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/on-demand-webinar-uk/inside-2026-agentic-security-operations-report/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Feds Seize $1.2B from Binance Theft, Takedown FaceStealer Tools</title>
+      <link>https://secubuzz.com/news/feds-seize-1-2b-from-binance-theft-takedown-facest-f9460563</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/feds-seize-1-2b-from-binance-theft-takedown-facest-f9460563</guid>
+      <description><![CDATA[The DOJ and FBI seized $1.2 billion tied to a North Korea‑linked cryptocurrency theft and dismantled FaceStealer malware tools. Investigations revealed the funds were proceeds from stolen digital assets, while the takedown removed the credential‑harvesting infrastructure. Cryptocurrency exchanges are urged to strengthen monitoring and compliance to deter future thefts and cooperate with ongoing investigations.]]></description>
+      <pubDate>Thu, 12 Nov 2026 21:42:00 GMT</pubDate>
+      <source url="https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Chrome Early Stable Update 158.0.8127.36/37 for Windows</title>
+      <link>https://secubuzz.com/news/chrome-early-stable-update-158-0-8127-36-37-for-wi-c4f4dddf</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-early-stable-update-158-0-8127-36-37-for-wi-c4f4dddf</guid>
+      <description><![CDATA[Google Chrome released an early stable update for Windows, version 158.0.8127.36/37, as part of its routine patch cycle. The update includes minor bug fixes and performance improvements, with a full changelog available in the release notes. Users are advised to install the update promptly to maintain compatibility and benefit from the latest stability enhancements.]]></description>
+      <pubDate>Thu, 12 Nov 2026 21:30:51 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_0520415684.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>Apache HTTP Server Vulnerabilities Enable Potential Code Execution</title>
@@ -96,6 +150,15 @@
       <pubDate>Thu, 12 Nov 2026 20:17:26 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99754">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft 365 Outage Hits Outlook, Teams, Copilot</title>
+      <link>https://secubuzz.com/news/microsoft-365-outage-hits-outlook-teams-copilot-b8aa62f3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-outage-hits-outlook-teams-copilot-b8aa62f3</guid>
+      <description><![CDATA[Microsoft is investigating a widespread outage that has disrupted Outlook, Microsoft Teams, and Copilot services for users worldwide. Preliminary diagnostics indicate a network routing issue within Microsoft’s global infrastructure, causing connectivity failures across multiple regions. Microsoft has deployed a temporary fix and is working to restore full functionality while monitoring for residual impact.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:15:16 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/">BleepingComputer</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Issues libXtst Security Update</title>
@@ -393,69 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 14:51:52 GMT</pubDate>
       <source url="https://socket.dev/blog/japan-cyberattack-surge">Socket.dev</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99593: Moderate: rpm security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99593-moderate-rpm-security-update-4803ff68</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99593-moderate-rpm-security-update-4803ff68</guid>
-      <description><![CDATA[An update for rpm is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 14:37:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99593">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apify Rotates Tokens After Internal Breach</title>
-      <link>https://secubuzz.com/news/apify-rotates-tokens-after-internal-breach-6f629cb0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apify-rotates-tokens-after-internal-breach-6f629cb0</guid>
-      <description><![CDATA[Apify detected unauthorized access to internal systems and responded by rotating critical API tokens and revoking third‑party OAuth connections. The incident prompted a 2FA reset for affected users to mitigate potential credential abuse and secure remaining access points. Security teams should review token rotation policies, enforce multi‑factor authentication, and monitor for anomalous credential usage.]]></description>
-      <pubDate>Thu, 12 Nov 2026 14:36:47 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Issues gd Update for RHEL7</title>
-      <link>https://secubuzz.com/news/red-hat-issues-gd-update-for-rhel7-e8daf164</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-gd-update-for-rhel7-e8daf164</guid>
-      <description><![CDATA[Red Hat released a security update for the gd component on RHEL 7 Extended Lifecycle Support, fixing a flaw that could enable code execution. The update is rated Important, with CVSS scores linked via CVE references, indicating a moderate‑to‑high severity vulnerability. Red Hat recommends applying the patch immediately; no workarounds are needed.]]></description>
-      <pubDate>Thu, 12 Nov 2026 14:27:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:98418">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates crun for RHEL 9.8 EUS</title>
-      <link>https://secubuzz.com/news/red-hat-updates-crun-for-rhel-9-8-eus-796cd2ac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-crun-for-rhel-9-8-eus-796cd2ac</guid>
-      <description><![CDATA[Red Hat released a security update for the crun container runtime on RHEL 9.8 EUS, addressing a vulnerability that could let attackers compromise container execution. The advisory notes an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are disclosed.]]></description>
-      <pubDate>Thu, 12 Nov 2026 14:25:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99117">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Study Reveals Critical Supply-Chain Vulnerability in 50 Platforms</title>
-      <link>https://secubuzz.com/news/study-reveals-critical-supply-chain-vulnerability-98a854e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/study-reveals-critical-supply-chain-vulnerability-98a854e0</guid>
-      <description><![CDATA[nDiligence released a four‑year study exposing a critical supply‑chain vulnerability affecting all 50 examined software and device types. The flaw arises from insecure application integration practices, enabling attackers to inject malicious code during deployment and compromising downstream systems. Organizations should audit supply‑chain processes, enforce strict code signing, and apply vendor patches to mitigate the identified risk.]]></description>
-      <pubDate>Thu, 12 Nov 2026 14:25:32 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISA Confirms Active Exploitation of Outlook User Interaction 0-Day Vulnerability</title>
-      <link>https://secubuzz.com/news/cisa-confirms-active-exploitation-of-outlook-user-fd83b243</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-confirms-active-exploitation-of-outlook-user-fd83b243</guid>
-      <description><![CDATA[The U.S. Cybersecurity and Infrastructure Security Agency has confirmed active exploitation of a Microsoft Outlook zero-day vulnerability CVE-2026-124194 that can expose user authentication data. According to Microsoft’s security advisory, an attacker can send a specially crafted message file and persuade a victim to open it in Outlook.]]></description>
-      <pubDate>Thu, 12 Nov 2026 14:11:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Red Hat Quay Vulnerability Enables Token Hijacking</title>
-      <link>https://secubuzz.com/news/red-hat-quay-vulnerability-enables-token-hijacking-58ffebef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-quay-vulnerability-enables-token-hijacking-58ffebef</guid>
-      <description><![CDATA[Red Hat Quay contains a critical flaw that allows unauthenticated attackers reaching a registry’s key server to hijack token signing. The vulnerability, identified as CVE-2026-123710, carries a CVSS score of 9.8, indicating a high‑impact remote code execution risk. Red Hat released a patch on November 11 2026; administrators should update Quay immediately and verify token signing integrity.]]></description>
-      <pubDate>Thu, 12 Nov 2026 13:57:37 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/red-hat-quay-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

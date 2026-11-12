@@ -11,6 +11,63 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "postgresql-security-update-fixes-52-vulnerabilitie-360a9c71",
+    "title": "PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14",
+    "summary": "The PostgreSQL Global Development Group released PostgreSQL 18.7, 17.12, 16.16, 15.20 and 14.25 on November 12, fixing 52 security vulnerabilities and more than 140 other bugs. Most of those code execution bugs are memory errors or type confusion, where PostgreSQL handles a value as the wrong data type.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/postgresql-security-update-november-2026/",
+    "publishedAt": "2026-11-12T23:05:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "postgresql-security-update-fixes-52-vulnerabilitie",
+      "article-360a9c71",
+      "360a9c71",
+      "postgresql-security-update-fixes-52-vulnerabilitie-3d48ad",
+      "postgresql-security-update-fixes-52-vulnerabilities-ends-sup"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99741-important-mysql-8-4-security-updat-feec161f",
+    "title": "RHSA-2026:99741: Important: mysql:8.4 security update",
+    "summary": "An update for the mysql:8.4 module is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99741",
+    "publishedAt": "2026-11-12T23:05:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99741-important-mysql-8-4-security-updat",
+      "article-feec161f",
+      "feec161f",
+      "rhsa-2026-99741-important-mysql-8-4-security-updat-37d669",
+      "rhsa-2026-99741-important-mysql-8-4-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99715-important-krb5-security-bug-fix-an-502ec757",
+    "title": "RHSA-2026:99715: Important: krb5 security, bug fix, and enhancement update",
+    "summary": "An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99715",
+    "publishedAt": "2026-11-12T22:53:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99715-important-krb5-security-bug-fix-an",
+      "article-502ec757",
+      "502ec757",
+      "rhsa-2026-99715-important-krb5-security-bug-fix-an-37d669",
+      "rhsa-2026-99715-important-krb5-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
     "slug": "hackers-exploit-4-800-github-accounts-for-cloud-cr-25faffd4",
     "title": "Hackers Exploit 4,800 GitHub Accounts for Cloud Credentials",
     "summary": "A wfx-loot campaign compromised 4,837 GitHub accounts, using them to scan 61,764 repositories, open pull requests, and deploy secrets‑stealing malware. The attackers leveraged credential reuse and automated scanning to exfiltrate cloud service keys, exposing multiple cloud environments to unauthorized access. GitHub has issued a security advisory, urging users to rotate compromised credentials, enable two‑factor authentication, and review repository access logs.",
@@ -27,6 +84,62 @@ export const news: NewsBrief[] = [
       "25faffd4",
       "hackers-exploit-4-800-github-accounts-for-cloud-cr-270eee",
       "hackers-exploit-4-800-github-accounts-for-cloud-credentials"
+    ]
+  },
+  {
+    "slug": "arctic-wolf-discusses-agentic-ai-in-security-ops-bd8ef852",
+    "title": "Arctic Wolf Discusses Agentic AI in Security Ops",
+    "summary": "Arctic Wolf released a report on how agentic AI and human analysts collaborate to accelerate security operations, reduce investigation time, and improve threat response. The document details AI-driven automation integrated with expert analysis to streamline incident detection, triage, and remediation, citing performance metrics.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/on-demand-webinar-uk/inside-2026-agentic-security-operations-report/",
+    "publishedAt": "2026-11-12T22:13:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arctic-wolf-discusses-agentic-ai-in-security-ops",
+      "article-bd8ef852",
+      "bd8ef852",
+      "arctic-wolf-discusses-agentic-ai-in-security-ops-2b8ebe"
+    ]
+  },
+  {
+    "slug": "feds-seize-1-2b-from-binance-theft-takedown-facest-f9460563",
+    "title": "Feds Seize $1.2B from Binance Theft, Takedown FaceStealer Tools",
+    "summary": "The DOJ and FBI seized $1.2 billion tied to a North Korea‑linked cryptocurrency theft and dismantled FaceStealer malware tools. Investigations revealed the funds were proceeds from stolen digital assets, while the takedown removed the credential‑harvesting infrastructure. Cryptocurrency exchanges are urged to strengthen monitoring and compliance to deter future thefts and cooperate with ongoing investigations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+    "publishedAt": "2026-11-12T21:42:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "feds-seize-1-2b-from-binance-theft-takedown-facest",
+      "article-f9460563",
+      "f9460563",
+      "feds-seize-1-2b-from-binance-theft-takedown-facest-51d148",
+      "feds-seize-1-2b-from-binance-theft-takedown-facestealer-tool"
+    ]
+  },
+  {
+    "slug": "chrome-early-stable-update-158-0-8127-36-37-for-wi-c4f4dddf",
+    "title": "Chrome Early Stable Update 158.0.8127.36/37 for Windows",
+    "summary": "Google Chrome released an early stable update for Windows, version 158.0.8127.36/37, as part of its routine patch cycle. The update includes minor bug fixes and performance improvements, with a full changelog available in the release notes. Users are advised to install the update promptly to maintain compatibility and benefit from the latest stability enhancements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_0520415684.html",
+    "publishedAt": "2026-11-12T21:30:51.410Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-early-stable-update-158-0-8127-36-37-for-wi",
+      "article-c4f4dddf",
+      "c4f4dddf",
+      "chrome-early-stable-update-158-0-8127-36-37-for-wi-8f8561",
+      "chrome-early-stable-update-158-0-8127-36-37-for-windows"
     ]
   },
   {
@@ -198,6 +311,24 @@ export const news: NewsBrief[] = [
       "article-c4881392",
       "c4881392",
       "red-hat-issues-libx11-security-update-37d669"
+    ]
+  },
+  {
+    "slug": "microsoft-365-outage-hits-outlook-teams-copilot-b8aa62f3",
+    "title": "Microsoft 365 Outage Hits Outlook, Teams, Copilot",
+    "summary": "Microsoft is investigating a widespread outage that has disrupted Outlook, Microsoft Teams, and Copilot services for users worldwide. Preliminary diagnostics indicate a network routing issue within Microsoft’s global infrastructure, causing connectivity failures across multiple regions. Microsoft has deployed a temporary fix and is working to restore full functionality while monitoring for residual impact.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
+    "publishedAt": "2026-11-12T20:15:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-outage-hits-outlook-teams-copilot",
+      "article-b8aa62f3",
+      "b8aa62f3",
+      "microsoft-365-outage-hits-outlook-teams-copilot-db0964"
     ]
   },
   {
@@ -997,6 +1128,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "qilin-ransomware-admin-identified-as-36-year-old-r-e5b20db7",
+    "title": "Qilin Ransomware Admin Identified as 36-Year-Old Russian Hacker After Cybercrime Probe",
+    "summary": "A cybercrime investigation has linked the administrator of Qilin ransomware to Aleksey Mikhailovich Yakovtsev, a 36-year-old man living in St. Published by KrebsOnSecurity on November 11, 2026, the findings connect the online identity “Haise” to older forum accounts, Telegram records, and leaked databases.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/qilin-ransomware-admin-identified/",
+    "publishedAt": "2026-11-12T13:42:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "qilin-ransomware-admin-identified-as-36-year-old-r",
+      "article-e5b20db7",
+      "e5b20db7",
+      "qilin-ransomware-admin-identified-as-36-year-old-r-445761",
+      "qilin-ransomware-admin-identified-as-36-year-old-russian-hac"
+    ]
+  },
+  {
     "slug": "chrome-157-firefox-160-patch-180-vulnerabilities-73c79817",
     "title": "Chrome 157, Firefox 160 Patch 180+ Vulnerabilities",
     "summary": "Google released Chrome 157, fixing 83 flaws, and Mozilla updated Firefox 160 to address 99 bugs, patching over 180 vulnerabilities. The patches cover memory corruption, privilege escalation, and input validation flaws, with no active exploitation reported. Users should install the latest browser versions promptly to mitigate potential exploitation in enterprise environments.",
@@ -1012,6 +1162,27 @@ export const news: NewsBrief[] = [
       "article-73c79817",
       "73c79817",
       "chrome-157-firefox-160-patch-180-vulnerabilities-568b12"
+    ]
+  },
+  {
+    "slug": "lenovo-warns-of-high-severity-server-flaw-that-res-740b14a3",
+    "title": "Lenovo Warns of High-Severity Server Flaw That Restores Default Root Credentials After Reset",
+    "summary": "Lenovo has disclosed a high-severity security flaw in ThinkSystem V4 server management firmware that restores a default OpenBMC root password after a factory reset. Tracked as CVE-2026-81936, the issue could let attackers access enabled administrative interfaces and reach the controller’s underlying operating system, which is normally restricted.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/lenovo-server-flaw/",
+    "publishedAt": "2026-11-12T13:37:44.000Z",
+    "cves": [
+      "CVE-2026-81936"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "lenovo-warns-of-high-severity-server-flaw-that-res",
+      "article-740b14a3",
+      "740b14a3",
+      "lenovo-warns-of-high-severity-server-flaw-that-res-1fa676",
+      "lenovo-warns-of-high-severity-server-flaw-that-restores-defa"
     ]
   },
   {
@@ -2764,6 +2935,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "greynoise-benchmarks-46-ai-models-for-defensive-se-38d76cb0",
+    "title": "GreyNoise Benchmarks 46 AI Models for Defensive Security",
+    "summary": "GreyNoise Labs evaluated 46 artificial intelligence models on defensive cybersecurity capabilities across real-world operational tasks. The benchmark assessed model performance across specific defensive domains including network detections, file-based detections, and attack forensic analysis. Security teams can utilize the index findings to evaluate AI model efficacy for defensive SOC automation and threat analysis workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "GreyNoise Labs",
+    "sourceUrl": "https://www.greynoise.io/blog/ai-cyber-index-benchmarking-defensive-capabilities",
+    "publishedAt": "2026-11-12T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "greynoise-benchmarks-46-ai-models-for-defensive-se",
+      "article-38d76cb0",
+      "38d76cb0",
+      "greynoise-benchmarks-46-ai-models-for-defensive-se-4c6dce",
+      "greynoise-benchmarks-46-ai-models-for-defensive-security"
+    ]
+  },
+  {
     "slug": "japan-allocates-emergency-cybersecurity-funding-am-8e5a6186",
     "title": "Japan Allocates Emergency Cybersecurity Funding Amid AI Cyber Threats",
     "summary": "Japan has announced an emergency funding package to strengthen national cybersecurity following an increase in AI-assisted breaches. The policy initiative funds public-private cyber responders, creates an economic ministry AI team, and expands government active cyber-defense powers. Defense leadership intends for these measures to bolster incident response capabilities and neutralize emerging threats against critical infrastructure.",
@@ -3147,6 +3337,25 @@ export const news: NewsBrief[] = [
       "article-71fbc78e",
       "71fbc78e",
       "rhsa-2026-99134-important-grafana-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "japan-allocates-emergency-cybersecurity-funding-fo-53025add",
+    "title": "Japan Allocates Emergency Cybersecurity Funding for Proactive Defense",
+    "summary": "Japan announced an emergency cybersecurity funding package to counter an increasing volume of AI-enabled cyberattacks against national infrastructure. The initiative establishes public-private cyber response units, an AI specialist team led by the Ministry of Economy, and expanded active defense authorities. Government authorities plan to leverage the enhanced operational discretion and specialized units to strengthen national proactive defense posture.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
+    "publishedAt": "2026-11-11T22:14:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-allocates-emergency-cybersecurity-funding-fo",
+      "article-53025add",
+      "53025add",
+      "japan-allocates-emergency-cybersecurity-funding-fo-3197c7",
+      "japan-allocates-emergency-cybersecurity-funding-for-proactiv"
     ]
   },
   {
@@ -9307,224 +9516,6 @@ export const news: NewsBrief[] = [
       "05454bae",
       "windows-gdi-vulnerability-exposes-data-via-out-of-1ff72f",
       "windows-gdi-vulnerability-exposes-data-via-out-of-bounds-rea"
-    ]
-  },
-  {
-    "slug": "local-information-disclosure-flaw-discovered-in-wi-af58654c",
-    "title": "Local Information Disclosure Flaw Discovered in Windows Overlay Filter",
-    "summary": "A local information disclosure vulnerability affects the Microsoft Windows Overlay Filter driver. Designated as CVE-2026-108409, the exposure of sensitive system information to an unauthorized control sphere enables local authenticated attackers to leak confidential data. Security administrators should apply Microsoft's security updates to prevent unauthorized local information exposure across enterprise systems.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108409",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-108409"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "local-information-disclosure-flaw-discovered-in-wi",
-      "article-af58654c",
-      "af58654c",
-      "local-information-disclosure-flaw-discovered-in-wi-1ff730",
-      "local-information-disclosure-flaw-discovered-in-windows-over"
-    ]
-  },
-  {
-    "slug": "network-information-disclosure-bug-impacts-windows-43391aec",
-    "title": "Network Information Disclosure Bug Impacts Windows Remote Desktop Client",
-    "summary": "A network-based information disclosure vulnerability impacts the Microsoft Windows Remote Desktop Client software. Identified as CVE-2026-108417, an out-of-bounds read flaw allows unauthorized remote attackers to expose sensitive system data across the network connection. Organizations must deploy the latest Microsoft software patches to protect Remote Desktop endpoints against unauthorized information leakage.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108417",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-108417"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "network-information-disclosure-bug-impacts-windows",
-      "article-43391aec",
-      "43391aec",
-      "network-information-disclosure-bug-impacts-windows-1ff730",
-      "network-information-disclosure-bug-impacts-windows-remote-de"
-    ]
-  },
-  {
-    "slug": "windows-ad-cs-bypass-exploits-certificate-validati-12d1c61c",
-    "title": "Windows AD CS Bypass Exploits Certificate Validation Flaw",
-    "summary": "CVE-2026-105590 lets an authorized attacker bypass a security feature in Windows Active Directory Certificate Services through improper certificate validation over a network. The flaw permits issuance or modification of certificates without proper validation, enabling man‑in‑the‑middle attacks or unauthorized domain access. Microsoft issued a patch for Windows 10, 11, and Server 2022; administrators should apply it and review certificate issuance policies.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105590",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-105590"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-ad-cs-bypass-exploits-certificate-validati",
-      "article-12d1c61c",
-      "12d1c61c",
-      "windows-ad-cs-bypass-exploits-certificate-validati-1ff888",
-      "windows-ad-cs-bypass-exploits-certificate-validation-flaw"
-    ]
-  },
-  {
-    "slug": "windows-dhcp-server-local-privilege-escalation-8ffa94ab",
-    "title": "Windows DHCP Server Local Privilege Escalation",
-    "summary": "Microsoft disclosed CVE‑2026‑105588, a missing authentication flaw in Windows DHCP Server that permits an authorized attacker to elevate privileges locally. The vulnerability arises from an unprotected critical function that bypasses authentication checks, enabling local privilege escalation without requiring additional credentials. Microsoft recommends applying the available patch via Windows Update or the Security Update Guide to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105588",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-dhcp-server-local-privilege-escalation",
-      "article-8ffa94ab",
-      "8ffa94ab",
-      "windows-dhcp-server-local-privilege-escalation-1ff888"
-    ]
-  },
-  {
-    "slug": "windows-wireless-networking-local-privilege-escala-53663862",
-    "title": "Windows Wireless Networking Local Privilege Escalation Vulnerability",
-    "summary": "Microsoft disclosed CVE‑2026‑105589, a use‑after‑free flaw in Windows Wireless Networking that permits an authorized attacker to elevate privileges locally. The flaw occurs when a freed memory object is accessed again, bypassing authentication checks and enabling local privilege escalation. Microsoft recommends applying the patch available through Windows Update or the Security Update Guide to prevent exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105589",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-wireless-networking-local-privilege-escala",
-      "article-53663862",
-      "53663862",
-      "windows-wireless-networking-local-privilege-escala-1ff888",
-      "windows-wireless-networking-local-privilege-escalation-vulne"
-    ]
-  },
-  {
-    "slug": "microsoft-windows-scsi-class-elevation-vulnerabili-31d55636",
-    "title": "Microsoft Windows SCSI Class Elevation Vulnerability",
-    "summary": "A null pointer dereference in Microsoft Windows SCSI Class System File permits an authorized attacker to elevate privileges locally. The flaw originates from improper null checking during SCSI command processing, enabling local privilege escalation without authentication. Microsoft has released a patch in the latest cumulative update; administrators should apply it immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105586",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-windows-scsi-class-elevation-vulnerabili",
-      "article-31d55636",
-      "31d55636",
-      "microsoft-windows-scsi-class-elevation-vulnerabili-1ff888",
-      "microsoft-windows-scsi-class-elevation-vulnerability"
-    ]
-  },
-  {
-    "slug": "microsoft-windows-ole-db-privilege-escalation-vuln-6a30ab5b",
-    "title": "Microsoft Windows OLE DB Privilege Escalation Vulnerability",
-    "summary": "A heap-based buffer overflow in Windows OLE DB allows an authorized attacker to elevate privileges locally. The overflow occurs when unvalidated OLE DB parameters are copied into a fixed-size buffer, enabling local privilege escalation. Microsoft has issued a patch in the latest cumulative update; users should install it promptly to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105587",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-windows-ole-db-privilege-escalation-vuln",
-      "article-6a30ab5b",
-      "6a30ab5b",
-      "microsoft-windows-ole-db-privilege-escalation-vuln-1ff888",
-      "microsoft-windows-ole-db-privilege-escalation-vulnerability"
-    ]
-  },
-  {
-    "slug": "windows-dwm-core-library-allows-local-privilege-es-60a2c159",
-    "title": "Windows DWM Core Library allows local privilege escalation",
-    "summary": "A flaw in Windows DWM Core Library permits an authorized attacker to elevate privileges locally via an invalid pointer or reference. The vulnerability is triggered by malformed input to the DWM component, potentially enabling privilege escalation without authentication. Microsoft has released a patch for Windows 10 and 11; affected systems should install the update immediately.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105583",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-dwm-core-library-allows-local-privilege-es",
-      "article-60a2c159",
-      "60a2c159",
-      "windows-dwm-core-library-allows-local-privilege-es-1ff888",
-      "windows-dwm-core-library-allows-local-privilege-escalation"
-    ]
-  },
-  {
-    "slug": "windows-inventory-backup-leaks-local-information-v-a4e42428",
-    "title": "Windows Inventory Backup leaks local information via format string",
-    "summary": "An externally-controlled format string in Windows Inventory Backup allows an authorized attacker to disclose local information. The flaw arises when user-supplied data is passed to a vulnerable logging function, exposing sensitive data without authentication. Microsoft has issued a patch for Windows 10 and 11; affected systems should apply the update promptly.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105584",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-inventory-backup-leaks-local-information-v",
-      "article-a4e42428",
-      "a4e42428",
-      "windows-inventory-backup-leaks-local-information-v-1ff888",
-      "windows-inventory-backup-leaks-local-information-via-format-"
-    ]
-  },
-  {
-    "slug": "microsoft-wdac-ole-db-provider-remote-code-executi-7616c0c9",
-    "title": "Microsoft WDAC OLE DB Provider Remote Code Execution Vulnerability",
-    "summary": "A heap-based buffer overflow in Microsoft WDAC OLE DB provider for SQL permits unauthorized remote code execution. The flaw, identified as CVE-2026-85839, allows attackers to trigger arbitrary code over the network, potentially compromising affected systems. Microsoft has released a patch; administrators should apply the update immediately to mitigate the vulnerability.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85839",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-85839"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-wdac-ole-db-provider-remote-code-executi",
-      "article-7616c0c9",
-      "7616c0c9",
-      "microsoft-wdac-ole-db-provider-remote-code-executi-743ff6",
-      "microsoft-wdac-ole-db-provider-remote-code-execution-vulnera"
-    ]
-  },
-  {
-    "slug": "windows-dwm-core-library-local-privilege-escalatio-b8a3a242",
-    "title": "Windows DWM Core Library Local Privilege Escalation Vulnerability",
-    "summary": "A flaw in Windows DWM Core Library permits an authorized attacker to elevate privileges locally. The vulnerability, identified as CVE-2026-105582, arises from an invalid pointer or reference, enabling privilege escalation. Microsoft has issued a patch; administrators should apply the update promptly to prevent local privilege escalation on affected systems and verify system integrity.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105582",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-105582"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-dwm-core-library-local-privilege-escalatio",
-      "article-b8a3a242",
-      "b8a3a242",
-      "windows-dwm-core-library-local-privilege-escalatio-1ff888",
-      "windows-dwm-core-library-local-privilege-escalation-vulnerab"
     ]
   }
 ];
