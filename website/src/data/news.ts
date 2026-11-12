@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-perl-cgi-security-update-f16d5a95",
+    "title": "Red Hat Releases Perl-CGI Security Update",
+    "summary": "Perl-CGI on Red Hat Enterprise Linux 8 is affected by a security flaw prompting an update. Red Hat Product Security rated the issue as Important, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators should install it promptly today to eliminate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99849",
+    "publishedAt": "2026-11-12T20:49:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-perl-cgi-security-update",
+      "article-f16d5a95",
+      "f16d5a95",
+      "red-hat-releases-perl-cgi-security-update-37d665"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-glib2-security-update-5fe320e5",
+    "title": "Red Hat Releases glib2 Security Update",
+    "summary": "glib2 on Red Hat Enterprise Linux 8.6 is impacted by a security flaw prompting an update. Red Hat Product Security rated the issue as Moderate, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators and promptly apply it today to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99864",
+    "publishedAt": "2026-11-12T20:40:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-glib2-security-update",
+      "article-5fe320e5",
+      "5fe320e5",
+      "red-hat-releases-glib2-security-update-37d665"
+    ]
+  },
+  {
     "slug": "red-hat-issues-libx11-security-update-c4881392",
     "title": "Red Hat Issues libX11 Security Update",
     "summary": "Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial‑of‑service or privilege escalation risks.",
@@ -44,6 +80,42 @@ export const news: NewsBrief[] = [
       "article-0390e8d5",
       "0390e8d5",
       "red-hat-issues-libxtst-security-update-37d669"
+    ]
+  },
+  {
+    "slug": "sudo-time-restriction-bypass-vulnerability-9995d4e0",
+    "title": "Sudo Time Restriction Bypass Vulnerability",
+    "summary": "Sudo on Ubuntu 18.04 LTS and 20.04 LTS contains a flaw that fails to enforce NOTBEFORE and NOTAFTER time restrictions when timestamps lack a timezone indicator. A local attacker could manipulate the TZ environment variable to execute commands outside the intended time window, escalating privileges. Ubuntu has released updates for both releases; administrators should apply them to prevent the bypass.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-8895-2",
+    "publishedAt": "2026-11-12T20:06:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sudo-time-restriction-bypass-vulnerability",
+      "article-9995d4e0",
+      "9995d4e0",
+      "sudo-time-restriction-bypass-vulnerability-7fc9ae"
+    ]
+  },
+  {
+    "slug": "n-able-zero-day-exploited-for-miner-deployment-89b33db4",
+    "title": "N‑Able Zero‑Day Exploited for Miner Deployment",
+    "summary": "Hackers are exploiting a newly disclosed N‑Able N‑Central zero‑day, dubbed '4EverAble2Shell', to compromise servers and deploy cryptocurrency miners. The flaw permits unauthenticated remote code execution, enabling attackers to gain root access even on systems that have applied the latest emergency hotfix. N‑Able has released a patch; administrators should immediately apply the update and monitor for unauthorized miner processes.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+    "publishedAt": "2026-11-12T19:51:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-zero-day-exploited-for-miner-deployment",
+      "article-89b33db4",
+      "89b33db4",
+      "n-able-zero-day-exploited-for-miner-deployment-548c4c"
     ]
   },
   {
@@ -81,6 +153,25 @@ export const news: NewsBrief[] = [
       "8508d258",
       "rhsa-2026-99758-important-osbuild-composer-securit-37d669",
       "rhsa-2026-99758-important-osbuild-composer-security-update"
+    ]
+  },
+  {
+    "slug": "apache-http-2-module-vulnerability-allows-remote-c-93d590e7",
+    "title": "Apache HTTP/2 Module Vulnerability Allows Remote Code Execution",
+    "summary": "Apache HTTP Server's HTTP/2 module contains a critical flaw that permits unauthenticated remote code execution. The vulnerability, which lacks a CVE identifier, could allow attackers to run arbitrary code on affected servers without credentials. Apache has released an update; administrators should apply the patch immediately and verify that HTTP/2 traffic is properly secured.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
+    "publishedAt": "2026-11-12T19:12:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apache-http-2-module-vulnerability-allows-remote-c",
+      "article-93d590e7",
+      "93d590e7",
+      "apache-http-2-module-vulnerability-allows-remote-c-221b21",
+      "apache-http-2-module-vulnerability-allows-remote-code-execut"
     ]
   },
   {
@@ -218,6 +309,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisco-broadworks-xml-external-entity-vulnerability-d5db2d32",
+    "title": "Cisco BroadWorks XML External Entity Vulnerability",
+    "summary": "Cisco BroadWorks' Open Client Interface XML parser is vulnerable to blind XML external entity injection, letting unauthenticated remote attackers read sensitive configuration files. The flaw stems from default external entity resolution, allowing crafted XML messages to the OCI-P service to expose filesystem data with BroadWorks user privileges. Cisco released patches; no workarounds exist, so administrators must apply updates immediately.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cisco PSIRT",
+    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+BroadWorks+Out-of-Band+Blind+XML+External+Entity+Injection+Vulnerability%26vs_k%3D1",
+    "publishedAt": "2026-11-12T17:25:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisco-broadworks-xml-external-entity-vulnerability",
+      "article-d5db2d32",
+      "d5db2d32",
+      "cisco-broadworks-xml-external-entity-vulnerability-235c18"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99660-important-xfsprogs-security-update-1d7bc380",
     "title": "RHSA-2026:99660: Important: xfsprogs security update",
     "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -251,6 +360,46 @@ export const news: NewsBrief[] = [
       "article-5f5a52ca",
       "5f5a52ca",
       "poisoned-ai-training-enables-remote-code-execution-30f228"
+    ]
+  },
+  {
+    "slug": "n-able-zero-day-targets-even-patched-servers-f923e85e",
+    "title": "N‑Able Zero‑Day Targets Even Patched Servers",
+    "summary": "New N‑Able N‑Central zero‑day exploits, named 4EverAble2Shell and Agent2Shell, target servers even after the latest emergency hotfix. The vulnerability enables unauthenticated attackers to gain root access, allowing deployment of cryptocurrency miners and other malicious payloads. Administrators should apply the latest patch, monitor for unauthorized processes, and verify that the HTTP/2 module is properly secured.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/n-able-n-central-zero-day-exploits/",
+    "publishedAt": "2026-11-12T16:53:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-zero-day-targets-even-patched-servers",
+      "article-f923e85e",
+      "f923e85e",
+      "n-able-zero-day-targets-even-patched-servers-99074e"
+    ]
+  },
+  {
+    "slug": "linux-kernel-vulnerabilities-affect-amd-and-arm-pr-590add84",
+    "title": "Linux Kernel Vulnerabilities Affect AMD and Arm Processors",
+    "summary": "Linux kernel flaws CVE-2023-20585 and CVE-2025-10263 let local attackers bypass memory protections on AMD and Arm CPUs, potentially compromising guest memory. The bugs enable out-of-bounds writes and privilege escalation, threatening SEV‑SNP guest memory and allowing unauthorized code execution. Kernel maintainers released patches; administrators should apply updates, verify hypervisor isolation, and monitor for anomalous memory activity.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9066-1",
+    "publishedAt": "2026-11-12T16:34:04.000Z",
+    "cves": [
+      "CVE-2023-20585",
+      "CVE-2025-10263"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-vulnerabilities-affect-amd-and-arm-pr",
+      "article-590add84",
+      "590add84",
+      "linux-kernel-vulnerabilities-affect-amd-and-arm-pr-7e86ea",
+      "linux-kernel-vulnerabilities-affect-amd-and-arm-processors"
     ]
   },
   {
@@ -742,6 +891,26 @@ export const news: NewsBrief[] = [
       "4a39446f",
       "google-cloud-warns-three-amd-turin-cpu-flaws-could-2556d8",
       "google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data"
+    ]
+  },
+  {
+    "slug": "siemens-industrial-edge-management-11a6dfe0",
+    "title": "Siemens Industrial Edge Management",
+    "summary": "The following versions of Siemens Industrial Edge Management are affected: Cloud Connector Configurator vers:intdot/ Common Configurator (CC on IEM) vers:all/* (CVE-2026-111497) Common Configurator on Device (CC on Edge) vers:all/* (CVE-2026-111497) Data Flow Monitoring vers:intdot/ Databus Configurator vers:intdot/ DataXess Configurator vers:intdot/ Edge OPC UA Server Configurator vers:intdot/ Flow Creator Configurator vers:intdot/ Industrial Edge Hub vers:all/* (CVE-2026-111497) Industrial Edge Management Cloud vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens Cloud Connector Configurator 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+    "publishedAt": "2026-11-12T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-industrial-edge-management",
+      "article-11a6dfe0",
+      "11a6dfe0",
+      "siemens-industrial-edge-management-41bab8"
     ]
   },
   {
@@ -9375,177 +9544,6 @@ export const news: NewsBrief[] = [
       "10305511",
       "heif-image-extensions-vulnerability-enables-local-1ffada",
       "heif-image-extensions-vulnerability-enables-local-rce"
-    ]
-  },
-  {
-    "slug": "windows-kernel-use-after-free-allows-local-privile-597d1e7b",
-    "title": "Windows Kernel Use-After-Free Allows Local Privilege Escalation",
-    "summary": "A use‑after‑free bug in the Windows Kernel allows an authorized attacker to elevate privileges locally on affected systems. The flaw, identified as CVE‑2026‑108403, arises from improper memory handling during kernel operations, enabling local privilege escalation without authentication. Microsoft has issued a patch in the latest cumulative update; administrators should apply it promptly to prevent privilege escalation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108403",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-kernel-use-after-free-allows-local-privile",
-      "article-597d1e7b",
-      "597d1e7b",
-      "windows-kernel-use-after-free-allows-local-privile-1ff730",
-      "windows-kernel-use-after-free-allows-local-privilege-escalat"
-    ]
-  },
-  {
-    "slug": "odbc-driver-heap-overflow-enables-remote-code-exec-38a3b1c9",
-    "title": "ODBC Driver Heap Overflow Enables Remote Code Execution",
-    "summary": "A heap‑based buffer overflow in the Microsoft ODBC Driver permits an unauthorized attacker to execute code over a network. CVE‑2026‑108411 exploits memory corruption triggered by malformed ODBC requests, enabling remote code execution without authentication. Microsoft released a patch in the latest cumulative update; apply it immediately or restrict ODBC traffic as a temporary workaround.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108411",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "odbc-driver-heap-overflow-enables-remote-code-exec",
-      "article-38a3b1c9",
-      "38a3b1c9",
-      "odbc-driver-heap-overflow-enables-remote-code-exec-1ff730",
-      "odbc-driver-heap-overflow-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "windows-dns-rce-via-deserialization-vulnerability-e4c11f4e",
-    "title": "Windows DNS RCE via Deserialization Vulnerability",
-    "summary": "Microsoft disclosed CVE-2026-109463, a deserialization flaw in Windows DNS enabling unauthenticated remote code execution over the network. Attackers can craft malicious DNS responses to trigger arbitrary code execution on affected systems. Microsoft released an emergency patch addressing this critical vulnerability, and administrators should deploy it promptly to prevent exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109463",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-109463"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-dns-rce-via-deserialization-vulnerability",
-      "article-e4c11f4e",
-      "e4c11f4e",
-      "windows-dns-rce-via-deserialization-vulnerability-1ff6bb"
-    ]
-  },
-  {
-    "slug": "binance-warns-of-ios-flaw-that-could-leak-crypto-w-752325ce",
-    "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
-    "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
-    "publishedAt": "2026-11-10T15:59:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-warns-of-ios-flaw-that-could-leak-crypto-w",
-      "article-752325ce",
-      "752325ce",
-      "binance-warns-of-ios-flaw-that-could-leak-crypto-w-3c2f2c",
-      "binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secr"
-    ]
-  },
-  {
-    "slug": "one-identity-releases-safeguard-9-0-privileged-acc-3b5508b9",
-    "title": "One Identity Releases Safeguard 9.0 Privileged Access Platform",
-    "summary": "One Identity launched Safeguard 9.0 to update its enterprise privileged access management architecture. The release targets privilege management operational challenges by streamlining infrastructure management and reducing administrative overhead within enterprise identity environments. Organizations deploying privileged access controls can implement version 9.0 to simplify administrative workflows and strengthen identity management infrastructure.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/one-identity-unveils-safeguard-9-0-for-simpler-pam/",
-    "publishedAt": "2026-11-10T15:59:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "one-identity-releases-safeguard-9-0-privileged-acc",
-      "article-3b5508b9",
-      "3b5508b9",
-      "one-identity-releases-safeguard-9-0-privileged-acc-6b48ea",
-      "one-identity-releases-safeguard-9-0-privileged-access-platfo"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97344-important-rhc-worker-playbook-secu-2f648fa6",
-    "title": "RHSA-2026:97344: Important: rhc-worker-playbook security, bug fix, and enhancement update",
-    "summary": "An update for rhc-worker-playbook is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97344",
-    "publishedAt": "2026-11-10T15:58:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97344-important-rhc-worker-playbook-secu",
-      "article-2f648fa6",
-      "2f648fa6",
-      "rhsa-2026-97344-important-rhc-worker-playbook-secu-37d760",
-      "rhsa-2026-97344-important-rhc-worker-playbook-security-bug-f"
-    ]
-  },
-  {
-    "slug": "blind-eagle-uses-fake-court-notices-to-deliver-rat-62d139ff",
-    "title": "Blind Eagle Uses Fake Court Notices to Deliver RAT Across Latin America",
-    "summary": "The threat actor Blind Eagle launched a campaign targeting Latin American organizations using judicial and administrative-themed phishing lures resembling court notifications and fiscalía notices. The campaign delivers a remote access trojan sharing lineage with AsyncRAT and DCRat through Portuguese and Spanish-language lures. Organizations should implement email filtering for domain-spoofed legal correspondence and require multi-factor authentication for remote access.",
-    "category": "Nation State",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
-    "publishedAt": "2026-11-10T15:58:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "blind-eagle-uses-fake-court-notices-to-deliver-rat",
-      "article-62d139ff",
-      "62d139ff",
-      "blind-eagle-uses-fake-court-notices-to-deliver-rat-713e62",
-      "blind-eagle-uses-fake-court-notices-to-deliver-rat-across-la"
-    ]
-  },
-  {
-    "slug": "one-identity-updates-active-roles-8-6-active-direc-b223cfaf",
-    "title": "One Identity Updates Active Roles 8.6 Active Directory Tool",
-    "summary": "One Identity released Active Roles version 8.6 to enhance authentication mechanisms and administration within Active Directory environments. The update delivers cumulative security enhancements, expanded API integration capabilities, and flexible authentication models for managing enterprise directory services. System administrators should deploy Active Roles 8.6 to improve directory management security and leverage updated API capabilities for identity administration.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/one-identity-active-roles-8-6-security-administration/",
-    "publishedAt": "2026-11-10T15:50:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "one-identity-updates-active-roles-8-6-active-direc",
-      "article-b223cfaf",
-      "b223cfaf",
-      "one-identity-updates-active-roles-8-6-active-direc-84e6ff",
-      "one-identity-updates-active-roles-8-6-active-directory-tool"
-    ]
-  },
-  {
-    "slug": "one-identity-releases-identity-manager-10-0-lts-2dce62bf",
-    "title": "One Identity Releases Identity Manager 10.0 LTS",
-    "summary": "One Identity has released Identity Manager 10.0 LTS, a major platform update introducing browser-based administration, AI-assisted insights, and streamlined automation for identity governance workflows. The update modernizes the user experience with a redesigned web interface and intelligent operational assistance. Organizations should evaluate migration readiness and validate compatibility with existing integration modules before deployment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/one-identity-unveils-identity-manager-10-0-lts-with-ai-and-modern-ux/",
-    "publishedAt": "2026-11-10T15:49:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "one-identity-releases-identity-manager-10-0-lts",
-      "article-2dce62bf",
-      "2dce62bf",
-      "one-identity-releases-identity-manager-10-0-lts-6d5792"
     ]
   }
 ];

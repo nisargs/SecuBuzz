@@ -5331,5 +5331,14 @@
   "https://access.redhat.com/errata/RHSA-2026:99745",
   "https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system",
   "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
-  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04"
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
+  "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+  "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
+  "https://cybersecuritynews.com/n-able-n-central-zero-day-exploits/",
+  "https://ubuntu.com/security/notices/USN-9066-1",
+  "https://access.redhat.com/errata/RHSA-2026:99849",
+  "https://access.redhat.com/errata/RHSA-2026:99864",
+  "https://ubuntu.com/security/notices/USN-8895-2",
+  "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+BroadWorks+Out-of-Band+Blind+XML+External+Entity+Injection+Vulnerability%26vs_k%3D1",
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
 ]
