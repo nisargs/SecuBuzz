@@ -5284,5 +5284,13 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114149",
   "https://access.redhat.com/errata/RHSA-2026:99124",
   "https://access.redhat.com/errata/RHSA-2026:99161",
-  "https://cybersecuritynews.com/gsocket-backdoors/"
+  "https://cybersecuritynews.com/gsocket-backdoors/",
+  "https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/",
+  "https://access.redhat.com/errata/RHSA-2026:99593",
+  "https://access.redhat.com/errata/RHSA-2026:98418",
+  "https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/",
+  "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-216",
+  "https://access.redhat.com/errata/RHSA-2026:99169",
+  "https://access.redhat.com/errata/RHSA-2026:99152"
 ]

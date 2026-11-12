@@ -11,6 +11,101 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-99593-moderate-rpm-security-update-4803ff68",
+    "title": "RHSA-2026:99593: Moderate: rpm security update",
+    "summary": "An update for rpm is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99593",
+    "publishedAt": "2026-11-12T14:37:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99593-moderate-rpm-security-update",
+      "article-4803ff68",
+      "4803ff68",
+      "rhsa-2026-99593-moderate-rpm-security-update-37d670"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-gd-update-for-rhel7-e8daf164",
+    "title": "Red Hat Issues gd Update for RHEL7",
+    "summary": "Red Hat released a security update for the gd component on RHEL 7 Extended Lifecycle Support, fixing a flaw that could enable code execution. The update is rated Important, with CVSS scores linked via CVE references, indicating a moderate‑to‑high severity vulnerability. Red Hat recommends applying the patch immediately; no workarounds are needed.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98418",
+    "publishedAt": "2026-11-12T14:27:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-gd-update-for-rhel7",
+      "article-e8daf164",
+      "e8daf164",
+      "red-hat-issues-gd-update-for-rhel7-37d6e9"
+    ]
+  },
+  {
+    "slug": "cisa-confirms-active-exploitation-of-outlook-user-fd83b243",
+    "title": "CISA Confirms Active Exploitation of Outlook User Interaction 0-Day Vulnerability",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency has confirmed active exploitation of a Microsoft Outlook zero-day vulnerability CVE-2026-124194 that can expose user authentication data. According to Microsoft’s security advisory, an attacker can send a specially crafted message file and persuade a victim to open it in Outlook.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/",
+    "publishedAt": "2026-11-12T14:11:54.000Z",
+    "cves": [
+      "CVE-2026-124194"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-confirms-active-exploitation-of-outlook-user",
+      "article-fd83b243",
+      "fd83b243",
+      "cisa-confirms-active-exploitation-of-outlook-user-936874",
+      "cisa-confirms-active-exploitation-of-outlook-user-interactio"
+    ]
+  },
+  {
+    "slug": "check-point-gateways-hit-by-php2shell-exploitation-91c904a4",
+    "title": "Check Point Gateways Hit by PHP2Shell Exploitation",
+    "summary": "Attackers exploited CVE-2026-109618 on Check Point Security Gateways’ Mobile Access portals, targeting Israeli organizations via IP 130.94.19.204 in late October 2026. The vulnerability allows remote code execution through PHP2Shell, enabling attackers to compromise gateway systems and potentially exfiltrate data. Check Point released a patch for CVE-2026-109618; administrators should apply it immediately and monitor for anomalous activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Check Point Research",
+    "sourceUrl": "https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/",
+    "publishedAt": "2026-11-12T13:56:37.000Z",
+    "cves": [
+      "CVE-2026-109618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-gateways-hit-by-php2shell-exploitation",
+      "article-91c904a4",
+      "91c904a4",
+      "check-point-gateways-hit-by-php2shell-exploitation-350a39"
+    ]
+  },
+  {
+    "slug": "chrome-157-firefox-160-patch-180-vulnerabilities-73c79817",
+    "title": "Chrome 157, Firefox 160 Patch 180+ Vulnerabilities",
+    "summary": "Google released Chrome 157, fixing 83 flaws, and Mozilla updated Firefox 160 to address 99 bugs, patching over 180 vulnerabilities. The patches cover memory corruption, privilege escalation, and input validation flaws, with no active exploitation reported. Users should install the latest browser versions promptly to mitigate potential exploitation in enterprise environments.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
+    "publishedAt": "2026-11-12T13:42:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-157-firefox-160-patch-180-vulnerabilities",
+      "article-73c79817",
+      "73c79817",
+      "chrome-157-firefox-160-patch-180-vulnerabilities-568b12"
+    ]
+  },
+  {
     "slug": "endgame-takedown-recovers-6-million-stolen-credent-3e3943d7",
     "title": "Endgame Takedown Recovers 6 Million Stolen Credentials",
     "summary": "Police and Europol dismantled servers behind Gootloader, CastleRAT, and StealC malware, uncovering more than 6 million stolen credentials used by ransomware gangs. The credentials were harvested from infected computers and sold to attackers, enabling unauthorized network access and facilitating ransomware operations. Law enforcement should continue to disrupt credential‑selling services and enforce stricter authentication controls to mitigate future ransomware infiltration.",
@@ -1213,6 +1308,44 @@ export const news: NewsBrief[] = [
       "9f880bf1",
       "baker-tilly-reports-third-party-data-exposure-inci-1f8243",
       "baker-tilly-reports-third-party-data-exposure-incident"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99152-important-grafana-pcp-security-upd-699f7d6c",
+    "title": "RHSA-2026:99152: Important: grafana-pcp security update",
+    "summary": "An update for grafana-pcp is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99152",
+    "publishedAt": "2026-11-12T02:36:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99152-important-grafana-pcp-security-upd",
+      "article-699f7d6c",
+      "699f7d6c",
+      "rhsa-2026-99152-important-grafana-pcp-security-upd-37d67f",
+      "rhsa-2026-99152-important-grafana-pcp-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99169-important-oci-seccomp-bpf-hook-sec-9a3f5d54",
+    "title": "RHSA-2026:99169: Important: oci-seccomp-bpf-hook security update",
+    "summary": "An update for oci-seccomp-bpf-hook is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99169",
+    "publishedAt": "2026-11-12T02:33:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99169-important-oci-seccomp-bpf-hook-sec",
+      "article-9a3f5d54",
+      "9a3f5d54",
+      "rhsa-2026-99169-important-oci-seccomp-bpf-hook-sec-37d67f",
+      "rhsa-2026-99169-important-oci-seccomp-bpf-hook-security-upda"
     ]
   },
   {
@@ -9410,151 +9543,6 @@ export const news: NewsBrief[] = [
       "418ce659",
       "anthropic-releases-mythos-5-2-with-enhanced-sandbo-63a588",
       "anthropic-releases-mythos-5-2-with-enhanced-sandbox-security"
-    ]
-  },
-  {
-    "slug": "ireland-warns-of-rising-cyberattack-threats-ahead-f95a4122",
-    "title": "Ireland Warns of Rising Cyberattack Threats Ahead of IRISSCON",
-    "summary": "Irish cybersecurity officials warn that the nation faces increasing cyberattack and hybrid threat sophistication, citing a lack of preparedness. The warning precedes IRISSCON 2026, the annual IRISSCERT conference at Dublin’s Aviva Stadium, where experts will discuss strengthening national security capabilities. Stakeholders are urged to implement enhanced cyber defenses and policy reforms before the conference to mitigate the escalating threat landscape.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/irisscon-2026-dublin/",
-    "publishedAt": "2026-11-10T12:16:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ireland-warns-of-rising-cyberattack-threats-ahead",
-      "article-f95a4122",
-      "f95a4122",
-      "ireland-warns-of-rising-cyberattack-threats-ahead-2dcd70",
-      "ireland-warns-of-rising-cyberattack-threats-ahead-of-irissco"
-    ]
-  },
-  {
-    "slug": "binance-alerts-to-ios-sandbox-escape-exposing-keys-a30ef69e",
-    "title": "Binance Alerts to iOS Sandbox Escape Exposing Keys",
-    "summary": "Binance warns that a sandbox escape lets iOS 26 and 27 apps read files from other apps, exposing seed phrases and private keys. The flaw, worse_query, exploits a privilege escalation bug in the iOS sandbox, enabling unauthorized file access.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
-    "publishedAt": "2026-11-10T12:15:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-alerts-to-ios-sandbox-escape-exposing-keys",
-      "article-a30ef69e",
-      "a30ef69e",
-      "binance-alerts-to-ios-sandbox-escape-exposing-keys-48a154"
-    ]
-  },
-  {
-    "slug": "sap-issues-patches-for-four-maximum-severity-flaws-41b60e3b",
-    "title": "SAP Issues Patches for Four Maximum-Severity Flaws",
-    "summary": "SAP released November 2026 security updates addressing 35 vulnerabilities, including four maximum‑severity flaws in NetWeaver, Web Dispatcher, and Gateway components. The flaws, classified as maximum severity, could allow remote code execution or privilege escalation if exploited, though no active exploitation reports exist. SAP has issued patches for all affected products; administrators should apply the updates promptly to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/",
-    "publishedAt": "2026-11-10T12:07:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sap-issues-patches-for-four-maximum-severity-flaws",
-      "article-41b60e3b",
-      "41b60e3b",
-      "sap-issues-patches-for-four-maximum-severity-flaws-4e9854"
-    ]
-  },
-  {
-    "slug": "openssh-musl-flaw-enables-password-authentication-11883b79",
-    "title": "OpenSSH Musl Flaw Enables Password‑Authentication Bypass",
-    "summary": "A flaw dubbed 'sshole' affects OpenSSH on musl‑based Linux, letting attackers authenticate with an oversized password over 256 bytes. The bug arises from a buffer oversight in password parsing, enabling unauthorized login without valid credentials and potentially full system access. Admins should upgrade to the patched OpenSSH release or apply the vendor‑issued workaround to reject oversized passwords.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/new-openssh-vulnerability.html",
-    "publishedAt": "2026-11-10T12:02:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openssh-musl-flaw-enables-password-authentication",
-      "article-11883b79",
-      "11883b79",
-      "openssh-musl-flaw-enables-password-authentication-67f2ec",
-      "openssh-musl-flaw-enables-password-authentication-bypass"
-    ]
-  },
-  {
-    "slug": "cisa-adds-six-exploited-vulnerabilities-to-kev-9ddecdf1",
-    "title": "CISA Adds Six Exploited Vulnerabilities to KEV",
-    "summary": "CISA added six known exploited vulnerabilities to its KEV catalog, including CVE-2026-20320, CVE-2026-111560, CVE-2026-111793, CVE-2026-116606, CVE-2026-124194, and CVE-2026-125350. The flaws cover XML external entity handling, OS command injection, resource transfer, authentication bypass, unsafe action, and use‑after‑free, all with active exploitation evidence. Vendors should apply patches or mitigations from the KEV catalog, and security teams should monitor for exploitation indicators.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-11-10T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-20320",
-      "CVE-2026-111560",
-      "CVE-2026-111793",
-      "CVE-2026-116606",
-      "CVE-2026-124194",
-      "CVE-2026-125350"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-six-exploited-vulnerabilities-to-kev",
-      "article-9ddecdf1",
-      "9ddecdf1",
-      "cisa-adds-six-exploited-vulnerabilities-to-kev-6af0be"
-    ]
-  },
-  {
-    "slug": "adobe-commerce-and-magento-file-upload-rce-flaw-cv-d6c9bec3",
-    "title": "Adobe Commerce and Magento File Upload RCE Flaw (CVE-2026-48356)",
-    "summary": "Adobe Commerce and Magento contain an unrestricted file upload vulnerability (CVE-2026-48356, CVSS 9.3, CWE-434) enabling arbitrary code execution and elevated account control. CISA added the flaw to its Known Exploited Vulnerabilities catalog on Oct. 27, 2026, with federal remediation due Nov. 10, 2026, under BOD 26-04. Apply patches in Adobe bulletin APSB26-73 immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CISA",
-    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "publishedAt": "2026-11-10T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-48356"
-    ],
-    "additionalSources": [
-      {
-        "source": "Adobe Security Bulletin (APSB26-73)",
-        "sourceUrl": "https://www.adobe.com/trust/security/products/commerce/apsb26-73.html"
-      }
-    ],
-    "aliases": [
-      "adobe-commerce-and-magento-file-upload-rce-flaw-cv",
-      "article-d6c9bec3",
-      "d6c9bec3",
-      "adobe-commerce-and-magento-file-upload-rce-flaw-cv-7a305a",
-      "adobe-commerce-and-magento-file-upload-rce-flaw-cve-2026-483",
-      "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog"
-    ]
-  },
-  {
-    "slug": "binance-alerts-iphone-users-to-ios-file-access-fla-4cd25477",
-    "title": "Binance Alerts iPhone Users to iOS File‑Access Flaw",
-    "summary": "Binance warned iPhone users about worse_query, an iOS flaw that permits malicious apps to read files belonging to other apps. Affected iOS versions 26.7.1, 27.0.1, and 27.2 could expose seed phrases, private keys, and login credentials, creating a high‑risk data leakage vector. Users should install the latest iOS updates or apply the vendor’s security patch to mitigate the file‑access vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ios-flaw-expose-crypto-wallet/",
-    "publishedAt": "2026-11-10T11:40:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "binance-alerts-iphone-users-to-ios-file-access-fla",
-      "article-4cd25477",
-      "4cd25477",
-      "binance-alerts-iphone-users-to-ios-file-access-fla-551001",
-      "binance-alerts-iphone-users-to-ios-file-access-flaw"
     ]
   }
 ];
