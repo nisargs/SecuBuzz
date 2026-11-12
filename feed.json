@@ -1,5 +1,39 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:99157",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99157",
+    "title": "RHSA-2026:99157: Important: nginx security update",
+    "headline": "RHSA-2026:99157: Important: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-12T03:32:25.000Z",
+    "ingestedAt": "2026-11-12T03:53:25.486Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:99158",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99158",
+    "title": "RHSA-2026:99158: Important: nginx:1.24 security update",
+    "headline": "RHSA-2026:99158: Important: nginx:1.24 security update",
+    "summary": "An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-12T03:32:25.000Z",
+    "ingestedAt": "2026-11-12T03:53:25.487Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt",
     "sourceUrl": "https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt",
     "title": "Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch",
@@ -715,6 +749,22 @@
     "isFallback": true
   },
   {
+    "id": "https://ubuntu.com/security/notices/USN-9055-1",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9055-1",
+    "title": "Ubuntu Patches Type Confusion Flaw in pecl_http Extension",
+    "headline": "Ubuntu Patches Type Confusion Flaw in pecl_http Extension",
+    "summary": "Ubuntu issued a security notice addressing a parameter handling vulnerability in the pecl_http PHP extension. The root cause involves a type confusion mechanism that allows remote attackers to cause PHP crashes or potentially execute arbitrary code. Administrators using affected Ubuntu systems should apply the USN-9055-1 security updates to mitigate denial of service and execution risks.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "publishedAt": "2026-11-11T18:32:38.000Z",
+    "ingestedAt": "2026-11-12T03:53:59.213Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://ubuntu.com/security/notices/USN-9055-1",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
     "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
     "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
@@ -780,6 +830,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
+    "title": "Researchers Disclose BluePhishing Technique Targeting Microsoft Entra AI Agents",
+    "headline": "Researchers Disclose BluePhishing Technique Targeting Microsoft Entra AI Agents",
+    "summary": "Security researchers demonstrated a novel social engineering attack vector, dubbed BluePhishing, targeting Microsoft Entra Agent ID identities within enterprise environments. The technique relies on tricking users into approving fraudulent AI agents, enabling account takeover across Microsoft 365 without stealing passwords or spoofing logins.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-11T17:17:04.000Z",
+    "ingestedAt": "2026-11-12T03:53:59.213Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
+    "additionalSources": []
+  },
+  {
     "id": "https://access.redhat.com/errata/RHSA-2026:99015",
     "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99015",
     "title": "Red Hat Releases Kernel Update for RHEL 8",
@@ -793,6 +859,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:99015",
+    "additionalSources": []
+  },
+  {
+    "id": "https://security.paloaltonetworks.com/CVE-2026-0328",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0328",
+    "title": "Palo Alto Networks Addresses PAN-OS User Impersonation Flaw",
+    "headline": "Palo Alto Networks Addresses PAN-OS User Impersonation Flaw",
+    "summary": "Palo Alto Networks published a security advisory detailing a user impersonation vulnerability in the PAN-OS GlobalProtect Portal component. Tracked as CVE-2026-0328, the low-severity issue allows unauthorized identity representation within the portal interface under specific operational conditions. Security teams running affected PAN-OS hardware should consult Palo Alto Networks advisory guidance and apply vendor-recommended software updates.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Palo Alto Networks PSIRT",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "ingestedAt": "2026-11-12T03:53:59.213Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://security.paloaltonetworks.com/CVE-2026-0328",
     "additionalSources": []
   },
   {
@@ -8278,96 +8360,5 @@
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-899/",
     "additionalSources": [],
     "cves": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-906/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-906/",
-    "title": "X.Org patches eight server vulnerabilities a month after fixing 12 others",
-    "headline": "X.Org patches eight server vulnerabilities a month after fixing 12 others",
-    "summary": "X.Org has fixed eight vulnerabilities in the X.Org X server and Xwayland, including one in the Xorg server that lets a malicious monitor corrupt its memory. The fixes ship in xorg-server 21.1.26 and xwayland 24.1.15, and each of the eight affects versions before those two releases. The X server provides the low-level display layer for graphical desktops on many Linux and Unix systems.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "ingestedAt": "2026-11-10T16:43:14.494Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-906/",
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/x-org-server-vulnerabilities-november-2026/"
-      }
-    ]
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-905/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-905/",
-    "title": "ZDI-26-905: X.Org Server libXrender RenderQueryPictFormats Reply Heap-based Buffer Overflow Remote Code Execution Vulnerability",
-    "headline": "ZDI-26-905: X.Org Server libXrender RenderQueryPictFormats Reply Heap-based Buffer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of X.Org Server. User interaction is required to exploit this vulnerability in that the target must connect to a malicious X11 server. The following CVEs are assigned: CVE-2026-88807.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "ingestedAt": "2026-11-10T16:43:31.558Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-88807"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-904/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-904/",
-    "title": "ZDI-26-904: NVIDIA Megatron-LM Checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "headline": "ZDI-26-904: NVIDIA Megatron-LM Checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of NVIDIA Megatron-LM. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The following CVEs are assigned: CVE-2026-65110.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "ingestedAt": "2026-11-10T16:43:31.559Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [
-      "CVE-2026-65110"
-    ],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-903/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-903/",
-    "title": "X.Org Server Heap Overflow Enables Local Privilege Escalation",
-    "headline": "X.Org Server Heap Overflow Enables Local Privilege Escalation",
-    "summary": "A heap-based buffer overflow in X.Org Server’s font alias resolution permits local privilege escalation on affected installations. The flaw, assigned CVE-2026-50256, has a CVSS score of 7.8 and requires low‑privileged code execution to trigger, allowing attackers to gain root access. A patch is available from the X.Org project; administrators should apply the update or disable font aliasing as a mitigation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "ingestedAt": "2026-11-10T16:44:20.018Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-903/",
-    "additionalSources": []
-  },
-  {
-    "id": "https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos_01835406967.html",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos_01835406967.html",
-    "title": "ChromeOS Beta Channel Updated to OS 16868.13.0",
-    "headline": "ChromeOS Beta Channel Updated to OS 16868.13.0",
-    "summary": "Google ChromeOS Beta channel received an OS update to version 16868.13.0 and browser 158.0.8127.24 for most devices. The update contains routine bug fixes and performance improvements, with no publicly disclosed security vulnerabilities. Users should apply the update via the OS update mechanism or switch channels as needed to maintain security posture.",
-    "category": "GENERAL",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "publishedAt": "2026-11-10T05:45:27.885Z",
-    "ingestedAt": "2026-11-10T07:44:08.767Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos_01835406967.html",
-    "additionalSources": []
   }
 ]

@@ -4511,5 +4511,10 @@
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-196",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-207",
-  "https://fortiguard.fortinet.com/psirt/FG-IR-26-218"
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-218",
+  "https://access.redhat.com/errata/RHSA-2026:99157",
+  "https://access.redhat.com/errata/RHSA-2026:99158",
+  "https://ubuntu.com/security/notices/USN-9055-1",
+  "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
+  "https://security.paloaltonetworks.com/CVE-2026-0328"
 ]

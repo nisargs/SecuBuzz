@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-99157-important-nginx-security-update-629a570c",
+    "title": "RHSA-2026:99157: Important: nginx security update",
+    "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99157",
+    "publishedAt": "2026-11-12T03:32:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99157-important-nginx-security-update",
+      "article-629a570c",
+      "629a570c",
+      "rhsa-2026-99157-important-nginx-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99158-important-nginx-1-24-security-upda-21fd5044",
+    "title": "RHSA-2026:99158: Important: nginx:1.24 security update",
+    "summary": "An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99158",
+    "publishedAt": "2026-11-12T03:32:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99158-important-nginx-1-24-security-upda",
+      "article-21fd5044",
+      "21fd5044",
+      "rhsa-2026-99158-important-nginx-1-24-security-upda-37d67f",
+      "rhsa-2026-99158-important-nginx-1-24-security-update"
+    ]
+  },
+  {
     "slug": "apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384",
     "title": "Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch",
     "summary": "A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof‑of‑concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor‑issued hotfix and enable recommended detection rules.",
@@ -834,6 +871,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "ubuntu-patches-type-confusion-flaw-in-pecl-http-ex-86863f57",
+    "title": "Ubuntu Patches Type Confusion Flaw in pecl_http Extension",
+    "summary": "Ubuntu issued a security notice addressing a parameter handling vulnerability in the pecl_http PHP extension. The root cause involves a type confusion mechanism that allows remote attackers to cause PHP crashes or potentially execute arbitrary code. Administrators using affected Ubuntu systems should apply the USN-9055-1 security updates to mitigate denial of service and execution risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9055-1",
+    "publishedAt": "2026-11-11T18:32:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-type-confusion-flaw-in-pecl-http-ex",
+      "article-86863f57",
+      "86863f57",
+      "ubuntu-patches-type-confusion-flaw-in-pecl-http-ex-7e8763",
+      "ubuntu-patches-type-confusion-flaw-in-pecl-http-extension"
+    ]
+  },
+  {
     "slug": "vanderbilt-restores-systems-after-alleged-data-the-71df4385",
     "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
     "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
@@ -907,6 +963,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "researchers-disclose-bluephishing-technique-target-cf5d518f",
+    "title": "Researchers Disclose BluePhishing Technique Targeting Microsoft Entra AI Agents",
+    "summary": "Security researchers demonstrated a novel social engineering attack vector, dubbed BluePhishing, targeting Microsoft Entra Agent ID identities within enterprise environments. The technique relies on tricking users into approving fraudulent AI agents, enabling account takeover across Microsoft 365 without stealing passwords or spoofing logins.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
+    "publishedAt": "2026-11-11T17:17:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "researchers-disclose-bluephishing-technique-target",
+      "article-cf5d518f",
+      "cf5d518f",
+      "researchers-disclose-bluephishing-technique-target-5c30f4",
+      "researchers-disclose-bluephishing-technique-targeting-micros"
+    ]
+  },
+  {
     "slug": "red-hat-releases-kernel-update-for-rhel-8-10dcb7dc",
     "title": "Red Hat Releases Kernel Update for RHEL 8",
     "summary": "Red Hat issued a kernel update for Red Enterprise Linux 8 addressing multiple moderate‑impact security issues. The update fixes several kernel bugs identified by CVE references, each with a CVSS base score indicating moderate severity; no active exploitation has been reported. Administrators should apply the RHSA‑2026:99015 package to mitigate the vulnerabilities and review the CVE links for detailed impact.",
@@ -922,6 +997,27 @@ export const news: NewsBrief[] = [
       "article-10dcb7dc",
       "10dcb7dc",
       "red-hat-releases-kernel-update-for-rhel-8-37d683"
+    ]
+  },
+  {
+    "slug": "palo-alto-networks-addresses-pan-os-user-impersona-b50b99d6",
+    "title": "Palo Alto Networks Addresses PAN-OS User Impersonation Flaw",
+    "summary": "Palo Alto Networks published a security advisory detailing a user impersonation vulnerability in the PAN-OS GlobalProtect Portal component. Tracked as CVE-2026-0328, the low-severity issue allows unauthorized identity representation within the portal interface under specific operational conditions. Security teams running affected PAN-OS hardware should consult Palo Alto Networks advisory guidance and apply vendor-recommended software updates.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0328",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [
+      "CVE-2026-0328"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-networks-addresses-pan-os-user-impersona",
+      "article-b50b99d6",
+      "b50b99d6",
+      "palo-alto-networks-addresses-pan-os-user-impersona-7ae305",
+      "palo-alto-networks-addresses-pan-os-user-impersonation-flaw"
     ]
   },
   {
@@ -9410,111 +9506,6 @@ export const news: NewsBrief[] = [
       "cecbaa83",
       "wireshark-lbmc-fragment-reassembly-rce-vulnerabili-6f3cb6",
       "wireshark-lbmc-fragment-reassembly-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "x-org-patches-eight-server-vulnerabilities-a-month-d475a869",
-    "title": "X.Org patches eight server vulnerabilities a month after fixing 12 others",
-    "summary": "X.Org has fixed eight vulnerabilities in the X.Org X server and Xwayland, including one in the Xorg server that lets a malicious monitor corrupt its memory. The fixes ship in xorg-server 21.1.26 and xwayland 24.1.15, and each of the eight affects versions before those two releases. The X server provides the low-level display layer for graphical desktops on many Linux and Unix systems.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-906/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Help Net Security",
-        "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/x-org-server-vulnerabilities-november-2026/"
-      }
-    ],
-    "aliases": [
-      "x-org-patches-eight-server-vulnerabilities-a-month",
-      "article-d475a869",
-      "d475a869",
-      "x-org-patches-eight-server-vulnerabilities-a-month-6f3d08",
-      "x-org-patches-eight-server-vulnerabilities-a-month-after-fix"
-    ]
-  },
-  {
-    "slug": "zdi-26-905-x-org-server-libxrender-renderquerypict-250501f6",
-    "title": "ZDI-26-905: X.Org Server libXrender RenderQueryPictFormats Reply Heap-based Buffer Overflow Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of X.Org Server. User interaction is required to exploit this vulnerability in that the target must connect to a malicious X11 server. The following CVEs are assigned: CVE-2026-88807.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-905/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-88807"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-905-x-org-server-libxrender-renderquerypict",
-      "article-250501f6",
-      "250501f6",
-      "zdi-26-905-x-org-server-libxrender-renderquerypict-6f3d08",
-      "zdi-26-905-x-org-server-libxrender-renderquerypictformats-re"
-    ]
-  },
-  {
-    "slug": "zdi-26-904-nvidia-megatron-lm-checkpoint-deseriali-2c091eb5",
-    "title": "ZDI-26-904: NVIDIA Megatron-LM Checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of NVIDIA Megatron-LM. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The following CVEs are assigned: CVE-2026-65110.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-904/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-65110"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-904-nvidia-megatron-lm-checkpoint-deseriali",
-      "article-2c091eb5",
-      "2c091eb5",
-      "zdi-26-904-nvidia-megatron-lm-checkpoint-deseriali-6f3d08",
-      "zdi-26-904-nvidia-megatron-lm-checkpoint-deserialization-of-"
-    ]
-  },
-  {
-    "slug": "x-org-server-heap-overflow-enables-local-privilege-6bab7086",
-    "title": "X.Org Server Heap Overflow Enables Local Privilege Escalation",
-    "summary": "A heap-based buffer overflow in X.Org Server’s font alias resolution permits local privilege escalation on affected installations. The flaw, assigned CVE-2026-50256, has a CVSS score of 7.8 and requires low‑privileged code execution to trigger, allowing attackers to gain root access. A patch is available from the X.Org project; administrators should apply the update or disable font aliasing as a mitigation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-903/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-50256"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "x-org-server-heap-overflow-enables-local-privilege",
-      "article-6bab7086",
-      "6bab7086",
-      "x-org-server-heap-overflow-enables-local-privilege-6f3d08",
-      "x-org-server-heap-overflow-enables-local-privilege-escalatio"
-    ]
-  },
-  {
-    "slug": "chromeos-beta-channel-updated-to-os-16868-13-0-bd6c78e3",
-    "title": "ChromeOS Beta Channel Updated to OS 16868.13.0",
-    "summary": "Google ChromeOS Beta channel received an OS update to version 16868.13.0 and browser 158.0.8127.24 for most devices. The update contains routine bug fixes and performance improvements, with no publicly disclosed security vulnerabilities. Users should apply the update via the OS update mechanism or switch channels as needed to maintain security posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/beta-channel-update-for-chromeos_01835406967.html",
-    "publishedAt": "2026-11-10T05:45:27.885Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromeos-beta-channel-updated-to-os-16868-13-0",
-      "article-bd6c78e3",
-      "bd6c78e3",
-      "chromeos-beta-channel-updated-to-os-16868-13-0-7ad17a"
     ]
   }
 ];
