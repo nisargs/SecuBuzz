@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 10:47:51 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 11:45:52 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:99603: Important: cockpit security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99603-important-cockpit-security-update-73dbfc57</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99603-important-cockpit-security-update-73dbfc57</guid>
+      <description><![CDATA[An update for cockpit is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 11:40:36 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99603">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99597: Important: gdb security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99597-important-gdb-security-update-d3892dd9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99597-important-gdb-security-update-d3892dd9</guid>
+      <description><![CDATA[An update for gdb is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 12 Nov 2026 11:38:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99597">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Issues OpenSSH Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-openssh-security-update-418db160</link>
@@ -404,6 +422,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:99170: Important: .NET 11.0 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99170-important-net-11-0-security-bug-fi-561a40cc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99170-important-net-11-0-security-bug-fi-561a40cc</guid>
+      <description><![CDATA[An update for .NET 11.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 01:21:06 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99170">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Chinese AI Project Gathers Taiwan Chip Industry Data</title>
       <link>https://secubuzz.com/news/chinese-ai-project-gathers-taiwan-chip-industry-da-9c2c0544</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chinese-ai-project-gathers-taiwan-chip-industry-da-9c2c0544</guid>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
       <source url="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/">GitLab Security Releases</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Releases .NET 9.0 Update with Security Fixes</title>
-      <link>https://secubuzz.com/news/red-hat-releases-net-9-0-update-with-security-fixe-1986e8d3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-net-9-0-update-with-security-fixe-1986e8d3</guid>
-      <description><![CDATA[Red Hat released a .NET 9.0 update for RHEL 10 to fix multiple security issues. The update addresses several vulnerabilities with CVSS scores marked Important, though no specific CVE IDs are cited; the flaws could enable exploitation of the .NET runtime. Red Hat advises installing the package from standard RHEL repositories immediately and verifying checksums to ensure integrity.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:51:26 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99145">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Update for RHEL 10</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-10-8660ca44</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-10-8660ca44</guid>
-      <description><![CDATA[Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security bugs. The update fixes several kernel vulnerabilities, each with a CVSS base score listed in the CVE references, and is rated as Important by Product Security. Administrators should apply the RHSA‑2026:99133 package immediately to mitigate the identified flaws and ensure system reboot.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:46:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99133">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Kernel Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-dcf5048d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-security-update-dcf5048d</guid>
-      <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 10, fixing multiple security issues that could enable privilege escalation or denial of service. The advisory labels the update Important and lists CVSS scores, but omits CVE IDs. Apply the patch promptly to close the flaws, as it includes bug fixes and enhancements that address the reported weaknesses.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:34:30 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99139">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

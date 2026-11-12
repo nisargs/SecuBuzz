@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-99603-important-cockpit-security-update-73dbfc57",
+    "title": "RHSA-2026:99603: Important: cockpit security update",
+    "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99603",
+    "publishedAt": "2026-11-12T11:40:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99603-important-cockpit-security-update",
+      "article-73dbfc57",
+      "73dbfc57",
+      "rhsa-2026-99603-important-cockpit-security-update-37d66d"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99597-important-gdb-security-update-d3892dd9",
+    "title": "RHSA-2026:99597: Important: gdb security update",
+    "summary": "An update for gdb is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99597",
+    "publishedAt": "2026-11-12T11:38:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99597-important-gdb-security-update",
+      "article-d3892dd9",
+      "d3892dd9",
+      "rhsa-2026-99597-important-gdb-security-update-37d670"
+    ]
+  },
+  {
     "slug": "red-hat-issues-openssh-security-update-418db160",
     "title": "Red Hat Issues OpenSSH Security Update",
     "summary": "Red Hat released an OpenSSH update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing multiple SSH vulnerabilities. Each flaw’s CVSS base score is listed in the references, indicating severity ranges but no confirmed exploitation. Apply the patch immediately to prevent potential remote code execution and maintain SSH service integrity.",
@@ -841,6 +877,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99170-important-net-11-0-security-bug-fi-561a40cc",
+    "title": "RHSA-2026:99170: Important: .NET 11.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 11.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99170",
+    "publishedAt": "2026-11-12T01:21:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99170-important-net-11-0-security-bug-fi",
+      "article-561a40cc",
+      "561a40cc",
+      "rhsa-2026-99170-important-net-11-0-security-bug-fi-37d67f",
+      "rhsa-2026-99170-important-net-11-0-security-bug-fix-and-enha"
+    ]
+  },
+  {
     "slug": "chinese-ai-project-gathers-taiwan-chip-industry-da-9c2c0544",
     "title": "Chinese AI Project Gathers Taiwan Chip Industry Data",
     "summary": "Chinese state-sponsored AI system collects data on Taiwan chip industry personnel. The system scrapes publicly available information and internal documents, building a database that could enable targeted exploitation of individuals abroad. Security teams should monitor for credential compromise, enforce strict access controls, and protect sensitive personnel data in the organization.",
@@ -913,6 +968,25 @@ export const news: NewsBrief[] = [
       "1986e8d3",
       "red-hat-releases-net-9-0-update-with-security-fixe-37d67f",
       "red-hat-releases-net-9-0-update-with-security-fixes"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99147-important-net-8-0-security-bug-fix-eb1059f4",
+    "title": "RHSA-2026:99147: Important: .NET 8.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 8.0 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99147",
+    "publishedAt": "2026-11-11T23:49:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99147-important-net-8-0-security-bug-fix",
+      "article-eb1059f4",
+      "eb1059f4",
+      "rhsa-2026-99147-important-net-8-0-security-bug-fix-37d67f",
+      "rhsa-2026-99147-important-net-8-0-security-bug-fix-and-enhan"
     ]
   },
   {
@@ -9506,79 +9580,6 @@ export const news: NewsBrief[] = [
       "article-a9f244fd",
       "a9f244fd",
       "apple-releases-ios-27-2-1-patch-for-nine-flaws-44b050"
-    ]
-  },
-  {
-    "slug": "sega-breach-exposes-2-19m-emails-via-arara-8674511c",
-    "title": "SEGA Breach Exposes 2.19M Emails via Arara",
-    "summary": "A SEGA data breach exposed 2,196,044 customer emails after attackers accessed Arara Message, a third‑party newsletter service. The breach leveraged unauthorized access to the provider’s account, leaking email lists tied to SEGA and SEGA Fave, with no other personal data reported. SEGA disclosed on November 9, 2026, and urged users to watch for phishing while the provider secures its systems.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/sega-confirms-data-breach/",
-    "publishedAt": "2026-11-10T08:34:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sega-breach-exposes-2-19m-emails-via-arara",
-      "article-8674511c",
-      "8674511c",
-      "sega-breach-exposes-2-19m-emails-via-arara-b9e124"
-    ]
-  },
-  {
-    "slug": "nine-leading-crq-tools-ranked-for-2026-673ee821",
-    "title": "Nine Leading CRQ Tools Ranked for 2026",
-    "summary": "The article ranks nine cyber risk quantification tools for 2026, evaluating how they convert security severity metrics into budget‑friendly dollar estimates. It separates FAIR‑methodology descendants, telemetry‑based engines using live estate data, and ratings‑lineage platforms monetizing scoring graphs, noting a duplicate BitSight entry. Security teams can use the list to choose tools matching risk‑budget translation needs and benchmark industry performance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-crq-tools/",
-    "publishedAt": "2026-11-10T08:31:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nine-leading-crq-tools-ranked-for-2026",
-      "article-673ee821",
-      "673ee821",
-      "nine-leading-crq-tools-ranked-for-2026-4bbbbd"
-    ]
-  },
-  {
-    "slug": "north-korean-hackers-launder-binance-theft-with-me-6d495b7f",
-    "title": "North Korean Hackers Launder Binance Theft with Meme Coins",
-    "summary": "North Korean hackers created meme coins to move cryptocurrency stolen from Binance's $6.4B hack, using fake trading activity to disguise proceeds. The scheme inserts DEX liquidity pools between wallets holding stolen assets and those collecting proceeds, masking trails. Binance and regulators should monitor pools for anomalies, enforce stricter KYC on meme coin exchanges, and use blockchain analytics to trace funds.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-meme-coins/",
-    "publishedAt": "2026-11-10T08:25:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-korean-hackers-launder-binance-theft-with-me",
-      "article-6d495b7f",
-      "6d495b7f",
-      "north-korean-hackers-launder-binance-theft-with-me-530867",
-      "north-korean-hackers-launder-binance-theft-with-meme-coins"
-    ]
-  },
-  {
-    "slug": "2026-digital-forensics-tools-ranking-de25091e",
-    "title": "2026 Digital Forensics Tools Ranking",
-    "summary": "A 2026 ranking evaluates digital forensics tools, judging them by the durability of findings under cross‑examination and their artifact depth. The list covers mobile‑extraction giants, disk‑and‑artifact workhorses, memory‑analysis frameworks, and open‑source pillars, weighing evidentiary rigor and economics. Security analysts can reference the ranking to select tools that provide robust evidence and cost‑effective performance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-digital-forensics-tools/",
-    "publishedAt": "2026-11-10T08:21:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "2026-digital-forensics-tools-ranking",
-      "article-de25091e",
-      "de25091e",
-      "2026-digital-forensics-tools-ranking-6a2703"
     ]
   }
 ];

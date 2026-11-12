@@ -5248,5 +5248,9 @@
   "https://security.paloaltonetworks.com/CVE-2026-0324",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114146",
   "https://access.redhat.com/errata/RHSA-2026:99132",
-  "https://access.redhat.com/errata/RHSA-2026:99209"
+  "https://access.redhat.com/errata/RHSA-2026:99209",
+  "https://access.redhat.com/errata/RHSA-2026:99603",
+  "https://access.redhat.com/errata/RHSA-2026:99597",
+  "https://access.redhat.com/errata/RHSA-2026:99147",
+  "https://access.redhat.com/errata/RHSA-2026:99170"
 ]
