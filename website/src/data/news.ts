@@ -11,6 +11,65 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e",
+    "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+    "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+    "publishedAt": "2026-11-12T05:12:26.000Z",
+    "cves": [
+      "CVE-2026-119618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-apache-http-2-flaw-could-let-unauthentica",
+      "article-aa1e061e",
+      "aa1e061e",
+      "critical-apache-http-2-flaw-could-let-unauthentica-267175",
+      "critical-apache-http-2-flaw-could-let-unauthenticated-attack"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99148-important-kernel-security-bug-fix-fdd9b60e",
+    "title": "RHSA-2026:99148: Important: kernel security, bug fix, and enhancement update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99148",
+    "publishedAt": "2026-11-12T03:54:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99148-important-kernel-security-bug-fix",
+      "article-fdd9b60e",
+      "fdd9b60e",
+      "rhsa-2026-99148-important-kernel-security-bug-fix-37d67f",
+      "rhsa-2026-99148-important-kernel-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99166-important-vim-security-bug-fix-and-deb62b73",
+    "title": "RHSA-2026:99166: Important: vim security, bug fix, and enhancement update",
+    "summary": "An update for vim is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99166",
+    "publishedAt": "2026-11-12T03:48:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99166-important-vim-security-bug-fix-and",
+      "article-deb62b73",
+      "deb62b73",
+      "rhsa-2026-99166-important-vim-security-bug-fix-and-37d67f",
+      "rhsa-2026-99166-important-vim-security-bug-fix-and-enhanceme"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99157-important-nginx-security-update-629a570c",
     "title": "RHSA-2026:99157: Important: nginx security update",
     "summary": "An update for nginx is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -8676,6 +8735,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fortinet-format-string-vulnerability-enables-authe-baec2f21",
+    "title": "Fortinet Format String Vulnerability Enables Authenticated RCE",
+    "summary": "Fortinet FortiManager, FortiAnalyzer, and cloud APIs contain a format string flaw that lets authenticated users inject malicious specifiers. The CVSS v3 score of 7.2 indicates high‑severity code execution, enabling attackers to run arbitrary commands via crafted HTTP requests. Fortinet released firmware updates for FortiManager, FortiAnalyzer, and their cloud services; administrators should apply them immediately to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-220",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-format-string-vulnerability-enables-authe",
+      "article-baec2f21",
+      "baec2f21",
+      "fortinet-format-string-vulnerability-enables-authe-3bcda6",
+      "fortinet-format-string-vulnerability-enables-authenticated-r"
+    ]
+  },
+  {
+    "slug": "fortinet-discloses-high-severity-sql-injection-fla-70d3c6f0",
+    "title": "Fortinet Discloses High Severity SQL Injection Flaw in FortiAuthenticator",
+    "summary": "Fortinet disclosed an SQL injection security vulnerability affecting the FortiAuthenticator identity platform. The flaw stems from improper neutralization of special elements in SQL commands, carrying a CVSSv3 score of 8.8 under CWE-89. This vulnerability allows an authenticated attacker to execute unauthorized commands directly on the underlying database.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-256",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-discloses-high-severity-sql-injection-fla",
+      "article-70d3c6f0",
+      "70d3c6f0",
+      "fortinet-discloses-high-severity-sql-injection-fla-3bcda5",
+      "fortinet-discloses-high-severity-sql-injection-flaw-in-forti"
+    ]
+  },
+  {
     "slug": "fortimail-os-command-injection-vulnerability-30338459",
     "title": "FortiMail OS Command Injection Vulnerability",
     "summary": "Fortinet’s FortiMail, FortiRecorder, and FortiVoice have an OS command injection flaw that lets authenticated attackers execute arbitrary commands via crafted HTTP requests. Rated CVSSv3 8.8, the flaw exploits improper neutralization of special elements in OS commands, enabling remote code execution. Fortinet released a patch; teams should upgrade firmware immediately and enforce strict input validation to mitigate risk.",
@@ -9399,104 +9496,6 @@ export const news: NewsBrief[] = [
       "article-1237b78c",
       "1237b78c",
       "fortios-ospf-daemon-allows-authentication-bypass-3bcda5"
-    ]
-  },
-  {
-    "slug": "fortianalyzer-spoofing-enables-authentication-bypa-8cb39c1e",
-    "title": "FortiAnalyzer Spoofing Enables Authentication Bypass",
-    "summary": "FortiAnalyzer, FortiManager, and FortiSASE‑Sovereign fortilogd contain a spoofing flaw that allows attackers to bypass authentication and disrupt high‑availability state. The CVSSv3 score is 8.2, reflecting a high‑severity vulnerability that can compromise HA coordination without user interaction. Fortinet has issued a patch; security teams should apply the update to all affected devices to prevent HA disruption.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-229",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortianalyzer-spoofing-enables-authentication-bypa",
-      "article-8cb39c1e",
-      "8cb39c1e",
-      "fortianalyzer-spoofing-enables-authentication-bypa-3bcda6",
-      "fortianalyzer-spoofing-enables-authentication-bypass"
-    ]
-  },
-  {
-    "slug": "fireworks-ai-breach-via-cloud-provider-hack-b320423b",
-    "title": "Fireworks AI Breach via Cloud Provider Hack",
-    "summary": "Fireworks AI disclosed a breach where attackers accessed its development machines after compromising a third‑party cloud provider. The intrusion leveraged the provider’s compromised credentials, granting unauthorized remote access to Fireworks’ internal infrastructure. Fireworks recommends monitoring for anomalous activity and tightening cloud access controls, but no patch is available in the near future.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
-    "publishedAt": "2026-11-10T07:49:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fireworks-ai-breach-via-cloud-provider-hack",
-      "article-b320423b",
-      "b320423b",
-      "fireworks-ai-breach-via-cloud-provider-hack-2e6c3f"
-    ]
-  },
-  {
-    "slug": "security-leaders-must-inform-ceos-about-leaked-cre-264c4464",
-    "title": "Security Leaders Must Inform CEOs About Leaked Credentials",
-    "summary": "The article discusses the importance of security leaders communicating leaked credential incidents to CEOs. It highlights how fear of blame can conceal credential exposure, emphasizes the need for metrics beyond alert counts, and addresses disclosure deadlines and AI tool risks. Security leaders should prepare clear explanations, recommend robust credential management, and establish disclosure protocols.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/eric-fourrier-gitguardian-leaked-credentials/",
-    "publishedAt": "2026-11-10T07:40:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "security-leaders-must-inform-ceos-about-leaked-cre",
-      "article-264c4464",
-      "264c4464",
-      "security-leaders-must-inform-ceos-about-leaked-cre-42e6af",
-      "security-leaders-must-inform-ceos-about-leaked-credentials"
-    ]
-  },
-  {
-    "slug": "google-patches-chrome-xml-use-after-free-vulnerabi-4f95a003",
-    "title": "Google Patches Chrome XML Use‑After‑Free Vulnerability (CVE‑2026‑125350)",
-    "summary": "Google released a patch for Chrome after discovering CVE‑2026‑125350, a use‑after‑free flaw in its XML parser that was actively exploited. The vulnerability allowed attackers to corrupt memory and potentially execute code via crafted XML documents, posing a remote code execution threat. Google’s latest Chrome update includes the fix; users are urged to install it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-    "publishedAt": "2026-11-10T06:52:54.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "BleepingComputer",
-        "sourceUrl": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/"
-      }
-    ],
-    "aliases": [
-      "google-patches-chrome-xml-use-after-free-vulnerabi",
-      "article-4f95a003",
-      "4f95a003",
-      "google-patches-chrome-xml-use-after-free-vulnerabi-37252a",
-      "google-patches-chrome-xml-use-after-free-vulnerability-cve-2"
-    ]
-  },
-  {
-    "slug": "cisa-adds-four-flaws-to-kev-catalog-15140f7a",
-    "title": "CISA Adds Four Flaws to KEV Catalog",
-    "summary": "CISA added four actively exploited vulnerabilities, including CVE‑2026‑123218, to its Known Exploited Vulnerabilities catalog. The flaws affect OpenSSH, GPUStack, SignalWire FreeSwitch, and IBM Aspera Faspex, with CVE‑2026‑123218 rated CVSS 9.8 for an incorrect authorization flaw. CISA recommends immediate patching or applying vendor mitigations; users should verify that their systems are not exposed to the active exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
-    "publishedAt": "2026-11-10T06:31:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-adds-four-flaws-to-kev-catalog",
-      "article-15140f7a",
-      "15140f7a",
-      "cisa-adds-four-flaws-to-kev-catalog-39df6a"
     ]
   }
 ];

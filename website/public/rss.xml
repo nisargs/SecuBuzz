@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 04:44:43 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 05:48:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely</title>
+      <link>https://secubuzz.com/news/critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e</guid>
+      <description><![CDATA[A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.]]></description>
+      <pubDate>Thu, 12 Nov 2026 05:12:26 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99148: Important: kernel security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99148-important-kernel-security-bug-fix-fdd9b60e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99148-important-kernel-security-bug-fix-fdd9b60e</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:54:28 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99148">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99166: Important: vim security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99166-important-vim-security-bug-fix-and-deb62b73</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99166-important-vim-security-bug-fix-and-deb62b73</guid>
+      <description><![CDATA[An update for vim is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:48:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99166">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>RHSA-2026:99157: Important: nginx security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-99157-important-nginx-security-update-629a570c</link>
@@ -428,33 +455,6 @@
       <description><![CDATA[The kramdown Ruby library processes the template option by default, creating a flaw in Ubuntu packages. This behavior allows attackers to read arbitrary files or execute code within the host environment, potentially compromising system integrity. Users should upgrade to the patched kramdown version or apply the Ubuntu security update to mitigate the risk.]]></description>
       <pubDate>Wed, 11 Nov 2026 18:33:31 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9060-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ruby-jwt HMAC Verification Flaw Enables Token Forgery</title>
-      <link>https://secubuzz.com/news/ruby-jwt-hmac-verification-flaw-enables-token-forg-7407c5b3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ruby-jwt-hmac-verification-flaw-enables-token-forg-7407c5b3</guid>
-      <description><![CDATA[The ruby-jwt library fails to verify HMAC signatures when the key is empty or missing, exposing Ubuntu installations. An attacker can forge authentication tokens, bypassing security controls and potentially gaining unauthorized access to protected services. Apply the updated ruby-jwt package or patch the library to enforce proper key validation in your environment.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:33:24 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9059-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ubuntu Fixes Arbitrary File Write Flaw in Action Pack</title>
-      <link>https://secubuzz.com/news/ubuntu-fixes-arbitrary-file-write-flaw-in-action-p-185e031f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-fixes-arbitrary-file-write-flaw-in-action-p-185e031f</guid>
-      <description><![CDATA[A vulnerability in Action Pack Page Caching improperly handles specific request paths during page caching operations. The technical flaw enables a remote attacker to write arbitrary files to the web server, creating potential remote code execution risks. Security teams should apply the updates specified in Ubuntu Security Notice USN-9058-1 to prevent unauthorized file creation.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:33:04 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9058-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9056-1: Prosody Community Modules vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9056-1-prosody-community-modules-vulnerability-9f9f99e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9056-1-prosody-community-modules-vulnerability-9f9f99e0</guid>
-      <description><![CDATA[It was discovered that the LDAP authentication modules in Prosody Community Modules did not fully verify XMPP addresses when checking for administrator privileges. A remote attacker could possibly use this issue to gain administrator privileges.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:32:46 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9056-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>

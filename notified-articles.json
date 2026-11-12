@@ -4524,5 +4524,10 @@
   "https://access.redhat.com/errata/RHSA-2026:99142",
   "https://access.redhat.com/errata/RHSA-2026:99208",
   "https://ubuntu.com/security/notices/USN-9054-1",
-  "https://cybersecuritynews.com/node-js-fixes-16-security-vulnerabilities/"
+  "https://cybersecuritynews.com/node-js-fixes-16-security-vulnerabilities/",
+  "https://access.redhat.com/errata/RHSA-2026:99148",
+  "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+  "https://access.redhat.com/errata/RHSA-2026:99166",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-220",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-256"
 ]
