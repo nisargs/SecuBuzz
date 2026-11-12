@@ -11,6 +11,86 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384",
+    "title": "Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch",
+    "summary": "A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof‑of‑concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor‑issued hotfix and enable recommended detection rules.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt",
+    "publishedAt": "2026-11-12T03:24:23.000Z",
+    "cves": [
+      "CVE-2026-119618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-rce-flaw-cve-2026-119618-requires-immediate",
+      "article-f7016384",
+      "f7016384",
+      "apache-rce-flaw-cve-2026-119618-requires-immediate-2b18a1",
+      "apache-rce-flaw-cve-2026-119618-requires-immediate-patch"
+    ]
+  },
+  {
+    "slug": "ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-f1f37723",
+    "title": "Ivanti RCE Flaw CVE-2026-121683 Demands Prompt Patch",
+    "summary": "Ivanti software contains a remote code execution vulnerability, CVE-2026-121683, that permits attackers to run arbitrary code on affected systems. The flaw originates from unchecked user input in the configuration parser, and publicly available proof‑of‑concept code confirms exploitation. Security teams should immediately apply the Ivanti patch or upgrade to the latest release and enable the vendor‑issued detection rules.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/citrix-ivanti-patch-critical-and-high-severity-vulnerab",
+    "publishedAt": "2026-11-12T03:19:15.000Z",
+    "cves": [
+      "CVE-2026-121683"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat",
+      "article-f1f37723",
+      "f1f37723",
+      "ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-7473b0",
+      "ivanti-rce-flaw-cve-2026-121683-demands-prompt-patch"
+    ]
+  },
+  {
+    "slug": "screenconnect-rce-flaw-threatens-managed-service-p-3acd5e7b",
+    "title": "ScreenConnect RCE Flaw Threatens Managed Service Providers",
+    "summary": "ScreenConnect, a support platform used by managed service providers, contains a remote code execution flaw that could allow attackers to execute arbitrary commands. The vulnerability arises from insufficient input validation in the session initiation module, and proof‑of‑concept exploits demonstrate its feasibility. Apply the vendor‑issued patch immediately, update to the latest ScreenConnect version, and enable the detection rules to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/active-screenconnect-attacks-breach-msps-impact-dozens",
+    "publishedAt": "2026-11-12T03:18:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "screenconnect-rce-flaw-threatens-managed-service-p",
+      "article-3acd5e7b",
+      "3acd5e7b",
+      "screenconnect-rce-flaw-threatens-managed-service-p-10ffc9",
+      "screenconnect-rce-flaw-threatens-managed-service-providers"
+    ]
+  },
+  {
+    "slug": "red-hat-kernel-update-addresses-moderate-security-1ddc94c3",
+    "title": "Red Hat Kernel Update Addresses Moderate Security Issues",
+    "summary": "Red Hat released a kernel update for Enterprise Linux 9 that addresses several moderate‑impact security issues. The update includes bug fixes and enhancements, with CVSS base scores linked to each CVE in the references. Security teams should apply the kernel update promptly and review the vendor documentation for any required configuration changes.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99135",
+    "publishedAt": "2026-11-12T03:05:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-kernel-update-addresses-moderate-security",
+      "article-1ddc94c3",
+      "1ddc94c3",
+      "red-hat-kernel-update-addresses-moderate-security-37d67f",
+      "red-hat-kernel-update-addresses-moderate-security-issues"
+    ]
+  },
+  {
     "slug": "red-hat-releases-perl-dbi-security-update-f9d01140",
     "title": "Red Hat Releases perl-DBI Security Update",
     "summary": "Red Hat has released an important security update for perl-DBI on RHEL 9.8 EUS, addressing multiple vulnerabilities. The update carries a CVSS base score of 7.5 for the most critical issue, and Red Hat rates the patch as Important. Administrators should apply the perl-DBI update immediately to mitigate the identified security weaknesses.",
@@ -736,6 +816,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9056-1-prosody-community-modules-vulnerability-9f9f99e0",
+    "title": "USN-9056-1: Prosody Community Modules vulnerability",
+    "summary": "It was discovered that the LDAP authentication modules in Prosody Community Modules did not fully verify XMPP addresses when checking for administrator privileges. A remote attacker could possibly use this issue to gain administrator privileges.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9056-1",
+    "publishedAt": "2026-11-11T18:32:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9056-1-prosody-community-modules-vulnerability",
+      "article-9f9f99e0",
+      "9f9f99e0",
+      "usn-9056-1-prosody-community-modules-vulnerability-7e875f"
+    ]
+  },
+  {
     "slug": "vanderbilt-restores-systems-after-alleged-data-the-71df4385",
     "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
     "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
@@ -827,6 +925,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0-be07f7be",
+    "title": "Prisma Cloud Checkov SSRF Vulnerability CVE-2026-0323",
+    "summary": "A Server‑Side Request Forgery flaw in Prisma Cloud’s Checkov component lets attackers force the system to request arbitrary URLs. CVE‑2026‑0323 is a low‑severity flaw with no active exploitation, yet it could enable data exfiltration or reconnaissance. Prisma Cloud released an update sanitizing external requests; apply the patch immediately to mitigate SSRF risk.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0323",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [
+      "CVE-2026-0323"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0",
+      "article-be07f7be",
+      "be07f7be",
+      "prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0-7ae305",
+      "prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0323"
+    ]
+  },
+  {
     "slug": "pan-os-sensitive-info-disclosure-cve-2026-0331-f96bf5fa",
     "title": "PAN-OS Sensitive Info Disclosure CVE-2026-0331",
     "summary": "A sensitive information disclosure flaw in Palo Alto Networks PAN‑OS lets attackers retrieve confidential configuration data via unauthenticated API calls. The vulnerability, CVE‑2026‑0331, exploits improper input validation in the management interface, yielding a medium‑severity exposure without credentials. Palo Alto released a patch in the latest PAN‑OS update; security teams should apply it or restrict API access.",
@@ -847,23 +966,22 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "chromium-update-addresses-cve-2026-113971-bb8a4c72",
-    "title": "Chromium Update Addresses CVE-2026-113971",
-    "summary": "Palo Alto Networks issued a Chromium update addressing a high‑severity flaw that could enable remote code execution via malicious web content. CVE‑2026‑113971 exploits a buffer overflow in the rendering engine, allowing attackers to run arbitrary code without user interaction. Apply the latest Chromium patch or disable the vulnerable feature to mitigate the risk until a vendor‑issued fix is released.",
-    "category": "CVE",
+    "slug": "chromium-monthly-update-addresses-pan-sa-2026-0014-7ba43557",
+    "title": "Chromium Monthly Update Addresses PAN-SA-2026-0014",
+    "summary": "Palo Alto Networks published advisory PAN-SA-2026-0014 incorporating 62 upstream Chromium security fixes into Prisma Browser. Rated High severity (CVSS-BT 7.7, base 9.4) with passive user interaction and no reported exploitation, the update resolves memory corruption, use-after-free, type confusion, and authorization flaws. Administrators should upgrade Prisma Browser to unaffected releases (157.19.4.39 or fixed branch builds) promptly.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Palo Alto Networks PSIRT",
     "sourceUrl": "https://security.paloaltonetworks.com/PAN-SA-2026-0014",
     "publishedAt": "2026-11-11T17:00:00.000Z",
-    "cves": [
-      "CVE-2026-113971"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "chromium-update-addresses-cve-2026-113971",
-      "article-bb8a4c72",
-      "bb8a4c72",
-      "chromium-update-addresses-cve-2026-113971-101918"
+      "chromium-monthly-update-addresses-pan-sa-2026-0014",
+      "article-7ba43557",
+      "7ba43557",
+      "chromium-monthly-update-addresses-pan-sa-2026-0014-101918",
+      "chromium-update-addresses-cve-2026-113971-bb8a4c72"
     ]
   },
   {
@@ -1015,6 +1133,47 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "microsoft-asp-net-core-info-disclosure-cve-2026-10-8f2b2422",
+    "title": "Microsoft ASP.NET Core Info Disclosure CVE-2026-109476",
+    "summary": "Microsoft disclosed an information‑disclosure flaw in ASP.NET Core that could expose sensitive data through improperly sanitized error messages. The vulnerability, identified as CVE‑2026‑109476, has a low severity rating and no known active exploitation. Microsoft issued an informational update; security teams should review the change log and apply any recommended patches.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-109476"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-asp-net-core-info-disclosure-cve-2026-10",
+      "article-8f2b2422",
+      "8f2b2422",
+      "microsoft-asp-net-core-info-disclosure-cve-2026-10-1ff6ba",
+      "microsoft-asp-net-core-info-disclosure-cve-2026-109476"
+    ]
+  },
+  {
+    "slug": "microsoft-asp-net-core-dos-cve-2026-109478-8102d35e",
+    "title": "Microsoft ASP.NET Core DoS CVE-2026-109478",
+    "summary": "Microsoft identified a denial‑of‑service vulnerability in ASP.NET Core that can be triggered by malformed requests, potentially exhausting server resources. The flaw, CVE‑2026‑109478, carries a low severity rating and has no known active exploitation. Microsoft released an informational update; administrators should monitor traffic and apply any available patches to mitigate DoS risk.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-109478"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-asp-net-core-dos-cve-2026-109478",
+      "article-8102d35e",
+      "8102d35e",
+      "microsoft-asp-net-core-dos-cve-2026-109478-1ff6ba"
     ]
   },
   {
@@ -1877,23 +2036,22 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "xen-orchestra-auth-bypass-cve-2026-123158-patched-0e92fe33",
-    "title": "Xen Orchestra Auth Bypass CVE-2026-123158 Patched",
-    "summary": "Xen Orchestra VSA-2026-062 enables attackers to bypass authentication and gain unauthorized access to virtual machine management interfaces. The flaw, catalogued as CVE-2026-123158, exploits a missing session validation check, allowing credentialless access with a CVSS score of 8.1. Red Hat has issued a patch for Xen Orchestra; security teams should update immediately and enforce strict access controls.",
-    "category": "CVE",
+    "slug": "xen-orchestra-auth-bypass-vsa-2026-062-patched-afced55d",
+    "title": "Xen Orchestra Auth Bypass VSA-2026-062 Patched",
+    "summary": "Xen Orchestra VSA-2026-062 enables attackers to bypass authentication and gain unauthorized access to virtual machine management interfaces. The flaw exploits a missing session validation check, allowing credentialless access with a CVSS score of 8.1. Red Hat has issued a patch for Xen Orchestra; security teams should update immediately and enforce strict access controls.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
     "publishedAt": "2026-11-11T11:57:27.000Z",
-    "cves": [
-      "CVE-2026-123158"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "xen-orchestra-auth-bypass-cve-2026-123158-patched",
-      "article-0e92fe33",
-      "0e92fe33",
-      "xen-orchestra-auth-bypass-cve-2026-123158-patched-5e576d"
+      "xen-orchestra-auth-bypass-vsa-2026-062-patched",
+      "article-afced55d",
+      "afced55d",
+      "xen-orchestra-auth-bypass-vsa-2026-062-patched-5e576d",
+      "xen-orchestra-auth-bypass-cve-2026-123158-patched-0e92fe33"
     ]
   },
   {
@@ -2019,7 +2177,7 @@ export const news: NewsBrief[] = [
     "slug": "multiple-windows-remote-desktop-flaws-allow-attack-59540717",
     "title": "Multiple Windows Remote Desktop Flaws Allow Attackers to Execute Code Over Network",
     "summary": "Microsoft has released security updates for four Windows Remote Desktop Client vulnerabilities that could allow attackers to run code through network connections or local access. Published on November 10, 2026, the flaws involve memory handling errors and a race condition.",
-    "category": "Vulnerability",
+    "category": "CVE",
     "severity": "MEDIUM",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/multiple-windows-remote-desktop-vulnerabilities/",
@@ -2521,14 +2679,15 @@ export const news: NewsBrief[] = [
   {
     "slug": "barracuda-vulnerabilities-exploited-for-root-acces-9695b19a",
     "title": "Barracuda Vulnerabilities Exploited for Root Access",
-    "summary": "Barracuda devices were hit by recently patched flaws, including CVE-2026-124194, that attackers exploited to bypass authorization and gain root access. The flaw permits unauthenticated users to trigger a buffer overflow in the management interface, enabling privileged command execution and full system compromise. Barracuda recommends applying the latest firmware patch immediately; no workaround exists, and administrators should limit management interface exposure.",
+    "summary": "Threat actors are exploiting two recently patched Barracuda flaws added to CISA KEV under BOD 26-04: CVE-2026-116606 (CVSS 9.3), an Email Security Gateway Admin UI authentication bypass, and CVE-2026-111560 (CVSS 8.6), a command injection flaw across ESG, ADC, WAF, WSG, BMA, and WCC. Chaining them grants root access; apply patches and restrict admin interfaces immediately.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "SecurityWeek",
     "sourceUrl": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
     "publishedAt": "2026-11-11T07:53:51.000Z",
     "cves": [
-      "CVE-2026-124194"
+      "CVE-2026-116606",
+      "CVE-2026-111560"
     ],
     "additionalSources": [],
     "aliases": [
@@ -2751,17 +2910,34 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "meta-detectron2-densepose-deserialization-enables-1bab7251",
+    "title": "Meta Detectron2 DensePose Deserialization Enables Remote Code Execution",
+    "summary": "A zero‑day deserialization flaw in Meta Detectron2’s DensePose lets remote attackers run code when a user opens a malicious file or visits a crafted page. Rated CVSS 7.8, the flaw requires user interaction and can lead to full system compromise. Meta has not yet released a patch; teams should block the library or isolate deployments until a fix arrives.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-911/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-detectron2-densepose-deserialization-enables",
+      "article-1bab7251",
+      "1bab7251",
+      "meta-detectron2-densepose-deserialization-enables-6f3d0b",
+      "meta-detectron2-densepose-deserialization-enables-remote-cod"
+    ]
+  },
+  {
     "slug": "meta-fairseq-filternamesdataset-remote-code-execut-a1726cbb",
     "title": "Meta fairseq FilterNamesDataset Remote Code Execution Vulnerability",
-    "summary": "A remote code execution flaw in Meta fairseq’s FilterNamesDataset lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-111760 carries a CVSS score of 7.8 and requires user interaction, but no active exploitation has been observed. Red Hat has issued a patch; administrators should apply it immediately to eliminate the risk.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-915/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-filternamesdataset-remote-code-execut",
@@ -2774,15 +2950,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-wav2vecmodel-yaml-remote-code-executi-b796f576",
     "title": "Meta fairseq Wav2VecModel YAML Remote Code Execution Vulnerability",
-    "summary": "A remote code execution vulnerability in Meta fairseq’s Wav2VecModel YAML parsing allows attackers to execute arbitrary code when a user opens a malicious file. CVE-2026-111760 has a CVSS score of 7.8 and requires user interaction, yet no active exploitation has been reported. Red Hat has released a patch; administrators should apply it promptly to mitigate the vulnerability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-914/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-wav2vecmodel-yaml-remote-code-executi",
@@ -2795,15 +2969,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-load-audio-path-remote-code-execution-e49900b8",
     "title": "Meta fairseq load_audio_path Remote Code Execution Vulnerability",
-    "summary": "Meta fairseq’s load_audio_path component contains a remote code execution flaw that lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-111760 scores 7.8 on CVSS and needs user interaction; no active exploitation has been observed. Red Hat has issued a patch; administrators should apply it immediately to close the vulnerability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-913/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-load-audio-path-remote-code-execution",
@@ -2816,15 +2988,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-912-0day-meta-detectron2-detection-checkpoi-11e5aa46",
     "title": "ZDI-26-912: (0Day) Meta Detectron2 detection_checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta Detectron2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta Detectron2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-912/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-912-0day-meta-detectron2-detection-checkpoi",
@@ -2837,8 +3007,8 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-vggtransformermodel-yaml-rce-requires-3d01e0e6",
     "title": "Meta fairseq VGGTransformerModel YAML RCE Requires User File Open",
-    "summary": "A zero‑day code‑injection flaw in Meta fairseq’s VGGTransformerModel YAML parser allows remote attackers to execute arbitrary code when a victim opens a crafted file. Identified as CVE‑2026‑111760, the flaw has a CVSS score of 7.8; no active exploitation has been reported. Meta fairseq has issued a patch; users should apply the update or avoid opening malicious YAML files.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-918/",
@@ -2856,8 +3026,8 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-load-speaker-yaml-rce-requires-user-i-47a5c8df",
     "title": "Meta fairseq load_speaker YAML RCE Requires User Interaction",
-    "summary": "A zero‑day code‑injection flaw in Meta fairseq’s load_speaker YAML parser lets remote attackers execute arbitrary code when a victim opens a crafted file. Identified as CVE‑2026‑111760, the flaw carries a CVSS score of 7.8; no active exploitation has been reported. Meta fairseq has issued a patch; users should apply the update or avoid opening malicious YAML files.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-917/",
@@ -2873,38 +3043,34 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "meta-fairseq-code-injection-vulnerability-cve-2026-d15972ca",
-    "title": "Meta fairseq Code Injection Vulnerability (CVE-2026-111760)",
-    "summary": "Meta fairseq split_by_lang code injection vulnerability (CVE-2026-111760) permits remote attackers to execute arbitrary code on affected installations. The flaw requires user interaction, such as visiting a malicious page or opening a malicious file, and has a CVSS score of 7.8. Meta has released a patch; administrators should update to the latest version to mitigate the risk.",
-    "category": "CVE",
+    "slug": "meta-fairseq-code-injection-vulnerability-e7f0058e",
+    "title": "Meta fairseq Code Injection Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-916/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "meta-fairseq-code-injection-vulnerability-cve-2026",
-      "article-d15972ca",
-      "d15972ca",
-      "meta-fairseq-code-injection-vulnerability-cve-2026-6f3d0c",
-      "meta-fairseq-code-injection-vulnerability-cve-2026-111760"
+      "meta-fairseq-code-injection-vulnerability",
+      "article-e7f0058e",
+      "e7f0058e",
+      "meta-fairseq-code-injection-vulnerability-6f3d0c",
+      "meta-fairseq-code-injection-vulnerability-cve-2026-d15972ca"
     ]
   },
   {
-    "slug": "meta-fairseq-yaml-code-injection-flaw-cve-2026-111-d1e8367c",
-    "title": "Meta fairseq YAML Code Injection Flaw (CVE-2026-111760) Enables Remote Code Execution",
-    "summary": "A high-severity YAML code-injection vulnerability, CVE-2026-111760, affects Meta's fairseq machine-learning library, disclosed by ZDI Advisories. The parser flaw lets remote attackers execute arbitrary code when a victim opens a crafted file, scoring CVSS 7.8 with no active exploitation reported. Meta issued a patch; users should update or avoid opening malicious YAML files.",
-    "category": "CVE",
+    "slug": "meta-fairseq-vulnerable-to-yaml-code-injection-9c7df172",
+    "title": "Meta fairseq Vulnerable to YAML Code Injection",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-923/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [
       {
         "source": "ZDI Advisories",
@@ -2912,25 +3078,23 @@ export const news: NewsBrief[] = [
       }
     ],
     "aliases": [
-      "meta-fairseq-yaml-code-injection-flaw-cve-2026-111",
-      "article-d1e8367c",
-      "d1e8367c",
-      "meta-fairseq-yaml-code-injection-flaw-cve-2026-111-6f3d0f",
-      "meta-fairseq-yaml-code-injection-flaw-cve-2026-111760-enable"
+      "meta-fairseq-vulnerable-to-yaml-code-injection",
+      "article-9c7df172",
+      "9c7df172",
+      "meta-fairseq-vulnerable-to-yaml-code-injection-6f3d0f",
+      "meta-fairseq-yaml-code-injection-flaw-cve-2026-111-d1e8367c"
     ]
   },
   {
-    "slug": "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1-0b041a28",
-    "title": "Meta Fairseq YAML Parsing Vulnerability (CVE-2026-111760) Enables Remote Code Execution",
-    "summary": "Meta Fairseq’s Wav2Vec2Model component contains a YAML parsing flaw (CVE‑2026‑111760) that permits remote code execution when a user opens a malicious file. The vulnerability, rated 7.8 CVSS, affects Meta’s audio models and requires user interaction. Users must apply the vendor‑issued patch or upgrade to a fixed version to mitigate the risk.",
+    "slug": "meta-fairseq-wav2vec2model-yaml-injection-vulnerab-56e873fe",
+    "title": "Meta fairseq Wav2Vec2Model YAML Injection Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-922/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [
       {
         "source": "ZDI Advisories",
@@ -2938,18 +3102,19 @@ export const news: NewsBrief[] = [
       }
     ],
     "aliases": [
-      "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1",
-      "article-0b041a28",
-      "0b041a28",
-      "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1-6f3d0f",
-      "meta-fairseq-yaml-parsing-vulnerability-cve-2026-111760-enab"
+      "meta-fairseq-wav2vec2model-yaml-injection-vulnerab",
+      "article-56e873fe",
+      "56e873fe",
+      "meta-fairseq-wav2vec2model-yaml-injection-vulnerab-6f3d0f",
+      "meta-fairseq-wav2vec2model-yaml-injection-vulnerability",
+      "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1-0b041a28"
     ]
   },
   {
     "slug": "meta-fairseq-transformerlanguagemodel-yaml-injecti-8c16505b",
     "title": "Meta fairseq TransformerLanguageModel YAML Injection",
-    "summary": "Meta fairseq’s TransformerLanguageModel component is vulnerable to a YAML file parsing code injection that can lead to code execution. The flaw, identified as CVE‑2026‑111760, requires user interaction to open a malicious file and carries a CVSS score of 7.8, indicating high exploitation risk. Affected users should apply the vendor‑issued patch or update to a fixed version to eliminate the vulnerability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-921/",
@@ -2967,15 +3132,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-yaml-parsing-rce-exploit-discovered-6dd88325",
     "title": "Meta fairseq YAML Parsing RCE Exploit Discovered",
-    "summary": "A zero‑day vulnerability in Meta fairseq’s W2lConvGluEncoder YAML parser allows remote attackers to execute arbitrary code when a user opens a crafted file. The flaw carries a CVSS score of 7.8, is identified as CVE-2026-111760, and requires user interaction to trigger. Meta has released a patch; security teams should update fairseq immediately to prevent exploitation.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-928/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-yaml-parsing-rce-exploit-discovered",
@@ -2987,15 +3150,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-fairseqadam-yaml-rce-vulnerability-fo-0a31e070",
     "title": "Meta fairseq FairseqAdam YAML RCE Vulnerability Found",
-    "summary": "A zero‑day flaw in Meta fairseq’s FairseqAdam YAML parser permits remote code execution when a user opens a malicious file. The vulnerability is rated CVSS 7.8, identified as CVE-2026-111760, and requires user interaction to exploit. Meta has issued a patch; administrators should apply it promptly to mitigate the critical risk.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-927/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-fairseqadam-yaml-rce-vulnerability-fo",
@@ -3008,15 +3169,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-ex-296dc77b",
     "title": "Meta fairseq FairseqLAMB YAML RCE Vulnerability Exposed",
-    "summary": "A zero‑day vulnerability in Meta fairseq’s FairseqLAMB YAML parser enables remote code execution when a user opens a crafted file. The flaw has a CVSS score of 7.8, is identified as CVE-2026-111760, and requires user interaction to trigger. Meta released a patch; security teams should update fairseq immediately to block exploitation.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-925/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-ex",
@@ -3029,15 +3188,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-924-0day-meta-fairseq-s2twavtransformerenco-455c3e72",
     "title": "ZDI-26-924: (0Day) Meta fairseq S2TWavTransformerEncoder YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-924/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-924-0day-meta-fairseq-s2twavtransformerenco",
@@ -3050,15 +3207,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zero-day-code-execution-flaw-discovered-in-meta-fa-8ba8d224",
     "title": "Zero-Day Code Execution Flaw Discovered in Meta Fairseq",
-    "summary": "Meta fairseq installations are vulnerable to a zero-day remote code execution flaw triggered through improper YAML file parsing. Tracked as CVE-2026-111760 with a CVSS score of 7.8, the code injection vulnerability requires a target to open a malicious file to execute code. Security teams should avoid opening untrusted files and apply vendor patches upon availability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-929/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zero-day-code-execution-flaw-discovered-in-meta-fa",
@@ -3071,15 +3226,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-062b3457",
     "title": "ZDI-26-926: (0Day) Meta fairseq RawAudioDataset YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-926/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml",
@@ -3090,59 +3243,54 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "meta-fairseq-yaml-parsing-rce-vulnerability-cve-20-af5f171d",
-    "title": "Meta fairseq YAML Parsing RCE Vulnerability CVE-2026-111760",
-    "summary": "Meta fairseq's MultiresHubertModel YAML parsing flaw, identified as CVE-2026-111760, permits remote code execution if a malicious file is opened. The vulnerability carries a CVSS score of 7.8, requires user interaction, and has no confirmed active exploitation in the wild. Security teams should avoid opening untrusted files, apply any vendor patches when available, and monitor for related advisories.",
-    "category": "CVE",
+    "slug": "meta-fairseq-multireshubertmodel-yaml-parsing-rce-aa351697",
+    "title": "Meta fairseq MultiresHubertModel YAML Parsing RCE Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-933/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "meta-fairseq-yaml-parsing-rce-vulnerability-cve-20",
-      "article-af5f171d",
-      "af5f171d",
-      "meta-fairseq-yaml-parsing-rce-vulnerability-cve-20-6f3d13",
-      "meta-fairseq-yaml-parsing-rce-vulnerability-cve-2026-111760"
+      "meta-fairseq-multireshubertmodel-yaml-parsing-rce",
+      "article-aa351697",
+      "aa351697",
+      "meta-fairseq-multireshubertmodel-yaml-parsing-rce-6f3d13",
+      "meta-fairseq-multireshubertmodel-yaml-parsing-rce-vulnerabil",
+      "meta-fairseq-yaml-parsing-rce-vulnerability-cve-20-af5f171d"
     ]
   },
   {
-    "slug": "meta-fairseq-ctccriterion-yaml-rce-vulnerability-c-f8299d2d",
-    "title": "Meta fairseq CtcCriterion YAML RCE Vulnerability CVE-2026-111760",
-    "summary": "Meta fairseq's CtcCriterion YAML parsing flaw, identified as CVE-2026-111760, allows remote code execution when a malicious file is opened. The flaw has a CVSS score of 7.8, requires user interaction, and has no confirmed active exploitation in the wild. Security teams should avoid opening untrusted files, apply vendor patches when released, and monitor for related advisories.",
-    "category": "CVE",
+    "slug": "meta-fairseq-ctccriterion-yaml-rce-vulnerability-831e7ca9",
+    "title": "Meta fairseq CtcCriterion YAML RCE Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-932/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-c",
-      "article-f8299d2d",
-      "f8299d2d",
-      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-c-6f3d13",
-      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-cve-2026-11"
+      "meta-fairseq-ctccriterion-yaml-rce-vulnerability",
+      "article-831e7ca9",
+      "831e7ca9",
+      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-6f3d13",
+      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-c-f8299d2d"
     ]
   },
   {
     "slug": "meta-fairseq-yaml-parsing-flaw-enables-remote-code-4a1d0d18",
     "title": "Meta fairseq YAML Parsing Flaw Enables Remote Code Execution",
-    "summary": "Meta fairseq’s AudioModalityConfig YAML parsing flaw lets attackers execute arbitrary code when a user opens a malicious file. Identified as CVE-2026-111760, the flaw scores 7.8 on CVSS and requires user interaction, but no active exploitation has been observed. Affected installations remain vulnerable until Meta issues a patch; meanwhile, restrict handling of untrusted YAML files.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-931/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-yaml-parsing-flaw-enables-remote-code",
@@ -3155,15 +3303,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-930-0day-meta-fairseq-lightconvlanguagemode-6b290180",
     "title": "ZDI-26-930: (0Day) Meta fairseq LightConvLanguageModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-930/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-930-0day-meta-fairseq-lightconvlanguagemode",
@@ -3176,15 +3322,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-deserialization-rce-vulnerability-exp-bb48b00e",
     "title": "Meta fairseq Deserialization RCE Vulnerability Exposes Code Execution",
-    "summary": "A deserialization flaw in Meta fairseq’s quantize_with_kmeans component lets remote attackers run arbitrary code when a user opens a malicious file or visits a crafted page. CVE-2026-111760 scores 7.8 on CVSS and requires user interaction; no active exploitation has been confirmed. Meta released a patch; administrators should apply it promptly and restrict deserialization of untrusted data.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-937/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-deserialization-rce-vulnerability-exp",
@@ -3197,15 +3341,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulne-43499adb",
     "title": "Meta fairseq FairseqCPUAdam YAML Parsing RCE Vulnerability",
-    "summary": "A YAML parsing flaw in Meta fairseq’s FairseqCPUAdam module lets remote attackers inject code when a user opens a crafted file. CVE-2026-111760 scores 7.8 on CVSS and needs user interaction; no exploitation has been confirmed. Meta released a patch; administrators should apply it promptly and avoid loading untrusted YAML files.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-936/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulne",
@@ -3218,15 +3360,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu-821ac269",
     "title": "Meta fairseq FConvModelSelfAtt YAML Parsing RCE Vulnerability",
-    "summary": "A YAML parsing flaw in Meta fairseq’s FConvModelSelfAtt component permits remote attackers to inject code when a user opens a crafted file. CVE-2026-111760 has a CVSS score of 7.8 and requires user interaction; no exploitation has been reported. Meta issued a patch; administrators should apply it immediately and avoid loading untrusted YAML files.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-935/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu",
@@ -3239,15 +3379,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-ya-2faffac3",
     "title": "ZDI-26-934: (0Day) Meta fairseq FConvLanguageModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-934/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-ya",
@@ -3260,15 +3398,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file-8715cfa3",
     "title": "ZDI-26-941: (0Day) Meta fairseq FConvModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-941/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file",
@@ -3281,15 +3417,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-940-0day-meta-fairseq-dump-km-label-deseria-e4eeb807",
     "title": "ZDI-26-940: (0Day) Meta fairseq dump_km_label Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-940/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-940-0day-meta-fairseq-dump-km-label-deseria",
@@ -3302,15 +3436,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-939-0day-meta-fairseq2-filecheckpointmanage-d39c53f6",
     "title": "ZDI-26-939: (0Day) Meta fairseq2 FileCheckpointManager _load_state_dict Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-939/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-939-0day-meta-fairseq2-filecheckpointmanage",
@@ -3323,15 +3455,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zero-day-rce-vulnerability-disclosed-in-meta-fairs-be6902fe",
     "title": "Zero-Day RCE Vulnerability Disclosed in Meta Fairseq",
-    "summary": "A remote code execution vulnerability was disclosed in Meta fairseq, designated as CVE-2026-111760. The zero-day flaw stems from code injection within the 'parse_manifest' function and carries a CVSS severity rating of 7.8. Successful exploitation requires user interaction through malicious web pages or files, requiring security teams to restrict untrusted file execution.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-938/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zero-day-rce-vulnerability-disclosed-in-meta-fairs",
@@ -3342,59 +3472,53 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "meta-fairchem-rce-via-deserialization-cve-2026-111-a15736f3",
-    "title": "Meta FAIRChem RCE via Deserialization CVE-2026-111760",
-    "summary": "A remote code execution flaw in Meta FAIRChem’s convert_fine_tune_checkpoint deserialization lets attackers run arbitrary code on affected installations. CVE-2026-111760 carries a CVSS 7.8 score and needs user interaction, such as visiting a malicious page or opening a malicious file, to exploit. Meta has not yet released a patch; teams should avoid opening malicious files and apply vendor fixes when available.",
-    "category": "CVE",
+    "slug": "meta-fairchem-rce-via-deserialization-357ce245",
+    "title": "Meta FAIRChem RCE via Deserialization",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-945/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "meta-fairchem-rce-via-deserialization-cve-2026-111",
-      "article-a15736f3",
-      "a15736f3",
-      "meta-fairchem-rce-via-deserialization-cve-2026-111-6f3d17",
-      "meta-fairchem-rce-via-deserialization-cve-2026-111760"
+      "meta-fairchem-rce-via-deserialization",
+      "article-357ce245",
+      "357ce245",
+      "meta-fairchem-rce-via-deserialization-6f3d17",
+      "meta-fairchem-rce-via-deserialization-cve-2026-111-a15736f3"
     ]
   },
   {
-    "slug": "meta-fairseq-rce-via-deserialization-cve-2026-1117-bd1d9ba3",
-    "title": "Meta fairseq RCE via Deserialization CVE-2026-111760",
-    "summary": "A remote code execution flaw in Meta fairseq’s load_ema_from_checkpoint deserialization allows attackers to run arbitrary code on affected installations. CVE-2026-111760 carries a CVSS 7.8 score and needs user interaction, such as visiting a malicious page or opening a malicious file, to exploit. Meta has not yet released a patch; teams should avoid opening files and apply vendor fixes when available.",
-    "category": "CVE",
+    "slug": "meta-fairseq-rce-via-deserialization-88743634",
+    "title": "Meta fairseq RCE via Deserialization",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-944/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
-      "meta-fairseq-rce-via-deserialization-cve-2026-1117",
-      "article-bd1d9ba3",
-      "bd1d9ba3",
-      "meta-fairseq-rce-via-deserialization-cve-2026-1117-6f3d17",
-      "meta-fairseq-rce-via-deserialization-cve-2026-111760"
+      "meta-fairseq-rce-via-deserialization",
+      "article-88743634",
+      "88743634",
+      "meta-fairseq-rce-via-deserialization-6f3d17",
+      "meta-fairseq-rce-via-deserialization-cve-2026-1117-bd1d9ba3"
     ]
   },
   {
     "slug": "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cp-064aa164",
     "title": "ZDI-26-943: (0Day) Meta fairseq load_checkpoint_to_cpu Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-943/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cp",
@@ -3407,15 +3531,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-942-0day-meta-fairseq-rerank-code-injection-c0a55076",
     "title": "ZDI-26-942: (0Day) Meta fairseq rerank Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-942/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-942-0day-meta-fairseq-rerank-code-injection",
@@ -3426,10 +3548,10 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "meta-fairchem-deserialization-rce-exploit-cve-2026-6bd83f8a",
-    "title": "Meta FAIRChem Deserialization RCE Exploit CVE‑2026‑111760",
-    "summary": "A deserialization flaw in Meta FAIRChem’s load_model_and_weights_from_checkpoint permits remote code execution when a user opens a malicious file or visits a crafted page. The vulnerability, rated CVSS 7.8, requires user interaction and is linked to CVE‑2026‑111760, exposing installations to code execution. Meta released a patch; security teams should apply the update immediately or disable the vulnerable function to mitigate risk.",
-    "category": "CVE",
+    "slug": "meta-fairchem-deserialization-rce-exploit-8693f79e",
+    "title": "Meta FAIRChem Deserialization RCE Exploit",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-949/",
@@ -3437,18 +3559,18 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "meta-fairchem-deserialization-rce-exploit-cve-2026",
-      "article-6bd83f8a",
-      "6bd83f8a",
-      "meta-fairchem-deserialization-rce-exploit-cve-2026-6f3d17",
-      "meta-fairchem-deserialization-rce-exploit-cve-2026-111760"
+      "meta-fairchem-deserialization-rce-exploit",
+      "article-8693f79e",
+      "8693f79e",
+      "meta-fairchem-deserialization-rce-exploit-6f3d17",
+      "meta-fairchem-deserialization-rce-exploit-cve-2026-6bd83f8a"
     ]
   },
   {
-    "slug": "meta-fairchem-mlippredictunit-rce-vulnerability-cv-a6a1ed72",
-    "title": "Meta FAIRChem MLIPPredictUnit RCE Vulnerability CVE‑2026‑111760",
-    "summary": "A deserialization flaw in Meta FAIRChem’s MLIPPredictUnit permits remote code execution when a user opens a malicious file or visits a crafted page. The vulnerability, rated CVSS 7.8, requires user interaction and is linked to CVE‑2026‑111760, exposing installations to code execution. Meta released a patch; security teams should apply the update immediately or disable the vulnerable function to mitigate risk.",
-    "category": "CVE",
+    "slug": "meta-fairchem-mlippredictunit-rce-vulnerability-d3d96450",
+    "title": "Meta FAIRChem MLIPPredictUnit RCE Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-948/",
@@ -3456,18 +3578,18 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "meta-fairchem-mlippredictunit-rce-vulnerability-cv",
-      "article-a6a1ed72",
-      "a6a1ed72",
-      "meta-fairchem-mlippredictunit-rce-vulnerability-cv-6f3d17",
-      "meta-fairchem-mlippredictunit-rce-vulnerability-cve-2026-111"
+      "meta-fairchem-mlippredictunit-rce-vulnerability",
+      "article-d3d96450",
+      "d3d96450",
+      "meta-fairchem-mlippredictunit-rce-vulnerability-6f3d17",
+      "meta-fairchem-mlippredictunit-rce-vulnerability-cv-a6a1ed72"
     ]
   },
   {
-    "slug": "meta-fairchem-npz-parsing-rce-cve-2026-111760-fdfdc26f",
-    "title": "Meta FAIRChem NPZ Parsing RCE CVE‑2026‑111760",
-    "summary": "A deserialization flaw in Meta FAIRChem’s make_submission_file permits remote code execution when a user opens a malicious file or visits a crafted page. The vulnerability, rated CVSS 7.8, requires user interaction and is linked to CVE‑2026‑111760, exposing installations to code execution. Meta released a patch; security teams should apply the update immediately or disable the vulnerable function to mitigate risk.",
-    "category": "CVE",
+    "slug": "meta-fairchem-npz-parsing-rce-5b5e896e",
+    "title": "Meta FAIRChem NPZ Parsing RCE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-947/",
@@ -3475,24 +3597,23 @@ export const news: NewsBrief[] = [
     "cves": [],
     "additionalSources": [],
     "aliases": [
-      "meta-fairchem-npz-parsing-rce-cve-2026-111760",
-      "article-fdfdc26f",
-      "fdfdc26f",
-      "meta-fairchem-npz-parsing-rce-cve-2026-111760-6f3d17"
+      "meta-fairchem-npz-parsing-rce",
+      "article-5b5e896e",
+      "5b5e896e",
+      "meta-fairchem-npz-parsing-rce-6f3d17",
+      "meta-fairchem-npz-parsing-rce-cve-2026-111760-fdfdc26f"
     ]
   },
   {
     "slug": "zdi-26-946-0day-meta-fairchem-make-challenge-submi-71f49acc",
     "title": "ZDI-26-946: (0Day) Meta FAIRChem make_challenge_submission_file NPZ File Parsing Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-946/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-946-0day-meta-fairchem-make-challenge-submi",
@@ -3505,15 +3626,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairchem-rce-via-load-inference-model-332180d5",
     "title": "Meta FAIRChem RCE via load_inference_model",
-    "summary": "Meta FAIRChem's utils load_inference_model module (CVE-2026-111760) permits remote code execution when deserializing untrusted data. The flaw needs user interaction, such as opening a malicious file, and has a CVSS score of 7.8, indicating high risk. Meta released a patch; administrators should update FAIRChem to the latest version to mitigate the vulnerability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-953/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairchem-rce-via-load-inference-model",
@@ -3525,15 +3644,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairchem-rce-via-cli-yaml-parsing-ba85bb3d",
     "title": "Meta FAIRChem RCE via _cli YAML Parsing",
-    "summary": "Meta FAIRChem's _cli YAML parsing module (CVE-2026-111760) allows remote code execution when deserializing untrusted data. Exploitation requires user interaction, such as opening a malicious file, and the flaw carries a CVSS score of 7.8. Meta has issued a patch; updating FAIRChem to the latest release will address the security vulnerability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-952/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairchem-rce-via-cli-yaml-parsing",
@@ -3545,15 +3662,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "meta-fairchem-rce-via-load-tasks-9513b812",
     "title": "Meta FAIRChem RCE via load_tasks",
-    "summary": "Meta FAIRChem's load_tasks module (CVE-2026-111760) permits remote code execution via deserialization of untrusted data. The flaw needs user interaction, such as visiting a malicious page or opening a file, and has a CVSS score of 7.8. Meta released a patch; administrators should update FAIRChem to the latest version to mitigate the vulnerability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-951/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "meta-fairchem-rce-via-load-tasks",
@@ -3565,15 +3680,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-950-0day-meta-fairchem-migrate-checkpoint-d-79471196",
     "title": "ZDI-26-950: (0Day) Meta FAIRChem migrate_checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-950/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-950-0day-meta-fairchem-migrate-checkpoint-d",
@@ -4056,14 +4169,14 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-patch-tuesday-for-november-2026-snort-ru-db9b6612",
     "title": "Microsoft Patch Tuesday for November 2026 — Snort rules and prominent vulnerabilities",
-    "summary": "Microsoft has released its monthly security update for November 2026, which includes 1328 vulnerabilities affecting a range of products, including 60 that Microsoft marked as \"critical.\" Out of 60 \"critical\" vulnerabilities, 45 are remote code execution (RCE) vulnerabilities. The vulnerability is tracked as CVE-2026-113971.",
+    "summary": "Microsoft has released its monthly security update for November 2026, which includes 1328 vulnerabilities affecting a range of products, including 60 that Microsoft marked as \"critical.\" Out of 60 \"critical\" vulnerabilities, 45 are remote code execution (RCE) vulnerabilities. Prominent fixes include the actively exploited Outlook zero-day CVE-2026-124194.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Cisco Talos",
     "sourceUrl": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/",
     "publishedAt": "2026-11-11T01:41:17.000Z",
     "cves": [
-      "CVE-2026-113971"
+      "CVE-2026-124194"
     ],
     "additionalSources": [],
     "aliases": [
@@ -4223,23 +4336,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "openssh-gpustack-exploited-via-cve-2026-123218-f2cc45ed",
-    "title": "OpenSSH, GPUStack Exploited via CVE-2026-123218",
-    "summary": "OpenSSH and GPUStack are being exploited via CVE-2026-123218, a flaw that permits remote code execution through malformed SSH packets. Rated CVSS 9.5, the vulnerability allows unauthenticated attackers to run arbitrary code on affected servers without privilege escalation and has PoC exploits. Administrators should immediately apply vendor patches, update OpenSSH to the latest release, and monitor logs for anomalous SSH traffic.",
+    "slug": "openssh-and-gpustack-exploited-via-cve-2026-123158-a4cdc7a6",
+    "title": "OpenSSH and GPUStack Exploited via CVE-2026-123158 and CVE-2026-102895",
+    "summary": "CISA added OpenBSD OpenSSH flaw CVE-2026-123158 and GPUStack vulnerability CVE-2026-102895 to its KEV catalog after active exploitation. Attackers query cloud metadata, attempt to steal password hashes and root SSH keys, modify authorized_keys for persistent access, and deploy the Python TAC Agent C2. Apply vendor updates immediately and hunt across affected Linux and cloud hosts.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CyberNews AI",
     "sourceUrl": "https://cybernewsai.com/blog/cisa-warns-of-active-exploitation-of-openssh-gpustack-f",
     "publishedAt": "2026-11-10T23:04:32.000Z",
     "cves": [
-      "CVE-2026-123218"
+      "CVE-2026-123158",
+      "CVE-2026-102895"
     ],
     "additionalSources": [],
     "aliases": [
-      "openssh-gpustack-exploited-via-cve-2026-123218",
-      "article-f2cc45ed",
-      "f2cc45ed",
-      "openssh-gpustack-exploited-via-cve-2026-123218-16c8bd"
+      "openssh-and-gpustack-exploited-via-cve-2026-123158",
+      "article-a4cdc7a6",
+      "a4cdc7a6",
+      "openssh-and-gpustack-exploited-via-cve-2026-123158-16c8bd",
+      "openssh-and-gpustack-exploited-via-cve-2026-123158-and-cve-2",
+      "openssh-gpustack-exploited-via-cve-2026-123218-f2cc45ed"
     ]
   },
   {
@@ -4939,15 +5055,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "hackers-exploit-trusted-aws-access-to-breach-multi-e6dd6ee2",
     "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
-    "summary": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments. The vulnerability is tracked as CVE-2026-126087.",
-    "category": "CVE",
+    "summary": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments.",
+    "category": "Breach",
     "severity": "MEDIUM",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
     "publishedAt": "2026-11-10T19:31:11.000Z",
-    "cves": [
-      "CVE-2026-126087"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "hackers-exploit-trusted-aws-access-to-breach-multi",
@@ -5058,14 +5172,14 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-patch-tuesday-november-2027-tue-nov-10th-1bbc566e",
     "title": "Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)",
-    "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge. The vulnerability is tracked as CVE-2026-113971.",
+    "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge. One of the patched flaws, Outlook spoofing vulnerability CVE-2026-124194, is already under active exploitation.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "SANS Internet Storm Center",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33508",
     "publishedAt": "2026-11-10T19:09:32.000Z",
     "cves": [
-      "CVE-2026-113971"
+      "CVE-2026-124194"
     ],
     "additionalSources": [],
     "aliases": [
@@ -5078,13 +5192,15 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-patch-tuesday-fixes-1-235-flaws-outlook-1bd8ea52",
     "title": "Microsoft Patch Tuesday Fixes 1,235 Flaws, Outlook Zero-Day",
-    "summary": "Microsoft released its November 2026 Patch Tuesday, addressing 1,235 vulnerabilities, including the actively exploited Outlook zero‑day CVE‑2026‑113971. The CVE permits unauthenticated remote code execution via malformed email attachments, scoring CVSS 10.0 and enabling arbitrary code execution. Administrators should apply the November 2026 Rollup immediately and verify that Outlook clients are updated to mitigate the vulnerability.",
+    "summary": "Microsoft released its November 2026 Patch Tuesday updates addressing 1,235 vulnerabilities, including the actively exploited Outlook zero-day CVE-2026-124194. The Outlook spoofing vulnerability is under active exploitation in the wild; administrators should apply the November 2026 cumulative security updates immediately and verify that Outlook clients are patched.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
     "publishedAt": "2026-11-10T19:07:36.000Z",
-    "cves": [],
+    "cves": [
+      "CVE-2026-124194"
+    ],
     "additionalSources": [],
     "aliases": [
       "microsoft-patch-tuesday-fixes-1-235-flaws-outlook",
@@ -5115,14 +5231,14 @@ export const news: NewsBrief[] = [
   {
     "slug": "microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-1982f712",
     "title": "Microsoft Patch Tuesday Fixes 1,093 Vulnerabilities, Outlook Zero-Day",
-    "summary": "Microsoft released its November 2026 Patch Tuesday updates, fixing 1,093 vulnerabilities across Windows, Office, SQL Server, SharePoint, Exchange Server, Azure services, and developer tools. The update includes CVE-2026-113971, an actively exploited Outlook zero‑day that leaks users’ NTLMv2 authentication hashes to attackers. Security teams must apply the patch immediately to eliminate the credential theft vector and protect enterprise authentication infrastructure.",
+    "summary": "Microsoft released its November 2026 Patch Tuesday updates, fixing 1,093 vulnerabilities across Windows, Office, SQL Server, SharePoint, Exchange Server, Azure services, and developer tools. The update includes CVE-2026-124194, an actively exploited Outlook zero-day that leaks users’ NTLMv2 authentication hashes to attackers. Security teams must apply the patch immediately to eliminate the credential theft vector and protect enterprise authentication infrastructure.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/microsoft-november-2026-patch-tuesday/",
     "publishedAt": "2026-11-10T19:01:53.000Z",
     "cves": [
-      "CVE-2026-113971"
+      "CVE-2026-124194"
     ],
     "additionalSources": [],
     "aliases": [
@@ -7246,14 +7362,14 @@ export const news: NewsBrief[] = [
   {
     "slug": "chrome-updates-released-to-patch-exploited-zero-da-7d6565c2",
     "title": "Chrome Updates Released to Patch Exploited Zero-Day Vulnerability",
-    "summary": "Google released Chrome desktop and Android updates to patch CVE-2026-123158, a zero‑day flaw attackers are exploiting. The vulnerability permits remote code execution through the Chrome rendering engine, risking user data and system compromise. Users should install the latest Chrome version immediately, and admins should monitor for anomalous activity and enforce additional controls.",
+    "summary": "Google released Chrome desktop and Android updates to patch CVE-2026-125350, a zero‑day flaw attackers are exploiting. The vulnerability permits remote code execution through the Chrome rendering engine, risking user data and system compromise. Users should install the latest Chrome version immediately, and admins should monitor for anomalous activity and enforce additional controls.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Malwarebytes Labs",
     "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting",
     "publishedAt": "2026-11-10T13:23:00.000Z",
     "cves": [
-      "CVE-2026-123158"
+      "CVE-2026-125350"
     ],
     "additionalSources": [],
     "aliases": [
@@ -7772,14 +7888,18 @@ export const news: NewsBrief[] = [
   {
     "slug": "sap-fixes-four-10-0-rce-flaws-including-netweaver-102407d0",
     "title": "SAP Fixes Four 10.0 RCE Flaws, Including NetWeaver",
-    "summary": "SAP released a patch for four critical flaws, all rated CVSS 10.0, on its monthly Security Patch Day. The vulnerabilities, including CVE-2026-83844, allow unauthenticated remote code execution on SAP NetWeaver application servers and the Web Dispatcher. SAP has issued patches for all affected components; security teams should apply them immediately to prevent exploitation.",
+    "summary": "SAP patched four CVSS 10.0 flaws on Security Patch Day affecting NetWeaver and Web Dispatcher: CVE-2026-76964 (ICM), CVE-2026-89126 (Web Dispatcher), CVE-2026-89103 (Gateway ProxyGate), and CVE-2026-120017 (SAML 2.0, distinct from earlier CVE-2026-44748). Unauthenticated attackers can achieve RCE, server impersonation, or arbitrary user login; apply SAP security notes immediately.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
     "sourceUrl": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
     "publishedAt": "2026-11-10T10:02:40.000Z",
     "cves": [
-      "CVE-2026-83844"
+      "CVE-2026-76964",
+      "CVE-2026-89126",
+      "CVE-2026-89103",
+      "CVE-2026-120017",
+      "CVE-2026-44748"
     ],
     "additionalSources": [],
     "aliases": [
@@ -8311,6 +8431,62 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fortimail-os-command-injection-vulnerability-30338459",
+    "title": "FortiMail OS Command Injection Vulnerability",
+    "summary": "Fortinet’s FortiMail, FortiRecorder, and FortiVoice have an OS command injection flaw that lets authenticated attackers execute arbitrary commands via crafted HTTP requests. Rated CVSSv3 8.8, the flaw exploits improper neutralization of special elements in OS commands, enabling remote code execution. Fortinet released a patch; teams should upgrade firmware immediately and enforce strict input validation to mitigate risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-196",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortimail-os-command-injection-vulnerability",
+      "article-30338459",
+      "30338459",
+      "fortimail-os-command-injection-vulnerability-3bcda8"
+    ]
+  },
+  {
+    "slug": "fortinet-patches-critical-authorization-vulnerabil-75f51136",
+    "title": "Fortinet Patches Critical Authorization Vulnerability in FortiMail",
+    "summary": "Fortinet addressed a critical flaw in FortiMail enabling unauthenticated remote attackers to manipulate webmail sessions via crafted HTTP requests. Rated with a CVSS 9.1 score, the incorrect authorization weakness allows adversaries to hijack sessions to read or send encrypted email as any recipient. Administrators should immediately apply the latest FortiGuard PSIRT software updates to safeguard affected FortiMail enterprise deployments.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-207",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-patches-critical-authorization-vulnerabil",
+      "article-75f51136",
+      "75f51136",
+      "fortinet-patches-critical-authorization-vulnerabil-3bcda6",
+      "fortinet-patches-critical-authorization-vulnerability-in-for"
+    ]
+  },
+  {
+    "slug": "fortinet-fixes-high-severity-command-injection-fla-656e18ef",
+    "title": "Fortinet Fixes High Severity Command Injection Flaw in FortiMail",
+    "summary": "Fortinet resolved an administrative security flaw in FortiMail targeted through HTTP requests. Featuring a CVSS 7.6 score, the command argument injection vulnerability enables authenticated domain administrators to execute root code, tamper with files, and delete tenant users on paired FortiAuthenticator hardware. Enterprise administrators must consult the FortiGuard PSIRT advisory to apply security patches across affected installations.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-218",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-fixes-high-severity-command-injection-fla",
+      "article-656e18ef",
+      "656e18ef",
+      "fortinet-fixes-high-severity-command-injection-fla-3bcda6",
+      "fortinet-fixes-high-severity-command-injection-flaw-in-forti"
+    ]
+  },
+  {
     "slug": "fortinet-fixes-authentication-bypass-flaw-in-forti-afc192a8",
     "title": "Fortinet Fixes Authentication Bypass Flaw in FortiAuthenticator",
     "summary": "Fortinet reported a critical incorrect authorization vulnerability affecting FortiAuthenticator identity management software. Tracked under CWE-863 with a CVSSv3 score of 9.1, the flaw allows remote attackers to bypass authentication controls and gain unauthorized system access. Security teams should review Fortinet PSIRT advisories and apply available software patches immediately to mitigate risk.",
@@ -8332,14 +8508,14 @@ export const news: NewsBrief[] = [
   {
     "slug": "improper-privilege-management-e356f9b9",
     "title": "Improper privilege management",
-    "summary": "CVSSv3 Score: 7.2 An Improper Privilege Management vulnerability[CWE-269] in FortiAuthenticator may allow an authenticated attacker to escalate privileges. Revised on 2026-11-10 00:00:00. The vulnerability is tracked as CVE-2026-108415.",
+    "summary": "CVSSv3 Score: 7.2 An Improper Privilege Management vulnerability[CWE-269] in FortiAuthenticator may allow an authenticated attacker to escalate privileges. Revised on 2026-11-10 00:00:00. The vulnerability is tracked as CVE-2026-126249.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Fortinet FortiGuard PSIRT",
     "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-263",
     "publishedAt": "2026-11-10T08:00:00.000Z",
     "cves": [
-      "CVE-2026-108415"
+      "CVE-2026-126249"
     ],
     "additionalSources": [],
     "aliases": [
@@ -8821,36 +8997,37 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "fortimail-authorization-bypass-cve-2026-20183-928489a1",
-    "title": "FortiMail Authorization Bypass CVE-2026-20183",
-    "summary": "FortiMail suffers an authorization bypass via user-controlled key, identified as CVE-2026-20183, enabling unauthenticated attackers to release or delete quarantined messages for any mailbox. The flaw, rated CVSS 7.5, exploits a crafted quarantine release request that bypasses mailbox ownership checks, potentially exposing sensitive email content. Fortinet has released a patch; administrators should update FortiMail immediately and verify quarantine controls are enforced.",
+    "slug": "fortimail-authorization-bypass-cve-2026-126159-7dc89dc9",
+    "title": "FortiMail Authorization Bypass CVE-2026-126159",
+    "summary": "FortiMail suffers an authorization bypass via user-controlled key, identified as CVE-2026-126159, enabling unauthenticated attackers to release or delete quarantined messages for any mailbox. The flaw, rated CVSS 7.5, exploits a crafted quarantine release request that bypasses mailbox ownership checks, potentially exposing sensitive email content. Fortinet has released a patch; administrators should update FortiMail immediately and verify quarantine controls are enforced.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Fortinet FortiGuard PSIRT",
     "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-211",
     "publishedAt": "2026-11-10T08:00:00.000Z",
     "cves": [
-      "CVE-2026-20183"
+      "CVE-2026-126159"
     ],
     "additionalSources": [],
     "aliases": [
-      "fortimail-authorization-bypass-cve-2026-20183",
-      "article-928489a1",
-      "928489a1",
-      "fortimail-authorization-bypass-cve-2026-20183-3bcda6"
+      "fortimail-authorization-bypass-cve-2026-126159",
+      "article-7dc89dc9",
+      "7dc89dc9",
+      "fortimail-authorization-bypass-cve-2026-126159-3bcda6",
+      "fortimail-authorization-bypass-cve-2026-20183-928489a1"
     ]
   },
   {
-    "slug": "fortimanager-gui-authorization-bypass-cve-2026-201-031a68ae",
-    "title": "FortiManager GUI Authorization Bypass CVE-2026-20183",
-    "summary": "FortiManager, FortiManager Cloud, and FortiSase‑Sovereign GUIs contain an authorization bypass via user‑controlled key, identified as CVE-2026-20183, allowing authenticated attackers to execute commands beyond their intended scope. The flaw, scored CVSS 8.7, exploits crafted HTTP requests that bypass role‑based access controls, enabling privilege escalation and potential system compromise. Fortinet released a patch; administrators should upgrade firmware immediately and enforce strict roles.",
-    "category": "Vulnerability",
+    "slug": "fortimanager-gui-authorization-bypass-cve-2026-126-266c7f04",
+    "title": "FortiManager GUI Authorization Bypass CVE-2026-126183",
+    "summary": "FortiManager, FortiManager Cloud, and FortiSase-Sovereign GUIs contain an authorization bypass via user-controlled key, identified as CVE-2026-126183, allowing authenticated attackers to execute commands beyond their intended scope. The flaw, scored CVSS 8.7, exploits crafted HTTP requests that bypass role-based access controls, enabling privilege escalation and potential system compromise. Fortinet released a patch; administrators should upgrade firmware immediately and enforce strict roles.",
+    "category": "CVE",
     "severity": "CRITICAL",
     "source": "Fortinet FortiGuard PSIRT",
     "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-228",
     "publishedAt": "2026-11-10T08:00:00.000Z",
     "cves": [
-      "CVE-2026-20183"
+      "CVE-2026-126183"
     ],
     "additionalSources": [
       {
@@ -8859,11 +9036,12 @@ export const news: NewsBrief[] = [
       }
     ],
     "aliases": [
-      "fortimanager-gui-authorization-bypass-cve-2026-201",
-      "article-031a68ae",
-      "031a68ae",
-      "fortimanager-gui-authorization-bypass-cve-2026-201-3bcda6",
-      "fortimanager-gui-authorization-bypass-cve-2026-20183"
+      "fortimanager-gui-authorization-bypass-cve-2026-126",
+      "article-266c7f04",
+      "266c7f04",
+      "fortimanager-gui-authorization-bypass-cve-2026-126-3bcda6",
+      "fortimanager-gui-authorization-bypass-cve-2026-126183",
+      "fortimanager-gui-authorization-bypass-cve-2026-201-031a68ae"
     ]
   },
   {
@@ -9117,13 +9295,15 @@ export const news: NewsBrief[] = [
   {
     "slug": "patch-tuesday-unveils-1-252-cves-including-zero-da-b648a3b4",
     "title": "Patch Tuesday Unveils 1,252 CVEs, Including Zero-Day",
-    "summary": "Patch Tuesday released 1,252 CVEs, including one zero‑day and 68 critical vulnerabilities, with CVE‑2026‑113971 identified. The zero‑day flaw and critical issues span multiple vendors, potentially enabling unauthenticated remote code execution or privilege escalation. Security teams should apply vendor patches immediately, monitor for exploitation indicators, and verify configuration hardening to mitigate risk.",
+    "summary": "Patch Tuesday released 1,252 CVEs, including one zero-day and 68 critical vulnerabilities, with CVE-2026-124194 identified. The zero-day flaw and critical issues span multiple vendors, potentially enabling unauthenticated remote code execution or privilege escalation. Security teams should apply vendor patches immediately, monitor for exploitation indicators, and verify configuration hardening to mitigate risk.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CrowdStrike",
     "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/",
     "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [],
+    "cves": [
+      "CVE-2026-124194"
+    ],
     "additionalSources": [],
     "aliases": [
       "patch-tuesday-unveils-1-252-cves-including-zero-da",
@@ -9136,15 +9316,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "zdi-26-898-wireshark-lorawan-decryption-numeric-tr-f8e5e8d0",
     "title": "ZDI-26-898: Wireshark LoRaWAN Decryption Numeric Truncation Error Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Wireshark. Authentication is not required to exploit this vulnerability. The vulnerability is tracked as CVE-2026-83844.",
-    "category": "CVE",
+    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Wireshark. Authentication is not required to exploit this vulnerability. However, only instances with LoRaWAN decryption enabled are vulnerable. The ZDI has assigned a CVSS rating of 7.1.",
+    "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-898/",
     "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-83844"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "zdi-26-898-wireshark-lorawan-decryption-numeric-tr",
@@ -9199,15 +9377,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "wireshark-smb-export-integer-overflow-enables-remo-0538f2a4",
     "title": "Wireshark SMB Export Integer Overflow Enables Remote Code Execution",
-    "summary": "An integer overflow in Wireshark’s SMB Object Export feature allows remote attackers to execute arbitrary code on affected installations, though user interaction is required. The flaw, identified as CVE-2026-83844, has a CVSS score of 8.8, indicating high‑severity remote code execution potential. ZDI recommends applying the vendor patch or disabling the SMB export feature to mitigate the vulnerability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Wireshark. User interaction is required to exploit this vulnerability. The ZDI has assigned a CVSS rating of 8.8.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-900/",
     "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-83844"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "wireshark-smb-export-integer-overflow-enables-remo",
@@ -9220,15 +9396,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "wireshark-lbmc-fragment-reassembly-rce-vulnerabili-cecbaa83",
     "title": "Wireshark LBMC Fragment Reassembly RCE Vulnerability",
-    "summary": "A remote code execution flaw in Wireshark’s LBMC fragment reassembly allows attackers to run arbitrary code without authentication. The integer overflow occurs when parsing oversized LBMC fragments, rated CVSS 7.5, and is publicly documented as CVE-2026-83844, with no confirmed in‑the‑wild exploitation yet. Wireshark has released patch 3.6.6, and users should update or disable LBMC fragment reassembly to mitigate the vulnerability.",
-    "category": "CVE",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Wireshark. Authentication is not required to exploit this vulnerability. However, only instances with LBMC fragment reassembly enabled are vulnerable. The ZDI has assigned a CVSS rating of 7.5.",
+    "category": "Vulnerability",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-899/",
     "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-83844"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "wireshark-lbmc-fragment-reassembly-rce-vulnerabili",
@@ -9341,237 +9515,6 @@ export const news: NewsBrief[] = [
       "article-bd6c78e3",
       "bd6c78e3",
       "chromeos-beta-channel-updated-to-os-16868-13-0-7ad17a"
-    ]
-  },
-  {
-    "slug": "openclaw-ai-agents-deliver-malware-to-windows-and-b78866a7",
-    "title": "OpenClaw AI Agents Deliver Malware to Windows and macOS",
-    "summary": "OpenClaw operators have deployed over 575 AI‑driven skills that deliver malware to Windows and macOS endpoints. They use stolen credentials, AI models for reconnaissance and exploitation, and tools that suppress intrusion detection, coordinated via WeChat and LINE. Teams should monitor credential activity, block known OpenClaw signatures, and enforce multi‑factor authentication to counter this threat.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
-    "publishedAt": "2026-11-10T05:30:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openclaw-ai-agents-deliver-malware-to-windows-and",
-      "article-b78866a7",
-      "b78866a7",
-      "openclaw-ai-agents-deliver-malware-to-windows-and-37362e",
-      "openclaw-ai-agents-deliver-malware-to-windows-and-macos"
-    ]
-  },
-  {
-    "slug": "fireworks-ai-breach-steals-customer-data-via-cloud-9eb3e610",
-    "title": "Fireworks AI Breach Steals Customer Data via Cloud Provider",
-    "summary": "Fireworks AI disclosed a breach where attackers accessed development machines via a compromised third‑party cloud provider, stealing customer account details, billing records, and datasets. The intrusion leveraged the provider’s compromised credentials, granting unauthorized remote access and data exfiltration from Fireworks’ internal systems. Fireworks urges customers to review logs, enforce MFA, and monitor anomalous activity; no patch is available.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fireworks-ai-data-breach/",
-    "publishedAt": "2026-11-10T05:17:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fireworks-ai-breach-steals-customer-data-via-cloud",
-      "article-9eb3e610",
-      "9eb3e610",
-      "fireworks-ai-breach-steals-customer-data-via-cloud-3f85c1",
-      "fireworks-ai-breach-steals-customer-data-via-cloud-provider"
-    ]
-  },
-  {
-    "slug": "application-security-engineer-position-open-at-one-b0117907",
-    "title": "Application Security Engineer Position Open at ONE ZERO BANK",
-    "summary": "ONE ZERO BANK in Israel is recruiting an Application Security Engineer to integrate security into the software development lifecycle. The role involves threat modeling, vulnerability assessment of web, mobile, API, CI/CD, and supply chain components, and automating security controls with AI tools. Candidates should have experience in secure coding practices and DevSecOps tooling.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/cybersecurity-jobs-available-right-now-november-10-2026/",
-    "publishedAt": "2026-11-10T05:00:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "application-security-engineer-position-open-at-one",
-      "article-b0117907",
-      "b0117907",
-      "application-security-engineer-position-open-at-one-1f273b",
-      "application-security-engineer-position-open-at-one-zero-bank"
-    ]
-  },
-  {
-    "slug": "beget-malware-launches-data-wiping-campaign-35ef31ef",
-    "title": "Beget Malware Launches Data‑Wiping Campaign",
-    "summary": "Beget malware launches a data‑wiping campaign targeting multiple organizations, deleting critical files via a self‑contained payload. The attack leverages a custom dropper that bypasses standard antivirus heuristics, leaving no persistent backdoor and leaving evidence only in system logs. Security teams should deploy the latest signature updates, enable file integrity monitoring, and conduct forensic analysis of affected endpoints to confirm eradication.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/russian-cloud-firm-beget-rebuilds-from-scratch-after-da",
-    "publishedAt": "2026-11-10T04:36:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "beget-malware-launches-data-wiping-campaign",
-      "article-35ef31ef",
-      "35ef31ef",
-      "beget-malware-launches-data-wiping-campaign-fb00bb"
-    ]
-  },
-  {
-    "slug": "sega-exposes-2-2-million-emails-d439d4bf",
-    "title": "SEGA Exposes 2.2 Million Emails",
-    "summary": "SEGA disclosed a breach that exposed 2.2 million email addresses from its customer database, accessed through an unauthorized entry point. The incident likely involved credential compromise or misconfigured access controls, but no exploit code or public proof-of-concept has been reported. SEGA should conduct a forensic review, apply any pending patches, enforce multi‑factor authentication, and notify affected users per data‑breach regulations.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/sega-newsletter-data-breach-exposes-2-2-million-email-a",
-    "publishedAt": "2026-11-10T04:32:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sega-exposes-2-2-million-emails",
-      "article-d439d4bf",
-      "d439d4bf",
-      "sega-exposes-2-2-million-emails-688a52"
-    ]
-  },
-  {
-    "slug": "qubole-cross-account-access-vulnerability-abused-0503e73e",
-    "title": "Qubole Cross‑Account Access Vulnerability Abused",
-    "summary": "Qubole’s cross‑account access flaw enabled attackers to reach resources in other accounts, bypassing intended isolation controls. The root cause is a misconfigured IAM policy that grants excessive permissions, allowing credential reuse across accounts and leading to unauthorized data exposure. Security teams should apply the vendor‑issued patch immediately, review cross‑account permissions, and deploy detection rules to monitor anomalous access patterns.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/trusted-by-default-qubole-cross-account-access-abused-i",
-    "publishedAt": "2026-11-10T04:25:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qubole-cross-account-access-vulnerability-abused",
-      "article-0503e73e",
-      "0503e73e",
-      "qubole-cross-account-access-vulnerability-abused-138807"
-    ]
-  },
-  {
-    "slug": "google-patches-cve-2026-125350-chrome-zero-day-6a7f8004",
-    "title": "Google Patches CVE-2026-125350 Chrome Zero‑Day",
-    "summary": "Google has released a patch for CVE-2026-125350, a Chrome zero‑day that lets remote attackers execute malicious code in the browser. The flaw, exploited in the wild, permits arbitrary code execution via a crafted web page and carries a CVSS score of 9.8. Users should update to Chrome 157.0.8103.50/51 on Windows and Mac, or 157.0.8103.50 on Linux, to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
-    "publishedAt": "2026-11-10T04:21:10.000Z",
-    "cves": [
-      "CVE-2026-125350"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "google-patches-cve-2026-125350-chrome-zero-day",
-      "article-6a7f8004",
-      "6a7f8004",
-      "google-patches-cve-2026-125350-chrome-zero-day-5edb3c"
-    ]
-  },
-  {
-    "slug": "satirical-terminal2shell-claims-highlight-security-939c958d",
-    "title": "Satirical Terminal2Shell Claims Highlight Security Marketing Parody",
-    "summary": "Security analysts highlighted Terminal2Shell, a satirical website claiming a 55-year-old zero-day vulnerability affects over two billion interactive terminals. The underlying exploit simply describes standard terminal execution rather than a legitimate security flaw or unauthorized code execution vector. Reports confirm the publication represents a commentary on security industry marketing rather than a genuine threat requiring system updates.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/",
-    "publishedAt": "2026-11-10T03:37:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "satirical-terminal2shell-claims-highlight-security",
-      "article-939c958d",
-      "939c958d",
-      "satirical-terminal2shell-claims-highlight-security-6128db",
-      "satirical-terminal2shell-claims-highlight-security-marketing"
-    ]
-  },
-  {
-    "slug": "apache-http-server-vulnerabilities-hit-ubuntu-lts-86b927d5",
-    "title": "Apache HTTP Server Vulnerabilities Hit Ubuntu LTS",
-    "summary": "Ubuntu 14.04 through 26.04 LTS releases contain multiple Apache HTTP Server flaws. CVE-2026-46729 and CVE-2026-47360 allow attackers to trigger denial of service or leak session data via improper memory and cookie handling, potentially exposing sensitive information; no confirmed exploitation yet. Ubuntu advises applying the latest security updates and verifying Apache configurations to mitigate the vulnerabilities.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9016-1",
-    "publishedAt": "2026-11-10T02:43:47.000Z",
-    "cves": [
-      "CVE-2026-46729",
-      "CVE-2026-47360"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apache-http-server-vulnerabilities-hit-ubuntu-lts",
-      "article-86b927d5",
-      "86b927d5",
-      "apache-http-server-vulnerabilities-hit-ubuntu-lts-7e8930"
-    ]
-  },
-  {
-    "slug": "n-able-n-central-exposes-30-zero-day-vulnerabiliti-bc249e2e",
-    "title": "N‑able N‑central Exposes 30+ Zero‑Day Vulnerabilities, Urgent Patch Released",
-    "summary": "N‑able N‑central software was exposed to more than 30 zero‑day vulnerabilities, enabling remote code execution and privilege escalation. The flaws stem from inadequate input validation and weak session handling, allowing attackers to bypass authentication without credentials. N‑able issued an urgent patch, disabled hosted environments worldwide, and urged customers to apply fixes immediately and monitor logs for anomalies.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
-    "publishedAt": "2026-11-10T02:34:38.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/n-able-takes-cloud-platform-offline-after-30-zero-days"
-      }
-    ],
-    "aliases": [
-      "n-able-n-central-exposes-30-zero-day-vulnerabiliti",
-      "article-bc249e2e",
-      "bc249e2e",
-      "n-able-n-central-exposes-30-zero-day-vulnerabiliti-214ffb",
-      "n-able-n-central-exposes-30-zero-day-vulnerabilities-urgent-"
-    ]
-  },
-  {
-    "slug": "isc-stormcast-weekly-threat-landscape-overview-958ee648",
-    "title": "ISC Stormcast: Weekly Threat Landscape Overview",
-    "summary": "The ISC Stormcast podcast released its November 10th edition, summarizing the latest threat activity observed across the internet. The report highlighted increased phishing campaigns, emerging ransomware variants, and a rise in supply‑chain attacks, but did not identify any new zero‑day exploits. Listeners are advised to review the full transcript for detailed indicators and to maintain current defensive posture.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33504",
-    "publishedAt": "2026-11-10T02:00:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "isc-stormcast-weekly-threat-landscape-overview",
-      "article-958ee648",
-      "958ee648",
-      "isc-stormcast-weekly-threat-landscape-overview-57dd81"
-    ]
-  },
-  {
-    "slug": "gitlab-critical-patch-release-19-5-4-19-4-6-19-3-8-f8ad1984",
-    "title": "GitLab Critical Patch Release: 19.5.4, 19.4.6, 19.3.8",
-    "summary": "On November 10, 2026, we released versions 19.5.4, 19.4.6, 19.3.8 for GitLab Community Edition and Enterprise Edition. These versions contain important bug and security fixes, and we strongly recommend that all self-managed GitLab installations be upgraded to one of these versions immediately. GitLab releases fixes for vulnerabilities in patch releases.",
-    "category": "General",
-    "severity": "CRITICAL",
-    "source": "GitLab Security Releases",
-    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-4-released/",
-    "publishedAt": "2026-11-10T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "gitlab-critical-patch-release-19-5-4-19-4-6-19-3-8",
-      "article-f8ad1984",
-      "f8ad1984",
-      "gitlab-critical-patch-release-19-5-4-19-4-6-19-3-8-78d304"
     ]
   }
 ];

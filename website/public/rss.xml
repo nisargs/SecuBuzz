@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 02:38:48 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 03:45:54 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch</title>
+      <link>https://secubuzz.com/news/apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384</guid>
+      <description><![CDATA[A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof‑of‑concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor‑issued hotfix and enable recommended detection rules.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:24:23 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ivanti RCE Flaw CVE-2026-121683 Demands Prompt Patch</title>
+      <link>https://secubuzz.com/news/ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-f1f37723</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-f1f37723</guid>
+      <description><![CDATA[Ivanti software contains a remote code execution vulnerability, CVE-2026-121683, that permits attackers to run arbitrary code on affected systems. The flaw originates from unchecked user input in the configuration parser, and publicly available proof‑of‑concept code confirms exploitation. Security teams should immediately apply the Ivanti patch or upgrade to the latest release and enable the vendor‑issued detection rules.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:19:15 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/citrix-ivanti-patch-critical-and-high-severity-vulnerab">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>ScreenConnect RCE Flaw Threatens Managed Service Providers</title>
+      <link>https://secubuzz.com/news/screenconnect-rce-flaw-threatens-managed-service-p-3acd5e7b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-rce-flaw-threatens-managed-service-p-3acd5e7b</guid>
+      <description><![CDATA[ScreenConnect, a support platform used by managed service providers, contains a remote code execution flaw that could allow attackers to execute arbitrary commands. The vulnerability arises from insufficient input validation in the session initiation module, and proof‑of‑concept exploits demonstrate its feasibility. Apply the vendor‑issued patch immediately, update to the latest ScreenConnect version, and enable the detection rules to mitigate risk.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:18:44 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/active-screenconnect-attacks-breach-msps-impact-dozens">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Kernel Update Addresses Moderate Security Issues</title>
+      <link>https://secubuzz.com/news/red-hat-kernel-update-addresses-moderate-security-1ddc94c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-kernel-update-addresses-moderate-security-1ddc94c3</guid>
+      <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 9 that addresses several moderate‑impact security issues. The update includes bug fixes and enhancements, with CVSS base scores linked to each CVE in the references. Security teams should apply the kernel update promptly and review the vendor documentation for any required configuration changes.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:05:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99135">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Releases perl-DBI Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-perl-dbi-security-update-f9d01140</link>
@@ -359,6 +395,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>USN-9056-1: Prosody Community Modules vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9056-1-prosody-community-modules-vulnerability-9f9f99e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9056-1-prosody-community-modules-vulnerability-9f9f99e0</guid>
+      <description><![CDATA[It was discovered that the LDAP authentication modules in Prosody Community Modules did not fully verify XMPP addresses when checking for administrator privileges. A remote attacker could possibly use this issue to gain administrator privileges.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:32:46 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9056-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Vanderbilt Restores Systems After Alleged Data Theft Attack</title>
       <link>https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</guid>
@@ -404,58 +449,13 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>PAN-OS Sensitive Info Disclosure CVE-2026-0331</title>
-      <link>https://secubuzz.com/news/pan-os-sensitive-info-disclosure-cve-2026-0331-f96bf5fa</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pan-os-sensitive-info-disclosure-cve-2026-0331-f96bf5fa</guid>
-      <description><![CDATA[A sensitive information disclosure flaw in Palo Alto Networks PAN‑OS lets attackers retrieve confidential configuration data via unauthenticated API calls. The vulnerability, CVE‑2026‑0331, exploits improper input validation in the management interface, yielding a medium‑severity exposure without credentials. Palo Alto released a patch in the latest PAN‑OS update; security teams should apply it or restrict API access.]]></description>
+      <title>Prisma Cloud Checkov SSRF Vulnerability CVE-2026-0323</title>
+      <link>https://secubuzz.com/news/prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0-be07f7be</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0-be07f7be</guid>
+      <description><![CDATA[A Server‑Side Request Forgery flaw in Prisma Cloud’s Checkov component lets attackers force the system to request arbitrary URLs. CVE‑2026‑0323 is a low‑severity flaw with no active exploitation, yet it could enable data exfiltration or reconnaissance. Prisma Cloud released an update sanitizing external requests; apply the patch immediately to mitigate SSRF risk.]]></description>
       <pubDate>Wed, 11 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://security.paloaltonetworks.com/CVE-2026-0331">Palo Alto Networks PSIRT</source>
+      <source url="https://security.paloaltonetworks.com/CVE-2026-0323">Palo Alto Networks PSIRT</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Update Addresses CVE-2026-113971</title>
-      <link>https://secubuzz.com/news/chromium-update-addresses-cve-2026-113971-bb8a4c72</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-update-addresses-cve-2026-113971-bb8a4c72</guid>
-      <description><![CDATA[Palo Alto Networks issued a Chromium update addressing a high‑severity flaw that could enable remote code execution via malicious web content. CVE‑2026‑113971 exploits a buffer overflow in the rendering engine, allowing attackers to run arbitrary code without user interaction. Apply the latest Chromium patch or disable the vulnerable feature to mitigate the risk until a vendor‑issued fix is released.]]></description>
-      <pubDate>Wed, 11 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://security.paloaltonetworks.com/PAN-SA-2026-0014">Palo Alto Networks PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>PAN‑OS GlobalProtect Authorization Bypass CVE‑2026‑0325</title>
-      <link>https://secubuzz.com/news/pan-os-globalprotect-authorization-bypass-cve-2026-4d1d2f39</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pan-os-globalprotect-authorization-bypass-cve-2026-4d1d2f39</guid>
-      <description><![CDATA[Palo Alto Networks disclosed CVE‑2026‑0325, an authorization bypass flaw in PAN‑OS GlobalProtect. The vulnerability allows an unauthenticated attacker to gain privileged access to the VPN portal, with a CVSS score indicating low impact; no active exploitation has been reported. Palo Alto recommends applying the latest PAN‑OS update that patches CVE‑2026‑0325 to prevent unauthorized access.]]></description>
-      <pubDate>Wed, 11 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://security.paloaltonetworks.com/CVE-2026-0325">Palo Alto Networks PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>PAN‑OS GlobalProtect Privilege Escalation CVE‑2026‑0327</title>
-      <link>https://secubuzz.com/news/pan-os-globalprotect-privilege-escalation-cve-2026-236bd6ca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pan-os-globalprotect-privilege-escalation-cve-2026-236bd6ca</guid>
-      <description><![CDATA[Palo Alto Networks identified CVE‑2026‑0327, a privilege escalation flaw in PAN‑OS GlobalProtect. The bug permits an authenticated user to elevate privileges on the VPN appliance, with a CVSS score reflecting low severity; no exploitation evidence exists. Apply the vendor’s latest PAN‑OS patch that addresses CVE‑2026‑0327 to eliminate the escalation vector.]]></description>
-      <pubDate>Wed, 11 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://security.paloaltonetworks.com/CVE-2026-0327">Palo Alto Networks PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>PAN‑OS Panorama RCE CVE‑2026‑0330</title>
-      <link>https://secubuzz.com/news/pan-os-panorama-rce-cve-2026-0330-9058a5c5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pan-os-panorama-rce-cve-2026-0330-9058a5c5</guid>
-      <description><![CDATA[Palo Alto Networks disclosed CVE‑2026‑0330, an authenticated remote code execution flaw in PAN‑OS Panorama. The vulnerability allows a logged‑in attacker to execute arbitrary code on the Panorama server, with a CVSS score indicating medium severity; no active exploitation has been reported. Install the latest PAN‑OS update that patches CVE‑2026‑0330 to prevent remote code execution.]]></description>
-      <pubDate>Wed, 11 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://security.paloaltonetworks.com/CVE-2026-0330">Palo Alto Networks PSIRT</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Lessons from 59 Linux Kernel Bug Reports</title>
-      <link>https://secubuzz.com/news/lessons-from-59-linux-kernel-bug-reports-3edacd66</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/lessons-from-59-linux-kernel-bug-reports-3edacd66</guid>
-      <description><![CDATA[Microsoft FORGE Lab researchers used codename MDASH to investigate Linux kernel vulnerabilities, resulting in 59 upstream bug reports, 33 assigned CVEs, and 38 merged fixes. The research includes eight demonstrated local root privilege-escalation exploits and examines the challenges of turning AI-generated findings into validated vulnerabilities and upstream fixes.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:55:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/">Microsoft Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

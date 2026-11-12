@@ -4499,5 +4499,17 @@
   "https://access.redhat.com/errata/RHSA-2026:99121",
   "https://access.redhat.com/errata/RHSA-2026:99136",
   "https://ubuntu.com/security/notices/USN-9058-1",
-  "http://www.zerodayinitiative.com/advisories/ZDI-26-912/"
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-912/",
+  "https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt",
+  "https://cybernewsai.com/blog/citrix-ivanti-patch-critical-and-high-severity-vulnerab",
+  "https://cybernewsai.com/blog/active-screenconnect-attacks-breach-msps-impact-dozens",
+  "https://access.redhat.com/errata/RHSA-2026:99135",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-911/",
+  "https://ubuntu.com/security/notices/USN-9056-1",
+  "https://security.paloaltonetworks.com/CVE-2026-0323",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-196",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-207",
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-218"
 ]
