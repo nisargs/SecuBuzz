@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 07:45:10 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 08:52:09 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>GitHub Discusses Accountability for AI Patch Flaws</title>
@@ -15,6 +15,15 @@
       <pubDate>Thu, 12 Nov 2026 07:00:38 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/12/marcelo-oliveira-github-agentic-autofix/">Help Net Security</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Abuse Windows Group Policy to Deploy Citrus Ransomware and Disable Microsoft Defender</title>
+      <link>https://secubuzz.com/news/hackers-abuse-windows-group-policy-to-deploy-citru-d80c4fa9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-abuse-windows-group-policy-to-deploy-citru-d80c4fa9</guid>
+      <description><![CDATA[A new ransomware group called Citrus is using Windows Group Policy to push its malware across entire company networks and switch off Microsoft Defender first. Group Policy is a trusted Windows tool that admins use to manage many computers at once.]]></description>
+      <pubDate>Thu, 12 Nov 2026 06:46:42 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-abuse-windows-group-policy/">Cyber Security News</source>
+      <category>Ransomware</category>
     </item>
     <item>
       <title>Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories</title>
@@ -80,13 +89,13 @@
       <category>Breach</category>
     </item>
     <item>
-      <title>ConnectWise ScreenConnect Compromised, SCKit Deployed</title>
-      <link>https://secubuzz.com/news/connectwise-screenconnect-compromised-sckit-deploy-5f59fc25</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/connectwise-screenconnect-compromised-sckit-deploy-5f59fc25</guid>
-      <description><![CDATA[Attackers hijacked cloud‑hosted ConnectWise ScreenConnect panels and pushed the SCKit malware toolkit to at least 288 devices across 48 organizations. The compromise used unauthorized panel access to deploy code on each host, infecting all 288 devices within about 90 minutes. Huntress recommends auditing ScreenConnect credentials, enforcing MFA, and applying vendor security updates to block further exploitation.]]></description>
+      <title>SCKit Worm Compromises ScreenConnect Panels, Infects 288 Devices</title>
+      <link>https://secubuzz.com/news/sckit-worm-compromises-screenconnect-panels-infect-0637915f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sckit-worm-compromises-screenconnect-panels-infect-0637915f</guid>
+      <description><![CDATA[Attackers leveraged the SCKit worm to compromise cloud‑hosted ConnectWise ScreenConnect panels, infecting at least 288 endpoints across 48 organizations. The worm exploited unauthorized panel access to deploy rogue ScreenConnect clients, establishing session‑cookie relays for persistence and remote control. Security teams must audit credentials, enforce MFA, terminate unverified clients, and apply vendor updates to block further exploitation.]]></description>
       <pubDate>Thu, 12 Nov 2026 03:57:06 GMT</pubDate>
       <source url="https://cybersecuritynews.com/connectwise-screenconnect-hijacked/">Cyber Security News</source>
-      <category>Vulnerability</category>
+      <category>Breach</category>
     </item>
     <item>
       <title>RHSA-2026:99148: Important: kernel security, bug fix, and enhancement update</title>
@@ -188,6 +197,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>WhiteArmor Ransomware Targets Maersk Shipping</title>
+      <link>https://secubuzz.com/news/whitearmor-ransomware-targets-maersk-shipping-13a6ca81</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/whitearmor-ransomware-targets-maersk-shipping-13a6ca81</guid>
+      <description><![CDATA[WhiteArmor ransomware infected Maersk's network, exfiltrating sensitive data before encrypting files. The malware leveraged credential theft and lateral movement, exploiting unpatched Windows services, causing operational disruption and potential data loss. Maersk should apply vendor-supplied patches, isolate affected systems, enforce multi-factor authentication, and conduct forensic analysis to mitigate further spread.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:12:05 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/maersk-confirms-data-breach-as-whitearmor-ransomware-de">CyberNews AI</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
       <title>RHSA-2026:99142: Important: .NET 10.0 security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-99142-important-net-10-0-security-bug-fi-0618a1cd</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99142-important-net-10-0-security-bug-fi-0618a1cd</guid>
@@ -251,6 +269,15 @@
       <category>Nation State</category>
     </item>
     <item>
+      <title>Japan Allocates Emergency Cybersecurity Funding Amid AI Cyber Threats</title>
+      <link>https://secubuzz.com/news/japan-allocates-emergency-cybersecurity-funding-am-8e5a6186</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/japan-allocates-emergency-cybersecurity-funding-am-8e5a6186</guid>
+      <description><![CDATA[Japan has announced an emergency funding package to strengthen national cybersecurity following an increase in AI-assisted breaches. The policy initiative funds public-private cyber responders, creates an economic ministry AI team, and expands government active cyber-defense powers. Defense leadership intends for these measures to bolster incident response capabilities and neutralize emerging threats against critical infrastructure.]]></description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>GitLab Patch Release: 19.5.5, 19.4.7</title>
       <link>https://secubuzz.com/news/gitlab-patch-release-19-5-5-19-4-7-be8ffb8f</link>
       <guid isPermaLink="true">https://secubuzz.com/news/gitlab-patch-release-19-5-5-19-4-7-be8ffb8f</guid>
@@ -284,6 +311,15 @@
       <description><![CDATA[Red Hat released a kernel update for Enterprise Linux 10, fixing multiple security issues that could enable privilege escalation or denial of service. The advisory labels the update Important and lists CVSS scores, but omits CVE IDs. Apply the patch promptly to close the flaws, as it includes bug fixes and enhancements that address the reported weaknesses.]]></description>
       <pubDate>Wed, 11 Nov 2026 23:34:30 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99139">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Google Releases Chrome 157 Update for Android Devices</title>
+      <link>https://secubuzz.com/news/google-releases-chrome-157-update-for-android-devi-388a861b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-chrome-157-update-for-android-devi-388a861b</guid>
+      <description><![CDATA[Google has released Chrome version 157 for Android devices to resolve stability issues and address underlying security flaws. This update incorporates the security fixes included in desktop releases alongside performance improvements across mobile browser environments. Mobile administrators and end users should update to version 157.0.8103.78 via Google Play to ensure proper patch deployment.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:30:00 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_02063106877.html">Google Chrome Releases</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -359,6 +395,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:99112: Important: firefox security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99112-important-firefox-security-update-660e2ead</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99112-important-firefox-security-update-660e2ead</guid>
+      <description><![CDATA[An update for firefox is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Wed, 11 Nov 2026 22:34:40 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99112">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>RHSA-2026:99134: Important: grafana security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-99134-important-grafana-security-update-71fbc78e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99134-important-grafana-security-update-71fbc78e</guid>
@@ -411,51 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 21:04:56 GMT</pubDate>
       <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-180-aws/">AWS Security Bulletins</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>AWS mcp-gateway-registry Privilege Escalation via API</title>
-      <link>https://secubuzz.com/news/aws-mcp-gateway-registry-privilege-escalation-via-5cea2f24</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/aws-mcp-gateway-registry-privilege-escalation-via-5cea2f24</guid>
-      <description><![CDATA[Amazon mcp-gateway-registry’s external management API lacks authorization, letting an authenticated user elevate to registry administrator. The flaw, present in versions 1.0.9–1.24.7, allows a crafted group import request to grant administrator scope to the attacker’s identity group, giving control over all registered gateway assets. AWS released a patch; security teams should upgrade to 1.24.8 or later and verify group import permissions.]]></description>
-      <pubDate>Wed, 11 Nov 2026 21:03:02 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-179-aws/">AWS Security Bulletins</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Notion Breach Exposes AI Chat Transcripts</title>
-      <link>https://secubuzz.com/news/notion-breach-exposes-ai-chat-transcripts-cfcd8ae8</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/notion-breach-exposes-ai-chat-transcripts-cfcd8ae8</guid>
-      <description><![CDATA[Notion revealed a breach at Fireworks AI that exposed AI chat transcripts from a few workspaces. Unauthorized access to Fireworks AI’s storage leaked user‑generated chat content, though no credentials were compromised. Notion advises users to review logs and reset passwords, while Fireworks AI has released a patch to secure the data.]]></description>
-      <pubDate>Wed, 11 Nov 2026 20:54:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>N-able N-central Platform Offline Over 33 Flaws</title>
-      <link>https://secubuzz.com/news/n-able-n-central-platform-offline-over-33-flaws-8a597079</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-n-central-platform-offline-over-33-flaws-8a597079</guid>
-      <description><![CDATA[N-able’s N-central RMM platform was taken offline after the discovery of 33 critical flaws that enable attacker takeover via public exploits. The vulnerabilities lack a single CVE identifier but collectively allow remote code execution and privilege escalation on affected installations. N-able released a hotfix; administrators should apply the update immediately and monitor for unauthorized access attempts.]]></description>
-      <pubDate>Wed, 11 Nov 2026 20:05:18 GMT</pubDate>
-      <source url="https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws">Dark Reading</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Extended Stable Update 156.0.8078.100 Released</title>
-      <link>https://secubuzz.com/news/chrome-extended-stable-update-156-0-8078-100-relea-dd0cbfeb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-extended-stable-update-156-0-8078-100-relea-dd0cbfeb</guid>
-      <description><![CDATA[Google Chrome released Stable channel build 156.0.8078.100 for Windows and Mac, rolling out over the next weeks. The update includes security patches, but the full list of changes is available in the release log, and users are encouraged to review it. Users should install the update via browser settings or wait for automatic rollout to ensure protection against known vulnerabilities.]]></description>
-      <pubDate>Wed, 11 Nov 2026 20:02:29 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_01570615041.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome Stable Channel Updated to 157.0.8103.78</title>
-      <link>https://secubuzz.com/news/chrome-stable-channel-updated-to-157-0-8103-78-a219ebe6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-stable-channel-updated-to-157-0-8103-78-a219ebe6</guid>
-      <description><![CDATA[Google Chrome updated the Stable channel to build 157.0.8103.78 for Windows, Mac, and Linux, with rollout scheduled over the coming weeks. Security changes are included, and a list of modifications can be found in the release log, with users advised to review the details. Installation can be performed manually via browser settings or will occur automatically, ensuring users receive protections.]]></description>
-      <pubDate>Wed, 11 Nov 2026 20:02:26 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html">Google Chrome Releases</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -29,6 +29,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "hackers-abuse-windows-group-policy-to-deploy-citru-d80c4fa9",
+    "title": "Hackers Abuse Windows Group Policy to Deploy Citrus Ransomware and Disable Microsoft Defender",
+    "summary": "A new ransomware group called Citrus is using Windows Group Policy to push its malware across entire company networks and switch off Microsoft Defender first. Group Policy is a trusted Windows tool that admins use to manage many computers at once.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-abuse-windows-group-policy/",
+    "publishedAt": "2026-11-12T06:46:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-abuse-windows-group-policy-to-deploy-citru",
+      "article-d80c4fa9",
+      "d80c4fa9",
+      "hackers-abuse-windows-group-policy-to-deploy-citru-5ff205",
+      "hackers-abuse-windows-group-policy-to-deploy-citrus-ransomwa"
+    ]
+  },
+  {
     "slug": "attacker-used-4-837-hijacked-github-accounts-to-ru-9de107bb",
     "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
     "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach.",
@@ -162,22 +181,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "connectwise-screenconnect-compromised-sckit-deploy-5f59fc25",
-    "title": "ConnectWise ScreenConnect Compromised, SCKit Deployed",
-    "summary": "Attackers hijacked cloud‑hosted ConnectWise ScreenConnect panels and pushed the SCKit malware toolkit to at least 288 devices across 48 organizations. The compromise used unauthorized panel access to deploy code on each host, infecting all 288 devices within about 90 minutes. Huntress recommends auditing ScreenConnect credentials, enforcing MFA, and applying vendor security updates to block further exploitation.",
-    "category": "Vulnerability",
+    "slug": "sckit-worm-compromises-screenconnect-panels-infect-0637915f",
+    "title": "SCKit Worm Compromises ScreenConnect Panels, Infects 288 Devices",
+    "summary": "Attackers leveraged the SCKit worm to compromise cloud‑hosted ConnectWise ScreenConnect panels, infecting at least 288 endpoints across 48 organizations. The worm exploited unauthorized panel access to deploy rogue ScreenConnect clients, establishing session‑cookie relays for persistence and remote control. Security teams must audit credentials, enforce MFA, terminate unverified clients, and apply vendor updates to block further exploitation.",
+    "category": "Breach",
     "severity": "HIGH",
     "source": "Cyber Security News",
     "sourceUrl": "https://cybersecuritynews.com/connectwise-screenconnect-hijacked/",
     "publishedAt": "2026-11-12T03:57:06.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Huntress",
+        "sourceUrl": "https://www.huntress.com/blog/sckit-worm-rogue-screenconnect"
+      }
+    ],
     "aliases": [
-      "connectwise-screenconnect-compromised-sckit-deploy",
-      "article-5f59fc25",
-      "5f59fc25",
-      "connectwise-screenconnect-compromised-sckit-deploy-3c4796",
-      "connectwise-screenconnect-compromised-sckit-deployed"
+      "sckit-worm-compromises-screenconnect-panels-infect",
+      "article-0637915f",
+      "0637915f",
+      "sckit-worm-compromises-screenconnect-panels-infect-3c4796",
+      "sckit-worm-compromises-screenconnect-panels-infects-288-devi"
     ]
   },
   {
@@ -391,6 +415,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "whitearmor-ransomware-targets-maersk-shipping-13a6ca81",
+    "title": "WhiteArmor Ransomware Targets Maersk Shipping",
+    "summary": "WhiteArmor ransomware infected Maersk's network, exfiltrating sensitive data before encrypting files. The malware leveraged credential theft and lateral movement, exploiting unpatched Windows services, causing operational disruption and potential data loss. Maersk should apply vendor-supplied patches, isolate affected systems, enforce multi-factor authentication, and conduct forensic analysis to mitigate further spread.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/maersk-confirms-data-breach-as-whitearmor-ransomware-de",
+    "publishedAt": "2026-11-12T03:12:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "whitearmor-ransomware-targets-maersk-shipping",
+      "article-13a6ca81",
+      "13a6ca81",
+      "whitearmor-ransomware-targets-maersk-shipping-7cb745"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99142-important-net-10-0-security-bug-fi-0618a1cd",
     "title": "RHSA-2026:99142: Important: .NET 10.0 security, bug fix, and enhancement update",
     "summary": "An update for .NET 10.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -520,6 +562,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "japan-allocates-emergency-cybersecurity-funding-am-8e5a6186",
+    "title": "Japan Allocates Emergency Cybersecurity Funding Amid AI Cyber Threats",
+    "summary": "Japan has announced an emergency funding package to strengthen national cybersecurity following an increase in AI-assisted breaches. The policy initiative funds public-private cyber responders, creates an economic ministry AI team, and expands government active cyber-defense powers. Defense leadership intends for these measures to bolster incident response capabilities and neutralize emerging threats against critical infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+    "publishedAt": "2026-11-12T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-allocates-emergency-cybersecurity-funding-am",
+      "article-8e5a6186",
+      "8e5a6186",
+      "japan-allocates-emergency-cybersecurity-funding-am-1cd82f",
+      "japan-allocates-emergency-cybersecurity-funding-amid-ai-cybe"
+    ]
+  },
+  {
     "slug": "gitlab-patch-release-19-5-5-19-4-7-be8ffb8f",
     "title": "GitLab Patch Release: 19.5.5, 19.4.7",
     "summary": "GitLab Community Edition and Enterprise Edition 19.5.5 Backport of &lsquo;Retry GCS default credentials after a latched metadata timeout&rsquo; Backport of &lsquo;Skip code navigation lookups when a project has no LSIF artifacts&rsquo; into 19.5 [19.5] Backport of &lsquo;Update oj to 3.17.8 to fix native memory-safety bugs&rsquo; Backport of &lsquo;Stop relation batch export spec leaking a foo directory&rsquo; Backport of &lsquo;Map sast_iac scanner to sast in approval policy rules&rsquo; Backport of &lsquo;Bump premailer to 1.27.0 to stop css_parser deprecation warnings&rsquo; (19.5) [19.5] Reapply the Orbit feature backports 19.4.7 Backport of &lsquo;Skip code navigation lookups when a project has no LSIF artifacts&rsquo; into 19.4 Backport of &lsquo;Retry GCS default credentials after a latched metadata timeout&rsquo; [19.4] Backport of &lsquo;Update oj to 3.17.8 to fix native memory-safety bugs&rsquo; Backport of &lsquo;Map sast_iac scanner to sast in approval policy rules&rsquo; Backport of &lsquo;Stop relation batch export spec leaking a foo directory&rsquo; Backport of &lsquo;Bump premailer to 1.27.0 to stop css_parser deprecation warnings&rsquo; (19.4) [19.4] Backport of &lsquo;Skip per-ref Redis cache in protected branch push check&rsquo; [19.4] Reapply the Orbit feature backports Important notes on upgrading These patches include database migrations that may impact your upgrade process.",
@@ -590,6 +651,25 @@ export const news: NewsBrief[] = [
       "article-dcf5048d",
       "dcf5048d",
       "red-hat-releases-kernel-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "google-releases-chrome-157-update-for-android-devi-388a861b",
+    "title": "Google Releases Chrome 157 Update for Android Devices",
+    "summary": "Google has released Chrome version 157 for Android devices to resolve stability issues and address underlying security flaws. This update incorporates the security fixes included in desktop releases alongside performance improvements across mobile browser environments. Mobile administrators and end users should update to version 157.0.8103.78 via Google Play to ensure proper patch deployment.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_02063106877.html",
+    "publishedAt": "2026-11-11T23:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-chrome-157-update-for-android-devi",
+      "article-388a861b",
+      "388a861b",
+      "google-releases-chrome-157-update-for-android-devi-790e97",
+      "google-releases-chrome-157-update-for-android-devices"
     ]
   },
   {
@@ -736,6 +816,24 @@ export const news: NewsBrief[] = [
       "article-2755b85e",
       "2755b85e",
       "red-hat-issues-qt6-qtbase-update-for-rhel-10-2-37d67f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99112-important-firefox-security-update-660e2ead",
+    "title": "RHSA-2026:99112: Important: firefox security update",
+    "summary": "An update for firefox is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99112",
+    "publishedAt": "2026-11-11T22:34:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99112-important-firefox-security-update",
+      "article-660e2ead",
+      "660e2ead",
+      "rhsa-2026-99112-important-firefox-security-update-37d680"
     ]
   },
   {
@@ -1576,21 +1674,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "lessons-from-59-linux-kernel-bug-reports-3edacd66",
-    "title": "Lessons from 59 Linux Kernel Bug Reports",
-    "summary": "Microsoft FORGE Lab researchers used codename MDASH to investigate Linux kernel vulnerabilities, resulting in 59 upstream bug reports, 33 assigned CVEs, and 38 merged fixes. The research includes eight demonstrated local root privilege-escalation exploits and examines the challenges of turning AI-generated findings into validated vulnerabilities and upstream fixes.",
-    "category": "General",
-    "severity": "MEDIUM",
+    "slug": "microsoft-forge-lab-discovers-59-linux-kernel-vuln-07c01504",
+    "title": "Microsoft FORGE Lab Discovers 59 Linux Kernel Vulnerabilities, 8 Root Exploits",
+    "summary": "Microsoft FORGE Lab used AI to uncover 59 Linux kernel bugs, including eight that enable local root privilege escalation. The findings yielded 33 CVEs, 38 upstream fixes, and prompted Microsoft to release detailed exploit proofs and remediation guidance. Security teams worldwide are urged to patch affected kernel versions to mitigate potential exploitation of these critical flaws.",
+    "category": "CVE",
+    "severity": "CRITICAL",
     "source": "Microsoft Security",
     "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
     "publishedAt": "2026-11-11T16:55:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/linux-kernel-security-bugs/"
+      }
+    ],
     "aliases": [
-      "lessons-from-59-linux-kernel-bug-reports",
-      "article-3edacd66",
-      "3edacd66",
-      "lessons-from-59-linux-kernel-bug-reports-240f5f"
+      "microsoft-forge-lab-discovers-59-linux-kernel-vuln",
+      "article-07c01504",
+      "07c01504",
+      "microsoft-forge-lab-discovers-59-linux-kernel-vuln-240f5f",
+      "microsoft-forge-lab-discovers-59-linux-kernel-vulnerabilitie"
     ]
   },
   {
@@ -2175,6 +2279,25 @@ export const news: NewsBrief[] = [
       "0c53ce65",
       "windows-signdrop-0-day-exploit-lets-attackers-gain-5900c9",
       "windows-signdrop-0-day-exploit-lets-attackers-gain-system-pr"
+    ]
+  },
+  {
+    "slug": "embed-security-updates-ai-soc-platform-for-custom-76e60024",
+    "title": "Embed Security Updates AI SOC Platform for Custom Investigations",
+    "summary": "Embed Security released updated capabilities for its AI SOC Platform to enhance threat detection engineering. The update introduces customer-built iSteps, NoiseIQ Memories, and Detection Engineering modules, allowing analysts to embed operational knowledge directly into the autonomous decision layer. Security operations teams can utilize these features to apply custom organizational expertise across continuous SOC workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/embed-security-expands-ai-soc-platform/",
+    "publishedAt": "2026-11-11T13:54:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "embed-security-updates-ai-soc-platform-for-custom",
+      "article-76e60024",
+      "76e60024",
+      "embed-security-updates-ai-soc-platform-for-custom-2b3726",
+      "embed-security-updates-ai-soc-platform-for-custom-investigat"
     ]
   },
   {
@@ -9082,6 +9205,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fortinet-patches-ldap-injection-vulnerability-in-f-98fca1fc",
+    "title": "Fortinet Patches LDAP Injection Vulnerability in FortiAuthenticator",
+    "summary": "Fortinet reported an LDAP injection flaw affecting its FortiAuthenticator identity management solution. The vulnerability carries a CVSSv3 score of 8.2 and stems from improper neutralization of special elements in LDAP queries, enabling authenticated authentication bypass. Exploitation relies on a compromised upstream Identity Provider or user-controlled NameID attributes, requiring security teams to audit IdP settings and update software.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Fortinet FortiGuard PSIRT",
+    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-255",
+    "publishedAt": "2026-11-10T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fortinet-patches-ldap-injection-vulnerability-in-f",
+      "article-98fca1fc",
+      "98fca1fc",
+      "fortinet-patches-ldap-injection-vulnerability-in-f-3bcda5",
+      "fortinet-patches-ldap-injection-vulnerability-in-fortiauthen"
+    ]
+  },
+  {
     "slug": "fortinet-format-string-vulnerability-enables-authe-baec2f21",
     "title": "Fortinet Format String Vulnerability Enables Authenticated RCE",
     "summary": "Fortinet FortiManager, FortiAnalyzer, and cloud APIs contain a format string flaw that lets authenticated users inject malicious specifiers. The CVSS v3 score of 7.2 indicates high‑severity code execution, enabling attackers to run arbitrary commands via crafted HTTP requests. Fortinet released firmware updates for FortiManager, FortiAnalyzer, and their cloud services; administrators should apply them immediately to mitigate the risk.",
@@ -9402,119 +9544,6 @@ export const news: NewsBrief[] = [
       "0064a9d7",
       "fortios-ssh-daemon-authentication-bypass-path-trav-3bcda5",
       "fortios-ssh-daemon-authentication-bypass-path-traversal"
-    ]
-  },
-  {
-    "slug": "improper-neutralization-of-special-elements-used-i-164bb451",
-    "title": "Improper neutralization of special elements used in a template engine",
-    "summary": "CVSSv3 Score: 7.2 A Server-Side Template Injection vulnerability [CWE-1336] in FortiManager, FortiManager Cloud, FortiAnalyzer and FortiAnalyzer Cloud may allow an authenticated attacker with restricted privileges to execute unauthorized code or commands via a specially crafted request.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-249",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "improper-neutralization-of-special-elements-used-i",
-      "article-164bb451",
-      "164bb451",
-      "improper-neutralization-of-special-elements-used-i-3bcda5",
-      "improper-neutralization-of-special-elements-used-in-a-templa"
-    ]
-  },
-  {
-    "slug": "fortimai-path-traversal-enables-unauthenticated-co-a1b58ab0",
-    "title": "FortiMai Path Traversal Enables Unauthenticated Command Execution",
-    "summary": "FortiMai suffers a path traversal flaw that allows unauthenticated attackers to execute arbitrary commands via crafted requests. The vulnerability, rated CVSSv3 7.5, exploits improper pathname limitation (CWE-22) and could enable remote code execution without authentication. Fortinet has not yet released a patch; security teams should monitor advisories and apply any future updates promptly.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-205",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimai-path-traversal-enables-unauthenticated-co",
-      "article-a1b58ab0",
-      "a1b58ab0",
-      "fortimai-path-traversal-enables-unauthenticated-co-3bcda6",
-      "fortimai-path-traversal-enables-unauthenticated-command-exec"
-    ]
-  },
-  {
-    "slug": "fortimanager-path-traversal-lets-authenticated-adm-d66b8fbf",
-    "title": "FortiManager Path Traversal Lets Authenticated Admin Write Files",
-    "summary": "FortiManager, FortiAnalyzer, and their cloud variants contain a path traversal flaw that permits administrators to write arbitrary files via a crafted archive. The vulnerability, scored CVSSv3 7.2 and identified as CWE-22, enables file overwrite or injection without requiring elevated privileges. Fortinet has not yet issued a patch; security teams should monitor advisories and apply any future updates promptly.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-250",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimanager-path-traversal-lets-authenticated-adm",
-      "article-d66b8fbf",
-      "d66b8fbf",
-      "fortimanager-path-traversal-lets-authenticated-adm-3bcda5",
-      "fortimanager-path-traversal-lets-authenticated-admin-write-f"
-    ]
-  },
-  {
-    "slug": "fortimail-path-traversal-enables-unauthenticated-r-f256e300",
-    "title": "FortiMail Path Traversal Enables Unauthenticated RCE",
-    "summary": "A path traversal flaw in FortiMail allows an unauthenticated attacker to craft requests that bypass directory restrictions. The vulnerability, rated CVSSv3 9.8, permits execution of arbitrary code or commands, exposing the system to full compromise. Fortinet has released an update; administrators should apply the FortiMail patch immediately to eliminate the RCE risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-199",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimail-path-traversal-enables-unauthenticated-r",
-      "article-f256e300",
-      "f256e300",
-      "fortimail-path-traversal-enables-unauthenticated-r-3bcda8",
-      "fortimail-path-traversal-enables-unauthenticated-rce"
-    ]
-  },
-  {
-    "slug": "fortimanager-analyzer-gui-allows-authenticated-rce-87376379",
-    "title": "FortiManager/Analyzer GUI Allows Authenticated RCE",
-    "summary": "FortiManager, FortiManager Cloud, FortiAnalyzer, and FortiAnalyzer Cloud contain a file path control flaw and a special element neutralization issue. The CVSSv3 7.2 vulnerability lets an authenticated administrator read or write arbitrary files or execute code via crafted GUI requests, risking full compromise. Fortinet released patches for all affected products; administrators should apply them promptly to eliminate the RCE vector.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-236",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimanager-analyzer-gui-allows-authenticated-rce",
-      "article-87376379",
-      "87376379",
-      "fortimanager-analyzer-gui-allows-authenticated-rce-3bcda5"
-    ]
-  },
-  {
-    "slug": "fortimail-improper-auth-lets-unauthenticated-users-9e84fa47",
-    "title": "FortiMail Improper Auth Lets Unauthenticated Users Delete Quarantined Messages",
-    "summary": "Fortinet FortiMail’s improper authentication flaw, CVSS 8.2, lets an unauthenticated attacker craft quarantine release requests to delete or release messages for any mailbox. The flaw enables privilege escalation and unauthorized data exfiltration by bypassing mailbox isolation, potentially exposing sensitive email content. Fortinet has issued a patch; administrators should update FortiMail firmware and enforce strict authentication controls to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-212",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimail-improper-auth-lets-unauthenticated-users",
-      "article-9e84fa47",
-      "9e84fa47",
-      "fortimail-improper-auth-lets-unauthenticated-users-3bcda6",
-      "fortimail-improper-auth-lets-unauthenticated-users-delete-qu"
     ]
   }
 ];
