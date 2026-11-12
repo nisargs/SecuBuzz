@@ -434,6 +434,126 @@ async function getCveMetrics(cve: string) {
   return { cve, vectorString: null };
 }
 
+// -------------------------------------------------------------
+// High-Efficiency Search, CVE & Alias Caches (D1 Quota Safeguards)
+// -------------------------------------------------------------
+const searchCache = new Map<string, { data: { count: number; results: any[] }; cachedAt: number }>();
+const SEARCH_CACHE_MAX = 500;
+const SEARCH_CACHE_TTL = 60 * 60 * 1000; // 1 hour in worker memory
+
+function getCachedSearchResult(key: string): { count: number; results: any[] } | null {
+  const entry = searchCache.get(key);
+  if (!entry) return null;
+  if (Date.now() - entry.cachedAt > SEARCH_CACHE_TTL) {
+    searchCache.delete(key);
+    return null;
+  }
+  return entry.data;
+}
+
+function setCachedSearchResult(key: string, data: { count: number; results: any[] }): void {
+  if (searchCache.size >= SEARCH_CACHE_MAX) {
+    const oldest = searchCache.keys().next().value;
+    if (oldest) searchCache.delete(oldest);
+  }
+  searchCache.set(key, { data, cachedAt: Date.now() });
+}
+
+let cachedKnownCves: Set<string> | null = null;
+let cachedKnownCvesTime = 0;
+
+async function getKnownCveSet(env: Env): Promise<Set<string>> {
+  const now = Date.now();
+  if (cachedKnownCves && now - cachedKnownCvesTime < 60 * 60 * 1000) {
+    return cachedKnownCves;
+  }
+
+  const set = new Set<string>();
+
+  // 1. Add all CVEs from in-memory active feed (0 D1 rows read)
+  try {
+    const feedArticles = await getArticles();
+    for (const a of feedArticles) {
+      if (Array.isArray(a.cves)) {
+        for (const c of a.cves) {
+          if (c && typeof c === 'string') {
+            set.add(normalizeHyphens(c).toUpperCase().trim());
+          }
+        }
+      }
+    }
+  } catch (err) {
+    console.error('Failed to extract CVEs from active feed:', err);
+  }
+
+  // 2. Add all historical CVEs from D1 archive (runs at most once per hour)
+  if (env.DB) {
+    try {
+      const { results } = await env.DB.prepare(
+        `SELECT DISTINCT json_each.value as cve
+         FROM articles, json_each(articles.cves_json)
+         WHERE json_each.value LIKE 'CVE-%';`
+      ).all<{ cve: string }>();
+
+      if (results && Array.isArray(results)) {
+        for (const r of results) {
+          if (r.cve && typeof r.cve === 'string') {
+            set.add(normalizeHyphens(r.cve).toUpperCase().trim());
+          }
+        }
+      }
+    } catch (e) {
+      console.error('Failed to query known CVEs from D1:', e);
+    }
+  }
+
+  if (set.size > 0) {
+    cachedKnownCves = set;
+    cachedKnownCvesTime = now;
+  }
+  return cachedKnownCves || set;
+}
+
+let cachedAliasMap: Map<string, string> | null = null;
+let cachedAliasMapTime = 0;
+
+async function getAliasToSlugMap(env: Env): Promise<Map<string, string>> {
+  const now = Date.now();
+  if (cachedAliasMap && now - cachedAliasMapTime < 60 * 60 * 1000) {
+    return cachedAliasMap;
+  }
+
+  const map = new Map<string, string>();
+  if (env.DB) {
+    try {
+      const { results } = await env.DB.prepare(
+        `SELECT slug, json_each.value as alias
+         FROM articles, json_each(articles.aliases_json)
+         WHERE json_each.value IS NOT NULL AND json_each.value != '';`
+      ).all<{ slug: string; alias: string }>();
+
+      if (results && Array.isArray(results)) {
+        for (const r of results) {
+          if (r.alias && r.slug) {
+            map.set(r.alias.toLowerCase().trim(), r.slug.toLowerCase().trim());
+          }
+        }
+      }
+    } catch (e) {
+      console.error('Failed to load alias map from D1:', e);
+    }
+  }
+
+  if (map.size > 0) {
+    cachedAliasMap = map;
+    cachedAliasMapTime = now;
+  }
+  return cachedAliasMap || map;
+}
+
+let cachedSitemapXml: string | null = null;
+let cachedSitemapTime = 0;
+
 function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisoriesList: KevVulnerability[]): boolean {
   const clean = pathname.replace(/\/+$/, '') || '/';
   const STATIC_ROUTES = new Set([
@@ -860,7 +980,30 @@ export default {
 
         const q = normalizeHyphens(rawQ);
         const cveMatch = q.match(/^CVE-(\d{4})-(\d{4,7})$/i);
+        const cacheKey = q.toLowerCase();
 
+        // 1. Check in-memory search cache (0 D1 rows read)
+        const cached = getCachedSearchResult(cacheKey);
+        if (cached) {
+          return jsonResponse(cached, 200, {
+            'Cache-Control': 'public, max-age=3600, s-maxage=86400',
+          });
+        }
+
+        // 2. Fast-filter CVE queries against in-memory known CVE set (0 D1 rows read on misses)
+        if (cveMatch) {
+          const normalizedCve = `CVE-${cveMatch[1]}-${cveMatch[2]}`.toUpperCase();
+          const knownCves = await getKnownCveSet(env);
+          if (!knownCves.has(normalizedCve)) {
+            const emptyResult = { count: 0, results: [] };
+            setCachedSearchResult(cacheKey, emptyResult);
+            return jsonResponse(emptyResult, 200, {
+              'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+            });
+          }
+        }
+
+        // 3. Query D1 (only for known CVEs or keyword queries)
         let rows: any[] = [];
         if (cveMatch) {
           // SQL '_' wildcard matches both ASCII '-' and Unicode dashes (e.g. U+2011)
@@ -893,9 +1036,11 @@ export default {
         }
 
         const formatted = rows.map(formatD1Article);
+        const responseData = { count: formatted.length, results: formatted };
+        setCachedSearchResult(cacheKey, responseData);
 
-        return jsonResponse({ count: formatted.length, results: formatted }, 200, {
-          'Cache-Control': 'public, max-age=60, s-maxage=300',
+        return jsonResponse(responseData, 200, {
+          'Cache-Control': 'public, max-age=3600, s-maxage=86400',
         });
       }
 
@@ -922,22 +1067,17 @@ export default {
           });
         }
 
-        // 2. Query D1
-        let row = await env.DB.prepare(
+        // 2. Resolve alias if present via in-memory alias map
+        const aliasMap = await getAliasToSlugMap(env);
+        const resolvedSlug = aliasMap.get(reqSlug) || reqSlug;
+
+        // 3. Query D1 by primary key (indexed lookup - 1 row read)
+        const row = await env.DB.prepare(
           `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
            FROM articles
            WHERE slug = ?
            LIMIT 1;`
-        ).bind(reqSlug).first<any>();
-
-        if (!row) {
-          row = await env.DB.prepare(
-            `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
-             FROM articles, json_each(articles.aliases_json)
-             WHERE json_each.value = ?
-             LIMIT 1;`
-          ).bind(reqSlug).first<any>();
-        }
+        ).bind(resolvedSlug).first<any>();
 
         if (row) {
           const article = formatD1Article(row);
@@ -995,6 +1135,12 @@ export default {
           await env.DB.batch(chunk);
         }
 
+        // Invalidate in-memory caches so fresh articles are immediately searchable
+        cachedKnownCves = null;
+        cachedAliasMap = null;
+        cachedSitemapXml = null;
+        searchCache.clear();
+
         return jsonResponse({ success: true, count: articles.length });
       }
 
@@ -1032,6 +1178,18 @@ export default {
 
       // Dynamic Sitemap for Search Engines
       if (url.pathname === '/sitemap.xml') {
+        const now = Date.now();
+        if (cachedSitemapXml && now - cachedSitemapTime < 60 * 60 * 1000) {
+          return new Response(cachedSitemapXml, {
+            status: 200,
+            headers: {
+              'Content-Type': 'application/xml; charset=utf-8',
+              'Cache-Control': 'public, max-age=3600',
+              ...CORS_HEADERS,
+            },
+          });
+        }
+
         const [cisa, d1Articles] = await Promise.all([
           getKevAdvisories(),
           env.DB
@@ -1041,6 +1199,8 @@ export default {
         const articles = d1Articles.length > 0 ? (d1Articles as any[]) : await getArticles();
         const advisories = [...cisa, ...(GITHUB_ADVISORIES as any)];
         const sitemapXml = generateSitemapXml(articles, advisories);
+        cachedSitemapXml = sitemapXml;
+        cachedSitemapTime = now;
         return new Response(sitemapXml, {
           status: 200,
           headers: {
@@ -1611,15 +1771,11 @@ export default {
 
             if (!inFeed && env.DB) {
               try {
-                let row = await env.DB.prepare(
+                const aliasMap = await getAliasToSlugMap(env);
+                const resolvedSlug = aliasMap.get(slug) || slug;
+                const row = await env.DB.prepare(
                   'SELECT * FROM articles WHERE slug = ? LIMIT 1'
-                ).bind(slug).first<any>();
-
-                if (!row) {
-                  row = await env.DB.prepare(
-                    'SELECT articles.* FROM articles, json_each(articles.aliases_json) WHERE json_each.value = ? LIMIT 1'
-                  ).bind(slug).first<any>();
-                }
+                ).bind(resolvedSlug).first<any>();
 
                 if (row) {
                   isArchivedMatch = true;
