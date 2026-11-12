@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 09:48:56 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 10:47:51 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues OpenSSH Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-openssh-security-update-418db160</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openssh-security-update-418db160</guid>
+      <description><![CDATA[Red Hat released an OpenSSH update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing multiple SSH vulnerabilities. Each flaw’s CVSS base score is listed in the references, indicating severity ranges but no confirmed exploitation. Apply the patch immediately to prevent potential remote code execution and maintain SSH service integrity.]]></description>
+      <pubDate>Thu, 12 Nov 2026 10:00:13 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99573">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>N-able Rushes Patches for Exploited N-central Zero-Days</title>
       <link>https://secubuzz.com/news/n-able-rushes-patches-for-exploited-n-central-zero-e8c9811c</link>
@@ -14,6 +23,15 @@
       <description><![CDATA[Threat actors are actively targeting zero-day vulnerabilities within N-able N-central remote management software following recent public disclosures. The malicious campaign surfaced shortly after a security researcher publicly dropped over 30 zero-day flaws affecting the enterprise management platform. In response to active threat activity, N-able released urgent patches specifically addressing the unauthenticated security vulnerabilities.]]></description>
       <pubDate>Thu, 12 Nov 2026 09:39:55 GMT</pubDate>
       <source url="https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Threat Actors Use GSocket for Persistent Linux Access</title>
+      <link>https://secubuzz.com/news/threat-actors-use-gsocket-for-persistent-linux-acc-27a2cc2c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threat-actors-use-gsocket-for-persistent-linux-acc-27a2cc2c</guid>
+      <description><![CDATA[Threat actors use the open‑source remote tool GSocket to keep access on Linux servers after patching initial exploitation vulnerabilities. This persistence method lets attackers re‑establish control even when known flaws are fixed, bypassing patch‑based defenses. Defenders should detect GSocket binaries, enforce whitelisting, and apply vendor patches to close this vector.]]></description>
+      <pubDate>Thu, 12 Nov 2026 09:38:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/">BleepingComputer</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -33,6 +51,15 @@
       <pubDate>Thu, 12 Nov 2026 09:28:31 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99566">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>MongoDB CVE-2026-118383 Causes Failover Crashes</title>
+      <link>https://secubuzz.com/news/mongodb-cve-2026-118383-causes-failover-crashes-31c90438</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mongodb-cve-2026-118383-causes-failover-crashes-31c90438</guid>
+      <description><![CDATA[A pre‑authentication flaw in MongoDB Server (CVE‑2026‑118383) lets attackers send two crafted requests that crash the database when a lagging replica is promoted to primary. The crash occurs only if the server still lacks recent changes, making failover a trigger for the denial‑of‑service condition. MongoDB released patched versions earlier this week; administrators should upgrade immediately to prevent service disruption.]]></description>
+      <pubDate>Thu, 12 Nov 2026 09:25:00 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html">The Hacker News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>GitHub Repos Hit by Credential‑Stealing Malware</title>
@@ -69,6 +96,15 @@
       <pubDate>Thu, 12 Nov 2026 08:15:03 GMT</pubDate>
       <source url="https://cybersecuritynews.com/github-accounts/">Cyber Security News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Palo Alto PAN-OS Enables Root Code Execution</title>
+      <link>https://secubuzz.com/news/palo-alto-pan-os-enables-root-code-execution-291262c4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-pan-os-enables-root-code-execution-291262c4</guid>
+      <description><![CDATA[A PAN-OS Panorama RCE flaw lets authenticated admins run arbitrary code with root privileges. CVE-2026-0330 exploits improper privilege checks during configuration, enabling full system compromise; no public exploit yet. Apply the critical November 11 patch for Panorama and update Cloud NGFW, Prisma Access, and standalone PAN-OS immediately in all affected environments.]]></description>
+      <pubDate>Thu, 12 Nov 2026 08:09:33 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/palo-alto-networks-pan-os-rce-vulnerability/">Cyber Security News</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>PCI DSS 4.0 Compliance Tool Rankings Released</title>
@@ -278,6 +314,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Fireworks AI Incident Exposes Notion Chat Data</title>
+      <link>https://secubuzz.com/news/fireworks-ai-incident-exposes-notion-chat-data-ccb5b9d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-ai-incident-exposes-notion-chat-data-ccb5b9d7</guid>
+      <description><![CDATA[Notion experienced a data breach stemming from a security incident involving Fireworks AI, exposing user chat data. The incident allowed unauthorized access to sensitive chat telemetry and conversational records through third-party platform integration. Security teams must review root-cause telemetry, deploy threat detection rules, and apply recommended patches to secure impacted integrations.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:18:58 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/notion-says-fireworks-breach-exposed-customer-ai-chat-t">CyberNews AI</source>
+      <category>Breach</category>
+    </item>
+    <item>
       <title>ScreenConnect RCE Flaw Threatens Managed Service Providers</title>
       <link>https://secubuzz.com/news/screenconnect-rce-flaw-threatens-managed-service-p-3acd5e7b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-rce-flaw-threatens-managed-service-p-3acd5e7b</guid>
@@ -321,6 +366,15 @@
       <pubDate>Thu, 12 Nov 2026 03:05:29 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99135">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Baker Tilly Reports Third-Party Data Exposure Incident</title>
+      <link>https://secubuzz.com/news/baker-tilly-reports-third-party-data-exposure-inci-9f880bf1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/baker-tilly-reports-third-party-data-exposure-inci-9f880bf1</guid>
+      <description><![CDATA[Baker Tilly reported a third-party data breach that exposed sensitive corporate audit and financial data. The security incident originated within an external vendor integration, resulting in unauthorized third-party access to confidential enterprise records. Security teams should review root-cause telemetry, implement proactive threat detection rules, and apply essential vendor patches immediately.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:03:16 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/baker-tilly-notifies-clients-of-data-breach-at-third-pa">CyberNews AI</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Red Hat Releases perl-DBI Security Update</title>
@@ -402,60 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 23:34:30 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99139">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Google Releases Chrome 157 Update for Android Devices</title>
-      <link>https://secubuzz.com/news/google-releases-chrome-157-update-for-android-devi-388a861b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-chrome-157-update-for-android-devi-388a861b</guid>
-      <description><![CDATA[Google has released Chrome version 157 for Android devices to resolve stability issues and address underlying security flaws. This update incorporates the security fixes included in desktop releases alongside performance improvements across mobile browser environments. Mobile administrators and end users should update to version 157.0.8103.78 via Google Play to ensure proper patch deployment.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:30:00 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_02063106877.html">Google Chrome Releases</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues .NET 10.0 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-net-10-0-security-update-cc10fd3f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-net-10-0-security-update-cc10fd3f</guid>
-      <description><![CDATA[Red Hat released a .NET 10.0 security update for RHEL 10, addressing multiple vulnerabilities that could allow remote code execution via the .NET runtime. The update contains fixes for several CVEs, each with a CVSS base score, but no active exploitation reported. Red Hat recommends applying the RHSA-2026:99143 update immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:25:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99143">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Perl-DBI 1.641 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-perl-dbi-1-641-security-update-adaf0bb9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-perl-dbi-1-641-security-update-adaf0bb9</guid>
-      <description><![CDATA[Red Hat released a security update for the perl-DBI 1.641 module on RHEL 8. The update addresses multiple vulnerabilities that could allow attackers to gain elevated privileges or execute arbitrary code, as indicated by the CVSS scores linked in the advisory. Administrators should apply the patch immediately and verify module integrity to prevent exploitation.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:16:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99210">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ChromeOS LTS‑150 Patches Critical Use‑After‑Free</title>
-      <link>https://secubuzz.com/news/chromeos-lts-150-patches-critical-use-after-free-f54d10a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromeos-lts-150-patches-critical-use-after-free-f54d10a7</guid>
-      <description><![CDATA[Google released ChromeOS LTS-150, patching numerous high‑severity CVEs including a critical CVE‑2026‑126879 use‑after‑free in the layout engine. The update addresses 18 CVEs such as CVE‑2026‑126901, CVE‑2026‑126856, and CVE‑2026‑126887, all of which could lead to code execution or denial of service.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:06:31 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/long-term-support-channel-update-for.html">Google Chrome Releases</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Baker Tilly Clients Informed of Third‑Party Breach</title>
-      <link>https://secubuzz.com/news/baker-tilly-clients-informed-of-third-party-breach-c8927c9e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/baker-tilly-clients-informed-of-third-party-breach-c8927c9e</guid>
-      <description><![CDATA[Baker Tilly Advisory Group notified clients that a provider breach exposed personal information of clients and their dependents. The incident involved unauthorized access to sensitive data, including names, addresses, and financial details, though the full scope remains under investigation. Clients should monitor accounts, change passwords, and review security practices while Baker Tilly coordinates with the provider to assess impact.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:01:31 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Unit 42 Reveals AI‑Powered Red Team Tool Usage</title>
-      <link>https://secubuzz.com/news/unit-42-reveals-ai-powered-red-team-tool-usage-2b919cff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unit-42-reveals-ai-powered-red-team-tool-usage-2b919cff</guid>
-      <description><![CDATA[Unit 42 identified adversaries deploying AI‑powered red team tools, such as ARTEX, to automate reconnaissance, credential harvesting, and lateral movement. These tools use large language models to generate phishing content, craft credential‑dump scripts, and orchestrate multi‑stage attack chains. Defenders should enable AI‑aware detection, enforce least‑privilege access, deploy MFA, and run regular red‑team simulations to validate controls.]]></description>
-      <pubDate>Wed, 11 Nov 2026 23:00:53 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/">Unit 42</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

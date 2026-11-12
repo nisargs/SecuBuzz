@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-openssh-security-update-418db160",
+    "title": "Red Hat Issues OpenSSH Security Update",
+    "summary": "Red Hat released an OpenSSH update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing multiple SSH vulnerabilities. Each flaw’s CVSS base score is listed in the references, indicating severity ranges but no confirmed exploitation. Apply the patch immediately to prevent potential remote code execution and maintain SSH service integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99573",
+    "publishedAt": "2026-11-12T10:00:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-openssh-security-update",
+      "article-418db160",
+      "418db160",
+      "red-hat-issues-openssh-security-update-37d670"
+    ]
+  },
+  {
     "slug": "n-able-rushes-patches-for-exploited-n-central-zero-e8c9811c",
     "title": "N-able Rushes Patches for Exploited N-central Zero-Days",
     "summary": "Threat actors are actively targeting zero-day vulnerabilities within N-able N-central remote management software following recent public disclosures. The malicious campaign surfaced shortly after a security researcher publicly dropped over 30 zero-day flaws affecting the enterprise management platform. In response to active threat activity, N-able released urgent patches specifically addressing the unauthenticated security vulnerabilities.",
@@ -27,6 +45,25 @@ export const news: NewsBrief[] = [
       "e8c9811c",
       "n-able-rushes-patches-for-exploited-n-central-zero-208753",
       "n-able-rushes-patches-for-exploited-n-central-zero-days"
+    ]
+  },
+  {
+    "slug": "threat-actors-use-gsocket-for-persistent-linux-acc-27a2cc2c",
+    "title": "Threat Actors Use GSocket for Persistent Linux Access",
+    "summary": "Threat actors use the open‑source remote tool GSocket to keep access on Linux servers after patching initial exploitation vulnerabilities. This persistence method lets attackers re‑establish control even when known flaws are fixed, bypassing patch‑based defenses. Defenders should detect GSocket binaries, enforce whitelisting, and apply vendor patches to close this vector.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/",
+    "publishedAt": "2026-11-12T09:38:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threat-actors-use-gsocket-for-persistent-linux-acc",
+      "article-27a2cc2c",
+      "27a2cc2c",
+      "threat-actors-use-gsocket-for-persistent-linux-acc-4192a0",
+      "threat-actors-use-gsocket-for-persistent-linux-access"
     ]
   },
   {
@@ -63,6 +100,26 @@ export const news: NewsBrief[] = [
       "article-ecf27d5a",
       "ecf27d5a",
       "red-hat-issues-libx11-update-for-rhel-8-6-support-37d670"
+    ]
+  },
+  {
+    "slug": "mongodb-cve-2026-118383-causes-failover-crashes-31c90438",
+    "title": "MongoDB CVE-2026-118383 Causes Failover Crashes",
+    "summary": "A pre‑authentication flaw in MongoDB Server (CVE‑2026‑118383) lets attackers send two crafted requests that crash the database when a lagging replica is promoted to primary. The crash occurs only if the server still lacks recent changes, making failover a trigger for the denial‑of‑service condition. MongoDB released patched versions earlier this week; administrators should upgrade immediately to prevent service disruption.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+    "publishedAt": "2026-11-12T09:25:00.000Z",
+    "cves": [
+      "CVE-2026-118383"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "mongodb-cve-2026-118383-causes-failover-crashes",
+      "article-31c90438",
+      "31c90438",
+      "mongodb-cve-2026-118383-causes-failover-crashes-5586e8"
     ]
   },
   {
@@ -136,6 +193,26 @@ export const news: NewsBrief[] = [
       "3a685923",
       "github-accounts-hijacked-secret-stealing-malware-d-71b926",
       "github-accounts-hijacked-secret-stealing-malware-deployed"
+    ]
+  },
+  {
+    "slug": "palo-alto-pan-os-enables-root-code-execution-291262c4",
+    "title": "Palo Alto PAN-OS Enables Root Code Execution",
+    "summary": "A PAN-OS Panorama RCE flaw lets authenticated admins run arbitrary code with root privileges. CVE-2026-0330 exploits improper privilege checks during configuration, enabling full system compromise; no public exploit yet. Apply the critical November 11 patch for Panorama and update Cloud NGFW, Prisma Access, and standalone PAN-OS immediately in all affected environments.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/palo-alto-networks-pan-os-rce-vulnerability/",
+    "publishedAt": "2026-11-12T08:09:33.000Z",
+    "cves": [
+      "CVE-2026-0330"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-pan-os-enables-root-code-execution",
+      "article-291262c4",
+      "291262c4",
+      "palo-alto-pan-os-enables-root-code-execution-6d5f41"
     ]
   },
   {
@@ -580,6 +657,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fireworks-ai-incident-exposes-notion-chat-data-ccb5b9d7",
+    "title": "Fireworks AI Incident Exposes Notion Chat Data",
+    "summary": "Notion experienced a data breach stemming from a security incident involving Fireworks AI, exposing user chat data. The incident allowed unauthorized access to sensitive chat telemetry and conversational records through third-party platform integration. Security teams must review root-cause telemetry, deploy threat detection rules, and apply recommended patches to secure impacted integrations.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/notion-says-fireworks-breach-exposed-customer-ai-chat-t",
+    "publishedAt": "2026-11-12T03:18:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fireworks-ai-incident-exposes-notion-chat-data",
+      "article-ccb5b9d7",
+      "ccb5b9d7",
+      "fireworks-ai-incident-exposes-notion-chat-data-b780d3"
+    ]
+  },
+  {
     "slug": "screenconnect-rce-flaw-threatens-managed-service-p-3acd5e7b",
     "title": "ScreenConnect RCE Flaw Threatens Managed Service Providers",
     "summary": "ScreenConnect, a support platform used by managed service providers, contains a remote code execution flaw that could allow attackers to execute arbitrary commands. The vulnerability arises from insufficient input validation in the session initiation module, and proof‑of‑concept exploits demonstrate its feasibility. Apply the vendor‑issued patch immediately, update to the latest ScreenConnect version, and enable the detection rules to mitigate risk.",
@@ -670,6 +765,25 @@ export const news: NewsBrief[] = [
       "1ddc94c3",
       "red-hat-kernel-update-addresses-moderate-security-37d67f",
       "red-hat-kernel-update-addresses-moderate-security-issues"
+    ]
+  },
+  {
+    "slug": "baker-tilly-reports-third-party-data-exposure-inci-9f880bf1",
+    "title": "Baker Tilly Reports Third-Party Data Exposure Incident",
+    "summary": "Baker Tilly reported a third-party data breach that exposed sensitive corporate audit and financial data. The security incident originated within an external vendor integration, resulting in unauthorized third-party access to confidential enterprise records. Security teams should review root-cause telemetry, implement proactive threat detection rules, and apply essential vendor patches immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/baker-tilly-notifies-clients-of-data-breach-at-third-pa",
+    "publishedAt": "2026-11-12T03:03:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "baker-tilly-reports-third-party-data-exposure-inci",
+      "article-9f880bf1",
+      "9f880bf1",
+      "baker-tilly-reports-third-party-data-exposure-inci-1f8243",
+      "baker-tilly-reports-third-party-data-exposure-incident"
     ]
   },
   {
@@ -911,6 +1025,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99209-important-perl-dbi-security-update-401ead4f",
+    "title": "RHSA-2026:99209: Important: perl-DBI security update",
+    "summary": "An update for perl-DBI is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99209",
+    "publishedAt": "2026-11-11T23:02:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99209-important-perl-dbi-security-update",
+      "article-401ead4f",
+      "401ead4f",
+      "rhsa-2026-99209-important-perl-dbi-security-update-37d67c"
+    ]
+  },
+  {
     "slug": "baker-tilly-clients-informed-of-third-party-breach-c8927c9e",
     "title": "Baker Tilly Clients Informed of Third‑Party Breach",
     "summary": "Baker Tilly Advisory Group notified clients that a provider breach exposed personal information of clients and their dependents. The incident involved unauthorized access to sensitive data, including names, addresses, and financial details, though the full scope remains under investigation. Clients should monitor accounts, change passwords, and review security practices while Baker Tilly coordinates with the provider to assess impact.",
@@ -963,6 +1095,25 @@ export const news: NewsBrief[] = [
       "1b502196",
       "screenconnect-malware-breaches-msps-targets-custom-308e6c",
       "screenconnect-malware-breaches-msps-targets-customer-devices"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99132-important-webkit2gtk3-security-upd-c7d0806f",
+    "title": "RHSA-2026:99132: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99132",
+    "publishedAt": "2026-11-11T22:47:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99132-important-webkit2gtk3-security-upd",
+      "article-c7d0806f",
+      "c7d0806f",
+      "rhsa-2026-99132-important-webkit2gtk3-security-upd-37d67f",
+      "rhsa-2026-99132-important-webkit2gtk3-security-update"
     ]
   },
   {
@@ -1718,6 +1869,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "palo-alto-patches-globalprotect-privilege-flaw-cve-413a9d4f",
+    "title": "Palo Alto Patches GlobalProtect Privilege Flaw CVE-2026-0324",
+    "summary": "Palo Alto Networks disclosed an incorrect privilege management vulnerability, designated as CVE-2026-0324, affecting the GlobalProtect App for Windows. The flaw resides within the integrated OPSWAT MetaDefender Endpoint Security SDK, allowing local users to gain elevated system privileges. Administrators are advised to apply vendor software updates and update the underlying SDK component to mitigate privilege escalation risks.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0324",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [
+      "CVE-2026-0324"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "palo-alto-patches-globalprotect-privilege-flaw-cve",
+      "article-413a9d4f",
+      "413a9d4f",
+      "palo-alto-patches-globalprotect-privilege-flaw-cve-7ae305",
+      "palo-alto-patches-globalprotect-privilege-flaw-cve-2026-0324"
+    ]
+  },
+  {
     "slug": "pan-os-buffer-overflow-vulnerability-cve-2026-0329-af331d51",
     "title": "PAN-OS Buffer Overflow Vulnerability CVE-2026-0329",
     "summary": "A buffer overflow in PAN-OS’s packet processing code, identified as CVE-2026-0329, could allow attackers to execute arbitrary code. The flaw triggers when the system processes malformed protocol data, with a medium CVSS score; no public exploit is known. Palo Alto Networks has released a patch that fixes the overflow; administrators should apply the update immediately to prevent potential exploitation.",
@@ -1993,6 +2165,27 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-asp-net-core-privilege-flaw-guid-3f6c8e5d",
+    "title": "Microsoft Updates ASP.NET Core Privilege Flaw Guidance",
+    "summary": "Microsoft issued an informational update regarding an elevation of privilege vulnerability in ASP.NET Core tracked under CVE-2026-114146. The security advisory updates documentation links and metadata without altering the underlying technical flaw, which enables privilege escalation. Security teams should consult the revised Microsoft advisory links to verify patch status and deploy required software updates.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114146",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114146"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-asp-net-core-privilege-flaw-guid",
+      "article-3f6c8e5d",
+      "3f6c8e5d",
+      "microsoft-updates-asp-net-core-privilege-flaw-guid-1feaf4",
+      "microsoft-updates-asp-net-core-privilege-flaw-guidance"
     ]
   },
   {
@@ -9386,195 +9579,6 @@ export const news: NewsBrief[] = [
       "article-de25091e",
       "de25091e",
       "2026-digital-forensics-tools-ranking-6a2703"
-    ]
-  },
-  {
-    "slug": "claude-fable-5-2-outperforms-gpt-6-in-cyberattack-5e0c9d71",
-    "title": "Claude Fable 5.2 Outperforms GPT-6 in Cyberattack Benchmark",
-    "summary": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2 models, which were evaluated against GPT‑6 in a multi‑stage cyberattack benchmark. The models demonstrated enhanced coding, reasoning, and vision, enabling engineers to complete complex software migrations, design electronic devices, and solve advanced physics problems during pre‑release training. Benchmark results are publicly available, enabling teams to assess LLM readiness for cyber‑defense.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
-    "publishedAt": "2026-11-10T08:16:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-fable-5-2-outperforms-gpt-6-in-cyberattack",
-      "article-5e0c9d71",
-      "5e0c9d71",
-      "claude-fable-5-2-outperforms-gpt-6-in-cyberattack-519b9d",
-      "claude-fable-5-2-outperforms-gpt-6-in-cyberattack-benchmark"
-    ]
-  },
-  {
-    "slug": "2026-genai-soc-copilots-ranking-083dfa4a",
-    "title": "2026 GenAI SOC Copilots Ranking",
-    "summary": "A 2026 ranking evaluates GenAI SOC copilots, distinguishing assistants that summarize and draft within human workflows from autonomous agents that manage tier‑1 queues under policy guardrails. The list assesses tools on triage efficiency and platform integration, highlighting both suite copilots and AI analysts. Security teams can use the ranking to select tools aligned with their triage and automation needs.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-genai-soc-copilots/",
-    "publishedAt": "2026-11-10T08:14:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "2026-genai-soc-copilots-ranking",
-      "article-083dfa4a",
-      "083dfa4a",
-      "2026-genai-soc-copilots-ranking-78d757"
-    ]
-  },
-  {
-    "slug": "fortinet-patches-ldap-injection-vulnerability-in-f-98fca1fc",
-    "title": "Fortinet Patches LDAP Injection Vulnerability in FortiAuthenticator",
-    "summary": "Fortinet reported an LDAP injection flaw affecting its FortiAuthenticator identity management solution. The vulnerability carries a CVSSv3 score of 8.2 and stems from improper neutralization of special elements in LDAP queries, enabling authenticated authentication bypass. Exploitation relies on a compromised upstream Identity Provider or user-controlled NameID attributes, requiring security teams to audit IdP settings and update software.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-255",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-patches-ldap-injection-vulnerability-in-f",
-      "article-98fca1fc",
-      "98fca1fc",
-      "fortinet-patches-ldap-injection-vulnerability-in-f-3bcda5",
-      "fortinet-patches-ldap-injection-vulnerability-in-fortiauthen"
-    ]
-  },
-  {
-    "slug": "fortinet-format-string-vulnerability-enables-authe-baec2f21",
-    "title": "Fortinet Format String Vulnerability Enables Authenticated RCE",
-    "summary": "Fortinet FortiManager, FortiAnalyzer, and cloud APIs contain a format string flaw that lets authenticated users inject malicious specifiers. The CVSS v3 score of 7.2 indicates high‑severity code execution, enabling attackers to run arbitrary commands via crafted HTTP requests. Fortinet released firmware updates for FortiManager, FortiAnalyzer, and their cloud services; administrators should apply them immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-220",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-format-string-vulnerability-enables-authe",
-      "article-baec2f21",
-      "baec2f21",
-      "fortinet-format-string-vulnerability-enables-authe-3bcda6",
-      "fortinet-format-string-vulnerability-enables-authenticated-r"
-    ]
-  },
-  {
-    "slug": "fortinet-discloses-high-severity-sql-injection-fla-70d3c6f0",
-    "title": "Fortinet Discloses High Severity SQL Injection Flaw in FortiAuthenticator",
-    "summary": "Fortinet disclosed an SQL injection security vulnerability affecting the FortiAuthenticator identity platform. The flaw stems from improper neutralization of special elements in SQL commands, carrying a CVSSv3 score of 8.8 under CWE-89. This vulnerability allows an authenticated attacker to execute unauthorized commands directly on the underlying database.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-256",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-discloses-high-severity-sql-injection-fla",
-      "article-70d3c6f0",
-      "70d3c6f0",
-      "fortinet-discloses-high-severity-sql-injection-fla-3bcda5",
-      "fortinet-discloses-high-severity-sql-injection-flaw-in-forti"
-    ]
-  },
-  {
-    "slug": "fortimail-os-command-injection-vulnerability-30338459",
-    "title": "FortiMail OS Command Injection Vulnerability",
-    "summary": "Fortinet’s FortiMail, FortiRecorder, and FortiVoice have an OS command injection flaw that lets authenticated attackers execute arbitrary commands via crafted HTTP requests. Rated CVSSv3 8.8, the flaw exploits improper neutralization of special elements in OS commands, enabling remote code execution. Fortinet released a patch; teams should upgrade firmware immediately and enforce strict input validation to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-196",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimail-os-command-injection-vulnerability",
-      "article-30338459",
-      "30338459",
-      "fortimail-os-command-injection-vulnerability-3bcda8"
-    ]
-  },
-  {
-    "slug": "fortinet-patches-critical-authorization-vulnerabil-75f51136",
-    "title": "Fortinet Patches Critical Authorization Vulnerability in FortiMail",
-    "summary": "Fortinet addressed a critical flaw in FortiMail enabling unauthenticated remote attackers to manipulate webmail sessions via crafted HTTP requests. Rated with a CVSS 9.1 score, the incorrect authorization weakness allows adversaries to hijack sessions to read or send encrypted email as any recipient. Administrators should immediately apply the latest FortiGuard PSIRT software updates to safeguard affected FortiMail enterprise deployments.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-207",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-patches-critical-authorization-vulnerabil",
-      "article-75f51136",
-      "75f51136",
-      "fortinet-patches-critical-authorization-vulnerabil-3bcda6",
-      "fortinet-patches-critical-authorization-vulnerability-in-for"
-    ]
-  },
-  {
-    "slug": "fortinet-fixes-high-severity-command-injection-fla-656e18ef",
-    "title": "Fortinet Fixes High Severity Command Injection Flaw in FortiMail",
-    "summary": "Fortinet resolved an administrative security flaw in FortiMail targeted through HTTP requests. Featuring a CVSS 7.6 score, the command argument injection vulnerability enables authenticated domain administrators to execute root code, tamper with files, and delete tenant users on paired FortiAuthenticator hardware. Enterprise administrators must consult the FortiGuard PSIRT advisory to apply security patches across affected installations.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-218",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-fixes-high-severity-command-injection-fla",
-      "article-656e18ef",
-      "656e18ef",
-      "fortinet-fixes-high-severity-command-injection-fla-3bcda6",
-      "fortinet-fixes-high-severity-command-injection-flaw-in-forti"
-    ]
-  },
-  {
-    "slug": "fortinet-fixes-authentication-bypass-flaw-in-forti-afc192a8",
-    "title": "Fortinet Fixes Authentication Bypass Flaw in FortiAuthenticator",
-    "summary": "Fortinet reported a critical incorrect authorization vulnerability affecting FortiAuthenticator identity management software. Tracked under CWE-863 with a CVSSv3 score of 9.1, the flaw allows remote attackers to bypass authentication controls and gain unauthorized system access. Security teams should review Fortinet PSIRT advisories and apply available software patches immediately to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-265",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-fixes-authentication-bypass-flaw-in-forti",
-      "article-afc192a8",
-      "afc192a8",
-      "fortinet-fixes-authentication-bypass-flaw-in-forti-3bcda5",
-      "fortinet-fixes-authentication-bypass-flaw-in-fortiauthentica"
-    ]
-  },
-  {
-    "slug": "improper-privilege-management-e356f9b9",
-    "title": "Improper privilege management",
-    "summary": "CVSSv3 Score: 7.2 An Improper Privilege Management vulnerability[CWE-269] in FortiAuthenticator may allow an authenticated attacker to escalate privileges. Revised on 2026-11-10 00:00:00. The vulnerability is tracked as CVE-2026-126249.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-263",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [
-      "CVE-2026-126249"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "improper-privilege-management",
-      "article-e356f9b9",
-      "e356f9b9",
-      "improper-privilege-management-3bcda5"
     ]
   }
 ];
