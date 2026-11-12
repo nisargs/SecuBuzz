@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 19:44:59 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 20:26:00 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues libX11 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-libx11-security-update-c4881392</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libx11-security-update-c4881392</guid>
+      <description><![CDATA[Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial‑of‑service or privilege escalation risks.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:17:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99754">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues libXtst Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-libxtst-security-update-0390e8d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libxtst-security-update-0390e8d5</guid>
+      <description><![CDATA[Red Hat released a security update for libXtst affecting Enterprise Linux 7 Extended Lifecycle Support. The update fixes multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and reduces privilege escalation risk. Customers should apply the patch promptly to prevent potential denial‑of‑service or privilege escalation and mitigate related risks.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:10:28 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99745">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Issues Critical Fence‑Agents Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-critical-fence-agents-update-36ba2f36</link>
@@ -42,6 +60,15 @@
       <pubDate>Thu, 12 Nov 2026 18:35:49 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99763">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Maersk Reports Legacy System Cyber Incident</title>
+      <link>https://secubuzz.com/news/maersk-reports-legacy-system-cyber-incident-742c5924</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/maersk-reports-legacy-system-cyber-incident-742c5924</guid>
+      <description><![CDATA[Maersk disclosed a cyber incident that impacted its legacy system, adding to a series of attacks on shipping ports worldwide. The event follows a ransomware attack on Brazil’s largest port last week, highlighting persistent threats to maritime infrastructure. Maritime operators should review legacy system security, apply available patches, and strengthen monitoring to mitigate future incidents.]]></description>
+      <pubDate>Thu, 12 Nov 2026 18:28:00 GMT</pubDate>
+      <source url="https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system">The Record</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories</title>
@@ -95,6 +122,15 @@
       <description><![CDATA[Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply‑chain controls, and monitor agent behavior for anomalous execution.]]></description>
       <pubDate>Thu, 12 Nov 2026 17:00:00 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/">Microsoft Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ubuntu Patches Multiple Kernel Subsystem Vulnerabilities</title>
+      <link>https://secubuzz.com/news/ubuntu-patches-multiple-kernel-subsystem-vulnerabi-a74d4372</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-multiple-kernel-subsystem-vulnerabi-a74d4372</guid>
+      <description><![CDATA[Ubuntu released a kernel update addressing several security issues that could allow attackers to compromise systems via vulnerable subsystems. The update fixes flaws in network file systems, stream parsing, ARM64, PowerPC, RISC‑V, S390, UML, x86, block layer, Android, Bluetooth, TPM, and other drivers. Users should apply the update promptly to eliminate potential privilege escalation or denial‑of‑service risks.]]></description>
+      <pubDate>Thu, 12 Nov 2026 16:32:50 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9018-2">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -323,6 +359,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Siemens Desigo, Gridscale</title>
+      <link>https://secubuzz.com/news/siemens-desigo-gridscale-6a76e33a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-desigo-gridscale-6a76e33a</guid>
+      <description><![CDATA[The following versions of Siemens Desigo, Gridscale are affected: Desigo CC family V8 vers:all/* (CVE-2026-111497) Desigo CC family V9 vers:all/* (CVE-2026-111497) Gridscale X DSA vers:intdot/>=5.3| Gridscale X PSS®E vers:intdot/ CVSS Vendor Equipment v3 9.8 Siemens Desigo CC family V8 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.]]></description>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02">CISA</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Siemens RUGGEDCOM APE1808</title>
+      <link>https://secubuzz.com/news/siemens-ruggedcom-ape1808-37c64b1f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-ruggedcom-ape1808-37c64b1f</guid>
+      <description><![CDATA[The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.]]></description>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04">CISA</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Siemens RUGGEDCOM APE1808 Affected by PHP2Shell Flaw</title>
       <link>https://secubuzz.com/news/siemens-ruggedcom-ape1808-affected-by-php2shell-fl-540fe133</link>
       <guid isPermaLink="true">https://secubuzz.com/news/siemens-ruggedcom-ape1808-affected-by-php2shell-fl-540fe133</guid>
@@ -401,60 +455,6 @@
       <description><![CDATA[An update for gdb is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
       <pubDate>Thu, 12 Nov 2026 11:38:29 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99597">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution</title>
-      <link>https://secubuzz.com/news/ptc-patches-critical-windchill-and-flexplm-flaw-th-44a3192a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ptc-patches-critical-windchill-and-flexplm-flaw-th-44a3192a</guid>
-      <description><![CDATA[PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0.]]></description>
-      <pubDate>Thu, 12 Nov 2026 11:33:15 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99596: Important: gdb security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99596-important-gdb-security-update-3fbde677</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99596-important-gdb-security-update-3fbde677</guid>
-      <description><![CDATA[An update for gdb is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Thu, 12 Nov 2026 11:22:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99596">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99594: Important: gdb security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99594-important-gdb-security-update-6cea9c6b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99594-important-gdb-security-update-6cea9c6b</guid>
-      <description><![CDATA[An update for gdb is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Thu, 12 Nov 2026 11:13:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99594">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Scripts Enable Rapid Lateral Movement in Retail Breach</title>
-      <link>https://secubuzz.com/news/ai-scripts-enable-rapid-lateral-movement-in-retail-9f16049b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-scripts-enable-rapid-lateral-movement-in-retail-9f16049b</guid>
-      <description><![CDATA[An attacker used AI-generated scripts after hand-typed commands failed to breach a US retailer. The AI scripts facilitated lateral movement within minutes, indicating a rapid compromise of internal systems and exposing sensitive data. Security teams should investigate compromised accounts, isolate affected segments, review AI-based attack mitigations, and strengthen monitoring immediately.]]></description>
-      <pubDate>Thu, 12 Nov 2026 11:00:00 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer">Dark Reading</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99576: Important: rsync security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99576-important-rsync-security-update-ecc89d3d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99576-important-rsync-security-update-ecc89d3d</guid>
-      <description><![CDATA[An update for rsync is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 10:54:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99576">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99592: Important: openssh security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99592-important-openssh-security-update-8e522824</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99592-important-openssh-security-update-8e522824</guid>
-      <description><![CDATA[An update for openssh is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Thu, 12 Nov 2026 10:48:53 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99592">Red Hat Security Advisories</source>
       <category>General</category>
     </item>
   </channel>

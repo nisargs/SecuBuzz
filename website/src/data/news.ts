@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-libx11-security-update-c4881392",
+    "title": "Red Hat Issues libX11 Security Update",
+    "summary": "Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial‑of‑service or privilege escalation risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99754",
+    "publishedAt": "2026-11-12T20:17:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libx11-security-update",
+      "article-c4881392",
+      "c4881392",
+      "red-hat-issues-libx11-security-update-37d669"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-libxtst-security-update-0390e8d5",
+    "title": "Red Hat Issues libXtst Security Update",
+    "summary": "Red Hat released a security update for libXtst affecting Enterprise Linux 7 Extended Lifecycle Support. The update fixes multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and reduces privilege escalation risk. Customers should apply the patch promptly to prevent potential denial‑of‑service or privilege escalation and mitigate related risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99745",
+    "publishedAt": "2026-11-12T20:10:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libxtst-security-update",
+      "article-0390e8d5",
+      "0390e8d5",
+      "red-hat-issues-libxtst-security-update-37d669"
+    ]
+  },
+  {
     "slug": "red-hat-issues-critical-fence-agents-update-36ba2f36",
     "title": "Red Hat Issues Critical Fence‑Agents Update",
     "summary": "Red Hat released a critical security update for fence‑agents on RHEL 9.8 EUS, addressing multiple high‑impact vulnerabilities. The update mitigates remote code execution risks by patching underlying flaws identified in the fence‑agents component, with CVSS base scores indicating severe impact. Administrators should apply the RHSA‑2026:99693 update immediately and verify that fence‑agents is running the latest patched version.",
@@ -85,6 +121,24 @@ export const news: NewsBrief[] = [
       "9a27c18e",
       "rhsa-2026-99763-critical-red-hat-single-sign-on-7-37d668",
       "rhsa-2026-99763-critical-red-hat-single-sign-on-7-6-14-secur"
+    ]
+  },
+  {
+    "slug": "maersk-reports-legacy-system-cyber-incident-742c5924",
+    "title": "Maersk Reports Legacy System Cyber Incident",
+    "summary": "Maersk disclosed a cyber incident that impacted its legacy system, adding to a series of attacks on shipping ports worldwide. The event follows a ransomware attack on Brazil’s largest port last week, highlighting persistent threats to maritime infrastructure. Maritime operators should review legacy system security, apply available patches, and strengthen monitoring to mitigate future incidents.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system",
+    "publishedAt": "2026-11-12T18:28:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "maersk-reports-legacy-system-cyber-incident",
+      "article-742c5924",
+      "742c5924",
+      "maersk-reports-legacy-system-cyber-incident-7f0c84"
     ]
   },
   {
@@ -197,6 +251,25 @@ export const news: NewsBrief[] = [
       "article-5f5a52ca",
       "5f5a52ca",
       "poisoned-ai-training-enables-remote-code-execution-30f228"
+    ]
+  },
+  {
+    "slug": "ubuntu-patches-multiple-kernel-subsystem-vulnerabi-a74d4372",
+    "title": "Ubuntu Patches Multiple Kernel Subsystem Vulnerabilities",
+    "summary": "Ubuntu released a kernel update addressing several security issues that could allow attackers to compromise systems via vulnerable subsystems. The update fixes flaws in network file systems, stream parsing, ARM64, PowerPC, RISC‑V, S390, UML, x86, block layer, Android, Bluetooth, TPM, and other drivers. Users should apply the update promptly to eliminate potential privilege escalation or denial‑of‑service risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9018-2",
+    "publishedAt": "2026-11-12T16:32:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-multiple-kernel-subsystem-vulnerabi",
+      "article-a74d4372",
+      "a74d4372",
+      "ubuntu-patches-multiple-kernel-subsystem-vulnerabi-7e8929",
+      "ubuntu-patches-multiple-kernel-subsystem-vulnerabilities"
     ]
   },
   {
@@ -669,6 +742,46 @@ export const news: NewsBrief[] = [
       "4a39446f",
       "google-cloud-warns-three-amd-turin-cpu-flaws-could-2556d8",
       "google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data"
+    ]
+  },
+  {
+    "slug": "siemens-desigo-gridscale-6a76e33a",
+    "title": "Siemens Desigo, Gridscale",
+    "summary": "The following versions of Siemens Desigo, Gridscale are affected: Desigo CC family V8 vers:all/* (CVE-2026-111497) Desigo CC family V9 vers:all/* (CVE-2026-111497) Gridscale X DSA vers:intdot/>=5.3| Gridscale X PSS®E vers:intdot/ CVSS Vendor Equipment v3 9.8 Siemens Desigo CC family V8 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+    "publishedAt": "2026-11-12T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-desigo-gridscale",
+      "article-6a76e33a",
+      "6a76e33a",
+      "siemens-desigo-gridscale-41bab8"
+    ]
+  },
+  {
+    "slug": "siemens-ruggedcom-ape1808-37c64b1f",
+    "title": "Siemens RUGGEDCOM APE1808",
+    "summary": "The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
+    "publishedAt": "2026-11-12T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-111497"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-ruggedcom-ape1808",
+      "article-37c64b1f",
+      "37c64b1f",
+      "siemens-ruggedcom-ape1808-41bab8"
     ]
   },
   {
@@ -9433,117 +9546,6 @@ export const news: NewsBrief[] = [
       "article-2dce62bf",
       "2dce62bf",
       "one-identity-releases-identity-manager-10-0-lts-6d5792"
-    ]
-  },
-  {
-    "slug": "spyware-infections-rise-among-average-users-183a61b2",
-    "title": "Spyware Infections Rise Among Average Users",
-    "summary": "A recent report indicates that cybercriminals are increasingly deploying spyware on consumer devices, targeting non‑enterprise users. The malware leverages social engineering and bundled software to gain persistent access, enabling data exfiltration and remote control. Security teams should enforce application whitelisting, educate users on safe download practices, and deploy endpoint detection solutions to mitigate the threat.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/spyware-cyber-crime-iverify",
-    "publishedAt": "2026-11-10T15:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "spyware-infections-rise-among-average-users",
-      "article-183a61b2",
-      "183a61b2",
-      "spyware-infections-rise-among-average-users-14c3af"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97238-important-cockpit-machines-securit-89841513",
-    "title": "RHSA-2026:97238: Important: cockpit-machines security, bug fix, and enhancement update",
-    "summary": "An update for cockpit-machines is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97238",
-    "publishedAt": "2026-11-10T15:38:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97238-important-cockpit-machines-securit",
-      "article-89841513",
-      "89841513",
-      "rhsa-2026-97238-important-cockpit-machines-securit-37d764",
-      "rhsa-2026-97238-important-cockpit-machines-security-bug-fix-"
-    ]
-  },
-  {
-    "slug": "fireworks-ai-breach-impacts-customer-datasets-and-579dbb4a",
-    "title": "Fireworks AI Breach Impacts Customer Datasets and Model Weights",
-    "summary": "Fireworks AI disclosed a security incident affecting account and billing information, alongside secrets, datasets, and incomplete models for a limited set of accounts. The company detected unauthorized internal use of its systems, exposing customer data including model weights and Notion AI chat records. Organizations using Fireworks AI should audit access logs and rotate any exposed credentials immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
-    "publishedAt": "2026-11-10T15:33:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fireworks-ai-breach-impacts-customer-datasets-and",
-      "article-579dbb4a",
-      "579dbb4a",
-      "fireworks-ai-breach-impacts-customer-datasets-and-51109a",
-      "fireworks-ai-breach-impacts-customer-datasets-and-model-weig"
-    ]
-  },
-  {
-    "slug": "ivanti-releases-monthly-security-update-7d8ceb82",
-    "title": "Ivanti Releases Monthly Security Update",
-    "summary": "Ivanti publishes monthly security patches on the second Tuesday, applying fixes discovered through AI‑driven vulnerability analysis. The update cycle incorporates advanced LLMs to detect issues missed by traditional tools, emphasizing proactive vulnerability management. Security teams should apply the latest Ivanti patches promptly and review release notes for newly identified vulnerabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Ivanti Security Advisories",
-    "sourceUrl": "https://www.ivanti.com/blog/november-2026-security-update",
-    "publishedAt": "2026-11-10T15:33:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ivanti-releases-monthly-security-update",
-      "article-7d8ceb82",
-      "7d8ceb82",
-      "ivanti-releases-monthly-security-update-153446"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-bind-security-update-for-rhel9-ac091820",
-    "title": "Red Hat Releases BIND Security Update for RHEL9",
-    "summary": "An update for BIND on Red Hat Enterprise Linux 9 addresses multiple security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities are linked to CVE references and carry moderate severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97586",
-    "publishedAt": "2026-11-10T15:29:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-bind-security-update-for-rhel9",
-      "article-ac091820",
-      "ac091820",
-      "red-hat-releases-bind-security-update-for-rhel9-37d758"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97299-moderate-pcp-security-bug-fix-and-b74c76f7",
-    "title": "RHSA-2026:97299: Moderate: pcp security, bug fix, and enhancement update",
-    "summary": "An update for pcp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97299",
-    "publishedAt": "2026-11-10T15:25:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97299-moderate-pcp-security-bug-fix-and",
-      "article-b74c76f7",
-      "b74c76f7",
-      "rhsa-2026-97299-moderate-pcp-security-bug-fix-and-37d764",
-      "rhsa-2026-97299-moderate-pcp-security-bug-fix-and-enhancemen"
     ]
   }
 ];
