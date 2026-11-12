@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 15:46:13 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 16:46:11 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry</title>
+      <link>https://secubuzz.com/news/critical-red-hat-quay-flaw-lets-attackers-read-and-b698f583</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/critical-red-hat-quay-flaw-lets-attackers-read-and-b698f583</guid>
+      <description><![CDATA[A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. When it is off, anyone with a valid account can still exploit the flaw, Red Hat said yesterday. The vulnerability is tracked as CVE-2026-123710.]]></description>
+      <pubDate>Thu, 12 Nov 2026 16:27:01 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>European authorities take down SteaIC malware servers for second time this year</title>
+      <link>https://secubuzz.com/news/european-authorities-take-down-steaic-malware-serv-6e7a742b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/european-authorities-take-down-steaic-malware-serv-6e7a742b</guid>
+      <description><![CDATA[German authorities on Thursday said investigators traced the rebuilt network to the Virtualine bulletproof hosting provider, seized by the FBI in October, with the assistance of police in Frankfurt and the Dutch National High Tech Crime Unit.]]></description>
+      <pubDate>Thu, 12 Nov 2026 16:21:00 GMT</pubDate>
+      <source url="https://therecord.media/european-authorities-take-down-stealic-malware-second-time">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Picus Launches Autonomous AI Penetration Testing Tool</title>
       <link>https://secubuzz.com/news/picus-launches-autonomous-ai-penetration-testing-t-0099f552</link>
@@ -287,6 +305,24 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>RHSA-2026:99576: Important: rsync security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99576-important-rsync-security-update-ecc89d3d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99576-important-rsync-security-update-ecc89d3d</guid>
+      <description><![CDATA[An update for rsync is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 10:54:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99576">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99592: Important: openssh security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99592-important-openssh-security-update-8e522824</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99592-important-openssh-security-update-8e522824</guid>
+      <description><![CDATA[An update for openssh is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 12 Nov 2026 10:48:53 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99592">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>ScreenConnect Extension Vulnerability Enables Malware</title>
       <link>https://secubuzz.com/news/screenconnect-extension-vulnerability-enables-malw-bf3d797c</link>
       <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-extension-vulnerability-enables-malw-bf3d797c</guid>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 08:15:03 GMT</pubDate>
       <source url="https://cybersecuritynews.com/github-accounts/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Palo Alto PAN-OS Enables Root Code Execution</title>
-      <link>https://secubuzz.com/news/palo-alto-pan-os-enables-root-code-execution-291262c4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/palo-alto-pan-os-enables-root-code-execution-291262c4</guid>
-      <description><![CDATA[A PAN-OS Panorama RCE flaw lets authenticated admins run arbitrary code with root privileges. CVE-2026-0330 exploits improper privilege checks during configuration, enabling full system compromise; no public exploit yet. Apply the critical November 11 patch for Panorama and update Cloud NGFW, Prisma Access, and standalone PAN-OS immediately in all affected environments.]]></description>
-      <pubDate>Thu, 12 Nov 2026 08:09:33 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/palo-alto-networks-pan-os-rce-vulnerability/">Cyber Security News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>PCI DSS 4.0 Compliance Tool Rankings Released</title>
-      <link>https://secubuzz.com/news/pci-dss-4-0-compliance-tool-rankings-released-c2ea2380</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/pci-dss-4-0-compliance-tool-rankings-released-c2ea2380</guid>
-      <description><![CDATA[Cyber Security News released a comparative guide evaluating ten top compliance platforms designed for PCI DSS 4.x standards. The analysis reviews platforms across scope-reduction architecture, continuous technical controls, merchant management, and Qualified Security Assessor assessment automation stacks. Organizations subject to payment card security standards should review these tool benchmarks to streamline audit preparation and continuous control compliance.]]></description>
-      <pubDate>Thu, 12 Nov 2026 07:39:02 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/top-10-best-pci-dss-compliance-tools-in-2026-ranked-scored-best-pci-dss-compliance-tools/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Cyber Security News Ranks Top Risk Management Platforms</title>
-      <link>https://secubuzz.com/news/cyber-security-news-ranks-top-risk-management-plat-ea8b549b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cyber-security-news-ranks-top-risk-management-plat-ea8b549b</guid>
-      <description><![CDATA[Cyber Security News published a review ranking ten leading IT and cybersecurity risk management platforms for enterprise governance. The evaluation scored tools based on workflow effectiveness, tracking risk intake, treatment, exception management, and financial risk quantification capabilities. Security teams can evaluate these platform rankings to optimize risk register tracking, streamline accountability, and improve overall risk remediation workflows.]]></description>
-      <pubDate>Thu, 12 Nov 2026 07:35:26 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-it-cyber-risk-tools/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>GitHub Discusses Accountability for AI Patch Flaws</title>
-      <link>https://secubuzz.com/news/github-discusses-accountability-for-ai-patch-flaws-8806da92</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-discusses-accountability-for-ai-patch-flaws-8806da92</guid>
-      <description><![CDATA[GitHub’s Agentic Autofix can fix one vulnerability while creating another, raising accountability questions for patches. The tool re‑runs detection engines and project tests after patching, but can miss side effects, requiring validation and metric monitoring. Security teams should adjust CISO policies before deploying the agent, select models, and apply continuous testing to mitigate flaws.]]></description>
-      <pubDate>Thu, 12 Nov 2026 07:00:38 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/12/marcelo-oliveira-github-agentic-autofix/">Help Net Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

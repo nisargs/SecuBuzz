@@ -11,6 +11,46 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "critical-red-hat-quay-flaw-lets-attackers-read-and-b698f583",
+    "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
+    "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. When it is off, anyone with a valid account can still exploit the flaw, Red Hat said yesterday. The vulnerability is tracked as CVE-2026-123710.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+    "publishedAt": "2026-11-12T16:27:01.000Z",
+    "cves": [
+      "CVE-2026-123710"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "critical-red-hat-quay-flaw-lets-attackers-read-and",
+      "article-b698f583",
+      "b698f583",
+      "critical-red-hat-quay-flaw-lets-attackers-read-and-6a7933",
+      "critical-red-hat-quay-flaw-lets-attackers-read-and-overwrite"
+    ]
+  },
+  {
+    "slug": "european-authorities-take-down-steaic-malware-serv-6e7a742b",
+    "title": "European authorities take down SteaIC malware servers for second time this year",
+    "summary": "German authorities on Thursday said investigators traced the rebuilt network to the Virtualine bulletproof hosting provider, seized by the FBI in October, with the assistance of police in Frankfurt and the Dutch National High Tech Crime Unit.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/european-authorities-take-down-stealic-malware-second-time",
+    "publishedAt": "2026-11-12T16:21:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "european-authorities-take-down-steaic-malware-serv",
+      "article-6e7a742b",
+      "6e7a742b",
+      "european-authorities-take-down-steaic-malware-serv-4df0a2",
+      "european-authorities-take-down-steaic-malware-servers-for-se"
+    ]
+  },
+  {
     "slug": "picus-launches-autonomous-ai-penetration-testing-t-0099f552",
     "title": "Picus Launches Autonomous AI Penetration Testing Tool",
     "summary": "Picus Security introduced Picus Autonomous Penetration Testing, an AI-driven tool that chains real exploits toward an organization’s critical assets. The system operates under strict governance, preventing agents from overriding controls while delivering realistic breach scenarios. Teams can validate defenses, prioritize remediation, and train staff, with no public vulnerability or exploit disclosed.",
@@ -589,6 +629,42 @@ export const news: NewsBrief[] = [
       "9f16049b",
       "ai-scripts-enable-rapid-lateral-movement-in-retail-4698c6",
       "ai-scripts-enable-rapid-lateral-movement-in-retail-breach"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99576-important-rsync-security-update-ecc89d3d",
+    "title": "RHSA-2026:99576: Important: rsync security update",
+    "summary": "An update for rsync is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99576",
+    "publishedAt": "2026-11-12T10:54:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99576-important-rsync-security-update",
+      "article-ecc89d3d",
+      "ecc89d3d",
+      "rhsa-2026-99576-important-rsync-security-update-37d670"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99592-important-openssh-security-update-8e522824",
+    "title": "RHSA-2026:99592: Important: openssh security update",
+    "summary": "An update for openssh is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99592",
+    "publishedAt": "2026-11-12T10:48:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99592-important-openssh-security-update",
+      "article-8e522824",
+      "8e522824",
+      "rhsa-2026-99592-important-openssh-security-update-37d670"
     ]
   },
   {
@@ -1458,6 +1534,43 @@ export const news: NewsBrief[] = [
       "9f880bf1",
       "baker-tilly-reports-third-party-data-exposure-inci-1f8243",
       "baker-tilly-reports-third-party-data-exposure-incident"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99122-moderate-xorg-x11-server-security-33a55dd2",
+    "title": "RHSA-2026:99122: Moderate: xorg-x11-server security update",
+    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99122",
+    "publishedAt": "2026-11-12T02:41:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99122-moderate-xorg-x11-server-security",
+      "article-33a55dd2",
+      "33a55dd2",
+      "rhsa-2026-99122-moderate-xorg-x11-server-security-37d67f",
+      "rhsa-2026-99122-moderate-xorg-x11-server-security-update"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99154-important-gimp-security-update-eaa56947",
+    "title": "RHSA-2026:99154: Important: gimp security update",
+    "summary": "An update for gimp is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99154",
+    "publishedAt": "2026-11-12T02:40:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99154-important-gimp-security-update",
+      "article-eaa56947",
+      "eaa56947",
+      "rhsa-2026-99154-important-gimp-security-update-37d67f"
     ]
   },
   {
@@ -9427,121 +9540,6 @@ export const news: NewsBrief[] = [
       "724acf9f",
       "critical-apache-airflow-rce-flaw-allows-attackers-679389",
       "critical-apache-airflow-rce-flaw-allows-attackers-to-execute"
-    ]
-  },
-  {
-    "slug": "wiz-aligns-iso-for-japan-government-cloud-entry-3dcc3895",
-    "title": "Wiz Aligns ISO for Japan Government Cloud Entry",
-    "summary": "Wiz and ISMAP conduct gap assessment and ISO alignment to qualify for Japan's government cloud service list. The assessment identifies compliance gaps and outlines steps to meet Japan's public sector security requirements. Wiz plans to submit documentation and pursue certification, with no immediate security patch or vulnerability, aiming to comply with strict regulatory standards.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/wiz-and-ismap-for-japan-public-sector",
-    "publishedAt": "2026-11-10T13:48:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wiz-aligns-iso-for-japan-government-cloud-entry",
-      "article-3dcc3895",
-      "3dcc3895",
-      "wiz-aligns-iso-for-japan-government-cloud-entry-22b4fb"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97121-moderate-unbound-security-bug-fix-7e279781",
-    "title": "RHSA-2026:97121: Moderate: unbound security, bug fix, and enhancement update",
-    "summary": "An update for unbound is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97121",
-    "publishedAt": "2026-11-10T13:39:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97121-moderate-unbound-security-bug-fix",
-      "article-7e279781",
-      "7e279781",
-      "rhsa-2026-97121-moderate-unbound-security-bug-fix-37d768",
-      "rhsa-2026-97121-moderate-unbound-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "qubole-iam-credentials-compromised-multiple-organi-3ef88938",
-    "title": "Qubole IAM Credentials Compromised, Multiple Organizations Hit",
-    "summary": "Hackers used compromised Qubole IAM credentials to access customer files, secrets, keys, environment variables, and credentials, impacting more than a dozen organizations. The breach exploited privileged IAM access to exfiltrate sensitive data from Qubole‑managed cloud environments, exposing operational secrets across tenants. Customers should audit IAM permissions, rotate compromised credentials, and apply the latest Qubole security patches to prevent further exfiltration.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
-    "publishedAt": "2026-11-10T13:27:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qubole-iam-credentials-compromised-multiple-organi",
-      "article-3ef88938",
-      "3ef88938",
-      "qubole-iam-credentials-compromised-multiple-organi-69ea7a",
-      "qubole-iam-credentials-compromised-multiple-organizations-hi"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-trusted-qubole-iam-roles-to-access-d4323600",
-    "title": "Hackers Exploit Trusted Qubole IAM Roles to Access AWS Accounts and Download Entire S3 Buckets",
-    "summary": "Hackers abused trusted Qubole integrations to enter customer AWS accounts, steal secrets, and download data from Amazon S3, sometimes taking entire buckets in one session. The activity ran from October 14 through October 26, 2026, using IAM credentials from an AWS account associated with Qubole rather than exploiting a software vulnerability.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/qubole-iam-roles/",
-    "publishedAt": "2026-11-10T13:26:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-trusted-qubole-iam-roles-to-access",
-      "article-d4323600",
-      "d4323600",
-      "hackers-exploit-trusted-qubole-iam-roles-to-access-644914",
-      "hackers-exploit-trusted-qubole-iam-roles-to-access-aws-accou"
-    ]
-  },
-  {
-    "slug": "chrome-updates-released-to-patch-exploited-zero-da-7d6565c2",
-    "title": "Chrome Updates Released to Patch Exploited Zero-Day Vulnerability",
-    "summary": "Google released Chrome desktop and Android updates to patch CVE-2026-125350, a zero‑day flaw attackers are exploiting. The vulnerability permits remote code execution through the Chrome rendering engine, risking user data and system compromise. Users should install the latest Chrome version immediately, and admins should monitor for anomalous activity and enforce additional controls.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting",
-    "publishedAt": "2026-11-10T13:23:00.000Z",
-    "cves": [
-      "CVE-2026-125350"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-updates-released-to-patch-exploited-zero-da",
-      "article-7d6565c2",
-      "7d6565c2",
-      "chrome-updates-released-to-patch-exploited-zero-da-562340",
-      "chrome-updates-released-to-patch-exploited-zero-day-vulnerab"
-    ]
-  },
-  {
-    "slug": "dark-storm-team-expands-ddos-for-hire-demands-5-00-fd53c7fb",
-    "title": "Dark Storm Team Expands DDoS-for-Hire, Demands $5,000 for Amino",
-    "summary": "Dark Storm Team expanded its DDoS‑for‑hire service, targeting Amino and demanding $5,000 in cryptocurrency to stop the attack. The group advertises on Telegram, issuing a payment request tied to an October 2025 incident, showing an active threat actor. Defenders should monitor traffic for DDoS patterns, deploy rate‑limiting and scrubbing services, and block known malicious IPs to mitigate disruption.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/dark-storm-team/",
-    "publishedAt": "2026-11-10T13:18:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dark-storm-team-expands-ddos-for-hire-demands-5-00",
-      "article-fd53c7fb",
-      "fd53c7fb",
-      "dark-storm-team-expands-ddos-for-hire-demands-5-00-6e56dd",
-      "dark-storm-team-expands-ddos-for-hire-demands-5-000-for-amin"
     ]
   }
 ];
