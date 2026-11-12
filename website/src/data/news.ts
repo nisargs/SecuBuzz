@@ -11,6 +11,120 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "google-cloud-warns-three-amd-turin-cpu-flaws-could-4a39446f",
+    "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+    "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. Inside a VM, the flaws may let an attacker with code on the same processor core infer data from other processes or the kernel.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+    "publishedAt": "2026-11-12T12:09:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-cloud-warns-three-amd-turin-cpu-flaws-could",
+      "article-4a39446f",
+      "4a39446f",
+      "google-cloud-warns-three-amd-turin-cpu-flaws-could-2556d8",
+      "google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data"
+    ]
+  },
+  {
+    "slug": "exploit-attempts-for-gpustack-authentication-bypas-2ccd9424",
+    "title": "Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)",
+    "summary": "CVE-2026-102895 is a trivial authentication-bypass vulnerability. All versions of GPUStack prior to 2.2.0, which was released at the end of June. This vulnerability was not made public until the end of July, and the CVE was assigned on November 4th.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33514",
+    "publishedAt": "2026-11-12T11:56:24.000Z",
+    "cves": [
+      "CVE-2026-102895"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "exploit-attempts-for-gpustack-authentication-bypas",
+      "article-2ccd9424",
+      "2ccd9424",
+      "exploit-attempts-for-gpustack-authentication-bypas-57dd81",
+      "exploit-attempts-for-gpustack-authentication-bypass-cve-2026"
+    ]
+  },
+  {
+    "slug": "rhel-10-receives-rpm-security-update-db6fc407",
+    "title": "RHEL 10 Receives RPM Security Update",
+    "summary": "Red Hat released a security update for rpm on Red Enterprise Linux 10, addressing multiple vulnerabilities. The advisory rates the update as Moderate, with CVSS base scores available via CVE links in the references. Defenders should apply the rpm patch to mitigate the identified critical weaknesses and maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99595",
+    "publishedAt": "2026-11-12T11:55:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhel-10-receives-rpm-security-update",
+      "article-db6fc407",
+      "db6fc407",
+      "rhel-10-receives-rpm-security-update-37d670"
+    ]
+  },
+  {
+    "slug": "new-n-central-exploits-work-against-patched-server-3cdeda99",
+    "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
+    "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. \"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet,\" N-able said in a new advisory.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+    "publishedAt": "2026-11-12T11:51:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "new-n-central-exploits-work-against-patched-server",
+      "article-3cdeda99",
+      "3cdeda99",
+      "new-n-central-exploits-work-against-patched-server-26eb1d",
+      "new-n-central-exploits-work-against-patched-servers-enable-r"
+    ]
+  },
+  {
+    "slug": "calendar-invites-and-live-proxies-inside-a-google-66b0515c",
+    "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
+    "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
+    "publishedAt": "2026-11-12T11:51:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "calendar-invites-and-live-proxies-inside-a-google",
+      "article-66b0515c",
+      "66b0515c",
+      "calendar-invites-and-live-proxies-inside-a-google-77cfe0",
+      "calendar-invites-and-live-proxies-inside-a-google-session-hi"
+    ]
+  },
+  {
+    "slug": "rhel-10-receives-cockpit-security-update-42a4e100",
+    "title": "RHEL 10 Receives Cockpit Security Update",
+    "summary": "Red Hat issued a security update for cockpit on Red Enterprise Linux 10, addressing several vulnerabilities. The advisory rates the update as Important, with CVSS base scores linked to CVE references for each flaw. Defenders should apply the cockpit patch promptly to prevent exploitation and preserve critical system security overall.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99600",
+    "publishedAt": "2026-11-12T11:44:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhel-10-receives-cockpit-security-update",
+      "article-42a4e100",
+      "42a4e100",
+      "rhel-10-receives-cockpit-security-update-37d66d"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99603-important-cockpit-security-update-73dbfc57",
     "title": "RHSA-2026:99603: Important: cockpit security update",
     "summary": "An update for cockpit is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -44,6 +158,65 @@ export const news: NewsBrief[] = [
       "article-d3892dd9",
       "d3892dd9",
       "rhsa-2026-99597-important-gdb-security-update-37d670"
+    ]
+  },
+  {
+    "slug": "ptc-patches-critical-windchill-and-flexplm-flaw-th-44a3192a",
+    "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+    "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+    "publishedAt": "2026-11-12T11:33:15.000Z",
+    "cves": [
+      "CVE-2026-126325"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ptc-patches-critical-windchill-and-flexplm-flaw-th",
+      "article-44a3192a",
+      "44a3192a",
+      "ptc-patches-critical-windchill-and-flexplm-flaw-th-58ca3b",
+      "ptc-patches-critical-windchill-and-flexplm-flaw-that-could-e"
+    ]
+  },
+  {
+    "slug": "ai-scripts-enable-rapid-lateral-movement-in-retail-9f16049b",
+    "title": "AI Scripts Enable Rapid Lateral Movement in Retail Breach",
+    "summary": "An attacker used AI-generated scripts after hand-typed commands failed to breach a US retailer. The AI scripts facilitated lateral movement within minutes, indicating a rapid compromise of internal systems and exposing sensitive data. Security teams should investigate compromised accounts, isolate affected segments, review AI-based attack mitigations, and strengthen monitoring immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+    "publishedAt": "2026-11-12T11:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-scripts-enable-rapid-lateral-movement-in-retail",
+      "article-9f16049b",
+      "9f16049b",
+      "ai-scripts-enable-rapid-lateral-movement-in-retail-4698c6",
+      "ai-scripts-enable-rapid-lateral-movement-in-retail-breach"
+    ]
+  },
+  {
+    "slug": "screenconnect-extension-vulnerability-enables-malw-bf3d797c",
+    "title": "ScreenConnect Extension Vulnerability Enables Malware",
+    "summary": "Hackers exploited a flaw in a legitimate ScreenConnect extension to bypass authentication and deploy malware. The flaw lets attackers bypass ScreenConnect’s login controls, granting unauthorized session access; no CVE is listed and exploitation is confined to the extension. ScreenConnect has released an update patching the extension; administrators should apply the latest version and verify extension integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
+    "publishedAt": "2026-11-12T10:39:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "screenconnect-extension-vulnerability-enables-malw",
+      "article-bf3d797c",
+      "bf3d797c",
+      "screenconnect-extension-vulnerability-enables-malw-6fa0ce",
+      "screenconnect-extension-vulnerability-enables-malware"
     ]
   },
   {
@@ -192,6 +365,43 @@ export const news: NewsBrief[] = [
       "article-d1443023",
       "d1443023",
       "red-hat-quay-flaw-enables-private-image-theft-3bd886"
+    ]
+  },
+  {
+    "slug": "maersk-data-theft-confirmed-by-whitearmor-7013f1c7",
+    "title": "Maersk Data Theft Confirmed by WhiteArmor",
+    "summary": "WhiteArmor ransomware group claims to have stolen 100GB of data from Maersk during a $5 million extortion attempt. The breach involved exfiltration of shipping‑industry operational data, but no evidence shows ransomware execution or system compromise. Maersk should conduct a forensic investigation, reset compromised credentials, and strengthen access controls to mitigate further exfiltration.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/",
+    "publishedAt": "2026-11-12T08:38:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "maersk-data-theft-confirmed-by-whitearmor",
+      "article-7013f1c7",
+      "7013f1c7",
+      "maersk-data-theft-confirmed-by-whitearmor-3e04dc"
+    ]
+  },
+  {
+    "slug": "net-11-introduces-supply-chain-security-enhanceme-603ed7a2",
+    "title": ".NET 11 Introduces Supply Chain Security Enhancements",
+    "summary": "Microsoft released .NET 11, a Standard Term Support release, adding C# 15, ASP.NET Core, .NET MAUI, and Windows development features. The update introduces changes to software supply chain integrity, authentication handling, and platform lifecycle to reduce future attack vectors. Defenders should adopt .NET 11 and plan migrations from unsupported .NET 8/9 to benefit from these security improvements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/net-11-security-changes/",
+    "publishedAt": "2026-11-12T08:23:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "net-11-introduces-supply-chain-security-enhanceme",
+      "article-603ed7a2",
+      "603ed7a2",
+      "net-11-introduces-supply-chain-security-enhanceme-2b5a01",
+      "net-11-introduces-supply-chain-security-enhancements"
     ]
   },
   {
@@ -859,6 +1069,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99173-low-net-11-0-security-bug-fix-and-e604bfce",
+    "title": "RHSA-2026:99173: Low: .NET 11.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 11.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99173",
+    "publishedAt": "2026-11-12T01:54:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99173-low-net-11-0-security-bug-fix-and",
+      "article-e604bfce",
+      "e604bfce",
+      "rhsa-2026-99173-low-net-11-0-security-bug-fix-and-37d67f",
+      "rhsa-2026-99173-low-net-11-0-security-bug-fix-and-enhancemen"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99116-important-raptor2-security-update-923b1774",
+    "title": "RHSA-2026:99116: Important: raptor2 security update",
+    "summary": "An update for raptor2 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99116",
+    "publishedAt": "2026-11-12T01:53:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99116-important-raptor2-security-update",
+      "article-923b1774",
+      "923b1774",
+      "rhsa-2026-99116-important-raptor2-security-update-37d680"
+    ]
+  },
+  {
     "slug": "red-hat-releases-python-oauthlib-security-update-69467088",
     "title": "Red Hat Releases python‑oauthlib Security Update",
     "summary": "Red Hat has issued an Important security update for python‑oauthlib on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities identified by CVE references. The update includes CVSS scores for each vulnerability, but no active exploitation has been reported, mitigating potential remote code execution risks. Users should apply the RHSA‑2026:99167 update immediately to ensure protection against the disclosed weaknesses.",
@@ -912,6 +1159,26 @@ export const news: NewsBrief[] = [
       "9c2c0544",
       "chinese-ai-project-gathers-taiwan-chip-industry-da-223b95",
       "chinese-ai-project-gathers-taiwan-chip-industry-data"
+    ]
+  },
+  {
+    "slug": "zoom-cve-2026-108187-requires-immediate-patch-55ccb8b8",
+    "title": "Zoom CVE-2026-108187 Requires Immediate Patch",
+    "summary": "Zoom disclosed CVE-2026-108187, a critical flaw affecting enterprise Zoom deployments. The vulnerability permits remote code execution via malformed input in the Zoom client, with a CVSS score of 9.8; public proof‑of‑concept exploits are available, enabling attackers to gain full system control. Zoom has released a patch; administrators must update Zoom clients immediately and monitor for exploitation attempts.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/critical-zoom-workplace-flaw-could-allow-unauthenticate",
+    "publishedAt": "2026-11-12T00:16:26.000Z",
+    "cves": [
+      "CVE-2026-108187"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zoom-cve-2026-108187-requires-immediate-patch",
+      "article-55ccb8b8",
+      "55ccb8b8",
+      "zoom-cve-2026-108187-requires-immediate-patch-410f0c"
     ]
   },
   {
@@ -2239,6 +2506,26 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "asp-net-core-dos-vulnerability-cve-2026-114147-dc063db2",
+    "title": "ASP.NET Core DoS Vulnerability CVE-2026-114147",
+    "summary": "Microsoft identified CVE-2026-114147, a denial‑of‑service flaw in ASP.NET Core affecting web applications. The flaw lets attackers trigger resource exhaustion via crafted requests, causing service downtime; no remote code execution is possible and exploits are not yet documented. Microsoft has issued a patch; developers should update ASP.NET Core to the latest version and monitor application performance for abnormal traffic.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114147",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114147"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-dos-vulnerability-cve-2026-114147",
+      "article-dc063db2",
+      "dc063db2",
+      "asp-net-core-dos-vulnerability-cve-2026-114147-1feaf4"
     ]
   },
   {
@@ -9288,298 +9575,6 @@ export const news: NewsBrief[] = [
       "article-2d9fba03",
       "2d9fba03",
       "hackers-use-fake-fofa-accounts-to-steal-ai-keys-8fe774"
-    ]
-  },
-  {
-    "slug": "linux-kernel-receives-patch-for-multiple-vulnerabi-9e70e8b0",
-    "title": "Linux Kernel Receives Patch for Multiple Vulnerabilities",
-    "summary": "The Linux kernel was updated to address several security issues across multiple subsystems, including USB gadget drivers, memory management, and networking core. An attacker could potentially exploit these flaws to compromise system integrity, though no active exploitation has been reported. Kernel maintainers recommend applying the USN-9022-1 update immediately to mitigate the identified vulnerabilities.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9022-1",
-    "publishedAt": "2026-11-10T09:09:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-receives-patch-for-multiple-vulnerabi",
-      "article-9e70e8b0",
-      "9e70e8b0",
-      "linux-kernel-receives-patch-for-multiple-vulnerabi-7e88cb",
-      "linux-kernel-receives-patch-for-multiple-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "iranian-unit-sabotages-700-french-retail-refrigera-080a646c",
-    "title": "Iranian Unit Sabotages 700 French Retail Refrigerators",
-    "summary": "An IRGC cyber unit targeted refrigeration controllers at roughly 700 French retail sites, altering defrost settings to high temperatures. The change caused food spoilage and ignited fires in at least 15 locations, leading to significant losses. French authorities attribute the sabotage to Iran; operators should audit controller access logs and enforce stricter authentication controls.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
-    "publishedAt": "2026-11-10T09:08:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "iranian-unit-sabotages-700-french-retail-refrigera",
-      "article-080a646c",
-      "080a646c",
-      "iranian-unit-sabotages-700-french-retail-refrigera-7e30f3",
-      "iranian-unit-sabotages-700-french-retail-refrigerators"
-    ]
-  },
-  {
-    "slug": "ruby-gem-steals-credentials-installs-backdoors-in-a6ca377e",
-    "title": "Ruby Gem Steals Credentials, Installs Backdoors in AI Tools",
-    "summary": "A counterfeit Ruby gem, strutil-core, masquerades as a helper but installs credential‑stealing worm. The worm harvests 51 credential types, injects backdoors into AI tool settings, and can delete a home folder if a stolen GitHub token is revoked. Teams should remove the gem, audit dependencies, enforce RubyGems signing, and update AI tools to eliminate backdoors and stop credential theft.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/malicious-ruby-gem/",
-    "publishedAt": "2026-11-10T08:55:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ruby-gem-steals-credentials-installs-backdoors-in",
-      "article-a6ca377e",
-      "a6ca377e",
-      "ruby-gem-steals-credentials-installs-backdoors-in-e74af0",
-      "ruby-gem-steals-credentials-installs-backdoors-in-ai-tools"
-    ]
-  },
-  {
-    "slug": "amd-rmp-flaw-allows-local-hypervisor-exploit-3afbdb66",
-    "title": "AMD RMP Flaw Allows Local Hypervisor Exploit",
-    "summary": "A flaw in AMD processors' Reverse Map Table checks was discovered, potentially enabling local hypervisor attackers to trigger an out‑of‑bounds condition. The vulnerability, identified as CVE-2023-20585, could compromise the integrity of SEV‑SNP guest memory if exploited. Kernel maintainers advise applying the USN-9024-1 update to patch affected subsystems and mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9024-1",
-    "publishedAt": "2026-11-10T08:47:04.000Z",
-    "cves": [
-      "CVE-2023-20585"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "amd-rmp-flaw-allows-local-hypervisor-exploit",
-      "article-3afbdb66",
-      "3afbdb66",
-      "amd-rmp-flaw-allows-local-hypervisor-exploit-7e88c3"
-    ]
-  },
-  {
-    "slug": "ubuntu-addresses-multiple-linux-kernel-vulnerabili-1cac7a6d",
-    "title": "Ubuntu Addresses Multiple Linux Kernel Vulnerabilities in USN-9025-1",
-    "summary": "Ubuntu released kernel updates addressing CVE-2023-20585 and multiple Linux kernel vulnerabilities. The AMD flaw allows hypervisor-privileged attackers to corrupt SEV-SNP guest memory via improper RMP checks; other issues affect USB gadget, memory management, NVDIMM, networking, and architecture subsystems. Updated kernel packages are available; immediate deployment is recommended to prevent system compromise.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9025-1",
-    "publishedAt": "2026-11-10T08:47:02.000Z",
-    "cves": [
-      "CVE-2023-20585"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-addresses-multiple-linux-kernel-vulnerabili",
-      "article-1cac7a6d",
-      "1cac7a6d",
-      "ubuntu-addresses-multiple-linux-kernel-vulnerabili-7e88c0",
-      "ubuntu-addresses-multiple-linux-kernel-vulnerabilities-in-us"
-    ]
-  },
-  {
-    "slug": "linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-15cee65f",
-    "title": "Linux Kernel Azure RMP Check Flaw Exposes SEV‑SNP Memory",
-    "summary": "A flaw in AMD processors’ IOMMU RMP checks on Linux kernel Azure allows a hypervisor attacker to trigger an out‑of‑bounds condition that could corrupt SEV‑SNP guest memory. The vulnerability, identified as CVE‑2023‑20585, exploits improper buffer validation and could lead to integrity violations. Ubuntu has released kernel patches covering multiple subsystems; users should apply the update to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9026-1",
-    "publishedAt": "2026-11-10T08:46:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-azure-rmp-check-flaw-exposes-sev-snp",
-      "article-15cee65f",
-      "15cee65f",
-      "linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-7e88bc",
-      "linux-kernel-azure-rmp-check-flaw-exposes-sev-snp-memory"
-    ]
-  },
-  {
-    "slug": "turtle-beach-audio-driver-race-condition-enables-l-0eb87dbe",
-    "title": "Turtle Beach Audio Driver Race Condition Enables Local Exploit",
-    "summary": "The Turtle Beach MultiSound audio driver in Linux contains race conditions that trigger out‑of‑bounds accesses during ring‑buffer reads, allowing a local attacker to cause a denial of service or possibly execute code. The flaw, CVE‑2017‑9986, enables local privilege escalation that could compromise system integrity. Ubuntu has released kernel patches for the affected subsystems; users should apply them promptly.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9035-1",
-    "publishedAt": "2026-11-10T08:46:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "turtle-beach-audio-driver-race-condition-enables-l",
-      "article-0eb87dbe",
-      "0eb87dbe",
-      "turtle-beach-audio-driver-race-condition-enables-l-7e884b",
-      "turtle-beach-audio-driver-race-condition-enables-local-explo"
-    ]
-  },
-  {
-    "slug": "raspberry-pi-kernel-ax-25-race-condition-causes-do-921bb2ee",
-    "title": "Raspberry Pi Kernel AX.25 Race Condition Causes DoS",
-    "summary": "AX.25 protocol race conditions on Raspberry Pi Linux kernels cause use‑after‑free bugs that a local attacker can exploit to crash the system. The i.MX clock driver also has a null pointer dereference due to improper allocation handling, leading to a local denial of service (CVE‑2022‑3114).",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9029-1",
-    "publishedAt": "2026-11-10T08:46:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "raspberry-pi-kernel-ax-25-race-condition-causes-do",
-      "article-921bb2ee",
-      "921bb2ee",
-      "raspberry-pi-kernel-ax-25-race-condition-causes-do-7e88b1",
-      "raspberry-pi-kernel-ax-25-race-condition-causes-dos"
-    ]
-  },
-  {
-    "slug": "xen-frontend-vulnerabilities-allow-guest-memory-ac-36bf45fe",
-    "title": "Xen Frontend Vulnerabilities Allow Guest Memory Access",
-    "summary": "USN-9034-1 patches Linux kernel vulnerabilities in AWS Xen, including CVE-2022-23037, that let malicious backends read guest memory or cause denial of service. The issue stems from inadequate access‑right checks in Xen device frontends, enabling unauthorized memory reads and potential guest workload disruption. Kernel maintainers released patches; administrators should update affected systems and verify Xen configurations to prevent exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9034-1",
-    "publishedAt": "2026-11-10T08:46:28.000Z",
-    "cves": [
-      "CVE-2022-23037"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "xen-frontend-vulnerabilities-allow-guest-memory-ac",
-      "article-36bf45fe",
-      "36bf45fe",
-      "xen-frontend-vulnerabilities-allow-guest-memory-ac-7e884f",
-      "xen-frontend-vulnerabilities-allow-guest-memory-access"
-    ]
-  },
-  {
-    "slug": "linux-kernel-vulnerabilities-updated-36aef8d2",
-    "title": "Linux Kernel Vulnerabilities Updated",
-    "summary": "Multiple Linux kernel flaws, including CVE-2024-53210, were found in GPU and network subsystems, allowing attackers to potentially compromise systems. The USN‑9032‑1 update patches seven CVEs, including CVE-2026-43456, by fixing memory corruption and validation errors that could lead to privilege escalation or denial of service. Apply the patch immediately and upgrade to the latest kernel to prevent reintroduction of the flaws.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9032-1",
-    "publishedAt": "2026-11-10T08:46:16.000Z",
-    "cves": [
-      "CVE-2024-53210",
-      "CVE-2026-43456"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-vulnerabilities-updated",
-      "article-36aef8d2",
-      "36aef8d2",
-      "linux-kernel-vulnerabilities-updated-7e8857"
-    ]
-  },
-  {
-    "slug": "ubuntu-kernel-patch-addresses-xen-device-frontend-3cbe023d",
-    "title": "Ubuntu Kernel Patch Addresses Xen Device Frontend Flaws",
-    "summary": "Ubuntu released USN‑9033‑1 to fix multiple Linux kernel flaws affecting Xen para‑virtualization device frontends. The vulnerabilities, including CVE‑2022‑23036, allow a malicious Xen backend to read guest memory or trigger a denial of service, potentially compromising isolation between virtual machines. The update applies patches to the kernel subsystems and should be installed immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9033-1",
-    "publishedAt": "2026-11-10T08:46:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-kernel-patch-addresses-xen-device-frontend",
-      "article-3cbe023d",
-      "3cbe023d",
-      "ubuntu-kernel-patch-addresses-xen-device-frontend-7e8853",
-      "ubuntu-kernel-patch-addresses-xen-device-frontend-flaws"
-    ]
-  },
-  {
-    "slug": "ubuntu-addresses-multiple-kernel-vulnerabilities-3840f8cd",
-    "title": "Ubuntu Addresses Multiple Kernel Vulnerabilities",
-    "summary": "Ubuntu released USN-9023-1, patching multiple Linux kernel vulnerabilities that could let attackers compromise systems. Flaws touch USB gadget drivers, memory management, networking core, ARM/x86 architectures, and device drivers, with no confirmed exploitation but potential for privilege escalation or denial of service. All affected subsystems are fixed; admins should apply the latest kernel or backport the patches.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9023-1",
-    "publishedAt": "2026-11-10T08:46:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-addresses-multiple-kernel-vulnerabilities",
-      "article-3840f8cd",
-      "3840f8cd",
-      "ubuntu-addresses-multiple-kernel-vulnerabilities-7e88c7"
-    ]
-  },
-  {
-    "slug": "ubuntu-releases-kernel-patch-for-multiple-vulnerab-d99e037b",
-    "title": "Ubuntu Releases Kernel Patch for Multiple Vulnerabilities",
-    "summary": "Ubuntu released USN-9018-1, addressing several kernel vulnerabilities that could allow attackers to compromise affected systems. The flaws span network file systems, ARM64, PowerPC, RISC-V, S390, and numerous device drivers, exposing potential privilege escalation and denial of service. Ubuntu has issued a kernel update; administrators should apply the patch promptly to eliminate the exploitation vector.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9018-1",
-    "publishedAt": "2026-11-10T08:42:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-releases-kernel-patch-for-multiple-vulnerab",
-      "article-d99e037b",
-      "d99e037b",
-      "ubuntu-releases-kernel-patch-for-multiple-vulnerab-7e8929",
-      "ubuntu-releases-kernel-patch-for-multiple-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "progress-ws-ftp-server-addresses-seven-credential-cf7e693a",
-    "title": "Progress WS_FTP Server Addresses Seven Credential Theft Flaws",
-    "summary": "Progress Software released a pack for WS_FTP Server 2025.0.5 to fix seven flaws enabling credential theft, path traversal, and file transfer disruption. The flaws, catalogued as CVE-2026-124033, allow unauthenticated remote code execution and local file access, compromising credentials and exposing restricted files. Upgrade to WS_FTP Server 2025.0.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/progress-ws_ftp-server-fixes-security-vulnerabilities/",
-    "publishedAt": "2026-11-10T08:42:39.000Z",
-    "cves": [
-      "CVE-2026-124033"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "progress-ws-ftp-server-addresses-seven-credential",
-      "article-cf7e693a",
-      "cf7e693a",
-      "progress-ws-ftp-server-addresses-seven-credential-1ce304",
-      "progress-ws-ftp-server-addresses-seven-credential-theft-flaw"
-    ]
-  },
-  {
-    "slug": "apple-releases-ios-27-2-1-patch-for-nine-flaws-a9f244fd",
-    "title": "Apple Releases iOS 27.2.1 Patch for Nine Flaws",
-    "summary": "Apple released iOS 27.2.1 and iPadOS 27.2.1 on November 9, fixing nine security flaws across Bluetooth, AirPlay, Messages, and other system components. The flaws could allow attackers to gain unauthorized access or execute code via malformed pairing requests or message payloads, identified during internal reviews. Users should install the update immediately to eliminate the exploitation vector and maintain device integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/apple-fixes-security-vulnerabilities/",
-    "publishedAt": "2026-11-10T08:38:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-ios-27-2-1-patch-for-nine-flaws",
-      "article-a9f244fd",
-      "a9f244fd",
-      "apple-releases-ios-27-2-1-patch-for-nine-flaws-44b050"
     ]
   }
 ];
