@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-net-9-0-update-with-security-fixe-1986e8d3",
+    "title": "Red Hat Releases .NET 9.0 Update with Security Fixes",
+    "summary": "Red Hat released a .NET 9.0 update for RHEL 10 to fix multiple security issues. The update addresses several vulnerabilities with CVSS scores marked Important, though no specific CVE IDs are cited; the flaws could enable exploitation of the .NET runtime. Red Hat advises installing the package from standard RHEL repositories immediately and verifying checksums to ensure integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99145",
+    "publishedAt": "2026-11-11T23:51:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-net-9-0-update-with-security-fixe",
+      "article-1986e8d3",
+      "1986e8d3",
+      "red-hat-releases-net-9-0-update-with-security-fixe-37d67f",
+      "red-hat-releases-net-9-0-update-with-security-fixes"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-kernel-update-for-rhel-10-8660ca44",
+    "title": "Red Hat Releases Kernel Update for RHEL 10",
+    "summary": "Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security bugs. The update fixes several kernel vulnerabilities, each with a CVSS base score listed in the CVE references, and is rated as Important by Product Security. Administrators should apply the RHSA‑2026:99133 package immediately to mitigate the identified flaws and ensure system reboot.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99133",
+    "publishedAt": "2026-11-11T23:46:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-kernel-update-for-rhel-10",
+      "article-8660ca44",
+      "8660ca44",
+      "red-hat-releases-kernel-update-for-rhel-10-37d67f"
+    ]
+  },
+  {
     "slug": "red-hat-releases-kernel-security-update-dcf5048d",
     "title": "Red Hat Releases Kernel Security Update",
     "summary": "Red Hat released a kernel update for Enterprise Linux 10, fixing multiple security issues that could enable privilege escalation or denial of service. The advisory labels the update Important and lists CVSS scores, but omits CVE IDs. Apply the patch promptly to close the flaws, as it includes bug fixes and enhancements that address the reported weaknesses.",
@@ -514,6 +551,43 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "yodl-buffer-over-read-causes-denial-of-service-a3e333a7",
+    "title": "Yodl Buffer Over-Read Causes Denial of Service",
+    "summary": "Ubuntu identified a buffer over-read in Yodl that could be triggered by malformed input. The flaw may allow an attacker to crash Yodl, leading to a denial of service, though no active exploitation has been reported. Users should update to the latest Yodl package via Ubuntu repositories; no additional workarounds are required.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9063-1",
+    "publishedAt": "2026-11-11T18:33:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "yodl-buffer-over-read-causes-denial-of-service",
+      "article-a3e333a7",
+      "a3e333a7",
+      "yodl-buffer-over-read-causes-denial-of-service-7e86f6"
+    ]
+  },
+  {
+    "slug": "snmptt-allows-remote-command-execution-via-unsanit-67af8411",
+    "title": "SNMPTT Allows Remote Command Execution via Unsanitized Traps",
+    "summary": "Ubuntu discovered that SNMPTT fails to sanitize trap data passed to EXEC, PREEXEC, and unknown_trap_exec commands. A remote attacker could exploit this flaw to run arbitrary shell commands, potentially compromising the host system without authentication. Apply the latest SNMPTT update from Ubuntu repositories immediately, promptly; no additional mitigations are necessary.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9062-1",
+    "publishedAt": "2026-11-11T18:33:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "snmptt-allows-remote-command-execution-via-unsanit",
+      "article-67af8411",
+      "67af8411",
+      "snmptt-allows-remote-command-execution-via-unsanit-7e86f9",
+      "snmptt-allows-remote-command-execution-via-unsanitized-traps"
+    ]
+  },
+  {
     "slug": "vanderbilt-restores-systems-after-alleged-data-the-71df4385",
     "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
     "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
@@ -602,6 +676,46 @@ export const news: NewsBrief[] = [
       "article-10dcb7dc",
       "10dcb7dc",
       "red-hat-releases-kernel-update-for-rhel-8-37d683"
+    ]
+  },
+  {
+    "slug": "pan-os-sensitive-info-disclosure-cve-2026-0331-f96bf5fa",
+    "title": "PAN-OS Sensitive Info Disclosure CVE-2026-0331",
+    "summary": "A sensitive information disclosure flaw in Palo Alto Networks PAN‑OS lets attackers retrieve confidential configuration data via unauthenticated API calls. The vulnerability, CVE‑2026‑0331, exploits improper input validation in the management interface, yielding a medium‑severity exposure without credentials. Palo Alto released a patch in the latest PAN‑OS update; security teams should apply it or restrict API access.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0331",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [
+      "CVE-2026-0331"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "pan-os-sensitive-info-disclosure-cve-2026-0331",
+      "article-f96bf5fa",
+      "f96bf5fa",
+      "pan-os-sensitive-info-disclosure-cve-2026-0331-7ae305"
+    ]
+  },
+  {
+    "slug": "chromium-update-addresses-cve-2026-113971-bb8a4c72",
+    "title": "Chromium Update Addresses CVE-2026-113971",
+    "summary": "Palo Alto Networks issued a Chromium update addressing a high‑severity flaw that could enable remote code execution via malicious web content. CVE‑2026‑113971 exploits a buffer overflow in the rendering engine, allowing attackers to run arbitrary code without user interaction. Apply the latest Chromium patch or disable the vulnerable feature to mitigate the risk until a vendor‑issued fix is released.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/PAN-SA-2026-0014",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [
+      "CVE-2026-113971"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-update-addresses-cve-2026-113971",
+      "article-bb8a4c72",
+      "bb8a4c72",
+      "chromium-update-addresses-cve-2026-113971-101918"
     ]
   },
   {
@@ -753,6 +867,46 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "net-elevation-privilege-cve-2026-105544-4257502d",
+    "title": ".NET Elevation Privilege CVE-2026-105544",
+    "summary": "Microsoft announced an informational update for CVE‑2026‑105544, an elevation of privilege vulnerability affecting the .NET framework. The flaw allows local users to gain higher privileges by manipulating the runtime configuration, but no active exploitation has been reported. Microsoft has not released a patch yet; administrators should monitor for future advisories and apply any subsequent fixes when available.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-105544"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "net-elevation-privilege-cve-2026-105544",
+      "article-4257502d",
+      "4257502d",
+      "net-elevation-privilege-cve-2026-105544-1ff889"
+    ]
+  },
+  {
+    "slug": "net-dos-vulnerability-cve-2026-109475-59cd8639",
+    "title": ".NET DoS Vulnerability CVE-2026-109475",
+    "summary": "Microsoft issued an informational notice for CVE‑2026‑109475, a denial‑of‑service flaw in the .NET framework. The vulnerability permits local users to trigger a crash by sending malformed input to the runtime, but no active exploitation has been observed. No patch has been released; administrators should watch for future updates and apply any subsequent fixes when available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-109475"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "net-dos-vulnerability-cve-2026-109475",
+      "article-59cd8639",
+      "59cd8639",
+      "net-dos-vulnerability-cve-2026-109475-1ff6ba"
     ]
   },
   {
@@ -1482,6 +1636,62 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "finite-state-secures-27m-for-device-security-platf-03104875",
+    "title": "Finite State Secures $27M for Device Security Platform",
+    "summary": "Finite State raised $27 million in Series C funding to expand its device security platform internationally. The investment will accelerate autonomous features for securing software and firmware across connected devices, including advanced firmware analysis and supply chain risk detection. Security teams should monitor platform enhancements for improved vulnerability management capabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/finite-state-raises-27-million-to-secure-software-and-firmware-in-connected-devices/",
+    "publishedAt": "2026-11-11T12:24:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "finite-state-secures-27m-for-device-security-platf",
+      "article-03104875",
+      "03104875",
+      "finite-state-secures-27m-for-device-security-platf-527510",
+      "finite-state-secures-27m-for-device-security-platform"
+    ]
+  },
+  {
+    "slug": "muse-band-brain-data-trained-ai-without-user-conse-21f1f218",
+    "title": "Muse Band Brain Data Trained AI Without User Consent",
+    "summary": "Interaxon trained AI models on de-identified brainwave data from Muse sleep band users without explicit consent. The company revised its privacy policy only after journalistic inquiries, revealing inadequate transparency around biometric data usage. Users should review updated privacy terms and consider opting out of data sharing features, while security teams assess biometric data handling practices in consumer IoT devices.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/muse-sleep-band-users-werent-told-their-brain-data-was-training-ai",
+    "publishedAt": "2026-11-11T12:23:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "muse-band-brain-data-trained-ai-without-user-conse",
+      "article-21f1f218",
+      "21f1f218",
+      "muse-band-brain-data-trained-ai-without-user-conse-3103fc",
+      "muse-band-brain-data-trained-ai-without-user-consent"
+    ]
+  },
+  {
+    "slug": "35-000-grok-apps-exposed-leaking-confidential-data-b61d131a",
+    "title": "35,000 Grok Apps Exposed Leaking Confidential Data",
+    "summary": "Over 35,000 Grok-built applications were publicly accessible without authentication, exposing internal business data and credentials. Researchers found 35,578 of 37,571 apps open to anyone, with approximately 10% containing sensitive corporate information including passwords. Organizations must immediately audit Grok app deployments, enforce authentication, rotate any exposed credentials, and monitor for potential misuse of leaked credentials.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+    "publishedAt": "2026-11-11T12:19:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "35-000-grok-apps-exposed-leaking-confidential-data",
+      "article-b61d131a",
+      "b61d131a",
+      "35-000-grok-apps-exposed-leaking-confidential-data-2138c5"
+    ]
+  },
+  {
     "slug": "fortinet-releases-patch-for-nearly-100-vulnerabili-2d6ccff8",
     "title": "Fortinet Releases Patch for Nearly 100 Vulnerabilities",
     "summary": "Fortinet issued a comprehensive patch update covering almost 100 vulnerabilities discovered during AI‑driven security testing across multiple Fortinet devices. The update addresses a mix of authentication bypasses, privilege escalation flaws, and buffer overflows across FortiGate and FortiManager products. Administrators should apply the latest firmware and verify configuration compliance to mitigate potential exploitation.",
@@ -1498,6 +1708,24 @@ export const news: NewsBrief[] = [
       "2d6ccff8",
       "fortinet-releases-patch-for-nearly-100-vulnerabili-5b88be",
       "fortinet-releases-patch-for-nearly-100-vulnerabilities"
+    ]
+  },
+  {
+    "slug": "three-arrested-for-ai-voice-impersonation-fraud-2307b996",
+    "title": "Three Arrested for AI Voice Impersonation Fraud",
+    "summary": "Three individuals were arrested for using AI-generated voice and image impersonation to defraud companies of large payments. The scheme targeted executives and attorneys across multiple organizations between 2024 and 2026, leveraging deepfake technology for social engineering. Law enforcement agencies in Spain, the UK, and the US collaborated on the arrests, highlighting the growing threat of AI-enabled fraud.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
+    "publishedAt": "2026-11-11T12:05:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "three-arrested-for-ai-voice-impersonation-fraud",
+      "article-2307b996",
+      "2307b996",
+      "three-arrested-for-ai-voice-impersonation-fraud-989bbd"
     ]
   },
   {
@@ -1893,6 +2121,25 @@ export const news: NewsBrief[] = [
       "article-d84570bf",
       "d84570bf",
       "grafana-update-released-for-rhel9-37d6e5"
+    ]
+  },
+  {
+    "slug": "red-hat-openshift-5-launches-autonomous-hybrid-clo-e9efdb40",
+    "title": "Red Hat OpenShift 5 Launches Autonomous Hybrid Cloud Troubleshooting",
+    "summary": "Red Hat announced the general availability of Red Hat OpenShift 5 for hybrid cloud application management. The upgraded Kubernetes platform integrates zero trust security, operational intelligence, and side-by-side deployment capabilities for containers, virtual machines, and AI workloads. IT teams can upgrade existing infrastructure directly from Red Hat OpenShift 4 via an in-place update process.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/red-hat-openshift-5/",
+    "publishedAt": "2026-11-11T09:31:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-openshift-5-launches-autonomous-hybrid-clo",
+      "article-e9efdb40",
+      "e9efdb40",
+      "red-hat-openshift-5-launches-autonomous-hybrid-clo-6ca36f",
+      "red-hat-openshift-5-launches-autonomous-hybrid-cloud-trouble"
     ]
   },
   {
@@ -2353,6 +2600,69 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-vulnerable-to-yaml-code-injection-9c7df172",
+    "title": "Meta fairseq Vulnerable to YAML Code Injection",
+    "summary": "Meta fairseq’s HubertModel component is vulnerable to a YAML file parsing code injection that can lead to code execution. The flaw, identified as CVE‑2026‑111760, requires user interaction to open a malicious file and carries a CVSS score of 7.8, indicating high exploitation risk. Affected users should apply the vendor‑issued patch or update to a fixed version to eliminate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-923/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-vulnerable-to-yaml-code-injection",
+      "article-9c7df172",
+      "9c7df172",
+      "meta-fairseq-vulnerable-to-yaml-code-injection-6f3d0f"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1-0b041a28",
+    "title": "Meta Fairseq YAML Parsing Vulnerability (CVE-2026-111760) Enables Remote Code Execution",
+    "summary": "Meta Fairseq’s Wav2Vec2Model component contains a YAML parsing flaw (CVE‑2026‑111760) that permits remote code execution when a user opens a malicious file. The vulnerability, rated 7.8 CVSS, affects Meta’s audio models and requires user interaction. Users must apply the vendor‑issued patch or upgrade to a fixed version to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-922/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [
+      {
+        "source": "ZDI Advisories",
+        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-920/"
+      }
+    ],
+    "aliases": [
+      "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1",
+      "article-0b041a28",
+      "0b041a28",
+      "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1-6f3d0f",
+      "meta-fairseq-yaml-parsing-vulnerability-cve-2026-111760-enab"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-transformerlanguagemodel-yaml-injecti-8c16505b",
+    "title": "Meta fairseq TransformerLanguageModel YAML Injection",
+    "summary": "Meta fairseq’s TransformerLanguageModel component is vulnerable to a YAML file parsing code injection that can lead to code execution. The flaw, identified as CVE‑2026‑111760, requires user interaction to open a malicious file and carries a CVSS score of 7.8, indicating high exploitation risk. Affected users should apply the vendor‑issued patch or update to a fixed version to eliminate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-921/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-transformerlanguagemodel-yaml-injecti",
+      "article-8c16505b",
+      "8c16505b",
+      "meta-fairseq-transformerlanguagemodel-yaml-injecti-6f3d0f",
+      "meta-fairseq-transformerlanguagemodel-yaml-injection"
     ]
   },
   {
@@ -9271,328 +9581,6 @@ export const news: NewsBrief[] = [
       "0c4c03dd",
       "arctic-wolf-and-aws-launch-joint-incident-response-61b6b7",
       "arctic-wolf-and-aws-launch-joint-incident-response-platform-"
-    ]
-  },
-  {
-    "slug": "france-accuses-iran-of-cyberattack-on-supermarket-9c760c5c",
-    "title": "France Accuses Iran of Cyberattack on Supermarket Refrigerators",
-    "summary": "France accused Iran of a cyberattack that targeted supermarket refrigeration systems, causing them to overheat and risk food spoilage. Attackers exploited a remote code execution flaw in the IoT firmware, enabling manipulation of temperature controls and triggering heating elements. French authorities summoned the Iranian ambassador, urged manufacturers to apply patches, and are pursuing European sanctions against the perpetrators.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
-    "publishedAt": "2026-11-09T18:32:42.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Record",
-        "sourceUrl": "https://therecord.media/france-blames-iran-for-fridge-cyberattacks"
-      },
-      {
-        "source": "SecurityWeek",
-        "sourceUrl": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/"
-      }
-    ],
-    "aliases": [
-      "france-accuses-iran-of-cyberattack-on-supermarket",
-      "article-9c760c5c",
-      "9c760c5c",
-      "france-accuses-iran-of-cyberattack-on-supermarket-5a8e91",
-      "france-accuses-iran-of-cyberattack-on-supermarket-refrigerat"
-    ]
-  },
-  {
-    "slug": "vanderbilt-warns-of-cyberattack-impacting-campus-d-8d4b82c6",
-    "title": "Vanderbilt Warns of Cyberattack Impacting Campus Devices",
-    "summary": "Vanderbilt University reported a cyberattack that may have impacted campus devices and systems. The attack's specifics remain undisclosed, but the university cautions that compromised credentials or malware could have accessed network resources. Security teams are advised to monitor for anomalous activity, enforce multi-factor authentication, and apply pending vendor patches promptly.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/vanderbilt-cyberattack-ransomware-alert",
-    "publishedAt": "2026-11-09T18:30:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vanderbilt-warns-of-cyberattack-impacting-campus-d",
-      "article-8d4b82c6",
-      "8d4b82c6",
-      "vanderbilt-warns-of-cyberattack-impacting-campus-d-594602",
-      "vanderbilt-warns-of-cyberattack-impacting-campus-devices"
-    ]
-  },
-  {
-    "slug": "attackers-seek-sap-netweaver-webshells-ec730fe7",
-    "title": "Attackers Seek SAP Netweaver Webshells",
-    "summary": "Attackers are scanning for SAP Netweaver webshells on exposed servers, targeting the application for exploitation. The flaw permits remote code execution via unauthorized shell files, but no public PoC or CVE is disclosed, limiting immediate risk. Teams should monitor logs for shell activity, apply vendor patches, and enforce strict access controls to mitigate compromise.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33502",
-    "publishedAt": "2026-11-09T18:18:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-seek-sap-netweaver-webshells",
-      "article-ec730fe7",
-      "ec730fe7",
-      "attackers-seek-sap-netweaver-webshells-57dd81"
-    ]
-  },
-  {
-    "slug": "claude-tool-vulnerability-enables-linux-rce-3e1e0341",
-    "title": "Claude Tool Vulnerability Enables Linux RCE",
-    "summary": "Attackers leveraged a flaw in Anthropic’s Claude document-processing tool to execute malicious code on Linux systems. The vulnerability allows creation of a temporary file that AI assistant can access, enabling remote code execution with privilege escalation. Anthropic has released a patch for the affected component, and users should update to the latest version or disable the document-processing feature until remediation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
-    "publishedAt": "2026-11-09T18:08:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-tool-vulnerability-enables-linux-rce",
-      "article-3e1e0341",
-      "3e1e0341",
-      "claude-tool-vulnerability-enables-linux-rce-10261b"
-    ]
-  },
-  {
-    "slug": "openjdk-21-faces-multiple-authentication-flaws-06ebae8e",
-    "title": "OpenJDK 21 Faces Multiple Authentication Flaws",
-    "summary": "Ubuntu Security Notices report four OpenJDK 21 components—Security, JSSE, Compiler, and JAAS—failing to authenticate or authorize users, exposing CVE‑2026‑83374, CVE‑2026‑83376, CVE‑2026‑83378, and CVE‑2026‑83380. The flaws allow unauthenticated remote attackers to read or modify sensitive data, potentially compromising application integrity and confidentiality. Users should upgrade to the patched OpenJDK 21 release and apply the vendor’s recommended mitigations to enforce proper authentication.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9015-1",
-    "publishedAt": "2026-11-09T18:01:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openjdk-21-faces-multiple-authentication-flaws",
-      "article-06ebae8e",
-      "06ebae8e",
-      "openjdk-21-faces-multiple-authentication-flaws-7e8934"
-    ]
-  },
-  {
-    "slug": "apple-releases-macos-27-2-1-security-update-2cb6f97c",
-    "title": "Apple Releases macOS 27.2.1 Security Update",
-    "summary": "Apple released macOS 27.2.1 (26B131) to address a set of security vulnerabilities affecting the operating system. The update patches multiple flaws, including a privilege escalation bug and a memory corruption issue that could allow local attackers to gain elevated access. Security teams should download and install the update promptly to maintain system integrity and comply with Apple’s security best practices.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026d",
-    "publishedAt": "2026-11-09T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-macos-27-2-1-security-update",
-      "article-2cb6f97c",
-      "2cb6f97c",
-      "apple-releases-macos-27-2-1-security-update-70fac5"
-    ]
-  },
-  {
-    "slug": "apple-releases-watchos-27-2-1-security-update-36a4d2ce",
-    "title": "Apple Releases watchOS 27.2.1 Security Update",
-    "summary": "Apple released watchOS 27.2.1 (24S132) to fix several security issues identified in the smartwatch operating system. The update addresses vulnerabilities such as a buffer overflow in the watch’s communication stack and a flaw that could allow unauthorized access to health data. Users should install the update through the Apple Watch app to ensure device security and protect sensitive health information.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026f",
-    "publishedAt": "2026-11-09T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-watchos-27-2-1-security-update",
-      "article-36a4d2ce",
-      "36a4d2ce",
-      "apple-releases-watchos-27-2-1-security-update-70fac5"
-    ]
-  },
-  {
-    "slug": "apple-releases-ipados-26-7-3-security-update-d48ebd8a",
-    "title": "Apple Releases iPadOS 26.7.3 Security Update",
-    "summary": "Apple issued iPadOS 26.7.3 (23H131) to address multiple security vulnerabilities affecting the iPadOS platform. The update resolves flaws in the operating system that could allow attackers to execute arbitrary code or bypass security protections. iPad users should install this patch immediately to mitigate potential exploitation risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026e",
-    "publishedAt": "2026-11-09T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-ipados-26-7-3-security-update",
-      "article-d48ebd8a",
-      "d48ebd8a",
-      "apple-releases-ipados-26-7-3-security-update-70fac5"
-    ]
-  },
-  {
-    "slug": "apple-releases-ios-27-2-1-security-update-8051478b",
-    "title": "Apple Releases iOS 27.2.1 Security Update",
-    "summary": "Apple released iOS 27.2.1 (build 24B156/24B91034) to iOS users, addressing multiple security vulnerabilities and performance issues. The update patches critical flaws that could allow remote code execution, data leakage, or denial‑of‑service attacks on affected devices. Users are urged to download the update via the App Store immediately to maintain device security and stability.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026a",
-    "publishedAt": "2026-11-09T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Apple Security Updates",
-        "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026b"
-      }
-    ],
-    "aliases": [
-      "apple-releases-ios-27-2-1-security-update",
-      "article-8051478b",
-      "8051478b",
-      "apple-releases-ios-27-2-1-security-update-70fac5"
-    ]
-  },
-  {
-    "slug": "apple-releases-ipados-27-2-1-24b156-2dd77244",
-    "title": "Apple Releases iPadOS 27.2.1 (24B156)",
-    "summary": "Apple released iPadOS 27.2.1 (24B156) to iPad users, delivering updated security patches and performance improvements. The update is available for download through the App Store, ensuring device compatibility with the latest iPadOS version and improved system stability. Users should install the update promptly to maintain security posture and benefit from stability enhancements.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Apple Security Updates",
-    "sourceUrl": "https://developer.apple.com/news/releases/?id=11092026c",
-    "publishedAt": "2026-11-09T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-ipados-27-2-1-24b156",
-      "article-2dd77244",
-      "2dd77244",
-      "apple-releases-ipados-27-2-1-24b156-70fac5"
-    ]
-  },
-  {
-    "slug": "abe-office-malware-steals-chrome-passwords-eded8374",
-    "title": "Abe Office Malware Steals Chrome Passwords",
-    "summary": "A new remote-access trojan, Abe Office, masquerades as an office helper and steals Chrome passwords and cookies, bypassing App-Bound Encryption. Researchers found the malware exploits weak protection in Chrome’s encryption wrapper, using a code-signing certificate to evade detection and capture credentials. Security teams should block the Abe Office executable, revoke the signed certificate, and enforce multi-factor authentication for privileged accounts.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/abe-office-malware/",
-    "publishedAt": "2026-11-09T17:58:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "abe-office-malware-steals-chrome-passwords",
-      "article-eded8374",
-      "eded8374",
-      "abe-office-malware-steals-chrome-passwords-765175"
-    ]
-  },
-  {
-    "slug": "qubole-aws-backdoor-enables-customer-data-breach-dc6dac4b",
-    "title": "Qubole AWS Backdoor Enables Customer Data Breach",
-    "summary": "Qubole’s AWS deployment contained a backdoor that allowed attackers to access and exfiltrate customer secrets without authentication. Between October 14 and 26, attackers used the compromised AWS credentials to breach multiple customer accounts and steal data. Qubole urged immediate patching, telemetry review, and deployment of detection rules to mitigate further exfiltration.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
-    "publishedAt": "2026-11-09T17:51:21.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/attackers-backdoor-trusted-aws-integrations-to-steal-se"
-      }
-    ],
-    "aliases": [
-      "qubole-aws-backdoor-enables-customer-data-breach",
-      "article-dc6dac4b",
-      "dc6dac4b",
-      "qubole-aws-backdoor-enables-customer-data-breach-7c9614"
-    ]
-  },
-  {
-    "slug": "beget-rebuilds-cloud-after-data-wiping-malware-att-d4645aab",
-    "title": "Beget Rebuilds Cloud After Data-Wiping Malware Attack",
-    "summary": "A data-wiping malware attack destroyed Beget's cloud infrastructure, forcing the Russian provider to rebuild from scratch. The attack leveraged a destructive payload that erased all stored data, but no evidence of data exfiltration or credential theft was reported. Beget has not released a patch but recommends restoring from backups and implementing stricter access controls to mitigate future destructive threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
-    "publishedAt": "2026-11-09T17:50:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "beget-rebuilds-cloud-after-data-wiping-malware-att",
-      "article-d4645aab",
-      "d4645aab",
-      "beget-rebuilds-cloud-after-data-wiping-malware-att-d269f2",
-      "beget-rebuilds-cloud-after-data-wiping-malware-attack"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-jboss-web-server-6-2-6-security-u-4c18ac9b",
-    "title": "Red Hat Releases JBoss Web Server 6.2.6 Security Update Addressing Multiple Vulnerabilities",
-    "summary": "Red Hat released JBoss Web Server 6.2.6 for RHEL 8, 9, 10, and Windows Server to patch multiple vulnerabilities that could allow remote exploitation. The flaws involve authentication, authorization, and improper input validation that could lead to remote code execution or unauthorized access. Red Hat recommends installing the 6.2.6 update immediately and reviewing referenced CVE links for critical severity details.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96228",
-    "publishedAt": "2026-11-09T17:37:53.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Red Hat Security Advisories",
-        "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96229"
-      }
-    ],
-    "aliases": [
-      "red-hat-releases-jboss-web-server-6-2-6-security-u",
-      "article-4c18ac9b",
-      "4c18ac9b",
-      "red-hat-releases-jboss-web-server-6-2-6-security-u-37d7d9",
-      "red-hat-releases-jboss-web-server-6-2-6-security-update-addr"
-    ]
-  },
-  {
-    "slug": "ethersphere-tools-compromised-to-steal-wallet-keys-b4abafee",
-    "title": "Ethersphere Tools Compromised to Steal Wallet Keys",
-    "summary": "Attackers hijacked Ethersphere's bee-js 13.3.0 and Swarm Desktop 0.56.2 releases, injecting code that steals wallet keys and node passwords. The malicious payload exploits release automation, enabling credential theft and backdoor installation without user interaction, threatening Swarm participants. Ethersphere warns users to verify release signatures, update to patched versions, and monitor for unauthorized backdoors.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
-    "publishedAt": "2026-11-09T17:36:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ethersphere-tools-compromised-to-steal-wallet-keys",
-      "article-b4abafee",
-      "b4abafee",
-      "ethersphere-tools-compromised-to-steal-wallet-keys-6b3b88"
-    ]
-  },
-  {
-    "slug": "openjdk-17-vulnerabilities-allow-remote-data-modif-081b64b4",
-    "title": "OpenJDK 17 Vulnerabilities Allow Remote Data Modification",
-    "summary": "Ubuntu identified multiple OpenJDK 17 components lacking proper authentication or authorization, exposing the platform to remote data tampering. Vulnerabilities CVE-2026-83374, CVE-2026-83376, CVE-2026-83380, CVE-2026-83381, and others enable attackers to read or modify sensitive data without credentials. Apply the latest OpenJDK 17 update and verify component authentication controls to mitigate the identified flaws.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9014-1",
-    "publishedAt": "2026-11-09T17:27:36.000Z",
-    "cves": [
-      "CVE-2026-83374",
-      "CVE-2026-83376",
-      "CVE-2026-83380",
-      "CVE-2026-83381"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openjdk-17-vulnerabilities-allow-remote-data-modif",
-      "article-081b64b4",
-      "081b64b4",
-      "openjdk-17-vulnerabilities-allow-remote-data-modif-7e8938",
-      "openjdk-17-vulnerabilities-allow-remote-data-modification"
     ]
   }
 ];

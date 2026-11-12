@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 23:47:02 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:50:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases .NET 9.0 Update with Security Fixes</title>
+      <link>https://secubuzz.com/news/red-hat-releases-net-9-0-update-with-security-fixe-1986e8d3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-net-9-0-update-with-security-fixe-1986e8d3</guid>
+      <description><![CDATA[Red Hat released a .NET 9.0 update for RHEL 10 to fix multiple security issues. The update addresses several vulnerabilities with CVSS scores marked Important, though no specific CVE IDs are cited; the flaws could enable exploitation of the .NET runtime. Red Hat advises installing the package from standard RHEL repositories immediately and verifying checksums to ensure integrity.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:51:26 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99145">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Kernel Update for RHEL 10</title>
+      <link>https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-10-8660ca44</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-kernel-update-for-rhel-10-8660ca44</guid>
+      <description><![CDATA[Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security bugs. The update fixes several kernel vulnerabilities, each with a CVSS base score listed in the CVE references, and is rated as Important by Product Security. Administrators should apply the RHSA‑2026:99133 package immediately to mitigate the identified flaws and ensure system reboot.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:46:25 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99133">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Releases Kernel Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-kernel-security-update-dcf5048d</link>
@@ -251,6 +269,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Yodl Buffer Over-Read Causes Denial of Service</title>
+      <link>https://secubuzz.com/news/yodl-buffer-over-read-causes-denial-of-service-a3e333a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/yodl-buffer-over-read-causes-denial-of-service-a3e333a7</guid>
+      <description><![CDATA[Ubuntu identified a buffer over-read in Yodl that could be triggered by malformed input. The flaw may allow an attacker to crash Yodl, leading to a denial of service, though no active exploitation has been reported. Users should update to the latest Yodl package via Ubuntu repositories; no additional workarounds are required.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:33:50 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9063-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>SNMPTT Allows Remote Command Execution via Unsanitized Traps</title>
+      <link>https://secubuzz.com/news/snmptt-allows-remote-command-execution-via-unsanit-67af8411</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/snmptt-allows-remote-command-execution-via-unsanit-67af8411</guid>
+      <description><![CDATA[Ubuntu discovered that SNMPTT fails to sanitize trap data passed to EXEC, PREEXEC, and unknown_trap_exec commands. A remote attacker could exploit this flaw to run arbitrary shell commands, potentially compromising the host system without authentication. Apply the latest SNMPTT update from Ubuntu repositories immediately, promptly; no additional mitigations are necessary.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:33:46 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9062-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Vanderbilt Restores Systems After Alleged Data Theft Attack</title>
       <link>https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</guid>
@@ -294,6 +330,24 @@
       <pubDate>Wed, 11 Nov 2026 17:02:43 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99015">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>PAN-OS Sensitive Info Disclosure CVE-2026-0331</title>
+      <link>https://secubuzz.com/news/pan-os-sensitive-info-disclosure-cve-2026-0331-f96bf5fa</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pan-os-sensitive-info-disclosure-cve-2026-0331-f96bf5fa</guid>
+      <description><![CDATA[A sensitive information disclosure flaw in Palo Alto Networks PAN‑OS lets attackers retrieve confidential configuration data via unauthenticated API calls. The vulnerability, CVE‑2026‑0331, exploits improper input validation in the management interface, yielding a medium‑severity exposure without credentials. Palo Alto released a patch in the latest PAN‑OS update; security teams should apply it or restrict API access.]]></description>
+      <pubDate>Wed, 11 Nov 2026 17:00:00 GMT</pubDate>
+      <source url="https://security.paloaltonetworks.com/CVE-2026-0331">Palo Alto Networks PSIRT</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Update Addresses CVE-2026-113971</title>
+      <link>https://secubuzz.com/news/chromium-update-addresses-cve-2026-113971-bb8a4c72</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-update-addresses-cve-2026-113971-bb8a4c72</guid>
+      <description><![CDATA[Palo Alto Networks issued a Chromium update addressing a high‑severity flaw that could enable remote code execution via malicious web content. CVE‑2026‑113971 exploits a buffer overflow in the rendering engine, allowing attackers to run arbitrary code without user interaction. Apply the latest Chromium patch or disable the vulnerable feature to mitigate the risk until a vendor‑issued fix is released.]]></description>
+      <pubDate>Wed, 11 Nov 2026 17:00:00 GMT</pubDate>
+      <source url="https://security.paloaltonetworks.com/PAN-SA-2026-0014">Palo Alto Networks PSIRT</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>PAN‑OS GlobalProtect Authorization Bypass CVE‑2026‑0325</title>
@@ -368,6 +422,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>.NET Elevation Privilege CVE-2026-105544</title>
+      <link>https://secubuzz.com/news/net-elevation-privilege-cve-2026-105544-4257502d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/net-elevation-privilege-cve-2026-105544-4257502d</guid>
+      <description><![CDATA[Microsoft announced an informational update for CVE‑2026‑105544, an elevation of privilege vulnerability affecting the .NET framework. The flaw allows local users to gain higher privileges by manipulating the runtime configuration, but no active exploitation has been reported. Microsoft has not released a patch yet; administrators should monitor for future advisories and apply any subsequent fixes when available.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>.NET DoS Vulnerability CVE-2026-109475</title>
+      <link>https://secubuzz.com/news/net-dos-vulnerability-cve-2026-109475-59cd8639</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/net-dos-vulnerability-cve-2026-109475-59cd8639</guid>
+      <description><![CDATA[Microsoft issued an informational notice for CVE‑2026‑109475, a denial‑of‑service flaw in the .NET framework. The vulnerability permits local users to trigger a crash by sending malformed input to the runtime, but no active exploitation has been observed. No patch has been released; administrators should watch for future updates and apply any subsequent fixes when available.]]></description>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Updates Product List for CVE-2026-114159 RCE</title>
       <link>https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-114159-91575e5e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-114159-91575e5e</guid>
@@ -384,78 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745">Microsoft MSRC</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Updates Visual Studio CVE-2026-114151 RCE</title>
-      <link>https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114151-rc-6d361bc9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114151-rc-6d361bc9</guid>
-      <description><![CDATA[Microsoft issued an informational update for Visual Studio addressing CVE-2026-114151, a remote code execution flaw. The flaw permits unauthenticated code execution via malformed input, yet no public exploit or PoC has been released. The update lists affected product versions only; no patch is required and no immediate remediation is necessary.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114151">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Updates Visual Studio CVE-2026-114152 RCE</title>
-      <link>https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114152-rc-76b4d667</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114152-rc-76b4d667</guid>
-      <description><![CDATA[Microsoft issued an informational update for Visual Studio addressing CVE-2026-114152, a remote code execution flaw. The vulnerability allows unauthenticated code execution through malformed input, but no public exploit or PoC has been disclosed. The update merely lists affected product versions; no patch is required and no immediate remediation is necessary.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114152">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Updates Visual Studio CVE-2026-114158 RCE</title>
-      <link>https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114158-rc-c6216357</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-visual-studio-cve-2026-114158-rc-c6216357</guid>
-      <description><![CDATA[Microsoft issued an informational update for Visual Studio addressing CVE-2026-114158, a remote code execution flaw. The flaw permits unauthenticated code execution via malformed input, yet no public exploit or PoC has been released. The update lists affected product versions only; no patch is required and no immediate remediation is necessary.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114158">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Xen Orchestra Authentication Bypass Enables Admin Code Execution</title>
-      <link>https://secubuzz.com/news/xen-orchestra-authentication-bypass-enables-admin-6ddfe4c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/xen-orchestra-authentication-bypass-enables-admin-6ddfe4c0</guid>
-      <description><![CDATA[A critical authentication bypass in Xen Orchestra allows attackers to gain administrative privileges on XCP‑ng nodes. The flaw permits arbitrary code execution via crafted API requests, exposing the hypervisor to remote compromise without user interaction. Red Hat and Xen Orchestra have released patches; administrators should apply the latest updates and restrict API access to trusted hosts.]]></description>
-      <pubDate>Wed, 11 Nov 2026 15:42:47 GMT</pubDate>
-      <source url="https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ansible 2.4 Critical Update Addresses Remote Exploits</title>
-      <link>https://secubuzz.com/news/ansible-2-4-critical-update-addresses-remote-explo-a6243e06</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ansible-2-4-critical-update-addresses-remote-explo-a6243e06</guid>
-      <description><![CDATA[Red Hat released a critical security update for Ansible Automation Platform 2.4, addressing multiple vulnerabilities that could allow remote code execution. The update includes patches for CVE‑linked flaws, each with a CVSS base score indicating high exploitation risk. Administrators should apply the RHSA‑2026:99006 update immediately and verify that all affected nodes are patched.]]></description>
-      <pubDate>Wed, 11 Nov 2026 15:26:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99006">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ansible 2.5 Critical Update Addresses Remote Exploits</title>
-      <link>https://secubuzz.com/news/ansible-2-5-critical-update-addresses-remote-explo-26701ba2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ansible-2-5-critical-update-addresses-remote-explo-26701ba2</guid>
-      <description><![CDATA[Red Hat issued a critical patch for Ansible Automation Platform 2.5, fixing vulnerabilities that could enable remote code execution on managed nodes. Each flaw is referenced by CVE identifiers and carries a high CVSS score, indicating significant exploitation potential. Users should apply the RHSA‑2026:99007 update promptly and audit their Ansible inventory for unpatched hosts.]]></description>
-      <pubDate>Wed, 11 Nov 2026 15:23:30 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99007">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AntiFox AI Agents Target AWS Credentials</title>
-      <link>https://secubuzz.com/news/antifox-ai-agents-target-aws-credentials-4539ca27</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/antifox-ai-agents-target-aws-credentials-4539ca27</guid>
-      <description><![CDATA[Attackers deploy AntiFox AI agents on Alibaba Cloud to harvest AWS credentials from targeted web services. The open-source platform automates credential extraction, enabling rapid lateral movement within compromised AWS environments. Defenders should restrict outbound traffic from cloud instances, enforce least‑privilege IAM roles, and monitor for anomalous credential usage daily actively continuously.]]></description>
-      <pubDate>Wed, 11 Nov 2026 15:12:59 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Updates Java Runtime on RHEL 8</title>
-      <link>https://secubuzz.com/news/red-hat-updates-java-runtime-on-rhel-8-f2c13183</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-java-runtime-on-rhel-8-f2c13183</guid>
-      <description><![CDATA[Red Hat released an important security update for java‑1.8.0‑openjdk on RHEL 8, fixing Java runtime vulnerabilities. The patch addresses remote code execution and information disclosure flaws with CVSS scores between 7.0 and 8.5. Apply the update promptly, test application compatibility, and monitor for anomalous runtime behavior to maintain security posture.]]></description>
-      <pubDate>Wed, 11 Nov 2026 15:01:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:95609">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
