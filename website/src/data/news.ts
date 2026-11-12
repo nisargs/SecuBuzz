@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-python-oauthlib-security-update-69467088",
+    "title": "Red Hat Releases python‑oauthlib Security Update",
+    "summary": "Red Hat has issued an Important security update for python‑oauthlib on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities identified by CVE references. The update includes CVSS scores for each vulnerability, but no active exploitation has been reported, mitigating potential remote code execution risks. Users should apply the RHSA‑2026:99167 update immediately to ensure protection against the disclosed weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99167",
+    "publishedAt": "2026-11-12T01:32:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-python-oauthlib-security-update",
+      "article-69467088",
+      "69467088",
+      "red-hat-releases-python-oauthlib-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "chinese-ai-project-gathers-taiwan-chip-industry-da-9c2c0544",
+    "title": "Chinese AI Project Gathers Taiwan Chip Industry Data",
+    "summary": "Chinese state-sponsored AI system collects data on Taiwan chip industry personnel. The system scrapes publicly available information and internal documents, building a database that could enable targeted exploitation of individuals abroad. Security teams should monitor for credential compromise, enforce strict access controls, and protect sensitive personnel data in the organization.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
+    "publishedAt": "2026-11-12T01:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chinese-ai-project-gathers-taiwan-chip-industry-da",
+      "article-9c2c0544",
+      "9c2c0544",
+      "chinese-ai-project-gathers-taiwan-chip-industry-da-223b95",
+      "chinese-ai-project-gathers-taiwan-chip-industry-data"
+    ]
+  },
+  {
     "slug": "red-hat-releases-net-9-0-update-with-security-fixe-1986e8d3",
     "title": "Red Hat Releases .NET 9.0 Update with Security Fixes",
     "summary": "Red Hat released a .NET 9.0 update for RHEL 10 to fix multiple security issues. The update addresses several vulnerabilities with CVSS scores marked Important, though no specific CVE IDs are cited; the flaws could enable exploitation of the .NET runtime. Red Hat advises installing the package from standard RHEL repositories immediately and verifying checksums to ensure integrity.",
@@ -81,6 +118,24 @@ export const news: NewsBrief[] = [
       "article-cc10fd3f",
       "cc10fd3f",
       "red-hat-issues-net-10-0-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-perl-dbi-1-641-security-update-adaf0bb9",
+    "title": "Red Hat Issues Perl-DBI 1.641 Security Update",
+    "summary": "Red Hat released a security update for the perl-DBI 1.641 module on RHEL 8. The update addresses multiple vulnerabilities that could allow attackers to gain elevated privileges or execute arbitrary code, as indicated by the CVSS scores linked in the advisory. Administrators should apply the patch immediately and verify module integrity to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99210",
+    "publishedAt": "2026-11-11T23:16:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-perl-dbi-1-641-security-update",
+      "article-adaf0bb9",
+      "adaf0bb9",
+      "red-hat-issues-perl-dbi-1-641-security-update-37d67c"
     ]
   },
   {
@@ -585,6 +640,44 @@ export const news: NewsBrief[] = [
       "67af8411",
       "snmptt-allows-remote-command-execution-via-unsanit-7e86f9",
       "snmptt-allows-remote-command-execution-via-unsanitized-traps"
+    ]
+  },
+  {
+    "slug": "kramdown-vulnerability-enables-arbitrary-file-read-5b97ec88",
+    "title": "kramdown Vulnerability Enables Arbitrary File Read and Code Execution",
+    "summary": "The kramdown Ruby library processes the template option by default, creating a flaw in Ubuntu packages. This behavior allows attackers to read arbitrary files or execute code within the host environment, potentially compromising system integrity. Users should upgrade to the patched kramdown version or apply the Ubuntu security update to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9060-1",
+    "publishedAt": "2026-11-11T18:33:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kramdown-vulnerability-enables-arbitrary-file-read",
+      "article-5b97ec88",
+      "5b97ec88",
+      "kramdown-vulnerability-enables-arbitrary-file-read-7e8701",
+      "kramdown-vulnerability-enables-arbitrary-file-read-and-code-"
+    ]
+  },
+  {
+    "slug": "ruby-jwt-hmac-verification-flaw-enables-token-forg-7407c5b3",
+    "title": "ruby-jwt HMAC Verification Flaw Enables Token Forgery",
+    "summary": "The ruby-jwt library fails to verify HMAC signatures when the key is empty or missing, exposing Ubuntu installations. An attacker can forge authentication tokens, bypassing security controls and potentially gaining unauthorized access to protected services. Apply the updated ruby-jwt package or patch the library to enforce proper key validation in your environment.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9059-1",
+    "publishedAt": "2026-11-11T18:33:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ruby-jwt-hmac-verification-flaw-enables-token-forg",
+      "article-7407c5b3",
+      "7407c5b3",
+      "ruby-jwt-hmac-verification-flaw-enables-token-forg-7e8754",
+      "ruby-jwt-hmac-verification-flaw-enables-token-forgery"
     ]
   },
   {
@@ -2603,21 +2696,88 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "meta-fairseq-vulnerable-to-yaml-code-injection-9c7df172",
-    "title": "Meta fairseq Vulnerable to YAML Code Injection",
-    "summary": "Meta fairseq’s HubertModel component is vulnerable to a YAML file parsing code injection that can lead to code execution. The flaw, identified as CVE‑2026‑111760, requires user interaction to open a malicious file and carries a CVSS score of 7.8, indicating high exploitation risk. Affected users should apply the vendor‑issued patch or update to a fixed version to eliminate the vulnerability.",
+    "slug": "meta-fairseq-vggtransformermodel-yaml-rce-requires-3d01e0e6",
+    "title": "Meta fairseq VGGTransformerModel YAML RCE Requires User File Open",
+    "summary": "A zero‑day code‑injection flaw in Meta fairseq’s VGGTransformerModel YAML parser allows remote attackers to execute arbitrary code when a victim opens a crafted file. Identified as CVE‑2026‑111760, the flaw has a CVSS score of 7.8; no active exploitation has been reported. Meta fairseq has issued a patch; users should apply the update or avoid opening malicious YAML files.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-918/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-vggtransformermodel-yaml-rce-requires",
+      "article-3d01e0e6",
+      "3d01e0e6",
+      "meta-fairseq-vggtransformermodel-yaml-rce-requires-6f3d0c",
+      "meta-fairseq-vggtransformermodel-yaml-rce-requires-user-file"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-load-speaker-yaml-rce-requires-user-i-47a5c8df",
+    "title": "Meta fairseq load_speaker YAML RCE Requires User Interaction",
+    "summary": "A zero‑day code‑injection flaw in Meta fairseq’s load_speaker YAML parser lets remote attackers execute arbitrary code when a victim opens a crafted file. Identified as CVE‑2026‑111760, the flaw carries a CVSS score of 7.8; no active exploitation has been reported. Meta fairseq has issued a patch; users should apply the update or avoid opening malicious YAML files.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-917/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-load-speaker-yaml-rce-requires-user-i",
+      "article-47a5c8df",
+      "47a5c8df",
+      "meta-fairseq-load-speaker-yaml-rce-requires-user-i-6f3d0c",
+      "meta-fairseq-load-speaker-yaml-rce-requires-user-interaction"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-code-injection-vulnerability-cve-2026-d15972ca",
+    "title": "Meta fairseq Code Injection Vulnerability (CVE-2026-111760)",
+    "summary": "Meta fairseq split_by_lang code injection vulnerability (CVE-2026-111760) permits remote attackers to execute arbitrary code on affected installations. The flaw requires user interaction, such as visiting a malicious page or opening a malicious file, and has a CVSS score of 7.8. Meta has released a patch; administrators should update to the latest version to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-916/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-code-injection-vulnerability-cve-2026",
+      "article-d15972ca",
+      "d15972ca",
+      "meta-fairseq-code-injection-vulnerability-cve-2026-6f3d0c",
+      "meta-fairseq-code-injection-vulnerability-cve-2026-111760"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-yaml-code-injection-flaw-cve-2026-111-d1e8367c",
+    "title": "Meta fairseq YAML Code Injection Flaw (CVE-2026-111760) Enables Remote Code Execution",
+    "summary": "A high-severity YAML code-injection vulnerability, CVE-2026-111760, affects Meta's fairseq machine-learning library, disclosed by ZDI Advisories. The parser flaw lets remote attackers execute arbitrary code when a victim opens a crafted file, scoring CVSS 7.8 with no active exploitation reported. Meta issued a patch; users should update or avoid opening malicious YAML files.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "ZDI Advisories",
     "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-923/",
     "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [
+      {
+        "source": "ZDI Advisories",
+        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-919/"
+      }
+    ],
     "aliases": [
-      "meta-fairseq-vulnerable-to-yaml-code-injection",
-      "article-9c7df172",
-      "9c7df172",
-      "meta-fairseq-vulnerable-to-yaml-code-injection-6f3d0f"
+      "meta-fairseq-yaml-code-injection-flaw-cve-2026-111",
+      "article-d1e8367c",
+      "d1e8367c",
+      "meta-fairseq-yaml-code-injection-flaw-cve-2026-111-6f3d0f",
+      "meta-fairseq-yaml-code-injection-flaw-cve-2026-111760-enable"
     ]
   },
   {
@@ -3847,6 +4007,24 @@ export const news: NewsBrief[] = [
       "article-0f3608f7",
       "0f3608f7",
       "libreswan-update-fixes-security-vulnerabilities-37d6f7"
+    ]
+  },
+  {
+    "slug": "malicious-screenconnect-deployments-observed-3476ec75",
+    "title": "Malicious ScreenConnect Deployments Observed",
+    "summary": "Malicious ScreenConnect deployments observed by Sophos Threat Research. The deployments involve unauthorized use of the ScreenConnect platform, potentially compromising system integrity and facilitating unauthorized remote access. Sophos recommends monitoring for anomalous ScreenConnect activity, applying vendor security controls, reviewing remote support configurations, and verifying the legitimacy of remote sessions to mitigate risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Sophos Threat Research",
+    "sourceUrl": "https://www.sophos.com/en-us/blog/malicious-screenconnect-deployments-observed",
+    "publishedAt": "2026-11-11T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "malicious-screenconnect-deployments-observed",
+      "article-3476ec75",
+      "3476ec75",
+      "malicious-screenconnect-deployments-observed-3f2e43"
     ]
   },
   {
@@ -6813,6 +6991,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "clickfix-tradecraft-evolves-with-new-attack-chains-a7ea0c06",
+    "title": "ClickFix Tradecraft Evolves with New Attack Chains",
+    "summary": "Huntress reports evolving tradecraft of ClickFix, detailing four attack chains: lateral movement, hidden PNG payloads, Node.js RATs, and cache seeing. The techniques enable attackers to move laterally, deliver malicious payloads via disguised images, deploy Node.js RATs, and exfiltrate data through cache manipulation. Huntress recommends monitoring for unusual lateral activity, image-based payloads, Node.js anomalies, and cache access patterns to mitigate risk.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/the-evolving-tradecraft-of-clickfix",
+    "publishedAt": "2026-11-10T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "clickfix-tradecraft-evolves-with-new-attack-chains",
+      "article-a7ea0c06",
+      "a7ea0c06",
+      "clickfix-tradecraft-evolves-with-new-attack-chains-41dc9e"
+    ]
+  },
+  {
     "slug": "critical-apache-airflow-rce-flaw-allows-attackers-724acf9f",
     "title": "Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication",
     "summary": "Apache Airflow has a critical remote code execution flaw that lets anyone with write access to the Celery message broker run code on worker nodes. The bug is tracked as CVE-2026-68982 and is classified as CWE-306, missing authentication for a critical function.",
@@ -9379,208 +9575,6 @@ export const news: NewsBrief[] = [
       "db5fcc69",
       "sega-exposes-2-2m-subscriber-emails-via-arara-brea-245287",
       "sega-exposes-2-2m-subscriber-emails-via-arara-breach"
-    ]
-  },
-  {
-    "slug": "cisa-unveils-enhanced-incident-reporting-form-35de4eec",
-    "title": "CISA Unveils Enhanced Incident Reporting Form",
-    "summary": "CISA introduced a new incident reporting questionnaire designed to collect detailed data on cyber events. The form captures critical information that enables the agency to assess incident severity, detect emerging trends, and prioritize response resources. Organizations should submit incident details through the new form to support CISA’s improved analysis and coordination efforts.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
-    "publishedAt": "2026-11-09T21:38:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-unveils-enhanced-incident-reporting-form",
-      "article-35de4eec",
-      "35de4eec",
-      "cisa-unveils-enhanced-incident-reporting-form-599910"
-    ]
-  },
-  {
-    "slug": "n-able-shuts-down-n-central-cloud-over-able2shell-e2990899",
-    "title": "N-Able Shuts Down N-Central Cloud Over 'Able2Shell' Zero-Day Vulnerabilities",
-    "summary": "N-Able took its N-Central cloud platform offline after the 'Able2Shell' vulnerability set, comprising over 30 zero-days enabling remote code execution and privilege escalation, was publicly disclosed with proof-of-concept exploits. The flaws allow full server compromise across hosted and on-premises deployments. N-Able urges immediate shutdown of all N-Central instances pending vendor patches.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
-    "publishedAt": "2026-11-09T21:26:25.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Huntress",
-        "sourceUrl": "https://www.huntress.com/blog/n-able-disables-cloud-services-following-disclosure-of-able2shell-exploit-chains"
-      },
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html"
-      }
-    ],
-    "aliases": [
-      "n-able-shuts-down-n-central-cloud-over-able2shell",
-      "article-e2990899",
-      "e2990899",
-      "n-able-shuts-down-n-central-cloud-over-able2shell-742e0a",
-      "n-able-shuts-down-n-central-cloud-over-able2shell-zero-day-v"
-    ]
-  },
-  {
-    "slug": "york-university-breach-reveals-2007-personal-data-e585fff0",
-    "title": "York University Breach Reveals 2007 Personal Data",
-    "summary": "York University disclosed a breach in which a threat actor accessed personal information submitted via online forms dating back to 2007. The stolen data includes names, email addresses, phone numbers, and student identification numbers, potentially exposing thousands of individuals. York University has notified affected parties, engaged forensic investigators, and is reviewing its data protection controls to prevent future incidents.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
-    "publishedAt": "2026-11-09T21:22:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "york-university-breach-reveals-2007-personal-data",
-      "article-e585fff0",
-      "e585fff0",
-      "york-university-breach-reveals-2007-personal-data-10175b"
-    ]
-  },
-  {
-    "slug": "cve-2026-124033-relative-path-traversal-in-the-log-e0d7aeb5",
-    "title": "CVE-2026-124033 - Relative path traversal in the log export commands in AWS ParallelCluster CLI",
-    "summary": "Bulletin ID: 2026-174-AWS Publication Date: 11/09/2026 13:00 PM PST Description: AWS ParallelCluster CLI is an open source command line tool, distributed on PyPI as aws-parallelcluster. We identified CVE-2026-124033, an issue where the export-cluster-logs and export-image-logs commands in the AWS ParallelCluster CLI before version 3.16.0 contain a relative path traversal issue.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-174-aws/",
-    "publishedAt": "2026-11-09T21:12:17.000Z",
-    "cves": [
-      "CVE-2026-124033"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-124033-relative-path-traversal-in-the-log",
-      "article-e0d7aeb5",
-      "e0d7aeb5",
-      "cve-2026-124033-relative-path-traversal-in-the-log-44f08c",
-      "cve-2026-124033-relative-path-traversal-in-the-log-export-co"
-    ]
-  },
-  {
-    "slug": "chrome-stable-update-addresses-three-high-severity-9606d6c0",
-    "title": "Chrome Stable Update Addresses Three High‑Severity CVEs",
-    "summary": "Google Chrome’s latest stable channel update (157.0.8103.50/51) patches three high‑severity vulnerabilities in WebGL, FileSystem, and Compositing. The flaws—CVE‑2026‑125345, CVE‑2026‑125347, CVE‑2026‑125343—enable uninitialized resource exploitation, authorization bypass, and buffer overflow, potentially allowing remote code execution. Install the update promptly; Chrome will deploy the patch over the next days, and users should verify via the Chrome Security Page.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_018223192.html",
-    "publishedAt": "2026-11-09T20:52:57.820Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-stable-update-addresses-three-high-severity",
-      "article-9606d6c0",
-      "9606d6c0",
-      "chrome-stable-update-addresses-three-high-severity-13a865",
-      "chrome-stable-update-addresses-three-high-severity-cves"
-    ]
-  },
-  {
-    "slug": "chrome-extended-stable-update-fixes-eleven-high-se-5a870814",
-    "title": "Chrome Extended Stable Update Fixes Eleven High‑Severity CVEs",
-    "summary": "Google Chrome’s Extended Stable update (156.0.8078.96) patches eleven high‑severity flaws, including CVE‑2026‑121068, CVE‑2026‑121076, and CVE‑2026‑125350. These flaws involve improper authentication, authorization bypass, and buffer overflows, potentially allowing remote code execution or privilege escalation on affected systems. Install the update promptly; Chrome will deploy the patch over the next days, and users should verify via the Chrome Security Page.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/extended-stable-update-for-desktop_0910980127.html",
-    "publishedAt": "2026-11-09T20:45:01.211Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-extended-stable-update-fixes-eleven-high-se",
-      "article-5a870814",
-      "5a870814",
-      "chrome-extended-stable-update-fixes-eleven-high-se-58f40d",
-      "chrome-extended-stable-update-fixes-eleven-high-severity-cve"
-    ]
-  },
-  {
-    "slug": "amplifon-breach-exposes-medical-data-of-thousands-f81b72eb",
-    "title": "Amplifon Breach Exposes Medical Data of Thousands",
-    "summary": "A data breach at Amplifon’s U.S. arm exposed medical information of thousands of customers. The incident involved unauthorized disclosure of sensitive health records, but no credentials or financial data were reported. Amplifon notified affected customers and is conducting a forensic investigation while advising them to monitor for identity theft ongoing.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/amplifon-hearing-aid-company-data-breach",
-    "publishedAt": "2026-11-09T20:44:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "amplifon-breach-exposes-medical-data-of-thousands",
-      "article-f81b72eb",
-      "f81b72eb",
-      "amplifon-breach-exposes-medical-data-of-thousands-4a2dc5"
-    ]
-  },
-  {
-    "slug": "black-hat-india-2026-debuts-in-bengaluru-2152c0ba",
-    "title": "Black Hat India 2026 Debuts in Bengaluru",
-    "summary": "Black Hat India 2026, a first‑time conference in Bengaluru, convened global cybersecurity researchers, practitioners, and decision makers. The event featured four days of cutting‑edge research, technical exchange, and strategic dialogue, covering emerging threats and defensive innovations. Attendees can network, share insights, and collaborate on future security initiatives, reinforcing industry resilience.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
-    "publishedAt": "2026-11-09T20:19:56.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "black-hat-india-2026-debuts-in-bengaluru",
-      "article-2152c0ba",
-      "2152c0ba",
-      "black-hat-india-2026-debuts-in-bengaluru-4308e8"
-    ]
-  },
-  {
-    "slug": "forge-lab-uses-agentic-tools-to-identify-memory-sa-cd50a823",
-    "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
-    "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
-    "publishedAt": "2026-11-09T20:17:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "forge-lab-uses-agentic-tools-to-identify-memory-sa",
-      "article-cd50a823",
-      "cd50a823",
-      "forge-lab-uses-agentic-tools-to-identify-memory-sa-df9851",
-      "forge-lab-uses-agentic-tools-to-identify-memory-safety-issue"
-    ]
-  },
-  {
-    "slug": "arctic-wolf-and-aws-launch-joint-incident-response-0c4c03dd",
-    "title": "Arctic Wolf and AWS Launch Joint Incident‑Response Platform for Cloud‑Native Environments",
-    "summary": "Arctic Wolf and AWS unveiled a joint incident‑response platform targeting cloud‑native environments. The solution merges Arctic Wolf’s managed detection and response with AWS security services to accelerate threat containment and automate recovery workflows. Organizations are encouraged to adopt the platform, configure real‑time alerts, and test playbooks to reduce mean time to containment.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/report/improve-incident-response-with-arctic-wolf-and-aws/",
-    "publishedAt": "2026-11-09T19:02:47.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Arctic Wolf",
-        "sourceUrl": "https://arcticwolf.com/resources/datasheet/accelerate-incident-response-across-aws-environments/"
-      }
-    ],
-    "aliases": [
-      "arctic-wolf-and-aws-launch-joint-incident-response",
-      "article-0c4c03dd",
-      "0c4c03dd",
-      "arctic-wolf-and-aws-launch-joint-incident-response-61b6b7",
-      "arctic-wolf-and-aws-launch-joint-incident-response-platform-"
     ]
   }
 ];

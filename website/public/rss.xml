@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 00:50:27 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 01:51:07 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases python‑oauthlib Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-python-oauthlib-security-update-69467088</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-python-oauthlib-security-update-69467088</guid>
+      <description><![CDATA[Red Hat has issued an Important security update for python‑oauthlib on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities identified by CVE references. The update includes CVSS scores for each vulnerability, but no active exploitation has been reported, mitigating potential remote code execution risks. Users should apply the RHSA‑2026:99167 update immediately to ensure protection against the disclosed weaknesses.]]></description>
+      <pubDate>Thu, 12 Nov 2026 01:32:17 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99167">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Chinese AI Project Gathers Taiwan Chip Industry Data</title>
+      <link>https://secubuzz.com/news/chinese-ai-project-gathers-taiwan-chip-industry-da-9c2c0544</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chinese-ai-project-gathers-taiwan-chip-industry-da-9c2c0544</guid>
+      <description><![CDATA[Chinese state-sponsored AI system collects data on Taiwan chip industry personnel. The system scrapes publicly available information and internal documents, building a database that could enable targeted exploitation of individuals abroad. Security teams should monitor for credential compromise, enforce strict access controls, and protect sensitive personnel data in the organization.]]></description>
+      <pubDate>Thu, 12 Nov 2026 01:00:00 GMT</pubDate>
+      <source url="https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry">Dark Reading</source>
+      <category>Nation State</category>
+    </item>
     <item>
       <title>Red Hat Releases .NET 9.0 Update with Security Fixes</title>
       <link>https://secubuzz.com/news/red-hat-releases-net-9-0-update-with-security-fixe-1986e8d3</link>
@@ -41,6 +59,15 @@
       <description><![CDATA[Red Hat released a .NET 10.0 security update for RHEL 10, addressing multiple vulnerabilities that could allow remote code execution via the .NET runtime. The update contains fixes for several CVEs, each with a CVSS base score, but no active exploitation reported. Red Hat recommends applying the RHSA-2026:99143 update immediately to mitigate potential exploitation.]]></description>
       <pubDate>Wed, 11 Nov 2026 23:25:00 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99143">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Perl-DBI 1.641 Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-perl-dbi-1-641-security-update-adaf0bb9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-perl-dbi-1-641-security-update-adaf0bb9</guid>
+      <description><![CDATA[Red Hat released a security update for the perl-DBI 1.641 module on RHEL 8. The update addresses multiple vulnerabilities that could allow attackers to gain elevated privileges or execute arbitrary code, as indicated by the CVSS scores linked in the advisory. Administrators should apply the patch immediately and verify module integrity to prevent exploitation.]]></description>
+      <pubDate>Wed, 11 Nov 2026 23:16:45 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99210">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -287,6 +314,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>kramdown Vulnerability Enables Arbitrary File Read and Code Execution</title>
+      <link>https://secubuzz.com/news/kramdown-vulnerability-enables-arbitrary-file-read-5b97ec88</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kramdown-vulnerability-enables-arbitrary-file-read-5b97ec88</guid>
+      <description><![CDATA[The kramdown Ruby library processes the template option by default, creating a flaw in Ubuntu packages. This behavior allows attackers to read arbitrary files or execute code within the host environment, potentially compromising system integrity. Users should upgrade to the patched kramdown version or apply the Ubuntu security update to mitigate the risk.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:33:31 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9060-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ruby-jwt HMAC Verification Flaw Enables Token Forgery</title>
+      <link>https://secubuzz.com/news/ruby-jwt-hmac-verification-flaw-enables-token-forg-7407c5b3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ruby-jwt-hmac-verification-flaw-enables-token-forg-7407c5b3</guid>
+      <description><![CDATA[The ruby-jwt library fails to verify HMAC signatures when the key is empty or missing, exposing Ubuntu installations. An attacker can forge authentication tokens, bypassing security controls and potentially gaining unauthorized access to protected services. Apply the updated ruby-jwt package or patch the library to enforce proper key validation in your environment.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:33:24 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9059-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Vanderbilt Restores Systems After Alleged Data Theft Attack</title>
       <link>https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</guid>
@@ -410,51 +455,6 @@
       <description><![CDATA[Zoom Workplace for Windows is vulnerable to CVE-2026-108186, an unauthenticated remote privilege escalation flaw triggered by improper input validation. The flaw carries a CVSS score of 9.6, enabling attackers to elevate privileges without authentication and potentially compromise affected systems. Zoom has released software updates to address the vulnerability; security teams should apply the patch immediately to mitigate risk.]]></description>
       <pubDate>Wed, 11 Nov 2026 16:12:46 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials</title>
-      <link>https://secubuzz.com/news/hackers-could-exploit-mcp-server-supply-chain-weak-7b7ec6a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-could-exploit-mcp-server-supply-chain-weak-7b7ec6a2</guid>
-      <description><![CDATA[Security teams that run AI coding assistants may be exposing their most powerful credentials without knowing it. A new study shows that Model Context Protocol (MCP) servers can quietly change their own code after they are set up.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:07:18 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-could-exploit-mcp-server/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>.NET Elevation Privilege CVE-2026-105544</title>
-      <link>https://secubuzz.com/news/net-elevation-privilege-cve-2026-105544-4257502d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/net-elevation-privilege-cve-2026-105544-4257502d</guid>
-      <description><![CDATA[Microsoft announced an informational update for CVE‑2026‑105544, an elevation of privilege vulnerability affecting the .NET framework. The flaw allows local users to gain higher privileges by manipulating the runtime configuration, but no active exploitation has been reported. Microsoft has not released a patch yet; administrators should monitor for future advisories and apply any subsequent fixes when available.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>.NET DoS Vulnerability CVE-2026-109475</title>
-      <link>https://secubuzz.com/news/net-dos-vulnerability-cve-2026-109475-59cd8639</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/net-dos-vulnerability-cve-2026-109475-59cd8639</guid>
-      <description><![CDATA[Microsoft issued an informational notice for CVE‑2026‑109475, a denial‑of‑service flaw in the .NET framework. The vulnerability permits local users to trigger a crash by sending malformed input to the runtime, but no active exploitation has been observed. No patch has been released; administrators should watch for future updates and apply any subsequent fixes when available.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Updates Product List for CVE-2026-114159 RCE</title>
-      <link>https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-114159-91575e5e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-114159-91575e5e</guid>
-      <description><![CDATA[Microsoft updated its product list for CVE-2026-114159, a Visual Studio remote code execution vulnerability that could allow attackers to run arbitrary code. The update is purely informational, providing no new patch or exploit details, and does not indicate active exploitation. Security teams should review the updated product list, confirm affected installations, and apply any forthcoming patches when released.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Updates Product List for CVE-2026-118745 RCE</title>
-      <link>https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-118745-753f3dd2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-updates-product-list-for-cve-2026-118745-753f3dd2</guid>
-      <description><![CDATA[Microsoft updated its product list for CVE-2026-118745, a Visual Studio remote code execution vulnerability that could allow attackers to run arbitrary code. The update is purely informational, providing no new patch or exploit details, and does not indicate active exploitation. Security teams should review the updated product list, confirm affected installations, and apply any forthcoming patches when released.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>
