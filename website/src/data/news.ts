@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622",
+    "title": "RHSA-2026:99630: Important: kernel security, bug fix, and enhancement update",
+    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99630",
+    "publishedAt": "2026-11-12T17:29:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99630-important-kernel-security-bug-fix",
+      "article-f04a9622",
+      "f04a9622",
+      "rhsa-2026-99630-important-kernel-security-bug-fix-37d66d",
+      "rhsa-2026-99630-important-kernel-security-bug-fix-and-enhanc"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99660-important-xfsprogs-security-update-1d7bc380",
+    "title": "RHSA-2026:99660: Important: xfsprogs security update",
+    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99660",
+    "publishedAt": "2026-11-12T17:18:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99660-important-xfsprogs-security-update",
+      "article-1d7bc380",
+      "1d7bc380",
+      "rhsa-2026-99660-important-xfsprogs-security-update-37d66c"
+    ]
+  },
+  {
     "slug": "critical-red-hat-quay-flaw-lets-attackers-read-and-b698f583",
     "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
     "summary": "A critical flaw in Red Hat Quay allows an attacker who can access a Quay registry to read and overwrite private container images in every repository. When it is off, anyone with a valid account can still exploit the flaw, Red Hat said yesterday. The vulnerability is tracked as CVE-2026-123710.",
@@ -9501,45 +9538,6 @@ export const news: NewsBrief[] = [
       "article-8e55b81a",
       "8e55b81a",
       "dreeze-secures-33m-seed-funding-for-cloud-recovery-7994f3"
-    ]
-  },
-  {
-    "slug": "clickfix-tradecraft-evolves-with-new-attack-chains-a7ea0c06",
-    "title": "ClickFix Tradecraft Evolves with New Attack Chains",
-    "summary": "Huntress reports evolving tradecraft of ClickFix, detailing four attack chains: lateral movement, hidden PNG payloads, Node.js RATs, and cache seeing. The techniques enable attackers to move laterally, deliver malicious payloads via disguised images, deploy Node.js RATs, and exfiltrate data through cache manipulation. Huntress recommends monitoring for unusual lateral activity, image-based payloads, Node.js anomalies, and cache access patterns to mitigate risk.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Huntress",
-    "sourceUrl": "https://www.huntress.com/blog/the-evolving-tradecraft-of-clickfix",
-    "publishedAt": "2026-11-10T14:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "clickfix-tradecraft-evolves-with-new-attack-chains",
-      "article-a7ea0c06",
-      "a7ea0c06",
-      "clickfix-tradecraft-evolves-with-new-attack-chains-41dc9e"
-    ]
-  },
-  {
-    "slug": "critical-apache-airflow-rce-flaw-allows-attackers-724acf9f",
-    "title": "Critical Apache Airflow RCE Flaw Allows Attackers to Execute Code Without Authentication",
-    "summary": "Apache Airflow has a critical remote code execution flaw that lets anyone with write access to the Celery message broker run code on worker nodes. The bug is tracked as CVE-2026-68982 and is classified as CWE-306, missing authentication for a critical function.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-apache-airflow-rce-flaw/",
-    "publishedAt": "2026-11-10T13:57:52.000Z",
-    "cves": [
-      "CVE-2026-68982"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-apache-airflow-rce-flaw-allows-attackers",
-      "article-724acf9f",
-      "724acf9f",
-      "critical-apache-airflow-rce-flaw-allows-attackers-679389",
-      "critical-apache-airflow-rce-flaw-allows-attackers-to-execute"
     ]
   }
 ];

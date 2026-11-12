@@ -5309,5 +5309,8 @@
   "https://access.redhat.com/errata/RHSA-2026:99592",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-200",
   "https://access.redhat.com/errata/RHSA-2026:99154",
-  "https://access.redhat.com/errata/RHSA-2026:99122"
+  "https://access.redhat.com/errata/RHSA-2026:99122",
+  "https://access.redhat.com/errata/RHSA-2026:99630",
+  "https://access.redhat.com/errata/RHSA-2026:99660",
+  "https://cert.europa.eu/publications/security-advisories/2026-020/"
 ]

@@ -2,6 +2,32 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-118740",
+    "slug": "cve-2026-118740",
+    "vendor": ".NET (NuGet)",
+    "product": "Aspire.Dashboard.Sdk.linux-x64",
+    "name": "Microsoft Security Advisory CVE-2026-118740 - Aspire Security Feature Bypass Vulnerability",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 9.1,
+    "severity": "Critical",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components. Aspire Dashboard's unauthenticated NotFound route can permit telemetry deletion in both standalone and AppHost-hosted deployments.",
+    "requiredAction": "Upgrade Aspire.Dashboard.Sdk.linux-x64 to version 13.6.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4g86-54fm-h9h8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118740"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-118745",
     "slug": "cve-2026-118745",
     "vendor": ".NET (NuGet)",
@@ -1124,6 +1150,28 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
+    "cve": "GHSA-2f3w-v7f5-vpgx",
+    "slug": "ghsa-2f3w-v7f5-vpgx",
+    "vendor": ".NET (NuGet)",
+    "product": "Aspire.Dashboard.Sdk.linux-x64",
+    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-118740 - Aspire Security Feature Bypass Vulnerability",
+    "dateAdded": "2026-11-10",
+    "dueDate": "",
+    "cvss": 9.1,
+    "severity": "Critical",
+    "cwe": "CWE-862",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-4g86-54fm-h9h8. This link is maintained to preserve external references. Missing authorization in Aspire allows an unauthorized attacker to bypass a security feature over a network.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-2f3w-v7f5-vpgx"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-95x6-7hq8-2c37",
     "slug": "ghsa-95x6-7hq8-2c37",
     "vendor": ".NET (NuGet)",
@@ -1339,58 +1387,6 @@ export const advisories: Advisory[] = [
       {
         "label": "GitHub Advisory",
         "url": "https://github.com/advisories/GHSA-r33q-3g5w-gqx6"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126068",
-    "slug": "cve-2026-126068",
-    "vendor": "RubyGems",
-    "product": "actionmailbox",
-    "name": "Action Mailbox: Possible signature replay in Action Mailbox Mailgun ingress",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-294",
-    "ransomware": false,
-    "description": "The Action Mailbox Mailgun ingress authenticates a request with an HMAC of the timestamp and token parameters concatenated without a separator, and ActionMailbox::Ingresses::Mailgun::InboundEmailsController::Authenticator#recent? rejects only timestamps more than 2 minutes in the past.",
-    "requiredAction": "Upgrade actionmailbox to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5957-c7qm-m469"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126068"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126075",
-    "slug": "cve-2026-126075",
-    "vendor": "RubyGems",
-    "product": "activesupport",
-    "name": "Active Support: Possible XSS vulnerability in Active Support MessagePack serializer",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 4.7,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "ActiveSupport::MessagePack serializes an ActiveSupport::SafeBuffer as its bytes alone and deserializes it as a new SafeBuffer, so a buffer that is no longer html_safe? (for example, one mutated in place with gsub!) is restored as html_safe.",
-    "requiredAction": "Upgrade activesupport to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2w9f-fxwj-w2qf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126075"
       }
     ],
     "source": "GITHUB"

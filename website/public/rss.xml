@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 16:46:11 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 17:45:08 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:99630: Important: kernel security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622</guid>
+      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 17:29:35 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99630">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99660: Important: xfsprogs security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99660-important-xfsprogs-security-update-1d7bc380</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99660-important-xfsprogs-security-update-1d7bc380</guid>
+      <description><![CDATA[An update for xfsprogs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 17:18:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99660">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry</title>
       <link>https://secubuzz.com/news/critical-red-hat-quay-flaw-lets-attackers-read-and-b698f583</link>
@@ -438,24 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 08:23:33 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/12/net-11-security-changes/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Node.js HTTP/2 Flaws Crash Servers, Leak Data</title>
-      <link>https://secubuzz.com/news/node-js-http-2-flaws-crash-servers-leak-data-95e8fd61</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-js-http-2-flaws-crash-servers-leak-data-95e8fd61</guid>
-      <description><![CDATA[Unauthenticated clients can crash Node.js servers using HTTP/2 on 24.x and 26.x lines, and a second flaw leaks memory containing responses for other connections. The flaw stems from improper HTTP/2 frame handling, enabling denial of service and cross‑connection data exposure without authentication. Node.js released patched versions 22.23.5, 24.22.3, and 26.13.1; upgrade immediately to stop crashes and leaks.]]></description>
-      <pubDate>Thu, 12 Nov 2026 08:20:37 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>GitHub Accounts Hijacked, Secret-Stealing Malware Deployed</title>
-      <link>https://secubuzz.com/news/github-accounts-hijacked-secret-stealing-malware-d-3a685923</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-accounts-hijacked-secret-stealing-malware-d-3a685923</guid>
-      <description><![CDATA[A threat actor hijacked 4,837 GitHub accounts and pushed a secret‑stealing payload into 61,764 repositories, targeting secrets in GitHub Actions. The actor used stolen credentials to gain unauthenticated write access, enabling malware to exfiltrate CI pipeline secrets without user interaction. GitHub issued a security advisory, urging token revocation, two‑factor authentication, and repository scans for malicious code.]]></description>
-      <pubDate>Thu, 12 Nov 2026 08:15:03 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/github-accounts/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
