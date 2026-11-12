@@ -5,8 +5,62 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 12:56:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 13:47:06 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Endgame Takedown Recovers 6 Million Stolen Credentials</title>
+      <link>https://secubuzz.com/news/endgame-takedown-recovers-6-million-stolen-credent-3e3943d7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/endgame-takedown-recovers-6-million-stolen-credent-3e3943d7</guid>
+      <description><![CDATA[Police and Europol dismantled servers behind Gootloader, CastleRAT, and StealC malware, uncovering more than 6 million stolen credentials used by ransomware gangs. The credentials were harvested from infected computers and sold to attackers, enabling unauthorized network access and facilitating ransomware operations. Law enforcement should continue to disrupt credential‑selling services and enforce stricter authentication controls to mitigate future ransomware infiltration.]]></description>
+      <pubDate>Thu, 12 Nov 2026 13:34:14 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Releases Important Cockpit Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-important-cockpit-security-update-7d415ad2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-cockpit-security-update-7d415ad2</guid>
+      <description><![CDATA[Red Hat issued a security update for cockpit on Enterprise Linux 9.8 Extended Update Support, addressing an important vulnerability. The update carries a CVSS base score indicating significant risk, and the referenced CVE(s) detail the flaw in cockpit’s authentication handling. Administrators should apply the update immediately to prevent potential privilege escalation or unauthorized access.]]></description>
+      <pubDate>Thu, 12 Nov 2026 13:31:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99601">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Romania Blocks Russian Attack on Government Emails</title>
+      <link>https://secubuzz.com/news/romania-blocks-russian-attack-on-government-emails-b15c63ed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/romania-blocks-russian-attack-on-government-emails-b15c63ed</guid>
+      <description><![CDATA[Romania’s intelligence agency reported stopping a Russian state‑linked cyber‑espionage campaign that targeted government email accounts before data exfiltration could occur. The operation prevented the exfiltration of sensitive information, mitigating potential compromise of national security communications. Authorities should maintain continuous monitoring of state‑linked threat actors and enforce robust email authentication protocols.]]></description>
+      <pubDate>Thu, 12 Nov 2026 13:30:00 GMT</pubDate>
+      <source url="https://therecord.media/romania-russia-cyberattack-emails">The Record</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Kazakhstan Hackers Deploy AI Agent for Central Asian Espionage</title>
+      <link>https://secubuzz.com/news/kazakhstan-hackers-deploy-ai-agent-for-central-asi-3d350d73</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/kazakhstan-hackers-deploy-ai-agent-for-central-asi-3d350d73</guid>
+      <description><![CDATA[Suspected Kazakhstan-linked hackers deployed an AI agent to spy on Central Asian governments, steal documents, and infiltrate critical infrastructure. The agent automates reconnaissance and credential harvesting, bypassing traditional controls to gain unauthorized access to mission‑critical systems. Teams should enforce strict access controls, monitor for anomalous AI‑driven activity, and deploy advanced threat detection to mitigate infiltration.]]></description>
+      <pubDate>Thu, 12 Nov 2026 13:00:00 GMT</pubDate>
+      <source url="https://therecord.media/kazakhstan-hackers-central-asia">The Record</source>
+      <category>Nation State</category>
+    </item>
+    <item>
+      <title>Red Hat Releases krb5 Security Update for RHEL 10</title>
+      <link>https://secubuzz.com/news/red-hat-releases-krb5-security-update-for-rhel-10-f0f88349</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-krb5-security-update-for-rhel-10-f0f88349</guid>
+      <description><![CDATA[Red Hat issued a security update for the krb5 library on Red Hat Enterprise Linux 10, addressing a bug that could affect Kerberos authentication. The update carries an Important security impact rating, though no public exploit or CVE identifier is disclosed in the advisory. Customers should apply the RHSA‑2026:99624 package immediately to mitigate potential authentication weaknesses.]]></description>
+      <pubDate>Thu, 12 Nov 2026 12:56:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99624">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Cruciferra MaaS Conceals Infostealers and RATs</title>
+      <link>https://secubuzz.com/news/cruciferra-maas-conceals-infostealers-and-rats-1b5dca33</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cruciferra-maas-conceals-infostealers-and-rats-1b5dca33</guid>
+      <description><![CDATA[Cybercriminals rent the Cruciferra malware‑as‑a‑service platform to conceal infostealers and remote access trojans from security software. Cruciferra encrypts malicious payloads in multiple layers, evading antivirus and endpoint detection tools and enabling widespread global campaigns. Defenders should employ advanced behavioral analytics and multi‑layered detection to identify encrypted RATs and infostealer activity.]]></description>
+      <pubDate>Thu, 12 Nov 2026 12:48:24 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cruciferra-malware-as-a-service/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs</title>
       <link>https://secubuzz.com/news/google-cloud-warns-three-amd-turin-cpu-flaws-could-4a39446f</link>
@@ -125,6 +179,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Chrome Updates 83 Flaws, Five Critical RCE Fixes</title>
+      <link>https://secubuzz.com/news/chrome-updates-83-flaws-five-critical-rce-fixes-7a376471</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-updates-83-flaws-five-critical-rce-fixes-7a376471</guid>
+      <description><![CDATA[Google released a Chrome update fixing 83 vulnerabilities, including five use‑after‑free flaws that could enable remote code execution on Windows, macOS, and Linux. The flaws affect rendering, graphics, JavaScript, and core features, with CVSS scores up to 9.8, and are exploitable via crafted web content. Users should upgrade to Chrome 157.0.8103.78/79 or later, and admins should enforce updated security policies.]]></description>
+      <pubDate>Thu, 12 Nov 2026 10:32:09 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/google-chrome-fixes-83-security-flaws/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Red Hat Issues OpenSSH Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-openssh-security-update-418db160</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openssh-security-update-418db160</guid>
@@ -132,6 +195,15 @@
       <pubDate>Thu, 12 Nov 2026 10:00:13 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99573">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Warns Hackers Are Using GSocket Backdoors to Keep Linux Servers Compromised After Patching</title>
+      <link>https://secubuzz.com/news/microsoft-warns-hackers-are-using-gsocket-backdoor-b50f0c5f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-warns-hackers-are-using-gsocket-backdoor-b50f0c5f</guid>
+      <description><![CDATA[Microsoft has warned that attackers are using a free remote access tool called GSocket to stay inside Linux servers even after the original security hole is fixed. Many admins treat a patch as the end of an incident, but this activity shows that patching alone may leave the attacker’s access untouched.]]></description>
+      <pubDate>Thu, 12 Nov 2026 09:44:00 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/gsocket-backdoors/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>N-able Rushes Patches for Exploited N-central Zero-Days</title>
@@ -384,78 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 03:32:25 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99157">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99158: Important: nginx:1.24 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99158-important-nginx-1-24-security-upda-21fd5044</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99158-important-nginx-1-24-security-upda-21fd5044</guid>
-      <description><![CDATA[An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 03:32:25 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99158">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Node.js Fixes 16 Security Flaws That Could Expose TLS Private Keys and Crash Servers Remotely</title>
-      <link>https://secubuzz.com/news/node-js-fixes-16-security-flaws-that-could-expose-5283b59f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/node-js-fixes-16-security-flaws-that-could-expose-5283b59f</guid>
-      <description><![CDATA[The Node.js project has released fixes for 16 security flaws across its 22.x, 24.x and 26.x lines. The official advisory says the patched builds are v22.23.5, v24.22.3 and v26.13.1. The update also refreshes three bundled parts: llhttp, undici, and sqlite.]]></description>
-      <pubDate>Thu, 12 Nov 2026 03:30:20 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/node-js-fixes-16-security-vulnerabilities/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>MongoDB Use‑After‑Free CVE‑2026‑118383 Exploited</title>
-      <link>https://secubuzz.com/news/mongodb-use-after-free-cve-2026-118383-exploited-1445ee31</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mongodb-use-after-free-cve-2026-118383-exploited-1445ee31</guid>
-      <description><![CDATA[MongoDB is affected by CVE‑2026‑118383, a use‑after‑free vulnerability that can lead to arbitrary code execution in enterprise environments. The flaw arises when the database fails to release memory after a malicious request, allowing attackers to trigger a crash or execute injected code. MongoDB has released a patch; administrators should apply the update immediately and monitor logs for anomalous activity.]]></description>
-      <pubDate>Thu, 12 Nov 2026 03:24:43 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/cve-2026-118383-use-after-free-vulnerability-in-mongodb">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch</title>
-      <link>https://secubuzz.com/news/apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384</guid>
-      <description><![CDATA[A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof‑of‑concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor‑issued hotfix and enable recommended detection rules.]]></description>
-      <pubDate>Thu, 12 Nov 2026 03:24:23 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Falcon C2 Targets Government Portals with JavaScript</title>
-      <link>https://secubuzz.com/news/falcon-c2-targets-government-portals-with-javascri-c9c00956</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/falcon-c2-targets-government-portals-with-javascri-c9c00956</guid>
-      <description><![CDATA[Falcon C2 malware is targeting government portals by injecting malicious JavaScript into web pages. The injected scripts exploit client‑side vulnerabilities, capture user input, and establish command‑and‑control channels to exfiltrate data. Security teams should block known malicious domains, enforce script‑blocking policies, and immediately apply vendor security patches to mitigate the threat.]]></description>
-      <pubDate>Thu, 12 Nov 2026 03:24:12 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/the-xg-files-falcon-c2-flying-under-the-browser-radar">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Git Six Flaw RCE Patches Released</title>
-      <link>https://secubuzz.com/news/git-six-flaw-rce-patches-released-9789b13a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/git-six-flaw-rce-patches-released-9789b13a</guid>
-      <description><![CDATA[Git released patches for six critical flaws that could enable remote code execution if an attacker crafts malicious repository data. The vulnerabilities involve deserialization of untrusted input and were identified through root‑cause telemetry and detection rule hunting. Security teams should apply the Git patches immediately and review detection rules to ensure coverage of the affected code paths.]]></description>
-      <pubDate>Thu, 12 Nov 2026 03:22:39 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/git-fixes-six-vulnerabilities-including-code-execution">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ivanti RCE Flaw CVE-2026-121683 Demands Prompt Patch</title>
-      <link>https://secubuzz.com/news/ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-f1f37723</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ivanti-rce-flaw-cve-2026-121683-demands-prompt-pat-f1f37723</guid>
-      <description><![CDATA[Ivanti software contains a remote code execution vulnerability, CVE-2026-121683, that permits attackers to run arbitrary code on affected systems. The flaw originates from unchecked user input in the configuration parser, and publicly available proof‑of‑concept code confirms exploitation. Security teams should immediately apply the Ivanti patch or upgrade to the latest release and enable the vendor‑issued detection rules.]]></description>
-      <pubDate>Thu, 12 Nov 2026 03:19:15 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/citrix-ivanti-patch-critical-and-high-severity-vulnerab">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Fireworks AI Incident Exposes Notion Chat Data</title>
-      <link>https://secubuzz.com/news/fireworks-ai-incident-exposes-notion-chat-data-ccb5b9d7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fireworks-ai-incident-exposes-notion-chat-data-ccb5b9d7</guid>
-      <description><![CDATA[Notion experienced a data breach stemming from a security incident involving Fireworks AI, exposing user chat data. The incident allowed unauthorized access to sensitive chat telemetry and conversational records through third-party platform integration. Security teams must review root-cause telemetry, deploy threat detection rules, and apply recommended patches to secure impacted integrations.]]></description>
-      <pubDate>Thu, 12 Nov 2026 03:18:58 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/notion-says-fireworks-breach-exposed-customer-ai-chat-t">CyberNews AI</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

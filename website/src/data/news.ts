@@ -11,6 +11,116 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "endgame-takedown-recovers-6-million-stolen-credent-3e3943d7",
+    "title": "Endgame Takedown Recovers 6 Million Stolen Credentials",
+    "summary": "Police and Europol dismantled servers behind Gootloader, CastleRAT, and StealC malware, uncovering more than 6 million stolen credentials used by ransomware gangs. The credentials were harvested from infected computers and sold to attackers, enabling unauthorized network access and facilitating ransomware operations. Law enforcement should continue to disrupt credential‑selling services and enforce stricter authentication controls to mitigate future ransomware infiltration.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/",
+    "publishedAt": "2026-11-12T13:34:14.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "endgame-takedown-recovers-6-million-stolen-credent",
+      "article-3e3943d7",
+      "3e3943d7",
+      "endgame-takedown-recovers-6-million-stolen-credent-23c44f",
+      "endgame-takedown-recovers-6-million-stolen-credentials"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-important-cockpit-security-update-7d415ad2",
+    "title": "Red Hat Releases Important Cockpit Security Update",
+    "summary": "Red Hat issued a security update for cockpit on Enterprise Linux 9.8 Extended Update Support, addressing an important vulnerability. The update carries a CVSS base score indicating significant risk, and the referenced CVE(s) detail the flaw in cockpit’s authentication handling. Administrators should apply the update immediately to prevent potential privilege escalation or unauthorized access.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99601",
+    "publishedAt": "2026-11-12T13:31:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-important-cockpit-security-update",
+      "article-7d415ad2",
+      "7d415ad2",
+      "red-hat-releases-important-cockpit-security-update-37d66d"
+    ]
+  },
+  {
+    "slug": "romania-blocks-russian-attack-on-government-emails-b15c63ed",
+    "title": "Romania Blocks Russian Attack on Government Emails",
+    "summary": "Romania’s intelligence agency reported stopping a Russian state‑linked cyber‑espionage campaign that targeted government email accounts before data exfiltration could occur. The operation prevented the exfiltration of sensitive information, mitigating potential compromise of national security communications. Authorities should maintain continuous monitoring of state‑linked threat actors and enforce robust email authentication protocols.",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/romania-russia-cyberattack-emails",
+    "publishedAt": "2026-11-12T13:30:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "romania-blocks-russian-attack-on-government-emails",
+      "article-b15c63ed",
+      "b15c63ed",
+      "romania-blocks-russian-attack-on-government-emails-29f0e5"
+    ]
+  },
+  {
+    "slug": "kazakhstan-hackers-deploy-ai-agent-for-central-asi-3d350d73",
+    "title": "Kazakhstan Hackers Deploy AI Agent for Central Asian Espionage",
+    "summary": "Suspected Kazakhstan-linked hackers deployed an AI agent to spy on Central Asian governments, steal documents, and infiltrate critical infrastructure. The agent automates reconnaissance and credential harvesting, bypassing traditional controls to gain unauthorized access to mission‑critical systems. Teams should enforce strict access controls, monitor for anomalous AI‑driven activity, and deploy advanced threat detection to mitigate infiltration.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/kazakhstan-hackers-central-asia",
+    "publishedAt": "2026-11-12T13:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "kazakhstan-hackers-deploy-ai-agent-for-central-asi",
+      "article-3d350d73",
+      "3d350d73",
+      "kazakhstan-hackers-deploy-ai-agent-for-central-asi-520e00",
+      "kazakhstan-hackers-deploy-ai-agent-for-central-asian-espiona"
+    ]
+  },
+  {
+    "slug": "red-hat-releases-krb5-security-update-for-rhel-10-f0f88349",
+    "title": "Red Hat Releases krb5 Security Update for RHEL 10",
+    "summary": "Red Hat issued a security update for the krb5 library on Red Hat Enterprise Linux 10, addressing a bug that could affect Kerberos authentication. The update carries an Important security impact rating, though no public exploit or CVE identifier is disclosed in the advisory. Customers should apply the RHSA‑2026:99624 package immediately to mitigate potential authentication weaknesses.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99624",
+    "publishedAt": "2026-11-12T12:56:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-krb5-security-update-for-rhel-10",
+      "article-f0f88349",
+      "f0f88349",
+      "red-hat-releases-krb5-security-update-for-rhel-10-37d66d"
+    ]
+  },
+  {
+    "slug": "cruciferra-maas-conceals-infostealers-and-rats-1b5dca33",
+    "title": "Cruciferra MaaS Conceals Infostealers and RATs",
+    "summary": "Cybercriminals rent the Cruciferra malware‑as‑a‑service platform to conceal infostealers and remote access trojans from security software. Cruciferra encrypts malicious payloads in multiple layers, evading antivirus and endpoint detection tools and enabling widespread global campaigns. Defenders should employ advanced behavioral analytics and multi‑layered detection to identify encrypted RATs and infostealer activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cruciferra-malware-as-a-service/",
+    "publishedAt": "2026-11-12T12:48:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cruciferra-maas-conceals-infostealers-and-rats",
+      "article-1b5dca33",
+      "1b5dca33",
+      "cruciferra-maas-conceals-infostealers-and-rats-1df31d"
+    ]
+  },
+  {
     "slug": "google-cloud-warns-three-amd-turin-cpu-flaws-could-4a39446f",
     "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
     "summary": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. Inside a VM, the flaws may let an attacker with code on the same processor core infer data from other processes or the kernel.",
@@ -256,6 +366,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-updates-83-flaws-five-critical-rce-fixes-7a376471",
+    "title": "Chrome Updates 83 Flaws, Five Critical RCE Fixes",
+    "summary": "Google released a Chrome update fixing 83 vulnerabilities, including five use‑after‑free flaws that could enable remote code execution on Windows, macOS, and Linux. The flaws affect rendering, graphics, JavaScript, and core features, with CVSS scores up to 9.8, and are exploitable via crafted web content. Users should upgrade to Chrome 157.0.8103.78/79 or later, and admins should enforce updated security policies.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/google-chrome-fixes-83-security-flaws/",
+    "publishedAt": "2026-11-12T10:32:09.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-updates-83-flaws-five-critical-rce-fixes",
+      "article-7a376471",
+      "7a376471",
+      "chrome-updates-83-flaws-five-critical-rce-fixes-3e4626"
+    ]
+  },
+  {
     "slug": "red-hat-issues-openssh-security-update-418db160",
     "title": "Red Hat Issues OpenSSH Security Update",
     "summary": "Red Hat released an OpenSSH update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing multiple SSH vulnerabilities. Each flaw’s CVSS base score is listed in the references, indicating severity ranges but no confirmed exploitation. Apply the patch immediately to prevent potential remote code execution and maintain SSH service integrity.",
@@ -271,6 +399,25 @@ export const news: NewsBrief[] = [
       "article-418db160",
       "418db160",
       "red-hat-issues-openssh-security-update-37d670"
+    ]
+  },
+  {
+    "slug": "microsoft-warns-hackers-are-using-gsocket-backdoor-b50f0c5f",
+    "title": "Microsoft Warns Hackers Are Using GSocket Backdoors to Keep Linux Servers Compromised After Patching",
+    "summary": "Microsoft has warned that attackers are using a free remote access tool called GSocket to stay inside Linux servers even after the original security hole is fixed. Many admins treat a patch as the end of an incident, but this activity shows that patching alone may leave the attacker’s access untouched.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/gsocket-backdoors/",
+    "publishedAt": "2026-11-12T09:44:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-warns-hackers-are-using-gsocket-backdoor",
+      "article-b50f0c5f",
+      "b50f0c5f",
+      "microsoft-warns-hackers-are-using-gsocket-backdoor-2b8f06",
+      "microsoft-warns-hackers-are-using-gsocket-backdoors-to-keep-"
     ]
   },
   {
@@ -1066,6 +1213,42 @@ export const news: NewsBrief[] = [
       "9f880bf1",
       "baker-tilly-reports-third-party-data-exposure-inci-1f8243",
       "baker-tilly-reports-third-party-data-exposure-incident"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99161-moderate-patch-security-update-902bf761",
+    "title": "RHSA-2026:99161: Moderate: patch security update",
+    "summary": "An update for patch is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99161",
+    "publishedAt": "2026-11-12T02:31:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99161-moderate-patch-security-update",
+      "article-902bf761",
+      "902bf761",
+      "rhsa-2026-99161-moderate-patch-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99124-important-squid-security-update-5e3f8556",
+    "title": "RHSA-2026:99124: Important: squid security update",
+    "summary": "An update for squid is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99124",
+    "publishedAt": "2026-11-12T02:27:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99124-important-squid-security-update",
+      "article-5e3f8556",
+      "5e3f8556",
+      "rhsa-2026-99124-important-squid-security-update-37d67f"
     ]
   },
   {
@@ -2579,6 +2762,25 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "asp-net-core-vulnerability-enables-denial-of-servi-effa4853",
+    "title": "ASP.NET Core Vulnerability Enables Denial of Service",
+    "summary": "CVE‑2026‑114149 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed HTTP requests. The vulnerability allows attackers to exhaust server resources, causing legitimate traffic to be dropped without code execution. Microsoft has released an update; administrators should apply the latest ASP.NET Core patch to mitigate the DoS risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114149",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-vulnerability-enables-denial-of-servi",
+      "article-effa4853",
+      "effa4853",
+      "asp-net-core-vulnerability-enables-denial-of-servi-1feaf4",
+      "asp-net-core-vulnerability-enables-denial-of-service"
     ]
   },
   {
@@ -9353,225 +9555,6 @@ export const news: NewsBrief[] = [
       "4cd25477",
       "binance-alerts-iphone-users-to-ios-file-access-fla-551001",
       "binance-alerts-iphone-users-to-ios-file-access-flaw"
-    ]
-  },
-  {
-    "slug": "claude-mythos-5-2-enhances-bug-hunting-reduces-san-8326924a",
-    "title": "Claude Mythos 5.2 Enhances Bug Hunting, Reduces Sandbox Breaks",
-    "summary": "Anthropic released Claude Mythos 5.2, a model variant aimed at improving cybersecurity task detection. The update tightens safety classifiers, decreasing sandbox‑breaking incidents observed during controlled testing of penetration‑testing and exploit‑generation requests. Security teams should upgrade to Mythos 5.2 to benefit from stricter safeguards and reduced sandbox escape risk and improved detection.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/anthropic-claude-fable-and-mythos-5-2-safeguards/",
-    "publishedAt": "2026-11-10T11:40:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "claude-mythos-5-2-enhances-bug-hunting-reduces-san",
-      "article-8326924a",
-      "8326924a",
-      "claude-mythos-5-2-enhances-bug-hunting-reduces-san-143103",
-      "claude-mythos-5-2-enhances-bug-hunting-reduces-sandbox-break"
-    ]
-  },
-  {
-    "slug": "rich-network-data-improves-post-alert-interdiction-4a9ec0de",
-    "title": "Rich Network Data Improves Post-Alert Interdiction",
-    "summary": "The article argues that relying solely on alerts is insufficient, as security teams often fail to detect sophisticated intrusions. It proposes that rich network data enables interdiction by identifying and disrupting malicious traffic after an alert has been triggered. Security teams should integrate deep packet inspection and flow analytics to complement alerts, improving detection coverage and response times.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
-    "publishedAt": "2026-11-10T11:38:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rich-network-data-improves-post-alert-interdiction",
-      "article-4a9ec0de",
-      "4a9ec0de",
-      "rich-network-data-improves-post-alert-interdiction-5a6a44"
-    ]
-  },
-  {
-    "slug": "sap-issues-critical-patch-day-for-netweaver-dispat-0a949af6",
-    "title": "SAP Issues Critical Patch Day for NetWeaver, Dispatcher, Gateway",
-    "summary": "SAP released its November 2026 Security Patch Day, addressing critical vulnerabilities in NetWeaver, Web Dispatcher, and Gateway components. The update includes 35 new security notes, four GitHub advisories, and fixes for four CVEs, including CVE-2026-44756, each scoring a maximum CVSS of 10.0. Administrators should apply patches immediately to eliminate the high‑risk remote code execution vectors exposed by these flaws.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/sap-security-patch-day-november/",
-    "publishedAt": "2026-11-10T11:10:19.000Z",
-    "cves": [
-      "CVE-2026-44756"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "sap-issues-critical-patch-day-for-netweaver-dispat",
-      "article-0a949af6",
-      "0a949af6",
-      "sap-issues-critical-patch-day-for-netweaver-dispat-48e8e0",
-      "sap-issues-critical-patch-day-for-netweaver-dispatcher-gatew"
-    ]
-  },
-  {
-    "slug": "france-attributes-supermarket-refrigeration-sabota-99bf71bc",
-    "title": "France Attributes Supermarket Refrigeration Sabotage to Iranian Hackers",
-    "summary": "France attributed a disruptive cyberattack on 700 supermarket refrigeration systems to Iran's Islamic Revolutionary Guard Corps. Attackers remotely manipulated defrost controls during October 11–12, causing widespread food spoilage and approximately 20 fires, per the Paris prosecutor. Foreign Minister Jean-Noël Barrot confirmed the attribution; affected organizations should audit industrial control system access and implement network segmentation.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/iranian-hackers-supermarket-cyberattacks/",
-    "publishedAt": "2026-11-10T10:23:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "france-attributes-supermarket-refrigeration-sabota",
-      "article-99bf71bc",
-      "99bf71bc",
-      "france-attributes-supermarket-refrigeration-sabota-48fa53",
-      "france-attributes-supermarket-refrigeration-sabotage-to-iran"
-    ]
-  },
-  {
-    "slug": "apple-patches-imessage-group-chat-privacy-flaws-an-be674176",
-    "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
-    "summary": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
-    "publishedAt": "2026-11-10T10:16:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-patches-imessage-group-chat-privacy-flaws-an",
-      "article-be674176",
-      "be674176",
-      "apple-patches-imessage-group-chat-privacy-flaws-an-797319",
-      "apple-patches-imessage-group-chat-privacy-flaws-and-bluetoot"
-    ]
-  },
-  {
-    "slug": "attackers-exploit-barracuda-esg-flaws-for-root-acc-25ab3004",
-    "title": "Attackers Exploit Barracuda ESG Flaws for Root Access",
-    "summary": "Attackers are actively exploiting two critical Barracuda Email Security Gateway vulnerabilities to achieve root-level command execution. The flaws, recently patched by Barracuda, allow unauthenticated remote code execution on the appliance, granting full system compromise. Barracuda urges immediate application of security updates and verification of appliance integrity to prevent persistent unauthorized access.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/",
-    "publishedAt": "2026-11-10T10:10:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-exploit-barracuda-esg-flaws-for-root-acc",
-      "article-25ab3004",
-      "25ab3004",
-      "attackers-exploit-barracuda-esg-flaws-for-root-acc-304d38",
-      "attackers-exploit-barracuda-esg-flaws-for-root-access"
-    ]
-  },
-  {
-    "slug": "windows-11-26h2-enables-default-settings-backup-cbb1595d",
-    "title": "Windows 11 26H2 Enables Default Settings Backup",
-    "summary": "Windows 11 26H2 now enables settings backup by default on eligible devices. Renamed Windows Backup for Organizations, the update consolidates roaming settings management and preserves supported settings and Microsoft Store app lists during backup. Admins can adjust backup profiles via policy console; no extra patch needed beyond the 26H2 release.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/windows-settings-backup-default/",
-    "publishedAt": "2026-11-10T10:03:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-11-26h2-enables-default-settings-backup",
-      "article-cbb1595d",
-      "cbb1595d",
-      "windows-11-26h2-enables-default-settings-backup-2c499a"
-    ]
-  },
-  {
-    "slug": "anthropic-releases-claude-mythos-5-2-ai-for-vulner-649ae7e7",
-    "title": "Anthropic Releases Claude Mythos 5.2 AI for Vulnerability Detection",
-    "summary": "Anthropic released Claude Mythos 5.2, an AI model aimed at cybersecurity engineering, on November 9. The model achieved a 76.3% score on CyScenarioBench, indicating strong capability to identify zero‑day flaws. Access remains restricted to prevent misuse, and security teams can use it to locate, reproduce, and remediate vulnerabilities before exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/claude-mythos-5-2-released/",
-    "publishedAt": "2026-11-10T10:03:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-releases-claude-mythos-5-2-ai-for-vulner",
-      "article-649ae7e7",
-      "649ae7e7",
-      "anthropic-releases-claude-mythos-5-2-ai-for-vulner-64791d",
-      "anthropic-releases-claude-mythos-5-2-ai-for-vulnerability-de"
-    ]
-  },
-  {
-    "slug": "sap-fixes-four-10-0-rce-flaws-including-netweaver-102407d0",
-    "title": "SAP Fixes Four 10.0 RCE Flaws, Including NetWeaver",
-    "summary": "SAP patched four CVSS 10.0 flaws on Security Patch Day affecting NetWeaver and Web Dispatcher: CVE-2026-76964 (ICM), CVE-2026-89126 (Web Dispatcher), CVE-2026-89103 (Gateway ProxyGate), and CVE-2026-120017 (SAML 2.0, distinct from earlier CVE-2026-44748). Unauthenticated attackers can achieve RCE, server impersonation, or arbitrary user login; apply SAP security notes immediately.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
-    "publishedAt": "2026-11-10T10:02:40.000Z",
-    "cves": [
-      "CVE-2026-76964",
-      "CVE-2026-89126",
-      "CVE-2026-89103",
-      "CVE-2026-120017",
-      "CVE-2026-44748"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "sap-fixes-four-10-0-rce-flaws-including-netweaver",
-      "article-102407d0",
-      "102407d0",
-      "sap-fixes-four-10-0-rce-flaws-including-netweaver-4254d9"
-    ]
-  },
-  {
-    "slug": "turla-deploys-cereal-malware-to-harvest-exchange-e-e1a34ab8",
-    "title": "Turla Deploys Cereal Malware to Harvest Exchange Emails",
-    "summary": "Turla, a Russia‑aligned threat actor, deployed its Cereal malware to infiltrate Microsoft Exchange servers and harvest email communications covertly. The tool exploits undisclosed Exchange vulnerabilities to bypass authentication and exfiltrate mailboxes, enabling persistent surveillance without triggering standard detection. Security teams should apply Microsoft’s latest Exchange patches, enforce MFA, and monitor outbound traffic to mitigate the threat.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/",
-    "publishedAt": "2026-11-10T10:00:39.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "The Hacker News",
-        "sourceUrl": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html"
-      }
-    ],
-    "aliases": [
-      "turla-deploys-cereal-malware-to-harvest-exchange-e",
-      "article-e1a34ab8",
-      "e1a34ab8",
-      "turla-deploys-cereal-malware-to-harvest-exchange-e-ef12ed",
-      "turla-deploys-cereal-malware-to-harvest-exchange-emails"
-    ]
-  },
-  {
-    "slug": "turla-s-cereal-toolset-targets-exchange-email-coll-c3ca009b",
-    "title": "Turla’s Cereal Toolset Targets Exchange Email Collection",
-    "summary": "ESET Research uncovered Turla’s Cereal toolset, which includes a novel Exchange email collection module and a unique command-and-control mechanism. The toolkit also employs sophisticated .NET execution tricks, enabling stealthy persistence and data exfiltration from compromised Microsoft Exchange servers. Security teams should harden Exchange configurations, monitor for anomalous outbound traffic, and apply the latest Microsoft patches to mitigate potential exploitation.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "ESET WeLiveSecurity",
-    "sourceUrl": "https://www.welivesecurity.com/en/eset-research/exchange-for-breakfast-turlas-cereal-tricks-are-not-for-kids/",
-    "publishedAt": "2026-11-10T09:57:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "turla-s-cereal-toolset-targets-exchange-email-coll",
-      "article-c3ca009b",
-      "c3ca009b",
-      "turla-s-cereal-toolset-targets-exchange-email-coll-803ca3",
-      "turla-s-cereal-toolset-targets-exchange-email-collection"
     ]
   }
 ];
