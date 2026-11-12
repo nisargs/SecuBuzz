@@ -48,6 +48,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "node-js-fixes-16-security-flaws-that-could-expose-5283b59f",
+    "title": "Node.js Fixes 16 Security Flaws That Could Expose TLS Private Keys and Crash Servers Remotely",
+    "summary": "The Node.js project has released fixes for 16 security flaws across its 22.x, 24.x and 26.x lines. The official advisory says the patched builds are v22.23.5, v24.22.3 and v26.13.1. The update also refreshes three bundled parts: llhttp, undici, and sqlite.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/node-js-fixes-16-security-vulnerabilities/",
+    "publishedAt": "2026-11-12T03:30:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-fixes-16-security-flaws-that-could-expose",
+      "article-5283b59f",
+      "5283b59f",
+      "node-js-fixes-16-security-flaws-that-could-expose-3c1029",
+      "node-js-fixes-16-security-flaws-that-could-expose-tls-privat"
+    ]
+  },
+  {
     "slug": "apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384",
     "title": "Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch",
     "summary": "A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof‑of‑concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor‑issued hotfix and enable recommended detection rules.",
@@ -66,6 +85,24 @@ export const news: NewsBrief[] = [
       "f7016384",
       "apache-rce-flaw-cve-2026-119618-requires-immediate-2b18a1",
       "apache-rce-flaw-cve-2026-119618-requires-immediate-patch"
+    ]
+  },
+  {
+    "slug": "git-six-flaw-rce-patches-released-9789b13a",
+    "title": "Git Six Flaw RCE Patches Released",
+    "summary": "Git released patches for six critical flaws that could enable remote code execution if an attacker crafts malicious repository data. The vulnerabilities involve deserialization of untrusted input and were identified through root‑cause telemetry and detection rule hunting. Security teams should apply the Git patches immediately and review detection rules to ensure coverage of the affected code paths.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/git-fixes-six-vulnerabilities-including-code-execution",
+    "publishedAt": "2026-11-12T03:22:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "git-six-flaw-rce-patches-released",
+      "article-9789b13a",
+      "9789b13a",
+      "git-six-flaw-rce-patches-released-2013f7"
     ]
   },
   {
@@ -106,6 +143,43 @@ export const news: NewsBrief[] = [
       "3acd5e7b",
       "screenconnect-rce-flaw-threatens-managed-service-p-10ffc9",
       "screenconnect-rce-flaw-threatens-managed-service-providers"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99142-important-net-10-0-security-bug-fi-0618a1cd",
+    "title": "RHSA-2026:99142: Important: .NET 10.0 security, bug fix, and enhancement update",
+    "summary": "An update for .NET 10.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99142",
+    "publishedAt": "2026-11-12T03:11:33.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99142-important-net-10-0-security-bug-fi",
+      "article-0618a1cd",
+      "0618a1cd",
+      "rhsa-2026-99142-important-net-10-0-security-bug-fi-37d67f",
+      "rhsa-2026-99142-important-net-10-0-security-bug-fix-and-enha"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99208-important-perl-dbi-security-update-7024703b",
+    "title": "RHSA-2026:99208: Important: perl-DBI security update",
+    "summary": "An update for perl-DBI is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99208",
+    "publishedAt": "2026-11-12T03:10:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99208-important-perl-dbi-security-update",
+      "article-7024703b",
+      "7024703b",
+      "rhsa-2026-99208-important-perl-dbi-security-update-37d67c"
     ]
   },
   {
@@ -887,6 +961,24 @@ export const news: NewsBrief[] = [
       "86863f57",
       "ubuntu-patches-type-confusion-flaw-in-pecl-http-ex-7e8763",
       "ubuntu-patches-type-confusion-flaw-in-pecl-http-extension"
+    ]
+  },
+  {
+    "slug": "usn-9054-1-babel-vulnerability-ae357dd6",
+    "title": "USN-9054-1: Babel vulnerability",
+    "summary": "It was discovered that Babel incorrectly evaluated certain code during compilation when used with certain plugins. If a user or an automated system were tricked into compiling specially crafted code, an attacker could possibly use this issue to execute arbitrary code.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9054-1",
+    "publishedAt": "2026-11-11T18:32:25.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9054-1-babel-vulnerability",
+      "article-ae357dd6",
+      "ae357dd6",
+      "usn-9054-1-babel-vulnerability-7e8766"
     ]
   },
   {
@@ -3003,6 +3095,63 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-detectron2-lazyconfig-deserialization-rce-vul-2acade9a",
+    "title": "Meta Detectron2 LazyConfig Deserialization RCE Vulnerability",
+    "summary": "A zero‑day deserialization flaw in Meta Detectron2’s LazyConfig lets attackers run code when a user opens a malicious file. Rated CVSS 7.8, the flaw requires user interaction and exploits untrusted data deserialization for code execution. Meta has not yet patched; teams should monitor for updates and disable LazyConfig loading until a fix is released.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-910/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-detectron2-lazyconfig-deserialization-rce-vul",
+      "article-2acade9a",
+      "2acade9a",
+      "meta-detectron2-lazyconfig-deserialization-rce-vul-6f3d0b",
+      "meta-detectron2-lazyconfig-deserialization-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "meta-detectron2-cfgnode-merge-from-file-rce-vulner-52a798c2",
+    "title": "Meta Detectron2 CfgNode.merge_from_file RCE Vulnerability",
+    "summary": "A zero‑day deserialization flaw in Meta Detectron2’s CfgNode.merge_from_file component allows attackers to execute code when a user opens a malicious file. Rated CVSS 7.8, the vulnerability requires user interaction and exploits untrusted data deserialization for code execution. Meta has not yet released a patch; teams should monitor for updates and disable CfgNode.merge_from_file usage until a fix arrives.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-909/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-detectron2-cfgnode-merge-from-file-rce-vulner",
+      "article-52a798c2",
+      "52a798c2",
+      "meta-detectron2-cfgnode-merge-from-file-rce-vulner-6f3d08",
+      "meta-detectron2-cfgnode-merge-from-file-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "meta-detectron2-load-proposals-into-dataset-rce-vu-ee4a1129",
+    "title": "Meta Detectron2 load_proposals_into_dataset RCE Vulnerability",
+    "summary": "A zero‑day deserialization flaw in Meta Detectron2’s load_proposals_into_dataset component permits attackers to run code when a user opens a malicious file. Rated CVSS 7.8, the flaw requires user interaction and exploits untrusted data deserialization for code execution. Meta has not yet patched; teams should monitor for updates and disable load_proposals_into_dataset usage until a fix is released.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-908/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-detectron2-load-proposals-into-dataset-rce-vu",
+      "article-ee4a1129",
+      "ee4a1129",
+      "meta-detectron2-load-proposals-into-dataset-rce-vu-6f3d08",
+      "meta-detectron2-load-proposals-into-dataset-rce-vulnerabilit"
     ]
   },
   {
@@ -9348,164 +9497,6 @@ export const news: NewsBrief[] = [
       "article-15140f7a",
       "15140f7a",
       "cisa-adds-four-flaws-to-kev-catalog-39df6a"
-    ]
-  },
-  {
-    "slug": "chrome-patch-fixes-exploited-xml-use-after-free-ze-04e2086f",
-    "title": "Chrome Patch Fixes Exploited XML Use‑After‑Free Zero‑Day",
-    "summary": "Google released a Chrome update to fix a high‑severity use‑after‑free flaw (CVE‑2026‑125350) in the XML component that was already exploited. The bug allowed memory corruption via crafted XML, potentially enabling remote code execution with a CVSS score of 9.8. Users should install the latest Chrome patch immediately to mitigate the vulnerability; no separate advisory was issued.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
-    "publishedAt": "2026-11-10T06:12:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-patch-fixes-exploited-xml-use-after-free-ze",
-      "article-04e2086f",
-      "04e2086f",
-      "chrome-patch-fixes-exploited-xml-use-after-free-ze-4458a0",
-      "chrome-patch-fixes-exploited-xml-use-after-free-zero-day"
-    ]
-  },
-  {
-    "slug": "security-teams-prioritize-ai-agent-behavior-monito-778ad60b",
-    "title": "Security Teams Prioritize AI Agent Behavior Monitoring",
-    "summary": "A 2026 State of Behavioral Security Report names AI agents as the top monitoring focus. The survey shows 43% plan to invest in AI agent monitoring, exceeding API integrations, yet many lack baseline definitions. Teams should establish baseline metrics and deploy monitoring tools to detect anomalous AI agent behavior early.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/abnormal-ai-behavioral-security-report/",
-    "publishedAt": "2026-11-10T06:00:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "security-teams-prioritize-ai-agent-behavior-monito",
-      "article-778ad60b",
-      "778ad60b",
-      "security-teams-prioritize-ai-agent-behavior-monito-28e32c",
-      "security-teams-prioritize-ai-agent-behavior-monitoring"
-    ]
-  },
-  {
-    "slug": "patch-tuesday-unveils-1-252-cves-including-zero-da-b648a3b4",
-    "title": "Patch Tuesday Unveils 1,252 CVEs, Including Zero-Day",
-    "summary": "Patch Tuesday released 1,252 CVEs, including one zero-day and 68 critical vulnerabilities, with CVE-2026-124194 identified. The zero-day flaw and critical issues span multiple vendors, potentially enabling unauthenticated remote code execution or privilege escalation. Security teams should apply vendor patches immediately, monitor for exploitation indicators, and verify configuration hardening to mitigate risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CrowdStrike",
-    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "patch-tuesday-unveils-1-252-cves-including-zero-da",
-      "article-b648a3b4",
-      "b648a3b4",
-      "patch-tuesday-unveils-1-252-cves-including-zero-da-40f7ce",
-      "patch-tuesday-unveils-1-252-cves-including-zero-day"
-    ]
-  },
-  {
-    "slug": "zdi-26-898-wireshark-lorawan-decryption-numeric-tr-f8e5e8d0",
-    "title": "ZDI-26-898: Wireshark LoRaWAN Decryption Numeric Truncation Error Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Wireshark. Authentication is not required to exploit this vulnerability. However, only instances with LoRaWAN decryption enabled are vulnerable. The ZDI has assigned a CVSS rating of 7.1.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-898/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-898-wireshark-lorawan-decryption-numeric-tr",
-      "article-f8e5e8d0",
-      "f8e5e8d0",
-      "zdi-26-898-wireshark-lorawan-decryption-numeric-tr-6f3cb6",
-      "zdi-26-898-wireshark-lorawan-decryption-numeric-truncation-e"
-    ]
-  },
-  {
-    "slug": "x-org-server-integer-overflow-enables-local-privil-977ac83e",
-    "title": "X.Org Server Integer Overflow Enables Local Privilege Escalation",
-    "summary": "A local integer overflow in X.Org Server’s XkbResizeKeySyms function allows attackers to elevate privileges on affected installations. The flaw, identified as CVE-2026-50258, requires initial low‑privilege code execution and has a CVSS score of 7.8, indicating high‑severity local privilege escalation. ZDI recommends applying vendor patches or workarounds to mitigate the vulnerability and prevent privilege escalation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-902/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-50258"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "x-org-server-integer-overflow-enables-local-privil",
-      "article-977ac83e",
-      "977ac83e",
-      "x-org-server-integer-overflow-enables-local-privil-6f3d08",
-      "x-org-server-integer-overflow-enables-local-privilege-escala"
-    ]
-  },
-  {
-    "slug": "x-org-server-buffer-overflow-enables-local-privile-0447bf74",
-    "title": "X.Org Server Buffer Overflow Enables Local Privilege Escalation",
-    "summary": "A heap-based buffer overflow in X.Org Server’s ProcDRI2GetBuffers function permits local attackers to elevate privileges on affected systems. The vulnerability, CVE-2026-50264, requires initial low‑privilege code execution and carries a CVSS score of 7.8, classifying it as a high‑severity local privilege escalation. Administrators should apply vendor patches or available workarounds to eliminate the privilege escalation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-901/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [
-      "CVE-2026-50264"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "x-org-server-buffer-overflow-enables-local-privile",
-      "article-0447bf74",
-      "0447bf74",
-      "x-org-server-buffer-overflow-enables-local-privile-6f3d07",
-      "x-org-server-buffer-overflow-enables-local-privilege-escalat"
-    ]
-  },
-  {
-    "slug": "wireshark-smb-export-integer-overflow-enables-remo-0538f2a4",
-    "title": "Wireshark SMB Export Integer Overflow Enables Remote Code Execution",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Wireshark. User interaction is required to exploit this vulnerability. The ZDI has assigned a CVSS rating of 8.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-900/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wireshark-smb-export-integer-overflow-enables-remo",
-      "article-0538f2a4",
-      "0538f2a4",
-      "wireshark-smb-export-integer-overflow-enables-remo-6f3d07",
-      "wireshark-smb-export-integer-overflow-enables-remote-code-ex"
-    ]
-  },
-  {
-    "slug": "wireshark-lbmc-fragment-reassembly-rce-vulnerabili-cecbaa83",
-    "title": "Wireshark LBMC Fragment Reassembly RCE Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Wireshark. Authentication is not required to exploit this vulnerability. However, only instances with LBMC fragment reassembly enabled are vulnerable. The ZDI has assigned a CVSS rating of 7.5.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-899/",
-    "publishedAt": "2026-11-10T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wireshark-lbmc-fragment-reassembly-rce-vulnerabili",
-      "article-cecbaa83",
-      "cecbaa83",
-      "wireshark-lbmc-fragment-reassembly-rce-vulnerabili-6f3cb6",
-      "wireshark-lbmc-fragment-reassembly-rce-vulnerability"
     ]
   }
 ];

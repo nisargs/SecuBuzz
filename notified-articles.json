@@ -4516,5 +4516,13 @@
   "https://access.redhat.com/errata/RHSA-2026:99158",
   "https://ubuntu.com/security/notices/USN-9055-1",
   "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
-  "https://security.paloaltonetworks.com/CVE-2026-0328"
+  "https://security.paloaltonetworks.com/CVE-2026-0328",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-910/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-909/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-908/",
+  "https://cybernewsai.com/blog/git-fixes-six-vulnerabilities-including-code-execution",
+  "https://access.redhat.com/errata/RHSA-2026:99142",
+  "https://access.redhat.com/errata/RHSA-2026:99208",
+  "https://ubuntu.com/security/notices/USN-9054-1",
+  "https://cybersecuritynews.com/node-js-fixes-16-security-vulnerabilities/"
 ]

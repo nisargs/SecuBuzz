@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 03:56:46 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 04:44:43 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>RHSA-2026:99157: Important: nginx security update</title>
@@ -26,6 +26,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Node.js Fixes 16 Security Flaws That Could Expose TLS Private Keys and Crash Servers Remotely</title>
+      <link>https://secubuzz.com/news/node-js-fixes-16-security-flaws-that-could-expose-5283b59f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-js-fixes-16-security-flaws-that-could-expose-5283b59f</guid>
+      <description><![CDATA[The Node.js project has released fixes for 16 security flaws across its 22.x, 24.x and 26.x lines. The official advisory says the patched builds are v22.23.5, v24.22.3 and v26.13.1. The update also refreshes three bundled parts: llhttp, undici, and sqlite.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:30:20 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/node-js-fixes-16-security-vulnerabilities/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch</title>
       <link>https://secubuzz.com/news/apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384</link>
       <guid isPermaLink="true">https://secubuzz.com/news/apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384</guid>
@@ -33,6 +42,15 @@
       <pubDate>Thu, 12 Nov 2026 03:24:23 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt">CyberNews AI</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Git Six Flaw RCE Patches Released</title>
+      <link>https://secubuzz.com/news/git-six-flaw-rce-patches-released-9789b13a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/git-six-flaw-rce-patches-released-9789b13a</guid>
+      <description><![CDATA[Git released patches for six critical flaws that could enable remote code execution if an attacker crafts malicious repository data. The vulnerabilities involve deserialization of untrusted input and were identified through root‑cause telemetry and detection rule hunting. Security teams should apply the Git patches immediately and review detection rules to ensure coverage of the affected code paths.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:22:39 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/git-fixes-six-vulnerabilities-including-code-execution">CyberNews AI</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Ivanti RCE Flaw CVE-2026-121683 Demands Prompt Patch</title>
@@ -50,6 +68,24 @@
       <description><![CDATA[ScreenConnect, a support platform used by managed service providers, contains a remote code execution flaw that could allow attackers to execute arbitrary commands. The vulnerability arises from insufficient input validation in the session initiation module, and proof‑of‑concept exploits demonstrate its feasibility. Apply the vendor‑issued patch immediately, update to the latest ScreenConnect version, and enable the detection rules to mitigate risk.]]></description>
       <pubDate>Thu, 12 Nov 2026 03:18:44 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/active-screenconnect-attacks-breach-msps-impact-dozens">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99142: Important: .NET 10.0 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99142-important-net-10-0-security-bug-fi-0618a1cd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99142-important-net-10-0-security-bug-fi-0618a1cd</guid>
+      <description><![CDATA[An update for .NET 10.0 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:11:33 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99142">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99208: Important: perl-DBI security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99208-important-perl-dbi-security-update-7024703b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99208-important-perl-dbi-security-update-7024703b</guid>
+      <description><![CDATA[An update for perl-DBI is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:10:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99208">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 18:32:46 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9056-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches Type Confusion Flaw in pecl_http Extension</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-type-confusion-flaw-in-pecl-http-ex-86863f57</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-type-confusion-flaw-in-pecl-http-ex-86863f57</guid>
-      <description><![CDATA[Ubuntu issued a security notice addressing a parameter handling vulnerability in the pecl_http PHP extension. The root cause involves a type confusion mechanism that allows remote attackers to cause PHP crashes or potentially execute arbitrary code. Administrators using affected Ubuntu systems should apply the USN-9055-1 security updates to mitigate denial of service and execution risks.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:32:38 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9055-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Vanderbilt Restores Systems After Alleged Data Theft Attack</title>
-      <link>https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</guid>
-      <description><![CDATA[Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:29:01 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft">Malwarebytes Labs</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Releases .NET 8.0 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-net-8-0-security-update-fa711df7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-net-8-0-security-update-fa711df7</guid>
-      <description><![CDATA[Red Hat released a security update for .NET 8.0 on RHEL 8, fixing vulnerabilities that could let attackers compromise application integrity. The advisory rates the update as Important, with CVSS scores linked to each CVE, indicating moderate to high risk but no confirmed exploitation. Apply the .NET 8.0 update immediately following Red Hat’s guidance to mitigate the identified flaws.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:20:45 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99052">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Who Runs the Ransomware Group Qilin?</title>
-      <link>https://secubuzz.com/news/who-runs-the-ransomware-group-qilin-86b23989</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/who-runs-the-ransomware-group-qilin-86b23989</guid>
-      <description><![CDATA[The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:06:01 GMT</pubDate>
-      <source url="https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/">Krebs on Security</source>
-      <category>Ransomware</category>
     </item>
   </channel>
 </rss>
