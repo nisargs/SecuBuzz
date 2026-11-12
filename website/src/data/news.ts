@@ -11,6 +11,47 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hackers-exploit-4-800-github-accounts-for-cloud-cr-25faffd4",
+    "title": "Hackers Exploit 4,800 GitHub Accounts for Cloud Credentials",
+    "summary": "A wfx-loot campaign compromised 4,837 GitHub accounts, using them to scan 61,764 repositories, open pull requests, and deploy secrets‑stealing malware. The attackers leveraged credential reuse and automated scanning to exfiltrate cloud service keys, exposing multiple cloud environments to unauthorized access. GitHub has issued a security advisory, urging users to rotate compromised credentials, enable two‑factor authentication, and review repository access logs.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+    "publishedAt": "2026-11-12T22:25:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-4-800-github-accounts-for-cloud-cr",
+      "article-25faffd4",
+      "25faffd4",
+      "hackers-exploit-4-800-github-accounts-for-cloud-cr-270eee",
+      "hackers-exploit-4-800-github-accounts-for-cloud-credentials"
+    ]
+  },
+  {
+    "slug": "apache-http-server-vulnerabilities-enable-potentia-5daaddf2",
+    "title": "Apache HTTP Server Vulnerabilities Enable Potential Code Execution",
+    "summary": "Apache HTTP Server’s mod_dav, mod_vhost_alias, and mod_md modules contain memory corruption flaws that allow attackers to crash or potentially execute code via crafted WebDAV locks or specific requests. CVE-2026-109163’s stack buffer overflow can lead to arbitrary code execution, while CVE-2026-42528 and CVE-2026-109163 also enable denial of service. Administrators should apply patches and restrict WebDAV access until the fixes are deployed.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9090-1",
+    "publishedAt": "2026-11-12T21:25:57.000Z",
+    "cves": [
+      "CVE-2026-109163",
+      "CVE-2026-42528"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-http-server-vulnerabilities-enable-potentia",
+      "article-5daaddf2",
+      "5daaddf2",
+      "apache-http-server-vulnerabilities-enable-potentia-7e85a4",
+      "apache-http-server-vulnerabilities-enable-potential-code-exe"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99695-important-glib-networking-security-a80cb47d",
     "title": "RHSA-2026:99695: Important: glib-networking security update",
     "summary": "An update for glib-networking is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -458,6 +499,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "europol-seizes-235-servers-257-domains-of-gootload-58ee2d20",
+    "title": "Europol Seizes 235 Servers, 257 Domains of Gootloader, CastleRAT",
+    "summary": "Europol and partners disrupted 235 servers and 257 domains linked to Gootloader, CastleRAT, and StealC malware services that facilitate ransomware and data theft. The operation seized 6.4 million victim datasets from the criminal infrastructure, exposing the scale of the cyber‑crime‑as‑a‑service model. No vendor patches are required; the action demonstrates law enforcement’s capacity to dismantle malware supply chains.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/malware-infrastructure-disrupted/",
+    "publishedAt": "2026-11-12T16:58:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "europol-seizes-235-servers-257-domains-of-gootload",
+      "article-58ee2d20",
+      "58ee2d20",
+      "europol-seizes-235-servers-257-domains-of-gootload-2f82bf",
+      "europol-seizes-235-servers-257-domains-of-gootloader-castler"
+    ]
+  },
+  {
     "slug": "n-able-zero-day-targets-even-patched-servers-f923e85e",
     "title": "N‑Able Zero‑Day Targets Even Patched Servers",
     "summary": "New N‑Able N‑Central zero‑day exploits, named 4EverAble2Shell and Agent2Shell, target servers even after the latest emergency hotfix. The vulnerability enables unauthenticated attackers to gain root access, allowing deployment of cryptocurrency miners and other malicious payloads. Administrators should apply the latest patch, monitor for unauthorized processes, and verify that the HTTP/2 module is properly secured.",
@@ -572,6 +632,25 @@ export const news: NewsBrief[] = [
       "article-29645304",
       "29645304",
       "windows-signdrop-zero-day-grants-system-privileges-15fe10"
+    ]
+  },
+  {
+    "slug": "ubuntu-discloses-pillow-denial-of-service-vulnerab-eeb6a195",
+    "title": "Ubuntu Discloses Pillow Denial‑of‑Service Vulnerabilities",
+    "summary": "Ubuntu released security notice USN‑9064‑1, exposing multiple Pillow library flaws that allow attackers to trigger denial‑of‑service conditions via infinite loops and uncontrolled recursion. The CVE‑identified issues (CVE‑2026‑112390, CVE‑2026‑112391, CVE‑2026‑112392) affect Ubuntu 18.04 through 26.10, causing potential service crashes or hangs without authentication.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9064-1",
+    "publishedAt": "2026-11-12T15:55:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-discloses-pillow-denial-of-service-vulnerab",
+      "article-eeb6a195",
+      "eeb6a195",
+      "ubuntu-discloses-pillow-denial-of-service-vulnerab-7e86f2",
+      "ubuntu-discloses-pillow-denial-of-service-vulnerabilities"
     ]
   },
   {
@@ -900,6 +979,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "aws-fixes-mcp-gateway-ssrf-vulnerability-b2c99e9d",
+    "title": "AWS Fixes MCP Gateway SSRF Vulnerability",
+    "summary": "AWS disclosed CVE‑2026‑125926, a server‑side request forgery flaw in mcp‑gateway‑registry that permits authenticated users to access internal services and cloud credentials. The vulnerability affects versions 1.0.3 through 1.34.0; version 1.35.0 contains the fix and mitigates the internal network exposure. AWS urges users to upgrade to 1.35.0 or apply the patch immediately to prevent unauthorized internal access.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/aws-mcp-gateway-security-flaw/",
+    "publishedAt": "2026-11-12T13:51:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "aws-fixes-mcp-gateway-ssrf-vulnerability",
+      "article-b2c99e9d",
+      "b2c99e9d",
+      "aws-fixes-mcp-gateway-ssrf-vulnerability-35a87a"
+    ]
+  },
+  {
     "slug": "chrome-157-firefox-160-patch-180-vulnerabilities-73c79817",
     "title": "Chrome 157, Firefox 160 Patch 180+ Vulnerabilities",
     "summary": "Google released Chrome 157, fixing 83 flaws, and Mozilla updated Firefox 160 to address 99 bugs, patching over 180 vulnerabilities. The patches cover memory corruption, privilege escalation, and input validation flaws, with no active exploitation reported. Users should install the latest browser versions promptly to mitigate potential exploitation in enterprise environments.",
@@ -970,6 +1067,25 @@ export const news: NewsBrief[] = [
       "article-b15c63ed",
       "b15c63ed",
       "romania-blocks-russian-attack-on-government-emails-29f0e5"
+    ]
+  },
+  {
+    "slug": "sckit-exploits-screenconnect-remote-access-vulnera-3164abd1",
+    "title": "SCKit Exploits ScreenConnect Remote Access Vulnerability",
+    "summary": "SCKit malware exploits the patched CVE‑2026‑84869 flaw in ConnectWise ScreenConnect, hijacking support sessions to compromise managed service provider environments. The CVSS 9.9 flaw permits unauthenticated remote code execution via crafted requests, exposing internal networks to lateral movement. ScreenConnect released an update; administrators should patch immediately and disable unused remote‑access features to mitigate risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+    "publishedAt": "2026-11-12T13:08:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sckit-exploits-screenconnect-remote-access-vulnera",
+      "article-3164abd1",
+      "3164abd1",
+      "sckit-exploits-screenconnect-remote-access-vulnera-7c1985",
+      "sckit-exploits-screenconnect-remote-access-vulnerability"
     ]
   },
   {
@@ -1388,6 +1504,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "scammers-target-browser-push-notifications-for-dec-1e1a942a",
+    "title": "Scammers Target Browser Push Notifications for Deception",
+    "summary": "Scammers exploit browser push notifications to trick users into granting permissions, creating a false sense of adware infection. The technique leverages the push notification API to display deceptive alerts that prompt users to enable notifications. Security teams should disable or restrict push notifications and educate users about legitimate notification requests.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/mobile/2026/11/why-scammers-want-you-to-allow-notifications",
+    "publishedAt": "2026-11-12T10:52:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "scammers-target-browser-push-notifications-for-dec",
+      "article-1e1a942a",
+      "1e1a942a",
+      "scammers-target-browser-push-notifications-for-dec-508181",
+      "scammers-target-browser-push-notifications-for-deception"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99592-important-openssh-security-update-8e522824",
     "title": "RHSA-2026:99592: Important: openssh security update",
     "summary": "An update for openssh is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
@@ -1440,6 +1575,25 @@ export const news: NewsBrief[] = [
       "article-7a376471",
       "7a376471",
       "chrome-updates-83-flaws-five-critical-rce-fixes-3e4626"
+    ]
+  },
+  {
+    "slug": "microsoft-reports-windows-11-update-installation-f-ad847603",
+    "title": "Microsoft Reports Windows 11 Update Installation Failure",
+    "summary": "Microsoft confirmed that November 2026 security updates fail to install on Windows 11 systems with the October preview update. The failure blocks critical patches, leaving affected devices vulnerable to known exploits. Users are advised to revert to the stable release or await a corrective update from Microsoft in the near future.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
+    "publishedAt": "2026-11-12T10:24:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-reports-windows-11-update-installation-f",
+      "article-ad847603",
+      "ad847603",
+      "microsoft-reports-windows-11-update-installation-f-2c5b46",
+      "microsoft-reports-windows-11-update-installation-failure"
     ]
   },
   {
@@ -9371,171 +9525,6 @@ export const news: NewsBrief[] = [
       "b8a3a242",
       "windows-dwm-core-library-local-privilege-escalatio-1ff888",
       "windows-dwm-core-library-local-privilege-escalation-vulnerab"
-    ]
-  },
-  {
-    "slug": "windows-shell-cve-2026-102868-enables-local-info-d-a64b47b5",
-    "title": "Windows Shell CVE-2026-102868 Enables Local Info Disclosure",
-    "summary": "CVE-2026-102868 exposes sensitive system data in Windows Shell to an authorized attacker via local control sphere. The flaw permits local information disclosure without authentication, enabling attackers to read privileged data; no remote code execution or active exploitation reported. Microsoft has issued a patch in the latest cumulative update; administrators should apply the update promptly to mitigate the disclosure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102868",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-102868"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-shell-cve-2026-102868-enables-local-info-d",
-      "article-a64b47b5",
-      "a64b47b5",
-      "windows-shell-cve-2026-102868-enables-local-info-d-1ff9da",
-      "windows-shell-cve-2026-102868-enables-local-info-disclosure"
-    ]
-  },
-  {
-    "slug": "sql-server-heap-overflow-enables-authorized-remote-abe4be01",
-    "title": "SQL Server Heap Overflow Enables Authorized Remote Code Execution",
-    "summary": "A heap-based buffer overflow in Microsoft SQL Server permits an authorized attacker to execute code over a network. The flaw, identified as CVE-2026-94511, allows authenticated users to trigger arbitrary code execution, potentially compromising database integrity and confidentiality. Microsoft has released a patch; administrators should apply the update immediately and restrict privileged access to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-94511",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-94511"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "sql-server-heap-overflow-enables-authorized-remote",
-      "article-abe4be01",
-      "abe4be01",
-      "sql-server-heap-overflow-enables-authorized-remote-74325e",
-      "sql-server-heap-overflow-enables-authorized-remote-code-exec"
-    ]
-  },
-  {
-    "slug": "microsoft-data-sqlclient-capture-replay-bypass-exp-d59fc8a0",
-    "title": "Microsoft.Data.SqlClient Capture-Replay Bypass Exposes Data",
-    "summary": "CVE-2026-62903 exposes an authentication bypass in Microsoft.Data.SqlClient that lets an unauthorized attacker capture and replay credentials to read database data over a network. The flaw permits reading sensitive information without valid authentication, risking exposure of confidential records. Microsoft has released a patch; administrators should update the client library and enforce strict credential handling.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62903",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-62903"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-data-sqlclient-capture-replay-bypass-exp",
-      "article-d59fc8a0",
-      "d59fc8a0",
-      "microsoft-data-sqlclient-capture-replay-bypass-exp-745d7e",
-      "microsoft-data-sqlclient-capture-replay-bypass-exposes-data"
-    ]
-  },
-  {
-    "slug": "wdac-ole-db-overflow-enables-unauthorized-remote-c-496a69ce",
-    "title": "WDAC OLE DB Overflow Enables Unauthorized Remote Code Execution",
-    "summary": "A heap-based buffer overflow in Microsoft WDAC OLE DB provider for SQL, CVE-2026-85838, allows an unauthorized attacker to execute code over a network. The flaw permits arbitrary code execution without authentication, potentially compromising database servers and exposing sensitive data. Microsoft has issued a patch; administrators should apply the update promptly and restrict privileged access to mitigate exploitation.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85838",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-85838"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "wdac-ole-db-overflow-enables-unauthorized-remote-c",
-      "article-496a69ce",
-      "496a69ce",
-      "wdac-ole-db-overflow-enables-unauthorized-remote-c-743ff6",
-      "wdac-ole-db-overflow-enables-unauthorized-remote-code-execut"
-    ]
-  },
-  {
-    "slug": "microsoft-hevc-codec-heap-overflow-enables-local-r-b5a965e5",
-    "title": "Microsoft HEVC Codec Heap Overflow Enables Local RCE",
-    "summary": "Microsoft disclosed a heap-based buffer overflow in Windows HEVC Video Extensions that permits local code execution. The flaw, CVE-2026-114167, lets an unauthenticated attacker run arbitrary code if the codec is loaded. Microsoft advises applying the latest Windows update that patches the HEVC codec; disabling the codec is a temporary workaround.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114167",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114167"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-hevc-codec-heap-overflow-enables-local-r",
-      "article-b5a965e5",
-      "b5a965e5",
-      "microsoft-hevc-codec-heap-overflow-enables-local-r-1feaf4",
-      "microsoft-hevc-codec-heap-overflow-enables-local-rce"
-    ]
-  },
-  {
-    "slug": "windows-raw-image-extension-buffer-overflow-enable-0228cac1",
-    "title": "Windows Raw Image Extension Buffer Overflow Enables Remote RCE",
-    "summary": "Microsoft identified a heap-based buffer overflow in the Windows Raw Image Extension that allows remote code execution. The vulnerability, CVE-2026-114169, permits an unauthenticated attacker to run arbitrary code on the target system via network traffic. Microsoft recommends installing the latest Windows update that patches the Raw Image Extension; disabling the extension is a temporary mitigation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114169",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114169"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-raw-image-extension-buffer-overflow-enable",
-      "article-0228cac1",
-      "0228cac1",
-      "windows-raw-image-extension-buffer-overflow-enable-1feaf4",
-      "windows-raw-image-extension-buffer-overflow-enables-remote-r"
-    ]
-  },
-  {
-    "slug": "windows-kernel-use-after-free-enables-local-privil-113bec46",
-    "title": "Windows Kernel Use-After-Free Enables Local Privilege Escalation",
-    "summary": "Microsoft disclosed a use-after-free flaw in the Windows Kernel that permits local privilege escalation immediately. The vulnerability, CVE-2026-114170, allows an authorized attacker to gain higher privileges on the affected system. Microsoft recommends applying the latest Windows update that patches the kernel flaw; disabling the affected feature is a temporary workaround.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114170",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114170"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-kernel-use-after-free-enables-local-privil",
-      "article-113bec46",
-      "113bec46",
-      "windows-kernel-use-after-free-enables-local-privil-1feaf4",
-      "windows-kernel-use-after-free-enables-local-privilege-escala"
-    ]
-  },
-  {
-    "slug": "xbox-remote-code-execution-via-heap-overflow-21794360",
-    "title": "Xbox Remote Code Execution via Heap Overflow",
-    "summary": "A heap-based buffer overflow in Microsoft Xbox firmware permits an unauthenticated attacker to execute arbitrary code over a network. The flaw arises from unchecked memory allocation during packet parsing, enabling remote code execution without credentials. Microsoft has released an out‑of‑band patch; users should apply the update immediately to mitigate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-66801",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xbox-remote-code-execution-via-heap-overflow",
-      "article-21794360",
-      "21794360",
-      "xbox-remote-code-execution-via-heap-overflow-745bb1"
     ]
   }
 ];

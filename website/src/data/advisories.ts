@@ -2,6 +2,292 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-126348",
+    "slug": "cve-2026-126348",
+    "vendor": "RubyGems",
+    "product": "addressable",
+    "name": "Addressable display_uri can show misleading hosts with invalid Punycode A-labels",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 4.3,
+    "severity": "Medium",
+    "cwe": "CWE-20",
+    "ransomware": false,
+    "description": "Addressable::IDNA.to_unicode, in the pure-Ruby IDNA implementation, decodes Punycode labels (labels beginning with xn--) that are not valid A-labels. Those labels are returned in decoded form, when they should be returned unchanged. That includes: - labels that decode to only ASCII characters, e.g.",
+    "requiredAction": "Upgrade addressable to version 2.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9crm-g4mf-wc5j"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126348"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126349",
+    "slug": "cve-2026-126349",
+    "vendor": "RubyGems",
+    "product": "addressable",
+    "name": "Addressable display_uri can show misleading hosts containing bidi and invisible characters",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 3.1,
+    "severity": "Low",
+    "cwe": "CWE-176",
+    "ransomware": false,
+    "description": "Addressable::IDNA.to_unicode decodes Punycode labels (labels beginning with xn--) that contain characters which change how text is displayed without being visible themselves. These include bidirectional controls such as U+202E RIGHT-TO-LEFT OVERRIDE and U+2066–U+2069, zero-width characters, and other invisible format characters.",
+    "requiredAction": "Upgrade addressable to version 2.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-539f-xcgw-2gjg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126349"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126351",
+    "slug": "cve-2026-126351",
+    "vendor": "RubyGems",
+    "product": "addressable",
+    "name": "Addressable: Denial of service in URI path normalization",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Addressable::URI.normalize_path takes time quadratic in the number of nested dot segments in a path (e.g., \"/\" + \"a/\" n + \"../\" n, which for n = 3 is /a/a/a/../../../), because it removes one dot segment per pass over the whole path. URI#normalize, URI#normalized_path, URI#==, URI#=== and URI#join all call it.",
+    "requiredAction": "Upgrade addressable to version 2.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qq38-m9mg-xjj5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126351"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126363",
+    "slug": "cve-2026-126363",
+    "vendor": "npm",
+    "product": "@astrojs/solid-js",
+    "name": "Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The @astrojs/solid-js renderer wraps named slot content passed to Solid components in an <astro-slot> element, and writes the slot name into its name attribute without HTML escaping. A slot name containing \" could end the attribute and inject arbitrary HTML into the page.",
+    "requiredAction": "Upgrade @astrojs/solid-js to version 7.1.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jmv2-qgxf-f995"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126363"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126362",
+    "slug": "cve-2026-126362",
+    "vendor": "npm",
+    "product": "@astrojs/svelte",
+    "name": "Astro: Reflected XSS via unescaped slot names in @astrojs/svelte",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The @astrojs/svelte renderer wraps slotted content passed to Svelte components in an <astro-slot> element, and writes the slot name into its name attribute without HTML escaping. A slot name containing \" could end the attribute and inject arbitrary HTML into the page.",
+    "requiredAction": "Upgrade @astrojs/svelte to version 9.1.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f4j9-crrj-867q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126362"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126350",
+    "slug": "cve-2026-126350",
+    "vendor": "RubyGems",
+    "product": "addressable",
+    "name": "Addressable: Regular Expression Denial of Service in templates with certain exploded expressions",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "Within the URI template implementation in Addressable, templates using the (explode) modifier with the /, ., ;, ? or & operators (e.g., {/segments}, {.ext}, {;params}, {?query}) generate regular expressions vulnerable to catastrophic backtracking.",
+    "requiredAction": "Upgrade addressable to version 2.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-j82w-28jv-3pmj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126350"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126352",
+    "slug": "cve-2026-126352",
+    "vendor": "RubyGems",
+    "product": "addressable",
+    "name": "Addressable: Regular Expression Denial of Service in templates with multiple variables",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "Within the URI template implementation in Addressable, templates that put several variables in one expression generate regular expressions vulnerable to excessive backtracking: 1. Expressions with any operator other than + and # (e.g., {/owner,repo,ref}, {.a,b}, {a,b,c}, {;a,b,c}).",
+    "requiredAction": "Upgrade addressable to version 2.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9f42-57jx-vpp3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126352"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126354",
+    "slug": "cve-2026-126354",
+    "vendor": "RubyGems",
+    "product": "addressable",
+    "name": "Addressable URI normalization resolves some dotted path segments to the wrong path",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 4.8,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "Addressable::URI.normalize_path resolves some paths containing .. segments to a different path than RFC 3986 does. When a path climbs above the root before any other .. is resolved, the segments that later .. segments should remove are instead kept: /../../public/x/../../secret normalizes to /public/x/secret instead of /secret.",
+    "requiredAction": "Upgrade addressable to version 2.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8gmh-2hhj-2hv9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126354"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126346",
+    "slug": "cve-2026-126346",
+    "vendor": "npm",
+    "product": "basic-ftp",
+    "name": "basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "Client.login() calls FTPContext.send() from inside the control-socket data event handler. send() throws on CR, LF or NUL, and nothing catches the throw. A password containing \\r\\n therefore raises an uncaught exception and terminates the whole Node.js process. It does not reject the returned promise.",
+    "requiredAction": "Upgrade basic-ftp to version 6.2.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r4jh-29pc-gfqr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126346"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126069",
+    "slug": "cve-2026-126069",
+    "vendor": "RubyGems",
+    "product": "actionview",
+    "name": "Action View: Possible XSS vulnerability in tag helpers",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 4.7,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "The fix for CVE-2026-33168 skips blank HTML attribute names in Action View tag helpers, but it tests the name before converting it to a string. A Symbol name made only of whitespace, such as :\" \", is not blank, because Symbol#blank? is Symbol#empty?, so it reaches the attribute escaping, which emits an attribute with no name and produces malformed HTML.",
+    "requiredAction": "Upgrade actionview to version 8.1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-68p9-83h6-5wpj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126069"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126188",
+    "slug": "cve-2026-126188",
+    "vendor": "RubyGems",
+    "product": "activestorage",
+    "name": "Active Storage: Possible local file disclosure in video previews and analysis",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "Active Storage's VideoPreviewer, VideoAnalyzer and AudioAnalyzer run ffmpeg and ffprobe on a blob's contents without restricting the input format, so FFmpeg selects a demuxer by probing the file. A blob created through a direct upload keeps the content type the client declared, so a client can store an HLS playlist under a video/ or audio/ type.",
+    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3f4q-8x5m-76v8"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126188"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-126345",
     "slug": "cve-2026-126345",
     "vendor": "npm",
@@ -1153,292 +1439,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118746"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109475",
-    "slug": "cve-2026-109475",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.NETCore.App.Runtime.linux-arm",
-    "name": "Microsoft Security Advisory CVE-2026-109475 - .NET Denial of Service Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-121",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Managed HttpListener can recursively process an unterminated request line and exhaust the process stack.",
-    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.linux-arm to version 8.0.34 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3g4v-f5gv-c7xf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109475"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-120796",
-    "slug": "cve-2026-120796",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.NETCore.App.Runtime.linux-arm",
-    "name": "Microsoft Security Advisory CVE-2026-120796 - .NET Denial of Service Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 4.6,
-    "severity": "Medium",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Inefficient algorithmic complexity in .NET allows an unauthorized attacker to deny service over a network.",
-    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.linux-arm to version 11.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-cpw3-h88j-9f6x"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120796"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118747",
-    "slug": "cve-2026-118747",
-    "vendor": ".NET (NuGet)",
-    "product": "System.Formats.Cbor",
-    "name": "Microsoft Security Advisory CVE-2026-118747 - .NET Denial of Service Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Colliding CBOR map keys can hash-flood uniqueness checks; the fix uses seeded Marvin hashing.",
-    "requiredAction": "Upgrade System.Formats.Cbor to version 8.0.2 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vmv3-wvjp-wqpj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118747"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118749",
-    "slug": "cve-2026-118749",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-    "name": "Microsoft Security Advisory CVE-2026-118749 - ASP.NET Core Denial of Service Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Minimal API validation repeatedly copies a growing validation-error dictionary, allowing attacker-controlled collections to trigger quadratic CPU work after the client disconnects.",
-    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 11.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m28h-pj36-4364"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118749"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114149",
-    "slug": "cve-2026-114149",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-    "name": "Microsoft Security Advisory CVE-2026-114149 - ASP.NET Core Denial of Service Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-770",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. Multipart form processing can bypass the configured header-count limit and consume excessive resources.",
-    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 8.0.34 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x33c-w48q-qrgc"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114149"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-109476",
-    "slug": "cve-2026-109476",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-    "name": "Microsoft Security Advisory CVE-2026-109476 - ASP.NET Core Information Disclosure Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-116",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in ASP.NET Core. This advisory provides guidance on updating affected applications and components. A crafted X-Forwarded-Prefix can inject cookie path delimiters unless PathBase-derived cookie paths percent-encode semicolons.",
-    "requiredAction": "Upgrade Microsoft.AspNetCore.App.Runtime.linux-arm to version 8.0.34 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xhj5-c3g8-pfj8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109476"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126187",
-    "slug": "cve-2026-126187",
-    "vendor": "npm",
-    "product": "react-server-dom-parcel",
-    "name": "React: Unauthenticated Remote Code Execution in React Server Components",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 9.5,
-    "severity": "Critical",
-    "cwe": "CWE-502",
-    "ransomware": false,
-    "description": "Crafted payloads targeting frameworks supporting React Server Components can lead to remote code execution. This only affects extremely rare cases where responses transport multiple typed arrays and an attacker-controlled value. Updating immediately is recommended.",
-    "requiredAction": "Upgrade react-server-dom-parcel to version 19.0.9 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126187"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125123",
-    "slug": "cve-2026-125123",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages ",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-117",
-    "ransomware": false,
-    "description": "0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. The fix escapes the command openers in compose-lint's own output, but not in the argument parser's error messages. When a repository path reaches compose-lint's arguments without a -- before it, the argument parser prints it raw in its error message.",
-    "requiredAction": "Upgrade compose-lint to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8v59-qmwv-4p6q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125123"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125125",
-    "slug": "cve-2026-125125",
-    "vendor": "Actions",
-    "product": "tmatens/compose-lint",
-    "name": " compose-lint: Workflow command injection through SARIF-directory errors triggered by pull request symlinks ",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-117",
-    "ransomware": false,
-    "description": "In Action tags v0.30.0 and v0.31.0, when sarif-file: names a file in a subdirectory that can't be created, the Action prints the directory's resolved path in an error message. In v0.31.0 that message is outside the window in which the Action turns command processing off, and v0.30.0 has no such window.",
-    "requiredAction": "Upgrade tmatens/compose-lint to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xcf7-88g6-7xr8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125125"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125122",
-    "slug": "cve-2026-125122",
-    "vendor": "Pip",
-    "product": "compose-lint",
-    "name": "compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 2.3,
-    "severity": "Low",
-    "cwe": "CWE-117",
-    "ransomware": false,
-    "description": "0.31.0 fixed GHSA-6f4g-xm8v-pgv6, where text from a Compose file became GitHub Actions workflow commands in compose-lint's output. --format json and --format sarif output never passed through that fix, so ##[ inside a service name or other value reaches the log intact when the output is printed to stdout rather than written to a file.",
-    "requiredAction": "Upgrade compose-lint to version 0.32.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hr4h-4c45-v4q4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125122"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126186",
-    "slug": "cve-2026-126186",
-    "vendor": "RubyGems",
-    "product": "activestorage",
-    "name": "Active Storage: Possible arbitrary file read and remote code execution in video previews, analysis and image processing",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-646",
-    "ransomware": false,
-    "description": "ActiveStorage::Blob#open writes a blob to a tempfile whose name carries the extension of the uploaded filename, and hands that path to ffprobe (VideoAnalyzer, AudioAnalyzer), ffmpeg (VideoPreviewer) and ImageMagick (ImageAnalyzer, the :mini_magick variant processor).",
-    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-v924-7rp8-4mxh"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126186"
       }
     ],
     "source": "GITHUB"
