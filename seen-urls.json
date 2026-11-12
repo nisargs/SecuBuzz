@@ -5198,5 +5198,10 @@
   "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
   "https://access.redhat.com/errata/RHSA-2026:99166",
   "https://fortiguard.fortinet.com/psirt/FG-IR-26-220",
-  "https://fortiguard.fortinet.com/psirt/FG-IR-26-256"
+  "https://fortiguard.fortinet.com/psirt/FG-IR-26-256",
+  "https://cybersecuritynews.com/apache-patches-critical-http-2-flaw/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
+  "https://access.redhat.com/errata/RHSA-2026:99516",
+  "https://access.redhat.com/errata/RHSA-2026:99514",
+  "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
 ]

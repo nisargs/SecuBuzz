@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 05:48:34 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 06:46:39 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Freerdp Update Addresses Important Vulnerability</title>
+      <link>https://secubuzz.com/news/red-hat-freerdp-update-addresses-important-vulnera-e4671609</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-freerdp-update-addresses-important-vulnera-e4671609</guid>
+      <description><![CDATA[Red Hat released a security update for the freerdp component on its Enterprise Linux 10.0 Extended Update Support platform. The update addresses an important vulnerability, rated by Red Hat as Important, though the specific CVE identifiers are not listed in the advisory. Users should apply the update immediately to mitigate potential exploitation risks.]]></description>
+      <pubDate>Thu, 12 Nov 2026 06:33:00 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99516">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat httpd:2.4 Update Covers Important Vulnerability</title>
+      <link>https://secubuzz.com/news/red-hat-httpd-2-4-update-covers-important-vulnerab-6bc501bd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-httpd-2-4-update-covers-important-vulnerab-6bc501bd</guid>
+      <description><![CDATA[Red Hat released a security update for the httpd:2.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support platforms. The advisory marks the update as Important, implying a CVSS score in the 7.0-8.9 range, though specific CVE IDs are not listed. Users should apply the update immediately to mitigate potential exploitation.]]></description>
+      <pubDate>Thu, 12 Nov 2026 06:13:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99514">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely</title>
       <link>https://secubuzz.com/news/critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e</link>
@@ -377,10 +395,10 @@
       <category>Vulnerability</category>
     </item>
     <item>
-      <title>Apache HTTP Server Critical RCE CVE-2026-119618</title>
-      <link>https://secubuzz.com/news/apache-http-server-critical-rce-cve-2026-119618-4237afba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-critical-rce-cve-2026-119618-4237afba</guid>
-      <description><![CDATA[Apache HTTP Server contains a critical RCE flaw identified as CVE-2026-119618. The vulnerability, affecting 64% of cloud environments, permits remote attackers to execute arbitrary code via crafted requests, with no authentication required. Immediate patching is advised; administrators should apply the latest globally Apache HTTP Server update and verify configuration hardening.]]></description>
+      <title>Apache Patches Critical HTTP/2 Remote Code Execution Vulnerability (CVE-2026-119618)</title>
+      <link>https://secubuzz.com/news/apache-patches-critical-http-2-remote-code-executi-37bdb08b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-patches-critical-http-2-remote-code-executi-37bdb08b</guid>
+      <description><![CDATA[Apache HTTP Server maintainers released patches addressing a critical remote code execution vulnerability impacting global cloud environments. Tracked as CVE-2026-119618, the flaw in the HTTP/2 module enables unauthenticated remote attackers to execute arbitrary code using specially crafted HTTP requests. Organizations must immediately upgrade to Apache version 2.4.71 or apply the latest security updates to mitigate server compromise risks.]]></description>
       <pubDate>Wed, 11 Nov 2026 19:49:10 GMT</pubDate>
       <source url="https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability">Wiz Research</source>
       <category>CVE</category>
@@ -437,24 +455,6 @@
       <description><![CDATA[Ubuntu identified a buffer over-read in Yodl that could be triggered by malformed input. The flaw may allow an attacker to crash Yodl, leading to a denial of service, though no active exploitation has been reported. Users should update to the latest Yodl package via Ubuntu repositories; no additional workarounds are required.]]></description>
       <pubDate>Wed, 11 Nov 2026 18:33:50 GMT</pubDate>
       <source url="https://ubuntu.com/security/notices/USN-9063-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SNMPTT Allows Remote Command Execution via Unsanitized Traps</title>
-      <link>https://secubuzz.com/news/snmptt-allows-remote-command-execution-via-unsanit-67af8411</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/snmptt-allows-remote-command-execution-via-unsanit-67af8411</guid>
-      <description><![CDATA[Ubuntu discovered that SNMPTT fails to sanitize trap data passed to EXEC, PREEXEC, and unknown_trap_exec commands. A remote attacker could exploit this flaw to run arbitrary shell commands, potentially compromising the host system without authentication. Apply the latest SNMPTT update from Ubuntu repositories immediately, promptly; no additional mitigations are necessary.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:33:46 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9062-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>kramdown Vulnerability Enables Arbitrary File Read and Code Execution</title>
-      <link>https://secubuzz.com/news/kramdown-vulnerability-enables-arbitrary-file-read-5b97ec88</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kramdown-vulnerability-enables-arbitrary-file-read-5b97ec88</guid>
-      <description><![CDATA[The kramdown Ruby library processes the template option by default, creating a flaw in Ubuntu packages. This behavior allows attackers to read arbitrary files or execute code within the host environment, potentially compromising system integrity. Users should upgrade to the patched kramdown version or apply the Ubuntu security update to mitigate the risk.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:33:31 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9060-1">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>

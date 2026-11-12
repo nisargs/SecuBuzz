@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://access.redhat.com/errata/RHSA-2026:99516",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99516",
+    "title": "Red Hat Freerdp Update Addresses Important Vulnerability",
+    "headline": "Red Hat Freerdp Update Addresses Important Vulnerability",
+    "summary": "Red Hat released a security update for the freerdp component on its Enterprise Linux 10.0 Extended Update Support platform. The update addresses an important vulnerability, rated by Red Hat as Important, though the specific CVE identifiers are not listed in the advisory. Users should apply the update immediately to mitigate potential exploitation risks.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-12T06:33:00.000Z",
+    "ingestedAt": "2026-11-12T06:43:12.716Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:99516",
+    "additionalSources": []
+  },
+  {
+    "id": "https://access.redhat.com/errata/RHSA-2026:99514",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99514",
+    "title": "Red Hat httpd:2.4 Update Covers Important Vulnerability",
+    "headline": "Red Hat httpd:2.4 Update Covers Important Vulnerability",
+    "summary": "Red Hat released a security update for the httpd:2.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support platforms. The advisory marks the update as Important, implying a CVSS score in the 7.0-8.9 range, though specific CVE IDs are not listed. Users should apply the update immediately to mitigate potential exploitation.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "publishedAt": "2026-11-12T06:13:43.000Z",
+    "ingestedAt": "2026-11-12T06:43:12.716Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://access.redhat.com/errata/RHSA-2026:99514",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
     "sourceUrl": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
     "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
@@ -673,9 +705,9 @@
   {
     "id": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
     "sourceUrl": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-    "title": "Apache HTTP Server Critical RCE CVE-2026-119618",
-    "headline": "Apache HTTP Server Critical RCE CVE-2026-119618",
-    "summary": "Apache HTTP Server contains a critical RCE flaw identified as CVE-2026-119618. The vulnerability, affecting 64% of cloud environments, permits remote attackers to execute arbitrary code via crafted requests, with no authentication required. Immediate patching is advised; administrators should apply the latest globally Apache HTTP Server update and verify configuration hardening.",
+    "title": "Apache Patches Critical HTTP/2 Remote Code Execution Vulnerability (CVE-2026-119618)",
+    "headline": "Apache Patches Critical HTTP/2 Remote Code Execution Vulnerability (CVE-2026-119618)",
+    "summary": "Apache HTTP Server maintainers released patches addressing a critical remote code execution vulnerability impacting global cloud environments. Tracked as CVE-2026-119618, the flaw in the HTTP/2 module enables unauthenticated remote attackers to execute arbitrary code using specially crafted HTTP requests. Organizations must immediately upgrade to Apache version 2.4.71 or apply the latest security updates to mitigate server compromise risks.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Wiz Research",
@@ -684,7 +716,15 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/apache-patches-critical-http-2-flaw/"
+      }
+    ],
+    "cves": [
+      "CVE-2026-119618"
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:99089",
@@ -1357,6 +1397,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+    "title": "AntiFox AI Framework Linked to AWS Credential Theft",
+    "headline": "AntiFox AI Framework Linked to AWS Credential Theft",
+    "summary": "Threat actors are utilizing the AntiFox agentic penetration testing platform to target Amazon Web Services infrastructure and pivot laterally across victim networks. The campaign relies on Alibaba Cloud systems hosting AntiFox interfaces to compromise environment access and steal AWS production secrets. Security teams must monitor cloud environments for unauthorized agentic pentesting tools and audit access permissions for AWS credentials.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-11T15:34:27.000Z",
+    "ingestedAt": "2026-11-12T06:45:16.047Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
     "additionalSources": []
   },
   {
@@ -2737,6 +2793,22 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
+    "title": "Meta Detectron2 Deserialization Flaw Enables Remote Code Execution",
+    "headline": "Meta Detectron2 Deserialization Flaw Enables Remote Code Execution",
+    "summary": "Meta Detectron2’s vertex_feature_embedder deserialization flaw permits remote attackers to execute arbitrary code on affected installations. The vulnerability requires user interaction, such as visiting a malicious page or opening a malicious file, and carries a CVSS score of 7.8. No patch is currently available; users should avoid untrusted data inputs and monitor for vendor advisories.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "ingestedAt": "2026-11-12T06:43:12.716Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
+    "additionalSources": []
   },
   {
     "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-910/",
@@ -8290,70 +8362,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-208",
-    "additionalSources": []
-  },
-  {
-    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-235",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-235",
-    "title": "FortiManager Privilege Escalation via User-Controlled Key",
-    "headline": "FortiManager Privilege Escalation via User-Controlled Key",
-    "summary": "FortiManager’s user‑controlled key flaw permits a remote authenticated attacker with admin rights to elevate privileges to root via crafted HTTP requests. The vulnerability, CVSSv3 8.2, exploits inadequate key validation, allowing full root access without additional credentials. Fortinet released a patch for FortiManager 7.2.1 and earlier; users should update promptly to prevent privilege escalation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "ingestedAt": "2026-11-10T21:25:41.862Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-235",
-    "additionalSources": []
-  },
-  {
-    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-204",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-204",
-    "title": "FortiMail Authenticated Bypass Allows Root Directory Deletion",
-    "headline": "FortiMail Authenticated Bypass Allows Root Directory Deletion",
-    "summary": "FortiMail’s authorization bypass lets an authenticated remote attacker delete directories as root or access other users’ calendar and mailbox data across tenant domains via crafted HTTP requests. The flaw, CVSSv3 8.1, stems from improper key validation, enabling privileged file operations without credentials. Fortinet issued patches for FortiMail 7.2.1 and earlier; administrators should apply them immediately to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "ingestedAt": "2026-11-10T21:25:41.862Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-204",
-    "additionalSources": []
-  },
-  {
-    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-271",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-271",
-    "title": "FortiAuthenticator Hard‑coded Password Allows Authentication Bypass",
-    "headline": "FortiAuthenticator Hard‑coded Password Allows Authentication Bypass",
-    "summary": "FortiAuthenticator contains a hard‑coded password flaw that permits unauthenticated attackers to bypass credential checks in the authentication flow. The CVSSv3 score is 9.0, indicating a severe vulnerability that can grant unauthorized access without user interaction. Fortinet has issued a patch; security teams should apply the update immediately to prevent exploitation.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "ingestedAt": "2026-11-10T20:44:28.459Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-271",
-    "additionalSources": []
-  },
-  {
-    "id": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
-    "title": "FortiOS OSPF Daemon Allows Authentication Bypass",
-    "headline": "FortiOS OSPF Daemon Allows Authentication Bypass",
-    "summary": "FortiOS and FortiSASE OSPF daemons contain a primary weakness that enables unauthenticated attackers to broadcast LSAs via crafted requests. The CVSSv3 score is 9.3, indicating a severe flaw that can disrupt routing tables and potentially cause denial of service. Fortinet has released a patch; administrators should update the OSPF daemon firmware immediately to mitigate the risk.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "ingestedAt": "2026-11-10T20:44:28.459Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
     "additionalSources": []
   }
 ]

@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-freerdp-update-addresses-important-vulnera-e4671609",
+    "title": "Red Hat Freerdp Update Addresses Important Vulnerability",
+    "summary": "Red Hat released a security update for the freerdp component on its Enterprise Linux 10.0 Extended Update Support platform. The update addresses an important vulnerability, rated by Red Hat as Important, though the specific CVE identifiers are not listed in the advisory. Users should apply the update immediately to mitigate potential exploitation risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99516",
+    "publishedAt": "2026-11-12T06:33:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-freerdp-update-addresses-important-vulnera",
+      "article-e4671609",
+      "e4671609",
+      "red-hat-freerdp-update-addresses-important-vulnera-37d671",
+      "red-hat-freerdp-update-addresses-important-vulnerability"
+    ]
+  },
+  {
+    "slug": "red-hat-httpd-2-4-update-covers-important-vulnerab-6bc501bd",
+    "title": "Red Hat httpd:2.4 Update Covers Important Vulnerability",
+    "summary": "Red Hat released a security update for the httpd:2.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support platforms. The advisory marks the update as Important, implying a CVSS score in the 7.0-8.9 range, though specific CVE IDs are not listed. Users should apply the update immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99514",
+    "publishedAt": "2026-11-12T06:13:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-httpd-2-4-update-covers-important-vulnerab",
+      "article-6bc501bd",
+      "6bc501bd",
+      "red-hat-httpd-2-4-update-covers-important-vulnerab-37d671",
+      "red-hat-httpd-2-4-update-covers-important-vulnerability"
+    ]
+  },
+  {
     "slug": "critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e",
     "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
     "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.",
@@ -779,9 +817,9 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "apache-http-server-critical-rce-cve-2026-119618-4237afba",
-    "title": "Apache HTTP Server Critical RCE CVE-2026-119618",
-    "summary": "Apache HTTP Server contains a critical RCE flaw identified as CVE-2026-119618. The vulnerability, affecting 64% of cloud environments, permits remote attackers to execute arbitrary code via crafted requests, with no authentication required. Immediate patching is advised; administrators should apply the latest globally Apache HTTP Server update and verify configuration hardening.",
+    "slug": "apache-patches-critical-http-2-remote-code-executi-37bdb08b",
+    "title": "Apache Patches Critical HTTP/2 Remote Code Execution Vulnerability (CVE-2026-119618)",
+    "summary": "Apache HTTP Server maintainers released patches addressing a critical remote code execution vulnerability impacting global cloud environments. Tracked as CVE-2026-119618, the flaw in the HTTP/2 module enables unauthenticated remote attackers to execute arbitrary code using specially crafted HTTP requests. Organizations must immediately upgrade to Apache version 2.4.71 or apply the latest security updates to mitigate server compromise risks.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Wiz Research",
@@ -790,12 +828,18 @@ export const news: NewsBrief[] = [
     "cves": [
       "CVE-2026-119618"
     ],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/apache-patches-critical-http-2-flaw/"
+      }
+    ],
     "aliases": [
-      "apache-http-server-critical-rce-cve-2026-119618",
-      "article-4237afba",
-      "4237afba",
-      "apache-http-server-critical-rce-cve-2026-119618-178ef9"
+      "apache-patches-critical-http-2-remote-code-executi",
+      "article-37bdb08b",
+      "37bdb08b",
+      "apache-patches-critical-http-2-remote-code-executi-178ef9",
+      "apache-patches-critical-http-2-remote-code-execution-vulnera"
     ]
   },
   {
@@ -1585,6 +1629,25 @@ export const news: NewsBrief[] = [
       "6ddfe4c0",
       "xen-orchestra-authentication-bypass-enables-admin-7156f1",
       "xen-orchestra-authentication-bypass-enables-admin-code-execu"
+    ]
+  },
+  {
+    "slug": "antifox-ai-framework-linked-to-aws-credential-thef-5d1eee3a",
+    "title": "AntiFox AI Framework Linked to AWS Credential Theft",
+    "summary": "Threat actors are utilizing the AntiFox agentic penetration testing platform to target Amazon Web Services infrastructure and pivot laterally across victim networks. The campaign relies on Alibaba Cloud systems hosting AntiFox interfaces to compromise environment access and steal AWS production secrets. Security teams must monitor cloud environments for unauthorized agentic pentesting tools and audit access permissions for AWS credentials.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+    "publishedAt": "2026-11-11T15:34:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "antifox-ai-framework-linked-to-aws-credential-thef",
+      "article-5d1eee3a",
+      "5d1eee3a",
+      "antifox-ai-framework-linked-to-aws-credential-thef-3a1306",
+      "antifox-ai-framework-linked-to-aws-credential-theft"
     ]
   },
   {
@@ -3154,6 +3217,25 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-detectron2-deserialization-flaw-enables-remot-338c5486",
+    "title": "Meta Detectron2 Deserialization Flaw Enables Remote Code Execution",
+    "summary": "Meta Detectron2’s vertex_feature_embedder deserialization flaw permits remote attackers to execute arbitrary code on affected installations. The vulnerability requires user interaction, such as visiting a malicious page or opening a malicious file, and carries a CVSS score of 7.8. No patch is currently available; users should avoid untrusted data inputs and monitor for vendor advisories.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "meta-detectron2-deserialization-flaw-enables-remot",
+      "article-338c5486",
+      "338c5486",
+      "meta-detectron2-deserialization-flaw-enables-remot-6f3d08",
+      "meta-detectron2-deserialization-flaw-enables-remote-code-exe"
     ]
   },
   {
@@ -9421,81 +9503,6 @@ export const news: NewsBrief[] = [
       "74d576d2",
       "fortimail-authorization-bypass-enables-unauthentic-3bcda6",
       "fortimail-authorization-bypass-enables-unauthenticated-accou"
-    ]
-  },
-  {
-    "slug": "fortimanager-privilege-escalation-via-user-control-1f87005e",
-    "title": "FortiManager Privilege Escalation via User-Controlled Key",
-    "summary": "FortiManager’s user‑controlled key flaw permits a remote authenticated attacker with admin rights to elevate privileges to root via crafted HTTP requests. The vulnerability, CVSSv3 8.2, exploits inadequate key validation, allowing full root access without additional credentials. Fortinet released a patch for FortiManager 7.2.1 and earlier; users should update promptly to prevent privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-235",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimanager-privilege-escalation-via-user-control",
-      "article-1f87005e",
-      "1f87005e",
-      "fortimanager-privilege-escalation-via-user-control-3bcda5",
-      "fortimanager-privilege-escalation-via-user-controlled-key"
-    ]
-  },
-  {
-    "slug": "fortimail-authenticated-bypass-allows-root-directo-ff06611b",
-    "title": "FortiMail Authenticated Bypass Allows Root Directory Deletion",
-    "summary": "FortiMail’s authorization bypass lets an authenticated remote attacker delete directories as root or access other users’ calendar and mailbox data across tenant domains via crafted HTTP requests. The flaw, CVSSv3 8.1, stems from improper key validation, enabling privileged file operations without credentials. Fortinet issued patches for FortiMail 7.2.1 and earlier; administrators should apply them immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-204",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimail-authenticated-bypass-allows-root-directo",
-      "article-ff06611b",
-      "ff06611b",
-      "fortimail-authenticated-bypass-allows-root-directo-3bcda6",
-      "fortimail-authenticated-bypass-allows-root-directory-deletio"
-    ]
-  },
-  {
-    "slug": "fortiauthenticator-hard-coded-password-allows-auth-7877ef47",
-    "title": "FortiAuthenticator Hard‑coded Password Allows Authentication Bypass",
-    "summary": "FortiAuthenticator contains a hard‑coded password flaw that permits unauthenticated attackers to bypass credential checks in the authentication flow. The CVSSv3 score is 9.0, indicating a severe vulnerability that can grant unauthorized access without user interaction. Fortinet has issued a patch; security teams should apply the update immediately to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-271",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortiauthenticator-hard-coded-password-allows-auth",
-      "article-7877ef47",
-      "7877ef47",
-      "fortiauthenticator-hard-coded-password-allows-auth-3bcda5",
-      "fortiauthenticator-hard-coded-password-allows-authentication"
-    ]
-  },
-  {
-    "slug": "fortios-ospf-daemon-allows-authentication-bypass-1237b78c",
-    "title": "FortiOS OSPF Daemon Allows Authentication Bypass",
-    "summary": "FortiOS and FortiSASE OSPF daemons contain a primary weakness that enables unauthenticated attackers to broadcast LSAs via crafted requests. The CVSSv3 score is 9.3, indicating a severe flaw that can disrupt routing tables and potentially cause denial of service. Fortinet has released a patch; administrators should update the OSPF daemon firmware immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-267",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortios-ospf-daemon-allows-authentication-bypass",
-      "article-1237b78c",
-      "1237b78c",
-      "fortios-ospf-daemon-allows-authentication-bypass-3bcda5"
     ]
   }
 ];
