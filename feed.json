@@ -1613,10 +1613,10 @@
   {
     "id": "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
     "sourceUrl": "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
-    "title": "Xen Orchestra Auth Bypass CVE-2026-123158 Patched",
-    "headline": "Xen Orchestra Auth Bypass CVE-2026-123158 Patched",
-    "summary": "Xen Orchestra VSA-2026-062 enables attackers to bypass authentication and gain unauthorized access to virtual machine management interfaces. The flaw, catalogued as CVE-2026-123158, exploits a missing session validation check, allowing credentialless access with a CVSS score of 8.1. Red Hat has issued a patch for Xen Orchestra; security teams should update immediately and enforce strict access controls.",
-    "category": "CVE",
+    "title": "Xen Orchestra Auth Bypass VSA-2026-062 Patched",
+    "headline": "Xen Orchestra Auth Bypass VSA-2026-062 Patched",
+    "summary": "Xen Orchestra VSA-2026-062 enables attackers to bypass authentication and gain unauthorized access to virtual machine management interfaces. The flaw exploits a missing session validation check, allowing credentialless access with a CVSS score of 8.1. Red Hat has issued a patch for Xen Orchestra; security teams should update immediately and enforce strict access controls.",
+    "category": "VULNERABILITY",
     "severity": "HIGH",
     "source": "CyberNews AI",
     "publishedAt": "2026-11-11T11:57:27.000Z",
@@ -1624,7 +1624,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [],
+    "slug": "xen-orchestra-auth-bypass-vsa-2026-062-patched-afced55d",
+    "aliases": [
+      "xen-orchestra-auth-bypass-cve-2026-123158-patched-0e92fe33"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/claude-code-ai/",
@@ -6235,8 +6240,7 @@
     "id": "https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting",
     "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting",
     "title": "Chrome Updates Released to Patch Exploited Zero-Day Vulnerability",
-    "headline": "Chrome Updates Released to Patch Exploited Zero-Day Vulnerability",
-    "summary": "Google released Chrome desktop and Android updates to patch CVE-2026-123158, a zero‑day flaw attackers are exploiting. The vulnerability permits remote code execution through the Chrome rendering engine, risking user data and system compromise. Users should install the latest Chrome version immediately, and admins should monitor for anomalous activity and enforce additional controls.",
+    "summary": "Google released Chrome desktop and Android updates to patch CVE-2026-125350, a zero‑day flaw attackers are exploiting. The vulnerability permits remote code execution through the Chrome rendering engine, risking user data and system compromise. Users should install the latest Chrome version immediately, and admins should monitor for anomalous activity and enforce additional controls.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Malwarebytes Labs",
@@ -6245,7 +6249,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-125350"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/dark-storm-team/",

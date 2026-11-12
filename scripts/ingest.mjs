@@ -2436,12 +2436,250 @@ Return ONLY valid JSON matching this exact structure:
   };
 }
 
-function isSameVulnCandidate(candText, candTitle, entryText, entryTitle) {
-  const anchorsA = extractSubjectAnchors(candTitle, candText);
-  const anchorsB = extractSubjectAnchors(entryTitle, entryText);
-  const shared = anchorsA.filter(a => anchorsB.includes(a));
-  return shared.length >= 2;
+// --- CVE CORROBORATION ENGINE START ---
+function normalizeCorroborationHyphens(text) {
+  return String(text || '').replace(/[\u2010-\u2015\u2212]/g, '-');
 }
+
+function extractCorroborationCves(text) {
+  const matches = normalizeCorroborationHyphens(text).match(/CVE-\d{4}-\d{4,7}/gi);
+  return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
+}
+
+function extractCorroborationAdvisoryIds(text) {
+  const matches = normalizeCorroborationHyphens(text).match(
+    /\b(?:ZDI-\d{2}-\d+|RHSA-\d{4}:\d+|USN-\d+-\d+|GHSA-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}|VSA-\d{4}-\d+|APSB\d{2}-\d+|FG-IR-\d{2}-\d+|PAN-SA-\d{4}-\d+|CISCO-SA-[a-z0-9-]+|MNDT-\d{4}-\d+)\b/gi
+  );
+  return matches ? Array.from(new Set(matches.map(x => x.toUpperCase()))) : [];
+}
+
+function extractCorroborationCweIds(text) {
+  const matches = normalizeCorroborationHyphens(text).match(/\bCWE-\d{1,5}\b/gi);
+  return matches ? Array.from(new Set(matches.map(x => x.toUpperCase()))) : [];
+}
+
+const CORROBORATION_STOPWORDS = new Set([
+  'the', 'and', 'for', 'with', 'from', 'after', 'before', 'into', 'over', 'under', 'amid', 'amidst',
+  'about', 'across', 'against', 'among', 'around', 'between', 'beyond', 'through', 'during', 'within', 'without',
+  'could', 'can', 'may', 'might', 'would', 'should', 'must', 'will', 'shall',
+  'let', 'lets', 'make', 'makes', 'made', 'allow', 'allows', 'allowing', 'allowed',
+  'enable', 'enables', 'enabling', 'enabled', 'help', 'helps', 'need', 'needs', 'needed',
+  'are', 'was', 'were', 'been', 'being', 'has', 'have', 'had', 'does', 'did',
+  'not', 'now', 'how', 'why', 'who', 'whom', 'whose', 'what', 'when', 'where', 'which',
+  'that', 'this', 'these', 'those', 'such', 'same', 'other', 'another', 'both', 'each', 'every',
+  'some', 'any', 'all', 'many', 'more', 'most', 'much', 'several', 'multiple', 'various',
+  'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+  'via', 'use', 'used', 'using', 'only', 'even', 'also', 'still', 'just', 'soon', 'already', 'yet',
+  'its', 'their', 'your', 'our', 'his', 'her', 'they', 'them', 'then', 'than', 'while', 'until', 'since',
+  'very', 'well', 'new', 'recent', 'latest', 'early', 'hours', 'days', 'week', 'weeks', 'month', 'months', 'year', 'today',
+  'potentially', 'likely', 'possibly', 'typically', 'specifically', 'currently', 'previously', 'recently', 'according',
+  'promptly', 'locally', 'remotely', 'maliciously', 'unvalidated',
+  'january', 'february', 'march', 'april', 'june', 'july', 'august', 'september', 'october', 'november', 'december',
+  'jan', 'feb', 'mar', 'apr', 'jun', 'jul', 'aug', 'sep', 'sept', 'oct', 'nov', 'dec',
+  'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday',
+  'says', 'said', 'finds', 'found', 'shows', 'shown', 'leaves', 'exposes', 'exposed', 'exposing', 'exposure',
+  'warns', 'warn', 'warned', 'warning', 'alerts', 'alert', 'reports', 'report', 'reported', 'reporting',
+  'confirms', 'confirm', 'confirmed', 'rushes', 'rush', 'rushed', 'urges', 'urge', 'urged',
+  'adds', 'added', 'add', 'issues', 'issued', 'issue', 'releases', 'released', 'release', 'publishes', 'published', 'publish',
+  'discloses', 'disclosed', 'disclose', 'disclosure', 'discovers', 'discovered', 'discover',
+  'fixes', 'fixed', 'fix', 'fixing', 'patches', 'patched', 'patch', 'patching', 'updates', 'updated', 'update', 'updating',
+  'addresses', 'addressed', 'address', 'addressing', 'resolves', 'resolved', 'resolve', 'mitigates', 'mitigated', 'mitigate', 'mitigation',
+  'protects', 'protected', 'protect', 'protection', 'defends', 'defended', 'defend', 'defense',
+  'detects', 'detected', 'detect', 'detection', 'checks', 'checked', 'check', 'checking', 'verifies', 'verify',
+  'affects', 'affected', 'affect', 'affecting', 'targets', 'targeted', 'target', 'targeting',
+  'gains', 'gained', 'gain', 'steals', 'steal', 'stole', 'stolen', 'theft', 'takes', 'take', 'takeover',
+  'hijacks', 'hijack', 'hijacked', 'compromises', 'compromised', 'compromise', 'abuses', 'abused', 'abuse', 'abusing',
+  'triggers', 'triggered', 'trigger', 'turns', 'turned', 'turn', 'leads', 'lead', 'leading', 'causes', 'caused', 'cause', 'causing',
+  'exploits', 'exploited', 'exploit', 'exploiting', 'exploitation', 'exploitable', 'leaks', 'leaked', 'leak', 'leaking',
+  'tracked', 'track', 'tracking', 'dubbed', 'named', 'called', 'rated', 'scored', 'score', 'scores',
+  'requires', 'require', 'required', 'requiring', 'remediates', 'remediate', 'remediation',
+  'execute', 'executes', 'executed', 'executing', 'run', 'runs', 'running', 'identified', 'identify', 'identifying',
+  'prevent', 'prevents', 'prevented', 'preventing', 'permits', 'permit', 'permitted', 'permitting',
+  'review', 'reviews', 'reviewed', 'contain', 'contains', 'contained', 'containing', 'upgrade', 'upgrades', 'upgraded', 'upgrading',
+  'delete', 'deletes', 'deleted', 'deleting', 'open', 'opens', 'opened', 'opening', 'control', 'controls', 'controlled', 'controlling',
+  'request', 'requests', 'requested', 'requesting', 'malformed', 'crafted', 'authorized', 'untrusted', 'improper',
+  'neutralization', 'special', 'elements', 'generation', 'incorrect', 'unexpected', 'apply', 'immediately', 'install',
+  'monitor', 'anomalous', 'activity', 'recommend', 'recommends', 'enforce', 'enforces', 'strict', 'ensure', 'verify', 'consult', 'revised',
+  'appeared', 'originally', 'interaction', 'trust', 'trusted', 'environments', 'environment', 'page', 'pages', 'installation', 'installations',
+  'precaution', 'disable', 'disabled', 'disabling', 'temporary', 'workaround', 'workarounds',
+  'security', 'cyber', 'cybersecurity', 'infosec', 'threat', 'threats', 'attack', 'attacks', 'attacker', 'attackers',
+  'hacker', 'hackers', 'hacking', 'hacked', 'hack', 'adversary', 'adversaries', 'actor', 'actors', 'malicious',
+  'flaw', 'flaws', 'bug', 'bugs', 'vulnerability', 'vulnerabilities', 'vuln', 'vulns', 'issue', 'issues', 'risk', 'risks', 'vulnerable',
+  'incident', 'incidents', 'breach', 'breaches', 'ransomware', 'malware', 'trojan', 'backdoor', 'botnet', 'botnets',
+  'zero-day', '0-day', '0day', 'zero', 'day', 'unpatched', 'active', 'actively', 'widespread', 'wild', 'public',
+  'critical', 'high', 'higher', 'medium', 'low', 'severe', 'serious', 'major', 'important', 'urgent', 'emergency',
+  'first', 'second', 'third', 'fourth', 'fifth', 'next', 'prior', 'previous', 'earlier', 'unspecified', 'numerous', 'several',
+  'auth', 'authentication', 'authorization', 'unauthenticated', 'unauthorized', 'authenticated', 'bypass', 'bypasses', 'bypassing', 'bypassed',
+  'privilege', 'privileges', 'privileged', 'escalation', 'escalate', 'elevation', 'elevate',
+  'root', 'admin', 'admins', 'administrator', 'administrators', 'administrative', 'access', 'remote', 'local', 'code', 'execution', 'rce', 'arbitrary',
+  'command', 'commands', 'injection', 'inject', 'memory', 'corruption', 'buffer', 'overflow', 'underflow', 'heap', 'stack',
+  'use-after-free', 'out-of-bounds', 'integer', 'numeric', 'truncation', 'traversal', 'path', 'confusion', 'pointer', 'reference',
+  'scripting', 'xss', 'csrf', 'ssrf', 'xxe', 'deserialization', 'smuggling', 'spoofing', 'dos', 'denial', 'crash',
+  'missing', 'valid', 'invalid', 'validation', 'handling', 'parsing', 'parse', 'input', 'output',
+  'poc', 'chain', 'chained', 'chaining', 'combine', 'combined', 'condition', 'conditions', 'weakness', 'weaknesses',
+  'password', 'passwords', 'credential', 'credentials', 'token', 'tokens', 'session', 'sessions', 'key', 'keys', 'role', 'roles',
+  'cookie', 'cookies', 'certificate', 'certificates', 'hash', 'hashes', 'login', 'logins', 'account', 'accounts', 'mailbox', 'mailboxes',
+  'email', 'emails', 'attachment', 'attachments', 'traffic', 'outbound', 'inbound', 'rollup', 'cumulative',
+  'user', 'users', 'customer', 'customers', 'owner', 'owners', 'organization', 'organizations', 'enterprise', 'enterprises',
+  'company', 'companies', 'vendor', 'vendors', 'campaign', 'campaigns', 'researcher', 'researchers', 'team', 'teams',
+  'server', 'servers', 'client', 'clients', 'app', 'apps', 'application', 'applications', 'mobile', 'desktop', 'web', 'gui', 'ui', 'cli',
+  'rest', 'api', 'apis', 'cloud', 'network', 'networks', 'system', 'systems', 'platform', 'platforms', 'software', 'product', 'products',
+  'hardware', 'firmware', 'device', 'devices', 'service', 'services', 'tool', 'tools', 'package', 'packages', 'library', 'libraries',
+  'version', 'versions', 'edition', 'build', 'advisory', 'advisories', 'bulletin', 'bulletins', 'deployment', 'deployments', 'config', 'configuration',
+  'catalog', 'list', 'listed', 'cisa', 'kev', 'cve', 'cvss', 'nvd', 'bod', 'cert', 'cert-in', 'hunt', 'hunting',
+  'runbook', 'runbooks', 'guidance', 'telemetry', 'forensic', 'weekly', 'recap', 'brief', 'news', 'blog', 'post', 'article',
+  'data', 'file', 'files', 'directory', 'directories', 'upload', 'uploads', 'download', 'downloads', 'image', 'images', 'browser', 'browsers',
+  'engine', 'kernel', 'daemon', 'module', 'component', 'components', 'plugin', 'plugins', 'extension', 'extensions', 'driver', 'drivers',
+  'appliance', 'appliances', 'gateway', 'gateways', 'portal', 'management', 'interface', 'interfaces', 'endpoint', 'endpoints', 'host', 'hosts',
+  'sql', 'xml', 'yaml', 'json', 'html', 'pdf', 'svg', 'csv', 'iam', 'cwe', 'url', 'uri', 'http', 'https', 'www', 'com', 'org', 'net',
+  'linux', 'windows', 'macos', 'android', 'ios', 'unix', 'ubuntu', 'debian', 'redhat', 'video', 'audio', 'frame', 'frames',
+  'unit', 'class', 'parser', 'feature', 'features', 'default', 'process', 'processes', 'worker', 'agent'
+]);
+
+const BROAD_VENDORS_ONLY = new Set([
+  'microsoft', 'google', 'apple', 'adobe', 'oracle', 'cisco', 'fortinet', 'ibm', 'aws', 'amazon',
+  'redhat', 'paloalto', 'vmware', 'broadcom', 'ivanti', 'citrix', 'sap', 'meta', 'zdi', 'barracuda',
+  'canonical', 'suse', 'mozilla', 'apache', 'sonicwall', 'checkpoint', 'trendmicro', 'juniper', 'netgear', 'tp-link',
+  'intel', 'amd', 'asus', 'qualcomm', 'nvidia', 'dell', 'hpe', 'lenovo', 'samsung'
+]);
+
+const CORROBORATION_BULK_VENDOR_SOURCES = new Set([
+  'Microsoft MSRC', 'Fortinet FortiGuard PSIRT', 'ZDI Advisories',
+  'Red Hat Security Advisories', 'Ubuntu Security Notices', 'Cisco PSIRT',
+  'AWS Security Bulletins', 'Debian Security Advisories', 'Google Chrome Releases',
+  'CISA Known Exploited Vulnerabilities'
+]);
+
+function normalizeCorroborationPhrases(text) {
+  return normalizeCorroborationHyphens(text)
+    .toLowerCase()
+    .replace(/\bpalo\s+alto(?:\s+networks)?\b/g, 'paloalto')
+    .replace(/\bred\s+hat\b/g, 'redhat')
+    .replace(/\btata\s+motors\b/g, 'tatamotors')
+    .replace(/\bruby\s+on\s+rails\b/g, 'rubyonrails')
+    .replace(/\bactive\s+storage\b/g, 'activestorage')
+    .replace(/\bxen\s+orchestra\b/g, 'xenorchestra')
+    .replace(/\bcheck\s+point\b/g, 'checkpoint')
+    .replace(/\btrend\s+micro\b/g, 'trendmicro')
+    .replace(/\bsonic\s*wall\b/g, 'sonicwall')
+    .replace(/\badobe\s+commerce\b/g, 'adobecommerce')
+    .replace(/\bmeta\s+fairseq\b/g, 'metafairseq')
+    .replace(/\bibm\s+aspera\b/g, 'ibmaspera')
+    .replace(/\bsignalwire\s+freeswitch\b/g, 'signalwire_freeswitch')
+    .replace(/\bopen\s+job\s+description\b/g, 'openjd')
+    .replace(/\bemail\s+security\s+gateway\b/g, 'esg');
+}
+
+function extractSpecificCorroborationTokens(text) {
+  const normalized = normalizeCorroborationPhrases(text)
+    .replace(/CVE-\d{4}-\d{4,7}/gi, ' ');
+  const tokens = normalized
+    .replace(/[^a-z0-9_.\s-]/g, ' ')
+    .split(/\s+/)
+    .map(w => w.replace(/^[-_.]+|[-_.]+$/g, ''))
+    .filter(w => {
+      if (w.length < 3) return false;
+      if (/^\d+(?:\.\d+)*$/.test(w)) return false;
+      if (CORROBORATION_STOPWORDS.has(w)) return false;
+      if (BROAD_VENDORS_ONLY.has(w)) return false;
+      return true;
+    });
+  return Array.from(new Set(tokens));
+}
+
+function extractCorroborationFlawClasses(text) {
+  const t = normalizeCorroborationHyphens(text).toLowerCase();
+  const classes = new Set();
+  if (/\b(?:authentication|auth|authorization|login|password|policy)\s+bypass|\bbypass\s+(?:authentication|password|login|auth)|\bmissing\s+session\s+validation\b/.test(t)) classes.add('AUTH_BYPASS');
+  if (/\bos\s+command\s+injection|\bcommand\s+injection\b/.test(t)) classes.add('CMD_INJECTION');
+  if (/\bargument\s+injection\b/.test(t)) classes.add('ARG_INJECTION');
+  if (/\bsql\s+injection|\bsqli\b|\bsql\s+command\b/.test(t)) classes.add('SQL_INJECTION');
+  if (/\bcode\s+injection\b/.test(t)) classes.add('CODE_INJECTION');
+  if (/\b(?:path|directory)\s+traversal\b/.test(t)) classes.add('PATH_TRAVERSAL');
+  if (/\bdeserialization\b/.test(t)) classes.add('DESERIALIZATION');
+  if (/\buse[-\s]after[-\s]free\b/.test(t)) classes.add('USE_AFTER_FREE');
+  if (/\b(?:heap|stack|buffer)[-\s](?:based\s+)?(?:buffer\s+)?overflow\b/.test(t)) classes.add('BUFFER_OVERFLOW');
+  if (/\binteger\s+(?:underflow|overflow)\b/.test(t)) classes.add('INTEGER_OVERFLOW');
+  if (/\bxxe\b|\bxml\s+external\s+entity\b/.test(t)) classes.add('XXE');
+  if (/\bxss\b|\bcross[-\s]site\s+scripting\b/.test(t)) classes.add('XSS');
+  if (/\bssrf\b|\bserver[-\s]side\s+request\s+forgery\b/.test(t)) classes.add('SSRF');
+  if (/\brace\s+condition\b/.test(t)) classes.add('RACE_CONDITION');
+  if (/\buntrusted\s+search\s+path\b/.test(t)) classes.add('SEARCH_PATH');
+  if (/\binformation\s+disclosure\b/.test(t)) classes.add('INFO_DISCLOSURE');
+  return classes;
+}
+
+function isMultiFlawRoundup(title, text) {
+  const t = normalizeCorroborationHyphens(title || '');
+  const combined = `${t} ${normalizeCorroborationHyphens(text || '')}`;
+  if (/\b(?:patch tuesday|weekly recap|kev catalog)\b/i.test(t)) return true;
+  if (/^[A-Z][a-zA-Z0-9]+,\s+[A-Z][a-zA-Z0-9]+\s+(?:patch|issue|fix|address)/i.test(t)) return true;
+  if (/\b(?:multiple|several|numerous|various|over|more than|fixes|patches|addresses|contains|adds|among)\s+(?:\d[\d,]*|two|three|four|five|six|seven|eight|nine|ten)\s+(?:known\s+|actively\s+|exploited\s+|critical\s+|high[- ]severity\s+|security\s+|remote\s+desktop\s+|windows\s+|java\s+runtime\s+)?(?:flaws|vulnerabilities|bugs|cves)\b/i.test(combined)) return true;
+  if (/^(?:multiple|several)\s+.+\b(?:flaws|vulnerabilities|bugs|cves)\b/i.test(t)) return true;
+  if (/\b(?:including|among)\s+(?:CVE-\d{4}-\d+|at least \d+)/i.test(combined) && /\b(?:flaws|vulnerabilities|cves)\b/i.test(combined)) return true;
+  return false;
+}
+
+/**
+ * Checks whether a no-CVE candidate article and a single-CVE KB entry describe
+ * the exact same vulnerability using deterministic IDs, conflict guards, and
+ * non-vendor, non-boilerplate technical token intersections.
+ */
+function isSameVulnCandidate(candText, candTitle, entryText, entryTitle, entryCves = null, candSource = '', entrySource = '') {
+  if (Array.isArray(entryCves) && entryCves.length !== 1) return false;
+  if (candSource && entrySource && candSource === entrySource) return false;
+  if (candSource && CORROBORATION_BULK_VENDOR_SOURCES.has(candSource)) return false;
+  if (isMultiFlawRoundup(candTitle, candText)) return false;
+  if (isMultiFlawRoundup(entryTitle, entryText)) return false;
+
+  const advA = extractCorroborationAdvisoryIds(`${candTitle} ${candText}`);
+  const advB = extractCorroborationAdvisoryIds(`${entryTitle} ${entryText}`);
+  if (advA.length > 0 && advB.length > 0 && !advA.some(a => advB.includes(a))) {
+    return false;
+  }
+
+  const cweA = extractCorroborationCweIds(`${candTitle} ${candText}`);
+  const cweB = extractCorroborationCweIds(`${entryTitle} ${entryText}`);
+  if (cweA.length > 0 && cweB.length > 0 && !cweA.some(c => cweB.includes(c))) {
+    return false;
+  }
+
+  const flawA = extractCorroborationFlawClasses(`${candTitle} ${candText}`);
+  const flawB = extractCorroborationFlawClasses(`${entryTitle} ${entryText}`);
+  const sharedFlaw = Array.from(flawA).filter(f => flawB.has(f));
+  if (flawA.size > 0 && flawB.size > 0 && sharedFlaw.length === 0) {
+    return false;
+  }
+
+  const tA = (candTitle || '').toLowerCase();
+  const tB = (entryTitle || '').toLowerCase();
+  if ((/\bunauthenticated\b/.test(tA) && /(?<!un)\bauthenticated\b/.test(tB)) ||
+      (/(?<!un)\bauthenticated\b/.test(tA) && /\bunauthenticated\b/.test(tB))) {
+    return false;
+  }
+  if ((/\bremote\b/.test(tA) && /\blocal\b/.test(tB) && !/\blocal\b/.test(tA)) ||
+      (/\blocal\b/.test(tA) && /\bremote\b/.test(tB) && !/\bremote\b/.test(tA))) {
+    return false;
+  }
+
+  const sharedAdv = advA.filter(a => advB.includes(a));
+  const titleA = extractSpecificCorroborationTokens(candTitle);
+  const titleB = extractSpecificCorroborationTokens(entryTitle);
+  const sharedTitle = titleA.filter(t => titleB.includes(t));
+
+  const allA = extractSpecificCorroborationTokens(`${candTitle} ${candText}`);
+  const allB = extractSpecificCorroborationTokens(`${entryTitle} ${entryText}`);
+  const sharedAll = allA.filter(t => allB.includes(t));
+
+  if (sharedAdv.length > 0 && (sharedTitle.length > 0 || sharedAll.length > 0)) {
+    return true;
+  }
+
+  if (sharedTitle.length === 0) return false;
+  const minAllTokens = (entrySource && CORROBORATION_BULK_VENDOR_SOURCES.has(entrySource)) ? 3 : 2;
+  return sharedAll.length >= minAllTokens;
+}
+// --- CVE CORROBORATION ENGINE END ---
 
 
 // -----------------------------------------------------------------------------
@@ -2672,8 +2910,10 @@ const cveKnowledgeBase = [];
 
 for (const cand of allCandidates) {
   const text = (cand.title || '') + ' ' + (cand.description || '');
-  const cves = extractCvesFromText(text);
-  if (cves.length > 0) {
+  const cves = extractCorroborationCves(text);
+  const linkCves = extractCorroborationCves(cand.link || '');
+  const totalCves = Array.from(new Set([...cves, ...linkCves]));
+  if (cves.length === 1 && totalCves.length === 1 && !isMultiFlawRoundup(cand.title || '', text)) {
     cveKnowledgeBase.push({
       cves,
       title: cand.title || '',
@@ -2685,9 +2925,11 @@ for (const cand of allCandidates) {
 }
 
 for (const cand of selectedCandidates) {
+  if (cand.source && CORROBORATION_BULK_VENDOR_SOURCES.has(cand.source)) continue;
   const currentText = (cand.title || '') + ' ' + (cand.description || '');
-  const currentCves = extractCvesFromText(currentText);
+  const currentCves = extractCorroborationCves(currentText + ' ' + (cand.link || ''));
   if (currentCves.length > 0) continue;
+  if (isMultiFlawRoundup(cand.title || '', currentText)) continue;
 
   const titleLower = (cand.title || '').toLowerCase();
   const descLower = (cand.description || '').toLowerCase();
@@ -2709,6 +2951,7 @@ for (const cand of selectedCandidates) {
   const candTime = cand.publishedAt ? new Date(cand.publishedAt).getTime() : Date.now();
 
   for (const entry of cveKnowledgeBase) {
+    if (cand.source && entry.source && cand.source === entry.source) continue;
     const timeDiffDays = Math.abs(candTime - entry.time) / 86400000;
     if (timeDiffDays > 3) continue;
 
@@ -2717,6 +2960,9 @@ for (const cand of selectedCandidates) {
       cand.title || '',
       entry.text,
       entry.title,
+      entry.cves,
+      cand.source || '',
+      entry.source || ''
     );
 
     if (matched) {
