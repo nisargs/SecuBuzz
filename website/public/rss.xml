@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 06:46:39 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 07:45:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GitHub Discusses Accountability for AI Patch Flaws</title>
+      <link>https://secubuzz.com/news/github-discusses-accountability-for-ai-patch-flaws-8806da92</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-discusses-accountability-for-ai-patch-flaws-8806da92</guid>
+      <description><![CDATA[GitHub’s Agentic Autofix can fix one vulnerability while creating another, raising accountability questions for patches. The tool re‑runs detection engines and project tests after patching, but can miss side effects, requiring validation and metric monitoring. Security teams should adjust CISO policies before deploying the agent, select models, and apply continuous testing to mitigate flaws.]]></description>
+      <pubDate>Thu, 12 Nov 2026 07:00:38 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/12/marcelo-oliveira-github-agentic-autofix/">Help Net Security</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories</title>
+      <link>https://secubuzz.com/news/attacker-used-4-837-hijacked-github-accounts-to-ru-9de107bb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attacker-used-4-837-hijacked-github-accounts-to-ru-9de107bb</guid>
+      <description><![CDATA[Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach.]]></description>
+      <pubDate>Thu, 12 Nov 2026 06:42:47 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html">The Hacker News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Freerdp Update Addresses Important Vulnerability</title>
       <link>https://secubuzz.com/news/red-hat-freerdp-update-addresses-important-vulnera-e4671609</link>
@@ -26,6 +44,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Releases Important Update for httpd:2.4</title>
+      <link>https://secubuzz.com/news/red-hat-releases-important-update-for-httpd-2-4-4c245b5a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-update-for-httpd-2-4-4c245b5a</guid>
+      <description><![CDATA[Red Hat issued an important security update for the httpd:2.4 module on RHEL 8.4 AMCS and EUS LLA platforms. The update addresses multiple vulnerabilities with CVSS scores indicating significant risk, though specific CVE identifiers are referenced in the advisory. Security teams should apply the patch immediately to mitigate potential exploitation and maintain compliance with Red Hat’s security guidance.]]></description>
+      <pubDate>Thu, 12 Nov 2026 06:09:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99513">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues Important Update for aspell</title>
+      <link>https://secubuzz.com/news/red-hat-issues-important-update-for-aspell-512bf67b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-update-for-aspell-512bf67b</guid>
+      <description><![CDATA[Red Hat released an important security update for the aspell package on RHEL 9.6 Extended Update Support. The advisory covers multiple vulnerabilities with CVSS scores indicating significant risk, with CVE references provided in the documentation. Administrators should apply the patch promptly to prevent exploitation and align with Red Hat’s security maintenance schedule.]]></description>
+      <pubDate>Thu, 12 Nov 2026 05:49:15 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99511">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely</title>
       <link>https://secubuzz.com/news/critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e</guid>
@@ -33,6 +69,24 @@
       <pubDate>Thu, 12 Nov 2026 05:12:26 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>ScreenConnect Targeted 288 Endpoints via Rogue Clients</title>
+      <link>https://secubuzz.com/news/screenconnect-targeted-288-endpoints-via-rogue-cli-9e5eb3bd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-targeted-288-endpoints-via-rogue-cli-9e5eb3bd</guid>
+      <description><![CDATA[ConnectWise reported unauthorized access incidents affecting at least 288 endpoints across 48 organizations using ScreenConnect with rogue client extensions. The company disabled five third‑party extensions in partner environments, noting no evidence of infrastructure compromise or software vulnerability in ScreenConnect itself. Security teams should monitor for rogue client activity, enforce extension whitelisting, and review access controls to mitigate similar threats.]]></description>
+      <pubDate>Thu, 12 Nov 2026 04:39:48 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>ConnectWise ScreenConnect Compromised, SCKit Deployed</title>
+      <link>https://secubuzz.com/news/connectwise-screenconnect-compromised-sckit-deploy-5f59fc25</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/connectwise-screenconnect-compromised-sckit-deploy-5f59fc25</guid>
+      <description><![CDATA[Attackers hijacked cloud‑hosted ConnectWise ScreenConnect panels and pushed the SCKit malware toolkit to at least 288 devices across 48 organizations. The compromise used unauthorized panel access to deploy code on each host, infecting all 288 devices within about 90 minutes. Huntress recommends auditing ScreenConnect credentials, enforcing MFA, and applying vendor security updates to block further exploitation.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:57:06 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/connectwise-screenconnect-hijacked/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>RHSA-2026:99148: Important: kernel security, bug fix, and enhancement update</title>
@@ -80,6 +134,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>MongoDB Use‑After‑Free CVE‑2026‑118383 Exploited</title>
+      <link>https://secubuzz.com/news/mongodb-use-after-free-cve-2026-118383-exploited-1445ee31</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/mongodb-use-after-free-cve-2026-118383-exploited-1445ee31</guid>
+      <description><![CDATA[MongoDB is affected by CVE‑2026‑118383, a use‑after‑free vulnerability that can lead to arbitrary code execution in enterprise environments. The flaw arises when the database fails to release memory after a malicious request, allowing attackers to trigger a crash or execute injected code. MongoDB has released a patch; administrators should apply the update immediately and monitor logs for anomalous activity.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:24:43 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/cve-2026-118383-use-after-free-vulnerability-in-mongodb">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch</title>
       <link>https://secubuzz.com/news/apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384</link>
       <guid isPermaLink="true">https://secubuzz.com/news/apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384</guid>
@@ -87,6 +150,15 @@
       <pubDate>Thu, 12 Nov 2026 03:24:23 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt">CyberNews AI</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Falcon C2 Targets Government Portals with JavaScript</title>
+      <link>https://secubuzz.com/news/falcon-c2-targets-government-portals-with-javascri-c9c00956</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/falcon-c2-targets-government-portals-with-javascri-c9c00956</guid>
+      <description><![CDATA[Falcon C2 malware is targeting government portals by injecting malicious JavaScript into web pages. The injected scripts exploit client‑side vulnerabilities, capture user input, and establish command‑and‑control channels to exfiltrate data. Security teams should block known malicious domains, enforce script‑blocking policies, and immediately apply vendor security patches to mitigate the threat.]]></description>
+      <pubDate>Thu, 12 Nov 2026 03:24:12 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/the-xg-files-falcon-c2-flying-under-the-browser-radar">CyberNews AI</source>
+      <category>General</category>
     </item>
     <item>
       <title>Git Six Flaw RCE Patches Released</title>
@@ -177,6 +249,15 @@
       <pubDate>Thu, 12 Nov 2026 01:00:00 GMT</pubDate>
       <source url="https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry">Dark Reading</source>
       <category>Nation State</category>
+    </item>
+    <item>
+      <title>GitLab Patch Release: 19.5.5, 19.4.7</title>
+      <link>https://secubuzz.com/news/gitlab-patch-release-19-5-5-19-4-7-be8ffb8f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gitlab-patch-release-19-5-5-19-4-7-be8ffb8f</guid>
+      <description><![CDATA[GitLab Community Edition and Enterprise Edition 19.5.5 Backport of &lsquo;Retry GCS default credentials after a latched metadata timeout&rsquo; Backport of &lsquo;Skip code navigation lookups when a project has no LSIF artifacts&rsquo; into 19.5 [19.5] Backport of &lsquo;Update oj to 3.17.8 to fix native memory-safety bugs&rsquo; Backport of &lsquo;Stop relation batch export spec leaking a foo directory&rsquo; Backport of &lsquo;Map sast_iac scanner to sast in approval policy rules&rsquo; Backport of &lsquo;Bump premailer to 1.27.0 to stop css_parser deprecation warnings&rsquo; (19.5) [19.5] Reapply the Orbit feature backports 19.4.7 Backport of &lsquo;Skip code navigation lookups when a project has no LSIF artifacts&rsquo; into 19.4 Backport of &lsquo;Retry GCS default credentials after a latched metadata timeout&rsquo; [19.4] Backport of &lsquo;Update oj to 3.17.8 to fix native memory-safety bugs&rsquo; Backport of &lsquo;Map sast_iac scanner to sast in approval policy rules&rsquo; Backport of &lsquo;Stop relation batch export spec leaking a foo directory&rsquo; Backport of &lsquo;Bump premailer to 1.27.0 to stop css_parser deprecation warnings&rsquo; (19.4) [19.4] Backport of &lsquo;Skip per-ref Redis cache in protected branch push check&rsquo; [19.4] Reapply the Orbit feature backports Important notes on upgrading These patches include database migrations that may impact your upgrade process.]]></description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <source url="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/">GitLab Security Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Releases .NET 9.0 Update with Security Fixes</title>
@@ -375,87 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 20:02:26 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-desktop_01744469280.html">Google Chrome Releases</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>2026 Agentic Security Operations Report Highlights AI Benefits</title>
-      <link>https://secubuzz.com/news/2026-agentic-security-operations-report-highlights-b31c85ac</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/2026-agentic-security-operations-report-highlights-b31c85ac</guid>
-      <description><![CDATA[The 2026 Agentic Security Operations Report shows how enterprises use AI‑powered security operations to detect threats faster. The study reports a reduction in alert noise and a 35 % increase in analyst efficiency through AI‑driven prioritization. Organizations should integrate AI platforms with existing SOAR tools, train analysts on AI outputs, and monitor for false positives.]]></description>
-      <pubDate>Wed, 11 Nov 2026 19:50:23 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/report-de/2026-agentic-security-operations-report-de/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>The global socket: how threat actors are weaponizing GSocket for stealthy C2</title>
-      <link>https://secubuzz.com/news/the-global-socket-how-threat-actors-are-weaponizin-7e34f62c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/the-global-socket-how-threat-actors-are-weaponizin-7e34f62c</guid>
-      <description><![CDATA[Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity.]]></description>
-      <pubDate>Wed, 11 Nov 2026 19:49:57 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/">Microsoft Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Apache Patches Critical HTTP/2 Remote Code Execution Vulnerability (CVE-2026-119618)</title>
-      <link>https://secubuzz.com/news/apache-patches-critical-http-2-remote-code-executi-37bdb08b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-patches-critical-http-2-remote-code-executi-37bdb08b</guid>
-      <description><![CDATA[Apache HTTP Server maintainers released patches addressing a critical remote code execution vulnerability impacting global cloud environments. Tracked as CVE-2026-119618, the flaw in the HTTP/2 module enables unauthenticated remote attackers to execute arbitrary code using specially crafted HTTP requests. Organizations must immediately upgrade to Apache version 2.4.71 or apply the latest security updates to mitigate server compromise risks.]]></description>
-      <pubDate>Wed, 11 Nov 2026 19:49:10 GMT</pubDate>
-      <source url="https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability">Wiz Research</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99089: Moderate: gcc security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99089-moderate-gcc-security-update-f85d34b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99089-moderate-gcc-security-update-f85d34b2</guid>
-      <description><![CDATA[An update for gcc is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 19:10:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99089">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99094: Moderate: qt6-qtbase security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99094-moderate-qt6-qtbase-security-updat-f4273b76</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99094-moderate-qt6-qtbase-security-updat-f4273b76</guid>
-      <description><![CDATA[An update for qt6-qtbase is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 19:01:06 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99094">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99090: Important: gstreamer1 security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99090-important-gstreamer1-security-upda-02b99d36</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99090-important-gstreamer1-security-upda-02b99d36</guid>
-      <description><![CDATA[An update for gstreamer1 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 19:00:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99090">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99091: Important: guava security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99091-important-guava-security-update-54632ed4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99091-important-guava-security-update-54632ed4</guid>
-      <description><![CDATA[An update for guava is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:55:21 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99091">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99088: Important: containernetworking-plugins security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99088-important-containernetworking-plug-61aef30b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99088-important-containernetworking-plug-61aef30b</guid>
-      <description><![CDATA[An update for containernetworking-plugins is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:44:19 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99088">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Yodl Buffer Over-Read Causes Denial of Service</title>
-      <link>https://secubuzz.com/news/yodl-buffer-over-read-causes-denial-of-service-a3e333a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/yodl-buffer-over-read-causes-denial-of-service-a3e333a7</guid>
-      <description><![CDATA[Ubuntu identified a buffer over-read in Yodl that could be triggered by malformed input. The flaw may allow an attacker to crash Yodl, leading to a denial of service, though no active exploitation has been reported. Users should update to the latest Yodl package via Ubuntu repositories; no additional workarounds are required.]]></description>
-      <pubDate>Wed, 11 Nov 2026 18:33:50 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9063-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

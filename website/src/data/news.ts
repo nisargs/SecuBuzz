@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "github-discusses-accountability-for-ai-patch-flaws-8806da92",
+    "title": "GitHub Discusses Accountability for AI Patch Flaws",
+    "summary": "GitHub’s Agentic Autofix can fix one vulnerability while creating another, raising accountability questions for patches. The tool re‑runs detection engines and project tests after patching, but can miss side effects, requiring validation and metric monitoring. Security teams should adjust CISO policies before deploying the agent, select models, and apply continuous testing to mitigate flaws.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/marcelo-oliveira-github-agentic-autofix/",
+    "publishedAt": "2026-11-12T07:00:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-discusses-accountability-for-ai-patch-flaws",
+      "article-8806da92",
+      "8806da92",
+      "github-discusses-accountability-for-ai-patch-flaws-537beb"
+    ]
+  },
+  {
+    "slug": "attacker-used-4-837-hijacked-github-accounts-to-ru-9de107bb",
+    "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+    "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+    "publishedAt": "2026-11-12T06:42:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attacker-used-4-837-hijacked-github-accounts-to-ru",
+      "article-9de107bb",
+      "9de107bb",
+      "attacker-used-4-837-hijacked-github-accounts-to-ru-13a496",
+      "attacker-used-4-837-hijacked-github-accounts-to-run-a-ci-sec"
+    ]
+  },
+  {
     "slug": "red-hat-freerdp-update-addresses-important-vulnera-e4671609",
     "title": "Red Hat Freerdp Update Addresses Important Vulnerability",
     "summary": "Red Hat released a security update for the freerdp component on its Enterprise Linux 10.0 Extended Update Support platform. The update addresses an important vulnerability, rated by Red Hat as Important, though the specific CVE identifiers are not listed in the advisory. Users should apply the update immediately to mitigate potential exploitation risks.",
@@ -49,6 +86,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-important-update-for-httpd-2-4-4c245b5a",
+    "title": "Red Hat Releases Important Update for httpd:2.4",
+    "summary": "Red Hat issued an important security update for the httpd:2.4 module on RHEL 8.4 AMCS and EUS LLA platforms. The update addresses multiple vulnerabilities with CVSS scores indicating significant risk, though specific CVE identifiers are referenced in the advisory. Security teams should apply the patch immediately to mitigate potential exploitation and maintain compliance with Red Hat’s security guidance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99513",
+    "publishedAt": "2026-11-12T06:09:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-important-update-for-httpd-2-4",
+      "article-4c245b5a",
+      "4c245b5a",
+      "red-hat-releases-important-update-for-httpd-2-4-37d671"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-important-update-for-aspell-512bf67b",
+    "title": "Red Hat Issues Important Update for aspell",
+    "summary": "Red Hat released an important security update for the aspell package on RHEL 9.6 Extended Update Support. The advisory covers multiple vulnerabilities with CVSS scores indicating significant risk, with CVE references provided in the documentation. Administrators should apply the patch promptly to prevent exploitation and align with Red Hat’s security maintenance schedule.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99511",
+    "publishedAt": "2026-11-12T05:49:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-important-update-for-aspell",
+      "article-512bf67b",
+      "512bf67b",
+      "red-hat-issues-important-update-for-aspell-37d671"
+    ]
+  },
+  {
     "slug": "critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e",
     "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
     "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.",
@@ -67,6 +140,44 @@ export const news: NewsBrief[] = [
       "aa1e061e",
       "critical-apache-http-2-flaw-could-let-unauthentica-267175",
       "critical-apache-http-2-flaw-could-let-unauthenticated-attack"
+    ]
+  },
+  {
+    "slug": "screenconnect-targeted-288-endpoints-via-rogue-cli-9e5eb3bd",
+    "title": "ScreenConnect Targeted 288 Endpoints via Rogue Clients",
+    "summary": "ConnectWise reported unauthorized access incidents affecting at least 288 endpoints across 48 organizations using ScreenConnect with rogue client extensions. The company disabled five third‑party extensions in partner environments, noting no evidence of infrastructure compromise or software vulnerability in ScreenConnect itself. Security teams should monitor for rogue client activity, enforce extension whitelisting, and review access controls to mitigate similar threats.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+    "publishedAt": "2026-11-12T04:39:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "screenconnect-targeted-288-endpoints-via-rogue-cli",
+      "article-9e5eb3bd",
+      "9e5eb3bd",
+      "screenconnect-targeted-288-endpoints-via-rogue-cli-5b399d",
+      "screenconnect-targeted-288-endpoints-via-rogue-clients"
+    ]
+  },
+  {
+    "slug": "connectwise-screenconnect-compromised-sckit-deploy-5f59fc25",
+    "title": "ConnectWise ScreenConnect Compromised, SCKit Deployed",
+    "summary": "Attackers hijacked cloud‑hosted ConnectWise ScreenConnect panels and pushed the SCKit malware toolkit to at least 288 devices across 48 organizations. The compromise used unauthorized panel access to deploy code on each host, infecting all 288 devices within about 90 minutes. Huntress recommends auditing ScreenConnect credentials, enforcing MFA, and applying vendor security updates to block further exploitation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/connectwise-screenconnect-hijacked/",
+    "publishedAt": "2026-11-12T03:57:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "connectwise-screenconnect-compromised-sckit-deploy",
+      "article-5f59fc25",
+      "5f59fc25",
+      "connectwise-screenconnect-compromised-sckit-deploy-3c4796",
+      "connectwise-screenconnect-compromised-sckit-deployed"
     ]
   },
   {
@@ -164,6 +275,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "mongodb-use-after-free-cve-2026-118383-exploited-1445ee31",
+    "title": "MongoDB Use‑After‑Free CVE‑2026‑118383 Exploited",
+    "summary": "MongoDB is affected by CVE‑2026‑118383, a use‑after‑free vulnerability that can lead to arbitrary code execution in enterprise environments. The flaw arises when the database fails to release memory after a malicious request, allowing attackers to trigger a crash or execute injected code. MongoDB has released a patch; administrators should apply the update immediately and monitor logs for anomalous activity.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-118383-use-after-free-vulnerability-in-mongodb",
+    "publishedAt": "2026-11-12T03:24:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mongodb-use-after-free-cve-2026-118383-exploited",
+      "article-1445ee31",
+      "1445ee31",
+      "mongodb-use-after-free-cve-2026-118383-exploited-13fac4"
+    ]
+  },
+  {
     "slug": "apache-rce-flaw-cve-2026-119618-requires-immediate-f7016384",
     "title": "Apache RCE Flaw CVE-2026-119618 Requires Immediate Patch",
     "summary": "A remote code execution flaw identified as CVE-2026-119618 targets Apache servers, allowing attackers to execute arbitrary code in enterprise environments. The vulnerability stems from improper input validation in the request handling module, and public proof‑of‑concept exploits demonstrate its feasibility. Patch is available immediately; apply the latest Apache release or vendor‑issued hotfix and enable recommended detection rules.",
@@ -182,6 +311,25 @@ export const news: NewsBrief[] = [
       "f7016384",
       "apache-rce-flaw-cve-2026-119618-requires-immediate-2b18a1",
       "apache-rce-flaw-cve-2026-119618-requires-immediate-patch"
+    ]
+  },
+  {
+    "slug": "falcon-c2-targets-government-portals-with-javascri-c9c00956",
+    "title": "Falcon C2 Targets Government Portals with JavaScript",
+    "summary": "Falcon C2 malware is targeting government portals by injecting malicious JavaScript into web pages. The injected scripts exploit client‑side vulnerabilities, capture user input, and establish command‑and‑control channels to exfiltrate data. Security teams should block known malicious domains, enforce script‑blocking policies, and immediately apply vendor security patches to mitigate the threat.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/the-xg-files-falcon-c2-flying-under-the-browser-radar",
+    "publishedAt": "2026-11-12T03:24:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "falcon-c2-targets-government-portals-with-javascri",
+      "article-c9c00956",
+      "c9c00956",
+      "falcon-c2-targets-government-portals-with-javascri-27457a",
+      "falcon-c2-targets-government-portals-with-javascript"
     ]
   },
   {
@@ -369,6 +517,24 @@ export const news: NewsBrief[] = [
       "9c2c0544",
       "chinese-ai-project-gathers-taiwan-chip-industry-da-223b95",
       "chinese-ai-project-gathers-taiwan-chip-industry-data"
+    ]
+  },
+  {
+    "slug": "gitlab-patch-release-19-5-5-19-4-7-be8ffb8f",
+    "title": "GitLab Patch Release: 19.5.5, 19.4.7",
+    "summary": "GitLab Community Edition and Enterprise Edition 19.5.5 Backport of &lsquo;Retry GCS default credentials after a latched metadata timeout&rsquo; Backport of &lsquo;Skip code navigation lookups when a project has no LSIF artifacts&rsquo; into 19.5 [19.5] Backport of &lsquo;Update oj to 3.17.8 to fix native memory-safety bugs&rsquo; Backport of &lsquo;Stop relation batch export spec leaking a foo directory&rsquo; Backport of &lsquo;Map sast_iac scanner to sast in approval policy rules&rsquo; Backport of &lsquo;Bump premailer to 1.27.0 to stop css_parser deprecation warnings&rsquo; (19.5) [19.5] Reapply the Orbit feature backports 19.4.7 Backport of &lsquo;Skip code navigation lookups when a project has no LSIF artifacts&rsquo; into 19.4 Backport of &lsquo;Retry GCS default credentials after a latched metadata timeout&rsquo; [19.4] Backport of &lsquo;Update oj to 3.17.8 to fix native memory-safety bugs&rsquo; Backport of &lsquo;Map sast_iac scanner to sast in approval policy rules&rsquo; Backport of &lsquo;Stop relation batch export spec leaking a foo directory&rsquo; Backport of &lsquo;Bump premailer to 1.27.0 to stop css_parser deprecation warnings&rsquo; (19.4) [19.4] Backport of &lsquo;Skip per-ref Redis cache in protected branch push check&rsquo; [19.4] Reapply the Orbit feature backports Important notes on upgrading These patches include database migrations that may impact your upgrade process.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "GitLab Security Releases",
+    "sourceUrl": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/",
+    "publishedAt": "2026-11-12T00:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gitlab-patch-release-19-5-5-19-4-7",
+      "article-be8ffb8f",
+      "be8ffb8f",
+      "gitlab-patch-release-19-5-5-19-4-7-1c11ae"
     ]
   },
   {
@@ -1030,6 +1196,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rkhunter-vulnerability-enables-remote-code-executi-7fc0427c",
+    "title": "rkhunter Vulnerability Enables Remote Code Execution",
+    "summary": "The rkhunter utility was found to download mirror updates over an insecure channel, exposing it to potential remote code execution. An attacker could exploit this flaw to inject malicious binaries during the update process, potentially compromising the host system. Ubuntu recommends applying the latest security update and configuring rkhunter to use secure update sources to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9057-1",
+    "publishedAt": "2026-11-11T18:32:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rkhunter-vulnerability-enables-remote-code-executi",
+      "article-7fc0427c",
+      "7fc0427c",
+      "rkhunter-vulnerability-enables-remote-code-executi-7e875b",
+      "rkhunter-vulnerability-enables-remote-code-execution"
+    ]
+  },
+  {
     "slug": "usn-9056-1-prosody-community-modules-vulnerability-9f9f99e0",
     "title": "USN-9056-1: Prosody Community Modules vulnerability",
     "summary": "It was discovered that the LDAP authentication modules in Prosody Community Modules did not fully verify XMPP addresses when checking for administrator privileges. A remote attacker could possibly use this issue to gain administrator privileges.",
@@ -1082,6 +1267,25 @@ export const news: NewsBrief[] = [
       "article-ae357dd6",
       "ae357dd6",
       "usn-9054-1-babel-vulnerability-7e8766"
+    ]
+  },
+  {
+    "slug": "networkmanager-ssh-vulnerability-allows-local-priv-c385bd62",
+    "title": "NetworkManager-ssh Vulnerability Allows Local Privilege Escalation",
+    "summary": "A flaw in NetworkManager-ssh’s handling of VPN options allows local attackers to gain elevated privileges on Ubuntu. The issue stems from insufficient validation of extra options, enabling privilege escalation without authentication; no CVE is assigned. Ubuntu released an update correcting the validation logic; administrators should install the latest NetworkManager package.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9053-1",
+    "publishedAt": "2026-11-11T18:32:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "networkmanager-ssh-vulnerability-allows-local-priv",
+      "article-c385bd62",
+      "c385bd62",
+      "networkmanager-ssh-vulnerability-allows-local-priv-7e876a",
+      "networkmanager-ssh-vulnerability-allows-local-privilege-esca"
     ]
   },
   {
@@ -1192,6 +1396,46 @@ export const news: NewsBrief[] = [
       "article-10dcb7dc",
       "10dcb7dc",
       "red-hat-releases-kernel-update-for-rhel-8-37d683"
+    ]
+  },
+  {
+    "slug": "pan-os-buffer-overflow-vulnerability-cve-2026-0329-af331d51",
+    "title": "PAN-OS Buffer Overflow Vulnerability CVE-2026-0329",
+    "summary": "A buffer overflow in PAN-OS’s packet processing code, identified as CVE-2026-0329, could allow attackers to execute arbitrary code. The flaw triggers when the system processes malformed protocol data, with a medium CVSS score; no public exploit is known. Palo Alto Networks has released a patch that fixes the overflow; administrators should apply the update immediately to prevent potential exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0329",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [
+      "CVE-2026-0329"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "pan-os-buffer-overflow-vulnerability-cve-2026-0329",
+      "article-af331d51",
+      "af331d51",
+      "pan-os-buffer-overflow-vulnerability-cve-2026-0329-7ae305"
+    ]
+  },
+  {
+    "slug": "pan-os-buffer-overflow-vulnerability-cve-2026-0326-64d387d5",
+    "title": "PAN-OS Buffer Overflow Vulnerability CVE-2026-0326",
+    "summary": "CVE-2026-0326 is a buffer overflow in PAN-OS’s protocol and service processing that could enable code execution. The vulnerability arises from improper bounds checking of service data, with a low CVSS score and no public exploit reported. Palo Alto Networks has issued a patch that corrects the overflow; users should update PAN-OS to the latest version.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Palo Alto Networks PSIRT",
+    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0326",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "cves": [
+      "CVE-2026-0326"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "pan-os-buffer-overflow-vulnerability-cve-2026-0326",
+      "article-64d387d5",
+      "64d387d5",
+      "pan-os-buffer-overflow-vulnerability-cve-2026-0326-7ae305"
     ]
   },
   {
@@ -1424,6 +1668,27 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "asp-net-core-elevation-of-privilege-vulnerability-9e4b9d43",
+    "title": "ASP.NET Core Elevation of Privilege Vulnerability CVE-2026-109481",
+    "summary": "CVE-2026-109481 describes an elevation of privilege flaw in ASP.NET Core that could allow attackers to gain higher access levels. The vulnerability results from improper validation of user-supplied data during authentication, but no public exploit has been released. Microsoft has issued an informational update; administrators should apply the latest ASP.NET Core patch to mitigate the risk.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-109481"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-elevation-of-privilege-vulnerability",
+      "article-9e4b9d43",
+      "9e4b9d43",
+      "asp-net-core-elevation-of-privilege-vulnerability-1ff6ba",
+      "asp-net-core-elevation-of-privilege-vulnerability-cve-2026-1"
     ]
   },
   {
@@ -9250,259 +9515,6 @@ export const news: NewsBrief[] = [
       "9e84fa47",
       "fortimail-improper-auth-lets-unauthenticated-users-3bcda6",
       "fortimail-improper-auth-lets-unauthenticated-users-delete-qu"
-    ]
-  },
-  {
-    "slug": "fortinet-code-injection-vulnerability-in-fortimana-1193a727",
-    "title": "Fortinet Code Injection Vulnerability in FortiManager",
-    "summary": "Fortinet disclosed a code injection flaw in FortiManager, FortiManager Cloud, FortiAnalyzer, and FortiAnalyzer Cloud that lets authenticated administrators run arbitrary code via crafted requests. Rated CVSS 7.2 and identified as CWE-94, the flaw enables remote code execution without privilege escalation and has public PoC exploits.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-230",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-code-injection-vulnerability-in-fortimana",
-      "article-1193a727",
-      "1193a727",
-      "fortinet-code-injection-vulnerability-in-fortimana-3bcda5",
-      "fortinet-code-injection-vulnerability-in-fortimanager"
-    ]
-  },
-  {
-    "slug": "improper-limitation-of-a-pathname-to-a-restricted-422c1124",
-    "title": "Improper limitation of a pathname to a restricted directory",
-    "summary": "CVSSv3 Score: 7.2 An Improper Limitation of a Pathname to a Restricted Directory (CWE-22) vulnerability in FortiManager, FortiAnalyzer, FortiManager Cloud and FortiAnalyzer Cloud may allow an authenticated attacker with admin privileges to execute unauthorized code or commands via crafted requests.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-237",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "improper-limitation-of-a-pathname-to-a-restricted",
-      "article-422c1124",
-      "422c1124",
-      "improper-limitation-of-a-pathname-to-a-restricted-3bcda5",
-      "improper-limitation-of-a-pathname-to-a-restricted-directory"
-    ]
-  },
-  {
-    "slug": "improper-certificate-validation-in-radius-protocol-22ed1f8d",
-    "title": "Improper certificate validation in RADIUS protocol",
-    "summary": "CVSSv3 Score: 7.5 An Improper Certificate Validation vulnerability [CWE-295] in FortiSASE Sovereign, FortiManager, Fortianalyzer, FortiManager Cloud and FortiAnalyzer Cloud RADIUS protocol may allow a MITM attacker to impersonate the radius server via a rogue RADIUS server.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-247",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "improper-certificate-validation-in-radius-protocol",
-      "article-22ed1f8d",
-      "22ed1f8d",
-      "improper-certificate-validation-in-radius-protocol-3bcda5"
-    ]
-  },
-  {
-    "slug": "improper-control-of-generation-of-code-in-gui-0d112c22",
-    "title": "Improper control of generation of code in GUI",
-    "summary": "CVSSv3 Score: 7.2 An Improper Control of Generation of Code ('Code Injection') vulnerability [CWE-94] and a Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability [CWE-120] in FortiManager, FortiAnalyzer, FortiManager Cloud, and FortiAnalyzer Cloud may allow a remote authenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-227",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "improper-control-of-generation-of-code-in-gui",
-      "article-0d112c22",
-      "0d112c22",
-      "improper-control-of-generation-of-code-in-gui-3bcda6"
-    ]
-  },
-  {
-    "slug": "fortimanager-fgfm-elevation-exploit-allows-unauthe-d21806a6",
-    "title": "FortiManager FGFM Elevation Exploit Allows Unauthenticated Code Execution",
-    "summary": "Fortinet FortiManager FGFM contains an elevation of privilege flaw that permits unauthenticated attackers to reach the FGFM port and send crafted packets. The vulnerability, rated CVSSv3 9.0, enables remote code execution or command injection, potentially compromising the entire FortiManager infrastructure. Fortinet released a patch in the latest FortiOS update; administrators should apply it immediately and restrict FGFM port access.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-275",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimanager-fgfm-elevation-exploit-allows-unauthe",
-      "article-d21806a6",
-      "d21806a6",
-      "fortimanager-fgfm-elevation-exploit-allows-unauthe-3bcda5",
-      "fortimanager-fgfm-elevation-exploit-allows-unauthenticated-c"
-    ]
-  },
-  {
-    "slug": "heap-based-buffer-overflow-0480e745",
-    "title": "Heap-based buffer overflow",
-    "summary": "CVSSv3 Score: 7.2 A Heap-based Buffer Overflow vulnerability [CWE-122] in FortiManager, FortiManager Cloud, FortiAnalyzer and FortiAnalyzer Cloud may allow an authenticated administrator to execute unauthorized code or commands or cause a denial of service via specially crafted JSON-RPC requests. The vulnerability is tracked as CVE-2026-0250.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-232",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [
-      "CVE-2026-0250"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "heap-based-buffer-overflow",
-      "article-0480e745",
-      "0480e745",
-      "heap-based-buffer-overflow-3bcda5"
-    ]
-  },
-  {
-    "slug": "fortiauthenticator-resource-exhaustion-vulnerabili-e3d17678",
-    "title": "FortiAuthenticator Resource Exhaustion Vulnerability Exposes DoS Risk",
-    "summary": "Fortinet disclosed a resource allocation flaw in FortiAuthenticator’s FastAPI, letting unauthenticated attackers exhaust system resources and cause a denial of service. The CVSSv3 score of 7.5 indicates high severity, and the flaw can be triggered with crafted requests without authentication. Fortinet recommends applying the latest firmware patch or enabling traffic throttling to mitigate the DoS risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-258",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortiauthenticator-resource-exhaustion-vulnerabili",
-      "article-e3d17678",
-      "e3d17678",
-      "fortiauthenticator-resource-exhaustion-vulnerabili-3bcda5",
-      "fortiauthenticator-resource-exhaustion-vulnerability-exposes"
-    ]
-  },
-  {
-    "slug": "arbitrary-file-write-and-delete-in-json-api-80fa3011",
-    "title": "Arbitrary file write and delete in JSON API",
-    "summary": "CVSSv3 Score: 7.3 An improper limitation of a pathname to a restricted directory ('Path Traversal') vulnerability [CWE-22] in FortiManager and FortiAnalyzer API may allow an authenticated attacker whose profile only has read permission to write and delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-190",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "arbitrary-file-write-and-delete-in-json-api",
-      "article-80fa3011",
-      "80fa3011",
-      "arbitrary-file-write-and-delete-in-json-api-3bcda8"
-    ]
-  },
-  {
-    "slug": "broken-access-control-in-two-factor-authentication-f2fe69ff",
-    "title": "Broken Access Control in Two-Factor-Authentication",
-    "summary": "CVSSv3 Score: 5.9 An Improper Authentication vulnerability [CWE-287] in the FortiOS Remote Radius Type Admin Two-Factor (TFA) Authentication may allow a remote authenticated attacker with at least read-only permission to log in to the FortiOS GUI with an invalid token after entering a valid username and password, in scenarios where the RADIUS server returns an additional \"Access-Challenge\" response following an invalid TFA token.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-195",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "broken-access-control-in-two-factor-authentication",
-      "article-f2fe69ff",
-      "f2fe69ff",
-      "broken-access-control-in-two-factor-authentication-3bcda8"
-    ]
-  },
-  {
-    "slug": "fortimail-authorization-bypass-cve-2026-126159-7dc89dc9",
-    "title": "FortiMail Authorization Bypass CVE-2026-126159",
-    "summary": "FortiMail suffers an authorization bypass via user-controlled key, identified as CVE-2026-126159, enabling unauthenticated attackers to release or delete quarantined messages for any mailbox. The flaw, rated CVSS 7.5, exploits a crafted quarantine release request that bypasses mailbox ownership checks, potentially exposing sensitive email content. Fortinet has released a patch; administrators should update FortiMail immediately and verify quarantine controls are enforced.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-211",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [
-      "CVE-2026-126159"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "fortimail-authorization-bypass-cve-2026-126159",
-      "article-7dc89dc9",
-      "7dc89dc9",
-      "fortimail-authorization-bypass-cve-2026-126159-3bcda6",
-      "fortimail-authorization-bypass-cve-2026-20183-928489a1"
-    ]
-  },
-  {
-    "slug": "fortimanager-gui-authorization-bypass-cve-2026-126-266c7f04",
-    "title": "FortiManager GUI Authorization Bypass CVE-2026-126183",
-    "summary": "FortiManager, FortiManager Cloud, and FortiSase-Sovereign GUIs contain an authorization bypass via user-controlled key, identified as CVE-2026-126183, allowing authenticated attackers to execute commands beyond their intended scope. The flaw, scored CVSS 8.7, exploits crafted HTTP requests that bypass role-based access controls, enabling privilege escalation and potential system compromise. Fortinet released a patch; administrators should upgrade firmware immediately and enforce strict roles.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-228",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [
-      "CVE-2026-126183"
-    ],
-    "additionalSources": [
-      {
-        "source": "Fortinet FortiGuard PSIRT",
-        "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-244"
-      }
-    ],
-    "aliases": [
-      "fortimanager-gui-authorization-bypass-cve-2026-126",
-      "article-266c7f04",
-      "266c7f04",
-      "fortimanager-gui-authorization-bypass-cve-2026-126-3bcda6",
-      "fortimanager-gui-authorization-bypass-cve-2026-126183",
-      "fortimanager-gui-authorization-bypass-cve-2026-201-031a68ae"
-    ]
-  },
-  {
-    "slug": "fortimanager-incorrect-authorization-exploit-45adf444",
-    "title": "FortiManager Incorrect Authorization Exploit",
-    "summary": "FortiManager, FortiManager Cloud, FortiAnalyzer, FortiAnalyzer Cloud, and FortiAnalyzer‑BigData have an incorrect authorization flaw allowing authenticated administrators to elevate privileges or impersonate services via crafted GUI requests. The flaw, scored CVSS 8.7, exploits improper privilege management and authentication spoofing, potentially enabling full system compromise. Fortinet released a patch; administrators should apply it immediately and review role assignments to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-234",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimanager-incorrect-authorization-exploit",
-      "article-45adf444",
-      "45adf444",
-      "fortimanager-incorrect-authorization-exploit-3bcda5"
-    ]
-  },
-  {
-    "slug": "fortimail-authorization-bypass-enables-unauthentic-74d576d2",
-    "title": "FortiMail Authorization Bypass Enables Unauthenticated Account Takeover",
-    "summary": "FortiMail’s user‑controlled key bypass lets an unauthenticated remote attacker hijack any IBE recipient account through crafted HTTP requests. Rated CVSSv3 9.1, the flaw abuses improper key validation, granting full account takeover without credentials and exposing mailbox data. Fortinet issued a patch for FortiMail 7.2.1 and earlier; administrators must apply it immediately to close the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-208",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimail-authorization-bypass-enables-unauthentic",
-      "article-74d576d2",
-      "74d576d2",
-      "fortimail-authorization-bypass-enables-unauthentic-3bcda6",
-      "fortimail-authorization-bypass-enables-unauthenticated-accou"
     ]
   }
 ];

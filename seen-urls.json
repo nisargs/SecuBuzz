@@ -5203,5 +5203,19 @@
   "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
   "https://access.redhat.com/errata/RHSA-2026:99516",
   "https://access.redhat.com/errata/RHSA-2026:99514",
-  "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
+  "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+  "https://www.helpnetsecurity.com/2026/11/12/marcelo-oliveira-github-agentic-autofix/",
+  "https://access.redhat.com/errata/RHSA-2026:99513",
+  "https://access.redhat.com/errata/RHSA-2026:99511",
+  "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+  "https://cybersecuritynews.com/connectwise-screenconnect-hijacked/",
+  "https://cybernewsai.com/blog/cve-2026-118383-use-after-free-vulnerability-in-mongodb",
+  "https://cybernewsai.com/blog/the-xg-files-falcon-c2-flying-under-the-browser-radar",
+  "https://ubuntu.com/security/notices/USN-9057-1",
+  "https://ubuntu.com/security/notices/USN-9053-1",
+  "https://security.paloaltonetworks.com/CVE-2026-0329",
+  "https://security.paloaltonetworks.com/CVE-2026-0326",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
+  "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+  "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/"
 ]
