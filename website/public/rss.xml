@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 14:44:45 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 15:46:13 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Picus Launches Autonomous AI Penetration Testing Tool</title>
+      <link>https://secubuzz.com/news/picus-launches-autonomous-ai-penetration-testing-t-0099f552</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/picus-launches-autonomous-ai-penetration-testing-t-0099f552</guid>
+      <description><![CDATA[Picus Security introduced Picus Autonomous Penetration Testing, an AI-driven tool that chains real exploits toward an organization’s critical assets. The system operates under strict governance, preventing agents from overriding controls while delivering realistic breach scenarios. Teams can validate defenses, prioritize remediation, and train staff, with no public vulnerability or exploit disclosed.]]></description>
+      <pubDate>Thu, 12 Nov 2026 15:05:02 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/12/picus-autonomous-penetration-testing/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>AI Agents Breach Semiconductor, Defense, Civil Targets</title>
+      <link>https://secubuzz.com/news/ai-agents-breach-semiconductor-defense-civil-targe-918fee5a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-breach-semiconductor-defense-civil-targe-918fee5a</guid>
+      <description><![CDATA[Attackers leveraged the open‑source Cairn AI agent framework to autonomously breach semiconductor, defense, and civil society organizations. The framework chains exploits without human intervention, enabling rapid compromise of critical infrastructure and sensitive data, with evidence of active exploitation. Security teams should monitor for anomalous AI activity, enforce strict access controls, and apply timely patches to mitigate automated attack vectors.]]></description>
+      <pubDate>Thu, 12 Nov 2026 15:00:31 GMT</pubDate>
+      <source url="https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/">Unit 42</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Attackers breached 10 organizations with an open-source AI pentest framework</title>
+      <link>https://secubuzz.com/news/attackers-breached-10-organizations-with-an-open-s-0ba41d82</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/attackers-breached-10-organizations-with-an-open-s-0ba41d82</guid>
+      <description><![CDATA[Chinese-speaking attackers used Cairn, an open-source AI penetration testing framework, to run 25 operations against at least 19 organizations in August and September 2026. Palo Alto Networks’ Unit 42 found that the attackers gained unauthorized access or pulled data at 10 of them, often after typing little more than a domain name and a one-line goal.]]></description>
+      <pubDate>Thu, 12 Nov 2026 15:00:29 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/12/cairn-autonomous-ai-cyberattacks/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Endpoint Management Platforms Pose Major Security Threat</title>
+      <link>https://secubuzz.com/news/endpoint-management-platforms-pose-major-security-ea047999</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/endpoint-management-platforms-pose-major-security-ea047999</guid>
+      <description><![CDATA[Endpoint management platforms can become powerful attack tools when compromised, enabling hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 recommends customer‑controlled cryptographic authorization to prevent attackers from abusing sensitive endpoint operations and mitigate this risk. Security teams should enforce strict access controls, monitor for unauthorized changes, and apply timely updates to protect endpoint management infrastructure.]]></description>
+      <pubDate>Thu, 12 Nov 2026 15:00:10 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/">BleepingComputer</source>
+      <category>General</category>
+    </item>
     <item>
       <title>RHSA-2026:99593: Moderate: rpm security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-99593-moderate-rpm-security-update-4803ff68</link>
@@ -15,6 +51,15 @@
       <pubDate>Thu, 12 Nov 2026 14:37:45 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99593">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Apify Rotates Tokens After Internal Breach</title>
+      <link>https://secubuzz.com/news/apify-rotates-tokens-after-internal-breach-6f629cb0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apify-rotates-tokens-after-internal-breach-6f629cb0</guid>
+      <description><![CDATA[Apify detected unauthorized access to internal systems and responded by rotating critical API tokens and revoking third‑party OAuth connections. The incident prompted a 2FA reset for affected users to mitigate potential credential abuse and secure remaining access points. Security teams should review token rotation policies, enforce multi‑factor authentication, and monitor for anomalous credential usage.]]></description>
+      <pubDate>Thu, 12 Nov 2026 14:36:47 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/">BleepingComputer</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Red Hat Issues gd Update for RHEL7</title>
@@ -26,12 +71,30 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Red Hat Updates crun for RHEL 9.8 EUS</title>
+      <link>https://secubuzz.com/news/red-hat-updates-crun-for-rhel-9-8-eus-796cd2ac</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-crun-for-rhel-9-8-eus-796cd2ac</guid>
+      <description><![CDATA[Red Hat released a security update for the crun container runtime on RHEL 9.8 EUS, addressing a vulnerability that could let attackers compromise container execution. The advisory notes an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are disclosed.]]></description>
+      <pubDate>Thu, 12 Nov 2026 14:25:45 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99117">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>CISA Confirms Active Exploitation of Outlook User Interaction 0-Day Vulnerability</title>
       <link>https://secubuzz.com/news/cisa-confirms-active-exploitation-of-outlook-user-fd83b243</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cisa-confirms-active-exploitation-of-outlook-user-fd83b243</guid>
       <description><![CDATA[The U.S. Cybersecurity and Infrastructure Security Agency has confirmed active exploitation of a Microsoft Outlook zero-day vulnerability CVE-2026-124194 that can expose user authentication data. According to Microsoft’s security advisory, an attacker can send a specially crafted message file and persuade a victim to open it in Outlook.]]></description>
       <pubDate>Thu, 12 Nov 2026 14:11:54 GMT</pubDate>
       <source url="https://cybersecuritynews.com/active-exploitation-of-outlook-0-day-vulnerability/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Red Hat Quay Vulnerability Enables Token Hijacking</title>
+      <link>https://secubuzz.com/news/red-hat-quay-vulnerability-enables-token-hijacking-58ffebef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-quay-vulnerability-enables-token-hijacking-58ffebef</guid>
+      <description><![CDATA[Red Hat Quay contains a critical flaw that allows unauthenticated attackers reaching a registry’s key server to hijack token signing. The vulnerability, identified as CVE-2026-123710, carries a CVSS score of 9.8, indicating a high‑impact remote code execution risk. Red Hat released a patch on November 11 2026; administrators should update Quay immediately and verify token signing integrity.]]></description>
+      <pubDate>Thu, 12 Nov 2026 13:57:37 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/red-hat-quay-vulnerability/">Cyber Security News</source>
       <category>CVE</category>
     </item>
     <item>
@@ -95,6 +158,15 @@
       <description><![CDATA[Red Hat issued a security update for the krb5 library on Red Hat Enterprise Linux 10, addressing a bug that could affect Kerberos authentication. The update carries an Important security impact rating, though no public exploit or CVE identifier is disclosed in the advisory. Customers should apply the RHSA‑2026:99624 package immediately to mitigate potential authentication weaknesses.]]></description>
       <pubDate>Thu, 12 Nov 2026 12:56:12 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99624">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Updates cockpit for RHEL 9</title>
+      <link>https://secubuzz.com/news/red-hat-updates-cockpit-for-rhel-9-dfd40861</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-cockpit-for-rhel-9-dfd40861</guid>
+      <description><![CDATA[Red Hat released a security update for the cockpit web console on RHEL 9, addressing a vulnerability that could let attackers gain unauthorized administrative access. The advisory assigns an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are provided.]]></description>
+      <pubDate>Thu, 12 Nov 2026 12:53:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99602">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -384,78 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 07:00:38 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/12/marcelo-oliveira-github-agentic-autofix/">Help Net Security</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Abuse Windows Group Policy to Deploy Citrus Ransomware and Disable Microsoft Defender</title>
-      <link>https://secubuzz.com/news/hackers-abuse-windows-group-policy-to-deploy-citru-d80c4fa9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-abuse-windows-group-policy-to-deploy-citru-d80c4fa9</guid>
-      <description><![CDATA[A new ransomware group called Citrus is using Windows Group Policy to push its malware across entire company networks and switch off Microsoft Defender first. Group Policy is a trusted Windows tool that admins use to manage many computers at once.]]></description>
-      <pubDate>Thu, 12 Nov 2026 06:46:42 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-abuse-windows-group-policy/">Cyber Security News</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories</title>
-      <link>https://secubuzz.com/news/attacker-used-4-837-hijacked-github-accounts-to-ru-9de107bb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attacker-used-4-837-hijacked-github-accounts-to-ru-9de107bb</guid>
-      <description><![CDATA[Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach.]]></description>
-      <pubDate>Thu, 12 Nov 2026 06:42:47 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Freerdp Update Addresses Important Vulnerability</title>
-      <link>https://secubuzz.com/news/red-hat-freerdp-update-addresses-important-vulnera-e4671609</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-freerdp-update-addresses-important-vulnera-e4671609</guid>
-      <description><![CDATA[Red Hat released a security update for the freerdp component on its Enterprise Linux 10.0 Extended Update Support platform. The update addresses an important vulnerability, rated by Red Hat as Important, though the specific CVE identifiers are not listed in the advisory. Users should apply the update immediately to mitigate potential exploitation risks.]]></description>
-      <pubDate>Thu, 12 Nov 2026 06:33:00 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99516">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat httpd:2.4 Update Covers Important Vulnerability</title>
-      <link>https://secubuzz.com/news/red-hat-httpd-2-4-update-covers-important-vulnerab-6bc501bd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-httpd-2-4-update-covers-important-vulnerab-6bc501bd</guid>
-      <description><![CDATA[Red Hat released a security update for the httpd:2.4 module on Enterprise Linux 8.6 Advanced Mission Critical and Extended Update Support platforms. The advisory marks the update as Important, implying a CVSS score in the 7.0-8.9 range, though specific CVE IDs are not listed. Users should apply the update immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Thu, 12 Nov 2026 06:13:43 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99514">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Important Update for httpd:2.4</title>
-      <link>https://secubuzz.com/news/red-hat-releases-important-update-for-httpd-2-4-4c245b5a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-important-update-for-httpd-2-4-4c245b5a</guid>
-      <description><![CDATA[Red Hat issued an important security update for the httpd:2.4 module on RHEL 8.4 AMCS and EUS LLA platforms. The update addresses multiple vulnerabilities with CVSS scores indicating significant risk, though specific CVE identifiers are referenced in the advisory. Security teams should apply the patch immediately to mitigate potential exploitation and maintain compliance with Red Hat’s security guidance.]]></description>
-      <pubDate>Thu, 12 Nov 2026 06:09:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99513">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues Important Update for aspell</title>
-      <link>https://secubuzz.com/news/red-hat-issues-important-update-for-aspell-512bf67b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-important-update-for-aspell-512bf67b</guid>
-      <description><![CDATA[Red Hat released an important security update for the aspell package on RHEL 9.6 Extended Update Support. The advisory covers multiple vulnerabilities with CVSS scores indicating significant risk, with CVE references provided in the documentation. Administrators should apply the patch promptly to prevent exploitation and align with Red Hat’s security maintenance schedule.]]></description>
-      <pubDate>Thu, 12 Nov 2026 05:49:15 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99511">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>CISOs and OT Engineers Disagree on Cyber Resilience</title>
-      <link>https://secubuzz.com/news/cisos-and-ot-engineers-disagree-on-cyber-resilienc-74ca386a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisos-and-ot-engineers-disagree-on-cyber-resilienc-74ca386a</guid>
-      <description><![CDATA[According to a SANS survey, CISOs and engineers disagree on operational technology resilience during IT compromises. While all surveyed security chiefs expect facilities to maintain output using manual controls, only 15% of engineering practitioners express confidence in process survival. Industrial organizations should align leadership expectations with frontline engineering capabilities to improve manual operational procedures and threat response plans.]]></description>
-      <pubDate>Thu, 12 Nov 2026 05:30:13 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/12/sans-industrial-cybersecurity-survey/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely</title>
-      <link>https://secubuzz.com/news/critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-apache-http-2-flaw-could-let-unauthentica-aa1e061e</guid>
-      <description><![CDATA[A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux.]]></description>
-      <pubDate>Thu, 12 Nov 2026 05:12:26 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

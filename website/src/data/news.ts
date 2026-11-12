@@ -11,6 +11,82 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "picus-launches-autonomous-ai-penetration-testing-t-0099f552",
+    "title": "Picus Launches Autonomous AI Penetration Testing Tool",
+    "summary": "Picus Security introduced Picus Autonomous Penetration Testing, an AI-driven tool that chains real exploits toward an organization’s critical assets. The system operates under strict governance, preventing agents from overriding controls while delivering realistic breach scenarios. Teams can validate defenses, prioritize remediation, and train staff, with no public vulnerability or exploit disclosed.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/picus-autonomous-penetration-testing/",
+    "publishedAt": "2026-11-12T15:05:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "picus-launches-autonomous-ai-penetration-testing-t",
+      "article-0099f552",
+      "0099f552",
+      "picus-launches-autonomous-ai-penetration-testing-t-56da8b",
+      "picus-launches-autonomous-ai-penetration-testing-tool"
+    ]
+  },
+  {
+    "slug": "ai-agents-breach-semiconductor-defense-civil-targe-918fee5a",
+    "title": "AI Agents Breach Semiconductor, Defense, Civil Targets",
+    "summary": "Attackers leveraged the open‑source Cairn AI agent framework to autonomously breach semiconductor, defense, and civil society organizations. The framework chains exploits without human intervention, enabling rapid compromise of critical infrastructure and sensitive data, with evidence of active exploitation. Security teams should monitor for anomalous AI activity, enforce strict access controls, and apply timely patches to mitigate automated attack vectors.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Unit 42",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+    "publishedAt": "2026-11-12T15:00:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agents-breach-semiconductor-defense-civil-targe",
+      "article-918fee5a",
+      "918fee5a",
+      "ai-agents-breach-semiconductor-defense-civil-targe-3e557a",
+      "ai-agents-breach-semiconductor-defense-civil-targets"
+    ]
+  },
+  {
+    "slug": "attackers-breached-10-organizations-with-an-open-s-0ba41d82",
+    "title": "Attackers breached 10 organizations with an open-source AI pentest framework",
+    "summary": "Chinese-speaking attackers used Cairn, an open-source AI penetration testing framework, to run 25 operations against at least 19 organizations in August and September 2026. Palo Alto Networks’ Unit 42 found that the attackers gained unauthorized access or pulled data at 10 of them, often after typing little more than a domain name and a one-line goal.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/cairn-autonomous-ai-cyberattacks/",
+    "publishedAt": "2026-11-12T15:00:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "attackers-breached-10-organizations-with-an-open-s",
+      "article-0ba41d82",
+      "0ba41d82",
+      "attackers-breached-10-organizations-with-an-open-s-7c7e41",
+      "attackers-breached-10-organizations-with-an-open-source-ai-p"
+    ]
+  },
+  {
+    "slug": "endpoint-management-platforms-pose-major-security-ea047999",
+    "title": "Endpoint Management Platforms Pose Major Security Threat",
+    "summary": "Endpoint management platforms can become powerful attack tools when compromised, enabling hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 recommends customer‑controlled cryptographic authorization to prevent attackers from abusing sensitive endpoint operations and mitigate this risk. Security teams should enforce strict access controls, monitor for unauthorized changes, and apply timely updates to protect endpoint management infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
+    "publishedAt": "2026-11-12T15:00:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "endpoint-management-platforms-pose-major-security",
+      "article-ea047999",
+      "ea047999",
+      "endpoint-management-platforms-pose-major-security-487a4c",
+      "endpoint-management-platforms-pose-major-security-threat"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99593-moderate-rpm-security-update-4803ff68",
     "title": "RHSA-2026:99593: Moderate: rpm security update",
     "summary": "An update for rpm is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -26,6 +102,24 @@ export const news: NewsBrief[] = [
       "article-4803ff68",
       "4803ff68",
       "rhsa-2026-99593-moderate-rpm-security-update-37d670"
+    ]
+  },
+  {
+    "slug": "apify-rotates-tokens-after-internal-breach-6f629cb0",
+    "title": "Apify Rotates Tokens After Internal Breach",
+    "summary": "Apify detected unauthorized access to internal systems and responded by rotating critical API tokens and revoking third‑party OAuth connections. The incident prompted a 2FA reset for affected users to mitigate potential credential abuse and secure remaining access points. Security teams should review token rotation policies, enforce multi‑factor authentication, and monitor for anomalous credential usage.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
+    "publishedAt": "2026-11-12T14:36:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apify-rotates-tokens-after-internal-breach",
+      "article-6f629cb0",
+      "6f629cb0",
+      "apify-rotates-tokens-after-internal-breach-143e2b"
     ]
   },
   {
@@ -47,6 +141,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-crun-for-rhel-9-8-eus-796cd2ac",
+    "title": "Red Hat Updates crun for RHEL 9.8 EUS",
+    "summary": "Red Hat released a security update for the crun container runtime on RHEL 9.8 EUS, addressing a vulnerability that could let attackers compromise container execution. The advisory notes an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are disclosed.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99117",
+    "publishedAt": "2026-11-12T14:25:45.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-crun-for-rhel-9-8-eus",
+      "article-796cd2ac",
+      "796cd2ac",
+      "red-hat-updates-crun-for-rhel-9-8-eus-37d680"
+    ]
+  },
+  {
     "slug": "cisa-confirms-active-exploitation-of-outlook-user-fd83b243",
     "title": "CISA Confirms Active Exploitation of Outlook User Interaction 0-Day Vulnerability",
     "summary": "The U.S. Cybersecurity and Infrastructure Security Agency has confirmed active exploitation of a Microsoft Outlook zero-day vulnerability CVE-2026-124194 that can expose user authentication data. According to Microsoft’s security advisory, an attacker can send a specially crafted message file and persuade a victim to open it in Outlook.",
@@ -65,6 +177,26 @@ export const news: NewsBrief[] = [
       "fd83b243",
       "cisa-confirms-active-exploitation-of-outlook-user-936874",
       "cisa-confirms-active-exploitation-of-outlook-user-interactio"
+    ]
+  },
+  {
+    "slug": "red-hat-quay-vulnerability-enables-token-hijacking-58ffebef",
+    "title": "Red Hat Quay Vulnerability Enables Token Hijacking",
+    "summary": "Red Hat Quay contains a critical flaw that allows unauthenticated attackers reaching a registry’s key server to hijack token signing. The vulnerability, identified as CVE-2026-123710, carries a CVSS score of 9.8, indicating a high‑impact remote code execution risk. Red Hat released a patch on November 11 2026; administrators should update Quay immediately and verify token signing integrity.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/red-hat-quay-vulnerability/",
+    "publishedAt": "2026-11-12T13:57:37.000Z",
+    "cves": [
+      "CVE-2026-123710"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-quay-vulnerability-enables-token-hijacking",
+      "article-58ffebef",
+      "58ffebef",
+      "red-hat-quay-vulnerability-enables-token-hijacking-15a972"
     ]
   },
   {
@@ -195,6 +327,24 @@ export const news: NewsBrief[] = [
       "article-f0f88349",
       "f0f88349",
       "red-hat-releases-krb5-security-update-for-rhel-10-37d66d"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-cockpit-for-rhel-9-dfd40861",
+    "title": "Red Hat Updates cockpit for RHEL 9",
+    "summary": "Red Hat released a security update for the cockpit web console on RHEL 9, addressing a vulnerability that could let attackers gain unauthorized administrative access. The advisory assigns an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are provided.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99602",
+    "publishedAt": "2026-11-12T12:53:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-cockpit-for-rhel-9",
+      "article-dfd40861",
+      "dfd40861",
+      "red-hat-updates-cockpit-for-rhel-9-37d66d"
     ]
   },
   {
@@ -1308,6 +1458,44 @@ export const news: NewsBrief[] = [
       "9f880bf1",
       "baker-tilly-reports-third-party-data-exposure-inci-1f8243",
       "baker-tilly-reports-third-party-data-exposure-incident"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99131-important-webkit2gtk3-security-bug-f8593654",
+    "title": "RHSA-2026:99131: Important: webkit2gtk3 security, bug fix, and enhancement update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99131",
+    "publishedAt": "2026-11-12T02:38:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99131-important-webkit2gtk3-security-bug",
+      "article-f8593654",
+      "f8593654",
+      "rhsa-2026-99131-important-webkit2gtk3-security-bug-37d67f",
+      "rhsa-2026-99131-important-webkit2gtk3-security-bug-fix-and-e"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99127-important-qt5-qtdeclarative-securi-4fe2f1df",
+    "title": "RHSA-2026:99127: Important: qt5-qtdeclarative security update",
+    "summary": "An update for qt5-qtdeclarative is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99127",
+    "publishedAt": "2026-11-12T02:37:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99127-important-qt5-qtdeclarative-securi",
+      "article-4fe2f1df",
+      "4fe2f1df",
+      "rhsa-2026-99127-important-qt5-qtdeclarative-securi-37d67f",
+      "rhsa-2026-99127-important-qt5-qtdeclarative-security-update"
     ]
   },
   {
@@ -9354,195 +9542,6 @@ export const news: NewsBrief[] = [
       "fd53c7fb",
       "dark-storm-team-expands-ddos-for-hire-demands-5-00-6e56dd",
       "dark-storm-team-expands-ddos-for-hire-demands-5-000-for-amin"
-    ]
-  },
-  {
-    "slug": "cisa-updates-incident-form-for-campaign-detection-34addf89",
-    "title": "CISA Updates Incident Form for Campaign Detection",
-    "summary": "CISA updated its incident reporting form to help analysts identify potential campaign links across organizations. The revised questionnaire incorporates MITRE ATT&CK terminology to capture malware, social engineering, hacking techniques, and insider threats, improving detection of coordinated attacks. Organizations should use the updated form to report incidents, enabling CISA to correlate events and provide more targeted guidance.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/cisa-incident-reporting-form-update/",
-    "publishedAt": "2026-11-10T13:17:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-updates-incident-form-for-campaign-detection",
-      "article-34addf89",
-      "34addf89",
-      "cisa-updates-incident-form-for-campaign-detection-157b51"
-    ]
-  },
-  {
-    "slug": "finite-state-raises-27-million-for-ai-product-secu-c67b25bf",
-    "title": "Finite State Raises $27 Million for AI Product Security",
-    "summary": "Finite State announced a $27 million Series C funding round to scale its autonomous product security platform amid rising AI-discovered vulnerabilities and new global security mandates. The investment targets accelerating defect detection across device supply chains. This reflects broader industry trends in automated vulnerability remediation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/finite-state-raises-27-million-to-help-device-makers-fight-vulnpocalypse-with-ai-powered-product-security/",
-    "publishedAt": "2026-11-10T13:17:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "finite-state-raises-27-million-for-ai-product-secu",
-      "article-c67b25bf",
-      "c67b25bf",
-      "finite-state-raises-27-million-for-ai-product-secu-d04e30",
-      "finite-state-raises-27-million-for-ai-product-security"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-important-subscription-manager-cock-0b712084",
-    "title": "Red Hat Issues Important subscription‑manager‑cockpit Update",
-    "summary": "Red Hat released an important security update for subscription‑manager‑cockpit on Red Hat Enterprise Linux 10, addressing critical vulnerabilities. The advisory lists CVSS base scores for each flaw and links to CVE identifiers in the references. Systems administrators should apply the update promptly to close the security gaps and preserve platform stability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97090",
-    "publishedAt": "2026-11-10T13:04:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-important-subscription-manager-cock",
-      "article-0b712084",
-      "0b712084",
-      "red-hat-issues-important-subscription-manager-cock-37d76b",
-      "red-hat-issues-important-subscription-manager-cockpit-update"
-    ]
-  },
-  {
-    "slug": "malwarebytes-flags-phishing-red-flags-on-advent-ca-a3608a97",
-    "title": "Malwarebytes Flags Phishing Red Flags on Advent Calendars",
-    "summary": "Malwarebytes Labs warns that several online advent calendar storefronts exhibit red flags such as copied designs, false urgency, and contradictory claims. These indicators suggest the sites may be phishing fronts or hosts for malicious payloads, potentially compromising user credentials or installing malware. Security teams should verify domain authenticity, inspect SSL certificates, and avoid downloading content from vendors until further investigation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/how-to/2026/11/before-you-buy-an-advent-calendar-check-these-warning-signs",
-    "publishedAt": "2026-11-10T13:03:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malwarebytes-flags-phishing-red-flags-on-advent-ca",
-      "article-a3608a97",
-      "a3608a97",
-      "malwarebytes-flags-phishing-red-flags-on-advent-ca-13ccbe",
-      "malwarebytes-flags-phishing-red-flags-on-advent-calendars"
-    ]
-  },
-  {
-    "slug": "russian-state-hackers-compromise-romanian-kazakh-e-c70a08d6",
-    "title": "Russian State Hackers Compromise Romanian, Kazakh Email Servers",
-    "summary": "Russian state-linked hackers compromised government email servers in Romania and Kazakhstan, intercepting messages exchanged with NATO and EU officials. The intrusion leveraged credential theft and internal access to infiltrate mail systems, enabling covert eavesdropping on diplomatic communications without detection. Affected organizations should conduct forensic analysis, reset credentials, and implement multi-factor authentication to prevent further compromise.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/russia-hackers-espionage-romania-kazakhstan",
-    "publishedAt": "2026-11-10T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "russian-state-hackers-compromise-romanian-kazakh-e",
-      "article-c70a08d6",
-      "c70a08d6",
-      "russian-state-hackers-compromise-romanian-kazakh-e-793ae9",
-      "russian-state-hackers-compromise-romanian-kazakh-email-serve"
-    ]
-  },
-  {
-    "slug": "ai-simplifies-reverse-engineering-of-software-and-106b4d6e",
-    "title": "AI Simplifies Reverse Engineering of Software and Malware",
-    "summary": "Researchers demonstrated that artificial intelligence tools can now decompile and reconstruct complex software and the Turla malware, lowering the barrier for reverse engineering. The capability exposes hidden logic, facilitates vulnerability discovery, and speeds threat analysis, raising concerns for defenders. Security teams should adopt AI-aware defensive tools, continuous monitoring, and threat intelligence sharing to mitigate accelerated reverse engineering risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
-    "publishedAt": "2026-11-10T13:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-simplifies-reverse-engineering-of-software-and",
-      "article-106b4d6e",
-      "106b4d6e",
-      "ai-simplifies-reverse-engineering-of-software-and-6489b9",
-      "ai-simplifies-reverse-engineering-of-software-and-malware"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97040-important-kernel-security-bug-fix-275ecb10",
-    "title": "RHSA-2026:97040: Important: kernel security, bug fix, and enhancement update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97040",
-    "publishedAt": "2026-11-10T12:55:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97040-important-kernel-security-bug-fix",
-      "article-275ecb10",
-      "275ecb10",
-      "rhsa-2026-97040-important-kernel-security-bug-fix-37d76c",
-      "rhsa-2026-97040-important-kernel-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-moderate-sssd-update-for-rhel-10-1609cdcb",
-    "title": "Red Hat Issues Moderate sssd Update for RHEL 10",
-    "summary": "Red Hat released a moderate-impact update for the sssd service on Red Hat Enterprise Linux 10, addressing multiple security bugs. The update carries a CVSS base score for each vulnerability, with references to CVE identifiers in the advisory’s links. Administrators should apply the sssd update immediately to mitigate the identified weaknesses and maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97077",
-    "publishedAt": "2026-11-10T12:54:35.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-moderate-sssd-update-for-rhel-10",
-      "article-1609cdcb",
-      "1609cdcb",
-      "red-hat-issues-moderate-sssd-update-for-rhel-10-37d76b"
-    ]
-  },
-  {
-    "slug": "apple-releases-november-2026-security-updates-a7e401a4",
-    "title": "Apple Releases November 2026 Security Updates",
-    "summary": "Apple released a November 2026 update patching nine vulnerabilities across iOS, iPadOS, macOS, watchOS, and visionOS, including CVE-2026-113971 affecting iOS/iPadOS 26. The fixes address Bluetooth pairing weaknesses, iMessage group chat message leakage, and flaws that could allow remote attackers to intercept messages. Users should install the latest firmware and security teams should monitor for exploit activity and apply patches promptly.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33506",
-    "publishedAt": "2026-11-10T12:48:55.000Z",
-    "cves": [
-      "CVE-2026-113971"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "apple-releases-november-2026-security-updates",
-      "article-a7e401a4",
-      "a7e401a4",
-      "apple-releases-november-2026-security-updates-57dd81"
-    ]
-  },
-  {
-    "slug": "anthropic-releases-mythos-5-2-with-enhanced-sandbo-418ce659",
-    "title": "Anthropic Releases Mythos 5.2 With Enhanced Sandbox Security",
-    "summary": "Anthropic released Mythos 5.2, a new model iteration focused on vulnerability discovery for security researchers. The update tightens sandbox boundaries, reducing sandbox escape incidents observed in controlled testing environments. Security teams should upgrade to Mythos 5.2 to leverage enhanced sandbox integrity and bug‑hunting capabilities and improved detection of exploitation attempts.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/",
-    "publishedAt": "2026-11-10T12:17:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "anthropic-releases-mythos-5-2-with-enhanced-sandbo",
-      "article-418ce659",
-      "418ce659",
-      "anthropic-releases-mythos-5-2-with-enhanced-sandbo-63a588",
-      "anthropic-releases-mythos-5-2-with-enhanced-sandbox-security"
     ]
   }
 ];
