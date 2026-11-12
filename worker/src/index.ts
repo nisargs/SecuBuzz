@@ -554,6 +554,9 @@ async function getAliasToSlugMap(env: Env): Promise<Map<string, string>> {
 let cachedSitemapXml: string | null = null;
 let cachedSitemapTime = 0;
 
+let cachedPushTokens: any[] = [];
+let cachedPushTokensTime = 0;
+
 function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisoriesList: KevVulnerability[]): boolean {
   const clean = pathname.replace(/\/+$/, '') || '/';
   const STATIC_ROUTES = new Set([
@@ -1005,43 +1008,59 @@ export default {
 
         // 3. Query D1 (only for known CVEs or keyword queries)
         let rows: any[] = [];
-        if (cveMatch) {
-          // SQL '_' wildcard matches both ASCII '-' and Unicode dashes (e.g. U+2011)
-          const wildTerm = `%CVE_${cveMatch[1]}_${cveMatch[2]}%`;
-          const { results } = await env.DB.prepare(
-            `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
-             FROM articles
-             WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ?
-             ORDER BY published_at DESC
-             LIMIT 100;`
-          ).bind(wildTerm, wildTerm, wildTerm).all();
+        try {
+          if (cveMatch) {
+            // SQL '_' wildcard matches both ASCII '-' and Unicode dashes (e.g. U+2011)
+            const wildTerm = `%CVE_${cveMatch[1]}_${cveMatch[2]}%`;
+            const { results } = await env.DB.prepare(
+              `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+               FROM articles
+               WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ?
+               ORDER BY published_at DESC
+               LIMIT 100;`
+            ).bind(wildTerm, wildTerm, wildTerm).all();
 
-          const exactRegex = new RegExp(`CVE-${cveMatch[1]}-${cveMatch[2]}(?!\\d)`, 'i');
-          rows = (results || [])
-            .filter((r: any) =>
-              exactRegex.test(normalizeHyphens(`${r.title || ''} ${r.summary || ''} ${r.cves_json || ''}`))
-            )
-            .slice(0, 50);
-        } else {
-          const term = `%${q}%`;
-          const altTerm = q.includes('-') ? `%${q.replace(/-/g, '\u2011')}%` : term;
-          const { results } = await env.DB.prepare(
-            `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
-             FROM articles
-             WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ? OR title LIKE ? OR summary LIKE ?
-             ORDER BY published_at DESC
-             LIMIT 50;`
-          ).bind(term, term, term, altTerm, altTerm).all();
-          rows = results || [];
+            const exactRegex = new RegExp(`CVE-${cveMatch[1]}-${cveMatch[2]}(?!\\d)`, 'i');
+            rows = (results || [])
+              .filter((r: any) =>
+                exactRegex.test(normalizeHyphens(`${r.title || ''} ${r.summary || ''} ${r.cves_json || ''}`))
+              )
+              .slice(0, 50);
+          } else {
+            const term = `%${q}%`;
+            const altTerm = q.includes('-') ? `%${q.replace(/-/g, '\u2011')}%` : term;
+            const { results } = await env.DB.prepare(
+              `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+               FROM articles
+               WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ? OR title LIKE ? OR summary LIKE ?
+               ORDER BY published_at DESC
+               LIMIT 50;`
+            ).bind(term, term, term, altTerm, altTerm).all();
+            rows = results || [];
+          }
+
+          const formatted = rows.map(formatD1Article);
+          const responseData = { count: formatted.length, results: formatted };
+          setCachedSearchResult(cacheKey, responseData);
+
+          return jsonResponse(responseData, 200, {
+            'Cache-Control': 'public, max-age=3600, s-maxage=86400',
+          });
+        } catch (dbErr: any) {
+          console.warn('D1 search query fallback (quota or error):', dbErr?.message);
+          // Graceful fallback to filtering in-memory active feed
+          const articles = await getArticles();
+          const cleanQ = normalizeHyphens(q).toLowerCase();
+          const fallbackMatches = articles.filter((a) => {
+            const headline = normalizeHyphens(a.headline || a.title || '').toLowerCase();
+            const summary = normalizeHyphens(a.summary || '').toLowerCase();
+            const cves = (a.cves || []).map((c: string) => normalizeHyphens(c).toLowerCase());
+            return headline.includes(cleanQ) || summary.includes(cleanQ) || cves.some((c: string) => c.includes(cleanQ));
+          });
+          return jsonResponse({ count: fallbackMatches.length, results: fallbackMatches.slice(0, 50) }, 200, {
+            'Cache-Control': 'public, max-age=300',
+          });
         }
-
-        const formatted = rows.map(formatD1Article);
-        const responseData = { count: formatted.length, results: formatted };
-        setCachedSearchResult(cacheKey, responseData);
-
-        return jsonResponse(responseData, 200, {
-          'Cache-Control': 'public, max-age=3600, s-maxage=86400',
-        });
       }
 
       // API: Get single news article by slug (checks active feed then D1 archive)
@@ -1072,18 +1091,22 @@ export default {
         const resolvedSlug = aliasMap.get(reqSlug) || reqSlug;
 
         // 3. Query D1 by primary key (indexed lookup - 1 row read)
-        const row = await env.DB.prepare(
-          `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
-           FROM articles
-           WHERE slug = ?
-           LIMIT 1;`
-        ).bind(resolvedSlug).first<any>();
+        try {
+          const row = await env.DB.prepare(
+            `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+             FROM articles
+             WHERE slug = ?
+             LIMIT 1;`
+          ).bind(resolvedSlug).first<any>();
 
-        if (row) {
-          const article = formatD1Article(row);
-          return jsonResponse({ article }, 200, {
-            'Cache-Control': 'public, max-age=3600, s-maxage=86400',
-          });
+          if (row) {
+            const article = formatD1Article(row);
+            return jsonResponse({ article }, 200, {
+              'Cache-Control': 'public, max-age=3600, s-maxage=86400',
+            });
+          }
+        } catch (dbErr: any) {
+          console.warn('D1 article slug lookup failed (quota or error):', dbErr?.message);
         }
 
         return errorResponse('Article not found', 404);
@@ -1427,14 +1450,25 @@ export default {
 
         query += ` ORDER BY last_seen_at DESC;`;
 
-        const { results } = await env.DB.prepare(query).all<{
-          token: string;
-          news_briefs: number;
-          threat_advisories: number;
-          severity_threshold: string;
-          selected_vendors: string;
-          watched_cves: string;
-        }>();
+        let results: any[] = [];
+        try {
+          const dbRes = await env.DB.prepare(query).all<{
+            token: string;
+            news_briefs: number;
+            threat_advisories: number;
+            severity_threshold: string;
+            selected_vendors: string;
+            watched_cves: string;
+          }>();
+          results = dbRes?.results || [];
+          if (results.length > 0) {
+            cachedPushTokens = results;
+            cachedPushTokensTime = Date.now();
+          }
+        } catch (dbErr: any) {
+          console.warn('D1 push-tokens query fallback (quota or error):', dbErr?.message);
+          results = cachedPushTokens || [];
+        }
 
         const tokens = (results ?? []).map((row) => row.token);
         const devices = (results ?? []).map((row) => {
