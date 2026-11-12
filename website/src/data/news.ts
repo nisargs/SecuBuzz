@@ -11,6 +11,83 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-99695-important-glib-networking-security-a80cb47d",
+    "title": "RHSA-2026:99695: Important: glib-networking security update",
+    "summary": "An update for glib-networking is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99695",
+    "publishedAt": "2026-11-12T21:24:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99695-important-glib-networking-security",
+      "article-a80cb47d",
+      "a80cb47d",
+      "rhsa-2026-99695-important-glib-networking-security-37d66c",
+      "rhsa-2026-99695-important-glib-networking-security-update"
+    ]
+  },
+  {
+    "slug": "cve-2026-126793-privilege-escalation-in-aurora-pos-84682522",
+    "title": "CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper",
+    "summary": "Bulletin ID: 2026-182-AWS Publication Date: 11/12/2026 13:00 PM PST Description: An untrusted search path issue in Aurora PostgreSQL dialect detection in the AWS Advanced Go Wrapper from release 2026-04-06 (awssql/v2.0.0) and before release 2026-07-29 (awssql/v2.0.3) could allow a remote authenticated user to escalate privileges to those of another database user, including a member of the rds_superuser role, via a crafted function that runs when that user connects to an Aurora PostgreSQL cluster through an affected version of the wrapper.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/",
+    "publishedAt": "2026-11-12T21:11:28.000Z",
+    "cves": [
+      "CVE-2026-126793"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-126793-privilege-escalation-in-aurora-pos",
+      "article-84682522",
+      "84682522",
+      "cve-2026-126793-privilege-escalation-in-aurora-pos-137402",
+      "cve-2026-126793-privilege-escalation-in-aurora-postgresql-di"
+    ]
+  },
+  {
+    "slug": "microsoft-365-outage-disrupts-outlook-exchange-onl-2d15b165",
+    "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
+    "summary": "Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence of a cyberattack.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
+    "publishedAt": "2026-11-12T20:55:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-outage-disrupts-outlook-exchange-onl",
+      "article-2d15b165",
+      "2d15b165",
+      "microsoft-365-outage-disrupts-outlook-exchange-onl-4ceea1",
+      "microsoft-365-outage-disrupts-outlook-exchange-online-and-te"
+    ]
+  },
+  {
+    "slug": "still-in-the-meeting-bluenoroff-six-months-on-0fe49fbc",
+    "title": "Still in the Meeting: BlueNoroff Six Months On",
+    "summary": "In April, Arctic Wolf Labs documented how BlueNoroff used fake Zoom and Microsoft Teams meetings, ClickFix prompts, and AI-generated participants to compromise leaders in the Web3 and cryptocurrency sector. We expected the threat actor to adapt after we published that report.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Arctic Wolf",
+    "sourceUrl": "https://arcticwolf.com/resources/blog/still-in-the-meeting-bluenoroff-six-months-on/",
+    "publishedAt": "2026-11-12T20:55:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "still-in-the-meeting-bluenoroff-six-months-on",
+      "article-0fe49fbc",
+      "0fe49fbc",
+      "still-in-the-meeting-bluenoroff-six-months-on-6ac6bc"
+    ]
+  },
+  {
     "slug": "red-hat-releases-perl-cgi-security-update-f16d5a95",
     "title": "Red Hat Releases Perl-CGI Security Update",
     "summary": "Perl-CGI on Red Hat Enterprise Linux 8 is affected by a security flaw prompting an update. Red Hat Product Security rated the issue as Important, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators should install it promptly today to eliminate the vulnerability.",
@@ -44,6 +121,24 @@ export const news: NewsBrief[] = [
       "article-5fe320e5",
       "5fe320e5",
       "red-hat-releases-glib2-security-update-37d665"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99826-important-rhc-security-update-0ac23d2f",
+    "title": "RHSA-2026:99826: Important: rhc security update",
+    "summary": "An update for rhc is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99826",
+    "publishedAt": "2026-11-12T20:38:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99826-important-rhc-security-update",
+      "article-0ac23d2f",
+      "0ac23d2f",
+      "rhsa-2026-99826-important-rhc-security-update-37d665"
     ]
   },
   {
@@ -520,6 +615,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fake-ai-domains-redirect-to-clickfix-and-browser-m-cb9cc025",
+    "title": "Fake AI Domains Redirect to ClickFix and Browser Malware",
+    "summary": "Researchers discovered 186 fake AI domains redirecting users to ClickFix-style lures, browser-hijacking malware, and search‑hijacking extensions. The attack leverages typographical prompt deception, codenamed TypoPrompting, to trick users into verifying fake AI tools, enabling credential theft and malicious payload delivery. Security teams should block these domains, enforce strict DNS filtering, and educate users about authentic AI services to prevent exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
+    "publishedAt": "2026-11-12T15:15:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-ai-domains-redirect-to-clickfix-and-browser-m",
+      "article-cb9cc025",
+      "cb9cc025",
+      "fake-ai-domains-redirect-to-clickfix-and-browser-m-759ea8",
+      "fake-ai-domains-redirect-to-clickfix-and-browser-malware"
+    ]
+  },
+  {
+    "slug": "police-seize-servers-behind-gootloader-castlerat-s-f1e4e109",
+    "title": "Police Seize Servers Behind Gootloader, CastleRAT, StealC",
+    "summary": "Europol and nine partner agencies seized hundreds of servers and domains that supported the Gootloader, CastleRAT, and StealC malware ecosystems. The takedown disrupted command‑and‑control channels, halted credential‑stealing operations, and limited the malware’s ability to deliver ransomware payloads to corporate networks. Security teams should monitor residual infrastructure, apply network segmentation, and maintain threat intelligence feeds to detect command‑and‑control domains.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
+    "publishedAt": "2026-11-12T15:07:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "police-seize-servers-behind-gootloader-castlerat-s",
+      "article-f1e4e109",
+      "f1e4e109",
+      "police-seize-servers-behind-gootloader-castlerat-s-70cdd8",
+      "police-seize-servers-behind-gootloader-castlerat-stealc"
+    ]
+  },
+  {
     "slug": "picus-launches-autonomous-ai-penetration-testing-t-0099f552",
     "title": "Picus Launches Autonomous AI Penetration Testing Tool",
     "summary": "Picus Security introduced Picus Autonomous Penetration Testing, an AI-driven tool that chains real exploits toward an organization’s critical assets. The system operates under strict governance, preventing agents from overriding controls while delivering realistic breach scenarios. Teams can validate defenses, prioritize remediation, and train staff, with no public vulnerability or exploit disclosed.",
@@ -596,6 +729,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "japan-sees-record-cyberattacks-driven-by-ai-intrus-db59b6fd",
+    "title": "Japan Sees Record Cyberattacks Driven by AI Intrusions",
+    "summary": "Researchers report a record rise in Japanese cyberattacks, attributing many incidents to AI‑assisted intrusion techniques. The attacks include widespread data breaches and exploitations of unpatched vulnerabilities, increasing pressure on organizations to accelerate patch management. Security teams should prioritize vulnerability scanning, enforce timely patching, and adopt AI‑driven threat detection to mitigate emerging intrusion tactics.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Socket.dev",
+    "sourceUrl": "https://socket.dev/blog/japan-cyberattack-surge",
+    "publishedAt": "2026-11-12T14:51:52.947Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "japan-sees-record-cyberattacks-driven-by-ai-intrus",
+      "article-db59b6fd",
+      "db59b6fd",
+      "japan-sees-record-cyberattacks-driven-by-ai-intrus-683cad",
+      "japan-sees-record-cyberattacks-driven-by-ai-intrusions"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99593-moderate-rpm-security-update-4803ff68",
     "title": "RHSA-2026:99593: Moderate: rpm security update",
     "summary": "An update for rpm is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -665,6 +817,25 @@ export const news: NewsBrief[] = [
       "article-796cd2ac",
       "796cd2ac",
       "red-hat-updates-crun-for-rhel-9-8-eus-37d680"
+    ]
+  },
+  {
+    "slug": "study-reveals-critical-supply-chain-vulnerability-98a854e0",
+    "title": "Study Reveals Critical Supply-Chain Vulnerability in 50 Platforms",
+    "summary": "nDiligence released a four‑year study exposing a critical supply‑chain vulnerability affecting all 50 examined software and device types. The flaw arises from insecure application integration practices, enabling attackers to inject malicious code during deployment and compromising downstream systems. Organizations should audit supply‑chain processes, enforce strict code signing, and apply vendor patches to mitigate the identified risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/",
+    "publishedAt": "2026-11-12T14:25:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "study-reveals-critical-supply-chain-vulnerability",
+      "article-98a854e0",
+      "98a854e0",
+      "study-reveals-critical-supply-chain-vulnerability-2e6aa5",
+      "study-reveals-critical-supply-chain-vulnerability-in-50-plat"
     ]
   },
   {
@@ -9365,185 +9536,6 @@ export const news: NewsBrief[] = [
       "article-21794360",
       "21794360",
       "xbox-remote-code-execution-via-heap-overflow-745bb1"
-    ]
-  },
-  {
-    "slug": "hevc-codec-integer-underflow-enables-remote-rce-3ad64dbc",
-    "title": "HEVC Codec Integer Underflow Enables Remote RCE",
-    "summary": "An integer underflow in the Windows HEVC Video Extensions codec library allows an unauthenticated attacker to execute code over a network. The vulnerability occurs when the decoder miscalculates buffer sizes during frame decoding, leading to a remote code execution path. Microsoft has issued a patch; administrators should deploy the update promptly to close the flaw.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114164",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hevc-codec-integer-underflow-enables-remote-rce",
-      "article-3ad64dbc",
-      "3ad64dbc",
-      "hevc-codec-integer-underflow-enables-remote-rce-1feaf4"
-    ]
-  },
-  {
-    "slug": "hevc-codec-heap-overflow-allows-local-rce-a3f2d730",
-    "title": "HEVC Codec Heap Overflow Allows Local RCE",
-    "summary": "A heap-based buffer overflow in the Windows HEVC Video Extensions codec library permits an unauthenticated attacker to execute code locally. The flaw is triggered by malformed video frames that cause the decoder to write beyond allocated memory, enabling local code execution. Microsoft has released a patch; users should apply the update to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114165",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hevc-codec-heap-overflow-allows-local-rce",
-      "article-a3f2d730",
-      "a3f2d730",
-      "hevc-codec-heap-overflow-allows-local-rce-1feaf4"
-    ]
-  },
-  {
-    "slug": "microsoft-powerpoint-rce-cve-2026-55123-acknowledg-1e1c334d",
-    "title": "Microsoft PowerPoint RCE CVE-2026-55123 Acknowledged",
-    "summary": "Microsoft acknowledged a remote code execution flaw in PowerPoint identified as CVE-2026-55123, affecting all supported versions. The vulnerability permits arbitrary code execution via crafted presentation files, but no active exploitation or public PoC has been reported. Microsoft has issued an informational update; users should apply the forthcoming patch when available and monitor advisories for remediation guidance.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55123",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-55123"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-powerpoint-rce-cve-2026-55123-acknowledg",
-      "article-1e1c334d",
-      "1e1c334d",
-      "microsoft-powerpoint-rce-cve-2026-55123-acknowledg-746a57",
-      "microsoft-powerpoint-rce-cve-2026-55123-acknowledged"
-    ]
-  },
-  {
-    "slug": "microsoft-refs-rce-vulnerability-cve-2026-102227-624b1899",
-    "title": "Microsoft ReFS RCE Vulnerability CVE-2026-102227",
-    "summary": "Microsoft disclosed CVE-2026-102227, a remote code execution flaw in Windows ReFS that could allow attackers to run arbitrary code via malformed metadata. The flaw stems from improper validation of ReFS metadata, enabling unauthenticated exploitation with a CVSS score of 9.8. Microsoft issued an out‑of‑band patch; administrators should apply it immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-102227",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-102227"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-refs-rce-vulnerability-cve-2026-102227",
-      "article-624b1899",
-      "624b1899",
-      "microsoft-refs-rce-vulnerability-cve-2026-102227-1ff9f1"
-    ]
-  },
-  {
-    "slug": "microsoft-office-word-rce-cve-2026-108447-7e433417",
-    "title": "Microsoft Office Word RCE CVE-2026-108447",
-    "summary": "Microsoft announced CVE-2026-108447, a remote code execution vulnerability in Office Word that could be triggered by a malicious document. The flaw results from unsafe handling of Rich Text Format (RTF) content, allowing unauthenticated code execution with a CVSS score of 9.5. Microsoft released an out‑of‑band patch; users should update Office immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108447",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-108447"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-office-word-rce-cve-2026-108447",
-      "article-7e433417",
-      "7e433417",
-      "microsoft-office-word-rce-cve-2026-108447-1ff72f"
-    ]
-  },
-  {
-    "slug": "windows-kernel-information-disclosure-cve-2026-700-8def015c",
-    "title": "Windows Kernel Information Disclosure CVE-2026-70017",
-    "summary": "Microsoft disclosed CVE-2026-70017, a kernel‑mode information disclosure flaw in Windows that could expose sensitive data via the Secure Kernel API. The vulnerability arises from improper bounds checking during kernel data retrieval, allowing local attackers to read privileged memory with a CVSS score of 7.2. Microsoft issued a patch; administrators should apply it promptly to mitigate the information disclosure risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70017",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-70017"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-kernel-information-disclosure-cve-2026-700",
-      "article-8def015c",
-      "8def015c",
-      "windows-kernel-information-disclosure-cve-2026-700-745071",
-      "windows-kernel-information-disclosure-cve-2026-70017"
-    ]
-  },
-  {
-    "slug": "microsoft-acknowledges-windows-kernel-privilege-es-b04c91c2",
-    "title": "Microsoft Acknowledges Windows Kernel Privilege Escalation",
-    "summary": "Microsoft acknowledges CVE-2026-69898, a critical Windows kernel privilege escalation vulnerability that could allow local users to gain elevated privileges. The update is purely informational, with no evidence of active exploitation, public proof‑of‑concept, or a released patch. No remediation guidance is provided, and security teams should monitor Microsoft advisories for future updates.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69898",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-69898"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-acknowledges-windows-kernel-privilege-es",
-      "article-b04c91c2",
-      "b04c91c2",
-      "microsoft-acknowledges-windows-kernel-privilege-es-745a53",
-      "microsoft-acknowledges-windows-kernel-privilege-escalation"
-    ]
-  },
-  {
-    "slug": "azure-devops-server-rce-exploited-via-improper-aut-d5a77fc2",
-    "title": "Azure DevOps Server RCE Exploited via Improper Auth",
-    "summary": "CVE-2026-109467 is a remote code execution flaw in Azure DevOps Server that lets authenticated attackers run arbitrary code over the network. The issue arises from improper authentication handling in the REST API, allowing credential bypass and code execution with elevated privileges. Microsoft released a patch; administrators should apply it immediately and audit access controls to mitigate risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109467",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-109467"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "azure-devops-server-rce-exploited-via-improper-aut",
-      "article-d5a77fc2",
-      "d5a77fc2",
-      "azure-devops-server-rce-exploited-via-improper-aut-1ff6bb",
-      "azure-devops-server-rce-exploited-via-improper-auth"
-    ]
-  },
-  {
-    "slug": "heif-image-extensions-vulnerability-enables-local-10305511",
-    "title": "HEIF Image Extensions Vulnerability Enables Local RCE",
-    "summary": "A use‑after‑free flaw in Microsoft HEIF Image Extensions lets an unauthorized attacker execute code locally on Windows. CVE‑2026‑100204 exploits heap corruption triggered by a crafted HEIF file, enabling local code execution without authentication. Microsoft released a patch in the latest cumulative update; apply it immediately or disable HEIF processing as a temporary fix.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-100204",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "heif-image-extensions-vulnerability-enables-local",
-      "article-10305511",
-      "10305511",
-      "heif-image-extensions-vulnerability-enables-local-1ffada",
-      "heif-image-extensions-vulnerability-enables-local-rce"
     ]
   }
 ];

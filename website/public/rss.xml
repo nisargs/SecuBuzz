@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 20:56:40 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 21:45:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:99695: Important: glib-networking security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99695-important-glib-networking-security-a80cb47d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99695-important-glib-networking-security-a80cb47d</guid>
+      <description><![CDATA[An update for glib-networking is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 21:24:20 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99695">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper</title>
+      <link>https://secubuzz.com/news/cve-2026-126793-privilege-escalation-in-aurora-pos-84682522</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-126793-privilege-escalation-in-aurora-pos-84682522</guid>
+      <description><![CDATA[Bulletin ID: 2026-182-AWS Publication Date: 11/12/2026 13:00 PM PST Description: An untrusted search path issue in Aurora PostgreSQL dialect detection in the AWS Advanced Go Wrapper from release 2026-04-06 (awssql/v2.0.0) and before release 2026-07-29 (awssql/v2.0.3) could allow a remote authenticated user to escalate privileges to those of another database user, including a member of the rds_superuser role, via a crafted function that runs when that user connects to an Aurora PostgreSQL cluster through an affected version of the wrapper.]]></description>
+      <pubDate>Thu, 12 Nov 2026 21:11:28 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams</title>
+      <link>https://secubuzz.com/news/microsoft-365-outage-disrupts-outlook-exchange-onl-2d15b165</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-outage-disrupts-outlook-exchange-onl-2d15b165</guid>
+      <description><![CDATA[Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence of a cyberattack.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:55:30 GMT</pubDate>
+      <source url="https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Still in the Meeting: BlueNoroff Six Months On</title>
+      <link>https://secubuzz.com/news/still-in-the-meeting-bluenoroff-six-months-on-0fe49fbc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/still-in-the-meeting-bluenoroff-six-months-on-0fe49fbc</guid>
+      <description><![CDATA[In April, Arctic Wolf Labs documented how BlueNoroff used fake Zoom and Microsoft Teams meetings, ClickFix prompts, and AI-generated participants to compromise leaders in the Web3 and cryptocurrency sector. We expected the threat actor to adapt after we published that report.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:55:23 GMT</pubDate>
+      <source url="https://arcticwolf.com/resources/blog/still-in-the-meeting-bluenoroff-six-months-on/">Arctic Wolf</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Red Hat Releases Perl-CGI Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-perl-cgi-security-update-f16d5a95</link>
@@ -23,6 +59,15 @@
       <description><![CDATA[glib2 on Red Hat Enterprise Linux 8.6 is impacted by a security flaw prompting an update. Red Hat Product Security rated the issue as Moderate, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators and promptly apply it today to mitigate the vulnerability.]]></description>
       <pubDate>Thu, 12 Nov 2026 20:40:40 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99864">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99826: Important: rhc security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99826-important-rhc-security-update-0ac23d2f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99826-important-rhc-security-update-0ac23d2f</guid>
+      <description><![CDATA[An update for rhc is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:38:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99826">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -251,6 +296,24 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Fake AI Domains Redirect to ClickFix and Browser Malware</title>
+      <link>https://secubuzz.com/news/fake-ai-domains-redirect-to-clickfix-and-browser-m-cb9cc025</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-ai-domains-redirect-to-clickfix-and-browser-m-cb9cc025</guid>
+      <description><![CDATA[Researchers discovered 186 fake AI domains redirecting users to ClickFix-style lures, browser-hijacking malware, and search‑hijacking extensions. The attack leverages typographical prompt deception, codenamed TypoPrompting, to trick users into verifying fake AI tools, enabling credential theft and malicious payload delivery. Security teams should block these domains, enforce strict DNS filtering, and educate users about authentic AI services to prevent exploitation.]]></description>
+      <pubDate>Thu, 12 Nov 2026 15:15:40 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Police Seize Servers Behind Gootloader, CastleRAT, StealC</title>
+      <link>https://secubuzz.com/news/police-seize-servers-behind-gootloader-castlerat-s-f1e4e109</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/police-seize-servers-behind-gootloader-castlerat-s-f1e4e109</guid>
+      <description><![CDATA[Europol and nine partner agencies seized hundreds of servers and domains that supported the Gootloader, CastleRAT, and StealC malware ecosystems. The takedown disrupted command‑and‑control channels, halted credential‑stealing operations, and limited the malware’s ability to deliver ransomware payloads to corporate networks. Security teams should monitor residual infrastructure, apply network segmentation, and maintain threat intelligence feeds to detect command‑and‑control domains.]]></description>
+      <pubDate>Thu, 12 Nov 2026 15:07:20 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Picus Launches Autonomous AI Penetration Testing Tool</title>
       <link>https://secubuzz.com/news/picus-launches-autonomous-ai-penetration-testing-t-0099f552</link>
       <guid isPermaLink="true">https://secubuzz.com/news/picus-launches-autonomous-ai-penetration-testing-t-0099f552</guid>
@@ -287,6 +350,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Japan Sees Record Cyberattacks Driven by AI Intrusions</title>
+      <link>https://secubuzz.com/news/japan-sees-record-cyberattacks-driven-by-ai-intrus-db59b6fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/japan-sees-record-cyberattacks-driven-by-ai-intrus-db59b6fd</guid>
+      <description><![CDATA[Researchers report a record rise in Japanese cyberattacks, attributing many incidents to AI‑assisted intrusion techniques. The attacks include widespread data breaches and exploitations of unpatched vulnerabilities, increasing pressure on organizations to accelerate patch management. Security teams should prioritize vulnerability scanning, enforce timely patching, and adopt AI‑driven threat detection to mitigate emerging intrusion tactics.]]></description>
+      <pubDate>Thu, 12 Nov 2026 14:51:52 GMT</pubDate>
+      <source url="https://socket.dev/blog/japan-cyberattack-surge">Socket.dev</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>RHSA-2026:99593: Moderate: rpm security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-99593-moderate-rpm-security-update-4803ff68</link>
       <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99593-moderate-rpm-security-update-4803ff68</guid>
@@ -320,6 +392,15 @@
       <description><![CDATA[Red Hat released a security update for the crun container runtime on RHEL 9.8 EUS, addressing a vulnerability that could let attackers compromise container execution. The advisory notes an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are disclosed.]]></description>
       <pubDate>Thu, 12 Nov 2026 14:25:45 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99117">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Study Reveals Critical Supply-Chain Vulnerability in 50 Platforms</title>
+      <link>https://secubuzz.com/news/study-reveals-critical-supply-chain-vulnerability-98a854e0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/study-reveals-critical-supply-chain-vulnerability-98a854e0</guid>
+      <description><![CDATA[nDiligence released a four‑year study exposing a critical supply‑chain vulnerability affecting all 50 examined software and device types. The flaw arises from insecure application integration practices, enabling attackers to inject malicious code during deployment and compromising downstream systems. Organizations should audit supply‑chain processes, enforce strict code signing, and apply vendor patches to mitigate the identified risk.]]></description>
+      <pubDate>Thu, 12 Nov 2026 14:25:32 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/">Cyber Security News</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -375,87 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 13:31:46 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99601">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Romania Blocks Russian Attack on Government Emails</title>
-      <link>https://secubuzz.com/news/romania-blocks-russian-attack-on-government-emails-b15c63ed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/romania-blocks-russian-attack-on-government-emails-b15c63ed</guid>
-      <description><![CDATA[Romania’s intelligence agency reported stopping a Russian state‑linked cyber‑espionage campaign that targeted government email accounts before data exfiltration could occur. The operation prevented the exfiltration of sensitive information, mitigating potential compromise of national security communications. Authorities should maintain continuous monitoring of state‑linked threat actors and enforce robust email authentication protocols.]]></description>
-      <pubDate>Thu, 12 Nov 2026 13:30:00 GMT</pubDate>
-      <source url="https://therecord.media/romania-russia-cyberattack-emails">The Record</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Kazakhstan Hackers Deploy AI Agent for Central Asian Espionage</title>
-      <link>https://secubuzz.com/news/kazakhstan-hackers-deploy-ai-agent-for-central-asi-3d350d73</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/kazakhstan-hackers-deploy-ai-agent-for-central-asi-3d350d73</guid>
-      <description><![CDATA[Suspected Kazakhstan-linked hackers deployed an AI agent to spy on Central Asian governments, steal documents, and infiltrate critical infrastructure. The agent automates reconnaissance and credential harvesting, bypassing traditional controls to gain unauthorized access to mission‑critical systems. Teams should enforce strict access controls, monitor for anomalous AI‑driven activity, and deploy advanced threat detection to mitigate infiltration.]]></description>
-      <pubDate>Thu, 12 Nov 2026 13:00:00 GMT</pubDate>
-      <source url="https://therecord.media/kazakhstan-hackers-central-asia">The Record</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Red Hat Releases krb5 Security Update for RHEL 10</title>
-      <link>https://secubuzz.com/news/red-hat-releases-krb5-security-update-for-rhel-10-f0f88349</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-krb5-security-update-for-rhel-10-f0f88349</guid>
-      <description><![CDATA[Red Hat issued a security update for the krb5 library on Red Hat Enterprise Linux 10, addressing a bug that could affect Kerberos authentication. The update carries an Important security impact rating, though no public exploit or CVE identifier is disclosed in the advisory. Customers should apply the RHSA‑2026:99624 package immediately to mitigate potential authentication weaknesses.]]></description>
-      <pubDate>Thu, 12 Nov 2026 12:56:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99624">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Updates cockpit for RHEL 9</title>
-      <link>https://secubuzz.com/news/red-hat-updates-cockpit-for-rhel-9-dfd40861</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-updates-cockpit-for-rhel-9-dfd40861</guid>
-      <description><![CDATA[Red Hat released a security update for the cockpit web console on RHEL 9, addressing a vulnerability that could let attackers gain unauthorized administrative access. The advisory assigns an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are provided.]]></description>
-      <pubDate>Thu, 12 Nov 2026 12:53:05 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99602">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cruciferra MaaS Conceals Infostealers and RATs</title>
-      <link>https://secubuzz.com/news/cruciferra-maas-conceals-infostealers-and-rats-1b5dca33</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cruciferra-maas-conceals-infostealers-and-rats-1b5dca33</guid>
-      <description><![CDATA[Cybercriminals rent the Cruciferra malware‑as‑a‑service platform to conceal infostealers and remote access trojans from security software. Cruciferra encrypts malicious payloads in multiple layers, evading antivirus and endpoint detection tools and enabling widespread global campaigns. Defenders should employ advanced behavioral analytics and multi‑layered detection to identify encrypted RATs and infostealer activity.]]></description>
-      <pubDate>Thu, 12 Nov 2026 12:48:24 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/cruciferra-malware-as-a-service/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs</title>
-      <link>https://secubuzz.com/news/google-cloud-warns-three-amd-turin-cpu-flaws-could-4a39446f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-cloud-warns-three-amd-turin-cpu-flaws-could-4a39446f</guid>
-      <description><![CDATA[Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. Inside a VM, the flaws may let an attacker with code on the same processor core infer data from other processes or the kernel.]]></description>
-      <pubDate>Thu, 12 Nov 2026 12:09:14 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Siemens Industrial Edge Management</title>
-      <link>https://secubuzz.com/news/siemens-industrial-edge-management-11a6dfe0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-industrial-edge-management-11a6dfe0</guid>
-      <description><![CDATA[The following versions of Siemens Industrial Edge Management are affected: Cloud Connector Configurator vers:intdot/ Common Configurator (CC on IEM) vers:all/* (CVE-2026-111497) Common Configurator on Device (CC on Edge) vers:all/* (CVE-2026-111497) Data Flow Monitoring vers:intdot/ Databus Configurator vers:intdot/ DataXess Configurator vers:intdot/ Edge OPC UA Server Configurator vers:intdot/ Flow Creator Configurator vers:intdot/ Industrial Edge Hub vers:all/* (CVE-2026-111497) Industrial Edge Management Cloud vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens Cloud Connector Configurator 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.]]></description>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Siemens Desigo, Gridscale</title>
-      <link>https://secubuzz.com/news/siemens-desigo-gridscale-6a76e33a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-desigo-gridscale-6a76e33a</guid>
-      <description><![CDATA[The following versions of Siemens Desigo, Gridscale are affected: Desigo CC family V8 vers:all/* (CVE-2026-111497) Desigo CC family V9 vers:all/* (CVE-2026-111497) Gridscale X DSA vers:intdot/>=5.3| Gridscale X PSS®E vers:intdot/ CVSS Vendor Equipment v3 9.8 Siemens Desigo CC family V8 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.]]></description>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Siemens RUGGEDCOM APE1808</title>
-      <link>https://secubuzz.com/news/siemens-ruggedcom-ape1808-37c64b1f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/siemens-ruggedcom-ape1808-37c64b1f</guid>
-      <description><![CDATA[The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.]]></description>
-      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04">CISA</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

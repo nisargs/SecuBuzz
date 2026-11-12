@@ -2,6 +2,188 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-126345",
+    "slug": "cve-2026-126345",
+    "vendor": "npm",
+    "product": "basic-ftp",
+    "name": "basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list()",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "basic-ftp's MLSD directory-listing parser (src/parseListMLSD.ts) looks up fact-handler functions in a plain object literal keyed directly by fact names taken from the FTP server's response, with no validation.",
+    "requiredAction": "Upgrade basic-ftp to version 6.2.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-5pm8-86m8-9m6r"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126345"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126343",
+    "slug": "cve-2026-126343",
+    "vendor": "npm",
+    "product": "@hono/node-server",
+    "name": "@hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-248",
+    "ransomware": false,
+    "description": "While @hono/node-server waits for the Hono application to handle a WebSocket upgrade request, the socket has no error listener. If the client resets the TCP connection during that time, the resulting ECONNRESET is emitted as an unhandled 'error' event and the process terminates.",
+    "requiredAction": "Upgrade @hono/node-server to version 2.1.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qv5m-9pm6-hqp3"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126343"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126210",
+    "slug": "cve-2026-126210",
+    "vendor": "npm",
+    "product": "@hono/node-server",
+    "name": "@hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-436",
+    "ransomware": false,
+    "description": "@hono/node-server passes the raw request-target to the WHATWG URL parser, which treats a backslash in the path as / and then resolves .. segments. A request for /admin\\secret or /public\\..\\admin/secret reaches the application as /admin/secret.",
+    "requiredAction": "Upgrade @hono/node-server to version 2.1.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jpvv-r467-5p4w"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126210"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126208",
+    "slug": "cve-2026-126208",
+    "vendor": "RubyGems",
+    "product": "loofah",
+    "name": "Loofah: SVG `<textPath>` and `<mpath>` bypass local-reference restriction",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 4.7,
+    "severity": "Medium",
+    "cwe": "CWE-178",
+    "ransomware": false,
+    "description": "Loofah restricts href and xlink:href on certain SVG elements to same-document references. Two elements escaped the restriction: - <textPath>: SVG_ALLOW_LOCAL_HREF listed it in lowercase as textpath, but the HTML5 parser names the element textPath inside <svg>, so the check never matched on the HTML5 path.",
+    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-345x-3rq2-jfrm"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126208"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126209",
+    "slug": "cve-2026-126209",
+    "vendor": "RubyGems",
+    "product": "loofah",
+    "name": "Loofah allowed_uri? treats javascript&#x3a alert(1) as safe",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "Loofah::HTML5::Scrub.allowed_uri? returns true for a javascript: or vbscript: URI whose scheme is split by a numeric character reference without a trailing semicolon, followed by a character that allowed_uri? strips, such as a space or tab. A browser ends the reference at that character and reads javascript&#x3a alert(1) as javascript: alert(1).",
+    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-p9wj-w8xq-vjx6"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126209"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126207",
+    "slug": "cve-2026-126207",
+    "vendor": "RubyGems",
+    "product": "loofah",
+    "name": "Loofah: CSS url() sanitization bypass via escaped parentheses",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 4.7,
+    "severity": "Medium",
+    "cwe": "CWE-180",
+    "ransomware": false,
+    "description": "Loofah::HTML5::Scrub.scrub_css rejected any property whose top-level Crass tokens included a :url or :bad_url, and left url out of the allowed CSS functions. Both checks ran only against the first parse of the style attribute.",
+    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-m3x9-938q-5767"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126207"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126205",
+    "slug": "cve-2026-126205",
+    "vendor": "RubyGems",
+    "product": "loofah",
+    "name": "Loofah: Regular expression denial of service in the SVG local-reference check",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "Loofah's HTML5 sanitizer restricts the href and xlink:href attributes of SVG reference elements to local references. That check matched the attribute value against /^\\s[^#\\s]./m. In Ruby ^ anchors to every line start and \\s matches newlines, so an all-whitespace value made the engine rescan the value from each of its line starts, taking time quadratic in its length.",
+    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mf2j-8f84-cc9q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126205"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-126206",
     "slug": "cve-2026-126206",
     "vendor": "RubyGems",
@@ -1257,172 +1439,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126186"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126085",
-    "slug": "cve-2026-126085",
-    "vendor": "RubyGems",
-    "product": "activestorage",
-    "name": "Active Storage: Possible circumvention of file size limits in Active Storage direct uploads to Google Cloud Storage",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-602",
-    "ransomware": false,
-    "description": "ActiveStorage::Service::GCSService#url_for_direct_upload does not bind the declared content length into the signed direct-upload URL, and #headers_for_direct_upload returns no length constraint, so the URL authorizes an upload body of any size.",
-    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hfr4-8rjc-97m2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126085"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126080",
-    "slug": "cve-2026-126080",
-    "vendor": "RubyGems",
-    "product": "activesupport",
-    "name": "Active Support: Possible DoS vulnerability in Active Support safe_constantize",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-74",
-    "ransomware": false,
-    "description": "When constant lookup raises LoadError, ActiveSupport::Inflector#safe_constantize (and String#safe_constantize) builds a regular expression from the requested constant name without escaping it, so a caller that passes untrusted input lets the attacker choose the source of a pattern that the application compiles.",
-    "requiredAction": "Upgrade activesupport to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8474-xrp6-wh69"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126080"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-fgfw-85w4-gx99",
-    "slug": "ghsa-fgfw-85w4-gx99",
-    "vendor": ".NET (NuGet)",
-    "product": "Aspire.Cli",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.3,
-    "severity": "High",
-    "cwe": "CWE-532",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-q6jf-24jf-m3cg. This link is maintained to preserve external references. Insertion of sensitive information into log file in .NET Aspire allows an authorized attacker to disclose information locally.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fgfw-85w4-gx99"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-hfpm-4fc4-g2wc",
-    "slug": "ghsa-hfpm-4fc4-g2wc",
-    "vendor": ".NET (NuGet)",
-    "product": "Aspire.Cli",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.3,
-    "severity": "High",
-    "cwe": "CWE-379",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-m63f-xhvm-6mv5. This link is maintained to preserve external references. Creation of temporary file in directory with insecure permissions in .NET Aspire allows an authorized attacker to elevate privileges locally.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hfpm-4fc4-g2wc"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126074",
-    "slug": "cve-2026-126074",
-    "vendor": "RubyGems",
-    "product": "activestorage",
-    "name": "Active Storage: Possible DoS vulnerability in Active Storage filename handling",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 4.3,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "ActiveStorage::Filename#base and #extension_with_delimiter, and therefore #extension, pass the stored filename unmodified to File.basename and File.extname, which raise ArgumentError when the name contains a NUL byte.",
-    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p2pm-g2h6-7j5j"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126074"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-cfv6-4v53-fff6",
-    "slug": "ghsa-cfv6-4v53-fff6",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.NETCore.App.Runtime.win-x86",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-122",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-x8x8-p968-x646. This link is maintained to preserve external references. Heap-based buffer overflow in Visual Studio allows an unauthorized attacker to execute code over a network.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-cfv6-4v53-fff6"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-2f3w-v7f5-vpgx",
-    "slug": "ghsa-2f3w-v7f5-vpgx",
-    "vendor": ".NET (NuGet)",
-    "product": "Aspire.Dashboard.Sdk.linux-x64",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-118740 - Aspire Security Feature Bypass Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 9.1,
-    "severity": "Critical",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-4g86-54fm-h9h8. This link is maintained to preserve external references. Missing authorization in Aspire allows an unauthorized attacker to bypass a security feature over a network.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-2f3w-v7f5-vpgx"
       }
     ],
     "source": "GITHUB"

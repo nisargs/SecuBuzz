@@ -4669,5 +4669,14 @@
   "https://access.redhat.com/errata/RHSA-2026:99864",
   "https://ubuntu.com/security/notices/USN-8895-2",
   "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+BroadWorks+Out-of-Band+Blind+XML+External+Entity+Injection+Vulnerability%26vs_k%3D1",
-  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03"
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/",
+  "https://access.redhat.com/errata/RHSA-2026:99695",
+  "https://access.redhat.com/errata/RHSA-2026:99826",
+  "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
+  "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
+  "https://socket.dev/blog/japan-cyberattack-surge",
+  "https://cybersecuritynews.com/ndiligence-releases-four-year-study-identifying-a-critical-supply-chain-vulnerability-across-50-platform-types/",
+  "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
+  "https://arcticwolf.com/resources/blog/still-in-the-meeting-bluenoroff-six-months-on/"
 ]
