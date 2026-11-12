@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 01:51:07 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 02:38:48 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Releases perl-DBI Security Update</title>
+      <link>https://secubuzz.com/news/red-hat-releases-perl-dbi-security-update-f9d01140</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-perl-dbi-security-update-f9d01140</guid>
+      <description><![CDATA[Red Hat has released an important security update for perl-DBI on RHEL 9.8 EUS, addressing multiple vulnerabilities. The update carries a CVSS base score of 7.5 for the most critical issue, and Red Hat rates the patch as Important. Administrators should apply the perl-DBI update immediately to mitigate the identified security weaknesses.]]></description>
+      <pubDate>Thu, 12 Nov 2026 02:02:29 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99121">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Patches gnome-remote-desktop Flaw in RHEL</title>
+      <link>https://secubuzz.com/news/red-hat-patches-gnome-remote-desktop-flaw-in-rhel-9eab034d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-patches-gnome-remote-desktop-flaw-in-rhel-9eab034d</guid>
+      <description><![CDATA[Red Hat issued a security update addressing a vulnerability in the gnome-remote-desktop component for Red Hat Enterprise Linux 9.8 Extended Update Support. The underlying flaw allows potential exploitation depending on system configuration, carrying a Red Hat severity rating of Important. Administrators using affected RHEL 9.8 Extended Update Support systems should apply the security patch immediately to mitigate risks.]]></description>
+      <pubDate>Thu, 12 Nov 2026 01:57:58 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99136">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Red Hat Releases python‑oauthlib Security Update</title>
       <link>https://secubuzz.com/news/red-hat-releases-python-oauthlib-security-update-69467088</link>
@@ -332,6 +350,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Ubuntu Fixes Arbitrary File Write Flaw in Action Pack</title>
+      <link>https://secubuzz.com/news/ubuntu-fixes-arbitrary-file-write-flaw-in-action-p-185e031f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-fixes-arbitrary-file-write-flaw-in-action-p-185e031f</guid>
+      <description><![CDATA[A vulnerability in Action Pack Page Caching improperly handles specific request paths during page caching operations. The technical flaw enables a remote attacker to write arbitrary files to the web server, creating potential remote code execution risks. Security teams should apply the updates specified in Ubuntu Security Notice USN-9058-1 to prevent unauthorized file creation.]]></description>
+      <pubDate>Wed, 11 Nov 2026 18:33:04 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9058-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Vanderbilt Restores Systems After Alleged Data Theft Attack</title>
       <link>https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</link>
       <guid isPermaLink="true">https://secubuzz.com/news/vanderbilt-restores-systems-after-alleged-data-the-71df4385</guid>
@@ -429,33 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 16:55:00 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/">Microsoft Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Maersk Breach Exposes Legacy System Data</title>
-      <link>https://secubuzz.com/news/maersk-breach-exposes-legacy-system-data-24af8572</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/maersk-breach-exposes-legacy-system-data-24af8572</guid>
-      <description><![CDATA[Maersk confirmed that a threat actor accessed a legacy local system inherited from a prior acquisition and exfiltrated data. The breach coincided with a WhiteArmor ransomware campaign demanding a $5 million payment, though the ransomware did not encrypt Maersk files. Maersk has engaged incident response teams, applied security patches, and is monitoring for further compromise.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:24:18 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99031: Moderate: kernel-rt security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99031-moderate-kernel-rt-security-bug-fi-fa1dccca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99031-moderate-kernel-rt-security-bug-fi-fa1dccca</guid>
-      <description><![CDATA[An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:22:47 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99031">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Zoom Workplace Unauthenticated Remote Privilege Escalation CVE</title>
-      <link>https://secubuzz.com/news/zoom-workplace-unauthenticated-remote-privilege-es-e9f5a551</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/zoom-workplace-unauthenticated-remote-privilege-es-e9f5a551</guid>
-      <description><![CDATA[Zoom Workplace for Windows is vulnerable to CVE-2026-108186, an unauthenticated remote privilege escalation flaw triggered by improper input validation. The flaw carries a CVSS score of 9.6, enabling attackers to elevate privileges without authentication and potentially compromise affected systems. Zoom has released software updates to address the vulnerability; security teams should apply the patch immediately to mitigate risk.]]></description>
-      <pubDate>Wed, 11 Nov 2026 16:12:46 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html">The Hacker News</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

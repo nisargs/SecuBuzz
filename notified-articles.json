@@ -4492,5 +4492,12 @@
   "https://ubuntu.com/security/notices/USN-9059-1",
   "https://www.sophos.com/en-us/blog/malicious-screenconnect-deployments-observed",
   "https://www.huntress.com/blog/the-evolving-tradecraft-of-clickfix",
-  "http://www.zerodayinitiative.com/advisories/ZDI-26-916/"
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-916/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-915/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-914/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-913/",
+  "https://access.redhat.com/errata/RHSA-2026:99121",
+  "https://access.redhat.com/errata/RHSA-2026:99136",
+  "https://ubuntu.com/security/notices/USN-9058-1",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-912/"
 ]

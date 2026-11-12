@@ -11,6 +11,42 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-releases-perl-dbi-security-update-f9d01140",
+    "title": "Red Hat Releases perl-DBI Security Update",
+    "summary": "Red Hat has released an important security update for perl-DBI on RHEL 9.8 EUS, addressing multiple vulnerabilities. The update carries a CVSS base score of 7.5 for the most critical issue, and Red Hat rates the patch as Important. Administrators should apply the perl-DBI update immediately to mitigate the identified security weaknesses.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99121",
+    "publishedAt": "2026-11-12T02:02:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-perl-dbi-security-update",
+      "article-f9d01140",
+      "f9d01140",
+      "red-hat-releases-perl-dbi-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "red-hat-patches-gnome-remote-desktop-flaw-in-rhel-9eab034d",
+    "title": "Red Hat Patches gnome-remote-desktop Flaw in RHEL",
+    "summary": "Red Hat issued a security update addressing a vulnerability in the gnome-remote-desktop component for Red Hat Enterprise Linux 9.8 Extended Update Support. The underlying flaw allows potential exploitation depending on system configuration, carrying a Red Hat severity rating of Important. Administrators using affected RHEL 9.8 Extended Update Support systems should apply the security patch immediately to mitigate risks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99136",
+    "publishedAt": "2026-11-12T01:57:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-patches-gnome-remote-desktop-flaw-in-rhel",
+      "article-9eab034d",
+      "9eab034d",
+      "red-hat-patches-gnome-remote-desktop-flaw-in-rhel-37d67f"
+    ]
+  },
+  {
     "slug": "red-hat-releases-python-oauthlib-security-update-69467088",
     "title": "Red Hat Releases python‑oauthlib Security Update",
     "summary": "Red Hat has issued an Important security update for python‑oauthlib on RHEL 9.8 Extended Update Support, addressing multiple vulnerabilities identified by CVE references. The update includes CVSS scores for each vulnerability, but no active exploitation has been reported, mitigating potential remote code execution risks. Users should apply the RHSA‑2026:99167 update immediately to ensure protection against the disclosed weaknesses.",
@@ -678,6 +714,25 @@ export const news: NewsBrief[] = [
       "7407c5b3",
       "ruby-jwt-hmac-verification-flaw-enables-token-forg-7e8754",
       "ruby-jwt-hmac-verification-flaw-enables-token-forgery"
+    ]
+  },
+  {
+    "slug": "ubuntu-fixes-arbitrary-file-write-flaw-in-action-p-185e031f",
+    "title": "Ubuntu Fixes Arbitrary File Write Flaw in Action Pack",
+    "summary": "A vulnerability in Action Pack Page Caching improperly handles specific request paths during page caching operations. The technical flaw enables a remote attacker to write arbitrary files to the web server, creating potential remote code execution risks. Security teams should apply the updates specified in Ubuntu Security Notice USN-9058-1 to prevent unauthorized file creation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9058-1",
+    "publishedAt": "2026-11-11T18:33:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-fixes-arbitrary-file-write-flaw-in-action-p",
+      "article-185e031f",
+      "185e031f",
+      "ubuntu-fixes-arbitrary-file-write-flaw-in-action-p-7e8757",
+      "ubuntu-fixes-arbitrary-file-write-flaw-in-action-pack"
     ]
   },
   {
@@ -2693,6 +2748,90 @@ export const news: NewsBrief[] = [
       "72c8dbf1",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
       "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-filternamesdataset-remote-code-execut-a1726cbb",
+    "title": "Meta fairseq FilterNamesDataset Remote Code Execution Vulnerability",
+    "summary": "A remote code execution flaw in Meta fairseq’s FilterNamesDataset lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-111760 carries a CVSS score of 7.8 and requires user interaction, but no active exploitation has been observed. Red Hat has issued a patch; administrators should apply it immediately to eliminate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-915/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-filternamesdataset-remote-code-execut",
+      "article-a1726cbb",
+      "a1726cbb",
+      "meta-fairseq-filternamesdataset-remote-code-execut-6f3d0c",
+      "meta-fairseq-filternamesdataset-remote-code-execution-vulner"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-wav2vecmodel-yaml-remote-code-executi-b796f576",
+    "title": "Meta fairseq Wav2VecModel YAML Remote Code Execution Vulnerability",
+    "summary": "A remote code execution vulnerability in Meta fairseq’s Wav2VecModel YAML parsing allows attackers to execute arbitrary code when a user opens a malicious file. CVE-2026-111760 has a CVSS score of 7.8 and requires user interaction, yet no active exploitation has been reported. Red Hat has released a patch; administrators should apply it promptly to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-914/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-wav2vecmodel-yaml-remote-code-executi",
+      "article-b796f576",
+      "b796f576",
+      "meta-fairseq-wav2vecmodel-yaml-remote-code-executi-6f3d0c",
+      "meta-fairseq-wav2vecmodel-yaml-remote-code-execution-vulnera"
+    ]
+  },
+  {
+    "slug": "meta-fairseq-load-audio-path-remote-code-execution-e49900b8",
+    "title": "Meta fairseq load_audio_path Remote Code Execution Vulnerability",
+    "summary": "Meta fairseq’s load_audio_path component contains a remote code execution flaw that lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. CVE-2026-111760 scores 7.8 on CVSS and needs user interaction; no active exploitation has been observed. Red Hat has issued a patch; administrators should apply it immediately to close the vulnerability.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-913/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "meta-fairseq-load-audio-path-remote-code-execution",
+      "article-e49900b8",
+      "e49900b8",
+      "meta-fairseq-load-audio-path-remote-code-execution-6f3d0b",
+      "meta-fairseq-load-audio-path-remote-code-execution-vulnerabi"
+    ]
+  },
+  {
+    "slug": "zdi-26-912-0day-meta-detectron2-detection-checkpoi-11e5aa46",
+    "title": "ZDI-26-912: (0Day) Meta Detectron2 detection_checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta Detectron2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The vulnerability is tracked as CVE-2026-111760.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-912/",
+    "publishedAt": "2026-11-11T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111760"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-912-0day-meta-detectron2-detection-checkpoi",
+      "article-11e5aa46",
+      "11e5aa46",
+      "zdi-26-912-0day-meta-detectron2-detection-checkpoi-6f3d0b",
+      "zdi-26-912-0day-meta-detectron2-detection-checkpoint-deseria"
     ]
   },
   {
@@ -9433,148 +9572,6 @@ export const news: NewsBrief[] = [
       "article-f8ad1984",
       "f8ad1984",
       "gitlab-critical-patch-release-19-5-4-19-4-6-19-3-8-78d304"
-    ]
-  },
-  {
-    "slug": "n-able-issues-advisory-on-critical-vulnerabilities-04f47419",
-    "title": "N-able Issues Advisory on Critical Vulnerabilities",
-    "summary": "N-able issued an advisory detailing critical vulnerabilities affecting its products. The advisory outlines specific flaws requiring immediate attention from affected customers. N-able recommends applying the provided patches or workarounds to mitigate the risks. Security teams should validate their installed versions against the advisory to determine exposure.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/n-able-issues-advisory-on-critical-vulnerabilities",
-    "publishedAt": "2026-11-10T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-issues-advisory-on-critical-vulnerabilities",
-      "article-04f47419",
-      "04f47419",
-      "n-able-issues-advisory-on-critical-vulnerabilities-114b13"
-    ]
-  },
-  {
-    "slug": "threat-actors-deploy-agentic-ai-pentesting-framewo-d48641a6",
-    "title": "Threat Actors Deploy Agentic AI Pentesting Framework",
-    "summary": "Threat actors are deploying an agentic AI pentesting framework, enabling automated reconnaissance and exploitation across target networks. The framework leverages large‑language models to generate attack vectors, increasing speed and reducing manual effort, and has been observed in the wild. Defenders should update detection rules, employ AI‑aware monitoring, and enforce strict privilege controls to mitigate automated exploitation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/artex-attackers-apply-agentic-ai",
-    "publishedAt": "2026-11-10T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "threat-actors-deploy-agentic-ai-pentesting-framewo",
-      "article-d48641a6",
-      "d48641a6",
-      "threat-actors-deploy-agentic-ai-pentesting-framewo-1e099a",
-      "threat-actors-deploy-agentic-ai-pentesting-framework"
-    ]
-  },
-  {
-    "slug": "byod-ransomware-encrypts-vanderbilt-university-dat-9df77b7b",
-    "title": "BYOD Ransomware Encrypts Vanderbilt University Databases",
-    "summary": "Vanderbilt University fell victim to a BYOD ransomware attack that encrypted its database systems and exfiltrated student, employee, and research data. The attackers leveraged credential‑stealing techniques to gain privileged access, locking critical databases and demanding payment. University officials isolated affected systems, applied patches, enforced MFA, and coordinated with law enforcement to mitigate the breach.",
-    "category": "Ransomware",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
-    "publishedAt": "2026-11-09T23:52:12.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "CyberNews AI",
-        "sourceUrl": "https://cybernewsai.com/blog/vanderbilt-university-hit-in-byod-ransomware-attack-dat"
-      },
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/vanderbilt-university-shuts-down-devices/"
-      }
-    ],
-    "aliases": [
-      "byod-ransomware-encrypts-vanderbilt-university-dat",
-      "article-9df77b7b",
-      "9df77b7b",
-      "byod-ransomware-encrypts-vanderbilt-university-dat-2017b8",
-      "byod-ransomware-encrypts-vanderbilt-university-databases"
-    ]
-  },
-  {
-    "slug": "ubuntu-libsoup-regression-introduces-multiple-cve-1469474b",
-    "title": "Ubuntu libsoup Regression Introduces Multiple CVE Vulnerabilities",
-    "summary": "Ubuntu’s libsoup regression introduced CVE-2026-4271, CVE-2026-5119, and related flaws in HTTP/2, HTTPS proxy, and chunked request handling. Remote attackers could use these to cause DoS, steal sensitive data, or bypass controls, though no active exploitation is known. Ubuntu’s USN-8890-3 patch addresses the regressions; administrators should apply the update promptly and monitor for service anomalies.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8890-3",
-    "publishedAt": "2026-11-09T23:12:32.000Z",
-    "cves": [
-      "CVE-2026-4271",
-      "CVE-2026-5119"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-libsoup-regression-introduces-multiple-cve",
-      "article-1469474b",
-      "1469474b",
-      "ubuntu-libsoup-regression-introduces-multiple-cve-7fc9c0",
-      "ubuntu-libsoup-regression-introduces-multiple-cve-vulnerabil"
-    ]
-  },
-  {
-    "slug": "ai-adoption-risks-cybersecurity-utility-trade-offs-5d18064e",
-    "title": "AI Adoption Risks Cybersecurity Utility Trade-offs",
-    "summary": "The Dark Reading Confidential series highlights concerns that rapid AI adoption may compromise cybersecurity safeguards. The episode warns that prioritizing AI utility can blind organizations to emerging threat vectors and policy gaps. Readers are encouraged to balance AI benefits with robust security controls, continuous monitoring, and risk assessment frameworks, and compliance oversight.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
-    "publishedAt": "2026-11-09T23:06:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-adoption-risks-cybersecurity-utility-trade-offs",
-      "article-5d18064e",
-      "5d18064e",
-      "ai-adoption-risks-cybersecurity-utility-trade-offs-4ad0eb"
-    ]
-  },
-  {
-    "slug": "aws-braket-sdk-exposes-two-cve-vulnerabilities-9a27a0b3",
-    "title": "AWS Braket SDK Exposes Two CVE Vulnerabilities",
-    "summary": "Amazon disclosed two CVE vulnerabilities affecting the Braket SDK and its schemas, impacting versions 1.10.0+ and 1.17.0+. CVE‑2026‑124034 involves insecure local hybrid job input download, while CVE‑2026‑124035 affects error‑mitigation schema validation, possibly enabling unauthorized data access. AWS advises updating to the latest SDK and schemas and applying the vendor’s patch or mitigation steps.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-175-aws/",
-    "publishedAt": "2026-11-09T22:42:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aws-braket-sdk-exposes-two-cve-vulnerabilities",
-      "article-9a27a0b3",
-      "9a27a0b3",
-      "aws-braket-sdk-exposes-two-cve-vulnerabilities-433bb4"
-    ]
-  },
-  {
-    "slug": "sega-exposes-2-2m-subscriber-emails-via-arara-brea-db5fcc69",
-    "title": "SEGA Exposes 2.2M Subscriber Emails via ARARA Breach",
-    "summary": "A data breach at SEGA’s third‑party newsletter provider ARARA exposed 2.2 million subscriber email addresses. Unauthorized access to ARARA’s database compromised email identifiers but not credentials or financial data; SEGA reported the incident in November 2026. SEGA notified affected users and advised monitoring for phishing, while ARARA conducts a forensic investigation and tightens access controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
-    "publishedAt": "2026-11-09T22:09:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sega-exposes-2-2m-subscriber-emails-via-arara-brea",
-      "article-db5fcc69",
-      "db5fcc69",
-      "sega-exposes-2-2m-subscriber-emails-via-arara-brea-245287",
-      "sega-exposes-2-2m-subscriber-emails-via-arara-breach"
     ]
   }
 ];
