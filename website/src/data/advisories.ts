@@ -2,6 +2,58 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-84987",
+    "slug": "cve-2026-84987",
+    "vendor": "Composer",
+    "product": "code16/sharp",
+    "name": "code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-625",
+    "ransomware": false,
+    "description": "An authenticated attacker can call the Autocomplete API with the configured endpoint as a substring to request another server-side route. The problem has been patched in 9.23.0 and pre-release version 10.0.0-beta.4. The regex verifying the endpoint has been anchored to forbid substring injection.",
+    "requiredAction": "Upgrade code16/sharp to version 9.23.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-g6f8-c3x9-jv7f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84987"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-84974",
+    "slug": "cve-2026-84974",
+    "vendor": "Composer",
+    "product": "code16/sharp",
+    "name": "code16/sharp: Arbitrary class instantiation through the embed_key API parameter",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.4,
+    "severity": "Medium",
+    "cwe": "CWE-470",
+    "ransomware": false,
+    "description": "An authenticated attacker can instantiate any class in the PHP application by using the embed_key parameter across multiple API endpoints. The instantiation is performed by the Laravel container. As a result, the __construct() method of the class is called and all constructor dependencies are resolved. The attacker cannot specify parameter values and cannot call any arbitrary method.",
+    "requiredAction": "Upgrade code16/sharp to version 9.23.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h24v-f482-8cwf"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84974"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-118740",
     "slug": "cve-2026-118740",
     "vendor": ".NET (NuGet)",
@@ -1343,50 +1395,6 @@ export const advisories: Advisory[] = [
       {
         "label": "GitHub Advisory",
         "url": "https://github.com/advisories/GHSA-gxg8-5rwf-cg43"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-wrm2-c2h2-4w82",
-    "slug": "ghsa-wrm2-c2h2-4w82",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-109478 - ASP.NET Core Denial of Service Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-407",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-r3qf-p3jm-8h4p. This link is maintained to preserve external references. Inefficient algorithmic complexity in ASP.NET Core allows an unauthorized attacker to deny service over a network.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-wrm2-c2h2-4w82"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-r33q-3g5w-gqx6",
-    "slug": "ghsa-r33q-3g5w-gqx6",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.TestPlatform.CLI",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "—",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-6856-87hx-p5x7. This link is maintained to preserve external references. Improper access control in .NET allows an authorized attacker to elevate privileges locally.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-r33q-3g5w-gqx6"
       }
     ],
     "source": "GITHUB"

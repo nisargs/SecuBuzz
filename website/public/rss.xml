@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 17:45:08 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 18:48:09 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e</guid>
+      <description><![CDATA[A security update is now available for Red Hat Single Sign-On 7.6 from the Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 18:35:49 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99763">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories</title>
+      <link>https://secubuzz.com/news/threatsday-59-linux-kernel-bugs-falcon-spyware-gso-8e5a5539</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/threatsday-59-linux-kernel-bugs-falcon-spyware-gso-8e5a5539</guid>
+      <description><![CDATA[A search result isn't always safe. An access request isn't always harmless. Attackers are using fake websites, stolen access, and trusted tools to get into places they shouldn't be.]]></description>
+      <pubDate>Thu, 12 Nov 2026 18:02:51 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html">The Hacker News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access</title>
+      <link>https://secubuzz.com/news/new-signdrop-zero-day-exploit-turns-windows-clfs-s-ac2d5382</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/new-signdrop-zero-day-exploit-turns-windows-clfs-s-ac2d5382</guid>
+      <description><![CDATA[Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year.]]></description>
+      <pubDate>Thu, 12 Nov 2026 17:50:27 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99725: Important: compat-openssl10 security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99725-important-compat-openssl10-securit-83bfad69</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99725-important-compat-openssl10-securit-83bfad69</guid>
+      <description><![CDATA[An update for compat-openssl10 is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 12 Nov 2026 17:47:05 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99725">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
     <item>
       <title>RHSA-2026:99630: Important: kernel security, bug fix, and enhancement update</title>
       <link>https://secubuzz.com/news/rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622</link>
@@ -42,6 +78,33 @@
       <pubDate>Thu, 12 Nov 2026 16:21:00 GMT</pubDate>
       <source url="https://therecord.media/european-authorities-take-down-stealic-malware-second-time">The Record</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Windows SignDrop Zero-Day Grants SYSTEM Privileges</title>
+      <link>https://secubuzz.com/news/windows-signdrop-zero-day-grants-system-privileges-29645304</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-signdrop-zero-day-grants-system-privileges-29645304</guid>
+      <description><![CDATA[A new Windows SignDrop zero‑day exploit enables attackers to obtain SYSTEM privileges on affected systems. The vulnerability allows unauthenticated remote code execution via a memory corruption flaw, giving attackers full control; no CVE listed, but public PoC demonstrates exploitation. Microsoft has not yet released a patch; security teams should apply the latest cumulative update and monitor for exploitation activity.]]></description>
+      <pubDate>Thu, 12 Nov 2026 16:04:00 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Citrix Releases Patches for 12 NetScaler Flaws</title>
+      <link>https://secubuzz.com/news/citrix-releases-patches-for-12-netscaler-flaws-4e7d75dc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-releases-patches-for-12-netscaler-flaws-4e7d75dc</guid>
+      <description><![CDATA[Citrix has issued patches for twelve critical NetScaler ADC, Gateway, and Console flaws that could enable denial‑of‑service or authentication bypass. The most severe flaw, CVE-2026-120868, is a memory overflow with CVSS 9.3 that permits unauthenticated remote code execution, potentially compromising entire NetScaler deployments. Citrix recommends applying the latest cumulative update immediately and verifying configuration changes to mitigate the vulnerabilities.]]></description>
+      <pubDate>Thu, 12 Nov 2026 15:38:49 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Apache Fixes Critical HTTP/2 RCE Vulnerability</title>
+      <link>https://secubuzz.com/news/apache-fixes-critical-http-2-rce-vulnerability-8fa80d31</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-fixes-critical-http-2-rce-vulnerability-8fa80d31</guid>
+      <description><![CDATA[Apache patched a critical mod_http2 race condition that could let unauthenticated attackers execute code on HTTP/2‑enabled servers. The flaw, CVE-2026-119618, exploits a race condition in HTTP/2, enabling unauthenticated remote code execution that could compromise all affected servers. Administrators should apply the latest Apache release and disable HTTP/2 if immediate patching is not possible to mitigate the vulnerability.]]></description>
+      <pubDate>Thu, 12 Nov 2026 15:38:31 GMT</pubDate>
+      <source url="https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/">SecurityWeek</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Picus Launches Autonomous AI Penetration Testing Tool</title>
@@ -393,69 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 09:38:00 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/">BleepingComputer</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues libX11 Security Update for RHEL 8.8</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libx11-security-update-for-rhel-8-8-2ee8cd62</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libx11-security-update-for-rhel-8-8-2ee8cd62</guid>
-      <description><![CDATA[Red Hat released a libX11 security update for RHEL 8.8 SAP and Telecommunications services, fixing multiple X11 client library vulnerabilities. The patch is rated Important, with CVSS base scores provided via CVE references, though no active exploitation has been reported. Red Hat advises immediate installation to prevent potential privilege escalation or denial-of-service attacks stemming from the affected functions.]]></description>
-      <pubDate>Thu, 12 Nov 2026 09:32:18 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99565">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues libX11 Update for RHEL 8.6 Support</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libx11-update-for-rhel-8-6-support-ecf27d5a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libx11-update-for-rhel-8-6-support-ecf27d5a</guid>
-      <description><![CDATA[Red Hat issued a libX11 security update for RHEL 8.6 Advanced Mission Critical and Extended Update Support, fixing several X11 client library flaws. The update is rated Important, with CVSS scores via CVE links, but no active exploitation has been seen. Red Hat recommends applying the patch promptly to mitigate privilege escalation or denial-of-service risks from the affected functions.]]></description>
-      <pubDate>Thu, 12 Nov 2026 09:28:31 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99566">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>MongoDB CVE-2026-118383 Causes Failover Crashes</title>
-      <link>https://secubuzz.com/news/mongodb-cve-2026-118383-causes-failover-crashes-31c90438</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mongodb-cve-2026-118383-causes-failover-crashes-31c90438</guid>
-      <description><![CDATA[A pre‑authentication flaw in MongoDB Server (CVE‑2026‑118383) lets attackers send two crafted requests that crash the database when a lagging replica is promoted to primary. The crash occurs only if the server still lacks recent changes, making failover a trigger for the denial‑of‑service condition. MongoDB released patched versions earlier this week; administrators should upgrade immediately to prevent service disruption.]]></description>
-      <pubDate>Thu, 12 Nov 2026 09:25:00 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html">The Hacker News</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>GitHub Repos Hit by Credential‑Stealing Malware</title>
-      <link>https://secubuzz.com/news/github-repos-hit-by-credential-stealing-malware-8980ad05</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/github-repos-hit-by-credential-stealing-malware-8980ad05</guid>
-      <description><![CDATA[A threat actor used stolen GitHub credentials to push a credential‑stealing payload into tens of thousands of repositories since November 10, targeting GitHub Actions secrets. In 1,800 repositories, the malware ran and exfiltrated secrets; Aikido named the campaign wfx‑loot and identified 4,837 compromised accounts. Users should revoke compromised tokens, audit repository access, and enable multi‑factor authentication to stop further theft.]]></description>
-      <pubDate>Thu, 12 Nov 2026 09:24:32 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/12/wfx-loot-github-actions-secret-stealer/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Quay Flaw Enables Private Image Theft</title>
-      <link>https://secubuzz.com/news/red-hat-quay-flaw-enables-private-image-theft-d1443023</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-quay-flaw-enables-private-image-theft-d1443023</guid>
-      <description><![CDATA[A critical flaw in Red Hat Quay lets attackers steal private container images, overwrite repositories, and maintain persistent access. The vulnerability permits unauthorized read and write operations on image repositories, potentially exposing sensitive code and facilitating further lateral movement. Red Hat recommends applying the latest Quay patch or upgrading to a supported version to stop data exfiltration.]]></description>
-      <pubDate>Thu, 12 Nov 2026 09:23:21 GMT</pubDate>
-      <source url="https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Maersk Data Theft Confirmed by WhiteArmor</title>
-      <link>https://secubuzz.com/news/maersk-data-theft-confirmed-by-whitearmor-7013f1c7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/maersk-data-theft-confirmed-by-whitearmor-7013f1c7</guid>
-      <description><![CDATA[WhiteArmor ransomware group claims to have stolen 100GB of data from Maersk during a $5 million extortion attempt. The breach involved exfiltration of shipping‑industry operational data, but no evidence shows ransomware execution or system compromise. Maersk should conduct a forensic investigation, reset compromised credentials, and strengthen access controls to mitigate further exfiltration.]]></description>
-      <pubDate>Thu, 12 Nov 2026 08:38:47 GMT</pubDate>
-      <source url="https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>.NET 11 Introduces Supply Chain Security Enhancements</title>
-      <link>https://secubuzz.com/news/net-11-introduces-supply-chain-security-enhanceme-603ed7a2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/net-11-introduces-supply-chain-security-enhanceme-603ed7a2</guid>
-      <description><![CDATA[Microsoft released .NET 11, a Standard Term Support release, adding C# 15, ASP.NET Core, .NET MAUI, and Windows development features. The update introduces changes to software supply chain integrity, authentication handling, and platform lifecycle to reduce future attack vectors. Defenders should adopt .NET 11 and plan migrations from unsupported .NET 8/9 to benefit from these security improvements.]]></description>
-      <pubDate>Thu, 12 Nov 2026 08:23:33 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/12/net-11-security-changes/">Help Net Security</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

@@ -5312,5 +5312,12 @@
   "https://access.redhat.com/errata/RHSA-2026:99122",
   "https://access.redhat.com/errata/RHSA-2026:99630",
   "https://access.redhat.com/errata/RHSA-2026:99660",
-  "https://cert.europa.eu/publications/security-advisories/2026-020/"
+  "https://cert.europa.eu/publications/security-advisories/2026-020/",
+  "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+  "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
+  "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+  "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
+  "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
+  "https://access.redhat.com/errata/RHSA-2026:99763",
+  "https://access.redhat.com/errata/RHSA-2026:99725"
 ]

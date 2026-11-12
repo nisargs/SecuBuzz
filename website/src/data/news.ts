@@ -11,6 +11,82 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e",
+    "title": "RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update",
+    "summary": "A security update is now available for Red Hat Single Sign-On 7.6 from the Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99763",
+    "publishedAt": "2026-11-12T18:35:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99763-critical-red-hat-single-sign-on-7",
+      "article-9a27c18e",
+      "9a27c18e",
+      "rhsa-2026-99763-critical-red-hat-single-sign-on-7-37d668",
+      "rhsa-2026-99763-critical-red-hat-single-sign-on-7-6-14-secur"
+    ]
+  },
+  {
+    "slug": "threatsday-59-linux-kernel-bugs-falcon-spyware-gso-8e5a5539",
+    "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
+    "summary": "A search result isn't always safe. An access request isn't always harmless. Attackers are using fake websites, stolen access, and trusted tools to get into places they shouldn't be.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
+    "publishedAt": "2026-11-12T18:02:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "threatsday-59-linux-kernel-bugs-falcon-spyware-gso",
+      "article-8e5a5539",
+      "8e5a5539",
+      "threatsday-59-linux-kernel-bugs-falcon-spyware-gso-3dad84",
+      "threatsday-59-linux-kernel-bugs-falcon-spyware-gsocket-backd"
+    ]
+  },
+  {
+    "slug": "new-signdrop-zero-day-exploit-turns-windows-clfs-s-ac2d5382",
+    "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+    "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+    "publishedAt": "2026-11-12T17:50:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "new-signdrop-zero-day-exploit-turns-windows-clfs-s",
+      "article-ac2d5382",
+      "ac2d5382",
+      "new-signdrop-zero-day-exploit-turns-windows-clfs-s-64d87b",
+      "new-signdrop-zero-day-exploit-turns-windows-clfs-security-fe"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99725-important-compat-openssl10-securit-83bfad69",
+    "title": "RHSA-2026:99725: Important: compat-openssl10 security update",
+    "summary": "An update for compat-openssl10 is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99725",
+    "publishedAt": "2026-11-12T17:47:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99725-important-compat-openssl10-securit",
+      "article-83bfad69",
+      "83bfad69",
+      "rhsa-2026-99725-important-compat-openssl10-securit-37d669",
+      "rhsa-2026-99725-important-compat-openssl10-security-update"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622",
     "title": "RHSA-2026:99630: Important: kernel security, bug fix, and enhancement update",
     "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -85,6 +161,64 @@ export const news: NewsBrief[] = [
       "6e7a742b",
       "european-authorities-take-down-steaic-malware-serv-4df0a2",
       "european-authorities-take-down-steaic-malware-servers-for-se"
+    ]
+  },
+  {
+    "slug": "windows-signdrop-zero-day-grants-system-privileges-29645304",
+    "title": "Windows SignDrop Zero-Day Grants SYSTEM Privileges",
+    "summary": "A new Windows SignDrop zero‑day exploit enables attackers to obtain SYSTEM privileges on affected systems. The vulnerability allows unauthenticated remote code execution via a memory corruption flaw, giving attackers full control; no CVE listed, but public PoC demonstrates exploitation. Microsoft has not yet released a patch; security teams should apply the latest cumulative update and monitor for exploitation activity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
+    "publishedAt": "2026-11-12T16:04:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-signdrop-zero-day-grants-system-privileges",
+      "article-29645304",
+      "29645304",
+      "windows-signdrop-zero-day-grants-system-privileges-15fe10"
+    ]
+  },
+  {
+    "slug": "citrix-releases-patches-for-12-netscaler-flaws-4e7d75dc",
+    "title": "Citrix Releases Patches for 12 NetScaler Flaws",
+    "summary": "Citrix has issued patches for twelve critical NetScaler ADC, Gateway, and Console flaws that could enable denial‑of‑service or authentication bypass. The most severe flaw, CVE-2026-120868, is a memory overflow with CVSS 9.3 that permits unauthenticated remote code execution, potentially compromising entire NetScaler deployments. Citrix recommends applying the latest cumulative update immediately and verifying configuration changes to mitigate the vulnerabilities.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+    "publishedAt": "2026-11-12T15:38:49.000Z",
+    "cves": [
+      "CVE-2026-120868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-releases-patches-for-12-netscaler-flaws",
+      "article-4e7d75dc",
+      "4e7d75dc",
+      "citrix-releases-patches-for-12-netscaler-flaws-2a885d"
+    ]
+  },
+  {
+    "slug": "apache-fixes-critical-http-2-rce-vulnerability-8fa80d31",
+    "title": "Apache Fixes Critical HTTP/2 RCE Vulnerability",
+    "summary": "Apache patched a critical mod_http2 race condition that could let unauthenticated attackers execute code on HTTP/2‑enabled servers. The flaw, CVE-2026-119618, exploits a race condition in HTTP/2, enabling unauthenticated remote code execution that could compromise all affected servers. Administrators should apply the latest Apache release and disable HTTP/2 if immediate patching is not possible to mitigate the vulnerability.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
+    "publishedAt": "2026-11-12T15:38:31.000Z",
+    "cves": [
+      "CVE-2026-119618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-fixes-critical-http-2-rce-vulnerability",
+      "article-8fa80d31",
+      "8fa80d31",
+      "apache-fixes-critical-http-2-rce-vulnerability-79fafe"
     ]
   },
   {
@@ -9407,137 +9541,6 @@ export const news: NewsBrief[] = [
       "article-b1149328",
       "b1149328",
       "ciso-forum-virtual-summit-2026-announced-7d4f97"
-    ]
-  },
-  {
-    "slug": "whitematter-secures-20m-series-a-funding-a5c740c5",
-    "title": "WhiteMatter Secures $20M Series A Funding",
-    "summary": "WhiteMatter, a cybersecurity startup, announced a $20 million Series A round to support its AI‑centric guardian agent platform. The platform installs a dedicated guardian agent on each AI agent within an organization, monitoring for anomalous behavior and enforcing policy compliance. Investors include XYZ Ventures and ABC Capital, and the company plans to expand analytics suite and integrate with cloud providers.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/whitematter-raises-20-million-in-series-a-funding/",
-    "publishedAt": "2026-11-10T14:58:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "whitematter-secures-20m-series-a-funding",
-      "article-a5c740c5",
-      "a5c740c5",
-      "whitematter-secures-20m-series-a-funding-125679"
-    ]
-  },
-  {
-    "slug": "sap-releases-patches-for-critical-icm2shell-proxyg-09424f5e",
-    "title": "SAP Releases Patches for Critical ICM2SHELL, ProxyGate Bugs",
-    "summary": "SAP has issued 42 new and updated security advisories, including nine that address critical‑severity vulnerabilities in its ICM2SHELL and ProxyGate components. The critical flaws involve improper handling of input data, potentially enabling remote code execution, but no active exploitation has been reported. SAP recommends applying the released patches immediately to mitigate the identified risks and prevent potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/",
-    "publishedAt": "2026-11-10T14:46:28.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sap-releases-patches-for-critical-icm2shell-proxyg",
-      "article-09424f5e",
-      "09424f5e",
-      "sap-releases-patches-for-critical-icm2shell-proxyg-567cdd",
-      "sap-releases-patches-for-critical-icm2shell-proxygate-bugs"
-    ]
-  },
-  {
-    "slug": "ai-reverse-engineering-let-researchers-add-a-new-f-4d48b7e9",
-    "title": "AI reverse engineering let researchers add a new feature to Slack",
-    "summary": "Intezer researchers used AI agents to rebuild source code for Slack, Apple’s Finder and a TinyTurla-NG sample, from a backdoor family Cisco Talos attributes to the Turla group. The rebuilt Slack ran well enough that the team added a new feature to it: AI text autocomplete, powered by a small local model.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/slack-ai-reverse-engineering/",
-    "publishedAt": "2026-11-10T14:45:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-reverse-engineering-let-researchers-add-a-new-f",
-      "article-4d48b7e9",
-      "4d48b7e9",
-      "ai-reverse-engineering-let-researchers-add-a-new-f-5d0b6c",
-      "ai-reverse-engineering-let-researchers-add-a-new-feature-to-"
-    ]
-  },
-  {
-    "slug": "losapio-nominated-to-lead-cisa-amid-senate-uncerta-e092c1d2",
-    "title": "LoSapio Nominated to Lead CISA Amid Senate Uncertainty",
-    "summary": "Palantir's chief information security officer, Michael LoSapio, has been nominated by President Donald Trump to lead the Cybersecurity and Infrastructure Security Agency. The nomination awaits a lame‑duck Senate vote, leaving the confirmation status uncertain amid political debate over CISA leadership. If confirmed, LoSapio would oversee federal cybersecurity policy, incident response coordination, and critical infrastructure protection initiatives.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/michael-losapio-cisa-director-nomination",
-    "publishedAt": "2026-11-10T14:31:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "losapio-nominated-to-lead-cisa-amid-senate-uncerta",
-      "article-e092c1d2",
-      "e092c1d2",
-      "losapio-nominated-to-lead-cisa-amid-senate-uncerta-48000d",
-      "losapio-nominated-to-lead-cisa-amid-senate-uncertainty"
-    ]
-  },
-  {
-    "slug": "north-korea-targets-drone-tech-and-software-supply-93ca9b9c",
-    "title": "North Korea Targets Drone Tech and Software Supply Chains",
-    "summary": "North Korean actors Lazarus and DeceptiveDevelopment resumed cyberespionage against drone technology and software supply chains between April and September 2026. They used stolen developer credentials to inject malicious code into open‑source projects and targeted European defense entities, widening the threat surface. Defenders should monitor supply‑chain integrity, enforce strict credential hygiene, and apply security patches to exposed development environments.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/north-korean-hackers-3/",
-    "publishedAt": "2026-11-10T14:09:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "north-korea-targets-drone-tech-and-software-supply",
-      "article-93ca9b9c",
-      "93ca9b9c",
-      "north-korea-targets-drone-tech-and-software-supply-63ada6",
-      "north-korea-targets-drone-tech-and-software-supply-chains"
-    ]
-  },
-  {
-    "slug": "check-point-traces-copperdragon-sparrow-framework-47e2b6b2",
-    "title": "Check Point Traces CopperDragon Sparrow Framework Globally",
-    "summary": "Check Point Research tracked intrusion campaigns attributed to CopperDragon using a shared Sparrow framework across Latin America, Asia, and Europe. The campaigns employed distinct backdoors and post-exploitation tools while sharing common infrastructure patterns. defenders should monitor for lateral movement indicators and apply network segmentation to limit blast radius during active intrusions.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "Check Point Research",
-    "sourceUrl": "https://research.checkpoint.com/2026/not-all-that-glitters-is-gold-tracking-copperdragons-sparrow-framework-around-the-globe/",
-    "publishedAt": "2026-11-10T14:01:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "check-point-traces-copperdragon-sparrow-framework",
-      "article-47e2b6b2",
-      "47e2b6b2",
-      "check-point-traces-copperdragon-sparrow-framework-3c011b",
-      "check-point-traces-copperdragon-sparrow-framework-globally"
-    ]
-  },
-  {
-    "slug": "dreeze-secures-33m-seed-funding-for-cloud-recovery-8e55b81a",
-    "title": "Dreeze Secures $33M Seed Funding for Cloud Recovery",
-    "summary": "Dreeze, a stealth startup, secured $33 million in seed funding to launch its Application Revival platform for Amazon Web Services. The platform automates full cloud application recovery by restoring data, infrastructure, and dependencies in the order required for operational continuity. Dreeze’s solution addresses gaps where traditional backups leave businesses offline, offering a comprehensive restoration workflow for enterprise cloud environments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/dreeze-application-revival-33-million-funding/",
-    "publishedAt": "2026-11-10T14:00:13.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "dreeze-secures-33m-seed-funding-for-cloud-recovery",
-      "article-8e55b81a",
-      "8e55b81a",
-      "dreeze-secures-33m-seed-funding-for-cloud-recovery-7994f3"
     ]
   }
 ];
