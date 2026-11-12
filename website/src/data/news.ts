@@ -11,6 +11,171 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "n-able-rushes-patches-for-exploited-n-central-zero-e8c9811c",
+    "title": "N-able Rushes Patches for Exploited N-central Zero-Days",
+    "summary": "Threat actors are actively targeting zero-day vulnerabilities within N-able N-central remote management software following recent public disclosures. The malicious campaign surfaced shortly after a security researcher publicly dropped over 30 zero-day flaws affecting the enterprise management platform. In response to active threat activity, N-able released urgent patches specifically addressing the unauthenticated security vulnerabilities.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
+    "publishedAt": "2026-11-12T09:39:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-able-rushes-patches-for-exploited-n-central-zero",
+      "article-e8c9811c",
+      "e8c9811c",
+      "n-able-rushes-patches-for-exploited-n-central-zero-208753",
+      "n-able-rushes-patches-for-exploited-n-central-zero-days"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-libx11-security-update-for-rhel-8-8-2ee8cd62",
+    "title": "Red Hat Issues libX11 Security Update for RHEL 8.8",
+    "summary": "Red Hat released a libX11 security update for RHEL 8.8 SAP and Telecommunications services, fixing multiple X11 client library vulnerabilities. The patch is rated Important, with CVSS base scores provided via CVE references, though no active exploitation has been reported. Red Hat advises immediate installation to prevent potential privilege escalation or denial-of-service attacks stemming from the affected functions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99565",
+    "publishedAt": "2026-11-12T09:32:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libx11-security-update-for-rhel-8-8",
+      "article-2ee8cd62",
+      "2ee8cd62",
+      "red-hat-issues-libx11-security-update-for-rhel-8-8-37d670"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-libx11-update-for-rhel-8-6-support-ecf27d5a",
+    "title": "Red Hat Issues libX11 Update for RHEL 8.6 Support",
+    "summary": "Red Hat issued a libX11 security update for RHEL 8.6 Advanced Mission Critical and Extended Update Support, fixing several X11 client library flaws. The update is rated Important, with CVSS scores via CVE links, but no active exploitation has been seen. Red Hat recommends applying the patch promptly to mitigate privilege escalation or denial-of-service risks from the affected functions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99566",
+    "publishedAt": "2026-11-12T09:28:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-libx11-update-for-rhel-8-6-support",
+      "article-ecf27d5a",
+      "ecf27d5a",
+      "red-hat-issues-libx11-update-for-rhel-8-6-support-37d670"
+    ]
+  },
+  {
+    "slug": "github-repos-hit-by-credential-stealing-malware-8980ad05",
+    "title": "GitHub Repos Hit by Credential‑Stealing Malware",
+    "summary": "A threat actor used stolen GitHub credentials to push a credential‑stealing payload into tens of thousands of repositories since November 10, targeting GitHub Actions secrets. In 1,800 repositories, the malware ran and exfiltrated secrets; Aikido named the campaign wfx‑loot and identified 4,837 compromised accounts. Users should revoke compromised tokens, audit repository access, and enable multi‑factor authentication to stop further theft.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/wfx-loot-github-actions-secret-stealer/",
+    "publishedAt": "2026-11-12T09:24:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-repos-hit-by-credential-stealing-malware",
+      "article-8980ad05",
+      "8980ad05",
+      "github-repos-hit-by-credential-stealing-malware-6f9485"
+    ]
+  },
+  {
+    "slug": "red-hat-quay-flaw-enables-private-image-theft-d1443023",
+    "title": "Red Hat Quay Flaw Enables Private Image Theft",
+    "summary": "A critical flaw in Red Hat Quay lets attackers steal private container images, overwrite repositories, and maintain persistent access. The vulnerability permits unauthorized read and write operations on image repositories, potentially exposing sensitive code and facilitating further lateral movement. Red Hat recommends applying the latest Quay patch or upgrading to a supported version to stop data exfiltration.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
+    "publishedAt": "2026-11-12T09:23:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-quay-flaw-enables-private-image-theft",
+      "article-d1443023",
+      "d1443023",
+      "red-hat-quay-flaw-enables-private-image-theft-3bd886"
+    ]
+  },
+  {
+    "slug": "node-js-http-2-flaws-crash-servers-leak-data-95e8fd61",
+    "title": "Node.js HTTP/2 Flaws Crash Servers, Leak Data",
+    "summary": "Unauthenticated clients can crash Node.js servers using HTTP/2 on 24.x and 26.x lines, and a second flaw leaks memory containing responses for other connections. The flaw stems from improper HTTP/2 frame handling, enabling denial of service and cross‑connection data exposure without authentication. Node.js released patched versions 22.23.5, 24.22.3, and 26.13.1; upgrade immediately to stop crashes and leaks.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+    "publishedAt": "2026-11-12T08:20:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-http-2-flaws-crash-servers-leak-data",
+      "article-95e8fd61",
+      "95e8fd61",
+      "node-js-http-2-flaws-crash-servers-leak-data-160886"
+    ]
+  },
+  {
+    "slug": "github-accounts-hijacked-secret-stealing-malware-d-3a685923",
+    "title": "GitHub Accounts Hijacked, Secret-Stealing Malware Deployed",
+    "summary": "A threat actor hijacked 4,837 GitHub accounts and pushed a secret‑stealing payload into 61,764 repositories, targeting secrets in GitHub Actions. The actor used stolen credentials to gain unauthenticated write access, enabling malware to exfiltrate CI pipeline secrets without user interaction. GitHub issued a security advisory, urging token revocation, two‑factor authentication, and repository scans for malicious code.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/github-accounts/",
+    "publishedAt": "2026-11-12T08:15:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-accounts-hijacked-secret-stealing-malware-d",
+      "article-3a685923",
+      "3a685923",
+      "github-accounts-hijacked-secret-stealing-malware-d-71b926",
+      "github-accounts-hijacked-secret-stealing-malware-deployed"
+    ]
+  },
+  {
+    "slug": "pci-dss-4-0-compliance-tool-rankings-released-c2ea2380",
+    "title": "PCI DSS 4.0 Compliance Tool Rankings Released",
+    "summary": "Cyber Security News released a comparative guide evaluating ten top compliance platforms designed for PCI DSS 4.x standards. The analysis reviews platforms across scope-reduction architecture, continuous technical controls, merchant management, and Qualified Security Assessor assessment automation stacks. Organizations subject to payment card security standards should review these tool benchmarks to streamline audit preparation and continuous control compliance.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/top-10-best-pci-dss-compliance-tools-in-2026-ranked-scored-best-pci-dss-compliance-tools/",
+    "publishedAt": "2026-11-12T07:39:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "pci-dss-4-0-compliance-tool-rankings-released",
+      "article-c2ea2380",
+      "c2ea2380",
+      "pci-dss-4-0-compliance-tool-rankings-released-544998"
+    ]
+  },
+  {
+    "slug": "cyber-security-news-ranks-top-risk-management-plat-ea8b549b",
+    "title": "Cyber Security News Ranks Top Risk Management Platforms",
+    "summary": "Cyber Security News published a review ranking ten leading IT and cybersecurity risk management platforms for enterprise governance. The evaluation scored tools based on workflow effectiveness, tracking risk intake, treatment, exception management, and financial risk quantification capabilities. Security teams can evaluate these platform rankings to optimize risk register tracking, streamline accountability, and improve overall risk remediation workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-it-cyber-risk-tools/",
+    "publishedAt": "2026-11-12T07:35:26.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cyber-security-news-ranks-top-risk-management-plat",
+      "article-ea8b549b",
+      "ea8b549b",
+      "cyber-security-news-ranks-top-risk-management-plat-44a65b",
+      "cyber-security-news-ranks-top-risk-management-platforms"
+    ]
+  },
+  {
     "slug": "github-discusses-accountability-for-ai-patch-flaws-8806da92",
     "title": "GitHub Discusses Accountability for AI Patch Flaws",
     "summary": "GitHub’s Agentic Autofix can fix one vulnerability while creating another, raising accountability questions for patches. The tool re‑runs detection engines and project tests after patching, but can miss side effects, requiring validation and metric monitoring. Security teams should adjust CISO policies before deploying the agent, select models, and apply continuous testing to mitigate flaws.",
@@ -138,6 +303,25 @@ export const news: NewsBrief[] = [
       "article-512bf67b",
       "512bf67b",
       "red-hat-issues-important-update-for-aspell-37d671"
+    ]
+  },
+  {
+    "slug": "cisos-and-ot-engineers-disagree-on-cyber-resilienc-74ca386a",
+    "title": "CISOs and OT Engineers Disagree on Cyber Resilience",
+    "summary": "According to a SANS survey, CISOs and engineers disagree on operational technology resilience during IT compromises. While all surveyed security chiefs expect facilities to maintain output using manual controls, only 15% of engineering practitioners express confidence in process survival. Industrial organizations should align leadership expectations with frontline engineering capabilities to improve manual operational procedures and threat response plans.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/sans-industrial-cybersecurity-survey/",
+    "publishedAt": "2026-11-12T05:30:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisos-and-ot-engineers-disagree-on-cyber-resilienc",
+      "article-74ca386a",
+      "74ca386a",
+      "cisos-and-ot-engineers-disagree-on-cyber-resilienc-192a98",
+      "cisos-and-ot-engineers-disagree-on-cyber-resilience"
     ]
   },
   {
@@ -816,6 +1000,43 @@ export const news: NewsBrief[] = [
       "article-2755b85e",
       "2755b85e",
       "red-hat-issues-qt6-qtbase-update-for-rhel-10-2-37d67f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99141-important-mutter-security-update-333c9897",
+    "title": "RHSA-2026:99141: Important: mutter security update",
+    "summary": "An update for mutter is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99141",
+    "publishedAt": "2026-11-11T22:35:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99141-important-mutter-security-update",
+      "article-333c9897",
+      "333c9897",
+      "rhsa-2026-99141-important-mutter-security-update-37d67f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99125-moderate-gnome-remote-desktop-secu-89fe8809",
+    "title": "RHSA-2026:99125: Moderate: gnome-remote-desktop security update",
+    "summary": "An update for gnome-remote-desktop is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99125",
+    "publishedAt": "2026-11-11T22:34:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99125-moderate-gnome-remote-desktop-secu",
+      "article-89fe8809",
+      "89fe8809",
+      "rhsa-2026-99125-moderate-gnome-remote-desktop-secu-37d67f",
+      "rhsa-2026-99125-moderate-gnome-remote-desktop-security-updat"
     ]
   },
   {
@@ -9354,196 +9575,6 @@ export const news: NewsBrief[] = [
       "article-e356f9b9",
       "e356f9b9",
       "improper-privilege-management-3bcda5"
-    ]
-  },
-  {
-    "slug": "fortinet-fixes-os-command-injection-flaw-in-fortim-2d592ff6",
-    "title": "Fortinet Fixes OS Command Injection Flaw in FortiMail",
-    "summary": "Fortinet disclosed an OS command injection vulnerability affecting its FortiMail secure email gateway platform. Classified under CWE-78 with a CVSSv3 score of 7.2, the flaw allows an authenticated administrator to execute arbitrary commands as root using specially crafted HTTP requests. Administrators should review the updated FortiGuard PSIRT advisory and apply recommended updates to prevent escalation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-210",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-fixes-os-command-injection-flaw-in-fortim",
-      "article-2d592ff6",
-      "2d592ff6",
-      "fortinet-fixes-os-command-injection-flaw-in-fortim-3bcda6",
-      "fortinet-fixes-os-command-injection-flaw-in-fortimail"
-    ]
-  },
-  {
-    "slug": "fortinet-patches-command-injection-flaw-in-managem-fe551848",
-    "title": "Fortinet Patches Command Injection Flaw in Management Products",
-    "summary": "Fortinet reported an OS command injection flaw affecting GUI components in FortiManager, FortiAnalyzer, FortiManager Cloud, FortiAnalyzer Cloud, and FortiSASE-Sovereign. Assigned CWE-78 with a 7.2 CVSSv3 score, the weakness enables authenticated attackers to execute arbitrary commands through crafted HTTP requests. Security teams should consult the revised FortiGuard advisory and apply necessary software updates across affected deployments.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-251",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-patches-command-injection-flaw-in-managem",
-      "article-fe551848",
-      "fe551848",
-      "fortinet-patches-command-injection-flaw-in-managem-3bcda5",
-      "fortinet-patches-command-injection-flaw-in-management-produc"
-    ]
-  },
-  {
-    "slug": "improper-neutralization-of-special-elements-used-i-8a3d6063",
-    "title": "Improper neutralization of special elements used in an SQL command",
-    "summary": "CVSSv3 Score: 8.8 An improper neutralization of special elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] in FortiAnalyzer, FortiAnalyzer Cloud, FortiManager and FortiManager Cloud may allow an authenticated attacker to execute unauthorized code or commands via crafted JSON-RPC requests.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-221",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "improper-neutralization-of-special-elements-used-i",
-      "article-8a3d6063",
-      "8a3d6063",
-      "improper-neutralization-of-special-elements-used-i-3bcda6",
-      "improper-neutralization-of-special-elements-used-in-an-sql-c"
-    ]
-  },
-  {
-    "slug": "fortinet-patches-sql-injection-vulnerability-in-co-8467f4d3",
-    "title": "Fortinet Patches SQL Injection Vulnerability in Collectoragent",
-    "summary": "Fortinet disclosed an SQL injection vulnerability affecting the collectoragent component in its enterprise security software. Tracked with a CVSSv3 score of 8.3, the flaw stems from improper neutralization of special elements within SQL commands. An authenticated attacker can leverage HTTP requests to execute unauthorized code or system commands, prompting Fortinet to revise its advisory.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-266",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-patches-sql-injection-vulnerability-in-co",
-      "article-8467f4d3",
-      "8467f4d3",
-      "fortinet-patches-sql-injection-vulnerability-in-co-3bcda5",
-      "fortinet-patches-sql-injection-vulnerability-in-collectorage"
-    ]
-  },
-  {
-    "slug": "fortimail-fortirecorder-os-command-injection-vulne-b3263854",
-    "title": "FortiMail, FortiRecorder OS Command Injection Vulnerability",
-    "summary": "FortiMail and FortiRecorder OS Command Injection allows authenticated privileged attackers to run unauthorized code via crafted archive account configurations. The flaw arises from improper neutralization of special elements (CWE‑78) and has a CVSS 7.2 score, enabling remote code execution. Fortinet released patches; teams should apply updates immediately and harden archive account settings.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-198",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimail-fortirecorder-os-command-injection-vulne",
-      "article-b3263854",
-      "b3263854",
-      "fortimail-fortirecorder-os-command-injection-vulne-3bcda8",
-      "fortimail-fortirecorder-os-command-injection-vulnerability"
-    ]
-  },
-  {
-    "slug": "fortimail-os-command-injection-enables-root-execut-13d41b0e",
-    "title": "FortiMail OS Command Injection Enables Root Execution",
-    "summary": "FortiMail OS Command Injection allows an authenticated administrator with system‑time read‑write access to execute code as root. The flaw results from improper neutralization of special elements (CWE‑78) and carries a CVSS 7.2 score, enabling privileged code execution. Fortinet has issued patches; administrators should apply updates promptly and restrict system‑time write permissions.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-197",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimail-os-command-injection-enables-root-execut",
-      "article-13d41b0e",
-      "13d41b0e",
-      "fortimail-os-command-injection-enables-root-execut-3bcda8",
-      "fortimail-os-command-injection-enables-root-execution"
-    ]
-  },
-  {
-    "slug": "fortinet-patches-sql-injection-bug-in-fortimanager-ab02bfce",
-    "title": "Fortinet Patches SQL Injection Bug in FortiManager and FortiAnalyzer",
-    "summary": "Fortinet disclosed an SQL injection flaw in FortiManager, FortiManager Cloud, FortiAnalyzer, and FortiAnalyzer Cloud devices. Designated as a CWE-89 weakness with a 7.1 CVSSv3 score, the flaw allows authenticated attackers to execute unauthorized SQL commands using crafted requests. Administrators should review the revised Fortinet advisory and deploy official vendor software updates to secure vulnerable deployments.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-233",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-patches-sql-injection-bug-in-fortimanager",
-      "article-ab02bfce",
-      "ab02bfce",
-      "fortinet-patches-sql-injection-bug-in-fortimanager-3bcda5",
-      "fortinet-patches-sql-injection-bug-in-fortimanager-and-forti"
-    ]
-  },
-  {
-    "slug": "improper-neutralization-of-special-elements-used-i-0f4ba94c",
-    "title": "Improper neutralization of special elements used in an OS command",
-    "summary": "CVSSv3 Score: 7.2 An improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability (CWE-78) in FortiAnalyzer, FortiAnalyzer Cloud, FortiManager, FortiManager Cloud system-ha plugin may allow an authenticated attacker to execute unauthorized commands via a crafted HTTP request.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-246",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "improper-neutralization-of-special-elements-used-i",
-      "article-0f4ba94c",
-      "0f4ba94c",
-      "improper-neutralization-of-special-elements-used-i-3bcda5",
-      "improper-neutralization-of-special-elements-used-in-an-os-co"
-    ]
-  },
-  {
-    "slug": "fortimanager-argument-injection-privilege-escalati-e9e70a94",
-    "title": "FortiManager Argument Injection Privilege Escalation",
-    "summary": "An improper neutralization of argument delimiters in FortiManager, FortiAnalyzer, and cloud variants permits authenticated privileged admins to execute unauthorized code. The flaw, rated CVSSv3 7.2, arises from insufficient escaping of shell metacharacters during command construction, enabling local code execution. Fortinet released a patch in the latest firmware; administrators should upgrade or apply the advisory to mitigate the vulnerability.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-239",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortimanager-argument-injection-privilege-escalati",
-      "article-e9e70a94",
-      "e9e70a94",
-      "fortimanager-argument-injection-privilege-escalati-3bcda5",
-      "fortimanager-argument-injection-privilege-escalation"
-    ]
-  },
-  {
-    "slug": "fortios-ssh-daemon-authentication-bypass-path-trav-0064a9d7",
-    "title": "FortiOS SSH Daemon Authentication Bypass Path Traversal",
-    "summary": "A path traversal flaw in FortiOS, FortiSASE, FortiProxy, and FortiPam ssh daemon allows unauthenticated attackers to bypass authentication via crafted credentials. The vulnerability, CVSSv3 7.4, exploits improper sanitization of SSH credentials, enabling remote code execution without prior authentication. Fortinet issued a patch in the latest firmware; users should update immediately to prevent authentication bypass.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Fortinet FortiGuard PSIRT",
-    "sourceUrl": "https://fortiguard.fortinet.com/psirt/FG-IR-26-269",
-    "publishedAt": "2026-11-10T08:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortios-ssh-daemon-authentication-bypass-path-trav",
-      "article-0064a9d7",
-      "0064a9d7",
-      "fortios-ssh-daemon-authentication-bypass-path-trav-3bcda5",
-      "fortios-ssh-daemon-authentication-bypass-path-traversal"
     ]
   }
 ];

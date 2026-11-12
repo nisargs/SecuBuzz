@@ -5,8 +5,89 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:52:09 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 09:48:56 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>N-able Rushes Patches for Exploited N-central Zero-Days</title>
+      <link>https://secubuzz.com/news/n-able-rushes-patches-for-exploited-n-central-zero-e8c9811c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-able-rushes-patches-for-exploited-n-central-zero-e8c9811c</guid>
+      <description><![CDATA[Threat actors are actively targeting zero-day vulnerabilities within N-able N-central remote management software following recent public disclosures. The malicious campaign surfaced shortly after a security researcher publicly dropped over 30 zero-day flaws affecting the enterprise management platform. In response to active threat activity, N-able released urgent patches specifically addressing the unauthenticated security vulnerabilities.]]></description>
+      <pubDate>Thu, 12 Nov 2026 09:39:55 GMT</pubDate>
+      <source url="https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues libX11 Security Update for RHEL 8.8</title>
+      <link>https://secubuzz.com/news/red-hat-issues-libx11-security-update-for-rhel-8-8-2ee8cd62</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libx11-security-update-for-rhel-8-8-2ee8cd62</guid>
+      <description><![CDATA[Red Hat released a libX11 security update for RHEL 8.8 SAP and Telecommunications services, fixing multiple X11 client library vulnerabilities. The patch is rated Important, with CVSS base scores provided via CVE references, though no active exploitation has been reported. Red Hat advises immediate installation to prevent potential privilege escalation or denial-of-service attacks stemming from the affected functions.]]></description>
+      <pubDate>Thu, 12 Nov 2026 09:32:18 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99565">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Issues libX11 Update for RHEL 8.6 Support</title>
+      <link>https://secubuzz.com/news/red-hat-issues-libx11-update-for-rhel-8-6-support-ecf27d5a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libx11-update-for-rhel-8-6-support-ecf27d5a</guid>
+      <description><![CDATA[Red Hat issued a libX11 security update for RHEL 8.6 Advanced Mission Critical and Extended Update Support, fixing several X11 client library flaws. The update is rated Important, with CVSS scores via CVE links, but no active exploitation has been seen. Red Hat recommends applying the patch promptly to mitigate privilege escalation or denial-of-service risks from the affected functions.]]></description>
+      <pubDate>Thu, 12 Nov 2026 09:28:31 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99566">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GitHub Repos Hit by Credential‑Stealing Malware</title>
+      <link>https://secubuzz.com/news/github-repos-hit-by-credential-stealing-malware-8980ad05</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-repos-hit-by-credential-stealing-malware-8980ad05</guid>
+      <description><![CDATA[A threat actor used stolen GitHub credentials to push a credential‑stealing payload into tens of thousands of repositories since November 10, targeting GitHub Actions secrets. In 1,800 repositories, the malware ran and exfiltrated secrets; Aikido named the campaign wfx‑loot and identified 4,837 compromised accounts. Users should revoke compromised tokens, audit repository access, and enable multi‑factor authentication to stop further theft.]]></description>
+      <pubDate>Thu, 12 Nov 2026 09:24:32 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/12/wfx-loot-github-actions-secret-stealer/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Red Hat Quay Flaw Enables Private Image Theft</title>
+      <link>https://secubuzz.com/news/red-hat-quay-flaw-enables-private-image-theft-d1443023</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-quay-flaw-enables-private-image-theft-d1443023</guid>
+      <description><![CDATA[A critical flaw in Red Hat Quay lets attackers steal private container images, overwrite repositories, and maintain persistent access. The vulnerability permits unauthorized read and write operations on image repositories, potentially exposing sensitive code and facilitating further lateral movement. Red Hat recommends applying the latest Quay patch or upgrading to a supported version to stop data exfiltration.]]></description>
+      <pubDate>Thu, 12 Nov 2026 09:23:21 GMT</pubDate>
+      <source url="https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Node.js HTTP/2 Flaws Crash Servers, Leak Data</title>
+      <link>https://secubuzz.com/news/node-js-http-2-flaws-crash-servers-leak-data-95e8fd61</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/node-js-http-2-flaws-crash-servers-leak-data-95e8fd61</guid>
+      <description><![CDATA[Unauthenticated clients can crash Node.js servers using HTTP/2 on 24.x and 26.x lines, and a second flaw leaks memory containing responses for other connections. The flaw stems from improper HTTP/2 frame handling, enabling denial of service and cross‑connection data exposure without authentication. Node.js released patched versions 22.23.5, 24.22.3, and 26.13.1; upgrade immediately to stop crashes and leaks.]]></description>
+      <pubDate>Thu, 12 Nov 2026 08:20:37 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html">The Hacker News</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>GitHub Accounts Hijacked, Secret-Stealing Malware Deployed</title>
+      <link>https://secubuzz.com/news/github-accounts-hijacked-secret-stealing-malware-d-3a685923</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-accounts-hijacked-secret-stealing-malware-d-3a685923</guid>
+      <description><![CDATA[A threat actor hijacked 4,837 GitHub accounts and pushed a secret‑stealing payload into 61,764 repositories, targeting secrets in GitHub Actions. The actor used stolen credentials to gain unauthenticated write access, enabling malware to exfiltrate CI pipeline secrets without user interaction. GitHub issued a security advisory, urging token revocation, two‑factor authentication, and repository scans for malicious code.]]></description>
+      <pubDate>Thu, 12 Nov 2026 08:15:03 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/github-accounts/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>PCI DSS 4.0 Compliance Tool Rankings Released</title>
+      <link>https://secubuzz.com/news/pci-dss-4-0-compliance-tool-rankings-released-c2ea2380</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/pci-dss-4-0-compliance-tool-rankings-released-c2ea2380</guid>
+      <description><![CDATA[Cyber Security News released a comparative guide evaluating ten top compliance platforms designed for PCI DSS 4.x standards. The analysis reviews platforms across scope-reduction architecture, continuous technical controls, merchant management, and Qualified Security Assessor assessment automation stacks. Organizations subject to payment card security standards should review these tool benchmarks to streamline audit preparation and continuous control compliance.]]></description>
+      <pubDate>Thu, 12 Nov 2026 07:39:02 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/top-10-best-pci-dss-compliance-tools-in-2026-ranked-scored-best-pci-dss-compliance-tools/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Cyber Security News Ranks Top Risk Management Platforms</title>
+      <link>https://secubuzz.com/news/cyber-security-news-ranks-top-risk-management-plat-ea8b549b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cyber-security-news-ranks-top-risk-management-plat-ea8b549b</guid>
+      <description><![CDATA[Cyber Security News published a review ranking ten leading IT and cybersecurity risk management platforms for enterprise governance. The evaluation scored tools based on workflow effectiveness, tracking risk intake, treatment, exception management, and financial risk quantification capabilities. Security teams can evaluate these platform rankings to optimize risk register tracking, streamline accountability, and improve overall risk remediation workflows.]]></description>
+      <pubDate>Thu, 12 Nov 2026 07:35:26 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-it-cyber-risk-tools/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>GitHub Discusses Accountability for AI Patch Flaws</title>
       <link>https://secubuzz.com/news/github-discusses-accountability-for-ai-patch-flaws-8806da92</link>
@@ -69,6 +150,15 @@
       <pubDate>Thu, 12 Nov 2026 05:49:15 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99511">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>CISOs and OT Engineers Disagree on Cyber Resilience</title>
+      <link>https://secubuzz.com/news/cisos-and-ot-engineers-disagree-on-cyber-resilienc-74ca386a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisos-and-ot-engineers-disagree-on-cyber-resilienc-74ca386a</guid>
+      <description><![CDATA[According to a SANS survey, CISOs and engineers disagree on operational technology resilience during IT compromises. While all surveyed security chiefs expect facilities to maintain output using manual controls, only 15% of engineering practitioners express confidence in process survival. Industrial organizations should align leadership expectations with frontline engineering capabilities to improve manual operational procedures and threat response plans.]]></description>
+      <pubDate>Thu, 12 Nov 2026 05:30:13 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/12/sans-industrial-cybersecurity-survey/">Help Net Security</source>
+      <category>General</category>
     </item>
     <item>
       <title>Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely</title>
@@ -366,96 +456,6 @@
       <pubDate>Wed, 11 Nov 2026 23:00:53 GMT</pubDate>
       <source url="https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/">Unit 42</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>ScreenConnect Malware Breaches MSPs, Targets Customer Devices</title>
-      <link>https://secubuzz.com/news/screenconnect-malware-breaches-msps-targets-custom-1b502196</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-malware-breaches-msps-targets-custom-1b502196</guid>
-      <description><![CDATA[ConnectWise investigated a malware campaign that leveraged compromised ScreenConnect environments to deploy rogue remote‑access clients to customer devices of managed service providers. The attacks enabled attackers to gain remote control over client systems, potentially exfiltrating data and installing additional malicious payloads. ConnectWise recommends MSPs update ScreenConnect to the latest version, enforce strict access controls, and monitor for unauthorized remote‑access activity.]]></description>
-      <pubDate>Wed, 11 Nov 2026 22:56:21 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/">BleepingComputer</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Red Hat Releases c-ares Security Update for RHEL 10.2</title>
-      <link>https://secubuzz.com/news/red-hat-releases-c-ares-security-update-for-rhel-1-3b2b8dad</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-c-ares-security-update-for-rhel-1-3b2b8dad</guid>
-      <description><![CDATA[Red Hat has released a security update for c-ares on RHEL 10.2 EUS, addressing multiple vulnerabilities with a CVSS base score available in the CVE references. The update is classified as Important by Red Hat Product Security, implying a high severity impact on DNS resolution functionality. Security teams should apply the c-ares update immediately to mitigate the identified vulnerabilities.]]></description>
-      <pubDate>Wed, 11 Nov 2026 22:40:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99168">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues qt6-qtbase Update for RHEL 10.2</title>
-      <link>https://secubuzz.com/news/red-hat-issues-qt6-qtbase-update-for-rhel-10-2-2755b85e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-qt6-qtbase-update-for-rhel-10-2-2755b85e</guid>
-      <description><![CDATA[Red Hat has issued a security update for qt6-qtbase on RHEL 10.2 EUS, addressing multiple vulnerabilities with CVSS base scores listed in the CVE references. The update is marked as Important by Red Hat Product Security, indicating a high severity impact on Qt framework functionality. Apply the qt6-qtbase update promptly to protect against the disclosed vulnerabilities.]]></description>
-      <pubDate>Wed, 11 Nov 2026 22:37:54 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99155">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99112: Important: firefox security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99112-important-firefox-security-update-660e2ead</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99112-important-firefox-security-update-660e2ead</guid>
-      <description><![CDATA[An update for firefox is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 22:34:40 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99112">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99134: Important: grafana security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99134-important-grafana-security-update-71fbc78e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99134-important-grafana-security-update-71fbc78e</guid>
-      <description><![CDATA[An update for grafana is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Wed, 11 Nov 2026 22:31:50 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99134">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Arctic Wolf Highlights Agentic AI in 2026 Security Operations</title>
-      <link>https://secubuzz.com/news/arctic-wolf-highlights-agentic-ai-in-2026-security-994392c0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-highlights-agentic-ai-in-2026-security-994392c0</guid>
-      <description><![CDATA[Arctic Wolf’s 2026 Agentic Security Operations Report details how agentic AI collaborates with expert analysts to streamline incident response workflows. The integration reduces investigation time by up to 40 % and boosts detection accuracy, enabling quicker threat containment. Teams should evaluate agentic AI platforms, integrate them with SOAR, and train analysts to interpret AI‑generated hypotheses.]]></description>
-      <pubDate>Wed, 11 Nov 2026 22:12:32 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/on-demand-webinar/inside-the-2026-agentic-security-operations-report/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Greeter Attack Chain Leaves &apos;Hello&apos; Trail in Cloud Logs</title>
-      <link>https://secubuzz.com/news/greeter-attack-chain-leaves-hello-trail-in-cloud-l-562a968e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/greeter-attack-chain-leaves-hello-trail-in-cloud-l-562a968e</guid>
-      <description><![CDATA[Researchers identified a new cloud attack chain named Greeter, in which adversaries embed 'hello' messages in log files to obscure their activity. The technique masks lateral movement and persistence indicators, making forensic analysis more difficult and delaying incident response. Defenders should enable log integrity monitoring, correlate anomalous 'hello' entries with known threat patterns, and apply stricter log retention policies.]]></description>
-      <pubDate>Wed, 11 Nov 2026 21:44:04 GMT</pubDate>
-      <source url="https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>eMudhra Revokes Eight CA Certificates After Key Mishap</title>
-      <link>https://secubuzz.com/news/emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/emudhra-revokes-eight-ca-certificates-after-key-mi-d1633deb</guid>
-      <description><![CDATA[eMudhra revoked eight intermediate CA certificates after discovering improper private key handling during certificate generation. The mishandling exposed the possibility of unauthorized certificate issuance, but no active exploitation has been reported. eMudhra has issued revocation notices, is reviewing its key management procedures, and will implement additional safeguards to prevent future incidents.]]></description>
-      <pubDate>Wed, 11 Nov 2026 21:27:40 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Enhances Cyber Resilience Competition</title>
-      <link>https://secubuzz.com/news/ai-enhances-cyber-resilience-competition-cbdd8757</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-enhances-cyber-resilience-competition-cbdd8757</guid>
-      <description><![CDATA[The article argues that AI technologies amplify both threat capabilities and defensive options, making rapid recovery a competitive advantage. It highlights how machine learning can detect anomalies faster, yet also enables adversaries to craft more sophisticated phishing and malware campaigns. Security teams should adopt AI‑driven monitoring, continuous testing, and adaptive response frameworks to mitigate evolving risks.]]></description>
-      <pubDate>Wed, 11 Nov 2026 21:20:41 GMT</pubDate>
-      <source url="https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-125926 - Server-side request forgery in the server registration and update API in mcp-gateway-registry</title>
-      <link>https://secubuzz.com/news/cve-2026-125926-server-side-request-forgery-in-the-a8e51a20</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-125926-server-side-request-forgery-in-the-a8e51a20</guid>
-      <description><![CDATA[Bulletin ID: 2026-180-AWS Publication Date: 11/11/2026 13:00 PM PST Description: MServer-side request forgery (SSRF) in the server registration and update API in Amazon mcp-gateway-registry before 1.35.0 might allow an authenticated remote user to send requests from the gateway to internal network services and cloud instance metadata endpoints and read the responses via a crafted request Impacted versions: >= v1.0.3 AND Refer to the article for the most up-to-date and complete information.]]></description>
-      <pubDate>Wed, 11 Nov 2026 21:04:56 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-180-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>
