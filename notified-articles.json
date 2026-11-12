@@ -4648,5 +4648,11 @@
   "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
   "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
   "https://access.redhat.com/errata/RHSA-2026:99763",
-  "https://access.redhat.com/errata/RHSA-2026:99725"
+  "https://access.redhat.com/errata/RHSA-2026:99725",
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+  "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
+  "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+  "https://access.redhat.com/errata/RHSA-2026:99693",
+  "https://access.redhat.com/errata/RHSA-2026:99758",
+  "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/"
 ]

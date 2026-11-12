@@ -11,6 +11,64 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-issues-critical-fence-agents-update-36ba2f36",
+    "title": "Red Hat Issues Critical Fence‑Agents Update",
+    "summary": "Red Hat released a critical security update for fence‑agents on RHEL 9.8 EUS, addressing multiple high‑impact vulnerabilities. The update mitigates remote code execution risks by patching underlying flaws identified in the fence‑agents component, with CVSS base scores indicating severe impact. Administrators should apply the RHSA‑2026:99693 update immediately and verify that fence‑agents is running the latest patched version.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99693",
+    "publishedAt": "2026-11-12T19:19:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-critical-fence-agents-update",
+      "article-36ba2f36",
+      "36ba2f36",
+      "red-hat-issues-critical-fence-agents-update-37d66c"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99758-important-osbuild-composer-securit-8508d258",
+    "title": "RHSA-2026:99758: Important: osbuild-composer security update",
+    "summary": "An update for osbuild-composer is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99758",
+    "publishedAt": "2026-11-12T19:13:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99758-important-osbuild-composer-securit",
+      "article-8508d258",
+      "8508d258",
+      "rhsa-2026-99758-important-osbuild-composer-securit-37d669",
+      "rhsa-2026-99758-important-osbuild-composer-security-update"
+    ]
+  },
+  {
+    "slug": "cve-2026-127119-unverified-ownership-of-the-defaul-cf8beca4",
+    "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
+    "summary": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. Impacted versions: >= 1.1.0 AND Refer to the article for the most up-to-date and complete information.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "AWS Security Bulletins",
+    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
+    "publishedAt": "2026-11-12T19:07:08.000Z",
+    "cves": [
+      "CVE-2026-127119"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-127119-unverified-ownership-of-the-defaul",
+      "article-cf8beca4",
+      "cf8beca4",
+      "cve-2026-127119-unverified-ownership-of-the-defaul-1528db",
+      "cve-2026-127119-unverified-ownership-of-the-default-emr-clus"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e",
     "title": "RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update",
     "summary": "A security update is now available for Red Hat Single Sign-On 7.6 from the Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -121,6 +179,24 @@ export const news: NewsBrief[] = [
       "article-1d7bc380",
       "1d7bc380",
       "rhsa-2026-99660-important-xfsprogs-security-update-37d66c"
+    ]
+  },
+  {
+    "slug": "poisoned-ai-training-enables-remote-code-execution-5f5a52ca",
+    "title": "Poisoned AI Training Enables Remote Code Execution",
+    "summary": "Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply‑chain controls, and monitor agent behavior for anomalous execution.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+    "publishedAt": "2026-11-12T17:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "poisoned-ai-training-enables-remote-code-execution",
+      "article-5f5a52ca",
+      "5f5a52ca",
+      "poisoned-ai-training-enables-remote-code-execution-30f228"
     ]
   },
   {
@@ -593,6 +669,44 @@ export const news: NewsBrief[] = [
       "4a39446f",
       "google-cloud-warns-three-amd-turin-cpu-flaws-could-2556d8",
       "google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data"
+    ]
+  },
+  {
+    "slug": "siemens-ruggedcom-ape1808-affected-by-php2shell-fl-540fe133",
+    "title": "Siemens RUGGEDCOM APE1808 Affected by PHP2Shell Flaw",
+    "summary": "A use‑after‑free flaw in PAN‑OS PHP2Shell (CVE‑2026‑109618/109619) enables remote code execution on Siemens RUGGEDCOM APE1808 devices. The flaw exploits PHP's longjmp OOM handling, yielding CVSS 9.8 and critical infrastructure impact; attackers can execute arbitrary code without authentication. Siemens recommends applying the vendor‑issued workarounds and updating firmware as soon as patches are available.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+    "publishedAt": "2026-11-12T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-ruggedcom-ape1808-affected-by-php2shell-fl",
+      "article-540fe133",
+      "540fe133",
+      "siemens-ruggedcom-ape1808-affected-by-php2shell-fl-41bab8",
+      "siemens-ruggedcom-ape1808-affected-by-php2shell-flaw"
+    ]
+  },
+  {
+    "slug": "siemens-building-automation-affected-by-php2shell-e09c233b",
+    "title": "Siemens Building Automation Affected by PHP2Shell Vulnerabilities",
+    "summary": "The PHP core vulnerabilities CVE‑2026‑109618/109619 (php2shell) allow unauthenticated remote code execution on Siemens Building Automation and Energy products. The flaws stem from improper handling of PHP's longjmp OOM errors, granting attackers full code execution without credentials and posing critical infrastructure risk. Siemens advises restricting network access, applying vendor‑issued workarounds, and following operational guidelines until patches are released.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
+    "publishedAt": "2026-11-12T12:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "siemens-building-automation-affected-by-php2shell",
+      "article-e09c233b",
+      "e09c233b",
+      "siemens-building-automation-affected-by-php2shell-41bab8",
+      "siemens-building-automation-affected-by-php2shell-vulnerabil"
     ]
   },
   {
@@ -9430,117 +9544,6 @@ export const news: NewsBrief[] = [
       "b74c76f7",
       "rhsa-2026-97299-moderate-pcp-security-bug-fix-and-37d764",
       "rhsa-2026-97299-moderate-pcp-security-bug-fix-and-enhancemen"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-containernetworking-plugins-securit-aa093ca2",
-    "title": "Red Hat Issues Containernetworking‑Plugins Security Update",
-    "summary": "An update for containernetworking‑plugins on Red Hat Enterprise Linux 9 addresses several security vulnerabilities, with CVSS base scores available via CVE links. The vulnerabilities carry important severity scores, but no active exploitation has been reported. Red Hat has released the patch, and users should apply the update to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97644",
-    "publishedAt": "2026-11-10T15:23:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-containernetworking-plugins-securit",
-      "article-aa093ca2",
-      "aa093ca2",
-      "red-hat-issues-containernetworking-plugins-securit-37d755",
-      "red-hat-issues-containernetworking-plugins-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97284-important-git-lfs-security-update-090e4bb8",
-    "title": "RHSA-2026:97284: Important: git-lfs security update",
-    "summary": "An update for git-lfs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97284",
-    "publishedAt": "2026-11-10T15:20:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97284-important-git-lfs-security-update",
-      "article-090e4bb8",
-      "090e4bb8",
-      "rhsa-2026-97284-important-git-lfs-security-update-37d764"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97561-important-crun-security-bug-fix-an-81ee0c21",
-    "title": "RHSA-2026:97561: Important: crun security, bug fix, and enhancement update",
-    "summary": "An update for crun is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97561",
-    "publishedAt": "2026-11-10T15:17:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97561-important-crun-security-bug-fix-an",
-      "article-81ee0c21",
-      "81ee0c21",
-      "rhsa-2026-97561-important-crun-security-bug-fix-an-37d759",
-      "rhsa-2026-97561-important-crun-security-bug-fix-and-enhancem"
-    ]
-  },
-  {
-    "slug": "researcher-bypasses-meta-smart-glasses-safeguard-ca7e9717",
-    "title": "Researcher Bypasses Meta Smart Glasses Safeguard",
-    "summary": "A researcher demonstrated that Meta smart glasses' software restriction policy could be bypassed to execute arbitrary code on the device. The vulnerability allows an attacker running on the device to override intended sandboxing protections. Users should apply manufacturer firmware updates as soon as available to remediate this code execution path.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/researcher-bypassed-meta-smart-glasses-safeguards-to-run-her-own-code",
-    "publishedAt": "2026-11-10T15:09:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researcher-bypasses-meta-smart-glasses-safeguard",
-      "article-ca7e9717",
-      "ca7e9717",
-      "researcher-bypasses-meta-smart-glasses-safeguard-2c9fe4"
-    ]
-  },
-  {
-    "slug": "ransomware-recovery-becomes-client-retention-metri-3e699a1c",
-    "title": "Ransomware Recovery Becomes Client Retention Metric",
-    "summary": "Kaseya finds that ransomware recovery delays, poor communication, and unexpected costs erode MSP client trust, making recovery performance a retention metric. Disconnected recovery tools create these problems, while integrated workflows improve response times, transparency, and client satisfaction. MSPs should adopt unified recovery solutions to reduce delays, enhance communication, and maintain client loyalty during ransomware incidents.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
-    "publishedAt": "2026-11-10T15:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ransomware-recovery-becomes-client-retention-metri",
-      "article-3e699a1c",
-      "3e699a1c",
-      "ransomware-recovery-becomes-client-retention-metri-2eea80",
-      "ransomware-recovery-becomes-client-retention-metric"
-    ]
-  },
-  {
-    "slug": "ciso-forum-virtual-summit-2026-announced-b1149328",
-    "title": "CISO Forum Virtual Summit 2026 Announced",
-    "summary": "The CISO Forum will host a two‑day virtual summit in 2026, gathering global cybersecurity leaders to discuss contemporary risk management and defense strategies. Participants will share insights on emerging threats, regulatory compliance, and innovative technologies shaping modern enterprise security. Organizers recommend registering early, reviewing the agenda, and preparing case studies to maximize engagement and knowledge transfer.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
-    "publishedAt": "2026-11-10T15:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ciso-forum-virtual-summit-2026-announced",
-      "article-b1149328",
-      "b1149328",
-      "ciso-forum-virtual-summit-2026-announced-7d4f97"
     ]
   }
 ];

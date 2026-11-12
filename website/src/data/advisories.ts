@@ -2,6 +2,80 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-125325",
+    "slug": "cve-2026-125325",
+    "vendor": "Go",
+    "product": "pgedge-rag-server · pgEdge",
+    "name": "pgEdge RAG Server shared keyword index leaked results between concurrent unauthenticated requests",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-362",
+    "ransomware": false,
+    "description": "Documents belonging to one caller could be returned to another. Where an application passes a customer or tenant identifier as a search filter, that scoping could be defeated by ordinary concurrent traffic. No injection and no malformed input are required — normal load is enough. The BM25 keyword index was a single per-pipeline object shared by every request.",
+    "requiredAction": "Upgrade pgedge-rag-server · pgEdge to version 1.0.1-0.20260729020411-a09d4872356b or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-w437-9mwm-j6vq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125325"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-125328",
+    "slug": "cve-2026-125328",
+    "vendor": "Go",
+    "product": "pgedge-go-llm-lib · pgEdge",
+    "name": "pgEdge Go LLM Library discloses provider API key fragments in error messages",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.8,
+    "severity": "Medium",
+    "cwe": "CWE-209",
+    "ransomware": false,
+    "description": "An unauthenticated caller could read part of the operator's configured LLM provider API key. The library's own health handler pings every configured provider using the operator's real credential and returns the resulting error text verbatim. Providers characteristically quote a partially masked form of the credential they rejected, so a failing ping published a fragment of the key.",
+    "requiredAction": "Upgrade pgedge-go-llm-lib · pgEdge to version 0.1.2-0.20260729024727-7531a55d368b or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-8835-xmqj-354h"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125328"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-7m8x-x364-m26j",
+    "slug": "ghsa-7m8x-x364-m26j",
+    "vendor": "npm",
+    "product": "signalk-server",
+    "name": "Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-306",
+    "ransomware": false,
+    "description": "An unauthenticated WebSocket client can subscribe to the log path and receive buffered server logs. WebSocket connections are intentionally permitted before authentication because login occurs over the WebSocket connection. However, the log subscription path does not enforce an authorization check.",
+    "requiredAction": "Upgrade signalk-server to version 2.31.0-beta.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7m8x-x364-m26j"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-84987",
     "slug": "cve-2026-84987",
     "vendor": "Composer",
@@ -1329,72 +1403,6 @@ export const advisories: Advisory[] = [
       {
         "label": "GitHub Advisory",
         "url": "https://github.com/advisories/GHSA-49q5-vjx7-5gwr"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-mqcg-252r-5fj7",
-    "slug": "ghsa-mqcg-252r-5fj7",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.NETCore.App.Runtime.win-x86",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114151 - Visual Studio Remote Code Execution Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-121",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-fpxj-5c99-g7vj. This link is maintained to preserve external references. Deserialization of untrusted data in Visual Studio allows an unauthorized attacker to execute code over a network.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mqcg-252r-5fj7"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-hm4p-mv9w-4w8f",
-    "slug": "ghsa-hm4p-mv9w-4w8f",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.NETCore.App.Runtime.win-x86",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 8.8,
-    "severity": "High",
-    "cwe": "CWE-121",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-xf35-v9jh-g65w. This link is maintained to preserve external references. Stack-based buffer overflow in Visual Studio allows an unauthorized attacker to execute code over a network.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-hm4p-mv9w-4w8f"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-gxg8-5rwf-cg43",
-    "slug": "ghsa-gxg8-5rwf-cg43",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.AspNetCore.SignalR.StackExchangeRedis",
-    "name": "Duplicate Advisory: Microsoft Security Advisory CVE-2026-114147 - ASP.NET Core Denial of Service Vulnerability",
-    "dateAdded": "2026-11-10",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-401",
-    "ransomware": false,
-    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-wr8v-9x5q-ggcm. This link is maintained to preserve external references. Missing release of memory after effective lifetime in ASP.NET Core allows an unauthorized attacker to deny service over a network.",
-    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-gxg8-5rwf-cg43"
       }
     ],
     "source": "GITHUB"

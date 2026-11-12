@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 18:48:09 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 19:44:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Issues Critical Fence‑Agents Update</title>
+      <link>https://secubuzz.com/news/red-hat-issues-critical-fence-agents-update-36ba2f36</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-critical-fence-agents-update-36ba2f36</guid>
+      <description><![CDATA[Red Hat released a critical security update for fence‑agents on RHEL 9.8 EUS, addressing multiple high‑impact vulnerabilities. The update mitigates remote code execution risks by patching underlying flaws identified in the fence‑agents component, with CVSS base scores indicating severe impact. Administrators should apply the RHSA‑2026:99693 update immediately and verify that fence‑agents is running the latest patched version.]]></description>
+      <pubDate>Thu, 12 Nov 2026 19:19:08 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99693">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99758: Important: osbuild-composer security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99758-important-osbuild-composer-securit-8508d258</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99758-important-osbuild-composer-securit-8508d258</guid>
+      <description><![CDATA[An update for osbuild-composer is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 12 Nov 2026 19:13:43 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99758">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas</title>
+      <link>https://secubuzz.com/news/cve-2026-127119-unverified-ownership-of-the-defaul-cf8beca4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-127119-unverified-ownership-of-the-defaul-cf8beca4</guid>
+      <description><![CDATA[Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. Impacted versions: >= 1.1.0 AND Refer to the article for the most up-to-date and complete information.]]></description>
+      <pubDate>Thu, 12 Nov 2026 19:07:08 GMT</pubDate>
+      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/">AWS Security Bulletins</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update</title>
       <link>https://secubuzz.com/news/rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e</link>
@@ -59,6 +86,15 @@
       <description><![CDATA[An update for xfsprogs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Thu, 12 Nov 2026 17:18:49 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99660">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Poisoned AI Training Enables Remote Code Execution</title>
+      <link>https://secubuzz.com/news/poisoned-ai-training-enables-remote-code-execution-5f5a52ca</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/poisoned-ai-training-enables-remote-code-execution-5f5a52ca</guid>
+      <description><![CDATA[Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply‑chain controls, and monitor agent behavior for anomalous execution.]]></description>
+      <pubDate>Thu, 12 Nov 2026 17:00:00 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/">Microsoft Security</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -287,6 +323,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Siemens RUGGEDCOM APE1808 Affected by PHP2Shell Flaw</title>
+      <link>https://secubuzz.com/news/siemens-ruggedcom-ape1808-affected-by-php2shell-fl-540fe133</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-ruggedcom-ape1808-affected-by-php2shell-fl-540fe133</guid>
+      <description><![CDATA[A use‑after‑free flaw in PAN‑OS PHP2Shell (CVE‑2026‑109618/109619) enables remote code execution on Siemens RUGGEDCOM APE1808 devices. The flaw exploits PHP's longjmp OOM handling, yielding CVSS 9.8 and critical infrastructure impact; attackers can execute arbitrary code without authentication. Siemens recommends applying the vendor‑issued workarounds and updating firmware as soon as patches are available.]]></description>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05">CISA</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Siemens Building Automation Affected by PHP2Shell Vulnerabilities</title>
+      <link>https://secubuzz.com/news/siemens-building-automation-affected-by-php2shell-e09c233b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/siemens-building-automation-affected-by-php2shell-e09c233b</guid>
+      <description><![CDATA[The PHP core vulnerabilities CVE‑2026‑109618/109619 (php2shell) allow unauthenticated remote code execution on Siemens Building Automation and Energy products. The flaws stem from improper handling of PHP's longjmp OOM errors, granting attackers full code execution without credentials and posing critical infrastructure risk. Siemens advises restricting network access, applying vendor‑issued workarounds, and following operational guidelines until patches are released.]]></description>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 GMT</pubDate>
+      <source url="https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01">CISA</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)</title>
       <link>https://secubuzz.com/news/exploit-attempts-for-gpustack-authentication-bypas-2ccd9424</link>
       <guid isPermaLink="true">https://secubuzz.com/news/exploit-attempts-for-gpustack-authentication-bypas-2ccd9424</guid>
@@ -402,60 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 10:48:53 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99592">Red Hat Security Advisories</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>ScreenConnect Extension Vulnerability Enables Malware</title>
-      <link>https://secubuzz.com/news/screenconnect-extension-vulnerability-enables-malw-bf3d797c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-extension-vulnerability-enables-malw-bf3d797c</guid>
-      <description><![CDATA[Hackers exploited a flaw in a legitimate ScreenConnect extension to bypass authentication and deploy malware. The flaw lets attackers bypass ScreenConnect’s login controls, granting unauthorized session access; no CVE is listed and exploitation is confined to the extension. ScreenConnect has released an update patching the extension; administrators should apply the latest version and verify extension integrity.]]></description>
-      <pubDate>Thu, 12 Nov 2026 10:39:34 GMT</pubDate>
-      <source url="https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome Updates 83 Flaws, Five Critical RCE Fixes</title>
-      <link>https://secubuzz.com/news/chrome-updates-83-flaws-five-critical-rce-fixes-7a376471</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-updates-83-flaws-five-critical-rce-fixes-7a376471</guid>
-      <description><![CDATA[Google released a Chrome update fixing 83 vulnerabilities, including five use‑after‑free flaws that could enable remote code execution on Windows, macOS, and Linux. The flaws affect rendering, graphics, JavaScript, and core features, with CVSS scores up to 9.8, and are exploitable via crafted web content. Users should upgrade to Chrome 157.0.8103.78/79 or later, and admins should enforce updated security policies.]]></description>
-      <pubDate>Thu, 12 Nov 2026 10:32:09 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/google-chrome-fixes-83-security-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues OpenSSH Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-openssh-security-update-418db160</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-openssh-security-update-418db160</guid>
-      <description><![CDATA[Red Hat released an OpenSSH update for RHEL 8.4 Advanced Mission Critical and Extended Update Support, addressing multiple SSH vulnerabilities. Each flaw’s CVSS base score is listed in the references, indicating severity ranges but no confirmed exploitation. Apply the patch immediately to prevent potential remote code execution and maintain SSH service integrity.]]></description>
-      <pubDate>Thu, 12 Nov 2026 10:00:13 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99573">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft Warns Hackers Are Using GSocket Backdoors to Keep Linux Servers Compromised After Patching</title>
-      <link>https://secubuzz.com/news/microsoft-warns-hackers-are-using-gsocket-backdoor-b50f0c5f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-warns-hackers-are-using-gsocket-backdoor-b50f0c5f</guid>
-      <description><![CDATA[Microsoft has warned that attackers are using a free remote access tool called GSocket to stay inside Linux servers even after the original security hole is fixed. Many admins treat a patch as the end of an incident, but this activity shows that patching alone may leave the attacker’s access untouched.]]></description>
-      <pubDate>Thu, 12 Nov 2026 09:44:00 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/gsocket-backdoors/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>N-able Rushes Patches for Exploited N-central Zero-Days</title>
-      <link>https://secubuzz.com/news/n-able-rushes-patches-for-exploited-n-central-zero-e8c9811c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-rushes-patches-for-exploited-n-central-zero-e8c9811c</guid>
-      <description><![CDATA[Threat actors are actively targeting zero-day vulnerabilities within N-able N-central remote management software following recent public disclosures. The malicious campaign surfaced shortly after a security researcher publicly dropped over 30 zero-day flaws affecting the enterprise management platform. In response to active threat activity, N-able released urgent patches specifically addressing the unauthenticated security vulnerabilities.]]></description>
-      <pubDate>Thu, 12 Nov 2026 09:39:55 GMT</pubDate>
-      <source url="https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/">SecurityWeek</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Threat Actors Use GSocket for Persistent Linux Access</title>
-      <link>https://secubuzz.com/news/threat-actors-use-gsocket-for-persistent-linux-acc-27a2cc2c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/threat-actors-use-gsocket-for-persistent-linux-acc-27a2cc2c</guid>
-      <description><![CDATA[Threat actors use the open‑source remote tool GSocket to keep access on Linux servers after patching initial exploitation vulnerabilities. This persistence method lets attackers re‑establish control even when known flaws are fixed, bypassing patch‑based defenses. Defenders should detect GSocket binaries, enforce whitelisting, and apply vendor patches to close this vector.]]></description>
-      <pubDate>Thu, 12 Nov 2026 09:38:00 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/">BleepingComputer</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
