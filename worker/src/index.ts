@@ -620,6 +620,8 @@ const LIVE_STATUS_SOURCES = [
 
 let cachedVendorStatus: Record<string, VendorHealthTelemetry> | null = null;
 let cachedVendorStatusTime = 0;
+let cachedStatusClickStats: any = null;
+let cachedStatusClickStatsTime = 0;
 
 async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTelemetry>> {
   const now = Date.now();
@@ -1198,6 +1200,80 @@ export default {
           });
         } catch (err: any) {
           return jsonResponse({ success: false, error: err.message, totalOpens: 0, topArticles: [], recent: [] });
+        }
+      }
+
+      // Beacon: Record outbound vendor status link clicks (0 rows read, 1 row written)
+      if (url.pathname === '/api/analytics/status-click' && request.method === 'POST') {
+        if (!env.DB) return new Response(null, { status: 204, headers: CORS_HEADERS });
+        try {
+          const body = await request.json().catch(() => null);
+          const vendor = String(body?.vendor || '').slice(0, 64).trim();
+          if (vendor) {
+            const status = String(body?.status || 'UNKNOWN').slice(0, 32);
+            const targetUrl = String(body?.statusUrl || '').slice(0, 255);
+            const country = (request.headers.get('CF-IPCountry') || 'UNKNOWN').slice(0, 10);
+            const referer = (request.headers.get('Referer') || '').slice(0, 255);
+            const userAgent = (request.headers.get('User-Agent') || '').slice(0, 255);
+            const now = new Date().toISOString();
+
+            await env.DB.prepare(
+              `INSERT INTO vendor_status_clicks (vendor, status, target_url, country, referer, user_agent, clicked_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?);`
+            ).bind(vendor, status, targetUrl, country, referer, userAgent, now).run();
+          }
+        } catch (e) {
+          console.warn('Failed to record status click:', e);
+        }
+        return new Response(null, { status: 204, headers: CORS_HEADERS });
+      }
+
+      // API: Telemetry for Vendor Status Outbound Clicks (Private - Admin Only, 60s in-memory cache)
+      if (url.pathname === '/api/analytics/vendor-status-clicks') {
+        if (!isAuthorized(request, env)) {
+          return errorResponse('Unauthorized. Admin access required.', 401);
+        }
+        if (!env.DB) return jsonResponse({ totalClicks: 0, topVendors: [], recent: [] });
+
+        const now = Date.now();
+        if (cachedStatusClickStats && now - cachedStatusClickStatsTime < 60 * 1000) {
+          return jsonResponse({ success: true, ...cachedStatusClickStats, cached: true });
+        }
+
+        try {
+          const stats: any = await env.DB.prepare(
+            `SELECT COUNT(*) as total_clicks, COUNT(DISTINCT vendor) as unique_vendors FROM vendor_status_clicks;`
+          ).first();
+
+          const { results: topVendors } = await env.DB.prepare(
+            `SELECT vendor, COUNT(*) as count
+             FROM vendor_status_clicks
+             GROUP BY vendor
+             ORDER BY count DESC
+             LIMIT 15;`
+          ).all();
+
+          const { results: recent } = await env.DB.prepare(
+            `SELECT vendor, status, country, clicked_at
+             FROM vendor_status_clicks
+             ORDER BY clicked_at DESC
+             LIMIT 25;`
+          ).all();
+
+          cachedStatusClickStats = {
+            totalClicks: Number(stats?.total_clicks || 0),
+            uniqueVendors: Number(stats?.unique_vendors || 0),
+            topVendors: topVendors ?? [],
+            recent: recent ?? [],
+          };
+          cachedStatusClickStatsTime = now;
+
+          return jsonResponse({
+            success: true,
+            ...cachedStatusClickStats,
+          });
+        } catch (err: any) {
+          return jsonResponse({ success: false, error: err.message, totalClicks: 0, topVendors: [], recent: [] });
         }
       }
 

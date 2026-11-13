@@ -5,6 +5,17 @@ import { getVendorHealth, VENDOR_STATUS_REGISTRY } from '../data/vendorHealth';
 
 const VENDOR_OUTAGES_STORAGE_KEY = 'secubuzz_vendor_outages_enabled_v1';
 
+function trackStatusClick(vendor: string, status?: string, statusUrl?: string) {
+  try {
+    const payload = JSON.stringify({ vendor, status, statusUrl });
+    if (typeof navigator !== 'undefined' && navigator.sendBeacon) {
+      navigator.sendBeacon('/api/analytics/status-click', payload);
+    } else {
+      fetch('/api/analytics/status-click', { method: 'POST', body: payload, keepalive: true }).catch(() => {});
+    }
+  } catch {}
+}
+
 interface MyStackSidebarProps {
   selectedVendors: string[];
   watchedCves: string[];
@@ -344,6 +355,7 @@ export function MyStackSidebar({
                             href={inc.statusUrl}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => trackStatusClick(inc.vendor, inc.status, inc.statusUrl)}
                             className="text-accent hover:underline hover:text-white shrink-0 font-mono text-[11px] inline-flex items-center gap-0.5 ml-2"
                           >
                             <span>Status</span>
@@ -388,6 +400,7 @@ export function MyStackSidebar({
                         href={health.statusUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackStatusClick(vendor, health.status, health.statusUrl)}
                         className="hover:underline flex items-center gap-1"
                         title={`${vendor}: ${health.summary} (Click for official status)`}
                       >
