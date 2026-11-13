@@ -289,7 +289,84 @@ function renderPrerenderedBody(
       <article>
         <h1 style="font-size:28px;font-weight:700;color:#F8FAFC;margin:0 0 12px 0;">About SecuBuzz</h1>
         <p style="font-size:16px;line-height:1.6;color:#CBD5E1;">SecuBuzz is an independent cybersecurity threat intelligence assistant built by MiSo Labs. We distill complex cyber developments into objective, 60-word briefs with direct links to primary sources.</p>
+        <p style="font-size:15px;line-height:1.6;color:#CBD5E1;margin-top:16px;">We monitor 84 authoritative threat intelligence sources, including 29 premier security publications (The Hacker News, BleepingComputer, Dark Reading, Krebs on Security, SecurityWeek), 14 official vendor PSIRTs (Microsoft, Cisco, Red Hat, Palo Alto, AWS, Oracle, Google Cloud), 33 enterprise vendor outage radars, and the CISA Known Exploited Vulnerabilities catalog.</p>
         <p style="font-size:15px;line-height:1.6;color:#94A3B8;margin-top:16px;">Engineered with a strict privacy-first architecture: no user accounts, no trackers, no advertising IDs, and anonymous crash telemetry only.</p>
+        <footer style="margin-top:32px;padding-top:16px;border-top:1px solid #1E293B;font-size:13px;color:#94A3B8;">
+          <a href="/privacy" style="color:#94A3B8;text-decoration:underline;">Privacy Policy</a> · <a href="/terms" style="color:#94A3B8;text-decoration:underline;">Terms</a> · <a href="/contact" style="color:#94A3B8;text-decoration:underline;">Contact</a>
+        </footer>
+      </article>
+    </div>`;
+  }
+
+  if (pathname === '/privacy') {
+    return `<div style="max-width:768px;margin:0 auto;padding:24px 16px;font-family:system-ui,-apple-system,sans-serif;color:#E2E8F0;background:#0B0F14;min-height:100vh;">
+      <nav style="margin-bottom:20px;font-size:14px;"><a href="/" style="color:#4CC9F0;text-decoration:none;">← Home</a></nav>
+      <article>
+        <h1 style="font-size:28px;font-weight:700;color:#F8FAFC;margin:0 0 16px 0;">Privacy Policy</h1>
+        <p style="font-size:14px;color:#94A3B8;margin-bottom:20px;">SecuBuzz by MiSo Labs · Last Updated: November 2026</p>
+        <section style="margin-bottom:24px;">
+          <h2 style="font-size:18px;color:#F8FAFC;margin-bottom:8px;">1. Overview & Developer Details</h2>
+          <p style="font-size:15px;line-height:1.6;color:#CBD5E1;">SecuBuzz by MiSo Labs ("we", "us", or "our") develops and operates the SecuBuzz mobile application and the secubuzz.com website. We believe privacy is an absolute baseline in cybersecurity. SecuBuzz is engineered so that defense teams, analysts, and engineers can read threat intelligence without surveillance, account creation, or personal telemetry harvesting.</p>
+        </section>
+        <section style="margin-bottom:24px;">
+          <h2 style="font-size:18px;color:#F8FAFC;margin-bottom:8px;">2. Information We Handle</h2>
+          <p style="font-size:15px;line-height:1.6;color:#CBD5E1;">All bookmarked briefs, reading history, and theme settings are stored 100% locally on your device in standard local application storage. They are never transmitted to, collected by, or stored on our servers. For users opted into threat alerts, anonymous push tokens are processed strictly for alert delivery and fleet reliability.</p>
+        </section>
+        <section style="margin-bottom:24px;">
+          <h2 style="font-size:18px;color:#F8FAFC;margin-bottom:8px;">3. Third-Party Advertising & Cookies (Google AdSense)</h2>
+          <p style="font-size:15px;line-height:1.6;color:#CBD5E1;">We may partner with third-party advertising networks such as Google AdSense to display advertisements on secubuzz.com to support operational and infrastructure costs. Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other sites on the Internet. Google's use of advertising cookies enables it and its partners to serve ads to visitors based on their visit to secubuzz.com and/or other sites across the Internet.</p>
+          <p style="font-size:15px;line-height:1.6;color:#CBD5E1;margin-top:10px;">Users may opt out of personalized advertising at any time by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" style="color:#4CC9F0;">Google Ads Settings</a> or through the Digital Advertising Alliance consumer choice tool at <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer" style="color:#4CC9F0;">aboutads.info</a>.</p>
+        </section>
+        <section style="margin-bottom:24px;">
+          <h2 style="font-size:18px;color:#F8FAFC;margin-bottom:8px;">4. Privacy Contact</h2>
+          <p style="font-size:15px;line-height:1.6;color:#CBD5E1;">For questions or privacy inquiries regarding SecuBuzz or MiSo Labs, contact us at <a href="mailto:support@secubuzz.com" style="color:#4CC9F0;">support@secubuzz.com</a>.</p>
+        </section>
+      </article>
+    </div>`;
+  }
+
+  if (pathname === '/terms') {
+    return `<div style="max-width:768px;margin:0 auto;padding:24px 16px;font-family:system-ui,-apple-system,sans-serif;color:#E2E8F0;background:#0B0F14;min-height:100vh;">
+      <nav style="margin-bottom:20px;font-size:14px;"><a href="/" style="color:#4CC9F0;text-decoration:none;">← Home</a></nav>
+      <article>
+        <h1 style="font-size:28px;font-weight:700;color:#F8FAFC;margin:0 0 16px 0;">Terms of Service</h1>
+        <p style="font-size:14px;color:#94A3B8;margin-bottom:20px;">SecuBuzz by MiSo Labs · Last Updated: November 2026</p>
+        <section style="margin-bottom:24px;">
+          <h2 style="font-size:18px;color:#F8FAFC;margin-bottom:8px;">1. Service Description</h2>
+          <p style="font-size:15px;line-height:1.6;color:#CBD5E1;">SecuBuzz aggregates, summarizes, and indexes publicly available cybersecurity news, vendor PSIRT advisories, and CISA Known Exploited Vulnerabilities. All briefs link directly to canonical reporting sources.</p>
+        </section>
+        <section style="margin-bottom:24px;">
+          <h2 style="font-size:18px;color:#F8FAFC;margin-bottom:8px;">2. Source Attribution & Publisher Relationships</h2>
+          <p style="font-size:15px;line-height:1.6;color:#CBD5E1;">SecuBuzz honors fair use and publisher attribution across 84 monitored newsrooms, research blogs, and vendor advisories. We deliver source-linked 60-word briefs designed to drive informed traffic back to original investigative publications.</p>
+        </section>
+        <section style="margin-bottom:24px;">
+          <h2 style="font-size:18px;color:#F8FAFC;margin-bottom:8px;">3. Contact</h2>
+          <p style="font-size:15px;line-height:1.6;color:#CBD5E1;">Inquiries regarding terms of service can be directed to <a href="mailto:support@secubuzz.com" style="color:#4CC9F0;">support@secubuzz.com</a>.</p>
+        </section>
+      </article>
+    </div>`;
+  }
+
+  if (pathname === '/contact') {
+    return `<div style="max-width:768px;margin:0 auto;padding:24px 16px;font-family:system-ui,-apple-system,sans-serif;color:#E2E8F0;background:#0B0F14;min-height:100vh;">
+      <nav style="margin-bottom:20px;font-size:14px;"><a href="/" style="color:#4CC9F0;text-decoration:none;">← Home</a></nav>
+      <article>
+        <h1 style="font-size:28px;font-weight:700;color:#F8FAFC;margin:0 0 16px 0;">Contact SecuBuzz</h1>
+        <p style="font-size:16px;line-height:1.6;color:#CBD5E1;margin-bottom:20px;">SecuBuzz is developed by MiSo Labs. Reach out to our team using the direct operational channels below:</p>
+        <ul style="list-style:none;padding:0;margin:0 0 24px 0;">
+          <li style="padding:12px 0;border-bottom:1px solid #1E293B;">
+            <strong style="color:#F8FAFC;">General Support & Inquiries:</strong>
+            <div style="margin-top:4px;"><a href="mailto:support@secubuzz.com" style="color:#4CC9F0;">support@secubuzz.com</a></div>
+          </li>
+          <li style="padding:12px 0;border-bottom:1px solid #1E293B;">
+            <strong style="color:#F8FAFC;">Vulnerability Disclosure & Security:</strong>
+            <div style="margin-top:4px;"><a href="mailto:security@secubuzz.com" style="color:#4CC9F0;">security@secubuzz.com</a></div>
+          </li>
+          <li style="padding:12px 0;border-bottom:1px solid #1E293B;">
+            <strong style="color:#F8FAFC;">Publishers & Source Ingestion:</strong>
+            <div style="margin-top:4px;"><a href="mailto:publishers@secubuzz.com" style="color:#4CC9F0;">publishers@secubuzz.com</a></div>
+          </li>
+        </ul>
       </article>
     </div>`;
   }
@@ -399,11 +476,19 @@ ${items}
 </rss>`;
 }
 
+export function isBotUserAgent(userAgent: string = ''): boolean {
+  if (!userAgent) return false;
+  return /googlebot|mediapartners-google|adsbot|feedfetcher-google|google-adsense-review|google-display-ads-bot|bingbot|yandex|baiduspider|duckduckbot|slurp|twitterbot|facebookexternalhit|linkedinbot|embedly|quora link preview|showyoubot|outbrain|pinterest|slackbot|vkshare|w3c_validator|whatsapp|telegrambot|applebot|curl|wget|bytespider|gptbot|claudebot|perplexity|ahrefsbot|semrushbot|dotbot|rogue/i.test(
+    userAgent
+  );
+}
+
 export function injectMetaTags(
   html: string,
   pathname: string,
   articles: ArticleItem[],
-  advisories: KevVulnerability[]
+  advisories: KevVulnerability[],
+  options: { userAgent?: string; forcePrerender?: boolean } = {}
 ): string {
   let title = 'SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar';
   let description = 'Real-time cybersecurity news in 60 words, live vendor outage status, and CISA KEV zero-day radar. Track active exploits, EPSS likelihood, and vendor advisories across 80+ sources.';
@@ -724,10 +809,13 @@ export function injectMetaTags(
     }
   }
 
-  // Inject semantic pre-rendered HTML body into #root for instant crawlability & zero-delay FCP
-  const prerenderedBody = renderPrerenderedBody(pathname, matchedArticle, matchedAdv, articles, advisories);
-  if (prerenderedBody) {
-    resultHtml = resultHtml.replace(/<div id="root">\s*<\/div>/i, `<div id="root">${prerenderedBody}</div>`);
+  // Inject semantic pre-rendered HTML body into #root for crawlers & bots, avoiding FOUC for human browsers
+  const shouldPrerender = options.forcePrerender || isBotUserAgent(options.userAgent);
+  if (shouldPrerender) {
+    const prerenderedBody = renderPrerenderedBody(pathname, matchedArticle, matchedAdv, articles, advisories);
+    if (prerenderedBody) {
+      resultHtml = resultHtml.replace(/<div id="root">\s*<\/div>/i, `<div id="root">${prerenderedBody}</div>`);
+    }
   }
 
   return resultHtml;

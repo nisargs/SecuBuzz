@@ -2262,10 +2262,16 @@ export default {
 
           const isRouteValid = isArchivedMatch || isKnownSpaRoute(url.pathname, articles, advisories);
 
+          const userAgent = request.headers.get('User-Agent') || '';
+          const forcePrerender = url.searchParams.has('prerender');
+
           if (!isRouteValid) {
             let notFoundHtml = rawHtml;
             try {
-              notFoundHtml = injectMetaTags(rawHtml, '/404', articles, advisories);
+              notFoundHtml = injectMetaTags(rawHtml, '/404', articles, advisories, {
+                userAgent,
+                forcePrerender,
+              });
             } catch {}
             return new Response(notFoundHtml, {
               status: 404,
@@ -2280,7 +2286,10 @@ export default {
 
           let enrichedHtml = rawHtml;
           try {
-            enrichedHtml = injectMetaTags(rawHtml, url.pathname, articleListForMeta, advisories);
+            enrichedHtml = injectMetaTags(rawHtml, url.pathname, articleListForMeta, advisories, {
+              userAgent,
+              forcePrerender,
+            });
           } catch (metaErr) {
             console.error('Failed to inject meta tags for path:', url.pathname, metaErr);
           }
