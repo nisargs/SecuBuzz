@@ -202,11 +202,26 @@ export function normalizeApiBrief(art: any): NewsBrief {
   const source = (art.source || art.sourceName || 'SecuBuzz').trim();
   const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
   const publishedAt = art.publishedAt || new Date().toISOString();
+  let finalSummary = summary;
   const existingCves = Array.isArray(art.cves)
     ? art.cves.map((c: string) => normalizeHyphens(c).trim().toUpperCase()).filter(Boolean)
     : [];
-  const cves = Array.from(new Set([...existingCves, ...extractCves(title + ' ' + summary)]));
-  const category = mapCategory(art.category);
+  const allSearchText = `${title} ${summary} ${sourceUrl} ${art.id || ''}`;
+  const cves = Array.from(new Set([...existingCves, ...extractCves(allSearchText)]));
+
+  let category = mapCategory(art.category);
+  if (cves.length > 0) {
+    if (category === 'General' || !category) category = 'CVE';
+    const hasCveInText = cves.some(c => title.includes(c) || finalSummary.includes(c));
+    if (!hasCveInText) {
+      const tracking = cves.length === 1
+        ? `The flaw is tracked as ${cves[0]}.`
+        : `The vulnerabilities are tracked as ${cves.slice(0, 3).join(', ')}.`;
+      finalSummary = `${finalSummary.replace(/[.\s]+$/, '')}. ${tracking}`;
+    }
+  } else if (category === 'CVE') {
+    category = 'Vulnerability';
+  }
   const rawSev = (art.severity || '').toUpperCase();
   const severity = (['CRITICAL', 'HIGH', 'MEDIUM', 'LOW'].includes(rawSev) ? rawSev : undefined) as NewsBrief['severity'];
   const slug = art.slug || createSlug(rawTitle, art.id || art.sourceUrl || art.url || rawTitle);
@@ -214,7 +229,7 @@ export function normalizeApiBrief(art: any): NewsBrief {
   return {
     slug,
     title,
-    summary,
+    summary: finalSummary,
     category,
     severity,
     source,

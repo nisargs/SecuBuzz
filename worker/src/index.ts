@@ -284,15 +284,31 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
     const existingCves = Array.isArray(art.cves)
       ? art.cves.map((c: string) => normalizeHyphens(c).toUpperCase())
       : [];
+    const allSearchText = `${cleanTitle} ${summary} ${art.sourceUrl || ''} ${art.id || ''} ${art.url || ''}`;
     const cves = Array.from(
-      new Set([...existingCves, ...extractCvesFromText(`${cleanTitle} ${summary}`)])
+      new Set([...existingCves, ...extractCvesFromText(allSearchText)])
     );
+
+    let category = art.category || 'General';
+    if (cves.length > 0) {
+      if (category === 'General' || !category) category = 'CVE';
+      const hasCveInText = cves.some(c => cleanTitle.includes(c) || summary.includes(c));
+      if (!hasCveInText) {
+        const tracking = cves.length === 1
+          ? `The flaw is tracked as ${cves[0]}.`
+          : `The vulnerabilities are tracked as ${cves.slice(0, 3).join(', ')}.`;
+        summary = `${summary.replace(/[.\s]+$/, '')}. ${tracking}`;
+      }
+    } else if (category === 'CVE') {
+      category = 'Vulnerability';
+    }
 
     deduped.push({
       ...art,
       title: cleanTitle,
       headline: cleanHeadline,
       summary,
+      category,
       cves,
       slug,
       aliases,

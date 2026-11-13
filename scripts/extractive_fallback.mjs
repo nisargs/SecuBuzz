@@ -671,20 +671,49 @@ export function buildFallbackArticle(candidate, fallbackResult, normaliseUrlFn, 
   const sourceUrl = normaliseUrlFn(candidate.url);
   const { publishedAt, isPublishedTimeUnknown, ingestedAt, isFutureSkew } = normalizeTimestamp(candidate.publishedAt);
 
+  let summary = fallbackResult.summary;
+  const headline = fallbackResult.headline;
+  let category = fallbackResult.category;
+
+  const rawCveText = `${headline} ${summary} ${candidate.url || ''} ${candidate.id || ''} ${candidate.description || ''}`;
+  const cves = typeof extractCvesFn === 'function' ? extractCvesFn(rawCveText) : [];
+
+  // Guarantee that every article with CVEs mentions at least one CVE in its prose
+  if (cves.length > 0) {
+    if (category === 'General' || !category) {
+      category = 'CVE';
+    }
+    const hasCveInText = cves.some(cve => headline.includes(cve) || summary.includes(cve));
+    if (!hasCveInText) {
+      const trackingSentence = cves.length === 1
+        ? `The flaw is tracked as ${cves[0]}.`
+        : `The vulnerabilities are tracked as ${cves.slice(0, 3).join(', ')}.`;
+
+      const cleanSummary = summary.replace(/[.\s]+$/, '');
+      const candidateSummary = `${cleanSummary}. ${trackingSentence}`;
+      if (candidateSummary.split(/\s+/).length <= 65) {
+        summary = candidateSummary;
+      }
+    }
+  } else if (category === 'CVE') {
+    // If categorized as CVE but has no actual CVE ID, reclassify as Vulnerability
+    category = 'Vulnerability';
+  }
+
   return {
     id: sourceUrl,
     sourceUrl,
-    title: fallbackResult.headline,
-    headline: fallbackResult.headline,
-    summary: fallbackResult.summary,
-    category: fallbackResult.category,
+    title: headline,
+    headline,
+    summary,
+    category,
     severity: fallbackResult.severity,
     source: candidate.sourceName || candidate.source || 'SecuBuzz',
     publishedAt,
     ingestedAt,
     isPublishedTimeUnknown,
     isFutureSkew,
-    cves: typeof extractCvesFn === 'function' ? extractCvesFn(`${fallbackResult.headline} ${fallbackResult.summary} ${candidate.description || ''}`) : [],
+    cves,
     additionalSources: [],
     isFallback: true,
   };

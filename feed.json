@@ -259,7 +259,11 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9090-1",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-109163",
+      "CVE-2026-42528"
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:99695",
@@ -938,7 +942,11 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9066-1",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2023-20585",
+      "CVE-2025-10263"
+    ]
   },
   {
     "id": "https://ubuntu.com/security/notices/USN-9018-2",
@@ -1047,7 +1055,7 @@
     "sourceUrl": "https://ubuntu.com/security/notices/USN-9064-1",
     "title": "Ubuntu Discloses Pillow Denial‑of‑Service Vulnerabilities",
     "headline": "Ubuntu Discloses Pillow Denial‑of‑Service Vulnerabilities",
-    "summary": "Ubuntu released security notice USN‑9064‑1, exposing multiple Pillow library flaws that allow attackers to trigger denial‑of‑service conditions via infinite loops and uncontrolled recursion. The CVE‑identified issues (CVE‑2026‑112390, CVE‑2026‑112391, CVE‑2026‑112392) affect Ubuntu 18.04 through 26.10, causing potential service crashes or hangs without authentication.",
+    "summary": "Ubuntu released security notice USN‑9064‑1, exposing multiple Pillow library flaws that allow attackers to trigger denial‑of‑service conditions via infinite loops and uncontrolled recursion. The CVE‑identified issues (CVE‑2026‑112390, CVE‑2026‑112391, CVE‑2026‑112392) affect Ubuntu 18.04 through 26.10, causing potential service crashes or hangs without authentication. The vulnerabilities are tracked as CVE-2026-112390, CVE-2026-112391, CVE-2026-112392.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -1056,7 +1064,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9064-1",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-112390",
+      "CVE-2026-112391",
+      "CVE-2026-112392"
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
@@ -1072,7 +1085,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-120868"
+    ]
   },
   {
     "id": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
@@ -1088,7 +1104,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-119618"
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:99632",
@@ -1351,7 +1370,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/red-hat-quay-vulnerability/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-123710"
+    ]
   },
   {
     "id": "https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/",
@@ -1367,14 +1389,17 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://research.checkpoint.com/2026/php2shell-exploitation-on-check-point-gateway/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-109618"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/aws-mcp-gateway-security-flaw/",
     "sourceUrl": "https://cybersecuritynews.com/aws-mcp-gateway-security-flaw/",
     "title": "AWS Fixes MCP Gateway SSRF Vulnerability",
     "headline": "AWS Fixes MCP Gateway SSRF Vulnerability",
-    "summary": "AWS disclosed CVE‑2026‑125926, a server‑side request forgery flaw in mcp‑gateway‑registry that permits authenticated users to access internal services and cloud credentials. The vulnerability affects versions 1.0.3 through 1.34.0; version 1.35.0 contains the fix and mitigates the internal network exposure. AWS urges users to upgrade to 1.35.0 or apply the patch immediately to prevent unauthorized internal access.",
+    "summary": "AWS disclosed CVE‑2026‑125926, a server‑side request forgery flaw in mcp‑gateway‑registry that permits authenticated users to access internal services and cloud credentials. The vulnerability affects versions 1.0.3 through 1.34.0; version 1.35.0 contains the fix and mitigates the internal network exposure. AWS urges users to upgrade to 1.35.0 or apply the patch immediately to prevent unauthorized internal access. The flaw is tracked as CVE-2026-125926.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -1383,7 +1408,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/aws-mcp-gateway-security-flaw/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-125926"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/qilin-ransomware-admin-identified/",
@@ -1490,7 +1518,7 @@
     "sourceUrl": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
     "title": "SCKit Exploits ScreenConnect Remote Access Vulnerability",
     "headline": "SCKit Exploits ScreenConnect Remote Access Vulnerability",
-    "summary": "SCKit malware exploits the patched CVE‑2026‑84869 flaw in ConnectWise ScreenConnect, hijacking support sessions to compromise managed service provider environments. The CVSS 9.9 flaw permits unauthenticated remote code execution via crafted requests, exposing internal networks to lateral movement. ScreenConnect released an update; administrators should patch immediately and disable unused remote‑access features to mitigate risk.",
+    "summary": "SCKit malware exploits the patched CVE‑2026‑84869 flaw in ConnectWise ScreenConnect, hijacking support sessions to compromise managed service provider environments. The CVSS 9.9 flaw permits unauthenticated remote code execution via crafted requests, exposing internal networks to lateral movement. ScreenConnect released an update; administrators should patch immediately and disable unused remote‑access features to mitigate risk. The flaw is tracked as CVE-2026-84869.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "The Hacker News",
@@ -1499,7 +1527,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-84869"
+    ]
   },
   {
     "id": "https://therecord.media/kazakhstan-hackers-central-asia",
@@ -1644,7 +1675,7 @@
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
     "title": "Siemens RUGGEDCOM APE1808 Affected by PHP2Shell Flaw",
     "headline": "Siemens RUGGEDCOM APE1808 Affected by PHP2Shell Flaw",
-    "summary": "A use‑after‑free flaw in PAN‑OS PHP2Shell (CVE‑2026‑109618/109619) enables remote code execution on Siemens RUGGEDCOM APE1808 devices. The flaw exploits PHP's longjmp OOM handling, yielding CVSS 9.8 and critical infrastructure impact; attackers can execute arbitrary code without authentication. Siemens recommends applying the vendor‑issued workarounds and updating firmware as soon as patches are available.",
+    "summary": "A use‑after‑free flaw in PAN‑OS PHP2Shell (CVE‑2026‑109618/109619) enables remote code execution on Siemens RUGGEDCOM APE1808 devices. The flaw exploits PHP's longjmp OOM handling, yielding CVSS 9.8 and critical infrastructure impact; attackers can execute arbitrary code without authentication. Siemens recommends applying the vendor‑issued workarounds and updating firmware as soon as patches are available. The flaw is tracked as CVE-2026-109618.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CISA",
@@ -1653,14 +1684,17 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-109618"
+    ]
   },
   {
     "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
     "title": "Siemens Building Automation Affected by PHP2Shell Vulnerabilities",
     "headline": "Siemens Building Automation Affected by PHP2Shell Vulnerabilities",
-    "summary": "The PHP core vulnerabilities CVE‑2026‑109618/109619 (php2shell) allow unauthenticated remote code execution on Siemens Building Automation and Energy products. The flaws stem from improper handling of PHP's longjmp OOM errors, granting attackers full code execution without credentials and posing critical infrastructure risk. Siemens advises restricting network access, applying vendor‑issued workarounds, and following operational guidelines until patches are released.",
+    "summary": "The PHP core vulnerabilities CVE‑2026‑109618/109619 (php2shell) allow unauthenticated remote code execution on Siemens Building Automation and Energy products. The flaws stem from improper handling of PHP's longjmp OOM errors, granting attackers full code execution without credentials and posing critical infrastructure risk. Siemens advises restricting network access, applying vendor‑issued workarounds, and following operational guidelines until patches are released. The flaw is tracked as CVE-2026-109618.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CISA",
@@ -1669,7 +1703,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-109618"
+    ]
   },
   {
     "id": "https://isc.sans.edu/diary/rss/33514",
@@ -2068,7 +2105,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-118383"
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/12/wfx-loot-github-actions-secret-stealer/",
@@ -2180,7 +2220,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/palo-alto-networks-pan-os-rce-vulnerability/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0330"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/top-10-best-pci-dss-compliance-tools-in-2026-ranked-scored-best-pci-dss-compliance-tools/",
@@ -2490,7 +2533,7 @@
     "sourceUrl": "https://cybernewsai.com/blog/cve-2026-118383-use-after-free-vulnerability-in-mongodb",
     "title": "MongoDB Use‑After‑Free CVE‑2026‑118383 Exploited",
     "headline": "MongoDB Use‑After‑Free CVE‑2026‑118383 Exploited",
-    "summary": "MongoDB is affected by CVE‑2026‑118383, a use‑after‑free vulnerability that can lead to arbitrary code execution in enterprise environments. The flaw arises when the database fails to release memory after a malicious request, allowing attackers to trigger a crash or execute injected code. MongoDB has released a patch; administrators should apply the update immediately and monitor logs for anomalous activity.",
+    "summary": "MongoDB is affected by CVE‑2026‑118383, a use‑after‑free vulnerability that can lead to arbitrary code execution in enterprise environments. The flaw arises when the database fails to release memory after a malicious request, allowing attackers to trigger a crash or execute injected code. MongoDB has released a patch; administrators should apply the update immediately and monitor logs for anomalous activity. The flaw is tracked as CVE-2026-118383.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "CyberNews AI",
@@ -2499,7 +2542,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/cve-2026-118383-use-after-free-vulnerability-in-mongodb",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-118383"
+    ]
   },
   {
     "id": "https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt",
@@ -2515,7 +2561,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/critical-rce-vulnerability-in-apache-http-server-everyt",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-119618"
+    ]
   },
   {
     "id": "https://cybernewsai.com/blog/the-xg-files-falcon-c2-flying-under-the-browser-radar",
@@ -2563,7 +2612,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/citrix-ivanti-patch-critical-and-high-severity-vulnerab",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-121683"
+    ]
   },
   {
     "id": "https://cybernewsai.com/blog/notion-says-fireworks-breach-exposed-customer-ai-chat-t",
@@ -2978,7 +3030,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/critical-zoom-workplace-flaw-could-allow-unauthenticate",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-108187"
+    ]
   },
   {
     "id": "https://www.greynoise.io/blog/ai-cyber-index-benchmarking-defensive-capabilities",
@@ -3147,7 +3202,7 @@
     "sourceUrl": "https://chromereleases.googleblog.com/2026/11/long-term-support-channel-update-for.html",
     "title": "ChromeOS LTS‑150 Patches Critical Use‑After‑Free",
     "headline": "ChromeOS LTS‑150 Patches Critical Use‑After‑Free",
-    "summary": "Google released ChromeOS LTS-150, patching numerous high‑severity CVEs including a critical CVE‑2026‑126879 use‑after‑free in the layout engine. The update addresses 18 CVEs such as CVE‑2026‑126901, CVE‑2026‑126856, and CVE‑2026‑126887, all of which could lead to code execution or denial of service.",
+    "summary": "Google released ChromeOS LTS-150, patching numerous high‑severity CVEs including a critical CVE‑2026‑126879 use‑after‑free in the layout engine. The update addresses 18 CVEs such as CVE‑2026‑126901, CVE‑2026‑126856, and CVE‑2026‑126887, all of which could lead to code execution or denial of service. The vulnerabilities are tracked as CVE-2026-126879, CVE-2026-126901, CVE-2026-126856.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "Google Chrome Releases",
@@ -3156,7 +3211,13 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://chromereleases.googleblog.com/2026/11/long-term-support-channel-update-for.html",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-126879",
+      "CVE-2026-126901",
+      "CVE-2026-126856",
+      "CVE-2026-126887"
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:99209",
@@ -3934,7 +3995,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0324",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0324"
+    ]
   },
   {
     "id": "https://security.paloaltonetworks.com/CVE-2026-0329",
@@ -3950,7 +4014,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0329",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0329"
+    ]
   },
   {
     "id": "https://security.paloaltonetworks.com/CVE-2026-0326",
@@ -3966,7 +4033,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0326",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0326"
+    ]
   },
   {
     "id": "https://security.paloaltonetworks.com/CVE-2026-0328",
@@ -3982,7 +4052,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0328",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0328"
+    ]
   },
   {
     "id": "https://security.paloaltonetworks.com/CVE-2026-0323",
@@ -3998,7 +4071,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0323",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0323"
+    ]
   },
   {
     "id": "https://security.paloaltonetworks.com/CVE-2026-0331",
@@ -4014,7 +4090,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0331",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0331"
+    ]
   },
   {
     "id": "https://security.paloaltonetworks.com/PAN-SA-2026-0014",
@@ -4041,7 +4120,7 @@
     "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0325",
     "title": "PAN‑OS GlobalProtect Authorization Bypass CVE‑2026‑0325",
     "headline": "PAN‑OS GlobalProtect Authorization Bypass CVE‑2026‑0325",
-    "summary": "Palo Alto Networks disclosed CVE‑2026‑0325, an authorization bypass flaw in PAN‑OS GlobalProtect. The vulnerability allows an unauthenticated attacker to gain privileged access to the VPN portal, with a CVSS score indicating low impact; no active exploitation has been reported. Palo Alto recommends applying the latest PAN‑OS update that patches CVE‑2026‑0325 to prevent unauthorized access.",
+    "summary": "Palo Alto Networks disclosed CVE‑2026‑0325, an authorization bypass flaw in PAN‑OS GlobalProtect. The vulnerability allows an unauthenticated attacker to gain privileged access to the VPN portal, with a CVSS score indicating low impact; no active exploitation has been reported. Palo Alto recommends applying the latest PAN‑OS update that patches CVE‑2026‑0325 to prevent unauthorized access. The flaw is tracked as CVE-2026-0325.",
     "category": "CVE",
     "severity": "LOW",
     "source": "Palo Alto Networks PSIRT",
@@ -4050,14 +4129,17 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0325",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0325"
+    ]
   },
   {
     "id": "https://security.paloaltonetworks.com/CVE-2026-0327",
     "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0327",
     "title": "PAN‑OS GlobalProtect Privilege Escalation CVE‑2026‑0327",
     "headline": "PAN‑OS GlobalProtect Privilege Escalation CVE‑2026‑0327",
-    "summary": "Palo Alto Networks identified CVE‑2026‑0327, a privilege escalation flaw in PAN‑OS GlobalProtect. The bug permits an authenticated user to elevate privileges on the VPN appliance, with a CVSS score reflecting low severity; no exploitation evidence exists. Apply the vendor’s latest PAN‑OS patch that addresses CVE‑2026‑0327 to eliminate the escalation vector.",
+    "summary": "Palo Alto Networks identified CVE‑2026‑0327, a privilege escalation flaw in PAN‑OS GlobalProtect. The bug permits an authenticated user to elevate privileges on the VPN appliance, with a CVSS score reflecting low severity; no exploitation evidence exists. Apply the vendor’s latest PAN‑OS patch that addresses CVE‑2026‑0327 to eliminate the escalation vector. The flaw is tracked as CVE-2026-0327.",
     "category": "CVE",
     "severity": "LOW",
     "source": "Palo Alto Networks PSIRT",
@@ -4066,14 +4148,17 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0327",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0327"
+    ]
   },
   {
     "id": "https://security.paloaltonetworks.com/CVE-2026-0330",
     "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0330",
     "title": "PAN‑OS Panorama RCE CVE‑2026‑0330",
     "headline": "PAN‑OS Panorama RCE CVE‑2026‑0330",
-    "summary": "Palo Alto Networks disclosed CVE‑2026‑0330, an authenticated remote code execution flaw in PAN‑OS Panorama. The vulnerability allows a logged‑in attacker to execute arbitrary code on the Panorama server, with a CVSS score indicating medium severity; no active exploitation has been reported. Install the latest PAN‑OS update that patches CVE‑2026‑0330 to prevent remote code execution.",
+    "summary": "Palo Alto Networks disclosed CVE‑2026‑0330, an authenticated remote code execution flaw in PAN‑OS Panorama. The vulnerability allows a logged‑in attacker to execute arbitrary code on the Panorama server, with a CVSS score indicating medium severity; no active exploitation has been reported. Install the latest PAN‑OS update that patches CVE‑2026‑0330 to prevent remote code execution. The flaw is tracked as CVE-2026-0330.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Palo Alto Networks PSIRT",
@@ -4082,7 +4167,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://security.paloaltonetworks.com/CVE-2026-0330",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-0330"
+    ]
   },
   {
     "id": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
@@ -4090,7 +4178,7 @@
     "title": "Microsoft FORGE Lab Discovers 59 Linux Kernel Vulnerabilities, 8 Root Exploits",
     "headline": "Microsoft FORGE Lab Discovers 59 Linux Kernel Vulnerabilities, 8 Root Exploits",
     "summary": "Microsoft FORGE Lab used AI to uncover 59 Linux kernel bugs, including eight that enable local root privilege escalation. The findings yielded 33 CVEs, 38 upstream fixes, and prompted Microsoft to release detailed exploit proofs and remediation guidance. Security teams worldwide are urged to patch affected kernel versions to mitigate potential exploitation of these critical flaws.",
-    "category": "CVE",
+    "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "Microsoft Security",
     "publishedAt": "2026-11-11T16:55:00.000Z",
@@ -4153,15 +4241,18 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-108186"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/hackers-could-exploit-mcp-server/",
     "sourceUrl": "https://cybersecuritynews.com/hackers-could-exploit-mcp-server/",
     "title": "Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials",
     "headline": "Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials",
-    "summary": "Security teams that run AI coding assistants may be exposing their most powerful credentials without knowing it. A new study shows that Model Context Protocol (MCP) servers can quietly change their own code after they are set up.",
-    "category": "General",
+    "summary": "Security teams that run AI coding assistants may be exposing their most powerful credentials without knowing it. A new study shows that Model Context Protocol (MCP) servers can quietly change their own code after they are set up. The flaw is tracked as CVE-2026-125271.",
+    "category": "CVE",
     "severity": "MEDIUM",
     "source": "Cyber Security News",
     "publishedAt": "2026-11-11T16:07:18.000Z",
@@ -4188,7 +4279,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114155",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114155"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114156",
@@ -4204,14 +4298,17 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114156",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114156"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114149",
     "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114149",
     "title": "ASP.NET Core Vulnerability Enables Denial of Service",
     "headline": "ASP.NET Core Vulnerability Enables Denial of Service",
-    "summary": "CVE‑2026‑114149 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed HTTP requests. The vulnerability allows attackers to exhaust server resources, causing legitimate traffic to be dropped without code execution. Microsoft has released an update; administrators should apply the latest ASP.NET Core patch to mitigate the DoS risk.",
+    "summary": "CVE‑2026‑114149 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed HTTP requests. The vulnerability allows attackers to exhaust server resources, causing legitimate traffic to be dropped without code execution. Microsoft has released an update; administrators should apply the latest ASP.NET Core patch to mitigate the DoS risk. The flaw is tracked as CVE-2026-114149.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "Microsoft MSRC",
@@ -4220,7 +4317,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114149",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114149"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114147",
@@ -4236,7 +4336,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114147",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114147"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114146",
@@ -4252,7 +4355,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114146",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114146"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
@@ -4268,7 +4374,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-109481"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476",
@@ -4284,7 +4393,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-109476"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
@@ -4300,7 +4412,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-109478"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
@@ -4316,7 +4431,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-105544"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475",
@@ -4332,7 +4450,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-109475"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159",
@@ -4348,7 +4469,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114159"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745",
@@ -4364,7 +4488,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-118745"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114151",
@@ -4380,7 +4507,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114151",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114151"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114152",
@@ -4396,7 +4526,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114152",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114152"
+    ]
   },
   {
     "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114158",
@@ -4412,7 +4545,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114158",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-114158"
+    ]
   },
   {
     "id": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
@@ -4588,7 +4724,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/11/git-project-security-updates/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-111760"
+    ]
   },
   {
     "id": "https://blog.cloudflare.com/choosing-quepaxa/",
@@ -4659,7 +4798,7 @@
     "sourceUrl": "https://cybersecuritynews.com/windows-signdrop-zero-day-exploit/",
     "title": "Windows SignDrop 0-Day Exploit Lets Attackers Gain SYSTEM Privileges Through CLFS Protection",
     "headline": "Windows SignDrop 0-Day Exploit Lets Attackers Gain SYSTEM Privileges Through CLFS Protection",
-    "summary": "A public exploit called SignDrop targets a Windows security feature meant to stop attacks on the Common Log File System (CLFS). It claims to turn a normal user account into a SYSTEM account, the highest level of control on Windows. The flaw has no CVE number and no patch as of November 11, 2026.",
+    "summary": "A public exploit called SignDrop targets a Windows security feature meant to stop attacks on the Common Log File System (CLFS). It claims to turn a normal user account into a SYSTEM account, the highest level of control on Windows. The flaw has no CVE number and no patch as of November 11, 2026. The flaw is tracked as CVE-2026-97015.",
     "category": "Vulnerability",
     "severity": "HIGH",
     "source": "Cyber Security News",
@@ -4817,7 +4956,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/git-patches-flaw-that-lets-malicious-repositories-execu",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-111760"
+    ]
   },
   {
     "id": "https://cybernewsai.com/blog/cisa-adds-six-known-exploited-vulnerabilities-to-catalo",
@@ -4852,7 +4994,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/cisa-flags-cisco-broadworks-flaw-as-actively-exploited",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-20320"
+    ]
   },
   {
     "id": "https://cybernewsai.com/blog/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws",
@@ -4868,7 +5013,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-124194"
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:98471",
@@ -5169,7 +5317,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/bugs/2026/11/microsoft-patch-tuesday-fixes-outlook-flaw-already-under-attack",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-124194"
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:98588",
@@ -5210,7 +5361,7 @@
     "sourceUrl": "https://cybersecuritynews.com/multiple-windows-remote-desktop-vulnerabilities/",
     "title": "Multiple Windows Remote Desktop Flaws Allow Attackers to Execute Code Over Network",
     "headline": "Multiple Windows Remote Desktop Flaws Allow Attackers to Execute Code Over Network",
-    "summary": "Microsoft has released security updates for four Windows Remote Desktop Client vulnerabilities that could allow attackers to run code through network connections or local access. Published on November 10, 2026, the flaws involve memory handling errors and a race condition.",
+    "summary": "Microsoft has released security updates for four Windows Remote Desktop Client vulnerabilities that could allow attackers to run code through network connections or local access. Published on November 10, 2026, the flaws involve memory handling errors and a race condition. The vulnerabilities are tracked as CVE-2026-119934, CVE-2026-119858, CVE-2026-95964.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Cyber Security News",
@@ -5302,8 +5453,8 @@
     "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-ahsaycbs-vulnerabilities/",
     "title": "Hackers Exploit AhsayCBS Vulnerabilities to Hide Malware in PNG Images and Deploy Stealthy Backdoors",
     "headline": "Hackers Exploit AhsayCBS Vulnerabilities to Hide Malware in PNG Images and Deploy Stealthy Backdoors",
-    "summary": "Hackers exploiting AhsayCBS backup servers have planted webshells, hidden encrypted code inside PNG images, and staged a Python implant designed to run only on its intended host. The findings show an intrusion that extended beyond cryptocurrency mining, giving attackers several ways to keep access to systems responsible for protecting an organization’s backups.",
-    "category": "General",
+    "summary": "Hackers exploiting AhsayCBS backup servers have planted webshells, hidden encrypted code inside PNG images, and staged a Python implant designed to run only on its intended host. The findings show an intrusion that extended beyond cryptocurrency mining, giving attackers several ways to keep access to systems responsible for protecting an organization’s backups. The flaw is tracked as CVE-2026-105133.",
+    "category": "CVE",
     "severity": "MEDIUM",
     "source": "Cyber Security News",
     "publishedAt": "2026-11-11T10:44:43.000Z",
@@ -5330,7 +5481,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9043-1",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2023-20585"
+    ]
   },
   {
     "id": "https://ubuntu.com/security/notices/USN-9045-1",
@@ -5346,7 +5500,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9045-1",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2023-20585"
+    ]
   },
   {
     "id": "https://ubuntu.com/security/notices/USN-9044-1",
@@ -5362,7 +5519,11 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9044-1",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-98239",
+      "CVE-2026-98432"
+    ]
   },
   {
     "id": "https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited",
@@ -5378,7 +5539,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-20320"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/clickfix-attacks-evolve/",
@@ -5561,7 +5725,11 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-111793",
+      "CVE-2026-20320"
+    ]
   },
   {
     "id": "https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/",
@@ -5616,7 +5784,7 @@
     "sourceUrl": "https://ubuntu.com/security/notices/USN-9040-1",
     "title": "Kernel RMP Check Flaw Enables Hypervisor Out-of-Bounds",
     "headline": "Kernel RMP Check Flaw Enables Hypervisor Out-of-Bounds",
-    "summary": "A kernel flaw in IOMMU RMP checks allows a local hypervisor attacker to trigger an out‑of‑bounds condition and corrupt SEV‑SNP guest memory. The vulnerability, identified as CVE‑2023‑20585, could enable privilege escalation within virtualized environments, potentially compromising guest isolation. Red Hat released a kernel patch that restores RMP validation and addresses affected subsystems, and users should apply the update immediately.",
+    "summary": "A kernel flaw in IOMMU RMP checks allows a local hypervisor attacker to trigger an out‑of‑bounds condition and corrupt SEV‑SNP guest memory. The vulnerability, identified as CVE‑2023‑20585, could enable privilege escalation within virtualized environments, potentially compromising guest isolation. Red Hat released a kernel patch that restores RMP validation and addresses affected subsystems, and users should apply the update immediately. The flaw is tracked as CVE-2023-20585.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "Ubuntu Security Notices",
@@ -5625,7 +5793,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9040-1",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2023-20585"
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
@@ -5641,7 +5812,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-124194"
+    ]
   },
   {
     "id": "https://ubuntu.com/security/notices/USN-9039-1",
@@ -5725,7 +5899,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/windows-active-directory-rce-vulnerability/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-119948"
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
@@ -5758,7 +5935,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-121529"
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/11/aurimas-bakas-copla-cra-vulnerability-reporting/",
@@ -5838,7 +6018,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-20320"
+    ]
   },
   {
     "id": "https://www.helpnetsecurity.com/2026/11/11/eu-enisa-cybersecurity-report/",
@@ -6826,7 +7009,7 @@
     "sourceUrl": "https://cybersecuritynews.com/critical-fortinet-flaws-patched/",
     "title": "Critical Fortinet Flaws Expose FortiManager and FortiAnalyzer to Remote Code Execution Without Login",
     "headline": "Critical Fortinet Flaws Expose FortiManager and FortiAnalyzer to Remote Code Execution Without Login",
-    "summary": "Fortinet has disclosed critical security flaws affecting FortiManager, FortiAnalyzer, and FortiOS, including weaknesses that could let attackers execute code without logging in. Published on November 10, 2026, the disclosures cover management APIs, device communication services, routing, and specific high availability setups.",
+    "summary": "Fortinet has disclosed critical security flaws affecting FortiManager, FortiAnalyzer, and FortiOS, including weaknesses that could let attackers execute code without logging in. Published on November 10, 2026, the disclosures cover management APIs, device communication services, routing, and specific high availability setups. The flaw is tracked as CVE-2026-100204.",
     "category": "Vulnerability",
     "severity": "MEDIUM",
     "source": "Cyber Security News",
@@ -7752,7 +7935,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-178-aws/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-124848"
+    ]
   },
   {
     "id": "https://access.redhat.com/errata/RHSA-2026:97435",
@@ -7931,7 +8117,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-124194"
+    ]
   },
   {
     "id": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
@@ -8122,7 +8311,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://ubuntu.com/security/notices/USN-9038-1",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-3083",
+      "CVE-2026-3085",
+      "CVE-2026-39043"
+    ]
   },
   {
     "id": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
@@ -8307,7 +8501,7 @@
     "sourceUrl": "https://cybernewsai.com/blog/chrome-update-patches-exploited-xml-zero-day-eighth-thi",
     "title": "CVE‑2026‑125350 XML Use‑After‑Free Flaw Patched",
     "headline": "CVE‑2026‑125350 XML Use‑After‑Free Flaw Patched",
-    "summary": "CVE‑2026‑125350, an XML use‑after‑free flaw, was disclosed and patched, affecting enterprise XML processing components. The flaw permits unauthenticated attackers to trigger memory corruption, potentially leading to remote code execution or denial of service. Security teams should deploy the vendor patch immediately, monitor for exploitation indicators, and validate XML input sanitization to mitigate risk.",
+    "summary": "CVE‑2026‑125350, an XML use‑after‑free flaw, was disclosed and patched, affecting enterprise XML processing components. The flaw permits unauthenticated attackers to trigger memory corruption, potentially leading to remote code execution or denial of service. Security teams should deploy the vendor patch immediately, monitor for exploitation indicators, and validate XML input sanitization to mitigate risk. The flaw is tracked as CVE-2026-125350.",
     "category": "CVE",
     "severity": "CRITICAL",
     "source": "CyberNews AI",
@@ -8316,7 +8510,10 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://cybernewsai.com/blog/chrome-update-patches-exploited-xml-zero-day-eighth-thi",
-    "additionalSources": []
+    "additionalSources": [],
+    "cves": [
+      "CVE-2026-125350"
+    ]
   },
   {
     "id": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",

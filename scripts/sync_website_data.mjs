@@ -53,8 +53,20 @@ function mapCategory(cat) {
   return 'General';
 }
 
+function normalizeHyphens(text) {
+  return (text || '').replace(/[\u2010-\u2015\u2212]/g, '-');
+}
+
+function normalizeCveHyphens(text) {
+  return (text || '').replace(
+    /CVE[\u2010-\u2015\u2212-](\d{4})[\u2010-\u2015\u2212-](\d{4,7})/gi,
+    'CVE-$1-$2'
+  );
+}
+
 function extractCves(text) {
-  const matches = (text || '').match(/CVE-\d{4}-\d{4,7}/gi);
+  const norm = normalizeCveHyphens(normalizeHyphens(text || ''));
+  const matches = norm.match(/CVE-\d{4}-\d{4,7}/gi);
   return matches ? Array.from(new Set(matches.map(c => c.toUpperCase()))) : [];
 }
 
@@ -153,12 +165,28 @@ async function syncNews() {
     const title = (art.title || art.headline || '').trim();
     if (!title) continue;
 
-    const summary = (art.summary || '').trim();
+    let summary = (art.summary || '').trim();
     const source = (art.source || art.sourceName || 'SecuBuzz').trim();
     const sourceUrl = (art.sourceUrl || art.url || art.id || '').trim();
     const publishedAt = art.publishedAt || new Date().toISOString();
-    const cves = extractCves(title + ' ' + summary);
-    const category = mapCategory(art.category, title + ' ' + summary);
+
+    const existingCves = Array.isArray(art.cves) ? art.cves : [];
+    const extractedCves = extractCves(`${title} ${summary} ${sourceUrl} ${art.id || ''}`);
+    const cves = Array.from(new Set([...existingCves, ...extractedCves]));
+
+    let category = mapCategory(art.category, title + ' ' + summary);
+    if (cves.length > 0) {
+      if (category === 'General' || !category) category = 'CVE';
+      const hasCveInText = cves.some(c => title.includes(c) || summary.includes(c));
+      if (!hasCveInText) {
+        const tracking = cves.length === 1
+          ? `The flaw is tracked as ${cves[0]}.`
+          : `The vulnerabilities are tracked as ${cves.slice(0, 3).join(', ')}.`;
+        summary = `${summary.replace(/[.\s]+$/, '')}. ${tracking}`;
+      }
+    } else if (category === 'CVE') {
+      category = 'Vulnerability';
+    }
 
     const normUrl = sourceUrl.toLowerCase();
     const articleId = (art.id || sourceUrl || title).trim().toLowerCase();
