@@ -11,6 +11,62 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "belarusian-cloud-firm-suffers-ransomware-encryptio-0ea179d8",
+    "title": "Belarusian Cloud Firm Suffers Ransomware Encryption",
+    "summary": "Ransomware attackers breached ActiveCloud’s cloud infrastructure, encrypting critical services. No CVE disclosed; attackers leveraged credential theft or misconfigured access to encrypt data, causing multi‑day service outages across the firm’s key services. ActiveCloud has applied emergency patches and recommends customers enforce strict access controls, enable backups, and monitor for anomalous activity.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
+    "publishedAt": "2026-11-13T14:28:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "belarusian-cloud-firm-suffers-ransomware-encryptio",
+      "article-0ea179d8",
+      "0ea179d8",
+      "belarusian-cloud-firm-suffers-ransomware-encryptio-56df06",
+      "belarusian-cloud-firm-suffers-ransomware-encryption"
+    ]
+  },
+  {
+    "slug": "cloudflare-launches-spend-management-for-workers-21979760",
+    "title": "Cloudflare Launches Spend Management for Workers",
+    "summary": "Cloudflare introduces Spend Management, adding spending caps and alerts for Workers and Durable Objects, with plans to extend to services. The feature uses a metering pipeline that translates usage metrics into runtime decisions, enabling real‑time cost control and budget enforcement. Users can configure thresholds, receive notifications, and enforce limits through the Cloudflare dashboard, reducing accidental over‑spending and improving cost visibility.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cloudflare Security",
+    "sourceUrl": "https://blog.cloudflare.com/spend-management/",
+    "publishedAt": "2026-11-13T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cloudflare-launches-spend-management-for-workers",
+      "article-21979760",
+      "21979760",
+      "cloudflare-launches-spend-management-for-workers-5280cf"
+    ]
+  },
+  {
+    "slug": "microsoft-battles-global-outage-email-services-dow-f1308f2a",
+    "title": "Microsoft Battles Global Outage, Email Services Down",
+    "summary": "Microsoft experienced a global outage disrupting email and other services across its cloud infrastructure. The root cause remains unidentified; Microsoft is isolating and repairing affected infrastructure, suggesting underlying network or configuration issues. Microsoft is actively investigating, restoring services, and advising users to monitor official updates for status in the coming hours.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/",
+    "publishedAt": "2026-11-13T13:47:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-battles-global-outage-email-services-dow",
+      "article-f1308f2a",
+      "f1308f2a",
+      "microsoft-battles-global-outage-email-services-dow-d66625",
+      "microsoft-battles-global-outage-email-services-down"
+    ]
+  },
+  {
     "slug": "binance-breach-exploits-known-weakness-lacks-contr-f0a16de5",
     "title": "Binance Breach Exploits Known Weakness, Lacks Controls",
     "summary": "Attackers breached Binance by exploiting a known weakness and missing security controls in the exchange’s blockchain infrastructure. The flaw allowed attacker‑deployed sweepers to bypass safeguards, potentially enabling rapid asset transfer and undermining transaction integrity. Binance has issued a security advisory and is tightening monitoring, but no public patch is available for the underlying weakness.",
@@ -102,6 +158,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "europol-seizes-gootloader-castlerat-servers-8711f5cb",
+    "title": "Europol Seizes Gootloader, CastleRAT Servers",
+    "summary": "Europol seized servers hosting the Gootloader and CastleRAT malware families, disrupting their command-and-control infrastructure. The seizure dismantles the attackers’ ability to deliver ransomware payloads and exfiltrate data, though the malware remains active elsewhere. Law enforcement will continue to monitor recovered infrastructure, and security teams should update threat intelligence feeds to detect related indicators.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/police-dismantle-gootloader-castlerat-stealc-malware-in",
+    "publishedAt": "2026-11-13T11:59:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "europol-seizes-gootloader-castlerat-servers",
+      "article-8711f5cb",
+      "8711f5cb",
+      "europol-seizes-gootloader-castlerat-servers-3d5d88"
+    ]
+  },
+  {
     "slug": "apache-http-server-rce-exploit-cve-2026-119618-7e379ba1",
     "title": "Apache HTTP Server RCE Exploit CVE-2026-119618",
     "summary": "CVE-2026-119618 allows remote code execution against Apache HTTP Server via crafted HTTP requests. The flaw stems from improper input validation in request parsing, yielding unauthenticated RCE with a CVSS of 9.2; public PoC code exists. Apache released an out‑of‑band patch; apply it immediately and monitor traffic for anomalous critical requests.",
@@ -157,6 +231,24 @@ export const news: NewsBrief[] = [
       "2e42f854",
       "ai-agent-misbehavior-how-to-halt-unintended-action-2131eb",
       "ai-agent-misbehavior-how-to-halt-unintended-actions"
+    ]
+  },
+  {
+    "slug": "github-malicious-workflows-steal-cloud-credentials-121cfbf4",
+    "title": "GitHub Malicious Workflows Steal Cloud Credentials",
+    "summary": "GitHub discovered malicious workflows that exfiltrate cloud credentials from repositories, compromising user accounts. The flaw allows attackers to embed credential‑exfiltration scripts in CI/CD pipelines, enabling unauthorized access to cloud services and potential data loss. GitHub recommends revoking exposed tokens, updating workflow permissions, and applying the latest security patches to mitigate credential theft.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/hackers-compromise-4-800-github-accounts-to-steal-cloud",
+    "publishedAt": "2026-11-13T11:39:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "github-malicious-workflows-steal-cloud-credentials",
+      "article-121cfbf4",
+      "121cfbf4",
+      "github-malicious-workflows-steal-cloud-credentials-293d9e"
     ]
   },
   {
@@ -235,6 +327,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "apple-unveils-secure-exclaves-for-camera-and-micro-862aa31a",
+    "title": "Apple Unveils Secure Exclaves for Camera and Microphone Data",
+    "summary": "Apple announced Secure Exclaves, an isolated runtime protecting camera and microphone data during background processing on iPhone devices. The architecture keeps processed data inaccessible to the OS, apps, or Apple, enhancing privacy for HomeView, Siri Recap, and Live Rewind. Developers should review API guidelines and update apps to use Secure Exclaves for sensitive media handling, following Apple’s best practices.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/apple-secure-exclaves-security-architecture/",
+    "publishedAt": "2026-11-13T11:27:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apple-unveils-secure-exclaves-for-camera-and-micro",
+      "article-862aa31a",
+      "862aa31a",
+      "apple-unveils-secure-exclaves-for-camera-and-micro-5b6737",
+      "apple-unveils-secure-exclaves-for-camera-and-microphone-data"
+    ]
+  },
+  {
+    "slug": "google-releases-second-chrome-patch-for-code-execu-e72d8fdc",
+    "title": "Google Releases Second Chrome Patch for Code Execution Flaws",
+    "summary": "Google released a second Chrome update this week addressing vulnerabilities that could enable malicious code execution. The flaws involved input validation errors in the rendering engine, potentially allowing attackers to execute code; no public exploit was reported, but the risk warranted immediate remediation. Users should install the latest Chrome version, and security teams should verify update deployment across endpoints.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/google-pushes-second-chrome-update-this-week",
+    "publishedAt": "2026-11-13T11:20:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-second-chrome-patch-for-code-execu",
+      "article-e72d8fdc",
+      "e72d8fdc",
+      "google-releases-second-chrome-patch-for-code-execu-ef31ec",
+      "google-releases-second-chrome-patch-for-code-execution-flaws"
+    ]
+  },
+  {
     "slug": "silentair-hijacks-asian-telecom-networks-to-interc-643dac69",
     "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
     "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week.",
@@ -307,6 +437,25 @@ export const news: NewsBrief[] = [
       "407a3717",
       "operation-endgame-seizes-gootloader-castlerat-stea-7498ed",
       "operation-endgame-seizes-gootloader-castlerat-stealc-servers"
+    ]
+  },
+  {
+    "slug": "law-enforcement-seizes-gootloader-castlerat-stealc-1eac34c3",
+    "title": "Law Enforcement Seizes Gootloader, CastleRAT, StealC Infrastructure",
+    "summary": "Operation Endgame saw law enforcement seize 235 servers and 257 domains linked to the Gootloader, CastleRAT, and StealC malware families. The takedown also recovered 6.4 million victim credentials, exposing a large user base to credential theft and potential phishing campaigns. Security teams should invalidate compromised credentials, monitor for related phishing attempts, and review domain registrations for suspicious activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
+    "publishedAt": "2026-11-13T10:48:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "law-enforcement-seizes-gootloader-castlerat-stealc",
+      "article-1eac34c3",
+      "1eac34c3",
+      "law-enforcement-seizes-gootloader-castlerat-stealc-1ce137",
+      "law-enforcement-seizes-gootloader-castlerat-stealc-infrastru"
     ]
   },
   {
@@ -468,6 +617,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "2026-top-10-vulnerability-scanners-ranked-ebfb7d35",
+    "title": "2026 Top 10 Vulnerability Scanners Ranked",
+    "summary": "The article ranks the vulnerability scanners of 2026, covering commercial engines, community tools, and open‑source templates like Nuclei. It evaluates scanners based on authentication coverage, detection speed, and integration with threat intelligence, highlighting the shift toward rapid CVE discovery. Readers can use the rankings to select tools that align with their asset coverage and remediation workflows, ensuring comprehensive vulnerability management.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-vulnerability-scanners/",
+    "publishedAt": "2026-11-13T09:28:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-top-10-vulnerability-scanners-ranked",
+      "article-ebfb7d35",
+      "ebfb7d35",
+      "2026-top-10-vulnerability-scanners-ranked-53b20c"
+    ]
+  },
+  {
     "slug": "openai-launches-daybreak-red-team-and-defense-fact-3afcdcba",
     "title": "OpenAI Launches Daybreak Red Team and Defense Factory",
     "summary": "OpenAI introduced the Daybreak Red Team, a set of AI‑driven pentesting tools that target web applications for security assessment. Simultaneously, the Defense Factory component analyzes discovered vulnerabilities and coordinates patch development to mitigate identified risks. Security teams can access these tools through OpenAI’s platform to enhance their web application testing and remediation workflows.",
@@ -484,6 +651,24 @@ export const news: NewsBrief[] = [
       "3afcdcba",
       "openai-launches-daybreak-red-team-and-defense-fact-53cd61",
       "openai-launches-daybreak-red-team-and-defense-factory"
+    ]
+  },
+  {
+    "slug": "2026-top-10-vulnerability-management-tools-ranked-cda7365d",
+    "title": "2026 Top 10 Vulnerability Management Tools Ranked",
+    "summary": "The piece ranks the top vulnerability management solutions of 2026, evaluating asset‑coverage honesty, prioritization against threat reality, and remediation workflow effectiveness. It highlights the mix of dedicated VM anchors, endpoint‑agent natives, cloud‑born challengers, and aggregation layers that shape modern vulnerability remediation. Stakeholders can leverage the rankings to align tool capabilities with asset coverage and ticket‑based remediation processes, ensuring timely patching.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-vulnerability-management-tools/",
+    "publishedAt": "2026-11-13T08:38:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "2026-top-10-vulnerability-management-tools-ranked",
+      "article-cda7365d",
+      "cda7365d",
+      "2026-top-10-vulnerability-management-tools-ranked-3031db"
     ]
   },
   {
@@ -710,6 +895,25 @@ export const news: NewsBrief[] = [
       "c87b0296",
       "teams-meeting-scheduler-phishing-yields-valid-sess-68fb07",
       "teams-meeting-scheduler-phishing-yields-valid-session-token"
+    ]
+  },
+  {
+    "slug": "suspected-north-korean-workers-onboarded-exposed-2-b309d849",
+    "title": "Suspected North Korean Workers Onboarded, Exposed 277k SSNs",
+    "summary": "Material Security traced 27 North Korean IT personas that reached onboarding in monitored companies, exposing 277,000 SSN files. The fake applicants used engineering roles to bypass identity checks and distributed sensitive data company-wide or via public links, creating a large credential exposure. Security teams should verify identities, audit onboarding records, and enforce stricter remote access controls to prevent similar infiltration.",
+    "category": "Nation State",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/",
+    "publishedAt": "2026-11-13T06:00:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "suspected-north-korean-workers-onboarded-exposed-2",
+      "article-b309d849",
+      "b309d849",
+      "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
+      "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
     ]
   },
   {
@@ -9366,215 +9570,6 @@ export const news: NewsBrief[] = [
       "821ac269",
       "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu-6f3d13",
       "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vulnerabilit"
-    ]
-  },
-  {
-    "slug": "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-ya-2faffac3",
-    "title": "ZDI-26-934: (0Day) Meta fairseq FConvLanguageModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-934/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-ya",
-      "article-2faffac3",
-      "2faffac3",
-      "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-ya-6f3d13",
-      "zdi-26-934-0day-meta-fairseq-fconvlanguagemodel-yaml-file-pa"
-    ]
-  },
-  {
-    "slug": "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file-8715cfa3",
-    "title": "ZDI-26-941: (0Day) Meta fairseq FConvModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-941/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file",
-      "article-8715cfa3",
-      "8715cfa3",
-      "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file-6f3d17",
-      "zdi-26-941-0day-meta-fairseq-fconvmodel-yaml-file-parsing-co"
-    ]
-  },
-  {
-    "slug": "zdi-26-940-0day-meta-fairseq-dump-km-label-deseria-e4eeb807",
-    "title": "ZDI-26-940: (0Day) Meta fairseq dump_km_label Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-940/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-940-0day-meta-fairseq-dump-km-label-deseria",
-      "article-e4eeb807",
-      "e4eeb807",
-      "zdi-26-940-0day-meta-fairseq-dump-km-label-deseria-6f3d16",
-      "zdi-26-940-0day-meta-fairseq-dump-km-label-deserialization-o"
-    ]
-  },
-  {
-    "slug": "zdi-26-939-0day-meta-fairseq2-filecheckpointmanage-d39c53f6",
-    "title": "ZDI-26-939: (0Day) Meta fairseq2 FileCheckpointManager _load_state_dict Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-939/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-939-0day-meta-fairseq2-filecheckpointmanage",
-      "article-d39c53f6",
-      "d39c53f6",
-      "zdi-26-939-0day-meta-fairseq2-filecheckpointmanage-6f3d14",
-      "zdi-26-939-0day-meta-fairseq2-filecheckpointmanager-load-sta"
-    ]
-  },
-  {
-    "slug": "zero-day-rce-vulnerability-disclosed-in-meta-fairs-be6902fe",
-    "title": "Zero-Day RCE Vulnerability Disclosed in Meta Fairseq",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-938/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zero-day-rce-vulnerability-disclosed-in-meta-fairs",
-      "article-be6902fe",
-      "be6902fe",
-      "zero-day-rce-vulnerability-disclosed-in-meta-fairs-6f3d14",
-      "zero-day-rce-vulnerability-disclosed-in-meta-fairseq"
-    ]
-  },
-  {
-    "slug": "meta-fairchem-rce-via-deserialization-357ce245",
-    "title": "Meta FAIRChem RCE via Deserialization",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-945/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairchem-rce-via-deserialization",
-      "article-357ce245",
-      "357ce245",
-      "meta-fairchem-rce-via-deserialization-6f3d17",
-      "meta-fairchem-rce-via-deserialization-cve-2026-111-a15736f3"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-rce-via-deserialization-88743634",
-    "title": "Meta fairseq RCE via Deserialization",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-944/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-rce-via-deserialization",
-      "article-88743634",
-      "88743634",
-      "meta-fairseq-rce-via-deserialization-6f3d17",
-      "meta-fairseq-rce-via-deserialization-cve-2026-1117-bd1d9ba3"
-    ]
-  },
-  {
-    "slug": "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cp-064aa164",
-    "title": "ZDI-26-943: (0Day) Meta fairseq load_checkpoint_to_cpu Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-943/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cp",
-      "article-064aa164",
-      "064aa164",
-      "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cp-6f3d17",
-      "zdi-26-943-0day-meta-fairseq-load-checkpoint-to-cpu-deserial"
-    ]
-  },
-  {
-    "slug": "zdi-26-942-0day-meta-fairseq-rerank-code-injection-c0a55076",
-    "title": "ZDI-26-942: (0Day) Meta fairseq rerank Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-942/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-942-0day-meta-fairseq-rerank-code-injection",
-      "article-c0a55076",
-      "c0a55076",
-      "zdi-26-942-0day-meta-fairseq-rerank-code-injection-6f3d17",
-      "zdi-26-942-0day-meta-fairseq-rerank-code-injection-remote-co"
-    ]
-  },
-  {
-    "slug": "meta-fairchem-deserialization-rce-exploit-8693f79e",
-    "title": "Meta FAIRChem Deserialization RCE Exploit",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-949/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairchem-deserialization-rce-exploit",
-      "article-8693f79e",
-      "8693f79e",
-      "meta-fairchem-deserialization-rce-exploit-6f3d17",
-      "meta-fairchem-deserialization-rce-exploit-cve-2026-6bd83f8a"
-    ]
-  },
-  {
-    "slug": "meta-fairchem-mlippredictunit-rce-vulnerability-d3d96450",
-    "title": "Meta FAIRChem MLIPPredictUnit RCE Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta FAIRChem. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-948/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairchem-mlippredictunit-rce-vulnerability",
-      "article-d3d96450",
-      "d3d96450",
-      "meta-fairchem-mlippredictunit-rce-vulnerability-6f3d17",
-      "meta-fairchem-mlippredictunit-rce-vulnerability-cv-a6a1ed72"
     ]
   }
 ];

@@ -5,8 +5,35 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 13:45:40 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 14:44:29 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Belarusian Cloud Firm Suffers Ransomware Encryption</title>
+      <link>https://secubuzz.com/news/belarusian-cloud-firm-suffers-ransomware-encryptio-0ea179d8</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/belarusian-cloud-firm-suffers-ransomware-encryptio-0ea179d8</guid>
+      <description><![CDATA[Ransomware attackers breached ActiveCloud’s cloud infrastructure, encrypting critical services. No CVE disclosed; attackers leveraged credential theft or misconfigured access to encrypt data, causing multi‑day service outages across the firm’s key services. ActiveCloud has applied emergency patches and recommends customers enforce strict access controls, enable backups, and monitor for anomalous activity.]]></description>
+      <pubDate>Fri, 13 Nov 2026 14:28:00 GMT</pubDate>
+      <source url="https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack">The Record</source>
+      <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Cloudflare Launches Spend Management for Workers</title>
+      <link>https://secubuzz.com/news/cloudflare-launches-spend-management-for-workers-21979760</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cloudflare-launches-spend-management-for-workers-21979760</guid>
+      <description><![CDATA[Cloudflare introduces Spend Management, adding spending caps and alerts for Workers and Durable Objects, with plans to extend to services. The feature uses a metering pipeline that translates usage metrics into runtime decisions, enabling real‑time cost control and budget enforcement. Users can configure thresholds, receive notifications, and enforce limits through the Cloudflare dashboard, reducing accidental over‑spending and improving cost visibility.]]></description>
+      <pubDate>Fri, 13 Nov 2026 14:00:00 GMT</pubDate>
+      <source url="https://blog.cloudflare.com/spend-management/">Cloudflare Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Battles Global Outage, Email Services Down</title>
+      <link>https://secubuzz.com/news/microsoft-battles-global-outage-email-services-dow-f1308f2a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-battles-global-outage-email-services-dow-f1308f2a</guid>
+      <description><![CDATA[Microsoft experienced a global outage disrupting email and other services across its cloud infrastructure. The root cause remains unidentified; Microsoft is isolating and repairing affected infrastructure, suggesting underlying network or configuration issues. Microsoft is actively investigating, restoring services, and advising users to monitor official updates for status in the coming hours.]]></description>
+      <pubDate>Fri, 13 Nov 2026 13:47:42 GMT</pubDate>
+      <source url="https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/">SecurityWeek</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Binance Breach Exploits Known Weakness, Lacks Controls</title>
       <link>https://secubuzz.com/news/binance-breach-exploits-known-weakness-lacks-contr-f0a16de5</link>
@@ -53,6 +80,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Europol Seizes Gootloader, CastleRAT Servers</title>
+      <link>https://secubuzz.com/news/europol-seizes-gootloader-castlerat-servers-8711f5cb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/europol-seizes-gootloader-castlerat-servers-8711f5cb</guid>
+      <description><![CDATA[Europol seized servers hosting the Gootloader and CastleRAT malware families, disrupting their command-and-control infrastructure. The seizure dismantles the attackers’ ability to deliver ransomware payloads and exfiltrate data, though the malware remains active elsewhere. Law enforcement will continue to monitor recovered infrastructure, and security teams should update threat intelligence feeds to detect related indicators.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:59:53 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/police-dismantle-gootloader-castlerat-stealc-malware-in">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Apache HTTP Server RCE Exploit CVE-2026-119618</title>
       <link>https://secubuzz.com/news/apache-http-server-rce-exploit-cve-2026-119618-7e379ba1</link>
       <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-rce-exploit-cve-2026-119618-7e379ba1</guid>
@@ -78,6 +114,15 @@
       <pubDate>Fri, 13 Nov 2026 11:52:31 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html">The Hacker News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>GitHub Malicious Workflows Steal Cloud Credentials</title>
+      <link>https://secubuzz.com/news/github-malicious-workflows-steal-cloud-credentials-121cfbf4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/github-malicious-workflows-steal-cloud-credentials-121cfbf4</guid>
+      <description><![CDATA[GitHub discovered malicious workflows that exfiltrate cloud credentials from repositories, compromising user accounts. The flaw allows attackers to embed credential‑exfiltration scripts in CI/CD pipelines, enabling unauthorized access to cloud services and potential data loss. GitHub recommends revoking exposed tokens, updating workflow permissions, and applying the latest security patches to mitigate credential theft.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:39:59 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/hackers-compromise-4-800-github-accounts-to-steal-cloud">CyberNews AI</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>PTC Windchill RCE Flaw CVE-2026-126325</title>
@@ -116,6 +161,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Apple Unveils Secure Exclaves for Camera and Microphone Data</title>
+      <link>https://secubuzz.com/news/apple-unveils-secure-exclaves-for-camera-and-micro-862aa31a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apple-unveils-secure-exclaves-for-camera-and-micro-862aa31a</guid>
+      <description><![CDATA[Apple announced Secure Exclaves, an isolated runtime protecting camera and microphone data during background processing on iPhone devices. The architecture keeps processed data inaccessible to the OS, apps, or Apple, enhancing privacy for HomeView, Siri Recap, and Live Rewind. Developers should review API guidelines and update apps to use Secure Exclaves for sensitive media handling, following Apple’s best practices.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:27:56 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/apple-secure-exclaves-security-architecture/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Google Releases Second Chrome Patch for Code Execution Flaws</title>
+      <link>https://secubuzz.com/news/google-releases-second-chrome-patch-for-code-execu-e72d8fdc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-second-chrome-patch-for-code-execu-e72d8fdc</guid>
+      <description><![CDATA[Google released a second Chrome update this week addressing vulnerabilities that could enable malicious code execution. The flaws involved input validation errors in the rendering engine, potentially allowing attackers to execute code; no public exploit was reported, but the risk warranted immediate remediation. Users should install the latest Chrome version, and security teams should verify update deployment across endpoints.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:20:50 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/google-pushes-second-chrome-update-this-week">Malwarebytes Labs</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users</title>
       <link>https://secubuzz.com/news/silentair-hijacks-asian-telecom-networks-to-interc-643dac69</link>
       <guid isPermaLink="true">https://secubuzz.com/news/silentair-hijacks-asian-telecom-networks-to-interc-643dac69</guid>
@@ -150,6 +213,15 @@
       <pubDate>Fri, 13 Nov 2026 10:55:03 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html">The Hacker News</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>Law Enforcement Seizes Gootloader, CastleRAT, StealC Infrastructure</title>
+      <link>https://secubuzz.com/news/law-enforcement-seizes-gootloader-castlerat-stealc-1eac34c3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/law-enforcement-seizes-gootloader-castlerat-stealc-1eac34c3</guid>
+      <description><![CDATA[Operation Endgame saw law enforcement seize 235 servers and 257 domains linked to the Gootloader, CastleRAT, and StealC malware families. The takedown also recovered 6.4 million victim credentials, exposing a large user base to credential theft and potential phishing campaigns. Security teams should invalidate compromised credentials, monitor for related phishing attempts, and review domain registrations for suspicious activity.]]></description>
+      <pubDate>Fri, 13 Nov 2026 10:48:40 GMT</pubDate>
+      <source url="https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/">SecurityWeek</source>
+      <category>General</category>
     </item>
     <item>
       <title>Check Point Releases Hotfix for Exploited Root Privilege Flaw</title>
@@ -224,12 +296,30 @@
       <category>General</category>
     </item>
     <item>
+      <title>2026 Top 10 Vulnerability Scanners Ranked</title>
+      <link>https://secubuzz.com/news/2026-top-10-vulnerability-scanners-ranked-ebfb7d35</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-top-10-vulnerability-scanners-ranked-ebfb7d35</guid>
+      <description><![CDATA[The article ranks the vulnerability scanners of 2026, covering commercial engines, community tools, and open‑source templates like Nuclei. It evaluates scanners based on authentication coverage, detection speed, and integration with threat intelligence, highlighting the shift toward rapid CVE discovery. Readers can use the rankings to select tools that align with their asset coverage and remediation workflows, ensuring comprehensive vulnerability management.]]></description>
+      <pubDate>Fri, 13 Nov 2026 09:28:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-vulnerability-scanners/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>OpenAI Launches Daybreak Red Team and Defense Factory</title>
       <link>https://secubuzz.com/news/openai-launches-daybreak-red-team-and-defense-fact-3afcdcba</link>
       <guid isPermaLink="true">https://secubuzz.com/news/openai-launches-daybreak-red-team-and-defense-fact-3afcdcba</guid>
       <description><![CDATA[OpenAI introduced the Daybreak Red Team, a set of AI‑driven pentesting tools that target web applications for security assessment. Simultaneously, the Defense Factory component analyzes discovered vulnerabilities and coordinates patch development to mitigate identified risks. Security teams can access these tools through OpenAI’s platform to enhance their web application testing and remediation workflows.]]></description>
       <pubDate>Fri, 13 Nov 2026 09:21:01 GMT</pubDate>
       <source url="https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/">SecurityWeek</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>2026 Top 10 Vulnerability Management Tools Ranked</title>
+      <link>https://secubuzz.com/news/2026-top-10-vulnerability-management-tools-ranked-cda7365d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/2026-top-10-vulnerability-management-tools-ranked-cda7365d</guid>
+      <description><![CDATA[The piece ranks the top vulnerability management solutions of 2026, evaluating asset‑coverage honesty, prioritization against threat reality, and remediation workflow effectiveness. It highlights the mix of dedicated VM anchors, endpoint‑agent natives, cloud‑born challengers, and aggregation layers that shape modern vulnerability remediation. Stakeholders can leverage the rankings to align tool capabilities with asset coverage and ticket‑based remediation processes, ensuring timely patching.]]></description>
+      <pubDate>Fri, 13 Nov 2026 08:38:42 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-vulnerability-management-tools/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -341,6 +431,15 @@
       <category>Breach</category>
     </item>
     <item>
+      <title>Suspected North Korean Workers Onboarded, Exposed 277k SSNs</title>
+      <link>https://secubuzz.com/news/suspected-north-korean-workers-onboarded-exposed-2-b309d849</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/suspected-north-korean-workers-onboarded-exposed-2-b309d849</guid>
+      <description><![CDATA[Material Security traced 27 North Korean IT personas that reached onboarding in monitored companies, exposing 277,000 SSN files. The fake applicants used engineering roles to bypass identity checks and distributed sensitive data company-wide or via public links, creating a large credential exposure. Security teams should verify identities, audit onboarding records, and enforce stricter remote access controls to prevent similar infiltration.]]></description>
+      <pubDate>Fri, 13 Nov 2026 06:00:22 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/">Help Net Security</source>
+      <category>Nation State</category>
+    </item>
+    <item>
       <title>N-central Flaws Compromise 21 Servers</title>
       <link>https://secubuzz.com/news/n-central-flaws-compromise-21-servers-06a541af</link>
       <guid isPermaLink="true">https://secubuzz.com/news/n-central-flaws-compromise-21-servers-06a541af</guid>
@@ -357,105 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 05:25:43 GMT</pubDate>
       <source url="https://cybersecuritynews.com/tsmc-data-breach/">Cyber Security News</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Macfinger ClickFix Deploys DownTheDRAIN Infostealer on macOS</title>
-      <link>https://secubuzz.com/news/macfinger-clickfix-deploys-downthedrain-infosteale-d327fb1e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/macfinger-clickfix-deploys-downthedrain-infosteale-d327fb1e</guid>
-      <description><![CDATA[The Macfinger ClickFix campaign has distributed the DownTheDRAIN infostealer targeting macOS systems. DownTheDRAIN harvests credentials and sensitive data via keylogging and clipboard monitoring, though no ransomware payload is included. Security teams should deploy macOS endpoint protection, block known malicious domains, and monitor for credential exfiltration and implement strict application whitelisting to prevent execution of unknown binaries.]]></description>
-      <pubDate>Fri, 13 Nov 2026 03:41:41 GMT</pubDate>
-      <source url="https://isc.sans.edu/diary/rss/33518">SANS Internet Storm Center</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>FBI Seizes $1.2B Crypto Stolen from Binance</title>
-      <link>https://secubuzz.com/news/fbi-seizes-1-2b-crypto-stolen-from-binance-7ab8f53b</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fbi-seizes-1-2b-crypto-stolen-from-binance-7ab8f53b</guid>
-      <description><![CDATA[The FBI seized $1.2 billion in cryptocurrency stolen from Binance, linked to a North Korean social engineering scheme that also yielded $400 million. The operation uncovered a phishing and credential‑stealing campaign that compromised Binance accounts, enabling large fund transfers to illicit wallets.]]></description>
-      <pubDate>Fri, 13 Nov 2026 02:28:21 GMT</pubDate>
-      <source url="https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Microsoft 365 Outage Hits Exchange, Teams, SharePoint</title>
-      <link>https://secubuzz.com/news/microsoft-365-outage-hits-exchange-teams-sharepoin-253f54b2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-outage-hits-exchange-teams-sharepoin-253f54b2</guid>
-      <description><![CDATA[Microsoft suffered a 2026‑11‑12 outage that disrupted Microsoft 365 services, including Exchange Online, Teams, SharePoint, Copilot, and Defender XDR, worldwide. The outage originated from infrastructure failures that caused regional connectivity issues, first affecting Exchange mailbox access in the Americas before spreading globally. Microsoft is restoring services, investigating root causes, and will issue updates as the situation stabilizes.]]></description>
-      <pubDate>Fri, 13 Nov 2026 02:14:54 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/massive-microsoft-365-outage/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Quay Unauth Image Access CVE-2026-123710</title>
-      <link>https://secubuzz.com/news/red-hat-quay-unauth-image-access-cve-2026-123710-6b3a025e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-quay-unauth-image-access-cve-2026-123710-6b3a025e</guid>
-      <description><![CDATA[A flaw in Red Hat Quay lets unauthenticated users read container images, exposing enterprise registries. CVE‑2026‑123710 permits remote attackers to retrieve image metadata and content; no public exploit yet, but risk is high for exposed registries. Apply the latest patch immediately and enable image access controls as a temporary mitigation for now.]]></description>
-      <pubDate>Fri, 13 Nov 2026 02:08:31 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/critical-red-hat-quay-flaw-lets-attackers-read-and-over">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>US Seizes North Korean Hacking Tools and $1.2B Crypto</title>
-      <link>https://secubuzz.com/news/us-seizes-north-korean-hacking-tools-and-1-2b-cryp-0fbc0a01</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-seizes-north-korean-hacking-tools-and-1-2b-cryp-0fbc0a01</guid>
-      <description><![CDATA[US law enforcement seized North Korean hacking tools and $1.2B cryptocurrency. The seized assets include malware toolkits used for credential theft and lateral movement, indicating ongoing threat actor activity. The seizure disrupts the actors' operational capabilities; security teams should monitor for related tool signatures and update threat intelligence feeds to stay ahead.]]></description>
-      <pubDate>Fri, 13 Nov 2026 02:07:59 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/us-seizes-north-korean-hacking-infrastructure-1-2-billi">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Operation Endgame Seizes 235 Servers and 6M Logins</title>
-      <link>https://secubuzz.com/news/operation-endgame-seizes-235-servers-and-6m-logins-6ba94c3c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/operation-endgame-seizes-235-servers-and-6m-logins-6ba94c3c</guid>
-      <description><![CDATA[Operation Endgame seized 235 servers and 6 million stolen login credentials from a cybercriminal network. The seized servers hosted credential dumping tools and distributed phishing kits, indicating large-scale credential theft operations. Security teams should update credential monitoring, enforce multi-factor authentication, and to block known malicious IPs associated with the seized infrastructure.]]></description>
-      <pubDate>Fri, 13 Nov 2026 02:07:28 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/operation-endgame-malware-takedown-turns-up-over-6-mill">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Maersk Data Theft via Acquired System Flaw</title>
-      <link>https://secubuzz.com/news/maersk-data-theft-via-acquired-system-flaw-9b123dc2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/maersk-data-theft-via-acquired-system-flaw-9b123dc2</guid>
-      <description><![CDATA[Maersk suffered a data theft incident caused by a flaw in an acquired system component, allowing unauthorized extraction of sensitive information. The vulnerability permits attackers to bypass authentication controls and read confidential data, though no public exploit has been disclosed. Maersk should apply the vendor patch immediately and review access controls to mitigate the risk.]]></description>
-      <pubDate>Fri, 13 Nov 2026 02:00:19 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/maersk-confirms-data-theft-amid-5-million-extortion-att">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>ScreenConnect RCE Enables Lateral Movement</title>
-      <link>https://secubuzz.com/news/screenconnect-rce-enables-lateral-movement-66c43421</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/screenconnect-rce-enables-lateral-movement-66c43421</guid>
-      <description><![CDATA[An RCE flaw in ScreenConnect allows attackers to execute arbitrary code on the host. The flaw arises from insufficient input validation in the remote command interface, enabling code execution that can be used for lateral movement; no public PoC exists. ScreenConnect has released a patch; administrators should update immediately and enforce network segmentation to limit lateral spread.]]></description>
-      <pubDate>Fri, 13 Nov 2026 01:58:59 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/hackers-deploy-malware-in-fresh-screenconnect-campaign">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Citrix NetScaler 12 Flaws: Auth Bypass and DoS</title>
-      <link>https://secubuzz.com/news/citrix-netscaler-12-flaws-auth-bypass-and-dos-560013e3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/citrix-netscaler-12-flaws-auth-bypass-and-dos-560013e3</guid>
-      <description><![CDATA[Citrix NetScaler suffers 12 critical flaws, including authentication bypass and denial‑of‑service. The vulnerabilities stem from improper input validation and flawed session handling, allowing attackers to gain unauthorized access and disrupt service; no public PoC is reported yet. Citrix has issued a patch; administrators should apply it promptly and verify authentication controls.]]></description>
-      <pubDate>Fri, 13 Nov 2026 01:56:50 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/citrix-patches-12-netscaler-and-secure-access-client-fl">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Critical Zero-Day 4EverAble2Shell Flaw Impacts N-able N-central</title>
-      <link>https://secubuzz.com/news/critical-zero-day-4everable2shell-flaw-impacts-n-a-29591531</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/critical-zero-day-4everable2shell-flaw-impacts-n-a-29591531</guid>
-      <description><![CDATA[A critical security intelligence alert details the 4EverAble2Shell zero-day vulnerability affecting N-able N-central remote monitoring software. Threat analysis indicates a critical zero-day vulnerability requiring defenders to review root-cause telemetry and deploy targeted threat-hunting detection rules. Administrators are urged to apply available security patches today to mitigate potential system compromise and prevent unauthorized access.]]></description>
-      <pubDate>Fri, 13 Nov 2026 01:56:23 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/new-n-able-4everable2shell-zero-day-exploited-hours-aft">CyberNews AI</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SignDrop CLFS Driver Zero‑Day Grants SYSTEM Privileges</title>
-      <link>https://secubuzz.com/news/signdrop-clfs-driver-zero-day-grants-system-privil-d6593a77</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/signdrop-clfs-driver-zero-day-grants-system-privil-d6593a77</guid>
-      <description><![CDATA[A zero‑day flaw in SignDrop’s CLFS driver lets attackers gain SYSTEM privileges on affected machines. The vulnerability abuses improper privilege checks, enabling local or remote code execution with full system rights; no public PoC exists yet. SignDrop has issued a patch; security teams should apply it immediately and monitor for privilege‑escalation indicators.]]></description>
-      <pubDate>Fri, 13 Nov 2026 01:43:38 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/new-signdrop-zero-day-exploit-turns-windows-clfs-securi">CyberNews AI</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
