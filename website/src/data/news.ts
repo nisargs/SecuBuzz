@@ -11,6 +11,156 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "apify-breach-customer-accounts-compromised-efc65745",
+    "title": "Apify Breach: Customer Accounts Compromised",
+    "summary": "Apify, a web scraping platform, confirmed that an intruder accessed customer accounts and retrieved personal information. The breach exposed stored data, potentially including credentials and sensitive user details, but no exploitation of the platform’s core services was reported. Apify advised affected customers to reset credentials and monitor accounts, and it is implementing additional monitoring and security controls.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
+    "publishedAt": "2026-11-13T12:41:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "apify-breach-customer-accounts-compromised",
+      "article-efc65745",
+      "efc65745",
+      "apify-breach-customer-accounts-compromised-3458ee"
+    ]
+  },
+  {
+    "slug": "microsoft-printing-issues-from-november-updates-3651ef0f",
+    "title": "Microsoft Printing Issues from November Updates",
+    "summary": "Microsoft warned that the November 2026 security updates could disrupt printing for documents with complex formatting. The issue arises from changes to the printing subsystem that affect rendering of advanced layout features, but no security impact is reported. Microsoft recommends users apply the latest cumulative update and, if problems persist, roll back the printing components or use alternative drivers.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
+    "publishedAt": "2026-11-13T12:27:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-printing-issues-from-november-updates",
+      "article-3651ef0f",
+      "3651ef0f",
+      "microsoft-printing-issues-from-november-updates-647462"
+    ]
+  },
+  {
+    "slug": "silentair-hijacks-mobile-nodes-to-intercept-calls-6b9ba7bc",
+    "title": "SilentAir Hijacks Mobile Nodes to Intercept Calls",
+    "summary": "SilentAir attackers compromised Taiwanese mobile network nodes, enabling interception of voice calls and SMS traffic. The intrusion leveraged an unpatched firmware flaw in the node’s authentication module, allowing remote code execution with a CVSS of 9.0; no public exploit yet. Network operators should apply the vendor’s firmware update immediately, enforce strict access controls, and monitor for anomalous traffic patterns.",
+    "category": "Breach",
+    "severity": "CRITICAL",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
+    "publishedAt": "2026-11-13T12:20:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "silentair-hijacks-mobile-nodes-to-intercept-calls",
+      "article-6b9ba7bc",
+      "6b9ba7bc",
+      "silentair-hijacks-mobile-nodes-to-intercept-calls-7c79a4"
+    ]
+  },
+  {
+    "slug": "apache-http-server-rce-exploit-cve-2026-119618-7e379ba1",
+    "title": "Apache HTTP Server RCE Exploit CVE-2026-119618",
+    "summary": "CVE-2026-119618 allows remote code execution against Apache HTTP Server via crafted HTTP requests. The flaw stems from improper input validation in request parsing, yielding unauthenticated RCE with a CVSS of 9.2; public PoC code exists. Apache released an out‑of‑band patch; apply it immediately and monitor traffic for anomalous critical requests.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/apache-http-server-patches-critical-http-2-remote-code",
+    "publishedAt": "2026-11-13T11:59:29.000Z",
+    "cves": [
+      "CVE-2026-119618"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "apache-http-server-rce-exploit-cve-2026-119618",
+      "article-7e379ba1",
+      "7e379ba1",
+      "apache-http-server-rce-exploit-cve-2026-119618-272113"
+    ]
+  },
+  {
+    "slug": "ptc-windchill-rce-flaw-cve-2026-126325-31deb163",
+    "title": "PTC Windchill RCE Flaw CVE-2026-126325",
+    "summary": "CVE-2026-126325 enables remote code execution against PTC Windchill through malformed XML input. The vulnerability originates from insufficient validation of XML payloads in the product’s web service, granting unauthenticated attackers a CVSS score of 9.1; a public PoC has been published. PTC released an urgent patch; apply it immediately and verify that XML processing is properly sanitized.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/ptc-patches-critical-windchill-and-flexplm-flaw-that-co",
+    "publishedAt": "2026-11-13T11:39:09.000Z",
+    "cves": [
+      "CVE-2026-126325"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ptc-windchill-rce-flaw-cve-2026-126325",
+      "article-31deb163",
+      "31deb163",
+      "ptc-windchill-rce-flaw-cve-2026-126325-5bc947"
+    ]
+  },
+  {
+    "slug": "n-central-unpatched-rce-grants-system-access-cacba438",
+    "title": "N-central Unpatched RCE Grants System Access",
+    "summary": "An unpatched remote code execution flaw in N-central allows attackers to gain full system access via unauthenticated HTTP requests. The flaw stems from a buffer overflow in the web interface’s authentication module, enabling arbitrary code execution with a CVSS of 9.3; no public exploit yet. Apply the vendor’s latest patch immediately and enforce strict network segmentation to limit exposure.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena",
+    "publishedAt": "2026-11-13T11:38:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-central-unpatched-rce-grants-system-access",
+      "article-cacba438",
+      "cacba438",
+      "n-central-unpatched-rce-grants-system-access-1c7d8f"
+    ]
+  },
+  {
+    "slug": "hackers-use-windows-named-pipes-and-smb-to-spread-ee410fed",
+    "title": "Hackers Use Windows Named Pipes and SMB to Spread Malware Across Isolated Government Networks",
+    "summary": "A new espionage group is using Windows named pipes and the SMB file-sharing protocol to move malware through tightly separated networks. Positive Technologies calls the group StingyBasilisk. It has been active since at least April 2022.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/windows-named-pipes-and-smb/",
+    "publishedAt": "2026-11-13T11:30:35.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-windows-named-pipes-and-smb-to-spread",
+      "article-ee410fed",
+      "ee410fed",
+      "hackers-use-windows-named-pipes-and-smb-to-spread-214603",
+      "hackers-use-windows-named-pipes-and-smb-to-spread-malware-ac"
+    ]
+  },
+  {
+    "slug": "silentair-hijacks-asian-telecom-networks-to-interc-643dac69",
+    "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+    "summary": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+    "publishedAt": "2026-11-13T11:10:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "silentair-hijacks-asian-telecom-networks-to-interc",
+      "article-643dac69",
+      "643dac69",
+      "silentair-hijacks-asian-telecom-networks-to-interc-7b27b2",
+      "silentair-hijacks-asian-telecom-networks-to-intercept-sms-2f"
+    ]
+  },
+  {
     "slug": "354-dark-web-vendors-arrested-in-operation-tornado-47248c71",
     "title": "354 Dark Web Vendors Arrested in Operation TorNado",
     "summary": "Europol and police in 14 countries arrested 354 dark web vendors and buyers during Operation TorNado, which operated from May 2025 to October 2026. The crackdown targeted users of five marketplaces—Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door—and seized funds reported by Europol. Law enforcement also pursued vendors and buyers on forums, single‑vendor shops, and encrypted channels to dismantle the supply chain.",
@@ -6172,6 +6322,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-aspire-feature-bypass-cve-2026-118740-ad-d32fb6d1",
+    "title": "Microsoft Aspire Feature Bypass CVE-2026-118740 Addressed",
+    "summary": "CVE-2026-118740, a security feature bypass vulnerability in Microsoft Aspire, was identified. The flaw allows bypassing certain security checks, but no exploitation evidence exists; the CVE was addressed in an informational update with no public PoC. Microsoft released an informational update; users should verify the corrected download links and apply the update as recommended.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118740",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118740"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-aspire-feature-bypass-cve-2026-118740-ad",
+      "article-d32fb6d1",
+      "d32fb6d1",
+      "microsoft-aspire-feature-bypass-cve-2026-118740-ad-1fe90c",
+      "microsoft-aspire-feature-bypass-cve-2026-118740-addressed"
+    ]
+  },
+  {
+    "slug": "asp-net-core-elevation-cve-2026-118741-resolved-19c48e93",
+    "title": "ASP.NET Core Elevation CVE-2026-118741 Resolved",
+    "summary": "CVE-2026-118741, an elevation of privilege vulnerability in ASP.NET Core, was identified. The flaw permits privilege escalation without authentication, yet no exploitation evidence or public PoC has been reported; the CVE was addressed in an informational update. Microsoft issued an informational update; users should apply the patch and verify the corrected security update links.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118741",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118741"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-elevation-cve-2026-118741-resolved",
+      "article-19c48e93",
+      "19c48e93",
+      "asp-net-core-elevation-cve-2026-118741-resolved-1fe90c"
+    ]
+  },
+  {
     "slug": "microsoft-updates-cve-2026-120778-aspire-privilege-78e866f6",
     "title": "Microsoft Updates CVE-2026-120778 Aspire Privilege Escalation",
     "summary": "Microsoft announced an informational update for CVE-2026-120778, an Aspire elevation of privilege vulnerability affecting unspecified products. The update merely adjusts the products listed in the Security Updates table and does not indicate any active exploitation or public proof‑of‑concept. Security teams should review the updated product list and apply any available patches to mitigate the privilege escalation risk.",
@@ -9377,195 +9568,6 @@ export const news: NewsBrief[] = [
       "7e8e2f18",
       "red-hat-kernel-update-addresses-important-security-37d6f0",
       "red-hat-kernel-update-addresses-important-security-flaw"
-    ]
-  },
-  {
-    "slug": "ghostframe-toolkit-hijacks-vmware-esxi-vms-steals-7f33e363",
-    "title": "GhostFrame Toolkit Hijacks VMware ESXi VMs, Steals Credentials",
-    "summary": "A new GhostFrame hacking toolkit enables attackers to hijack VMware ESXi servers and the virtual machines they host. The framework, discovered by Recorded Future’s Insikt Group while tracking TAG‑218, can extract Windows passwords, indicating a credential‑stealing capability. Security teams should isolate ESXi hosts, apply vendor patches, and monitor for unauthorized management console access.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ghostframe-malware-hijack-vmware-esxi/",
-    "publishedAt": "2026-11-11T04:26:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ghostframe-toolkit-hijacks-vmware-esxi-vms-steals",
-      "article-7f33e363",
-      "7f33e363",
-      "ghostframe-toolkit-hijacks-vmware-esxi-vms-steals-18dc84",
-      "ghostframe-toolkit-hijacks-vmware-esxi-vms-steals-credential"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98130-important-httpd-2-4-security-updat-eb88d9df",
-    "title": "RHSA-2026:98130: Important: httpd:2.4 security update",
-    "summary": "An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98130",
-    "publishedAt": "2026-11-11T03:33:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98130-important-httpd-2-4-security-updat",
-      "article-eb88d9df",
-      "eb88d9df",
-      "rhsa-2026-98130-important-httpd-2-4-security-updat-37d6f4",
-      "rhsa-2026-98130-important-httpd-2-4-security-update"
-    ]
-  },
-  {
-    "slug": "openshift-4-17-60-releases-security-update-3d6f3f82",
-    "title": "OpenShift 4.17.60 Releases Security Update",
-    "summary": "Red Hat OpenShift Container Platform 4.17.60 now includes a security update addressing multiple vulnerabilities. The update resolves several bugs and security issues, each with a CVSS score listed in the references, reducing exploitation risk. Administrators should deploy the 4.17.60 release promptly and update all dependent images to maintain platform security.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:96281",
-    "publishedAt": "2026-11-11T03:24:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openshift-4-17-60-releases-security-update",
-      "article-3d6f3f82",
-      "3d6f3f82",
-      "openshift-4-17-60-releases-security-update-37d7d8"
-    ]
-  },
-  {
-    "slug": "wireshark-update-addresses-security-issues-a806c34c",
-    "title": "Wireshark Update Addresses Security Issues",
-    "summary": "Red Hat Enterprise Linux 9 now receives a Wireshark security update addressing multiple vulnerabilities. The update patches several bugs, each assigned a CVSS score in the references, reducing exploitation risk. Administrators should install the latest Wireshark package immediately and update any dependent services to ensure network traffic analysis remains secure.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97879",
-    "publishedAt": "2026-11-11T03:24:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "wireshark-update-addresses-security-issues",
-      "article-a806c34c",
-      "a806c34c",
-      "wireshark-update-addresses-security-issues-37d74d"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98099-important-kernel-security-update-d3e73b1f",
-    "title": "RHSA-2026:98099: Important: kernel security update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98099",
-    "publishedAt": "2026-11-11T03:22:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98099-important-kernel-security-update",
-      "article-d3e73b1f",
-      "d3e73b1f",
-      "rhsa-2026-98099-important-kernel-security-update-37d6f7"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-9-6-users-receive-python-torn-af547853",
-    "title": "Red Enterprise Linux 9.6 users receive python-tornado patch",
-    "summary": "Red Enterprise Linux 9.6 users face a python‑tornado vulnerability that could allow local privilege escalation via malformed input. Red Hat Product Security rates the issue as Important, with a CVSS base score available via CVE links. Affected systems should apply the python‑tornado update immediately; no workaround is currently recommended today.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98110",
-    "publishedAt": "2026-11-11T03:18:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-9-6-users-receive-python-torn",
-      "article-af547853",
-      "af547853",
-      "red-enterprise-linux-9-6-users-receive-python-torn-37d6f4",
-      "red-enterprise-linux-9-6-users-receive-python-tornado-patch"
-    ]
-  },
-  {
-    "slug": "critical-fortinet-flaws-expose-fortimanager-and-fo-5469e6d8",
-    "title": "Critical Fortinet Flaws Expose FortiManager and FortiAnalyzer to Remote Code Execution Without Login",
-    "summary": "Fortinet has disclosed critical security flaws affecting FortiManager, FortiAnalyzer, and FortiOS, including weaknesses that could let attackers execute code without logging in. Published on November 10, 2026, the disclosures cover management APIs, device communication services, routing, and specific high availability setups. The flaw is tracked as CVE-2026-100204.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/critical-fortinet-flaws-patched/",
-    "publishedAt": "2026-11-11T03:15:16.000Z",
-    "cves": [
-      "CVE-2026-100204"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "critical-fortinet-flaws-expose-fortimanager-and-fo",
-      "article-5469e6d8",
-      "5469e6d8",
-      "critical-fortinet-flaws-expose-fortimanager-and-fo-35c691",
-      "critical-fortinet-flaws-expose-fortimanager-and-fortianalyze"
-    ]
-  },
-  {
-    "slug": "red-enterprise-linux-7-users-receive-acl-security-532fc7b9",
-    "title": "Red Enterprise Linux 7 users receive acl security patch",
-    "summary": "Red Enterprise Linux 7 Extended Lifecycle Support users face a vulnerability in the acl package that could allow local privilege escalation via malformed ACL entries. Red Hat Product Security rates the issue as Important, with a CVSS base score available through CVE links in the advisory references.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98129",
-    "publishedAt": "2026-11-11T03:10:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-enterprise-linux-7-users-receive-acl-security",
-      "article-532fc7b9",
-      "532fc7b9",
-      "red-enterprise-linux-7-users-receive-acl-security-37d6f4",
-      "red-enterprise-linux-7-users-receive-acl-security-patch"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98107-important-python-tornado-security-6a82b776",
-    "title": "RHSA-2026:98107: Important: python-tornado security update",
-    "summary": "An update for python-tornado is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98107",
-    "publishedAt": "2026-11-11T02:58:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98107-important-python-tornado-security",
-      "article-6a82b776",
-      "6a82b776",
-      "rhsa-2026-98107-important-python-tornado-security-37d6f4",
-      "rhsa-2026-98107-important-python-tornado-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98109-critical-python-pillow-security-up-852ee003",
-    "title": "RHSA-2026:98109: Critical: python-pillow security update",
-    "summary": "An update for python-pillow is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Critical.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98109",
-    "publishedAt": "2026-11-11T02:35:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98109-critical-python-pillow-security-up",
-      "article-852ee003",
-      "852ee003",
-      "rhsa-2026-98109-critical-python-pillow-security-up-37d6f4",
-      "rhsa-2026-98109-critical-python-pillow-security-update"
     ]
   }
 ];

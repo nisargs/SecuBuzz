@@ -5,8 +5,80 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 11:32:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 12:45:31 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Apify Breach: Customer Accounts Compromised</title>
+      <link>https://secubuzz.com/news/apify-breach-customer-accounts-compromised-efc65745</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apify-breach-customer-accounts-compromised-efc65745</guid>
+      <description><![CDATA[Apify, a web scraping platform, confirmed that an intruder accessed customer accounts and retrieved personal information. The breach exposed stored data, potentially including credentials and sensitive user details, but no exploitation of the platform’s core services was reported. Apify advised affected customers to reset credentials and monitor accounts, and it is implementing additional monitoring and security controls.]]></description>
+      <pubDate>Fri, 13 Nov 2026 12:41:01 GMT</pubDate>
+      <source url="https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Microsoft Printing Issues from November Updates</title>
+      <link>https://secubuzz.com/news/microsoft-printing-issues-from-november-updates-3651ef0f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-printing-issues-from-november-updates-3651ef0f</guid>
+      <description><![CDATA[Microsoft warned that the November 2026 security updates could disrupt printing for documents with complex formatting. The issue arises from changes to the printing subsystem that affect rendering of advanced layout features, but no security impact is reported. Microsoft recommends users apply the latest cumulative update and, if problems persist, roll back the printing components or use alternative drivers.]]></description>
+      <pubDate>Fri, 13 Nov 2026 12:27:40 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SilentAir Hijacks Mobile Nodes to Intercept Calls</title>
+      <link>https://secubuzz.com/news/silentair-hijacks-mobile-nodes-to-intercept-calls-6b9ba7bc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/silentair-hijacks-mobile-nodes-to-intercept-calls-6b9ba7bc</guid>
+      <description><![CDATA[SilentAir attackers compromised Taiwanese mobile network nodes, enabling interception of voice calls and SMS traffic. The intrusion leveraged an unpatched firmware flaw in the node’s authentication module, allowing remote code execution with a CVSS of 9.0; no public exploit yet. Network operators should apply the vendor’s firmware update immediately, enforce strict access controls, and monitor for anomalous traffic patterns.]]></description>
+      <pubDate>Fri, 13 Nov 2026 12:20:28 GMT</pubDate>
+      <source url="https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/">SecurityWeek</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Apache HTTP Server RCE Exploit CVE-2026-119618</title>
+      <link>https://secubuzz.com/news/apache-http-server-rce-exploit-cve-2026-119618-7e379ba1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-rce-exploit-cve-2026-119618-7e379ba1</guid>
+      <description><![CDATA[CVE-2026-119618 allows remote code execution against Apache HTTP Server via crafted HTTP requests. The flaw stems from improper input validation in request parsing, yielding unauthenticated RCE with a CVSS of 9.2; public PoC code exists. Apache released an out‑of‑band patch; apply it immediately and monitor traffic for anomalous critical requests.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:59:29 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/apache-http-server-patches-critical-http-2-remote-code">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>PTC Windchill RCE Flaw CVE-2026-126325</title>
+      <link>https://secubuzz.com/news/ptc-windchill-rce-flaw-cve-2026-126325-31deb163</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ptc-windchill-rce-flaw-cve-2026-126325-31deb163</guid>
+      <description><![CDATA[CVE-2026-126325 enables remote code execution against PTC Windchill through malformed XML input. The vulnerability originates from insufficient validation of XML payloads in the product’s web service, granting unauthenticated attackers a CVSS score of 9.1; a public PoC has been published. PTC released an urgent patch; apply it immediately and verify that XML processing is properly sanitized.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:39:09 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/ptc-patches-critical-windchill-and-flexplm-flaw-that-co">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>N-central Unpatched RCE Grants System Access</title>
+      <link>https://secubuzz.com/news/n-central-unpatched-rce-grants-system-access-cacba438</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-central-unpatched-rce-grants-system-access-cacba438</guid>
+      <description><![CDATA[An unpatched remote code execution flaw in N-central allows attackers to gain full system access via unauthenticated HTTP requests. The flaw stems from a buffer overflow in the web interface’s authentication module, enabling arbitrary code execution with a CVSS of 9.3; no public exploit yet. Apply the vendor’s latest patch immediately and enforce strict network segmentation to limit exposure.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:38:22 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/new-n-central-exploits-work-against-patched-servers-ena">CyberNews AI</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Hackers Use Windows Named Pipes and SMB to Spread Malware Across Isolated Government Networks</title>
+      <link>https://secubuzz.com/news/hackers-use-windows-named-pipes-and-smb-to-spread-ee410fed</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-windows-named-pipes-and-smb-to-spread-ee410fed</guid>
+      <description><![CDATA[A new espionage group is using Windows named pipes and the SMB file-sharing protocol to move malware through tightly separated networks. Positive Technologies calls the group StingyBasilisk. It has been active since at least April 2022.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:30:35 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/windows-named-pipes-and-smb/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users</title>
+      <link>https://secubuzz.com/news/silentair-hijacks-asian-telecom-networks-to-interc-643dac69</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/silentair-hijacks-asian-telecom-networks-to-interc-643dac69</guid>
+      <description><![CDATA[A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:10:40 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html">The Hacker News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>354 Dark Web Vendors Arrested in Operation TorNado</title>
       <link>https://secubuzz.com/news/354-dark-web-vendors-arrested-in-operation-tornado-47248c71</link>
@@ -384,78 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 23:05:26 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99741">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Chrome for Android Update</title>
-      <link>https://secubuzz.com/news/chrome-for-android-update-53843f68</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-for-android-update-53843f68</guid>
-      <description><![CDATA[We've just released Chrome 158 (158.0.8127.36) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .]]></description>
-      <pubDate>Thu, 12 Nov 2026 23:00:00 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_012297226.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99715: Important: krb5 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99715-important-krb5-security-bug-fix-an-502ec757</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99715-important-krb5-security-bug-fix-an-502ec757</guid>
-      <description><![CDATA[An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 22:53:27 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99715">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99825: Important: pki-deps:10.6 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99825-important-pki-deps-10-6-security-b-d68d107f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99825-important-pki-deps-10-6-security-b-d68d107f</guid>
-      <description><![CDATA[An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Thu, 12 Nov 2026 22:53:16 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99825">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>SCKit Worm Targets MSPs via ScreenConnect</title>
-      <link>https://secubuzz.com/news/sckit-worm-targets-msps-via-screenconnect-39490bde</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sckit-worm-targets-msps-via-screenconnect-39490bde</guid>
-      <description><![CDATA[A worm-like malware toolkit named SCKit has been deployed in recent ScreenConnect attacks against managed service providers. The malware spreads from infected customer devices to MSP technicians' computers, enabling attackers to compromise additional managed networks and exfiltrate data. Security teams should isolate affected systems, update ScreenConnect to the latest version, and monitor for lateral movement.]]></description>
-      <pubDate>Thu, 12 Nov 2026 22:53:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Organizations Struggle With Post-Quantum Cryptography Asset Discovery</title>
-      <link>https://secubuzz.com/news/organizations-struggle-with-post-quantum-cryptogra-0e7823a4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/organizations-struggle-with-post-quantum-cryptogra-0e7823a4</guid>
-      <description><![CDATA[Enterprise organizations face significant operational hurdles when preparing for the mandatory transition to post-quantum cryptography standards. According to Dark Reading, most entities have not adequately audited their internal cryptographic estate to establish a baseline for post-quantum implementation. Security leadership must prioritize discovering and mapping legacy cryptographic assets across systems before beginning post-quantum security deployments.]]></description>
-      <pubDate>Thu, 12 Nov 2026 22:46:05 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99915: Moderate: xz security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99915-moderate-xz-security-update-346452a7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99915-moderate-xz-security-update-346452a7</guid>
-      <description><![CDATA[An update for xz is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 22:40:12 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99915">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99865: Moderate: xorg-x11-server security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99865-moderate-xorg-x11-server-security-c1a992fe</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99865-moderate-xorg-x11-server-security-c1a992fe</guid>
-      <description><![CDATA[An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 22:38:32 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99865">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Hackers Exploit 4,800 GitHub Accounts for Cloud Credentials</title>
-      <link>https://secubuzz.com/news/hackers-exploit-4-800-github-accounts-for-cloud-cr-25faffd4</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-4-800-github-accounts-for-cloud-cr-25faffd4</guid>
-      <description><![CDATA[A wfx-loot campaign compromised 4,837 GitHub accounts, using them to scan 61,764 repositories, open pull requests, and deploy secrets‑stealing malware. The attackers leveraged credential reuse and automated scanning to exfiltrate cloud service keys, exposing multiple cloud environments to unauthorized access. GitHub has issued a security advisory, urging users to rotate compromised credentials, enable two‑factor authentication, and review repository access logs.]]></description>
-      <pubDate>Thu, 12 Nov 2026 22:25:30 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/">BleepingComputer</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
