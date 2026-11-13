@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 17:52:11 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 18:45:34 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>University of Texas at Arlington warns personal information stolen during cyberattack</title>
+      <link>https://secubuzz.com/news/university-of-texas-at-arlington-warns-personal-in-b90429e7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/university-of-texas-at-arlington-warns-personal-in-b90429e7</guid>
+      <description><![CDATA[In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.]]></description>
+      <pubDate>Fri, 13 Nov 2026 17:26:00 GMT</pubDate>
+      <source url="https://therecord.media/university-of-texas-arlington-warns-data-breach">The Record</source>
+      <category>General</category>
+    </item>
     <item>
       <title>PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE</title>
       <link>https://secubuzz.com/news/postgresql-patches-52-flaws-including-22-year-old-2aec0a44</link>
@@ -15,6 +24,15 @@
       <pubDate>Fri, 13 Nov 2026 16:53:08 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html">The Hacker News</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>Hackers Obscure Linux GPU Mining with SANSAR Rootkit</title>
+      <link>https://secubuzz.com/news/hackers-obscure-linux-gpu-mining-with-sansar-rootk-61f39cb0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-obscure-linux-gpu-mining-with-sansar-rootk-61f39cb0</guid>
+      <description><![CDATA[Hackers deployed a SANSAR toolkit on Linux GPU servers to conceal cryptocurrency mining by manipulating NVIDIA monitoring outputs. The rootkit modifies the NVIDIA library to report 0% GPU utilization while mining continues, enabling attackers to evade workload detection. Security teams should update modules, monitor GPU usage via trusted tools, and apply vendor patches to detect and remove the SANSAR rootkit.]]></description>
+      <pubDate>Fri, 13 Nov 2026 15:09:45 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/hackers-use-sansar-linux-malware/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>AI Agent Exposes Five Enterprise Security Gaps</title>
@@ -437,24 +455,6 @@
       <description><![CDATA[A worldwide outage of Microsoft 365 services, including Outlook, SharePoint, and Teams, has disrupted operations for numerous organizations. The incident, caused by an internal infrastructure failure, led to prolonged service unavailability across multiple regions, impacting email, collaboration, and cloud storage. Microsoft is working to restore services and has advised users to monitor status updates for resolution timelines.]]></description>
       <pubDate>Fri, 13 Nov 2026 08:35:18 GMT</pubDate>
       <source url="https://www.malwarebytes.com/blog/news/2026/11/worldwide-microsoft-365-outage-disrupts-outlook-sharepoint-teams-and-more">Malwarebytes Labs</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Police Arrest 354 Dark Web Cybercrime Suspects</title>
-      <link>https://secubuzz.com/news/police-arrest-354-dark-web-cybercrime-suspects-07e6a2d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/police-arrest-354-dark-web-cybercrime-suspects-07e6a2d5</guid>
-      <description><![CDATA[Police forces worldwide arrested 354 suspects in a joint operation targeting vendors and buyers on dark‑web marketplaces such as Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom. The crackdown, coordinated by international law‑enforcement agencies, aimed to dismantle illicit cybercrime networks facilitating malware distribution and financial fraud. Authorities are proceeding with prosecutions and asset seizures to disrupt future operations.]]></description>
-      <pubDate>Fri, 13 Nov 2026 08:34:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Top AI Governance Platforms Ranked for 2026 Compliance</title>
-      <link>https://secubuzz.com/news/top-ai-governance-platforms-ranked-for-2026-compli-cb40422c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/top-ai-governance-platforms-ranked-for-2026-compli-cb40422c</guid>
-      <description><![CDATA[Emerging regulatory enforcement under the EU AI Act has driven enterprise adoption of specialized artificial intelligence governance platforms. Current solutions diverge into policy registries, machine-learning model monitors, and extended privacy suites, with Credo AI and IBM taking top platform rankings. Security teams should deploy AI governance tools to maintain complete model inventories and enforce organizational compliance frameworks.]]></description>
-      <pubDate>Fri, 13 Nov 2026 08:34:06 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/best-ai-governance-platforms/">Cyber Security News</source>
       <category>General</category>
     </item>
   </channel>

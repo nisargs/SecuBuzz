@@ -1,5 +1,22 @@
 [
   {
+    "id": "https://therecord.media/university-of-texas-arlington-warns-data-breach",
+    "sourceUrl": "https://therecord.media/university-of-texas-arlington-warns-data-breach",
+    "title": "University of Texas at Arlington warns personal information stolen during cyberattack",
+    "headline": "University of Texas at Arlington warns personal information stolen during cyberattack",
+    "summary": "In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "publishedAt": "2026-11-13T17:26:00.000Z",
+    "ingestedAt": "2026-11-13T18:44:37.981Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
     "sourceUrl": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
     "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
@@ -17,6 +34,22 @@
     ],
     "additionalSources": [],
     "isFallback": true
+  },
+  {
+    "id": "https://cybersecuritynews.com/hackers-use-sansar-linux-malware/",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-use-sansar-linux-malware/",
+    "title": "Hackers Obscure Linux GPU Mining with SANSAR Rootkit",
+    "headline": "Hackers Obscure Linux GPU Mining with SANSAR Rootkit",
+    "summary": "Hackers deployed a SANSAR toolkit on Linux GPU servers to conceal cryptocurrency mining by manipulating NVIDIA monitoring outputs. The rootkit modifies the NVIDIA library to report 0% GPU utilization while mining continues, enabling attackers to evade workload detection. Security teams should update modules, monitor GPU usage via trusted tools, and apply vendor patches to detect and remove the SANSAR rootkit.",
+    "category": "VULNERABILITY",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-13T15:09:45.000Z",
+    "ingestedAt": "2026-11-13T18:43:14.273Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/hackers-use-sansar-linux-malware/",
+    "additionalSources": []
   },
   {
     "id": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
@@ -8399,42 +8432,5 @@
     "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-918/",
     "additionalSources": [],
     "cves": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-917/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-917/",
-    "title": "Meta fairseq load_speaker YAML RCE Requires User Interaction",
-    "headline": "Meta fairseq load_speaker YAML RCE Requires User Interaction",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "ingestedAt": "2026-11-12T01:43:13.906Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-917/",
-    "additionalSources": [],
-    "cves": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-916/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-916/",
-    "title": "Meta fairseq Code Injection Vulnerability",
-    "headline": "Meta fairseq Code Injection Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "ingestedAt": "2026-11-12T01:47:13.490Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-916/",
-    "additionalSources": [],
-    "cves": [],
-    "aliases": [
-      "meta-fairseq-code-injection-vulnerability-cve-2026-d15972ca"
-    ]
   }
 ]

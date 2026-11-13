@@ -2,6 +2,212 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-114713",
+    "slug": "cve-2026-114713",
+    "vendor": "UnrealIRCd",
+    "product": "UnrealIRCd",
+    "name": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+    "dateAdded": "2026-11-13",
+    "dueDate": "2026-11-16",
+    "severity": "High",
+    "cwe": "CWE-140",
+    "ransomware": false,
+    "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-114713"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-123039",
+    "slug": "cve-2026-123039",
+    "vendor": "Check Point",
+    "product": "Multiple Products",
+    "name": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+    "dateAdded": "2026-11-13",
+    "dueDate": "2026-11-16",
+    "severity": "High",
+    "cwe": "CWE-732, CWE-862",
+    "ransomware": false,
+    "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
+    "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+    "references": [
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-123039"
+      }
+    ],
+    "source": "CISA KEV"
+  },
+  {
+    "cve": "CVE-2026-126361",
+    "slug": "cve-2026-126361",
+    "vendor": "npm",
+    "product": "astro",
+    "name": "Astro: XSS via attribute injection in dynamic tag names",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "When a dynamic tag (const Tag = ...; <Tag />) resolves to a string, Astro renders it as a raw HTML element name. The name was filtered to remove characters that could inject attributes, but the filter did not handle /. Because HTML parsers treat / inside a tag as an attribute separator, a tag name such as img/src/onerror=alert(1) was rendered as an element with an onerror attribute.",
+    "requiredAction": "Upgrade astro to version 7.4.5 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mh32-jxcr-mh9f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126361"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126364",
+    "slug": "cve-2026-126364",
+    "vendor": "npm",
+    "product": "@astrojs/node",
+    "name": "Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "The /_image endpoint used by the @astrojs/node adapter checks that a requested local image is inside the build output directory before reading it from disk. That check compared paths case-insensitively. On case-sensitive filesystems (such as Linux), a directory whose path differs from the output directory only by letter case is a different directory, but it passed the check.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r3h5-4585-7x3w"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126364"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128070",
+    "slug": "cve-2026-128070",
+    "vendor": "npm",
+    "product": "@nuxt/schema",
+    "name": "Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 5.9,
+    "severity": "Medium",
+    "cwe": "CWE-552",
+    "ransomware": false,
+    "description": "Nuxt can pick a parent directory that does not declare a workspace as its default workspaceDir: the farthest directory with a lockfile when the project is not inside a git repository, or the farthest directory with a pnpm-workspace.yaml or deno.json file, even one that only holds settings. The Vite dev server allows /_nuxt/@fs/ requests for any file under workspaceDir.",
+    "requiredAction": "Upgrade @nuxt/schema to version 4.6.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mjrq-cffv-q4qc"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128070"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128069",
+    "slug": "cve-2026-128069",
+    "vendor": "RubyGems",
+    "product": "rails-html-sanitizer",
+    "name": "rails-html-sanitizer: Possible XSS via shared scrubber state in concurrent calls",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 4.7,
+    "severity": "Medium",
+    "cwe": "CWE-79",
+    "ransomware": false,
+    "description": "Rails::HTML::SafeListSanitizer (both the HTML4 and HTML5 variants) shares one Rails::HTML::PermitScrubber across every sanitize call on the same instance, assigning its tags and attributes on each call without synchronization. Two concurrent sanitize calls with different tags: or attributes: options can interleave, so one call is scrubbed with the other call's allowlist.",
+    "requiredAction": "Upgrade rails-html-sanitizer to version 1.7.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-h7wh-q2qr-458c"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128069"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128079",
+    "slug": "cve-2026-128079",
+    "vendor": "Pip",
+    "product": "envd",
+    "name": "envd: Host file disclosure through requirements path traversal and TOCTOU",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "envd’s install.python_packages(requirements=...) could read files outside the build context on the host. Content interpreted as dependency entries could appear in build logs and build-step metadata. Commit f576c92, released in v1.3.5, added path containment validation but left a time-of-check/time-of-use (TOCTOU) race between symlink resolution and opening the requirements file.",
+    "requiredAction": "Upgrade envd to version 1.3.6 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jv6m-48w5-5rpr"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128079"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128068",
+    "slug": "cve-2026-128068",
+    "vendor": "RubyGems",
+    "product": "rails-html-sanitizer",
+    "name": "rails-html-sanitizer: Possible regular expression denial of service with certain configurations",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "Rails::HTML::PermitScrubber restricts the href and xlink:href attributes of SVG reference elements to local references. That check matched the attribute value against /^\\s[^#\\s]./m. In Ruby ^ anchors to every line start and \\s matches newlines, so an all-whitespace value made the engine rescan the value from each of its line starts, taking time quadratic in its length.",
+    "requiredAction": "Upgrade rails-html-sanitizer to version 1.7.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-cpgf-5mjf-73p7"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128068"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-126360",
     "slug": "cve-2026-126360",
     "vendor": "Pip",
@@ -1141,158 +1347,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126203"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125323",
-    "slug": "cve-2026-125323",
-    "vendor": "Go",
-    "product": "control-plane · pgEdge",
-    "name": "pgEdge Control Plane generates pg_hba.conf with trust authentication for local and loopback connections",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 7.8,
-    "severity": "High",
-    "cwe": "CWE-306",
-    "ransomware": false,
-    "description": "Every pg_hba.conf generated by the pgEdge Control Plane begins with a hard-coded block of trust entries covering Unix-socket and loopback connections. Any operating-system account that can reach the Postgres socket or the loopback interface on a database host can authenticate as any Postgres role, including the superuser, without presenting a credential.",
-    "requiredAction": "Upgrade control-plane · pgEdge to version 0.11.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-vq9p-w6wv-cr25"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125323"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125327",
-    "slug": "cve-2026-125327",
-    "vendor": "Go",
-    "product": "pgedge-rag-server · pgEdge",
-    "name": "pgEdge RAG Server unbounded corpus read allows resource exhaustion from unauthenticated requests",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 7.5,
-    "severity": "High",
-    "cwe": "CWE-405",
-    "ransomware": false,
-    "description": "An unauthenticated caller able to reach the query endpoint could exhaust database and server resources with ordinary, inexpensive requests. The keyword-search arm read the entire corpus on every request and rebuilt an in-memory BM25 index from it, so the cost of serving a query scaled with the size of the source table rather than with the size of the result set.",
-    "requiredAction": "Upgrade pgedge-rag-server · pgEdge to version 1.0.1-0.20260729020411-a09d4872356b or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5qg5-rgp6-j5m5"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125327"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125326",
-    "slug": "cve-2026-125326",
-    "vendor": "Go",
-    "product": "pgedge-rag-server · pgEdge",
-    "name": "pgEdge RAG Server discloses part of the configured provider credential through API error messages",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.8,
-    "severity": "Medium",
-    "cwe": "CWE-209",
-    "ransomware": false,
-    "description": "An unauthenticated remote caller could read part of the operator's configured LLM provider API key. The query API relayed the text of a provider error straight to the caller.",
-    "requiredAction": "Upgrade pgedge-rag-server · pgEdge to version 1.0.1-0.20260729022402-72e0785a6d7c or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-68g8-gh8f-7rhg"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125326"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125325",
-    "slug": "cve-2026-125325",
-    "vendor": "Go",
-    "product": "pgedge-rag-server · pgEdge",
-    "name": "pgEdge RAG Server shared keyword index leaked results between concurrent unauthenticated requests",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.9,
-    "severity": "Medium",
-    "cwe": "CWE-362",
-    "ransomware": false,
-    "description": "Documents belonging to one caller could be returned to another. Where an application passes a customer or tenant identifier as a search filter, that scoping could be defeated by ordinary concurrent traffic. No injection and no malformed input are required — normal load is enough. The BM25 keyword index was a single per-pipeline object shared by every request.",
-    "requiredAction": "Upgrade pgedge-rag-server · pgEdge to version 1.0.1-0.20260729020411-a09d4872356b or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-w437-9mwm-j6vq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125325"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-125328",
-    "slug": "cve-2026-125328",
-    "vendor": "Go",
-    "product": "pgedge-go-llm-lib · pgEdge",
-    "name": "pgEdge Go LLM Library discloses provider API key fragments in error messages",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.8,
-    "severity": "Medium",
-    "cwe": "CWE-209",
-    "ransomware": false,
-    "description": "An unauthenticated caller could read part of the operator's configured LLM provider API key. The library's own health handler pings every configured provider using the operator's real credential and returns the resulting error text verbatim. Providers characteristically quote a partially masked form of the credential they rejected, so a failing ping published a fragment of the key.",
-    "requiredAction": "Upgrade pgedge-go-llm-lib · pgEdge to version 0.1.2-0.20260729024727-7531a55d368b or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-8835-xmqj-354h"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125328"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-7m8x-x364-m26j",
-    "slug": "ghsa-7m8x-x364-m26j",
-    "vendor": "npm",
-    "product": "signalk-server",
-    "name": "Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-306",
-    "ransomware": false,
-    "description": "An unauthenticated WebSocket client can subscribe to the log path and receive buffered server logs. WebSocket connections are intentionally permitted before authentication because login occurs over the WebSocket connection. However, the log subscription path does not enforce an authorization check.",
-    "requiredAction": "Upgrade signalk-server to version 2.31.0-beta.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-7m8x-x364-m26j"
       }
     ],
     "source": "GITHUB"
