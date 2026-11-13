@@ -778,7 +778,7 @@ function setCachedSearchResult(key: string, data: { count: number; results: any[
 let cachedKnownCves: Set<string> | null = null;
 let cachedKnownCvesTime = 0;
 
-async function getKnownCveSet(env: Env): Promise<Set<string>> {
+async function getKnownCveSet(): Promise<Set<string>> {
   const now = Date.now();
   if (cachedKnownCves && now - cachedKnownCvesTime < 60 * 60 * 1000) {
     return cachedKnownCves;
@@ -786,7 +786,7 @@ async function getKnownCveSet(env: Env): Promise<Set<string>> {
 
   const set = new Set<string>();
 
-  // 1. Add all CVEs from in-memory active feed (0 D1 rows read)
+  // Extract all CVEs from in-memory active feed (0 D1 rows read)
   try {
     const feedArticles = await getArticles();
     for (const a of feedArticles) {
@@ -802,69 +802,11 @@ async function getKnownCveSet(env: Env): Promise<Set<string>> {
     console.error('Failed to extract CVEs from active feed:', err);
   }
 
-  // 2. Add all historical CVEs from D1 archive (runs at most once per hour)
-  if (env.DB) {
-    try {
-      const { results } = await env.DB.prepare(
-        `SELECT DISTINCT json_each.value as cve
-         FROM articles, json_each(articles.cves_json)
-         WHERE json_each.value LIKE 'CVE-%';`
-      ).all<{ cve: string }>();
-
-      if (results && Array.isArray(results)) {
-        for (const r of results) {
-          if (r.cve && typeof r.cve === 'string') {
-            set.add(normalizeHyphens(r.cve).toUpperCase().trim());
-          }
-        }
-      }
-    } catch (e) {
-      console.error('Failed to query known CVEs from D1:', e);
-    }
-  }
-
   if (set.size > 0) {
     cachedKnownCves = set;
     cachedKnownCvesTime = now;
   }
   return cachedKnownCves || set;
-}
-
-let cachedAliasMap: Map<string, string> | null = null;
-let cachedAliasMapTime = 0;
-
-async function getAliasToSlugMap(env: Env): Promise<Map<string, string>> {
-  const now = Date.now();
-  if (cachedAliasMap && now - cachedAliasMapTime < 60 * 60 * 1000) {
-    return cachedAliasMap;
-  }
-
-  const map = new Map<string, string>();
-  if (env.DB) {
-    try {
-      const { results } = await env.DB.prepare(
-        `SELECT slug, json_each.value as alias
-         FROM articles, json_each(articles.aliases_json)
-         WHERE json_each.value IS NOT NULL AND json_each.value != '';`
-      ).all<{ slug: string; alias: string }>();
-
-      if (results && Array.isArray(results)) {
-        for (const r of results) {
-          if (r.alias && r.slug) {
-            map.set(r.alias.toLowerCase().trim(), r.slug.toLowerCase().trim());
-          }
-        }
-      }
-    } catch (e) {
-      console.error('Failed to load alias map from D1:', e);
-    }
-  }
-
-  if (map.size > 0) {
-    cachedAliasMap = map;
-    cachedAliasMapTime = now;
-  }
-  return cachedAliasMap || map;
 }
 
 let cachedSitemapXml: string | null = null;
@@ -951,7 +893,7 @@ async function findKevAdvisory(slug: string): Promise<KevVulnerability | undefin
 }
 
 export default {
-  async fetch(request: Request, env: Env): Promise<Response> {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
     // Handle CORS preflight
@@ -1320,7 +1262,7 @@ export default {
         // 2. Fast-filter CVE queries against in-memory known CVE set (0 D1 rows read on misses)
         if (cveMatch) {
           const normalizedCve = `CVE-${cveMatch[1]}-${cveMatch[2]}`.toUpperCase();
-          const knownCves = await getKnownCveSet(env);
+          const knownCves = await getKnownCveSet();
           if (!knownCves.has(normalizedCve)) {
             const emptyResult = { count: 0, results: [] };
             setCachedSearchResult(cacheKey, emptyResult);
@@ -1410,18 +1352,28 @@ export default {
           });
         }
 
-        // 2. Resolve alias if present via in-memory alias map
-        const aliasMap = await getAliasToSlugMap(env);
-        const resolvedSlug = aliasMap.get(reqSlug) || reqSlug;
+        if (!env.DB) {
+          return errorResponse('Article not found', 404);
+        }
 
-        // 3. Query D1 by primary key (indexed lookup - 1 row read)
+        // 2. Direct indexed primary key lookup in D1 (EXACTLY 1 row read)
         try {
-          const row = await env.DB.prepare(
+          let row = await env.DB.prepare(
             `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
              FROM articles
              WHERE slug = ?
              LIMIT 1;`
-          ).bind(resolvedSlug).first<any>();
+          ).bind(reqSlug).first<any>();
+
+          // Fallback only if primary key missed: check aliases (0 D1 table scan)
+          if (!row) {
+            row = await env.DB.prepare(
+              `SELECT slug, title, summary, category, severity, source, source_url, published_at, cves_json, additional_sources_json, aliases_json
+               FROM articles
+               WHERE aliases_json LIKE ?
+               LIMIT 1;`
+            ).bind(`%"${reqSlug}"%`).first<any>();
+          }
 
           if (row) {
             const article = formatD1Article(row);
@@ -1484,8 +1436,6 @@ export default {
 
         // Invalidate in-memory caches so fresh articles are immediately searchable
         cachedKnownCves = null;
-        cachedAliasMap = null;
-        cachedSitemapXml = null;
         searchCache.clear();
 
         return jsonResponse({ success: true, count: articles.length });
@@ -1523,18 +1473,31 @@ export default {
         }
       }
 
-      // Dynamic Sitemap for Search Engines
+      // Dynamic Sitemap for Search Engines (Edge Cached 24h, 0 D1 reads on hits)
       if (url.pathname === '/sitemap.xml') {
+        const cache = (caches as any).default;
+        const cacheKey = new Request(url.toString(), request);
+        try {
+          const cachedRes = await cache.match(cacheKey);
+          if (cachedRes) {
+            return cachedRes;
+          }
+        } catch {}
+
         const now = Date.now();
-        if (cachedSitemapXml && now - cachedSitemapTime < 60 * 60 * 1000) {
-          return new Response(cachedSitemapXml, {
+        if (cachedSitemapXml && now - cachedSitemapTime < 24 * 60 * 60 * 1000) {
+          const res = new Response(cachedSitemapXml, {
             status: 200,
             headers: {
               'Content-Type': 'application/xml; charset=utf-8',
-              'Cache-Control': 'public, max-age=3600',
+              'Cache-Control': 'public, max-age=86400, s-maxage=86400',
               ...CORS_HEADERS,
             },
           });
+          try {
+            if (ctx && ctx.waitUntil) ctx.waitUntil(cache.put(cacheKey, res.clone()));
+          } catch {}
+          return res;
         }
 
         const [cisa, d1Articles] = await Promise.all([
@@ -1548,14 +1511,19 @@ export default {
         const sitemapXml = generateSitemapXml(articles, advisories);
         cachedSitemapXml = sitemapXml;
         cachedSitemapTime = now;
-        return new Response(sitemapXml, {
+
+        const response = new Response(sitemapXml, {
           status: 200,
           headers: {
             'Content-Type': 'application/xml; charset=utf-8',
-            'Cache-Control': 'public, max-age=3600',
+            'Cache-Control': 'public, max-age=86400, s-maxage=86400',
             ...CORS_HEADERS,
           },
         });
+        try {
+          if (ctx && ctx.waitUntil) ctx.waitUntil(cache.put(cacheKey, response.clone()));
+        } catch {}
+        return response;
       }
 
       // RSS Feed for news briefs
@@ -2129,11 +2097,17 @@ export default {
 
             if (!inFeed && env.DB) {
               try {
-                const aliasMap = await getAliasToSlugMap(env);
-                const resolvedSlug = aliasMap.get(slug) || slug;
-                const row = await env.DB.prepare(
+                // Direct indexed lookup (1 row read)
+                let row = await env.DB.prepare(
                   'SELECT * FROM articles WHERE slug = ? LIMIT 1'
-                ).bind(resolvedSlug).first<any>();
+                ).bind(slug).first<any>();
+
+                // Fallback only if primary slug missed: check aliases (0 D1 table scan)
+                if (!row) {
+                  row = await env.DB.prepare(
+                    'SELECT * FROM articles WHERE aliases_json LIKE ? LIMIT 1'
+                  ).bind(`%"${slug}"%`).first<any>();
+                }
 
                 if (row) {
                   isArchivedMatch = true;
