@@ -11,6 +11,63 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fbi-flash-alert-says-artex-tool-automating-cyberat-213b5384",
+    "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
+    "summary": "Open source hacking tool Artex \"significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours,\" the FBI said.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
+    "publishedAt": "2026-11-13T21:32:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-flash-alert-says-artex-tool-automating-cyberat",
+      "article-213b5384",
+      "213b5384",
+      "fbi-flash-alert-says-artex-tool-automating-cyberat-112dcf",
+      "fbi-flash-alert-says-artex-tool-automating-cyberattacks-at-m"
+    ]
+  },
+  {
+    "slug": "ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a",
+    "title": "AI‑Enabled Pentest Platforms Lower Attack Skill Threshold",
+    "summary": "AI‑enabled pentest and red‑team frameworks automate reconnaissance, vulnerability testing, and follow‑on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/artex-and-beyond/",
+    "publishedAt": "2026-11-13T20:57:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-enabled-pentest-platforms-lower-attack-skill-th",
+      "article-0112375a",
+      "0112375a",
+      "ai-enabled-pentest-platforms-lower-attack-skill-th-46279a",
+      "ai-enabled-pentest-platforms-lower-attack-skill-threshold"
+    ]
+  },
+  {
+    "slug": "osaka-city-alerts-residents-to-phishing-after-data-a2e7db11",
+    "title": "Osaka City Alerts Residents to Phishing After Data Breach",
+    "summary": "Osaka City reported a data breach affecting approximately one million residents, prompting a city‑wide warning. The breach exposed personal information, and officials cautioned residents against phishing emails that appear to originate from municipal services. Security teams should verify email authenticity, update credentials, and monitor for unauthorized account activity to mitigate potential exploitation.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/city-of-osaka-japan-email-data-breach",
+    "publishedAt": "2026-11-13T19:43:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "osaka-city-alerts-residents-to-phishing-after-data",
+      "article-a2e7db11",
+      "a2e7db11",
+      "osaka-city-alerts-residents-to-phishing-after-data-7fa16d",
+      "osaka-city-alerts-residents-to-phishing-after-data-breach"
+    ]
+  },
+  {
     "slug": "trezor-confirms-hardware-implants-in-safe-5-wallet-7d6ffefc",
     "title": "Trezor Confirms Hardware Implants in Safe 5 Wallets",
     "summary": "Trezor confirmed that three Safe 5 wallets sold by CryptoBilis contained malicious implants that exfiltrate recovery phrases over cellular networks. The implants capture seed phrases during device setup and transmit them to attackers, enabling full wallet takeover. Trezor issued a firmware patch that disables the vulnerable hardware path; users must upgrade and verify device authenticity.",
@@ -123,6 +180,48 @@ export const news: NewsBrief[] = [
       "0544a143",
       "germany-passes-legislation-authorizing-intelligenc-61e8b4",
       "germany-passes-legislation-authorizing-intelligence-agency-h"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-windows-kernel-transaction-6483cbda",
+    "title": "Microsoft Acknowledges Windows Kernel Transaction Manager Privilege Escalation",
+    "summary": "Microsoft acknowledges CVE-2026-94522, an elevation of privilege flaw in the Windows Kernel Transaction Manager. The vulnerability could allow privileged escalation if exploited, but no active exploitation has been reported. Microsoft has issued an informational update; administrators should monitor for official patch releases and apply them when available.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-94522",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-94522"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-windows-kernel-transaction",
+      "article-6483cbda",
+      "6483cbda",
+      "microsoft-acknowledges-windows-kernel-transaction-74325e",
+      "microsoft-acknowledges-windows-kernel-transaction-manager-pr"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-windows-kernel-privilege-es-8547433e",
+    "title": "Microsoft Acknowledges Windows Kernel Privilege Escalation Flaw",
+    "summary": "Microsoft acknowledges CVE-2026-109473, an elevation of privilege flaw in the Windows Kernel. The flaw could allow privileged escalation if exploited, but no active exploitation has been reported. Microsoft has issued an informational update; administrators should monitor for official patch releases and apply them when available.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109473",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-109473"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-acknowledges-windows-kernel-privilege-es",
+      "article-8547433e",
+      "8547433e",
+      "microsoft-acknowledges-windows-kernel-privilege-es-1ff6ba",
+      "microsoft-acknowledges-windows-kernel-privilege-escalation-f"
     ]
   },
   {
@@ -1257,6 +1356,87 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "zdi-identifies-llama-cpp-gguf-buffer-overflow-rce-6dd08fe5",
+    "title": "ZDI Identifies llama.cpp GGUF Buffer Overflow RCE",
+    "summary": "ZDI reports a heap-based buffer overflow in llama.cpp’s GGUF file parser, allowing remote code execution. The flaw requires user interaction, such as visiting a malicious page or opening a malicious file, and carries a CVSS score of 7.8. The vulnerability is assigned CVE-2026-126975; administrators should apply the vendor patch or mitigate by restricting file access.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-976/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126975"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-identifies-llama-cpp-gguf-buffer-overflow-rce",
+      "article-6dd08fe5",
+      "6dd08fe5",
+      "zdi-identifies-llama-cpp-gguf-buffer-overflow-rce-6f3d22"
+    ]
+  },
+  {
+    "slug": "llama-cpp-integer-overflow-enables-remote-code-exe-f71e0555",
+    "title": "llama.cpp Integer Overflow Enables Remote Code Execution",
+    "summary": "An integer overflow in llama.cpp’s GGUF parser lets attackers run arbitrary code when a user opens a malicious file or visits a malicious page. The flaw, CVE-2026-126974, carries a CVSS 7.8 score, requires user interaction, and has a public PoC but no confirmed in‑the‑wild exploitation. Security teams should apply the latest llama.cpp patch or the vendor‑supplied workaround to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-975/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126974"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "llama-cpp-integer-overflow-enables-remote-code-exe",
+      "article-f71e0555",
+      "f71e0555",
+      "llama-cpp-integer-overflow-enables-remote-code-exe-6f3d22",
+      "llama-cpp-integer-overflow-enables-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "embedthis-updater-heap-overflow-enables-remote-cod-cd2abc19",
+    "title": "EmbedThis Updater Heap Overflow Enables Remote Code Execution",
+    "summary": "A heap-based buffer overflow in EmbedThis Updater permits network‑adjacent attackers to execute arbitrary code without authentication. The flaw, rated CVSS 7.5, requires proximity to the target network but offers no user interaction, and no active exploitation has been reported. EmbedThis has released a patch; organizations should update the Updater component or apply the vendor‑issued workaround to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-973/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "embedthis-updater-heap-overflow-enables-remote-cod",
+      "article-cd2abc19",
+      "cd2abc19",
+      "embedthis-updater-heap-overflow-enables-remote-cod-6f3d22",
+      "embedthis-updater-heap-overflow-enables-remote-code-executio"
+    ]
+  },
+  {
+    "slug": "zdi-26-967-microsoft-windows-remote-desktop-connec-2c76ce13",
+    "title": "ZDI-26-967: Microsoft Windows Remote Desktop Connection Client Link Following Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Microsoft Windows. User interaction is required to exploit this vulnerability in that the target must connect to a malicious server. The following CVEs are assigned: CVE-2026-119824.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-967/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-119824"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-967-microsoft-windows-remote-desktop-connec",
+      "article-2c76ce13",
+      "2c76ce13",
+      "zdi-26-967-microsoft-windows-remote-desktop-connec-6f3d1f",
+      "zdi-26-967-microsoft-windows-remote-desktop-connection-clien"
     ]
   },
   {
@@ -9395,181 +9575,6 @@ export const news: NewsBrief[] = [
       "46d41d1b",
       "microsoft-releases-patch-for-outlook-bug-exposing-49dc30",
       "microsoft-releases-patch-for-outlook-bug-exposing-ntlmv2-has"
-    ]
-  },
-  {
-    "slug": "kernel-vulnerabilities-affect-azure-cvm-systems-7c85010a",
-    "title": "Kernel Vulnerabilities Affect Azure CVM Systems",
-    "summary": "Multiple kernel subsystems in Azure CVM instances contain vulnerabilities that could allow a local attacker to compromise system integrity. The flaws affect USB gadget drivers, memory management, networking core, and various architecture modules, but no public exploit has been reported. Red Hat has issued a kernel update that corrects these issues; administrators should apply the patch to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9039-1",
-    "publishedAt": "2026-11-11T08:12:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kernel-vulnerabilities-affect-azure-cvm-systems",
-      "article-7c85010a",
-      "7c85010a",
-      "kernel-vulnerabilities-affect-azure-cvm-systems-7e883c"
-    ]
-  },
-  {
-    "slug": "barracuda-vulnerabilities-exploited-for-root-acces-9695b19a",
-    "title": "Barracuda Vulnerabilities Exploited for Root Access",
-    "summary": "Threat actors are exploiting two recently patched Barracuda flaws added to CISA KEV under BOD 26-04: CVE-2026-116606 (CVSS 9.3), an Email Security Gateway Admin UI authentication bypass, and CVE-2026-111560 (CVSS 8.6), a command injection flaw across ESG, ADC, WAF, WSG, BMA, and WCC. Chaining them grants root access; apply patches and restrict admin interfaces immediately.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
-    "publishedAt": "2026-11-11T07:53:51.000Z",
-    "cves": [
-      "CVE-2026-116606",
-      "CVE-2026-111560"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "barracuda-vulnerabilities-exploited-for-root-acces",
-      "article-9695b19a",
-      "9695b19a",
-      "barracuda-vulnerabilities-exploited-for-root-acces-395bcd",
-      "barracuda-vulnerabilities-exploited-for-root-access"
-    ]
-  },
-  {
-    "slug": "railway-breach-causes-740-000-unauthorized-ai-usag-bbd595a0",
-    "title": "Railway Breach Causes $740,000 Unauthorized AI Usage",
-    "summary": "Railway disclosed that customer AI keys stored on its platform were stolen in an October breach. The stolen keys enabled an estimated $740,000 in unauthorized AI usage charges, which Railway pledged to cover. Railway urges customers to rotate API keys and monitor usage logs, while investigating the breach and seeking refunds from AI vendors.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
-    "publishedAt": "2026-11-11T07:49:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "railway-breach-causes-740-000-unauthorized-ai-usag",
-      "article-bbd595a0",
-      "bbd595a0",
-      "railway-breach-causes-740-000-unauthorized-ai-usag-728c42",
-      "railway-breach-causes-740-000-unauthorized-ai-usage"
-    ]
-  },
-  {
-    "slug": "top-10-security-ratings-services-ranked-2026-fe367a4f",
-    "title": "Top 10 Security Ratings Services Ranked 2026",
-    "summary": "The piece ranks the top ten security ratings services for 2026, assessing exposure, patch cadence, breach signals, and overall posture. Ratings now influence insurance premiums, vendor access, and board decisions, with NormShield and RiskRecon highlighted as key players. Stakeholders should examine rating criteria and align their security posture with the metrics used by these services.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/best-security-ratings-services/",
-    "publishedAt": "2026-11-11T07:33:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "top-10-security-ratings-services-ranked-2026",
-      "article-fe367a4f",
-      "fe367a4f",
-      "top-10-security-ratings-services-ranked-2026-4d3642"
-    ]
-  },
-  {
-    "slug": "microsoft-patches-ad-rce-vulnerability-cve-2026-11-ec018025",
-    "title": "Microsoft Patches AD RCE Vulnerability CVE-2026-119948",
-    "summary": "A Windows Active Directory flaw (CVE-2026-119948) lets an authorized attacker run code over a network. The vulnerability, rated Important with a CVSS 3.1 score of 7.5, exploits improper input handling in AD replication. Microsoft issued security updates on November 10, 2026; administrators should apply them immediately to secure domain controllers.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/windows-active-directory-rce-vulnerability/",
-    "publishedAt": "2026-11-11T07:21:28.000Z",
-    "cves": [
-      "CVE-2026-119948"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patches-ad-rce-vulnerability-cve-2026-11",
-      "article-ec018025",
-      "ec018025",
-      "microsoft-patches-ad-rce-vulnerability-cve-2026-11-7e1a09",
-      "microsoft-patches-ad-rce-vulnerability-cve-2026-119948"
-    ]
-  },
-  {
-    "slug": "microsoft-researchers-show-ai-agents-can-be-backdo-7321c187",
-    "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
-    "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown. When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
-    "publishedAt": "2026-11-11T07:21:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-researchers-show-ai-agents-can-be-backdo",
-      "article-7321c187",
-      "7321c187",
-      "microsoft-researchers-show-ai-agents-can-be-backdo-13e3b4",
-      "microsoft-researchers-show-ai-agents-can-be-backdoored-by-ed"
-    ]
-  },
-  {
-    "slug": "fortinet-forticlient-rce-via-fortipam-exploit-cve-dec52944",
-    "title": "Fortinet FortiClient RCE via FortiPAM Exploit CVE-2026-121529",
-    "summary": "A FortiClient flaw (CVE-2026-121529) allows a remote attacker to execute code when a user visits a malicious website. The vulnerability, rated Critical with a CVSS 9.1 score, exploits improper handling of embedded scripts in FortiPAM-enabled sessions. Fortinet released a patch on November 10, 2026; users should update FortiClient immediately to prevent exploitation.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fortinet2shell-vulnerability/",
-    "publishedAt": "2026-11-11T07:05:55.000Z",
-    "cves": [
-      "CVE-2026-121529"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-forticlient-rce-via-fortipam-exploit-cve",
-      "article-dec52944",
-      "dec52944",
-      "fortinet-forticlient-rce-via-fortipam-exploit-cve-6eb845",
-      "fortinet-forticlient-rce-via-fortipam-exploit-cve-2026-12152"
-    ]
-  },
-  {
-    "slug": "eu-cyber-resilience-act-reporting-obligations-expl-974bcf91",
-    "title": "EU Cyber Resilience Act Reporting Obligations Explained",
-    "summary": "The EU Cyber Resilience Act requires manufacturers to register every product version still in use. Effective September 2026, the regulation defines when a company learns of an exploited flaw and urges CISOs to query suppliers on vulnerability handling and CE marking. Manufacturers must keep product registers current and provide clear vulnerability disclosure timelines to meet reporting duties.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/aurimas-bakas-copla-cra-vulnerability-reporting/",
-    "publishedAt": "2026-11-11T07:00:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-cyber-resilience-act-reporting-obligations-expl",
-      "article-974bcf91",
-      "974bcf91",
-      "eu-cyber-resilience-act-reporting-obligations-expl-299b7a",
-      "eu-cyber-resilience-act-reporting-obligations-explained"
-    ]
-  },
-  {
-    "slug": "apple-fixes-bluetooth-airplay-pairing-flaws-28a73ab6",
-    "title": "Apple Fixes Bluetooth, AirPlay Pairing Flaws",
-    "summary": "Apple patched Bluetooth and AirPlay pairing flaws, iMessage vulnerabilities, and an exploited Brotli bug across its platforms. The vulnerabilities allowed unauthorized pairing and message tampering, potentially enabling data exfiltration or denial of service on affected devices. Apple released security updates for macOS, iOS, iPadOS, and tvOS; users should install the latest patches to mitigate the risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/bluetooth-airplay-pairing-vulnerabilities-patched-across-apple-platforms/",
-    "publishedAt": "2026-11-11T07:00:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-fixes-bluetooth-airplay-pairing-flaws",
-      "article-28a73ab6",
-      "28a73ab6",
-      "apple-fixes-bluetooth-airplay-pairing-flaws-7d6b0c"
     ]
   }
 ];
