@@ -205,6 +205,8 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
 
   let installClicks = null;
   let supportClicks = null;
+  let vendorClicks = null;
+  let modalOpens = null;
   let deviceTokens = null;
   try {
     const statsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalClicks, COUNT(DISTINCT visitor_id) as uniqueClickers, SUM(is_repeat) as repeatClicks FROM install_clicks');
@@ -236,6 +238,42 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
         breakdown: supportBreakdownRes?.[0]?.results || [],
         countries: supportCountriesRes?.[0]?.results || [],
         recent: supportRecentRes?.[0]?.results || []
+      };
+    } catch {
+      // Non-fatal
+    }
+
+    try {
+      const vStatsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalClicks, COUNT(DISTINCT user_agent) as uniqueClickers FROM vendor_status_clicks');
+      const vBreakdownRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT vendor, COUNT(*) as count FROM vendor_status_clicks GROUP BY vendor ORDER BY count DESC LIMIT 10');
+      const vCountriesRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT country, COUNT(*) as count FROM vendor_status_clicks GROUP BY country ORDER BY count DESC LIMIT 10');
+      const vRecentRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT vendor, country, clicked_at FROM vendor_status_clicks ORDER BY clicked_at DESC LIMIT 5');
+
+      const vStats = vStatsRes?.[0]?.results?.[0] || {};
+      vendorClicks = {
+        totalClicks: Number(vStats.totalClicks || 0),
+        uniqueClickers: Number(vStats.uniqueClickers || 0),
+        breakdown: vBreakdownRes?.[0]?.results || [],
+        countries: vCountriesRes?.[0]?.results || [],
+        recent: vRecentRes?.[0]?.results || []
+      };
+    } catch {
+      // Non-fatal
+    }
+
+    try {
+      const modalStatsRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT COUNT(*) as totalOpens, COUNT(DISTINCT user_agent) as uniqueOpeners FROM modal_opens');
+      const modalBreakdownRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT modal_name, source, COUNT(*) as count FROM modal_opens GROUP BY modal_name, source ORDER BY count DESC');
+      const modalCountriesRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT country, COUNT(*) as count FROM modal_opens GROUP BY country ORDER BY count DESC LIMIT 10');
+      const modalRecentRes = await queryD1(token, accountTag, '13e7169f-7237-46a3-97fd-d0e4762b94e2', 'SELECT modal_name, source, country, opened_at FROM modal_opens ORDER BY opened_at DESC LIMIT 10');
+
+      const mStats = modalStatsRes?.[0]?.results?.[0] || {};
+      modalOpens = {
+        totalOpens: Number(mStats.totalOpens || 0),
+        uniqueOpeners: Number(mStats.uniqueOpeners || 0),
+        breakdown: modalBreakdownRes?.[0]?.results || [],
+        countries: modalCountriesRes?.[0]?.results || [],
+        recent: modalRecentRes?.[0]?.results || []
       };
     } catch {
       // Non-fatal
@@ -301,6 +339,8 @@ export async function fetchCloudflareAnalytics({ zoneTag = '65259b39c7fd2648a898
     rum: rumRes.data?.viewer?.accounts?.[0] || {},
     installClicks,
     supportClicks,
+    vendorClicks,
+    modalOpens,
     deviceTokens
   };
 }
@@ -312,6 +352,8 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
     const r = data.rum;
     const clicks = data.installClicks;
     const supportClicks = data.supportClicks;
+    const vendorClicks = data.vendorClicks;
+    const modalOpens = data.modalOpens;
     const tokens = data.deviceTokens;
     const today = z.dailyTimeline?.[0];
     const mb = today?.sum?.bytes ? (today.sum.bytes / (1024 * 1024)).toFixed(2) : '0';
@@ -389,6 +431,48 @@ if (process.argv[1]?.endsWith('cf_analytics.mjs')) {
           const repeatTag = rc.is_repeat ? '[Repeat]' : '[New]';
           const ref = rc.referer ? ` via ${rc.referer}` : '';
           console.log(`    ${rc.clicked_at.slice(0, 19)} | ${rc.country} | ${rc.source} ${repeatTag}${ref}`);
+        }
+      }
+    }
+
+    if (vendorClicks) {
+      console.log('\n--- Vendor Status Radar Clicks (/api/analytics/status-click) ---');
+      console.log(`  Total Clicks: ${vendorClicks.totalClicks || 0} | Unique Clickers: ${vendorClicks.uniqueClickers || 0}`);
+      if (vendorClicks.breakdown && vendorClicks.breakdown.length > 0) {
+        console.log('  Breakdown by Vendor:');
+        for (const b of vendorClicks.breakdown) {
+          console.log(`    - ${(b.vendor || 'unknown').padEnd(18)}: ${b.count.toString().padStart(3)} clicks`);
+        }
+      }
+      if (vendorClicks.countries && vendorClicks.countries.length > 0) {
+        console.log('  Top Countries:');
+        console.log(`    ${vendorClicks.countries.map(c => `${c.country}: ${c.count}`).join(' | ')}`);
+      }
+      if (vendorClicks.recent && vendorClicks.recent.length > 0) {
+        console.log('  Recent Clicks:');
+        for (const rc of vendorClicks.recent) {
+          console.log(`    ${rc.clicked_at.slice(0, 19)} | ${rc.country} | ${rc.vendor}`);
+        }
+      }
+    }
+
+    if (modalOpens) {
+      console.log('\n--- In-App Modal Opens (/api/analytics/modal-open) ---');
+      console.log(`  Total Opens: ${modalOpens.totalOpens || 0} | Unique Devices/UAs: ${modalOpens.uniqueOpeners || 0}`);
+      if (modalOpens.breakdown && modalOpens.breakdown.length > 0) {
+        console.log('  Breakdown by Modal & Source:');
+        for (const b of modalOpens.breakdown) {
+          console.log(`    - ${(b.modal_name || 'unknown').padEnd(16)} [${b.source || 'unknown'}]: ${b.count.toString().padStart(3)} opens`);
+        }
+      }
+      if (modalOpens.countries && modalOpens.countries.length > 0) {
+        console.log('  Top Countries:');
+        console.log(`    ${modalOpens.countries.map(c => `${c.country}: ${c.count}`).join(' | ')}`);
+      }
+      if (modalOpens.recent && modalOpens.recent.length > 0) {
+        console.log('  Recent Opens:');
+        for (const rc of modalOpens.recent.slice(0, 5)) {
+          console.log(`    ${rc.opened_at.slice(0, 19)} | ${rc.country} | ${rc.modal_name} (${rc.source})`);
         }
       }
     }

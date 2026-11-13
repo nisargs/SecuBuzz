@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { X, CheckCircle2, ArrowRight } from 'lucide-react';
 import { PlayStoreButton } from './PlayStoreButton';
+import { trackModalOpen } from '../utils/analytics';
 
 interface WhatsNewModalProps {
   isOpen: boolean;
@@ -110,6 +111,7 @@ const RELEASES: ReleaseItem[] = [
 export function WhatsNewModal({ isOpen, onClose }: WhatsNewModalProps) {
   useEffect(() => {
     if (!isOpen) return;
+    trackModalOpen('whats_new', 'home_pill');
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
     };

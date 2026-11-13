@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { X, Layers, Check } from 'lucide-react';
 import { MyStackSidebar } from './MyStackSidebar';
+import { trackModalOpen } from '../utils/analytics';
 
 interface MobileMyStackModalProps {
   isOpen: boolean;
@@ -38,6 +39,7 @@ export function MobileMyStackModal({
 }: MobileMyStackModalProps) {
   useEffect(() => {
     if (!isOpen) return;
+    trackModalOpen('my_stack', 'mobile_drawer');
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
     };
@@ -144,3 +146,4 @@ export function MobileMyStackModal({
     document.body
   );
 }
+

@@ -622,6 +622,8 @@ let cachedVendorStatus: Record<string, VendorHealthTelemetry> | null = null;
 let cachedVendorStatusTime = 0;
 let cachedStatusClickStats: any = null;
 let cachedStatusClickStatsTime = 0;
+let cachedModalOpenStats: any = null;
+let cachedModalOpenStatsTime = 0;
 
 async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTelemetry>> {
   const now = Date.now();
@@ -1274,6 +1276,96 @@ export default {
           });
         } catch (err: any) {
           return jsonResponse({ success: false, error: err.message, totalClicks: 0, topVendors: [], recent: [] });
+        }
+      }
+
+      // Beacon: Record modal opens (0 rows read, 1 row written)
+      if (url.pathname === '/api/analytics/modal-open' && request.method === 'POST') {
+        if (!env.DB) return new Response(null, { status: 204, headers: CORS_HEADERS });
+        try {
+          const body = await request.json().catch(() => null);
+          const modalName = String(body?.modal || '').slice(0, 64).trim();
+          if (modalName) {
+            const source = String(body?.source || 'unknown').slice(0, 64);
+            const country = (request.headers.get('CF-IPCountry') || 'UNKNOWN').slice(0, 10);
+            const referer = (request.headers.get('Referer') || '').slice(0, 255);
+            const userAgent = (request.headers.get('User-Agent') || '').slice(0, 255);
+            const now = new Date().toISOString();
+
+            await env.DB.prepare(
+              `INSERT INTO modal_opens (modal_name, source, country, referer, user_agent, opened_at)
+               VALUES (?, ?, ?, ?, ?, ?);`
+            ).bind(modalName, source, country, referer, userAgent, now).run();
+          }
+        } catch (e) {
+          console.warn('Failed to record modal open:', e);
+        }
+        return new Response(null, { status: 204, headers: CORS_HEADERS });
+      }
+
+      // API: Telemetry for Modal Opens (Private - Admin Only, 60s in-memory cache)
+      if (url.pathname === '/api/analytics/modal-opens') {
+        if (!isAuthorized(request, env)) {
+          return errorResponse('Unauthorized. Admin access required.', 401);
+        }
+        if (!env.DB) return jsonResponse({ totalOpens: 0, byModal: [], bySource: [], recent: [] });
+
+        const now = Date.now();
+        if (cachedModalOpenStats && now - cachedModalOpenStatsTime < 60 * 1000) {
+          return jsonResponse({ success: true, ...cachedModalOpenStats, cached: true });
+        }
+
+        try {
+          const stats: any = await env.DB.prepare(
+            `SELECT COUNT(*) as total_opens FROM modal_opens;`
+          ).first();
+
+          const { results: byModal } = await env.DB.prepare(
+            `SELECT modal_name, COUNT(*) as count
+             FROM modal_opens
+             GROUP BY modal_name
+             ORDER BY count DESC
+             LIMIT 15;`
+          ).all();
+
+          const { results: bySource } = await env.DB.prepare(
+            `SELECT source, COUNT(*) as count
+             FROM modal_opens
+             GROUP BY source
+             ORDER BY count DESC
+             LIMIT 15;`
+          ).all();
+
+          const { results: topCountries } = await env.DB.prepare(
+            `SELECT country, COUNT(*) as count
+             FROM modal_opens
+             GROUP BY country
+             ORDER BY count DESC
+             LIMIT 15;`
+          ).all();
+
+          const { results: recent } = await env.DB.prepare(
+            `SELECT modal_name, source, country, opened_at
+             FROM modal_opens
+             ORDER BY opened_at DESC
+             LIMIT 25;`
+          ).all();
+
+          cachedModalOpenStats = {
+            totalOpens: Number(stats?.total_opens || 0),
+            byModal: byModal ?? [],
+            bySource: bySource ?? [],
+            topCountries: topCountries ?? [],
+            recent: recent ?? [],
+          };
+          cachedModalOpenStatsTime = now;
+
+          return jsonResponse({
+            success: true,
+            ...cachedModalOpenStats,
+          });
+        } catch (err: any) {
+          return jsonResponse({ success: false, error: err.message, totalOpens: 0, byModal: [], bySource: [], recent: [] });
         }
       }
 
