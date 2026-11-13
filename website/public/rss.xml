@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 05:49:49 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 06:47:35 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Teams Meeting Scheduler Phishing Yields Valid Session Token</title>
+      <link>https://secubuzz.com/news/teams-meeting-scheduler-phishing-yields-valid-sess-c87b0296</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/teams-meeting-scheduler-phishing-yields-valid-sess-c87b0296</guid>
+      <description><![CDATA[Attackers used a fake Microsoft Teams meeting scheduler to trick a construction employee into approving a device‑code sign‑in, capturing a valid session token. The phishing exploited the legitimate device‑code flow, requiring no credential disclosure but allowing attackers to hijack the session before detection. Teams should enforce stricter booking verification, monitor device‑code usage, and apply MFA to mitigate similar social‑engineering attacks.]]></description>
+      <pubDate>Fri, 13 Nov 2026 06:15:48 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/microsoft-teams-device-code-phishing/">Help Net Security</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Macfinger ClickFix Deploys DownTheDRAIN Infostealer on macOS</title>
+      <link>https://secubuzz.com/news/macfinger-clickfix-deploys-downthedrain-infosteale-d327fb1e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/macfinger-clickfix-deploys-downthedrain-infosteale-d327fb1e</guid>
+      <description><![CDATA[The Macfinger ClickFix campaign has distributed the DownTheDRAIN infostealer targeting macOS systems. DownTheDRAIN harvests credentials and sensitive data via keylogging and clipboard monitoring, though no ransomware payload is included. Security teams should deploy macOS endpoint protection, block known malicious domains, and monitor for credential exfiltration and implement strict application whitelisting to prevent execution of unknown binaries.]]></description>
+      <pubDate>Fri, 13 Nov 2026 03:41:41 GMT</pubDate>
+      <source url="https://isc.sans.edu/diary/rss/33518">SANS Internet Storm Center</source>
+      <category>General</category>
+    </item>
     <item>
       <title>FBI Seizes $1.2B Crypto Stolen from Binance</title>
       <link>https://secubuzz.com/news/fbi-seizes-1-2b-crypto-stolen-from-binance-7ab8f53b</link>
@@ -33,6 +51,24 @@
       <pubDate>Fri, 13 Nov 2026 02:08:31 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/critical-red-hat-quay-flaw-lets-attackers-read-and-over">CyberNews AI</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>US Seizes North Korean Hacking Tools and $1.2B Crypto</title>
+      <link>https://secubuzz.com/news/us-seizes-north-korean-hacking-tools-and-1-2b-cryp-0fbc0a01</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/us-seizes-north-korean-hacking-tools-and-1-2b-cryp-0fbc0a01</guid>
+      <description><![CDATA[US law enforcement seized North Korean hacking tools and $1.2B cryptocurrency. The seized assets include malware toolkits used for credential theft and lateral movement, indicating ongoing threat actor activity. The seizure disrupts the actors' operational capabilities; security teams should monitor for related tool signatures and update threat intelligence feeds to stay ahead.]]></description>
+      <pubDate>Fri, 13 Nov 2026 02:07:59 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/us-seizes-north-korean-hacking-infrastructure-1-2-billi">CyberNews AI</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Operation Endgame Seizes 235 Servers and 6M Logins</title>
+      <link>https://secubuzz.com/news/operation-endgame-seizes-235-servers-and-6m-logins-6ba94c3c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/operation-endgame-seizes-235-servers-and-6m-logins-6ba94c3c</guid>
+      <description><![CDATA[Operation Endgame seized 235 servers and 6 million stolen login credentials from a cybercriminal network. The seized servers hosted credential dumping tools and distributed phishing kits, indicating large-scale credential theft operations. Security teams should update credential monitoring, enforce multi-factor authentication, and to block known malicious IPs associated with the seized infrastructure.]]></description>
+      <pubDate>Fri, 13 Nov 2026 02:07:28 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/operation-endgame-malware-takedown-turns-up-over-6-mill">CyberNews AI</source>
+      <category>General</category>
     </item>
     <item>
       <title>Maersk Data Theft via Acquired System Flaw</title>
@@ -185,6 +221,15 @@
       <description><![CDATA[An update for xz is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
       <pubDate>Thu, 12 Nov 2026 22:40:12 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99915">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99865: Moderate: xorg-x11-server security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99865-moderate-xorg-x11-server-security-c1a992fe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99865-moderate-xorg-x11-server-security-c1a992fe</guid>
+      <description><![CDATA[An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 22:38:32 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99865">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -411,51 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 20:38:05 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99826">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases MySQL 8.4 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-mysql-8-4-security-update-50925d94</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-mysql-8-4-security-update-50925d94</guid>
-      <description><![CDATA[Red Hat has issued a security update for MySQL 8.4 on Enterprise Linux 10. The update addresses multiple critical vulnerabilities with an Important impact rating; CVSS base scores are listed in the referenced CVE links. Administrators should apply the patch promptly and review the CVE references for detailed severity information.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:37:55 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99720">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHC Security Update for RHEL 8.6 Available</title>
-      <link>https://secubuzz.com/news/rhc-security-update-for-rhel-8-6-available-90f40726</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhc-security-update-for-rhel-8-6-available-90f40726</guid>
-      <description><![CDATA[Red Hat released an important security update for the rhc client on RHEL 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the rhc update immediately to mitigate potential exploitation.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:34:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99827">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Issues libX11 Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libx11-security-update-c4881392</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libx11-security-update-c4881392</guid>
-      <description><![CDATA[Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial‑of‑service or privilege escalation risks.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:17:26 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99754">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Microsoft 365 Outage Hits Outlook, Teams, Copilot</title>
-      <link>https://secubuzz.com/news/microsoft-365-outage-hits-outlook-teams-copilot-b8aa62f3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-outage-hits-outlook-teams-copilot-b8aa62f3</guid>
-      <description><![CDATA[Microsoft is investigating a widespread outage that has disrupted Outlook, Microsoft Teams, and Copilot services for users worldwide. Preliminary diagnostics indicate a network routing issue within Microsoft’s global infrastructure, causing connectivity failures across multiple regions. Microsoft has deployed a temporary fix and is working to restore full functionality while monitoring for residual impact.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:15:16 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome 159 Promoted to Beta Channel</title>
-      <link>https://secubuzz.com/news/chrome-159-promoted-to-beta-channel-c2196938</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-159-promoted-to-beta-channel-c2196938</guid>
-      <description><![CDATA[Google Chrome promoted version 159 to the Beta channel for Windows, macOS, and Linux, expanding early access for developers and testers. The update includes under‑the‑hood performance and stability improvements alongside several new features, but no security vulnerabilities are reported. Users may switch channels via the Chrome settings or consult the Chromium blog for detailed change logs and bug‑reporting procedures.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:13:33 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0414360355.html">Google Chrome Releases</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

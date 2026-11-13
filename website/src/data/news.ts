@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "teams-meeting-scheduler-phishing-yields-valid-sess-c87b0296",
+    "title": "Teams Meeting Scheduler Phishing Yields Valid Session Token",
+    "summary": "Attackers used a fake Microsoft Teams meeting scheduler to trick a construction employee into approving a device‑code sign‑in, capturing a valid session token. The phishing exploited the legitimate device‑code flow, requiring no credential disclosure but allowing attackers to hijack the session before detection. Teams should enforce stricter booking verification, monitor device‑code usage, and apply MFA to mitigate similar social‑engineering attacks.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/microsoft-teams-device-code-phishing/",
+    "publishedAt": "2026-11-13T06:15:48.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "teams-meeting-scheduler-phishing-yields-valid-sess",
+      "article-c87b0296",
+      "c87b0296",
+      "teams-meeting-scheduler-phishing-yields-valid-sess-68fb07",
+      "teams-meeting-scheduler-phishing-yields-valid-session-token"
+    ]
+  },
+  {
+    "slug": "macfinger-clickfix-deploys-downthedrain-infosteale-d327fb1e",
+    "title": "Macfinger ClickFix Deploys DownTheDRAIN Infostealer on macOS",
+    "summary": "The Macfinger ClickFix campaign has distributed the DownTheDRAIN infostealer targeting macOS systems. DownTheDRAIN harvests credentials and sensitive data via keylogging and clipboard monitoring, though no ransomware payload is included. Security teams should deploy macOS endpoint protection, block known malicious domains, and monitor for credential exfiltration and implement strict application whitelisting to prevent execution of unknown binaries.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "SANS Internet Storm Center",
+    "sourceUrl": "https://isc.sans.edu/diary/rss/33518",
+    "publishedAt": "2026-11-13T03:41:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "macfinger-clickfix-deploys-downthedrain-infosteale",
+      "article-d327fb1e",
+      "d327fb1e",
+      "macfinger-clickfix-deploys-downthedrain-infosteale-57dd81",
+      "macfinger-clickfix-deploys-downthedrain-infostealer-on-macos"
+    ]
+  },
+  {
     "slug": "fbi-seizes-1-2b-crypto-stolen-from-binance-7ab8f53b",
     "title": "FBI Seizes $1.2B Crypto Stolen from Binance",
     "summary": "The FBI seized $1.2 billion in cryptocurrency stolen from Binance, linked to a North Korean social engineering scheme that also yielded $400 million. The operation uncovered a phishing and credential‑stealing campaign that compromised Binance accounts, enabling large fund transfers to illicit wallets.",
@@ -65,6 +103,43 @@ export const news: NewsBrief[] = [
       "article-6b3a025e",
       "6b3a025e",
       "red-hat-quay-unauth-image-access-cve-2026-123710-441b0f"
+    ]
+  },
+  {
+    "slug": "us-seizes-north-korean-hacking-tools-and-1-2b-cryp-0fbc0a01",
+    "title": "US Seizes North Korean Hacking Tools and $1.2B Crypto",
+    "summary": "US law enforcement seized North Korean hacking tools and $1.2B cryptocurrency. The seized assets include malware toolkits used for credential theft and lateral movement, indicating ongoing threat actor activity. The seizure disrupts the actors' operational capabilities; security teams should monitor for related tool signatures and update threat intelligence feeds to stay ahead.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/us-seizes-north-korean-hacking-infrastructure-1-2-billi",
+    "publishedAt": "2026-11-13T02:07:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-seizes-north-korean-hacking-tools-and-1-2b-cryp",
+      "article-0fbc0a01",
+      "0fbc0a01",
+      "us-seizes-north-korean-hacking-tools-and-1-2b-cryp-495370",
+      "us-seizes-north-korean-hacking-tools-and-1-2b-crypto"
+    ]
+  },
+  {
+    "slug": "operation-endgame-seizes-235-servers-and-6m-logins-6ba94c3c",
+    "title": "Operation Endgame Seizes 235 Servers and 6M Logins",
+    "summary": "Operation Endgame seized 235 servers and 6 million stolen login credentials from a cybercriminal network. The seized servers hosted credential dumping tools and distributed phishing kits, indicating large-scale credential theft operations. Security teams should update credential monitoring, enforce multi-factor authentication, and to block known malicious IPs associated with the seized infrastructure.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/operation-endgame-malware-takedown-turns-up-over-6-mill",
+    "publishedAt": "2026-11-13T02:07:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "operation-endgame-seizes-235-servers-and-6m-logins",
+      "article-6ba94c3c",
+      "6ba94c3c",
+      "operation-endgame-seizes-235-servers-and-6m-logins-7d2fab"
     ]
   },
   {
@@ -380,6 +455,25 @@ export const news: NewsBrief[] = [
       "article-346452a7",
       "346452a7",
       "rhsa-2026-99915-moderate-xz-security-update-37d662"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99865-moderate-xorg-x11-server-security-c1a992fe",
+    "title": "RHSA-2026:99865: Moderate: xorg-x11-server security update",
+    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99865",
+    "publishedAt": "2026-11-12T22:38:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99865-moderate-xorg-x11-server-security",
+      "article-c1a992fe",
+      "c1a992fe",
+      "rhsa-2026-99865-moderate-xorg-x11-server-security-37d665",
+      "rhsa-2026-99865-moderate-xorg-x11-server-security-update"
     ]
   },
   {
@@ -884,6 +978,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99824-important-rhc-security-update-49927037",
+    "title": "RHSA-2026:99824: Important: rhc security update",
+    "summary": "An update for rhc is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99824",
+    "publishedAt": "2026-11-12T20:28:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99824-important-rhc-security-update",
+      "article-49927037",
+      "49927037",
+      "rhsa-2026-99824-important-rhc-security-update-37d665"
+    ]
+  },
+  {
     "slug": "red-hat-issues-libx11-security-update-c4881392",
     "title": "Red Hat Issues libX11 Security Update",
     "summary": "Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial‑of‑service or privilege escalation risks.",
@@ -1181,6 +1293,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "homeview-releases-version-27-2-with-bug-fixes-2a11ae0d",
+    "title": "HomeView Releases Version 27.2 with Bug Fixes",
+    "summary": "HomeView Software version 27.2 (24V526) was released, offering updated functionality and bug fixes. The update addresses minor stability issues and enhances compatibility with newer operating system versions. Users should download the new build from the vendor portal and apply it to maintain optimal performance and verify integrity before deployment and confirm checksum integrity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Apple Security Updates",
+    "sourceUrl": "https://developer.apple.com/news/releases/?id=11122026a",
+    "publishedAt": "2026-11-12T18:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "homeview-releases-version-27-2-with-bug-fixes",
+      "article-2a11ae0d",
+      "2a11ae0d",
+      "homeview-releases-version-27-2-with-bug-fixes-6610eb"
+    ]
+  },
+  {
     "slug": "google-chrome-releases-ios-stable-158-update-b4ec3c00",
     "title": "Google Chrome Releases iOS Stable 158 Update",
     "summary": "Google Chrome releases Stable 158 (158.0.8127.35) for iOS, adding stability and performance improvements. The update will be available on the App Store within hours, with changes documented in the Git log. Users encountering new issues should file bugs through the Chrome Release Team channels to aid future patches and improve stability.",
@@ -1363,6 +1493,42 @@ export const news: NewsBrief[] = [
       "58ee2d20",
       "europol-seizes-235-servers-257-domains-of-gootload-2f82bf",
       "europol-seizes-235-servers-257-domains-of-gootloader-castler"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99661-important-xfsprogs-security-update-f932da94",
+    "title": "RHSA-2026:99661: Important: xfsprogs security update",
+    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99661",
+    "publishedAt": "2026-11-12T16:57:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99661-important-xfsprogs-security-update",
+      "article-f932da94",
+      "f932da94",
+      "rhsa-2026-99661-important-xfsprogs-security-update-37d66c"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99690-important-libpcap-security-update-55be5499",
+    "title": "RHSA-2026:99690: Important: libpcap security update",
+    "summary": "An update for libpcap is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99690",
+    "publishedAt": "2026-11-12T16:56:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99690-important-libpcap-security-update",
+      "article-55be5499",
+      "55be5499",
+      "rhsa-2026-99690-important-libpcap-security-update-37d66c"
     ]
   },
   {
@@ -5173,6 +5339,47 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "asp-net-core-security-feature-bypass-cve-2026-1141-0d270cd7",
+    "title": "ASP.NET Core Security Feature Bypass CVE-2026-114157",
+    "summary": "CVE-2026-114157 is a security feature bypass affecting Microsoft ASP.NET Core, enabling attackers to circumvent built‑in controls. The flaw stems from improper validation of security update links; no active exploitation has been observed, and the issue is informational only. Microsoft has released an informational update; administrators should verify update link handling but no patch is required.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114157",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114157"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-security-feature-bypass-cve-2026-1141",
+      "article-0d270cd7",
+      "0d270cd7",
+      "asp-net-core-security-feature-bypass-cve-2026-1141-1feaf4",
+      "asp-net-core-security-feature-bypass-cve-2026-114157"
+    ]
+  },
+  {
+    "slug": "aspire-elevation-of-privilege-cve-2026-120006-c6630772",
+    "title": "Aspire Elevation of Privilege CVE-2026-120006",
+    "summary": "CVE-2026-120006 is an elevation of privilege flaw in Microsoft Aspire, allowing attackers to gain higher privileges within the application. The vulnerability arises from insufficient access control checks; no active exploitation has been reported, and the update is informational only. Microsoft has issued an informational notice; administrators should review privilege assignments but no patch is required.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120006",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-120006"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aspire-elevation-of-privilege-cve-2026-120006",
+      "article-c6630772",
+      "c6630772",
+      "aspire-elevation-of-privilege-cve-2026-120006-1fdeb3"
     ]
   },
   {
@@ -9343,228 +9550,6 @@ export const news: NewsBrief[] = [
       "633a9a94",
       "microsoft-issues-windows-10-kb5131096-security-upd-61db97",
       "microsoft-issues-windows-10-kb5131096-security-update"
-    ]
-  },
-  {
-    "slug": "chrome-stable-158-released-for-ios-084ea697",
-    "title": "Chrome Stable 158 Released for iOS",
-    "summary": "Google released Chrome Stable 158 (158.0.8127.32) for iOS, adding stability and performance improvements. The update does not introduce new security features but addresses minor bugs identified in the previous release. Users can download the update from the App Store within hours of release to maintain current browser functionality and security patches.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Google Chrome Releases",
-    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_01666689214.html",
-    "publishedAt": "2026-11-10T19:58:32.576Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chrome-stable-158-released-for-ios",
-      "article-084ea697",
-      "084ea697",
-      "chrome-stable-158-released-for-ios-53b171"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97242-moderate-bind-security-bug-fix-and-3977eb8f",
-    "title": "RHSA-2026:97242: Moderate: bind security, bug fix, and enhancement update",
-    "summary": "An update for bind is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97242",
-    "publishedAt": "2026-11-10T19:53:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97242-moderate-bind-security-bug-fix-and",
-      "article-3977eb8f",
-      "3977eb8f",
-      "rhsa-2026-97242-moderate-bind-security-bug-fix-and-37d764",
-      "rhsa-2026-97242-moderate-bind-security-bug-fix-and-enhanceme"
-    ]
-  },
-  {
-    "slug": "usn-9037-1-hplip-vulnerabilities-41bb06eb",
-    "title": "USN-9037-1: HPLIP vulnerabilities",
-    "summary": "An attacker could possibly use this issue to cause a denial of service, expose sensitive information or execute arbitrary code. (CVE-2026-91097) It was discovered that HPLIP did not properly handle certain input, which could result in a heap-based buffer overflow. This issue only affected Ubuntu 16.04 LTS and Ubuntu 18.04 LTS. (CVE-2026-91100) It was discovered that HPLIP did not properly validate certain array indices.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9037-1",
-    "publishedAt": "2026-11-10T19:50:31.000Z",
-    "cves": [
-      "CVE-2026-91097",
-      "CVE-2026-91100",
-      "CVE-2026-91098",
-      "CVE-2026-91099",
-      "CVE-2026-91101",
-      "CVE-2026-91102",
-      "CVE-2026-91103",
-      "CVE-2026-91104",
-      "CVE-2026-91105",
-      "CVE-2026-91106"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "usn-9037-1-hplip-vulnerabilities",
-      "article-41bb06eb",
-      "41bb06eb",
-      "usn-9037-1-hplip-vulnerabilities-7e8844"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97539-important-cockpit-machines-securit-71aae787",
-    "title": "RHSA-2026:97539: Important: cockpit-machines security update",
-    "summary": "An update for cockpit-machines is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97539",
-    "publishedAt": "2026-11-10T19:38:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97539-important-cockpit-machines-securit",
-      "article-71aae787",
-      "71aae787",
-      "rhsa-2026-97539-important-cockpit-machines-securit-37d759",
-      "rhsa-2026-97539-important-cockpit-machines-security-update"
-    ]
-  },
-  {
-    "slug": "hackers-exploit-trusted-aws-access-to-breach-multi-e6dd6ee2",
-    "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
-    "summary": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
-    "publishedAt": "2026-11-10T19:31:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-exploit-trusted-aws-access-to-breach-multi",
-      "article-e6dd6ee2",
-      "e6dd6ee2",
-      "hackers-exploit-trusted-aws-access-to-breach-multi-5a38b4",
-      "hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-"
-    ]
-  },
-  {
-    "slug": "git-patches-flaw-that-lets-malicious-repositories-6737e8b6",
-    "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
-    "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The flaw, tracked as CVE-2026-111760, is an integer truncation in how Git handles its index.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
-    "publishedAt": "2026-11-10T19:23:10.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "git-patches-flaw-that-lets-malicious-repositories",
-      "article-6737e8b6",
-      "6737e8b6",
-      "git-patches-flaw-that-lets-malicious-repositories-463519",
-      "git-patches-flaw-that-lets-malicious-repositories-execute-co"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97163-moderate-mingw-glib2-security-bug-5bb12a17",
-    "title": "RHSA-2026:97163: Moderate: mingw-glib2 security, bug fix, and enhancement update",
-    "summary": "An update for mingw-glib2 is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97163",
-    "publishedAt": "2026-11-10T19:22:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97163-moderate-mingw-glib2-security-bug",
-      "article-5bb12a17",
-      "5bb12a17",
-      "rhsa-2026-97163-moderate-mingw-glib2-security-bug-37d768",
-      "rhsa-2026-97163-moderate-mingw-glib2-security-bug-fix-and-en"
-    ]
-  },
-  {
-    "slug": "microsoft-aware-of-exploited-outlook-zero-day-cve-a19a1a02",
-    "title": "Microsoft Aware of Exploited Outlook Zero-Day CVE-2026-124194",
-    "summary": "Microsoft reports active exploitation of Outlook zero‑day CVE‑2026‑124194, found among 1,094 vulnerabilities patched in its November 2026 update. The flaw allows unauthenticated remote code execution via malformed email attachments, scoring CVSS 10.0 and enabling arbitrary code on affected systems. Microsoft released a patch in the November 2026 Rollup; administrators should apply it immediately and monitor mail traffic for anomalous attachments.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
-    "publishedAt": "2026-11-10T19:19:46.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-aware-of-exploited-outlook-zero-day-cve",
-      "article-a19a1a02",
-      "a19a1a02",
-      "microsoft-aware-of-exploited-outlook-zero-day-cve-6d45f8",
-      "microsoft-aware-of-exploited-outlook-zero-day-cve-2026-12419"
-    ]
-  },
-  {
-    "slug": "sglang-rce-breaches-near-ai-steals-data-3d91e339",
-    "title": "SGLang RCE Breaches NEAR AI, Steals Data",
-    "summary": "An attacker exploited a remote code execution flaw in SGLang, running arbitrary code on a NEAR AI inference server. The breach exposed data from 18 agents and about 100 users, including confidential requests processed in a trusted execution environment. NEAR AI applied a patch to SGLang and recommends updating to the latest version while monitoring logs for anomalous activity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-    "publishedAt": "2026-11-10T19:19:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sglang-rce-breaches-near-ai-steals-data",
-      "article-3d91e339",
-      "3d91e339",
-      "sglang-rce-breaches-near-ai-steals-data-5165c4"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97213-important-grafana-pcp-security-bug-a9e4f067",
-    "title": "RHSA-2026:97213: Important: grafana-pcp security, bug fix, and enhancement update",
-    "summary": "An update for grafana-pcp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97213",
-    "publishedAt": "2026-11-10T19:10:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97213-important-grafana-pcp-security-bug",
-      "article-a9e4f067",
-      "a9e4f067",
-      "rhsa-2026-97213-important-grafana-pcp-security-bug-37d765",
-      "rhsa-2026-97213-important-grafana-pcp-security-bug-fix-and-e"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-tuesday-november-2027-tue-nov-10th-1bbc566e",
-    "title": "Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)",
-    "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge. One of the patched flaws, Outlook spoofing vulnerability CVE-2026-124194, is already under active exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SANS Internet Storm Center",
-    "sourceUrl": "https://isc.sans.edu/diary/rss/33508",
-    "publishedAt": "2026-11-10T19:09:32.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patch-tuesday-november-2027-tue-nov-10th",
-      "article-1bbc566e",
-      "1bbc566e",
-      "microsoft-patch-tuesday-november-2027-tue-nov-10th-57dd81"
     ]
   }
 ];
