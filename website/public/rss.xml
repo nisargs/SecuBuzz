@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 02:01:12 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 02:09:26 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Red Hat Satellite 6.17.13 receives critical async update</title>
@@ -233,6 +233,24 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>USN-9085-1: Ruby OpenID vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9085-1-ruby-openid-vulnerability-529ecadc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9085-1-ruby-openid-vulnerability-529ecadc</guid>
+      <description><![CDATA[It was discovered that Ruby OpenID sent a request to the claimed identifier URL before verifying the signature of an OpenID response. A remote attacker could possibly use this issue to perform server-side request forgery attacks.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:54:47 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9085-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-9084-1: Radicale vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9084-1-radicale-vulnerability-f879e9e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9084-1-radicale-vulnerability-f879e9e3</guid>
+      <description><![CDATA[It was discovered that Radicale did not delay failed authentication attempts when using htpasswd authentication. A remote attacker could possibly use this issue to obtain user passwords through timing or brute-force attacks.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:54:41 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9084-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Gevent server flaw enables HTTP request smuggling</title>
       <link>https://secubuzz.com/news/gevent-server-flaw-enables-http-request-smuggling-12ae9695</link>
       <guid isPermaLink="true">https://secubuzz.com/news/gevent-server-flaw-enables-http-request-smuggling-12ae9695</guid>
@@ -248,6 +266,24 @@
       <description><![CDATA[Perl-CGI on Red Hat Enterprise Linux 8 is affected by a security flaw prompting an update. Red Hat Product Security rated the issue as Important, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators should install it promptly today to eliminate the vulnerability.]]></description>
       <pubDate>Thu, 12 Nov 2026 20:49:56 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99849">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99845: Important: pki-deps:10.6 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99845-important-pki-deps-10-6-security-b-888e82ef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99845-important-pki-deps-10-6-security-b-888e82ef</guid>
+      <description><![CDATA[An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:45:52 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99845">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99716: Important: krb5 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99716-important-krb5-security-bug-fix-an-11f78917</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99716-important-krb5-security-bug-fix-an-11f78917</guid>
+      <description><![CDATA[An update for krb5 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:43:10 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99716">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
     </item>
     <item>
@@ -420,42 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 17:47:05 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99725">Red Hat Security Advisories</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99630: Important: kernel security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622</guid>
-      <description><![CDATA[An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 17:29:35 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99630">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Cisco BroadWorks XML External Entity Vulnerability</title>
-      <link>https://secubuzz.com/news/cisco-broadworks-xml-external-entity-vulnerability-d5db2d32</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisco-broadworks-xml-external-entity-vulnerability-d5db2d32</guid>
-      <description><![CDATA[Cisco BroadWorks' Open Client Interface XML parser is vulnerable to blind XML external entity injection, letting unauthenticated remote attackers read sensitive configuration files. The flaw stems from default external entity resolution, allowing crafted XML messages to the OCI-P service to expose filesystem data with BroadWorks user privileges. Cisco released patches; no workarounds exist, so administrators must apply updates immediately.]]></description>
-      <pubDate>Thu, 12 Nov 2026 17:25:12 GMT</pubDate>
-      <source url="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-bworks-xxe-uwUd7CEt?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+BroadWorks+Out-of-Band+Blind+XML+External+Entity+Injection+Vulnerability%26vs_k%3D1">Cisco PSIRT</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99660: Important: xfsprogs security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99660-important-xfsprogs-security-update-1d7bc380</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99660-important-xfsprogs-security-update-1d7bc380</guid>
-      <description><![CDATA[An update for xfsprogs is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 17:18:49 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99660">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Poisoned AI Training Enables Remote Code Execution</title>
-      <link>https://secubuzz.com/news/poisoned-ai-training-enables-remote-code-execution-5f5a52ca</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/poisoned-ai-training-enables-remote-code-execution-5f5a52ca</guid>
-      <description><![CDATA[Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply‑chain controls, and monitor agent behavior for anomalous execution.]]></description>
-      <pubDate>Thu, 12 Nov 2026 17:00:00 GMT</pubDate>
-      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/">Microsoft Security</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

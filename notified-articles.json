@@ -4720,5 +4720,10 @@
   "https://ubuntu.com/security/notices/USN-9087-1",
   "https://ubuntu.com/security/notices/USN-9086-1",
   "https://access.redhat.com/errata/RHSA-2026:99632",
-  "https://access.redhat.com/errata/RHSA-2026:99696"
+  "https://access.redhat.com/errata/RHSA-2026:99696",
+  "https://ubuntu.com/security/notices/USN-9085-1",
+  "https://ubuntu.com/security/notices/USN-9084-1",
+  "https://access.redhat.com/errata/RHSA-2026:99845",
+  "https://access.redhat.com/errata/RHSA-2026:99716",
+  "https://access.redhat.com/errata/RHSA-2026:99698"
 ]

@@ -479,6 +479,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9085-1-ruby-openid-vulnerability-529ecadc",
+    "title": "USN-9085-1: Ruby OpenID vulnerability",
+    "summary": "It was discovered that Ruby OpenID sent a request to the claimed identifier URL before verifying the signature of an OpenID response. A remote attacker could possibly use this issue to perform server-side request forgery attacks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9085-1",
+    "publishedAt": "2026-11-12T20:54:47.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9085-1-ruby-openid-vulnerability",
+      "article-529ecadc",
+      "529ecadc",
+      "usn-9085-1-ruby-openid-vulnerability-7e8605"
+    ]
+  },
+  {
+    "slug": "usn-9084-1-radicale-vulnerability-f879e9e3",
+    "title": "USN-9084-1: Radicale vulnerability",
+    "summary": "It was discovered that Radicale did not delay failed authentication attempts when using htpasswd authentication. A remote attacker could possibly use this issue to obtain user passwords through timing or brute-force attacks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9084-1",
+    "publishedAt": "2026-11-12T20:54:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9084-1-radicale-vulnerability",
+      "article-f879e9e3",
+      "f879e9e3",
+      "usn-9084-1-radicale-vulnerability-7e8609"
+    ]
+  },
+  {
     "slug": "gevent-server-flaw-enables-http-request-smuggling-12ae9695",
     "title": "Gevent server flaw enables HTTP request smuggling",
     "summary": "The gevent WSGI server fails to validate chunked transfer encoding trailers, enabling remote attackers to smuggle HTTP requests and potentially elevate privileges. Request smuggling can bypass security controls, leading to unauthorized data access or command execution. Upgrade to the latest gevent version or apply the vendor’s patch, and enforce strict trailer validation.",
@@ -512,6 +548,44 @@ export const news: NewsBrief[] = [
       "article-f16d5a95",
       "f16d5a95",
       "red-hat-releases-perl-cgi-security-update-37d665"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99845-important-pki-deps-10-6-security-b-888e82ef",
+    "title": "RHSA-2026:99845: Important: pki-deps:10.6 security, bug fix, and enhancement update",
+    "summary": "An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99845",
+    "publishedAt": "2026-11-12T20:45:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99845-important-pki-deps-10-6-security-b",
+      "article-888e82ef",
+      "888e82ef",
+      "rhsa-2026-99845-important-pki-deps-10-6-security-b-37d665",
+      "rhsa-2026-99845-important-pki-deps-10-6-security-bug-fix-and"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99716-important-krb5-security-bug-fix-an-11f78917",
+    "title": "RHSA-2026:99716: Important: krb5 security, bug fix, and enhancement update",
+    "summary": "An update for krb5 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99716",
+    "publishedAt": "2026-11-12T20:43:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99716-important-krb5-security-bug-fix-an",
+      "article-11f78917",
+      "11f78917",
+      "rhsa-2026-99716-important-krb5-security-bug-fix-an-37d669",
+      "rhsa-2026-99716-important-krb5-security-bug-fix-and-enhancem"
     ]
   },
   {
@@ -1055,6 +1129,25 @@ export const news: NewsBrief[] = [
       "6e7a742b",
       "european-authorities-take-down-steaic-malware-serv-4df0a2",
       "european-authorities-take-down-steaic-malware-servers-for-se"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99698-important-glib-networking-security-d12b3f3d",
+    "title": "RHSA-2026:99698: Important: glib-networking security update",
+    "summary": "An update for glib-networking is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99698",
+    "publishedAt": "2026-11-12T16:15:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99698-important-glib-networking-security",
+      "article-d12b3f3d",
+      "d12b3f3d",
+      "rhsa-2026-99698-important-glib-networking-security-37d66c",
+      "rhsa-2026-99698-important-glib-networking-security-update"
     ]
   },
   {
@@ -9414,99 +9507,6 @@ export const news: NewsBrief[] = [
       "18ff9260",
       "rhsa-2026-97521-important-microcode-ctl-security-b-37d759",
       "rhsa-2026-97521-important-microcode-ctl-security-bug-fix-and"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97193-important-cockpit-podman-security-edb68059",
-    "title": "RHSA-2026:97193: Important: cockpit-podman security update",
-    "summary": "An update for cockpit-podman is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97193",
-    "publishedAt": "2026-11-10T17:53:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97193-important-cockpit-podman-security",
-      "article-edb68059",
-      "edb68059",
-      "rhsa-2026-97193-important-cockpit-podman-security-37d767",
-      "rhsa-2026-97193-important-cockpit-podman-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97463-moderate-polkit-security-update-3aaf68fe",
-    "title": "RHSA-2026:97463: Moderate: polkit security update",
-    "summary": "An update for polkit is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97463",
-    "publishedAt": "2026-11-10T17:52:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97463-moderate-polkit-security-update",
-      "article-3aaf68fe",
-      "3aaf68fe",
-      "rhsa-2026-97463-moderate-polkit-security-update-37d75c"
-    ]
-  },
-  {
-    "slug": "china-nexus-espionage-campaigns-linked-via-sparrow-823b4648",
-    "title": "China-Nexus Espionage Campaigns Linked via Sparrow Malware",
-    "summary": "Three distinct threat clusters sharing infrastructure and malware code similarities have targeted telecommunications providers, government entities, military organizations, and critical infrastructure across Latin America, Asia, and Europe over the past year. Check Point Research tracks these clusters under names SilentDelivery and related designations.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
-    "publishedAt": "2026-11-10T17:43:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "china-nexus-espionage-campaigns-linked-via-sparrow",
-      "article-823b4648",
-      "823b4648",
-      "china-nexus-espionage-campaigns-linked-via-sparrow-21b668",
-      "china-nexus-espionage-campaigns-linked-via-sparrow-malware"
-    ]
-  },
-  {
-    "slug": "hackers-can-exploit-sap-proxygate-and-icm2shell-fl-d2792acf",
-    "title": "Hackers Can Exploit SAP PROXYGATE and ICM2SHELL Flaws for Unauthorized Full System Access",
-    "summary": "SAP has released fixes for PROXYGATE and ICM2SHELL, critical security flaws that could let attackers take control of SAP systems without signing in. Disclosed during the November 10, 2026, Security Patch Day, the vulnerabilities carry maximum CVSS scores of 10.0 and affect core components used across business applications.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/sap-proxygate-and-icm2shell-flaws/",
-    "publishedAt": "2026-11-10T17:32:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-can-exploit-sap-proxygate-and-icm2shell-fl",
-      "article-d2792acf",
-      "d2792acf",
-      "hackers-can-exploit-sap-proxygate-and-icm2shell-fl-6a70af",
-      "hackers-can-exploit-sap-proxygate-and-icm2shell-flaws-for-un"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97456-moderate-krb5-security-update-142bdc41",
-    "title": "RHSA-2026:97456: Moderate: krb5 security update",
-    "summary": "An update for krb5 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97456",
-    "publishedAt": "2026-11-10T17:31:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97456-moderate-krb5-security-update",
-      "article-142bdc41",
-      "142bdc41",
-      "rhsa-2026-97456-moderate-krb5-security-update-37d75d"
     ]
   }
 ];
