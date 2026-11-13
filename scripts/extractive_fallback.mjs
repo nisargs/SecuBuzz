@@ -84,6 +84,9 @@ export function cleanHtml(raw) {
     .replace(/&#xd;/gi, ' ')
     .replace(/&#10;/gi, ' ');
 
+  // Step 2.5: Delimit HTML block-level elements with periods to preserve natural sentence breaks
+  text = text.replace(/<\/(?:p|div|li|tr|h[1-6]|dd|dt|blockquote|section|article)>\s*|<br\s*\/?>\s*/gi, '. ');
+
   // Step 3: Strip scripts, styles, and HTML tags
   text = text
     .replace(/<style[\s\S]*?<\/style>/gi, '')
@@ -97,6 +100,9 @@ export function cleanHtml(raw) {
     .replace(/Copyright \d{4}.*$/gi, '')
     .replace(/\s+/g, ' ')
     .trim();
+
+  // Step 3.5: Delimit raw advisory section transitions running together without punctuation
+  text = text.replace(/(?:Background|Vulnerabilities|Executive Summary|Description|Overview|Remediation|Mitigations)\s*(?:CVE-\d{4}-\d+\s*)?(?=[A-Z])/g, '. ');
 
   // Step 4: Clean continuation brackets anywhere in text (e.g. "[...]" or "[…]" or "(...)")
   text = text.replace(/[\[\(](?:\.\.\.|…|\s)+[\]\)]/g, '');
@@ -233,6 +239,15 @@ export function isTabularData(text) {
     return true;
   }
 
+  // Check 5: Machine version strings or repetitive path/slash tables (e.g. "vers:all/*", "vers:intdot/", "cpe:2.3:")
+  if (/vers:(?:all|\*|intdot)/i.test(text) || /cpe:2\.3:/i.test(text)) {
+    return true;
+  }
+  const slashes = (text.match(/\//g) || []).length;
+  if (slashes >= 4 && words.length > 0 && slashes / words.length > 0.05) {
+    return true;
+  }
+
   return false;
 }
 
@@ -341,6 +356,14 @@ export function validateExtractiveBrief(title, brief, sentences, fullSourceText)
     return {
       isValid: false,
       reason: `REJECTED_TOO_SHORT: Only ${wordCount} words extracted (minimum 28 required).`,
+    };
+  }
+
+  // Condition 1b: Word count ceiling (clean 65-word maximum)
+  if (wordCount > 65) {
+    return {
+      isValid: false,
+      reason: `REJECTED_TOO_LONG: ${wordCount} words extracted (maximum 65 permitted).`,
     };
   }
 
@@ -572,8 +595,11 @@ export function extractFallbackBrief(title, rawDescription, sourceUrl = '', rawC
   for (const cand of sortedByScore) {
     if (selectedCandidates.length >= 3) break;
 
-    // Always take first sentence to make progress
+    // First sentence: only take if it stays within ceiling (<= 65 words)
     if (selectedCandidates.length === 0) {
+      if (cand.words > 65) {
+        continue;
+      }
       selectedCandidates.push(cand);
       currentWords += cand.words;
       continue;
@@ -589,6 +615,16 @@ export function extractFallbackBrief(title, rawDescription, sourceUrl = '', rawC
       currentWords += cand.words;
       if (currentWords >= 65) break;
     }
+  }
+
+  if (selectedCandidates.length === 0) {
+    return {
+      status: 'REJECTED',
+      reason: 'REJECTED_TOO_LONG: Candidate sentences exceed maximum 65-word threshold.',
+      sourceUrl,
+      headline: cleanTitle,
+      raw: cleanDesc,
+    };
   }
 
   // 3. Strictly preserve original document order of selected sentences
