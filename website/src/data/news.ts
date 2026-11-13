@@ -1814,13 +1814,15 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-industrial-edge-management-11a6dfe0",
     "title": "Siemens Industrial Edge Management",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. The flaw is tracked as CVE-2026-111497.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
     "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [],
+    "cves": [
+      "CVE-2026-111497"
+    ],
     "additionalSources": [],
     "aliases": [
       "siemens-industrial-edge-management",
@@ -1832,13 +1834,15 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-desigo-gridscale-6a76e33a",
     "title": "Siemens Desigo, Gridscale",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. The flaw is tracked as CVE-2026-111497.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
     "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [],
+    "cves": [
+      "CVE-2026-111497"
+    ],
     "additionalSources": [],
     "aliases": [
       "siemens-desigo-gridscale",
@@ -1850,13 +1854,15 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-ruggedcom-ape1808-37c64b1f",
     "title": "Siemens RUGGEDCOM APE1808",
-    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. The flaw is tracked as CVE-2026-111497.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
     "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [],
+    "cves": [
+      "CVE-2026-111497"
+    ],
     "additionalSources": [],
     "aliases": [
       "siemens-ruggedcom-ape1808",

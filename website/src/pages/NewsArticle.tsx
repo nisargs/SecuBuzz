@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeftIcon, ArrowUpRightIcon, CopyIcon, CheckIcon, Share2Icon } from 'lucide-react';
+import { ArrowLeftIcon, ArrowUpRightIcon, CopyIcon, CheckIcon, Share2Icon, Bookmark } from 'lucide-react';
+import { useMyStack } from '../data/useMyStack';
 import { useLiveNews } from '../data/useLiveNews';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { SeverityBadge } from '../components/SeverityBadge';
@@ -19,6 +20,7 @@ export function NewsArticle() {
   const [copiedSlack, setCopiedSlack] = useState(false);
   const { news, loading } = useLiveNews();
   const { advisories } = useLiveAdvisories();
+  const myStack = useMyStack();
   const [archivedBrief, setArchivedBrief] = useState<any | null>(null);
   const [archiveLoading, setArchiveLoading] = useState(false);
 
@@ -218,6 +220,49 @@ export function NewsArticle() {
             <p className="mt-8 text-xl leading-relaxed text-ink/90 md:text-[22px]">{brief.summary}</p>
             <p className="mt-4 font-mono text-xs text-subtle">{wordCount(brief.summary)} words</p>
 
+            {/* CVE Watchlist & Tracking Chips */}
+            {brief.cves && brief.cves.length > 0 && (
+              <div className="mt-6 flex flex-wrap items-center gap-2">
+                <span className="text-xs font-semibold uppercase tracking-wider text-subtle">CVE Watchlist:</span>
+                {brief.cves.map((cve: string) => {
+                  const isPinned = myStack.isWatchingCve(cve);
+                  return (
+                    <div
+                      key={cve}
+                      className={`inline-flex items-center rounded border font-mono text-xs transition-colors duration-150 ${
+                        isPinned
+                          ? 'border-accent bg-accent/10 text-accent'
+                          : 'border-line text-muted hover:border-accent/60'
+                      }`}
+                    >
+                      <Link
+                        to={`/advisories/${cve.toLowerCase()}`}
+                        className="px-2.5 py-1 hover:text-ink transition-colors font-medium"
+                      >
+                        {cve}
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          myStack.toggleWatchCve(cve);
+                        }}
+                        title={isPinned ? `Remove ${cve} from Watchlist` : `Pin ${cve} to Watchlist`}
+                        className={`px-2 py-1 border-l border-inherit transition-colors ${
+                          isPinned
+                            ? 'text-accent hover:text-critical'
+                            : 'text-subtle hover:text-accent'
+                        }`}
+                      >
+                        <Bookmark className={`h-3.5 w-3.5 ${isPinned ? 'fill-accent' : ''}`} />
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
             {/* Share bar */}
             <div className="mt-8 flex flex-wrap items-center gap-3 border-y border-line py-3.5 text-xs text-muted">
               <span className="inline-flex items-center gap-1.5 font-medium text-ink">
@@ -351,7 +396,44 @@ export function NewsArticle() {
             {brief.cves.length > 0 && linked.length === 0 && (
               <section>
                 <h2 className="text-sm font-semibold text-ink">Referenced CVEs</h2>
-                <p className="mt-2 font-mono text-sm text-muted">{brief.cves.join(', ')}</p>
+                <div className="mt-2.5 flex flex-wrap gap-2">
+                  {brief.cves.map((cve: string) => {
+                    const isPinned = myStack.isWatchingCve(cve);
+                    return (
+                      <div
+                        key={cve}
+                        className={`inline-flex items-center rounded border font-mono text-xs transition-colors duration-150 ${
+                          isPinned
+                            ? 'border-accent bg-accent/10 text-accent'
+                            : 'border-line text-muted hover:border-accent/60'
+                        }`}
+                      >
+                        <Link
+                          to={`/advisories/${cve.toLowerCase()}`}
+                          className="px-2 py-1 hover:text-ink transition-colors font-medium"
+                        >
+                          {cve}
+                        </Link>
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            myStack.toggleWatchCve(cve);
+                          }}
+                          title={isPinned ? `Remove ${cve} from Watchlist` : `Pin ${cve} to Watchlist`}
+                          className={`px-1.5 py-1 border-l border-inherit transition-colors ${
+                            isPinned
+                              ? 'text-accent hover:text-critical'
+                              : 'text-subtle hover:text-accent'
+                          }`}
+                        >
+                          <Bookmark className={`h-3 w-3 ${isPinned ? 'fill-accent' : ''}`} />
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
               </section>
             )}
             {related.length > 0 && (

@@ -270,6 +270,12 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
           summary = goodSentences.join(' ').trim();
         }
       }
+
+      // Preserve explicit CVE tracking in prose if stripped from tabular header
+      const originalCveMatch = (art.summary || '').match(/\bCVE-\d{4}-\d{4,7}\b/i);
+      if (originalCveMatch && !summary.includes(originalCveMatch[0])) {
+        summary = `${summary.replace(/[.\s]+$/, '')}. The flaw is tracked as ${originalCveMatch[0].toUpperCase()}.`;
+      }
     }
 
     summary = normalizeCveHyphens(summary);
