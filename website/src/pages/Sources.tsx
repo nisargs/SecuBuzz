@@ -6,6 +6,7 @@ import { Seo } from '../components/Seo';
 import {
   SOURCE_GROUPS,
   THREAT_FEEDS_COUNT,
+  OUTAGE_FEEDS_COUNT,
   TOTAL_SOURCES_COUNT,
 } from '../data/sources';
 
@@ -13,15 +14,15 @@ export function Sources() {
   return (
     <>
       <Seo
-        title="Monitored Sources & Vendor PSIRT Directory · SecuBuzz"
-        description={`Explore the ${THREAT_FEEDS_COUNT} authoritative security newsrooms, vendor PSIRTs, supply chain monitors, and vulnerability databases indexed by SecuBuzz.`}
+        title="Monitored Sources, Outage Feeds & Vendor PSIRT Directory · SecuBuzz"
+        description={`Explore the directory of ${THREAT_FEEDS_COUNT} authoritative security newsrooms, ${OUTAGE_FEEDS_COUNT} live vendor infrastructure outage radars, and 3 vulnerability databases indexed by SecuBuzz.`}
         canonicalPath="/sources"
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'SecuBuzz Monitored Threat Intelligence Sources',
           url: 'https://secubuzz.com/sources',
-          description: `Directory of ${THREAT_FEEDS_COUNT} curated cybersecurity feeds, vendor PSIRTs, and advisory databases indexed hourly by SecuBuzz.`,
+          description: `Directory of ${THREAT_FEEDS_COUNT} curated cybersecurity feeds, ${OUTAGE_FEEDS_COUNT} vendor infrastructure outage feeds, and advisory databases indexed by SecuBuzz.`,
           publisher: {
             '@type': 'Organization',
             name: 'MiSo Labs',
@@ -32,7 +33,7 @@ export function Sources() {
 
       <PageIntro
         title="Sources & Threat Intelligence Directory"
-        description={`SecuBuzz indexes ${THREAT_FEEDS_COUNT} independent newsrooms, official vendor PSIRTs, and threat research organizations alongside 3 authoritative vulnerability databases. Every brief is distilled into 60 objective words with direct links to primary reporting.`}
+        description={`SecuBuzz indexes ${THREAT_FEEDS_COUNT} independent newsrooms, official vendor PSIRTs, and threat research organizations alongside ${OUTAGE_FEEDS_COUNT} live enterprise infrastructure outage feeds and 3 authoritative vulnerability databases. Every brief is distilled into 60 objective words with direct links to primary reporting.`}
       >
         <div className="mt-8 flex flex-wrap gap-2.5 pt-2">
           {SOURCE_GROUPS.map((g) => (
@@ -95,7 +96,12 @@ export function Sources() {
                     </p>
 
                     <div className="flex items-center justify-start md:justify-end">
-                      {item.cadence ? (
+                      {item.category === 'vendor-outages' ? (
+                        <span className="inline-flex items-center gap-1.5 rounded border border-line/60 bg-raised px-2 py-0.5 font-mono text-[11px] text-muted">
+                          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                          <span>{item.cadence || '5m edge poll'}</span>
+                        </span>
+                      ) : item.cadence ? (
                         <span className="rounded border border-line/60 bg-raised px-2 py-0.5 font-mono text-[11px] text-muted">
                           {item.cadence}
                         </span>

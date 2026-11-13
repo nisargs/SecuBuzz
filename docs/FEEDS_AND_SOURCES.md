@@ -2,7 +2,7 @@
 
 This document provides the authoritative, single source of truth for all active news feeds, official vendor PSIRT bulletins, security advisory databases, and threat telemetry powering the SecuBuzz ecosystem.
 
-Last Updated: October 2026 | Total Active Sources: 47 Hourly Feeds + Android Security Bulletin (Monthly) + 2 Advisory Databases (1,806 Tracked Advisories) + FIRST.org EPSS Radar
+Last Updated: November 2026 | Total Active Sources: 47 Hourly Feeds + 33 Vendor Outage Radars + Android Security Bulletin (Monthly) + 2 Advisory Databases (1,806 Tracked Advisories) + FIRST.org EPSS Radar
 
 ---
 
@@ -103,6 +103,47 @@ These feeds power the **Advisories Tab** on both the mobile app and website, mer
   - 30-day in-the-wild exploitation probability (e.g. `0.941` = 94.1% probability of weaponized exploitation in the wild).
   - Global threat percentile ranking across all published CVEs (e.g. `98th percentile`).
   - Rendered dynamically on CVE detail screens and advisory cards with zero synthetic data.
+
+---
+
+## 3. Real-Time Vendor Outages & Infrastructure Health Radar (33 Providers)
+Monitored continuously at the Cloudflare Worker edge (`/api/vendor-status`), cached for 5 minutes, and auto-refreshed by web clients every 3 minutes. Evaluates Statuspage.io APIs, StatusHub, custom JSON endpoints, live RSS feeds, and targeted HTML extractors.
+
+| # | Vendor / Platform | Official Status URL | Telemetry Integration |
+|---|---|---|---|
+| **1** | **1Password** | `https://status.1password.com/` | Statuspage API (`/api/v2/summary.json`) |
+| **2** | **Apple** | `https://www.apple.com/support/systemstatus/` | System status developer JSON |
+| **3** | **Atlassian (Jira/Confluence)** | `https://status.atlassian.com/` | Statuspage API |
+| **4** | **AWS (Amazon Web Services)** | `https://health.aws.amazon.com/health/status` | AWS Service Health RSS / JSON |
+| **5** | **Azure** | `https://azure.status.microsoft/en-us/status` | Dedicated Azure RSS Incident feed (`/status/feed/`) |
+| **6** | **Broadcom / VMware** | `https://status.broadcom.com/` | Statuspage API |
+| **7** | **Check Point** | `https://status.checkpoint.com/` | Statuspage API |
+| **8** | **Cisco (Duo & Security)** | `https://status.cisco.com/` | Statuspage API |
+| **9** | **Citrix Cloud** | `https://status.cloud.com/` | Statuspage API |
+| **10** | **Cloudflare** | `https://www.cloudflarestatus.com/` | Statuspage API |
+| **11** | **CrowdStrike** | `https://falcon.crowdstrike.com/` | Statuspage API |
+| **12** | **CyberArk** | `https://status.cyberark.com/` | Statuspage API |
+| **13** | **F5 Networks** | `https://www.f5cloudstatus.com/` | Statuspage API |
+| **14** | **Fortinet** | `https://status.fortistatus.com/` | FortiStatus custom status endpoint |
+| **15** | **GitHub** | `https://www.githubstatus.com/` | Statuspage API |
+| **16** | **GitLab** | `https://status.gitlab.com/` | Statuspage API |
+| **17** | **Google Cloud Platform** | `https://status.cloud.google.com/` | Google Cloud Incident JSON |
+| **18** | **HashiCorp** | `https://status.hashicorp.com/` | Statuspage API |
+| **19** | **Ivanti Cloud** | `https://status.ivanticloud.com/` | StatusHub API (`/api/status/public`) |
+| **20** | **Microsoft 365** | `https://status.cloud.microsoft` | Microsoft 365 Status service API |
+| **21** | **Okta** | `https://trust.okta.com/` | Statuspage API |
+| **22** | **Oracle Cloud (OCI)** | `https://ocistatus.oraclecloud.com/` | OCI status telemetry JSON |
+| **23** | **Palo Alto Networks** | `https://status.paloaltonetworks.com/` | Statuspage API |
+| **24** | **Qualys** | `https://status.qualys.com/` | Statuspage API |
+| **25** | **Rapid7** | `https://status.rapid7.com/` | Statuspage API |
+| **26** | **Red Hat** | `https://status.redhat.com/` | Statuspage API |
+| **27** | **SentinelOne** | `https://status.sentinelone.com/` | Statuspage API |
+| **28** | **Slack** | `https://status.slack.com/` | Statuspage API |
+| **29** | **SonicWall** | `https://status.sonicwall.com/` | Statuspage API |
+| **30** | **Sophos Central** | `https://sophoscentral.status.page/` | Statuspage API |
+| **31** | **Tenable** | `https://status.tenable.com/` | Statuspage API |
+| **32** | **Trend Micro** | `https://status.trendmicro.com/` | Statuspage API |
+| **33** | **Zscaler** | `https://trust.zscaler.com/` | Zscaler Trust RSS / JSON |
 
 ---
 

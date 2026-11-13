@@ -1,5 +1,6 @@
 export type SourceCategory =
   | 'vendor-psirt'
+  | 'vendor-outages'
   | 'news-research'
   | 'supply-chain'
   | 'incident-research'
@@ -155,7 +156,275 @@ export const SOURCES: SourceItem[] = [
   },
 
   // ---------------------------------------------------------------------------
-  // 2. Threat Research & News (28 feeds, Alphabetical)
+  // 2. Vendor Infrastructure & Outage Radars (33 feeds, Alphabetical)
+  // ---------------------------------------------------------------------------
+  {
+    name: '1Password Status',
+    domain: 'status.1password.com',
+    url: 'https://status.1password.com/',
+    focus: 'Operational health and incident tracking across 1Password enterprise vaults, developer tools, and browser extensions.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Apple System Status',
+    domain: 'apple.com',
+    url: 'https://www.apple.com/support/systemstatus/',
+    focus: 'Real-time health of Apple Developer services, iCloud infrastructure, Apple ID authentication, and push notification relays.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Atlassian Status',
+    domain: 'status.atlassian.com',
+    url: 'https://status.atlassian.com/',
+    focus: 'Live incident and degradation telemetry across Jira Cloud, Confluence, Bitbucket, and Opsgenie.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'AWS Service Health',
+    domain: 'health.aws.amazon.com',
+    url: 'https://health.aws.amazon.com/health/status',
+    focus: 'Authoritative regional and global health status across all Amazon Web Services compute, storage, IAM, and networking.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Azure Status',
+    domain: 'azure.status.microsoft',
+    url: 'https://azure.status.microsoft/en-us/status',
+    focus: 'Dedicated live RSS incident radar and regional operational health across all Microsoft Azure cloud infrastructure.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Broadcom / VMware Status',
+    domain: 'status.broadcom.com',
+    url: 'https://status.broadcom.com/',
+    focus: 'Operational telemetry for VMware Cloud Foundation, Tanzu, Carbon Black, and Broadcom enterprise cloud services.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Check Point Status',
+    domain: 'status.checkpoint.com',
+    url: 'https://status.checkpoint.com/',
+    focus: 'Real-time operational status for Quantum security gateways, Harmony SASE, CloudGuard, and Infinity portals.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Cisco Status',
+    domain: 'status.cisco.com',
+    url: 'https://status.cisco.com/',
+    focus: 'Incident tracking across Cisco Duo two-factor authentication, Umbrella DNS, Secure Endpoint, and Webex.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Citrix Cloud Status',
+    domain: 'status.cloud.com',
+    url: 'https://status.cloud.com/',
+    focus: 'Service availability and incident reports for Citrix DaaS, NetScaler Gateway service, and Workspace.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Cloudflare Status',
+    domain: 'cloudflarestatus.com',
+    url: 'https://www.cloudflarestatus.com/',
+    focus: 'Global edge network telemetry, Zero Trust / Access gateways, Workers runtime, and DNS resolution health.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'CrowdStrike Falcon Status',
+    domain: 'falcon.crowdstrike.com',
+    url: 'https://falcon.crowdstrike.com/',
+    focus: 'Operational telemetry for the Falcon XDR Cloud, Threat Graph, sensor update infrastructure, and API endpoints.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'CyberArk Status',
+    domain: 'status.cyberark.com',
+    url: 'https://status.cyberark.com/',
+    focus: 'Operational status for CyberArk Identity Security Platform, Privilege Cloud, and Workforce Password Management.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'F5 Distributed Cloud Status',
+    domain: 'f5cloudstatus.com',
+    url: 'https://www.f5cloudstatus.com/',
+    focus: 'Live incident radar for F5 Distributed Cloud WAAP, BIG-IP Next Cloud, and global multi-cloud networking.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Fortinet FortiStatus',
+    domain: 'status.fortistatus.com',
+    url: 'https://status.fortistatus.com/',
+    focus: 'Service health across FortiCloud, FortiSASE, FortiGate Cloud management, and FortiGuard security fabric.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'GitHub Status',
+    domain: 'githubstatus.com',
+    url: 'https://www.githubstatus.com/',
+    focus: 'Continuous health telemetry for GitHub Actions runners, Git operations, Webhooks, API, and Copilot.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'GitLab Status',
+    domain: 'status.gitlab.com',
+    url: 'https://status.gitlab.com/',
+    focus: 'Operational status and incident tracking for GitLab.com SaaS, CI/CD Shared Runners, and Container Registry.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Google Cloud Status',
+    domain: 'status.cloud.google.com',
+    url: 'https://status.cloud.google.com/',
+    focus: 'Authoritative status dashboard for Google Cloud Platform (GCP) compute, Google Kubernetes Engine (GKE), and BigQuery.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'HashiCorp Status',
+    domain: 'status.hashicorp.com',
+    url: 'https://status.hashicorp.com/',
+    focus: 'Live health telemetry for HashiCorp Cloud Platform (HCP) Vault, Terraform Cloud, and Consul.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Ivanti Cloud Status',
+    domain: 'status.ivanticloud.com',
+    url: 'https://status.ivanticloud.com/',
+    focus: 'Operational reporting for Ivanti Neurons, Connect Secure cloud controllers, and Endpoint Manager.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Microsoft 365 Status',
+    domain: 'status.cloud.microsoft',
+    url: 'https://status.cloud.microsoft/m365/referrer=serviceStatusRedirect',
+    focus: 'Live incident telemetry across Microsoft 365, Teams, Exchange Online, SharePoint, and Entra ID authentication.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Okta Trust',
+    domain: 'trust.okta.com',
+    url: 'https://trust.okta.com/',
+    focus: 'Real-time availability and security posture tracking across all global Okta Identity Cloud cells and Auth0.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Oracle Cloud (OCI) Status',
+    domain: 'ocistatus.oraclecloud.com',
+    url: 'https://ocistatus.oraclecloud.com/',
+    focus: 'Operational status across all Oracle Cloud regions, autonomous databases, compute nodes, and security zones.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Palo Alto Networks Status',
+    domain: 'status.paloaltonetworks.com',
+    url: 'https://status.paloaltonetworks.com/',
+    focus: 'Incident tracking for Prisma Access SASE, Cortex XDR, Strata Cloud Manager, and WildFire cloud analysis.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Qualys Status',
+    domain: 'status.qualys.com',
+    url: 'https://status.qualys.com/',
+    focus: 'Operational availability across all Qualys Cloud Platform shared and private operational clusters worldwide.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Rapid7 Status',
+    domain: 'status.rapid7.com',
+    url: 'https://status.rapid7.com/',
+    focus: 'Live health reporting for InsightVM vulnerability management, InsightIDR SIEM/XDR, and InsightConnect.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Red Hat Status',
+    domain: 'status.redhat.com',
+    url: 'https://status.redhat.com/',
+    focus: 'Service health across Red Hat Hybrid Cloud Console, OpenShift Dedicated, Quay.io registry, and customer portal.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'SentinelOne Status',
+    domain: 'status.sentinelone.com',
+    url: 'https://status.sentinelone.com/',
+    focus: 'Live operational telemetry across Singularity XDR management consoles, cloud AI analysis, and agent communication.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Slack System Status',
+    domain: 'status.slack.com',
+    url: 'https://status.slack.com/',
+    focus: 'Service incident tracking across Slack messaging, huddles, workflow builder, enterprise key management, and API.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'SonicWall Status',
+    domain: 'status.sonicwall.com',
+    url: 'https://status.sonicwall.com/',
+    focus: 'Live operational health across Hosted Email Security (HES), Wireless Network Manager (WNM), and Cloud Edge SASE.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Sophos Central Status',
+    domain: 'sophoscentral.status.page',
+    url: 'https://sophoscentral.status.page/',
+    focus: 'Real-time availability for Sophos Central endpoint management, XGS firewall cloud reporting, and MDR operations.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Tenable Status',
+    domain: 'status.tenable.com',
+    url: 'https://status.tenable.com/',
+    focus: 'Live incident radar for Tenable One exposure management, Tenable.io vulnerability cloud, and OT security.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Trend Micro Status',
+    domain: 'status.trendmicro.com',
+    url: 'https://status.trendmicro.com/',
+    focus: 'Operational telemetry for Trend Vision One, Apex One SaaS, and Cloud One workload protection.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+  {
+    name: 'Zscaler Trust',
+    domain: 'trust.zscaler.com',
+    url: 'https://trust.zscaler.com/',
+    focus: 'Operational health across global Zscaler Internet Access (ZIA) public service edges and Private Access (ZPA) brokers.',
+    category: 'vendor-outages',
+    cadence: '5m edge poll',
+  },
+
+  // ---------------------------------------------------------------------------
+  // 3. Threat Research & News (28 feeds, Alphabetical)
   // ---------------------------------------------------------------------------
   {
     name: 'BleepingComputer',
@@ -420,14 +689,21 @@ export const SOURCES: SourceItem[] = [
 ];
 
 /**
- * Filtered threat feeds count (excluding authoritative databases)
+ * Filtered threat feeds count (excluding authoritative databases and outage monitors)
  */
 export const THREAT_FEEDS_COUNT = SOURCES.filter(
-  (s) => s.category !== 'advisory-db'
+  (s) => s.category !== 'advisory-db' && s.category !== 'vendor-outages'
 ).length;
 
 /**
- * Total monitored sources and databases count
+ * Live vendor outage & infrastructure health monitors count
+ */
+export const OUTAGE_FEEDS_COUNT = SOURCES.filter(
+  (s) => s.category === 'vendor-outages'
+).length;
+
+/**
+ * Total monitored sources, outage radars, and databases count
  */
 export const TOTAL_SOURCES_COUNT = SOURCES.length;
 
@@ -438,6 +714,15 @@ export const SOURCE_GROUPS: SourceGroup[] = [
     description:
       'Authoritative hardware, cloud, OS, and enterprise infrastructure security bulletins ingested directly from primary vendor response teams.',
     sources: SOURCES.filter((s) => s.category === 'vendor-psirt').sort((a, b) =>
+      a.name.localeCompare(b.name)
+    ),
+  },
+  {
+    id: 'vendor-outages',
+    title: 'Vendor Outage & Infrastructure Radars',
+    description:
+      'Real-time operational health, incident status, and outage feeds monitored across 33 enterprise IT, security, cloud, and developer platforms.',
+    sources: SOURCES.filter((s) => s.category === 'vendor-outages').sort((a, b) =>
       a.name.localeCompare(b.name)
     ),
   },
