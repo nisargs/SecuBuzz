@@ -2,6 +2,84 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-126360",
+    "slug": "cve-2026-126360",
+    "vendor": "Pip",
+    "product": "opentelemetry-api",
+    "name": "OpenTelemetry Python API: Denial of service through quadratic-time traceparent parsing",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "TraceContextTextMapPropagator.extract() in opentelemetry-api is vulnerable to regular expression denial of service (ReDoS) when processing a specially crafted traceparent value. A malformed value containing a trace-context prefix followed by a long whitespace sequence and an embedded newline triggers quadratic-time regex backtracking.",
+    "requiredAction": "Upgrade opentelemetry-api to version 1.45.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mf5v-w3w3-f6cg"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126360"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126191",
+    "slug": "cve-2026-126191",
+    "vendor": "Pip",
+    "product": "soupsieve",
+    "name": "Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-1333",
+    "ransomware": false,
+    "description": "The IDENTIFIER/CSS_ESCAPES regex (css_parser.py:119-124) exhibits exponential backtracking on a run of ambiguous digit-escapes (\\9) in an attribute-name or tag position of an otherwise well-formed selector. It fires at compile time (before the SELECTOR_LIMIT guard) via the public soupsieve.compile() and BeautifulSoup .select().",
+    "requiredAction": "Upgrade soupsieve to version 3.0.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6655-6qjp-jx7x"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126191"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126193",
+    "slug": "cve-2026-126193",
+    "vendor": "Pip",
+    "product": "soupsieve",
+    "name": "Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "The Soup Sieve CSS selector parser recurses once per level of nested pseudo-class selector (:is(), :not(), :where(), :has()) without any limit on nesting depth.",
+    "requiredAction": "Upgrade soupsieve to version 3.0.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-7g44-g9rc-x53w"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126193"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-100397",
     "slug": "cve-2026-100397",
     "vendor": "Pip",
@@ -1215,84 +1293,6 @@ export const advisories: Advisory[] = [
       {
         "label": "GitHub Advisory",
         "url": "https://github.com/advisories/GHSA-7m8x-x364-m26j"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-84987",
-    "slug": "cve-2026-84987",
-    "vendor": "Composer",
-    "product": "code16/sharp",
-    "name": "code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-625",
-    "ransomware": false,
-    "description": "An authenticated attacker can call the Autocomplete API with the configured endpoint as a substring to request another server-side route. The problem has been patched in 9.23.0 and pre-release version 10.0.0-beta.4. The regex verifying the endpoint has been anchored to forbid substring injection.",
-    "requiredAction": "Upgrade code16/sharp to version 9.23.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-g6f8-c3x9-jv7f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84987"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-84974",
-    "slug": "cve-2026-84974",
-    "vendor": "Composer",
-    "product": "code16/sharp",
-    "name": "code16/sharp: Arbitrary class instantiation through the embed_key API parameter",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.4,
-    "severity": "Medium",
-    "cwe": "CWE-470",
-    "ransomware": false,
-    "description": "An authenticated attacker can instantiate any class in the PHP application by using the embed_key parameter across multiple API endpoints. The instantiation is performed by the Laravel container. As a result, the __construct() method of the class is called and all constructor dependencies are resolved. The attacker cannot specify parameter values and cannot call any arbitrary method.",
-    "requiredAction": "Upgrade code16/sharp to version 9.23.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h24v-f482-8cwf"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84974"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118740",
-    "slug": "cve-2026-118740",
-    "vendor": ".NET (NuGet)",
-    "product": "Aspire.Dashboard.Sdk.linux-x64",
-    "name": "Microsoft Security Advisory CVE-2026-118740 - Aspire Security Feature Bypass Vulnerability",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 9.1,
-    "severity": "Critical",
-    "cwe": "CWE-862",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in Aspire. This advisory provides guidance on updating affected applications and components. Aspire Dashboard's unauthenticated NotFound route can permit telemetry deletion in both standalone and AppHost-hosted deployments.",
-    "requiredAction": "Upgrade Aspire.Dashboard.Sdk.linux-x64 to version 13.6.5 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4g86-54fm-h9h8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118740"
       }
     ],
     "source": "GITHUB"

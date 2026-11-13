@@ -163,6 +163,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-dev-160-released-for-android-12652645",
+    "title": "Chrome Dev 160 Released for Android",
+    "summary": "Google released Chrome Dev 160 for Android, updating the browser on Google Play with new features and bug fixes. The update includes platform enhancements and a partial list of changes documented in the Git log, with further details on the Chromium blog. Users should install the new version via Google Play and file any issues through the bug‑filing system.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-android-update_0625376735.html",
+    "publishedAt": "2026-11-13T13:58:32.850Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-dev-160-released-for-android",
+      "article-12652645",
+      "12652645",
+      "chrome-dev-160-released-for-android-2c3ede"
+    ]
+  },
+  {
+    "slug": "trezor-detects-recovery-phrase-stealing-implants-c1952591",
+    "title": "Trezor Detects Recovery Phrase‑Stealing Implants",
+    "summary": "Trezor identified hardware implants in three Safe 5 wallets purchased from CryptoBilis that can steal recovery phrases. The implant reads the phrase from the wallet's screen and transmits it over the mobile network to an attacker‑controlled server, exposing users' seed phrases to theft. Trezor recommends inspecting devices for the circuit board, replacing compromised wallets, and monitoring for network traffic.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
+    "publishedAt": "2026-11-13T13:54:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trezor-detects-recovery-phrase-stealing-implants",
+      "article-c1952591",
+      "c1952591",
+      "trezor-detects-recovery-phrase-stealing-implants-15e337"
+    ]
+  },
+  {
     "slug": "microsoft-battles-global-outage-email-services-dow-f1308f2a",
     "title": "Microsoft Battles Global Outage, Email Services Down",
     "summary": "Microsoft experienced a global outage disrupting email and other services across its cloud infrastructure. The root cause remains unidentified; Microsoft is isolating and repairing affected infrastructure, suggesting underlying network or configuration issues. Microsoft is actively investigating, restoring services, and advising users to monitor official updates for status in the coming hours.",
@@ -367,6 +403,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "node-js-fixes-http-2-crash-and-leak-flaws-b623cc05",
+    "title": "Node.js Fixes HTTP/2 Crash and Leak Flaws",
+    "summary": "Node.js released a patch addressing HTTP/2 crash and memory leak vulnerabilities affecting the critical runtime. The flaws allowed denial of service and potential data exposure through uninitialized memory, with public proof‑of‑concepts available. Users should update to the latest Node.js version or apply the provided security patch to mitigate the risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/node-js-fixes-16-flaws-including-http-2-bugs-that-crash",
+    "publishedAt": "2026-11-13T11:39:37.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "node-js-fixes-http-2-crash-and-leak-flaws",
+      "article-b623cc05",
+      "b623cc05",
+      "node-js-fixes-http-2-crash-and-leak-flaws-12bbfb"
+    ]
+  },
+  {
     "slug": "ptc-windchill-rce-flaw-cve-2026-126325-31deb163",
     "title": "PTC Windchill RCE Flaw CVE-2026-126325",
     "summary": "CVE-2026-126325 enables remote code execution against PTC Windchill through malformed XML input. The vulnerability originates from insufficient validation of XML payloads in the product’s web service, granting unauthenticated attackers a CVSS score of 9.1; a public PoC has been published. PTC released an urgent patch; apply it immediately and verify that XML processing is properly sanitized.",
@@ -384,6 +438,24 @@ export const news: NewsBrief[] = [
       "article-31deb163",
       "31deb163",
       "ptc-windchill-rce-flaw-cve-2026-126325-5bc947"
+    ]
+  },
+  {
+    "slug": "google-sessions-hijacked-via-calendar-invites-32666805",
+    "title": "Google Sessions Hijacked via Calendar Invites",
+    "summary": "Google identified a session hijacking flaw in Google Sessions that can be triggered through malicious calendar invites. The vulnerability exploits the session token reuse mechanism, allowing attackers to impersonate users and access their accounts without authentication. Google recommends applying the latest security patch, disabling calendar invite sharing, and monitoring for suspicious session activity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/calendar-invites-and-live-proxies-inside-a-google-sessi",
+    "publishedAt": "2026-11-13T11:38:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-sessions-hijacked-via-calendar-invites",
+      "article-32666805",
+      "32666805",
+      "google-sessions-hijacked-via-calendar-invites-374c16"
     ]
   },
   {
@@ -1047,6 +1119,24 @@ export const news: NewsBrief[] = [
       "article-06a541af",
       "06a541af",
       "n-central-flaws-compromise-21-servers-18c6e7"
+    ]
+  },
+  {
+    "slug": "mcp-server-drift-exposes-unchecked-dependencies-838a554e",
+    "title": "MCP Server Drift Exposes Unchecked Dependencies",
+    "summary": "An MCP server on an administrator’s workstation, meant to run a single release, used 15 dependency sets over five weeks, despite unchanged configuration. The drift updated 23 of 69 packages, including cryptography, JSON Web Token, and the MCP SDK, exposing the server to untested components. Teams should audit dependencies, enforce pinning, and apply consistent configuration management to prevent drift.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/corelight-mcp-server-supply-chain/",
+    "publishedAt": "2026-11-13T05:30:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "mcp-server-drift-exposes-unchecked-dependencies",
+      "article-838a554e",
+      "838a554e",
+      "mcp-server-drift-exposes-unchecked-dependencies-297211"
     ]
   },
   {
@@ -4470,6 +4560,24 @@ export const news: NewsBrief[] = [
       "article-d1443023",
       "d1443023",
       "red-hat-quay-flaw-enables-private-image-theft-3bd886"
+    ]
+  },
+  {
+    "slug": "fbi-agent-stole-2-47m-in-crypto-d8f9416e",
+    "title": "FBI Agent Stole $2.47M in Crypto",
+    "summary": "A former FBI supervisor stole $2.47 million in cryptocurrency from criminal wallets by memorizing wallet recovery phrases. The theft was uncovered when the agent confessed, citing internal moral conflict, and authorities seized the stolen assets. The incident underscores the need for strict access controls, monitoring of privileged accounts, and robust recovery phrase management.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/fbi-agent-stole-2-47m-in-crypto-from-criminal-wallets",
+    "publishedAt": "2026-11-12T09:03:03.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-agent-stole-2-47m-in-crypto",
+      "article-d8f9416e",
+      "d8f9416e",
+      "fbi-agent-stole-2-47m-in-crypto-48c625"
     ]
   },
   {
@@ -9457,119 +9565,6 @@ export const news: NewsBrief[] = [
       "8c16505b",
       "meta-fairseq-transformerlanguagemodel-yaml-injecti-6f3d0f",
       "meta-fairseq-transformerlanguagemodel-yaml-injection"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-yaml-parsing-rce-exploit-discovered-6dd88325",
-    "title": "Meta fairseq YAML Parsing RCE Exploit Discovered",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-928/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-yaml-parsing-rce-exploit-discovered",
-      "article-6dd88325",
-      "6dd88325",
-      "meta-fairseq-yaml-parsing-rce-exploit-discovered-6f3d10"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-fairseqadam-yaml-rce-vulnerability-fo-0a31e070",
-    "title": "Meta fairseq FairseqAdam YAML RCE Vulnerability Found",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-927/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-fairseqadam-yaml-rce-vulnerability-fo",
-      "article-0a31e070",
-      "0a31e070",
-      "meta-fairseq-fairseqadam-yaml-rce-vulnerability-fo-6f3d10",
-      "meta-fairseq-fairseqadam-yaml-rce-vulnerability-found"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-ex-296dc77b",
-    "title": "Meta fairseq FairseqLAMB YAML RCE Vulnerability Exposed",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-925/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-ex",
-      "article-296dc77b",
-      "296dc77b",
-      "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-ex-6f3d0f",
-      "meta-fairseq-fairseqlamb-yaml-rce-vulnerability-exposed"
-    ]
-  },
-  {
-    "slug": "zdi-26-924-0day-meta-fairseq-s2twavtransformerenco-455c3e72",
-    "title": "ZDI-26-924: (0Day) Meta fairseq S2TWavTransformerEncoder YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-924/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-924-0day-meta-fairseq-s2twavtransformerenco",
-      "article-455c3e72",
-      "455c3e72",
-      "zdi-26-924-0day-meta-fairseq-s2twavtransformerenco-6f3d0f",
-      "zdi-26-924-0day-meta-fairseq-s2twavtransformerencoder-yaml-f"
-    ]
-  },
-  {
-    "slug": "zero-day-code-execution-flaw-discovered-in-meta-fa-8ba8d224",
-    "title": "Zero-Day Code Execution Flaw Discovered in Meta Fairseq",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-929/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zero-day-code-execution-flaw-discovered-in-meta-fa",
-      "article-8ba8d224",
-      "8ba8d224",
-      "zero-day-code-execution-flaw-discovered-in-meta-fa-6f3d10",
-      "zero-day-code-execution-flaw-discovered-in-meta-fairseq"
-    ]
-  },
-  {
-    "slug": "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-062b3457",
-    "title": "ZDI-26-926: (0Day) Meta fairseq RawAudioDataset YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-926/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml",
-      "article-062b3457",
-      "062b3457",
-      "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-6f3d10",
-      "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-file-parsi"
     ]
   }
 ];
