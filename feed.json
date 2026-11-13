@@ -5440,6 +5440,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+    "title": "Exam Security Adapts to AI‑Assisted Test Taking",
+    "headline": "Exam Security Adapts to AI‑Assisted Test Taking",
+    "summary": "Exam security faces new challenges as test takers increasingly use AI to answer questions. The article notes that detecting AI‑assisted cheating remains difficult, prompting the development of new tools and processes to enhance trust in certification exams. Security teams should monitor emerging detection solutions and update exam protocols accordingly today.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "publishedAt": "2026-11-11T20:27:00.000Z",
+    "ingestedAt": "2026-11-13T17:51:26.028Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
     "sourceUrl": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
     "title": "N-able N-central Platform Offline Over 33 Flaws",
@@ -6791,6 +6807,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://unit42.paloaltonetworks.com/falcon-c2-browser-compromise/",
+    "sourceUrl": "https://unit42.paloaltonetworks.com/falcon-c2-browser-compromise/",
+    "title": "Falcon C2 Threats Target Governments via Browser Extensions",
+    "headline": "Falcon C2 Threats Target Governments via Browser Extensions",
+    "summary": "Falcon C2, a browser-based threat framework, targets government entities through malicious scripts, extensions, and the Antino implant. The framework leverages compromised browser extensions to execute code in the victim’s context, enabling data exfiltration and persistence without requiring privileged access. Security teams should block known malicious domains, enforce extension whitelisting, and monitor for anomalous script activity to mitigate Falcon C2 threats.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "Unit 42",
+    "publishedAt": "2026-11-11T15:00:23.000Z",
+    "ingestedAt": "2026-11-13T17:51:26.028Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://unit42.paloaltonetworks.com/falcon-c2-browser-compromise/",
     "additionalSources": []
   },
   {
@@ -8403,56 +8435,6 @@
     "cves": [],
     "aliases": [
       "meta-fairseq-code-injection-vulnerability-cve-2026-d15972ca"
-    ]
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-923/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-923/",
-    "title": "Meta fairseq Vulnerable to YAML Code Injection",
-    "headline": "Meta fairseq Vulnerable to YAML Code Injection",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "ingestedAt": "2026-11-12T00:43:12.922Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-923/",
-    "additionalSources": [
-      {
-        "source": "ZDI Advisories",
-        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-919/"
-      }
-    ],
-    "cves": [],
-    "aliases": [
-      "meta-fairseq-yaml-code-injection-flaw-cve-2026-111-d1e8367c"
-    ]
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-922/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-922/",
-    "title": "Meta fairseq Wav2Vec2Model YAML Injection Vulnerability",
-    "headline": "Meta fairseq Wav2Vec2Model YAML Injection Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "ingestedAt": "2026-11-12T00:43:12.922Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-922/",
-    "additionalSources": [
-      {
-        "source": "ZDI Advisories",
-        "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-920/"
-      }
-    ],
-    "cves": [],
-    "aliases": [
-      "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1-0b041a28"
     ]
   }
 ]
