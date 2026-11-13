@@ -333,7 +333,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cve-2026-126793-privilege-escalation-in-aurora-pos-84682522",
     "title": "CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper",
-    "summary": "Bulletin ID: 2026-182-AWS Publication Date: 11/12/2026 13:00 PM PST Description: An untrusted search path issue in Aurora PostgreSQL dialect detection in the AWS Advanced Go Wrapper from release 2026-04-06 (awssql/v2.0.0) and before release 2026-07-29 (awssql/v2.0.3) could allow a remote authenticated user to escalate privileges to those of another database user, including a member of the rds_superuser role, via a crafted function that runs when that user connects to an Aurora PostgreSQL cluster through an affected version of the wrapper.",
+    "summary": "An untrusted search path vulnerability in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper (CVE-2026-126793) allows an authenticated attacker to escalate privileges to other database users, including the rds_superuser role, by executing a crafted function during cluster connection. AWS has released patched versions.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "AWS Security Bulletins",
@@ -828,7 +828,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cve-2026-127119-unverified-ownership-of-the-defaul-cf8beca4",
     "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
-    "summary": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. Impacted versions: >= 1.1.0 AND Refer to the article for the most up-to-date and complete information.",
+    "summary": "An unverified ownership vulnerability in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0 allows attackers to exploit default cluster log locations. AWS advises upgrading to awswrangler 3.18.0 or later to resolve the issue. The flaw is tracked as CVE-2026-127119.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "AWS Security Bulletins",
@@ -3449,7 +3449,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "gitlab-patch-release-19-5-5-19-4-7-be8ffb8f",
     "title": "GitLab Patch Release: 19.5.5, 19.4.7",
-    "summary": "GitLab Community Edition and Enterprise Edition 19.5.5 Backport of &lsquo;Retry GCS default credentials after a latched metadata timeout&rsquo; Backport of &lsquo;Skip code navigation lookups when a project has no LSIF artifacts&rsquo; into 19.5 [19.5] Backport of &lsquo;Update oj to 3.17.8 to fix native memory-safety bugs&rsquo; Backport of &lsquo;Stop relation batch export spec leaking a foo directory&rsquo; Backport of &lsquo;Map sast_iac scanner to sast in approval policy rules&rsquo; Backport of &lsquo;Bump premailer to 1.27.0 to stop css_parser deprecation warnings&rsquo; (19.5) [19.5] Reapply the Orbit feature backports 19.4.7 Backport of &lsquo;Skip code navigation lookups when a project has no LSIF artifacts&rsquo; into 19.4 Backport of &lsquo;Retry GCS default credentials after a latched metadata timeout&rsquo; [19.4] Backport of &lsquo;Update oj to 3.17.8 to fix native memory-safety bugs&rsquo; Backport of &lsquo;Map sast_iac scanner to sast in approval policy rules&rsquo; Backport of &lsquo;Stop relation batch export spec leaking a foo directory&rsquo; Backport of &lsquo;Bump premailer to 1.27.0 to stop css_parser deprecation warnings&rsquo; (19.4) [19.4] Backport of &lsquo;Skip per-ref Redis cache in protected branch push check&rsquo; [19.4] Reapply the Orbit feature backports Important notes on upgrading These patches include database migrations that may impact your upgrade process.",
+    "summary": "GitLab released security and maintenance patch updates 19.5.5 and 19.4.7 for Community Edition and Enterprise Edition. The updates resolve native memory-safety bugs in dependencies, fix GCS default credential metadata timeouts, and correct approval policy scanner mappings. GitLab strongly recommends administrators upgrade to these patch versions immediately.",
     "category": "General",
     "severity": "MEDIUM",
     "source": "GitLab Security Releases",
@@ -3915,7 +3915,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cve-2026-125926-server-side-request-forgery-in-the-a8e51a20",
     "title": "CVE-2026-125926 - Server-side request forgery in the server registration and update API in mcp-gateway-registry",
-    "summary": "Bulletin ID: 2026-180-AWS Publication Date: 11/11/2026 13:00 PM PST Description: MServer-side request forgery (SSRF) in the server registration and update API in Amazon mcp-gateway-registry before 1.35.0 might allow an authenticated remote user to send requests from the gateway to internal network services and cloud instance metadata endpoints and read the responses via a crafted request Impacted versions: >= v1.0.3 AND Refer to the article for the most up-to-date and complete information.",
+    "summary": "Server-side request forgery (SSRF) in the server registration and update API in Amazon mcp-gateway-registry before 1.35.0 might allow an authenticated remote user to send requests from the gateway to internal network services and cloud instance metadata endpoints and read the responses via a crafted request.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "AWS Security Bulletins",
@@ -9236,7 +9236,7 @@ export const news: NewsBrief[] = [
   {
     "slug": "cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4",
     "title": "CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent",
-    "summary": "Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an authenticated remote user with permission to submit jobs to a queue to execute arbitrary code as the worker agent OS user and obtain the AWS credentials held by the worker agent via a crafted job that modifies the PATH environment variable.",
+    "summary": "An untrusted search path flaw in the Open Job Description cross-user process launcher (CVE-2026-126087), as used in the AWS Deadline Cloud worker agent on Linux before 0.33.0, allows an authenticated user with job submission rights to execute arbitrary code with worker agent privileges and obtain AWS credentials held by the worker agent.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "AWS Security Bulletins",
