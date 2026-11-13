@@ -131,7 +131,7 @@ Monitored continuously at the Cloudflare Worker edge (`/api/vendor-status`), cac
 | **18** | **HashiCorp** | `https://status.hashicorp.com/` | Statuspage API |
 | **19** | **Ivanti Cloud** | `https://status.ivanticloud.com/` | StatusHub API (`/api/status/public`) |
 | **20** | **Microsoft 365** | `https://status.cloud.microsoft` | Microsoft 365 Status service API |
-| **21** | **Okta** | `https://trust.okta.com/` | Statuspage API |
+| **21** | **Okta** | `https://status.okta.com/` | Statuspage API |
 | **22** | **Oracle Cloud (OCI)** | `https://ocistatus.oraclecloud.com/` | OCI status telemetry JSON |
 | **23** | **Palo Alto Networks** | `https://status.paloaltonetworks.com/` | Statuspage API |
 | **24** | **Qualys** | `https://status.qualys.com/` | Statuspage API |

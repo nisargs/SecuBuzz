@@ -133,7 +133,7 @@ export const VENDOR_STATUS_REGISTRY: Record<string, VendorHealth> = {
     vendor: 'Okta',
     status: 'OPERATIONAL',
     summary: 'All Okta Identity Cloud services operational',
-    statusUrl: 'https://trust.okta.com/',
+    statusUrl: 'https://status.okta.com/',
   },
   Zscaler: {
     vendor: 'Zscaler',
