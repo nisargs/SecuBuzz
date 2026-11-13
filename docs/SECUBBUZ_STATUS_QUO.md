@@ -21,7 +21,9 @@
   7. **Anti-AI / Executive Aesthetic**: Clean, dark-mode, sober UI without garish neon gradients or emoji clutter (`🚨⚠️`).
   8. **Zero-Leakage Server-Side Push Pager**: Evaluates alerts server-side against configured My Stack enterprise vendors and watched CVEs before FCM dispatch, with instant client sync and zero account friction.
   9. **Hardened Extractive Fallback Engine**: Pure-code Tier 2 deterministic NLP airbag with automatic prompt tag sanitization, continuation bracket stripping, and 100% factual fidelity when cloud AI APIs experience outages.
-  10. **100% Free Operation ($0.00 Overhead)**: Engineered entirely on top-tier free cloud tiers with $0.00 monthly infrastructure overhead.
+  10. **Vendor Outages & Infrastructure Health Radar**: Live operational status tracking for 33 enterprise IT, security, and cloud providers with independent Azure RSS polling and 3m client background auto-refresh.
+  11. **Permanent CVE Guarantee**: Invariant ensuring every CVE-categorized story explicitly names its CVE ID in narrative prose for seamless bookmarking and watchlist triage.
+  12. **100% Free Operation ($0.00 Overhead)**: Engineered entirely on top-tier free cloud tiers with $0.00 monthly infrastructure overhead.
 
 ---
 
@@ -46,7 +48,25 @@ graph TD
     APP -->|Register Push Token| CFW
     CFW -->|Full-Text Search & Historical News| D1
     CFW -->|Stream Dynamic sitemap.xml| GOOGLE[Google Search Console / Googlebot]
+    VENDORS[33 Enterprise Vendor Status Feeds / APIs / RSS] -->|5m Edge Poll| CFW
+    WEB[Web Companion secubuzz.com] -->|Poll 3m /api/vendor-status| CFW
+    WEB -->|sendBeacon status-click| CFW
+    CFW -->|Log 1 Write / 0 Reads| D1_CLICKS[D1 vendor_status_clicks Table]
 ```
+
+### Vendor Outages & Infrastructure Health Radar
+- **33 Enterprise Vendors Monitored**: Automated polling across IT, security, cloud, and dev ecosystems (Cisco, Fortinet, Microsoft, Azure, AWS, Google Cloud, CrowdStrike, Palo Alto, Cloudflare, GitHub, GitLab, Datadog, Slack, Docker, OpenAI, Anthropic, Atlassian, Red Hat, SonicWall, Ivanti, Citrix, VMware, Sophos, Check Point, Splunk, Broadcom, etc.).
+- **Independent Azure RSS Integration**: Added dedicated XML/RSS parsing for `https://azure.status.microsoft/en-us/status/feed/` to monitor Azure independently from Microsoft 365 (`status.cloud.microsoft`). Detects active incidents, extracts incident summaries, and maps telemetry to `OPERATIONAL`, `DEGRADED`, or `OUTAGE`.
+- **Edge Caching & Auto-Refresh**: Worker caches `/api/vendor-status` at the edge for 5 minutes (`300_000ms`); the client sidebar polls every 3 minutes in the background (`setInterval(..., 180000)`).
+- **Zero-Latency Click Tracking (`vendor_status_clicks`)**: Non-blocking `navigator.sendBeacon` delivers telemetry to `POST /api/analytics/status-click`. Logged into indexed D1 table `vendor_status_clicks` (1 write, 0 reads). Admin telemetry endpoint `GET /api/analytics/vendor-status-clicks` is shielded by a 60-second in-memory cache.
+
+### Cloudflare D1 Quota Crisis Post-Mortem & Indexed Query Architecture
+- **Root Cause of 5M Row Read Exhaustion**: Full table scans in legacy `getAliasToSlugMap()` on every `/news/:slug` request multiplied by crawler bot hits exhausted the 5,000,000 daily read quota.
+- **Architectural Solution**:
+  1. *Direct Primary Key Lookups*: `SELECT * FROM articles WHERE slug = ? LIMIT 1` (consumes exactly 1 row read per request).
+  2. *Bounded Fallback*: `SELECT * FROM articles WHERE aliases_json LIKE ? LIMIT 1` only executes if primary slug misses, strictly bounded by `LIMIT 1`.
+  3. *Zero-Read Click Ingestion*: Click beacons execute parameterized `INSERT`, consuming 1 write and exactly 0 reads.
+  4. *In-Memory Admin Caching*: Admin analytics routes return cached memory snapshots for 60 seconds.
 
 ### Feed Routing & Non-Colliding Slug Architecture
 - **Non-Colliding 8-Hex FNV-1a Slug Engine**: Combines normalized headline base and canonical URL (`${base}|${idStr}`) via 32-bit FNV-1a hash (`0x811c9dc5` seed, `0x01000193` prime) with 8 hex characters (`padStart(8, '0')`), replacing legacy 6-char truncation that suffered from collisions.

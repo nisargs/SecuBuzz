@@ -131,9 +131,25 @@
       - Description CVE extraction: `buildFallbackArticle` scans headline, summary, and candidate description, permanently indexing corroborated CVEs in `article.cves` for My Stack watchlist matching.
       - Edge feed sanitization: `worker/src/index.ts:deduplicateFeed` sanitizes incoming and cached R2 feed briefs on the fly.
       - D1 database alignment: Cleaned all 4 historical rows in D1 `articles` table with prompt leakage (0 rows remaining).
+    - **Advisory Table Dump Sanitization & Permanent CVE Guarantee (Nov 12, 2026)**:
+      - Tabular Dump & Machine Version Stripping: CISA ICS and vendor advisories containing raw machine version lists (`vers:intdot/`, `vers:all/*`, `cpe:2.3:`, slash ratios > 0.05) are filtered from candidate sentences by `isTabularData`. Section transitions lacking punctuation (e.g., `Background`, `Vulnerabilities`) are delimited via step 3.5 in `cleanHtml`.
+      - **Permanent CVE Guarantee**: In `extractive_fallback.mjs`, `useLiveNews.ts`, `worker/src/index.ts`, and `sync_website_data.mjs`, every brief categorized as `CVE` or carrying CVE identifiers in metadata MUST explicitly cite at least one CVE identifier in its narrative prose (`The flaw is tracked as CVE-XXXX-XXXX.`, plural: `The vulnerabilities are tracked as ...`). If an article lacks an actual CVE ID, it is automatically reclassified to `Vulnerability`.
+      - **Context Preservation Invariant**: For vendor advisories that describe flaws in underlying third-party packages (e.g. Siemens bundling Google Brotli), the narrative explicitly names the affected vendor/system in the prose and ties it directly to the underlying component and CVE, preventing headline/body context detachment.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `670eb43b-dc98-4324-8b8e-73c84a0c90da`):**
+- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `47f778b6-7fea-4a4f-9765-23201e5e39e2`):**
+  - **Vendor Outages & Infrastructure Health Radar (Nov 12–13, 2026 / Worker `47f778b6-7fea-4a4f-9765-23201e5e39e2` / Live on `secubuzz.com`)**:
+    - **Real-Time Multi-Vendor Radar**: Live operational telemetry across 33 major enterprise IT, cloud, security, and developer platforms (Cisco, Fortinet, Microsoft, Azure, AWS, Google Cloud, CrowdStrike, Palo Alto, Cloudflare, GitHub, GitLab, Datadog, Slack, Docker, OpenAI, Anthropic, Atlassian, Red Hat, SonicWall, Ivanti, Citrix, VMware, Sophos, Check Point, Splunk, Broadcom, etc.).
+    - **Independent Azure RSS Polling**: Built dedicated XML/RSS incident poller for Azure (`https://azure.status.microsoft/en-us/status/feed/`), running independently alongside Microsoft 365 (`status.cloud.microsoft`). Parses live `<item>` tags, evaluates incident severity (DEGRADED vs OUTAGE), and extracts incident titles.
+    - **Telemetry Caching & Client Polling**: Cloudflare Worker caches `/api/vendor-status` at the edge for 5 minutes (`300_000ms`). The web client (`MyStackSidebar.tsx`) polls on mount and continuously auto-refreshes in the background every 3 minutes (`setInterval(..., 180000)`).
+    - **Outbound Click Tracking Architecture (`vendor_status_clicks`)**:
+      - Zero-latency, non-blocking click logging via `navigator.sendBeacon` (with fallback to `fetch keepalive`) to `/api/analytics/status-click` on "Status ↗" links and vendor chips.
+      - Logged to D1 table `vendor_status_clicks` with indexed queries (`idx_vsc_vendor`, `idx_vsc_clicked_at`).
+      - Protected admin analytics endpoint (`GET /api/analytics/vendor-status-clicks`) with 60-second in-memory caching (`cachedStatusClickStats`), returning top clicked vendors and recent click stream.
+    - **Cloudflare D1 5,000,000 Row Read Crisis Post-Mortem & Quota Shield**:
+      - *Incident*: D1 row reads hit the 5,000,000 daily free tier limit due to an unindexed full table scan in legacy `getAliasToSlugMap()` on every request to `/news/:slug` across 1,350+ historical rows multiplied by web crawler hits.
+      - *Permanent Fix*: Replaced table scans with direct primary key indexed lookups: `SELECT * FROM articles WHERE slug = ? LIMIT 1` (exactly 1 row read per request). Alias fallbacks only fire on primary miss, bounded by `LIMIT 1`.
+      - *Zero-Read Writes*: Click telemetry uses pure `INSERT`, consuming 1 write and exactly 0 row reads.
   - **My Stack Cross-Tab Auto-Filtering & Bottom Pill Toast (Nov 8, 2026)**:
     - **Instant Feed Pivot**: Tapping "Add to My Stack" or "Add to CVE Watchlist" on an entity chip in `ArticleCard` or `CveCard` immediately activates the `MY_STACK` source filter on the active screen and scrolls to top (`index: 0`).
     - **Shared Cross-Tab Stack Filter**: Added `isStackFilterActive` and `setStackFilterActive` to `MyStackContext`. Activating My Stack on Briefs automatically synchronizes to Advisories (and vice versa), so switching tabs preserves the active stack lens with zero manual re-selection.
@@ -323,6 +339,7 @@
 - **Private / Admin-Protected Endpoints (HTTP 401 Unauthorized if unauthenticated):**
   - `GET /api/analytics/install-clicks`: Real-time install button click telemetry, unique visitors, repeat clickers, and breakdown by source/country.
   - `GET /api/analytics/support-clicks`: Real-time Ko-fi support link click telemetry, unique visitors, repeat clickers, and placement breakdown.
+  - `GET /api/analytics/vendor-status-clicks`: Outbound vendor status link click telemetry (60s in-memory cache, top vendors, recent clicks).
   - `GET /api/push-tokens`: Internal Expo push token registry.
   - `POST /api/push-tokens/deactivate`: Deactivation of stale/invalid device tokens.
   - `GET /api/notifications/sent` & `POST /api/notifications/sent`: Broadcast tracking & deduplication.
@@ -331,6 +348,8 @@
 - **Public / Unauthenticated Endpoints (HTTP 200 OK):**
   - `GET /api/news` & `GET /feed.json`: Ingested 60-word cybersecurity news briefs for mobile & web (cached 300s).
   - `GET /api/advisories`: 1,789 active CVE security advisories (CISA KEV + GitHub Security Advisory Database).
+  - `GET /api/vendor-status`: Real-time infrastructure health and outage status across 33 enterprise vendors (cached 300s).
+  - `POST /api/analytics/status-click`: Zero-latency beacon receiver recording outbound vendor status link clicks (0 rows read, 1 row written).
   - `GET /api/epss?cve={CVE-ID}`: FIRST.org EPSS exploit probability proxy (edge-cached 24h).
   - `GET /api/cve-metrics?cve={CVE-ID}`: NIST NVD CVSS vectors proxy (edge-cached 24h).
   - `POST /api/push-tokens`: Safe write-only device registration on app install (accepts token, never returns any stored token data).
