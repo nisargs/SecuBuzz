@@ -160,6 +160,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99825-important-pki-deps-10-6-security-b-d68d107f",
+    "title": "RHSA-2026:99825: Important: pki-deps:10.6 security, bug fix, and enhancement update",
+    "summary": "An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99825",
+    "publishedAt": "2026-11-12T22:53:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99825-important-pki-deps-10-6-security-b",
+      "article-d68d107f",
+      "d68d107f",
+      "rhsa-2026-99825-important-pki-deps-10-6-security-b-37d665",
+      "rhsa-2026-99825-important-pki-deps-10-6-security-bug-fix-and"
+    ]
+  },
+  {
     "slug": "sckit-worm-targets-msps-via-screenconnect-39490bde",
     "title": "SCKit Worm Targets MSPs via ScreenConnect",
     "summary": "A worm-like malware toolkit named SCKit has been deployed in recent ScreenConnect attacks against managed service providers. The malware spreads from infected customer devices to MSP technicians' computers, enabling attackers to compromise additional managed networks and exfiltrate data. Security teams should isolate affected systems, update ScreenConnect to the latest version, and monitor for lateral movement.",
@@ -175,6 +194,24 @@ export const news: NewsBrief[] = [
       "article-39490bde",
       "39490bde",
       "sckit-worm-targets-msps-via-screenconnect-2041b9"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99915-moderate-xz-security-update-346452a7",
+    "title": "RHSA-2026:99915: Moderate: xz security update",
+    "summary": "An update for xz is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99915",
+    "publishedAt": "2026-11-12T22:40:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99915-moderate-xz-security-update",
+      "article-346452a7",
+      "346452a7",
+      "rhsa-2026-99915-moderate-xz-security-update-37d662"
     ]
   },
   {
@@ -403,6 +440,42 @@ export const news: NewsBrief[] = [
       "article-0fe49fbc",
       "0fe49fbc",
       "still-in-the-meeting-bluenoroff-six-months-on-6ac6bc"
+    ]
+  },
+  {
+    "slug": "usn-9087-1-signing-party-vulnerability-f443fe14",
+    "title": "USN-9087-1: signing-party vulnerability",
+    "summary": "It was discovered that the gpg-key2ps tool in signing-party did not properly sanitize user IDs before passing them to a shell. If a user were tricked into processing a specially crafted OpenPGP key, an attacker could possibly use this issue to execute arbitrary commands.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9087-1",
+    "publishedAt": "2026-11-12T20:55:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9087-1-signing-party-vulnerability",
+      "article-f443fe14",
+      "f443fe14",
+      "usn-9087-1-signing-party-vulnerability-7e85fe"
+    ]
+  },
+  {
+    "slug": "usn-9086-1-sa-exim-vulnerability-05de8e34",
+    "title": "USN-9086-1: SA-Exim vulnerability",
+    "summary": "It was discovered that SA-Exim unsafely evaluated the parameters of its greylisting SpamAssassin rule. An attacker able to write SpamAssassin configuration files or rules could possibly use this issue to execute arbitrary code.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9086-1",
+    "publishedAt": "2026-11-12T20:54:57.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9086-1-sa-exim-vulnerability",
+      "article-05de8e34",
+      "05de8e34",
+      "usn-9086-1-sa-exim-vulnerability-7e8602"
     ]
   },
   {
@@ -985,6 +1058,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99696-important-glib-networking-security-486941dd",
+    "title": "RHSA-2026:99696: Important: glib-networking security update",
+    "summary": "An update for glib-networking is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99696",
+    "publishedAt": "2026-11-12T16:07:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99696-important-glib-networking-security",
+      "article-486941dd",
+      "486941dd",
+      "rhsa-2026-99696-important-glib-networking-security-37d66c",
+      "rhsa-2026-99696-important-glib-networking-security-update"
+    ]
+  },
+  {
     "slug": "windows-signdrop-zero-day-grants-system-privileges-29645304",
     "title": "Windows SignDrop Zero-Day Grants SYSTEM Privileges",
     "summary": "A new Windows SignDrop zero‑day exploit enables attackers to obtain SYSTEM privileges on affected systems. The vulnerability allows unauthenticated remote code execution via a memory corruption flaw, giving attackers full control; no CVE listed, but public PoC demonstrates exploitation. Microsoft has not yet released a patch; security teams should apply the latest cumulative update and monitor for exploitation activity.",
@@ -1059,6 +1151,25 @@ export const news: NewsBrief[] = [
       "article-8fa80d31",
       "8fa80d31",
       "apache-fixes-critical-http-2-rce-vulnerability-79fafe"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99632-moderate-gcc-toolset-15-gcc-securi-b2f69179",
+    "title": "RHSA-2026:99632: Moderate: gcc-toolset-15-gcc security update",
+    "summary": "An update for gcc-toolset-15-gcc is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99632",
+    "publishedAt": "2026-11-12T15:23:04.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99632-moderate-gcc-toolset-15-gcc-securi",
+      "article-b2f69179",
+      "b2f69179",
+      "rhsa-2026-99632-moderate-gcc-toolset-15-gcc-securi-37d66d",
+      "rhsa-2026-99632-moderate-gcc-toolset-15-gcc-security-update"
     ]
   },
   {
@@ -9396,120 +9507,6 @@ export const news: NewsBrief[] = [
       "article-142bdc41",
       "142bdc41",
       "rhsa-2026-97456-moderate-krb5-security-update-37d75d"
-    ]
-  },
-  {
-    "slug": "railway-exposes-ai-driven-api-key-theft-and-charge-a5e70a7f",
-    "title": "Railway Exposes AI‑Driven API Key Theft and Charges",
-    "summary": "Railway disclosed that attackers leveraged AI agents, a build system flaw, and cloud misconfigurations to exfiltrate customer API keys. The compromised secrets enabled the adversary to generate approximately $740,000 in unauthorized cloud charges across multiple internal systems. Railway is tightening build pipelines, enforcing stricter access controls, and monitoring for anomalous API usage to prevent future incidents.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/railway-details-data-breach/",
-    "publishedAt": "2026-11-10T17:19:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "railway-exposes-ai-driven-api-key-theft-and-charge",
-      "article-a5e70a7f",
-      "a5e70a7f",
-      "railway-exposes-ai-driven-api-key-theft-and-charge-6c98d4",
-      "railway-exposes-ai-driven-api-key-theft-and-charges"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97497-moderate-unbound-security-bug-fix-a01b4add",
-    "title": "RHSA-2026:97497: Moderate: unbound security, bug fix, and enhancement update",
-    "summary": "An update for unbound is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97497",
-    "publishedAt": "2026-11-10T17:11:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97497-moderate-unbound-security-bug-fix",
-      "article-a01b4add",
-      "a01b4add",
-      "rhsa-2026-97497-moderate-unbound-security-bug-fix-37d75c",
-      "rhsa-2026-97497-moderate-unbound-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97288-important-yggdrasil-security-bug-f-87570b12",
-    "title": "RHSA-2026:97288: Important: yggdrasil security, bug fix, and enhancement update",
-    "summary": "An update for yggdrasil is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97288",
-    "publishedAt": "2026-11-10T17:07:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97288-important-yggdrasil-security-bug-f",
-      "article-87570b12",
-      "87570b12",
-      "rhsa-2026-97288-important-yggdrasil-security-bug-f-37d764",
-      "rhsa-2026-97288-important-yggdrasil-security-bug-fix-and-enh"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec-39b793b0",
-    "title": "RHSA-2026:97328: Important: oci-seccomp-bpf-hook security, bug fix, and enhancement update",
-    "summary": "An update for oci-seccomp-bpf-hook is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97328",
-    "publishedAt": "2026-11-10T16:57:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec",
-      "article-39b793b0",
-      "39b793b0",
-      "rhsa-2026-97328-important-oci-seccomp-bpf-hook-sec-37d761",
-      "rhsa-2026-97328-important-oci-seccomp-bpf-hook-security-bug-"
-    ]
-  },
-  {
-    "slug": "notion-confirms-ai-chat-transcripts-exposed-in-fir-4ab5ac1f",
-    "title": "Notion Confirms AI Chat Transcripts Exposed in Fireworks AI Breach, Affecting Customer Workspaces",
-    "summary": "Notion has confirmed that a security incident at Fireworks AI exposed Notion AI chat transcripts linked to fewer than 1% of its customer workspaces. Insights, a feature that helps teams understand their AI usage, used the affected conversations.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/notion-confirms-data-breach/",
-    "publishedAt": "2026-11-10T16:54:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "notion-confirms-ai-chat-transcripts-exposed-in-fir",
-      "article-4ab5ac1f",
-      "4ab5ac1f",
-      "notion-confirms-ai-chat-transcripts-exposed-in-fir-53a2c6",
-      "notion-confirms-ai-chat-transcripts-exposed-in-fireworks-ai-"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97219-moderate-freerdp-security-bug-fix-a7b5af48",
-    "title": "RHSA-2026:97219: Moderate: freerdp security, bug fix, and enhancement update",
-    "summary": "An update for freerdp is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97219",
-    "publishedAt": "2026-11-10T16:54:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97219-moderate-freerdp-security-bug-fix",
-      "article-a7b5af48",
-      "a7b5af48",
-      "rhsa-2026-97219-moderate-freerdp-security-bug-fix-37d765",
-      "rhsa-2026-97219-moderate-freerdp-security-bug-fix-and-enhanc"
     ]
   }
 ];

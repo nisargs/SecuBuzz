@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 01:52:02 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 02:01:12 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Red Hat Satellite 6.17.13 receives critical async update</title>
@@ -80,6 +80,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>RHSA-2026:99825: Important: pki-deps:10.6 security, bug fix, and enhancement update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99825-important-pki-deps-10-6-security-b-d68d107f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99825-important-pki-deps-10-6-security-b-d68d107f</guid>
+      <description><![CDATA[An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
+      <pubDate>Thu, 12 Nov 2026 22:53:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99825">Red Hat Security Advisories</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>SCKit Worm Targets MSPs via ScreenConnect</title>
       <link>https://secubuzz.com/news/sckit-worm-targets-msps-via-screenconnect-39490bde</link>
       <guid isPermaLink="true">https://secubuzz.com/news/sckit-worm-targets-msps-via-screenconnect-39490bde</guid>
@@ -87,6 +96,15 @@
       <pubDate>Thu, 12 Nov 2026 22:53:10 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/">BleepingComputer</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>RHSA-2026:99915: Moderate: xz security update</title>
+      <link>https://secubuzz.com/news/rhsa-2026-99915-moderate-xz-security-update-346452a7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99915-moderate-xz-security-update-346452a7</guid>
+      <description><![CDATA[An update for xz is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
+      <pubDate>Thu, 12 Nov 2026 22:40:12 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99915">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Hackers Exploit 4,800 GitHub Accounts for Cloud Credentials</title>
@@ -195,6 +213,24 @@
       <pubDate>Thu, 12 Nov 2026 20:55:23 GMT</pubDate>
       <source url="https://arcticwolf.com/resources/blog/still-in-the-meeting-bluenoroff-six-months-on/">Arctic Wolf</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>USN-9087-1: signing-party vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9087-1-signing-party-vulnerability-f443fe14</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9087-1-signing-party-vulnerability-f443fe14</guid>
+      <description><![CDATA[It was discovered that the gpg-key2ps tool in signing-party did not properly sanitize user IDs before passing them to a shell. If a user were tricked into processing a specially crafted OpenPGP key, an attacker could possibly use this issue to execute arbitrary commands.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:55:13 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9087-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>USN-9086-1: SA-Exim vulnerability</title>
+      <link>https://secubuzz.com/news/usn-9086-1-sa-exim-vulnerability-05de8e34</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/usn-9086-1-sa-exim-vulnerability-05de8e34</guid>
+      <description><![CDATA[It was discovered that SA-Exim unsafely evaluated the parameters of its greylisting SpamAssassin rule. An attacker able to write SpamAssassin configuration files or rules could possibly use this issue to execute arbitrary code.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:54:57 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9086-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Gevent server flaw enables HTTP request smuggling</title>
@@ -419,42 +455,6 @@
       <description><![CDATA[Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply‑chain controls, and monitor agent behavior for anomalous execution.]]></description>
       <pubDate>Thu, 12 Nov 2026 17:00:00 GMT</pubDate>
       <source url="https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/">Microsoft Security</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Europol Seizes 235 Servers, 257 Domains of Gootloader, CastleRAT</title>
-      <link>https://secubuzz.com/news/europol-seizes-235-servers-257-domains-of-gootload-58ee2d20</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/europol-seizes-235-servers-257-domains-of-gootload-58ee2d20</guid>
-      <description><![CDATA[Europol and partners disrupted 235 servers and 257 domains linked to Gootloader, CastleRAT, and StealC malware services that facilitate ransomware and data theft. The operation seized 6.4 million victim datasets from the criminal infrastructure, exposing the scale of the cyber‑crime‑as‑a‑service model. No vendor patches are required; the action demonstrates law enforcement’s capacity to dismantle malware supply chains.]]></description>
-      <pubDate>Thu, 12 Nov 2026 16:58:22 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/malware-infrastructure-disrupted/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>N‑Able Zero‑Day Targets Even Patched Servers</title>
-      <link>https://secubuzz.com/news/n-able-zero-day-targets-even-patched-servers-f923e85e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-able-zero-day-targets-even-patched-servers-f923e85e</guid>
-      <description><![CDATA[New N‑Able N‑Central zero‑day exploits, named 4EverAble2Shell and Agent2Shell, target servers even after the latest emergency hotfix. The vulnerability enables unauthenticated attackers to gain root access, allowing deployment of cryptocurrency miners and other malicious payloads. Administrators should apply the latest patch, monitor for unauthorized processes, and verify that the HTTP/2 module is properly secured.]]></description>
-      <pubDate>Thu, 12 Nov 2026 16:53:00 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/n-able-n-central-zero-day-exploits/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Linux Kernel Vulnerabilities Affect AMD and Arm Processors</title>
-      <link>https://secubuzz.com/news/linux-kernel-vulnerabilities-affect-amd-and-arm-pr-590add84</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/linux-kernel-vulnerabilities-affect-amd-and-arm-pr-590add84</guid>
-      <description><![CDATA[Linux kernel flaws CVE-2023-20585 and CVE-2025-10263 let local attackers bypass memory protections on AMD and Arm CPUs, potentially compromising guest memory. The bugs enable out-of-bounds writes and privilege escalation, threatening SEV‑SNP guest memory and allowing unauthorized code execution. Kernel maintainers released patches; administrators should apply updates, verify hypervisor isolation, and monitor for anomalous memory activity.]]></description>
-      <pubDate>Thu, 12 Nov 2026 16:34:04 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9066-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches Multiple Kernel Subsystem Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-multiple-kernel-subsystem-vulnerabi-a74d4372</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-multiple-kernel-subsystem-vulnerabi-a74d4372</guid>
-      <description><![CDATA[Ubuntu released a kernel update addressing several security issues that could allow attackers to compromise systems via vulnerable subsystems. The update fixes flaws in network file systems, stream parsing, ARM64, PowerPC, RISC‑V, S390, UML, x86, block layer, Android, Bluetooth, TPM, and other drivers. Users should apply the update promptly to eliminate potential privilege escalation or denial‑of‑service risks.]]></description>
-      <pubDate>Thu, 12 Nov 2026 16:32:50 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9018-2">Ubuntu Security Notices</source>
       <category>Vulnerability</category>
     </item>
   </channel>

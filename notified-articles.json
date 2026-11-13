@@ -4714,5 +4714,11 @@
   "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114155",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114156",
-  "https://access.redhat.com/errata/RHSA-2026:99611"
+  "https://access.redhat.com/errata/RHSA-2026:99611",
+  "https://access.redhat.com/errata/RHSA-2026:99825",
+  "https://access.redhat.com/errata/RHSA-2026:99915",
+  "https://ubuntu.com/security/notices/USN-9087-1",
+  "https://ubuntu.com/security/notices/USN-9086-1",
+  "https://access.redhat.com/errata/RHSA-2026:99632",
+  "https://access.redhat.com/errata/RHSA-2026:99696"
 ]
