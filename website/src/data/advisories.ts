@@ -52,6 +52,266 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-128077",
+    "slug": "cve-2026-128077",
+    "vendor": "npm",
+    "product": "@nuxt/nitro-server",
+    "name": "Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 6.5,
+    "severity": "Medium",
+    "cwe": "CWE-436",
+    "ransomware": false,
+    "description": "Since 4.6.0, Nuxt parses a request path that starts with // as a URL with a host before rendering a page, so //x/admin renders the page at /admin. Nitro's routing, Nitro's route rules and server/middleware see the path as //x/admin, so server-side checks keyed on /admin do not apply. The fix for GHSA-9v7c-q64q-vv33 in 4.6.3 covered dot segments but not this form.",
+    "requiredAction": "Upgrade @nuxt/nitro-server to version 4.6.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-r99w-jh2x-3mg9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128077"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128080",
+    "slug": "cve-2026-128080",
+    "vendor": "npm",
+    "product": "@opentelemetry/instrumentation-http",
+    "name": "OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 5.8,
+    "severity": "Medium",
+    "cwe": "CWE-200",
+    "ransomware": false,
+    "description": "@opentelemetry/instrumentation-http redacts sensitive URL query parameters on outgoing (client) spans but not on incoming (server) spans.",
+    "requiredAction": "Upgrade @opentelemetry/instrumentation-http to version 0.222.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-3v2p-hm54-8qcq"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128080"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128082",
+    "slug": "cve-2026-128082",
+    "vendor": ".NET (NuGet)",
+    "product": "AutoMapper",
+    "name": "AutoMapper: Uncontrolled Recursion with Constructor Parameters",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "MaxDepth, whether set explicitly or applied by default (64) to self-referential type maps, was not enforced when the recursion goes through constructor parameters. Mapping a deeply nested source to a destination built through its constructor, such as a positional record, recurses without bound and throws a StackOverflowException. That exception can't be caught and terminates the process.",
+    "requiredAction": "Upgrade AutoMapper to version 16.3.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-6vhm-j9h7-f9gh"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128082"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128087",
+    "slug": "cve-2026-128087",
+    "vendor": "Rust (Cargo)",
+    "product": "russh",
+    "name": "russh kex_done: Shared-secret callback runs before server host-key verification",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 3.7,
+    "severity": "Low",
+    "cwe": "CWE-696",
+    "ransomware": false,
+    "description": "A malicious SSH server whose host key is rejected can still cause russh's client::Handler::kex_done() callback to execute with the raw key-exchange shared secret. Applications using the callback for its documented protocol-bridging purpose may derive keys, initialize a secondary data channel, or perform another externally visible action before russh calls check_server_key() and rejects the server.",
+    "requiredAction": "Upgrade russh to version 0.65.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-9264-jvgf-6w2f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128087"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128088",
+    "slug": "cve-2026-128088",
+    "vendor": "Rust (Cargo)",
+    "product": "russh",
+    "name": "russh try_sign: asynchronous confirmation can sign after agent lock",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 2.2,
+    "severity": "Low",
+    "cwe": "CWE-367",
+    "ransomware": false,
+    "description": "In russh 0.65.0, a sign request for a confirmation-constrained key can retain and use the private key after another connection locks the agent. try_sign() snapshots an Arc<PrivateKey> before awaiting Agent::confirm() and does not revalidate the shared lock state after the await.",
+    "requiredAction": "Upgrade russh to version 0.65.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-736f-c93q-9fwx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128088"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128086",
+    "slug": "cve-2026-128086",
+    "vendor": "Go",
+    "product": "go.opentelemetry.io/otel/baggage",
+    "name": "OpenTelemetry-Go: Eager W3C baggage-property materialization causes bounded memory-allocation amplification",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "OpenTelemetry Go eagerly materializes W3C baggage metadata into property objects during parsing. Slice growth, serialization, and copying into the internal representation cause bounded but disproportionate memory-allocation amplification for a valid, densely populated header.",
+    "requiredAction": "Upgrade go.opentelemetry.io/otel/baggage to version 1.47.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-rrfc-gjm9-cgrj"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128086"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128085",
+    "slug": "cve-2026-128085",
+    "vendor": "Go",
+    "product": "go.opentelemetry.io/otel/sdk",
+    "name": "opentelemetry-go: AttributeValueLengthLimit is fully bypassed by attribute values composed of valid U+FFFD runes",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 5.3,
+    "severity": "Medium",
+    "cwe": "CWE-135",
+    "ransomware": false,
+    "description": "The AttributeValueLengthLimit span/log-record limit can be bypassed entirely with attribute values that consist of valid U+FFFD (REPLACEMENT CHARACTER) runes.",
+    "requiredAction": "Upgrade go.opentelemetry.io/otel/sdk to version 1.47.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-q7gw-24fr-5p69"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128085"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128084",
+    "slug": "cve-2026-128084",
+    "vendor": "RubyGems",
+    "product": "sqlite3",
+    "name": "sqlite3-ruby: Possible SQL query truncation when a string is 4 GiB or larger",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 4.8,
+    "severity": "Medium",
+    "cwe": "CWE-681",
+    "ransomware": false,
+    "description": "sqlite3-ruby cast Ruby string lengths (long) to int before passing them to SQLite. On 64-bit platforms, a string of 4 GiB (2^32 bytes) or larger had its length wrap, so SQLite saw only the first length mod 2^32 bytes. An attacker who controls the length of a SQL string could truncate the query, for example dropping a trailing WHERE clause.",
+    "requiredAction": "Upgrade sqlite3 to version 2.10.2 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4fqr-96q8-xrfx"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128084"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128083",
+    "slug": "cve-2026-128083",
+    "vendor": "Composer",
+    "product": "laravel/framework",
+    "name": "Laravel: Task Output Injection - Concurrency Process",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 2.3,
+    "severity": "Low",
+    "cwe": "CWE-502",
+    "ransomware": false,
+    "description": "If a concurrency task prints user-controlled text, an attacker can forge the framework's internal result message and achieve remote code execution in certain conditions",
+    "requiredAction": "Upgrade laravel/framework to version 12.71.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-63hm-g96r-2m2q"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128083"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-128081",
+    "slug": "cve-2026-128081",
+    "vendor": ".NET (NuGet)",
+    "product": "AutoMapper",
+    "name": "AutoMapper: Denial of Service via uncontrolled recursion that bypasses MaxDepth",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-674",
+    "ransomware": false,
+    "description": "The default and explicit MaxDepth limits added for CVE-2026-32933 don't apply to several mapping paths. Mapping a deeply nested source through any of them recurses without bound and throws a StackOverflowException, which can't be caught and terminates the process.",
+    "requiredAction": "Upgrade AutoMapper to version 16.3.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-gpwp-5797-mjff"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128081"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-126361",
     "slug": "cve-2026-126361",
     "vendor": "npm",
@@ -1087,266 +1347,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126069"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126188",
-    "slug": "cve-2026-126188",
-    "vendor": "RubyGems",
-    "product": "activestorage",
-    "name": "Active Storage: Possible local file disclosure in video previews and analysis",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 3.7,
-    "severity": "Low",
-    "cwe": "CWE-200",
-    "ransomware": false,
-    "description": "Active Storage's VideoPreviewer, VideoAnalyzer and AudioAnalyzer run ffmpeg and ffprobe on a blob's contents without restricting the input format, so FFmpeg selects a demuxer by probing the file. A blob created through a direct upload keeps the content type the client declared, so a client can store an HLS playlist under a video/ or audio/ type.",
-    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-3f4q-8x5m-76v8"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126188"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126345",
-    "slug": "cve-2026-126345",
-    "vendor": "npm",
-    "product": "basic-ftp",
-    "name": "basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list()",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "basic-ftp's MLSD directory-listing parser (src/parseListMLSD.ts) looks up fact-handler functions in a plain object literal keyed directly by fact names taken from the FTP server's response, with no validation.",
-    "requiredAction": "Upgrade basic-ftp to version 6.2.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-5pm8-86m8-9m6r"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126345"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126343",
-    "slug": "cve-2026-126343",
-    "vendor": "npm",
-    "product": "@hono/node-server",
-    "name": "@hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-248",
-    "ransomware": false,
-    "description": "While @hono/node-server waits for the Hono application to handle a WebSocket upgrade request, the socket has no error listener. If the client resets the TCP connection during that time, the resulting ECONNRESET is emitted as an unhandled 'error' event and the process terminates.",
-    "requiredAction": "Upgrade @hono/node-server to version 2.1.6 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-qv5m-9pm6-hqp3"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126343"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126210",
-    "slug": "cve-2026-126210",
-    "vendor": "npm",
-    "product": "@hono/node-server",
-    "name": "@hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-436",
-    "ransomware": false,
-    "description": "@hono/node-server passes the raw request-target to the WHATWG URL parser, which treats a backslash in the path as / and then resolves .. segments. A request for /admin\\secret or /public\\..\\admin/secret reaches the application as /admin/secret.",
-    "requiredAction": "Upgrade @hono/node-server to version 2.1.6 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jpvv-r467-5p4w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126210"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126208",
-    "slug": "cve-2026-126208",
-    "vendor": "RubyGems",
-    "product": "loofah",
-    "name": "Loofah: SVG `<textPath>` and `<mpath>` bypass local-reference restriction",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 4.7,
-    "severity": "Medium",
-    "cwe": "CWE-178",
-    "ransomware": false,
-    "description": "Loofah restricts href and xlink:href on certain SVG elements to same-document references. Two elements escaped the restriction: - <textPath>: SVG_ALLOW_LOCAL_HREF listed it in lowercase as textpath, but the HTML5 parser names the element textPath inside <svg>, so the check never matched on the HTML5 path.",
-    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-345x-3rq2-jfrm"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126208"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126209",
-    "slug": "cve-2026-126209",
-    "vendor": "RubyGems",
-    "product": "loofah",
-    "name": "Loofah allowed_uri? treats javascript&#x3a alert(1) as safe",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "Loofah::HTML5::Scrub.allowed_uri? returns true for a javascript: or vbscript: URI whose scheme is split by a numeric character reference without a trailing semicolon, followed by a character that allowed_uri? strips, such as a space or tab. A browser ends the reference at that character and reads javascript&#x3a alert(1) as javascript: alert(1).",
-    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-p9wj-w8xq-vjx6"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126209"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126207",
-    "slug": "cve-2026-126207",
-    "vendor": "RubyGems",
-    "product": "loofah",
-    "name": "Loofah: CSS url() sanitization bypass via escaped parentheses",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 4.7,
-    "severity": "Medium",
-    "cwe": "CWE-180",
-    "ransomware": false,
-    "description": "Loofah::HTML5::Scrub.scrub_css rejected any property whose top-level Crass tokens included a :url or :bad_url, and left url out of the allowed CSS functions. Both checks ran only against the first parse of the style attribute.",
-    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-m3x9-938q-5767"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126207"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126205",
-    "slug": "cve-2026-126205",
-    "vendor": "RubyGems",
-    "product": "loofah",
-    "name": "Loofah: Regular expression denial of service in the SVG local-reference check",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-400",
-    "ransomware": false,
-    "description": "Loofah's HTML5 sanitizer restricts the href and xlink:href attributes of SVG reference elements to local references. That check matched the attribute value against /^\\s[^#\\s]./m. In Ruby ^ anchors to every line start and \\s matches newlines, so an all-whitespace value made the engine rescan the value from each of its line starts, taking time quadratic in its length.",
-    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-mf2j-8f84-cc9q"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126205"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126206",
-    "slug": "cve-2026-126206",
-    "vendor": "RubyGems",
-    "product": "loofah",
-    "name": "Loofah allowed_uri? treats data:text&sol;html as safe text/plain",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "Loofah::HTML5::Scrub.allowed_uri? returns true for a data: URI whose mediatype is written with the HTML5 named character reference &sol; in place of the solidus. Loofah reads that mediatype as malformed and falls back to the allowed text/plain, while a browser decodes the reference and reads the same URI as text/html.",
-    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-jcff-cj73-4w4f"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126206"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126203",
-    "slug": "cve-2026-126203",
-    "vendor": "RubyGems",
-    "product": "loofah",
-    "name": "Loofah: Mutation XSS in the HTML5 scrubbers through unescaped attribute values",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 6.1,
-    "severity": "Medium",
-    "cwe": "CWE-79",
-    "ransomware": false,
-    "description": "Loofah's HTML5 scrubbers could emit output that a browser parses into different markup, allowing mutation XSS. Nokogiri < 1.19.5 did not escape < and > in attribute values. When the output contained certain MathML, a browser treated markup inside an allowed attribute as live HTML. The :strip scrubber is affected in every browser.",
-    "requiredAction": "Upgrade loofah to version 2.25.3 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h6v6-rg66-fqj4"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126203"
       }
     ],
     "source": "GITHUB"

@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "trezor-confirms-hardware-implants-in-safe-5-wallet-7d6ffefc",
+    "title": "Trezor Confirms Hardware Implants in Safe 5 Wallets",
+    "summary": "Trezor confirmed that three Safe 5 wallets sold by CryptoBilis contained malicious implants that exfiltrate recovery phrases over cellular networks. The implants capture seed phrases during device setup and transmit them to attackers, enabling full wallet takeover. Trezor issued a firmware patch that disables the vulnerable hardware path; users must upgrade and verify device authenticity.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+    "publishedAt": "2026-11-13T19:38:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "trezor-confirms-hardware-implants-in-safe-5-wallet",
+      "article-7d6ffefc",
+      "7d6ffefc",
+      "trezor-confirms-hardware-implants-in-safe-5-wallet-4e2012",
+      "trezor-confirms-hardware-implants-in-safe-5-wallets"
+    ]
+  },
+  {
+    "slug": "weekly-cybersecurity-roundup-crypto-scams-turla-ra-2be048f4",
+    "title": "Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach",
+    "summary": "This week, law enforcement dismantled several crypto‑scam operations and seized associated malware infrastructure. Meanwhile, the Turla APT group deployed the Cereal spyware to target government entities, while attackers breached Railway’s systems to exfiltrate AI research. Security teams should monitor for Cereal indicators, review Railway security controls, and stay alert to emerging crypto‑scam tactics.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SentinelOne",
+    "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8",
+    "publishedAt": "2026-11-13T17:46:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "weekly-cybersecurity-roundup-crypto-scams-turla-ra",
+      "article-2be048f4",
+      "2be048f4",
+      "weekly-cybersecurity-roundup-crypto-scams-turla-ra-5e83ec",
+      "weekly-cybersecurity-roundup-crypto-scams-turla-railway-brea"
+    ]
+  },
+  {
     "slug": "university-of-texas-at-arlington-warns-personal-in-b90429e7",
     "title": "University of Texas at Arlington warns personal information stolen during cyberattack",
     "summary": "In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.",
@@ -48,6 +86,25 @@ export const news: NewsBrief[] = [
       "2aec0a44",
       "postgresql-patches-52-flaws-including-22-year-old-6f38cf",
       "postgresql-patches-52-flaws-including-22-year-old-bug-enabli"
+    ]
+  },
+  {
+    "slug": "germany-passes-legislation-authorizing-intelligenc-0544a143",
+    "title": "Germany Passes Legislation Authorizing Intelligence Agency Hacking Powers",
+    "summary": "The German Bundestag passed legislation granting national spy agencies expanded authority for cyber hacking and sabotage activities. Approved by a vote of 308 to 190 with 71 abstentions, the bill marks the biggest postwar overhaul of the country's intelligence laws. This parliamentary enactment follows initial approval of the draft legislation by Chancellor Friedrich Merz's cabinet several months prior.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
+    "publishedAt": "2026-11-13T16:32:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "germany-passes-legislation-authorizing-intelligenc",
+      "article-0544a143",
+      "0544a143",
+      "germany-passes-legislation-authorizing-intelligenc-61e8b4",
+      "germany-passes-legislation-authorizing-intelligence-agency-h"
     ]
   },
   {
@@ -1160,6 +1217,89 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "zdi-26-958-kicad-plugin-directory-traversal-remote-b16050b8",
+    "title": "ZDI-26-958: KiCad Plugin Directory Traversal Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-126972.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-958/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126972"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-958-kicad-plugin-directory-traversal-remote",
+      "article-b16050b8",
+      "b16050b8",
+      "zdi-26-958-kicad-plugin-directory-traversal-remote-6f3d1b",
+      "zdi-26-958-kicad-plugin-directory-traversal-remote-code-exec"
+    ]
+  },
+  {
+    "slug": "kicad-directory-traversal-rce-via-project-archive-8a4bb3b5",
+    "title": "KiCad Directory Traversal RCE via Project Archive Exploit",
+    "summary": "A directory traversal flaw in KiCad’s project archive handling lets remote attackers run arbitrary code on affected installations. CVE‑2026‑126971 carries a CVSS score of 7.8 and needs user interaction, such as opening a malicious file. KiCad has issued a patch; apply the latest release or follow the vendor’s advisory to close the flaw. The flaw is tracked as CVE-2026-126971.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-957/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126971"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "kicad-directory-traversal-rce-via-project-archive",
+      "article-8a4bb3b5",
+      "8a4bb3b5",
+      "kicad-directory-traversal-rce-via-project-archive-6f3d1b",
+      "kicad-directory-traversal-rce-via-project-archive-exploit"
+    ]
+  },
+  {
+    "slug": "kicad-schlib-parsing-oob-write-rce-vulnerability-926a510e",
+    "title": "KiCad SCHLIB Parsing OOB Write RCE Vulnerability",
+    "summary": "An out‑of‑bounds write in KiCad’s Altium SCHLIB file parser allows remote attackers to execute arbitrary code on affected installations. CVE‑2026‑126970 has a CVSS score of 7.8 and requires user interaction, such as opening a malicious file. KiCad released a patch; apply the latest version or consult the vendor’s advisory to remediate the flaw. The flaw is tracked as CVE-2026-126970.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-956/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126970"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "kicad-schlib-parsing-oob-write-rce-vulnerability",
+      "article-926a510e",
+      "926a510e",
+      "kicad-schlib-parsing-oob-write-rce-vulnerability-6f3d1b"
+    ]
+  },
+  {
+    "slug": "zdi-26-955-kde-gwenview-png-file-parsing-integer-o-360dc6d6",
+    "title": "ZDI-26-955: KDE Gwenview PNG File Parsing Integer Overflow Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of KDE Gwenview. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The following CVEs are assigned: CVE-2026-126973.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-955/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126973"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-955-kde-gwenview-png-file-parsing-integer-o",
+      "article-360dc6d6",
+      "360dc6d6",
+      "zdi-26-955-kde-gwenview-png-file-parsing-integer-o-6f3d1b",
+      "zdi-26-955-kde-gwenview-png-file-parsing-integer-overflow-re"
     ]
   },
   {
@@ -9422,139 +9562,6 @@ export const news: NewsBrief[] = [
       "52a798c2",
       "meta-detectron2-cfgnode-merge-from-file-rce-vulner-6f3d08",
       "meta-detectron2-cfgnode-merge-from-file-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "meta-detectron2-load-proposals-into-dataset-rce-vu-ee4a1129",
-    "title": "Meta Detectron2 load_proposals_into_dataset RCE Vulnerability",
-    "summary": "A zero‑day deserialization flaw in Meta Detectron2’s load_proposals_into_dataset component permits attackers to run code when a user opens a malicious file. Rated CVSS 7.8, the flaw requires user interaction and exploits untrusted data deserialization for code execution. Meta has not yet patched; teams should monitor for updates and disable load_proposals_into_dataset usage until a fix is released.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-908/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-detectron2-load-proposals-into-dataset-rce-vu",
-      "article-ee4a1129",
-      "ee4a1129",
-      "meta-detectron2-load-proposals-into-dataset-rce-vu-6f3d08",
-      "meta-detectron2-load-proposals-into-dataset-rce-vulnerabilit"
-    ]
-  },
-  {
-    "slug": "meta-detectron2-densepose-deserialization-enables-1bab7251",
-    "title": "Meta Detectron2 DensePose Deserialization Enables Remote Code Execution",
-    "summary": "A zero‑day deserialization flaw in Meta Detectron2’s DensePose lets remote attackers run code when a user opens a malicious file or visits a crafted page. Rated CVSS 7.8, the flaw requires user interaction and can lead to full system compromise. Meta has not yet released a patch; teams should block the library or isolate deployments until a fix arrives.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-911/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-detectron2-densepose-deserialization-enables",
-      "article-1bab7251",
-      "1bab7251",
-      "meta-detectron2-densepose-deserialization-enables-6f3d0b",
-      "meta-detectron2-densepose-deserialization-enables-remote-cod"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-filternamesdataset-remote-code-execut-a1726cbb",
-    "title": "Meta fairseq FilterNamesDataset Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-915/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-filternamesdataset-remote-code-execut",
-      "article-a1726cbb",
-      "a1726cbb",
-      "meta-fairseq-filternamesdataset-remote-code-execut-6f3d0c",
-      "meta-fairseq-filternamesdataset-remote-code-execution-vulner"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-wav2vecmodel-yaml-remote-code-executi-b796f576",
-    "title": "Meta fairseq Wav2VecModel YAML Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-914/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-wav2vecmodel-yaml-remote-code-executi",
-      "article-b796f576",
-      "b796f576",
-      "meta-fairseq-wav2vecmodel-yaml-remote-code-executi-6f3d0c",
-      "meta-fairseq-wav2vecmodel-yaml-remote-code-execution-vulnera"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-load-audio-path-remote-code-execution-e49900b8",
-    "title": "Meta fairseq load_audio_path Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-913/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-load-audio-path-remote-code-execution",
-      "article-e49900b8",
-      "e49900b8",
-      "meta-fairseq-load-audio-path-remote-code-execution-6f3d0b",
-      "meta-fairseq-load-audio-path-remote-code-execution-vulnerabi"
-    ]
-  },
-  {
-    "slug": "zdi-26-912-0day-meta-detectron2-detection-checkpoi-11e5aa46",
-    "title": "ZDI-26-912: (0Day) Meta Detectron2 detection_checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta Detectron2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-912/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-912-0day-meta-detectron2-detection-checkpoi",
-      "article-11e5aa46",
-      "11e5aa46",
-      "zdi-26-912-0day-meta-detectron2-detection-checkpoi-6f3d0b",
-      "zdi-26-912-0day-meta-detectron2-detection-checkpoint-deseria"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-vggtransformermodel-yaml-rce-requires-3d01e0e6",
-    "title": "Meta fairseq VGGTransformerModel YAML RCE Requires User File Open",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-918/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-vggtransformermodel-yaml-rce-requires",
-      "article-3d01e0e6",
-      "3d01e0e6",
-      "meta-fairseq-vggtransformermodel-yaml-rce-requires-6f3d0c",
-      "meta-fairseq-vggtransformermodel-yaml-rce-requires-user-file"
     ]
   }
 ];
