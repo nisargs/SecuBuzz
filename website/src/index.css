@@ -59,3 +59,17 @@ body {
   outline: 2px solid rgb(var(--accent));
   outline-offset: 2px;
 }
+
+/* Hide scrollbars on mobile swipe containers */
+.scrollbar-none::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.scrollbar-none,
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

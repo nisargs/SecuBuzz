@@ -28,6 +28,10 @@
   - **Never touch the Google Play listing, signing keys, EAS projects, or the secubuzz.com domain and DNS.**
   - **Snapshot before you migrate.** Any change touching D1 schema or R2 data starts with a backup.
   - **When in doubt, stop and ask.** Any command that destroys data or takes the site or app offline needs explicit user confirmation first. Destruction is never the default.
+  - **Strict Separation of Mobile vs. Desktop Layouts (Zero Cross-Breakpoint Regressions):**
+    - **Advisories & News Desktop Filter Toolbars Are Permanently Locked:** NEVER alter, wrap, or refactor desktop filter toolbars when addressing mobile browser requests.
+    - Any mobile-specific fixes or responsive adjustments MUST be strictly isolated under mobile-only media queries (`max-md:`, `hidden md:flex`, etc.) or mobile-specific modals (`MobileMyStackModal`). Shared desktop layout containers (`md:`, `lg:`) must never be modified or polluted with mobile overrides that break desktop spacing, wrapping, or alignment.
+
 
 ## 3. Threat Severity Classification (Objective Criteria)
 - Grounded strictly in CVSS 3.1/4.0 and CISA KEV framework:

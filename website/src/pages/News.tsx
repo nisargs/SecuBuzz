@@ -387,7 +387,7 @@ export function News() {
           </div>
 
           {/* Row 2: Threat Severity + Sources + My Stack (Edge-to-edge touch scroll on mobile) */}
-          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 overflow-hidden">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
             {/* Threat Severity Chips */}
             <div className="flex items-center gap-1 overflow-x-auto scrollbar-none pb-0.5 -mx-5 px-5 sm:mx-0 sm:px-0">
               <button
