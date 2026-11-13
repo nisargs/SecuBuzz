@@ -5,8 +5,26 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 23:45:50 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:49:27 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Red Hat Satellite 6.17.13 receives critical async update</title>
+      <link>https://secubuzz.com/news/red-hat-satellite-6-17-13-receives-critical-async-40212a83</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-6-17-13-receives-critical-async-40212a83</guid>
+      <description><![CDATA[Red Hat Satellite 6.17.13 for RHEL 9 contains critical flaws that could let attackers compromise satellite management. The flaws are rated CVSS 9.0+, exposing remote code execution paths that bypass authentication and grant full control over satellite services. Red Hat recommends installing the provided patch immediately; administrators should also verify satellite configuration and apply any additional hardening guidelines.]]></description>
+      <pubDate>Thu, 12 Nov 2026 23:52:46 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99950">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Red Hat Satellite 6.18.11 receives critical async update</title>
+      <link>https://secubuzz.com/news/red-hat-satellite-6-18-11-receives-critical-async-50d0fdfe</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-6-18-11-receives-critical-async-50d0fdfe</guid>
+      <description><![CDATA[Red Hat Satellite 6.18.11 for RHEL 9 includes critical vulnerabilities that may allow attackers to take control of satellite services. These flaws are rated CVSS 9.0+, providing remote code execution paths that bypass authentication and enable full administrative access. Apply the vendor’s patch immediately and review satellite configuration to enforce least‑privilege access controls.]]></description>
+      <pubDate>Thu, 12 Nov 2026 23:52:16 GMT</pubDate>
+      <source url="https://access.redhat.com/errata/RHSA-2026:99952">Red Hat Security Advisories</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14</title>
       <link>https://secubuzz.com/news/postgresql-security-update-fixes-52-vulnerabilitie-360a9c71</link>
@@ -24,6 +42,15 @@
       <pubDate>Thu, 12 Nov 2026 23:05:26 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99741">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Chrome for Android Update</title>
+      <link>https://secubuzz.com/news/chrome-for-android-update-53843f68</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-for-android-update-53843f68</guid>
+      <description><![CDATA[We've just released Chrome 158 (158.0.8127.36) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .]]></description>
+      <pubDate>Thu, 12 Nov 2026 23:00:00 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_012297226.html">Google Chrome Releases</source>
+      <category>General</category>
     </item>
     <item>
       <title>RHSA-2026:99715: Important: krb5 security, bug fix, and enhancement update</title>
@@ -98,6 +125,15 @@
       <category>CVE</category>
     </item>
     <item>
+      <title>Debian-LAN ACL flaw allows credential changes</title>
+      <link>https://secubuzz.com/news/debian-lan-acl-flaw-allows-credential-changes-aefd640e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/debian-lan-acl-flaw-allows-credential-changes-aefd640e</guid>
+      <description><![CDATA[A flaw in Debian-LAN’s Kerberos admin server ACLs permits authenticated users to alter other users’ credentials, enabling privilege escalation. The vulnerability stems from overly permissive ACL configuration, lacking proper access checks, and could be exploited by insiders with valid credentials. Red Hat recommends applying the latest Debian-LAN patch or tightening ACLs to restrict admin server access, mitigating potential credential tampering.]]></description>
+      <pubDate>Thu, 12 Nov 2026 21:02:18 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9068-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
       <title>Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams</title>
       <link>https://secubuzz.com/news/microsoft-365-outage-disrupts-outlook-exchange-onl-2d15b165</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-outage-disrupts-outlook-exchange-onl-2d15b165</guid>
@@ -114,6 +150,15 @@
       <pubDate>Thu, 12 Nov 2026 20:55:23 GMT</pubDate>
       <source url="https://arcticwolf.com/resources/blog/still-in-the-meeting-bluenoroff-six-months-on/">Arctic Wolf</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Gevent server flaw enables HTTP request smuggling</title>
+      <link>https://secubuzz.com/news/gevent-server-flaw-enables-http-request-smuggling-12ae9695</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/gevent-server-flaw-enables-http-request-smuggling-12ae9695</guid>
+      <description><![CDATA[The gevent WSGI server fails to validate chunked transfer encoding trailers, enabling remote attackers to smuggle HTTP requests and potentially elevate privileges. Request smuggling can bypass security controls, leading to unauthorized data access or command execution. Upgrade to the latest gevent version or apply the vendor’s patch, and enforce strict trailer validation.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:54:27 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9083-1">Ubuntu Security Notices</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Red Hat Releases Perl-CGI Security Update</title>
@@ -161,6 +206,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Chrome 159 Promoted to Beta Channel</title>
+      <link>https://secubuzz.com/news/chrome-159-promoted-to-beta-channel-c2196938</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-159-promoted-to-beta-channel-c2196938</guid>
+      <description><![CDATA[Google Chrome promoted version 159 to the Beta channel for Windows, macOS, and Linux, expanding early access for developers and testers. The update includes under‑the‑hood performance and stability improvements alongside several new features, but no security vulnerabilities are reported. Users may switch channels via the Chrome settings or consult the Chromium blog for detailed change logs and bug‑reporting procedures.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:13:33 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0414360355.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Red Hat Issues libXtst Security Update</title>
       <link>https://secubuzz.com/news/red-hat-issues-libxtst-security-update-0390e8d5</link>
       <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libxtst-security-update-0390e8d5</guid>
@@ -168,6 +222,15 @@
       <pubDate>Thu, 12 Nov 2026 20:10:28 GMT</pubDate>
       <source url="https://access.redhat.com/errata/RHSA-2026:99745">Red Hat Security Advisories</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Luna Moth Targets Law Firms with Token Theft</title>
+      <link>https://secubuzz.com/news/luna-moth-targets-law-firms-with-token-theft-cbb89b75</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/luna-moth-targets-law-firms-with-token-theft-cbb89b75</guid>
+      <description><![CDATA[Extortion group Luna Moth re‑targets law firms that declined its first ransom, launching a social‑engineering campaign to harvest Microsoft access tokens. The attack leverages phishing emails that embed malicious attachments or links, exploiting user credential theft to gain privileged cloud access. Security teams should enforce multi‑factor authentication, monitor token usage, and conduct employee awareness training to mitigate token‑based credential compromise.]]></description>
+      <pubDate>Thu, 12 Nov 2026 20:09:41 GMT</pubDate>
+      <source url="https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time">Dark Reading</source>
+      <category>Ransomware</category>
     </item>
     <item>
       <title>Sudo Time Restriction Bypass Vulnerability</title>
@@ -186,6 +249,15 @@
       <pubDate>Thu, 12 Nov 2026 19:51:16 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>United Airlines Bans AI Assistants for Credential Safety</title>
+      <link>https://secubuzz.com/news/united-airlines-bans-ai-assistants-for-credential-d991520a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/united-airlines-bans-ai-assistants-for-credential-d991520a</guid>
+      <description><![CDATA[United Airlines has prohibited customers from using AI assistants to access its services, citing risks of credential exposure and transactions. The decision follows concerns that shared login tokens could be harvested by malicious actors, enabling unauthorized account activity and data leakage. Customers are advised to use official mobile apps and two‑factor authentication, and airlines will monitor for suspicious account behavior.]]></description>
+      <pubDate>Thu, 12 Nov 2026 19:20:00 GMT</pubDate>
+      <source url="https://therecord.media/united-airlines-to-block-customers-using-ai-agents">The Record</source>
+      <category>General</category>
     </item>
     <item>
       <title>Red Hat Issues Critical Fence‑Agents Update</title>
@@ -384,78 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 15:38:49 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html">The Hacker News</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Apache Fixes Critical HTTP/2 RCE Vulnerability</title>
-      <link>https://secubuzz.com/news/apache-fixes-critical-http-2-rce-vulnerability-8fa80d31</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-fixes-critical-http-2-rce-vulnerability-8fa80d31</guid>
-      <description><![CDATA[Apache patched a critical mod_http2 race condition that could let unauthenticated attackers execute code on HTTP/2‑enabled servers. The flaw, CVE-2026-119618, exploits a race condition in HTTP/2, enabling unauthenticated remote code execution that could compromise all affected servers. Administrators should apply the latest Apache release and disable HTTP/2 if immediate patching is not possible to mitigate the vulnerability.]]></description>
-      <pubDate>Thu, 12 Nov 2026 15:38:31 GMT</pubDate>
-      <source url="https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/">SecurityWeek</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Fake AI Domains Redirect to ClickFix and Browser Malware</title>
-      <link>https://secubuzz.com/news/fake-ai-domains-redirect-to-clickfix-and-browser-m-cb9cc025</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-ai-domains-redirect-to-clickfix-and-browser-m-cb9cc025</guid>
-      <description><![CDATA[Researchers discovered 186 fake AI domains redirecting users to ClickFix-style lures, browser-hijacking malware, and search‑hijacking extensions. The attack leverages typographical prompt deception, codenamed TypoPrompting, to trick users into verifying fake AI tools, enabling credential theft and malicious payload delivery. Security teams should block these domains, enforce strict DNS filtering, and educate users about authentic AI services to prevent exploitation.]]></description>
-      <pubDate>Thu, 12 Nov 2026 15:15:40 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Police Seize Servers Behind Gootloader, CastleRAT, StealC</title>
-      <link>https://secubuzz.com/news/police-seize-servers-behind-gootloader-castlerat-s-f1e4e109</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/police-seize-servers-behind-gootloader-castlerat-s-f1e4e109</guid>
-      <description><![CDATA[Europol and nine partner agencies seized hundreds of servers and domains that supported the Gootloader, CastleRAT, and StealC malware ecosystems. The takedown disrupted command‑and‑control channels, halted credential‑stealing operations, and limited the malware’s ability to deliver ransomware payloads to corporate networks. Security teams should monitor residual infrastructure, apply network segmentation, and maintain threat intelligence feeds to detect command‑and‑control domains.]]></description>
-      <pubDate>Thu, 12 Nov 2026 15:07:20 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Picus Launches Autonomous AI Penetration Testing Tool</title>
-      <link>https://secubuzz.com/news/picus-launches-autonomous-ai-penetration-testing-t-0099f552</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/picus-launches-autonomous-ai-penetration-testing-t-0099f552</guid>
-      <description><![CDATA[Picus Security introduced Picus Autonomous Penetration Testing, an AI-driven tool that chains real exploits toward an organization’s critical assets. The system operates under strict governance, preventing agents from overriding controls while delivering realistic breach scenarios. Teams can validate defenses, prioritize remediation, and train staff, with no public vulnerability or exploit disclosed.]]></description>
-      <pubDate>Thu, 12 Nov 2026 15:05:02 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/12/picus-autonomous-penetration-testing/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>AI Agents Breach Semiconductor, Defense, Civil Targets</title>
-      <link>https://secubuzz.com/news/ai-agents-breach-semiconductor-defense-civil-targe-918fee5a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-breach-semiconductor-defense-civil-targe-918fee5a</guid>
-      <description><![CDATA[Attackers leveraged the open‑source Cairn AI agent framework to autonomously breach semiconductor, defense, and civil society organizations. The framework chains exploits without human intervention, enabling rapid compromise of critical infrastructure and sensitive data, with evidence of active exploitation. Security teams should monitor for anomalous AI activity, enforce strict access controls, and apply timely patches to mitigate automated attack vectors.]]></description>
-      <pubDate>Thu, 12 Nov 2026 15:00:31 GMT</pubDate>
-      <source url="https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/">Unit 42</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Attackers breached 10 organizations with an open-source AI pentest framework</title>
-      <link>https://secubuzz.com/news/attackers-breached-10-organizations-with-an-open-s-0ba41d82</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/attackers-breached-10-organizations-with-an-open-s-0ba41d82</guid>
-      <description><![CDATA[Chinese-speaking attackers used Cairn, an open-source AI penetration testing framework, to run 25 operations against at least 19 organizations in August and September 2026. Palo Alto Networks’ Unit 42 found that the attackers gained unauthorized access or pulled data at 10 of them, often after typing little more than a domain name and a one-line goal.]]></description>
-      <pubDate>Thu, 12 Nov 2026 15:00:29 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/12/cairn-autonomous-ai-cyberattacks/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Endpoint Management Platforms Pose Major Security Threat</title>
-      <link>https://secubuzz.com/news/endpoint-management-platforms-pose-major-security-ea047999</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/endpoint-management-platforms-pose-major-security-ea047999</guid>
-      <description><![CDATA[Endpoint management platforms can become powerful attack tools when compromised, enabling hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 recommends customer‑controlled cryptographic authorization to prevent attackers from abusing sensitive endpoint operations and mitigate this risk. Security teams should enforce strict access controls, monitor for unauthorized changes, and apply timely updates to protect endpoint management infrastructure.]]></description>
-      <pubDate>Thu, 12 Nov 2026 15:00:10 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/">BleepingComputer</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Japan Sees Record Cyberattacks Driven by AI Intrusions</title>
-      <link>https://secubuzz.com/news/japan-sees-record-cyberattacks-driven-by-ai-intrus-db59b6fd</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/japan-sees-record-cyberattacks-driven-by-ai-intrus-db59b6fd</guid>
-      <description><![CDATA[Researchers report a record rise in Japanese cyberattacks, attributing many incidents to AI‑assisted intrusion techniques. The attacks include widespread data breaches and exploitations of unpatched vulnerabilities, increasing pressure on organizations to accelerate patch management. Security teams should prioritize vulnerability scanning, enforce timely patching, and adopt AI‑driven threat detection to mitigate emerging intrusion tactics.]]></description>
-      <pubDate>Thu, 12 Nov 2026 14:51:52 GMT</pubDate>
-      <source url="https://socket.dev/blog/japan-cyberattack-surge">Socket.dev</source>
-      <category>General</category>
     </item>
   </channel>
 </rss>

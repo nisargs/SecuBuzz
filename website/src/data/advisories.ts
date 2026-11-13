@@ -2,6 +2,58 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-126192",
+    "slug": "cve-2026-126192",
+    "vendor": "Pip",
+    "product": "soupsieve",
+    "name": "Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 6.3,
+    "severity": "Medium",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "Matching a selector that puts a general-sibling combinator inside :has(), such as div:has(a ~ b), against untrusted HTML runs in O(n²) time in the number of sibling elements. A single small document with a few thousand siblings ties the process up for a minute of CPU, so an application that runs a fixed selector of this shape over HTML it doesn't control can be stalled by one request.",
+    "requiredAction": "Upgrade soupsieve to version 2.10.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-4j63-6c4x-wfg4"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126192"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-122006",
+    "slug": "cve-2026-122006",
+    "vendor": "RubyGems",
+    "product": "activestorage",
+    "name": "Active Storage: Possible arbitrary file write and read in image analysis",
+    "dateAdded": "2026-11-12",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-1188",
+    "ransomware": false,
+    "description": "A Rails application that processes attachments with ImageMagick may allow an unauthenticated attacker to write arbitrary files on the server and, when attachments are stored with the Disk service, to read arbitrary files readable by the application process.",
+    "requiredAction": "Upgrade activestorage to version 8.1.4.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f3w6-w445-fwh9"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122006"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-126072",
     "slug": "cve-2026-126072",
     "vendor": "RubyGems",
@@ -1241,54 +1293,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114152"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "GHSA-6856-87hx-p5x7",
-    "slug": "ghsa-6856-87hx-p5x7",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.TestPlatform.CLI",
-    "name": "Microsoft Security Advisory CVE-2026-105544 - .NET Elevation of Privilege Vulnerability",
-    "dateAdded": "2026-11-11",
-    "dueDate": "",
-    "cvss": 6.5,
-    "severity": "Medium",
-    "cwe": "CWE-284",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. The VSTest artifact postprocessor can consume a forged executionComplete.json from another local user and execute attacker-controlled output handling.",
-    "requiredAction": "Upgrade Microsoft.TestPlatform.CLI to version 17.3.4 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-6856-87hx-p5x7"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114151",
-    "slug": "cve-2026-114151",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.NETCore.App.Runtime.win-x86",
-    "name": "Microsoft Security Advisory CVE-2026-114151 - Visual Studio Remote Code Execution Vulnerability",
-    "dateAdded": "2026-11-11",
-    "dueDate": "",
-    "cvss": 7.7,
-    "severity": "High",
-    "cwe": "CWE-121",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. A crafted PDB LF_DECIMAL payload can trigger an out-of-bounds stack write when processed by DIA.",
-    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.win-x86 to version 8.0.34 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-fpxj-5c99-g7vj"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114151"
       }
     ],
     "source": "GITHUB"

@@ -11,6 +11,44 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "red-hat-satellite-6-17-13-receives-critical-async-40212a83",
+    "title": "Red Hat Satellite 6.17.13 receives critical async update",
+    "summary": "Red Hat Satellite 6.17.13 for RHEL 9 contains critical flaws that could let attackers compromise satellite management. The flaws are rated CVSS 9.0+, exposing remote code execution paths that bypass authentication and grant full control over satellite services. Red Hat recommends installing the provided patch immediately; administrators should also verify satellite configuration and apply any additional hardening guidelines.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99950",
+    "publishedAt": "2026-11-12T23:52:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-17-13-receives-critical-async",
+      "article-40212a83",
+      "40212a83",
+      "red-hat-satellite-6-17-13-receives-critical-async-37d661",
+      "red-hat-satellite-6-17-13-receives-critical-async-update"
+    ]
+  },
+  {
+    "slug": "red-hat-satellite-6-18-11-receives-critical-async-50d0fdfe",
+    "title": "Red Hat Satellite 6.18.11 receives critical async update",
+    "summary": "Red Hat Satellite 6.18.11 for RHEL 9 includes critical vulnerabilities that may allow attackers to take control of satellite services. These flaws are rated CVSS 9.0+, providing remote code execution paths that bypass authentication and enable full administrative access. Apply the vendor’s patch immediately and review satellite configuration to enforce least‑privilege access controls.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99952",
+    "publishedAt": "2026-11-12T23:52:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-18-11-receives-critical-async",
+      "article-50d0fdfe",
+      "50d0fdfe",
+      "red-hat-satellite-6-18-11-receives-critical-async-37d661",
+      "red-hat-satellite-6-18-11-receives-critical-async-update"
+    ]
+  },
+  {
     "slug": "postgresql-security-update-fixes-52-vulnerabilitie-360a9c71",
     "title": "PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14",
     "summary": "The PostgreSQL Global Development Group released PostgreSQL 18.7, 17.12, 16.16, 15.20 and 14.25 on November 12, fixing 52 security vulnerabilities and more than 140 other bugs. Most of those code execution bugs are memory errors or type confusion, where PostgreSQL handles a value as the wrong data type.",
@@ -46,6 +84,24 @@ export const news: NewsBrief[] = [
       "feec161f",
       "rhsa-2026-99741-important-mysql-8-4-security-updat-37d669",
       "rhsa-2026-99741-important-mysql-8-4-security-update"
+    ]
+  },
+  {
+    "slug": "chrome-for-android-update-53843f68",
+    "title": "Chrome for Android Update",
+    "summary": "We've just released Chrome 158 (158.0.8127.36) for Android to a small percentage of users. It'll become available on Google Play over the next few days. If you find a new issue, please let us know by filing a bug .",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-for-android-update_012297226.html",
+    "publishedAt": "2026-11-12T23:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-for-android-update",
+      "article-53843f68",
+      "53843f68",
+      "chrome-for-android-update-1c46b4"
     ]
   },
   {
@@ -205,6 +261,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "debian-lan-acl-flaw-allows-credential-changes-aefd640e",
+    "title": "Debian-LAN ACL flaw allows credential changes",
+    "summary": "A flaw in Debian-LAN’s Kerberos admin server ACLs permits authenticated users to alter other users’ credentials, enabling privilege escalation. The vulnerability stems from overly permissive ACL configuration, lacking proper access checks, and could be exploited by insiders with valid credentials. Red Hat recommends applying the latest Debian-LAN patch or tightening ACLs to restrict admin server access, mitigating potential credential tampering.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9068-1",
+    "publishedAt": "2026-11-12T21:02:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "debian-lan-acl-flaw-allows-credential-changes",
+      "article-aefd640e",
+      "aefd640e",
+      "debian-lan-acl-flaw-allows-credential-changes-7e86e3"
+    ]
+  },
+  {
     "slug": "microsoft-365-outage-disrupts-outlook-exchange-onl-2d15b165",
     "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
     "summary": "Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence of a cyberattack.",
@@ -239,6 +313,24 @@ export const news: NewsBrief[] = [
       "article-0fe49fbc",
       "0fe49fbc",
       "still-in-the-meeting-bluenoroff-six-months-on-6ac6bc"
+    ]
+  },
+  {
+    "slug": "gevent-server-flaw-enables-http-request-smuggling-12ae9695",
+    "title": "Gevent server flaw enables HTTP request smuggling",
+    "summary": "The gevent WSGI server fails to validate chunked transfer encoding trailers, enabling remote attackers to smuggle HTTP requests and potentially elevate privileges. Request smuggling can bypass security controls, leading to unauthorized data access or command execution. Upgrade to the latest gevent version or apply the vendor’s patch, and enforce strict trailer validation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9083-1",
+    "publishedAt": "2026-11-12T20:54:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gevent-server-flaw-enables-http-request-smuggling",
+      "article-12ae9695",
+      "12ae9695",
+      "gevent-server-flaw-enables-http-request-smuggling-7e860d"
     ]
   },
   {
@@ -332,6 +424,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-159-promoted-to-beta-channel-c2196938",
+    "title": "Chrome 159 Promoted to Beta Channel",
+    "summary": "Google Chrome promoted version 159 to the Beta channel for Windows, macOS, and Linux, expanding early access for developers and testers. The update includes under‑the‑hood performance and stability improvements alongside several new features, but no security vulnerabilities are reported. Users may switch channels via the Chrome settings or consult the Chromium blog for detailed change logs and bug‑reporting procedures.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0414360355.html",
+    "publishedAt": "2026-11-12T20:13:33.460Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-159-promoted-to-beta-channel",
+      "article-c2196938",
+      "c2196938",
+      "chrome-159-promoted-to-beta-channel-50ce61"
+    ]
+  },
+  {
     "slug": "red-hat-issues-libxtst-security-update-0390e8d5",
     "title": "Red Hat Issues libXtst Security Update",
     "summary": "Red Hat released a security update for libXtst affecting Enterprise Linux 7 Extended Lifecycle Support. The update fixes multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and reduces privilege escalation risk. Customers should apply the patch promptly to prevent potential denial‑of‑service or privilege escalation and mitigate related risks.",
@@ -347,6 +457,24 @@ export const news: NewsBrief[] = [
       "article-0390e8d5",
       "0390e8d5",
       "red-hat-issues-libxtst-security-update-37d669"
+    ]
+  },
+  {
+    "slug": "luna-moth-targets-law-firms-with-token-theft-cbb89b75",
+    "title": "Luna Moth Targets Law Firms with Token Theft",
+    "summary": "Extortion group Luna Moth re‑targets law firms that declined its first ransom, launching a social‑engineering campaign to harvest Microsoft access tokens. The attack leverages phishing emails that embed malicious attachments or links, exploiting user credential theft to gain privileged cloud access. Security teams should enforce multi‑factor authentication, monitor token usage, and conduct employee awareness training to mitigate token‑based credential compromise.",
+    "category": "Ransomware",
+    "severity": "HIGH",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time",
+    "publishedAt": "2026-11-12T20:09:41.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "luna-moth-targets-law-firms-with-token-theft",
+      "article-cbb89b75",
+      "cbb89b75",
+      "luna-moth-targets-law-firms-with-token-theft-1a55e6"
     ]
   },
   {
@@ -383,6 +511,25 @@ export const news: NewsBrief[] = [
       "article-89b33db4",
       "89b33db4",
       "n-able-zero-day-exploited-for-miner-deployment-548c4c"
+    ]
+  },
+  {
+    "slug": "united-airlines-bans-ai-assistants-for-credential-d991520a",
+    "title": "United Airlines Bans AI Assistants for Credential Safety",
+    "summary": "United Airlines has prohibited customers from using AI assistants to access its services, citing risks of credential exposure and transactions. The decision follows concerns that shared login tokens could be harvested by malicious actors, enabling unauthorized account activity and data leakage. Customers are advised to use official mobile apps and two‑factor authentication, and airlines will monitor for suspicious account behavior.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
+    "publishedAt": "2026-11-12T19:20:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "united-airlines-bans-ai-assistants-for-credential",
+      "article-d991520a",
+      "d991520a",
+      "united-airlines-bans-ai-assistants-for-credential-3f5cae",
+      "united-airlines-bans-ai-assistants-for-credential-safety"
     ]
   },
   {
@@ -9358,164 +9505,6 @@ export const news: NewsBrief[] = [
       "article-a9bf56bf",
       "a9bf56bf",
       "ca-certificates-java-jks-handling-fixed-7e8848"
-    ]
-  },
-  {
-    "slug": "fireworks-reports-data-theft-during-october-breach-2d599cd7",
-    "title": "Fireworks Reports Data Theft During October Breaches",
-    "summary": "AI company Fireworks disclosed that hackers stole data and billing information during October incidents affecting a limited number of customer accounts. All affected customers were notified of the attack. The company should conduct forensic investigation to determine scope and implement enhanced access monitoring for sensitive billing records.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks",
-    "publishedAt": "2026-11-10T16:08:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fireworks-reports-data-theft-during-october-breach",
-      "article-2d599cd7",
-      "2d599cd7",
-      "fireworks-reports-data-theft-during-october-breach-503fac",
-      "fireworks-reports-data-theft-during-october-breaches"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97533-important-podman-security-bug-fix-a41b34f6",
-    "title": "RHSA-2026:97533: Important: podman security, bug fix, and enhancement update",
-    "summary": "An update for podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97533",
-    "publishedAt": "2026-11-10T16:07:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97533-important-podman-security-bug-fix",
-      "article-a41b34f6",
-      "a41b34f6",
-      "rhsa-2026-97533-important-podman-security-bug-fix-37d759",
-      "rhsa-2026-97533-important-podman-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "barracuda-esg-flaws-enable-root-access-exploitatio-bd602d2c",
-    "title": "Barracuda ESG Flaws Enable Root Access Exploitation",
-    "summary": "Barracuda ESG is actively exploited via CVE‑2026‑116606, letting attackers combine two flaws to gain root access without authentication. The vulnerability permits unauthenticated remote code execution by manipulating internal configuration handling, enabling arbitrary command execution on the gateway. Barracuda has issued a patch; administrators should apply it immediately and enforce strict network segmentation around ESG appliances.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/barracuda-email-gateway-flaws/",
-    "publishedAt": "2026-11-10T16:05:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "barracuda-esg-flaws-enable-root-access-exploitatio",
-      "article-bd602d2c",
-      "bd602d2c",
-      "barracuda-esg-flaws-enable-root-access-exploitatio-3a0750",
-      "barracuda-esg-flaws-enable-root-access-exploitation"
-    ]
-  },
-  {
-    "slug": "benchmarking-offensive-ai-agent-capabilities-6496bb80",
-    "title": "Benchmarking Offensive AI Agent Capabilities",
-    "summary": "The article presents a framework for assessing AI agents' cybersecurity capabilities, focusing on offensive testing. It outlines the construction of the Wiz Cyber Model Arena, detailing scenario design, adversarial objectives, and performance metrics. The authors recommend iterative validation, data collection, and continuous improvement to ensure robust evaluation for security teams.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Wiz Research",
-    "sourceUrl": "https://www.wiz.io/blog/cyber-model-arena-ai-benchmark",
-    "publishedAt": "2026-11-10T16:03:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "benchmarking-offensive-ai-agent-capabilities",
-      "article-6496bb80",
-      "6496bb80",
-      "benchmarking-offensive-ai-agent-capabilities-71b358"
-    ]
-  },
-  {
-    "slug": "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-2710d747",
-    "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-    "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-    "publishedAt": "2026-11-10T16:00:55.000Z",
-    "cves": [
-      "CVE-2026-105133",
-      "CVE-2026-105134"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox",
-      "article-2710d747",
-      "2710d747",
-      "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-711522",
-      "attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-p"
-    ]
-  },
-  {
-    "slug": "windows-file-server-elevation-vulnerability-cve-20-39028c79",
-    "title": "Windows File Server Elevation Vulnerability CVE-2026-108415",
-    "summary": "A Windows File Server Resource Management Service vulnerability (CVE-2026-108415) permits privilege escalation via untrusted pointer dereference. The flaw allows an attacker with physical access to dereference an untrusted pointer, enabling elevation of privileges without authentication, potentially compromising system integrity. Microsoft has released a patch; administrators should apply the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108415",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-108415"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-file-server-elevation-vulnerability-cve-20",
-      "article-39028c79",
-      "39028c79",
-      "windows-file-server-elevation-vulnerability-cve-20-1ff730",
-      "windows-file-server-elevation-vulnerability-cve-2026-108415"
-    ]
-  },
-  {
-    "slug": "windows-file-server-elevation-vulnerability-cve-20-360287c0",
-    "title": "Windows File Server Elevation Vulnerability CVE-2026-108416",
-    "summary": "A Windows File Server Resource Management Service vulnerability (CVE-2026-108416) permits privilege escalation via untrusted pointer dereference. The flaw allows an attacker with physical access to dereference an untrusted pointer, enabling elevation of privileges without authentication, potentially compromising system integrity. Microsoft has released a patch; administrators should apply the update immediately to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108416",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-108416"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-file-server-elevation-vulnerability-cve-20",
-      "article-360287c0",
-      "360287c0",
-      "windows-file-server-elevation-vulnerability-cve-20-1ff730",
-      "windows-file-server-elevation-vulnerability-cve-2026-108416"
-    ]
-  },
-  {
-    "slug": "windows-gdi-vulnerability-exposes-data-via-out-of-05454bae",
-    "title": "Windows GDI Vulnerability Exposes Data via Out‑of‑Bounds Read",
-    "summary": "CVE‑2026‑108424 is an out‑of‑bounds read flaw in Windows GDI that permits remote attackers to read sensitive data over a network. The vulnerability arises from improper bounds checking during GDI object rendering, enabling an attacker to extract memory contents without authentication. Microsoft has released a patch in the 2026 security update; administrators should apply it promptly to mitigate the disclosure risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108424",
-    "publishedAt": "2026-11-10T16:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "windows-gdi-vulnerability-exposes-data-via-out-of",
-      "article-05454bae",
-      "05454bae",
-      "windows-gdi-vulnerability-exposes-data-via-out-of-1ff72f",
-      "windows-gdi-vulnerability-exposes-data-via-out-of-bounds-rea"
     ]
   }
 ];
