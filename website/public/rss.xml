@@ -5,8 +5,53 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 10:50:17 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 11:32:44 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>354 Dark Web Vendors Arrested in Operation TorNado</title>
+      <link>https://secubuzz.com/news/354-dark-web-vendors-arrested-in-operation-tornado-47248c71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/354-dark-web-vendors-arrested-in-operation-tornado-47248c71</guid>
+      <description><![CDATA[Europol and police in 14 countries arrested 354 dark web vendors and buyers during Operation TorNado, which operated from May 2025 to October 2026. The crackdown targeted users of five marketplaces—Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door—and seized funds reported by Europol. Law enforcement also pursued vendors and buyers on forums, single‑vendor shops, and encrypted channels to dismantle the supply chain.]]></description>
+      <pubDate>Fri, 13 Nov 2026 11:06:29 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/europol-dark-web-arrests-cybercrime/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Check Point Releases Hotfix for Exploited Root Privilege Flaw</title>
+      <link>https://secubuzz.com/news/check-point-releases-hotfix-for-exploited-root-pri-286f4805</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/check-point-releases-hotfix-for-exploited-root-pri-286f4805</guid>
+      <description><![CDATA[Check Point Software disclosed a zero‑day vulnerability that attackers have leveraged since late October to gain root privileges on affected devices. The flaw permits unauthenticated remote code execution, enabling persistence and full system control, and has been actively exploited in the wild. Check Point issued emergency hotfixes; security teams should apply the patch immediately and monitor for anomalous activity.]]></description>
+      <pubDate>Fri, 13 Nov 2026 10:44:22 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Ubuntu Releases Kernel Patches for Multiple FIPS Vulnerabilities</title>
+      <link>https://secubuzz.com/news/ubuntu-releases-kernel-patches-for-multiple-fips-v-eb560264</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-releases-kernel-patches-for-multiple-fips-v-eb560264</guid>
+      <description><![CDATA[Ubuntu Security Notices USN-9027-2 addresses five kernel vulnerabilities affecting FIPS‑enabled systems. The flaws, identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999, could allow attackers to compromise kernel integrity through privilege escalation or denial of service. Ubuntu recommends applying the kernel update immediately; users should also verify that FIPS mode remains enabled after the upgrade.]]></description>
+      <pubDate>Fri, 13 Nov 2026 10:30:15 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9027-2">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Ubuntu Patches Kernel RMP Check Flaw in NVIDIA Tegra</title>
+      <link>https://secubuzz.com/news/ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-984ce3ef</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-984ce3ef</guid>
+      <description><![CDATA[Ubuntu Security Notices USN-9091-1 fixes a kernel flaw that allows local hypervisor attackers to bypass IOMMU Reverse Map Table checks on NVIDIA Tegra systems. The vulnerability, identified as CVE-2023-20585, could lead to out‑of‑bounds memory writes and compromise SEV‑SNP guest integrity if exploited. Ubuntu advises applying the kernel update promptly and verifying that hypervisor isolation remains intact after the patch.]]></description>
+      <pubDate>Fri, 13 Nov 2026 10:18:40 GMT</pubDate>
+      <source url="https://ubuntu.com/security/notices/USN-9091-1">Ubuntu Security Notices</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Top 10 Network Vulnerability Scanners Ranked 2026</title>
+      <link>https://secubuzz.com/news/top-10-network-vulnerability-scanners-ranked-2026-d1bbbd11</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-network-vulnerability-scanners-ranked-2026-d1bbbd11</guid>
+      <description><![CDATA[Cyber Security News published a 2026 ranking of ten network vulnerability scanners, assessing engine placement, credential distribution, and scan window coordination. The list includes ten brands, noting Tripwire and Digital Defense ship similar capabilities, while other vendors offer differentiated features. Readers can consult the article for detailed scores, vendor comparisons, and deployment recommendations to inform procurement decisions.]]></description>
+      <pubDate>Fri, 13 Nov 2026 09:39:00 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-network-vulnerability-scanners/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Citrix Issues Patches for 10 Critical NetScaler CVEs</title>
       <link>https://secubuzz.com/news/citrix-issues-patches-for-10-critical-netscaler-cv-c4e83fb0</link>
@@ -23,6 +68,15 @@
       <description><![CDATA[Microsoft confirmed that November Patch Tuesday updates trigger Windows activation failures, producing 0x80041008 error codes. The problem originates from a misconfigured activation service component, causing legitimate license checks to fail without compromising security. Affected users should apply the latest cumulative update or contact Microsoft support for a temporary workaround until a permanent fix is issued.]]></description>
       <pubDate>Fri, 13 Nov 2026 09:36:18 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Top 10 Web Application Scanners Ranked 2026</title>
+      <link>https://secubuzz.com/news/top-10-web-application-scanners-ranked-2026-3acdc274</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-10-web-application-scanners-ranked-2026-3acdc274</guid>
+      <description><![CDATA[A 2026 review ranks ten web application vulnerability scanners on coverage, proof quality, and pipeline fit. The study notes that naive crawlers miss single‑page apps, authenticated flows, and API backends, with scanners covering only 40% of routes reporting on different applications than shipped. Security teams should evaluate scanners against these criteria and integrate them into CI pipelines for comprehensive coverage.]]></description>
+      <pubDate>Fri, 13 Nov 2026 09:34:42 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-web-app-scanners/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -68,6 +122,15 @@
       <description><![CDATA[Police forces worldwide arrested 354 suspects in a joint operation targeting vendors and buyers on dark‑web marketplaces such as Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom. The crackdown, coordinated by international law‑enforcement agencies, aimed to dismantle illicit cybercrime networks facilitating malware distribution and financial fraud. Authorities are proceeding with prosecutions and asset seizures to disrupt future operations.]]></description>
       <pubDate>Fri, 13 Nov 2026 08:34:20 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Top AI Governance Platforms Ranked for 2026 Compliance</title>
+      <link>https://secubuzz.com/news/top-ai-governance-platforms-ranked-for-2026-compli-cb40422c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/top-ai-governance-platforms-ranked-for-2026-compli-cb40422c</guid>
+      <description><![CDATA[Emerging regulatory enforcement under the EU AI Act has driven enterprise adoption of specialized artificial intelligence governance platforms. Current solutions diverge into policy registries, machine-learning model monitors, and extended privacy suites, with Credo AI and IBM taking top platform rankings. Security teams should deploy AI governance tools to maintain complete model inventories and enforce organizational compliance frameworks.]]></description>
+      <pubDate>Fri, 13 Nov 2026 08:34:06 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/best-ai-governance-platforms/">Cyber Security News</source>
       <category>General</category>
     </item>
     <item>
@@ -393,69 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 22:25:30 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/">BleepingComputer</source>
       <category>Breach</category>
-    </item>
-    <item>
-      <title>Arctic Wolf Discusses Agentic AI in Security Ops</title>
-      <link>https://secubuzz.com/news/arctic-wolf-discusses-agentic-ai-in-security-ops-bd8ef852</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/arctic-wolf-discusses-agentic-ai-in-security-ops-bd8ef852</guid>
-      <description><![CDATA[Arctic Wolf released a report on how agentic AI and human analysts collaborate to accelerate security operations, reduce investigation time, and improve threat response. The document details AI-driven automation integrated with expert analysis to streamline incident detection, triage, and remediation, citing performance metrics.]]></description>
-      <pubDate>Thu, 12 Nov 2026 22:13:26 GMT</pubDate>
-      <source url="https://arcticwolf.com/resources/on-demand-webinar-uk/inside-2026-agentic-security-operations-report/">Arctic Wolf</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Feds Seize $1.2B from Binance Theft, Takedown FaceStealer Tools</title>
-      <link>https://secubuzz.com/news/feds-seize-1-2b-from-binance-theft-takedown-facest-f9460563</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/feds-seize-1-2b-from-binance-theft-takedown-facest-f9460563</guid>
-      <description><![CDATA[The DOJ and FBI seized $1.2 billion tied to a North Korea‑linked cryptocurrency theft and dismantled FaceStealer malware tools. Investigations revealed the funds were proceeds from stolen digital assets, while the takedown removed the credential‑harvesting infrastructure. Cryptocurrency exchanges are urged to strengthen monitoring and compliance to deter future thefts and cooperate with ongoing investigations.]]></description>
-      <pubDate>Thu, 12 Nov 2026 21:42:00 GMT</pubDate>
-      <source url="https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted">The Record</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Chrome Early Stable Update 158.0.8127.36/37 for Windows</title>
-      <link>https://secubuzz.com/news/chrome-early-stable-update-158-0-8127-36-37-for-wi-c4f4dddf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chrome-early-stable-update-158-0-8127-36-37-for-wi-c4f4dddf</guid>
-      <description><![CDATA[Google Chrome released an early stable update for Windows, version 158.0.8127.36/37, as part of its routine patch cycle. The update includes minor bug fixes and performance improvements, with a full changelog available in the release notes. Users are advised to install the update promptly to maintain compatibility and benefit from the latest stability enhancements.]]></description>
-      <pubDate>Thu, 12 Nov 2026 21:30:51 GMT</pubDate>
-      <source url="https://chromereleases.googleblog.com/2026/11/early-stable-update-for-desktop_0520415684.html">Google Chrome Releases</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apache HTTP Server Vulnerabilities Enable Potential Code Execution</title>
-      <link>https://secubuzz.com/news/apache-http-server-vulnerabilities-enable-potentia-5daaddf2</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-vulnerabilities-enable-potentia-5daaddf2</guid>
-      <description><![CDATA[Apache HTTP Server’s mod_dav, mod_vhost_alias, and mod_md modules contain memory corruption flaws that allow attackers to crash or potentially execute code via crafted WebDAV locks or specific requests. CVE-2026-109163’s stack buffer overflow can lead to arbitrary code execution, while CVE-2026-42528 and CVE-2026-109163 also enable denial of service. Administrators should apply patches and restrict WebDAV access until the fixes are deployed.]]></description>
-      <pubDate>Thu, 12 Nov 2026 21:25:57 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9090-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99695: Important: glib-networking security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99695-important-glib-networking-security-a80cb47d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99695-important-glib-networking-security-a80cb47d</guid>
-      <description><![CDATA[An update for glib-networking is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 21:24:20 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99695">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Defenders Prepare Strategies Against Artex and AntiFox Tools</title>
-      <link>https://secubuzz.com/news/defenders-prepare-strategies-against-artex-and-ant-6f314e46</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/defenders-prepare-strategies-against-artex-and-ant-6f314e46</guid>
-      <description><![CDATA[Cybercriminals are increasingly leveraging agentic penetration-testing software, including Artex and AntiFox, to target enterprise environments. These autonomous testing frameworks allow malicious actors to automate compromise paths, significantly increasing the scale and speed of network attacks. Security experts recommend that enterprise defenders immediately establish tailored response plans and defensive mitigations to neutralize automated threat capabilities.]]></description>
-      <pubDate>Thu, 12 Nov 2026 21:18:52 GMT</pubDate>
-      <source url="https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox">Dark Reading</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper</title>
-      <link>https://secubuzz.com/news/cve-2026-126793-privilege-escalation-in-aurora-pos-84682522</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-126793-privilege-escalation-in-aurora-pos-84682522</guid>
-      <description><![CDATA[An untrusted search path vulnerability in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper (CVE-2026-126793) allows an authenticated attacker to escalate privileges to other database users, including the rds_superuser role, by executing a crafted function during cluster connection. AWS has released patched versions.]]></description>
-      <pubDate>Thu, 12 Nov 2026 21:11:28 GMT</pubDate>
-      <source url="https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/">AWS Security Bulletins</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

@@ -11,6 +11,107 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "354-dark-web-vendors-arrested-in-operation-tornado-47248c71",
+    "title": "354 Dark Web Vendors Arrested in Operation TorNado",
+    "summary": "Europol and police in 14 countries arrested 354 dark web vendors and buyers during Operation TorNado, which operated from May 2025 to October 2026. The crackdown targeted users of five marketplaces—Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door—and seized funds reported by Europol. Law enforcement also pursued vendors and buyers on forums, single‑vendor shops, and encrypted channels to dismantle the supply chain.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/europol-dark-web-arrests-cybercrime/",
+    "publishedAt": "2026-11-13T11:06:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "354-dark-web-vendors-arrested-in-operation-tornado",
+      "article-47248c71",
+      "47248c71",
+      "354-dark-web-vendors-arrested-in-operation-tornado-5b7edd"
+    ]
+  },
+  {
+    "slug": "check-point-releases-hotfix-for-exploited-root-pri-286f4805",
+    "title": "Check Point Releases Hotfix for Exploited Root Privilege Flaw",
+    "summary": "Check Point Software disclosed a zero‑day vulnerability that attackers have leveraged since late October to gain root privileges on affected devices. The flaw permits unauthenticated remote code execution, enabling persistence and full system control, and has been actively exploited in the wild. Check Point issued emergency hotfixes; security teams should apply the patch immediately and monitor for anomalous activity.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+    "publishedAt": "2026-11-13T10:44:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-releases-hotfix-for-exploited-root-pri",
+      "article-286f4805",
+      "286f4805",
+      "check-point-releases-hotfix-for-exploited-root-pri-3b2fe8",
+      "check-point-releases-hotfix-for-exploited-root-privilege-fla"
+    ]
+  },
+  {
+    "slug": "ubuntu-releases-kernel-patches-for-multiple-fips-v-eb560264",
+    "title": "Ubuntu Releases Kernel Patches for Multiple FIPS Vulnerabilities",
+    "summary": "Ubuntu Security Notices USN-9027-2 addresses five kernel vulnerabilities affecting FIPS‑enabled systems. The flaws, identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999, could allow attackers to compromise kernel integrity through privilege escalation or denial of service. Ubuntu recommends applying the kernel update immediately; users should also verify that FIPS mode remains enabled after the upgrade.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9027-2",
+    "publishedAt": "2026-11-13T10:30:15.000Z",
+    "cves": [
+      "CVE-2025-21656",
+      "CVE-2026-63940",
+      "CVE-2026-74350",
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-releases-kernel-patches-for-multiple-fips-v",
+      "article-eb560264",
+      "eb560264",
+      "ubuntu-releases-kernel-patches-for-multiple-fips-v-7e88b8",
+      "ubuntu-releases-kernel-patches-for-multiple-fips-vulnerabili"
+    ]
+  },
+  {
+    "slug": "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-984ce3ef",
+    "title": "Ubuntu Patches Kernel RMP Check Flaw in NVIDIA Tegra",
+    "summary": "Ubuntu Security Notices USN-9091-1 fixes a kernel flaw that allows local hypervisor attackers to bypass IOMMU Reverse Map Table checks on NVIDIA Tegra systems. The vulnerability, identified as CVE-2023-20585, could lead to out‑of‑bounds memory writes and compromise SEV‑SNP guest integrity if exploited. Ubuntu advises applying the kernel update promptly and verifying that hypervisor isolation remains intact after the patch.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9091-1",
+    "publishedAt": "2026-11-13T10:18:40.000Z",
+    "cves": [
+      "CVE-2023-20585"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg",
+      "article-984ce3ef",
+      "984ce3ef",
+      "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-7e85a0",
+      "ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-tegra"
+    ]
+  },
+  {
+    "slug": "top-10-network-vulnerability-scanners-ranked-2026-d1bbbd11",
+    "title": "Top 10 Network Vulnerability Scanners Ranked 2026",
+    "summary": "Cyber Security News published a 2026 ranking of ten network vulnerability scanners, assessing engine placement, credential distribution, and scan window coordination. The list includes ten brands, noting Tripwire and Digital Defense ship similar capabilities, while other vendors offer differentiated features. Readers can consult the article for detailed scores, vendor comparisons, and deployment recommendations to inform procurement decisions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-network-vulnerability-scanners/",
+    "publishedAt": "2026-11-13T09:39:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-network-vulnerability-scanners-ranked-2026",
+      "article-d1bbbd11",
+      "d1bbbd11",
+      "top-10-network-vulnerability-scanners-ranked-2026-28add5"
+    ]
+  },
+  {
     "slug": "citrix-issues-patches-for-10-critical-netscaler-cv-c4e83fb0",
     "title": "Citrix Issues Patches for 10 Critical NetScaler CVEs",
     "summary": "Citrix released patches for ten critical NetScaler vulnerabilities, including CVE-2026-120868, that could cause unexpected behavior or denial‑of‑service conditions. The flaws allow attackers to trigger service disruptions by manipulating configuration or traffic, but do not provide remote code execution. Citrix recommends applying the latest firmware updates immediately; interim mitigations include disabling affected services and limiting external access.",
@@ -47,6 +148,24 @@ export const news: NewsBrief[] = [
       "article-7409bbcd",
       "7409bbcd",
       "windows-activation-failures-after-november-updates-68e693"
+    ]
+  },
+  {
+    "slug": "top-10-web-application-scanners-ranked-2026-3acdc274",
+    "title": "Top 10 Web Application Scanners Ranked 2026",
+    "summary": "A 2026 review ranks ten web application vulnerability scanners on coverage, proof quality, and pipeline fit. The study notes that naive crawlers miss single‑page apps, authenticated flows, and API backends, with scanners covering only 40% of routes reporting on different applications than shipped. Security teams should evaluate scanners against these criteria and integrate them into CI pipelines for comprehensive coverage.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-web-app-scanners/",
+    "publishedAt": "2026-11-13T09:34:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-10-web-application-scanners-ranked-2026",
+      "article-3acdc274",
+      "3acdc274",
+      "top-10-web-application-scanners-ranked-2026-383ee8"
     ]
   },
   {
@@ -138,6 +257,25 @@ export const news: NewsBrief[] = [
       "article-07e6a2d5",
       "07e6a2d5",
       "police-arrest-354-dark-web-cybercrime-suspects-725e7d"
+    ]
+  },
+  {
+    "slug": "top-ai-governance-platforms-ranked-for-2026-compli-cb40422c",
+    "title": "Top AI Governance Platforms Ranked for 2026 Compliance",
+    "summary": "Emerging regulatory enforcement under the EU AI Act has driven enterprise adoption of specialized artificial intelligence governance platforms. Current solutions diverge into policy registries, machine-learning model monitors, and extended privacy suites, with Credo AI and IBM taking top platform rankings. Security teams should deploy AI governance tools to maintain complete model inventories and enforce organizational compliance frameworks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/best-ai-governance-platforms/",
+    "publishedAt": "2026-11-13T08:34:06.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "top-ai-governance-platforms-ranked-for-2026-compli",
+      "article-cb40422c",
+      "cb40422c",
+      "top-ai-governance-platforms-ranked-for-2026-compli-4e365d",
+      "top-ai-governance-platforms-ranked-for-2026-compliance"
     ]
   },
   {
@@ -6034,6 +6172,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-updates-cve-2026-120778-aspire-privilege-78e866f6",
+    "title": "Microsoft Updates CVE-2026-120778 Aspire Privilege Escalation",
+    "summary": "Microsoft announced an informational update for CVE-2026-120778, an Aspire elevation of privilege vulnerability affecting unspecified products. The update merely adjusts the products listed in the Security Updates table and does not indicate any active exploitation or public proof‑of‑concept. Security teams should review the updated product list and apply any available patches to mitigate the privilege escalation risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120778",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-120778"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-cve-2026-120778-aspire-privilege",
+      "article-78e866f6",
+      "78e866f6",
+      "microsoft-updates-cve-2026-120778-aspire-privilege-1fde97",
+      "microsoft-updates-cve-2026-120778-aspire-privilege-escalatio"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-cve-2026-120796-net-dos-vulnerab-2527c7de",
+    "title": "Microsoft Updates CVE-2026-120796 .NET DoS Vulnerability",
+    "summary": "Microsoft issued an informational update for CVE-2026-120796, a .NET denial of service vulnerability affecting unspecified components. The notice only revises the security updates links and does not report any active exploitation or public proof‑of‑concept. Teams should verify the updated links and apply any relevant patches to prevent potential denial of service incidents.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120796",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-120796"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-cve-2026-120796-net-dos-vulnerab",
+      "article-2527c7de",
+      "2527c7de",
+      "microsoft-updates-cve-2026-120796-net-dos-vulnerab-1fde97",
+      "microsoft-updates-cve-2026-120796-net-dos-vulnerability"
+    ]
+  },
+  {
     "slug": "asp-net-core-denial-of-service-cve-2026-118750-9f62cf6e",
     "title": "ASP.NET Core Denial‑of‑Service CVE‑2026‑118750",
     "summary": "CVE-2026-118750 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed requests. Microsoft has only published an informational update to the Security Updates table, with no active exploitation reported or patch released. Security teams should monitor Microsoft advisories for a forthcoming fix and apply any future ASP.NET Core updates promptly.",
@@ -9386,176 +9566,6 @@ export const news: NewsBrief[] = [
       "852ee003",
       "rhsa-2026-98109-critical-python-pillow-security-up-37d6f4",
       "rhsa-2026-98109-critical-python-pillow-security-update"
-    ]
-  },
-  {
-    "slug": "microsoft-confirms-hackers-are-exploiting-outlook-0e1a2292",
-    "title": "Microsoft Confirms Hackers Are Exploiting Outlook 0-Day to Steal Windows Authentication Hashes",
-    "summary": "Microsoft has confirmed that hackers are exploiting an Outlook zero-day that can expose Windows authentication information when a user opens a malicious file. Tracked as CVE-2026-124194, the spoofing vulnerability was patched on November 10, 2026. Microsoft marks it “Exploitation Detected” and says it was not publicly disclosed before the update.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/outlook-0-day-vulnerability/",
-    "publishedAt": "2026-11-11T02:35:43.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-confirms-hackers-are-exploiting-outlook",
-      "article-0e1a2292",
-      "0e1a2292",
-      "microsoft-confirms-hackers-are-exploiting-outlook-198773",
-      "microsoft-confirms-hackers-are-exploiting-outlook-0-day-to-s"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98100-important-kernel-rt-security-updat-ba6c131b",
-    "title": "RHSA-2026:98100: Important: kernel-rt security update",
-    "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98100",
-    "publishedAt": "2026-11-11T02:33:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98100-important-kernel-rt-security-updat",
-      "article-ba6c131b",
-      "ba6c131b",
-      "rhsa-2026-98100-important-kernel-rt-security-updat-37d6f4",
-      "rhsa-2026-98100-important-kernel-rt-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98114-important-kernel-security-update-0a2558a7",
-    "title": "RHSA-2026:98114: Important: kernel security update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98114",
-    "publishedAt": "2026-11-11T01:57:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98114-important-kernel-security-update",
-      "article-0a2558a7",
-      "0a2558a7",
-      "rhsa-2026-98114-important-kernel-security-update-37d6f4"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98121-important-openssl-security-update-f3438212",
-    "title": "RHSA-2026:98121: Important: openssl security update",
-    "summary": "An update for openssl is now available for Red Hat Enterprise Linux 6 Extended Lifecycle Support - EXTENSION. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98121",
-    "publishedAt": "2026-11-11T01:57:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98121-important-openssl-security-update",
-      "article-f3438212",
-      "f3438212",
-      "rhsa-2026-98121-important-openssl-security-update-37d6f4"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98111-critical-python-pillow-security-up-cd2b292b",
-    "title": "RHSA-2026:98111: Critical: python-pillow security update",
-    "summary": "An update for python-pillow is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Critical.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98111",
-    "publishedAt": "2026-11-11T01:55:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98111-critical-python-pillow-security-up",
-      "article-cd2b292b",
-      "cd2b292b",
-      "rhsa-2026-98111-critical-python-pillow-security-up-37d6f4",
-      "rhsa-2026-98111-critical-python-pillow-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98118-important-python-oauthlib-security-05791297",
-    "title": "RHSA-2026:98118: Important: python-oauthlib security update",
-    "summary": "An update for python-oauthlib is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98118",
-    "publishedAt": "2026-11-11T01:54:15.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98118-important-python-oauthlib-security",
-      "article-05791297",
-      "05791297",
-      "rhsa-2026-98118-important-python-oauthlib-security-37d6f4",
-      "rhsa-2026-98118-important-python-oauthlib-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98097-important-python3-12-urllib3-secur-d3eebe11",
-    "title": "RHSA-2026:98097: Important: python3.12-urllib3 security update",
-    "summary": "An update for python3.12-urllib3 is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98097",
-    "publishedAt": "2026-11-11T01:45:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98097-important-python3-12-urllib3-secur",
-      "article-d3eebe11",
-      "d3eebe11",
-      "rhsa-2026-98097-important-python3-12-urllib3-secur-37d6f7",
-      "rhsa-2026-98097-important-python3-12-urllib3-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98116-important-dnsmasq-security-bug-fix-df3ba1ce",
-    "title": "RHSA-2026:98116: Important: dnsmasq security, bug fix, and enhancement update",
-    "summary": "An update for dnsmasq is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98116",
-    "publishedAt": "2026-11-11T01:45:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98116-important-dnsmasq-security-bug-fix",
-      "article-df3ba1ce",
-      "df3ba1ce",
-      "rhsa-2026-98116-important-dnsmasq-security-bug-fix-37d6f4",
-      "rhsa-2026-98116-important-dnsmasq-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98112-important-flatpak-security-update-77f2c077",
-    "title": "RHSA-2026:98112: Important: flatpak security update",
-    "summary": "An update for flatpak is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98112",
-    "publishedAt": "2026-11-11T01:45:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98112-important-flatpak-security-update",
-      "article-77f2c077",
-      "77f2c077",
-      "rhsa-2026-98112-important-flatpak-security-update-37d6f4"
     ]
   }
 ];
