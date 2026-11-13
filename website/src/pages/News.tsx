@@ -1,8 +1,9 @@
 import React, { useMemo, useState, useEffect, useCallback } from 'react';
-import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
+import { SearchIcon, ChevronLeftIcon, ChevronRightIcon, SlidersHorizontal } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { NewsBriefItem } from '../components/NewsBriefItem';
 import { MyStackSidebar } from '../components/MyStackSidebar';
+import { MobileMyStackModal } from '../components/MobileMyStackModal';
 import { useMyStack } from '../data/useMyStack';
 import { VendorSelect } from '../components/VendorSelect';
 import { newsCategories } from '../data/news';
@@ -64,6 +65,7 @@ export function News() {
       return false;
     }
   });
+  const [isMobileStackOpen, setIsMobileStackOpen] = useState(false);
   const { news } = useLiveNews();
   const myStack = useMyStack();
 
@@ -315,10 +317,10 @@ export function News() {
       <div className="mx-auto max-w-site px-5 pb-20 md:px-8">
         {/* Sticky Compact 2-Row Filter Toolbar (Matched to Advisories) */}
         <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-2.5 border-b border-line bg-bg/95 px-5 py-2.5 backdrop-blur md:-mx-8 md:px-8">
-          {/* Row 1: Search + Category Select + Reset */}
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex flex-1 flex-wrap items-center gap-2.5">
-              <label className="relative block flex-1 sm:max-w-xs md:w-80">
+          {/* Row 1: Search + Category & Vendor Selects + Reset */}
+          <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2.5 w-full sm:flex-1">
+              <label className="relative block w-full sm:w-72 md:w-80 shrink-0">
                 <span className="sr-only">Search briefs</span>
                 <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-subtle" aria-hidden="true" />
                 <input
@@ -333,38 +335,37 @@ export function News() {
                 />
               </label>
 
-              <div className="inline-flex items-center gap-1.5 text-xs text-subtle">
-                <span>Category:</span>
-                <select
-                  value={filter}
-                  onChange={(e) => {
-                    setFilter(e.target.value as Filter);
-                    setPage(1);
-                  }}
-                  className="h-8 rounded-md border border-line bg-surface px-2.5 font-sans text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
-                  <option value="All">All Categories ({categoryCounts.All ?? news.length})</option>
-                  {sortedCategories.map((c) => (
-                    <option key={c} value={c}>
-                      {c} ({categoryCounts[c] ?? 0})
-                    </option>
-                  ))}
-                </select>
+              {/* Mobile 2-column grid for Category & Vendor / inline on desktop */}
+              <div className="grid grid-cols-2 gap-2 w-full sm:flex sm:w-auto sm:items-center sm:gap-2.5">
+                <div className="w-full sm:w-auto">
+                  <select
+                    value={filter}
+                    onChange={(e) => {
+                      setFilter(e.target.value as Filter);
+                      setPage(1);
+                    }}
+                    className="h-8 w-full sm:w-auto rounded-md border border-line bg-surface px-2.5 font-sans text-xs text-ink focus:border-accent focus:outline-none cursor-pointer truncate">
+                    <option value="All">All Categories ({categoryCounts.All ?? news.length})</option>
+                    {sortedCategories.map((c) => (
+                      <option key={c} value={c}>
+                        {c} ({categoryCounts[c] ?? 0})
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="w-full sm:w-auto">
+                  <VendorSelect
+                    value={vendorFilter}
+                    onChange={(v) => {
+                      setVendorFilter(v);
+                      setPage(1);
+                    }}
+                    vendors={sortedVendors}
+                    totalCount={vendorCounts.ALL ?? news.length}
+                  />
+                </div>
               </div>
-
-              <div className="inline-flex items-center gap-1.5 text-xs text-subtle">
-                <span>Vendor:</span>
-                <VendorSelect
-                  value={vendorFilter}
-                  onChange={(v) => {
-                    setVendorFilter(v);
-                    setPage(1);
-                  }}
-                  vendors={sortedVendors}
-                  totalCount={vendorCounts.ALL ?? news.length}
-                />
-              </div>
-
-
             </div>
 
             {(filter !== 'All' || severityFilter !== 'ALL' || sourceFilter !== 'ALL' || vendorFilter !== 'ALL' || stackFilterActive || query) && (
@@ -379,23 +380,23 @@ export function News() {
                   setQuery('');
                   setPage(1);
                 }}
-                className="self-end sm:self-auto rounded border border-line bg-surface px-2.5 py-1 text-xs text-accent hover:border-accent transition-colors">
+                className="self-end sm:self-auto rounded border border-line bg-surface px-2.5 py-1 text-xs text-accent hover:border-accent transition-colors shrink-0">
                 Reset Filters
               </button>
             )}
           </div>
 
-          {/* Row 2: Threat Severity + Sources + My Stack (Tight Left-Aligned Layout) */}
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+          {/* Row 2: Threat Severity + Sources + My Stack (Edge-to-edge touch scroll on mobile) */}
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 overflow-hidden">
             {/* Threat Severity Chips */}
-            <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
+            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none pb-0.5 -mx-5 px-5 sm:mx-0 sm:px-0">
               <button
                 type="button"
                 onClick={() => {
                   setSeverityFilter('ALL');
                   setPage(1);
                 }}
-                className={`rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                className={`rounded px-2 py-0.5 text-xs transition-colors cursor-pointer shrink-0 ${
                   severityFilter === 'ALL'
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent border border-line'
@@ -408,7 +409,7 @@ export function News() {
                   setSeverityFilter('CRITICAL');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer shrink-0 ${
                   severityFilter === 'CRITICAL'
                     ? 'bg-critical/10 font-medium text-critical border border-critical/50'
                     : 'text-muted hover:text-critical border border-line'
@@ -422,7 +423,7 @@ export function News() {
                   setSeverityFilter('HIGH');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer shrink-0 ${
                   severityFilter === 'HIGH'
                     ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
                     : 'text-muted hover:text-amber-500 border border-line'
@@ -436,7 +437,7 @@ export function News() {
                   setSeverityFilter('MEDIUM');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer shrink-0 ${
                   severityFilter === 'MEDIUM'
                     ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
                     : 'text-muted hover:text-[#4CC9F0] border border-line'
@@ -450,7 +451,7 @@ export function News() {
                   setSeverityFilter('LOW');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer shrink-0 ${
                   severityFilter === 'LOW'
                     ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
                     : 'text-muted hover:text-ink border border-line'
@@ -463,8 +464,8 @@ export function News() {
             {/* Subtle Vertical Divider */}
             <div className="hidden sm:block h-3.5 w-px bg-line/80 shrink-0" aria-hidden="true" />
 
-            {/* Feed Source Segment + My Stack (Beside Vendor PSIRT, Zero Emojis) */}
-            <div className="flex items-center gap-1 overflow-x-auto pb-0.5 shrink-0">
+            {/* Feed Source Segment + My Stack (Beside Vendor PSIRT) */}
+            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none pb-0.5 -mx-5 px-5 sm:mx-0 sm:px-0 shrink-0">
               <button
                 type="button"
                 onClick={() => {
@@ -473,7 +474,7 @@ export function News() {
                   setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                className={`rounded px-2 py-0.5 text-xs transition-colors cursor-pointer shrink-0 ${
                   sourceFilter === 'ALL' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent border border-line'
@@ -481,23 +482,36 @@ export function News() {
                 All Sources ({sourceCounts.ALL})
               </button>
 
-              <button
-                type="button"
-                onClick={() => {
-                  setSourceFilter('ALL');
-                  setVendorFilter('ALL');
-                  setStackFilterActive(!stackFilterActive);
-                  setPage(1);
-                }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
-                  stackFilterActive
-                    ? 'bg-accent/20 font-medium text-accent border border-accent/60'
-                    : 'text-muted hover:text-accent border border-line'
-                }`}
-                title="Filter feed to your monitored enterprise stack & watched CVEs">
-                <span>My Stack</span>
-                <span className="font-mono text-[10px] opacity-80">({stackMatchCount})</span>
-              </button>
+              <div className="inline-flex items-center rounded border border-line bg-surface/50 p-0.5 shrink-0">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (!myStack.hasConfiguredStack) {
+                      setIsMobileStackOpen(true);
+                      return;
+                    }
+                    setSourceFilter('ALL');
+                    setVendorFilter('ALL');
+                    setStackFilterActive(!stackFilterActive);
+                    setPage(1);
+                  }}
+                  className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                    stackFilterActive
+                      ? 'bg-accent/20 font-medium text-accent border border-accent/60'
+                      : 'text-muted hover:text-accent border border-transparent'
+                  }`}
+                  title="Filter feed to your monitored enterprise stack & watched CVEs">
+                  <span>My Stack</span>
+                  <span className="font-mono text-[10px] opacity-80">({stackMatchCount})</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setIsMobileStackOpen(true)}
+                  className="px-1 py-0.5 text-muted hover:text-accent transition-colors cursor-pointer lg:hidden"
+                  title="Manage My Stack & CVEs">
+                  <SlidersHorizontal className="h-3 w-3" />
+                </button>
+              </div>
 
               <button
                 type="button"
@@ -507,7 +521,7 @@ export function News() {
                   setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer shrink-0 ${
                   sourceFilter === 'PSIRT' && !stackFilterActive
                     ? 'bg-cyan-500/20 font-medium text-cyan-400 border border-cyan-500/50'
                     : 'text-muted hover:text-cyan-400 border border-line'
@@ -522,10 +536,10 @@ export function News() {
                   setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors cursor-pointer shrink-0 ${
                   sourceFilter === 'MEDIA' && !stackFilterActive
-                    ? 'bg-raised font-medium text-accent border border-accent/40'
-                    : 'text-muted hover:text-accent border border-line'
+                    ? 'bg-purple-500/20 font-medium text-purple-400 border border-purple-500/50'
+                    : 'text-muted hover:text-purple-400 border border-line'
                 }`}>
                 Media & Research ({sourceCounts.MEDIA})
               </button>
@@ -636,17 +650,29 @@ export function News() {
             )}
           </>
         ) : (
-          <div className="py-20 text-center">
+          <div className="py-16 text-center">
             <p className="text-lg font-medium text-ink">
               {stackFilterActive && !myStack.hasConfiguredStack
                 ? 'Your stack is unconfigured'
                 : 'No briefs match that search'}
             </p>
-            <p className="mt-2 text-muted">
+            <p className="mt-2 text-sm text-muted max-w-sm mx-auto">
               {stackFilterActive && !myStack.hasConfiguredStack
-                ? 'Select your enterprise vendors or pin CVEs in the sidebar on the right.'
+                ? 'Configure your monitored enterprise vendors or CVE watchlist to filter your threat feed.'
                 : 'Try a different keyword, clear the filters, or search the historical archive.'}
             </p>
+
+            {stackFilterActive && !myStack.hasConfiguredStack && (
+              <div className="mt-4 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => setIsMobileStackOpen(true)}
+                  className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-xs font-semibold text-bg hover:bg-accent/90 transition-colors cursor-pointer shadow-sm">
+                  <SlidersHorizontal className="h-3.5 w-3.5" />
+                  <span>Configure My Stack & Watchlist</span>
+                </button>
+              </div>
+            )}
 
             {query.trim().length >= 2 && !stackFilterActive && (
               <div className="mt-6 flex flex-col items-center w-full">
@@ -726,6 +752,28 @@ export function News() {
             </div>
           </aside>
         </div></div>
+
+      <MobileMyStackModal
+        isOpen={isMobileStackOpen}
+        onClose={() => setIsMobileStackOpen(false)}
+        selectedVendors={myStack.selectedVendors}
+        watchedCves={myStack.watchedCves}
+        toggleVendor={handleToggleVendor}
+        removeVendor={handleRemoveVendor}
+        clearVendors={handleClearVendors}
+        toggleWatchCve={handleToggleWatchCve}
+        removeWatchCve={handleRemoveWatchCve}
+        clearCves={handleClearCves}
+        clearStack={handleClearStack}
+        matchCount={stackMatchCount}
+        isStackFilterActive={stackFilterActive}
+        onToggleStackFilter={() => {
+          setSourceFilter('ALL');
+          setVendorFilter('ALL');
+          setStackFilterActive(!stackFilterActive);
+          setPage(1);
+        }}
+      />
     </>
   );
 }

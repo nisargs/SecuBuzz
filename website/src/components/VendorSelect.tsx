@@ -67,13 +67,13 @@ export function VendorSelect({ value, onChange, vendors, totalCount }: VendorSel
       : value;
 
   return (
-    <div ref={containerRef} className="relative inline-block text-left">
+    <div ref={containerRef} className="relative inline-block w-full sm:w-auto text-left">
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`inline-flex h-8 min-w-[160px] max-w-[220px] items-center justify-between gap-1.5 rounded-md border border-line bg-surface px-2.5 font-sans text-xs font-normal text-ink transition-colors hover:border-subtle/60 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent/20 ${
+        className={`inline-flex h-8 w-full min-w-0 sm:min-w-[150px] sm:max-w-[220px] items-center justify-between gap-1.5 rounded-md border border-line bg-surface px-2.5 font-sans text-xs font-normal text-ink transition-colors hover:border-subtle/60 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent/20 ${
           isOpen ? 'border-accent ring-1 ring-accent/20' : ''
         }`}
       >
@@ -89,7 +89,7 @@ export function VendorSelect({ value, onChange, vendors, totalCount }: VendorSel
       {isOpen && (
         <div
           role="listbox"
-          className="absolute left-0 top-full z-50 mt-1.5 w-64 sm:w-72 rounded-lg border border-line bg-surface p-1 shadow-2xl backdrop-blur-md ring-1 ring-black/10 dark:ring-white/5 animate-in fade-in-0 zoom-in-95"
+          className="absolute left-0 top-full z-50 mt-1.5 w-64 sm:w-72 max-w-[calc(100vw-32px)] rounded-lg border border-line bg-surface p-1 shadow-2xl backdrop-blur-md ring-1 ring-black/10 dark:ring-white/5 animate-in fade-in-0 zoom-in-95"
         >
           {/* Search inside */}
           <div className="p-1.5 border-b border-line/40">

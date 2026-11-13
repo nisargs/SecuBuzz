@@ -1,8 +1,9 @@
 import { Link, useSearchParams } from 'react-router-dom';
 import React, { useMemo, useState, useEffect, useCallback } from 'react';
-import { SearchIcon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
+import { SearchIcon, ChevronLeftIcon, ChevronRightIcon, SlidersHorizontal } from 'lucide-react';
 import { PageIntro } from '../components/PageIntro';
 import { AdvisoryTable } from '../components/AdvisoryTable';
+import { MobileMyStackModal } from '../components/MobileMyStackModal';
 import { useMyStack, POPULAR_VENDORS } from '../data/useMyStack';
 import { useLiveNews } from '../data/useLiveNews';
 import { getVendorFromSource } from '../utils/psirt';
@@ -39,6 +40,7 @@ export function Advisories() {
     }
   });
   const { advisories: catalogAdvisories } = useLiveAdvisories();
+  const [isMobileStackOpen, setIsMobileStackOpen] = useState(false);
   const { news } = useLiveNews();
   const myStack = useMyStack();
 
@@ -361,9 +363,9 @@ export function Advisories() {
       <div className="mx-auto max-w-site px-5 pb-20 md:px-8">
         <div className="sticky top-16 z-20 -mx-5 flex flex-col gap-2.5 border-b border-line bg-bg/95 px-5 py-2.5 backdrop-blur md:-mx-8 md:px-8">
           {/* Row 1: Search, Vendor, Due This Week, Sort & Reset */}
-          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-            <div className="flex flex-1 flex-wrap items-center gap-2.5">
-              <label className="relative block flex-1 sm:max-w-xs md:w-72">
+          <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2.5 w-full sm:flex-1">
+              <label className="relative block w-full sm:w-72 shrink-0">
                 <span className="sr-only">Search advisories</span>
                 <SearchIcon className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-subtle" aria-hidden="true" />
                 <input
@@ -377,33 +379,34 @@ export function Advisories() {
                   className="h-8 w-full rounded-md border border-line bg-surface pl-8 pr-3 text-xs text-ink placeholder:text-subtle focus:border-accent focus:outline-none" />
               </label>
 
-              <div className="inline-flex items-center gap-1.5 text-xs text-subtle">
-                <span>Vendor:</span>
-                <VendorSelect
-                  value={vendorFilter}
-                  onChange={(v) => {
-                    setVendorFilter(v);
-                    setPage(1);
-                  }}
-                  vendors={sortedVendors}
-                  totalCount={vendorCandidates.length}
-                />
-              </div>
+              <div className="grid grid-cols-2 gap-2 w-full sm:flex sm:w-auto sm:items-center sm:gap-2.5">
+                <div className="w-full sm:w-auto">
+                  <VendorSelect
+                    value={vendorFilter}
+                    onChange={(v) => {
+                      setVendorFilter(v);
+                      setPage(1);
+                    }}
+                    vendors={sortedVendors}
+                    totalCount={vendorCandidates.length}
+                  />
+                </div>
 
-              <label className="inline-flex cursor-pointer items-center gap-1.5 text-xs text-muted">
-                <input
-                  type="checkbox"
-                  checked={dueThisWeekOnly}
-                  onChange={(e) => {
-                    setDueThisWeekOnly(e.target.checked);
-                    setPage(1);
-                  }}
-                  className="h-3.5 w-3.5 rounded border-line bg-surface accent-[rgb(var(--accent))]" />
-                Due this week {dueThisWeekCount > 0 ? `(${dueThisWeekCount})` : ''}
-              </label>
+                <label className="inline-flex cursor-pointer items-center justify-center sm:justify-start gap-1.5 rounded-md border border-line sm:border-transparent bg-surface sm:bg-transparent px-2 sm:px-0 h-8 sm:h-auto text-xs text-muted truncate">
+                  <input
+                    type="checkbox"
+                    checked={dueThisWeekOnly}
+                    onChange={(e) => {
+                      setDueThisWeekOnly(e.target.checked);
+                      setPage(1);
+                    }}
+                    className="h-3.5 w-3.5 rounded border-line bg-surface accent-[rgb(var(--accent))]" />
+                  Due this week {dueThisWeekCount > 0 ? `(${dueThisWeekCount})` : ''}
+                </label>
+              </div>
             </div>
 
-            <div className="flex items-center gap-2.5 self-end sm:self-auto shrink-0">
+            <div className="flex items-center justify-between sm:justify-end gap-2.5 shrink-0">
               <label className="inline-flex items-center gap-1.5 text-xs text-muted">
                 <span>Sort:</span>
                 <select
@@ -412,7 +415,7 @@ export function Advisories() {
                     setSort(e.target.value as SortKey);
                     setPage(1);
                   }}
-                  className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none">
+                  className="h-7.5 rounded-md border border-line bg-surface px-2 text-xs text-ink focus:border-accent focus:outline-none cursor-pointer">
                   <option value="added">Newest added</option>
                   <option value="due">Soonest due</option>
                 </select>
@@ -430,7 +433,7 @@ export function Advisories() {
                     setStackFilterActive(false);
                     setPage(1);
                   }}
-                  className="rounded border border-line bg-surface px-2 py-0.5 text-xs text-accent hover:border-accent transition-colors duration-150">
+                  className="rounded border border-line bg-surface px-2.5 py-1 text-xs text-accent hover:border-accent transition-colors duration-150">
                   Reset
                 </button>
               )}
@@ -438,16 +441,16 @@ export function Advisories() {
           </div>
 
           {/* Row 2: Severity & Impact (Left) + Advisory Source (Right) */}
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2 overflow-hidden">
             {/* Severity & Impact Chips */}
-            <div className="flex items-center gap-1 overflow-x-auto pb-0.5">
+            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none pb-0.5 -mx-5 px-5 sm:mx-0 sm:px-0">
               <button
                 type="button"
                 onClick={() => {
                   setSeverityFilter('ALL');
                   setPage(1);
                 }}
-                className={`rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                className={`rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out shrink-0 ${
                   severityFilter === 'ALL'
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent hover:bg-surface border border-line'
@@ -460,7 +463,7 @@ export function Advisories() {
                   setSeverityFilter('CRITICAL');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out shrink-0 ${
                   severityFilter === 'CRITICAL'
                     ? 'bg-critical/10 font-medium text-critical border border-critical/50'
                     : 'text-muted hover:text-critical hover:bg-surface border border-line'
@@ -474,7 +477,7 @@ export function Advisories() {
                   setSeverityFilter('HIGH');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out shrink-0 ${
                   severityFilter === 'HIGH'
                     ? 'bg-amber-500/10 font-medium text-amber-500 border border-amber-500/50'
                     : 'text-muted hover:text-amber-500 hover:bg-surface border border-line'
@@ -488,7 +491,7 @@ export function Advisories() {
                   setSeverityFilter('MEDIUM');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out shrink-0 ${
                   severityFilter === 'MEDIUM'
                     ? 'bg-[#4CC9F0]/10 font-medium text-[#4CC9F0] border border-[#4CC9F0]/50'
                     : 'text-muted hover:text-[#4CC9F0] hover:bg-surface border border-line'
@@ -502,7 +505,7 @@ export function Advisories() {
                   setSeverityFilter('LOW');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out shrink-0 ${
                   severityFilter === 'LOW'
                     ? 'bg-slate-400/10 font-medium text-slate-300 border border-slate-400/50'
                     : 'text-muted hover:text-ink hover:bg-surface border border-line'
@@ -516,7 +519,7 @@ export function Advisories() {
                   setSeverityFilter('RANSOMWARE');
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out shrink-0 ${
                   severityFilter === 'RANSOMWARE'
                     ? 'bg-rose-500/15 font-medium text-rose-400 border border-rose-500/60'
                     : 'text-muted hover:text-rose-400 hover:bg-surface border border-line'
@@ -527,7 +530,7 @@ export function Advisories() {
             </div>
 
             {/* Advisory Source Segment + My Stack */}
-            <div className="flex items-center gap-1 overflow-x-auto pb-0.5 shrink-0">
+            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none pb-0.5 -mx-5 px-5 sm:mx-0 sm:px-0 shrink-0">
               <button
                 type="button"
                 onClick={() => {
@@ -535,7 +538,7 @@ export function Advisories() {
                   setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
+                className={`rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer shrink-0 ${
                   sourceFilter === 'ALL' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent hover:bg-surface border border-line'
@@ -543,22 +546,35 @@ export function Advisories() {
                 All Sources ({sourceCounts.all})
               </button>
 
-              <button
-                type="button"
-                onClick={() => {
-                  setSourceFilter('ALL');
-                  setStackFilterActive(!stackFilterActive);
-                  setPage(1);
-                }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
-                  stackFilterActive
-                    ? 'bg-accent/20 font-medium text-accent border border-accent/60'
-                    : 'text-muted hover:text-accent hover:bg-surface border border-line'
-                }`}
-                title="Filter to advisories matching your monitored enterprise stack & watched CVEs">
-                <span>My Stack</span>
-                <span className="font-mono text-[10px] opacity-80">({stackMatchCount})</span>
-              </button>
+              <div className="inline-flex items-center rounded border border-line bg-surface/50 p-0.5 shrink-0">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (!myStack.hasConfiguredStack) {
+                      setIsMobileStackOpen(true);
+                      return;
+                    }
+                    setSourceFilter('ALL');
+                    setStackFilterActive(!stackFilterActive);
+                    setPage(1);
+                  }}
+                  className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
+                    stackFilterActive
+                      ? 'bg-accent/20 font-medium text-accent border border-accent/60'
+                      : 'text-muted hover:text-accent hover:bg-surface border border-transparent'
+                  }`}
+                  title="Filter to advisories matching your monitored enterprise stack & watched CVEs">
+                  <span>My Stack</span>
+                  <span className="font-mono text-[10px] opacity-80">({stackMatchCount})</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setIsMobileStackOpen(true)}
+                  className="px-1 py-0.5 text-muted hover:text-accent transition-colors cursor-pointer"
+                  title="Manage My Stack & CVEs">
+                  <SlidersHorizontal className="h-3 w-3" />
+                </button>
+              </div>
 
               <button
                 type="button"
@@ -567,7 +583,7 @@ export function Advisories() {
                   setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer shrink-0 ${
                   sourceFilter === 'CISA' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent hover:bg-surface border border-line'
@@ -582,7 +598,7 @@ export function Advisories() {
                   setStackFilterActive(false);
                   setPage(1);
                 }}
-                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer ${
+                className={`inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs transition-colors duration-150 ease-out cursor-pointer shrink-0 ${
                   sourceFilter === 'GITHUB' && !stackFilterActive
                     ? 'bg-raised font-medium text-accent border border-accent/40'
                     : 'text-muted hover:text-accent hover:bg-surface border border-line'
@@ -685,19 +701,27 @@ export function Advisories() {
                 ? 'Your stack is unconfigured'
                 : 'No advisories match'}
             </p>
-            <p className="mt-1.5 text-sm text-muted">
+            <p className="mt-1.5 text-sm text-muted max-w-sm mx-auto">
               {stackFilterActive && !myStack.hasConfiguredStack ? (
                 <>
-                  Pin CVEs directly with the bookmark icon in the table or configure vendors on the{' '}
-                  <Link to="/news" className="text-accent underline underline-offset-2 hover:text-accent/80">
-                    News workstation
-                  </Link>
-                  .
+                  Pin CVEs directly with the bookmark icon in the table or configure your monitored vendors to track them here.
                 </>
               ) : (
                 'Check the CVE format (e.g. CVE-2026-20417) or clear filters.'
               )}
             </p>
+
+            {stackFilterActive && !myStack.hasConfiguredStack && (
+              <div className="mt-4 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => setIsMobileStackOpen(true)}
+                  className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-xs font-semibold text-bg hover:bg-accent/90 transition-colors cursor-pointer shadow-sm">
+                  <SlidersHorizontal className="h-3.5 w-3.5" />
+                  <span>Configure My Stack & Watchlist</span>
+                </button>
+              </div>
+            )}
           </div>
         )}
 
@@ -705,6 +729,27 @@ export function Advisories() {
           Sources: CISA Known Exploited Vulnerabilities (KEV) catalog and the GitHub Security Advisory Database. Exploit probability percentiles powered by FIRST.org EPSS.
         </p>
       </div>
+
+      <MobileMyStackModal
+        isOpen={isMobileStackOpen}
+        onClose={() => setIsMobileStackOpen(false)}
+        selectedVendors={myStack.selectedVendors}
+        watchedCves={myStack.watchedCves}
+        toggleVendor={myStack.toggleVendor}
+        removeVendor={myStack.removeVendor}
+        clearVendors={myStack.clearVendors}
+        toggleWatchCve={myStack.toggleWatchCve}
+        removeWatchCve={myStack.removeWatchCve}
+        clearCves={myStack.clearCves}
+        clearStack={myStack.clearStack}
+        matchCount={stackMatchCount}
+        isStackFilterActive={stackFilterActive}
+        onToggleStackFilter={() => {
+          setSourceFilter('ALL');
+          setStackFilterActive(!stackFilterActive);
+          setPage(1);
+        }}
+      />
     </>);
 
 }
