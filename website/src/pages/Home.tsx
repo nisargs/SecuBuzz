@@ -9,7 +9,7 @@ import { AppCta } from '../components/AppCta';
 import { QrModal } from '../components/QrModal';
 import { WhatsNewModal } from '../components/WhatsNewModal';
 import { homeReasons } from '../data/site';
-import { THREAT_FEEDS_COUNT } from '../data/sources';
+import { TOTAL_SOURCES_COUNT } from '../data/sources';
 import { useLiveNews } from '../data/useLiveNews';
 import { useLiveAdvisories } from '../data/useLiveAdvisories';
 import { daysSince, daysUntil } from '../utils/date';
@@ -33,14 +33,14 @@ export function Home() {
     <>
       <Seo
         title="SecuBuzz · Quick Cybersecurity News in 60 Words & CISA KEV Radar"
-        description="Real-time cybersecurity news in 60 words and CISA KEV zero-day radar. Track active exploits, EPSS likelihood, and vendor advisories across 48+ sources."
+        description="Real-time cybersecurity news in 60 words, live vendor outage status, and CISA KEV zero-day radar. Track active exploits, EPSS likelihood, and vendor advisories across 80+ sources."
         canonicalPath="/"
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           name: 'SecuBuzz',
           url: 'https://secubuzz.com/',
-          description: 'Real-time cybersecurity news in 60 words and CISA KEV zero-day radar. Track active exploits, EPSS likelihood, and vendor advisories across 48+ sources.',
+          description: 'Real-time cybersecurity news in 60 words, live vendor outage status, and CISA KEV zero-day radar. Track active exploits, EPSS likelihood, and vendor advisories across 80+ sources.',
           publisher: {
             '@type': 'Organization',
             name: 'MiSo Labs',
@@ -73,14 +73,14 @@ export function Home() {
               <span className="block text-muted">Zero-days within hours of CISA listing them.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-              SecuBuzz condenses the day’s cybersecurity reporting and official vendor PSIRT advisories across Red Hat, Cisco, Microsoft, Palo Alto, Oracle, and AWS into source-linked 60-word briefs, pushing new Known Exploited Vulnerabilities to your Android phone with remediation deadlines.
+              SecuBuzz condenses the day’s cybersecurity reporting, live vendor outage status, and official vendor PSIRT advisories across Red Hat, Cisco, Microsoft, Palo Alto, Oracle, and AWS into source-linked 60-word briefs, pushing new Known Exploited Vulnerabilities to your Android phone with remediation deadlines.
             </p>
             <div className="mt-2.5">
               <Link
                 to="/sources"
                 className="group inline-flex items-center gap-1 font-mono text-xs text-accent transition-colors hover:text-accent/80"
               >
-                <span>See all {THREAT_FEEDS_COUNT} monitored sources &amp; vendor PSIRTs</span>
+                <span>See all {TOTAL_SOURCES_COUNT} monitored sources, vendor PSIRTs &amp; outage radars</span>
                 <span className="transition-transform duration-150 group-hover:translate-x-0.5">→</span>
               </Link>
             </div>

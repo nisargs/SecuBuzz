@@ -20,7 +20,6 @@ const RELEASES: ReleaseItem[] = [
   {
     version: 'v1.0.4',
     date: 'November 2026',
-    badge: 'LATEST',
     tagline: 'My Stack Triage Hub, CVE Watchlist & Targeted Push Notifications',
     highlights: [
       {
@@ -154,17 +153,24 @@ export function WhatsNewModal({ isOpen, onClose }: WhatsNewModalProps) {
         <div className="overflow-y-auto px-6 py-5 space-y-8">
           {/* Latest Live Update - Positioned Above v1.0.4 */}
           <div className="relative pl-6 border-l border-line/60 pb-2">
-            {/* Timeline marker */}
-            <div className="absolute -left-[9px] top-0 flex h-4 w-4 items-center justify-center rounded-full border border-accent bg-surface">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+            {/* Trimmed sub-update timeline marker */}
+            <div className="absolute -left-[5px] top-1.5 flex h-2.5 w-2.5 items-center justify-center rounded-full border border-accent/70 bg-surface">
+              <span className="h-1 w-1 rounded-full bg-accent" />
             </div>
 
-            <div className="text-xs leading-relaxed text-muted">
-              <span className="font-medium text-ink">Live Vendor Outages & Health Radar:</span>{' '}
-              <span>
-                Real-time incident and service degradation tracking across major enterprise cloud and security vendors, featuring dynamic severity ratio bars, expandable incident telemetry, and direct status routing.
+            {/* Header */}
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="font-mono text-sm font-semibold text-ink">Vendor Outage Monitoring</span>
+              <span className="rounded border border-accent/40 bg-accent/10 px-1.5 py-0.5 text-[9px] font-mono font-semibold uppercase text-accent">
+                LATEST
               </span>
+              <span className="font-mono text-xs text-subtle">· Continuous Update</span>
             </div>
+
+            <p className="mt-2 text-xs leading-relaxed text-muted">
+              <span className="font-medium text-ink">Live Outages &amp; Status Routing:</span>{' '}
+              Real-time incident and service degradation tracking across 33 enterprise cloud and security vendors, featuring dynamic severity ratio bars, expandable incident telemetry, and direct status routing.
+            </p>
           </div>
 
           {RELEASES.map((rel, idx) => (
