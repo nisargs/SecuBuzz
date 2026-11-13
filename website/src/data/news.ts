@@ -443,6 +443,28 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cisa-adds-two-known-exploited-vulnerabilities-to-c-b28c58cf",
+    "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+    "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CISA",
+    "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "publishedAt": "2026-11-13T12:00:00.000Z",
+    "cves": [
+      "CVE-2026-114713",
+      "CVE-2026-123039"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-adds-two-known-exploited-vulnerabilities-to-c",
+      "article-b28c58cf",
+      "b28c58cf",
+      "cisa-adds-two-known-exploited-vulnerabilities-to-c-6c3514",
+      "cisa-adds-two-known-exploited-vulnerabilities-to-catalog"
+    ]
+  },
+  {
     "slug": "europol-seizes-gootloader-castlerat-servers-8711f5cb",
     "title": "Europol Seizes Gootloader, CastleRAT Servers",
     "summary": "Europol seized servers hosting the Gootloader and CastleRAT malware families, disrupting their command-and-control infrastructure. The seizure dismantles the attackers’ ability to deliver ransomware payloads and exfiltrate data, though the malware remains active elsewhere. Law enforcement will continue to monitor recovered infrastructure, and security teams should update threat intelligence feeds to detect related indicators.",
@@ -1235,6 +1257,67 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "postgresql-pg-stat-statements-buffer-overflow-rce-55e286f3",
+    "title": "PostgreSQL pg_stat_statements Buffer Overflow RCE Vulnerability",
+    "summary": "A heap-based buffer overflow in PostgreSQL's pg_stat_statements extension allows remote code execution on affected installations, requiring authentication in production environments. The flaw, CVE-2026-14676, scores 8.8 CVSS and enables privilege escalation, compromising database integrity. Apply the vendor patch or upgrade PostgreSQL, and enforce least‑privilege access controls for database administrators to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-974/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-14676"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "postgresql-pg-stat-statements-buffer-overflow-rce",
+      "article-55e286f3",
+      "55e286f3",
+      "postgresql-pg-stat-statements-buffer-overflow-rce-6f3d22",
+      "postgresql-pg-stat-statements-buffer-overflow-rce-vulnerabil"
+    ]
+  },
+  {
+    "slug": "zdi-26-971-signal-for-windows-insufficient-ui-warn-5ee46e72",
+    "title": "ZDI-26-971: Signal for Windows Insufficient UI Warning Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Signal for Windows. User interaction is required to exploit this vulnerability in that the target must accept a malicious attachment. The ZDI has assigned a CVSS rating of 7.5.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-971/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-971-signal-for-windows-insufficient-ui-warn",
+      "article-5ee46e72",
+      "5ee46e72",
+      "zdi-26-971-signal-for-windows-insufficient-ui-warn-6f3d22",
+      "zdi-26-971-signal-for-windows-insufficient-ui-warning-remote"
+    ]
+  },
+  {
+    "slug": "zdi-26-968-pwn2own-openai-codex-gui-openprojectinc-1bc3effc",
+    "title": "ZDI-26-968: (Pwn2Own) OpenAI Codex GUI OpenProjectInCodex Argument Injection Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of OpenAI Codex. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The following CVEs are assigned: CVE-2026-110930.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-968/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-110930"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-968-pwn2own-openai-codex-gui-openprojectinc",
+      "article-1bc3effc",
+      "1bc3effc",
+      "zdi-26-968-pwn2own-openai-codex-gui-openprojectinc-6f3d1f",
+      "zdi-26-968-pwn2own-openai-codex-gui-openprojectincodex-argum"
     ]
   },
   {
@@ -9487,82 +9570,6 @@ export const news: NewsBrief[] = [
       "article-28a73ab6",
       "28a73ab6",
       "apple-fixes-bluetooth-airplay-pairing-flaws-7d6b0c"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-gcc-update-for-moderate-security-is-fd907fcf",
-    "title": "Red Hat Issues GCC Update for Moderate Security Issue",
-    "summary": "Red Hat released a GCC update for RHEL 8 to fix a moderate‑severity security issue. The advisory indicates a Moderate impact, with CVSS scores linked to CVE references, suggesting a medium‑severity flaw affecting compiler integrity. Apply the update immediately and confirm GCC version compliance in RHEL 8 to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98115",
-    "publishedAt": "2026-11-11T06:34:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-gcc-update-for-moderate-security-is",
-      "article-fd907fcf",
-      "fd907fcf",
-      "red-hat-issues-gcc-update-for-moderate-security-is-37d6f4",
-      "red-hat-issues-gcc-update-for-moderate-security-issue"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-qt5-qtbase-security-update-57b47645",
-    "title": "Red Hat Issues Qt5‑Qtbase Security Update",
-    "summary": "Red Hat released a security update for qt5‑qtbase on RHEL 8, addressing vulnerabilities that could allow local privilege escalation or code execution. The update lists multiple CVE identifiers with CVSS scores indicating moderate to high severity, yet no active exploitation reports exist. Red Hat recommends applying the update immediately via the standard RHEL update channels.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98103",
-    "publishedAt": "2026-11-11T06:17:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-qt5-qtbase-security-update",
-      "article-57b47645",
-      "57b47645",
-      "red-hat-issues-qt5-qtbase-security-update-37d6f4"
-    ]
-  },
-  {
-    "slug": "cisco-broadworks-openwave-flaws-actively-exploited-3c0cd8b8",
-    "title": "Cisco BroadWorks, Openwave Flaws Actively Exploited",
-    "summary": "CISA identified active exploitation of two vulnerabilities in Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder. The flaws, including CVE-2026-20320, stem from an improper restriction of XML external entities, scoring CVSS 7.5 and enabling remote code execution without authentication. Both vendors have released patches; security teams must apply them immediately and monitor for exploitation indicators.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-    "publishedAt": "2026-11-11T06:04:02.000Z",
-    "cves": [
-      "CVE-2026-20320"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-broadworks-openwave-flaws-actively-exploited",
-      "article-3c0cd8b8",
-      "3c0cd8b8",
-      "cisco-broadworks-openwave-flaws-actively-exploited-15abd9"
-    ]
-  },
-  {
-    "slug": "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-72c8dbf1",
-    "title": "EU cyber scores look healthy, but 45% of surveyed IT providers take months to patch",
-    "summary": "Forty-five percent of surveyed IT service management providers in the EU took more than three months to apply critical patches to critical systems, according to ENISA’s 2026 assessment of cybersecurity in the Union. Attackers can turn a newly disclosed flaw into a working attack within days, and sometimes within hours or minutes.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/eu-enisa-cybersecurity-report/",
-    "publishedAt": "2026-11-11T06:00:09.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "eu-cyber-scores-look-healthy-but-45-of-surveyed-it",
-      "article-72c8dbf1",
-      "72c8dbf1",
-      "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-52db95",
-      "eu-cyber-scores-look-healthy-but-45-of-surveyed-it-providers"
     ]
   }
 ];
