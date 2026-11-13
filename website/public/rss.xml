@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 19:45:17 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 20:02:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Trezor Confirms Hardware Implants in Safe 5 Wallets</title>
@@ -15,6 +15,15 @@
       <pubDate>Fri, 13 Nov 2026 19:38:36 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/">BleepingComputer</source>
       <category>Breach</category>
+    </item>
+    <item>
+      <title>NYC Imposes $1,000 Fine for Surveillance Pricing</title>
+      <link>https://secubuzz.com/news/nyc-imposes-1-000-fine-for-surveillance-pricing-c5a51994</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/nyc-imposes-1-000-fine-for-surveillance-pricing-c5a51994</guid>
+      <description><![CDATA[NYC will levy a $1,000 penalty on companies that charge customers for surveillance services, curbing hidden pricing practices. The fine applies after a verified instance, requiring firms to document pricing structures and submit evidence to the city’s enforcement office. Businesses should review pricing policies, keep transparent records, and seek legal counsel to ensure compliance before enforcement.]]></description>
+      <pubDate>Fri, 13 Nov 2026 18:35:00 GMT</pubDate>
+      <source url="https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing">The Record</source>
+      <category>General</category>
     </item>
     <item>
       <title>Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach</title>
@@ -446,15 +455,6 @@
       <description><![CDATA[The article ranks the vulnerability scanners of 2026, covering commercial engines, community tools, and open‑source templates like Nuclei. It evaluates scanners based on authentication coverage, detection speed, and integration with threat intelligence, highlighting the shift toward rapid CVE discovery. Readers can use the rankings to select tools that align with their asset coverage and remediation workflows, ensuring comprehensive vulnerability management.]]></description>
       <pubDate>Fri, 13 Nov 2026 09:28:31 GMT</pubDate>
       <source url="https://cybersecuritynews.com/best-vulnerability-scanners/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>OpenAI Launches Daybreak Red Team and Defense Factory</title>
-      <link>https://secubuzz.com/news/openai-launches-daybreak-red-team-and-defense-fact-3afcdcba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/openai-launches-daybreak-red-team-and-defense-fact-3afcdcba</guid>
-      <description><![CDATA[OpenAI introduced the Daybreak Red Team, a set of AI‑driven pentesting tools that target web applications for security assessment. Simultaneously, the Defense Factory component analyzes discovered vulnerabilities and coordinates patch development to mitigate identified risks. Security teams can access these tools through OpenAI’s platform to enhance their web application testing and remediation workflows.]]></description>
-      <pubDate>Fri, 13 Nov 2026 09:21:01 GMT</pubDate>
-      <source url="https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/">SecurityWeek</source>
       <category>General</category>
     </item>
   </channel>

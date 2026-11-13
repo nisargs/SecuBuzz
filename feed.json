@@ -16,6 +16,22 @@
     "additionalSources": []
   },
   {
+    "id": "https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing",
+    "sourceUrl": "https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing",
+    "title": "NYC Imposes $1,000 Fine for Surveillance Pricing",
+    "headline": "NYC Imposes $1,000 Fine for Surveillance Pricing",
+    "summary": "NYC will levy a $1,000 penalty on companies that charge customers for surveillance services, curbing hidden pricing practices. The fine applies after a verified instance, requiring firms to document pricing structures and submit evidence to the city’s enforcement office. Businesses should review pricing policies, keep transparent records, and seek legal counsel to ensure compliance before enforcement.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "The Record",
+    "publishedAt": "2026-11-13T18:35:00.000Z",
+    "ingestedAt": "2026-11-13T20:01:28.625Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8",
     "sourceUrl": "https://www.sentinelone.com/blog/the-good-the-bad-and-the-ugly-in-cybersecurity-week-46-8",
     "title": "Weekly Cybersecurity Roundup: Crypto Scams, Turla, Railway Breach",
@@ -1032,6 +1048,41 @@
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/",
     "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-959/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-959/",
+    "title": "Docker Agent read_skill RCE via Missing Authorization",
+    "headline": "Docker Agent read_skill RCE via Missing Authorization",
+    "summary": "A missing authorization flaw in Docker Agent’s read_skill function permits local attackers to execute arbitrary code on installations. The flaw requires user interaction, visiting a malicious page or opening a malicious file, and has a CVSS score of 7.8. Docker has not yet released a patch; security teams should disable the read_skill feature or apply the forthcoming update when available.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "ingestedAt": "2026-11-13T19:59:36.143Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-959/",
+    "additionalSources": []
+  },
+  {
+    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-954/",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-954/",
+    "title": "ZDI-26-954: llama.cpp MTMD Multimodal GGUF File Parsing Integer Overflow Remote Code Execution Vulnerability",
+    "headline": "ZDI-26-954: llama.cpp MTMD Multimodal GGUF File Parsing Integer Overflow Remote Code Execution Vulnerability",
+    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of llama.cpp. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The following CVEs are assigned: CVE-2026-126976.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "ingestedAt": "2026-11-13T20:00:04.826Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-126976"
+    ],
+    "additionalSources": [],
+    "isFallback": true
   },
   {
     "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-958/",
@@ -8385,53 +8436,5 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
-    "title": "Meta Detectron2 Deserialization Flaw Enables Remote Code Execution",
-    "headline": "Meta Detectron2 Deserialization Flaw Enables Remote Code Execution",
-    "summary": "Meta Detectron2’s vertex_feature_embedder deserialization flaw permits remote attackers to execute arbitrary code on affected installations. The vulnerability requires user interaction, such as visiting a malicious page or opening a malicious file, and carries a CVSS score of 7.8. No patch is currently available; users should avoid untrusted data inputs and monitor for vendor advisories.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "ingestedAt": "2026-11-12T06:43:12.716Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-907/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-910/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-910/",
-    "title": "Meta Detectron2 LazyConfig Deserialization RCE Vulnerability",
-    "headline": "Meta Detectron2 LazyConfig Deserialization RCE Vulnerability",
-    "summary": "A zero‑day deserialization flaw in Meta Detectron2’s LazyConfig lets attackers run code when a user opens a malicious file. Rated CVSS 7.8, the flaw requires user interaction and exploits untrusted data deserialization for code execution. Meta has not yet patched; teams should monitor for updates and disable LazyConfig loading until a fix is released.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "ingestedAt": "2026-11-12T04:43:16.924Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-910/",
-    "additionalSources": []
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-909/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-909/",
-    "title": "Meta Detectron2 CfgNode.merge_from_file RCE Vulnerability",
-    "headline": "Meta Detectron2 CfgNode.merge_from_file RCE Vulnerability",
-    "summary": "A zero‑day deserialization flaw in Meta Detectron2’s CfgNode.merge_from_file component allows attackers to execute code when a user opens a malicious file. Rated CVSS 7.8, the vulnerability requires user interaction and exploits untrusted data deserialization for code execution. Meta has not yet released a patch; teams should monitor for updates and disable CfgNode.merge_from_file usage until a fix arrives.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "ingestedAt": "2026-11-12T04:43:16.924Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-909/",
-    "additionalSources": []
   }
 ]
