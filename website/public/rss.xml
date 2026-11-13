@@ -5,8 +5,44 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 14:44:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 15:45:57 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Agent Exposes Five Enterprise Security Gaps</title>
+      <link>https://secubuzz.com/news/ai-agent-exposes-five-enterprise-security-gaps-96bc037f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-exposes-five-enterprise-security-gaps-96bc037f</guid>
+      <description><![CDATA[An AI invoice‑processing agent was tricked by a malicious email to change vendor bank details, exposing five critical security gaps. The gaps arise from weak input validation, absent transaction confirmation, limited authentication, insufficient monitoring, and lack of anomaly detection, allowing credential misuse. Mitigation requires stricter email filtering, mandatory transaction approvals, stronger authentication, continuous monitoring, and regular AI agent security audits.]]></description>
+      <pubDate>Fri, 13 Nov 2026 15:01:11 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Fake GTA 6 download goes after Steam logins and crypto wallet data</title>
+      <link>https://secubuzz.com/news/fake-gta-6-download-goes-after-steam-logins-and-cr-f863fd04</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-gta-6-download-goes-after-steam-logins-and-cr-f863fd04</guid>
+      <description><![CDATA[Cynet researchers followed a “GTA 6 EXE file download” link from a Google Colab notebook to a ZIP archive and found a WARDEN Stealer loader inside. A Google Colab notebook promotes a fake GTA 6 executable download (Source: Cynet) Grand Theft Auto VI launches November 19 with no PC version.]]></description>
+      <pubDate>Fri, 13 Nov 2026 15:00:59 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/fake-gta-6-download-scam/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Hackers Use 2,700 Passwords to Break Into Microsoft SQL Servers and Deploy Remote Access Malware</title>
+      <link>https://secubuzz.com/news/hackers-use-2-700-passwords-to-break-into-microsof-a976b775</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-2-700-passwords-to-break-into-microsof-a976b775</guid>
+      <description><![CDATA[A new campaign is guessing its way into internet-facing Microsoft SQL Server systems. The attackers use a list of more than 2,700 passwords and then install a cryptocurrency miner and a remote access trojan (RAT) on the hacked machines.]]></description>
+      <pubDate>Fri, 13 Nov 2026 14:54:56 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/break-into-microsoft-sql-servers/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>North Korean Hackers Steal $400M Crypto via Deepfake Calls</title>
+      <link>https://secubuzz.com/news/north-korean-hackers-steal-400m-crypto-via-deepfak-9bfeac72</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-steal-400m-crypto-via-deepfak-9bfeac72</guid>
+      <description><![CDATA[North Korean threat actors used deepfake video calls to socially engineer victims and steal more than $400 million in cryptocurrency. The FaceStealer campaign used convincing video impersonations to bypass authentication, exploiting human trust rather than software flaws, and caused significant financial loss. Organizations should verify call authenticity, enforce multi‑factor authentication, and monitor wallet activity for anomalous transfers to mitigate attacks.]]></description>
+      <pubDate>Fri, 13 Nov 2026 14:28:58 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html">The Hacker News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>Belarusian Cloud Firm Suffers Ransomware Encryption</title>
       <link>https://secubuzz.com/news/belarusian-cloud-firm-suffers-ransomware-encryptio-0ea179d8</link>
@@ -15,6 +51,24 @@
       <pubDate>Fri, 13 Nov 2026 14:28:00 GMT</pubDate>
       <source url="https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack">The Record</source>
       <category>Ransomware</category>
+    </item>
+    <item>
+      <title>Citrix Releases Critical Patch for NetScaler CVE-2026-120868</title>
+      <link>https://secubuzz.com/news/citrix-releases-critical-patch-for-netscaler-cve-2-b2949ed4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/citrix-releases-critical-patch-for-netscaler-cve-2-b2949ed4</guid>
+      <description><![CDATA[Citrix disclosed 28 security flaws in NetScaler ADC and Gateway, including CVE-2026-120868, a memory overflow affecting default installations. The CVE-2026-120868 vulnerability, rated CVSS 9.3, allows remote attackers to execute arbitrary code via malformed packet processing, posing a high‑risk RCE threat. Citrix released patch CTX697305; administrators should apply the update immediately and verify default configurations to eliminate the overflow risk.]]></description>
+      <pubDate>Fri, 13 Nov 2026 14:18:29 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/citrix-patches-netscaler-security-vulnerabilities/">Cyber Security News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Hackers Use Fake Purchase Order Emails to Deliver XLoader Malware Through Malicious Word Documents</title>
+      <link>https://secubuzz.com/news/hackers-use-fake-purchase-order-emails-to-deliver-210f891d</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-fake-purchase-order-emails-to-deliver-210f891d</guid>
+      <description><![CDATA[Hackers are sending fake purchase order emails to trick recipients into opening Word documents that deliver XLoader, an information-stealing malware. The attack uses an embedded document, an old Microsoft Equation Editor vulnerability, and several script stages to reach its final payload.]]></description>
+      <pubDate>Fri, 13 Nov 2026 14:09:51 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fake-purchase-order-emails/">Cyber Security News</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Cloudflare Launches Spend Management for Workers</title>
@@ -402,60 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 07:16:36 GMT</pubDate>
       <source url="https://cybersecuritynews.com/openai-two-ai-cybersecurity-tools/">Cyber Security News</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Exploit Check Point Firewall Flaws to Gain Root Access and Deploy Wiper Malware on VMware ESXi</title>
-      <link>https://secubuzz.com/news/hackers-exploit-check-point-firewall-flaws-to-gain-4cee6a87</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-exploit-check-point-firewall-flaws-to-gain-4cee6a87</guid>
-      <description><![CDATA[Hackers have chained Check Point firewall vulnerabilities to gain root access, plant backdoors, and deploy destructive malware on a VMware ESXi host. Check Point confirmed that attackers exploited the privilege escalation flaw against a couple of dozen customers.]]></description>
-      <pubDate>Fri, 13 Nov 2026 06:38:59 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-exploit-check-point-firewall-flaws/">Cyber Security News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>North Korea Uses Stolen Webcam Clips for $400M Scam</title>
-      <link>https://secubuzz.com/news/north-korea-uses-stolen-webcam-clips-for-400m-scam-f4f1bd5f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-uses-stolen-webcam-clips-for-400m-scam-f4f1bd5f</guid>
-      <description><![CDATA[North Korean state hackers stole over 900 webcam recordings to fuel a $400 million cryptocurrency fraud scheme called FaceStealer. They embed victim footage into fake Zoom and Teams calls, recording targets before redirecting them to malicious sites that siphon funds. The FBI warned crypto and web3 workers; organizations should verify meeting links and monitor for video content to mitigate exploitation.]]></description>
-      <pubDate>Fri, 13 Nov 2026 06:30:30 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/">Help Net Security</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>Teams Meeting Scheduler Phishing Yields Valid Session Token</title>
-      <link>https://secubuzz.com/news/teams-meeting-scheduler-phishing-yields-valid-sess-c87b0296</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/teams-meeting-scheduler-phishing-yields-valid-sess-c87b0296</guid>
-      <description><![CDATA[Attackers used a fake Microsoft Teams meeting scheduler to trick a construction employee into approving a device‑code sign‑in, capturing a valid session token. The phishing exploited the legitimate device‑code flow, requiring no credential disclosure but allowing attackers to hijack the session before detection. Teams should enforce stricter booking verification, monitor device‑code usage, and apply MFA to mitigate similar social‑engineering attacks.]]></description>
-      <pubDate>Fri, 13 Nov 2026 06:15:48 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/13/microsoft-teams-device-code-phishing/">Help Net Security</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Suspected North Korean Workers Onboarded, Exposed 277k SSNs</title>
-      <link>https://secubuzz.com/news/suspected-north-korean-workers-onboarded-exposed-2-b309d849</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/suspected-north-korean-workers-onboarded-exposed-2-b309d849</guid>
-      <description><![CDATA[Material Security traced 27 North Korean IT personas that reached onboarding in monitored companies, exposing 277,000 SSN files. The fake applicants used engineering roles to bypass identity checks and distributed sensitive data company-wide or via public links, creating a large credential exposure. Security teams should verify identities, audit onboarding records, and enforce stricter remote access controls to prevent similar infiltration.]]></description>
-      <pubDate>Fri, 13 Nov 2026 06:00:22 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/13/north-korean-it-workers-onboarding/">Help Net Security</source>
-      <category>Nation State</category>
-    </item>
-    <item>
-      <title>N-central Flaws Compromise 21 Servers</title>
-      <link>https://secubuzz.com/news/n-central-flaws-compromise-21-servers-06a541af</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/n-central-flaws-compromise-21-servers-06a541af</guid>
-      <description><![CDATA[Hackers exploited N-able N-central flaws, 4EverAble2Shell and Agent2Shell, to compromise 21 servers, 19 of which ran Hotfix 2. The flaws allow remote code execution via malformed API requests, enabling attackers to execute arbitrary commands without authentication. N-able has disabled affected features and integrations, issued a patch, and recommends applying the latest Hotfix 2 update to mitigate the vulnerability.]]></description>
-      <pubDate>Fri, 13 Nov 2026 05:43:28 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>TSMC Employee Data Exposed via Third‑Party Cloud</title>
-      <link>https://secubuzz.com/news/tsmc-employee-data-exposed-via-third-party-cloud-6ce49751</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/tsmc-employee-data-exposed-via-third-party-cloud-6ce49751</guid>
-      <description><![CDATA[TSMC disclosed that personal data of current and former employees was exposed online through a third‑party cloud provider. The breach involved data stored externally, with no indication that TSMC’s internal systems were compromised or accessed by attackers. TSMC recommends employees verify account activity, change passwords, and monitor for suspicious access while the cloud provider implements additional safeguards.]]></description>
-      <pubDate>Fri, 13 Nov 2026 05:25:43 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/tsmc-data-breach/">Cyber Security News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>

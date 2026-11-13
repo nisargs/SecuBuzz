@@ -11,6 +11,81 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "ai-agent-exposes-five-enterprise-security-gaps-96bc037f",
+    "title": "AI Agent Exposes Five Enterprise Security Gaps",
+    "summary": "An AI invoice‑processing agent was tricked by a malicious email to change vendor bank details, exposing five critical security gaps. The gaps arise from weak input validation, absent transaction confirmation, limited authentication, insufficient monitoring, and lack of anomaly detection, allowing credential misuse. Mitigation requires stricter email filtering, mandatory transaction approvals, stronger authentication, continuous monitoring, and regular AI agent security audits.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+    "publishedAt": "2026-11-13T15:01:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-agent-exposes-five-enterprise-security-gaps",
+      "article-96bc037f",
+      "96bc037f",
+      "ai-agent-exposes-five-enterprise-security-gaps-5de07f"
+    ]
+  },
+  {
+    "slug": "fake-gta-6-download-goes-after-steam-logins-and-cr-f863fd04",
+    "title": "Fake GTA 6 download goes after Steam logins and crypto wallet data",
+    "summary": "Cynet researchers followed a “GTA 6 EXE file download” link from a Google Colab notebook to a ZIP archive and found a WARDEN Stealer loader inside. A Google Colab notebook promotes a fake GTA 6 executable download (Source: Cynet) Grand Theft Auto VI launches November 19 with no PC version.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/fake-gta-6-download-scam/",
+    "publishedAt": "2026-11-13T15:00:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-gta-6-download-goes-after-steam-logins-and-cr",
+      "article-f863fd04",
+      "f863fd04",
+      "fake-gta-6-download-goes-after-steam-logins-and-cr-1dd0e9",
+      "fake-gta-6-download-goes-after-steam-logins-and-crypto-walle"
+    ]
+  },
+  {
+    "slug": "hackers-use-2-700-passwords-to-break-into-microsof-a976b775",
+    "title": "Hackers Use 2,700 Passwords to Break Into Microsoft SQL Servers and Deploy Remote Access Malware",
+    "summary": "A new campaign is guessing its way into internet-facing Microsoft SQL Server systems. The attackers use a list of more than 2,700 passwords and then install a cryptocurrency miner and a remote access trojan (RAT) on the hacked machines.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/break-into-microsoft-sql-servers/",
+    "publishedAt": "2026-11-13T14:54:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-2-700-passwords-to-break-into-microsof",
+      "article-a976b775",
+      "a976b775",
+      "hackers-use-2-700-passwords-to-break-into-microsof-6d0a32",
+      "hackers-use-2-700-passwords-to-break-into-microsoft-sql-serv"
+    ]
+  },
+  {
+    "slug": "north-korean-hackers-steal-400m-crypto-via-deepfak-9bfeac72",
+    "title": "North Korean Hackers Steal $400M Crypto via Deepfake Calls",
+    "summary": "North Korean threat actors used deepfake video calls to socially engineer victims and steal more than $400 million in cryptocurrency. The FaceStealer campaign used convincing video impersonations to bypass authentication, exploiting human trust rather than software flaws, and caused significant financial loss. Organizations should verify call authenticity, enforce multi‑factor authentication, and monitor wallet activity for anomalous transfers to mitigate attacks.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+    "publishedAt": "2026-11-13T14:28:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korean-hackers-steal-400m-crypto-via-deepfak",
+      "article-9bfeac72",
+      "9bfeac72",
+      "north-korean-hackers-steal-400m-crypto-via-deepfak-51e259",
+      "north-korean-hackers-steal-400m-crypto-via-deepfake-calls"
+    ]
+  },
+  {
     "slug": "belarusian-cloud-firm-suffers-ransomware-encryptio-0ea179d8",
     "title": "Belarusian Cloud Firm Suffers Ransomware Encryption",
     "summary": "Ransomware attackers breached ActiveCloud’s cloud infrastructure, encrypting critical services. No CVE disclosed; attackers leveraged credential theft or misconfigured access to encrypt data, causing multi‑day service outages across the firm’s key services. ActiveCloud has applied emergency patches and recommends customers enforce strict access controls, enable backups, and monitor for anomalous activity.",
@@ -27,6 +102,46 @@ export const news: NewsBrief[] = [
       "0ea179d8",
       "belarusian-cloud-firm-suffers-ransomware-encryptio-56df06",
       "belarusian-cloud-firm-suffers-ransomware-encryption"
+    ]
+  },
+  {
+    "slug": "citrix-releases-critical-patch-for-netscaler-cve-2-b2949ed4",
+    "title": "Citrix Releases Critical Patch for NetScaler CVE-2026-120868",
+    "summary": "Citrix disclosed 28 security flaws in NetScaler ADC and Gateway, including CVE-2026-120868, a memory overflow affecting default installations. The CVE-2026-120868 vulnerability, rated CVSS 9.3, allows remote attackers to execute arbitrary code via malformed packet processing, posing a high‑risk RCE threat. Citrix released patch CTX697305; administrators should apply the update immediately and verify default configurations to eliminate the overflow risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/citrix-patches-netscaler-security-vulnerabilities/",
+    "publishedAt": "2026-11-13T14:18:29.000Z",
+    "cves": [
+      "CVE-2026-120868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-releases-critical-patch-for-netscaler-cve-2",
+      "article-b2949ed4",
+      "b2949ed4",
+      "citrix-releases-critical-patch-for-netscaler-cve-2-58d08a",
+      "citrix-releases-critical-patch-for-netscaler-cve-2026-120868"
+    ]
+  },
+  {
+    "slug": "hackers-use-fake-purchase-order-emails-to-deliver-210f891d",
+    "title": "Hackers Use Fake Purchase Order Emails to Deliver XLoader Malware Through Malicious Word Documents",
+    "summary": "Hackers are sending fake purchase order emails to trick recipients into opening Word documents that deliver XLoader, an information-stealing malware. The attack uses an embedded document, an old Microsoft Equation Editor vulnerability, and several script stages to reach its final payload.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fake-purchase-order-emails/",
+    "publishedAt": "2026-11-13T14:09:51.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-fake-purchase-order-emails-to-deliver",
+      "article-210f891d",
+      "210f891d",
+      "hackers-use-fake-purchase-order-emails-to-deliver-55ae55",
+      "hackers-use-fake-purchase-order-emails-to-deliver-xloader-ma"
     ]
   },
   {
@@ -1249,6 +1364,25 @@ export const news: NewsBrief[] = [
       "article-b153599d",
       "b153599d",
       "red-hat-satellite-6-16-15-async-update-released-37d661"
+    ]
+  },
+  {
+    "slug": "google-incorporates-privacy-controls-into-gemini-s-53c60d5b",
+    "title": "Google Incorporates Privacy Controls into Gemini Smart Glasses",
+    "summary": "Google revealed privacy safeguards for its Gemini-powered intelligent eyewear to mitigate unconsented video and image capture of bystanders. The smart glasses automatically halt photo and video recording if the outward-facing recording indicator light is covered or physically tampered with. Additional protections integrated by Google include automated face redaction, restricted data handling processes, and application security limitations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/google-smart-glasses-privacy-protections/",
+    "publishedAt": "2026-11-12T23:45:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-incorporates-privacy-controls-into-gemini-s",
+      "article-53c60d5b",
+      "53c60d5b",
+      "google-incorporates-privacy-controls-into-gemini-s-7cd611",
+      "google-incorporates-privacy-controls-into-gemini-smart-glass"
     ]
   },
   {
@@ -9436,140 +9570,6 @@ export const news: NewsBrief[] = [
       "062b3457",
       "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-6f3d10",
       "zdi-26-926-0day-meta-fairseq-rawaudiodataset-yaml-file-parsi"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-multireshubertmodel-yaml-parsing-rce-aa351697",
-    "title": "Meta fairseq MultiresHubertModel YAML Parsing RCE Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-933/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-multireshubertmodel-yaml-parsing-rce",
-      "article-aa351697",
-      "aa351697",
-      "meta-fairseq-multireshubertmodel-yaml-parsing-rce-6f3d13",
-      "meta-fairseq-multireshubertmodel-yaml-parsing-rce-vulnerabil",
-      "meta-fairseq-yaml-parsing-rce-vulnerability-cve-20-af5f171d"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-ctccriterion-yaml-rce-vulnerability-831e7ca9",
-    "title": "Meta fairseq CtcCriterion YAML RCE Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-932/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-ctccriterion-yaml-rce-vulnerability",
-      "article-831e7ca9",
-      "831e7ca9",
-      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-6f3d13",
-      "meta-fairseq-ctccriterion-yaml-rce-vulnerability-c-f8299d2d"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-yaml-parsing-flaw-enables-remote-code-4a1d0d18",
-    "title": "Meta fairseq YAML Parsing Flaw Enables Remote Code Execution",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-931/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-yaml-parsing-flaw-enables-remote-code",
-      "article-4a1d0d18",
-      "4a1d0d18",
-      "meta-fairseq-yaml-parsing-flaw-enables-remote-code-6f3d13",
-      "meta-fairseq-yaml-parsing-flaw-enables-remote-code-execution"
-    ]
-  },
-  {
-    "slug": "zdi-26-930-0day-meta-fairseq-lightconvlanguagemode-6b290180",
-    "title": "ZDI-26-930: (0Day) Meta fairseq LightConvLanguageModel YAML File Parsing Code Injection Remote Code Execution Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-930/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "zdi-26-930-0day-meta-fairseq-lightconvlanguagemode",
-      "article-6b290180",
-      "6b290180",
-      "zdi-26-930-0day-meta-fairseq-lightconvlanguagemode-6f3d13",
-      "zdi-26-930-0day-meta-fairseq-lightconvlanguagemodel-yaml-fil"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-deserialization-rce-vulnerability-exp-bb48b00e",
-    "title": "Meta fairseq Deserialization RCE Vulnerability Exposes Code Execution",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-937/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-deserialization-rce-vulnerability-exp",
-      "article-bb48b00e",
-      "bb48b00e",
-      "meta-fairseq-deserialization-rce-vulnerability-exp-6f3d13",
-      "meta-fairseq-deserialization-rce-vulnerability-exposes-code-"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulne-43499adb",
-    "title": "Meta fairseq FairseqCPUAdam YAML Parsing RCE Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-936/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulne",
-      "article-43499adb",
-      "43499adb",
-      "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulne-6f3d13",
-      "meta-fairseq-fairseqcpuadam-yaml-parsing-rce-vulnerability"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu-821ac269",
-    "title": "Meta fairseq FConvModelSelfAtt YAML Parsing RCE Vulnerability",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-935/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu",
-      "article-821ac269",
-      "821ac269",
-      "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vu-6f3d13",
-      "meta-fairseq-fconvmodelselfatt-yaml-parsing-rce-vulnerabilit"
     ]
   }
 ];
