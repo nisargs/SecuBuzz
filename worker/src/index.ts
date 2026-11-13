@@ -255,6 +255,23 @@ function deduplicateFeed(articles: any[]): ArticleItem[] {
       summary = summary.replace(/\.{2,}/g, '.').replace(/\s+/g, ' ').trim();
     }
 
+    // Edge sanitization: Strip raw advisory table dumps / version lists (vers:intdot/, vers:all/*, etc.)
+    if (/vers:(?:intdot|all)\/|cpe:2\.3:|CVSS Vendor Equipment/i.test(summary)) {
+      const vulnMatch = summary.match(/(?:Vulnerabilities\s+CVE-\d{4}-\d+\s+|Background\s+Critical Infrastructure[^\.]*?\.\s*)([A-Z][^]+)$/);
+      if (vulnMatch && vulnMatch[1]) {
+        summary = vulnMatch[1].trim();
+      } else {
+        const sentences = summary.split(/(?<=[.?!])\s+/);
+        const goodSentences = sentences.filter(sent => 
+          !/vers:(?:intdot|all)\/|cpe:2\.3:|CVSS Vendor Equipment/i.test(sent) &&
+          /\b(?:vulnerability|vulnerabilities|overflow|execution|flaw|attack|exploit)\b/i.test(sent)
+        );
+        if (goodSentences.length > 0) {
+          summary = goodSentences.join(' ').trim();
+        }
+      }
+    }
+
     summary = normalizeCveHyphens(summary);
     const cleanTitle = normalizeCveHyphens(title);
     const cleanHeadline = art.headline ? normalizeCveHyphens(art.headline) : cleanTitle;

@@ -1814,15 +1814,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-industrial-edge-management-11a6dfe0",
     "title": "Siemens Industrial Edge Management",
-    "summary": "The following versions of Siemens Industrial Edge Management are affected: Cloud Connector Configurator vers:intdot/ Common Configurator (CC on IEM) vers:all/* (CVE-2026-111497) Common Configurator on Device (CC on Edge) vers:all/* (CVE-2026-111497) Data Flow Monitoring vers:intdot/ Databus Configurator vers:intdot/ DataXess Configurator vers:intdot/ Edge OPC UA Server Configurator vers:intdot/ Flow Creator Configurator vers:intdot/ Industrial Edge Hub vers:all/* (CVE-2026-111497) Industrial Edge Management Cloud vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens Cloud Connector Configurator 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
     "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "siemens-industrial-edge-management",
@@ -1834,15 +1832,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-desigo-gridscale-6a76e33a",
     "title": "Siemens Desigo, Gridscale",
-    "summary": "The following versions of Siemens Desigo, Gridscale are affected: Desigo CC family V8 vers:all/* (CVE-2026-111497) Desigo CC family V9 vers:all/* (CVE-2026-111497) Gridscale X DSA vers:intdot/>=5.3| Gridscale X PSS®E vers:intdot/ CVSS Vendor Equipment v3 9.8 Siemens Desigo CC family V8 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
     "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "siemens-desigo-gridscale",
@@ -1854,15 +1850,13 @@ export const news: NewsBrief[] = [
   {
     "slug": "siemens-ruggedcom-ape1808-37c64b1f",
     "title": "Siemens RUGGEDCOM APE1808",
-    "summary": "The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
+    "summary": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.",
     "category": "CVE",
     "severity": "MEDIUM",
     "source": "CISA",
     "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
     "publishedAt": "2026-11-12T12:00:00.000Z",
-    "cves": [
-      "CVE-2026-111497"
-    ],
+    "cves": [],
     "additionalSources": [],
     "aliases": [
       "siemens-ruggedcom-ape1808",
