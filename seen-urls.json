@@ -5396,5 +5396,10 @@
   "https://ubuntu.com/security/notices/USN-9084-1",
   "https://access.redhat.com/errata/RHSA-2026:99845",
   "https://access.redhat.com/errata/RHSA-2026:99716",
-  "https://access.redhat.com/errata/RHSA-2026:99698"
+  "https://access.redhat.com/errata/RHSA-2026:99698",
+  "https://ubuntu.com/security/notices/USN-9082-1",
+  "https://access.redhat.com/errata/RHSA-2026:99817",
+  "https://access.redhat.com/errata/RHSA-2026:99846",
+  "https://www.wiz.io/blog/aspm-ai-era-pt-3-fixing-risk-code-speed",
+  "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_02111478502.html"
 ]

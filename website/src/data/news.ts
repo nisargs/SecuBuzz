@@ -533,6 +533,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "usn-9082-1-pngquant-vulnerability-31566bba",
+    "title": "USN-9082-1: pngquant vulnerability",
+    "summary": "Choi Jaeseung discovered that pngquant incorrectly handled certain PNG images, leading to a buffer overflow. An attacker could possibly use this issue to cause pngquant to crash or execute arbitrary code.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9082-1",
+    "publishedAt": "2026-11-12T20:53:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "usn-9082-1-pngquant-vulnerability",
+      "article-31566bba",
+      "31566bba",
+      "usn-9082-1-pngquant-vulnerability-7e8611"
+    ]
+  },
+  {
     "slug": "red-hat-releases-perl-cgi-security-update-f16d5a95",
     "title": "Red Hat Releases Perl-CGI Security Update",
     "summary": "Perl-CGI on Red Hat Enterprise Linux 8 is affected by a security flaw prompting an update. Red Hat Product Security rated the issue as Important, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators should install it promptly today to eliminate the vulnerability.",
@@ -589,6 +607,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99817-important-xfsprogs-security-update-bca3f800",
+    "title": "RHSA-2026:99817: Important: xfsprogs security update",
+    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99817",
+    "publishedAt": "2026-11-12T20:42:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99817-important-xfsprogs-security-update",
+      "article-bca3f800",
+      "bca3f800",
+      "rhsa-2026-99817-important-xfsprogs-security-update-37d665"
+    ]
+  },
+  {
     "slug": "red-hat-releases-glib2-security-update-5fe320e5",
     "title": "Red Hat Releases glib2 Security Update",
     "summary": "glib2 on Red Hat Enterprise Linux 8.6 is impacted by a security flaw prompting an update. Red Hat Product Security rated the issue as Moderate, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators and promptly apply it today to mitigate the vulnerability.",
@@ -604,6 +640,25 @@ export const news: NewsBrief[] = [
       "article-5fe320e5",
       "5fe320e5",
       "red-hat-releases-glib2-security-update-37d665"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99846-important-pki-deps-10-6-security-b-9d58449f",
+    "title": "RHSA-2026:99846: Important: pki-deps:10.6 security, bug fix, and enhancement update",
+    "summary": "An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99846",
+    "publishedAt": "2026-11-12T20:39:15.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99846-important-pki-deps-10-6-security-b",
+      "article-9d58449f",
+      "9d58449f",
+      "rhsa-2026-99846-important-pki-deps-10-6-security-b-37d665",
+      "rhsa-2026-99846-important-pki-deps-10-6-security-bug-fix-and"
     ]
   },
   {
@@ -866,6 +921,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "wiz-research-publishes-aspm-ai-era-risk-mitigation-af84827b",
+    "title": "Wiz Research Publishes ASPM AI Era Risk Mitigation Guide",
+    "summary": "Wiz Research releases a guide on ASPM in the AI era, focusing on rapid risk remediation for software supply chains. The article recommends simplifying ownership mapping, applying code fixes, and automating workflows to reduce MTTR and eliminate remediation bottlenecks. Security teams should adopt these practices to streamline vulnerability triage and accelerate patch deployment.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/aspm-ai-era-pt-3-fixing-risk-code-speed",
+    "publishedAt": "2026-11-12T18:32:24.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "wiz-research-publishes-aspm-ai-era-risk-mitigation",
+      "article-af84827b",
+      "af84827b",
+      "wiz-research-publishes-aspm-ai-era-risk-mitigation-7e5daa",
+      "wiz-research-publishes-aspm-ai-era-risk-mitigation-guide"
+    ]
+  },
+  {
     "slug": "maersk-reports-legacy-system-cyber-incident-742c5924",
     "title": "Maersk Reports Legacy System Cyber Incident",
     "summary": "Maersk disclosed a cyber incident that impacted its legacy system, adding to a series of attacks on shipping ports worldwide. The event follows a ransomware attack on Brazil’s largest port last week, highlighting persistent threats to maritime infrastructure. Maritime operators should review legacy system security, apply available patches, and strengthen monitoring to mitigate future incidents.",
@@ -900,6 +974,24 @@ export const news: NewsBrief[] = [
       "8e5a5539",
       "threatsday-59-linux-kernel-bugs-falcon-spyware-gso-3dad84",
       "threatsday-59-linux-kernel-bugs-falcon-spyware-gsocket-backd"
+    ]
+  },
+  {
+    "slug": "google-chrome-releases-ios-stable-158-update-b4ec3c00",
+    "title": "Google Chrome Releases iOS Stable 158 Update",
+    "summary": "Google Chrome releases Stable 158 (158.0.8127.35) for iOS, adding stability and performance improvements. The update will be available on the App Store within hours, with changes documented in the Git log. Users encountering new issues should file bugs through the Chrome Release Team channels to aid future patches and improve stability.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-stable-for-ios-update_02111478502.html",
+    "publishedAt": "2026-11-12T17:58:34.407Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-chrome-releases-ios-stable-158-update",
+      "article-b4ec3c00",
+      "b4ec3c00",
+      "google-chrome-releases-ios-stable-158-update-1aca02"
     ]
   },
   {
@@ -9480,102 +9572,6 @@ export const news: NewsBrief[] = [
       "7bb5b801",
       "firefox-free-vpn-drops-50gb-launch-cap-until-janua-2d4be7",
       "firefox-free-vpn-drops-50gb-launch-cap-until-january-31"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97194-important-cockpit-files-security-u-c568e2d1",
-    "title": "RHSA-2026:97194: Important: cockpit-files security update",
-    "summary": "An update for cockpit-files is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97194",
-    "publishedAt": "2026-11-10T18:02:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97194-important-cockpit-files-security-u",
-      "article-c568e2d1",
-      "c568e2d1",
-      "rhsa-2026-97194-important-cockpit-files-security-u-37d767",
-      "rhsa-2026-97194-important-cockpit-files-security-update"
-    ]
-  },
-  {
-    "slug": "cve-2026-125350-xml-use-after-free-flaw-patched-7d533cf6",
-    "title": "CVE‑2026‑125350 XML Use‑After‑Free Flaw Patched",
-    "summary": "CVE‑2026‑125350, an XML use‑after‑free flaw, was disclosed and patched, affecting enterprise XML processing components. The flaw permits unauthenticated attackers to trigger memory corruption, potentially leading to remote code execution or denial of service. Security teams should deploy the vendor patch immediately, monitor for exploitation indicators, and validate XML input sanitization to mitigate risk. The flaw is tracked as CVE-2026-125350.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/chrome-update-patches-exploited-xml-zero-day-eighth-thi",
-    "publishedAt": "2026-11-10T18:00:14.000Z",
-    "cves": [
-      "CVE-2026-125350"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-125350-xml-use-after-free-flaw-patched",
-      "article-7d533cf6",
-      "7d533cf6",
-      "cve-2026-125350-xml-use-after-free-flaw-patched-698a41"
-    ]
-  },
-  {
-    "slug": "git-addresses-six-security-vulnerabilities-in-upda-a1593972",
-    "title": "Git Addresses Six Security Vulnerabilities in Updates",
-    "summary": "Git released updates addressing six security vulnerabilities that affected recursive clones, reference handling, merges, binary patches, and imports. The defects involve improper validation of repository metadata and could enable unauthorized code injection or data leakage. Users should install the latest Git version or apply the provided patches to secure their repositories.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "GitHub Security Blog",
-    "sourceUrl": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
-    "publishedAt": "2026-11-10T18:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "git-addresses-six-security-vulnerabilities-in-upda",
-      "article-a1593972",
-      "a1593972",
-      "git-addresses-six-security-vulnerabilities-in-upda-48249b",
-      "git-addresses-six-security-vulnerabilities-in-updates"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97386-important-go-fdo-client-security-u-585d17b2",
-    "title": "RHSA-2026:97386: Important: go-fdo-client security update",
-    "summary": "An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97386",
-    "publishedAt": "2026-11-10T17:54:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97386-important-go-fdo-client-security-u",
-      "article-585d17b2",
-      "585d17b2",
-      "rhsa-2026-97386-important-go-fdo-client-security-u-37d760",
-      "rhsa-2026-97386-important-go-fdo-client-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97521-important-microcode-ctl-security-b-18ff9260",
-    "title": "RHSA-2026:97521: Important: microcode_ctl security, bug fix, and enhancement update",
-    "summary": "An update for microcode_ctl is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97521",
-    "publishedAt": "2026-11-10T17:54:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97521-important-microcode-ctl-security-b",
-      "article-18ff9260",
-      "18ff9260",
-      "rhsa-2026-97521-important-microcode-ctl-security-b-37d759",
-      "rhsa-2026-97521-important-microcode-ctl-security-bug-fix-and"
     ]
   }
 ];
