@@ -49,6 +49,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-satellite-6-16-15-async-update-released-b153599d",
+    "title": "Red Hat Satellite 6.16.15 Async Update Released",
+    "summary": "Red Hat Satellite 6.16.15 for RHEL 8 and RHEL 9 receives an async update addressing multiple vulnerabilities. The update mitigates unspecified security issues with a CVSS base score listed in the CVE references, potentially preventing unauthorized access or privilege escalation. Administrators should apply the new Satellite package immediately to maintain system integrity.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99949",
+    "publishedAt": "2026-11-12T23:51:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-satellite-6-16-15-async-update-released",
+      "article-b153599d",
+      "b153599d",
+      "red-hat-satellite-6-16-15-async-update-released-37d661"
+    ]
+  },
+  {
+    "slug": "openstack-platform-17-1-manila-update-released-e8dcdcb1",
+    "title": "OpenStack Platform 17.1 Manila Update Released",
+    "summary": "Red Hat OpenStack Platform 17.1 (Wallaby) receives a critical security update for the openstack-manila component. The patch addresses multiple vulnerabilities with CVSS scores listed in the CVE references, potentially allowing unauthorized data access or service disruption. Deploy the updated openstack-manila package promptly to secure storage services.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99947",
+    "publishedAt": "2026-11-12T23:31:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openstack-platform-17-1-manila-update-released",
+      "article-e8dcdcb1",
+      "e8dcdcb1",
+      "openstack-platform-17-1-manila-update-released-37d661"
+    ]
+  },
+  {
     "slug": "postgresql-security-update-fixes-52-vulnerabilitie-360a9c71",
     "title": "PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14",
     "summary": "The PostgreSQL Global Development Group released PostgreSQL 18.7, 17.12, 16.16, 15.20 and 14.25 on November 12, fixing 52 security vulnerabilities and more than 140 other bugs. Most of those code execution bugs are memory errors or type confusion, where PostgreSQL handles a value as the wrong data type.",
@@ -121,6 +157,24 @@ export const news: NewsBrief[] = [
       "502ec757",
       "rhsa-2026-99715-important-krb5-security-bug-fix-an-37d669",
       "rhsa-2026-99715-important-krb5-security-bug-fix-and-enhancem"
+    ]
+  },
+  {
+    "slug": "sckit-worm-targets-msps-via-screenconnect-39490bde",
+    "title": "SCKit Worm Targets MSPs via ScreenConnect",
+    "summary": "A worm-like malware toolkit named SCKit has been deployed in recent ScreenConnect attacks against managed service providers. The malware spreads from infected customer devices to MSP technicians' computers, enabling attackers to compromise additional managed networks and exfiltrate data. Security teams should isolate affected systems, update ScreenConnect to the latest version, and monitor for lateral movement.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+    "publishedAt": "2026-11-12T22:53:10.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sckit-worm-targets-msps-via-screenconnect",
+      "article-39490bde",
+      "39490bde",
+      "sckit-worm-targets-msps-via-screenconnect-2041b9"
     ]
   },
   {
@@ -279,6 +333,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "x11vnc-shared-memory-permission-flaw-525aa917",
+    "title": "x11vnc Shared Memory Permission Flaw",
+    "summary": "The x11vnc remote desktop server creates shared memory segments with insecure permissions, exposing a local privilege escalation vector. A local attacker could read sensitive data or alter screen contents, potentially compromising user sessions and data integrity. Apply the vendor patch or upgrade to the latest x11vnc release to enforce proper memory permissions.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9089-1",
+    "publishedAt": "2026-11-12T20:55:34.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "x11vnc-shared-memory-permission-flaw",
+      "article-525aa917",
+      "525aa917",
+      "x11vnc-shared-memory-permission-flaw-7e85f6"
+    ]
+  },
+  {
     "slug": "microsoft-365-outage-disrupts-outlook-exchange-onl-2d15b165",
     "title": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
     "summary": "Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence of a cyberattack.",
@@ -295,6 +367,24 @@ export const news: NewsBrief[] = [
       "2d15b165",
       "microsoft-365-outage-disrupts-outlook-exchange-onl-4ceea1",
       "microsoft-365-outage-disrupts-outlook-exchange-online-and-te"
+    ]
+  },
+  {
+    "slug": "tigervnc-stores-tls-exceptions-as-trusted-cas-b7eedaef",
+    "title": "TigerVNC Stores TLS Exceptions as Trusted CAs",
+    "summary": "TigerVNC viewer treats TLS certificate exceptions as trusted CAs, allowing a remote attacker to impersonate any VNC server after a user accepts an exception. The flaw requires user interaction and does not grant code execution, yet it enables man‑in‑the‑middle attacks on VNC sessions. Ubuntu advises upgrading to TigerVNC 1.2.0 or later and avoiding unverified certificate acceptance.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Ubuntu Security Notices",
+    "sourceUrl": "https://ubuntu.com/security/notices/USN-9088-1",
+    "publishedAt": "2026-11-12T20:55:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tigervnc-stores-tls-exceptions-as-trusted-cas",
+      "article-b7eedaef",
+      "b7eedaef",
+      "tigervnc-stores-tls-exceptions-as-trusted-cas-7e85fa"
     ]
   },
   {
@@ -969,6 +1059,25 @@ export const news: NewsBrief[] = [
       "article-8fa80d31",
       "8fa80d31",
       "apache-fixes-critical-http-2-rce-vulnerability-79fafe"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99611-moderate-xorg-x11-server-security-00e02230",
+    "title": "RHSA-2026:99611: Moderate: xorg-x11-server security update",
+    "summary": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99611",
+    "publishedAt": "2026-11-12T15:21:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99611-moderate-xorg-x11-server-security",
+      "article-00e02230",
+      "00e02230",
+      "rhsa-2026-99611-moderate-xorg-x11-server-security-37d66d",
+      "rhsa-2026-99611-moderate-xorg-x11-server-security-update"
     ]
   },
   {
@@ -4447,6 +4556,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-updates-net-elevation-of-privilege-advis-cfa9fdfb",
+    "title": "Microsoft Updates .NET Elevation of Privilege Advisory",
+    "summary": "Microsoft updated documentation regarding an elevation of privilege flaw identified as CVE-2026-114155 in the .NET framework. The underlying security vulnerability allows local unauthorized users to gain elevated system privileges across impacted software components. Administrators are advised to review the updated security guidance links and deploy the latest .NET updates to ensure system protection.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114155",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114155"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-net-elevation-of-privilege-advis",
+      "article-cfa9fdfb",
+      "cfa9fdfb",
+      "microsoft-updates-net-elevation-of-privilege-advis-1feaf4",
+      "microsoft-updates-net-elevation-of-privilege-advisory"
+    ]
+  },
+  {
+    "slug": "microsoft-revises-asp-net-core-security-bypass-adv-8988610a",
+    "title": "Microsoft Revises ASP.NET Core Security Bypass Advisory",
+    "summary": "Microsoft issued an informational update regarding a security feature bypass vulnerability tracked as CVE-2026-114156 in ASP.NET Core. The underlying security flaw affects ASP.NET Core mechanisms, while the current advisory update modifies link details and documentation without introducing software modifications. System administrators should consult the revised Microsoft update links to confirm patch implementation and ensure defensive mitigations remain active.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114156",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114156"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-revises-asp-net-core-security-bypass-adv",
+      "article-8988610a",
+      "8988610a",
+      "microsoft-revises-asp-net-core-security-bypass-adv-1feaf4",
+      "microsoft-revises-asp-net-core-security-bypass-advisory"
+    ]
+  },
+  {
     "slug": "asp-net-core-vulnerability-enables-denial-of-servi-effa4853",
     "title": "ASP.NET Core Vulnerability Enables Denial of Service",
     "summary": "CVE‑2026‑114149 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed HTTP requests. The vulnerability allows attackers to exhaust server resources, causing legitimate traffic to be dropped without code execution. Microsoft has released an update; administrators should apply the latest ASP.NET Core patch to mitigate the DoS risk.",
@@ -5463,6 +5614,25 @@ export const news: NewsBrief[] = [
       "article-2307b996",
       "2307b996",
       "three-arrested-for-ai-voice-impersonation-fraud-989bbd"
+    ]
+  },
+  {
+    "slug": "emudhra-revokes-eight-intermediate-cas-after-key-c-879e0857",
+    "title": "eMudhra Revokes Eight Intermediate CAs After Key Compromise Flaw",
+    "summary": "eMudhra revoked eight additional intermediate certificate authorities following an October key compromise incident linked to an in-house Python script. A single line flaw within the internal script affected the intermediate certificate authorities without directly weakening their private signing keys. The certificate authority executed revocation actions for the impacted CAs to maintain public trust and secure signing infrastructure integrity.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+    "publishedAt": "2026-11-11T12:00:53.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "emudhra-revokes-eight-intermediate-cas-after-key-c",
+      "article-879e0857",
+      "879e0857",
+      "emudhra-revokes-eight-intermediate-cas-after-key-c-1a8d4d",
+      "emudhra-revokes-eight-intermediate-cas-after-key-compromise-"
     ]
   },
   {
@@ -9340,171 +9510,6 @@ export const news: NewsBrief[] = [
       "a7b5af48",
       "rhsa-2026-97219-moderate-freerdp-security-bug-fix-37d765",
       "rhsa-2026-97219-moderate-freerdp-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97553-important-grafana-pcp-security-bug-c05a01d7",
-    "title": "RHSA-2026:97553: Important: grafana-pcp security, bug fix, and enhancement update",
-    "summary": "An update for grafana-pcp is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97553",
-    "publishedAt": "2026-11-10T16:53:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97553-important-grafana-pcp-security-bug",
-      "article-c05a01d7",
-      "c05a01d7",
-      "rhsa-2026-97553-important-grafana-pcp-security-bug-37d759",
-      "rhsa-2026-97553-important-grafana-pcp-security-bug-fix-and-e"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97537-important-cockpit-podman-security-a435431d",
-    "title": "RHSA-2026:97537: Important: cockpit-podman security update",
-    "summary": "An update for cockpit-podman is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97537",
-    "publishedAt": "2026-11-10T16:49:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97537-important-cockpit-podman-security",
-      "article-a435431d",
-      "a435431d",
-      "rhsa-2026-97537-important-cockpit-podman-security-37d759",
-      "rhsa-2026-97537-important-cockpit-podman-security-update"
-    ]
-  },
-  {
-    "slug": "sbom-ai-boms-drive-new-software-transparency-17fcb302",
-    "title": "SBOM, AI BOMs Drive New Software Transparency",
-    "summary": "Allan Friedman discussed how SBOMs and emerging AI BOMs are reshaping software supply‑chain visibility. He emphasized that knowing component contents is only the first step, and organizations must analyze SBOM data to detect risks. The podcast recommends adopting automated SBOM ingestion tools and integrating AI analysis to prioritize remediation efforts.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/",
-    "publishedAt": "2026-11-10T16:45:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sbom-ai-boms-drive-new-software-transparency",
-      "article-17fcb302",
-      "17fcb302",
-      "sbom-ai-boms-drive-new-software-transparency-41f60e"
-    ]
-  },
-  {
-    "slug": "ivanti-issues-patches-for-endpoint-manager-csa-vul-f802dfce",
-    "title": "Ivanti Issues Patches for Endpoint Manager, CSA Vulnerabilities",
-    "summary": "Ivanti released patches for Endpoint Manager, Endpoint Manager Mobile, Sentry, and Cloud Services Application after discovering flaws enabling remote code execution, certificate tampering, data exposure, and service disruption. Two critical vulnerabilities in Endpoint Manager and Cloud Services Application pose the highest risk, requiring code execution privileges. Administrators should apply the updates immediately and verify certificate trust chains to mitigate exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/ivanti-security-flaws/",
-    "publishedAt": "2026-11-10T16:43:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ivanti-issues-patches-for-endpoint-manager-csa-vul",
-      "article-f802dfce",
-      "f802dfce",
-      "ivanti-issues-patches-for-endpoint-manager-csa-vul-18631b",
-      "ivanti-issues-patches-for-endpoint-manager-csa-vulnerabiliti"
-    ]
-  },
-  {
-    "slug": "cve-2026-125271-aws-api-mcp-policy-bypass-7320861d",
-    "title": "CVE‑2026‑125271: AWS API MCP Policy Bypass",
-    "summary": "CVE‑2026‑125271 exposes a policy bypass in AWS API MCP Server caused by incorrect operation name normalization. The flaw allows actors to execute operations that the operator's security policy denies or requires elicitation for, potentially granting unauthorized API access. AWS has released a patch for affected versions (>=0.2.13); administrators should update immediately and review policy configurations.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-176-aws/",
-    "publishedAt": "2026-11-10T16:42:37.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-125271-aws-api-mcp-policy-bypass",
-      "article-7320861d",
-      "7320861d",
-      "cve-2026-125271-aws-api-mcp-policy-bypass-4186db"
-    ]
-  },
-  {
-    "slug": "google-expands-gemini-4-carbon-access-09e43079",
-    "title": "Google Expands Gemini 4 Carbon Access",
-    "summary": "Google broadened access to its Gemini 4 Carbon platform, allowing paying developers and businesses to utilize the service. DeepMind agents built on Carbon verified libsignal security guarantees, demonstrating the platform’s capability to support secure messaging protocols. Developers should register for Carbon access through Google’s developer portal and review the updated documentation for integration guidelines.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code/",
-    "publishedAt": "2026-11-10T16:42:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "google-expands-gemini-4-carbon-access",
-      "article-09e43079",
-      "09e43079",
-      "google-expands-gemini-4-carbon-access-322942"
-    ]
-  },
-  {
-    "slug": "unbound-vulnerabilities-allow-remote-dos-attacks-ef5422b9",
-    "title": "Unbound Vulnerabilities Allow Remote DoS Attacks",
-    "summary": "Unbound DNS servers on Ubuntu 20.04–26.04 LTS contain CVE‑2026‑80225 and CVE‑2026‑81634 that enable remote denial‑of‑service. The flaws stem from improper handling of TCP connections and DNSSEC responses, allowing attackers to exhaust resources or crash the resolver. Ubuntu has issued patches for all affected releases; administrators should apply updates or upgrade to mitigate the DoS risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-8946-2",
-    "publishedAt": "2026-11-10T16:28:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "unbound-vulnerabilities-allow-remote-dos-attacks",
-      "article-ef5422b9",
-      "ef5422b9",
-      "unbound-vulnerabilities-allow-remote-dos-attacks-7fbdd8"
-    ]
-  },
-  {
-    "slug": "xen-orchestra-auth-bypass-enables-vm-server-hijack-8e029e9c",
-    "title": "Xen Orchestra Auth Bypass Enables VM Server Hijack",
-    "summary": "A critical authentication bypass flaw in Xen Orchestra is actively exploited to grant admin privileges and seize XCP‑ng virtualization hosts. The flaw bypasses login checks, giving attackers full control over host management interfaces, and is used in multiple attacks. Xen Orchestra issued an urgent patch; administrators should apply it immediately and audit host authentication logs for anomalies.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
-    "publishedAt": "2026-11-10T16:17:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xen-orchestra-auth-bypass-enables-vm-server-hijack",
-      "article-8e029e9c",
-      "8e029e9c",
-      "xen-orchestra-auth-bypass-enables-vm-server-hijack-7915fe"
-    ]
-  },
-  {
-    "slug": "ca-certificates-java-jks-handling-fixed-a9bf56bf",
-    "title": "ca-certificates-java JKS Handling Fixed",
-    "summary": "Ubuntu Security Notice USN-9036-1 fixes a ca-certificates-java flaw where JKS entries were not removed when system CA certificates were deleted in some locales. The patch re‑synchronizes the JKS keystore with the system CA bundle, eliminating orphaned certificates that could disrupt trust chains. Apply the USN-9036-1 update via apt to ensure the keystore matches the current system certificates.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9036-1",
-    "publishedAt": "2026-11-10T16:16:25.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ca-certificates-java-jks-handling-fixed",
-      "article-a9bf56bf",
-      "a9bf56bf",
-      "ca-certificates-java-jks-handling-fixed-7e8848"
     ]
   }
 ];

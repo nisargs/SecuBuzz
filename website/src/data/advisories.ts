@@ -2,6 +2,58 @@ import type { Advisory } from '../types/advisory';
 
 export const advisories: Advisory[] = [
   {
+    "cve": "CVE-2026-100397",
+    "slug": "cve-2026-100397",
+    "vendor": "Pip",
+    "product": "rucio",
+    "name": "Rucio: Unauthenticated administrator impersonation through SSH challenge tokens",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 9.8,
+    "severity": "Critical",
+    "cwe": "CWE-287",
+    "ransomware": false,
+    "description": "SSH challenge tokens are mistakenly accepted as valid credentials during the authentication token validation process. While an SSH challenge token is intended as a short-lived nonce for use in a subsequent SSH key exchange, the function to validate authentication tokens does not differentiate between these and actual authentication tokens.",
+    "requiredAction": "Upgrade rucio to version 35.9.1 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-x585-4vv8-2mh2"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100397"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-126190",
+    "slug": "cve-2026-126190",
+    "vendor": "Pip",
+    "product": "soupsieve",
+    "name": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-407",
+    "ransomware": false,
+    "description": "Matching a selector that uses the descendant combinator (a b) takes time that grows polynomially with how deeply the document is nested, and each extra descendant combinator in the selector raises the degree by one. A selector with k descendant combinators takes O(n^(k+1)) time on a chain of n nested elements.",
+    "requiredAction": "Upgrade soupsieve to version 4.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-mmhr-3c5m-f64f"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126190"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "CVE-2026-126192",
     "slug": "cve-2026-126192",
     "vendor": "Pip",
@@ -1241,58 +1293,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118740"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-118745",
-    "slug": "cve-2026-118745",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.NETCore.App.Runtime.win-x86",
-    "name": "Microsoft Security Advisory CVE-2026-118745 - Visual Studio Remote Code Execution Vulnerability",
-    "dateAdded": "2026-11-11",
-    "dueDate": "",
-    "cvss": 7.7,
-    "severity": "High",
-    "cwe": "CWE-122",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Crafted PDB line metadata can exceed the caller-provided buffer and cause a heap out-of-bounds write.",
-    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.win-x86 to version 8.0.34 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-x8x8-p968-x646"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118745"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-114152",
-    "slug": "cve-2026-114152",
-    "vendor": ".NET (NuGet)",
-    "product": "Microsoft.NETCore.App.Runtime.win-x86",
-    "name": "Microsoft Security Advisory CVE-2026-114152 - Visual Studio Remote Code Execution Vulnerability",
-    "dateAdded": "2026-11-11",
-    "dueDate": "",
-    "cvss": 7.7,
-    "severity": "High",
-    "cwe": "CWE-121",
-    "ransomware": false,
-    "description": "Microsoft is releasing this security advisory to provide information about a vulnerability in .NET. This advisory provides guidance on updating affected applications and components. Attacker-controlled COFF relocation offsets can cause an out-of-bounds stack write in DiaObjectFile::ApplyFixup.",
-    "requiredAction": "Upgrade Microsoft.NETCore.App.Runtime.win-x86 to version 8.0.34 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xf35-v9jh-g65w"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114152"
       }
     ],
     "source": "GITHUB"
