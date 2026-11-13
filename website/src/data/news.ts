@@ -11,6 +11,63 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "citrix-issues-patches-for-10-critical-netscaler-cv-c4e83fb0",
+    "title": "Citrix Issues Patches for 10 Critical NetScaler CVEs",
+    "summary": "Citrix released patches for ten critical NetScaler vulnerabilities, including CVE-2026-120868, that could cause unexpected behavior or denial‑of‑service conditions. The flaws allow attackers to trigger service disruptions by manipulating configuration or traffic, but do not provide remote code execution. Citrix recommends applying the latest firmware updates immediately; interim mitigations include disabling affected services and limiting external access.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
+    "publishedAt": "2026-11-13T09:36:56.000Z",
+    "cves": [
+      "CVE-2026-120868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-issues-patches-for-10-critical-netscaler-cv",
+      "article-c4e83fb0",
+      "c4e83fb0",
+      "citrix-issues-patches-for-10-critical-netscaler-cv-7a96dd",
+      "citrix-issues-patches-for-10-critical-netscaler-cves"
+    ]
+  },
+  {
+    "slug": "openai-launches-daybreak-ai-for-security-testing-30376842",
+    "title": "OpenAI Launches Daybreak AI for Security Testing",
+    "summary": "OpenAI launched Daybreak, AI agents that conduct web application penetration testing and vulnerability analysis within the software security lifecycle. Red Team examines source code and runtime context to find attack vectors, while Defense Factory automates patch creation and retesting. Teams can join an early‑access program to integrate Daybreak findings into CI/CD pipelines, speeding vulnerability remediation.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
+    "publishedAt": "2026-11-13T09:31:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-launches-daybreak-ai-for-security-testing",
+      "article-30376842",
+      "30376842",
+      "openai-launches-daybreak-ai-for-security-testing-73c9c4"
+    ]
+  },
+  {
+    "slug": "beast-ransomware-adds-hidden-control-panel-ea0936f6",
+    "title": "Beast Ransomware Adds Hidden Control Panel",
+    "summary": "Beast ransomware introduced a hidden control panel that allows operators to select encryption targets on infected Windows systems. The panel is accessed via ALT+CTRL+666, giving affiliates granular control beyond command-line defaults, potentially increasing encryption coverage and ransom demands. Security teams should disable the panel by removing the Beast binary, apply vendor patches, and monitor for ALT+CTRL+666 activity.",
+    "category": "Ransomware",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/beast-ransomware/",
+    "publishedAt": "2026-11-13T08:38:07.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "beast-ransomware-adds-hidden-control-panel",
+      "article-ea0936f6",
+      "ea0936f6",
+      "beast-ransomware-adds-hidden-control-panel-6a98bc"
+    ]
+  },
+  {
     "slug": "microsoft-365-global-outage-affects-outlook-teams-b9dd6a76",
     "title": "Microsoft 365 Global Outage Affects Outlook, Teams",
     "summary": "A worldwide outage of Microsoft 365 services, including Outlook, SharePoint, and Teams, has disrupted operations for numerous organizations. The incident, caused by an internal infrastructure failure, led to prolonged service unavailability across multiple regions, impacting email, collaboration, and cloud storage. Microsoft is working to restore services and has advised users to monitor status updates for resolution timelines.",
@@ -1534,6 +1591,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-single-sign-on-7-6-14-updated-on-rhel-9-ba9f65f7",
+    "title": "Red Hat Single Sign-On 7.6.14 Updated on RHEL 9",
+    "summary": "Red Hat released Single Sign-On 7.6.14 packages for RHEL 9 to address identified security issues. The update contains fixes for multiple vulnerabilities, though Red Hat Product Security rated the overall impact as none, indicating no critical flaws were present. Administrators should install the new packages promptly and verify that the SSO service remains operational.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99766",
+    "publishedAt": "2026-11-12T18:57:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-single-sign-on-7-6-14-updated-on-rhel-9",
+      "article-ba9f65f7",
+      "ba9f65f7",
+      "red-hat-single-sign-on-7-6-14-updated-on-rhel-9-37d668"
+    ]
+  },
+  {
+    "slug": "compat-openssl10-security-update-for-rhel-8-8-51270b4f",
+    "title": "compat-openssl10 Security Update for RHEL 8.8",
+    "summary": "Red Hat released a compat-openssl10 update for RHEL 8.8 and SAP solutions to address critical cryptographic issues. The update fixes multiple vulnerabilities that could allow attackers to bypass SSL/TLS validation, potentially enabling man‑in‑the‑middle attacks, and is rated as Important by Red Hat Product Security. Systems should apply the new packages immediately and verify that OpenSSL functionality remains intact.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99724",
+    "publishedAt": "2026-11-12T18:48:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "compat-openssl10-security-update-for-rhel-8-8",
+      "article-51270b4f",
+      "51270b4f",
+      "compat-openssl10-security-update-for-rhel-8-8-37d669"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e",
     "title": "RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update",
     "summary": "A security update is now available for Red Hat Single Sign-On 7.6 from the Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -1587,6 +1680,25 @@ export const news: NewsBrief[] = [
       "article-742c5924",
       "742c5924",
       "maersk-reports-legacy-system-cyber-incident-7f0c84"
+    ]
+  },
+  {
+    "slug": "anthropic-releases-self-hosted-claude-managed-agen-1c93b5d8",
+    "title": "Anthropic Releases Self-Hosted Claude Managed Agents in Beta",
+    "summary": "Anthropic released a self-hosted version of Claude Managed Agents in private beta to protect automated corporate workflows. The deployment option keeps agent credentials, sandboxes, session histories, and harnesses directly within an organization's on-premise or cloud environment. Customers seeking to secure unattended tasks can request access to the self-hosted feature through their Anthropic account team.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/12/anthropic-self-hosted-claude-managed-agents/",
+    "publishedAt": "2026-11-12T18:07:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "anthropic-releases-self-hosted-claude-managed-agen",
+      "article-1c93b5d8",
+      "1c93b5d8",
+      "anthropic-releases-self-hosted-claude-managed-agen-34ed84",
+      "anthropic-releases-self-hosted-claude-managed-agents-in-beta"
     ]
   },
   {
@@ -1702,6 +1814,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-updates-kpatch-packages-for-enterprise-lin-dc8e60c0",
+    "title": "Red Hat Updates kpatch Packages for Enterprise Linux 10",
+    "summary": "Red Hat released important security updates for kpatch packages affecting Red Hat Enterprise Linux 10. The vendor rated the security impact of the underlying components as Important based on Common Vulnerability Scoring System evaluations. Enterprise system administrators should apply the updated kpatch packages across affected Red Hat Enterprise Linux 10 deployments to mitigate operational risks.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99722",
+    "publishedAt": "2026-11-12T17:46:29.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-kpatch-packages-for-enterprise-lin",
+      "article-dc8e60c0",
+      "dc8e60c0",
+      "red-hat-updates-kpatch-packages-for-enterprise-lin-37d669",
+      "red-hat-updates-kpatch-packages-for-enterprise-linux-10"
+    ]
+  },
+  {
     "slug": "google-releases-chrome-beta-update-for-ios-e86cb456",
     "title": "Google Releases Chrome Beta Update for iOS",
     "summary": "Google announced the release of Chrome Beta version 159.0.8154.5 for iOS operating systems across Apple devices. The upcoming update will be made available on the Apple App Store and includes developer changes referenced in the Git log. The Chrome Release Team advises users to submit bug reports if any new software issues are identified in the updated build.",
@@ -1717,6 +1848,25 @@ export const news: NewsBrief[] = [
       "article-e86cb456",
       "e86cb456",
       "google-releases-chrome-beta-update-for-ios-2a703f"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99726-important-compat-openssl10-securit-d6aab5d1",
+    "title": "RHSA-2026:99726: Important: compat-openssl10 security update",
+    "summary": "An update for compat-openssl10 is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99726",
+    "publishedAt": "2026-11-12T17:41:12.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99726-important-compat-openssl10-securit",
+      "article-d6aab5d1",
+      "d6aab5d1",
+      "rhsa-2026-99726-important-compat-openssl10-securit-37d669",
+      "rhsa-2026-99726-important-compat-openssl10-security-update"
     ]
   },
   {
@@ -2132,21 +2282,27 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "windows-signdrop-zero-day-grants-system-privileges-29645304",
-    "title": "Windows SignDrop Zero-Day Grants SYSTEM Privileges",
-    "summary": "A new Windows SignDrop zero‑day exploit enables attackers to obtain SYSTEM privileges on affected systems. The vulnerability allows unauthenticated remote code execution via a memory corruption flaw, giving attackers full control; no CVE listed, but public PoC demonstrates exploitation. Microsoft has not yet released a patch; security teams should apply the latest cumulative update and monitor for exploitation activity.",
+    "slug": "windows-signdrop-zero-day-exploit-enables-system-p-f64df1ef",
+    "title": "Windows SignDrop Zero-Day Exploit Enables SYSTEM Privileges via CLFS Abuse",
+    "summary": "Microsoft Windows systems are affected by the SignDrop zero‑day vulnerability, which allows attackers to gain SYSTEM privileges. The flaw abuses CLFS and Windows Defender to write privileged files under the antimalware process, enabling persistence and payload deployment. Microsoft has issued an out‑of‑band patch disabling CLFS operations for Defender; security teams must apply it immediately.",
     "category": "Vulnerability",
     "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
     "publishedAt": "2026-11-12T16:04:00.000Z",
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "SecurityWeek",
+        "sourceUrl": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/"
+      }
+    ],
     "aliases": [
-      "windows-signdrop-zero-day-grants-system-privileges",
-      "article-29645304",
-      "29645304",
-      "windows-signdrop-zero-day-grants-system-privileges-15fe10"
+      "windows-signdrop-zero-day-exploit-enables-system-p",
+      "article-f64df1ef",
+      "f64df1ef",
+      "windows-signdrop-zero-day-exploit-enables-system-p-15fe10",
+      "windows-signdrop-zero-day-exploit-enables-system-privileges-"
     ]
   },
   {
@@ -5804,6 +5960,26 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "cve-2026-118749-asp-net-core-dos-vulnerability-23f19ff0",
+    "title": "CVE-2026-118749 ASP.NET Core DoS Vulnerability",
+    "summary": "CVE-2026-118749 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed requests. The vulnerability causes resource exhaustion, leading to application crashes without requiring authentication, and is classified as a high‑severity DoS issue. Microsoft has released an informational update; administrators should apply the latest ASP.NET Core patches and monitor traffic for abnormal request patterns.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118749",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118749"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-118749-asp-net-core-dos-vulnerability",
+      "article-23f19ff0",
+      "23f19ff0",
+      "cve-2026-118749-asp-net-core-dos-vulnerability-1fe90c"
+    ]
+  },
+  {
     "slug": "microsoft-publishes-informational-update-on-cve-20-7bf468e2",
     "title": "Microsoft Publishes Informational Update on CVE-2026-118746",
     "summary": "Microsoft released an update addressing CVE-2026-118746, a .NET security feature bypass vulnerability that could allow attackers to circumvent authentication checks. The flaw originates from improper validation of security tokens, potentially enabling unauthorized code execution if exploited, though no active exploitation has been reported. A patch is available in the .NET update; administrators should apply it immediately to mitigate risk.",
@@ -6752,6 +6928,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-alerts-security-teams-to-ai-agent-backdo-48c2503d",
+    "title": "Microsoft Alerts Security Teams to AI Agent Backdoors",
+    "summary": "A critical security alert from Microsoft identifies malicious backdoor activity targeting enterprise AI agents associated with Lazarus threat tactics. Telemetry analysis indicates that these backdoors disrupt essential root-cause controls and compromise agent execution environments without authorization. Security administrators must analyze system telemetry, deploy proactive threat-hunting detection rules, and apply mandatory software updates immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/microsoft-researchers-show-ai-agents-can-be-backdoored",
+    "publishedAt": "2026-11-11T13:10:16.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-alerts-security-teams-to-ai-agent-backdo",
+      "article-48c2503d",
+      "48c2503d",
+      "microsoft-alerts-security-teams-to-ai-agent-backdo-6fa77a",
+      "microsoft-alerts-security-teams-to-ai-agent-backdoors"
+    ]
+  },
+  {
     "slug": "cisco-broadworks-cve-2026-20320-xxe-flaw-patch-cfad1869",
     "title": "Cisco BroadWorks CVE-2026-20320: XXE Flaw Patch",
     "summary": "Cisco BroadWorks is affected by CVE-2026-20320, an XML External Entity (XXE) flaw that can enable remote code execution. The vulnerability allows attackers to read arbitrary files and execute commands on the BroadWorks server when processing crafted XML requests. Cisco has released a patch; administrators should apply the update immediately and enable input validation to mitigate the risk.",
@@ -7012,6 +7207,25 @@ export const news: NewsBrief[] = [
       "article-2307b996",
       "2307b996",
       "three-arrested-for-ai-voice-impersonation-fraud-989bbd"
+    ]
+  },
+  {
+    "slug": "token-analyzes-ai-agent-security-flaws-in-browser-f1471ebf",
+    "title": "Token Analyzes AI Agent Security Flaws in Browser Systems",
+    "summary": "Security research from Token reveals that browser AI agents fail standard enterprise security controls for identity, access, and logging. The findings indicate that autonomous agents running inside authenticated browser sessions bypass operational boundaries and obscure audit tracking. Organizations must enforce dedicated non-human agent identities, limit job permissions, and isolate execution logs from user activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+    "publishedAt": "2026-11-11T12:01:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "token-analyzes-ai-agent-security-flaws-in-browser",
+      "article-f1471ebf",
+      "f1471ebf",
+      "token-analyzes-ai-agent-security-flaws-in-browser-73b6a4",
+      "token-analyzes-ai-agent-security-flaws-in-browser-systems"
     ]
   },
   {
@@ -9343,213 +9557,6 @@ export const news: NewsBrief[] = [
       "article-55412646",
       "55412646",
       "red-hat-kernel-update-addresses-important-flaws-37d6f7"
-    ]
-  },
-  {
-    "slug": "libreswan-update-fixes-security-vulnerabilities-0f3608f7",
-    "title": "libreswan Update Fixes Security Vulnerabilities",
-    "summary": "Red Hat released a libreswan update addressing multiple security bugs and adding performance enhancements for RHEL 9. The update is rated Important, with CVSS scores available via the referenced CVE links, and fixes memory corruption and privilege escalation issues. Administrators should apply the RHSA-2026:98046 update immediately to maintain system security and compliance.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98046",
-    "publishedAt": "2026-11-11T00:16:32.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "libreswan-update-fixes-security-vulnerabilities",
-      "article-0f3608f7",
-      "0f3608f7",
-      "libreswan-update-fixes-security-vulnerabilities-37d6f7"
-    ]
-  },
-  {
-    "slug": "malicious-screenconnect-deployments-observed-3476ec75",
-    "title": "Malicious ScreenConnect Deployments Observed",
-    "summary": "Malicious ScreenConnect deployments observed by Sophos Threat Research. The deployments involve unauthorized use of the ScreenConnect platform, potentially compromising system integrity and facilitating unauthorized remote access. Sophos recommends monitoring for anomalous ScreenConnect activity, applying vendor security controls, reviewing remote support configurations, and verifying the legitimacy of remote sessions to mitigate risk.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Sophos Threat Research",
-    "sourceUrl": "https://www.sophos.com/en-us/blog/malicious-screenconnect-deployments-observed",
-    "publishedAt": "2026-11-11T00:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "malicious-screenconnect-deployments-observed",
-      "article-3476ec75",
-      "3476ec75",
-      "malicious-screenconnect-deployments-observed-3f2e43"
-    ]
-  },
-  {
-    "slug": "macos-ai-driven-attack-detection-and-mitigation-71c344c8",
-    "title": "macOS AI-Driven Attack Detection and Mitigation",
-    "summary": "Security analysts report macOS systems are increasingly targeted by AI‑driven attack campaigns that adapt payloads and evade signatures. These attacks use machine‑learning models to generate polymorphic code, bypassing static analysis and exploiting user interaction vectors, with no CVE disclosed. Apple advises installing the latest macOS security updates, enabling built‑in threat detection, and configuring system integrity protection to mitigate adaptive threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/over-575-malicious-openclaw-skills-delivered-malware-to",
-    "publishedAt": "2026-11-10T23:05:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "macos-ai-driven-attack-detection-and-mitigation",
-      "article-71c344c8",
-      "71c344c8",
-      "macos-ai-driven-attack-detection-and-mitigation-1b8a8b"
-    ]
-  },
-  {
-    "slug": "cisa-updates-incident-form-for-linked-attack-detec-63467f97",
-    "title": "CISA Updates Incident Form for Linked Attack Detection",
-    "summary": "CISA released an updated Incident Form designed to detect linked attacks by correlating root‑cause telemetry across multiple incidents. The update provides new detection rules and telemetry fields that enable security teams to identify patterns of coordinated activity and trigger alerts. Administrators should download the revised form, apply the new telemetry schema, and review detection rules to ensure timely incident response.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisa-tweaks-cyber-incident-form-to-spot-attacks-that-mi",
-    "publishedAt": "2026-11-10T23:05:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-updates-incident-form-for-linked-attack-detec",
-      "article-63467f97",
-      "63467f97",
-      "cisa-updates-incident-form-for-linked-attack-detec-17bb0c",
-      "cisa-updates-incident-form-for-linked-attack-detection"
-    ]
-  },
-  {
-    "slug": "turla-malware-exploitation-enhanced-by-ai-reverse-6a00e457",
-    "title": "Turla Malware Exploitation Enhanced by AI Reverse Engineering",
-    "summary": "Turla malware, a Russian state-sponsored threat, is now being reverse engineered using AI techniques, according to a security intelligence alert. The AI-driven analysis uncovers root‑cause telemetry and detection rule patterns, enabling precise identification of Turla's command‑and‑control infrastructure, but no active exploitation is confirmed. Security teams should review telemetry, apply updated detection rules, and patch affected systems to mitigate potential compromise.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/ai-makes-reverse-engineering-mainstream-software-malwar",
-    "publishedAt": "2026-11-10T23:04:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "turla-malware-exploitation-enhanced-by-ai-reverse",
-      "article-6a00e457",
-      "6a00e457",
-      "turla-malware-exploitation-enhanced-by-ai-reverse-5e0fa6",
-      "turla-malware-exploitation-enhanced-by-ai-reverse-engineerin"
-    ]
-  },
-  {
-    "slug": "openssh-and-gpustack-exploited-via-cve-2026-123158-a4cdc7a6",
-    "title": "OpenSSH and GPUStack Exploited via CVE-2026-123158 and CVE-2026-102895",
-    "summary": "CISA added OpenBSD OpenSSH flaw CVE-2026-123158 and GPUStack vulnerability CVE-2026-102895 to its KEV catalog after active exploitation. Attackers query cloud metadata, attempt to steal password hashes and root SSH keys, modify authorized_keys for persistent access, and deploy the Python TAC Agent C2. Apply vendor updates immediately and hunt across affected Linux and cloud hosts.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisa-warns-of-active-exploitation-of-openssh-gpustack-f",
-    "publishedAt": "2026-11-10T23:04:32.000Z",
-    "cves": [
-      "CVE-2026-123158",
-      "CVE-2026-102895"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openssh-and-gpustack-exploited-via-cve-2026-123158",
-      "article-a4cdc7a6",
-      "a4cdc7a6",
-      "openssh-and-gpustack-exploited-via-cve-2026-123158-16c8bd",
-      "openssh-and-gpustack-exploited-via-cve-2026-123158-and-cve-2",
-      "openssh-gpustack-exploited-via-cve-2026-123218-f2cc45ed"
-    ]
-  },
-  {
-    "slug": "sap-issues-critical-rce-patches-0b9b0471",
-    "title": "SAP Issues Critical RCE Patches",
-    "summary": "SAP issued emergency patches for critical remote code execution flaws in its software, exposing customers to code execution via malformed input. Rated CVSS 10.0, the bugs allow attackers to run arbitrary code without credentials, threatening system integrity and data confidentiality. SAP urges immediate application of the updates and monitoring for suspicious activity, as no workaround exists until patches are installed.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/sap-patches-four-cvss-10-0-flaws-including-two-enabling",
-    "publishedAt": "2026-11-10T23:04:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sap-issues-critical-rce-patches",
-      "article-0b9b0471",
-      "0b9b0471",
-      "sap-issues-critical-rce-patches-5efef2"
-    ]
-  },
-  {
-    "slug": "apple-imessage-group-chat-and-bluetooth-vulnerabil-fdd645db",
-    "title": "Apple iMessage Group Chat and Bluetooth Vulnerabilities Patched",
-    "summary": "Apple patched vulnerabilities in iMessage group chat and Bluetooth functionality that could allow attackers to exploit the messaging service. The flaws stem from improper input validation in group chat message handling and Bluetooth pairing, enabling code execution or denial of service. Apple released an update for iOS and macOS; users should install the latest iMessage patch to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/apple-patches-imessage-group-chat-privacy-flaws-and-blu",
-    "publishedAt": "2026-11-10T23:04:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "apple-imessage-group-chat-and-bluetooth-vulnerabil",
-      "article-fdd645db",
-      "fdd645db",
-      "apple-imessage-group-chat-and-bluetooth-vulnerabil-2f6048",
-      "apple-imessage-group-chat-and-bluetooth-vulnerabilities-patc"
-    ]
-  },
-  {
-    "slug": "microsoft-research-detects-sleeper-agents-in-ai-ne-787eb744",
-    "title": "Microsoft Research Detects Sleeper Agents in AI Neurons",
-    "summary": "Microsoft Research discovered a way to turn an agent model into a sleeper agent by editing fewer than ten neurons to embed a malicious payload. Frontier agents can detect these edits by spotting anomalous neuron changes, allowing early detection before payload activation. Teams should monitor training logs for sudden neuron modifications and use anomaly‑detection tools to mitigate sleeper agent risks.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
-    "publishedAt": "2026-11-10T23:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-research-detects-sleeper-agents-in-ai-ne",
-      "article-787eb744",
-      "787eb744",
-      "microsoft-research-detects-sleeper-agents-in-ai-ne-641529",
-      "microsoft-research-detects-sleeper-agents-in-ai-neurons"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-security-update-for-php-8-4-292ebc39",
-    "title": "Red Hat Releases Security Update for php:8.4",
-    "summary": "Red Hat released a security update for the php:8.4 module on Enterprise Linux 9. The update addresses multiple vulnerabilities in PHP’s core engine, including a potential remote code execution flaw that could allow attackers to execute arbitrary code via crafted input. Administrators should apply the php:8.4 update immediately and verify that all web applications are running the patched version.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97880",
-    "publishedAt": "2026-11-10T22:40:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-security-update-for-php-8-4",
-      "article-292ebc39",
-      "292ebc39",
-      "red-hat-releases-security-update-for-php-8-4-37d74d"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-update-for-mod-auth-openidc-27a52e13",
-    "title": "Red Hat Issues Update for mod_auth_openidc",
-    "summary": "Red Hat released a security update for the mod_auth_openidc module on Enterprise Linux 9. The patch fixes multiple authentication bypass and privilege escalation flaws that could allow attackers to gain unauthorized access to protected resources. Administrators should apply the update immediately and review access logs for anomalous authentication attempts today.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97861",
-    "publishedAt": "2026-11-10T22:37:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-update-for-mod-auth-openidc",
-      "article-27a52e13",
-      "27a52e13",
-      "red-hat-issues-update-for-mod-auth-openidc-37d74d"
     ]
   }
 ];
