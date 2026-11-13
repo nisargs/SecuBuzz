@@ -28,10 +28,6 @@ const RELEASES: ReleaseItem[] = [
         desc: 'Curate your organization\'s infrastructure footprint across 32+ enterprise vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS, CrowdStrike, Okta) to isolate relevant threats in one click.',
       },
       {
-        title: 'Live Vendor Outages & Health Radar',
-        desc: 'Real-time incident and service degradation tracking across 32 enterprise cloud and security vendors, featuring dynamic severity ratio bars, expandable incident telemetry, and direct status routing.',
-      },
-      {
         title: 'CVE Watchlist & Pinning',
         desc: 'Pin critical vulnerabilities directly from feed cards or table rows, or enter custom CVEs to monitor patch status across news briefs and advisories.',
       },
@@ -156,6 +152,21 @@ export function WhatsNewModal({ isOpen, onClose }: WhatsNewModalProps) {
 
         {/* Modal Body (Scrollable Releases Timeline) */}
         <div className="overflow-y-auto px-6 py-5 space-y-8">
+          {/* Latest Live Update - Positioned Above v1.0.4 */}
+          <div className="relative pl-6 border-l border-line/60 pb-2">
+            {/* Timeline marker */}
+            <div className="absolute -left-[9px] top-0 flex h-4 w-4 items-center justify-center rounded-full border border-accent bg-surface">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+            </div>
+
+            <div className="text-xs leading-relaxed text-muted">
+              <span className="font-medium text-ink">Live Vendor Outages & Health Radar:</span>{' '}
+              <span>
+                Real-time incident and service degradation tracking across major enterprise cloud and security vendors, featuring dynamic severity ratio bars, expandable incident telemetry, and direct status routing.
+              </span>
+            </div>
+          </div>
+
           {RELEASES.map((rel, idx) => (
             <div key={rel.version} className="relative pl-6 border-l border-line/60 last:border-transparent">
               {/* Timeline marker */}

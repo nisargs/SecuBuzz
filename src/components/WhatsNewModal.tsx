@@ -142,6 +142,24 @@ export function WhatsNewModal({ visible, onClose }: WhatsNewModalProps) {
               style={styles.scrollArea}
               contentContainerStyle={styles.scrollContent}
             >
+              {/* Latest Live Update Positioned Above v1.0.4 */}
+              <View style={styles.timelineRow}>
+                <View style={styles.timelineNodeColumn}>
+                  <View style={[styles.timelineOuterDot, { borderColor: accentColor }]}>
+                    <View style={[styles.timelineInnerDot, { backgroundColor: accentColor }]} />
+                  </View>
+                  <View style={[styles.timelineLine, { backgroundColor: colors.border }]} />
+                </View>
+                <View style={[styles.timelineContent, { paddingBottom: 18 }]}>
+                  <Text style={[styles.highlightTitle, { color: colors.textPrimary }]}>
+                    Live Vendor Outages & Health Radar
+                  </Text>
+                  <Text style={[styles.highlightDesc, { color: colors.textSecondary }]}>
+                    Real-time incident and service degradation tracking across major enterprise cloud and security vendors, featuring dynamic severity ratio bars, expandable incident telemetry, and direct status routing.
+                  </Text>
+                </View>
+              </View>
+
               {/* Release Timeline Card */}
               <View style={styles.timelineRow}>
                 {/* Timeline Node */}
@@ -206,18 +224,6 @@ export function WhatsNewModal({ visible, onClose }: WhatsNewModalProps) {
                         </Text>
                         <Text style={[styles.highlightDesc, { color: colors.textSecondary }]}>
                           Curate your organization's infrastructure footprint across 32+ enterprise vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS, CrowdStrike, Okta) to isolate relevant threats in one tap.
-                        </Text>
-                      </View>
-                    </View>
-
-                    <View style={styles.highlightItem}>
-                      <View style={[styles.bullet, { backgroundColor: accentColor }]} />
-                      <View style={{ flex: 1 }}>
-                        <Text style={[styles.highlightTitle, { color: colors.textPrimary }]}>
-                          Live Vendor Outages & Health Radar
-                        </Text>
-                        <Text style={[styles.highlightDesc, { color: colors.textSecondary }]}>
-                          Real-time incident and service degradation tracking across 32 enterprise cloud and security vendors, featuring dynamic severity ratio bars, expandable incident telemetry, and direct status routing.
                         </Text>
                       </View>
                     </View>

@@ -562,6 +562,8 @@ const LIVE_STATUS_SOURCES = [
   { vendor: 'Tenable', type: 'statuspage', url: 'https://status.tenable.com/api/v2/summary.json', statusUrl: 'https://status.tenable.com/' },
   { vendor: 'Qualys', type: 'statuspage', url: 'https://status.qualys.com/api/v2/summary.json', statusUrl: 'https://status.qualys.com/' },
   { vendor: 'Rapid7', type: 'statuspage', url: 'https://status.rapid7.com/api/v2/summary.json', statusUrl: 'https://status.rapid7.com/' },
+  { vendor: 'Red Hat', type: 'statuspage', url: 'https://status.redhat.com/api/v2/summary.json', statusUrl: 'https://status.redhat.com/' },
+  { vendor: 'Cisco', type: 'statuspage', url: 'https://status.duo.com/api/v2/summary.json', statusUrl: 'https://status.cisco.com/' },
   { vendor: 'Atlassian', type: 'statuspage', url: 'https://status.atlassian.com/api/v2/summary.json', statusUrl: 'https://status.atlassian.com/' },
   { vendor: 'GitHub', type: 'statuspage', url: 'https://www.githubstatus.com/api/v2/summary.json', statusUrl: 'https://status.githubstatus.com/' },
   { vendor: 'SentinelOne', type: 'statuspage', url: 'https://status.sentinelone.com/api/v2/summary.json', statusUrl: 'https://status.sentinelone.com/' },
@@ -614,7 +616,7 @@ async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTe
             if (indicator === 'critical' || indicator === 'major') {
               status = 'OUTAGE';
               summary = incidents[0]?.name || data.status?.description || 'Major service outage';
-            } else if (indicator === 'minor' || incidents.length > 0 || maintenances.length > 0) {
+            } else if (indicator !== 'none' || incidents.length > 0 || maintenances.length > 0) {
               status = 'DEGRADED';
               summary = incidents[0]?.name || (maintenances[0] ? `${maintenances[0].name} in progress` : data.status?.description) || 'Service degradation';
             }

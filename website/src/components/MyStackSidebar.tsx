@@ -92,7 +92,12 @@ export function MyStackSidebar({
   const outageVendors = useMemo(() => {
     return selectedVendors
       .map((v) => getVendorHealth(v, vendorHealthMap))
-      .filter((h) => h.status === 'OUTAGE' || h.status === 'DEGRADED');
+      .filter((h) => h.status === 'OUTAGE' || h.status === 'DEGRADED')
+      .sort((a, b) => {
+        if (a.status === 'OUTAGE' && b.status !== 'OUTAGE') return -1;
+        if (a.status !== 'OUTAGE' && b.status === 'OUTAGE') return 1;
+        return a.vendor.localeCompare(b.vendor);
+      });
   }, [selectedVendors, vendorHealthMap]);
 
   const [showIncidentList, setShowIncidentList] = useState(false);
@@ -101,7 +106,12 @@ export function MyStackSidebar({
   const totalRawIncidents = useMemo(() => {
     return POPULAR_VENDORS
       .map((v) => getVendorHealth(v, liveRegistry))
-      .filter((h) => h.status === 'OUTAGE' || h.status === 'DEGRADED');
+      .filter((h) => h.status === 'OUTAGE' || h.status === 'DEGRADED')
+      .sort((a, b) => {
+        if (a.status === 'OUTAGE' && b.status !== 'OUTAGE') return -1;
+        if (a.status !== 'OUTAGE' && b.status === 'OUTAGE') return 1;
+        return a.vendor.localeCompare(b.vendor);
+      });
   }, [liveRegistry]);
 
   const totalRawOutages = useMemo(
@@ -116,12 +126,17 @@ export function MyStackSidebar({
   // If user has selected vendors in stack, show their incidents; otherwise show all active enterprise incidents
   const displayedIncidents = useMemo(() => {
     if (!vendorOutagesEnabled) return [];
-    if (selectedVendors.length > 0) {
-      return outageVendors;
-    }
-    return POPULAR_VENDORS
-      .map((v) => getVendorHealth(v, vendorHealthMap))
-      .filter((h) => h.status === 'OUTAGE' || h.status === 'DEGRADED');
+    const list = selectedVendors.length > 0
+      ? outageVendors
+      : POPULAR_VENDORS
+          .map((v) => getVendorHealth(v, vendorHealthMap))
+          .filter((h) => h.status === 'OUTAGE' || h.status === 'DEGRADED');
+
+    return [...list].sort((a, b) => {
+      if (a.status === 'OUTAGE' && b.status !== 'OUTAGE') return -1;
+      if (a.status !== 'OUTAGE' && b.status === 'OUTAGE') return 1;
+      return a.vendor.localeCompare(b.vendor);
+    });
   }, [selectedVendors, outageVendors, vendorHealthMap, vendorOutagesEnabled]);
 
   const outageCount = useMemo(
