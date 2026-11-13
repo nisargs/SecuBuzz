@@ -4902,5 +4902,15 @@
   "https://projectzero.google/2026/11/disclosure-policy.html",
   "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
   "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
-  "http://www.zerodayinitiative.com/advisories/ZDI-26-1004/"
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1004/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95922",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95942",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95953",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1003/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1002/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1001/",
+  "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
+  "https://www.huntress.com/blog/fake-crypto-exchange-sessions-screenconnect",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1000/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96126"
 ]

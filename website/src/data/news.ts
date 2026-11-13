@@ -258,6 +258,90 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "windows-graphics-kernel-privilege-escalation-cve-2-b39df0a5",
+    "title": "Windows Graphics Kernel Privilege Escalation CVE-2026-95922",
+    "summary": "Microsoft disclosed CVE-2026-95922, a Windows Graphics Kernel elevation of privilege flaw that lets local attackers gain SYSTEM rights on affected systems. The flaw stems from improper validation of graphics data, allowing code execution with elevated privileges once triggered. Microsoft urges users to apply the latest Office update that contains the kernel patch; no workaround exists until the update is installed.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95922",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-95922"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-graphics-kernel-privilege-escalation-cve-2",
+      "article-b39df0a5",
+      "b39df0a5",
+      "windows-graphics-kernel-privilege-escalation-cve-2-7431db",
+      "windows-graphics-kernel-privilege-escalation-cve-2026-95922"
+    ]
+  },
+  {
+    "slug": "windows-graphics-kernel-privilege-escalation-cve-2-ab8ed983",
+    "title": "Windows Graphics Kernel Privilege Escalation CVE-2026-95942",
+    "summary": "Microsoft disclosed CVE-2026-95942, a Windows Graphics Kernel elevation of privilege flaw that permits local attackers to obtain SYSTEM rights on affected machines. The vulnerability arises from unchecked handling of user‑supplied graphics commands, enabling arbitrary code execution with elevated privileges. Microsoft recommends installing the latest Office update that incorporates the kernel patch; no workaround is available until the update is applied.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95942",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-95942"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-graphics-kernel-privilege-escalation-cve-2",
+      "article-ab8ed983",
+      "ab8ed983",
+      "windows-graphics-kernel-privilege-escalation-cve-2-7431da",
+      "windows-graphics-kernel-privilege-escalation-cve-2026-95942"
+    ]
+  },
+  {
+    "slug": "windows-graphics-kernel-privilege-escalation-cve-2-aa8c9959",
+    "title": "Windows Graphics Kernel Privilege Escalation CVE-2026-95953",
+    "summary": "Microsoft disclosed CVE-2026-95953, a Windows Graphics Kernel elevation of privilege flaw that allows local attackers to gain SYSTEM privileges on affected systems. The flaw results from improper validation of graphics input, enabling code execution with elevated rights when triggered. Microsoft advises applying the latest Office update that contains the kernel patch; no workaround exists until the update is installed.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95953",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-95953"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "windows-graphics-kernel-privilege-escalation-cve-2",
+      "article-aa8c9959",
+      "aa8c9959",
+      "windows-graphics-kernel-privilege-escalation-cve-2-7431da",
+      "windows-graphics-kernel-privilege-escalation-cve-2026-95953"
+    ]
+  },
+  {
+    "slug": "cve-2026-96126-windows-graphics-kernel-elevation-o-98b05095",
+    "title": "CVE-2026-96126 Windows Graphics Kernel Elevation of Privilege Vulnerability",
+    "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96126",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-96126"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-96126-windows-graphics-kernel-elevation-o",
+      "article-98b05095",
+      "98b05095",
+      "cve-2026-96126-windows-graphics-kernel-elevation-o-743184",
+      "cve-2026-96126-windows-graphics-kernel-elevation-of-privileg"
+    ]
+  },
+  {
     "slug": "microsoft-acknowledges-windows-smb-rce-cve-2026-11-8ce88e42",
     "title": "Microsoft Acknowledges Windows SMB RCE CVE-2026-119988",
     "summary": "Microsoft has identified CVE-2026-119988 as a Windows SMB remote code execution flaw that could allow attackers to run code malicious SMB traffic. The vulnerability arises from improper handling of SMB protocol messages, and no public exploit or CVSS score has been disclosed. Microsoft issued an informational acknowledgement and urges users to monitor the MSRC for forthcoming patch or mitigation guidance.",
@@ -343,6 +427,25 @@ export const news: NewsBrief[] = [
       "922df6c5",
       "typoprompting-turns-ai-site-typos-into-malware-tra-17f84f",
       "typoprompting-turns-ai-site-typos-into-malware-traps"
+    ]
+  },
+  {
+    "slug": "cisa-nominee-connected-car-hacking-baker-tilly-bre-e670ef5a",
+    "title": "CISA Nominee, Connected Car Hacking, Baker Tilly Breach",
+    "summary": "The SecurityWeek roundup covers a new CISA director nominee, emerging connected‑car hacking threats, and a Baker Tilly data breach. Additional items include Siemens' security advisory policy, OpenAI Codex backdoor risks, and Microsoft warnings about model weight backdoors. These stories highlight evolving attack vectors and the importance of proactive security posture across industries.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
+    "publishedAt": "2026-11-13T15:20:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cisa-nominee-connected-car-hacking-baker-tilly-bre",
+      "article-e670ef5a",
+      "e670ef5a",
+      "cisa-nominee-connected-car-hacking-baker-tilly-bre-640261",
+      "cisa-nominee-connected-car-hacking-baker-tilly-breach"
     ]
   },
   {
@@ -1496,6 +1599,85 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "linux-kernel-ksmbd-oob-read-cve-2026-64138-0871c5a9",
+    "title": "Linux Kernel ksmbd OOB Read CVE-2026-64138",
+    "summary": "ZDI reported CVE-2026-64138, an out‑of‑bounds read flaw in Linux Kernel ksmbd that lets authenticated remote attackers read sensitive data on ksmbd‑enabled systems. The flaw stems from unchecked bounds on the smb_inherit_dacl parameter, enabling memory reads beyond the intended buffer. Distributors should apply the vendor patch that corrects the bounds check; no workaround is available until the kernel update is installed.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1003/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-64138"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-ksmbd-oob-read-cve-2026-64138",
+      "article-0871c5a9",
+      "0871c5a9",
+      "linux-kernel-ksmbd-oob-read-cve-2026-64138-77f338"
+    ]
+  },
+  {
+    "slug": "linux-kernel-qdisc-array-index-exploit-enables-pri-cf320aa2",
+    "title": "Linux Kernel Qdisc Array Index Exploit Enables Privilege Escalation",
+    "summary": "A local privilege escalation vulnerability in the Linux kernel's Qdisc scheduler allows attackers to gain root privileges on affected systems. The flaw stems from improper array index validation during packet scheduling, rated CVSS 8.8, and requires local code execution to exploit. Kernel maintainers have released patch 6.5.0-rc1, and administrators should apply the update immediately to mitigate the escalation risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1002/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-qdisc-array-index-exploit-enables-pri",
+      "article-cf320aa2",
+      "cf320aa2",
+      "linux-kernel-qdisc-array-index-exploit-enables-pri-77f338",
+      "linux-kernel-qdisc-array-index-exploit-enables-privilege-esc"
+    ]
+  },
+  {
+    "slug": "linux-kernel-sctp-race-condition-enables-local-pri-7bb037c8",
+    "title": "Linux Kernel SCTP Race Condition Enables Local Privilege Escalation",
+    "summary": "A race condition in the Linux kernel's SCTP subsystem permits local privilege escalation on affected installations. The vulnerability arises from unsynchronized state updates during SCTP association teardown, rated CVSS 7.8, and needs local code execution. Kernel developers have issued patch 6.5.0-rc2; administrators should update promptly to close the flaw immediately.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1001/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-sctp-race-condition-enables-local-pri",
+      "article-7bb037c8",
+      "7bb037c8",
+      "linux-kernel-sctp-race-condition-enables-local-pri-77f338",
+      "linux-kernel-sctp-race-condition-enables-local-privilege-esc"
+    ]
+  },
+  {
+    "slug": "zdi-26-1000-linux-kernel-gsm-multiplexing-race-con-3e8e07d2",
+    "title": "ZDI-26-1000: Linux Kernel GSM Multiplexing Race Condition Local Privilege Escalation Vulnerability",
+    "summary": "This vulnerability allows local attackers to escalate privileges on affected installations of Linux Kernel. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability. The following CVEs are assigned: CVE-2024-50073.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1000/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2024-50073"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1000-linux-kernel-gsm-multiplexing-race-con",
+      "article-3e8e07d2",
+      "3e8e07d2",
+      "zdi-26-1000-linux-kernel-gsm-multiplexing-race-con-77f338",
+      "zdi-26-1000-linux-kernel-gsm-multiplexing-race-condition-loc"
     ]
   },
   {
@@ -9403,184 +9585,6 @@ export const news: NewsBrief[] = [
       "23540e14",
       "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-m-4181d5",
       "hackers-exploit-ahsaycbs-vulnerabilities-to-hide-malware-in-"
-    ]
-  },
-  {
-    "slug": "ubuntu-kernel-cve-2023-20585-rmp-check-flaw-237c9f08",
-    "title": "Ubuntu Kernel CVE-2023-20585 RMP Check Flaw",
-    "summary": "Ubuntu Security Notice USN-9043-1 reports CVE-2023-20585, a kernel flaw in AMD processors' IOMMU reverse map table checks. The flaw permits a local hypervisor attacker to trigger an out-of-bounds condition, potentially compromising SEV‑SNP guest memory integrity. Ubuntu patches the RMP check flaw across multiple architectures; administrators should update to the latest kernel to mitigate the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9043-1",
-    "publishedAt": "2026-11-11T10:40:18.000Z",
-    "cves": [
-      "CVE-2023-20585"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-kernel-cve-2023-20585-rmp-check-flaw",
-      "article-237c9f08",
-      "237c9f08",
-      "ubuntu-kernel-cve-2023-20585-rmp-check-flaw-7e87de"
-    ]
-  },
-  {
-    "slug": "ubuntu-kernel-patch-addresses-nvidia-ipv4-vulnerab-01ff1b3e",
-    "title": "Ubuntu Kernel Patch Addresses NVIDIA IPv4 Vulnerability",
-    "summary": "A Linux kernel flaw (CVE-2023-20585) in NVIDIA drivers could let attackers compromise systems via the IPv4 networking subsystem. The flaw arises from improper packet header handling, potentially enabling privilege escalation and unauthorized code execution, though no active exploitation has been seen. Ubuntu released kernel updates that patch the affected subsystems; applying the latest update mitigates the risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9045-1",
-    "publishedAt": "2026-11-11T10:40:10.000Z",
-    "cves": [
-      "CVE-2023-20585"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-kernel-patch-addresses-nvidia-ipv4-vulnerab",
-      "article-01ff1b3e",
-      "01ff1b3e",
-      "ubuntu-kernel-patch-addresses-nvidia-ipv4-vulnerab-7e87d7",
-      "ubuntu-kernel-patch-addresses-nvidia-ipv4-vulnerability"
-    ]
-  },
-  {
-    "slug": "linux-kernel-nvidia-baseos-vulnerabilities-fixed-eaf9f20c",
-    "title": "Linux Kernel NVIDIA BaseOS Vulnerabilities Fixed",
-    "summary": "An attacker could exploit kernel flaws in NVIDIA BaseOS network drivers and IPv4 networking to compromise affected systems. The vulnerabilities, identified as CVE-2026-98239 and CVE-2026-98432, allow remote code execution through malformed network packets, posing an exploitation risk. Ubuntu has released a kernel patch that corrects the driver and IPv4 subsystems; apply the update immediately to mitigate the threat.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9044-1",
-    "publishedAt": "2026-11-11T10:40:04.000Z",
-    "cves": [
-      "CVE-2026-98239",
-      "CVE-2026-98432"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "linux-kernel-nvidia-baseos-vulnerabilities-fixed",
-      "article-eaf9f20c",
-      "eaf9f20c",
-      "linux-kernel-nvidia-baseos-vulnerabilities-fixed-7e87db"
-    ]
-  },
-  {
-    "slug": "cisco-and-openwave-vulnerabilities-identified-patc-c72f7cab",
-    "title": "Cisco and Openwave Vulnerabilities Identified, Patch Urgently Needed",
-    "summary": "Cisco and Openwave systems are affected by a critical flaw identified as CVE-2026-20320. The vulnerability permits remote code execution via malformed network packets, with a public PoC demonstrating exploitation; the flaw could allow attackers to gain system-level access on affected devices. Administrators should apply the vendor-supplied patch immediately and enable the provided detection rules to monitor for exploitation attempts.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/cisco-broadworks-and-openwave-flaws-actively-exploited",
-    "publishedAt": "2026-11-11T10:39:53.000Z",
-    "cves": [
-      "CVE-2026-20320"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-and-openwave-vulnerabilities-identified-patc",
-      "article-c72f7cab",
-      "c72f7cab",
-      "cisco-and-openwave-vulnerabilities-identified-patc-118999",
-      "cisco-and-openwave-vulnerabilities-identified-patch-urgently"
-    ]
-  },
-  {
-    "slug": "clickfix-attacks-evolve-to-hide-malware-in-png-ima-5a872db2",
-    "title": "ClickFix Attacks Evolve to Hide Malware in PNG Images and Hijack Windows Domain Controllers",
-    "summary": "ClickFix attacks are moving beyond simple malware downloads, with recent investigations revealing executable payloads hidden inside PNG images and intrusions reaching Windows domain controllers. The activity shows how a fake verification prompt can become the starting point for persistent access, credential theft, and movement across corporate networks.",
-    "category": "General",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/clickfix-attacks-evolve/",
-    "publishedAt": "2026-11-11T10:32:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "clickfix-attacks-evolve-to-hide-malware-in-png-ima",
-      "article-5a872db2",
-      "5a872db2",
-      "clickfix-attacks-evolve-to-hide-malware-in-png-ima-b21c77",
-      "clickfix-attacks-evolve-to-hide-malware-in-png-images-and-hi"
-    ]
-  },
-  {
-    "slug": "cisa-flags-cisco-broadworks-flaw-as-actively-explo-f54e59e8",
-    "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
-    "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. The vulnerability is tracked as CVE-2026-20320.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-attacks/",
-    "publishedAt": "2026-11-11T10:12:08.000Z",
-    "cves": [
-      "CVE-2026-20320"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cisa-flags-cisco-broadworks-flaw-as-actively-explo",
-      "article-f54e59e8",
-      "f54e59e8",
-      "cisa-flags-cisco-broadworks-flaw-as-actively-explo-33ad49",
-      "cisa-flags-cisco-broadworks-flaw-as-actively-exploited-in-at"
-    ]
-  },
-  {
-    "slug": "ubuntu-adds-revocation-checks-to-curl-f1f7af73",
-    "title": "Ubuntu Adds Revocation Checks to Curl",
-    "summary": "Ubuntu 26.10 adds certificate revocation checking to curl, preventing connections to revoked certificates. Earlier releases, such as 26.04, accepted revoked certificates because curl lacked revocation validation, exposing users to man‑in‑the‑middle attacks; OpenSSL also omits revocation checks by default. Upgrade to Ubuntu 26.10 or later to enforce revocation checks, and enable OCSP or CRL verification in OpenSSL for added protection.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/ubuntu-certificate-revocation-curl-openssl/",
-    "publishedAt": "2026-11-11T09:46:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-adds-revocation-checks-to-curl",
-      "article-f1f7af73",
-      "f1f7af73",
-      "ubuntu-adds-revocation-checks-to-curl-621c96"
-    ]
-  },
-  {
-    "slug": "grafana-update-released-for-rhel9-d84570bf",
-    "title": "Grafana update released for RHEL9",
-    "summary": "Red Hat released a security update for Grafana on RHEL 9, addressing vulnerabilities that could enable unauthorized access or data leakage. The update patches each flaw, with CVSS scores available via CVE references, though no specific CVE IDs are listed. Apply the update through RHEL 9 package manager to eliminate the risks and maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98541",
-    "publishedAt": "2026-11-11T09:31:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "grafana-update-released-for-rhel9",
-      "article-d84570bf",
-      "d84570bf",
-      "grafana-update-released-for-rhel9-37d6e5"
-    ]
-  },
-  {
-    "slug": "red-hat-openshift-5-launches-autonomous-hybrid-clo-e9efdb40",
-    "title": "Red Hat OpenShift 5 Launches Autonomous Hybrid Cloud Troubleshooting",
-    "summary": "Red Hat announced the general availability of Red Hat OpenShift 5 for hybrid cloud application management. The upgraded Kubernetes platform integrates zero trust security, operational intelligence, and side-by-side deployment capabilities for containers, virtual machines, and AI workloads. IT teams can upgrade existing infrastructure directly from Red Hat OpenShift 4 via an in-place update process.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/red-hat-openshift-5/",
-    "publishedAt": "2026-11-11T09:31:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-openshift-5-launches-autonomous-hybrid-clo",
-      "article-e9efdb40",
-      "e9efdb40",
-      "red-hat-openshift-5-launches-autonomous-hybrid-clo-6ca36f",
-      "red-hat-openshift-5-launches-autonomous-hybrid-cloud-trouble"
     ]
   }
 ];

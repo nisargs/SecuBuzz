@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 22:54:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 23:52:23 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>FAA Ground Stop Triggered by Unexplained Communications Disruption</title>
@@ -125,6 +125,42 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Windows Graphics Kernel Privilege Escalation CVE-2026-95922</title>
+      <link>https://secubuzz.com/news/windows-graphics-kernel-privilege-escalation-cve-2-b39df0a5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-graphics-kernel-privilege-escalation-cve-2-b39df0a5</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-95922, a Windows Graphics Kernel elevation of privilege flaw that lets local attackers gain SYSTEM rights on affected systems. The flaw stems from improper validation of graphics data, allowing code execution with elevated privileges once triggered. Microsoft urges users to apply the latest Office update that contains the kernel patch; no workaround exists until the update is installed.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95922">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Windows Graphics Kernel Privilege Escalation CVE-2026-95942</title>
+      <link>https://secubuzz.com/news/windows-graphics-kernel-privilege-escalation-cve-2-ab8ed983</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-graphics-kernel-privilege-escalation-cve-2-ab8ed983</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-95942, a Windows Graphics Kernel elevation of privilege flaw that permits local attackers to obtain SYSTEM rights on affected machines. The vulnerability arises from unchecked handling of user‑supplied graphics commands, enabling arbitrary code execution with elevated privileges. Microsoft recommends installing the latest Office update that incorporates the kernel patch; no workaround is available until the update is applied.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95942">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Windows Graphics Kernel Privilege Escalation CVE-2026-95953</title>
+      <link>https://secubuzz.com/news/windows-graphics-kernel-privilege-escalation-cve-2-aa8c9959</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/windows-graphics-kernel-privilege-escalation-cve-2-aa8c9959</guid>
+      <description><![CDATA[Microsoft disclosed CVE-2026-95953, a Windows Graphics Kernel elevation of privilege flaw that allows local attackers to gain SYSTEM privileges on affected systems. The flaw results from improper validation of graphics input, enabling code execution with elevated rights when triggered. Microsoft advises applying the latest Office update that contains the kernel patch; no workaround exists until the update is installed.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95953">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CVE-2026-96126 Windows Graphics Kernel Elevation of Privilege Vulnerability</title>
+      <link>https://secubuzz.com/news/cve-2026-96126-windows-graphics-kernel-elevation-o-98b05095</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-96126-windows-graphics-kernel-elevation-o-98b05095</guid>
+      <description><![CDATA[Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96126">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Acknowledges Windows SMB RCE CVE-2026-119988</title>
       <link>https://secubuzz.com/news/microsoft-acknowledges-windows-smb-rce-cve-2026-11-8ce88e42</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-windows-smb-rce-cve-2026-11-8ce88e42</guid>
@@ -158,6 +194,15 @@
       <description><![CDATA[Researchers discovered TypoPrompting attacks that redirect users typing mistyped AI tool URLs to fake verification pages hosting malware installers. The study mapped 186 lookalike domains across 27 AI brands, including Claude, ChatGPT, and Midjourney, exposing a widespread phishing surface. Defenders should enforce strict URL filtering, educate users on correct domain spelling, and deploy anti‑phishing solutions to mitigate the risk.]]></description>
       <pubDate>Fri, 13 Nov 2026 15:24:38 GMT</pubDate>
       <source url="https://cybersecuritynews.com/new-typoprompting-attacks/">Cyber Security News</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>CISA Nominee, Connected Car Hacking, Baker Tilly Breach</title>
+      <link>https://secubuzz.com/news/cisa-nominee-connected-car-hacking-baker-tilly-bre-e670ef5a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-nominee-connected-car-hacking-baker-tilly-bre-e670ef5a</guid>
+      <description><![CDATA[The SecurityWeek roundup covers a new CISA director nominee, emerging connected‑car hacking threats, and a Baker Tilly data breach. Additional items include Siemens' security advisory policy, OpenAI Codex backdoor risks, and Microsoft warnings about model weight backdoors. These stories highlight evolving attack vectors and the importance of proactive security posture across industries.]]></description>
+      <pubDate>Fri, 13 Nov 2026 15:20:00 GMT</pubDate>
+      <source url="https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/">SecurityWeek</source>
       <category>General</category>
     </item>
     <item>
@@ -410,51 +455,6 @@
       <description><![CDATA[SCKit malware, an AI‑driven threat, has prompted a security alert urging rapid detection and containment. Analysts recommend reviewing root‑cause telemetry, deploying detection rules, and applying patches to neutralize the evolving attack vector. Security teams should immediately update signatures, monitor for anomalous AI‑generated activity across all endpoints, and isolate affected systems to prevent compromise.]]></description>
       <pubDate>Fri, 13 Nov 2026 11:38:00 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/sckit-malware-turns-screenconnect-support-sessions-into">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Use Windows Named Pipes and SMB to Spread Malware Across Isolated Government Networks</title>
-      <link>https://secubuzz.com/news/hackers-use-windows-named-pipes-and-smb-to-spread-ee410fed</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-windows-named-pipes-and-smb-to-spread-ee410fed</guid>
-      <description><![CDATA[A new espionage group is using Windows named pipes and the SMB file-sharing protocol to move malware through tightly separated networks. Positive Technologies calls the group StingyBasilisk. It has been active since at least April 2022.]]></description>
-      <pubDate>Fri, 13 Nov 2026 11:30:35 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/windows-named-pipes-and-smb/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apple Unveils Secure Exclaves for Camera and Microphone Data</title>
-      <link>https://secubuzz.com/news/apple-unveils-secure-exclaves-for-camera-and-micro-862aa31a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apple-unveils-secure-exclaves-for-camera-and-micro-862aa31a</guid>
-      <description><![CDATA[Apple announced Secure Exclaves, an isolated runtime protecting camera and microphone data during background processing on iPhone devices. The architecture keeps processed data inaccessible to the OS, apps, or Apple, enhancing privacy for HomeView, Siri Recap, and Live Rewind. Developers should review API guidelines and update apps to use Secure Exclaves for sensitive media handling, following Apple’s best practices.]]></description>
-      <pubDate>Fri, 13 Nov 2026 11:27:56 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/13/apple-secure-exclaves-security-architecture/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Google Releases Second Chrome Patch for Code Execution Flaws</title>
-      <link>https://secubuzz.com/news/google-releases-second-chrome-patch-for-code-execu-e72d8fdc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/google-releases-second-chrome-patch-for-code-execu-e72d8fdc</guid>
-      <description><![CDATA[Google released a second Chrome update this week addressing vulnerabilities that could enable malicious code execution. The flaws involved input validation errors in the rendering engine, potentially allowing attackers to execute code; no public exploit was reported, but the risk warranted immediate remediation. Users should install the latest Chrome version, and security teams should verify update deployment across endpoints.]]></description>
-      <pubDate>Fri, 13 Nov 2026 11:20:50 GMT</pubDate>
-      <source url="https://www.malwarebytes.com/blog/bugs/2026/11/google-pushes-second-chrome-update-this-week">Malwarebytes Labs</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users</title>
-      <link>https://secubuzz.com/news/silentair-hijacks-asian-telecom-networks-to-interc-643dac69</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/silentair-hijacks-asian-telecom-networks-to-interc-643dac69</guid>
-      <description><![CDATA[A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and named it SilentAir this week.]]></description>
-      <pubDate>Fri, 13 Nov 2026 11:10:40 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html">The Hacker News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>354 Dark Web Vendors Arrested in Operation TorNado</title>
-      <link>https://secubuzz.com/news/354-dark-web-vendors-arrested-in-operation-tornado-47248c71</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/354-dark-web-vendors-arrested-in-operation-tornado-47248c71</guid>
-      <description><![CDATA[Europol and police in 14 countries arrested 354 dark web vendors and buyers during Operation TorNado, which operated from May 2025 to October 2026. The crackdown targeted users of five marketplaces—Archetyp, Bohemia, Nemesis, Kingdom, and Tor2Door—and seized funds reported by Europol. Law enforcement also pursued vendors and buyers on forums, single‑vendor shops, and encrypted channels to dismantle the supply chain.]]></description>
-      <pubDate>Fri, 13 Nov 2026 11:06:29 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/13/europol-dark-web-arrests-cybercrime/">Help Net Security</source>
       <category>General</category>
     </item>
   </channel>

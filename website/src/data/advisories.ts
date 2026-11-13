@@ -52,6 +52,84 @@ export const advisories: Advisory[] = [
     "source": "CISA KEV"
   },
   {
+    "cve": "CVE-2026-126295",
+    "slug": "cve-2026-126295",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 6.8,
+    "severity": "Medium",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "BllipParser in nltk/parse/bllip.py hands caller-supplied filesystem paths to the native bllipparser C extension without routing them through NLTK's pathsec validation.",
+    "requiredAction": "Upgrade nltk to version 3.10.4 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126295"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62297",
+    "slug": "cve-2026-62297",
+    "vendor": "npm",
+    "product": "ag-psd",
+    "name": "ag-psd can exhaust memory when parsing crafted PSD dimensions",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 7.5,
+    "severity": "High",
+    "cwe": "CWE-789",
+    "ransomware": false,
+    "description": "readPsd() commits the image/layer buffers from the declared header geometry (width x height x channels x depth, and per-layer rectangles) before validating those values against the actual data. A tiny crafted PSD declaring huge geometry forces a multi-gigabyte allocation.",
+    "requiredAction": "Upgrade ag-psd to version 31.0.0 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-qfx6-q44v-9qqw"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62297"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "CVE-2026-62683",
+    "slug": "cve-2026-62683",
+    "vendor": "Go",
+    "product": "filebrowser (v2) · filebrowser",
+    "name": "File Browser: Trailing-slash directory deletion leaves public shares active for recreated paths",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 3.1,
+    "severity": "Low",
+    "cwe": "CWE-863",
+    "ransomware": false,
+    "description": "File Browser v2.63.15 can leave a public directory share behind when the shared directory is deleted through a path with a trailing slash. The share cleanup path calls DeleteWithPathPrefix(file.Path, userID), but the Bolt backend performs the database prefix query with the unnormalized argument before trimming the slash for boundary checks.",
+    "requiredAction": "Upgrade filebrowser (v2) · filebrowser to version 2.63.17 or later.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-pp88-jhwj-5qh5"
+      },
+      {
+        "label": "NVD CVE entry",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62683"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-gpwc-27cw-rh9r",
     "slug": "ghsa-gpwc-27cw-rh9r",
     "vendor": "Pip",
@@ -868,6 +946,28 @@ export const advisories: Advisory[] = [
     "source": "GITHUB"
   },
   {
+    "cve": "GHSA-jh6r-h4rx-2j3w",
+    "slug": "ghsa-jh6r-h4rx-2j3w",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "Duplicate Advisory: Quadratic-time CPU denial of service in NLTK CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 8.7,
+    "severity": "High",
+    "cwe": "CWE-400",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-89p3-fcch-88ph. This link is maintained to preserve external references. NLTK before 3.10.4 contains a denial of service vulnerability in the CCG lexicon parser fromstring that allows remote attackers to exhaust CPU by supplying wide inputs.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-jh6r-h4rx-2j3w"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
     "cve": "GHSA-g5wx-957h-f4wj",
     "slug": "ghsa-g5wx-957h-f4wj",
     "vendor": "Pip",
@@ -885,6 +985,28 @@ export const advisories: Advisory[] = [
       {
         "label": "GitHub Advisory",
         "url": "https://github.com/advisories/GHSA-g5wx-957h-f4wj"
+      }
+    ],
+    "source": "GITHUB"
+  },
+  {
+    "cve": "GHSA-f7j6-hf97-9v99",
+    "slug": "ghsa-f7j6-hf97-9v99",
+    "vendor": "Pip",
+    "product": "nltk",
+    "name": "Duplicate Advisory: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+    "dateAdded": "2026-11-13",
+    "dueDate": "",
+    "cvss": 7,
+    "severity": "High",
+    "cwe": "CWE-22",
+    "ransomware": false,
+    "description": "This advisory has been withdrawn because it is a duplicate of GHSA-fg9w-wfp5-j933. This link is maintained to preserve external references. NLTK from 3.10.0 before 3.10.4 contains an arbitrary file read vulnerability in BllipParser that allows attackers to open files outside NLTK data roots by supplying unvalidated model paths.",
+    "requiredAction": "No patched release available yet. Check advisory mitigations and workarounds.",
+    "references": [
+      {
+        "label": "GitHub Advisory",
+        "url": "https://github.com/advisories/GHSA-f7j6-hf97-9v99"
       }
     ],
     "source": "GITHUB"
@@ -1197,136 +1319,6 @@ export const advisories: Advisory[] = [
       {
         "label": "NVD CVE entry",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128066"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-128067",
-    "slug": "cve-2026-128067",
-    "vendor": "Pip",
-    "product": "Pillow",
-    "name": "Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 8.4,
-    "severity": "High",
-    "cwe": "CWE-787",
-    "ransomware": false,
-    "description": "When Pillow saves an image as a compressed TIFF, size information taken from the image's metadata can make the encoder read past the end of a heap buffer. Someone who uploads an image can use this to get the server process's memory, including pointers, copied into the saved file, or to crash the process.",
-    "requiredAction": "Upgrade Pillow to version 13.0.0 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-xcvg-w56q-r89m"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128067"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126355",
-    "slug": "cve-2026-126355",
-    "vendor": "npm",
-    "product": "hono",
-    "name": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-352",
-    "ransomware": false,
-    "description": "csrf() validates a request only when its Content-Type is one of the three types an HTML form can send. Chromium's hyperlink auditing ( ) sends a cross-origin POST with the user's cookies and the content type text/ping, which is not in that list. The middleware does not look at Origin or Sec-Fetch-Site for such a request, so it is passed to the handler.",
-    "requiredAction": "Upgrade hono to version 4.13.16 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-46wx-v44x-9hh2"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126355"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126356",
-    "slug": "cve-2026-126356",
-    "vendor": "npm",
-    "product": "hono",
-    "name": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-20",
-    "ransomware": false,
-    "description": "validator('form') only recognizes a multipart/form-data Content-Type that carries nothing but a single boundary parameter. A request with another legal parameter, such as charset, or with extra whitespace after the ; is not recognized as a form. The validation callback then receives an empty object, while c.req.parseBody() still parses the body as a form.",
-    "requiredAction": "Upgrade hono to version 4.13.16 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4h7h-rv7c-7m2v"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126356"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126357",
-    "slug": "cve-2026-126357",
-    "vendor": "npm",
-    "product": "hono",
-    "name": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-288",
-    "ransomware": false,
-    "description": "mount() and app.mount() remove the mount prefix from the request path and forward the rest to the mounted application. Two mistakes in that step let a crafted request reach a route of the mounted application that the outer application protects with path-scoped middleware, such as an authentication check on /app/admin/*.",
-    "requiredAction": "Upgrade hono to version 4.13.16 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-4m76-xfj5-7975"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126357"
-      }
-    ],
-    "source": "GITHUB"
-  },
-  {
-    "cve": "CVE-2026-126358",
-    "slug": "cve-2026-126358",
-    "vendor": "npm",
-    "product": "hono",
-    "name": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
-    "dateAdded": "2026-11-12",
-    "dueDate": "",
-    "cvss": 5.3,
-    "severity": "Medium",
-    "cwe": "CWE-863",
-    "ransomware": false,
-    "description": "RegExpRouter, which the default SmartRouter selects for most applications, skipped wildcard middleware in three cases, so a route handler ran without the middleware registered for it: 1. Middleware whose parameter is written with the explicit default pattern, such as /api/:tenant{[^/]+}/admin/, was not applied to a route written as /api/:tenant/admin/:id. (since 4.13.0) 2.",
-    "requiredAction": "Upgrade hono to version 4.13.16 or later.",
-    "references": [
-      {
-        "label": "GitHub Advisory",
-        "url": "https://github.com/advisories/GHSA-h7mg-cq63-vhpq"
-      },
-      {
-        "label": "NVD CVE entry",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126358"
       }
     ],
     "source": "GITHUB"
