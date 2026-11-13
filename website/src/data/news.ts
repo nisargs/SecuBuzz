@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hackers-exploit-check-point-firewall-flaws-to-gain-4cee6a87",
+    "title": "Hackers Exploit Check Point Firewall Flaws to Gain Root Access and Deploy Wiper Malware on VMware ESXi",
+    "summary": "Hackers have chained Check Point firewall vulnerabilities to gain root access, plant backdoors, and deploy destructive malware on a VMware ESXi host. Check Point confirmed that attackers exploited the privilege escalation flaw against a couple of dozen customers.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/hackers-exploit-check-point-firewall-flaws/",
+    "publishedAt": "2026-11-13T06:38:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-exploit-check-point-firewall-flaws-to-gain",
+      "article-4cee6a87",
+      "4cee6a87",
+      "hackers-exploit-check-point-firewall-flaws-to-gain-193824",
+      "hackers-exploit-check-point-firewall-flaws-to-gain-root-acce"
+    ]
+  },
+  {
     "slug": "teams-meeting-scheduler-phishing-yields-valid-sess-c87b0296",
     "title": "Teams Meeting Scheduler Phishing Yields Valid Session Token",
     "summary": "Attackers used a fake Microsoft Teams meeting scheduler to trick a construction employee into approving a device‑code sign‑in, capturing a valid session token. The phishing exploited the legitimate device‑code flow, requiring no credential disclosure but allowing attackers to hijack the session before detection. Teams should enforce stricter booking verification, monitor device‑code usage, and apply MFA to mitigate similar social‑engineering attacks.",
@@ -27,6 +46,42 @@ export const news: NewsBrief[] = [
       "c87b0296",
       "teams-meeting-scheduler-phishing-yields-valid-sess-68fb07",
       "teams-meeting-scheduler-phishing-yields-valid-session-token"
+    ]
+  },
+  {
+    "slug": "n-central-flaws-compromise-21-servers-06a541af",
+    "title": "N-central Flaws Compromise 21 Servers",
+    "summary": "Hackers exploited N-able N-central flaws, 4EverAble2Shell and Agent2Shell, to compromise 21 servers, 19 of which ran Hotfix 2. The flaws allow remote code execution via malformed API requests, enabling attackers to execute arbitrary commands without authentication. N-able has disabled affected features and integrations, issued a patch, and recommends applying the latest Hotfix 2 update to mitigate the vulnerability.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+    "publishedAt": "2026-11-13T05:43:28.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-central-flaws-compromise-21-servers",
+      "article-06a541af",
+      "06a541af",
+      "n-central-flaws-compromise-21-servers-18c6e7"
+    ]
+  },
+  {
+    "slug": "tsmc-employee-data-exposed-via-third-party-cloud-6ce49751",
+    "title": "TSMC Employee Data Exposed via Third‑Party Cloud",
+    "summary": "TSMC disclosed that personal data of current and former employees was exposed online through a third‑party cloud provider. The breach involved data stored externally, with no indication that TSMC’s internal systems were compromised or accessed by attackers. TSMC recommends employees verify account activity, change passwords, and monitor for suspicious access while the cloud provider implements additional safeguards.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/tsmc-data-breach/",
+    "publishedAt": "2026-11-13T05:25:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "tsmc-employee-data-exposed-via-third-party-cloud",
+      "article-6ce49751",
+      "6ce49751",
+      "tsmc-employee-data-exposed-via-third-party-cloud-285bea"
     ]
   },
   {
@@ -1086,6 +1141,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-qt5-qtbase-security-update-26b8c52b",
+    "title": "Red Hat Releases qt5‑qtbase Security Update",
+    "summary": "Red Hat issued an important security update for qt5‑qtbase on RHEL 7 Extended Lifecycle Support, addressing multiple vulnerabilities. The update is rated Important by Red Hat Product Security, and CVSS base scores for each vulnerability are provided in the references. Users should apply the patch immediately to mitigate the identified weaknesses and consult the CVE links for detailed severity information.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99746",
+    "publishedAt": "2026-11-12T20:08:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-qt5-qtbase-security-update",
+      "article-26b8c52b",
+      "26b8c52b",
+      "red-hat-releases-qt5-qtbase-security-update-37d669"
+    ]
+  },
+  {
     "slug": "sudo-time-restriction-bypass-vulnerability-9995d4e0",
     "title": "Sudo Time Restriction Bypass Vulnerability",
     "summary": "Sudo on Ubuntu 18.04 LTS and 20.04 LTS contains a flaw that fails to enforce NOTBEFORE and NOTAFTER time restrictions when timestamps lack a timezone indicator. A local attacker could manipulate the TZ environment variable to execute commands outside the intended time window, escalating privileges. Ubuntu has released updates for both releases; administrators should apply them to prevent the bypass.",
@@ -1215,6 +1288,24 @@ export const news: NewsBrief[] = [
       "cf8beca4",
       "cve-2026-127119-unverified-ownership-of-the-defaul-1528db",
       "cve-2026-127119-unverified-ownership-of-the-default-emr-clus"
+    ]
+  },
+  {
+    "slug": "red-hat-issues-thunderbird-security-update-08e51de2",
+    "title": "Red Hat Issues thunderbird Security Update",
+    "summary": "Red Hat released an important security update for thunderbird on RHEL 9.2 Update Services for SAP Solutions, fixing bugs. The update is rated Important by Red Hat Product Security, and CVSS base scores for each vulnerability are listed in the references. Administrators should apply the patch promptly to address the identified issues and review the CVE links for severity details.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99749",
+    "publishedAt": "2026-11-12T19:02:08.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-issues-thunderbird-security-update",
+      "article-08e51de2",
+      "08e51de2",
+      "red-hat-issues-thunderbird-security-update-37d669"
     ]
   },
   {
@@ -1459,6 +1550,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99659-important-xfsprogs-security-update-40daf9b0",
+    "title": "RHSA-2026:99659: Important: xfsprogs security update",
+    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99659",
+    "publishedAt": "2026-11-12T17:17:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99659-important-xfsprogs-security-update",
+      "article-40daf9b0",
+      "40daf9b0",
+      "rhsa-2026-99659-important-xfsprogs-security-update-37d66c"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99643-low-curl-security-update-9262d46e",
+    "title": "RHSA-2026:99643: Low: curl security update",
+    "summary": "An update for curl is now available for Red Hat Enterprise Linux 10.2 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99643",
+    "publishedAt": "2026-11-12T17:17:11.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99643-low-curl-security-update",
+      "article-9262d46e",
+      "9262d46e",
+      "rhsa-2026-99643-low-curl-security-update-37d66c"
+    ]
+  },
+  {
     "slug": "poisoned-ai-training-enables-remote-code-execution-5f5a52ca",
     "title": "Poisoned AI Training Enables Remote Code Execution",
     "summary": "Poisoned training data and model checkpoints can trigger remote code execution in AI coding agents, per Microsoft Defender Research. The flaw exploits the training pipeline, letting attackers embed malicious code that runs when the agent processes user inputs, potentially compromising downstream systems. Defenders should verify training data integrity, enforce supply‑chain controls, and monitor agent behavior for anomalous execution.",
@@ -1666,6 +1793,25 @@ export const news: NewsBrief[] = [
       "6e7a742b",
       "european-authorities-take-down-steaic-malware-serv-4df0a2",
       "european-authorities-take-down-steaic-malware-servers-for-se"
+    ]
+  },
+  {
+    "slug": "connectwise-investigates-screenconnect-breaches-at-1746e6e4",
+    "title": "ConnectWise Investigates ScreenConnect Breaches at 50 Clients",
+    "summary": "ConnectWise reports that abuse of its ScreenConnect remote‑access tool has led to data breaches at nearly 50 customer organizations. The exploitation involved unauthorized remote sessions bypassing authentication controls, exposing sensitive files and credentials, with no public proof‑of‑concept disclosed. ConnectWise has released a patch and recommends customers disable remote‑access features until the fix is applied, while conducting forensic investigations.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "The Record",
+    "sourceUrl": "https://therecord.media/connectwise-screenconnect-breaches-third-party-tool",
+    "publishedAt": "2026-11-12T16:16:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "connectwise-investigates-screenconnect-breaches-at",
+      "article-1746e6e4",
+      "1746e6e4",
+      "connectwise-investigates-screenconnect-breaches-at-196615",
+      "connectwise-investigates-screenconnect-breaches-at-50-client"
     ]
   },
   {
@@ -2031,6 +2177,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "bricklink-offline-after-detecting-unusual-activity-bdfef76b",
+    "title": "BrickLink Offline After Detecting Unusual Activity",
+    "summary": "BrickLink, the LEGO marketplace, went offline after detecting unusual activity on its servers. The incident involved suspicious traffic patterns that prompted a temporary shutdown to prevent potential data compromise, though no breach was confirmed. The platform has not yet disclosed whether customer data was affected and advises users to monitor for any unauthorized account activity.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/legos-bricklink-taken-offline-after-unusual-activity-what-users-should-know",
+    "publishedAt": "2026-11-12T14:25:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "bricklink-offline-after-detecting-unusual-activity",
+      "article-bdfef76b",
+      "bdfef76b",
+      "bricklink-offline-after-detecting-unusual-activity-238d20"
+    ]
+  },
+  {
     "slug": "red-hat-updates-crun-for-rhel-9-8-eus-796cd2ac",
     "title": "Red Hat Updates crun for RHEL 9.8 EUS",
     "summary": "Red Hat released a security update for the crun container runtime on RHEL 9.8 EUS, addressing a vulnerability that could let attackers compromise container execution. The advisory notes an Important impact rating and references CVE links, but no specific CVE identifiers or CVSS scores are disclosed.",
@@ -2086,6 +2250,24 @@ export const news: NewsBrief[] = [
       "fd83b243",
       "cisa-confirms-active-exploitation-of-outlook-user-936874",
       "cisa-confirms-active-exploitation-of-outlook-user-interactio"
+    ]
+  },
+  {
+    "slug": "teams-booking-flow-conceals-device-code-phishing-a4e0cca3",
+    "title": "Teams Booking Flow Conceals Device Code Phishing",
+    "summary": "Threat actors leveraged a Microsoft Teams meeting‑booking flow to deliver device code phishing, tricking users into authorizing attacker access. The attack exploited the Teams booking interface’s lack of device‑code validation, allowing attackers to obtain temporary access tokens without user credentials. Security teams should enforce MFA, disable unused device‑code flows, and monitor for anomalous token usage to mitigate this threat.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Huntress",
+    "sourceUrl": "https://www.huntress.com/blog/crafty-microsoft-teams-booking-flow-disguises-device-code-phishing",
+    "publishedAt": "2026-11-12T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "teams-booking-flow-conceals-device-code-phishing",
+      "article-a4e0cca3",
+      "a4e0cca3",
+      "teams-booking-flow-conceals-device-code-phishing-4d51b7"
     ]
   },
   {
@@ -9359,197 +9541,6 @@ export const news: NewsBrief[] = [
       "article-70f3c8f2",
       "70f3c8f2",
       "red-hat-releases-low-impact-dhcp-security-update-37d75c"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97215-important-grafana-security-bug-fix-5776f9f3",
-    "title": "RHSA-2026:97215: Important: grafana security, bug fix, and enhancement update",
-    "summary": "An update for grafana is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97215",
-    "publishedAt": "2026-11-10T20:31:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97215-important-grafana-security-bug-fix",
-      "article-5776f9f3",
-      "5776f9f3",
-      "rhsa-2026-97215-important-grafana-security-bug-fix-37d765",
-      "rhsa-2026-97215-important-grafana-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97191-important-delve-security-bug-fix-a-eb702761",
-    "title": "RHSA-2026:97191: Important: delve security, bug fix, and enhancement update",
-    "summary": "An update for delve is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97191",
-    "publishedAt": "2026-11-10T20:28:52.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97191-important-delve-security-bug-fix-a",
-      "article-eb702761",
-      "eb702761",
-      "rhsa-2026-97191-important-delve-security-bug-fix-a-37d767",
-      "rhsa-2026-97191-important-delve-security-bug-fix-and-enhance"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97562-important-skopeo-security-bug-fix-2ec7c86e",
-    "title": "RHSA-2026:97562: Important: skopeo security, bug fix, and enhancement update",
-    "summary": "An update for skopeo is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97562",
-    "publishedAt": "2026-11-10T20:26:29.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97562-important-skopeo-security-bug-fix",
-      "article-2ec7c86e",
-      "2ec7c86e",
-      "rhsa-2026-97562-important-skopeo-security-bug-fix-37d759",
-      "rhsa-2026-97562-important-skopeo-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97538-important-cockpit-files-security-u-d3da32b5",
-    "title": "RHSA-2026:97538: Important: cockpit-files security update",
-    "summary": "An update for cockpit-files is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97538",
-    "publishedAt": "2026-11-10T20:24:06.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97538-important-cockpit-files-security-u",
-      "article-d3da32b5",
-      "d3da32b5",
-      "rhsa-2026-97538-important-cockpit-files-security-u-37d759",
-      "rhsa-2026-97538-important-cockpit-files-security-update"
-    ]
-  },
-  {
-    "slug": "cloud-range-offers-free-ot-readiness-assessment-28d86c2c",
-    "title": "Cloud Range Offers Free OT Readiness Assessment",
-    "summary": "Cloud Range released a free 28‑question OT Cyber Readiness Assessment to help organizations identify gaps in operational technology incident response. The assessment evaluates preparedness across detection, containment, and recovery controls, providing a baseline score and improvement roadmap. Organizations should download the tool, complete the questionnaire, and use the resulting report to prioritize remediation.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
-    "publishedAt": "2026-11-10T20:18:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloud-range-offers-free-ot-readiness-assessment",
-      "article-28d86c2c",
-      "28d86c2c",
-      "cloud-range-offers-free-ot-readiness-assessment-665a30"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-important-security-flaws-in-rhc-pa-0f4c59af",
-    "title": "Red Hat Patches Important Security Flaws in RHC Package",
-    "summary": "Red Hat released a security update for the rhc package on Red Hat Enterprise Linux 9. Red Hat Product Security rated the addressed vulnerabilities as having an Important security impact based on CVSS scoring criteria. System administrators running affected Red Hat Enterprise Linux installations should apply the newly available rhc package update to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97699",
-    "publishedAt": "2026-11-10T20:14:16.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-important-security-flaws-in-rhc-pa",
-      "article-0f4c59af",
-      "0f4c59af",
-      "red-hat-patches-important-security-flaws-in-rhc-pa-37d755",
-      "red-hat-patches-important-security-flaws-in-rhc-package"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97585-moderate-bind9-18-security-bug-fix-be4f38bc",
-    "title": "RHSA-2026:97585: Moderate: bind9.18 security, bug fix, and enhancement update",
-    "summary": "An update for bind9.18 is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97585",
-    "publishedAt": "2026-11-10T20:11:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97585-moderate-bind9-18-security-bug-fix",
-      "article-be4f38bc",
-      "be4f38bc",
-      "rhsa-2026-97585-moderate-bind9-18-security-bug-fix-37d758",
-      "rhsa-2026-97585-moderate-bind9-18-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "cve-2026-124848-kiro-cli-default-permissions-expos-dd708a3c",
-    "title": "CVE-2026-124848: Kiro CLI Default Permissions Expose Sessions",
-    "summary": "CVE-2026-124848 reveals that Kiro CLI versions before 2.27.0 create session transcript files with world‑readable permissions on macOS and Linux. The flaw allows any local user to read credentials, source code, and other sensitive data stored in the prompt history, potentially enabling credential theft. Users should upgrade to Kiro CLI 2.27.0 or later, or manually change file permissions to restrict access.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-178-aws/",
-    "publishedAt": "2026-11-10T20:05:36.000Z",
-    "cves": [
-      "CVE-2026-124848"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-124848-kiro-cli-default-permissions-expos",
-      "article-dd708a3c",
-      "dd708a3c",
-      "cve-2026-124848-kiro-cli-default-permissions-expos-3e1d2a",
-      "cve-2026-124848-kiro-cli-default-permissions-expose-sessions"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-update-for-enterprise-linu-499e671e",
-    "title": "Red Hat Releases Kernel Update for Enterprise Linux 9",
-    "summary": "Red Hat released a kernel update for Enterprise Linux 9 addressing multiple security issues. Product Security rated the update as Important, and CVSS base scores are provided for each CVE linked in the references. Security teams should apply the patch promptly to mitigate the identified kernel vulnerabilities, maintain system integrity, and ensure compliance with security policies.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97435",
-    "publishedAt": "2026-11-10T20:05:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-update-for-enterprise-linu",
-      "article-499e671e",
-      "499e671e",
-      "red-hat-releases-kernel-update-for-enterprise-linu-37d75d",
-      "red-hat-releases-kernel-update-for-enterprise-linux-9"
-    ]
-  },
-  {
-    "slug": "microsoft-issues-windows-10-kb5131096-security-upd-633a9a94",
-    "title": "Microsoft Issues Windows 10 KB5131096 Security Update",
-    "summary": "Microsoft released Windows 10 KB5131096 extended security update addressing multiple vulnerabilities in the operating system. The update incorporates November 2026 Patch Tuesday fixes and bug corrections, mitigating potential exploitation paths by tightening system integrity checks. Users should install the KB5131096 package via Windows Update or manual download to ensure protection against the addressed flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
-    "publishedAt": "2026-11-10T20:04:36.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-issues-windows-10-kb5131096-security-upd",
-      "article-633a9a94",
-      "633a9a94",
-      "microsoft-issues-windows-10-kb5131096-security-upd-61db97",
-      "microsoft-issues-windows-10-kb5131096-security-update"
     ]
   }
 ];
