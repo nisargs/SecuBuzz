@@ -16,7 +16,8 @@ import { execSync } from 'child_process';
 
 function refreshOauthToken() {
   try {
-    execSync('npx wrangler whoami', { stdio: 'ignore' });
+    const workerDir = path.resolve('worker');
+    execSync('npx wrangler whoami', { cwd: fs.existsSync(workerDir) ? workerDir : process.cwd(), timeout: 15000, stdio: 'ignore' });
     return getOauthToken();
   } catch {
     return null;
