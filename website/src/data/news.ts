@@ -11,6 +11,139 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "microsoft-365-global-outage-affects-outlook-teams-b9dd6a76",
+    "title": "Microsoft 365 Global Outage Affects Outlook, Teams",
+    "summary": "A worldwide outage of Microsoft 365 services, including Outlook, SharePoint, and Teams, has disrupted operations for numerous organizations. The incident, caused by an internal infrastructure failure, led to prolonged service unavailability across multiple regions, impacting email, collaboration, and cloud storage. Microsoft is working to restore services and has advised users to monitor status updates for resolution timelines.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Malwarebytes Labs",
+    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/worldwide-microsoft-365-outage-disrupts-outlook-sharepoint-teams-and-more",
+    "publishedAt": "2026-11-13T08:35:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-global-outage-affects-outlook-teams",
+      "article-b9dd6a76",
+      "b9dd6a76",
+      "microsoft-365-global-outage-affects-outlook-teams-343d8a"
+    ]
+  },
+  {
+    "slug": "police-arrest-354-dark-web-cybercrime-suspects-07e6a2d5",
+    "title": "Police Arrest 354 Dark Web Cybercrime Suspects",
+    "summary": "Police forces worldwide arrested 354 suspects in a joint operation targeting vendors and buyers on dark‑web marketplaces such as Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom. The crackdown, coordinated by international law‑enforcement agencies, aimed to dismantle illicit cybercrime networks facilitating malware distribution and financial fraud. Authorities are proceeding with prosecutions and asset seizures to disrupt future operations.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
+    "publishedAt": "2026-11-13T08:34:20.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "police-arrest-354-dark-web-cybercrime-suspects",
+      "article-07e6a2d5",
+      "07e6a2d5",
+      "police-arrest-354-dark-web-cybercrime-suspects-725e7d"
+    ]
+  },
+  {
+    "slug": "check-point-gateways-targeted-via-php2shell-and-pr-f6aa0340",
+    "title": "Check Point Gateways Targeted via PHP2Shell and Privilege Escalation",
+    "summary": "Hackers exploited PHP2Shell vulnerabilities in unpatched Check Point Security Gateways to gain initial access to Israeli organizations. The attackers then leveraged the previously reported local privilege escalation flaw CVE-2026-123039 in Gaia OS to deploy the TSGA backdoor and delete ESXi files. Check Point has issued a patch for PHP2Shell and recommends updating Gaia OS firmware to mitigate the escalation vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+    "publishedAt": "2026-11-13T08:05:49.000Z",
+    "cves": [
+      "CVE-2026-123039"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-gateways-targeted-via-php2shell-and-pr",
+      "article-f6aa0340",
+      "f6aa0340",
+      "check-point-gateways-targeted-via-php2shell-and-pr-4b0b0c",
+      "check-point-gateways-targeted-via-php2shell-and-privilege-es"
+    ]
+  },
+  {
+    "slug": "arcticrat-hijacks-android-phones-via-hidden-vnc-e9d01b0b",
+    "title": "ArcticRAT Hijacks Android Phones via Hidden VNC",
+    "summary": "ArcticRAT, a new Android remote access trojan, captures full device control while displaying a black screen to the user. The malware employs a hidden VNC channel to open banking apps, approve permissions, and exfiltrate data without user awareness. Security teams should update Android OS, install reputable security apps, and monitor for unusual background processes to mitigate the threat.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/arcticrat-android-malware/",
+    "publishedAt": "2026-11-13T07:51:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arcticrat-hijacks-android-phones-via-hidden-vnc",
+      "article-e9d01b0b",
+      "e9d01b0b",
+      "arcticrat-hijacks-android-phones-via-hidden-vnc-7fe43b"
+    ]
+  },
+  {
+    "slug": "check-point-gateways-destroyed-via-php2shell-explo-501ed4bb",
+    "title": "Check Point Gateways Destroyed via PHP2Shell Exploit",
+    "summary": "Attackers used PHP2Shell vulnerabilities to compromise Check Point Security Gateways and gain initial access. They then leveraged CVE-2026-123039, a local privilege escalation flaw in Gaia OS, to obtain root privileges and cause destructive damage. Check Point released patches for PHP2Shell and recommends applying the Gaia OS update to eliminate the escalation vector.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
+    "publishedAt": "2026-11-13T07:39:04.000Z",
+    "cves": [
+      "CVE-2026-123039"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-gateways-destroyed-via-php2shell-explo",
+      "article-501ed4bb",
+      "501ed4bb",
+      "check-point-gateways-destroyed-via-php2shell-explo-2c4b60",
+      "check-point-gateways-destroyed-via-php2shell-exploit"
+    ]
+  },
+  {
+    "slug": "n-central-zero-day-enables-remote-root-execution-ddc58ca6",
+    "title": "N-central Zero-Day Enables Remote Root Execution",
+    "summary": "A newly disclosed N-central zero‑day, named 4EverAble2Shell, permits remote, unauthenticated attackers to execute code with root privileges. The vulnerability exploits a flaw in the N-central management console that bypasses authentication checks, enabling full system compromise. Vendor has released a patch; administrators should apply the update immediately and disable remote console access until remediation.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
+    "publishedAt": "2026-11-13T07:20:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "n-central-zero-day-enables-remote-root-execution",
+      "article-ddc58ca6",
+      "ddc58ca6",
+      "n-central-zero-day-enables-remote-root-execution-1f0112"
+    ]
+  },
+  {
+    "slug": "openai-unveils-ai-tools-for-pen-testing-and-remedi-a9b87e51",
+    "title": "OpenAI Unveils AI Tools for Pen Testing and Remediation",
+    "summary": "OpenAI introduced Daybreak Red Team and Daybreak Defense Factory, AI‑driven tools that automate web application penetration testing and vulnerability remediation. The platform links automated testing with remediation workflows while requiring human approval for code changes, aiming to reduce manual effort. Organizations should integrate the Daybreak suite into CI/CD pipelines and monitor for false positives, as the tools are in release.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/openai-two-ai-cybersecurity-tools/",
+    "publishedAt": "2026-11-13T07:16:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-unveils-ai-tools-for-pen-testing-and-remedi",
+      "article-a9b87e51",
+      "a9b87e51",
+      "openai-unveils-ai-tools-for-pen-testing-and-remedi-1a4590",
+      "openai-unveils-ai-tools-for-pen-testing-and-remediation"
+    ]
+  },
+  {
     "slug": "hackers-exploit-check-point-firewall-flaws-to-gain-4cee6a87",
     "title": "Hackers Exploit Check Point Firewall Flaws to Gain Root Access and Deploy Wiper Malware on VMware ESXi",
     "summary": "Hackers have chained Check Point firewall vulnerabilities to gain root access, plant backdoors, and deploy destructive malware on a VMware ESXi host. Check Point confirmed that attackers exploited the privilege escalation flaw against a couple of dozen customers.",
@@ -27,6 +160,24 @@ export const news: NewsBrief[] = [
       "4cee6a87",
       "hackers-exploit-check-point-firewall-flaws-to-gain-193824",
       "hackers-exploit-check-point-firewall-flaws-to-gain-root-acce"
+    ]
+  },
+  {
+    "slug": "north-korea-uses-stolen-webcam-clips-for-400m-scam-f4f1bd5f",
+    "title": "North Korea Uses Stolen Webcam Clips for $400M Scam",
+    "summary": "North Korean state hackers stole over 900 webcam recordings to fuel a $400 million cryptocurrency fraud scheme called FaceStealer. They embed victim footage into fake Zoom and Teams calls, recording targets before redirecting them to malicious sites that siphon funds. The FBI warned crypto and web3 workers; organizations should verify meeting links and monitor for video content to mitigate exploitation.",
+    "category": "Nation State",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/",
+    "publishedAt": "2026-11-13T06:30:30.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "north-korea-uses-stolen-webcam-clips-for-400m-scam",
+      "article-f4f1bd5f",
+      "f4f1bd5f",
+      "north-korea-uses-stolen-webcam-clips-for-400m-scam-64946d"
     ]
   },
   {
@@ -364,6 +515,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "fake-zillow-pages-deliver-netsupport-rat-via-click-32571686",
+    "title": "Fake Zillow Pages Deliver NetSupport RAT via ClickFix Attack",
+    "summary": "Threat actors deploy fake Zillow pages in a ClickFix campaign to compromise Windows users with NetSupport RAT. Deceptive verification prompts copy a malicious PowerShell script onto victim clipboards, social engineering users into executing persistent remote-control malware. According to EfficientIP Research Labs, security administrators should restrict user PowerShell execution rights and block untrusted web execution prompts.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/fake-zillow-clickfix-netsupport-rat/",
+    "publishedAt": "2026-11-12T23:15:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fake-zillow-pages-deliver-netsupport-rat-via-click",
+      "article-32571686",
+      "32571686",
+      "fake-zillow-pages-deliver-netsupport-rat-via-click-5d8862",
+      "fake-zillow-pages-deliver-netsupport-rat-via-clickfix-attack"
+    ]
+  },
+  {
     "slug": "postgresql-security-update-fixes-52-vulnerabilitie-360a9c71",
     "title": "PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14",
     "summary": "The PostgreSQL Global Development Group released PostgreSQL 18.7, 17.12, 16.16, 15.20 and 14.25 on November 12, fixing 52 security vulnerabilities and more than 140 other bugs. Most of those code execution bugs are memory errors or type confusion, where PostgreSQL handles a value as the wrong data type.",
@@ -645,6 +815,25 @@ export const news: NewsBrief[] = [
       "a80cb47d",
       "rhsa-2026-99695-important-glib-networking-security-37d66c",
       "rhsa-2026-99695-important-glib-networking-security-update"
+    ]
+  },
+  {
+    "slug": "defenders-prepare-strategies-against-artex-and-ant-6f314e46",
+    "title": "Defenders Prepare Strategies Against Artex and AntiFox Tools",
+    "summary": "Cybercriminals are increasingly leveraging agentic penetration-testing software, including Artex and AntiFox, to target enterprise environments. These autonomous testing frameworks allow malicious actors to automate compromise paths, significantly increasing the scale and speed of network attacks. Security experts recommend that enterprise defenders immediately establish tailored response plans and defensive mitigations to neutralize automated threat capabilities.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
+    "publishedAt": "2026-11-12T21:18:52.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "defenders-prepare-strategies-against-artex-and-ant",
+      "article-6f314e46",
+      "6f314e46",
+      "defenders-prepare-strategies-against-artex-and-ant-312a19",
+      "defenders-prepare-strategies-against-artex-and-antifox-tools"
     ]
   },
   {
@@ -1309,6 +1498,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-sso-7-6-14-update-for-rhel-7-b589d983",
+    "title": "Red Hat Releases SSO 7.6.14 Update for RHEL 7",
+    "summary": "Red Hat issued a security update for Single Sign‑On 7.6.14 on RHEL 7, addressing multiple vulnerabilities. The advisory labels the update as critical, but the vendor rates the security impact as none and provides CVSS scores via CVE links. Administrators should install the new packages immediately to ensure compatibility, though no immediate exploitation risk is reported.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99764",
+    "publishedAt": "2026-11-12T18:58:56.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-sso-7-6-14-update-for-rhel-7",
+      "article-b589d983",
+      "b589d983",
+      "red-hat-releases-sso-7-6-14-update-for-rhel-7-37d668"
+    ]
+  },
+  {
+    "slug": "red-hat-updates-sso-7-6-14-for-rhel-8-88292ebb",
+    "title": "Red Hat Updates SSO 7.6.14 for RHEL 8",
+    "summary": "Red Hat released a security update for Single Sign‑On 7.6.14 on RHEL 8, fixing several vulnerabilities. The advisory marks the update as critical, yet the vendor reports no security impact and references CVSS scores via CVE links. Systems administrators should apply the new packages promptly, though no active exploitation is documented.",
+    "category": "Vulnerability",
+    "severity": "LOW",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99765",
+    "publishedAt": "2026-11-12T18:58:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-updates-sso-7-6-14-for-rhel-8",
+      "article-88292ebb",
+      "88292ebb",
+      "red-hat-updates-sso-7-6-14-for-rhel-8-37d668"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e",
     "title": "RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update",
     "summary": "A security update is now available for Red Hat Single Sign-On 7.6 from the Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -1495,6 +1720,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99691-moderate-python3-security-update-3fdb0da6",
+    "title": "RHSA-2026:99691: Moderate: python3 security update",
+    "summary": "An update for python3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99691",
+    "publishedAt": "2026-11-12T17:39:42.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99691-moderate-python3-security-update",
+      "article-3fdb0da6",
+      "3fdb0da6",
+      "rhsa-2026-99691-moderate-python3-security-update-37d66c"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99630-important-kernel-security-bug-fix-f04a9622",
     "title": "RHSA-2026:99630: Important: kernel security, bug fix, and enhancement update",
     "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -1547,6 +1790,24 @@ export const news: NewsBrief[] = [
       "article-1d7bc380",
       "1d7bc380",
       "rhsa-2026-99660-important-xfsprogs-security-update-37d66c"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99707-important-libpcap-security-update-92b4230f",
+    "title": "RHSA-2026:99707: Important: libpcap security update",
+    "summary": "An update for libpcap is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99707",
+    "publishedAt": "2026-11-12T17:18:36.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99707-important-libpcap-security-update",
+      "article-92b4230f",
+      "92b4230f",
+      "rhsa-2026-99707-important-libpcap-security-update-37d669"
     ]
   },
   {
@@ -2554,6 +2815,25 @@ export const news: NewsBrief[] = [
       "4a39446f",
       "google-cloud-warns-three-amd-turin-cpu-flaws-could-2556d8",
       "google-cloud-warns-three-amd-turin-cpu-flaws-could-leak-data"
+    ]
+  },
+  {
+    "slug": "police-use-webloc-to-track-smartphones-via-app-dat-dc40be45",
+    "title": "Police Use Webloc to Track Smartphones via App Data",
+    "summary": "Penlink’s Webloc app harvests location data from weather, gaming, email, and religious apps on smartphones, police map movements. The tool aggregates billions of points, reconstructing a trajectory over the past year and delivering near real‑time updates, exposing privacy without consent. No vendor patch is required; law enforcement should enforce data‑handling policies and consider opt‑in mechanisms to mitigate privacy risks.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html",
+    "publishedAt": "2026-11-12T12:02:58.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "police-use-webloc-to-track-smartphones-via-app-dat",
+      "article-dc40be45",
+      "dc40be45",
+      "police-use-webloc-to-track-smartphones-via-app-dat-d477ac",
+      "police-use-webloc-to-track-smartphones-via-app-data"
     ]
   },
   {
@@ -5521,6 +5801,69 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "microsoft-publishes-informational-update-on-cve-20-7bf468e2",
+    "title": "Microsoft Publishes Informational Update on CVE-2026-118746",
+    "summary": "Microsoft released an update addressing CVE-2026-118746, a .NET security feature bypass vulnerability that could allow attackers to circumvent authentication checks. The flaw originates from improper validation of security tokens, potentially enabling unauthorized code execution if exploited, though no active exploitation has been reported. A patch is available in the .NET update; administrators should apply it immediately to mitigate risk.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118746",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118746"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-publishes-informational-update-on-cve-20",
+      "article-7bf468e2",
+      "7bf468e2",
+      "microsoft-publishes-informational-update-on-cve-20-1fe90c",
+      "microsoft-publishes-informational-update-on-cve-2026-118746"
+    ]
+  },
+  {
+    "slug": "microsoft-issues-informational-update-on-cve-2026-dab543b0",
+    "title": "Microsoft Issues Informational Update on CVE-2026-118747",
+    "summary": "Microsoft released an update addressing CVE-2026-118747, a .NET denial‑of‑service vulnerability that could cause application crashes by exhausting resources. The flaw stems from unbounded memory allocation during request processing, potentially leading to service disruption if triggered, though no active exploitation has been reported. A patch is available in the .NET update; administrators should apply it promptly to prevent outages.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118747",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118747"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-issues-informational-update-on-cve-2026",
+      "article-dab543b0",
+      "dab543b0",
+      "microsoft-issues-informational-update-on-cve-2026-1fe90c",
+      "microsoft-issues-informational-update-on-cve-2026-118747"
+    ]
+  },
+  {
+    "slug": "microsoft-updates-guidance-for-asp-net-core-dos-fl-f69a0c33",
+    "title": "Microsoft Updates Guidance for ASP.NET Core DoS Flaw",
+    "summary": "Microsoft updated security guidance regarding CVE-2026-118748, a denial of service vulnerability affecting ASP.NET Core applications. The security flaw exposes targeted ASP.NET Core deployments to potential denial of service conditions, though recent documentation modifications represent informational updates only. Security teams managing affected ASP.NET Core frameworks should review the revised Microsoft security update links to ensure proper mitigation deployment.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118748",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118748"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-updates-guidance-for-asp-net-core-dos-fl",
+      "article-f69a0c33",
+      "f69a0c33",
+      "microsoft-updates-guidance-for-asp-net-core-dos-fl-1fe90c",
+      "microsoft-updates-guidance-for-asp-net-core-dos-flaw"
     ]
   },
   {
@@ -9207,340 +9550,6 @@ export const news: NewsBrief[] = [
       "article-27a52e13",
       "27a52e13",
       "red-hat-issues-update-for-mod-auth-openidc-37d74d"
-    ]
-  },
-  {
-    "slug": "cisco-ise-authorization-bypass-flaws-exposed-80fd12f9",
-    "title": "Cisco ISE Authorization Bypass Flaws Exposed",
-    "summary": "Cisco ISE and ISE‑PIC contain web‑interface authorization bypass flaws that let authenticated remote attackers modify configuration. The flaw arises from missing server‑side validation of Administrator permissions, enabling crafted HTTP requests to alter file descriptions; exploitation requires valid admin credentials. Cisco has issued patches that address these vulnerabilities, and no workarounds exist; security teams should apply them promptly.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cisco PSIRT",
-    "sourceUrl": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-auth-bypass-1-MxcTNgwx?vs_f=Cisco+Security+Advisory%26vs_cat%3DSecurity+Intelligence%26vs_type%3DRSS%26vs_p%3DCisco+Identity+Services+Engine+Authorization+Bypass+Vulnerabilities%26vs_k%3D1",
-    "publishedAt": "2026-11-10T22:37:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cisco-ise-authorization-bypass-flaws-exposed",
-      "article-80fd12f9",
-      "80fd12f9",
-      "cisco-ise-authorization-bypass-flaws-exposed-577da1"
-    ]
-  },
-  {
-    "slug": "python-jwcrypto-update-addresses-moderate-security-40f8f9fd",
-    "title": "Python-jwcrypto Update Addresses Moderate Security Issue",
-    "summary": "Red Hat released a security update for python‑jwcrypto on RHEL 9, addressing a moderate‑impact vulnerability identified by the product security team. The update mitigates potential misuse of the cryptographic library, though no public exploit or CVE identifier is disclosed. Customers should apply the RHSA‑2026:97858 update immediately to ensure cryptographic integrity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97858",
-    "publishedAt": "2026-11-10T22:36:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "python-jwcrypto-update-addresses-moderate-security",
-      "article-40f8f9fd",
-      "40f8f9fd",
-      "python-jwcrypto-update-addresses-moderate-security-37d74e",
-      "python-jwcrypto-update-addresses-moderate-security-issue"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97855-important-nodejs-26-security-updat-f0c45be3",
-    "title": "RHSA-2026:97855: Important: nodejs:26 security update",
-    "summary": "An update for the nodejs:26 module is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97855",
-    "publishedAt": "2026-11-10T22:35:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97855-important-nodejs-26-security-updat",
-      "article-f0c45be3",
-      "f0c45be3",
-      "rhsa-2026-97855-important-nodejs-26-security-updat-37d74e",
-      "rhsa-2026-97855-important-nodejs-26-security-update"
-    ]
-  },
-  {
-    "slug": "delve-update-fixes-important-security-bug-1aa4724a",
-    "title": "Delve Update Fixes Important Security Bug",
-    "summary": "Red Hat issued an important security update for the delve tool on RHEL 9, addressing a critical bug that could affect system integrity. The advisory notes that the flaw may allow unauthorized access to privileged data, though no public exploit is reported. Users should install RHSA‑2026:97877 immediately to prevent potential privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97877",
-    "publishedAt": "2026-11-10T22:32:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "delve-update-fixes-important-security-bug",
-      "article-1aa4724a",
-      "1aa4724a",
-      "delve-update-fixes-important-security-bug-37d74d"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-rust-sequoia-sq-security-update-d6f979ee",
-    "title": "Red Hat Releases Rust-Sequoia-Sq Security Update",
-    "summary": "Red Hat issued a security update for the rust‑sequoia‑sq library used in Red Hat Enterprise Linux 9, addressing a flaw that could allow attackers to compromise system integrity. The vulnerability arises from improper handling of cryptographic parameters, potentially enabling unauthorized code execution or privilege escalation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97868",
-    "publishedAt": "2026-11-10T22:31:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-rust-sequoia-sq-security-update",
-      "article-d6f979ee",
-      "d6f979ee",
-      "red-hat-releases-rust-sequoia-sq-security-update-37d74d"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-patch-for-actively-exploited-ou-c9129445",
-    "title": "Microsoft Releases Patch for Actively Exploited Outlook Zero-Day",
-    "summary": "Microsoft released a patch for an actively exploited Outlook zero‑day affecting Microsoft Outlook. The flaw enabled remote code execution via crafted email attachments, allowing attackers to run arbitrary code on vulnerable clients. Microsoft issued an out‑of‑band update; administrators should apply the patch promptly and monitor for anomalous outbound traffic immediately.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
-    "publishedAt": "2026-11-10T22:26:51.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-patch-for-actively-exploited-ou",
-      "article-c9129445",
-      "c9129445",
-      "microsoft-releases-patch-for-actively-exploited-ou-1fdbae",
-      "microsoft-releases-patch-for-actively-exploited-outlook-zero"
-    ]
-  },
-  {
-    "slug": "railway-breach-generates-740k-in-fraudulent-ai-cha-a3f05e2a",
-    "title": "Railway Breach Generates $740k in Fraudulent AI Charges",
-    "summary": "Cloud hosting provider Railway suffered a breach that exposed customer authentication secrets and enabled fraudulent AI usage. Attackers leveraged infrastructure vulnerabilities to steal credentials for up to 100,000 workspaces, generating approximately $740,000 in unauthorized AI compute charges. Railway has applied security patches, revoked compromised tokens, and notified affected customers to reset credentials and monitor usage.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
-    "publishedAt": "2026-11-10T22:20:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "railway-breach-generates-740k-in-fraudulent-ai-cha",
-      "article-a3f05e2a",
-      "a3f05e2a",
-      "railway-breach-generates-740k-in-fraudulent-ai-cha-14e3d2",
-      "railway-breach-generates-740k-in-fraudulent-ai-charges"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-patch-for-1-100-windows-vulnera-82dba596",
-    "title": "Microsoft Releases Patch for 1,100 Windows Vulnerabilities",
-    "summary": "Microsoft issued a Patch Tuesday update that addresses nearly 1,100 security vulnerabilities across its Windows operating systems and supported software. The release includes 63 critical fixes, among them a zero‑day in Microsoft Outlook, and aligns with concurrent updates from Adobe, Apple, Google, and Mozilla. Security teams should apply the patches promptly to mitigate the identified weaknesses and maintain system integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-    "publishedAt": "2026-11-10T21:55:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-patch-for-1-100-windows-vulnera",
-      "article-82dba596",
-      "82dba596",
-      "microsoft-releases-patch-for-1-100-windows-vulnera-35e7ae",
-      "microsoft-releases-patch-for-1-100-windows-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "us-soldier-arrested-in-uk-for-alleged-russian-espi-a12ae7b9",
-    "title": "US Soldier Arrested in UK for Alleged Russian Espionage",
-    "summary": "A U.S. Army member was arrested by British counterterrorism police in cooperation with U.S. authorities including the FBI and military. The arrest relates to allegations of spying for Russia. The Metropolitan Police confirmed the coordinated investigation. This case highlights ongoing international efforts to counter foreign intelligence operations conducted by service members.",
-    "category": "Nation State",
-    "severity": "MEDIUM",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/us-army-member-arrested-in-uk-spying-for-russia",
-    "publishedAt": "2026-11-10T21:13:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "us-soldier-arrested-in-uk-for-alleged-russian-espi",
-      "article-a12ae7b9",
-      "a12ae7b9",
-      "us-soldier-arrested-in-uk-for-alleged-russian-espi-6a2340",
-      "us-soldier-arrested-in-uk-for-alleged-russian-espionage"
-    ]
-  },
-  {
-    "slug": "artex-forks-enable-rapid-credential-attacks-f642655a",
-    "title": "Artex Forks Enable Rapid Credential Attacks",
-    "summary": "Forks of the open-source Artex framework and 45 similar pen‑testing tools can execute credential attacks and cloud breaches at machine speed across multiple industries. The tools exploit weak authentication and misconfigured cloud services, allowing attackers to harvest credentials and compromise cloud resources without user interaction. Security teams should audit cloud configurations, enforce multi‑factor authentication, and monitor for anomalous credential‑exfiltration activity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
-    "publishedAt": "2026-11-10T21:01:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "artex-forks-enable-rapid-credential-attacks",
-      "article-f642655a",
-      "f642655a",
-      "artex-forks-enable-rapid-credential-attacks-f79209"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-tuesday-exceeds-1-000-vulnerabilit-1fd9f3cb",
-    "title": "Microsoft Patch Tuesday Exceeds 1,000 Vulnerabilities",
-    "summary": "Microsoft’s Patch Tuesday released 1,093 fixes, with the most attention on an exploited Outlook vulnerability. The update list exceeded 1,000 bugs for the second consecutive month, reflecting a high volume of security issues. Administrators should review the advisory and apply all relevant patches in a timely manner to maintain system integrity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Record",
-    "sourceUrl": "https://therecord.media/patch-tuesday-microsoft-1000-bugs-again",
-    "publishedAt": "2026-11-10T20:55:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patch-tuesday-exceeds-1-000-vulnerabilit",
-      "article-1fd9f3cb",
-      "1fd9f3cb",
-      "microsoft-patch-tuesday-exceeds-1-000-vulnerabilit-b9c145",
-      "microsoft-patch-tuesday-exceeds-1-000-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "nitori-exposes-37-6m-customer-records-theft-c6603bc7",
-    "title": "Nitori Exposes 37.6M Customer Records Theft",
-    "summary": "Nitori, a major Japanese furniture retailer, discovered attackers accessed a system on its network and may have stolen 37.62 million customer records. The breach exposed personal identifiers, purchase histories, and contact information, though the full scope of compromised data remains unclear. Nitori should conduct a forensic investigation, notify affected customers, and strengthen network segmentation and access controls.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
-    "publishedAt": "2026-11-10T20:54:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "nitori-exposes-37-6m-customer-records-theft",
-      "article-c6603bc7",
-      "c6603bc7",
-      "nitori-exposes-37-6m-customer-records-theft-51d305"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97578-important-buildah-security-bug-fix-e44cc762",
-    "title": "RHSA-2026:97578: Important: buildah security, bug fix, and enhancement update",
-    "summary": "An update for buildah is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97578",
-    "publishedAt": "2026-11-10T20:46:17.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97578-important-buildah-security-bug-fix",
-      "article-e44cc762",
-      "e44cc762",
-      "rhsa-2026-97578-important-buildah-security-bug-fix-37d759",
-      "rhsa-2026-97578-important-buildah-security-bug-fix-and-enhan"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97514-important-subscription-manager-coc-f9fd6ec0",
-    "title": "RHSA-2026:97514: Important: subscription-manager-cockpit security update",
-    "summary": "An update for subscription-manager-cockpit is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97514",
-    "publishedAt": "2026-11-10T20:44:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97514-important-subscription-manager-coc",
-      "article-f9fd6ec0",
-      "f9fd6ec0",
-      "rhsa-2026-97514-important-subscription-manager-coc-37d759",
-      "rhsa-2026-97514-important-subscription-manager-cockpit-secur"
-    ]
-  },
-  {
-    "slug": "aurora-adtp-blocks-ransomware-with-ai-in-real-time-6ec26d86",
-    "title": "Aurora ADTP Blocks Ransomware with AI in Real Time",
-    "summary": "Aurora Adaptive Threat Protection (ADTP) employs AI‑powered intent detection to identify ransomware and advanced threats before they reach endpoints. The system analyzes traffic patterns and user behavior, flagging malicious payloads and command‑and‑control communications with high accuracy. Security teams should integrate ADTP into existing SIEM pipelines and enable real‑time alerting to maintain continuous protection.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Arctic Wolf",
-    "sourceUrl": "https://arcticwolf.com/resources/technical-videos/how-aurora-adaptive-threat-protection-detects-and-disrupts-attacks-in-real-time/",
-    "publishedAt": "2026-11-10T20:43:57.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "aurora-adtp-blocks-ransomware-with-ai-in-real-time",
-      "article-6ec26d86",
-      "6ec26d86",
-      "aurora-adtp-blocks-ransomware-with-ai-in-real-time-42e684"
-    ]
-  },
-  {
-    "slug": "f-secure-maps-26-ai-harms-in-consumer-taxonomy-8ac4516e",
-    "title": "F-Secure Maps 26 AI Harms in Consumer Taxonomy",
-    "summary": "F-Secure introduced an AI Harms Taxonomy identifying 26 operational mechanisms that pose risks to consumers interacting with artificial intelligence systems. The framework maps attack vectors moving through AI infrastructure, ranging from misleading chatbot outputs to compromised autonomous software agents. According to F-Secure, the study highlights specific intervention points where defensive controls can mitigate consumer harm across AI deployments.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
-    "publishedAt": "2026-11-10T20:41:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "f-secure-maps-26-ai-harms-in-consumer-taxonomy",
-      "article-8ac4516e",
-      "8ac4516e",
-      "f-secure-maps-26-ai-harms-in-consumer-taxonomy-5eed8f"
-    ]
-  },
-  {
-    "slug": "checkmarx-names-kobi-sivilya-as-chief-information-05842302",
-    "title": "Checkmarx Names Kobi Sivilya as Chief Information Security Officer",
-    "summary": "Application security vendor Checkmarx announced the appointment of Kobi Sivilya as its new Chief Information Security Officer. The executive transition aims to reinforce internal security posture and guide organizational cybersecurity strategy amid AI-driven shifts in software development. Sivilya will oversee enterprise defense operations and risk management frameworks across the vendor's software security product portfolio.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer",
-    "publishedAt": "2026-11-10T20:35:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "checkmarx-names-kobi-sivilya-as-chief-information",
-      "article-05842302",
-      "05842302",
-      "checkmarx-names-kobi-sivilya-as-chief-information-400d05",
-      "checkmarx-names-kobi-sivilya-as-chief-information-security-o"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-low-impact-dhcp-security-update-70f3c8f2",
-    "title": "Red Hat Releases Low‑Impact DHCP Security Update",
-    "summary": "Red Hat Enterprise Linux 9 receives a DHCP security update addressing multiple bugs and enhancements. The advisory rates the update as Low impact, with CVSS scores linked to individual CVE references for detailed severity. Administrators should apply the latest dhcp package via yum or dnf to ensure patched configurations and mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97486",
-    "publishedAt": "2026-11-10T20:32:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-low-impact-dhcp-security-update",
-      "article-70f3c8f2",
-      "70f3c8f2",
-      "red-hat-releases-low-impact-dhcp-security-update-37d75c"
     ]
   }
 ];

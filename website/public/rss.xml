@@ -5,8 +5,71 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 07:48:01 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:49:32 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Microsoft 365 Global Outage Affects Outlook, Teams</title>
+      <link>https://secubuzz.com/news/microsoft-365-global-outage-affects-outlook-teams-b9dd6a76</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-365-global-outage-affects-outlook-teams-b9dd6a76</guid>
+      <description><![CDATA[A worldwide outage of Microsoft 365 services, including Outlook, SharePoint, and Teams, has disrupted operations for numerous organizations. The incident, caused by an internal infrastructure failure, led to prolonged service unavailability across multiple regions, impacting email, collaboration, and cloud storage. Microsoft is working to restore services and has advised users to monitor status updates for resolution timelines.]]></description>
+      <pubDate>Fri, 13 Nov 2026 08:35:18 GMT</pubDate>
+      <source url="https://www.malwarebytes.com/blog/news/2026/11/worldwide-microsoft-365-outage-disrupts-outlook-sharepoint-teams-and-more">Malwarebytes Labs</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Police Arrest 354 Dark Web Cybercrime Suspects</title>
+      <link>https://secubuzz.com/news/police-arrest-354-dark-web-cybercrime-suspects-07e6a2d5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/police-arrest-354-dark-web-cybercrime-suspects-07e6a2d5</guid>
+      <description><![CDATA[Police forces worldwide arrested 354 suspects in a joint operation targeting vendors and buyers on dark‑web marketplaces such as Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom. The crackdown, coordinated by international law‑enforcement agencies, aimed to dismantle illicit cybercrime networks facilitating malware distribution and financial fraud. Authorities are proceeding with prosecutions and asset seizures to disrupt future operations.]]></description>
+      <pubDate>Fri, 13 Nov 2026 08:34:20 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Check Point Gateways Targeted via PHP2Shell and Privilege Escalation</title>
+      <link>https://secubuzz.com/news/check-point-gateways-targeted-via-php2shell-and-pr-f6aa0340</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/check-point-gateways-targeted-via-php2shell-and-pr-f6aa0340</guid>
+      <description><![CDATA[Hackers exploited PHP2Shell vulnerabilities in unpatched Check Point Security Gateways to gain initial access to Israeli organizations. The attackers then leveraged the previously reported local privilege escalation flaw CVE-2026-123039 in Gaia OS to deploy the TSGA backdoor and delete ESXi files. Check Point has issued a patch for PHP2Shell and recommends updating Gaia OS firmware to mitigate the escalation vector.]]></description>
+      <pubDate>Fri, 13 Nov 2026 08:05:49 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>ArcticRAT Hijacks Android Phones via Hidden VNC</title>
+      <link>https://secubuzz.com/news/arcticrat-hijacks-android-phones-via-hidden-vnc-e9d01b0b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arcticrat-hijacks-android-phones-via-hidden-vnc-e9d01b0b</guid>
+      <description><![CDATA[ArcticRAT, a new Android remote access trojan, captures full device control while displaying a black screen to the user. The malware employs a hidden VNC channel to open banking apps, approve permissions, and exfiltrate data without user awareness. Security teams should update Android OS, install reputable security apps, and monitor for unusual background processes to mitigate the threat.]]></description>
+      <pubDate>Fri, 13 Nov 2026 07:51:50 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/arcticrat-android-malware/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
+    <item>
+      <title>Check Point Gateways Destroyed via PHP2Shell Exploit</title>
+      <link>https://secubuzz.com/news/check-point-gateways-destroyed-via-php2shell-explo-501ed4bb</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/check-point-gateways-destroyed-via-php2shell-explo-501ed4bb</guid>
+      <description><![CDATA[Attackers used PHP2Shell vulnerabilities to compromise Check Point Security Gateways and gain initial access. They then leveraged CVE-2026-123039, a local privilege escalation flaw in Gaia OS, to obtain root privileges and cause destructive damage. Check Point released patches for PHP2Shell and recommends applying the Gaia OS update to eliminate the escalation vector.]]></description>
+      <pubDate>Fri, 13 Nov 2026 07:39:04 GMT</pubDate>
+      <source url="https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/">SecurityWeek</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>N-central Zero-Day Enables Remote Root Execution</title>
+      <link>https://secubuzz.com/news/n-central-zero-day-enables-remote-root-execution-ddc58ca6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/n-central-zero-day-enables-remote-root-execution-ddc58ca6</guid>
+      <description><![CDATA[A newly disclosed N-central zero‑day, named 4EverAble2Shell, permits remote, unauthenticated attackers to execute code with root privileges. The vulnerability exploits a flaw in the N-central management console that bypasses authentication checks, enabling full system compromise. Vendor has released a patch; administrators should apply the update immediately and disable remote console access until remediation.]]></description>
+      <pubDate>Fri, 13 Nov 2026 07:20:50 GMT</pubDate>
+      <source url="https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/">SecurityWeek</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>OpenAI Unveils AI Tools for Pen Testing and Remediation</title>
+      <link>https://secubuzz.com/news/openai-unveils-ai-tools-for-pen-testing-and-remedi-a9b87e51</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/openai-unveils-ai-tools-for-pen-testing-and-remedi-a9b87e51</guid>
+      <description><![CDATA[OpenAI introduced Daybreak Red Team and Daybreak Defense Factory, AI‑driven tools that automate web application penetration testing and vulnerability remediation. The platform links automated testing with remediation workflows while requiring human approval for code changes, aiming to reduce manual effort. Organizations should integrate the Daybreak suite into CI/CD pipelines and monitor for false positives, as the tools are in release.]]></description>
+      <pubDate>Fri, 13 Nov 2026 07:16:36 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/openai-two-ai-cybersecurity-tools/">Cyber Security News</source>
+      <category>General</category>
+    </item>
     <item>
       <title>Hackers Exploit Check Point Firewall Flaws to Gain Root Access and Deploy Wiper Malware on VMware ESXi</title>
       <link>https://secubuzz.com/news/hackers-exploit-check-point-firewall-flaws-to-gain-4cee6a87</link>
@@ -15,6 +78,15 @@
       <pubDate>Fri, 13 Nov 2026 06:38:59 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-exploit-check-point-firewall-flaws/">Cyber Security News</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>North Korea Uses Stolen Webcam Clips for $400M Scam</title>
+      <link>https://secubuzz.com/news/north-korea-uses-stolen-webcam-clips-for-400m-scam-f4f1bd5f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/north-korea-uses-stolen-webcam-clips-for-400m-scam-f4f1bd5f</guid>
+      <description><![CDATA[North Korean state hackers stole over 900 webcam recordings to fuel a $400 million cryptocurrency fraud scheme called FaceStealer. They embed victim footage into fake Zoom and Teams calls, recording targets before redirecting them to malicious sites that siphon funds. The FBI warned crypto and web3 workers; organizations should verify meeting links and monitor for video content to mitigate exploitation.]]></description>
+      <pubDate>Fri, 13 Nov 2026 06:30:30 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/fbi-north-korean-fake-zoom-calls/">Help Net Security</source>
+      <category>Nation State</category>
     </item>
     <item>
       <title>Teams Meeting Scheduler Phishing Yields Valid Session Token</title>
@@ -179,6 +251,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Fake Zillow Pages Deliver NetSupport RAT via ClickFix Attack</title>
+      <link>https://secubuzz.com/news/fake-zillow-pages-deliver-netsupport-rat-via-click-32571686</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/fake-zillow-pages-deliver-netsupport-rat-via-click-32571686</guid>
+      <description><![CDATA[Threat actors deploy fake Zillow pages in a ClickFix campaign to compromise Windows users with NetSupport RAT. Deceptive verification prompts copy a malicious PowerShell script onto victim clipboards, social engineering users into executing persistent remote-control malware. According to EfficientIP Research Labs, security administrators should restrict user PowerShell execution rights and block untrusted web execution prompts.]]></description>
+      <pubDate>Thu, 12 Nov 2026 23:15:23 GMT</pubDate>
+      <source url="https://www.helpnetsecurity.com/2026/11/13/fake-zillow-clickfix-netsupport-rat/">Help Net Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14</title>
       <link>https://secubuzz.com/news/postgresql-security-update-fixes-52-vulnerabilitie-360a9c71</link>
       <guid isPermaLink="true">https://secubuzz.com/news/postgresql-security-update-fixes-52-vulnerabilitie-360a9c71</guid>
@@ -314,6 +395,15 @@
       <category>Vulnerability</category>
     </item>
     <item>
+      <title>Defenders Prepare Strategies Against Artex and AntiFox Tools</title>
+      <link>https://secubuzz.com/news/defenders-prepare-strategies-against-artex-and-ant-6f314e46</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/defenders-prepare-strategies-against-artex-and-ant-6f314e46</guid>
+      <description><![CDATA[Cybercriminals are increasingly leveraging agentic penetration-testing software, including Artex and AntiFox, to target enterprise environments. These autonomous testing frameworks allow malicious actors to automate compromise paths, significantly increasing the scale and speed of network attacks. Security experts recommend that enterprise defenders immediately establish tailored response plans and defensive mitigations to neutralize automated threat capabilities.]]></description>
+      <pubDate>Thu, 12 Nov 2026 21:18:52 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox">Dark Reading</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper</title>
       <link>https://secubuzz.com/news/cve-2026-126793-privilege-escalation-in-aurora-pos-84682522</link>
       <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-126793-privilege-escalation-in-aurora-pos-84682522</guid>
@@ -366,96 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 20:55:23 GMT</pubDate>
       <source url="https://arcticwolf.com/resources/blog/still-in-the-meeting-bluenoroff-six-months-on/">Arctic Wolf</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>USN-9087-1: signing-party vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9087-1-signing-party-vulnerability-f443fe14</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9087-1-signing-party-vulnerability-f443fe14</guid>
-      <description><![CDATA[It was discovered that the gpg-key2ps tool in signing-party did not properly sanitize user IDs before passing them to a shell. If a user were tricked into processing a specially crafted OpenPGP key, an attacker could possibly use this issue to execute arbitrary commands.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:55:13 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9087-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9086-1: SA-Exim vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9086-1-sa-exim-vulnerability-05de8e34</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9086-1-sa-exim-vulnerability-05de8e34</guid>
-      <description><![CDATA[It was discovered that SA-Exim unsafely evaluated the parameters of its greylisting SpamAssassin rule. An attacker able to write SpamAssassin configuration files or rules could possibly use this issue to execute arbitrary code.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:54:57 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9086-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9085-1: Ruby OpenID vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9085-1-ruby-openid-vulnerability-529ecadc</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9085-1-ruby-openid-vulnerability-529ecadc</guid>
-      <description><![CDATA[It was discovered that Ruby OpenID sent a request to the claimed identifier URL before verifying the signature of an OpenID response. A remote attacker could possibly use this issue to perform server-side request forgery attacks.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:54:47 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9085-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9084-1: Radicale vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9084-1-radicale-vulnerability-f879e9e3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9084-1-radicale-vulnerability-f879e9e3</guid>
-      <description><![CDATA[It was discovered that Radicale did not delay failed authentication attempts when using htpasswd authentication. A remote attacker could possibly use this issue to obtain user passwords through timing or brute-force attacks.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:54:41 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9084-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Gevent server flaw enables HTTP request smuggling</title>
-      <link>https://secubuzz.com/news/gevent-server-flaw-enables-http-request-smuggling-12ae9695</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/gevent-server-flaw-enables-http-request-smuggling-12ae9695</guid>
-      <description><![CDATA[The gevent WSGI server fails to validate chunked transfer encoding trailers, enabling remote attackers to smuggle HTTP requests and potentially elevate privileges. Request smuggling can bypass security controls, leading to unauthorized data access or command execution. Upgrade to the latest gevent version or apply the vendor’s patch, and enforce strict trailer validation.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:54:27 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9083-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>USN-9082-1: pngquant vulnerability</title>
-      <link>https://secubuzz.com/news/usn-9082-1-pngquant-vulnerability-31566bba</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/usn-9082-1-pngquant-vulnerability-31566bba</guid>
-      <description><![CDATA[Choi Jaeseung discovered that pngquant incorrectly handled certain PNG images, leading to a buffer overflow. An attacker could possibly use this issue to cause pngquant to crash or execute arbitrary code.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:53:59 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9082-1">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Red Hat Releases Perl-CGI Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-releases-perl-cgi-security-update-f16d5a95</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-releases-perl-cgi-security-update-f16d5a95</guid>
-      <description><![CDATA[Perl-CGI on Red Hat Enterprise Linux 8 is affected by a security flaw prompting an update. Red Hat Product Security rated the issue as Important, with CVSS base scores linked to CVE references. The vendor has released the patch; administrators should install it promptly today to eliminate the vulnerability.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:49:56 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99849">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99845: Important: pki-deps:10.6 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99845-important-pki-deps-10-6-security-b-888e82ef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99845-important-pki-deps-10-6-security-b-888e82ef</guid>
-      <description><![CDATA[An update for the pki-deps:10.6 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On. Red Hat Product Security has rated this update as having a security impact of Important.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:45:52 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99845">Red Hat Security Advisories</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99716: Important: krb5 security, bug fix, and enhancement update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99716-important-krb5-security-bug-fix-an-11f78917</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99716-important-krb5-security-bug-fix-an-11f78917</guid>
-      <description><![CDATA[An update for krb5 is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:43:10 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99716">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>RHSA-2026:99817: Important: xfsprogs security update</title>
-      <link>https://secubuzz.com/news/rhsa-2026-99817-important-xfsprogs-security-update-bca3f800</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/rhsa-2026-99817-important-xfsprogs-security-update-bca3f800</guid>
-      <description><![CDATA[An update for xfsprogs is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:42:46 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99817">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>
