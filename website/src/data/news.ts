@@ -32,6 +32,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "windows-activation-failures-after-november-updates-7409bbcd",
+    "title": "Windows Activation Failures After November Updates",
+    "summary": "Microsoft confirmed that November Patch Tuesday updates trigger Windows activation failures, producing 0x80041008 error codes. The problem originates from a misconfigured activation service component, causing legitimate license checks to fail without compromising security. Affected users should apply the latest cumulative update or contact Microsoft support for a temporary workaround until a permanent fix is issued.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
+    "publishedAt": "2026-11-13T09:36:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "windows-activation-failures-after-november-updates",
+      "article-7409bbcd",
+      "7409bbcd",
+      "windows-activation-failures-after-november-updates-68e693"
+    ]
+  },
+  {
     "slug": "openai-launches-daybreak-ai-for-security-testing-30376842",
     "title": "OpenAI Launches Daybreak AI for Security Testing",
     "summary": "OpenAI launched Daybreak, AI agents that conduct web application penetration testing and vulnerability analysis within the software security lifecycle. Red Team examines source code and runtime context to find attack vectors, while Defense Factory automates patch creation and retesting. Teams can join an early‑access program to integrate Daybreak findings into CI/CD pipelines, speeding vulnerability remediation.",
@@ -47,6 +65,25 @@ export const news: NewsBrief[] = [
       "article-30376842",
       "30376842",
       "openai-launches-daybreak-ai-for-security-testing-73c9c4"
+    ]
+  },
+  {
+    "slug": "openai-launches-daybreak-red-team-and-defense-fact-3afcdcba",
+    "title": "OpenAI Launches Daybreak Red Team and Defense Factory",
+    "summary": "OpenAI introduced the Daybreak Red Team, a set of AI‑driven pentesting tools that target web applications for security assessment. Simultaneously, the Defense Factory component analyzes discovered vulnerabilities and coordinates patch development to mitigate identified risks. Security teams can access these tools through OpenAI’s platform to enhance their web application testing and remediation workflows.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+    "publishedAt": "2026-11-13T09:21:01.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "openai-launches-daybreak-red-team-and-defense-fact",
+      "article-3afcdcba",
+      "3afcdcba",
+      "openai-launches-daybreak-red-team-and-defense-fact-53cd61",
+      "openai-launches-daybreak-red-team-and-defense-factory"
     ]
   },
   {
@@ -1627,6 +1664,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99723-important-dnsmasq-security-update-6c9f2bc5",
+    "title": "RHSA-2026:99723: Important: dnsmasq security update",
+    "summary": "An update for dnsmasq is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99723",
+    "publishedAt": "2026-11-12T18:44:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99723-important-dnsmasq-security-update",
+      "article-6c9f2bc5",
+      "6c9f2bc5",
+      "rhsa-2026-99723-important-dnsmasq-security-update-37d669"
+    ]
+  },
+  {
     "slug": "rhsa-2026-99763-critical-red-hat-single-sign-on-7-9a27c18e",
     "title": "RHSA-2026:99763: Critical: Red Hat Single Sign-On 7.6.14 security update",
     "summary": "A security update is now available for Red Hat Single Sign-On 7.6 from the Customer Portal. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
@@ -1773,6 +1828,25 @@ export const news: NewsBrief[] = [
       "cbba6905",
       "google-releases-chrome-beta-159-for-android-device-4ea3ac",
       "google-releases-chrome-beta-159-for-android-devices"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99697-important-glib-networking-security-8d1d9275",
+    "title": "RHSA-2026:99697: Important: glib-networking security update",
+    "summary": "An update for glib-networking is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99697",
+    "publishedAt": "2026-11-12T17:58:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99697-important-glib-networking-security",
+      "article-8d1d9275",
+      "8d1d9275",
+      "rhsa-2026-99697-important-glib-networking-security-37d66c",
+      "rhsa-2026-99697-important-glib-networking-security-update"
     ]
   },
   {
@@ -5960,6 +6034,46 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "asp-net-core-denial-of-service-cve-2026-118750-9f62cf6e",
+    "title": "ASP.NET Core Denial‑of‑Service CVE‑2026‑118750",
+    "summary": "CVE-2026-118750 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed requests. Microsoft has only published an informational update to the Security Updates table, with no active exploitation reported or patch released. Security teams should monitor Microsoft advisories for a forthcoming fix and apply any future ASP.NET Core updates promptly.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118750",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-118750"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-denial-of-service-cve-2026-118750",
+      "article-9f62cf6e",
+      "9f62cf6e",
+      "asp-net-core-denial-of-service-cve-2026-118750-1fe90c"
+    ]
+  },
+  {
+    "slug": "aspire-information-disclosure-cve-2026-120792-1563d0e7",
+    "title": "Aspire Information Disclosure CVE‑2026‑120792",
+    "summary": "CVE-2026-120792 is an information‑disclosure flaw in the Aspire product that can expose sensitive data through unvalidated input. Microsoft has issued only an informational update to the Security Updates table, with no active exploitation or patch available. Organizations should watch for a future fix and apply any subsequent Aspire updates to mitigate potential data exposure.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120792",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-120792"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aspire-information-disclosure-cve-2026-120792",
+      "article-1563d0e7",
+      "1563d0e7",
+      "aspire-information-disclosure-cve-2026-120792-1fde97"
+    ]
+  },
+  {
     "slug": "cve-2026-118749-asp-net-core-dos-vulnerability-23f19ff0",
     "title": "CVE-2026-118749 ASP.NET Core DoS Vulnerability",
     "summary": "CVE-2026-118749 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed requests. The vulnerability causes resource exhaustion, leading to application crashes without requiring authentication, and is classified as a high‑severity DoS issue. Microsoft has released an informational update; administrators should apply the latest ASP.NET Core patches and monitor traffic for abnormal request patterns.",
@@ -9442,121 +9556,6 @@ export const news: NewsBrief[] = [
       "article-77f2c077",
       "77f2c077",
       "rhsa-2026-98112-important-flatpak-security-update-37d6f4"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98104-critical-python-tornado-security-u-6191568f",
-    "title": "RHSA-2026:98104: Critical: python-tornado security update",
-    "summary": "An update for python-tornado is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support. Red Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98104",
-    "publishedAt": "2026-11-11T01:44:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98104-critical-python-tornado-security-u",
-      "article-6191568f",
-      "6191568f",
-      "rhsa-2026-98104-critical-python-tornado-security-u-37d6f4",
-      "rhsa-2026-98104-critical-python-tornado-security-update"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-95745-critical-openshift-container-platf-51cfd39e",
-    "title": "RHSA-2026:95745: Critical: OpenShift Container Platform 4.13.73 bug fix and security update",
-    "summary": "Red Hat OpenShift Container Platform release 4.13.73 is now available with updates to packages and images that fix several bugs and add enhancements. This release includes a security update for Red Hat OpenShift Container Platform 4.13. Red Hat Product Security has rated this update as having a security impact of Critical.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95745",
-    "publishedAt": "2026-11-11T01:43:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-95745-critical-openshift-container-platf",
-      "article-51cfd39e",
-      "51cfd39e",
-      "rhsa-2026-95745-critical-openshift-container-platf-37d83a",
-      "rhsa-2026-95745-critical-openshift-container-platform-4-13-7"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-tuesday-for-november-2026-snort-ru-db9b6612",
-    "title": "Microsoft Patch Tuesday for November 2026 — Snort rules and prominent vulnerabilities",
-    "summary": "Microsoft has released its monthly security update for November 2026, which includes 1328 vulnerabilities affecting a range of products, including 60 that Microsoft marked as \"critical.\" Out of 60 \"critical\" vulnerabilities, 45 are remote code execution (RCE) vulnerabilities. Prominent fixes include the actively exploited Outlook zero-day CVE-2026-124194.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cisco Talos",
-    "sourceUrl": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/",
-    "publishedAt": "2026-11-11T01:41:17.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patch-tuesday-for-november-2026-snort-ru",
-      "article-db9b6612",
-      "db9b6612",
-      "microsoft-patch-tuesday-for-november-2026-snort-ru-5b5aa2",
-      "microsoft-patch-tuesday-for-november-2026-snort-rules-and-pr"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97873-important-kernel-security-bug-fix-13dc64f8",
-    "title": "RHSA-2026:97873: Important: kernel security, bug fix, and enhancement update",
-    "summary": "An update for kernel is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97873",
-    "publishedAt": "2026-11-11T01:27:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97873-important-kernel-security-bug-fix",
-      "article-13dc64f8",
-      "13dc64f8",
-      "rhsa-2026-97873-important-kernel-security-bug-fix-37d74d",
-      "rhsa-2026-97873-important-kernel-security-bug-fix-and-enhanc"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-python-urllib3-for-enterprise-linu-9ba06051",
-    "title": "Red Hat Updates python‑urllib3 for Enterprise Linux",
-    "summary": "Red Hat released a security update for python‑urllib3 in its Enterprise Linux 10.0 Extended Update Support, addressing a flaw. The vulnerability, rated Important by Red Hat Product Security, could allow attackers to exploit insecure urllib3 handling, leading to remote code execution. Users should apply the update immediately, verify CVE references for severity, and enforce secure coding practices to prevent exploitation.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98096",
-    "publishedAt": "2026-11-11T01:23:08.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-python-urllib3-for-enterprise-linu",
-      "article-9ba06051",
-      "9ba06051",
-      "red-hat-updates-python-urllib3-for-enterprise-linu-37d6f7",
-      "red-hat-updates-python-urllib3-for-enterprise-linux"
-    ]
-  },
-  {
-    "slug": "red-hat-kernel-update-addresses-important-flaws-55412646",
-    "title": "Red Hat Kernel Update Addresses Important Flaws",
-    "summary": "Red Hat released a kernel update for RHEL 9.4 Update Services for SAP Solutions to address critical security issues. The advisory lists kernel vulnerabilities with CVSS scores; no active exploitation is reported, but flaws could enable local privilege escalation or code execution. Red Hat urges immediate application of the update; CVE references and CVSS details are available for further assessment.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98047",
-    "publishedAt": "2026-11-11T00:54:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-kernel-update-addresses-important-flaws",
-      "article-55412646",
-      "55412646",
-      "red-hat-kernel-update-addresses-important-flaws-37d6f7"
     ]
   }
 ];
