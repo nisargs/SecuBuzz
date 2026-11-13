@@ -9,6 +9,12 @@ export interface VendorHealth {
 }
 
 export const VENDOR_STATUS_REGISTRY: Record<string, VendorHealth> = {
+  Azure: {
+    vendor: 'Azure',
+    status: 'OPERATIONAL',
+    summary: 'All Azure cloud regions & services operational',
+    statusUrl: 'https://azure.status.microsoft/en-us/status',
+  },
   Microsoft: {
     vendor: 'Microsoft',
     status: 'OUTAGE',

@@ -58,16 +58,24 @@ export function MyStackSidebar({
 
   useEffect(() => {
     let isMounted = true;
-    fetch('/api/vendor-status')
-      .then((r) => (r.ok ? r.json() : null))
-      .then((data) => {
-        if (data && isMounted) {
-          setLiveRegistry((prev) => ({ ...prev, ...data }));
-        }
-      })
-      .catch(() => {});
+    const fetchStatus = () => {
+      fetch('/api/vendor-status')
+        .then((r) => (r.ok ? r.json() : null))
+        .then((data) => {
+          if (data && isMounted) {
+            setLiveRegistry((prev) => ({ ...prev, ...data }));
+          }
+        })
+        .catch(() => {});
+    };
+
+    fetchStatus();
+    // Re-check vendor status every 3 minutes while page is open
+    const intervalId = setInterval(fetchStatus, 3 * 60 * 1000);
+
     return () => {
       isMounted = false;
+      clearInterval(intervalId);
     };
   }, []);
 

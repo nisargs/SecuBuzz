@@ -59,6 +59,7 @@ const SORTED_VENDORS = [
   'Atlassian',
   'Fortinet',
   'Microsoft',
+  'Azure',
   'Citrix',
   'GitLab',
   'Oracle',

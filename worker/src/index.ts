@@ -399,6 +399,12 @@ export interface VendorHealthTelemetry {
 }
 
 const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
+  Azure: {
+    vendor: 'Azure',
+    status: 'OPERATIONAL',
+    summary: 'All Azure cloud regions & services operational',
+    statusUrl: 'https://azure.status.microsoft/en-us/status',
+  },
   Microsoft: {
     vendor: 'Microsoft',
     status: 'OUTAGE',
@@ -594,6 +600,7 @@ const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
 };
 
 const LIVE_STATUS_SOURCES = [
+  { vendor: 'Azure', type: 'rss', url: 'https://azure.status.microsoft/en-us/status/feed/', statusUrl: 'https://azure.status.microsoft/en-us/status' },
   { vendor: 'Palo Alto Networks', type: 'statuspage', url: 'https://status.paloaltonetworks.com/api/v2/summary.json', statusUrl: 'https://status.paloaltonetworks.com/' },
   { vendor: 'Cloudflare', type: 'statuspage', url: 'https://www.cloudflarestatus.com/api/v2/summary.json', statusUrl: 'https://www.cloudflarestatus.com/' },
   { vendor: 'Check Point', type: 'statuspage', url: 'https://status.checkpoint.com/api/v2/summary.json', statusUrl: 'https://status.checkpoint.com/' },
@@ -642,12 +649,12 @@ async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTe
           });
 
           if (!res.ok) return null;
-          const data: any = await res.json();
 
           let status: 'OPERATIONAL' | 'DEGRADED' | 'OUTAGE' = 'OPERATIONAL';
           let summary = 'All systems operational';
 
           if (src.type === 'statuspage') {
+            const data: any = await res.json();
             const indicator = data.status?.indicator || 'none';
             const incidents = (data.incidents || []).filter((i: any) => i.status !== 'resolved');
             const maintenances = (data.scheduled_maintenances || []).filter((m: any) => m.status === 'in_progress');
@@ -660,6 +667,7 @@ async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTe
               summary = incidents[0]?.name || (maintenances[0] ? `${maintenances[0].name} in progress` : data.status?.description) || 'Service degradation';
             }
           } else if (src.type === 'statushub') {
+            const data: any = await res.json();
             const affected: string[] = [];
             for (const g of (data.groups || [])) {
               for (const s of (g.services || [])) {
@@ -671,6 +679,23 @@ async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTe
             if (affected.length > 0) {
               status = 'DEGRADED';
               summary = `Service performance issues: ${affected.slice(0, 2).join(', ')}`;
+            }
+          } else if (src.type === 'rss') {
+            const xml = await res.text();
+            const items = xml.match(/<item>[\s\S]*?<\/item>/gi) || [];
+            if (items.length > 0) {
+              const firstItem = items[0];
+              const titleMatch = firstItem.match(/<title>([\s\S]*?)<\/title>/i);
+              const incidentTitle = titleMatch ? titleMatch[1].replace(/<!\[CDATA\[|\]\]>/g, '').trim() : 'Active Azure Incident';
+              if (/outage|critical|major/i.test(incidentTitle)) {
+                status = 'OUTAGE';
+              } else {
+                status = 'DEGRADED';
+              }
+              summary = incidentTitle;
+            } else {
+              status = 'OPERATIONAL';
+              summary = 'All Azure cloud regions & services operational';
             }
           }
 

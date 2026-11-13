@@ -30,6 +30,7 @@ const VENDORS_STORAGE_KEY = 'secubuzz_my_stack_vendors_v1';
 const CVES_STORAGE_KEY = 'secubuzz_cve_watchlist_v1';
 
 export const POPULAR_VENDORS = [
+  'Azure',
   'Cisco',
   'Fortinet',
   'Microsoft',
