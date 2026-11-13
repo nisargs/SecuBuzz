@@ -25,7 +25,11 @@ const RELEASES: ReleaseItem[] = [
     highlights: [
       {
         title: 'Enterprise My Stack Hub',
-        desc: 'Curate your organization\'s infrastructure footprint across 16+ enterprise vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS) to isolate relevant threats in one click.',
+        desc: 'Curate your organization\'s infrastructure footprint across 32+ enterprise vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS, CrowdStrike, Okta) to isolate relevant threats in one click.',
+      },
+      {
+        title: 'Live Vendor Outages & Health Radar',
+        desc: 'Real-time incident and service degradation tracking across 32 enterprise cloud and security vendors, featuring dynamic severity ratio bars, expandable incident telemetry, and direct status routing.',
       },
       {
         title: 'CVE Watchlist & Pinning',

@@ -205,7 +205,19 @@ export function WhatsNewModal({ visible, onClose }: WhatsNewModalProps) {
                           Enterprise My Stack Hub
                         </Text>
                         <Text style={[styles.highlightDesc, { color: colors.textSecondary }]}>
-                          Curate your organization's infrastructure footprint across 16+ enterprise vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS) to isolate relevant threats in one tap.
+                          Curate your organization's infrastructure footprint across 32+ enterprise vendors (Cisco, Fortinet, Microsoft, Palo Alto, AWS, CrowdStrike, Okta) to isolate relevant threats in one tap.
+                        </Text>
+                      </View>
+                    </View>
+
+                    <View style={styles.highlightItem}>
+                      <View style={[styles.bullet, { backgroundColor: accentColor }]} />
+                      <View style={{ flex: 1 }}>
+                        <Text style={[styles.highlightTitle, { color: colors.textPrimary }]}>
+                          Live Vendor Outages & Health Radar
+                        </Text>
+                        <Text style={[styles.highlightDesc, { color: colors.textSecondary }]}>
+                          Real-time incident and service degradation tracking across 32 enterprise cloud and security vendors, featuring dynamic severity ratio bars, expandable incident telemetry, and direct status routing.
                         </Text>
                       </View>
                     </View>

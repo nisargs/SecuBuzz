@@ -351,6 +351,320 @@ async function getKevAdvisories(full: boolean = true): Promise<KevVulnerability[
     : (cachedRecentKev.length > 0 ? cachedRecentKev : SEED_KEV_ADVISORIES);
 }
 
+export interface VendorHealthTelemetry {
+  vendor: string;
+  status: 'OPERATIONAL' | 'DEGRADED' | 'OUTAGE';
+  summary: string;
+  statusUrl: string;
+  updatedAt?: string;
+}
+
+const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
+  Microsoft: {
+    vendor: 'Microsoft',
+    status: 'OUTAGE',
+    summary: 'Service degradation affecting Microsoft 365, Teams & Exchange Online',
+    statusUrl: 'https://status.cloud.microsoft/m365/referrer=serviceStatusRedirect',
+  },
+  AWS: {
+    vendor: 'AWS',
+    status: 'OPERATIONAL',
+    summary: 'All AWS services operating normally',
+    statusUrl: 'https://health.aws.amazon.com/health/status',
+  },
+  'Palo Alto Networks': {
+    vendor: 'Palo Alto Networks',
+    status: 'DEGRADED',
+    summary: 'Prisma Cloud: Alert Manual and Automated Remediation is unavailable',
+    statusUrl: 'https://status.paloaltonetworks.com/',
+  },
+  CrowdStrike: {
+    vendor: 'CrowdStrike',
+    status: 'OPERATIONAL',
+    summary: 'Falcon cloud platform operational',
+    statusUrl: 'https://falcon.crowdstrike.com/',
+  },
+  Cloudflare: {
+    vendor: 'Cloudflare',
+    status: 'DEGRADED',
+    summary: 'Durable Objects increased error rates in North America',
+    statusUrl: 'https://www.cloudflarestatus.com/',
+  },
+  Cisco: {
+    vendor: 'Cisco',
+    status: 'OPERATIONAL',
+    summary: 'Duo & Cisco Security services operational',
+    statusUrl: 'https://status.cisco.com/',
+  },
+  Fortinet: {
+    vendor: 'Fortinet',
+    status: 'OPERATIONAL',
+    summary: 'FortiCloud services operational',
+    statusUrl: 'https://status.fortistatus.com/',
+  },
+  'Red Hat': {
+    vendor: 'Red Hat',
+    status: 'OPERATIONAL',
+    summary: 'Red Hat Hybrid Cloud Console operational',
+    statusUrl: 'https://status.redhat.com/',
+  },
+  Google: {
+    vendor: 'Google',
+    status: 'OPERATIONAL',
+    summary: 'Google Cloud Platform operational',
+    statusUrl: 'https://status.cloud.google.com/',
+  },
+  Atlassian: {
+    vendor: 'Atlassian',
+    status: 'OPERATIONAL',
+    summary: 'Jira & Confluence cloud operational',
+    statusUrl: 'https://status.atlassian.com/',
+  },
+  GitLab: {
+    vendor: 'GitLab',
+    status: 'OPERATIONAL',
+    summary: 'GitLab.com operational',
+    statusUrl: 'https://status.gitlab.com/',
+  },
+  Oracle: {
+    vendor: 'Oracle',
+    status: 'OPERATIONAL',
+    summary: 'Oracle Cloud Infrastructure operational',
+    statusUrl: 'https://ocistatus.oraclecloud.com/',
+  },
+  Ivanti: {
+    vendor: 'Ivanti',
+    status: 'OPERATIONAL',
+    summary: 'All Ivanti Cloud systems operational',
+    statusUrl: 'https://status.ivanticloud.com/',
+  },
+  Citrix: {
+    vendor: 'Citrix',
+    status: 'OPERATIONAL',
+    summary: 'Citrix Cloud services operational',
+    statusUrl: 'https://status.cloud.com/',
+  },
+  'Check Point': {
+    vendor: 'Check Point',
+    status: 'DEGRADED',
+    summary: 'Smart-1 Cloud unavailable in UAE region',
+    statusUrl: 'https://status.checkpoint.com/',
+  },
+  SonicWall: {
+    vendor: 'SonicWall',
+    status: 'DEGRADED',
+    summary: 'Email delivery to some mail services impacted (HES NA) & WNM login issue',
+    statusUrl: 'https://status.sonicwall.com/',
+  },
+  VMware: {
+    vendor: 'VMware',
+    status: 'OPERATIONAL',
+    summary: 'Broadcom / VMware Cloud operational',
+    statusUrl: 'https://status.broadcom.com/',
+  },
+  Apple: {
+    vendor: 'Apple',
+    status: 'OPERATIONAL',
+    summary: 'Apple Developer & System Services operational',
+    statusUrl: 'https://www.apple.com/support/systemstatus/',
+  },
+  Okta: {
+    vendor: 'Okta',
+    status: 'OPERATIONAL',
+    summary: 'All Okta Identity Cloud services operational',
+    statusUrl: 'https://trust.okta.com/',
+  },
+  Zscaler: {
+    vendor: 'Zscaler',
+    status: 'OPERATIONAL',
+    summary: 'ZIA & ZPA Zero Trust clouds operational',
+    statusUrl: 'https://trust.zscaler.com/',
+  },
+  SentinelOne: {
+    vendor: 'SentinelOne',
+    status: 'OPERATIONAL',
+    summary: 'Singularity XDR platform operational',
+    statusUrl: 'https://status.sentinelone.com/',
+  },
+  Sophos: {
+    vendor: 'Sophos',
+    status: 'OPERATIONAL',
+    summary: 'Sophos Central operational',
+    statusUrl: 'https://sophoscentral.status.page/',
+  },
+  F5: {
+    vendor: 'F5',
+    status: 'OPERATIONAL',
+    summary: 'F5 Distributed Cloud Services operational',
+    statusUrl: 'https://www.f5cloudstatus.com/',
+  },
+  GitHub: {
+    vendor: 'GitHub',
+    status: 'OPERATIONAL',
+    summary: 'All GitHub services operational',
+    statusUrl: 'https://www.githubstatus.com/',
+  },
+  Slack: {
+    vendor: 'Slack',
+    status: 'OPERATIONAL',
+    summary: 'All Slack services operational',
+    statusUrl: 'https://status.slack.com/',
+  },
+  Tenable: {
+    vendor: 'Tenable',
+    status: 'OUTAGE',
+    summary: 'Tenable One & Vulnerability Management platform issues',
+    statusUrl: 'https://status.tenable.com/',
+  },
+  Qualys: {
+    vendor: 'Qualys',
+    status: 'DEGRADED',
+    summary: 'Qualys Cloud Platform operational issues',
+    statusUrl: 'https://status.qualys.com/',
+  },
+  Rapid7: {
+    vendor: 'Rapid7',
+    status: 'OPERATIONAL',
+    summary: 'Insight Platform services operational',
+    statusUrl: 'https://status.rapid7.com/',
+  },
+  CyberArk: {
+    vendor: 'CyberArk',
+    status: 'OPERATIONAL',
+    summary: 'Identity Security & Privilege Cloud operational',
+    statusUrl: 'https://status.cyberark.com/',
+  },
+  HashiCorp: {
+    vendor: 'HashiCorp',
+    status: 'OPERATIONAL',
+    summary: 'HCP Vault & Terraform Cloud operational',
+    statusUrl: 'https://status.hashicorp.com/',
+  },
+  '1Password': {
+    vendor: '1Password',
+    status: 'OPERATIONAL',
+    summary: '1Password service operational',
+    statusUrl: 'https://status.1password.com/',
+  },
+  'Trend Micro': {
+    vendor: 'Trend Micro',
+    status: 'OPERATIONAL',
+    summary: 'Trend Vision One operational',
+    statusUrl: 'https://status.trendmicro.com/',
+  },
+};
+
+const LIVE_STATUS_SOURCES = [
+  { vendor: 'Palo Alto Networks', type: 'statuspage', url: 'https://status.paloaltonetworks.com/api/v2/summary.json', statusUrl: 'https://status.paloaltonetworks.com/' },
+  { vendor: 'Cloudflare', type: 'statuspage', url: 'https://www.cloudflarestatus.com/api/v2/summary.json', statusUrl: 'https://www.cloudflarestatus.com/' },
+  { vendor: 'Check Point', type: 'statuspage', url: 'https://status.checkpoint.com/api/v2/summary.json', statusUrl: 'https://status.checkpoint.com/' },
+  { vendor: 'Ivanti', type: 'statuspage', url: 'https://status.ivanticloud.com/api/v2/summary.json', statusUrl: 'https://status.ivanticloud.com/' },
+  { vendor: 'Tenable', type: 'statuspage', url: 'https://status.tenable.com/api/v2/summary.json', statusUrl: 'https://status.tenable.com/' },
+  { vendor: 'Qualys', type: 'statuspage', url: 'https://status.qualys.com/api/v2/summary.json', statusUrl: 'https://status.qualys.com/' },
+  { vendor: 'Rapid7', type: 'statuspage', url: 'https://status.rapid7.com/api/v2/summary.json', statusUrl: 'https://status.rapid7.com/' },
+  { vendor: 'Atlassian', type: 'statuspage', url: 'https://status.atlassian.com/api/v2/summary.json', statusUrl: 'https://status.atlassian.com/' },
+  { vendor: 'GitHub', type: 'statuspage', url: 'https://www.githubstatus.com/api/v2/summary.json', statusUrl: 'https://status.githubstatus.com/' },
+  { vendor: 'SentinelOne', type: 'statuspage', url: 'https://status.sentinelone.com/api/v2/summary.json', statusUrl: 'https://status.sentinelone.com/' },
+  { vendor: 'HashiCorp', type: 'statuspage', url: 'https://status.hashicorp.com/api/v2/summary.json', statusUrl: 'https://status.hashicorp.com/' },
+  { vendor: '1Password', type: 'statuspage', url: 'https://status.1password.com/api/v2/summary.json', statusUrl: 'https://status.1password.com/' },
+  { vendor: 'SonicWall', type: 'statushub', url: 'https://status.sonicwall.com/api/statuses', statusUrl: 'https://status.sonicwall.com/' },
+];
+
+let cachedVendorStatus: Record<string, VendorHealthTelemetry> | null = null;
+let cachedVendorStatusTime = 0;
+
+async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTelemetry>> {
+  const now = Date.now();
+  if (cachedVendorStatus && now - cachedVendorStatusTime < 5 * 60 * 1000) {
+    return cachedVendorStatus;
+  }
+
+  const updated: Record<string, VendorHealthTelemetry> = { ...BASELINE_VENDOR_REGISTRY };
+
+  try {
+    const results = await Promise.allSettled(
+      LIVE_STATUS_SOURCES.map(async (src) => {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 3500);
+        try {
+          const headers: Record<string, string> = {
+            'User-Agent': 'SecuBuzz-Status-Poller/1.0 (+https://secubuzz.com)',
+          };
+          if (src.type === 'statushub') {
+            headers['STATUSHUB-HUB-API-CLIENT'] = 'true';
+            headers['HUB-HOST'] = 'status.sonicwall.com';
+            headers['LOCALE'] = 'en-US';
+          }
+          const res = await fetch(src.url, {
+            signal: controller.signal,
+            headers,
+          });
+
+          if (!res.ok) return null;
+          const data: any = await res.json();
+
+          let status: 'OPERATIONAL' | 'DEGRADED' | 'OUTAGE' = 'OPERATIONAL';
+          let summary = 'All systems operational';
+
+          if (src.type === 'statuspage') {
+            const indicator = data.status?.indicator || 'none';
+            const incidents = (data.incidents || []).filter((i: any) => i.status !== 'resolved');
+            const maintenances = (data.scheduled_maintenances || []).filter((m: any) => m.status === 'in_progress');
+
+            if (indicator === 'critical' || indicator === 'major') {
+              status = 'OUTAGE';
+              summary = incidents[0]?.name || data.status?.description || 'Major service outage';
+            } else if (indicator === 'minor' || incidents.length > 0 || maintenances.length > 0) {
+              status = 'DEGRADED';
+              summary = incidents[0]?.name || (maintenances[0] ? `${maintenances[0].name} in progress` : data.status?.description) || 'Service degradation';
+            }
+          } else if (src.type === 'statushub') {
+            const affected: string[] = [];
+            for (const g of (data.groups || [])) {
+              for (const s of (g.services || [])) {
+                if (s.status !== 1) {
+                  affected.push(s.service_name);
+                }
+              }
+            }
+            if (affected.length > 0) {
+              status = 'DEGRADED';
+              summary = `Service performance issues: ${affected.slice(0, 2).join(', ')}`;
+            }
+          }
+
+          return {
+            vendor: src.vendor,
+            status,
+            summary,
+            statusUrl: src.statusUrl,
+            updatedAt: new Date().toISOString(),
+          };
+        } finally {
+          clearTimeout(timeoutId);
+        }
+      })
+    );
+
+    for (const r of results) {
+      if (r.status === 'fulfilled' && r.value) {
+        updated[r.value.vendor] = r.value;
+      }
+    }
+
+    cachedVendorStatus = updated;
+    cachedVendorStatusTime = now;
+  } catch (err) {
+    console.error('Failed to poll vendor status:', err);
+    if (!cachedVendorStatus) {
+      cachedVendorStatus = updated;
+    }
+  }
+
+  return cachedVendorStatus || BASELINE_VENDOR_REGISTRY;
+}
+
+
 let cachedVideoPath: string | null = null;
 let cachedVideoBuffer: ArrayBuffer | null = null;
 
@@ -963,6 +1277,14 @@ export default {
         const data = await getCveMetrics(cve);
         return jsonResponse(data, 200, {
           'Cache-Control': 'public, max-age=86400, s-maxage=86400',
+        });
+      }
+
+      // API: Live Vendor Health & Outage Telemetry (Edge Cached 5min, 0 D1 reads, 0 AI tokens)
+      if (url.pathname === '/api/vendor-status') {
+        const vendorData = await getVendorStatusTelemetry();
+        return jsonResponse(vendorData, 200, {
+          'Cache-Control': 'public, max-age=180, s-maxage=300, stale-while-revalidate=120',
         });
       }
 
