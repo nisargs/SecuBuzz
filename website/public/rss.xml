@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 21:55:08 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 22:54:22 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>FAA Ground Stop Triggered by Unexplained Communications Disruption</title>
+      <link>https://secubuzz.com/news/faa-ground-stop-triggered-by-unexplained-communica-b99cf554</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/faa-ground-stop-triggered-by-unexplained-communica-b99cf554</guid>
+      <description><![CDATA[A Federal Aviation Administration ground stop was imposed after an unexplained communications disruption, raising concerns of a potential cyberattack. The incident disrupted flight operations nationwide, but officials have not confirmed the cause or identified any exploited vulnerability. Air traffic control systems should monitor for anomalous traffic, apply the latest firmware patches, and enforce strict authentication to mitigate similar disruptions.]]></description>
+      <pubDate>Fri, 13 Nov 2026 21:33:27 GMT</pubDate>
+      <source url="https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/">SecurityWeek</source>
+      <category>General</category>
+    </item>
     <item>
       <title>FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’</title>
       <link>https://secubuzz.com/news/fbi-flash-alert-says-artex-tool-automating-cyberat-213b5384</link>
@@ -17,12 +26,30 @@
       <category>General</category>
     </item>
     <item>
+      <title>SCKit Exploits ScreenConnect for Remote Technician Access</title>
+      <link>https://secubuzz.com/news/sckit-exploits-screenconnect-for-remote-technician-e6c5e832</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/sckit-exploits-screenconnect-for-remote-technician-e6c5e832</guid>
+      <description><![CDATA[SCKit leveraged the legitimate ScreenConnect platform to infiltrate target systems and capture technician sessions. This abuse bypasses standard authentication, enabling attackers to execute commands, exfiltrate data, and maintain persistence. Defenders should enforce least‑privilege access, monitor for anomalous ScreenConnect activity, and deploy Defender XDR hunting rules to detect and block actively.]]></description>
+      <pubDate>Fri, 13 Nov 2026 21:31:44 GMT</pubDate>
+      <source url="https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/">Microsoft Security</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>AI‑Enabled Pentest Platforms Lower Attack Skill Threshold</title>
       <link>https://secubuzz.com/news/ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a</link>
       <guid isPermaLink="true">https://secubuzz.com/news/ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a</guid>
       <description><![CDATA[AI‑enabled pentest and red‑team frameworks automate reconnaissance, vulnerability testing, and follow‑on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.]]></description>
       <pubDate>Fri, 13 Nov 2026 20:57:13 GMT</pubDate>
       <source url="https://blog.talosintelligence.com/artex-and-beyond/">Cisco Talos</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>ArcticRAT Expands to Full Device Control Using AI</title>
+      <link>https://secubuzz.com/news/arcticrat-expands-to-full-device-control-using-ai-3fd9c401</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/arcticrat-expands-to-full-device-control-using-ai-3fd9c401</guid>
+      <description><![CDATA[The Android malware ArcticRAT has broadened its scope from crypto‑currency theft to full device control, enabling attackers to harvest and analyze victim finances. The gang now incorporates AI techniques to profile stolen data, increasing the precision of targeted financial exploitation. Security teams should update Android defenses, monitor for ArcticRAT indicators, and employ AI‑based anomaly detection to mitigate the threat.]]></description>
+      <pubDate>Fri, 13 Nov 2026 20:20:27 GMT</pubDate>
+      <source url="https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai">Dark Reading</source>
       <category>General</category>
     </item>
     <item>
@@ -89,6 +116,24 @@
       <category>General</category>
     </item>
     <item>
+      <title>Check Point Gateways Targeted by PHP2Shell for ESXi Wiper</title>
+      <link>https://secubuzz.com/news/check-point-gateways-targeted-by-php2shell-for-esx-12ca6dd7</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/check-point-gateways-targeted-by-php2shell-for-esx-12ca6dd7</guid>
+      <description><![CDATA[Check Point Security Gateway devices were compromised through PHP2Shell exploits, allowing attackers to deploy a data‑wiping malware on connected VMware ESXi hosts. The vulnerability leverages PHP2Shell’s remote code execution capability, enabling attackers to erase virtual machine data and disrupt services. Check Point has issued a patch; administrators should apply the update immediately and verify gateway integrity.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:21:43 GMT</pubDate>
+      <source url="https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/">BleepingComputer</source>
+      <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Acknowledges Windows SMB RCE CVE-2026-119988</title>
+      <link>https://secubuzz.com/news/microsoft-acknowledges-windows-smb-rce-cve-2026-11-8ce88e42</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-windows-smb-rce-cve-2026-11-8ce88e42</guid>
+      <description><![CDATA[Microsoft has identified CVE-2026-119988 as a Windows SMB remote code execution flaw that could allow attackers to run code malicious SMB traffic. The vulnerability arises from improper handling of SMB protocol messages, and no public exploit or CVSS score has been disclosed. Microsoft issued an informational acknowledgement and urges users to monitor the MSRC for forthcoming patch or mitigation guidance.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108401">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Acknowledges Windows Kernel Transaction Manager Privilege Escalation</title>
       <link>https://secubuzz.com/news/microsoft-acknowledges-windows-kernel-transaction-6483cbda</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-acknowledges-windows-kernel-transaction-6483cbda</guid>
@@ -105,6 +150,15 @@
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109473">Microsoft MSRC</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>TypoPrompting Turns AI Site Typos Into Malware Traps</title>
+      <link>https://secubuzz.com/news/typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5</guid>
+      <description><![CDATA[Researchers discovered TypoPrompting attacks that redirect users typing mistyped AI tool URLs to fake verification pages hosting malware installers. The study mapped 186 lookalike domains across 27 AI brands, including Claude, ChatGPT, and Midjourney, exposing a widespread phishing surface. Defenders should enforce strict URL filtering, educate users on correct domain spelling, and deploy anti‑phishing solutions to mitigate the risk.]]></description>
+      <pubDate>Fri, 13 Nov 2026 15:24:38 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/new-typoprompting-attacks/">Cyber Security News</source>
+      <category>General</category>
     </item>
     <item>
       <title>Hackers Obscure Linux GPU Mining with SANSAR Rootkit</title>
@@ -402,60 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 11:06:29 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/13/europol-dark-web-arrests-cybercrime/">Help Net Security</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>US Seizes $2.7B Stolen from Binance by North Koreans</title>
-      <link>https://secubuzz.com/news/us-seizes-2-7b-stolen-from-binance-by-north-korean-4723292f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/us-seizes-2-7b-stolen-from-binance-by-north-korean-4723292f</guid>
-      <description><![CDATA[The U.S. government froze more than $2.7 billion of cryptocurrency stolen from Binance by North Korean hackers. The FBI reports the theft totaled $6 billion, indicating a large-scale credential compromise and cross‑border money‑laundering activity. Court orders now allow U.S. officials to seize or hold an additional $1.2 billion, tightening enforcement against the perpetrators.]]></description>
-      <pubDate>Fri, 13 Nov 2026 10:56:15 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/us-freezes-2-7-billion/">Cyber Security News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Operation Endgame Seizes Gootloader, CastleRAT, StealC Servers</title>
-      <link>https://secubuzz.com/news/operation-endgame-seizes-gootloader-castlerat-stea-407a3717</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/operation-endgame-seizes-gootloader-castlerat-stea-407a3717</guid>
-      <description><![CDATA[International police forces dismantled servers powering Gootloader, CastleRAT, and StealC malware, halting credential theft and ransomware campaigns. The operation uncovered 6.4 million stolen logins from over 40,000 victims, exposing widespread credential compromise across multiple sectors. Law‑enforcement agencies now hold the compromised credentials, and affected organizations should enforce multi‑factor authentication and reset passwords.]]></description>
-      <pubDate>Fri, 13 Nov 2026 10:55:03 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html">The Hacker News</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>Law Enforcement Seizes Gootloader, CastleRAT, StealC Infrastructure</title>
-      <link>https://secubuzz.com/news/law-enforcement-seizes-gootloader-castlerat-stealc-1eac34c3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/law-enforcement-seizes-gootloader-castlerat-stealc-1eac34c3</guid>
-      <description><![CDATA[Operation Endgame saw law enforcement seize 235 servers and 257 domains linked to the Gootloader, CastleRAT, and StealC malware families. The takedown also recovered 6.4 million victim credentials, exposing a large user base to credential theft and potential phishing campaigns. Security teams should invalidate compromised credentials, monitor for related phishing attempts, and review domain registrations for suspicious activity.]]></description>
-      <pubDate>Fri, 13 Nov 2026 10:48:40 GMT</pubDate>
-      <source url="https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Check Point Releases Hotfix for Exploited Root Privilege Flaw</title>
-      <link>https://secubuzz.com/news/check-point-releases-hotfix-for-exploited-root-pri-286f4805</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/check-point-releases-hotfix-for-exploited-root-pri-286f4805</guid>
-      <description><![CDATA[Check Point Software disclosed a zero‑day vulnerability that attackers have leveraged since late October to gain root privileges on affected devices. The flaw permits unauthenticated remote code execution, enabling persistence and full system control, and has been actively exploited in the wild. Check Point issued emergency hotfixes; security teams should apply the patch immediately and monitor for anomalous activity.]]></description>
-      <pubDate>Fri, 13 Nov 2026 10:44:22 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Ubuntu Releases Kernel Patches for Multiple FIPS Vulnerabilities</title>
-      <link>https://secubuzz.com/news/ubuntu-releases-kernel-patches-for-multiple-fips-v-eb560264</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-releases-kernel-patches-for-multiple-fips-v-eb560264</guid>
-      <description><![CDATA[Ubuntu Security Notices USN-9027-2 addresses five kernel vulnerabilities affecting FIPS‑enabled systems. The flaws, identified as CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432, and CVE-2026-99999, could allow attackers to compromise kernel integrity through privilege escalation or denial of service. Ubuntu recommends applying the kernel update immediately; users should also verify that FIPS mode remains enabled after the upgrade.]]></description>
-      <pubDate>Fri, 13 Nov 2026 10:30:15 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9027-2">Ubuntu Security Notices</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Ubuntu Patches Kernel RMP Check Flaw in NVIDIA Tegra</title>
-      <link>https://secubuzz.com/news/ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-984ce3ef</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ubuntu-patches-kernel-rmp-check-flaw-in-nvidia-teg-984ce3ef</guid>
-      <description><![CDATA[Ubuntu Security Notices USN-9091-1 fixes a kernel flaw that allows local hypervisor attackers to bypass IOMMU Reverse Map Table checks on NVIDIA Tegra systems. The vulnerability, identified as CVE-2023-20585, could lead to out‑of‑bounds memory writes and compromise SEV‑SNP guest integrity if exploited. Ubuntu advises applying the kernel update promptly and verifying that hypervisor isolation remains intact after the patch.]]></description>
-      <pubDate>Fri, 13 Nov 2026 10:18:40 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-9091-1">Ubuntu Security Notices</source>
-      <category>CVE</category>
     </item>
   </channel>
 </rss>

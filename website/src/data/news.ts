@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "faa-ground-stop-triggered-by-unexplained-communica-b99cf554",
+    "title": "FAA Ground Stop Triggered by Unexplained Communications Disruption",
+    "summary": "A Federal Aviation Administration ground stop was imposed after an unexplained communications disruption, raising concerns of a potential cyberattack. The incident disrupted flight operations nationwide, but officials have not confirmed the cause or identified any exploited vulnerability. Air traffic control systems should monitor for anomalous traffic, apply the latest firmware patches, and enforce strict authentication to mitigate similar disruptions.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
+    "publishedAt": "2026-11-13T21:33:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "faa-ground-stop-triggered-by-unexplained-communica",
+      "article-b99cf554",
+      "b99cf554",
+      "faa-ground-stop-triggered-by-unexplained-communica-34ab39",
+      "faa-ground-stop-triggered-by-unexplained-communications-disr"
+    ]
+  },
+  {
     "slug": "fbi-flash-alert-says-artex-tool-automating-cyberat-213b5384",
     "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
     "summary": "Open source hacking tool Artex \"significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours,\" the FBI said.",
@@ -30,6 +49,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "sckit-exploits-screenconnect-for-remote-technician-e6c5e832",
+    "title": "SCKit Exploits ScreenConnect for Remote Technician Access",
+    "summary": "SCKit leveraged the legitimate ScreenConnect platform to infiltrate target systems and capture technician sessions. This abuse bypasses standard authentication, enabling attackers to execute commands, exfiltrate data, and maintain persistence. Defenders should enforce least‑privilege access, monitor for anomalous ScreenConnect activity, and deploy Defender XDR hunting rules to detect and block actively.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "Microsoft Security",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
+    "publishedAt": "2026-11-13T21:31:44.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "sckit-exploits-screenconnect-for-remote-technician",
+      "article-e6c5e832",
+      "e6c5e832",
+      "sckit-exploits-screenconnect-for-remote-technician-5f7ed4",
+      "sckit-exploits-screenconnect-for-remote-technician-access"
+    ]
+  },
+  {
     "slug": "ai-enabled-pentest-platforms-lower-attack-skill-th-0112375a",
     "title": "AI‑Enabled Pentest Platforms Lower Attack Skill Threshold",
     "summary": "AI‑enabled pentest and red‑team frameworks automate reconnaissance, vulnerability testing, and follow‑on actions, reducing the skill required for attackers. These tools chain operations seamlessly, enabling rapid exploitation cycles and accelerating intrusion timelines when misused by threat actors. Security teams should assess the risk of adopting such platforms, enforce strict access controls, and monitor for anomalous usage patterns.",
@@ -46,6 +84,24 @@ export const news: NewsBrief[] = [
       "0112375a",
       "ai-enabled-pentest-platforms-lower-attack-skill-th-46279a",
       "ai-enabled-pentest-platforms-lower-attack-skill-threshold"
+    ]
+  },
+  {
+    "slug": "arcticrat-expands-to-full-device-control-using-ai-3fd9c401",
+    "title": "ArcticRAT Expands to Full Device Control Using AI",
+    "summary": "The Android malware ArcticRAT has broadened its scope from crypto‑currency theft to full device control, enabling attackers to harvest and analyze victim finances. The gang now incorporates AI techniques to profile stolen data, increasing the precision of targeted financial exploitation. Security teams should update Android defenses, monitor for ArcticRAT indicators, and employ AI‑based anomaly detection to mitigate the threat.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
+    "publishedAt": "2026-11-13T20:20:27.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "arcticrat-expands-to-full-device-control-using-ai",
+      "article-3fd9c401",
+      "3fd9c401",
+      "arcticrat-expands-to-full-device-control-using-ai-6c13e7"
     ]
   },
   {
@@ -183,6 +239,52 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "check-point-gateways-targeted-by-php2shell-for-esx-12ca6dd7",
+    "title": "Check Point Gateways Targeted by PHP2Shell for ESXi Wiper",
+    "summary": "Check Point Security Gateway devices were compromised through PHP2Shell exploits, allowing attackers to deploy a data‑wiping malware on connected VMware ESXi hosts. The vulnerability leverages PHP2Shell’s remote code execution capability, enabling attackers to erase virtual machine data and disrupt services. Check Point has issued a patch; administrators should apply the update immediately and verify gateway integrity.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
+    "publishedAt": "2026-11-13T16:21:43.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "check-point-gateways-targeted-by-php2shell-for-esx",
+      "article-12ca6dd7",
+      "12ca6dd7",
+      "check-point-gateways-targeted-by-php2shell-for-esx-276e8a",
+      "check-point-gateways-targeted-by-php2shell-for-esxi-wiper"
+    ]
+  },
+  {
+    "slug": "microsoft-acknowledges-windows-smb-rce-cve-2026-11-8ce88e42",
+    "title": "Microsoft Acknowledges Windows SMB RCE CVE-2026-119988",
+    "summary": "Microsoft has identified CVE-2026-119988 as a Windows SMB remote code execution flaw that could allow attackers to run code malicious SMB traffic. The vulnerability arises from improper handling of SMB protocol messages, and no public exploit or CVSS score has been disclosed. Microsoft issued an informational acknowledgement and urges users to monitor the MSRC for forthcoming patch or mitigation guidance.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-108401",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-119988",
+      "CVE-2026-108401"
+    ],
+    "additionalSources": [
+      {
+        "source": "Microsoft MSRC",
+        "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119988"
+      }
+    ],
+    "aliases": [
+      "microsoft-acknowledges-windows-smb-rce-cve-2026-11",
+      "article-8ce88e42",
+      "8ce88e42",
+      "microsoft-acknowledges-windows-smb-rce-cve-2026-11-1ff730",
+      "microsoft-acknowledges-windows-smb-rce-cve-2026-119988"
+    ]
+  },
+  {
     "slug": "microsoft-acknowledges-windows-kernel-transaction-6483cbda",
     "title": "Microsoft Acknowledges Windows Kernel Transaction Manager Privilege Escalation",
     "summary": "Microsoft acknowledges CVE-2026-94522, an elevation of privilege flaw in the Windows Kernel Transaction Manager. The vulnerability could allow privileged escalation if exploited, but no active exploitation has been reported. Microsoft has issued an informational update; administrators should monitor for official patch releases and apply them when available.",
@@ -222,6 +324,25 @@ export const news: NewsBrief[] = [
       "8547433e",
       "microsoft-acknowledges-windows-kernel-privilege-es-1ff6ba",
       "microsoft-acknowledges-windows-kernel-privilege-escalation-f"
+    ]
+  },
+  {
+    "slug": "typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5",
+    "title": "TypoPrompting Turns AI Site Typos Into Malware Traps",
+    "summary": "Researchers discovered TypoPrompting attacks that redirect users typing mistyped AI tool URLs to fake verification pages hosting malware installers. The study mapped 186 lookalike domains across 27 AI brands, including Claude, ChatGPT, and Midjourney, exposing a widespread phishing surface. Defenders should enforce strict URL filtering, educate users on correct domain spelling, and deploy anti‑phishing solutions to mitigate the risk.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/new-typoprompting-attacks/",
+    "publishedAt": "2026-11-13T15:24:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "typoprompting-turns-ai-site-typos-into-malware-tra",
+      "article-922df6c5",
+      "922df6c5",
+      "typoprompting-turns-ai-site-typos-into-malware-tra-17f84f",
+      "typoprompting-turns-ai-site-typos-into-malware-traps"
     ]
   },
   {
@@ -1208,6 +1329,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "project-zero-urges-faster-patch-timelines-amid-ai-3fc7f02c",
+    "title": "Project Zero Urges Faster Patch Timelines Amid AI Threats",
+    "summary": "Project Zero's 2026 policy update highlights the accelerated threat landscape due to AI-driven vulnerability discovery. The 90+30 day disclosure window is deemed insufficient as LLMs enable rapid exploitation, increasing immediate risk for users. Vendors are urged to shorten remediation timelines and adopt faster patch rollouts to mitigate elevated risks globally.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Project Zero",
+    "sourceUrl": "https://projectzero.google/2026/11/disclosure-policy.html",
+    "publishedAt": "2026-11-13T08:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "project-zero-urges-faster-patch-timelines-amid-ai",
+      "article-3fc7f02c",
+      "3fc7f02c",
+      "project-zero-urges-faster-patch-timelines-amid-ai-53d2e5",
+      "project-zero-urges-faster-patch-timelines-amid-ai-threats"
+    ]
+  },
+  {
     "slug": "arcticrat-hijacks-android-phones-via-hidden-vnc-e9d01b0b",
     "title": "ArcticRAT Hijacks Android Phones via Hidden VNC",
     "summary": "ArcticRAT, a new Android remote access trojan, captures full device control while displaying a black screen to the user. The malware employs a hidden VNC channel to open banking apps, approve permissions, and exfiltrate data without user awareness. Security teams should update Android OS, install reputable security apps, and monitor for unusual background processes to mitigate the threat.",
@@ -1356,6 +1496,84 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "linux-kernel-bpf-race-condition-enables-local-priv-25695018",
+    "title": "Linux Kernel BPF Race Condition Enables Local Privilege Escalation",
+    "summary": "A race condition in the Linux Kernel BPF local storage handling could allow local attackers to elevate privileges on affected systems. The flaw requires attackers to first execute high‑privileged code, and the ZDI assigned a CVSS score of 7.5, indicating high severity. No public exploit has been disclosed; administrators should apply kernel updates or apply vendor patches when available.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1007/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-bpf-race-condition-enables-local-priv",
+      "article-25695018",
+      "25695018",
+      "linux-kernel-bpf-race-condition-enables-local-priv-77f339",
+      "linux-kernel-bpf-race-condition-enables-local-privilege-esca"
+    ]
+  },
+  {
+    "slug": "linux-kernel-skb-zerocopy-flaw-enables-local-privi-4bfc862f",
+    "title": "Linux Kernel skb_zerocopy Flaw Enables Local Privilege Escalation",
+    "summary": "The Linux Kernel skb_zerocopy improper ownership management flaw could allow local attackers to elevate privileges on affected systems. The vulnerability requires attackers to first execute low‑privileged code, and the ZDI assigned a CVSS score of 7.8, with CVE-2026-99284 documented. No public exploit has been disclosed; administrators should apply kernel updates or vendor patches when available.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1006/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-99284"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-skb-zerocopy-flaw-enables-local-privi",
+      "article-4bfc862f",
+      "4bfc862f",
+      "linux-kernel-skb-zerocopy-flaw-enables-local-privi-77f338",
+      "linux-kernel-skb-zerocopy-flaw-enables-local-privilege-escal"
+    ]
+  },
+  {
+    "slug": "linux-kernel-ebpf-race-enables-local-privilege-esc-a84c2135",
+    "title": "Linux Kernel eBPF Race Enables Local Privilege Escalation",
+    "summary": "A race condition in the Linux kernel’s eBPF subsystem allows local attackers to elevate privileges on affected installations. The flaw requires the attacker to first run high‑privileged code, and the ZDI assigns a CVSS score of 7.5, indicating high‑severity impact. No patch has been released; users should monitor vendor advisories for updates.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1005/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-ebpf-race-enables-local-privilege-esc",
+      "article-a84c2135",
+      "a84c2135",
+      "linux-kernel-ebpf-race-enables-local-privilege-esc-77f338",
+      "linux-kernel-ebpf-race-enables-local-privilege-escalation"
+    ]
+  },
+  {
+    "slug": "linux-kernel-ksmbd-flaw-exposes-sensitive-data-rem-0961fd23",
+    "title": "Linux Kernel KSMBD Flaw Exposes Sensitive Data Remotely",
+    "summary": "A newly disclosed flaw in Linux Kernel KSMBD lets remote attackers disclose sensitive information on affected installations. The root cause is use of an uninitialized resource in request buffer handling; no authentication is required, though only systems with ksmbd enabled are exposed, and ZDI assigned CVSS 6.3. Administrators should disable ksmbd where unused and apply vendor kernel updates per ZDI-26-1004.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1004/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "linux-kernel-ksmbd-flaw-exposes-sensitive-data-rem",
+      "article-0961fd23",
+      "0961fd23",
+      "linux-kernel-ksmbd-flaw-exposes-sensitive-data-rem-77f338",
+      "linux-kernel-ksmbd-flaw-exposes-sensitive-data-remotely"
     ]
   },
   {
@@ -9363,218 +9581,6 @@ export const news: NewsBrief[] = [
       "e9efdb40",
       "red-hat-openshift-5-launches-autonomous-hybrid-clo-6ca36f",
       "red-hat-openshift-5-launches-autonomous-hybrid-cloud-trouble"
-    ]
-  },
-  {
-    "slug": "china-linked-hackers-use-fake-chrome-certificate-w-a3941e63",
-    "title": "China-Linked Hackers Use Fake Chrome Certificate Warnings to Infect Victims With Sparrow Backdoor",
-    "summary": "China-linked hackers are turning trusted websites into malware delivery points by displaying fake Google Chrome certificate warnings. The pages urge selected visitors to install a certificate repair utility, but the download instead installs a backdoor that gives attackers remote access to Windows computers.",
-    "category": "General",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/fake-chrome-certificate/",
-    "publishedAt": "2026-11-11T09:24:07.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "china-linked-hackers-use-fake-chrome-certificate-w",
-      "article-a3941e63",
-      "a3941e63",
-      "china-linked-hackers-use-fake-chrome-certificate-w-5dee11",
-      "china-linked-hackers-use-fake-chrome-certificate-warnings-to"
-    ]
-  },
-  {
-    "slug": "xwayland-update-released-for-rhel-9-4-a0a12207",
-    "title": "Xwayland update released for RHEL 9.4",
-    "summary": "Red Hat issued a security update for xorg‑x11‑server‑Xwayland on RHEL 9.4, targeting vulnerabilities that could allow unauthorized access or data exposure. The advisory notes an Important impact rating and references CVSS scores for each flaw, but no CVE identifiers are disclosed. Security teams should apply the update via RHEL 9.4 package manager to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98547",
-    "publishedAt": "2026-11-11T09:19:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xwayland-update-released-for-rhel-9-4",
-      "article-a0a12207",
-      "a0a12207",
-      "xwayland-update-released-for-rhel-9-4-37d6e5"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98549-important-xorg-x11-server-xwayland-7ddcf94b",
-    "title": "RHSA-2026:98549: Important: xorg-x11-server-Xwayland security update",
-    "summary": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98549",
-    "publishedAt": "2026-11-11T09:16:39.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98549-important-xorg-x11-server-xwayland",
-      "article-7ddcf94b",
-      "7ddcf94b",
-      "rhsa-2026-98549-important-xorg-x11-server-xwayland-37d6e5",
-      "rhsa-2026-98549-important-xorg-x11-server-xwayland-security-"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98546-important-xorg-x11-server-xwayland-57ae424b",
-    "title": "RHSA-2026:98546: Important: xorg-x11-server-Xwayland security update",
-    "summary": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 10.0 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98546",
-    "publishedAt": "2026-11-11T09:10:49.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98546-important-xorg-x11-server-xwayland",
-      "article-57ae424b",
-      "57ae424b",
-      "rhsa-2026-98546-important-xorg-x11-server-xwayland-37d6e5",
-      "rhsa-2026-98546-important-xorg-x11-server-xwayland-security-"
-    ]
-  },
-  {
-    "slug": "microsoft-resolves-exchange-sign-in-issues-from-se-ee739ef0",
-    "title": "Microsoft Resolves Exchange Sign‑In Issues from Server Updates",
-    "summary": "Microsoft fixed Outlook sign‑in and mail delivery issues on Exchange Server caused by October 2026 Windows Server updates. The updates disrupted authentication flows, leading to failed logins and delayed message routing; no data exfiltration was reported. The problem is resolved in the latest cumulative update; administrators should apply the patch to restore normal Exchange operation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-exchange-sign-ins-broken-by-october-windows-server-updates/",
-    "publishedAt": "2026-11-11T09:07:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-resolves-exchange-sign-in-issues-from-se",
-      "article-ee739ef0",
-      "ee739ef0",
-      "microsoft-resolves-exchange-sign-in-issues-from-se-29bbc1",
-      "microsoft-resolves-exchange-sign-in-issues-from-server-updat"
-    ]
-  },
-  {
-    "slug": "openwave-broadworks-vulnerabilities-exploited-for-4e1d2283",
-    "title": "Openwave, BroadWorks vulnerabilities exploited for data leakage",
-    "summary": "Threat actors exploited CVE-2026-111793 in Openwave and CVE-2026-20320 in Cisco BroadWorks, enabling leakage of sensitive configuration data. Both flaws allow unauthorized disclosure of configuration information without authentication, and public proof‑of‑concept exploits have been released. Affected systems should apply vendor patches or configuration hardening to prevent further data exposure immediately.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-    "publishedAt": "2026-11-11T09:01:07.000Z",
-    "cves": [
-      "CVE-2026-111793",
-      "CVE-2026-20320"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "openwave-broadworks-vulnerabilities-exploited-for",
-      "article-4e1d2283",
-      "4e1d2283",
-      "openwave-broadworks-vulnerabilities-exploited-for-137af6",
-      "openwave-broadworks-vulnerabilities-exploited-for-data-leaka"
-    ]
-  },
-  {
-    "slug": "intel-amd-patch-over-200-vulnerabilities-720d0e7b",
-    "title": "Intel, AMD patch over 200 vulnerabilities",
-    "summary": "Intel and AMD released over 200 patches on Patch Tuesday, addressing critical flaws in Intel TDX software and numerous AMD graphics bugs. The advisory lists multiple CVE identifiers and CVSS scores, indicating a range of severity levels across the affected components. Security teams should apply the vendor patches via their package managers or firmware updates to mitigate the identified risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/",
-    "publishedAt": "2026-11-11T08:42:44.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "intel-amd-patch-over-200-vulnerabilities",
-      "article-720d0e7b",
-      "720d0e7b",
-      "intel-amd-patch-over-200-vulnerabilities-2be1ef"
-    ]
-  },
-  {
-    "slug": "openssh-update-addresses-moderate-security-issues-9c2d9183",
-    "title": "OpenSSH Update Addresses Moderate Security Issues",
-    "summary": "Red Hat released an OpenSSH update for RHEL 10 to address moderate‑severity vulnerabilities affecting the SSH daemon. The advisory cites multiple CVE references with CVSS base scores, but no active exploitation has been observed. Users should install the latest OpenSSH package to ensure protection against the identified weaknesses in all deployments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98073",
-    "publishedAt": "2026-11-11T08:38:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "openssh-update-addresses-moderate-security-issues",
-      "article-9c2d9183",
-      "9c2d9183",
-      "openssh-update-addresses-moderate-security-issues-37d6f7"
-    ]
-  },
-  {
-    "slug": "sos-update-fixes-important-security-bugs-00038762",
-    "title": "SOS Update Fixes Important Security Bugs",
-    "summary": "Red Hat issued a security update for the sos utility on RHEL 10, addressing important bugs that could affect system diagnostics. The advisory references multiple CVE entries with CVSS base scores, indicating a high impact on system stability. Administrators should apply the sos patch promptly to prevent potential denial of service or data corruption during troubleshooting.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98076",
-    "publishedAt": "2026-11-11T08:36:02.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "sos-update-fixes-important-security-bugs",
-      "article-00038762",
-      "00038762",
-      "sos-update-fixes-important-security-bugs-37d6f7"
-    ]
-  },
-  {
-    "slug": "kernel-rmp-check-flaw-enables-hypervisor-out-of-bo-00953341",
-    "title": "Kernel RMP Check Flaw Enables Hypervisor Out-of-Bounds",
-    "summary": "A kernel flaw in IOMMU RMP checks allows a local hypervisor attacker to trigger an out‑of‑bounds condition and corrupt SEV‑SNP guest memory. The vulnerability, identified as CVE‑2023‑20585, could enable privilege escalation within virtualized environments, potentially compromising guest isolation. Red Hat released a kernel patch that restores RMP validation and addresses affected subsystems, and users should apply the update immediately. The flaw is tracked as CVE-2023-20585.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9040-1",
-    "publishedAt": "2026-11-11T08:27:44.000Z",
-    "cves": [
-      "CVE-2023-20585"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "kernel-rmp-check-flaw-enables-hypervisor-out-of-bo",
-      "article-00953341",
-      "00953341",
-      "kernel-rmp-check-flaw-enables-hypervisor-out-of-bo-7e87ea",
-      "kernel-rmp-check-flaw-enables-hypervisor-out-of-bounds"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-patch-for-outlook-bug-exposing-46d41d1b",
-    "title": "Microsoft Releases Patch for Outlook Bug Exposing NTLMv2 Hashes",
-    "summary": "Microsoft released a cumulative update fixing 1,259 flaws, including CVE-2026-124194, an Outlook bug that attackers exploited to exfiltrate NTLMv2 hashes. The flaw permits unauthenticated memory corruption that leaks credential material, enabling credential dumping and lateral movement. Apply the latest cumulative update immediately; no workaround exists, and teams should monitor authentication logs for anomalous NTLM traffic.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
-    "publishedAt": "2026-11-11T08:17:53.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-patch-for-outlook-bug-exposing",
-      "article-46d41d1b",
-      "46d41d1b",
-      "microsoft-releases-patch-for-outlook-bug-exposing-49dc30",
-      "microsoft-releases-patch-for-outlook-bug-exposing-ntlmv2-has"
     ]
   }
 ];
