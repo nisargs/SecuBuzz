@@ -11,6 +11,117 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "fbi-seizes-1-2b-crypto-stolen-from-binance-7ab8f53b",
+    "title": "FBI Seizes $1.2B Crypto Stolen from Binance",
+    "summary": "The FBI seized $1.2 billion in cryptocurrency stolen from Binance, linked to a North Korean social engineering scheme that also yielded $400 million. The operation uncovered a phishing and credential‑stealing campaign that compromised Binance accounts, enabling large fund transfers to illicit wallets.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
+    "publishedAt": "2026-11-13T02:28:21.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "fbi-seizes-1-2b-crypto-stolen-from-binance",
+      "article-7ab8f53b",
+      "7ab8f53b",
+      "fbi-seizes-1-2b-crypto-stolen-from-binance-101d11"
+    ]
+  },
+  {
+    "slug": "microsoft-365-outage-hits-exchange-teams-sharepoin-253f54b2",
+    "title": "Microsoft 365 Outage Hits Exchange, Teams, SharePoint",
+    "summary": "Microsoft suffered a 2026‑11‑12 outage that disrupted Microsoft 365 services, including Exchange Online, Teams, SharePoint, Copilot, and Defender XDR, worldwide. The outage originated from infrastructure failures that caused regional connectivity issues, first affecting Exchange mailbox access in the Americas before spreading globally. Microsoft is restoring services, investigating root causes, and will issue updates as the situation stabilizes.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/massive-microsoft-365-outage/",
+    "publishedAt": "2026-11-13T02:14:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-outage-hits-exchange-teams-sharepoin",
+      "article-253f54b2",
+      "253f54b2",
+      "microsoft-365-outage-hits-exchange-teams-sharepoin-7e4663",
+      "microsoft-365-outage-hits-exchange-teams-sharepoint"
+    ]
+  },
+  {
+    "slug": "screenconnect-rce-enables-lateral-movement-66c43421",
+    "title": "ScreenConnect RCE Enables Lateral Movement",
+    "summary": "An RCE flaw in ScreenConnect allows attackers to execute arbitrary code on the host. The flaw arises from insufficient input validation in the remote command interface, enabling code execution that can be used for lateral movement; no public PoC exists. ScreenConnect has released a patch; administrators should update immediately and enforce network segmentation to limit lateral spread.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/hackers-deploy-malware-in-fresh-screenconnect-campaign",
+    "publishedAt": "2026-11-13T01:58:59.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "screenconnect-rce-enables-lateral-movement",
+      "article-66c43421",
+      "66c43421",
+      "screenconnect-rce-enables-lateral-movement-5bbf8a"
+    ]
+  },
+  {
+    "slug": "citrix-netscaler-12-flaws-auth-bypass-and-dos-560013e3",
+    "title": "Citrix NetScaler 12 Flaws: Auth Bypass and DoS",
+    "summary": "Citrix NetScaler suffers 12 critical flaws, including authentication bypass and denial‑of‑service. The vulnerabilities stem from improper input validation and flawed session handling, allowing attackers to gain unauthorized access and disrupt service; no public PoC is reported yet. Citrix has issued a patch; administrators should apply it promptly and verify authentication controls.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/citrix-patches-12-netscaler-and-secure-access-client-fl",
+    "publishedAt": "2026-11-13T01:56:50.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "citrix-netscaler-12-flaws-auth-bypass-and-dos",
+      "article-560013e3",
+      "560013e3",
+      "citrix-netscaler-12-flaws-auth-bypass-and-dos-5cdbf9"
+    ]
+  },
+  {
+    "slug": "critical-zero-day-4everable2shell-flaw-impacts-n-a-29591531",
+    "title": "Critical Zero-Day 4EverAble2Shell Flaw Impacts N-able N-central",
+    "summary": "A critical security intelligence alert details the 4EverAble2Shell zero-day vulnerability affecting N-able N-central remote monitoring software. Threat analysis indicates a critical zero-day vulnerability requiring defenders to review root-cause telemetry and deploy targeted threat-hunting detection rules. Administrators are urged to apply available security patches today to mitigate potential system compromise and prevent unauthorized access.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/new-n-able-4everable2shell-zero-day-exploited-hours-aft",
+    "publishedAt": "2026-11-13T01:56:23.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "critical-zero-day-4everable2shell-flaw-impacts-n-a",
+      "article-29591531",
+      "29591531",
+      "critical-zero-day-4everable2shell-flaw-impacts-n-a-6d157a",
+      "critical-zero-day-4everable2shell-flaw-impacts-n-able-n-cent"
+    ]
+  },
+  {
+    "slug": "signdrop-clfs-driver-zero-day-grants-system-privil-d6593a77",
+    "title": "SignDrop CLFS Driver Zero‑Day Grants SYSTEM Privileges",
+    "summary": "A zero‑day flaw in SignDrop’s CLFS driver lets attackers gain SYSTEM privileges on affected machines. The vulnerability abuses improper privilege checks, enabling local or remote code execution with full system rights; no public PoC exists yet. SignDrop has issued a patch; security teams should apply it immediately and monitor for privilege‑escalation indicators.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/new-signdrop-zero-day-exploit-turns-windows-clfs-securi",
+    "publishedAt": "2026-11-13T01:43:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "signdrop-clfs-driver-zero-day-grants-system-privil",
+      "article-d6593a77",
+      "d6593a77",
+      "signdrop-clfs-driver-zero-day-grants-system-privil-6044ca",
+      "signdrop-clfs-driver-zero-day-grants-system-privileges"
+    ]
+  },
+  {
     "slug": "red-hat-satellite-6-17-13-receives-critical-async-40212a83",
     "title": "Red Hat Satellite 6.17.13 receives critical async update",
     "summary": "Red Hat Satellite 6.17.13 for RHEL 9 contains critical flaws that could let attackers compromise satellite management. The flaws are rated CVSS 9.0+, exposing remote code execution paths that bypass authentication and grant full control over satellite services. Red Hat recommends installing the provided patch immediately; administrators should also verify satellite configuration and apply any additional hardening guidelines.",
@@ -680,6 +791,42 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-releases-mysql-8-4-security-update-50925d94",
+    "title": "Red Hat Releases MySQL 8.4 Security Update",
+    "summary": "Red Hat has issued a security update for MySQL 8.4 on Enterprise Linux 10. The update addresses multiple critical vulnerabilities with an Important impact rating; CVSS base scores are listed in the referenced CVE links. Administrators should apply the patch promptly and review the CVE references for detailed severity information.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99720",
+    "publishedAt": "2026-11-12T20:37:55.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-releases-mysql-8-4-security-update",
+      "article-50925d94",
+      "50925d94",
+      "red-hat-releases-mysql-8-4-security-update-37d669"
+    ]
+  },
+  {
+    "slug": "rhc-security-update-for-rhel-8-6-available-90f40726",
+    "title": "RHC Security Update for RHEL 8.6 Available",
+    "summary": "Red Hat released an important security update for the rhc client on RHEL 8.6 Advanced Mission Critical Update Support and Extended Update Support Long‑Life Add‑On. The update addresses multiple vulnerabilities, each with a CVSS base score listed in the CVE references, but no active exploitation has been reported. Red Hat recommends applying the rhc update immediately to mitigate potential exploitation.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99827",
+    "publishedAt": "2026-11-12T20:34:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhc-security-update-for-rhel-8-6-available",
+      "article-90f40726",
+      "90f40726",
+      "rhc-security-update-for-rhel-8-6-available-37d665"
+    ]
+  },
+  {
     "slug": "red-hat-issues-libx11-security-update-c4881392",
     "title": "Red Hat Issues libX11 Security Update",
     "summary": "Red Hat released a security update for libX11 affecting Enterprise Linux 7 Extended Lifecycle Support. The update addresses multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and mitigates potential privilege escalation. Customers should install the patch immediately to mitigate potential denial‑of‑service or privilege escalation risks.",
@@ -995,6 +1142,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "google-releases-chrome-beta-159-for-android-device-cbba6905",
+    "title": "Google Releases Chrome Beta 159 for Android Devices",
+    "summary": "Google released Chrome Beta version 159.0.8154.4 for Android mobile devices, making it available on Google Play. The update incorporates platform updates and developer features with details documented inside the underlying Chromium Git log repository. Google encourages developers and users to test the beta build and report any newly discovered software issues via bug tickets.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-android-update_01250189783.html",
+    "publishedAt": "2026-11-12T17:58:32.687Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-chrome-beta-159-for-android-device",
+      "article-cbba6905",
+      "cbba6905",
+      "google-releases-chrome-beta-159-for-android-device-4ea3ac",
+      "google-releases-chrome-beta-159-for-android-devices"
+    ]
+  },
+  {
     "slug": "new-signdrop-zero-day-exploit-turns-windows-clfs-s-ac2d5382",
     "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
     "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year.",
@@ -1030,6 +1196,24 @@ export const news: NewsBrief[] = [
       "83bfad69",
       "rhsa-2026-99725-important-compat-openssl10-securit-37d669",
       "rhsa-2026-99725-important-compat-openssl10-security-update"
+    ]
+  },
+  {
+    "slug": "google-releases-chrome-beta-update-for-ios-e86cb456",
+    "title": "Google Releases Chrome Beta Update for iOS",
+    "summary": "Google announced the release of Chrome Beta version 159.0.8154.5 for iOS operating systems across Apple devices. The upcoming update will be made available on the Apple App Store and includes developer changes referenced in the Git log. The Chrome Release Team advises users to submit bug reports if any new software issues are identified in the updated build.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-beta-for-ios-update_01890458731.html",
+    "publishedAt": "2026-11-12T17:43:50.798Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "google-releases-chrome-beta-update-for-ios",
+      "article-e86cb456",
+      "e86cb456",
+      "google-releases-chrome-beta-update-for-ios-2a703f"
     ]
   },
   {
@@ -1140,6 +1324,25 @@ export const news: NewsBrief[] = [
       "article-f923e85e",
       "f923e85e",
       "n-able-zero-day-targets-even-patched-servers-99074e"
+    ]
+  },
+  {
+    "slug": "microsoft-investigates-teams-outage-in-north-ameri-302825c3",
+    "title": "Microsoft Investigates Teams Outage in North America",
+    "summary": "Microsoft is actively investigating an operational outage affecting Microsoft Teams users across the North America region. Tracked under incident identifier TM1550488 in the Microsoft 365 admin center, automated recovery mechanisms have begun mitigating the service disruption. Official status updates indicate incremental service improvements, although Microsoft has not confirmed complete resolution for all impacted enterprise environments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-teams-outagenorth-america/",
+    "publishedAt": "2026-11-12T16:44:18.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-investigates-teams-outage-in-north-ameri",
+      "article-302825c3",
+      "302825c3",
+      "microsoft-investigates-teams-outage-in-north-ameri-46e08a",
+      "microsoft-investigates-teams-outage-in-north-america"
     ]
   },
   {
@@ -4876,6 +5079,48 @@ export const news: NewsBrief[] = [
       "7b7ec6a2",
       "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
       "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
+    ]
+  },
+  {
+    "slug": "asp-net-core-cve-2026-114150-information-disclosur-12b4cf9e",
+    "title": "ASP.NET Core CVE-2026-114150 Information Disclosure Update",
+    "summary": "Microsoft issued an informational update for the ASP.NET Core information disclosure vulnerability identified as CVE-2026-114150. The update clarifies security update links and related information but does not provide a patch or exploit details. Users should review the updated documentation, though no active exploitation has been reported.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114150",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114150"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-cve-2026-114150-information-disclosur",
+      "article-12b4cf9e",
+      "12b4cf9e",
+      "asp-net-core-cve-2026-114150-information-disclosur-1feaf4",
+      "asp-net-core-cve-2026-114150-information-disclosure-update"
+    ]
+  },
+  {
+    "slug": "asp-net-core-cve-2026-114154-denial-of-service-upd-820a074c",
+    "title": "ASP.NET Core CVE-2026-114154 Denial of Service Update",
+    "summary": "Microsoft released an informational update for the ASP.NET Core denial of service vulnerability identified as CVE-2026-114154. The update adjusts the product list in the security updates table but does not provide a patch or exploit details. Administrators should verify that their deployments are listed, though no active exploitation has been reported.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114154",
+    "publishedAt": "2026-11-11T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-114154"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "asp-net-core-cve-2026-114154-denial-of-service-upd",
+      "article-820a074c",
+      "820a074c",
+      "asp-net-core-cve-2026-114154-denial-of-service-upd-1feaf4",
+      "asp-net-core-cve-2026-114154-denial-of-service-update"
     ]
   },
   {
@@ -9323,255 +9568,6 @@ export const news: NewsBrief[] = [
       "83121c52",
       "rhsa-2026-97387-important-go-fdo-server-security-u-37d760",
       "rhsa-2026-97387-important-go-fdo-server-security-update"
-    ]
-  },
-  {
-    "slug": "cve-2026-126087-untrusted-search-path-in-openjd-se-502636a4",
-    "title": "CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent",
-    "summary": "An untrusted search path flaw in the Open Job Description cross-user process launcher (CVE-2026-126087), as used in the AWS Deadline Cloud worker agent on Linux before 0.33.0, allows an authenticated user with job submission rights to execute arbitrary code with worker agent privileges and obtain AWS credentials held by the worker agent.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "AWS Security Bulletins",
-    "sourceUrl": "https://aws.amazon.com/security/security-bulletins/rss/2026-177-aws/",
-    "publishedAt": "2026-11-10T18:53:11.000Z",
-    "cves": [
-      "CVE-2026-126087"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-126087-untrusted-search-path-in-openjd-se",
-      "article-502636a4",
-      "502636a4",
-      "cve-2026-126087-untrusted-search-path-in-openjd-se-3fd202",
-      "cve-2026-126087-untrusted-search-path-in-openjd-sessions-for"
-    ]
-  },
-  {
-    "slug": "ai-coding-agents-leak-thousands-of-secrets-to-gith-98f23060",
-    "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
-    "summary": "A command in Claude Code inadvertently saves files containing credentials and sensitive data to public Git repositories, creating security exposure for organizations. The leaked secrets include API keys, tokens, and authentication credentials that were committed to public repositories without authorization. Organizations must audit their AI coding agent configurations and implement pre-commit hooks to prevent credential leakage.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "Dark Reading",
-    "sourceUrl": "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github",
-    "publishedAt": "2026-11-10T18:46:22.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ai-coding-agents-leak-thousands-of-secrets-to-gith",
-      "article-98f23060",
-      "98f23060",
-      "ai-coding-agents-leak-thousands-of-secrets-to-gith-6c2ddc",
-      "ai-coding-agents-leak-thousands-of-secrets-to-github"
-    ]
-  },
-  {
-    "slug": "gstreamer-good-plugins-vulnerabilities-allow-remot-7309a69b",
-    "title": "GStreamer Good Plugins Vulnerabilities Allow Remote Code Execution",
-    "summary": "Ubuntu 16.04, 18.04, and 20.04 are affected by GStreamer Good Plugins flaws (CVE-2026-3083, CVE-2026-3085, CVE-2026-39043) that mishandle network streams, Matroska, and WAV files. The vulnerabilities enable remote attackers to trigger crashes or potentially execute arbitrary code, posing a significant risk to affected systems. Apply Ubuntu security updates or upgrade GStreamer to a patched version to mitigate exploitation risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9038-1",
-    "publishedAt": "2026-11-10T18:38:56.000Z",
-    "cves": [
-      "CVE-2026-3083",
-      "CVE-2026-3085",
-      "CVE-2026-39043"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "gstreamer-good-plugins-vulnerabilities-allow-remot",
-      "article-7309a69b",
-      "7309a69b",
-      "gstreamer-good-plugins-vulnerabilities-allow-remot-7e8840",
-      "gstreamer-good-plugins-vulnerabilities-allow-remote-code-exe"
-    ]
-  },
-  {
-    "slug": "microsoft-releases-windows-11-cumulative-updates-k-e0252079",
-    "title": "Microsoft Releases Windows 11 Cumulative Updates KB5132061, KB5131087",
-    "summary": "Microsoft released cumulative updates KB5132061 and KB5131087 for Windows 11 versions 26H2/25H2/24H2 and 23H2. The updates address multiple security vulnerabilities and bugs, though specific CVE identifiers are not disclosed in the release notes. Users should install the patches via Windows Update or manually to maintain system security and feature parity.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
-    "publishedAt": "2026-11-10T18:33:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-releases-windows-11-cumulative-updates-k",
-      "article-e0252079",
-      "e0252079",
-      "microsoft-releases-windows-11-cumulative-updates-k-636e3e",
-      "microsoft-releases-windows-11-cumulative-updates-kb5132061-k"
-    ]
-  },
-  {
-    "slug": "grafana-update-addresses-security-issues-on-rhel9-f60a5ecc",
-    "title": "Grafana Update Addresses Security Issues on RHEL9",
-    "summary": "Red Hat released a Grafana update for RHEL 9, addressing multiple security vulnerabilities. The advisory rates the update as Important, with CVSS base scores linked to CVE references, indicating medium‑to‑high severity flaws that could allow unauthorized data access. Administrators should apply the update promptly to mitigate potential exploitation and maintain system integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97555",
-    "publishedAt": "2026-11-10T18:20:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "grafana-update-addresses-security-issues-on-rhel9",
-      "article-f60a5ecc",
-      "f60a5ecc",
-      "grafana-update-addresses-security-issues-on-rhel9-37d759"
-    ]
-  },
-  {
-    "slug": "edk2-update-for-rhel10-addresses-low-severity-issu-c503678a",
-    "title": "edk2 Update for RHEL10 Addresses Low‑Severity Issues",
-    "summary": "Red Hat released an edk2 update for RHEL 10, targeting low‑severity security bugs that could affect firmware initialization. The advisory lists CVSS base scores linked to CVE references, indicating minimal exploitation risk. Users should apply the update to maintain firmware stability, though no immediate threat is reported, and monitor for any related advisories.",
-    "category": "Vulnerability",
-    "severity": "LOW",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97212",
-    "publishedAt": "2026-11-10T18:17:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "edk2-update-for-rhel10-addresses-low-severity-issu",
-      "article-c503678a",
-      "c503678a",
-      "edk2-update-for-rhel10-addresses-low-severity-issu-37d765",
-      "edk2-update-for-rhel10-addresses-low-severity-issues"
-    ]
-  },
-  {
-    "slug": "fireworks-ai-cloud-breach-exposes-api-keys-291af339",
-    "title": "Fireworks AI Cloud Breach Exposes API Keys",
-    "summary": "Fireworks AI suffered a cloud breach that exposed API keys, potentially allowing attackers to access proprietary AI models and data. The compromise resulted from misconfigured access controls on the cloud storage bucket, enabling unauthenticated retrieval of sensitive credentials. Fireworks AI has issued a patch and revoked exposed keys; security teams should rotate credentials and audit cloud permissions immediately.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/fireworks-ai-discloses-new-breach-after-cloud-provider",
-    "publishedAt": "2026-11-10T18:16:48.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fireworks-ai-cloud-breach-exposes-api-keys",
-      "article-291af339",
-      "291af339",
-      "fireworks-ai-cloud-breach-exposes-api-keys-256025"
-    ]
-  },
-  {
-    "slug": "turla-cereal-targets-government-exchange-servers-84a454ad",
-    "title": "Turla Cereal Targets Government Exchange Servers",
-    "summary": "Turla Cereal, a state-sponsored espionage group, has been observed infiltrating government Microsoft Exchange servers. The campaign leverages custom malware to exfiltrate sensitive data, with telemetry indicating persistent footholds. Security teams should deploy the latest Exchange patches, enable advanced threat protection, monitor for anomalous outbound traffic, and conduct thorough forensic analysis of compromised hosts.",
-    "category": "Nation State",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/turla-hackers-use-new-cereal-malware-to-spy-on-govt-exc",
-    "publishedAt": "2026-11-10T18:15:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "turla-cereal-targets-government-exchange-servers",
-      "article-84a454ad",
-      "84a454ad",
-      "turla-cereal-targets-government-exchange-servers-446061"
-    ]
-  },
-  {
-    "slug": "byod-ransomware-allegedly-claims-toyota-data-breac-75240c97",
-    "title": "BYOD Ransomware Allegedly Claims Toyota Data Breach",
-    "summary": "The BYOD ransomware group claims it obtained personal information and kiosk device access from Toyota, though the claim remains unverified. No evidence confirms Toyota systems were breached or files were encrypted. Security teams should monitor threat actor claims and validate any reported data exposure through independent forensic analysis.",
-    "category": "Breach",
-    "severity": "LOW",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/toyota-data-breach-claim/",
-    "publishedAt": "2026-11-10T18:14:43.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "byod-ransomware-allegedly-claims-toyota-data-breac",
-      "article-75240c97",
-      "75240c97",
-      "byod-ransomware-allegedly-claims-toyota-data-breac-74c568",
-      "byod-ransomware-allegedly-claims-toyota-data-breach"
-    ]
-  },
-  {
-    "slug": "xen-orchestra-auth-bypass-exploited-for-admin-acce-4765a021",
-    "title": "Xen Orchestra Auth Bypass Exploited for Admin Access",
-    "summary": "Hackers exploit a critical authentication bypass in Xen Orchestra to gain administrative privileges. The flaw, tracked as VSA-2026-062, parses authenticationToken=j:%7B%7D into an empty object, enabling unauthorized access and is actively exploited, potentially compromising entire systems. Vates VMS urges immediate patch deployment and temporary disabling of unused REST endpoints to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
-    "publishedAt": "2026-11-10T18:12:21.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xen-orchestra-auth-bypass-exploited-for-admin-acce",
-      "article-4765a021",
-      "4765a021",
-      "xen-orchestra-auth-bypass-exploited-for-admin-acce-40d9ac",
-      "xen-orchestra-auth-bypass-exploited-for-admin-access"
-    ]
-  },
-  {
-    "slug": "adobe-fixes-110-vulnerabilities-in-nine-products-ea059d9e",
-    "title": "Adobe Fixes 110 Vulnerabilities in Nine Products",
-    "summary": "Adobe has patched 110 vulnerabilities across nine products, including AEM, Premiere, Photoshop, After Effects, Connect, Audition, Dimension, Content Credentials SDK, and Media Encoder. The flaws span configuration, input validation, and privilege escalation paths, but no active exploitation reports were disclosed. Adobe recommends applying the latest security updates immediately to mitigate potential risks.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/",
-    "publishedAt": "2026-11-10T18:11:54.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "adobe-fixes-110-vulnerabilities-in-nine-products",
-      "article-ea059d9e",
-      "ea059d9e",
-      "adobe-fixes-110-vulnerabilities-in-nine-products-439ac8"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97438-moderate-sssd-security-bug-fix-and-b47a5b9d",
-    "title": "RHSA-2026:97438: Moderate: sssd security, bug fix, and enhancement update",
-    "summary": "An update for sssd is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97438",
-    "publishedAt": "2026-11-10T18:06:58.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97438-moderate-sssd-security-bug-fix-and",
-      "article-b47a5b9d",
-      "b47a5b9d",
-      "rhsa-2026-97438-moderate-sssd-security-bug-fix-and-37d75d",
-      "rhsa-2026-97438-moderate-sssd-security-bug-fix-and-enhanceme"
-    ]
-  },
-  {
-    "slug": "firefox-free-vpn-drops-50gb-launch-cap-until-janua-7bb5b801",
-    "title": "Firefox Free VPN Drops 50GB Launch Cap Until January 31",
-    "summary": "Mozilla removed the data cap on the built-in Firefox free VPN, extending unlimited desktop and Android usage for users with a Mozilla account. The VPN protects traffic only inside Firefox and does not affect other applications on the device. Users benefit from unrestricted browsing without additional subscription costs beyond the existing Mozilla account requirement.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/10/firefox-free-vpn-data/",
-    "publishedAt": "2026-11-10T18:05:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "firefox-free-vpn-drops-50gb-launch-cap-until-janua",
-      "article-7bb5b801",
-      "7bb5b801",
-      "firefox-free-vpn-drops-50gb-launch-cap-until-janua-2d4be7",
-      "firefox-free-vpn-drops-50gb-launch-cap-until-january-31"
     ]
   }
 ];
