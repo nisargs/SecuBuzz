@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 04:48:10 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 05:49:49 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>FBI Seizes $1.2B Crypto Stolen from Binance</title>
@@ -24,6 +24,24 @@
       <pubDate>Fri, 13 Nov 2026 02:14:54 GMT</pubDate>
       <source url="https://cybersecuritynews.com/massive-microsoft-365-outage/">Cyber Security News</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Red Hat Quay Unauth Image Access CVE-2026-123710</title>
+      <link>https://secubuzz.com/news/red-hat-quay-unauth-image-access-cve-2026-123710-6b3a025e</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-quay-unauth-image-access-cve-2026-123710-6b3a025e</guid>
+      <description><![CDATA[A flaw in Red Hat Quay lets unauthenticated users read container images, exposing enterprise registries. CVE‑2026‑123710 permits remote attackers to retrieve image metadata and content; no public exploit yet, but risk is high for exposed registries. Apply the latest patch immediately and enable image access controls as a temporary mitigation for now.]]></description>
+      <pubDate>Fri, 13 Nov 2026 02:08:31 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/critical-red-hat-quay-flaw-lets-attackers-read-and-over">CyberNews AI</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Maersk Data Theft via Acquired System Flaw</title>
+      <link>https://secubuzz.com/news/maersk-data-theft-via-acquired-system-flaw-9b123dc2</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/maersk-data-theft-via-acquired-system-flaw-9b123dc2</guid>
+      <description><![CDATA[Maersk suffered a data theft incident caused by a flaw in an acquired system component, allowing unauthorized extraction of sensitive information. The vulnerability permits attackers to bypass authentication controls and read confidential data, though no public exploit has been disclosed. Maersk should apply the vendor patch immediately and review access controls to mitigate the risk.]]></description>
+      <pubDate>Fri, 13 Nov 2026 02:00:19 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/maersk-confirms-data-theft-amid-5-million-extortion-att">CyberNews AI</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>ScreenConnect RCE Enables Lateral Movement</title>
@@ -149,6 +167,15 @@
       <description><![CDATA[A worm-like malware toolkit named SCKit has been deployed in recent ScreenConnect attacks against managed service providers. The malware spreads from infected customer devices to MSP technicians' computers, enabling attackers to compromise additional managed networks and exfiltrate data. Security teams should isolate affected systems, update ScreenConnect to the latest version, and monitor for lateral movement.]]></description>
       <pubDate>Thu, 12 Nov 2026 22:53:10 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/">BleepingComputer</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Organizations Struggle With Post-Quantum Cryptography Asset Discovery</title>
+      <link>https://secubuzz.com/news/organizations-struggle-with-post-quantum-cryptogra-0e7823a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/organizations-struggle-with-post-quantum-cryptogra-0e7823a4</guid>
+      <description><![CDATA[Enterprise organizations face significant operational hurdles when preparing for the mandatory transition to post-quantum cryptography standards. According to Dark Reading, most entities have not adequately audited their internal cryptographic estate to establish a baseline for post-quantum implementation. Security leadership must prioritize discovering and mapping legacy cryptographic assets across systems before beginning post-quantum security deployments.]]></description>
+      <pubDate>Thu, 12 Nov 2026 22:46:05 GMT</pubDate>
+      <source url="https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery">Dark Reading</source>
       <category>General</category>
     </item>
     <item>
@@ -429,33 +456,6 @@
       <pubDate>Thu, 12 Nov 2026 20:13:33 GMT</pubDate>
       <source url="https://chromereleases.googleblog.com/2026/11/chrome-beta-for-desktop-update_0414360355.html">Google Chrome Releases</source>
       <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Issues libXtst Security Update</title>
-      <link>https://secubuzz.com/news/red-hat-issues-libxtst-security-update-0390e8d5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-issues-libxtst-security-update-0390e8d5</guid>
-      <description><![CDATA[Red Hat released a security update for libXtst affecting Enterprise Linux 7 Extended Lifecycle Support. The update fixes multiple vulnerabilities rated as Important, with CVSS scores available via referenced CVE links, and reduces privilege escalation risk. Customers should apply the patch promptly to prevent potential denial‑of‑service or privilege escalation and mitigate related risks.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:10:28 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:99745">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Luna Moth Targets Law Firms with Token Theft</title>
-      <link>https://secubuzz.com/news/luna-moth-targets-law-firms-with-token-theft-cbb89b75</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/luna-moth-targets-law-firms-with-token-theft-cbb89b75</guid>
-      <description><![CDATA[Extortion group Luna Moth re‑targets law firms that declined its first ransom, launching a social‑engineering campaign to harvest Microsoft access tokens. The attack leverages phishing emails that embed malicious attachments or links, exploiting user credential theft to gain privileged cloud access. Security teams should enforce multi‑factor authentication, monitor token usage, and conduct employee awareness training to mitigate token‑based credential compromise.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:09:41 GMT</pubDate>
-      <source url="https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time">Dark Reading</source>
-      <category>Ransomware</category>
-    </item>
-    <item>
-      <title>Sudo Time Restriction Bypass Vulnerability</title>
-      <link>https://secubuzz.com/news/sudo-time-restriction-bypass-vulnerability-9995d4e0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/sudo-time-restriction-bypass-vulnerability-9995d4e0</guid>
-      <description><![CDATA[Sudo on Ubuntu 18.04 LTS and 20.04 LTS contains a flaw that fails to enforce NOTBEFORE and NOTAFTER time restrictions when timestamps lack a timezone indicator. A local attacker could manipulate the TZ environment variable to execute commands outside the intended time window, escalating privileges. Ubuntu has released updates for both releases; administrators should apply them to prevent the bypass.]]></description>
-      <pubDate>Thu, 12 Nov 2026 20:06:18 GMT</pubDate>
-      <source url="https://ubuntu.com/security/notices/USN-8895-2">Ubuntu Security Notices</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

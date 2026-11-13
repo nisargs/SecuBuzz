@@ -48,6 +48,44 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "red-hat-quay-unauth-image-access-cve-2026-123710-6b3a025e",
+    "title": "Red Hat Quay Unauth Image Access CVE-2026-123710",
+    "summary": "A flaw in Red Hat Quay lets unauthenticated users read container images, exposing enterprise registries. CVE‑2026‑123710 permits remote attackers to retrieve image metadata and content; no public exploit yet, but risk is high for exposed registries. Apply the latest patch immediately and enable image access controls as a temporary mitigation for now.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/critical-red-hat-quay-flaw-lets-attackers-read-and-over",
+    "publishedAt": "2026-11-13T02:08:31.000Z",
+    "cves": [
+      "CVE-2026-123710"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "red-hat-quay-unauth-image-access-cve-2026-123710",
+      "article-6b3a025e",
+      "6b3a025e",
+      "red-hat-quay-unauth-image-access-cve-2026-123710-441b0f"
+    ]
+  },
+  {
+    "slug": "maersk-data-theft-via-acquired-system-flaw-9b123dc2",
+    "title": "Maersk Data Theft via Acquired System Flaw",
+    "summary": "Maersk suffered a data theft incident caused by a flaw in an acquired system component, allowing unauthorized extraction of sensitive information. The vulnerability permits attackers to bypass authentication controls and read confidential data, though no public exploit has been disclosed. Maersk should apply the vendor patch immediately and review access controls to mitigate the risk.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/maersk-confirms-data-theft-amid-5-million-extortion-att",
+    "publishedAt": "2026-11-13T02:00:19.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "maersk-data-theft-via-acquired-system-flaw",
+      "article-9b123dc2",
+      "9b123dc2",
+      "maersk-data-theft-via-acquired-system-flaw-7238cf"
+    ]
+  },
+  {
     "slug": "screenconnect-rce-enables-lateral-movement-66c43421",
     "title": "ScreenConnect RCE Enables Lateral Movement",
     "summary": "An RCE flaw in ScreenConnect allows attackers to execute arbitrary code on the host. The flaw arises from insufficient input validation in the remote command interface, enabling code execution that can be used for lateral movement; no public PoC exists. ScreenConnect has released a patch; administrators should update immediately and enforce network segmentation to limit lateral spread.",
@@ -305,6 +343,25 @@ export const news: NewsBrief[] = [
       "article-39490bde",
       "39490bde",
       "sckit-worm-targets-msps-via-screenconnect-2041b9"
+    ]
+  },
+  {
+    "slug": "organizations-struggle-with-post-quantum-cryptogra-0e7823a4",
+    "title": "Organizations Struggle With Post-Quantum Cryptography Asset Discovery",
+    "summary": "Enterprise organizations face significant operational hurdles when preparing for the mandatory transition to post-quantum cryptography standards. According to Dark Reading, most entities have not adequately audited their internal cryptographic estate to establish a baseline for post-quantum implementation. Security leadership must prioritize discovering and mapping legacy cryptographic assets across systems before beginning post-quantum security deployments.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Dark Reading",
+    "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
+    "publishedAt": "2026-11-12T22:46:05.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "organizations-struggle-with-post-quantum-cryptogra",
+      "article-0e7823a4",
+      "0e7823a4",
+      "organizations-struggle-with-post-quantum-cryptogra-668bf4",
+      "organizations-struggle-with-post-quantum-cryptography-asset-"
     ]
   },
   {
@@ -1309,6 +1366,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "rhsa-2026-99702-important-webkit2gtk3-security-upd-1574e233",
+    "title": "RHSA-2026:99702: Important: webkit2gtk3 security update",
+    "summary": "An update for webkit2gtk3 is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99702",
+    "publishedAt": "2026-11-12T16:53:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99702-important-webkit2gtk3-security-upd",
+      "article-1574e233",
+      "1574e233",
+      "rhsa-2026-99702-important-webkit2gtk3-security-upd-37d669",
+      "rhsa-2026-99702-important-webkit2gtk3-security-update"
+    ]
+  },
+  {
     "slug": "n-able-zero-day-targets-even-patched-servers-f923e85e",
     "title": "N‑Able Zero‑Day Targets Even Patched Servers",
     "summary": "New N‑Able N‑Central zero‑day exploits, named 4EverAble2Shell and Agent2Shell, target servers even after the latest emergency hotfix. The vulnerability enables unauthenticated attackers to gain root access, allowing deployment of cryptocurrency miners and other malicious payloads. Administrators should apply the latest patch, monitor for unauthorized processes, and verify that the HTTP/2 module is properly secured.",
@@ -1424,6 +1500,24 @@ export const news: NewsBrief[] = [
       "6e7a742b",
       "european-authorities-take-down-steaic-malware-serv-4df0a2",
       "european-authorities-take-down-steaic-malware-servers-for-se"
+    ]
+  },
+  {
+    "slug": "rhsa-2026-99662-important-xfsprogs-security-update-115a9084",
+    "title": "RHSA-2026:99662: Important: xfsprogs security update",
+    "summary": "An update for xfsprogs is now available for Red Hat Enterprise Linux 9.8 Extended Update Support. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "Red Hat Security Advisories",
+    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99662",
+    "publishedAt": "2026-11-12T16:15:46.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "rhsa-2026-99662-important-xfsprogs-security-update",
+      "article-115a9084",
+      "115a9084",
+      "rhsa-2026-99662-important-xfsprogs-security-update-37d66c"
     ]
   },
   {
@@ -9471,103 +9565,6 @@ export const news: NewsBrief[] = [
       "article-1bbc566e",
       "1bbc566e",
       "microsoft-patch-tuesday-november-2027-tue-nov-10th-57dd81"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-tuesday-fixes-1-235-flaws-outlook-1bd8ea52",
-    "title": "Microsoft Patch Tuesday Fixes 1,235 Flaws, Outlook Zero-Day",
-    "summary": "Microsoft released its November 2026 Patch Tuesday updates addressing 1,235 vulnerabilities, including the actively exploited Outlook zero-day CVE-2026-124194. The Outlook spoofing vulnerability is under active exploitation in the wild; administrators should apply the November 2026 cumulative security updates immediately and verify that Outlook clients are patched.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-    "publishedAt": "2026-11-10T19:07:36.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patch-tuesday-fixes-1-235-flaws-outlook",
-      "article-1bd8ea52",
-      "1bd8ea52",
-      "microsoft-patch-tuesday-fixes-1-235-flaws-outlook-627c82",
-      "microsoft-patch-tuesday-fixes-1-235-flaws-outlook-zero-day"
-    ]
-  },
-  {
-    "slug": "november-2026-security-update-review-ef678e34",
-    "title": "November 2026 Security Update Review",
-    "summary": "The November 2026 Security Update Review covers patch releases from Microsoft and Adobe, detailing record‑breaking vulnerability counts across products. Microsoft fixed 1,235 flaws, including an actively exploited Outlook zero‑day, while Adobe issued nine bulletins for 110 unique CVEs in its creative suite. Teams should apply the November 2026 Rollup, review Adobe bulletin IDs, and monitor for unpatched vulnerabilities.",
-    "category": "General",
-    "severity": "CRITICAL",
-    "source": "Zero Day Initiative",
-    "sourceUrl": "https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review",
-    "publishedAt": "2026-11-10T19:02:41.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "november-2026-security-update-review",
-      "article-ef678e34",
-      "ef678e34",
-      "november-2026-security-update-review-219998"
-    ]
-  },
-  {
-    "slug": "microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-1982f712",
-    "title": "Microsoft Patch Tuesday Fixes 1,093 Vulnerabilities, Outlook Zero-Day",
-    "summary": "Microsoft released its November 2026 Patch Tuesday updates, fixing 1,093 vulnerabilities across Windows, Office, SQL Server, SharePoint, Exchange Server, Azure services, and developer tools. The update includes CVE-2026-124194, an actively exploited Outlook zero-day that leaks users’ NTLMv2 authentication hashes to attackers. Security teams must apply the patch immediately to eliminate the credential theft vector and protect enterprise authentication infrastructure.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/microsoft-november-2026-patch-tuesday/",
-    "publishedAt": "2026-11-10T19:01:53.000Z",
-    "cves": [
-      "CVE-2026-124194"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-patch-tuesday-fixes-1-093-vulnerabilitie",
-      "article-1982f712",
-      "1982f712",
-      "microsoft-patch-tuesday-fixes-1-093-vulnerabilitie-63091b",
-      "microsoft-patch-tuesday-fixes-1-093-vulnerabilities-outlook-"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97560-important-runc-security-update-203d049a",
-    "title": "RHSA-2026:97560: Important: runc security update",
-    "summary": "An update for runc is now available for Red Hat Enterprise Linux 9. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97560",
-    "publishedAt": "2026-11-10T19:00:50.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97560-important-runc-security-update",
-      "article-203d049a",
-      "203d049a",
-      "rhsa-2026-97560-important-runc-security-update-37d759"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-97387-important-go-fdo-server-security-u-83121c52",
-    "title": "RHSA-2026:97387: Important: go-fdo-server security update",
-    "summary": "An update for go-fdo-server is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:97387",
-    "publishedAt": "2026-11-10T18:53:20.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-97387-important-go-fdo-server-security-u",
-      "article-83121c52",
-      "83121c52",
-      "rhsa-2026-97387-important-go-fdo-server-security-u-37d760",
-      "rhsa-2026-97387-important-go-fdo-server-security-update"
     ]
   }
 ];
