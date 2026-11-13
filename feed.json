@@ -1,5 +1,24 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+    "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+    "headline": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+    "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-13T16:53:08.000Z",
+    "ingestedAt": "2026-11-13T17:43:23.550Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "cves": [
+      "CVE-2026-6460"
+    ],
+    "additionalSources": [],
+    "isFallback": true
+  },
+  {
     "id": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
     "title": "AI Agent Exposes Five Enterprise Security Gaps",
@@ -8435,22 +8454,5 @@
     "aliases": [
       "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1-0b041a28"
     ]
-  },
-  {
-    "id": "http://www.zerodayinitiative.com/advisories/ZDI-26-921/",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-921/",
-    "title": "Meta fairseq TransformerLanguageModel YAML Injection",
-    "headline": "Meta fairseq TransformerLanguageModel YAML Injection",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "VULNERABILITY",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "ingestedAt": "2026-11-12T00:43:12.922Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "http://www.zerodayinitiative.com/advisories/ZDI-26-921/",
-    "additionalSources": [],
-    "cves": []
   }
 ]

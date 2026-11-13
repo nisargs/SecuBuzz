@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "postgresql-patches-52-flaws-including-22-year-old-2aec0a44",
+    "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+    "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+    "publishedAt": "2026-11-13T16:53:08.000Z",
+    "cves": [
+      "CVE-2026-6460"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "postgresql-patches-52-flaws-including-22-year-old",
+      "article-2aec0a44",
+      "2aec0a44",
+      "postgresql-patches-52-flaws-including-22-year-old-6f38cf",
+      "postgresql-patches-52-flaws-including-22-year-old-bug-enabli"
+    ]
+  },
+  {
     "slug": "ai-agent-exposes-five-enterprise-security-gaps-96bc037f",
     "title": "AI Agent Exposes Five Enterprise Security Gaps",
     "summary": "An AI invoice‑processing agent was tricked by a malicious email to change vendor bank details, exposing five critical security gaps. The gaps arise from weak input validation, absent transaction confirmation, limited authentication, insufficient monitoring, and lack of anomaly detection, allowing credential misuse. Mitigation requires stricter email filtering, mandatory transaction approvals, stronger authentication, continuous monitoring, and regular AI agent security audits.",
@@ -9546,25 +9567,6 @@ export const news: NewsBrief[] = [
       "meta-fairseq-wav2vec2model-yaml-injection-vulnerab-6f3d0f",
       "meta-fairseq-wav2vec2model-yaml-injection-vulnerability",
       "meta-fairseq-yaml-parsing-vulnerability-cve-2026-1-0b041a28"
-    ]
-  },
-  {
-    "slug": "meta-fairseq-transformerlanguagemodel-yaml-injecti-8c16505b",
-    "title": "Meta fairseq TransformerLanguageModel YAML Injection",
-    "summary": "This vulnerability allows remote attackers to execute arbitrary code on affected installations of Meta fairseq. User interaction is required to exploit this vulnerability in that the target must open a malicious file. The ZDI has assigned a CVSS rating of 7.8.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "ZDI Advisories",
-    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-921/",
-    "publishedAt": "2026-11-11T06:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "meta-fairseq-transformerlanguagemodel-yaml-injecti",
-      "article-8c16505b",
-      "8c16505b",
-      "meta-fairseq-transformerlanguagemodel-yaml-injecti-6f3d0f",
-      "meta-fairseq-transformerlanguagemodel-yaml-injection"
     ]
   }
 ];
