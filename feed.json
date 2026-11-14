@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+    "sourceUrl": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+    "title": "Apple Unveils Secure Exclaves for Camera and Microphone Data",
+    "headline": "Apple Unveils Secure Exclaves for Camera and Microphone Data",
+    "summary": "Apple revealed Secure Exclaves that isolate camera and microphone data from the main OS on HomeView and new iPhones. The enclave processes ambient sensor streams, preventing core OS access to raw data and narrowing the privacy‑exploit surface. Developers should use the Secure Enclave API for sensitive data and users should keep devices updated for privacy protection.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-14T11:00:00.000Z",
+    "ingestedAt": "2026-11-14T11:43:13.055Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/cursor-data-breach/",
     "sourceUrl": "https://cybersecuritynews.com/cursor-data-breach/",
     "title": "Cursor Links Fireworks AI Key Leak to Backdoored Extensions",
@@ -458,6 +474,70 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126876",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126876",
+    "title": "Chromium Integer Overflow Affects Microsoft Edge",
+    "headline": "Chromium Integer Overflow Affects Microsoft Edge",
+    "summary": "A Chromium integer overflow (CVE-2026-126876) impacts Microsoft Edge (Chromium-based) via its Chromium code ingestion. The flaw lets an attacker overflow a 32‑bit counter during URL parsing, potentially corrupting memory and enabling arbitrary code execution; no public PoC yet. Microsoft has fixed the issue in Edge releases; users should update to the version or apply the patch from Chrome release notes.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "ingestedAt": "2026-11-14T11:43:13.055Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126876",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126878",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126878",
+    "title": "Chromium Information Leak Affects Microsoft Edge",
+    "headline": "Chromium Information Leak Affects Microsoft Edge",
+    "summary": "A Chromium information‑leak flaw (CVE-2026-126878) targets Microsoft Edge (Chromium-based) through its Chromium code ingestion. The flaw lets an attacker read sensitive data from the browser’s memory during URL processing, potentially exposing credentials or session tokens; no public exploit reported. Microsoft has fixed the issue in Edge releases; users should update to build or apply the patch from Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "ingestedAt": "2026-11-14T11:43:13.055Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126878",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879",
+    "title": "Microsoft Edge Addresses Chromium Use-After-Free Vulnerability",
+    "headline": "Microsoft Edge Addresses Chromium Use-After-Free Vulnerability",
+    "summary": "Microsoft Edge is affected by an upstream browser engine vulnerability identified in the Chromium code base. Cataloged as CVE-2026-126879, the issue involves a use-after-free memory flaw that can lead to remote memory corruption during browser execution. Microsoft released an Edge update incorporating the Chromium patch, and organizations should apply browser updates immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "ingestedAt": "2026-11-14T11:43:38.493Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126879",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126880",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126880",
+    "title": "Microsoft Edge Updates Address Chromium Type Confusion Flaw",
+    "headline": "Microsoft Edge Updates Address Chromium Type Confusion Flaw",
+    "summary": "Microsoft Edge incorporates security fixes to mitigate a browser engine weakness discovered within upstream Chromium software. Tracked as CVE-2026-126880, the flaw results from a type confusion error, enabling potential memory corruption or execution manipulation upon rendering malicious web content. Microsoft published Edge updates containing the resolved Chromium code, recommending security teams deploy updated browser versions to all end-user workstations.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "ingestedAt": "2026-11-14T11:43:38.493Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126880",
     "additionalSources": []
   },
   {
@@ -8196,97 +8276,5 @@
     "isFutureSkew": false,
     "url": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
     "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99015",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99015",
-    "title": "Red Hat Releases Kernel Update for RHEL 8",
-    "headline": "Red Hat Releases Kernel Update for RHEL 8",
-    "summary": "Red Hat issued a kernel update for Red Enterprise Linux 8 addressing multiple moderate‑impact security issues. The update fixes several kernel bugs identified by CVE references, each with a CVSS base score indicating moderate severity; no active exploitation has been reported. Administrators should apply the RHSA‑2026:99015 package to mitigate the vulnerabilities and review the CVE links for detailed impact.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-11T17:02:43.000Z",
-    "ingestedAt": "2026-11-11T18:43:09.171Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99015",
-    "additionalSources": []
-  },
-  {
-    "id": "https://security.paloaltonetworks.com/CVE-2026-0324",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0324",
-    "title": "Palo Alto Patches GlobalProtect Privilege Flaw CVE-2026-0324",
-    "headline": "Palo Alto Patches GlobalProtect Privilege Flaw CVE-2026-0324",
-    "summary": "Palo Alto Networks disclosed an incorrect privilege management vulnerability, designated as CVE-2026-0324, affecting the GlobalProtect App for Windows. The flaw resides within the integrated OPSWAT MetaDefender Endpoint Security SDK, allowing local users to gain elevated system privileges. Administrators are advised to apply vendor software updates and update the underlying SDK component to mitigate privilege escalation risks.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Palo Alto Networks PSIRT",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "ingestedAt": "2026-11-12T10:43:45.656Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://security.paloaltonetworks.com/CVE-2026-0324",
-    "additionalSources": [],
-    "cves": [
-      "CVE-2026-0324"
-    ]
-  },
-  {
-    "id": "https://security.paloaltonetworks.com/CVE-2026-0329",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0329",
-    "title": "PAN-OS Buffer Overflow Vulnerability CVE-2026-0329",
-    "headline": "PAN-OS Buffer Overflow Vulnerability CVE-2026-0329",
-    "summary": "A buffer overflow in PAN-OS’s packet processing code, identified as CVE-2026-0329, could allow attackers to execute arbitrary code. The flaw triggers when the system processes malformed protocol data, with a medium CVSS score; no public exploit is known. Palo Alto Networks has released a patch that fixes the overflow; administrators should apply the update immediately to prevent potential exploitation.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Palo Alto Networks PSIRT",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "ingestedAt": "2026-11-12T07:43:23.723Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://security.paloaltonetworks.com/CVE-2026-0329",
-    "additionalSources": [],
-    "cves": [
-      "CVE-2026-0329"
-    ]
-  },
-  {
-    "id": "https://security.paloaltonetworks.com/CVE-2026-0326",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0326",
-    "title": "PAN-OS Buffer Overflow Vulnerability CVE-2026-0326",
-    "headline": "PAN-OS Buffer Overflow Vulnerability CVE-2026-0326",
-    "summary": "CVE-2026-0326 is a buffer overflow in PAN-OS’s protocol and service processing that could enable code execution. The vulnerability arises from improper bounds checking of service data, with a low CVSS score and no public exploit reported. Palo Alto Networks has issued a patch that corrects the overflow; users should update PAN-OS to the latest version.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Palo Alto Networks PSIRT",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "ingestedAt": "2026-11-12T07:43:23.723Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://security.paloaltonetworks.com/CVE-2026-0326",
-    "additionalSources": [],
-    "cves": [
-      "CVE-2026-0326"
-    ]
-  },
-  {
-    "id": "https://security.paloaltonetworks.com/CVE-2026-0328",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0328",
-    "title": "Palo Alto Networks Addresses PAN-OS User Impersonation Flaw",
-    "headline": "Palo Alto Networks Addresses PAN-OS User Impersonation Flaw",
-    "summary": "Palo Alto Networks published a security advisory detailing a user impersonation vulnerability in the PAN-OS GlobalProtect Portal component. Tracked as CVE-2026-0328, the low-severity issue allows unauthorized identity representation within the portal interface under specific operational conditions. Security teams running affected PAN-OS hardware should consult Palo Alto Networks advisory guidance and apply vendor-recommended software updates.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Palo Alto Networks PSIRT",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "ingestedAt": "2026-11-12T03:53:59.213Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://security.paloaltonetworks.com/CVE-2026-0328",
-    "additionalSources": [],
-    "cves": [
-      "CVE-2026-0328"
-    ]
   }
 ]
