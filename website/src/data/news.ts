@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "faa-ground-stop-likely-software-update-no-hacking-5f2501a2",
+    "title": "FAA Ground Stop Likely Software Update, No Hacking Evidence",
+    "summary": "The nationwide FAA ground stop, triggered by a software update, shows no evidence of a cyberattack behind the outage. Officials attribute the disruption to a misconfigured update rollout, with no signs of malicious intrusion detected by the FBI. Air traffic control operators should verify update integrity and monitor for anomalous behavior, while the FAA continues to investigate the incident.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
+    "publishedAt": "2026-11-14T08:40:22.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "faa-ground-stop-likely-software-update-no-hacking",
+      "article-5f2501a2",
+      "5f2501a2",
+      "faa-ground-stop-likely-software-update-no-hacking-366dd4",
+      "faa-ground-stop-likely-software-update-no-hacking-evidence"
+    ]
+  },
+  {
     "slug": "chromeos-stable-channel-update-m-156-released-5ec1fd09",
     "title": "ChromeOS Stable Channel Update M-156 Released",
     "summary": "Google released ChromeOS version 16836.33.0 (browser 156.0.8078.102) as update M-156 to the Stable channel. The update includes minor bug fixes and performance improvements, with no security vulnerabilities disclosed. ChromeOS users should install the update via the system settings; for any feedback can be reported through the ChromeOS community channels promptly.",
@@ -504,6 +523,90 @@ export const news: NewsBrief[] = [
       "article-4e48330f",
       "4e48330f",
       "openai-launches-chatgpt-wallet-for-agent-payments-25f506"
+    ]
+  },
+  {
+    "slug": "chromium-use-after-free-cve-2026-126865-fixed-in-e-50842b6b",
+    "title": "Chromium Use-After-Free CVE-2026-126865 Fixed in Edge",
+    "summary": "A use-after-free flaw, identified as CVE-2026-126865, exists in Chromium's rendering engine. The vulnerability could allow attackers to execute arbitrary code if a malicious page is rendered, though no public exploit has been reported. Microsoft Edge incorporates the Chromium fix, and users should update to the latest Edge release to mitigate the issue.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126865",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126865"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-126865-fixed-in-e",
+      "article-50842b6b",
+      "50842b6b",
+      "chromium-use-after-free-cve-2026-126865-fixed-in-e-1fdbda",
+      "chromium-use-after-free-cve-2026-126865-fixed-in-edge"
+    ]
+  },
+  {
+    "slug": "chromium-incorrect-authorization-cve-2026-126866-r-39edd995",
+    "title": "Chromium Incorrect Authorization CVE-2026-126866 Resolved in Edge",
+    "summary": "An incorrect authorization flaw, labeled CVE-2026-126866, affects Chromium's permission handling in the browser engine. The defect could enable a malicious site to gain elevated privileges, yet no active exploitation has been documented. Microsoft Edge incorporates the Chromium patch, and users should install the newest Edge version to close the vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126866",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126866"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-incorrect-authorization-cve-2026-126866-r",
+      "article-39edd995",
+      "39edd995",
+      "chromium-incorrect-authorization-cve-2026-126866-r-1fdbda",
+      "chromium-incorrect-authorization-cve-2026-126866-resolved-in"
+    ]
+  },
+  {
+    "slug": "chromium-type-confusion-cve-2026-126868-fixed-in-e-6adc6211",
+    "title": "Chromium Type Confusion CVE‑2026‑126868 Fixed in Edge",
+    "summary": "A type‑confusion vulnerability in Chromium, catalogued as CVE‑2026‑126868, could allow attackers to manipulate memory during rendering operations. Microsoft Edge, built on Chromium, incorporates the upstream patch that eliminates the type‑confusion flaw. Users should update to the latest Edge release or apply the vendor‑supplied patch to mitigate the risk in affected systems. The flaw is tracked as CVE-2026-126868.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126868",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126868"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-type-confusion-cve-2026-126868-fixed-in-e",
+      "article-6adc6211",
+      "6adc6211",
+      "chromium-type-confusion-cve-2026-126868-fixed-in-e-1fdbda",
+      "chromium-type-confusion-cve-2026-126868-fixed-in-edge"
+    ]
+  },
+  {
+    "slug": "chromium-use-after-free-cve-2026-126869-patched-in-acaed216",
+    "title": "Chromium Use‑After‑Free CVE‑2026‑126869 Patched in Edge",
+    "summary": "A use‑after‑free flaw in Chromium, identified as CVE‑2026‑126869, permits attackers to trigger memory corruption during page rendering. Microsoft Edge incorporates the upstream fix that removes the vulnerable memory access. Security teams should upgrade to the latest Edge version or apply the vendor patch to prevent exploitation in affected browsers for all users. The flaw is tracked as CVE-2026-126869.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126869",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126869"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-126869-patched-in",
+      "article-acaed216",
+      "acaed216",
+      "chromium-use-after-free-cve-2026-126869-patched-in-1fdbda",
+      "chromium-use-after-free-cve-2026-126869-patched-in-edge"
     ]
   },
   {
@@ -2095,6 +2198,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "gamers-targeted-by-gta-vi-malware-scams-2c41029d",
+    "title": "Gamers Targeted by GTA VI Malware Scams",
+    "summary": "Cybercriminals are exploiting the hype around the unreleased GTA VI by offering fake early‑access downloads. These downloads are bundled with malware that can steal credentials and install ransomware, yet no confirmed infections have been reported. Users should avoid unofficial sites, verify download sources, and keep anti‑malware solutions up to date to mitigate the threat.",
+    "category": "General",
+    "severity": "MEDIUM",
+    "source": "ESET WeLiveSecurity",
+    "sourceUrl": "https://www.welivesecurity.com/en/cybersecurity/gta-vi-isnt-out-yet-scams-full-swing/",
+    "publishedAt": "2026-11-13T10:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "gamers-targeted-by-gta-vi-malware-scams",
+      "article-2c41029d",
+      "2c41029d",
+      "gamers-targeted-by-gta-vi-malware-scams-130c30"
+    ]
+  },
+  {
     "slug": "top-10-network-vulnerability-scanners-ranked-2026-d1bbbd11",
     "title": "Top 10 Network Vulnerability Scanners Ranked 2026",
     "summary": "Cyber Security News published a 2026 ranking of ten network vulnerability scanners, assessing engine placement, credential distribution, and scan window coordination. The list includes ten brands, noting Tripwire and Digital Defense ship similar capabilities, while other vendors offer differentiated features. Readers can consult the article for detailed scores, vendor comparisons, and deployment recommendations to inform procurement decisions.",
@@ -2504,6 +2625,67 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "aten-eco-dc-arbitrary-file-deletion-vulnerability-a54dfee2",
+    "title": "ATEN eco DC Arbitrary File Deletion Vulnerability CVE-2026-126964",
+    "summary": "ATEN eco DC firmware contains a directory traversal flaw, identified as CVE-2026-126964, that permits arbitrary file deletion. The vulnerability requires authentication and has a CVSS score of 5.5, indicating moderate risk if exploited by privileged users. ATEN recommends applying the latest firmware update, and administrators should restrict access to the fwDeletes.json endpoint to mitigate the issue.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-992/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126964"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aten-eco-dc-arbitrary-file-deletion-vulnerability",
+      "article-a54dfee2",
+      "a54dfee2",
+      "aten-eco-dc-arbitrary-file-deletion-vulnerability-6f3d29",
+      "aten-eco-dc-arbitrary-file-deletion-vulnerability-cve-2026-1"
+    ]
+  },
+  {
+    "slug": "hku-data-lab-nanobot-exposes-ssrf-information-disc-7abb030b",
+    "title": "HKU Data Lab Nanobot Exposes SSRF Information Disclosure",
+    "summary": "A server‑side request forgery flaw in Hong Kong University Data Intelligence Lab’s nanobot WebFetch component lets remote attackers retrieve sensitive data from affected installations. The flaw, requiring product interaction, scores CVSS 9.3 and can be exploited without authentication, exposing internal resources. A vendor patch is pending; administrators should apply it or segment networks to mitigate the SSRF risk.",
+    "category": "Vulnerability",
+    "severity": "CRITICAL",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-972/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hku-data-lab-nanobot-exposes-ssrf-information-disc",
+      "article-7abb030b",
+      "7abb030b",
+      "hku-data-lab-nanobot-exposes-ssrf-information-disc-6f3d22",
+      "hku-data-lab-nanobot-exposes-ssrf-information-disclosure"
+    ]
+  },
+  {
+    "slug": "philips-hue-bridge-exposes-sensitive-data-via-home-48b50bab",
+    "title": "Philips Hue Bridge Exposes Sensitive Data via HomeKit",
+    "summary": "A network‑adjacent information‑disclosure flaw in Philips Hue Bridge HomeKit allows attackers to read sensitive data without authentication. The vulnerability, assigned CVE‑2026‑126980, carries a CVSS score of 6.5 and is exploitable via local network traffic. Philips has released a firmware update; security teams should apply the patch or block the affected ports. The flaw is tracked as CVE-2026-126980.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-965/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126980"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "philips-hue-bridge-exposes-sensitive-data-via-home",
+      "article-48b50bab",
+      "48b50bab",
+      "philips-hue-bridge-exposes-sensitive-data-via-home-6f3d1e",
+      "philips-hue-bridge-exposes-sensitive-data-via-homekit"
     ]
   },
   {
@@ -9433,188 +9615,6 @@ export const news: NewsBrief[] = [
       "07c01504",
       "microsoft-forge-lab-discovers-59-linux-kernel-vuln-240f5f",
       "microsoft-forge-lab-discovers-59-linux-kernel-vulnerabilitie"
-    ]
-  },
-  {
-    "slug": "maersk-breach-exposes-legacy-system-data-24af8572",
-    "title": "Maersk Breach Exposes Legacy System Data",
-    "summary": "Maersk confirmed that a threat actor accessed a legacy local system inherited from a prior acquisition and exfiltrated data. The breach coincided with a WhiteArmor ransomware campaign demanding a $5 million payment, though the ransomware did not encrypt Maersk files. Maersk has engaged incident response teams, applied security patches, and is monitoring for further compromise.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
-    "publishedAt": "2026-11-11T16:24:18.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "maersk-breach-exposes-legacy-system-data",
-      "article-24af8572",
-      "24af8572",
-      "maersk-breach-exposes-legacy-system-data-109cf0"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-99031-moderate-kernel-rt-security-bug-fi-fa1dccca",
-    "title": "RHSA-2026:99031: Moderate: kernel-rt security, bug fix, and enhancement update",
-    "summary": "An update for kernel-rt is now available for Red Hat Enterprise Linux 8. Red Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99031",
-    "publishedAt": "2026-11-11T16:22:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-99031-moderate-kernel-rt-security-bug-fi",
-      "article-fa1dccca",
-      "fa1dccca",
-      "rhsa-2026-99031-moderate-kernel-rt-security-bug-fi-37d683",
-      "rhsa-2026-99031-moderate-kernel-rt-security-bug-fix-and-enha"
-    ]
-  },
-  {
-    "slug": "zoom-workplace-unauthenticated-remote-privilege-es-e9f5a551",
-    "title": "Zoom Workplace Unauthenticated Remote Privilege Escalation CVE",
-    "summary": "Zoom Workplace for Windows is vulnerable to CVE-2026-108186, an unauthenticated remote privilege escalation flaw triggered by improper input validation. The flaw carries a CVSS score of 9.6, enabling attackers to elevate privileges without authentication and potentially compromise affected systems. Zoom has released software updates to address the vulnerability; security teams should apply the patch immediately to mitigate risk.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-    "publishedAt": "2026-11-11T16:12:46.000Z",
-    "cves": [
-      "CVE-2026-108186"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "zoom-workplace-unauthenticated-remote-privilege-es",
-      "article-e9f5a551",
-      "e9f5a551",
-      "zoom-workplace-unauthenticated-remote-privilege-es-1a0771",
-      "zoom-workplace-unauthenticated-remote-privilege-escalation-c"
-    ]
-  },
-  {
-    "slug": "hackers-could-exploit-mcp-server-supply-chain-weak-7b7ec6a2",
-    "title": "Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials",
-    "summary": "Security teams that run AI coding assistants may be exposing their most powerful credentials without knowing it. A new study shows that Model Context Protocol (MCP) servers can quietly change their own code after they are set up. The flaw is tracked as CVE-2026-125271.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-could-exploit-mcp-server/",
-    "publishedAt": "2026-11-11T16:07:18.000Z",
-    "cves": [
-      "CVE-2026-125271"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "hackers-could-exploit-mcp-server-supply-chain-weak",
-      "article-7b7ec6a2",
-      "7b7ec6a2",
-      "hackers-could-exploit-mcp-server-supply-chain-weak-77dca6",
-      "hackers-could-exploit-mcp-server-supply-chain-weaknesses-to-"
-    ]
-  },
-  {
-    "slug": "microsoft-aspire-feature-bypass-cve-2026-118740-ad-d32fb6d1",
-    "title": "Microsoft Aspire Feature Bypass CVE-2026-118740 Addressed",
-    "summary": "CVE-2026-118740, a security feature bypass vulnerability in Microsoft Aspire, was identified. The flaw allows bypassing certain security checks, but no exploitation evidence exists; the CVE was addressed in an informational update with no public PoC. Microsoft released an informational update; users should verify the corrected download links and apply the update as recommended.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118740",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118740"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-aspire-feature-bypass-cve-2026-118740-ad",
-      "article-d32fb6d1",
-      "d32fb6d1",
-      "microsoft-aspire-feature-bypass-cve-2026-118740-ad-1fe90c",
-      "microsoft-aspire-feature-bypass-cve-2026-118740-addressed"
-    ]
-  },
-  {
-    "slug": "asp-net-core-elevation-cve-2026-118741-resolved-19c48e93",
-    "title": "ASP.NET Core Elevation CVE-2026-118741 Resolved",
-    "summary": "CVE-2026-118741, an elevation of privilege vulnerability in ASP.NET Core, was identified. The flaw permits privilege escalation without authentication, yet no exploitation evidence or public PoC has been reported; the CVE was addressed in an informational update. Microsoft issued an informational update; users should apply the patch and verify the corrected security update links.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118741",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118741"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-elevation-cve-2026-118741-resolved",
-      "article-19c48e93",
-      "19c48e93",
-      "asp-net-core-elevation-cve-2026-118741-resolved-1fe90c"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-cve-2026-120778-aspire-privilege-78e866f6",
-    "title": "Microsoft Updates CVE-2026-120778 Aspire Privilege Escalation",
-    "summary": "Microsoft announced an informational update for CVE-2026-120778, an Aspire elevation of privilege vulnerability affecting unspecified products. The update merely adjusts the products listed in the Security Updates table and does not indicate any active exploitation or public proof‑of‑concept. Security teams should review the updated product list and apply any available patches to mitigate the privilege escalation risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120778",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-120778"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-cve-2026-120778-aspire-privilege",
-      "article-78e866f6",
-      "78e866f6",
-      "microsoft-updates-cve-2026-120778-aspire-privilege-1fde97",
-      "microsoft-updates-cve-2026-120778-aspire-privilege-escalatio"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-cve-2026-120796-net-dos-vulnerab-2527c7de",
-    "title": "Microsoft Updates CVE-2026-120796 .NET DoS Vulnerability",
-    "summary": "Microsoft issued an informational update for CVE-2026-120796, a .NET denial of service vulnerability affecting unspecified components. The notice only revises the security updates links and does not report any active exploitation or public proof‑of‑concept. Teams should verify the updated links and apply any relevant patches to prevent potential denial of service incidents.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120796",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-120796"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-cve-2026-120796-net-dos-vulnerab",
-      "article-2527c7de",
-      "2527c7de",
-      "microsoft-updates-cve-2026-120796-net-dos-vulnerab-1fde97",
-      "microsoft-updates-cve-2026-120796-net-dos-vulnerability"
-    ]
-  },
-  {
-    "slug": "asp-net-core-denial-of-service-cve-2026-118750-9f62cf6e",
-    "title": "ASP.NET Core Denial‑of‑Service CVE‑2026‑118750",
-    "summary": "CVE-2026-118750 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed requests. Microsoft has only published an informational update to the Security Updates table, with no active exploitation reported or patch released. Security teams should monitor Microsoft advisories for a forthcoming fix and apply any future ASP.NET Core updates promptly.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118750",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118750"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-denial-of-service-cve-2026-118750",
-      "article-9f62cf6e",
-      "9f62cf6e",
-      "asp-net-core-denial-of-service-cve-2026-118750-1fe90c"
     ]
   }
 ];
