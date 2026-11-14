@@ -2440,7 +2440,18 @@ Return ONLY valid JSON matching this exact structure:
   };
 }
 
-// --- CVE CORROBORATION ENGINE START ---
+// --- UNICODE & CVE CORROBORATION ENGINE START ---
+function cleanUnicodeText(s) {
+  if (!s || typeof s !== 'string') return '';
+  return s
+    .normalize('NFKC')
+    .replace(/[\u2010-\u2015\u2212]/g, '-')
+    .replace(/[\u200B-\u200D\uFEFF]/g, '')
+    .replace(/[\u202A-\u202E]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function normalizeCorroborationHyphens(text) {
   return String(text || '').replace(/[\u2010-\u2015\u2212]/g, '-');
 }
@@ -3336,6 +3347,9 @@ async function deduplicateAndTrimFeed(newArticles, existingArticles) {
     const url = normaliseUrl(art.sourceUrl || art.url || art.id || '');
     if (!url || seenFinalUrls.has(url)) continue;
     seenFinalUrls.add(url);
+    if (art.headline) art.headline = cleanUnicodeText(art.headline);
+    if (art.title) art.title = cleanUnicodeText(art.title);
+    if (art.summary) art.summary = cleanUnicodeText(art.summary);
     dedupedFeed.push(art);
   }
 

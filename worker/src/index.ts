@@ -1014,11 +1014,32 @@ export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
 
-    // Handle CORS preflight
+    // Handle CORS preflight with Strict Origin Guard
     if (request.method === 'OPTIONS') {
+      const origin = request.headers.get('Origin');
+      const isAllowedOrigin =
+        !origin ||
+        origin === 'https://secubuzz.com' ||
+        origin.endsWith('.secubuzz.com') ||
+        origin === 'http://localhost:5173' ||
+        origin === 'http://localhost:3000';
+
+      if (origin && !isAllowedOrigin) {
+        return new Response(null, {
+          status: 403,
+          headers: {
+            ...CORS_HEADERS,
+            'Access-Control-Allow-Origin': 'null',
+          },
+        });
+      }
+
       return new Response(null, {
         status: 204,
-        headers: CORS_HEADERS,
+        headers: {
+          ...CORS_HEADERS,
+          'Access-Control-Allow-Origin': origin && isAllowedOrigin ? origin : '*',
+        },
       });
     }
 
