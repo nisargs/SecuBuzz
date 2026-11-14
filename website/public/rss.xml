@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 11:45:57 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 12:47:10 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hackers Use ARTEX AI Agents for Rapid Privileged Access</title>
+      <link>https://secubuzz.com/news/hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22</guid>
+      <description><![CDATA[Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least‑privilege cloud permissions, patch exposed applications promptly, and implement multi‑factor authentication.]]></description>
+      <pubDate>Sat, 14 Nov 2026 11:21:17 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/">Cyber Security News</source>
+      <category>Vulnerability</category>
+    </item>
     <item>
       <title>Apple Unveils Secure Exclaves for Camera and Microphone Data</title>
       <link>https://secubuzz.com/news/apple-unveils-secure-exclaves-for-camera-and-micro-5fd804ca</link>
@@ -15,6 +24,15 @@
       <pubDate>Sat, 14 Nov 2026 11:00:00 GMT</pubDate>
       <source url="https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/">SecurityWeek</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Phishing Campaign Exploits 365 Service Disruption</title>
+      <link>https://secubuzz.com/news/microsoft-phishing-campaign-exploits-365-service-d-6776ed71</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-phishing-campaign-exploits-365-service-d-6776ed71</guid>
+      <description><![CDATA[Microsoft warns of an active phishing campaign that uses the November 12 Microsoft 365 service disruption to trick users into clicking fake recovery links. The emails mimic Microsoft service health notices and reference the real Exchange Online incident EX1550543, luring users for credential theft. Users should verify email authenticity, avoid suspicious links, and report incidents to Microsoft Security Response Center.]]></description>
+      <pubDate>Sat, 14 Nov 2026 10:57:32 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/active-password-stealing-attack-microsoft-365/">Cyber Security News</source>
+      <category>Breach</category>
     </item>
     <item>
       <title>Cursor Links Fireworks AI Key Leak to Backdoored Extensions</title>
@@ -269,6 +287,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Chromium CVE-2026-126881 Improper Initialization Exploit</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126881-improper-initialization-e-58bafcc4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126881-improper-initialization-e-58bafcc4</guid>
+      <description><![CDATA[Chromium CVE-2026-126881 describes an improper initialization flaw in the Chromium engine. The vulnerability could allow attackers to exploit uninitialized memory, potentially leading to denial of service or memory corruption, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the patch released by Google.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Chromium Integer Overflow Affects Microsoft Edge</title>
       <link>https://secubuzz.com/news/chromium-integer-overflow-affects-microsoft-edge-9ac0c451</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-integer-overflow-affects-microsoft-edge-9ac0c451</guid>
@@ -428,33 +455,6 @@
       <description><![CDATA[Chromium’s CVE-2026-126864 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The flaw results from improper memory handling during object deallocation, potentially enabling arbitrary code execution; no public exploit has been disclosed. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126864">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Uninitialized Resource CVE-2026-126858</title>
-      <link>https://secubuzz.com/news/chromium-uninitialized-resource-cve-2026-126858-6bbfba07</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-uninitialized-resource-cve-2026-126858-6bbfba07</guid>
-      <description><![CDATA[Chromium vulnerability CVE-2026-126858 involves an uninitialized resource that could lead to undefined behavior during rendering. The flaw is present in the Chromium engine and is mitigated by Microsoft Edge (Chromium-based) updates that incorporate the patched engine. Users should update to the latest Microsoft Edge release or apply the Chrome patch to ensure the uninitialized resource is properly handled.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126858">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Addresses Chromium Link Following Vulnerability</title>
-      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-link-following-v-b165923e</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-link-following-v-b165923e</guid>
-      <description><![CDATA[Microsoft published a security advisory for Chromium-based Edge to address an upstream link following vulnerability. Originally assigned by Chrome as CVE-2026-126859, the vulnerability affects the underlying Chromium codebase ingested by Microsoft Edge. Security teams must update Microsoft Edge to the latest release incorporating the Google Chrome fixes for full mitigation.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126859">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium Use‑After‑Free CVE‑2026‑126851 Fixed in Edge</title>
-      <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-126851-fixed-in-e-75f3303d</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-126851-fixed-in-e-75f3303d</guid>
-      <description><![CDATA[Chromium’s use‑after‑free flaw, identified as CVE‑2026‑126851, could allow memory corruption in memory if exploited by an attacker. Microsoft Edge, built on Chromium, incorporates the same fix, eliminating the vulnerability in the browser’s rendering engine. Users should update to the latest Edge release to ensure the use‑after‑free issue is fully patched. The flaw is tracked as CVE-2026-126851.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126851">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>

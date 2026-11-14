@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22",
+    "title": "Hackers Use ARTEX AI Agents for Rapid Privileged Access",
+    "summary": "Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least‑privilege cloud permissions, patch exposed applications promptly, and implement multi‑factor authentication.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
+    "publishedAt": "2026-11-14T11:21:17.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "hackers-use-artex-ai-agents-for-rapid-privileged-a",
+      "article-bb287d22",
+      "bb287d22",
+      "hackers-use-artex-ai-agents-for-rapid-privileged-a-5c2bec",
+      "hackers-use-artex-ai-agents-for-rapid-privileged-access"
+    ]
+  },
+  {
     "slug": "apple-unveils-secure-exclaves-for-camera-and-micro-5fd804ca",
     "title": "Apple Unveils Secure Exclaves for Camera and Microphone Data",
     "summary": "Apple revealed Secure Exclaves that isolate camera and microphone data from the main OS on HomeView and new iPhones. The enclave processes ambient sensor streams, preventing core OS access to raw data and narrowing the privacy‑exploit surface. Developers should use the Secure Enclave API for sensitive data and users should keep devices updated for privacy protection.",
@@ -27,6 +46,25 @@ export const news: NewsBrief[] = [
       "5fd804ca",
       "apple-unveils-secure-exclaves-for-camera-and-micro-7e7834",
       "apple-unveils-secure-exclaves-for-camera-and-microphone-data"
+    ]
+  },
+  {
+    "slug": "microsoft-phishing-campaign-exploits-365-service-d-6776ed71",
+    "title": "Microsoft Phishing Campaign Exploits 365 Service Disruption",
+    "summary": "Microsoft warns of an active phishing campaign that uses the November 12 Microsoft 365 service disruption to trick users into clicking fake recovery links. The emails mimic Microsoft service health notices and reference the real Exchange Online incident EX1550543, luring users for credential theft. Users should verify email authenticity, avoid suspicious links, and report incidents to Microsoft Security Response Center.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/active-password-stealing-attack-microsoft-365/",
+    "publishedAt": "2026-11-14T10:57:32.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-phishing-campaign-exploits-365-service-d",
+      "article-6776ed71",
+      "6776ed71",
+      "microsoft-phishing-campaign-exploits-365-service-d-2361f9",
+      "microsoft-phishing-campaign-exploits-365-service-disruption"
     ]
   },
   {
@@ -561,6 +599,27 @@ export const news: NewsBrief[] = [
       "article-4e48330f",
       "4e48330f",
       "openai-launches-chatgpt-wallet-for-agent-payments-25f506"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-126881-improper-initialization-e-58bafcc4",
+    "title": "Chromium CVE-2026-126881 Improper Initialization Exploit",
+    "summary": "Chromium CVE-2026-126881 describes an improper initialization flaw in the Chromium engine. The vulnerability could allow attackers to exploit uninitialized memory, potentially leading to denial of service or memory corruption, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the patch released by Google.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126881"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126881-improper-initialization-e",
+      "article-58bafcc4",
+      "58bafcc4",
+      "chromium-cve-2026-126881-improper-initialization-e-1fdbd9",
+      "chromium-cve-2026-126881-improper-initialization-exploit"
     ]
   },
   {
@@ -9539,61 +9598,6 @@ export const news: NewsBrief[] = [
       "article-fa711df7",
       "fa711df7",
       "red-hat-releases-net-8-0-security-update-37d683"
-    ]
-  },
-  {
-    "slug": "who-runs-the-ransomware-group-qilin-86b23989",
-    "title": "Who Runs the Ransomware Group Qilin?",
-    "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Krebs on Security",
-    "sourceUrl": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-    "publishedAt": "2026-11-11T18:06:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "who-runs-the-ransomware-group-qilin",
-      "article-86b23989",
-      "86b23989",
-      "who-runs-the-ransomware-group-qilin-1bb2fd"
-    ]
-  },
-  {
-    "slug": "ubuntu-updates-mysql-to-patch-security-issues-aa376998",
-    "title": "Ubuntu Updates MySQL to Patch Security Issues",
-    "summary": "Ubuntu released updates for MySQL, addressing multiple security issues discovered in the database engine across several releases. The patches upgrade MySQL to 8.4.13 on Ubuntu 26.04 LTS, 9.7.4 on 26.10, and backport fixes to 22.04 and 24.04, potentially introducing incompatibilities. Administrators should apply the updated packages immediately and review release notes for any required application adjustments.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9046-1",
-    "publishedAt": "2026-11-11T17:42:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ubuntu-updates-mysql-to-patch-security-issues",
-      "article-aa376998",
-      "aa376998",
-      "ubuntu-updates-mysql-to-patch-security-issues-7e87d3"
-    ]
-  },
-  {
-    "slug": "researchers-disclose-bluephishing-technique-target-cf5d518f",
-    "title": "Researchers Disclose BluePhishing Technique Targeting Microsoft Entra AI Agents",
-    "summary": "Security researchers demonstrated a novel social engineering attack vector, dubbed BluePhishing, targeting Microsoft Entra Agent ID identities within enterprise environments. The technique relies on tricking users into approving fraudulent AI agents, enabling account takeover across Microsoft 365 without stealing passwords or spoofing logins.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
-    "publishedAt": "2026-11-11T17:17:04.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "researchers-disclose-bluephishing-technique-target",
-      "article-cf5d518f",
-      "cf5d518f",
-      "researchers-disclose-bluephishing-technique-target-5c30f4",
-      "researchers-disclose-bluephishing-technique-targeting-micros"
     ]
   }
 ];

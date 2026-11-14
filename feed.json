@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
+    "sourceUrl": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
+    "title": "Hackers Use ARTEX AI Agents for Rapid Privileged Access",
+    "headline": "Hackers Use ARTEX AI Agents for Rapid Privileged Access",
+    "summary": "Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least‑privilege cloud permissions, patch exposed applications promptly, and implement multi‑factor authentication.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-14T11:21:17.000Z",
+    "ingestedAt": "2026-11-14T12:43:16.576Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
+    "additionalSources": []
+  },
+  {
     "id": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
     "sourceUrl": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
     "title": "Apple Unveils Secure Exclaves for Camera and Microphone Data",
@@ -13,6 +29,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://cybersecuritynews.com/active-password-stealing-attack-microsoft-365/",
+    "sourceUrl": "https://cybersecuritynews.com/active-password-stealing-attack-microsoft-365/",
+    "title": "Microsoft Phishing Campaign Exploits 365 Service Disruption",
+    "headline": "Microsoft Phishing Campaign Exploits 365 Service Disruption",
+    "summary": "Microsoft warns of an active phishing campaign that uses the November 12 Microsoft 365 service disruption to trick users into clicking fake recovery links. The emails mimic Microsoft service health notices and reference the real Exchange Online incident EX1550543, luring users for credential theft. Users should verify email authenticity, avoid suspicious links, and report incidents to Microsoft Security Response Center.",
+    "category": "BREACH",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "publishedAt": "2026-11-14T10:57:32.000Z",
+    "ingestedAt": "2026-11-14T12:43:16.577Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://cybersecuritynews.com/active-password-stealing-attack-microsoft-365/",
     "additionalSources": []
   },
   {
@@ -474,6 +506,22 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881",
+    "title": "Chromium CVE-2026-126881 Improper Initialization Exploit",
+    "headline": "Chromium CVE-2026-126881 Improper Initialization Exploit",
+    "summary": "Chromium CVE-2026-126881 describes an improper initialization flaw in the Chromium engine. The vulnerability could allow attackers to exploit uninitialized memory, potentially leading to denial of service or memory corruption, though no active exploitation has been reported. Microsoft Edge users should update to the latest Chromium-based release, and Chrome users should apply the patch released by Google.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "ingestedAt": "2026-11-14T12:43:16.577Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126881",
     "additionalSources": []
   },
   {
@@ -8226,55 +8274,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://access.redhat.com/errata/RHSA-2026:99052",
-    "additionalSources": []
-  },
-  {
-    "id": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-    "sourceUrl": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-    "title": "Who Runs the Ransomware Group Qilin?",
-    "headline": "Who Runs the Ransomware Group Qilin?",
-    "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St.",
-    "category": "Ransomware",
-    "severity": "HIGH",
-    "source": "Krebs on Security",
-    "publishedAt": "2026-11-11T18:06:01.000Z",
-    "ingestedAt": "2026-11-11T18:43:43.459Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "cves": [],
-    "additionalSources": [],
-    "isFallback": true
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-9046-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9046-1",
-    "title": "Ubuntu Updates MySQL to Patch Security Issues",
-    "headline": "Ubuntu Updates MySQL to Patch Security Issues",
-    "summary": "Ubuntu released updates for MySQL, addressing multiple security issues discovered in the database engine across several releases. The patches upgrade MySQL to 8.4.13 on Ubuntu 26.04 LTS, 9.7.4 on 26.10, and backport fixes to 22.04 and 24.04, potentially introducing incompatibilities. Administrators should apply the updated packages immediately and review release notes for any required application adjustments.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-11T17:42:27.000Z",
-    "ingestedAt": "2026-11-11T21:44:01.277Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-9046-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
-    "sourceUrl": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
-    "title": "Researchers Disclose BluePhishing Technique Targeting Microsoft Entra AI Agents",
-    "headline": "Researchers Disclose BluePhishing Technique Targeting Microsoft Entra AI Agents",
-    "summary": "Security researchers demonstrated a novel social engineering attack vector, dubbed BluePhishing, targeting Microsoft Entra Agent ID identities within enterprise environments. The technique relies on tricking users into approving fraudulent AI agents, enabling account takeover across Microsoft 365 without stealing passwords or spoofing logins.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Cyber Security News",
-    "publishedAt": "2026-11-11T17:17:04.000Z",
-    "ingestedAt": "2026-11-12T03:53:59.213Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
     "additionalSources": []
   }
 ]
