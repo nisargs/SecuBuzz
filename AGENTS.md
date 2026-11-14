@@ -153,7 +153,7 @@
 
 ## 6. Native `.aab` Releases & Production Updates
 - **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Git `3e7bc4a`):**
-  - **Edge Security Architecture & Audit Hardening Overhaul (Nov 14, 2026 / Worker Version `b5947d85-9ded-4d42-8d26-391284b8151c` / Live on `secubuzz.com`)**:
+  - **Edge Security Architecture & Audit Hardening Overhaul (Nov 14, 2026 / Worker Version `b5947d85-9ded-4d42-8d26-391284b8151c` / Commit `51279a0` / Live on `secubuzz.com`)**:
     - *Scope & Verification*: Addressed external adversarial security audit findings across CSP, CORS, header hygiene, and write endpoint guards with 100% verified live edge telemetry.
     - *H1 Resolved (Content-Security-Policy)*: Implemented strict edge CSP header on all HTML and error responses (`default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://secubuzz.com https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev https://pagead2.googlesyndication.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none';`).
     - *M1 Resolved (CORS & Admin Header Privacy)*: Dropped `x-admin-key` from public `Access-Control-Allow-Headers`. Implemented Drive-by Browser Origin Guard rejecting cross-origin browser POSTs from untrusted web origins with HTTP 403, while cleanly admitting native mobile apps (null origin) and legitimate `secubuzz.com` browser requests.
