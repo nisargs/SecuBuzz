@@ -507,6 +507,47 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-uninitialized-resource-cve-2026-126858-6bbfba07",
+    "title": "Chromium Uninitialized Resource CVE-2026-126858",
+    "summary": "Chromium vulnerability CVE-2026-126858 involves an uninitialized resource that could lead to undefined behavior during rendering. The flaw is present in the Chromium engine and is mitigated by Microsoft Edge (Chromium-based) updates that incorporate the patched engine. Users should update to the latest Microsoft Edge release or apply the Chrome patch to ensure the uninitialized resource is properly handled.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126858",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126858"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-uninitialized-resource-cve-2026-126858",
+      "article-6bbfba07",
+      "6bbfba07",
+      "chromium-uninitialized-resource-cve-2026-126858-1fdbda"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-link-following-v-b165923e",
+    "title": "Microsoft Edge Addresses Chromium Link Following Vulnerability",
+    "summary": "Microsoft published a security advisory for Chromium-based Edge to address an upstream link following vulnerability. Originally assigned by Chrome as CVE-2026-126859, the vulnerability affects the underlying Chromium codebase ingested by Microsoft Edge. Security teams must update Microsoft Edge to the latest release incorporating the Google Chrome fixes for full mitigation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126859",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126859"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-link-following-v",
+      "article-b165923e",
+      "b165923e",
+      "microsoft-edge-addresses-chromium-link-following-v-1fdbda",
+      "microsoft-edge-addresses-chromium-link-following-vulnerabili"
+    ]
+  },
+  {
     "slug": "chromium-use-after-free-cve-2026-126851-fixed-in-e-75f3303d",
     "title": "Chromium Use‑After‑Free CVE‑2026‑126851 Fixed in Edge",
     "summary": "Chromium’s use‑after‑free flaw, identified as CVE‑2026‑126851, could allow memory corruption in memory if exploited by an attacker. Microsoft Edge, built on Chromium, incorporates the same fix, eliminating the vulnerability in the browser’s rendering engine. Users should update to the latest Edge release to ensure the use‑after‑free issue is fully patched. The flaw is tracked as CVE-2026-126851.",
@@ -2382,6 +2423,88 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "zdi-26-1009-pwn2own-synology-diskstation-ds925-c2-df4a7d94",
+    "title": "ZDI-26-1009: (Pwn2Own) Synology DiskStation DS925+ C2 Identity Plugin Exposed Dangerous Method Information Disclosure Vulnerability",
+    "summary": "This vulnerability allows network-adjacent attackers to disclose sensitive information on affected installations of Synology DiskStation DS925+ devices. Authentication is not required to exploit this vulnerability. The following CVEs are assigned: CVE-2025-14713.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1009/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2025-14713"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-1009-pwn2own-synology-diskstation-ds925-c2",
+      "article-df4a7d94",
+      "df4a7d94",
+      "zdi-26-1009-pwn2own-synology-diskstation-ds925-c2-77f339",
+      "zdi-26-1009-pwn2own-synology-diskstation-ds925-c2-identity-p"
+    ]
+  },
+  {
+    "slug": "qualcomm-qca7005-heap-overflow-enables-code-execut-6670f08e",
+    "title": "Qualcomm QCA7005 Heap Overflow Enables Code Execution",
+    "summary": "A heap-based buffer overflow in Qualcomm Technologies QCA7005 GreenPhy powerline chips permits physically present attackers to execute arbitrary code without authentication. The flaw, identified as CVE-2026-25293, carries a CVSS score of 6.8, indicating a code execution risk that requires presence. Qualcomm has released a patch; security teams should apply the update or disable the vulnerable feature to mitigate exploitation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-1008/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-25293"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "qualcomm-qca7005-heap-overflow-enables-code-execut",
+      "article-6670f08e",
+      "6670f08e",
+      "qualcomm-qca7005-heap-overflow-enables-code-execut-77f339",
+      "qualcomm-qca7005-heap-overflow-enables-code-execution"
+    ]
+  },
+  {
+    "slug": "smartermail-missing-authorization-disclosure-3bfad260",
+    "title": "SmarterMail Missing Authorization Disclosure",
+    "summary": "A missing authorization check in SmarterTools SmarterMail allows authenticated attackers to disclose sensitive configuration data. The flaw, identified as CVE-2026-126968, carries a CVSS score of 6.5 and requires valid credentials to exploit, exposing internal settings and potentially user credentials. SmarterMail vendors have released a patch; administrators should apply the update immediately and verify that access controls are correctly enforced.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-996/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126968"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "smartermail-missing-authorization-disclosure",
+      "article-3bfad260",
+      "3bfad260",
+      "smartermail-missing-authorization-disclosure-6f3d2a"
+    ]
+  },
+  {
+    "slug": "aten-eco-dc-sql-injection-disclosure-fac985c2",
+    "title": "ATEN eco DC SQL Injection Disclosure",
+    "summary": "ATEN eco DC’s chartDefine component contains a SQL injection flaw that permits authenticated attackers to retrieve sensitive data. The vulnerability, labeled CVE-2026-126965, has a CVSS score of 2.7 and requires valid credentials, limiting its impact to users with access rights. ATEN has issued a patch; users should update the firmware and review database access controls to mitigate the risk.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-993/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126965"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "aten-eco-dc-sql-injection-disclosure",
+      "article-fac985c2",
+      "fac985c2",
+      "aten-eco-dc-sql-injection-disclosure-6f3d2a"
     ]
   },
   {
@@ -9497,131 +9620,6 @@ export const news: NewsBrief[] = [
       "0d270cd7",
       "asp-net-core-security-feature-bypass-cve-2026-1141-1feaf4",
       "asp-net-core-security-feature-bypass-cve-2026-114157"
-    ]
-  },
-  {
-    "slug": "aspire-elevation-of-privilege-cve-2026-120006-c6630772",
-    "title": "Aspire Elevation of Privilege CVE-2026-120006",
-    "summary": "CVE-2026-120006 is an elevation of privilege flaw in Microsoft Aspire, allowing attackers to gain higher privileges within the application. The vulnerability arises from insufficient access control checks; no active exploitation has been reported, and the update is informational only. Microsoft has issued an informational notice; administrators should review privilege assignments but no patch is required.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120006",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-120006"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aspire-elevation-of-privilege-cve-2026-120006",
-      "article-c6630772",
-      "c6630772",
-      "aspire-elevation-of-privilege-cve-2026-120006-1fdeb3"
-    ]
-  },
-  {
-    "slug": "asp-net-core-cve-2026-114150-information-disclosur-12b4cf9e",
-    "title": "ASP.NET Core CVE-2026-114150 Information Disclosure Update",
-    "summary": "Microsoft issued an informational update for the ASP.NET Core information disclosure vulnerability identified as CVE-2026-114150. The update clarifies security update links and related information but does not provide a patch or exploit details. Users should review the updated documentation, though no active exploitation has been reported.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114150",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114150"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-cve-2026-114150-information-disclosur",
-      "article-12b4cf9e",
-      "12b4cf9e",
-      "asp-net-core-cve-2026-114150-information-disclosur-1feaf4",
-      "asp-net-core-cve-2026-114150-information-disclosure-update"
-    ]
-  },
-  {
-    "slug": "asp-net-core-cve-2026-114154-denial-of-service-upd-820a074c",
-    "title": "ASP.NET Core CVE-2026-114154 Denial of Service Update",
-    "summary": "Microsoft released an informational update for the ASP.NET Core denial of service vulnerability identified as CVE-2026-114154. The update adjusts the product list in the security updates table but does not provide a patch or exploit details. Administrators should verify that their deployments are listed, though no active exploitation has been reported.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114154",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114154"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-cve-2026-114154-denial-of-service-upd",
-      "article-820a074c",
-      "820a074c",
-      "asp-net-core-cve-2026-114154-denial-of-service-upd-1feaf4",
-      "asp-net-core-cve-2026-114154-denial-of-service-update"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-net-elevation-of-privilege-advis-cfa9fdfb",
-    "title": "Microsoft Updates .NET Elevation of Privilege Advisory",
-    "summary": "Microsoft updated documentation regarding an elevation of privilege flaw identified as CVE-2026-114155 in the .NET framework. The underlying security vulnerability allows local unauthorized users to gain elevated system privileges across impacted software components. Administrators are advised to review the updated security guidance links and deploy the latest .NET updates to ensure system protection.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114155",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114155"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-net-elevation-of-privilege-advis",
-      "article-cfa9fdfb",
-      "cfa9fdfb",
-      "microsoft-updates-net-elevation-of-privilege-advis-1feaf4",
-      "microsoft-updates-net-elevation-of-privilege-advisory"
-    ]
-  },
-  {
-    "slug": "microsoft-revises-asp-net-core-security-bypass-adv-8988610a",
-    "title": "Microsoft Revises ASP.NET Core Security Bypass Advisory",
-    "summary": "Microsoft issued an informational update regarding a security feature bypass vulnerability tracked as CVE-2026-114156 in ASP.NET Core. The underlying security flaw affects ASP.NET Core mechanisms, while the current advisory update modifies link details and documentation without introducing software modifications. System administrators should consult the revised Microsoft update links to confirm patch implementation and ensure defensive mitigations remain active.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114156",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114156"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-revises-asp-net-core-security-bypass-adv",
-      "article-8988610a",
-      "8988610a",
-      "microsoft-revises-asp-net-core-security-bypass-adv-1feaf4",
-      "microsoft-revises-asp-net-core-security-bypass-advisory"
-    ]
-  },
-  {
-    "slug": "asp-net-core-vulnerability-enables-denial-of-servi-effa4853",
-    "title": "ASP.NET Core Vulnerability Enables Denial of Service",
-    "summary": "CVE‑2026‑114149 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed HTTP requests. The vulnerability allows attackers to exhaust server resources, causing legitimate traffic to be dropped without code execution. Microsoft has released an update; administrators should apply the latest ASP.NET Core patch to mitigate the DoS risk. The flaw is tracked as CVE-2026-114149.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114149",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114149"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-vulnerability-enables-denial-of-servi",
-      "article-effa4853",
-      "effa4853",
-      "asp-net-core-vulnerability-enables-denial-of-servi-1feaf4",
-      "asp-net-core-vulnerability-enables-denial-of-service"
     ]
   }
 ];

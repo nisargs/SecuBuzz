@@ -4982,5 +4982,12 @@
   "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
   "http://www.zerodayinitiative.com/advisories/ZDI-26-960/",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126853",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126854"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126854",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1009/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-1008/",
+  "https://isc.sans.edu/diary/rss/33510",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-996/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-993/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126858",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126859"
 ]
