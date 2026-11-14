@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "n-central-zero-day-rce-exploited-by-4everable2shel-f8fdae3d",
+    "title": "N‑Central Zero‑Day RCE Exploited by 4EverAble2Shell",
+    "summary": "Threat actors exploit CVE-2026-90436, a zero‑day RCE in N‑able N‑Central servers, using the 4EverAble2Shell tool in the wild. The flaw permits unauthenticated code execution, creating a high‑severity risk for N‑Central users worldwide. Apply the vendor’s patch, deploy the Sigma rules, and monitor Apache Axis telemetry to detect and block the exploitation.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/cve-2026-90436-n-central-4everable2shell-zero-day-rce",
+    "publishedAt": "2026-11-14T03:05:27.000Z",
+    "cves": [
+      "CVE-2026-90436"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "n-central-zero-day-rce-exploited-by-4everable2shel",
+      "article-f8fdae3d",
+      "f8fdae3d",
+      "n-central-zero-day-rce-exploited-by-4everable2shel-5fc75f",
+      "n-central-zero-day-rce-exploited-by-4everable2shell"
+    ]
+  },
+  {
     "slug": "uber-confirms-driver-data-breach-by-fireworks-ai-h-33a7b6d3",
     "title": "Uber Confirms Driver Data Breach by Fireworks AI Hackers",
     "summary": "Uber confirmed a breach exposing personal data of thousands of U.S. drivers after hackers accessed records held by Fireworks AI. Exposed data includes driver license details; Uber is notifying affected individuals while the total number impacted nationwide remains undisclosed. Security teams should monitor for credential misuse, enforce MFA, and verify Fireworks AI’s data controls to mitigate further exposure.",
@@ -1423,6 +1444,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-365-outage-persists-as-restored-servers-5c484090",
+    "title": "Microsoft 365 Outage Persists as Restored Servers Fail",
+    "summary": "A global Microsoft 365 outage lasted over 10 hours from November 12 to November 13, 2026, with restored servers becoming unresponsive under user traffic. Microsoft engineers have not found a fix that holds, and servers brought back online fail again when traffic reaches them. No root cause or durable remediation was disclosed, leaving customers dependent on ongoing restoration efforts.",
+    "category": "General",
+    "severity": "HIGH",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/microsoft-365-massive-outage-fixes-fail-as-restored-servers-keep-going-unresponsive/",
+    "publishedAt": "2026-11-13T11:31:40.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-365-outage-persists-as-restored-servers",
+      "article-5c484090",
+      "5c484090",
+      "microsoft-365-outage-persists-as-restored-servers-6c9243",
+      "microsoft-365-outage-persists-as-restored-servers-fail"
+    ]
+  },
+  {
     "slug": "hackers-use-windows-named-pipes-and-smb-to-spread-ee410fed",
     "title": "Hackers Use Windows Named Pipes and SMB to Spread Malware Across Isolated Government Networks",
     "summary": "A new espionage group is using Windows named pipes and the SMB file-sharing protocol to move malware through tightly separated networks. Positive Technologies calls the group StingyBasilisk. It has been active since at least April 2022.",
@@ -2048,6 +2088,90 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "trendai-agent-heap-overflow-enables-local-privileg-ca133de0",
+    "title": "TrendAI Agent Heap Overflow Enables Local Privilege Escalation",
+    "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer lets local attackers elevate privileges on affected installations. The flaw, CVE-2026-111785, requires low‑privileged code execution and carries a CVSS score of 7.8, indicating high‑severity impact. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-984/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111785"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-agent-heap-overflow-enables-local-privileg",
+      "article-ca133de0",
+      "ca133de0",
+      "trendai-agent-heap-overflow-enables-local-privileg-6f3d26",
+      "trendai-agent-heap-overflow-enables-local-privilege-escalati"
+    ]
+  },
+  {
+    "slug": "trendai-agent-null-dereference-allows-local-privil-7aefab62",
+    "title": "TrendAI Agent Null Dereference Allows Local Privilege Escalation",
+    "summary": "A null pointer dereference in TrendAI Vision One Security Agent’s TMBMServer permits local attackers to elevate privileges on affected installations. The vulnerability, CVE-2026-111784, requires low‑privileged code execution and has a CVSS score of 7.8, marking it as high‑severity. TrendAI has released a patch; apply it promptly or use the provided workaround to stop the privilege escalation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-983/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111784"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-agent-null-dereference-allows-local-privil",
+      "article-7aefab62",
+      "7aefab62",
+      "trendai-agent-null-dereference-allows-local-privil-6f3d26",
+      "trendai-agent-null-dereference-allows-local-privilege-escala"
+    ]
+  },
+  {
+    "slug": "trendai-agent-heap-overflow-grants-local-privilege-5031d674",
+    "title": "TrendAI Agent Heap Overflow Grants Local Privilege Escalation",
+    "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer allows local attackers to gain elevated privileges on affected installations. The flaw, CVE-2026-111783, requires low‑privileged code execution and carries a CVSS score of 7.8, indicating high‑severity risk. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-982/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111783"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-agent-heap-overflow-grants-local-privilege",
+      "article-5031d674",
+      "5031d674",
+      "trendai-agent-heap-overflow-grants-local-privilege-6f3d26",
+      "trendai-agent-heap-overflow-grants-local-privilege-escalatio"
+    ]
+  },
+  {
+    "slug": "zdi-26-981-trendai-vision-one-security-agent-stack-def4ce05",
+    "title": "ZDI-26-981: TrendAI Vision One Security Agent Stack-based Buffer Overflow Local Privilege Escalation Vulnerability",
+    "summary": "This vulnerability allows local attackers to escalate privileges on affected installations of TrendAI Vision One Security Agent. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability. The following CVEs are assigned: CVE-2026-111782.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-981/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111782"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "zdi-26-981-trendai-vision-one-security-agent-stack",
+      "article-def4ce05",
+      "def4ce05",
+      "zdi-26-981-trendai-vision-one-security-agent-stack-6f3d26",
+      "zdi-26-981-trendai-vision-one-security-agent-stack-based-buf"
     ]
   },
   {
@@ -2768,6 +2892,24 @@ export const news: NewsBrief[] = [
       "article-6ce49751",
       "6ce49751",
       "tsmc-employee-data-exposed-via-third-party-cloud-285bea"
+    ]
+  },
+  {
+    "slug": "ibm-survey-finds-digital-sovereignty-audit-gaps-836c1277",
+    "title": "IBM Survey Finds Digital Sovereignty Audit Gaps",
+    "summary": "IBM's Digital Sovereignty Index found 94% of surveyed enterprises faced at least one digital sovereignty challenge in three years. Of those affected, 91% had to demonstrate retained control during their hardest event, and 81% gave formal evidence to regulators, auditors, customers, or stakeholders. The report defines digital sovereignty as retaining control and providing credible evidence across critical AI systems.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Help Net Security",
+    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/13/ibm-digital-sovereignty-challenges-report/",
+    "publishedAt": "2026-11-13T05:00:54.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ibm-survey-finds-digital-sovereignty-audit-gaps",
+      "article-836c1277",
+      "836c1277",
+      "ibm-survey-finds-digital-sovereignty-audit-gaps-5f8478"
     ]
   },
   {
@@ -9452,140 +9594,6 @@ export const news: NewsBrief[] = [
       "54d0cb1a",
       "red-hat-releases-kernel-security-update-for-rhel-1-37d6e1",
       "red-hat-releases-kernel-security-update-for-rhel-10"
-    ]
-  },
-  {
-    "slug": "qlik-sense-servers-targeted-by-reverse-shell-attem-b382a9bf",
-    "title": "Qlik Sense Servers Targeted by Reverse Shell Attempts",
-    "summary": "Threat actors targeted Qlik Sense servers in October 2026, attempting to deliver PowerShell reverse shells across multiple environments. The activity, observed by Cynet's CyOps and Research teams, involved a narrow three‑minute window and failed to achieve code execution or credential compromise. Security teams should monitor for similar attempts and ensure Qlik Sense is patched to the latest version.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-    "publishedAt": "2026-11-11T14:01:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "qlik-sense-servers-targeted-by-reverse-shell-attem",
-      "article-b382a9bf",
-      "b382a9bf",
-      "qlik-sense-servers-targeted-by-reverse-shell-attem-43fcd1",
-      "qlik-sense-servers-targeted-by-reverse-shell-attempts"
-    ]
-  },
-  {
-    "slug": "asus-zoom-issue-patches-for-execution-flaws-8bf454f6",
-    "title": "Asus, Zoom Issue Patches for Execution Flaws",
-    "summary": "Asus and Zoom released security patches addressing critical flaws that could allow attackers to execute arbitrary code, overwrite memory, and elevate privileges. The vulnerabilities involve memory corruption and privilege escalation paths, potentially enabling full system compromise if exploited. Users should install the latest updates for both Asus firmware and Zoom client immediately to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/asus-zoom-release-security-patches/",
-    "publishedAt": "2026-11-11T13:58:38.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "asus-zoom-issue-patches-for-execution-flaws",
-      "article-8bf454f6",
-      "8bf454f6",
-      "asus-zoom-issue-patches-for-execution-flaws-33d66f"
-    ]
-  },
-  {
-    "slug": "windows-signdrop-0-day-exploit-lets-attackers-gain-0c53ce65",
-    "title": "Windows SignDrop 0-Day Exploit Lets Attackers Gain SYSTEM Privileges Through CLFS Protection",
-    "summary": "A public exploit called SignDrop targets a Windows security feature meant to stop attacks on the Common Log File System (CLFS). It claims to turn a normal user account into a SYSTEM account, the highest level of control on Windows. The flaw has no CVE number and no patch as of November 11, 2026. The flaw is tracked as CVE-2026-97015.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Cyber Security News",
-    "sourceUrl": "https://cybersecuritynews.com/windows-signdrop-zero-day-exploit/",
-    "publishedAt": "2026-11-11T13:57:20.000Z",
-    "cves": [
-      "CVE-2026-97015"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "windows-signdrop-0-day-exploit-lets-attackers-gain",
-      "article-0c53ce65",
-      "0c53ce65",
-      "windows-signdrop-0-day-exploit-lets-attackers-gain-5900c9",
-      "windows-signdrop-0-day-exploit-lets-attackers-gain-system-pr"
-    ]
-  },
-  {
-    "slug": "embed-security-updates-ai-soc-platform-for-custom-76e60024",
-    "title": "Embed Security Updates AI SOC Platform for Custom Investigations",
-    "summary": "Embed Security released updated capabilities for its AI SOC Platform to enhance threat detection engineering. The update introduces customer-built iSteps, NoiseIQ Memories, and Detection Engineering modules, allowing analysts to embed operational knowledge directly into the autonomous decision layer. Security operations teams can utilize these features to apply custom organizational expertise across continuous SOC workflows.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/embed-security-expands-ai-soc-platform/",
-    "publishedAt": "2026-11-11T13:54:12.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "embed-security-updates-ai-soc-platform-for-custom",
-      "article-76e60024",
-      "76e60024",
-      "embed-security-updates-ai-soc-platform-for-custom-2b3726",
-      "embed-security-updates-ai-soc-platform-for-custom-investigat"
-    ]
-  },
-  {
-    "slug": "remus-malware-claims-persistent-gmail-access-after-81bdb562",
-    "title": "Remus Malware Claims Persistent Gmail Access After Reset",
-    "summary": "The Remus infostealer asserts it can maintain Gmail access even after victims reset their passwords. The malware reportedly exploits credential persistence mechanisms, potentially leveraging OAuth tokens or cached credentials to bypass password changes. Users should revoke app permissions, enable two‑factor authentication, and monitor account activity regularly to mitigate the threat.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/remus-malware-claims-gmail-access-even-after-you-change-your-password",
-    "publishedAt": "2026-11-11T13:42:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "remus-malware-claims-persistent-gmail-access-after",
-      "article-81bdb562",
-      "81bdb562",
-      "remus-malware-claims-persistent-gmail-access-after-b7f879",
-      "remus-malware-claims-persistent-gmail-access-after-reset"
-    ]
-  },
-  {
-    "slug": "rhsa-2026-98592-important-go-fdo-client-security-u-9fe8f942",
-    "title": "RHSA-2026:98592: Important: go-fdo-client security update",
-    "summary": "An update for go-fdo-client is now available for Red Hat Enterprise Linux 10. Red Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98592",
-    "publishedAt": "2026-11-11T13:41:42.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "rhsa-2026-98592-important-go-fdo-client-security-u",
-      "article-9fe8f942",
-      "9fe8f942",
-      "rhsa-2026-98592-important-go-fdo-client-security-u-37d6e4",
-      "rhsa-2026-98592-important-go-fdo-client-security-update"
-    ]
-  },
-  {
-    "slug": "citrix-ivanti-release-patches-for-rce-vulnerabilit-9b10f27d",
-    "title": "Citrix, Ivanti Release Patches for RCE Vulnerabilities",
-    "summary": "Citrix and Ivanti disclosed critical vulnerabilities that let attackers tamper with certificate entries and achieve remote code execution on affected hosts. The flaws arise from improper certificate validation, enabling arbitrary code execution and full host compromise; no public exploit is confirmed. Both vendors released patches; administrators should apply updates immediately and verify certificate integrity to mitigate risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
-    "publishedAt": "2026-11-11T13:37:19.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "citrix-ivanti-release-patches-for-rce-vulnerabilit",
-      "article-9b10f27d",
-      "9b10f27d",
-      "citrix-ivanti-release-patches-for-rce-vulnerabilit-3eadc4",
-      "citrix-ivanti-release-patches-for-rce-vulnerabilities"
     ]
   }
 ];
