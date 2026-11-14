@@ -235,6 +235,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chrome-dev-channel-updated-to-160-0-8157-0-604ea908",
+    "title": "Chrome Dev Channel Updated to 160.0.8157.0",
+    "summary": "Google Chrome Dev channel updated to version 160.0.8157.0 across Windows, macOS, and Linux. The update includes various bug fixes and performance improvements, with a partial list of changes available in the Git log, and addresses several security patches. Users are encouraged to update to the latest Dev build to benefit from these enhancements.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_01047619778.html",
+    "publishedAt": "2026-11-13T17:43:38.271Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chrome-dev-channel-updated-to-160-0-8157-0",
+      "article-604ea908",
+      "604ea908",
+      "chrome-dev-channel-updated-to-160-0-8157-0-56cc33"
+    ]
+  },
+  {
     "slug": "quantum-systems-reports-drone-operation-disruption-4c32ae5e",
     "title": "Quantum Systems Reports Drone Operation Disruption by Cyberattack",
     "summary": "Quantum Systems, a German defense tech firm, reported hostile actors disrupted its drone operations in late October. The attack targeted operational control systems, causing temporary loss of flight control and mission data integrity, with no physical damage reported. Quantum Systems is conducting forensic analysis, applied emergency firmware patches, and advises operators to enforce stricter access controls and continuous monitoring.",
@@ -270,6 +288,25 @@ export const news: NewsBrief[] = [
       "b90429e7",
       "university-of-texas-at-arlington-warns-personal-in-57eede",
       "university-of-texas-at-arlington-warns-personal-information-"
+    ]
+  },
+  {
+    "slug": "green-agent-remediation-plan-for-internet-facing-c-0f7616b0",
+    "title": "Green Agent: Remediation Plan for Internet‑Facing Container",
+    "summary": "Wiz Research’s Green Agent case study examines an internet‑facing container that exposed sensitive data. The team identified misconfigurations and privilege escalations, then crafted a remediation plan that balanced security urgency with business continuity, producing ready‑to‑merge pull requests. Security teams can adopt the outlined mitigations to harden similar container deployments in production.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Wiz Research",
+    "sourceUrl": "https://www.wiz.io/blog/inside-green-agent-investigation",
+    "publishedAt": "2026-11-13T17:05:02.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "green-agent-remediation-plan-for-internet-facing-c",
+      "article-0f7616b0",
+      "0f7616b0",
+      "green-agent-remediation-plan-for-internet-facing-c-151148",
+      "green-agent-remediation-plan-for-internet-facing-container"
     ]
   },
   {
@@ -329,6 +366,69 @@ export const news: NewsBrief[] = [
       "12ca6dd7",
       "check-point-gateways-targeted-by-php2shell-for-esx-276e8a",
       "check-point-gateways-targeted-by-php2shell-for-esxi-wiper"
+    ]
+  },
+  {
+    "slug": "microsoft-windows-graphics-kernel-elevation-vulner-d0e764fd",
+    "title": "Microsoft Windows Graphics Kernel Elevation Vulnerability",
+    "summary": "A kernel privilege‑escalation flaw in Windows Graphics allows local users to gain elevated rights. The vulnerability, identified as 'CVE-2026-95948', lacks a public exploit but could enable privilege abuse if exploited by malicious code. Microsoft recommends applying the latest Office update that includes the patch, and administrators should enforce least‑privilege policies.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95948",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-95948"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-windows-graphics-kernel-elevation-vulner",
+      "article-d0e764fd",
+      "d0e764fd",
+      "microsoft-windows-graphics-kernel-elevation-vulner-7431da",
+      "microsoft-windows-graphics-kernel-elevation-vulnerability"
+    ]
+  },
+  {
+    "slug": "microsoft-windows-codecs-library-remote-code-execu-063796a4",
+    "title": "Microsoft Windows Codecs Library Remote Code Execution",
+    "summary": "An unauthenticated remote code execution flaw exists in the Windows Codecs Library, enabling attackers to run arbitrary code. The issue, labeled 'CVE-2026-113749', is not yet publicly exploited but could be leveraged by scripts targeting vulnerable systems. Microsoft advises installing the Office update that contains the fix and validating codec configurations to mitigate risk.",
+    "category": "CVE",
+    "severity": "CRITICAL",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113749",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-113749"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-windows-codecs-library-remote-code-execu",
+      "article-063796a4",
+      "063796a4",
+      "microsoft-windows-codecs-library-remote-code-execu-1feb52",
+      "microsoft-windows-codecs-library-remote-code-execution"
+    ]
+  },
+  {
+    "slug": "cve-2026-96150-microsoft-windows-codecs-library-in-e13c1260",
+    "title": "CVE-2026-96150 Microsoft Windows Codecs Library Information Disclosure Vulnerability",
+    "summary": "Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96150",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-96150"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "cve-2026-96150-microsoft-windows-codecs-library-in",
+      "article-e13c1260",
+      "e13c1260",
+      "cve-2026-96150-microsoft-windows-codecs-library-in-743184",
+      "cve-2026-96150-microsoft-windows-codecs-library-information-"
     ]
   },
   {
@@ -1736,6 +1836,87 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "smartermail-file-edit-api-directory-traversal-rce-d905c3d4",
+    "title": "SmarterMail File Edit API Directory Traversal RCE",
+    "summary": "SmarterMail's File Edit API permits directory traversal, allowing authenticated attackers to execute code on the server. The flaw, assigned 'CVE-2026-126967', carries a CVSS score of 8.8 and has a public PoC. Administrators should apply the vendor patch released with the latest SmarterMail update and restrict API access promptly and monitor.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-994/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126967"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "smartermail-file-edit-api-directory-traversal-rce",
+      "article-d905c3d4",
+      "d905c3d4",
+      "smartermail-file-edit-api-directory-traversal-rce-6f3d2a"
+    ]
+  },
+  {
+    "slug": "hinemos-agent-improper-certificate-validation-rce-42a0f1b4",
+    "title": "Hinemos Agent Improper Certificate Validation RCE",
+    "summary": "Hinemos Agent suffers an improper certificate validation flaw that lets network‑adjacent attackers execute code without authentication. The vulnerability, identified as 'CVE-2026-126963', has a CVSS score of 7.5 and is exploitable via crafted certificates. Users must install the agent update that addresses the issue and enforce strict certificate validation policies immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-991/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126963"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "hinemos-agent-improper-certificate-validation-rce",
+      "article-42a0f1b4",
+      "42a0f1b4",
+      "hinemos-agent-improper-certificate-validation-rce-6f3d29"
+    ]
+  },
+  {
+    "slug": "open62541-subscription-use-after-free-rce-vulnerab-25e94e75",
+    "title": "open62541 Subscription Use‑After‑Free RCE Vulnerability",
+    "summary": "A use‑after‑free flaw in open62541’s subscription handling permits authenticated remote attackers to execute arbitrary code. Identified as CVE‑2026‑126962, the flaw has a CVSS score of 8.8, enabling high‑severity remote code execution with valid credentials. No patch has been released; teams should monitor the vendor for updates and apply mitigations when available. The flaw is tracked as CVE-2026-126962.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-990/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126962"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "open62541-subscription-use-after-free-rce-vulnerab",
+      "article-25e94e75",
+      "25e94e75",
+      "open62541-subscription-use-after-free-rce-vulnerab-6f3d29",
+      "open62541-subscription-use-after-free-rce-vulnerability"
+    ]
+  },
+  {
+    "slug": "trendai-apex-one-uncontrolled-search-path-exploit-b53a257a",
+    "title": "TrendAI Apex One Uncontrolled Search Path Exploit",
+    "summary": "TrendAI Apex One server contains a search path element flaw that lets local attackers elevate privileges with low‑privileged code execution. The flaw, CVE‑2026‑111777, scores 7.8 on CVSS and permits local privilege escalation without remote code execution. TrendAI released a patch; apply it or restrict local code execution to mitigate the risk. The flaw is tracked as CVE-2026-111777.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-989/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111777"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-apex-one-uncontrolled-search-path-exploit",
+      "article-b53a257a",
+      "b53a257a",
+      "trendai-apex-one-uncontrolled-search-path-exploit-6f3d26"
     ]
   },
   {
@@ -9393,174 +9574,6 @@ export const news: NewsBrief[] = [
       "article-cf63534c",
       "cf63534c",
       "rhsa-2026-98529-important-nginx-security-update-37d6e5"
-    ]
-  },
-  {
-    "slug": "n-able-issues-hotfixes-for-zero-day-rmm-flaws-2b6e2e65",
-    "title": "N‑able Issues Hotfixes for Zero‑Day RMM Flaws",
-    "summary": "N‑able issued hotfixes for zero‑day flaws in its N‑central RMM platform that were publicly disclosed and caused hosted environments to go offline. The flaws arise from unvalidated input in the remote API, letting attackers execute arbitrary code and disrupt services; no public exploit exists. Administrators should apply the hotfixes immediately, monitor API traffic for anomalies, and disable unused remote endpoints.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
-    "publishedAt": "2026-11-11T12:32:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "n-able-issues-hotfixes-for-zero-day-rmm-flaws",
-      "article-2b6e2e65",
-      "2b6e2e65",
-      "n-able-issues-hotfixes-for-zero-day-rmm-flaws-65971b"
-    ]
-  },
-  {
-    "slug": "finite-state-secures-27m-for-device-security-platf-03104875",
-    "title": "Finite State Secures $27M for Device Security Platform",
-    "summary": "Finite State raised $27 million in Series C funding to expand its device security platform internationally. The investment will accelerate autonomous features for securing software and firmware across connected devices, including advanced firmware analysis and supply chain risk detection. Security teams should monitor platform enhancements for improved vulnerability management capabilities.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/finite-state-raises-27-million-to-secure-software-and-firmware-in-connected-devices/",
-    "publishedAt": "2026-11-11T12:24:33.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "finite-state-secures-27m-for-device-security-platf",
-      "article-03104875",
-      "03104875",
-      "finite-state-secures-27m-for-device-security-platf-527510",
-      "finite-state-secures-27m-for-device-security-platform"
-    ]
-  },
-  {
-    "slug": "muse-band-brain-data-trained-ai-without-user-conse-21f1f218",
-    "title": "Muse Band Brain Data Trained AI Without User Consent",
-    "summary": "Interaxon trained AI models on de-identified brainwave data from Muse sleep band users without explicit consent. The company revised its privacy policy only after journalistic inquiries, revealing inadequate transparency around biometric data usage. Users should review updated privacy terms and consider opting out of data sharing features, while security teams assess biometric data handling practices in consumer IoT devices.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/11/muse-sleep-band-users-werent-told-their-brain-data-was-training-ai",
-    "publishedAt": "2026-11-11T12:23:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "muse-band-brain-data-trained-ai-without-user-conse",
-      "article-21f1f218",
-      "21f1f218",
-      "muse-band-brain-data-trained-ai-without-user-conse-3103fc",
-      "muse-band-brain-data-trained-ai-without-user-consent"
-    ]
-  },
-  {
-    "slug": "35-000-grok-apps-exposed-leaking-confidential-data-b61d131a",
-    "title": "35,000 Grok Apps Exposed Leaking Confidential Data",
-    "summary": "Over 35,000 Grok-built applications were publicly accessible without authentication, exposing internal business data and credentials. Researchers found 35,578 of 37,571 apps open to anyone, with approximately 10% containing sensitive corporate information including passwords. Organizations must immediately audit Grok app deployments, enforce authentication, rotate any exposed credentials, and monitor for potential misuse of leaked credentials.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
-    "publishedAt": "2026-11-11T12:19:40.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "35-000-grok-apps-exposed-leaking-confidential-data",
-      "article-b61d131a",
-      "b61d131a",
-      "35-000-grok-apps-exposed-leaking-confidential-data-2138c5"
-    ]
-  },
-  {
-    "slug": "fortinet-releases-patch-for-nearly-100-vulnerabili-2d6ccff8",
-    "title": "Fortinet Releases Patch for Nearly 100 Vulnerabilities",
-    "summary": "Fortinet issued a comprehensive patch update covering almost 100 vulnerabilities discovered during AI‑driven security testing across multiple Fortinet devices. The update addresses a mix of authentication bypasses, privilege escalation flaws, and buffer overflows across FortiGate and FortiManager products. Administrators should apply the latest firmware and verify configuration compliance to mitigate potential exploitation.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
-    "publishedAt": "2026-11-11T12:10:14.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "fortinet-releases-patch-for-nearly-100-vulnerabili",
-      "article-2d6ccff8",
-      "2d6ccff8",
-      "fortinet-releases-patch-for-nearly-100-vulnerabili-5b88be",
-      "fortinet-releases-patch-for-nearly-100-vulnerabilities"
-    ]
-  },
-  {
-    "slug": "three-arrested-for-ai-voice-impersonation-fraud-2307b996",
-    "title": "Three Arrested for AI Voice Impersonation Fraud",
-    "summary": "Three individuals were arrested for using AI-generated voice and image impersonation to defraud companies of large payments. The scheme targeted executives and attorneys across multiple organizations between 2024 and 2026, leveraging deepfake technology for social engineering. Law enforcement agencies in Spain, the UK, and the US collaborated on the arrests, highlighting the growing threat of AI-enabled fraud.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Schneier on Security",
-    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
-    "publishedAt": "2026-11-11T12:05:34.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "three-arrested-for-ai-voice-impersonation-fraud",
-      "article-2307b996",
-      "2307b996",
-      "three-arrested-for-ai-voice-impersonation-fraud-989bbd"
-    ]
-  },
-  {
-    "slug": "token-analyzes-ai-agent-security-flaws-in-browser-f1471ebf",
-    "title": "Token Analyzes AI Agent Security Flaws in Browser Systems",
-    "summary": "Security research from Token reveals that browser AI agents fail standard enterprise security controls for identity, access, and logging. The findings indicate that autonomous agents running inside authenticated browser sessions bypass operational boundaries and obscure audit tracking. Organizations must enforce dedicated non-human agent identities, limit job permissions, and isolate execution logs from user activity.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
-    "publishedAt": "2026-11-11T12:01:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "token-analyzes-ai-agent-security-flaws-in-browser",
-      "article-f1471ebf",
-      "f1471ebf",
-      "token-analyzes-ai-agent-security-flaws-in-browser-73b6a4",
-      "token-analyzes-ai-agent-security-flaws-in-browser-systems"
-    ]
-  },
-  {
-    "slug": "emudhra-revokes-eight-intermediate-cas-after-key-c-879e0857",
-    "title": "eMudhra Revokes Eight Intermediate CAs After Key Compromise Flaw",
-    "summary": "eMudhra revoked eight additional intermediate certificate authorities following an October key compromise incident linked to an in-house Python script. A single line flaw within the internal script affected the intermediate certificate authorities without directly weakening their private signing keys. The certificate authority executed revocation actions for the impacted CAs to maintain public trust and secure signing infrastructure integrity.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
-    "publishedAt": "2026-11-11T12:00:53.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "emudhra-revokes-eight-intermediate-cas-after-key-c",
-      "article-879e0857",
-      "879e0857",
-      "emudhra-revokes-eight-intermediate-cas-after-key-c-1a8d4d",
-      "emudhra-revokes-eight-intermediate-cas-after-key-compromise-"
-    ]
-  },
-  {
-    "slug": "xen-orchestra-auth-bypass-vsa-2026-062-patched-afced55d",
-    "title": "Xen Orchestra Auth Bypass VSA-2026-062 Patched",
-    "summary": "Xen Orchestra VSA-2026-062 enables attackers to bypass authentication and gain unauthorized access to virtual machine management interfaces. The flaw exploits a missing session validation check, allowing credentialless access with a CVSS score of 8.1. Red Hat has issued a patch for Xen Orchestra; security teams should update immediately and enforce strict access controls.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "CyberNews AI",
-    "sourceUrl": "https://cybernewsai.com/blog/hackers-exploit-critical-xen-orchestra-auth-bypass-flaw",
-    "publishedAt": "2026-11-11T11:57:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xen-orchestra-auth-bypass-vsa-2026-062-patched",
-      "article-afced55d",
-      "afced55d",
-      "xen-orchestra-auth-bypass-vsa-2026-062-patched-5e576d",
-      "xen-orchestra-auth-bypass-cve-2026-123158-patched-0e92fe33"
     ]
   }
 ];

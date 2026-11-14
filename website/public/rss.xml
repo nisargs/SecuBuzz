@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 00:49:24 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 01:48:18 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>FAA Ground Stop Triggered by Unexplained Communications Disruption</title>
@@ -116,6 +116,15 @@
       <category>General</category>
     </item>
     <item>
+      <title>Chrome Dev Channel Updated to 160.0.8157.0</title>
+      <link>https://secubuzz.com/news/chrome-dev-channel-updated-to-160-0-8157-0-604ea908</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chrome-dev-channel-updated-to-160-0-8157-0-604ea908</guid>
+      <description><![CDATA[Google Chrome Dev channel updated to version 160.0.8157.0 across Windows, macOS, and Linux. The update includes various bug fixes and performance improvements, with a partial list of changes available in the Git log, and addresses several security patches. Users are encouraged to update to the latest Dev build to benefit from these enhancements.]]></description>
+      <pubDate>Fri, 13 Nov 2026 17:43:38 GMT</pubDate>
+      <source url="https://chromereleases.googleblog.com/2026/11/chrome-dev-for-desktop-update_01047619778.html">Google Chrome Releases</source>
+      <category>General</category>
+    </item>
+    <item>
       <title>Quantum Systems Reports Drone Operation Disruption by Cyberattack</title>
       <link>https://secubuzz.com/news/quantum-systems-reports-drone-operation-disruption-4c32ae5e</link>
       <guid isPermaLink="true">https://secubuzz.com/news/quantum-systems-reports-drone-operation-disruption-4c32ae5e</guid>
@@ -131,6 +140,15 @@
       <description><![CDATA[In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.]]></description>
       <pubDate>Fri, 13 Nov 2026 17:26:00 GMT</pubDate>
       <source url="https://therecord.media/university-of-texas-arlington-warns-data-breach">The Record</source>
+      <category>General</category>
+    </item>
+    <item>
+      <title>Green Agent: Remediation Plan for Internet‑Facing Container</title>
+      <link>https://secubuzz.com/news/green-agent-remediation-plan-for-internet-facing-c-0f7616b0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/green-agent-remediation-plan-for-internet-facing-c-0f7616b0</guid>
+      <description><![CDATA[Wiz Research’s Green Agent case study examines an internet‑facing container that exposed sensitive data. The team identified misconfigurations and privilege escalations, then crafted a remediation plan that balanced security urgency with business continuity, producing ready‑to‑merge pull requests. Security teams can adopt the outlined mitigations to harden similar container deployments in production.]]></description>
+      <pubDate>Fri, 13 Nov 2026 17:05:02 GMT</pubDate>
+      <source url="https://www.wiz.io/blog/inside-green-agent-investigation">Wiz Research</source>
       <category>General</category>
     </item>
     <item>
@@ -159,6 +177,33 @@
       <pubDate>Fri, 13 Nov 2026 16:21:43 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/">BleepingComputer</source>
       <category>Vulnerability</category>
+    </item>
+    <item>
+      <title>Microsoft Windows Graphics Kernel Elevation Vulnerability</title>
+      <link>https://secubuzz.com/news/microsoft-windows-graphics-kernel-elevation-vulner-d0e764fd</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-windows-graphics-kernel-elevation-vulner-d0e764fd</guid>
+      <description><![CDATA[A kernel privilege‑escalation flaw in Windows Graphics allows local users to gain elevated rights. The vulnerability, identified as 'CVE-2026-95948', lacks a public exploit but could enable privilege abuse if exploited by malicious code. Microsoft recommends applying the latest Office update that includes the patch, and administrators should enforce least‑privilege policies.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95948">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Windows Codecs Library Remote Code Execution</title>
+      <link>https://secubuzz.com/news/microsoft-windows-codecs-library-remote-code-execu-063796a4</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-windows-codecs-library-remote-code-execu-063796a4</guid>
+      <description><![CDATA[An unauthenticated remote code execution flaw exists in the Windows Codecs Library, enabling attackers to run arbitrary code. The issue, labeled 'CVE-2026-113749', is not yet publicly exploited but could be leveraged by scripts targeting vulnerable systems. Microsoft advises installing the Office update that contains the fix and validating codec configurations to mitigate risk.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113749">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>CVE-2026-96150 Microsoft Windows Codecs Library Information Disclosure Vulnerability</title>
+      <link>https://secubuzz.com/news/cve-2026-96150-microsoft-windows-codecs-library-in-e13c1260</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-96150-microsoft-windows-codecs-library-in-e13c1260</guid>
+      <description><![CDATA[Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96150">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Windows Graphics Kernel Exposes Information via CVE-2026-96144</title>
@@ -410,51 +455,6 @@
       <description><![CDATA[SilentAir attackers compromised Taiwanese mobile network nodes, enabling interception of voice calls and SMS traffic. The intrusion leveraged an unpatched firmware flaw in the node’s authentication module, allowing remote code execution with a CVSS of 9.0; no public exploit yet. Network operators should apply the vendor’s firmware update immediately, enforce strict access controls, and monitor for anomalous traffic patterns.]]></description>
       <pubDate>Fri, 13 Nov 2026 12:20:28 GMT</pubDate>
       <source url="https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/">SecurityWeek</source>
-      <category>Breach</category>
-    </item>
-    <item>
-      <title>AI Hacking: Rogue and Autonomous Threats Explored</title>
-      <link>https://secubuzz.com/news/ai-hacking-rogue-and-autonomous-threats-explored-2cc68bf6</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-hacking-rogue-and-autonomous-threats-explored-2cc68bf6</guid>
-      <description><![CDATA[The essay examines how AI systems can be targeted, leveraged, or used autonomously to conduct hacking activities. It highlights three vectors: human attackers hacking AI, humans using AI to attack other systems, and AI acting independently. The author argues that as AI improves autonomous problem‑solving, these non‑malicious but destabilizing behaviors will become more frequent, demanding new defensive strategies.]]></description>
-      <pubDate>Fri, 13 Nov 2026 12:03:30 GMT</pubDate>
-      <source url="https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html">Schneier on Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA Adds Two Known Exploited Vulnerabilities to Catalog</title>
-      <link>https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-c-b28c58cf</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-two-known-exploited-vulnerabilities-to-c-b28c58cf</guid>
-      <description><![CDATA[CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.]]></description>
-      <pubDate>Fri, 13 Nov 2026 12:00:00 GMT</pubDate>
-      <source url="https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Europol Seizes Gootloader, CastleRAT Servers</title>
-      <link>https://secubuzz.com/news/europol-seizes-gootloader-castlerat-servers-8711f5cb</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/europol-seizes-gootloader-castlerat-servers-8711f5cb</guid>
-      <description><![CDATA[Europol seized servers hosting the Gootloader and CastleRAT malware families, disrupting their command-and-control infrastructure. The seizure dismantles the attackers’ ability to deliver ransomware payloads and exfiltrate data, though the malware remains active elsewhere. Law enforcement will continue to monitor recovered infrastructure, and security teams should update threat intelligence feeds to detect related indicators.]]></description>
-      <pubDate>Fri, 13 Nov 2026 11:59:53 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/police-dismantle-gootloader-castlerat-stealc-malware-in">CyberNews AI</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Apache HTTP Server RCE Exploit CVE-2026-119618</title>
-      <link>https://secubuzz.com/news/apache-http-server-rce-exploit-cve-2026-119618-7e379ba1</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/apache-http-server-rce-exploit-cve-2026-119618-7e379ba1</guid>
-      <description><![CDATA[CVE-2026-119618 allows remote code execution against Apache HTTP Server via crafted HTTP requests. The flaw stems from improper input validation in request parsing, yielding unauthenticated RCE with a CVSS of 9.2; public PoC code exists. Apache released an out‑of‑band patch; apply it immediately and monitor traffic for anomalous critical requests.]]></description>
-      <pubDate>Fri, 13 Nov 2026 11:59:29 GMT</pubDate>
-      <source url="https://cybernewsai.com/blog/apache-http-server-patches-critical-http-2-remote-code">CyberNews AI</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>AI Agents Breach 10 Organizations in Autonomous Attacks</title>
-      <link>https://secubuzz.com/news/ai-agents-breach-10-organizations-in-autonomous-at-0e3a5249</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agents-breach-10-organizations-in-autonomous-at-0e3a5249</guid>
-      <description><![CDATA[Chinese‑speaking hackers leveraged DeepSeek and Zhipu GLM AI agents to breach 10 organizations with minimal human intervention during August‑September 2026. The campaign executed 25 operations against at least 19 targets, exploiting automated reconnaissance and credential‑guessing capabilities to bypass security controls. Security teams should harden authentication, monitor for anomalous AI‑driven activity, and apply vendor patches to mitigate similar autonomous attacks.]]></description>
-      <pubDate>Fri, 13 Nov 2026 11:56:24 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/deepseek-and-glm-ai-agents/">Cyber Security News</source>
       <category>Breach</category>
     </item>
   </channel>

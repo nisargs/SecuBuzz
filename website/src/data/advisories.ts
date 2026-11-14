@@ -3,6 +3,7 @@ import type { Advisory } from '../types/advisory';
 export const advisories: Advisory[] = [
   {
     "cve": "CVE-2026-126299",
+    "cveID": "CVE-2026-126299",
     "slug": "cve-2026-126299",
     "vendor": "Pip",
     "product": "nltk",
@@ -29,6 +30,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126298",
+    "cveID": "CVE-2026-126298",
     "slug": "cve-2026-126298",
     "vendor": "Pip",
     "product": "nltk",
@@ -55,6 +57,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126297",
+    "cveID": "CVE-2026-126297",
     "slug": "cve-2026-126297",
     "vendor": "Pip",
     "product": "nltk",
@@ -131,6 +134,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126295",
+    "cveID": "CVE-2026-126295",
     "slug": "cve-2026-126295",
     "vendor": "Pip",
     "product": "nltk",
@@ -157,6 +161,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-62297",
+    "cveID": "CVE-2026-62297",
     "slug": "cve-2026-62297",
     "vendor": "npm",
     "product": "ag-psd",
@@ -183,6 +188,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-62683",
+    "cveID": "CVE-2026-62683",
     "slug": "cve-2026-62683",
     "vendor": "Go",
     "product": "filebrowser (v2) · filebrowser",
@@ -209,6 +215,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-gpwc-27cw-rh9r",
+    "cveID": "GHSA-gpwc-27cw-rh9r",
     "slug": "ghsa-gpwc-27cw-rh9r",
     "vendor": "Pip",
     "product": "nltk",
@@ -231,6 +238,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126300",
+    "cveID": "CVE-2026-126300",
     "slug": "cve-2026-126300",
     "vendor": "Pip",
     "product": "nltk",
@@ -257,6 +265,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126303",
+    "cveID": "CVE-2026-126303",
     "slug": "cve-2026-126303",
     "vendor": "Pip",
     "product": "nltk",
@@ -283,6 +292,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126304",
+    "cveID": "CVE-2026-126304",
     "slug": "cve-2026-126304",
     "vendor": "Pip",
     "product": "nltk",
@@ -309,6 +319,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128117",
+    "cveID": "CVE-2026-128117",
     "slug": "cve-2026-128117",
     "vendor": "npm",
     "product": "@sveltejs/kit",
@@ -335,6 +346,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128121",
+    "cveID": "CVE-2026-128121",
     "slug": "cve-2026-128121",
     "vendor": "npm",
     "product": "@sveltejs/adapter-vercel",
@@ -361,6 +373,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128122",
+    "cveID": "CVE-2026-128122",
     "slug": "cve-2026-128122",
     "vendor": "npm",
     "product": "@sveltejs/adapter-cloudflare",
@@ -387,6 +400,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128123",
+    "cveID": "CVE-2026-128123",
     "slug": "cve-2026-128123",
     "vendor": "npm",
     "product": "@sveltejs/adapter-node",
@@ -413,6 +427,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126347",
+    "cveID": "CVE-2026-126347",
     "slug": "cve-2026-126347",
     "vendor": "Pip",
     "product": "tornado",
@@ -439,6 +454,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128089",
+    "cveID": "CVE-2026-128089",
     "slug": "cve-2026-128089",
     "vendor": "Pip",
     "product": "dnspython",
@@ -465,6 +481,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128077",
+    "cveID": "CVE-2026-128077",
     "slug": "cve-2026-128077",
     "vendor": "npm",
     "product": "@nuxt/nitro-server",
@@ -491,6 +508,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128080",
+    "cveID": "CVE-2026-128080",
     "slug": "cve-2026-128080",
     "vendor": "npm",
     "product": "@opentelemetry/instrumentation-http",
@@ -517,6 +535,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128082",
+    "cveID": "CVE-2026-128082",
     "slug": "cve-2026-128082",
     "vendor": ".NET (NuGet)",
     "product": "AutoMapper",
@@ -543,6 +562,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128087",
+    "cveID": "CVE-2026-128087",
     "slug": "cve-2026-128087",
     "vendor": "Rust (Cargo)",
     "product": "russh",
@@ -569,6 +589,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128088",
+    "cveID": "CVE-2026-128088",
     "slug": "cve-2026-128088",
     "vendor": "Rust (Cargo)",
     "product": "russh",
@@ -595,6 +616,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128086",
+    "cveID": "CVE-2026-128086",
     "slug": "cve-2026-128086",
     "vendor": "Go",
     "product": "go.opentelemetry.io/otel/baggage",
@@ -621,6 +643,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128085",
+    "cveID": "CVE-2026-128085",
     "slug": "cve-2026-128085",
     "vendor": "Go",
     "product": "go.opentelemetry.io/otel/sdk",
@@ -647,6 +670,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128084",
+    "cveID": "CVE-2026-128084",
     "slug": "cve-2026-128084",
     "vendor": "RubyGems",
     "product": "sqlite3",
@@ -673,6 +697,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128083",
+    "cveID": "CVE-2026-128083",
     "slug": "cve-2026-128083",
     "vendor": "Composer",
     "product": "laravel/framework",
@@ -699,6 +724,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128081",
+    "cveID": "CVE-2026-128081",
     "slug": "cve-2026-128081",
     "vendor": ".NET (NuGet)",
     "product": "AutoMapper",
@@ -725,6 +751,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126361",
+    "cveID": "CVE-2026-126361",
     "slug": "cve-2026-126361",
     "vendor": "npm",
     "product": "astro",
@@ -751,6 +778,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126364",
+    "cveID": "CVE-2026-126364",
     "slug": "cve-2026-126364",
     "vendor": "npm",
     "product": "@astrojs/node",
@@ -777,6 +805,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128070",
+    "cveID": "CVE-2026-128070",
     "slug": "cve-2026-128070",
     "vendor": "npm",
     "product": "@nuxt/schema",
@@ -803,6 +832,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128069",
+    "cveID": "CVE-2026-128069",
     "slug": "cve-2026-128069",
     "vendor": "RubyGems",
     "product": "rails-html-sanitizer",
@@ -829,6 +859,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128079",
+    "cveID": "CVE-2026-128079",
     "slug": "cve-2026-128079",
     "vendor": "Pip",
     "product": "envd",
@@ -855,6 +886,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-128068",
+    "cveID": "CVE-2026-128068",
     "slug": "cve-2026-128068",
     "vendor": "RubyGems",
     "product": "rails-html-sanitizer",
@@ -881,6 +913,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126360",
+    "cveID": "CVE-2026-126360",
     "slug": "cve-2026-126360",
     "vendor": "Pip",
     "product": "opentelemetry-api",
@@ -907,6 +940,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126191",
+    "cveID": "CVE-2026-126191",
     "slug": "cve-2026-126191",
     "vendor": "Pip",
     "product": "soupsieve",
@@ -933,6 +967,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126193",
+    "cveID": "CVE-2026-126193",
     "slug": "cve-2026-126193",
     "vendor": "Pip",
     "product": "soupsieve",
@@ -959,6 +994,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-rg32-vgf9-927c",
+    "cveID": "GHSA-rg32-vgf9-927c",
     "slug": "ghsa-rg32-vgf9-927c",
     "vendor": "Pip",
     "product": "nltk",
@@ -981,6 +1017,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-7r4r-6ppg-7ff8",
+    "cveID": "GHSA-7r4r-6ppg-7ff8",
     "slug": "ghsa-7r4r-6ppg-7ff8",
     "vendor": "Pip",
     "product": "nltk",
@@ -1003,6 +1040,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-4hvg-fv5c-9936",
+    "cveID": "GHSA-4hvg-fv5c-9936",
     "slug": "ghsa-4hvg-fv5c-9936",
     "vendor": "Pip",
     "product": "nltk",
@@ -1025,6 +1063,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-jh6r-h4rx-2j3w",
+    "cveID": "GHSA-jh6r-h4rx-2j3w",
     "slug": "ghsa-jh6r-h4rx-2j3w",
     "vendor": "Pip",
     "product": "nltk",
@@ -1047,6 +1086,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-g5wx-957h-f4wj",
+    "cveID": "GHSA-g5wx-957h-f4wj",
     "slug": "ghsa-g5wx-957h-f4wj",
     "vendor": "Pip",
     "product": "nltk",
@@ -1069,6 +1109,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-6665-2vj3-h76r",
+    "cveID": "GHSA-6665-2vj3-h76r",
     "slug": "ghsa-6665-2vj3-h76r",
     "vendor": "Pip",
     "product": "nltk",
@@ -1091,6 +1132,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-qvhx-rvgc-jhwf",
+    "cveID": "GHSA-qvhx-rvgc-jhwf",
     "slug": "ghsa-qvhx-rvgc-jhwf",
     "vendor": "Pip",
     "product": "nltk",
@@ -1113,6 +1155,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "GHSA-f7j6-hf97-9v99",
+    "cveID": "GHSA-f7j6-hf97-9v99",
     "slug": "ghsa-f7j6-hf97-9v99",
     "vendor": "Pip",
     "product": "nltk",
@@ -1135,6 +1178,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-100397",
+    "cveID": "CVE-2026-100397",
     "slug": "cve-2026-100397",
     "vendor": "Pip",
     "product": "rucio",
@@ -1161,6 +1205,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126190",
+    "cveID": "CVE-2026-126190",
     "slug": "cve-2026-126190",
     "vendor": "Pip",
     "product": "soupsieve",
@@ -1187,6 +1232,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126192",
+    "cveID": "CVE-2026-126192",
     "slug": "cve-2026-126192",
     "vendor": "Pip",
     "product": "soupsieve",
@@ -1213,6 +1259,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-122006",
+    "cveID": "CVE-2026-122006",
     "slug": "cve-2026-122006",
     "vendor": "RubyGems",
     "product": "activestorage",
@@ -1239,6 +1286,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126072",
+    "cveID": "CVE-2026-126072",
     "slug": "cve-2026-126072",
     "vendor": "RubyGems",
     "product": "actionpack",
@@ -1265,6 +1313,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126077",
+    "cveID": "CVE-2026-126077",
     "slug": "cve-2026-126077",
     "vendor": "RubyGems",
     "product": "actionpack",
@@ -1291,6 +1340,7 @@ export const advisories: Advisory[] = [
   },
   {
     "cve": "CVE-2026-126078",
+    "cveID": "CVE-2026-126078",
     "slug": "cve-2026-126078",
     "vendor": "RubyGems",
     "product": "actionview",
