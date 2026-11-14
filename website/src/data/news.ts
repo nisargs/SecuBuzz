@@ -32,6 +32,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f",
+    "title": "SignDrop Zero-Day Enables System Privileges via Defender RPC",
+    "summary": "SignDrop zero‑day exploits Windows CLFS via Defender RPC to elevate privileges to System level. The flaw allows remote code execution without authentication, enabling attackers to bypass security controls. Microsoft has released a patch; security teams should apply it immediately, monitor Defender telemetry, and review Sigma hunting rules for early detection.",
+    "category": "Vulnerability",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/signdrop-zero-day-windows-clfs-privilege-escalation",
+    "publishedAt": "2026-11-14T02:41:38.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "signdrop-zero-day-enables-system-privileges-via-de",
+      "article-2f66fc9f",
+      "2f66fc9f",
+      "signdrop-zero-day-enables-system-privileges-via-de-a9bc9a",
+      "signdrop-zero-day-enables-system-privileges-via-defender-rpc"
+    ]
+  },
+  {
     "slug": "uber-confirms-driver-data-breach-by-fireworks-ai-h-33a7b6d3",
     "title": "Uber Confirms Driver Data Breach by Fireworks AI Hackers",
     "summary": "Uber confirmed a breach exposing personal data of thousands of U.S. drivers after hackers accessed records held by Fireworks AI. Exposed data includes driver license details; Uber is notifying affected individuals while the total number impacted nationwide remains undisclosed. Security teams should monitor for credential misuse, enforce MFA, and verify Fireworks AI’s data controls to mitigate further exposure.",
@@ -426,22 +445,29 @@ export const news: NewsBrief[] = [
     ]
   },
   {
-    "slug": "check-point-gateways-targeted-by-php2shell-for-esx-12ca6dd7",
-    "title": "Check Point Gateways Targeted by PHP2Shell for ESXi Wiper",
-    "summary": "Check Point Security Gateway devices were compromised through PHP2Shell exploits, allowing attackers to deploy a data‑wiping malware on connected VMware ESXi hosts. The vulnerability leverages PHP2Shell’s remote code execution capability, enabling attackers to erase virtual machine data and disrupt services. Check Point has issued a patch; administrators should apply the update immediately and verify gateway integrity.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
+    "slug": "check-point-patches-actively-exploited-cve-2026-12-f2d0dffc",
+    "title": "Check Point Patches Actively Exploited CVE-2026-123039 Gateway Flaw Enabling RCE and ESXi Wiping",
+    "summary": "Check Point Security Gateway appliances are actively exploited via CVE-2026-123039, also called PHP2Shell, allowing unauthenticated remote code execution and root access. Attackers compromise virtual infrastructure and deploy data-wiping malware against connected VMware ESXi hosts. Check Point issued an emergency hotfix; administrators must patch immediately, monitor DynamicCLI root socket telemetry, and audit logs for compromise.",
+    "category": "CVE",
+    "severity": "CRITICAL",
     "source": "BleepingComputer",
     "sourceUrl": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
     "publishedAt": "2026-11-13T16:21:43.000Z",
-    "cves": [],
-    "additionalSources": [],
+    "cves": [
+      "CVE-2026-123039"
+    ],
+    "additionalSources": [
+      {
+        "source": "Cyber Security News",
+        "sourceUrl": "https://cybersecuritynews.com/check-point-0-day-vulnerability/"
+      }
+    ],
     "aliases": [
-      "check-point-gateways-targeted-by-php2shell-for-esx",
-      "article-12ca6dd7",
-      "12ca6dd7",
-      "check-point-gateways-targeted-by-php2shell-for-esx-276e8a",
-      "check-point-gateways-targeted-by-php2shell-for-esxi-wiper"
+      "check-point-patches-actively-exploited-cve-2026-12",
+      "article-f2d0dffc",
+      "f2d0dffc",
+      "check-point-patches-actively-exploited-cve-2026-12-276e8a",
+      "check-point-patches-actively-exploited-cve-2026-123039-gatew"
     ]
   },
   {
@@ -460,6 +486,90 @@ export const news: NewsBrief[] = [
       "article-4e48330f",
       "4e48330f",
       "openai-launches-chatgpt-wallet-for-agent-payments-25f506"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0",
+    "title": "Microsoft Edge Addresses Chromium CVE-2026-126840 Write",
+    "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126840, an out‑of‑bounds write vulnerability discovered in Chrome. The flaw could allow attackers to corrupt memory and potentially execute arbitrary code if exploited. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126840",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126840"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-cve-2026-126840",
+      "article-8109ecb0",
+      "8109ecb0",
+      "microsoft-edge-addresses-chromium-cve-2026-126840-1fdbda",
+      "microsoft-edge-addresses-chromium-cve-2026-126840-write"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-cve-2026-126841-0158137c",
+    "title": "Microsoft Edge Addresses Chromium CVE-2026-126841 Read",
+    "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126841, an out‑of‑bounds read vulnerability discovered in Chrome. The flaw could allow attackers to read sensitive memory contents, potentially exposing confidential data. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today now.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126841",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126841"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-cve-2026-126841",
+      "article-0158137c",
+      "0158137c",
+      "microsoft-edge-addresses-chromium-cve-2026-126841-1fdbda",
+      "microsoft-edge-addresses-chromium-cve-2026-126841-read"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-patches-upstream-chromium-type-conf-5f32eed9",
+    "title": "Microsoft Edge Patches Upstream Chromium Type Confusion Flaw",
+    "summary": "Microsoft Edge received an update to address a security flaw ingested from the upstream Chromium browser engine. Tracked as CVE-2026-126843, the vulnerability stems from a type confusion memory condition inside the core browser component. Users and administrators should apply the latest Microsoft Edge security update and consult Google Chrome release documentation for advisories.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126843",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126843"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-patches-upstream-chromium-type-conf",
+      "article-5f32eed9",
+      "5f32eed9",
+      "microsoft-edge-patches-upstream-chromium-type-conf-1fdbda",
+      "microsoft-edge-patches-upstream-chromium-type-confusion-flaw"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-resolves-upstream-chromium-uninitia-f12df09f",
+    "title": "Microsoft Edge Resolves Upstream Chromium Uninitialized Resource Vulnerability",
+    "summary": "Microsoft updated its Edge browser to integrate upstream security fixes from the underlying Chromium platform. Registered as CVE-2026-126844, the root cause involves an uninitialized resource vulnerability within the core browser architecture. System administrators are advised to update Microsoft Edge to the newest version and review corresponding official Google Chrome release notes.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126844",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126844"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-resolves-upstream-chromium-uninitia",
+      "article-f12df09f",
+      "f12df09f",
+      "microsoft-edge-resolves-upstream-chromium-uninitia-1fdbda",
+      "microsoft-edge-resolves-upstream-chromium-uninitialized-reso"
     ]
   },
   {
@@ -2091,6 +2201,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "trendai-vision-one-agent-local-privilege-escalatio-7e1d2862",
+    "title": "TrendAI Vision One Agent Local Privilege Escalation Exploit",
+    "summary": "TrendAI Vision One Security Agent has a local privilege escalation flaw enabling low‑privileged code execution to elevate privileges. Assigned CVE-2026-111781 and rated CVSS 7.8, the flaw requires local code execution and is not remotely exploitable, but can compromise system integrity. TrendAI released a patch; users should update the agent promptly and restrict local code execution privileges to mitigate the risk.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-980/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111781"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-vision-one-agent-local-privilege-escalatio",
+      "article-7e1d2862",
+      "7e1d2862",
+      "trendai-vision-one-agent-local-privilege-escalatio-6f3d25",
+      "trendai-vision-one-agent-local-privilege-escalation-exploit"
+    ]
+  },
+  {
+    "slug": "trendai-vision-one-agent-privilege-escalation-via-da92b515",
+    "title": "TrendAI Vision One Agent Privilege Escalation via Origin Error",
+    "summary": "TrendAI Vision One Security Agent contains a local privilege escalation flaw that lets attackers raise privileges on affected installations. The flaw arises from an origin validation error; CVE‑2026‑111778 scores 7.8, indicating high‑severity exploitation potential. Apply TrendAI’s patch or upgrade to the latest agent; meanwhile, limit local privileges and monitor for escalation. The flaw is tracked as CVE-2026-111778.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-977/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111778"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-vision-one-agent-privilege-escalation-via",
+      "article-da92b515",
+      "da92b515",
+      "trendai-vision-one-agent-privilege-escalation-via-6f3d22",
+      "trendai-vision-one-agent-privilege-escalation-via-origin-err"
+    ]
+  },
+  {
     "slug": "trendai-agent-heap-overflow-enables-local-privileg-ca133de0",
     "title": "TrendAI Agent Heap Overflow Enables Local Privilege Escalation",
     "summary": "A heap-based buffer overflow in TrendAI Vision One Security Agent’s TMBMServer lets local attackers elevate privileges on affected installations. The flaw, CVE-2026-111785, requires low‑privileged code execution and carries a CVSS score of 7.8, indicating high‑severity impact. TrendAI has issued a patch; apply it immediately or use the provided workaround to mitigate the privilege escalation.",
@@ -3059,6 +3211,25 @@ export const news: NewsBrief[] = [
       "article-66c43421",
       "66c43421",
       "screenconnect-rce-enables-lateral-movement-5bbf8a"
+    ]
+  },
+  {
+    "slug": "credential-stealer-campaign-targets-60-000-github-b7995a5f",
+    "title": "Credential Stealer Campaign Targets 60,000 GitHub Repositories",
+    "summary": "A malicious campaign is actively targeting approximately 60,000 GitHub repositories using a credential stealer payload. The attack mechanism relies on telemetry flaws to extract sensitive developer authentication credentials and exposed project tokens. Security teams must hunt for active indicators using custom detection rules, review telemetry logs, and patch impacted systems immediately.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "CyberNews AI",
+    "sourceUrl": "https://cybernewsai.com/blog/attacker-targets-60-000-github-repositories-in-credenti",
+    "publishedAt": "2026-11-13T01:58:13.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "credential-stealer-campaign-targets-60-000-github",
+      "article-b7995a5f",
+      "b7995a5f",
+      "credential-stealer-campaign-targets-60-000-github-1e4cb3",
+      "credential-stealer-campaign-targets-60-000-github-repositori"
     ]
   },
   {
@@ -9443,157 +9614,6 @@ export const news: NewsBrief[] = [
       "article-f2c13183",
       "f2c13183",
       "red-hat-updates-java-runtime-on-rhel-8-37d83e"
-    ]
-  },
-  {
-    "slug": "linux-ebpf-rootkits-spread-via-underground-forums-ca178826",
-    "title": "Linux eBPF Rootkits Spread via Underground Forums",
-    "summary": "Linux eBPF rootkits enable malicious code to run without loading kernel modules, allowing attackers to conceal activity. Flare analysis shows underground forums distribute rootkit source, tutorials, and exploits, expanding the threat surface across Linux systems. Security teams should monitor eBPF activity, enforce kernel module signing, and apply vendor patches to mitigate hidden rootkits.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
-    "publishedAt": "2026-11-11T15:01:11.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "linux-ebpf-rootkits-spread-via-underground-forums",
-      "article-ca178826",
-      "ca178826",
-      "linux-ebpf-rootkits-spread-via-underground-forums-3277df"
-    ]
-  },
-  {
-    "slug": "falcon-c2-threats-target-governments-via-browser-e-7da5d547",
-    "title": "Falcon C2 Threats Target Governments via Browser Extensions",
-    "summary": "Falcon C2, a browser-based threat framework, targets government entities through malicious scripts, extensions, and the Antino implant. The framework leverages compromised browser extensions to execute code in the victim’s context, enabling data exfiltration and persistence without requiring privileged access. Security teams should block known malicious domains, enforce extension whitelisting, and monitor for anomalous script activity to mitigate Falcon C2 threats.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Unit 42",
-    "sourceUrl": "https://unit42.paloaltonetworks.com/falcon-c2-browser-compromise/",
-    "publishedAt": "2026-11-11T15:00:23.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "falcon-c2-threats-target-governments-via-browser-e",
-      "article-7da5d547",
-      "7da5d547",
-      "falcon-c2-threats-target-governments-via-browser-e-7cb072",
-      "falcon-c2-threats-target-governments-via-browser-extensions"
-    ]
-  },
-  {
-    "slug": "red-hat-patches-mod-http2-on-rhel-9-8-f0fa443e",
-    "title": "Red Hat Patches mod_http2 on RHEL 9.8",
-    "summary": "Red Hat issued an important security update for mod_http2 on RHEL 9.8, addressing critical HTTP/2 handling flaws. The update mitigates potential denial‑of‑service and information disclosure vulnerabilities, with CVSS scores up to 8.0. Deploy the patch immediately, verify HTTP/2 functionality, and monitor for abnormal traffic patterns to preserve service availability across all affected servers.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98982",
-    "publishedAt": "2026-11-11T14:58:55.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-patches-mod-http2-on-rhel-9-8",
-      "article-f0fa443e",
-      "f0fa443e",
-      "red-hat-patches-mod-http2-on-rhel-9-8-37d6d5"
-    ]
-  },
-  {
-    "slug": "kai-adds-external-attack-surface-management-to-def-a9e35699",
-    "title": "Kai Adds External Attack Surface Management to Defense Platform",
-    "summary": "Security vendor Kai announced External Attack Surface Management capability integration into its Autonomous Defense Platform to monitor internet-facing assets. The feature addresses visibility gaps in internal exposure programs by identifying externally facing vulnerabilities visible to potential threat actors. The unified platform consolidates internal and external security exposures into a single remediation workflow to streamline risk mitigation efforts.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/kai-autonomous-defense-platform/",
-    "publishedAt": "2026-11-11T14:55:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kai-adds-external-attack-surface-management-to-def",
-      "article-a9e35699",
-      "a9e35699",
-      "kai-adds-external-attack-surface-management-to-def-76b889",
-      "kai-adds-external-attack-surface-management-to-defense-platf"
-    ]
-  },
-  {
-    "slug": "red-hat-issues-openjdk-8-security-update-for-rhel-5832fee3",
-    "title": "Red Hat Issues OpenJDK 8 Security Update for RHEL 7",
-    "summary": "Red Hat released a security update for java‑1.8.0‑openjdk on Red Enterprise Linux 7 Extended Lifecycle Support to address multiple vulnerabilities. The update covers unspecified Java runtime flaws rated Important, with CVSS base scores linked via CVE references, potentially enabling remote code execution or privilege escalation. System administrators should apply the RHSA‑2026:95598 patch and verify Java version to ensure protection.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95598",
-    "publishedAt": "2026-11-11T14:33:26.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-issues-openjdk-8-security-update-for-rhel",
-      "article-5832fee3",
-      "5832fee3",
-      "red-hat-issues-openjdk-8-security-update-for-rhel-37d841",
-      "red-hat-issues-openjdk-8-security-update-for-rhel-7"
-    ]
-  },
-  {
-    "slug": "git-issues-patches-for-six-vulnerabilities-includi-beb706d4",
-    "title": "Git Issues Patches for Six Vulnerabilities, Including Code Execution",
-    "summary": "Git released patches for six vulnerabilities, including CVE-2026-111760, which allows code execution during recursive clones. The flaw stems from an integer truncation in Git’s index handling, enabling attackers to write unintended files or cause memory corruption when processing malicious repositories. Git has issued security updates; users should apply the latest release to mitigate the risk.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Help Net Security",
-    "sourceUrl": "https://www.helpnetsecurity.com/2026/11/11/git-project-security-updates/",
-    "publishedAt": "2026-11-11T14:26:12.000Z",
-    "cves": [
-      "CVE-2026-111760"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "git-issues-patches-for-six-vulnerabilities-includi",
-      "article-beb706d4",
-      "beb706d4",
-      "git-issues-patches-for-six-vulnerabilities-includi-4c12d4",
-      "git-issues-patches-for-six-vulnerabilities-including-code-ex"
-    ]
-  },
-  {
-    "slug": "cloudflare-explains-quepaxa-consensus-algorithm-1e0211c8",
-    "title": "Cloudflare Explains QuePaxa Consensus Algorithm",
-    "summary": "Cloudflare is building an experimental consensus service that uses the novel QuePaxa algorithm, a consensus mechanism never deployed before. QuePaxa blends proof‑of‑work and proof‑of‑stake to reduce latency and increase fault tolerance across distributed nodes. The post explains the algorithm’s design and rationale, offering insights for researchers and practitioners exploring next‑generation consensus.",
-    "category": "General",
-    "severity": "LOW",
-    "source": "Cloudflare Security",
-    "sourceUrl": "https://blog.cloudflare.com/choosing-quepaxa/",
-    "publishedAt": "2026-11-11T14:24:46.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "cloudflare-explains-quepaxa-consensus-algorithm",
-      "article-1e0211c8",
-      "1e0211c8",
-      "cloudflare-explains-quepaxa-consensus-algorithm-7323e2"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-kernel-security-update-for-rhel-1-54d0cb1a",
-    "title": "Red Hat Releases Kernel Security Update for RHEL 10",
-    "summary": "Red Hat issued a kernel update for Red Enterprise Linux 10 to address multiple security issues. The update targets unspecified kernel vulnerabilities rated Important, with CVSS base scores available via CVE references, indicating potential privilege escalation or denial of service if exploited. Administrators should apply the RHSA‑2026:98638 patch promptly and verify kernel version to ensure protection.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:98638",
-    "publishedAt": "2026-11-11T14:10:03.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-kernel-security-update-for-rhel-1",
-      "article-54d0cb1a",
-      "54d0cb1a",
-      "red-hat-releases-kernel-security-update-for-rhel-1-37d6e1",
-      "red-hat-releases-kernel-security-update-for-rhel-10"
     ]
   }
 ];

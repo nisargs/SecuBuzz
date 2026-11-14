@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 03:46:48 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 04:48:01 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>N‑Central Zero‑Day RCE Exploited by 4EverAble2Shell</title>
@@ -15,6 +15,15 @@
       <pubDate>Sat, 14 Nov 2026 03:05:27 GMT</pubDate>
       <source url="https://cybernewsai.com/blog/cve-2026-90436-n-central-4everable2shell-zero-day-rce">CyberNews AI</source>
       <category>CVE</category>
+    </item>
+    <item>
+      <title>SignDrop Zero-Day Enables System Privileges via Defender RPC</title>
+      <link>https://secubuzz.com/news/signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/signdrop-zero-day-enables-system-privileges-via-de-2f66fc9f</guid>
+      <description><![CDATA[SignDrop zero‑day exploits Windows CLFS via Defender RPC to elevate privileges to System level. The flaw allows remote code execution without authentication, enabling attackers to bypass security controls. Microsoft has released a patch; security teams should apply it immediately, monitor Defender telemetry, and review Sigma hunting rules for early detection.]]></description>
+      <pubDate>Sat, 14 Nov 2026 02:41:38 GMT</pubDate>
+      <source url="https://cybernewsai.com/blog/signdrop-zero-day-windows-clfs-privilege-escalation">CyberNews AI</source>
+      <category>Vulnerability</category>
     </item>
     <item>
       <title>Uber Confirms Driver Data Breach by Fireworks AI Hackers</title>
@@ -206,13 +215,13 @@
       <category>General</category>
     </item>
     <item>
-      <title>Check Point Gateways Targeted by PHP2Shell for ESXi Wiper</title>
-      <link>https://secubuzz.com/news/check-point-gateways-targeted-by-php2shell-for-esx-12ca6dd7</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/check-point-gateways-targeted-by-php2shell-for-esx-12ca6dd7</guid>
-      <description><![CDATA[Check Point Security Gateway devices were compromised through PHP2Shell exploits, allowing attackers to deploy a data‑wiping malware on connected VMware ESXi hosts. The vulnerability leverages PHP2Shell’s remote code execution capability, enabling attackers to erase virtual machine data and disrupt services. Check Point has issued a patch; administrators should apply the update immediately and verify gateway integrity.]]></description>
+      <title>Check Point Patches Actively Exploited CVE-2026-123039 Gateway Flaw Enabling RCE and ESXi Wiping</title>
+      <link>https://secubuzz.com/news/check-point-patches-actively-exploited-cve-2026-12-f2d0dffc</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/check-point-patches-actively-exploited-cve-2026-12-f2d0dffc</guid>
+      <description><![CDATA[Check Point Security Gateway appliances are actively exploited via CVE-2026-123039, also called PHP2Shell, allowing unauthenticated remote code execution and root access. Attackers compromise virtual infrastructure and deploy data-wiping malware against connected VMware ESXi hosts. Check Point issued an emergency hotfix; administrators must patch immediately, monitor DynamicCLI root socket telemetry, and audit logs for compromise.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:21:43 GMT</pubDate>
       <source url="https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/">BleepingComputer</source>
-      <category>Vulnerability</category>
+      <category>CVE</category>
     </item>
     <item>
       <title>OpenAI Launches ChatGPT Wallet for Agent Payments</title>
@@ -222,6 +231,42 @@
       <pubDate>Fri, 13 Nov 2026 16:15:25 GMT</pubDate>
       <source url="https://www.helpnetsecurity.com/2026/11/13/openai-chatgpt-wallet/">Help Net Security</source>
       <category>General</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Addresses Chromium CVE-2026-126840 Write</title>
+      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0</guid>
+      <description><![CDATA[Microsoft Edge incorporates Chromium updates that fix CVE-2026-126840, an out‑of‑bounds write vulnerability discovered in Chrome. The flaw could allow attackers to corrupt memory and potentially execute arbitrary code if exploited. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126840">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Addresses Chromium CVE-2026-126841 Read</title>
+      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126841-0158137c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126841-0158137c</guid>
+      <description><![CDATA[Microsoft Edge incorporates Chromium updates that fix CVE-2026-126841, an out‑of‑bounds read vulnerability discovered in Chrome. The flaw could allow attackers to read sensitive memory contents, potentially exposing confidential data. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today now.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126841">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Patches Upstream Chromium Type Confusion Flaw</title>
+      <link>https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-type-conf-5f32eed9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-type-conf-5f32eed9</guid>
+      <description><![CDATA[Microsoft Edge received an update to address a security flaw ingested from the upstream Chromium browser engine. Tracked as CVE-2026-126843, the vulnerability stems from a type confusion memory condition inside the core browser component. Users and administrators should apply the latest Microsoft Edge security update and consult Google Chrome release documentation for advisories.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126843">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Resolves Upstream Chromium Uninitialized Resource Vulnerability</title>
+      <link>https://secubuzz.com/news/microsoft-edge-resolves-upstream-chromium-uninitia-f12df09f</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-resolves-upstream-chromium-uninitia-f12df09f</guid>
+      <description><![CDATA[Microsoft updated its Edge browser to integrate upstream security fixes from the underlying Chromium platform. Registered as CVE-2026-126844, the root cause involves an uninitialized resource vulnerability within the core browser architecture. System administrators are advised to update Microsoft Edge to the newest version and review corresponding official Google Chrome release notes.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126844">Microsoft MSRC</source>
+      <category>CVE</category>
     </item>
     <item>
       <title>Microsoft Patches Print Spooler Privilege Escalation</title>
@@ -411,51 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 15:09:45 GMT</pubDate>
       <source url="https://cybersecuritynews.com/hackers-use-sansar-linux-malware/">Cyber Security News</source>
       <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>AI Agent Exposes Five Enterprise Security Gaps</title>
-      <link>https://secubuzz.com/news/ai-agent-exposes-five-enterprise-security-gaps-96bc037f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/ai-agent-exposes-five-enterprise-security-gaps-96bc037f</guid>
-      <description><![CDATA[An AI invoice‑processing agent was tricked by a malicious email to change vendor bank details, exposing five critical security gaps. The gaps arise from weak input validation, absent transaction confirmation, limited authentication, insufficient monitoring, and lack of anomaly detection, allowing credential misuse. Mitigation requires stricter email filtering, mandatory transaction approvals, stronger authentication, continuous monitoring, and regular AI agent security audits.]]></description>
-      <pubDate>Fri, 13 Nov 2026 15:01:11 GMT</pubDate>
-      <source url="https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/">BleepingComputer</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>Fake GTA 6 download goes after Steam logins and crypto wallet data</title>
-      <link>https://secubuzz.com/news/fake-gta-6-download-goes-after-steam-logins-and-cr-f863fd04</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/fake-gta-6-download-goes-after-steam-logins-and-cr-f863fd04</guid>
-      <description><![CDATA[Cynet researchers followed a “GTA 6 EXE file download” link from a Google Colab notebook to a ZIP archive and found a WARDEN Stealer loader inside. A Google Colab notebook promotes a fake GTA 6 executable download (Source: Cynet) Grand Theft Auto VI launches November 19 with no PC version.]]></description>
-      <pubDate>Fri, 13 Nov 2026 15:00:59 GMT</pubDate>
-      <source url="https://www.helpnetsecurity.com/2026/11/13/fake-gta-6-download-scam/">Help Net Security</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Use 2,700 Passwords to Break Into Microsoft SQL Servers and Deploy Remote Access Malware</title>
-      <link>https://secubuzz.com/news/hackers-use-2-700-passwords-to-break-into-microsof-a976b775</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-use-2-700-passwords-to-break-into-microsof-a976b775</guid>
-      <description><![CDATA[A new campaign is guessing its way into internet-facing Microsoft SQL Server systems. The attackers use a list of more than 2,700 passwords and then install a cryptocurrency miner and a remote access trojan (RAT) on the hacked machines.]]></description>
-      <pubDate>Fri, 13 Nov 2026 14:54:56 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/break-into-microsoft-sql-servers/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Red Hat Satellite 6.19.6 Receives Critical Async Update</title>
-      <link>https://secubuzz.com/news/red-hat-satellite-6-19-6-receives-critical-async-u-6d655171</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/red-hat-satellite-6-19-6-receives-critical-async-u-6d655171</guid>
-      <description><![CDATA[Red Hat released a critical async update for Satellite 6.19.6, addressing a security issue affecting RHEL 9 deployments. The patch resolves a vulnerability that could allow unauthorized access to satellite management functions, potentially compromising configuration data and control plane integrity. Administrators should download and install the RHSA-2026:100120 update immediately, following Red Hat’s installation guidelines to ensure secure operation.]]></description>
-      <pubDate>Fri, 13 Nov 2026 14:45:23 GMT</pubDate>
-      <source url="https://access.redhat.com/errata/RHSA-2026:100120">Red Hat Security Advisories</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>North Korean Hackers Steal $400M Crypto via Deepfake Calls</title>
-      <link>https://secubuzz.com/news/north-korean-hackers-steal-400m-crypto-via-deepfak-9bfeac72</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/north-korean-hackers-steal-400m-crypto-via-deepfak-9bfeac72</guid>
-      <description><![CDATA[North Korean threat actors used deepfake video calls to socially engineer victims and steal more than $400 million in cryptocurrency. The FaceStealer campaign used convincing video impersonations to bypass authentication, exploiting human trust rather than software flaws, and caused significant financial loss. Organizations should verify call authenticity, enforce multi‑factor authentication, and monitor wallet activity for anomalous transfers to mitigate attacks.]]></description>
-      <pubDate>Fri, 13 Nov 2026 14:28:58 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html">The Hacker News</source>
-      <category>Breach</category>
     </item>
   </channel>
 </rss>
