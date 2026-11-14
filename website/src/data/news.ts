@@ -545,6 +545,48 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "microsoft-edge-addresses-chromium-type-confusion-c-8386f473",
+    "title": "Microsoft Edge Addresses Chromium Type Confusion CVE-2026-126874",
+    "summary": "Microsoft Edge (Chromium-based) addresses a type confusion vulnerability identified as CVE-2026-126874 in Chromium. The flaw arises from improper type handling during memory operations, potentially allowing an attacker to corrupt data or cause a crash; no active exploitation reported. Microsoft recommends applying the latest Edge update, which incorporates the Chromium patch; users should also keep Chrome updated for comprehensive protection.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126874",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126874"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-type-confusion-c",
+      "article-8386f473",
+      "8386f473",
+      "microsoft-edge-addresses-chromium-type-confusion-c-1fdbda",
+      "microsoft-edge-addresses-chromium-type-confusion-cve-2026-12"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-fixes-chromium-missing-authorizatio-2cb89c00",
+    "title": "Microsoft Edge Fixes Chromium Missing Authorization CVE-2026-126875",
+    "summary": "Microsoft Edge (Chromium-based) addresses a missing authorization flaw identified as CVE-2026-126875 in Chromium. The vulnerability permits unauthorized access to privileged operations due to insufficient permission checks, potentially enabling privilege escalation; no exploitation evidence reported. Microsoft advises installing the latest Edge update, which includes the Chromium patch, and ensuring Chrome remains current for full mitigation.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126875",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126875"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-fixes-chromium-missing-authorizatio",
+      "article-2cb89c00",
+      "2cb89c00",
+      "microsoft-edge-fixes-chromium-missing-authorizatio-1fdbda",
+      "microsoft-edge-fixes-chromium-missing-authorization-cve-2026"
+    ]
+  },
+  {
     "slug": "chromium-cve-2026-126870-uninitialized-resource-7df81a21",
     "title": "Chromium CVE-2026-126870: Uninitialized Resource",
     "summary": "Microsoft Edge, built on Chromium, is affected by CVE-2026-126870, an uninitialized resource flaw discovered in the Chromium engine. The vulnerability could lead to memory corruption or denial of service if exploited, but no active exploitation has been reported. Microsoft recommends installing the latest Edge update, which incorporates the Chromium patch, and reviewing Chrome release notes for detailed fix information.",
@@ -9570,47 +9612,6 @@ export const news: NewsBrief[] = [
       "b50b99d6",
       "palo-alto-networks-addresses-pan-os-user-impersona-7ae305",
       "palo-alto-networks-addresses-pan-os-user-impersonation-flaw"
-    ]
-  },
-  {
-    "slug": "prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0-be07f7be",
-    "title": "Prisma Cloud Checkov SSRF Vulnerability CVE-2026-0323",
-    "summary": "A Server‑Side Request Forgery flaw in Prisma Cloud’s Checkov component lets attackers force the system to request arbitrary URLs. CVE‑2026‑0323 is a low‑severity flaw with no active exploitation, yet it could enable data exfiltration or reconnaissance. Prisma Cloud released an update sanitizing external requests; apply the patch immediately to mitigate SSRF risk.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Palo Alto Networks PSIRT",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0323",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "cves": [
-      "CVE-2026-0323"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0",
-      "article-be07f7be",
-      "be07f7be",
-      "prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0-7ae305",
-      "prisma-cloud-checkov-ssrf-vulnerability-cve-2026-0323"
-    ]
-  },
-  {
-    "slug": "pan-os-sensitive-info-disclosure-cve-2026-0331-f96bf5fa",
-    "title": "PAN-OS Sensitive Info Disclosure CVE-2026-0331",
-    "summary": "A sensitive information disclosure flaw in Palo Alto Networks PAN‑OS lets attackers retrieve confidential configuration data via unauthenticated API calls. The vulnerability, CVE‑2026‑0331, exploits improper input validation in the management interface, yielding a medium‑severity exposure without credentials. Palo Alto released a patch in the latest PAN‑OS update; security teams should apply it or restrict API access.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Palo Alto Networks PSIRT",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0331",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "cves": [
-      "CVE-2026-0331"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "pan-os-sensitive-info-disclosure-cve-2026-0331",
-      "article-f96bf5fa",
-      "f96bf5fa",
-      "pan-os-sensitive-info-disclosure-cve-2026-0331-7ae305"
     ]
   }
 ];
