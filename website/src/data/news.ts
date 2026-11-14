@@ -11,6 +11,43 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "us-disrupts-north-korean-facestealer-crypto-theft-d875fe40",
+    "title": "US Disrupts North Korean FaceStealer Crypto Theft",
+    "summary": "U.S. authorities disrupted a North Korean social‑engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large‑scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi‑factor authentication to mitigate future theft.",
+    "category": "Breach",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+    "publishedAt": "2026-11-14T15:15:49.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "us-disrupts-north-korean-facestealer-crypto-theft",
+      "article-d875fe40",
+      "d875fe40",
+      "us-disrupts-north-korean-facestealer-crypto-theft-4e6507"
+    ]
+  },
+  {
+    "slug": "ai-overreliance-threatens-cybersecurity-effectiven-c2b1397a",
+    "title": "AI Overreliance Threatens Cybersecurity Effectiveness",
+    "summary": "Overreliance on AI in security operations risks eroding creativity, clear communication, and critical thinking when playbooks are absent. The article argues that automated decision‑making can blind analysts to nuanced threat indicators, reducing adaptive response capabilities. Security teams should balance AI tools with human oversight, maintain playbooks, and regularly validate model outputs to preserve analytical rigor.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "sourceUrl": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+    "publishedAt": "2026-11-14T14:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "ai-overreliance-threatens-cybersecurity-effectiven",
+      "article-c2b1397a",
+      "c2b1397a",
+      "ai-overreliance-threatens-cybersecurity-effectiven-565c02",
+      "ai-overreliance-threatens-cybersecurity-effectiveness"
+    ]
+  },
+  {
     "slug": "unrealircd-command-injection-exploited-via-cve-202-512c21ff",
     "title": "UnrealIRCd Command Injection Exploited via CVE-2026-114713",
     "summary": "Attackers exploited a server‑level command injection flaw in UnrealIRCd, an open‑source IRC server, via improper delimiter neutralization. The CVE‑2026‑114713 vulnerability, rated CVSS 8.6, permits unauthenticated remote code execution and has been actively used. CISA added the flaw to its KEV catalog; vendors should apply the latest patch or upgrade immediately.",
@@ -9563,44 +9600,6 @@ export const news: NewsBrief[] = [
       "article-ae357dd6",
       "ae357dd6",
       "usn-9054-1-babel-vulnerability-7e8766"
-    ]
-  },
-  {
-    "slug": "networkmanager-ssh-vulnerability-allows-local-priv-c385bd62",
-    "title": "NetworkManager-ssh Vulnerability Allows Local Privilege Escalation",
-    "summary": "A flaw in NetworkManager-ssh’s handling of VPN options allows local attackers to gain elevated privileges on Ubuntu. The issue stems from insufficient validation of extra options, enabling privilege escalation without authentication; no CVE is assigned. Ubuntu released an update correcting the validation logic; administrators should install the latest NetworkManager package.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9053-1",
-    "publishedAt": "2026-11-11T18:32:05.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "networkmanager-ssh-vulnerability-allows-local-priv",
-      "article-c385bd62",
-      "c385bd62",
-      "networkmanager-ssh-vulnerability-allows-local-priv-7e876a",
-      "networkmanager-ssh-vulnerability-allows-local-privilege-esca"
-    ]
-  },
-  {
-    "slug": "vanderbilt-restores-systems-after-alleged-data-the-71df4385",
-    "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
-    "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
-    "publishedAt": "2026-11-11T18:29:01.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "vanderbilt-restores-systems-after-alleged-data-the",
-      "article-71df4385",
-      "71df4385",
-      "vanderbilt-restores-systems-after-alleged-data-the-550d8e",
-      "vanderbilt-restores-systems-after-alleged-data-theft-attack"
     ]
   }
 ];

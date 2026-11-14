@@ -1,5 +1,37 @@
 [
   {
+    "id": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+    "title": "US Disrupts North Korean FaceStealer Crypto Theft",
+    "headline": "US Disrupts North Korean FaceStealer Crypto Theft",
+    "summary": "U.S. authorities disrupted a North Korean social‑engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large‑scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi‑factor authentication to mitigate future theft.",
+    "category": "BREACH",
+    "severity": "HIGH",
+    "source": "BleepingComputer",
+    "publishedAt": "2026-11-14T15:15:49.000Z",
+    "ingestedAt": "2026-11-14T15:43:16.566Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+    "additionalSources": []
+  },
+  {
+    "id": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+    "sourceUrl": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+    "title": "AI Overreliance Threatens Cybersecurity Effectiveness",
+    "headline": "AI Overreliance Threatens Cybersecurity Effectiveness",
+    "summary": "Overreliance on AI in security operations risks eroding creativity, clear communication, and critical thinking when playbooks are absent. The article argues that automated decision‑making can blind analysts to nuanced threat indicators, reducing adaptive response capabilities. Security teams should balance AI tools with human oversight, maintain playbooks, and regularly validate model outputs to preserve analytical rigor.",
+    "category": "GENERAL",
+    "severity": "LOW",
+    "source": "SecurityWeek",
+    "publishedAt": "2026-11-14T14:00:00.000Z",
+    "ingestedAt": "2026-11-14T15:43:16.566Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+    "additionalSources": []
+  },
+  {
     "id": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
     "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
     "title": "UnrealIRCd Command Injection Exploited via CVE-2026-114713",
@@ -8243,37 +8275,5 @@
     "cves": [],
     "additionalSources": [],
     "isFallback": true
-  },
-  {
-    "id": "https://ubuntu.com/security/notices/USN-9053-1",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9053-1",
-    "title": "NetworkManager-ssh Vulnerability Allows Local Privilege Escalation",
-    "headline": "NetworkManager-ssh Vulnerability Allows Local Privilege Escalation",
-    "summary": "A flaw in NetworkManager-ssh’s handling of VPN options allows local attackers to gain elevated privileges on Ubuntu. The issue stems from insufficient validation of extra options, enabling privilege escalation without authentication; no CVE is assigned. Ubuntu released an update correcting the validation logic; administrators should install the latest NetworkManager package.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Ubuntu Security Notices",
-    "publishedAt": "2026-11-11T18:32:05.000Z",
-    "ingestedAt": "2026-11-12T07:43:23.723Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://ubuntu.com/security/notices/USN-9053-1",
-    "additionalSources": []
-  },
-  {
-    "id": "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
-    "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
-    "title": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
-    "headline": "Vanderbilt Restores Systems After Alleged Data Theft Attack",
-    "summary": "Vanderbilt University is restoring campus technology following a cyberattack that attackers claim stole student and employee data. The incident involved unauthorized access to university systems, but the university has not confirmed any data exfiltration. Security teams should review access logs, enforce multi‑factor authentication, and apply any pending vendor patches to strengthen defenses.",
-    "category": "BREACH",
-    "severity": "MEDIUM",
-    "source": "Malwarebytes Labs",
-    "publishedAt": "2026-11-11T18:29:01.000Z",
-    "ingestedAt": "2026-11-11T18:43:26.557Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
-    "additionalSources": []
   }
 ]
