@@ -413,6 +413,7 @@ async function fetchGitHubAdvisories() {
 
       return {
         cve,
+        cveID: cve,
         slug: cve.toLowerCase(),
         vendor: ecosystem,
         product: formattedPkg,
@@ -515,6 +516,12 @@ export const advisories: Advisory[] = ${JSON.stringify(combined, null, 2)};
 
     fs.writeFileSync(OUTPUT_ADVISORIES_TS, advContent, 'utf8');
     console.log(`Updated ${OUTPUT_ADVISORIES_TS} with ${combined.length} combined advisories (${cisaAdvisories.length} CISA KEV + ${uniqueGithub.length} GitHub)`);
+
+    // Keep Cloudflare Worker GITHUB_ADVISORIES in sync with live GitHub set
+    const workerGithubPath = path.join(rootDir, 'worker', 'src', 'githubAdvisories.ts');
+    const workerContent = `export const GITHUB_ADVISORIES = ${JSON.stringify(uniqueGithub, null, 2)};\n`;
+    fs.writeFileSync(workerGithubPath, workerContent, 'utf8');
+    console.log(`Updated ${workerGithubPath} with ${uniqueGithub.length} fresh GitHub advisories`);
   } catch (err) {
     console.warn('Could not sync advisories statically:', err);
   }

@@ -929,19 +929,13 @@ function isKnownSpaRoute(pathname: string, articlesList: ArticleItem[], advisori
     const rawSlug = clean.slice('/advisories/'.length).toLowerCase();
     const slug = decodeURIComponent(rawSlug).replace(/\.html?$/i, '');
     if (!slug) return false;
-    // 1) Any standard CVE (cve-YYYY-NNNN) or GHSA identifier
-    if (/^cve-\d{4}-\d{4,7}$/i.test(slug) || /^ghsa-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}$/i.test(slug)) {
-      return true;
-    }
-    // 2) Active KEV catalog match
-    if (advisoriesList.some(
+    // Strictly verify against active KEV catalog and GitHub ecosystem advisories (prevents soft 404s on fake CVEs)
+    return advisoriesList.some(
       a => (a?.cveID && a.cveID.toLowerCase() === slug) ||
            (a?.cveID && slug.includes(a.cveID.toLowerCase())) ||
-           ((a as any)?.cve && (a as any).cve.toLowerCase() === slug)
-    )) {
-      return true;
-    }
-    return false;
+           ((a as any)?.cve && (a as any).cve.toLowerCase() === slug) ||
+           ((a as any)?.slug && (a as any).slug.toLowerCase() === slug)
+    );
   }
 
   return false;
@@ -1491,20 +1485,7 @@ export default {
           });
         }
 
-        // 2. Fast-filter CVE queries against in-memory known CVE set (0 D1 rows read on misses)
-        if (cveMatch) {
-          const normalizedCve = `CVE-${cveMatch[1]}-${cveMatch[2]}`.toUpperCase();
-          const knownCves = await getKnownCveSet();
-          if (!knownCves.has(normalizedCve)) {
-            const emptyResult = { count: 0, results: [] };
-            setCachedSearchResult(cacheKey, emptyResult);
-            return jsonResponse(emptyResult, 200, {
-              'Cache-Control': 'public, max-age=86400, s-maxage=86400',
-            });
-          }
-        }
-
-        // 3. Query D1 (only for known CVEs or keyword queries)
+        // 2. Query D1
         let rows: any[] = [];
         try {
           if (cveMatch) {

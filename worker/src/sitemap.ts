@@ -117,7 +117,7 @@ function renderPrerenderedBody(
           <a href="/news" style="color:#4CC9F0;text-decoration:none;font-weight:600;">Latest Briefs →</a>
           <a href="/advisories" style="color:#4CC9F0;text-decoration:none;font-weight:600;">CISA KEV Zero-Days →</a>
           <a href="/sources" style="color:#4CC9F0;text-decoration:none;font-weight:600;">84 Monitored Sources →</a>
-          <a href="https://play.google.com/store/apps/details?id=com.misolabs.secubuzz" style="color:#10B981;text-decoration:none;font-weight:600;">Get Android App ↗</a>
+          <a href="https://play.google.com/store/apps/details?id=com.secubuzz.app" style="color:#10B981;text-decoration:none;font-weight:600;">Get Android App ↗</a>
         </nav>
       </header>
       <main style="display:grid;grid-template-columns:1fr;gap:32px;">
@@ -203,7 +203,7 @@ function renderPrerenderedBody(
         ${cveBlock}
         <footer style="margin-top:32px;padding-top:16px;border-top:1px solid #1E293B;font-size:13px;color:#94A3B8;">
           ${article.sourceUrl ? `<p>Primary reporting source: <a href="${escapeHtml(article.sourceUrl)}" target="_blank" rel="noopener noreferrer" style="color:#4CC9F0;">${escapeHtml(article.sourceName || 'Canonical Reporting')} ↗</a></p>` : ''}
-          <p style="margin-top:12px;">SecuBuzz delivers instant cybersecurity briefings and CISA zero-day alerts with zero tracking. <a href="https://play.google.com/store/apps/details?id=com.misolabs.secubuzz" style="color:#4CC9F0;">Install on Android</a>.</p>
+          <p style="margin-top:12px;">SecuBuzz delivers instant cybersecurity briefings and CISA zero-day alerts with zero tracking. <a href="https://play.google.com/store/apps/details?id=com.secubuzz.app" style="color:#4CC9F0;">Install on Android</a>.</p>
         </footer>
       </article>
     </div>`;
@@ -368,6 +368,18 @@ function renderPrerenderedBody(
           </li>
         </ul>
       </article>
+    </div>`;
+  }
+
+  if (pathname === '/404') {
+    return `<div style="max-width:768px;margin:0 auto;padding:48px 16px;text-align:center;font-family:system-ui,-apple-system,sans-serif;color:#E2E8F0;background:#0B0F14;min-height:100vh;">
+      <h1 style="font-size:36px;font-weight:700;color:#F8FAFC;margin:0 0 16px 0;">404 · Page Not Found</h1>
+      <p style="font-size:16px;color:#94A3B8;margin-bottom:24px;">The requested security brief or advisory could not be found.</p>
+      <nav style="display:flex;gap:16px;justify-content:center;font-size:14px;">
+        <a href="/" style="color:#4CC9F0;text-decoration:none;">← Home</a>
+        <a href="/news" style="color:#4CC9F0;text-decoration:none;">Latest Briefs</a>
+        <a href="/advisories" style="color:#4CC9F0;text-decoration:none;">Advisories Radar</a>
+      </nav>
     </div>`;
   }
 
@@ -702,26 +714,9 @@ export function injectMetaTags(
         ],
       };
     } else {
-      const cveCode = slug.toUpperCase();
-      title = `${cveCode} Exploit Likelihood, EPSS & KEV Status | SecuBuzz`;
-      description = `Track exploit likelihood, EPSS score, CVSS severity, and CISA KEV zero-day status for ${cveCode} on SecuBuzz. Fast triage intelligence.`.slice(0, 155);
-      ogType = 'article';
-      jsonLdObj = {
-        '@context': 'https://schema.org',
-        '@type': 'TechArticle',
-        headline: `${cveCode} Vulnerability Advisory`,
-        description: `Track exploit likelihood, CISA KEV zero-day status, and patch intelligence for ${cveCode}.`,
-        url: `https://secubuzz.com/advisories/${slug}`,
-        author: {
-          '@type': 'Organization',
-          name: 'SecuBuzz Threat Radar',
-        },
-        publisher: {
-          '@type': 'Organization',
-          name: 'SecuBuzz',
-          url: 'https://secubuzz.com',
-        },
-      };
+      title = 'Advisory Not Found · SecuBuzz';
+      description = 'The requested cybersecurity advisory could not be found. Browse active CISA KEV zero-days and enterprise advisories on SecuBuzz.';
+      canonicalPath = '/404';
     }
   } else if (pathname === '/about') {
     title = 'About SecuBuzz · MiSo Labs';

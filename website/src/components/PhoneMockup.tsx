@@ -21,10 +21,10 @@ const SCREENS: ScreenItem[] = [
   {
     id: 'advisories',
     tabName: 'Advisories',
-    label: '1,816 Advisories',
+    label: '1,800+ Advisories',
     tag: 'CISA KEV',
     image: '/2.jpg',
-    alt: 'SecuBuzz 1,816 Active Threat Advisories Radar'
+    alt: 'SecuBuzz 1,800+ Active Threat Advisories Radar'
   },
   {
     id: 'mystack',
@@ -80,6 +80,7 @@ export function PhoneMockup() {
   const handleTabClick = (idx: number) => {
     setActiveIndex(idx);
     setProgress(0);
+    setIsPaused(false);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {

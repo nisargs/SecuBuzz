@@ -176,6 +176,7 @@ export function Advisories() {
   const matchesBase = (a: Advisory, q: string) => {
     if (stackFilterActive && !myStack.matchesAdvisory(a)) return false;
     if (dueThisWeekOnly) {
+      if (!a.dueDate || !/^\d{4}-\d{2}-\d{2}$/.test(a.dueDate)) return false;
       const d = daysUntil(a.dueDate);
       if (d < 0 || d > 7) return false;
     }
@@ -210,6 +211,7 @@ export function Advisories() {
     const q = query.trim().toLowerCase();
     return advisories.filter((a) => {
       if (dueThisWeekOnly) {
+        if (!a.dueDate || !/^\d{4}-\d{2}-\d{2}$/.test(a.dueDate)) return false;
         const d = daysUntil(a.dueDate);
         if (d < 0 || d > 7) return false;
       }
@@ -238,6 +240,7 @@ export function Advisories() {
     return advisories.filter((a) => {
       if (stackFilterActive && !myStack.matchesAdvisory(a)) return false;
       if (dueThisWeekOnly) {
+        if (!a.dueDate || !/^\d{4}-\d{2}-\d{2}$/.test(a.dueDate)) return false;
         const d = daysUntil(a.dueDate);
         if (d < 0 || d > 7) return false;
       }

@@ -4,8 +4,35 @@ import type { Advisory } from '../types/advisory';
 import { getCvssSeverity, CVE_SCORE_OVERRIDES } from '../utils/advisory';
 
 function transformKev(list: any[]): Advisory[] {
-  return list.map(item => {
-    const cve = item.cveID;
+  const result: Advisory[] = [];
+  for (const item of list) {
+    const cve = item.cveID || item.cve || '';
+    if (!cve) continue;
+
+    // If it's already a formatted GitHub Advisory, preserve it
+    if (item.source === 'GITHUB' || item.source === 'GitHub Ecosystem') {
+      result.push({
+        cve,
+        slug: item.slug || cve.toLowerCase(),
+        vendor: item.vendor || 'Open Source',
+        product: item.product || 'Software System',
+        name: item.name || cve,
+        dateAdded: item.dateAdded || '',
+        dueDate: item.dueDate || '',
+        cvss: item.cvss,
+        severity: item.severity || 'Medium',
+        cwe: item.cwe || '—',
+        ransomware: !!item.ransomware,
+        description: item.description || '',
+        requiredAction: item.requiredAction || 'Apply vendor updates according to instructions.',
+        references: item.references || [
+          { label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${cve}` }
+        ],
+        source: 'GITHUB'
+      });
+      continue;
+    }
+
     const isRansomware =
       item.knownRansomwareCampaignUse === 'Known' ||
       item.knownRansomwareCampaignUse === 'known' ||
@@ -22,27 +49,28 @@ function transformKev(list: any[]): Advisory[] {
       ? getCvssSeverity(cvss)
       : (isRansomware ? 'Critical' : 'High');
 
-    return {
+    result.push({
       cve,
       slug: cve.toLowerCase(),
-      vendor: item.vendorProject || 'Enterprise Vendor',
+      vendor: item.vendorProject || item.vendor || 'Enterprise Vendor',
       product: item.product || 'Software System',
-      name: item.vulnerabilityName || cve,
+      name: item.vulnerabilityName || item.name || cve,
       dateAdded: item.dateAdded || '',
       dueDate: item.dueDate || '',
       cvss,
       severity,
       cwe: cleanCwe || '—',
       ransomware: isRansomware,
-      description: item.shortDescription || item.vulnerabilityName || '',
+      description: item.shortDescription || item.description || item.vulnerabilityName || '',
       requiredAction: (item.requiredAction || 'Apply vendor updates according to instructions.').replace(/\s*\(see URL in Notes\)/gi, '').trim(),
-      references: [
+      references: item.references || [
         { label: 'NVD CVE entry', url: `https://nvd.nist.gov/vuln/detail/${cve}` },
         { label: 'CISA KEV catalog', url: `https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=${cve}` }
       ],
       source: 'CISA KEV'
-    };
-  });
+    });
+  }
+  return result;
 }
 
 let cachedAdvisories: Advisory[] = initialAdvisories;
@@ -67,9 +95,9 @@ export function useLiveAdvisories(): { advisories: Advisory[]; loading: boolean 
         .then((data: any) => {
           if (data && Array.isArray(data.advisories) && data.advisories.length >= 1000) {
             const transformed = transformKev(data.advisories);
-            const cisaCveSet = new Set(transformed.map(a => a.cve.toUpperCase()));
-            const githubAdvisories = initialAdvisories.filter(a => !cisaCveSet.has(a.cve.toUpperCase()));
-            const combined = [...transformed, ...githubAdvisories].sort((a, b) => {
+            const liveCveSet = new Set(transformed.map(a => a.cve.toUpperCase()));
+            const missingBundled = initialAdvisories.filter(a => !liveCveSet.has(a.cve.toUpperCase()));
+            const combined = [...transformed, ...missingBundled].sort((a, b) => {
               const timeA = Date.parse(a.dateAdded) || 0;
               const timeB = Date.parse(b.dateAdded) || 0;
               return timeB - timeA;

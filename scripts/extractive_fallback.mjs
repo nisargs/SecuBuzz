@@ -434,13 +434,13 @@ export function validateExtractiveBrief(title, brief, sentences, fullSourceText)
 export function classifyThreat(title, text) {
   const combined = `${title} ${text}`.toLowerCase();
 
-  // Category classification
-  let category = 'General';
+  // Category classification (standardized uppercase)
+  let category = 'GENERAL';
   if (/cve-\d{4}-\d+/i.test(combined)) category = 'CVE';
-  else if (/ransomware|extortion|lockbit|blackcat|play ransomware/i.test(combined)) category = 'Ransomware';
-  else if (/breach|leaked|stolen records|credential leak|data exfiltration/i.test(combined)) category = 'Breach';
-  else if (/zero-day|0-day|remote code execution|unauthenticated rce|vulnerability|flaw|buffer overflow/i.test(combined)) category = 'Vulnerability';
-  else if (/state-sponsored|nation-state|apt\d+|china|russia|north korea|iran|volt typhoon|salt typhoon/i.test(combined)) category = 'Nation State';
+  else if (/ransomware|extortion|lockbit|blackcat|play ransomware/i.test(combined)) category = 'RANSOMWARE';
+  else if (/breach|leaked|stolen records|credential leak|data exfiltration/i.test(combined)) category = 'BREACH';
+  else if (/zero-day|0-day|remote code execution|unauthenticated rce|vulnerability|flaw|buffer overflow/i.test(combined)) category = 'VULNERABILITY';
+  else if (/state-sponsored|nation-state|apt\d+|china|russia|north korea|iran|volt typhoon|salt typhoon/i.test(combined)) category = 'NATION STATE';
 
   // Severity classification (CVSS 3.1 / CISA KEV objective criteria)
   // CRITICAL requires explicit critical indicators:
@@ -680,7 +680,7 @@ export function buildFallbackArticle(candidate, fallbackResult, normaliseUrlFn, 
 
   // Guarantee that every article with CVEs mentions at least one CVE in its prose
   if (cves.length > 0) {
-    if (category === 'General' || !category) {
+    if (category === 'GENERAL' || category === 'General' || !category) {
       category = 'CVE';
     }
     const hasCveInText = cves.some(cve => headline.includes(cve) || summary.includes(cve));
@@ -697,7 +697,7 @@ export function buildFallbackArticle(candidate, fallbackResult, normaliseUrlFn, 
     }
   } else if (category === 'CVE') {
     // If categorized as CVE but has no actual CVE ID, reclassify as Vulnerability
-    category = 'Vulnerability';
+    category = 'VULNERABILITY';
   }
 
   return {
