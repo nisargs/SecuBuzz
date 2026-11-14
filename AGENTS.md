@@ -33,6 +33,7 @@
     - Any mobile-specific fixes or responsive adjustments MUST be strictly isolated under mobile-only media queries (`max-md:`, `hidden md:flex`, etc.) or mobile-specific modals (`MobileMyStackModal`). Shared desktop layout containers (`md:`, `lg:`) must never be modified or polluted with mobile overrides that break desktop spacing, wrapping, or alignment.
 - **Continuous Architecture & Status Quo Synchronization Mandate (Zero Architectural Drift):**
   - **Whenever we fix a bug, add a new feature, refactor code, or update system configurations, we MUST immediately document it in `AGENTS.md` (project architecture and status quo).**
+  - **Commit ID & Date Invariant**: Every recorded change, bug fix, or feature in `AGENTS.md` MUST explicitly cite the calendar date (`YYYY-MM-DD` or `Month DD, YYYY`) and the exact GitHub commit ID (`commit <hash>`), along with the live deployment artifacts (Cloudflare Worker Version ID, EAS update group, or Play Store build code). This creates an immutable audit trail for rapid rollback, verification, and retrospectives.
   - This ensures persistent memory across turns and sessions, keeping the team and assistant 100% synchronized with the live state of the website, mobile app, edge worker, and database schemas.
   - Every update must explicitly record: the root cause, the architectural solution/invariant, and the live verification telemetry (commit hash, worker version ID, or EAS update group).
 
@@ -152,7 +153,7 @@
 
 ## 6. Native `.aab` Releases & Production Updates
 - **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Git `3e7bc4a`):**
-  - **Vendor Radar Zero-Ghost-Outages & 100% Operational Baseline Overhaul (Nov 14, 2026 / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Live on `secubuzz.com`)**:
+  - **Vendor Radar Zero-Ghost-Outages & 100% Operational Baseline Overhaul (Nov 14, 2026 / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Commits `66f4f9d`, `3e7bc4a`, `d099a79` / Live on `secubuzz.com`)**:
     - *Root Cause Resolved*: Microsoft (M365) was missing from `LIVE_STATUS_SOURCES` and hardcoded as `OUTAGE` in `BASELINE_VENDOR_REGISTRY` from a historical incident, causing it to permanently render in red. Additionally, 5 other vendors (Palo Alto Networks, Cloudflare, Check Point, SonicWall, Tenable) had non-operational baseline fallbacks that could resurrect stale incidents on temporary polling timeouts.
     - *Architectural Standard & Permanent Invariants*:
       - **100% Operational Baseline (Innocent-Until-Proven-Guilty)**: Every single vendor entry in `BASELINE_VENDOR_REGISTRY` (`worker/src/index.ts`) and `VENDOR_STATUS_REGISTRY` (`website/src/data/vendorHealth.ts`) MUST ALWAYS have `status: 'OPERATIONAL'`. Never hardcode `OUTAGE` or `DEGRADED` into baseline registries or fallback mocks under any circumstance.
@@ -161,7 +162,7 @@
       - **Incident Staleness TTL**: Incidents with no updates in >14 days are excluded to prevent abandoned vendor tickets from permanently degrading statuses.
       - **Expanded Live Coverage (19 Sources)**: Live edge polling across Azure, Microsoft Admin Center (M365), Google Cloud (`incidents.json`), Slack (`current`), Palo Alto Networks, Cloudflare, Check Point, Ivanti, Tenable, Qualys, Rapid7, Red Hat, Cisco Duo, Atlassian, GitHub, SentinelOne, HashiCorp, 1Password, and SonicWall.
       - **Automated Radar Integrity Gate (`scripts/verify_vendor_radar.mjs`)**: Added `npm run verify:radar` to CI/build pipelines, asserting 100% operational baselines and valid HTTPS telemetry endpoints.
-  - **Comprehensive Site Audit & Production Resilience Hardening (Nov 13, 2026 / Worker `9150d025-372d-4885-8022-eda450be58b1` / Live on `secubuzz.com`)**:
+  - **Comprehensive Site Audit & Production Resilience Hardening (Nov 13–14, 2026 / Worker `9150d025-372d-4885-8022-eda450be58b1` / Commits `2263c33`, `67e64d3`, `fd6eeb3` / Live on `secubuzz.com`)**:
     - **D1 News Search for Rotated-Out CVEs (C1 Fixed)**:
       - *Root Cause Resolved*: In `worker/src/index.ts`, `/api/news/search` previously aborted with `{ count: 0, results: [] }` if a queried CVE was not in `getKnownCveSet()`. Because `getKnownCveSet()` was scoped strictly to the active 500-article live R2 feed window (~2.3 days), older CVEs stored in D1 (e.g. `CVE-2026-41709`, `CVE-2026-48356`, `CVE-2026-123158`) were blocked from querying the database and cached as misses.
       - *Architecture Standard*: Valid CVE queries (`CVE-YYYY-NNNN`) must never be short-circuited by in-memory feed windows. They execute against D1 (`SELECT ... WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ? ORDER BY published_at DESC LIMIT 100`) and cache both hits and misses in memory (1 hour) and Cloudflare edge cache (`max-age=3600, s-maxage=86400`). Verified live returning 3, 1, and 14 briefs respectively.
@@ -186,7 +187,7 @@
       - *Architecture Standard*: Updated hardcoded mockup string to evergreen `'1,800+ Advisories'`. User tab clicks reset `isPaused = false` so auto-rotation resumes smoothly when the cursor exits the showcase container.
     - **Deterministic Extractive Fallback Uppercase Taxonomy (W7 Fixed)**:
       - *Architecture Standard*: All threat categories emitted by `scripts/extractive_fallback.mjs` are standardized to uppercase (`GENERAL`, `CVE`, `RANSOMWARE`, `BREACH`, `VULNERABILITY`, `NATION STATE`), eliminating title-case fragmentation in the archive.
-  - **Vendor Outages & Infrastructure Health Radar (Nov 12–13, 2026 / Worker `47f778b6-7fea-4a4f-9765-23201e5e39e2` / Live on `secubuzz.com`)**:
+  - **Vendor Outages & Infrastructure Health Radar (Nov 12–13, 2026 / Worker `47f778b6-7fea-4a4f-9765-23201e5e39e2` / Commits `f318d8f`, `12e4afc`, `ba6a34e`, `617572a`, `6729b5b`, `dbad690` / Live on `secubuzz.com`)**:
     - **Real-Time Multi-Vendor Radar**: Live operational telemetry across 33 major enterprise IT, cloud, security, and developer platforms (Cisco, Fortinet, Microsoft, Azure, AWS, Google Cloud, CrowdStrike, Palo Alto, Cloudflare, GitHub, GitLab, Datadog, Slack, Docker, OpenAI, Anthropic, Atlassian, Red Hat, SonicWall, Ivanti, Citrix, VMware, Sophos, Check Point, Splunk, Broadcom, etc.).
     - **Independent Azure RSS Polling**: Built dedicated XML/RSS incident poller for Azure (`https://azure.status.microsoft/en-us/status/feed/`), running independently alongside Microsoft 365 (`status.cloud.microsoft`). Parses live `<item>` tags, evaluates incident severity (DEGRADED vs OUTAGE), and extracts incident titles.
     - **Telemetry Caching & Client Polling**: Cloudflare Worker caches `/api/vendor-status` at the edge for 5 minutes (`300_000ms`). The web client (`MyStackSidebar.tsx`) polls on mount and continuously auto-refreshes in the background every 3 minutes (`setInterval(..., 180000)`).
@@ -198,11 +199,11 @@
       - *Incident*: D1 row reads hit the 5,000,000 daily free tier limit due to an unindexed full table scan in legacy `getAliasToSlugMap()` on every request to `/news/:slug` across 1,350+ historical rows multiplied by web crawler hits.
       - *Permanent Fix*: Replaced table scans with direct primary key indexed lookups: `SELECT * FROM articles WHERE slug = ? LIMIT 1` (exactly 1 row read per request). Alias fallbacks only fire on primary miss, bounded by `LIMIT 1`.
       - *Zero-Read Writes*: Click telemetry uses pure `INSERT`, consuming 1 write and exactly 0 row reads.
-  - **My Stack Cross-Tab Auto-Filtering & Bottom Pill Toast (Nov 8, 2026)**:
+  - **My Stack Cross-Tab Auto-Filtering & Bottom Pill Toast (Nov 8, 2026 / Commits 9777e9a, b29bfdf)**:
     - **Instant Feed Pivot**: Tapping "Add to My Stack" or "Add to CVE Watchlist" on an entity chip in `ArticleCard` or `CveCard` immediately activates the `MY_STACK` source filter on the active screen and scrolls to top (`index: 0`).
     - **Shared Cross-Tab Stack Filter**: Added `isStackFilterActive` and `setStackFilterActive` to `MyStackContext`. Activating My Stack on Briefs automatically synchronizes to Advisories (and vice versa), so switching tabs preserves the active stack lens with zero manual re-selection.
     - **High-Contrast Bottom Pill Toast**: Relocated confirmation toast from top status bar (`top: 46/56`) to float directly above the bottom tab bar (`bottom: insets.bottom + 66px`). Upgraded chassis to solid obsidian `#111622` (light: `#FFFFFF`) with 1.5px accent border (`${accentColor}80`), 12 elevation, and smooth bottom-up slide animation (`translateY: 16 -> 0 -> 12`).
-  - **Server-Side My Stack & CVE Watchlist Push Targeting (Nov 2, 2026)**:
+  - **Server-Side My Stack & CVE Watchlist Push Targeting (Nov 2, 2026 / OTA Group b730e004-e8a2-4d70-9353-892607b5bec9)**:
     - **Zero-Leakage On-Call Pager Mode**: Eliminates background push leakage where Android OS bypassed foreground handlers. The ingestion dispatcher evaluates stories server-side against the device's selected enterprise vendors and watched CVEs before delivering FCM messages.
     - **Real-Time Client Stack Sync**: Mobile app automatically synchronizes stack modifications (adding, deselecting, or clearing vendors/CVEs) to Cloudflare D1 with zero account friction.
     - **Silent Pager Safety**: Devices with `MY_STACK_ONLY` and 0 selections receive strictly 0 notifications.
