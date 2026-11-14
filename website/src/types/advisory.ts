@@ -7,6 +7,7 @@ export interface AdvisoryReference {
 
 export interface Advisory {
   cve: string;
+  cveID?: string;
   slug: string;
   vendor: string;
   product: string;

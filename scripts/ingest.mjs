@@ -467,7 +467,7 @@ function extractRssItems(xml) {
       extractTag(item, "published") ||
       extractTag(item, "dc:date");
 
-    if (!title || !link) {
+    if (!title || !link || (!link.startsWith('http://') && !link.startsWith('https://'))) {
       continue;
     }
 
@@ -504,7 +504,7 @@ function extractRssItems(xml) {
         extractTag(entry, "published") ||
         extractTag(entry, "updated");
 
-      if (!title || !link) {
+      if (!title || !link || (!link.startsWith('http://') && !link.startsWith('https://'))) {
         continue;
       }
 

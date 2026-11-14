@@ -23,7 +23,7 @@ export interface Env {
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type, Authorization, x-admin-key',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 };
 
 // Single source of truth for the /support redirect destination (kept in one config spot)
@@ -35,6 +35,7 @@ const SECURITY_HEADERS = {
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
   'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
+  'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://secubuzz.com https://pub-3fb02516aa81498eb34da1b79161b1c8.r2.dev https://pagead2.googlesyndication.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none';",
 };
 
 function jsonResponse(
@@ -47,6 +48,10 @@ function jsonResponse(
     headers: {
       'Content-Type': 'application/json',
       ...CORS_HEADERS,
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
+      'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
       ...extraHeaders,
     },
   });
@@ -1015,6 +1020,28 @@ export default {
         status: 204,
         headers: CORS_HEADERS,
       });
+    }
+
+    // Security Hardening: Guard write requests against memory abuse and drive-by cross-origin attacks
+    if (request.method === 'POST') {
+      const contentLength = parseInt(request.headers.get('content-length') || '0', 10);
+      const maxBytes = url.pathname === '/api/articles/archive' ? 512 * 1024 : 16 * 1024;
+      if (contentLength > maxBytes) {
+        return errorResponse('Payload too large', 413);
+      }
+
+      // Drive-by Browser Origin Guard: If a browser sends an Origin header, restrict write operations to secubuzz.com
+      const origin = request.headers.get('Origin');
+      if (origin) {
+        const isAllowedOrigin =
+          origin === 'https://secubuzz.com' ||
+          origin.endsWith('.secubuzz.com') ||
+          origin === 'http://localhost:5173' ||
+          origin === 'http://localhost:3000';
+        if (!isAllowedOrigin && !isAuthorized(request, env)) {
+          return errorResponse('Cross-origin POST rejected', 403);
+        }
+      }
     }
 
     // Canonical HTTPS & Hostname Enforcement (301 Permanent Redirect)
