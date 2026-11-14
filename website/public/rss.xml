@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 12:47:10 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:43:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>UnrealIRCd Command Injection Exploited via CVE-2026-114713</title>
+      <link>https://secubuzz.com/news/unrealircd-command-injection-exploited-via-cve-202-512c21ff</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/unrealircd-command-injection-exploited-via-cve-202-512c21ff</guid>
+      <description><![CDATA[Attackers exploited a server‑level command injection flaw in UnrealIRCd, an open‑source IRC server, via improper delimiter neutralization. The CVE‑2026‑114713 vulnerability, rated CVSS 8.6, permits unauthenticated remote code execution and has been actively used. CISA added the flaw to its KEV catalog; vendors should apply the latest patch or upgrade immediately.]]></description>
+      <pubDate>Sat, 14 Nov 2026 12:38:35 GMT</pubDate>
+      <source url="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html">The Hacker News</source>
+      <category>CVE</category>
+    </item>
     <item>
       <title>Hackers Use ARTEX AI Agents for Rapid Privileged Access</title>
       <link>https://secubuzz.com/news/hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22</link>
@@ -446,15 +455,6 @@
       <description><![CDATA[Chromium’s CVE-2026-126863 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The vulnerability arises from improper memory handling during object deallocation, potentially allowing attackers to execute arbitrary code; no public exploit has been reported. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126863">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Chromium CVE-2026-126864: Use-After-Free Vulnerability</title>
-      <link>https://secubuzz.com/news/chromium-cve-2026-126864-use-after-free-vulnerabil-e9de9743</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126864-use-after-free-vulnerabil-e9de9743</guid>
-      <description><![CDATA[Chromium’s CVE-2026-126864 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The flaw results from improper memory handling during object deallocation, potentially enabling arbitrary code execution; no public exploit has been disclosed. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126864">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>

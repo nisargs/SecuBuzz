@@ -11,6 +11,27 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "unrealircd-command-injection-exploited-via-cve-202-512c21ff",
+    "title": "UnrealIRCd Command Injection Exploited via CVE-2026-114713",
+    "summary": "Attackers exploited a server‑level command injection flaw in UnrealIRCd, an open‑source IRC server, via improper delimiter neutralization. The CVE‑2026‑114713 vulnerability, rated CVSS 8.6, permits unauthenticated remote code execution and has been actively used. CISA added the flaw to its KEV catalog; vendors should apply the latest patch or upgrade immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+    "publishedAt": "2026-11-14T12:38:35.000Z",
+    "cves": [
+      "CVE-2026-114713"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "unrealircd-command-injection-exploited-via-cve-202",
+      "article-512c21ff",
+      "512c21ff",
+      "unrealircd-command-injection-exploited-via-cve-202-57c625",
+      "unrealircd-command-injection-exploited-via-cve-2026-114713"
+    ]
+  },
+  {
     "slug": "hackers-use-artex-ai-agents-for-rapid-privileged-a-bb287d22",
     "title": "Hackers Use ARTEX AI Agents for Rapid Privileged Access",
     "summary": "Hackers use ARTEX AI agents to automate network attacks, reaching privileged access in under three hours. The agents combine stolen credentials, exposed applications, and cloud permissions, reducing the time from discovery to compromise. Security teams should monitor for ARTEX activity, enforce least‑privilege cloud permissions, patch exposed applications promptly, and implement multi‑factor authentication.",
@@ -9580,24 +9601,6 @@ export const news: NewsBrief[] = [
       "71df4385",
       "vanderbilt-restores-systems-after-alleged-data-the-550d8e",
       "vanderbilt-restores-systems-after-alleged-data-theft-attack"
-    ]
-  },
-  {
-    "slug": "red-hat-releases-net-8-0-security-update-fa711df7",
-    "title": "Red Hat Releases .NET 8.0 Security Update",
-    "summary": "Red Hat released a security update for .NET 8.0 on RHEL 8, fixing vulnerabilities that could let attackers compromise application integrity. The advisory rates the update as Important, with CVSS scores linked to each CVE, indicating moderate to high risk but no confirmed exploitation. Apply the .NET 8.0 update immediately following Red Hat’s guidance to mitigate the identified flaws.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99052",
-    "publishedAt": "2026-11-11T18:20:45.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-releases-net-8-0-security-update",
-      "article-fa711df7",
-      "fa711df7",
-      "red-hat-releases-net-8-0-security-update-37d683"
     ]
   }
 ];

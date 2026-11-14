@@ -1,5 +1,21 @@
 [
   {
+    "id": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+    "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+    "title": "UnrealIRCd Command Injection Exploited via CVE-2026-114713",
+    "headline": "UnrealIRCd Command Injection Exploited via CVE-2026-114713",
+    "summary": "Attackers exploited a server‑level command injection flaw in UnrealIRCd, an open‑source IRC server, via improper delimiter neutralization. The CVE‑2026‑114713 vulnerability, rated CVSS 8.6, permits unauthenticated remote code execution and has been actively used. CISA added the flaw to its KEV catalog; vendors should apply the latest patch or upgrade immediately.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "The Hacker News",
+    "publishedAt": "2026-11-14T12:38:35.000Z",
+    "ingestedAt": "2026-11-14T13:43:09.093Z",
+    "isPublishedTimeUnknown": false,
+    "isFutureSkew": false,
+    "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+    "additionalSources": []
+  },
+  {
     "id": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
     "sourceUrl": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
     "title": "Hackers Use ARTEX AI Agents for Rapid Privileged Access",
@@ -8258,22 +8274,6 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://www.malwarebytes.com/blog/news/2026/11/vanderbilt-restores-systems-after-cyberattack-as-hackers-claim-data-theft",
-    "additionalSources": []
-  },
-  {
-    "id": "https://access.redhat.com/errata/RHSA-2026:99052",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99052",
-    "title": "Red Hat Releases .NET 8.0 Security Update",
-    "headline": "Red Hat Releases .NET 8.0 Security Update",
-    "summary": "Red Hat released a security update for .NET 8.0 on RHEL 8, fixing vulnerabilities that could let attackers compromise application integrity. The advisory rates the update as Important, with CVSS scores linked to each CVE, indicating moderate to high risk but no confirmed exploitation. Apply the .NET 8.0 update immediately following Red Hat’s guidance to mitigate the identified flaws.",
-    "category": "VULNERABILITY",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "publishedAt": "2026-11-11T18:20:45.000Z",
-    "ingestedAt": "2026-11-11T21:44:01.277Z",
-    "isPublishedTimeUnknown": false,
-    "isFutureSkew": false,
-    "url": "https://access.redhat.com/errata/RHSA-2026:99052",
     "additionalSources": []
   }
 ]
