@@ -5,8 +5,17 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 09:46:41 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 10:44:59 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cursor Links Fireworks AI Key Leak to Backdoored Extensions</title>
+      <link>https://secubuzz.com/news/cursor-links-fireworks-ai-key-leak-to-backdoored-e-e32fac17</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cursor-links-fireworks-ai-key-leak-to-backdoored-e-e32fac17</guid>
+      <description><![CDATA[Cursor traced an October breach to a leaked Fireworks AI key that attackers used to infiltrate its marketplace. The key enabled theft of coding agent records, credential harvesting, and insertion of malicious Claude Code extensions, creating a backdoor. Cursor’s November 13 update links the exposure to the malicious packages and urges immediate review of marketplace integrity and key management.]]></description>
+      <pubDate>Sat, 14 Nov 2026 09:09:31 GMT</pubDate>
+      <source url="https://cybersecuritynews.com/cursor-data-breach/">Cyber Security News</source>
+      <category>Breach</category>
+    </item>
     <item>
       <title>FAA Ground Stop Likely Software Update, No Hacking Evidence</title>
       <link>https://secubuzz.com/news/faa-ground-stop-likely-software-update-no-hacking-5f2501a2</link>
@@ -251,6 +260,42 @@
       <category>General</category>
     </item>
     <item>
+      <title>Chromium CVE-2026-126870: Uninitialized Resource</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126870-uninitialized-resource-7df81a21</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126870-uninitialized-resource-7df81a21</guid>
+      <description><![CDATA[Microsoft Edge, built on Chromium, is affected by CVE-2026-126870, an uninitialized resource flaw discovered in the Chromium engine. The vulnerability could lead to memory corruption or denial of service if exploited, but no active exploitation has been reported. Microsoft recommends installing the latest Edge update, which incorporates the Chromium patch, and reviewing Chrome release notes for detailed fix information.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126870">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-126871: Out-of-Bounds Read</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126871-out-of-bounds-read-8af9f0f6</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126871-out-of-bounds-read-8af9f0f6</guid>
+      <description><![CDATA[Microsoft Edge, based on Chromium, is impacted by CVE-2026-126871, an out-of-bounds read flaw in the Chromium codebase. The defect may allow attackers to read memory beyond intended bounds, potentially leading to information disclosure or crash, though no exploitation evidence exists. Edge users should apply the latest update that includes the Chromium patch, and consult Chrome release notes for fix details.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126871">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-126872: Incorrect Authorization Exploit</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126872-incorrect-authorization-e-1d019f58</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126872-incorrect-authorization-e-1d019f58</guid>
+      <description><![CDATA[A Chrome-assigned CVE-2026-126872 exposes incorrect authorization in Chromium's rendering engine, potentially allowing attackers to elevate privileges within Edge. The flaw arises from insufficient access checks during resource loading, enabling unauthorized access to privileged data. Microsoft Edge has released a patch in the latest update; users should install the new version immediately.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126872">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-126873: Use-After-Free Vulnerability</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126873-use-after-free-vulnerabil-4d096bab</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126873-use-after-free-vulnerabil-4d096bab</guid>
+      <description><![CDATA[A Chrome-assigned CVE-2026-126873 triggers a use-after-free in Chromium's memory allocator, potentially enabling remote code execution in Microsoft Edge. The flaw occurs when freed memory is accessed during script execution, allowing attackers to inject malicious code. Microsoft Edge has issued a patch in the latest release; users must update immediately today.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126873">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Chromium Use-After-Free CVE-2026-126865 Fixed in Edge</title>
       <link>https://secubuzz.com/news/chromium-use-after-free-cve-2026-126865-fixed-in-e-50842b6b</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-use-after-free-cve-2026-126865-fixed-in-e-50842b6b</guid>
@@ -410,51 +455,6 @@
       <description><![CDATA[Chromium’s CVE‑2026‑126849 flaw is a type confusion bug that may lead to memory corruption. The vulnerability is assigned by Google, and Microsoft Edge (Chromium‑based) incorporates the fix automatically in its updates. Users should update to the latest Microsoft Edge release to ensure the patch is applied and mitigate potential exploitation. The flaw is tracked as CVE-2026-126849.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126849">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Addresses Chromium CVE-2026-126840 Write</title>
-      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0</guid>
-      <description><![CDATA[Microsoft Edge incorporates Chromium updates that fix CVE-2026-126840, an out‑of‑bounds write vulnerability discovered in Chrome. The flaw could allow attackers to corrupt memory and potentially execute arbitrary code if exploited. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126840">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Addresses Chromium CVE-2026-126841 Read</title>
-      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126841-0158137c</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126841-0158137c</guid>
-      <description><![CDATA[Microsoft Edge incorporates Chromium updates that fix CVE-2026-126841, an out‑of‑bounds read vulnerability discovered in Chrome. The flaw could allow attackers to read sensitive memory contents, potentially exposing confidential data. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today now.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126841">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Patches Upstream Chromium Type Confusion Flaw</title>
-      <link>https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-type-conf-5f32eed9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-patches-upstream-chromium-type-conf-5f32eed9</guid>
-      <description><![CDATA[Microsoft Edge received an update to address a security flaw ingested from the upstream Chromium browser engine. Tracked as CVE-2026-126843, the vulnerability stems from a type confusion memory condition inside the core browser component. Users and administrators should apply the latest Microsoft Edge security update and consult Google Chrome release documentation for advisories.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126843">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Edge Resolves Upstream Chromium Uninitialized Resource Vulnerability</title>
-      <link>https://secubuzz.com/news/microsoft-edge-resolves-upstream-chromium-uninitia-f12df09f</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-resolves-upstream-chromium-uninitia-f12df09f</guid>
-      <description><![CDATA[Microsoft updated its Edge browser to integrate upstream security fixes from the underlying Chromium platform. Registered as CVE-2026-126844, the root cause involves an uninitialized resource vulnerability within the core browser architecture. System administrators are advised to update Microsoft Edge to the newest version and review corresponding official Google Chrome release notes.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126844">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Microsoft Patches Print Spooler Privilege Escalation</title>
-      <link>https://secubuzz.com/news/microsoft-patches-print-spooler-privilege-escalati-a48cea58</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-patches-print-spooler-privilege-escalati-a48cea58</guid>
-      <description><![CDATA[A Windows Print Spooler Components Elevation of Privilege vulnerability (CVE-2026-112765) was disclosed. The flaw allows local privilege escalation by manipulating spooler service components, potentially enabling an attacker to gain SYSTEM rights; no active exploitation reported. Microsoft has released a patch in the latest cumulative update; administrators should apply the update promptly.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-112765">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>

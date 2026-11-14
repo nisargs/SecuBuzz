@@ -11,6 +11,25 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "cursor-links-fireworks-ai-key-leak-to-backdoored-e-e32fac17",
+    "title": "Cursor Links Fireworks AI Key Leak to Backdoored Extensions",
+    "summary": "Cursor traced an October breach to a leaked Fireworks AI key that attackers used to infiltrate its marketplace. The key enabled theft of coding agent records, credential harvesting, and insertion of malicious Claude Code extensions, creating a backdoor. Cursor’s November 13 update links the exposure to the malicious packages and urges immediate review of marketplace integrity and key management.",
+    "category": "Breach",
+    "severity": "MEDIUM",
+    "source": "Cyber Security News",
+    "sourceUrl": "https://cybersecuritynews.com/cursor-data-breach/",
+    "publishedAt": "2026-11-14T09:09:31.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "cursor-links-fireworks-ai-key-leak-to-backdoored-e",
+      "article-e32fac17",
+      "e32fac17",
+      "cursor-links-fireworks-ai-key-leak-to-backdoored-e-4e02b7",
+      "cursor-links-fireworks-ai-key-leak-to-backdoored-extensions"
+    ]
+  },
+  {
     "slug": "faa-ground-stop-likely-software-update-no-hacking-5f2501a2",
     "title": "FAA Ground Stop Likely Software Update, No Hacking Evidence",
     "summary": "The nationwide FAA ground stop, triggered by a software update, shows no evidence of a cyberattack behind the outage. Officials attribute the disruption to a misconfigured update rollout, with no signs of malicious intrusion detected by the FBI. Air traffic control operators should verify update integrity and monitor for anomalous behavior, while the FAA continues to investigate the incident.",
@@ -523,6 +542,88 @@ export const news: NewsBrief[] = [
       "article-4e48330f",
       "4e48330f",
       "openai-launches-chatgpt-wallet-for-agent-payments-25f506"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-126870-uninitialized-resource-7df81a21",
+    "title": "Chromium CVE-2026-126870: Uninitialized Resource",
+    "summary": "Microsoft Edge, built on Chromium, is affected by CVE-2026-126870, an uninitialized resource flaw discovered in the Chromium engine. The vulnerability could lead to memory corruption or denial of service if exploited, but no active exploitation has been reported. Microsoft recommends installing the latest Edge update, which incorporates the Chromium patch, and reviewing Chrome release notes for detailed fix information.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126870",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126870"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126870-uninitialized-resource",
+      "article-7df81a21",
+      "7df81a21",
+      "chromium-cve-2026-126870-uninitialized-resource-1fdbda"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-126871-out-of-bounds-read-8af9f0f6",
+    "title": "Chromium CVE-2026-126871: Out-of-Bounds Read",
+    "summary": "Microsoft Edge, based on Chromium, is impacted by CVE-2026-126871, an out-of-bounds read flaw in the Chromium codebase. The defect may allow attackers to read memory beyond intended bounds, potentially leading to information disclosure or crash, though no exploitation evidence exists. Edge users should apply the latest update that includes the Chromium patch, and consult Chrome release notes for fix details.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126871",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126871"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126871-out-of-bounds-read",
+      "article-8af9f0f6",
+      "8af9f0f6",
+      "chromium-cve-2026-126871-out-of-bounds-read-1fdbda"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-126872-incorrect-authorization-e-1d019f58",
+    "title": "Chromium CVE-2026-126872: Incorrect Authorization Exploit",
+    "summary": "A Chrome-assigned CVE-2026-126872 exposes incorrect authorization in Chromium's rendering engine, potentially allowing attackers to elevate privileges within Edge. The flaw arises from insufficient access checks during resource loading, enabling unauthorized access to privileged data. Microsoft Edge has released a patch in the latest update; users should install the new version immediately.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126872",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126872"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126872-incorrect-authorization-e",
+      "article-1d019f58",
+      "1d019f58",
+      "chromium-cve-2026-126872-incorrect-authorization-e-1fdbda",
+      "chromium-cve-2026-126872-incorrect-authorization-exploit"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-126873-use-after-free-vulnerabil-4d096bab",
+    "title": "Chromium CVE-2026-126873: Use-After-Free Vulnerability",
+    "summary": "A Chrome-assigned CVE-2026-126873 triggers a use-after-free in Chromium's memory allocator, potentially enabling remote code execution in Microsoft Edge. The flaw occurs when freed memory is accessed during script execution, allowing attackers to inject malicious code. Microsoft Edge has issued a patch in the latest release; users must update immediately today.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126873",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126873"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126873-use-after-free-vulnerabil",
+      "article-4d096bab",
+      "4d096bab",
+      "chromium-cve-2026-126873-use-after-free-vulnerabil-1fdbda",
+      "chromium-cve-2026-126873-use-after-free-vulnerability"
     ]
   },
   {
@@ -9510,111 +9611,6 @@ export const news: NewsBrief[] = [
       "article-f96bf5fa",
       "f96bf5fa",
       "pan-os-sensitive-info-disclosure-cve-2026-0331-7ae305"
-    ]
-  },
-  {
-    "slug": "chromium-monthly-update-addresses-pan-sa-2026-0014-7ba43557",
-    "title": "Chromium Monthly Update Addresses PAN-SA-2026-0014",
-    "summary": "Palo Alto Networks published advisory PAN-SA-2026-0014 incorporating 62 upstream Chromium security fixes into Prisma Browser. Rated High severity (CVSS-BT 7.7, base 9.4) with passive user interaction and no reported exploitation, the update resolves memory corruption, use-after-free, type confusion, and authorization flaws. Administrators should upgrade Prisma Browser to unaffected releases (157.19.4.39 or fixed branch builds) promptly.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Palo Alto Networks PSIRT",
-    "sourceUrl": "https://security.paloaltonetworks.com/PAN-SA-2026-0014",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "chromium-monthly-update-addresses-pan-sa-2026-0014",
-      "article-7ba43557",
-      "7ba43557",
-      "chromium-monthly-update-addresses-pan-sa-2026-0014-101918",
-      "chromium-update-addresses-cve-2026-113971-bb8a4c72"
-    ]
-  },
-  {
-    "slug": "pan-os-globalprotect-authorization-bypass-cve-2026-4d1d2f39",
-    "title": "PAN‑OS GlobalProtect Authorization Bypass CVE‑2026‑0325",
-    "summary": "Palo Alto Networks disclosed CVE‑2026‑0325, an authorization bypass flaw in PAN‑OS GlobalProtect. The vulnerability allows an unauthenticated attacker to gain privileged access to the VPN portal, with a CVSS score indicating low impact; no active exploitation has been reported. Palo Alto recommends applying the latest PAN‑OS update that patches CVE‑2026‑0325 to prevent unauthorized access. The flaw is tracked as CVE-2026-0325.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Palo Alto Networks PSIRT",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0325",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "cves": [
-      "CVE-2026-0325"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "pan-os-globalprotect-authorization-bypass-cve-2026",
-      "article-4d1d2f39",
-      "4d1d2f39",
-      "pan-os-globalprotect-authorization-bypass-cve-2026-7ae305",
-      "pan-os-globalprotect-authorization-bypass-cve-2026-0325"
-    ]
-  },
-  {
-    "slug": "pan-os-globalprotect-privilege-escalation-cve-2026-236bd6ca",
-    "title": "PAN‑OS GlobalProtect Privilege Escalation CVE‑2026‑0327",
-    "summary": "Palo Alto Networks identified CVE‑2026‑0327, a privilege escalation flaw in PAN‑OS GlobalProtect. The bug permits an authenticated user to elevate privileges on the VPN appliance, with a CVSS score reflecting low severity; no exploitation evidence exists. Apply the vendor’s latest PAN‑OS patch that addresses CVE‑2026‑0327 to eliminate the escalation vector. The flaw is tracked as CVE-2026-0327.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Palo Alto Networks PSIRT",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0327",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "cves": [
-      "CVE-2026-0327"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "pan-os-globalprotect-privilege-escalation-cve-2026",
-      "article-236bd6ca",
-      "236bd6ca",
-      "pan-os-globalprotect-privilege-escalation-cve-2026-7ae305",
-      "pan-os-globalprotect-privilege-escalation-cve-2026-0327"
-    ]
-  },
-  {
-    "slug": "pan-os-panorama-rce-cve-2026-0330-9058a5c5",
-    "title": "PAN‑OS Panorama RCE CVE‑2026‑0330",
-    "summary": "Palo Alto Networks disclosed CVE‑2026‑0330, an authenticated remote code execution flaw in PAN‑OS Panorama. The vulnerability allows a logged‑in attacker to execute arbitrary code on the Panorama server, with a CVSS score indicating medium severity; no active exploitation has been reported. Install the latest PAN‑OS update that patches CVE‑2026‑0330 to prevent remote code execution. The flaw is tracked as CVE-2026-0330.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Palo Alto Networks PSIRT",
-    "sourceUrl": "https://security.paloaltonetworks.com/CVE-2026-0330",
-    "publishedAt": "2026-11-11T17:00:00.000Z",
-    "cves": [
-      "CVE-2026-0330"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "pan-os-panorama-rce-cve-2026-0330",
-      "article-9058a5c5",
-      "9058a5c5",
-      "pan-os-panorama-rce-cve-2026-0330-7ae305"
-    ]
-  },
-  {
-    "slug": "microsoft-forge-lab-discovers-59-linux-kernel-vuln-07c01504",
-    "title": "Microsoft FORGE Lab Discovers 59 Linux Kernel Vulnerabilities, 8 Root Exploits",
-    "summary": "Microsoft FORGE Lab used AI to uncover 59 Linux kernel bugs, including eight that enable local root privilege escalation. The findings yielded 33 CVEs, 38 upstream fixes, and prompted Microsoft to release detailed exploit proofs and remediation guidance. Security teams worldwide are urged to patch affected kernel versions to mitigate potential exploitation of these critical flaws.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Microsoft Security",
-    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
-    "publishedAt": "2026-11-11T16:55:00.000Z",
-    "cves": [],
-    "additionalSources": [
-      {
-        "source": "Cyber Security News",
-        "sourceUrl": "https://cybersecuritynews.com/linux-kernel-security-bugs/"
-      }
-    ],
-    "aliases": [
-      "microsoft-forge-lab-discovers-59-linux-kernel-vuln",
-      "article-07c01504",
-      "07c01504",
-      "microsoft-forge-lab-discovers-59-linux-kernel-vuln-240f5f",
-      "microsoft-forge-lab-discovers-59-linux-kernel-vulnerabilitie"
     ]
   }
 ];
