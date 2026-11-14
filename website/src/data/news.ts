@@ -507,6 +507,87 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-cve-2026-126856-incomplete-cleanup-fix-c7e2e630",
+    "title": "Chromium CVE-2026-126856 Incomplete Cleanup Fix",
+    "summary": "CVE-2026-126856 causes incomplete cleanup in Chromium rendering, potentially leaving residual data on disk. The flaw stems from improper deallocation of temporary buffers, allowing local users to read or alter sensitive files. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release or apply the referenced Chrome patch.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126856",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126856"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126856-incomplete-cleanup-fix",
+      "article-c7e2e630",
+      "c7e2e630",
+      "chromium-cve-2026-126856-incomplete-cleanup-fix-1fdbda"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-126857-out-of-bounds-read-2a2b5e9a",
+    "title": "Chromium CVE-2026-126857 Out-of-Bounds Read",
+    "summary": "CVE-2026-126857 permits an out-of-bounds read in Chromium's rendering engine, potentially exposing memory contents. The vulnerability originates from unchecked array indexing during image decoding, which could be leveraged by local users to read arbitrary memory. Microsoft Edge includes the Chromium patch; users should upgrade to the latest Edge release or apply the Chrome update referenced in the Google Chrome Releases blog.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126857",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126857"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126857-out-of-bounds-read",
+      "article-2a2b5e9a",
+      "2a2b5e9a",
+      "chromium-cve-2026-126857-out-of-bounds-read-1fdbda"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-126863-use-after-free-exploit-ab882f7c",
+    "title": "Chromium CVE-2026-126863: Use-After-Free Exploit",
+    "summary": "Chromium’s CVE-2026-126863 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The vulnerability arises from improper memory handling during object deallocation, potentially allowing attackers to execute arbitrary code; no public exploit has been reported. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126863",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126863"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126863-use-after-free-exploit",
+      "article-ab882f7c",
+      "ab882f7c",
+      "chromium-cve-2026-126863-use-after-free-exploit-1fdbda"
+    ]
+  },
+  {
+    "slug": "chromium-cve-2026-126864-use-after-free-vulnerabil-e9de9743",
+    "title": "Chromium CVE-2026-126864: Use-After-Free Vulnerability",
+    "summary": "Chromium’s CVE-2026-126864 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The flaw results from improper memory handling during object deallocation, potentially enabling arbitrary code execution; no public exploit has been disclosed. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126864",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126864"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-cve-2026-126864-use-after-free-vulnerabil",
+      "article-e9de9743",
+      "e9de9743",
+      "chromium-cve-2026-126864-use-after-free-vulnerabil-1fdbda",
+      "chromium-cve-2026-126864-use-after-free-vulnerability"
+    ]
+  },
+  {
     "slug": "chromium-uninitialized-resource-cve-2026-126858-6bbfba07",
     "title": "Chromium Uninitialized Resource CVE-2026-126858",
     "summary": "Chromium vulnerability CVE-2026-126858 involves an uninitialized resource that could lead to undefined behavior during rendering. The flaw is present in the Chromium engine and is mitigated by Microsoft Edge (Chromium-based) updates that incorporate the patched engine. Users should update to the latest Microsoft Edge release or apply the Chrome patch to ensure the uninitialized resource is properly handled.",
@@ -2423,6 +2504,44 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "libhevc-hevc-decoder-suffers-out-of-bounds-read-di-565e5c1c",
+    "title": "libhevc HEVC Decoder Suffers Out-of-Bounds Read Disclosure",
+    "summary": "An information‑disclosure flaw in Google Android’s libhevc HEVC decoder lets attackers read memory via crafted media. The bug is an out‑of‑bounds read during HEVC parsing, rated CVSS 4.4, and requires the victim to open a malicious file or page. Google released a patch in the Android security update; users should install it or avoid opening suspicious media until applied.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-970/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "libhevc-hevc-decoder-suffers-out-of-bounds-read-di",
+      "article-565e5c1c",
+      "565e5c1c",
+      "libhevc-hevc-decoder-suffers-out-of-bounds-read-di-6f3d22",
+      "libhevc-hevc-decoder-suffers-out-of-bounds-read-disclosure"
+    ]
+  },
+  {
+    "slug": "libhevc-hevc-decoder-exposes-android-info-via-oob-c6d1534e",
+    "title": "libhevc HEVC Decoder Exposes Android Info via OOB Read",
+    "summary": "A remote information‑disclosure flaw in libhevc’s HEVC decoder lets attackers read out‑of‑bounds data on Google Android devices. The bug activates when a user opens a crafted media file or visits a malicious page, exposing memory; CVSS 4.4 indicates medium risk. Google has not yet issued a patch, so users should avoid untrusted media and apply Android updates that fix libhevc.",
+    "category": "Vulnerability",
+    "severity": "MEDIUM",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-969/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "libhevc-hevc-decoder-exposes-android-info-via-oob",
+      "article-c6d1534e",
+      "c6d1534e",
+      "libhevc-hevc-decoder-exposes-android-info-via-oob-6f3d1f",
+      "libhevc-hevc-decoder-exposes-android-info-via-oob-read"
     ]
   },
   {
@@ -9496,130 +9615,6 @@ export const news: NewsBrief[] = [
       "article-9f62cf6e",
       "9f62cf6e",
       "asp-net-core-denial-of-service-cve-2026-118750-1fe90c"
-    ]
-  },
-  {
-    "slug": "aspire-information-disclosure-cve-2026-120792-1563d0e7",
-    "title": "Aspire Information Disclosure CVE‑2026‑120792",
-    "summary": "CVE-2026-120792 is an information‑disclosure flaw in the Aspire product that can expose sensitive data through unvalidated input. Microsoft has issued only an informational update to the Security Updates table, with no active exploitation or patch available. Organizations should watch for a future fix and apply any subsequent Aspire updates to mitigate potential data exposure.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-120792",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-120792"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "aspire-information-disclosure-cve-2026-120792",
-      "article-1563d0e7",
-      "1563d0e7",
-      "aspire-information-disclosure-cve-2026-120792-1fde97"
-    ]
-  },
-  {
-    "slug": "cve-2026-118749-asp-net-core-dos-vulnerability-23f19ff0",
-    "title": "CVE-2026-118749 ASP.NET Core DoS Vulnerability",
-    "summary": "CVE-2026-118749 is a denial‑of‑service flaw in ASP.NET Core that can be triggered by malformed requests. The vulnerability causes resource exhaustion, leading to application crashes without requiring authentication, and is classified as a high‑severity DoS issue. Microsoft has released an informational update; administrators should apply the latest ASP.NET Core patches and monitor traffic for abnormal request patterns.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118749",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118749"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "cve-2026-118749-asp-net-core-dos-vulnerability",
-      "article-23f19ff0",
-      "23f19ff0",
-      "cve-2026-118749-asp-net-core-dos-vulnerability-1fe90c"
-    ]
-  },
-  {
-    "slug": "microsoft-publishes-informational-update-on-cve-20-7bf468e2",
-    "title": "Microsoft Publishes Informational Update on CVE-2026-118746",
-    "summary": "Microsoft released an update addressing CVE-2026-118746, a .NET security feature bypass vulnerability that could allow attackers to circumvent authentication checks. The flaw originates from improper validation of security tokens, potentially enabling unauthorized code execution if exploited, though no active exploitation has been reported. A patch is available in the .NET update; administrators should apply it immediately to mitigate risk.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118746",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118746"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-publishes-informational-update-on-cve-20",
-      "article-7bf468e2",
-      "7bf468e2",
-      "microsoft-publishes-informational-update-on-cve-20-1fe90c",
-      "microsoft-publishes-informational-update-on-cve-2026-118746"
-    ]
-  },
-  {
-    "slug": "microsoft-issues-informational-update-on-cve-2026-dab543b0",
-    "title": "Microsoft Issues Informational Update on CVE-2026-118747",
-    "summary": "Microsoft released an update addressing CVE-2026-118747, a .NET denial‑of‑service vulnerability that could cause application crashes by exhausting resources. The flaw stems from unbounded memory allocation during request processing, potentially leading to service disruption if triggered, though no active exploitation has been reported. A patch is available in the .NET update; administrators should apply it promptly to prevent outages.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118747",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118747"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-issues-informational-update-on-cve-2026",
-      "article-dab543b0",
-      "dab543b0",
-      "microsoft-issues-informational-update-on-cve-2026-1fe90c",
-      "microsoft-issues-informational-update-on-cve-2026-118747"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-guidance-for-asp-net-core-dos-fl-f69a0c33",
-    "title": "Microsoft Updates Guidance for ASP.NET Core DoS Flaw",
-    "summary": "Microsoft updated security guidance regarding CVE-2026-118748, a denial of service vulnerability affecting ASP.NET Core applications. The security flaw exposes targeted ASP.NET Core deployments to potential denial of service conditions, though recent documentation modifications represent informational updates only. Security teams managing affected ASP.NET Core frameworks should review the revised Microsoft security update links to ensure proper mitigation deployment.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118748",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118748"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-guidance-for-asp-net-core-dos-fl",
-      "article-f69a0c33",
-      "f69a0c33",
-      "microsoft-updates-guidance-for-asp-net-core-dos-fl-1fe90c",
-      "microsoft-updates-guidance-for-asp-net-core-dos-flaw"
-    ]
-  },
-  {
-    "slug": "asp-net-core-security-feature-bypass-cve-2026-1141-0d270cd7",
-    "title": "ASP.NET Core Security Feature Bypass CVE-2026-114157",
-    "summary": "CVE-2026-114157 is a security feature bypass affecting Microsoft ASP.NET Core, enabling attackers to circumvent built‑in controls. The flaw stems from improper validation of security update links; no active exploitation has been observed, and the issue is informational only. Microsoft has released an informational update; administrators should verify update link handling but no patch is required.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114157",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114157"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-security-feature-bypass-cve-2026-1141",
-      "article-0d270cd7",
-      "0d270cd7",
-      "asp-net-core-security-feature-bypass-cve-2026-1141-1feaf4",
-      "asp-net-core-security-feature-bypass-cve-2026-114157"
     ]
   }
 ];

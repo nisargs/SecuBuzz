@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 07:48:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 08:47:03 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>ChromeOS Stable Channel Update M-156 Released</title>
@@ -242,6 +242,42 @@
       <category>General</category>
     </item>
     <item>
+      <title>Chromium CVE-2026-126856 Incomplete Cleanup Fix</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126856-incomplete-cleanup-fix-c7e2e630</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126856-incomplete-cleanup-fix-c7e2e630</guid>
+      <description><![CDATA[CVE-2026-126856 causes incomplete cleanup in Chromium rendering, potentially leaving residual data on disk. The flaw stems from improper deallocation of temporary buffers, allowing local users to read or alter sensitive files. Microsoft Edge incorporates the Chromium fix; users should update to the latest Edge release or apply the referenced Chrome patch.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126856">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-126857 Out-of-Bounds Read</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126857-out-of-bounds-read-2a2b5e9a</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126857-out-of-bounds-read-2a2b5e9a</guid>
+      <description><![CDATA[CVE-2026-126857 permits an out-of-bounds read in Chromium's rendering engine, potentially exposing memory contents. The vulnerability originates from unchecked array indexing during image decoding, which could be leveraged by local users to read arbitrary memory. Microsoft Edge includes the Chromium patch; users should upgrade to the latest Edge release or apply the Chrome update referenced in the Google Chrome Releases blog.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126857">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-126863: Use-After-Free Exploit</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126863-use-after-free-exploit-ab882f7c</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126863-use-after-free-exploit-ab882f7c</guid>
+      <description><![CDATA[Chromium’s CVE-2026-126863 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The vulnerability arises from improper memory handling during object deallocation, potentially allowing attackers to execute arbitrary code; no public exploit has been reported. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126863">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium CVE-2026-126864: Use-After-Free Vulnerability</title>
+      <link>https://secubuzz.com/news/chromium-cve-2026-126864-use-after-free-vulnerabil-e9de9743</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-cve-2026-126864-use-after-free-vulnerabil-e9de9743</guid>
+      <description><![CDATA[Chromium’s CVE-2026-126864 is a use‑after‑free flaw that can be triggered in Microsoft Edge’s Chromium engine. The flaw results from improper memory handling during object deallocation, potentially enabling arbitrary code execution; no public exploit has been disclosed. Microsoft Edge incorporates the Chrome patch, and users should update to the latest version or apply the vendor’s security release.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126864">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Chromium Uninitialized Resource CVE-2026-126858</title>
       <link>https://secubuzz.com/news/chromium-uninitialized-resource-cve-2026-126858-6bbfba07</link>
       <guid isPermaLink="true">https://secubuzz.com/news/chromium-uninitialized-resource-cve-2026-126858-6bbfba07</guid>
@@ -419,42 +455,6 @@
       <description><![CDATA[An unauthenticated remote code execution flaw exists in the Windows Codecs Library, enabling attackers to run arbitrary code. The issue, labeled 'CVE-2026-113749', is not yet publicly exploited but could be leveraged by scripts targeting vulnerable systems. Microsoft advises installing the Office update that contains the fix and validating codec configurations to mitigate risk.]]></description>
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-113749">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>CVE-2026-96150 Microsoft Windows Codecs Library Information Disclosure Vulnerability</title>
-      <link>https://secubuzz.com/news/cve-2026-96150-microsoft-windows-codecs-library-in-e13c1260</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cve-2026-96150-microsoft-windows-codecs-library-in-e13c1260</guid>
-      <description><![CDATA[Added Microsoft Office software to the Security Updates table. Customers that are running supported version of Microsoft Office are encouraged to update to the indicated version to be protected from this vulnerability.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96150">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Windows Graphics Kernel Exposes Information via CVE-2026-96144</title>
-      <link>https://secubuzz.com/news/windows-graphics-kernel-exposes-information-via-cv-85632a60</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-graphics-kernel-exposes-information-via-cv-85632a60</guid>
-      <description><![CDATA[A Windows Graphics Kernel information‑disclosure flaw (CVE‑2026‑96144) allows local users to read protected memory through the kernel’s rendering subsystem. The flaw results from unchecked pointer dereference during rendering, permitting local users to read kernel memory and potentially expose sensitive data. Microsoft recommends installing the latest Office update that includes the kernel patch; no work‑around is available.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96144">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Windows Graphics Kernel Exposes Data via CVE-2026-88217</title>
-      <link>https://secubuzz.com/news/windows-graphics-kernel-exposes-data-via-cve-2026-fdcccb30</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-graphics-kernel-exposes-data-via-cve-2026-fdcccb30</guid>
-      <description><![CDATA[A Windows Graphics Kernel information‑disclosure flaw (CVE‑2026‑88217) permits local users to read protected memory through the kernel’s rendering subsystem. The vulnerability stems from unchecked pointer dereference during rendering, allowing local users to extract kernel data and potentially expose sensitive information. Microsoft advises installing the latest Office update that contains the kernel patch; no workaround exists.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-88217">Microsoft MSRC</source>
-      <category>CVE</category>
-    </item>
-    <item>
-      <title>Windows Graphics Kernel Privilege Escalation via CVE-2026-95932</title>
-      <link>https://secubuzz.com/news/windows-graphics-kernel-privilege-escalation-via-c-87afd1a9</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/windows-graphics-kernel-privilege-escalation-via-c-87afd1a9</guid>
-      <description><![CDATA[A Windows Graphics Kernel privilege‑escalation flaw (CVE‑2026‑95932) enables local users to gain elevated kernel privileges through the rendering subsystem. The root cause is an unchecked pointer dereference during graphics command processing, allowing attackers to execute arbitrary kernel code and elevate privileges without authentication. Microsoft recommends applying the latest Office update that includes the kernel patch; no workaround is available.]]></description>
-      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
-      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95932">Microsoft MSRC</source>
       <category>CVE</category>
     </item>
   </channel>

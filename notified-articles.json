@@ -4989,5 +4989,11 @@
   "http://www.zerodayinitiative.com/advisories/ZDI-26-996/",
   "http://www.zerodayinitiative.com/advisories/ZDI-26-993/",
   "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126858",
-  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126859"
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126859",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126856",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126857",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-970/",
+  "http://www.zerodayinitiative.com/advisories/ZDI-26-969/",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126863",
+  "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126864"
 ]
