@@ -250,6 +250,10 @@ const FEEDS = [
     url: "https://projectzero.google/feed.xml",
   },
   {
+    name: "Google Threat Intelligence",
+    url: "https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/",
+  },
+  {
     name: "GreyNoise Labs",
     url: "https://www.greynoise.io/blog/rss.xml",
   },

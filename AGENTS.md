@@ -78,7 +78,7 @@
 - **Desktop QR Conversion & Video Assets:**
   - High-res QR code (`/qr.png`) pointing directly to Google Play Store deployed to bridge the desktop-to-mobile conversion gap for corporate PC readers (89.8% of web traffic). Rendered on `/download` and via desktop helper triggers.
   - Product walkthrough video deployed at `/secubuzz-landscape.mp4` (with HTTP 301 redirect from legacy `/brag.mp4` in Cloudflare Worker).
-- **Feed System:** `scripts/ingest.mjs` retains up to 500 articles (~10–14 days of security intelligence across 43 curated sources: 29 media/research publications + 14 official vendor PSIRT & advisory feeds, documented in `docs/FEEDS_AND_SOURCES.md`, with automatic sync to Cloudflare D1 permanent archive), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient multi-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` with OpenRouter emergency fallback), alternating lead duties 50/50 between Groq and Gemini (12 hours each: `currentHour % 2`) with instant failover on HTTP 429/5xx.
+- **Feed System:** `scripts/ingest.mjs` retains up to 500 articles (~10–14 days of security intelligence across 48 curated sources: 33 media/research publications + 15 official vendor PSIRT & advisory feeds, documented in `docs/FEEDS_AND_SOURCES.md`, with automatic sync to Cloudflare D1 permanent archive), scheduled every 1 hour via GitHub Actions (`cron: "17 * * * *"`). Powered by resilient multi-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` with OpenRouter emergency fallback), alternating lead duties 50/50 between Groq and Gemini (12 hours each: `currentHour % 2`) with instant failover on HTTP 429/5xx.
 - **INGESTION PIPELINE CODE FREEZE (PERMANENT INVARIANT):**
   - **DO NOT TOUCH OR MODIFY `scripts/ingest.mjs` EVER:** The ingestion pipeline is mathematically calibrated, balanced, and locked. Let it run completely autonomously to ingest, summarize, and publish new stories and advisories. Never alter its constants or flow.
   - **Calibrated Ingestion Constants:**
@@ -153,6 +153,10 @@
 
 ## 6. Native `.aab` Releases & Production Updates
 - **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Git `3e7bc4a`):**
+  - **Google Threat Intelligence & Mandiant Research Feed Integration (Nov 14, 2026 / Commits pending / Live on `secubuzz.com`)**:
+    - *Scope & Capability*: Integrated official Google Threat Intelligence & Mandiant research RSS feed (`https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/`) into `scripts/ingest.mjs`, `website/src/data/sources.ts`, and `docs/FEEDS_AND_SOURCES.md` (Total active feeds expanded from 47 to 48: 33 threat/industry newsrooms + 15 vendor PSIRT/advisory feeds).
+    - *Coverage*: Delivers authoritative research on nation-state APT campaigns (TAG), cloud infrastructure hijacking (LLMJacking), agentic offensive frameworks, and Mandiant incident response investigations.
+    - *Zero-Rate-Limit Invariant*: Bounded by `MAX_NEW_CANDIDATES = 40` global candidate ceiling, 6,000ms delay pacing, and active dual-key API pooling (`GROQ_API_KEYS`, `GEMINI_API_KEYS`).
   - **Vendor Radar Zero-Ghost-Outages & 100% Operational Baseline Overhaul (Nov 14, 2026 / Worker `2a9a11df-874d-4104-8a59-22ce59ddd896` / Commits `66f4f9d`, `3e7bc4a`, `d099a79` / Live on `secubuzz.com`)**:
     - *Root Cause Resolved*: Microsoft (M365) was missing from `LIVE_STATUS_SOURCES` and hardcoded as `OUTAGE` in `BASELINE_VENDOR_REGISTRY` from a historical incident, causing it to permanently render in red. Additionally, 5 other vendors (Palo Alto Networks, Cloudflare, Check Point, SonicWall, Tenable) had non-operational baseline fallbacks that could resurrect stale incidents on temporary polling timeouts.
     - *Architectural Standard & Permanent Invariants*:

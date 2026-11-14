@@ -511,6 +511,13 @@ export const SOURCES: SourceItem[] = [
     category: 'news-research',
   },
   {
+    name: 'Google Threat Intelligence',
+    domain: 'cloud.google.com',
+    url: 'https://cloud.google.com/blog/topics/threat-intelligence',
+    focus: 'Nation-state APT campaigns, Mandiant incident response, cloud resource hijacking, and cyber espionage telemetry.',
+    category: 'news-research',
+  },
+  {
     name: 'GreyNoise Labs',
     domain: 'greynoise.io',
     url: 'https://www.greynoise.io/blog',

@@ -2,11 +2,11 @@
 
 This document provides the authoritative, single source of truth for all active news feeds, official vendor PSIRT bulletins, security advisory databases, and threat telemetry powering the SecuBuzz ecosystem.
 
-Last Updated: November 2026 | Total Active Sources: 47 Hourly Feeds + 33 Vendor Outage Radars + Android Security Bulletin (Monthly) + 2 Advisory Databases (1,806 Tracked Advisories) + FIRST.org EPSS Radar
+Last Updated: November 2026 | Total Active Sources: 48 Hourly Feeds + 33 Vendor Outage Radars + Android Security Bulletin (Monthly) + 2 Advisory Databases (1,806 Tracked Advisories) + FIRST.org EPSS Radar
 
 ---
 
-## 1. Active News Feeds: Industry, Threat Research & Supply Chain (32 Sources)
+## 1. Active News Feeds: Industry, Threat Research & Supply Chain (33 Sources)
 Ingested hourly by `scripts/ingest.mjs` running on GitHub Actions (`cron: "17 * * * *"`). Each raw item is filtered, cross-corroborated, deduplicated, and converted by resilient tri-engine AI (Groq `openai/gpt-oss-20b` + Google Gemini `gemini-2.5-flash` + OpenRouter fallback) into concise, 60-word security briefs classified by Threat Severity (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`) and Category (`Breach`, `Ransomware`, `CVE`, `Vulnerability`, `Nation State`, `General`).
 
 | # | Source Name | Feed URL | Primary Focus |
@@ -39,10 +39,11 @@ Ingested hourly by `scripts/ingest.mjs` running on GitHub Actions (`cron: "17 * 
 | **26** | **ESET WeLiveSecurity** | `https://www.welivesecurity.com/en/rss/feed/` | Global APT analysis, spyware campaigns, wiper malware |
 | **27** | **Cyber Security News** | `https://feeds.feedburner.com/cyber-security-news` | Active zero-days, ransomware intrusion techniques, tool updates |
 | **28** | **Google Project Zero** | `https://projectzero.google/feed.xml` | Deep root-cause zero-day exploit teardowns & research |
-| **29** | **GreyNoise Labs** | `https://www.greynoise.io/blog/rss.xml` | Mass internet exploit spray, honeypot telemetry, scanner profiling |
-| **30** | **Socket.dev** | `https://socket.dev/api/blog/feed.atom` | Open source supply chain security, malicious npm/PyPI packages |
-| **31** | **Huntress** | `https://www.huntress.com/blog/rss.xml` | Incident research, active intrusion analysis, MSP ecosystem defense |
-| **32** | **Arctic Wolf** | `https://arcticwolf.com/feed/` | Adversary research, real-world breach response, initial access trends |
+| **29** | **Google Threat Intelligence** | `https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/` | Mandiant & Google TAG nation-state APT campaigns, cloud resource hijacking, and cyber espionage telemetry |
+| **30** | **GreyNoise Labs** | `https://www.greynoise.io/blog/rss.xml` | Mass internet exploit spray, honeypot telemetry, scanner profiling |
+| **31** | **Socket.dev** | `https://socket.dev/api/blog/feed.atom` | Open source supply chain security, malicious npm/PyPI packages |
+| **32** | **Huntress** | `https://www.huntress.com/blog/rss.xml` | Incident research, active intrusion analysis, MSP ecosystem defense |
+| **33** | **Arctic Wolf** | `https://arcticwolf.com/feed/` | Adversary research, real-world breach response, initial access trends |
 
 ---
 
@@ -51,23 +52,23 @@ These official Product Security Incident Response Team (PSIRT) and official vend
 
 | # | Vendor / Platform | Feed URL | Primary Focus & Ecosystem |
 |---|---|---|---|
-| **33** | **Palo Alto Networks PSIRT** | `https://security.paloaltonetworks.com/rss.xml` | PAN-OS, GlobalProtect, Prisma Access, Cortex XDR |
-| **34** | **Fortinet FortiGuard PSIRT** | `https://fortiguard.fortinet.com/rss/ir.xml` | FortiOS, FortiGate, FortiManager, FortiAnalyzer |
-| **35** | **Cisco PSIRT** | `https://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml` | Cisco IOS-XE, ASA, Duo, AnyConnect, Catalyst |
-| **36** | **Ivanti Security Advisories** | `https://www.ivanti.com/blog/topics/security-advisory/rss` | Connect Secure (ICS), EPMM, Policy Secure, Neurons |
-| **37** | **Microsoft MSRC** | `https://api.msrc.microsoft.com/update-guide/rss` | Patch Tuesday, Windows Server, Exchange, Entra ID, Hyper-V |
-| **38** | **Red Hat Security Advisories** | `https://access.redhat.com/security/data/metrics/rhsa.rss` | RHEL, OpenShift, Ansible, JBoss enterprise packages |
-| **39** | **Google Chrome Releases** | `https://feeds.feedburner.com/GoogleChromeReleases` | V8 engine zero-days, Chromium browser security fixes |
-| **40** | **AWS Security Bulletins** | `https://aws.amazon.com/security/security-bulletins/feed/` | Cloud infrastructure vulnerabilities, AWS SDKs, Linux AMIs |
-| **41** | **GitLab Security Releases** | `https://docs.gitlab.com/releases/patch-releases.xml` | GitLab Community & Enterprise edition critical RCE patches |
-| **42** | **Ubuntu Security Notices** | `https://usn.ubuntu.com/rss.xml` | Canonical Linux kernel vulnerabilities, server packages |
-| **43** | **Apple Security Updates** | `https://developer.apple.com/news/releases/rss/releases.rss` | iOS, iPadOS, macOS, Safari WebKit active zero-days |
-| **44** | **GitHub Security Blog** | `https://github.blog/security/feed/` | Software supply chain, GitHub Actions security, Dependabot |
-| **45** | **ZDI Published Advisories** | `https://www.zerodayinitiative.com/rss/published/` | Raw coordinated zero-day vulnerability disclosures & CVE advisories |
-| **46** | **CERT-EU Security Advisories** | `https://cert.europa.eu/publications/security-advisories-rss` | Authoritative EU institutional threat alerts & critical vulnerability notices |
-| **47** | **Oracle Security Alerts** | `https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml` | Oracle Critical Patch Updates (CPU), Database, WebLogic, Java SE alerts |
+| **34** | **Palo Alto Networks PSIRT** | `https://security.paloaltonetworks.com/rss.xml` | PAN-OS, GlobalProtect, Prisma Access, Cortex XDR |
+| **35** | **Fortinet FortiGuard PSIRT** | `https://fortiguard.fortinet.com/rss/ir.xml` | FortiOS, FortiGate, FortiManager, FortiAnalyzer |
+| **36** | **Cisco PSIRT** | `https://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml` | Cisco IOS-XE, ASA, Duo, AnyConnect, Catalyst |
+| **37** | **Ivanti Security Advisories** | `https://www.ivanti.com/blog/topics/security-advisory/rss` | Connect Secure (ICS), EPMM, Policy Secure, Neurons |
+| **38** | **Microsoft MSRC** | `https://api.msrc.microsoft.com/update-guide/rss` | Patch Tuesday, Windows Server, Exchange, Entra ID, Hyper-V |
+| **39** | **Red Hat Security Advisories** | `https://access.redhat.com/security/data/metrics/rhsa.rss` | RHEL, OpenShift, Ansible, JBoss enterprise packages |
+| **40** | **Google Chrome Releases** | `https://feeds.feedburner.com/GoogleChromeReleases` | V8 engine zero-days, Chromium browser security fixes |
+| **41** | **AWS Security Bulletins** | `https://aws.amazon.com/security/security-bulletins/feed/` | Cloud infrastructure vulnerabilities, AWS SDKs, Linux AMIs |
+| **42** | **GitLab Security Releases** | `https://docs.gitlab.com/releases/patch-releases.xml` | GitLab Community & Enterprise edition critical RCE patches |
+| **43** | **Ubuntu Security Notices** | `https://usn.ubuntu.com/rss.xml` | Canonical Linux kernel vulnerabilities, server packages |
+| **44** | **Apple Security Updates** | `https://developer.apple.com/news/releases/rss/releases.rss` | iOS, iPadOS, macOS, Safari WebKit active zero-days |
+| **45** | **GitHub Security Blog** | `https://github.blog/security/feed/` | Software supply chain, GitHub Actions security, Dependabot |
+| **46** | **ZDI Published Advisories** | `https://www.zerodayinitiative.com/rss/published/` | Raw coordinated zero-day vulnerability disclosures & CVE advisories |
+| **47** | **CERT-EU Security Advisories** | `https://cert.europa.eu/publications/security-advisories-rss` | Authoritative EU institutional threat alerts & critical vulnerability notices |
+| **48** | **Oracle Security Alerts** | `https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml` | Oracle Critical Patch Updates (CPU), Database, WebLogic, Java SE alerts |
 
-### Monthly Batch Pipeline: Android Security Bulletin (#48)
+### Monthly Batch Pipeline: Android Security Bulletin (#49)
 - **Source**: Android Open Source Project (AOSP) Security Bulletins (`source.android.com/docs/security/bulletin`)
 - **Cadence**: Monthly batch on the 5th of each month via `.github/workflows/asb.yml`.
 - **Scope**: Framework, System, Media, Linux kernel, Qualcomm, MediaTek, and Arm CVE patch level summaries.
