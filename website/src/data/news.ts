@@ -11,6 +11,24 @@ export const newsCategories: NewsCategory[] = [
 
 export const news: NewsBrief[] = [
   {
+    "slug": "chromeos-stable-channel-update-m-156-released-5ec1fd09",
+    "title": "ChromeOS Stable Channel Update M-156 Released",
+    "summary": "Google released ChromeOS version 16836.33.0 (browser 156.0.8078.102) as update M-156 to the Stable channel. The update includes minor bug fixes and performance improvements, with no security vulnerabilities disclosed. ChromeOS users should install the update via the system settings; for any feedback can be reported through the ChromeOS community channels promptly.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Google Chrome Releases",
+    "sourceUrl": "https://chromereleases.googleblog.com/2026/11/stable-channel-update-for-chromeos_01089491269.html",
+    "publishedAt": "2026-11-14T05:00:54.817Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "chromeos-stable-channel-update-m-156-released",
+      "article-5ec1fd09",
+      "5ec1fd09",
+      "chromeos-stable-channel-update-m-156-released-569522"
+    ]
+  },
+  {
     "slug": "n-central-zero-day-rce-exploited-by-4everable2shel-f8fdae3d",
     "title": "N‑Central Zero‑Day RCE Exploited by 4EverAble2Shell",
     "summary": "Threat actors exploit CVE-2026-90436, a zero‑day RCE in N‑able N‑Central servers, using the 4EverAble2Shell tool in the wild. The flaw permits unauthenticated code execution, creating a high‑severity risk for N‑Central users worldwide. Apply the vendor’s patch, deploy the Sigma rules, and monitor Apache Axis telemetry to detect and block the exploitation.",
@@ -486,6 +504,89 @@ export const news: NewsBrief[] = [
       "article-4e48330f",
       "4e48330f",
       "openai-launches-chatgpt-wallet-for-agent-payments-25f506"
+    ]
+  },
+  {
+    "slug": "chromium-use-after-free-cve-2026-126851-fixed-in-e-75f3303d",
+    "title": "Chromium Use‑After‑Free CVE‑2026‑126851 Fixed in Edge",
+    "summary": "Chromium’s use‑after‑free flaw, identified as CVE‑2026‑126851, could allow memory corruption in memory if exploited by an attacker. Microsoft Edge, built on Chromium, incorporates the same fix, eliminating the vulnerability in the browser’s rendering engine. Users should update to the latest Edge release to ensure the use‑after‑free issue is fully patched. The flaw is tracked as CVE-2026-126851.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126851",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126851"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-126851-fixed-in-e",
+      "article-75f3303d",
+      "75f3303d",
+      "chromium-use-after-free-cve-2026-126851-fixed-in-e-1fdbda",
+      "chromium-use-after-free-cve-2026-126851-fixed-in-edge"
+    ]
+  },
+  {
+    "slug": "chromium-use-after-free-cve-2026-126852-fixed-397c08a3",
+    "title": "Chromium Use-After-Free CVE-2026-126852 Fixed",
+    "summary": "A use-after-free flaw, CVE-2026-126852, was discovered in Chromium, affecting Microsoft Edge (Chromium-based) browsers. The vulnerability allows memory corruption that could lead to arbitrary code execution if exploited, but no active exploitation has been reported. Microsoft Edge incorporates the Chromium patch, and users should update to the latest release; Google Chrome releases provide additional details.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126852",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126852"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-use-after-free-cve-2026-126852-fixed",
+      "article-397c08a3",
+      "397c08a3",
+      "chromium-use-after-free-cve-2026-126852-fixed-1fdbda"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-uninitialized-re-cb500912",
+    "title": "Microsoft Edge Addresses Chromium Uninitialized Resource CVE",
+    "summary": "Chromium vulnerability CVE‑2026‑126853 permits uninitialized resource usage that could cause memory corruption in browsers. The flaw stems from improper initialization of a shared memory buffer; no public exploit exists, but it could enable remote code execution if triggered. Microsoft Edge incorporates the Chromium patch automatically; users should update via Windows Update or the Edge browser to eliminate the risk. The flaw is tracked as CVE-2026-126853.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126853",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126853"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-uninitialized-re",
+      "article-cb500912",
+      "cb500912",
+      "microsoft-edge-addresses-chromium-uninitialized-re-1fdbda",
+      "microsoft-edge-addresses-chromium-uninitialized-resource-cve"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-incorrect-author-02158395",
+    "title": "Microsoft Edge Addresses Chromium Incorrect Authorization CVE",
+    "summary": "Chromium vulnerability CVE‑2026‑126854 permits incorrect authorization that could grant unauthorized access to privileged browser resources. The flaw originates from a missing access control check during resource loading; no public exploit is known, but it could enable privilege escalation. Microsoft Edge incorporates the Chromium patch automatically; users should update via Windows Update or the Edge browser to mitigate the risk. The flaw is tracked as CVE-2026-126854.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126854",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126854"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-incorrect-author",
+      "article-02158395",
+      "02158395",
+      "microsoft-edge-addresses-chromium-incorrect-author-1fdbda",
+      "microsoft-edge-addresses-chromium-incorrect-authorization-cv"
     ]
   },
   {
@@ -2281,6 +2382,108 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "philips-hue-bridge-heap-overflow-enables-remote-co-50e27703",
+    "title": "Philips Hue Bridge Heap Overflow Enables Remote Code Execution",
+    "summary": "A heap-based buffer overflow in Philips Hue Bridge’s hap_pair_setup_handler permits network‑adjacent attackers to execute arbitrary code without authentication. The flaw, assigned CVE‑2026‑126978, carries a CVSS score of 8.8, indicating high‑severity remote code execution potential. Philips has released an update that patches the vulnerable handler; security teams should apply the firmware upgrade immediately. The flaw is tracked as CVE-2026-126978.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-963/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126978"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "philips-hue-bridge-heap-overflow-enables-remote-co",
+      "article-50e27703",
+      "50e27703",
+      "philips-hue-bridge-heap-overflow-enables-remote-co-6f3d1e",
+      "philips-hue-bridge-heap-overflow-enables-remote-code-executi"
+    ]
+  },
+  {
+    "slug": "philips-hue-bridge-default-password-bypass-exposes-11ca4076",
+    "title": "Philips Hue Bridge Default Password Bypass Exposes Authentication",
+    "summary": "A default password authentication bypass in Philips Hue Bridge’s HomeKit pair‑setup allows network‑adjacent attackers to gain access without credentials. The vulnerability, identified as CVE‑2026‑126977, has a CVSS score of 8.1, indicating high‑severity authentication bypass. Philips has issued a firmware patch that removes the default password; users should update their bridges promptly. The flaw is tracked as CVE-2026-126977.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-962/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126977"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "philips-hue-bridge-default-password-bypass-exposes",
+      "article-11ca4076",
+      "11ca4076",
+      "philips-hue-bridge-default-password-bypass-exposes-6f3d1e",
+      "philips-hue-bridge-default-password-bypass-exposes-authentic"
+    ]
+  },
+  {
+    "slug": "winmate-hottab-dangerous-function-enables-local-pr-e3a7c508",
+    "title": "Winmate HotTab Dangerous Function Enables Local Privilege Escalation",
+    "summary": "A local privilege escalation flaw in Winmate HotTab’s dangerous function allows attackers who already execute low‑privileged code to gain elevated rights. The issue, labeled CVE‑2026‑118630, carries a CVSS score of 8.8, reflecting a high‑severity local privilege escalation risk. Winmate has released a firmware update that mitigates the dangerous function; administrators should apply the patch to prevent privilege escalation. The flaw is tracked as CVE-2026-118630.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-961/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-118630"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "winmate-hottab-dangerous-function-enables-local-pr",
+      "article-e3a7c508",
+      "e3a7c508",
+      "winmate-hottab-dangerous-function-enables-local-pr-6f3d1e",
+      "winmate-hottab-dangerous-function-enables-local-privilege-es"
+    ]
+  },
+  {
+    "slug": "falcon-ai-gateway-centralizes-ai-traffic-control-a7e4ec20",
+    "title": "Falcon AI Gateway Centralizes AI Traffic Control",
+    "summary": "CrowdStrike introduced the Falcon AI Gateway, a control point for managing AI traffic across enterprise environments. The gateway aggregates inbound and outbound AI requests, enabling policy enforcement, monitoring, and threat detection without exposing internal networks to external AI services. Administrators can deploy the gateway via Falcon platform, configure traffic rules, and integrate with existing security controls to secure AI workloads.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "CrowdStrike",
+    "sourceUrl": "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "falcon-ai-gateway-centralizes-ai-traffic-control",
+      "article-a7e4ec20",
+      "a7e4ec20",
+      "falcon-ai-gateway-centralizes-ai-traffic-control-269a92"
+    ]
+  },
+  {
+    "slug": "netgate-pfsense-flaw-enables-authenticated-remote-740fdbf5",
+    "title": "Netgate pfSense Flaw Enables Authenticated Remote Code Execution",
+    "summary": "Netgate pfSense CE contains a remote code execution vulnerability involving the XMLRPC interface. Tracked as CVE-2026-92182 with a CVSS rating of 8.8, the flaw stems from incorrect authorization mechanisms allowing authenticated attackers to execute arbitrary code. Security teams managing affected Netgate pfSense installations should apply the appropriate vendor patches or restrictive authorization controls to prevent exploitation.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-960/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-92182"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "netgate-pfsense-flaw-enables-authenticated-remote",
+      "article-740fdbf5",
+      "740fdbf5",
+      "netgate-pfsense-flaw-enables-authenticated-remote-6f3d1e",
+      "netgate-pfsense-flaw-enables-authenticated-remote-code-execu"
     ]
   },
   {
@@ -9419,212 +9622,6 @@ export const news: NewsBrief[] = [
       "effa4853",
       "asp-net-core-vulnerability-enables-denial-of-servi-1feaf4",
       "asp-net-core-vulnerability-enables-denial-of-service"
-    ]
-  },
-  {
-    "slug": "asp-net-core-dos-vulnerability-cve-2026-114147-dc063db2",
-    "title": "ASP.NET Core DoS Vulnerability CVE-2026-114147",
-    "summary": "Microsoft identified CVE-2026-114147, a denial‑of‑service flaw in ASP.NET Core affecting web applications. The flaw lets attackers trigger resource exhaustion via crafted requests, causing service downtime; no remote code execution is possible and exploits are not yet documented. Microsoft has issued a patch; developers should update ASP.NET Core to the latest version and monitor application performance for abnormal traffic.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114147",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114147"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-dos-vulnerability-cve-2026-114147",
-      "article-dc063db2",
-      "dc063db2",
-      "asp-net-core-dos-vulnerability-cve-2026-114147-1feaf4"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-asp-net-core-privilege-flaw-guid-3f6c8e5d",
-    "title": "Microsoft Updates ASP.NET Core Privilege Flaw Guidance",
-    "summary": "Microsoft issued an informational update regarding an elevation of privilege vulnerability in ASP.NET Core tracked under CVE-2026-114146. The security advisory updates documentation links and metadata without altering the underlying technical flaw, which enables privilege escalation. Security teams should consult the revised Microsoft advisory links to verify patch status and deploy required software updates.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114146",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114146"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-asp-net-core-privilege-flaw-guid",
-      "article-3f6c8e5d",
-      "3f6c8e5d",
-      "microsoft-updates-asp-net-core-privilege-flaw-guid-1feaf4",
-      "microsoft-updates-asp-net-core-privilege-flaw-guidance"
-    ]
-  },
-  {
-    "slug": "asp-net-core-elevation-of-privilege-vulnerability-9e4b9d43",
-    "title": "ASP.NET Core Elevation of Privilege Vulnerability CVE-2026-109481",
-    "summary": "CVE-2026-109481 describes an elevation of privilege flaw in ASP.NET Core that could allow attackers to gain higher access levels. The vulnerability results from improper validation of user-supplied data during authentication, but no public exploit has been released. Microsoft has issued an informational update; administrators should apply the latest ASP.NET Core patch to mitigate the risk.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109481",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-109481"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "asp-net-core-elevation-of-privilege-vulnerability",
-      "article-9e4b9d43",
-      "9e4b9d43",
-      "asp-net-core-elevation-of-privilege-vulnerability-1ff6ba",
-      "asp-net-core-elevation-of-privilege-vulnerability-cve-2026-1"
-    ]
-  },
-  {
-    "slug": "microsoft-asp-net-core-info-disclosure-cve-2026-10-8f2b2422",
-    "title": "Microsoft ASP.NET Core Info Disclosure CVE-2026-109476",
-    "summary": "Microsoft disclosed an information‑disclosure flaw in ASP.NET Core that could expose sensitive data through improperly sanitized error messages. The vulnerability, identified as CVE‑2026‑109476, has a low severity rating and no known active exploitation. Microsoft issued an informational update; security teams should review the change log and apply any recommended patches.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109476",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-109476"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-asp-net-core-info-disclosure-cve-2026-10",
-      "article-8f2b2422",
-      "8f2b2422",
-      "microsoft-asp-net-core-info-disclosure-cve-2026-10-1ff6ba",
-      "microsoft-asp-net-core-info-disclosure-cve-2026-109476"
-    ]
-  },
-  {
-    "slug": "microsoft-asp-net-core-dos-cve-2026-109478-8102d35e",
-    "title": "Microsoft ASP.NET Core DoS CVE-2026-109478",
-    "summary": "Microsoft identified a denial‑of‑service vulnerability in ASP.NET Core that can be triggered by malformed requests, potentially exhausting server resources. The flaw, CVE‑2026‑109478, carries a low severity rating and has no known active exploitation. Microsoft released an informational update; administrators should monitor traffic and apply any available patches to mitigate DoS risk.",
-    "category": "CVE",
-    "severity": "LOW",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109478",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-109478"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-asp-net-core-dos-cve-2026-109478",
-      "article-8102d35e",
-      "8102d35e",
-      "microsoft-asp-net-core-dos-cve-2026-109478-1ff6ba"
-    ]
-  },
-  {
-    "slug": "net-elevation-privilege-cve-2026-105544-4257502d",
-    "title": ".NET Elevation Privilege CVE-2026-105544",
-    "summary": "Microsoft announced an informational update for CVE‑2026‑105544, an elevation of privilege vulnerability affecting the .NET framework. The flaw allows local users to gain higher privileges by manipulating the runtime configuration, but no active exploitation has been reported. Microsoft has not released a patch yet; administrators should monitor for future advisories and apply any subsequent fixes when available.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-105544",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-105544"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "net-elevation-privilege-cve-2026-105544",
-      "article-4257502d",
-      "4257502d",
-      "net-elevation-privilege-cve-2026-105544-1ff889"
-    ]
-  },
-  {
-    "slug": "net-dos-vulnerability-cve-2026-109475-59cd8639",
-    "title": ".NET DoS Vulnerability CVE-2026-109475",
-    "summary": "Microsoft issued an informational notice for CVE‑2026‑109475, a denial‑of‑service flaw in the .NET framework. The vulnerability permits local users to trigger a crash by sending malformed input to the runtime, but no active exploitation has been observed. No patch has been released; administrators should watch for future updates and apply any subsequent fixes when available.",
-    "category": "CVE",
-    "severity": "HIGH",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109475",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-109475"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "net-dos-vulnerability-cve-2026-109475",
-      "article-59cd8639",
-      "59cd8639",
-      "net-dos-vulnerability-cve-2026-109475-1ff6ba"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-product-list-for-cve-2026-114159-91575e5e",
-    "title": "Microsoft Updates Product List for CVE-2026-114159 RCE",
-    "summary": "Microsoft updated its product list for CVE-2026-114159, a Visual Studio remote code execution vulnerability that could allow attackers to run arbitrary code. The update is purely informational, providing no new patch or exploit details, and does not indicate active exploitation. Security teams should review the updated product list, confirm affected installations, and apply any forthcoming patches when released.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114159",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114159"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-product-list-for-cve-2026-114159",
-      "article-91575e5e",
-      "91575e5e",
-      "microsoft-updates-product-list-for-cve-2026-114159-1feaf4",
-      "microsoft-updates-product-list-for-cve-2026-114159-rce"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-product-list-for-cve-2026-118745-753f3dd2",
-    "title": "Microsoft Updates Product List for CVE-2026-118745 RCE",
-    "summary": "Microsoft updated its product list for CVE-2026-118745, a Visual Studio remote code execution vulnerability that could allow attackers to run arbitrary code. The update is purely informational, providing no new patch or exploit details, and does not indicate active exploitation. Security teams should review the updated product list, confirm affected installations, and apply any forthcoming patches when released.",
-    "category": "CVE",
-    "severity": "MEDIUM",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118745",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-118745"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-product-list-for-cve-2026-118745",
-      "article-753f3dd2",
-      "753f3dd2",
-      "microsoft-updates-product-list-for-cve-2026-118745-1fe90c",
-      "microsoft-updates-product-list-for-cve-2026-118745-rce"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-visual-studio-cve-2026-114151-rc-6d361bc9",
-    "title": "Microsoft Updates Visual Studio CVE-2026-114151 RCE",
-    "summary": "Microsoft issued an informational update for Visual Studio addressing CVE-2026-114151, a remote code execution flaw. The flaw permits unauthenticated code execution via malformed input, yet no public exploit or PoC has been released. The update lists affected product versions only; no patch is required and no immediate remediation is necessary.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114151",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114151"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-visual-studio-cve-2026-114151-rc",
-      "article-6d361bc9",
-      "6d361bc9",
-      "microsoft-updates-visual-studio-cve-2026-114151-rc-1feaf4",
-      "microsoft-updates-visual-studio-cve-2026-114151-rce"
     ]
   }
 ];
