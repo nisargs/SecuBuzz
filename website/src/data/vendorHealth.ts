@@ -17,8 +17,8 @@ export const VENDOR_STATUS_REGISTRY: Record<string, VendorHealth> = {
   },
   Microsoft: {
     vendor: 'Microsoft',
-    status: 'OUTAGE',
-    summary: 'Service degradation affecting Microsoft 365, Teams & Exchange Online',
+    status: 'OPERATIONAL',
+    summary: 'All Microsoft 365 & cloud services operational',
     statusUrl: 'https://status.cloud.microsoft/m365/referrer=serviceStatusRedirect',
   },
   'Palo Alto Networks': {

@@ -407,8 +407,8 @@ const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
   },
   Microsoft: {
     vendor: 'Microsoft',
-    status: 'OUTAGE',
-    summary: 'Service degradation affecting Microsoft 365, Teams & Exchange Online',
+    status: 'OPERATIONAL',
+    summary: 'All Microsoft 365 & cloud services operational',
     statusUrl: 'https://status.cloud.microsoft/m365/referrer=serviceStatusRedirect',
   },
   AWS: {
@@ -601,6 +601,7 @@ const BASELINE_VENDOR_REGISTRY: Record<string, VendorHealthTelemetry> = {
 
 const LIVE_STATUS_SOURCES = [
   { vendor: 'Azure', type: 'rss', url: 'https://azure.status.microsoft/en-us/status/feed/', statusUrl: 'https://azure.status.microsoft/en-us/status' },
+  { vendor: 'Microsoft', type: 'microsoft_mac', url: 'https://status.cloud.microsoft/api/feed/mac', statusUrl: 'https://status.cloud.microsoft/m365/referrer=serviceStatusRedirect' },
   { vendor: 'Palo Alto Networks', type: 'statuspage', url: 'https://status.paloaltonetworks.com/api/v2/summary.json', statusUrl: 'https://status.paloaltonetworks.com/' },
   { vendor: 'Cloudflare', type: 'statuspage', url: 'https://www.cloudflarestatus.com/api/v2/summary.json', statusUrl: 'https://www.cloudflarestatus.com/' },
   { vendor: 'Check Point', type: 'statuspage', url: 'https://status.checkpoint.com/api/v2/summary.json', statusUrl: 'https://status.checkpoint.com/' },
@@ -699,7 +700,25 @@ async function getVendorStatusTelemetry(): Promise<Record<string, VendorHealthTe
               summary = incidentTitle;
             } else {
               status = 'OPERATIONAL';
-              summary = 'All Azure cloud regions & services operational';
+              summary = `All ${src.vendor} cloud regions & services operational`;
+            }
+          } else if (src.type === 'microsoft_mac') {
+            const xml = await res.text();
+            const statusMatch = xml.match(/<status>([\s\S]*?)<\/status>/i);
+            const statusVal = statusMatch ? statusMatch[1].trim() : '';
+            if (/available|operational|servicerestored/i.test(statusVal)) {
+              status = 'OPERATIONAL';
+              summary = 'All Microsoft 365 & cloud services operational';
+            } else if (/outage|critical|major/i.test(statusVal)) {
+              status = 'OUTAGE';
+              const titleMatch = xml.match(/<title>([\s\S]*?)<\/title>/i);
+              summary = titleMatch ? titleMatch[1].replace(/<!\[CDATA\[|\]\]>/g, '').trim() : 'Microsoft 365 service outage';
+            } else if (statusVal) {
+              status = 'DEGRADED';
+              summary = `Microsoft 365: ${statusVal}`;
+            } else {
+              status = 'OPERATIONAL';
+              summary = 'All Microsoft 365 & cloud services operational';
             }
           }
 
