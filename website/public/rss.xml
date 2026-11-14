@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 04:48:01 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 05:48:20 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>N‑Central Zero‑Day RCE Exploited by 4EverAble2Shell</title>
@@ -233,6 +233,42 @@
       <category>General</category>
     </item>
     <item>
+      <title>Chromium Uninitialized Resource CVE‑2026‑126845</title>
+      <link>https://secubuzz.com/news/chromium-uninitialized-resource-cve-2026-126845-d860a4e3</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-uninitialized-resource-cve-2026-126845-d860a4e3</guid>
+      <description><![CDATA[CVE‑2026‑126845 is an uninitialized resource flaw discovered in Chromium that could allow memory corruption. Microsoft Edge incorporates Chromium, which includes the patch that mitigates this vulnerability, and users should verify their browser version. No active exploitation has been reported; however, updating to the latest Edge release is recommended to ensure protection. The flaw is tracked as CVE-2026-126845.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126845">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Microsoft Edge Addresses Chromium Type Confusion CVE-2026-126847</title>
+      <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-type-confusion-c-147f89f1</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-type-confusion-c-147f89f1</guid>
+      <description><![CDATA[A type‑confusion flaw, CVE‑2026‑126847, was found in Chromium, impacting Microsoft Edge’s rendering engine. The bug allows memory corruption from malformed input, enabling remote code execution; a public PoC exists and CVSS is 8.5. Microsoft released an update that incorporates Chromium’s fix; users should install the latest Edge version or apply the patch from Google Chrome releases.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126847">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Uninitialized Resource Vulnerability CVE‑2026‑126848</title>
+      <link>https://secubuzz.com/news/chromium-uninitialized-resource-vulnerability-cve-7a3c43a9</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-uninitialized-resource-vulnerability-cve-7a3c43a9</guid>
+      <description><![CDATA[Chromium’s CVE‑2026‑126848 flaw involves an uninitialized resource during rendering that could trigger crashes or memory corruption. The issue is assigned by Google, and Microsoft Edge (Chromium‑based) incorporates the fix automatically in its updates. Users should install the latest Microsoft Edge release to ensure the patch is applied and prevent potential instability. The flaw is tracked as CVE-2026-126848.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126848">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
+      <title>Chromium Type Confusion Vulnerability CVE‑2026‑126849</title>
+      <link>https://secubuzz.com/news/chromium-type-confusion-vulnerability-cve-2026-126-91e8e290</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/chromium-type-confusion-vulnerability-cve-2026-126-91e8e290</guid>
+      <description><![CDATA[Chromium’s CVE‑2026‑126849 flaw is a type confusion bug that may lead to memory corruption. The vulnerability is assigned by Google, and Microsoft Edge (Chromium‑based) incorporates the fix automatically in its updates. Users should update to the latest Microsoft Edge release to ensure the patch is applied and mitigate potential exploitation. The flaw is tracked as CVE-2026-126849.]]></description>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126849">Microsoft MSRC</source>
+      <category>CVE</category>
+    </item>
+    <item>
       <title>Microsoft Edge Addresses Chromium CVE-2026-126840 Write</title>
       <link>https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0</link>
       <guid isPermaLink="true">https://secubuzz.com/news/microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0</guid>
@@ -420,42 +456,6 @@
       <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
       <source url="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-109473">Microsoft MSRC</source>
       <category>CVE</category>
-    </item>
-    <item>
-      <title>Mior, Skyfall Expose AMD SEV‑SNP VM Data Theft</title>
-      <link>https://secubuzz.com/news/mior-skyfall-expose-amd-sev-snp-vm-data-theft-4c0accf3</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/mior-skyfall-expose-amd-sev-snp-vm-data-theft-4c0accf3</guid>
-      <description><![CDATA[Mior and Skyfall attacks let malicious hosts read data inside AMD SEV‑SNP‑protected VMs, bypassing isolation from the server operator. Mior needs hypervisor and BIOS control to modify VM memory and forge signed reports; Skyfall exploits a kernel‑level flaw; both are publicly disclosed and pose active RCE risk. Admins should apply firmware updates, restrict hypervisor access, and monitor anomalous memory activity.]]></description>
-      <pubDate>Fri, 13 Nov 2026 15:27:05 GMT</pubDate>
-      <source url="https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html">The Hacker News</source>
-      <category>Vulnerability</category>
-    </item>
-    <item>
-      <title>TypoPrompting Turns AI Site Typos Into Malware Traps</title>
-      <link>https://secubuzz.com/news/typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/typoprompting-turns-ai-site-typos-into-malware-tra-922df6c5</guid>
-      <description><![CDATA[Researchers discovered TypoPrompting attacks that redirect users typing mistyped AI tool URLs to fake verification pages hosting malware installers. The study mapped 186 lookalike domains across 27 AI brands, including Claude, ChatGPT, and Midjourney, exposing a widespread phishing surface. Defenders should enforce strict URL filtering, educate users on correct domain spelling, and deploy anti‑phishing solutions to mitigate the risk.]]></description>
-      <pubDate>Fri, 13 Nov 2026 15:24:38 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/new-typoprompting-attacks/">Cyber Security News</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>CISA Nominee, Connected Car Hacking, Baker Tilly Breach</title>
-      <link>https://secubuzz.com/news/cisa-nominee-connected-car-hacking-baker-tilly-bre-e670ef5a</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/cisa-nominee-connected-car-hacking-baker-tilly-bre-e670ef5a</guid>
-      <description><![CDATA[The SecurityWeek roundup covers a new CISA director nominee, emerging connected‑car hacking threats, and a Baker Tilly data breach. Additional items include Siemens' security advisory policy, OpenAI Codex backdoor risks, and Microsoft warnings about model weight backdoors. These stories highlight evolving attack vectors and the importance of proactive security posture across industries.]]></description>
-      <pubDate>Fri, 13 Nov 2026 15:20:00 GMT</pubDate>
-      <source url="https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/">SecurityWeek</source>
-      <category>General</category>
-    </item>
-    <item>
-      <title>Hackers Obscure Linux GPU Mining with SANSAR Rootkit</title>
-      <link>https://secubuzz.com/news/hackers-obscure-linux-gpu-mining-with-sansar-rootk-61f39cb0</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/hackers-obscure-linux-gpu-mining-with-sansar-rootk-61f39cb0</guid>
-      <description><![CDATA[Hackers deployed a SANSAR toolkit on Linux GPU servers to conceal cryptocurrency mining by manipulating NVIDIA monitoring outputs. The rootkit modifies the NVIDIA library to report 0% GPU utilization while mining continues, enabling attackers to evade workload detection. Security teams should update modules, monitor GPU usage via trusted tools, and apply vendor patches to detect and remove the SANSAR rootkit.]]></description>
-      <pubDate>Fri, 13 Nov 2026 15:09:45 GMT</pubDate>
-      <source url="https://cybersecuritynews.com/hackers-use-sansar-linux-malware/">Cyber Security News</source>
-      <category>Vulnerability</category>
     </item>
   </channel>
 </rss>

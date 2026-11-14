@@ -489,6 +489,89 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "chromium-uninitialized-resource-cve-2026-126845-d860a4e3",
+    "title": "Chromium Uninitialized Resource CVE‑2026‑126845",
+    "summary": "CVE‑2026‑126845 is an uninitialized resource flaw discovered in Chromium that could allow memory corruption. Microsoft Edge incorporates Chromium, which includes the patch that mitigates this vulnerability, and users should verify their browser version. No active exploitation has been reported; however, updating to the latest Edge release is recommended to ensure protection. The flaw is tracked as CVE-2026-126845.",
+    "category": "CVE",
+    "severity": "LOW",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126845",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126845"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-uninitialized-resource-cve-2026-126845",
+      "article-d860a4e3",
+      "d860a4e3",
+      "chromium-uninitialized-resource-cve-2026-126845-1fdbda"
+    ]
+  },
+  {
+    "slug": "microsoft-edge-addresses-chromium-type-confusion-c-147f89f1",
+    "title": "Microsoft Edge Addresses Chromium Type Confusion CVE-2026-126847",
+    "summary": "A type‑confusion flaw, CVE‑2026‑126847, was found in Chromium, impacting Microsoft Edge’s rendering engine. The bug allows memory corruption from malformed input, enabling remote code execution; a public PoC exists and CVSS is 8.5. Microsoft released an update that incorporates Chromium’s fix; users should install the latest Edge version or apply the patch from Google Chrome releases.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126847",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126847"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "microsoft-edge-addresses-chromium-type-confusion-c",
+      "article-147f89f1",
+      "147f89f1",
+      "microsoft-edge-addresses-chromium-type-confusion-c-1fdbda",
+      "microsoft-edge-addresses-chromium-type-confusion-cve-2026-12"
+    ]
+  },
+  {
+    "slug": "chromium-uninitialized-resource-vulnerability-cve-7a3c43a9",
+    "title": "Chromium Uninitialized Resource Vulnerability CVE‑2026‑126848",
+    "summary": "Chromium’s CVE‑2026‑126848 flaw involves an uninitialized resource during rendering that could trigger crashes or memory corruption. The issue is assigned by Google, and Microsoft Edge (Chromium‑based) incorporates the fix automatically in its updates. Users should install the latest Microsoft Edge release to ensure the patch is applied and prevent potential instability. The flaw is tracked as CVE-2026-126848.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126848",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126848"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-uninitialized-resource-vulnerability-cve",
+      "article-7a3c43a9",
+      "7a3c43a9",
+      "chromium-uninitialized-resource-vulnerability-cve-1fdbda",
+      "chromium-uninitialized-resource-vulnerability-cve-2026-12684"
+    ]
+  },
+  {
+    "slug": "chromium-type-confusion-vulnerability-cve-2026-126-91e8e290",
+    "title": "Chromium Type Confusion Vulnerability CVE‑2026‑126849",
+    "summary": "Chromium’s CVE‑2026‑126849 flaw is a type confusion bug that may lead to memory corruption. The vulnerability is assigned by Google, and Microsoft Edge (Chromium‑based) incorporates the fix automatically in its updates. Users should update to the latest Microsoft Edge release to ensure the patch is applied and mitigate potential exploitation. The flaw is tracked as CVE-2026-126849.",
+    "category": "CVE",
+    "severity": "MEDIUM",
+    "source": "Microsoft MSRC",
+    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126849",
+    "publishedAt": "2026-11-13T16:00:00.000Z",
+    "cves": [
+      "CVE-2026-126849"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "chromium-type-confusion-vulnerability-cve-2026-126",
+      "article-91e8e290",
+      "91e8e290",
+      "chromium-type-confusion-vulnerability-cve-2026-126-1fdbda",
+      "chromium-type-confusion-vulnerability-cve-2026-126849"
+    ]
+  },
+  {
     "slug": "microsoft-edge-addresses-chromium-cve-2026-126840-8109ecb0",
     "title": "Microsoft Edge Addresses Chromium CVE-2026-126840 Write",
     "summary": "Microsoft Edge incorporates Chromium updates that fix CVE-2026-126840, an out‑of‑bounds write vulnerability discovered in Chrome. The flaw could allow attackers to corrupt memory and potentially execute arbitrary code if exploited. Microsoft recommends applying the latest Edge release; users should also review Google Chrome release notes for detailed patch information today.",
@@ -2198,6 +2281,88 @@ export const news: NewsBrief[] = [
       "b309d849",
       "suspected-north-korean-workers-onboarded-exposed-2-2e6e2f",
       "suspected-north-korean-workers-onboarded-exposed-277k-ssns"
+    ]
+  },
+  {
+    "slug": "trendai-agent-local-privilege-escalation-exploit-f8dfaae0",
+    "title": "TrendAI Agent Local Privilege Escalation Exploit",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights. The flaw arises from an origin validation error, rated CVSS 7.8, and is identified as CVE‑2026‑111780. TrendAI has issued a patch; administrators should apply the update or disable the feature to mitigate the risk. The flaw is tracked as CVE-2026-111780.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-979/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111780"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-agent-local-privilege-escalation-exploit",
+      "article-f8dfaae0",
+      "f8dfaae0",
+      "trendai-agent-local-privilege-escalation-exploit-6f3d23"
+    ]
+  },
+  {
+    "slug": "trendai-agent-local-privilege-escalation-vulnerabi-9ad4d28c",
+    "title": "TrendAI Agent Local Privilege Escalation Vulnerability",
+    "summary": "A local privilege escalation flaw in TrendAI Vision One Security Agent lets attackers who can run low‑privileged code gain elevated rights. The flaw arises from an origin validation error, rated CVSS 7.8, and is identified as CVE‑2026‑111779. TrendAI has issued a patch; administrators should apply the update or disable the feature to mitigate the risk. The flaw is tracked as CVE-2026-111779.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-978/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-111779"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "trendai-agent-local-privilege-escalation-vulnerabi",
+      "article-9ad4d28c",
+      "9ad4d28c",
+      "trendai-agent-local-privilege-escalation-vulnerabi-6f3d23",
+      "trendai-agent-local-privilege-escalation-vulnerability"
+    ]
+  },
+  {
+    "slug": "philips-hue-bridge-homekit-auth-bypass-b867fb57",
+    "title": "Philips Hue Bridge HomeKit Auth Bypass",
+    "summary": "A network‑adjacent authentication bypass flaw in Philips Hue Bridge allows attackers to access HomeKit services without credentials. The vulnerability, identified as CVE‑2026‑126981, is rated CVSS 8.1 and permits unauthenticated access to the bridge’s management interface. Philips has released a firmware update; users should upgrade to the latest version or disable HomeKit integration to mitigate the risk. The flaw is tracked as CVE-2026-126981.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-966/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126981"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "philips-hue-bridge-homekit-auth-bypass",
+      "article-b867fb57",
+      "b867fb57",
+      "philips-hue-bridge-homekit-auth-bypass-6f3d1f"
+    ]
+  },
+  {
+    "slug": "philips-hue-bridge-rce-via-chacha20-decrypt-underf-c4a59c97",
+    "title": "Philips Hue Bridge RCE via chacha20_decrypt Underflow",
+    "summary": "An integer underflow in Philips Hue Bridge’s HomeKit accessory protocol permits remote code execution for network‑adjacent attackers. The flaw, CVE‑2026‑126979, scores CVSS 8.8, is exploitable without authentication, has a public PoC, and lets attackers run arbitrary code. Users should apply the vendor‑issued firmware patch immediately to prevent exploitation and secure their smart‑home networks. The flaw is tracked as CVE-2026-126979.",
+    "category": "CVE",
+    "severity": "HIGH",
+    "source": "ZDI Advisories",
+    "sourceUrl": "http://www.zerodayinitiative.com/advisories/ZDI-26-964/",
+    "publishedAt": "2026-11-13T06:00:00.000Z",
+    "cves": [
+      "CVE-2026-126979"
+    ],
+    "additionalSources": [],
+    "aliases": [
+      "philips-hue-bridge-rce-via-chacha20-decrypt-underf",
+      "article-c4a59c97",
+      "c4a59c97",
+      "philips-hue-bridge-rce-via-chacha20-decrypt-underf-6f3d1e",
+      "philips-hue-bridge-rce-via-chacha20-decrypt-underflow"
     ]
   },
   {
@@ -9460,160 +9625,6 @@ export const news: NewsBrief[] = [
       "6d361bc9",
       "microsoft-updates-visual-studio-cve-2026-114151-rc-1feaf4",
       "microsoft-updates-visual-studio-cve-2026-114151-rce"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-visual-studio-cve-2026-114152-rc-76b4d667",
-    "title": "Microsoft Updates Visual Studio CVE-2026-114152 RCE",
-    "summary": "Microsoft issued an informational update for Visual Studio addressing CVE-2026-114152, a remote code execution flaw. The vulnerability allows unauthenticated code execution through malformed input, but no public exploit or PoC has been disclosed. The update merely lists affected product versions; no patch is required and no immediate remediation is necessary.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114152",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114152"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-visual-studio-cve-2026-114152-rc",
-      "article-76b4d667",
-      "76b4d667",
-      "microsoft-updates-visual-studio-cve-2026-114152-rc-1feaf4",
-      "microsoft-updates-visual-studio-cve-2026-114152-rce"
-    ]
-  },
-  {
-    "slug": "microsoft-updates-visual-studio-cve-2026-114158-rc-c6216357",
-    "title": "Microsoft Updates Visual Studio CVE-2026-114158 RCE",
-    "summary": "Microsoft issued an informational update for Visual Studio addressing CVE-2026-114158, a remote code execution flaw. The flaw permits unauthenticated code execution via malformed input, yet no public exploit or PoC has been released. The update lists affected product versions only; no patch is required and no immediate remediation is necessary.",
-    "category": "CVE",
-    "severity": "CRITICAL",
-    "source": "Microsoft MSRC",
-    "sourceUrl": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-114158",
-    "publishedAt": "2026-11-11T16:00:00.000Z",
-    "cves": [
-      "CVE-2026-114158"
-    ],
-    "additionalSources": [],
-    "aliases": [
-      "microsoft-updates-visual-studio-cve-2026-114158-rc",
-      "article-c6216357",
-      "c6216357",
-      "microsoft-updates-visual-studio-cve-2026-114158-rc-1feaf4",
-      "microsoft-updates-visual-studio-cve-2026-114158-rce"
-    ]
-  },
-  {
-    "slug": "xen-orchestra-authentication-bypass-enables-admin-6ddfe4c0",
-    "title": "Xen Orchestra Authentication Bypass Enables Admin Code Execution",
-    "summary": "A critical authentication bypass in Xen Orchestra allows attackers to gain administrative privileges on XCP‑ng nodes. The flaw permits arbitrary code execution via crafted API requests, exposing the hypervisor to remote compromise without user interaction. Red Hat and Xen Orchestra have released patches; administrators should apply the latest updates and restrict API access to trusted hosts.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "SecurityWeek",
-    "sourceUrl": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
-    "publishedAt": "2026-11-11T15:42:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "xen-orchestra-authentication-bypass-enables-admin",
-      "article-6ddfe4c0",
-      "6ddfe4c0",
-      "xen-orchestra-authentication-bypass-enables-admin-7156f1",
-      "xen-orchestra-authentication-bypass-enables-admin-code-execu"
-    ]
-  },
-  {
-    "slug": "antifox-ai-framework-linked-to-aws-credential-thef-5d1eee3a",
-    "title": "AntiFox AI Framework Linked to AWS Credential Theft",
-    "summary": "Threat actors are utilizing the AntiFox agentic penetration testing platform to target Amazon Web Services infrastructure and pivot laterally across victim networks. The campaign relies on Alibaba Cloud systems hosting AntiFox interfaces to compromise environment access and steal AWS production secrets. Security teams must monitor cloud environments for unauthorized agentic pentesting tools and audit access permissions for AWS credentials.",
-    "category": "Breach",
-    "severity": "HIGH",
-    "source": "The Hacker News",
-    "sourceUrl": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-    "publishedAt": "2026-11-11T15:34:27.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "antifox-ai-framework-linked-to-aws-credential-thef",
-      "article-5d1eee3a",
-      "5d1eee3a",
-      "antifox-ai-framework-linked-to-aws-credential-thef-3a1306",
-      "antifox-ai-framework-linked-to-aws-credential-theft"
-    ]
-  },
-  {
-    "slug": "ansible-2-4-critical-update-addresses-remote-explo-a6243e06",
-    "title": "Ansible 2.4 Critical Update Addresses Remote Exploits",
-    "summary": "Red Hat released a critical security update for Ansible Automation Platform 2.4, addressing multiple vulnerabilities that could allow remote code execution. The update includes patches for CVE‑linked flaws, each with a CVSS base score indicating high exploitation risk. Administrators should apply the RHSA‑2026:99006 update immediately and verify that all affected nodes are patched.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99006",
-    "publishedAt": "2026-11-11T15:26:10.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ansible-2-4-critical-update-addresses-remote-explo",
-      "article-a6243e06",
-      "a6243e06",
-      "ansible-2-4-critical-update-addresses-remote-explo-37d683",
-      "ansible-2-4-critical-update-addresses-remote-exploits"
-    ]
-  },
-  {
-    "slug": "ansible-2-5-critical-update-addresses-remote-explo-26701ba2",
-    "title": "Ansible 2.5 Critical Update Addresses Remote Exploits",
-    "summary": "Red Hat issued a critical patch for Ansible Automation Platform 2.5, fixing vulnerabilities that could enable remote code execution on managed nodes. Each flaw is referenced by CVE identifiers and carries a high CVSS score, indicating significant exploitation potential. Users should apply the RHSA‑2026:99007 update promptly and audit their Ansible inventory for unpatched hosts.",
-    "category": "Vulnerability",
-    "severity": "CRITICAL",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:99007",
-    "publishedAt": "2026-11-11T15:23:30.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ansible-2-5-critical-update-addresses-remote-explo",
-      "article-26701ba2",
-      "26701ba2",
-      "ansible-2-5-critical-update-addresses-remote-explo-37d683",
-      "ansible-2-5-critical-update-addresses-remote-exploits"
-    ]
-  },
-  {
-    "slug": "antifox-ai-agents-target-aws-credentials-4539ca27",
-    "title": "AntiFox AI Agents Target AWS Credentials",
-    "summary": "Attackers deploy AntiFox AI agents on Alibaba Cloud to harvest AWS credentials from targeted web services. The open-source platform automates credential extraction, enabling rapid lateral movement within compromised AWS environments. Defenders should restrict outbound traffic from cloud instances, enforce least‑privilege IAM roles, and monitor for anomalous credential usage daily actively continuously.",
-    "category": "Breach",
-    "severity": "MEDIUM",
-    "source": "BleepingComputer",
-    "sourceUrl": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
-    "publishedAt": "2026-11-11T15:12:59.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "antifox-ai-agents-target-aws-credentials",
-      "article-4539ca27",
-      "4539ca27",
-      "antifox-ai-agents-target-aws-credentials-6ce1b6"
-    ]
-  },
-  {
-    "slug": "red-hat-updates-java-runtime-on-rhel-8-f2c13183",
-    "title": "Red Hat Updates Java Runtime on RHEL 8",
-    "summary": "Red Hat released an important security update for java‑1.8.0‑openjdk on RHEL 8, fixing Java runtime vulnerabilities. The patch addresses remote code execution and information disclosure flaws with CVSS scores between 7.0 and 8.5. Apply the update promptly, test application compatibility, and monitor for anomalous runtime behavior to maintain security posture.",
-    "category": "Vulnerability",
-    "severity": "MEDIUM",
-    "source": "Red Hat Security Advisories",
-    "sourceUrl": "https://access.redhat.com/errata/RHSA-2026:95609",
-    "publishedAt": "2026-11-11T15:01:47.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "red-hat-updates-java-runtime-on-rhel-8",
-      "article-f2c13183",
-      "f2c13183",
-      "red-hat-updates-java-runtime-on-rhel-8-37d83e"
     ]
   }
 ];
