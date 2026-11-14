@@ -5,7 +5,7 @@
     <link>https://secubuzz.com/news</link>
     <description>Fast, factual 60-word cybersecurity briefs and CISA KEV alerts for security professionals.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2026 18:30:50 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 19:16:29 GMT</lastBuildDate>
     <atom:link href="https://secubuzz.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Bundeswehr Removes Grounding on Quantum Systems Drones</title>
@@ -53,10 +53,10 @@
       <category>General</category>
     </item>
     <item>
-      <title>UnrealIRCd Command Injection Exploited via CVE-2026-114713</title>
-      <link>https://secubuzz.com/news/unrealircd-command-injection-exploited-via-cve-202-512c21ff</link>
-      <guid isPermaLink="true">https://secubuzz.com/news/unrealircd-command-injection-exploited-via-cve-202-512c21ff</guid>
-      <description><![CDATA[Attackers exploited a server‑level command injection flaw in UnrealIRCd, an open‑source IRC server, via improper delimiter neutralization. The CVE‑2026‑114713 vulnerability, rated CVSS 8.6, permits unauthenticated remote code execution and has been actively used. CISA added the flaw to its KEV catalog; vendors should apply the latest patch or upgrade immediately.]]></description>
+      <title>CISA Adds UnrealIRCd CVE‑2026‑114713 to KEV Catalog</title>
+      <link>https://secubuzz.com/news/cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-bf09696b</link>
+      <guid isPermaLink="true">https://secubuzz.com/news/cisa-adds-unrealircd-cve-2026-114713-to-kev-catalo-bf09696b</guid>
+      <description><![CDATA[CISA has added the UnrealIRCd CVE‑2026‑114713 vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, alerting federal agencies to the risk. The flaw permits unauthenticated remote code execution via malformed IRC commands, and active exploits have been observed in the wild. Administrators should apply the vendor‑issued patch immediately and verify configuration changes to disable legacy protocols. The vulnerabilities are tracked as CVE-2026-114713, CVE-2026-123039.]]></description>
       <pubDate>Sat, 14 Nov 2026 12:38:35 GMT</pubDate>
       <source url="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html">The Hacker News</source>
       <category>CVE</category>

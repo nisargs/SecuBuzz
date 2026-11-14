@@ -82,9 +82,9 @@
   {
     "id": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
     "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-    "title": "UnrealIRCd Command Injection Exploited via CVE-2026-114713",
-    "headline": "UnrealIRCd Command Injection Exploited via CVE-2026-114713",
-    "summary": "Attackers exploited a server‑level command injection flaw in UnrealIRCd, an open‑source IRC server, via improper delimiter neutralization. The CVE‑2026‑114713 vulnerability, rated CVSS 8.6, permits unauthenticated remote code execution and has been actively used. CISA added the flaw to its KEV catalog; vendors should apply the latest patch or upgrade immediately.",
+    "title": "CISA Adds UnrealIRCd CVE‑2026‑114713 to KEV Catalog",
+    "headline": "CISA Adds UnrealIRCd CVE‑2026‑114713 to KEV Catalog",
+    "summary": "CISA has added the UnrealIRCd CVE‑2026‑114713 vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, alerting federal agencies to the risk. The flaw permits unauthenticated remote code execution via malformed IRC commands, and active exploits have been observed in the wild. Administrators should apply the vendor‑issued patch immediately and verify configuration changes to disable legacy protocols.",
     "category": "CVE",
     "severity": "HIGH",
     "source": "The Hacker News",
@@ -93,7 +93,16 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/cisa-kev-catalog-unrealircd-check-point-active-exploits"
+      }
+    ],
+    "cves": [
+      "CVE-2026-114713",
+      "CVE-2026-123039"
+    ]
   },
   {
     "id": "https://cybersecuritynews.com/fbi-reveals-hackers-artex-ai-usage/",
@@ -1551,18 +1560,23 @@
   {
     "id": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
     "sourceUrl": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-    "title": "North Korean Hackers Steal $400M Crypto via Deepfake Calls",
-    "headline": "North Korean Hackers Steal $400M Crypto via Deepfake Calls",
-    "summary": "North Korean threat actors used deepfake video calls to socially engineer victims and steal more than $400 million in cryptocurrency. The FaceStealer campaign used convincing video impersonations to bypass authentication, exploiting human trust rather than software flaws, and caused significant financial loss. Organizations should verify call authenticity, enforce multi‑factor authentication, and monitor wallet activity for anomalous transfers to mitigate attacks.",
-    "category": "BREACH",
-    "severity": "HIGH",
+    "title": "North Korean Hackers Steal $400M via Deepfake Video Calls",
+    "headline": "North Korean Hackers Steal $400M via Deepfake Video Calls",
+    "summary": "North Korean threat actors launched the FaceStealer campaign, targeting corporate executives via deepfake video calls to impersonate trusted contacts and gain access to financial systems. The attack exploited human trust, bypassing authentication and enabling the theft of over $400 million in cryptocurrency. Defenders should verify call authenticity, enforce MFA, and monitor wallet activity for anomalous transfers to mitigate future incidents.",
+    "category": "NATION_STATE",
+    "severity": "CRITICAL",
     "source": "The Hacker News",
     "publishedAt": "2026-11-13T14:28:58.000Z",
     "ingestedAt": "2026-11-13T15:43:42.641Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/facestealer-dprk-bluenoroff-deepfake-crypto-theft"
+      }
+    ]
   },
   {
     "id": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
@@ -3535,9 +3549,9 @@
   {
     "id": "https://isc.sans.edu/diary/rss/33518",
     "sourceUrl": "https://isc.sans.edu/diary/rss/33518",
-    "title": "Macfinger ClickFix Deploys DownTheDRAIN Infostealer on macOS",
-    "headline": "Macfinger ClickFix Deploys DownTheDRAIN Infostealer on macOS",
-    "summary": "The Macfinger ClickFix campaign has distributed the DownTheDRAIN infostealer targeting macOS systems. DownTheDRAIN harvests credentials and sensitive data via keylogging and clipboard monitoring, though no ransomware payload is included. Security teams should deploy macOS endpoint protection, block known malicious domains, and monitor for credential exfiltration and implement strict application whitelisting to prevent execution of unknown binaries.",
+    "title": "DownTheDRAIN Infostealer Targets macOS via ClickFix Campaign",
+    "headline": "DownTheDRAIN Infostealer Targets macOS via ClickFix Campaign",
+    "summary": "DownTheDRAIN, a macOS infostealer, was distributed through a ClickFix phishing campaign that lured users with fake CAPTCHAs. The malware harvests credentials via keylogging, clipboard monitoring, and deceptive CAPTCHA interactions, exfiltrating login data without ransomware payload. Security teams should block ClickFix domains, enable MFA, deploy macOS endpoint protection, and monitor for credential exfiltration to mitigate the threat.",
     "category": "GENERAL",
     "severity": "HIGH",
     "source": "SANS Internet Storm Center",
@@ -3546,7 +3560,12 @@
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "url": "https://isc.sans.edu/diary/rss/33518",
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/downthedrain-macos-clickfix-infostealer"
+      }
+    ]
   },
   {
     "id": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
@@ -6452,18 +6471,23 @@
   {
     "id": "https://cybersecuritynews.com/gsocket-backdoors/",
     "sourceUrl": "https://cybersecuritynews.com/gsocket-backdoors/",
-    "title": "Microsoft Warns Hackers Are Using GSocket Backdoors to Keep Linux Servers Compromised After Patching",
-    "headline": "Microsoft Warns Hackers Are Using GSocket Backdoors to Keep Linux Servers Compromised After Patching",
-    "summary": "Microsoft has warned that attackers are using a free remote access tool called GSocket to stay inside Linux servers even after the original security hole is fixed. Many admins treat a patch as the end of an incident, but this activity shows that patching alone may leave the attacker’s access untouched.",
-    "category": "General",
-    "severity": "MEDIUM",
+    "title": "Microsoft Warns of GSocket Backdoor Threat to Linux Servers",
+    "headline": "Microsoft Warns of GSocket Backdoor Threat to Linux Servers",
+    "summary": "Microsoft warned that attackers use the GSocket backdoor to maintain access to Linux servers, even after patches are applied. The technique leverages public relay servers to conceal command‑and‑control traffic, enabling stealthy persistence and data exfiltration. Security teams should deploy Microsoft’s hunting rules, KQL queries, and Sigma patterns to detect and block GSocket traffic.",
+    "category": "VULNERABILITY",
+    "severity": "HIGH",
     "source": "Cyber Security News",
     "publishedAt": "2026-11-12T09:44:00.000Z",
     "ingestedAt": "2026-11-12T13:45:48.629Z",
     "isPublishedTimeUnknown": false,
     "isFutureSkew": false,
     "cves": [],
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "source": "CyberNews AI",
+        "sourceUrl": "https://cybernewsai.com/blog/gsocket-linux-stealth-c2-relay-detection"
+      }
+    ],
     "isFallback": true
   },
   {
