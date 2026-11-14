@@ -141,7 +141,32 @@
       - **Context Preservation Invariant**: For vendor advisories that describe flaws in underlying third-party packages (e.g. Siemens bundling Google Brotli), the narrative explicitly names the affected vendor/system in the prose and ties it directly to the underlying component and CVE, preventing headline/body context detachment.
 
 ## 6. Native `.aab` Releases & Production Updates
-- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `47f778b6-7fea-4a4f-9765-23201e5e39e2`):**
+- **Release v1.0.4 (Version Code 10 - LIVE on Google Play Store Nov 1, 2026 / OTA Active `01a1bba8-6bf0-7623-97dc-23190724bc08` / Group `4ceb3a54-7d0b-40b1-9fb8-4699f913938a` / Worker `9150d025-372d-4885-8022-eda450be58b1`):**
+  - **Comprehensive Site Audit & Production Resilience Hardening (Nov 13, 2026 / Worker `9150d025-372d-4885-8022-eda450be58b1` / Live on `secubuzz.com`)**:
+    - **D1 News Search for Rotated-Out CVEs (C1 Fixed)**:
+      - *Root Cause Resolved*: In `worker/src/index.ts`, `/api/news/search` previously aborted with `{ count: 0, results: [] }` if a queried CVE was not in `getKnownCveSet()`. Because `getKnownCveSet()` was scoped strictly to the active 500-article live R2 feed window (~2.3 days), older CVEs stored in D1 (e.g. `CVE-2026-41709`, `CVE-2026-48356`, `CVE-2026-123158`) were blocked from querying the database and cached as misses.
+      - *Architecture Standard*: Valid CVE queries (`CVE-YYYY-NNNN`) must never be short-circuited by in-memory feed windows. They execute against D1 (`SELECT ... WHERE title LIKE ? OR summary LIKE ? OR cves_json LIKE ? ORDER BY published_at DESC LIMIT 100`) and cache both hits and misses in memory (1 hour) and Cloudflare edge cache (`max-age=3600, s-maxage=86400`). Verified live returning 3, 1, and 14 briefs respectively.
+    - **Dual-Property Advisory Ingestion & Live Fetch Crash Prevention (C2 & C3 Fixed)**:
+      - *Root Cause Resolved*: CISA KEV JSON uses `item.cveID`, whereas GitHub advisories used `item.cve`. In `website/src/data/useLiveAdvisories.ts`, calling `item.cveID.toLowerCase()` threw `TypeError` at row 1,781, causing live fetch to permanently fail and fall back to the static build snapshot. In addition, `worker/src/githubAdvisories.ts` had drifted to Oct 28.
+      - *Architecture Standard*:
+        - Resilient field resolution: `const cve = item.cveID || item.cve || ''; if (!cve) continue;`.
+        - Dedicated GitHub preservation: Preserves GitHub sources, ecosystems, and references without forcing CISA-specific field assumptions.
+        - Automated synchronization: `scripts/sync_website_data.mjs` maps both `cve` and `cveID` onto GitHub advisories and synchronizes `worker/src/githubAdvisories.ts` directly on every static sync. Worker dataset updated to live Nov 13 GitHub advisories (50 rows).
+    - **Hard HTTP 404 & SEO Anti-Fabrication Invariant (C4 Fixed)**:
+      - *Root Cause Resolved*: `worker/src/index.ts` had a loose regex `^cve-\d{4}-\d{4,7}$` in `isKnownSpaRoute` that approved any validly-formatted CVE string, while `worker/src/sitemap.ts` synthesized SEO metadata and TechArticle schema for missing advisories, returning HTTP 200 on fake URLs like `/advisories/cve-9999-99999`.
+      - *Architecture Standard*: Advisory routes (`/advisories/:slug`) are strictly verified against the combined active catalog (`[...cisa, ...GITHUB_ADVISORIES]`). Nonexistent advisory slugs return an authentic HTTP 404 with branded `Page Not Found · SecuBuzz` metadata and prerendered 404 body, eliminating phantom search engine indexation.
+    - **Google Play Store Canonical Linkage (C5 Fixed)**:
+      - *Architecture Standard*: Corrected hardcoded package ID in static pre-rendered shells (`worker/src/sitemap.ts`) from `com.misolabs.secubuzz` to `com.secubuzz.app`. Verified live on Google Play Store.
+    - **Strict Due-Date Range Filtering (W2 Fixed)**:
+      - *Root Cause Resolved*: In `website/src/pages/Advisories.tsx`, `daysUntil('')` on GitHub advisories (empty due date) returned `NaN`. In JavaScript, `NaN < 0` and `NaN > 7` are both `false`, erroneously including all 50 GitHub advisories in the "Due this week" filter ($50 + 7 = 57$).
+      - *Architecture Standard*: `dueThisWeekOnly` enforces strict ISO date validation: `if (!a.dueDate || !/^\d{4}-\d{2}-\d{2}$/.test(a.dueDate)) return false;` before computing calendar day difference, accurately returning open deadlines.
+    - **Advisory Toolbar "Highest severity" Sort (W11 Added)**:
+      - *Feature*: Added `<option value="severity">Highest severity</option>` to the Advisories toolbar Sort dropdown.
+      - *Sort Hierarchy*: Primarily sorts by CVSS severity tier (`CRITICAL` (4) → `HIGH` (3) → `MEDIUM` (2) → `LOW` (1)), secondarily by numeric CVSS score (10.0 down to 0.0), and breaks ties by newest added date. Reset button restores default `Newest added`.
+    - **Phone Mockup Evergreening & Carousel Interaction (W6 & W9 Fixed)**:
+      - *Architecture Standard*: Updated hardcoded mockup string to evergreen `'1,800+ Advisories'`. User tab clicks reset `isPaused = false` so auto-rotation resumes smoothly when the cursor exits the showcase container.
+    - **Deterministic Extractive Fallback Uppercase Taxonomy (W7 Fixed)**:
+      - *Architecture Standard*: All threat categories emitted by `scripts/extractive_fallback.mjs` are standardized to uppercase (`GENERAL`, `CVE`, `RANSOMWARE`, `BREACH`, `VULNERABILITY`, `NATION STATE`), eliminating title-case fragmentation in the archive.
   - **Vendor Outages & Infrastructure Health Radar (Nov 12–13, 2026 / Worker `47f778b6-7fea-4a4f-9765-23201e5e39e2` / Live on `secubuzz.com`)**:
     - **Real-Time Multi-Vendor Radar**: Live operational telemetry across 33 major enterprise IT, cloud, security, and developer platforms (Cisco, Fortinet, Microsoft, Azure, AWS, Google Cloud, CrowdStrike, Palo Alto, Cloudflare, GitHub, GitLab, Datadog, Slack, Docker, OpenAI, Anthropic, Atlassian, Red Hat, SonicWall, Ivanti, Citrix, VMware, Sophos, Check Point, Splunk, Broadcom, etc.).
     - **Independent Azure RSS Polling**: Built dedicated XML/RSS incident poller for Azure (`https://azure.status.microsoft/en-us/status/feed/`), running independently alongside Microsoft 365 (`status.cloud.microsoft`). Parses live `<item>` tags, evaluates incident severity (DEGRADED vs OUTAGE), and extracts incident titles.
