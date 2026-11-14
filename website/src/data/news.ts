@@ -73,6 +73,24 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "schneier-announces-upcoming-speaking-engagements-527b2d00",
+    "title": "Schneier Announces Upcoming Speaking Engagements",
+    "summary": "Schneier announces upcoming speaking engagements at Catalyst Summit in Brampton, Ontario, Canada, on November 18, 2026, and at QT Qonference 2026 in Toronto, Ontario, Canada, on November 19, 2026, as part of his public outreach. The schedule is maintained and updated on his website, which also hosts additional event details. No technical vulnerabilities or incidents are reported in this announcement.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Schneier on Security",
+    "sourceUrl": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
+    "publishedAt": "2026-11-14T17:02:39.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "schneier-announces-upcoming-speaking-engagements",
+      "article-527b2d00",
+      "527b2d00",
+      "schneier-announces-upcoming-speaking-engagements-2070f2"
+    ]
+  },
+  {
     "slug": "us-disrupts-north-korean-facestealer-crypto-theft-d875fe40",
     "title": "US Disrupts North Korean FaceStealer Crypto Theft",
     "summary": "U.S. authorities disrupted a North Korean social-engineering campaign named FaceStealer that stole over $400 million in cryptocurrency. The operation exploited phishing emails and credential harvesting to gain wallet access, enabling large-scale transfers to untraceable addresses. Affected actors should immediately revoke compromised credentials, monitor wallet activity, and apply multi-factor authentication to mitigate future theft.",
@@ -5660,6 +5678,25 @@ export const news: NewsBrief[] = [
     ]
   },
   {
+    "slug": "amy-reflects-on-anthropology-course-and-questionin-361184f6",
+    "title": "Amy Reflects on Anthropology Course and Questioning",
+    "summary": "Cisco Talos author Amy discusses how a college anthropology course taught her the importance of asking questions to bridge cultural gaps. The reflection emphasizes that curiosity and inquiry can foster mutual understanding and reduce misunderstandings across diverse communities in the context of technology and security. No cybersecurity vulnerabilities or incidents are referenced in this personal narrative.",
+    "category": "General",
+    "severity": "LOW",
+    "source": "Cisco Talos",
+    "sourceUrl": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
+    "publishedAt": "2026-11-12T19:00:00.000Z",
+    "cves": [],
+    "additionalSources": [],
+    "aliases": [
+      "amy-reflects-on-anthropology-course-and-questionin",
+      "article-361184f6",
+      "361184f6",
+      "amy-reflects-on-anthropology-course-and-questionin-3458b9",
+      "amy-reflects-on-anthropology-course-and-questioning"
+    ]
+  },
+  {
     "slug": "red-hat-releases-sso-7-6-14-update-for-rhel-7-b589d983",
     "title": "Red Hat Releases SSO 7.6.14 Update for RHEL 7",
     "summary": "Red Hat issued a security update for Single Sign-On 7.6.14 on RHEL 7, addressing multiple vulnerabilities. The advisory labels the update as critical, but the vendor rates the security impact as none and provides CVSS scores via CVE links. Administrators should install the new packages immediately to ensure compatibility, though no immediate exploitation risk is reported.",
@@ -9615,44 +9652,6 @@ export const news: NewsBrief[] = [
       "67af8411",
       "snmptt-allows-remote-command-execution-via-unsanit-7e86f9",
       "snmptt-allows-remote-command-execution-via-unsanitized-traps"
-    ]
-  },
-  {
-    "slug": "kramdown-vulnerability-enables-arbitrary-file-read-5b97ec88",
-    "title": "kramdown Vulnerability Enables Arbitrary File Read and Code Execution",
-    "summary": "The kramdown Ruby library processes the template option by default, creating a flaw in Ubuntu packages. This behavior allows attackers to read arbitrary files or execute code within the host environment, potentially compromising system integrity. Users should upgrade to the patched kramdown version or apply the Ubuntu security update to mitigate the risk.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9060-1",
-    "publishedAt": "2026-11-11T18:33:31.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "kramdown-vulnerability-enables-arbitrary-file-read",
-      "article-5b97ec88",
-      "5b97ec88",
-      "kramdown-vulnerability-enables-arbitrary-file-read-7e8701",
-      "kramdown-vulnerability-enables-arbitrary-file-read-and-code-"
-    ]
-  },
-  {
-    "slug": "ruby-jwt-hmac-verification-flaw-enables-token-forg-7407c5b3",
-    "title": "ruby-jwt HMAC Verification Flaw Enables Token Forgery",
-    "summary": "The ruby-jwt library fails to verify HMAC signatures when the key is empty or missing, exposing Ubuntu installations. An attacker can forge authentication tokens, bypassing security controls and potentially gaining unauthorized access to protected services. Apply the updated ruby-jwt package or patch the library to enforce proper key validation in your environment.",
-    "category": "Vulnerability",
-    "severity": "HIGH",
-    "source": "Ubuntu Security Notices",
-    "sourceUrl": "https://ubuntu.com/security/notices/USN-9059-1",
-    "publishedAt": "2026-11-11T18:33:24.000Z",
-    "cves": [],
-    "additionalSources": [],
-    "aliases": [
-      "ruby-jwt-hmac-verification-flaw-enables-token-forg",
-      "article-7407c5b3",
-      "7407c5b3",
-      "ruby-jwt-hmac-verification-flaw-enables-token-forg-7e8754",
-      "ruby-jwt-hmac-verification-flaw-enables-token-forgery"
     ]
   }
 ];
